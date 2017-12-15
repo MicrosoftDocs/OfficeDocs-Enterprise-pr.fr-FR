@@ -23,257 +23,257 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>Déploiement de sites SharePoint Online à trois niveaux de protection
+# <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a><span data-ttu-id="e765d-103">Déploiement de sites SharePoint Online à trois niveaux de protection</span><span class="sxs-lookup"><span data-stu-id="e765d-103">Deploy SharePoint Online sites for three tiers of protection</span></span>
 
- **Résumé :** Créer et configurer des sites d’équipe SharePoint Online pour différents niveaux de protection des informations.
+ <span data-ttu-id="e765d-104">**Résumé :** Créer et configurer des sites d’équipe SharePoint Online pour différents niveaux de protection des informations.</span><span class="sxs-lookup"><span data-stu-id="e765d-104">**Summary:** Create and configure SharePoint Online team sites for various levels of information protection.</span></span>
   
-Utilisez les étapes de cet article pour concevoir et déployer la base, sensibles et hautement confidentielles SharePoint Online sites d’équipe. Pour plus d’informations sur ces trois niveaux de protection, voir les [fichiers et les sites SharePoint Online de la sécuriser](secure-sharepoint-online-sites-and-files.md).
+<span data-ttu-id="e765d-p101">Utilisez les étapes de cet article pour concevoir et déployer la base, sensibles et hautement confidentielles SharePoint Online sites d’équipe. Pour plus d’informations sur ces trois niveaux de protection, voir les [fichiers et les sites SharePoint Online de la sécuriser](secure-sharepoint-online-sites-and-files.md).</span><span class="sxs-lookup"><span data-stu-id="e765d-p101">Use the steps in this article to design and deploy baseline, sensitive, and highly confidential SharePoint Online team sites. For more information about these three tiers of protection, see [Secure SharePoint Online sites and files](secure-sharepoint-online-sites-and-files.md).</span></span>
   
-## <a name="baseline-sharepoint-online-team-sites"></a>Sites d’équipe SharePoint Online de référence
+## <a name="baseline-sharepoint-online-team-sites"></a><span data-ttu-id="e765d-107">Sites d’équipe SharePoint Online de référence</span><span class="sxs-lookup"><span data-stu-id="e765d-107">Baseline SharePoint Online team sites</span></span>
 
-La protection de référence concerne les sites d’équipe publics et privés. Les sites publics peuvent être recherchés par toute personne de l’organisation. Seules ces personnes peuvent y accéder. Les sites privés peuvent uniquement être recherchés par les membres du groupe Office 365 associé au site d’équipe et seuls ces derniers peuvent y accéder. Ces deux types de sites d’équipe autorisent les membres à partager le site avec d’autres personnes.
+<span data-ttu-id="e765d-p102">La protection de référence concerne les sites d’équipe publics et privés. Les sites publics peuvent être recherchés par toute personne de l’organisation. Seules ces personnes peuvent y accéder. Les sites privés peuvent uniquement être recherchés par les membres du groupe Office 365 associé au site d’équipe et seuls ces derniers peuvent y accéder. Ces deux types de sites d’équipe autorisent les membres à partager le site avec d’autres personnes.</span><span class="sxs-lookup"><span data-stu-id="e765d-p102">Baseline protection includes both public and private team sites. Public team sites can be discovered and accessed by anybody in the organization. Private sites can only be discovered and accessed by members of the Office 365 group associated with the team site. Both of these types of team sites allow members to share the site with others.</span></span>
   
-### <a name="public"></a>Public
+### <a name="public"></a><span data-ttu-id="e765d-112">Public</span><span class="sxs-lookup"><span data-stu-id="e765d-112">Public</span></span>
 
-Pour créer un site d’équipe SharePoint Online de référence avec des autorisations et un accès publics, suivez les étapes suivantes :
+<span data-ttu-id="e765d-113">Pour créer un site d’équipe SharePoint Online de référence avec des autorisations et un accès publics, suivez les étapes suivantes :</span><span class="sxs-lookup"><span data-stu-id="e765d-113">To create a baseline SharePoint Online team site with public access and permissions, do the following:</span></span>
   
-1. Connectez-vous au portail Office 365 avec un compte qui sera également utilisé pour administrer le site d’équipe SharePoint Online (un administrateur SharePoint Online). Pour de l’aide, consultez la rubrique [pour vous connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. <span data-ttu-id="e765d-p103">Connectez-vous au portail Office 365 avec un compte qui sera également utilisé pour administrer le site d’équipe SharePoint Online (un administrateur SharePoint Online). Pour de l’aide, consultez la rubrique [pour vous connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).</span><span class="sxs-lookup"><span data-stu-id="e765d-p103">Sign in to the Office 365 portal with an account that will also be used to administer the SharePoint Online team site (a SharePoint Online administrator). For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).</span></span>
     
-2. Dans la liste des mosaïques, cliquez sur **SharePoint**.
+2. <span data-ttu-id="e765d-116">Dans la liste des mosaïques, cliquez sur **SharePoint**.</span><span class="sxs-lookup"><span data-stu-id="e765d-116">In the list of tiles, click **SharePoint**.</span></span>
     
-3. Dans l’onglet nouveau **SharePoint** dans votre navigateur, cliquez sur **+ créer le site**.
+3. <span data-ttu-id="e765d-117">Dans l’onglet nouveau **SharePoint** dans votre navigateur, cliquez sur **+ créer le site**.</span><span class="sxs-lookup"><span data-stu-id="e765d-117">On the new **SharePoint** tab in your browser, click **+ Create site**.</span></span>
     
-4. Dans la page **créer un site** , cliquez sur **site d’équipe**.
+4. <span data-ttu-id="e765d-118">Dans la page **créer un site** , cliquez sur **site d’équipe**.</span><span class="sxs-lookup"><span data-stu-id="e765d-118">On the **Create a site** page, click **Team site**.</span></span>
     
-5. Dans la zone **nom du Site**, tapez un nom pour le site d’équipe public. 
+5. <span data-ttu-id="e765d-119">Dans la zone **nom du Site**, tapez un nom pour le site d’équipe public.</span><span class="sxs-lookup"><span data-stu-id="e765d-119">In **Site name**, type a name for the public team site.</span></span> 
     
-6. Dans la **description de site d’équipe**, tapez une description de l’objet du site.
+6. <span data-ttu-id="e765d-120">Dans la **description de site d’équipe**, tapez une description de l’objet du site.</span><span class="sxs-lookup"><span data-stu-id="e765d-120">In **Team site description**, type a description of the purpose of the site.</span></span>
     
-7. Dans les **paramètres de confidentialité**, sélectionnez **Public - tout le monde dans l’organisation peut accéder à ce site**, puis cliquez sur **suivant**.
+7. <span data-ttu-id="e765d-121">Dans les **paramètres de confidentialité**, sélectionnez **Public - tout le monde dans l’organisation peut accéder à ce site**, puis cliquez sur **suivant**.</span><span class="sxs-lookup"><span data-stu-id="e765d-121">In **Privacy settings**, select **Public - anyone in the organization can access this site**, and then click **Next**.</span></span>
     
-8. Sur le **qui voulez-vous ajouter ?** volet, cliquez sur **Terminer**.
+8. <span data-ttu-id="e765d-122">Sur le **qui voulez-vous ajouter ?** volet, cliquez sur **Terminer**.</span><span class="sxs-lookup"><span data-stu-id="e765d-122">On the **Who do you want to add?** pane, click **Finish**.</span></span>
     
-Voici la configuration finale.
+<span data-ttu-id="e765d-123">Voici la configuration finale.</span><span class="sxs-lookup"><span data-stu-id="e765d-123">Here is your resulting configuration.</span></span>
   
 ![Protection de base pour un site d’équipe SharePoint Online public.](images/bcd46b8d-3f89-4398-80ce-4da17ee85e03.png)
   
-### <a name="private"></a>Privé
+### <a name="private"></a><span data-ttu-id="e765d-125">Privé</span><span class="sxs-lookup"><span data-stu-id="e765d-125">Private</span></span>
 
-Pour créer un site d’équipe SharePoint Online de référence avec des autorisations et un accès privés, suivez les étapes suivantes :
+<span data-ttu-id="e765d-126">Pour créer un site d’équipe SharePoint Online de référence avec des autorisations et un accès privés, suivez les étapes suivantes :</span><span class="sxs-lookup"><span data-stu-id="e765d-126">To create a baseline SharePoint Online team site with private access and permissions, do the following:</span></span>
   
-1. Connectez-vous au portail Office 365 avec un compte qui sera également utilisé pour administrer le site d’équipe SharePoint Online (un administrateur SharePoint Online). Pour de l’aide, consultez la rubrique [pour vous connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. <span data-ttu-id="e765d-p104">Connectez-vous au portail Office 365 avec un compte qui sera également utilisé pour administrer le site d’équipe SharePoint Online (un administrateur SharePoint Online). Pour de l’aide, consultez la rubrique [pour vous connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).</span><span class="sxs-lookup"><span data-stu-id="e765d-p104">Sign in to the Office 365 portal with an account that will also be used to administer the SharePoint Online team site (a SharePoint Online administrator). For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).</span></span>
     
-2. Dans la liste des mosaïques, cliquez sur **SharePoint**.
+2. <span data-ttu-id="e765d-129">Dans la liste des mosaïques, cliquez sur **SharePoint**.</span><span class="sxs-lookup"><span data-stu-id="e765d-129">In the list of tiles, click **SharePoint**.</span></span>
     
-3. Dans l’onglet nouveau **SharePoint** dans votre navigateur, cliquez sur **+ créer le site**.
+3. <span data-ttu-id="e765d-130">Dans l’onglet nouveau **SharePoint** dans votre navigateur, cliquez sur **+ créer le site**.</span><span class="sxs-lookup"><span data-stu-id="e765d-130">On the new **SharePoint** tab in your browser, click **+ Create site**.</span></span>
     
-4. Dans la page **créer un site** , cliquez sur **site d’équipe**.
+4. <span data-ttu-id="e765d-131">Dans la page **créer un site** , cliquez sur **site d’équipe**.</span><span class="sxs-lookup"><span data-stu-id="e765d-131">On the **Create a site** page, click **Team site**.</span></span>
     
-5. Dans la zone **nom du Site**, tapez un nom pour le site d’équipe privé. 
+5. <span data-ttu-id="e765d-132">Dans la zone **nom du Site**, tapez un nom pour le site d’équipe privé.</span><span class="sxs-lookup"><span data-stu-id="e765d-132">In **Site name**, type a name for the private team site.</span></span> 
     
-6. Dans la **description de site d’équipe,** tapez une description de l’objet du site.
+6. <span data-ttu-id="e765d-133">Dans la **description de site d’équipe,** tapez une description de l’objet du site.</span><span class="sxs-lookup"><span data-stu-id="e765d-133">In **Team site description,** type a description of the purpose of the site.</span></span>
     
-7. Dans **les paramètres de confidentialité**, sélectionnez **privé - uniquement les membres peuvent accéder à ce site**, puis cliquez sur **suivant**.
+7. <span data-ttu-id="e765d-134">Dans **les paramètres de confidentialité**, sélectionnez **privé - uniquement les membres peuvent accéder à ce site**, puis cliquez sur **suivant**.</span><span class="sxs-lookup"><span data-stu-id="e765d-134">In **Privacy settings**, select **Private - only members can access this site**, and then click **Next**.</span></span>
     
-8. Sur le **qui voulez-vous ajouter ?** volet, dans la zone **Ajouter des membres**, tapez les noms des comptes d’utilisateurs qui ont accès à ce site d’équipe privé.
+8. <span data-ttu-id="e765d-135">Sur le **qui voulez-vous ajouter ?** volet, dans la zone **Ajouter des membres**, tapez les noms des comptes d’utilisateurs qui ont accès à ce site d’équipe privé.</span><span class="sxs-lookup"><span data-stu-id="e765d-135">On the **Who do you want to add?** pane, in **Add members**, type the names of user accounts that have access to this private team site.</span></span>
     
-9. Lorsque vous avez terminé l’ajout de l’ensemble initial de membres au site, cliquez sur **Terminer**
+9. <span data-ttu-id="e765d-136">Lorsque vous avez terminé l’ajout de l’ensemble initial de membres au site, cliquez sur **Terminer**</span><span class="sxs-lookup"><span data-stu-id="e765d-136">When you are done adding the initial set of members to the site, click **Finish**</span></span>
     
-Voici la configuration finale.
+<span data-ttu-id="e765d-137">Voici la configuration finale.</span><span class="sxs-lookup"><span data-stu-id="e765d-137">Here is your resulting configuration.</span></span>
   
 ![Protection de base pour le site d’équipe SharePoint Online privé.](images/91769026-37e3-4383-ac3c-dbf7aca98e41.png)
   
-## <a name="sensitive-sharepoint-online-team-sites"></a>Sites d’équipe SharePoint Online sensibles
+## <a name="sensitive-sharepoint-online-team-sites"></a><span data-ttu-id="e765d-139">Sites d’équipe SharePoint Online sensibles</span><span class="sxs-lookup"><span data-stu-id="e765d-139">Sensitive SharePoint Online team sites</span></span>
 
-Un site d’équipe SharePoint Online sensible est un site d’équipe isolé. En d’autres termes, les autorisations sont contrôlées selon l’appartenance de l’utilisateur à des groupes SharePoint, et non selon son appartenance au groupe Office 365 associé au site d’équipe.
+<span data-ttu-id="e765d-140">Un site d’équipe SharePoint Online sensible est un site d’équipe isolé. En d’autres termes, les autorisations sont contrôlées selon l’appartenance de l’utilisateur à des groupes SharePoint, et non selon son appartenance au groupe Office 365 associé au site d’équipe.</span><span class="sxs-lookup"><span data-stu-id="e765d-140">A sensitive SharePoint Online team site is an isolated team site, which means that permissions are controlled through membership in SharePoint groups instead of membership in the Office 365 group associated with the team site.</span></span>
   
-La création d’un site d’équipe isolé se déroule en deux étapes.
+<span data-ttu-id="e765d-141">La création d’un site d’équipe isolé se déroule en deux étapes.</span><span class="sxs-lookup"><span data-stu-id="e765d-141">To create an isolated team site, there are two main steps.</span></span>
   
-### <a name="step-1-design-your-isolated-site"></a>Étape 1 : conception du site isolé
+### <a name="step-1-design-your-isolated-site"></a><span data-ttu-id="e765d-142">Étape 1 : conception du site isolé</span><span class="sxs-lookup"><span data-stu-id="e765d-142">Step 1: Design your isolated site</span></span>
 
-Pour concevoir votre site d’équipe isolé, vous devez choisir :
+<span data-ttu-id="e765d-143">Pour concevoir votre site d’équipe isolé, vous devez choisir :</span><span class="sxs-lookup"><span data-stu-id="e765d-143">To design your isolated team site, you need to determine:</span></span>
   
-- vos groupes SharePoint et les niveaux d’autorisation ;
+- <span data-ttu-id="e765d-144">vos groupes SharePoint et les niveaux d’autorisation ;</span><span class="sxs-lookup"><span data-stu-id="e765d-144">Your SharePoint groups and permission levels.</span></span>
     
-- les groupes d’accès qui seront membres de vos groupes SharePoint.
+- <span data-ttu-id="e765d-145">les groupes d’accès qui seront membres de vos groupes SharePoint.</span><span class="sxs-lookup"><span data-stu-id="e765d-145">The set of access groups that will be members of your SharePoint groups.</span></span>
     
-     Le jeu de groupes d’accès recommandé est un des membres du site, un pour les visiteurs du site affichent et un pour les administrateurs de site.
+     <span data-ttu-id="e765d-146">Le jeu de groupes d’accès recommandé est un des membres du site, un pour les visiteurs du site affichent et un pour les administrateurs de site.</span><span class="sxs-lookup"><span data-stu-id="e765d-146">The recommended set of access groups is one for site members, one for site viewers, and one for site administrators.</span></span>
     
-- si vous allez utiliser des groupes imbriqués au sein de vos groupes d’accès.
+- <span data-ttu-id="e765d-147">si vous allez utiliser des groupes imbriqués au sein de vos groupes d’accès.</span><span class="sxs-lookup"><span data-stu-id="e765d-147">Whether you will use nested groups within your access groups.</span></span>
     
-Voici à quoi peuvent ressembler les niveaux d’autorisation et de structure du groupe recommandés :
+<span data-ttu-id="e765d-148">Voici à quoi peuvent ressembler les niveaux d’autorisation et de structure du groupe recommandés :</span><span class="sxs-lookup"><span data-stu-id="e765d-148">For example, the recommended group structure and permission levels look like this:</span></span>
   
-|**Groupe SharePoint**|**Niveau d'autorisation**|**Groupe d’accès (exemples)**|
+|<span data-ttu-id="e765d-149">**Groupe SharePoint**</span><span class="sxs-lookup"><span data-stu-id="e765d-149">**SharePoint group**</span></span>|<span data-ttu-id="e765d-150">**Niveau d'autorisation**</span><span class="sxs-lookup"><span data-stu-id="e765d-150">**Permission level**</span></span>|<span data-ttu-id="e765d-151">**Groupe d’accès (exemples)**</span><span class="sxs-lookup"><span data-stu-id="e765d-151">**Access group (examples)**</span></span>|
 |:-----|:-----|:-----|
-|[nom de site] Membres  <br/> |Modification  <br/> |[nom de site] Membres  <br/> |
-|[nom de site] Visiteurs  <br/> |Lecture  <br/> |[nom de site] Afficheurs  <br/> |
-|[nom de site] Propriétaires  <br/> |Contrôle total  <br/> |[nom de site] Administrateurs  <br/> |
+|<span data-ttu-id="e765d-152">[nom de site] Membres</span><span class="sxs-lookup"><span data-stu-id="e765d-152">[site name] Members</span></span>  <br/> |<span data-ttu-id="e765d-153">Modification</span><span class="sxs-lookup"><span data-stu-id="e765d-153">Edit</span></span>  <br/> |<span data-ttu-id="e765d-154">[nom de site] Membres</span><span class="sxs-lookup"><span data-stu-id="e765d-154">[site name] Members</span></span>  <br/> |
+|<span data-ttu-id="e765d-155">[nom de site] Visiteurs</span><span class="sxs-lookup"><span data-stu-id="e765d-155">[site name] Visitors</span></span>  <br/> |<span data-ttu-id="e765d-156">Lecture</span><span class="sxs-lookup"><span data-stu-id="e765d-156">Read</span></span>  <br/> |<span data-ttu-id="e765d-157">[nom de site] Afficheurs</span><span class="sxs-lookup"><span data-stu-id="e765d-157">[site name] Viewers</span></span>  <br/> |
+|<span data-ttu-id="e765d-158">[nom de site] Propriétaires</span><span class="sxs-lookup"><span data-stu-id="e765d-158">[site name] Owners</span></span>  <br/> |<span data-ttu-id="e765d-159">Contrôle total</span><span class="sxs-lookup"><span data-stu-id="e765d-159">Full control</span></span>  <br/> |<span data-ttu-id="e765d-160">[nom de site] Administrateurs</span><span class="sxs-lookup"><span data-stu-id="e765d-160">[site name] Admins</span></span>  <br/> |
    
-Les groupes SharePoint et les niveaux d’autorisation sont créés par défaut pour un site d’équipe. Vous devez nommer vos groupes d’accès.
+<span data-ttu-id="e765d-p105">Les groupes SharePoint et les niveaux d’autorisation sont créés par défaut pour un site d’équipe. Vous devez nommer vos groupes d’accès.</span><span class="sxs-lookup"><span data-stu-id="e765d-p105">The SharePoint groups and permission levels are created by default for a team site. You need to determine the names of your access groups.</span></span>
   
-Pour les détails du processus de conception, consultez [conception d’un site d’équipe SharePoint Online isolé](design-an-isolated-sharepoint-online-team-site.md).
+<span data-ttu-id="e765d-163">Pour les détails du processus de conception, consultez [conception d’un site d’équipe SharePoint Online isolé](design-an-isolated-sharepoint-online-team-site.md).</span><span class="sxs-lookup"><span data-stu-id="e765d-163">For the details of the design process, see [Design an isolated SharePoint Online team site](design-an-isolated-sharepoint-online-team-site.md).</span></span>
   
-### <a name="step-2-deploy-your-isolated-site"></a>Étape 2 : déploiement du site isolé
+### <a name="step-2-deploy-your-isolated-site"></a><span data-ttu-id="e765d-164">Étape 2 : déploiement du site isolé</span><span class="sxs-lookup"><span data-stu-id="e765d-164">Step 2: Deploy your isolated site</span></span>
 
-Pour déployer votre site isolé, vous devez d’abord :
+<span data-ttu-id="e765d-165">Pour déployer votre site isolé, vous devez d’abord :</span><span class="sxs-lookup"><span data-stu-id="e765d-165">To deploy your isolated site, you first need to:</span></span>
   
-- déterminer les comptes d’utilisateurs et les groupes à ajouter à chacun de vos groupes d’accès ;
+- <span data-ttu-id="e765d-166">déterminer les comptes d’utilisateurs et les groupes à ajouter à chacun de vos groupes d’accès ;</span><span class="sxs-lookup"><span data-stu-id="e765d-166">Determine the user accounts and groups to add to each of your access groups.</span></span>
     
-- créer les groupes d’accès et ajouter les utilisateurs et les membres du groupe.
+- <span data-ttu-id="e765d-167">créer les groupes d’accès et ajouter les utilisateurs et les membres du groupe.</span><span class="sxs-lookup"><span data-stu-id="e765d-167">Create the access groups and add the user and group members.</span></span>
     
-Pour obtenir la procédure détaillée, voir la **Phase 1** de [déployer un site d’équipe SharePoint Online isolé](deploy-an-isolated-sharepoint-online-team-site.md).
+<span data-ttu-id="e765d-168">Pour obtenir la procédure détaillée, voir la **Phase 1** de [déployer un site d’équipe SharePoint Online isolé](deploy-an-isolated-sharepoint-online-team-site.md).</span><span class="sxs-lookup"><span data-stu-id="e765d-168">For the detailed steps, see **Phase 1** of [Deploy an isolated SharePoint Online team site](deploy-an-isolated-sharepoint-online-team-site.md).</span></span>
   
-Ensuite, vous devez créer le site d’équipe SharePoint Online en suivant ces étapes.
+<span data-ttu-id="e765d-169">Ensuite, vous devez créer le site d’équipe SharePoint Online en suivant ces étapes.</span><span class="sxs-lookup"><span data-stu-id="e765d-169">Next, you create the SharePoint Online team site with these steps.</span></span>
   
-1. Connectez-vous au portail Office 365 avec un compte qui sera également utilisé pour administrer le site d’équipe SharePoint Online (un administrateur SharePoint Online). Pour de l’aide, consultez la rubrique [pour vous connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. <span data-ttu-id="e765d-p106">Connectez-vous au portail Office 365 avec un compte qui sera également utilisé pour administrer le site d’équipe SharePoint Online (un administrateur SharePoint Online). Pour de l’aide, consultez la rubrique [pour vous connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).</span><span class="sxs-lookup"><span data-stu-id="e765d-p106">Sign in to the Office 365 portal with an account that will also be used to administer the SharePoint Online team site (a SharePoint Online administrator). For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).</span></span>
     
-2. Dans la liste des mosaïques, cliquez sur **SharePoint**.
+2. <span data-ttu-id="e765d-172">Dans la liste des mosaïques, cliquez sur **SharePoint**.</span><span class="sxs-lookup"><span data-stu-id="e765d-172">In the list of tiles, click **SharePoint**.</span></span>
     
-3. Dans le nouvel onglet **SharePoint** de votre navigateur, cliquez sur **+ créer le site**.
+3. <span data-ttu-id="e765d-173">Dans le nouvel onglet **SharePoint** de votre navigateur, cliquez sur **+ créer le site**.</span><span class="sxs-lookup"><span data-stu-id="e765d-173">In the new **SharePoint** tab of your browser, click **+ Create site**.</span></span>
     
-4. Dans la page **créer un site** , cliquez sur **site d’équipe**.
+4. <span data-ttu-id="e765d-174">Dans la page **créer un site** , cliquez sur **site d’équipe**.</span><span class="sxs-lookup"><span data-stu-id="e765d-174">On the **Create a site** page, click **Team site**.</span></span>
     
-5. Dans la zone **nom du Site**, tapez un nom pour le site d’équipe privé.
+5. <span data-ttu-id="e765d-175">Dans la zone **nom du Site**, tapez un nom pour le site d’équipe privé.</span><span class="sxs-lookup"><span data-stu-id="e765d-175">In **Site name**, type a name for the private team site.</span></span>
     
-6. Dans la **description de site d’équipe**, tapez une description facultative.
+6. <span data-ttu-id="e765d-176">Dans la **description de site d’équipe**, tapez une description facultative.</span><span class="sxs-lookup"><span data-stu-id="e765d-176">In **Team site description**, type an optional description.</span></span>
     
-7. Dans **les paramètres de confidentialité**, sélectionnez **privé - uniquement les membres peuvent accéder à ce site**, puis cliquez sur **suivant**.
+7. <span data-ttu-id="e765d-177">Dans **les paramètres de confidentialité**, sélectionnez **privé - uniquement les membres peuvent accéder à ce site**, puis cliquez sur **suivant**.</span><span class="sxs-lookup"><span data-stu-id="e765d-177">In **Privacy settings**, select **Private - only members can access this site**, and then click **Next**.</span></span>
     
-8. Sur le **qui voulez-vous ajouter ?** volet, cliquez sur **Terminer**.
+8. <span data-ttu-id="e765d-178">Sur le **qui voulez-vous ajouter ?** volet, cliquez sur **Terminer**.</span><span class="sxs-lookup"><span data-stu-id="e765d-178">On the **Who do you want to add?** pane, click **Finish**.</span></span>
     
-Ensuite, dans le nouveau site d’équipe SharePoint Online, configurez les autorisations en suivant ces étapes.
+<span data-ttu-id="e765d-179">Ensuite, dans le nouveau site d’équipe SharePoint Online, configurez les autorisations en suivant ces étapes.</span><span class="sxs-lookup"><span data-stu-id="e765d-179">Next, from the new SharePoint Online team site, configure permissions with these steps.</span></span>
   
-1. Choisissez le Nom d’utilisateur principal (UPN) de l’administrateur informatique ou d’une autre personne qui sera chargée de répondre aux demandes d’accès au site (belindan@contoso.com est un exemple d’UPN). Notez cet UPN ici : _________________________________________.
+1. <span data-ttu-id="e765d-p107">Choisissez le Nom d’utilisateur principal (UPN) de l’administrateur informatique ou d’une autre personne qui sera chargée de répondre aux demandes d’accès au site (belindan@contoso.com est un exemple d’UPN). Notez cet UPN ici : _________________________________________.</span><span class="sxs-lookup"><span data-stu-id="e765d-p107">Determine the User Principal Name (UPN) of the IT administrator or other person who will be responsible for responding to and addressing requests for access to the site (belindan@contoso.com is an example of a UPN). Write that UPN here: _________________________________________.</span></span>
     
-2. Dans la barre d’outils, cliquez sur l’icône de paramètres, puis cliquez sur **autorisations du Site**.
+2. <span data-ttu-id="e765d-182">Dans la barre d’outils, cliquez sur l’icône de paramètres, puis cliquez sur **autorisations du Site**.</span><span class="sxs-lookup"><span data-stu-id="e765d-182">In the tool bar, click the settings icon, and then click **Site permissions**.</span></span>
     
-3. Dans le volet **autorisations de Site** , cliquez sur **autorisations avancées**.
+3. <span data-ttu-id="e765d-183">Dans le volet **autorisations de Site** , cliquez sur **autorisations avancées**.</span><span class="sxs-lookup"><span data-stu-id="e765d-183">In the **Site permissions** pane, click **Advanced permissions settings**.</span></span>
     
-4. Dans l’onglet **autorisations** de nouveau de votre navigateur, cliquez sur **Paramètres de demande d’accès**.
+4. <span data-ttu-id="e765d-184">Dans l’onglet **autorisations** de nouveau de votre navigateur, cliquez sur **Paramètres de demande d’accès**.</span><span class="sxs-lookup"><span data-stu-id="e765d-184">On the new **Permissions** tab of your browser, click **Access Request Settings**.</span></span>
     
-5. Dans la boîte de dialogue **Paramètres de demandes d’accès** :
+5. <span data-ttu-id="e765d-185">Dans la boîte de dialogue **Paramètres de demandes d’accès** :</span><span class="sxs-lookup"><span data-stu-id="e765d-185">In the **Access Requests Settings** dialog box:</span></span>
     
-  - Désactivez les cases à cocher **Autoriser les membres à inviter d’autres personnes au groupe de membres du site** et de **permettre aux membres de partager le site et les fichiers et dossiers individuels** .
+  - <span data-ttu-id="e765d-186">Désactivez les cases à cocher **Autoriser les membres à inviter d’autres personnes au groupe de membres du site** et de **permettre aux membres de partager le site et les fichiers et dossiers individuels** .</span><span class="sxs-lookup"><span data-stu-id="e765d-186">Clear the **Allow members to share the site and individual files and folders** and **Allow members to invite others to the site members group** check boxes.</span></span>
     
-  - Dans la zone **Envoyer toutes les demandes d’accès**, tapez le nom UPN de l’administrateur de l’étape 1.
+  - <span data-ttu-id="e765d-187">Dans la zone **Envoyer toutes les demandes d’accès**, tapez le nom UPN de l’administrateur de l’étape 1.</span><span class="sxs-lookup"><span data-stu-id="e765d-187">Type the UPN of your IT administrator from step 1 in **Send all requests for access**.</span></span>
     
-  - Cliquez sur **OK**.
+  - <span data-ttu-id="e765d-188">Cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="e765d-188">Click **OK**.</span></span>
     
-6. Dans l’onglet **autorisations** de votre navigateur, cliquez sur **membres de [nom de site]** dans la liste.
+6. <span data-ttu-id="e765d-189">Dans l’onglet **autorisations** de votre navigateur, cliquez sur **membres de [nom de site]** dans la liste.</span><span class="sxs-lookup"><span data-stu-id="e765d-189">On the **Permissions** tab of your browser, click **[site name] Members** in the list.</span></span>
     
-7. **Personnes et groupes**, cliquez sur **Nouveau**.
+7. <span data-ttu-id="e765d-190">**Personnes et groupes**, cliquez sur **Nouveau**.</span><span class="sxs-lookup"><span data-stu-id="e765d-190">In **People and Groups**, click **New**.</span></span>
     
-8. Dans la boîte de dialogue de **partage** , tapez le nom de votre groupe d’accès de membres de site pour ce site, sélectionnez-le, puis cliquez sur **partage**.
+8. <span data-ttu-id="e765d-191">Dans la boîte de dialogue de **partage** , tapez le nom de votre groupe d’accès de membres de site pour ce site, sélectionnez-le, puis cliquez sur **partage**.</span><span class="sxs-lookup"><span data-stu-id="e765d-191">In the **Share** dialog box, type the name of your site members access group for this site, select it, and then click **Share**.</span></span>
     
-9. Cliquez sur le bouton de retour de votre navigateur.
+9. <span data-ttu-id="e765d-192">Cliquez sur le bouton de retour de votre navigateur.</span><span class="sxs-lookup"><span data-stu-id="e765d-192">Click the back button on your browser.</span></span>
     
-10. Dans la liste, cliquez sur **[nom de site] propriétaires** .
+10. <span data-ttu-id="e765d-193">Dans la liste, cliquez sur **[nom de site] propriétaires** .</span><span class="sxs-lookup"><span data-stu-id="e765d-193">Click **[site name] Owners** in the list.</span></span>
     
-11. **Personnes et groupes**, cliquez sur **Nouveau**.
+11. <span data-ttu-id="e765d-194">**Personnes et groupes**, cliquez sur **Nouveau**.</span><span class="sxs-lookup"><span data-stu-id="e765d-194">In **People and Groups**, click **New**.</span></span>
     
-12. Dans la boîte de dialogue de **partage** , tapez le nom du groupe de l’accès aux administrateurs du site pour ce site, sélectionnez-le, puis cliquez sur **partage**.
+12. <span data-ttu-id="e765d-195">Dans la boîte de dialogue de **partage** , tapez le nom du groupe de l’accès aux administrateurs du site pour ce site, sélectionnez-le, puis cliquez sur **partage**.</span><span class="sxs-lookup"><span data-stu-id="e765d-195">In the **Share** dialog box, type the name of the site administrators access group for this site, select it, and then click **Share**.</span></span>
     
-13. Cliquez sur le bouton de retour de votre navigateur.
+13. <span data-ttu-id="e765d-196">Cliquez sur le bouton de retour de votre navigateur.</span><span class="sxs-lookup"><span data-stu-id="e765d-196">Click the back button on your browser.</span></span>
     
-14. Dans la liste, cliquez sur **les visiteurs de [nom de site]** .
+14. <span data-ttu-id="e765d-197">Dans la liste, cliquez sur **les visiteurs de [nom de site]** .</span><span class="sxs-lookup"><span data-stu-id="e765d-197">Click **[site name] Visitors** in the list.</span></span>
     
-15. **Personnes et groupes**, cliquez sur **Nouveau**.
+15. <span data-ttu-id="e765d-198">**Personnes et groupes**, cliquez sur **Nouveau**.</span><span class="sxs-lookup"><span data-stu-id="e765d-198">In **People and Groups**, click **New**.</span></span>
     
-16. Dans la boîte de dialogue de **partage** , tapez le nom du groupe d’accès site visionneuses pour ce site, sélectionnez-le, puis cliquez sur **partage**.
+16. <span data-ttu-id="e765d-199">Dans la boîte de dialogue de **partage** , tapez le nom du groupe d’accès site visionneuses pour ce site, sélectionnez-le, puis cliquez sur **partage**.</span><span class="sxs-lookup"><span data-stu-id="e765d-199">In the **Share** dialog box, type the name of the site viewers access group for this site, select it, and then click **Share**.</span></span>
     
-17. Fermez l’onglet **autorisations** de votre navigateur.
+17. <span data-ttu-id="e765d-200">Fermez l’onglet **autorisations** de votre navigateur.</span><span class="sxs-lookup"><span data-stu-id="e765d-200">Close the **Permissions** tab of your browser.</span></span>
     
-Voici les résultats que vous devez escompter :
+<span data-ttu-id="e765d-201">Voici les résultats que vous devez escompter :</span><span class="sxs-lookup"><span data-stu-id="e765d-201">The results of these permission settings are:</span></span>
   
-- Le groupe SharePoint **propriétaires de [nom de site]** contient le groupe Administrateurs l’accès, dans laquelle tous les membres ont le niveau d’autorisation **contrôle total** .
+- <span data-ttu-id="e765d-202">Le groupe SharePoint **propriétaires de [nom de site]** contient le groupe Administrateurs l’accès, dans laquelle tous les membres ont le niveau d’autorisation **contrôle total** .</span><span class="sxs-lookup"><span data-stu-id="e765d-202">The **[site name] Owners** SharePoint group contains the site administrators access group, in which all the members have the **Full control** permission level.</span></span>
     
-- Le groupe SharePoint **des membres de [nom de site]** contient le groupe membres de l’accès, dans laquelle tous les membres ont le niveau d’autorisation **Modifier** .
+- <span data-ttu-id="e765d-203">Le groupe SharePoint **des membres de [nom de site]** contient le groupe membres de l’accès, dans laquelle tous les membres ont le niveau d’autorisation **Modifier** .</span><span class="sxs-lookup"><span data-stu-id="e765d-203">The **[site name] Members** SharePoint group contains the site members access group, in which all the members have the **Edit** permission level.</span></span>
     
-- Le groupe SharePoint **visiteurs de [nom de site]** contient le groupe d’accès site visionneuses, dans lequel tous les membres ont le niveau d’autorisation **lecture** .
+- <span data-ttu-id="e765d-204">Le groupe SharePoint **visiteurs de [nom de site]** contient le groupe d’accès site visionneuses, dans lequel tous les membres ont le niveau d’autorisation **lecture** .</span><span class="sxs-lookup"><span data-stu-id="e765d-204">The **[site name] Visitors** SharePoint group contains the site viewers access group, in which all the members have the **Read** permission level.</span></span>
     
-- La capacité des membres à inviter d’autres membres est désactivée.
+- <span data-ttu-id="e765d-205">La capacité des membres à inviter d’autres membres est désactivée.</span><span class="sxs-lookup"><span data-stu-id="e765d-205">The ability for members to invite other members is disabled.</span></span>
     
-- La possibilité pour les États non membres demander l’accès est activée.
+- <span data-ttu-id="e765d-206">La possibilité pour les États non membres demander l’accès est activée.</span><span class="sxs-lookup"><span data-stu-id="e765d-206">The ability for non-members to request access is enabled.</span></span>
     
-Voici la configuration finale.
+<span data-ttu-id="e765d-207">Voici la configuration finale.</span><span class="sxs-lookup"><span data-stu-id="e765d-207">Here is your resulting configuration.</span></span>
   
 ![Protection des données sensibles d’un site d’équipe SharePoint Online isolé.](images/7a6ab9c6-560a-4674-ac39-8175644dbe6f.png)
   
-En étant membres de l’un des groupes d’accès, les membres du site peuvent désormais travailler avec les ressources du site en toute sécurité.
+<span data-ttu-id="e765d-209">En étant membres de l’un des groupes d’accès, les membres du site peuvent désormais travailler avec les ressources du site en toute sécurité.</span><span class="sxs-lookup"><span data-stu-id="e765d-209">The members of the site, through group membership in one of the access groups, can now securely collaborate on the resources of the site.</span></span>
   
-## <a name="highly-confidential-sharepoint-online-team-sites"></a>Sites d’équipe SharePoint Online hautement confidentiels
+## <a name="highly-confidential-sharepoint-online-team-sites"></a><span data-ttu-id="e765d-210">Sites d’équipe SharePoint Online hautement confidentiels</span><span class="sxs-lookup"><span data-stu-id="e765d-210">Highly confidential SharePoint Online team sites</span></span>
 
-Un site d’équipe SharePoint Online hautement confidentiel est un site d’équipe isolé. En d’autres termes, les autorisations sont contrôlées selon l’appartenance de l’utilisateur à des groupes SharePoint, et non selon son appartenance au groupe Office 365 associé au site d’équipe.
+<span data-ttu-id="e765d-211">Un site d’équipe SharePoint Online hautement confidentiel est un site d’équipe isolé. En d’autres termes, les autorisations sont contrôlées selon l’appartenance de l’utilisateur à des groupes SharePoint, et non selon son appartenance au groupe Office 365 associé au site d’équipe.</span><span class="sxs-lookup"><span data-stu-id="e765d-211">A highly confidential SharePoint Online team site is an isolated team site, which means that permissions are controlled through membership in SharePoint groups instead of membership in the Office 365 group associated with the team site.</span></span>
   
-Pour créer un site d’équipe isolé pour protéger le travail et les informations hautement confidentielles partagées sur le site, vous devez suivre deux étapes.
+<span data-ttu-id="e765d-212">Pour créer un site d’équipe isolé pour protéger le travail et les informations hautement confidentielles partagées sur le site, vous devez suivre deux étapes.</span><span class="sxs-lookup"><span data-stu-id="e765d-212">To create an isolated team site for highly confidential information and collaboration, there are two main steps.</span></span>
   
-### <a name="step-1-design-your-isolated-site"></a>Étape 1 : conception du site isolé
+### <a name="step-1-design-your-isolated-site"></a><span data-ttu-id="e765d-213">Étape 1 : conception du site isolé</span><span class="sxs-lookup"><span data-stu-id="e765d-213">Step 1: Design your isolated site</span></span>
 
-Pour concevoir votre site d’équipe isolé, vous devez choisir :
+<span data-ttu-id="e765d-214">Pour concevoir votre site d’équipe isolé, vous devez choisir :</span><span class="sxs-lookup"><span data-stu-id="e765d-214">To design your isolated team site, you need to determine:</span></span>
   
-- vos groupes SharePoint et les niveaux d’autorisation ;
+- <span data-ttu-id="e765d-215">vos groupes SharePoint et les niveaux d’autorisation ;</span><span class="sxs-lookup"><span data-stu-id="e765d-215">Your SharePoint groups and permission levels.</span></span>
     
-- les groupes d’accès qui seront membres de vos groupes SharePoint.
+- <span data-ttu-id="e765d-216">les groupes d’accès qui seront membres de vos groupes SharePoint.</span><span class="sxs-lookup"><span data-stu-id="e765d-216">The set of access groups that will be members of your SharePoint groups.</span></span>
     
-     Le jeu de groupes d’accès recommandé est un des membres du site, un pour les visiteurs du site affichent et un pour les administrateurs de site.
+     <span data-ttu-id="e765d-217">Le jeu de groupes d’accès recommandé est un des membres du site, un pour les visiteurs du site affichent et un pour les administrateurs de site.</span><span class="sxs-lookup"><span data-stu-id="e765d-217">The recommended set of access groups is one for site members, one for site viewers, and one for site administrators.</span></span>
     
-- si vous allez utiliser des groupes imbriqués au sein de vos groupes d’accès.
+- <span data-ttu-id="e765d-218">si vous allez utiliser des groupes imbriqués au sein de vos groupes d’accès.</span><span class="sxs-lookup"><span data-stu-id="e765d-218">Whether you will use nested groups within your access groups.</span></span>
     
-Voici à quoi peuvent ressembler les niveaux d’autorisation et de structure du groupe recommandés :
+<span data-ttu-id="e765d-219">Voici à quoi peuvent ressembler les niveaux d’autorisation et de structure du groupe recommandés :</span><span class="sxs-lookup"><span data-stu-id="e765d-219">For example, the recommended group structure and permission levels look like this:</span></span>
   
-|**Groupe SharePoint**|**Niveau d'autorisation**|**Groupe d’accès (exemples)**|
+|<span data-ttu-id="e765d-220">**Groupe SharePoint**</span><span class="sxs-lookup"><span data-stu-id="e765d-220">**SharePoint group**</span></span>|<span data-ttu-id="e765d-221">**Niveau d'autorisation**</span><span class="sxs-lookup"><span data-stu-id="e765d-221">**Permission level**</span></span>|<span data-ttu-id="e765d-222">**Groupe d’accès (exemples)**</span><span class="sxs-lookup"><span data-stu-id="e765d-222">**Access group (examples)**</span></span>|
 |:-----|:-----|:-----|
-|[nom de site] Membres  <br/> |Modification  <br/> |[nom de site] Membres  <br/> |
-|[nom de site] Visiteurs  <br/> |Lecture  <br/> |[nom de site] Afficheurs  <br/> |
-|[nom de site] Propriétaires  <br/> |Contrôle total  <br/> |[nom de site] Administrateurs  <br/> |
+|<span data-ttu-id="e765d-223">[nom de site] Membres</span><span class="sxs-lookup"><span data-stu-id="e765d-223">[site name] Members</span></span>  <br/> |<span data-ttu-id="e765d-224">Modification</span><span class="sxs-lookup"><span data-stu-id="e765d-224">Edit</span></span>  <br/> |<span data-ttu-id="e765d-225">[nom de site] Membres</span><span class="sxs-lookup"><span data-stu-id="e765d-225">[site name] Members</span></span>  <br/> |
+|<span data-ttu-id="e765d-226">[nom de site] Visiteurs</span><span class="sxs-lookup"><span data-stu-id="e765d-226">[site name] Visitors</span></span>  <br/> |<span data-ttu-id="e765d-227">Lecture</span><span class="sxs-lookup"><span data-stu-id="e765d-227">Read</span></span>  <br/> |<span data-ttu-id="e765d-228">[nom de site] Afficheurs</span><span class="sxs-lookup"><span data-stu-id="e765d-228">[site name] Viewers</span></span>  <br/> |
+|<span data-ttu-id="e765d-229">[nom de site] Propriétaires</span><span class="sxs-lookup"><span data-stu-id="e765d-229">[site name] Owners</span></span>  <br/> |<span data-ttu-id="e765d-230">Contrôle total</span><span class="sxs-lookup"><span data-stu-id="e765d-230">Full control</span></span>  <br/> |<span data-ttu-id="e765d-231">[nom de site] Administrateurs</span><span class="sxs-lookup"><span data-stu-id="e765d-231">[site name] Admins</span></span>  <br/> |
    
-Les groupes SharePoint et les niveaux d’autorisation sont créés par défaut pour un site d’équipe. Vous devez nommer vos groupes d’accès.
+<span data-ttu-id="e765d-p108">Les groupes SharePoint et les niveaux d’autorisation sont créés par défaut pour un site d’équipe. Vous devez nommer vos groupes d’accès.</span><span class="sxs-lookup"><span data-stu-id="e765d-p108">The SharePoint groups and permission levels are created by default for a team site. You need to determine the names of your access groups.</span></span>
   
-Pour les détails du processus de conception, consultez [conception d’un site d’équipe SharePoint Online isolé](design-an-isolated-sharepoint-online-team-site.md).
+<span data-ttu-id="e765d-234">Pour les détails du processus de conception, consultez [conception d’un site d’équipe SharePoint Online isolé](design-an-isolated-sharepoint-online-team-site.md).</span><span class="sxs-lookup"><span data-stu-id="e765d-234">For the details of the design process, see [Design an isolated SharePoint Online team site](design-an-isolated-sharepoint-online-team-site.md).</span></span>
   
-### <a name="step-2-deploy-your-isolated-site"></a>Étape 2 : déploiement du site isolé
+### <a name="step-2-deploy-your-isolated-site"></a><span data-ttu-id="e765d-235">Étape 2 : déploiement du site isolé</span><span class="sxs-lookup"><span data-stu-id="e765d-235">Step 2: Deploy your isolated site</span></span>
 
-Pour déployer votre site isolé, vous devez d’abord :
+<span data-ttu-id="e765d-236">Pour déployer votre site isolé, vous devez d’abord :</span><span class="sxs-lookup"><span data-stu-id="e765d-236">To deploy your isolated site, you first need to:</span></span>
   
-- déterminer les utilisateurs et les membres du groupe de chacun de vos groupes d’accès ;
+- <span data-ttu-id="e765d-237">déterminer les utilisateurs et les membres du groupe de chacun de vos groupes d’accès ;</span><span class="sxs-lookup"><span data-stu-id="e765d-237">Determine the user and group members of each of your access groups</span></span>
     
-- créer les groupes d’accès et ajouter les utilisateurs et les membres du groupe ;
+- <span data-ttu-id="e765d-238">créer les groupes d’accès et ajouter les utilisateurs et les membres du groupe ;</span><span class="sxs-lookup"><span data-stu-id="e765d-238">Create the access groups and add the user and group members</span></span>
     
-- créer un site d’équipe isolé qui utilise vos groupes d’accès.
+- <span data-ttu-id="e765d-239">créer un site d’équipe isolé qui utilise vos groupes d’accès.</span><span class="sxs-lookup"><span data-stu-id="e765d-239">Create an isolated team site that uses your access groups</span></span>
     
-Pour obtenir la procédure détaillée, voir [déploiement d’un site d’équipe SharePoint Online isolé](deploy-an-isolated-sharepoint-online-team-site.md).
+<span data-ttu-id="e765d-240">Pour obtenir la procédure détaillée, voir [déploiement d’un site d’équipe SharePoint Online isolé](deploy-an-isolated-sharepoint-online-team-site.md).</span><span class="sxs-lookup"><span data-stu-id="e765d-240">For the detailed steps, see [Deploy an isolated SharePoint Online team site](deploy-an-isolated-sharepoint-online-team-site.md).</span></span>
   
-Voici les résultats que vous devez escompter :
+<span data-ttu-id="e765d-241">Voici les résultats que vous devez escompter :</span><span class="sxs-lookup"><span data-stu-id="e765d-241">The results of the permission settings are:</span></span>
   
-- Le groupe SharePoint **propriétaires de [nom de site]** contient le groupe Administrateurs l’accès, dans laquelle tous les membres ont le niveau d’autorisation **contrôle total** .
+- <span data-ttu-id="e765d-242">Le groupe SharePoint **propriétaires de [nom de site]** contient le groupe Administrateurs l’accès, dans laquelle tous les membres ont le niveau d’autorisation **contrôle total** .</span><span class="sxs-lookup"><span data-stu-id="e765d-242">The **[site name] Owners** SharePoint group contains the site administrators access group, in which all the members have the **Full control** permission level.</span></span>
     
-- Le groupe SharePoint **des membres de [nom de site]** contient le groupe membres de l’accès, dans laquelle tous les membres ont le niveau d’autorisation **Modifier** .
+- <span data-ttu-id="e765d-243">Le groupe SharePoint **des membres de [nom de site]** contient le groupe membres de l’accès, dans laquelle tous les membres ont le niveau d’autorisation **Modifier** .</span><span class="sxs-lookup"><span data-stu-id="e765d-243">The **[site name] Members** SharePoint group contains the site members access group, in which all the members have the **Edit** permission level.</span></span>
     
-- Le groupe SharePoint **visiteurs de [nom de site]** contient le groupe d’accès site visionneuses, dans lequel tous les membres ont le niveau d’autorisation **lecture** .
+- <span data-ttu-id="e765d-244">Le groupe SharePoint **visiteurs de [nom de site]** contient le groupe d’accès site visionneuses, dans lequel tous les membres ont le niveau d’autorisation **lecture** .</span><span class="sxs-lookup"><span data-stu-id="e765d-244">The **[site name] Visitors** SharePoint group contains the site viewers access group, in which all the members have the **Read** permission level.</span></span>
     
-- La capacité des membres à inviter d’autres membres est désactivée.
+- <span data-ttu-id="e765d-245">La capacité des membres à inviter d’autres membres est désactivée.</span><span class="sxs-lookup"><span data-stu-id="e765d-245">The ability for members to invite other members is disabled.</span></span>
     
-- La possibilité pour les États non membres demander l’accès est désactivée.
+- <span data-ttu-id="e765d-246">La possibilité pour les États non membres demander l’accès est désactivée.</span><span class="sxs-lookup"><span data-stu-id="e765d-246">The ability for non-members to request access is disabled.</span></span>
     
-Voici la configuration finale.
+<span data-ttu-id="e765d-247">Voici la configuration finale.</span><span class="sxs-lookup"><span data-stu-id="e765d-247">Here is your resulting configuration.</span></span>
   
 ![Protection avec un niveau de confidentialité élevé pour un site d’équipe SharePoint Online isolé.](images/196359ab-d7ed-4fcf-97b4-61820a74aca4.png)
   
-En étant membres de l’un des groupes d’accès, les membres du site peuvent désormais travailler avec les ressources du site en toute sécurité.
+<span data-ttu-id="e765d-249">En étant membres de l’un des groupes d’accès, les membres du site peuvent désormais travailler avec les ressources du site en toute sécurité.</span><span class="sxs-lookup"><span data-stu-id="e765d-249">The members of the site, through group membership in one of the access groups, can now securely collaborate on the resources of the site.</span></span>
   
-## <a name="next-step"></a>Étape suivante
+## <a name="next-step"></a><span data-ttu-id="e765d-250">Étape suivante</span><span class="sxs-lookup"><span data-stu-id="e765d-250">Next step</span></span>
 
-[Protéger les fichiers SharePoint Online avec les étiquettes d’Office 365 et DLP](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
+[<span data-ttu-id="e765d-251">Protéger les fichiers SharePoint Online avec les étiquettes d’Office 365 et DLP</span><span class="sxs-lookup"><span data-stu-id="e765d-251">Protect SharePoint Online files with Office 365 labels and DLP</span></span>](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a><span data-ttu-id="e765d-252">See Also</span><span class="sxs-lookup"><span data-stu-id="e765d-252">See Also</span></span>
 
-[Sécurisation des fichiers et sites SharePoint Online](secure-sharepoint-online-sites-and-files.md)
+[<span data-ttu-id="e765d-253">Sécurisation des fichiers et sites SharePoint Online</span><span class="sxs-lookup"><span data-stu-id="e765d-253">Secure SharePoint Online sites and files</span></span>](secure-sharepoint-online-sites-and-files.md)
   
-[Sites SharePoint en ligne sécurisés dans un environnement de développement/test](secure-sharepoint-online-sites-in-a-dev-test-environment.md)
+[<span data-ttu-id="e765d-254">Sites SharePoint en ligne sécurisés dans un environnement de développement/test</span><span class="sxs-lookup"><span data-stu-id="e765d-254">Secure SharePoint Online sites in a dev/test environment</span></span>](secure-sharepoint-online-sites-in-a-dev-test-environment.md)
   
-[Conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d'autres organisations flexibles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[<span data-ttu-id="e765d-255">Conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d'autres organisations flexibles</span><span class="sxs-lookup"><span data-stu-id="e765d-255">Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations</span></span>](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
-[Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.md)
+[<span data-ttu-id="e765d-256">Adoption du cloud et solutions hybrides</span><span class="sxs-lookup"><span data-stu-id="e765d-256">Cloud adoption and hybrid solutions</span></span>](cloud-adoption-and-hybrid-solutions.md)
 
 
 

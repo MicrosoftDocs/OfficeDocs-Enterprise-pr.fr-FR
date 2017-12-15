@@ -16,675 +16,675 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="accessible-diagram---feature-integration-across-microsoft-office-server-products"></a>Diagramme accessible : Intégration de fonctionnalités entre les produits Microsoft Office Server
+# <a name="accessible-diagram---feature-integration-across-microsoft-office-server-products"></a><span data-ttu-id="12efa-103">Diagramme accessible : Intégration de fonctionnalités entre les produits Microsoft Office Server</span><span class="sxs-lookup"><span data-stu-id="12efa-103">Accessible diagram - Feature Integration Across Microsoft Office Server Products</span></span>
 
-**Résumé :** Cet article est une version texte accessible du diagramme nommé fonctionnalité entre Microsoft Office Server produits d’intégration - SharePoint Server, Exchange Server, Lync Server et Office Online.
+<span data-ttu-id="12efa-104">**Résumé :** Cet article est une version texte accessible du diagramme nommé fonctionnalité entre Microsoft Office Server produits d’intégration - SharePoint Server, Exchange Server, Lync Server et Office Online.</span><span class="sxs-lookup"><span data-stu-id="12efa-104">**Summary:** This article is an accessible text version of the diagram named Feature Integration Across Microsoft Office Server Products - SharePoint Server, Exchange Server, Lync Server, and Office Online.</span></span>
   
-Le diagramme est constitué de plusieurs onglets, comme indiqué par les titres de section de ce document.
+<span data-ttu-id="12efa-105">Le diagramme est constitué de plusieurs onglets, comme indiqué par les titres de section de ce document.</span><span class="sxs-lookup"><span data-stu-id="12efa-105">The diagram consists of several tabs, as indicated by this document's section titles.</span></span>
   
-## <a name="introduction-tab"></a>Onglet Introduction
+## <a name="introduction-tab"></a><span data-ttu-id="12efa-106">Onglet Introduction</span><span class="sxs-lookup"><span data-stu-id="12efa-106">Introduction tab</span></span>
 
-### <a name="illustrations-for-cross-server-features"></a>Illustrations pour les fonctionnalités entre serveurs
+### <a name="illustrations-for-cross-server-features"></a><span data-ttu-id="12efa-107">Illustrations pour les fonctionnalités entre serveurs</span><span class="sxs-lookup"><span data-stu-id="12efa-107">Illustrations for cross-server features</span></span>
 
-Ce fichier Visio (ou fichier PDF multipage) comporte neuf onglets, chacun d’eux comportant des informations et un diagramme sur une fonctionnalité qui fonctionne sur plusieurs produits Office Server.
+<span data-ttu-id="12efa-108">Ce fichier Visio (ou fichier PDF multipage) comporte neuf onglets, chacun d’eux comportant des informations et un diagramme sur une fonctionnalité qui fonctionne sur plusieurs produits Office Server.</span><span class="sxs-lookup"><span data-stu-id="12efa-108">This Visio file (or multipage PDF file) has nine tabs, each of which has information and a diagram about a feature that works across Office Server products.</span></span>
   
-Les fonctionnalités et les onglets sont :  
+<span data-ttu-id="12efa-109">Les fonctionnalités et les onglets sont : </span><span class="sxs-lookup"><span data-stu-id="12efa-109">The features and tabs are:</span></span> 
   
-- Introduction
+- <span data-ttu-id="12efa-110">Introduction</span><span class="sxs-lookup"><span data-stu-id="12efa-110">Introduction</span></span>
     
-- Authentification de serveur à serveur 
+- <span data-ttu-id="12efa-111">Authentification de serveur à serveur</span><span class="sxs-lookup"><span data-stu-id="12efa-111">Server-to-server authentication</span></span> 
     
-- Photos haute résolution de l’utilisateur  
+- <span data-ttu-id="12efa-112">Photos haute résolution de l’utilisateur </span><span class="sxs-lookup"><span data-stu-id="12efa-112">High resolution user photos</span></span> 
     
-- Magasin de contacts unifié 
+- <span data-ttu-id="12efa-113">Magasin de contacts unifié</span><span class="sxs-lookup"><span data-stu-id="12efa-113">Unified contact store</span></span> 
     
-- Boîtes aux lettres de site 
+- <span data-ttu-id="12efa-114">Boîtes aux lettres de site</span><span class="sxs-lookup"><span data-stu-id="12efa-114">Site mailboxes</span></span> 
     
-- Synchronisation de tâches Exchange 
+- <span data-ttu-id="12efa-115">Synchronisation de tâches Exchange</span><span class="sxs-lookup"><span data-stu-id="12efa-115">Exchange task synchronization</span></span> 
     
-- Présence de Lync dans Outlook Web App 
+- <span data-ttu-id="12efa-116">Présence de Lync dans Outlook Web App</span><span class="sxs-lookup"><span data-stu-id="12efa-116">Lync presence in Outlook Web App</span></span> 
     
-- Messagerie vocale
+- <span data-ttu-id="12efa-117">Messagerie vocale</span><span class="sxs-lookup"><span data-stu-id="12efa-117">Voicemail</span></span>
     
-- Enregistrements de réunions 
+- <span data-ttu-id="12efa-118">Enregistrements de réunions</span><span class="sxs-lookup"><span data-stu-id="12efa-118">Meeting recordings</span></span> 
     
-Envoyez des commentaires sur cette solution ou des demandes pour des solutions supplémentaires à MODAContent@microsoft.com.  
+<span data-ttu-id="12efa-119">Envoyez des commentaires sur cette solution ou des demandes pour des solutions supplémentaires à MODAContent@microsoft.com. </span><span class="sxs-lookup"><span data-stu-id="12efa-119">Send feedback about this solution or requests for additional solutions to MODAContent@microsoft.com.</span></span> 
   
-### <a name="tips-for-printing"></a>Conseils pour l’impression
+### <a name="tips-for-printing"></a><span data-ttu-id="12efa-120">Conseils pour l’impression</span><span class="sxs-lookup"><span data-stu-id="12efa-120">Tips for printing</span></span>
 
-La taille de page de chaque onglet est 22 x 17 pouces (environ un quart de la taille d’un diagramme d’ingénierie ANSI). Vous pouvez imprimer cette page sur deux feuilles format tabloïd (11 x 17 pouces) ou quatre feuilles format lettre (8,5 x 11 pouces). Si vous avez un traceur, vous pouvez imprimer ces affiches à leur taille réelle. Sinon, suivez les étapes ci-après pour les imprimer dans un format réduit.  
+<span data-ttu-id="12efa-p101">La taille de page de chaque onglet est 22 x 17 pouces (environ un quart de la taille d’un diagramme d’ingénierie ANSI). Vous pouvez imprimer cette page sur deux feuilles format tabloïd (11 x 17 pouces) ou quatre feuilles format lettre (8,5 x 11 pouces). Si vous avez un traceur, vous pouvez imprimer ces affiches à leur taille réelle. Sinon, suivez les étapes ci-après pour les imprimer dans un format réduit. </span><span class="sxs-lookup"><span data-stu-id="12efa-p101">The page size of each tab is 22 x 17 inches (about a quarter of the size of an ANSI Engineering diagram). You can print this page on two tabloid-sized sheets (17 x 11) inches) or four letter-sized sheets (11 x 8.5 inches). If you have a plotter, you can print these posters in their full size. If you don't have plotter, use the following steps to print on smaller paper.</span></span> 
   
- **Imprimer des affiches sur du papier de plus petite**
+ <span data-ttu-id="12efa-125">**Imprimer des affiches sur du papier de plus petite**</span><span class="sxs-lookup"><span data-stu-id="12efa-125">**Print posters on smaller paper**</span></span>
   
-1. Ouvrez l’affiche dans Visio. 
+1. <span data-ttu-id="12efa-126">Ouvrez l’affiche dans Visio.</span><span class="sxs-lookup"><span data-stu-id="12efa-126">Open the poster in Visio.</span></span> 
     
-2. Dans le menu **fichier** , cliquez sur **Mise en Page**. 
+2. <span data-ttu-id="12efa-127">Dans le menu **fichier** , cliquez sur **Mise en Page**.</span><span class="sxs-lookup"><span data-stu-id="12efa-127">On the **File** menu, click **Page Setup**.</span></span> 
     
-3. Sous l’onglet **Configuration de l’impression** , dans la section de **papier de l’imprimante** , sélectionnez le format de papier que vous souhaitez imprimer.
+3. <span data-ttu-id="12efa-128">Sous l’onglet **Configuration de l’impression** , dans la section de **papier de l’imprimante** , sélectionnez le format de papier que vous souhaitez imprimer.</span><span class="sxs-lookup"><span data-stu-id="12efa-128">On the **Print Setup** tab, in the **Printer paper** section, select the size of paper you want to print on.</span></span>
     
-4. Sous l’onglet **Configuration de l’impression** , dans la section **zoom d’impression** , cliquez sur **Ajuster sur**et entrez **1 p. en largeur et 1 p. en hauteur**. 
+4. <span data-ttu-id="12efa-129">Sous l’onglet **Configuration de l’impression** , dans la section **zoom d’impression** , cliquez sur **Ajuster sur**et entrez **1 p. en largeur et 1 p. en hauteur**.</span><span class="sxs-lookup"><span data-stu-id="12efa-129">On the **Print Setup** tab, in the **Print zoom** section, click **Fit to**, and then enter **1 sheet across by 1 sheet down**.</span></span> 
     
-5. Sous l’onglet **Taille de la Page** , cliquez sur **Ajuster au contenu de dessin**, puis cliquez sur **OK**. 
+5. <span data-ttu-id="12efa-130">Sous l’onglet **Taille de la Page** , cliquez sur **Ajuster au contenu de dessin**, puis cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="12efa-130">On the **Page Size** tab, click **Size to fit drawing contents**, and then click **OK**.</span></span> 
     
-6. Dans le menu **fichier** , cliquez sur **Imprimer**. 
+6. <span data-ttu-id="12efa-131">Dans le menu **fichier** , cliquez sur **Imprimer**.</span><span class="sxs-lookup"><span data-stu-id="12efa-131">On the **File** menu, click **Print**.</span></span> 
     
-### <a name="microsoft-tags-and-qr-codes"></a>Balises Microsoft et codes QR
+### <a name="microsoft-tags-and-qr-codes"></a><span data-ttu-id="12efa-132">Balises Microsoft et codes QR</span><span class="sxs-lookup"><span data-stu-id="12efa-132">Microsoft tags and QR codes</span></span>
 
-Utilisez votre Windows phone ou téléchargez un lecteur de code QR pour obtenir plus d’informations sur la mise en œuvre de ces fonctionnalités.  
+<span data-ttu-id="12efa-133">Utilisez votre Windows phone ou téléchargez un lecteur de code QR pour obtenir plus d’informations sur la mise en œuvre de ces fonctionnalités. </span><span class="sxs-lookup"><span data-stu-id="12efa-133">Use your Windows phone or download a QR Code reader to get more information about implementing these features.</span></span> 
   
-### <a name="cross-server-features"></a>Fonctionnalités entre serveurs
+### <a name="cross-server-features"></a><span data-ttu-id="12efa-134">Fonctionnalités entre serveurs</span><span class="sxs-lookup"><span data-stu-id="12efa-134">Cross-server features</span></span>
 
-Un tableau indique les fonctionnalités et les produits Office Server qui les utilisent. Les fonctionnalités sont :  
+<span data-ttu-id="12efa-p102">Un tableau indique les fonctionnalités et les produits Office Server qui les utilisent. Les fonctionnalités sont : </span><span class="sxs-lookup"><span data-stu-id="12efa-p102">A table shows the features and the Office Server products that use them. The features are:</span></span> 
   
-Authentification de serveur à serveur Cette fonctionnalité s’applique à :  
+<span data-ttu-id="12efa-p103">Authentification de serveur à serveur Cette fonctionnalité s’applique à : </span><span class="sxs-lookup"><span data-stu-id="12efa-p103">Server-to-server authentication. This feature is applicable to:</span></span> 
   
-- SharePoint 
+- <span data-ttu-id="12efa-139">SharePoint</span><span class="sxs-lookup"><span data-stu-id="12efa-139">SharePoint</span></span> 
     
-- Exchange
+- <span data-ttu-id="12efa-140">Exchange</span><span class="sxs-lookup"><span data-stu-id="12efa-140">Exchange</span></span>
     
-- Lync
+- <span data-ttu-id="12efa-141">Lync</span><span class="sxs-lookup"><span data-stu-id="12efa-141">Lync</span></span>
     
-- Office Online (anciennement Office Web Apps)  
+- <span data-ttu-id="12efa-142">Office Online (anciennement Office Web Apps) </span><span class="sxs-lookup"><span data-stu-id="12efa-142">Office Online (formerly known as Office Web Apps)</span></span> 
     
-Photos haute résolution de l’utilisateur Cette fonctionnalité s’applique à :  
+<span data-ttu-id="12efa-p104">Photos haute résolution de l’utilisateur Cette fonctionnalité s’applique à : </span><span class="sxs-lookup"><span data-stu-id="12efa-p104">High resolution user photos. This feature is applicable to:</span></span> 
   
-- SharePoint
+- <span data-ttu-id="12efa-145">SharePoint</span><span class="sxs-lookup"><span data-stu-id="12efa-145">SharePoint</span></span>
     
-- Exchange
+- <span data-ttu-id="12efa-146">Exchange</span><span class="sxs-lookup"><span data-stu-id="12efa-146">Exchange</span></span>
     
-- Lync
+- <span data-ttu-id="12efa-147">Lync</span><span class="sxs-lookup"><span data-stu-id="12efa-147">Lync</span></span>
     
-Magasin de contacts unifié Cette fonctionnalité s’applique à :  
+<span data-ttu-id="12efa-p105">Magasin de contacts unifié Cette fonctionnalité s’applique à : </span><span class="sxs-lookup"><span data-stu-id="12efa-p105">Unified contact store. This feature is applicable to:</span></span> 
   
-- Exchange
+- <span data-ttu-id="12efa-150">Exchange</span><span class="sxs-lookup"><span data-stu-id="12efa-150">Exchange</span></span>
     
-- Lync
+- <span data-ttu-id="12efa-151">Lync</span><span class="sxs-lookup"><span data-stu-id="12efa-151">Lync</span></span>
     
-Boîtes aux lettres de site. Cette fonctionnalité s’applique à :  
+<span data-ttu-id="12efa-p106">Boîtes aux lettres de site. Cette fonctionnalité s’applique à : </span><span class="sxs-lookup"><span data-stu-id="12efa-p106">Site mailboxes. This feature is applicable to:</span></span> 
   
-- SharePoint
+- <span data-ttu-id="12efa-154">SharePoint</span><span class="sxs-lookup"><span data-stu-id="12efa-154">SharePoint</span></span>
     
-- Exchange
+- <span data-ttu-id="12efa-155">Exchange</span><span class="sxs-lookup"><span data-stu-id="12efa-155">Exchange</span></span>
     
-Synchronisation de tâches Exchange Cette fonctionnalité s’applique à :  
+<span data-ttu-id="12efa-p107">Synchronisation de tâches Exchange Cette fonctionnalité s’applique à : </span><span class="sxs-lookup"><span data-stu-id="12efa-p107">Exchange task synchronization. This feature is applicable to:</span></span> 
   
-- SharePoint
+- <span data-ttu-id="12efa-158">SharePoint</span><span class="sxs-lookup"><span data-stu-id="12efa-158">SharePoint</span></span>
     
-- Exchange
+- <span data-ttu-id="12efa-159">Exchange</span><span class="sxs-lookup"><span data-stu-id="12efa-159">Exchange</span></span>
     
-Présence de Lync dans Outlook Web App Cette fonctionnalité s’applique à :  
+<span data-ttu-id="12efa-p108">Présence de Lync dans Outlook Web App Cette fonctionnalité s’applique à : </span><span class="sxs-lookup"><span data-stu-id="12efa-p108">Lync presence in Outlook Web App. This feature is applicable to:</span></span> 
   
-- Lync
+- <span data-ttu-id="12efa-162">Lync</span><span class="sxs-lookup"><span data-stu-id="12efa-162">Lync</span></span>
     
-Messagerie vocale. Cette fonctionnalité s’applique à :  
+<span data-ttu-id="12efa-p109">Messagerie vocale. Cette fonctionnalité s’applique à : </span><span class="sxs-lookup"><span data-stu-id="12efa-p109">Voicemail. This feature is applicable to:</span></span> 
   
-- Lync
+- <span data-ttu-id="12efa-165">Lync</span><span class="sxs-lookup"><span data-stu-id="12efa-165">Lync</span></span>
     
-Enregistrements de réunions. Cette fonctionnalité s’applique à :  
+<span data-ttu-id="12efa-p110">Enregistrements de réunions. Cette fonctionnalité s’applique à : </span><span class="sxs-lookup"><span data-stu-id="12efa-p110">Meeting recordings. This feature is applicable to:</span></span> 
   
-- SharePoint
+- <span data-ttu-id="12efa-168">SharePoint</span><span class="sxs-lookup"><span data-stu-id="12efa-168">SharePoint</span></span>
     
-- Lync
+- <span data-ttu-id="12efa-169">Lync</span><span class="sxs-lookup"><span data-stu-id="12efa-169">Lync</span></span>
     
-### <a name="office-web-apps-server"></a>Office Web Apps Server
+### <a name="office-web-apps-server"></a><span data-ttu-id="12efa-170">Office Web Apps Server</span><span class="sxs-lookup"><span data-stu-id="12efa-170">Office Web Apps Server</span></span>
 
-Office Web Apps Server est un produit Office Server qui offre des services d’affichage et de modification de fichier basés sur navigateur pour les fichiers Office. Office Web Apps Server est compatible avec les produits et services qui prennent en charge le protocole WOPI (Web Application Open Platform Interface). Ces produits, appelés hôtes, incluent SharePoint 2013, Lync Server 2013 et Exchange Server 2013.   
+<span data-ttu-id="12efa-p111">Office Web Apps Server est un produit Office Server qui offre des services d’affichage et de modification de fichier basés sur navigateur pour les fichiers Office. Office Web Apps Server est compatible avec les produits et services qui prennent en charge le protocole WOPI (Web Application Open Platform Interface). Ces produits, appelés hôtes, incluent SharePoint 2013, Lync Server 2013 et Exchange Server 2013.  </span><span class="sxs-lookup"><span data-stu-id="12efa-p111">Office Web Apps Server is an Office server product that provides browser-based file viewing and editing services for Office files. Office Web Apps Server works with products and services that support the Web Application Open Platform Interface Protocol (WOPI). These products, known as hosts, include SharePoint 2013, Lync Server 2013, and Exchange Server 2013.</span></span> 
   
-Pour en savoir plus sur Office Web Apps Server, téléchargez l’affiche simplifiée de déploiement d’Office Web Apps sur http://aka.ms/OfficeWebAppsPoster.  
+<span data-ttu-id="12efa-174">Pour en savoir plus sur Office Web Apps Server, téléchargez l’affiche simplifiée de déploiement d’Office Web Apps sur http://aka.ms/OfficeWebAppsPoster. </span><span class="sxs-lookup"><span data-stu-id="12efa-174">To learn more about Office Web Apps Server, download the Office Web Apps deployment simplified poster at http://aka.ms/OfficeWebAppsPoster.</span></span> 
   
-## <a name="server-to-server-authentication-tab"></a>Onglet Authentification de serveur à serveur
+## <a name="server-to-server-authentication-tab"></a><span data-ttu-id="12efa-175">Onglet Authentification de serveur à serveur</span><span class="sxs-lookup"><span data-stu-id="12efa-175">Server-to-Server Authentication tab</span></span>
 
-### <a name="servicing-resource-requests-between-servers"></a>Traitement des demandes de ressources entre les serveurs
+### <a name="servicing-resource-requests-between-servers"></a><span data-ttu-id="12efa-176">Traitement des demandes de ressources entre les serveurs</span><span class="sxs-lookup"><span data-stu-id="12efa-176">Servicing resource requests between servers</span></span>
 
-L’authentification de serveur à serveur est une nouvelle fonctionnalité d’Exchange Server 2013, Lync Server 2013 et SharePoint Server 2013 qui permet à un serveur de demander des ressources d’un autre serveur pour le compte d’un utilisateur. Cette fonctionnalité utilise le protocole industriel standard Open Authorization (OAuth) 2.0. L’authentification de serveur à serveur permet de nombreux nouveaux scénarios comme eDiscovery, les photos utilisateur à haute résolution et les boîtes aux lettres de site.  
+<span data-ttu-id="12efa-p112">L’authentification de serveur à serveur est une nouvelle fonctionnalité d’Exchange Server 2013, Lync Server 2013 et SharePoint Server 2013 qui permet à un serveur de demander des ressources d’un autre serveur pour le compte d’un utilisateur. Cette fonctionnalité utilise le protocole industriel standard Open Authorization (OAuth) 2.0. L’authentification de serveur à serveur permet de nombreux nouveaux scénarios comme eDiscovery, les photos utilisateur à haute résolution et les boîtes aux lettres de site. </span><span class="sxs-lookup"><span data-stu-id="12efa-p112">Server-to-server authentication is a new feature of Exchange Server 2013, Lync Server 2013, and SharePoint Server 2013 that allows a server to request resources of another server on behalf of a user. This feature uses the industry standard Open Authorization (OAuth) 2.0 protocol. Server-to-server authentication enables many new scenarios, such as eDiscovery, high resolution user photos, and site mailboxes.</span></span> 
   
- **Produits pour serveurs**
+ <span data-ttu-id="12efa-180">**Produits pour serveurs**</span><span class="sxs-lookup"><span data-stu-id="12efa-180">**Server products**</span></span>
   
-- Exchange Server 2013 
+- <span data-ttu-id="12efa-181">Exchange Server 2013</span><span class="sxs-lookup"><span data-stu-id="12efa-181">Exchange Server 2013</span></span> 
     
-- SharePoint Server 2013 
+- <span data-ttu-id="12efa-182">SharePoint Server 2013</span><span class="sxs-lookup"><span data-stu-id="12efa-182">SharePoint Server 2013</span></span> 
     
-- Lync Server 2013 
+- <span data-ttu-id="12efa-183">Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="12efa-183">Lync Server 2013</span></span> 
     
-### <a name="server-to-server-trust-relationships"></a>Relations d’approbation de serveur à serveur
+### <a name="server-to-server-trust-relationships"></a><span data-ttu-id="12efa-184">Relations d’approbation de serveur à serveur</span><span class="sxs-lookup"><span data-stu-id="12efa-184">Server-to-server trust relationships</span></span>
 
-Pour qu’un serveur puisse traiter une demande de ressource entrante, il doit approuver le serveur qui effectue la demande. Pour établir cette approbation, vous devez configurer des relations d’approbation de serveur à serveur.   
+<span data-ttu-id="12efa-p113">Pour qu’un serveur puisse traiter une demande de ressource entrante, il doit approuver le serveur qui effectue la demande. Pour établir cette approbation, vous devez configurer des relations d’approbation de serveur à serveur.  </span><span class="sxs-lookup"><span data-stu-id="12efa-p113">For a server to service an incoming resource request, it must trust the server making the request. To establish this trust, you must configure server-to-server trust relationships.</span></span> 
   
-Une relation d’approbation de serveur à serveur est unidirectionnelle. Lorsque vous configurez un serveur qui exécute SharePoint 2013 pour approuver un serveur Exchange 2013, le serveur qui exécute SharePoint Server approuve les demandes de ressources du serveur Exchange, mais le serveur Exchange n’approuve pas les demandes de ressources issues du serveur qui exécute SharePoint Server. Pour une intégration transparente, vous devez établir des approbations bidirectionnelles.  
+<span data-ttu-id="12efa-p114">Une relation d’approbation de serveur à serveur est unidirectionnelle. Lorsque vous configurez un serveur qui exécute SharePoint 2013 pour approuver un serveur Exchange 2013, le serveur qui exécute SharePoint Server approuve les demandes de ressources du serveur Exchange, mais le serveur Exchange n’approuve pas les demandes de ressources issues du serveur qui exécute SharePoint Server. Pour une intégration transparente, vous devez établir des approbations bidirectionnelles. </span><span class="sxs-lookup"><span data-stu-id="12efa-p114">A server-to-server trust relationship is one way. When you configure a server that runs SharePoint 2013 to trust an Exchange 2013 server, the server that runs SharePoint Server trusts resource requests from the Exchange server, but the Exchange server does not trust resource requests from the server that runs SharePoint Server. For seamless integration, you should establish two-way trusts.</span></span> 
   
-Le diagramme associé présente les relations d’approbation de serveur à serveur qui sont créées sous forme d’approbations bidirectionnelles. Les relations d’approbation bidirectionnelles présentées existent entre un serveur Exchange Server, un serveur SharePoint Server et un serveur Lync Server. Chaque type de serveur dispose d’une approbation bidirectionnelle avec chacun des deux autres serveurs.  
+<span data-ttu-id="12efa-p115">Le diagramme associé présente les relations d’approbation de serveur à serveur qui sont créées sous forme d’approbations bidirectionnelles. Les relations d’approbation bidirectionnelles présentées existent entre un serveur Exchange Server, un serveur SharePoint Server et un serveur Lync Server. Chaque type de serveur dispose d’une approbation bidirectionnelle avec chacun des deux autres serveurs. </span><span class="sxs-lookup"><span data-stu-id="12efa-p115">The accompanying diagram shows server-to-server trust relationships that are established as two-way trusts. The two-way trust relationships shown are between an Exchange Server, a SharePoint Server, and a Lync Server. Each server type has a two-way trust with each of the other two servers.</span></span> 
   
-### <a name="configuration"></a>Configuration
+### <a name="configuration"></a><span data-ttu-id="12efa-193">Configuration</span><span class="sxs-lookup"><span data-stu-id="12efa-193">Configuration</span></span>
 
-Pour configurer une approbation d’authentification de serveur à serveur, vous devez ajouter un nouvel émetteur de jeton de sécurité approuvé qui correspond à chaque serveur qui envoie des demandes de ressources pour le compte des utilisateurs. Chaque type de serveur a un point de terminaison de métadonnées JSON (JavaScript Object Notation) contenant des informations de configuration et une partie publique du certificat de signature du jeton d’accès. Une partie de la configuration d’une approbation d’authentification de serveur à serveur spécifie le point de terminaison de métadonnées JSON de l’autre serveur.  
+<span data-ttu-id="12efa-p116">Pour configurer une approbation d’authentification de serveur à serveur, vous devez ajouter un nouvel émetteur de jeton de sécurité approuvé qui correspond à chaque serveur qui envoie des demandes de ressources pour le compte des utilisateurs. Chaque type de serveur a un point de terminaison de métadonnées JSON (JavaScript Object Notation) contenant des informations de configuration et une partie publique du certificat de signature du jeton d’accès. Une partie de la configuration d’une approbation d’authentification de serveur à serveur spécifie le point de terminaison de métadonnées JSON de l’autre serveur. </span><span class="sxs-lookup"><span data-stu-id="12efa-p116">To configure a server-to-server authentication trust, you must add a new trusted security token issuer that corresponds to each server that sends resource requests on behalf of users. Each type of server has a JavaScript Object Notation (JSON) metadata endpoint that contains configuration information and a public portion of the access token signing certificate. Part of configuring a server-to-server authentication trust is specifying the JSON metadata endpoint of the other server.</span></span> 
   
-Le tableau suivant répertorie le point de terminaison de métadonnées JSON pour chaque serveur. Le tableau montre :  
+<span data-ttu-id="12efa-p117">Le tableau suivant répertorie le point de terminaison de métadonnées JSON pour chaque serveur. Le tableau montre : </span><span class="sxs-lookup"><span data-stu-id="12efa-p117">The following table lists the JSON metadata endpoint for each server. The table shows:</span></span> 
   
-- Un serveur Exchange avec un point de terminaison de métadonnées JSON de https://<server name>/autodiscover/metadata/json/1 
+- <span data-ttu-id="12efa-199">Un serveur Exchange avec un point de terminaison de métadonnées JSON de https://<server name>/autodiscover/metadata/json/1</span><span class="sxs-lookup"><span data-stu-id="12efa-199">An Exchange server with a JSON metadata endpoint of https://<server name>/autodiscover/metadata/json/1</span></span> 
     
-- Un serveur Lync avec un point de terminaison de métadonnées JSON de https://<server name>/metadata/json/1 
+- <span data-ttu-id="12efa-200">Un serveur Lync avec un point de terminaison de métadonnées JSON de https://<server name>/metadata/json/1</span><span class="sxs-lookup"><span data-stu-id="12efa-200">A Lync server with a JSON metadata endpoint of https://<server name>/metadata/json/1</span></span> 
     
-- Un serveur SharePoint avec un point de terminaison de métadonnées JSON de https://<web app name>/_layouts/15/metadata/json/1 
+- <span data-ttu-id="12efa-201">Un serveur SharePoint avec un point de terminaison de métadonnées JSON de https://<web app name>/_layouts/15/metadata/json/1</span><span class="sxs-lookup"><span data-stu-id="12efa-201">A SharePoint server with a JSON metadata endpoint of https://<web app name>/_layouts/15/metadata/json/1</span></span> 
     
-### <a name="example-how-server-to-server-authentication-works-for-ediscovery-between-sharepoint-and-exchange"></a>Exemple : Fonctionnement de l’authentification de serveur à serveur pour eDiscovery entre SharePoint et Exchange
+### <a name="example-how-server-to-server-authentication-works-for-ediscovery-between-sharepoint-and-exchange"></a><span data-ttu-id="12efa-202">Exemple : Fonctionnement de l’authentification de serveur à serveur pour eDiscovery entre SharePoint et Exchange</span><span class="sxs-lookup"><span data-stu-id="12efa-202">Example: How server-to-server authentication works for eDiscovery between SharePoint and Exchange</span></span>
 
-Dans cet exemple, le serveur Exchange 2013 a été configuré pour approuver le serveur qui exécute SharePoint Server avec une approbation de serveur à serveur. Un centre eDiscovery sur le serveur qui exécute SharePoint Server a été configuré pour inclure des données dans des boîtes aux lettres sur le serveur Exchange.  
+<span data-ttu-id="12efa-p118">Dans cet exemple, le serveur Exchange 2013 a été configuré pour approuver le serveur qui exécute SharePoint Server avec une approbation de serveur à serveur. Un centre eDiscovery sur le serveur qui exécute SharePoint Server a été configuré pour inclure des données dans des boîtes aux lettres sur le serveur Exchange. </span><span class="sxs-lookup"><span data-stu-id="12efa-p118">In this example, the Exchange 2013 server has been configured to trust the server that runs SharePoint Server with a server-to-server trust. An eDiscovery center on the server that runs SharePoint Server has been configured to include data in mailboxes on the Exchange server.</span></span> 
   
-Les demandes de ressources sur un autre serveur prennent la forme de jetons d’accès qui sont envoyés au service de serveur web sur le serveur de destination.  
+<span data-ttu-id="12efa-205">Les demandes de ressources sur un autre serveur prennent la forme de jetons d’accès qui sont envoyés au service de serveur web sur le serveur de destination. </span><span class="sxs-lookup"><span data-stu-id="12efa-205">Requests for resources on another server take the form of access tokens that are sent to the web server service on the destination server.</span></span> 
   
-Le diagramme associé représente la manière dont les requêtes et les jetons d’accès se déplacent entre les deux serveurs.  
+<span data-ttu-id="12efa-206">Le diagramme associé représente la manière dont les requêtes et les jetons d’accès se déplacent entre les deux serveurs. </span><span class="sxs-lookup"><span data-stu-id="12efa-206">The accompanying diagram shows how the queries and access tokens travel between the two servers.</span></span> 
   
-1. Un administrateur eDiscovery envoie une requête au serveur exécutant SharePoint Server qui inclut des ressources sur un serveur Exchange.  
+1. <span data-ttu-id="12efa-207">Un administrateur eDiscovery envoie une requête au serveur exécutant SharePoint Server qui inclut des ressources sur un serveur Exchange. </span><span class="sxs-lookup"><span data-stu-id="12efa-207">An eDiscovery administrator sends a query to the server that runs SharePoint Server that includes resources on an Exchange server.</span></span> 
     
-2. Le serveur qui exécute SharePoint Server génère un jeton d’accès, identifiant l’utilisateur et la ressource demandée.  
+2. <span data-ttu-id="12efa-208">Le serveur qui exécute SharePoint Server génère un jeton d’accès, identifiant l’utilisateur et la ressource demandée. </span><span class="sxs-lookup"><span data-stu-id="12efa-208">The server that runs SharePoint Server generates an access token, identifying the user and the requested resource.</span></span> 
     
-3. Le serveur qui exécute SharePoint Server envoie le jeton d’accès au serveur Exchange.  
+3. <span data-ttu-id="12efa-209">Le serveur qui exécute SharePoint Server envoie le jeton d’accès au serveur Exchange. </span><span class="sxs-lookup"><span data-stu-id="12efa-209">The server that runs SharePoint Server sends the access token to the Exchange server.</span></span> 
     
-4. Le serveur Exchange valide le jeton d’accès et envoie les résultats de la requête.  
+4. <span data-ttu-id="12efa-210">Le serveur Exchange valide le jeton d’accès et envoie les résultats de la requête. </span><span class="sxs-lookup"><span data-stu-id="12efa-210">The Exchange server validates the access token and sends the query results.</span></span> 
     
-5. Le serveur qui exécute SharePoint Server envoie les résultats de la requête de l’e-Discovery pour l’ordinateur de l’administrateur de l’e-Discovery. 
+5. <span data-ttu-id="12efa-211">Le serveur qui exécute SharePoint Server envoie les résultats de la requête de l’e-Discovery pour l’ordinateur de l’administrateur de l’e-Discovery.</span><span class="sxs-lookup"><span data-stu-id="12efa-211">The server that runs SharePoint Server sends the eDiscovery query results to the eDiscovery administrator's computer.</span></span> 
     
-## <a name="high-resolution-user-photos-tab"></a>Onglet Photos haute résolution de l’utilisateur
+## <a name="high-resolution-user-photos-tab"></a><span data-ttu-id="12efa-212">Onglet Photos haute résolution de l’utilisateur</span><span class="sxs-lookup"><span data-stu-id="12efa-212">High-Resolution User Photos tab</span></span>
 
-### <a name="larger-profile-picture-used-across-all-office-applications"></a>Photo de profil plus grande utilisée pour toutes les applications Office
+### <a name="larger-profile-picture-used-across-all-office-applications"></a><span data-ttu-id="12efa-213">Photo de profil plus grande utilisée pour toutes les applications Office</span><span class="sxs-lookup"><span data-stu-id="12efa-213">Larger profile picture used across all Office applications</span></span>
 
-À l’aide de l’onglet **utilisateur haute résolution photos** , vous pouvez stocker photos jusqu'à 648 x 648 pixels dans Exchange 2013. Ils alors accessibles par les applications clientes, notamment Outlook, Outlook Web App, SharePoint 2013, Lync 2013 et les clients de messagerie mobile. Une photo basse résolution est également stockée dans Active Directory.
+<span data-ttu-id="12efa-p119">À l’aide de l’onglet **utilisateur haute résolution photos** , vous pouvez stocker photos jusqu'à 648 x 648 pixels dans Exchange 2013. Ils alors accessibles par les applications clientes, notamment Outlook, Outlook Web App, SharePoint 2013, Lync 2013 et les clients de messagerie mobile. Une photo basse résolution est également stockée dans Active Directory.</span><span class="sxs-lookup"><span data-stu-id="12efa-p119">By using the **High-resolution user photos** tab, you can store photos up to 648 x 648 pixels in Exchange 2013. They can then be accessed by client applications, including Outlook, Outlook Web App, SharePoint 2013, Lync 2013, and mobile email clients. A low-resolution photo is also stored in Active Directory.</span></span>
   
- **Produits pour serveurs**
+ <span data-ttu-id="12efa-217">**Produits pour serveurs**</span><span class="sxs-lookup"><span data-stu-id="12efa-217">**Server products**</span></span>
   
-- Exchange Server 2013 
+- <span data-ttu-id="12efa-218">Exchange Server 2013</span><span class="sxs-lookup"><span data-stu-id="12efa-218">Exchange Server 2013</span></span> 
     
-- SharePoint Server 2013 
+- <span data-ttu-id="12efa-219">SharePoint Server 2013</span><span class="sxs-lookup"><span data-stu-id="12efa-219">SharePoint Server 2013</span></span> 
     
-- Lync Server 2013 
+- <span data-ttu-id="12efa-220">Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="12efa-220">Lync Server 2013</span></span> 
     
-### <a name="configuration"></a>Configuration
+### <a name="configuration"></a><span data-ttu-id="12efa-221">Configuration</span><span class="sxs-lookup"><span data-stu-id="12efa-221">Configuration</span></span>
 
-Configurer l’authentification de serveur à serveur. 
+<span data-ttu-id="12efa-222">Configurer l’authentification de serveur à serveur.</span><span class="sxs-lookup"><span data-stu-id="12efa-222">Configure server-to-server authentication:</span></span> 
   
-- Entre Exchange 2013 et SharePoint 2013.  
+- <span data-ttu-id="12efa-223">Entre Exchange 2013 et SharePoint 2013. </span><span class="sxs-lookup"><span data-stu-id="12efa-223">Between Exchange 2013 and SharePoint 2013.</span></span> 
     
-- Entre Exchange 2013 et Lync 2013.  
+- <span data-ttu-id="12efa-224">Entre Exchange 2013 et Lync 2013. </span><span class="sxs-lookup"><span data-stu-id="12efa-224">Between Exchange 2013 and Lync 2013.</span></span> 
     
- **Sur Exchange Server 2013**
+ <span data-ttu-id="12efa-225">**Sur Exchange Server 2013**</span><span class="sxs-lookup"><span data-stu-id="12efa-225">**On Exchange Server 2013**</span></span>
   
-- Démarrez et configurez le service de découverte automatique d’Exchange 2013.  
+- <span data-ttu-id="12efa-226">Démarrez et configurez le service de découverte automatique d’Exchange 2013. </span><span class="sxs-lookup"><span data-stu-id="12efa-226">Start and configure the Exchange 2013 Autodiscover service.</span></span> 
     
-- Définissez les URL externes pour SharePoint. Il s’agit des URL que SharePoint utilise lorsqu’il accède à des photos dans Exchange.  
+- <span data-ttu-id="12efa-p120">Définissez les URL externes pour SharePoint. Il s’agit des URL que SharePoint utilise lorsqu’il accède à des photos dans Exchange. </span><span class="sxs-lookup"><span data-stu-id="12efa-p120">Set external URLs for SharePoint. These are the URLs SharePoint uses when it accesses photos in Exchange.</span></span> 
     
- **SharePoint Server 2013**
+ <span data-ttu-id="12efa-229">**SharePoint Server 2013**</span><span class="sxs-lookup"><span data-stu-id="12efa-229">**On SharePoint Server 2013**</span></span>
   
-- Installez Exchange Web Services Managed API. Utilisez GacUtil pour charger la DDL Microsoft.Exchange.WebServices.dll dans le Global Assembly Cache (GAC).   
+- <span data-ttu-id="12efa-p121">Installez Exchange Web Services Managed API. Utilisez GacUtil pour charger la DDL Microsoft.Exchange.WebServices.dll dans le Global Assembly Cache (GAC).  </span><span class="sxs-lookup"><span data-stu-id="12efa-p121">Install the Exchange Web Services Managed API. Use GacUtil to load the Microsoft.Exchange.WebServices.dll into the Global Assembly Cache (GAC).</span></span> 
     
-- Utiliser Windows PowerShell pour configurer la synchronisation des photos avec Exchange.  
+- <span data-ttu-id="12efa-232">Utiliser Windows PowerShell pour configurer la synchronisation des photos avec Exchange. </span><span class="sxs-lookup"><span data-stu-id="12efa-232">Use Windows PowerShell to configure photo sync with Exchange.</span></span> 
     
- **Mode de fonctionnement**
+ <span data-ttu-id="12efa-233">**Mode de fonctionnement**</span><span class="sxs-lookup"><span data-stu-id="12efa-233">**How it works**</span></span>
   
-- Les utilisateurs téléchargent une photo à l’aide de la page Mon compte dans Outlook Web App (OWA) ou les paramètres de compte dans Outlook 2013.  
+- <span data-ttu-id="12efa-234">Les utilisateurs téléchargent une photo à l’aide de la page Mon compte dans Outlook Web App (OWA) ou les paramètres de compte dans Outlook 2013. </span><span class="sxs-lookup"><span data-stu-id="12efa-234">Users upload a photo by using the My Account page in Outlook Web App (OWA) or account settings in Outlook 2013.</span></span> 
     
-- Exchange redimensionne automatiquement l’image à utiliser avec les services AD DS (48 x 48 pixels) ou avec d’autres applications Office, y compris OWA et le client Outlook 2013 (96 x 96 pixels).   
+- <span data-ttu-id="12efa-235">Exchange redimensionne automatiquement l’image à utiliser avec les services AD DS (48 x 48 pixels) ou avec d’autres applications Office, y compris OWA et le client Outlook 2013 (96 x 96 pixels).  </span><span class="sxs-lookup"><span data-stu-id="12efa-235">Exchange automatically resizes the image for use by AD DS (48 x 48 pixels) or by other Office applications, including OWA and the Outlook 2013 client (96 x 96 pixels).</span></span> 
     
-Les utilisateurs peuvent télécharger des images dans des plages de pixels allant de 48 × 48 à 648 × 648. Les photos sont redimensionnées :  
+<span data-ttu-id="12efa-p122">Les utilisateurs peuvent télécharger des images dans des plages de pixels allant de 48 × 48 à 648 × 648. Les photos sont redimensionnées : </span><span class="sxs-lookup"><span data-stu-id="12efa-p122">Users can upload pictures with pixel ranges from 48 × 48 to 648 × 648. The photos are resized:</span></span> 
   
-- Le format 64 x 64 est utilisé pour la miniature AD.  
+- <span data-ttu-id="12efa-238">Le format 64 x 64 est utilisé pour la miniature AD. </span><span class="sxs-lookup"><span data-stu-id="12efa-238">64 × 64 is used for the AD thumbnail.</span></span> 
     
-- Le format 96 x 96 est utilisé pour Outlook Web Access, Outlook, Lync Web Access et Lync 2013.  
+- <span data-ttu-id="12efa-239">Le format 96 x 96 est utilisé pour Outlook Web Access, Outlook, Lync Web Access et Lync 2013. </span><span class="sxs-lookup"><span data-stu-id="12efa-239">96 × 96 is used for Outlook Web Access, Outlook, Lync Web Access, and Lync 2013.</span></span> 
     
-- Le format 648 × 648 est utilisé pour Lync Web Access et Lync 2013.  
+- <span data-ttu-id="12efa-240">Le format 648 × 648 est utilisé pour Lync Web Access et Lync 2013. </span><span class="sxs-lookup"><span data-stu-id="12efa-240">648 × 648 is used for Lync Web Access and Lync 2013.</span></span> 
     
-Par exemple, des scripts de configuration, voir les articles de blog de Rasmussen Jens où : 
+<span data-ttu-id="12efa-241">Par exemple, des scripts de configuration, voir les articles de blog de Rasmussen Jens où :</span><span class="sxs-lookup"><span data-stu-id="12efa-241">For example configuration scripts, see Jens Trier Rasmussen's blog articles:</span></span> 
   
-- Utilisation des photos haute résolution Exchange 2013 à partir de SharePoint Server 2013 (http://aka.ms/Bhr4d2)   
+- <span data-ttu-id="12efa-242">Utilisation des photos haute résolution Exchange 2013 à partir de SharePoint Server 2013 (http://aka.ms/Bhr4d2)  </span><span class="sxs-lookup"><span data-stu-id="12efa-242">Using Exchange 2013 high-resolution photos from SharePoint Server 2013 (http://aka.ms/Bhr4d2)</span></span> 
     
-- Intégration d’Exchange 2013 et Lync Server 2013 (http://aka.ms/Pn08dw) 
+- <span data-ttu-id="12efa-243">Intégration d’Exchange 2013 et Lync Server 2013 (http://aka.ms/Pn08dw)</span><span class="sxs-lookup"><span data-stu-id="12efa-243">Integrating Exchange 2013 and Lync Server 2013 (http://aka.ms/Pn08dw)</span></span> 
     
-L’affiche contient également des codes QR pour ces deux articles de blog.  
+<span data-ttu-id="12efa-244">L’affiche contient également des codes QR pour ces deux articles de blog. </span><span class="sxs-lookup"><span data-stu-id="12efa-244">The poster also contains QR codes for these two blog articles.</span></span> 
   
-Le diagramme associé montre comment un utilisateur peut mettre à jour une photo à utiliser dans toutes les applications Office.  
+<span data-ttu-id="12efa-245">Le diagramme associé montre comment un utilisateur peut mettre à jour une photo à utiliser dans toutes les applications Office. </span><span class="sxs-lookup"><span data-stu-id="12efa-245">The accompanying diagram shows how a user can update a photo to use across all Office applications.</span></span> 
   
-1. L’utilisateur met à jour la photo dans Outlook, SharePoint et Lync. Une fois mise à jour, la photo est utilisée dans toutes les applications Office.   
+1. <span data-ttu-id="12efa-p123">L’utilisateur met à jour la photo dans Outlook, SharePoint et Lync. Une fois mise à jour, la photo est utilisée dans toutes les applications Office.  </span><span class="sxs-lookup"><span data-stu-id="12efa-p123">User updates photo in Outlook, SharePoint, or Lync. Once updated, the updated photo is used across all Office applications.</span></span> 
     
-2. L’utilisateur peut recourir à plusieurs méthodes pour mettre à jour une photo :  
+2. <span data-ttu-id="12efa-248">L’utilisateur peut recourir à plusieurs méthodes pour mettre à jour une photo : </span><span class="sxs-lookup"><span data-stu-id="12efa-248">The user can use several different ways to update a photo:</span></span> 
     
 3. 
-  - Client Outlook ou Outlook Web App (OWA) sur le port HTTP 443 vers un serveur d’accès au client Exchange.  
+  - <span data-ttu-id="12efa-249">Client Outlook ou Outlook Web App (OWA) sur le port HTTP 443 vers un serveur d’accès au client Exchange. </span><span class="sxs-lookup"><span data-stu-id="12efa-249">Outlook client or Outlook Web App (OWA) over HTTP port 443 to an Exchange Client Access server.</span></span> 
     
-  - Mon Site via HTTP ou HTTPS vers un serveur SharePoint. SharePoint place l’utilisateur dans un cache dans la base de données Mon site (Https:443). Le serveur SharePoint communique avec le serveur d’accès au client Exchange à l’aide d’URL externes définies dans Exchange.  
+  - <span data-ttu-id="12efa-p124">Mon Site via HTTP ou HTTPS vers un serveur SharePoint. SharePoint place l’utilisateur dans un cache dans la base de données Mon site (Https:443). Le serveur SharePoint communique avec le serveur d’accès au client Exchange à l’aide d’URL externes définies dans Exchange. </span><span class="sxs-lookup"><span data-stu-id="12efa-p124">My Site over HTTP or HTTPS to a SharePoint Server. SharePoint caches the user in the MySite database (Https:443). The SharePoint server interfaces with the Exchange Client Access Server using external URLs set in Exchange.</span></span> 
     
-  - Client Lync 2013, qui maintient une GetConnection avec le serveur Exchange pour obtenir des mises à jour de la photo (requête HTTPS Get - 443). 
+  - <span data-ttu-id="12efa-253">Client Lync 2013, qui maintient une GetConnection avec le serveur Exchange pour obtenir des mises à jour de la photo (requête HTTPS Get - 443).</span><span class="sxs-lookup"><span data-stu-id="12efa-253">Lync 2013 client, which maintains a GetConnection with the Exchange server to get photo updates (HTTPS Get request - 443).</span></span> 
     
-4. Le serveur d’accès au client Exchange se connecte au serveur de boîtes aux lettres Exchange à l’aide de la communication interne Exchange.   
+4. <span data-ttu-id="12efa-254">Le serveur d’accès au client Exchange se connecte au serveur de boîtes aux lettres Exchange à l’aide de la communication interne Exchange.  </span><span class="sxs-lookup"><span data-stu-id="12efa-254">The Exchange Client Access Server connects to the Exchange Mailbox Server using internal Exchange communication.</span></span> 
     
-5. Le serveur de boîtes aux lettres Exchange utilise Exchange 2013 pour pousser la photo haute résolution de l’utilisateur vers AD DS (LDAP:389).  
+5. <span data-ttu-id="12efa-255">Le serveur de boîtes aux lettres Exchange utilise Exchange 2013 pour pousser la photo haute résolution de l’utilisateur vers AD DS (LDAP:389). </span><span class="sxs-lookup"><span data-stu-id="12efa-255">The Exchange Mailbox Server uses Exchange 2013 to push the high-resolution user photo to AD DS (LDAP:389).</span></span> 
     
-6. La photo est synchronisée à partir des services de domaine Active Directory (AD DS) vers le service de carnet d’adresse (ABS) sur le serveur Lync afin que les clients hérités puissent accéder à la même photo (LDAP:389).  
+6. <span data-ttu-id="12efa-256">La photo est synchronisée à partir des services de domaine Active Directory (AD DS) vers le service de carnet d’adresse (ABS) sur le serveur Lync afin que les clients hérités puissent accéder à la même photo (LDAP:389). </span><span class="sxs-lookup"><span data-stu-id="12efa-256">The photo is synced from Active Directory Domain Services (AD DS) to the Lync Address Book Service (ABS) on the Lync Server so legacy clients can get the same photo (LDAP:389).</span></span> 
     
-7. Le client Lync hérité a désormais accès à la photo.  
+7. <span data-ttu-id="12efa-257">Le client Lync hérité a désormais accès à la photo. </span><span class="sxs-lookup"><span data-stu-id="12efa-257">The Legacy Lync client now has access to the photo.</span></span> 
     
-## <a name="unified-contact-store-tab"></a>Onglet Magasin de contacts unifié
+## <a name="unified-contact-store-tab"></a><span data-ttu-id="12efa-258">Onglet Magasin de contacts unifié</span><span class="sxs-lookup"><span data-stu-id="12efa-258">Unified Contact Store tab</span></span>
 
-### <a name="exchange-2013-is-the-contact-store-for-all-office-applications"></a>Exchange 2013 est le magasin de contacts pour toutes les applications Office
+### <a name="exchange-2013-is-the-contact-store-for-all-office-applications"></a><span data-ttu-id="12efa-259">Exchange 2013 est le magasin de contacts pour toutes les applications Office</span><span class="sxs-lookup"><span data-stu-id="12efa-259">Exchange 2013 is the contact store for all Office applications</span></span>
 
-Le magasin de contacts unifié offre une gestion cohérente des contacts entre plusieurs produits Microsoft Office. Les utilisateurs stockent toutes les informations de contacts dans leur boîte aux lettres Exchange 2013. Les mêmes informations de contact sont disponibles globalement sur Lync, Exchange, Outlook et Outlook Web App.   
+<span data-ttu-id="12efa-p125">Le magasin de contacts unifié offre une gestion cohérente des contacts entre plusieurs produits Microsoft Office. Les utilisateurs stockent toutes les informations de contacts dans leur boîte aux lettres Exchange 2013. Les mêmes informations de contact sont disponibles globalement sur Lync, Exchange, Outlook et Outlook Web App.  </span><span class="sxs-lookup"><span data-stu-id="12efa-p125">Unified contact store (UCS) provides a consistent contact experience across Microsoft Office products. Users store all contact information in their Exchange 2013 mailbox. The same contact information is available globally across Lync, Exchange, Outlook and Outlook Web App.</span></span> 
   
- **Produits pour serveurs**
+ <span data-ttu-id="12efa-263">**Produits pour serveurs**</span><span class="sxs-lookup"><span data-stu-id="12efa-263">**Server products**</span></span>
   
-- Exchange Server 2013 
+- <span data-ttu-id="12efa-264">Exchange Server 2013</span><span class="sxs-lookup"><span data-stu-id="12efa-264">Exchange Server 2013</span></span> 
     
-- Lync Server 2013 
+- <span data-ttu-id="12efa-265">Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="12efa-265">Lync Server 2013</span></span> 
     
- **Configuration**
+ <span data-ttu-id="12efa-266">**Configuration**</span><span class="sxs-lookup"><span data-stu-id="12efa-266">**Configuration**</span></span>
   
-- Configurer une authentification de serveur à serveur entre Exchange Server 2013 et Lync Server 2013.  
+- <span data-ttu-id="12efa-267">Configurer une authentification de serveur à serveur entre Exchange Server 2013 et Lync Server 2013. </span><span class="sxs-lookup"><span data-stu-id="12efa-267">Configure server-to-server authentication between Exchange Server 2013 and Lync Server 2013.</span></span> 
     
-- Dans Lync 2013, activer la stratégie de magasin contacts unifié (activée par défaut).  
+- <span data-ttu-id="12efa-268">Dans Lync 2013, activer la stratégie de magasin contacts unifié (activée par défaut). </span><span class="sxs-lookup"><span data-stu-id="12efa-268">In Lync 2013, enable the unified contact store policy (default is enabled).</span></span> 
     
-Par exemple, les scripts de configuration, voir l’article de blog de Rasmussen Jens où : 
+<span data-ttu-id="12efa-269">Par exemple, les scripts de configuration, voir l’article de blog de Rasmussen Jens où :</span><span class="sxs-lookup"><span data-stu-id="12efa-269">For example configuration scripts, see Jens Trier Rasmussen's blog article:</span></span> 
   
-- Intégration d’Exchange 2013 et de Lync Server 2013 (http://aka.ms/Oyg7fh)   
+- <span data-ttu-id="12efa-270">Intégration d’Exchange 2013 et de Lync Server 2013 (http://aka.ms/Oyg7fh)  </span><span class="sxs-lookup"><span data-stu-id="12efa-270">Integrating Exchange 2013 and Lync Server 2013 (http://aka.ms/Oyg7fh)</span></span> 
     
- **Mode de fonctionnement**
+ <span data-ttu-id="12efa-271">**Mode de fonctionnement**</span><span class="sxs-lookup"><span data-stu-id="12efa-271">**How it works**</span></span>
   
-- Les contacts de Lync pour un utilisateur sont automatiquement transférés vers Exchange 2013 lorsque l’utilisateur se connecte avec Lync 2013.  
+- <span data-ttu-id="12efa-272">Les contacts de Lync pour un utilisateur sont automatiquement transférés vers Exchange 2013 lorsque l’utilisateur se connecte avec Lync 2013. </span><span class="sxs-lookup"><span data-stu-id="12efa-272">Lync contacts for a user are migrated to Exchange 2013 automatically when the user logs in with Lync 2013.</span></span> 
     
-- Les utilisateurs peuvent consulter et gérer leurs contacts Lync à partir de Lync 2013, Outlook 2013 ou Outlook Web Access.   
+- <span data-ttu-id="12efa-273">Les utilisateurs peuvent consulter et gérer leurs contacts Lync à partir de Lync 2013, Outlook 2013 ou Outlook Web Access.  </span><span class="sxs-lookup"><span data-stu-id="12efa-273">Users can access and manage their Lync contacts from Lync 2013, Outlook 2013, or Outlook Web Access.</span></span> 
     
-Les contacts d’un utilisateur sont transférés automatiquement vers le serveur Exchange 2013 quand : 
+<span data-ttu-id="12efa-274">Les contacts d’un utilisateur sont transférés automatiquement vers le serveur Exchange 2013 quand :</span><span class="sxs-lookup"><span data-stu-id="12efa-274">A user's contacts are automatically migrated to the Exchange 2013 server when the user:</span></span> 
   
-1. A reçu une stratégie services utilisateur a UcsAllowed la valeur **True**. 
+1. <span data-ttu-id="12efa-275">A reçu une stratégie services utilisateur a UcsAllowed la valeur **True**.</span><span class="sxs-lookup"><span data-stu-id="12efa-275">Has been assigned a user services policy that has UcsAllowed set to **True**.</span></span> 
     
-2. Une boîte aux lettres Exchange 2013 a été mise en service pour cet utilisateur et qu’il s’y est connecté au moins une fois. 
+2. <span data-ttu-id="12efa-276">Une boîte aux lettres Exchange 2013 a été mise en service pour cet utilisateur et qu’il s’y est connecté au moins une fois.</span><span class="sxs-lookup"><span data-stu-id="12efa-276">Has been provisioned with an Exchange 2013 mailbox and has signed in to the mailbox at least once.</span></span> 
     
-3. L’utilisateur se connecte à Lync à l’aide d’un client riche Lync 2013.  
+3. <span data-ttu-id="12efa-277">L’utilisateur se connecte à Lync à l’aide d’un client riche Lync 2013. </span><span class="sxs-lookup"><span data-stu-id="12efa-277">Signs in to Lync by using a Lync 2013 rich client.</span></span> 
     
-L’utilisateur se connecte à Lync à l’aide d’un client riche Lync 2013.  
+<span data-ttu-id="12efa-278">L’utilisateur se connecte à Lync à l’aide d’un client riche Lync 2013. </span><span class="sxs-lookup"><span data-stu-id="12efa-278">Signs in to Lync by using a Lync 2013 rich client.</span></span> 
   
-1. L’utilisateur se connecte à sa boîte aux lettres Exchange 2013 sur le serveur d’accès au client Exchange, à l’aide d’un client Outlook ou Outlook Web App (OWA) via le protocole HTTPS/443. Le serveur de boîtes aux lettres Exchange utilise une communication Exchange interne pour communiquer avec le serveur d’accès au client Exchange.  
+1. <span data-ttu-id="12efa-p126">L’utilisateur se connecte à sa boîte aux lettres Exchange 2013 sur le serveur d’accès au client Exchange, à l’aide d’un client Outlook ou Outlook Web App (OWA) via le protocole HTTPS/443. Le serveur de boîtes aux lettres Exchange utilise une communication Exchange interne pour communiquer avec le serveur d’accès au client Exchange. </span><span class="sxs-lookup"><span data-stu-id="12efa-p126">Signs in to their Exchange 2013 mailbox on the Exchange Client Access Server, using an Outlook client or Outlook Web App (OWA) over HTTPS/443. The Exchange Mailbox Server uses an internal Exchange communication to communicate with the Exchange Client Access Server.</span></span> 
     
-2. L’utilisateur se connecte à Lync 2013. Le client Lync contacte le serveur Lync sur SIP/5061 HTTPS/443.  
+2. <span data-ttu-id="12efa-p127">L’utilisateur se connecte à Lync 2013. Le client Lync contacte le serveur Lync sur SIP/5061 HTTPS/443. </span><span class="sxs-lookup"><span data-stu-id="12efa-p127">Signs in to Lync 2013. The Lync client contacts the Lync server over SIP/5061 HTTPS/443.</span></span> 
     
-3. Le client Lync indique au serveur Lync que l’utilisateur est activé pour le magasin de contacts unifié sur SIP/5061.  
+3. <span data-ttu-id="12efa-283">Le client Lync indique au serveur Lync que l’utilisateur est activé pour le magasin de contacts unifié sur SIP/5061. </span><span class="sxs-lookup"><span data-stu-id="12efa-283">The Lync client tells the Lync server that the user is enabled for Unified Contact Store over SIP/5061.</span></span> 
     
-4. Lync server utilise le Service de stockage de Lync pour migrer des contacts de l’utilisateur vers 2013 Exchange sur le serveur d’accès Client Exchange. 
+4. <span data-ttu-id="12efa-284">Lync server utilise le Service de stockage de Lync pour migrer des contacts de l’utilisateur vers 2013 Exchange sur le serveur d’accès Client Exchange.</span><span class="sxs-lookup"><span data-stu-id="12efa-284">The Lync server uses the Lync Storage Service to migrate the user's contacts to Exchange 2013 on the Exchange Client Access Server.</span></span> 
     
-5. L’utilisateur doit se déconnecter et se connecter à Lync 2013 pour que les modifications apparaissent (pas représentées dans le diagramme).  
+5. <span data-ttu-id="12efa-285">L’utilisateur doit se déconnecter et se connecter à Lync 2013 pour que les modifications apparaissent (pas représentées dans le diagramme). </span><span class="sxs-lookup"><span data-stu-id="12efa-285">The user must sign out and sign in to Lync 2013 for the changes to appear (not shown in the diagram).</span></span> 
     
-6. Après la migration, le client Lync utilise Exchange Web Services (EWS) pour lire et à gérer les contacts Lync.  
+6. <span data-ttu-id="12efa-286">Après la migration, le client Lync utilise Exchange Web Services (EWS) pour lire et à gérer les contacts Lync. </span><span class="sxs-lookup"><span data-stu-id="12efa-286">After the migration, the Lync client uses Exchange Web Services (EWS) to read and maintain the Lync contacts.</span></span> 
     
-## <a name="site-mailboxes-tab"></a>Onglet Boîtes aux lettres de site
+## <a name="site-mailboxes-tab"></a><span data-ttu-id="12efa-287">Onglet Boîtes aux lettres de site</span><span class="sxs-lookup"><span data-stu-id="12efa-287">Site mailboxes tab</span></span>
 
-### <a name="a-central-filing-cabinet-for-emails-and-documents"></a>Classeur central pour les messages électroniques et les documents
+### <a name="a-central-filing-cabinet-for-emails-and-documents"></a><span data-ttu-id="12efa-288">Classeur central pour les messages électroniques et les documents</span><span class="sxs-lookup"><span data-stu-id="12efa-288">A central filing cabinet for emails and documents</span></span>
 
-Les boîtes aux lettres de site améliorent la collaboration et la productivité des utilisateurs en autorisant l’accès aux documents stockés dans SharePoint et aux messages électroniques enregistrés dans Exchange, avec la même interface client. 
+<span data-ttu-id="12efa-289">Les boîtes aux lettres de site améliorent la collaboration et la productivité des utilisateurs en autorisant l’accès aux documents stockés dans SharePoint et aux messages électroniques enregistrés dans Exchange, avec la même interface client.</span><span class="sxs-lookup"><span data-stu-id="12efa-289">Site mailboxes improve collaboration and user productivity by allowing access to documents stored in SharePoint and email messages stored in Exchange, using the same client interface.</span></span> 
   
- **Produits pour serveurs**
+ <span data-ttu-id="12efa-290">**Produits pour serveurs**</span><span class="sxs-lookup"><span data-stu-id="12efa-290">**Server products**</span></span>
   
-- Exchange Server 2013 
+- <span data-ttu-id="12efa-291">Exchange Server 2013</span><span class="sxs-lookup"><span data-stu-id="12efa-291">Exchange Server 2013</span></span> 
     
-- SharePoint Server 2013 
+- <span data-ttu-id="12efa-292">SharePoint Server 2013</span><span class="sxs-lookup"><span data-stu-id="12efa-292">SharePoint Server 2013</span></span> 
     
- **Configuration**
+ <span data-ttu-id="12efa-293">**Configuration**</span><span class="sxs-lookup"><span data-stu-id="12efa-293">**Configuration**</span></span>
   
-Configuration SharePoint :  
+<span data-ttu-id="12efa-294">Configuration SharePoint : </span><span class="sxs-lookup"><span data-stu-id="12efa-294">SharePoint configuration:</span></span> 
   
-- Configurer la synchronisation des profils utilisateur dans la batterie de serveurs SharePoint.  
+- <span data-ttu-id="12efa-295">Configurer la synchronisation des profils utilisateur dans la batterie de serveurs SharePoint. </span><span class="sxs-lookup"><span data-stu-id="12efa-295">Configure user profile synchronization in the SharePoint farm.</span></span> 
     
-- Configurer l’application de service de gestion des applications dans la batterie de serveurs SharePoint.  
+- <span data-ttu-id="12efa-296">Configurer l’application de service de gestion des applications dans la batterie de serveurs SharePoint. </span><span class="sxs-lookup"><span data-stu-id="12efa-296">Configure the app management service application in the SharePoint farm.</span></span> 
     
-- Configurer SSL pour la zone par défaut pour prendre en charge l’authentification de serveur à serveur.  
+- <span data-ttu-id="12efa-297">Configurer SSL pour la zone par défaut pour prendre en charge l’authentification de serveur à serveur. </span><span class="sxs-lookup"><span data-stu-id="12efa-297">Configure SSL for the default zone to support server-to-server authentication.</span></span> 
     
-- Installez l’API EWS sur les serveurs exécutant SharePoint 2013.  
+- <span data-ttu-id="12efa-298">Installez l’API EWS sur les serveurs exécutant SharePoint 2013. </span><span class="sxs-lookup"><span data-stu-id="12efa-298">Install the EWS API on servers that run SharePoint 2013.</span></span> 
     
-- Établir une approbation OAuth et des autorisations de service sur les serveurs exécutant SharePoint 2013.  
+- <span data-ttu-id="12efa-299">Établir une approbation OAuth et des autorisations de service sur les serveurs exécutant SharePoint 2013. </span><span class="sxs-lookup"><span data-stu-id="12efa-299">Establish OAuth trust and service permissions on servers that run SharePoint 2013.</span></span> 
     
-Configuration d’Exchange :  
+<span data-ttu-id="12efa-300">Configuration d’Exchange : </span><span class="sxs-lookup"><span data-stu-id="12efa-300">Exchange configuration:</span></span> 
   
-- Établir une approbation OAuth et une autorisation de service sur les serveurs Exchange.  
+- <span data-ttu-id="12efa-301">Établir une approbation OAuth et une autorisation de service sur les serveurs Exchange. </span><span class="sxs-lookup"><span data-stu-id="12efa-301">Establish OAuth trust and service permissions on Exchange servers.</span></span> 
     
-- Créer une stratégie de mise en service de boîte aux lettres de site.  
+- <span data-ttu-id="12efa-302">Créer une stratégie de mise en service de boîte aux lettres de site. </span><span class="sxs-lookup"><span data-stu-id="12efa-302">Create site mailbox provisioning policy.</span></span> 
     
-- Configurer le préfixe du nom d’une boîte aux lettres de site (facultatif).  
+- <span data-ttu-id="12efa-303">Configurer le préfixe du nom d’une boîte aux lettres de site (facultatif). </span><span class="sxs-lookup"><span data-stu-id="12efa-303">Configure site mailbox name prefix (optional).</span></span> 
     
- **Mode de fonctionnement**
+ <span data-ttu-id="12efa-304">**Mode de fonctionnement**</span><span class="sxs-lookup"><span data-stu-id="12efa-304">**How it works**</span></span>
   
-Une boîte aux lettre de site se compose de l’appartenance à un site SharePoint 2013 (propriétaires et membres), un stockage partagé par le biais d’une boîte aux lettres Exchange 2013 pour des messages électroniques et un site SharePoint 2013 pour des documents, ainsi qu’une interface de gestion qui répond aux besoins de mise en service et de cycle de vie.  
+<span data-ttu-id="12efa-305">Une boîte aux lettre de site se compose de l’appartenance à un site SharePoint 2013 (propriétaires et membres), un stockage partagé par le biais d’une boîte aux lettres Exchange 2013 pour des messages électroniques et un site SharePoint 2013 pour des documents, ainsi qu’une interface de gestion qui répond aux besoins de mise en service et de cycle de vie. </span><span class="sxs-lookup"><span data-stu-id="12efa-305">A site mailbox is functionally comprised of SharePoint 2013 site membership (owners and members), shared storage through an Exchange 2013 mailbox for email messages and a SharePoint 2013 site for documents, and a management interface that addresses provisioning and lifecycle needs.</span></span> 
   
-Le diagramme associé représente l’utilisation de boîtes aux lettres de site pour accéder aux messages électroniques dans Outlook et aux documents stockés dans SharePoint.  
+<span data-ttu-id="12efa-306">Le diagramme associé représente l’utilisation de boîtes aux lettres de site pour accéder aux messages électroniques dans Outlook et aux documents stockés dans SharePoint. </span><span class="sxs-lookup"><span data-stu-id="12efa-306">The accompanying diagram shows users using site mailboxes to access email messages in Outlook and documents stored in SharePoint.</span></span> 
   
-1. Les utilisateurs peuvent accéde aux documents de site d’équipe SharePoint via les boîtes aux lettres de site dans Outlook 2013 Pro Plus.  
+1. <span data-ttu-id="12efa-307">Les utilisateurs peuvent accéde aux documents de site d’équipe SharePoint via les boîtes aux lettres de site dans Outlook 2013 Pro Plus. </span><span class="sxs-lookup"><span data-stu-id="12efa-307">Users can access SharePoint team site documents through the site mailboxes in Outlook 2013 Pro Plus.</span></span> 
     
-2. Les utilisateurs peuvent également lire des messages électroniques dans la boîte de réception de la boîte aux lettres de site à partir du site d’équipe SharePoint.  
+2. <span data-ttu-id="12efa-308">Les utilisateurs peuvent également lire des messages électroniques dans la boîte de réception de la boîte aux lettres de site à partir du site d’équipe SharePoint. </span><span class="sxs-lookup"><span data-stu-id="12efa-308">Users can also read emails in the Site Mailbox Inbox from the SharePoint team site.</span></span> 
     
-3. Les messages électroniques sont stockés dans les boîtes aux lettres de site sur les serveurs Exchange.  
+3. <span data-ttu-id="12efa-309">Les messages électroniques sont stockés dans les boîtes aux lettres de site sur les serveurs Exchange. </span><span class="sxs-lookup"><span data-stu-id="12efa-309">Emails are stored in site mailboxes on Exchange servers.</span></span> 
     
-4. Les documents sont stockés dans les boîtes aux lettres de site sur les serveurs SharePoint.  
+4. <span data-ttu-id="12efa-310">Les documents sont stockés dans les boîtes aux lettres de site sur les serveurs SharePoint. </span><span class="sxs-lookup"><span data-stu-id="12efa-310">Documents are stored in site mailboxes on SharePoint servers.</span></span> 
     
-5. Les métadonnées du contenu sur le site SharePoint sont synchronisées avec Exchange à l’aide de l’API REST sur HTTPS.  
+5. <span data-ttu-id="12efa-311">Les métadonnées du contenu sur le site SharePoint sont synchronisées avec Exchange à l’aide de l’API REST sur HTTPS. </span><span class="sxs-lookup"><span data-stu-id="12efa-311">The metadata of the content on the SharePoint site is synchronized to Exchange using the Representation State Transfer (REST) API over HTTPS.</span></span> 
     
-### <a name="provisioning-and-management"></a>Mise en service et gestion
+### <a name="provisioning-and-management"></a><span data-ttu-id="12efa-312">Mise en service et gestion</span><span class="sxs-lookup"><span data-stu-id="12efa-312">Provisioning and management</span></span>
 
-Les boîtes aux lettres de site sont configurées et gérées via SharePoint 2013. Il existe des fonctionnalités SharePoint et Exchange pour la mise en service et la gestion.  
+<span data-ttu-id="12efa-p128">Les boîtes aux lettres de site sont configurées et gérées via SharePoint 2013. Il existe des fonctionnalités SharePoint et Exchange pour la mise en service et la gestion. </span><span class="sxs-lookup"><span data-stu-id="12efa-p128">Site mailboxes are provisioned and managed through SharePoint 2013. There are SharePoint and Exchange features for provisioning and management.</span></span> 
   
-#### <a name="sharepoint"></a>SharePoint
+#### <a name="sharepoint"></a><span data-ttu-id="12efa-315">SharePoint</span><span class="sxs-lookup"><span data-stu-id="12efa-315">SharePoint</span></span>
 
-Un diagramme représente les composants sur SharePoint qui sont nécessaires pour la mise en service de la boîte aux lettres de site, notamment :  
+<span data-ttu-id="12efa-316">Un diagramme représente les composants sur SharePoint qui sont nécessaires pour la mise en service de la boîte aux lettres de site, notamment : </span><span class="sxs-lookup"><span data-stu-id="12efa-316">A diagram shows the components on SharePoint that are required to provision the site mailbox, including:</span></span> 
   
-- L’application de boîte aux lettres de site  
+- <span data-ttu-id="12efa-317">L’application de boîte aux lettres de site </span><span class="sxs-lookup"><span data-stu-id="12efa-317">Site Mailbox app</span></span> 
     
-- Les propriétaires et membres du site d’équipe  
+- <span data-ttu-id="12efa-318">Les propriétaires et membres du site d’équipe </span><span class="sxs-lookup"><span data-stu-id="12efa-318">Team site members and owners</span></span> 
     
-- La stratégie du cycle de vie du site d’équipe  
+- <span data-ttu-id="12efa-319">La stratégie du cycle de vie du site d’équipe </span><span class="sxs-lookup"><span data-stu-id="12efa-319">Team site lifecycle policy</span></span> 
     
-Pour mettre en service une nouvelle boîte aux lettres de site, installez l’application de boîte aux lettres de site sur votre site d’équipe et accédez au moins une fois à l’application.  
+<span data-ttu-id="12efa-320">Pour mettre en service une nouvelle boîte aux lettres de site, installez l’application de boîte aux lettres de site sur votre site d’équipe et accédez au moins une fois à l’application. </span><span class="sxs-lookup"><span data-stu-id="12efa-320">To provision a new Site Mailbox, install the Site Mailbox app on your team site and access the app at least once.</span></span> 
   
-L’appartenance au site SharePoint détermine qui a accès à la boîte aux lettres de site.   
+<span data-ttu-id="12efa-321">L’appartenance au site SharePoint détermine qui a accès à la boîte aux lettres de site.  </span><span class="sxs-lookup"><span data-stu-id="12efa-321">The SharePoint site membership determines who has access to the Site Mailbox.</span></span> 
   
-La rétention des boîtes aux lettres de site suit la stratégie de cycle de vie configurée pour le site SharePoint auquel elle est associée.  
+<span data-ttu-id="12efa-322">La rétention des boîtes aux lettres de site suit la stratégie de cycle de vie configurée pour le site SharePoint auquel elle est associée. </span><span class="sxs-lookup"><span data-stu-id="12efa-322">Site mailbox retention follows the same lifecycle policy configured for the SharePoint site with which it is associated.</span></span> 
   
-#### <a name="exchange"></a>Exchange
+#### <a name="exchange"></a><span data-ttu-id="12efa-323">Exchange</span><span class="sxs-lookup"><span data-stu-id="12efa-323">Exchange</span></span>
 
-Le diagramme présente la stratégie de mise en service des boîtes aux lettres de Site. C’est le composant d’Exchange qui est nécessaire pour configurer la boîte aux lettres du site.
+<span data-ttu-id="12efa-p129">Le diagramme présente la stratégie de mise en service des boîtes aux lettres de Site. C’est le composant d’Exchange qui est nécessaire pour configurer la boîte aux lettres du site.</span><span class="sxs-lookup"><span data-stu-id="12efa-p129">The diagram shows the Site Mailbox Provisioning Policy. This is the Exchange component that's required to provision the site mailbox.</span></span>
   
-Sur le serveur Exchange, vous pouvez définir des stratégies de mise en service de boîtes aux lettres de site. Ces stratégies régissent les caractéristiques des messages électroniques reçus et envoyés en direction de la boîte aux lettres de site, ainsi que la taille de la boîte aux lettres de site sur le serveur Exchange. Elle vous permettent aussi de définir un préfixe pour les adresses de messagerie des boîtes aux lettres de Site.   
+<span data-ttu-id="12efa-p130">Sur le serveur Exchange, vous pouvez définir des stratégies de mise en service de boîtes aux lettres de site. Ces stratégies régissent les caractéristiques des messages électroniques reçus et envoyés en direction de la boîte aux lettres de site, ainsi que la taille de la boîte aux lettres de site sur le serveur Exchange. Elle vous permettent aussi de définir un préfixe pour les adresses de messagerie des boîtes aux lettres de Site.  </span><span class="sxs-lookup"><span data-stu-id="12efa-p130">On the Exchange server, you can define Site Mailbox Provisioning Policies. These policies govern the email characteristics sent to and received from the site mailbox, the size of the site mailbox on the Exchange Server, and let you define a prefix for Site Mailbox email addresses.</span></span> 
   
-Pour les déploiements d’Exchange en local, vous devez également rechercher et supprimer régulièrement les boîtes aux lettres de site qui ont été marquées comme étant à supprimer via la stratégie de cycle de vie de SharePoint.  
+<span data-ttu-id="12efa-328">Pour les déploiements d’Exchange en local, vous devez également rechercher et supprimer régulièrement les boîtes aux lettres de site qui ont été marquées comme étant à supprimer via la stratégie de cycle de vie de SharePoint. </span><span class="sxs-lookup"><span data-stu-id="12efa-328">For on-premises Exchange deployments, you also need to periodically search for and delete Site Mailboxes that have been marked for deletion through the SharePoint lifecycle policy.</span></span> 
   
-## <a name="exchange-task-synchronization-tab"></a>Onglet Synchronisation de tâches Exchange
+## <a name="exchange-task-synchronization-tab"></a><span data-ttu-id="12efa-329">Onglet Synchronisation de tâches Exchange</span><span class="sxs-lookup"><span data-stu-id="12efa-329">Exchange Task Synchronization tab</span></span>
 
-### <a name="synchronizing-tasks-among-sharepoint-server-2013-project-server-2013-and-exchange-server-2013"></a>Synchronisation de tâches entre SharePoint Server 2013, Project Server 2013 et Exchange Server 2013
+### <a name="synchronizing-tasks-among-sharepoint-server-2013-project-server-2013-and-exchange-server-2013"></a><span data-ttu-id="12efa-330">Synchronisation de tâches entre SharePoint Server 2013, Project Server 2013 et Exchange Server 2013</span><span class="sxs-lookup"><span data-stu-id="12efa-330">Synchronizing tasks among SharePoint Server 2013, Project Server 2013, and Exchange Server 2013</span></span>
 
-À l’aide de la synchronisation de tâches Exchange, vous pouvez synchroniser les tâches dans SharePoint Server 2013 et Project Server 2013 avec Exchange Server 2013. Les utilisateurs peuvent afficher et gérer leurs tâches dans Outlook 2013 ou sur leur site Mon Site.  
+<span data-ttu-id="12efa-p131">À l’aide de la synchronisation de tâches Exchange, vous pouvez synchroniser les tâches dans SharePoint Server 2013 et Project Server 2013 avec Exchange Server 2013. Les utilisateurs peuvent afficher et gérer leurs tâches dans Outlook 2013 ou sur leur site Mon Site. </span><span class="sxs-lookup"><span data-stu-id="12efa-p131">By using Exchange Task Synchronization, you can synchronize tasks in SharePoint Server 2013 and Project Server 2013 with Exchange Server 2013. Users can view and manage their tasks in Outlook 2013, or on their My Site.</span></span> 
   
- **Produits pour serveurs**
+ <span data-ttu-id="12efa-333">**Produits pour serveurs**</span><span class="sxs-lookup"><span data-stu-id="12efa-333">**Server products**</span></span>
   
-- Exchange Server 2013 
+- <span data-ttu-id="12efa-334">Exchange Server 2013</span><span class="sxs-lookup"><span data-stu-id="12efa-334">Exchange Server 2013</span></span> 
     
-- SharePoint Server 2013 
+- <span data-ttu-id="12efa-335">SharePoint Server 2013</span><span class="sxs-lookup"><span data-stu-id="12efa-335">SharePoint Server 2013</span></span> 
     
-- Project Server 2013 (facultatif)  
+- <span data-ttu-id="12efa-336">Project Server 2013 (facultatif) </span><span class="sxs-lookup"><span data-stu-id="12efa-336">Project Server 2013 (optional)</span></span> 
     
- **Conditions préalables**
+ <span data-ttu-id="12efa-337">**Conditions préalables**</span><span class="sxs-lookup"><span data-stu-id="12efa-337">**Prerequisites**</span></span>
   
-Sur Exchange 2013 :  
+<span data-ttu-id="12efa-338">Sur Exchange 2013 : </span><span class="sxs-lookup"><span data-stu-id="12efa-338">On Exchange 2013:</span></span> 
   
-- Établir une approbation OAuth et une autorisation de service.  
+- <span data-ttu-id="12efa-339">Établir une approbation OAuth et une autorisation de service. </span><span class="sxs-lookup"><span data-stu-id="12efa-339">Configure OAuth trust and service permission.</span></span> 
     
-Sur SharePoint Server 2013 :  
+<span data-ttu-id="12efa-340">Sur SharePoint Server 2013 : </span><span class="sxs-lookup"><span data-stu-id="12efa-340">On SharePoint Server 2013:</span></span> 
   
-- Application de service de profil utilisateur.  
+- <span data-ttu-id="12efa-341">Application de service de profil utilisateur. </span><span class="sxs-lookup"><span data-stu-id="12efa-341">User Profile Service application.</span></span> 
     
-- Application de service Gestion du travail.  
+- <span data-ttu-id="12efa-342">Application de service Gestion du travail. </span><span class="sxs-lookup"><span data-stu-id="12efa-342">Work Management Service application.</span></span> 
     
-- Recherche (ce paramètre est obligatoire pour les tâches dans SharePoint Server 2013). Configurer avec des analyses continues et des analyses incrémentielles.  
+- <span data-ttu-id="12efa-p132">Recherche (ce paramètre est obligatoire pour les tâches dans SharePoint Server 2013). Configurer avec des analyses continues et des analyses incrémentielles. </span><span class="sxs-lookup"><span data-stu-id="12efa-p132">Search (this is required for tasks in SharePoint Server 2013). Configure with continuous crawls and incremental crawls.</span></span> 
     
-- Secure Sockets Layer (SSL) est requis.  
+- <span data-ttu-id="12efa-345">Secure Sockets Layer (SSL) est requis. </span><span class="sxs-lookup"><span data-stu-id="12efa-345">Secure Sockets Layer (SSL) is required.</span></span> 
     
-- Les utilisateurs disposent de sites Mon site existants.  
+- <span data-ttu-id="12efa-346">Les utilisateurs disposent de sites Mon site existants. </span><span class="sxs-lookup"><span data-stu-id="12efa-346">Users have existing My Sites.</span></span> 
     
-- Application de service Project (pour regrouper les tâches de Project Server).  
+- <span data-ttu-id="12efa-347">Application de service Project (pour regrouper les tâches de Project Server). </span><span class="sxs-lookup"><span data-stu-id="12efa-347">Project Service application (to aggregate Project Server tasks).</span></span> 
     
-- API Services web Exchange sur chaque serveur frontal web (il s’agit d’un fichier .exe téléchargeable distinct qui doit être installé).  
+- <span data-ttu-id="12efa-348">API Services web Exchange sur chaque serveur frontal web (il s’agit d’un fichier .exe téléchargeable distinct qui doit être installé). </span><span class="sxs-lookup"><span data-stu-id="12efa-348">Exchange Web Services API on each web front-end server (this is a separate downloadable .exe file that must be installed).</span></span> 
     
-Sur Project Server 2013 :  
+<span data-ttu-id="12efa-349">Sur Project Server 2013 : </span><span class="sxs-lookup"><span data-stu-id="12efa-349">On Project Server 2013:</span></span> 
   
-- Créer des sites Project Web App. 
+- <span data-ttu-id="12efa-350">Créer des sites Project Web App.</span><span class="sxs-lookup"><span data-stu-id="12efa-350">Create Project Web Application sites.</span></span> 
     
- **Mode de fonctionnement**
+ <span data-ttu-id="12efa-351">**Mode de fonctionnement**</span><span class="sxs-lookup"><span data-stu-id="12efa-351">**How it works**</span></span>
   
-Lorsque l’affichage Mes tâches des sites Mon site est ouvert ou actualisé :  
+<span data-ttu-id="12efa-352">Lorsque l’affichage Mes tâches des sites Mon site est ouvert ou actualisé : </span><span class="sxs-lookup"><span data-stu-id="12efa-352">When the My Tasks view on the My Sites is opened or refreshed:</span></span> 
   
-- L’application de service Gestion du travail se synchronise entre SharePoint Server et Project Server.   
+- <span data-ttu-id="12efa-353">L’application de service Gestion du travail se synchronise entre SharePoint Server et Project Server.  </span><span class="sxs-lookup"><span data-stu-id="12efa-353">The Work Management Service application synchronizes between SharePoint Server and Project Server.</span></span> 
     
-- Le travail du minuteur de synchronisation Exchange appelle l’application de service Gestion du travail pour synchroniser les tâches avec Exchange Server 2013.  
+- <span data-ttu-id="12efa-354">Le travail du minuteur de synchronisation Exchange appelle l’application de service Gestion du travail pour synchroniser les tâches avec Exchange Server 2013. </span><span class="sxs-lookup"><span data-stu-id="12efa-354">Exchange Sync Timer Job calls the Work Management Service application to synchronize tasks with Exchange Server 2013.</span></span> 
     
-- La page Mes tâches sur les sites Mon site est actualisée.  
+- <span data-ttu-id="12efa-355">La page Mes tâches sur les sites Mon site est actualisée. </span><span class="sxs-lookup"><span data-stu-id="12efa-355">The My Tasks page on the My Sites is refreshed.</span></span> 
     
-Lorsque le travail du minuteur de synchronisation Exchange fonctionne :  
+<span data-ttu-id="12efa-356">Lorsque le travail du minuteur de synchronisation Exchange fonctionne : </span><span class="sxs-lookup"><span data-stu-id="12efa-356">When the Exchange Sync Timer Job runs:</span></span> 
   
-- L’application de service Gestion du travail se synchronise entre SharePoint Server, Project Server et Exchange Server.  
+- <span data-ttu-id="12efa-357">L’application de service Gestion du travail se synchronise entre SharePoint Server, Project Server et Exchange Server. </span><span class="sxs-lookup"><span data-stu-id="12efa-357">The Work Management Service application synchronizes among SharePoint Server, Project Server, and Exchange Server.</span></span> 
     
-Le diagramme associé illustre l’interaction entre SharePoint Server 2013, Exchange Server 2013, Outlook 2013 et Project Server 2013.  
+<span data-ttu-id="12efa-358">Le diagramme associé illustre l’interaction entre SharePoint Server 2013, Exchange Server 2013, Outlook 2013 et Project Server 2013. </span><span class="sxs-lookup"><span data-stu-id="12efa-358">The accompanying diagram shows the interaction among SharePoint Server 2013, Exchange Server 2013, Outlook 2013, and Project Server 2013.</span></span> 
   
-SharePoint Server 2013 exécute les tâches et applications suivantes :  
+<span data-ttu-id="12efa-359">SharePoint Server 2013 exécute les tâches et applications suivantes : </span><span class="sxs-lookup"><span data-stu-id="12efa-359">SharePoint Server 2013 runs the following jobs and applications:</span></span> 
   
-- Application de service de profil utilisateur.  
+- <span data-ttu-id="12efa-360">Application de service de profil utilisateur. </span><span class="sxs-lookup"><span data-stu-id="12efa-360">User Profile Service application.</span></span> 
     
-- Application de service de recherche.  
+- <span data-ttu-id="12efa-361">Application de service de recherche. </span><span class="sxs-lookup"><span data-stu-id="12efa-361">Search Service application.</span></span> 
     
-- Application de service Gestion du travail, qui est décrite ci-dessous.  
+- <span data-ttu-id="12efa-362">Application de service Gestion du travail, qui est décrite ci-dessous. </span><span class="sxs-lookup"><span data-stu-id="12efa-362">Work Management Service application, which is described below.</span></span> 
     
-- Travail du minuteur de synchronisation Exchange, qui est décrit ci-dessous.  
+- <span data-ttu-id="12efa-363">Travail du minuteur de synchronisation Exchange, qui est décrit ci-dessous. </span><span class="sxs-lookup"><span data-stu-id="12efa-363">Exchange Sync Timer Job, which is described below.</span></span> 
     
-- SharePoint Server 2013 contient Mon Site de l’utilisateur et d’autres Sites et s’exécute de nombreuses tâches de l’utilisateur. 
+- <span data-ttu-id="12efa-364">SharePoint Server 2013 contient Mon Site de l’utilisateur et d’autres Sites et s’exécute de nombreuses tâches de l’utilisateur.</span><span class="sxs-lookup"><span data-stu-id="12efa-364">SharePoint Server 2013 contains the user's My Site and other Sites, and runs numerous user tasks.</span></span> 
     
-- SharePoint Server 2013 contient un Index de recherche.  
+- <span data-ttu-id="12efa-365">SharePoint Server 2013 contient un Index de recherche. </span><span class="sxs-lookup"><span data-stu-id="12efa-365">SharePoint Server 2013 contains a Search Index.</span></span> 
     
-Exchange Server 2013 contient les éléments suivants :  
+<span data-ttu-id="12efa-366">Exchange Server 2013 contient les éléments suivants : </span><span class="sxs-lookup"><span data-stu-id="12efa-366">Exchange Server 2013 contains the following:</span></span> 
   
-- Base de données Exchange avec les informations de messagerie de l’utilisateur  
+- <span data-ttu-id="12efa-367">Base de données Exchange avec les informations de messagerie de l’utilisateur </span><span class="sxs-lookup"><span data-stu-id="12efa-367">Exchange database with user email information</span></span> 
     
-- Tâches de synchronisation  
+- <span data-ttu-id="12efa-368">Tâches de synchronisation </span><span class="sxs-lookup"><span data-stu-id="12efa-368">Synchronization tasks</span></span> 
     
-Outlook 2013 affiche les éléments suivants :  
+<span data-ttu-id="12efa-369">Outlook 2013 affiche les éléments suivants : </span><span class="sxs-lookup"><span data-stu-id="12efa-369">Outlook 2013 shows the following:</span></span> 
   
-- Les utilisateurs peuvent utiliser cette fonctionnalité, décrite ci-dessous, pour synchroniser leurs tâches.  
+- <span data-ttu-id="12efa-370">Les utilisateurs peuvent utiliser cette fonctionnalité, décrite ci-dessous, pour synchroniser leurs tâches. </span><span class="sxs-lookup"><span data-stu-id="12efa-370">Users can opt in to synchronize their tasks, which is described below.</span></span> 
     
-- Les utilisateurs peuvent afficher et modifier des tâches dans Outlook.  
+- <span data-ttu-id="12efa-371">Les utilisateurs peuvent afficher et modifier des tâches dans Outlook. </span><span class="sxs-lookup"><span data-stu-id="12efa-371">Users can view and edit tasks in Outlook.</span></span> 
     
-Project Server 2013 affiche les éléments suivants :  
+<span data-ttu-id="12efa-372">Project Server 2013 affiche les éléments suivants : </span><span class="sxs-lookup"><span data-stu-id="12efa-372">Project Server 2013 shows the following:</span></span> 
   
-- Base de données Project  
+- <span data-ttu-id="12efa-373">Base de données Project </span><span class="sxs-lookup"><span data-stu-id="12efa-373">Project database</span></span> 
     
-- Sites Project Web Access avec des tâches  
+- <span data-ttu-id="12efa-374">Sites Project Web Access avec des tâches </span><span class="sxs-lookup"><span data-stu-id="12efa-374">Project Web Access sites with tasks</span></span> 
     
-L’application de service Gestion du travail :  
+<span data-ttu-id="12efa-375">L’application de service Gestion du travail : </span><span class="sxs-lookup"><span data-stu-id="12efa-375">The Work Management Service application:</span></span> 
   
-- Regroupe les tâches à partir des listes SharePoint et des listes de tâches Project (ne synchronise pas les tâches avec Exchange Server).  
+- <span data-ttu-id="12efa-376">Regroupe les tâches à partir des listes SharePoint et des listes de tâches Project (ne synchronise pas les tâches avec Exchange Server). </span><span class="sxs-lookup"><span data-stu-id="12efa-376">Aggregates tasks from SharePoint lists and Project task lists (does not synchronize tasks with Exchange Server).</span></span> 
     
-- Se synchronise quand les utilisateurs affichent leur site Mon Site.  
+- <span data-ttu-id="12efa-377">Se synchronise quand les utilisateurs affichent leur site Mon Site. </span><span class="sxs-lookup"><span data-stu-id="12efa-377">Synchronizes when users view their My Site.</span></span> 
     
-- Met à jour la liste des utilisateurs qui le souhaitent.   
+- <span data-ttu-id="12efa-378">Met à jour la liste des utilisateurs qui le souhaitent.  </span><span class="sxs-lookup"><span data-stu-id="12efa-378">Maintains the list of users who opt-in.</span></span> 
     
-- Synchronise le lot d’utilisateurs suivant.  
+- <span data-ttu-id="12efa-379">Synchronise le lot d’utilisateurs suivant. </span><span class="sxs-lookup"><span data-stu-id="12efa-379">Synchronizes the next batch of users.</span></span> 
     
-Le travail du minuteur de synchronisation Exchange  
+<span data-ttu-id="12efa-380">Le travail du minuteur de synchronisation Exchange </span><span class="sxs-lookup"><span data-stu-id="12efa-380">The Exchange Sync Timer Job:</span></span> 
   
-- Détermine le lot d’utilisateurs suivant.  
+- <span data-ttu-id="12efa-381">Détermine le lot d’utilisateurs suivant. </span><span class="sxs-lookup"><span data-stu-id="12efa-381">Determines the next batch of users.</span></span> 
     
-- Garantit que tous les utilisateurs sont synchronisés en permanence.  
+- <span data-ttu-id="12efa-382">Garantit que tous les utilisateurs sont synchronisés en permanence. </span><span class="sxs-lookup"><span data-stu-id="12efa-382">Ensures all users are constantly synchronized.</span></span> 
     
-- Lance l’appel à l’application de service Gestion du travail pour synchroniser les tâches avec Exchange Server uniquement pour les utilisateurs qui s’y sont abonnés.  
+- <span data-ttu-id="12efa-383">Lance l’appel à l’application de service Gestion du travail pour synchroniser les tâches avec Exchange Server uniquement pour les utilisateurs qui s’y sont abonnés. </span><span class="sxs-lookup"><span data-stu-id="12efa-383">Initiates the call to the Work Management Service application to synchronizes tasks with Exchange Server for users that are opted-in only.</span></span> 
     
-Abonnement  
+<span data-ttu-id="12efa-384">Abonnement </span><span class="sxs-lookup"><span data-stu-id="12efa-384">Opt in</span></span> 
   
-- Les utilisateurs doivent s’abonner à cette fonctionnalité pour synchroniser leurs tâches Exchange avec leur site Mon Site, ou leurs tâches SharePoint Server 2013 et Project Server 2013 avec Exchange Server 2013.  
+- <span data-ttu-id="12efa-385">Les utilisateurs doivent s’abonner à cette fonctionnalité pour synchroniser leurs tâches Exchange avec leur site Mon Site, ou leurs tâches SharePoint Server 2013 et Project Server 2013 avec Exchange Server 2013. </span><span class="sxs-lookup"><span data-stu-id="12efa-385">Users must opt in to synchronize their Exchange tasks with their My Site, or their SharePoint Server 2013 and Project Server 2013 tasks with Exchange Server 2013.</span></span> 
     
-## <a name="lync-presence-in-office-2013-outlook-web-app-and-sharepoint-server-tab"></a>Présence Lync dans l’onglet Office 2013, Outlook Web App et SharePoint Server
+## <a name="lync-presence-in-office-2013-outlook-web-app-and-sharepoint-server-tab"></a><span data-ttu-id="12efa-386">Présence Lync dans l’onglet Office 2013, Outlook Web App et SharePoint Server</span><span class="sxs-lookup"><span data-stu-id="12efa-386">Lync Presence in Office 2013, Outlook Web App, and SharePoint Server tab</span></span>
 
-### <a name="lync-server-as-the-authoritative-source-of-presence-information"></a>Lync Server en tant que source d’autorité des informations de présence
+### <a name="lync-server-as-the-authoritative-source-of-presence-information"></a><span data-ttu-id="12efa-387">Lync Server en tant que source d’autorité des informations de présence</span><span class="sxs-lookup"><span data-stu-id="12efa-387">Lync Server as the authoritative source of presence information</span></span>
 
-En utilisant les informations de présence de Lync, vous pouvez obtenir un affichage cohérent des informations de présence entre Lync, Outlook et SharePoint. Outlook envoie des demandes d’informations de présence directement à partir de Lync, qui est installé localement sur le même ordinateur que Outlook. Quand les utilisateurs affichent les informations de présence dans SharePoint Server, les informations de présence sont interrogées par Lync sur l’ordinateur local.
+<span data-ttu-id="12efa-p133">En utilisant les informations de présence de Lync, vous pouvez obtenir un affichage cohérent des informations de présence entre Lync, Outlook et SharePoint. Outlook envoie des demandes d’informations de présence directement à partir de Lync, qui est installé localement sur le même ordinateur que Outlook. Quand les utilisateurs affichent les informations de présence dans SharePoint Server, les informations de présence sont interrogées par Lync sur l’ordinateur local.</span><span class="sxs-lookup"><span data-stu-id="12efa-p133">By using Lync presence information, you can have a consistent view of presence information among Lync, Outlook, and SharePoint. Outlook queries presence information directly from Lync, which is locally installed on the same computer as Outlook. When users view presence information in SharePoint Server, presence information is queried by Lync on the local computer.</span></span>
   
-Produits clients :  
+<span data-ttu-id="12efa-391">Produits clients : </span><span class="sxs-lookup"><span data-stu-id="12efa-391">Client products:</span></span> 
   
-- Outlook 2013  
+- <span data-ttu-id="12efa-392">Outlook 2013 </span><span class="sxs-lookup"><span data-stu-id="12efa-392">Outlook 2013</span></span> 
     
-- Lync 2013  
+- <span data-ttu-id="12efa-393">Lync 2013 </span><span class="sxs-lookup"><span data-stu-id="12efa-393">Lync 2013</span></span> 
     
-Produits serveurs :  
+<span data-ttu-id="12efa-394">Produits serveurs : </span><span class="sxs-lookup"><span data-stu-id="12efa-394">Server products:</span></span> 
   
-- Exchange Server 2013 
+- <span data-ttu-id="12efa-395">Exchange Server 2013</span><span class="sxs-lookup"><span data-stu-id="12efa-395">Exchange Server 2013</span></span> 
     
-- Lync Server 2013 
+- <span data-ttu-id="12efa-396">Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="12efa-396">Lync Server 2013</span></span> 
     
-- SharePoint Server 2013 
+- <span data-ttu-id="12efa-397">SharePoint Server 2013</span><span class="sxs-lookup"><span data-stu-id="12efa-397">SharePoint Server 2013</span></span> 
     
- **Mode de fonctionnement**
+ <span data-ttu-id="12efa-398">**Mode de fonctionnement**</span><span class="sxs-lookup"><span data-stu-id="12efa-398">**How it works**</span></span>
   
-Dans la mesure où Lync 2013 est installé sur l’ordinateur local de l’utilisateur, Outlook et SharePoint Server affichent automatiquement les informations de présence des utilisateurs.  
+<span data-ttu-id="12efa-399">Dans la mesure où Lync 2013 est installé sur l’ordinateur local de l’utilisateur, Outlook et SharePoint Server affichent automatiquement les informations de présence des utilisateurs. </span><span class="sxs-lookup"><span data-stu-id="12efa-399">As long as Lync 2013 is installed on the user's local computer, Outlook and SharePoint Server automatically display the presence information of users.</span></span> 
   
-Pour les utilisateurs d’Outlook Web App, Exchange CAS envoie la demande de présence au nom de l’utilisateur.  
+<span data-ttu-id="12efa-400">Pour les utilisateurs d’Outlook Web App, Exchange CAS envoie la demande de présence au nom de l’utilisateur. </span><span class="sxs-lookup"><span data-stu-id="12efa-400">For Outlook Web App users, Exchange CAS queries presence on behalf of the user.</span></span> 
   
- **Il existe deux diagrammes d’accompagnement**
+ <span data-ttu-id="12efa-401">**Il existe deux diagrammes d’accompagnement**</span><span class="sxs-lookup"><span data-stu-id="12efa-401">**There are two accompanying diagrams**</span></span>
   
-Le premier montre comment un utilisateur se connecte à Outlook Web App, puis comment Exchange envoie une requête pour obtenir des informations de présence à Lync Server.  
+<span data-ttu-id="12efa-402">Le premier montre comment un utilisateur se connecte à Outlook Web App, puis comment Exchange envoie une requête pour obtenir des informations de présence à Lync Server. </span><span class="sxs-lookup"><span data-stu-id="12efa-402">The first shows how a user signs in to Outlook Web App, and then Exchange queries Lync Server for presence information.</span></span> 
   
-1. L’utilisateur se connecte à Outlook Web App. L’ordinateur client accède à Exchange Client Access Server (CAS) sur HTTPS/443 et appelle également le serveur de boîtes aux lettres Exchange avec une communication Exchange interne.  
+1. <span data-ttu-id="12efa-p134">L’utilisateur se connecte à Outlook Web App. L’ordinateur client accède à Exchange Client Access Server (CAS) sur HTTPS/443 et appelle également le serveur de boîtes aux lettres Exchange avec une communication Exchange interne. </span><span class="sxs-lookup"><span data-stu-id="12efa-p134">The user signs in to Outlook Web App. The client computer accesses the Exchange Client Access Server (CAS) over HTTPS/443, and also calls the Exchange Mailbox Server with an internal Exchange communication.</span></span> 
     
-2. L’utilisateur se connecte à sa boîte aux lettres Exchange 2013 et Exchange CAS envoie une requête au serveur Lync pour obtenir des informations de présence sur SIP/MTLS:5061.  
+2. <span data-ttu-id="12efa-405">L’utilisateur se connecte à sa boîte aux lettres Exchange 2013 et Exchange CAS envoie une requête au serveur Lync pour obtenir des informations de présence sur SIP/MTLS:5061. </span><span class="sxs-lookup"><span data-stu-id="12efa-405">The user signs in to their Exchange 2013 mailbox, and Exchange CAS queries the Lync Server for presence information over SIP/MTLS:5061.</span></span> 
     
-Pour plus d’informations, consultez [intégration de Microsoft Lync Server 2013 et Microsoft Outlook Web App 2013](https://go.microsoft.com/fwlink/?LinkId=313522).
+<span data-ttu-id="12efa-406">Pour plus d’informations, consultez [intégration de Microsoft Lync Server 2013 et Microsoft Outlook Web App 2013](https://go.microsoft.com/fwlink/?LinkId=313522).</span><span class="sxs-lookup"><span data-stu-id="12efa-406">For more information, see [Integrating Microsoft Lync Server 2013 and Microsoft Outlook Web App 2013](https://go.microsoft.com/fwlink/?LinkId=313522).</span></span>
   
-Le deuxième diagramme montre comment Outlook et SharePoint Server utilisent Lync 2013 pour afficher les informations de présence des utilisateurs.  
+<span data-ttu-id="12efa-407">Le deuxième diagramme montre comment Outlook et SharePoint Server utilisent Lync 2013 pour afficher les informations de présence des utilisateurs. </span><span class="sxs-lookup"><span data-stu-id="12efa-407">The second diagram shows how Outlook and SharePoint Server use Lync 2013 to display the presence information of users.</span></span> 
   
-1. L’utilisateur se connecte à Lync 2013 sur SIP/TLS:5061, qui appelle le serveur Lync.   
+1. <span data-ttu-id="12efa-408">L’utilisateur se connecte à Lync 2013 sur SIP/TLS:5061, qui appelle le serveur Lync.  </span><span class="sxs-lookup"><span data-stu-id="12efa-408">The user signs in to Lync 2013 over SIP/TLS:5061, which calls the Lync server.</span></span> 
     
-2. A. L’utilisateur se connecte à sa boîte aux lettres Exchange 2013 via Outlook dans Office 2013. L’ordinateur client accède à Exchange Client Access Server (CAS) sur HTTPS/443 et appelle également le serveur de boîtes aux lettres Exchange avec une communication Exchange interne.  
+2. <span data-ttu-id="12efa-p135">A. L’utilisateur se connecte à sa boîte aux lettres Exchange 2013 via Outlook dans Office 2013. L’ordinateur client accède à Exchange Client Access Server (CAS) sur HTTPS/443 et appelle également le serveur de boîtes aux lettres Exchange avec une communication Exchange interne. </span><span class="sxs-lookup"><span data-stu-id="12efa-p135">A. The user signs in to their Exchange 2013 mailbox through Outlook in Office 2013. The client computer accesses the Exchange Client Access Server (CAS) over HTTPS/443, and it also calls the Exchange Mailbox Server with an internal Exchange communication.</span></span> 
     
-3. A. Outlook appelle l’instance Lync installée sur le même ordinateur que Outlook pour récupérer les informations de présence.  
+3. <span data-ttu-id="12efa-p136">A. Outlook appelle l’instance Lync installée sur le même ordinateur que Outlook pour récupérer les informations de présence. </span><span class="sxs-lookup"><span data-stu-id="12efa-p136">A. Outlook calls Lync installed on the same computer as Outlook to retrieve presence information.</span></span> 
     
-4. B. L’utilisateur se connecte au site Mon site SharePoint via HTTP ou HTTPS, qui appelle le serveur SharePoint.  
+4. <span data-ttu-id="12efa-p137">B. L’utilisateur se connecte au site Mon site SharePoint via HTTP ou HTTPS, qui appelle le serveur SharePoint. </span><span class="sxs-lookup"><span data-stu-id="12efa-p137">B. The user connects to SharePoint MySite over HTTP or HTTPS, which calls the SharePoint server.</span></span> 
     
-5. B. Internet Explorer appelle Lync, qui est installé sur le même ordinateur que le navigateur, pour récupérer les informations de présence.  
+5. <span data-ttu-id="12efa-p138">B. Internet Explorer appelle Lync, qui est installé sur le même ordinateur que le navigateur, pour récupérer les informations de présence. </span><span class="sxs-lookup"><span data-stu-id="12efa-p138">B. Internet Explorer calls Lync, which is installed on the same computer as the browser, to retrieve presence information.</span></span> 
     
-## <a name="voicemail-tab"></a>Onglet Messagerie vocale
+## <a name="voicemail-tab"></a><span data-ttu-id="12efa-418">Onglet Messagerie vocale</span><span class="sxs-lookup"><span data-stu-id="12efa-418">Voicemail tab</span></span>
 
-### <a name="exchange-um-is-the-voicemail-system-for-lync-server"></a>La messagerie unifiée Exchange est le système de messagerie vocale pour Lync Server
+### <a name="exchange-um-is-the-voicemail-system-for-lync-server"></a><span data-ttu-id="12efa-419">La messagerie unifiée Exchange est le système de messagerie vocale pour Lync Server</span><span class="sxs-lookup"><span data-stu-id="12efa-419">Exchange UM is the voicemail system for Lync Server</span></span>
 
-La messagerie vocale permet à un appelant de laisser un message vocal aux utilisateurs de Lync à l’aide de la messagerie unifiée (MU) Exchange.   
+<span data-ttu-id="12efa-420">La messagerie vocale permet à un appelant de laisser un message vocal aux utilisateurs de Lync à l’aide de la messagerie unifiée (MU) Exchange.  </span><span class="sxs-lookup"><span data-stu-id="12efa-420">Voicemail allows a caller to leave a voicemail to Lync users using Exchange Unified Messaging (UM).</span></span> 
   
-Produits clients :  
+<span data-ttu-id="12efa-421">Produits clients : </span><span class="sxs-lookup"><span data-stu-id="12efa-421">Client products:</span></span> 
   
-- Lync 2013  
+- <span data-ttu-id="12efa-422">Lync 2013 </span><span class="sxs-lookup"><span data-stu-id="12efa-422">Lync 2013</span></span> 
     
-- Appareil PSTN (PBX, cellulaire, POTS)  
+- <span data-ttu-id="12efa-423">Appareil PSTN (PBX, cellulaire, POTS) </span><span class="sxs-lookup"><span data-stu-id="12efa-423">PSTN device (PBX, cellular, POTS)</span></span> 
     
-Produits serveurs :  
+<span data-ttu-id="12efa-424">Produits serveurs : </span><span class="sxs-lookup"><span data-stu-id="12efa-424">Server products:</span></span> 
   
-- Exchange Server 2013 
+- <span data-ttu-id="12efa-425">Exchange Server 2013</span><span class="sxs-lookup"><span data-stu-id="12efa-425">Exchange Server 2013</span></span> 
     
-- Exchange Server 2013 
+- <span data-ttu-id="12efa-426">Exchange Server 2013</span><span class="sxs-lookup"><span data-stu-id="12efa-426">Exchange Server 2013</span></span> 
     
- **Mode de fonctionnement**
+ <span data-ttu-id="12efa-427">**Mode de fonctionnement**</span><span class="sxs-lookup"><span data-stu-id="12efa-427">**How it works**</span></span>
   
-Lorsqu’un appel n’est pas traitée par l’appelé sur un des points de terminaison actifs de l’appelé, Lync Server route l’appel vers la messagerie vocale de la messagerie unifiée Exchange (c'est-à-dire que le serveur de boîtes aux lettres Exchange). 
+<span data-ttu-id="12efa-428">Lorsqu’un appel n’est pas traitée par l’appelé sur un des points de terminaison actifs de l’appelé, Lync Server route l’appel vers la messagerie vocale de la messagerie unifiée Exchange (c'est-à-dire que le serveur de boîtes aux lettres Exchange).</span><span class="sxs-lookup"><span data-stu-id="12efa-428">When a call is not answered by the callee on any of the callee's active endpoints, Lync Server routes the call to voicemail on Exchange UM (i.e. Exchange Mailbox Server).</span></span> 
   
-Le diagramme associé illustre le routage des appels pour deux scénarios :  
+<span data-ttu-id="12efa-429">Le diagramme associé illustre le routage des appels pour deux scénarios : </span><span class="sxs-lookup"><span data-stu-id="12efa-429">The accompanying diagram shows the routing of calls for two scenarios:</span></span> 
   
-- L’appelant établit un appel à l’aide de Lync 2013.  
+- <span data-ttu-id="12efa-430">L’appelant établit un appel à l’aide de Lync 2013. </span><span class="sxs-lookup"><span data-stu-id="12efa-430">The caller initiates a call using Lync 2013.</span></span> 
     
-- L’appelant établit un appel à l’aide d’appareil PSTN (PBX, cellulaire, POTS).  
+- <span data-ttu-id="12efa-431">L’appelant établit un appel à l’aide d’appareil PSTN (PBX, cellulaire, POTS). </span><span class="sxs-lookup"><span data-stu-id="12efa-431">The caller initiates a call using PSTN device (PBX, cellular, POTS).</span></span> 
     
-L’appelant établit un appel à l’aide de Lync 2013 :  
+<span data-ttu-id="12efa-432">L’appelant établit un appel à l’aide de Lync 2013 : </span><span class="sxs-lookup"><span data-stu-id="12efa-432">The caller initiates a call using Lync 2013:</span></span> 
   
-1. L’appelant A établit un appel au destinataire à l’aide de Lync 2013. L’appel est établi et envoyé au serveur Lync.  
+1. <span data-ttu-id="12efa-p139">L’appelant A établit un appel au destinataire à l’aide de Lync 2013. L’appel est établi et envoyé au serveur Lync. </span><span class="sxs-lookup"><span data-stu-id="12efa-p139">Caller A initiates a call to the callee using Lync 2013. The call is initiated and sent to the Lync Server.</span></span> 
     
-2. L’appel est acheminé vers le serveur associé de l’appelé Lync. 
+2. <span data-ttu-id="12efa-435">L’appel est acheminé vers le serveur associé de l’appelé Lync.</span><span class="sxs-lookup"><span data-stu-id="12efa-435">The call is routed to the callee's Lync home server.</span></span> 
     
-3. Lync Server Active les points de terminaison actifs de l’appelé Lync 2013. 
+3. <span data-ttu-id="12efa-436">Lync Server Active les points de terminaison actifs de l’appelé Lync 2013.</span><span class="sxs-lookup"><span data-stu-id="12efa-436">Lync Server rings the callee's active endpoints on Lync 2013.</span></span> 
     
-4. Lorsque l’appel ne reçoit pas de réponse, l’appel est acheminé vers la messagerie vocale (messagerie unifiée Exchange) sur Exchange CAS (routeur d’appel).  
+4. <span data-ttu-id="12efa-437">Lorsque l’appel ne reçoit pas de réponse, l’appel est acheminé vers la messagerie vocale (messagerie unifiée Exchange) sur Exchange CAS (routeur d’appel). </span><span class="sxs-lookup"><span data-stu-id="12efa-437">When the call is not answered, the call is routed to voicemail (Exchange UM) on the Exchange CAS (call router).</span></span> 
     
-L’appelant établit un appel à l’aide de Lync 2013 :  
+<span data-ttu-id="12efa-438">L’appelant établit un appel à l’aide de Lync 2013 : </span><span class="sxs-lookup"><span data-stu-id="12efa-438">The caller initiates a call using Lync 2013:</span></span> 
   
-1. L’appelant B compose le numéro de téléphone de l’appelé à l’aide de TLS. 
+1. <span data-ttu-id="12efa-439">L’appelant B compose le numéro de téléphone de l’appelé à l’aide de TLS.</span><span class="sxs-lookup"><span data-stu-id="12efa-439">Caller B dials the callee's phone number using PSTN.</span></span> 
     
-2. L’appel PSTN est routé de la passerelle IP vers le serveur de médiation, qui est un serveur Lync.  
+2. <span data-ttu-id="12efa-440">L’appel PSTN est routé de la passerelle IP vers le serveur de médiation, qui est un serveur Lync. </span><span class="sxs-lookup"><span data-stu-id="12efa-440">The PSTN call is routed from the IP gateway to the Mediation Server, which is a Lync server.</span></span> 
     
-3. Le serveur de médiation achemine l’appel au serveur associé de l’appelé Lync. 
+3. <span data-ttu-id="12efa-441">Le serveur de médiation achemine l’appel au serveur associé de l’appelé Lync.</span><span class="sxs-lookup"><span data-stu-id="12efa-441">The Mediation server routs the call to the callee's Lync home server.</span></span> 
     
-4. Lync Server Active les points de terminaison actifs de l’appelé Lync 2013. 
+4. <span data-ttu-id="12efa-442">Lync Server Active les points de terminaison actifs de l’appelé Lync 2013.</span><span class="sxs-lookup"><span data-stu-id="12efa-442">Lync Server rings the callee's active endpoints on Lync 2013.</span></span> 
     
-5. Lorsque l’appel ne reçoit pas de réponse, l’appel est acheminé vers la messagerie vocale (messagerie unifiée Exchange) sur Exchange CAS (routeur d’appel).  
+5. <span data-ttu-id="12efa-443">Lorsque l’appel ne reçoit pas de réponse, l’appel est acheminé vers la messagerie vocale (messagerie unifiée Exchange) sur Exchange CAS (routeur d’appel). </span><span class="sxs-lookup"><span data-stu-id="12efa-443">When the call is not answered, the call is routed to voicemail (Exchange UM) on the Exchange CAS (call router).</span></span> 
     
-## <a name="meeting-recordings-tab"></a>Onglet Enregistrements de réunions
+## <a name="meeting-recordings-tab"></a><span data-ttu-id="12efa-444">Onglet Enregistrements de réunions</span><span class="sxs-lookup"><span data-stu-id="12efa-444">Meeting Recordings tab</span></span>
 
-### <a name="publish-your-meeting-recordings-on-your-sharepoint-team-site"></a>Publier vos enregistrements de réunions sur votre site d’équipe SharePoint
+### <a name="publish-your-meeting-recordings-on-your-sharepoint-team-site"></a><span data-ttu-id="12efa-445">Publier vos enregistrements de réunions sur votre site d’équipe SharePoint</span><span class="sxs-lookup"><span data-stu-id="12efa-445">Publish your meeting recordings on your SharePoint team site</span></span>
 
-Les enregistrements de réunions sont un composant essentiel des communications unifiées. Un bon moyen de partager vos enregistrements de réunions consiste à utiliser des bibliothèques de biens SharePoint sur vos sites d’équipe pour stocker vos enregistrements de réunions.  
+<span data-ttu-id="12efa-p140">Les enregistrements de réunions sont un composant essentiel des communications unifiées. Un bon moyen de partager vos enregistrements de réunions consiste à utiliser des bibliothèques de biens SharePoint sur vos sites d’équipe pour stocker vos enregistrements de réunions. </span><span class="sxs-lookup"><span data-stu-id="12efa-p140">Meeting recordings are a core component of unified communications. A good way to share your meeting recordings is to use SharePoint asset libraries on your team sites to store your meeting recordings.</span></span> 
   
-Produits clients :  
+<span data-ttu-id="12efa-448">Produits clients : </span><span class="sxs-lookup"><span data-stu-id="12efa-448">Client products:</span></span> 
   
-- Lync 2013  
+- <span data-ttu-id="12efa-449">Lync 2013 </span><span class="sxs-lookup"><span data-stu-id="12efa-449">Lync 2013</span></span> 
     
-Produits serveurs :  
+<span data-ttu-id="12efa-450">Produits serveurs : </span><span class="sxs-lookup"><span data-stu-id="12efa-450">Server products:</span></span> 
   
-- Produits serveurs :  
+- <span data-ttu-id="12efa-451">Produits serveurs : </span><span class="sxs-lookup"><span data-stu-id="12efa-451">Server products:</span></span> 
     
-- SharePoint 2013  
+- <span data-ttu-id="12efa-452">SharePoint 2013 </span><span class="sxs-lookup"><span data-stu-id="12efa-452">SharePoint 2013</span></span> 
     
-Conditions préalables : 
+<span data-ttu-id="12efa-453">Conditions préalables :</span><span class="sxs-lookup"><span data-stu-id="12efa-453">Prerequisites:</span></span> 
   
-- Lync 2013 — L’enregistrement de réunion est une fonctionnalité côté client dans Lync 2013.   
+- <span data-ttu-id="12efa-454">Lync 2013 — L’enregistrement de réunion est une fonctionnalité côté client dans Lync 2013.  </span><span class="sxs-lookup"><span data-stu-id="12efa-454">Lync 2013 — Meeting recording is a client-side feature in Lync 2013.</span></span> 
     
-- SharePoint 2013 — Le site d’équipe dans lequel vous souhaitez stocker les enregistrements de réunions est opérationnel.  
+- <span data-ttu-id="12efa-455">SharePoint 2013 — Le site d’équipe dans lequel vous souhaitez stocker les enregistrements de réunions est opérationnel. </span><span class="sxs-lookup"><span data-stu-id="12efa-455">SharePoint 2013 — You have the team site where you want to store the meeting recordings already up and running.</span></span> 
     
- **Ce qui est enregistré ?**
+ <span data-ttu-id="12efa-456">**Ce qui est enregistré ?**</span><span class="sxs-lookup"><span data-stu-id="12efa-456">**What is recorded?**</span></span>
   
-Les éléments suivants sont enregistrés dans un fichier MP4 pendant la réunion (chaque puce est précédée d’une icône représentant le type d’enregistrement) :  
+<span data-ttu-id="12efa-457">Les éléments suivants sont enregistrés dans un fichier MP4 pendant la réunion (chaque puce est précédée d’une icône représentant le type d’enregistrement) : </span><span class="sxs-lookup"><span data-stu-id="12efa-457">The following are recorded into an MP4 file during the meeting (each bullet point is preceded with an icon representing the type of recording):</span></span> 
   
-- Tous les fichiers audio  
+- <span data-ttu-id="12efa-458">Tous les fichiers audio </span><span class="sxs-lookup"><span data-stu-id="12efa-458">All audio</span></span> 
     
-- Intervenant 's vidéo (si utilisé) 
+- <span data-ttu-id="12efa-459">Intervenant 's vidéo (si utilisé)</span><span class="sxs-lookup"><span data-stu-id="12efa-459">Active speaker's video (if used)</span></span> 
     
-- Une vidéo panoramique (le cas échéant)  
+- <span data-ttu-id="12efa-460">Une vidéo panoramique (le cas échéant) </span><span class="sxs-lookup"><span data-stu-id="12efa-460">Panorama video (if used)</span></span> 
     
-- Tout le contenu qui est présenté  
+- <span data-ttu-id="12efa-461">Tout le contenu qui est présenté </span><span class="sxs-lookup"><span data-stu-id="12efa-461">All content that is presented</span></span> 
     
-- Les messages instantanés*   
+- <span data-ttu-id="12efa-462">Les messages instantanés*  </span><span class="sxs-lookup"><span data-stu-id="12efa-462">Instant messages*</span></span> 
     
-* Seuls les messages instantanés émis dans le cadre de la réunion sont inclus. Tout échange de messages peer-to-peer entre les participants de la réunion ne fait pas partie de la réunion et par conséquent n’est pas capturé.  
+<span data-ttu-id="12efa-p141">* Seuls les messages instantanés émis dans le cadre de la réunion sont inclus. Tout échange de messages peer-to-peer entre les participants de la réunion ne fait pas partie de la réunion et par conséquent n’est pas capturé. </span><span class="sxs-lookup"><span data-stu-id="12efa-p141">*Only the instant messages within the meeting are included. Any peer-to-peer messaging between meeting participants is not part of the meeting and therefore is not captured.</span></span> 
   
-L’affiche inclut deux diagrammes pour deux scénarios différents :  
+<span data-ttu-id="12efa-465">L’affiche inclut deux diagrammes pour deux scénarios différents : </span><span class="sxs-lookup"><span data-stu-id="12efa-465">The poster includes two diagrams for two different scenarios:</span></span> 
   
-- Préparation pour la publication de vos enregistrements de réunions  
+- <span data-ttu-id="12efa-466">Préparation pour la publication de vos enregistrements de réunions </span><span class="sxs-lookup"><span data-stu-id="12efa-466">Preparing for publishing meeting recordings</span></span> 
     
-- Enregistrement et publication d’une réunion à l’aide du client Lync  
+- <span data-ttu-id="12efa-467">Enregistrement et publication d’une réunion à l’aide du client Lync </span><span class="sxs-lookup"><span data-stu-id="12efa-467">Recording and publishing a meeting using the Lync client</span></span> 
     
-### <a name="preparing-for-publishing-meeting-recordings"></a>Préparation pour la publication de vos enregistrements de réunions
+### <a name="preparing-for-publishing-meeting-recordings"></a><span data-ttu-id="12efa-468">Préparation pour la publication de vos enregistrements de réunions</span><span class="sxs-lookup"><span data-stu-id="12efa-468">Preparing for publishing meeting recordings</span></span>
 
-Le diagramme montre SharePoint Server 2013 avec un site d’équipe, un centre d’Administration centrale et un serveur Internet Information Services (IIS).  
+<span data-ttu-id="12efa-469">Le diagramme montre SharePoint Server 2013 avec un site d’équipe, un centre d’Administration centrale et un serveur Internet Information Services (IIS). </span><span class="sxs-lookup"><span data-stu-id="12efa-469">The diagram shows SharePoint Server 2013 with a Team Site, Central Administration center, and Internet Information Services (IIS) Server.</span></span> 
   
-Le site d’équipe contient :  
+<span data-ttu-id="12efa-470">Le site d’équipe contient : </span><span class="sxs-lookup"><span data-stu-id="12efa-470">The Team site contains:</span></span> 
   
-- L’application de la bibliothèque de biens.  
+- <span data-ttu-id="12efa-471">L’application de la bibliothèque de biens. </span><span class="sxs-lookup"><span data-stu-id="12efa-471">The Asset Library app.</span></span> 
     
-- La bibliothèque des biens des réunions, à laquelle les membres de l’équipe envoient les enregistrements de réunions.  
+- <span data-ttu-id="12efa-472">La bibliothèque des biens des réunions, à laquelle les membres de l’équipe envoient les enregistrements de réunions. </span><span class="sxs-lookup"><span data-stu-id="12efa-472">Meetings asset library, to which team members send meeting recordings.</span></span> 
     
-Le centre d’Administration centrale contient les paramètres généraux de l’application web.  
+<span data-ttu-id="12efa-473">Le centre d’Administration centrale contient les paramètres généraux de l’application web. </span><span class="sxs-lookup"><span data-stu-id="12efa-473">The Central Administration Center contains web application general settings.</span></span> 
   
-Le serveur IIS contient les paramètres IIS.  
+<span data-ttu-id="12efa-474">Le serveur IIS contient les paramètres IIS. </span><span class="sxs-lookup"><span data-stu-id="12efa-474">The IIS Server contains IIS settings.</span></span> 
   
-Pour préparer la publication de vos enregistrements de réunions :  
+<span data-ttu-id="12efa-475">Pour préparer la publication de vos enregistrements de réunions : </span><span class="sxs-lookup"><span data-stu-id="12efa-475">To prepare for publishing meeting recordings:</span></span> 
   
-1. Sur votre site d’équipe SharePoint, ajoutez la bibliothèque App éventuellement, si vous ne parvenez pas à télécharger les enregistrements de réunions en raison de restrictions de taille ou de délais de connexion, effectuez les opérations supplémentaires, 2 et 3. 
+1. <span data-ttu-id="12efa-p142">Sur votre site d’équipe SharePoint, ajoutez la bibliothèque App éventuellement, si vous ne parvenez pas à télécharger les enregistrements de réunions en raison de restrictions de taille ou de délais de connexion, effectuez les opérations supplémentaires, 2 et 3.</span><span class="sxs-lookup"><span data-stu-id="12efa-p142">On your SharePoint team site, add the Asset Library app. Optionally, if you are unable to upload meeting recordings due to size restrictions or connection timeouts, perform the additional steps 2 and 3.</span></span> 
     
-2. Dans l’Administration centrale de SharePoint, modifiez le paramètre de taille maximale de téléchargement pour l’application web qui contient votre collection de site d’équipe.  
+2. <span data-ttu-id="12efa-478">Dans l’Administration centrale de SharePoint, modifiez le paramètre de taille maximale de téléchargement pour l’application web qui contient votre collection de site d’équipe. </span><span class="sxs-lookup"><span data-stu-id="12efa-478">In the SharePoint Central Administration, change the maximum upload size setting for the web application that contains your team site collection.</span></span> 
     
-3. Dans les paramètres serveur IIS, augmentez le délai d’attente pour la connexion IIS pour le site web qui contient votre collection de site d’équipe.  
+3. <span data-ttu-id="12efa-479">Dans les paramètres serveur IIS, augmentez le délai d’attente pour la connexion IIS pour le site web qui contient votre collection de site d’équipe. </span><span class="sxs-lookup"><span data-stu-id="12efa-479">In the IIS Server settings, increase the IIS connection timeout for the web site that contains your team site collection.</span></span> 
     
- **Bibliothèques de ressources numériques**
+ <span data-ttu-id="12efa-480">**Bibliothèques de ressources numériques**</span><span class="sxs-lookup"><span data-stu-id="12efa-480">**Digital asset libraries**</span></span>
   
-Les bibliothèques de biens numériques sont des bibliothèques de biens contenant des vidéos qui ont des conséquences sur la capacité et les performances. Pour plus d’informations, consultez Planifier les bibliothèques de biens numériques dans SharePoint Server 2013 sur http://aka.ms/O1vq5w. L’affiche inclut également un code QR pour accéder à ces informations.  
+<span data-ttu-id="12efa-p143">Les bibliothèques de biens numériques sont des bibliothèques de biens contenant des vidéos qui ont des conséquences sur la capacité et les performances. Pour plus d’informations, consultez Planifier les bibliothèques de biens numériques dans SharePoint Server 2013 sur http://aka.ms/O1vq5w. L’affiche inclut également un code QR pour accéder à ces informations. </span><span class="sxs-lookup"><span data-stu-id="12efa-p143">Digital asset libraries are asset libraries that contain videos that have certain capacity and performance implications. For more information, see Plan digital asset libraries in SharePoint Server 2013 located at http://aka.ms/O1vq5w. The poster also includes a QR code to access this information.</span></span> 
   
-### <a name="recording-and-publishing-a-meeting-using-the-lync-client"></a>Enregistrement et publication d’une réunion à l’aide du client Lync
+### <a name="recording-and-publishing-a-meeting-using-the-lync-client"></a><span data-ttu-id="12efa-484">Enregistrement et publication d’une réunion à l’aide du client Lync</span><span class="sxs-lookup"><span data-stu-id="12efa-484">Recording and publishing a meeting using the Lync client</span></span>
 
-Le diagramme montre un utilisateur utilisant  Lync pour participer à une réunion. La réunion est enregistrée à l’aide du client Lync, qui crée un fichier MP4 avec le contenu de la réunion. L’enregistrement MP4 est enregistré dans le dossier d’enregistrement Lync de votre ordinateur. Vous pouvez déplacer l’enregistrement MP4 dans votre bibliothèque de biens des réunions, à partir de laquelle vous pouvez l’insérer dans un wiki, une page SharePoint ou un blog.  
+<span data-ttu-id="12efa-p144">Le diagramme montre un utilisateur utilisant  Lync pour participer à une réunion. La réunion est enregistrée à l’aide du client Lync, qui crée un fichier MP4 avec le contenu de la réunion. L’enregistrement MP4 est enregistré dans le dossier d’enregistrement Lync de votre ordinateur. Vous pouvez déplacer l’enregistrement MP4 dans votre bibliothèque de biens des réunions, à partir de laquelle vous pouvez l’insérer dans un wiki, une page SharePoint ou un blog. </span><span class="sxs-lookup"><span data-stu-id="12efa-p144">The diagram shows a user using Lync to join a meeting. The meeting is recorded using the Lync client, which creates an MP4 file with the meeting content. The MP4 recording is saved to the Lync recording folder on your computer. You can move the MP4 recording to your meetings asset library, from which you can insert it into a wiki, SharePoint page, or blog.</span></span> 
   
- **Pour enregistrer et publier une réunion en utilisant le client Lync**
+ <span data-ttu-id="12efa-489">**Pour enregistrer et publier une réunion en utilisant le client Lync**</span><span class="sxs-lookup"><span data-stu-id="12efa-489">**To record and publish a meeting using the Lync client**</span></span>
   
-1. Démarrer l’enregistrement de la réunion à l’aide du client Lync.  
+1. <span data-ttu-id="12efa-490">Démarrer l’enregistrement de la réunion à l’aide du client Lync. </span><span class="sxs-lookup"><span data-stu-id="12efa-490">Start recording the meeting using the Lync client.</span></span> 
     
-2. Le contenu de la réunion est enregistré dans un fichier MP4 pendant la réunion.  
+2. <span data-ttu-id="12efa-491">Le contenu de la réunion est enregistré dans un fichier MP4 pendant la réunion. </span><span class="sxs-lookup"><span data-stu-id="12efa-491">The meeting content is recorded into an MP4 file during the meeting.</span></span> 
     
-3. Une fois que la réunion se termine, l’enregistrement MP4 apparaît dans le dossier d’enregistrement sur votre ordinateur (C:\\les utilisateurs\\<username>\\vidéos\\enregistrements de Lync). Si vous le souhaitez, vous pouvez personnaliser l’enregistrement de la réunion à l’aide de l’application Gestionnaire d’enregistrement Lync qui est installée avec le client Lync. 
+3. <span data-ttu-id="12efa-p145">Une fois que la réunion se termine, l’enregistrement MP4 apparaît dans le dossier d’enregistrement sur votre ordinateur (C:\\les utilisateurs\\<username>\\vidéos\\enregistrements de Lync). Si vous le souhaitez, vous pouvez personnaliser l’enregistrement de la réunion à l’aide de l’application Gestionnaire d’enregistrement Lync qui est installée avec le client Lync.</span><span class="sxs-lookup"><span data-stu-id="12efa-p145">After the meeting concludes, the MP4 recording appears in the recording folder on your computer (C:\\Users\\<username>\\Videos\\Lync Recordings). Optionally, you can customize the meeting recording using the Lync Recording Manager app which gets installed with Lync client.</span></span> 
     
-4. Glissez et déplacez l’enregistrement de la réunion dans votre bibliothèque de biens SharePoint.  
+4. <span data-ttu-id="12efa-494">Glissez et déplacez l’enregistrement de la réunion dans votre bibliothèque de biens SharePoint. </span><span class="sxs-lookup"><span data-stu-id="12efa-494">Drag and drop the meeting recording into your SharePoint asset library.</span></span> 
     
-5. Facultatif : Une fois l’enregistrement de votre bibliothèque, vous pouvez l’insérer dans une page SharePoint. Pour plus d’informations sur cette étape, consultez que l’entrée de blog Office 365, créer et publier des vidéos de formation avec SharePoint et Lync Online, situé à http://aka.ms/R61q35. 
+5. <span data-ttu-id="12efa-p146">Facultatif : Une fois l’enregistrement de votre bibliothèque, vous pouvez l’insérer dans une page SharePoint. Pour plus d’informations sur cette étape, consultez que l’entrée de blog Office 365, créer et publier des vidéos de formation avec SharePoint et Lync Online, situé à http://aka.ms/R61q35.</span><span class="sxs-lookup"><span data-stu-id="12efa-p146">Optional: Once the recording is in your asset library, you can insert it in any SharePoint page. For more information about this step, see the Office 365 blog entry, Create and Publish Training Videos with SharePoint and Lync Online, located at http://aka.ms/R61q35.</span></span> 
     
- **Miniatures de vidéo**
+ <span data-ttu-id="12efa-497">**Miniatures de vidéo**</span><span class="sxs-lookup"><span data-stu-id="12efa-497">**Video thumbnails**</span></span>
   
-Les miniatures de vidéo améliorent l’apparence de votre bibliothèque de biens. Pour en savoir plus sur la création des miniatures de vos enregistrements de réunions, consultez Capturer ou modifier une vignette de vidéo, sur http://aka.ms/Kupj85. L’affiche inclut également un code QR pour accéder à ces informations.  
+<span data-ttu-id="12efa-p147">Les miniatures de vidéo améliorent l’apparence de votre bibliothèque de biens. Pour en savoir plus sur la création des miniatures de vos enregistrements de réunions, consultez Capturer ou modifier une vignette de vidéo, sur http://aka.ms/Kupj85. L’affiche inclut également un code QR pour accéder à ces informations. </span><span class="sxs-lookup"><span data-stu-id="12efa-p147">Video thumbnails improve the look and feel of your asset library. To learn more about creating thumbnails for your meeting recordings, see Capture or change a video thumbnail, located at http://aka.ms/Kupj85. The poster also includes a QR code to access this information.</span></span> 
   
 

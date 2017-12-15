@@ -22,181 +22,181 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="designing-networking-for-microsoft-saas"></a>Conception de réseaux pour Microsoft SaaS
+# <a name="designing-networking-for-microsoft-saas"></a><span data-ttu-id="24665-103">Conception de réseaux pour Microsoft SaaS</span><span class="sxs-lookup"><span data-stu-id="24665-103">Designing networking for Microsoft SaaS</span></span>
 
- **Résumé :** Comprendre comment optimiser votre réseau pour accéder aux services SaaS de Microsoft, notamment Office 365, Microsoft Intune et Dynamics 365.
+ <span data-ttu-id="24665-104">**Résumé :** Comprendre comment optimiser votre réseau pour accéder aux services SaaS de Microsoft, notamment Office 365, Microsoft Intune et Dynamics 365.</span><span class="sxs-lookup"><span data-stu-id="24665-104">**Summary:** Understand how to optimize your network for access to Microsoft's SaaS services, including Office 365, Microsoft Intune, and Dynamics 365.</span></span>
   
-L'optimisation de votre réseau pour les services SaaS de Microsoft nécessite une analyse approfondie de votre périmètre Internet, de vos périphériques client et de vos opérations informatiques standard.
+<span data-ttu-id="24665-105">L'optimisation de votre réseau pour les services SaaS de Microsoft nécessite une analyse approfondie de votre périmètre Internet, de vos périphériques client et de vos opérations informatiques standard.</span><span class="sxs-lookup"><span data-stu-id="24665-105">Optimizing your network for Microsoft SaaS services requires careful analysis of your Internet edge, your client devices, and typical IT operations.</span></span>
   
-## <a name="steps-to-prepare-your-network-for-microsoft-saas-services"></a>Étapes pour préparer votre réseau aux services SaaS de Microsoft
+## <a name="steps-to-prepare-your-network-for-microsoft-saas-services"></a><span data-ttu-id="24665-106">Étapes pour préparer votre réseau aux services SaaS de Microsoft</span><span class="sxs-lookup"><span data-stu-id="24665-106">Steps to prepare your network for Microsoft SaaS services</span></span>
 
-Procédez comme suit pour optimiser votre réseau pour les services SaaS de Microsoft :
+<span data-ttu-id="24665-107">Procédez comme suit pour optimiser votre réseau pour les services SaaS de Microsoft :</span><span class="sxs-lookup"><span data-stu-id="24665-107">Follow these steps to optimize your network for Microsoft SaaS services:</span></span>
   
-1. Passez en revue la section **étapes de préparation de votre réseau pour les services de nuage de Microsoft** dans [les éléments communs de connectivité de nuage de Microsoft](common-elements-of-microsoft-cloud-connectivity.md).
+1. <span data-ttu-id="24665-108">Passez en revue la section **étapes de préparation de votre réseau pour les services de nuage de Microsoft** dans [les éléments communs de connectivité de nuage de Microsoft](common-elements-of-microsoft-cloud-connectivity.md).</span><span class="sxs-lookup"><span data-stu-id="24665-108">Go through the **Steps to prepare your network for Microsoft cloud services** section in [Common elements of Microsoft cloud connectivity](common-elements-of-microsoft-cloud-connectivity.md).</span></span>
     
-2. Optimisez votre sortie Internet pour les services SaaS de Microsoft en utilisant les recommandations de serveur proxy.
+2. <span data-ttu-id="24665-109">Optimisez votre sortie Internet pour les services SaaS de Microsoft en utilisant les recommandations de serveur proxy.</span><span class="sxs-lookup"><span data-stu-id="24665-109">Optimize your Internet egress for Microsoft SaaS services using the proxy server recommendations.</span></span>
     
-3. Optimisez votre débit Internet en utilisant les recommandations en matière de proximité et d'emplacement.
+3. <span data-ttu-id="24665-110">Optimisez votre débit Internet en utilisant les recommandations en matière de proximité et d'emplacement.</span><span class="sxs-lookup"><span data-stu-id="24665-110">Optimize your Internet throughput using the proximity and location recommendations.</span></span>
     
-4. Optimisez les performances des ordinateurs de vos clients et de l'intranet sur lequel ils se trouvent à l'aide des considérations relatives à l'utilisation du client.
+4. <span data-ttu-id="24665-111">Optimisez les performances des ordinateurs de vos clients et de l'intranet sur lequel ils se trouvent à l'aide des considérations relatives à l'utilisation du client.</span><span class="sxs-lookup"><span data-stu-id="24665-111">Optimize the performance of your client computers and the intranet on which they are located using the client usage considerations.</span></span>
     
-5. Le cas échéant, optimisez les performances des migrations des données et de la synchronisation à l'aide des considérations relatives aux opérations informatiques.
+5. <span data-ttu-id="24665-112">Le cas échéant, optimisez les performances des migrations des données et de la synchronisation à l'aide des considérations relatives aux opérations informatiques.</span><span class="sxs-lookup"><span data-stu-id="24665-112">As needed, optimize the performance of data migrations and synchronization using the IT operations considerations.</span></span>
     
-## <a name="internet-edge-considerations"></a>Considérations relatives au périmètre Internet
+## <a name="internet-edge-considerations"></a><span data-ttu-id="24665-113">Considérations relatives au périmètre Internet</span><span class="sxs-lookup"><span data-stu-id="24665-113">Internet edge considerations</span></span>
 
-Voici quelques éléments à prendre en considération pour l'optimisation de votre périmètre Internet et du débit vers les services SaaS de Microsoft.
+<span data-ttu-id="24665-114">Voici quelques éléments à prendre en considération pour l'optimisation de votre périmètre Internet et du débit vers les services SaaS de Microsoft.</span><span class="sxs-lookup"><span data-stu-id="24665-114">Here are some things to consider optimize your Internet edge and throughput to Microsoft SaaS services.</span></span>
   
-**Figure 1 : Options de connexion pour les services SaaS de Microsoft**
+<span data-ttu-id="24665-115">**Figure 1 : Options de connexion pour les services SaaS de Microsoft**</span><span class="sxs-lookup"><span data-stu-id="24665-115">**Figure 1: Connection options for Microsoft SaaS services**</span></span>
 
 ![Figure 1 : options de connexion pour les services SaaS de Microsoft](images/Network_Poster/SaaS1.png)
   
-La figure 1 présente un réseau local qui se connecte aux services SaaS de Microsoft via un canal Internet ou ExpressRoute.
+<span data-ttu-id="24665-117">La figure 1 présente un réseau local qui se connecte aux services SaaS de Microsoft via un canal Internet ou ExpressRoute.</span><span class="sxs-lookup"><span data-stu-id="24665-117">Figure 1 shows an on-premises network connecting to Microsoft SaaS services over an Internet pipe or ExpressRoute.</span></span>
   
-Voici quelques recommandations pour optimiser votre serveur proxy :
+<span data-ttu-id="24665-118">Voici quelques recommandations pour optimiser votre serveur proxy :</span><span class="sxs-lookup"><span data-stu-id="24665-118">Here are some recommendations to optimize your proxy server:</span></span>
   
-- Configurez les clients web à l'aide du protocole WPAD, du certificat PAC ou de l'objet de stratégie de groupe
+- <span data-ttu-id="24665-119">Configurez les clients web à l'aide du protocole WPAD, du certificat PAC ou de l'objet de stratégie de groupe</span><span class="sxs-lookup"><span data-stu-id="24665-119">Configure web clients using WPAD, PAC, or GPO</span></span>
     
-- N'utilisez pas interception SSL
+- <span data-ttu-id="24665-120">N'utilisez pas interception SSL</span><span class="sxs-lookup"><span data-stu-id="24665-120">Don't use SSL interception</span></span>
     
-- Utilisez un fichier PAC pour contourner le proxy pour les noms DNS de service SaaS de Microsoft
+- <span data-ttu-id="24665-121">Utilisez un fichier PAC pour contourner le proxy pour les noms DNS de service SaaS de Microsoft</span><span class="sxs-lookup"><span data-stu-id="24665-121">Use a PAC file to bypass the proxy for Microsoft SaaS service DNS names</span></span>
     
-- Autorisez le trafic pour la vérification de la liste de révocation de certificats/du protocole OCSP
+- <span data-ttu-id="24665-122">Autorisez le trafic pour la vérification de la liste de révocation de certificats/du protocole OCSP</span><span class="sxs-lookup"><span data-stu-id="24665-122">Allow traffic for CRL/OCSP verification</span></span>
     
-Voici quelques goulots d'étranglement de serveur proxy à vérifier :
+<span data-ttu-id="24665-123">Voici quelques goulots d'étranglement de serveur proxy à vérifier :</span><span class="sxs-lookup"><span data-stu-id="24665-123">Here are some proxy server bottlenecks to check:</span></span>
   
-- Connexions persistantes insuffisantes (Outlook)
+- <span data-ttu-id="24665-124">Connexions persistantes insuffisantes (Outlook)</span><span class="sxs-lookup"><span data-stu-id="24665-124">Insufficient persistent connections (Outlook)</span></span>
     
-- Capacité insuffisante
+- <span data-ttu-id="24665-125">Capacité insuffisante</span><span class="sxs-lookup"><span data-stu-id="24665-125">Insufficient capacity</span></span>
     
-- Réalisation de l'évaluation hors réseau
+- <span data-ttu-id="24665-126">Réalisation de l'évaluation hors réseau</span><span class="sxs-lookup"><span data-stu-id="24665-126">Doing off-network evaluation</span></span>
     
-- Demande d'authentification
+- <span data-ttu-id="24665-127">Demande d'authentification</span><span class="sxs-lookup"><span data-stu-id="24665-127">Requiring authentication</span></span>
     
-- Aucune prise en charge pour le trafic UDP (Skype Entreprise)
+- <span data-ttu-id="24665-128">Aucune prise en charge pour le trafic UDP (Skype Entreprise)</span><span class="sxs-lookup"><span data-stu-id="24665-128">No support for UDP traffic (Skype for Business)</span></span>
     
-Voici quelques recommandations en matière de proximité et d'emplacement :
+<span data-ttu-id="24665-129">Voici quelques recommandations en matière de proximité et d'emplacement :</span><span class="sxs-lookup"><span data-stu-id="24665-129">Here are some proximity and location recommendations:</span></span>
   
-- N'acheminez pas le trafic Internet sur le réseau étendu privé
+- <span data-ttu-id="24665-130">N'acheminez pas le trafic Internet sur le réseau étendu privé</span><span class="sxs-lookup"><span data-stu-id="24665-130">Don't route your Internet traffic over the private WAN</span></span>
     
-- Utilisez le flux de trafic DNS et Internet dans la région pour les utilisateurs à l'extérieur de la région
+- <span data-ttu-id="24665-131">Utilisez le flux de trafic DNS et Internet dans la région pour les utilisateurs à l'extérieur de la région</span><span class="sxs-lookup"><span data-stu-id="24665-131">Use in-region DNS and Internet traffic flow for out-of-region users</span></span>
     
-- Utilisez ExpressRoute pour une large bande passante vers Office 365 et une connectivité simultanée avec les services Azure
+- <span data-ttu-id="24665-132">Utilisez ExpressRoute pour une large bande passante vers Office 365 et une connectivité simultanée avec les services Azure</span><span class="sxs-lookup"><span data-stu-id="24665-132">Use ExpressRoute for high bandwidth to Office 365 and concurrent connectivity with Azure services</span></span>
     
-Voici les ports de sortie nécessaires pour le trafic Office 365 :
+<span data-ttu-id="24665-133">Voici les ports de sortie nécessaires pour le trafic Office 365 :</span><span class="sxs-lookup"><span data-stu-id="24665-133">Here are the outbound ports needed for Office 365 traffic:</span></span>
   
-- TCP 80 (pour les vérifications de liste de révocation de certificats/de protocole OCSP)
+- <span data-ttu-id="24665-134">TCP 80 (pour les vérifications de liste de révocation de certificats/de protocole OCSP)</span><span class="sxs-lookup"><span data-stu-id="24665-134">TCP 80 (for CRL/OCSP checks)</span></span>
     
-- TCP 443
+- <span data-ttu-id="24665-135">TCP 443</span><span class="sxs-lookup"><span data-stu-id="24665-135">TCP 443</span></span>
     
-- UDP 3478
+- <span data-ttu-id="24665-136">UDP 3478</span><span class="sxs-lookup"><span data-stu-id="24665-136">UDP 3478</span></span>
     
-- TCP 5223
+- <span data-ttu-id="24665-137">TCP 5223</span><span class="sxs-lookup"><span data-stu-id="24665-137">TCP 5223</span></span>
     
-- TCP 50000-59999
+- <span data-ttu-id="24665-138">TCP 50000-59999</span><span class="sxs-lookup"><span data-stu-id="24665-138">TCP 50000-59999</span></span>
     
-- UDP 50000-59999
+- <span data-ttu-id="24665-139">UDP 50000-59999</span><span class="sxs-lookup"><span data-stu-id="24665-139">UDP 50000-59999</span></span>
     
-## <a name="client-usage-considerations"></a>Considérations relative à l'utilisation client
+## <a name="client-usage-considerations"></a><span data-ttu-id="24665-140">Considérations relative à l'utilisation client</span><span class="sxs-lookup"><span data-stu-id="24665-140">Client usage considerations</span></span>
 
-Tout d'abord, configurez l'ensemble des services que vos clients utiliseront, tels que :
+<span data-ttu-id="24665-141">Tout d'abord, configurez l'ensemble des services que vos clients utiliseront, tels que :</span><span class="sxs-lookup"><span data-stu-id="24665-141">First, configure the set of services that your clients will be using, such as:</span></span>
   
-- Azure Active Directory
+- <span data-ttu-id="24665-142">Azure Active Directory</span><span class="sxs-lookup"><span data-stu-id="24665-142">Azure Active Directory</span></span>
     
-- Office 365
+- <span data-ttu-id="24665-143">Office 365</span><span class="sxs-lookup"><span data-stu-id="24665-143">Office 365</span></span>
     
-  - Applications client Office
+  - <span data-ttu-id="24665-144">Applications client Office</span><span class="sxs-lookup"><span data-stu-id="24665-144">Office client apps</span></span>
     
-  - SharePoint Online
+  - <span data-ttu-id="24665-145">SharePoint Online</span><span class="sxs-lookup"><span data-stu-id="24665-145">SharePoint Online</span></span>
     
-  - Exchange Online
+  - <span data-ttu-id="24665-146">Exchange Online</span><span class="sxs-lookup"><span data-stu-id="24665-146">Exchange Online</span></span>
     
-  - Skype Entreprise
+  - <span data-ttu-id="24665-147">Skype Entreprise</span><span class="sxs-lookup"><span data-stu-id="24665-147">Skype for Business</span></span>
     
-- Microsoft Intune
+- <span data-ttu-id="24665-148">Microsoft Intune</span><span class="sxs-lookup"><span data-stu-id="24665-148">Microsoft Intune</span></span>
     
-- Dynamics 365
+- <span data-ttu-id="24665-149">Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="24665-149">Dynamics 365</span></span>
     
-Pour les ordinateurs de vos clients, déterminez les éléments suivants :
+<span data-ttu-id="24665-150">Pour les ordinateurs de vos clients, déterminez les éléments suivants :</span><span class="sxs-lookup"><span data-stu-id="24665-150">For your client computers, determine the following:</span></span>
   
-- Nombre maximal à chaque fois (heure du jour, saisonnier, pics et creux d'utilisation)
+- <span data-ttu-id="24665-151">Nombre maximal à chaque fois (heure du jour, saisonnier, pics et creux d'utilisation)</span><span class="sxs-lookup"><span data-stu-id="24665-151">Maximum number at any one time (time of day, seasonal, peaks and troughs in usage)</span></span>
     
-- Bande passante totale nécessaire pour les pics
+- <span data-ttu-id="24665-152">Bande passante totale nécessaire pour les pics</span><span class="sxs-lookup"><span data-stu-id="24665-152">Total bandwidth needed for peaks</span></span>
     
-- Latence vers le périphérique de sortie Internet
+- <span data-ttu-id="24665-153">Latence vers le périphérique de sortie Internet</span><span class="sxs-lookup"><span data-stu-id="24665-153">Latency to the Internet egress device</span></span>
     
-- Pays d'origine et pays de colocalisation des centres de données
+- <span data-ttu-id="24665-154">Pays d'origine et pays de colocalisation des centres de données</span><span class="sxs-lookup"><span data-stu-id="24665-154">Country of origin vs. country of datacenter co-location</span></span>
     
-Pour chaque type de client (PC, smartphone ou tablette), vérifiez les éléments suivants actuels :
+<span data-ttu-id="24665-155">Pour chaque type de client (PC, smartphone ou tablette), vérifiez les éléments suivants actuels :</span><span class="sxs-lookup"><span data-stu-id="24665-155">For each type of client (PC, smartphone, tablet), ensure the current:</span></span>
   
-- Système d'exploitation
+- <span data-ttu-id="24665-156">Système d'exploitation</span><span class="sxs-lookup"><span data-stu-id="24665-156">Operating system</span></span>
     
-- Navigateur Internet
+- <span data-ttu-id="24665-157">Navigateur Internet</span><span class="sxs-lookup"><span data-stu-id="24665-157">Internet browser</span></span>
     
-- Pile TCP/IP
+- <span data-ttu-id="24665-158">Pile TCP/IP</span><span class="sxs-lookup"><span data-stu-id="24665-158">TCP/IP stack</span></span>
     
-- Matériel réseau
+- <span data-ttu-id="24665-159">Matériel réseau</span><span class="sxs-lookup"><span data-stu-id="24665-159">Network hardware</span></span>
     
-- Pilotes du système d'exploitation du matériel réseau
+- <span data-ttu-id="24665-160">Pilotes du système d'exploitation du matériel réseau</span><span class="sxs-lookup"><span data-stu-id="24665-160">OS drivers for network hardware</span></span>
     
-- Installation des mises à jour et des correctifs
+- <span data-ttu-id="24665-161">Installation des mises à jour et des correctifs</span><span class="sxs-lookup"><span data-stu-id="24665-161">Updates and patches are installed</span></span>
     
-En outre, optimisez le débit de connexion intranet (par câble, sans fil ou VPN).
+<span data-ttu-id="24665-162">En outre, optimisez le débit de connexion intranet (par câble, sans fil ou VPN).</span><span class="sxs-lookup"><span data-stu-id="24665-162">Additionally, optimize intranet connection throughput (wired, wireless, or VPN).</span></span>
   
-Pour plus d'informations, voir l'article [Prise en charge NAT avec Office 365](https://support.office.com/article/NAT-support-with-Office-365-170e96ea-d65d-4e51-acac-1de56abe39b9).
+<span data-ttu-id="24665-163">Pour plus d'informations, voir l'article [Prise en charge NAT avec Office 365](https://support.office.com/article/NAT-support-with-Office-365-170e96ea-d65d-4e51-acac-1de56abe39b9).</span><span class="sxs-lookup"><span data-stu-id="24665-163">For more information, see [NAT support with Office 365](https://support.office.com/article/NAT-support-with-Office-365-170e96ea-d65d-4e51-acac-1de56abe39b9).</span></span>
   
-Pour obtenir les dernières recommandations sur l'utilisation d'ExpressRoute avec Office 365, voir [ExpressRoute pour Office 365](https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd).
+<span data-ttu-id="24665-164">Pour obtenir les dernières recommandations sur l'utilisation d'ExpressRoute avec Office 365, voir [ExpressRoute pour Office 365](https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd).</span><span class="sxs-lookup"><span data-stu-id="24665-164">For the latest recommendations for using ExpressRoute with Office 365, see [ExpressRoute for Office 365](https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd).</span></span>
   
-Pour optimiser les performances de votre intranet, procédez comme suit :
+<span data-ttu-id="24665-165">Pour optimiser les performances de votre intranet, procédez comme suit :</span><span class="sxs-lookup"><span data-stu-id="24665-165">To optimize your intranet performance, do the following:</span></span>
   
-- Utilisez des outils pour évaluer la durée approximative des boucles sur vos périphériques du périmètre Internet (PsPing, Ping, Tracert, TraceTCP, Moniteur réseau)
+- <span data-ttu-id="24665-166">Utilisez des outils pour évaluer la durée approximative des boucles sur vos périphériques du périmètre Internet (PsPing, Ping, Tracert, TraceTCP, Moniteur réseau)</span><span class="sxs-lookup"><span data-stu-id="24665-166">Use tools to gauge round trip times (RTTs) to your Internet edge devices (PsPing, Ping, Tracert, TraceTCP, Network Monitor)</span></span>
     
-- Effectuez l'analyse de chemin de sortie à l'aide des protocoles de flux
+- <span data-ttu-id="24665-167">Effectuez l'analyse de chemin de sortie à l'aide des protocoles de flux</span><span class="sxs-lookup"><span data-stu-id="24665-167">Perform egress path analysis using flow protocols</span></span>
     
-- Effectuez l'analyse des périphériques intermédiaires (âge, intégrité, etc.)
+- <span data-ttu-id="24665-168">Effectuez l'analyse des périphériques intermédiaires (âge, intégrité, etc.)</span><span class="sxs-lookup"><span data-stu-id="24665-168">Perform analysis of intermediate devices (age, health, etc.)</span></span>
     
-Pour plus d'informations, voir l'article concernant l'[outil PsPing](https://technet.microsoft.com/sysinternals/jj729731.aspx).
+<span data-ttu-id="24665-169">Pour plus d'informations, voir l'article concernant l'[outil PsPing](https://technet.microsoft.com/sysinternals/jj729731.aspx).</span><span class="sxs-lookup"><span data-stu-id="24665-169">For more information, see the [PsPing tool](https://technet.microsoft.com/sysinternals/jj729731.aspx).</span></span>
   
-## <a name="it-operations-considerations"></a>Considérations relatives aux opérations informatiques
+## <a name="it-operations-considerations"></a><span data-ttu-id="24665-170">Considérations relatives aux opérations informatiques</span><span class="sxs-lookup"><span data-stu-id="24665-170">IT operations considerations</span></span>
 
-Voici quelques éléments à prendre en considération lors de l'exploitation d'une charge de travail informatique dans un service SaaS de Microsoft.
+<span data-ttu-id="24665-171">Voici quelques éléments à prendre en considération lors de l'exploitation d'une charge de travail informatique dans un service SaaS de Microsoft.</span><span class="sxs-lookup"><span data-stu-id="24665-171">Here are some things to consider when operating an IT workload in a Microsoft SaaS service.</span></span>
   
-### <a name="one-time-migrations"></a>Migrations exceptionnelles
+### <a name="one-time-migrations"></a><span data-ttu-id="24665-172">Migrations exceptionnelles</span><span class="sxs-lookup"><span data-stu-id="24665-172">One-time migrations</span></span>
 
-Le transfert de données en bloc pour les applications basées sur le cloud ou le stockage d'archives représentent des exemples de migrations exceptionnelles.
+<span data-ttu-id="24665-173">Le transfert de données en bloc pour les applications basées sur le cloud ou le stockage d'archives représentent des exemples de migrations exceptionnelles.</span><span class="sxs-lookup"><span data-stu-id="24665-173">Examples of one-time migrations are bulk data transfer for cloud-based applications or archival storage.</span></span>
   
-Afin d'optimiser votre réseau pour les migrations exceptionnelles, procédez comme suit :
+<span data-ttu-id="24665-174">Afin d'optimiser votre réseau pour les migrations exceptionnelles, procédez comme suit :</span><span class="sxs-lookup"><span data-stu-id="24665-174">To optimize your network for on-time migrations:</span></span>
   
-- Évitez l'utilisation maximale du réseau et les heures de correctifs de l'ordinateur
+- <span data-ttu-id="24665-175">Évitez l'utilisation maximale du réseau et les heures de correctifs de l'ordinateur</span><span class="sxs-lookup"><span data-stu-id="24665-175">Avoid peak network usage and computer patching times</span></span>
     
-- En cas de ligne de base et de guidage, évaluez l'intégrité du réseau et résolvez les problèmes avant d'essayer la migration réelle
+- <span data-ttu-id="24665-176">En cas de ligne de base et de guidage, évaluez l'intégrité du réseau et résolvez les problèmes avant d'essayer la migration réelle</span><span class="sxs-lookup"><span data-stu-id="24665-176">Should be baselined and piloted, assess network health and resolve issues before attempting actual migration</span></span>
     
-- Effectuez un post-mortem pour les prochaines migrations
+- <span data-ttu-id="24665-177">Effectuez un post-mortem pour les prochaines migrations</span><span class="sxs-lookup"><span data-stu-id="24665-177">Perform post-mortem for future migrations</span></span>
     
-### <a name="ongoing-synchronizations"></a>Synchronisations en cours
+### <a name="ongoing-synchronizations"></a><span data-ttu-id="24665-178">Synchronisations en cours</span><span class="sxs-lookup"><span data-stu-id="24665-178">Ongoing synchronizations</span></span>
 
-Les informations du répertoire, les paramètres ou les fichiers sont des exemples de synchronisations en cours.
+<span data-ttu-id="24665-179">Les informations du répertoire, les paramètres ou les fichiers sont des exemples de synchronisations en cours.</span><span class="sxs-lookup"><span data-stu-id="24665-179">Examples of ongoing synchronizations are directory information, settings, or files.</span></span>
   
-Pour optimiser votre réseau pour les synchronisations en cours, procédez comme suit :
+<span data-ttu-id="24665-180">Pour optimiser votre réseau pour les synchronisations en cours, procédez comme suit :</span><span class="sxs-lookup"><span data-stu-id="24665-180">To optimize your network for ongoing synchronizations:</span></span>
   
-- Assurez-vous qu'un système de suivi de la bande passante réseau est en place, et résolvez ou ignorez les erreurs collectées
+- <span data-ttu-id="24665-181">Assurez-vous qu'un système de suivi de la bande passante réseau est en place, et résolvez ou ignorez les erreurs collectées</span><span class="sxs-lookup"><span data-stu-id="24665-181">Ensure that a network bandwidth monitoring system is in place, resolve or dismiss collected errors</span></span>
     
-- Utilisez les résultats du suivi de la bande passante pour déterminer les modifications de réseau nécessaires (monter en puissance/en charge, nouveaux circuits ou ajouter des périphériques)
+- <span data-ttu-id="24665-182">Utilisez les résultats du suivi de la bande passante pour déterminer les modifications de réseau nécessaires (monter en puissance/en charge, nouveaux circuits ou ajouter des périphériques)</span><span class="sxs-lookup"><span data-stu-id="24665-182">Use bandwidth monitoring results to determine need for network changes (scale-up/out, new circuits, or adding devices)</span></span>
     
-Pour plus d'informations, voir :
+<span data-ttu-id="24665-183">Pour plus d'informations, voir :</span><span class="sxs-lookup"><span data-stu-id="24665-183">For more information, see:</span></span>
   
-- [Planification réseau et de migration pour Office 365](https://aka.ms/tune)
+- [<span data-ttu-id="24665-184">Planification réseau et de migration pour Office 365</span><span class="sxs-lookup"><span data-stu-id="24665-184">Network and migration planning for Office 365</span></span>](https://aka.ms/tune)
     
-- [Cours Microsoft Virtual Academy concernant la gestion des performances pour Office 365](https://aka.ms/o365perf)
+- [<span data-ttu-id="24665-185">Cours Microsoft Virtual Academy concernant la gestion des performances pour Office 365</span><span class="sxs-lookup"><span data-stu-id="24665-185">Office 365 Performance Management Microsoft Virtual Academy course</span></span>](https://aka.ms/o365perf)
     
-- [ExpressRoute pour Office 365](https://aka.ms/expressrouteoffice365)
+- [<span data-ttu-id="24665-186">ExpressRoute pour Office 365</span><span class="sxs-lookup"><span data-stu-id="24665-186">ExpressRoute for Office 365</span></span>](https://aka.ms/expressrouteoffice365)
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a><span data-ttu-id="24665-187">See Also</span><span class="sxs-lookup"><span data-stu-id="24665-187">See Also</span></span>
 
-[Mise en réseau cloud Microsoft pour les architectes d'entreprise](microsoft-cloud-networking-for-enterprise-architects.md)
+[<span data-ttu-id="24665-188">Mise en réseau cloud Microsoft pour les architectes d'entreprise</span><span class="sxs-lookup"><span data-stu-id="24665-188">Microsoft Cloud Networking for Enterprise Architects</span></span>](microsoft-cloud-networking-for-enterprise-architects.md)
   
-[Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
+[<span data-ttu-id="24665-189">Ressources relatives à l'architecture informatique du cloud Microsoft</span><span class="sxs-lookup"><span data-stu-id="24665-189">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-[Feuille de route Enterprise Cloud de Microsoft relative aux ressources pour les décideurs en matière d'informatique](https://sway.com/FJ2xsyWtkJc2taRD)
+[<span data-ttu-id="24665-190">Feuille de route Enterprise Cloud de Microsoft relative aux ressources pour les décideurs en matière d'informatique</span><span class="sxs-lookup"><span data-stu-id="24665-190">Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers</span></span>](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

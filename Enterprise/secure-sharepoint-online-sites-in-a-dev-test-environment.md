@@ -19,109 +19,109 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>Sécuriser les sites SharePoint Online dans un environnement de développement/test
+# <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a><span data-ttu-id="526a4-103">Sécuriser les sites SharePoint Online dans un environnement de développement/test</span><span class="sxs-lookup"><span data-stu-id="526a4-103">Secure SharePoint Online sites in a dev/test environment</span></span>
 
- **Résumé :** Créer des sites d’équipe SharePoint Online publiques, privées, sensibles et hautement confidentielles dans un environnement de développement/test.
+ <span data-ttu-id="526a4-104">**Résumé :** Créer des sites d’équipe SharePoint Online publiques, privées, sensibles et hautement confidentielles dans un environnement de développement/test.</span><span class="sxs-lookup"><span data-stu-id="526a4-104">**Summary:** Create public, private, sensitive, and highly confidential SharePoint Online team sites in a dev/test environment.</span></span>
   
-Cet article fournit des instructions pas à pas pour créer un environnement de développement/test qui inclut les quatre types différents de sites d’équipe SharePoint Online pour la solution de [fichiers et des sites SharePoint Online de la sécuriser](secure-sharepoint-online-sites-and-files.md) .
+<span data-ttu-id="526a4-105">Cet article fournit des instructions pas à pas pour créer un environnement de développement/test qui inclut les quatre types différents de sites d’équipe SharePoint Online pour la solution de [fichiers et des sites SharePoint Online de la sécuriser](secure-sharepoint-online-sites-and-files.md) .</span><span class="sxs-lookup"><span data-stu-id="526a4-105">This article provides step-by-step instructions to create a dev/test environment that includes the four different types of SharePoint Online team sites for the [Secure SharePoint Online sites and files](secure-sharepoint-online-sites-and-files.md) solution.</span></span>
   
 ![Les quatre sites d’équipe dans l’environnement de développement/test SharePoint Online sécurisé.](images/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
   
-Cet environnement de développement/test permet de faire des essais avec les comportements de protection des informations et d’affiner les paramètres pour vos besoins avant de déployer des sites d’équipe SharePoint Online dans la production.
+<span data-ttu-id="526a4-107">Cet environnement de développement/test permet de faire des essais avec les comportements de protection des informations et d’affiner les paramètres pour vos besoins avant de déployer des sites d’équipe SharePoint Online dans la production.</span><span class="sxs-lookup"><span data-stu-id="526a4-107">Use this dev/test environment to experiment with the information protection behaviors and fine-tune settings for your specific needs before deploying SharePoint Online team sites in production.</span></span>
   
-## <a name="phase-1-create-your-devtest-environment"></a>Phase 1 : Création d’un environnement de développement/test
+## <a name="phase-1-create-your-devtest-environment"></a><span data-ttu-id="526a4-108">Phase 1 : Création d’un environnement de développement/test</span><span class="sxs-lookup"><span data-stu-id="526a4-108">Phase 1: Create your dev/test environment</span></span>
 
-Dans cette phase, vous obtenez des abonnements d’essai d’Office 365 et de mobilité d’entreprise + de sécurité pour une entreprise fictive.
+<span data-ttu-id="526a4-109">Dans cette phase, vous obtenez des abonnements d’essai d’Office 365 et de mobilité d’entreprise + de sécurité pour une entreprise fictive.</span><span class="sxs-lookup"><span data-stu-id="526a4-109">In this phase, you obtain trial subscriptions for Office 365 and Enterprise Mobility + Security for a fictional organization.</span></span>
   
-Tout d’abord, suivez les instructions de la **Phase 2** de l' [environnement de développement/test d’Office 365](office-365-dev-test-environment.md).
+<span data-ttu-id="526a4-110">Tout d’abord, suivez les instructions de la **Phase 2** de l' [environnement de développement/test d’Office 365](office-365-dev-test-environment.md).</span><span class="sxs-lookup"><span data-stu-id="526a4-110">First, follow the instructions in **Phase 2** of the [Office 365 dev/test environment](office-365-dev-test-environment.md).</span></span>
   
-Ensuite, inscrivez-vous à l’abonnement d’évaluation EMS et ajoutez-le à la même organisation que votre abonnement d’évaluation Office 365.
+<span data-ttu-id="526a4-111">Ensuite, inscrivez-vous à l’abonnement d’évaluation EMS et ajoutez-le à la même organisation que votre abonnement d’évaluation Office 365.</span><span class="sxs-lookup"><span data-stu-id="526a4-111">Next, sign up for the EMS trial subscription and add it to the same organization as your Office 365 trial subscription.</span></span>
   
-1. Si nécessaire, connectez-vous au portail Office 365 avec les informations d’identification du compte d’administrateur global de votre abonnement d’évaluation. Pour de l’aide, consultez la rubrique [pour vous connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. <span data-ttu-id="526a4-p101">Si nécessaire, connectez-vous au portail Office 365 avec les informations d’identification du compte d’administrateur global de votre abonnement d’évaluation. Pour de l’aide, consultez la rubrique [pour vous connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).</span><span class="sxs-lookup"><span data-stu-id="526a4-p101">If needed, sign in to the Office 365 portal with the credentials of the global administrator account of your trial subscription. For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).</span></span>
     
-2. Cliquez sur la mosaïque de **l’Admin** .
+2. <span data-ttu-id="526a4-114">Cliquez sur la mosaïque de **l’Admin** .</span><span class="sxs-lookup"><span data-stu-id="526a4-114">Click the **Admin** tile.</span></span>
     
-3. Dans l’onglet **Centre d’administration d’Office** dans votre navigateur, dans la navigation de gauche, cliquez sur **de facturation > acheter les services**.
+3. <span data-ttu-id="526a4-115">Dans l’onglet **Centre d’administration d’Office** dans votre navigateur, dans la navigation de gauche, cliquez sur **de facturation > acheter les services**.</span><span class="sxs-lookup"><span data-stu-id="526a4-115">On the **Office Admin center** tab in your browser, in the left navigation, click **Billing > Purchase services**.</span></span>
     
-4. Dans la page **services d’achat** , trouver la **mobilité d’entreprise + E5 de la sécurité** . Placez le pointeur de la souris sur elle et cliquez sur **Démarrer la version d’évaluation gratuite**.
+4. <span data-ttu-id="526a4-p102">Dans la page **services d’achat** , trouver la **mobilité d’entreprise + E5 de la sécurité** . Placez le pointeur de la souris sur elle et cliquez sur **Démarrer la version d’évaluation gratuite**.</span><span class="sxs-lookup"><span data-stu-id="526a4-p102">On the **Purchase services** page, find the **Enterprise Mobility + Security E5** item. Hover your mouse pointer over it and click **Start free trial**.</span></span>
     
-5. Dans la page **Confirmer votre commande** , cliquez sur **Essayer maintenant**.
+5. <span data-ttu-id="526a4-118">Dans la page **Confirmer votre commande** , cliquez sur **Essayer maintenant**.</span><span class="sxs-lookup"><span data-stu-id="526a4-118">On the **Confirm your order** page, click **Try now**.</span></span>
     
-6. Dans la page **reçu de commande** , cliquez sur **Continuer**.
+6. <span data-ttu-id="526a4-119">Dans la page **reçu de commande** , cliquez sur **Continuer**.</span><span class="sxs-lookup"><span data-stu-id="526a4-119">On the **Order receipt** page, click **Continue**.</span></span>
     
-Activez ensuite la licence Enterprise Mobility + Security E5 pour votre compte d’administrateur général.
+<span data-ttu-id="526a4-120">Activez ensuite la licence Enterprise Mobility + Security E5 pour votre compte d’administrateur général.</span><span class="sxs-lookup"><span data-stu-id="526a4-120">Next, enable the Enterprise Mobility + Security E5 license for your global administrator account.</span></span>
   
-1. Dans l’onglet **Centre d’administration d’Office 365** dans votre navigateur, dans la navigation de gauche, cliquez sur **les utilisateurs > utilisateurs actifs**.
+1. <span data-ttu-id="526a4-121">Dans l’onglet **Centre d’administration d’Office 365** dans votre navigateur, dans la navigation de gauche, cliquez sur **les utilisateurs > utilisateurs actifs**.</span><span class="sxs-lookup"><span data-stu-id="526a4-121">On the **Office 365 Admin center** tab in your browser, in the left navigation, click **Users > Active users**.</span></span>
     
-2. Cliquez sur votre compte d’administrateur global, puis cliquez sur **Modifier** pour les **licences de produit**.
+2. <span data-ttu-id="526a4-122">Cliquez sur votre compte d’administrateur global, puis cliquez sur **Modifier** pour les **licences de produit**.</span><span class="sxs-lookup"><span data-stu-id="526a4-122">Click your global administrator account, and then click **Edit** for **Product licenses**.</span></span>
     
-3. Dans le volet des **licences** , activer la licence du produit de **mobilité d’entreprise + sécurité E5** **on**et cliquez sur **Enregistrer,** puis cliquez deux fois sur **Fermer** .
+3. <span data-ttu-id="526a4-123">Dans le volet des **licences** , activer la licence du produit de **mobilité d’entreprise + sécurité E5** **on**et cliquez sur **Enregistrer,** puis cliquez deux fois sur **Fermer** .</span><span class="sxs-lookup"><span data-stu-id="526a4-123">On the **Product licenses** pane, turn the product license for **Enterprise Mobility + Security E5** to **On**, click **Save,** and then click **Close** twice.</span></span>
     
-## <a name="phase-2-create-and-configure-your-azure-active-directory-ad-groups-and-users"></a>Phase 2 : Créer et configurer des groupes d’Azure Active Directory (AD) et des utilisateurs
+## <a name="phase-2-create-and-configure-your-azure-active-directory-ad-groups-and-users"></a><span data-ttu-id="526a4-124">Phase 2 : Créer et configurer des groupes d’Azure Active Directory (AD) et des utilisateurs</span><span class="sxs-lookup"><span data-stu-id="526a4-124">Phase 2: Create and configure your Azure Active Directory (AD) groups and users</span></span>
 
-Dans cette phase, vous créez et configurez les groupes d’annonces Azure et les utilisateurs de votre organisation fictive.
+<span data-ttu-id="526a4-125">Dans cette phase, vous créez et configurez les groupes d’annonces Azure et les utilisateurs de votre organisation fictive.</span><span class="sxs-lookup"><span data-stu-id="526a4-125">In this phase, you create and configure the Azure AD groups and users for your fictional organization.</span></span>
   
-Tout d’abord, créez un ensemble de groupes pour une organisation typique avec le portail Azure.
+<span data-ttu-id="526a4-126">Tout d’abord, créez un ensemble de groupes pour une organisation typique avec le portail Azure.</span><span class="sxs-lookup"><span data-stu-id="526a4-126">First, create a set of groups for a typical organization with the Azure portal.</span></span>
   
-1. Créer un onglet distinct dans votre navigateur et passez au portail Azure à [https://portal.azure.com](https://portal.azure.com). Si nécessaire, connectez-vous en utilisant les informations d’identification du compte d’administrateur global pour votre abonnement d’évaluation d’Office 365 E5.
+1. <span data-ttu-id="526a4-127">Créer un onglet distinct dans votre navigateur et passez au portail Azure à [https://portal.azure.com](https://portal.azure.com). Si nécessaire, connectez-vous en utilisant les informations d’identification du compte d’administrateur global pour votre abonnement d’évaluation d’Office 365 E5.</span><span class="sxs-lookup"><span data-stu-id="526a4-127">Create a separate tab in your browser, and then go to the Azure portal at [https://portal.azure.com](https://portal.azure.com). If needed, sign in with the credentials of the global administrator account for your Office 365 E5 trial subscription.</span></span>
     
-2. Dans le portail Azure, cliquez sur **Azure Active Directory > utilisateurs et groupes > tous les groupes de**.
+2. <span data-ttu-id="526a4-128">Dans le portail Azure, cliquez sur **Azure Active Directory > utilisateurs et groupes > tous les groupes de**.</span><span class="sxs-lookup"><span data-stu-id="526a4-128">In the Azure portal, click **Azure Active Directory > Users and groups > All groups**.</span></span>
     
-3. Sur la lame de **tous les groupes** , cliquez sur **+ le nouveau groupe**.
+3. <span data-ttu-id="526a4-129">Sur la lame de **tous les groupes** , cliquez sur **+ le nouveau groupe**.</span><span class="sxs-lookup"><span data-stu-id="526a4-129">On the **All groups** blade, click **+ New group**.</span></span>
     
-4. Sur la lame de **groupe** :
+4. <span data-ttu-id="526a4-130">Sur la lame de **groupe** :</span><span class="sxs-lookup"><span data-stu-id="526a4-130">On the **Group** blade:</span></span>
     
-  - Type **C-Suite** dans la zone **nom**.
+  - <span data-ttu-id="526a4-131">Type **C-Suite** dans la zone **nom**.</span><span class="sxs-lookup"><span data-stu-id="526a4-131">Type **C-Suite** in **Name**.</span></span>
     
-  - Sélectionnez **affecté** dans **l’appartenance**.
+  - <span data-ttu-id="526a4-132">Sélectionnez **affecté** dans **l’appartenance**.</span><span class="sxs-lookup"><span data-stu-id="526a4-132">Select **Assigned** in **Membership**.</span></span>
     
-  - Cliquez sur **Oui** pour **activer Office fonctionnalités**.
+  - <span data-ttu-id="526a4-133">Cliquez sur **Oui** pour **activer Office fonctionnalités**.</span><span class="sxs-lookup"><span data-stu-id="526a4-133">Click **Yes** for **Enable Office features**.</span></span>
     
-5. Cliquez sur **créer**, puis fermez la lame du **groupe** .
+5. <span data-ttu-id="526a4-134">Cliquez sur **créer**, puis fermez la lame du **groupe** .</span><span class="sxs-lookup"><span data-stu-id="526a4-134">Click **Create**, and then close the **Group** blade.</span></span>
     
-6. Répétez les étapes 3 à 5 pour les noms de groupe suivants :
+6. <span data-ttu-id="526a4-135">Répétez les étapes 3 à 5 pour les noms de groupe suivants :</span><span class="sxs-lookup"><span data-stu-id="526a4-135">Repeat steps 3-5 for the following group names:</span></span>
     
-  - IT staff
+  - <span data-ttu-id="526a4-136">IT staff</span><span class="sxs-lookup"><span data-stu-id="526a4-136">IT staff</span></span>
     
-  - Personnel de recherche
+  - <span data-ttu-id="526a4-137">Personnel de recherche</span><span class="sxs-lookup"><span data-stu-id="526a4-137">Research staff</span></span>
     
-  - Personnel normal
+  - <span data-ttu-id="526a4-138">Personnel normal</span><span class="sxs-lookup"><span data-stu-id="526a4-138">Regular staff</span></span>
     
-  - Équipe marketing
+  - <span data-ttu-id="526a4-139">Équipe marketing</span><span class="sxs-lookup"><span data-stu-id="526a4-139">Marketing staff</span></span>
     
-  - Équipe de vente
+  - <span data-ttu-id="526a4-140">Équipe de vente</span><span class="sxs-lookup"><span data-stu-id="526a4-140">Sales staff</span></span>
     
-7. Conserver l’onglet portail Azure dans ouvert de votre navigateur.
+7. <span data-ttu-id="526a4-141">Conserver l’onglet portail Azure dans ouvert de votre navigateur.</span><span class="sxs-lookup"><span data-stu-id="526a4-141">Keep the Azure portal tab in your browser open.</span></span>
     
-Ensuite, configurez l’octroi de licence automatique afin que des licences soient automatiquement attribuées aux membres de vos groupes pour les abonnements Office 365 et EMS.
+<span data-ttu-id="526a4-142">Ensuite, configurez l’octroi de licence automatique afin que des licences soient automatiquement attribuées aux membres de vos groupes pour les abonnements Office 365 et EMS.</span><span class="sxs-lookup"><span data-stu-id="526a4-142">Next, you configure automatic licensing so that members of your groups are automatically assigned licenses for your Office 365 and EMS subscriptions.</span></span>
   
-1. Dans le portail Azure, cliquez sur **Azure Active Directory > licences > tous les produits**.
+1. <span data-ttu-id="526a4-143">Dans le portail Azure, cliquez sur **Azure Active Directory > licences > tous les produits**.</span><span class="sxs-lookup"><span data-stu-id="526a4-143">In the Azure portal, click **Azure Active Directory > Licenses > All products**.</span></span>
     
-2. Dans la liste, sélectionnez la **mobilité d’entreprise + sécurité E5** et **Office 365 entreprise E5**et puis cliquez sur **attribuer**.
+2. <span data-ttu-id="526a4-144">Dans la liste, sélectionnez la **mobilité d’entreprise + sécurité E5** et **Office 365 entreprise E5**et puis cliquez sur **attribuer**.</span><span class="sxs-lookup"><span data-stu-id="526a4-144">In the list, select **Enterprise Mobility + Security E5** and **Office 365 Enterprise E5**, and then click **Assign**.</span></span>
     
-3. De la lame **attribuer la licence** , cliquez sur **utilisateurs et groupes**.
+3. <span data-ttu-id="526a4-145">De la lame **attribuer la licence** , cliquez sur **utilisateurs et groupes**.</span><span class="sxs-lookup"><span data-stu-id="526a4-145">In the **Assign license** blade, click **Users and groups**.</span></span>
     
-4. Dans la liste des groupes, sélectionnez les éléments suivants :
+4. <span data-ttu-id="526a4-146">Dans la liste des groupes, sélectionnez les éléments suivants :</span><span class="sxs-lookup"><span data-stu-id="526a4-146">In the list of groups, select the following:</span></span>
     
-  - C-Suite
+  - <span data-ttu-id="526a4-147">C-Suite</span><span class="sxs-lookup"><span data-stu-id="526a4-147">C-Suite</span></span>
     
-  - IT staff
+  - <span data-ttu-id="526a4-148">IT staff</span><span class="sxs-lookup"><span data-stu-id="526a4-148">IT staff</span></span>
     
-  - Personnel de recherche
+  - <span data-ttu-id="526a4-149">Personnel de recherche</span><span class="sxs-lookup"><span data-stu-id="526a4-149">Research staff</span></span>
     
-  - Personnel normal
+  - <span data-ttu-id="526a4-150">Personnel normal</span><span class="sxs-lookup"><span data-stu-id="526a4-150">Regular staff</span></span>
     
-  - Équipe marketing
+  - <span data-ttu-id="526a4-151">Équipe marketing</span><span class="sxs-lookup"><span data-stu-id="526a4-151">Marketing staff</span></span>
     
-  - Équipe de vente
+  - <span data-ttu-id="526a4-152">Équipe de vente</span><span class="sxs-lookup"><span data-stu-id="526a4-152">Sales staff</span></span>
     
-5. Cliquez sur **Sélectionner**, puis cliquez sur **attribuer**.
+5. <span data-ttu-id="526a4-153">Cliquez sur **Sélectionner**, puis cliquez sur **attribuer**.</span><span class="sxs-lookup"><span data-stu-id="526a4-153">Click **Select**, and then click **Assign**.</span></span>
     
-6. Fermez l’onglet du portail Azure dans votre navigateur.
+6. <span data-ttu-id="526a4-154">Fermez l’onglet du portail Azure dans votre navigateur.</span><span class="sxs-lookup"><span data-stu-id="526a4-154">Close the Azure portal tab in your browser.</span></span>
     
-Ensuite, vous [connecter avec le module PowerShell de Azure Active Directory V2](https://go.microsoft.com/fwlink/?linkid=842218).
+<span data-ttu-id="526a4-155">Ensuite, vous [connecter avec le module PowerShell de Azure Active Directory V2](https://go.microsoft.com/fwlink/?linkid=842218).</span><span class="sxs-lookup"><span data-stu-id="526a4-155">Next, you [Connect with the Azure Active Directory V2 PowerShell module](https://go.microsoft.com/fwlink/?linkid=842218).</span></span>
   
-Renseignez le nom de votre organisation, votre emplacement et un mot de passe commun et puis exécuter ces commandes à partir de l’invite de commande PowerShell ou l’environnement de Script intégré (ISE) pour créer des comptes d’utilisateurs et de les ajouter à leurs groupes :
+<span data-ttu-id="526a4-156">Renseignez le nom de votre organisation, votre emplacement et un mot de passe commun et puis exécuter ces commandes à partir de l’invite de commande PowerShell ou l’environnement de Script intégré (ISE) pour créer des comptes d’utilisateurs et de les ajouter à leurs groupes :</span><span class="sxs-lookup"><span data-stu-id="526a4-156">Fill in your organization name, your location, and a common password, and then run these commands from the PowerShell command prompt or Integrated Script Environment (ISE) to create user accounts and add them to their groups:</span></span>
   
 ```
 $orgName="<organization name, such as contoso for the contoso.onmicrosoft.com trial subscription domain name>"
@@ -176,429 +176,429 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 ```
 
 > [!NOTE]
-> L’utilisation d’un mot de passe commun permet d’automatiser et de faciliter la configuration d’un environnement de développement/test. Il n’est pas recommandé de l’utiliser dans un environnement de production. 
+> <span data-ttu-id="526a4-p103">L’utilisation d’un mot de passe commun permet d’automatiser et de faciliter la configuration d’un environnement de développement/test. Il n’est pas recommandé de l’utiliser dans un environnement de production.</span><span class="sxs-lookup"><span data-stu-id="526a4-p103">The use of a common password here is for automation and ease of configuration for a dev/test environment. This is not recommended for production subscriptions.</span></span> 
   
-Utilisez ces étapes pour vérifier que la gestion des licences basée sur un groupe fonctionne correctement.
+<span data-ttu-id="526a4-159">Utilisez ces étapes pour vérifier que la gestion des licences basée sur un groupe fonctionne correctement.</span><span class="sxs-lookup"><span data-stu-id="526a4-159">Use these steps to verify that group-based licensing is working correctly.</span></span>
   
-1. À partir de l’onglet **Accueil de Microsoft Office** de votre navigateur, cliquez sur la mosaïque de **l’Admin** .
+1. <span data-ttu-id="526a4-160">À partir de l’onglet **Accueil de Microsoft Office** de votre navigateur, cliquez sur la mosaïque de **l’Admin** .</span><span class="sxs-lookup"><span data-stu-id="526a4-160">From the **Microsoft Office Home** tab of your browser, click the **Admin** tile.</span></span>
     
-2. À partir de l’onglet nouveau **Centre d’administration d’Office** de votre navigateur, cliquez sur **utilisateurs**.
+2. <span data-ttu-id="526a4-161">À partir de l’onglet nouveau **Centre d’administration d’Office** de votre navigateur, cliquez sur **utilisateurs**.</span><span class="sxs-lookup"><span data-stu-id="526a4-161">From the new **Office Admin center** tab of your browser, click **Users**.</span></span>
     
-3. Dans la liste des utilisateurs, cliquez sur **PDG**.
+3. <span data-ttu-id="526a4-162">Dans la liste des utilisateurs, cliquez sur **PDG**.</span><span class="sxs-lookup"><span data-stu-id="526a4-162">In the list of users, click **CEO**.</span></span>
     
-4. Dans le volet qui répertorie les propriétés du compte d’utilisateur **PDG** , vérifiez qu’il a été attribué les licences de **mobilité d’entreprise + sécurité E5** et **Office 365 entreprise E5** (dans les **licences de produit**).
+4. <span data-ttu-id="526a4-163">Dans le volet qui répertorie les propriétés du compte d’utilisateur **PDG** , vérifiez qu’il a été attribué les licences de **mobilité d’entreprise + sécurité E5** et **Office 365 entreprise E5** (dans les **licences de produit**).</span><span class="sxs-lookup"><span data-stu-id="526a4-163">In the pane that lists the properties of the **CEO** user account, verify that it has been assigned the **Enterprise Mobility + Security E5** and **Office 365 Enterprise E5** licenses (in **Product licenses**).</span></span>
     
-## <a name="phase-3-create-office-365-labels"></a>Phase 3 : Créer des étiquettes d’Office 365
+## <a name="phase-3-create-office-365-labels"></a><span data-ttu-id="526a4-164">Phase 3 : Créer des étiquettes d’Office 365</span><span class="sxs-lookup"><span data-stu-id="526a4-164">Phase 3: Create Office 365 labels</span></span>
 
-Dans cette phase, vous allez créer les étiquettes correspondant aux différents niveaux de sécurité pour les dossiers de documents du site d’équipe SharePoint Online.
+<span data-ttu-id="526a4-165">Dans cette phase, vous allez créer les étiquettes correspondant aux différents niveaux de sécurité pour les dossiers de documents du site d’équipe SharePoint Online.</span><span class="sxs-lookup"><span data-stu-id="526a4-165">In this phase, you create the labels for the different levels of security for SharePoint Online team site documents folders.</span></span>
   
-1. Si nécessaire, utilisez une instance privée de votre navigateur Internet et vous connecter au portail Office 365 avec le compte d’administrateur global de votre abonnement d’évaluation d’Office 365 E5. Pour de l’aide, consultez la rubrique [pour vous connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. <span data-ttu-id="526a4-p104">Si nécessaire, utilisez une instance privée de votre navigateur Internet et vous connecter au portail Office 365 avec le compte d’administrateur global de votre abonnement d’évaluation d’Office 365 E5. Pour de l’aide, consultez la rubrique [pour vous connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).</span><span class="sxs-lookup"><span data-stu-id="526a4-p104">If needed, use a private instance of your Internet browser and sign in to the Office 365 portal with the global administrator account of your Office 365 E5 trial subscription. For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).</span></span>
     
-2. À partir de l’onglet **Accueil de Microsoft Office** , cliquez sur la mosaïque de **l’Admin** .
+2. <span data-ttu-id="526a4-168">À partir de l’onglet **Accueil de Microsoft Office** , cliquez sur la mosaïque de **l’Admin** .</span><span class="sxs-lookup"><span data-stu-id="526a4-168">From the **Microsoft Office Home** tab, click the **Admin** tile.</span></span>
     
-3. Dans l’onglet nouveau **Centre d’administration d’Office** de votre navigateur, cliquez sur **Centre d’administration > sécurité &amp; la conformité**.
+3. <span data-ttu-id="526a4-169">Dans l’onglet nouveau **Centre d’administration d’Office** de votre navigateur, cliquez sur **Centre d’administration > sécurité &amp; la conformité**.</span><span class="sxs-lookup"><span data-stu-id="526a4-169">From the new **Office Admin center** tab of your browser, click **Admin centers > Security &amp; Compliance**.</span></span>
     
-4. À partir du nouveau **maison - sécurité &amp; la conformité** onglet de votre navigateur, cliquez sur **les Classifications > étiquettes**.
+4. <span data-ttu-id="526a4-170">À partir du nouveau **maison - sécurité &amp; la conformité** onglet de votre navigateur, cliquez sur **les Classifications > étiquettes**.</span><span class="sxs-lookup"><span data-stu-id="526a4-170">From the new **Home - Security &amp; Compliance** tab of your browser, click **Classifications > Labels**.</span></span>
     
-5. À partir de le **Accueil > étiquettes** volet, cliquez sur **créer une étiquette**.
+5. <span data-ttu-id="526a4-171">À partir de le **Accueil > étiquettes** volet, cliquez sur **créer une étiquette**.</span><span class="sxs-lookup"><span data-stu-id="526a4-171">From the **Home > Labels** pane, click **Create a label**.</span></span>
     
-6. Dans le volet **nom de votre étiquette** , tapez **Public interne**et puis cliquez sur **suivant**.
+6. <span data-ttu-id="526a4-172">Dans le volet **nom de votre étiquette** , tapez **Public interne**et puis cliquez sur **suivant**.</span><span class="sxs-lookup"><span data-stu-id="526a4-172">On the **Name your label** pane, type **Internal Public**, and then click **Next**.</span></span>
     
-7. Dans le volet **paramètres d’étiquette** , cliquez sur **suivant**.
+7. <span data-ttu-id="526a4-173">Dans le volet **paramètres d’étiquette** , cliquez sur **suivant**.</span><span class="sxs-lookup"><span data-stu-id="526a4-173">On the **Label settings** pane, click **Next**.</span></span>
     
-8. Dans le volet de **passer en revue vos paramètres** , cliquez sur **créer cette étiquette**, puis cliquez sur **Fermer**.
+8. <span data-ttu-id="526a4-174">Dans le volet de **passer en revue vos paramètres** , cliquez sur **créer cette étiquette**, puis cliquez sur **Fermer**.</span><span class="sxs-lookup"><span data-stu-id="526a4-174">On the **Review your settings** pane, click **Create this label**, and then click **Close**.</span></span>
     
-9. Répétez les étapes 5 à 8 pour les autres étiquettes suivantes :
+9. <span data-ttu-id="526a4-175">Répétez les étapes 5 à 8 pour les autres étiquettes suivantes :</span><span class="sxs-lookup"><span data-stu-id="526a4-175">Repeat steps 5-8 for these additional labels:</span></span>
     
-  - Privé
+  - <span data-ttu-id="526a4-176">Privé</span><span class="sxs-lookup"><span data-stu-id="526a4-176">Private</span></span>
     
-  - Sensible
+  - <span data-ttu-id="526a4-177">Sensible</span><span class="sxs-lookup"><span data-stu-id="526a4-177">Sensitive</span></span>
     
-  - Hautement confidentiel
+  - <span data-ttu-id="526a4-178">Hautement confidentiel</span><span class="sxs-lookup"><span data-stu-id="526a4-178">Highly Confidential</span></span>
     
-10. À partir de le **Accueil > étiquettes** volet, cliquez sur **publier les étiquettes**.
+10. <span data-ttu-id="526a4-179">À partir de le **Accueil > étiquettes** volet, cliquez sur **publier les étiquettes**.</span><span class="sxs-lookup"><span data-stu-id="526a4-179">From the **Home > Labels** pane, click **Publish labels**.</span></span>
     
-11. Dans le volet **Choisir les étiquettes à publier** , cliquez sur **Choisir les étiquettes à publier**.
+11. <span data-ttu-id="526a4-180">Dans le volet **Choisir les étiquettes à publier** , cliquez sur **Choisir les étiquettes à publier**.</span><span class="sxs-lookup"><span data-stu-id="526a4-180">On the **Choose labels to publish** pane, click **Choose labels to publish**.</span></span>
     
-12. Dans le volet **Choisir étiquettes** , cliquez sur **Ajouter** et sélectionner toutes les étiquettes de quatre.
+12. <span data-ttu-id="526a4-181">Dans le volet **Choisir étiquettes** , cliquez sur **Ajouter** et sélectionner toutes les étiquettes de quatre.</span><span class="sxs-lookup"><span data-stu-id="526a4-181">On the **Choose labels** pane, click **Add** and select all four labels.</span></span>
     
-13. Cliquez sur **terminé**.
+13. <span data-ttu-id="526a4-182">Cliquez sur **terminé**.</span><span class="sxs-lookup"><span data-stu-id="526a4-182">Click **Done**.</span></span>
     
-14. Dans le volet **Choisir les étiquettes à publier** , cliquez sur **suivant**.
+14. <span data-ttu-id="526a4-183">Dans le volet **Choisir les étiquettes à publier** , cliquez sur **suivant**.</span><span class="sxs-lookup"><span data-stu-id="526a4-183">On the **Choose labels to publish** pane, click **Next**.</span></span>
     
-15. Dans le volet **Choisir des emplacements** , cliquez sur **suivant**.
+15. <span data-ttu-id="526a4-184">Dans le volet **Choisir des emplacements** , cliquez sur **suivant**.</span><span class="sxs-lookup"><span data-stu-id="526a4-184">On the **Choose locations** pane, click **Next**.</span></span>
     
-16. Dans le volet **nom de votre stratégie** , tapez **exemple d’entreprise** dans la zone **nom**, puis cliquez sur **suivant**.
+16. <span data-ttu-id="526a4-185">Dans le volet **nom de votre stratégie** , tapez **exemple d’entreprise** dans la zone **nom**, puis cliquez sur **suivant**.</span><span class="sxs-lookup"><span data-stu-id="526a4-185">On the **Name your policy** pane, type **Example organization** in **Name**, and then click **Next**.</span></span>
     
-17. Dans le volet de **passer en revue vos paramètres** , cliquez sur **publier les étiquettes**, puis cliquez sur **Fermer**.
+17. <span data-ttu-id="526a4-186">Dans le volet de **passer en revue vos paramètres** , cliquez sur **publier les étiquettes**, puis cliquez sur **Fermer**.</span><span class="sxs-lookup"><span data-stu-id="526a4-186">On the **Review your settings** pane, click **Publish labels**, and then click **Close**.</span></span>
     
-## <a name="phase-4-create-your-sharepoint-online-team-sites"></a>Phase 4 : Créez vos sites d’équipe SharePoint Online
+## <a name="phase-4-create-your-sharepoint-online-team-sites"></a><span data-ttu-id="526a4-187">Phase 4 : Créez vos sites d’équipe SharePoint Online</span><span class="sxs-lookup"><span data-stu-id="526a4-187">Phase 4: Create your SharePoint Online team sites</span></span>
 
-Dans cette phase, vous créez et configurez les quatre types de sites d’équipe SharePoint Online pour votre exemple d’entreprise.
+<span data-ttu-id="526a4-188">Dans cette phase, vous créez et configurez les quatre types de sites d’équipe SharePoint Online pour votre exemple d’entreprise.</span><span class="sxs-lookup"><span data-stu-id="526a4-188">In this phase, you create and configure the four types of SharePoint Online team sites for your example organization.</span></span>
   
-### <a name="organization-wide-team-site"></a>Site d’équipe à l’échelle de l’organisation
+### <a name="organization-wide-team-site"></a><span data-ttu-id="526a4-189">Site d’équipe à l’échelle de l’organisation</span><span class="sxs-lookup"><span data-stu-id="526a4-189">Organization wide team site</span></span>
 
-Pour créer un site d’équipe SharePoint Online public de référence, procédez comme suit :
+<span data-ttu-id="526a4-190">Pour créer un site d’équipe SharePoint Online public de référence, procédez comme suit :</span><span class="sxs-lookup"><span data-stu-id="526a4-190">To create a baseline public SharePoint Online team site, do the following:</span></span>
   
-1. Si nécessaire, utilisez un navigateur sur votre ordinateur local et vous connecter au portail Office 365 à l’aide de votre compte d’administrateur global. Pour de l’aide, consultez la rubrique [pour vous connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. <span data-ttu-id="526a4-p105">Si nécessaire, utilisez un navigateur sur votre ordinateur local et vous connecter au portail Office 365 à l’aide de votre compte d’administrateur global. Pour de l’aide, consultez la rubrique [pour vous connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).</span><span class="sxs-lookup"><span data-stu-id="526a4-p105">If needed, use a browser on your local computer and sign in to the Office 365 portal using your global administrator account. For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).</span></span>
     
-2. Dans la liste des mosaïques, cliquez sur **SharePoint**.
+2. <span data-ttu-id="526a4-193">Dans la liste des mosaïques, cliquez sur **SharePoint**.</span><span class="sxs-lookup"><span data-stu-id="526a4-193">In the list of tiles, click **SharePoint**.</span></span>
     
-3. Dans l’onglet nouveau **SharePoint** dans votre navigateur, cliquez sur **+ créer le site**.
+3. <span data-ttu-id="526a4-194">Dans l’onglet nouveau **SharePoint** dans votre navigateur, cliquez sur **+ créer le site**.</span><span class="sxs-lookup"><span data-stu-id="526a4-194">On the new **SharePoint** tab in your browser, click **+ Create site**.</span></span>
     
-4. Dans la page **créer un site** , cliquez sur **site d’équipe**.
+4. <span data-ttu-id="526a4-195">Dans la page **créer un site** , cliquez sur **site d’équipe**.</span><span class="sxs-lookup"><span data-stu-id="526a4-195">On the **Create a site** page, click **Team site**.</span></span>
     
-5. Dans la zone **nom du Site**, tapez **l’échelle de l’organisation**. 
+5. <span data-ttu-id="526a4-196">Dans la zone **nom du Site**, tapez **l’échelle de l’organisation**.</span><span class="sxs-lookup"><span data-stu-id="526a4-196">In **Site name**, type **Organization wide**.</span></span> 
     
-6. Dans **description de site d’équipe**, tapez le **site SharePoint pour toute l’organisation**.
+6. <span data-ttu-id="526a4-197">Dans **description de site d’équipe**, tapez le **site SharePoint pour toute l’organisation**.</span><span class="sxs-lookup"><span data-stu-id="526a4-197">In **Team site description**, type **SharePoint site for the entire organization**.</span></span>
     
-7. Dans les **paramètres de confidentialité**, sélectionnez **Public - tout le monde dans l’organisation peut accéder à ce site**, puis cliquez sur **suivant**.
+7. <span data-ttu-id="526a4-198">Dans les **paramètres de confidentialité**, sélectionnez **Public - tout le monde dans l’organisation peut accéder à ce site**, puis cliquez sur **suivant**.</span><span class="sxs-lookup"><span data-stu-id="526a4-198">In **Privacy settings**, select **Public - anyone in the organization can access this site**, and then click **Next**.</span></span>
     
-8. Sur le **qui voulez-vous ajouter ?** volet, cliquez sur **Terminer**.
+8. <span data-ttu-id="526a4-199">Sur le **qui voulez-vous ajouter ?** volet, cliquez sur **Terminer**.</span><span class="sxs-lookup"><span data-stu-id="526a4-199">On the **Who do you want to add?** pane, click **Finish**.</span></span>
     
-Ensuite, configurez le dossier documents du site d’équipe grande organisation pour l’étiquette publics internes.
+<span data-ttu-id="526a4-200">Ensuite, configurez le dossier documents du site d’équipe grande organisation pour l’étiquette publics internes.</span><span class="sxs-lookup"><span data-stu-id="526a4-200">Next, configure the documents folder of the Organization wide team site for the Internal Public label.</span></span>
   
-1. Dans l’onglet de **L’échelle de l’entreprise - accueil** de votre navigateur, cliquez sur **Documents**.
+1. <span data-ttu-id="526a4-201">Dans l’onglet de **L’échelle de l’entreprise - accueil** de votre navigateur, cliquez sur **Documents**.</span><span class="sxs-lookup"><span data-stu-id="526a4-201">In the **Organization wide-Home** tab of your browser, click **Documents**.</span></span>
     
-2. Cliquez sur l’icône de paramètres, puis cliquez sur **paramètres de la bibliothèque**.
+2. <span data-ttu-id="526a4-202">Cliquez sur l’icône de paramètres, puis cliquez sur **paramètres de la bibliothèque**.</span><span class="sxs-lookup"><span data-stu-id="526a4-202">Click the settings icon, and then click **Library settings**.</span></span>
     
-3. Sous **autorisations et gestion**, cliquez sur **étiquette d’appliquer aux éléments de cette bibliothèque**.
+3. <span data-ttu-id="526a4-203">Sous **autorisations et gestion**, cliquez sur **étiquette d’appliquer aux éléments de cette bibliothèque**.</span><span class="sxs-lookup"><span data-stu-id="526a4-203">Under **Permissions and Management**, click **Apply label to items in this library**.</span></span>
     
-4. Dans les **Paramètres à appliquer une étiquette**, sélectionnez **Public interne**et puis cliquez sur **Enregistrer**.
+4. <span data-ttu-id="526a4-204">Dans les **Paramètres à appliquer une étiquette**, sélectionnez **Public interne**et puis cliquez sur **Enregistrer**.</span><span class="sxs-lookup"><span data-stu-id="526a4-204">In **Settings-Apply Label**, select **Internal Public**, and then click **Save**.</span></span>
     
-Voici la configuration finale.
+<span data-ttu-id="526a4-205">Voici la configuration finale.</span><span class="sxs-lookup"><span data-stu-id="526a4-205">Here is your resulting configuration.</span></span>
   
 ![Protection de base pour le site d’équipe SharePoint Online consultable par les membres de l’organisation.](images/25c86847-a38d-49ad-bb5f-c7c04206b6dc.png)
   
-### <a name="project-1-team-site"></a>Site d’équipe 1 du projet
+### <a name="project-1-team-site"></a><span data-ttu-id="526a4-207">Site d’équipe 1 du projet</span><span class="sxs-lookup"><span data-stu-id="526a4-207">Project 1 team site</span></span>
 
-Pour créer un site d’équipe SharePoint Online privé de référence pour un projet au sein de l’organisation, procédez comme suit :
+<span data-ttu-id="526a4-208">Pour créer un site d’équipe SharePoint Online privé de référence pour un projet au sein de l’organisation, procédez comme suit :</span><span class="sxs-lookup"><span data-stu-id="526a4-208">To create a baseline private SharePoint Online team site for a project within the organization, do the following:</span></span>
   
-1. Si nécessaire, utilisez un navigateur sur votre ordinateur local et vous connecter au portail Office 365 à l’aide de votre compte d’administrateur global. Pour de l’aide, consultez la rubrique [pour vous connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. <span data-ttu-id="526a4-p106">Si nécessaire, utilisez un navigateur sur votre ordinateur local et vous connecter au portail Office 365 à l’aide de votre compte d’administrateur global. Pour de l’aide, consultez la rubrique [pour vous connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).</span><span class="sxs-lookup"><span data-stu-id="526a4-p106">If needed, use a browser on your local computer and sign in to the Office 365 portal using your global administrator account. For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).</span></span>
     
-2. Dans la liste des mosaïques, cliquez sur **SharePoint**.
+2. <span data-ttu-id="526a4-211">Dans la liste des mosaïques, cliquez sur **SharePoint**.</span><span class="sxs-lookup"><span data-stu-id="526a4-211">In the list of tiles, click **SharePoint**.</span></span>
     
-3. Dans l’onglet nouveau **SharePoint** dans votre navigateur, cliquez sur **+ créer le site**.
+3. <span data-ttu-id="526a4-212">Dans l’onglet nouveau **SharePoint** dans votre navigateur, cliquez sur **+ créer le site**.</span><span class="sxs-lookup"><span data-stu-id="526a4-212">On the new **SharePoint** tab in your browser, click **+ Create site**.</span></span>
     
-4. Dans la page **créer un site** , cliquez sur **site d’équipe**.
+4. <span data-ttu-id="526a4-213">Dans la page **créer un site** , cliquez sur **site d’équipe**.</span><span class="sxs-lookup"><span data-stu-id="526a4-213">On the **Create a site** page, click **Team site**.</span></span>
     
-5. Dans la zone **nom du Site**, tapez **1 du projet**. 
+5. <span data-ttu-id="526a4-214">Dans la zone **nom du Site**, tapez **1 du projet**.</span><span class="sxs-lookup"><span data-stu-id="526a4-214">In **Site name**, type **Project 1**.</span></span> 
     
-6. Dans la **description de site d’équipe,** tapez le **site SharePoint pour le projet 1**.
+6. <span data-ttu-id="526a4-215">Dans la **description de site d’équipe,** tapez le **site SharePoint pour le projet 1**.</span><span class="sxs-lookup"><span data-stu-id="526a4-215">In **Team site description,** type **SharePoint site for Project 1**.</span></span>
     
-7. Dans **les paramètres de confidentialité**, sélectionnez **privé - uniquement les membres peuvent accéder à ce site**, puis cliquez sur **suivant**.
+7. <span data-ttu-id="526a4-216">Dans **les paramètres de confidentialité**, sélectionnez **privé - uniquement les membres peuvent accéder à ce site**, puis cliquez sur **suivant**.</span><span class="sxs-lookup"><span data-stu-id="526a4-216">In **Privacy settings**, select **Private - only members can access this site**, and then click **Next**.</span></span>
     
-8. Sur le **qui voulez-vous ajouter ?** volet, cliquez sur **Terminer**.
+8. <span data-ttu-id="526a4-217">Sur le **qui voulez-vous ajouter ?** volet, cliquez sur **Terminer**.</span><span class="sxs-lookup"><span data-stu-id="526a4-217">On the **Who do you want to add?** pane, click **Finish**.</span></span>
     
-Ensuite, configurez le dossier de documents du site d’équipe Projet 1 pour l’étiquette Privé.
+<span data-ttu-id="526a4-218">Ensuite, configurez le dossier de documents du site d’équipe Projet 1 pour l’étiquette Privé.</span><span class="sxs-lookup"><span data-stu-id="526a4-218">Next, configure the documents folder of the Project 1 team site for the Private label.</span></span>
   
-1. Dans l’onglet **projet 1-accueil** de votre navigateur, cliquez sur **Documents**.
+1. <span data-ttu-id="526a4-219">Dans l’onglet **projet 1-accueil** de votre navigateur, cliquez sur **Documents**.</span><span class="sxs-lookup"><span data-stu-id="526a4-219">In the **Project 1-Home** tab of your browser, click **Documents**.</span></span>
     
-2. Cliquez sur l’icône de paramètres, puis cliquez sur **paramètres de la bibliothèque**.
+2. <span data-ttu-id="526a4-220">Cliquez sur l’icône de paramètres, puis cliquez sur **paramètres de la bibliothèque**.</span><span class="sxs-lookup"><span data-stu-id="526a4-220">Click the settings icon, and then click **Library settings**.</span></span>
     
-3. Sous **autorisations et gestion**, cliquez sur **étiquette d’appliquer aux éléments de cette bibliothèque**.
+3. <span data-ttu-id="526a4-221">Sous **autorisations et gestion**, cliquez sur **étiquette d’appliquer aux éléments de cette bibliothèque**.</span><span class="sxs-lookup"><span data-stu-id="526a4-221">Under **Permissions and Management**, click **Apply label to items in this library**.</span></span>
     
-4. Dans **Les paramètres à appliquer une étiquette**, sélectionnez **privé**, puis cliquez sur **Enregistrer**.
+4. <span data-ttu-id="526a4-222">Dans **Les paramètres à appliquer une étiquette**, sélectionnez **privé**, puis cliquez sur **Enregistrer**.</span><span class="sxs-lookup"><span data-stu-id="526a4-222">In **Settings-Apply Label**, select **Private**, and then click **Save**.</span></span>
     
-Voici la configuration finale.
+<span data-ttu-id="526a4-223">Voici la configuration finale.</span><span class="sxs-lookup"><span data-stu-id="526a4-223">Here is your resulting configuration.</span></span>
   
 ![Protection de base pour le site d’équipe SharePoint Online privé concernant Project1.](images/ecd96376-b5dc-4042-9cbd-b3765507ace7.png)
   
-### <a name="marketing-campaigns-team-site"></a>Site d’équipe des campagnes marketing
+### <a name="marketing-campaigns-team-site"></a><span data-ttu-id="526a4-225">Site d’équipe des campagnes marketing</span><span class="sxs-lookup"><span data-stu-id="526a4-225">Marketing campaigns team site</span></span>
 
-Pour créer un site d’équipe SharePoint Online isolé pour les données sensibles des ressources de campagne marketing, procédez comme suit :
+<span data-ttu-id="526a4-226">Pour créer un site d’équipe SharePoint Online isolé pour les données sensibles des ressources de campagne marketing, procédez comme suit :</span><span class="sxs-lookup"><span data-stu-id="526a4-226">To create a sensitive-level isolated SharePoint Online team site for marketing campaign resources, do the following:</span></span>
   
-1. À l’aide d’un navigateur sur votre ordinateur local, connectez-vous au portail Office 365 à l’aide de votre compte d’administrateur global. Pour de l’aide, consultez la rubrique [pour vous connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. <span data-ttu-id="526a4-p107">À l’aide d’un navigateur sur votre ordinateur local, connectez-vous au portail Office 365 à l’aide de votre compte d’administrateur global. Pour de l’aide, consultez la rubrique [pour vous connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).</span><span class="sxs-lookup"><span data-stu-id="526a4-p107">Using a browser on your local computer, sign in to the Office 365 portal using your global administrator account. For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).</span></span>
     
-2. Dans la liste des mosaïques, cliquez sur **SharePoint**.
+2. <span data-ttu-id="526a4-229">Dans la liste des mosaïques, cliquez sur **SharePoint**.</span><span class="sxs-lookup"><span data-stu-id="526a4-229">In the list of tiles, click **SharePoint**.</span></span>
     
-3. Dans l’onglet nouveau **SharePoint** dans votre navigateur, cliquez sur **+ créer le site**.
+3. <span data-ttu-id="526a4-230">Dans l’onglet nouveau **SharePoint** dans votre navigateur, cliquez sur **+ créer le site**.</span><span class="sxs-lookup"><span data-stu-id="526a4-230">On the new **SharePoint** tab in your browser, click **+ Create site**.</span></span>
     
-4. Dans la page **créer un site** , cliquez sur **site d’équipe**.
+4. <span data-ttu-id="526a4-231">Dans la page **créer un site** , cliquez sur **site d’équipe**.</span><span class="sxs-lookup"><span data-stu-id="526a4-231">On the **Create a site** page, click **Team site**.</span></span>
     
-5. Dans la zone **nom du site d’équipe**, tapez **les campagnes Marketing**.
+5. <span data-ttu-id="526a4-232">Dans la zone **nom du site d’équipe**, tapez **les campagnes Marketing**.</span><span class="sxs-lookup"><span data-stu-id="526a4-232">In **Team site name**, type **Marketing campaigns**.</span></span>
     
-6. Dans la **description de site d’équipe**, tapez le **site SharePoint pour les ressources de campagne marketing (la casse)**.
+6. <span data-ttu-id="526a4-233">Dans la **description de site d’équipe**, tapez le **site SharePoint pour les ressources de campagne marketing (la casse)**.</span><span class="sxs-lookup"><span data-stu-id="526a4-233">In **Team site description**, type **SharePoint site for marketing campaign resources (sensitive)**.</span></span>
     
-7.  Dans **les paramètres de confidentialité**, sélectionnez **privé - uniquement les membres peuvent accéder à ce site**, puis cliquez sur **suivant**.
+7.  <span data-ttu-id="526a4-234">Dans **les paramètres de confidentialité**, sélectionnez **privé - uniquement les membres peuvent accéder à ce site**, puis cliquez sur **suivant**.</span><span class="sxs-lookup"><span data-stu-id="526a4-234">In **Privacy settings**, select **Private - only members can access this site**, and then click **Next**.</span></span>
     
-8. Sur le **qui voulez-vous ajouter ?** volet, cliquez sur **Terminer**.
+8. <span data-ttu-id="526a4-235">Sur le **qui voulez-vous ajouter ?** volet, cliquez sur **Terminer**.</span><span class="sxs-lookup"><span data-stu-id="526a4-235">On the **Who do you want to add?** pane, click **Finish**.</span></span>
     
-9. Dans l’onglet **campagnes de Marketing** de nouveau dans votre navigateur, dans la barre d’outils, cliquez sur l’icône de paramètres, puis cliquez sur **autorisations du Site**.
+9. <span data-ttu-id="526a4-236">Dans l’onglet **campagnes de Marketing** de nouveau dans votre navigateur, dans la barre d’outils, cliquez sur l’icône de paramètres, puis cliquez sur **autorisations du Site**.</span><span class="sxs-lookup"><span data-stu-id="526a4-236">On the new **Marketing campaigns** tab in your browser, in the tool bar, click the settings icon, and then click **Site permissions**.</span></span>
     
-10. Dans le volet **autorisations de Site** , cliquez sur **autorisations avancées**.
+10. <span data-ttu-id="526a4-237">Dans le volet **autorisations de Site** , cliquez sur **autorisations avancées**.</span><span class="sxs-lookup"><span data-stu-id="526a4-237">In the **Site permissions** pane, click **Advanced permissions settings**.</span></span>
     
-11. Dans l’onglet **autorisations** de nouveau dans votre navigateur, cliquez sur **Paramètres de demande d’accès**.
+11. <span data-ttu-id="526a4-238">Dans l’onglet **autorisations** de nouveau dans votre navigateur, cliquez sur **Paramètres de demande d’accès**.</span><span class="sxs-lookup"><span data-stu-id="526a4-238">In the new **Permissions** tab in your browser, click **Access Request Settings**.</span></span>
     
-12. Dans la boîte de dialogue **Paramètres de demande d’accès** , désactivez les cases à cocher **Autoriser les membres à partager le site et les fichiers et dossiers individuels** et **Autoriser les membres à inviter d’autres personnes au groupe de membres du site** , tapez **ITAdmin1 @**\<votre nom de l’organisation >**. onmicrosoft.com** dans la zone **Envoyer toutes les demandes d’accès**, puis cliquez sur **OK**.
+12. <span data-ttu-id="526a4-239">Dans la boîte de dialogue **Paramètres de demande d’accès** , désactivez les cases à cocher **Autoriser les membres à partager le site et les fichiers et dossiers individuels** et **Autoriser les membres à inviter d’autres personnes au groupe de membres du site** , tapez **ITAdmin1 @**\<votre nom de l’organisation >**. onmicrosoft.com** dans la zone **Envoyer toutes les demandes d’accès**, puis cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="526a4-239">In the **Access Request Settings** dialog box, clear the **Allow members to share the site and individual files and folders** and **Allow members to invite others to the site members group** check boxes, type **ITAdmin1@**\<your organization name>**.onmicrosoft.com** in **Send all requests for access**, and then click **OK**.</span></span>
     
-13. Dans la liste, cliquez sur **campagnes de Marketing les membres** .
+13. <span data-ttu-id="526a4-240">Dans la liste, cliquez sur **campagnes de Marketing les membres** .</span><span class="sxs-lookup"><span data-stu-id="526a4-240">Click **Marketing campaigns Members** in the list.</span></span>
     
-14. Dans la page **personnes et groupes** , cliquez sur **Nouveau**.
+14. <span data-ttu-id="526a4-241">Dans la page **personnes et groupes** , cliquez sur **Nouveau**.</span><span class="sxs-lookup"><span data-stu-id="526a4-241">On the **People and Groups** page, click **New**.</span></span>
     
-15. Dans la boîte de dialogue de **partage** , tapez **équipe Marketing**, sélectionnez-le, puis cliquez sur **partage**.
+15. <span data-ttu-id="526a4-242">Dans la boîte de dialogue de **partage** , tapez **équipe Marketing**, sélectionnez-le, puis cliquez sur **partage**.</span><span class="sxs-lookup"><span data-stu-id="526a4-242">In the **Share** dialog box, type **Marketing staff**, select it, and then click **Share**.</span></span>
     
-16. Répétez les étapes 14 et 15 pour le compte d’utilisateur **Researcher1** .
+16. <span data-ttu-id="526a4-243">Répétez les étapes 14 et 15 pour le compte d’utilisateur **Researcher1** .</span><span class="sxs-lookup"><span data-stu-id="526a4-243">Repeat steps 14 and 15 for the **Researcher1** user account.</span></span>
     
-17. Cliquez sur le bouton de retour de votre navigateur.
+17. <span data-ttu-id="526a4-244">Cliquez sur le bouton de retour de votre navigateur.</span><span class="sxs-lookup"><span data-stu-id="526a4-244">Click the back button on your browser.</span></span>
     
-18. Dans la liste, cliquez sur **campagnes de Marketing propriétaires** .
+18. <span data-ttu-id="526a4-245">Dans la liste, cliquez sur **campagnes de Marketing propriétaires** .</span><span class="sxs-lookup"><span data-stu-id="526a4-245">Click **Marketing campaigns Owners** in the list.</span></span>
     
-19. Dans la page **personnes et groupes** , cliquez sur **Nouveau**.
+19. <span data-ttu-id="526a4-246">Dans la page **personnes et groupes** , cliquez sur **Nouveau**.</span><span class="sxs-lookup"><span data-stu-id="526a4-246">On the **People and Groups** page, click **New**.</span></span>
     
-20. Dans la boîte de dialogue de **partage** , tapez le **personnel informatique**, sélectionnez-le, puis cliquez sur **partage**.
+20. <span data-ttu-id="526a4-247">Dans la boîte de dialogue de **partage** , tapez le **personnel informatique**, sélectionnez-le, puis cliquez sur **partage**.</span><span class="sxs-lookup"><span data-stu-id="526a4-247">In the **Share** dialog box, type **IT staff**, select it, and then click **Share**.</span></span>
     
-21. Cliquez sur le bouton de retour de votre navigateur.
+21. <span data-ttu-id="526a4-248">Cliquez sur le bouton de retour de votre navigateur.</span><span class="sxs-lookup"><span data-stu-id="526a4-248">Click the back button on your browser.</span></span>
     
-22. Fermer l’onglet **personnes et groupes** dans votre navigateur et cliquez sur l’onglet **accueil-campagnes de Marketing** dans votre navigateur, puis fermez le volet **autorisations de Site** .
+22. <span data-ttu-id="526a4-249">Fermer l’onglet **personnes et groupes** dans votre navigateur et cliquez sur l’onglet **accueil-campagnes de Marketing** dans votre navigateur, puis fermez le volet **autorisations de Site** .</span><span class="sxs-lookup"><span data-stu-id="526a4-249">Close the **People and Groups** tab in your browser, click the **Marketing campaigns-Home** tab in your browser, and then close the **Site permissions** pane.</span></span>
     
-Voici les résultats de la configuration des autorisations :
+<span data-ttu-id="526a4-250">Voici les résultats de la configuration des autorisations :</span><span class="sxs-lookup"><span data-stu-id="526a4-250">Here are the results of configuring permissions:</span></span>
   
-- Le groupe SharePoint des **Membres de campagnes Marketing** contient uniquement le groupe de **campagnes de Marketing** (qui contient le compte d’utilisateur administrateur global), le groupe de **l’équipe Marketing** (qui contient l’utilisateur Marketing1 et Marketing2 comptes) et le compte d’utilisateur **Researcher1** .
+- <span data-ttu-id="526a4-251">Le groupe SharePoint des **Membres de campagnes Marketing** contient uniquement le groupe de **campagnes de Marketing** (qui contient le compte d’utilisateur administrateur global), le groupe de **l’équipe Marketing** (qui contient l’utilisateur Marketing1 et Marketing2 comptes) et le compte d’utilisateur **Researcher1** .</span><span class="sxs-lookup"><span data-stu-id="526a4-251">The **Marketing campaigns-Members** SharePoint group contains only the **Marketing campaigns** group (which contains the global administrator user account), the **Marketing staff** group (which contains the Marketing1 and Marketing2 user accounts), and the **Researcher1** user account.</span></span>
     
-- Le groupe de **Propriétaires de campagnes de Marketing** SharePoint contient uniquement le groupe de **service informatique** (qui contienne uniquement les comptes d’utilisateurs ITAdmin1 et ITAdmin2).
+- <span data-ttu-id="526a4-252">Le groupe de **Propriétaires de campagnes de Marketing** SharePoint contient uniquement le groupe de **service informatique** (qui contienne uniquement les comptes d’utilisateurs ITAdmin1 et ITAdmin2).</span><span class="sxs-lookup"><span data-stu-id="526a4-252">The **Marketing campaigns-Owners** SharePoint group contains only the **IT staff** group (which contains only the ITAdmin1 and ITAdmin2 user accounts).</span></span>
     
-- Le groupe de **Campagnes de Marketing - les visiteurs** SharePoint ne contient aucun groupe ou compte d’utilisateur.
+- <span data-ttu-id="526a4-253">Le groupe de **Campagnes de Marketing - les visiteurs** SharePoint ne contient aucun groupe ou compte d’utilisateur.</span><span class="sxs-lookup"><span data-stu-id="526a4-253">The **Marketing campaigns-Visitors** SharePoint group contains no groups or user accounts.</span></span>
     
-- Les membres ne peuvent pas modifier les autorisations au niveau du site (cela n’est possible par les membres du groupe **Propriétaires de campagnes de Marketing** ).
+- <span data-ttu-id="526a4-254">Les membres ne peuvent pas modifier les autorisations au niveau du site (cela n’est possible par les membres du groupe **Propriétaires de campagnes de Marketing** ).</span><span class="sxs-lookup"><span data-stu-id="526a4-254">Members cannot modify site-level permissions (this can only be done by members of the **Marketing campaigns-Owners** group).</span></span>
     
-- Les autres comptes d’utilisateurs ne peuvent pas accéder au site ni à ses ressources, mais peuvent demander d’avoir accès au site. Un courrier électronique sera envoyé à la boîte aux lettres du compte d’utilisateur ITAdmin1.
+- <span data-ttu-id="526a4-255">Les autres comptes d’utilisateurs ne peuvent pas accéder au site ni à ses ressources, mais peuvent demander d’avoir accès au site. Un courrier électronique sera envoyé à la boîte aux lettres du compte d’utilisateur ITAdmin1.</span><span class="sxs-lookup"><span data-stu-id="526a4-255">Other user accounts cannot access the site or its resources, but can request access to the site, which will send an email to the ITAdmin1 user account mailbox.</span></span>
     
-Ensuite, configurez le dossier de documents du site d’équipe Campagnes marketing pour l’étiquette Sensible.
+<span data-ttu-id="526a4-256">Ensuite, configurez le dossier de documents du site d’équipe Campagnes marketing pour l’étiquette Sensible.</span><span class="sxs-lookup"><span data-stu-id="526a4-256">Next, configure the documents folder of the Marketing campaigns team site for the Sensitive label.</span></span>
   
-1. Dans l’onglet **accueil-campagnes de commercialisation** de votre navigateur, cliquez sur **Documents**.
+1. <span data-ttu-id="526a4-257">Dans l’onglet **accueil-campagnes de commercialisation** de votre navigateur, cliquez sur **Documents**.</span><span class="sxs-lookup"><span data-stu-id="526a4-257">In the **Marketing campaigns-Home** tab of your browser, click **Documents**.</span></span>
     
-2. Cliquez sur l’icône de paramètres, puis cliquez sur **paramètres de la bibliothèque**.
+2. <span data-ttu-id="526a4-258">Cliquez sur l’icône de paramètres, puis cliquez sur **paramètres de la bibliothèque**.</span><span class="sxs-lookup"><span data-stu-id="526a4-258">Click the settings icon, and then click **Library settings**.</span></span>
     
-3. Sous **autorisations et gestion**, cliquez sur **étiquette d’appliquer aux éléments de cette bibliothèque**.
+3. <span data-ttu-id="526a4-259">Sous **autorisations et gestion**, cliquez sur **étiquette d’appliquer aux éléments de cette bibliothèque**.</span><span class="sxs-lookup"><span data-stu-id="526a4-259">Under **Permissions and Management**, click **Apply label to items in this library**.</span></span>
     
-4. Dans **Les paramètres à appliquer une étiquette**, sélectionnez **sensibles**, puis cliquez sur **Enregistrer**.
+4. <span data-ttu-id="526a4-260">Dans **Les paramètres à appliquer une étiquette**, sélectionnez **sensibles**, puis cliquez sur **Enregistrer**.</span><span class="sxs-lookup"><span data-stu-id="526a4-260">In **Settings-Apply Label**, select **Sensitive**, and then click **Save**.</span></span>
     
-Ensuite, configurez une stratégie de prévention des pertes de données qui avertit les utilisateurs lorsqu’ils partagent un document sur un site d’équipe SharePoint Online avec l’étiquette Sensible, dont notamment le site Campagnes marketing, à l’extérieur de l’organisation.
+<span data-ttu-id="526a4-261">Ensuite, configurez une stratégie de prévention des pertes de données qui avertit les utilisateurs lorsqu’ils partagent un document sur un site d’équipe SharePoint Online avec l’étiquette Sensible, dont notamment le site Campagnes marketing, à l’extérieur de l’organisation.</span><span class="sxs-lookup"><span data-stu-id="526a4-261">Next, configure a data loss prevention (DLP) policy that notifies users when they share a document on a SharePoint Online team site with the Sensitive label, which includes the Marketing campaigns site, outside the organization.</span></span>
   
-1. À partir de l’onglet **Accueil de Microsoft Office** dans votre navigateur, cliquez sur le **sécurité &amp; la conformité** en mosaïque.
+1. <span data-ttu-id="526a4-262">À partir de l’onglet **Accueil de Microsoft Office** dans votre navigateur, cliquez sur le **sécurité &amp; la conformité** en mosaïque.</span><span class="sxs-lookup"><span data-stu-id="526a4-262">From the **Microsoft Office Home** tab in your browser, click the **Security &amp; Compliance** tile.</span></span>
     
-2. Sur la nouvelle **sécurité &amp; la conformité** dans votre navigateur, cliquez sur **prévention des fuites de données > stratégie de**.
+2. <span data-ttu-id="526a4-263">Sur la nouvelle **sécurité &amp; la conformité** dans votre navigateur, cliquez sur **prévention des fuites de données > stratégie de**.</span><span class="sxs-lookup"><span data-stu-id="526a4-263">On the new **Security &amp; Compliance** tab in your browser, click **Data loss prevention > Policy**.</span></span>
     
-3. Dans le volet de la **prévention des fuites de données** , cliquez sur **+ créer une stratégie**.
+3. <span data-ttu-id="526a4-264">Dans le volet de la **prévention des fuites de données** , cliquez sur **+ créer une stratégie**.</span><span class="sxs-lookup"><span data-stu-id="526a4-264">In the **Data loss prevention** pane, click **+ Create a policy**.</span></span>
     
-4. Dans la **Démarrer avec un modèle ou créer une stratégie personnalisée** volet, cliquez sur **personnalisée**, puis cliquez sur **suivant**.
+4. <span data-ttu-id="526a4-265">Dans la **Démarrer avec un modèle ou créer une stratégie personnalisée** volet, cliquez sur **personnalisée**, puis cliquez sur **suivant**.</span><span class="sxs-lookup"><span data-stu-id="526a4-265">In the **Start with a template or create a custom policy** pane, click **Custom**, and then click **Next**.</span></span>
     
-5. Dans le volet **nom de votre stratégie** , tapez des **sites d’équipe SharePoint Online étiquette sensibles** dans la zone **nom**, puis cliquez sur **suivant**.
+5. <span data-ttu-id="526a4-266">Dans le volet **nom de votre stratégie** , tapez des **sites d’équipe SharePoint Online étiquette sensibles** dans la zone **nom**, puis cliquez sur **suivant**.</span><span class="sxs-lookup"><span data-stu-id="526a4-266">In the **Name your policy** pane, type **Sensitive label SharePoint Online team sites** in **Name**, and then click **Next**.</span></span>
     
-6. Dans le volet **Choisir des emplacements** , cliquez sur **me laisser choisir des emplacements spécifiques**, puis cliquez sur **suivant**.
+6. <span data-ttu-id="526a4-267">Dans le volet **Choisir des emplacements** , cliquez sur **me laisser choisir des emplacements spécifiques**, puis cliquez sur **suivant**.</span><span class="sxs-lookup"><span data-stu-id="526a4-267">In the **Choose locations** pane, click **Let me choose specific locations**, and then click **Next**.</span></span>
     
-7. Dans la liste des emplacements, désactivez les emplacements **des comptes de OneDrive** et de la **messagerie Exchange** , puis cliquez sur **suivant**.
+7. <span data-ttu-id="526a4-268">Dans la liste des emplacements, désactivez les emplacements **des comptes de OneDrive** et de la **messagerie Exchange** , puis cliquez sur **suivant**.</span><span class="sxs-lookup"><span data-stu-id="526a4-268">In the list of locations, disable the **Exchange email** and **OneDrive accounts** locations, and then click **Next**.</span></span>
     
-8. Dans le volet **Personnaliser les types d’informations sensibles que vous souhaitez protéger** , cliquez sur **Modifier**.
+8. <span data-ttu-id="526a4-269">Dans le volet **Personnaliser les types d’informations sensibles que vous souhaitez protéger** , cliquez sur **Modifier**.</span><span class="sxs-lookup"><span data-stu-id="526a4-269">In the **Customize the types of sensitive info you want to protect** pane, click **Edit**.</span></span>
     
-9. Dans le volet **Choisir les types de contenu à protéger** , cliquez sur **Ajouter** dans la zone de liste déroulante, puis cliquez sur **étiquettes**.
+9. <span data-ttu-id="526a4-270">Dans le volet **Choisir les types de contenu à protéger** , cliquez sur **Ajouter** dans la zone de liste déroulante, puis cliquez sur **étiquettes**.</span><span class="sxs-lookup"><span data-stu-id="526a4-270">In the **Choose the types of content to protect** pane, click **Add** in the drop-down box, and then click **Labels**.</span></span>
     
-10. Dans le volet **d’étiquettes** , cliquez sur **+ Ajouter**, sélectionnez l’étiquette **sensibles** , cliquez sur **Ajouter**, puis cliquez sur **terminé**.
+10. <span data-ttu-id="526a4-271">Dans le volet **d’étiquettes** , cliquez sur **+ Ajouter**, sélectionnez l’étiquette **sensibles** , cliquez sur **Ajouter**, puis cliquez sur **terminé**.</span><span class="sxs-lookup"><span data-stu-id="526a4-271">In the **Labels** pane, click **+ Add**, select the **Sensitive** label, click **Add**, and then click **Done**.</span></span>
     
-11. Dans le volet **Choisir les types de contenu à protéger** , cliquez sur **Enregistrer**.
+11. <span data-ttu-id="526a4-272">Dans le volet **Choisir les types de contenu à protéger** , cliquez sur **Enregistrer**.</span><span class="sxs-lookup"><span data-stu-id="526a4-272">In the **Choose the types of content to protect** pane, click **Save**.</span></span>
     
-12. Dans le volet **Personnaliser les types d’informations sensibles que vous souhaitez protéger** , cliquez sur **suivant**.
+12. <span data-ttu-id="526a4-273">Dans le volet **Personnaliser les types d’informations sensibles que vous souhaitez protéger** , cliquez sur **suivant**.</span><span class="sxs-lookup"><span data-stu-id="526a4-273">In the **Customize the types of sensitive info you want to protect** pane, click **Next**.</span></span>
     
-13. Dans la **ce que vous voulez faire si nous détectons des informations sensibles ?** volet, cliquez sur **Personnaliser l’info-bulle et la messagerie électronique**.
+13. <span data-ttu-id="526a4-274">Dans la **ce que vous voulez faire si nous détectons des informations sensibles ?** volet, cliquez sur **Personnaliser l’info-bulle et la messagerie électronique**.</span><span class="sxs-lookup"><span data-stu-id="526a4-274">In the **What do you want to do if we detect sensitive info?** pane, click **Customize the tip and email**.</span></span>
     
-14. Dans le volet de **conseils de stratégie de personnaliser et de notifications par courrier électronique** , cliquez sur **Personnaliser le texte d’info-bulle de stratégie**.
+14. <span data-ttu-id="526a4-275">Dans le volet de **conseils de stratégie de personnaliser et de notifications par courrier électronique** , cliquez sur **Personnaliser le texte d’info-bulle de stratégie**.</span><span class="sxs-lookup"><span data-stu-id="526a4-275">In the **Customize policy tips and email notifications** pane, click **Customize the policy tip text**.</span></span>
     
-15. Dans la zone de texte, tapez ou collez le texte suivant :
+15. <span data-ttu-id="526a4-276">Dans la zone de texte, tapez ou collez le texte suivant :</span><span class="sxs-lookup"><span data-stu-id="526a4-276">In the text box, type or paste in the following:</span></span>
     
-  - Pour partager un fichier avec un utilisateur extérieur à l’organisation, téléchargez-le et ouvrez-le. Cliquez sur Fichier > Protéger le document > Chiffrer avec mot de passe, puis indiquez un mot de passe fort. Envoyez le mot de passe par e-mail ou un autre moyen de communication.
+  - <span data-ttu-id="526a4-p108">Pour partager un fichier avec un utilisateur extérieur à l’organisation, téléchargez-le et ouvrez-le. Cliquez sur Fichier > Protéger le document > Chiffrer avec mot de passe, puis indiquez un mot de passe fort. Envoyez le mot de passe par e-mail ou un autre moyen de communication.</span><span class="sxs-lookup"><span data-stu-id="526a4-p108">To share with a user outside the organization, download the file and then open it. Click File, then Protect Document, and then Encrypt with Password, and then specify a strong password. Send the password in a separate email or other means of communication.</span></span>
     
-16. Cliquez sur **OK**.
+16. <span data-ttu-id="526a4-280">Cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="526a4-280">Click **OK**.</span></span>
     
-17. Dans la **ce que vous voulez faire si nous détectons des informations sensibles ?** volet, désactivez la case à cocher **bloquer le partage, des personnes et de restreindre l’accès au contenu partagé** , puis cliquez sur **suivant**.
+17. <span data-ttu-id="526a4-281">Dans la **ce que vous voulez faire si nous détectons des informations sensibles ?** volet, désactivez la case à cocher **bloquer le partage, des personnes et de restreindre l’accès au contenu partagé** , puis cliquez sur **suivant**.</span><span class="sxs-lookup"><span data-stu-id="526a4-281">In the **What do you want to do if we detect sensitive info?** pane, clear the **Block people from sharing, and restrict access to shared content** check box, and then click **Next**.</span></span>
     
-18. Dans le **vous souhaitez activer les opérations de test ou de stratégie en premier ?** volet, cliquez sur **Oui, activer tout de suite**, puis cliquez sur **suivant**.
+18. <span data-ttu-id="526a4-282">Dans le **vous souhaitez activer les opérations de test ou de stratégie en premier ?** volet, cliquez sur **Oui, activer tout de suite**, puis cliquez sur **suivant**.</span><span class="sxs-lookup"><span data-stu-id="526a4-282">In the **Do you want to turn on the policy or test things out first?** pane, click **Yes, turn it on right away**, and then click **Next**.</span></span>
     
-19. Dans le volet de **passer en revue vos paramètres** , cliquez sur **créer**, puis cliquez sur **Fermer**.
+19. <span data-ttu-id="526a4-283">Dans le volet de **passer en revue vos paramètres** , cliquez sur **créer**, puis cliquez sur **Fermer**.</span><span class="sxs-lookup"><span data-stu-id="526a4-283">In the **Review your settings** pane, click **Create**, and then click **Close**.</span></span>
     
-Voici la configuration finale.
+<span data-ttu-id="526a4-284">Voici la configuration finale.</span><span class="sxs-lookup"><span data-stu-id="526a4-284">Here is your resulting configuration.</span></span>
   
 ![Protection des données sensibles pour les sites d’équipe SharePoint Online isolés des campagnes marketing.](images/33992bd5-96ee-4bfb-9ecf-c8a6736dd100.png)
   
-### <a name="company-strategy-team-site"></a>Site d’équipe de stratégie d’entreprise
+### <a name="company-strategy-team-site"></a><span data-ttu-id="526a4-286">Site d’équipe de stratégie d’entreprise</span><span class="sxs-lookup"><span data-stu-id="526a4-286">Company strategy team site</span></span>
 
-Pour créer un site d’équipe SharePoint Online isolé au niveau hautement confidentiel pour les ressources stratégiques de l’entreprise des cadres dirigeants de l’organisation, procédez comme suit :
+<span data-ttu-id="526a4-287">Pour créer un site d’équipe SharePoint Online isolé au niveau hautement confidentiel pour les ressources stratégiques de l’entreprise des cadres dirigeants de l’organisation, procédez comme suit :</span><span class="sxs-lookup"><span data-stu-id="526a4-287">To create an isolated SharePoint Online team site at the highly confidential level for strategic company resources of the chief executives of the organization, do the following:</span></span>
   
-1. Si nécessaire, utilisez un navigateur sur votre ordinateur local et vous connecter au portail Office 365 à l’aide de votre compte d’administrateur global. Pour de l’aide, consultez la rubrique [pour vous connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. <span data-ttu-id="526a4-p109">Si nécessaire, utilisez un navigateur sur votre ordinateur local et vous connecter au portail Office 365 à l’aide de votre compte d’administrateur global. Pour de l’aide, consultez la rubrique [pour vous connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).</span><span class="sxs-lookup"><span data-stu-id="526a4-p109">If needed, use a browser on your local computer and sign in to the Office 365 portal using your global administrator account. For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).</span></span>
     
-2. Dans la liste des mosaïques, cliquez sur **SharePoint**.
+2. <span data-ttu-id="526a4-290">Dans la liste des mosaïques, cliquez sur **SharePoint**.</span><span class="sxs-lookup"><span data-stu-id="526a4-290">In the list of tiles, click **SharePoint**.</span></span>
     
-3. Dans l’onglet nouveau **SharePoint** dans votre navigateur, cliquez sur **+ créer le site**.
+3. <span data-ttu-id="526a4-291">Dans l’onglet nouveau **SharePoint** dans votre navigateur, cliquez sur **+ créer le site**.</span><span class="sxs-lookup"><span data-stu-id="526a4-291">On the new **SharePoint** tab in your browser, click **+ Create site**.</span></span>
     
-4. Dans la page **créer un site** , cliquez sur **site d’équipe**.
+4. <span data-ttu-id="526a4-292">Dans la page **créer un site** , cliquez sur **site d’équipe**.</span><span class="sxs-lookup"><span data-stu-id="526a4-292">On the **Create a site** page, click **Team site**.</span></span>
     
-5. Dans la zone **nom du site d’équipe**, tapez **stratégie de la société**.
+5. <span data-ttu-id="526a4-293">Dans la zone **nom du site d’équipe**, tapez **stratégie de la société**.</span><span class="sxs-lookup"><span data-stu-id="526a4-293">In **Team site name**, type **Company strategy**.</span></span>
     
-6. Dans la **description de site d’équipe**, tapez le **site SharePoint pour la stratégie d’entreprise (hautement confidentielle)**.
+6. <span data-ttu-id="526a4-294">Dans la **description de site d’équipe**, tapez le **site SharePoint pour la stratégie d’entreprise (hautement confidentielle)**.</span><span class="sxs-lookup"><span data-stu-id="526a4-294">In **Team site description**, type **SharePoint site for company strategy (highly confidential)**.</span></span>
     
-7.  Dans **les paramètres de confidentialité**, sélectionnez **privé - uniquement les membres peuvent accéder à ce site**, puis cliquez sur **suivant**.
+7.  <span data-ttu-id="526a4-295">Dans **les paramètres de confidentialité**, sélectionnez **privé - uniquement les membres peuvent accéder à ce site**, puis cliquez sur **suivant**.</span><span class="sxs-lookup"><span data-stu-id="526a4-295">In **Privacy settings**, select **Private - only members can access this site**, and then click **Next**.</span></span>
     
-8. Sur le **qui voulez-vous ajouter ?** volet, cliquez sur **Terminer**.
+8. <span data-ttu-id="526a4-296">Sur le **qui voulez-vous ajouter ?** volet, cliquez sur **Terminer**.</span><span class="sxs-lookup"><span data-stu-id="526a4-296">On the **Who do you want to add?** pane, click **Finish**.</span></span>
     
-9. Dans l’onglet **stratégie de la société** de nouveau dans votre navigateur, dans la barre d’outils, cliquez sur l’icône de paramètres, puis cliquez sur **autorisations du Site**.
+9. <span data-ttu-id="526a4-297">Dans l’onglet **stratégie de la société** de nouveau dans votre navigateur, dans la barre d’outils, cliquez sur l’icône de paramètres, puis cliquez sur **autorisations du Site**.</span><span class="sxs-lookup"><span data-stu-id="526a4-297">On the new **Company strategy** tab in your browser, in the tool bar, click the settings icon, and then click **Site permissions**.</span></span>
     
-10. Dans le volet **autorisations de Site** , cliquez sur **autorisations avancées**.
+10. <span data-ttu-id="526a4-298">Dans le volet **autorisations de Site** , cliquez sur **autorisations avancées**.</span><span class="sxs-lookup"><span data-stu-id="526a4-298">In the **Site permissions** pane, click **Advanced permissions settings**.</span></span>
     
-11. Dans l’onglet **autorisations** de nouveau dans votre navigateur, cliquez sur **Paramètres de demande d’accès**.
+11. <span data-ttu-id="526a4-299">Dans l’onglet **autorisations** de nouveau dans votre navigateur, cliquez sur **Paramètres de demande d’accès**.</span><span class="sxs-lookup"><span data-stu-id="526a4-299">In the new **Permissions** tab in your browser, click **Access Request Settings**.</span></span>
     
-12. Dans la boîte de dialogue **Paramètres de demande d’accès** , désactivez **Autoriser les membres à inviter d’autres personnes au groupe de membres du site** et **permettre aux membres de partager le site et les fichiers et dossiers individuels** (de sorte que toutes les trois cases à cocher sont désactivées), puis cliquez sur ** OK**.
+12. <span data-ttu-id="526a4-300">Dans la boîte de dialogue **Paramètres de demande d’accès** , désactivez **Autoriser les membres à inviter d’autres personnes au groupe de membres du site** et **permettre aux membres de partager le site et les fichiers et dossiers individuels** (de sorte que toutes les trois cases à cocher sont désactivées), puis cliquez sur ** OK**.</span><span class="sxs-lookup"><span data-stu-id="526a4-300">In the **Access Request Settings** dialog box, clear **Allow members to share the site and individual files and folders** and **Allow members to invite others to the site members group** (so that all three check boxes are cleared), and then click **OK**.</span></span>
     
-13. Dans la liste, cliquez sur **stratégie membres de la société** .
+13. <span data-ttu-id="526a4-301">Dans la liste, cliquez sur **stratégie membres de la société** .</span><span class="sxs-lookup"><span data-stu-id="526a4-301">Click **Company strategy Members** in the list.</span></span>
     
-14. Dans la page **personnes et groupes** , cliquez sur **Nouveau**.
+14. <span data-ttu-id="526a4-302">Dans la page **personnes et groupes** , cliquez sur **Nouveau**.</span><span class="sxs-lookup"><span data-stu-id="526a4-302">On the **People and Groups** page, click **New**.</span></span>
     
-15. Dans la boîte de dialogue de **partage** , tapez **C-Suite**, sélectionnez-le, puis cliquez sur **partage**.
+15. <span data-ttu-id="526a4-303">Dans la boîte de dialogue de **partage** , tapez **C-Suite**, sélectionnez-le, puis cliquez sur **partage**.</span><span class="sxs-lookup"><span data-stu-id="526a4-303">In the **Share** dialog box, type **C-Suite**, select it, and then click **Share**.</span></span>
     
-16. Dans la liste, cliquez sur **stratégie d’entreprise propriétaires** .
+16. <span data-ttu-id="526a4-304">Dans la liste, cliquez sur **stratégie d’entreprise propriétaires** .</span><span class="sxs-lookup"><span data-stu-id="526a4-304">Click **Company strategy Owners** in the list.</span></span>
     
-17. Dans la page **personnes et groupes** , cliquez sur **Nouveau**.
+17. <span data-ttu-id="526a4-305">Dans la page **personnes et groupes** , cliquez sur **Nouveau**.</span><span class="sxs-lookup"><span data-stu-id="526a4-305">On the **People and Groups** page, click **New**.</span></span>
     
-18. Dans la boîte de dialogue de **partage** , tapez le **personnel informatique**, sélectionnez-le, puis cliquez sur **partage**.
+18. <span data-ttu-id="526a4-306">Dans la boîte de dialogue de **partage** , tapez le **personnel informatique**, sélectionnez-le, puis cliquez sur **partage**.</span><span class="sxs-lookup"><span data-stu-id="526a4-306">In the **Share** dialog box, type **IT staff**, select it, and then click **Share**.</span></span>
     
-19. Cliquez sur le bouton de retour de votre navigateur.
+19. <span data-ttu-id="526a4-307">Cliquez sur le bouton de retour de votre navigateur.</span><span class="sxs-lookup"><span data-stu-id="526a4-307">Click the back button on your browser.</span></span>
     
-20. Fermer l’onglet **personnes et groupes** dans votre navigateur et cliquez sur l’onglet de **Stratégie d’entreprise - accueil** dans votre navigateur, puis fermez le volet **autorisations de Site** .
+20. <span data-ttu-id="526a4-308">Fermer l’onglet **personnes et groupes** dans votre navigateur et cliquez sur l’onglet de **Stratégie d’entreprise - accueil** dans votre navigateur, puis fermez le volet **autorisations de Site** .</span><span class="sxs-lookup"><span data-stu-id="526a4-308">Close the **People and Groups** tab in your browser, click the **Company strategy-Home** tab in your browser, and then close the **Site permissions** pane.</span></span>
     
-Voici les résultats de la configuration des autorisations :
+<span data-ttu-id="526a4-309">Voici les résultats de la configuration des autorisations :</span><span class="sxs-lookup"><span data-stu-id="526a4-309">Here are the results of configuring permissions:</span></span>
   
-- Le groupe SharePoint **Membres de stratégie d’entreprise** contient uniquement le groupe **C-Suite** (qui contienne uniquement les comptes d’utilisateurs PDG, directeur financier et directeur de l’information) et le groupe de la **stratégie de la société** (qui contient uniquement le compte d’utilisateur administrateur global).
+- <span data-ttu-id="526a4-310">Le groupe SharePoint **Membres de stratégie d’entreprise** contient uniquement le groupe **C-Suite** (qui contienne uniquement les comptes d’utilisateurs PDG, directeur financier et directeur de l’information) et le groupe de la **stratégie de la société** (qui contient uniquement le compte d’utilisateur administrateur global).</span><span class="sxs-lookup"><span data-stu-id="526a4-310">The **Company strategy-Members** SharePoint group contains only the **C-Suite** group (which contains only the CEO, CFO, and CIO user accounts) and the **Company strategy** group (which contains only the global administrator user account).</span></span>
     
-- Le groupe SharePoint **Propriétaires de stratégie de société** contient uniquement le groupe de **service informatique** (qui contienne uniquement les comptes d’utilisateurs ITAdmin1 et ITAdmin2).
+- <span data-ttu-id="526a4-311">Le groupe SharePoint **Propriétaires de stratégie de société** contient uniquement le groupe de **service informatique** (qui contienne uniquement les comptes d’utilisateurs ITAdmin1 et ITAdmin2).</span><span class="sxs-lookup"><span data-stu-id="526a4-311">The **Company strategy-Owners** SharePoint group contains only the **IT staff** group (which contains only the ITAdmin1 and ITAdmin2 user accounts).</span></span>
     
-- Le groupe SharePoint **Visiteurs-stratégie de société** ne contient aucun groupe ou compte d’utilisateur.
+- <span data-ttu-id="526a4-312">Le groupe SharePoint **Visiteurs-stratégie de société** ne contient aucun groupe ou compte d’utilisateur.</span><span class="sxs-lookup"><span data-stu-id="526a4-312">The **Company strategy-Visitors** SharePoint group contains no groups or user accounts.</span></span>
     
-- Les membres ne peuvent pas modifier les autorisations au niveau du site (cela n’est possible par les membres du groupe **Propriétaires de stratégie de société** ).
+- <span data-ttu-id="526a4-313">Les membres ne peuvent pas modifier les autorisations au niveau du site (cela n’est possible par les membres du groupe **Propriétaires de stratégie de société** ).</span><span class="sxs-lookup"><span data-stu-id="526a4-313">Members cannot modify site-level permissions (this can only be done by members of the **Company strategy-Owners** group).</span></span>
     
-- Autres comptes d’utilisateur ne peut pas accéder au site ou ses ressources ou demander l’accès au site. Des autorisations supplémentaires sur le site doivent être effectuées par l’administrateur global ou par un membre du groupe **Stratégie-propriétaires de sociétés** .
+- <span data-ttu-id="526a4-p110">Autres comptes d’utilisateur ne peut pas accéder au site ou ses ressources ou demander l’accès au site. Des autorisations supplémentaires sur le site doivent être effectuées par l’administrateur global ou par un membre du groupe **Stratégie-propriétaires de sociétés** .</span><span class="sxs-lookup"><span data-stu-id="526a4-p110">Other user accounts cannot access the site or its resources or request access to the site. Additional permissions to the site must be done by the global administrator or by a member of the **Company strategy-Owners** group.</span></span>
     
-Ensuite, configurez le dossier de documents du site d’équipe Stratégie d’entreprise pour l’étiquette Hautement confidentiel.
+<span data-ttu-id="526a4-316">Ensuite, configurez le dossier de documents du site d’équipe Stratégie d’entreprise pour l’étiquette Hautement confidentiel.</span><span class="sxs-lookup"><span data-stu-id="526a4-316">Next, configure the documents folder of the Company strategy team site for the Highly Confidential label.</span></span>
   
-1. Dans l’onglet **Stratégie d’entreprise - accueil** de votre navigateur, cliquez sur **Documents**.
+1. <span data-ttu-id="526a4-317">Dans l’onglet **Stratégie d’entreprise - accueil** de votre navigateur, cliquez sur **Documents**.</span><span class="sxs-lookup"><span data-stu-id="526a4-317">In the **Company strategy-Home** tab of your browser, click **Documents**.</span></span>
     
-2. Cliquez sur l’icône de paramètres, puis cliquez sur **paramètres de la bibliothèque**.
+2. <span data-ttu-id="526a4-318">Cliquez sur l’icône de paramètres, puis cliquez sur **paramètres de la bibliothèque**.</span><span class="sxs-lookup"><span data-stu-id="526a4-318">Click the settings icon, and then click **Library settings**.</span></span>
     
-3. Sous **autorisations et gestion**, cliquez sur **étiquette d’appliquer aux éléments de cette bibliothèque**.
+3. <span data-ttu-id="526a4-319">Sous **autorisations et gestion**, cliquez sur **étiquette d’appliquer aux éléments de cette bibliothèque**.</span><span class="sxs-lookup"><span data-stu-id="526a4-319">Under **Permissions and Management**, click **Apply label to items in this library**.</span></span>
     
-4. Dans les **Paramètres à appliquer une étiquette**, sélectionnez **Hautement confidentielles**et puis cliquez sur **Enregistrer**.
+4. <span data-ttu-id="526a4-320">Dans les **Paramètres à appliquer une étiquette**, sélectionnez **Hautement confidentielles**et puis cliquez sur **Enregistrer**.</span><span class="sxs-lookup"><span data-stu-id="526a4-320">In **Settings-Apply Label**, select **Highly Confidential**, and then click **Save**.</span></span>
     
-Configurez ensuite une stratégie DLP qui empêche les utilisateurs lorsqu’ils partagent un document sur un site d’équipe SharePoint Online avec l’étiquette hautement confidentielles, ce qui inclut le site de stratégie d’entreprise, à l’extérieur de l’organisation.
+<span data-ttu-id="526a4-321">Configurez ensuite une stratégie DLP qui empêche les utilisateurs lorsqu’ils partagent un document sur un site d’équipe SharePoint Online avec l’étiquette hautement confidentielles, ce qui inclut le site de stratégie d’entreprise, à l’extérieur de l’organisation.</span><span class="sxs-lookup"><span data-stu-id="526a4-321">Next, configure a DLP policy that blocks users when they share a document on a SharePoint Online team site with the Highly Confidential label, which includes the Company strategy site, outside the organization.</span></span>
   
-1. Si nécessaire, utilisez un navigateur sur votre ordinateur local et vous connecter au portail Office 365 avec un compte qui possède le rôle d’administrateur de sécurité ou l’administrateur de la société. Pour de l’aide, consultez la rubrique [pour vous connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. <span data-ttu-id="526a4-p111">Si nécessaire, utilisez un navigateur sur votre ordinateur local et vous connecter au portail Office 365 avec un compte qui possède le rôle d’administrateur de sécurité ou l’administrateur de la société. Pour de l’aide, consultez la rubrique [pour vous connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).</span><span class="sxs-lookup"><span data-stu-id="526a4-p111">If needed, use a browser on your local computer and sign in to the Office 365 portal with an account that has the Security Administrator or Company Administrator role. For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).</span></span>
     
-2. À partir de l’onglet **Accueil de Microsoft Office** dans votre navigateur, cliquez sur le **sécurité &amp; la conformité** en mosaïque.
+2. <span data-ttu-id="526a4-324">À partir de l’onglet **Accueil de Microsoft Office** dans votre navigateur, cliquez sur le **sécurité &amp; la conformité** en mosaïque.</span><span class="sxs-lookup"><span data-stu-id="526a4-324">From the **Microsoft Office Home** tab in your browser, click the **Security &amp; Compliance** tile.</span></span>
     
-3. Sur la nouvelle **sécurité &amp; la conformité** dans votre navigateur, cliquez sur **prévention des fuites de données > stratégie de**.
+3. <span data-ttu-id="526a4-325">Sur la nouvelle **sécurité &amp; la conformité** dans votre navigateur, cliquez sur **prévention des fuites de données > stratégie de**.</span><span class="sxs-lookup"><span data-stu-id="526a4-325">On the new **Security &amp; Compliance** tab in your browser, click **Data loss prevention > Policy**.</span></span>
     
-4. Dans le volet de la **prévention des fuites de données** , cliquez sur **+ créer une stratégie**.
+4. <span data-ttu-id="526a4-326">Dans le volet de la **prévention des fuites de données** , cliquez sur **+ créer une stratégie**.</span><span class="sxs-lookup"><span data-stu-id="526a4-326">In the **Data loss prevention** pane, click **+ Create a policy**.</span></span>
     
-5. Dans la **Démarrer avec un modèle ou créer une stratégie personnalisée** volet, cliquez sur **personnalisée**, puis cliquez sur **suivant**.
+5. <span data-ttu-id="526a4-327">Dans la **Démarrer avec un modèle ou créer une stratégie personnalisée** volet, cliquez sur **personnalisée**, puis cliquez sur **suivant**.</span><span class="sxs-lookup"><span data-stu-id="526a4-327">In the **Start with a template or create a custom policy** pane, click **Custom**, and then click **Next**.</span></span>
     
-6. Dans le volet **nom de votre stratégie** , tapez **hautement confidentielles sites d’équipe SharePoint Online étiquette** dans la zone **nom**, puis cliquez sur **suivant**.
+6. <span data-ttu-id="526a4-328">Dans le volet **nom de votre stratégie** , tapez **hautement confidentielles sites d’équipe SharePoint Online étiquette** dans la zone **nom**, puis cliquez sur **suivant**.</span><span class="sxs-lookup"><span data-stu-id="526a4-328">In the **Name your policy** pane, type **Highly Confidential label SharePoint Online team sites** in **Name**, and then click **Next**.</span></span>
     
-7. Dans le volet **Choisir des emplacements** , cliquez sur **me laisser choisir des emplacements spécifiques**, puis cliquez sur **suivant**.
+7. <span data-ttu-id="526a4-329">Dans le volet **Choisir des emplacements** , cliquez sur **me laisser choisir des emplacements spécifiques**, puis cliquez sur **suivant**.</span><span class="sxs-lookup"><span data-stu-id="526a4-329">In the **Choose locations** pane, click **Let me choose specific locations**, and then click **Next**.</span></span>
     
-8. Dans la liste des emplacements, désactivez les emplacements **des comptes de OneDrive** et de la **messagerie Exchange** , puis cliquez sur **suivant**.
+8. <span data-ttu-id="526a4-330">Dans la liste des emplacements, désactivez les emplacements **des comptes de OneDrive** et de la **messagerie Exchange** , puis cliquez sur **suivant**.</span><span class="sxs-lookup"><span data-stu-id="526a4-330">In the list of locations, disable the **Exchange email** and **OneDrive accounts** locations, and then click **Next**.</span></span>
     
-9. Dans le volet **Personnaliser les types d’informations sensibles que vous souhaitez protéger** , cliquez sur **Modifier**.
+9. <span data-ttu-id="526a4-331">Dans le volet **Personnaliser les types d’informations sensibles que vous souhaitez protéger** , cliquez sur **Modifier**.</span><span class="sxs-lookup"><span data-stu-id="526a4-331">In the **Customize the types of sensitive info you want to protect** pane, click **Edit**.</span></span>
     
-10. Dans le volet **Choisir les types de contenu à protéger** , cliquez sur **Ajouter** dans la zone de liste déroulante, puis cliquez sur **étiquettes**.
+10. <span data-ttu-id="526a4-332">Dans le volet **Choisir les types de contenu à protéger** , cliquez sur **Ajouter** dans la zone de liste déroulante, puis cliquez sur **étiquettes**.</span><span class="sxs-lookup"><span data-stu-id="526a4-332">In the **Choose the types of content to protect** pane, click **Add** in the drop-down box, and then click **Labels**.</span></span>
     
-11. Dans le volet **d’étiquettes** , cliquez sur **+ Ajouter**, sélectionnez l’étiquette **Hautement confidentielles** , cliquez sur **Ajouter**, puis cliquez sur **terminé**.
+11. <span data-ttu-id="526a4-333">Dans le volet **d’étiquettes** , cliquez sur **+ Ajouter**, sélectionnez l’étiquette **Hautement confidentielles** , cliquez sur **Ajouter**, puis cliquez sur **terminé**.</span><span class="sxs-lookup"><span data-stu-id="526a4-333">In the **Labels** pane, click **+ Add**, select the **Highly Confidential** label, click **Add**, and then click **Done**.</span></span>
     
-12. Dans le volet **Choisir les types de contenu à protéger** , cliquez sur **Enregistrer**.
+12. <span data-ttu-id="526a4-334">Dans le volet **Choisir les types de contenu à protéger** , cliquez sur **Enregistrer**.</span><span class="sxs-lookup"><span data-stu-id="526a4-334">In the **Choose the types of content to protect** pane, click **Save**.</span></span>
     
-13. Dans le volet **Personnaliser les types d’informations sensibles que vous souhaitez protéger** , cliquez sur **suivant**.
+13. <span data-ttu-id="526a4-335">Dans le volet **Personnaliser les types d’informations sensibles que vous souhaitez protéger** , cliquez sur **suivant**.</span><span class="sxs-lookup"><span data-stu-id="526a4-335">In the **Customize the types of sensitive info you want to protect** pane, click **Next**.</span></span>
     
-14. Dans la **ce que vous voulez faire si nous détectons des informations sensibles ?** volet, cliquez sur **Personnaliser l’info-bulle et la messagerie électronique**.
+14. <span data-ttu-id="526a4-336">Dans la **ce que vous voulez faire si nous détectons des informations sensibles ?** volet, cliquez sur **Personnaliser l’info-bulle et la messagerie électronique**.</span><span class="sxs-lookup"><span data-stu-id="526a4-336">In the **What do you want to do if we detect sensitive info?** pane, click **Customize the tip and email**.</span></span>
     
-15. Dans le volet de **conseils de stratégie de personnaliser et de notifications par courrier électronique** , cliquez sur **Personnaliser le texte d’info-bulle de stratégie**.
+15. <span data-ttu-id="526a4-337">Dans le volet de **conseils de stratégie de personnaliser et de notifications par courrier électronique** , cliquez sur **Personnaliser le texte d’info-bulle de stratégie**.</span><span class="sxs-lookup"><span data-stu-id="526a4-337">In the **Customize policy tips and email notifications** pane, click **Customize the policy tip text**.</span></span>
     
-16. Dans la zone de texte, tapez ou collez le texte suivant :
+16. <span data-ttu-id="526a4-338">Dans la zone de texte, tapez ou collez le texte suivant :</span><span class="sxs-lookup"><span data-stu-id="526a4-338">In the text box, type or paste in the following:</span></span>
     
-  - Pour partager un fichier avec un utilisateur extérieur à l’organisation, téléchargez-le et ouvrez-le. Cliquez sur Fichier > Protéger le document > Chiffrer avec mot de passe, puis indiquez un mot de passe fort. Envoyez le mot de passe par e-mail ou un autre moyen de communication.
+  - <span data-ttu-id="526a4-p112">Pour partager un fichier avec un utilisateur extérieur à l’organisation, téléchargez-le et ouvrez-le. Cliquez sur Fichier > Protéger le document > Chiffrer avec mot de passe, puis indiquez un mot de passe fort. Envoyez le mot de passe par e-mail ou un autre moyen de communication.</span><span class="sxs-lookup"><span data-stu-id="526a4-p112">To share with a user outside the organization, download the file and then open it. Click File, then Protect Document, and then Encrypt with Password, and then specify a strong password. Send the password in a separate email or other means of communication.</span></span>
     
-17. Cliquez sur **OK**.
+17. <span data-ttu-id="526a4-342">Cliquez sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="526a4-342">Click **OK**.</span></span>
     
-18. Dans la **ce que vous voulez faire si nous détectons des informations sensibles ?** volet, sélectionnez **Exiger une justification à remplacer**, puis cliquez sur **suivant**.
+18. <span data-ttu-id="526a4-343">Dans la **ce que vous voulez faire si nous détectons des informations sensibles ?** volet, sélectionnez **Exiger une justification à remplacer**, puis cliquez sur **suivant**.</span><span class="sxs-lookup"><span data-stu-id="526a4-343">In the **What do you want to do if we detect sensitive info?** pane, select **Require a business justification to override**, and then click **Next**.</span></span>
     
-19. Dans le **vous souhaitez activer les opérations de test ou de stratégie en premier ?** volet, cliquez sur **Oui, activer tout de suite**, puis cliquez sur **suivant**.
+19. <span data-ttu-id="526a4-344">Dans le **vous souhaitez activer les opérations de test ou de stratégie en premier ?** volet, cliquez sur **Oui, activer tout de suite**, puis cliquez sur **suivant**.</span><span class="sxs-lookup"><span data-stu-id="526a4-344">In the **Do you want to turn on the policy or test things out first?** pane, click **Yes, turn it on right away**, and then click **Next**.</span></span>
     
-20. Dans le volet de **passer en revue vos paramètres** , cliquez sur **créer**, puis cliquez sur **Fermer**.
+20. <span data-ttu-id="526a4-345">Dans le volet de **passer en revue vos paramètres** , cliquez sur **créer**, puis cliquez sur **Fermer**.</span><span class="sxs-lookup"><span data-stu-id="526a4-345">In the **Review your settings** pane, click **Create**, and then click **Close**.</span></span>
     
-Ensuite, suivez les instructions de [RMS d’Azure activer avec le centre d’administration Office 365](https://docs.microsoft.com/information-protection/deploy-use/activate-office365).
+<span data-ttu-id="526a4-346">Ensuite, suivez les instructions de [RMS d’Azure activer avec le centre d’administration Office 365](https://docs.microsoft.com/information-protection/deploy-use/activate-office365).</span><span class="sxs-lookup"><span data-stu-id="526a4-346">Next, follow the instructions in [Activate Azure RMS with the Office 365 admin center](https://docs.microsoft.com/information-protection/deploy-use/activate-office365).</span></span>
   
-Ensuite, configurez la Protection des informations Azure avec une nouvelle stratégie étendue et une étiquette secondaire pour la protection et d’autorisations avec les étapes suivantes :
+<span data-ttu-id="526a4-347">Ensuite, configurez la Protection des informations Azure avec une nouvelle stratégie étendue et une étiquette secondaire pour la protection et d’autorisations avec les étapes suivantes :</span><span class="sxs-lookup"><span data-stu-id="526a4-347">Next, configure Azure Information Protection with a new scoped policy and sub-label for protection and permissions with the following steps:</span></span>
   
-1. Connectez-vous au portail Office 365 avec un compte qui possède le rôle d’administrateur de sécurité ou l’administrateur de la société. Pour de l’aide, consultez la rubrique [pour vous connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. <span data-ttu-id="526a4-p113">Connectez-vous au portail Office 365 avec un compte qui possède le rôle d’administrateur de sécurité ou l’administrateur de la société. Pour de l’aide, consultez la rubrique [pour vous connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).</span><span class="sxs-lookup"><span data-stu-id="526a4-p113">Sign in to the Office 365 portal with an account that has the Security Administrator or Company Administrator role. For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).</span></span>
     
-2. Dans un onglet séparé de votre navigateur, accédez au portail Azure ([https://portal.azure.com](https://portal.azure.com)).
+2. <span data-ttu-id="526a4-350">Dans un onglet séparé de votre navigateur, accédez au portail Azure ([https://portal.azure.com](https://portal.azure.com)).</span><span class="sxs-lookup"><span data-stu-id="526a4-350">In a separate tab of your browser, go to the Azure portal ([https://portal.azure.com](https://portal.azure.com)).</span></span>
     
-3. Si c’est la première fois que vous configurez la Protection des informations Azure, consultez ces [instructions](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time).
+3. <span data-ttu-id="526a4-351">Si c’est la première fois que vous configurez la Protection des informations Azure, consultez ces [instructions](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time).</span><span class="sxs-lookup"><span data-stu-id="526a4-351">If this is the first time you are configuring Azure Information Protection, see these [instructions](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time).</span></span>
     
-4. Dans le volet liste, cliquez sur **plus de services**, tapez les **informations**, puis cliquez sur **Azure la Protection des informations**.
+4. <span data-ttu-id="526a4-352">Dans le volet liste, cliquez sur **plus de services**, tapez les **informations**, puis cliquez sur **Azure la Protection des informations**.</span><span class="sxs-lookup"><span data-stu-id="526a4-352">In the list pane, click **More services**, type **information**, and then click **Azure Information Protection**.</span></span>
     
-5. Sur la lame de **protection des informations d’Azure** , cliquez sur **stratégies de portée > + Ajouter une nouvelle stratégie**.
+5. <span data-ttu-id="526a4-353">Sur la lame de **protection des informations d’Azure** , cliquez sur **stratégies de portée > + Ajouter une nouvelle stratégie**.</span><span class="sxs-lookup"><span data-stu-id="526a4-353">On the **Azure Information protection** blade, , click **Scoped policies > + Add a new policy**.</span></span>
     
-6. Dans **nom de la stratégie** et l' **étiquette pour les documents dans le site d’équipe stratégie société** dans la zone **Description**, tapez **CompanyStrategy** .
+6. <span data-ttu-id="526a4-354">Dans **nom de la stratégie** et l' **étiquette pour les documents dans le site d’équipe stratégie société** dans la zone **Description**, tapez **CompanyStrategy** .</span><span class="sxs-lookup"><span data-stu-id="526a4-354">Type **CompanyStrategy** in **Policy name** and **Label for documents in the Company strategy team site** in **Description**.</span></span>
     
-7. Cliquez sur **Sélectionner les utilisateurs ou les groupes d’obtiennent cette stratégie > groupes d’utilisateurs**, puis sélectionnez la **Suite de la C**.
+7. <span data-ttu-id="526a4-355">Cliquez sur **Sélectionner les utilisateurs ou les groupes d’obtiennent cette stratégie > groupes d’utilisateurs**, puis sélectionnez la **Suite de la C**.</span><span class="sxs-lookup"><span data-stu-id="526a4-355">Click **Select which users or groups get this policy > User/Groups**, and then select **C-Suite**.</span></span>
     
-8. Cliquez sur **Sélectionnez > OK**.
+8. <span data-ttu-id="526a4-356">Cliquez sur **Sélectionnez > OK**.</span><span class="sxs-lookup"><span data-stu-id="526a4-356">Click **Select > OK**.</span></span>
     
-9. Pour l’étiquette **Hautement confidentielles** , cliquez sur le bouton de sélection (...), puis cliquez sur **Ajouter une étiquette secondaire**.
+9. <span data-ttu-id="526a4-357">Pour l’étiquette **Hautement confidentielles** , cliquez sur le bouton de sélection (...), puis cliquez sur **Ajouter une étiquette secondaire**.</span><span class="sxs-lookup"><span data-stu-id="526a4-357">For the **Highly Confidential** label, click the ellipses (…), and then click **Add a sub-label**.</span></span>
     
-10. Dans un **nom** et une description de l’étiquette dans la zone **Description**, tapez un nom pour l’étiquette secondaire.
+10. <span data-ttu-id="526a4-358">Dans un **nom** et une description de l’étiquette dans la zone **Description**, tapez un nom pour l’étiquette secondaire.</span><span class="sxs-lookup"><span data-stu-id="526a4-358">Type a name for the sub-label in **Name** and a description of the label in **Description**.</span></span>
     
-11. **Définir des autorisations pour les documents et messages électroniques contenant cette étiquette**, cliquez sur **protéger**.
+11. <span data-ttu-id="526a4-359">**Définir des autorisations pour les documents et messages électroniques contenant cette étiquette**, cliquez sur **protéger**.</span><span class="sxs-lookup"><span data-stu-id="526a4-359">In **Set permissions for documents and emails containing this label**, click **Protect**.</span></span>
     
-12. Dans la section de la **Protection** , cliquez sur **Azure (clé de nuage)**.
+12. <span data-ttu-id="526a4-360">Dans la section de la **Protection** , cliquez sur **Azure (clé de nuage)**.</span><span class="sxs-lookup"><span data-stu-id="526a4-360">In the **Protection** section, click **Azure (cloud key)**.</span></span>
     
-13. Sur la lame de **Protection** , sous **paramètres de Protection**, cliquez sur **+ Ajouter des autorisations**.
+13. <span data-ttu-id="526a4-361">Sur la lame de **Protection** , sous **paramètres de Protection**, cliquez sur **+ Ajouter des autorisations**.</span><span class="sxs-lookup"><span data-stu-id="526a4-361">On the **Protection** blade, under **Protection settings**, click **+ Add permissions**.</span></span>
     
-14. Sur la blade **d’Ajouter les autorisations** , sous **spécifier les utilisateurs et groupes**, cliquez sur **+ Parcourir le répertoire**.
+14. <span data-ttu-id="526a4-362">Sur la blade **d’Ajouter les autorisations** , sous **spécifier les utilisateurs et groupes**, cliquez sur **+ Parcourir le répertoire**.</span><span class="sxs-lookup"><span data-stu-id="526a4-362">On the **Add permissions** blade, under **Specify users and groups**, click **+ Browse directory**.</span></span>
     
-15. Dans le volet **DAS utilisateurs et des groupes** , sélectionnez **C-Suite**, puis cliquez sur **Sélectionner**.
+15. <span data-ttu-id="526a4-363">Dans le volet **DAS utilisateurs et des groupes** , sélectionnez **C-Suite**, puis cliquez sur **Sélectionner**.</span><span class="sxs-lookup"><span data-stu-id="526a4-363">On the **AAD Users and Groups** pane, select **C-Suite**, and then click **Select**.</span></span>
     
-16. Sous **autorisations de choisir le paramètre prédéfini**, désactivez les cases à cocher **impression**, **copie et extraction de contenu**et **vers l’avant** .
+16. <span data-ttu-id="526a4-364">Sous **autorisations de choisir le paramètre prédéfini**, désactivez les cases à cocher **impression**, **copie et extraction de contenu**et **vers l’avant** .</span><span class="sxs-lookup"><span data-stu-id="526a4-364">Under **Choose permissions from the preset**, clear the **Print**, **Copy and extract content**, and **Forward** check boxes.</span></span>
     
-17. Cliquez deux fois sur **OK** .
+17. <span data-ttu-id="526a4-365">Cliquez deux fois sur **OK** .</span><span class="sxs-lookup"><span data-stu-id="526a4-365">Click **OK** twice.</span></span>
     
-18. Sur la blade **d’étiquette secondaire** , cliquez sur **Enregistrer**.
+18. <span data-ttu-id="526a4-366">Sur la blade **d’étiquette secondaire** , cliquez sur **Enregistrer**.</span><span class="sxs-lookup"><span data-stu-id="526a4-366">On the **Sub-label** blade, click **Save**.</span></span>
     
-19. Fermez le panneau de la nouvelle stratégie étendue.
+19. <span data-ttu-id="526a4-367">Fermez le panneau de la nouvelle stratégie étendue.</span><span class="sxs-lookup"><span data-stu-id="526a4-367">Close the new scoped policy blade.</span></span>
     
-20. Sur la lame de **protection des informations de Azure - stratégies étendues** , cliquez sur **Publier**, puis cliquez sur **Oui**.
+20. <span data-ttu-id="526a4-368">Sur la lame de **protection des informations de Azure - stratégies étendues** , cliquez sur **Publier**, puis cliquez sur **Oui**.</span><span class="sxs-lookup"><span data-stu-id="526a4-368">On the **Azure Information protection - Scoped policies** blade, click **Publish**, and then click **Yes**.</span></span>
     
-Pour protéger un document avec la Protection des informations Azure et cette nouvelle étiquette, vous devez [installer le client de Protection d’informations Azure](https://docs.microsoft.com/information-protection/rms-client/install-client-app) sur un ordinateur de test, installez Office à partir du portail Office 365 et puis vous connecter à partir de Microsoft Word avec un compte dans le ** C-Suite** groupe de votre abonnement d’évaluation.
+<span data-ttu-id="526a4-369">Pour protéger un document avec la Protection des informations Azure et cette nouvelle étiquette, vous devez [installer le client de Protection d’informations Azure](https://docs.microsoft.com/information-protection/rms-client/install-client-app) sur un ordinateur de test, installez Office à partir du portail Office 365 et puis vous connecter à partir de Microsoft Word avec un compte dans le ** C-Suite** groupe de votre abonnement d’évaluation.</span><span class="sxs-lookup"><span data-stu-id="526a4-369">To protect a document with Azure Information Protection and this new label, you must [install the Azure Information Protection client](https://docs.microsoft.com/information-protection/rms-client/install-client-app) on a test machine, install Office from the Office 365 portal, and then sign in from Microsoft Word with an account in the **C-Suite** group of your trial subscription.</span></span>
   
-Voici la configuration finale.
+<span data-ttu-id="526a4-370">Voici la configuration finale.</span><span class="sxs-lookup"><span data-stu-id="526a4-370">Here is your resulting configuration.</span></span>
   
 ![Protection avec un niveau de confidentialité élevé pour le site d’équipe SharePoint Online isolé de la stratégie d’entreprise.](images/c22695f9-50a1-4abf-a0dd-344b0c92cf94.png)
   
-Vous êtes maintenant prêt à créer des documents dans ces quatre sites et tester l’accès pour les différents comptes d’utilisateur dans votre abonnement d’évaluation.
+<span data-ttu-id="526a4-372">Vous êtes maintenant prêt à créer des documents dans ces quatre sites et tester l’accès pour les différents comptes d’utilisateur dans votre abonnement d’évaluation.</span><span class="sxs-lookup"><span data-stu-id="526a4-372">You are now ready to create documents in these four sites and test access to them with various user accounts in your trial subscription.</span></span>
   
-Voici la configuration globale pour tous les sites d’équipe SharePoint Online quatre.
+<span data-ttu-id="526a4-373">Voici la configuration globale pour tous les sites d’équipe SharePoint Online quatre.</span><span class="sxs-lookup"><span data-stu-id="526a4-373">Here is the overall configuration for all four SharePoint Online team sites.</span></span>
   
 ![Les quatre sites d’équipe dans l’environnement de développement/test SharePoint Online sécurisé.](images/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
   
-## <a name="next-step"></a>Étape suivante
+## <a name="next-step"></a><span data-ttu-id="526a4-375">Étape suivante</span><span class="sxs-lookup"><span data-stu-id="526a4-375">Next step</span></span>
 
-Lorsque vous êtes prêt pour le déploiement de production des sites SharePoint en ligne sécurisés, voir les [fichiers et les sites SharePoint sécurisé en ligne](secure-sharepoint-online-sites-and-files.md) pour obtenir des informations détaillées et des liens vers des articles de déploiement étape par étape.
+<span data-ttu-id="526a4-376">Lorsque vous êtes prêt pour le déploiement de production des sites SharePoint en ligne sécurisés, voir les [fichiers et les sites SharePoint sécurisé en ligne](secure-sharepoint-online-sites-and-files.md) pour obtenir des informations détaillées et des liens vers des articles de déploiement étape par étape.</span><span class="sxs-lookup"><span data-stu-id="526a4-376">When you are ready for production deployment of secure SharePoint Online sites, see [Secure SharePoint Online sites and files](secure-sharepoint-online-sites-and-files.md) for detailed information and links to step-by-step deployment articles.</span></span>
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a><span data-ttu-id="526a4-377">See Also</span><span class="sxs-lookup"><span data-stu-id="526a4-377">See Also</span></span>
 
-[Sécurisation des fichiers et sites SharePoint Online](secure-sharepoint-online-sites-and-files.md)
+[<span data-ttu-id="526a4-378">Sécurisation des fichiers et sites SharePoint Online</span><span class="sxs-lookup"><span data-stu-id="526a4-378">Secure SharePoint Online sites and files</span></span>](secure-sharepoint-online-sites-and-files.md)
   
-[Solutions de sécurité](security-solutions.md)
+[<span data-ttu-id="526a4-379">Solutions de sécurité</span><span class="sxs-lookup"><span data-stu-id="526a4-379">Security solutions</span></span>](security-solutions.md)
   
-[Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.md)
+[<span data-ttu-id="526a4-380">Adoption du cloud et solutions hybrides</span><span class="sxs-lookup"><span data-stu-id="526a4-380">Cloud adoption and hybrid solutions</span></span>](cloud-adoption-and-hybrid-solutions.md)
   
-[Conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d'autres organisations flexibles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[<span data-ttu-id="526a4-381">Conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d'autres organisations flexibles</span><span class="sxs-lookup"><span data-stu-id="526a4-381">Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations</span></span>](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
 
 
 

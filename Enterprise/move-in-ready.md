@@ -22,267 +22,267 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="move-in-ready"></a>Solutions prêtes à installer
+# <a name="move-in-ready"></a><span data-ttu-id="19b0b-103">Solutions prêtes à installer</span><span class="sxs-lookup"><span data-stu-id="19b0b-103">Move-in ready</span></span>
 
- **Résumé :** Obtenez les détails sur l'ensemble d'options de stockage cloud qui sont intégrées dans les offres cloud de Microsoft.
+ <span data-ttu-id="19b0b-104">**Résumé :** Obtenez les détails sur l'ensemble d'options de stockage cloud qui sont intégrées dans les offres cloud de Microsoft.</span><span class="sxs-lookup"><span data-stu-id="19b0b-104">**Summary:** Get the details on the set of cloud storage options that are built into Microsoft's cloud offerings.</span></span>
   
-Les solutions de stockage « prêtes à installer » :
+<span data-ttu-id="19b0b-105">Les solutions de stockage « prêtes à installer » :</span><span class="sxs-lookup"><span data-stu-id="19b0b-105">"Move-in ready" storage solutions:</span></span>
   
-- utilisent des solutions prépackagées immédiatement ;
+- <span data-ttu-id="19b0b-106">utilisent des solutions prépackagées immédiatement ;</span><span class="sxs-lookup"><span data-stu-id="19b0b-106">Use prepackaged solutions immediately</span></span>
     
-- sont prêtes à l'emploi, intégrées aux services existants ;
+- <span data-ttu-id="19b0b-107">sont prêtes à l'emploi, intégrées aux services existants ;</span><span class="sxs-lookup"><span data-stu-id="19b0b-107">Are ready to go, bundled with existing services</span></span>
     
-- fournissent une personnalisation limitée.
+- <span data-ttu-id="19b0b-108">fournissent une personnalisation limitée.</span><span class="sxs-lookup"><span data-stu-id="19b0b-108">Provide limited customization</span></span>
     
-Les sections suivantes décrivent les détails de chaque option de stockage « prête à installer ».
+<span data-ttu-id="19b0b-109">Les sections suivantes décrivent les détails de chaque option de stockage « prête à installer ».</span><span class="sxs-lookup"><span data-stu-id="19b0b-109">The following sections describe the details of each "Move-in ready" storage option.</span></span>
   
-## <a name="sharepoint-online-in-office-365"></a>SharePoint Online dans Office 365
+## <a name="sharepoint-online-in-office-365"></a><span data-ttu-id="19b0b-110">SharePoint Online dans Office 365</span><span class="sxs-lookup"><span data-stu-id="19b0b-110">SharePoint Online in Office 365</span></span>
 
-### <a name="features"></a>Fonctionnalités
+### <a name="features"></a><span data-ttu-id="19b0b-111">Fonctionnalités</span><span class="sxs-lookup"><span data-stu-id="19b0b-111">Features</span></span>
 
-- Les fichiers sont sécurisés, fiables et accessibles à partir de plusieurs appareils et de partout
+- <span data-ttu-id="19b0b-112">Les fichiers sont sécurisés, fiables et accessibles à partir de plusieurs appareils et de partout</span><span class="sxs-lookup"><span data-stu-id="19b0b-112">Files are secure, reliable, and accessible from multiple devices and from anywhere</span></span>
     
-- Le contenu peut être facilement découvert via une recherche
+- <span data-ttu-id="19b0b-113">Le contenu peut être facilement découvert via une recherche</span><span class="sxs-lookup"><span data-stu-id="19b0b-113">Content is easily discoverable through search</span></span>
     
-- Des flux de travail et stratégies de rétention facilitent l'utilisation et la gestion du contenu
+- <span data-ttu-id="19b0b-114">Des flux de travail et stratégies de rétention facilitent l'utilisation et la gestion du contenu</span><span class="sxs-lookup"><span data-stu-id="19b0b-114">Workflows and retention policies make it easy to use and maintain content</span></span>
     
-- Le contenu est accessible via des API web, un navigateur ou hors connexion
+- <span data-ttu-id="19b0b-115">Le contenu est accessible via des API web, un navigateur ou hors connexion</span><span class="sxs-lookup"><span data-stu-id="19b0b-115">Content can be accessed through web APIs or a browser, or offline</span></span>
     
-### <a name="common-uses"></a>Utilisations courantes
+### <a name="common-uses"></a><span data-ttu-id="19b0b-116">Utilisations courantes</span><span class="sxs-lookup"><span data-stu-id="19b0b-116">Common uses</span></span>
 
-- Portail d'entreprise ou d'organisation
+- <span data-ttu-id="19b0b-117">Portail d'entreprise ou d'organisation</span><span class="sxs-lookup"><span data-stu-id="19b0b-117">Corporate or organization portal</span></span>
     
-- Collaboration en équipe
+- <span data-ttu-id="19b0b-118">Collaboration en équipe</span><span class="sxs-lookup"><span data-stu-id="19b0b-118">Team-based collaboration</span></span>
     
-- Recherche d'entreprises
+- <span data-ttu-id="19b0b-119">Recherche d'entreprises</span><span class="sxs-lookup"><span data-stu-id="19b0b-119">Enterprise search</span></span>
     
-### <a name="key-storage-scenarios"></a>Principaux scénarios de stockage
+### <a name="key-storage-scenarios"></a><span data-ttu-id="19b0b-120">Principaux scénarios de stockage</span><span class="sxs-lookup"><span data-stu-id="19b0b-120">Key storage scenarios</span></span>
 
-- Collaborer
+- <span data-ttu-id="19b0b-121">Collaborer</span><span class="sxs-lookup"><span data-stu-id="19b0b-121">Collaborate</span></span>
     
-- Communications d'entreprise
+- <span data-ttu-id="19b0b-122">Communications d'entreprise</span><span class="sxs-lookup"><span data-stu-id="19b0b-122">Company communications</span></span>
     
-- Gérer des vidéos
+- <span data-ttu-id="19b0b-123">Gérer des vidéos</span><span class="sxs-lookup"><span data-stu-id="19b0b-123">Manage videos</span></span>
     
-### <a name="resources"></a>Ressources
+### <a name="resources"></a><span data-ttu-id="19b0b-124">Ressources</span><span class="sxs-lookup"><span data-stu-id="19b0b-124">Resources</span></span>
 
-Pour plus d'informations, cliquez [ici](https://support.office.com/article/SharePoint-Online-and-OneDrive-for-Business-software-boundaries-and-limits-8f34ff47-b749-408b-abc0-b605e1f6d498).
+<span data-ttu-id="19b0b-125">Pour plus d'informations, cliquez [ici](https://support.office.com/article/SharePoint-Online-and-OneDrive-for-Business-software-boundaries-and-limits-8f34ff47-b749-408b-abc0-b605e1f6d498).</span><span class="sxs-lookup"><span data-stu-id="19b0b-125">For additional information, click [here](https://support.office.com/article/SharePoint-Online-and-OneDrive-for-Business-software-boundaries-and-limits-8f34ff47-b749-408b-abc0-b605e1f6d498).</span></span>
   
-Pour plus d'informations de coût, cliquez [ici](https://products.office.com/business/compare-office-365-for-business-plans).
+<span data-ttu-id="19b0b-126">Pour plus d'informations de coût, cliquez [ici](https://products.office.com/business/compare-office-365-for-business-plans).</span><span class="sxs-lookup"><span data-stu-id="19b0b-126">For cost information, click [here](https://products.office.com/business/compare-office-365-for-business-plans).</span></span>
   
-## <a name="exchange-online-in-office-365"></a>Exchange Online dans Office 365
+## <a name="exchange-online-in-office-365"></a><span data-ttu-id="19b0b-127">Exchange Online dans Office 365</span><span class="sxs-lookup"><span data-stu-id="19b0b-127">Exchange Online in Office 365</span></span>
 
-### <a name="features"></a>Fonctionnalités
+### <a name="features"></a><span data-ttu-id="19b0b-128">Fonctionnalités</span><span class="sxs-lookup"><span data-stu-id="19b0b-128">Features</span></span>
 
-- Les boîtes aux lettres sont sécurisées, fiables et accessibles à partir de plusieurs appareils et de partout
+- <span data-ttu-id="19b0b-129">Les boîtes aux lettres sont sécurisées, fiables et accessibles à partir de plusieurs appareils et de partout</span><span class="sxs-lookup"><span data-stu-id="19b0b-129">Mailboxes are secure, reliable, and accessible from multiple devices and from anywhere</span></span>
     
-- Le contenu des boîtes aux lettres peut faire l'objet d'une recherche
+- <span data-ttu-id="19b0b-130">Le contenu des boîtes aux lettres peut faire l'objet d'une recherche</span><span class="sxs-lookup"><span data-stu-id="19b0b-130">Mailbox content can be found through search</span></span>
     
-### <a name="common-uses"></a>Utilisations courantes
+### <a name="common-uses"></a><span data-ttu-id="19b0b-131">Utilisations courantes</span><span class="sxs-lookup"><span data-stu-id="19b0b-131">Common uses</span></span>
 
-- Stockage de messages électroniques d'entreprise
+- <span data-ttu-id="19b0b-132">Stockage de messages électroniques d'entreprise</span><span class="sxs-lookup"><span data-stu-id="19b0b-132">Enterprise email storage</span></span>
     
-### <a name="key-storage-scenarios"></a>Principaux scénarios de stockage
+### <a name="key-storage-scenarios"></a><span data-ttu-id="19b0b-133">Principaux scénarios de stockage</span><span class="sxs-lookup"><span data-stu-id="19b0b-133">Key storage scenarios</span></span>
 
-- Collaborer
+- <span data-ttu-id="19b0b-134">Collaborer</span><span class="sxs-lookup"><span data-stu-id="19b0b-134">Collaborate</span></span>
     
-### <a name="resources"></a>Ressources
+### <a name="resources"></a><span data-ttu-id="19b0b-135">Ressources</span><span class="sxs-lookup"><span data-stu-id="19b0b-135">Resources</span></span>
 
-Pour plus d'informations, cliquez [ici](https://technet.microsoft.com/library/exchange-online-limits.aspx).
+<span data-ttu-id="19b0b-136">Pour plus d'informations, cliquez [ici](https://technet.microsoft.com/library/exchange-online-limits.aspx).</span><span class="sxs-lookup"><span data-stu-id="19b0b-136">For additional information, click [here](https://technet.microsoft.com/library/exchange-online-limits.aspx).</span></span>
   
-Pour plus d'informations de coût, cliquez [ici](https://products.office.com/business/compare-office-365-for-business-plans).
+<span data-ttu-id="19b0b-137">Pour plus d'informations de coût, cliquez [ici](https://products.office.com/business/compare-office-365-for-business-plans).</span><span class="sxs-lookup"><span data-stu-id="19b0b-137">For cost information, click [here](https://products.office.com/business/compare-office-365-for-business-plans).</span></span>
   
-## <a name="onedrive-for-business"></a>OneDrive Entreprise
+## <a name="onedrive-for-business"></a><span data-ttu-id="19b0b-138">OneDrive Entreprise</span><span class="sxs-lookup"><span data-stu-id="19b0b-138">OneDrive for Business</span></span>
 
-### <a name="features"></a>Fonctionnalités
+### <a name="features"></a><span data-ttu-id="19b0b-139">Fonctionnalités</span><span class="sxs-lookup"><span data-stu-id="19b0b-139">Features</span></span>
 
-- Le stockage est sécurisé, fiable et accessible à partir de plusieurs appareils et de partout
+- <span data-ttu-id="19b0b-140">Le stockage est sécurisé, fiable et accessible à partir de plusieurs appareils et de partout</span><span class="sxs-lookup"><span data-stu-id="19b0b-140">Storage is secure, reliable, and accessible from multiple devices and from anywhere</span></span>
     
-- L'utilisateur peut facilement découvrir le contenu via une recherche
+- <span data-ttu-id="19b0b-141">L'utilisateur peut facilement découvrir le contenu via une recherche</span><span class="sxs-lookup"><span data-stu-id="19b0b-141">Content is easily discoverable through search by the user</span></span>
     
-- Le contenu est accessible via des API web, un navigateur ou hors connexion
+- <span data-ttu-id="19b0b-142">Le contenu est accessible via des API web, un navigateur ou hors connexion</span><span class="sxs-lookup"><span data-stu-id="19b0b-142">Content can be accessed through web APIs or a browser, or offline</span></span>
     
-- Chaque utilisateur reçoit 1 To de stockage
+- <span data-ttu-id="19b0b-143">Chaque utilisateur reçoit 1 To de stockage</span><span class="sxs-lookup"><span data-stu-id="19b0b-143">Each user gets 1 TB of storage</span></span>
     
-### <a name="common-uses"></a>Utilisations courantes
+### <a name="common-uses"></a><span data-ttu-id="19b0b-144">Utilisations courantes</span><span class="sxs-lookup"><span data-stu-id="19b0b-144">Common uses</span></span>
 
-- Banque de documents des utilisateurs individuels
+- <span data-ttu-id="19b0b-145">Banque de documents des utilisateurs individuels</span><span class="sxs-lookup"><span data-stu-id="19b0b-145">Individual users' document store</span></span>
     
-- Collaboration ad hoc sur des documents
+- <span data-ttu-id="19b0b-146">Collaboration ad hoc sur des documents</span><span class="sxs-lookup"><span data-stu-id="19b0b-146">Ad hoc collaboration on documents</span></span>
     
-### <a name="key-storage-scenarios"></a>Principaux scénarios de stockage
+### <a name="key-storage-scenarios"></a><span data-ttu-id="19b0b-147">Principaux scénarios de stockage</span><span class="sxs-lookup"><span data-stu-id="19b0b-147">Key storage scenarios</span></span>
 
-- Sauvegarder des fichiers
+- <span data-ttu-id="19b0b-148">Sauvegarder des fichiers</span><span class="sxs-lookup"><span data-stu-id="19b0b-148">Backup files</span></span>
     
-### <a name="resources"></a>Ressources
+### <a name="resources"></a><span data-ttu-id="19b0b-149">Ressources</span><span class="sxs-lookup"><span data-stu-id="19b0b-149">Resources</span></span>
 
-Pour plus d'informations, cliquez [ici](https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2).
+<span data-ttu-id="19b0b-150">Pour plus d'informations, cliquez [ici](https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2).</span><span class="sxs-lookup"><span data-stu-id="19b0b-150">For additional information, click [here](https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2).</span></span>
   
-Pour plus d'informations de coût, cliquez [ici](https://products.office.com/business/compare-office-365-for-business-plans).
+<span data-ttu-id="19b0b-151">Pour plus d'informations de coût, cliquez [ici](https://products.office.com/business/compare-office-365-for-business-plans).</span><span class="sxs-lookup"><span data-stu-id="19b0b-151">For cost information, click [here](https://products.office.com/business/compare-office-365-for-business-plans).</span></span>
   
-## <a name="visual-studio-team-services"></a>Visual Studio Team Services
+## <a name="visual-studio-team-services"></a><span data-ttu-id="19b0b-152">Visual Studio Team Services</span><span class="sxs-lookup"><span data-stu-id="19b0b-152">Visual Studio Team Services</span></span>
 
-### <a name="features"></a>Fonctionnalités
+### <a name="features"></a><span data-ttu-id="19b0b-153">Fonctionnalités</span><span class="sxs-lookup"><span data-stu-id="19b0b-153">Features</span></span>
 
-- Offre une redondance intégrée
+- <span data-ttu-id="19b0b-154">Offre une redondance intégrée</span><span class="sxs-lookup"><span data-stu-id="19b0b-154">Has built-in redundancy</span></span>
     
-- Est basé sur Team Foundation Server
+- <span data-ttu-id="19b0b-155">Est basé sur Team Foundation Server</span><span class="sxs-lookup"><span data-stu-id="19b0b-155">Is based upon Team Foundation Server</span></span>
     
-- Créer des journaux des travaux en souffrance, travailler sur des sprints et suivre les modifications et les bogues
+- <span data-ttu-id="19b0b-156">Créer des journaux des travaux en souffrance, travailler sur des sprints et suivre les modifications et les bogues</span><span class="sxs-lookup"><span data-stu-id="19b0b-156">Create backlogs, work in sprints, and track changes and bugs</span></span>
     
-- Option optimale pour le stockage de code source (il est préférable de stocker la documentation dans SharePoint Online)
+- <span data-ttu-id="19b0b-157">Option optimale pour le stockage de code source (il est préférable de stocker la documentation dans SharePoint Online)</span><span class="sxs-lookup"><span data-stu-id="19b0b-157">The best option for storing source code (it's best to store documentation in SharePoint Online)</span></span>
     
-### <a name="common-uses"></a>Utilisations courantes
+### <a name="common-uses"></a><span data-ttu-id="19b0b-158">Utilisations courantes</span><span class="sxs-lookup"><span data-stu-id="19b0b-158">Common uses</span></span>
 
-- Référentiel de code source
+- <span data-ttu-id="19b0b-159">Référentiel de code source</span><span class="sxs-lookup"><span data-stu-id="19b0b-159">Source code repository</span></span>
     
-### <a name="key-storage-scenarios"></a>Principaux scénarios de stockage
+### <a name="key-storage-scenarios"></a><span data-ttu-id="19b0b-160">Principaux scénarios de stockage</span><span class="sxs-lookup"><span data-stu-id="19b0b-160">Key storage scenarios</span></span>
 
-- Gérer le code source
+- <span data-ttu-id="19b0b-161">Gérer le code source</span><span class="sxs-lookup"><span data-stu-id="19b0b-161">Manage source code</span></span>
     
-### <a name="resources"></a>Ressources
+### <a name="resources"></a><span data-ttu-id="19b0b-162">Ressources</span><span class="sxs-lookup"><span data-stu-id="19b0b-162">Resources</span></span>
 
-Pour plus d'informations, cliquez [ici](https://www.visualstudio.com/products/what-is-visual-studio-online-vs.aspx).
+<span data-ttu-id="19b0b-163">Pour plus d'informations, cliquez [ici](https://www.visualstudio.com/products/what-is-visual-studio-online-vs.aspx).</span><span class="sxs-lookup"><span data-stu-id="19b0b-163">For additional information, click [here](https://www.visualstudio.com/products/what-is-visual-studio-online-vs.aspx).</span></span>
   
-Pour plus d'informations de coût, cliquez [ici](https://www.visualstudio.com/products/visual-studio-online-pricing-vs.aspx).
+<span data-ttu-id="19b0b-164">Pour plus d'informations de coût, cliquez [ici](https://www.visualstudio.com/products/visual-studio-online-pricing-vs.aspx).</span><span class="sxs-lookup"><span data-stu-id="19b0b-164">For cost information, click [here](https://www.visualstudio.com/products/visual-studio-online-pricing-vs.aspx).</span></span>
   
-## <a name="yammer-file-sharing"></a>Partage de fichiers Yammer
+## <a name="yammer-file-sharing"></a><span data-ttu-id="19b0b-165">Partage de fichiers Yammer</span><span class="sxs-lookup"><span data-stu-id="19b0b-165">Yammer file sharing</span></span>
 
-### <a name="features"></a>Fonctionnalités
+### <a name="features"></a><span data-ttu-id="19b0b-166">Fonctionnalités</span><span class="sxs-lookup"><span data-stu-id="19b0b-166">Features</span></span>
 
-- Taille par fichier chargé limitée à 5 Go pour les réseaux Premium
+- <span data-ttu-id="19b0b-167">Taille par fichier chargé limitée à 5 Go pour les réseaux Premium</span><span class="sxs-lookup"><span data-stu-id="19b0b-167">5 GB file size limit for each uploaded file for premium networks</span></span>
     
-- Nombre illimité de fichiers pouvant être téléchargés
+- <span data-ttu-id="19b0b-168">Nombre illimité de fichiers pouvant être téléchargés</span><span class="sxs-lookup"><span data-stu-id="19b0b-168">No limit on the number of files that can be uploaded</span></span>
     
-- Optimal pour le partage rapide et la discussion
+- <span data-ttu-id="19b0b-169">Optimal pour le partage rapide et la discussion</span><span class="sxs-lookup"><span data-stu-id="19b0b-169">Best for quick sharing and discussion</span></span>
     
-- Accessible via un navigateur
+- <span data-ttu-id="19b0b-170">Accessible via un navigateur</span><span class="sxs-lookup"><span data-stu-id="19b0b-170">Accessible through a browser</span></span>
     
-### <a name="common-uses"></a>Utilisations courantes
+### <a name="common-uses"></a><span data-ttu-id="19b0b-171">Utilisations courantes</span><span class="sxs-lookup"><span data-stu-id="19b0b-171">Common uses</span></span>
 
-- Réseau social d'entreprise
+- <span data-ttu-id="19b0b-172">Réseau social d'entreprise</span><span class="sxs-lookup"><span data-stu-id="19b0b-172">Enterprise social</span></span>
     
-- Partager des documents ou des liens pertinents dans une conversation ou une rubrique
+- <span data-ttu-id="19b0b-173">Partager des documents ou des liens pertinents dans une conversation ou une rubrique</span><span class="sxs-lookup"><span data-stu-id="19b0b-173">Share documents or links relevant to a conversation or topic</span></span>
     
-### <a name="key-storage-scenarios"></a>Principaux scénarios de stockage
+### <a name="key-storage-scenarios"></a><span data-ttu-id="19b0b-174">Principaux scénarios de stockage</span><span class="sxs-lookup"><span data-stu-id="19b0b-174">Key storage scenarios</span></span>
 
-- Collaborer
+- <span data-ttu-id="19b0b-175">Collaborer</span><span class="sxs-lookup"><span data-stu-id="19b0b-175">Collaborate</span></span>
     
-### <a name="resources"></a>Ressources
+### <a name="resources"></a><span data-ttu-id="19b0b-176">Ressources</span><span class="sxs-lookup"><span data-stu-id="19b0b-176">Resources</span></span>
 
-Pour plus d'informations, cliquez [ici](https://products.office.com/yammer/yammer-overview).
+<span data-ttu-id="19b0b-177">Pour plus d'informations, cliquez [ici](https://products.office.com/yammer/yammer-overview).</span><span class="sxs-lookup"><span data-stu-id="19b0b-177">For additional information, click [here](https://products.office.com/yammer/yammer-overview).</span></span>
   
-Pour plus d'informations de coût, cliquez [ici](https://products.office.com/business/compare-office-365-for-business-plans).
+<span data-ttu-id="19b0b-178">Pour plus d'informations de coût, cliquez [ici](https://products.office.com/business/compare-office-365-for-business-plans).</span><span class="sxs-lookup"><span data-stu-id="19b0b-178">For cost information, click [here](https://products.office.com/business/compare-office-365-for-business-plans).</span></span>
   
-## <a name="dynamics-365"></a>Dynamics 365
+## <a name="dynamics-365"></a><span data-ttu-id="19b0b-179">Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="19b0b-179">Dynamics 365</span></span>
 
-### <a name="features"></a>Fonctionnalités
+### <a name="features"></a><span data-ttu-id="19b0b-180">Fonctionnalités</span><span class="sxs-lookup"><span data-stu-id="19b0b-180">Features</span></span>
 
-- L'abonnement inclut 10 Go de stockage
+- <span data-ttu-id="19b0b-181">L'abonnement inclut 10 Go de stockage</span><span class="sxs-lookup"><span data-stu-id="19b0b-181">Subscription includes 10 GB of storage</span></span>
     
-- 5 Go de capacité de stockage sont ajoutés par incrément de 20 USL professionnelles
+- <span data-ttu-id="19b0b-182">5 Go de capacité de stockage sont ajoutés par incrément de 20 USL professionnelles</span><span class="sxs-lookup"><span data-stu-id="19b0b-182">For each increment of 20 Professional USLs, 5 GB of storage capacity is added</span></span>
     
-- Le stockage est limité à 5 To par client
+- <span data-ttu-id="19b0b-183">Le stockage est limité à 5 To par client</span><span class="sxs-lookup"><span data-stu-id="19b0b-183">Storage is capped at 5 TB per customer</span></span>
     
-### <a name="common-uses"></a>Utilisations courantes
+### <a name="common-uses"></a><span data-ttu-id="19b0b-184">Utilisations courantes</span><span class="sxs-lookup"><span data-stu-id="19b0b-184">Common uses</span></span>
 
-- Stocker et gérer les relations client
+- <span data-ttu-id="19b0b-185">Stocker et gérer les relations client</span><span class="sxs-lookup"><span data-stu-id="19b0b-185">Store and manage customer relationships</span></span>
     
-### <a name="key-storage-scenarios"></a>Principaux scénarios de stockage
+### <a name="key-storage-scenarios"></a><span data-ttu-id="19b0b-186">Principaux scénarios de stockage</span><span class="sxs-lookup"><span data-stu-id="19b0b-186">Key storage scenarios</span></span>
 
-- Collaborer
+- <span data-ttu-id="19b0b-187">Collaborer</span><span class="sxs-lookup"><span data-stu-id="19b0b-187">Collaborate</span></span>
     
-### <a name="resources"></a>Ressources
+### <a name="resources"></a><span data-ttu-id="19b0b-188">Ressources</span><span class="sxs-lookup"><span data-stu-id="19b0b-188">Resources</span></span>
 
-Pour plus d'informations, cliquez [ici](http://www.microsoft.com/dynamics/default.aspx?DYNCRM-SEARCH?CR_CC=200470741&amp;WT.mc_ID=DynGB_en_us_SEM_GOOG&amp;DYNCRM-SEARCH&amp;WT.srch=1).
+<span data-ttu-id="19b0b-189">Pour plus d'informations, cliquez [ici](http://www.microsoft.com/dynamics/default.aspx?DYNCRM-SEARCH?CR_CC=200470741&amp;WT.mc_ID=DynGB_en_us_SEM_GOOG&amp;DYNCRM-SEARCH&amp;WT.srch=1).</span><span class="sxs-lookup"><span data-stu-id="19b0b-189">For additional information, click [here](http://www.microsoft.com/dynamics/default.aspx?DYNCRM-SEARCH?CR_CC=200470741&amp;WT.mc_ID=DynGB_en_us_SEM_GOOG&amp;DYNCRM-SEARCH&amp;WT.srch=1).</span></span>
   
-## <a name="microsoft-intune"></a>Microsoft Intune
+## <a name="microsoft-intune"></a><span data-ttu-id="19b0b-190">Microsoft Intune</span><span class="sxs-lookup"><span data-stu-id="19b0b-190">Microsoft Intune</span></span>
 
-### <a name="features"></a>Fonctionnalités
+### <a name="features"></a><span data-ttu-id="19b0b-191">Fonctionnalités</span><span class="sxs-lookup"><span data-stu-id="19b0b-191">Features</span></span>
 
-- Tous les logiciels que vous déployez sont emballé et chargé dans stockage en nuage Microsoft Intune.
+- <span data-ttu-id="19b0b-192">Tous les logiciels que vous déployez sont emballé et chargé dans stockage en nuage Microsoft Intune.</span><span class="sxs-lookup"><span data-stu-id="19b0b-192">All software that you deploy is packaged and uploaded to Microsoft Intune cloud storage.</span></span>
     
-- L’abonnement comprend 20 Go de stockage avec l’option d’achat d’espace supplémentaire, divers logiciels et rapports d’inventaire matériel, gestion des stratégies de, publication de l’application mobile, alertes, surveillance et 99,99 % du temps SLA.
+- <span data-ttu-id="19b0b-193">L’abonnement comprend 20 Go de stockage avec l’option d’achat d’espace supplémentaire, divers logiciels et rapports d’inventaire matériel, gestion des stratégies de, publication de l’application mobile, alertes, surveillance et 99,99 % du temps SLA.</span><span class="sxs-lookup"><span data-stu-id="19b0b-193">Subscription includes 20 GB of storage with the option to purchase additional space, various software and hardware inventory reports, policy management, mobile app publishing, alerts, monitoring, and 99.99% uptime SLA.</span></span>
     
-### <a name="common-uses"></a>Utilisations courantes
+### <a name="common-uses"></a><span data-ttu-id="19b0b-194">Utilisations courantes</span><span class="sxs-lookup"><span data-stu-id="19b0b-194">Common uses</span></span>
 
-- Déploiement de logiciels
+- <span data-ttu-id="19b0b-195">Déploiement de logiciels</span><span class="sxs-lookup"><span data-stu-id="19b0b-195">Software deployment</span></span>
     
-### <a name="key-storage-scenarios"></a>Principaux scénarios de stockage
+### <a name="key-storage-scenarios"></a><span data-ttu-id="19b0b-196">Principaux scénarios de stockage</span><span class="sxs-lookup"><span data-stu-id="19b0b-196">Key storage scenarios</span></span>
 
-- Sauvegarder des fichiers
+- <span data-ttu-id="19b0b-197">Sauvegarder des fichiers</span><span class="sxs-lookup"><span data-stu-id="19b0b-197">Backup files</span></span>
     
-### <a name="resources"></a>Ressources
+### <a name="resources"></a><span data-ttu-id="19b0b-198">Ressources</span><span class="sxs-lookup"><span data-stu-id="19b0b-198">Resources</span></span>
 
-Pour plus d'informations, cliquez sur [ici](https://www.microsoft.com/server-cloud/products/microsoft-intune/).
+<span data-ttu-id="19b0b-199">Pour plus d'informations, cliquez sur [ici](https://www.microsoft.com/server-cloud/products/microsoft-intune/).</span><span class="sxs-lookup"><span data-stu-id="19b0b-199">For additional information, click [here](https://www.microsoft.com/server-cloud/products/microsoft-intune/).</span></span>
   
-Pour plus d'informations de coût, cliquez [ici](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing).
+<span data-ttu-id="19b0b-200">Pour plus d'informations de coût, cliquez [ici](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing).</span><span class="sxs-lookup"><span data-stu-id="19b0b-200">For cost information, click [here](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing).</span></span>
   
-## <a name="azure-site-recovery"></a>Azure Site Recovery
+## <a name="azure-site-recovery"></a><span data-ttu-id="19b0b-201">Azure Site Recovery</span><span class="sxs-lookup"><span data-stu-id="19b0b-201">Azure Site Recovery</span></span>
 
-### <a name="features"></a>Fonctionnalités
+### <a name="features"></a><span data-ttu-id="19b0b-202">Fonctionnalités</span><span class="sxs-lookup"><span data-stu-id="19b0b-202">Features</span></span>
 
-- Protection, réplication et récupération simples et automatisées sur Azure
+- <span data-ttu-id="19b0b-203">Protection, réplication et récupération simples et automatisées sur Azure</span><span class="sxs-lookup"><span data-stu-id="19b0b-203">Simple, automated protection, replication, and recovery to Azure</span></span>
     
-- Analyse du fonctionnement et récupération orchestrée en continu
+- <span data-ttu-id="19b0b-204">Analyse du fonctionnement et récupération orchestrée en continu</span><span class="sxs-lookup"><span data-stu-id="19b0b-204">Continuous health monitoring and orchestrated recovery</span></span>
     
-- Prend en charge les disques gérés et les ordinateurs virtuels Ubuntu
+- <span data-ttu-id="19b0b-205">Prend en charge les disques gérés et les ordinateurs virtuels Ubuntu</span><span class="sxs-lookup"><span data-stu-id="19b0b-205">Supports managed disks and Ubuntu virtual machines</span></span>
     
-- Prends en charge Windows Server 2016 et des espaces de stockage
+- <span data-ttu-id="19b0b-206">Prends en charge Windows Server 2016 et des espaces de stockage</span><span class="sxs-lookup"><span data-stu-id="19b0b-206">Supports Windows Server 2016 and Storage Spaces</span></span>
     
-### <a name="common-uses"></a>Utilisations courantes
+### <a name="common-uses"></a><span data-ttu-id="19b0b-207">Utilisations courantes</span><span class="sxs-lookup"><span data-stu-id="19b0b-207">Common uses</span></span>
 
-- Des machines virtuelles s'exécutant dans un environnement utilisant Hyper-V peuvent être répliquées entre deux centres de données ou sur Azure
+- <span data-ttu-id="19b0b-208">Des machines virtuelles s'exécutant dans un environnement utilisant Hyper-V peuvent être répliquées entre deux centres de données ou sur Azure</span><span class="sxs-lookup"><span data-stu-id="19b0b-208">Virtual machines running in an environment using Hyper-V can be replicated between two datacenters or to Azure</span></span>
     
-- InMage Scout permet la protection de VMware et d'environnements physiques
+- <span data-ttu-id="19b0b-209">InMage Scout permet la protection de VMware et d'environnements physiques</span><span class="sxs-lookup"><span data-stu-id="19b0b-209">InMage Scout enables the protection of VMware and physical environments</span></span>
     
-### <a name="key-storage-scenarios"></a>Principaux scénarios de stockage
+### <a name="key-storage-scenarios"></a><span data-ttu-id="19b0b-210">Principaux scénarios de stockage</span><span class="sxs-lookup"><span data-stu-id="19b0b-210">Key storage scenarios</span></span>
 
-- Sauvegarder des fichiers
+- <span data-ttu-id="19b0b-211">Sauvegarder des fichiers</span><span class="sxs-lookup"><span data-stu-id="19b0b-211">Backup files</span></span>
     
-### <a name="resources"></a>Ressources
+### <a name="resources"></a><span data-ttu-id="19b0b-212">Ressources</span><span class="sxs-lookup"><span data-stu-id="19b0b-212">Resources</span></span>
 
-Pour plus d'informations, cliquez [ici](http://azure.microsoft.com/services/site-recovery/?WT.srch=1&amp;WT.mc_ID=kn0iWCHA).
+<span data-ttu-id="19b0b-213">Pour plus d'informations, cliquez [ici](http://azure.microsoft.com/services/site-recovery/?WT.srch=1&amp;WT.mc_ID=kn0iWCHA).</span><span class="sxs-lookup"><span data-stu-id="19b0b-213">For additional information, click [here](http://azure.microsoft.com/services/site-recovery/?WT.srch=1&amp;WT.mc_ID=kn0iWCHA).</span></span>
   
-Pour plus d'informations de coût, cliquez [ici](http://azure.microsoft.com/pricing/details/site-recovery/).
+<span data-ttu-id="19b0b-214">Pour plus d'informations de coût, cliquez [ici](http://azure.microsoft.com/pricing/details/site-recovery/).</span><span class="sxs-lookup"><span data-stu-id="19b0b-214">For cost information, click [here](http://azure.microsoft.com/pricing/details/site-recovery/).</span></span>
   
-## <a name="azure-backup"></a>Sauvegarde Azure
+## <a name="azure-backup"></a><span data-ttu-id="19b0b-215">Sauvegarde Azure</span><span class="sxs-lookup"><span data-stu-id="19b0b-215">Azure Backup</span></span>
 
-### <a name="features"></a>Fonctionnalités
+### <a name="features"></a><span data-ttu-id="19b0b-216">Fonctionnalités</span><span class="sxs-lookup"><span data-stu-id="19b0b-216">Features</span></span>
 
-- Protège avec fluidité les données reçues de Windows Server et de Windows Server Essentials
+- <span data-ttu-id="19b0b-217">Protège avec fluidité les données reçues de Windows Server et de Windows Server Essentials</span><span class="sxs-lookup"><span data-stu-id="19b0b-217">Seamlessly protects data received from Windows Server and Windows Server Essentials</span></span>
     
-- Inclut Microsoft System Center Data Protection Manager
+- <span data-ttu-id="19b0b-218">Inclut Microsoft System Center Data Protection Manager</span><span class="sxs-lookup"><span data-stu-id="19b0b-218">Includes System Center Data Protection Manager</span></span>
     
-- Les données sont stockées dans un stockage géorépliqué qui conserve six copies de vos données sur deux centres de données Azure
+- <span data-ttu-id="19b0b-219">Les données sont stockées dans un stockage géorépliqué qui conserve six copies de vos données sur deux centres de données Azure</span><span class="sxs-lookup"><span data-stu-id="19b0b-219">The data is stored in geo-replicated storage, which maintains six copies of your data across two Azure datacenters</span></span>
     
-- Prend en charge les modifications delta, une fréquence définie, la compression, le chiffrement, une conservation plus longue et la limitation de bande passante
+- <span data-ttu-id="19b0b-220">Prend en charge les modifications delta, une fréquence définie, la compression, le chiffrement, une conservation plus longue et la limitation de bande passante</span><span class="sxs-lookup"><span data-stu-id="19b0b-220">Supports delta changes, defined frequency, compression, encryption, longer retention, and bandwidth throttling</span></span>
     
-### <a name="common-uses"></a>Utilisations courantes
+### <a name="common-uses"></a><span data-ttu-id="19b0b-221">Utilisations courantes</span><span class="sxs-lookup"><span data-stu-id="19b0b-221">Common uses</span></span>
 
-- Protéger les données provenant de diverses sources locales (SharePoint, SQL, Exchange) et Azure (machines virtuelles)
+- <span data-ttu-id="19b0b-222">Protéger les données provenant de diverses sources locales (SharePoint, SQL, Exchange) et Azure (machines virtuelles)</span><span class="sxs-lookup"><span data-stu-id="19b0b-222">Protect data from a variety of on-premises (SharePoint, SQL, Exchange) and Azure (VMs) sources</span></span>
     
-### <a name="key-storage-scenarios"></a>Principaux scénarios de stockage
+### <a name="key-storage-scenarios"></a><span data-ttu-id="19b0b-223">Principaux scénarios de stockage</span><span class="sxs-lookup"><span data-stu-id="19b0b-223">Key storage scenarios</span></span>
 
-- Sauvegarder des fichiers
+- <span data-ttu-id="19b0b-224">Sauvegarder des fichiers</span><span class="sxs-lookup"><span data-stu-id="19b0b-224">Backup files</span></span>
     
-### <a name="resources"></a>Ressources
+### <a name="resources"></a><span data-ttu-id="19b0b-225">Ressources</span><span class="sxs-lookup"><span data-stu-id="19b0b-225">Resources</span></span>
 
-Pour plus d'informations, cliquez [ici](http://azure.microsoft.com/services/backup/).
+<span data-ttu-id="19b0b-226">Pour plus d'informations, cliquez [ici](http://azure.microsoft.com/services/backup/).</span><span class="sxs-lookup"><span data-stu-id="19b0b-226">For additional information, click [here](http://azure.microsoft.com/services/backup/).</span></span>
   
-Pour plus d'informations sur les coûts, cliquez [ici](http://azure.microsoft.com/pricing/details/backup/).
+<span data-ttu-id="19b0b-227">Pour plus d'informations sur les coûts, cliquez [ici](http://azure.microsoft.com/pricing/details/backup/).</span><span class="sxs-lookup"><span data-stu-id="19b0b-227">For cost information, click [here](http://azure.microsoft.com/pricing/details/backup/).</span></span>
   
-## <a name="next-step"></a>Étape suivante
+## <a name="next-step"></a><span data-ttu-id="19b0b-228">Étape suivante</span><span class="sxs-lookup"><span data-stu-id="19b0b-228">Next step</span></span>
 
-Consultez les options de stockage cloud décrites dans l'article [Certains assembly requis](some-assembly-required.md).
+<span data-ttu-id="19b0b-229">Consultez les options de stockage cloud décrites dans l'article [Certains assembly requis](some-assembly-required.md).</span><span class="sxs-lookup"><span data-stu-id="19b0b-229">Review the [Some assembly required](some-assembly-required.md) cloud storage options.</span></span>
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a><span data-ttu-id="19b0b-230">See Also</span><span class="sxs-lookup"><span data-stu-id="19b0b-230">See Also</span></span>
 
-[Stockage cloud Microsoft pour les architectes d'entreprise](microsoft-cloud-storage-for-enterprise-architects.md)
+[<span data-ttu-id="19b0b-231">Stockage cloud Microsoft pour les architectes d'entreprise</span><span class="sxs-lookup"><span data-stu-id="19b0b-231">Microsoft Cloud Storage for Enterprise Architects</span></span>](microsoft-cloud-storage-for-enterprise-architects.md)
   
-[Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
+[<span data-ttu-id="19b0b-232">Ressources relatives à l'architecture informatique du cloud Microsoft</span><span class="sxs-lookup"><span data-stu-id="19b0b-232">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs](https://sway.com/FJ2xsyWtkJc2taRD)
+[<span data-ttu-id="19b0b-233">Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs</span><span class="sxs-lookup"><span data-stu-id="19b0b-233">Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers</span></span>](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

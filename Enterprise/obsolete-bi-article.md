@@ -16,8 +16,8 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="obsolete-bi-article"></a>Article d’aide à la décision OBSOLÈTE
+# <a name="obsolete-bi-article"></a><span data-ttu-id="2ff61-104">Article d’aide à la décision OBSOLÈTE</span><span class="sxs-lookup"><span data-stu-id="2ff61-104">OBSOLETE BI article</span></span>
 
-Cet article est obsolète depuis le 7 mars 2014. Consultez [feuille de route du contenu : installation et configuration d’analyse Décisionnelle de SharePoint et SQL](http://technet.microsoft.com/library/a470e75a-2817-42b3-85fd-c76060c13406.aspx).
+<span data-ttu-id="2ff61-p102">Cet article est obsolète depuis le 7 mars 2014. Consultez [feuille de route du contenu : installation et configuration d’analyse Décisionnelle de SharePoint et SQL](http://technet.microsoft.com/library/a470e75a-2817-42b3-85fd-c76060c13406.aspx).</span><span class="sxs-lookup"><span data-stu-id="2ff61-p102">This article is obsolete as of March 7, 2014. See [Content Roadmap: Setup and Configure SharePoint and SQL BI](http://technet.microsoft.com/library/a470e75a-2817-42b3-85fd-c76060c13406.aspx).</span></span>
   
 

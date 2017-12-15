@@ -20,66 +20,66 @@ ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="moving-historical-transaction-data-to-the-cloud"></a>Déplacement des données de transaction historiques dans le cloud
+# <a name="moving-historical-transaction-data-to-the-cloud"></a><span data-ttu-id="7cd16-103">Déplacement des données de transaction historiques dans le cloud</span><span class="sxs-lookup"><span data-stu-id="7cd16-103">Moving historical transaction data to the cloud</span></span>
 
- **Résumé :** Comment Contoso a implémenté SQL Server Stretch Database pour réduire ses besoins en matière de stockage de données locales et ses dépenses quotidiennes de fonctionnement.
+ <span data-ttu-id="7cd16-104">**Résumé :** Comment Contoso a implémenté SQL Server Stretch Database pour réduire ses besoins en matière de stockage de données locales et ses dépenses quotidiennes de fonctionnement.</span><span class="sxs-lookup"><span data-stu-id="7cd16-104">**Summary:** How Contoso implemented SQL Server stretch database to reduce its on-premises data storage needs and daily running costs.</span></span>
   
-Le système de stockage d'entreprise de Contoso stocke une grande quantité de données de transaction historiques pour garantir le respect des exigences réglementaires et réaliser des études marketing et analyses décisionnelles sur les tendances des dépenses. Contoso doit également restaurer les données archivées sur des bandes magnétiques, ce qui prend beaucoup de temps. La date de fin de vie utile du matériel utilisé dans le système de stockage d'entreprise de Contoso approchait, et son remplacement aurait eu un coût important. 
+<span data-ttu-id="7cd16-p101">Le système de stockage d'entreprise de Contoso stocke une grande quantité de données de transaction historiques pour garantir le respect des exigences réglementaires et réaliser des études marketing et analyses décisionnelles sur les tendances des dépenses. Contoso doit également restaurer les données archivées sur des bandes magnétiques, ce qui prend beaucoup de temps. La date de fin de vie utile du matériel utilisé dans le système de stockage d'entreprise de Contoso approchait, et son remplacement aurait eu un coût important.</span><span class="sxs-lookup"><span data-stu-id="7cd16-p101">Contoso's enterprise storage system stores a large amount of historical transaction data for adherence with regulatory requirements and for marketing research and BI analysis of spending trends. Contoso also needs to restore archived data from magnetic tape, a time-intensive process. The hardware in Contoso's enterprise storage system was nearing its end of life and replacing it would be very expensive.</span></span> 
   
-Dans la mesure où l'entreprise avait besoin de réduire la taille de ses centres de données locales, Contoso a choisi de procéder à la mise à niveau vers SQL Server 2016 en raison de la fonction hybride de Stretch Database et de son intégration transparente avec Azure. Stretch Database permet à Contoso de déplacer les données froides de ses tables depuis son emplacement de stockage local vers le cloud, pour libérer de l'espace disque local et réduire la maintenance. Les données froides et chaudes se trouvent dans les mêmes tables, peuvent toujours être utilisées par les applications et leurs utilisateurs, et restent disponibles pour les opérations de maintenance, telles que les sauvegardes et les restaurations. La figure 1 présente Stretch Database.
+<span data-ttu-id="7cd16-p102">Dans la mesure où l'entreprise avait besoin de réduire la taille de ses centres de données locales, Contoso a choisi de procéder à la mise à niveau vers SQL Server 2016 en raison de la fonction hybride de Stretch Database et de son intégration transparente avec Azure. Stretch Database permet à Contoso de déplacer les données froides de ses tables depuis son emplacement de stockage local vers le cloud, pour libérer de l'espace disque local et réduire la maintenance. Les données froides et chaudes se trouvent dans les mêmes tables, peuvent toujours être utilisées par les applications et leurs utilisateurs, et restent disponibles pour les opérations de maintenance, telles que les sauvegardes et les restaurations. La figure 1 présente Stretch Database.</span><span class="sxs-lookup"><span data-stu-id="7cd16-p102">As part of its business need to scale down its on-premises datacenters, Contoso chose to upgrade to SQL Server 2016 because of the Stretch Database hybrid feature and its seamless integration with Azure. Stretch Database allows Contoso to move the cold data in its tables from on-premises to cloud storage, freeing up local disk space and reducing maintenance. Both hot and cold data are in the same tables and are always available to applications and their users and for maintenance, such as backups and restores. Figure 1 shows Stretch Database.</span></span>
   
-**Figure 1 : SQL Server Stretch Database**
+<span data-ttu-id="7cd16-112">**Figure 1 : SQL Server Stretch Database**</span><span class="sxs-lookup"><span data-stu-id="7cd16-112">**Figure 1: SQL Server Stretch Database**</span></span>
 
 ![Stretch Database avec SQL Server comme solution de données hybride](images/Contoso_Poster/StretchDB01.png)
   
-La figure 1 montre comment un client SQL envoie des requêtes T-SQL sur un serveur qui exécute SQL Server 2016, lequel les transfère vers Azure SQL Stretch Database dans Azure PaaS.
+<span data-ttu-id="7cd16-114">La figure 1 montre comment un client SQL envoie des requêtes T-SQL sur un serveur qui exécute SQL Server 2016, lequel les transfère vers Azure SQL Stretch Database dans Azure PaaS.</span><span class="sxs-lookup"><span data-stu-id="7cd16-114">Figure 1 shows how a SQL client sends T-SQL queries to a server running SQL Server 2016, which forwards them to an Azure SQL Stretch Database in Azure PaaS.</span></span>
   
-Pour plus d'informations, voir [Stretch Database](https://msdn.microsoft.com/library/dn935011.aspx).
+<span data-ttu-id="7cd16-115">Pour plus d'informations, voir [Stretch Database](https://msdn.microsoft.com/library/dn935011.aspx).</span><span class="sxs-lookup"><span data-stu-id="7cd16-115">For more information, see [Stretch Database](https://msdn.microsoft.com/library/dn935011.aspx).</span></span>
   
-Contoso a suivi les étapes suivantes pour déplacer ses données historiques vers le cloud :
+<span data-ttu-id="7cd16-116">Contoso a suivi les étapes suivantes pour déplacer ses données historiques vers le cloud :</span><span class="sxs-lookup"><span data-stu-id="7cd16-116">Contoso used these steps to move their historical data to the cloud:</span></span>
   
-1. Analyse des bases de données
+1. <span data-ttu-id="7cd16-117">Analyse des bases de données</span><span class="sxs-lookup"><span data-stu-id="7cd16-117">Analyze databases</span></span>
     
-    A analysé les tables situées dans les bases de données qu'il prévoyait de transférer vers le cloud et a résolu tous les problèmes. Le nouveau gestionnaire de Stretch Database leur a présenté les fonctionnalités de SQL Server 2016, y compris les tables qui contiennent des données froides extensibles.
+    <span data-ttu-id="7cd16-p103">A analysé les tables situées dans les bases de données qu'il prévoyait de transférer vers le cloud et a résolu tous les problèmes. Le nouveau gestionnaire de Stretch Database leur a présenté les fonctionnalités de SQL Server 2016, y compris les tables qui contiennent des données froides extensibles.</span><span class="sxs-lookup"><span data-stu-id="7cd16-p103">Performed an analysis of the tables in the databases that they intended to move to the cloud and fixed any issues. The new Stretch Database Advisor gave them a full overview of what they can expect from all features in SQL Server 2016, including which tables have cold data that could be stretched.</span></span>
     
-2. Mise à niveau
+2. <span data-ttu-id="7cd16-120">Mise à niveau</span><span class="sxs-lookup"><span data-stu-id="7cd16-120">Upgrade</span></span>
     
-    A mis à niveau les serveurs SQL existants du centre de données de son siège social parisien vers SQL Server 2016.
+    <span data-ttu-id="7cd16-121">A mis à niveau les serveurs SQL existants du centre de données de son siège social parisien vers SQL Server 2016.</span><span class="sxs-lookup"><span data-stu-id="7cd16-121">Updated existing SQL servers in the Paris headquarters datacenter to SQL Server 2016.</span></span>
     
-3. Migration des données froides vers le cloud
+3. <span data-ttu-id="7cd16-122">Migration des données froides vers le cloud</span><span class="sxs-lookup"><span data-stu-id="7cd16-122">Migrate cold data to the cloud</span></span>
     
-    A identifié les bases de données à étendre et les tables à migrer vers des instances de Stretch Database dans Azure, à l'aide de SQL Management Studio. En arrière-plan, SQL Server 2016 a progressivement déplacé les données historiques vers Stretch Database dans Azure.
+    <span data-ttu-id="7cd16-p104">A identifié les bases de données à étendre et les tables à migrer vers des instances de Stretch Database dans Azure, à l'aide de SQL Management Studio. En arrière-plan, SQL Server 2016 a progressivement déplacé les données historiques vers Stretch Database dans Azure.</span><span class="sxs-lookup"><span data-stu-id="7cd16-p104">Using SQL Management Studio, they identified the databases to stretch and the tables to migrate to instances of Stretch Database in Azure. Over time and in the background, SQL Server 2016 moved the historical data to stretch databases in Azure.</span></span>
     
-Voici la configuration finale d'un serveur exécutant SQL Server 2016 au siège social parisien.
+<span data-ttu-id="7cd16-125">Voici la configuration finale d'un serveur exécutant SQL Server 2016 au siège social parisien.</span><span class="sxs-lookup"><span data-stu-id="7cd16-125">Here is the resulting configuration for one server running SQL Server 2016 in the Paris headquarters.</span></span>
   
-**Figure 2 : Utilisation de Stretch Database pour un serveur situé dans le centre de données de Contoso**
+<span data-ttu-id="7cd16-126">**Figure 2 : Utilisation de Stretch Database pour un serveur situé dans le centre de données de Contoso**</span><span class="sxs-lookup"><span data-stu-id="7cd16-126">**Figure 2: Using Stretch Database for a server in Contoso's datacenter**</span></span>
 
 ![Configuration de Contoso pour Stretch Database avec SQL Server pour un ordinateur unique exécutant SQL Server](images/Contoso_Poster/StretchDB02.png)
 
   
-La figure 2 montre comment les requêtes d'utilisateurs envoyées sur un serveur d'applications du centre de données de Contoso deviennent des requêtes SQL transmises à Azure SQL Stretch Database dans Azure PaaS.
+<span data-ttu-id="7cd16-128">La figure 2 montre comment les requêtes d'utilisateurs envoyées sur un serveur d'applications du centre de données de Contoso deviennent des requêtes SQL transmises à Azure SQL Stretch Database dans Azure PaaS.</span><span class="sxs-lookup"><span data-stu-id="7cd16-128">Figure 2 shows how user queries to an application server in Contoso's datacenter become SQL queries that are passed to an Azure SQL Stretch Database in Azure PaaS.</span></span>
   
-Les utilisateurs ont accès aux données via les requêtes et les applications existantes. Les stratégies d'accès ne sont pas modifiées. Contoso n'aura plus besoin d'effectuer des sauvegardes sur bande par la suite. Les opérations de maintenance consisteront uniquement en la sauvegarde et la restauration des données chaudes.
+<span data-ttu-id="7cd16-p105">Les utilisateurs ont accès aux données via les requêtes et les applications existantes. Les stratégies d'accès ne sont pas modifiées. Contoso n'aura plus besoin d'effectuer des sauvegardes sur bande par la suite. Les opérations de maintenance consisteront uniquement en la sauvegarde et la restauration des données chaudes.</span><span class="sxs-lookup"><span data-stu-id="7cd16-p105">Users access the data through existing apps and queries. Access policies remain the same. Moving forward, there is no need for tape backups. Maintenance consists of backing up and restoring hot data.</span></span>
   
-Après l'implémentation de Stretch Database, Contoso a :
+<span data-ttu-id="7cd16-133">Après l'implémentation de Stretch Database, Contoso a :</span><span class="sxs-lookup"><span data-stu-id="7cd16-133">After implementing Stretch Database, Contoso:</span></span>
   
-- réduit de 85 % ses besoins en matière de stockage de données locales ;
+- <span data-ttu-id="7cd16-134">réduit de 85 % ses besoins en matière de stockage de données locales ;</span><span class="sxs-lookup"><span data-stu-id="7cd16-134">Reduced its on-premises data storage needs by 85%.</span></span>
     
-- mis à jour le système de stockage d'entreprise et a supprimé l'archivage des données sur bande magnétique ;
+- <span data-ttu-id="7cd16-135">mis à jour le système de stockage d'entreprise et a supprimé l'archivage des données sur bande magnétique ;</span><span class="sxs-lookup"><span data-stu-id="7cd16-135">Made the update of the enterprise storage system and reliance on magnetic tape archives unnecessary.</span></span>
     
-- réalisé d'importantes économies sur ses dépenses quotidiennes de fonctionnement.
+- <span data-ttu-id="7cd16-136">réalisé d'importantes économies sur ses dépenses quotidiennes de fonctionnement.</span><span class="sxs-lookup"><span data-stu-id="7cd16-136">Reduced its daily running costs significantly.</span></span>
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a><span data-ttu-id="7cd16-137">See Also</span><span class="sxs-lookup"><span data-stu-id="7cd16-137">See Also</span></span>
 
-[Scénarios d'entreprise pour la société Contoso](enterprise-scenarios-for-the-contoso-corporation.md)
+[<span data-ttu-id="7cd16-138">Scénarios d'entreprise pour la société Contoso</span><span class="sxs-lookup"><span data-stu-id="7cd16-138">Enterprise scenarios for the Contoso Corporation</span></span>](enterprise-scenarios-for-the-contoso-corporation.md)
   
-[Contoso dans le cloud de Microsoft](contoso-in-the-microsoft-cloud.md)
+[<span data-ttu-id="7cd16-139">Contoso dans le cloud de Microsoft</span><span class="sxs-lookup"><span data-stu-id="7cd16-139">Contoso in the Microsoft Cloud</span></span>](contoso-in-the-microsoft-cloud.md)
   
-[Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
+[<span data-ttu-id="7cd16-140">Ressources relatives à l'architecture informatique du cloud Microsoft</span><span class="sxs-lookup"><span data-stu-id="7cd16-140">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-[Stretch Database](https://msdn.microsoft.com/library/dn935011.aspx)
+[<span data-ttu-id="7cd16-141">Stretch Database</span><span class="sxs-lookup"><span data-stu-id="7cd16-141">Stretch Database</span></span>](https://msdn.microsoft.com/library/dn935011.aspx)
   
-[Feuille de route de Microsoft Enterprise Cloud : Ressources pour les décideurs informatiques](https://sway.com/FJ2xsyWtkJc2taRD)
+[<span data-ttu-id="7cd16-142">Feuille de route de Microsoft Enterprise Cloud : Ressources pour les décideurs informatiques</span><span class="sxs-lookup"><span data-stu-id="7cd16-142">Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers</span></span>](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

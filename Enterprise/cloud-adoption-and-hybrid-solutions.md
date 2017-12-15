@@ -1,55 +1,129 @@
 ---
-title: Adoption du cloud et solutions hybrides
-ms.author: josephd
+title: "Solutions de nuage d’entreprise"
+description: "Résoudre les problèmes de l’entreprise en utilisant le Cloud Microsoft. Trouvez des informations sur la dernière hybride et solutions de nuage sécurité, adoption du cloud et bien plus encore."
+services: o365-solutions
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
-ms.audience: ITPro
-ms.topic: hub-page
+layout: LandingPage
+ms.assetid: 
 ms.service: o365-solutions
-localization_priority: Normal
-ms.collection:
-- Ent_O365_Top
-- Ent_O365
-- Ent_O365_Hybrid
-- Ent_O365_Hybrid_Top
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
-ms.assetid: be3a216c-af59-4c7f-929f-f2351fde5618
-description: "Résumé : Résoudre les problèmes de l’entreprise en utilisant le Cloud Microsoft. Trouvez des informations sur la dernière hybride et solutions de nuage sécurité, adoption du cloud et bien plus encore."
-ms.openlocfilehash: d32818e2936b89a362d18cd35318925e048d5aca
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.tgt_pltfrm: na
+ms.devlang: na
+ms.topic: landing-page
+ms.date: 12/13/2017
+ms.author: JoeDavies-MSFT
+ms.openlocfilehash: c9717be6f881968af0cc8ef66dfae54f4a6e7298
+ms.sourcegitcommit: d61cf5f3cd127dc0d446c5e78402aa8913041d06
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="cloud-adoption-and-hybrid-solutions"></a>Adoption du cloud et solutions hybrides
+<h1>Solutions de nuage d’entreprise</h1>
+<p>Résoudre les problèmes de l’entreprise en utilisant le Cloud Microsoft. Trouvez des informations sur la dernière hybride et solutions de nuage sécurité, adoption du cloud et bien plus encore.</p>
+<p>Les solutions techniques répondant aux problèmes actuels des entreprises impliquent souvent plusieurs produits et plateformes. Vous pouvez tirer parti de votre infrastructure locale existante tout en bénéficiant de la flexibilité et de l’économie de coût que représentent les plateformes et les services cloud de Microsoft. Notre objectif est de fournir les informations nécessaires pour vous aider à atteindre vos objectifs d’entreprise à l’aide des produits et services Microsoft. </p>
+<ul class="cardsF panelContent">
+    <li>
+        <a href="/office365/enterprise/microsoft-cloud-it-architecture-resources">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/en-us/media/common/i_cloud_it_architecture.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Ressources d’architecture informatique en nuage</h3>
+                <p>Utilisez ces outils d’architecture et des affiches pour en savoir plus sur les plates-formes, y compris Office 365, Microsoft Azure, mobilité d’entreprise Microsoft + sécurité (EMS) et de services de Cloud Microsoft / Intune, Dynamics 365 de Microsoft, private cloud centre de données et en local solutions hybride et le nuage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li> 
+    <li>
+        <a href="/office365/enterprise/architectural-models-for-sharepoint-exchange-skype-for-business-and-lync">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/common/i_architecture.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Modèles architecturaux</h3>
+                <p>Utilisez ces modèles architecturaux et les options de déploiement pour SharePoint, Exchange, Skype pour les entreprises et Lync pour déterminer votre configuration et plate-forme idéale.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/office365/enterprise/cloud-adoption-test-lab-guides-tlgs">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/common/i_test.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Guides de laboratoire de test</h3>
+                <p>Utilisez ces cloud adoption tester des Guides de laboratoires (TLGs) pour configurer les environnements de développement/test pour Office 365, Azure, mobilité d’entreprise + sécurité (EMS) / produits Intune, Dynamics 365 et Office Server.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/office365/enterprise/hybrid-solutions">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/en-us/media/common/i_hybrid.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Solutions hybrides</h3>
+                <p>Découvrez comment déployer des charges de travail Office Server dans les services d’infrastructure Azure.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/office365/enterprise/security-solutions">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/common/i_cloud-security.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Solutions de sécurité</h3>
+                <p>Apprenez à déployer des solutions de sécurité avec les services en nuage de Microsoft et de plates-formes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+</ul>
 
- **Résumé :** Résoudre les problèmes de l’entreprise en utilisant le Cloud Microsoft. Trouvez des informations sur la dernière hybride et solutions de nuage sécurité, adoption du cloud et bien plus encore.
-  
-Solutions techniques pour les problèmes des entreprises actuels impliquent souvent plusieurs produits et plates-formes. Vous pouvez tirer parti de votre infrastructure sur site tout en tirant parti de la souplesse et des économies offertes par les plates-formes et les services en nuage de Microsoft. Notre objectif est de fournir les informations nécessaires pour vous aider à atteindre vos objectifs métiers à l’aide de produits et services Microsoft. 
-  
-## <a name="in-this-section"></a>Dans cette section
+---
 
-- **[Ressources d’architecture de Cloud de Microsoft IT](microsoft-cloud-it-architecture-resources.md)** - utiliser ces outils d’architecture et des affiches pour en savoir plus sur les plates-formes, y compris Office 365, Microsoft Azure, mobilité d’entreprise Microsoft + sécurité (EMS) et de services de Cloud Microsoft / Intune, Microsoft Dynamics 365, datacenter de cloud privé et des solutions de hybride et nuage sur site
-    
-- **[Modèles d’architecture pour SharePoint, Exchange, Skype pour les entreprises et Lync](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)** - Utilisez ces modèles d’architecturales et de déploiement des options pour SharePoint, Exchange, Skype pour les entreprises et Lync déterminer votre configuration et plate-forme idéale.
-    
-- **[Adoption du nuage Guides de laboratoires de Test (TLGs)](cloud-adoption-test-lab-guides-tlgs.md)** - Utilisez ces cloud adoption tester des Guides de laboratoires (TLGs) pour configurer les environnements de développement/test pour Office 365, Azure, mobilité d’entreprise + sécurité (EMS) / produits Intune, Dynamics 365 et Office Server.
-    
-- **[Les solutions hybrides](hybrid-solutions.md)** - Apprenez à déployer des charges de travail Office Server dans les services d’infrastructure Azure.
-    
-- **[Solutions de sécurité](security-solutions.md)** - Apprenez à déployer des solutions de sécurité avec les services en nuage de Microsoft et de plates-formes.
-
-<br/>
-
-**Participer à la discussion**
-
-|**Contactez-nous**|**Description**|
-|:-----|:-----|
-|**De quelles solutions avez-vous besoin ?** <br/> |Nous sommes en train de créer du contenu pour les solutions qui s'étendent sur plusieurs produits et services Microsoft. Donnez-nous votre avis sur nos solutions entre serveurs ou demandez des solutions spécifiques en envoyant un courrier électronique à [MODAcontent@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20).<br/> |
-|**Participer à la discussion sur les solutions** <br/> |Si vous êtes passionné de solutions basées sur le nuage, envisagez du nuage Adoption Advisory Board (CAAB) pour vous connecter à une Communauté plus grande, aux couleurs éclatantes des développeurs de contenu Microsoft, les professionnels de l’industrie et clients partout dans le monde. Pour joindre, ajoutez-vous en tant que membre de l' [espace CAAB (comité consultatif nuage Adoption)](https://aka.ms/caab) de la Communauté technique de Microsoft et de nous envoyer un bref courriel à [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Toute personne peut lire le contenu communautaire sur le [blog CAAB](https://blogs.technet.com/b/solutions_advisory_board/). Toutefois, les membres CAAB obtenir des invitations à des séminaires en ligne privée qui décrivent les nouvelles ressources d’adoption de nuage et de solutions.<br/> |
-|**Obtenir l'image que vous voyez ici** <br/> |Si vous souhaitez une copie modifiable de l’image que vous voyez dans cet article, nous serons heureux de vous l’envoyer. Votre demande, y compris l’URL et le titre de l’art, à [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20)par e-mail.<br/> |
-   
-
+<h2>Nous contacter</h2>
+<ul>
+    <li><a href="mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20">De quelles solutions avez-vous besoin ?</a><br>Nous créons le contenu pour l’adoption du nuage qui s’étend sur plusieurs plateformes en nuage de Microsoft et des services. Faites-nous savoir ce que vous pensez de notre contenu d’adoption de nuage, ou demandez un contenu spécifique en envoyant un e-mail à cloudadopt@microsoft.com.</li><br>
+    <li><a href="https://aka.ms/caab">Participer à la discussion sur les solutions</a><br>Si vous êtes passionné de solutions basées sur le nuage, envisagez du nuage Adoption Advisory Board (CAAB) pour vous connecter à une Communauté plus grande, aux couleurs éclatantes des développeurs de contenu Microsoft, les professionnels de l’industrie et clients partout dans le monde. Pour participer, ajoutez-vous en tant que membre de l’espace CAAB (comité consultatif nuage Adoption) de la Communauté technique de Microsoft et nous envoyer un bref courriel à <a href="mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!">CAAB@microsoft.com</a>. Toute personne peut lire le contenu communautaire sur le <a href="https://blogs.technet.com/b/solutions_advisory_board/">blog</a>de CAAB. Toutefois, les membres CAAB obtenir des invitations à des séminaires en ligne privée qui décrivent les nouvelles ressources d’adoption de nuage et de solutions.</li><br>
+    <li><a href="mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20">Obtenir l'image que vous voyez ici</a><br>Si vous souhaitez une copie modifiable de l’image que vous voyez dans cet article, nous serons heureux de vous l’envoyer. Votre demande, y compris l’URL et le titre de l’art, à cloudadopt@microsoft.com par e-mail</li>
+</ul>

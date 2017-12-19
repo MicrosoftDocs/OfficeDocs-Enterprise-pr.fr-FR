@@ -1,5 +1,5 @@
 ---
-title: Conception d'espace de stockage pour le cloud de Microsoft
+title: "Conception d’espace de stockage pour le cloud de Microsoft"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -18,23 +18,23 @@ ms.assetid: 7e511118-1b75-413a-b959-ad0d3ffc9516
 description: "Résumé : Découvrez pourquoi vous avez besoin de stockage cloud et passez en revue la liste des options de stockage cloud de Microsoft et les principaux scénarios de stockage."
 ms.openlocfilehash: 3501f6a39498276d02fe4178f701a06dfb6a3e93
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="designing-storage-for-the-microsoft-cloud"></a>Conception d'espace de stockage pour le cloud de Microsoft
+# <a name="designing-storage-for-the-microsoft-cloud"></a>Conception d’espace de stockage pour le cloud de Microsoft
 
  **Résumé :** Découvrez pourquoi vous avez besoin de stockage cloud et passez en revue la liste des options de stockage cloud de Microsoft et les principaux scénarios de stockage.
   
-L'intégration de votre espace de stockage aux services de cloud computing Microsoft permet d'accéder à un vaste éventail de services et d'options de plateforme cloud.
+L’intégration de votre espace de stockage aux services de cloud computing Microsoft permet d’accéder à un vaste éventail de services et d’options de plateforme cloud.
   
-## <a name="why-cloud-storage"></a>Pourquoi un stockage cloud ?
+## <a name="why-cloud-storage"></a>Pourquoi un stockage cloud ?
 
-Il y a deux raisons principales à l'utilisation du stockage cloud.
+Il y a deux raisons principales à l’utilisation du stockage cloud.
   
-1. Vitesse de mise sur le marché :
+1. Vitesse de mise sur le marché :
     
-  - Configuration plus rapide pour la haute disponibilité et la récupération d'urgence
+  - Configuration plus rapide pour la haute disponibilité et la récupération d’urgence
     
   - Aucun matériel de stockage à acheter
     
@@ -42,13 +42,13 @@ Il y a deux raisons principales à l'utilisation du stockage cloud.
     
   - Disponible partout dans le monde
     
-2. Coûts de maintenance réduits :
+2. Coûts de maintenance réduits :
     
-  - Élasticité de mise à l'échelle en fonction de la demande de stockage
+  - Élasticité de mise à l’échelle en fonction de la demande de stockage
     
   - Aucun matériel de stockage dont effectuer la maintenance ou à migrer
     
-  - Microsoft est votre plombier intégré pour la maintenance et l'amélioration de l'infrastructure
+  - Microsoft est votre plombier intégré pour la maintenance et l’amélioration de l’infrastructure
     
   - Meilleure sécurité de stockage du marché grâce à des améliorations continues
     
@@ -60,13 +60,13 @@ Pour vous aider à comprendre les diverses options de stockage cloud, nous utili
 
 Utilisez ces solutions prépackagées incluant des services existants. Soyez immédiatement opérationnel avec un minimum de configuration.
   
-- Office 365
+- Office 365
     
-- Microsoft Intune
+- Microsoft Intune
     
 - OneDrive Entreprise
     
-- Dynamics 365
+- Dynamics 365
     
 - Visual Studio Team Services
     
@@ -90,7 +90,7 @@ Utilisez ces services existants comme point de départ pour votre solution de st
     
 - Cache Redis Azure
     
-- Base de données SQL Azure
+- Base de données SQL Azure
     
 - SQL Server sur machine virtuelle Azure
     
@@ -106,27 +106,27 @@ Pour obtenir des informations sur chacune de ces options de stockage cloud, cons
   
 ### <a name="build-from-the-ground-up"></a>Créer de A à Z
 
-Utilisez ces blocs de construction de stockage, ainsi qu'un codage, pour créer votre propre solution de stockage ou des applications de A à Z.
+Utilisez ces blocs de construction de stockage, ainsi qu’un codage, pour créer votre propre solution de stockage ou des applications de A à Z.
   
 - Stockage Azure (fichiers)
     
 - Stockage Azure (blobs)
     
-- Stockage Azure (files d'attente)
+- Stockage Azure (files d’attente)
     
 - Stockage Azure (tables)
     
 Pour obtenir des informations sur chacune de ces options de stockage cloud, consultez l'article [Créer de A à Z](build-from-the-ground-up.md).
   
-## <a name="key-storage-scenarios"></a>Principaux scénarios de stockage
+## <a name="key-storage-scenarios"></a>Scénarios de stockage de clés
 
-Voici les principaux scénarios qui nécessitent un stockage basé sur le cloud :
+Voici les principaux scénarios qui nécessitent un stockage basé sur le cloud :
   
 - Mettre en cache des données
     
-    Accélérez l'accès aux données fréquemment utilisées en les stockant dans un cache à haut débit.
+    Accélérez l’accès aux données fréquemment utilisées en les stockant dans un cache à haut débit.
     
-- Collaborer avec les membres d'une équipe
+- Collaborer avec les membres d’une équipe
     
     Autorisez plusieurs utilisateurs à accéder aux données du stockage cloud.
     
@@ -136,29 +136,29 @@ Voici les principaux scénarios qui nécessitent un stockage basé sur le cloud 
     
 - Gérer le code source
     
-    Chargez et exécutez des fichiers de code d'application dans le cloud, et collaborez sur ceux-ci.
+    Chargez et exécutez des fichiers de code d’application dans le cloud, et collaborez sur ceux-ci.
     
 - Sauvegarder des fichiers
     
     Stockez des copies de données internes ou externes hors site dans plusieurs emplacements du cloud.
     
-- Publier des communications d'entreprise
+- Publier des communications d’entreprise
     
     Créez un point de publication unique pour les messages internes ou externes.
     
-- Distribuer des millions d'événements
+- Distribuer des millions d’événements
     
-    Créez un espace de stockage pour l'ingestion de la télémétrie de sites web, d'applications et d'appareils.
+    Créez un espace de stockage pour l’ingestion de la télémétrie de sites web, d’applications et d’appareils.
     
 - Gérer et diffuser des vidéos
     
-    Stockez et diffusez du contenu vidéo à des clients ou à des utilisateurs au sein de l'organisation.
+    Stockez et diffusez du contenu vidéo à des clients ou à des utilisateurs au sein de l’organisation.
     
 ## <a name="next-step"></a>Étape suivante
 
 Consultez les options de stockage cloud décrites dans l'article [Solutions prêtes à installer](move-in-ready.md).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Voir aussi
 
 [Stockage cloud Microsoft pour les architectes d'entreprise](microsoft-cloud-storage-for-enterprise-architects.md)
   

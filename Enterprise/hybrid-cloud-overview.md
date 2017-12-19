@@ -18,7 +18,7 @@ ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: "Résumé : Comprendre la définition et les éléments du cloud hybride Microsoft."
 ms.openlocfilehash: 9ece0f2e09384c0b9e6d9042b899d782be6327b5
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/15/2017
 ---
@@ -30,9 +30,9 @@ Le cloud hybride utilise des ressources de calcul ou de stockage sur votre rése
   
 ## <a name="microsoft-hybrid-cloud"></a>Cloud hybride Microsoft
 
-Le cloud hybride Microsoft représente un ensemble de scénarios professionnels qui combinent une plateforme cloud Microsoft à un composant local, par exemple : 
+Le cloud hybride Microsoft représente un ensemble de scénarios professionnels qui combinent une plateforme cloud Microsoft à un composant local, par exemple : 
   
-- Obtention de résultats de recherche pour du contenu stocké dans une batterie SharePoint locale et dans SharePoint Online dans Office 365.
+- Obtention de résultats de recherche pour du contenu stocké dans une batterie SharePoint locale et dans SharePoint Online dans Office 365.
     
 - Application mobile exécutée dans Azure qui interroge un magasin de données local.
     
@@ -42,13 +42,13 @@ Le cloud hybride Microsoft représente un ensemble de scénarios professionnels 
 
 ![Composants du cloud hybride Microsoft](images/Hybrid_Poster/MS_Hybrid_Cloud.png)
   
-La figure 1 présente les composants du cloud hybride Microsoft, d'un réseau local à l'ensemble des services Office 365, Paas Azure et IaaS Azure disponibles sur Internet ou une connexion ExpressRoute.
+La figure 1 présente les composants du cloud hybride Microsoft, d’un réseau local à l’ensemble des services Office 365, Paas Azure et IaaS Azure disponibles sur Internet ou une connexion ExpressRoute.
   
-Étant donné que Microsoft propose l'une des solutions cloud les plus complètes sur le marché (Software as a Service (SaaS), Platform as a Service (PaaS) et Infrastructure as a Service (IaaS), vous pouvez :
+Étant donné que Microsoft propose l’une des solutions cloud les plus complètes sur le marché (Software as a Service (SaaS), Platform as a Service (PaaS) et Infrastructure as a Service (IaaS), vous pouvez :
   
-- tirer parti des investissements que vous avez effectués dans votre environnement local lorsque vous migrez des charges de travail et des applications vers le cloud ;
+- tirer parti des investissements que vous avez effectués dans votre environnement local lorsque vous migrez des charges de travail et des applications vers le cloud ;
     
-- incorporer des scénarios de cloud hybride dans votre planification informatique à long terme, par exemple, lorsque des réglementations ou des politiques vous empêchent de déplacer des données ou des charges de travail spécifiques vers le cloud ;
+- incorporer des scénarios de cloud hybride dans votre planification informatique à long terme, par exemple, lorsque des réglementations ou des politiques vous empêchent de déplacer des données ou des charges de travail spécifiques vers le cloud ;
     
 - créer des scénarios hybrides supplémentaires qui incluent plusieurs services et plateformes cloud de Microsoft.
     
@@ -58,7 +58,7 @@ Les scénarios de cloud hybride utilisant les services cloud Microsoft dépenden
     
     Les services SaaS de Microsoft incluent Office 365, Microsoft Intune et Microsoft Dynamics 365. Les scénarios de cloud hybride avec les services SaaS de Microsoft combinent ces services aux applications ou services locaux. Par exemple, Exchange Online exécuté dans Office 365 peut être intégré à Skype Entreprise 2015 qui est déployé en local.
     
-- Azure PaaS
+- Azure PaaS
     
     Les services PaaS de Microsoft Azure permettent de créer des applications basées sur le cloud. Les scénarios de cloud hybride avec les services PaaS Azure combinent une application PaaS Azure aux applications ou ressources locales. Par exemple, une application PaaS Azure peut interroger en toute sécurité une banque de données locale afin d'obtenir les informations nécessaires à afficher pour les utilisateurs de l'application mobile.
     
@@ -86,7 +86,7 @@ Vous devez tenir compte des éléments suivants lorsque vous planifiez et implé
     
     Dans le cadre de scénarios cloud hybrides, la gestion inclut la capacité à assurer l'entretien des paramètres, données, comptes, stratégies et autorisations, ainsi qu'à assurer la surveillance continue de l'état d'intégrité des éléments du scénario et de ses performances. Vous pouvez également utiliser le même ensemble d'outils, tels que Systems Management Server, pour la gestion des ordinateurs virtuels dans IaaS Azure.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Voir aussi
 
 [Cloud hybride Microsoft pour les architectes d'entreprise](microsoft-hybrid-cloud-for-enterprise-architects.md)
   

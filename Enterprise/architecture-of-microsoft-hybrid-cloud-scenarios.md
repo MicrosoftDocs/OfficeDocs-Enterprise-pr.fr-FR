@@ -18,7 +18,7 @@ ms.assetid: 06d8c959-39e5-4150-b1ae-aaf0eee4c058
 description: "Résumé : Comprendre l'architecture d'offres de cloud hybride Microsoft."
 ms.openlocfilehash: 0909964421cecec455ed3c45c965a330501d361c
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/15/2017
 ---
@@ -32,7 +32,7 @@ Utilisez une approche orientée architecture pour planifier et implémenter des 
 
 ![Pile du cloud hybride Microsoft](images/Hybrid_Poster/Hybrid_Cloud_Stack.png)
   
-La Figure 1 présente la pile du cloud hybride Microsoft et sa couche, qui incluent les applications et scénarios d'identité, réseau et locaux et la catégorie de service de cloud (SaaS Microsoft, Azure SaaS et Azure PaaS).
+La Figure 1 présente la pile du cloud hybride Microsoft et sa couche, qui incluent les applications et scénarios d’identité, réseau et locaux et la catégorie de service de cloud (SaaS Microsoft, Azure SaaS et Azure PaaS).
   
 La couche d'applications et de scénarios contient les scénarios de cloud hybride spécifiques qui sont détaillés dans les autres articles de ce modèle. Les couches locales, d'identité et réseau peuvent être communes aux catégories de service de cloud (SaaS, PaaS ou IaaS).
   
@@ -48,7 +48,7 @@ La couche d'applications et de scénarios contient les scénarios de cloud hybri
     
     Pour l'infrastructure d'identité de cloud, il y a deux façons de procéder, en fonction de la plateforme de cloud Microsoft. Pour SaaS et Azure PaaS, intégrez votre infrastructure d'identité locale avec Azure AD ou effectuez une fédération avec vos fournisseurs d'identité tiers ou infrastructure d'identité locale. Pour les ordinateurs virtuels exécutés dans Azure, vous pouvez étendre votre infrastructure d'identité locale, telle que Windows Server AD, aux réseaux virtuels où résident vos ordinateurs virtuels.
     
-## <a name="hybrid-cloud-scenarios-for-the-three-phase-cloud-adoption-process"></a>Scénarios de cloud hybride pour le processus d'adoption du cloud en trois phases
+## <a name="hybrid-cloud-scenarios-for-the-three-phase-cloud-adoption-process"></a>Scénarios de cloud hybride pour le processus d’adoption du cloud en trois phases
 
 De nombreuses entreprises, y compris celles détenues par Microsoft, utilisent une approche à trois phases pour adopter le cloud. Les scénarios de cloud hybride peuvent jouer un rôle dans chaque phase.
   
@@ -60,11 +60,11 @@ De nombreuses entreprises, y compris celles détenues par Microsoft, utilisent u
     
     Les applications hybrides PaaS Azure peuvent tirer parti en toute sécurité des ressources de serveur ou de stockage locales.
     
-3. Déplacement d'applications existantes vers les services IaaS Azure
+3. Déplacement d’applications existantes vers les services IaaS Azure
     
-    Pour les scénarios de réplication dans le cloud (« lift-and-shift ») et de refonte orientée cloud (« build-in-the-cloud »), les applications serveur exécutées sur des ordinateurs virtuels Azure offrent des possibilités de configuration et de mise à l'échelle faciles à mettre en œuvre.
+    Pour les scénarios de réplication dans le cloud (« lift-and-shift ») et de refonte orientée cloud (« build-in-the-cloud »), les applications serveur exécutées sur des ordinateurs virtuels Azure offrent des possibilités de configuration et de mise à l’échelle faciles à mettre en œuvre.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Voir aussi
 
 [Cloud hybride Microsoft pour les architectes d'entreprise](microsoft-hybrid-cloud-for-enterprise-architects.md)
   

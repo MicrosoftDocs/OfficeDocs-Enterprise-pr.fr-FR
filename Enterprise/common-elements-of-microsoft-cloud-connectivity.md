@@ -16,7 +16,7 @@ ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
 description: "Résumé : Comprendre les éléments communs d'infrastructure réseau et comment préparer votre réseau."
 ms.openlocfilehash: 27a83217e94d6a0f882825c57346b58ea1834443
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/15/2017
 ---
@@ -24,12 +24,12 @@ ms.lasthandoff: 12/15/2017
 
  **Résumé :** Comprendre les éléments communs d'infrastructure réseau et comment préparer votre réseau.
   
-L'intégration de votre réseau avec le cloud Microsoft fournit un accès optimal à une large gamme de services.
+L’intégration de votre réseau avec le cloud Microsoft fournit un accès optimal à une large gamme de services.
   
 ## <a name="steps-to-prepare-your-network-for-microsoft-cloud-services"></a>Étapes pour préparer votre réseau pour les services cloud de Microsoft
 <a name="steps"> </a>
 
-Pour votre réseau local, procédez comme suit :
+Pour votre réseau local, procédez comme suit :
   
 1. Analysez les ordinateurs de vos clients et optimisez le matériel réseau, les pilotes logiciels, les paramètres du protocole et les navigateurs Internet.
     
@@ -37,23 +37,23 @@ Pour votre réseau local, procédez comme suit :
     
 3. Analysez la capacité et les performances du périphérique du périmètre Internet et optimisez les niveaux supérieurs de trafic.
     
-Pour votre connexion Internet, procédez comme suit :
+Pour votre connexion Internet, procédez comme suit :
   
 1. Analysez la latence entre le périphérique du périmètre Internet (par exemple, votre pare-feu externe) et les emplacements régionaux du service cloud de Microsoft auquel vous vous connectez.
     
-2. Analysez la capacité et l'utilisation de votre connexion Internet actuelle et augmentez la capacité si nécessaire. Vous pouvez également ajoutez une connexion ExpressRoute.
+2. Analysez la capacité et l’utilisation de votre connexion Internet actuelle et augmentez la capacité si nécessaire. Vous pouvez également ajoutez une connexion ExpressRoute.
     
 ## <a name="microsoft-cloud-connectivity-options"></a>Options de connectivité au cloud de Microsoft
 <a name="steps"> </a>
 
-Utilisez votre canal Internet existant ou une connexion ExpressRoute à Office 365, Azure et Dynamics 365.
+Utilisez votre canal Internet existant ou une connexion ExpressRoute à Office 365, Azure et Dynamics 365.
   
 **Figure 1 : Options pour la connectivité cloud Microsoft**
 
-![Figure 1 :  options pour la connectivité cloud Microsoft](images/Network_Poster/CommonElements.png)
+![Figure 1 :  options pour la connectivité cloud Microsoft](images/Network_Poster/CommonElements.png)
 
   
-La figure 1 indique la façon dont un réseau local peut être connecté aux offres de cloud de Microsoft à l'aide de son canal Internet existant ou d'ExpressRoute. Le canal Internet représente une zone DMZ et peut avoir les composants suivants :
+La figure 1 indique la façon dont un réseau local peut être connecté aux offres de cloud de Microsoft à l’aide de son canal Internet existant ou d’ExpressRoute. Le canal Internet représente une zone DMZ et peut avoir les composants suivants :
   
 - **Pare-feu interne :** Barrière entre votre réseau approuvé et un réseau non approuvé. Effectue le filtrage (en fonction des règles) et la surveillance du trafic.
     
@@ -68,7 +68,7 @@ La figure 1 indique la façon dont un réseau local peut être connecté aux off
 ## <a name="areas-of-networking-common-to-all-microsoft-cloud-services"></a>Zones de réseau communes à tous les services cloud de Microsoft
 <a name="steps"> </a>
 
-Vous devez prendre en considération ces zones de réseau lors de l'adoption des services cloud de Microsoft.
+Vous devez prendre en considération ces zones de réseau lors de l’adoption des services cloud de Microsoft.
   
 - **Performances intranet :** Les performances des ressources basées sur Internet seront réduites si votre intranet, y compris les ordinateurs des clients, n'est pas optimisé.
     
@@ -78,7 +78,7 @@ Vous devez prendre en considération ces zones de réseau lors de l'adoption des
     
 - **Internet DNS :** A, AAAA, CNAME, MX, PTR et les autres enregistrements pour localiser le cloud de Microsoft ou les services hébergés dans le cloud. Par exemple, vous pouvez avoir besoin d'un enregistrement CNAME pour votre application hébergée dans Azure PaaS.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Voir aussi
 
 <a name="steps"> </a>
 

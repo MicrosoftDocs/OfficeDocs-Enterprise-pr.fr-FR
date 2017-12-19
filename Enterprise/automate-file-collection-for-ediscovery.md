@@ -14,7 +14,7 @@ ms.assetid: 8d751419-d81b-4eb7-a2e5-8b03ccbf670c
 description: "Résumé : Apprenez à automatiser la collecte de fichiers à partir des ordinateurs des utilisateurs pour eDiscovery."
 ms.openlocfilehash: 2c2a3d5d217203bb608fcb48f9cc1da8d4b49213
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/15/2017
 ---
@@ -37,20 +37,20 @@ Cette solution utilise un groupe de sécurité global, une stratégie de groupe 
   
 Le diagramme suivant vous guide à travers les étapes et les éléments de la solution.
   
-![Vue d'ensemble de la solution de regroupement automatique de fichiers](images/dbb447b5-c74c-4956-986c-10a1d047ac99.png)
+![Vue d’ensemble de la solution de regroupement automatique de fichiers](images/dbb447b5-c74c-4956-986c-10a1d047ac99.png)
   
 |****Légende****||
 |:-----|:-----|
-|![légende magenta 1](images/000026a3-2bf0-4678-b468-ccb5f81da6f1.png)|Créez un objet de stratégie de groupe (GPO) et associez-le au script d'ouverture de session de collecte.  <br/> |
-|![légende magenta 2](images/a31b11e2-3597-42a4-933e-b6af11ed6ef1.png)| Configurez le filtre de sécurité de l'objet de stratégie de groupe pour appliquer l'objet de stratégie de groupe uniquement au groupe des dépositaires. <br/> |
-|![légende magenta 3](images/3ced060c-daec-460d-a9b5-260a3dfcae36.png)|Un dépositaire ouvre une session et l'objet de stratégie de groupe s'exécute, appelant le script d'ouverture de session de collecte  <br/> |
-|![légende magenta 4](images/6f269d84-2559-49e3-b18e-af6ac94d0419.png)|Le script d'ouverture de session de collecte répertorie tous les lecteurs connectés localement à l'ordinateur des dépositaires, en cherchant les fichiers que vous souhaitez et en enregistrant leur emplacement.  <br/> |
-|![légende magenta 5](images/4bf8898c-44ad-4524-b983-70175804eb85.png)|Le script d'ouverture de session de collecte copie les fichiers inventoriés sur un partage de fichiers caché sur le serveur intermédiaire.  <br/> |
+|![légende magenta 1](images/000026a3-2bf0-4678-b468-ccb5f81da6f1.png)|Créez un objet de stratégie de groupe (GPO) et associez-le au script d’ouverture de session de collecte.  <br/> |
+|![légende magenta 2](images/a31b11e2-3597-42a4-933e-b6af11ed6ef1.png)| Configurez le filtre de sécurité de l’objet de stratégie de groupe pour appliquer l’objet de stratégie de groupe uniquement au groupe des dépositaires. <br/> |
+|![légende magenta 3](images/3ced060c-daec-460d-a9b5-260a3dfcae36.png)|Un dépositaire ouvre une session et l’objet de stratégie de groupe s’exécute, appelant le script d’ouverture de session de collecte  <br/> |
+|![légende magenta 4](images/6f269d84-2559-49e3-b18e-af6ac94d0419.png)|Le script d’ouverture de session de collecte répertorie tous les lecteurs connectés localement à l’ordinateur des dépositaires, en cherchant les fichiers que vous souhaitez et en enregistrant leur emplacement.  <br/> |
+|![légende magenta 5](images/4bf8898c-44ad-4524-b983-70175804eb85.png)|Le script d’ouverture de session de collecte copie les fichiers inventoriés sur un partage de fichiers caché sur le serveur intermédiaire.  <br/> |
 |![légende magenta 6](images/99589726-0c7e-406b-a276-44301a135768.png)| (Option A) Exécutez manuellement le script d'importation PST pour importer les fichiers PST collectés dans Exchange Server 2013. <br/> |
-|![légende magenta 7](images/ff15e89c-d2fd-4614-9838-5e18287d578b.png)|(Option B) À l'aide de l'outil et du processus d'importation de Office 365, importez les fichiers PST collectés dans Exchange Online.  <br/> |
-|![légende magenta 8](images/aaf3bd3d-9508-4aaf-a3af-44ba501da63a.png)|Déplacez tous les fichiers collectés vers un partage de fichiers Azure pour un stockage à long terme avec le runbook MoveToColdStorageSystem Center Orchestrator 2012 R2. <br/> |
-|![légende magenta 9](images/b354642e-445e-4723-a84a-b41f7ac6e774.png)|Indexez les fichiers dans le partage des fichiers de stockage froid avec SharePoint 2013.  <br/> |
-|![légende magenta 10](images/cebf7de5-7525-413b-9e52-638a4f8b2f74.png)|Effectuez eDiscovery sur le contenu dans l'espace de stockage froid et le Exchange Server 2013 sur site.  <br/> |
+|![légende magenta 7](images/ff15e89c-d2fd-4614-9838-5e18287d578b.png)|(Option B) À l'aide de l'outil et du processus d'importation de Office 365, importez les fichiers PST collectés dans Exchange Online.  <br/> |
+|![légende magenta 8](images/aaf3bd3d-9508-4aaf-a3af-44ba501da63a.png)|Déplacez tous les fichiers collectés vers un partage de fichiers Azure pour un stockage à long terme avec le runbook MoveToColdStorageSystem Center Orchestrator 2012 R2. <br/> |
+|![légende magenta 9](images/b354642e-445e-4723-a84a-b41f7ac6e774.png)|Indexez les fichiers dans le partage des fichiers de stockage froid avec SharePoint 2013.  <br/> |
+|![légende magenta 10](images/cebf7de5-7525-413b-9e52-638a4f8b2f74.png)|Effectuez eDiscovery sur le contenu dans l'espace de stockage froid et le Exchange Server 2013 sur site.  <br/> |
 |![légende magenta 11](images/e59ab403-2f19-497a-92a5-549846dded66.png)|Effectuez eDiscovery sur le contenu dans Office 365.  <br/> |
    
 ## <a name="prerequisites"></a>Conditions préalables
@@ -59,7 +59,7 @@ La configuration de cette solution nécessite plusieurs éléments, dont la plup
   
 ### <a name="base-configuration"></a>Configuration de base
 
-|**Élément**|**Liens**|
+|**Élément**|**Lien**|
 |:-----|:-----|
 |Domaine Services de domaine Active Directory (AD DS)  <br/> ||
 |Connectivité Internet à partir de votre réseau local  <br/> ||
@@ -74,7 +74,7 @@ La configuration de cette solution nécessite plusieurs éléments, dont la plup
 |SharePoint 2013eDiscovery configuré pour effectuer une recherche dans SharePoint et Exchange Server 2013, et éventuellement Lync Server 2013  <br/> |Pour configurer la eDiscovery de cette façon, voir [Configurer eDiscovery dans SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=613508) et[Guide de laboratoire de test : configurez eDiscovery pour un laboratoire de test de partages de fichiers Exchange, Lync, SharePoint et Windows ](https://go.microsoft.com/fwlink/p/?LinkId=393130).  <br/> |
 |eDiscovery dans Office 365 pour SharePoint Online et Exchange Online  <br/> |Pour configurer la eDiscovery dans Office 365, voir [Configurer un centre eDiscovery dans SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkId=613628)  <br/> |
    
-## <a name="configure-the-environment"></a>Configurer l'environnement
+## <a name="configure-the-environment"></a>Configurer l’environnement
 
 Maintenant que la configuration de base est en place, vous pouvez passer à la configuration de la solution elle-même. 
   
@@ -84,11 +84,11 @@ Maintenant que la configuration de base est en place, vous pouvez passer à la c
     
 2. Créez un partage de fichiers cachés pour les fichiers qui sont collectés à partir d'ordinateurs de dépositaires. Il doit s'agir d'un serveur local. Par exemple, sur un serveur appelé Staging, créez un partage de fichiers appelé Cases$. Le **$** est requis pour en faire un partage caché.
     
-3. Définissez les autorisations de partage suivantes :
+3. Définissez les autorisations de partage suivantes :
     
-  - Dépositaires : Modifier, Lire
+  - Dépositaires : Modifier, Lire
     
-  - Administrateurs : Contrôle total
+  - Administrateurs : Contrôle total
     
   - Sous-système approuvé Exchange : Modifier, Lire
     
@@ -106,7 +106,7 @@ Maintenant que la configuration de base est en place, vous pouvez passer à la c
     
   - **Autorisations de lecture**
     
-6. Testez l'accès au partage de fichiers Cases$ en effectuant les étapes suivantes :
+6. Testez l’accès au partage de fichiers Cases$ en effectuant les étapes suivantes :
     
 1. Ajoutez un utilisateur au groupe des dépositaires.
     
@@ -114,11 +114,11 @@ Maintenant que la configuration de base est en place, vous pouvez passer à la c
     
 3. En tant qu'utilisateur, accédez au serveur intermédiaire, par exemple accédez au partage \\\\Staging pour voir quels partages sont disponibles. Vous ne devriez pas voir le partage **Cases$** répertorié.
     
-4. Saisissez manuellement le chemin d'accès complet au partage Cases$ dans Explorer. Cela devrait ouvrir le partage Cases$.
+4. Saisissez manuellement le chemin d’accès complet au partage Cases$ dans Explorer. Cela devrait ouvrir le partage Cases$.
     
-5. Essayez d'ouvrir le fichier que vous avez placé dans le partage. Vous ne devriez pas y parvenir
+5. Essayez d’ouvrir le fichier que vous avez placé dans le partage. Vous ne devriez pas y parvenir
     
-### <a name="logon-script"></a>Script d'ouverture de session
+### <a name="logon-script"></a>Script d’ouverture de session
 
 1. Copiez et collez ce script Windows PowerShell dans le bloc-notes :
     
@@ -264,7 +264,7 @@ Write-Host -ForegroundColor Cyan "Finished."
 
 2. Enregistrez le script ci-dessus sous CollectionScript.ps1 dans un emplacement facile à trouver, par exemple C:\\AFCScripts.
     
-3. Utilisez la fonctionnalité Accédez à dans le bloc-notes. Apportez les modifications suivantes, selon vos besoins :
+3. Utilisez la fonctionnalité Accédez à dans le bloc-notes. Apportez les modifications suivantes, selon vos besoins :
     
 |**Ligne #**|**Ce que vous devez modifier**|**Obligatoire/facultatif**|
 |:-----|:-----|:-----|
@@ -272,9 +272,9 @@ Write-Host -ForegroundColor Cyan "Finished."
 |76 et 77  <br/> |Modifier la conception de la variable **$CaseNo** en fonction de vos besoins. Le script capture la date et heure actuelles et y ajoute le nom d'utilisateur.<br/> |Facultatif  <br/> |
 |80  <br/> |La variable **$CaseRootLocation** doit être configurée pour votre partage des fichiers de collecte de serveurs intermédiaires. Par exemple **\\\\Staging\\Cases$** <br/> |Requis  <br/> |
    
-4. Placez le fichier CollectionScript.ps1 dans le partage des fichiers d'accès réseau sur un contrôleur de domaine. 
+4. Placez le fichier CollectionScript.ps1 dans le partage des fichiers d’accès réseau sur un contrôleur de domaine. 
     
-### <a name="configure-gpo-for-the-logon-script-and-custodians-group"></a>Configuration de l'objet de stratégie de groupe pour le script d'ouverture de session et le groupe de dépositaires
+### <a name="configure-gpo-for-the-logon-script-and-custodians-group"></a>Configuration de l’objet de stratégie de groupe pour le script d’ouverture de session et le groupe de dépositaires
 
 1. Configurez un script d'ouverture de session pour le groupe de dépositaires en suivant les instructions de la section concernant la manière d'affecter des scripts d'ouverture de session utilisateur dans la rubrique relative à l'[utilisation des scripts de démarrage, d'arrêt, d'ouverture et de fermeture de session dans la stratégie de groupe](https://go.microsoft.com/fwlink/p/?LinkId=614844).
     
@@ -322,7 +322,7 @@ $AllFiles | ForEach-Object {
 
 2. Enregistrez le script en tant que PSTImportScript.ps1 dans un emplacement facile à trouver. Par exemple et pour une grande facilité d'utilisation, créez un dossier sur votre serveur intermédiaire appelé \\\\Staging\\AFCScripts et enregistrez le script ici.
     
-3. Utilisez la fonctionnalité Accédez à dans le bloc-notes et apportez les modifications suivantes, selon vos besoins :
+3. Utilisez la fonctionnalité Accédez à dans le bloc-notes et apportez les modifications suivantes, selon vos besoins :
     
 |**Ligne #**|**Ce que vous devez modifier**|**Obligatoire/facultatif**|
 |:-----|:-----|:-----|
@@ -331,7 +331,7 @@ $AllFiles | ForEach-Object {
    
 4. Vérifiez que le compte Sous-système approuvé Exchange dispose des autorisations de lecture, écriture et exécution sur le partage \\\\Staging\\Cases$.
     
-5. Le script d'importation PST nécessite les deux paramètres d'entrée suivants :
+5. Le script d’importation PST nécessite les deux paramètres d’entrée suivants :
     
   - **$SourcePath** L'emplacement des fichiers PST à importer, par exemple \\\\Staging\\Cases$.
     
@@ -381,13 +381,13 @@ $AllFiles | ForEach-Object {
 
 Il existe cinq étapes principales concernant l'utilisation de cette solution, en supposant que vous ne souhaitez pas ingérer les fichiers PST dans Exchange Server 2013 et Exchange Online. Cette section vous fournit les procédures pour tous les cas. Votre interaction principale avec la solution aura lieu en effectuant les actions suivantes :
   
-1. Gestion de l'appartenance des utilisateurs dans le groupe des dépositaires.
+1. Gestion de l’appartenance des utilisateurs dans le groupe des dépositaires.
     
 2. Erreurs
     
-3. Gestion du processus d'importation PST.
+3. Gestion du processus d’importation PST.
     
-4. Déplacement des fichiers de collecte vers l'emplacement de stockage froid.
+4. Déplacement des fichiers de collecte vers l’emplacement de stockage froid.
     
 Toutes les autres étapes ne sont pas propres à cette solution. Ce sont des tâches administratives standard que vous effectuez dans SharePoint 2013, Office 365 et Azure. Il existe des aspects pour lesquels cette solution ne propose aucune recommandation et pour lesquels vous devrez utiliser votre meilleur jugement selon les besoins de votre société, tels que :
   
@@ -395,7 +395,7 @@ Toutes les autres étapes ne sont pas propres à cette solution. Ce sont des tâ
     
 2. Contrôle de la répartition des ensembles de collecte de fichiers en fonction des cas eDiscovery.
     
-3. Coordination du calendrier d'importation et des étapes de déplacement vers l'emplacement de stockage froid.
+3. Coordination du calendrier d’importation et des étapes de déplacement vers l’emplacement de stockage froid.
     
 4. Gestion de l'espace de fichier utilisé dans Azure.
     
@@ -436,7 +436,7 @@ Toutes les autres étapes ne sont pas propres à cette solution. Ce sont des tâ
 
 - Pour placer les fichiers PST collectés dans Exchange Online, suivez les procédures décrites dans la section concernant l'importation de fichiers vers Office 365 via le chargement réseau dans la rubrique relative au [service d'importation Office 365](https://go.microsoft.com/fwlink/p/?LinkId=614938).
     
-### <a name="move-to-cold-storage"></a>Déplacement vers l'emplacement de stockage froid
+### <a name="move-to-cold-storage"></a>Déplacement vers l’emplacement de stockage froid
 
 1. Exécutez le runbook **MoveToColdStorage** à l'aide des procédures décrites dans la rubrique relative à l'[exécution de runbooks](https://go.microsoft.com/fwlink/p/?LinkId=615123).
     

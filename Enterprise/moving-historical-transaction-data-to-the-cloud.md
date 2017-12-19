@@ -16,7 +16,7 @@ ms.assetid: 3e9c405a-415b-4584-aa7e-f2489299c457
 description: "Résumé : Comment Contoso a implémenté SQL Server Stretch Database pour réduire ses besoins en matière de stockage de données locales et ses dépenses quotidiennes de fonctionnement."
 ms.openlocfilehash: f1a44a14da49c394974755f7c557013717c4ccef
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/15/2017
 ---
@@ -32,11 +32,11 @@ Dans la mesure où l'entreprise avait besoin de réduire la taille de ses centre
 
 ![Stretch Database avec SQL Server comme solution de données hybride](images/Contoso_Poster/StretchDB01.png)
   
-La figure 1 montre comment un client SQL envoie des requêtes T-SQL sur un serveur qui exécute SQL Server 2016, lequel les transfère vers Azure SQL Stretch Database dans Azure PaaS.
+La figure 1 montre comment un client SQL envoie des requêtes T-SQL sur un serveur qui exécute SQL Server 2016, lequel les transfère vers Azure SQL Stretch Database dans Azure PaaS.
   
 Pour plus d'informations, voir [Stretch Database](https://msdn.microsoft.com/library/dn935011.aspx).
   
-Contoso a suivi les étapes suivantes pour déplacer ses données historiques vers le cloud :
+Contoso a suivi les étapes suivantes pour déplacer ses données historiques vers le cloud :
   
 1. Analyse des bases de données
     
@@ -44,32 +44,32 @@ Contoso a suivi les étapes suivantes pour déplacer ses données historiques ve
     
 2. Mise à niveau
     
-    A mis à niveau les serveurs SQL existants du centre de données de son siège social parisien vers SQL Server 2016.
+    A mis à niveau les serveurs SQL existants du centre de données de son siège social parisien vers SQL Server 2016.
     
 3. Migration des données froides vers le cloud
     
     A identifié les bases de données à étendre et les tables à migrer vers des instances de Stretch Database dans Azure, à l'aide de SQL Management Studio. En arrière-plan, SQL Server 2016 a progressivement déplacé les données historiques vers Stretch Database dans Azure.
     
-Voici la configuration finale d'un serveur exécutant SQL Server 2016 au siège social parisien.
+Voici la configuration finale d’un serveur exécutant SQL Server 2016 au siège social parisien.
   
 **Figure 2 : Utilisation de Stretch Database pour un serveur situé dans le centre de données de Contoso**
 
-![Configuration de Contoso pour Stretch Database avec SQL Server pour un ordinateur unique exécutant SQL Server](images/Contoso_Poster/StretchDB02.png)
+![Configuration de Contoso pour Stretch Database avec SQL Server pour un ordinateur unique exécutant SQL Server](images/Contoso_Poster/StretchDB02.png)
 
   
-La figure 2 montre comment les requêtes d'utilisateurs envoyées sur un serveur d'applications du centre de données de Contoso deviennent des requêtes SQL transmises à Azure SQL Stretch Database dans Azure PaaS.
+La figure 2 montre comment les requêtes d’utilisateurs envoyées sur un serveur d’applications du centre de données de Contoso deviennent des requêtes SQL transmises à Azure SQL Stretch Database dans Azure PaaS.
   
 Les utilisateurs ont accès aux données via les requêtes et les applications existantes. Les stratégies d'accès ne sont pas modifiées. Contoso n'aura plus besoin d'effectuer des sauvegardes sur bande par la suite. Les opérations de maintenance consisteront uniquement en la sauvegarde et la restauration des données chaudes.
   
-Après l'implémentation de Stretch Database, Contoso a :
+Après l’implémentation de Stretch Database, Contoso a :
   
-- réduit de 85 % ses besoins en matière de stockage de données locales ;
+- réduit de 85 % ses besoins en matière de stockage de données locales ;
     
-- mis à jour le système de stockage d'entreprise et a supprimé l'archivage des données sur bande magnétique ;
+- mis à jour le système de stockage d’entreprise et a supprimé l’archivage des données sur bande magnétique ;
     
-- réalisé d'importantes économies sur ses dépenses quotidiennes de fonctionnement.
+- réalisé d’importantes économies sur ses dépenses quotidiennes de fonctionnement.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Voir aussi
 
 [Scénarios d'entreprise pour la société Contoso](enterprise-scenarios-for-the-contoso-corporation.md)
   

@@ -1,5 +1,5 @@
 ---
-title: "Gestion de clients Office 365 avec Windows PowerShell pour les partenaires avec autorisations d'accès délégué"
+title: "Gestion de clients Office 365 avec Windows PowerShell pour les partenaires avec autorisations d’accès délégué"
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,24 +14,24 @@ ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
 description: "Résumé : Utilisez Windows PowerShell pour Office 365 pour gérer les locations de votre client."
 ms.openlocfilehash: 6001a6b40d2851d13e8fb74da615a2b8137f17ec
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="manage-office-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Gestion de clients Office 365 avec Windows PowerShell pour les partenaires avec autorisations d'accès délégué
+# <a name="manage-office-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Gestion de clients Office 365 avec Windows PowerShell pour les partenaires avec autorisations d’accès délégué
 
- **Résumé :** Utiliser Windows PowerShell pour Office 365 pour gérer vos baux de client.
+ **Résumé :** Utilisez Windows PowerShell pour Office 365 pour gérer les locations de votre client.
   
 Windows PowerShell permet aux Partenaires de syndication et fournisseur de solutions cloud de gérer les paramètres des locations du client qui ne sont pas disponibles dans le Centre d'administration Office 365 et de créer facilement des rapports à partir de ceux-ci. Les autorisations AOBO (Administrer au nom de) sont requises pour que le compte d'administrateur du partenaire puisse se connecter aux locations de son client.
   
 Les partenaires avec autorisation d'accès délégué sont les partenaires de syndication et fournisseurs de solutions cloud. Il s'agit souvent de fournisseurs de réseau ou de télécommunication pour d'autres sociétés. Ils regroupent les abonnements Office 365 dans leurs offres de services pour les clients. Lorsqu'ils vendent un abonnement Office 365, ils bénéficient automatiquement des autorisations Administrer au nom de sur leslocations clientes. Ainsi, ils peuvent administrer les locations clientes et créer des rapports les concernant.
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer ?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
 
 Les procédures décrites dans cette rubrique exigent une connexion à Windows PowerShell pour Office 365. Pour plus d'informations, voir [Se connecter à Office 365 PowerShell](connect-to-office-365-powershell.md).
   
-Vous avez aussi besoin des informations d'identification d'administrateur de la location du partenaire.
+Vous avez aussi besoin des informations d’identification d’administrateur de la location du partenaire.
   
-## <a name="what-do-you-want-to-do"></a>Que souhaitez-vous faire ?
+## <a name="what-do-you-want-to-do"></a>Que souhaitez-vous faire ?
 
 ### <a name="list-all-tenant-ids"></a>Répertorier tous les ID de locataire
 
@@ -46,7 +46,7 @@ Get-MsolPartnerContract -All | Select-Object -TenantId
 
 Elle affiche la liste de tous les locataires de votre client par **TenantId**.
   
-### <a name="get-a-tenant-id-by-using-the-domain-name"></a>Obtenir un ID de locataire à l'aide du nom de domaine
+### <a name="get-a-tenant-id-by-using-the-domain-name"></a>Obtenir un ID de locataire à l’aide du nom de domaine
 
 Pour obtenir le code **TenantId** d'une location spécifique du client par nom de domaine, exécutez la commande suivante. Remplacez _<domainname.onmicrosoft.com>_ par le nom de domaine réel du locataire du client que vous voulez obtenir.
   
@@ -94,11 +94,11 @@ La création, la configuration et la gestion des licences en bloc pour les utili
   
 #### <a name="create-a-csv-file"></a>Créer un fichier CSV
 
-Créez un fichier CSV à l'aide de ce format :
+Créez un fichier CSV à l’aide de ce format :
   
 -  `UserPrincipalName,FirstName,LastName,DisplayName,Password,TenantId,UsageLocation,LicenseAssignment`
     
-où :
+oà¹ :
   
 - **UsageLocation**: la valeur de ce paramètre est le code ISO de pays/région à deux lettres de l'utilisateur. Les codes de pays/région peuvent être consultés sur la[plateforme de consultation en ligne de l'ISO](https://go.microsoft.com/fwlink/p/?LinkId=532703). Par exemple, le code pour les États-Unis est US et le code pour le Brésil est BR. 
     
@@ -112,7 +112,7 @@ Une fois votre fichier CSV créé, exécutez la commande suivante pour créer de
 Import-Csv .\\FILENAME.CSV | foreach {New-MsolUser -UserPrincipalName $_.UserPrincipalName -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -Password $_.Password -UsageLocation $_.UsageLocation -LicenseAssignment $_.LicenseAssignment -ForceChangePassword:$true -PasswordNeverExpires:$true -TenantId $_.TenantId}
 ```
 
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Voir aussi
 
 #### 
 

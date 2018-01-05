@@ -1,5 +1,5 @@
 ---
-title: Utilisation de Microsoft Azure Active Directory pour l'authentification SharePoint 2013
+title: "Utilisation de Microsoft Azure Active Directory pour l’authentification SharePoint 2013"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -18,11 +18,11 @@ ms.assetid: bef810a4-53f6-4962-878e-e20b5019baeb
 description: "Résumé : Apprenez à utiliser le Service de contrôle d'accès pour authentifier les utilisateurs de SharePoint Server 2013 avec Azure Active Directory."
 ms.openlocfilehash: 85db8376aeb06ef6f291b563410c991ea24351d5
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="using-microsoft-azure-active-directory-for-sharepoint-2013-authentication"></a>Utilisation de Microsoft Azure Active Directory pour l'authentification SharePoint 2013
+# <a name="using-microsoft-azure-active-directory-for-sharepoint-2013-authentication"></a>Utilisation de Microsoft Azure Active Directory pour l’authentification SharePoint 2013
 
  **Résumé :** Apprenez à utiliser le Service de contrôle d'accès pour authentifier les utilisateurs de SharePoint Server 2013 avec Azure Active Directory.
   
@@ -38,31 +38,31 @@ L'exemple utilisé dans cet article est fourni par Kirk Evans, architecte Micros
   
 Pour plus d'informations sur l'accessibilité SharePoint 2013, voir [Accessibilité pour SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=393123).
   
-## <a name="configuration-overview"></a>Vue d'ensemble de la configuration
+## <a name="configuration-overview"></a>Vue d’ensemble de la configuration
 
 Suivez la procédure générale suivante pour configurer votre environnement pour utiliser Azure AD comme fournisseur d'identité SharePoint 2013.
   
 1. Créez un nouveau client et espace de noms Azure AD.
     
-2. Ajoutez un fournisseur d'identité WS-Federation.
+2. Ajoutez un fournisseur d’identité WS-Federation.
     
 3. Ajoutez une application par partie de confiance SharePoint.
     
 4. Créez un certificat auto-signé à utiliser pour SSL.
     
-5. Créez un groupe de règles pour l'authentification basée sur les revendications.
+5. Créez un groupe de règles pour l’authentification basée sur les revendications.
     
 6. Configurez le certificat X.509.
     
 7. Créez un mappage de revendications.
     
-8. Configurez SharePoint pour le nouveau fournisseur d'identité.
+8. Configurez SharePoint pour le nouveau fournisseur d’identité.
     
 9. Définissez les autorisations.
     
 10. Vérifiez le nouveau fournisseur.
     
-## <a name="create-azure-ad-tenant-and-namespace"></a>Création du client et de l'espace de noms Azure AD.
+## <a name="create-azure-ad-tenant-and-namespace"></a>Création du client et de l’espace de noms Azure AD.
 
 Procédez comme suit pour créer un client Azure AD et un espace de noms associé. Dans cet exemple, nous utilisons l'espace de noms « blueskyabove ». 
   
@@ -93,27 +93,27 @@ Procédez comme suit pour créer un client Azure AD et un espace de noms associ�
   New-MsolServicePrincipal -ServicePrincipalNames @("https://blueskyabove.accesscontrol.windows.net/") -DisplayName "BlueSkyAbove ACS Namespace" -Addresses $replyUrl
   ```
 
-    L'illustration suivante montre les données obtenues.
+    L’illustration suivante montre les données obtenues.
     
      ![Création de noms de principal de service](images/ServicePrincipalNames.jpg)
   
-## <a name="add-a-ws-federation-identity-provider-to-the-namespace"></a>Ajout d'un fournisseur d'identité WS-Federation à l'espace de noms
+## <a name="add-a-ws-federation-identity-provider-to-the-namespace"></a>Ajout d’un fournisseur d’identité WS-Federation à l’espace de noms
 
-Procédez comme suit pour ajouter un nouveau fournisseur d'identité WS-Federation à l'espace de noms blueskyabove.
+Procédez comme suit pour ajouter un nouveau fournisseur d’identité WS-Federation à l’espace de noms blueskyabove.
   
 1. Dans le portail de gestion Azure, accédez à **Active Directory** > **Espaces de noms Access Control**, cliquez sur **Créer une nouvelle instance**, puis cliquez sur **Gérer**.
     
 2. Dans le portail Azure Access Control, cliquez sur **Fournisseurs d'identité** > **Ajouter**, comme illustré dans la capture suivante.
     
-     ![Boîte de dialogue des fournisseurs d'identité dans Azure](images/Identity.jpg)
+     ![Boîte de dialogue des fournisseurs d’identité dans Azure](images/Identity.jpg)
   
 3. Cliquez sur **Fournisseur d'identité WS-Federation**, comme illustré dans la figure suivante, puis cliquez sur **Suivant**.
     
-     ![Paramètres d'ajout de fournisseur d'identité](images/AddIdentity.jpg)
+     ![Paramètres d’ajout de fournisseur d’identité](images/AddIdentity.jpg)
   
 4. Indiquez le nom complet et le texte du lien d'ouverture de session, puis cliquez sur **Enregistrer**. Pour l'URL des métadonnées WS-Federation, saisissez https://accounts.accesscontrol.windows.net/blueskyabove.onmicrosoft.com/FederationMetadata/2007-06/FederationMetadata.xml. La capture suivante illustre la définition des paramètres.
     
-     ![Fournisseur d'identité de la fédération](images/FederationIdentity.jpg)
+     ![Fournisseur d’identité de la fédération](images/FederationIdentity.jpg)
   
 ## <a name="add-sharepoint-as-a-relying-party-application"></a>Ajoutez SharePoint comme application par partie de confiance.
 
@@ -123,15 +123,15 @@ Pour plus d'informations sur les paramètres des applications par partie de conf
   
 1. Dans le portail Azure Access Control, cliquez sur **Applications par partie de confiance**, puis cliquez sur **Ajouter**, comme illustré dans la capture suivante.
     
-     ![Les paramètres de confiance des applications tiers](images/RelyingPartyApplications.jpg)
+     ![Paramètres d’application de partie de confiance](images/RelyingPartyApplications.jpg)
   
-## <a name="create-a-self-signed-certificate-to-use-for-ssl"></a>Création d'un certificat auto-signé à utiliser pour SSL
+## <a name="create-a-self-signed-certificate-to-use-for-ssl"></a>Création d’un certificat auto-signé à utiliser pour SSL
 
 Procédez comme suit pour créer un certificat auto-signé à utiliser pour sécuriser les communications sur SSL.
   
-1. Étendez l'application web pour utiliser la même URL que le site de publication, mais utilisez SSL avec le port 443, comme illustré dans la capture suivante.
+1. Étendez l’application web pour utiliser la même URL que le site de publication, mais utilisez SSL avec le port 443, comme illustré dans la capture suivante.
     
-     ![Paramètres permettant d'étendre l'application](images/ExtendWebApp.jpg)
+     ![Paramètres permettant d’étendre l’application](images/ExtendWebApp.jpg)
   
 2. Dans le Gestionnaire des services Internet (IIS), double-cliquez sur **Certificats de serveur**.
     
@@ -141,7 +141,7 @@ Procédez comme suit pour créer un certificat auto-signé à utiliser pour séc
     
      ![Assistant Créer un certificat auto-signé](images/SelfSignedCert.jpg)
   
-     ![Nom d'hôte dans la boîte de dialogue Modifier les liaisons](images/SelfSignedCert1.jpg)
+     ![Nom d’hôte dans la boîte de dialogue Modifier les liaisons](images/SelfSignedCert1.jpg)
   
 5. Dans le portail de gestion Azure, cliquez sur la machine virtuelle que vous souhaitez configurer, puis cliquez sur **Points de terminaison**.
     
@@ -156,13 +156,13 @@ Procédez comme suit pour créer un certificat auto-signé à utiliser pour séc
     > [!NOTE]
     > Pour plus d'informations sur l'ajout d'un point de terminaison à une machine virtuelle dans Azure, voir [Comment configurer des points de terminaison sur une machine virtuelle](https://go.microsoft.com/fwlink/p/?LinkId=393126). 
   
-9. Dans le portail de services Access Control, ajoutez une partie de confiance, comme illustré dans la capture suivante.
+9. Dans le portail de services Access Control, ajoutez une partie de confiance, comme illustré dans la capture suivante.
     
-     ![Paramètres d'application d'ajout de partie de confiance](images/AddRelyingParty.jpg)
+     ![Paramètres d’application d’ajout de partie de confiance](images/AddRelyingParty.jpg)
   
-## <a name="create-a-rule-group-for-claims-based-authentication"></a>Créez un groupe de règles pour l'authentification basée sur les revendications.
+## <a name="create-a-rule-group-for-claims-based-authentication"></a>Créez un groupe de règles pour l’authentification basée sur les revendications.
 
-Procédez comme suit pour créer un groupe de règles pour contrôler l'authentification basée sur les revendications.
+Procédez comme suit pour créer un groupe de règles pour contrôler l’authentification basée sur les revendications.
   
 1. Dans le volet gauche, cliquez sur **Groupes de règles**, puis cliquez sur **Ajouter**.
     
@@ -170,22 +170,22 @@ Procédez comme suit pour créer un groupe de règles pour contrôler l'authenti
     
      ![Paramètres de groupe de règles dans Azure](images/RuleGroup.jpg)
   
-     ![Règles après sélection de l'option Générer](images/GenerateRules.jpg)
+     ![Règles après sélection de l’option Générer](images/GenerateRules.jpg)
   
     > [!NOTE]
     > Pour plus d'informations sur la création de groupes de règles, voir [Règles et groupes de règles](https://go.microsoft.com/fwlink/p/?LinkId=393128). 
   
 3. Cliquez sur le groupe de règles que vous souhaitez modifier, puis cliquez sur la règle de revendication que vous souhaitez modifier. Pour les besoins de cet article, nous ajoutons une règle de revendication au groupe pour transmettre la règle **name** en tant que règle **upn**, comme illustré dans la capture suivante.
     
-     ![Règles de revendication dans le contrôle d'accès Azure](images/ClaimRules.jpg)
+     ![Règles de revendication dans le contrôle d’accès Azure](images/ClaimRules.jpg)
   
 4. Supprimez la règle de revendication existante nommée **upn** et laissez la règle de **Name Claim to UPN**, comme illustré dans la capture suivante.
     
-     ![Paramètres de règles dans le contrôle d'accès Azure](images/ClaimToUPN.jpg)
+     ![Paramètres de règles dans le contrôle d’accès Azure](images/ClaimToUPN.jpg)
   
-## <a name="configure-the-x509-certificate"></a>Configurer le certificat X.509
+## <a name="configure-the-x509-certificate"></a>Configurer le certificat X.509
 
-Procédez comme suit pour configurer le certificat X.509 à utiliser pour la signature des jetons.
+Procédez comme suit pour configurer le certificat X.509 à utiliser pour la signature des jetons.
   
 1. Dans le volet Service du contrôle d'accès, sous **Développement**, cliquez sur **Intégration d'applications**.
     
@@ -202,13 +202,13 @@ Procédez comme suit pour configurer le certificat X.509 à utiliser pour la sig
     > [!NOTE]
     > Le nom de fichier doit être enregistré avec une extension .cer. 
   
-     ![Sauvegarde de l'élément X509Certificate en tant que fichier](images/X509Cert_Save.jpg)
+     ![Sauvegarde de l’élément X509Certificate en tant que fichier](images/X509Cert_Save.jpg)
   
 ## <a name="create-a-claim-mapping-by-using-windows-powershell"></a>Création d'un mappage de revendications à l'aide de Windows PowerShell
 
 Procédez comme suit pour créer un mappage de revendications à l'aide de Windows PowerShell.
   
-Vérifiez que vous êtes membre :
+Vérifiez que vous disposez des appartenances suivantes :
   
 1. du rôle serveur fixe **securityadmin** sur l'instance SQL Server.
     
@@ -219,7 +219,7 @@ Vérifiez que vous êtes membre :
 Un administrateur peut utiliser l'applet de commande **Add-SPShellAdmin** pour accorder des autorisations d'utilisation des applets de commande SharePoint 2013.
   
 > [!NOTE]
-> Si vous ne disposez pas des autorisations, contactez votre administrateur d'installation ou votre administrateur SQL Server afin de les demander. Pour plus d'informations sur les autorisations Windows PowerShell, voir [Add-SPShellAdmin](http://technet.microsoft.com/library/2ddfad84-7ca8-409e-878b-d09cb35ed4aa.aspx). 
+> Si vous ne disposez pas des autorisations, contactez votre administrateur d'installation ou votre administrateur SQL Server afin de les demander. Pour plus d'informations sur les autorisations Windows PowerShell, voir [Add-SPShellAdmin]((http://technet.microsoft.com/library/2ddfad84-7ca8-409e-878b-d09cb35ed4aa.aspx)). 
   
 1. Dans le menu **Démarrer**, cliquez sur **Tous les programmes**.
     
@@ -257,17 +257,17 @@ Un administrateur peut utiliser l'applet de commande **Add-SPShellAdmin** pour a
   $ap = New-SPTrustedIdentityTokenIssuer -Name "ACS Provider" -Description "SharePoint secured by SAML in ACS" -realm $realm -ImportTrustCertificate $cert -ClaimsMappings $map,$map2,$map3 -SignInUrl "https://blueskyabove.accesscontrol.windows.net/v2/wsfederation" -IdentifierClaim "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"
   ```
 
-## <a name="configure-sharepoint-for-the-new-identity-provider"></a>Configuration de SharePoint pour le nouveau fournisseur d'identité
+## <a name="configure-sharepoint-for-the-new-identity-provider"></a>Configuration de SharePoint pour le nouveau fournisseur d’identité
 
 Procédez comme suit pour configurer votre installation SharePoint avec le nouveau fournisseur d'identité pour Azure AD.
   
-1. Vérifiez que le compte d'utilisateur qui exécute cette procédure est membre du groupe SharePoint Administrateurs de batterie.
+1. Vérifiez que le compte d’utilisateur qui exécute cette procédure est membre du groupe SharePoint Administrateurs de batterie.
     
 2. Dans la page d'accueil de l'Administration centrale, cliquez sur **Gestion des applications**.
     
 3. Dans la section **Applications web** de la page **Gestion des applications**, cliquez sur **Gérer les applications web**.
     
-4. Cliquez sur l'application Web appropriée.
+4. Cliquez sur l’application Web appropriée.
     
 5. Dans le ruban, cliquez sur **Fournisseurs d'authentification**.
     
@@ -281,7 +281,7 @@ Procédez comme suit pour configurer votre installation SharePoint avec le nouve
   
 ## <a name="set-the-permissions"></a>Définition des autorisations
 
-Procédez comme suit pour définir les autorisations pour accéder à l'application web.
+Procédez comme suit pour définir les autorisations pour accéder à l’application web.
   
 1. Sur la page d'accueil de l'Administration centrale, cliquez sur **Gestion des applications**.
     
@@ -301,11 +301,11 @@ Procédez comme suit pour définir les autorisations pour accéder à l'applicat
     
 La capture suivante illustre la section **Ajouter des utilisateurs** d'une application web existante.
   
-![Ajout d'utilisateurs à une application web existante](images/AddUsers_Azure.jpg)
+![Ajout d’utilisateurs à une application web existante](images/AddUsers_Azure.jpg)
   
 ## <a name="verify-the-new-provider"></a>Vérification du nouveau fournisseur
 
-Procédez comme suit pour vérifier que le nouveau fournisseur d'identité fonctionne en vous assurant que le nouveau fournisseur d'authentification s'affiche à l'invite de connexion.
+Procédez comme suit pour vérifier que le nouveau fournisseur d’identité fonctionne en vous assurant que le nouveau fournisseur d’authentification s’affiche à l’invite de connexion.
   
 1. Connectez-vous en utilisant le nouveau fournisseur nommé **Blue Sky Above**, comme illustré dans la capture suivante.
     
@@ -322,7 +322,7 @@ Procédez comme suit pour vérifier que le nouveau fournisseur d'identité fonct
 |**Contactez-nous**|**Description**|
 |:-----|:-----|
 |**De quelles solutions avez-vous besoin ?** <br/> |Nous sommes en train de créer du contenu pour les solutions qui s'étendent sur plusieurs produits et services Microsoft. Donnez-nous votre avis sur nos solutions entre serveurs ou demandez des solutions spécifiques en envoyant un courrier électronique à [MODAcontent@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20).<br/> |
-|**Participer à la discussion sur les solutions** <br/> |Si vous êtes passionné de solutions basées sur le nuage, envisagez du nuage Adoption Advisory Board (CAAB) pour vous connecter à une Communauté plus grande, aux couleurs éclatantes des développeurs de contenu Microsoft, les professionnels de l’industrie et clients partout dans le monde. Pour joindre, ajoutez-vous en tant que membre de l' [espace CAAB (comité consultatif nuage Adoption)](https://aka.ms/caab) de la Communauté technique de Microsoft et de nous envoyer un bref courriel à [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Toute personne peut lire le contenu communautaire sur le [blog CAAB](https://blogs.technet.com/b/solutions_advisory_board/). Toutefois, les membres CAAB obtenir des invitations à des séminaires en ligne privée qui décrivent les nouvelles ressources d’adoption de nuage et de solutions.<br/> |
-|**Obtenir l'image que vous voyez ici** <br/> |Si vous souhaitez une copie modifiable de l’image que vous voyez dans cet article, nous serons heureux de vous l’envoyer. Votre demande, y compris l’URL et le titre de l’art, à [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20)par e-mail.<br/> |
+|**Participer à la discussion sur les solutions** <br/> |Si vous êtes passionné par les solutions basées sur le cloud, rejoignez le conseil consultatif de l’adoption cloud (CAAB) pour interagir avec une communauté vaste et dynamique de développeurs de contenu Microsoft, de professionnels du secteur et de clients venant du monde entier. Pour participer, ajoutez-vous en tant que membre de l’espace [CAAB (Conseil consultatif de l’adoption cloud)]((https://aka.ms/caab)) de la communauté Microsoft Tech et envoyez-nous un message électronique à l’adresse [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Tout le monde peut lire le contenu lié à la communauté sur le [blog CAAB]((https://blogs.technet.com/b/solutions_advisory_board/)). Toutefois, les membres CAAB reçoivent des invitations à des webinaires privés qui décrivent les nouvelles solutions et ressources relatives à l’adoption cloud.<br/> |
+|**Obtenir l'image que vous voyez ici** <br/> |Si vous voulez obtenir une copie modifiable de l’image que vous voyez dans cet article, nous serons ravis de vous l’envoyer. Envoyez-nous votre demande par courrier électronique, en incluant l’URL et le titre de l’illustration, à [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20).<br/> |
    
 

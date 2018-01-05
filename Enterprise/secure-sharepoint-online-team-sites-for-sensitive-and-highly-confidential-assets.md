@@ -1,5 +1,5 @@
 ---
-title: "Sécuriser les sites d'équipe SharePoint Online pour les ressources sensibles et hautement confidentielles"
+title: "Sécuriser les sites d’équipe SharePoint Online pour les ressources sensibles et hautement confidentielles"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,16 +15,16 @@ ms.custom:
 - DecEntMigration
 - Ent_Architecture
 ms.assetid: 8c088e88-a9ba-4044-bced-722196f4496d
-description: "Résumé : Comment Contoso a implémenté protection sensible et les sites d’équipe SharePoint Online hautement confidentielles pour faciliter, encore sécurisé et ses centres de recherche et de collaboration pour les cadres."
+description: "Résumé : Découvrez comment Contoso a mis en œuvre des sites d'équipe SharePoint Online hautement confidentiels et avec protection des données sensibles, afin de permettre une collaboration simple, mais sécurisée, entre ses centres de recherche et ses cadres."
 ms.openlocfilehash: 1574babb54bfcb3fd74fb8ce4f31c364bb96b14a
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="secure-sharepoint-online-team-sites-for-sensitive-and-highly-confidential-assets"></a>Sécuriser les sites d'équipe SharePoint Online pour les ressources sensibles et hautement confidentielles
+# <a name="secure-sharepoint-online-team-sites-for-sensitive-and-highly-confidential-assets"></a>Sécuriser les sites d’équipe SharePoint Online pour les ressources sensibles et hautement confidentielles
 
- **Résumé :** Comment Contoso mis en œuvre une protection sensible et hautement confidentielles SharePoint Online les sites d’équipe pour une collaboration plus facile, mais il est sécurisée, pour les cadres et ses centres de recherche.
+ **Résumé :** Découvrez comment Contoso a mis en œuvre des sites d'équipe SharePoint Online hautement confidentiels et avec protection des données sensibles, afin de permettre une collaboration simple, mais sécurisée, entre ses centres de recherche et ses cadres.
   
 Les cadres supérieurs de Contoso souhaitent utiliser Office 365 et stocker leurs fichiers dans un emplacement unique à des fins de collaboration, quel que soit l'endroit où ils sont susceptibles de se trouver. De même, les services de recherche de Contoso, qui comptent des départements à Paris, Moscou, New York, Beijing (Pékin) et Bengaluru (Bangalore), aimeraient faire passer leurs ressources numériques en local sur le cloud afin d'en faciliter l'accès et de permettre une collaboration plus ouverte entre les équipes.
   
@@ -34,17 +34,17 @@ Les administrateurs de la sécurité et de SharePoint au sein du service informa
   
 **Figure 1 : Comparaison des sites d'équipe SharePoint Online hautement confidentiels et avec protection des données sensibles**
 
-![Sites d'équipe SharePoint Online hautement confidentiels et avec protection des données sensibles](images/Contoso_Poster/SP_Solution.png)
+![Sites d’équipe SharePoint Online hautement confidentiels et avec protection des données sensibles](images/Contoso_Poster/SP_Solution.png)
   
-Contoso a créé des sites d'équipe SharePoint Online sécurisés pour ses cadres et ses équipes de recherche de la manière suivante :
+Contoso a créé des sites d’équipe SharePoint Online sécurisés pour ses cadres et ses équipes de recherche de la manière suivante :
   
 1. Création d'un site d'équipe SharePoint Online sensible pour les **cadres**
     
-    Le nouveau site d'équipe utilise des groupes Azure Active Directory (AD) existants pour les cadres en tant que membres avec le niveau d'autorisation Modifier SharePoint et un petit ensemble de comptes d'administrateur SharePoint en tant que propriétaires avec le niveau d'autorisation Contrôle total.
+    Le nouveau site d’équipe utilise des groupes Azure Active Directory (AD) existants pour les cadres en tant que membres avec le niveau d’autorisation Modifier SharePoint et un petit ensemble de comptes d’administrateur SharePoint en tant que propriétaires avec le niveau d’autorisation Contrôle total.
     
 2. Migration des fichiers des cadres
     
-    Les fichiers et dossiers des cadres existants en local sont déplacés vers le nouveau site d'équipe SharePoint Online pour les cadres.
+    Les fichiers et dossiers des cadres existants en local sont déplacés vers le nouveau site d’équipe SharePoint Online pour les cadres.
     
 3. Création d'un site d'équipe SharePoint Online hautement confidentiel pour la **recherche**
     
@@ -52,15 +52,15 @@ Contoso a créé des sites d'équipe SharePoint Online sécurisés pour ses cadr
     
 4. Migration des fichiers de recherche
     
-    Les fichiers et dossiers de recherche existants en local sont déplacés vers le nouveau site d'équipe SharePoint Online pour la recherche.
+    Les fichiers et dossiers de recherche existants en local sont déplacés vers le nouveau site d’équipe SharePoint Online pour la recherche.
     
 Le résultat consiste en deux sites de collaboration dont l'accès est étroitement contrôlé par les administrateurs de la sécurité et de SharePoint. Pour les fichiers dotés de l'étiquette AIP Hautement confidentiel, même s'ils sont distribués en dehors du site d'équipe pour la recherche, ils sont chiffrés et ne peuvent être ouverts que par un membre d'une équipe de recherche.
   
-Pour plus d'informations, consultez l'article [Sécuriser des sites et des fichiers SharePoint Online](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-and-files).
+Pour plus d'informations, consultez l'article [Sécuriser des sites et des fichiers SharePoint Online]((https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-and-files)).
   
- Pour définir la preuve de concept, de démonstration ou de développement/test, consultez [les sites SharePoint Online de la sécuriser dans un environnement de développement/test](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-dev-test).
+ Pour effectuer cette configuration à des fins de démonstration, de preuve de concept ou de développement/test, consultez l'article [Sécuriser des sites SharePoint Online dans un environnement de développement et de test]((https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-dev-test)).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Voir aussi
 
 [Scénarios d'entreprise pour la société Contoso](enterprise-scenarios-for-the-contoso-corporation.md)
   
@@ -68,9 +68,9 @@ Pour plus d'informations, consultez l'article [Sécuriser des sites et des fichi
   
 [Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Stretch Database](https://msdn.microsoft.com/library/dn935011.aspx)
+[Stretch Database]((https://msdn.microsoft.com/library/dn935011.aspx))
   
-[Feuille de route de Microsoft Enterprise Cloud : Ressources pour les décideurs informatiques](https://sway.com/FJ2xsyWtkJc2taRD)
+[Feuille de route de Microsoft Enterprise Cloud : Ressources pour les décideurs informatiques]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

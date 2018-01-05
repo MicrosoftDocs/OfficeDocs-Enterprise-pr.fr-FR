@@ -1,5 +1,5 @@
 ---
-title: "Connexion à des locataires Exchange Online avec Remote Windows PowerShell pour les partenaires avec autorisations d'accès délégué"
+title: "Connexion à des locataires Exchange Online avec Remote Windows PowerShell pour les partenaires avec autorisations d’accès délégué"
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,31 +14,31 @@ ms.assetid: ae5f1a87-8b77-4f93-a1b8-56f800aeb283
 description: "Résumé : Utilisez Windows PowerShell distant pour vous connecter à Exchange Online à l'aide du paramètre DelegatedOrg."
 ms.openlocfilehash: 9bb6a5a316f4bc23c6586da825b8755cf755f484
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Connexion à des locataires Exchange Online avec Remote Windows PowerShell pour les partenaires avec autorisations d'accès délégué
+# <a name="connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Connexion à des locataires Exchange Online avec Remote Windows PowerShell pour les partenaires avec autorisations d’accès délégué
 
- **Résumé :** Utilisation à distance de Windows PowerShell pour se connecter à Exchange Online à l’aide du paramètre _DelegatedOrg_ .
+ **Résumé :** Utilisez Windows PowerShell distant pour vous connecter à Exchange Online à l'aide du paramètre _DelegatedOrg_.
   
 Windows PowerShell distant vous permet de gérer vos paramètres Exchange Online à partir de la ligne de commande. Vous pouvez utiliser Windows PowerShell sur votre ordinateur local pour créer une session distante vers Exchange Online. Il s'agit d'un processus simple en trois étapes, dans lequel vous entrez vos informations d'identification Exchange Online, vous indiquez les paramètres de connexion requis, puis vous importez les cmdlets Exchange Online dans votre session Windows PowerShell locale afin de pouvoir les utiliser.
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
 
-- Durée d'exécution estimée : 5 minutes
+- Durée d’exécution estimée : 5 minutes
     
-- Vous pouvez utiliser les versions de Windows suivantes :
+- Vous pouvez utiliser les versions de Windows suivantes :
     
-  - Windows 10
+  - Windows 10
     
-  - Windows 8.1 ou Windows 8
+  - Windows 8.1 ou Windows 8
     
-  - Windows Server 2012 R2 ou Windows Server 2012
+  - Windows Server 2012 R2 ou Windows Server 2012
     
-  - Windows 7 Service Pack 1 (SP1)*
+  - Windows 7 Service Pack 1 (SP1)*
     
-  - Windows Server 2008 R2 SP1*
+  - Windows Server 2008 R2 SP1*
     
     * Vous devez installer .NET Framework 4.5.1 ou .NET Framework 4.5, puis Windows Management Framework 4.0 ou Windows Management Framework 3.0. Pour plus d'informations, consultez les ressources suivantes :
     
@@ -57,7 +57,7 @@ Les partenaires avec autorisation d'accès délégué sont les partenaires de sy
   
 ## <a name="connect-to-exchange-online"></a>Vous connecter à Exchange Online
 
-1. Sur votre ordinateur local, ouvrez Windows PowerShell et exécutez la commande suivante.
+1. Sur votre ordinateur local, ouvrez Windows PowerShell et exécutez la commande suivante.
     
   ```
   $UserCredential = Get-Credential
@@ -82,13 +82,13 @@ Les partenaires avec autorisation d'accès délégué sont les partenaires de sy
 > [!NOTE]
 > Trois sessions simultanées peuvent être exécutées sous un seul compte au maximum. N'oubliez pas de déconnecter la session Windows PowerShell distante dès que vous avez terminé. Si vous fermez la fenêtre Windows PowerShell sans déconnecter la session, vous risquez d'épuiser toutes les sessions Windows PowerShell distantes à votre disposition et vous devrez attendre que les sessions expirent. Pour déconnecter la session Windows PowerShell distante, exécutez la commande suivante. >  `Remove-PSSession $Session`
   
-## <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
+## <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
 
 Après l'étape 3, les cmdlets Exchange Online sont importées dans votre session Windows PowerShell locale comme indiqué par une barre de progression. Si vous ne recevez aucune erreur, la connexion est établie. Un test rapide consiste à exécuter une cmdlet Exchange Online (par exemple, **Get-Mailbox** ) et à consulter les résultats.
   
-Si vous recevez des erreurs, vérifiez les conditions requises suivantes :
+Si vous recevez des erreurs, vérifiez les conditions requises suivantes :
   
-- Un mot de passe incorrect est un problème courant. Exécutez à nouveau les trois étapes et portez une attention particulière au nom d'utilisateur et au mot de passe que vous entrez à l'étape 1.
+- Un mot de passe incorrect est un problème courant. Exécutez à nouveau les trois étapes et portez une attention particulière au nom d’utilisateur et au mot de passe que vous entrez à l’étape 1.
     
 - Pour éviter les attaques par déni de service, vous ne pouvez ouvrir que trois sessions Windows PowerShell distantes vers votre organisation Exchange Online.
     

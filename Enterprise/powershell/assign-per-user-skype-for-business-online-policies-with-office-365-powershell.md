@@ -14,23 +14,23 @@ ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: "Résumé : Utilisez Office 365 PowerShell pour affecter des paramètres de communication à chaque utilisateur au moyen de stratégies Skype Entreprise Online."
 ms.openlocfilehash: 91916b41ba420a204ecabb27eea2e451a91f6f25
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>Affectation de stratégies Skype Entreprise Online propres à chaque utilisateur avec Office 365 PowerShell
 
- **Résumé :** Office 365 PowerShell permet d’affecter des paramètres de communication avec Skype pour les stratégies d’entreprise en ligne par l’utilisateur.
+ **Résumé :** Utilisez Office 365 PowerShell pour affecter des paramètres de communication à chaque utilisateur au moyen de stratégies Skype Entreprise Online.
   
 Office 365 PowerShell est un outil pratique pour affecter des paramètres de communication à chaque utilisateur au moyen de stratégies Skype Entreprise Online.
   
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Suivez ces instructions pour exécuter les commandes (sautez les étapes que vous avez déjà effectuées) :
+Suivez ces instructions pour exécuter les commandes (sautez les étapes que vous avez déjà effectuées) :
   
 1. Téléchargez et installez le [module Connecteur Skype Entreprise Online](https://www.microsoft.com/en-us/download/details.aspx?id=39366).
     
-2. Ouvrez l'invite de commandes Windows PowerShell et exécutez les commandes suivantes : 
+2. Ouvrez l’invite de commandes Windows PowerShell et exécutez les commandes suivantes : 
     
   ```
   Import-Module LyncOnlineConnector
@@ -40,24 +40,24 @@ Import-PSSession $sfbSession
   ```
 Lorsque vous y êtes invité, entrez le nom utilisateur et le mot de passe de votre compte d'administrateur Skype Entreprise Online.
     
-## <a name="updating-external-communication-settings-for-a-user-account"></a>Mise à jour des paramètres de communication externe d'un compte d'utilisateur
+## <a name="updating-external-communication-settings-for-a-user-account"></a>Mise à jour des paramètres de communication externe d’un compte d’utilisateur
 
-Supposons que vous souhaitiez modifier les paramètres de communication externe d'un compte d'utilisateur. Par exemple, vous souhaitez autoriser Alex à communiquer avec les utilisateurs fédérés (EnableFederationAccess est défini sur True), mais pas avec les utilisateurs Windows Live (EnablePublicCloudAccess est défini sur False). Pour cela, vous devez faire deux choses :
+Supposons que vous souhaitiez modifier les paramètres de communication externe d’un compte d’utilisateur. Par exemple, vous souhaitez autoriser Alex à communiquer avec les utilisateurs fédérés (EnableFederationAccess est défini sur True), mais pas avec les utilisateurs Windows Live (EnablePublicCloudAccess est défini sur False). Pour cela, vous devez faire deux choses :
   
-1. Trouver une stratégie d'accès externe qui réponde à nos critères.
+1. Trouver une stratégie d’accès externe qui réponde à nos critères.
     
-2. Attribuer cette stratégie d'accès externe à Alex.
+2. Attribuer cette stratégie d’accès externe à Alex.
     
 > [!NOTE]
->  Impossible de créer une stratégie personnalisée tous notre propre. C’est parce que Skype pour Business Online ne vous autorise pas à créer des stratégies personnalisées. Au lieu de cela, vous devez affecter l’une des stratégies qui ont été créés spécifiquement pour Office 365. Ceux créés à l’avance les stratégies comprennent : 4 stratégies de clients différents, 224 conférence différentes stratégies, 5 différents plans de numérotation, 5 stratégies d’accès externes différents, stratégie de messagerie vocale de hébergé 1 et 4 voix différente.
+>  Vous ne pouvez pas créer votre propre stratégie personnalisée. Skype Entreprise Online ne permet pas de créer de stratégies personnalisées. Vous devez attribuer l'une des stratégies créées spécifiquement pour Office 365. Les stratégies pré-créées sont les suivantes :  4 stratégies de client différentes,  224 stratégies de conférence différentes,  5 plans de numérotation différents, 5 stratégies d'accès externe différentes, 1 stratégie de messagerie vocale hébergée et 4 stratégies de voix différentes.
   
-Comment savoir alors quelle stratégie d'accès externe attribuer à Alex ? La commande suivante renvoie toutes les stratégies d'accès externe où EnableFederationAccess a la valeur True et EnablePublicCloudAccess a la valeur False :
+Comment savoir alors quelle stratégie d’accès externe attribuer à Alex ? La commande suivante renvoie toutes les stratégies d’accès externe où EnableFederationAccess a la valeur True et EnablePublicCloudAccess a la valeur False :
   
 ```
 Get-CsExternalAccessPolicy | Where-Object {$_.EnableFederationAccess -eq $True -and $_.EnablePublicCloudAccess -eq $False}
 ```
 
-Ce que fait la commande est de retourner toutes les stratégies qui répondent aux deux critères : la propriété EnableFederationAccess est définie sur True, et la stratégie EnablePublicCloudAccess est définie sur False. À son tour, cette commande renvoie une stratégie qui répond à nos critères (FederationOnly). Voici un exemple :
+Le rôle de la commande consiste à renvoyer toutes les stratégies qui répondent aux deux critères suivants : la propriété EnableFederationAccess est définie sur True et la stratégie EnablePublicCloudAccess sur False. Ensuite, cette commande renvoie une stratégie (FederationOnly) qui répond à nos critères. Voici un exemple :
   
 ```
 Identity                          : Tag:FederationOnly
@@ -70,7 +70,7 @@ EnableOutsideAccess               : True
 ```
 
 > [!NOTE]
-> L'identité de la stratégie indique Tag:FederationOnly. Ce préfixe Tag: est issu de nos travaux préliminaires sur Microsoft Lync 2013. Pour attribuer des stratégies aux utilisateurs, vous devez supprimer le préfixe Tag: et utiliser uniquement le nom de stratégie : FederationOnly. 
+> L’identité de la stratégie indique Tag:FederationOnly. Ce préfixe Tag: est issu de nos travaux préliminaires sur Microsoft Lync 2013. Pour attribuer des stratégies aux utilisateurs, vous devez supprimer le préfixe Tag: et utiliser uniquement le nom de stratégie : FederationOnly. 
   
 Maintenant que vous savez quelle stratégie attribuer à Alex, vous pouvez le faire à l'aide de la cmdlet [Grant-CsExternalAccessPolicy](https://go.microsoft.com/fwlink/?LinkId=523974). Voici un exemple :
   
@@ -78,7 +78,7 @@ Maintenant que vous savez quelle stratégie attribuer à Alex, vous pouvez le fa
 Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName "FederationOnly"
 ```
 
-Affecter une stratégie est la simplicité même : il vous suffit de spécifier l'identité de l'utilisateur et le nom de la stratégie à attribuer. 
+Affecter une stratégie est la simplicité même : il vous suffit de spécifier l’identité de l’utilisateur et le nom de la stratégie à attribuer. 
   
 Concernant les stratégies et leur attribution, vous n'êtes pas obligé de gérer les comptes d'utilisateur séparément. Supposons que vous ayez besoin d'une liste de tous les utilisateurs autorisés à communiquer avec les partenaires fédérés et les utilisateurs de Windows Live. Nous savons déjà que la stratégie d'accès utilisateur externe FederationAndPICDefault a été attribuée à ces utilisateurs. Sachant cela, vous pouvez afficher une liste de tous ces utilisateurs en exécutant une commande simple, que voici :
   
@@ -88,7 +88,7 @@ Get-CsOnlineUser -Filter {ExternalAccessPolicy -eq "FederationAndPICDefault"} | 
 
 En d'autres termes, afficher tous les utilisateurs dont la propriété ExternalAccessPolicy est définie sur FederationAndPICDefault. (En outre, afin de limiter la quantité d'informations affichées à l'écran, utilisez la cmdlet Select-Object pour n'afficher que le nom d'affichage de chaque utilisateur.) 
   
-Pour configurer tous vos comptes d'utilisateur de manière à ce qu'ils utilisent la même stratégie, procédez comme suit :
+Pour configurer tous vos comptes d’utilisateur de manière à ce qu’ils utilisent la même stratégie, procédez comme suit :
   
 ```
 Get-CsOnlineUser | Grant-CsExternalAccessPolicy "FederationAndPICDefault"
@@ -104,9 +104,9 @@ Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
 
 Cette commande définit le nom de la stratégie d'accès externe attribuée à Alex sur une valeur nulle ($Null). En d'autres termes, aucune stratégie d'accès externe n'est attribuée à Alex. Or, en l'absence de stratégie d'accès externe attribuée à un utilisateur, ce dernier est géré par la stratégie globale.
   
-Pour désactiver un compte d’utilisateur à l’aide de Windows PowerShell, utiliser les applets de commande Azure Active Directory pour supprimer Skype Alex pour la licence commerciale en ligne. Pour plus d’informations, consultez [désactivation de l’accès aux services Office 365 PowerShell](assign-licenses-to-user-accounts-with-office-365-powershell.md).
+Pour désactiver un compte d’utilisateur à l’aide de Windows PowerShell, utilisez les cmdlets Azure Active Directory pour supprimer la licence Skype Entreprise Online d’Alex. Pour plus d’informations, consultez la rubrique [Désactiver l’accès aux services avec Office 365 PowerShell](assign-licenses-to-user-accounts-with-office-365-powershell.md).
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Voir aussi
 
 #### 
 

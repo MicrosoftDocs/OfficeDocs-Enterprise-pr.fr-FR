@@ -1,5 +1,5 @@
 ---
-title: "Intégration d'Exchange Online pour votre environnement de développement/test Office 365 et Dynamics 365"
+title: "Intégration d’Exchange Online pour votre environnement de développement/test Office 365 et Dynamics 365"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -21,11 +21,11 @@ ms.assetid: 499c5823-427a-4ba2-8fc1-9553bc2ff2d3
 description: "Résumé : Utilisez ce Guide de laboratoire de test pour activer l'intégration de Dynamics 365 pour Exchange Online dans votre abonnement à la version d'évaluation d'Office 365."
 ms.openlocfilehash: 9cecd13f0ffc3c2822ac6c66a3bde9c9e6a3c798
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="exchange-online-integration-for-your-office-365-and-dynamics-365-devtest-environment"></a>Intégration d'Exchange Online pour votre environnement de développement/test Office 365 et Dynamics 365
+# <a name="exchange-online-integration-for-your-office-365-and-dynamics-365-devtest-environment"></a>Intégration d’Exchange Online pour votre environnement de développement/test Office 365 et Dynamics 365
 
  **Résumé :** Utilisez ce Guide de laboratoire de test pour activer l'intégration de Dynamics 365 pour Exchange Online dans votre abonnement à la version d'évaluation d'Office 365.
   
@@ -33,26 +33,26 @@ Un aspect utile de Microsoft Dynamics 365 est le stockage de toutes les communic
   
 Pour stocker les e-mails et autres enregistrements de messagerie dans Dynamics 365, vous devez synchroniser votre système de messagerie avec Dynamics 365. La synchronisation côté serveur est la méthode de prédilection pour la synchronisation de la messagerie.
   
-Utilisez ce Guide de laboratoire de test pour configurer et montrer la façon dont Exchange Online et le client Outlook Online peuvent exploiter les informations stockées dans Dynamics 365. 
+Utilisez ce Guide de laboratoire de test pour configurer et montrer la façon dont Exchange Online et le client Outlook Online peuvent exploiter les informations stockées dans Dynamics 365. 
   
-## <a name="phase-1-build-out-the-office-365-and-dynamics-365-devtest-environment"></a>Phase 1 : créer l'environnement de développement/test Office 365 et Dynamics 365
+## <a name="phase-1-build-out-the-office-365-and-dynamics-365-devtest-environment"></a>Phase 1 : créer l’environnement de développement/test Office 365 et Dynamics 365
 
 Suivez les instructions figurant dans la rubrique [Environnement de développement/test Office 365 et Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md) pour créer une version en mode léger ou pour entreprise simulée d'un environnement de développement/test Office 365 et Dynamics 365.
   
 > [!NOTE]
-> La configuration décrite dans cet article ne requiert pas l'environnement de développement/test en entreprise simulée, qui utilise un intranet simulé connecté à Internet et la synchronisation d'annuaires pour une forêt Windows Server Active Directory (AD). Il est proposé comme option dans cet article afin que vous puissiez tester Office 365 et Dynamics 365 dans un environnement qui représente une organisation classique. 
+> La configuration décrite dans cet article ne requiert pas l’environnement de développement/test en entreprise simulée, qui utilise un intranet simulé connecté à Internet et la synchronisation d’annuaires pour une forêt Windows Server Active Directory (AD). Il est proposé comme option dans cet article afin que vous puissiez tester Office 365 et Dynamics 365 dans un environnement qui représente une organisation classique. 
   
 ## <a name="phase-2-configure-and-demonstrate-dynamics-365-integration-in-exchange-online"></a>Phase 2 : configurer et montrer l'intégration Dynamics 365 dans Exchange Online
 
 Suivez ces étapes pour configurer la boîte aux lettres de l'administrateur général pour l'intégration de Dynamics 365 et Exchange Online :
   
-1. À l’aide d’une session privée de votre navigateur, accédez à [http://portal.office.com](http://portal.office.com) et connectez-vous en utilisant votre compte d’administrateur global Office 365.
+1. À l’aide d’une session privée de votre navigateur, accédez à [(http://portal.office.com)]((http://portal.office.com)) et connectez-vous à l’aide de votre compte d’administrateur général Office 365.
     
 2. Sur la page **Accueil Microsoft Office**, cliquez sur la mosaïque **Messagerie**.
     
 3. Dans le nouvel onglet **Messagerie** de votre navigateur, cliquez sur **Nouveau** et notez que la partie inférieure du volet en dessous de la zone de saisie d'un message contient une icône pour Mes modèles.
     
-     ![Nouveau message électronique vide sans l'intégration à Dynamics 365.](images/879b54fd-a68f-4581-9f89-d5050df6f4de.png)
+     ![Nouveau message électronique vide sans l’intégration à Dynamics 365.](images/879b54fd-a68f-4581-9f89-d5050df6f4de.png)
   
 4. Cliquez sur **Abandonner** et laissez l'onglet **Messagerie** ouvert.
     
@@ -74,7 +74,7 @@ Suivez ces étapes pour configurer la boîte aux lettres de l'administrateur gé
     
 13. Cliquez sur **Approuver l'adresse de messagerie** dans la barre d'outils, puis cliquez sur **OK**.
     
-14. Sélectionnez le nom d’administrateur global de Office 365 dans la colonne de gauche de la coche, cliquez sur **Test &amp; activer les boîtes aux lettres** dans l’outil de la barre, puis cliquez sur **OK**.
+14. Sélectionnez le nom de l’administrateur général Office 365 dans la colonne de gauche, cliquez sur **Tester&amp; Activer les boîtes aux lettres** dans la barre d’outils, puis cliquez sur **OK**.
     
 15. Cliquez sur l'onglet **Messagerie** ouvert et vérifiez que l'administrateur général a reçu un message de test.
     
@@ -94,20 +94,20 @@ Suivez ces étapes pour installer l'application Dynamics 365 pour Outlook et mon
     
 6. Dans le nouvel **Messagerie** de votre navigateur, cliquez sur **Nouveau**. Vous pouvez remarquer que la partie inférieure du volet en dessous de la zone de saisie d'un message contient maintenant une icône pour Dynamics 365.
     
-     ![Nouveau message électronique vide avec l'intégration à Dynamics 365, affichant la nouvelle icône.](images/ecb822e1-45fe-4481-99a1-294317d1d2de.png)
+     ![Nouveau message électronique vide avec l’intégration à Dynamics 365, affichant la nouvelle icône.](images/ecb822e1-45fe-4481-99a1-294317d1d2de.png)
   
 7. Cliquez sur l'icône Dynamics 365. Vous devriez voir un volet **Dynamics 365**, à partir duquel vous pouvez suivre ces modèles de messagerie ou d'accès, de la documentation commerciale ou des articles.
     
 8. Dans le champ **À** de l'e-mail, tapez **alex.y.wu@outlook.com**, puis cliquez sur **Réessayer**dans le volet **Dynamics 365**. Vous devriez voir une section **Destinataires** dans le volet **Dynamics 365** avec des informations sur Alex Wu, un contact de l'application de vente qui a été fournie avec les exemples de données pour votre abonnement à la version d'évaluation.
     
-     ![Volet d'informations Dynamics 365 pour un contact commercial stocké dans Dynamics 365.](images/a010fa5f-3f1b-47d4-ab5e-d00d85a24a3f.png)
+     ![Volet d’informations Dynamics 365 pour un contact commercial stocké dans Dynamics 365.](images/a010fa5f-3f1b-47d4-ab5e-d00d85a24a3f.png)
   
 9. Cliquez sur **Abandonner**.
 
 > [!TIP]
-> Cliquez [ici](http://aka.ms/catlgstack) pour une carte visuelle de tous les articles dans la pile d’un Guide de laboratoire de Test Microsoft Cloud.
+> Cliquez [ici]((http://aka.ms/catlgstack)) pour afficher le plan de tous les articles du jeu de guides de laboratoire de test de Microsoft Cloud.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Voir aussi
 
 [Environnement de développement/test Office 365 et Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md)
   
@@ -119,8 +119,8 @@ Suivez ces étapes pour installer l'application Dynamics 365 pour Outlook et mon
   
 [DirSync pour votre environnement de développement/test Office 365](dirsync-for-your-office-365-dev-test-environment.md)
 
-[Gestion des abonnements pour Dynamics 365 (en ligne)](https://technet.microsoft.com/library/jj679903.aspx)
+[Gestion des abonnements pour Dynamics 365 (en ligne)]((https://technet.microsoft.com/library/jj679903.aspx))
   
-[Administration de Dynamics 365](https://technet.microsoft.com/library/dn531101.aspx)
+[Administration de Dynamics 365]((https://technet.microsoft.com/library/dn531101.aspx))
 
 

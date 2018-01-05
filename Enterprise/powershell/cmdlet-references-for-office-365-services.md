@@ -1,5 +1,5 @@
 ---
-title: "Références de cmdlet pour les services Office 365"
+title: "Références de cmdlet pour les services Office 365"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,15 +16,15 @@ ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
 description: "Résumé : Découvrez les rubriques de référence de cmdlet Office 365 PowerShell pour Azure Active Directory, Exchange Online, SharePoint Online et Skype Entreprise Online."
 ms.openlocfilehash: 86975e7c0729429d771a9a316dad4b8c73d28010
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="cmdlet-references-for-office-365-services"></a>Références de cmdlet pour les services Office 365
+# <a name="cmdlet-references-for-office-365-services"></a>Références de cmdlet pour les services Office 365
 
- **Résumé :** Trouver des rubriques de référence d’applet de commande PowerShell de Office 365 pour Azure Active Directory, Exchange Online, SharePoint Online et Skype pour l’activité en ligne.
+ **Résumé :** Découvrez les rubriques de référence de cmdlet Office 365 PowerShell pour Azure Active Directory, Exchange Online, SharePoint Online et Skype Entreprise Online.
   
-Applet de commande des rubriques de référence pour les divers services Office 365 fournissent des informations détaillées et des instructions sur l’utilisation de chaque applet de commande. Addiitonally, chaque service Office 365 a PowerShell prend en charge nécessite des instructions de connexion différents.
+Les rubriques de référence de cmdlet pour les différents services Office 365 fournissent des informations détaillées et des instructions sur l’utilisation de chaque cmdlet. En outre, chaque service Office 365 prenant en charge PowerShell requiert des instructions de connexion différentes.
   
 > [!NOTE]
 > Pour vous connecter à tous les services à la fois, voir [Connexion à tous les services Office 365 à l'aide d'une seule fenêtre Windows PowerShell](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md). 
@@ -37,9 +37,9 @@ Pour obtenir les instructions de connexion pour Office 365 PowerShell, voir [Se 
   
 ## <a name="security-amp-compliance-center-powershell-cmdlets"></a>Cmdlets Centre de conformité et sécurité PowerShell
 
-Sécurité Office 365 &amp; rubriques de référence du centre de conformité applet de commande se trouvent dans la sécurité &amp; zone de PowerShell de centre de conformité de la bibliothèque TechNet. Pour ce faire, cliquez sur [Office 365 sécurité &amp; centre de conformité applets de commande](https://go.microsoft.com/fwlink/p/?LinkId=627085).
+Les rubriques de référence de cmdlet du Centre de sécurité &amp; conformité Office 365 se trouvent dans la zone PowerShell du Centre de sécurité &amp; conformité. Pour y accéder, cliquez sur [Cmdlets du Centre de conformité &amp; sécurité Office 365](https://go.microsoft.com/fwlink/p/?LinkId=627085).
   
-Pour obtenir des instructions de connexion pour la sécurité &amp; PowerShell du centre de conformité, cliquez sur [la connexion Office 365 sécurité &amp; centre de conformité à l’aide du PowerShell distant](https://go.microsoft.com/fwlink/p/?LinkId=627084).
+Pour obtenir les instructions de connexion pour le Centre de sécurité &amp; de conformité PowerShell, cliquez sur [Se connecter au Centre de sécurité &amp; conformité Office 365 à l’aide de PowerShell à distance](https://go.microsoft.com/fwlink/p/?LinkId=627084).
   
 ## <a name="exchange-online-powershell-cmdlets"></a>Cmdlets Exchange Online PowerShell
 
@@ -62,7 +62,7 @@ Les rubriques de référence de cmdlet Skype Entreprise Online se trouvent dans 
   
 Pour obtenir les instructions de connexion pour Skype Entreprise Online Powershell, cliquez sur [Connexion à Lync Online à l'aide de Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=691607).
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Voir aussi
 
 #### 
 

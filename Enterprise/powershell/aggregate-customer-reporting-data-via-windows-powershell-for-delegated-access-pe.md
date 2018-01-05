@@ -1,5 +1,5 @@
 ---
-title: "Regroupement des données des rapports d'un client via Windows PowerShell pour les partenaires avec autorisation d'accès délégué"
+title: "Regroupement des données des rapports d’un client via Windows PowerShell pour les partenaires avec autorisation d’accès délégué"
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,20 +14,20 @@ ms.assetid: 0f946b46-200a-4bdd-9b1b-019a554ddcc6
 description: "Résumé : Utiliser Windows PowerShell pour Office 365 pour récupérer des rapports sur toutes les locations de client et regrouper les données à un emplacement unique."
 ms.openlocfilehash: 89651971424d1b9a494335572d2654d8402ec146
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="aggregate-customer-reporting-data-via-windows-powershell-for-delegated-access-permission-dap-partners"></a>Regroupement des données des rapports d'un client via Windows PowerShell pour les partenaires avec autorisation d'accès délégué
+# <a name="aggregate-customer-reporting-data-via-windows-powershell-for-delegated-access-permission-dap-partners"></a>Regroupement des données des rapports d’un client via Windows PowerShell pour les partenaires avec autorisation d’accès délégué
 
- **Résumé :** Utiliser Windows PowerShell pour Office 365 pour récupérer des rapports sur tous les baux de client et d’agréger les données dans un emplacement unique.
+ **Résumé :** Utilisez Windows PowerShell pour Office 365 pour récupérer des rapports sur toutes les locations de client et regrouper les données à un emplacement unique.
   
 Par défaut, Windows PowerShell pour Office 365 ne dispose pas d'une fonction intégrée de regroupement de données des rapports pour plusieurs locations de client. Toutefois, vous pouvez utiliser cet exemple de script Windows PowerShell pour Office 365 pour itérer l'opération dans toutes les locations de votre client afin de récupérer un rapport unique pour chacun de vos clients, puis regrouper les données des rapports à un emplacement unique. Vous obtenez ainsi un rapport unique pour tous les locataires de votre client. 
   
 Les partenaires avec autorisation d'accès délégué sont les partenaires de syndication et fournisseurs de solutions cloud. Il s'agit souvent de fournisseurs de réseau ou de télécommunication pour d'autres sociétés. Ils regroupent les abonnements Office 365 dans leurs offres de services pour les clients. Lorsqu'ils vendent un abonnement Office 365, ils bénéficient automatiquement des autorisations Administrer au nom de sur leslocations clientes. Ainsi, ils peuvent administrer les locations clientes et créer des rapports les concernant.
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Pour utiliser ce script, vous devez insérer vos valeurs particulières dans ces variables :
+Pour utiliser ce script, vous devez insérer vos valeurs particulières dans ces variables :
   
 - **$UserName**: nom d'utilisateur d'administrateur de votre partenaire. Ces informations d'identification seront utilisées pour la connexion à toutes les locations de votre client.
     
@@ -137,7 +137,7 @@ foreach ($c in $contracts) {
 
 Cet exemple de script place le rapport contenant les données regroupées dans le fichier ReportOutput.csv.
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Voir aussi
 
 #### 
 

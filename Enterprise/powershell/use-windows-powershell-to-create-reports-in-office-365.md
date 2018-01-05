@@ -16,13 +16,13 @@ ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: "Résumé : Utilisez Office 365 PowerShell pour créer des rapports que vous ne pouvez pas produire dans le centre d'administration Office 365."
 ms.openlocfilehash: b1cbbbef73a266a62a417d2714fefcd630c604c4
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="use-windows-powershell-to-create-reports-in-office-365"></a>Utilisez Windows PowerShell pour créer des rapports dans Office 365
 
- **Résumé :** Office 365 PowerShell permet de créer des rapports qui vous ne pouvez pas générer dans le centre d’administration d’Office 365.
+ **Résumé** : Utilisez Office 365 PowerShell pour créer des rapports que vous ne pouvez pas produire dans le centre d'administration Office 365.
   
 De nombreux rapports sont disponibles dans le centre d'administration Office 365. Toutefois, ces rapports fournissent uniquement une certaine quantité d'informations et vous avez parfois besoin de plus. Vous avez alors besoin d'Office 365 PowerShell.
   
@@ -36,7 +36,7 @@ Les articles suivants expliquent comment utiliser Office 365 PowerShell pour obt
     
   - [Office 365 PowerShell simplifie l'impression ou l'enregistrement des données](https://technet.microsoft.com/library/dn568034.aspx#printsave)
     
-- Rapports pour les comptes d'utilisateurs et les licences :
+- Rapports pour les comptes d’utilisateurs et les licences :
     
   - [Afficher les licences et les services avec Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md)
     
@@ -46,19 +46,19 @@ Les articles suivants expliquent comment utiliser Office 365 PowerShell pour obt
     
   - [Afficher des comptes d'utilisateur avec Office 365 PowerShell](view-user-accounts-with-office-365-powershell.md)
     
-- Rapports pour SharePoint Online :
+- Rapports pour SharePoint Online :
     
-  - [Gestion des utilisateurs et des groupes SharePoint Online avec Office 365 PowerShell](http://technet.microsoft.com/library/9680af2e-a965-4e62-92ee-da72105c7800.aspx)
+  - [Gestion des utilisateurs et des groupes SharePoint Online avec Office 365 PowerShell]((http://technet.microsoft.com/library/9680af2e-a965-4e62-92ee-da72105c7800.aspx))
     
-  - [Manage SharePoint Online site groups with Office 365 PowerShell](http://technet.microsoft.com/library/122f4099-c78d-4cce-bab0-4343b04596ae.aspx)
+  - [Manage SharePoint Online site groups with Office 365 PowerShell]((http://technet.microsoft.com/library/122f4099-c78d-4cce-bab0-4343b04596ae.aspx))
     
-- Rapports pour Exchange Online :
+- Rapports pour Exchange Online :
     
-  - [Display Exchange Online mailbox information with Office 365 PowerShell](http://technet.microsoft.com/library/13843002-56ca-4b75-81c5-84386522b01b.aspx)
+  - [Display Exchange Online mailbox information with Office 365 PowerShell]((http://technet.microsoft.com/library/13843002-56ca-4b75-81c5-84386522b01b.aspx))
     
-  - [Display Exchange Online reports with Office 365 PowerShell](http://technet.microsoft.com/library/4873a063-9fc4-4ed9-826a-6e935fef61d4.aspx)
+  - [Display Exchange Online reports with Office 365 PowerShell]((http://technet.microsoft.com/library/4873a063-9fc4-4ed9-826a-6e935fef61d4.aspx))
     
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Voir aussi
 
 #### 
 

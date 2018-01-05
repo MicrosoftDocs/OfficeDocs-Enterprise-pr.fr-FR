@@ -1,5 +1,5 @@
 ---
-title: Ressources communautaires pour Office 365 PowerShell
+title: "Ressources communautaires pour Office 365 PowerShell"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,27 +16,27 @@ ms.assetid: ebe0f5ff-fd17-487f-bbb6-271b5ea270bb
 description: "Résumé :Obtenez de l'aide pour Office 365 PowerShell sur les sites communautaires ci-dessous."
 ms.openlocfilehash: c1d81415cd8ec05cba21e09fa96b5c40bf320f49
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="office-365-powershell-community-resources"></a>Ressources communautaires pour Office 365 PowerShell
+# <a name="office-365-powershell-community-resources"></a>Ressources communautaires pour Office 365 PowerShell
 
- **Résumé :** Obtenir de l’aide pour Office 365 PowerShell à partir de ces centres de communauté.
+ **Résumé :** Obtenez de l'aide pour Office 365 PowerShell sur les sites communautaires ci-dessous.
   
 Utilisez les réseaux Yammer, les forums communautaires et les sites Wiki pour entrer en contact avec les autres utilisateurs et recevoir des réponses rapides et fiables à vos questions sur Office 365 PowerShell. 
   
 - [Groupe PowerShell pour Office 365 du réseau Yammer Office 365](https://www.yammer.com/itpronetwork/#/threads/inGroup?type=in_group&amp;feedId=4632269)
     
-- [Forum communautaire sur la gestion d'Office 365](https://community.office365.com/en-us/f/148.aspx)
+- [Forum communautaire sur la gestion d'Office 365]((https://community.office365.com/fr-FR/f/148.aspx))
     
 - [Forum communautaire du TechCenter Exchange](https://social.technet.microsoft.com/Forums/exchange/en-US/home?forum=exchangesvrgeneral)
     
-- [Blogs Office](https://blogs.office.com/)
+- [Blogs Office]((https://blogs.office.com/))
     
-- [Site Wiki dédié à la gestion d'Office 365](https://community.office365.com/en-us/w/manage/default.aspx)
+- [Site Wiki dédié à la gestion d'Office 365]((https://community.office365.com/fr-FR/w/manage/default.aspx))
     
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Voir aussi
 
 #### 
 

@@ -18,13 +18,13 @@ ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
 description: Explique comment utiliser Office 365 PowerShell pour afficher des comptes d'utilisateurs sous licence ou non.
 ms.openlocfilehash: aa8c38864f3abf98f1aa5c8149db08506c6f7668
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="view-licensed-and-unlicensed-users-with-office-365-powershell"></a>Afficher les utilisateurs avec ou sans licence avec Office 365 PowerShell
 
-**Résumé :** Explique comment utiliser Office 365 PowerShell pour afficher les comptes d’utilisateurs sous licence ou non.
+**Résumé :** Explique comment utiliser Office 365 PowerShell pour afficher des comptes d'utilisateurs sous licence ou non.
   
 Il se peut que l'intégralité, une partie ou aucune des licences disponibles soit attribuée aux comptes d'utilisateurs de votre organisation Office 365 à partir des plans de gestion des licences disponibles dans votre organisation. Vous pouvez utiliser Office 365 PowerShell pour rechercher rapidement les utilisateurs avec ou sans licence dans votre organisation.
   
@@ -32,7 +32,7 @@ Il se peut que l'intégralité, une partie ou aucune des licences disponibles so
 
 - Les procédures décrites dans cette rubrique exigent une connexion à Office 365 PowerShell. Pour plus d'informations, reportez-vous à [Se connecter à Office 365 PowerShell](connect-to-office-365-powershell.md).
     
-- Si vous utilisez l’applet de commande **Get-MsolUser** sans utiliser le _-tous les_ paramètre, seuls les 500 premiers comptes de sont retournés.
+- Si vous utilisez la cmdlet **Get-MsolUser** sans utiliser le paramètre _-All_, seuls les 500 premiers comptes sont renvoyés.
     
 ## <a name="the-short-version-instructions-without-explanations"></a>La version courte (instructions sans explications)
 
@@ -44,13 +44,13 @@ Pour afficher la liste de tous les comptes d'utilisateurs et leur statut de lice
 Get-MsolUser -All
 ```
 
-Pour afficher la liste de tous les comptes d'utilisateurs sans licence dans votre organisation, exécutez la commande suivante :
+Pour afficher la liste de tous les comptes d’utilisateurs sans licence dans votre organisation, exécutez la commande suivante :
   
 ```
 Get-MsolUser -All -UnlicensedUsersOnly
 ```
 
-Pour afficher la liste de tous les comptes d'utilisateurs avec licence dans votre organisation, exécutez la commande suivante :
+Pour afficher la liste de tous les comptes d’utilisateurs avec licence dans votre organisation, exécutez la commande suivante :
   
 ```
 Get-MsolUser -All | where {$_.isLicensed -eq $true}
@@ -58,9 +58,9 @@ Get-MsolUser -All | where {$_.isLicensed -eq $true}
 
 ## <a name="the-long-version-instructions-with-detailed-explanations"></a>La version longue (instructions avec des explications détaillées)
 
-Comptes d’utilisateurs Office 365 et licences d’Office 365 n’est pas nécessaire d’avoir une correspondance un à un : il est possible que les utilisateurs d’Office 365 qui ne disposent pas d’une licence Office 365, et il est possible d’avoir des licences Office 365 qui n’ont pas été affectées à un utilisateur. (En fait, un seul compte d’utilisateur même avez *plusieurs* Office 365 licences.) Lorsque vous créez un nouvel utilisateur d’Office 365 compte (voir l’article [utilisateurs de licence Office 365 avec Windows PowerShell](http://technet.microsoft.com/library/0ab9fcac-e5ea-4b5b-b72c-8c92c55565ac.aspx) pour plus d’informations vous) n’êtes pas obligé de lui attribuer une licence : le nouvel utilisateur dispose d’un compte valide, mais il ne pourra pas se connecter à Office Ce 365. S’ils essaient de se connecter, ils verront quelque chose de semblable à ceci :
+Les comptes d'utilisateur Office 365 et les licences Office 365 ne requièrent pas de correspondance de 1 à 1 : il est possible que des utilisateurs Office 365 ne possèdent pas de licence Office 365 et que des licences Office 365 n'aient pas été attribuées à un utilisateur. (En fait, un compte d'utilisateur peut même avoir  *plusieurs*  licences Office 365.) Lorsque vous créez un compte d'utilisateur Office 365 (consultez l'article [utilisateurs de licence Office 365 avec Windows PowerShell]((http://technet.microsoft.com/library/0ab9fcac-e5ea-4b5b-b72c-8c92c55565ac.aspx)) pour obtenir plus d'informations), vous n'avez pas à attribuer de licence à cet utilisateur : le nouvel utilisateur disposera d'un compte valide, mais il ne sera pas en mesure de se connecter à Office 365. S'il essaie de se connecter, il verra quelque chose de semblable à ceci :
   
-![Utilisateur sans licence Office 365 valide.](images/o365_powershell_no_license.png)
+![Utilisateur sans licence Office 365 valide.](images/o365_powershell_no_license.png)
   
 De même, un utilisateur peut décider de prendre des congés prolongés, voire une année sabbatique ou un congé de maternité/paternité. Dans ce cas, vous pouvez retirer la licence à l'utilisateur, mais laisser le compte intact (c'est-à-dire laisser toutes les valeurs de propriété, telles que l'adresse et le numéro de téléphone, telles quelles). Ainsi, vous pouvez attribuer sa licence à quelqu'un d'autre (par exemple, un employé qui remplace temporairement la personne en congé). Lorsque l'utilisateur retourne au travail, vous pouvez lui délivrer une nouvelle licence et il sera en mesure de reprendre le travail comme s'il n'était jamais parti.
   
@@ -74,7 +74,7 @@ Comme vous le savez probablement, la cmdlet **Get-MsolUser** renvoie des informa
 Get-MsolUser
 ```
 
-Ainsi, Get-MsolUser renvoie des données semblables à ceci :
+Ainsi, Get-MsolUser renvoie des données semblables à ceci :
   
 ```
 UserPrincipalName           DisplayName                     isLicensed
@@ -91,7 +91,7 @@ Comme vous le voyez, l'une des valeurs de propriété renvoyées est celle de la
   
 Dans tous les cas, faire défiler une liste d'utilisateurs en essayant de repérer ceux sans licence fonctionne tant que vous avez un nombre relativement restreint d'utilisateurs. Cependant, si la liste est longue, il sera, au mieux, extrêmement pénible de la faire défiler jusqu'au bout. (Et, selon la façon dont Windows PowerShell a été configuré, tout bonnement impossible. Ceci est dû au fait qu'il existe une limite quant au nombre de lignes de sortie qui peuvent être affichées sur la console Windows PowerShell à un moment donné.)
   
-Ainsi, il est de loin préférable de dresser la liste des utilisateurs sans licence en exécutant la commande suivante :
+Ainsi, il est de loin préférable de dresser la liste des utilisateurs sans licence en exécutant la commande suivante :
   
 ```
 Get-MsolUser -UnlicensedUsersOnly
@@ -128,7 +128,7 @@ Comme vous le voyez, les informations ne sont pas renvoyées pour Belinda Newman
 ## <a name="see-also"></a>Voir aussi
 <a name="SeeAlso"> </a>
 
-Pour plus d'informations sur les cmdlets utilisées dans ces procédures, consultez les rubriques suivantes :
+Pour plus d’informations sur les cmdlets utilisées dans ces procédures, consultez les rubriques suivantes :
   
 - [Get-MsolUser](https://go.microsoft.com/fwlink/p/?LinkId=691547)
     

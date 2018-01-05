@@ -1,5 +1,5 @@
 ---
-title: "Gérer les comptes d'utilisateurs et les licences avec Office 365 PowerShell"
+title: "Gérer les comptes d’utilisateurs et les licences avec Office 365 PowerShell"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -17,13 +17,13 @@ ms.assetid: 26b9ff81-93b0-4251-beaf-3c9f1d7c80c8
 description: "Résumé : Découvrez comment gérer les comptes et les licences d'utilisateurs avec Office 365 PowerShell."
 ms.openlocfilehash: 860fec08199d8897d7caee90d077f2956600972a
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="manage-user-accounts-and-licenses-with-office-365-powershell"></a>Gérer les comptes d'utilisateurs et les licences avec Office 365 PowerShell
+# <a name="manage-user-accounts-and-licenses-with-office-365-powershell"></a>Gérer les comptes d’utilisateurs et les licences avec Office 365 PowerShell
 
- **Résumé :** Apprenez à gérer les comptes d’utilisateurs et des licences avec Office 365 PowerShell.
+ **Résumé :** Découvrez comment gérer les comptes et les licences d'utilisateurs avec Office 365 PowerShell.
   
 L'une des tâches principales de tout administrateur Office 365 consiste à gérer les comptes d'utilisateurs et les licences. Bien que vous puissiez effectuer certaines de ces tâches dans le Centre d'administration Office 365, d'autres tâches sont beaucoup plus rapides et plus simples à exécuter avec Office 365 PowerShell. Pour plus d'informations, consultez les rubriques suivantes :
   

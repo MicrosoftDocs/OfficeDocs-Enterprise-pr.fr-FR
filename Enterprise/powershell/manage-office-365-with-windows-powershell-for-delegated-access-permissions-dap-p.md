@@ -1,5 +1,5 @@
 ---
-title: "Gestion d'Office 365 avec Windows PowerShell pour les partenaires avec autorisations d'accès délégué"
+title: "Gestion d’Office 365 avec Windows PowerShell pour les partenaires avec autorisations d’accès délégué"
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ ms.assetid: be497751-596f-431d-b256-0a89d36a47ce
 description: "Résumé :Partenaires de syndication et fournisseur de solutions cloud peut utiliser Windows PowerShell pour gérer les locataires de clients Office 365."
 ms.openlocfilehash: 98144aa6c4f60591677468ee7f5efd7e1a7956d1
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="manage-office-365-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Gestion d'Office 365 avec Windows PowerShell pour les partenaires avec autorisations d'accès délégué
+# <a name="manage-office-365-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Gestion d’Office 365 avec Windows PowerShell pour les partenaires avec autorisations d’accès délégué
 
- **Résumé :** Les partenaires de syndication et fournisseur de solutions de Cloud (CSP) peuvent utiliser Windows PowerShell pour gérer les locataires du client Office 365.
+ **Résumé :** Partenaires de syndication et fournisseur de solutions cloud peut utiliser Windows PowerShell pour gérer les locataires de clients Office 365.
   
 Les partenaires avec autorisation d'accès délégué sont les partenaires de syndication et fournisseurs de solutions cloud. Il s'agit souvent de fournisseurs de réseau ou de télécommunication pour d'autres sociétés. Ils regroupent les abonnements Office 365 dans leurs offres de services pour les clients. Lorsqu'ils vendent un abonnement Office 365, ils bénéficient automatiquement des autorisations Administrer au nom de sur leslocations clientes. Ainsi, ils peuvent administrer les locations clientes et créer des rapports les concernant. Cette opération est difficile et chronophage dans le Centre d'administration Office 365. Il est beaucoup plus facile d'effectuer des tâches d'administration comme répertorier les codes **TenantIds** de tous les clients et leurs domaines ou identifier tous les utilisateurs d'une location d'un client et les licences qui leur sont affectées à l'aide de Windows PowerShell pour Office 365 Dans certains cas, il est possible d'effectuer ces tâches d'administration uniquement dans Windows PowerShell pour Office 365. Voici quelques exemples de scénarios que les partenaires fournisseurs de solutions cloud et de syndication utilisent le plus souvent pour administrer les locations de leurs clients :
   

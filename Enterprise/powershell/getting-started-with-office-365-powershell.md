@@ -1,5 +1,5 @@
 ---
-title: Mise en route d'Office 365 Powershell
+title: "Mise en route d’Office 365 Powershell"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -17,17 +17,17 @@ ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
 description: "Résumé : Comprendre l'importance de Office 365 PowerShell, vous connecter à votre client Office 365 et obtenir de l'aide."
 ms.openlocfilehash: 16df86ef7f2fe75fd6bc3e384d01329de545ae11
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="getting-started-with-office-365-powershell"></a>Mise en route d'Office 365 Powershell
+# <a name="getting-started-with-office-365-powershell"></a>Mise en route d’Office 365 Powershell
 
- **Résumé :** Comprendre l’importance de Office 365 PowerShell, connectez-vous à vos clients d’Office 365 et obtenir de l’aide.
+ **Résumé :** Comprendre l'importance d’Office 365 PowerShell, vous connecter à votre client Office 365 et obtenir de l'aide.
   
 Avec Office 365 PowerShell, vous pouvez gérer Office 365 avec des commandes et des scripts pour simplifier votre travail quotidien. Découvrez pourquoi les compétences relatives à Office 365 PowerShell sont essentielles à la gestion d'Office 365, comment vous connecter à votre abonnement Office 365, créer des rapports, ainsi qu'obtenir des informations supplémentaires et de l'aide de la communauté Office 365.
   
-Sélectionnez l'article selon vos besoins :
+Sélectionnez l’article selon vos besoins :
   
 - [Pourquoi utiliser Office 365 PowerShell ?](why-you-need-to-use-office-365-powershell.md)
     
@@ -53,7 +53,7 @@ Sélectionnez l'article selon vos besoins :
     
     Commencez ici pour vous connecter aux salles de communauté PowerShell et obtenir de l'aide ou des informations en cours sur l'utilisation de Office 365 PowerShell.
     
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Voir aussi
 
 #### 
 

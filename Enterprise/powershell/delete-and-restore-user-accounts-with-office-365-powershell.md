@@ -10,17 +10,16 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - PowerShell
 - Ent_Office_Other
 - O365ITProTrain
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
 description: "Découvrez comment utiliser Office 365 PowerShell pour supprimer et restaurer des comptes d'utilisateur Office 365."
-ms.openlocfilehash: 8404395ea9594cea1a2e772cecbeb011756b7754
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: fc72d51532780d2ddaaff20ecc6aebab06a001f4
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="delete-and-restore-user-accounts-with-office-365-powershell"></a>Suppression et restauration de comptes d’utilisateurs avec Office 365 PowerShell
 

@@ -9,16 +9,14 @@ ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 3e9c405a-415b-4584-aa7e-f2489299c457
 description: "Résumé : Comment Contoso a implémenté SQL Server Stretch Database pour réduire ses besoins en matière de stockage de données locales et ses dépenses quotidiennes de fonctionnement."
-ms.openlocfilehash: f1a44a14da49c394974755f7c557013717c4ccef
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: ef21b00f54fcc6efda2e83cb5952a99c7b8c8f28
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="moving-historical-transaction-data-to-the-cloud"></a>Déplacement des données de transaction historiques dans le cloud
 
@@ -34,7 +32,7 @@ Dans la mesure où l'entreprise avait besoin de réduire la taille de ses centre
   
 La figure 1 montre comment un client SQL envoie des requêtes T-SQL sur un serveur qui exécute SQL Server 2016, lequel les transfère vers Azure SQL Stretch Database dans Azure PaaS.
   
-Pour plus d'informations, voir [Stretch Database](https://msdn.microsoft.com/library/dn935011.aspx).
+Pour plus d'informations, voir [Stretch Database]((https://msdn.microsoft.com/library/dn935011.aspx)).
   
 Contoso a suivi les étapes suivantes pour déplacer ses données historiques vers le cloud :
   
@@ -77,9 +75,9 @@ Après l’implémentation de Stretch Database, Contoso a :
   
 [Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Stretch Database](https://msdn.microsoft.com/library/dn935011.aspx)
+[Stretch Database]((https://msdn.microsoft.com/library/dn935011.aspx))
   
-[Feuille de route de Microsoft Enterprise Cloud : Ressources pour les décideurs informatiques](https://sway.com/FJ2xsyWtkJc2taRD)
+[Feuille de route de Microsoft Enterprise Cloud : Ressources pour les décideurs informatiques]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

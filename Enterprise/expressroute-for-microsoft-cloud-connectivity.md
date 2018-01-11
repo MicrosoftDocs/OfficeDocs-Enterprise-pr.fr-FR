@@ -9,16 +9,14 @@ ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: "Résumé : Comprendre comment ExpressRoute peut garantir des connexions plus fiables et plus rapides aux services et aux plateformes cloud de Microsoft."
-ms.openlocfilehash: 69120d3237518be5d77716a106d2e75b64a4860e
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 4534f06e5d4eca759aadb9b589e39f0c8cdeffb1
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>ExpressRoute pour la connectivité au cloud de Microsoft
 
@@ -62,9 +60,9 @@ Même avec une connexion ExpressRoute, le trafic est toujours transmis par Inter
   
 Consultez les ressources supplémentaires suivantes pour plus d’informations :
   
-- [ExpressRoute pour Office 365](https://aka.ms/expressrouteoffice365)
+- [ExpressRoute pour Office 365]((https://aka.ms/expressrouteoffice365))
     
-- [ExpressRoute pour Azure](https://azure.microsoft.com/services/expressroute/)
+- [ExpressRoute pour Azure]((https://azure.microsoft.com/services/expressroute/))
     
 ## <a name="advantages-of-expressroute-for-azure"></a>Avantages d’ExpressRoute pour Azure
 
@@ -80,7 +78,7 @@ Voici quelques avantages liés à l’utilisation des services cloud basés sur 
     
 Une connexion ExpressRoute ne garantit pas de meilleures performances dans chaque configuration. Il est possible d’avoir des performances inférieures en utilisant une connexion ExpressRoute avec une faible bande passante au lieu d’une connexion Internet avec une bande passante élevée qui se trouve seulement à quelques sauts d’un centre de données Microsoft régional.
   
-Pour obtenir les dernières recommandations sur l'utilisation d'ExpressRoute avec Office 365, voir [ExpressRoute pour Office 365](https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd).
+Pour obtenir les dernières recommandations sur l'utilisation d'ExpressRoute avec Office 365, voir [ExpressRoute pour Office 365]((https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd)).
   
 ## <a name="expressroute-connectivity-models"></a>Modèles de connectivité ExpressRoute
 
@@ -237,11 +235,11 @@ Pour un bureau régional, attribuez le trafic Office 365 aux centres de données
     
 Pour plus d’informations, voir :
   
-- [Azure ExpressRoute for Office 365 Training](https://channel9.msdn.com/series/aer/)
+- [Azure ExpressRoute for Office 365 Training]((https://channel9.msdn.com/series/aer/))
     
-- [Planification réseau et optimisation des performances pour Office 365](https://aka.ms/tune)
+- [Planification réseau et optimisation des performances pour Office 365]((https://aka.ms/tune))
     
-- [Gestion des performances Office 365](https://mva.microsoft.com/fr-FR/training-courses/office-365-performance-management-8416)
+- [Gestion des performances Office 365]((https://mva.microsoft.com/fr-FR/training-courses/office-365-performance-management-8416))
     
 ## <a name="expressroute-options"></a>Options ExpressRoute
 
@@ -257,11 +255,11 @@ Vous pouvez également intégrer les options suivantes dans votre déploiement E
     
 Consultez les ressources supplémentaires suivantes pour plus d’informations :
   
-- [ExpressRoute pour Office 365](https://aka.ms/expressrouteoffice365)
+- [ExpressRoute pour Office 365]((https://aka.ms/expressrouteoffice365))
     
-- [Azure ExpressRoute for Office 365 Training](https://channel9.msdn.com/series/aer/)
+- [Azure ExpressRoute for Office 365 Training]((https://channel9.msdn.com/series/aer/))
     
-- [ExpressRoute pour Azure](https://azure.microsoft.com/services/expressroute/)
+- [ExpressRoute pour Azure]((https://azure.microsoft.com/services/expressroute/))
     
 ## <a name="see-also"></a>Voir aussi
 
@@ -269,7 +267,7 @@ Consultez les ressources supplémentaires suivantes pour plus d’informations 
   
 [Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs](https://sway.com/FJ2xsyWtkJc2taRD)
+[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

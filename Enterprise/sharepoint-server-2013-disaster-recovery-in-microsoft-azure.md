@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Visuals
-ms.custom:
-- DecEntMigration
-- Ent_Deployment
+ms.collection: Ent_O365
+ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: "Résumé : À l'aide d'Azure, vous pouvez créer un environnement de récupération d'urgence pour votre batterie de serveurs SharePoint locale. Cet article décrit comment concevoir et implémenter cette solution."
-ms.openlocfilehash: 38fe5adb6cac099f6f8014e7535e92e7b841d0bd
-ms.sourcegitcommit: 4a347cfb16405d5213b28f332d80e244fca0fb8f
+ms.openlocfilehash: be1a369bb87a5a63d9c266977c32c64fc55f3630
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Récupération d’urgence SharePoint Server 2013 dans Microsoft Azure
 
@@ -185,7 +181,7 @@ Le schéma suivant illustre une solution de récupération d'urgence à partir d
   
 **Schéma : Topologie et principaux éléments d'une batterie de production et d'une batterie de récupération de secours semi-automatique.**
 
-![Présente la topologie et les principaux éléments d’une batterie de production SharePoint et d’une batterie de récupération de secours semi-automatique.](images/AZarch_TopWarmStndby.gif)
+![Présente la topologie et les principaux éléments d’une batterie de production SharePoint et d’une batterie de récupération de secours semi-automatique.](images/AZarchWarmStndby.gif)
   
 Dans ce schéma :
   
@@ -371,7 +367,7 @@ Le tableau suivant fournit des liens vers des articles de référence sur la ré
 ## <a name="phase-6-set-up-log-shipping-to-the-recovery-farm"></a>Étape 6 : Configuration de la copie des journaux de transaction vers la batterie de récupération
 <a name="Phase6"> </a>
 
-La copie des journaux de transaction est le composant essentiel de la configuration de la récupération d'urgence dans cet environnement. Vous pouvez utiliser la copie des journaux de transaction pour envoyer automatiquement les fichiers journaux de transaction pour les bases de données d'une instance de serveur de la base de données principale vers une instance de serveur de base de données secondaire. Pour configurer la copie des journaux de transaction, voir [Configure log shipping in SharePoint 2013](http://technet.microsoft.com/library/482aeb81-e2aa-419f-a269-5b349a6c4721.aspx). 
+La copie des journaux de transaction est le composant essentiel de la configuration de la récupération d'urgence dans cet environnement. Vous pouvez utiliser la copie des journaux de transaction pour envoyer automatiquement les fichiers journaux de transaction pour les bases de données d'une instance de serveur de la base de données principale vers une instance de serveur de base de données secondaire. Pour configurer la copie des journaux de transaction, voir [Configure log shipping in SharePoint 2013]((http://technet.microsoft.com/library/482aeb81-e2aa-419f-a269-5b349a6c4721.aspx)). 
   
 > [!IMPORTANT]
 > La prise en charge de la copie des journaux de transaction dans SharePoint Server est limitée à certaines bases de données. Pour plus d'informations, voir [Options de haute disponibilité et de récupération d'urgence prises en charge pour les bases de données SharePoint (SharePoint 2013)](https://go.microsoft.com/fwlink/p/?LinkId=393121). 

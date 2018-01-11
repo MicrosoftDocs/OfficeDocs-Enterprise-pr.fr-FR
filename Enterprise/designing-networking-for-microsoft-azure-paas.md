@@ -9,16 +9,14 @@ ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 19568184-705b-493b-b713-b484367adba9
 description: "Résumé : Comprenez comment optimiser votre réseau pour accéder à Microsoft Azure PaaS."
-ms.openlocfilehash: d63a7a20d4648b0044a24ea86ad4e9125779a027
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 8ea344b5c18f9224b1a939a05c6e5a4eda2eeec5
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="designing-networking-for-microsoft-azure-paas"></a>Conception de réseau pour Microsoft Azure PaaS
 
@@ -106,7 +104,7 @@ Pour plus d'informations, consultez la rubrique [Vue d'ensemble de Traffic Manag
   
 [Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Feuille de route Enterprise Cloud de Microsoft relative aux ressources pour les décideurs en matière d'informatique]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

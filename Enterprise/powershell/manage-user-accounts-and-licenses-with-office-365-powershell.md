@@ -12,14 +12,13 @@ ms.collection: Ent_O365
 ms.custom:
 - PowerShell
 - Ent_Office_Other
-- DecEntMigration
 ms.assetid: 26b9ff81-93b0-4251-beaf-3c9f1d7c80c8
 description: "Résumé : Découvrez comment gérer les comptes et les licences d'utilisateurs avec Office 365 PowerShell."
-ms.openlocfilehash: 860fec08199d8897d7caee90d077f2956600972a
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 89933d0a50e52133df4f107d188221b2f77abf62
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="manage-user-accounts-and-licenses-with-office-365-powershell"></a>Gérer les comptes d’utilisateurs et les licences avec Office 365 PowerShell
 

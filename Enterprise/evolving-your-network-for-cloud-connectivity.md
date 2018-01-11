@@ -5,20 +5,18 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
-ms.topic: concetpual
+ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 83e2859a-c673-47c4-880a-01cdfdadb93e
 description: "Résumé : Comprendre comment l'adoption cloud nécessite une nouvelle approche des investissements relatifs à l'infrastructure réseau."
-ms.openlocfilehash: 810640ab3b870759424af2f88392bbaf0b0e11c7
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 18b4e5e10094a43f0d2b10cd0f01684f2352a0a8
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="evolving-your-network-for-cloud-connectivity"></a>Évolution de votre réseau pour la connectivité au cloud
 
@@ -91,7 +89,7 @@ L'étendue des investissements concernant le réseau dépend de la catégorie du
   
 [Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Feuille de route de Microsoft Enterprise Cloud : Ressources pour les décideurs en matière d'informatique](https://sway.com/FJ2xsyWtkJc2taRD)
+[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

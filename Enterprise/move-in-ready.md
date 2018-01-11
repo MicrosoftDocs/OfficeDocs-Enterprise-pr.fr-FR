@@ -62,9 +62,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a><span data-ttu-id="c09db-124">Ressources</span><span class="sxs-lookup"><span data-stu-id="c09db-124">Resources</span></span>
 
-<span data-ttu-id="c09db-125">Pour plus d'informations, cliquez [ici]((https://support.office.com/article/SharePoint-Online-and-OneDrive-for-Business-software-boundaries-and-limits-8f34ff47-b749-408b-abc0-b605e1f6d498)).</span><span class="sxs-lookup"><span data-stu-id="c09db-125">For additional information, click [here]((https://support.office.com/article/SharePoint-Online-and-OneDrive-for-Business-software-boundaries-and-limits-8f34ff47-b749-408b-abc0-b605e1f6d498)).</span></span>
+<span data-ttu-id="c09db-125">Pour plus d'informations, cliquez [ici](https://support.office.com/article/SharePoint-Online-and-OneDrive-for-Business-software-boundaries-and-limits-8f34ff47-b749-408b-abc0-b605e1f6d498).</span><span class="sxs-lookup"><span data-stu-id="c09db-125">For additional information, click [here](https://support.office.com/article/SharePoint-Online-and-OneDrive-for-Business-software-boundaries-and-limits-8f34ff47-b749-408b-abc0-b605e1f6d498).</span></span>
   
-<span data-ttu-id="c09db-126">Pour plus d'informations de coût, cliquez [ici]((https://products.office.com/business/compare-office-365-for-business-plans)).</span><span class="sxs-lookup"><span data-stu-id="c09db-126">For cost information, click [here]((https://products.office.com/business/compare-office-365-for-business-plans)).</span></span>
+<span data-ttu-id="c09db-126">Pour plus d'informations de coût, cliquez [ici](https://products.office.com/business/compare-office-365-for-business-plans).</span><span class="sxs-lookup"><span data-stu-id="c09db-126">For cost information, click [here](https://products.office.com/business/compare-office-365-for-business-plans).</span></span>
   
 ## <a name="exchange-online-in-office-365"></a><span data-ttu-id="c09db-127">Exchange Online dans Office 365</span><span class="sxs-lookup"><span data-stu-id="c09db-127">Exchange Online in Office 365</span></span>
 
@@ -84,9 +84,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a><span data-ttu-id="c09db-135">Ressources</span><span class="sxs-lookup"><span data-stu-id="c09db-135">Resources</span></span>
 
-<span data-ttu-id="c09db-136">Pour plus d'informations, cliquez [ici]((https://technet.microsoft.com/library/exchange-online-limits.aspx)).</span><span class="sxs-lookup"><span data-stu-id="c09db-136">For additional information, click [here]((https://technet.microsoft.com/library/exchange-online-limits.aspx)).</span></span>
+<span data-ttu-id="c09db-136">Pour plus d'informations, cliquez [ici](https://technet.microsoft.com/library/exchange-online-limits.aspx).</span><span class="sxs-lookup"><span data-stu-id="c09db-136">For additional information, click [here](https://technet.microsoft.com/library/exchange-online-limits.aspx).</span></span>
   
-<span data-ttu-id="c09db-137">Pour plus d'informations de coût, cliquez [ici]((https://products.office.com/business/compare-office-365-for-business-plans)).</span><span class="sxs-lookup"><span data-stu-id="c09db-137">For cost information, click [here]((https://products.office.com/business/compare-office-365-for-business-plans)).</span></span>
+<span data-ttu-id="c09db-137">Pour plus d'informations de coût, cliquez [ici](https://products.office.com/business/compare-office-365-for-business-plans).</span><span class="sxs-lookup"><span data-stu-id="c09db-137">For cost information, click [here](https://products.office.com/business/compare-office-365-for-business-plans).</span></span>
   
 ## <a name="onedrive-for-business"></a><span data-ttu-id="c09db-138">OneDrive Entreprise</span><span class="sxs-lookup"><span data-stu-id="c09db-138">OneDrive for Business</span></span>
 
@@ -112,9 +112,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a><span data-ttu-id="c09db-149">Ressources</span><span class="sxs-lookup"><span data-stu-id="c09db-149">Resources</span></span>
 
-<span data-ttu-id="c09db-150">Pour plus d'informations, cliquez [ici]((https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2)).</span><span class="sxs-lookup"><span data-stu-id="c09db-150">For additional information, click [here]((https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2)).</span></span>
+<span data-ttu-id="c09db-150">Pour plus d'informations, cliquez [ici](https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2).</span><span class="sxs-lookup"><span data-stu-id="c09db-150">For additional information, click [here](https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2).</span></span>
   
-<span data-ttu-id="c09db-151">Pour plus d'informations de coût, cliquez [ici]((https://products.office.com/business/compare-office-365-for-business-plans)).</span><span class="sxs-lookup"><span data-stu-id="c09db-151">For cost information, click [here]((https://products.office.com/business/compare-office-365-for-business-plans)).</span></span>
+<span data-ttu-id="c09db-151">Pour plus d'informations de coût, cliquez [ici](https://products.office.com/business/compare-office-365-for-business-plans).</span><span class="sxs-lookup"><span data-stu-id="c09db-151">For cost information, click [here](https://products.office.com/business/compare-office-365-for-business-plans).</span></span>
   
 ## <a name="visual-studio-team-services"></a><span data-ttu-id="c09db-152">Visual Studio Team Services</span><span class="sxs-lookup"><span data-stu-id="c09db-152">Visual Studio Team Services</span></span>
 
@@ -138,9 +138,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a><span data-ttu-id="c09db-162">Ressources</span><span class="sxs-lookup"><span data-stu-id="c09db-162">Resources</span></span>
 
-<span data-ttu-id="c09db-163">Pour plus d'informations, cliquez [ici]((https://www.visualstudio.com/products/what-is-visual-studio-online-vs.aspx)).</span><span class="sxs-lookup"><span data-stu-id="c09db-163">For additional information, click [here]((https://www.visualstudio.com/products/what-is-visual-studio-online-vs.aspx)).</span></span>
+<span data-ttu-id="c09db-163">Pour plus d'informations, cliquez [ici](https://www.visualstudio.com/products/what-is-visual-studio-online-vs.aspx).</span><span class="sxs-lookup"><span data-stu-id="c09db-163">For additional information, click [here](https://www.visualstudio.com/products/what-is-visual-studio-online-vs.aspx).</span></span>
   
-<span data-ttu-id="c09db-164">Pour plus d'informations de coût, cliquez [ici]((https://www.visualstudio.com/products/visual-studio-online-pricing-vs.aspx)).</span><span class="sxs-lookup"><span data-stu-id="c09db-164">For cost information, click [here]((https://www.visualstudio.com/products/visual-studio-online-pricing-vs.aspx)).</span></span>
+<span data-ttu-id="c09db-164">Pour plus d'informations de coût, cliquez [ici](https://www.visualstudio.com/products/visual-studio-online-pricing-vs.aspx).</span><span class="sxs-lookup"><span data-stu-id="c09db-164">For cost information, click [here](https://www.visualstudio.com/products/visual-studio-online-pricing-vs.aspx).</span></span>
   
 ## <a name="yammer-file-sharing"></a><span data-ttu-id="c09db-165">Partage de fichiers Yammer</span><span class="sxs-lookup"><span data-stu-id="c09db-165">Yammer file sharing</span></span>
 
@@ -166,9 +166,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a><span data-ttu-id="c09db-176">Ressources</span><span class="sxs-lookup"><span data-stu-id="c09db-176">Resources</span></span>
 
-<span data-ttu-id="c09db-177">Pour plus d'informations, cliquez [ici]((https://products.office.com/yammer/yammer-overview)).</span><span class="sxs-lookup"><span data-stu-id="c09db-177">For additional information, click [here]((https://products.office.com/yammer/yammer-overview)).</span></span>
+<span data-ttu-id="c09db-177">Pour plus d'informations, cliquez [ici](https://products.office.com/yammer/yammer-overview).</span><span class="sxs-lookup"><span data-stu-id="c09db-177">For additional information, click [here](https://products.office.com/yammer/yammer-overview).</span></span>
   
-<span data-ttu-id="c09db-178">Pour plus d'informations de coût, cliquez [ici]((https://products.office.com/business/compare-office-365-for-business-plans)).</span><span class="sxs-lookup"><span data-stu-id="c09db-178">For cost information, click [here]((https://products.office.com/business/compare-office-365-for-business-plans)).</span></span>
+<span data-ttu-id="c09db-178">Pour plus d'informations de coût, cliquez [ici](https://products.office.com/business/compare-office-365-for-business-plans).</span><span class="sxs-lookup"><span data-stu-id="c09db-178">For cost information, click [here](https://products.office.com/business/compare-office-365-for-business-plans).</span></span>
   
 ## <a name="dynamics-365"></a><span data-ttu-id="c09db-179">Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="c09db-179">Dynamics 365</span></span>
 
@@ -210,9 +210,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a><span data-ttu-id="c09db-198">Ressources</span><span class="sxs-lookup"><span data-stu-id="c09db-198">Resources</span></span>
 
-<span data-ttu-id="c09db-199">Pour plus d'informations, cliquez sur [ici]((https://www.microsoft.com/server-cloud/products/microsoft-intune/)).</span><span class="sxs-lookup"><span data-stu-id="c09db-199">For additional information, click [here]((https://www.microsoft.com/server-cloud/products/microsoft-intune/)).</span></span>
+<span data-ttu-id="c09db-199">Pour plus d'informations, cliquez sur [ici](https://www.microsoft.com/server-cloud/products/microsoft-intune/).</span><span class="sxs-lookup"><span data-stu-id="c09db-199">For additional information, click [here](https://www.microsoft.com/server-cloud/products/microsoft-intune/).</span></span>
   
-<span data-ttu-id="c09db-200">Pour plus d'informations de coût, cliquez [ici]((https://www.microsoft.com/cloud-platform/microsoft-intune-pricing)).</span><span class="sxs-lookup"><span data-stu-id="c09db-200">For cost information, click [here]((https://www.microsoft.com/cloud-platform/microsoft-intune-pricing)).</span></span>
+<span data-ttu-id="c09db-200">Pour plus d'informations de coût, cliquez [ici](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing).</span><span class="sxs-lookup"><span data-stu-id="c09db-200">For cost information, click [here](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing).</span></span>
   
 ## <a name="azure-site-recovery"></a><span data-ttu-id="c09db-201">Azure Site Recovery</span><span class="sxs-lookup"><span data-stu-id="c09db-201">Azure Site Recovery</span></span>
 
@@ -240,7 +240,7 @@ ms.lasthandoff: 01/11/2018
 
 <span data-ttu-id="c09db-213">Pour plus d'informations, cliquez [ici](http://azure.microsoft.com/services/site-recovery/?WT.srch=1&amp;WT.mc_ID=kn0iWCHA).</span><span class="sxs-lookup"><span data-stu-id="c09db-213">For additional information, click [here](http://azure.microsoft.com/services/site-recovery/?WT.srch=1&amp;WT.mc_ID=kn0iWCHA).</span></span>
   
-<span data-ttu-id="c09db-214">Pour plus d'informations de coût, cliquez [ici]((http://azure.microsoft.com/pricing/details/site-recovery/)).</span><span class="sxs-lookup"><span data-stu-id="c09db-214">For cost information, click [here]((http://azure.microsoft.com/pricing/details/site-recovery/)).</span></span>
+<span data-ttu-id="c09db-214">Pour plus d'informations de coût, cliquez [ici](http://azure.microsoft.com/pricing/details/site-recovery/).</span><span class="sxs-lookup"><span data-stu-id="c09db-214">For cost information, click [here](http://azure.microsoft.com/pricing/details/site-recovery/).</span></span>
   
 ## <a name="azure-backup"></a><span data-ttu-id="c09db-215">Sauvegarde Azure</span><span class="sxs-lookup"><span data-stu-id="c09db-215">Azure Backup</span></span>
 
@@ -264,9 +264,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a><span data-ttu-id="c09db-225">Ressources</span><span class="sxs-lookup"><span data-stu-id="c09db-225">Resources</span></span>
 
-<span data-ttu-id="c09db-226">Pour plus d'informations, cliquez [ici]((http://azure.microsoft.com/services/backup/)).</span><span class="sxs-lookup"><span data-stu-id="c09db-226">For additional information, click [here]((http://azure.microsoft.com/services/backup/)).</span></span>
+<span data-ttu-id="c09db-226">Pour plus d'informations, cliquez [ici](http://azure.microsoft.com/services/backup/).</span><span class="sxs-lookup"><span data-stu-id="c09db-226">For additional information, click [here](http://azure.microsoft.com/services/backup/).</span></span>
   
-<span data-ttu-id="c09db-227">Pour plus d'informations sur les coûts, cliquez [ici]((http://azure.microsoft.com/pricing/details/backup/)).</span><span class="sxs-lookup"><span data-stu-id="c09db-227">For cost information, click [here]((http://azure.microsoft.com/pricing/details/backup/)).</span></span>
+<span data-ttu-id="c09db-227">Pour plus d'informations sur les coûts, cliquez [ici](http://azure.microsoft.com/pricing/details/backup/).</span><span class="sxs-lookup"><span data-stu-id="c09db-227">For cost information, click [here](http://azure.microsoft.com/pricing/details/backup/).</span></span>
   
 ## <a name="next-step"></a><span data-ttu-id="c09db-228">Étape suivante</span><span class="sxs-lookup"><span data-stu-id="c09db-228">Next step</span></span>
 
@@ -278,7 +278,7 @@ ms.lasthandoff: 01/11/2018
   
 [<span data-ttu-id="c09db-232">Ressources relatives à l'architecture informatique du cloud Microsoft</span><span class="sxs-lookup"><span data-stu-id="c09db-232">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-<span data-ttu-id="c09db-233">[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs]((https://sway.com/FJ2xsyWtkJc2taRD))</span><span class="sxs-lookup"><span data-stu-id="c09db-233">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span></span>
+<span data-ttu-id="c09db-233">[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs](https://sway.com/FJ2xsyWtkJc2taRD)</span><span class="sxs-lookup"><span data-stu-id="c09db-233">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)</span></span>
 
 
 

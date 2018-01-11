@@ -58,9 +58,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a><span data-ttu-id="a4bae-122">Ressources</span><span class="sxs-lookup"><span data-stu-id="a4bae-122">Resources</span></span>
 
-<span data-ttu-id="a4bae-123">Pour plus d'informations, cliquez [ici]((https://azure.microsoft.com/services/cdn/)).</span><span class="sxs-lookup"><span data-stu-id="a4bae-123">For additional information, click [here]((https://azure.microsoft.com/services/cdn/)).</span></span>
+<span data-ttu-id="a4bae-123">Pour plus d'informations, cliquez [ici](https://azure.microsoft.com/services/cdn/).</span><span class="sxs-lookup"><span data-stu-id="a4bae-123">For additional information, click [here](https://azure.microsoft.com/services/cdn/).</span></span>
   
-<span data-ttu-id="a4bae-124">Pour plus d'informations sur les coûts, cliquez [ici]((https://azure.microsoft.com/pricing/details/cdn/)).</span><span class="sxs-lookup"><span data-stu-id="a4bae-124">For cost information, click [here]((https://azure.microsoft.com/pricing/details/cdn/)).</span></span>
+<span data-ttu-id="a4bae-124">Pour plus d'informations sur les coûts, cliquez [ici](https://azure.microsoft.com/pricing/details/cdn/).</span><span class="sxs-lookup"><span data-stu-id="a4bae-124">For cost information, click [here](https://azure.microsoft.com/pricing/details/cdn/).</span></span>
   
 ## <a name="hdinsight"></a><span data-ttu-id="a4bae-125">HdInsight</span><span class="sxs-lookup"><span data-stu-id="a4bae-125">HdInsight</span></span>
 
@@ -94,9 +94,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a><span data-ttu-id="a4bae-140">Ressources</span><span class="sxs-lookup"><span data-stu-id="a4bae-140">Resources</span></span>
 
-<span data-ttu-id="a4bae-141">Pour plus d'informations, cliquez [ici]((https://azure.microsoft.com/services/hdinsight/)).</span><span class="sxs-lookup"><span data-stu-id="a4bae-141">For additional information, click [here]((https://azure.microsoft.com/services/hdinsight/)).</span></span>
+<span data-ttu-id="a4bae-141">Pour plus d'informations, cliquez [ici](https://azure.microsoft.com/services/hdinsight/).</span><span class="sxs-lookup"><span data-stu-id="a4bae-141">For additional information, click [here](https://azure.microsoft.com/services/hdinsight/).</span></span>
   
-<span data-ttu-id="a4bae-142">Pour plus d'informations sur les coûts, cliquez [ici]((https://azure.microsoft.com/pricing/details/hdinsight/)).</span><span class="sxs-lookup"><span data-stu-id="a4bae-142">For cost information, click [here]((https://azure.microsoft.com/pricing/details/hdinsight/)).</span></span>
+<span data-ttu-id="a4bae-142">Pour plus d'informations sur les coûts, cliquez [ici](https://azure.microsoft.com/pricing/details/hdinsight/).</span><span class="sxs-lookup"><span data-stu-id="a4bae-142">For cost information, click [here](https://azure.microsoft.com/pricing/details/hdinsight/).</span></span>
   
 ## <a name="azure-sql-database"></a><span data-ttu-id="a4bae-143">Base de données SQL Azure</span><span class="sxs-lookup"><span data-stu-id="a4bae-143">Azure SQL Database</span></span>
 
@@ -144,7 +144,7 @@ ms.lasthandoff: 01/11/2018
   
 ![Échelle horizontale fournie par Azure SQL Database.](images/Storage_Poster/CloudStor-HorizScale.png)
   
-<span data-ttu-id="a4bae-166">Pour plus d'informations, cliquez [ici]((https://docs.microsoft.com/azure/sql-database/sql-database-elastic-scale-introduction)).</span><span class="sxs-lookup"><span data-stu-id="a4bae-166">Click [here]((https://docs.microsoft.com/azure/sql-database/sql-database-elastic-scale-introduction)) for more information.</span></span>
+<span data-ttu-id="a4bae-166">Pour plus d'informations, cliquez [ici](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-scale-introduction).</span><span class="sxs-lookup"><span data-stu-id="a4bae-166">Click [here](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-scale-introduction) for more information.</span></span>
   
 ### <a name="stretch-database-with-sql-server-2016"></a><span data-ttu-id="a4bae-167">Stretch Database avec SQL Server 2016</span><span class="sxs-lookup"><span data-stu-id="a4bae-167">Stretch Database with SQL Server 2016</span></span>
 
@@ -160,13 +160,13 @@ Les requêtes de l’utilisateur qui incluent les données historiques sont tran
   
 <span data-ttu-id="a4bae-p103">Stretch Database est une solution rentable qui offre un stockage à long terme et un accès transparent aux données historiques. Elle résout également les problèmes de performances et de disponibilité qui peuvent survenir lorsque les tables deviennent très volumineuses.</span><span class="sxs-lookup"><span data-stu-id="a4bae-p103">Stretch database provides a cost-effective option for long-term storage and transparent access to historical data. It also solves performance and availability problems that arise when tables become very large.</span></span>
   
-<span data-ttu-id="a4bae-176">Pour plus d'informations, cliquez [ici]((https://msdn.microsoft.com/library/dn935011.aspx)).</span><span class="sxs-lookup"><span data-stu-id="a4bae-176">Click [here]((https://msdn.microsoft.com/library/dn935011.aspx)) for more information.</span></span>
+<span data-ttu-id="a4bae-176">Pour plus d'informations, cliquez [ici](https://msdn.microsoft.com/library/dn935011.aspx).</span><span class="sxs-lookup"><span data-stu-id="a4bae-176">Click [here](https://msdn.microsoft.com/library/dn935011.aspx) for more information.</span></span>
   
 ### <a name="resources"></a><span data-ttu-id="a4bae-177">Ressources</span><span class="sxs-lookup"><span data-stu-id="a4bae-177">Resources</span></span>
 
-<span data-ttu-id="a4bae-178">Pour plus d'informations, cliquez [ici]((http://azure.microsoft.com/services/sql-database/)).</span><span class="sxs-lookup"><span data-stu-id="a4bae-178">For additional information, click [here]((http://azure.microsoft.com/services/sql-database/)).</span></span>
+<span data-ttu-id="a4bae-178">Pour plus d'informations, cliquez [ici](http://azure.microsoft.com/services/sql-database/).</span><span class="sxs-lookup"><span data-stu-id="a4bae-178">For additional information, click [here](http://azure.microsoft.com/services/sql-database/).</span></span>
   
-<span data-ttu-id="a4bae-179">Pour plus d'informations sur les coûts, cliquez [ici]((http://azure.microsoft.com/pricing/details/sql-database/)).</span><span class="sxs-lookup"><span data-stu-id="a4bae-179">For cost information, click [here]((http://azure.microsoft.com/pricing/details/sql-database/)).</span></span>
+<span data-ttu-id="a4bae-179">Pour plus d'informations sur les coûts, cliquez [ici](http://azure.microsoft.com/pricing/details/sql-database/).</span><span class="sxs-lookup"><span data-stu-id="a4bae-179">For cost information, click [here](http://azure.microsoft.com/pricing/details/sql-database/).</span></span>
   
 ## <a name="azure-cosmos-db"></a><span data-ttu-id="a4bae-180">Azure Cosmos DB</span><span class="sxs-lookup"><span data-stu-id="a4bae-180">Azure Cosmos DB</span></span>
 
@@ -210,9 +210,9 @@ Les requêtes de l’utilisateur qui incluent les données historiques sont tran
   
 ### <a name="resources"></a><span data-ttu-id="a4bae-200">Ressources</span><span class="sxs-lookup"><span data-stu-id="a4bae-200">Resources</span></span>
 
-<span data-ttu-id="a4bae-201">Pour plus d'informations, cliquez [ici]((http://azure.microsoft.com/services/documentdb/)).</span><span class="sxs-lookup"><span data-stu-id="a4bae-201">For additional information, click [here]((http://azure.microsoft.com/services/documentdb/)).</span></span>
+<span data-ttu-id="a4bae-201">Pour plus d'informations, cliquez [ici](http://azure.microsoft.com/services/documentdb/).</span><span class="sxs-lookup"><span data-stu-id="a4bae-201">For additional information, click [here](http://azure.microsoft.com/services/documentdb/).</span></span>
   
-<span data-ttu-id="a4bae-202">Pour plus d'informations sur les coûts, cliquez [ici]((http://azure.microsoft.com/pricing/details/documentdb/)).</span><span class="sxs-lookup"><span data-stu-id="a4bae-202">For cost information, click [here]((http://azure.microsoft.com/pricing/details/documentdb/)).</span></span>
+<span data-ttu-id="a4bae-202">Pour plus d'informations sur les coûts, cliquez [ici](http://azure.microsoft.com/pricing/details/documentdb/).</span><span class="sxs-lookup"><span data-stu-id="a4bae-202">For cost information, click [here](http://azure.microsoft.com/pricing/details/documentdb/).</span></span>
   
 ## <a name="azure-media-services"></a><span data-ttu-id="a4bae-203">Azure Media Services</span><span class="sxs-lookup"><span data-stu-id="a4bae-203">Azure Media Services</span></span>
 
@@ -244,9 +244,9 @@ Les requêtes de l’utilisateur qui incluent les données historiques sont tran
     
 ### <a name="resources"></a><span data-ttu-id="a4bae-217">Ressources</span><span class="sxs-lookup"><span data-stu-id="a4bae-217">Resources</span></span>
 
-<span data-ttu-id="a4bae-218">Pour plus d'informations, cliquez [ici]((https://azure.microsoft.com/services/media-services/)).</span><span class="sxs-lookup"><span data-stu-id="a4bae-218">For additional information, click [here]((https://azure.microsoft.com/services/media-services/)).</span></span>
+<span data-ttu-id="a4bae-218">Pour plus d'informations, cliquez [ici](https://azure.microsoft.com/services/media-services/).</span><span class="sxs-lookup"><span data-stu-id="a4bae-218">For additional information, click [here](https://azure.microsoft.com/services/media-services/).</span></span>
   
-<span data-ttu-id="a4bae-219">Pour plus d'informations sur les coûts, cliquez [ici]((http://azure.microsoft.com/pricing/details/media-services/)).</span><span class="sxs-lookup"><span data-stu-id="a4bae-219">For cost information, click [here]((http://azure.microsoft.com/pricing/details/media-services/)).</span></span>
+<span data-ttu-id="a4bae-219">Pour plus d'informations sur les coûts, cliquez [ici](http://azure.microsoft.com/pricing/details/media-services/).</span><span class="sxs-lookup"><span data-stu-id="a4bae-219">For cost information, click [here](http://azure.microsoft.com/pricing/details/media-services/).</span></span>
   
 ## <a name="azure-redis-cache"></a><span data-ttu-id="a4bae-220">Cache Redis Azure</span><span class="sxs-lookup"><span data-stu-id="a4bae-220">Azure Redis Cache</span></span>
 
@@ -278,9 +278,9 @@ Les requêtes de l’utilisateur qui incluent les données historiques sont tran
     
 ### <a name="resources"></a><span data-ttu-id="a4bae-234">Ressources</span><span class="sxs-lookup"><span data-stu-id="a4bae-234">Resources</span></span>
 
-<span data-ttu-id="a4bae-235">Pour plus d'informations, cliquez [ici]((http://azure.microsoft.com/services/cache/)).</span><span class="sxs-lookup"><span data-stu-id="a4bae-235">For additional information, click [here]((http://azure.microsoft.com/services/cache/)).</span></span>
+<span data-ttu-id="a4bae-235">Pour plus d'informations, cliquez [ici](http://azure.microsoft.com/services/cache/).</span><span class="sxs-lookup"><span data-stu-id="a4bae-235">For additional information, click [here](http://azure.microsoft.com/services/cache/).</span></span>
   
-<span data-ttu-id="a4bae-236">Pour plus d'informations sur les coûts, cliquez [ici]((http://azure.microsoft.com/pricing/details/cache/)).</span><span class="sxs-lookup"><span data-stu-id="a4bae-236">For cost information, click [here]((http://azure.microsoft.com/pricing/details/cache/)).</span></span>
+<span data-ttu-id="a4bae-236">Pour plus d'informations sur les coûts, cliquez [ici](http://azure.microsoft.com/pricing/details/cache/).</span><span class="sxs-lookup"><span data-stu-id="a4bae-236">For cost information, click [here](http://azure.microsoft.com/pricing/details/cache/).</span></span>
   
 ## <a name="sql-server-on-an-azure-vm"></a><span data-ttu-id="a4bae-237">SQL Server sur machine virtuelle Azure</span><span class="sxs-lookup"><span data-stu-id="a4bae-237">SQL Server on an Azure VM</span></span>
 
@@ -300,9 +300,9 @@ Les requêtes de l’utilisateur qui incluent les données historiques sont tran
     
 ### <a name="resources"></a><span data-ttu-id="a4bae-245">Ressources</span><span class="sxs-lookup"><span data-stu-id="a4bae-245">Resources</span></span>
 
-<span data-ttu-id="a4bae-246">Pour plus d'informations, cliquez [ici]((http://azure.microsoft.com/services/virtual-machines/)).</span><span class="sxs-lookup"><span data-stu-id="a4bae-246">For additional information, click [here]((http://azure.microsoft.com/services/virtual-machines/)).</span></span>
+<span data-ttu-id="a4bae-246">Pour plus d'informations, cliquez [ici](http://azure.microsoft.com/services/virtual-machines/).</span><span class="sxs-lookup"><span data-stu-id="a4bae-246">For additional information, click [here](http://azure.microsoft.com/services/virtual-machines/).</span></span>
   
-<span data-ttu-id="a4bae-247">Pour plus d'informations sur les coûts, cliquez [ici]((http://azure.microsoft.com/pricing/details/virtual-machines/)).</span><span class="sxs-lookup"><span data-stu-id="a4bae-247">For cost information, click [here]((http://azure.microsoft.com/pricing/details/virtual-machines/)).</span></span>
+<span data-ttu-id="a4bae-247">Pour plus d'informations sur les coûts, cliquez [ici](http://azure.microsoft.com/pricing/details/virtual-machines/).</span><span class="sxs-lookup"><span data-stu-id="a4bae-247">For cost information, click [here](http://azure.microsoft.com/pricing/details/virtual-machines/).</span></span>
   
 ## <a name="storsimple"></a><span data-ttu-id="a4bae-248">StorSimple</span><span class="sxs-lookup"><span data-stu-id="a4bae-248">StorSimple</span></span>
 
@@ -334,9 +334,9 @@ Les requêtes de l’utilisateur qui incluent les données historiques sont tran
     
 ### <a name="resources"></a><span data-ttu-id="a4bae-262">Ressources</span><span class="sxs-lookup"><span data-stu-id="a4bae-262">Resources</span></span>
 
-<span data-ttu-id="a4bae-263">Pour plus d'informations, cliquez [ici]((http://azure.microsoft.com/services/storsimple/)).</span><span class="sxs-lookup"><span data-stu-id="a4bae-263">For additional information, click [here]((http://azure.microsoft.com/services/storsimple/)).</span></span>
+<span data-ttu-id="a4bae-263">Pour plus d'informations, cliquez [ici](http://azure.microsoft.com/services/storsimple/).</span><span class="sxs-lookup"><span data-stu-id="a4bae-263">For additional information, click [here](http://azure.microsoft.com/services/storsimple/).</span></span>
   
-<span data-ttu-id="a4bae-264">Pour plus d'informations sur les coûts, cliquez [ici]((http://azure.microsoft.com/pricing/details/storsimple/)).</span><span class="sxs-lookup"><span data-stu-id="a4bae-264">For cost information, click [here]((http://azure.microsoft.com/pricing/details/storsimple/)).</span></span>
+<span data-ttu-id="a4bae-264">Pour plus d'informations sur les coûts, cliquez [ici](http://azure.microsoft.com/pricing/details/storsimple/).</span><span class="sxs-lookup"><span data-stu-id="a4bae-264">For cost information, click [here](http://azure.microsoft.com/pricing/details/storsimple/).</span></span>
   
 ## <a name="azure-sql-data-warehouse"></a><span data-ttu-id="a4bae-265">Azure SQL Data Warehouse</span><span class="sxs-lookup"><span data-stu-id="a4bae-265">Azure SQL Data Warehouse</span></span>
 
@@ -364,9 +364,9 @@ Les requêtes de l’utilisateur qui incluent les données historiques sont tran
     
 ### <a name="resources"></a><span data-ttu-id="a4bae-277">Ressources</span><span class="sxs-lookup"><span data-stu-id="a4bae-277">Resources</span></span>
 
-<span data-ttu-id="a4bae-278">Pour plus d'informations, cliquez [ici]((https://azure.microsoft.com/services/sql-data-warehouse/)).</span><span class="sxs-lookup"><span data-stu-id="a4bae-278">For additional information, click [here]((https://azure.microsoft.com/services/sql-data-warehouse/)).</span></span>
+<span data-ttu-id="a4bae-278">Pour plus d'informations, cliquez [ici](https://azure.microsoft.com/services/sql-data-warehouse/).</span><span class="sxs-lookup"><span data-stu-id="a4bae-278">For additional information, click [here](https://azure.microsoft.com/services/sql-data-warehouse/).</span></span>
   
-<span data-ttu-id="a4bae-279">Pour plus d'informations sur les coûts, cliquez [ici]((https://azure.microsoft.com/pricing/details/sql-data-warehouse/)).</span><span class="sxs-lookup"><span data-stu-id="a4bae-279">For cost information, click [here]((https://azure.microsoft.com/pricing/details/sql-data-warehouse/)).</span></span>
+<span data-ttu-id="a4bae-279">Pour plus d'informations sur les coûts, cliquez [ici](https://azure.microsoft.com/pricing/details/sql-data-warehouse/).</span><span class="sxs-lookup"><span data-stu-id="a4bae-279">For cost information, click [here](https://azure.microsoft.com/pricing/details/sql-data-warehouse/).</span></span>
   
 ## <a name="azure-data-lake-store"></a><span data-ttu-id="a4bae-280">Azure Data Lake Store</span><span class="sxs-lookup"><span data-stu-id="a4bae-280">Azure Data Lake Store</span></span>
 
@@ -398,9 +398,9 @@ Les requêtes de l’utilisateur qui incluent les données historiques sont tran
     
 ### <a name="resources"></a><span data-ttu-id="a4bae-294">Ressources</span><span class="sxs-lookup"><span data-stu-id="a4bae-294">Resources</span></span>
 
-<span data-ttu-id="a4bae-295">Pour plus d'informations, cliquez [ici]((https://azure.microsoft.com/services/data-lake-store/)).</span><span class="sxs-lookup"><span data-stu-id="a4bae-295">For additional information, click [here]((https://azure.microsoft.com/services/data-lake-store/)).</span></span>
+<span data-ttu-id="a4bae-295">Pour plus d'informations, cliquez [ici](https://azure.microsoft.com/services/data-lake-store/).</span><span class="sxs-lookup"><span data-stu-id="a4bae-295">For additional information, click [here](https://azure.microsoft.com/services/data-lake-store/).</span></span>
   
-<span data-ttu-id="a4bae-296">Pour plus d'informations sur les coûts, cliquez [ici]((https://azure.microsoft.com/pricing/details/data-lake-store/)).</span><span class="sxs-lookup"><span data-stu-id="a4bae-296">For cost information, click [here]((https://azure.microsoft.com/pricing/details/data-lake-store/)).</span></span>
+<span data-ttu-id="a4bae-296">Pour plus d'informations sur les coûts, cliquez [ici](https://azure.microsoft.com/pricing/details/data-lake-store/).</span><span class="sxs-lookup"><span data-stu-id="a4bae-296">For cost information, click [here](https://azure.microsoft.com/pricing/details/data-lake-store/).</span></span>
   
 ## <a name="next-step"></a><span data-ttu-id="a4bae-297">Étape suivante</span><span class="sxs-lookup"><span data-stu-id="a4bae-297">Next step</span></span>
 
@@ -412,7 +412,7 @@ Les requêtes de l’utilisateur qui incluent les données historiques sont tran
   
 [<span data-ttu-id="a4bae-301">Ressources relatives à l'architecture informatique du cloud Microsoft</span><span class="sxs-lookup"><span data-stu-id="a4bae-301">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-<span data-ttu-id="a4bae-302">[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs]((https://sway.com/FJ2xsyWtkJc2taRD))</span><span class="sxs-lookup"><span data-stu-id="a4bae-302">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span></span>
+<span data-ttu-id="a4bae-302">[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs](https://sway.com/FJ2xsyWtkJc2taRD)</span><span class="sxs-lookup"><span data-stu-id="a4bae-302">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)</span></span>
 
 
 

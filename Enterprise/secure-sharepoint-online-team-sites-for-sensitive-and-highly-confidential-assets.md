@@ -52,9 +52,9 @@ ms.lasthandoff: 01/11/2018
     
 <span data-ttu-id="16339-p104">Le résultat consiste en deux sites de collaboration dont l'accès est étroitement contrôlé par les administrateurs de la sécurité et de SharePoint. Pour les fichiers dotés de l'étiquette AIP Hautement confidentiel, même s'ils sont distribués en dehors du site d'équipe pour la recherche, ils sont chiffrés et ne peuvent être ouverts que par un membre d'une équipe de recherche.</span><span class="sxs-lookup"><span data-stu-id="16339-p104">The result is two collaboration sites whose access is tightly controlled by security and SharePoint administrators. For files with the Highly Confidential AIP label, even if they are distributed outside the Research team site, they are encrypted and can only be opened by a member of a research team.</span></span>
   
-<span data-ttu-id="16339-124">Pour plus d'informations, consultez l'article [Sécuriser des sites et des fichiers SharePoint Online]((https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-and-files)).</span><span class="sxs-lookup"><span data-stu-id="16339-124">For more information, see [Secure SharePoint Online sites and files]((https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-and-files)).</span></span>
+<span data-ttu-id="16339-124">Pour plus d'informations, consultez l'article [Sécuriser des sites et des fichiers SharePoint Online](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-and-files).</span><span class="sxs-lookup"><span data-stu-id="16339-124">For more information, see [Secure SharePoint Online sites and files](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-and-files).</span></span>
   
- <span data-ttu-id="16339-125">Pour effectuer cette configuration à des fins de démonstration, de preuve de concept ou de développement/test, consultez l'article [Sécuriser des sites SharePoint Online dans un environnement de développement et de test]((https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-dev-test)).</span><span class="sxs-lookup"><span data-stu-id="16339-125">To set this up for demonstration, proof-of-concept, or dev/test, see [Secure SharePoint Online sites in a dev/test environment]((https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-dev-test)).</span></span>
+ <span data-ttu-id="16339-125">Pour effectuer cette configuration à des fins de démonstration, de preuve de concept ou de développement/test, consultez l'article [Sécuriser des sites SharePoint Online dans un environnement de développement et de test](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-dev-test).</span><span class="sxs-lookup"><span data-stu-id="16339-125">To set this up for demonstration, proof-of-concept, or dev/test, see [Secure SharePoint Online sites in a dev/test environment](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-dev-test).</span></span>
   
 ## <a name="see-also"></a><span data-ttu-id="16339-126">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="16339-126">See Also</span></span>
 
@@ -64,9 +64,9 @@ ms.lasthandoff: 01/11/2018
   
 [<span data-ttu-id="16339-129">Ressources relatives à l'architecture informatique du cloud Microsoft</span><span class="sxs-lookup"><span data-stu-id="16339-129">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-<span data-ttu-id="16339-130">[Stretch Database]((https://msdn.microsoft.com/library/dn935011.aspx))</span><span class="sxs-lookup"><span data-stu-id="16339-130">[Stretch Database]((https://msdn.microsoft.com/library/dn935011.aspx))</span></span>
+<span data-ttu-id="16339-130">[Stretch Database](https://msdn.microsoft.com/library/dn935011.aspx)</span><span class="sxs-lookup"><span data-stu-id="16339-130">[Stretch Database](https://msdn.microsoft.com/library/dn935011.aspx)</span></span>
   
-<span data-ttu-id="16339-131">[Feuille de route de Microsoft Enterprise Cloud : Ressources pour les décideurs informatiques]((https://sway.com/FJ2xsyWtkJc2taRD))</span><span class="sxs-lookup"><span data-stu-id="16339-131">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span></span>
+<span data-ttu-id="16339-131">[Feuille de route de Microsoft Enterprise Cloud : Ressources pour les décideurs informatiques](https://sway.com/FJ2xsyWtkJc2taRD)</span><span class="sxs-lookup"><span data-stu-id="16339-131">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)</span></span>
 
 
 

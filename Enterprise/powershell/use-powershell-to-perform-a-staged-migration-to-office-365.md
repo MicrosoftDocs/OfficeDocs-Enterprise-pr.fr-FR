@@ -58,7 +58,7 @@ ms.lasthandoff: 01/11/2018
   
 - <span data-ttu-id="23f5f-131">Utilisez Outlook hors de votre réseau d'entreprise pour vous connecter à votre boîte aux lettres Exchange locale.</span><span class="sxs-lookup"><span data-stu-id="23f5f-131">Use Outlook from outside your corporate network to connect to your on-premises Exchange mailbox.</span></span>
     
-- <span data-ttu-id="23f5f-p108">Utilisez l'[analyseur de connectivité à distance Exchange]((https://www.testexchangeconnectivity.com/)) de Microsoft pour tester vos paramètres de connexion. Utilisez Outlook Anywhere (RPC sur HTTP) ou les tests de découverte automatique d'Outlook.</span><span class="sxs-lookup"><span data-stu-id="23f5f-p108">Use the [Microsoft Exchange Remote Connectivity Analyzer]((https://www.testexchangeconnectivity.com/)) to test your connection settings. Use the Outlook Anywhere (RPC over HTTP) or Outlook Autodiscover tests.</span></span>
+- <span data-ttu-id="23f5f-p108">Utilisez l'[analyseur de connectivité à distance Exchange](https://www.testexchangeconnectivity.com/) de Microsoft pour tester vos paramètres de connexion. Utilisez Outlook Anywhere (RPC sur HTTP) ou les tests de découverte automatique d'Outlook.</span><span class="sxs-lookup"><span data-stu-id="23f5f-p108">Use the [Microsoft Exchange Remote Connectivity Analyzer](https://www.testexchangeconnectivity.com/) to test your connection settings. Use the Outlook Anywhere (RPC over HTTP) or Outlook Autodiscover tests.</span></span>
     
 - <span data-ttu-id="23f5f-134">Dans Exchange Online PowerShell, exécutez les commandes suivantes :</span><span class="sxs-lookup"><span data-stu-id="23f5f-134">Run the following commands in Exchange Online PowerShell:</span></span>
     

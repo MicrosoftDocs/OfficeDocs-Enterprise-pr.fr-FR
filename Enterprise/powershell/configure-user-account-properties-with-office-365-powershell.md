@@ -33,7 +33,7 @@ ms.lasthandoff: 01/11/2018
   
 ## <a name="change-properties-for-a-specific-user-account"></a><span data-ttu-id="3eeaa-109">Modification des propriétés d’un compte d’utilisateur spécifique</span><span class="sxs-lookup"><span data-stu-id="3eeaa-109">Change properties for a specific user account</span></span>
 
-<span data-ttu-id="3eeaa-p102">Pour configurer les propriétés d'un compte d'utilisateur spécifique, vous utilisez la cmdlet [Set-MsolUser]((https://msdn.microsoft.com/library/azure/dn194136.aspx)) et spécifiez les propriétés à définir ou modifier. Cet exemple de commande remplace l'emplacement d'utilisation de Belinda Newman par France :</span><span class="sxs-lookup"><span data-stu-id="3eeaa-p102">To configure properties for a specific user account, you use the [Set-MsolUser]((https://msdn.microsoft.com/library/azure/dn194136.aspx)) cmdlet and specify the properties to set or change. This example command changes Belinda Newman's usage location to France:</span></span>
+<span data-ttu-id="3eeaa-p102">Pour configurer les propriétés d'un compte d'utilisateur spécifique, vous utilisez la cmdlet [Set-MsolUser](https://msdn.microsoft.com/library/azure/dn194136.aspx) et spécifiez les propriétés à définir ou modifier. Cet exemple de commande remplace l'emplacement d'utilisation de Belinda Newman par France :</span><span class="sxs-lookup"><span data-stu-id="3eeaa-p102">To configure properties for a specific user account, you use the [Set-MsolUser](https://msdn.microsoft.com/library/azure/dn194136.aspx) cmdlet and specify the properties to set or change. This example command changes Belinda Newman's usage location to France:</span></span>
   
 ```
 Set-MsolUser -UserPrincipalName "BelindaN@litwareinc.onmicosoft.com" -UsageLocation "FR"
@@ -75,7 +75,7 @@ Set-MsolUser -UserPrincipalName "BelindaN@litwareinc.onmicosoft.com" -UsageLocat
     
     <span data-ttu-id="3eeaa-130">Voici le code de la région ou du pays à deux lettres ISO 3166-1 alpha-2 (A2).</span><span class="sxs-lookup"><span data-stu-id="3eeaa-130">This is the ISO 3166-1 alpha-2 (A2) two-letter country or region code.</span></span>
     
-<span data-ttu-id="3eeaa-131">Pour obtenir plus de paramètres, voir [Set-MsolUser]((https://msdn.microsoft.com/library/azure/dn194136.aspx)).</span><span class="sxs-lookup"><span data-stu-id="3eeaa-131">See [Set-MsolUser]((https://msdn.microsoft.com/library/azure/dn194136.aspx)) for additional parameters.</span></span>
+<span data-ttu-id="3eeaa-131">Pour obtenir plus de paramètres, voir [Set-MsolUser](https://msdn.microsoft.com/library/azure/dn194136.aspx).</span><span class="sxs-lookup"><span data-stu-id="3eeaa-131">See [Set-MsolUser](https://msdn.microsoft.com/library/azure/dn194136.aspx) for additional parameters.</span></span>
   
 <span data-ttu-id="3eeaa-132">Pour afficher les noms d’utilisateur principaux de tous vos utilisateurs, exécutez la commande suivante.</span><span class="sxs-lookup"><span data-stu-id="3eeaa-132">To see the User Principal Names of all your users, run the following command.</span></span>
   

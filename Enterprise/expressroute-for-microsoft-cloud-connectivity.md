@@ -60,9 +60,9 @@ ms.lasthandoff: 01/11/2018
   
 <span data-ttu-id="2c5db-132">Consultez les ressources supplémentaires suivantes pour plus d’informations :</span><span class="sxs-lookup"><span data-stu-id="2c5db-132">See these additional resources for more information:</span></span>
   
-- <span data-ttu-id="2c5db-133">[ExpressRoute pour Office 365]((https://aka.ms/expressrouteoffice365))</span><span class="sxs-lookup"><span data-stu-id="2c5db-133">[ExpressRoute for Office 365]((https://aka.ms/expressrouteoffice365))</span></span>
+- <span data-ttu-id="2c5db-133">[ExpressRoute pour Office 365](https://aka.ms/expressrouteoffice365)</span><span class="sxs-lookup"><span data-stu-id="2c5db-133">[ExpressRoute for Office 365](https://aka.ms/expressrouteoffice365)</span></span>
     
-- <span data-ttu-id="2c5db-134">[ExpressRoute pour Azure]((https://azure.microsoft.com/services/expressroute/))</span><span class="sxs-lookup"><span data-stu-id="2c5db-134">[ExpressRoute for Azure]((https://azure.microsoft.com/services/expressroute/))</span></span>
+- <span data-ttu-id="2c5db-134">[ExpressRoute pour Azure](https://azure.microsoft.com/services/expressroute/)</span><span class="sxs-lookup"><span data-stu-id="2c5db-134">[ExpressRoute for Azure](https://azure.microsoft.com/services/expressroute/)</span></span>
     
 ## <a name="advantages-of-expressroute-for-azure"></a><span data-ttu-id="2c5db-135">Avantages d’ExpressRoute pour Azure</span><span class="sxs-lookup"><span data-stu-id="2c5db-135">Advantages of ExpressRoute for Azure</span></span>
 
@@ -78,7 +78,7 @@ ms.lasthandoff: 01/11/2018
     
 <span data-ttu-id="2c5db-p108">Une connexion ExpressRoute ne garantit pas de meilleures performances dans chaque configuration. Il est possible d’avoir des performances inférieures en utilisant une connexion ExpressRoute avec une faible bande passante au lieu d’une connexion Internet avec une bande passante élevée qui se trouve seulement à quelques sauts d’un centre de données Microsoft régional.</span><span class="sxs-lookup"><span data-stu-id="2c5db-p108">An ExpressRoute connection is not a guarantee of higher performance in every configuration. It is possible to have lower performance over a low-bandwidth ExpressRoute connection than a high-bandwidth Internet connection that is only a few hops away from a regional Microsoft datacenter.</span></span>
   
-<span data-ttu-id="2c5db-145">Pour obtenir les dernières recommandations sur l'utilisation d'ExpressRoute avec Office 365, voir [ExpressRoute pour Office 365]((https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd)).</span><span class="sxs-lookup"><span data-stu-id="2c5db-145">For the latest recommendations for using ExpressRoute with Office 365, see [ExpressRoute for Office 365]((https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd)).</span></span>
+<span data-ttu-id="2c5db-145">Pour obtenir les dernières recommandations sur l'utilisation d'ExpressRoute avec Office 365, voir [ExpressRoute pour Office 365](https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd).</span><span class="sxs-lookup"><span data-stu-id="2c5db-145">For the latest recommendations for using ExpressRoute with Office 365, see [ExpressRoute for Office 365](https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd).</span></span>
   
 ## <a name="expressroute-connectivity-models"></a><span data-ttu-id="2c5db-146">Modèles de connectivité ExpressRoute</span><span class="sxs-lookup"><span data-stu-id="2c5db-146">ExpressRoute connectivity models</span></span>
 
@@ -235,11 +235,11 @@ ms.lasthandoff: 01/11/2018
     
 <span data-ttu-id="2c5db-246">Pour plus d’informations, voir :</span><span class="sxs-lookup"><span data-stu-id="2c5db-246">For more information, see:</span></span>
   
-- <span data-ttu-id="2c5db-247">[Azure ExpressRoute for Office 365 Training]((https://channel9.msdn.com/series/aer/))</span><span class="sxs-lookup"><span data-stu-id="2c5db-247">[Azure ExpressRoute for Office 365 Training]((https://channel9.msdn.com/series/aer/))</span></span>
+- <span data-ttu-id="2c5db-247">[Azure ExpressRoute for Office 365 Training](https://channel9.msdn.com/series/aer/)</span><span class="sxs-lookup"><span data-stu-id="2c5db-247">[Azure ExpressRoute for Office 365 Training](https://channel9.msdn.com/series/aer/)</span></span>
     
-- <span data-ttu-id="2c5db-248">[Planification réseau et optimisation des performances pour Office 365]((https://aka.ms/tune))</span><span class="sxs-lookup"><span data-stu-id="2c5db-248">[Network planning and performance tuning for Office 365]((https://aka.ms/tune))</span></span>
+- <span data-ttu-id="2c5db-248">[Planification réseau et optimisation des performances pour Office 365](https://aka.ms/tune)</span><span class="sxs-lookup"><span data-stu-id="2c5db-248">[Network planning and performance tuning for Office 365](https://aka.ms/tune)</span></span>
     
-- <span data-ttu-id="2c5db-249">[Gestion des performances Office 365]((https://mva.microsoft.com/fr-FR/training-courses/office-365-performance-management-8416))</span><span class="sxs-lookup"><span data-stu-id="2c5db-249">[Office 365 Performance Management]((https://mva.microsoft.com/fr-FR/training-courses/office-365-performance-management-8416))</span></span>
+- <span data-ttu-id="2c5db-249">[Gestion des performances Office 365](https://mva.microsoft.com/fr-FR/training-courses/office-365-performance-management-8416)</span><span class="sxs-lookup"><span data-stu-id="2c5db-249">[Office 365 Performance Management](https://mva.microsoft.com/fr-FR/training-courses/office-365-performance-management-8416)</span></span>
     
 ## <a name="expressroute-options"></a><span data-ttu-id="2c5db-250">Options ExpressRoute</span><span class="sxs-lookup"><span data-stu-id="2c5db-250">ExpressRoute options</span></span>
 
@@ -255,11 +255,11 @@ ms.lasthandoff: 01/11/2018
     
 <span data-ttu-id="2c5db-260">Consultez les ressources supplémentaires suivantes pour plus d’informations :</span><span class="sxs-lookup"><span data-stu-id="2c5db-260">See these additional resources for more information:</span></span>
   
-- <span data-ttu-id="2c5db-261">[ExpressRoute pour Office 365]((https://aka.ms/expressrouteoffice365))</span><span class="sxs-lookup"><span data-stu-id="2c5db-261">[ExpressRoute for Office 365]((https://aka.ms/expressrouteoffice365))</span></span>
+- <span data-ttu-id="2c5db-261">[ExpressRoute pour Office 365](https://aka.ms/expressrouteoffice365)</span><span class="sxs-lookup"><span data-stu-id="2c5db-261">[ExpressRoute for Office 365](https://aka.ms/expressrouteoffice365)</span></span>
     
-- <span data-ttu-id="2c5db-262">[Azure ExpressRoute for Office 365 Training]((https://channel9.msdn.com/series/aer/))</span><span class="sxs-lookup"><span data-stu-id="2c5db-262">[Azure ExpressRoute for Office 365 Training]((https://channel9.msdn.com/series/aer/))</span></span>
+- <span data-ttu-id="2c5db-262">[Azure ExpressRoute for Office 365 Training](https://channel9.msdn.com/series/aer/)</span><span class="sxs-lookup"><span data-stu-id="2c5db-262">[Azure ExpressRoute for Office 365 Training](https://channel9.msdn.com/series/aer/)</span></span>
     
-- <span data-ttu-id="2c5db-263">[ExpressRoute pour Azure]((https://azure.microsoft.com/services/expressroute/))</span><span class="sxs-lookup"><span data-stu-id="2c5db-263">[ExpressRoute for Azure]((https://azure.microsoft.com/services/expressroute/))</span></span>
+- <span data-ttu-id="2c5db-263">[ExpressRoute pour Azure](https://azure.microsoft.com/services/expressroute/)</span><span class="sxs-lookup"><span data-stu-id="2c5db-263">[ExpressRoute for Azure](https://azure.microsoft.com/services/expressroute/)</span></span>
     
 ## <a name="see-also"></a><span data-ttu-id="2c5db-264">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="2c5db-264">See Also</span></span>
 
@@ -267,7 +267,7 @@ ms.lasthandoff: 01/11/2018
   
 [<span data-ttu-id="2c5db-266">Ressources relatives à l'architecture informatique du cloud Microsoft</span><span class="sxs-lookup"><span data-stu-id="2c5db-266">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-<span data-ttu-id="2c5db-267">[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs]((https://sway.com/FJ2xsyWtkJc2taRD))</span><span class="sxs-lookup"><span data-stu-id="2c5db-267">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span></span>
+<span data-ttu-id="2c5db-267">[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs](https://sway.com/FJ2xsyWtkJc2taRD)</span><span class="sxs-lookup"><span data-stu-id="2c5db-267">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)</span></span>
 
 
 

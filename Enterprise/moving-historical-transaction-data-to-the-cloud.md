@@ -32,7 +32,7 @@ ms.lasthandoff: 01/11/2018
   
 <span data-ttu-id="2b700-114">La figure 1 montre comment un client SQL envoie des requêtes T-SQL sur un serveur qui exécute SQL Server 2016, lequel les transfère vers Azure SQL Stretch Database dans Azure PaaS.</span><span class="sxs-lookup"><span data-stu-id="2b700-114">Figure 1 shows how a SQL client sends T-SQL queries to a server running SQL Server 2016, which forwards them to an Azure SQL Stretch Database in Azure PaaS.</span></span>
   
-<span data-ttu-id="2b700-115">Pour plus d'informations, voir [Stretch Database]((https://msdn.microsoft.com/library/dn935011.aspx)).</span><span class="sxs-lookup"><span data-stu-id="2b700-115">For more information, see [Stretch Database]((https://msdn.microsoft.com/library/dn935011.aspx)).</span></span>
+<span data-ttu-id="2b700-115">Pour plus d'informations, voir [Stretch Database](https://msdn.microsoft.com/library/dn935011.aspx).</span><span class="sxs-lookup"><span data-stu-id="2b700-115">For more information, see [Stretch Database](https://msdn.microsoft.com/library/dn935011.aspx).</span></span>
   
 <span data-ttu-id="2b700-116">Contoso a suivi les étapes suivantes pour déplacer ses données historiques vers le cloud :</span><span class="sxs-lookup"><span data-stu-id="2b700-116">Contoso used these steps to move their historical data to the cloud:</span></span>
   
@@ -75,9 +75,9 @@ ms.lasthandoff: 01/11/2018
   
 [<span data-ttu-id="2b700-140">Ressources relatives à l'architecture informatique du cloud Microsoft</span><span class="sxs-lookup"><span data-stu-id="2b700-140">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-<span data-ttu-id="2b700-141">[Stretch Database]((https://msdn.microsoft.com/library/dn935011.aspx))</span><span class="sxs-lookup"><span data-stu-id="2b700-141">[Stretch Database]((https://msdn.microsoft.com/library/dn935011.aspx))</span></span>
+<span data-ttu-id="2b700-141">[Stretch Database](https://msdn.microsoft.com/library/dn935011.aspx)</span><span class="sxs-lookup"><span data-stu-id="2b700-141">[Stretch Database](https://msdn.microsoft.com/library/dn935011.aspx)</span></span>
   
-<span data-ttu-id="2b700-142">[Feuille de route de Microsoft Enterprise Cloud : Ressources pour les décideurs informatiques]((https://sway.com/FJ2xsyWtkJc2taRD))</span><span class="sxs-lookup"><span data-stu-id="2b700-142">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span></span>
+<span data-ttu-id="2b700-142">[Feuille de route de Microsoft Enterprise Cloud : Ressources pour les décideurs informatiques](https://sway.com/FJ2xsyWtkJc2taRD)</span><span class="sxs-lookup"><span data-stu-id="2b700-142">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)</span></span>
 
 
 

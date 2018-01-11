@@ -8,16 +8,14 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: None
-ms.custom:
-- DecEntMigration
-- Strat_O365_Enterprise
+ms.custom: Strat_O365_Enterprise
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: "Résumé : Créer Office 365 et de mobilité d’entreprise + d’abonnements d’essai de sécurité (EMS) avec les utilisateurs et les groupes pour un environnement de développement/test de campagne politique."
-ms.openlocfilehash: 7faf428fc2225d3f31297ba6bf83a10a7682009a
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: e876c8770651c3f23c06c9c499bdaabca52da353
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Configuration de groupes et d’utilisateurs pour un environnement de développement/test pour une campagne politique
 
@@ -195,13 +193,13 @@ Enregistrez ces valeurs pour travailler avec les abonnements aux versions d’é
 
 Générer les quatre types différents de sites d’équipe SharePoint Online dans cet environnement de développement/test avec les [sites d’équipe de créer dans un environnement de développement/test de campagne politique](create-team-sites-in-a-political-campaign-dev-test-environment.md).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Voir aussi
 
-[Conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d'autres organisations flexibles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d’autres organisations flexibles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [Créer des sites d’équipe dans un environnement de développement/test de campagne politique](create-team-sites-in-a-political-campaign-dev-test-environment.md)
   
-[Guides de laboratoire de test d'adoption cloud](cloud-adoption-test-lab-guides-tlgs.md)
+[Guides de laboratoire de test d’adoption cloud](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.md)
 

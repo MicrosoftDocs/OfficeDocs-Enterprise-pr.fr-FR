@@ -8,20 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: "Synthèse : S’applique à Office 365 stratégies de prevention (DLP) de perte de données et les étiquettes pour les sites d’équipe SharePoint Online avec différents niveaux de protection des informations."
-ms.openlocfilehash: 502a899c586114644bb59a2d55ca388c819f7777
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: dd4f71d8fae458d6d20f7a5b35b46e14a72853f1
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="protect-sharepoint-online-files-with-office-365-labels-and-dlp"></a>Protéger les fichiers SharePoint Online avec les étiquettes d’Office 365 et DLP
 
@@ -52,7 +49,7 @@ Pour créer les étiquettes, vous pouvez utiliser le Centre d’administration O
   
 ### <a name="create-office-365-labels-with-the-office-365-admin-center"></a>Créer des étiquettes Office 365 avec le Centre d’administration Office 365
 
-1. Connectez-vous au portail Office 365 avec un compte qui possède le rôle d’administrateur de sécurité ou l’administrateur de la société. Pour de l’aide, consultez la rubrique [pour vous connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Connectez-vous au portail Office 365 avec un compte disposant du rôle Administrateur de sécurité ou Administrateur d’entreprise. Pour obtenir de l’aide, consultez la rubrique [Se connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. À partir de l’onglet **Accueil de Microsoft Office** , cliquez sur la mosaïque de **l’Admin** .
     
@@ -225,13 +222,13 @@ Voici la configuration finale de vos sites d’équipe SharePoint Online hautem
 
 [Protéger les fichiers SharePoint Online avec Azure la Protection des informations](protect-sharepoint-online-files-with-azure-information-protection.md)
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Voir aussi
 
-[Sécurisation des fichiers et sites SharePoint Online](secure-sharepoint-online-sites-and-files.md)
+[Sécuriser les fichiers et sites SharePoint Online](secure-sharepoint-online-sites-and-files.md)
   
-[Sites SharePoint en ligne sécurisés dans un environnement de développement/test](secure-sharepoint-online-sites-in-a-dev-test-environment.md)
+[Sécuriser les sites SharePoint Online dans un environnement de développement/test](secure-sharepoint-online-sites-in-a-dev-test-environment.md)
   
-[Conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d'autres organisations flexibles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d’autres organisations flexibles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.md)
 

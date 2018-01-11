@@ -9,16 +9,14 @@ ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 1de16e29-ac2e-40b5-bf13-9301a51e16a8
 description: "Résumé : Comprendre la société Contoso sous la forme d’une entreprise et la structure à plusieurs niveaux de ses bureaux dans le monde entier."
-ms.openlocfilehash: 6243f6d6e5c08342cae7650d0b4e75de27ed3527
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: c00e7fd75f580b82f8f920b9f74551a5e5e1b328
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="overview-of-the-contoso-corporation"></a>Présentation de la société Contoso Corporation
 
@@ -69,7 +67,7 @@ Contoso architectes informatiques ont identifié les éléments suivants lors de
     
     Pour plus d’informations, consultez l’affiche [Microsoft Cloud Networking pour Enterprise Architects](microsoft-cloud-networking-for-enterprise-architects.md) .
    
-- Identity
+- Identité
     
     Contoso utilise une forêt Active Directory de Windows Server pour son fournisseur d’identité interne et également se fédère avec des fournisseurs tiers pour les clients et partenaires. Contoso doit exploiter l’ensemble interne des comptes pour les offres en nuage de Microsoft. Accès aux applications basées sur le cloud pour les clients et les partenaires doivent tirer parti de fournisseurs d’identité tiers ainsi.
     

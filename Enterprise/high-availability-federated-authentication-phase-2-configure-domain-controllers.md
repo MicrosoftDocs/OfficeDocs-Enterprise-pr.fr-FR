@@ -8,20 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Hybrid
-- Ent_O365_Hybrid_Top
-ms.custom:
-- DecEntMigration
-- Ent_Solutions
+ms.collection: Ent_O365
+ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: "Résumé : Configurer les contrôleurs de domaine et le serveur de synchronisation d’annuaire pour l’authentification fédérée de haute disponibilité pour Office 365 dans Microsoft Azure."
-ms.openlocfilehash: 86b5630f073a1c07dc2dbf270ac7e9d2220f7503
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 609d282321296be79c20c451cca12ccf46fe036d
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Authentification fédérée haute disponibilité, phase 2 : Configurer les contrôleurs de domaine
 
@@ -255,7 +250,7 @@ Lorsque cette phase est terminée, voici la configuration résultante, avec les 
 
 Utilisation [haute disponibilité fédérés d’authentification Phase 3 : configurer les serveurs AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md) pour continuer la configuration de cette charge de travail.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Voir aussi
 
 [Déployer une authentification fédérée haute disponibilité pour Office 365 dans Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   

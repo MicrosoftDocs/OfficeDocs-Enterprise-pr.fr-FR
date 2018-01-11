@@ -8,21 +8,17 @@ ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Hybrid
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: "Résumé : Utilisez ces adoption du cloud Guides de laboratoires de Test (TLGs) pour définir les démonstration, preuve de concept, ou les environnements de développement/test pour Office 365, la mobilité d’entreprise + sécurité (EMS), Dynamics 365 et produits Office Server."
-ms.openlocfilehash: 532215a08e28a9d67cd19ef60d60419b06df4957
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 2c533129b88783d8ff39dbc5753bdeb26eeafe81
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="cloud-adoption-test-lab-guides-tlgs"></a>Guides de laboratoire de test d’adoption cloud
 
@@ -161,10 +157,10 @@ Voici les autres environnements de développement/test dans le cloud que vous po
 |**Contactez-nous**|**Description**|
 |:-----|:-----|
 |**De quelles solutions avez-vous besoin ?** <br/> |Nous sommes en train de créer du contenu pour les solutions qui s'étendent sur plusieurs produits et services Microsoft. Donnez-nous votre avis sur nos solutions entre serveurs ou demandez des solutions spécifiques en envoyant un courrier électronique à [MODAcontent@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20).<br/> |
-|**Participer à la discussion sur les solutions** <br/> |Si vous êtes passionné de solutions basées sur le nuage, envisagez du nuage Adoption Advisory Board (CAAB) pour vous connecter à une Communauté plus grande, aux couleurs éclatantes des développeurs de contenu Microsoft, les professionnels de l’industrie et clients partout dans le monde. Pour joindre, ajoutez-vous en tant que membre de l' [espace CAAB (comité consultatif nuage Adoption)](https://aka.ms/caab) de la Communauté technique de Microsoft et de nous envoyer un bref courriel à [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Toute personne peut lire le contenu communautaire sur le [blog CAAB](https://blogs.technet.com/b/solutions_advisory_board/). Toutefois, les membres CAAB obtenir des invitations à des séminaires en ligne privée qui décrivent les nouvelles ressources d’adoption de nuage et de solutions.<br/> |
-|**Obtenir l'image que vous voyez ici** <br/> |Si vous souhaitez une copie modifiable de l’image que vous voyez dans cet article, nous serons heureux de vous l’envoyer. Votre demande, y compris l’URL et le titre de l’art, à [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20)par e-mail.<br/> |
+|**Participer à la discussion sur les solutions** <br/> |Si vous êtes passionné par les solutions basées sur le cloud, rejoignez le conseil consultatif de l’adoption cloud (CAAB) pour interagir avec une communauté vaste et dynamique de développeurs de contenu Microsoft, de professionnels du secteur et de clients venant du monde entier. Pour participer, ajoutez-vous en tant que membre de l’espace [CAAB (Conseil consultatif de l’adoption cloud)](https://aka.ms/caab) de la communauté Microsoft Tech et envoyez-nous un message électronique à l’adresse [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Tout le monde peut lire le contenu lié à la communauté sur le [blog CAAB](https://blogs.technet.com/b/solutions_advisory_board/). Toutefois, les membres CAAB reçoivent des invitations à des webinaires privés qui décrivent les nouvelles solutions et ressources relatives à l’adoption cloud.<br/> |
+|**Obtenir l'image que vous voyez ici** <br/> |Si vous voulez obtenir une copie modifiable de l’image que vous voyez dans cet article, nous serons ravis de vous l’envoyer. Envoyez-nous votre demande par courrier électronique, en incluant l’URL et le titre de l’illustration, à [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20).<br/> |
    
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Voir aussi
 
 <a name="ADD_TLGs"> </a>
 

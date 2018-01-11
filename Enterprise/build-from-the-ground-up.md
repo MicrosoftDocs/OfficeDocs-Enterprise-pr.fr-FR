@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.collection: Ent_O365
+ms.custom: Ent_Architecture
 ms.assetid: 84348d0c-d9d1-4a98-9b99-8433f9b70e45
 description: "Résumé : Obtenir les détails sur l’ensemble du nuage des blocs de construction de stockage que vous pouvez utiliser pour créer votre propre service de stockage ou de la solution."
-ms.openlocfilehash: 18aa8cb7fa0dda05302a88487dcc69bdbcb174d5
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: eabf38e0ccef3335b2d198a33f5622d0d449589a
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="build-from-the-ground-up"></a>Créer de A à Z
 
@@ -106,7 +102,7 @@ Pour plus d'informations, cliquez [ici](https://msdn.microsoft.com/library/azure
   
 Pour plus d'informations sur les coûts, cliquez [ici](http://azure.microsoft.com/pricing/details/storage/).
   
-## <a name="azure-storage-queues"></a>Stockage Azure (files d'attente)
+## <a name="azure-storage-queues"></a>Stockage Azure (files d’attente)
 
 ### <a name="features"></a>Fonctionnalités
 
@@ -194,7 +190,7 @@ Lorsque vous concevez votre solution de stockage personnalisé avec le Stockage 
     
 - Partitionnez les données verticalement (dans une table) ou horizontalement (en segmentant la table sur plusieurs partitions) pour répartir la charge sur plusieurs bases de données.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Voir aussi
 
 [Stockage cloud Microsoft pour les architectes d'entreprise](microsoft-cloud-storage-for-enterprise-architects.md)
   

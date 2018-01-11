@@ -8,16 +8,14 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
-ms.custom:
-- DecEntMigration
-- Strat_O365_Enterprise
+ms.custom: Strat_O365_Enterprise
 ms.assetid: 10d1004b-42b6-4e2b-aaa2-18ddd9118f64
 description: "Résumé : Guide de planification et d’implémentation pour se déplacent rapidement les organisations ayant un profil d’aggravation de la menace."
-ms.openlocfilehash: 0177e91ac0cbd7ba6ce7ffe95206036036c43da4
-ms.sourcegitcommit: 4a347cfb16405d5213b28f332d80e244fca0fb8f
+ms.openlocfilehash: 7b400a1c097bb1d3906a59dfd21461df0568c76a
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations"></a>Conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d’autres organisations flexibles
 
@@ -49,11 +47,11 @@ Pour créer un environnement de développement/test pour cette solution, utilise
     
 Pour les fonctionnalités de sécurité supplémentaires pour la démonstration ou de preuve de concept, consultez les [Guides de laboratoires de Test Office 365](http://aka.ms/o365tlgs).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Voir aussi
 
 [Solutions de sécurité](security-solutions.md)
   
-[Guides de laboratoire de test d'adoption cloud](cloud-adoption-test-lab-guides-tlgs.md)
+[Guides de laboratoire de test d’adoption cloud](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 

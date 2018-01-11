@@ -8,20 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: "Résumé : Créer et configurer des sites d’équipe SharePoint Online pour différents niveaux de protection des informations."
-ms.openlocfilehash: 1023eff2542ab1bf41a8261d85d70c06718497cf
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 7aa0107222454383abe0c1284b66ec0c4b808595
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>Déploiement de sites SharePoint Online à trois niveaux de protection
 
@@ -103,7 +100,7 @@ Pour concevoir votre site d’équipe isolé, vous devez choisir :
     
 Voici à quoi peuvent ressembler les niveaux d’autorisation et de structure du groupe recommandés :
   
-|**Groupe SharePoint**|**Niveau d'autorisation**|**Groupe d’accès (exemples)**|
+|**Groupe SharePoint**|**Niveau d’autorisation**|**Groupe d’accès (exemples)**|
 |:-----|:-----|:-----|
 |[nom de site] Membres  <br/> |Modification  <br/> |[nom de site] Membres  <br/> |
 |[nom de site] Visiteurs  <br/> |Lecture  <br/> |[nom de site] Afficheurs  <br/> |
@@ -221,7 +218,7 @@ Pour concevoir votre site d’équipe isolé, vous devez choisir :
     
 Voici à quoi peuvent ressembler les niveaux d’autorisation et de structure du groupe recommandés :
   
-|**Groupe SharePoint**|**Niveau d'autorisation**|**Groupe d’accès (exemples)**|
+|**Groupe SharePoint**|**Niveau d’autorisation**|**Groupe d’accès (exemples)**|
 |:-----|:-----|:-----|
 |[nom de site] Membres  <br/> |Modification  <br/> |[nom de site] Membres  <br/> |
 |[nom de site] Visiteurs  <br/> |Lecture  <br/> |[nom de site] Afficheurs  <br/> |
@@ -265,13 +262,13 @@ En étant membres de l’un des groupes d’accès, les membres du site peuvent 
 
 [Protéger les fichiers SharePoint Online avec les étiquettes d’Office 365 et DLP](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Voir aussi
 
-[Sécurisation des fichiers et sites SharePoint Online](secure-sharepoint-online-sites-and-files.md)
+[Sécuriser les fichiers et sites SharePoint Online](secure-sharepoint-online-sites-and-files.md)
   
-[Sites SharePoint en ligne sécurisés dans un environnement de développement/test](secure-sharepoint-online-sites-in-a-dev-test-environment.md)
+[Sécuriser les sites SharePoint Online dans un environnement de développement/test](secure-sharepoint-online-sites-in-a-dev-test-environment.md)
   
-[Conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d'autres organisations flexibles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d’autres organisations flexibles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.md)
 

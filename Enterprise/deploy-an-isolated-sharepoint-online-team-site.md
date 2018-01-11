@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_Solutions
+ms.collection: Ent_O365
+ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: "Résumé : Déployer un nouveau site d’équipe de SharePoint Online isolé avec ces instructions pas à pas."
-ms.openlocfilehash: 9715c6168276b6ba9ffc63591cc6421708bbda27
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 31a1f588aefccd9e2cb353af86d8aa0d598696af
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>Déploiement d’un site d’équipe SharePoint Online isolé
 
@@ -232,7 +228,7 @@ Comme vous êtes membres de l’un des groupes d’accès, vous et les membres d
 
 Lorsque vous devez modifier l’appartenance au groupe de site access ou créer un dossier de documents avec des autorisations personnalisées, consultez [Gestion d’un site d’équipe SharePoint Online isolé](manage-an-isolated-sharepoint-online-team-site.md).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Voir aussi
 
 [Sites d'équipe SharePoint Online isolés](isolated-sharepoint-online-team-sites.md)
   

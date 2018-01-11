@@ -12,16 +12,15 @@ ms.collection: Ent_O365
 ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
-- DecEntMigration
 - LIL_Placement
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: "Explique comment utiliser Office 365 PowerShell pour afficher des informations sur les plans de licence, les services et les licences qui sont disponibles dans votre organisation d’Office 365."
-ms.openlocfilehash: dc9ea5ad5077062a05c0070ffecbf580d3aacc49
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: f43a1c20be157d26ec9cd1d98df2f5e17517b1d6
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Afficher les licences et les services avec Office 365 PowerShell
 
@@ -77,7 +76,7 @@ Le tableau suivant montre les plans de service d’Office 365 et leurs noms conv
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Office Professionnel Plus  <br/> |
 | `MCOSTANDARD` <br/> |Skype Entreprise Online  <br/> |
-| `SHAREPOINTWAC` <br/> |Office Online  <br/> |
+| `SHAREPOINTWAC` <br/> |Office Online  <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online Plan 2  <br/> |
    
@@ -100,7 +99,7 @@ Cet exemple montre les services Office 365 qui sont disponibles dans le plan de 
 |:-----|
 |![L’icône court pour l’apprentissage de LinkedIn](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **nouveau vers Office 365 ?**         Découvrez la vidéo gratuits pour les [professionnels de l’informatique et les administrateurs d’Office 365](https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5), proposée par formation de LinkedIn. |
    
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Voir aussi
 <a name="ShortVersion"> </a>
 
 #### 

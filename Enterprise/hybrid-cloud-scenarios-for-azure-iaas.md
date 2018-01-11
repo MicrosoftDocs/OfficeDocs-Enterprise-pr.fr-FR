@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Visuals
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.collection: Ent_O365
+ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
 description: "Résumé : Comprendre les scénarios et l’architecture hybride constitue l’Infrastructure de Microsoft en tant que Service (IaaS)-en fonction des offres en nuage dans Azure."
-ms.openlocfilehash: 389ab2b7ce37423a1601a2f76d143370833085cb
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 5ec74058174724b6497a5cb41e67896818ef4d05
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Scénarios de cloud hybride pour les services IaaS Azure
 
@@ -36,7 +32,7 @@ La figure 1 présente l’architecture des scénarios hybrides IaaS de Microsoft
 
 ![Scénarios hybrides Microsoft IaaS dans Azure](images/Hybrid_Poster/Hybrid_Cloud_Stack_IaaS.png)
   
-Pour chaque couche de l'architecture :
+Pour chaque couche de l’architecture :
   
 - Applications et scénarios
     
@@ -160,7 +156,7 @@ Un autre exemple d’une application cœur de métier à plusieurs niveaux, haut
   
 **Figure 5 : Une infrastructure haute disponibilité l’identité fédérée pour Office 365 dans Azure IaaS**
 
-![Configuration finale de l'infrastructure d'authentification fédérée haute disponibilité Office 365 dans Azure](images/Hybrid_Poster/Hybrid_Cloud_Stack_IaaS_ADFS.png)
+![Configuration finale de l’infrastructure d’authentification fédérée haute disponibilité Office 365 dans Azure](images/Hybrid_Poster/Hybrid_Cloud_Stack_IaaS_ADFS.png)
   
 Dans la Figure 5, un réseau local héberge une infrastructure d’identité et les utilisateurs. Il est connecté à une passerelle Azure IaaS avec une connexion de site à site VPN ou ExpressRoute. Le VNet Azure contient des serveurs de proxy web, les serveurs Active Directory Federation Services (ADFS) et les contrôleurs de domaine Windows Server Active Directory (AD).
   
@@ -188,7 +184,7 @@ Consultez ces ressources supplémentaires :
     
 - [Concevoir et créer une application métier dans Azure](https://techcommunity.microsoft.com/t5/CAAB-Cloud-Adoption-Advisory/EXTRA-November-2016-Webinar/m-p/30058#M41)
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Voir aussi
 
 [Cloud hybride Microsoft pour les architectes d'entreprise](microsoft-hybrid-cloud-for-enterprise-architects.md)
   

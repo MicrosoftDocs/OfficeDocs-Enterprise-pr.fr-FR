@@ -9,16 +9,14 @@ ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 8f6f9894-5394-4110-8b0a-b8765028c10b
 description: "Résumé : Comprendre comment Contoso mappés aux impératifs de sécurité à des fonctions dans les offres en nuage de Microsoft et de déterminer un chemin d’accès vers le cloud d’évaluation de la sécurité."
-ms.openlocfilehash: f7c6667ce96a01771ce4f18339daf4c62173e4d9
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 4d38f58595f0043e1a02106b6428b92dabad2e17
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="security-for-the-contoso-corporation"></a>Sécurité de Contoso Corporation
 
@@ -120,7 +118,7 @@ Conformément à Office 365 meilleures pratiques de sécurité, les administrate
     
     Spécialistes de la sécurité Contoso utilisent Exchange Online Protection et Advanced Threat Protection (ATP) pour vous protéger contre les programmes malveillants inconnus, les virus et les URL malveillantes transmises par le biais de messages électroniques. Contoso dispose également d’audit de boîte aux lettres activée journalisation pour déterminer qui a ouvert une session dans les boîtes aux lettres de l’utilisateur, envoyés de messages et les autres activités effectuées par un administrateur, un utilisateur délégué ou du propriétaire de boîte aux lettres.
     
-    Pour plus d'informations, voir : 
+    Pour plus d’informations, voir : 
     
   - [Protection anti-Spam de messagerie Office 365](https://support.office.com/article/Office-365-Email-AntiSpam-Protection-6a601501-a6a8-4559-b2e7-56b59c96a586)
     

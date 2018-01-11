@@ -8,21 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
-- jan17entnews
 - TLG
 - Ent_TLGs
 ms.assetid: 919b8fc7-b0bc-46db-91f5-37342564e01b
 description: "Résumé : Configurer et montrez la classification des données et des étiquettes à l’aide du client de Protection d’informations Azure (AIP) dans votre environnement de développement/test d’Office 365."
-ms.openlocfilehash: 2784f4105903855de89c6c45f7a643279bb4dfbf
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: a2db6817bea879caeb52ed9b11b40c6c317ea171
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a>Classification et étiquetage des données dans l’environnement de développement/test Office 365
 
@@ -161,9 +157,9 @@ Ensuite, connectez-vous avec votre compte Utilisateur 5 et chargez le document 
     
     Vous devriez voir AfterAIP.docx dans le dossier Documents de la collection de sites Prise en charge.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Voir aussi
 
-[Guides de laboratoire de test d'adoption cloud](cloud-adoption-test-lab-guides-tlgs.md)
+[Guides de laboratoire de test d’adoption cloud](cloud-adoption-test-lab-guides-tlgs.md)
 
 [Office 365 et environnement de développement/test EMS](http://technet.microsoft.com/library/c76eea86-d4b6-4d35-ad89-341696e89ef7.aspx)
   

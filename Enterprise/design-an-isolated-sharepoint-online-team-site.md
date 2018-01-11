@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_Solutions
+ms.collection: Ent_O365
+ms.custom: Ent_Solutions
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: "Résumé : L’étape dans le processus de conception pour les sites d’équipe SharePoint Online isolés."
-ms.openlocfilehash: 343872ef7a41b40a87454da27ddccc4530ffe2eb
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 7b2e8f0bc06a7901c52187ec6e63a056a11fa5e1
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>Conception d’un site d’équipe SharePoint Online isolé
 
@@ -42,7 +38,7 @@ Ces groupes sont différents des groupes Office 365 et Azure Active Directory (
   
 L’ensemble des autorisations qui déterminent ce que le membre d’un groupe SharePoint peut faire dans un site est un niveau d’autorisation. Il existe trois niveaux d’autorisation par défaut pour un site d’équipe SharePoint Online : Modification, Lecture et Contrôle total. Le tableau suivant indique la corrélation par défaut des groupes SharePoint et les niveaux d’autorisation affectés :
   
-|**Groupe SharePoint**|**Niveau d'autorisation**|
+|**Groupe SharePoint**|**Niveau d’autorisation**|
 |:-----|:-----|
 |\<nom du site > membres  <br/> |Modification  <br/> |
 |\<nom du site > les visiteurs  <br/> |Lecture  <br/> |
@@ -74,7 +70,7 @@ Les groupes d’annonces Azure pour Office 365 sont différents des groupes d’
     
     Il s’agit de groupes qui ont été créés dans votre infrastructure de Windows Server, Active Directory sur site et synchronisés avec votre abonnement à Office 365. Dans le centre d’administration d’Office, ces groupes ont un **statut** **Synched avec active directory**.
     
-- Office 365
+- Office 365
     
     Il s’agit de groupes qui ont été créés avec le centre d’administration d’Office, le portail Azure ou Microsoft PowerShell. Dans le centre d’administration d’Office, ces groupes ont un **statut** de **nuage**.
     
@@ -82,7 +78,7 @@ Les groupes d’annonces Azure pour Office 365 sont différents des groupes d’
   
 Pour les sites d’équipe SharePoint Online isolés, voici à quoi ressemble la structure recommandée du groupe :
   
-|**Groupe SharePoint**|**Groupe d’accès AD Azure**|**Niveau d'autorisation**|
+|**Groupe SharePoint**|**Groupe d’accès AD Azure**|**Niveau d’autorisation**|
 |:-----|:-----|:-----|
 |\<nom du site > membres  <br/> |\<nom du site > membres  <br/> |Modification  <br/> |
 |\<nom du site > les visiteurs  <br/> |\<nom du site > visionneuses  <br/> |Lecture  <br/> |
@@ -133,7 +129,7 @@ Parce que tous les comptes d’utilisateur dans la recherche, l’ingénierie et
 
 Lorsque vous êtes prêt pour créer et configurer un site isolé dans la production, voir [déploiement d’un site d’équipe SharePoint Online isolé](deploy-an-isolated-sharepoint-online-team-site.md).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Voir aussi
 
 [Sites d'équipe SharePoint Online isolés](isolated-sharepoint-online-team-sites.md)
   

@@ -9,16 +9,14 @@ ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 78a407e4-2d8b-4561-b308-b22c95f60eeb
 description: "Résumé : Comprendre comment Contoso tire parti des IDaaS distribué géographiquement et fournit l’authentification redondante pour ses utilisateurs."
-ms.openlocfilehash: a0de29ac7e73216e04fe02c680f2557e9f402883
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: d9aee05d36061433398cd8ce913a03bce65cc103
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Identité de Contoso Corporation
 
@@ -126,9 +124,9 @@ Pour basculer vers les serveurs de secours et revenir aux serveurs principaux, C
   
 [Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Identité de Cloud Microsoft pour Enterprise Architects](http://aka.ms/cloudarchidentity)
+[Identité cloud Microsoft pour les architectes d’entreprise](http://aka.ms/cloudarchidentity)
   
-[Identité et Protection des périphériques pour Office 365](http://aka.ms/o365protect_device)
+[Protection des appareils et de l’identité pour Office 365](http://aka.ms/o365protect_device)
   
 [Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs](https://sway.com/FJ2xsyWtkJc2taRD)
 

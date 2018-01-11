@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Visuals
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.collection: Ent_O365
+ms.custom: Ent_Architecture
 ms.assetid: db117e59-389f-46f5-a5df-4eeac0040aa8
 description: "Résumé : Comprendre les scénarios et l’architecture de hybride pour Microsoft de base SaaS (Office 365) les offres en nuage."
-ms.openlocfilehash: 5f50573376b70ad94b3b1cd4b86ce3ef1fdc67dd
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 63126d694817f8323494e584f1f497a1a732c678
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="hybrid-cloud-scenarios-for-microsoft-saas-office-365"></a>Scénarios de cloud hybride pour les services SaaS Microsoft (Office 365)
 
@@ -36,7 +32,7 @@ La figure 1 présente l’architecture des scénarios hybrides SaaS de Microsoft
 
 ![Scénarios hybrides Microsoft SaaS pour Office 365](images/Hybrid_Poster/Hybrid_Cloud_Stack_SaaS.png)
   
-Pour chaque couche de l'architecture :
+Pour chaque couche de l’architecture :
   
 - Applications et scénarios
     
@@ -74,7 +70,7 @@ Skype pour entreprise 2015 hybride vous permet de combiner un déploiement sur s
   
 La figure 2 illustre la Skype pour configuration hybride de Business 2015, consistant en un Skype sur site pour le pool de front-end d’entreprise 2015 et edge server communique avec Skype pour Business Online dans Office 365.
   
-Pour plus d'informations, voir :
+Pour plus d’informations, voir :
   
 - [Planification de la connectivité d’hybride entre Skype pour Business Server et Skype pour professionnels en ligne](https://technet.microsoft.com/library/jj205403.aspx)
     
@@ -162,7 +158,7 @@ Vous pouvez également intégrer cette configuration hybride à d’autres appli
   
 Pour plus d’informations, consultez [Déploiement d’Exchange Server hybride](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx) et [Exchange hybride](http://hybrid.office.com/exchange/).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Voir aussi
 
 [Cloud hybride Microsoft pour les architectes d'entreprise](microsoft-hybrid-cloud-for-enterprise-architects.md)
   

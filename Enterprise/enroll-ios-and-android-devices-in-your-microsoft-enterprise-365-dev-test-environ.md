@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_TLGs
+ms.collection: Ent_O365
+ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: "Résumé : Utilisez ce Guide de laboratoire de Test pour inscrire des périphériques de votre environnement de développement/test Microsoft 365 et de les gérer à distance."
-ms.openlocfilehash: 8ad22ed62d8e7cac8aca225af42e389dc05cb2b5
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 71d04b0d2a59683ff09ad4256ed8fc82e89e876a
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-devtest-environment"></a>Inscrire les périphériques iOS ou Android dans votre environnement de développement/test Microsoft Enterprise 365
 
@@ -255,15 +251,15 @@ Pour réinitialiser le code secret à distance, procédez comme suit :
 7. Pour modifier le code précédent, dans **paramètres**, cliquez sur le **périphérique**, cliquez sur **écran de verrouillage**, entrez le nouveau code à nouveau, cliquez sur **verrouillage de l’écran**et votre choix pour le mot de passe.
     
 > [!TIP]
-> Cliquez [ici](http://aka.ms/catlgstack) pour une carte visuelle de tous les articles dans la pile d’un Guide de laboratoire de Test Microsoft Cloud.
+> Cliquez [ici](http://aka.ms/catlgstack) pour afficher le plan de tous les articles du jeu de guides de laboratoire de test de Microsoft Cloud.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Voir aussi
 
 [L’environnement de développement/test Microsoft 365 Enterprise](the-microsoft-365-enterprise-dev-test-environment.md)
   
 [Stratégies MAM pour votre environnement de développement/test Microsoft 365 Enterprise](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
   
-[Guides de laboratoire de test d'adoption cloud](cloud-adoption-test-lab-guides-tlgs.md)
+[Guides de laboratoire de test d’adoption cloud](cloud-adoption-test-lab-guides-tlgs.md)
 
 [Mobilité d’entreprise + sécurité (EMS)](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
 

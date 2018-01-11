@@ -8,16 +8,14 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: None
-ms.custom:
-- DecEntMigration
-- Strat_O365_Enterprise
+ms.custom: Strat_O365_Enterprise
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: "Résumé : Créer des sites d’équipe SharePoint Online publiques, privées, sensibles et hautement confidentielles dans votre environnement de développement/test de campagne politique."
-ms.openlocfilehash: 82e671af271508dfdecac6169a7892a8a12b7865
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 4f89fd29103756a33aa15e8e5e2976c521d69baa
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>Création de sites d’équipe dans un environnement de développement/test dans le cadre d’une campagne électorale
 
@@ -363,41 +361,41 @@ Suivez les instructions de [RMS d’Azure activer avec le centre d’administrat
   
 Ensuite, configurez la Protection des informations Azure avec une nouvelle stratégie étendue et une étiquette secondaire pour la protection et d’autorisations avec les étapes suivantes :
   
-1. Connectez-vous au portail Office 365 avec un compte qui possède le rôle d’administrateur de sécurité ou l’administrateur de la société. Pour de l’aide, consultez la rubrique [pour vous connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Connectez-vous au portail Office 365 avec un compte disposant du rôle Administrateur de sécurité ou Administrateur d’entreprise. Pour obtenir de l’aide, consultez la rubrique [Se connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Dans un onglet séparé de votre navigateur, accédez au portail Azure ([https://portal.azure.com](https://portal.azure.com)).
     
-3. Si c’est la première fois que vous configurez la Protection des informations Azure, consultez ces [instructions](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time).
+3. Si vous configurez Azure Information Protection pour la première fois, consultez ces [instructions](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time).
     
-4. Dans le volet liste, cliquez sur **plus de services**, tapez les **informations**, puis cliquez sur **Azure la Protection des informations**.
+4. Dans le volet Liste, cliquez sur **Plus de services**, saisissez **Informations**, puis cliquez sur **Azure Information Protection**.
     
-5. Sur la lame de **protection des informations d’Azure** , cliquez sur **stratégies de portée > + Ajouter une nouvelle stratégie**.
+5. Sur le panneau **Azure Information Protection**, cliquez sur **Stratégies étendues > + Ajouter une nouvelle stratégie**.
     
 6. Dans **nom de la stratégie** et l' **étiquette pour les documents dans le site de l’équipe stratégie campagne** dans la zone **Description**, tapez **CampaignStrategy** .
     
 7. Cliquez sur **Sélectionner les utilisateurs ou les groupes d’obtiennent cette stratégie > groupes d’utilisateurs**, puis sélectionnez **Senior et personnel stratégique**.
     
-8. Cliquez sur **Sélectionnez > OK**.
+8. Cliquez sur **Sélectionner > OK**.
     
-9. Pour l’étiquette **Hautement confidentielles** , cliquez sur le bouton de sélection (...), puis cliquez sur **Ajouter une étiquette secondaire**.
+9. Pour l’étiquette **Hautement confidentiel**, cliquez sur les points de suspension (...), puis sur **Ajouter une sous-étiquette**.
     
-10. Dans un **nom** et une description de l’étiquette dans la zone **Description**, tapez un nom pour l’étiquette secondaire.
+10. Entrez le nom de la sous-étiquette dans **Nom** et sa description dans **Description**.
     
-11. **Définir des autorisations pour les documents et messages électroniques contenant cette étiquette**, cliquez sur **protéger**.
+11. Cliquez sur **Protéger** dans **Définir les autorisations pour les documents et les e-mails contenant cette étiquette**.
     
-12. Dans la section de la **Protection** , cliquez sur **Azure (clé de nuage)**.
+12. Dans la section **Protection**, cliquez sur **Azure (clé cloud)**.
     
-13. Sur la lame de **Protection** , sous **paramètres de Protection**, cliquez sur **+ Ajouter des autorisations**.
+13. Dans le panneau **Protection**, cliquez sur **+ Ajouter des autorisations** sous **Paramètres de protection**.
     
-14. Sur la blade **d’Ajouter les autorisations** , sous **spécifier les utilisateurs et groupes**, cliquez sur **+ Parcourir le répertoire**.
+14. Dans le panneau **Ajouter des autorisations**, sous **Spécifier les utilisateurs et les groupes**, cliquez sur **+ Parcourir le répertoire**.
     
 15. Dans le volet **DAS utilisateurs et des groupes** , sélectionnez **Senior et stratégique personnel**, puis cliquez sur **Sélectionner**.
     
-16. Sous **autorisations de choisir le paramètre prédéfini**, désactivez les cases à cocher **impression**, **copie et extraction de contenu**et **vers l’avant** .
+16. Sous **Choisir des autorisations à partir de valeurs prédéfinies**, désactivez les cases à cocher **Imprimer **, **Copier et extraire le contenu** et **Transférer**.
     
-17. Cliquez deux fois sur **OK** .
+17. Cliquez deux fois sur **OK**.
     
-18. Sur la blade **d’étiquette secondaire** , cliquez sur **Enregistrer**.
+18. Dans le panneau **Sous-étiquette**, cliquez sur **Enregistrer**.
     
 19. Fermez le panneau de la nouvelle stratégie étendue.
     
@@ -407,13 +405,13 @@ Vous êtes désormais prêt à créer des documents dans ces quatre sites et à
   
 Pour protéger un document avec la Protection des informations Azure et cette nouvelle étiquette, vous devez [installer le client de Protection d’informations Azure](https://docs.microsoft.com/information-protection/rms-client/install-client-app) sur un ordinateur de test, installez Office à partir du portail Office 365 et puis vous connecter à partir de Microsoft Word avec un compte dans le ** Personnel d’encadrement et personnel stratégique** groupe de votre abonnement d’évaluation.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Voir aussi
 
-[Conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d'autres organisations flexibles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d’autres organisations flexibles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [Configurer des groupes et des utilisateurs pour un environnement de développement/test de campagne politique](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md)
   
-[Guides de laboratoire de test d'adoption cloud](cloud-adoption-test-lab-guides-tlgs.md)
+[Guides de laboratoire de test d’adoption cloud](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.md)
 

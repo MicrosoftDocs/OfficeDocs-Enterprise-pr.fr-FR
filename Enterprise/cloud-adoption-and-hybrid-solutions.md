@@ -1,25 +1,24 @@
 ---
-title: "Solutions de nuage d’entreprise"
-description: "Résoudre les problèmes de l’entreprise en utilisant le Cloud Microsoft. Trouvez des informations sur la dernière hybride et solutions de nuage sécurité, adoption du cloud et bien plus encore."
-services: o365-solutions
+title: Solutions Cloud pour les entreprises
+description: "Résolvez les problèmes d’entreprise à l’aide de Microsoft Cloud. Recherchez des informations sur les dernières solutions cloud de sécurité et hybrides, l’adoption du cloud et bien plus encore."
 author: JoeDavies-MSFT
 manager: laurawi
 layout: LandingPage
 ms.assetid: 
 ms.service: o365-solutions
-ms.tgt_pltfrm: na
-ms.devlang: na
 ms.topic: landing-page
+localization_priority: Normal
+ms.collection: Ent_O365
 ms.date: 12/13/2017
 ms.author: JoeDavies-MSFT
-ms.openlocfilehash: c9717be6f881968af0cc8ef66dfae54f4a6e7298
-ms.sourcegitcommit: d61cf5f3cd127dc0d446c5e78402aa8913041d06
+ms.openlocfilehash: 396d61debdd3f0cb222e9627b74a7baaa287c4c3
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
-<h1>Solutions de nuage d’entreprise</h1>
-<p>Résoudre les problèmes de l’entreprise en utilisant le Cloud Microsoft. Trouvez des informations sur la dernière hybride et solutions de nuage sécurité, adoption du cloud et bien plus encore.</p>
+<h1>Solutions Cloud pour les entreprises</h1>
+<p>Résolvez les problèmes d’entreprise à l’aide de Microsoft Cloud. Recherchez des informations sur les dernières solutions cloud de sécurité et hybrides, l’adoption du cloud et bien plus encore.</p>
 <p>Les solutions techniques répondant aux problèmes actuels des entreprises impliquent souvent plusieurs produits et plateformes. Vous pouvez tirer parti de votre infrastructure locale existante tout en bénéficiant de la flexibilité et de l’économie de coût que représentent les plateformes et les services cloud de Microsoft. Notre objectif est de fournir les informations nécessaires pour vous aider à atteindre vos objectifs d’entreprise à l’aide des produits et services Microsoft. </p>
 <ul class="cardsF panelContent">
     <li>

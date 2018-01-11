@@ -5,20 +5,18 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
-ms.topic: concetpual
+ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 9cb70c9d-9ed9-47cc-af5a-6403d87d3372
 description: "Résumé : Comprendre la conception du réseau optimisé pour les charges de travail dans Microsoft Azure IaaS."
-ms.openlocfilehash: e4861de51f386af6e142debdafc64f655f010880
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 6f431eb2d87a4420e6e0ba7f48bfc3ef836c0cbe
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="designing-networking-for-microsoft-azure-iaas"></a>Conception de réseaux pour Microsoft Azure IaaS
 
@@ -32,11 +30,11 @@ Suivez la procédure ci-dessous pour tout type de réseau virtuel (VNet).
   
 ### <a name="step-1-prepare-your-intranet-for-microsoft-cloud-services"></a>Étape 1 : préparez votre intranet pour les services de cloud computing Microsoft.
 
-Passez en revue la section **étapes de préparation de votre réseau pour les services de nuage de Microsoft** dans [les éléments communs de connectivité de nuage de Microsoft](common-elements-of-microsoft-cloud-connectivity.md).
+Consultez les **étapes de préparation de votre réseau pour services de cloud Microsoft** fournies dans la section [Éléments communs de la connectivité au cloud Microsoft](common-elements-of-microsoft-cloud-connectivity.md).
   
 ### <a name="step-2-optimize-your-internet-bandwidth"></a>Étape 2 : optimisez votre bande passante Internet.
 
-Optimiser la bande passante Internet à l’aide des étapes 2 à 4 de la section **d’étapes à suivre pour préparer votre réseau pour les services Microsoft SaaS** dans la [conception de mise en réseau pour Microsoft SaaS](designing-networking-for-microsoft-saas.md).
+Optimisez votre bande passante Internet en suivant les étapes 2 à 4 de la **procédure de préparation de votre réseau pour les services Microsoft SaaS** fournie dans [Conception de réseaux pour Microsoft SaaS](designing-networking-for-microsoft-saas.md).
   
 ### <a name="step-3-determine-the-type-of-vnet-cloud-only-or-cross-premises"></a>Étape 3 : déterminez le type du réseau virtuel (cloud uniquement ou intersites).
 
@@ -122,11 +120,11 @@ Azure utilise les 3 premières adresses sur chaque sous-réseau. Par conséquent
   
 |**Ordinateurs virtuels requis**|**Bits d’hôte**|**Taille de sous-réseau**|
 |:-----|:-----|:-----|
-|1 à 3  <br/> |3  <br/> |/29  <br/> |
-|4 à 11  <br/> |4  <br/> |/28  <br/> |
-|12 à 27  <br/> |5  <br/> |/27  <br/> |
-|28 à 59  <br/> |6  <br/> |/26  <br/> |
-|60 à 123  <br/> |7  <br/> |/25  <br/> |
+|1-3  <br/> |3  <br/> |/29  <br/> |
+|4-11  <br/> |4  <br/> |/28  <br/> |
+|12-27  <br/> |5  <br/> |/27  <br/> |
+|28-59  <br/> |6  <br/> |/26  <br/> |
+|60-123  <br/> |7  <br/> |/25  <br/> |
    
  **Tableau 3 : exigences de machine virtuelle et leur taille de sous-réseau**
   
@@ -428,7 +426,7 @@ Figure 19 montre les neuf serveurs d’une batterie de serveurs SharePoint Serve
   
 Pour obtenir d’autres exemples de charges de travail informatiques déployés sur des ordinateurs virtuels dans un Azure coexistence virtuel du réseau, consultez la rubrique [scénarios de cloud hybride pour Azure IaaS](https://technet.microsoft.com/library/mt750502.aspx).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Voir aussi
 
 <a name="cross_prem"> </a>
 

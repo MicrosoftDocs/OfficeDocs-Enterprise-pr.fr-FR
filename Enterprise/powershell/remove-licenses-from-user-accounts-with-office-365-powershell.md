@@ -14,14 +14,13 @@ ms.custom:
 - Ent_Office_Other
 - LIL_Placement
 - O365ITProTrain
-- DecEntMigration
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
 description: "Explique comment utiliser Office 365 PowerShell pour supprimer des licences Office 365 qui a été précédemment affectés aux utilisateurs."
-ms.openlocfilehash: 90cae603a7a7cda0b7318571d3eb045f750fd58d
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: d419aab9b3287364567e03accdfb2e687eacb0de
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="remove-licenses-from-user-accounts-with-office-365-powershell"></a>Supprimer des licences à des comptes d’utilisateurs avec Office 365 PowerShell
 
@@ -37,7 +36,7 @@ ms.lasthandoff: 12/15/2017
     
   - [Afficher les détails de service et de licence de compte avec Office 365 PowerShell](view-account-license-and-service-details-with-office-365-powershell.md)
     
-- Si vous utilisez l’applet de commande **Get-MsolUser** sans utiliser le _-tous les_ paramètre, seuls les 500 premiers comptes de sont retournés.
+- Si vous utilisez la cmdlet **Get-MsolUser** sans utiliser le paramètre _-All_, seuls les 500 premiers comptes sont renvoyés.
     
 ## <a name="the-short-version-instructions-without-explanations"></a>La version courte (instructions sans explications)
 <a name="ShortVersion"> </a>
@@ -154,7 +153,7 @@ Consultez les rubriques supplémentaires suivantes sur la gestion des utilisateu
     
 - [Attribuer des licences à des comptes d'utilisateurs avec Office 365 PowerShell](assign-licenses-to-user-accounts-with-office-365-powershell.md)
     
-Pour plus d'informations sur les cmdlets utilisées dans ces procédures, consultez les rubriques suivantes :
+Pour plus d’informations sur les cmdlets utilisées dans ces procédures, consultez les rubriques suivantes :
   
 - [Get-Content.](https://go.microsoft.com/fwlink/p/?LinkId=289917)
     
@@ -162,7 +161,7 @@ Pour plus d'informations sur les cmdlets utilisées dans ces procédures, consul
     
 - [Ensemble-MsolUserLicense](https://go.microsoft.com/fwlink/p/?LinkId=691548)
     
-- [ForEach-Object.](https://go.microsoft.com/fwlink/p/?LinkId=113300)
+- [ForEach-Object](https://go.microsoft.com/fwlink/p/?LinkId=113300)
     
 - [Where-Object](https://go.microsoft.com/fwlink/p/?LinkId=113423)
     

@@ -8,21 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
-- jan17entnews
 - Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: 0a3555dc-6f96-49a5-b9e2-7760e16630b3
 description: "Résumé : Créez un réseau virtuel simulé coexistence dans Azure de Microsoft comme environnement de développement/test."
-ms.openlocfilehash: b8ced6da7932ca463c7c722cb1d715198e20e07c
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: bd39e1a9815326ee9b0c479631b834df3609ac4f
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="simulated-cross-premises-virtual-network-in-azure"></a>Réseau virtuel intersites simulé dans Azure.
 
@@ -90,7 +86,7 @@ Login-AzureRMAccount
 > [!TIP]
 > Cliquez [ici](https://gallery.technet.microsoft.com/PowerShell-commands-for-7844edd0) pour obtenir un fichier texte qui contient toutes les commandes de PowerShell dans cet article.
   
-Obtenez le nom de votre abonnement à l'aide de la commande suivante.
+Obtenez le nom de votre abonnement à l’aide de la commande suivante.
   
 ```
 Get-AzureRMSubscription | Sort Name | Select Name
@@ -209,7 +205,7 @@ Votre environnement cloud hybride Azure simulé est prêt pour le test.
 
 Utiliser cet environnement de développement/test afin de simuler une [batterie de serveurs intranet SharePoint Server 2016 hébergé dans Azure](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Voir aussi
 
 [Environnement de développement/test de configuration de base](base-configuration-dev-test-environment.md)
   

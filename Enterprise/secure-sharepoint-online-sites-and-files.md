@@ -5,23 +5,20 @@ author: brendacarter
 manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
-ms.topic: concetpual
+ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: "Résumé : Configuration des recommandations pour la protection de fichiers dans SharePoint Online et Office 365."
-ms.openlocfilehash: 336dd4114e7853319fede88f9f3ea5aa613b2081
-ms.sourcegitcommit: 4a347cfb16405d5213b28f332d80e244fca0fb8f
+ms.openlocfilehash: a8ba632d9bc24e272a649f5790824323f889bdc0
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Sécurisation des fichiers et sites SharePoint Online
 
@@ -39,9 +36,9 @@ Les configurations de cet article sont en accord avec les recommandations de Mic
     
 Pour plus d’informations sur ces niveaux et sur les fonctionnalités recommandées pour chaque niveau, consultez les ressources suivantes.  
   
-- [Identité et Protection des périphériques pour Office 365](microsoft-cloud-it-architecture-resources.md#BKMK_O365IDP)
+- [Protection des appareils et de l’identité pour Office 365](microsoft-cloud-it-architecture-resources.md#BKMK_O365IDP)
     
-- [Solutions de Protection des fichiers dans Office 365](microsoft-cloud-it-architecture-resources.md#BKMK_O365fileprotect)
+- [Solutions de protection des fichiers dans Office 365](microsoft-cloud-it-architecture-resources.md#BKMK_O365fileprotect)
     
 ## <a name="capability-overview"></a>Vue d’ensemble des fonctionnalités
 
@@ -185,15 +182,15 @@ Il existe deux méthodes que vous pouvez accorder aux utilisateurs externes l’
 
 Pour les étapes de configuration de la Protection des informations Azure dans cette solution, consultez [fichiers protéger SharePoint Online avec Azure la Protection des informations](protect-sharepoint-online-files-with-azure-information-protection.md).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Voir aussi
 
-[Conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d'autres organisations flexibles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d’autres organisations flexibles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [Solutions de sécurité](security-solutions.md)
   
 [Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.md)
   
-[Sites SharePoint en ligne sécurisés dans un environnement de développement/test](secure-sharepoint-online-sites-in-a-dev-test-environment.md)
+[Sécuriser les sites SharePoint Online dans un environnement de développement/test](secure-sharepoint-online-sites-in-a-dev-test-environment.md)
 
 
 

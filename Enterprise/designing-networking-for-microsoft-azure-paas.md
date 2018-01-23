@@ -18,7 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/11/2018
 ---
-# <a name="designing-networking-for-microsoft-azure-paas"></a><span data-ttu-id="c3079-103">xxxConception de réseau pour Microsoft Azure PaaS</span><span class="sxs-lookup"><span data-stu-id="c3079-103">Designing networking for Microsoft Azure PaaS</span></span>
+# <a name="designing-networking-for-microsoft-azure-paas"></a><span data-ttu-id="c3079-103">Conception de réseau pour Microsoft Azure PaaS</span><span class="sxs-lookup"><span data-stu-id="c3079-103">Designing networking for Microsoft Azure PaaS</span></span>
 
  <span data-ttu-id="c3079-104">**Résumé :** Comprenez comment optimiser votre réseau pour accéder à Microsoft Azure PaaS.</span><span class="sxs-lookup"><span data-stu-id="c3079-104">**Summary:** Understand how to optimize your network for access to Microsoft Azure PaaS.</span></span>
   

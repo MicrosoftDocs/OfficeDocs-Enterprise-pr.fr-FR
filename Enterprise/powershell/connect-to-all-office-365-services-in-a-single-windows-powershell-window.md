@@ -16,11 +16,11 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: "Résumé : Connexion de Windows PowerShell à tous les services Office 365 dans une seule fenêtre de Windows PowerShell."
-ms.openlocfilehash: 2dccfc73b016cbe97436c822432331ee30ba4bcd
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 5f97924d141afa4319c761fee86b13cb2b0705fb
+ms.sourcegitcommit: f10e47df0dca4a241659f33061db5217ebc3401e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>Connexion à tous les services Office 365 à l’aide d’une seule fenêtre Windows PowerShell
 
@@ -503,10 +503,8 @@ Comme pour votre connexion à Office 365, bien qu’il existe une applet de comm
 ## <a name="new-to-office-365"></a>Vous débutez avec Office 365 ?
 <a name="LongVersion"> </a>
 
-||
-|:-----|
-|![L’icône court pour l’apprentissage de LinkedIn](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **nouveau vers Office 365 ?**         Découvrez la vidéo gratuits pour les [professionnels de l’informatique et les administrateurs d’Office 365](https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5), proposée par formation de LinkedIn. |
-   
+[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
+
 ## <a name="see-also"></a>Voir aussi
 
 #### 

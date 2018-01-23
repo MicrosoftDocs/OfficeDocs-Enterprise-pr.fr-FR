@@ -16,11 +16,11 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: "Explique comment utiliser Office 365 PowerShell pour afficher des informations sur les plans de licence, les services et les licences qui sont disponibles dans votre organisation d’Office 365."
-ms.openlocfilehash: f43a1c20be157d26ec9cd1d98df2f5e17517b1d6
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 7564da2093bdc9de45e239be8196a626214871ba
+ms.sourcegitcommit: f10e47df0dca4a241659f33061db5217ebc3401e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Afficher les licences et les services avec Office 365 PowerShell
 
@@ -76,7 +76,7 @@ Le tableau suivant montre les plans de service d’Office 365 et leurs noms conv
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Office Professionnel Plus  <br/> |
 | `MCOSTANDARD` <br/> |Skype Entreprise Online  <br/> |
-| `SHAREPOINTWAC` <br/> |Office Online  <br/> |
+| `SHAREPOINTWAC` <br/> |Office Online  <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online Plan 2  <br/> |
    
@@ -95,9 +95,7 @@ Cet exemple montre les services Office 365 qui sont disponibles dans le plan de 
 ## <a name="new-to-office-365"></a>Vous débutez avec Office 365 ?
 <a name="ShortVersion"> </a>
 
-||
-|:-----|
-|![L’icône court pour l’apprentissage de LinkedIn](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **nouveau vers Office 365 ?**         Découvrez la vidéo gratuits pour les [professionnels de l’informatique et les administrateurs d’Office 365](https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5), proposée par formation de LinkedIn. |
+[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
    
 ## <a name="see-also"></a>Voir aussi
 <a name="ShortVersion"> </a>

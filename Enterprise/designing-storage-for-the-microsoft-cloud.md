@@ -8,8 +8,10 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom: Ent_Architecture
+ms.collection:
+- Ent_O365
+ms.custom:
+- Ent_Architecture
 ms.assetid: 7e511118-1b75-413a-b959-ad0d3ffc9516
 description: "Résumé : Découvrez pourquoi vous avez besoin de stockage cloud et passez en revue la liste des options de stockage cloud de Microsoft et les principaux scénarios de stockage."
 ms.openlocfilehash: 199e385ea0238e8fb27c04153faf177df07e1025
@@ -160,6 +162,6 @@ Consultez les options de stockage cloud décrites dans l'article [Solutions prê
   
 [Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs](https://sway.com/FJ2xsyWtkJc2taRD)
 
 

@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: "Résumé : Découvrez comment configurer un réseau virtuel Azure intersites pour les charges de travail de serveur Office."
-ms.openlocfilehash: 28afcc083218e7e50fe41ddc8505c9283b15d83d
-ms.sourcegitcommit: b3d44b30b6e60df85ea9b404692db64ba54a16c7
+ms.openlocfilehash: 2b9176172d0ce82975fd9faea8ecb7664eabe8f1
+ms.sourcegitcommit: ca96830b425b3ec5a6387eaae47cdc23c8384456
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>Connecter un réseau local à Microsoft Azure Virtual Network
 
@@ -130,11 +130,11 @@ Pour les paramètres du réseau virtuel, remplissez le tableau V.
   
 |**Élément**|**Élément Configuration**|**Description**|**Valeur**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |Nom du réseau virtuel  <br/> |Nom à affecter au réseau virtuel Azure (par exemple, DirSyncNet).  <br/> |_ _ _ _ _ _ _ _ _ <br/> |
-|2.  <br/> |Emplacement du réseau virtuel  <br/> |Centre de données Azure qui contiendra le réseau virtuel (par exemple, Ouest des États-Unis).  <br/> |_ _ _ _ _ _ _ _ _  <br/> |
-|3.  <br/> |Adresse IP du périphérique VPN  <br/> |Adresse IPv4 publique de l’interface de votre périphérique VPN sur Internet. Renseignez-vous auprès de votre service informatique pour déterminer cette adresse.  <br/> |_ _ _ _ _ _ _ _ _  <br/> |
-|4.  <br/> |Espace d’adressage du réseau virtuel  <br/> |Espace d’adressage (défini dans un préfixe d’adresse privée unique) pour le réseau virtuel. Renseignez-vous auprès de votre service informatique pour déterminer cet espace d’adressage. L’espace d’adressage doit être au format de routage CIDR (Classless Interdomain Routing), également appelé format de préfixe de réseau. Par exemple, 10.24.64.0/20.  <br/> |_ _ _ _ _ _ _ _ _  <br/> |
-|5.  <br/> |Clé partagée IPsec  <br/> |Chaîne alphanumérique aléatoire de 32 caractères, qui sera utilisée pour authentifier les deux côtés de la connexion VPN de site à site. Renseignez-vous auprès de votre service informatique ou de sécurité pour déterminer la valeur de cette clé, puis stockez-la dans un emplacement sécurisé. Vous pouvez également consulter la page relative à la [création d'une chaîne aléatoire pour une clé prépartagée IPsec](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).<br/> |_ _ _ _ _ _ _ _ _  <br/> |
+|1.  <br/> |Nom du réseau virtuel  <br/> |Nom à affecter au réseau virtuel Azure (par exemple, DirSyncNet).  <br/> |![](./images/Common_Images/TableLine.png) |
+|2.  <br/> |Emplacement du réseau virtuel  <br/> |Centre de données Azure qui contiendra le réseau virtuel (par exemple, Ouest des États-Unis).  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|3.  <br/> |Adresse IP du périphérique VPN  <br/> |Adresse IPv4 publique de l’interface de votre périphérique VPN sur Internet. Renseignez-vous auprès de votre service informatique pour déterminer cette adresse.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|4.  <br/> |Espace d’adressage du réseau virtuel  <br/> |Espace d’adressage (défini dans un préfixe d’adresse privée unique) pour le réseau virtuel. Renseignez-vous auprès de votre service informatique pour déterminer cet espace d’adressage. L’espace d’adressage doit être au format de routage CIDR (Classless Interdomain Routing), également appelé format de préfixe de réseau. Par exemple, 10.24.64.0/20.  <br/> |![](./images/Common_Images/TableLine.png) <br/> |
+|5.  <br/> |Clé partagée IPsec  <br/> |Chaîne alphanumérique aléatoire de 32 caractères, qui sera utilisée pour authentifier les deux côtés de la connexion VPN de site à site. Renseignez-vous auprès de votre service informatique ou de sécurité pour déterminer la valeur de cette clé, puis stockez-la dans un emplacement sécurisé. Vous pouvez également consulter la page relative à la [création d'une chaîne aléatoire pour une clé prépartagée IPsec](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).<br/> |![](./images/Common_Images/TableLine.png) <br/> |
    
 Remplissez le tableau S pour les sous-réseaux de cette solution.
   
@@ -148,8 +148,8 @@ Renseignez-vous auprès de votre service informatique pour déterminer ces espac
   
 |**Élément**|**Nom du sous-réseau**|**Espace d'adressage de sous-réseau**|**Objectif**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |GatewaySubnet  <br/> |_ _ _ _ _ _ _ _ _  <br/> |Sous-réseau utilisé par la passerelle Azure.  <br/> |
-|2.  <br/> |_ _ _ _ _ _ _ _ _  <br/> |_ _ _ _ _ _ _ _ _  <br/> |_ _ _ _ _ _ _ _ _  <br/> |
+|1.  <br/> |GatewaySubnet  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |Sous-réseau utilisé par la passerelle Azure.  <br/> |
+|2.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
    
 Concernant les serveurs DNS locaux qui doivent être utilisés par les machines virtuelles du réseau virtuel, remplissez le tableau D. Donnez un nom convivial et une adresse IP unique à chaque serveur DNS. Ce nom convivial n’a pas besoin de correspondre au nom d’hôte ou au nom de l’ordinateur du serveur DNS. Notez que le tableau comporte deux entrées vides, mais vous pouvez en ajouter d’autres. Renseignez-vous auprès de votre service informatique pour déterminer cette liste.
   
@@ -157,8 +157,8 @@ Concernant les serveurs DNS locaux qui doivent être utilisés par les machines 
   
 |**Élément**|**Nom convivial du serveur DNS**|**Adresse IP du serveur DNS**|
 |:-----|:-----|:-----|
-|1.  <br/> |_ _ _ _ _ _ _ _ _  <br/> |_ _ _ _ _ _ _ _ _  <br/> |
-|2.  <br/> |_ _ _ _ _ _ _ _ _  <br/> |_ _ _ _ _ _ _ _ _  <br/> |
+|1.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|2.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
    
 Pour acheminer les paquets du réseau virtuel Azure vers le réseau de votre organisation par le biais de la connexion VPN de site à site, vous devez configurer le réseau virtuel avec un réseau local. Ce réseau local contient la liste des espaces d’adressage (au format CIDR) pour l’ensemble des emplacements sur le réseau local de votre organisation que les machines virtuelles du réseau virtuel doivent atteindre. Il peut s’agir de l’ensemble des emplacements sur le réseau local ou un sous-ensemble. La liste des espaces d’adressage qui définissent votre réseau local doit être unique et ne doit pas se chevaucher avec les espaces d’adressage utilisés pour ce réseau virtuel ou vos autres réseaux virtuels entre différents locaux.
   
@@ -168,9 +168,9 @@ Pour l’ensemble des espaces d’adressage du réseau local, remplissez le tabl
   
 |**Élément**|**Espace d'adressage du réseau local**|
 |:-----|:-----|
-|1.  <br/> |_ _ _ _ _ _ _ _ _  <br/> |
-|2.  <br/> |_ _ _ _ _ _ _ _ _  <br/> |
-|3.  <br/> |_ _ _ _ _ _ _ _ _  <br/> |
+|1.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|2.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|3.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
    
 ## <a name="deployment-roadmap"></a>Feuille de route de déploiement
 <a name="DeploymentRoadmap"> </a>

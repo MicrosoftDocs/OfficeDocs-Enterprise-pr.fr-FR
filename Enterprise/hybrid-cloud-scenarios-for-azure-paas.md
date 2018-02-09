@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 5f4f5d0d-4638-48e8-a517-bd804856b617
 description: "Résumé : Comprendre l'architecture hybride et les scénarios pour les offres cloud PaaS de Microsoft dans Azure."
-ms.openlocfilehash: 304322e5ad36f0a7f385a41fc3f2e5232dcecd69
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 96548b74341474ff2bd0720f982cbdba96b06e4b
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-paas"></a>Scénarios de cloud hybride pour les services PaaS Azure
 
@@ -116,7 +116,7 @@ Les requêtes de l’utilisateur qui incluent les données historiques sont tran
   
 Stretch Database est une solution rentable qui offre un stockage à long terme et un accès transparent aux données historiques. Elle résout également les problèmes de performances et de disponibilité qui peuvent survenir lorsque les tables deviennent très volumineuses.
   
-Pour plus d'informations, voir [Stretch Database]((https://msdn.microsoft.com/library/dn935011.aspx)).
+Pour plus d'informations, voir [Stretch Database](https://msdn.microsoft.com/library/dn935011.aspx).
   
 ## <a name="see-also"></a>Voir aussi
 
@@ -124,7 +124,7 @@ Pour plus d'informations, voir [Stretch Database]((https://msdn.microsoft.com/li
   
 [Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

@@ -14,11 +14,11 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 13c71689-59a9-4cdf-8175-808a20c1e879
 description: "Résumé : Concevez votre réseau pour les services et les plateformes cloud de Microsoft"
-ms.openlocfilehash: 155e40bfe769a8d8771d71e570cab418d4a6b2a0
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 7fe7fc71825ddbdf485fedece890c87be914d4fc
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="microsoft-cloud-networking-for-enterprise-architects"></a>Mise en réseau cloud Microsoft pour les architectes d’entreprise
 
@@ -31,7 +31,7 @@ Cet article vous dirige vers un ensemble d'articles qui décrivent ce que les ar
   
 ![Fichier PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) | ![Fichier Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842074) | ![Affichage d'une page contenant des versions dans d'autres langues](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Plus de langues](https://www.microsoft.com/download/details.aspx?id=54425)
   
-Vous pouvez également afficher tous les modèles dans les [Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md) et consulter la [feuille de route Enterprise Cloud de Microsoft (ressources pour les décideurs informatiques)]((https://aka.ms/cloudarchitecture)).
+Vous pouvez également afficher tous les modèles dans les [Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md) et consulter la [feuille de route Enterprise Cloud de Microsoft (ressources pour les décideurs informatiques)](https://aka.ms/cloudarchitecture).
   
 Consultez les sections suivantes :
   
@@ -59,7 +59,7 @@ Consultez les sections suivantes :
     
     Suivez le processus de conception pour créer un réseau virtuel Azure optimal pour l’hébergement des charges de travail informatiques basées sur serveur IT, y compris les sous-réseaux, les espaces d’adressage, le routage, le DNS, l’équilibrage de charge et la connectivité avec votre réseau local, d’autres réseaux virtuels et Internet.
     
-Pour visionner un récapitulatif de 30 minutes des points clés de cette affiche, reportez-vous au cours Microsoft Virtual Academy relatif à l'[optimisation de votre réseau pour les offres Microsoft Cloud]((https://mva.microsoft.com/fr-FR/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743)).
+Pour visionner un récapitulatif de 30 minutes des points clés de cette affiche, reportez-vous au cours Microsoft Virtual Academy relatif à l'[optimisation de votre réseau pour les offres Microsoft Cloud](https://mva.microsoft.com/fr-FR/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743).
   
 > [!NOTE]
 > Ces articles reflètent la version de **juin 2017** de l’affiche Mise en réseau cloud Microsoft pour les architectes d’entreprise.
@@ -68,7 +68,7 @@ Pour visionner un récapitulatif de 30 minutes des points clés de cette affiche
 
 [Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

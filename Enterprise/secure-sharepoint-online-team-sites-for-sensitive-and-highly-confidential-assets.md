@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 8c088e88-a9ba-4044-bced-722196f4496d
 description: "Résumé : Découvrez comment Contoso a mis en œuvre des sites d'équipe SharePoint Online hautement confidentiels et avec protection des données sensibles, afin de permettre une collaboration simple, mais sécurisée, entre ses centres de recherche et ses cadres."
-ms.openlocfilehash: 062238bd301200e388ba9d4f6d24503d33046f50
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: c615280d39117f68515fb13d4ba83428d73e4fd3
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="secure-sharepoint-online-team-sites-for-sensitive-and-highly-confidential-assets"></a>Sécuriser les sites d’équipe SharePoint Online pour les ressources sensibles et hautement confidentielles
 
@@ -52,9 +52,9 @@ Contoso a créé des sites d’équipe SharePoint Online sécurisés pour ses ca
     
 Le résultat consiste en deux sites de collaboration dont l'accès est étroitement contrôlé par les administrateurs de la sécurité et de SharePoint. Pour les fichiers dotés de l'étiquette AIP Hautement confidentiel, même s'ils sont distribués en dehors du site d'équipe pour la recherche, ils sont chiffrés et ne peuvent être ouverts que par un membre d'une équipe de recherche.
   
-Pour plus d'informations, consultez l'article [Sécuriser des sites et des fichiers SharePoint Online]((https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-and-files)).
+Pour plus d'informations, consultez l'article [Sécuriser des sites et des fichiers SharePoint Online](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-and-files).
   
- Pour effectuer cette configuration à des fins de démonstration, de preuve de concept ou de développement/test, consultez l'article [Sécuriser des sites SharePoint Online dans un environnement de développement et de test]((https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-dev-test)).
+ Pour effectuer cette configuration à des fins de démonstration, de preuve de concept ou de développement/test, consultez l'article [Sécuriser des sites SharePoint Online dans un environnement de développement et de test](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-dev-test).
   
 ## <a name="see-also"></a>Voir aussi
 
@@ -64,9 +64,9 @@ Pour plus d'informations, consultez l'article [Sécuriser des sites et des fichi
   
 [Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Stretch Database]((https://msdn.microsoft.com/library/dn935011.aspx))
+[Stretch Database](https://msdn.microsoft.com/library/dn935011.aspx)
   
-[Feuille de route de Microsoft Enterprise Cloud : Ressources pour les décideurs informatiques]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Feuille de route de Microsoft Enterprise Cloud : Ressources pour les décideurs informatiques](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

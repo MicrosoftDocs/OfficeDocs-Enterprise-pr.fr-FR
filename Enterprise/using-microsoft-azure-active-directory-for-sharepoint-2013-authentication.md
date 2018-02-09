@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: bef810a4-53f6-4962-878e-e20b5019baeb
 description: "Résumé : Apprenez à utiliser le Service de contrôle d'accès pour authentifier les utilisateurs de SharePoint Server 2013 avec Azure Active Directory."
-ms.openlocfilehash: 9025eb53f4d8e37403c48416f41adbe35fa9fa01
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: c4c8c4a2c35018b9e4eef2ce32502c4ba67585ca
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="using-microsoft-azure-active-directory-for-sharepoint-2013-authentication"></a>Utilisation de Microsoft Azure Active Directory pour l’authentification SharePoint 2013
 
@@ -215,7 +215,7 @@ Vérifiez que vous disposez des appartenances suivantes :
 Un administrateur peut utiliser l'applet de commande **Add-SPShellAdmin** pour accorder des autorisations d'utilisation des applets de commande SharePoint 2013.
   
 > [!NOTE]
-> Si vous ne disposez pas des autorisations, contactez votre administrateur d'installation ou votre administrateur SQL Server afin de les demander. Pour plus d'informations sur les autorisations Windows PowerShell, voir [Add-SPShellAdmin]((http://technet.microsoft.com/library/2ddfad84-7ca8-409e-878b-d09cb35ed4aa.aspx)). 
+> Si vous ne disposez pas des autorisations, contactez votre administrateur d'installation ou votre administrateur SQL Server afin de les demander. Pour plus d'informations sur les autorisations Windows PowerShell, voir [Add-SPShellAdmin](http://technet.microsoft.com/library/2ddfad84-7ca8-409e-878b-d09cb35ed4aa.aspx). 
   
 1. Dans le menu **Démarrer**, cliquez sur **Tous les programmes**.
     
@@ -318,7 +318,7 @@ Procédez comme suit pour vérifier que le nouveau fournisseur d’identité fon
 |**Contactez-nous**|**Description**|
 |:-----|:-----|
 |**De quelles solutions avez-vous besoin ?** <br/> |Nous sommes en train de créer du contenu pour les solutions qui s'étendent sur plusieurs produits et services Microsoft. Donnez-nous votre avis sur nos solutions entre serveurs ou demandez des solutions spécifiques en envoyant un courrier électronique à [MODAcontent@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20).<br/> |
-|**Participer à la discussion sur les solutions** <br/> |Si vous êtes passionné par les solutions basées sur le cloud, rejoignez le conseil consultatif de l’adoption cloud (CAAB) pour interagir avec une communauté vaste et dynamique de développeurs de contenu Microsoft, de professionnels du secteur et de clients venant du monde entier. Pour participer, ajoutez-vous en tant que membre de l’espace [CAAB (Conseil consultatif de l’adoption cloud)]((https://aka.ms/caab)) de la communauté Microsoft Tech et envoyez-nous un message électronique à l’adresse [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Tout le monde peut lire le contenu lié à la communauté sur le [blog CAAB]((https://blogs.technet.com/b/solutions_advisory_board/)). Toutefois, les membres CAAB reçoivent des invitations à des webinaires privés qui décrivent les nouvelles solutions et ressources relatives à l’adoption cloud.<br/> |
+|**Participer à la discussion sur les solutions** <br/> |Si vous êtes passionné par les solutions basées sur le cloud, rejoignez le conseil consultatif de l’adoption cloud (CAAB) pour interagir avec une communauté vaste et dynamique de développeurs de contenu Microsoft, de professionnels du secteur et de clients venant du monde entier. Pour participer, ajoutez-vous en tant que membre de l’espace [CAAB (Conseil consultatif de l’adoption cloud)](https://aka.ms/caab) de la communauté Microsoft Tech et envoyez-nous un message électronique à l’adresse [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Tout le monde peut lire le contenu lié à la communauté sur le [blog CAAB](https://blogs.technet.com/b/solutions_advisory_board/). Toutefois, les membres CAAB reçoivent des invitations à des webinaires privés qui décrivent les nouvelles solutions et ressources relatives à l’adoption cloud.<br/> |
 |**Obtenir l'image que vous voyez ici** <br/> |Si vous voulez obtenir une copie modifiable de l’image que vous voyez dans cet article, nous serons ravis de vous l’envoyer. Envoyez-nous votre demande par courrier électronique, en incluant l’URL et le titre de l’illustration, à [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20).<br/> |
    
 

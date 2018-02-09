@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
 description: "Résumé : Les solutions SharePoint 2013 peuvent être hébergées sur des machines virtuelles Microsoft Azure. Découvrez quels types de solution sont adaptés et comment configurer Microsoft Azure pour en héberger une."
-ms.openlocfilehash: e7290e3e53173ecf3406470ef0a136bb1364e39b
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 5156f3e8cabb3acabc7ad23a680a016c200c676e
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>Architectures Microsoft Azure pour SharePoint 2013
 
@@ -53,9 +53,9 @@ Pour des solutions et des charges de travail de collaboration et intranet, envis
 
 Bien que cet article utilise des exemples de topologies SharePoint, vous pouvez utiliser ces concepts de conception avec n'importe quelle topologie de batterie de serveurs SharePoint. Avant de concevoir l'environnement Azure, suivez les instructions suivantes en matière de topologie, d'architecture, de capacité et de performances pour concevoir la batterie de serveurs SharePoint :
   
-- [Conception de l'architecture pour les professionnels de l'informatique SharePoint 2013]((http://technet.microsoft.com/fr-FR/sharepoint/fp123594.aspx))
+- [Conception de l'architecture pour les professionnels de l'informatique SharePoint 2013](http://technet.microsoft.com/fr-FR/sharepoint/fp123594.aspx)
     
-- [Plan for performance and capacity management in SharePoint Server 2013]((http://technet.microsoft.com/library/8dd52916-f77d-4444-b593-1f7d6f330e5f.aspx))
+- [Plan for performance and capacity management in SharePoint Server 2013](http://technet.microsoft.com/library/8dd52916-f77d-4444-b593-1f7d6f330e5f.aspx)
     
 ## <a name="determine-the-active-directory-domain-type"></a>Déterminer le type de domaine Active Directory
 
@@ -219,7 +219,7 @@ Ce schéma illustre la batterie de serveurs SharePoint implémentée dans les se
 |**Contactez-nous**|**Description**|
 |:-----|:-----|
 |**De quelles solutions avez-vous besoin ?** <br/> |Nous sommes en train de créer du contenu pour les solutions qui s'étendent sur plusieurs produits et services Microsoft. Donnez-nous votre avis sur nos solutions entre serveurs ou demandez des solutions spécifiques en envoyant un courrier électronique à [MODAcontent@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20).<br/> |
-|**Participer à la discussion sur les solutions** <br/> |Si vous êtes passionné par les solutions basées sur le cloud, rejoignez le conseil consultatif de l’adoption cloud (CAAB) pour interagir avec une communauté vaste et dynamique de développeurs de contenu Microsoft, de professionnels du secteur et de clients venant du monde entier. Pour participer, ajoutez-vous en tant que membre de l’espace [CAAB (Conseil consultatif de l’adoption cloud)]((https://aka.ms/caab)) de la communauté Microsoft Tech et envoyez-nous un message électronique à l’adresse [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Tout le monde peut lire le contenu lié à la communauté sur le [blog CAAB]((https://blogs.technet.com/b/solutions_advisory_board/)). Toutefois, les membres CAAB reçoivent des invitations à des webinaires privés qui décrivent les nouvelles solutions et ressources relatives à l’adoption cloud.<br/> |
+|**Participer à la discussion sur les solutions** <br/> |Si vous êtes passionné par les solutions basées sur le cloud, rejoignez le conseil consultatif de l’adoption cloud (CAAB) pour interagir avec une communauté vaste et dynamique de développeurs de contenu Microsoft, de professionnels du secteur et de clients venant du monde entier. Pour participer, ajoutez-vous en tant que membre de l’espace [CAAB (Conseil consultatif de l’adoption cloud)](https://aka.ms/caab) de la communauté Microsoft Tech et envoyez-nous un message électronique à l’adresse [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Tout le monde peut lire le contenu lié à la communauté sur le [blog CAAB](https://blogs.technet.com/b/solutions_advisory_board/). Toutefois, les membres CAAB reçoivent des invitations à des webinaires privés qui décrivent les nouvelles solutions et ressources relatives à l’adoption cloud.<br/> |
 |**Obtenir l'image que vous voyez ici** <br/> |Si vous voulez obtenir une copie modifiable de l’image que vous voyez dans cet article, nous serons ravis de vous l’envoyer. Envoyez-nous votre demande par courrier électronique, en incluant l’URL et le titre de l’illustration, à [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20).<br/> |
    
 ## <a name="see-also"></a>Voir aussi

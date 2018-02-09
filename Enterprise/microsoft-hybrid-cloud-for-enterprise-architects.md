@@ -14,11 +14,11 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 54deae50-9442-4b6a-bd86-e5edb0ec6d74
 description: "Résumé : Tout ce que les architectes informatiques doivent savoir sur les scénarios hybrides utilisant les plateformes et services cloud de Microsoft."
-ms.openlocfilehash: 0a2d9e097d976a729492748aa2672146cb8681a7
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 9972241d5e7291a2cecf8c72811f34115dcf116a
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Cloud hybride Microsoft pour les architectes d’entreprise
 
@@ -32,7 +32,7 @@ Cet article vous dirige vers un ensemble d’articles décrivant ce que les arch
 ![Fichier PDF](images/Common_Images/PDFIcon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | ![Fichier Visio](images/Common_Images/VisioIcon.png)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842083) | ![Affichage d'une page contenant des versions dans d'autres langues](images/Common_Images/GlobeIcon.png)
 [Plus de langues](https://www.microsoft.com/download/details.aspx?id=54424)
   
-Vous pouvez également afficher tous les modèles dans les [Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md) et consulter la [feuille de route Enterprise Cloud de Microsoft (ressources pour les décideurs informatiques)]((https://aka.ms/cloudarchitecture)).
+Vous pouvez également afficher tous les modèles dans les [Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md) et consulter la [feuille de route Enterprise Cloud de Microsoft (ressources pour les décideurs informatiques)](https://aka.ms/cloudarchitecture).
   
 Consultez les sections suivantes :
   
@@ -63,7 +63,7 @@ Consultez les sections suivantes :
 
 [Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

@@ -1,8 +1,8 @@
 ---
 title: "Utiliser PowerShell pour effectuer une migration intermédiaire vers Office 365"
-ms.author: sirkkuw
-author: sirkkuw
-manager: scotv
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: laurawi
 ms.date: 12/15/2017
 ms.audience: Admin
 ms.topic: article
@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: 
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
 description: "Résumé : Découvrez comment utiliser Windows PowerShell pour effectuer une migration intermédiaire vers Office 365."
-ms.openlocfilehash: 5143b039937389d965386de0e09f4f59db071c86
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: d30bb27700199379ea96b157051110af49bf95fa
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-office-365"></a>Utiliser PowerShell pour effectuer une migration intermédiaire vers Office 365
 
@@ -58,7 +58,7 @@ Avant de migrer les boîtes aux lettres vers Office 365 en utilisant une migrati
   
 - Utilisez Outlook hors de votre réseau d'entreprise pour vous connecter à votre boîte aux lettres Exchange locale.
     
-- Utilisez l'[analyseur de connectivité à distance Exchange]((https://www.testexchangeconnectivity.com/)) de Microsoft pour tester vos paramètres de connexion. Utilisez Outlook Anywhere (RPC sur HTTP) ou les tests de découverte automatique d'Outlook.
+- Utilisez l'[analyseur de connectivité à distance Exchange](https://www.testexchangeconnectivity.com/) de Microsoft pour tester vos paramètres de connexion. Utilisez Outlook Anywhere (RPC sur HTTP) ou les tests de découverte automatique d'Outlook.
     
 - Dans Exchange Online PowerShell, exécutez les commandes suivantes :
     

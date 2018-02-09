@@ -5,15 +5,16 @@ author: JoeDavies-MSFT
 ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
+ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 129f4e45-647e-4cf1-92a6-4d86d8396e73
 description: "Cet article est une version texte accessible du diagramme intitulé Options de plateforme Microsoft Exchange 2013, qui est disponible dans la rubrique Diagrammes techniques."
-ms.openlocfilehash: d81fe9947feee64d1dd75278738262d10c802ecc
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: e1c4957c9152c5a23008c657d7e2d0d47b5cce0f
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="accessible-diagram---microsoft-exchange-2013-platform-options"></a>Diagramme accessible : Options de plateforme Microsoft Exchange 2013
 
@@ -254,29 +255,29 @@ Les responsabilités du personnel informatique de votre organisation incluent la
 
 Pour en savoir plus sur Exchange Online (Office 365), consultez les rubriques suivantes :
   
-- [Description du service Exchange Online](((https://aka.ms/EXO)SD))
+- [Description du service Exchange Online](https://aka.ms/EXOSD)
     
-- [Bibliothèque Exchange Online sur TechNet](((https://aka.ms/EXO)TN))
+- [Bibliothèque Exchange Online sur TechNet](https://aka.ms/EXOTN)
     
-- [Portail Exchange Online]((https://aka.ms/EXO))
+- [Portail Exchange Online](https://aka.ms/EXO)
     
 Pour plus d’informations sur l’environnement Exchange hybride, consultez les rubriques suivantes :
   
-- [Déploiements hybrides Exchange 2013]((https://aka.ms/ExchangeHybrid)). Veuillez noter que la licence de serveur hybride est uniquement requise pour les scénarios suivants : organisation Exchange 2010 avec un serveur hybride Exchange 2013 et organisation Exchange 2007 avec un serveur hybride Exchange 2010 ou Exchange 2013.
+- [Déploiements hybrides Exchange 2013](https://aka.ms/ExchangeHybrid). Veuillez noter que la licence de serveur hybride est uniquement requise pour les scénarios suivants : organisation Exchange 2010 avec un serveur hybride Exchange 2013 et organisation Exchange 2007 avec un serveur hybride Exchange 2010 ou Exchange 2013.
     
-- [Page de connexion à Office 365]((https://aka.ms/HybridKey))
+- [Page de connexion à Office 365](https://aka.ms/HybridKey)
     
 Pour en savoir plus sur l’environnement Exchange local, consultez les rubriques suivantes :
   
-- [Bibliothèque Exchange Server 2013 sur TechNet]((https://aka.ms/Ex2013TN))
+- [Bibliothèque Exchange Server 2013 sur TechNet](https://aka.ms/Ex2013TN)
     
-- [Portail Exchange Server 2013]((https://aka.ms/Exchange2013))
+- [Portail Exchange Server 2013](https://aka.ms/Exchange2013)
     
-- [Architecture Exchange Server 2013]((https://aka.ms/Ex2013SP1ArchPoster))
+- [Architecture Exchange Server 2013](https://aka.ms/Ex2013SP1ArchPoster)
     
 Pour en savoir plus sur l’environnement Exchange hébergé par un fournisseur, consultez la rubrique suivante :
   
-[Solutions et guide d'hébergement et d'architecture mutualisée Exchange Server 2013]((https://aka.ms/Ex2013Hosting))
+[Solutions et guide d'hébergement et d'architecture mutualisée Exchange Server 2013](https://aka.ms/Ex2013Hosting)
   
 ## <a name="descriptions-of-three-new-or-updated-features-in-exchange-2013"></a>Descriptions de trois fonctionnalités nouvelles ou mises à jour dans Exchange 2013
 

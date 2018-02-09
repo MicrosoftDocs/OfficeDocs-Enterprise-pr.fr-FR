@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: db117e59-389f-46f5-a5df-4eeac0040aa8
 description: "Résumé : Comprendre les scénarios et l’architecture de hybride pour Microsoft de base SaaS (Office 365) les offres en nuage."
-ms.openlocfilehash: 63126d694817f8323494e584f1f497a1a732c678
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 65b1841a155e286af8862c2fb7c37d0bfb61e1e8
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="hybrid-cloud-scenarios-for-microsoft-saas-office-365"></a>Scénarios de cloud hybride pour les services SaaS Microsoft (Office 365)
 

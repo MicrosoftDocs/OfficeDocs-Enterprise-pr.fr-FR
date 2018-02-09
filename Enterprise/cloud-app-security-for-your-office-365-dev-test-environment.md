@@ -14,11 +14,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: "Résumé : Configurer et illustrer l’Office 365 nuage App sécurité dans votre environnement de développement/test d’Office 365."
-ms.openlocfilehash: 8d398dcbf1ca5dea5ee790a64829eef55765025a
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: b13931ca21b440188563feef9236cd70e6df084b
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Sécurité des applications cloud pour votre environnement de développement/test Office 365
 

@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 9cb70c9d-9ed9-47cc-af5a-6403d87d3372
 description: "Résumé : Comprendre la conception du réseau optimisé pour les charges de travail dans Microsoft Azure IaaS."
-ms.openlocfilehash: 6f431eb2d87a4420e6e0ba7f48bfc3ef836c0cbe
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 2430b62e04392ddd4266d37797b18ae7e890c092
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="designing-networking-for-microsoft-azure-iaas"></a>Conception de réseaux pour Microsoft Azure IaaS
 
@@ -196,8 +196,7 @@ Le tableau 5 présente les méthodes de filtrage ou de contrôle du trafic entr
 |1. Points de terminaison et listes de contrôle d’accès configurés sur les services de cloud  <br/> |Classique  <br/> |
 |2. Groupes de sécurité réseau  <br/> |Resource Manager et classique  <br/> |
 |3. Équilibrage de charge connecté à Internet avec règles NAT de trafic entrant  <br/> |Responsable de ressources  <br/> |
-|4. dans la Azure, les appliances de sécurisation du réseau 
- Marketplace (non illustré)  <br/> |Resource Manager et classique  <br/> |
+|4. appliances de sécurisation de réseau sur le marché d’Azure (non illustré)  <br/> |Resource Manager et classique  <br/> |
    
  **Tableau 5 : Les méthodes de connexion aux ordinateurs virtuels et leurs modèles de déploiement d’Azure correspondant**
   
@@ -379,10 +378,8 @@ Le tableau 7 présente les étapes de définition de l’espace d’adressage d
 |**Étape**|**Résultats**|
 |:-----|:-----|
 |1. Répertorier les préfixes qui ne correspondent pas à l’espace racine pour l’espace d’adressage du réseau virtuel.  <br/> |172.16.0.0/12 et 192.168.0.0/16  <br/> |
-|2. liste de préfixes sans chevauchement de variables octets jusqu'à mais ne pas y compris les derniers utilisés 
- octet dans l’espace d’adressage VNet.  <br/> |10.0.0.0/16, 10.1.0.0/16... 10.99.0.0/16, 10.101.0.0/16... 10.254.0.0/16, 10.255.0.0/16 (255 préfixes, en ignorant les 10.100.0.0/16)  <br/> |
-|3. liste la sans chevauchement de préfixes dans le 
- utilisé en dernier octet de l’espace d’adressage VNet.  <br/> | 10.100.0.0/24, 10.100.1.0/24... 10.100.99.0/24, 10.100.101.0/24... 10.100.254.0/24, 10.100.0.255.0/24 (255 préfixes, en ignorant les 10.100.100.0/24)  <br/> |
+|2. liste de préfixes pour la variables octets jusqu'à mais ne pas y compris le dernier octet utilisé dans l’espace d’adressage VNet sans chevauchement.  <br/> |10.0.0.0/16, 10.1.0.0/16... 10.99.0.0/16, 10.101.0.0/16... 10.254.0.0/16, 10.255.0.0/16 (255 préfixes, en ignorant les 10.100.0.0/16)  <br/> |
+|3. liste des préfixes non superposées dans le dernier octet utilisé de l’espace d’adressage VNet.  <br/> |10.100.0.0/24, 10.100.1.0/24... 10.100.99.0/24, 10.100.101.0/24... 10.100.254.0/24, 10.100.0.255.0/24 (255 préfixes, en ignorant les 10.100.100.0/24)  <br/> |
    
  **Tableau 7 : Espace exemple Local d’adresse réseau**
   
@@ -413,7 +410,7 @@ La figure 18 montre un VNet de coexistence avec un itinéraire défini par l’u
 ## <a name="sharepoint-server-2016-farm-in-azure"></a>Batterie SharePoint Server 2016 dans Azure
 <a name="cross_prem"> </a>
 
-Une batterie SharePoint Server 2016 hautement disponible à plusieurs niveaux est un exemple de charge informatique intranet hébergée dans Azure IaaS, comme illustré dans la figure 19.
+Un exemple d’un intranet hébergé dans Azure IaaS de la charge de travail informatique est une batterie de serveurs SharePoint Server 2016 hautement disponible, à plusieurs niveaux.
   
 **Figure 19 : Une batterie haute disponibilité intranet SharePoint Server 2016 dans Azure IaaS**
 

@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 78a407e4-2d8b-4561-b308-b22c95f60eeb
 description: "Résumé : Comprendre comment Contoso tire parti des IDaaS distribué géographiquement et fournit l’authentification redondante pour ses utilisateurs."
-ms.openlocfilehash: d9aee05d36061433398cd8ce913a03bce65cc103
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 7a6448969a90f1f646f70fee4c67a6da992dd2bc
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Identité de Contoso Corporation
 

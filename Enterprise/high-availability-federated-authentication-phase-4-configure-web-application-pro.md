@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: "Résumé : Configurer les serveurs proxy d’applications web pour l’authentification fédérée de haute disponibilité pour Office 365 dans Microsoft Azure."
-ms.openlocfilehash: 9e7c07a659993437776a7c26e5d02498b1680699
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 3465281c6ba27c52cc7a991e400fb4f4a892b244
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>Authentification fédérée haute disponibilité, phase 4 : Configurer les proxys d’application web
 
@@ -63,13 +63,13 @@ Vous devez déterminer le nom DNS pour identifier le nom de votre service de fé
   
 Une fois que le nom de domaine complet du service de fédération a été obtenu, créez un enregistrement DNS de domaine public A pour le nom de domaine complet pour le résoudre en adresse IP publique de l’équilibreur de charge Azure connecté à Internet.
   
-|**Nom**|**Type**|**DURÉE DE VIE**|**Valeur**|
+|**Name**|**Type**|**DURÉE DE VIE**|**Valeur**|
 |:-----|:-----|:-----|:-----|
 |Nom de domaine complet du service de fédération  <br/> |A  <br/> |3600  <br/> |adresse IP publique de l’équilibreur de charge pour Azure Internet (affiché par la commande **Write-Host** , dans la section précédente) <br/> |
    
 Voici un exemple :
   
-|**Nom**|**Type**|**DURÉE DE VIE**|**Valeur**|
+|**Name**|**Type**|**DURÉE DE VIE**|**Valeur**|
 |:-----|:-----|:-----|:-----|
 |FS.contoso.com  <br/> |A  <br/> |3600  <br/> |131.107.249.117  <br/> |
    

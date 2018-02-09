@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 84348d0c-d9d1-4a98-9b99-8433f9b70e45
 description: "Résumé : Obtenir les détails sur l’ensemble du nuage des blocs de construction de stockage que vous pouvez utiliser pour créer votre propre service de stockage ou de la solution."
-ms.openlocfilehash: eabf38e0ccef3335b2d198a33f5622d0d449589a
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: be7ea3e7526115f1a983ec89f2afeb5d130daee1
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="build-from-the-ground-up"></a>Créer de A à Z
 

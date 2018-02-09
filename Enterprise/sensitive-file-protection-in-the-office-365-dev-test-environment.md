@@ -14,11 +14,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: "Résumé : Configuration et montrez comment Information Rights Management d’Office 365 protège vos fichiers sensibles, même lorsqu’elles sont validées dans la collection de sites SharePoint Online incorrecte."
-ms.openlocfilehash: eb456c86b118556abde6a887fe8b9ab68300740b
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 388eb2a6288fc72771b6a554d1c9de78febe8a4e
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Protection des fichiers sensibles dans l’environnement de développement/test Office 365
 

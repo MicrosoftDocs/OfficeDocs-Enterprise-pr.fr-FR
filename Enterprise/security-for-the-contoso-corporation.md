@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 8f6f9894-5394-4110-8b0a-b8765028c10b
 description: "Résumé : Comprendre comment Contoso mappés aux impératifs de sécurité à des fonctions dans les offres en nuage de Microsoft et de déterminer un chemin d’accès vers le cloud d’évaluation de la sécurité."
-ms.openlocfilehash: 4d38f58595f0043e1a02106b6428b92dabad2e17
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: f8df7f6437159aefe88851a22cc8da8b19c3838c
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="security-for-the-contoso-corporation"></a>Sécurité de Contoso Corporation
 

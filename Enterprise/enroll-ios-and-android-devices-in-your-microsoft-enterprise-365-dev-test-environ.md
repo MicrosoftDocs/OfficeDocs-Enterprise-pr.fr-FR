@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: "Résumé : Utilisez ce Guide de laboratoire de Test pour inscrire des périphériques de votre environnement de développement/test Microsoft 365 et de les gérer à distance."
-ms.openlocfilehash: 71d04b0d2a59683ff09ad4256ed8fc82e89e876a
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 77b5074b083656fdfa2cd460510231dae0689d10
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-devtest-environment"></a>Inscrire les périphériques iOS ou Android dans votre environnement de développement/test Microsoft Enterprise 365
 

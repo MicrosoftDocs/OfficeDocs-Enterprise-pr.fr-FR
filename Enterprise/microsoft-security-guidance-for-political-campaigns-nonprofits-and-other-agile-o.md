@@ -6,16 +6,17 @@ manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: overview
+ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.custom: Strat_O365_Enterprise
 ms.assetid: 10d1004b-42b6-4e2b-aaa2-18ddd9118f64
 description: "Résumé : Guide de planification et d’implémentation pour se déplacent rapidement les organisations ayant un profil d’aggravation de la menace."
-ms.openlocfilehash: 7b400a1c097bb1d3906a59dfd21461df0568c76a
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 15565c313c1aeef1273ae9398b045a07ddb9c443
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations"></a>Conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d’autres organisations flexibles
 
@@ -30,8 +31,8 @@ Ce guide décrit comment implémenter un environnement de cloud sécurisé. Le G
 |||
 |:-----|:-----|
 |**Élément** <br/> |**Description** <br/> |
-|**Conseils de sécurité Microsoft pour les campagnes politiques** <br/> [![CLOU de curseur de défilement pour mini affiche la valeur.](images/d370ce28-ca40-4930-9a2c-907312aa06c8.png)          ](http://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security for political campaigns.pdf) <br/> [FICHIER PDF](http://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security for political campaigns.pdf)  \| [Visio](http://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security for political campaigns.vsdx) <br/> |Ce guide utilise une organisation gérant une campagne politique comme exemple. Vous pouvez l’utiliser comme point de départ pour n’importe quel environnement.   <br/> |
-|**Conseils de sécurité Microsoft pour les organismes sans but lucratif** <br/> [![Image du visualiseur pour le fichier téléchargeable](images/e4784889-1c69-4067-9a8f-31d31d1eceea.png)          ](http://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud Architecture_Security for Nonprofits.pdf) <br/> [FICHIER PDF](http://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud Architecture_Security for Nonprofits.pdf)  \| [Visio](http://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud Architecture_Security for Nonprofits.vsdx) <br/> |Ce guide a été légèrement révisé pour les organisations à but non lucratif. Par exemple, il répertorie les plans Office 365 pour les associations. Les consignes technique fournies sont les mêmes que dans le guide de solution de campagne politique.  <br/> |
+|**Conseils de sécurité Microsoft pour les campagnes politiques** <br/> [![CLOU de curseur de défilement pour mini affiche la valeur.](images/d370ce28-ca40-4930-9a2c-907312aa06c8.png)          ](http://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security for political campaigns.pdf) <br/> [PDF](http://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security for political campaigns.pdf) \| [Visio](http://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security for political campaigns.vsdx)   <br/> |Ce guide utilise une organisation gérant une campagne politique comme exemple. Vous pouvez l’utiliser comme point de départ pour n’importe quel environnement.   <br/> |
+|**Conseils de sécurité Microsoft pour les organismes sans but lucratif** <br/> [![Image du visualiseur pour le fichier téléchargeable](images/e4784889-1c69-4067-9a8f-31d31d1eceea.png)          ](http://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud Architecture_Security for Nonprofits.pdf) <br/> [PDF](http://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud Architecture_Security for Nonprofits.pdf) \| [Visio](http://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud Architecture_Security for Nonprofits.vsdx)   <br/> |Ce guide a été légèrement révisé pour les organisations à but non lucratif. Par exemple, il répertorie les plans Office 365 pour les associations. Les consignes technique fournies sont les mêmes que dans le guide de solution de campagne politique.  <br/> |
    
 ## <a name="test-lab-guides"></a>Guides de laboratoire de test
 

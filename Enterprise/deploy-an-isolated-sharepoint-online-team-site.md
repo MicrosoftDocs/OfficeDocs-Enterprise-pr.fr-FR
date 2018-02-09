@@ -9,14 +9,15 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Solutions
+ms.custom:
+- Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: "Résumé : Déployer un nouveau site d’équipe de SharePoint Online isolé avec ces instructions pas à pas."
-ms.openlocfilehash: 31a1f588aefccd9e2cb353af86d8aa0d598696af
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: b22f9bd6ca5562f6c9632709d8afb54cd7b8d634
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>Déploiement d’un site d’équipe SharePoint Online isolé
 

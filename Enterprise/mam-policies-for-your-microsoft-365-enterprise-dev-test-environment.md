@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: "Résumé : Utilisez ce Guide de laboratoire de Test pour ajouter des stratégies de EMS mobile application management (MAM) à votre environnement de développement/test Microsoft 365."
-ms.openlocfilehash: cd5a9801ec7cc5c8fe287fa65015fcb02dd542bf
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 9eb636fe14b2fbd1fe45fb7dac528a0d4e31be36
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="mam-policies-for-your-microsoft-365-enterprise-devtest-environment"></a>Stratégies MAM pour votre environnement de développement/test Microsoft 365 Enterprise
 

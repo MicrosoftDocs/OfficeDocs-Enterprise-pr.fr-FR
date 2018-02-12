@@ -3,7 +3,7 @@ title: "Récupération d’urgence SharePoint Server 2013 dans Microsoft Azur
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 2/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: "Résumé : À l'aide d'Azure, vous pouvez créer un environnement de récupération d'urgence pour votre batterie de serveurs SharePoint locale. Cet article décrit comment concevoir et implémenter cette solution."
-ms.openlocfilehash: e949d2cc88e576993a357007c2a600b55c259009
-ms.sourcegitcommit: b3d44b30b6e60df85ea9b404692db64ba54a16c7
+ms.openlocfilehash: 4c1a5d92445dfa89dce4c87216922282d29f075c
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Récupération d’urgence SharePoint Server 2013 dans Microsoft Azure
 
@@ -89,7 +89,7 @@ Il est important d'évaluer les objectifs de temps de récupération (RTO) et le
   
 Les instructions figurant dans cet article décrivent comment mettre en œuvre un environnement de secours semi-automatique. Vous pouvez également l’adapter à un environnement de reprise progressive malgré les procédures supplémentaires nécessaires pour la prise en charge de ce type d’environnement. Cet article ne décrit pas l’implémentation d’un environnement de secours automatique.
   
-Pour plus d'informations sur les solutions de récupération d'urgence, voir [Concepts relatifs à la haute disponibilité et à la récupération d'urgence dans SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkID=393114) et[Choisir une stratégie de récupération d'urgence pour SharePoint 2013](https://go.microsoft.com/fwlink/p/?linkid=203228).
+Pour plus d’informations sur les solutions de récupération d’urgence, voir [High availability and disaster recovery concepts in SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkID=393114) et [Choose a disaster recovery strategy for SharePoint 2013](https://go.microsoft.com/fwlink/p/?linkid=203228).
   
 ## <a name="solution-description"></a>Description de la solution
 <a name="SOL"> </a>
@@ -106,7 +106,7 @@ Le schéma suivant illustre ces trois éléments.
   
 **Schéma : Éléments d'une solution de secours semi-automatique dans Azure**
 
-![Éléments d’une solution de secours semi-automatique SharePoint dans Azure](images/AZarch_AZWarmStndby.gif)
+![Éléments d’une solution de secours semi-automatique SharePoint dans Azure](images/AZarch_AZWarmStndby.png)
   
 La copie des journaux de transaction SQL Server avec la réplication du système de fichiers DFS permet de copier les sauvegardes de base de données et les journaux de transaction vers la batterie de serveurs de récupération dans Azure : 
   
@@ -181,7 +181,7 @@ Le schéma suivant illustre une solution de récupération d'urgence à partir d
   
 **Schéma : Topologie et principaux éléments d'une batterie de production et d'une batterie de récupération de secours semi-automatique.**
 
-![Présente la topologie et les principaux éléments d’une batterie de production SharePoint et d’une batterie de récupération de secours semi-automatique.](images/AZarchWarmStndby.gif)
+![Topologie d’une batterie de serveurs SharePoint et d’une batterie de serveurs de récupération de secours semi-automatique](images/AZarch_AZWarmStndby.png)
   
 Dans ce schéma :
   

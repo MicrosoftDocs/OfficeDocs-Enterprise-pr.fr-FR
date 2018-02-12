@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 83e2859a-c673-47c4-880a-01cdfdadb93e
 description: "Résumé : Comprendre comment l'adoption cloud nécessite une nouvelle approche des investissements relatifs à l'infrastructure réseau."
-ms.openlocfilehash: 18b4e5e10094a43f0d2b10cd0f01684f2352a0a8
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 1fe3b2cbacb0fff31de1c368fa36650adc7d570c
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="evolving-your-network-for-cloud-connectivity"></a>Évolution de votre réseau pour la connectivité au cloud
 
@@ -81,15 +81,15 @@ L'étendue des investissements concernant le réseau dépend de la catégorie du
 |Concevoir et implémenter l'équilibrage de charge pour les charges de travail informatiques internes et accessibles sur Internet  <br/> |||S’applique  <br/> |
 |Résoudre les problèmes de connectivité et de débit des machines virtuelles  <br/> |||S’applique  <br/> |
    
+## <a name="next-step"></a>Étape suivante
+
+[Éléments communs de la connectivité au cloud Microsoft](common-elements-of-microsoft-cloud-connectivity.md)
+
 ## <a name="see-also"></a>Voir aussi
 
-[Mise en réseau cloud Microsoft pour les architectes d'entreprise](microsoft-cloud-networking-for-enterprise-architects.md)
+[Mise en réseau cloud Microsoft pour les architectes d’entreprise](microsoft-cloud-networking-for-enterprise-architects.md)
   
-[ExpressRoute pour la connectivité au cloud de Microsoft](expressroute-for-microsoft-cloud-connectivity.md)
-  
-[Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
-
-[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Ressources relatives à l’architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 
 
 

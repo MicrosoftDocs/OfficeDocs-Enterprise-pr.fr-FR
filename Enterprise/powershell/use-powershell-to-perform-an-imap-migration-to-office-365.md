@@ -1,8 +1,8 @@
 ---
 title: "Utilisation de PowerShell pour effectuer une migration IMAP vers Office 365"
-ms.author: sirkkuw
-author: sirkkuw
-manager: scotv
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: laurawi
 ms.date: 12/15/2017
 ms.audience: Admin
 ms.topic: article
@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: 
 ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
 description: "Résumé : Découvrez comment utiliser Windows PowerShell pour effectuer une migration IMAP vers Office 365."
-ms.openlocfilehash: 2c4d54f02a885e7ee5e18bed715c30e9090610df
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 50f97d858b7e7f00ac3cb1e0a239928badca215a
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="use-powershell-to-perform-an-imap-migration-to-office-365"></a>Utilisation de PowerShell pour effectuer une migration IMAP vers Office 365
 
@@ -109,7 +109,7 @@ paulc@contoso.edu,contoso-students/mailadmin/paul.cannon,P@ssw0rd
 
  **Dovecot**
   
-Pour les serveurs IMAP qui prennent en charge Simple SASL Authentication and Security Layer (SASL), comme un serveur IMAP Dovecot, utilisez le format **User_UserName*Admin_UserName**, où l'astérisque ( * ) est un caractère de séparation configurable. Supposons que vous migrez les mêmes boîtes aux lettres utilisateur à partir d'un serveur IMAP Dovecot à l'aide des informations d'identification d'administrateur **mailadmin** et **P@ssw0rd**. Voici à quoi ressemblerait votre fichier CSV :
+Pour les serveurs IMAP qui prennent en charge Simple Authentication and Security Layer (SASL), comme un serveur IMAP Dovecot, utilisez le format **User_UserName*Admin_UserNam**, où l’astérisque (*) est un caractère de séparation configurable. Supposons que vous migrez les mêmes boîtes aux lettres utilisateur à partir d’un serveur IMAP Dovecot à l’aide des informations d’identification d’administrateur **mailadmin** et **P@ssw0rd**. Voici à quoi ressemblerait votre fichier CSV :
   
 ```
 EmailAddress,UserName,Password

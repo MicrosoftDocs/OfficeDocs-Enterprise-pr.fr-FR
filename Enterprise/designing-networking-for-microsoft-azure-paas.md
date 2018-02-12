@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 19568184-705b-493b-b713-b484367adba9
 description: "Résumé : Comprenez comment optimiser votre réseau pour accéder à Microsoft Azure PaaS."
-ms.openlocfilehash: 8ea344b5c18f9224b1a939a05c6e5a4eda2eeec5
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 151701223c6cf21890fcd961c5dc3acda8de4915
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="designing-networking-for-microsoft-azure-paas"></a>Conception de réseau pour Microsoft Azure PaaS
 
@@ -26,8 +26,6 @@ L’optimisation du réseau pour les applications Azure PaaS requiert une bande 
   
 ## <a name="planning-steps-for-hosting-organization-paas-applications-in-azure"></a>Étapes de planification pour l’hébergement des applications PaaS d’entreprise dans Azure
 
-Insérez le corps de la section ici.
-  
 1. Consultez les **étapes de préparation de votre réseau pour services de cloud Microsoft** fournies dans la section [Éléments communs de la connectivité au cloud Microsoft](common-elements-of-microsoft-cloud-connectivity.md).
     
 2. Optimisez votre bande passante Internet en suivant les étapes 2 à 4 de la **procédure de préparation de votre réseau pour les services Microsoft SaaS** fournie dans [Conception de réseaux pour Microsoft SaaS](designing-networking-for-microsoft-saas.md).
@@ -70,7 +68,7 @@ Application Gateway prend actuellement en charge la remise d’application de co
     
 - Déchargement SSL
     
-Pour plus d'informations, voir [Vue d'ensemble d'Application Gateway]((https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction)).
+Pour plus d'informations, voir [Vue d'ensemble d'Application Gateway](https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction).
   
 ## <a name="azure-traffic-manager"></a>Azure Traffic Manager
 
@@ -96,15 +94,19 @@ La figure 3 indique le processus simple utilisé par Traffic Manager pour achemi
     
 2. L’utilisateur lance le trafic avec l’application web régionale en Europe.
     
-Pour plus d'informations, consultez la rubrique [Vue d'ensemble de Traffic Manager]((https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview))
-  
+Pour plus d’informations, consultez la rubrique [Vue d’ensemble de Traffic Manager](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview)
+
+## <a name="next-step"></a>Étape suivante
+
+[Conception de réseaux pour Microsoft Azure IaaS](designing-networking-for-microsoft-azure-iaas.md)
+ 
 ## <a name="see-also"></a>Voir aussi
 
-[Mise en réseau cloud Microsoft pour les architectes d'entreprise](microsoft-cloud-networking-for-enterprise-architects.md)
+[Mise en réseau cloud Microsoft pour les architectes d’entreprise](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

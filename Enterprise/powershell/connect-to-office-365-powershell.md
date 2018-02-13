@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: "Résumé : Connexion à votre organisation d’Office 365 à l’aide d’Office 365 PowerShell pour effectuer les tâches de centre d’administration Office 365 à partir de la ligne de commande."
-ms.openlocfilehash: 9aa3fe8bc0f7debd01e3a3e5f91ca8403e696f56
-ms.sourcegitcommit: 5045bd498a9a531f34ac9db742e5cd9f15126bcc
+ms.openlocfilehash: 2f51c68acf55239c7d47f9b617a8a72965ead79d
+ms.sourcegitcommit: 7ed9108846227ca883cb5113543a165704d9bbc8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="connect-to-office-365-powershell"></a>Se connecter à Office 365 PowerShell
 
@@ -32,7 +32,7 @@ Notez que ces instructions de connexion sont les mêmes que ceux de la rubrique 
 > [!TIP]
 > **Nouveau PowerShell ?** Voir une [Présentation vidéo de PowerShell](http://technet.microsoft.com/library/https://support.office.com/en-us/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx), proposée par formation de LinkedIn. 
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
 
 - Durée d’exécution estimée : 5 minutes
     
@@ -123,7 +123,7 @@ Si vous recevez des erreurs, vérifiez les conditions requises suivantes :
 ## <a name="connect-with-the-azure-active-directory-v2-powershell-module"></a>Se connecter au module Azure Active Directory V2 PowerShell
 <a name="ConnectV2"> </a>
 
-Commandes dans la Microsoft Azure Active Directory Module pour Windows PowerShell ont « AzureAD » dans leur nom de l’applet de commande.
+Commandes dans le module PowerShell de Azure Active Directory V2 ont « AzureAD » dans leur nom de l’applet de commande.
 
 Pour les procédures nécessitant les nouvelles applets de commande du [module PowerShell de Azure Active Directory V2](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory), suivez ces étapes pour installer le module et le connecter à votre abonnement à Office 365.
 

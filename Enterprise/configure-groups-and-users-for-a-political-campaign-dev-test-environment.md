@@ -6,17 +6,17 @@ manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
-ms.collection: Ent_O365
+ms.collection: Ent_O365, Strat_O365_Enterprise
 ms.service: o365-solutions
 localization_priority: None
 ms.custom: Strat_O365_Enterprise
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: "Résumé : Créer Office 365 et de mobilité d’entreprise + d’abonnements d’essai de sécurité (EMS) avec les utilisateurs et les groupes pour un environnement de développement/test de campagne politique."
-ms.openlocfilehash: adc5cdfe6d5c0c039ceb1c9068032fe2dae20114
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: d079c3acec588be865f55a864bb1d81d1e84842e
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Configuration de groupes et d’utilisateurs pour un environnement de développement/test pour une campagne politique
 
@@ -200,7 +200,7 @@ Générer les quatre types différents de sites d’équipe SharePoint Online da
   
 [Créer des sites d’équipe dans un environnement de développement/test de campagne politique](create-team-sites-in-a-political-campaign-dev-test-environment.md)
   
-[Guides de laboratoire de test d’adoption cloud](cloud-adoption-test-lab-guides-tlgs.md)
+[Guides de laboratoire de test d'adoption cloud](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.md)
 

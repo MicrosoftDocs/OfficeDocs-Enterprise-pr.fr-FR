@@ -8,17 +8,15 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
-- Strat_O365_Enterprise
-- Ent_Architecture
+ms.collection: Ent_O365, Strat_O365_Enterprise
+ms.custom: Strat_O365_Enterprise, Ent_Architecture
 ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
 description: "Résumé : Obtenir les posters de l’informatique qui décrivent les modèles architecturaux, déploiement et les options de plate-forme pour SharePoint, Exchange, Skype pour les entreprises et Lync."
-ms.openlocfilehash: d50a3eae1e5fe308d71afaef398fe97e2d37f9cb
-ms.sourcegitcommit: 38001ca323a60126fcf31667393c31322044cedc
+ms.openlocfilehash: f00106d442977478d0399b492dcf3ed05f3f273b
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/11/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>Modèles architecturaux pour SharePoint, Exchange, Skype Entreprise et Lync
 
@@ -175,7 +173,7 @@ Ces affiches informatique affichent Azure-des solutions à l’aide de SharePoin
 
 |**Élément**|**Description**|
 |:-----|:-----|
-|[![Image d'exemple de conception : sites Internet dans Microsoft Azure pour SharePoint 2013](images/MS_AZ_InternetSitesDesignSample.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41991) <br/> ![Fichier PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| ![Fichier Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548)  \| ![Affichage d’une page contenant des versions dans d’autres langues](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Plus de langues](https://www.microsoft.com/download/details.aspx?id=41991) <br/> |Utilisez cet exemple de conception comme point de départ pour votre propre site de côté Internet architecture dans Azure à l’aide de SharePoint Server 2013. Pour obtenir une version texte accessible de cette affiche, reportez-vous à la section [diagramme Accessible - exemple de conception : sites Internet de Microsoft Azure pour SharePoint 2013](accessible-diagramdesign-sample-internet-sites-in-microsoft-azure-for-sharepoint.md).<br/><br/> Pour plus d’informations, voir les articles suivants :  <br/><br/> - [Sites Internet de Microsoft Azure à l’aide de SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [Architectures de Microsoft Azure pour SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
+|[![Image d’exemple de conception : sites Internet dans Microsoft Azure pour SharePoint 2013](images/MS_AZ_InternetSitesDesignSample.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41991) <br/> ![Fichier PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| ![Fichier Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548)  \| ![Affichage d’une page contenant des versions dans d’autres langues](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Plus de langues](https://www.microsoft.com/download/details.aspx?id=41991) <br/> |Utilisez cet exemple de conception comme point de départ pour votre propre site de côté Internet architecture dans Azure à l’aide de SharePoint Server 2013. Pour obtenir une version texte accessible de cette affiche, reportez-vous à la section [diagramme Accessible - exemple de conception : sites Internet de Microsoft Azure pour SharePoint 2013](accessible-diagramdesign-sample-internet-sites-in-microsoft-azure-for-sharepoint.md).<br/><br/> Pour plus d’informations, voir les articles suivants :  <br/><br/> - [Sites Internet de Microsoft Azure à l’aide de SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [Architectures de Microsoft Azure pour SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
    
 ### <a name="sharepoint-disaster-recovery-to-microsoft-azure"></a>Récupération d’urgence SharePoint vers Microsoft Azure
 <a name="sharepoint_recovery_Azure"> </a>

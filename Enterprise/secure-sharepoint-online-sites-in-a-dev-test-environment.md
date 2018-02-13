@@ -6,17 +6,17 @@ manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
-ms.collection: Ent_O365
+ms.collection: Ent_O365, Strat_O365_Enterprise
 ms.service: o365-solutions
 localization_priority: Normal
 ms.custom: Strat_O365_Enterprise
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: "Résumé : Créer des sites d’équipe SharePoint Online publiques, privées, sensibles et hautement confidentielles dans un environnement de développement/test."
-ms.openlocfilehash: 55adc5f7cdbf197acf3ca68623139c01912c602f
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: a0448cdbce570db748f8fcae784fd6f1beefc218
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>Sécuriser les sites SharePoint Online dans un environnement de développement/test
 
@@ -535,7 +535,7 @@ Ensuite, configurez la Protection des informations Azure avec une nouvelle strat
   
 1. Connectez-vous au portail Office 365 avec un compte disposant du rôle Administrateur de sécurité ou Administrateur d’entreprise. Pour obtenir de l’aide, consultez la rubrique [Se connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
-2. Dans un onglet séparé de votre navigateur, accédez au portail Azure ([https://portal.azure.com](https://portal.azure.com)).
+2. Dans un nouvel onglet de votre navigateur, accédez au portail Azure ([https://portal.azure.com](https://portal.azure.com)).
     
 3. Si vous configurez Azure Information Protection pour la première fois, consultez ces [instructions](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time).
     
@@ -557,7 +557,7 @@ Ensuite, configurez la Protection des informations Azure avec une nouvelle strat
     
 12. Dans la section **Protection**, cliquez sur **Azure (clé cloud)**.
     
-13. Dans le panneau **Protection**, cliquez sur **+ Ajouter des autorisations** sous **Paramètres de protection**.
+13. Dans le panneau **Protection**, sous **Paramètres de protection**, cliquez sur **+ Ajouter des autorisations**.
     
 14. Dans le panneau **Ajouter des autorisations**, sous **Spécifier les utilisateurs et les groupes**, cliquez sur **+ Parcourir le répertoire**.
     

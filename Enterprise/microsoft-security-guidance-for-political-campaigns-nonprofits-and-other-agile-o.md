@@ -6,17 +6,19 @@ manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: overview
-ms.collection: Ent_O365, Strat_O365_Enterprise
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
 ms.service: o365-solutions
 localization_priority: Normal
 ms.custom: Strat_O365_Enterprise
 ms.assetid: 10d1004b-42b6-4e2b-aaa2-18ddd9118f64
 description: "Résumé : Guide de planification et d’implémentation pour se déplacent rapidement les organisations ayant un profil d’aggravation de la menace."
-ms.openlocfilehash: 30a45cfa521c73689afa7481cbe7ba9637b97617
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: b35b7a49343b21fdd8e6584e113fcbf771b4a1ef
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations"></a>Conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d’autres organisations flexibles
 

@@ -9,14 +9,18 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Office_Other, O365ITProTrain, LIL_Placement, PowerShell
+ms.custom:
+- Ent_Office_Other
+- O365ITProTrain
+- LIL_Placement
+- PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: "Explique comment utiliser Office 365 PowerShell pour afficher des informations sur les plans de licence, les services et les licences qui sont disponibles dans votre organisation d’Office 365."
-ms.openlocfilehash: 50c2d22d35cbf0d38f80515f8013e797d19ae483
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: 718b26c7afb978384918b2de8ea37d01638d3e16
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Afficher les licences et les services avec Office 365 PowerShell
 

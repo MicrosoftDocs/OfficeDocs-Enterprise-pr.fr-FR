@@ -8,23 +8,21 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Priority
-ms.collection: Ent_O365
-ms.custom:
-- Strat_O365_Enterprise
-- Ent_Architecture
+ms.collection: Ent_O365, Strat_O365_Enterprise
+ms.custom: Strat_O365_Enterprise, Ent_Architecture
 ms.assetid: c4a6d625-4938-42cc-87e1-56b7a13c63ef
 description: "Résumé : Comment une entreprise internationale fictive mais représentative adopte une infrastructure informatique incluse dans le cloud avec des offres cloud de Microsoft."
-ms.openlocfilehash: d1d17a307f7f13668897343b69dcaebbedb4a7a4
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: 6357338705a1ae8aa987981b680cbcd02560041f
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="contoso-in-the-microsoft-cloud"></a>Contoso dans le cloud de Microsoft
 
  **Résumé :** Comment une entreprise internationale fictive mais représentative adopte une infrastructure informatique incluse dans le cloud avec des offres cloud de Microsoft.
   
-Cet article vous renvoie vers plusieurs articles qui décrivent comment la société Contoso Corporation, conglomérat de fabrication international dont le siège se situe à Paris, adopte une infrastructure informatique incluse dans le cloud et a pris des décisions de conception majeures concernant la mise en réseau, l'identité et la sécurité. Il décrit également la manière dont la société met en place des scénarios d'entreprise dans le cloud afin de traiter ces problèmes professionnels. Vous pouvez également afficher ces informations sous la forme d'une affiche de 11 pages et l'imprimer au format tabloïd (également appelé format comptable, 11 x 17 ou A3).
+Cet article vous renvoie vers plusieurs articles qui décrivent comment la société Contoso Corporation, conglomérat de fabrication international dont le siège se situe à Paris, adopte une infrastructure informatique incluse dans le cloud et a pris des décisions de conception majeures concernant la mise en réseau, l’identité et la sécurité. Il décrit également la manière dont la société met en place des scénarios d’entreprise dans le cloud afin de traiter ces problèmes professionnels. Vous pouvez également afficher ces informations sous la forme d’une affiche de 11 pages et l’imprimer au format tabloïd (également appelé format comptable, 11 x 17 ou A3).
   
 [![Image miniature de l’affiche de Contoso dans Microsoft Cloud.](images/Contoso_Poster/Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54427)
   

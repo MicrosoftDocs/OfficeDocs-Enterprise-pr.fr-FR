@@ -9,16 +9,14 @@ ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-administration
 localization_priority: Normal
-ms.custom:
-- PowerShell
-- Ent_Office_Other
+ms.custom: PowerShell, Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: "Découvrez comment attribuer des licences à des comptes d’utilisateur et à désactiver des plans de service spécifiques en même temps à l’aide d’Office 365 PowerShell."
-ms.openlocfilehash: 9d97b5c4604091a62090fb07452e59b5cf5a3bb6
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: 5b39a7e92217f5f7039ae1d8980f0c271ea29bfb
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>Désactiver l’accès aux services lors de l’attribution des licences utilisateur
 
@@ -51,7 +49,7 @@ Dans l'affichage de la commande  `Get-MsolAccountSku` :
     
 - **ConsumedUnits** représente le nombre de licences que vous avez affectées à des utilisateurs de l'abonnement.
     
-Notez la valeur AccountSkuId pour votre abonnement Office 365 contenant les utilisateurs pour lesquels vous souhaitez obtenir une licence. En outre, assurez-vous qu'il y a suffisamment de licences à attribuer (soustraire **ConsumedUnits** de **ActiveUnits** ).
+Notez la valeur AccountSkuId pour votre abonnement Office 365 contenant les utilisateurs pour lesquels vous souhaitez obtenir une licence. En outre, assurez-vous qu'il y a suffisamment de licences à attribuer (soustraire **ConsumedUnits** de **ActiveUnits**).
   
 Ensuite, exécutez cette commande pour afficher les détails sur les plans de service Office 365 qui sont disponibles dans tous vos abonnements :
   

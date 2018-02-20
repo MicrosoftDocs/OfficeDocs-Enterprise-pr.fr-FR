@@ -9,17 +9,14 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- PowerShell
-- Ent_Office_Other
-- O365ITProTrain
+ms.custom: PowerShell, Ent_Office_Other, O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: "Découvrez comment utiliser Office 365 PowerShell pour créer des comptes d'utilisateurs dans Office 365."
-ms.openlocfilehash: 97830f8158f84e6978cf3f2d168aa83d9fc551e6
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 58c4f6b1d75bb8b77cbf6616b8036dd753ddc3f3
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="create-user-accounts-with-office-365-powershell"></a>Création de comptes d’utilisateurs avec Office 365 PowerShell
 
@@ -83,7 +80,7 @@ Cet exemple crée des comptes d’utilisateurs à partir du fichier nommé C:\My
   Import-Csv -Path "C:\My Documents\NewAccounts.csv" | foreach {New-MsolUser -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -UserPrincipalName $_.UserPrincipalName -UsageLocation $_.UsageLocation -LicenseAssignment $_.AccountSkuId} | Export-Csv -Path "C:\My Documents\NewAccountResults.csv"
   ```
 
-3. Passez en revue le fichier de sortie pour afficher les résultats. Aucun mot de passe n’a été spécifié, de sorte que les mots de passe aléatoires qui ont été générés sont visibles dans le fichier de sortie.
+3. Passez en revue le fichier de sortie pour afficher les résultats. Aucun mot de passe n’a été spécifié, de sorte que les mots de passe aléatoires qui ont été générés soient visibles dans le fichier de sortie.
     
 ## <a name="use-the-azure-active-directory-v2-powershell-module-to-create-individual-user-accounts"></a>Utilisation du module Azure Active Directory V2 PowerShell pour créer des comptes d’utilisateurs individuels
 
@@ -121,7 +118,7 @@ Pour plus d’informations sur les cmdlets utilisées dans ces procédures, cons
   
 - [Export-Csv](https://go.microsoft.com/fwlink/p/?LinkId=113299)
     
-- [Import-Csv]((https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.utility/import-csv))
+- [Import-Csv](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.utility/import-csv)
     
 - [New-MsolUser](https://go.microsoft.com/fwlink/p/?LinkId=691547)
     

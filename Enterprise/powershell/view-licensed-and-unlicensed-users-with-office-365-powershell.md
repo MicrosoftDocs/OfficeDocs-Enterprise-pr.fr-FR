@@ -9,17 +9,14 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- O365ITProTrain
-- Ent_Office_Other
-- PowerShell
+ms.custom: O365ITProTrain, Ent_Office_Other, PowerShell
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
 description: Explique comment utiliser Office 365 PowerShell pour afficher des comptes d'utilisateurs sous licence ou non.
-ms.openlocfilehash: fe4f75d9d8dbc85efbc71856192dbaece3e84fbc
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: e691ba7db96b34166f03ccd90d87fee0d2ee09f8
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="view-licensed-and-unlicensed-users-with-office-365-powershell"></a>Afficher les utilisateurs avec ou sans licence avec Office 365 PowerShell
 
@@ -57,7 +54,7 @@ Get-MsolUser -All | where {$_.isLicensed -eq $true}
 
 ## <a name="the-long-version-instructions-with-detailed-explanations"></a>La version longue (instructions avec des explications détaillées)
 
-Les comptes d'utilisateur Office 365 et les licences Office 365 ne requièrent pas de correspondance de 1 à 1 : il est possible que des utilisateurs Office 365 ne possèdent pas de licence Office 365 et que des licences Office 365 n'aient pas été attribuées à un utilisateur. (En fait, un compte d'utilisateur peut même avoir  *plusieurs*  licences Office 365.) Lorsque vous créez un compte d'utilisateur Office 365 (consultez l'article [utilisateurs de licence Office 365 avec Windows PowerShell]((http://technet.microsoft.com/library/0ab9fcac-e5ea-4b5b-b72c-8c92c55565ac.aspx)) pour obtenir plus d'informations), vous n'avez pas à attribuer de licence à cet utilisateur : le nouvel utilisateur disposera d'un compte valide, mais il ne sera pas en mesure de se connecter à Office 365. S'il essaie de se connecter, il verra quelque chose de semblable à ceci :
+Les comptes d'utilisateur Office 365 et les licences Office 365 ne requièrent pas de correspondance de 1 à 1 : il est possible que des utilisateurs Office 365 ne possèdent pas de licence Office 365 et que des licences Office 365 n'aient pas été attribuées à un utilisateur. (En fait, un compte d'utilisateur peut même avoir  *plusieurs*  licences Office 365.) Lorsque vous créez un compte d'utilisateur Office 365 (consultez l'article [utilisateurs de licence Office 365 avec Windows PowerShell](http://technet.microsoft.com/library/0ab9fcac-e5ea-4b5b-b72c-8c92c55565ac.aspx) pour obtenir plus d'informations), vous n'avez pas à attribuer de licence à cet utilisateur : le nouvel utilisateur disposera d'un compte valide, mais il ne sera pas en mesure de se connecter à Office 365. S'il essaie de se connecter, il verra quelque chose de semblable à ceci :
   
 ![Utilisateur sans licence Office 365 valide.](images/o365_powershell_no_license.png)
   
@@ -104,7 +101,7 @@ UserPrincipalName           DisplayName                     isLicensed
 BelindaN@litwareinc.com     Belinda Newman                  False
 ```
 
-Comme vous le voyez, nous avons un utilisateur sans licence. Que faire si nous voulions obtenir uniquement la liste des utilisateurs  *avec licence*  ? C'est légèrement plus compliqué, mais à peine :
+Comme vous le voyez, nous avons un utilisateur sans licence. Que faire si nous voulions obtenir uniquement la liste des utilisateurs *avec licence* ? C'est légèrement plus compliqué, mais à peine :
   
 ```
 Get-MsolUser | Where-Object {$_.isLicensed -eq $true}

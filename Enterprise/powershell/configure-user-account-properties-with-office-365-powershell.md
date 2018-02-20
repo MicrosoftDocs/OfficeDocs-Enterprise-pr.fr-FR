@@ -9,17 +9,14 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- O365ITProTrain
-- Ent_Office_Other
-- PowerShell
+ms.custom: O365ITProTrain, Ent_Office_Other, PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: "Résumé : Utilisez Office 365 PowerShell pour configurer les propriétés d'un ou de plusieurs comptes d'utilisateur dans votre client Office 365."
-ms.openlocfilehash: eac568d20d1b33e06c37e920f9fd31582c8bb648
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 65857511886534e18ba3e67b79ab4d74a0119568
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="configure-user-account-properties-with-office-365-powershell"></a>Configurer les propriétés des comptes d’utilisateur avec Office 365 PowerShell
 
@@ -33,13 +30,13 @@ Les procédures décrites dans cette rubrique exigent une connexion à Office 36
   
 ## <a name="change-properties-for-a-specific-user-account"></a>Modification des propriétés d’un compte d’utilisateur spécifique
 
-Pour configurer les propriétés d'un compte d'utilisateur spécifique, vous utilisez la cmdlet [Set-MsolUser]((https://msdn.microsoft.com/library/azure/dn194136.aspx)) et spécifiez les propriétés à définir ou modifier. Cet exemple de commande remplace l'emplacement d'utilisation de Belinda Newman par France :
+Pour configurer les propriétés d'un compte d'utilisateur spécifique, vous utilisez la cmdlet [Set-MsolUser](https://msdn.microsoft.com/library/azure/dn194136.aspx) et spécifiez les propriétés à définir ou modifier. Cet exemple de commande remplace l'emplacement d'utilisation de Belinda Newman par France :
   
 ```
 Set-MsolUser -UserPrincipalName "BelindaN@litwareinc.onmicosoft.com" -UsageLocation "FR"
 ```
 
-Vous identifiez le compte avec le paramètre **-UserPrincipalName** et définissez ou modifiez des propriétés spécifiques à l'aide de paramètres supplémentaires. Voici la liste des principaux paramètres.
+Identifiez le compte avec le paramètre **-UserPrincipalName** et définissez ou modifiez des propriétés spécifiques à l'aide de paramètres supplémentaires. Voici la liste des principaux paramètres.
   
 - -City "\<nom de la ville>"
     
@@ -75,7 +72,7 @@ Vous identifiez le compte avec le paramètre **-UserPrincipalName** et définiss
     
     Voici le code de la région ou du pays à deux lettres ISO 3166-1 alpha-2 (A2).
     
-Pour obtenir plus de paramètres, voir [Set-MsolUser]((https://msdn.microsoft.com/library/azure/dn194136.aspx)).
+Pour obtenir plus de paramètres, voir [Set-MsolUser](https://msdn.microsoft.com/library/azure/dn194136.aspx).
   
 Pour afficher les noms d’utilisateur principaux de tous vos utilisateurs, exécutez la commande suivante.
   
@@ -123,7 +120,7 @@ Pour modifier les propriétés pour tous les utilisateurs, vous pouvez utiliser 
 Get-MsolUser | Set-MsolUser -UsageLocation "FR"
 ```
 
-Cette commande demande à Office 365 PowerShell d'effectuer les opérations suivantes :
+Cette commande demande à PowerShell Office 365 d’effectuer les opérations suivantes :
   
 - Obtenir toutes les informations sur les comptes utilisateur ( **Get-MsolUser** ) et les envoyer à la commande suivante ( **|** ).
     
@@ -137,7 +134,7 @@ Pour modifier les propriétés d'un ensemble spécifique de comptes d'utilisateu
 Get-MsolUser | Where-Object {$_.Department -eq "Accounting"} | Set-MsolUser -UsageLocation "FR"
 ```
 
-Cette commande demande à Office 365 PowerShell d'effectuer les opérations suivantes :
+Cette commande demande à PowerShell Office 365 d’effectuer les opérations suivantes :
   
 - Obtenir toutes les informations sur les comptes utilisateur ( **Get-MsolUser** ) et les envoyer à la commande suivante ( **|** ).
     
@@ -159,7 +156,7 @@ Cet exemple de commande remplace l’emplacement d’utilisation de Belinda Newm
 Set-AzureADUser -ObjectID "BelindaN@litwareinc.onmicosoft.com" -UsageLocation "FR"
 ```
 
-Vous identifiez le compte avec le paramètre **-ObjectID** et définissez ou modifiez des propriétés spécifiques à l'aide de paramètres supplémentaires. Voici la liste des principaux paramètres.
+Identifiez le compte avec le paramètre **-ObjectID** et définissez ou modifiez des propriétés spécifiques à l'aide de paramètres supplémentaires. Voici la liste des principaux paramètres.
   
 - -Department "\<nom du service>"
     

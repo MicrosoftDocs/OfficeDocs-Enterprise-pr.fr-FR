@@ -9,14 +9,17 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: O365ITProTrain, Ent_Office_Other, PowerShell
+ms.custom:
+- O365ITProTrain
+- Ent_Office_Other
+- PowerShell
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
 description: Explique comment utiliser Office 365 PowerShell pour afficher des comptes d'utilisateurs sous licence ou non.
-ms.openlocfilehash: e691ba7db96b34166f03ccd90d87fee0d2ee09f8
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: b26c98c1c294e2f1369d4368d0b1415702580a83
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="view-licensed-and-unlicensed-users-with-office-365-powershell"></a>Afficher les utilisateurs avec ou sans licence avec Office 365 PowerShell
 
@@ -101,7 +104,7 @@ UserPrincipalName           DisplayName                     isLicensed
 BelindaN@litwareinc.com     Belinda Newman                  False
 ```
 
-Comme vous le voyez, nous avons un utilisateur sans licence. Que faire si nous voulions obtenir uniquement la liste des utilisateurs *avec licence* ? C'est légèrement plus compliqué, mais à peine :
+Comme vous le voyez, nous avons un utilisateur sans licence. Que faire si nous voulions obtenir uniquement la liste des utilisateurs  *avec licence*  ? C'est légèrement plus compliqué, mais à peine :
   
 ```
 Get-MsolUser | Where-Object {$_.isLicensed -eq $true}

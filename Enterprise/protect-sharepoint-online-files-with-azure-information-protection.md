@@ -8,21 +8,25 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365, Strat_O365_Enterprise
-ms.custom: Strat_O365_Enterprise, Ent_Solutions
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom:
+- Strat_O365_Enterprise
+- Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: "Résumé : Découvrez comment appliquer la protection Azure Information Protection pour protéger les fichiers d’un site d’équipe SharePoint Online hautement confidentiel."
-ms.openlocfilehash: f1a063f07b6e7488cf7512472631d0d2cae09733
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: 0b83b3d17a9b61eac359338389051f7354fb6af4
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="protect-sharepoint-online-files-with-azure-information-protection"></a>Protéger les fichiers SharePoint Online avec Azure Information Protection
 
  **Résumé :** Découvrez comment appliquer la protection Azure Information Protection pour protéger les fichiers d’un site d’équipe SharePoint Online hautement confidentiel.
   
-Suivez les étapes décrites dans cet article pour configurer Azure Information Protection pour assurer le chiffrement et configurer les autorisations des fichiers d’un site d’équipe SharePoint Online hautement confidentiel. La protection du chiffrement et des autorisations accompagne un fichier même lorsqu’il est téléchargé à partir du site. Pour en savoir plus sur les sites d’équipe SharePoint Online hautement confidentiels, consultez la rubrique [Sécuriser des sites et des fichiers SharePoint Online](secure-sharepoint-online-sites-and-files.md).
+Suivez les étapes décrites dans cet article pour configurer Azure Information Protection pour assurer le chiffrement et configurer les autorisations des fichiers d’un site d’équipe SharePoint Online hautement confidentiel. La protection du chiffrement et des autorisations accompagne un fichier même lorsqu’il est téléchargé à partir du site. Pour en savoir plus sur les sites d’équipe SharePoint Online hautement confidentiels, consultez la rubrique [Secure SharePoint Online sites and files](secure-sharepoint-online-sites-and-files.md).
   
 > [!NOTE]
 > Lorsque le chiffrement Azure Information Protection est appliqué aux fichiers stockés dans Office 365, le service ne peut pas traiter le contenu de ces fichiers. La co-création, eDiscovery, la recherche, Delve et d’autres fonctionnalités de collaboration ne fonctionnent pas. Les stratégies de protection contre la perte de données peuvent uniquement fonctionner avec les métadonnées (y compris les étiquettes Office 365), mais pas le contenu de ces fichiers (par exemple, des numéros de cartes de crédit au sein des fichiers). 

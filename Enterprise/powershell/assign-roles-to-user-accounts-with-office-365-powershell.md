@@ -9,14 +9,17 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: O365ITProTrain, PowerShell, Ent_Office_Other
+ms.custom:
+- O365ITProTrain
+- PowerShell
+- Ent_Office_Other
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: "Résumé : Utilisez Office 365 PowerShell et la cmdlet Add-MsolRoleMember pour attribuer des rôles aux comptes d'utilisateur."
-ms.openlocfilehash: 68e8be24f1581aa3430bca95206ecc1b2512f09a
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: 97ecf29e10d14843322f3062ef16da14f16f7a2a
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>Attribuer des rôles à des comptes d’utilisateur avec Office 365 PowerShell
 
@@ -80,7 +83,7 @@ Déterminez les éléments suivants :
   
 - Les comptes d’utilisateur que vous souhaitez configurer.
     
-    Pour spécifier le compte d'utilisateur, vous devez déterminer son nom d'affichage. Pour obtenir une liste de comptes, utilisez cette commande :
+    Pour spécifier le compte d'utilisateur, vous devez déterminer son nom d'affichage. Pour obtenir une liste de comptes, utilisez cette commande :
     
   ```
   Get-MsolUser -All | Sort DisplayName | Select DisplayName | More
@@ -102,7 +105,7 @@ Déterminez les éléments suivants :
   Get-MsolRole | Sort Name | Select Name,Description
   ```
 
-Ensuite, créez un fichier texte de valeurs séparées par des virgules (CSV) qui contient les champs DisplayName et rôle Name. Voici un exemple :
+Ensuite, créez un fichier texte de valeurs séparées par des virgules (CSV) qui contient les champs DisplayName et role Name. Voici un exemple :
   
 ```
 DisplayName,RoleName

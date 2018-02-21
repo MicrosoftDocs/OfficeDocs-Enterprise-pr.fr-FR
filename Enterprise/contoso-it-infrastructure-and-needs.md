@@ -9,16 +9,14 @@ ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 5d6a58b8-bec3-4629-9737-8733c7b7ec92
 description: "Résumé : Comprendre la structure de base de l'infrastructure informatique locale de Contoso et les besoins pouvant être satisfaits par les offres cloud de Microsoft."
-ms.openlocfilehash: 98ead7ffa3164c3cd57ec50def836b690881ba63
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: b8282c4bd04448266bc68e65f95aaaff0a7a5db8
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="contosos-it-infrastructure-and-needs"></a>Infrastructure et besoins informatiques de Contoso
 

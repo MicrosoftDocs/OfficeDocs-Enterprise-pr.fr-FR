@@ -3,7 +3,7 @@ title: "Bloquer des comptes d’utilisateurs avec Office 365 PowerShell"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 01/10/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -11,15 +11,14 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - Ent_Office_Other
-- DecEntMigration
 - PowerShell
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
 description: "Explique comment utiliser Office 365 PowerShell pour bloquer et débloquer l’accès aux comptes d’Office 365."
-ms.openlocfilehash: f22656426e7aa3adf764a3f90adea84cf57a5e89
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 34d144c982210ddc9d557b6094f71706f8edbb7f
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="block-user-accounts-with-office-365-powershell"></a>Bloquer des comptes d’utilisateurs avec Office 365 PowerShell
 
@@ -77,12 +76,12 @@ Dans les commandes suivantes, l’exemple de fichier texte est C:\My Documents\A
 Pour bloquer l’accès aux comptes indiqués dans le fichier texte, exécutez la commande suivante :
     
   ```
-  Get-Content "C:\My Documents\Accounts.txt" | Set-MsolUser -UserPrincipalName $_.UserPrincipalName -BlockCredential $true
+  Get-Content Accounts.txt | ForEach { Set-MsolUser -UserPrincipalName $_ -BlockCredential $true }
   ```
 Pour débloquer les comptes indiqués dans le fichier texte, exécutez la commande suivante :
     
   ```
-  Get-Content "C:\My Documents\Accounts.txt" | Set-MsolUser -UserPrincipalName $_.UserPrincipalName -BlockCredential $false
+  Get-Content Accounts.txt | ForEach { Set-MsolUser -UserPrincipalName $_ -BlockCredential $false }
   ```
 
 ## <a name="use-the-azure-active-directory-v2-powershell-module-to-block-access-to-user-accounts"></a>Utiliser le module Azure Active Directory V2 PowerShell pour bloquer l’accès à des comptes d’utilisateurs
@@ -152,13 +151,13 @@ Dans les commandes suivantes, l’exemple de fichier texte est C:\My Documents\A
 Pour bloquer l’accès aux comptes indiqués dans le fichier texte, exécutez la commande suivante :
     
 ```
-Get-Content "C:\My Documents\Accounts.txt" | Set-AzureADUSer -ObjectID $_.ObjectID -AccountEnabled $true
+Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-AzureADUSer -ObjectID $_ -AccountEnabled $false }
 ```
 
 Pour débloquer les comptes indiqués dans le fichier texte, exécutez la commande suivante :
     
 ```
-Get-Content "C:\My Documents\Accounts.txt" | Set-AzureADUSer -ObjectID $_.ObjectID -AccountEnabled $false
+Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-AzureADUSer -ObjectID $_ -AccountEnabled $true }
 ```
 
 ## <a name="see-also"></a>Voir aussi
@@ -168,18 +167,18 @@ Consultez les rubriques supplémentaires suivantes sur la gestion des utilisateu
   
 - [Création de comptes d'utilisateurs avec Office 365 PowerShell](create-user-accounts-with-office-365-powershell.md)
     
-- [Suppression et restauration de comptes d'utilisateurs avec Office 365 PowerShell](delete-and-restore-user-accounts-with-office-365-powershell.md)
+- [Supprimer et restaurer des comptes d’utilisateurs avec Office 365 PowerShell](delete-and-restore-user-accounts-with-office-365-powershell.md)
     
 - [Attribuer des licences à des comptes d'utilisateurs avec Office 365 PowerShell](assign-licenses-to-user-accounts-with-office-365-powershell.md)
     
 - [Supprimer des licences à des comptes d'utilisateurs avec Office 365 PowerShell](remove-licenses-from-user-accounts-with-office-365-powershell.md)
     
-Pour plus d'informations sur les cmdlets utilisées dans ces procédures, consultez les rubriques suivantes :
+Pour plus d’informations sur les cmdlets utilisées dans ces procédures, consultez les rubriques suivantes :
   
 - [Get-Content.](https://go.microsoft.com/fwlink/p/?LinkId=113310)
     
 - [Set-MsolUser](https://go.microsoft.com/fwlink/p/?LinkId=691644)
     
-- [Nouvelle-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/new-azureaduser?view=azureadps-2.0)
+- [New-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/new-azureaduser?view=azureadps-2.0)
     
 

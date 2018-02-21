@@ -10,18 +10,17 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection:
 - Ent_O365
-- Ent_O365_Visuals
+- Strat_O365_Enterprise
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: "Résumé : Comprendre les relations entre les organisations, les abonnements, licences, comptes d’utilisateurs et locataires sur les offres en nuage de Microsoft."
-ms.openlocfilehash: 0c416efe1bfff6a3e6c979af165df8eb951b879c
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: a1bcc040d046e4e5674f16432aeffb0a34b9031b
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Abonnements, licences, les comptes et les locataires pour les offres en nuage de Microsoft
 
@@ -33,7 +32,7 @@ Microsoft fournit une hiérarchie des organisations, des abonnements, des licenc
     
     Consultez les [plans d’activités et de tarification](https://products.office.com/business/compare-office-365-for-business-plans) pour plus d’informations.
     
-- Microsoft Azure
+- Microsoft Azure
     
     Pour plus d’informations, consultez [tarification d’Azure](https://azure.microsoft.com/pricing/) .
     
@@ -169,7 +168,7 @@ Pour ajouter un abonnement Azure disposant de la même organisation et du même 
     
 Si vous souhaitez accéder les clients AD Azure Office 365 de votre abonnement Azure acheté séparément les abonnements Azure et Office 365, reportez-vous aux instructions dans [associer un client Office 365 avec un abonnement Azure](https://channel9.msdn.com/Series/Microsoft-Azure-Tutorials/Associate-an-Office-365-tenant-with-an-Azure-subscription).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Voir aussi
 
 [Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
   

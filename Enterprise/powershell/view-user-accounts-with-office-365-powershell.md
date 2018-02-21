@@ -12,16 +12,14 @@ ms.collection: Ent_O365
 ms.custom:
 - LIL_Placement
 - PowerShell
-- apr17entnews
 - Ent_Office_Other
-- DecEntMigration
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: "Résumé : Permet d’afficher, de liste ou afficher vos comptes d’utilisateurs de différentes manières avec Office 365 PowerShell."
-ms.openlocfilehash: b27f9045d26d4dabd3ada70766491f722d822a91
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: e9ffa439c1840cbbbd8a47c2835d9427330804be
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="view-user-accounts-with-office-365-powershell"></a>Afficher des comptes d’utilisateur avec Office 365 PowerShell
 
@@ -77,9 +75,9 @@ Pour être plus sélectif sur la liste des comptes à afficher, vous pouvez util
 Get-MsolUser | Where-Object {$_.UsageLocation -eq $Null}
 ```
 
-Cette commande demande à Office 365 PowerShell d'effectuer les opérations suivantes :
+Cette commande demande à PowerShell Office 365 d’effectuer les opérations suivantes :
   
-- Obtenir toutes les informations sur les comptes d’utilisateurs ( **Get-MsolUser** ) et l’envoyer à la commande suivante ( **|** ).
+- Obtenir toutes les informations sur les comptes utilisateur ( **Get-MsolUser** ) et les envoyer à la commande suivante ( **|** ).
     
 - Rechercher tous les comptes d’utilisateurs qui ont un emplacement d’utilisation non spécifiée ( **Where-Object {$\_. UsageLocation - eq $Null}** ). À l’intérieur d’accolades, la commande indique à Office 365 PowerShell uniquement rechercher l’ensemble des comptes, dans laquelle l’utilisateur UsageLocation compte de propriété ( ** $ \_. UsageLocation** ) n’est pas spécifié ( **-eq $Null** ).
     
@@ -130,9 +128,9 @@ Si vous avez besoin des propriétés supplémentaires, telles que le départemen
 Get-MsolUser | Select-Object DisplayName, Department, UsageLocation
 ```
 
-Cette commande demande à Office 365 PowerShell d'effectuer les opérations suivantes :
+Cette commande demande à PowerShell Office 365 d’effectuer les opérations suivantes :
   
-- Obtenir toutes les informations sur les comptes d’utilisateurs ( **Get-MsolUser** ) et l’envoyer à la commande suivante ( **|** ).
+- Obtenir toutes les informations sur les comptes utilisateur ( **Get-MsolUser** ) et les envoyer à la commande suivante ( **|** ).
     
 - Afficher uniquement l’utilisateur compte nom, le service et l’utilisation de l’emplacement ( **Select-Object DisplayName, département, UsageLocation** ).
     
@@ -163,9 +161,9 @@ Pour être plus sélectif sur la liste des comptes à afficher, vous pouvez éga
 Get-MsolUser | Where-Object {$_.UsageLocation -eq $Null} | Select-Object DisplayName, Department, UsageLocation
 ```
 
-Cette commande demande à Office 365 PowerShell d'effectuer les opérations suivantes :
+Cette commande demande à PowerShell Office 365 d’effectuer les opérations suivantes :
   
-- Obtenir toutes les informations sur les comptes d’utilisateurs ( **Get-MsolUser** ) et l’envoyer à la commande suivante ( **|** ).
+- Obtenir toutes les informations sur les comptes utilisateur ( **Get-MsolUser** ) et les envoyer à la commande suivante ( **|** ).
     
 - Rechercher tous les comptes d’utilisateurs qui ont un emplacement d’utilisation non spécifiée ( **Where-Object {$\_. UsageLocation - eq $Null}** ) et envoyer les informations obtenues à la commande suivante ( **|** ). À l’intérieur d’accolades, la commande est demandant uniquement rechercher l’ensemble des comptes, dans laquelle l’utilisateur UsageLocation de propriété compte Office 365 PowerShell ( ** $ \_. UsageLocation** ) n’est pas spécifié ( **-eq $Null** ).
     
@@ -206,9 +204,9 @@ Pour être plus sélectif sur la liste des comptes à afficher, vous pouvez util
 Get-AzureADUser | Where-Object {$_.UsageLocation -eq $Null}
 ```
 
-Cette commande demande à Office 365 PowerShell d'effectuer les opérations suivantes :
+Cette commande demande à PowerShell Office 365 d’effectuer les opérations suivantes :
   
-- Obtenir toutes les informations sur les comptes d’utilisateurs ( **Get-AzureADUser** ) et l’envoyer à la commande suivante ( **|** ).
+- Obtenir toutes les informations sur les comptes d’utilisateur ( **Get-AzureADUser** ) et les envoyer à la commande suivante ( **|** ).
     
 - Rechercher tous les comptes d’utilisateurs qui ont un emplacement d’utilisation non spécifiée ( **Where-Object {$\_. UsageLocation - eq $Null}** ). À l’intérieur d’accolades, la commande indique à Office 365 PowerShell uniquement rechercher l’ensemble des comptes, dans laquelle l’utilisateur UsageLocation compte de propriété ( ** $ \_. UsageLocation** ) n’est pas spécifié ( **-eq $Null** ).
     
@@ -235,9 +233,9 @@ L’applet de commande **Get-AzureADUser** par défaut affiche les propriétés 
 Get-AzureADUser | Select-Object DisplayName,Department,UsageLocation
 ```
 
-Cette commande demande à Office 365 PowerShell d'effectuer les opérations suivantes :
+Cette commande demande à PowerShell Office 365 d’effectuer les opérations suivantes :
   
-- Obtenir toutes les informations sur les comptes d’utilisateurs ( **Get-AzureADUser** ) et l’envoyer à la commande suivante ( **|** ).
+- Obtenir toutes les informations sur les comptes d’utilisateur ( **Get-AzureADUser** ) et les envoyer à la commande suivante ( **|** ).
     
 - Afficher uniquement l’utilisateur compte nom, le service et l’utilisation de l’emplacement ( **Select-Object DisplayName, département, UsageLocation** ).
     
@@ -247,9 +245,9 @@ Pour être plus sélectif sur la liste des comptes à afficher, vous pouvez éga
 Get-AzureADUser | Where-Object {$_.UsageLocation -eq $Null} | Select-Object DisplayName, Department, UsageLocation
 ```
 
-Cette commande demande à Office 365 PowerShell d'effectuer les opérations suivantes :
+Cette commande demande à PowerShell Office 365 d’effectuer les opérations suivantes :
   
-- Obtenir toutes les informations sur les comptes d’utilisateurs ( **Get-AzureADUser** ) et l’envoyer à la commande suivante ( **|** ).
+- Obtenir toutes les informations sur les comptes d’utilisateur ( **Get-AzureADUser** ) et les envoyer à la commande suivante ( **|** ).
     
 - Rechercher tous les comptes d’utilisateurs qui ont un emplacement d’utilisation non spécifiée ( **Where-Object {$\_. UsageLocation - eq $Null}** ) et envoyer les informations obtenues à la commande suivante ( **|** ). À l’intérieur d’accolades, la commande est demandant uniquement rechercher l’ensemble des comptes, dans laquelle l’utilisateur UsageLocation de propriété compte Office 365 PowerShell ( ** $ \_. UsageLocation** ) n’est pas spécifié ( **-eq $Null** ).
     
@@ -257,11 +255,9 @@ Cette commande demande à Office 365 PowerShell d'effectuer les opérations suiv
     
 ## <a name="new-to-office-365"></a>Vous débutez avec Office 365 ?
 
-||
-|:-----|
-|![L’icône court pour l’apprentissage de LinkedIn](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **nouveau vers Office 365 ?**         Découvrez la vidéo gratuits pour les [professionnels de l’informatique et les administrateurs d’Office 365](https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5), proposée par formation de LinkedIn. |
-   
-## <a name="see-also"></a>See also
+[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
+  
+## <a name="see-also"></a>Voir aussi
 
 #### 
 

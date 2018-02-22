@@ -9,20 +9,23 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: PowerShell, O365ITProTrain, Ent_Office_Other
+ms.custom:
+- PowerShell
+- O365ITProTrain
+- Ent_Office_Other
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: "Résumé : Découvrez comment utiliser Office 365 PowerShell avec des utilisateurs et des licences Office 365, Skype Entreprise Online, SharePoint Online et Microsoft Exchange Online."
-ms.openlocfilehash: 2561c9f94d589ee58f35ac701d1c0f5ef6b9e63b
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: fd794066703c89ceb7f0c81c78d6e69b9d608dd0
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="manage-office-365-with-office-365-powershell"></a>Gérer Office 365 avec Office 365 PowerShell
 
  **Résumé :** Découvrez comment utiliser Office 365 PowerShell avec des utilisateurs et des licences Office 365, Skype Entreprise Online, SharePoint Online et Microsoft Exchange Online.
   
-Office 365 PowerShell est un outil de gestion avancé qui complète le Centre d’administration Office 365. Par exemple, vous pouvez utiliser l’automatisation Office 365 PowerShell pour gérer plus rapidement plusieurs comptes d’utilisateur et licences utilisateur et créer des rapports. Découvrez comment utiliser Office 365 PowerShell avec les utilisateurs et les licences Office 365, Skype Entreprise Online, SharePoint Online et Microsoft Exchange Online. 
+Office 365 PowerShell PowerShell est un outil de gestion avancé qui complète le Centre d'administration Office 365. Par exemple, vous pouvez utiliser l'automatisation Office 365 PowerShell pour gérer plus rapidement plusieurs comptes d'utilisateur et licences utilisateur et créer des rapports. Découvrez comment utiliser Office 365 PowerShell avec les utilisateurs et les licences Office 365, Skype Entreprise Online, SharePoint Online et Microsoft Exchange Online. 
   
 Sélectionnez la rubrique selon vos besoins :
   

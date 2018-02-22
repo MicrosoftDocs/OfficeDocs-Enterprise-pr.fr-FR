@@ -9,15 +9,14 @@ ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
 description: "Résumé : Comprendre les éléments communs d'infrastructure réseau et comment préparer votre réseau."
-ms.openlocfilehash: 28825ad299ee12b55037963c68a289f43ffcc56a
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: b630daad3292976245c8cb5d3f493c32ad5be8a6
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="common-elements-of-microsoft-cloud-connectivity"></a>Éléments communs de la connectivité au cloud Microsoft
 
@@ -40,7 +39,7 @@ Pour votre connexion Internet, procédez comme suit :
   
 1. Analysez la latence entre le périphérique du périmètre Internet (par exemple, votre pare-feu externe) et les emplacements régionaux du service cloud de Microsoft auquel vous vous connectez.
     
-2. Analysez la capacité et l’utilisation de votre connexion Internet actuelle et augmentez la capacité si nécessaire. Vous pouvez également ajoutez une connexion ExpressRoute.
+2. Analysez la capacité et l’utilisation de votre connexion Internet actuelle et augmentez la capacité si nécessaire. Vous pouvez également ajouter une connexion ExpressRoute.
     
 ## <a name="microsoft-cloud-connectivity-options"></a>Options de connectivité au cloud de Microsoft
 <a name="steps"> </a>
@@ -58,9 +57,9 @@ La figure 1 indique la façon dont un réseau local peut être connecté aux of
     
 - **Charge de travail externe :** Sites web ou autres charges de travail mis à la disposition des utilisateurs externes sur Internet.
     
-- **Serveur proxy :** Demandes de services pour le contenu web au nom des utilisateurs de l'intranet. Un proxy inverse autorise les demandes entrantes non sollicitées.
+- **Serveur proxy :** Demandes de services pour le contenu web au nom des utilisateurs de l’intranet. Un proxy inverse autorise les demandes entrantes non sollicitées.
     
-- **Pare-feu externe :** Autorise le trafic sortant et le trafic entrant spécifié. Peut effectuer la traduction d'adresses.
+- **Pare-feu externe :** Autorise le trafic sortant et le trafic entrant spécifié. Peut effectuer la traduction d’adresses.
     
 - **Connexion WAN à ISP :** Connexion basée sur un opérateur à un fournisseur de services Internet, qui est homologuée avec Internet pour la connectivité et le routage.
     
@@ -75,7 +74,7 @@ Vous devez prendre en considération ces zones de réseau lors de l’adoption d
     
 - **Connexion à Internet :** Votre connexion WAN à votre fournisseur de services Internet et Internet doivent avoir une capacité suffisante pour gérer les charges de pointe. Vous pouvez également utiliser une connexion ExpressRoute.
     
-- **Internet DNS :** A, AAAA, CNAME, MX, PTR et les autres enregistrements pour localiser le cloud de Microsoft ou les services hébergés dans le cloud. Par exemple, vous pouvez avoir besoin d'un enregistrement CNAME pour votre application hébergée dans Azure PaaS.
+- **Internet DNS :** A, AAAA, CNAME, MX, PTR et les autres enregistrements pour localiser le cloud de Microsoft ou les services hébergés dans le cloud. Par exemple, vous pouvez avoir besoin d’un enregistrement CNAME pour votre application hébergée dans Azure PaaS.
     
 
 ## <a name="next-step"></a>Étape suivante

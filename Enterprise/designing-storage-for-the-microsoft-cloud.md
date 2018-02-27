@@ -34,7 +34,8 @@ Il y a deux raisons principales à l’utilisation du stockage cloud.
     
   - Aucun matériel de stockage à acheter
     
-  - Plomberie intégrée fournie par les offres cloud de Microsoft
+  - Infrastructure intégrée fournie par les offres cloud de Microsoft
+
     
   - Disponible partout dans le monde
     
@@ -42,9 +43,11 @@ Il y a deux raisons principales à l’utilisation du stockage cloud.
     
   - Élasticité de mise à l’échelle en fonction de la demande de stockage
     
-  - Aucun matériel de stockage dont effectuer la maintenance ou à migrer
+  - Aucun matériel de stockage à migrer ou nécessitant une maintenance
+
     
-  - Microsoft est votre plombier intégré pour la maintenance et l’amélioration de l’infrastructure
+  - Microsoft assure la maintenance et l’amélioration de l’infrastructure
+
     
   - Meilleure sécurité de stockage du marché grâce à des améliorations continues
     
@@ -160,6 +163,7 @@ Consultez les options de stockage cloud décrites dans l'article [Solutions prê
   
 [Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs](https://sway.com/FJ2xsyWtkJc2taRD)
+[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs (en anglais)](https://sway.com/FJ2xsyWtkJc2taRD)
+
 
 

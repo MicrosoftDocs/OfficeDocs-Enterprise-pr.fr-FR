@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: "Résumé : Connexion à votre organisation d’Office 365 à l’aide d’Office 365 PowerShell pour effectuer les tâches de centre d’administration Office 365 à partir de la ligne de commande."
-ms.openlocfilehash: 9c653b2cbe5cd05ee8b0ae23ce84c2805d82e6f2
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+ms.openlocfilehash: a13fcc401a4d00f49dcc4eec2a5acba36075233f
+ms.sourcegitcommit: 2cfb30dd7c7a6bc9fa97a98f56ab8fe008504f41
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="connect-to-office-365-powershell"></a>Se connecter à Office 365 PowerShell
 
@@ -57,7 +57,7 @@ Ces étapes sont nécessaires une seule fois sur votre ordinateur, pas chaque fo
   
 1.  Installez la version 64 bits de l’Assistant de connexion Microsoft Online Services : [Microsoft Online Services - Assistant de connexion pour la version RTW de professionnels de l’informatique](https://go.microsoft.com/fwlink/p/?LinkId=286152).
     
-2. Installer le le Microsoft Azure Active Directory Module pour Windows PowerShell avec ces étapes :
+2. Installez le Microsoft Azure Active Directory Module pour Windows PowerShell avec ces étapes :
     
   - Ouvrez une invite de commandes de PowerShell de niveau administrateur.
   - Exécutez la commande **MSOnline du Module d’installation** .

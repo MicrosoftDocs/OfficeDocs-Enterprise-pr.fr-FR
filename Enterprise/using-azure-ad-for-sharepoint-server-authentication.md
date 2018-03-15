@@ -18,11 +18,11 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: 
 description: "Résumé : Apprenez à contourner Azure Access Control Service et SAML 1.1 permet d’authentifier les utilisateurs de SharePoint Server avec Azure Active Directory."
-ms.openlocfilehash: 1e8ce1aad43e110311c1f5fcceca816871c07e9e
-ms.sourcegitcommit: 2cfb30dd7c7a6bc9fa97a98f56ab8fe008504f41
+ms.openlocfilehash: e57414c3ed5af5c02b719d0c3639542e154be5bf
+ms.sourcegitcommit: fbf33e74fd74c4ad6d60b2214329a3bbbdb3cc7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="using-azure-ad-for-sharepoint-server-authentication"></a>À l’aide d’Azure AD pour l’authentification du serveur SharePoint
 
@@ -89,7 +89,7 @@ Chacun des serveurs web frontaux de la batterie de serveurs SharePoint nécessit
 
 ## <a name="step-3-create-a-new-enterprise-application-in-azure-ad"></a>Étape 3 : Créer une nouvelle application d’entreprise dans Active Directory Azure
 
-1. Dans le portail Azure ([https://portal.azure.com](https://portal.azure.com)), ouvrir votre répertoire AD Azure. **Les Applications d’entreprise**, puis cliquez sur **nouvelle application**. Choisissez **l’application Non-galerie**. Fournir un nom, comme *L’intégration SharePoint SAML* et cliquez sur **Ajouter**.</br>![Ajout d’une nouvelle application de bibliothèque non](images/SAML11/fig5-addnongalleryapp.png)</br>
+1. Dans le portail Azure ([https://portal.azure.com](https://portal.azure.com)), ouvrir votre annuaire AD Azure. **Les Applications d’entreprise**, puis cliquez sur **nouvelle application**. Choisissez **l’application Non-galerie**. Fournir un nom, comme *L’intégration SharePoint SAML* et cliquez sur **Ajouter**.</br>![Ajout d’une nouvelle application de bibliothèque non](images/SAML11/fig5-addnongalleryapp.png)</br>
 2. Cliquez sur le lien dans le volet de navigation pour configurer l’application ouverture de session unique. Remplacez la liste déroulante **Mode d’ouverture de session unique** **basée sur SAML session** pour afficher les propriétés de configuration de l’application SAML. Configurer les propriétés suivantes :</br>
     - Identificateur :`urn:sharepoint:portal.contoso.local`
     - URL de la réponse :`https://portal.contoso.local/_trust/default.aspx`
@@ -159,7 +159,7 @@ Les utilisateurs qui seront AD Azure se connecter et accéder à SharePoint doiv
  
 L’utilisateur possède l’autorisation dans Active Directory Azure, mais aussi autorisation doit être accordée dans SharePoint. Utilisez les étapes suivantes pour définir des autorisations pour accéder à l’application web.
 
-1. Dans l’Administration centrale, cliquez sur **Gestion des applications**.
+1. Dans l'Administration centrale, cliquez sur **Gestion des applications**.
 2. Dans la section **Applications web** de la page **Gestion des applications**, cliquez sur **Gérer les applications web**.
 3. Cliquez sur l'application web appropriée, puis sur **Stratégie de l'utilisateur**.
 4. Dans la stratégie d’Application Web, cliquez sur **Ajouter des utilisateurs**.</br>![Recherche d’un utilisateur en revendication de nom](images/SAML11/fig11-searchbynameclaim.png)</br>
@@ -172,7 +172,7 @@ L’utilisateur possède l’autorisation dans Active Directory Azure, mais auss
 
 ## <a name="step-6-add-a-saml-11-token-issuance-policy-in-azure-ad"></a>Étape 6 : Ajouter une stratégie d’émission de jeton SAML 1.1 dans Azure AD
 
-Lorsque l’application Azure AD est créée dans le portail, il utilise par défaut SAML 2.0. SharePoint Server 2016 requiert le format du jeton SAML 1.1. Le script suivant supprime la stratégie de SAML 2.0 par défaut et ajouter une nouvelle stratégie pour les jetons SAML 1.1 de problème. Ce code nécessite le téléchargement des [exemples illustrant l’interaction avec Azure Active Directory graphique](https://github.com/kaevans/spsaml11/tree/master/scripts)qui l’accompagne.
+Lorsque l’application Azure AD est créée dans le portail, il utilise par défaut SAML 2.0. SharePoint Server 2016 requiert le format du jeton SAML 1.1. Le script suivant supprime la stratégie de SAML 2.0 par défaut et ajouter une nouvelle stratégie pour les jetons SAML 1.1 de problème. Ce code nécessite le téléchargement des [exemples illustrant l’interaction avec Azure Active Directory graphique](https://github.com/kaevans/spsaml11/tree/master/scripts)qui l’accompagne. 
 
 
 ```
@@ -183,8 +183,9 @@ Remove-PolicyFromServicePrincipal -policyId $saml2policyid -servicePrincipalId $
 $policy = Add-TokenIssuancePolicy -DisplayName SPSAML11 -SigningAlgorithm "http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" -TokenResponseSigningPolicy TokenOnly -SamlTokenVersion "1.1"
 Set-PolicyToServicePrincipal -policyId $policy.objectId -servicePrincipalId $objectid
 ```
+> Notez qu’il est important d’exécuter le `Import-Module` de commande comme indiqué dans cet exemple. Charger un module dépendant contenant les commandes affichées. Vous devrez peut-être ouvrir une invite de commandes avec élévation de privilèges pour exécuter correctement ces commandes.
 
-Pour plus d’informations sur les stratégies d’émission jeton avec AD Azure, consultez la [référence des API de graphique pour les opérations de stratégie](https://msdn.microsoft.com/en-us/library/azure/ad/graph/api/policy-operations#create-a-policy).
+Ces exemples de commandes PowerShell sont des exemples de la façon d’exécuter des requêtes par rapport à l’API de graphique. Pour plus d’informations sur les stratégies d’émission jeton avec AD Azure, consultez la [référence des API de graphique pour les opérations de stratégie](https://msdn.microsoft.com/en-us/library/azure/ad/graph/api/policy-operations#create-a-policy).
 
 ## <a name="step-7-verify-the-new-provider"></a>Étape 7 : Vérifiez le nouveau fournisseur
 
@@ -210,7 +211,14 @@ New-SPTrustedRootAuthority -Name "AzureAD" -Certificate $cert
 Get-SPTrustedIdentityTokenIssuer "AzureAD" | Set-SPTrustedIdentityTokenIssuer -ImportTrustCertificate $cert
 ```
 
+## <a name="fixing-people-picker"></a>Sélecteur de personnes de fixation
+Les utilisateurs peuvent maintenant se connectent 2016 SharePoint à l’aide des identités à partir d’AD Azure, mais il existe toujours des opportunités d’amélioration de l’expérience utilisateur. Par exemple, la recherche d’un utilisateur présente plusieurs résultats de la recherche dans le sélecteur de personnes. Il existe un résultat de recherche pour chacun des types de 3 revendication qui ont été créés dans le mappage de revendications. Pour choisir un utilisateur à l’aide du sélecteur de personnes, vous devez taper exactement de leur nom d’utilisateur et cliquez sur le **nom** de la revendication de résultat.
 
+![Revendications des résultats de recherche](images/SAML11/fig16-claimssearchresults.png)
+
+Il n’y a aucun contrôle sur les valeurs que vous recherchez, qui peut entraîner des fautes d’orthographe ou de revendication utilisateurs accidentellement le choix du mauvais revendication pour affecter par exemple le **nom de famille** . Ceci peut empêcher les utilisateurs correctement accéder aux ressources.
+
+Pour vous aider à ce scénario, il existe une open source solution appelée [AzureCP](https://yvand.github.io/AzureCP/) qui fournit un fournisseur de revendications personnalisées pour SharePoint 2016. Il utilise pour résoudre les utilisateurs entrer et effectuent le graphique de publicité Azure validation. Pour en savoir plus sur [AzureCP](https://yvand.github.io/AzureCP/). 
 
 ## <a name="additional-resources"></a>Ressources supplémentaires
 

@@ -1,5 +1,5 @@
 ---
-title: "Gérer les comptes d’utilisateurs et les licences avec Office 365 PowerShell"
+title: Gérer les comptes d’utilisateurs et les licences avec Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi

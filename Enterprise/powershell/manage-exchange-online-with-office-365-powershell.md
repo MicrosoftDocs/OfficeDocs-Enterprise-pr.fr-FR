@@ -1,5 +1,5 @@
 ---
-title: "Gestion d’Exchange Online avec Office 365 PowerShell"
+title: Gestion d’Exchange Online avec Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,7 +13,7 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 ms.assetid: b23dda88-f137-4051-9c2c-84035ad63f5e
-description: "Résumé :Utilisez Office 365 PowerShell pour gérer Microsoft Exchange Online, y compris la configuration des boîtes aux lettres et la création de rapports avancée."
+description: Résumé :Utilisez Office 365 PowerShell pour gérer Microsoft Exchange Online, y compris la configuration des boîtes aux lettres et la création de rapports avancée.
 ms.openlocfilehash: 5a4853a8dc5c597b8cdee5a1fbfe1ad130feff4b
 ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT

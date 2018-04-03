@@ -1,5 +1,5 @@
 ---
-title: "Connexion à des locataires Exchange Online avec Remote Windows PowerShell pour les partenaires avec autorisations d’accès délégué"
+title: Connexion à des locataires Exchange Online avec Remote Windows PowerShell pour les partenaires avec autorisations d’accès délégué
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -9,14 +9,14 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: ae5f1a87-8b77-4f93-a1b8-56f800aeb283
 description: "Résumé : Utilisez Windows PowerShell distant pour vous connecter à Exchange Online à l'aide du paramètre DelegatedOrg."
-ms.openlocfilehash: 857c97e5d3374f293b98298419932af4ce2dfa19
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: d8cbb6640419ba2f1de868ae88b0a273c3f71ae7
+ms.sourcegitcommit: f3f81d2c2e8290948d93f3f787a679c804840256
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Connexion à des locataires Exchange Online avec Remote Windows PowerShell pour les partenaires avec autorisations d’accès délégué
 
@@ -40,11 +40,11 @@ Windows PowerShell distant vous permet de gérer vos paramètres Exchange Online
     
   - Windows Server 2008 R2 SP1*
     
-    * Vous devez installer .NET Framework 4.5.1 ou .NET Framework 4.5, puis Windows Management Framework 4.0 ou Windows Management Framework 3.0. Pour plus d'informations, consultez les ressources suivantes :
+    \* Installez .NET Framework 4.5.1 ou .NET Framework 4.5, puis Windows Management Framework 4.0 ou Windows Management Framework 3.0. Pour en savoir plus, consultez les ressources suivantes :
     
-  - [Installation de NET Framework 4.5](https://go.microsoft.com/fwlink/p/?LinkId=257868)
+    - [Installation de NET Framework 4.5](https://go.microsoft.com/fwlink/p/?LinkId=257868)
     
-  - [Windows Management Framework 3.0](https://go.microsoft.com/fwlink/p/?LinkId=272757) ou[Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?LinkId=391344)
+    - [Windows Management Framework 3.0](https://go.microsoft.com/fwlink/p/?LinkId=272757) ou [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?LinkId=391344)
     
 - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, consultez la rubrique [Raccourcis clavier dans le Centre d'administration Exchange](https://go.microsoft.com/fwlink/p/?LinkId=534017).
     

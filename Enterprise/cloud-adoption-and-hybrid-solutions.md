@@ -1,11 +1,11 @@
 ---
 title: Solutions Cloud pour les entreprises
-description: "Résolvez les problèmes d’entreprise à l’aide de Microsoft Cloud. Recherchez des informations sur les dernières solutions cloud de sécurité et hybrides, l’adoption du cloud et bien plus encore."
+description: Résolvez les problèmes d’entreprise à l’aide de Microsoft Cloud. Recherchez des informations sur les dernières solutions cloud de sécurité et hybrides, l’adoption du cloud et bien plus encore.
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
 layout: LandingPage
-ms.assetid: 
+ms.assetid: ''
 ms.service: o365-solutions
 ms.topic: hub-page
 localization_priority: Normal

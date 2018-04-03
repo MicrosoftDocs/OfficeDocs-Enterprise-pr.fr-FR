@@ -1,5 +1,5 @@
 ---
-title: "Utilisez Windows PowerShell pour créer des rapports dans Office 365"
+title: Utilisez Windows PowerShell pour créer des rapports dans Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi

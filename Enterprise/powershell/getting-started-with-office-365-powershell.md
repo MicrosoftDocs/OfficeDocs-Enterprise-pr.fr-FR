@@ -1,5 +1,5 @@
 ---
-title: "Mise en route d’Office 365 Powershell"
+title: Mise en route d’Office 365 Powershell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi

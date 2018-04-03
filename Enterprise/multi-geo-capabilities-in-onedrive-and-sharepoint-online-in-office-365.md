@@ -1,20 +1,20 @@
 ---
-title: "Fonctionnalités Multi-Geo dans OneDrive et SharePoint Online dans Office 365"
+title: Fonctionnalités Multi-Geo dans OneDrive et SharePoint Online dans Office 365
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 1/24/2018
+ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
-description: "Grâce aux fonctions de multi-geo dans OneDrive et SharePoint Online, votre organisation peut développer sa présence d’Office 365 à plusieurs régions géographiques et/ou pays au sein de vos clients existants."
-ms.openlocfilehash: d53da13d5a6a6d5add9da69a3bca9fcdfa39bbd0
-ms.sourcegitcommit: 38d43444cf5e03527aa75f670efb2de0f48f847d
+description: Développez votre présence sur Office 365 dans plusieurs régions géographiques avec des capacités multi-geo dans SharePoint Online et de OneDrive.
+ms.openlocfilehash: 7387b267cbc925916b600a112d6911c97a971c36
+ms.sourcegitcommit: 3f3d2de6c0c5225156cfba01bc980994cd9ae848
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365"></a>Fonctionnalités Multi-Geo dans OneDrive et SharePoint Online dans Office 365
 
@@ -40,9 +40,7 @@ Voici comment les fonctionnalités multi-geo peuvent bénéficier à votre organ
     
 - Consolidez vos données régionales locales dans votre client multi-géographique Office 365.
     
-Pour plus d’informations et pour obtenir une démonstration, consultez [Multi-Geo introduire des fonctionnalités dans Office 365 et comment les configurer](https://youtu.be/3d9-Vt2fArk) et les[affiche de présentation Multi-Geo](https://technet.microsoft.com/library/dn782272.aspx).
-  
-Dans une configuration multi-géographique, votre client Office 365 se compose d’un emplacement central (également appelé emplacement par défaut) et d’un ou de plusieurs emplacements géographiques satellites. Le concept clé de la fonction multigéographique est qu’une seule location couvre plusieurs emplacements géographiques. Dans un client multigéographique, les informations concernant les emplacements géographiques, les groupes et les informations utilisateur sont gérées dans Azure Active Directory (AAD). Étant donné que les informations de votre client sont gérées de façon centralisée et synchronisées à chaque emplacement géographique, le partage et les expériences concernant tout membre de votre société impliquent une sensibilisation à l’échelle mondiale.
+Dans une configuration multi-geo, vos clients Office 365 comprend un emplacement central (également connu sous le nom, l’emplacement par défaut) et un ou plusieurs emplacements de geo satellite. Le concept clé de multi-geo est qu’une location simple couvrira sur un plusieurs emplacements géographiquement. Dans un client multi-geo, les informations sur les emplacements de la zone géographique, les groupes et les informations utilisateur, sont gravées dans Azure Active Directory (DAS). Parce que vos informations de locataire sont maîtrisées de façon centralisée et synchronisées dans chaque emplacement géographique, partage et expériences impliquant toute personne de votre société contiennent des championnats.
   
 ## <a name="sample-multi-geo-tenant-configuration"></a>Exemple de configuration de client multi-geo
 
@@ -54,7 +52,7 @@ En utilisant un client multigéographique, Contoso, dont l’emplacement central
 
 La configuration Multi-Geo est facile :
   
-1. Activez votre client Office 365 pour la fonction Multi-Geo.
+1. Travailler avec votre équipe de compte à ajouter le plan de service _Multi-Geo des fonctionnalités dans Office 365_ . Ils vous guide pour ajouter le nombre de licences nécessaires.
     
 2. Ajoutez vos emplacements satellites.
     
@@ -72,29 +70,19 @@ Les fonctionnalités multigéographiques de OneDrive sont actuellement disponibl
     
 - Union européenne (EMEA)
     
-- Inde
-    
 - Japon
     
 - Royaume-Uni
     
 - États-Unis (Amérique du Nord)
     
-- Corée du Sud
-    
-> [!NOTE]
-> L’Inde et la Corée du Sud ne sont actuellement disponibles que pour les clients dont les licences et les adresses de facturation figurent dans ces emplacements géographiques. 
-  
+- Corée
+      
 Emplacements géographiques à venir :
   
 - France
+- Inde
     
-Services disponibles :
-  
-- Exchange Online (en phase d’évaluation)
-    
-- OneDrive Entreprise (en phase d’évaluation)
-    
-- SharePoint Online (en cours de développement)
-    
+## <a name="getting-started"></a>Prise en main
 
+Pour vous familiariser avec OneDrive pour entreprise Multi-Geo, la première étape consiste à [planifier votre OneDrive pour un environnement d’entreprise Multi-Geo](plan-for-multi-geo.md). Suivant, [en savoir plus sur l’administration d’un environnement multi-geo](administering-a-multi-geo-environment.md) et [comment vos utilisateurs connaîtront un environnement multi-geo](multi-geo-user-experience.md). Lorsque vous êtes prêt à configurer les OneDrive d’entreprise Multi-Geo, [configurer vos clients pour multi-geo](multi-geo-tenant-configuration.md), puis [déplacer des sites OneDrive à leurs nouveaux emplacements de geo](move-onedrive-between-geo-locations.md) et [recherche](configure-search-for-multi-geo.md).

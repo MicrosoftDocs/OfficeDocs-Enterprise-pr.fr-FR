@@ -1,9 +1,9 @@
 ---
-title: "DirSync pour votre environnement de développement/test Office 365"
+title: Synchronisation d’annuaire pour votre environnement de développement/test d’Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/04/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,31 +16,29 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
-description: "Résumé : Configurer la synchronisation d’annuaire pour votre environnement de développement/test d’Office 365."
-ms.openlocfilehash: 8a656ea742af642a8b4dc3e096764f0e8cbde074
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 'Résumé : Configurer la synchronisation d’annuaire pour votre environnement de développement/test d’Office 365.'
+ms.openlocfilehash: 1363e7fd6a3afdbec85fd08790268ab186badbc8
+ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/05/2018
 ---
-# <a name="dirsync-for-your-office-365-devtest-environment"></a>DirSync pour votre environnement de développement/test Office 365
+# <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Synchronisation d’annuaire pour votre environnement de développement/test d’Office 365
 
  **Résumé :** Configurer la synchronisation d’annuaire pour votre environnement de développement/test d’Office 365.
   
-De nombreuses organisations utilisent Azure AD Connect et la synchronisation d’annuaires (DirSync) pour synchroniser l’ensemble de comptes dans leur forêt de Windows Server Active Directory (AD) en local avec l’ensemble de comptes dans Office 365. Cet article explique comment vous pouvez ajouter DirSync avec synchronisation de mot de passe à l’environnement de développement/test Office 365, ce qui entraîne la configuration suivante.
+De nombreuses entreprises choisissent d’utiliser Azure Connect de publicité et de la synchronisation d’annuaire à synchroniser l’ensemble des comptes dans leur forêt de Windows Server Active Directory (AD) sur site à l’ensemble des comptes dans Office 365. Cet article explique comment vous pouvez ajouter la synchronisation d’annuaire avec synchronisation de hachage de mot de passe à l’environnement de développement/test Office 365, résultant dans la configuration suivante.
   
-![Environnement de développement/test d’Office 365 avec DirSync](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![L’environnement de développement/test d’Office 365 avec la synchronisation d’annuaire](images/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 Cette configuration se compose des éléments suivants :  
   
 - Un abonnement d’évaluation Office 365 E5, qui arrive à expiration 30 jours après sa création.
-    
 - Un intranet d’organisation simplifié connecté à Internet, qui se compose de trois machines virtuelles sur un sous-réseau d’un réseau virtuel Azure (DC1, APP1 et CLIENT1). Azure AD Connect s’exécute sur APP1 pour synchroniser le domaine Windows Server AD avec Office 365.
     
 Les deux phases de configuration de cet environnement de développement/test sont les suivantes :
   
 1. Créez l’environnement de développement/test Office 365 (les machines virtuelles DC1, APP1 et CLIENT1 dans un réseau virtuel Azure avec un abonnement d’évaluation Office 365 E5).
-    
 2. Installez et configurez Azure AD Connect sur APP1.
     
 > [!TIP]
@@ -55,7 +53,6 @@ Suivez les instructions affichées dans les étapes 1, 2 et 3 de l’article de 
 Cette configuration se compose des éléments suivants :  
   
 - Un abonnement d’évaluation Office 365 E5.
-    
 - Un intranet d’organisation simplifié connecté à Internet, qui se compose des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure.
     
 ## <a name="phase-2-install-azure-ad-connect-on-app1"></a>Phase 2 : installation d’Azure AD Connect sur APP1
@@ -93,7 +90,7 @@ Stop-Process -Name Explorer -Force
     
 11. Dans la page **Configuration terminée** , cliquez sur **Quitter**.
     
-12. Dans Internet Explorer, accédez au portail Office 365 ([https://portal.office.com](https://portal.office.com)) et vous connecter à votre abonnement d’évaluation d’Office 365 avec votre compte d’administrateur global.
+12. Dans Internet Explorer, accédez au portail Office 365 ([https://portal.office.com](https://portal.office.com)) et connectez-vous à votre abonnement d’évaluation d’Office 365 avec votre compte d’administrateur global.
     
 13. À partir de la page principale du portail, cliquez sur **Admin**.
     
@@ -107,31 +104,25 @@ Stop-Process -Name Explorer -Force
     
 Voici la configuration obtenue.
   
-![Environnement de développement/test d’Office 365 avec DirSync](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![L’environnement de développement/test d’Office 365 avec la synchronisation d’annuaire](images/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 Cette configuration se compose des éléments suivants :  
   
 - Un abonnement d’évaluation Office 365 E5.
-    
 - Un intranet d’organisation simplifié connecté à Internet, qui se compose des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure. Azure AD Connect s’exécute sur APP1 pour synchroniser le domaine CORP Windows Server AD avec Office 365 toutes les 30 minutes.
     
 ## <a name="next-step"></a>Étape suivante
 
-Lorsque vous êtes prêt à déployer de synchronisation d’annuaire de votre organisation, voir [Déployer Office 365 synchronisation d’annuaires (DirSync) dans Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).
+Lorsque vous êtes prêt à déployer la synchronisation d’annuaire de votre organisation, voir [déployer Office 365 la synchronisation d’annuaire dans Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-[Guides de laboratoire de test d'adoption cloud](cloud-adoption-test-lab-guides-tlgs.md)
-  
-[Environnement de développement/test de configuration de base](base-configuration-dev-test-environment.md)
-  
-[Environnement de développement/test Office 365](office-365-dev-test-environment.md)
-  
-[Application du nuage sécurité pour votre environnement de développement/test d’Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
-  
-[Avancées de protection contre les menaces pour votre environnement de développement/test d’Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
-  
-[Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.md)
+[Cloud adoption Guides de laboratoires de Test (TLGs)](cloud-adoption-test-lab-guides-tlgs.md)
+[environnement de développement/test de Configuration de Base de](base-configuration-dev-test-environment.md)
+[environnement de développement/test Office 365](office-365-dev-test-environment.md)
+[Sécurité d’application Cloud pour votre environnement de développement/test Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md) 
+ [ Avancées de protection contre les menaces pour votre environnement de développement/test Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+[adoption du nuage et les solutions hybride](cloud-adoption-and-hybrid-solutions.md)
 
 
 

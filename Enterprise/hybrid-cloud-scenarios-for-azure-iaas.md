@@ -1,5 +1,5 @@
 ---
-title: "Scénarios de cloud hybride pour les services IaaS Azure"
+title: Scénarios de cloud hybride pour les services IaaS Azure
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,14 +11,14 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
-description: "Résumé : Comprendre les scénarios et l’architecture hybride constitue l’Infrastructure de Microsoft en tant que Service (IaaS)-en fonction des offres en nuage dans Azure."
-ms.openlocfilehash: 66024c708cb4fbc904de18f27077871d52f0e70c
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Résumé : Comprendre les scénarios et l’architecture hybride constitue l’Infrastructure de Microsoft en tant que Service (IaaS)-en fonction des offres en nuage dans Azure.'
+ms.openlocfilehash: e64d20987946e05afa7afc4d64e071112ef58d10
+ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/05/2018
 ---
-# <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Scénarios de cloud hybride pour les services IaaS Azure
+# <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Scénarios de cloud hybride pour Azure IaaS
 
  **Résumé :** Comprendre les scénarios et l’architecture hybride constitue l’Infrastructure de Microsoft en tant que Service (IaaS)-en fonction des offres en nuage dans Azure.
   
@@ -180,8 +180,6 @@ Consultez ces ressources supplémentaires :
   
 - [Création d’environnements de Cloud hybride](https://gallery.technet.microsoft.com/Architecting-Hybrid-Cloud-a7dc9f24/file/147475/1/Architecting%20Hybrid%20Cloud%20Environments%20V1.docx)
     
-- [Étendre votre centre de données au cours de l’Académie virtuelle Microsoft de nuage](https://mva.microsoft.com/en-US/training-courses/extend-your-datacenter-to-the-cloud-13908?l=7fG3tAouB_7100115881)
-    
 - [Concevoir et créer une application métier dans Azure](https://techcommunity.microsoft.com/t5/CAAB-Cloud-Adoption-Advisory/EXTRA-November-2016-Webinar/m-p/30058#M41)
     
 ## <a name="see-also"></a>Voir aussi
@@ -190,7 +188,8 @@ Consultez ces ressources supplémentaires :
   
 [Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs](https://sway.com/FJ2xsyWtkJc2taRD)
+[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs (en anglais)](https://sway.com/FJ2xsyWtkJc2taRD)
+
 
 
 

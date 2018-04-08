@@ -1,9 +1,9 @@
 ---
-title: "Identité fédérée pour votre environnement de développement/test Office 365"
+title: Identité fédérée pour votre environnement de développement/test Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/06/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,12 +16,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
-description: "Résumé : Configurer une authentification fédérée pour votre environnement de développement/test d’Office 365."
-ms.openlocfilehash: 8458e8e11547c14e479a64d037707d5292afcc02
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 'Résumé : Configurer une authentification fédérée pour votre environnement de développement/test d’Office 365.'
+ms.openlocfilehash: 8841e203587f4582396db172ff5f4626eacbcdc7
+ms.sourcegitcommit: a337ac253054f571a8304e18e426f74bcd385857
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>Identité fédérée pour votre environnement de développement/test Office 365
 
@@ -63,7 +63,7 @@ Pour exécuter un déploiement de production d’authentification fédérée pou
   
 ## <a name="phase-1-create-the-simulated-enterprise-office-365-devtest-environment-with-dirsync"></a>Phase 1 : création de l’environnement de développement/test Office 365 d’entreprise simulé avec DirSync
 
-Suivez les instructions dans [la synchronisation d’annuaire pour votre environnement de développement/test Office 365](dirsync-for-your-office-365-dev-test-environment.md) pour créer l’environnement de développement/test simulées entreprise Office 365 avec APP1 comme serveur de synchronisation d’annuaire et identité synchronisée entre Office 365 et l’Active Directory de Windows Server comptes sur DC1.
+Suivez les instructions de la [synchronisation](dirsync-for-your-office-365-dev-test-environment.md) d’annuaire pour votre environnement de développement/test Office 365 pour créer l’environnement de développement/test simulées entreprise Office 365 avec APP1 que le serveur de synchronisation d’annuaire et synchronisation des identités entre Office 365 et le Comptes Active Directory de Windows Server sur DC1.
   
 Ensuite, créer un nom de domaine DNS public en fonction de votre nom de domaine actuel et l’ajouter à votre abonnement à Office 365. Nous recommandons d’utiliser le nom **labo de test.** \<votre domaine public >. Par exemple, si votre nom de domaine public est contoso.com, ajouter la testlab.contoso.com de nom de domaine public.
   
@@ -71,11 +71,11 @@ Pour obtenir des instructions sur la façon de créer les enregistrements DNS co
   
 Voici la configuration finale.
   
-**La figure 2 : Synchronisation d’annuaire pour l’environnement de développement/test d’Office 365**
+**Figure 2 : La synchronisation d’annuaire pour l’environnement de développement/test d’Office 365**
 
-![Environnement de développement/test d’Office 365 avec DirSync](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![L’environnement de développement/test d’Office 365 avec la synchronisation d’annuaire](images/be5b37b0-f832-4878-b153-436c31546e21.png)
   
-La figure 2 illustre la synchronisation d’annuaire pour l’environnement de développement/test Office 365, qui comprend Office 365, ainsi que les machines virtuelles CLIENT1, APP1 et DC1 dans un réseau virtuel Azure.
+La figure 2 montre le répertoire synchronizationc de l’environnement de développement/test Office 365, qui inclut des ordinateurs virtuels Office 365 et CLIENT1, APP1 et DC1 dans un réseau virtuel Azure.
   
 ## <a name="phase-2-create-the-ad-fs-server"></a>Phase 2 : création du serveur AD FS (ADFS1)
 
@@ -103,7 +103,7 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!TIP]
-> Cliquez [ici](https://gallery.technet.microsoft.com/PowerShell-commands-for-f79bc2c2?redir=0) pour obtenir un fichier texte qui contient toutes les commandes de PowerShell dans cet article.
+> Cliquez [ici](https://gallery.technet.microsoft.com/PowerShell-commands-for-f79bc2c2?redir=0) pour un fichier texte qui contient toutes les commandes de PowerShell dans cet article.
   
 Ensuite, le [portail Azure](http://portal.azure.com) permet de se connecter à l’ordinateur virtuel ADFS1 à l’aide du nom du compte administrateur local ADFS1 et le mot de passe et puis ouvrez une invite de commande Windows PowerShell.
   
@@ -112,7 +112,7 @@ Pour vérifier la communication réseau et la résolution de nom entre ADFS1 et 
 Ensuite, associez la machine virtuelle ADFS1 au domaine CORP avec ces commandes à l’invite Windows PowerShell sur ADFS1.
   
 ```
-$cred=Get-Credential -UserName "CORP\\User1" -Message "Type the User1 account password."
+$cred=Get-Credential -UserName "CORP\User1" -Message "Type the User1 account password."
 Add-Computer -DomainName corp.contoso.com -Credential $cred
 Restart-Computer
 ```
@@ -164,7 +164,7 @@ Pour vérifier la communication réseau et la résolution de nom entre PROXY1 et
 Ensuite, associez la machine virtuelle PROXY1 au domaine CORP avec ces commandes à l’invite Windows PowerShell sur PROXY1.
   
 ```
-$cred=Get-Credential -UserName "CORP\\User1" -Message "Type the User1 account password."
+$cred=Get-Credential -UserName "CORP\User1" -Message "Type the User1 account password."
 Add-Computer -DomainName corp.contoso.com -Credential $cred
 Restart-Computer
 ```
@@ -214,9 +214,9 @@ Le [portail Azure](http://portal.azure.com) permet de se connecter à l’ordina
   
 ```
 $fedServiceFQDN="<federation service FQDN>"
-New-SelfSignedCertificate -DnsName $fedServiceFQDN -CertStoreLocation "cert:\\LocalMachine\\My"
-New-Item -path c:\\Certs -type directory
-New-SmbShare -name Certs -path c:\\Certs -changeaccess CORP\\User1
+New-SelfSignedCertificate -DnsName $fedServiceFQDN -CertStoreLocation "cert:\LocalMachine\My"
+New-Item -path c:\Certs -type directory
+New-SmbShare -name Certs -path c:\Certs -changeaccess CORP\User1
 ```
 
 Ensuite, utilisez ces étapes pour enregistrer le nouveau certificat auto-signé en tant que fichier.

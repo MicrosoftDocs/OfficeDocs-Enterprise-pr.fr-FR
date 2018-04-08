@@ -1,5 +1,5 @@
 ---
-title: "Authentification fédérée haute disponibilité, phase 5  Configurer l'authentification fédérée pour Office 365"
+title: Authentification fédérée haute disponibilité, phase 5  Configurer l'authentification fédérée pour Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,22 +11,22 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
-description: "Résumé : Configurer Azure AD Connect pour votre authentification fédérée haute disponibilité pour Office 365 dans Microsoft Azure."
-ms.openlocfilehash: 2c23ffa2e9f033018c5cc1fd016fb4ed76535605
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: 'Résumé : Configurer Azure AD Connect pour votre authentification fédérée haute disponibilité pour Office 365 dans Microsoft Azure.'
+ms.openlocfilehash: 93e872098b31326de67fb0557354e9f4fc1de9ed
+ms.sourcegitcommit: a337ac253054f571a8304e18e426f74bcd385857
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-office-365"></a>Authentification fédérée haute disponibilité, phase 5 : Configurer l'authentification fédérée pour Office 365
 
  **Résumé :** Configurer Azure AD Connect pour votre authentification fédérée haute disponibilité pour Office 365 dans Microsoft Azure.
  
-Au cours de cette phase finale du déploiement de l'authentification fédérée haute disponibilité pour Office 365 dans les services d'infrastructure Azure, vous obtenez et installez un certificat émis par une autorité de certification publique, vérifiez votre configuration et installez et exécutez Azure AD Connect sur le serveur DirSync. Azure AD Connect configure votre abonnement Office 365, vos services Active Directory Federation Services (AD FS) et les serveurs proxy d'application web pour l'authentification fédérée.
+Dans cette phase finale du déploiement de haute disponibilité fédérés d’authentification pour Office 365 dans les services d’infrastructure Azure, vous obtenez et installez un certificat émis par une autorité de certification publique, vérifiez votre configuration, puis installez et exécutez AD Azure Se connecter sur le serveur de synchronisation d’annuaire. Azure Connect d’Active Directory configure votre abonnement à Office 365 et votre Active Directory Federation Services (ADFS) et les serveurs proxy d’applications web pour l’authentification fédérée.
   
 Reportez-vous à la rubrique [Déployer une authentification fédérée haute disponibilité pour Office 365 dans Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) pour toutes les phases.
   
-## <a name="get-a-public-certificate-and-copy-it-to-the-dirsync-server"></a>Obtenir un certificat public et le copier sur le serveur DirSync
+## <a name="get-a-public-certificate-and-copy-it-to-the-directory-synchronization-server"></a>Obtenir un certificat public et la copier sur le serveur de synchronisation d’annuaire
 
 Obtenez auprès d’une autorité de certification publique un certificat numérique avec les propriétés suivantes :
   
@@ -40,7 +40,7 @@ Par ailleurs, les ordinateurs et appareils de votre organisation doivent approuv
   
 Pour plus d'informations sur les certificats requis pour l'authentification fédérée, consultez la rubrique [Configuration requise pour l'installation et la configuration de la fédération](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-prerequisites#prerequisites-for-federation-installation-and-configuration).
   
-Lorsque vous recevez le certificat, copiez-le dans un dossier sur le lecteur C: du serveur DirSync. Par exemple, nommez le fichier SSL.pfx et stockez-le dans le dossier C:\\Certs du serveur DirSync.
+Lorsque vous recevez le certificat, copiez-le dans un dossier sur le lecteur C: du serveur de synchronisation d’annuaire. Par exemple, nommez le fichier SSL.pfx et le stocker dans le répertoire C:\\dossier de certificats sur le serveur de synchronisation d’annuaire.
   
 ## <a name="verify-your-configuration"></a>Vérifier votre configuration
 
@@ -56,7 +56,7 @@ Vous devez maintenant être prêt à configurer Azure AD Connect et l'authentifi
     
 - Un enregistrement DNS A privé au nom de domaine complet de votre service de fédération pointe vers l’adresse IP privée de l’équilibreur de charge Azure interne pour les serveurs AD FS.
     
-- Un certificat numérique émis par une autorité de certification publique pour les connexions SSL avec le SAN défini sur le nom de domaine complet de votre service de fédération est un fichier PFX stocké sur votre serveur DirSync.
+- Un certification publique autorité-isssued certificat numérique approprié pour les connexions SSL avec le réseau SAN à votre service de fédération que nom de domaine complet est un fichier PFX stocké sur votre serveur de synchronisation d’annuaire.
     
 - Le certificat racine de l'autorité de certification publique est installé dans la banque Autorités de certification racines de confiance de vos ordinateurs et appareils.
     
@@ -70,9 +70,9 @@ Voici un exemple pour l’organisation Contoso :
 
 L’outil Azure AD Connect configure les serveurs AD FS, les serveurs proxy d’application web et Office 365 pour l’authentification fédérée en procédant comme suit :
   
-1. Créez une connexion Bureau à distance vers votre serveur DirSync avec un compte de domaine qui possède des privilèges d'administrateur local.
+1. Créer une connexion Bureau à distance à votre serveur de synchronisation d’annuaire avec un compte de domaine disposant des privilèges d’administrateur local.
     
-2. Sur le bureau du serveur DirSync, ouvrez Internet Explorer et accédez à [https://aka.ms/aadconnect](https://aka.ms/aadconnect).
+2. Sur le bureau du serveur de synchronisation d’annuaire, ouvrez Internet Explorer et accédez à [https://aka.ms/aadconnect](https://aka.ms/aadconnect).
     
 3. Sur la page de **Microsoft Azure Active Directory Connect**, cliquez sur **Télécharger**, puis cliquez sur **Exécuter**.
     

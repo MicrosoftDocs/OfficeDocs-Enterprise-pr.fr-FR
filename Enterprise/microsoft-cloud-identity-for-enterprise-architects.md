@@ -1,5 +1,5 @@
 ---
-title: "Identité cloud Microsoft pour les architectes d’entreprise"
+title: Identité cloud Microsoft pour les architectes d’entreprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,16 +12,15 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - O365ITProTrain
 - Ent_Architecture
 ms.assetid: d27b5085-7325-4ab9-9d9a-438908a65d2c
 description: "Résumé : Concevez votre solution d'identité pour plateformes et services cloud Microsoft."
-ms.openlocfilehash: 07a27a63972163948148da117084800171a304b7
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+ms.openlocfilehash: d5f122a8ec001f6f61130f0efc52656955e13016
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-cloud-identity-for-enterprise-architects"></a>Identité cloud Microsoft pour les architectes d’entreprise
 
@@ -55,10 +54,10 @@ La figure 1 montre bien qu’Azure AD est le fournisseur d’identité pour le
   
 ### <a name="azure-active-directory"></a>Azure Active Directory
 
-Microsoft Azure Active Directory est le service de gestion de l’accès et de l’identité hébergé sur le cloud de Microsoft. Il s’agit d’un outil central pour les plateformes et les services cloud de Microsoft. L’intégration à Azure Active Directory permet d’accéder à tous les services SaaS de Microsoft à l’aide de votre ensemble actuel de comptes et de mots de passe. Cette intégration fournit également une identité basée sur le cloud pour les applications PaaS Azure. 
+Microsoft Azure Active Directory est le service de gestion de l'accès et de l'identité hébergé sur le cloud de Microsoft. Il s'agit d'un outil central pour les plateformes et les services cloud de Microsoft. L'intégration à Azure Active Directory permet d'accéder à tous les services SaaS de Microsoft à l'aide de votre ensemble actuel de comptes et de mots de passe. Cette intégration fournit également une identité basée sur le cloud pour les applications PaaS Azure. 
   
 > [!NOTE]
-> Même avec Azure AD, les services de domaine Active Directory en local restent nécessaires pour les entreprises ou les machines virtuelles utilisant Windows et exécutées dans l’IaaS (Infrastructure as a Service - infrastructure en tant que Service) Azure. 
+> Même avec Azure AD, les services de domaine Active Directory en local restent nécessaires pour les entreprises ou les machines virtuelles utilisant Windows et exécutées dans l'IaaS (Infrastructure as a Service - infrastructure en tant que Service) Azure. 
   
 Il existe trois éditions d'Azure Active Directory : gratuite, de base et Premium. 
   
@@ -262,7 +261,7 @@ La figure 7 présente les trois options disponibles pour l’intégration de vo
   
 1. Enregistrez vos applications hébergées dans le cloud auprès d’Azure Active Directory.
     
-    Consultez l’article MSDN [Intégration d’applications dans Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=524303). Cette opération vous permet d’utiliser Azure Active Directory pour authentifier l’accès à votre application PaaS, ainsi que d’autoriser des utilisateurs ou des administrateurs à octroyer des droits sur votre application à d’autres utilisateurs afin que ces derniers puissent accéder à du contenu en leur nom à partir d’autres services cloud, comme Office 365. Vous pouvez obtenir des détails supplémentaires et des exemples de code dans l’article MSDN [Scénarios d’authentification pour Azure AD](https://go.microsoft.com/fwlink/p/?LinkId=524304). 
+    Consultez l'article MSDN [Intégration d'applications dans Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=524303). Cette opération vous permet d'utiliser Azure Active Directory pour authentifier l'accès à votre application PaaS, ainsi que d'autoriser des utilisateurs ou des administrateurs à octroyer des droits sur votre application à d'autres utilisateurs afin que ces derniers puissent accéder à du contenu en leur nom à partir d'autres services cloud, comme, Office 365. Vous pouvez obtenir des détails supplémentaires et des exemples de code dans l'article MSDN [Scénarios d'authentification pour Azure AD](https://go.microsoft.com/fwlink/p/?LinkId=524304). 
     
 2. Les applications qui requièrent une authentification par programmation pour accéder à une application sécurisée par AD SD, AD FS sur Windows Server 2012 R2 ou Azure Active Directory peuvent utiliser les outils suivants :
     
@@ -272,7 +271,7 @@ La figure 7 présente les trois options disponibles pour l’intégration de vo
     
     L’API Azure AD Graph prend en charge OAuth et OpenID Connect. Elle fonctionne également avec les applications PaaS.
     
-3. Configurez des applications métier ou locales exécutées sur des machines virtuelles dans un réseau virtuel Azure pour utiliser l’authentification Windows (NTLM ou Kerberos) directement. Cette option est celle qui offre la meilleure expérience utilisateur et requiert la configuration minimale pour les développeurs d’applications serveur.
+3. Configurez des applications métier ou locales exécutées sur des machines virtuelles dans un réseau virtuel Azure pour utiliser l'authentification Windows (NTLM ou Kerberos) directement. Cette option est celle qui offre la meilleure expérience utilisateur et requiert la configuration minimale pour les développeurs d'applications serveur.
     
 ### <a name="application-integration-example"></a>Exemple d’intégration d’applications
 
@@ -282,7 +281,7 @@ Pour vous authentifier auprès d’Azure Active Directory et récupérer des don
   
 ## <a name="deploying-directory-components-in-azure"></a>Déploiement de composants d’annuaire dans Azure
 
-Vous pouvez déployer des composants d’annuaire, tels que des serveurs utilisés pour la synchronisation de mot de passe ou l’authentification fédérée, dans un réseau virtuel Azure plutôt que dans un centre de données local. Cette solution a certains avantages, en particulier si vous envisagez d’étendre les services AD DS à Azure.
+Vous pouvez déployer des composants d'annuaire, tels que des serveurs utilisés pour la synchronisation de mot de passe ou l'authentification fédérée, dans un réseau virtuel Azure plutôt que dans un centre de données local. Cette solution a certains avantages, en particulier si vous envisagez d'étendre les services AD DS à Azure.
   
 Voici les composants d’annuaire qui peuvent être mis dans un réseau virtuel Azure :
   
@@ -330,7 +329,7 @@ Si vous n'avez pas déjà déployé AD FS en local, penchez-vous sur les avantag
   
  **Figure 9 : Déploiement de votre infrastructure d'authentification fédérée dans Azure**
   
-La figure 9 présente un ensemble de contrôleurs de domaine locaux répliquant des informations AD DS avec un ensemble de contrôleurs de domaine situés dans un réseau virtuel Azure. L’outil Azure AD Connect exécuté sur un serveur du réseau virtuel Azure envoie une demande aux contrôleurs locaux pour obtenir les modifications, puis envoie ces modifications à Azure AD. Les demandes d’authentification auprès d’Azure AD émanant de services Saas de Microsoft, d’applications PaaS Azure et d’autres applications cloud sont transférées à un programme d’équilibrage de charge externe qui les transfère ensuite à un ensemble de serveurs Proxy d’application web. Les serveurs proxy d’application web transmettent la demande à un programme d’équilibrage de charge interne, lequel la transfère ensuite à un ensemble de serveurs AD FS. Les serveurs AD FS transfèrent alors la demande à un contrôleur de domaine pour valider les informations d’identification d’envoi.
+La figure 9 présente un ensemble de contrôleurs de domaine locaux répliquant des informations AD DS avec un ensemble de contrôleurs de domaine situés dans un réseau virtuel Azure. L'outil Azure AD Connect exécuté sur un serveur du réseau virtuel Azure envoie une demande aux contrôleurs locaux pour obtenir les modifications, puis envoie ces modifications à Azure AD. Les demandes d'authentification auprès d'Azure AD émanant de services Saas de Microsoft, d'applications PaaS Azure et d'autres applications cloud sont transférées à un programme d'équilibrage de charge externe qui les transfère ensuite à un ensemble de serveurs Proxy d'application web. Les serveurs proxy d'application web transmettent la demande à un programme d'équilibrage de charge interne, lequel la transfère ensuite à un ensemble de serveurs AD FS. Les serveurs AD FS transfèrent alors la demande à un contrôleur de domaine pour valider les informations d'identification de d'envoi.
   
  Cette solution fonctionne avec :
   
@@ -346,7 +345,7 @@ Pour plus d'informations, voir [Intégration de vos identités locales avec Azur
   
 ### <a name="standalone-ad-ds-environment-in-an-azure-virtual-network"></a>Environnement AD DS autonome dans un réseau virtuel Azure
 
-Il n’est pas toujours nécessaire d’intégrer une application cloud avec votre environnement local. Par exemple, un domaine AD DS autonome placé dans un réseau virtuel Azure prend en charge les applications accessibles au public, telles que les sites Internet.
+Il n'est pas toujours nécessaire d'intégrer une application cloud avec votre environnement local. Par exemple, un domaine AD DS autonome placé dans un réseau virtuel Azure prend en charge les applications accessibles au public, telles que les sites Internet.
   
 ![Environnement AD DS autonome pour une application serveur](images/98c7349f-535d-4c9b-8de4-e580f6d573d4.png)
   
@@ -366,7 +365,8 @@ Pour plus d'informations, voir [Intégration de vos identités locales avec Azur
 
 [Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs](https://sway.com/FJ2xsyWtkJc2taRD)
+[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs (en anglais)](https://sway.com/FJ2xsyWtkJc2taRD)
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Mise en réseau cloud Microsoft pour les architectes d’entreprise"
+title: Mise en réseau cloud Microsoft pour les architectes d’entreprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,21 +12,20 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: 13c71689-59a9-4cdf-8175-808a20c1e879
-description: "Résumé : Concevez votre réseau pour les services et les plateformes cloud de Microsoft"
-ms.openlocfilehash: 3ad510ff63ec861976804ab62c85213652415bee
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 'Résumé : Concevez votre réseau pour les services et les plateformes cloud de Microsoft'
+ms.openlocfilehash: 8b4a31c782abb359f521eb86fae211239bbb80d0
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-cloud-networking-for-enterprise-architects"></a>Mise en réseau cloud Microsoft pour les architectes d’entreprise
 
  **Résumé :** Concevez votre réseau pour les services et les plateformes cloud de Microsoft
   
-Cet article vous dirige vers un ensemble d’articles qui décrivent ce que les architectes informatiques doivent savoir sur la conception de réseau pour les organisations utilisant les services et les plateformes cloud de Microsoft. Vous pouvez également voir ces informations sous forme d’une affiche de 12 pages et l’imprimer au format tabloïd (également appelé format comptable, 11 x 17 ou A3).
+Cet article vous dirige vers un ensemble d'articles qui décrivent ce que les architectes informatiques doivent savoir sur la conception de réseau pour les organisations utilisant les services et les plateformes cloud de Microsoft. Vous pouvez également voir ces informations sous forme d'une affiche de 12 pages et l'imprimer au format tabloïd (également appelé format comptable, 11 x 17 ou A3).
   
 [![Image miniature représentant le modèle de mise en réseau cloud Microsoft](images/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)  
 ](https://go.microsoft.com/fwlink/p/?linkid=842073)
@@ -70,7 +69,8 @@ Pour visionner un récapitulatif de 30 minutes des points clés de cette affiche
 
 [Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs](https://sway.com/FJ2xsyWtkJc2taRD)
+[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs (en anglais)](https://sway.com/FJ2xsyWtkJc2taRD)
+
 
 
 

@@ -3,7 +3,7 @@ title: Fonctionnalités Multi-Geo dans OneDrive et SharePoint Online dans Offic
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 4/3/2018
+ms.date: 4/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,15 +11,15 @@ ms.custom: Strat_SP_gtc
 localization_priority: Normal
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: Développez votre présence sur Office 365 dans plusieurs régions géographiques avec des capacités multi-geo dans SharePoint Online et de OneDrive.
-ms.openlocfilehash: 2c5de533aaaace68e51b747cd62a53b9572bcaec
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 3f72158fe05aadfe8a08a5520bf65cd2d0aaa1c6
+ms.sourcegitcommit: a81d08c7e8771cb2c232435971e3169d4f7428dc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365"></a>Fonctionnalités Multi-Geo dans OneDrive et SharePoint Online dans Office 365
 
-Avec les fonctionnalités multigéographiques dans OneDrive et SharePoint Online, votre organisation peut étendre sa présence Office 365 à plusieurs régions géographiques ou pays au sein de votre client existant. Cette fonctionnalité est actuellement en phase d’évaluation. Prenez contact avec votre équipe de compte Microsoft pour inscrire votre entreprise internationale à la version d’évaluation multigéographique de OneDrive.
+Grâce aux fonctions de multi-geo dans OneDrive et SharePoint Online, votre organisation peut développer sa présence d’Office 365 à plusieurs régions géographiques et/ou pays au sein de vos clients existants. Contact avec votre responsable de compte Microsoft pour inscrire votre société internationale de OneDrive pour entreprise Multi-Geo.
   
 Avec OneDrive Multi-Geo, vous pouvez provisionner et stocker des données au repos dans l’emplacement géographique que vous avez choisi pour répondre aux exigences en matière de délégation de compétences de données et en même temps déverrouiller votre déploiement global des expériences de productivité moderne à vos effectifs.
   

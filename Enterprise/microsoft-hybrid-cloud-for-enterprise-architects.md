@@ -1,5 +1,5 @@
 ---
-title: "Cloud hybride Microsoft pour les architectes d’entreprise"
+title: Cloud hybride Microsoft pour les architectes d’entreprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: 54deae50-9442-4b6a-bd86-e5edb0ec6d74
-description: "Résumé : Tout ce que les architectes informatiques doivent savoir sur les scénarios hybrides utilisant les plateformes et services cloud de Microsoft."
-ms.openlocfilehash: d6bb757ff18bd8251e660fbd76afa71893c9bc77
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
-ms.translationtype: HT
+description: 'Résumé : Tout ce que les architectes informatiques doivent savoir sur les scénarios hybrides utilisant les plateformes et services cloud de Microsoft.'
+ms.openlocfilehash: 491e445f197e0f499f2762adc20b696cfce9c20a
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Cloud hybride Microsoft pour les architectes d’entreprise
 

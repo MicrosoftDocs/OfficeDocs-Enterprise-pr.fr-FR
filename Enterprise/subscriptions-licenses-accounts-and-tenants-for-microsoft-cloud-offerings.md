@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
-description: "Résumé : Comprendre les relations entre les organisations, les abonnements, licences, comptes d’utilisateurs et locataires sur les offres en nuage de Microsoft."
-ms.openlocfilehash: a1bcc040d046e4e5674f16432aeffb0a34b9031b
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 'Résumé : Comprendre les relations entre les organisations, les abonnements, licences, comptes d’utilisateurs et locataires sur les offres en nuage de Microsoft.'
+ms.openlocfilehash: ff4854bc66f9a500715bbcd2da696b9a4519aa82
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Abonnements, licences, les comptes et les locataires pour les offres en nuage de Microsoft
 
@@ -32,7 +31,7 @@ Microsoft fournit une hiérarchie des organisations, des abonnements, des licenc
     
     Consultez les [plans d’activités et de tarification](https://products.office.com/business/compare-office-365-for-business-plans) pour plus d’informations.
     
-- Microsoft Azure
+- Microsoft Azure
     
     Pour plus d’informations, consultez [tarification d’Azure](https://azure.microsoft.com/pricing/) .
     
@@ -150,7 +149,7 @@ Le tableau suivant décrit la manière dont vous pouvez combiner plusieurs offre
    
 Une solution simple pour ajouter des abonnements à votre organisation pour les services SaaS Microsoft consiste à utiliser le centre d’administration Office 365 :
   
-1. Connectez-vous au portail Office 365 ([https://portal.office.com](https://portal.office.com)) avec votre compte d’administrateur global, puis cliquez sur **administration**.
+1. Connectez-vous au portail Office 365 ([https://portal.office.com](https://portal.office.com)) auprès de votre administrateur global de compte, puis cliquez sur **administration**.
     
 2. À partir de navigation de gauche de la page d’accueil **Centre d’administration** , cliquez sur **facturation**, **services d’achat**.
     

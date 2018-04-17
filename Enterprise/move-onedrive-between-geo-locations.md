@@ -7,13 +7,14 @@ ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+ms.custom: Strat_SP_gtc
 localization_priority: Normal
 description: Découvrez comment déplacer un site de OneDrive à un emplacement géographique différent.
-ms.openlocfilehash: a31f683170fdb83dac90e9d09884c3020d1a47b1
-ms.sourcegitcommit: 3f3d2de6c0c5225156cfba01bc980994cd9ae848
+ms.openlocfilehash: 7ce9106fa7d8d144f0f8935713b4df926a73fb6b
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Déplacer un site de OneDrive à une autre géolocalisation 
 
@@ -76,9 +77,9 @@ Par exemple, pour déplacer le OneDrive de matt@contosoenergy.onmicrosoft.com d�
 
 Pour planifier un déplacement geo ultérieurement, utilisez un des paramètres suivants :
 
--   _PreferredMoveBeginDate_ – la volonté de déplacement susceptibles de commencer en ce moment spécifié.
+-   _PreferredMoveBeginDate_ – la volonté de déplacement susceptibles de commencer en ce moment spécifié. Temps doit être spécifié en temps universel coordonné (UTC).
 
--   _PreferredMoveEndDate_ – la volonté de déplacement susceptibles d’être terminée à cette heure spécifiée, de mieux.
+-   _PreferredMoveEndDate_ – la volonté de déplacement susceptibles d’être terminée à cette heure spécifiée, de mieux. Temps doit être spécifié en temps universel coordonné (UTC). 
 
 ## <a name="cancel-a-onedrive-geo-move"></a>Annuler un déplacement de geo OneDrive 
 
@@ -135,7 +136,7 @@ Vous pouvez également ajouter la `-Verbose` paramètre pour obtenir une descrip
 
 Les utilisateurs de OneDrive Notez perturbant si leur OneDrive est déplacé vers un emplacement géographique différent. En plus d’un état de lecture seule brève au cours du déplacement, les autorisations et les liens existants continueront à fonctionner comme prévu une fois le déplacement terminé.
 
-### <a name="onedrive-for-business"></a>OneDrive Entreprise
+### <a name="onedrive-for-business"></a>OneDrive for Business
 
 Pendant le déplacement OneDrive de l’utilisateur a la valeur en lecture seule. Une fois le déplacement terminé, l’utilisateur est dirigé vers leur OneDrive dans le nouvel emplacement géographique lorsqu’ils naviguent pour OneDrive le Lanceur d’applications Office 365 ou un navigateur web.
 

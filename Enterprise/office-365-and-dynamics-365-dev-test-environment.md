@@ -1,5 +1,5 @@
 ---
-title: "Environnement de développement/test Office 365 et Dynamics 365"
+title: Environnement de développement/test Office 365 et Dynamics 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,15 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365, Strat_O365_Enterprise
-ms.custom: Strat_O365_Enterprise, Ent_TLGs
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom: Ent_TLGs
 ms.assetid: 098c1a1d-83a1-40eb-bbc9-47de7af8bb23
-description: "Résumé : Utilisez ce Guide de laboratoire de Test pour ajouter des Dynamics 365 à votre environnement de développement/test d’Office 365."
-ms.openlocfilehash: f13cf81f989867e543439e1ccb6ecd7f8ba55cb6
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+description: 'Résumé : Utilisez ce Guide de laboratoire de Test pour ajouter des Dynamics 365 à votre environnement de développement/test d’Office 365.'
+ms.openlocfilehash: 24f121c9e5f8a25bae61ce4a59b42d528ffbda17
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-365-and-dynamics-365-devtest-environment"></a>Environnement de développement/test Office 365 et Dynamics 365
 
@@ -58,15 +60,15 @@ Dans cette phase, vous vous inscrivez pour l’abonnement d’évaluation Dynami
 
 1. En utilisant un navigateur soit sur votre ordinateur de bureau (léger) ou à partir de CLIENT1 (entreprise en simulation), connectez-vous au portail Office 365 à [https://portal.office.com](https://portal.office.com) avec les informations d’identification de votre compte d’administrateur global.
     
-2. Cliquez sur la mosaïque de **l’Admin** .
+2. Cliquez sur la vignette **Administration**.
     
 3. Dans l’onglet **Centre admin** , dans la navigation de gauche, cliquez sur **de facturation > acheter les services**.
     
 4. Dans la page **services d’achat** , trouver l’élément de **Dynamics 365 Plan 1 Enterprise Edition** . Placez le pointeur de la souris sur elle et cliquez sur **Démarrer la version d’évaluation gratuite**.
     
-5. Dans la page **Confirmer votre commande** , cliquez sur **Essayer maintenant**.
+5. Dans la page **Confirmer votre commande**, cliquez sur **Essayer maintenant**.
     
-6. Dans la page **reçu de commande** , cliquez sur **Continuer**.
+6. Dans la page **Réception de la commande**, cliquez sur **Continuer**.
     
 > [!NOTE]
 > L’abonnement d’évaluation Dynamics 365 Plan 1 Enterprise Edition est valide pendant 30 jours. Vous pouvez facilement étendre l’abonnement d’évaluation pour une période supplémentaire de 30 jours. Pour un environnement de développement/test permanent, créez un nouvel abonnement payant avec un nombre réduit de licences. 

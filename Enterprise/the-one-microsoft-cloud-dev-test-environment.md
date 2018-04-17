@@ -1,5 +1,5 @@
 ---
-title: "Environnement de développement/test Microsoft Cloud unique"
+title: Environnement de développement/test Microsoft Cloud unique
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: a1370fe4-2fd6-4fea-ad1d-3555433d6d2e
-description: "Résumé : Utilisez ce Guide de laboratoire de Test pour créer un environnement de développement/test qui inclut toutes les offres en nuage de Microsoft."
-ms.openlocfilehash: 90f93b1050ec0c2b82f4ed42c76413d68b314b7c
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 'Résumé : Utilisez ce Guide de laboratoire de Test pour créer un environnement de développement/test qui inclut toutes les offres en nuage de Microsoft.'
+ms.openlocfilehash: c1d0e190e6d7e3871cf4289729b53cc0b4b5d04d
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-one-microsoft-cloud-devtest-environment"></a>Environnement de développement/test Microsoft Cloud unique
 
@@ -59,22 +58,22 @@ Dans cette phase, vous vous inscrivez pour l’abonnement d’évaluation EMS et
   
 1. Avec un navigateur soit sur votre ordinateur de bureau ou à partir de CLIENT1, ouvrez une session sur le portail Office 365 à [https://portal.office.com](https://portal.office.com) avec les informations d’identification de votre compte d’administrateur global.
     
-2. Cliquez sur la mosaïque de **l’Admin** .
+2. Cliquez sur la vignette **Administration**.
     
-3. Dans l’onglet **Centre d’administration d’Office** dans votre navigateur, dans la navigation de gauche, cliquez sur **de facturation > acheter les services**.
+3. Sous l’onglet **Centre d’administration Office** de votre navigateur, dans le volet de navigation gauche, cliquez sur **Facturation > Acheter des services**.
     
 4. Dans la page **services d’achat** , trouver la **mobilité d’entreprise + E5 de la sécurité** . Placez le pointeur de la souris sur elle et cliquez sur **Démarrer la version d’évaluation gratuite**.
     
-5. Dans la page **Confirmer votre commande** , cliquez sur **Essayer maintenant**.
+5. Dans la page **Confirmer votre commande**, cliquez sur **Essayer maintenant**.
     
-6. Dans la page **reçu de commande** , cliquez sur **Continuer**.
+6. Dans la page **Réception de la commande**, cliquez sur **Continuer**.
     
 > [!NOTE]
 > L’abonnement à la version d’évaluation d’Enterprise Mobility + Security E5 est de 90 jours. Pour un environnement de développement/test permanent, créez un nouvel abonnement payant avec un nombre réduit de licences. 
   
 Ensuite, activez la licence Enterprise Mobility + Security E5 pour tous les comptes d’utilisateur.
   
-1. Dans l’onglet **Centre d’administration d’Office 365** dans votre navigateur, dans la navigation de gauche, cliquez sur **les utilisateurs > utilisateurs actifs**.
+1. Sous l’onglet **Centre d’administration Office 365** de votre navigateur, dans le volet de navigation gauche, cliquez sur **Utilisateurs > Utilisateurs actifs**.
     
 2. Cliquez sur votre compte d’administrateur global, puis cliquez sur **Modifier** pour les **licences de produit**.
     
@@ -102,15 +101,15 @@ Dans cette phase, vous allez souscrire à l’abonnement d’évaluation Dynamic
   
 1. À l’aide d’un navigateur soit sur votre ordinateur de bureau ou à partir de CLIENT1, connectez-vous au portail Office 365 à [https://portal.office.com](https://portal.office.com) avec les informations d’identification de votre compte d’administrateur global.
     
-2. Cliquez sur la mosaïque de **l’Admin** .
+2. Cliquez sur la vignette **Administration**.
     
 3. Dans l’onglet **Centre admin** , dans la navigation de gauche, cliquez sur **de facturation > acheter les services**.
     
 4. Dans la page **services d’achat** , trouver l’élément de **Dynamics 365 Plan 1 Enterprise Edition** . Placez le pointeur de la souris sur elle et cliquez sur **Démarrer la version d’évaluation gratuite**.
     
-5. Dans la page **Confirmer votre commande** , cliquez sur **Essayer maintenant**.
+5. Dans la page **Confirmer votre commande**, cliquez sur **Essayer maintenant**.
     
-6. Dans la page **reçu de commande** , cliquez sur **Continuer**.
+6. Dans la page **Réception de la commande**, cliquez sur **Continuer**.
     
 > [!NOTE]
 > L’abonnement d’évaluation Dynamics 365 Plan 1 Enterprise Edition est valide pendant 30 jours. Vous pouvez facilement étendre l’abonnement d’évaluation pour une période supplémentaire de 30 jours. Pour un environnement de développement/test permanent, créez un nouvel abonnement payant avec un nombre réduit de licences. 

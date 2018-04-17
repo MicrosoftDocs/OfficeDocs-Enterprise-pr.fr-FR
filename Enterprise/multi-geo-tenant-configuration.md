@@ -7,13 +7,14 @@ ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+ms.custom: Strat_SP_gtc
 localization_priority: Normal
 description: Apprenez à configurer les OneDrive d’entreprise Multi-Geo.
-ms.openlocfilehash: 4ef31df802eeaedf2eecbdd295d2e359816e4909
-ms.sourcegitcommit: 3f3d2de6c0c5225156cfba01bc980994cd9ae848
+ms.openlocfilehash: 56268acd319684ecb713e674b8accbe311d08dce
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="onedrive-for-business-multi-geo-tenant-configuration"></a>OneDrive pour la configuration des clients Business Multi-Geo
 
@@ -23,7 +24,7 @@ Avant de configurer vos clients pour OneDrive pour entreprise Multi-Geo, veillez
 
 Pour utiliser OneDrive pour entreprise Multi-Geo, vous devez le plan de _Capacités Multi-Geo dans Office 365_ . Travailler avec votre équipe de compte à ajouter ce plan pour vos clients. Votre équipe de compte va vous connecter avec le spécialiste de la licence approprié et obtenir vos clients configurés.
 
-Notez que le plan _Des fonctionnalités dans Office 365 Multi-Geo_ est un plan de service au niveau de l’utilisateur. Vous avez besoin d’une licence pour chaque utilisateur que vous souhaitez héberger dans un emplacement de setellite. Vous pouvez ajouter davantage de licences lorsque vous ajoutez des utilisateurs dans des emplacements de satellite au fil du temps.
+Notez que le plan _Des fonctionnalités dans Office 365 Multi-Geo_ est un plan de service au niveau de l’utilisateur. Vous avez besoin d’une licence pour chaque utilisateur que vous souhaitez héberger dans un emplacement de satellite. Vous pouvez ajouter davantage de licences lorsque vous ajoutez des utilisateurs dans des emplacements de satellite au fil du temps.
 
 Une fois que votre client a été configuré avec le plan de _Capacités Multi-Geo dans Office 365_ , l’onglet **emplacements de la zone géographique** devient disponible dans le [Centre d’administration OneDrive](https://admin.onedrive.com).
 
@@ -88,7 +89,7 @@ Pour ajouter un emplacement géographique de satellite
 
 6. Cliquez sur **Fermer**.
 
-Une fois la mise en service d’un emplacement de satellite est terminée, vous recevrez un e-mail de confirmation. Lorsque le nouvel emplacement géographique s’affiche en bleu sur la carte dans l’onglet **emplacements de la zone géographique** dans le centre d’administration OneDrive, vous pourrez définir l’emplacement de données par défaut des utilisateurs à cet emplacement-geo. 
+Mise en service peut prendre de quelques heures à 72 heures, en fonction de la taille de vos clients. Une fois la mise en service d’un emplacement de satellite est terminée, vous recevrez un e-mail de confirmation. Lorsque le nouvel emplacement géographique s’affiche en bleu sur la carte dans l’onglet **emplacements de la zone géographique** dans le centre d’administration OneDrive, vous pourrez définir l’emplacement de données par défaut des utilisateurs à cet emplacement-geo. 
 
 > [!IMPORTANT]
 > Votre nouvel emplacement géographique de satellites est établi avec les paramètres par défaut. Cela vous permettra de configurer cet emplacement géographique en fonction de vos besoins de conformité locale.

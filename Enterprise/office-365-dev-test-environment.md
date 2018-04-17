@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365, Strat_O365_Enterprise
-ms.custom: Strat_O365_Enterprise, Ent_TLGs
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom:
+- Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: 'Résumé : Utilisez ce Guide de laboratoire de Test pour créer un abonnement d’évaluation de Office 365 pour l’évaluation ou de développement/test.'
-ms.openlocfilehash: 70a316f89078305b52e27348dce8a133d7f6de7d
-ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
+ms.openlocfilehash: 12de8b5dbd468d292e824e5ed3245fc2141cc65c
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-365-devtest-environment"></a>Environnement de développement/test Office 365
 
@@ -26,7 +29,7 @@ Vous pouvez utiliser un abonnement d’évaluation Office 365 et créer un envi
   
 - L’environnement de développement/test Office 365 léger se compose d’un abonnement d’évaluation Office 365 auquel vous accédez depuis votre ordinateur principal.
     
-    Utilisez cet environnement lorsque vous voulez montrer rapidement une fonctionnalité. Pour l’environnement de développement/test Office 365 léger, suivez les instructions des phases 2 et 3 de cet article.
+    Utilisez cet environnement lorsque vous voulez démontrer rapidement une fonctionnalité. Pour l’environnement de développement/test léger Office 365, effectuez uniquement les étapes 2 et 3 du présent article.
     
 - L’environnement de développement/test Office 365 d’entreprise simulé comprend un abonnement d’évaluation Office 365 et un intranet d’organisation simplifié connecté à Internet, qui est hébergé dans les services d’infrastructure de Microsoft Azure. Vous pouvez créer cette configuration entièrement dans le cloud de Microsoft.
     
@@ -56,13 +59,13 @@ Cette configuration se compose des machines virtuelles DC1, APP1 et CLIENT1 sur 
 
 Pour démarrer votre abonnement d’évaluation Office 365 E5, vous avez besoin d’un nom d’entreprise fictif et d’un nouveau compte Microsoft.
   
-1. Nous vous recommandons d’utiliser une variante du nom de la société Contoso pour le nom de votre société, est une société fictive utilisée dans l’exemple de contenu de Microsoft, mais il n’est pas obligatoire. Enregistrer votre nom de la société fictive : ___.
+1. Nous vous recommandons d’utiliser une variante du nom de la société Contoso pour le nom de votre société, est une société fictive utilisée dans l’exemple de contenu de Microsoft, mais il n’est pas obligatoire. Notez ici le nom de votre société fictive :![](./images/Common_Images/TableLine.png)
     
 2. Pour vous inscrire à un nouveau compte Microsoft, accédez à [https://outlook.com](https://outlook.com) et créez un compte avec un nouveau compte de messagerie et une adresse. Vous utiliserez ce compte pour vous inscrire à Office 365.
     
-  - Enregistrer le prénom et le nom de votre nouveau compte ici : ___.
+  - Enregistrer le prénom et le nom de votre nouveau compte ici :![](./images/Common_Images/TableLine.png)
     
-  - Indiquer l’adresse du nouveau compte de messagerie ici : _____________________________@outlook.com
+  - Enregistrer la nouveau compte adresse ici : ![](./images/Common_Images/TableLine.png)@outlook.com
     
 ### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>Inscription à un abonnement d’évaluation Office 365 E5
 
@@ -105,7 +108,7 @@ Stop-Process -Name Explorer -Force
     
     Enregistrez le mot de passe saisi dans un emplacement sécurisé.
     
-    Enregistrer le nom de la société fictive d’être désignée sous le **nom de l’organisation**, ici : ___.
+    Enregistrer le nom de la société fictive d’être désignée sous le **nom de l’organisation**, ici :![](./images/Common_Images/TableLine.png)
     
 5. Cliquez sur **créer mon compte**.
     
@@ -113,9 +116,9 @@ Stop-Process -Name Explorer -Force
     
 7. Tapez le code de vérification dans le message reçu, puis cliquez sur **suivant**.
     
-8. Enregistrer la page de connexion URL ici (sélectionner et copier) : ___.
+8. Enregistrer la page de connexion URL ici (sélectionner et copier) :![](./images/Common_Images/TableLine.png)
     
-9. Enregistrez l’identifiant utilisateur ici (sélectionnez-le et copiez-le) : __________________________________.onmicrosoft.com
+9. Enregistrer le code utilisateur ici (sélectionner et copier) : ![](./images/Common_Images/TableLine.png). onmicrosoft.com
     
     Cette valeur sera dénommée le **nom de l’administrateur global Office 365**.
     
@@ -229,11 +232,11 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
 
 Enregistrez ces valeurs pour utiliser ou déployer les guides de laboratoire de test dans cet environnement de test :
   
-- Nom de l’administrateur général Office 365 : ____________________________________.onmicrosoft.com (indiqué à l’étape 9 de la phase 2)
+- Nom de l’administrateur global Office 365 : ![](./images/Common_Images/TableLine.png). onmicrosoft.com (de l’étape 9 de la Phase 2)
     
     Enregistrez également le mot de passe de ce compte dans un emplacement sécurisé.
     
-- Nom de l’organisation de l’abonnement d’évaluation : _______________________________________________ (indiqué à l’étape 4 de la phase 2)
+- Le nom de votre organisation d’essai : ![](./images/Common_Images/TableLine.png) (à partir de l’étape 4 de la Phase 2)
     
 - Pour répertorier les comptes pour Utilisateur 2, Utilisateur 3, Utilisateur 4 et Utilisateur 5, exécutez la commande suivante à partir de l’invite Module Windows Azure Active Directory pour Windows PowerShell :
     
@@ -243,13 +246,13 @@ Enregistrez ces valeurs pour utiliser ou déployer les guides de laboratoire de 
 
     Enregistrez les noms de compte ici :
     
-  - Nom du compte Utilisateur 2 : user2@_______________________________________________.onmicrosoft.com
+  - Nom du compte utilisateur 2 : Utilisateur2 @![](./images/Common_Images/TableLine.png). onmicrosoft.com
     
-  - Nom du compte Utilisateur 3 : user3@_______________________________________________.onmicrosoft.com
+  - Nom du compte utilisateur 3 : l’util_3 @![](./images/Common_Images/TableLine.png). onmicrosoft.com
     
-  - Nom du compte Utilisateur 4 : user4@_______________________________________________.onmicrosoft.com
+  - Nom du compte utilisateur 4 : Utilisateur4 @![](./images/Common_Images/TableLine.png). onmicrosoft.com
     
-  - Nom du compte Utilisateur 5 : user5@_______________________________________________.onmicrosoft.com
+  - Nom du compte utilisateur 5 : user5 @![](./images/Common_Images/TableLine.png). onmicrosoft.com
     
     Enregistrez également les mots de passe de ces comptes dans un emplacement sécurisé.
     
@@ -259,11 +262,11 @@ Enregistrez ces valeurs pour utiliser ou déployer les guides de laboratoire de 
   Get-SPOSite | Where URL -like "*/sites/*" | Sort URL | Select URL
   ```
 
-  - URL du site de production :https://______________________________________________.sharepoint.com/sites/production
+  - URL de site de production : https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/production
     
-  - URL du site de vente :https://______________________________________________.sharepoint.com/sites/sales
+  - URL du site de vente : https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/sales
     
-  - URL du site de support technique :https://______________________________________________.sharepoint.com/sites/support
+  - Prise en charge d’URL du site : https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/support
     
 ## <a name="next-steps"></a>Étapes suivantes
 
@@ -295,10 +298,10 @@ Utilisez ces articles supplémentaires dans votre environnement de développemen
     
 ## <a name="see-also"></a>Voir aussi
 
-[Guides de laboratoire de test d'adoption cloud](cloud-adoption-test-lab-guides-tlgs.md)
+- [Guides de laboratoire de test d'adoption cloud](cloud-adoption-test-lab-guides-tlgs.md)
   
-[Environnement de développement/test Office 365 et Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md)
+- [Environnement de développement/test Office 365 et Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md)
   
-[Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.md)
+ - [Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.md)
 
 

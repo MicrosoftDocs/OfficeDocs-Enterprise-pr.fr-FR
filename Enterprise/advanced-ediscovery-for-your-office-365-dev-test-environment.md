@@ -1,5 +1,5 @@
 ---
-title: "Advanced eDiscovery pour votre environnement de développement/test Office 365"
+title: Advanced eDiscovery pour votre environnement de développement/test Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,15 +10,15 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
-- TLG-
+- TLG
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
-description: "Résumé : Configurer et illustrer l’avancée de Office 365 d’eDiscovery avec des exemples de données dans votre environnement de développement/test d’Office 365."
-ms.openlocfilehash: a118ec2753d04afb60d13890b7d5da8c07701721
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 'Résumé : Configurer et illustrer l’avancée de Office 365 d’eDiscovery avec des exemples de données dans votre environnement de développement/test d’Office 365.'
+ms.openlocfilehash: e850cf7ebab806d8ff51176a3e88077a692c41ef
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Advanced eDiscovery pour votre environnement de développement/test Office 365
 

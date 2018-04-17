@@ -1,5 +1,5 @@
 ---
-title: "Guides de laboratoire de test d’adoption cloud"
+title: Guides de laboratoire de test d’adoption cloud
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: "Résumé : Utilisez ces adoption du cloud Guides de laboratoires de Test (TLGs) pour définir les démonstration, preuve de concept, ou les environnements de développement/test pour Office 365, la mobilité d’entreprise + sécurité (EMS), Dynamics 365 et produits Office Server."
-ms.openlocfilehash: 3172b6033fbb7dd79b8eb786d92a4f58886a8fd5
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 'Résumé : Utilisez ces adoption du cloud Guides de laboratoires de Test (TLGs) pour définir les démonstration, preuve de concept, ou les environnements de développement/test pour Office 365, la mobilité d’entreprise + sécurité (EMS), Dynamics 365 et produits Office Server.'
+ms.openlocfilehash: 1597bcefbcfa578e74d96676b3ea446c72a080bc
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="cloud-adoption-test-lab-guides-tlgs"></a>Guides de laboratoire de test d’adoption cloud
 

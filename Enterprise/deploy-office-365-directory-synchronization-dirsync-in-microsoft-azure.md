@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: 'Résumé : Déployer Azure AD se connecter sur une machine virtuelle dans Azure pour synchroniser les comptes entre votre répertoire local et le locataire Azure AD de votre abonnement à Office 365.'
-ms.openlocfilehash: af0c837ead0ddfce31d7f3635f3283f118d26dca
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 31a72d027acd274c9908a7e63e83843bce9cec71
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="deploy-office-365-directory-synchronization-in-microsoft-azure"></a>Déployer Office 365 la synchronisation d’annuaire dans Microsoft Azure
 
@@ -105,7 +105,7 @@ La liste suivante décrit les choix de conception effectués pour cette solution
     
 - Sur le réseau local, un contrôleur de domaine et des serveurs DNS existent.
     
-- Azure Connect d’Active Directory effectue la synchronisation de hachage de mot de passe au lieu de l’ouverture de session unique. Vous n’êtes pas obligé de déployer une infrastructure de Services de fédération Active Directory (Active Directory Federation Services). Pour plus d’informations sur la synchronisation de hachage de mot de passe et les options d’ouverture de session unique, reportez-vous à [déterminer quel scénario d’intégration d’annuaire à utiliser](https://go.microsoft.com/fwlink/p/?LinkId=393094).
+- Azure Connect d’Active Directory effectue la synchronisation de hachage de mot de passe au lieu de l’ouverture de session unique. Vous n’êtes pas obligé de déployer une infrastructure de Services de fédération Active Directory (Active Directory Federation Services). Pour plus d’informations sur la synchronisation de hachage de mot de passe et les options d’ouverture de session unique, reportez-vous à la section [choix de la méthode d’authentification de droite pour votre solution d’identité hybride Azure Active Directory](http://aka.ms/auth-options).
     
 Il existe des choix de conception supplémentaires que vous pourriez envisager lorsque vous déployez cette solution dans votre environnement. Ceux-ci incluent notamment :
   

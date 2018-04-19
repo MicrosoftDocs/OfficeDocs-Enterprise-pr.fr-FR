@@ -3,7 +3,7 @@ title: Environnement de développement/test Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/04/2018
+ms.date: 04/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,11 +15,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: 'Résumé : Utilisez ce Guide de laboratoire de Test pour créer un abonnement d’évaluation de Office 365 pour l’évaluation ou de développement/test.'
-ms.openlocfilehash: 12de8b5dbd468d292e824e5ed3245fc2141cc65c
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 61c1fc5a997eaa0a524d49e7806fc8bb102ee281
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="office-365-devtest-environment"></a>Environnement de développement/test Office 365
 
@@ -71,22 +71,9 @@ Pour démarrer votre abonnement d’évaluation Office 365 E5, vous avez beso
 
 1. Pour l’environnement de développement/test léger Office 365, ouvrez le navigateur Internet sur votre ordinateur et accédez à [https://aka.ms/e5trial](https://aka.ms/e5trial). 
     
-    Pour l’environnement de développement/test simulées entreprise Office 365 :
-    
-  - À partir du [portail Azure](https://portal.azure.com), se connecter à CLIENT1 avec le CORP\\compte utilisateur1.
-    
-  - Exécutez ces commandes à l’invite de commande Windows PowerShell de niveau administrateur.
-    
-  ```
-  Set-ItemProperty -Path "HKLM:\\SOFTWARE\\Microsoft\\Active Setup\\Installed Components\\{A509B1A7-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
-Set-ItemProperty -Path "HKLM:\\SOFTWARE\\Microsoft\\Active Setup\\Installed Components\\{A509B1A8-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
-Stop-Process -Name Explorer -Force
-  ```
+    L’environnement de développement/test simulées entreprise Office 365, vous connecter à CLIENT1 avec le compte CORP\User1 à partir du portail Azure.
 
-    > [!TIP]
-    > Cliquez [ici](https://gallery.technet.microsoft.com/PowerShell-commands-for-fe3d7a34) pour obtenir un fichier texte qui contient toutes les commandes de PowerShell dans cet article.
-  
-  - À partir de l’écran de démarrage, cliquez sur **Internet Explorer** et accédez à [https://aka.ms/e5trial](https://aka.ms/e5trial).
+    À partir de l’écran de démarrage, exécutez Microsoft Edge et accédez à [https://aka.ms/e5trial](https://aka.ms/e5trial).
     
 2. Sur la page **d’accueil, nous allons apprendre à vous connaître** , spécifiez :
     
@@ -161,6 +148,8 @@ $licAssignment= $orgName + ":ENTERPRISEPREMIUM"
 $userName= "user2@" + $orgName + ".onmicrosoft.com"
 New-MsolUser -DisplayName "User 2" -FirstName User -LastName 2 -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment
 ```
+> [!TIP]
+> Cliquez [ici](https://gallery.technet.microsoft.com/PowerShell-commands-for-fe3d7a34) pour obtenir un fichier texte qui contient toutes les commandes de PowerShell dans cet article.
 
 À partir de l’affichage de la commande **New-MsolUser** , notez le mot de passe généré pour le compte de l’utilisateur 2 et l’enregistrer dans un emplacement sûr.
   
@@ -296,12 +285,12 @@ Utilisez ces articles supplémentaires dans votre environnement de développemen
     
 - [Environnement de développement/test Office 365 et Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md)
     
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Concepts
 
-- [Guides de laboratoire de test d'adoption cloud](cloud-adoption-test-lab-guides-tlgs.md)
+- [Guides de laboratoire de test sur l'adoption du cloud](cloud-adoption-test-lab-guides-tlgs.md)
   
 - [Environnement de développement/test Office 365 et Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md)
   
- - [Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.md)
+- [Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.md)
 
 

@@ -3,7 +3,7 @@ title: Se connecter à Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/12/2018
+ms.date: 04/18/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 'Résumé : Connexion à votre organisation d’Office 365 à l’aide d’Office 365 PowerShell pour effectuer les tâches de centre d’administration Office 365 à partir de la ligne de commande.'
-ms.openlocfilehash: 95d1e5717d3fec7f0d3102beb65eebaef28bd6cf
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 71b8c8d61a914fa7fd036fadb7e17ca3f66cd639
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="connect-to-office-365-powershell"></a>Se connecter à Office 365 PowerShell
 
@@ -27,7 +27,6 @@ ms.lasthandoff: 04/16/2018
   
 Office 365 PowerShell vous permet pour gérer vos paramètres Office 365 à partir de la ligne de commande. Se connecter à Office 365 PowerShell est un processus en trois étapes simple où vous installez les logiciels requis, exécuter les logiciels requis et puis connectez à votre organisation d’Office 365. 
 
-Notez que ces instructions de connexion sont les mêmes que ceux de la rubrique [Azure ActiveDirectory (MSOnline)](https://go.microsoft.com/fwlink/p/?LinkId=528113).
   
 > [!TIP]
 > **Nouveau PowerShell ?** Voir une [Présentation vidéo de PowerShell](https://support.office.com/en-us/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx), proposée par formation de LinkedIn. 
@@ -120,15 +119,15 @@ Si vous recevez des erreurs, vérifiez les conditions requises suivantes :
     
 - **Si vous recevez une erreur de connexion, consultez la rubrique suivante :** [« Connect-MsolService : la levée de l’Exception de type » erreur](https://go.microsoft.com/fwlink/p/?LinkId=532377).
     
-## <a name="connect-with-the-azure-active-directory-v2-powershell-module"></a>Se connecter au module Azure Active Directory V2 PowerShell
+## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>Se connecter avec Azure Active Directory PowerShell pour module de graphique
 <a name="ConnectV2"> </a>
 
-Commandes dans le module PowerShell de Azure Active Directory V2 ont « AzureAD » dans leur nom de l’applet de commande.
+Commandes dans Azure Active Directory PowerShell pour module de graphique ont « AzureAD » dans leur nom de l’applet de commande.
 
-Pour les procédures nécessitant les nouvelles applets de commande du module PowerShell de Azure Active Directory V2, suivez ces étapes pour installer le module et le connecter à votre abonnement à Office 365.
+Pour les procédures nécessitant les nouvelles applets de commande PowerShell Active Directory Azure pour module de graphique, suivez ces étapes pour installer le module et le connecter à votre abonnement à Office 365.
 
 >[!Note]
->Pour plus d’informations sur la prise en charge pour les différentes versions de Microsoft Windows, reportez-vous à la section [module PowerShell de Azure Active Directory V2](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory) .
+>Pour plus d’informations sur la prise en charge pour les différentes versions de Microsoft Windows, reportez-vous à la section [Azure de Active Directory PowerShell pour module de graphique](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory) .
 >
 
 ### <a name="step-1-install-required-software"></a>Étape 1 : Installer les logiciels requis
@@ -168,7 +167,7 @@ Dans la boîte de dialogue **Azure Active Directory PowerShell** , tapez votre t
     
 Suivez les instructions dans la boîte de dialogue **Azure Active Directory PowerShell** pour fournir des informations d’authentification supplémentaires, comme un code de vérification, puis cliquez sur **se connecter**.
     
-Une fois connecté, vous pouvez utiliser les nouvelles applets de commande du [module PowerShell de Azure Active Directory V2](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory).
+Une fois connecté, vous pouvez utiliser les nouvelles applets de commande pour [Azure de Active Directory PowerShell pour module de graphique](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory).
   
 ## <a name="see-also"></a>Voir aussi
 

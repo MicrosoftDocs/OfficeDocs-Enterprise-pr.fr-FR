@@ -3,7 +3,7 @@ title: Environnement de développement/test Microsoft 365 Entreprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/18/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,113 +15,116 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 'Résumé : Utilisez ce Guide de laboratoire de Test pour créer un environnement de développement/test incluant Office 365 E5, mobilité d’entreprise + E5 de sécurité (EMS) et un ordinateur exécutant Windows 10 Enterprise.'
-ms.openlocfilehash: 47557b7d7bdb09e2ce2731a17d6e4b35ddcd063d
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 9ef1c13d7ae194ff4ba31abaf379529220ffa14f
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="the-microsoft-365-enterprise-devtest-environment"></a><span data-ttu-id="d3df1-103">Environnement de développement/test Microsoft 365 Entreprise</span><span class="sxs-lookup"><span data-stu-id="d3df1-103">The Microsoft 365 Enterprise dev/test environment</span></span>
+# <a name="the-microsoft-365-enterprise-devtest-environment"></a><span data-ttu-id="d16e0-103">Environnement de développement/test Microsoft 365 Entreprise</span><span class="sxs-lookup"><span data-stu-id="d16e0-103">The Microsoft 365 Enterprise dev/test environment</span></span>
 
- <span data-ttu-id="d3df1-104">**Résumé :** Utilisez ce Guide de laboratoire de Test pour créer un environnement de développement/test incluant Office 365 E5, mobilité d’entreprise + E5 de sécurité (EMS) et un ordinateur exécutant Windows 10 Enterprise.</span><span class="sxs-lookup"><span data-stu-id="d3df1-104">**Summary:** Use this Test Lab Guide to create a dev/test environment that includes Office 365 E5, Enterprise Mobility + Security (EMS) E5, and a computer running Windows 10 Enterprise.</span></span>
+ <span data-ttu-id="d16e0-104">**Résumé :** Utilisez ce Guide de laboratoire de Test pour créer un environnement de développement/test incluant Office 365 E5, mobilité d’entreprise + E5 de sécurité (EMS) et un ordinateur exécutant Windows 10 Enterprise.</span><span class="sxs-lookup"><span data-stu-id="d16e0-104">**Summary:** Use this Test Lab Guide to create a dev/test environment that includes Office 365 E5, Enterprise Mobility + Security (EMS) E5, and a computer running Windows 10 Enterprise.</span></span>
   
-<span data-ttu-id="d3df1-105">Cet article vous fournit des instructions pas à pas pour créer un environnement simplifié pour tester les fonctionnalités [d’Entreprise de Microsoft 365](https://www.microsoft.com/microsoft-365/enterprise).</span><span class="sxs-lookup"><span data-stu-id="d3df1-105">This article provides you with step-by-step instructions to create a simplified environment to test the features and functionality of [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise).</span></span>
+<span data-ttu-id="d16e0-105">Cet article vous fournit des instructions pas à pas pour créer un environnement simplifié pour tester les fonctionnalités [d’Entreprise de Microsoft 365](https://www.microsoft.com/microsoft-365/enterprise).</span><span class="sxs-lookup"><span data-stu-id="d16e0-105">This article provides you with step-by-step instructions to create a simplified environment to test the features and functionality of [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise).</span></span>
   
-## <a name="phase-1-create-your-office-365-e5-subscription"></a><span data-ttu-id="d3df1-106">Phase 1 : Création de votre abonnement Office 365 E5</span><span class="sxs-lookup"><span data-stu-id="d3df1-106">Phase 1: Create your Office 365 E5 subscription</span></span>
+## <a name="phase-1-create-your-office-365-e5-subscription"></a><span data-ttu-id="d16e0-106">Phase 1 : Création de votre abonnement Office 365 E5</span><span class="sxs-lookup"><span data-stu-id="d16e0-106">Phase 1: Create your Office 365 E5 subscription</span></span>
 
-<span data-ttu-id="d3df1-107">Suivez les étapes de la Phase 2 et 3 de Phase de [l’environnement de développement/test Office 365](office-365-dev-test-environment.md) pour créer un environnement de développement/test lightweight Office 365, comme illustré dans la Figure 1.</span><span class="sxs-lookup"><span data-stu-id="d3df1-107">Follow the steps in Phase 2 and Phase 3 of [Office 365 dev/test environment](office-365-dev-test-environment.md) to create a lightweight Office 365 dev/test environment, as shown in Figure 1.</span></span>
+<span data-ttu-id="d16e0-107">Suivez les étapes de la Phase 2 et 3 de Phase de l' [environnement de développement/test Office 365](office-365-dev-test-environment.md) pour créer un environnement de développement/test lightweight Office 365, comme illustré dans la Figure 1.</span><span class="sxs-lookup"><span data-stu-id="d16e0-107">Follow the steps in Phase 2 and Phase 3 of the [Office 365 dev/test environment](office-365-dev-test-environment.md) to create a lightweight Office 365 dev/test environment, as shown in Figure 1.</span></span>
   
-<span data-ttu-id="d3df1-108">**Figure 1 : Votre abonnement Office 365 E5 avec ses comptes d’utilisateurs et les clients de Azure Active Directory (AD)**</span><span class="sxs-lookup"><span data-stu-id="d3df1-108">**Figure 1: Your Office 365 E5 subscription with its Azure Active Directory (AD) tenant and user accounts**</span></span>
+<span data-ttu-id="d16e0-108">**Figure 1 : Votre abonnement Office 365 E5 avec ses comptes d’utilisateurs et les clients de Azure Active Directory (AD)**</span><span class="sxs-lookup"><span data-stu-id="d16e0-108">**Figure 1: Your Office 365 E5 subscription with its Azure Active Directory (AD) tenant and user accounts**</span></span>
 
 ![Phase 1 de l’environnement de développement/test Microsoft 365 Entreprise](images/65bb027b-fb59-46eb-aec2-38c0af425168.png)
-  
-## <a name="phase-2-add-ems"></a><span data-ttu-id="d3df1-110">Phase 2 : Ajout d’EMS</span><span class="sxs-lookup"><span data-stu-id="d3df1-110">Phase 2: Add EMS</span></span>
 
-<span data-ttu-id="d3df1-111">Dans cette phase, vous vous inscrivez pour l’abonnement à la version d’évaluation d’EMS E5 et l’ajoutez à la même organisation que votre abonnement à la version d’évaluation d’Office 365 E5.</span><span class="sxs-lookup"><span data-stu-id="d3df1-111">In this phase, you sign up for the EMS E5 trial subscription and add it to the same organization as your Office 365 E5 trial subscription.</span></span>
+> [!NOTE]
+> <span data-ttu-id="d16e0-p101">L’abonnement d’évaluation d’Office 365 E5 est de 30 jours, ce qui peut facilement être étendues à 60 jours. Pour un environnement de développement/test permanent, créez un nouveau payants avec un petit nombre de licences.</span><span class="sxs-lookup"><span data-stu-id="d16e0-p101">The Office 365 E5 trial subscription is 30 days, which can be easily extended to 60 days. For a permanent dev/test environment, create a new paid subscription with a small number of licenses.</span></span> 
   
-<span data-ttu-id="d3df1-112">Tout d’abord, ajouter l’abonnement d’évaluation EMS E5 et affecter une licence EMS à votre compte d’administrateur global.</span><span class="sxs-lookup"><span data-stu-id="d3df1-112">First, add the EMS E5 trial subscription and assign an EMS license to your global administrator account.</span></span>
+## <a name="phase-2-add-ems"></a><span data-ttu-id="d16e0-112">Phase 2 : Ajout d’EMS</span><span class="sxs-lookup"><span data-stu-id="d16e0-112">Phase 2: Add EMS</span></span>
+
+<span data-ttu-id="d16e0-113">Dans cette phase, vous vous inscrivez pour l’abonnement à la version d’évaluation d’EMS E5 et l’ajoutez à la même organisation que votre abonnement à la version d’évaluation d’Office 365 E5.</span><span class="sxs-lookup"><span data-stu-id="d16e0-113">In this phase, you sign up for the EMS E5 trial subscription and add it to the same organization as your Office 365 E5 trial subscription.</span></span>
   
-1. <span data-ttu-id="d3df1-p101">Avec une instance privée d’un navigateur Internet, connectez-vous au portail Office 365 avec vos informations d’identification du compte administrateur global. Pour de l’aide, consultez la rubrique [pour vous connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).</span><span class="sxs-lookup"><span data-stu-id="d3df1-p101">With a private instance of an Internet browser, sign in to the Office 365 portal with your global administrator account credentials. For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).</span></span>
+<span data-ttu-id="d16e0-114">Tout d’abord, ajouter l’abonnement d’évaluation EMS E5 et affecter une licence EMS à votre compte d’administrateur global.</span><span class="sxs-lookup"><span data-stu-id="d16e0-114">First, add the EMS E5 trial subscription and assign an EMS license to your global administrator account.</span></span>
+  
+1. <span data-ttu-id="d16e0-p102">Avec une instance privée d’un navigateur Internet, connectez-vous au portail Office 365 avec vos informations d’identification du compte administrateur global. Pour de l’aide, consultez la rubrique [pour vous connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).</span><span class="sxs-lookup"><span data-stu-id="d16e0-p102">With a private instance of an Internet browser, sign in to the Office 365 portal with your global administrator account credentials. For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).</span></span>
     
-2. <span data-ttu-id="d3df1-115">Cliquez sur la vignette **Administration**.</span><span class="sxs-lookup"><span data-stu-id="d3df1-115">Click the **Admin** tile.</span></span>
+2. <span data-ttu-id="d16e0-117">Cliquez sur la vignette **Administration**.</span><span class="sxs-lookup"><span data-stu-id="d16e0-117">Click the **Admin** tile.</span></span>
     
-3. <span data-ttu-id="d3df1-116">Sous l’onglet **Centre d’administration Office** de votre navigateur, dans le volet de navigation gauche, cliquez sur **Facturation > Acheter des services**.</span><span class="sxs-lookup"><span data-stu-id="d3df1-116">On the **Office Admin center** tab in your browser, in the left navigation, click **Billing > Purchase services**.</span></span>
+3. <span data-ttu-id="d16e0-118">Sous l’onglet **Centre d’administration Office** de votre navigateur, dans le volet de navigation gauche, cliquez sur **Facturation > Acheter des services**.</span><span class="sxs-lookup"><span data-stu-id="d16e0-118">On the **Office Admin center** tab in your browser, in the left navigation, click **Billing > Purchase services**.</span></span>
     
-4. <span data-ttu-id="d3df1-p102">Dans la page **services d’achat** , trouver la **mobilité d’entreprise + E5 de la sécurité** . Placez le pointeur de la souris sur elle et cliquez sur **Démarrer la version d’évaluation gratuite**.</span><span class="sxs-lookup"><span data-stu-id="d3df1-p102">On the **Purchase services** page, find the **Enterprise Mobility + Security E5** item. Hover your mouse pointer over it and click **Start free trial**.</span></span>
+4. <span data-ttu-id="d16e0-p103">Dans la page **services d’achat** , trouver la **mobilité d’entreprise + E5 de la sécurité** . Placez le pointeur de la souris sur elle et cliquez sur **Démarrer la version d’évaluation gratuite**.</span><span class="sxs-lookup"><span data-stu-id="d16e0-p103">On the **Purchase services** page, find the **Enterprise Mobility + Security E5** item. Hover your mouse pointer over it and click **Start free trial**.</span></span>
     
-5. <span data-ttu-id="d3df1-119">Dans la page **Confirmer votre commande**, cliquez sur **Essayer maintenant**.</span><span class="sxs-lookup"><span data-stu-id="d3df1-119">On the **Confirm your order** page, click **Try now**.</span></span>
+5. <span data-ttu-id="d16e0-121">Dans la page **Confirmer votre commande**, cliquez sur **Essayer maintenant**.</span><span class="sxs-lookup"><span data-stu-id="d16e0-121">On the **Confirm your order** page, click **Try now**.</span></span>
     
-6. <span data-ttu-id="d3df1-120">Dans la page **Réception de la commande**, cliquez sur **Continuer**.</span><span class="sxs-lookup"><span data-stu-id="d3df1-120">On the **Order receipt** page, click **Continue**.</span></span>
+6. <span data-ttu-id="d16e0-122">Dans la page **Réception de la commande**, cliquez sur **Continuer**.</span><span class="sxs-lookup"><span data-stu-id="d16e0-122">On the **Order receipt** page, click **Continue**.</span></span>
     
-7. <span data-ttu-id="d3df1-121">Sous l’onglet **Centre d’administration Office 365** de votre navigateur, dans le volet de navigation gauche, cliquez sur **Utilisateurs > Utilisateurs actifs**.</span><span class="sxs-lookup"><span data-stu-id="d3df1-121">On the **Office 365 Admin center** tab in your browser, in the left navigation, click **Users > Active users**.</span></span>
+7. <span data-ttu-id="d16e0-123">Sous l’onglet **Centre d’administration Office 365** de votre navigateur, dans le volet de navigation gauche, cliquez sur **Utilisateurs > Utilisateurs actifs**.</span><span class="sxs-lookup"><span data-stu-id="d16e0-123">On the **Office 365 Admin center** tab in your browser, in the left navigation, click **Users > Active users**.</span></span>
     
-8. <span data-ttu-id="d3df1-122">Cliquez sur votre compte d’administrateur global, puis cliquez sur **Modifier** pour les **licences de produit**.</span><span class="sxs-lookup"><span data-stu-id="d3df1-122">Click your global administrator account, and then click **Edit** for **Product licenses**.</span></span>
+8. <span data-ttu-id="d16e0-124">Cliquez sur votre compte d’administrateur global, puis cliquez sur **Modifier** pour les **licences de produit**.</span><span class="sxs-lookup"><span data-stu-id="d16e0-124">Click your global administrator account, and then click **Edit** for **Product licenses**.</span></span>
     
-9. <span data-ttu-id="d3df1-123">Dans le volet des **licences** , activer la licence du produit de **mobilité d’entreprise + sécurité E5** **on**et cliquez sur **Enregistrer,** puis cliquez deux fois sur **Fermer** .</span><span class="sxs-lookup"><span data-stu-id="d3df1-123">On the **Product licenses** pane, turn the product license for **Enterprise Mobility + Security E5** to **On**, click **Save,** and then click **Close** twice.</span></span>
+9. <span data-ttu-id="d16e0-125">Dans le volet des **licences** , activer la licence du produit de **mobilité d’entreprise + sécurité E5** **on**et cliquez sur **Enregistrer,** puis cliquez deux fois sur **Fermer** .</span><span class="sxs-lookup"><span data-stu-id="d16e0-125">On the **Product licenses** pane, turn the product license for **Enterprise Mobility + Security E5** to **On**, click **Save,** and then click **Close** twice.</span></span>
     
 > [!NOTE]
-> <span data-ttu-id="d3df1-p103">L’abonnement à la version d’évaluation d’Enterprise Mobility + Security E5 est de 90 jours. Pour un environnement de développement/test permanent, créez un nouvel abonnement payant avec un nombre réduit de licences.</span><span class="sxs-lookup"><span data-stu-id="d3df1-p103">The Enterprise Mobility + Security E5 trial subscription is 90 days. For a permanent dev/test environment, create a new paid subscription with a small number of licenses.</span></span> 
+> <span data-ttu-id="d16e0-p104">L’abonnement à la version d’évaluation d’Enterprise Mobility + Security E5 est de 90 jours. Pour un environnement de développement/test permanent, créez un nouvel abonnement payant avec un nombre réduit de licences.</span><span class="sxs-lookup"><span data-stu-id="d16e0-p104">The Enterprise Mobility + Security E5 trial subscription is 90 days. For a permanent dev/test environment, create a new paid subscription with a small number of licenses.</span></span> 
   
- <span data-ttu-id="d3df1-126">***Si vous avez terminé la Phase 3 de la*** [Environnement de développement/test d’office 365](office-365-dev-test-environment.md), répétez les étapes 8 et 9 de la procédure précédente pour l’ensemble de vos autres comptes (utilisateur 2, utilisateur 3, utilisateur 4 et 5 de l’utilisateur).</span><span class="sxs-lookup"><span data-stu-id="d3df1-126">***If you completed Phase 3 of the*** [Office 365 dev/test environment](office-365-dev-test-environment.md), repeat steps 8 and 9 of the previous procedure for all of your other accounts (User 2, User 3, User 4, and User 5).</span></span>
+ <span data-ttu-id="d16e0-128">***Si vous avez terminé la Phase 3 de la*** [Environnement de développement/test d’office 365](office-365-dev-test-environment.md), répétez les étapes 8 et 9 de la procédure précédente pour l’ensemble de vos autres comptes (utilisateur 2, utilisateur 3, utilisateur 4 et 5 de l’utilisateur).</span><span class="sxs-lookup"><span data-stu-id="d16e0-128">***If you completed Phase 3 of the*** [Office 365 dev/test environment](office-365-dev-test-environment.md), repeat steps 8 and 9 of the previous procedure for all of your other accounts (User 2, User 3, User 4, and User 5).</span></span>
   
-<span data-ttu-id="d3df1-127">Votre environnement de développement/test comporte maintenant :</span><span class="sxs-lookup"><span data-stu-id="d3df1-127">Your dev/test environment now has:</span></span>
+<span data-ttu-id="d16e0-129">Votre environnement de développement/test comporte maintenant :</span><span class="sxs-lookup"><span data-stu-id="d16e0-129">Your dev/test environment now has:</span></span>
   
-- <span data-ttu-id="d3df1-128">Des abonnements d’évaluation Office 365 E5 Entreprise et EMS qui partagent la même organisation et le même client Azure AD avec votre liste des comptes d’utilisateur.</span><span class="sxs-lookup"><span data-stu-id="d3df1-128">Office 365 E5 Enterprise and EMS trial subscriptions sharing the same organization and the same Azure AD tenant with your list of user accounts.</span></span>
-- <span data-ttu-id="d3df1-129">Tous vos comptes d’utilisateur appropriés (uniquement l’administrateur global ou tous les cinq comptes d’utilisateur) sont activés pour utiliser Office 365 E5 et EMS E5.</span><span class="sxs-lookup"><span data-stu-id="d3df1-129">All your appropriate user accounts (either just the global administrator or all five user accounts) are enabled to use Office 365 E5 and EMS E5.</span></span>
+- <span data-ttu-id="d16e0-130">Abonnements d’essai Office 365 E5 Enterprise et EMS E5 partage le locataire AD Azure même avec votre liste de comptes d’utilisateurs.</span><span class="sxs-lookup"><span data-stu-id="d16e0-130">Office 365 E5 Enterprise and EMS E5 trial subscriptions sharing the same Azure AD tenant with your list of user accounts.</span></span>
+- <span data-ttu-id="d16e0-131">Tous vos comptes d’utilisateur appropriés (uniquement l’administrateur global ou tous les cinq comptes d’utilisateur) sont activés pour utiliser Office 365 E5 et EMS E5.</span><span class="sxs-lookup"><span data-stu-id="d16e0-131">All your appropriate user accounts (either just the global administrator or all five user accounts) are enabled to use Office 365 E5 and EMS E5.</span></span>
     
-<span data-ttu-id="d3df1-130">La figure 2 montre la configuration obtenue, qui ajoute EMS.</span><span class="sxs-lookup"><span data-stu-id="d3df1-130">Figure 2 shows your resulting configuration, which adds EMS.</span></span>
+<span data-ttu-id="d16e0-132">La figure 2 montre la configuration obtenue, qui ajoute EMS.</span><span class="sxs-lookup"><span data-stu-id="d16e0-132">Figure 2 shows your resulting configuration, which adds EMS.</span></span>
   
-<span data-ttu-id="d3df1-131">**Figure 2 : Ajout de l’abonnement d’évaluation EMS**</span><span class="sxs-lookup"><span data-stu-id="d3df1-131">**Figure 2: Adding the EMS trial subscription**</span></span>
+<span data-ttu-id="d16e0-133">**Figure 2 : Ajout de l’abonnement d’évaluation EMS**</span><span class="sxs-lookup"><span data-stu-id="d16e0-133">**Figure 2: Adding the EMS trial subscription**</span></span>
 
 ![Phase 2 de l’environnement de développement/test Microsoft 365 Entreprise](images/8a01a483-3de2-41f3-a845-141c7edd0cb0.png)
   
-## <a name="phase-3-create-a-windows-10-enterprise-computer"></a><span data-ttu-id="d3df1-133">Phase 3 : Création d’un ordinateur Windows 10 Entreprise</span><span class="sxs-lookup"><span data-stu-id="d3df1-133">Phase 3: Create a Windows 10 Enterprise computer</span></span>
+## <a name="phase-3-create-a-windows-10-enterprise-computer"></a><span data-ttu-id="d16e0-135">Phase 3 : Création d’un ordinateur Windows 10 Entreprise</span><span class="sxs-lookup"><span data-stu-id="d16e0-135">Phase 3: Create a Windows 10 Enterprise computer</span></span>
 
-<span data-ttu-id="d3df1-134">Au cours de cette phase, vous allez créer un ordinateur autonome exécutant Windows 10 Entreprise.</span><span class="sxs-lookup"><span data-stu-id="d3df1-134">In this phase, you create a standalone computer running Windows 10 Enterprise.</span></span>
+<span data-ttu-id="d16e0-136">Au cours de cette phase, vous allez créer un ordinateur autonome exécutant Windows 10 Entreprise.</span><span class="sxs-lookup"><span data-stu-id="d16e0-136">In this phase, you create a standalone computer running Windows 10 Enterprise.</span></span>
   
-### <a name="physical-computer"></a><span data-ttu-id="d3df1-135">Ordinateur physique</span><span class="sxs-lookup"><span data-stu-id="d3df1-135">Physical computer</span></span>
+### <a name="physical-computer"></a><span data-ttu-id="d16e0-137">Ordinateur physique</span><span class="sxs-lookup"><span data-stu-id="d16e0-137">Physical computer</span></span>
 
-<span data-ttu-id="d3df1-p104">Obtenir un ordinateur personnel et installer Windows 10 Enterprise. Vous pouvez télécharger le Windows 10 Enterprise d’évaluation [ici](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).</span><span class="sxs-lookup"><span data-stu-id="d3df1-p104">Obtain a personal computer and install Windows 10 Enterprise on it. You can download the Windows 10 Enterprise trial [here](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).</span></span>
+<span data-ttu-id="d16e0-p105">Obtenir un ordinateur personnel et installer Windows 10 Enterprise. Vous pouvez télécharger le Windows 10 Enterprise d’évaluation [ici](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).</span><span class="sxs-lookup"><span data-stu-id="d16e0-p105">Obtain a personal computer and install Windows 10 Enterprise on it. You can download the Windows 10 Enterprise trial [here](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).</span></span>
   
-### <a name="virtual-machine"></a><span data-ttu-id="d3df1-138">Machine virtuelle</span><span class="sxs-lookup"><span data-stu-id="d3df1-138">Virtual machine</span></span>
+### <a name="virtual-machine"></a><span data-ttu-id="d16e0-140">Machine virtuelle</span><span class="sxs-lookup"><span data-stu-id="d16e0-140">Virtual machine</span></span>
 
-<span data-ttu-id="d3df1-p105">Créer un ordinateur virtuel à l’aide de l’hyperviseur de votre choix et installer Windows 10 Enterprise. Vous pouvez télécharger le Windows 10 Enterprise d’évaluation [ici](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).</span><span class="sxs-lookup"><span data-stu-id="d3df1-p105">Create a virtual machine using the hypervisor of your choice and install Windows 10 Enterprise on it. You can download the Windows 10 Enterprise trial [here](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).</span></span>
+<span data-ttu-id="d16e0-p106">Créer un ordinateur virtuel à l’aide de l’hyperviseur de votre choix et installer Windows 10 Enterprise. Vous pouvez télécharger le Windows 10 Enterprise d’évaluation [ici](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).</span><span class="sxs-lookup"><span data-stu-id="d16e0-p106">Create a virtual machine using the hypervisor of your choice and install Windows 10 Enterprise on it. You can download the Windows 10 Enterprise trial [here](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).</span></span>
   
-### <a name="virtual-machine-in-azure"></a><span data-ttu-id="d3df1-141">Machine virtuelle dans Azure</span><span class="sxs-lookup"><span data-stu-id="d3df1-141">Virtual machine in Azure</span></span>
+### <a name="virtual-machine-in-azure"></a><span data-ttu-id="d16e0-143">Machine virtuelle dans Azure</span><span class="sxs-lookup"><span data-stu-id="d16e0-143">Virtual machine in Azure</span></span>
 
-<span data-ttu-id="d3df1-p106">Pour créer un ordinateur virtuel de Windows 10 de Microsoft Azure, ***vous devez posséder un abonnement basé sur Visual Studio***, qui a accès à l’image 10 de Windows. Autres types d’abonnements Azure, tels que des abonnements d’essai et payés, n’ont pas d’accès à cette image.</span><span class="sxs-lookup"><span data-stu-id="d3df1-p106">To create a Windows 10 virtual machine in Microsoft Azure, ***you must have a Visual Studio-based subscription***, which has access to the image for Windows 10 Enterprise. Other types of Azure subscriptions, such as trial and paid subscriptions, do not have access to this image.</span></span>
+<span data-ttu-id="d16e0-p107">Pour créer un ordinateur virtuel de Windows 10 de Microsoft Azure, ***vous devez posséder un abonnement basé sur Visual Studio***, qui a accès à l’image 10 de Windows. Autres types d’abonnements Azure, tels que des abonnements d’essai et payés, n’ont pas d’accès à cette image.</span><span class="sxs-lookup"><span data-stu-id="d16e0-p107">To create a Windows 10 virtual machine in Microsoft Azure, ***you must have a Visual Studio-based subscription***, which has access to the image for Windows 10 Enterprise. Other types of Azure subscriptions, such as trial and paid subscriptions, do not have access to this image.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="d3df1-p107">La commande suivante définit utiliser la dernière version de PowerShell d’Azure. Reportez-vous à la section [mise en route avec les applets de commande PowerShell d’Azure](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). Ces jeux de génération commande un ordinateur virtuel de Windows 10 Enterprise nommé WIN10 et l’ensemble de l’infrastructure requise, y compris un réseau virtuel, un compte de stockage et un groupe de ressources. Si vous êtes déjà familiarisé avec les services d’infrastructure Azure, veuillez s’adapter ces instructions en fonction de votre infrastructure actuellement déployé.</span><span class="sxs-lookup"><span data-stu-id="d3df1-p107">The following command sets use the latest version of Azure PowerShell. See [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). These command sets build a Windows 10 Enterprise virtual machine named WIN10 and all of its required infrastructure, including a resource group, a storage account, and a virtual network. If you are already familiar with Azure infrastructure services, please adapt these instructions to suit your currently deployed infrastructure.</span></span> 
+> <span data-ttu-id="d16e0-p108">La commande suivante définit utiliser la dernière version de PowerShell d’Azure. Reportez-vous à la section [mise en route avec les applets de commande PowerShell d’Azure](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). Ces jeux de génération commande un ordinateur virtuel de Windows 10 Enterprise nommé WIN10 et l’ensemble de l’infrastructure requise, y compris un réseau virtuel, un compte de stockage et un groupe de ressources. Si vous êtes déjà familiarisé avec les services d’infrastructure Azure, veuillez s’adapter ces instructions en fonction de votre infrastructure actuellement déployé.</span><span class="sxs-lookup"><span data-stu-id="d16e0-p108">The following command sets use the latest version of Azure PowerShell. See [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). These command sets build a Windows 10 Enterprise virtual machine named WIN10 and all of its required infrastructure, including a resource group, a storage account, and a virtual network. If you are already familiar with Azure infrastructure services, please adapt these instructions to suit your currently deployed infrastructure.</span></span> 
   
-<span data-ttu-id="d3df1-148">Tout d’abord, lancez une invite Microsoft PowerShell.</span><span class="sxs-lookup"><span data-stu-id="d3df1-148">First, start a Microsoft PowerShell prompt.</span></span>
+<span data-ttu-id="d16e0-150">Tout d’abord, lancez une invite Microsoft PowerShell.</span><span class="sxs-lookup"><span data-stu-id="d16e0-150">First, start a Microsoft PowerShell prompt.</span></span>
   
-<span data-ttu-id="d3df1-149">Connectez-vous à votre compte Azure avec la commande suivante.</span><span class="sxs-lookup"><span data-stu-id="d3df1-149">Sign in to your Azure account with the following command.</span></span>
+<span data-ttu-id="d16e0-151">Connectez-vous à votre compte Azure avec la commande suivante.</span><span class="sxs-lookup"><span data-stu-id="d16e0-151">Sign in to your Azure account with the following command.</span></span>
   
 ```
 Login-AzureRMAccount
 ```
 
-<span data-ttu-id="d3df1-150">Obtenez le nom de votre abonnement à l’aide de la commande suivante.</span><span class="sxs-lookup"><span data-stu-id="d3df1-150">Get your subscription name using the following command.</span></span>
+<span data-ttu-id="d16e0-152">Obtenez le nom de votre abonnement à l’aide de la commande suivante.</span><span class="sxs-lookup"><span data-stu-id="d16e0-152">Get your subscription name using the following command.</span></span>
   
 ```
 Get-AzureRMSubscription | Sort Name | Select Name
 ```
 
-<span data-ttu-id="d3df1-p108">Définissez votre abonnement Azure. Remplacez tout entre guillemets, y compris la \< et > caractères, avec le nom correct.</span><span class="sxs-lookup"><span data-stu-id="d3df1-p108">Set your Azure subscription. Replace everything within the quotes, including the \< and > characters, with the correct name.</span></span>
+<span data-ttu-id="d16e0-p109">Définissez votre abonnement Azure. Remplacez tout entre guillemets, y compris la \< et > caractères, avec le nom correct.</span><span class="sxs-lookup"><span data-stu-id="d16e0-p109">Set your Azure subscription. Replace everything within the quotes, including the \< and > characters, with the correct name.</span></span>
   
 ```
 $subscr="<subscription name>"
 Get-AzureRmSubscription -SubscriptionName $subscr | Select-AzureRmSubscription
 ```
 
-<span data-ttu-id="d3df1-p109">Ensuite, créez un nouveau groupe de ressources. Pour déterminer un nom de groupe de ressources unique, utilisez cette commande pour répertorier vos groupes de ressources existants.</span><span class="sxs-lookup"><span data-stu-id="d3df1-p109">Next, create a new resource group. To determine a unique resource group name, use this command to list your existing resource groups.</span></span>
+<span data-ttu-id="d16e0-p110">Ensuite, créez un nouveau groupe de ressources. Pour déterminer un nom de groupe de ressources unique, utilisez cette commande pour répertorier vos groupes de ressources existants.</span><span class="sxs-lookup"><span data-stu-id="d16e0-p110">Next, create a new resource group. To determine a unique resource group name, use this command to list your existing resource groups.</span></span>
   
 ```
 Get-AzureRMResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 ```
 
-<span data-ttu-id="d3df1-p110">Créez votre nouveau groupe de ressources avec ces commandes. Remplacez tout entre guillemets, y compris la \< et > caractères, avec le nom correct.</span><span class="sxs-lookup"><span data-stu-id="d3df1-p110">Create your new resource group with these commands. Replace everything within the quotes, including the \< and > characters, with the correct names.</span></span>
+<span data-ttu-id="d16e0-p111">Créez votre nouveau groupe de ressources avec ces commandes. Remplacez tout entre guillemets, y compris la \< et > caractères, avec le nom correct.</span><span class="sxs-lookup"><span data-stu-id="d16e0-p111">Create your new resource group with these commands. Replace everything within the quotes, including the \< and > characters, with the correct names.</span></span>
   
 ```
 $rgName="<resource group name>"
@@ -129,7 +132,7 @@ $locName="<location name, such as West US>"
 New-AzureRMResourceGroup -Name $rgName -Location $locName
 ```
 
-<span data-ttu-id="d3df1-p111">Ensuite, créez une ressource virtuelle et la machine virtuelle WIN10 avec ces commandes. Lorsque vous y êtes invité, indiquez le nom et le mot de passe du compte d’administrateur local pour WIN10, et enregistrez ces informations dans un emplacement sécurisé.</span><span class="sxs-lookup"><span data-stu-id="d3df1-p111">Next, you create a new virtual network and the WIN10 virtual machine with these commands. When prompted, provide the name and password of the local administrator account for WIN10 and store these in a secure location.</span></span>
+<span data-ttu-id="d16e0-p112">Ensuite, créez une ressource virtuelle et la machine virtuelle WIN10 avec ces commandes. Lorsque vous y êtes invité, indiquez le nom et le mot de passe du compte d’administrateur local pour WIN10, et enregistrez ces informations dans un emplacement sécurisé.</span><span class="sxs-lookup"><span data-stu-id="d16e0-p112">Next, you create a new virtual network and the WIN10 virtual machine with these commands. When prompted, provide the name and password of the local administrator account for WIN10 and store these in a secure location.</span></span>
   
 ```
 $corpnetSubnet=New-AzureRMVirtualNetworkSubnetConfig -Name Corpnet -AddressPrefix 10.0.0.0/24
@@ -150,59 +153,60 @@ $vm=Set-AzureRmVMOSDisk -VM $vm -Name WIN10-TestLab-OSDisk -DiskSizeInGB 128 -Cr
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
-## <a name="phase-4-join-your-windows-10-computer-to-azure-ad"></a><span data-ttu-id="d3df1-159">Phase 4 : Association de votre ordinateur Windows 10 à Azure AD</span><span class="sxs-lookup"><span data-stu-id="d3df1-159">Phase 4: Join your Windows 10 computer to Azure AD</span></span>
+## <a name="phase-4-join-your-windows-10-computer-to-azure-ad"></a><span data-ttu-id="d16e0-161">Phase 4 : Association de votre ordinateur Windows 10 à Azure AD</span><span class="sxs-lookup"><span data-stu-id="d16e0-161">Phase 4: Join your Windows 10 computer to Azure AD</span></span>
 
-<span data-ttu-id="d3df1-160">Après avoir créé l’ordinateur physique ou virtuel avec Windows 10 Enterprise, connectez-vous avec un compte d’administrateur local.</span><span class="sxs-lookup"><span data-stu-id="d3df1-160">After the physical or virtual machine with Windows 10 Enterprise is created, sign in with a local administrator account.</span></span>
+<span data-ttu-id="d16e0-162">Après avoir créé l’ordinateur physique ou virtuel avec Windows 10 Enterprise, connectez-vous avec un compte d’administrateur local.</span><span class="sxs-lookup"><span data-stu-id="d16e0-162">After the physical or virtual machine with Windows 10 Enterprise is created, sign in with a local administrator account.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="d3df1-p112">Pour un ordinateur virtuel dans Azure, se connecter à l’aide de [ces instructions](https://docs.microsoft.com/azure/virtual-machines/windows/connect-logon). Connectez-vous avec les informations d’identification du compte administrateur local.</span><span class="sxs-lookup"><span data-stu-id="d3df1-p112">For a virtual machine in Azure, connect to it using [these instructions](https://docs.microsoft.com/azure/virtual-machines/windows/connect-logon). Sign in with the credentials of the local administrator account.</span></span> 
+> <span data-ttu-id="d16e0-p113">Pour un ordinateur virtuel dans Azure, se connecter à l’aide de [ces instructions](https://docs.microsoft.com/azure/virtual-machines/windows/connect-logon). Connectez-vous avec les informations d’identification du compte administrateur local.</span><span class="sxs-lookup"><span data-stu-id="d16e0-p113">For a virtual machine in Azure, connect to it using [these instructions](https://docs.microsoft.com/azure/virtual-machines/windows/connect-logon). Sign in with the credentials of the local administrator account.</span></span> 
   
-<span data-ttu-id="d3df1-163">Ensuite, associez l’ordinateur WIN10 au client Azure AD de vos abonnements Office 365 et EMS.</span><span class="sxs-lookup"><span data-stu-id="d3df1-163">Next, join the WIN10 computer to the Azure AD tenant of your Office 365 and EMS subscriptions.</span></span>
+<span data-ttu-id="d16e0-165">Ensuite, associez l’ordinateur WIN10 au client Azure AD de vos abonnements Office 365 et EMS.</span><span class="sxs-lookup"><span data-stu-id="d16e0-165">Next, join the WIN10 computer to the Azure AD tenant of your Office 365 and EMS subscriptions.</span></span>
   
-1. <span data-ttu-id="d3df1-164">Sur le bureau de l’ordinateur WIN10, cliquez sur **Démarrer > Paramètres > comptes > travail d’accès ou à l’école > Connect**.</span><span class="sxs-lookup"><span data-stu-id="d3df1-164">At the desktop of the WIN10 computer, click **Start > Settings > Accounts > Access work or school > Connect**.</span></span>
+1. <span data-ttu-id="d16e0-166">Sur le bureau de l’ordinateur WIN10, cliquez sur **Démarrer > Paramètres > comptes > travail d’accès ou à l’école > Connect**.</span><span class="sxs-lookup"><span data-stu-id="d16e0-166">At the desktop of the WIN10 computer, click **Start > Settings > Accounts > Access work or school > Connect**.</span></span>
     
-2. <span data-ttu-id="d3df1-165">Dans la boîte de dialogue **configurer un compte de travail ou à l’école** , cliquez sur **joindre ce périphérique pour Azure Active Directory**.</span><span class="sxs-lookup"><span data-stu-id="d3df1-165">In the **Set up a work or school account** dialog box, click **Join this device to Azure Active Directory**.</span></span>
+2. <span data-ttu-id="d16e0-167">Dans la boîte de dialogue **configurer un compte de travail ou à l’école** , cliquez sur **joindre ce périphérique pour Azure Active Directory**.</span><span class="sxs-lookup"><span data-stu-id="d16e0-167">In the **Set up a work or school account** dialog box, click **Join this device to Azure Active Directory**.</span></span>
     
-3. <span data-ttu-id="d3df1-166">Dans **travail ou le compte de l’école**, tapez le nom du compte administrateur global de votre abonnement à Office 365, puis cliquez sur **suivant**.</span><span class="sxs-lookup"><span data-stu-id="d3df1-166">In **Work or school account**, type the global administrator account name of your Office 365 subscription, and then click **Next**.</span></span>
+3. <span data-ttu-id="d16e0-168">Dans **travail ou le compte de l’école**, tapez le nom du compte administrateur global de votre abonnement à Office 365, puis cliquez sur **suivant**.</span><span class="sxs-lookup"><span data-stu-id="d16e0-168">In **Work or school account**, type the global administrator account name of your Office 365 subscription, and then click **Next**.</span></span>
     
-4. <span data-ttu-id="d3df1-167">Dans l' **entrée de mot de passe**, tapez le mot de passe pour votre compte d’administrateur global, puis cliquez sur **se connecter**.</span><span class="sxs-lookup"><span data-stu-id="d3df1-167">In **Enter password**, type the password for your global administrator account, and then click **Sign in**.</span></span>
+4. <span data-ttu-id="d16e0-169">Dans l' **entrée de mot de passe**, tapez le mot de passe pour votre compte d’administrateur global, puis cliquez sur **se connecter**.</span><span class="sxs-lookup"><span data-stu-id="d16e0-169">In **Enter password**, type the password for your global administrator account, and then click **Sign in**.</span></span>
     
-5. <span data-ttu-id="d3df1-168">Lorsque vous êtes invité à vous assurer que c’est votre organisation, cliquez sur **joindre**, puis cliquez sur **terminé**.</span><span class="sxs-lookup"><span data-stu-id="d3df1-168">When prompted to make sure this is your organization, click **Join**, and then click **Done**.</span></span>
+5. <span data-ttu-id="d16e0-170">Lorsque vous êtes invité à vous assurer que c’est votre organisation, cliquez sur **joindre**, puis cliquez sur **terminé**.</span><span class="sxs-lookup"><span data-stu-id="d16e0-170">When prompted to make sure this is your organization, click **Join**, and then click **Done**.</span></span>
     
-6. <span data-ttu-id="d3df1-169">Fermez la fenêtre Paramètres.</span><span class="sxs-lookup"><span data-stu-id="d3df1-169">Close the settings window.</span></span>
+6. <span data-ttu-id="d16e0-171">Fermez la fenêtre Paramètres.</span><span class="sxs-lookup"><span data-stu-id="d16e0-171">Close the settings window.</span></span>
     
-<span data-ttu-id="d3df1-170">Ensuite, installez 2016 d’Office sur l’ordinateur WIN10.</span><span class="sxs-lookup"><span data-stu-id="d3df1-170">Next, install Office 2016 on the WIN10 computer.</span></span>
+<span data-ttu-id="d16e0-172">Ensuite, installez 2016 d’Office sur l’ordinateur WIN10.</span><span class="sxs-lookup"><span data-stu-id="d16e0-172">Next, install Office 2016 on the WIN10 computer.</span></span>
   
-1. <span data-ttu-id="d3df1-p113">Ouvrez le navigateur de Microsoft Edge et vous connecter au portail Office 365 avec vos informations d’identification du compte administrateur global. Pour de l’aide, consultez la rubrique [pour vous connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).</span><span class="sxs-lookup"><span data-stu-id="d3df1-p113">Open the Microsoft Edge browser and sign in to the Office 365 portal with your global administrator account credentials. For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).</span></span>
+1. <span data-ttu-id="d16e0-p114">Ouvrez le navigateur de Microsoft Edge et vous connecter au portail Office 365 avec vos informations d’identification du compte administrateur global. Pour de l’aide, consultez la rubrique [pour vous connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).</span><span class="sxs-lookup"><span data-stu-id="d16e0-p114">Open the Microsoft Edge browser and sign in to the Office 365 portal with your global administrator account credentials. For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).</span></span>
     
-2. <span data-ttu-id="d3df1-173">Sous l’onglet **Accueil de Microsoft Office** , cliquez sur **installer un 2016 Office**.</span><span class="sxs-lookup"><span data-stu-id="d3df1-173">On the **Microsoft Office Home** tab, click **Install Office 2016**.</span></span>
+2. <span data-ttu-id="d16e0-175">Sous l’onglet **Accueil de Microsoft Office** , cliquez sur **installer un 2016 Office**.</span><span class="sxs-lookup"><span data-stu-id="d16e0-175">On the **Microsoft Office Home** tab, click **Install Office 2016**.</span></span>
     
-3. <span data-ttu-id="d3df1-174">Lorsque vous y êtes invité par la procédure à suivre, cliquez sur **exécuter**, puis cliquez sur **Oui** pour le **Contrôle de compte d’utilisateur**.</span><span class="sxs-lookup"><span data-stu-id="d3df1-174">When prompted with what to do, click **Run**, and then click **Yes** for **User Account Control**.</span></span>
+3. <span data-ttu-id="d16e0-176">Lorsque vous y êtes invité par la procédure à suivre, cliquez sur **exécuter**, puis cliquez sur **Oui** pour le **Contrôle de compte d’utilisateur**.</span><span class="sxs-lookup"><span data-stu-id="d16e0-176">When prompted with what to do, click **Run**, and then click **Yes** for **User Account Control**.</span></span>
     
-4. <span data-ttu-id="d3df1-p114">Attendez que Office terminer l’installation. Lorsque vous consultez **vous tous !**, cliquez deux fois sur **Fermer** .</span><span class="sxs-lookup"><span data-stu-id="d3df1-p114">Wait for Office to complete its installation. When you see **You're all set!**, click **Close** twice.</span></span>
+4. <span data-ttu-id="d16e0-p115">Attendez que Office terminer l’installation. Lorsque vous consultez **vous tous !**, cliquez deux fois sur **Fermer** .</span><span class="sxs-lookup"><span data-stu-id="d16e0-p115">Wait for Office to complete its installation. When you see **You're all set!**, click **Close** twice.</span></span>
     
-<span data-ttu-id="d3df1-177">La figure 3 illustre l’environnement obtenu, avec l’ordinateur WIN10 associé au client Azure AD de vos abonnements Office 365 et EMS.</span><span class="sxs-lookup"><span data-stu-id="d3df1-177">Figure 3 shows your resulting environment, which includes the WIN10 computer that has joined the Azure AD tenant of your Office 365 and EMS subscriptions.</span></span>
+<span data-ttu-id="d16e0-179">La figure 3 illustre l’environnement obtenu, avec l’ordinateur WIN10 associé au client Azure AD de vos abonnements Office 365 et EMS.</span><span class="sxs-lookup"><span data-stu-id="d16e0-179">Figure 3 shows your resulting environment, which includes the WIN10 computer that has joined the Azure AD tenant of your Office 365 and EMS subscriptions.</span></span>
   
-<span data-ttu-id="d3df1-178">**Figure 3 : Ajouter le compte d’ordinateur WIN10 au locataire Azure AD**</span><span class="sxs-lookup"><span data-stu-id="d3df1-178">**Figure 3: Adding the WIN10 computer account to the Azure AD tenant**</span></span>
+<span data-ttu-id="d16e0-180">**Figure 3 : Ajouter le compte d’ordinateur WIN10 au locataire Azure AD**</span><span class="sxs-lookup"><span data-stu-id="d16e0-180">**Figure 3: Adding the WIN10 computer account to the Azure AD tenant**</span></span>
 
 ![Phase 4 de l’environnement de développement/test Microsoft 365 Entreprise](images/20680f6a-f77e-4333-aaa9-f7cf5e4b0d03.png)
   
-<span data-ttu-id="d3df1-180">Vous êtes maintenant prêt à essayer des fonctionnalités [d’Entreprise de Microsoft 365](https://www.microsoft.com/microsoft-365/enterprise).</span><span class="sxs-lookup"><span data-stu-id="d3df1-180">You are now ready to experiment with additional features of [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise).</span></span>
+<span data-ttu-id="d16e0-182">Vous êtes maintenant prêt à essayer des fonctionnalités [d’Entreprise de Microsoft 365](https://www.microsoft.com/microsoft-365/enterprise).</span><span class="sxs-lookup"><span data-stu-id="d16e0-182">You are now ready to experiment with additional features of [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise).</span></span>
   
-## <a name="next-steps"></a><span data-ttu-id="d3df1-181">Étapes suivantes</span><span class="sxs-lookup"><span data-stu-id="d3df1-181">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="d16e0-183">Étapes suivantes</span><span class="sxs-lookup"><span data-stu-id="d16e0-183">Next steps</span></span>
 
-<span data-ttu-id="d3df1-182">Ces articles supplémentaires vous feront découvrir les fonctionnalités de Microsoft 365 Entreprise :</span><span class="sxs-lookup"><span data-stu-id="d3df1-182">Use these additional articles to explore features of Microsoft 365 Enterprise:</span></span>
+<span data-ttu-id="d16e0-184">Ces articles supplémentaires vous feront découvrir les fonctionnalités de Microsoft 365 Entreprise :</span><span class="sxs-lookup"><span data-stu-id="d16e0-184">Use these additional articles to explore features of Microsoft 365 Enterprise:</span></span>
   
-- [<span data-ttu-id="d3df1-183">Ajouter des stratégies d’application mobile management (MAM)</span><span class="sxs-lookup"><span data-stu-id="d3df1-183">Add mobile application management (MAM) policies</span></span>](https://technet.microsoft.com/library/mt764059.aspx)
+- [<span data-ttu-id="d16e0-185">Ajouter des stratégies d’application mobile management (MAM)</span><span class="sxs-lookup"><span data-stu-id="d16e0-185">Add mobile application management (MAM) policies</span></span>](https://technet.microsoft.com/library/mt764059.aspx)
     
-- [<span data-ttu-id="d3df1-184">Inscrire les périphériques iOS ou Android</span><span class="sxs-lookup"><span data-stu-id="d3df1-184">Enroll iOS and Android devices</span></span>](https://technet.microsoft.com/library/mt743077.aspx)
+- [<span data-ttu-id="d16e0-186">Inscrire les périphériques iOS ou Android</span><span class="sxs-lookup"><span data-stu-id="d16e0-186">Enroll iOS and Android devices</span></span>](https://technet.microsoft.com/library/mt743077.aspx)
     
-- [<span data-ttu-id="d3df1-185">Configurer et tester la gestion avancée de la sécurité</span><span class="sxs-lookup"><span data-stu-id="d3df1-185">Configure and test Advanced Security Management</span></span>](https://technet.microsoft.com/library/mt757250.aspx)
+- [<span data-ttu-id="d16e0-187">Configurer et tester la gestion avancée de la sécurité</span><span class="sxs-lookup"><span data-stu-id="d16e0-187">Configure and test Advanced Security Management</span></span>](https://technet.microsoft.com/library/mt757250.aspx)
     
-- [<span data-ttu-id="d3df1-186">Configurer et tester la protection avancée contre les menaces</span><span class="sxs-lookup"><span data-stu-id="d3df1-186">Configure and test Advanced Threat Protection</span></span>](https://technet.microsoft.com/library/mt490479.aspx)
+- [<span data-ttu-id="d16e0-188">Configurer et tester la protection avancée contre les menaces</span><span class="sxs-lookup"><span data-stu-id="d16e0-188">Configure and test Advanced Threat Protection</span></span>](https://technet.microsoft.com/library/mt490479.aspx)
     
-## <a name="see-also"></a><span data-ttu-id="d3df1-187">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="d3df1-187">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d16e0-189">Concepts</span><span class="sxs-lookup"><span data-stu-id="d16e0-189">See Also</span></span>
 
-- [<span data-ttu-id="d3df1-188">Documentation Microsoft 365 Enterprise</span><span class="sxs-lookup"><span data-stu-id="d3df1-188">Microsoft 365 Enterprise documentation</span></span>](https://docs.microsoft.com/microsoft-365-enterprise/)
-- [<span data-ttu-id="d3df1-189">Déployer Microsoft 365 Enterprise</span><span class="sxs-lookup"><span data-stu-id="d3df1-189">Deploy Microsoft 365 Enterprise</span></span>](https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise)
-- [<span data-ttu-id="d3df1-190">L’environnement de développement/test d’un nuage de Microsoft</span><span class="sxs-lookup"><span data-stu-id="d3df1-190">The One Microsoft Cloud dev/test environment</span></span>](the-one-microsoft-cloud-dev-test-environment.md)
+- [<span data-ttu-id="d16e0-190">Documentation Microsoft 365 Enterprise</span><span class="sxs-lookup"><span data-stu-id="d16e0-190">Microsoft 365 Enterprise documentation</span></span>](https://docs.microsoft.com/microsoft-365-enterprise/)
+- [<span data-ttu-id="d16e0-191">Déployer Microsoft 365 Enterprise</span><span class="sxs-lookup"><span data-stu-id="d16e0-191">Deploy Microsoft 365 Enterprise</span></span>](https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise)
+- [<span data-ttu-id="d16e0-192">L’environnement de développement/test d’un nuage de Microsoft</span><span class="sxs-lookup"><span data-stu-id="d16e0-192">The One Microsoft Cloud dev/test environment</span></span>](the-one-microsoft-cloud-dev-test-environment.md)
+- [<span data-ttu-id="d16e0-193">Guides de laboratoire de test sur l'adoption du cloud</span><span class="sxs-lookup"><span data-stu-id="d16e0-193">Cloud adoption Test Lab Guides (TLGs)</span></span>](cloud-adoption-test-lab-guides-tlgs.md)

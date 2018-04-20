@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 description: 'Résumé : Découvrez comment utiliser les plateformes et les services cloud Microsoft. Consultez notre feuille de route Enterprise Cloud, explorez notre série sur les architectures cloud et bien plus encore.'
-ms.openlocfilehash: bf8015d1a3876276a5a7f15be7e289d1984e9193
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+ms.openlocfilehash: ccc10e2ba369d711c26936a88385fdb3c1cae3ac
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Ressources relatives à l’architecture informatique du cloud Microsoft
 
@@ -49,7 +48,7 @@ Ces affiches et ces outils relatifs à l’architecture fournissent des informat
     - [Déploiement d’un environnement de bureau moderne et sécurisé avec Microsoft](microsoft-cloud-it-architecture-resources.md#msd)
     
 > [!TIP]
-> La plupart des affiches sur cette page sont disponibles dans plusieurs langues, notamment en chinois, anglais, français, allemand, italien, japonais, coréen, portugais, russe et espagnol. Pour télécharger une affiche dans l’une de ces langues, cliquez sur le lien **Plus de langues** correspondant à cette affiche.
+> La plupart des affiches sur cette page sont disponibles dans plusieurs langues, notamment en chinois, anglais, français, allemand, italien, japonais, coréen, portugais, russe et espagnol. Pour télécharger une affiche dans l'une de ces langues, cliquez sur le lien **Plus de langues** correspondant à cette affiche.
   
 Faites-nous savoir ce que vous en pensez ! Envoyez-nous des courriers électroniques à l’adresse [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com). 
   
@@ -65,7 +64,7 @@ Consultez les affiches, les jeux d’icônes, les activités de la communauté e
 <a name="cloudarch"> </a>
 ## <a name="microsoft-cloud-for-enterprise-architects-series"></a>Série de cloud Microsoft pour les architectes d’entreprise
 
-Ces affiches relatives à l’architecture cloud fournissent des informations sur les plateformes et services cloud Microsoft, y compris Office 365, Microsoft Azure, Microsoft Intune, Microsoft Dynamics CRM Online, le centre de données de cloud privé et les solutions hybrides locales et cloud. Les architectes et décisionnaires informatiques peuvent utiliser ces ressources en vue d’identifier la solution idéale pour leurs charges de travail et lors de la prise de décisions concernant les principaux composants d’infrastructure tels que la sécurité et l’identité.
+Ces affiches relatives à l'architecture cloud fournissent des informations sur les plateformes et services cloud Microsoft, y compris Office 365, Microsoft Azure, Microsoft Intune, Microsoft Dynamics CRM Online, le centre de données de cloud privé et les solutions hybrides locales et cloud. Les architectes et décisionnaires informatiques peuvent utiliser ces ressources en vue d'identifier la solution idéale pour leurs charges de travail et lors de la prise de décisions concernant les principaux composants d'infrastructure tels que la sécurité et l'identité.
   
 <a name="platformoptions"> </a>
 ### <a name="microsoft-cloud-services-and-platform-options"></a>Options offertes par les plateformes et les services cloud Microsoft
@@ -101,7 +100,7 @@ Tout ce que les architectes informatiques doivent savoir sur la mise en réseau 
   
 |**Élément**|**Description**|
 |:-----|:-----|
-|[![Image miniature représentant le modèle de mise en réseau cloud Microsoft](images/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)          ](https://www.microsoft.com/download/details.aspx?id=54425) <br/> ![Fichier PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842073)  \| ![Fichier Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842074)           \| ![Article](images/5cec453d-5fc4-4657-8980-16543b2316ea.png)[Article](https://technet.microsoft.com/library/mt733214.aspx) <br/>![Affichage d’une page contenant des versions dans d’autres langues](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Plus de langues](https://www.microsoft.com/download/details.aspx?id=54425) <br/> | Ce modèle contient les pages suivantes : <ul><li> **Évolution de votre réseau pour la connectivité au cloud** La migration vers le cloud modifie le volume et la nature des flux de trafic internes et externes à un réseau d’entreprise. Elle a également une incidence sur les approches permettant de réduire les risques de sécurité.</li><li> **Éléments communs de la connectivité au cloud Microsoft** L’intégration de votre réseau au cloud Microsoft offre un accès optimal à une large gamme de services. </li><li> **ExpressRoute pour la connectivité cloud Microsoft** ExpressRoute fournit une connexion réseau haut débit privée et dédiée au cloud Microsoft. </li><li> **Conception de réseaux pour Microsoft SaaS (Office 365, Microsoft Intune et Dynamics CRM Online)** L'optimisation de votre réseau pour les services Microsoft SaaS nécessite une analyse approfondie d'Internet Edge, de vos périphériques client et des opérations informatiques courantes. </li><li> **Conception de réseaux pour Azure PaaS** L'optimisation du réseau pour les applications Azure PaaS requiert une bande passante Internet appropriée et peut nécessiter la distribution du trafic réseau sur plusieurs sites ou applications. </li><li> **Conception de réseaux pour Azure IaaS** Suivez le processus de conception pour créer un réseau virtuel Azure optimal pour l'hébergement des charges de travail informatiques basées sur serveur IT, y compris les sous-réseaux, les espaces d'adressage, le routage, le DNS, l'équilibrage de charge et la connectivité avec votre réseau local, d'autres réseaux virtuels et Internet. </li></ul><br/>  Suivez le cours [Optimiser votre réseau pour les offres Microsoft Cloud](https://aka.ms/optimizecloudnetworkingmva), un nouveau cours de la Microsoft Virtual Academy basé sur cette affiche relative à l’architecture.  <br/>|
+|[![Image miniature représentant le modèle de mise en réseau cloud Microsoft](images/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)          ](https://www.microsoft.com/download/details.aspx?id=54425) <br/> ![Fichier PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842073)  \| ![Fichier Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842074)           \| ![Article](images/5cec453d-5fc4-4657-8980-16543b2316ea.png)[Article](https://technet.microsoft.com/library/mt733214.aspx) <br/>![Affichage d’une page contenant des versions dans d’autres langues](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Plus de langues](https://www.microsoft.com/download/details.aspx?id=54425) <br/> | Ce modèle contient les pages suivantes : <ul><li> **Évolution de votre réseau pour la connectivité au cloud** La migration vers le cloud modifie le volume et la nature des flux de trafic internes et externes à un réseau d'entreprise. Elle a également une incidence sur les approches permettant de réduire les risques de sécurité.</li><li> **Éléments communs de la connectivité au cloud Microsoft** L'intégration de votre réseau au cloud Microsoft offre un accès optimal à une large gamme de services. </li><li> **ExpressRoute pour la connectivité cloud Microsoft** ExpressRoute fournit une connexion réseau haut débit privée et dédiée au cloud Microsoft. </li><li> **Conception de réseaux pour Microsoft SaaS (Office 365, Microsoft Intune et Dynamics CRM Online)** L'optimisation de votre réseau pour les services Microsoft SaaS nécessite une analyse approfondie d'Internet Edge, de vos périphériques client et des opérations informatiques courantes. </li><li> **Conception de réseaux pour Azure PaaS** L'optimisation du réseau pour les applications Azure PaaS requiert une bande passante Internet appropriée et peut nécessiter la distribution du trafic réseau sur plusieurs sites ou applications. </li><li> **Conception de réseaux pour Azure IaaS** Suivez le processus de conception pour créer un réseau virtuel Azure optimal pour l'hébergement des charges de travail informatiques basées sur serveur IT, y compris les sous-réseaux, les espaces d'adressage, le routage, le DNS, l'équilibrage de charge et la connectivité avec votre réseau local, d'autres réseaux virtuels et Internet. </li></ul><br/>  Suivez le cours [Optimiser votre réseau pour les offres Microsoft Cloud](https://aka.ms/optimizecloudnetworkingmva), un nouveau cours de la Microsoft Virtual Academy basé sur cette affiche relative à l’architecture.  <br/>|
    
 <a name="mobility"> </a>
 ### <a name="microsoft-mobility-and-security-for-enterprise-architects"></a>Mobilité et sécurité Microsoft pour les architectes d’entreprise

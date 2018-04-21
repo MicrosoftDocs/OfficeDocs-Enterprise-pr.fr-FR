@@ -1,5 +1,5 @@
 ---
-title: "Attribuer des licences à des comptes d’utilisateurs avec Office 365 PowerShell"
+title: Attribuer des licences à des comptes d’utilisateurs avec Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,11 +16,11 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 description: Explique comment utiliser Office 365 PowerShell attribuer une licence Office 365 pour les utilisateurs sans licence.
-ms.openlocfilehash: 688e2775e7a028cd9dbe0c8ea27a7f3a453b5279
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+ms.openlocfilehash: ce8e8c26e929132a8d4beb0f71e18c127064acbe
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="assign-licenses-to-user-accounts-with-office-365-powershell"></a>Attribuer des licences à des comptes d’utilisateurs avec Office 365 PowerShell
 
@@ -66,7 +66,7 @@ Pour attribuer une licence à plusieurs utilisateurs sans licence, utilisez la s
 $x = Get-MsolUser -All -UnlicensedUsersOnly [<FilterableAttributes>]; $x | foreach {Set-MsolUserLicense -AddLicenses "<AccountSkuId>"}
 ```
 
- **Notes**
+ 2^31 (****2 milliards de termes)
   
 - Vous ne pouvez pas attribuer plusieurs licences à un utilisateur à partir du même plan de gestion des licences.
     
@@ -139,7 +139,7 @@ C’est également vous faire : il suffit d’appeler l’applet de commande **
   
 Lorsque **Set-MsolUserLicense** est terminée, vous verrez quelque chose similaire à celui-ci à l’écran :
   
- `PS C:\\windows\\system32>`
+ `PS C:\windows\system32>`
   
 En d’autres termes, il ne s’affiche que quelque chose s’est produit. Pour vérifier qu’une licence a été attribuée à l’utilisateur, exécutez une commande semblable à la suivante :
   
@@ -220,7 +220,7 @@ Get-MsolUser -All | Where-Object {$_.UsageLocation -eq $null}
 > [!NOTE]
 > Lorsque vous attribuez une licence à un utilisateur utilisateur, par défaut, aura accès à tous les services que votre organisation dispose de l’accès à Office 365. Par exemple, si vous avez acheté des licences pour Office 365 entreprise E3, votre utilisateur nouvellement disposant d’une licence sera automatiquement avoir accès aux services Exchange Online, Skype pour Business Online et SharePoint Online. Si vous préférez limiter l’accès d’un utilisateur à ces services (par exemple, vous souhaitez un utilisateur d’accéder à SharePoint Online, mais *pas* à Exchange Online et Skype pour Business Online) puis consultez l’article [, désactivation de l’accès aux services avec Office 365 PowerShell](disable-access-to-services-with-office-365-powershell.md). 
   
-## <a name="new-to-office-365"></a>Vous débutez avec Office 365 ?
+## <a name="new-to-office-365"></a>Vous débutez avec Office 365 ?
 
 [!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
 

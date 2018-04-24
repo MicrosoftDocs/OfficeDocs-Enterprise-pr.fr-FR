@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c4a6d625-4938-42cc-87e1-56b7a13c63ef
 description: 'Résumé : Comment une entreprise internationale fictive mais représentative adopte une infrastructure informatique incluse dans le cloud avec des offres cloud de Microsoft.'
-ms.openlocfilehash: 7807a6b07179e695c28a923f744805558d83e690
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 0a332883fef3291e133998ecd1bbfa53e7282ec0
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="contoso-in-the-microsoft-cloud"></a>Contoso dans le cloud de Microsoft
 
@@ -33,7 +33,7 @@ Cet article vous renvoie vers plusieurs articles qui décrivent comment la soci�
   
 Consultez les sections suivantes :
   
-- [Présentation du cloud hybride](hybrid-cloud-overview.md)
+- [Présentation de la société Contoso Corporation](overview-of-the-contoso-corporation.md)
     
     La société Contoso Corporation est un conglomérat international spécialisé dans la fabrication, la vente et le support technique, qui propose plus de 100 000 produits.
     

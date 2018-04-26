@@ -3,7 +3,7 @@ title: Connexion à tous les services Office 365 à l’aide d’une seule fenê
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/17/2018
+ms.date: 04/23/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,11 +16,11 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 'Résumé : Connexion de Windows PowerShell à tous les services Office 365 dans une seule fenêtre de Windows PowerShell.'
-ms.openlocfilehash: b48caf9ab75b775995b9839325832c798da4d331
-ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
+ms.openlocfilehash: 7e3a3ecbb0526c88392848cf39b59b40f1f4c80c
+ms.sourcegitcommit: 3b474e0b9f0c12bb02f8439fb42b80c2f4798ce1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>Connexion à tous les services Office 365 à l’aide d’une seule fenêtre Windows PowerShell
 
@@ -113,8 +113,8 @@ Voici la procédure pour se connecter à tous les services dans une seule fenêt
 7. Exécutez ces commandes pour vous connecter à la sécurité &amp; centre de conformité.
     
   ```
-  $SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-  Import-PSSession $SccSession
+  $SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $credential -Authentication "Basic" -AllowRedirection
+  Import-PSSession $SccSession -Prefix cc
   ```
 
 Voici toutes les commandes dans un seul bloc. Spécifiez le nom de votre hôte de domaine et tous les exécuter à un moment donné.
@@ -130,8 +130,8 @@ $sfboSession = New-CsOnlineSession -Credential $credential
 Import-PSSession $sfboSession
 $exchangeSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://outlook.office365.com/powershell-liveid/" -Credential $credential -Authentication "Basic" -AllowRedirection
 Import-PSSession $exchangeSession
-$SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-Import-PSSession $SccSession
+$SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $credential -Authentication "Basic" -AllowRedirection
+Import-PSSession $SccSession -Prefix cc
 ```
 Lorsque vous êtes prêt à fermer la fenêtre Windows PowerShell, exécutez cette commande pour supprimer les sessions actives à Skype pour Business Online, Exchange Online, SharePoint Online et la sécurité &amp; centre de conformité :
   
@@ -158,7 +158,7 @@ Import-PSSession $sfboSession
 
 Pour Exchange Online et de la sécurité &amp; centre de conformité, consultez les rubriques suivantes pour vous connecter à l’aide de l’authentification selon plusieurs facteur :
 
-- [Se connecter à Exchange Online PowerShell à l’aide de l’authentification multifactorielle](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell).
+- [Se connecter à Exchange Online PowerShell à l’aide de l’authentification multicritères](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell)
 - [Se connecter à Office 365 sécurité & PowerShell de centre de conformité à l’aide de l’authentification multicritères](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps)
  
 Notez que, dans les deux cas, vous devez vous connecter à l’aide de sessions séparées du PowerShell de Module Exchange en ligne distant.

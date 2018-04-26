@@ -14,16 +14,16 @@ ms.custom:
 - O365ITProTrain
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
-description: 'Résumé : Connexion à votre organisation d’Office 365 à l’aide d’Office 365 PowerShell pour effectuer les tâches de centre d’administration Office 365 à partir de la ligne de commande.'
-ms.openlocfilehash: 71b8c8d61a914fa7fd036fadb7e17ca3f66cd639
-ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
+description: 'Résumé : Connexion à votre organisation d’Office 365 à l’aide d’Office 365 PowerShell pour effectuer les tâches d’administration center à partir de la ligne de commande.'
+ms.openlocfilehash: 65ddb3c66d2cd69ad1ecb468ec762667a0b07a84
+ms.sourcegitcommit: 3b474e0b9f0c12bb02f8439fb42b80c2f4798ce1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="connect-to-office-365-powershell"></a>Se connecter à Office 365 PowerShell
 
- **Résumé :** Se connecter à votre organisation d’Office 365 à l’aide d’Office 365 PowerShell pour effectuer les tâches d’administration Office 365 à partir de la ligne de commande.
+ **Résumé :** Se connecter à votre organisation d’Office 365 à l’aide d’Office 365 PowerShell pour effectuer les tâches d’administration à partir de la ligne de commande.
   
 Office 365 PowerShell vous permet pour gérer vos paramètres Office 365 à partir de la ligne de commande. Se connecter à Office 365 PowerShell est un processus en trois étapes simple où vous installez les logiciels requis, exécuter les logiciels requis et puis connectez à votre organisation d’Office 365. 
 
@@ -64,8 +64,7 @@ Ces étapes sont nécessaires une seule fois sur votre ordinateur, pas chaque fo
   - Si vous êtes invité à installer le module à partir de PSGallery, tapez **o** et appuyez sur ENTRÉE.
   - Après l’installation, fermez la fenêtre de commande PowerShell.
     
-### <a name="step-2-connect-to-your-office-365-subscription"></a>Étape 2 : Se connecter à votre abonnement à Office 365
-<a name="step3"> </a>
+### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>Étape 2 : Se connecter à AD Azure pour votre abonnement à Office 365
 
 Se connecter avec seulement un *nom de compte et de mot de passe*:
   
@@ -93,7 +92,6 @@ Connect-MsolService
 4. Suivez les instructions dans la boîte de dialogue **Azure Active Directory PowerShell** pour fournir des informations d’authentification supplémentaires, comme un code de vérification, puis cliquez sur **se connecter**.
     
 ### <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
-<a name="step3"> </a>
 
 Si vous ne recevez pas d’erreurs, vous est connecté correctement. Un test rapide est d’exécuter une applet de commande d’Office 365, par exemple, **Get-MsolUser** et afficher les résultats.
   
@@ -119,10 +117,10 @@ Si vous recevez des erreurs, vérifiez les conditions requises suivantes :
     
 - **Si vous recevez une erreur de connexion, consultez la rubrique suivante :** [« Connect-MsolService : la levée de l’Exception de type » erreur](https://go.microsoft.com/fwlink/p/?LinkId=532377).
     
-## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>Se connecter avec Azure Active Directory PowerShell pour module de graphique
 <a name="ConnectV2"> </a>
+## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>Se connecter avec Azure Active Directory PowerShell pour module de graphique
 
-Commandes dans Azure Active Directory PowerShell pour module de graphique ont « AzureAD » dans leur nom de l’applet de commande.
+Commandes dans le module [PowerShell de répertoire actif Azure pour module de graphique](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory) ont « AzureAD » dans leur nom de l’applet de commande.
 
 Pour les procédures nécessitant les nouvelles applets de commande PowerShell Active Directory Azure pour module de graphique, suivez ces étapes pour installer le module et le connecter à votre abonnement à Office 365.
 
@@ -146,7 +144,7 @@ Ces étapes sont nécessaires une seule fois sur votre ordinateur, pas chaque fo
 Si vous êtes invité à propos de l’installation d’un module à partir d’un référentiel non approuvé, tapez **o** et appuyez sur ENTRÉE.
 
 
-### <a name="step-2-connect-to-office-365"></a>Étape 2 : Se connecter à Office 365
+### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>Étape 2 : Se connecter à AD Azure pour votre abonnement à Office 365
 
 Pour vous connecter à votre abonnement à Office 365 avec un *nom de compte et de mot de passe*:
     

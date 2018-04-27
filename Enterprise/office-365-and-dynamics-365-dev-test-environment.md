@@ -7,47 +7,47 @@ ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: Ent_TLGs
 ms.assetid: 098c1a1d-83a1-40eb-bbc9-47de7af8bb23
-description: 'Résumé : Utilisez ce Guide de laboratoire de Test pour ajouter des Dynamics 365 à votre environnement de développement/test d’Office 365.'
-ms.openlocfilehash: 24f121c9e5f8a25bae61ce4a59b42d528ffbda17
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+description: 'Résumé : Utilisez ce Guide de laboratoire de Test pour ajouter Dynamics 365 à votre environnement de développement/test Office 365.'
+ms.openlocfilehash: ccf0615befe2ba74f85177dc252516f685655ed6
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="office-365-and-dynamics-365-devtest-environment"></a>Environnement de développement/test Office 365 et Dynamics 365
 
- **Résumé :** Utilisez ce Guide de laboratoire de Test pour ajouter des Dynamics 365 à votre environnement de développement/test d’Office 365.
+ **Résumé :** Utilisez ce Guide de laboratoire de Test pour ajouter Dynamics 365 à votre environnement de développement/test Office 365.
   
 Suivez les instructions fournies dans cet article pour ajouter un abonnement à la version d’évaluation de Dynamics 365 à la même organisation que votre environnement de développement/test Office 365, créant ainsi un environnement de développement/test Office 365 et Dynamics 365.
   
 Vous pouvez utiliser un abonnement à la version d’évaluation de Dynamics 365 afin de présenter les fonctionnalités de Dynamics 365. Les solutions suivantes sont comprises dans la version d’évaluation Enterprise Edition de Dynamics 365 Plan 1 :
   
-- [Microsoft Dynamics 365 pour les ventes](https://www.microsoft.com/dynamics365/sales). Augmentez vos ventes avec l’automation et de l’intelligence numérique aider vos vendeurs vous concentrer et de travailler plus efficacement.
+- [Microsoft Dynamics 365 pour les ventes](https://www.microsoft.com/dynamics365/sales). Augmenter vos ventes avec automation et aide à la décision numérique aidant à vos commerciaux se concentrer et travailler plus efficacement.
     
-- [Microsoft Dynamics 365 pour le Service clientèle](https://www.microsoft.com/dynamics365/customer-service). Gagner de fidélité en donnant à vos agents intelligence numérique, qu'ils ont besoin pour fournir le service transparente les informations complètes.
+- [Microsoft Dynamics 365 pour le Service clientèle](https://www.microsoft.com/dynamics365/customer-service). Gagnez fidélité en donnant à vos agents les informations complètes et numérique aide à la décision que dont ils ont besoin pour fournir le service transparent.
     
-- [Microsoft Dynamics 365 pour Service de champ](https://www.microsoft.com/dynamics365/field-service). Maître de l’appel de service par l’optimisation de vos plannings et équipant votre personnel à l’aide d’outils prédictives pour augmenter les profits.
+- [Microsoft Dynamics 365 pour le Service clientèle](https://www.microsoft.com/dynamics365/field-service). Contrôleur de l’appel de service en optimisant vos planifications, équipant votre personnel et à l’aide des outils prédictives pour augmenter la marge.
     
-- [Microsoft Dynamics 365 pour l’Automation de projet de Service](https://www.microsoft.com/en-us/dynamics365/project-service-automation). Réussir vos projets et créer des relations rentables avec les employés productifs et d’outils intelligents.
+- [Microsoft Dynamics 365 pour l’automatisation de Service Project](https://www.microsoft.com/en-us/dynamics365/project-service-automation). Se termine correctement vos projets et créer des relations rentables avec les employés productifs et outils intelligents.
     
 Vous pouvez explorer l’un des éléments ci-dessus pour votre abonnement à la version d’évaluation de Dynamics 365.
   
 ![Guides de laboratoire de test dans le cloud de Microsoft](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
-> Cliquez [ici](http://aka.ms/catlgstack) pour une carte visuelle de tous les articles dans la pile d’un Guide de laboratoire de Test Microsoft Cloud.
+> Cliquez [ici](http://aka.ms/catlgstack) pour une carte visuelle à tous les articles de la pile d’un Guide de laboratoire de Test Microsoft sur le nuage.
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Phase 1 : Créer votre environnement de développement/test Office 365 en mode léger ou pour entreprise simulée
 
-Si vous souhaitez juste tester Office 365 et Dynamics 365 dans une solution légère avec la configuration minimale requise, suivez les instructions dans les étapes 2 et 3 de [l’environnement de développement/test d’Office 365](office-365-dev-test-environment.md).
+Si vous souhaitez uniquement tester Office 365 et Dynamics 365 dans une solution légère avec la configuration minimale requise, suivez les instructions en phases 2 et 3 de [l’environnement de développement/test Office 365](office-365-dev-test-environment.md).
   
-Si vous souhaitez tester Office 365 et Dynamics 365 pour une entreprise de simulation, suivez les instructions de [synchronisation d’annuaire pour votre environnement de développement/test d’Office 365](dirsync-for-your-office-365-dev-test-environment.md).
+Si vous souhaitez tester une entreprise simulée Dynamics 365 et Office 365, suivez les instructions de [synchronisation d’annuaire pour votre environnement de développement/test Office 365](dirsync-for-your-office-365-dev-test-environment.md).
   
 > [!NOTE]
 > La configuration décrite dans cet article ne requiert pas l’environnement de développement/test en entreprise simulée, qui utilise un intranet simulé connecté à Internet et la synchronisation d’annuaire pour une forêt Windows Server Active Directory. Il est proposé comme option dans cet article afin que vous puissiez tester Office 365 et Dynamics 365 dans un environnement qui représente une organisation classique. 
@@ -58,13 +58,13 @@ Dans cette phase, vous vous inscrivez pour l’abonnement d’évaluation Dynami
   
 ### <a name="sign-up-for-a-dynamics-365-trial-subscription"></a>Inscription à un abonnement à la version d’évaluation de Dynamics 365
 
-1. En utilisant un navigateur soit sur votre ordinateur de bureau (léger) ou à partir de CLIENT1 (entreprise en simulation), connectez-vous au portail Office 365 à [https://portal.office.com](https://portal.office.com) avec les informations d’identification de votre compte d’administrateur global.
+1. Via un navigateur soit sur votre ordinateur de bureau (lightweight) ou à partir de CLIENT1 (entreprise en simulation), connectez-vous au portail Office 365 à [https://portal.office.com](https://portal.office.com) avec les informations d’identification de votre compte d’administrateur global.
     
 2. Cliquez sur la vignette **Administration**.
     
-3. Dans l’onglet **Centre admin** , dans la navigation de gauche, cliquez sur **de facturation > acheter les services**.
+3. Dans l’onglet **Centre d’administration Office** , dans la navigation de gauche, cliquez sur **facturation > achat de services**.
     
-4. Dans la page **services d’achat** , trouver l’élément de **Dynamics 365 Plan 1 Enterprise Edition** . Placez le pointeur de la souris sur elle et cliquez sur **Démarrer la version d’évaluation gratuite**.
+4. Dans la page **services d’achat** , recherchez l’élément **Dynamics 365 Plan 1 Enterprise Edition** . Placez le pointeur de la souris au-dessus de celle-ci, cliquez sur **Démarrer la version d’évaluation gratuite**.
     
 5. Dans la page **Confirmer votre commande**, cliquez sur **Essayer maintenant**.
     
@@ -79,31 +79,31 @@ Lors de cette phrase, vous allez affecter des licences Dynamics 365 aux comptes
   
 Suivez ces étapes pour affecter des licences Dynamics 365.
   
-1. Dans l’onglet **Centre admin** , cliquez sur **les utilisateurs > utilisateurs actifs**.
+1. Dans l’onglet **Centre d’administration Office** , cliquez sur **utilisateurs > utilisateurs actifs**.
     
 2. Dans la liste d’utilisateurs actifs, cliquez sur votre compte d’administrateur global, puis cliquez sur **Modifier** pour les **licences de produit**.
     
-3. Dans le volet **des licences de produit** , activation de la licence du produit pour **Dynamics 365 Plan 1 Enterprise Edition** **sur**et cliquez sur **Enregistrer,** puis cliquez deux fois sur **Fermer** .
+3. Dans le volet de **licences** , activer la licence de produit pour **Dynamics 365 Plan 1 Enterprise Edition** **activé**et cliquez sur **Enregistrer,** puis cliquez deux fois sur **Fermer** .
     
 4. Suivez les étapes 2 et 3 pour les comptes Utilisateur 2 et Utilisateur 3.
     
-5. Fermez l’onglet **Centre admin** .
+5. Fermez l’onglet **Centre d’administration Office** .
     
 Lors de cette phase, vous allez configurer les comptes Utilisateur 2 et Utilisateur 3 en tant qu’administrateurs système de Dynamics 365.
   
-1. À partir de l’onglet **Accueil de Microsoft Office** , cliquez sur **Admin**.
+1. Sous l’onglet **Accueil de Microsoft Office** , cliquez sur **Admin**.
     
-2. Dans l’onglet **Centre d’administration de l’Office** , dans la navigation de gauche, cliquez sur **Centre d’administration**, puis cliquez sur **Dynamics 365**.
+2. Sous l’onglet **Centre d’administration d’Office** , dans la navigation de gauche, cliquez sur **Centre d’administration**, puis cliquez sur **Dynamics 365**.
     
     Vous devrez peut-être attendre la fin de l’approvisionnement de Dynamics 365 avant de le voir apparaître dans le menu.
     
-3. Sous l’onglet Dynamics 365, cliquez sur **tous**, puis cliquez sur **le programme d’installation terminé.**
+3. Sous l’onglet Dynamics 365, cliquez sur **tous ces éléments**, puis cliquez sur **le programme d’installation complète.**
     
     Attendez la fin de l’installation.
     
-    Lorsque l’installation est terminée, il affiche un tableau de bord d’activité de vente basés sur des données qui fait partie de l’abonnement de la piste. Prenez quelques instants pour afficher la **Bienvenue dans votre version d’évaluation** de vidéo. Fermez la fenêtre de la vidéo lorsque vous avez terminé.
+    Lorsque le programme d’installation est terminée, il affiche un tableau de bord ventes activité basés sur des données qui fait partie de l’abonnement de piste. Prendre un certain temps pour afficher la **Bienvenue dans la version d’évaluation de votre** vidéo. Fermez la fenêtre vidéo lorsque vous avez terminé.
     
-4. Dans la barre d’outils en haut, cliquez sur la flèche en regard de **ventes**, cliquez sur **paramètres**, puis cliquez sur **sécurité**.
+4. Dans la barre d’outils dans la partie supérieure, cliquez sur la flèche vers le bas en regard de **ventes**, cliquez sur **paramètres**, puis cliquez sur **sécurité**.
     
 5. Dans la page **sécurité** , cliquez sur **utilisateurs**.
     
@@ -113,11 +113,11 @@ Lors de cette phase, vous allez configurer les comptes Utilisateur 2 et Utilis
     
 8. **Gérer les rôles**, cliquez sur **Administrateur système**, puis cliquez sur **OK**.
     
-9. Dans la barre d’outils en haut, cliquez sur **sécurité**.
+9. Dans la barre d’outils dans la partie supérieure, cliquez sur **sécurité**.
     
 10. Répétez les étapes 5 à 8 pour le compte Utilisateur 3.
     
-11. Fermer la **utilisateur : l’util_3** onglet.
+11. Fermer la **utilisateur : User3** onglet.
     
 > [!NOTE]
 > Le rôle d’administrateur système Dynamics 365 a été automatiquement attribué à votre compte d’administrateur général Office 365. 
@@ -130,7 +130,7 @@ Votre environnement de développement/test Office 365 et Dynamics 365 a mainte
     
 ## <a name="next-step"></a>Étape suivante
 
-Configurer, puis montrez comment Office 365 et Dynamics 365 fonctionnent ensemble des boîtes aux lettres dans Exchange en ligne avec [Exchange Online l’intégration de votre environnement de développement/test Office 365 et Dynamics 365](exchange-online-integration-for-your-office-365-and-dynamics-365-dev-test-enviro.md).
+Configurer et illustrer puis Office 365 et Dynamics 365 fonctionnement conjoint des boîtes aux lettres dans Exchange Online avec [l’intégration Exchange Online pour votre environnement de développement/test Dynamics 365 et Office 365](exchange-online-integration-for-your-office-365-and-dynamics-365-dev-test-enviro.md).
   
 ## <a name="see-also"></a>Voir aussi
 

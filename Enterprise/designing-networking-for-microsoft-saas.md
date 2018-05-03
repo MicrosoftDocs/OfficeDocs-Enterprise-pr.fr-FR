@@ -1,5 +1,5 @@
 ---
-title: "Conception de réseaux pour Microsoft SaaS"
+title: Conception de réseaux pour Microsoft SaaS
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 4194020a-3847-4259-9f2d-5c556a4510f9
-description: "Résumé : Comprendre comment optimiser votre réseau pour accéder aux services SaaS de Microsoft, notamment Office 365, Microsoft Intune et Dynamics 365."
-ms.openlocfilehash: e4d83f9ab88408b3eb5ca98379bbc709ec8f31a7
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: 'Résumé : Comprendre comment optimiser votre réseau pour accéder aux services SaaS de Microsoft, notamment Office 365, Microsoft Intune et Dynamics 365.'
+ms.openlocfilehash: 4cfbeab3d90703e17c86e707988a8a62c937df9a
+ms.sourcegitcommit: a4322cac992ce64b92f0335bf005a7420195d9be
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="designing-networking-for-microsoft-saas"></a>Conception de réseaux pour Microsoft SaaS
 
@@ -182,8 +182,6 @@ Pour plus d’informations, voir :
   
 - [Planification réseau et de migration pour Office 365](https://aka.ms/tune)
     
-- [Cours Microsoft Virtual Academy concernant la gestion des performances pour Office 365](https://aka.ms/o365perf)
-    
 - [ExpressRoute pour Office 365](https://aka.ms/expressrouteoffice365)
 
 ## <a name="next-step"></a>Étape suivante
@@ -196,7 +194,8 @@ Pour plus d’informations, voir :
   
 [Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs](https://sway.com/FJ2xsyWtkJc2taRD)
+[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs (en anglais)](https://sway.com/FJ2xsyWtkJc2taRD)
+
 
 
 

@@ -3,7 +3,7 @@ title: Gestion de SharePoint Online avec Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 05/01/2018
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -14,11 +14,11 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Résumé : Utilisez Office 365 PowerShell pour gérer les utilisateurs, les groupes et les groupes de sites SharePoint Online.'
-ms.openlocfilehash: 7fa6249e04b980a3dc9d3407935694d85938bcab
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 752c7d24ee6d0e77ee1cc4a65322957324767531
+ms.sourcegitcommit: 74cdb2534bce376abc9cf4fef85ff039c46ee790
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="manage-sharepoint-online-with-office-365-powershell"></a>Gestion de SharePoint Online avec Office 365 PowerShell
 
@@ -28,11 +28,11 @@ L'une des tâches principales de tout administrateur SharePoint Online consiste 
 
 - [Se connecter à SharePoint Online PowerShell](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
   
-- [Création de sites SharePoint Online et ajout d'utilisateurs avec Office 365 PowerShell](http://technet.microsoft.com/library/c55d4ccf-ab36-481a-a285-c40234e11abd.aspx)
+- [Créer des sites SharePoint Online et ajouter des utilisateurs avec Office 365 PowerShell](create-sharepoint-sites-and-add-users-with-powershell.md)
     
-- [Gestion des utilisateurs et des groupes SharePoint Online avec Office 365 PowerShell](http://technet.microsoft.com/library/9680af2e-a965-4e62-92ee-da72105c7800.aspx)
+- [Gestion des utilisateurs et des groupes SharePoint Online avec Office 365 PowerShell](manage-sharepoint-users-and-groups-with-powershell.md)
     
-- [Manage site groups](http://technet.microsoft.com/library/122f4099-c78d-4cce-bab0-4343b04596ae.aspx)
+- [Manage SharePoint Online site groups with Office 365 PowerShell](manage-sharepoint-site-groups-with-powershell.md)
     
 ## <a name="see-also"></a>Voir aussi
 

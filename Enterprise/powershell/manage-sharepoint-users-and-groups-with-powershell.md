@@ -3,7 +3,7 @@ title: Gestion des utilisateurs et des groupes SharePoint Online avec Office 36
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/01/2018
+ms.date: 05/07/2018
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -14,17 +14,17 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Résumé : Utilisation de PowerShell Office 365 pour gérer les utilisateurs, groupes et sites SharePoint Online.'
-ms.openlocfilehash: 8ed40d2c736853145e21f0f9852bdb18c7842075
-ms.sourcegitcommit: 74cdb2534bce376abc9cf4fef85ff039c46ee790
+ms.openlocfilehash: a04bf1538d6f56b760932b5be89b1953fcaa33d5
+ms.sourcegitcommit: 5c5489db5d1000296945c9774198bd911bee4f14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-office-365-powershell"></a>Gestion des utilisateurs et des groupes SharePoint Online avec Office 365 PowerShell
 
  **Résumé :** Utilisez Office 365 PowerShell pour gérer les utilisateurs, groupes et sites SharePoint Online.
 
-Si vous êtes un SharePoint Online pour les gérer plus facilement qui fonctionne avec de grandes listes de comptes d’utilisateurs ou des groupes, vous pouvez utiliser Office 365 PowerShell. 
+Si vous êtes un administrateur SharePoint Online pour les gérer plus facilement qui fonctionne avec de grandes listes de comptes d’utilisateurs ou des groupes, vous pouvez utiliser Office 365 PowerShell. 
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -47,30 +47,29 @@ Get-SPOSite
 Vous pouvez obtenir la liste des groupes de votre client avec la commande suivante :
 
 ```
-Get-SPOSite | ForEach-Object {Get-SPOSiteGroup -Site $_.Url} |Format-Table
+Get-SPOSite | ForEach {Get-SPOSiteGroup -Site $_.Url} | Format-Table
 ```
 
 ### <a name="get-a-list-of-users"></a>Obtenir une liste d’utilisateurs
 
 Vous pouvez obtenir la liste des utilisateurs de votre client avec la commande suivante :
 
-```Get-SPOSite | ForEach-Object {Get-SPOUser -Site $_.Url}```
+```
+Get-SPOSite | ForEach {Get-SPOUser -Site $_.Url}
+```
 
 ## <a name="add-a-user-to-the-site-collection-administrators-group"></a>Ajouter un utilisateur au groupe Administrateurs de collection de sites
 
 Vous utilisez la commande **Set-SPOUser** pour ajouter un utilisateur à la liste des administrateurs de Collection de sites dans une collection de sites. Il s’agit de l’aspect de la syntaxe :
 
 ```
-$tenant = "tenant"
-<!--This is the Tenant Name. Value must be enclosed in double quotation marks. Example: "Contoso01"-->
-$site = "site"
-<!--# This is the Site name. Value must be enclosed in double quotation marks. Example: "contosotest"-->
-$user = "loginname"
-<!--This is the users login name. Value must be enclosed in double quotation marks. Example "opalc"-->
+$tenant = "<tenant name, such as litwareinc for litwareinc.onmicrosoft.com>"
+$site = "<site name>"
+$user = "<user account name, such as opalc>"
 Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$tenant.onmicrosoft.com -IsSiteCollectionAdmin $true
  ```
 
-Cet exemple utilise des variables pour stocker des valeurs et possède des notes dans le script (par exemple «<!--This is the Tenant Name…-->») pour vous aider à comprendre ces valeurs.
+Pour utiliser ces commandes, remplacer remplacer tous les éléments entre guillemets, y compris les caractères, avec les noms corrects < et >.
 
 Par exemple, cet ensemble de commandes ajoute Opalhttp://go.Microsoft.com/fwlink/p/?LinkId=257051 Castillo (opalc de nom d’utilisateur) la liste des administrateurs de Collection de sites sur la collection de sites ContosoTest dans la location contoso1 :
 
@@ -81,21 +80,17 @@ $user = "opalc"
 Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$tenant.onmicrosoft.com -IsSiteCollectionAdmin $true
 ```
 
-Vous pouvez couper et coller ces commandes dans le Bloc-notes, remplacer les valeurs des variables $tenant, $site et $user par des valeurs réelles de votre environnement, puis coller le tout dans votre fenêtre SharePoint Online Management Shell.
+Peut copier et coller ces commandes dans le bloc-notes, modifier les valeurs des variables pour $tenant, $site et $user à des valeurs réelles de votre environnement et puis collez-la dans votre fenêtre de SharePoint Online Management Shell pour les exécuter.
 
 ## <a name="add-a-user-to-other-site-collection-administrators-groups"></a>Ajout d’un utilisateur à d’autres groupes Administrateurs de collection de sites
 
-Dans cette tâche, nous allons utiliser la commande **Add-SPOUser** pour ajouter un utilisateur à un groupe SharePoint sur une collection de sites. Il s’agit de l’aspect de la syntaxe :
+Dans cette tâche, nous allons utiliser la commande **Add-SPOUser** pour ajouter un utilisateur à un groupe SharePoint sur une collection de sites.
 
 ```
-$tenant = "tenant"
-<!--This is the Tenant Name. Value must be enclosed in double quotation marks. Example: "Contoso01"-->
-$site = "site"
-<!--This is the Site name. Value must be enclosed in double quotation marks. Example: "contosotest"-->
-$user = "loginname"
-<!--This is the users login name. Value must be enclosed in double quotation marks. Example: "opalc"-->
-$group = "group"
-<!--This is the SharePoint security Group name. Value must be enclosed in double quotation marks. Example: "Auditors"-->
+$tenant = "<tenant name, such as litwareinc for litwareinc.onmicrosoft.com>"
+$site = "<site name>"
+$user = "<user account name, such as opalc>"
+$group = "<group name name, such as Auditors>"
 Add-SPOUser -Group $group -LoginName $user@$tenant.onmicrosoft.com -Site https://$tenant.sharepoint.com/sites/$site
 
 ```
@@ -112,30 +107,24 @@ Add-SPOUser -Group $group -LoginName $user@$tenant.onmicrosoft.com -Site https:/
 
 ## <a name="create-a-site-collection-group"></a>Créer un groupe de collections de sites
 
-Vous utilisez la commande **Set-SPOSiteGroup** pour créer un nouveau groupe SharePoint et l’ajouter à la collection de sites ContosoTest. Il s’agit de l’aspect de la syntaxe :
+Vous utilisez la commande **Set-SPOSiteGroup** pour créer un nouveau groupe SharePoint et l’ajouter à la collection de sites ContosoTest.
 
 ```
-$tenant = "tenant"
-<!--This is the Tenant Name. Value must be enclosed in double quotation marks, Example: "Contoso01"-->
-$site = "site"
-<!--This is the Site name. Value must be enclosed in double quotation marks, Example: "contosotest"-->
-$group = "group"
-<!--This is the SharePoint security Group name. Value must be enclosed in double quotation marks, Example: "Auditors"-->
-$level = "permission level"
-<!--This is the level of permissions to assign to the group. Value must be enclosed in double quotation marks, Example: "View Only"-->
+$tenant = "<tenant name, such as litwareinc for litwareinc.onmicrosoft.com>"
+$site = "<site name>"
+$group = "<group name name, such as Auditors>"
+$level = "<permission level, such as View Only>"
 New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sharepoint.com/sites/$site
 ```
-
-> [!IMPORTANT]
-> N’importe quelle chaîne par des espaces, mettez-le entre guillemets. Groupes propriétés, telles que des niveaux d’autorisation, peuvent être mis à jour ultérieurement à l’aide de l’applet de commande **Set-SPOSiteGroup** .
+Groupes propriétés, telles que des niveaux d’autorisation, peuvent être mis à jour ultérieurement à l’aide de l’applet de commande **Set-SPOSiteGroup** .
 
 Par exemple, ajoutons le groupe de comptes disposant d’autorisations affichage seul à la collection de sites de Contoso Test dans la location contoso1 :
 
 ```
 $tenant = "contoso1"
 $site = "Contoso Test"
-$level = "View Only"
 $group = "Auditors"
+$level = "View Only"
 New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sharepoint.com/sites/$site
 ```
 
@@ -148,17 +137,12 @@ Toutefois, en utilisant les fichiers CSV et de SharePoint Online Management Shel
 Nous allons utiliser la commande **Remove-SPOUser** pour supprimer un utilisateur Office 365 à partir d’un groupe de collection de sites pour nous pouvons voir la syntaxe de la commande. Voici comment la syntaxe de la recherche :
 
 ```
-$tenant = "tenant"
-<!--This is the Tenant Name. Value must be enclosed in double quotation marks, Example: "Contoso01"-->
-$site = "site"
-<!--This is the Site name. Value must be enclosed in double quotation marks, Example: "contosotest"-->
-$group = "group"
-<!--This is the SharePoint security Group name. Value must be enclosed in double quotation marks, Example: "Auditors"-->
-$user = "loginname"
-<!--This is the user’s login name. Value must be enclosed in double quotation marks, Example: "opalc"-->
-Remove-SPOUser -LoginName $user@$tenant.onmicrosoft.com -Site https://$tenant.sharepoint.com/sites/$site
+$tenant = "<tenant name, such as litwareinc for litwareinc.onmicrosoft.com>"
+$site = "<site name>"
+$user = "<user account name, such as opalc>"
+$group = "<group name name, such as Auditors>"
+Remove-SPOUser -LoginName $user@$tenant.onmicrosoft.com -Site https://$tenant.sharepoint.com/sites/$site -Group $group
 ```
-
 Par exemple, nous allons supprimer Bobby Overby du groupe d’auditeurs de collection de sites dans la collection de sites Contoso Test dans la location contoso1 :
 
 ```
@@ -174,11 +158,11 @@ Supposons que nous voulions supprimer Bobby de tous les groupes auxquels il appa
 ```
 $tenant = "contoso1"
 $user = "bobbyo"
-Get-SPOSite | ForEach-Object {Get-SPOSiteGroup –Site $_.Url} | ForEach-Object {Remove-SPOUser -LoginName $user@$tenant.onmicrosoft.com -Site &_.Url}
+Get-SPOSite | ForEach {Get-SPOSiteGroup –Site $_.Url} | ForEach {Remove-SPOUser -LoginName $user@$tenant.onmicrosoft.com -Site &_.Url}
 ```
 
 > [!WARNING]
-> Nous souhaitons simplement vous montrer comment faire. Vous ne devez pas exécuter cette commande sauf si vous devez vraiment supprimer un utilisateur de chaque groupe, par exemple si l’utilisateur quitte l’entreprise.
+> Il s’agit juste d’un exemple. Vous ne devez pas exécuter cette commande, sauf si vous devez supprimer un utilisateur à partir de chaque groupe, par exemple, si l’utilisateur quitte l’entreprise.
 
 ## <a name="automate-management-of-large-lists-of-users-and-groups"></a>Automatiser la gestion des grandes listes d’utilisateurs et de groupes
 
@@ -199,7 +183,7 @@ Site,Group,PermissionLevels
 ### <a name="item"></a>Élément :
 
 ```
-https://tenant.sharepoint.com/sites/site,site collection,group,level
+https://tenant.sharepoint.com/sites/site,group,level
 ```
 
 Voici un exemple de fichier :
@@ -244,19 +228,19 @@ Contoso Blog Editors,opalc@contoso1.onmicrosoft.com,https://contoso1.sharepoint.
 Project Alpha Approvers,robinc@contoso1.onmicrosoft.com,https://contoso1.sharepoint.com/sites/Project01
 ```
 
-Pour la prochaine étape, vous devez avoir enregistré les deux fichiers CSV sur votre lecteur. Voici les commandes qui utilisent les deux fichiers CSV pour ajouter des membres aux groupes et des autorisations :
+À l’étape suivante, vous devez les deux fichiers CSV enregistrés sur votre disque. Voici des exemples de commandes qui utilisent les deux fichiers CSV et d’ajouter les autorisations et appartenances de groupe :
 
 ```
-Import-Csv C:\O365Admin\GroupsAndPermissions.csv | ForEach-Object {New-SPOSiteGroup -Group $_.Group -PermissionLevels $_.PermissionLevels -Site $_.Site}
-Import-Csv C:\O365Admin\Users.csv | ForEach-Object {Add-SPOUser -Group $_.Group –LoginName $_.LoginName -Site $_.Site}
+Import-Csv C:\O365Admin\GroupsAndPermissions.csv | ForEach {New-SPOSiteGroup -Group $_.Group -PermissionLevels $_.PermissionLevels -Site $_.Site}
+Import-Csv C:\O365Admin\Users.csv | ForEach {Add-SPOUser -Group $_.Group –LoginName $_.LoginName -Site $_.Site}
 ```
 
-Le script importe le contenu du fichier CSV et utilise les valeurs dans les colonnes (en gras) pour remplir les paramètres des commandes **New-SPOSiteGroup** et **Add-SPOUser** . Dans notre exemple, nous effectuons l’enregistrement sur le lecteur C, mais vous pouvez l’enregistrer où vous le souhaitez.
+Le script importe le contenu du fichier CSV et utilise les valeurs des colonnes pour remplir les paramètres des commandes **New-SPOSiteGroup** et **Add-SPOUser** . Dans notre exemple, nous effectuons ce enregistrement dans le dossier theO365Admin sur le lecteur C, mais vous pouvez l’enregistrer où vous le souhaitez.
 
-Supprimons maintenant un certain nombre de personnes de plusieurs groupes au sein de différents sites, à l’aide du même fichier CSV. Voici la commande :
+À présent, nous allons supprimer un groupe de personnes pour plusieurs groupes dans différents sites en utilisant le même fichier CSV. Voici un exemple de commande :
 
 ```
-Import-Csv C:\O365Admin\Users.csv | ForEach-Object {Remove-SPOUser -LoginName $_.LoginName -Site $_.Site -Group $_.Group}
+Import-Csv C:\O365Admin\Users.csv | ForEach {Remove-SPOUser -LoginName $_.LoginName -Site $_.Site -Group $_.Group}
 ```
 
 ## <a name="generate-user-reports"></a>Générer des rapports sur les utilisateurs
@@ -264,10 +248,8 @@ Import-Csv C:\O365Admin\Users.csv | ForEach-Object {Remove-SPOUser -LoginName $_
 Vous pouvez obtenir un rapport simple pour quelques sites et afficher les utilisateurs de ces sites, leur niveau d’autorisation, ainsi que d’autres propriétés. Voici à quoi ressemble la syntaxe :
 
 ```
-$tenant = "tenant"
-<!--This is the Tenant Name. Value must be enclosed in double quotes, Example: "Contoso01"-->
-$site = "site"
-<!--This is the Site name. Value must be enclosed in double quotes, Example: "contosotest"-->
+$tenant = "<tenant name, such as litwareinc for litwareinc.onmicrosoft.com>"
+$site = "<site name>"
 Get-SPOUser -Site https://$tenant.sharepoint.com/sites/$site | select * | Format-table -Wrap -AutoSize | Out-File c\UsersReport.txt -Force -Width 360 -Append
 ```
 
@@ -290,14 +272,14 @@ Notez que nous devions modifier uniquement la variable **$site** . La variable *
 Mais que faire si vous souhaitez effectuer cette action pour chaque site ? Vous pouvez le faire sans avoir à entrer tous ces sites web à l’aide de cette commande :
 
 ```
-Get-SPOSite | ForEach-Object {Get-SPOUser –Site $_.Url} | Format-Table -Wrap -AutoSize | Out-File c:\UsersReport.txt -Force -Width 360 -Append
+Get-SPOSite | ForEach {Get-SPOUser –Site $_.Url} | Format-Table -Wrap -AutoSize | Out-File c:\UsersReport.txt -Force -Width 360 -Append
 ```
 
 Ce rapport est relativement simple, et vous pouvez ajouter davantage de code pour créer des rapports qui incluent des informations plus détaillées ou des rapports plus spécifiques. Mais cela devrait vous donner une idée de l’utilisation de SharePoint Online Management Shell pour gérer les utilisateurs dans l’environnement SharePoint Online.
    
 ## <a name="see-also"></a>Voir aussi
 
-[Se connecter à SharePoint Online PowerShell](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+[Se connecter à SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
 [Gestion de SharePoint Online avec Office 365 PowerShell](create-sharepoint-sites-and-add-users-with-powershell.md)
 

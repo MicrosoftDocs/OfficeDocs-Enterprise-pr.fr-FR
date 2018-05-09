@@ -1,9 +1,9 @@
 ---
-title: "Désactiver l’accès aux services lors de l’attribution des licences utilisateur"
+title: Désactiver l’accès aux services lors de l’attribution des licences utilisateur
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 05/07/2018
 ms.audience: Admin
 ms.topic: article
 ms.collection: Ent_O365
@@ -13,21 +13,18 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
-description: "Découvrez comment attribuer des licences à des comptes d’utilisateur et à désactiver des plans de service spécifiques en même temps à l’aide d’Office 365 PowerShell."
-ms.openlocfilehash: 0ab1aea03099f6aae469699b1169af9e12b41d74
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
-ms.translationtype: HT
+description: Découvrez comment attribuer des licences à des comptes d’utilisateur et à désactiver des plans de service spécifiques en même temps à l’aide d’Office 365 PowerShell.
+ms.openlocfilehash: 7567d84490cdb3db7c149a51c4f2f04d39cad9ce
+ms.sourcegitcommit: def3e311db9322e469753bac59ff03624349b140
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>Désactiver l’accès aux services lors de l’attribution des licences utilisateur
 
 **Résumé :** Découvrez comment attribuer des licences à des comptes d’utilisateur et désactiver des plans de service spécifiques en même temps à l’aide d’Office 365 PowerShell.
   
 Les abonnements Office 365 sont fournis avec des plans de service pour des services individuels. Les administrateurs d'Office 365 ont souvent besoin de désactiver certains plans lors de l'attribution des licences aux utilisateurs. Avec les instructions fournies dans cet article, vous pouvez attribuer une licence Office 365 tout en désactivant des plans de service spécifiques à l'aide de PowerShell pour un ou plusieurs comptes d'utilisateur.
-  
-> [!NOTE]
-> Cet article est basé sur le travail de Siddhartha Parmar, ingénieur support de Microsoft. 
   
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -151,8 +148,6 @@ Ce bloc de commande PowerShell :
 - crée un fichier CSV avec tous les utilisateurs qui ont été traités et affiche l’état de leur licence.
     
 ## <a name="see-also"></a>Voir aussi
-
-#### 
 
 [Désactiver l'accès aux services Office 365 PowerShell](disable-access-to-services-with-office-365-powershell.md)
   

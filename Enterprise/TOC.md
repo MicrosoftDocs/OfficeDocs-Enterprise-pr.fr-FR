@@ -87,6 +87,7 @@
 #### [Appliquer la protection des données personnelles dans Office 365](apply-protection-to-personal-data-in-office-365.md)
 #### [Surveiller les pertes de données personnelles](monitor-for-leaks-of-personal-data.md)
 ### [PIBR pour les serveurs Office locaux](gdpr-for-office-servers.md)
+#### [PIBR pour SharePoint Server](gdpr-for-sharepoint-server.md)
 #### [PIBR pour Exchange Server](gdpr-for-exchange-server.md)
 #### [PIBR pour Skype pour le serveur d’entreprise](gdpr-for-skype-for-business-server.md)
 #### [PIBR pour Project Server](gdpr-for-project-server.md)

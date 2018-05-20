@@ -3,7 +3,6 @@
 
 # [Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.md)
 ## [Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
-### [Identité cloud Microsoft pour les architectes d’entreprise](microsoft-cloud-identity-for-enterprise-architects.md)
 ### [Mise en réseau cloud Microsoft pour les architectes d'entreprise](microsoft-cloud-networking-for-enterprise-architects.md)
 #### [Évolution de votre réseau pour la connectivité au cloud](evolving-your-network-for-cloud-connectivity.md)
 #### [Éléments communs de la connectivité au cloud Microsoft](common-elements-of-microsoft-cloud-connectivity.md)

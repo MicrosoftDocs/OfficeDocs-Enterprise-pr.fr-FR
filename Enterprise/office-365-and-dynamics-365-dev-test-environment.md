@@ -3,7 +3,7 @@ title: Environnement de développement/test Office 365 et Dynamics 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 05/18/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -14,17 +14,20 @@ ms.collection:
 ms.custom: Ent_TLGs
 ms.assetid: 098c1a1d-83a1-40eb-bbc9-47de7af8bb23
 description: 'Résumé : Utilisez ce Guide de laboratoire de Test pour ajouter Dynamics 365 à votre environnement de développement/test Office 365.'
-ms.openlocfilehash: ccf0615befe2ba74f85177dc252516f685655ed6
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 00d5cc0fd347aff7e201056f6af9ca271008d285
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="office-365-and-dynamics-365-devtest-environment"></a>Environnement de développement/test Office 365 et Dynamics 365
 
  **Résumé :** Utilisez ce Guide de laboratoire de Test pour ajouter Dynamics 365 à votre environnement de développement/test Office 365.
   
 Suivez les instructions fournies dans cet article pour ajouter un abonnement à la version d’évaluation de Dynamics 365 à la même organisation que votre environnement de développement/test Office 365, créant ainsi un environnement de développement/test Office 365 et Dynamics 365.
+
+![Environnement de développement/test Office 365 et Dynamics 365](images/o365-dynamics365-dev-test.png)
+  
   
 Vous pouvez utiliser un abonnement à la version d’évaluation de Dynamics 365 afin de présenter les fonctionnalités de Dynamics 365. Les solutions suivantes sont comprises dans la version d’évaluation Enterprise Edition de Dynamics 365 Plan 1 :
   
@@ -38,16 +41,18 @@ Vous pouvez utiliser un abonnement à la version d’évaluation de Dynamics 36
     
 Vous pouvez explorer l’un des éléments ci-dessus pour votre abonnement à la version d’évaluation de Dynamics 365.
   
-![Guides de laboratoire de test dans le cloud de Microsoft](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
+![Guides de laboratoire de test dans Microsoft Cloud](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
-> Cliquez [ici](http://aka.ms/catlgstack) pour une carte visuelle à tous les articles de la pile d’un Guide de laboratoire de Test Microsoft sur le nuage.
+> Cliquez [ici](http://aka.ms/catlgstack) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft Cloud.
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Phase 1 : Créer votre environnement de développement/test Office 365 en mode léger ou pour entreprise simulée
 
 Si vous souhaitez uniquement tester Office 365 et Dynamics 365 dans une solution légère avec la configuration minimale requise, suivez les instructions en phases 2 et 3 de [l’environnement de développement/test Office 365](office-365-dev-test-environment.md).
   
 Si vous souhaitez tester une entreprise simulée Dynamics 365 et Office 365, suivez les instructions de [synchronisation d’annuaire pour votre environnement de développement/test Office 365](dirsync-for-your-office-365-dev-test-environment.md).
+
+![Environnement de développement/test Office 365](images/48fb91aa-09b0-4020-a496-a8253920c45d.png)
   
 > [!NOTE]
 > La configuration décrite dans cet article ne requiert pas l’environnement de développement/test en entreprise simulée, qui utilise un intranet simulé connecté à Internet et la synchronisation d’annuaire pour une forêt Windows Server Active Directory. Il est proposé comme option dans cet article afin que vous puissiez tester Office 365 et Dynamics 365 dans un environnement qui représente une organisation classique. 
@@ -69,6 +74,8 @@ Dans cette phase, vous vous inscrivez pour l’abonnement d’évaluation Dynami
 5. Dans la page **Confirmer votre commande**, cliquez sur **Essayer maintenant**.
     
 6. Dans la page **Réception de la commande**, cliquez sur **Continuer**.
+
+![Environnement de développement/test Office 365 et Dynamics 365](images/o365-dynamics365-dev-test.png)
     
 > [!NOTE]
 > L’abonnement d’évaluation Dynamics 365 Plan 1 Enterprise Edition est valide pendant 30 jours. Vous pouvez facilement étendre l’abonnement d’évaluation pour une période supplémentaire de 30 jours. Pour un environnement de développement/test permanent, créez un nouvel abonnement payant avec un nombre réduit de licences. 

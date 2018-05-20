@@ -1,22 +1,21 @@
 ---
-title: "Utiliser PowerShell pour effectuer une migration à basculement vers Office 365"
+title: Utiliser PowerShell pour effectuer une migration à basculement vers Office 365
 ms.author: sirkkuw
 author: sirkkuw
 manager: laurawi
-ms.date: 12/15/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
-description: "Résumé : Découvrez comment utiliser Windows PowerShell pour effectuer une migration à basculement vers Office 365."
-ms.openlocfilehash: 8181d59f53464034a584724dcb53956976c917dd
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: 'Résumé : Découvrez comment utiliser Windows PowerShell pour effectuer une migration à basculement vers Office 365.'
+ms.openlocfilehash: db2782faac86e53ffd4d2794ee77d53605c9484e
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-office-365"></a>Utiliser PowerShell pour effectuer une migration à basculement vers Office 365
 
@@ -75,7 +74,7 @@ Pour la liste complète des commandes de migration, voir [Cmdlets de déplacemen
   Test-MigrationServerAvailability -ExchangeOutlookAnywhere -Autodiscover -EmailAddress <email address for on-premises administrator> -Credentials $credentials
   ```
 
-- **Attribuez à un compte d'utilisateur local les autorisations nécessaires pour accéder aux boîtes aux lettres de votre organisation Exchange.** Le compte d'utilisateur local que vous utilisez pour vous connecter à votre organisation Exchange locale (également appeléadministrateur de migration) doit disposer des autorisations nécessaires pour accéder aux boîtes aux lettres locales que vous voulez migrer vers Office 365. Ce compte d'utilisateur permet de créer un point de terminaison de migration pour votre organisation locale.
+- **Attribuer un compte d’utilisateur local les autorisations nécessaires pour accéder aux boîtes aux lettres dans votre organisation Exchange.** Le compte d’utilisateur local que vous utilisez pour vous connecter à votre organisation d’Exchange sur site (également appelée l’administrateur de migration) doit posséder les autorisations nécessaires pour accéder aux boîtes aux lettres locale que vous souhaitez migrer vers Office 365. Ce compte d’utilisateur est utilisé pour créer un point de terminaison de migration pour votre organisation locale.
     
     La liste suivante montre les privilèges administratifs requis pour migrer des boîtes aux lettres à l'aide d'une migration à basculement. Trois options sont possibles.
     

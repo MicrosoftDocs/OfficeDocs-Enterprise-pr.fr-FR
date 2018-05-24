@@ -1,5 +1,5 @@
 ---
-title: "Création de sites d’équipe dans un environnement de développement/test dans le cadre d’une campagne électorale"
+title: Création de sites d’équipe dans un environnement de développement/test dans le cadre d’une campagne électorale
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,45 +10,45 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.service: o365-solutions
-localization_priority: None
-ms.custom: Strat_O365_Enterprise
+localization_priority: Priority
+ms.custom: ''
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
-description: "Résumé : Créer des sites d’équipe SharePoint Online publiques, privées, sensibles et hautement confidentielles dans votre environnement de développement/test de campagne politique."
-ms.openlocfilehash: 3a2e507d17a558452fe0c2f0a062098e7c9c6407
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
-ms.translationtype: MT
+description: 'Résumé : Créez des sites d’équipe SharePoint Online publics, privés, sensibles et hautement confidentiels dans votre environnement de développement/test dans le cadre d’une campagne électorale.'
+ms.openlocfilehash: 146632ede567be4bf412304960605e6d87de7657
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>Création de sites d’équipe dans un environnement de développement/test dans le cadre d’une campagne électorale
 
- **Résumé :** Créer des sites d’équipe SharePoint Online publiques, privées, sensibles et hautement confidentielles dans votre environnement de développement/test de campagne politique. 
+ **Résumé :** Créez des sites d’équipe SharePoint Online publics, privés, sensibles et hautement confidentiels dans votre environnement de développement/test dans le cadre d’une campagne électorale. 
   
-Suivez les instructions de cet article pour créer un environnement de développement/test qui inclut les quatre types différents de sites d’équipe SharePoint Online pour connaître les [Conseils Microsoft sur la sécurité pour les campagnes politiques, les organismes sans but lucratif et les autres organisations Agile](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md) solution. Ces sites sont décrites en détail dans la rubrique 10, intitulé **SharePoint et OneDrive pour les entreprises**.
+Utilisez les instructions fournies dans cet article pour créer un environnement de développement/test qui inclut les quatre différents types de sites d’équipe SharePoint Online pour la solution des [conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et autres organisations souples](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md). Ces sites sont décrits en détail dans la Rubrique 10 intitulée **SharePoint et OneDrive Entreprise**.
   
 ## <a name="phase-1-create-your-political-campaign-devtest-environment"></a>Phase 1 : Création d’un environnement de développement/test dans le cadre d’une campagne électorale
 
-Tout d’abord, suivez les instructions de [configurer les groupes et les utilisateurs d’un environnement de développement/test de campagne politique](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md) pour créer des abonnements, des utilisateurs et des groupes.
+Tout d’abord, suivez les instructions de [Configurer de groupes et d’utilisateurs pour un environnement de développement/test pour une campagne électorale](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md) pour créer vos abonnements, utilisateurs et groupes.
   
 ## <a name="phase-2-create-office-365-labels"></a>Phase 2 : Création d’étiquettes Office 365
 
-Dans cette phase, vous créez les étiquettes pour les différents niveaux de sécurité pour les dossiers du document site d’équipe SharePoint Online.
+Dans cette phase, vous allez créer les étiquettes correspondant aux différents niveaux de sécurité pour les dossiers de document du site d’équipe SharePoint Online.
   
-1. Si nécessaire, connectez-vous au portail Office 365 avec les informations d’identification du compte d’administrateur global de votre abonnement d’évaluation. Pour de l’aide, consultez la rubrique [pour vous connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Si nécessaire, connectez-vous au portail Office 365 avec les informations d’identification du compte d’administrateur général de votre abonnement d’essai. Pour obtenir de l’aide, consultez [Où se connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
-2. À partir de l’onglet **Accueil de Microsoft Office** , cliquez sur la mosaïque de **l’Admin** .
+2. Sous l’onglet **Accueil Microsoft Office**, cliquez sur la vignette **Administration**.
     
-3. Dans l’onglet nouveau **Centre d’administration d’Office** de votre navigateur, cliquez sur **Centre d’administration > sécurité &amp; la conformité**.
+3. Sous le nouvel onglet **Centre d’administration Office** de votre navigateur, cliquez sur **Centres d’administration > Sécurité &amp; conformité**.
     
-4. À partir du nouveau **maison - sécurité &amp; la conformité** onglet de votre navigateur, cliquez sur **les Classifications > étiquettes**.
+4. Sous le nouvel onglet **Accueil - Sécurité &amp; conformité** de votre navigateur, cliquez sur **Classifications > Étiquettes**.
     
-5. À partir de le **Accueil > étiquettes** volet, cliquez sur **créer une étiquette**.
+5. Dans le volet **Accueil > Étiquettes**, cliquez sur **Créer une étiquette**.
     
-6. Dans le volet **nom de votre étiquette** , type **interne**, puis cliquez sur **suivant**.
+6. Dans le volet **Nom de l’étiquette**, saisissez **Interne** et cliquez sur **Suivant**.
     
-7. Dans le volet **paramètres d’étiquette** , cliquez sur **suivant**.
+7. Dans le volet **Paramètres de l’étiquette**, cliquez sur **Suivant**.
     
-8. Dans le volet de **passer en revue vos paramètres** , cliquez sur **créer cette étiquette**, puis cliquez sur **Fermer**.
+8. Dans le volet **Vérifier vos paramètres**, cliquez sur **Créer cette étiquette**, puis cliquez sur **Fermer**.
     
 9. Répétez les étapes 5 à 8 pour les autres étiquettes suivantes :
     
@@ -58,21 +58,21 @@ Dans cette phase, vous créez les étiquettes pour les différents niveaux de s�
     
   - Hautement confidentiel
     
-10. À partir de le **Accueil > étiquettes** volet, cliquez sur **publier les étiquettes**.
+10. Dans le volet **Accueil > Étiquettes**, cliquez sur **Publier des étiquettes**.
     
-11. Dans le volet **Choisir les étiquettes à publier** , cliquez sur **Choisir les étiquettes à publier**.
+11. Dans le volet **Choisir les étiquettes à publier**, cliquez sur **Choisir les étiquettes à publier**.
     
-12. Dans le volet **Choisir étiquettes** , cliquez sur **Ajouter** et sélectionner toutes les étiquettes de quatre.
+12. Dans le volet **Choisir des étiquettes**, cliquez sur **Ajouter** et sélectionnez les quatre étiquettes.
     
-13. Cliquez sur **terminé**.
+13. Cliquez sur **Terminé**.
     
-14. Dans le volet **Choisir les étiquettes à publier** , cliquez sur **suivant**.
+14. Dans le volet **Choisir les étiquettes à publier**, cliquez sur **Suivant**.
     
-15. Dans le volet **Choisir des emplacements** , cliquez sur **suivant**.
+15. Dans le volet **Choisir les emplacements**, cliquez sur **Suivant**.
     
-16. Dans le volet **nom de votre stratégie** , type de **campagne** dans la zone **nom**, puis cliquez sur **suivant**.
+16. Dans le volet **Nom de votre stratégie**, saisissez **Campagne** dans **Nom**, puis cliquez sur **Suivant**.
     
-17. Dans le volet de **passer en revue vos paramètres** , cliquez sur **publier les étiquettes**, puis cliquez sur **Fermer**.
+17. Dans le volet **Vérifier vos paramètres**, cliquez sur **Publier les étiquettes**, puis cliquez sur **Fermer**.
     
 ## <a name="phase-3-create-your-sharepoint-online-team-sites"></a>Phase 3 : Créer vos sites d’équipe SharePoint Online
 
@@ -80,289 +80,290 @@ Lors de cette phase, vous allez créer et configurer des sites d’équipe Shar
   
 ### <a name="campaign-wide-team-site"></a>Site d’équipe de la campagne
 
-Pour créer un site d’équipe SharePoint Online public de référence, procédez comme suit :
+Pour créer une base de référence de site d’équipe SharePoint Online public, procédez comme suit :
   
-1. Si nécessaire, utilisez un navigateur sur votre ordinateur local et vous connecter au portail Office 365 ([https://portal.office.com](https://portal.office.com)) à l’aide de votre compte d’administrateur global.
+1. Si nécessaire, utilisez un navigateur sur votre ordinateur local et connectez-vous au portail Office 365 ([https://portal.office.com](https://portal.office.com)) en utilisant votre compte d’administrateur général.
     
-2. Dans la liste des mosaïques, cliquez sur **SharePoint**.
+2. Dans la liste des vignettes, cliquez sur **SharePoint**.
     
-3. Dans l’onglet nouveau **SharePoint** dans votre navigateur, cliquez sur **+ créer le site**.
+3. Sous le nouvel onglet **SharePoint** de votre navigateur, cliquez sur **+ Créer un site**.
     
-4. Dans la page **créer un site** , cliquez sur **site d’équipe**.
+4. Dans la page **Créer un site**, cliquez sur **Site d’équipe**.
     
-5. Dans la zone **nom du Site**, tapez **campagne large**. 
+5. Dans **Nom du site**, saisissez **Campagne**. 
     
-6. Dans la **description de site d’équipe**, tapez le **site SharePoint pour toute la campagne**.
+6. Dans **Description du site d’équipe**, saisissez **Site SharePoint pour l’ensemble de la campagne**.
     
-7. Dans les **paramètres de confidentialité**, sélectionnez **Public - tout le monde dans l’organisation peut accéder à ce site**, puis cliquez sur **suivant**.
+7. Dans **Paramètres de confidentialité**, sélectionnez **Public - tout le monde dans l’organisation peut accéder à ce site**, puis cliquez sur **Suivant**.
     
-8. Sur le **qui voulez-vous ajouter ?** volet, cliquez sur **Terminer**.
+8. Dans le volet **Qui voulez-vous ajouter ?**, cliquez sur **Terminer**.
     
 Ensuite, configurez le dossier de documents du site d’équipe de la campagne pour l’étiquette Interne.
   
-1. Dans l’onglet **campagne wide-accueil** de votre navigateur, cliquez sur **Documents**.
+1. Dans l’onglet **Campagne - Accueil** de votre navigateur, cliquez sur **Documents**.
     
-2. Cliquez sur l’icône de paramètres, puis cliquez sur **paramètres de la bibliothèque**.
+2. Cliquez sur l’icône des paramètres, puis cliquez sur **Paramètres de la bibliothèque**.
     
-3. Sous **autorisations et gestion**, cliquez sur **étiquette d’appliquer aux éléments de cette bibliothèque**.
+3. Sous **Autorisations et gestion**, cliquez sur **Appliquer l’étiquette aux éléments de cette bibliothèque**.
     
-4. Dans **Les paramètres à appliquer une étiquette**, sélectionnez **interne**, puis cliquez sur **Enregistrer**.
+4. Dans **Paramètres - Appliquer l’étiquette**, sélectionnez **Interne**, puis cliquez sur **Enregistrer**.
     
 ### <a name="campaign-project-1-team-site"></a>Site d’équipe 1 du projet Campagne
 
 Pour créer un site d’équipe SharePoint Online privé de référence pour un projet dans la campagne, procédez comme suit :
   
-1. Si nécessaire, utilisez un navigateur sur votre ordinateur local et vous connecter au portail Office 365 ([https://portal.office.com](https://portal.office.com)) à l’aide de votre compte d’administrateur global.
+1. Si nécessaire, utilisez un navigateur sur votre ordinateur local et connectez-vous au portail Office 365 ([https://portal.office.com](https://portal.office.com)) en utilisant votre compte d’administrateur général.
     
-2. Dans la liste des mosaïques, cliquez sur **SharePoint**.
+2. Dans la liste des vignettes, cliquez sur **SharePoint**.
     
-3. Dans l’onglet nouveau **SharePoint** dans votre navigateur, cliquez sur **+ créer le site**.
+3. Sous le nouvel onglet **SharePoint** de votre navigateur, cliquez sur **+ Créer un site**.
     
-4. Dans la page **créer un site** , cliquez sur **site d’équipe**.
+4. Dans la page **Créer un site**, cliquez sur **Site d’équipe**.
     
-5. Dans la zone **nom du Site**, tapez **projet de campagne 1**. 
+5. Dans **Nom du site**, saisissez **Projet de campagne 1**. 
     
-6. Dans la **description de site d’équipe,** tapez le **site SharePoint pour le projet de campagne 1**.
+6. Dans **Description du site d’équipe**, saisissez **Site SharePoint pour le projet de campagne 1**.
     
-7. Dans **les paramètres de confidentialité**, sélectionnez **privé - uniquement les membres peuvent accéder à ce site**, puis cliquez sur **suivant**.
+7. Dans **Paramètres de confidentialité**, sélectionnez **Privé - Seuls les membres peuvent accéder à ce site**, puis cliquez sur **Suivant**.
     
-8. Sur le **qui voulez-vous ajouter ?** volet, cliquez sur **Terminer**.
+8. Dans le volet **Qui voulez-vous ajouter ?**, cliquez sur **Terminer**.
     
 Ensuite, configurez le dossier de documents du site d’équipe Projet Campagne 1 pour l’étiquette Privé.
   
-1. Dans l’onglet **campagne projet 1-accueil** de votre navigateur, cliquez sur **Documents**.
+1. Dans l’onglet **Projet Campagne 1 - Accueil** de votre navigateur, cliquez sur **Documents**.
     
-2. Cliquez sur l’icône de paramètres, puis cliquez sur **paramètres de la bibliothèque**.
+2. Cliquez sur l’icône des paramètres, puis cliquez sur **Paramètres de la bibliothèque**.
     
-3. Sous **autorisations et gestion**, cliquez sur **étiquette d’appliquer aux éléments de cette bibliothèque**.
+3. Sous **Autorisations et gestion**, cliquez sur **Appliquer l’étiquette aux éléments de cette bibliothèque**.
     
-4. Dans **Les paramètres à appliquer une étiquette**, sélectionnez **privé**, puis cliquez sur **Enregistrer**.
+4. Dans **Paramètres - Appliquer l’étiquette**, sélectionnez **Privé**, puis cliquez sur **Enregistrer**.
     
 ### <a name="campaign-marketing-team-site"></a>Site d’équipe marketing de campagne
 
 Pour créer un site d’équipe SharePoint Online isolé pour les données sensibles des ressources marketing de la campagne, procédez comme suit :
   
-1. À l’aide d’un navigateur sur votre ordinateur local, connectez-vous au portail Office 365 ([https://portal.office.com](https://portal.office.com)) à l’aide de votre compte d’administrateur global.
+1. En utilisant un navigateur sur votre ordinateur local, connectez-vous au portail Office 365 ([https://portal.office.com](https://portal.office.com)) avec votre compte d’administrateur général.
     
-2. Dans la liste des mosaïques, cliquez sur **SharePoint**.
+2. Dans la liste des vignettes, cliquez sur **SharePoint**.
     
-3. Dans l’onglet nouveau **SharePoint** dans votre navigateur, cliquez sur **+ créer le site**.
+3. Sous le nouvel onglet **SharePoint** de votre navigateur, cliquez sur **+ Créer un site**.
     
-4. Dans la page **créer un site** , cliquez sur **site d’équipe**.
+4. Dans la page **Créer un site**, cliquez sur **Site d’équipe**.
     
-5. Dans la zone **nom du site d’équipe**, tapez la **campagne marketing**.
+5. Dans **Nom du site d’équipe**, saisissez **Ressources marketing de la campagne**.
     
-6. Dans la **description de site d’équipe**, tapez le **site SharePoint pour la campagne de commercialisation (la casse)**.
+6. Dans **Description du site d’équipe**, saisissez **Site SharePoint pour les ressources marketing de la campagne (données sensibles)**.
     
-7.  Dans **les paramètres de confidentialité**, sélectionnez **privé - uniquement les membres peuvent accéder à ce site**, puis cliquez sur **suivant**.
+7.  Dans **Paramètres de confidentialité**, sélectionnez **Privé - Seuls les membres peuvent accéder à ce site**, puis cliquez sur **Suivant**.
     
-8. Sur le **qui voulez-vous ajouter ?** volet, cliquez sur **Terminer**.
+8. Dans le volet **Qui voulez-vous ajouter ?**, cliquez sur **Terminer**.
     
-9. Dans l’onglet Nouveau de la **campagne marketing** dans votre navigateur, dans la barre d’outils, cliquez sur l’icône de paramètres, puis cliquez sur **autorisations du Site**.
+9. Dans le nouvel onglet **Marketing campagne** de votre navigateur, cliquez sur l’icône des paramètres dans la barre d’outils, puis sur **Autorisations du site**.
     
-10. Dans le volet **autorisations de Site** , cliquez sur **autorisations avancées**.
+10. Dans le volet **Autorisations du site**, cliquez sur **Paramètres d’autorisations avancés**.
     
-11. Dans l’onglet **autorisations** de nouveau dans votre navigateur, cliquez sur **Paramètres de demande d’accès**.
+11. Sous le nouvel onglet **Autorisations** dans votre navigateur, cliquez sur **Paramètres des demandes d’accès**.
     
-12. Dans la boîte de dialogue **Paramètres de demande d’accès** , désactivez les cases à cocher **Autoriser les membres à partager le site et les fichiers et dossiers individuels** et **Autoriser les membres à inviter d’autres personnes au groupe de membres du site** , tapez **ITAdmin1 @** <your organization name> **. onmicrosoft.com** dans la zone **Envoyer toutes les demandes d’accès**, puis cliquez sur **OK**.
+12. Dans la boîte de dialogue **Paramètres de demande d’accès**, désactivez les cases à cocher **Autoriser les membres à partager le site, ainsi que des fichiers et dossiers individuels** et **Autoriser les membres à inviter d’autres personnes sur le groupe de membres du site**, saisissez **ITAdmin1@**<your organization name> **.onmicrosoft.com** dans le champ **Envoyer toutes les demandes d’accès à**, puis cliquez sur **OK**.
     
-13. Dans la liste, cliquez sur **campagne marketing des membres** .
+13. Cliquez sur les **membres de l’équipe marketing de la campagne** dans la liste.
     
-14. Dans la page **personnes et groupes** , cliquez sur **Nouveau**.
+14. Dans la page **Personnes et groupes**, cliquez sur **Nouveau**.
     
-15. Dans la boîte de dialogue de **partage** , tapez **Senior et personnel stratégique**, sélectionnez-le, puis cliquez sur **partage**.
+15. Dans la boîte de dialogue **Partager**, saisissez **Personnel senior et stratégique**, sélectionnez-le, puis cliquez sur **Partager**.
     
-16. Répétez les étapes 14 et 15 pour le groupe **personnel d’Analytique** et le compte d’utilisateur **Regular1** .
+16. Répétez les étapes 14 et 15 pour le groupe **Analytics staff** et le compte d’utilisateur **Standard1**.
     
 17. Cliquez sur le bouton de retour de votre navigateur.
     
-18. Dans la liste, cliquez sur **campagne marketing propriétaires** .
+18. Cliquez sur **Marketing campagne - Propriétaires** dans la liste.
     
-19. Dans la page **personnes et groupes** , cliquez sur **Nouveau**.
+19. Dans la page **Personnes et groupes**, cliquez sur **Nouveau**.
     
-20. Dans la boîte de dialogue de **partage** , tapez le **personnel informatique**, sélectionnez-le, puis cliquez sur **partage**.
+20. Dans la boîte de dialogue **Partager**, saisissez **Équipe informatique**, sélectionnez-la, puis cliquez sur **Partager**.
     
 21. Cliquez sur le bouton de retour de votre navigateur.
     
-22. Fermer l’onglet **personnes et groupes** dans votre navigateur et cliquez sur l’onglet **Campagne marketing-Accueil** dans votre navigateur, puis fermez le volet **autorisations de Site** .
+22. Fermez l’onglet **Personnes et groupes** de votre navigateur, cliquez sur l’onglet **Marketing campagne - Accueil** de votre navigateur, puis fermez le volet **Autorisations du site**.
     
 Voici les résultats de la configuration des autorisations :
   
-- Le groupe SharePoint des **Membres de campagne marketing** contient uniquement le **personnel d’encadrement et personnel stratégique** groupe (qui contienne les comptes d’utilisateurs candidats, ChiefOfStaff et Strategic1), le groupe de **campagne marketing** (qui contient le compte d’utilisateur administrateur global), le groupe **personnel d’Analytique** (qui contient le compte d’utilisateur DataScientist1) et le compte d’utilisateur **Regular1** .
+- Le groupe SharePoint **Marketing campagne - Membres** contient uniquement le groupe **Senior and strategic staff** (qui contient les comptes d’utilisateurs Candidate, ChiefOfStaff et Strategic1), le groupe **Marketing campagne ** (qui contient le compte d’administrateur général), le groupe **Analytics staff** (qui contient le compte d’utilisateur DataScientist1) et le compte d’utilisateur **Regular1**.
     
-- Le groupe SharePoint **Propriétaires de marketing de campagne** contient uniquement le groupe de **service informatique** (qui contienne uniquement les comptes d’utilisateurs ITAdmin1 et ITAdmin2).
+- Le groupe SharePoint **Marketing campagne - Propriétaires** contient uniquement le groupe **Équipe informatique** (qui contient uniquement les comptes d’utilisateurs ITAdmin1 et ITAdmin2).
     
-- Le groupe SharePoint de **Campagne marketing-les visiteurs** ne contient aucun groupe ou compte d’utilisateur.
+- Le groupe SharePoint **Marketing campagne - Visiteurs** ne contient aucun groupe ou compte d’utilisateur.
     
-- Les membres ne peuvent pas modifier les autorisations au niveau du site (cela n’est possible par les membres du groupe de **Campagnes marketing-propriétaires** ).
+- Les membres ne peuvent pas modifier les autorisations au niveau du site (cette opération peut être uniquement effectuée par les membres du groupe **Marketing campagne - Propriétaires**).
     
 - Les autres comptes d’utilisateurs ne peuvent pas accéder au site ni à ses ressources, mais peuvent demander d’avoir accès au site. Un courrier électronique sera envoyé à la boîte aux lettres du compte d’utilisateur ITAdmin1.
     
 Ensuite, configurez le dossier de documents du site d’équipe Marketing campagne pour l’étiquette Sensible.
   
-1. Dans l’onglet **Campagne marketing-Accueil** de votre navigateur, cliquez sur **Documents**.
+1. Dans l’onglet **Marketing campagne - Accueil** de votre navigateur, cliquez sur **Documents**.
     
-2. Cliquez sur l’icône de paramètres, puis cliquez sur **paramètres de la bibliothèque**.
+2. Cliquez sur l’icône des paramètres, puis cliquez sur **Paramètres de la bibliothèque**.
     
-3. Sous **autorisations et gestion**, cliquez sur **étiquette d’appliquer aux éléments de cette bibliothèque**.
+3. Sous **Autorisations et gestion**, cliquez sur **Appliquer l’étiquette aux éléments de cette bibliothèque**.
     
-4. Dans **Les paramètres à appliquer une étiquette**, sélectionnez **sensibles**, puis cliquez sur **Enregistrer**.
+4. Dans **Paramètres - Appliquer l’étiquette**, sélectionnez **Sensible**, puis cliquez sur **Enregistrer**.
     
-Ensuite, configurez une stratégie de prévention contre la perte données qui avertit les utilisateurs lorsqu’ils partagent un document sur un site d’équipe SharePoint Online avec l’étiquette sensible à l’extérieur de l’organisation. Cette stratégie DLP s’applique aux ressources dans le site de campagne marketing.
+Ensuite, configurez une stratégie de protection contre la perte de données qui avertit les utilisateurs quand ils partagent un document sur un site d’équipe SharePoint Online avec l’étiquette Sensible à l’extérieur de l’organisation. Cette stratégie DLP s’applique aux ressources du site Marketing campagne.
   
-1. À partir de l’onglet **Accueil de Microsoft Office** dans votre navigateur, cliquez sur le **sécurité &amp; la conformité** en mosaïque.
+1. Sous l’onglet **Accueil Microsoft Office** de votre navigateur, cliquez sur la vignette **Sécurité &amp; conformité**.
     
-2. Sur la nouvelle **sécurité &amp; la conformité** dans votre navigateur, cliquez sur **prévention des fuites de données > stratégie de**.
+2. Sous le nouvel onglet **Sécurité &amp; conformité** de votre navigateur, cliquez sur **Protection contre la perte de données > Stratégie**.
     
-3. Dans le volet de la **prévention des fuites de données** , cliquez sur **+ créer une stratégie**.
+3. Dans le volet **Protection contre la perte de données**, cliquez sur **+ Créer une stratégie**.
     
-4. Dans la **Démarrer avec un modèle ou créer une stratégie personnalisée** volet, cliquez sur **personnalisée**, puis cliquez sur **suivant**.
+4. Dans le volet **Utiliser un modèle ou créer une stratégie personnalisée**, cliquez sur **Personnalisé**, puis sur **Suivant**.
     
-5. Dans le volet **nom de votre stratégie** , tapez des **sites d’équipe SharePoint Online étiquette sensibles** dans la zone **nom**, puis cliquez sur **suivant**.
+5. Dans le volet **Nom de votre stratégie**, saisissez les **sites d’équipe SharePoint Online avec étiquette Sensible** sous **Nom**, puis cliquez sur **Suivant**.
     
-6. Dans le volet **Choisir des emplacements** , cliquez sur **me laisser choisir des emplacements spécifiques**, puis cliquez sur **suivant**.
+6. Dans le volet **Choisir des emplacements**, cliquez sur **Me laisser choisir des emplacements spécifiques**, puis cliquez sur **Suivant**.
     
-7. Dans la liste des emplacements, désactivez les emplacements **des comptes de OneDrive** et de la **messagerie Exchange** , puis cliquez sur **suivant**.
+7. Dans la liste des emplacements, désactivez les emplacements **Messagerie Exchange** et **Comptes OneDrive**, puis cliquez sur **Suivant**.
     
-8. Dans le volet **Personnaliser les types d’informations sensibles que vous souhaitez protéger** , cliquez sur **Modifier**.
+8. Dans le volet **Personnaliser les types d’informations sensibles que vous voulez protéger**, cliquez sur **Modifier**.
     
-9. Dans le volet **Choisir les types de contenu à protéger** , cliquez sur **Ajouter** dans la zone de liste déroulante, puis cliquez sur **étiquettes**.
+9. Dans le volet **Choisir les types de contenu à protéger**, cliquez sur **Ajouter** dans la zone de liste déroulante, puis cliquez sur **Étiquettes**.
     
-10. Dans le volet **d’étiquettes** , cliquez sur **+ Ajouter**, sélectionnez l’étiquette **sensibles** , cliquez sur **Ajouter**, puis cliquez sur **terminé**.
+10. Dans le volet **Étiquettes**, cliquez sur **+ Ajouter**, sélectionnez l’étiquette **Sensible**, cliquez sur **Ajouter**, puis sur **Terminé**.
     
-11. Dans le volet **Choisir les types de contenu à protéger** , cliquez sur **Enregistrer**.
+11. Dans le volet **Choisir les types de contenu à protéger**, cliquez sur **Enregistrer**.
     
-12. Dans le volet **Personnaliser les types d’informations sensibles que vous souhaitez protéger** , cliquez sur **suivant**.
+12. Dans le volet **Personnaliser les types d’informations sensibles que vous voulez protéger**, cliquez sur **Suivant**.
     
-13. Dans la **ce que vous voulez faire si nous détectons des informations sensibles ?** volet, cliquez sur **Personnaliser l’info-bulle et la messagerie électronique**.
+13. Dans le volet **Que voulez-vous faire si nous détectons des informations confidentielles ?**, cliquez sur **Personnaliser l’info-bulle et la messagerie électronique**.
     
-14. Dans le volet de **conseils de stratégie de personnaliser et de notifications par courrier électronique** , cliquez sur **Personnaliser le texte d’info-bulle de stratégie**.
+14. Dans le volet **Personnaliser les conseils et les notifications par e-mail de la stratégie**, cliquez sur **Personnaliser le texte de l’info-bulle de la stratégie**.
     
-15. Dans la zone de texte, tapez ou collez le texte suivant :
+15. Dans la zone de texte, tapez ou collez ce qui suit :
     
   - Pour partager un fichier avec un utilisateur extérieur à l’organisation, téléchargez-le et ouvrez-le. Cliquez sur Fichier > Protéger le document > Chiffrer avec mot de passe, puis indiquez un mot de passe fort. Envoyez le mot de passe par e-mail ou un autre moyen de communication.
     
 16. Cliquez sur **OK**.
     
-17. Dans la **ce que vous voulez faire si nous détectons des informations sensibles ?** volet, désactivez la case à cocher **bloquer le partage, des personnes et de restreindre l’accès au contenu partagé** , puis cliquez sur **suivant**.
+17. Dans le volet **Que faire en cas de détection d’informations sensibles ?**, désélectionnez la case **Empêcher les utilisateurs de partager un fichier et restreindre l’accès au contenu partagé**, puis cliquez sur **Suivant**.
     
-18. Dans le **vous souhaitez activer les opérations de test ou de stratégie en premier ?** volet, cliquez sur **Oui, activer tout de suite**, puis cliquez sur **suivant**.
+18. Dans le volet **Voulez-vous activer la stratégie ou d’abord effectuer des tests ?**, cliquez sur **Oui, l’activer maintenant**, puis cliquez sur **Suivant**.
     
-19. Dans le volet de **passer en revue vos paramètres** , cliquez sur **créer**, puis cliquez sur **Fermer**.
+19. Dans le volet **Vérifier vos paramètres**, cliquez sur **Créer**, puis cliquez sur **Fermer**.
     
 ### <a name="campaign-strategy-team-site"></a>Site d’équipe Stratégie de campagne
 
 Pour créer un site d’équipe SharePoint Online isolé hautement confidentiel pour les ressources de stratégie de campagne, procédez comme suit :
   
-1. Si nécessaire, utilisez un navigateur sur votre ordinateur local et vous connecter au portail Office 365 ([https://portal.office.com](https://portal.office.com)) à l’aide de votre compte d’administrateur global.
+1. Si nécessaire, utilisez un navigateur sur votre ordinateur local et connectez-vous au portail Office 365 ([https://portal.office.com](https://portal.office.com)) en utilisant votre compte d’administrateur général.
     
-2. Dans la liste des mosaïques, cliquez sur **SharePoint**.
+2. Dans la liste des vignettes, cliquez sur **SharePoint**.
     
-3. Dans l’onglet nouveau **SharePoint** dans votre navigateur, cliquez sur **+ créer le site**.
+3. Sous le nouvel onglet **SharePoint** de votre navigateur, cliquez sur **+ Créer un site**.
     
-4. Dans la page **créer un site** , cliquez sur **site d’équipe**.
+4. Dans la page **Créer un site**, cliquez sur **Site d’équipe**.
     
-5. Dans la zone **nom du site d’équipe**, tapez **stratégie de campagne**.
+5. Dans **Nom du site d’équipe**, saisissez **Stratégie de campagne**.
     
-6. Dans la **description de site d’équipe**, tapez le **site SharePoint pour la stratégie de campagne (hautement confidentiel)**.
+6. Dans **Description du site d’équipe** saisissez **Site SharePoint pour la stratégie de campagne (hautement confidentiel)**.
     
-7.  Dans **les paramètres de confidentialité**, sélectionnez **privé - uniquement les membres peuvent accéder à ce site**, puis cliquez sur **suivant**.
+7.  Dans **Paramètres de confidentialité**, sélectionnez **Privé - Seuls les membres peuvent accéder à ce site**, puis cliquez sur **Suivant**.
     
-8. Sur le **qui voulez-vous ajouter ?** volet, cliquez sur **Terminer**.
+8. Dans le volet **Qui voulez-vous ajouter ?**, cliquez sur **Terminer**.
     
-9. Dans l’onglet **stratégie de campagne** nouveau dans votre navigateur, dans la barre d’outils, cliquez sur l’icône de paramètres, puis cliquez sur **autorisations du Site**.
+9. Dans le nouvel onglet **Stratégie de campagne** de votre navigateur, cliquez sur l’icône des paramètres dans la barre d’outils, puis sur **Autorisations du site**.
     
-10. Dans le volet **autorisations de Site** , cliquez sur **autorisations avancées**.
+10. Dans le volet **Autorisations du site**, cliquez sur **Paramètres d’autorisations avancés**.
     
-11. Dans l’onglet **autorisations** de nouveau dans votre navigateur, cliquez sur **Paramètres de demande d’accès**.
+11. Sous le nouvel onglet **Autorisations** dans votre navigateur, cliquez sur **Paramètres des demandes d’accès**.
     
-12. Dans la boîte de dialogue **Paramètres de demande d’accès** , désactivez **Autoriser les membres à inviter d’autres personnes au groupe de membres du site** et **permettre aux membres de partager le site et les fichiers et dossiers individuels** (de sorte que toutes les trois cases à cocher sont désactivées), puis cliquez sur ** OK**.
+12. Dans la boîte de dialogue **Paramètres de demande d’accès**, désactivez les cases à cocher **Autoriser les membres à partager le site et les fichiers et dossiers individuels** et **Autoriser les membres à inviter d’autres personnes sur le groupe de membres du site** (afin que les trois cases à cocher soient désactivées), puis cliquez sur **OK**.
     
-13. Dans la liste, cliquez sur **stratégie de campagne membres** .
+13. Cliquez sur les **membres de l’équipe Stratégie de campagne** dans la liste.
     
-14. Dans la page **personnes et groupes** , cliquez sur **Nouveau**.
+14. Dans la page **Personnes et groupes**, cliquez sur **Nouveau**.
     
-15. Dans la boîte de dialogue de **partage** , tapez **Senior et personnel stratégique**, sélectionnez-le, puis cliquez sur **partage**.
+15. Dans la boîte de dialogue **Partager**, saisissez **Personnel senior et stratégique**, sélectionnez-le, puis cliquez sur **Partager**.
     
-16. Dans la liste, cliquez sur **stratégie de campagne propriétaires** .
+16. Cliquez sur les **propriétaires de la stratégie de campagne** dans la liste.
     
-17. Dans la page **personnes et groupes** , cliquez sur **Nouveau**.
+17. Dans la page **Personnes et groupes**, cliquez sur **Nouveau**.
     
-18. Dans la boîte de dialogue de **partage** , tapez le **personnel informatique**, sélectionnez-le, puis cliquez sur **partage**.
+18. Dans la boîte de dialogue **Partager**, saisissez **Équipe informatique**, sélectionnez-la, puis cliquez sur **Partager**.
     
 19. Cliquez sur le bouton de retour de votre navigateur.
     
-20. Fermer l’onglet **personnes et groupes** dans votre navigateur et cliquez sur l’onglet **accueil de la stratégie de la campagne** dans votre navigateur, puis fermez le volet **autorisations de Site** .
+20. Fermez l’onglet **Personnes et groupes** de votre navigateur, cliquez sur l’onglet **Stratégie de campagne - Accueil** de votre navigateur, puis fermez le volet **Autorisations du site**.
     
 Voici les résultats de la configuration des autorisations :
   
-- Le groupe SharePoint des **Membres de stratégie de campagne** contient uniquement le groupe **Senior et personnel stratégique** (qui contienne uniquement les comptes d’utilisateurs candidats, ChiefOfStaff et Strategic1) et le groupe de la **stratégie de campagne** (qui contient seul le compte d’administrateur global).
+- Le groupe SharePoint **Stratégie de campagne - Membres** contient uniquement le groupe **Senior and strategic staff** (qui contient uniquement les comptes d’utilisateurs Candidate, ChiefOfStaff et Strategic1) et le groupe **Stratégie de campagne** (qui contient uniquement le compte d’administrateur général).
+
     
-- Le groupe SharePoint **Propriétaires de stratégie de campagne** contient uniquement le groupe de **service informatique** (qui contienne uniquement les comptes d’utilisateurs ITAdmin1 et ITAdmin2).
+- Le groupe SharePoint **Stratégie de campagne - Propriétaires** contient uniquement le groupe **Équipe informatique** (qui contient uniquement les comptes d’utilisateurs ITAdmin1 et ITAdmin2).
     
-- Le groupe SharePoint **Visiteurs de stratégie de campagne** ne contient aucun groupe ou compte d’utilisateur.
+- Le groupe SharePoint **Stratégie de campagne - Visiteurs** ne contient aucun groupe ou compte d’utilisateur.
     
-- Les membres ne peuvent pas modifier les autorisations au niveau du site (cela n’est possible par les membres du groupe **Propriétaires de stratégie de campagne** ).
+- Les membres ne peuvent pas modifier les autorisations au niveau du site (cette opération peut être uniquement effectuée par les membres du groupe **Stratégie de campagne - Propriétaires**).
     
-- Autres comptes d’utilisateur ne peut pas accéder au site ou ses ressources ou demander l’accès au site. Des autorisations supplémentaires sur le site doivent être effectuées par l’administrateur global ou par un membre du groupe de **Propriétaires de stratégie de campagne** .
+- Les autres comptes d’utilisateurs ne peuvent pas accéder au site ni à ses ressources, ni demander l’accès au site. Les autorisations supplémentaires doivent être accordées par l’administrateur général ou par un membre du groupe **Stratégie de campagne - Propriétaires**.
     
 Ensuite, configurez le dossier de documents du site d’équipe Stratégie de campagne pour l’étiquette Hautement confidentiel.
   
-1. Dans l’onglet **accueil de la stratégie de la campagne** de votre navigateur, cliquez sur **Documents**.
+1. Dans l’onglet **Stratégie de campagne - Accueil** de votre navigateur, cliquez sur **Documents**.
     
-2. Cliquez sur l’icône de paramètres, puis cliquez sur **paramètres de la bibliothèque**.
+2. Cliquez sur l’icône des paramètres, puis cliquez sur **Paramètres de la bibliothèque**.
     
-3. Sous **autorisations et gestion**, cliquez sur **étiquette d’appliquer aux éléments de cette bibliothèque**.
+3. Sous **Autorisations et gestion**, cliquez sur **Appliquer l’étiquette aux éléments de cette bibliothèque**.
     
-4. Dans les **Paramètres à appliquer une étiquette**, sélectionnez **Hautement confidentielles**et puis cliquez sur **Enregistrer**.
+4. Dans **Paramètres - Appliquer une étiquette**, sélectionnez **Hautement confidentiel**, puis cliquez sur **Enregistrer**.
     
-Configurez ensuite une stratégie DLP qui empêche les utilisateurs lorsqu’ils partagent un document sur un site d’équipe SharePoint Online avec l’étiquette hautement confidentielles à l’extérieur de l’organisation. Cette stratégie DLP s’applique aux ressources du site stratégie de campagne.
+Ensuite, configurez une stratégie DLP qui bloque les utilisateurs quand ils partagent un document à l’extérieur de l’organisation sur un site d’équipe SharePoint Online avec l’étiquette Hautement confidentiel. Cette stratégie DLP s’applique aux ressources du site Stratégie de campagne.
   
-1. Si nécessaire, utilisez un navigateur sur votre ordinateur local et vous connecter au portail Office 365 ([https://portal.office.com](https://portal.office.com)) avec un compte qui possède le rôle d’administrateur de sécurité ou l’administrateur de la société.
+1. Si nécessaire, utilisez un navigateur sur votre ordinateur local et connectez-vous au portail Office 365 ([https://portal.office.com](https://portal.office.com)) avec un compte disposant du rôle Administrateur de sécurité ou Administrateur de la société.
     
-2. À partir de l’onglet **Accueil de Microsoft Office** dans votre navigateur, cliquez sur le **sécurité &amp; la conformité** en mosaïque.
+2. Sous l’onglet **Accueil Microsoft Office** de votre navigateur, cliquez sur la vignette **Sécurité &amp; conformité**.
     
-3. Sur la nouvelle **sécurité &amp; la conformité** dans votre navigateur, cliquez sur **prévention des fuites de données > stratégie de**.
+3. Sous le nouvel onglet **Sécurité &amp; conformité** de votre navigateur, cliquez sur **Protection contre la perte de données > Stratégie**.
     
-4. Dans le volet de la **prévention des fuites de données** , cliquez sur **+ créer une stratégie**.
+4. Dans le volet **Protection contre la perte de données**, cliquez sur **+ Créer une stratégie**.
     
-5. Dans la **Démarrer avec un modèle ou créer une stratégie personnalisée** volet, cliquez sur **personnalisée**, puis cliquez sur **suivant**.
+5. Dans le volet **Utiliser un modèle ou créer une stratégie personnalisée**, cliquez sur **Personnalisé**, puis sur **Suivant**.
     
-6. Dans le volet **nom de votre stratégie** , tapez **hautement confidentielles sites d’équipe SharePoint Online étiquette** dans la zone **nom**, puis cliquez sur **suivant**.
+6. Dans le volet **Nom de votre stratégie**, saisissez les **sites d’équipe SharePoint Online avec étiquette Hautement confidentiel** sous **Nom**, puis cliquez sur **Suivant**.
     
-7. Dans le volet **Choisir des emplacements** , cliquez sur **me laisser choisir des emplacements spécifiques**, puis cliquez sur **suivant**.
+7. Dans le volet **Choisir des emplacements**, cliquez sur **Me laisser choisir des emplacements spécifiques**, puis cliquez sur **Suivant**.
     
-8. Dans la liste des emplacements, désactivez les emplacements **des comptes de OneDrive** et de la **messagerie Exchange** , puis cliquez sur **suivant**.
+8. Dans la liste des emplacements, désactivez les emplacements **Messagerie Exchange** et **Comptes OneDrive**, puis cliquez sur **Suivant**.
     
-9. Dans le volet **Personnaliser les types d’informations sensibles que vous souhaitez protéger** , cliquez sur **Modifier**.
+9. Dans le volet **Personnaliser les types d’informations sensibles que vous voulez protéger**, cliquez sur **Modifier**.
     
-10. Dans le volet **Choisir les types de contenu à protéger** , cliquez sur **Ajouter** dans la zone de liste déroulante, puis cliquez sur **étiquettes**.
+10. Dans le volet **Choisir les types de contenu à protéger**, cliquez sur **Ajouter** dans la zone de liste déroulante, puis cliquez sur **Étiquettes**.
     
-11. Dans le volet **d’étiquettes** , cliquez sur **+ Ajouter**, sélectionnez l’étiquette **Hautement confidentielles** , cliquez sur **Ajouter**, puis cliquez sur **terminé**.
+11. Dans le volet **Étiquettes**, cliquez sur **+ Ajouter**, sélectionnez l’étiquette **Hautement confidentiel**, cliquez sur **Ajouter**, puis sur **Terminé**.
     
-12. Dans le volet **Choisir les types de contenu à protéger** , cliquez sur **Enregistrer**.
+12. Dans le volet **Choisir les types de contenu à protéger**, cliquez sur **Enregistrer**.
     
-13. Dans le volet **Personnaliser les types d’informations sensibles que vous souhaitez protéger** , cliquez sur **suivant**.
+13. Dans le volet **Personnaliser les types d’informations sensibles que vous voulez protéger**, cliquez sur **Suivant**.
     
-14. Dans la **ce que vous voulez faire si nous détectons des informations sensibles ?** volet, cliquez sur **Personnaliser l’info-bulle et la messagerie électronique**.
+14. Dans le volet **Que voulez-vous faire si nous détectons des informations confidentielles ?**, cliquez sur **Personnaliser l’info-bulle et la messagerie électronique**.
     
-15. Dans le volet de **conseils de stratégie de personnaliser et de notifications par courrier électronique** , cliquez sur **Personnaliser le texte d’info-bulle de stratégie**.
+15. Dans le volet **Personnaliser les conseils et les notifications par e-mail de la stratégie**, cliquez sur **Personnaliser le texte de l’info-bulle de la stratégie**.
     
-16. Dans la zone de texte, tapez ou collez le texte suivant :
+16. Dans la zone de texte, tapez ou collez ce qui suit :
     
   - Pour partager un fichier avec un utilisateur extérieur à l’organisation, téléchargez-le et ouvrez-le. Cliquez sur Fichier > Protéger le document > Chiffrer avec mot de passe, puis indiquez un mot de passe fort. Envoyez le mot de passe par e-mail ou un autre moyen de communication.
     
 17. Cliquez sur **OK**.
     
-18. Dans la **ce que vous voulez faire si nous détectons des informations sensibles ?** volet, sélectionnez **Exiger une justification à remplacer**, puis cliquez sur **suivant**.
+18. Dans le volet **Que faire en cas de détection d’informations sensibles ?**, sélectionnez **Exiger une justification professionnelle pour le remplacement**, puis cliquez sur **Suivant**.
     
-19. Dans le **vous souhaitez activer les opérations de test ou de stratégie en premier ?** volet, cliquez sur **Oui, activer tout de suite**, puis cliquez sur **suivant**.
+19. Dans le volet **Voulez-vous activer la stratégie ou d’abord effectuer des tests ?**, cliquez sur **Oui, l’activer maintenant**, puis cliquez sur **Suivant**.
     
-20. Dans le volet de **passer en revue vos paramètres** , cliquez sur **créer**, puis cliquez sur **Fermer**.
+20. Dans le volet **Vérifier vos paramètres**, cliquez sur **Créer**, puis cliquez sur **Fermer**.
     
-Suivez les instructions de [RMS d’Azure activer avec le centre d’administration Office 365](https://docs.microsoft.com/information-protection/deploy-use/activate-office365).
+Suivez les instructions contenues dans [Comment activer Azure Rights Management à partir du centre d’administration Office 365](https://docs.microsoft.com/information-protection/deploy-use/activate-office365).
   
-Ensuite, configurez la Protection des informations Azure avec une nouvelle stratégie étendue et une étiquette secondaire pour la protection et d’autorisations avec les étapes suivantes :
+Ensuite, configurez Azure Information Protection avec une nouvelle stratégie délimitée et une sous-étiquette pour la protection et les autorisations en suivant ces étapes :
   
 1. Connectez-vous au portail Office 365 avec un compte disposant du rôle Administrateur de sécurité ou Administrateur d’entreprise. Pour obtenir de l’aide, consultez la rubrique [Se connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
@@ -374,9 +375,9 @@ Ensuite, configurez la Protection des informations Azure avec une nouvelle strat
     
 5. Sur le panneau **Azure Information Protection**, cliquez sur **Stratégies étendues > + Ajouter une nouvelle stratégie**.
     
-6. Dans **nom de la stratégie** et l' **étiquette pour les documents dans le site de l’équipe stratégie campagne** dans la zone **Description**, tapez **CampaignStrategy** .
+6. Tapez **CampaignStrategy** dans **Nom de la stratégie** et **Étiquette pour les documents dans le site d’équipe Stratégie de campagne** dans **Description**.
     
-7. Cliquez sur **Sélectionner les utilisateurs ou les groupes d’obtiennent cette stratégie > groupes d’utilisateurs**, puis sélectionnez **Senior et personnel stratégique**.
+7. Cliquez sur **Sélectionner les utilisateurs ou groupes devant recevoir cette stratégie > Utilisateurs/Groupes**, puis sélectionnez **Personnel senior et stratégique**.
     
 8. Cliquez sur **Sélectionner > OK**.
     
@@ -392,7 +393,7 @@ Ensuite, configurez la Protection des informations Azure avec une nouvelle strat
     
 14. Dans le panneau **Ajouter des autorisations**, sous **Spécifier les utilisateurs et les groupes**, cliquez sur **+ Parcourir le répertoire**.
     
-15. Dans le volet **DAS utilisateurs et des groupes** , sélectionnez **Senior et stratégique personnel**, puis cliquez sur **Sélectionner**.
+15. Dans le volet **Utilisateurs et groupes AAD**, sélectionnez **Personnel senior et stratégique**, puis cliquez sur **Sélectionner**.
     
 16. Sous **Choisir des autorisations à partir de valeurs prédéfinies**, désactivez les cases à cocher **Imprimer **, **Copier et extraire le contenu** et **Transférer**.
     
@@ -402,19 +403,19 @@ Ensuite, configurez la Protection des informations Azure avec une nouvelle strat
     
 19. Fermez le panneau de la nouvelle stratégie étendue.
     
-20. Sur la lame de **protection des informations de Azure - stratégies étendues** , cliquez sur **Publier**, puis cliquez sur **Oui**.
+20. Dans le panneau **Azure Information Protection – Stratégies délimitées**, cliquez sur **Publier** et sur **Oui**.
     
 Vous êtes désormais prêt à créer des documents dans ces quatre sites et à tester l’accès à ces sites avec divers comptes d’utilisateurs disponibles avec votre abonnement à la version d’évaluation. 
   
-Pour protéger un document avec la Protection des informations Azure et cette nouvelle étiquette, vous devez [installer le client de Protection d’informations Azure](https://docs.microsoft.com/information-protection/rms-client/install-client-app) sur un ordinateur de test, installez Office à partir du portail Office 365 et puis vous connecter à partir de Microsoft Word avec un compte dans le ** Personnel d’encadrement et personnel stratégique** groupe de votre abonnement d’évaluation.
+Pour protéger un document avec Azure Information Protection et cette nouvelle étiquette, vous devez [installer le client Azure Information Protection](https://docs.microsoft.com/information-protection/rms-client/install-client-app) sur une machine de test, installer Office à partir du portail Office 365, puis vous connecter à partir de Microsoft Word avec un compte du groupe **Personnel senior et stratégique** de votre abonnement d’essai.
   
 ## <a name="see-also"></a>Voir aussi
 
 [Conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d’autres organisations flexibles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
-[Configurer des groupes et des utilisateurs pour un environnement de développement/test de campagne politique](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md)
+[Configuration de groupes et d’utilisateurs pour un environnement de développement/test pour une campagne électorale](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md)
   
-[Guides de laboratoire de test d'adoption cloud](cloud-adoption-test-lab-guides-tlgs.md)
+[Guides de laboratoire de test d’adoption cloud](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.md)
 

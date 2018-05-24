@@ -1,5 +1,5 @@
 ---
-title: Déploiement de sites SharePoint Online à trois niveaux de protection
+title: Déployer des sites SharePoint Online pour trois niveaux de protection
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -7,23 +7,23 @@ ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
-description: 'Résumé : Créer et configurer des sites d’équipe SharePoint Online pour différents niveaux de protection des informations.'
-ms.openlocfilehash: ddeb1885cbc74be6e7098660eb1d9906d43739fd
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
-ms.translationtype: MT
+description: 'Résumé : Créez et configurez des sites d’équipe SharePoint Online avec différents niveaux de protection des informations.'
+ms.openlocfilehash: 7349616f130c5fc01108fb85ed172e9bc6bba05e
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
-# <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>Déploiement de sites SharePoint Online à trois niveaux de protection
+# <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>Déployer des sites SharePoint Online pour trois niveaux de protection
 
- **Résumé :** Créer et configurer des sites d’équipe SharePoint Online pour différents niveaux de protection des informations.
+ **Résumé :** Créez et configurez des sites d’équipe SharePoint Online avec différents niveaux de protection des informations.
   
 Utilisez les étapes de cet article pour concevoir et déployer des sites d’équipe SharePoint Online de base de référence, sensibles et hautement confidentiels. Pour plus d’informations sur ces trois niveaux de protection, consultez [Sécuriser des sites et des fichiers SharePoint Online](secure-sharepoint-online-sites-and-files.md).
   
@@ -35,7 +35,7 @@ La protection Base de référence inclut les sites d’équipe publics et privé
 
 Pour créer un site d’équipe SharePoint Online de base de référence avec un accès et des autorisations publics, procédez comme suit :
   
-1. Connectez-vous au portail Office 365 avec un compte qui sera également utilisé pour administrer le site d’équipe SharePoint Online (un administrateur SharePoint Online). Pour de l’aide, consultez la rubrique [pour vous connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Connectez-vous au portail Office 365 avec un compte qui sera également utilisé pour administrer le site d’équipe SharePoint Online (un administrateur SharePoint Online). Pour obtenir de l’aide, consultez [Où se connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Dans la liste des vignettes, cliquez sur **SharePoint**.
     
@@ -47,7 +47,7 @@ Pour créer un site d’équipe SharePoint Online de base de référence avec un
     
 6. Dans **Description du site d’équipe**, tapez une description de l’objectif du site.
     
-7. Dans les **paramètres de confidentialité**, sélectionnez **Public - tout le monde dans l’organisation peut accéder à ce site**, puis cliquez sur **suivant**.
+7. Dans **Paramètres de confidentialité**, sélectionnez **Public - tout le monde dans l’organisation peut accéder à ce site**, puis cliquez sur **Suivant**.
     
 8. Dans le volet **Qui voulez-vous ajouter ?**, cliquez sur **Terminer**.
     
@@ -55,11 +55,11 @@ Voici la configuration finale.
   
 ![Protection de base pour un site d’équipe SharePoint Online public.](images/bcd46b8d-3f89-4398-80ce-4da17ee85e03.png)
   
-### <a name="private"></a>Privé
+### <a name="private"></a>Private
 
 Pour créer un site d’équipe SharePoint Online de base de référence avec un accès et des autorisations privés, procédez comme suit :
   
-1. Connectez-vous au portail Office 365 avec un compte qui sera également utilisé pour administrer le site d’équipe SharePoint Online (un administrateur SharePoint Online). Pour de l’aide, consultez la rubrique [pour vous connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Connectez-vous au portail Office 365 avec un compte qui sera également utilisé pour administrer le site d’équipe SharePoint Online (un administrateur SharePoint Online). Pour obtenir de l’aide, consultez [Où se connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Dans la liste des vignettes, cliquez sur **SharePoint**.
     
@@ -69,13 +69,13 @@ Pour créer un site d’équipe SharePoint Online de base de référence avec un
     
 5. Dans **Nom du site**, tapez un nom pour le site d’équipe privé. 
     
-6. Dans la **description de site d’équipe,** tapez une description de l’objet du site.
+6. Dans **Description du site d’équipe**, tapez une description de l’objectif du site.
     
-7. Dans **les paramètres de confidentialité**, sélectionnez **privé - uniquement les membres peuvent accéder à ce site**, puis cliquez sur **suivant**.
+7. Dans **Paramètres de confidentialité**, sélectionnez **Privé - Seuls les membres peuvent accéder à ce site**, puis cliquez sur **Suivant**.
     
 8. Dans le volet **Qui voulez-vous ajouter ?**, dans **Ajouter des membres**, tapez les noms des comptes d’utilisateurs qui ont accès à ce site d’équipe privé.
     
-9. Lorsque vous avez terminé l’ajout de l’ensemble initial de membres au site, cliquez sur **Terminer**
+9. Quand vous avez fini d’ajouter l’ensemble initial des membres au site, cliquez sur **Terminer**.
     
 Voici la configuration finale.
   
@@ -87,15 +87,15 @@ Un site d’équipe SharePoint Online sensible est un site d’équipe isolé. 
   
 La création d’un site d’équipe isolé se déroule en deux étapes.
   
-### <a name="step-1-design-your-isolated-site"></a>Étape 1 : conception du site isolé
+### <a name="step-1-design-your-isolated-site"></a>Étape 1 : Concevoir votre site isolé
 
 Pour concevoir votre site d’équipe isolé, vous devez déterminer :
   
-- vos groupes SharePoint et les niveaux d’autorisation ;
+- Vos groupes et vos niveaux d’autorisation SharePoint.
     
-- les groupes d’accès qui seront membres de vos groupes SharePoint.
+- L’ensemble de groupes d’accès qui seront membres de vos groupes SharePoint.
     
-     Le jeu de groupes d’accès recommandé est un des membres du site, un pour les visiteurs du site affichent et un pour les administrateurs de site.
+     L’ensemble de groupes d’accès recommandé est le suivant : un pour les membres du site, un pour les personnes consultant le site et un pour les administrateurs du site.
     
 - Si vous utilisez des groupes imbriqués au sein de vos groupes d’accès.
     
@@ -119,23 +119,23 @@ Pour déployer votre site isolé, vous devez d’abord :
     
 - Créer les groupes d’accès, et ajouter les utilisateurs et les groupes membres.
     
-Pour la procédure détaillée, consultez **Phase 1** de [Déployer un site d’équipe SharePoint Online isolé](deploy-an-isolated-sharepoint-online-team-site.md).
+Pour la procédure détaillée, consultez la **phase 1** de [Déployer un site d’équipe SharePoint Online isolé](deploy-an-isolated-sharepoint-online-team-site.md).
   
 Ensuite, vous devez créer le site d’équipe SharePoint Online en suivant ces étapes.
   
-1. Connectez-vous au portail Office 365 avec un compte qui sera également utilisé pour administrer le site d’équipe SharePoint Online (un administrateur SharePoint Online). Pour de l’aide, consultez la rubrique [pour vous connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Connectez-vous au portail Office 365 avec un compte qui sera également utilisé pour administrer le site d’équipe SharePoint Online (un administrateur SharePoint Online). Pour obtenir de l’aide, consultez [Où se connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Dans la liste des vignettes, cliquez sur **SharePoint**.
     
-3. Dans le nouvel onglet **SharePoint** de votre navigateur, cliquez sur **+ créer le site**.
+3. Sous le nouvel onglet **SharePoint** de votre navigateur, cliquez sur **+ Créer un site**.
     
 4. Dans la page **Créer un site**, cliquez sur **Site d’équipe**.
     
 5. Dans **Nom du site**, tapez un nom pour le site d’équipe privé.
     
-6. Dans la **description de site d’équipe**, tapez une description facultative.
+6. Dans **Description du site d’équipe**, tapez une description facultative.
     
-7. Dans **les paramètres de confidentialité**, sélectionnez **privé - uniquement les membres peuvent accéder à ce site**, puis cliquez sur **suivant**.
+7. Dans **Paramètres de confidentialité**, sélectionnez **Privé - Seuls les membres peuvent accéder à ce site**, puis cliquez sur **Suivant**.
     
 8. Dans le volet **Qui voulez-vous ajouter ?**, cliquez sur **Terminer**.
     
@@ -143,7 +143,7 @@ Ensuite, dans le nouveau site d’équipe SharePoint Online, configurez les auto
   
 1. Choisissez le Nom d’utilisateur principal (UPN) de l’administrateur informatique ou d’une autre personne qui sera chargée de répondre aux demandes d’accès au site (belindan@contoso.com est un exemple d’UPN). Notez cet UPN ici : _________________________________________.
     
-2. Dans la barre d’outils, cliquez sur l’icône de paramètres, puis cliquez sur **autorisations du Site**.
+2. Dans la barre d’outils, cliquez sur l’icône Paramètres, puis cliquez sur **Paramètres du site**.
     
 3. Dans le volet **Autorisations du site**, cliquez sur **Paramètres d’autorisations avancés**.
     
@@ -159,25 +159,25 @@ Ensuite, dans le nouveau site d’équipe SharePoint Online, configurez les auto
     
 6. Sous l’onglet **Autorisations** de votre navigateur, cliquez sur **Membres de [nom du site]** dans la liste.
     
-7. **Personnes et groupes**, cliquez sur **Nouveau**.
+7. Dans **Personnes et groupes**, cliquez sur **Nouveau**.
     
-8. Dans la boîte de dialogue de **partage** , tapez le nom de votre groupe d’accès de membres de site pour ce site, sélectionnez-le, puis cliquez sur **partage**.
+8. Dans la boîte de dialogue **Partager**, tapez le nom du groupe d’accès des membres de site pour ce site, sélectionnez-le, puis cliquez sur **Partager**.
     
 9. Cliquez sur le bouton de retour de votre navigateur.
     
-10. Dans la liste, cliquez sur **[nom de site] propriétaires** .
+10. Cliquez sur **Propriétaires de [nom du site]** dans la liste.
     
-11. **Personnes et groupes**, cliquez sur **Nouveau**.
+11. Dans **Personnes et groupes**, cliquez sur **Nouveau**.
     
-12. Dans la boîte de dialogue de **partage** , tapez le nom du groupe de l’accès aux administrateurs du site pour ce site, sélectionnez-le, puis cliquez sur **partage**.
+12. Dans la boîte de dialogue **Partager**, tapez le nom du groupe d’accès des administrateurs de site pour ce site, sélectionnez-le, puis cliquez sur **Partager**.
     
 13. Cliquez sur le bouton de retour de votre navigateur.
     
-14. Dans la liste, cliquez sur **les visiteurs de [nom de site]** .
+14. Cliquez sur **Visiteurs de [nom du site]** dans la liste.
     
-15. **Personnes et groupes**, cliquez sur **Nouveau**.
+15. Dans **Personnes et groupes**, cliquez sur **Nouveau**.
     
-16. Dans la boîte de dialogue de **partage** , tapez le nom du groupe d’accès site visionneuses pour ce site, sélectionnez-le, puis cliquez sur **partage**.
+16. Dans la boîte de dialogue **Partager**, tapez le nom du groupe d’accès des personnes consultant ce site, sélectionnez-le, puis cliquez sur **Partager**.
     
 17. Fermez l’onglet **Autorisations** de votre navigateur.
     
@@ -209,11 +209,11 @@ Pour créer un site d’équipe isolé pour des informations et une collaboratio
 
 Pour concevoir votre site d’équipe isolé, vous devez déterminer :
   
-- vos groupes SharePoint et les niveaux d’autorisation ;
+- Vos groupes et vos niveaux d’autorisation SharePoint.
     
-- les groupes d’accès qui seront membres de vos groupes SharePoint.
+- L’ensemble de groupes d’accès qui seront membres de vos groupes SharePoint.
     
-     Le jeu de groupes d’accès recommandé est un des membres du site, un pour les visiteurs du site affichent et un pour les administrateurs de site.
+     L’ensemble de groupes d’accès recommandé est le suivant : un pour les membres du site, un pour les personnes consultant le site et un pour les administrateurs du site.
     
 - Si vous utilisez des groupes imbriqués au sein de vos groupes d’accès.
     
@@ -231,7 +231,7 @@ Pour plus d’informations sur le processus de conception, consultez [Concevoir 
   
 ### <a name="step-2-deploy-your-isolated-site"></a>Étape 2 : Déployer votre site isolé
 
-Pour déployer votre site isolé, vous devez d’abord :
+Pour déployer votre site isolé, vous devez d’abord :
   
 - déterminer les utilisateurs et les membres du groupe de chacun de vos groupes d’accès ;
     
@@ -253,15 +253,15 @@ Voici les résultats que vous devez escompter :
     
 - La possibilité pour les non-membres de demander l’accès est désactivée.
     
-Voici le résultat de votre configuration.
+Voici la configuration finale.
   
 ![Protection avec un niveau de confidentialité élevé pour un site d’équipe SharePoint Online isolé.](images/196359ab-d7ed-4fcf-97b4-61820a74aca4.png)
   
-En étant membres de l’un des groupes d’accès, les membres du site peuvent désormais travailler avec les ressources du site en toute sécurité.
+Les membres du site, via l’appartenance à un des groupes d’accès, peuvent désormais collaborer sur les ressources du site de façon sécurisée.
   
 ## <a name="next-step"></a>Étape suivante
 
-[Protéger les fichiers SharePoint Online avec les étiquettes d’Office 365 et DLP](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
+[Protéger les fichiers SharePoint Online avec des étiquettes Office 365 et la protection contre la perte de données](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
     
 ## <a name="see-also"></a>Voir aussi
 

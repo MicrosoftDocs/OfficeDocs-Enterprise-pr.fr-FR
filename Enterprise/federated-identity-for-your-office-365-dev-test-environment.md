@@ -7,7 +7,7 @@ ms.date: 04/06/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,26 +15,26 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
-description: 'Résumé : Configurer une authentification fédérée pour votre environnement de développement/test d’Office 365.'
-ms.openlocfilehash: e1a2e4096dc14c2853af33a36b24d7b6ac9784bd
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
-ms.translationtype: MT
+description: 'Résumé : Configurez l’authentification fédérée pour votre environnement de développement/test Office 365.'
+ms.openlocfilehash: 70e5eb3561432b47921b4baba31d613e3b6135a9
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>Identité fédérée pour votre environnement de développement/test Office 365
 
- **Résumé :** Configurer l’authentification fédérée pour votre environnement de développement/test d’Office 365.
+ **Résumé** : Configurez l’authentification fédérée pour votre environnement de développement/test Office 365.
   
-Office 365 prend en charge des identités fédérées. Cela signifie qu’au lieu d’effectuer la validation des informations d’identification lui-même, Office 365 fait référence l’utilisateur qui se connecte à un serveur d’authentification fédérée qui approuve d’Office 365. Si les informations d’identification sont correctes, le serveur d’authentification fédérée délivre un jeton de sécurité que le client envoie ensuite vers Office 365 comme preuve d’authentification. Une identité fédérée permet le déchargement et l’évolution verticale de l’authentification pour un abonnement à Office 365 et scénarios avancés d’authentification et de sécurité.
+Office 365 prend en charge l’identité fédérée. Cela signifie qu’au lieu d’effectuer la validation des informations d’identification, Office 365 renvoie l’utilisateur qui se connecte à un serveur d’authentification fédérée approuvé par Office 365. Si les informations d’identification de l’utilisateur sont correctes, le serveur d’authentification fédérée émet un jeton de sécurité que le client envoie ensuite à Office 365 comme preuve d’authentification. L’identité fédérée autorise le déchargement et la montée en charge de l’authentification pour un abonnement Office 365, ainsi que l’authentification avancée et les scénarios de sécurité.
   
 Cet article explique comment configurer l’authentification fédérée pour l’environnement de développement/test Office 365, pour le résultat suivant :
   
-**Figure 1 : L’authentification fédérée pour l’environnement de développement/test d’Office 365**
+**Figure 1: L’authentification fédérée pour l’environnement de développement/test Office 365**
 
 ![Le serveur proxy d’application web ajouté à la synchronisation d’annuaire pour l’environnement de développement/test Office 365](images/f50039e4-796a-42c0-bfdc-87c2026b1579.png)
   
-La configuration illustrée dans la figure 1 est constituée des éléments suivants :  
+La configuration illustrée dans la figure 1 est constituée des éléments suivants : 
   
 - Un abonnement d’évaluation Office 365 E5, qui arrive à expiration 30 jours après sa création.
     
@@ -52,35 +52,35 @@ Les cinq phases de configuration de cet environnement de développement/test son
     
 5. Configurez Office 365 pour l’identité fédérée.
     
-Pour exécuter un déploiement de production d’authentification fédérée pour Office 365 dans Azure, consultez [authentification fédérée de haute disponibilité déploiement pour Office 365 dans Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md).
+Pour connaître toutes les étapes d’un déploiement de production d’authentification fédérée pour Office 365 dans Azure, consultez la rubrique [Deploy high availability federated authentication for Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md).
   
 > [!NOTE]
 > Vous ne pouvez pas configurer cet environnement de développement/test avec un abonnement à la version d’évaluation d’Azure. 
   
 > [!TIP]
-> Cliquez [ici](http://aka.ms/catlgstack) pour une carte visuelle de tous les articles dans la pile d’un Guide de laboratoire de Test Microsoft Cloud.
+> Cliquez [ici](http://aka.ms/catlgstack) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de One Microsoft Cloud.
   
-## <a name="phase-1-create-the-simulated-enterprise-office-365-devtest-environment-with-dirsync"></a>Phase 1 : création de l’environnement de développement/test Office 365 d’entreprise simulé avec DirSync
+## <a name="phase-1-create-the-simulated-enterprise-office-365-devtest-environment-with-dirsync"></a>Phase 1 : Création de l’environnement de développement/test Office 365 d’entreprise simulé avec DirSync
 
-Suivez les instructions de la [synchronisation](dirsync-for-your-office-365-dev-test-environment.md) d’annuaire pour votre environnement de développement/test Office 365 pour créer l’environnement de développement/test simulées entreprise Office 365 avec APP1 que le serveur de synchronisation d’annuaire et synchronisation des identités entre Office 365 et le Comptes Active Directory de Windows Server sur DC1.
+Suivez les instructions de la rubrique [Synchronisation d’annuaires pour votre environnement de développement/test Office 365](dirsync-for-your-office-365-dev-test-environment.md) pour créer l’environnement de développement/test Office 365 d’entreprise simulé avec APP1 en tant que serveur DirSync et l’identité synchronisée entre Office 365 et les comptes Windows Server AD sur DC1.
   
-Ensuite, créer un nom de domaine DNS public en fonction de votre nom de domaine actuel et l’ajouter à votre abonnement à Office 365. Nous recommandons d’utiliser le nom **labo de test.** \<votre domaine public >. Par exemple, si votre nom de domaine public est contoso.com, ajouter la testlab.contoso.com de nom de domaine public.
+Ensuite, créez un nom de domaine DNS public en fonction de votre nom de domaine actuel et ajoutez-le à votre abonnement Office 365. Nous vous recommandons d’utiliser le nom **testlab.**\<votre domaine public>. Par exemple, si votre nom de domaine public est contoso.com, ajoutez le nom de domaine public testlab.contoso.com.
   
-Pour obtenir des instructions sur la façon de créer les enregistrements DNS corrects de votre fournisseur DNS et ajouter le domaine à votre abonnement d’évaluation d’Office 365, reportez-vous à la section [Ajouter des utilisateurs et domaine à Office 365](https://support.office.com/article/Add-users-and-domain-to-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611). 
+Pour obtenir des instructions sur la création d’enregistrements DNS corrects dans votre fournisseur DNS et l’ajout du domaine à votre abonnement à la version d’évaluation d’Office 365, consultez la rubrique relative à l’[ajout d’utilisateurs et de domaines à Office 365](https://support.office.com/article/Add-users-and-domain-to-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611). 
   
 Voici la configuration finale.
   
-**Figure 2 : La synchronisation d’annuaire pour l’environnement de développement/test d’Office 365**
+**Figure 2 : Synchronisation d’annuaires pour l’environnement de développement/test Office 365**
 
-![L’environnement de développement/test d’Office 365 avec la synchronisation d’annuaire](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![Environnement de développement/test Office 365 avec la synchronisation d’annuaires](images/be5b37b0-f832-4878-b153-436c31546e21.png)
   
-La figure 2 montre le répertoire synchronizationc de l’environnement de développement/test Office 365, qui inclut des ordinateurs virtuels Office 365 et CLIENT1, APP1 et DC1 dans un réseau virtuel Azure.
+La figure 2 illustre la synchronisation d’annuaires pour l’environnement de développement/test Office 365, qui comprend Office 365, ainsi que les machines virtuelles CLIENT1, APP1 et DC1 dans un réseau virtuel Azure.
   
-## <a name="phase-2-create-the-ad-fs-server"></a>Phase 2 : création du serveur AD FS (ADFS1)
+## <a name="phase-2-create-the-ad-fs-server"></a>Phase 2 : Création du serveur AD FS
 
 Un serveur AD FS fournit une authentification fédérée entre Office 365 et les comptes dans le domaine corp.contoso.com hébergé sur DC1.
   
-Pour créer un ordinateur virtuel Azure pour ADFS1, indiquez le nom de votre abonnement et le groupe de ressources et l’emplacement Azure pour votre Configuration de Base et puis exécuter ces commandes à l’invite de commande PowerShell de Azure sur votre ordinateur local.
+Pour créer une machine virtuelle Azure pour ADFS1, indiquez le nom de votre abonnement et de votre groupe de ressources, ainsi que l’emplacement Azure de votre configuration de base, puis exécutez ces commandes à l’invite de commandes Azure PowerShell sur votre ordinateur local.
   
 ```
 $subscr="<your Azure subscription name>"
@@ -102,11 +102,11 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!TIP]
-> Cliquez [ici](https://gallery.technet.microsoft.com/PowerShell-commands-for-f79bc2c2?redir=0) pour un fichier texte qui contient toutes les commandes de PowerShell dans cet article.
+> Cliquez [ici](https://gallery.technet.microsoft.com/PowerShell-commands-for-f79bc2c2?redir=0) pour accéder à un fichier texte qui contient toutes les commandes PowerShell décrites dans cet article.
   
-Ensuite, le [portail Azure](http://portal.azure.com) permet de se connecter à l’ordinateur virtuel ADFS1 à l’aide du nom du compte administrateur local ADFS1 et le mot de passe et puis ouvrez une invite de commande Windows PowerShell.
+Ensuite, utilisez le [portail Azure](http://portal.azure.com) pour vous connecter à la machine virtuelle ADFS1 à l’aide du nom de compte d’administrateur local ADFS1 et de votre mot de passe, puis ouvrez une invite de commande Windows PowerShell.
   
-Pour vérifier la communication réseau et la résolution de nom entre ADFS1 et DC1, exécutez la commande **ping dc1.corp.contoso.com** et vérifiez qu’il y a quatre réponses.
+Pour vérifier la résolution du nom et la communication réseau entre ADFS1 et DC1, exécutez la commande **ping dc1.corp.contoso.com** et vérifiez qu’il y a quatre réponses.
   
 Ensuite, associez la machine virtuelle ADFS1 au domaine CORP avec ces commandes à l’invite Windows PowerShell sur ADFS1.
   
@@ -118,7 +118,7 @@ Restart-Computer
 
 Voici la configuration finale.
   
-**Figure 3 : Ajouter le serveur AD FS**
+**Figure 3 : Ajout du serveur AD FS**
 
 ![Le serveur AD FS ajouté à la synchronisation d’annuaire pour l’environnement de développement/test Office 365](images/da82f39e-426d-41e2-842a-c13b382d63d5.png)
   
@@ -149,16 +149,16 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 > [!NOTE]
 > Une adresse IP publique statique est affectée à PROXY1, car vous créez un enregistrement DNS public qui pointe vers celle-ci et elle ne doit pas être modifiée lorsque vous redémarrez la machine virtuelle PROXY1. 
   
-Ensuite, ajoutez une règle au groupe de sécurité réseau pour le sous-réseau du réseau d’entreprise pour autoriser le trafic entrant non sollicité à partir d’Internet pour les adresses IP privées de PROXY1 et le port TCP 443. Exécuter ces commandes à l’invite de commande PowerShell de Azure sur votre ordinateur local.
+Ensuite, ajoutez une règle au groupe de sécurité réseau pour le sous-réseau CorpNet afin d’autoriser le trafic entrant non sollicité provenant d’Internet et allant vers l’adresse IP privée de PROXY1 et le port TCP 443. Exécutez ces commandes dans l’invite de commande Azure PowerShell sur votre ordinateur local.
   
 ```
 $rgName="<the resource group name of your Base Configuration>"
 Get-AzureRmNetworkSecurityGroup -Name CorpNet -ResourceGroupName $rgName | Add-AzureRmNetworkSecurityRuleConfig -Name "HTTPS-to-PROXY1" -Description "Allow TCP 443 to PROXY1" -Access "Allow" -Protocol "Tcp" -Direction "Inbound" -Priority 101 -SourceAddressPrefix "Internet" -SourcePortRange "*" -DestinationAddressPrefix "10.0.0.101" -DestinationPortRange "443" | Set-AzureRmNetworkSecurityGroup
 ```
 
-Ensuite, le [portail Azure](http://portal.azure.com) permet de se connecter à la machine virtuelle PROXY1 en utilisant le nom du compte administrateur local PROXY1 et le mot de passe et puis ouvrez une invite de commande Windows PowerShell sur PROXY1.
+Ensuite, utilisez le [portail Azure](http://portal.azure.com) pour vous connecter à la machine virtuelle PROXY1 à l’aide du nom de compte d’administrateur local PROXY1 et de votre mot de passe, puis ouvrez une invite de commande Windows PowerShell sur PROXY1.
   
-Pour vérifier la communication réseau et la résolution de nom entre PROXY1 et DC1, exécutez la commande **ping dc1.corp.contoso.com** et vérifiez qu’il y a quatre réponses.
+Pour vérifier la résolution du nom et la communication réseau entre PROXY1 et DC1, exécutez la commande **ping dc1.corp.contoso.com** et vérifiez qu’il y a quatre réponses.
   
 Ensuite, associez la machine virtuelle PROXY1 au domaine CORP avec ces commandes à l’invite Windows PowerShell sur PROXY1.
   
@@ -174,9 +174,9 @@ Affichez l’adresse IP publique de PROXY1 avec ces commandes Azure PowerShell 
 Write-Host (Get-AzureRMPublicIpaddress -Name "PROXY1-PIP" -ResourceGroup $rgName).IPAddress
 ```
 
-Ensuite, travailler avec votre fournisseur DNS public et créer un nouvel enregistrement A DNS public pour **fs.testlab.** \<le nom de votre domaine DNS > qui est résolu en l’adresse IP affichée par la commande **Write-Host** . Le **fs.testlab.** \<le nom de votre domaine DNS > est désigné comme le *service federation service de nom de domaine complet* .
+Ensuite, utilisez votre fournisseur DNS public et créez un enregistrement A DNS public pour **fs.testlab.**\<<votre nom de domaine DNS> qui résout l’adresse IP affichée par la commande **Write-Host**. **fs.testlab.**\<votre nom de domaine DNS> est désigné ci-après en tant que *nom de domaine complet du service FS (Federation Service)*.
   
-Ensuite, utilisez le [portail Azure](http://portal.azure.com) pour se connecter à la machine virtuelle de DC1 à l’aide de l’entreprise\\informations d’identification d’Utilisateur1 et exécuter ce qui suit à une invite de commande Windows PowerShell au niveau de l’administrateur des commandes :
+Ensuite, utilisez le [portail Azure](http://portal.azure.com) pour vous connecter à la machine virtuelle DC1 à l’aide des informations d’identification de CORP\\User1, puis exécutez les commandes suivantes à une invite de commande Windows PowerShell de niveau administrateur :
   
 ```
 $testZone="<the FQDN of your testlab domain from phase 1, example: testlab.contoso.com>"
@@ -189,7 +189,7 @@ Ces commandes créent un enregistrement A DNS pour votre nom de domaine complet
   
 Voici la configuration finale.
   
-**Figure 4 : Ajout du serveur de proxy d’application web**
+**Figure 4 : Ajout du serveur proxy d’application web**
 
 ![Le serveur proxy d’application web ajouté à la synchronisation d’annuaire pour l’environnement de développement/test Office 365](images/f50039e4-796a-42c0-bfdc-87c2026b1579.png)
   
@@ -199,7 +199,7 @@ La figure 4 illustre l’ajout du serveur PROXY1.
 
 Au cours de cette phase, vous créez un certificat numérique auto-signé pour votre nom de domaine complet du service FS (Federation Service) et vous configurez ADFS1 et PROXY1 en tant que batterie de serveurs AD FS.
   
-Tout d’abord, utilisez le [portail Azure](http://portal.azure.com) pour se connecter à la machine virtuelle de DC1 à l’aide de l’entreprise\\invite de commande des informations d’identification d’Utilisateur1 et puis ouvrez un Windows PowerShell de niveau administrateur.
+Tout d’abord, utilisez le [portail Azure](http://portal.azure.com) pour vous connecter à la machine virtuelle DC1 à l’aide des informations d’identification de CORP\\User1, puis ouvrez une invite de commande Windows PowerShell de niveau administrateur.
   
 Ensuite, créez un compte de service AD FS avec cette commande à l’invite de commande Windows PowerShell sur DC1 :
   
@@ -209,7 +209,7 @@ New-ADUser -SamAccountName ADFS-Service -AccountPassword (read-host "Set user pa
 
 Notez que cette commande vous invite à indiquer le mot de passe du compte. Choisissez un mot de passe fort et enregistrez-le dans un emplacement sécurisé. Vous en aurez besoin pour cette phase et la phase 5.
   
-Le [portail Azure](http://portal.azure.com) permet de se connecter à l’ordinateur virtuel ADFS1 à l’aide de l’entreprise\\informations d’identification d’utilisateur1. Ouvrez une invite de commandes au niveau de l’administrateur de Windows PowerShell sur ADFS1, renseignez votre nom de domaine complet du service de fédération et puis exécutez ces commandes pour créer un certificat auto-signé :
+Utilisez le [portail Azure](http://portal.azure.com) pour vous connecter à la machine virtuelle ADFS1 à l’aide des informations d’identification de CORP\\User1. Ouvrez une invite de commande Windows PowerShell de niveau administrateur sur ADFS1, indiquez votre nom de domaine complet du service FS (Federation Service), puis exécutez ces commandes pour créer un certificat auto-signé :
   
 ```
 $fedServiceFQDN="<federation service FQDN>"
@@ -220,33 +220,33 @@ New-SmbShare -name Certs -path c:\Certs -changeaccess CORP\User1
 
 Ensuite, utilisez ces étapes pour enregistrer le nouveau certificat auto-signé en tant que fichier.
   
-1. Cliquez sur **Démarrer**, tapez **mmc.exe**et appuyez sur **entrée**.
+1. Cliquez sur **Démarrer**, tapez **mmc.exe**, puis appuyez sur **Entrée**.
     
-2. Cliquez sur **fichier > Ajouter/supprimer un composant logiciel enfichable**.
+2. Cliquez sur **Fichier > Ajouter/Supprimer un composant logiciel enfichable**.
     
-3. Dans **Ajouter ou supprimer des composants**, double-cliquez sur **certificats** dans la liste des composants logiciels enfichables disponibles, cliquez sur **compte d’ordinateur**, puis cliquez sur **suivant**.
+3. Dans **Ajouter ou supprimer des composants logiciels enfichables**, double-cliquez sur **Certificats** dans la liste des composants logiciels enfichables disponibles, cliquez sur **Compte d’ordinateur**, puis sur **Suivant**.
     
-4. Dans **Sélectionner un ordinateur**, cliquez sur **Terminer**, puis cliquez sur **OK**.
+4. Dans **Sélectionner un ordinateur**, cliquez sur **Terminer**, puis sur **OK**.
     
-5. Dans le volet d’arborescence, ouvrez **certificats (ordinateur Local) > Personal > certificats**.
+5. Dans le volet d’arborescence, ouvrez **Certificats (ordinateur local) > Personnel > Certificats**.
     
-6. Cliquez sur le certificat avec votre nom de domaine complet du service de fédération et cliquez sur **toutes les tâches**, puis cliquez sur **Exporter**.
+6. Cliquez sur le certificat avec votre nom de domaine complet du service FS (Federation Service) avec le bouton droit de la souris, cliquez sur **Toutes les tâches**, puis sur **Exporter**.
     
-7. Dans la page **Bienvenue** , cliquez sur **suivant**.
+7. Dans la page **Bienvenue**, cliquez sur **Suivant**.
     
-8. Dans la page **Exportation de clé privée** , cliquez sur **Oui**, puis cliquez sur **suivant**.
+8. Sur la page **Exporter la clé privée **, cliquez sur **Oui**, puis sur **Suivant**.
     
-9. Dans la page **Format de fichier d’exportation** , cliquez sur **Exporter toutes les propriétés étendues**, puis cliquez sur **suivant**.
+9. Sur la page **Format du fichier d’exportation**, cliquez sur **Exporter toutes les propriétés étendues**, puis sur **Suivant**.
     
-10. Dans la page **sécurité** , cliquez sur **mot de passe** et tapez un mot de passe **mot de passe** et **Confirmer mot de passe.**
+10. Sur la page **Sécurité**, cliquez sur **Mot de passe** et saisissez un mot de passe dans **Mot de passe** et dans **Confirmer le mot de passe**.
     
-11. Dans la page **fichier à exporter** , cliquez sur **Parcourir**.
+11. Sur la page **Fichier à exporter**, cliquez sur **Parcourir**.
     
-12. Accédez à la **C:\\certificats** dossier, tapez **SSL** dans **nom de fichier**, puis cliquez sur **Enregistrer.**
+12. Accédez au dossier **C:\\Certs**, saisissez **SSL** dans **Nom de fichier**, puis cliquez sur **Enregistrer.**
     
-13. Dans la page **fichier à exporter** , cliquez sur **suivant**.
+13. Sur la page **Fichier à exporter**, cliquez sur **Suivant**.
     
-14. Dans la page **fin de l’Assistant Exportation de certificat** , cliquez sur **Terminer**. Lorsque vous y êtes invité, cliquez sur **OK**.
+14. Sur la page **Fin de l’Assistant Exportation de certificat**, cliquez sur **Terminer**. À l’invite, cliquez sur **OK**.
     
 Ensuite, installez le service AD FS avec cette commande à l’invite de commande Windows PowerShell sur ADFS1 :
   
@@ -258,77 +258,77 @@ Attendez la fin de l’installation.
   
 Ensuite, configurez le service AD FS en suivant ces étapes :
   
-1. Cliquez sur **Démarrer**, puis cliquez sur l’icône du **Gestionnaire de serveur** .
+1. Cliquez sur **Démarrer**, puis sur l’icône **Gestionnaire de serveur**.
     
-2. Dans le volet d’arborescence du Gestionnaire de serveur, cliquez sur **AD FS**.
+2. Dans le volet d’arborescence du Gestionnaire de serveur, cliquez sur **AD FS**.
     
-3. Dans la barre d’outils en haut, cliquez sur le symbole Attention orange, puis cliquez sur **configurer le service de fédération sur ce serveur**.
+3. Dans la barre d’outils en haut de l’écran, cliquez sur le symbole d’avertissement orange, puis sur **Configurez le service FS (Federation Service) sur ce serveur**.
     
-4. Dans la page **Bienvenue** de l’Assistant Configuration des Services de fédération Active Directory, cliquez sur **suivant**.
+4. Sur la page d’**accueil** de l’Assistant Configuration des services de fédération Active Directory (AD FS), cliquez sur **Suivant**.
     
-5. Sur la page de **connexion aux services AD DS** , cliquez sur **suivant**.
+5. Sur la page **Connexion à AD FS**, cliquez sur **Suivant**.
     
-6. Dans la page **Spécifier les propriétés de Service** :
+6. Sur la page **Spécifier les propriétés de service** :
     
-  - **Certificat SSL**, cliquez sur la flèche vers le bas, puis cliquez sur le certificat avec le nom de votre nom de domaine complet du service de fédération.
+  - Pour **Certificat SSL**, cliquez sur la flèche vers le bas, puis sur le certificat avec votre nom de domaine complet du service FS (Federation Service).
     
-  - Dans la zone **Nom complet du Service Federation**, tapez le nom de votre organisation fictive.
+  - Dans **Nom complet du service FS**, saisissez le nom de votre organisation fictive.
     
   - Cliquez sur **Suivant**.
     
-7. Dans la page **Spécifier le compte de Service** , cliquez sur **Sélectionner** pour le **nom du compte**.
+7. Sur la page **Spécifier un compte de service**, cliquez sur **Sélectionner** pour **Nom du compte**.
     
-8. Dans, **Sélectionnez l’utilisateur ou le compte de Service**, tapez **Service ADFS**, cliquez sur **Vérifier les noms**, puis cliquez sur **OK**.
+8. Dans **Sélectionner l’utilisateur ou le compte de service**, saisissez **ADFS-Service**, cliquez sur **Vérifier les noms**, puis cliquez sur **OK**.
     
-9. Dans **Mot de passe**, tapez le mot de passe pour le compte de Service ADFS et puis cliquez sur **suivant**.
+9. Dans **Mot de passe de compte**, saisissez le mot de passe du compte ADFS-Service, puis cliquez sur **Suivant**.
     
-10. Dans la page **Spécifier la base de données de Configuration** , cliquez sur **suivant**.
+10. Sur la page **Spécifier une base de données de configuration**, cliquez sur **Suivant**.
     
-11. Dans la page **Options de révision** , cliquez sur **suivant**.
+11. Sur la page **Examiner les options**, cliquez sur **Suivant**.
     
-12. Sur la page **Contrôle de condition préalable** , cliquez sur **configurer**.
+12. Sur la page **Vérifications des conditions préalables**, cliquez sur **Configurer**.
     
-13. Sur la page de **résultats** , cliquez sur **Fermer**.
+13. Sur la page **Résultats**, cliquez sur **Fermer**.
     
-14. Cliquez sur **Démarrer**, cliquez sur l’icône d’alimentation, cliquez sur **redémarrer**, puis cliquez sur **Continuer**.
+14. Cliquez sur **Démarrer**, puis sur l’icône de démarrage, choisissez **Redémarrer**, puis **Continuer**.
     
-Dans le [portail Azure](http://portal.azure.com), connectez-vous à PROXY1 avec le CORP\\informations d’identification de compte utilisateur1.
+À partir du [portail Azure](http://portal.azure.com), connectez-vous à PROXY1 avec les informations d’identification du compte CORP\\User1.
   
 Ensuite, suivez ces étapes pour installer le certificat auto-signé et configurer PROXY1.
   
-1. Cliquez sur **Démarrer**, tapez **mmc.exe**et appuyez sur **entrée**.
+1. Cliquez sur **Démarrer**, tapez **mmc.exe**, puis appuyez sur **Entrée**.
     
-2. Cliquez sur **fichier > Ajouter/supprimer un composant logiciel enfichable**.
+2. Cliquez sur **Fichier > Ajouter/Supprimer un composant logiciel enfichable**.
     
-3. Dans **Ajouter ou supprimer des composants**, double-cliquez sur **certificats** dans la liste des composants logiciels enfichables disponibles, cliquez sur **compte d’ordinateur**, puis cliquez sur **suivant**.
+3. Dans **Ajouter ou supprimer des composants logiciels enfichables**, double-cliquez sur **Certificats** dans la liste des composants logiciels enfichables disponibles, cliquez sur **Compte d’ordinateur**, puis sur **Suivant**.
     
-4. Dans **Sélectionner un ordinateur**, cliquez sur **Terminer**, puis cliquez sur **OK**.
+4. Dans **Sélectionner un ordinateur**, cliquez sur **Terminer**, puis sur **OK**.
     
-5. Dans le volet d’arborescence, ouvrez **certificats (ordinateur Local) > Personal > certificats**.
+5. Dans le volet d’arborescence, ouvrez **Certificats (ordinateur local) > Personnel > Certificats**.
     
-6. Cliquez droit sur **personnel**et cliquez sur **toutes les tâches**, puis cliquez sur **Importer**.
+6. Cliquez avec le bouton droit sur **Personnel**, cliquez sur **Toutes les tâches**, puis sur **Importer**.
     
-7. Dans la page **Bienvenue** , cliquez sur **suivant**.
+7. Dans la page **Bienvenue**, cliquez sur **Suivant**.
     
-8. Dans la page **fichier à importer** , tapez ** \\ \\adfs1\\certificats\\ssl.pfx**, puis cliquez sur **suivant**.
+8. Sur la page **Fichier à importer**, saisissez **\\\\adfs1\\certs\\ssl.pfx**, puis cliquez sur **Suivant**.
     
-9. Sur la page de **protection par clé privée** , tapez le mot de passe de certificat de **mot de passe**, puis cliquez sur **Suivant.**
+9. Sur la page **Protection de clé privée**, saisissez le mot de passe du certificat dans **Mot de passe**, puis cliquez sur **Suivant.**
     
-10. Dans la page **magasin de certificats** , cliquez sur **Suivant.**
+10. Sur la page **Magasin de certificats**, cliquez sur **Suivant**.
     
-11. Sur la page de **fin** , cliquez sur **Terminer**.
+11. Sur la page **Achèvement**, cliquez sur **Terminer**.
     
-12. Dans la page **Magasin de certificats** , cliquez sur **suivant**.
+12. Sur la page **Magasin de certificats**, cliquez sur **Suivant**.
     
-13. Lorsque vous y êtes invité, cliquez sur **OK**.
+13. À l’invite, cliquez sur **OK**.
     
-14. Dans le volet d’arborescence, cliquez sur **certificats** .
+14. Cliquez sur **Certificats** dans le volet d’arborescence.
     
-15. Cliquez sur le certificat, puis cliquez sur **Copier**.
+15. Cliquez sur le certificat avec le bouton droit de la souris, puis cliquez sur **Copier**.
     
-16. Dans le volet d’arborescence, ouvrez **autorités de Certification racines de confiance > certificats**.
+16. Dans le volet d’arborescence, ouvrez **Autorités de certification racines de confiance > Certificats**.
     
-17. Placez le pointeur de la souris sous la liste de certificats installés, avec le bouton droit, puis cliquez sur **Coller**.
+17. Placez le pointeur de la souris au-dessous de la liste des certificats installés, cliquez avec le bouton droit, puis cliquez sur **Coller**.
     
 Ouvrez une invite de commande PowerShell de niveau administrateur et exécutez les commandes suivantes :
   
@@ -340,59 +340,59 @@ Attendez la fin de l’installation.
   
 Suivez ces étapes pour configurer le service de proxy d’application web de manière à ce qu’il utilise ADFS1 comme serveur de fédération :
   
-1. Cliquez sur **Démarrer**, puis cliquez sur **Gestionnaire de serveur**.
+1. Cliquez sur **Démarrer**, puis sur **Gestionnaire de serveur**.
     
-2. Dans le volet d’arborescence, cliquez sur **Accès à distance**.
+2. Dans le volet d’arborescence, cliquez sur **Accès distant**.
     
-3. Dans la barre d’outils en haut, cliquez sur le symbole Attention orange, puis cliquez sur **Ouvrir l’Assistant de Proxy d’Application Web**.
+3. Dans la barre d’outils en haut de l’écran, cliquez sur le symbole d’avertissement orange, puis sur **Ouvrir l’Assistant Proxy d’application web**.
     
-4. Dans la page **Bienvenue** de l’Assistant de Configuration de Proxy Web Application, cliquez sur **suivant**.
+4. Sur la page d’**accueil** de l’Assistant Configuration de proxy d’application web, cliquez sur **Suivant**.
     
-5. Sur la page **Serveur de fédération** :
+5. Sur la page **Serveur de fédération** :
     
-  - Tapez votre nom de domaine complet du service de fédération dans le **nom de service de fédération**.
+  - Saisissez votre nom de domaine complet du service FS (Federation Service) dans **Nom du service FS (Federation Service)**.
     
-  - Type de **CORP\\utilisateur1** **nom**de l’utilisateur.
+  - Saisissez **CORP\\User1** dans **Nom d’utilisateur**.
     
-  - Dans **mot de passe**, tapez le mot de passe pour le compte d’utilisateur1.
+  - Saisissez le mot de passe du compte User1 dans **Mot de passe**.
     
   - Cliquez sur **Suivant**.
     
-6. Dans la page **Certificat de serveur Proxy AD FS** , cliquez sur la flèche vers le bas, cliquez sur le certificat avec votre nom de domaine complet du service de fédération, puis cliquez sur **suivant**.
+6. Sur la page **Certificats de proxy AD FS**, cliquez sur la flèche vers le bas, cliquez sur le certificat avec votre nom de domaine complet du service FS (Federation Service), puis sur **Suivant**.
     
-7. Dans la page de **Confirmation** , cliquez sur **configurer**.
+7. Sur la page **Confirmation**, cliquez sur **Configurer**.
     
-8. Sur la page de **résultats** , cliquez sur **Fermer**.
+8. Sur la page **Résultats**, cliquez sur **Fermer**.
     
-## <a name="phase-5-configure-office-365-for-federated-identity"></a>Phase 5 : configuration d’Office 365 pour l’identité fédérée
+## <a name="phase-5-configure-office-365-for-federated-identity"></a>Phase 5 : Configuration d’Office 365 pour l’identité fédérée
 
-Le [portail Azure](http://portal.azure.com) permet de se connecter à la machine virtuelle de APP1 avec le CORP\\informations d’identification de compte utilisateur1.
+Utilisez le [portail Azure](http://portal.azure.com) pour vous connecter à la machine virtuelle APP1 avec les informations d’identification du compte CORP\\User1.
   
 Suivez ces étapes pour configurer Azure AD Connect et votre abonnement Office 365 pour l’authentification fédérée :
   
-1. Sur le bureau, double-cliquez sur **Azure Connect d’Active Directory**.
+1. Sur le bureau, double-cliquez sur **Azure AD Connect**.
     
-2. Dans la page **Bienvenue dans Azure Connect d’Active Directory** , cliquez sur **configurer**.
+2. Sur la page **Bienvenue dans Azure AD Connect**, cliquez sur **Configurer**.
     
-3. Dans la page **des tâches supplémentaires** , cliquez sur **modification authentification de l’utilisateur**, puis cliquez sur **suivant**.
+3. Sur la page **Tâches supplémentaires**, cliquez sur **Modifier la connexion utilisateur**, puis sur **Suivant**.
     
-4. Sur la page de **connexion à Azure AD** , tapez votre nom de compte d’administrateur global Office 365 et d’un mot de passe, puis cliquez sur **suivant**.
+4. Sur la page **Connexion à Azure AD**, saisissez vos nom de compte et mot de passe d’administrateur général Office 365, puis cliquez sur **Suivant**.
     
 5. Sur la page **Connexion utilisateur**, cliquez sur **Fédération avec AD FS**, puis sur **Suivant**.
     
-6. Sur la page de la **batterie de serveurs ADFS** , cliquez sur **utiliser une batterie Federation Services existante**, tapez **ADFS1** dans la zone **Nom du serveur**, puis cliquez sur **suivant**.
+6. Sur la page **Batterie de serveurs AD FS**, cliquez sur **Utiliser une batterie de serveurs AD FS existante**, saisissez **ADFS1** dans **Nom du serveur**, puis cliquez sur **Suivant**.
     
-7. À l’invite d’informations d’identification du serveur, entrez les informations d’identification de l’entreprise\\User1 du compte, puis cliquez sur **OK**.
+7. Lorsque vous êtes invité à entrer les informations d’identification du serveur, saisissez les informations d’identification du compte CORP\\User1, puis cliquez sur **OK**.
     
-8. Sur la page informations d’identification **d’Administrateur de domaine** , tapez **CORP\\utilisateur1** **nom d’utilisateur** et le mot de passe de compte de **mot de passe**, puis cliquez sur **suivant**.
+8. Sur la page des informations d’identification **Administrateur de domaine**, saisissez **CORP\\User1** dans **Nom d’utilisateur** et le mot de passe du compte dans **Mot de passe**, puis cliquez sur **Suivant**.
     
-9. Dans la page **compte de service AD FS** , tapez **CORP\\-Service ADFS** dans **Nom d’utilisateur de domaine** et le mot de passe du compte de **Domaine mot de passe**, puis cliquez sur **suivant**.
+9. Sur la page **Compte de service AD FS**, saisissez **CORP\\ADFS-Service** dans **Nom d’utilisateur du domaine** et le mot de passe du compte dans **Mot de passe utilisateur du domaine**, puis cliquez sur **Suivant**.
     
-10. Dans la page **Domaine de AD Azure** , dans un **domaine**, sélectionnez le nom du domaine précédemment créé et ajouté à votre abonnement à Office 365 à la Phase 1, puis cliquez sur **suivant**.
+10. Sur la page **Domaine Azure AD**, dans **Domaine**, sélectionnez le nom du domaine que vous avez précédemment créé et ajouté à votre abonnement Office 365 lors de la phase 1, puis cliquez sur **Suivant**.
     
-11. Dans la page **prêt à configurer** , cliquez sur **configurer**.
+11. Sur la page **Prêt à configurer**, cliquez sur **Configurer**.
     
-12. Dans la page **Installation terminée** , cliquez sur **Vérifier**.
+12. Sur la page **Installation terminée**, cliquez sur **Vérifier**.
     
     Vous devriez voir des messages vous indiquant que les configurations intranet et Internet ont été vérifiées.
     
@@ -402,31 +402,31 @@ Pour vérifier que l’authentification fédérée fonctionne, procédez comme s
   
 1. Ouvrez une nouvelle instance privée de votre navigateur sur votre ordinateur local et accédez à [https://portal.office.com](https://portal.office.com).
     
-2. Pour les informations de connexion, tapez **utilisateur1 @**\<le domaine créé dans la Phase 1 >. 
+2. Pour les informations d’identification de connexion, saisissez le domaine **user1@**\< créé lors de la phase 1>. 
     
-    Par exemple, si votre domaine de test est **testlab.contoso.com**, vous devez taper **user1@testlab.contoso.com**. Appuyez sur TAB ou permettre à Office 365 vous rediriger automatiquement.
+    Par exemple, si votre domaine de test est **testlab.contoso.com**, vous saisissez **user1@testlab.contoso.com**. Appuyez sur la touche de tabulation ou autorisez Office 365 à vous rediriger automatiquement.
     
-    Vous devez maintenant voir une page **votre connexion n’est pas privée** . Vous obtenez cette erreur, car vous avez installé un certificat signé automatiquement sur ADFS1 que votre ordinateur de bureau ne peut pas valider. Dans un déploiement de production d’authentification fédérée, vous devez utiliser un certificat auprès d’une autorité de certification de confiance et vos utilisateurs ne verra pas cette page.
+    Une page **Votre connexion n’est pas privée** devrait s’afficher. Cette page s’affiche, car vous avez installé sur ADFS1 un certificat auto-signé que votre ordinateur de bureau ne peut pas valider. Dans un déploiement de production d’authentification fédérée, vous utiliseriez un certificat provenant d’une autorité de certification approuvée et vos utilisateurs ne verraient pas cette page.
     
-3. Dans la page **votre connexion n’est pas privée** , cliquez sur **Avancé**, puis cliquez sur **continuer à \<nom de domaine complet de votre service de fédération >**. 
+3. Sur la page **Votre connexion n’est pas privée**, cliquez sur **Avancé**, puis sur **Continuer avec \<votre nom de domaine complet du service FS (Federation Service)>**. 
     
 4. Sur la page contenant le nom de votre organisation fictive, connectez-vous avec les éléments suivants :
     
-  - **CORP\\utilisateur1** pour le nom
+  - **CORP\\User1** pour le nom ;
     
   - le mot de passe du compte User1.
     
-    Vous devez voir la page **d’Accueil de Microsoft Office** .
+    Vous devez voir la **page d’accueil Microsoft Office**.
     
-Cette procédure montre que votre abonnement d’évaluation d’Office 365 est fédéré avec le domaine corp.contoso.com Windows Server Active Directory hébergé sur DC1. Voici les notions de base du processus d’authentification :
+Cette procédure montre que votre abonnement à la version d’évaluation d’Office 365 est fédéré avec le domaine corp.contoso.com de Windows Server AD hébergé sur DC1. Voici les principes de base du processus d’authentification :
   
 1. Lorsque vous utilisez le domaine fédéré que vous avez créé à la phase 1 dans le nom de compte de connexion, Office 365 redirige votre navigateur vers votre nom de domaine complet du service FS (Federation Service) et PROXY1.
     
 2. PROXY1 envoie la page de connexion de l’entreprise fictive à votre ordinateur local.
     
-3. Lorsque vous envoyez CORP\\User1 et mot de passe à PROXY1, il les transfère à ADFS1.
+3. Lorsque vous envoyez CORP\\User1 et le mot de passe à PROXY1, il les transfère à ADFS1.
     
-4. ADFS1 valide CORP\\Utilisateur1 et le mot de passe avec DC1 et l’envoie à l’ordinateur local un jeton de sécurité.
+4. ADFS1 valide CORP\\User1 et le mot de passe avec DC1 et envoie un jeton de sécurité à votre ordinateur local.
     
 5. Votre ordinateur local envoie le jeton de sécurité à Office 365.
     
@@ -436,11 +436,11 @@ Votre abonnement à la version d’évaluation d’Office 365 est désormais co
   
 ## <a name="next-step"></a>Étape suivante
 
-Lorsque vous êtes prêt à déployer le prêt pour la production, l’authentification fédérée de haute disponibilité pour Office 365 dans Azure, consultez [authentification fédérée de haute disponibilité déploiement pour Office 365 dans Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md).
+Quand vous êtes prêt à déployer l’authentification fédérée haute disponibilité pour environnements de production pour Office 365 dans Azure, consultez la rubrique [Deploy high availability federated authentication for Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md).
   
 ## <a name="see-also"></a>Voir aussi
 
-[Guides de laboratoire de test d'adoption cloud](cloud-adoption-test-lab-guides-tlgs.md)
+[Guides de laboratoire de test d’adoption cloud](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Environnement de développement/test de configuration de base](base-configuration-dev-test-environment.md)
   

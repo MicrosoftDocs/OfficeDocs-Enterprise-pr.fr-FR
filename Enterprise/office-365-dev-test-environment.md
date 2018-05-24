@@ -7,29 +7,29 @@ ms.date: 04/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
-description: 'Résumé : Utilisez ce Guide de laboratoire de Test pour créer un abonnement d’évaluation de Office 365 pour l’évaluation ou de développement/test.'
-ms.openlocfilehash: 61c1fc5a997eaa0a524d49e7806fc8bb102ee281
-ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
-ms.translationtype: MT
+description: 'Résumé : Utilisez ce guide de laboratoire de test pour créer un abonnement d’évaluation Office 365 à des fins d’évaluation ou de développement/test.'
+ms.openlocfilehash: 07922965acfbd23f0f48094fda8b18bf0b66ef38
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="office-365-devtest-environment"></a>Environnement de développement/test Office 365
 
- **Résumé :** Utilisez ce Guide de laboratoire de Test pour créer un abonnement d’évaluation de Office 365 pour l’évaluation ou de développement/test.
+ **Résumé :** Utilisez ce guide de laboratoire de test pour créer un abonnement d’évaluation Office 365 à des fins d’évaluation ou de développement/test.
   
 Vous pouvez utiliser un abonnement d’évaluation Office 365 et créer un environnement de développement/test Office 365 pour les applications ou faire une démonstration des fonctionnalités d’Office 365. Deux versions sont disponibles :
   
 - L’environnement de développement/test Office 365 léger se compose d’un abonnement d’évaluation Office 365 auquel vous accédez depuis votre ordinateur principal.
     
-    Utilisez cet environnement lorsque vous voulez démontrer rapidement une fonctionnalité. Pour l’environnement de développement/test léger Office 365, effectuez uniquement les étapes 2 et 3 du présent article.
+    Utilisez cet environnement lorsque vous voulez montrer rapidement une fonctionnalité. Pour l’environnement de développement/test Office 365 léger, suivez uniquement les instructions des phases 2 et 3 de cet article.
     
 - L’environnement de développement/test Office 365 d’entreprise simulé comprend un abonnement d’évaluation Office 365 et un intranet d’organisation simplifié connecté à Internet, qui est hébergé dans les services d’infrastructure de Microsoft Azure. Vous pouvez créer cette configuration entièrement dans le cloud de Microsoft.
     
@@ -38,16 +38,16 @@ Vous pouvez utiliser un abonnement d’évaluation Office 365 et créer un envi
 > [!NOTE]
 > Nous vous recommandons d’imprimer cet article afin de consigner les valeurs spécifiques dont vous aurez besoin dans cet environnement au cours des 30 jours de votre abonnement à la version d’évaluation Office 365. Vous pouvez facilement étendre l’abonnement à la version d’évaluation pour 30 jours de plus. Pour un environnement de développement/test permanent, créez un nouvel abonnement payant avec un petit nombre de licences. 
   
-![Guides de laboratoire de test dans le cloud de Microsoft](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
+![Guides de laboratoire de test dans Microsoft Cloud](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
-> Cliquez [ici](http://aka.ms/catlgstack) pour une carte visuelle de tous les articles dans la pile d’un Guide de laboratoire de Test Microsoft Cloud.
+> Cliquez [ici](http://aka.ms/catlgstack) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de One Microsoft Cloud.
   
 ## <a name="phase-1-create-the-base-configuration-in-azure"></a>Phase 1 : création de la configuration de base dans Azure
 
-Suivez les instructions dans [l’environnement de développement/test de Configuration de Base](base-configuration-dev-test-environment.md).
+Suivez les instructions de la rubrique [Environnement de développement/test de configuration de base](base-configuration-dev-test-environment.md).
   
-Vous aurez besoin d’un abonnement Azure. Vous pouvez utiliser [Version d’évaluation gratuite de Azure](https://azure.microsoft.com/pricing/free-trial/) pour cette configuration. Si vous avez un abonnement MSDN ou Visual Studio, reportez-vous à la section [crédit mensuel Azure pour les abonnés de Visual Studio](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/).
+Vous devez posséder un abonnement Azure. Vous pouvez utiliser le [Compte gratuit Azure](https://azure.microsoft.com/pricing/free-trial/) pour cette configuration. Si vous avez un abonnement MSDN ou Visual Studio, reportez-vous à l’article [Crédit Azure mensuel pour les abonnés Visual Studio](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/).
   
 Voici la configuration obtenue.
   
@@ -59,23 +59,23 @@ Cette configuration se compose des machines virtuelles DC1, APP1 et CLIENT1 sur 
 
 Pour démarrer votre abonnement d’évaluation Office 365 E5, vous avez besoin d’un nom d’entreprise fictif et d’un nouveau compte Microsoft.
   
-1. Nous vous recommandons d’utiliser une variante du nom de la société Contoso pour le nom de votre société, est une société fictive utilisée dans l’exemple de contenu de Microsoft, mais il n’est pas obligatoire. Notez ici le nom de votre société fictive :![](./images/Common_Images/TableLine.png)
+1. Nous vous recommandons d’utiliser une variante du nom d’entreprise Contoso pour le nom de votre entreprise. Il s’agit d’une entreprise fictive utilisée dans le contenu d’exemple de Microsoft. Toutefois, cette étape n’est pas obligatoire. Indiquer le nom fictif de votre entreprise ici : ![](./images/Common_Images/TableLine.png)
     
-2. Pour vous inscrire à un nouveau compte Microsoft, accédez à [https://outlook.com](https://outlook.com) et créez un compte avec un nouveau compte de messagerie et une adresse. Vous utiliserez ce compte pour vous inscrire à Office 365.
+2. Pour ouvrir un nouveau compte Microsoft, accédez à [https://outlook.com](https://outlook.com) et créez un compte avec un nouveau compte de messagerie et une nouvelle adresse. Vous utiliserez ce compte pour vous inscrire à Office 365.
     
-  - Enregistrer le prénom et le nom de votre nouveau compte ici :![](./images/Common_Images/TableLine.png)
+  - Indiquer le prénom et le nom de famille utilisés pour votre nouveau compte ici : ![](./images/Common_Images/TableLine.png)
     
-  - Enregistrer la nouveau compte adresse ici : ![](./images/Common_Images/TableLine.png)@outlook.com
+  - Indiquer l’adresse du nouveau compte de messagerie ici : ![](./images/Common_Images/TableLine.png)@outlook.com
     
 ### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>Inscription à un abonnement d’évaluation Office 365 E5
 
-1. Pour l’environnement de développement/test léger Office 365, ouvrez le navigateur Internet sur votre ordinateur et accédez à [https://aka.ms/e5trial](https://aka.ms/e5trial). 
+1. Pour l’environnement de développement/test Office 365 léger, ouvrez le navigateur Internet sur votre ordinateur et accédez à [https://aka.ms/e5trial](https://aka.ms/e5trial). 
     
-    L’environnement de développement/test simulées entreprise Office 365, vous connecter à CLIENT1 avec le compte CORP\User1 à partir du portail Azure.
+    Pour l’environnement de développement/test Office 365 d’entreprise simulé, connectez-vous à CLIENT1 avec le compte CORP\Utilisateur1 à partir du portail Azure.
 
-    À partir de l’écran de démarrage, exécutez Microsoft Edge et accédez à [https://aka.ms/e5trial](https://aka.ms/e5trial).
+    Dans l’écran d’accueil, exécutez Microsoft Edge et accédez à [https://aka.ms/e5trial](https://aka.ms/e5trial).
     
-2. Sur la page **d’accueil, nous allons apprendre à vous connaître** , spécifiez :
+2. Sur la page **Bienvenue, nous allons faire connaissance**, indiquez les informations suivantes :
     
   - votre emplacement physique ;
     
@@ -89,29 +89,29 @@ Pour démarrer votre abonnement d’évaluation Office 365 E5, vous avez beso
     
   - la taille de votre entreprise (250 à 999 personnes).
     
-3. Cliquez sur **un seul plus l’étape**.
+3. Cliquez sur **Encore une dernière étape**.
     
-4. Sur la page **créer votre nom d’utilisateur** , tapez un nom d’utilisateur en fonction de votre nouvelle adresse e-mail, votre société fictive après le signe @ (supprimer tous les espaces dans le nom), puis un mot de passe (deux fois) pour ce nouveau Office 365 compte.
+4. Sur la page **Créer votre identifiant utilisateur**, entrez un nom d’utilisateur dérivé de votre nouvelle adresse de messagerie, le nom de votre entreprise fictive après le signe @ (supprimez tous les espaces dans le nom), puis un mot de passe (deux fois) pour ce nouveau compte Office 365. 
     
     Enregistrez le mot de passe saisi dans un emplacement sécurisé.
     
-    Enregistrer le nom de la société fictive d’être désignée sous le **nom de l’organisation**, ici :![](./images/Common_Images/TableLine.png)
+    Enregistrez le nom de votre entreprise fictive, ou **nom de l’organisation**, ici : ![](./images/Common_Images/TableLine.png)
     
-5. Cliquez sur **créer mon compte**.
+5. Cliquez sur **Créer mon compte**.
     
-6. Sur le **prouver. Vous êtes. Pas. A robot de.** la page, tapez le numéro de téléphone de votre téléphone prenant en charge de texte, puis cliquez sur **texte me**.
+6. Sur la page **Prouvez que vous n’êtes pas un robot.**, tapez le numéro de votre téléphone compatible avec du texte, puis cliquez sur **M’envoyer un SMS**.
     
-7. Tapez le code de vérification dans le message reçu, puis cliquez sur **suivant**.
+7. Saisissez le code de vérification qui vous été envoyé par message, puis cliquez sur **Suivant**.
     
-8. Enregistrer la page de connexion URL ici (sélectionner et copier) :![](./images/Common_Images/TableLine.png)
+8. Enregistrez l’URL de la page de connexion ici (sélectionnez-la et copiez-la) : ![](./images/Common_Images/TableLine.png)
     
-9. Enregistrer le code utilisateur ici (sélectionner et copier) : ![](./images/Common_Images/TableLine.png). onmicrosoft.com
+9. Enregistrez l’identifiant utilisateur ici (sélectionnez-le et copiez-le) : ![](./images/Common_Images/TableLine.png).onmicrosoft.com
     
-    Cette valeur sera dénommée le **nom de l’administrateur global Office 365**.
+    Cette valeur correspond au **nom de l’administrateur général Office 365**.
     
-10. Lorsque **vous êtes prêt**, cliquez sur elle.
+10. Cliquez sur le lien **Nous sommes prêts** lorsqu’il s’affiche.
     
-11. Sur la page suivante, attendez Office 365 se termine le paramètre des toutes les tuiles sont disponibles.
+11. Sur la page suivante, attendez qu’Office 365 termine la configuration et que tous les titres soient visibles.
     
 Vous devriez voir la page principale du portail Office 365 à partir de laquelle vous pouvez accéder aux services Office Online et au Centre d’administration Office 365.
   
@@ -131,13 +131,13 @@ Au cours de cette phase, vous allez configurer votre abonnement Office 365 en 
   
 Toute d’abord, ajoutez quatre nouveaux utilisateurs et attribuez-leur des licences E5.
   
-Suivez les instructions de [se connecter à Office 365 PowerShell](https://technet.microsoft.com/library/dn975125.aspx) pour installer les modules PowerShell et vous connecter à votre nouvel abonnement Office 365 à partir de :
+Utilisez les instructions de l’article [Se connecter à Office 365 PowerShell](https://technet.microsoft.com/library/dn975125.aspx) pour installer les modules PowerShell et vous connecter à votre nouvel abonnement Office 365 à partir de :
   
 - Votre ordinateur (pour l’environnement de développement/test Office 365 léger).
     
 - La machine virtuelle CLIENT1 (pour l’environnement de développement/test Office 365 d’entreprise simulé).
     
- Dans la boîte de dialogue demande d’informations d’identification Windows PowerShell, tapez le nom d’administrateur global de Office 365 (exemple : jdoe@contosotoycompany.onmicrosoft.com) et le mot de passe.
+ Dans la boîte de dialogue Demande d’informations d’identification Windows PowerShell, saisissez le nom de l’administrateur général Office 365 (exemple : jdoe@contosotoycompany.onmicrosoft.com) et le mot de passe.
   
 Entrez le nom de votre organisation (exemple : contosotoycompany) et le code de pays à deux caractères pour indiquer votre emplacement, puis exécutez les commandes suivantes à partir de l’invite Module Windows Azure Active Directory pour Windows PowerShell :
   
@@ -149,9 +149,9 @@ $userName= "user2@" + $orgName + ".onmicrosoft.com"
 New-MsolUser -DisplayName "User 2" -FirstName User -LastName 2 -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment
 ```
 > [!TIP]
-> Cliquez [ici](https://gallery.technet.microsoft.com/PowerShell-commands-for-fe3d7a34) pour obtenir un fichier texte qui contient toutes les commandes de PowerShell dans cet article.
+> Pour accéder à un fichier texte qui contient toutes les commandes PowerShell décrites dans cet article, cliquez [ici](https://gallery.technet.microsoft.com/PowerShell-commands-for-fe3d7a34).
 
-À partir de l’affichage de la commande **New-MsolUser** , notez le mot de passe généré pour le compte de l’utilisateur 2 et l’enregistrer dans un emplacement sûr.
+Dans la zone de la commande **New-MsolUser**, notez le mot de passe généré pour le compte Utilisateur 2 et enregistrez-le dans un emplacement sécurisé.
   
 Exécutez les commandes suivantes à partir de l’invite Module Windows Azure Active Directory pour Windows PowerShell :
   
@@ -160,7 +160,7 @@ $userName= "user3@" + $orgName + ".onmicrosoft.com"
 New-MsolUser -DisplayName "User 3" -FirstName User -LastName 3 -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment
 ```
 
-À partir de l’affichage de la commande **New-MsolUser** , notez le mot de passe généré pour le compte d’utilisateur 3 et l’enregistrer dans un emplacement sûr.
+Dans la zone de la commande **New-MsolUser**, notez le mot de passe généré pour le compte Utilisateur 3 et enregistrez-le dans un emplacement sécurisé.
   
 Exécutez les commandes suivantes à partir de l’invite Module Windows Azure Active Directory pour Windows PowerShell :
   
@@ -169,7 +169,7 @@ $userName= "user4@" + $orgName + ".onmicrosoft.com"
 New-MsolUser -DisplayName "User 4" -FirstName User -LastName 4 -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment
 ```
 
-À partir de l’affichage de la commande **New-MsolUser** , notez le mot de passe généré pour le compte d’utilisateur 4 et l’enregistrer dans un emplacement sûr.
+Dans la zone de la commande **New-MsolUser**, notez le mot de passe généré pour le compte Utilisateur 4 et enregistrez-le dans un emplacement sécurisé.
   
 Exécutez les commandes suivantes à partir de l’invite Module Windows Azure Active Directory pour Windows PowerShell :
   
@@ -178,15 +178,15 @@ $userName= "user5@" + $orgName + ".onmicrosoft.com"
 New-MsolUser -DisplayName "User 5" -FirstName User -LastName 5 -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment
 ```
 
-À partir de l’affichage de la commande **New-MsolUser** , notez le mot de passe généré pour le compte d’utilisateur 5 et l’enregistrer dans un emplacement sûr.
+Dans la zone de la commande **New-MsolUser**, notez le mot de passe généré pour le compte Utilisateur 5 et enregistrez-le dans un emplacement sécurisé.
   
 Ensuite, créez trois nouveaux sites d’équipes SharePoint Online pour les services Ventes, Production et Support.
   
 ### <a name="create-three-new-sharepoint-online-team-sites"></a>Création de trois nouveaux sites d’équipes SharePoint Online
 
-1. Installer le [Shell de gestion en ligne de SharePoint](https://go.microsoft.com/fwlink/p/?LinkId=255251) (la x64 version).
+1. Installez [SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251) (la version x64).
     
-2. Cliquez sur **Démarrer**, tapez **sharepoint**, puis cliquez sur **SharePoint Online Management Shell**.
+2. Cliquez sur **Démarrer**, saisissez **sharepoint**, puis cliquez sur **SharePoint Online Management Shell**.
     
 3. Indiquez le nom de votre organisation (exemple : contosotoycompany), puis exécutez les commandes suivantes à partir de l’invite SharePoint Online Management Shell pour vous connecter au service SharePoint Online.
 ```
@@ -195,9 +195,9 @@ $spURL="https://" + $orgName + "-admin.sharepoint.com"
 Connect-SPOService -Url $spURL
 ```
 
-4. Dans la boîte de dialogue **Microsoft SharePoint Online Management Shell** , tapez le nom d’administrateur global de Office 365 (exemple : jdoe@contosotoycompany.onmicrosoft.com) et le mot de passe, puis cliquez sur **se connecter**.
+4. Dans la boîte de dialogue **Microsoft SharePoint Online Management Shell**, saisissez le nom de l’administrateur général Office 365 (par exemple, jdoe@contosotoycompany.onmicrosoft.com) et son mot de passe, puis cliquez sur **Se connecter**.
     
-5. Pour créer trois nouveaux sites d’équipe (ventes, Production et prise en charge), indiquez le nom d’administrateur global de Office 365 et puis exécutent les commandes suivantes à partir de l’invite du Shell de gestion en ligne de SharePoint :
+5. Pour créer trois nouveaux sites d’équipes (Ventes, Production et Support), indiquez le nom de l’administrateur général Office 365, puis exécutez les commandes suivantes à partir de l’invite SharePoint Online Management Shell :
     
   ```
   $owner = "<global administrator account name>"
@@ -221,11 +221,11 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
 
 Enregistrez ces valeurs pour utiliser ou déployer les guides de laboratoire de test dans cet environnement de test :
   
-- Nom de l’administrateur global Office 365 : ![](./images/Common_Images/TableLine.png). onmicrosoft.com (de l’étape 9 de la Phase 2)
+- Nom de l’administrateur général Office 365 : ![](./images/Common_Images/TableLine.png).onmicrosoft.com (indiqué à l’étape 9 de la phase 2)
     
     Enregistrez également le mot de passe de ce compte dans un emplacement sécurisé.
     
-- Le nom de votre organisation d’essai : ![](./images/Common_Images/TableLine.png) (à partir de l’étape 4 de la Phase 2)
+- Nom de l’organisation de l’abonnement d’évaluation : ![](./images/Common_Images/TableLine.png) (indiqué à l’étape 4 de la phase 2)
     
 - Pour répertorier les comptes pour Utilisateur 2, Utilisateur 3, Utilisateur 4 et Utilisateur 5, exécutez la commande suivante à partir de l’invite Module Windows Azure Active Directory pour Windows PowerShell :
     
@@ -235,13 +235,13 @@ Enregistrez ces valeurs pour utiliser ou déployer les guides de laboratoire de 
 
     Enregistrez les noms de compte ici :
     
-  - Nom du compte utilisateur 2 : Utilisateur2 @![](./images/Common_Images/TableLine.png). onmicrosoft.com
+  - Nom du compte Utilisateur 2 : user2@![](./images/Common_Images/TableLine.png).onmicrosoft.com
     
-  - Nom du compte utilisateur 3 : l’util_3 @![](./images/Common_Images/TableLine.png). onmicrosoft.com
+  - Nom du compte Utilisateur 3 : user3@![](./images/Common_Images/TableLine.png).onmicrosoft.com
     
-  - Nom du compte utilisateur 4 : Utilisateur4 @![](./images/Common_Images/TableLine.png). onmicrosoft.com
+  - Nom du compte Utilisateur 4 : user4@![](./images/Common_Images/TableLine.png).onmicrosoft.com
     
-  - Nom du compte utilisateur 5 : user5 @![](./images/Common_Images/TableLine.png). onmicrosoft.com
+  - Nom du compte Utilisateur 5 : user5@![](./images/Common_Images/TableLine.png).onmicrosoft.com
     
     Enregistrez également les mots de passe de ces comptes dans un emplacement sécurisé.
     
@@ -251,43 +251,43 @@ Enregistrez ces valeurs pour utiliser ou déployer les guides de laboratoire de 
   Get-SPOSite | Where URL -like "*/sites/*" | Sort URL | Select URL
   ```
 
-  - URL de site de production : https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/production
+  - URL du site Production : https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/production
     
-  - URL du site de vente : https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/sales
+  - URL du site Ventes : https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/sales
     
-  - Prise en charge d’URL du site : https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/support
+  - URL du site Support : https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/support
     
 ## <a name="next-steps"></a>Étapes suivantes
 
 Utilisez ces articles supplémentaires dans votre environnement de développement/test Office 365 :
   
-- [Synchronisation d’annuaire pour votre environnement de développement/test d’Office 365](dirsync-for-your-office-365-dev-test-environment.md)
+- [Synchronisation d’annuaires pour votre environnement de développement/test Office 365](dirsync-for-your-office-365-dev-test-environment.md)
     
-- [Plusieurs facteurs d’authentification pour votre environnement de développement/test d’Office 365](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
+- [Authentification multifacteur pour votre environnement de développement/test Office 365](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
     
 - [Identité fédérée pour votre environnement de développement/test Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
     
-- [Application du nuage sécurité pour votre environnement de développement/test d’Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
+- [Sécurité des applications cloud pour votre environnement de développement/test Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
     
-- [Avancées de protection contre les menaces pour votre environnement de développement/test d’Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+- [Protection avancée contre les menaces pour votre environnement de développement/test Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
     
-- [E-Discovery avancée pour votre environnement de développement/test d’Office 365](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
+- [Advanced eDiscovery pour votre environnement de développement/test Office 365](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
     
-- [Protection des fichiers sensibles dans l’environnement de développement/test d’Office 365](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
+- [Protection des fichiers sensibles dans l’environnement de développement/test Office 365](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
     
-- [Environnement de développement/test isolé de SharePoint Online équipe site](isolated-sharepoint-online-team-site-dev-test-environment.md)
+- [Site d’équipe SharePoint Online isolé dans votre environnement de développement/test Office 365](isolated-sharepoint-online-team-site-dev-test-environment.md)
     
-- [La classification des données et le marquage de l’environnement de développement/test d’Office 365](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
+- [Classification et étiquetage des données dans l’environnement de développement/test Office 365](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
     
 Étendez votre environnement de développement/test Office 365 afin d’y inclure des offres cloud supplémentaires de Microsoft :
   
-- [L’environnement de développement/test Microsoft 365 Enterprise](the-microsoft-365-enterprise-dev-test-environment.md)
+- [Environnement de développement/test Microsoft 365 Entreprise](the-microsoft-365-enterprise-dev-test-environment.md)
     
 - [Environnement de développement/test Office 365 et Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md)
     
-## <a name="see-also"></a>Concepts
+## <a name="see-also"></a>Voir aussi
 
-- [Guides de laboratoire de test sur l'adoption du cloud](cloud-adoption-test-lab-guides-tlgs.md)
+- [Guides de laboratoire de test d’adoption cloud](cloud-adoption-test-lab-guides-tlgs.md)
   
 - [Environnement de développement/test Office 365 et Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md)
   

@@ -7,27 +7,27 @@ ms.date: 04/23/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
-description: 'Résumé : Apprenez à configurer un Azure coexistence réseau virtuel pour les charges de travail Office server avec une connexion VPN de site à site.'
-ms.openlocfilehash: 818e709c8177c6533bfa02da00170bf7fdb5a0ac
-ms.sourcegitcommit: 3b474e0b9f0c12bb02f8439fb42b80c2f4798ce1
-ms.translationtype: MT
+description: 'Résumé : Découvrez comment configurer un réseau virtuel Azure intersites pour les charges de travail de serveur Office avec une connexion VPN de site à site.'
+ms.openlocfilehash: de61603781009149c284701f749f42cfdd0881f6
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>Connecter un réseau local à Microsoft Azure Virtual Network
 
  **Résumé :** Découvrez comment configurer un réseau virtuel Azure intersites pour les charges de travail de serveur Office.
   
-Une coexistence Azure réseau virtuel est connecté à votre réseau local, étendez votre réseau pour inclure des sous-réseaux et machines virtuelles hébergées dans les services d’infrastructure Azure. Cette connexion permet aux ordinateurs de votre réseau local pour accéder directement aux ordinateurs virtuels dans Azure et vice versa. 
+Un réseau virtuel Azure intersites est connecté à votre réseau local, étendant ainsi votre réseau pour inclure des sous-réseaux et machines virtuelles hébergés dans les services d’infrastructure Azure. Cette connexion permet aux ordinateurs se trouvant sur votre réseau local d’accéder directement aux machines virtuelles dans Azure et vice-versa. 
 
-Par exemple, un serveur de synchronisation d’annuaire en cours d’exécution sur une machine virtuelle Azure doit interroger vos contrôleurs de domaine pour les comptes locaux et de synchroniser ces modifications avec votre abonnement à Office 365. Cet article vous montre comment configurer un Azure coexistence virtuel réseau à l’aide d’une connexion de réseau privé virtuel (VPN) site à site est prête à héberger des ordinateurs virtuels Azure.
+Par exemple, un serveur de synchronisation d’annuaires exécuté sur une machine virtuelle Azure doit interroger les contrôleurs de votre domaine local concernant les modifications apportées aux comptes et synchroniser ces modifications avec votre abonnement Office 365. Cet article vous explique comment configurer un réseau virtuel Azure intersites à l’aide d’une connexion VPN de site à site prête à héberger des machines virtuelles Azure.
 
 ## <a name="overview"></a>Vue d’ensemble
 
@@ -35,22 +35,22 @@ Vos machines virtuelles dans Azure n'ont pas besoin d'être isolées de votre en
   
 ![Réseau local connecté à Microsoft Azure via une connexion VPN de site à site](images/CP_ConnectOnPremisesNetworkToAzureVPN.png)
   
-Dans le diagramme, il y a deux réseaux reliés par une connexion VPN de site à site : le réseau local et le réseau virtuel Azure. La connexion VPN de site à site est la suivante :
+Dans le diagramme, il existe deux réseaux connectés par une connexion VPN de site à site : le réseau local et le réseau virtuel Azure. La connexion VPN de site à site est :
 
-- Entre deux points de terminaison qui sont adressables et se trouvent sur l’Internet public.
-- Arrêté par un périphérique VPN sur le réseau local et une passerelle Azure VPN sur le réseau virtuel Azure.
+- entre deux points de terminaison qui sont adressables et se trouvent sur l’Internet public ;
+- terminée par un appareil VPN sur le réseau local et une passerelle VPN Azure sur le réseau virtuel Azure.
 
-Le réseau virtuel Azure héberge des ordinateurs virtuels. Trafic réseau provenant d’ordinateurs virtuels sur le réseau virtuel Azure est transféré à la passerelle VPN, qui transmet ensuite le trafic sur la connexion VPN de site à site vers le périphérique VPN sur le réseau local. L’infrastructure de routage du réseau local transmet ensuite le trafic vers sa destination.
+Le réseau virtuel Azure héberge des machines virtuelles. Le trafic réseau provenant des machines virtuelles sur le réseau virtuel Azure est transféré vers la passerelle VPN, qui transfère ensuite le trafic via la connexion VPN de site à site à l’appareil VPN sur le réseau local. L’infrastructure de routage sur le réseau local transfère par la suite le trafic à sa destination.
 
 >[!Note]
->Vous pouvez également utiliser [ExpressRoute](https://azure.microsoft.com/services/expressroute/), qui est une connexion directe entre votre organisation et réseau de Microsoft. Le trafic sur les ExpressRoute ne circulent pas sur l’Internet public. Cet article ne décrit pas l’utilisation de ExpressRoute.
+>Vous pouvez aussi utiliser [ExpressRoute](https://azure.microsoft.com/services/expressroute/), une connexion directe entre votre organisation et le réseau de Microsoft. Le trafic sur ExpressRoute ne passe pas sur l’Internet public. Cet article ne décrit pas l’utilisation d’ExpressRoute.
 >
   
 Pour configurer la connexion VPN entre votre réseau Azure Virtual Network et votre réseau local, procédez comme suit : 
   
 1. **Local :** Définissez et créez un itinéraire réseau local pour l'espace d'adressage du réseau virtuel Azure qui pointe vers votre périphérique VPN local.
     
-2. **Microsoft Azure :** Créez un réseau virtuel Azure avec une connexion VPN de site à site. 
+2. **Microsoft Azure** : Créez un réseau virtuel Azure avec une connexion VPN de site à site. 
     
 3. **Local :** Configurez votre périphérique VPN matériel ou logiciel local pour marquer la fin de la connexion VPN en utilisant la sécurité du protocole Internet (IPsec).
     
@@ -62,7 +62,7 @@ Après avoir établi la connexion VPN de site à site, vous ajoutez des machines
 ### <a name="prerequisites"></a>Conditions préalables
 <a name="Prerequisites"></a>
 
-- Un abonnement Azure. Pour plus d’informations sur les abonnements d’Azure, accédez à la [page d’achat de Azure](https://azure.microsoft.com/pricing/purchase-options/).
+- Un abonnement Azure. Pour plus d’informations sur les abonnements Azure, accédez à la [page décrivant comment acheter Azure](https://azure.microsoft.com/pricing/purchase-options/).
     
 - Un espace d’adressage IPv4 privé disponible à affecter au réseau virtuel et à ses sous-réseaux, avec suffisamment d’espace pour leur croissance afin d’accueillir le nombre de machines virtuelles nécessaires maintenant et à l’avenir.
     
@@ -143,7 +143,7 @@ Pour les paramètres du réseau virtuel, remplissez le tableau V.
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |Nom du réseau virtuel  <br/> |Nom à affecter au réseau virtuel Azure (par exemple, DirSyncNet).  <br/> |![](./images/Common_Images/TableLine.png) |
 |2.  <br/> |Emplacement du réseau virtuel  <br/> |Centre de données Azure qui contiendra le réseau virtuel (par exemple, Ouest des États-Unis).  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|3.  <br/> |Adresse IP du périphérique VPN  <br/> |Adresse IPv4 publique de l’interface de votre périphérique VPN sur Internet. Renseignez-vous auprès de votre service informatique pour déterminer cette adresse.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|3.  <br/> |Adresse IP du périphérique VPN  <br/> |Adresse IPv4 publique de l’interface de votre périphérique VPN sur Internet. Renseignez-vous auprès de votre service informatique pour déterminer cette adresse.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
 |4.  <br/> |Espace d’adressage du réseau virtuel  <br/> |Espace d’adressage (défini dans un préfixe d’adresse privée unique) pour le réseau virtuel. Renseignez-vous auprès de votre service informatique pour déterminer cet espace d’adressage. L’espace d’adressage doit être au format de routage CIDR (Classless Interdomain Routing), également appelé format de préfixe de réseau. Par exemple, 10.24.64.0/20.  <br/> |![](./images/Common_Images/TableLine.png) <br/> |
 |5.  <br/> |Clé partagée IPsec  <br/> |Chaîne alphanumérique aléatoire de 32 caractères, qui sera utilisée pour authentifier les deux côtés de la connexion VPN de site à site. Renseignez-vous auprès de votre service informatique ou de sécurité pour déterminer la valeur de cette clé, puis stockez-la dans un emplacement sécurisé. Vous pouvez également consulter la page relative à la [création d'une chaîne aléatoire pour une clé prépartagée IPsec](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).<br/> |![](./images/Common_Images/TableLine.png) <br/> |
    
@@ -217,7 +217,7 @@ Ensuite, connectez-vous à votre compte Azure avec cette commande.
 Login-AzureRMAccount
 ```
 
-Obtenez le nom de votre abonnement à l'aide de la commande suivante.
+Obtenez le nom de votre abonnement à l’aide de la commande suivante.
   
 ```
 Get-AzureRMSubscription | Sort SubscriptionName | Select SubscriptionName
@@ -339,7 +339,7 @@ Voici la configuration finale.
   
 ### <a name="phase-3-optional-add-virtual-machines"></a>Phase 3 (facultative) : ajouter des machines virtuelles
 
-Créer les ordinateurs virtuels dont vous avez besoin dans Azure. Pour plus d’informations, voir [Création d’une machine virtuelle de Windows avec le portail Azure](https://go.microsoft.com/fwlink/p/?LinkId=393098).
+Créez les machines virtuelles dont vous avez besoin dans Azure. Pour plus d’informations, reportez-vous à [Créer une machine virtuelle Windows avec le portail Azure](https://go.microsoft.com/fwlink/p/?LinkId=393098).
   
 Utilisez les paramètres suivants :
   

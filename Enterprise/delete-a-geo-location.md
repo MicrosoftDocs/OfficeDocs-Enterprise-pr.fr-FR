@@ -7,35 +7,36 @@ ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-ms.custom: Strat_SP_gtc
-localization_priority: Normal
-description: Découvrez comment supprimer un emplacement géographique dans OneDrive pour entreprise Multi-Geo.
-ms.openlocfilehash: c9cce9e8bc42debb741953ce47daf7f700c5dab3
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
-ms.translationtype: MT
+ms.custom: ''
+ms.collection: Strat_SP_gtc
+localization_priority: Priority
+description: Découvrez comment supprimer un emplacement géographique dans OneDrive Entreprise Multi-Géo.
+ms.openlocfilehash: f1da3d2e849d7ee931ef3a115502498743cc23bb
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
-# <a name="delete-a-geo-location-in-onedrive-for-business-multi-geo"></a>Supprimer un emplacement géographique dans OneDrive pour entreprise Multi-Geo
+# <a name="delete-a-geo-location-in-onedrive-for-business-multi-geo"></a>Supprimer un emplacement géographique dans OneDrive Entreprise Multi-Géo
 
-Si vous n’avez plus besoin un emplacement géographique, vous pouvez le supprimer de votre client à partir du [Centre d’administration OneDrive](https://admin.onedrive.com)
+Si vous n’avez plus besoin d’un emplacement géographique, vous pouvez le supprimer de votre client depuis le [centre d’administration OneDrive](https://admin.onedrive.com)
 
 > [!WARNING]
-> Toutes les données utilisateur dans l’emplacement géographique vont être définitivement supprimées. Cela inclut tous les OneDrive pour les contenus d’entreprise, des sites SharePoint et grouper les sites. Vous devez migrer des données vers un autre emplacement avant de supprimer l’emplacement. Cette action ne peut pas être annulée.
+> Toutes les données utilisateur dans l’emplacement géographique sont supprimées définitivement. Cela inclut tout le contenu de OneDrive Entreprise, les sites SharePoint et les sites de groupe. Vous devez migrer les données vers un autre emplacement avant de supprimer l’emplacement. Cette action ne peut pas être annulée.
 
-Seuls les administrateurs globaux peuvent supprimer des emplacements de geo
+Seuls les administrateurs généraux peuvent supprimer des emplacements géographiques.
 
 Pour supprimer un emplacement géographique
 
-1. Ouvrir le [Centre d’administration OneDrive](https://admin.onedrive.com)
+1. Ouvrez le [centre d’administration OneDrive](https://admin.onedrive.com)
 
-2. Accédez à l’onglet **emplacements de la zone géographique** .
+2. Accédez à l’onglet **Emplacements géographiques**.
 
-3. Sur la carte, cliquez sur l’emplacement géographique que vous voulez supprimer.
+3. Sur la carte, cliquez sur l’emplacement géographique à supprimer.
 
 4. Cliquez sur **Supprimer l’emplacement**.
 
-5. En activant les cases à cocher de confirmation, confirmez la suppression.
+5. Confirmez la suppression en sélectionnant les cases à cocher de confirmation.
 
 6. Cliquez sur **Supprimer**.
 

@@ -7,23 +7,23 @@ ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_TLGs
 ms.assetid: a1370fe4-2fd6-4fea-ad1d-3555433d6d2e
-description: 'Résumé : Utilisez ce Guide de laboratoire de Test pour créer un environnement de développement/test qui inclut toutes les offres en nuage de Microsoft.'
-ms.openlocfilehash: c1d0e190e6d7e3871cf4289729b53cc0b4b5d04d
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
-ms.translationtype: MT
+description: 'Résumé : Utilisez ce guide de laboratoire de test pour créer un environnement de développement/test qui inclut toutes les offres cloud de Microsoft.'
+ms.openlocfilehash: 29fcb1108ceac6aa488ca71d723789a7a2e6c409
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="the-one-microsoft-cloud-devtest-environment"></a>Environnement de développement/test Microsoft Cloud unique
 
- **Résumé :** Utilisez ce Guide de laboratoire de Test pour créer un environnement de développement/test qui inclut toutes les offres en nuage de Microsoft.
+ **Résumé : **Utilisez ce guide de laboratoire de test pour créer un environnement de développement/test qui inclut toutes les offres cloud de Microsoft.
   
 Les instructions fournies dans cet article vous permettent de créer un intranet simulé dans les services d’infrastructure de Microsoft Azure, puis d’ajouter des abonnements Microsoft Office 365, Microsoft Enterprise Mobility + Security (EMS) et Microsoft Dynamics 365. Vous obtenez ainsi une organisation plus simple qui utilise toutes les offres cloud de Microsoft en même temps dans un environnement de développement/test unique.  
   
@@ -41,28 +41,28 @@ Vous pouvez utiliser la configuration obtenue pour :
     
 ## <a name="phase-1-create-a-simulated-intranet-and-add-office-365"></a>Phase 1 : Créer un intranet simulé et y ajouter Office 365
 
-Suivez les instructions de [synchronisation d’annuaire pour votre environnement de développement/test d’Office 365](dirsync-for-your-office-365-dev-test-environment.md).
+Suivez les instructions fournies dans [DirSync pour votre environnement de développement/test Office 365](dirsync-for-your-office-365-dev-test-environment.md).
   
-La figure 1 illustre votre configuration qui en résulte, ce qui inclut Office 365 et un intranet simulé en cours d’exécution dans les services d’infrastructure Azure et la synchronisation d’annuaire à partir d’une forêt de Windows Server Active Directory (AD) sur site.
+La figure 1 présente la configuration obtenue, qui comprend Office 365 et un intranet simulé exécuté dans les services d’infrastructure Azure et la synchronisation d’annuaires à partir d’une forêt Windows Server Active Directory (AD) locale.
   
-**Figure 1 : L’intranet simulé dans Azure avec Office 365**
+**Figure 1 : Intranet simulé dans Azure avec Office 365**
 
 ![Environnement de développement/test d’Office 365 avec DirSync](images/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 > [!NOTE]
-> La version d’essai Azure est de 30 jours. L’abonnement d’évaluation de Office 365 entreprise E5 est de 30 jours, ce qui peut être facilement étendus pour un autre 30 jours. Pour un environnement de développement/test permanent, créer un nouveau payé l’abonnement Azure et un nouvel abonnement Office 365 entreprise E5 payé avec un petit nombre de licences. 
+> La version d’évaluation d’Azure est de 30 jours. L’abonnement à la version d’évaluation d’Office 365 Entreprise E5 est de 30 jours, et peut être facilement étendue de 30 jours supplémentaires. Pour un environnement de développement/test permanent, créez un abonnement payant Azure et un abonnement payant Office 365 Entreprise E5 avec un petit nombre de licences. 
   
-## <a name="phase-2-add-ems"></a>Phase 2 : Ajouter EMS
+## <a name="phase-2-add-ems"></a>Phase 2 : Ajout d’EMS
 
 Dans cette phase, vous vous inscrivez pour l’abonnement d’évaluation EMS et l’ajoutez à la même organisation que votre abonnement d’évaluation Office 365.
   
-1. Avec un navigateur soit sur votre ordinateur de bureau ou à partir de CLIENT1, ouvrez une session sur le portail Office 365 à [https://portal.office.com](https://portal.office.com) avec les informations d’identification de votre compte d’administrateur global.
+1. En utilisant un navigateur de votre ordinateur de bureau ou de CLIENT1, connectez-vous au portail Office 365 ([https://portal.office.com](https://portal.office.com)) à l’aide des informations d’identification de votre compte Administrateur général.
     
 2. Cliquez sur la vignette **Administration**.
     
 3. Sous l’onglet **Centre d’administration Office** de votre navigateur, dans le volet de navigation gauche, cliquez sur **Facturation > Acheter des services**.
     
-4. Dans la page **services d’achat** , trouver la **mobilité d’entreprise + E5 de la sécurité** . Placez le pointeur de la souris sur elle et cliquez sur **Démarrer la version d’évaluation gratuite**.
+4. Dans la page **Acheter des services**, recherchez l’élément **Enterprise Mobility + Security E5**. Pointez votre souris dessus et cliquez sur **Démarrer l’essai gratuit**.
     
 5. Dans la page **Confirmer votre commande**, cliquez sur **Essayer maintenant**.
     
@@ -75,9 +75,9 @@ Ensuite, activez la licence Enterprise Mobility + Security E5 pour tous les com
   
 1. Sous l’onglet **Centre d’administration Office 365** de votre navigateur, dans le volet de navigation gauche, cliquez sur **Utilisateurs > Utilisateurs actifs**.
     
-2. Cliquez sur votre compte d’administrateur global, puis cliquez sur **Modifier** pour les **licences de produit**.
+2. Cliquez sur votre compte Administrateur général, puis cliquez sur **Modifier** pour les **licences de produit**.
     
-3. Dans le volet des **licences** , activer la licence du produit de **mobilité d’entreprise + sécurité E5** **on**et cliquez sur **Enregistrer,** puis cliquez deux fois sur **Fermer** .
+3. Dans le volet **Licences de produit**, activez la licence de produit pour **Enterprise Mobility + Security E5** en sélectionnant **Activer**, cliquez sur **Enregistrer**, cliquez deux fois sur **Fermer**.
     
 4. Pour tous vos autres comptes (Utilisateur 1, Utilisateur 2, Utilisateur 3, Utilisateur 4 et Utilisateur 5), suivez les étapes 2 et 3.
     
@@ -91,21 +91,21 @@ Votre environnement de développement/test comporte maintenant :
     
 La figure 2 montre la configuration obtenue, qui ajoute EMS.
   
-**Figure 2 : L’intranet simulé dans Azure avec Office 365 et EMS**
+**Figure 2 : Intranet simulé dans Azure avec Office 365 et EMS**
 
 ![Phase 2 de l’environnement de développement/test cloud One Microsoft avec Azure, Office 365 et EMS](images/fdb520fe-ebbd-4681-a80e-b60df52f07c5.png)
   
-## <a name="phase-3-add-dynamics-365"></a>Phase 3 : Ajoutez Dynamics 365
+## <a name="phase-3-add-dynamics-365"></a>Phase 3 : Ajouter Dynamics 365
 
 Dans cette phase, vous allez souscrire à l’abonnement d’évaluation Dynamics 365 et l’ajouter à la même organisation que vos abonnements d’évaluation Office 365 et EMS.
   
-1. À l’aide d’un navigateur soit sur votre ordinateur de bureau ou à partir de CLIENT1, connectez-vous au portail Office 365 à [https://portal.office.com](https://portal.office.com) avec les informations d’identification de votre compte d’administrateur global.
+1. En utilisant un navigateur de votre ordinateur de bureau ou de CLIENT1, connectez-vous au portail Office 365 ([https://portal.office.com](https://portal.office.com)) à l’aide des informations d’identification de votre compte Administrateur général.
     
 2. Cliquez sur la vignette **Administration**.
     
-3. Dans l’onglet **Centre admin** , dans la navigation de gauche, cliquez sur **de facturation > acheter les services**.
+3. Sous l’onglet **Centre d’administration Office**, dans le volet de navigation de gauche, cliquez sur **Facturation > Acheter des services**.
     
-4. Dans la page **services d’achat** , trouver l’élément de **Dynamics 365 Plan 1 Enterprise Edition** . Placez le pointeur de la souris sur elle et cliquez sur **Démarrer la version d’évaluation gratuite**.
+4. Dans la page **Acheter des services**, recherchez l’élément **Dynamics 365 Plan 1 Enterprise Edition**. Placez le curseur de la souris dessus et cliquez sur **Démarrer l’essai gratuit**.
     
 5. Dans la page **Confirmer votre commande**, cliquez sur **Essayer maintenant**.
     
@@ -116,43 +116,43 @@ Dans cette phase, vous allez souscrire à l’abonnement d’évaluation Dynamic
   
 Procédez comme suit pour affecter des licences Dynamics 365 aux comptes de l’administrateur général, ainsi qu’aux comptes Utilisateur 2 et Utilisateur 3 afin de leur attribuer le rôle d’administrateur système.
   
-1. Dans l’onglet **Centre admin** , cliquez sur **les utilisateurs > utilisateurs actifs**.
+1. Sous l’onglet **Centre d’administration Office**, cliquez sur **Utilisateurs > Utilisateurs actifs**.
     
-2. Dans la liste d’utilisateurs actifs, cliquez sur votre compte d’administrateur global, puis cliquez sur **Modifier** pour les **licences de produit**.
+2. Dans la liste des utilisateurs actifs, sélectionnez votre compte Administrateur général, puis cliquez sur **Modifier** pour **Licences de produits**.
     
-3. Dans le volet **des licences de produit** , activation de la licence du produit pour **Dynamics 365 Plan 1 Enterprise Edition** **sur**et cliquez sur **Enregistrer,** puis cliquez deux fois sur **Fermer** .
+3. 	Dans le volet **Licences de produit**, activez la licence de produit pour **Dynamics 365 Plan 1 Enterprise Edition** en sélectionnant **Activer**, cliquez sur **Enregistrer**, puis cliquez deux fois sur **Fermer**.
     
 4. Suivez les étapes 2 et 3 pour les comptes Utilisateur 2 et Utilisateur 3.
     
-5. Fermez l’onglet **Centre admin** .
+5. Fermez l’onglet **Centre d’administration Office**.
     
 Lors de cette phase, vous allez configurer les comptes Utilisateur 2 et Utilisateur 3 en tant qu’administrateurs système de Dynamics 365.
   
-1. Dans l’onglet **Centre d’administration d’Office** dans votre navigateur, dans la navigation de gauche, cliquez sur **Centre d’administration**, puis cliquez sur **Dynamics 365**.
+1. Sur l’onglet **Centre d’administration Office** de votre navigateur, cliquez sur **Centres d’administration** dans le volet de navigation de gauche, puis sur **Dynamics 365**.
     
     Vous devrez peut-être attendre la fin de l’approvisionnement de Dynamics 365 avant de le voir apparaître dans le menu.
     
-2. Sous l’onglet Dynamics 365, cliquez sur **tous**, puis cliquez sur **le programme d’installation terminé.**
+2. Sur l’onglet Dynamics 365, cliquez sur **Toutes ces options**, puis sur **Terminer l’installation**.
     
     Attendez la fin de l’installation.
     
-    Lorsque l’installation est terminée, il affiche un tableau de bord d’activité de vente basés sur des données qui fait partie de l’abonnement de la piste. Prenez quelques instants pour afficher la **Bienvenue dans votre version d’évaluation** de vidéo. Fermez la fenêtre de la vidéo lorsque vous avez terminé.
+    Une fois l’installation terminée, un tableau de bord Activité de ventes reposant sur des exemples de données inclus dans l’abonnement d’essai est affiché. Visionnez la **vidéo de présentation de l’essai**. Fermez la fenêtre de la vidéo lorsque vous avez terminé.
     
-3. Dans la barre d’outils en haut, cliquez sur la flèche en regard de **ventes**, cliquez sur **paramètres**, puis cliquez sur **sécurité**.
+3. Dans la barre d’outils située en haut de l’écran, cliquez sur la flèche vers le bas en regard de **Ventes**, sur **Paramètres** puis sur **Sécurité**.
     
-4. Dans la page **sécurité** , cliquez sur **utilisateurs**.
+4. Dans la page **Sécurité**, cliquez sur **Utilisateurs**.
     
-5. Dans la liste des utilisateurs, cliquez sur **utilisateur 2**.
+5. Dans la liste des utilisateurs, cliquez sur **Utilisateur 2**.
     
 6. Dans la barre d’outils, cliquez sur **Gérer les rôles**.
     
-7. **Gérer les rôles**, cliquez sur **Administrateur système**, puis cliquez sur **OK**.
+7. Dans **Gérer les rôles**, cliquez sur **Administrateur système**, puis sur **OK**.
     
-8. Dans la barre d’outils en haut, cliquez sur **sécurité**.
+8. Dans la barre d’outils en haut de l’écran, cliquez sur **Sécurité**.
     
 9. Répétez les étapes 5 à 8 pour le compte Utilisateur 3.
     
-10. Fermer la **utilisateur : l’util_3** onglet.
+10. Fermez l’onglet **Utilisateur :User3**.
     
 > [!NOTE]
 > Le rôle d’administrateur système Dynamics 365 a été automatiquement attribué à votre compte d’administrateur général Office 365. 
@@ -169,25 +169,25 @@ Votre environnement de développement/test comporte maintenant :
     
 La figure 3 présente la configuration finale.
   
-**Figure 3 : L’intranet simulé dans Azure avec Office 365, EMS et Dynamics 365**
+**Figure 3 : Intranet simulé dans Azure avec Office 365, EMS et Dynamics 365**
 
 ![Phase 3 de l’environnement de développement/test cloud One Microsoft avec Azure, Office 365, EMS et Dynamics 365](images/31714fcc-0c7d-411f-bcd1-c62d9be090ee.png)
   
 ## <a name="next-steps"></a>Étapes suivantes
 
-Vous pouvez maintenant tester différentes configurations avec votre environnement de développement/test Microsoft Cloud. Voici quelques suggestions pour vous guider :
+Vous pouvez maintenant tester différentes configurations avec votre environnement de développement/test Microsoft Cloud. Voici quelques suggestions :
   
-- [Configurer des stratégies de management (MAM) d’une application mobile dans EMS pour les applications d’Office 365](https://technet.microsoft.com/library/mt764059.aspx)
+- [Stratégies de gestion des applications mobiles pour votre environnement de développement/test Office 365 et EMS](https://technet.microsoft.com/library/mt764059.aspx)
     
-- [Montrer Exchange Online dans Office 365 une intégration avec les contacts de Dynamics 365](https://technet.microsoft.com/library/mt798313.aspx)
+- [Intégration d’Exchange Online pour votre environnement de développement/test Office 365 et Dynamics 365](https://technet.microsoft.com/library/mt798313.aspx)
     
-- [Créer un réseau simulé coexistence dans les services d’infrastructure Azure pour l’hébergement des charges de travail basé sur serveur](https://technet.microsoft.com/library/mt745150.aspx)
+- [Créer un réseau simulé intersites dans les services d’infrastructure Azure pour héberger les charges de travail sur serveur](https://technet.microsoft.com/library/mt745150.aspx)
     
 ## <a name="see-also"></a>Voir aussi
 
-[Guides de laboratoire de test d'adoption cloud](cloud-adoption-test-lab-guides-tlgs.md)
+[Guides de laboratoire de test d’adoption cloud](cloud-adoption-test-lab-guides-tlgs.md)
   
-[Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Ressources relatives à l’architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
   
 [Solutions hybrides](hybrid-solutions.md)
   

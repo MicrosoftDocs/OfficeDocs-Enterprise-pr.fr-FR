@@ -1,130 +1,130 @@
 ---
-title: Administration d’un environnement multi-geo
+title: Administration d’un environnement multigéographique
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-ms.custom: Strat_SP_gtc
-localization_priority: Normal
-description: Obtenir des informations sur l’administration des services SharePoint et OneDrive dans un environnement multi-geo.
-ms.openlocfilehash: 5d423fedc25b6e58ee84a51b01eb3858e6f198bb
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
-ms.translationtype: MT
+ms.custom: ''
+ms.collection: Strat_SP_gtc
+localization_priority: Priority
+description: Découvrez comment administrer des services SharePoint et OneDrive dans un environnement multigéographique.
+ms.openlocfilehash: 596db0e2cffedc74a4840ae4427a3350ba1e27d8
+ms.sourcegitcommit: a4322cac992ce64b92f0335bf005a7420195d9be
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="administering-a-multi-geo-environment"></a>Administration d’un environnement multi-geo
+# <a name="administering-a-multi-geo-environment"></a>Administration d’un environnement multigéographique
 
-Voici comment les services OneDrive et SharePoint fonctionnent dans un environnement multi-geo.
+Découvrez le fonctionnement des services OneDrive et SharePoint dans un environnement multigéographique.
 
-#### <a name="onedrive-administrator-experience"></a>Expérience de l’administrateur de OneDrive
+#### <a name="onedrive-administrator-experience"></a>Expérience de l’administrateur OneDrive
 
-Le [Centre admin de OneDrive](https://admin.onedrive.com) a un onglet **emplacements de la zone géographique** dans la navigation gauche quelles fonctionnalités un géo-emplacements mappent dans lequel vous pouvez afficher et gérer les emplacements de votre zone géographique. Utilisez cette page pour ajouter ou supprimer des emplacements geo pour vos clients.
+Dans le [Centre d’administration OneDrive](https://admin.onedrive.com), l’onglet **Emplacements géographiques** dans le volet de navigation gauche propose une carte où vous pouvez afficher et gérer vos emplacements géographiques. Utilisez cette page pour ajouter ou supprimer des emplacements géographiques pour votre client.
 
 #### <a name="taxonomy"></a>Taxonomie
 
-Nous prend en charge une [taxonomie](https://support.office.com/article/A180FA28-6405-4679-9EC3-81D2028C4EFC) de unifiée de métadonnées d’entreprise géré dans tous les magasins de géo, avec le maître hébergé dans l’emplacement central pour votre société. Nous vous conseillons gérez votre taxonomie globale à partir de l’emplacement central et ajoutez uniquement les termes spécifiques à l’emplacement à la taxonomie de l’emplacement géographique satellite. Termes de taxonomie globale seront synchronisées dans les emplacements de geo satellite.
+Nous prenons en charge une [taxonomie](https://support.office.com/article/A180FA28-6405-4679-9EC3-81D2028C4EFC) unifiée pour gérer les métadonnées dans l’entreprise à différents emplacements géographiques ; les données de référence étant hébergées à l’emplacement central de votre entreprise. Nous vous recommandons de gérer votre taxonomie globale à partir de l’emplacement central et d’ajouter uniquement des termes spécifiques à la taxonomie de l’emplacement géographique satellite. Les termes de la taxonomie globale sont synchronisés sur les emplacements géographiques satellites.
 
 #### <a name="sharing"></a>Partage
 
-Les administrateurs peuvent définir et gérer les stratégies de partage pour chacun de leurs magasins. Les sites de OneDrive dans chaque emplacement géographique honorera seulement les correspondant geo partage des paramètres spécifiques. Par exemple, vous pouvez autoriser le [partage externe](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85) pour votre site central, mais pas pour vos satellites emplacement et inversement. Pour OneDrive Multi-Geo, vous devez gérer vos paramètres de partage à chaque emplacement géographique comme elles ne sont pas synchronisées sur les clients.
+Les administrateurs peuvent définir et gérer les stratégies de partage pour chaque emplacement. Les sites OneDrive de chaque emplacement géographique respectent uniquement les paramètres de partage associés à un emplacement géographique précis. (Par exemple, vous pouvez autoriser le [partage externe](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85) pour votre emplacement central, mais pas pour votre emplacement satellite, et inversement.) Notez que les paramètres de partage ne vous permettent pas de configurer les limites de partage entre emplacements géographiques.
 
-Pour gérer le partage visite la page du [Centre d’administration OneDrive paramètres de partage](https://admin.onedrive.com/?v=SharingSettings) . Par défaut le partage externe est activé avec n’importe qui dans chaque emplacement de satellite.
+Pour OneDrive Multi-Géo, vos paramètres de partage doivent être gérés à chaque emplacement géographique car ils ne sont pas synchronisés sur le client. Pour gérer les paramètres de partage, rendez-vous sur le [Centre d’administration OneDrive](https://admin.onedrive.com/?v=SharingSettings). Par défaut, le partage externe est activé pour Tout le monde, dans chaque emplacement satellite.
 
 #### <a name="user-profile-application"></a>Application de profil utilisateur
 
-Il existe une [application de profil utilisateur](https://support.office.com/article/494bec9c-6654-41f0-920f-f7f937ea9723) dans chaque emplacement géographique. Les informations de profil de chaque utilisateur sont hébergées dans leur emplacement géographique et est disponible à l’administrateur de cet emplacement géographique.
+Il existe une [application de profil utilisateur](https://support.office.com/article/494bec9c-6654-41f0-920f-f7f937ea9723) dans chaque emplacement géographique. Les informations de chaque profil utilisateur sont hébergées dans leur emplacement géographique et accessibles par l’administrateur de cet emplacement.
 
-Si vous avez des propriétés de profil personnalisé, nous vous recommandons d’utiliser le même schéma de profil dans le monde entier et de remplir les propriétés de votre profil personnalisé dans tous les emplacements de la zone géographique ou lorsque cela est nécessaire.
+Si vous avez des propriétés de profil personnalisées, nous vous recommandons d’utiliser le même schéma de profil dans toutes les zones géographiques et de remplir vos propriétés de profil personnalisées dans tous les emplacements géographiques ou dans les emplacements requis. Pour savoir comment remplir les données de profil utilisateur par programme, consultez l’[API de mise à jour en bloc de profil utilisateur](https://docs.microsoft.com/fr-FR/sharepoint/dev/solution-guidance/bulk-user-profile-update-api-for-sharepoint-online).
 
-#### <a name="bcs-secure-store-apps"></a>Applications BCS, banque d’informations sécurisé,
+#### <a name="bcs-secure-store-apps"></a>BCS, service Banque d’informations sécurisé, applications
 
-BCS, banque d’informations sécurisée et applications possèdent des instances de geo distinct, donc l’administrateur SharePoint Online doit gérer et configurer ces services à partir de chaque instance géographique où ils le souhaitent être présents.
+BCS, le service Banque d’informations sécurisé et les applications ont des instances géographiques distinctes. Ainsi, l’administrateur SharePoint Online doit gérer et configurer ces services à partir de chaque instance géographique où ils doivent apparaître.
 
-#### <a name="security-and-compliance-admin-center"></a>Centre Admin de mise en conformité et de sécurité
+#### <a name="security-and-compliance-admin-center"></a>Centre de sécurité et conformité
 
-Il existe un centre de conformité centralisé pour le locataire Multi-Geo : [Office 365 sécurité & centre de conformité](https://protection.office.com/?rfr=AdminCenter\#/homepage).
+Il existe un centre de conformité central pour le client multigéographique : [Centre de sécurité et conformité Office 365](https://protection.office.com/?rfr=AdminCenter\#/homepage).
 
-#### <a name="information-protection-ip-data-loss-prevention-dlp-policy"></a>Information Protection (IP) Prevention (DLP) stratégie DLP
+#### <a name="information-protection-ip-data-loss-prevention-dlp-policy"></a>Stratégies de protection contre la perte de données (DLP) et de protection des informations (IP)
 
-Vous pouvez définir votre DLP IP stratégies de OneDrive pour l’entreprise dans le centre de sécurité et de conformité, portée des stratégies en fonction des besoins au locataire entier ou pour les utilisateurs concernés. Par exemple : Si vous souhaitez sélectionner une stratégie pour un utilisateur de OneDrive dans un emplacement de satellite, sélectionnez cette option pour appliquer la stratégie à un OneDrive spécifique et entrez les url de l’OneDrive. Pour obtenir des instructions générales lors de la création de stratégies DLP, consultez [vue d’ensemble des stratégies de prévention de perte de données](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e) .
+Vous pouvez définir vos stratégies DLP et IP pour OneDrive Entreprise dans le Centre de sécurité et conformité, en configurant l’étendue de vos stratégies selon vos besoins, pour tout le client ou pour certains utilisateurs. Par exemple, pour sélectionner une stratégie à appliquer à un utilisateur OneDrive dans un emplacement satellite, sélectionnez la stratégie et entrez l’URL OneDrive de l’utilisateur. Pour en savoir plus sur la création des stratégies DLP, consultez l’article [Vue d’ensemble des stratégies de protection contre la perte de données](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e).
 
-Les stratégies DLP sont synchronisés automatiquement en fonction de leur applicabilité dans chaque emplacement géographique.
+Les stratégies DLP sont synchronisées automatiquement en fonction de leurs conditions d’application à chaque emplacement géographique.
 
-Mise en œuvre de stratégies de prevention de perte de données et de Protection des informations à tous les utilisateurs dans un emplacement géographique n’est pas une option disponible dans l’interface utilisateur, à la place vous devez sélectionner les comptes de OneDrive applicables pour la stratégie ou appliquer globalement à tous les comptes de OneDrive.
+Dans l’interface utilisateur, il est impossible d’appliquer des stratégies de protection contre la perte de données et de protection des informations à tous les utilisateurs d’un emplacement géographique. À la place, sélectionnez les comptes OneDrive concernés par la stratégie ou appliquez la stratégie globalement à tous les comptes OneDrive.
 
 #### <a name="ediscovery"></a>eDiscovery 
 
-Par défaut, une e-Discovery Manager ou l’administrateur d’un client multi-geo sera en mesure de conduire eDiscovery uniquement dans l’emplacement central de ce client. Pour prendre en charge la possibilité de mener l’e-Discovery pour les emplacements de satellite, un nouveau paramètre de filtre de sécurité de la conformité, appelé « Region » est disponible via PowerShell.
+Par défaut, un gestionnaire ou un administrateur eDiscovery d’un client multigéographique peut mettre en place un processus eDiscovery uniquement dans l’emplacement central de ce client. Pour pouvoir mettre en place un processus eDiscovery dans les emplacements satellites, il existe un nouveau paramètre Filtre de sécurité de conformité appelé « Région » dans PowerShell.
 
-L’administrateur Office 365 doit affecter des autorisations de gestionnaire d’e-Discovery pour permettre à d’autres utilisateurs à effectuer des e-Discovery et de lui attribuer un paramètre « Région » dans leur filtre de sécurité de la conformité applicables pour spécifier la région de conduite d’e-Discovery comme satellite emplacement, sinon qu'aucun eDiscovery ne se fera pour l’emplacement de satellite.
+L’administrateur général Office 365 doit affecter les autorisations de gestionnaire eDiscovery pour autoriser d’autres personnes à mettre en place un processus eDiscovery, et affecter un paramètre « Région » dans le filtre de sécurité de conformité correspondant pour définir la région concernée par le processus comme emplacement satellite. Sinon, aucun processus eDiscovery n’est mis en place à l’emplacement satellite.
 
-Lorsque le rôle de responsable ou l’administrateur d’e-Discovery est défini pour un emplacement particulier-geo, l’e-Discovery Manager ou administrateur uniquement pourront effectuer des actions de recherche d’e-Discovery contre les sites SharePoint et les sites de OneDrive que qui se trouve à cet emplacement géo. Si un administrateur ou un gestionnaire eDiscovery tente de rechercher des sites SharePoint ou OneDrive en dehors de la région déterminée, aucun résultats ne seront renvoyés. En outre, lorsque l’e-Discovery responsable ou administrateur pour une région déclenche une exportation, les données sont exportées vers l’instance Azure de cette région. Cela aide les entreprises à respecter les réglementations en ne permettant ne pas de contenu à exporter au-delà des frontières contrôlés.
+Quand un gestionnaire ou un administrateur eDiscovery est défini pour un emplacement particulier, ce gestionnaire ou cet administrateur peut uniquement effectuer des actions de recherche eDiscovery dans les sites SharePoint et OneDrive situés dans cet emplacement géographique. Si un gestionnaire ou un administrateur eDiscovery tente de rechercher des sites SharePoint ou OneDrive en dehors de la région spécifiée, aucun résultat n’est renvoyé. Par ailleurs, quand le gestionnaire ou l’administrateur eDiscovery d’une région déclenche une exportation, les données sont exportées vers l’instance Azure de cette région. Ainsi, les entreprises respectent les règles de conformité en interdisant l’exportation de contenu au-delà de frontières contrôlées.
 
 > [!NOTE]
-> S’il est nécessaire pour une e-Discovery Manager pour effectuer une recherche dans plusieurs régions de SharePoint, un autre compte d’utilisateur devez être créé pour l’e-Discovery Manager qui spécifie la zone secondaire où se trouvent les sites OneDrive ou SharePoint.
+> Si un gestionnaire eDiscovery doit effectuer des recherches dans plusieurs régions SharePoint, un autre compte d’utilisateur doit être créé pour ce gestionnaire, lequel doit indiquer une autre région où sont situés les sites OneDrive ou SharePoint.
 
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>Prise en charge de multi-Geo Geo emplacements</strong></th>
-<th align="left"><strong>e-Discovery pour les données exportées de SharePoint sera dans cet emplacement de données Blob d’Azure...</strong></th>
+<th align="left"><strong>Emplacements multigéographiques pris en charge</strong></th>
+<th align="left"><strong>Emplacement Blob Azure où les données eDiscovery pour SharePoint exportées seront stockées</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td align="left"><strong>NAM</strong></td>
-<td align="left">Les centres de données américains</td>
+<td align="left">Centres de données situés aux États-Unis</td>
 </tr>
 <tr class="even">
-<td align="left"><strong>EUROS</strong></td>
-<td align="left">Les centres de données en Europe</td>
+<td align="left"><strong>EUR</strong></td>
+<td align="left">Centres de données situés en Europe</td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>APC</strong></td>
-<td align="left">Sud-est ou des centres de données d’Asie orientale</td>
+<td align="left">Centres de données situés en Asie de l’Est ou du Sud-Est</td>
 </tr>
 <tr class="even">
-<td align="left"><strong>POUVEZ</strong></td>
-<td align="left">Les centres de données américains</td>
+<td align="left"><strong>CAN</strong></td>
+<td align="left">Centres de données situés aux États-Unis</td>
 </tr>
 <tr class="odd">
-<td align="left"><strong>AUSTRALIE</strong></td>
-<td align="left">Sud-est ou des centres de données d’Asie orientale</td>
+<td align="left"><strong>AUS</strong></td>
+<td align="left">Centres de données situés en Asie de l’Est ou du Sud-Est</td>
 </tr>
 <tr class="even">
 <td align="left"><strong>KOR</strong></td>
-<td align="left">Emplacement de données par défaut du locataire</td>
+<td align="left">Emplacement par défaut des données du client</td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>GBR</strong></td>
-<td align="left">Les centres de données en Europe</td>
+<td align="left">Centres de données situés en Europe</td>
 </tr>
 <tr class="even">
-<td align="left"><strong>JPN</strong></td>
-<td align="left">Sud-est ou des centres de données d’Asie orientale</td>
+<td align="left"><strong>JPN </strong></td>
+<td align="left">Centres de données situés en Asie de l’Est ou du Sud-Est</td>
 </tr>
 </tbody>
 </table>
 
-Pour définir le filtre de sécurité de la conformité d’une région :
+Pour définir le filtre de sécurité de conformité pour une région :
 
-1.  Ouvrir Windows PowerShell
+1.  Ouvrez Windows PowerShell
 
 2.  Entrez   
-    $s = New-PSSession - ConfigurationName Microsoft.Exchange - ConnectionUri <https://ps.compliance.protection.outlook.com/powershell-liveid> -$cred des informations d’identification-authentification base - AllowRedirection - SessionOption (nouveau-PSSessionOption - SkipCACheck - SkipCNCheck - SkipRevocationCheck)
+    $s = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri <https://ps.compliance.protection.outlook.com/powershell-liveid> -Credential $cred -Authentication Basic -AllowRedirection -SessionOption (New-PSSessionOption -SkipCACheck -SkipCNCheck -SkipRevocationCheck)
 
-    $un = Import-PSSession $s - AllowClobber  
+    $a = Import-PSSession $s -AllowClobber  
 
-3.  **Nouvelle-ComplianceSecurityFilter** **-Action** Tous les EnterTheNameYouWantToAssign de **NomFiltre -** **-région** EnterTheRegionParameter **-utilisateurs** EnterTheUserPrincipalName
+3.  **New-ComplianceSecurityFilter** **-Action** ALL **-FilterName** EnterTheNameYouWantToAssign **-Region** EnterTheRegionParameter **-Users** EnterTheUserPrincipalName
 
-    Par exemple : **ComplianceSecurityFilter-nouvelle-Action** tous les **NomFiltre -** NAMEDISCOVERYMANAGERS **-région** NAM **-utilisateurs** adwood@contosodemosx.onmicrosoft.com
+    Par exemple : **New-ComplianceSecurityFilter -Action** ALL **-FilterName** NAMEDISCOVERYMANAGERS **-Region** NAM **-Users** adwood@contosodemosx.onmicrosoft.com
 
-Consultez l’article de la [Nouvelle-ComplianceSecurityFilter](https://technet.microsoft.com/library/mt210915(v=exchg.160).aspx) pour la syntaxe et les paramètres supplémentaires
+Consultez l’article [New-ComplianceSecurityFilter](https://technet.microsoft.com/library/mt210915(v=exchg.160).aspx) pour en savoir plus sur la syntaxe et les paramètres supplémentaires.
 
 #### <a name="audit-log-search"></a>Recherche de journal d’audit
 
-Un unifiée [journal d’Audit](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c) pour tous les emplacements de votre zone géographique est disponible à partir de la page de recherche de journal d’audit Office 365. Vous pouvez voir toutes les entrées de journal d’audit de sur des zones géographiques, par exemple, euros & nom géographique activités de l’utilisateur seront affiche dans une vue hiérarchique et vous pouvez ensuite appliquer des filtres existants pour voir les activités spécifiques de l’utilisateur.
+Un [journal d’audit](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c) unifié pour tous vos emplacements géographiques est disponible sur la page de recherche du journal d’audit Office 365. Vous pouvez voir toutes les entrées du journal d’audit de plusieurs emplacements géographiques. Par exemple, les activités des utilisateurs dans les régions NAM et EUR apparaissent dans un seul affichage et vous pouvez appliquer les filtres existants pour afficher les activités de certains utilisateurs uniquement.

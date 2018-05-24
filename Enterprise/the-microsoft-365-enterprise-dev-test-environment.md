@@ -7,50 +7,50 @@ ms.date: 04/18/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
-description: 'Résumé : Utilisez ce Guide de laboratoire de Test pour créer un environnement de développement/test incluant Office 365 E5, mobilité d’entreprise + E5 de sécurité (EMS) et un ordinateur exécutant Windows 10 Enterprise.'
-ms.openlocfilehash: 9ef1c13d7ae194ff4ba31abaf379529220ffa14f
-ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
-ms.translationtype: MT
+description: 'Résumé : Utilisez ce guide de laboratoire de test pour créer un environnement de développement/test qui comprend Office 365 E5, Enterprise Mobility + Security (EMS) E5 et un ordinateur exécutant Windows 10 Entreprise.'
+ms.openlocfilehash: 5a4c23b3bde309a75a61e574e91823ecdd4629fe
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="the-microsoft-365-enterprise-devtest-environment"></a>Environnement de développement/test Microsoft 365 Entreprise
 
- **Résumé :** Utilisez ce Guide de laboratoire de Test pour créer un environnement de développement/test incluant Office 365 E5, mobilité d’entreprise + E5 de sécurité (EMS) et un ordinateur exécutant Windows 10 Enterprise.
+ **Résumé :** Utilisez ce guide de laboratoire de test pour créer un environnement de développement/test qui comprend Office 365 E5, Enterprise Mobility + Security (EMS) E5 et un ordinateur exécutant Windows 10 Entreprise.
   
-Cet article vous fournit des instructions pas à pas pour créer un environnement simplifié pour tester les fonctionnalités [d’Entreprise de Microsoft 365](https://www.microsoft.com/microsoft-365/enterprise).
+Vous trouverez dans cet article des instructions détaillées pour vous permettre de créer un environnement simplifié afin de tester les fonctions et fonctionnalités de [Microsoft 365 Entreprise](https://www.microsoft.com/microsoft-365/enterprise).
   
 ## <a name="phase-1-create-your-office-365-e5-subscription"></a>Phase 1 : Création de votre abonnement Office 365 E5
 
-Suivez les étapes de la Phase 2 et 3 de Phase de l' [environnement de développement/test Office 365](office-365-dev-test-environment.md) pour créer un environnement de développement/test lightweight Office 365, comme illustré dans la Figure 1.
+Suivez les étapes des phases 2 et 3 de l’article sur l’[environnement de développement/test Office 365](office-365-dev-test-environment.md) pour créer un environnement de développement/test Office 365 léger, comme illustré à la Figure 1.
   
-**Figure 1 : Votre abonnement Office 365 E5 avec ses comptes d’utilisateurs et les clients de Azure Active Directory (AD)**
+**Figure 1 : Votre abonnement Office 365 E5 avec son client et ses comptes d’utilisateur Azure Active Directory (AD)**
 
 ![Phase 1 de l’environnement de développement/test Microsoft 365 Entreprise](images/65bb027b-fb59-46eb-aec2-38c0af425168.png)
 
 > [!NOTE]
-> L’abonnement d’évaluation d’Office 365 E5 est de 30 jours, ce qui peut facilement être étendues à 60 jours. Pour un environnement de développement/test permanent, créez un nouveau payants avec un petit nombre de licences. 
+> L’abonnement à la version d’évaluation Office 365 E5 est valide pendant 30 jours. Vous pouvez facilement l’étendre jusqu’à 60 jours. Pour un environnement de développement/test permanent, créez un abonnement payant avec un nombre réduit de licences. 
   
 ## <a name="phase-2-add-ems"></a>Phase 2 : Ajout d’EMS
 
 Dans cette phase, vous vous inscrivez pour l’abonnement à la version d’évaluation d’EMS E5 et l’ajoutez à la même organisation que votre abonnement à la version d’évaluation d’Office 365 E5.
   
-Tout d’abord, ajouter l’abonnement d’évaluation EMS E5 et affecter une licence EMS à votre compte d’administrateur global.
+Tout d’abord, ajoutez l’abonnement d’évaluation EMS E5 et attribuez une licence EMS à votre compte Administrateur général.
   
-1. Avec une instance privée d’un navigateur Internet, connectez-vous au portail Office 365 avec vos informations d’identification du compte administrateur global. Pour de l’aide, consultez la rubrique [pour vous connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Utilisez une instance privée d’un navigateur Internet pour vous connecter au portail Office 365 à l’aide de vos informations d’identification de compte Administrateur général. Pour obtenir de l’aide, reportez-vous à [Se connecter à Office ou à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Cliquez sur la vignette **Administration**.
     
 3. Sous l’onglet **Centre d’administration Office** de votre navigateur, dans le volet de navigation gauche, cliquez sur **Facturation > Acheter des services**.
     
-4. Dans la page **services d’achat** , trouver la **mobilité d’entreprise + E5 de la sécurité** . Placez le pointeur de la souris sur elle et cliquez sur **Démarrer la version d’évaluation gratuite**.
+4. Dans la page **Acheter des services**, recherchez l’élément **Enterprise Mobility + Security E5**. Pointez votre souris dessus et cliquez sur **Démarrer l’essai gratuit**.
     
 5. Dans la page **Confirmer votre commande**, cliquez sur **Essayer maintenant**.
     
@@ -58,23 +58,23 @@ Tout d’abord, ajouter l’abonnement d’évaluation EMS E5 et affecter une li
     
 7. Sous l’onglet **Centre d’administration Office 365** de votre navigateur, dans le volet de navigation gauche, cliquez sur **Utilisateurs > Utilisateurs actifs**.
     
-8. Cliquez sur votre compte d’administrateur global, puis cliquez sur **Modifier** pour les **licences de produit**.
+8. Cliquez sur votre compte Administrateur général, puis cliquez sur **Modifier** pour les **licences de produit**.
     
-9. Dans le volet des **licences** , activer la licence du produit de **mobilité d’entreprise + sécurité E5** **on**et cliquez sur **Enregistrer,** puis cliquez deux fois sur **Fermer** .
+9. Dans le volet **Licences de produit**, activez la licence de produit pour **Enterprise Mobility + Security E5** en sélectionnant **Activer**, cliquez sur **Enregistrer**, cliquez deux fois sur **Fermer**.
     
 > [!NOTE]
 > L’abonnement à la version d’évaluation d’Enterprise Mobility + Security E5 est de 90 jours. Pour un environnement de développement/test permanent, créez un nouvel abonnement payant avec un nombre réduit de licences. 
   
- ***Si vous avez terminé la Phase 3 de la*** [Environnement de développement/test d’office 365](office-365-dev-test-environment.md), répétez les étapes 8 et 9 de la procédure précédente pour l’ensemble de vos autres comptes (utilisateur 2, utilisateur 3, utilisateur 4 et 5 de l’utilisateur).
+ ***Si vous avez terminé la Phase 3 de l’*** [environnement de développement/test Office 365](office-365-dev-test-environment.md), répétez les étapes 8 et 9 de la procédure précédente pour tous vos autres comptes (Utilisateur 2, Utilisateur 3, Utilisateur 4 et Utilisateur 5).
   
 Votre environnement de développement/test comporte maintenant :
   
-- Abonnements d’essai Office 365 E5 Enterprise et EMS E5 partage le locataire AD Azure même avec votre liste de comptes d’utilisateurs.
-- Tous vos comptes d’utilisateur appropriés (uniquement l’administrateur global ou tous les cinq comptes d’utilisateur) sont activés pour utiliser Office 365 E5 et EMS E5.
+- Des abonnements d’évaluation Office 365 E5 Entreprise et EMS E5 qui partagent le même client Azure AD avec votre liste des comptes d’utilisateur.
+- Tous vos comptes d’utilisateur appropriés (l’administrateur général ou tous les cinq comptes d’utilisateur) sont activés pour utiliser Office 365 E5 et EMS E5.
     
 La figure 2 montre la configuration obtenue, qui ajoute EMS.
   
-**Figure 2 : Ajout de l’abonnement d’évaluation EMS**
+**Figure 2 : Ajout de l’abonnement à la version d’évaluation d’EMS**
 
 ![Phase 2 de l’environnement de développement/test Microsoft 365 Entreprise](images/8a01a483-3de2-41f3-a845-141c7edd0cb0.png)
   
@@ -84,18 +84,18 @@ Au cours de cette phase, vous allez créer un ordinateur autonome exécutant Win
   
 ### <a name="physical-computer"></a>Ordinateur physique
 
-Obtenir un ordinateur personnel et installer Windows 10 Enterprise. Vous pouvez télécharger le Windows 10 Enterprise d’évaluation [ici](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).
+Munissez-vous d’un ordinateur personnel et installez Windows 10 Entreprise dessus. Vous pouvez télécharger la version d’évaluation de Windows 10 Entreprise [ici](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).
   
 ### <a name="virtual-machine"></a>Machine virtuelle
 
-Créer un ordinateur virtuel à l’aide de l’hyperviseur de votre choix et installer Windows 10 Enterprise. Vous pouvez télécharger le Windows 10 Enterprise d’évaluation [ici](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).
+Créez une machine virtuelle à l’aide de l’hyperviseur de votre choix et installez Windows 10 Entreprise dessus. Vous pouvez télécharger la version d’évaluation de Windows 10 Entreprise [ici](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).
   
 ### <a name="virtual-machine-in-azure"></a>Machine virtuelle dans Azure
 
-Pour créer un ordinateur virtuel de Windows 10 de Microsoft Azure, ***vous devez posséder un abonnement basé sur Visual Studio***, qui a accès à l’image 10 de Windows. Autres types d’abonnements Azure, tels que des abonnements d’essai et payés, n’ont pas d’accès à cette image.
+Pour créer une machine virtuelle exécutant Windows 10 dans Microsoft Azure, ***vous devez disposer d’un abonnement Visual Studio*** qui vous permet d’accéder à l’image pour Windows 10 Entreprise. D’autres types d’abonnements Azure, tels que les abonnements d’évaluation et payants, ne permettent pas d’accéder à cette image.
   
 > [!NOTE]
-> La commande suivante définit utiliser la dernière version de PowerShell d’Azure. Reportez-vous à la section [mise en route avec les applets de commande PowerShell d’Azure](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). Ces jeux de génération commande un ordinateur virtuel de Windows 10 Enterprise nommé WIN10 et l’ensemble de l’infrastructure requise, y compris un réseau virtuel, un compte de stockage et un groupe de ressources. Si vous êtes déjà familiarisé avec les services d’infrastructure Azure, veuillez s’adapter ces instructions en fonction de votre infrastructure actuellement déployé. 
+> Les ensembles de commandes suivants utilisent la dernière version d’Azure PowerShell. Reportez-vous à l’article relatif à la [prise en main des cmdlets Azure PowerShell](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). Ces ensembles de commandes créent une machine virtuelle Windows 10 Entreprise nommée WIN10 ainsi que l’intégralité de son infrastructure requise, y compris un groupe de ressources, un compte de stockage et un réseau virtuel. Si vous connaissez déjà les services d’infrastructure Azure, adaptez ces instructions à votre infrastructure actuellement déployée. 
   
 Tout d’abord, lancez une invite Microsoft PowerShell.
   
@@ -111,7 +111,7 @@ Obtenez le nom de votre abonnement à l’aide de la commande suivante.
 Get-AzureRMSubscription | Sort Name | Select Name
 ```
 
-Définissez votre abonnement Azure. Remplacez tout entre guillemets, y compris la \< et > caractères, avec le nom correct.
+Définissez votre abonnement Azure. Remplacez tout le texte entre guillemets, y compris les caractères \< et >, avec le nom correct.
   
 ```
 $subscr="<subscription name>"
@@ -124,7 +124,7 @@ Ensuite, créez un nouveau groupe de ressources. Pour déterminer un nom de grou
 Get-AzureRMResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 ```
 
-Créez votre nouveau groupe de ressources avec ces commandes. Remplacez tout entre guillemets, y compris la \< et > caractères, avec le nom correct.
+Créez votre groupe de ressources avec ces commandes. Remplacez tout le texte entre guillemets, y compris les caractères \< et >, par les noms corrects.
   
 ```
 $rgName="<resource group name>"
@@ -155,58 +155,58 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 
 ## <a name="phase-4-join-your-windows-10-computer-to-azure-ad"></a>Phase 4 : Association de votre ordinateur Windows 10 à Azure AD
 
-Après avoir créé l’ordinateur physique ou virtuel avec Windows 10 Enterprise, connectez-vous avec un compte d’administrateur local.
+Lorsque la machine physique ou virtuelle avec Windows 10 Entreprise est créée, connectez-vous avec un compte d’administrateur local.
   
 > [!NOTE]
-> Pour un ordinateur virtuel dans Azure, se connecter à l’aide de [ces instructions](https://docs.microsoft.com/azure/virtual-machines/windows/connect-logon). Connectez-vous avec les informations d’identification du compte administrateur local. 
+> Pour vous connecter à une machine virtuelle dans Azure, suivez [ces instructions](https://docs.microsoft.com/azure/virtual-machines/windows/connect-logon). Connectez-vous avec les informations d’identification du compte d’administrateur local. 
   
 Ensuite, associez l’ordinateur WIN10 au client Azure AD de vos abonnements Office 365 et EMS.
   
-1. Sur le bureau de l’ordinateur WIN10, cliquez sur **Démarrer > Paramètres > comptes > travail d’accès ou à l’école > Connect**.
+1. Sur le bureau de l’ordinateur WIN10, cliquez sur **Démarrer > Paramètres > Comptes > Accès Professionnel ou Scolaire > Se connecter**.
     
-2. Dans la boîte de dialogue **configurer un compte de travail ou à l’école** , cliquez sur **joindre ce périphérique pour Azure Active Directory**.
+2. Dans la boîte de dialogue **Configurer un compte professionnel ou scolaire**, cliquez sur **Joindre cet appareil à Azure Active Directory**.
     
-3. Dans **travail ou le compte de l’école**, tapez le nom du compte administrateur global de votre abonnement à Office 365, puis cliquez sur **suivant**.
+3. Dans **Compte professionnel ou scolaire**, saisissez le nom de compte Administrateur général de votre abonnement Office 365, puis cliquez sur **Suivant**.
     
-4. Dans l' **entrée de mot de passe**, tapez le mot de passe pour votre compte d’administrateur global, puis cliquez sur **se connecter**.
+4. Dans **Saisie du mot de passe**, saisissez le mot de passe de votre compte Administrateur général, puis cliquez sur **Se connecter**.
     
-5. Lorsque vous êtes invité à vous assurer que c’est votre organisation, cliquez sur **joindre**, puis cliquez sur **terminé**.
+5. Lorsque vous devez confirmer qu’il s’agit bien de votre organisation, cliquez sur **Joindre**, puis sur **Terminé**.
     
 6. Fermez la fenêtre Paramètres.
     
-Ensuite, installez 2016 d’Office sur l’ordinateur WIN10.
+Ensuite, installez Office 2016 sur l’ordinateur WIN10.
   
-1. Ouvrez le navigateur de Microsoft Edge et vous connecter au portail Office 365 avec vos informations d’identification du compte administrateur global. Pour de l’aide, consultez la rubrique [pour vous connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Ouvrez le navigateur Microsoft Edge et connectez-vous au portail Office 365 à l’aide de vos informations d’identification de compte Administrateur général. Pour obtenir de l’aide, reportez-vous à [Se connecter à Office ou à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
-2. Sous l’onglet **Accueil de Microsoft Office** , cliquez sur **installer un 2016 Office**.
+2. Dans l’onglet **Accueil Microsoft Office**, cliquez sur **Installer Office 2016**.
     
-3. Lorsque vous y êtes invité par la procédure à suivre, cliquez sur **exécuter**, puis cliquez sur **Oui** pour le **Contrôle de compte d’utilisateur**.
+3. Lorsque vous êtes invité à décider de l’action à effectuer, cliquez sur **Exécuter**, puis sur **Oui** pour **Contrôle de compte d’utilisateur**.
     
-4. Attendez que Office terminer l’installation. Lorsque vous consultez **vous tous !**, cliquez deux fois sur **Fermer** .
+4. Attendez qu’Office termine l’installation. Lorsque le message **Vous voilà prêt !** s’affiche, cliquez deux fois sur **Fermer**.
     
 La figure 3 illustre l’environnement obtenu, avec l’ordinateur WIN10 associé au client Azure AD de vos abonnements Office 365 et EMS.
   
-**Figure 3 : Ajouter le compte d’ordinateur WIN10 au locataire Azure AD**
+**Figure 3 : Ajout du compte de l’ordinateur WIN10 au client Azure AD**
 
 ![Phase 4 de l’environnement de développement/test Microsoft 365 Entreprise](images/20680f6a-f77e-4333-aaa9-f7cf5e4b0d03.png)
   
-Vous êtes maintenant prêt à essayer des fonctionnalités [d’Entreprise de Microsoft 365](https://www.microsoft.com/microsoft-365/enterprise).
+Vous êtes désormais prêt à profiter des fonctionnalités supplémentaires de [Microsoft 365 Entreprise](https://www.microsoft.com/microsoft-365/enterprise).
   
 ## <a name="next-steps"></a>Étapes suivantes
 
 Ces articles supplémentaires vous feront découvrir les fonctionnalités de Microsoft 365 Entreprise :
   
-- [Ajouter des stratégies d’application mobile management (MAM)](https://technet.microsoft.com/library/mt764059.aspx)
+- [Ajouter des stratégies de gestion des applications mobiles](https://technet.microsoft.com/library/mt764059.aspx)
     
-- [Inscrire les périphériques iOS ou Android](https://technet.microsoft.com/library/mt743077.aspx)
+- [Inscrire des appareils iOS et Android](https://technet.microsoft.com/library/mt743077.aspx)
     
-- [Configurer et tester la gestion avancée de la sécurité](https://technet.microsoft.com/library/mt757250.aspx)
+- [Configurer et tester la gestion de la sécurité avancée](https://technet.microsoft.com/library/mt757250.aspx)
     
 - [Configurer et tester la protection avancée contre les menaces](https://technet.microsoft.com/library/mt490479.aspx)
     
-## <a name="see-also"></a>Concepts
+## <a name="see-also"></a>Voir aussi
 
-- [Documentation Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)
-- [Déployer Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise)
-- [L’environnement de développement/test d’un nuage de Microsoft](the-one-microsoft-cloud-dev-test-environment.md)
-- [Guides de laboratoire de test sur l'adoption du cloud](cloud-adoption-test-lab-guides-tlgs.md)
+- [Documentation de Microsoft 365 Entreprise](https://docs.microsoft.com/microsoft-365-enterprise/)
+- [Déployer Microsoft 365 Entreprise](https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise)
+- [Environnement de développement/test Microsoft Cloud unique](the-one-microsoft-cloud-dev-test-environment.md)
+- [Guides de laboratoire de test d’adoption cloud](cloud-adoption-test-lab-guides-tlgs.md)

@@ -15,11 +15,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: 'Résumé : Utilisez ce guide de laboratoire de test pour créer un abonnement d’évaluation Office 365 à des fins d’évaluation ou de développement/test.'
-ms.openlocfilehash: 07922965acfbd23f0f48094fda8b18bf0b66ef38
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 57fdf66f11d9c71faf81e2a88482093f8f17dfbd
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="office-365-devtest-environment"></a>Environnement de développement/test Office 365
 
@@ -51,7 +51,9 @@ Vous devez posséder un abonnement Azure. Vous pouvez utiliser le [Compte gratui
   
 Voici la configuration obtenue.
   
-![Environnement de développement/test de configuration de base dans Azure](images/63108214-f716-46ae-9974-072ff15b44a2.png)
+![Environnement de développement/test de configuration de base dans Azure](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
+
+
   
 Cette configuration se compose des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure.
   

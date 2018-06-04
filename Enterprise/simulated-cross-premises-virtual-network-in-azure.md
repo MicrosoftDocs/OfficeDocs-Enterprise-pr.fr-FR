@@ -1,9 +1,9 @@
 ---
-title: Réseau virtuel intersites simulé dans Azure.
+title: Réseau virtuel intersites simulé dans Azure
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 05/18/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -14,40 +14,41 @@ ms.collection:
 ms.custom:
 - Ent_TLGs
 ms.assetid: 0a3555dc-6f96-49a5-b9e2-7760e16630b3
-description: 'Résumé : Créez un réseau virtuel intersite simulé dans Microsoft Azure comme un environnement de développement/test.'
-ms.openlocfilehash: 4a34126bba4561da621dc3faf37dd30d4dcc9ff3
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
-ms.translationtype: MT
+description: 'Résumé : Créez un réseau virtuel intersites simulé dans Microsoft Azure en tant qu’environnement de développement/test.'
+ms.openlocfilehash: 42ef04a92794c8df53d3de32970db78d4dcf3119
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "19193664"
 ---
-# <a name="simulated-cross-premises-virtual-network-in-azure"></a>Réseau virtuel intersites simulé dans Azure.
+# <a name="simulated-cross-premises-virtual-network-in-azure"></a>Réseau virtuel intersites simulé dans Azure
 
- **Résumé :** Créez un réseau virtuel intersite simulé dans Microsoft Azure comme un environnement de développement/test.
+ **Résumé :** Créez un réseau virtuel intersites simulé dans Microsoft Azure en tant qu’environnement de développement/test.
   
-Cet article vous guide tout au long de la création d’un environnement de cloud hybride simulé avec Microsoft Azure, à l’aide de deux réseaux virtuels Azure. Voici la configuration obtenue.   
+Cet article vous guide tout au long de la création d’un environnement de cloud hybride simulé avec Microsoft Azure, à l’aide de deux réseaux virtuels Azure. Voici la configuration obtenue. 
   
 ![Phase 3 de l’environnement de test/développement de réseau virtuel intersites simulé, avec la machine virtuelle DC2 dans XPrem VNet](images/df458c56-022b-4688-ab18-056c3fd776b4.png)
   
 Cette configuration simule un environnement de production cloud hybride Azure IaaS et comprend les éléments suivants :
   
-- 	Un réseau local simulé et simplifié hébergé dans un réseau virtuel Azure (réseau virtuel TestLab).
+- Un réseau local simulé et simplifié hébergé dans un réseau virtuel Azure (réseau virtuel TestLab).
     
-- 	Un réseau virtuel intersites simulé hébergé dans Azure (XPrem).
+- Un réseau virtuel intersites simulé hébergé dans Azure (XPrem).
     
-- 	Une relation d’homologation VNet entre les deux réseaux virtuels.
+- Une relation d’homologation VNet entre les deux réseaux virtuels.
     
-- 	Un contrôleur de domaine secondaire dans le réseau virtuel XPrem.
+- Un contrôleur de domaine secondaire dans le réseau virtuel XPrem.
     
-Ces éléments offrent une base commune à partir de laquelle vous pouvez :  
+Ces éléments offrent une base commune à partir de laquelle vous pouvez : 
   
-- 	Développer et tester des applications dans un environnement cloud hybride Azure IaaS simulé.
+- Développer et tester des applications dans un environnement cloud hybride Azure IaaS simulé.
     
-- 	Créer des configurations de test d’ordinateurs, certains au sein du réseau virtuel TestLab et d’autres au sein du réseau virtuel XPrem, afin de simuler les charges de travail informatiques dans un environnement cloud hybride.
+- Créer des configurations de test d’ordinateurs, certains au sein du réseau virtuel TestLab et d’autres au sein du réseau virtuel XPrem, afin de simuler les charges de travail informatiques dans un environnement cloud hybride.
     
 Les trois phases principales pour configurer cet environnement de développement/test sont les suivantes :
   
-1. 	Configurer le réseau virtuel TestLab.
+1. Configurer le réseau virtuel TestLab.
     
 2. Créer le réseau virtuel intersites.
     
@@ -56,14 +57,14 @@ Les trois phases principales pour configurer cet environnement de développement
 > [!NOTE]
 > Cette configuration nécessite un abonnement payant à Azure. 
   
-![Guides de laboratoire de test dans le cloud de Microsoft](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
+![Guides de laboratoire de test dans Microsoft Cloud](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
-> Cliquez [ici](http://aka.ms/catlgstack) pour une carte visuelle à tous les articles de la pile d’un Guide de laboratoire de Test Microsoft sur le nuage.
+> Cliquez [ici](http://aka.ms/catlgstack) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft Cloud.
   
 ## <a name="phase-1-configure-the-testlab-virtual-network"></a>Phase 1 : Configurer le réseau virtuel TestLab
 
-Pour configurer les ordinateurs DC1, APP1 et CLIENT1 dans le réseau virtuel Azure nommé labo de test, suivez les instructions dans [l’environnement de développement/test de Configuration de Base](base-configuration-dev-test-environment.md) .
+Suivez les instructions de l’article [Environnement de développement/test de configuration de base](base-configuration-dev-test-environment.md) pour configurer les ordinateurs DC1, APP1 et CLIENT1 du réseau virtuel Azure nommé TestLab.
   
 Il s’agit de votre configuration actuelle. 
   
@@ -76,7 +77,7 @@ Dans cette phase, vous devez créer et configurer le nouveau réseau virtuel XPr
 Tout d’abord, démarrez une invite PowerShell Azure sur votre ordinateur local.
   
 > [!NOTE]
-> [!REMARQUE] Les ensembles de commandes suivants utilisent la dernière version d'Azure PowerShell. Reportez-vous à la rubrique relative à la [prise en main des cmdlets Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> Les ensembles de commandes suivants utilisent la dernière version d’Azure PowerShell. Reportez-vous à la rubrique relative à la [prise en main des cmdlets Azure PowerShell](https://docs.microsoft.com/fr-FR/powershell/azureps-cmdlets-docs/). 
   
 Connectez-vous à votre compte Azure avec la commande suivante.
   
@@ -85,15 +86,15 @@ Login-AzureRMAccount
 ```
 
 > [!TIP]
-> [!CONSEIL] Pour accéder à un fichier texte qui contient toutes les commandes PowerShell décrites dans cet article, cliquez [ici](https://gallery.technet.microsoft.com/PowerShell-commands-for-7844edd0).
+> Pour accéder à un fichier texte qui contient toutes les commandes PowerShell décrites dans cet article, cliquez [ici](https://gallery.technet.microsoft.com/PowerShell-commands-for-7844edd0).
   
-Obtenez le nom de votre abonnement à l'aide de la commande suivante.
+Obtenez le nom de votre abonnement à l’aide de la commande suivante.
   
 ```
 Get-AzureRMSubscription | Sort Name | Select Name
 ```
 
-Définissez votre abonnement Azure. Remplacer tous les éléments entre guillemets, y compris la \< et > caractères, avec les noms corrects.
+Définissez votre abonnement Azure. Remplacez tout le texte entre guillemets, y compris les caractères \< et >, avec les noms corrects.
   
 ```
 $subscrName="<subscription name>"
@@ -152,18 +153,18 @@ $vm=Add-AzureRmVMDataDisk -VM $vm -Name "DC2-DataDisk1" -CreateOption Attach -Ma
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
-Ensuite, connectez-vous à l’ordinateur virtuel DC2 à partir du [portail Azure](https://portal.azure.com) à l’aide de son nom de compte d’administrateur local et le mot de passe.
+Ensuite, connectez-vous à la nouvelle machine virtuelle DC2 à partir du [portail Azure](https://portal.azure.com) à l’aide du nom de compte et du mot de passe de l’administrateur local.
   
-Ensuite, configurez une règle de pare-feu Windows pour autoriser le trafic afin d’effectuer des tests de connectivité de base. Exécutez ces commandes à l’invite de commande Windows PowerShell de niveau administrateur sur DC2.  
+Ensuite, configurez une règle de pare-feu Windows pour autoriser le trafic afin d’effectuer des tests de connectivité de base. Exécutez ces commandes à l’invite de commande Windows PowerShell de niveau administrateur sur DC2. 
   
 ```
 Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv4-In)" -enabled True
 ping dc1.corp.contoso.com
 ```
 
-La commande ping doit aboutir à quatre réponses réussies à partir de l’adresse IP 10.0.0.4. Il s’agit d’un test du trafic sur la relation d’homologation VNet.  
+La commande ping doit aboutir à quatre réponses réussies à partir de l’adresse IP 10.0.0.4. Il s’agit d’un test du trafic sur la relation d’homologation VNet. 
   
-Ensuite, ajoutez le disque de données supplémentaires en tant que nouveau volume avec la lettre du lecteur F: avec cette commande à partir de l’invite de commandes Windows PowerShell sur DC2.
+Ensuite, ajoutez le disque de données supplémentaire en tant que nouveau volume avec la lettre de lecteur F: avec cette commande de l’invite de commande Windows PowerShell sur DC2.
   
 ```
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
@@ -176,7 +177,7 @@ Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
 Install-ADDSDomainController -Credential (Get-Credential CORP\User1) -DomainName "corp.contoso.com" -InstallDns:$true -DatabasePath "F:\NTDS" -LogPath "F:\Logs" -SysvolPath "F:\SYSVOL"
 ```
 
-Notez que vous êtes invité à fournir à la fois le CORP\\User1 mot de passe et un mot de passe en Mode de restauration des Services annuaire (DSRM) et redémarrez DC2. 
+Notez que vous devez fournir à la fois le mot de passe CORP\\User1 et le mot de passe du mode restauration des services d’annuaire, puis redémarrer DC2. 
   
 Maintenant que le réseau virtuel XPrem possède son propre serveur DNS (DC2), vous devez configurer le réseau virtuel XPrem pour utiliser ce serveur DNS. Exécutez ces commandes à partir de l’invite de commande Azure PowerShell sur votre ordinateur local.
   
@@ -187,7 +188,7 @@ Set-AzureRmVirtualNetwork -VirtualNetwork $vnet
 Restart-AzureRmVM -ResourceGroupName $rgName -Name "DC2"
 ```
 
-À partir du portail Azure sur votre ordinateur local, se connecter à DC1 avec le CORP\\User1 les informations d’identification. Pour configurer le domaine CORP afin que les utilisateurs et ordinateurs utilisent leur contrôleur de domaine local pour l’authentification, exécutez les commandes suivantes à partir d’une invite de commandes Windows PowerShell au niveau administrateur sur DC1.
+À partir du portail Azure sur votre ordinateur local, connectez-vous à DC1 avec les informations d’identification CORP\\User1. Pour configurer le domaine CORP afin que les ordinateurs et les utilisateurs utilisent leur contrôleur de domaine local pour l’authentification, exécutez les commandes suivantes à partir d’une invite de commande Windows PowerShell de niveau administrateur sur DC1.
   
 ```
 New-ADReplicationSite -Name "TestLab" 
@@ -204,7 +205,7 @@ Votre environnement cloud hybride Azure simulé est prêt pour le test.
   
 ## <a name="next-step"></a>Étape suivante
 
-Utilisez cet environnement de développement/test pour simuler une [batterie de serveurs intranet SharePoint Server 2016 hébergé dans Azure](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx).
+Utilisez cet environnement de développement/test pour simuler une [batterie de serveurs SharePoint Server 2016 intranet hébergée dans Azure](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx).
   
 ## <a name="see-also"></a>Voir aussi
 
@@ -214,9 +215,9 @@ Utilisez cet environnement de développement/test pour simuler une [batterie de 
   
 [DirSync pour votre environnement de développement/test Office 365](dirsync-for-your-office-365-dev-test-environment.md)
   
-[Sécurité d’application dans le nuage pour votre environnement de développement/test Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
+[Sécurité des applications cloud pour votre environnement de développement/test Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
   
-[Avancée de protection contre les menaces pour votre environnement de développement/test Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+[Protection avancée contre les menaces pour votre environnement de développement/test Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
   
 [Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.md)
 

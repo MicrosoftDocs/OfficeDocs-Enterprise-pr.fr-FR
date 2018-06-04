@@ -15,11 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Résumé : Utilisez ces guides de laboratoire de test d’adoption cloud pour configurer une démonstration, une preuve du concept ou des environnements de développement/test pour les produits Office 365, Enterprise Mobility + Security (EMS), Dynamics 365 et Office Server.'
-ms.openlocfilehash: 87e9be912b7e53dea07915ae236b057273285718
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 1ca74f7fdb83cf730c4f6d003c9f9e325299f33d
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "19193674"
 ---
 # <a name="cloud-adoption-test-lab-guides-tlgs"></a>Guides de laboratoire de test d’adoption cloud
 
@@ -38,7 +39,6 @@ Avant de commencer, consultez ces ressources supplémentaires :
 - Cliquez [ici](http://aka.ms/catlgstack) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft Cloud.
     
 ## <a name="office-365-devtest-environment"></a>Environnement de développement/test Office 365
-<a name="O365"> </a>
 
 Utilisez les articles suivants pour créer votre environnement de développement/test Office 365 :
   
@@ -89,7 +89,6 @@ Pour votre environnement de développement/test Office 365, utilisez les articl
     Démontrez comment créer un site d’équipe SharePoint Online isolé du reste de l’organisation pour les ressources sensibles ou hautement confidentielles.
     
 ## <a name="the-microsoft-365-enterprise-devtest-environment"></a>Environnement de développement/test Microsoft 365 Entreprise
-<a name="O365"> </a>
 
 Créez un environnement de développement/test pour des scénarios [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/) avec les articles suivants :
   
@@ -106,7 +105,6 @@ Créez un environnement de développement/test pour des scénarios [Microsoft 
     Inscrivez des appareils iOS ou Android et gérez-les à distance.
     
 ## <a name="office-365-and-dynamics-365-devtest-environment"></a>Environnement de développement/test Office 365 et Dynamics 365
-<a name="O365_D365"> </a>
 
 Ajoutez un abonnement à la version d’évaluation de Dynamics 365, et testez des scénarios et fonctionnalités intégrés Office 365 et Dynamics 365 à l’aide des rubriques suivantes :
   
@@ -119,12 +117,10 @@ Ajoutez un abonnement à la version d’évaluation de Dynamics 365, et testez 
     Configurez, puis montrez comment Office 365 et Dynamics 365 fonctionnent ensemble dans les boîtes aux lettres Exchange Online.
     
 ## <a name="the-one-microsoft-cloud-devtest-environment"></a>Environnement de développement/test Microsoft Cloud unique
-<a name="O365_D365"> </a>
 
 Créez un environnement de développement/test qui comprend l’ensemble des offres cloud Microsoft : Office 365, Azure, EMS et Dynamics 365. Pour obtenir des instructions détaillées, reportez-vous à [Environnement de développement/test Microsoft Cloud unique](the-one-microsoft-cloud-dev-test-environment.md).
   
 ## <a name="simulated-cross-premises-devtest-environments"></a>Environnements de développement/test intersites
-<a name="O365_D365"> </a>
 
 Vous pouvez créer un environnement de développement/test intersite, qui comprend un réseau virtuel Azure et un réseau local simulé, avec les articles suivants :
   
@@ -137,7 +133,6 @@ Vous pouvez créer un environnement de développement/test intersite, qui compre
     Créez une batterie de serveurs SharePoint Server 2016 à un seul serveur dans le réseau virtuel Azure et testez la connectivité et l’administration à partir du réseau local simulé.
     
 ## <a name="additional-cloud-based-devtest-environments"></a>Autres environnements de développement/test dans le cloud
-<a name="ADD_TLGs"> </a>
 
 Voici les autres environnements de développement/test dans le cloud que vous pouvez créer dans des services d’infrastructure Azure :
   

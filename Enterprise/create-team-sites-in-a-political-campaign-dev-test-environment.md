@@ -14,11 +14,12 @@ localization_priority: Priority
 ms.custom: ''
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 'Résumé : Créez des sites d’équipe SharePoint Online publics, privés, sensibles et hautement confidentiels dans votre environnement de développement/test dans le cadre d’une campagne électorale.'
-ms.openlocfilehash: 146632ede567be4bf412304960605e6d87de7657
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 1651d89a1c17dfa5af592727bb534717763288e0
+ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/16/2018
+ms.locfileid: "19168488"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>Création de sites d’équipe dans un environnement de développement/test dans le cadre d’une campagne électorale
 
@@ -40,7 +41,7 @@ Dans cette phase, vous allez créer les étiquettes correspondant aux différent
     
 3. Sous le nouvel onglet **Centre d’administration Office** de votre navigateur, cliquez sur **Centres d’administration > Sécurité &amp; conformité**.
     
-4. Sous le nouvel onglet **Accueil - Sécurité &amp; conformité** de votre navigateur, cliquez sur **Classifications > Étiquettes**.
+4. Sous le nouvel onglet **Accueil - Sécurité &amp; conformité de votre navigateur**, cliquez sur **Classifications > Étiquettes**.
     
 5. Dans le volet **Accueil > Étiquettes**, cliquez sur **Créer une étiquette**.
     
@@ -371,7 +372,7 @@ Ensuite, configurez Azure Information Protection avec une nouvelle stratégie d�
     
 3. Si vous configurez Azure Information Protection pour la première fois, consultez ces [instructions](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time).
     
-4. Dans le volet Liste, cliquez sur **Plus de services**, saisissez **Informations**, puis cliquez sur **Azure Information Protection**.
+4. Dans le volet Liste, cliquez sur **Tous les services**, saisissez **Informations**, puis cliquez sur **Azure Information Protection**.
     
 5. Sur le panneau **Azure Information Protection**, cliquez sur **Stratégies étendues > + Ajouter une nouvelle stratégie**.
     

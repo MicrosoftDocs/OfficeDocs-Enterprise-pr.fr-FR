@@ -3,7 +3,7 @@ title: Synchronisation d’annuaires pour votre environnement de développement/
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/04/2018
+ms.date: 05/18/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,53 +16,54 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: 'Résumé : Configurez la synchronisation d’annuaires pour votre environnement de développement/test Office 365.'
-ms.openlocfilehash: 209b41e4d695a753867d989b8f27b96618a81303
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: d1c48bcf4018088b527c3f85f8923413f9ffd268
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "19193534"
 ---
-# <a name="directory-synchronization-for-your-office-365-devtest-environment"></a><span data-ttu-id="06c1d-103">Synchronisation d’annuaires pour votre environnement de développement/test Office 365</span><span class="sxs-lookup"><span data-stu-id="06c1d-103">Summary: Configure directory synchronization for your Office 365 dev/test environment.</span></span>
+# <a name="directory-synchronization-for-your-office-365-devtest-environment"></a><span data-ttu-id="9e695-103">Synchronisation d’annuaires pour votre environnement de développement/test Office 365</span><span class="sxs-lookup"><span data-stu-id="9e695-103">Summary: Configure directory synchronization for your Office 365 dev/test environment.</span></span>
 
- <span data-ttu-id="06c1d-104">**Résumé :** Configurez la synchronisation d’annuaires pour votre environnement de développement/test Office 365.</span><span class="sxs-lookup"><span data-stu-id="06c1d-104">**Summary:** Configure directory synchronization for your Office 365 dev/test environment.</span></span>
+ <span data-ttu-id="9e695-104">**Résumé :** Configurez la synchronisation d’annuaires pour votre environnement de développement/test Office 365.</span><span class="sxs-lookup"><span data-stu-id="9e695-104">**Summary:** Configure directory synchronization for your Office 365 dev/test environment.</span></span>
   
-<span data-ttu-id="06c1d-p101">De nombreuses organisations utilisent Azure AD Connect et la synchronisation d’annuaires pour synchroniser l’ensemble de comptes dans leur forêt de Windows Server Active Directory (AD) en local avec l’ensemble de comptes dans Office 365. Cet article explique comment vous pouvez ajouter la synchronisation d’annuaires avec synchronisation de code de hachage de mot de passe à l’environnement de développement/test Office 365, ce qui entraîne la configuration suivante.</span><span class="sxs-lookup"><span data-stu-id="06c1d-p101">Many organizations use Azure AD Connect and directory synchronization (DirSync) to synchronize the set of accounts in their on-premises Windows Server Active Directory (AD) forest to the set of accounts in Office 365. This article describes how you can add DirSync with password synchronization to the Office 365 dev/test environment, resulting in the following configuration.</span></span>
+<span data-ttu-id="9e695-p101">De nombreuses organisations utilisent Azure AD Connect et la synchronisation d’annuaires pour synchroniser l’ensemble de comptes dans leur forêt de Windows Server Active Directory (AD) en local avec l’ensemble de comptes dans Office 365. Cet article explique comment vous pouvez ajouter la synchronisation d’annuaires avec synchronisation de code de hachage de mot de passe à l’environnement de développement/test Office 365, ce qui entraîne la configuration suivante.</span><span class="sxs-lookup"><span data-stu-id="9e695-p101">Many organizations use Azure AD Connect and directory synchronization (DirSync) to synchronize the set of accounts in their on-premises Windows Server Active Directory (AD) forest to the set of accounts in Office 365. This article describes how you can add DirSync with password synchronization to the Office 365 dev/test environment, resulting in the following configuration.</span></span>
   
 ![Environnement de développement/test Office 365 avec la synchronisation d’annuaires](images/be5b37b0-f832-4878-b153-436c31546e21.png)
   
-<span data-ttu-id="06c1d-108">Cette configuration se compose des éléments suivants : </span><span class="sxs-lookup"><span data-stu-id="06c1d-108">This configuration consists of:</span></span> 
+<span data-ttu-id="9e695-108">Cette configuration se compose des éléments suivants : </span><span class="sxs-lookup"><span data-stu-id="9e695-108">This configuration consists of:</span></span> 
   
-- <span data-ttu-id="06c1d-109">Un abonnement d’évaluation Office 365 E5, qui arrive à expiration 30 jours après sa création.</span><span class="sxs-lookup"><span data-stu-id="06c1d-109">An Office 365 E5 Trial Subscription, which expires 30 days from when you create it.</span></span>
-- <span data-ttu-id="06c1d-p102">Un intranet d’organisation simplifié connecté à Internet, qui se compose de trois machines virtuelles sur un sous-réseau d’un réseau virtuel Azure (DC1, APP1 et CLIENT1). Azure AD Connect s’exécute sur APP1 pour synchroniser le domaine Windows Server AD avec Office 365.</span><span class="sxs-lookup"><span data-stu-id="06c1d-p102">A simplified organization intranet connected to the Internet, consisting of three virtual machines on a subnet of an Azure virtual network (DC1, APP1, and CLIENT1). Azure AD Connect runs on APP1 to synchronize the Windows Server AD domain to Office 365.</span></span>
+- <span data-ttu-id="9e695-109">Un abonnement d’évaluation Office 365 E5, qui arrive à expiration 30 jours après sa création.</span><span class="sxs-lookup"><span data-stu-id="9e695-109">An Office 365 E5 Trial Subscription, which expires 30 days from when you create it.</span></span>
+- <span data-ttu-id="9e695-p102">Un intranet d’organisation simplifié connecté à Internet, qui se compose de trois machines virtuelles sur un sous-réseau d’un réseau virtuel Azure (DC1, APP1 et CLIENT1). Azure AD Connect s’exécute sur APP1 pour synchroniser le domaine Windows Server AD avec Office 365.</span><span class="sxs-lookup"><span data-stu-id="9e695-p102">A simplified organization intranet connected to the Internet, consisting of three virtual machines on a subnet of an Azure virtual network (DC1, APP1, and CLIENT1). Azure AD Connect runs on APP1 to synchronize the Windows Server AD domain to Office 365.</span></span>
     
-<span data-ttu-id="06c1d-112">Les deux phases de configuration de cet environnement de développement/test sont les suivantes :</span><span class="sxs-lookup"><span data-stu-id="06c1d-112">There are two phases to setting up this dev/test environment:</span></span>
+<span data-ttu-id="9e695-112">Les deux phases de configuration de cet environnement de développement/test sont les suivantes :</span><span class="sxs-lookup"><span data-stu-id="9e695-112">There are two phases to setting up this dev/test environment:</span></span>
   
-1. <span data-ttu-id="06c1d-113">Créez l’environnement de développement/test Office 365 (les machines virtuelles DC1, APP1 et CLIENT1 dans un réseau virtuel Azure avec un abonnement d’évaluation Office 365 E5).</span><span class="sxs-lookup"><span data-stu-id="06c1d-113">Create the Office 365 dev/test environment (the DC1, APP1, and CLIENT1 virtual machines in an Azure virtual network with an Office 365 E5 trial subscription).</span></span>
-2. <span data-ttu-id="06c1d-114">Installez et configurez Azure AD Connect sur APP1.</span><span class="sxs-lookup"><span data-stu-id="06c1d-114">Install and configure Azure AD Connect on APP1.</span></span>
+1. <span data-ttu-id="9e695-113">Créez l’environnement de développement/test Office 365 (les machines virtuelles DC1, APP1 et CLIENT1 dans un réseau virtuel Azure avec un abonnement d’évaluation Office 365 E5).</span><span class="sxs-lookup"><span data-stu-id="9e695-113">Create the Office 365 dev/test environment (the DC1, APP1, and CLIENT1 virtual machines in an Azure virtual network with an Office 365 E5 trial subscription).</span></span>
+2. <span data-ttu-id="9e695-114">Installez et configurez Azure AD Connect sur APP1.</span><span class="sxs-lookup"><span data-stu-id="9e695-114">Install and configure Azure AD Connect on APP1.</span></span>
     
 > [!TIP]
-> <span data-ttu-id="06c1d-115">Cliquez [ici](http://aka.ms/catlgstack) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de One Microsoft Cloud.</span><span class="sxs-lookup"><span data-stu-id="06c1d-115">Click [here](http://aka.ms/catlgstack) for a visual map to all of the articles in the One Microsoft Cloud Test Lab Guide stack.</span></span>
+> <span data-ttu-id="9e695-115">Cliquez [ici](http://aka.ms/catlgstack) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de One Microsoft Cloud.</span><span class="sxs-lookup"><span data-stu-id="9e695-115">Click [here](http://aka.ms/catlgstack) for a visual map to all the articles in the One Microsoft Cloud Test Lab Guide stack.</span></span>
   
-## <a name="phase-1-create-an-office-365-devtest-environment"></a><span data-ttu-id="06c1d-116">Phase 1 : création d’un environnement de développement/test Office 365</span><span class="sxs-lookup"><span data-stu-id="06c1d-116">Phase 1: Create an Office 365 dev/test environment</span></span>
+## <a name="phase-1-create-an-office-365-devtest-environment"></a><span data-ttu-id="9e695-116">Phase 1 : création d’un environnement de développement/test Office 365</span><span class="sxs-lookup"><span data-stu-id="9e695-116">Phase 1: Create an Office 365 dev/test environment</span></span>
 
-<span data-ttu-id="06c1d-p103">Suivez les instructions des phases 1, 2 et 3 de l’article relatif à l’[environnement de développement/test Office 365](office-365-dev-test-environment.md). Voici la configuration obtenue.</span><span class="sxs-lookup"><span data-stu-id="06c1d-p103">Follow the instructions in phases 1, 2, and 3 of the Create an Office 365 Dev/Test Environment article. Here is the resulting configuration.</span></span>
+<span data-ttu-id="9e695-p103">Suivez les instructions des phases 1, 2 et 3 de l’article relatif à l’[environnement de développement/test Office 365](office-365-dev-test-environment.md). Voici la configuration obtenue.</span><span class="sxs-lookup"><span data-stu-id="9e695-p103">Follow the instructions in phases 1, 2, and 3 of the Create an Office 365 Dev/Test Environment article. Here is the resulting configuration.</span></span>
   
 ![Environnement de développement/test Office 365](images/48fb91aa-09b0-4020-a496-a8253920c45d.png)
   
-<span data-ttu-id="06c1d-120">Cette configuration se compose des éléments suivants : </span><span class="sxs-lookup"><span data-stu-id="06c1d-120">This configuration consists of:</span></span> 
+<span data-ttu-id="9e695-120">Cette configuration se compose des éléments suivants : </span><span class="sxs-lookup"><span data-stu-id="9e695-120">This configuration consists of:</span></span> 
   
-- <span data-ttu-id="06c1d-121">Un abonnement d’évaluation Office 365 E5.</span><span class="sxs-lookup"><span data-stu-id="06c1d-121">An Office 365 E5 Trial Subscription.</span></span>
-- <span data-ttu-id="06c1d-122">Un intranet d’organisation simplifié connecté à Internet, qui se compose des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure.</span><span class="sxs-lookup"><span data-stu-id="06c1d-122">A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network.</span></span>
+- <span data-ttu-id="9e695-121">Un abonnement d’évaluation Office 365 E5.</span><span class="sxs-lookup"><span data-stu-id="9e695-121">An Office 365 E5 Trial Subscription.</span></span>
+- <span data-ttu-id="9e695-122">Un intranet d’organisation simplifié connecté à Internet, qui se compose des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure.</span><span class="sxs-lookup"><span data-stu-id="9e695-122">A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network.</span></span>
     
-## <a name="phase-2-install-azure-ad-connect-on-app1"></a><span data-ttu-id="06c1d-123">Phase 2 : installation d’Azure AD Connect sur APP1</span><span class="sxs-lookup"><span data-stu-id="06c1d-123">Phase 2: Install Azure AD Connect on APP1</span></span>
+## <a name="phase-2-install-azure-ad-connect-on-app1"></a><span data-ttu-id="9e695-123">Phase 2 : installation d’Azure AD Connect sur APP1</span><span class="sxs-lookup"><span data-stu-id="9e695-123">Phase 2: Install Azure AD Connect on APP1</span></span>
 
-<span data-ttu-id="06c1d-p104">Une fois installé et configuré, Azure AD Connect synchronise l’ensemble de comptes dans le domaine CORP Windows Server AD avec l’ensemble de comptes dans votre abonnement d’évaluation Office 365. La procédure suivante vous guide tout au long de l’installation d’Azure AD Connect sur APP1 et de la vérification de son fonctionnement.</span><span class="sxs-lookup"><span data-stu-id="06c1d-p104">Once installed and configured, Azure AD Connect synchronizes the set of accounts in the CORP Windows Server AD domain with the set of accounts in your Office 365 trial subscription. The following procedure steps you through installing Azure AD Connect on APP1 and verifying that it works.</span></span>
+<span data-ttu-id="9e695-p104">Une fois installé et configuré, Azure AD Connect synchronise l’ensemble de comptes dans le domaine CORP Windows Server AD avec l’ensemble de comptes dans votre abonnement d’évaluation Office 365. La procédure suivante vous guide tout au long de l’installation d’Azure AD Connect sur APP1 et de la vérification de son fonctionnement.</span><span class="sxs-lookup"><span data-stu-id="9e695-p104">Once installed and configured, Azure AD Connect synchronizes the set of accounts in the CORP Windows Server AD domain with the set of accounts in your Office 365 trial subscription. The following procedure steps you through installing Azure AD Connect on APP1 and verifying that it works.</span></span>
   
-### <a name="install-and-configure-azure-ad-connect-on-app1"></a><span data-ttu-id="06c1d-126">Installation et configuration d’Azure AD Connect sur APP1</span><span class="sxs-lookup"><span data-stu-id="06c1d-126">Install  and configure Azure AD Connect on APP1</span></span>
+### <a name="install-and-configure-azure-ad-connect-on-app1"></a><span data-ttu-id="9e695-126">Installation et configuration d’Azure AD Connect sur APP1</span><span class="sxs-lookup"><span data-stu-id="9e695-126">Install  and configure Azure AD Connect on APP1</span></span>
 
-1. <span data-ttu-id="06c1d-127">À partir du [portail Azure](https://portal.azure.com), connectez-vous à APP1 avec le compte CORP\\Utilisateur1.</span><span class="sxs-lookup"><span data-stu-id="06c1d-127">From the [Azure portalhttps://portal.azure.com](https://portal.azure.com), connect to APP1 with the CORP\User1 account.</span></span>
+1. <span data-ttu-id="9e695-127">À partir du [portail Azure](https://portal.azure.com), connectez-vous à APP1 avec le compte CORP\\Utilisateur1.</span><span class="sxs-lookup"><span data-stu-id="9e695-127">From the [Azure portalhttps://portal.azure.com](https://portal.azure.com), connect to APP1 with the CORP\User1 account.</span></span>
     
-2. <span data-ttu-id="06c1d-128">À partir d’APP1, ouvrez une invite de commande Windows PowerShell de niveau administrateur, puis exécutez les commandes suivantes :</span><span class="sxs-lookup"><span data-stu-id="06c1d-128">From APP1, open an administrator-level Windows PowerShell command prompt, and then run these commands:</span></span>
+2. <span data-ttu-id="9e695-128">À partir d’APP1, ouvrez une invite de commande Windows PowerShell de niveau administrateur, puis exécutez les commandes suivantes :</span><span class="sxs-lookup"><span data-stu-id="9e695-128">From APP1, open an administrator-level Windows PowerShell command prompt, and then run these commands:</span></span>
     
   ```
   Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Active Setup\Installed Components\{A509B1A7-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
@@ -71,62 +72,62 @@ Stop-Process -Name Explorer -Force
 
   ```
 
-3. <span data-ttu-id="06c1d-129">Dans la barre des tâches, cliquez sur **Internet Explorer** et accédez à [https://aka.ms/aadconnect](https://aka.ms/aadconnect).</span><span class="sxs-lookup"><span data-stu-id="06c1d-129">From the task bar, click **Internet Explorer** and go to [https://aka.ms/aadconnect](https://aka.ms/aadconnect).</span></span>
+3. <span data-ttu-id="9e695-129">Dans la barre des tâches, cliquez sur **Internet Explorer** et accédez à [https://aka.ms/aadconnect](https://aka.ms/aadconnect).</span><span class="sxs-lookup"><span data-stu-id="9e695-129">From the task bar, click **Internet Explorer** and go to [https://aka.ms/aadconnect](https://aka.ms/aadconnect).</span></span>
     
-4. <span data-ttu-id="06c1d-130">Sur la page de Microsoft Azure Active Directory Connect, cliquez sur **Télécharger**, puis cliquez sur **Exécuter**.</span><span class="sxs-lookup"><span data-stu-id="06c1d-130">On the Microsoft Azure Active Directory Connect page, click **Download**, and then click **Run**.</span></span>
+4. <span data-ttu-id="9e695-130">Sur la page de Microsoft Azure Active Directory Connect, cliquez sur **Télécharger**, puis cliquez sur **Exécuter**.</span><span class="sxs-lookup"><span data-stu-id="9e695-130">On the Microsoft Azure Active Directory Connect page, click **Download**, and then click **Run**.</span></span>
     
-5. <span data-ttu-id="06c1d-131">Sur la page **Bienvenue dans Azure AD Connect**, cliquez sur **J’accepte**, puis sur **Continuer**.</span><span class="sxs-lookup"><span data-stu-id="06c1d-131">On the **Welcome to Azure AD Connect** page, click **I agree**, and then click **Continue.**</span></span>
+5. <span data-ttu-id="9e695-131">Sur la page **Bienvenue dans Azure AD Connect**, cliquez sur **J’accepte**, puis sur **Continuer**.</span><span class="sxs-lookup"><span data-stu-id="9e695-131">On the **Welcome to Azure AD Connect** page, click **I agree**, and then click **Continue.**</span></span>
     
-6. <span data-ttu-id="06c1d-132">Sur la page **Configuration rapide**, cliquez sur **Utiliser la configuration rapide**.</span><span class="sxs-lookup"><span data-stu-id="06c1d-132">On the **Express Settings** page, click  **Use express settings**.</span></span>
+6. <span data-ttu-id="9e695-132">Sur la page **Configuration rapide**, cliquez sur **Utiliser la configuration rapide**.</span><span class="sxs-lookup"><span data-stu-id="9e695-132">On the **Express Settings** page, click  **Use express settings**.</span></span>
     
-7. <span data-ttu-id="06c1d-133">Sur la page **Connexion à Azure AD**, saisissez le nom de votre compte d’administrateur général sous **Nom d’utilisateur** et le mot de passe correspondant sous **Mot de passe**, puis cliquez sur **Suivant**.</span><span class="sxs-lookup"><span data-stu-id="06c1d-133">On the **Connect to Azure AD** page, type your global administrator account name in **Username,** type its password in **Password**, and then click **Next**.</span></span>
+7. <span data-ttu-id="9e695-133">Sur la page **Connexion à Azure AD**, saisissez le nom de votre compte d’administrateur général sous **Nom d’utilisateur** et le mot de passe correspondant sous **Mot de passe**, puis cliquez sur **Suivant**.</span><span class="sxs-lookup"><span data-stu-id="9e695-133">On the **Connect to Azure AD** page, type your global administrator account name in **Username,** type its password in **Password**, and then click **Next**.</span></span>
     
-8. <span data-ttu-id="06c1d-134">Sur la page **Connexion à AD DS**, saisissez **CORP\\Utilisateur** sous **Nom d’utilisateur,** entrez le mot de passe correspondant sous **Mot de passe**, puis cliquez sur **Suivant**.</span><span class="sxs-lookup"><span data-stu-id="06c1d-134">On the Connect to AD DS page, type CORP\User1 in Username, type its password in Password, and then click Next.</span></span>
+8. <span data-ttu-id="9e695-134">Sur la page **Connexion à AD DS**, saisissez **CORP\\Utilisateur** sous **Nom d’utilisateur,** entrez le mot de passe correspondant sous **Mot de passe**, puis cliquez sur **Suivant**.</span><span class="sxs-lookup"><span data-stu-id="9e695-134">On the Connect to AD DS page, type CORP\User1 in Username, type its password in Password, and then click Next.</span></span>
     
-9. <span data-ttu-id="06c1d-135">Sur la page **Configuration de la connexion à Azure AD**, cliquez sur **Continuer sans aucun domaine vérifié**, puis cliquez sur **Suivant**.</span><span class="sxs-lookup"><span data-stu-id="06c1d-135">On the **Azure AD sign-in configuration** page, click **Continue without any verified domains**, and then click **Next**.</span></span>
+9. <span data-ttu-id="9e695-135">Sur la page **Configuration de la connexion à Azure AD**, cliquez sur **Continuer sans aucun domaine vérifié**, puis cliquez sur **Suivant**.</span><span class="sxs-lookup"><span data-stu-id="9e695-135">On the **Azure AD sign-in configuration** page, click **Continue without any verified domains**, and then click **Next**.</span></span>
     
-10. <span data-ttu-id="06c1d-136">Sur la page **Prêt à configurer**, cliquez sur **Installer**.</span><span class="sxs-lookup"><span data-stu-id="06c1d-136">On the **Ready to configure** page, click **Install**.</span></span>
+10. <span data-ttu-id="9e695-136">Sur la page **Prêt à configurer**, cliquez sur **Installer**.</span><span class="sxs-lookup"><span data-stu-id="9e695-136">On the **Ready to configure** page, click **Install**.</span></span>
     
-11. <span data-ttu-id="06c1d-137">Sur la page **Configuration terminée**, cliquez sur **Quitter**.</span><span class="sxs-lookup"><span data-stu-id="06c1d-137">On the **Configuration complete** page, click **Exit**.</span></span>
+11. <span data-ttu-id="9e695-137">Sur la page **Configuration terminée**, cliquez sur **Quitter**.</span><span class="sxs-lookup"><span data-stu-id="9e695-137">On the **Configuration complete** page, click **Exit**.</span></span>
     
-12. <span data-ttu-id="06c1d-138">Dans Internet Explorer, accédez au portail Office 365 ([https://portal.office.com](https://portal.office.com)) et connectez-vous à votre abonnement d’évaluation Office 365 avec votre compte d’administrateur général.</span><span class="sxs-lookup"><span data-stu-id="06c1d-138">In Internet Explorer, go to the Office 365 portal ( https://portal.office.com https://portal.office.com ) and sign in to your Office 365 trial subscription with your global administrator account.</span></span>
+12. <span data-ttu-id="9e695-138">Dans Internet Explorer, accédez au portail Office 365 ([https://portal.office.com](https://portal.office.com)) et connectez-vous à votre abonnement d’évaluation Office 365 avec votre compte d’administrateur général.</span><span class="sxs-lookup"><span data-stu-id="9e695-138">In Internet Explorer, go to the Office 365 portal ( https://portal.office.com https://portal.office.com ) and sign in to your Office 365 trial subscription with your global administrator account.</span></span>
     
-13. <span data-ttu-id="06c1d-139">Sur la page principale du portail, cliquez sur **Administrateur**.</span><span class="sxs-lookup"><span data-stu-id="06c1d-139">From the main portal page, click **Admin**.</span></span>
+13. <span data-ttu-id="9e695-139">Sur la page principale du portail, cliquez sur **Administrateur**.</span><span class="sxs-lookup"><span data-stu-id="9e695-139">From the main portal page, click **Admin**.</span></span>
     
-14. <span data-ttu-id="06c1d-140">Dans la navigation de gauche, cliquez sur **Utilisateurs > Utilisateurs actifs**.</span><span class="sxs-lookup"><span data-stu-id="06c1d-140">In the left navigation, click **Users > Active users**.</span></span>
+14. <span data-ttu-id="9e695-140">Dans la navigation de gauche, cliquez sur **Utilisateurs > Utilisateurs actifs**.</span><span class="sxs-lookup"><span data-stu-id="9e695-140">In the left navigation, click **Users > Active users**.</span></span>
     
-    <span data-ttu-id="06c1d-p105">Notez le compte nommé **Utilisateur1**. Ce compte provient du domaine CORP Windows Server AD et prouve que la synchronisation d’annuaires a fonctionné.</span><span class="sxs-lookup"><span data-stu-id="06c1d-p105">Note the account named **User1**. This account is from the CORP Windows Server AD domain and is proof that DirSync has worked.</span></span>
+    <span data-ttu-id="9e695-p105">Notez le compte nommé **Utilisateur1**. Ce compte provient du domaine CORP Windows Server AD et prouve que la synchronisation d’annuaires a fonctionné.</span><span class="sxs-lookup"><span data-stu-id="9e695-p105">Note the account named **User1**. This account is from the CORP Windows Server AD domain and is proof that DirSync has worked.</span></span>
     
-15. <span data-ttu-id="06c1d-p106">Cliquez sur le compte **Utilisateur1**. Pour les licences de produits, cliquez sur **Modifier**.</span><span class="sxs-lookup"><span data-stu-id="06c1d-p106">Click the **User1** account. For product licenses, click **Edit**.</span></span>
+15. <span data-ttu-id="9e695-p106">Cliquez sur le compte **Utilisateur1**. Pour les licences de produits, cliquez sur **Modifier**.</span><span class="sxs-lookup"><span data-stu-id="9e695-p106">Click the **User1** account. For product licenses, click **Edit**.</span></span>
     
-16. <span data-ttu-id="06c1d-p107">Dans **Licences de produits**, sélectionnez votre pays, puis cliquez sur le contrôle **Inactif** pour **Office 365 Entreprise E5** (en le définissant sur **Actif**). Cliquez sur **Enregistrer** en bas de la page, puis cliquez sur **Fermer**.</span><span class="sxs-lookup"><span data-stu-id="06c1d-p107">In **Product licenses**, select your country, and then click the **Off** control for **Office 365 Enterprise E5** (switching it to **On**). Click **Save** at the bottom of the page, and then click **Close**.</span></span>
+16. <span data-ttu-id="9e695-p107">Dans **Licences de produits**, sélectionnez votre pays, puis cliquez sur le contrôle **Inactif** pour **Office 365 Entreprise E5** (en le définissant sur **Actif**). Cliquez sur **Enregistrer** en bas de la page, puis cliquez sur **Fermer**.</span><span class="sxs-lookup"><span data-stu-id="9e695-p107">In **Product licenses**, select your country, and then click the **Off** control for **Office 365 Enterprise E5** (switching it to **On**). Click **Save** at the bottom of the page, and then click **Close**.</span></span>
     
-<span data-ttu-id="06c1d-147">Voici la configuration obtenue.</span><span class="sxs-lookup"><span data-stu-id="06c1d-147">This is the resulting configuration.</span></span>
+<span data-ttu-id="9e695-147">Voici la configuration obtenue.</span><span class="sxs-lookup"><span data-stu-id="9e695-147">This is the resulting configuration.</span></span>
   
 ![Environnement de développement/test Office 365 avec la synchronisation d’annuaires](images/be5b37b0-f832-4878-b153-436c31546e21.png)
   
-<span data-ttu-id="06c1d-149">Cette configuration se compose des éléments suivants : </span><span class="sxs-lookup"><span data-stu-id="06c1d-149">This configuration consists of:</span></span> 
+<span data-ttu-id="9e695-149">Cette configuration se compose des éléments suivants : </span><span class="sxs-lookup"><span data-stu-id="9e695-149">This configuration consists of:</span></span> 
   
-- <span data-ttu-id="06c1d-150">un abonnement d’évaluation Office 365 E5.</span><span class="sxs-lookup"><span data-stu-id="06c1d-150">An Office 365 E5 Trial Subscription.</span></span>
-- <span data-ttu-id="06c1d-p108">Un intranet d’organisation simplifié connecté à Internet, qui se compose des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure. Azure AD Connect s’exécute sur APP1 pour synchroniser le domaine CORP Windows Server AD avec Office 365 toutes les 30 minutes.</span><span class="sxs-lookup"><span data-stu-id="06c1d-p108">A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. Azure AD Connect runs on APP1 to synchronize the CORP Windows Server AD domain to Office 365 every 30 minutes.</span></span>
+- <span data-ttu-id="9e695-150">un abonnement d’évaluation Office 365 E5.</span><span class="sxs-lookup"><span data-stu-id="9e695-150">An Office 365 E5 Trial Subscription.</span></span>
+- <span data-ttu-id="9e695-p108">Un intranet d’organisation simplifié connecté à Internet, qui se compose des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure. Azure AD Connect s’exécute sur APP1 pour synchroniser le domaine CORP Windows Server AD avec Office 365 toutes les 30 minutes.</span><span class="sxs-lookup"><span data-stu-id="9e695-p108">A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. Azure AD Connect runs on APP1 to synchronize the CORP Windows Server AD domain to Office 365 every 30 minutes.</span></span>
     
-## <a name="next-step"></a><span data-ttu-id="06c1d-153">Étape suivante</span><span class="sxs-lookup"><span data-stu-id="06c1d-153">Next step</span></span>
+## <a name="next-step"></a><span data-ttu-id="9e695-153">Étape suivante</span><span class="sxs-lookup"><span data-stu-id="9e695-153">Next Step</span></span>
 
-<span data-ttu-id="06c1d-154">Lorsque vous êtes prêt à déployer la synchronisation d’annuaires pour votre organisation, consultez la rubrique [Déploiement de la synchronisation d’annuaires Office 365 dans Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).</span><span class="sxs-lookup"><span data-stu-id="06c1d-154">When you are ready to deploy directory synchronization for your organization, see [Deploy Office 365 directory synchronization in Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).</span></span>
+<span data-ttu-id="9e695-154">Lorsque vous êtes prêt à déployer la synchronisation d’annuaires pour votre organisation, consultez la rubrique [Déploiement de la synchronisation d’annuaires Office 365 dans Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).</span><span class="sxs-lookup"><span data-stu-id="9e695-154">When you are ready to deploy directory synchronization for your organization, see [Deploy Office 365 directory synchronization in Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="06c1d-155">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="06c1d-155">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9e695-155">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="9e695-155">See Also</span></span>
 
-<span data-ttu-id="06c1d-156">[Guides de laboratoire de test d’adoption cloud](cloud-adoption-test-lab-guides-tlgs.md)
-[Environnement de développement/test de configuration de base](base-configuration-dev-test-environment.md)
-[Environnement de développement/test Office 365](office-365-dev-test-environment.md)
-[Sécurité des applications cloud pour votre environnement de développement/test Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
-[Protection avancée contre les menaces pour votre environnement de développement/test Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
-[Adoption de Cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.md)</span><span class="sxs-lookup"><span data-stu-id="06c1d-156">[Cloud adoption Test Lab Guides (TLGs)](cloud-adoption-test-lab-guides-tlgs.md)
-[Base Configuration dev/test environment](base-configuration-dev-test-environment.md)
-[Office 365 dev/test environment](office-365-dev-test-environment.md)
-[Cloud App Security for your Office 365 dev/test environment](cloud-app-security-for-your-office-365-dev-test-environment.md)
-[Advanced Threat Protection for your Office 365 dev/test environment](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
-[Cloud adoption and hybrid solutions](cloud-adoption-and-hybrid-solutions.md)</span></span>
+[<span data-ttu-id="9e695-156">Guides de laboratoire de test d’adoption cloud</span><span class="sxs-lookup"><span data-stu-id="9e695-156">Cloud adoption Test Lab Guides (TLGs)</span></span>](cloud-adoption-test-lab-guides-tlgs.md)
+
+[<span data-ttu-id="9e695-157">Environnement de développement/test de configuration de base</span><span class="sxs-lookup"><span data-stu-id="9e695-157">Base Configuration dev/test environment</span></span>](base-configuration-dev-test-environment.md)
+
+[<span data-ttu-id="9e695-158">Environnement de développement/test Office 365</span><span class="sxs-lookup"><span data-stu-id="9e695-158">Office 365 dev/test environment</span></span>](office-365-dev-test-environment.md)
+
+[<span data-ttu-id="9e695-159">Sécurité des applications cloud pour votre environnement de développement/test Office 365</span><span class="sxs-lookup"><span data-stu-id="9e695-159">Cloud App Security for your Office 365 dev/test environment</span></span>](cloud-app-security-for-your-office-365-dev-test-environment.md)
+
+[<span data-ttu-id="9e695-160">Protection avancée contre les menaces pour votre environnement de développement/test Office 365</span><span class="sxs-lookup"><span data-stu-id="9e695-160">Advanced Threat Protection for your Office 365 dev/test environment</span></span>](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+
+[<span data-ttu-id="9e695-161">Adoption du cloud et solutions hybrides</span><span class="sxs-lookup"><span data-stu-id="9e695-161">Cloud adoption and hybrid solutions</span></span>](cloud-adoption-and-hybrid-solutions.md)
 
 
 

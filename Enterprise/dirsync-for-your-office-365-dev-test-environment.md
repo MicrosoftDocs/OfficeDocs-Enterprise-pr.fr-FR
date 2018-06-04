@@ -3,7 +3,7 @@ title: Synchronisation d’annuaires pour votre environnement de développement/
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/04/2018
+ms.date: 05/18/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,11 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: 'Résumé : Configurez la synchronisation d’annuaires pour votre environnement de développement/test Office 365.'
-ms.openlocfilehash: 209b41e4d695a753867d989b8f27b96618a81303
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: d1c48bcf4018088b527c3f85f8923413f9ffd268
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "19193534"
 ---
 # <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Synchronisation d’annuaires pour votre environnement de développement/test Office 365
 
@@ -117,11 +118,16 @@ Lorsque vous êtes prêt à déployer la synchronisation d’annuaires pour votr
 ## <a name="see-also"></a>Voir aussi
 
 [Guides de laboratoire de test d’adoption cloud](cloud-adoption-test-lab-guides-tlgs.md)
+
 [Environnement de développement/test de configuration de base](base-configuration-dev-test-environment.md)
-[Environnement de développement/test Office 365](office-365-dev-test-environment.md)
-[Sécurité des applications cloud pour votre environnement de développement/test Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
+
+[Environnement de développement/test Office 365](office-365-dev-test-environment.md)
+
+[Sécurité des applications cloud pour votre environnement de développement/test Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
+
 [Protection avancée contre les menaces pour votre environnement de développement/test Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
-[Adoption de Cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.md)
+
+[Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.md)
 
 
 

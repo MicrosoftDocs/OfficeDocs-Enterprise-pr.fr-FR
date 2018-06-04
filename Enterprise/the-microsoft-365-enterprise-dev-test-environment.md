@@ -15,11 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 'Résumé : Utilisez ce guide de laboratoire de test pour créer un environnement de développement/test qui comprend Office 365 E5, Enterprise Mobility + Security (EMS) E5 et un ordinateur exécutant Windows 10 Entreprise.'
-ms.openlocfilehash: 5a4c23b3bde309a75a61e574e91823ecdd4629fe
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 03fa8e0a4e8d90fcb834eeb2491d3dd39b67ff05
+ms.sourcegitcommit: 771f227d3049498fcbd7cfbeaf649e3d77e73c86
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "19178646"
 ---
 # <a name="the-microsoft-365-enterprise-devtest-environment"></a>Environnement de développement/test Microsoft 365 Entreprise
 
@@ -92,7 +93,7 @@ Créez une machine virtuelle à l’aide de l’hyperviseur de votre choix et in
   
 ### <a name="virtual-machine-in-azure"></a>Machine virtuelle dans Azure
 
-Pour créer une machine virtuelle exécutant Windows 10 dans Microsoft Azure, ***vous devez disposer d’un abonnement Visual Studio*** qui vous permet d’accéder à l’image pour Windows 10 Entreprise. D’autres types d’abonnements Azure, tels que les abonnements d’évaluation et payants, ne permettent pas d’accéder à cette image.
+Pour créer une machine virtuelle exécutant Windows 10 dans Microsoft Azure, ***vous devez disposer d’un abonnement Visual Studio*** qui vous permet d’accéder à l’image pour Windows 10 Entreprise. D’autres types d’abonnements Azure, tels que les abonnements d’évaluation et payants, ne permettent pas d’accéder à cette image. Pour obtenir les informations les plus récentes, reportez-vous à l’article [Utilisation d’un client Windows dans Azure pour les scénarios de développement et/ou test](https://docs.microsoft.com/azure/virtual-machines/windows/client-images).
   
 > [!NOTE]
 > Les ensembles de commandes suivants utilisent la dernière version d’Azure PowerShell. Reportez-vous à l’article relatif à la [prise en main des cmdlets Azure PowerShell](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). Ces ensembles de commandes créent une machine virtuelle Windows 10 Entreprise nommée WIN10 ainsi que l’intégralité de son infrastructure requise, y compris un groupe de ressources, un compte de stockage et un réseau virtuel. Si vous connaissez déjà les services d’infrastructure Azure, adaptez ces instructions à votre infrastructure actuellement déployée. 
@@ -174,9 +175,9 @@ Ensuite, associez l’ordinateur WIN10 au client Azure AD de vos abonnements�
     
 6. Fermez la fenêtre Paramètres.
     
-Ensuite, installez Office 2016 sur l’ordinateur WIN10.
+Ensuite, installez Office 365 ProPlus sur l’ordinateur WIN10.
   
-1. Ouvrez le navigateur Microsoft Edge et connectez-vous au portail Office 365 à l’aide de vos informations d’identification de compte Administrateur général. Pour obtenir de l’aide, reportez-vous à [Se connecter à Office ou à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Ouvrez le navigateur Microsoft Edge et connectez-vous au portail Office 365 à l’aide de vos informations d’identification de compte Administrateur général. Pour obtenir de l’aide, reportez-vous à l’article [Se connecter à Office ou à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Dans l’onglet **Accueil Microsoft Office**, cliquez sur **Installer Office 2016**.
     
@@ -184,9 +185,13 @@ Ensuite, installez Office 2016 sur l’ordinateur WIN10.
     
 4. Attendez qu’Office termine l’installation. Lorsque le message **Vous voilà prêt !** s’affiche, cliquez deux fois sur **Fermer**.
     
-La figure 3 illustre l’environnement obtenu, avec l’ordinateur WIN10 associé au client Azure AD de vos abonnements Office 365 et EMS.
+La figure 3 indique l’environnement obtenu, incluant l’ordinateur WIN10 qui a :
+
+- rejoint le client Azure AD de vos abonnements Office 365 et EMS ;
+- été inscrit en tant que périphérique Azure AD dans Intune (EMS) ;
+- installé Office 365 ProPlus.
   
-**Figure 3 : Ajout du compte de l’ordinateur WIN10 au client Azure AD**
+**Figure 3 : configuration finale de l’environnement de développement/test Microsoft 365**
 
 ![Phase 4 de l’environnement de développement/test Microsoft 365 Entreprise](images/20680f6a-f77e-4333-aaa9-f7cf5e4b0d03.png)
   
@@ -206,7 +211,7 @@ Ces articles supplémentaires vous feront découvrir les fonctionnalités de Mic
     
 ## <a name="see-also"></a>Voir aussi
 
-- [Documentation de Microsoft 365 Entreprise](https://docs.microsoft.com/microsoft-365-enterprise/)
+- [Documentation de Microsoft 365 Entreprise](https://docs.microsoft.com/microsoft-365-enterprise/)
 - [Déployer Microsoft 365 Entreprise](https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise)
 - [Environnement de développement/test Microsoft Cloud unique](the-one-microsoft-cloud-dev-test-environment.md)
 - [Guides de laboratoire de test d’adoption cloud](cloud-adoption-test-lab-guides-tlgs.md)

@@ -1,5 +1,5 @@
 ---
-title: "Architecture des scénarios de cloud hybride Microsoft"
+title: Architecture des scénarios de cloud hybride Microsoft
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,11 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 06d8c959-39e5-4150-b1ae-aaf0eee4c058
 description: "Résumé : Comprendre l'architecture d'offres de cloud hybride Microsoft."
-ms.openlocfilehash: 33d98d88a10b18cdd357250f46c5414f1c1b6a75
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
-ms.translationtype: HT
+ms.openlocfilehash: bb5f72ee8fe6f1d5ffd81822edbf0e9f931b70dd
+ms.sourcegitcommit: b2058b34196022668eac15e723962fefd82d6774
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "19631385"
 ---
 # <a name="architecture-of-microsoft-hybrid-cloud-scenarios"></a>Architecture des scénarios de cloud hybride Microsoft
 
@@ -38,7 +39,7 @@ La couche d’applications et de scénarios contient les scénarios de cloud hyb
     
 - Réseau
     
-    Il existe deux options pour la connectivité aux plateformes et services cloud Microsoft : votre canal Internet existant et ExpressRoute. Utilisez une connexion ExpressRoute si des performances prévisibles sont importantes. Vous pouvez utiliser une connexion ExpressRoute pour vous connecter directement aux services SaaS de Microsoft (Office 365 et Dynamics 365), aux services PaaS Azure et aux services SaaS Azure.
+    Il existe deux possibilités pour la connectivité à plateformes en nuage de Microsoft et des services : les ExpressRoute canal Internet existant. Utiliser une connexion ExpressRoute si des performances prévisibles sont important. Vous pouvez utiliser une connexion ExpressRoute pour vous connecter directement à des services Azure IaaS, PaaS Azure services et services Microsoft SaaS (Office 365 et Dynamics 365).
     
 - Identité
     
@@ -66,7 +67,8 @@ De nombreuses entreprises, y compris celles détenues par Microsoft, utilisent u
   
 [Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs](https://sway.com/FJ2xsyWtkJc2taRD)
+[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs (en anglais)](https://sway.com/FJ2xsyWtkJc2taRD)
+
 
 
 

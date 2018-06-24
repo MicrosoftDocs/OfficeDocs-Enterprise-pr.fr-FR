@@ -3,7 +3,6 @@ title: Ressources communautaires pour Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -12,27 +11,28 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: ebe0f5ff-fd17-487f-bbb6-271b5ea270bb
 description: Résumé :Obtenez de l'aide pour Office 365 PowerShell sur les sites communautaires ci-dessous.
-ms.openlocfilehash: 9348c824e34baba4d4d1a12da7910fc3cfe81a30
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
-ms.translationtype: HT
+ms.openlocfilehash: 9b98345db6db9b5070d738170258de6d7fff10ea
+ms.sourcegitcommit: fe406eacd92dd5b3bd8c127b7bd8f2d0ef216404
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "20017390"
 ---
 # <a name="office-365-powershell-community-resources"></a>Ressources communautaires pour Office 365 PowerShell
 
  **Résumé :** Obtenez de l'aide pour Office 365 PowerShell sur les sites communautaires ci-dessous.
   
-Utilisez les réseaux Yammer, les forums communautaires et les sites Wiki pour entrer en contact avec les autres utilisateurs et recevoir des réponses rapides et fiables à vos questions sur Office 365 PowerShell. 
+Utilisez ces Wikis et les forums de la Communauté pour obtenir le vous êtes connecté à vos homologues ainsi que vos questions d’Office 365 PowerShell rapidement et correctement. 
   
-- [Groupe PowerShell pour Office 365 du réseau Yammer Office 365](https://www.yammer.com/itpronetwork/#/threads/inGroup?type=in_group&amp;feedId=4632269)
+- [Visitez le site de la Communauté technique Office 365](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
     
-- [Forum communautaire sur la gestion d'Office 365](https://community.office365.com/fr-FR/f/148.aspx)
+- [Communauté technique Office 365](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
     
 - [Forum communautaire du TechCenter Exchange](https://social.technet.microsoft.com/Forums/exchange/en-US/home?forum=exchangesvrgeneral)
     
 - [Blogs Office](https://blogs.office.com/)
     
-- [Site Wiki dédié à la gestion d'Office 365](https://community.office365.com/fr-FR/w/manage/default.aspx)
+- [Site Wiki dédié à la gestion d'Office 365](https://community.office365.com/en-us/w/manage/default.aspx)
     
 ## <a name="see-also"></a>Voir aussi
 

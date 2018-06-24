@@ -3,7 +3,6 @@ title: Ressources communautaires pour Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -12,33 +11,34 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: ebe0f5ff-fd17-487f-bbb6-271b5ea270bb
 description: Résumé :Obtenez de l'aide pour Office 365 PowerShell sur les sites communautaires ci-dessous.
-ms.openlocfilehash: 9348c824e34baba4d4d1a12da7910fc3cfe81a30
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
-ms.translationtype: HT
+ms.openlocfilehash: 9b98345db6db9b5070d738170258de6d7fff10ea
+ms.sourcegitcommit: fe406eacd92dd5b3bd8c127b7bd8f2d0ef216404
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "20017390"
 ---
-# <a name="office-365-powershell-community-resources"></a><span data-ttu-id="8f775-103">Ressources communautaires pour Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="8f775-103">Office 365 PowerShell community resources</span></span>
+# <a name="office-365-powershell-community-resources"></a><span data-ttu-id="1331c-103">Ressources communautaires pour Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="1331c-103">Office 365 PowerShell community resources</span></span>
 
- <span data-ttu-id="8f775-104">**Résumé :** Obtenez de l'aide pour Office 365 PowerShell sur les sites communautaires ci-dessous.</span><span class="sxs-lookup"><span data-stu-id="8f775-104">**Summary:** Get help for Office 365 PowerShell from these community venues.</span></span>
+ <span data-ttu-id="1331c-104">**Résumé :** Obtenez de l'aide pour Office 365 PowerShell sur les sites communautaires ci-dessous.</span><span class="sxs-lookup"><span data-stu-id="1331c-104">**Summary:** Get help for Office 365 PowerShell from these community venues.</span></span>
   
-<span data-ttu-id="8f775-105">Utilisez les réseaux Yammer, les forums communautaires et les sites Wiki pour entrer en contact avec les autres utilisateurs et recevoir des réponses rapides et fiables à vos questions sur Office 365 PowerShell.</span><span class="sxs-lookup"><span data-stu-id="8f775-105">Use these Yammer networks, community forums, and Wikis to get you connected to your peers and get your Office 365 PowerShell questions answered quickly and correctly.</span></span> 
+<span data-ttu-id="1331c-105">Utilisez ces Wikis et les forums de la Communauté pour obtenir le vous êtes connecté à vos homologues ainsi que vos questions d’Office 365 PowerShell rapidement et correctement.</span><span class="sxs-lookup"><span data-stu-id="1331c-105">Use these community forums and Wikis to get you connected to your peers and get your Office 365 PowerShell questions answered quickly and correctly.</span></span> 
   
-- [<span data-ttu-id="8f775-106">Groupe PowerShell pour Office 365 du réseau Yammer Office 365</span><span class="sxs-lookup"><span data-stu-id="8f775-106">PowerShell for Office 365 group of the Office 365 Yammer Network</span></span>](https://www.yammer.com/itpronetwork/#/threads/inGroup?type=in_group&amp;feedId=4632269)
+- [<span data-ttu-id="1331c-106">Visitez le site de la Communauté technique Office 365</span><span class="sxs-lookup"><span data-stu-id="1331c-106">Visit the Office 365 Tech Community</span></span>](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
     
-- [<span data-ttu-id="8f775-107">Forum communautaire sur la gestion d'Office 365</span><span class="sxs-lookup"><span data-stu-id="8f775-107">Manage Office 365 community forum</span></span>](https://community.office365.com/fr-FR/f/148.aspx)
+- [<span data-ttu-id="1331c-107">Communauté technique Office 365</span><span class="sxs-lookup"><span data-stu-id="1331c-107">Office 365 technical community</span></span>](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
     
-- [<span data-ttu-id="8f775-108">Forum communautaire du TechCenter Exchange</span><span class="sxs-lookup"><span data-stu-id="8f775-108">Exchange TechCenter community forum</span></span>](https://social.technet.microsoft.com/Forums/exchange/en-US/home?forum=exchangesvrgeneral)
+- [<span data-ttu-id="1331c-108">Forum communautaire du TechCenter Exchange</span><span class="sxs-lookup"><span data-stu-id="1331c-108">Exchange TechCenter community forum</span></span>](https://social.technet.microsoft.com/Forums/exchange/en-US/home?forum=exchangesvrgeneral)
     
-- [<span data-ttu-id="8f775-109">Blogs Office</span><span class="sxs-lookup"><span data-stu-id="8f775-109">Office Blogs</span></span>](https://blogs.office.com/)
+- [<span data-ttu-id="1331c-109">Blogs Office</span><span class="sxs-lookup"><span data-stu-id="1331c-109">Office Blogs</span></span>](https://blogs.office.com/)
     
-- [<span data-ttu-id="8f775-110">Site Wiki dédié à la gestion d'Office 365</span><span class="sxs-lookup"><span data-stu-id="8f775-110">Manage Office 365 Wiki</span></span>](https://community.office365.com/fr-FR/w/manage/default.aspx)
+- [<span data-ttu-id="1331c-110">Site Wiki dédié à la gestion d'Office 365</span><span class="sxs-lookup"><span data-stu-id="1331c-110">Manage Office 365 Wiki</span></span>](https://community.office365.com/en-us/w/manage/default.aspx)
     
-## <a name="see-also"></a><span data-ttu-id="8f775-111">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="8f775-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1331c-111">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="1331c-111">See also</span></span>
 
 #### 
 
-[<span data-ttu-id="8f775-112">Gérer Office 365 avec Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="8f775-112">Manage Office 365 with Office 365 PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
+[<span data-ttu-id="1331c-112">Gérer Office 365 avec Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="1331c-112">Manage Office 365 with Office 365 PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
   
-[<span data-ttu-id="8f775-113">Mise en route d'Office 365 Powershell</span><span class="sxs-lookup"><span data-stu-id="8f775-113">Getting started with Office 365 PowerShell</span></span>](getting-started-with-office-365-powershell.md)
+[<span data-ttu-id="1331c-113">Mise en route d'Office 365 Powershell</span><span class="sxs-lookup"><span data-stu-id="1331c-113">Getting started with Office 365 PowerShell</span></span>](getting-started-with-office-365-powershell.md)
 

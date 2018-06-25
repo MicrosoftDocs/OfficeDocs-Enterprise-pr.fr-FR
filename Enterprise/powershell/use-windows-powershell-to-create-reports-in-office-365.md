@@ -3,7 +3,7 @@ title: Utilisez Windows PowerShell pour créer des rapports dans Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 06/22/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -12,11 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: "Résumé : Utilisez Office 365 PowerShell pour créer des rapports que vous ne pouvez pas produire dans le centre d'administration Office 365."
-ms.openlocfilehash: 09db143c027af987cf86036c4f5fd6bca009afe4
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: 381a07d48db777a335e24baa32a65e992a78dfa2
+ms.sourcegitcommit: fe406eacd92dd5b3bd8c127b7bd8f2d0ef216404
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "20017420"
 ---
 # <a name="use-windows-powershell-to-create-reports-in-office-365"></a>Utilisez Windows PowerShell pour créer des rapports dans Office 365
 
@@ -68,5 +69,3 @@ Les articles suivants expliquent comment utiliser Office 365 PowerShell pour obt
   
 [Gérer les comptes d'utilisateurs et les licences avec Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Utilisation d'Excel pour récupérer des données de création de rapports Office 365](using-excel-to-retrieve-office-365-reporting-data.md)
-

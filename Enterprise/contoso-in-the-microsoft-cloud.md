@@ -15,11 +15,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c4a6d625-4938-42cc-87e1-56b7a13c63ef
 description: 'Résumé : Comment une entreprise internationale fictive mais représentative adopte une infrastructure informatique incluse dans le cloud avec des offres cloud de Microsoft.'
-ms.openlocfilehash: 0a332883fef3291e133998ecd1bbfa53e7282ec0
-ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
+ms.openlocfilehash: d548301fdbd3b26d3de5ea0e279a379b7eea269f
+ms.sourcegitcommit: 9f57825b10f20e3813732372541128ef187d52c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "20161777"
 ---
 # <a name="contoso-in-the-microsoft-cloud"></a>Contoso dans le cloud de Microsoft
 
@@ -29,7 +30,7 @@ Cet article vous renvoie vers plusieurs articles qui décrivent comment la soci�
   
 [![Image miniature de l’affiche de Contoso dans Microsoft Cloud.](images/Contoso_Poster/Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54427)
   
-![Fichier PDF](images/Common_Images/PDFIcon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842085)  | ![Fichier Visio](images/Common_Images/VisioIcon.png)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842086)  | ![Affichage d'une page contenant des versions dans d'autres langues](images/Common_Images/GlobeIcon.png)[Plus de langues](https://www.microsoft.com/download/details.aspx?id=54427)
+[PDF](https://go.microsoft.com/fwlink/p/?linkid=842085)  | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842086)  | [Plus de langues](https://www.microsoft.com/download/details.aspx?id=54427)
   
 Consultez les sections suivantes :
   

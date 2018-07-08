@@ -1,5 +1,5 @@
 ---
-title: Stratégies MAM pour votre environnement de développement/test Microsoft 365 pour entreprises
+title: Stratégies GAM pour votre environnement de développement/test Microsoft 365 Entreprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,13 +12,14 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: 'Résumé : Utilisez ce Guide de laboratoire de Test pour ajouter des stratégies de gestion (MAM) EMS application mobile à votre environnement de développement/test Microsoft 365.'
-ms.openlocfilehash: 1d4ede9b5757d4adce8909586790bcad51f7433f
-ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
+ms.openlocfilehash: 0a5c81665edf06631b8cebc57c9e715c78d3d85e
+ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/16/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "20188152"
 ---
-# <a name="mam-policies-for-your-microsoft-365-enterprise-devtest-environment"></a>Stratégies MAM pour votre environnement de développement/test Microsoft 365 pour entreprises
+# <a name="mam-policies-for-your-microsoft-365-enterprise-devtest-environment"></a>Stratégies GAM pour votre environnement de développement/test Microsoft 365 Entreprise
 
  **Résumé :** Utilisez ce Guide de laboratoire de Test pour ajouter des stratégies de gestion (MAM) EMS application mobile à votre environnement de développement/test Microsoft 365.
   
@@ -46,7 +47,7 @@ Dans cette phase, vous créez et déployez deux stratégies de gestion des appli
     
 6. Dans la **groupe** lame, sélectionnez **Office 365** pour **type de groupe ?**, tapez **gérées les utilisateurs d’appareils iOS** dans **nom**, sélectionnez **assigné** dans le **type d’appartenance**et puis cliquez sur **créer**. 
     
-7. Fermez la lame de **groupe** .
+7. Fermez le volet **Groupe**.
     
 8. Sur le serveur lame **groupes de groupes** , cliquez sur **Ajouter**.
     
@@ -54,41 +55,41 @@ Dans cette phase, vous créez et déployez deux stratégies de gestion des appli
     
 10. Fermez la lame de **groupes de groupes** .
     
-11. Dans la lame **Intune** , dans la liste des **tâches rapides** , cliquez sur **créer une stratégie de conformité**.
+11. Dans le volet **Intune**, dans la liste **Tâches rapides**, cliquez sur **Créer une stratégie de conformité**.
     
-12. Sur le serveur lame **Profils de stratégie de conformité** , cliquez sur **Créer une stratégie**.
+12. Dans le volet **Profils de stratégie de conformité**, cliquez sur **Créer une stratégie**.
     
-13. Sur le serveur lame **Créer une stratégie** , dans **nom**, tapez **iOS**. Dans la **plateforme**, sélectionnez **iOS**, cliquez sur **OK** dans la **stratégie de conformité iOS** lame, puis cliquez sur **créer**.
+13. Dans le volet **Créer une stratégie**, dans **Nom**, tapez **iOS**. Dans **Plateforme**, sélectionnez **iOS**, cliquez sur **OK** dans le volet **Stratégie de conformité iOS**, puis cliquez sur **Créer**.
     
-14. Sur le serveur lame **Profils de stratégie de conformité** , cliquez sur **Créer une stratégie**.
+14. Dans le volet **Profils de stratégie de conformité**, cliquez sur **Créer une stratégie**.
     
-15. Sur le serveur lame **Créer une stratégie** , dans **nom**, tapez **Android**. Dans la **plateforme**, sélectionnez **Android**, cliquez sur **OK** dans la **stratégie de conformité Android** lame, puis cliquez sur **créer**.
+15. Dans le volet **Créer une stratégie**, dans **Nom**, tapez **Android**. Dans **Plateforme**, sélectionnez **Android**, cliquez sur **OK** dans le volet **Stratégie de conformité Android**, puis cliquez sur **Créer**.
     
-16. Sur le serveur lame **Profils de stratégie de conformité** , cliquez sur le nom de stratégie **Android** .
+16. Dans le volet **Profils de stratégie de conformité**, cliquez sur le nom de la stratégie **Android**.
     
-17. Dans la navigation de gauche de la lame **Android - propriétés** , cliquez sur **les affectations**, puis cliquez sur **Sélectionner des groupes**.
+17. Dans la barre de navigation de gauche du volet **Android - Propriétés**, cliquez sur **Affectations**, puis cliquez sur **Sélectionner des groupes**.
     
-18. Sur le serveur lame **Sélectionnez groupes** , cliquez sur le groupe **d’utilisateurs d’appareils Android géré** , puis cliquez sur **Sélectionner**.
+18. Dans le volet **Sélectionner des groupes**, sélectionnez le groupe **Utilisateurs d’appareils Android partagés**, puis cliquez sur **Sélectionner**.
     
 19. Cliquez sur **Enregistrer**, puis fermez la lame **Android - affectations** .
     
-20. Sur le serveur lame **Profils de stratégie de conformité** , cliquez sur le nom de stratégie **iOS** .
+20. Dans le volet **Profils de stratégie de conformité**, cliquez sur le nom de la stratégie **iOS**.
     
-21. Dans la navigation de gauche de la lame **iOS - propriétés** , cliquez sur **les affectations**, puis cliquez sur **Sélectionner des groupes**.
+21. Dans la barre de navigation de gauche du volet **iOS - Propriétés**, cliquez sur **Affectations**, puis cliquez sur **Sélectionner des groupes**.
     
-22. Sur le serveur lame **Sélectionnez groupes** , cliquez sur le groupe **d’utilisateurs d’appareils iOS géré** , puis cliquez sur **Sélectionner**.
+22. Dans le volet **Sélectionner des groupes**, sélectionnez le groupe **Utilisateurs d’appareils iOS gérés**, puis cliquez sur **Sélectionner**.
     
 23. Cliquez sur **Enregistrer**, puis fermez la lame **iOS - affectations** .
     
-24. Fermez la lame de **Profils de stratégie de conformité** .
+24. Fermez le volet **Profils de stratégie de conformité**.
     
-25. Sur le serveur lame **Intune** , cliquez sur **Gérer les applications** dans le volet de navigation gauche.
+25. Dans le volet **Intune**, cliquez sur **Gérer les applications** dans le volet de navigation de gauche.
     
-26. Sur le serveur lame **Applications Mobile** , cliquez sur **applications**.
+26. Dans le volet **Applications mobiles**, cliquez sur **Applications**.
     
-27. Dans la liste des applications, cliquez sur **PowerPoint**, 
+27. Dans la liste des applications, cliquez sur **PowerPoint**.  
     
-28. Sur le serveur lame **Présentation PowerPoint** , cliquez sur **affectations > sélectionnez Groupes > périphériques iOS gérés > sélectionnez**. Dans **Type**, sélectionnez **disponible**, puis cliquez sur **Enregistrer**.
+28. Dans le volet **Présentation PowerPoint**, cliquez sur **Affectations > Sélectionner des groupes > Appareils iOS gérés > Sélectionner**. Dans **Type**, sélectionnez **Disponible**, puis cliquez sur **Enregistrer**.
     
 29. Répétez l’étape 28 pour les applications suivantes :
     
@@ -114,25 +115,25 @@ Dans cette phase, vous créez et déployez deux stratégies de gestion des appli
     
   - OneNote pour iOS
     
-30. Fermez la lame **Applications Mobile - applications** .
+30. Fermez le volet **Applications mobiles - Applications**.
     
-31. Sur le serveur lame **Applications Mobile** , cliquez sur **Stratégies de Protection des applications**.
+31. Dans le volet **Applications mobiles**, cliquez sur **Stratégies de protection de l’application**.
     
-32. Sur le serveur lame de **Stratégies de Protection des applications** , cliquez sur **Ajouter une stratégie**.
+32. Dans le volet **Stratégies de protection de l’application**, cliquez sur **Ajouter une stratégie**.
     
-33. Sur le serveur lame **Ajouter une stratégie** , tapez **iOS**, puis cliquez sur **Sélectionner les applications nécessaires**.
+33. Dans le volet **Ajouter une stratégie**, tapez **iOS**, puis cliquez sur **Sélectionner les applications requises**.
     
-34. Sur le serveur lame **applications** , cliquez sur **PowerPoint**, **Microsoft Dynamics CRM sur iPhone**, **Excel**, **Microsoft Dynamics CRM sur iPhone**, **Word**, **OneNote**, **Outlook**, puis cliquez sur **Sélectionner**.
+34. Dans le volet **Applications**, cliquez sur **PowerPoint**, **Microsoft Dynamics CRM sur iPhone**, **Excel**, **Microsoft Dynamics CRM sur iPhone**, **Word**, **OneNote** et **Outlook**, puis cliquez sur **Sélectionner**.
     
-35. Sur le serveur lame **Ajouter une stratégie** , cliquez sur **créer**.
+35. Dans le volet **Ajouter une stratégie**, cliquez sur **Créer**.
     
-36. Sur le serveur lame de **Stratégies de Protection des applications** , cliquez sur **Ajouter une stratégie**.
+36. Dans le volet **Stratégies de protection de l’application**, cliquez sur **Ajouter une stratégie**.
     
-37. Sur le serveur lame **Ajouter une stratégie** , tapez **Android**, sélectionnez **Android** de **plateforme**, puis cliquez sur **Sélectionner les applications requises**.
+37. Dans le volet **Ajouter une stratégie**, tapez **Android**, sélectionnez **Android** dans **Plateforme**, puis cliquez sur **Sélectionner les applications requises**.
     
-38. Sur le serveur lame **applications** , cliquez sur **Dynamics CRM pour tablettes**, **PowerPoint**, **Excel**, **Word**, **Outlook**et **Dynamics CRM pour les téléphones**, puis cliquez sur **Sélectionner**.
+38. Dans le volet **Applications**, cliquez sur **PowerPoint**, **Dynamics CRM pour tablettes**, **Excel**, **Word**, **Outlook**, et **Dynamics CRM pour téléphones**, puis cliquez sur **Sélectionner**.
     
-39. Sur le serveur lame **Ajouter une stratégie** , cliquez sur **créer**.
+39. Dans le volet **Ajouter une stratégie**, cliquez sur **Créer**.
     
 Vous avez deux stratégies de gestion des applications mobiles : une pour les appareils iOS et l’autre pour les appareils Android. Vous souhaitez tester les paramètres pour les applications sélectionnées.
   
@@ -143,9 +144,9 @@ Vous avez deux stratégies de gestion des applications mobiles : une pour les a
 
 [Environnement de développement/test Microsoft 365 Entreprise](the-microsoft-365-enterprise-dev-test-environment.md)
   
-[Inscription d’appareils iOS et Android dans votre environnement de développement/test Microsoft Enterprise 365](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
+[Inscription d’appareils iOS et Android dans votre environnement de développement/test Microsoft 365 Entreprise](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
   
-[Guides de laboratoire de test d'adoption cloud](cloud-adoption-test-lab-guides-tlgs.md)
+[Guides de laboratoire de test d’adoption cloud](cloud-adoption-test-lab-guides-tlgs.md)
 
 [Mobilité d’entreprise + sécurité (EMS)](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
 

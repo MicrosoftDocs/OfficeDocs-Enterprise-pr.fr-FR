@@ -1,9 +1,9 @@
 ---
-title: "ExpressRoute pour la connectivité au cloud de Microsoft"
+title: ExpressRoute pour la connectivité au cloud de Microsoft
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 07/03/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -11,12 +11,13 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
-description: "Résumé : Comprendre comment ExpressRoute peut garantir des connexions plus fiables et plus rapides aux services et aux plateformes cloud de Microsoft."
-ms.openlocfilehash: 40cde8753a5e6de6a76a04198fe90d510ee9a315
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: 'Résumé : Comprendre comment ExpressRoute peut garantir des connexions plus fiables et plus rapides aux services et aux plateformes cloud de Microsoft.'
+ms.openlocfilehash: 55ac09e3c3cf65649d24d67ea79e185808d83cdb
+ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "20188112"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>ExpressRoute pour la connectivité au cloud de Microsoft
 
@@ -48,7 +49,7 @@ Voici les chemins d’accès au réseau vers le cloud de Microsoft avec une conn
   
 La figure 2 présente deux chemins d’accès au réseau. Le trafic vers Microsoft Intune utilise le même chemin que le trafic Internet normal. Le trafic vers Office 365, Microsoft Azure et Dynamics  365 circule à travers la connexion ExpressRoute, un chemin d’accès dédié entre le périmètre du réseau local et le périmètre du cloud Microsoft.
   
-Avec une connexion ExpressRoute, vous contrôlez désormais le chemin d’accès au trafic dans son intégralité, de votre périmètre jusqu’au périmètre du cloud de Microsoft, grâce à une relation avec votre fournisseur de services. Cette connexion peut offrir des performances prévisibles et un SLA de disponibilité de 99,9 %.
+Avec une connexion ExpressRoute, vous pouvez désormais ont un contrôle, via une relation avec votre fournisseur de services, sur le chemin d’accès du trafic entière à partir de votre serveur edge Microsoft cloud edge. Cette connexion peut offrir des performances prévisibles et un [SLA de disponibilité 99,95 %](https://azure.microsoft.com/support/legal/sla/expressroute/v1_3/).
   
 Vous pouvez maintenant compter sur un débit et une latence prévisibles, en fonction de la connexion de votre fournisseur de services, pour les services Office 365, Azure et Dynamics 365. Les connexions ExpressRoute à Microsoft Intune ne sont pas prises en charge pour l’instant.
   
@@ -239,7 +240,7 @@ Pour plus d’informations, voir :
     
 - [Planification réseau et optimisation des performances pour Office 365](https://aka.ms/tune)
     
-- [Gestion des performances Office 365](https://mva.microsoft.com/fr-FR/training-courses/office-365-performance-management-8416)
+- [Gestion des performances Office 365](https://mva.microsoft.com/en-US/training-courses/office-365-performance-management-8416)
     
 ## <a name="expressroute-options"></a>Options ExpressRoute
 

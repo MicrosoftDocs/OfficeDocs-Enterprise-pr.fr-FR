@@ -15,11 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 'Résumé : Se connecter à votre organisation Office 365 à l’aide d’Office 365 PowerShell pour effectuer les tâches du centre d’administration à partir de la ligne de commande.'
-ms.openlocfilehash: eac56ae28ab48bb53842725d703bf81fb37d31eb
-ms.sourcegitcommit: def3e311db9322e469753bac59ff03624349b140
+ms.openlocfilehash: b603e019564f85d490dd560bda9967c9bb164d4b
+ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "20319245"
 ---
 # <a name="connect-to-office-365-powershell"></a>Se connecter à Office 365 PowerShell
 
@@ -31,9 +32,9 @@ Office 365 PowerShell vous permet pour gérer vos paramètres de Office 365 à p
 > [!TIP]
 > **Nouveau PowerShell ?** Consultez une [Présentation vidéo de PowerShell](https://support.office.com/en-us/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx), proposée par apprentissage LinkedIn. 
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Durée d’exécution estimée : 5 minutes
+- Durée d'exécution estimée : 5 minutes
     
 - Vous pouvez utiliser les versions de Windows suivantes :
     
@@ -66,15 +67,16 @@ Ces étapes sont nécessaires une seule fois sur votre ordinateur, pas chaque fo
     
 ### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>Étape 2 : Se connecter à Azure AD pour votre abonnement à Office 365
 
-Pour se connecter avec seulement un *nom de compte et mot de passe*:
+Pour vous connecter uniquement avec un *nom de compte et un mot de passe* :
   
 1. Exécutez une invite de commandes Windows PowerShell.
 2. Dans la fenêtre de commande **Windows PowerShell** , exécutez les commandes suivantes :
     
-```
-$UserCredential = Get-Credential
-Connect-MsolService -Credential $UserCredential
-```
+  ```
+  $UserCredential = Get-Credential
+  Connect-MsolService -Credential $UserCredential
+
+  ```
 
 3. Dans la boîte de dialogue **Demande d’informations d’identification Windows PowerShell** , tapez votre bureau Office 365 ou le nom de l’école compte utilisateur et le mot de passe, puis cliquez sur **OK**.
     
@@ -83,21 +85,21 @@ Pour se connecter avec *l’authentification multifacteur (MFA)*:
 1. Exécutez une invite de commandes Windows PowerShell.
 2. Dans la fenêtre de commande **Microsoft Azure Active Directory Module pour Windows PowerShell** , exécutez la commande suivante.
     
-```
-Connect-MsolService
-```
+  ```
+  Connect-MsolService
+  ```
 
 3. Dans la boîte de dialogue **Windows Azure Active Directory PowerShell** , tapez votre bureau Office 365 ou le nom de l’école compte utilisateur et le mot de passe, puis cliquez sur **se connecter**.
     
-4. Suivez les instructions de la boîte de dialogue **Windows Azure Active Directory PowerShell** pour fournir des informations d’authentification supplémentaires, comme un code de vérification et puis cliquez sur **se connecter**.
+4. Suivez les instructions de la boîte de dialogue **Azure Active Directory PowerShell** pour fournir les informations d’authentification supplémentaires, comme un code de vérification, puis cliquez sur **Se connecter**.
     
-### <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
+### <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
 
 Si vous ne recevez des erreurs, vous connecté avec succès. Un test rapide consiste à exécuter une applet de commande Office 365 — par exemple, **Get-MsolUser** — et afficher les résultats.
   
 Si vous recevez des erreurs, vérifiez les conditions requises suivantes :
   
-- **Un problème courant est un mot de passe**. Réexécutez l’étape 3. et attentivement le nom d’utilisateur et le mot de passe que vous entrez.
+- **Un mot de passe incorrect est un problème courant**. Exécutez à nouveau l’étape 3 et portez une attention particulière au nom d’utilisateur et au mot de passe que vous saisissez.
     
 - * *Le Microsoft Azure Active Directory Module pour Windows PowerShell requiert que Microsoft .NET Framework 3.5.* fonctionnalité de x est activée sur votre ordinateur **. Il est probable qu’une version plus récente est installée sur votre ordinateur (par exemple, 4 ou 4.5.* x *), mais à compatibilité descendante compatibilité avec les versions antérieures du .NET Framework peut être activée ou désactivée. Pour plus d’informations, voir les rubriques suivantes :
     
@@ -151,6 +153,7 @@ Pour se connecter à votre abonnement à Office 365 avec un *nom de compte et mo
 ```
 $UserCredential = Get-Credential
 Connect-AzureAD -Credential $UserCredential
+
 ```
 
 Dans la boîte de dialogue **Demande d’informations d’identification Windows PowerShell** , tapez votre bureau Office 365 ou le nom de l’école compte utilisateur et le mot de passe, puis cliquez sur **OK**.
@@ -163,11 +166,11 @@ Connect-AzureAD
 
 Dans la boîte de dialogue **Windows Azure Active Directory PowerShell** , tapez votre bureau Office 365 ou le nom de l’école compte utilisateur et le mot de passe, puis cliquez sur **se connecter**.
     
-Suivez les instructions de la boîte de dialogue **Windows Azure Active Directory PowerShell** pour fournir des informations d’authentification supplémentaires, comme un code de vérification et puis cliquez sur **se connecter**.
+Suivez les instructions de la boîte de dialogue **Azure Active Directory PowerShell** pour fournir les informations d’authentification supplémentaires, comme un code de vérification, puis cliquez sur **Se connecter**.
     
 Une fois connecté, vous pouvez utiliser les nouvelles applets de commande pour [Azure Active Directory PowerShell pour le module de graphique](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory).
   
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>See also
 
 - [Gérer Office 365 avec Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
 - [Mise en route d'Office 365 Powershell](getting-started-with-office-365-powershell.md)

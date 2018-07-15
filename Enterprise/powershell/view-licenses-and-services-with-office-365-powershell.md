@@ -15,36 +15,37 @@ ms.custom:
 - LIL_Placement
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
-description: Explique comment utiliser Office 365 PowerShell pour afficher des informations sur les plans de licence, les services et les licences qui sont disponibles dans votre organisation d’Office 365.
-ms.openlocfilehash: 400af224f7c74d72a173fa4ea45ede4d6057bbf7
-ms.sourcegitcommit: 3b474e0b9f0c12bb02f8439fb42b80c2f4798ce1
+description: Explique comment utiliser Office 365 PowerShell pour afficher des informations sur les plans de licences, les services et les licences sont disponibles dans votre organisation Office 365.
+ms.openlocfilehash: 4ee4a5d0173f97520075f146e50bd234e767cc95
+ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "20319255"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Afficher les licences et les services avec Office 365 PowerShell
 
-**Résumé :** Explique comment utiliser Office 365 PowerShell pour afficher des informations sur les plans de licence, les services et les licences qui sont disponibles dans votre organisation d’Office 365.
+**Résumé :** Explique comment utiliser Office 365 PowerShell pour afficher des informations sur les plans de licences, les services et les licences sont disponibles dans votre organisation Office 365.
   
 Chaque abonnement à Office 365 se compose des éléments suivants :
 
-- **Plans de gestion de licences** Il s’agit également de plans d’aslicense ou de plans d’Office 365. Plans de gestion des licences définissent les services Office 365 qui sont disponibles pour les utilisateurs. Votre abonnement à Office 365 peut contenir plusieurs plans de gestion des licences. Un plan de gestion des licences exemple serait E3 d’entreprise Office 365.
+- **Plans de gestion des licences** Il s’agit également aslicense plans ou plans Office 365. Plans de licence définissent les services Office 365 qui sont accessibles aux utilisateurs. Votre abonnement Office 365 peut contenir plusieurs plans de gestion des licences. Un plan de gestion des licences exemple serait Office 365 entreprise E3.
     
-- **Services** Ce sont également les plans asservice connus. Les services sont les produits Office 365, les fonctionnalités et les fonctionnalités qui sont disponibles dans chaque plan de gestion des licences, par exemple, Exchange Online et Office Professionnel Plus. Les utilisateurs peuvent avoir plusieurs licences de différents plans de gestion des licences qui accordent l’accès à des services différents.
+- **Services** Il s’agit également plans asservice connus. Les services sont les produits Office 365, les fonctionnalités et les capacités qui sont disponibles dans chaque plan de gestion des licences, par exemple, Exchange Online et Office Professionnel Plus. Les utilisateurs peuvent avoir plusieurs licences assignés à partir de différents plans de licence permettant d’accéder à différents services.
     
-- **Licences** Chaque plan de licences contient le nombre de licences que vous avez acheté. Vous attribuez des licences aux utilisateurs afin de pouvoir utiliser les services Office 365 qui sont définies par le plan de gestion des licences. Chaque compte d’utilisateur requiert au moins une licence à partir d’un plan de gestion des licences pour pouvoir se connecter à Office 365 et utiliser les services.
+- **Licences** Chaque plan de licences contient le nombre de licences que vous avez acheté. Vous attribuez des licences aux utilisateurs afin qu’ils peuvent utiliser les services Office 365 qui sont définies par le plan de gestion des licences. Chaque compte d’utilisateur nécessite au moins une licence d’un plan de gestion des licences pour pouvoir se connecter à Office 365 et utiliser les services.
     
-Vous pouvez utiliser Office 365 PowerShell pour afficher plus d’informations sur les plans de gestion des licences disponibles, les licences et les services de votre organisation d’Office 365. Pour plus d’informations sur les produits, les fonctionnalités et les services qui sont disponibles dans les différentes souscriptions d’Office 365, reportez-vous à la section [Options du Plan Office 365](https://go.microsoft.com/fwlink/p/?LinkId=691147).
+Vous pouvez utiliser Office 365 PowerShell pour afficher plus d’informations sur les plans de licence disponibles, les licences et les services dans votre organisation Office 365. Pour plus d’informations sur les produits, les fonctionnalités et les services qui sont disponibles dans les différents abonnements Office 365, voir [Options de Plan Office 365](https://go.microsoft.com/fwlink/p/?LinkId=691147).
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
 - Les procédures décrites dans cette rubrique exigent une connexion à Office 365 PowerShell. Pour plus d'informations, reportez-vous à [Se connecter à Office 365 PowerShell](connect-to-office-365-powershell.md).
     
-- Un script PowerShell est disponible qui automatise les procédures décrites dans cette rubrique. Plus précisément, le script vous permet d’afficher et de désactiver des services dans votre organisation d’Office 365, y compris de balancement. Pour plus d’informations, consultez [désactiver l’accès à balancement avec Office 365 PowerShell](disable-access-to-sway-with-office-365-powershell.md).
+- Vous trouverez un script PowerShell qui automatise les procédures décrites dans cette rubrique. Plus précisément, le script vous permet d’afficher et de désactiver des services dans votre organisation Office 365, notamment balancement. Pour plus d’informations, voir [désactiver l’accès à balancement avec Office 365 PowerShell](disable-access-to-sway-with-office-365-powershell.md).
     
 ## <a name="view-information-about-licensing-plans-and-the-available-licenses"></a>Afficher les informations sur les plans de licence et sur les licences disponibles
 
-Pour afficher des informations récapitulatives sur vos plans de gestion des licences en cours et les licences disponibles pour chaque plan, exécutez la commande suivante dans Office 365 PowerShell :
+Pour afficher des informations récapitulatives concernant vos plans de gestion des licences en cours et les licences disponibles pour chaque plan, exécutez la commande suivante dans Office 365 PowerShell :
   
 ```
 Get-MsolAccountSku
@@ -52,21 +53,21 @@ Get-MsolAccountSku
 
 Les résultats contiennent les informations suivantes :
   
-- **AccountSkuId :** Afficher les plans de gestion des licences disponibles pour votre organisation à l’aide de la syntaxe `<CompanyName>:<LicensingPlan>`.  _<CompanyName>_ est la valeur que vous avez fournies lorsque vous inscrit à Office 365 et êtes unique pour votre organisation. Le _<LicensingPlan>_ valeur est la même pour tout le monde. Par exemple, dans la valeur de `litwareinc:ENTERPRISEPACK`, le nom de la société est `litwareinc`et le nom du plan licence `ENTERPRISEPACK`, qui est le nom de système pour Office 365 entreprise E3.
+- **Éléments AccountSkuId :** Afficher les plans de gestion de licences disponibles pour votre organisation à l’aide de la syntaxe `<CompanyName>:<LicensingPlan>`.  _<CompanyName>_ est la valeur que vous avez fournies lorsque vous inscrit dans Office 365 et êtes unique pour votre organisation. Le _<LicensingPlan>_ valeur est la même pour tout le monde. Par exemple, dans la valeur `litwareinc:ENTERPRISEPACK`, est le nom de la société `litwareinc`et le nom de plan de gestion des licences `ENTERPRISEPACK`, qui est le nom du système pour Office 365 entreprise E3.
     
-- **ActiveUnits :** Nombre de licences que vous avez des achats pour un plan de gestion des licences spécifique.
+- **ActiveUnits :** Nombre de licences que vous avez achats pour un plan de gestion des licences spécifique.
     
-- **WarningUnits :** Nombre de licences d’un plan de gestion des licences que vous n’avez pas renouvelé et qui expire après la période de grâce de 30 jours.
+- **WarningUnits :** Nombre de licences d’un plan de gestion des licences que vous n’avez pas renouvelé, qui va expirer après la période de grâce de 30 jours.
     
-- **ConsumedUnits :** Nombre de licences que vous avez affectés aux utilisateurs à partir d’un plan de gestion des licences spécifique.
+- **ConsumedUnits :** Nombre de licences que vous avez affectés aux utilisateurs d’un plan de gestion des licences spécifique.
     
-Pour plus d’informations sur les services Office 365 qui sont disponibles dans l’ensemble de vos modes de licence, exécutez la commande suivante :
+Pour afficher plus d’informations sur les services Office 365 qui sont disponibles dans l’ensemble de vos modes de licence, exécutez la commande suivante :
   
 ```
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 ```
 
-Le tableau suivant montre les plans de service d’Office 365 et leurs noms conviviaux pour les services les plus courants. La liste des plans de service peut-être être différente. Pour obtenir une liste complète des services offerts et leurs noms conviviaux, contactez le [Support de l’Office](https://support.office.com/home/contact).
+Le tableau suivant indique les plans de service Office 365 et leurs noms conviviaux pour les services les plus courants. Votre liste des plans de service peut être différent. Pour obtenir une liste complète des plans de service et leur nom convivial, contactez [les options de Support pour les utilisateurs professionnels](https://support.microsoft.com/gp/support-options-for-business).
   
 |**Plan de service**|**Description**|
 |:-----|:-----|
@@ -80,23 +81,23 @@ Le tableau suivant montre les plans de service d’Office 365 et leurs noms conv
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online Plan 2  <br/> |
    
-Pour plus d’informations sur les services Office 365 qui sont disponibles dans un plan de gestion des licences spécifique, utilisez la syntaxe suivante.
+Pour afficher plus d’informations sur les services Office 365 qui sont disponibles dans un plan de gestion des licences spécifique, utilisez la syntaxe suivante.
   
 ```
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq "<AccountSkuId>"}).ServiceStatus
 ```
 
-Cet exemple montre les services Office 365 qui sont disponibles dans le plan de gestion des licences litwareinc:ENTERPRISEPACK (Office 365 entreprise E3).
+Cet exemple montre les services Office 365 qui sont disponibles dans le plan de gestion des licences litwareinc : enterprisepack (Office 365 entreprise E3).
   
 ```
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq "litwareinc:ENTERPRISEPACK"}).ServiceStatus
 ```
 
-## <a name="new-to-office-365"></a>Vous débutez avec Office 365 ?
+## <a name="new-to-office-365"></a>Vous débutez avec Office 365 ?
 
 [!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
    
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>See also
 
 - [Afficher les utilisateurs avec ou sans licence avec Office 365 PowerShell](view-licensed-and-unlicensed-users-with-office-365-powershell.md)
 - [Afficher les détails de service et de licence de compte avec Office 365 PowerShell](view-account-license-and-service-details-with-office-365-powershell.md)

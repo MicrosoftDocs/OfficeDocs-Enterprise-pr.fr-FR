@@ -3,7 +3,7 @@ title: Abonnements, licences, comptes et clients des offres de cloud de Microsof
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 07/12/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -15,11 +15,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: 'Résumé : Comprenez les relations des organisations, des abonnements, des licences, des comptes d’utilisateur et des clients au sein des offres de cloud de Microsoft.'
-ms.openlocfilehash: 889dbc376d3eb90af46bb281715ba391d7ee7712
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 53d2f7f32402d8c05d22c0661a0f625c756da6d4
+ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "20319215"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Abonnements, licences, comptes et clients des offres de cloud de Microsoft
 
@@ -49,7 +50,7 @@ Voici les éléments de la hiérarchie :
   
 ### <a name="organization"></a>Organisation
 
-Une organisation représente une entité commerciale qui utilise les offres de cloud Microsoft et qui est généralement identifiée par un nom de domaine DNS public, par exemple, contoso.com. L’organisation est un conteneur pour les abonnements.
+Une organisation représente une entité commerciale qui utilise les offres de cloud Microsoft et qui est généralement identifiée par un ou plusieurs domaines DNS publics, par exemple contoso.com. L’organisation est un conteneur pour les abonnements.
   
 ### <a name="subscriptions"></a>Abonnements
 

@@ -15,11 +15,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Résumé : Recommandations de configuration pour la protection des fichiers dans SharePoint Online et Office 365.'
-ms.openlocfilehash: 88ad010e10949c9ef4e761dbca95b7afd0e1f901
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 806f9880347a5fa4aff29206651d86b0e18da3a4
+ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "20319225"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Sécuriser des sites et des fichiers SharePoint Online
 
@@ -46,9 +47,9 @@ Pour plus d’informations sur ces niveaux et les fonctionnalités recommandées
 Les recommandations concernant les sites d’équipe SharePoint Online mobilisent un grand nombre de fonctionnalités Office 365. Pour les sites hautement confidentiels, le service Azure Information Protection est recommandé. Ce service est inclus dans EMS (Enterprise Mobility + Security). 
   
 L’illustration suivante montre les configurations recommandées pour quatre sites d’équipe SharePoint Online.
-  
-![Configuration recommandée pour les sites SharePoint](images/ad0dcd70-f6f5-465c-8d16-1889481ca07a.png)
-  
+
+![Configuration recommandée pour les sites SharePoint](Media/SharePoint-site-configuration-v2.png)
+
 Comme illustré :
   
 - La protection de référence inclut deux options pour les sites d’équipe SharePoint Online : un site public et un site privé. Les sites publics peuvent être recherchés et sont accessibles à toute personne de l’organisation. Les sites privés peuvent uniquement être recherchés par les membres du site et seuls ces derniers peuvent y accéder. Ces deux configurations de site permettent le partage en dehors du groupe. 
@@ -57,11 +58,11 @@ Comme illustré :
     
 - Les étiquettes Office 365 permettent de classer les données avec le niveau de protection voulu. Chacun des sites d’équipe SharePoint Online est configuré de façon à attribuer automatiquement une étiquette par défaut, propre au site, aux fichiers figurant dans les bibliothèques de documents. Correspondant aux quatre configurations de site, les étiquettes de cet exemple sont Public interne, Privé, Sensible et Hautement confidentiel. Les utilisateurs peuvent modifier les étiquettes, mais cette configuration garantit que tous les fichiers reçoivent une étiquette par défaut.
     
-- Des stratégies de protection contre la perte de données sont configurées pour les étiquettes Office 365 Sensible et Hautement confidentiel, pour avertir ou empêcher les utilisateurs quand ils tentent d’envoyer des fichiers de ces types à l’extérieur de l’organisation.
+- Les stratégies de protection contre la perte de données sont configurées pour les étiquettes Office 365 Sensible et Hautement confidentiel afin de prévenir les utilisateurs quand ils essaient d’envoyer ces types de fichiers à l’extérieur de l’organisation, ou de les en empêcher.
     
-- Pour les sites configurés avec la protection Hautement confidentiel, Azure Information Protection chiffre les fichiers et accorde des autorisations sur ceux-ci.
+- S’il est utile pour votre scénario, vous pouvez chiffrer et accorder des autorisations à des fichiers hautement confidentiels grâce à Azure Information Protection. Cela n’est pas recommandé pour tous les clients.
     
-## <a name="tenant-wide-settings-for-sharepoint-online-and-onedrive-for-business"></a>Paramètres au niveau du locataire pour SharePoint Online et OneDrive Entreprise
+## <a name="tenant-wide-settings-for-sharepoint-online-and-onedrive-for-business"></a>Paramètres à l’échelle du client pour SharePoint Online et OneDrive Entreprise
 
 SharePoint Online et OneDrive Entreprise incluent des paramètres à l’échelle du client qui concernent tous les sites et les utilisateurs. Certains de ces paramètres peuvent également être ajustés au niveau du site pour que ce dernier soit plus restrictif (mais pas moins). Cette section décrit les paramètres à l’échelle du client qui concernent la sécurité et la collaboration. 
   
@@ -155,7 +156,7 @@ Pour connaître les étapes de configuration des étiquettes Office 365 et des s
   
 ## <a name="azure-information-protection"></a>Azure Information Protection
 
-Utilisez Azure Information Protection pour appliquer des étiquettes et des protections qui accompagnent les fichiers, quel que soit leur emplacement. Pour cette solution, nous vous recommandons d’utiliser une stratégie délimitée Azure Information Protection et une sous-étiquette de l’étiquette Hautement confidentiel pour chiffrer et accorder des autorisations sur les fichiers qui doivent être protégés avec le plus haut niveau de sécurité. 
+Si cela se justifie pour votre scénario de sécurité, vous pouvez utiliser Azure Information Protection pour appliquer des étiquettes et des protections qui accompagnent les fichiers, quel que soit leur emplacement. Les étiquettes Azure Information Protection sont différentes des étiquettes Office 365. Pour cette solution, nous vous recommandons d’utiliser une stratégie délimitée Azure Information Protection et une sous-étiquette de l’étiquette Hautement confidentiel pour chiffrer et accorder des autorisations sur les fichiers qui doivent être protégés avec le plus haut niveau de sécurité. 
   
 Attention, quand le chiffrement Azure Information Protection est appliqué aux fichiers stockés dans Office 365, le service ne peut pas traiter le contenu de ces fichiers. La co-édition, eDiscovery, la recherche, Delve et d’autres fonctionnalités de collaboration ne fonctionnent pas. Les stratégies de protection contre la perte de données peuvent fonctionner seulement avec les métadonnées (notamment les étiquettes Office 365), mais pas avec le contenu de ces fichiers (comme des numéros de carte de crédit dans des fichiers).
   

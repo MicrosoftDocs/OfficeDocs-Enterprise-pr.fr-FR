@@ -15,11 +15,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 'Résumé : Appliquez des étiquettes Office 365 et des stratégies de protection contre la perte de données pour des sites d’équipe SharePoint Online, avec différents niveaux de protection des informations.'
-ms.openlocfilehash: 52617e43f5c1bcb2ab958e751734a2f948ceba37
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 439f59f683090d39ea98730854aa1ca5dc8db482
+ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "20319265"
 ---
 # <a name="protect-sharepoint-online-files-with-office-365-labels-and-dlp"></a>Protéger les fichiers SharePoint Online avec des étiquettes Office 365 et la protection contre la perte de données
 
@@ -27,7 +28,14 @@ ms.lasthandoff: 04/27/2018
   
 Suivez les étapes décrites dans cet article pour créer et déployer des étiquettes Office 365 et des stratégies DLP pour des sites d’équipe SharePoint Online de référence, sensibles et hautement confidentiels. Pour en savoir plus sur ces trois niveaux de protection, consultez la rubrique [Secure SharePoint Online sites and files](secure-sharepoint-online-sites-and-files.md).
   
-## <a name="office-365-labels-for-your-sharepoint-online-sites"></a>Étiquettes Office 365 pour vos sites SharePoint Online
+## <a name="how-this-works"></a>Procédure
+1. Créez les étiquettes de votre choix et publiez-les. La publication de ces étiquettes peut prendre jusqu’à 12 heures.
+2. Pour les sites SharePoint souhaités, modifiez les paramètres de bibliothèque de documents pour appliquer une étiquette à des éléments dans la bibliothèque.
+3. Créez des stratégies DLP pour exécuter des actions en fonction des étiquettes.
+
+Lorsque les utilisateurs ajoutent un document à la bibliothèque, le document reçoit l’étiquette affectée par défaut. Les utilisateurs peuvent modifier l’étiquette si nécessaire. Lorsqu’un utilisateur partage un document en dehors de l’organisation, DLP vérifie si une étiquette est affectée et exécute l’action appropriée si une stratégie DLP correspond à l’étiquette. DLP vérifie l’existence d’autres correspondances de stratégies, comme la protection des fichiers avec des numéros de cartes bancaires si ce type de stratégie est configuré. 
+
+## <a name="office-365-labels-for-your-sharepoint-online-sites"></a>Étiquettes Office 365 pour vos sites SharePoint Online
 
 Il existe trois phases pour créer et attribuer des étiquettes Office 365 à des sites d’équipe SharePoint Online.
   
@@ -153,11 +161,12 @@ Utilisez ces étapes pour configurer une stratégie de protection contre la pert
     
 14. Dans le volet **Personnaliser les conseils et les notifications par e-mail de la stratégie**, cliquez sur **Personnaliser le texte de l’info-bulle de la stratégie**.
     
-15. Dans la zone de texte, tapez ou collez ce qui suit :
+15. Dans la zone de texte, saisissez ou collez l’un des conseils suivants, selon si vous avez implémenté Azure Information Protection pour protéger les fichiers hautement confidentiels :
     
   - Pour partager un fichier avec un utilisateur extérieur à l’organisation, téléchargez-le et ouvrez-le. Cliquez sur Fichier > Protéger le document > Chiffrer avec mot de passe, puis indiquez un mot de passe fort. Envoyez le mot de passe par e-mail ou un autre moyen de communication.
+  - Les fichiers hautement confidentiels sont protégés par chiffrement. Seuls les utilisateurs externes qui y ont été autorisés par votre service informatique peuvent lire ces fichiers.
     
-    Vous pouvez également saisir ou coller votre propre conseil de stratégie pour expliquer aux utilisateurs comment partager un fichier en dehors de votre organisation.
+    Sinon, saisissez ou collez votre propre conseil de stratégie qui indique aux utilisateurs comment partager un fichier en dehors de votre organisation. Pour plus d’informations sur l’octroi d’autorisations à des utilisateurs externes sur les fichiers protégés par Azure Information Protection, reportez-vous à la section Ajout d’autorisations pour les utilisateurs externes.
     
 16. Cliquez sur **OK**.
     

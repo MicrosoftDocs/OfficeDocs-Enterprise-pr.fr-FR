@@ -3,7 +3,7 @@ title: Inscription d’appareils iOS et Android dans votre environnement de dé
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/14/2018
+ms.date: 07/20/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: 'Résumé : Utilisez ce Guide de laboratoire de Test pour inscrire des périphériques dans votre environnement de développement/test Microsoft 365 et les gérer à distance.'
-ms.openlocfilehash: a5d43a0ef3ed090f84c8415de3ac26f53fdafe0a
-ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
+ms.openlocfilehash: e4b8491a70d0d0177e0a434d228136243201e788
+ms.sourcegitcommit: c3869a332512dd1cc25cd5a92a340050f1da0418
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "20188102"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "20720410"
 ---
 # <a name="enroll-ios-and-android-devices-in-your-microsoft-365-enterprise-devtest-environment"></a>Inscription d’appareils iOS et Android dans votre environnement de développement/test Microsoft 365 Entreprise
 
@@ -35,73 +35,33 @@ Suivez les instructions dans [l’environnement de développement/test The Micro
   
 ## <a name="phase-2-enroll-your-ios-and-android-devices"></a>Phase 2 : Inscrire vos périphériques iOS ou Android
 
-Tout d’abord, suivez les instructions fournies dans [installer et se connecter à l’application de portail d’entreprise](https://docs.microsoft.com/intune-user-help/install-and-sign-in-to-the-intune-company-portal-app-ios) pour personnaliser l’application de portail d’entreprise Microsoft Intune pour votre client de développement/test.
+Tout d’abord, suivez les instructions fournies dans [installer et se connecter à l’application de portail d’entreprise](https://docs.microsoft.com/intune-user-help/install-and-sign-in-to-the-intune-company-portal-app-ios) pour personnaliser l’application de portail d’entreprise Microsoft Intune pour votre environnement de test.
 
 Ensuite, suivez les instructions de [configurer l’accès aux ressources de votre société](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios) à inscrire un périphérique iOS.
 
 Ensuite, suivez les instructions dans [l’inscription de votre appareil Android dans Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android) pour inscrire un appareil Android.
 
-## <a name="phase-2-manage-your-ios-and-android-devices-remotely"></a>Phase 2 : Gérer vos périphériques iOS ou Android à distance
+## <a name="phase-3-manage-your-ios-and-android-devices-remotely"></a>Phase 3 : Gérer vos périphériques iOS ou Android à distance
 
-Microsoft Intune fournit des fonctionnalités de verrouillage à distance et de réinitialisation du code secret. Si une personne perd son appareil, vous pouvez le verrouiller à distance. Si quelqu’un oublie son code secret, vous pouvez le supprimer à distance.
+Intune Microsoft fournit à distance verrouillage et code secret réinitialisation de fonctionnalités. Si une personne perd leur appareil, vous pouvez verrouiller le périphérique à distance. Si une personne oublie son code confidentiel, vous pouvez le réinitialiser à distance.
   
-Pour verrouiller un appareil iOS à distance, procédez comme suit :
-  
-1.  Ouvrir un nouvel onglet et accédez à http://manage.microsoft.com (le cas échéant). 
+Pour verrouiller une iOS ou un appareil Android à distance :
 
-2.  À partir de la console d’administration Microsoft Intune de votre navigateur, cliquez sur **groupes** dans le volet de navigation gauche.
+1. Connectez-vous au portail Azure à [https://portal.azure.com](https://portal.azure.com) avec les informations d’identification de votre compte d’administrateur global.
+2. Cliquez sur **tous les services**, tapez **Intune**, puis cliquez sur **Intune**.
+3. Cliquez sur **périphériques > tous les périphériques**.
+4. Dans la liste des périphériques, cliquez sur un appareil Android ou sur iOS, puis cliquez sur l’action **Verrouiller à distance** .
 
-3. Dans le volet **Groupes**, ouvrez **Tous les périphériques > Tous les appareils mobiles > Tous les appareils gérés par gestion directe**.
     
-4. Dans le volet **Tous les appareils gérés par gestion directe**, cliquez sur l’onglet **Appareils**.
-    
-5. Dans la liste des périphériques, cliquez sur votre appareil iOS.  
-    
-6. À partir de votre appareil iOS, assurez-vous qu’il se trouve sur l’écran principal.  
-    
-7. À partir de votre ordinateur d’administration, dans la barre des tâches, cliquez sur **Tâches à distance > Verrouiller à distance**. Regardez votre appareil iOS lorsqu’il bascule vers l’écran de verrouillage.
-    
-Pour supprimer le code secret, procédez comme suit :
-  
-1. À partir de votre ordinateur d’administration, dans le volet **Tous les appareils gérés par gestion directe**, cliquez sur l’onglet **Appareils**.
-    
-2. Dans la liste, cliquez sur votre appareil iOS. Dans la barre des tâches, cliquez sur **Tâches à distance > Réinitialisation du code d’accès**. Patientez une minute.
-    
-3. À partir de votre appareil iOS, déverrouillez-le et constatez qu’il n’y a plus de code secret. Pour modifier à nouveau le code secret, accédez à **Paramètres**, puis **Code secret**.
-    
-Pour verrouiller un appareil Android à distance, procédez comme suit :
-  
-1. À partir de la console d’administration Microsoft Intune de votre navigateur, cliquez sur **groupes** dans le volet de navigation gauche.
-    
-2. Dans le volet **Groupes**, ouvrez **Tous les périphériques > Tous les appareils mobiles > Tous les appareils gérés par gestion directe**.
-    
-3. Dans le volet **Tous les appareils gérés par gestion directe**, cliquez sur l’onglet **Appareils**.
-    
-4. Dans la liste des périphériques, cliquez sur votre appareil Android.  
-    
-5. À partir de votre appareil Android, assurez-vous qu’il se trouve sur l’écran principal.  
-    
-6. À partir de votre ordinateur d’administration, dans la barre des tâches, cliquez sur **Tâches à distance > Verrouiller à distance**. Lorsque vous y êtes invité, cliquez sur **Oui**.
-    
-7. Regardez votre appareil Android lorsqu’il bascule vers l’écran de verrouillage.
-    
-Lorsque vous réinitialisez le mot de passe pour les appareils Android, le portail d’administration Intune génère et configure un mot de passe fort.
-  
 Pour réinitialiser le code secret à distance, procédez comme suit :
-  
-1. À partir de votre ordinateur d’administration, sous l’onglet de la console d’administration Microsoft Intune de votre navigateur, dans le volet **Tous les appareils gérés par gestion directe**, cliquez sur votre appareil Android.
-    
-2. Dans la barre des tâches, cliquez sur **Tâches à distance > Réinitialisation du code d’accès**.
-    
-3. À l’invite **Tâche à distance : réinitialisation du code d’accès**, cliquez sur **Oui**. Patientez une minute.
-    
-4. Dans le volet **Tous les appareils gérés par gestion directe**, cliquez sur l’onglet **Afficher les propriétés**.
-    
-5. Sous **Réinitialisation du code d’accès**, notez le nouveau code secret.
-    
-6. Dans votre appareil Android, entrez le nouveau code secret à partir de l’écran de verrouillage.  
-    
-7. Pour modifier à nouveau le code secret, accédez à **Paramètres**, appuyez sur **Appareil** et **Écran de verrouillage**, ressaisissez le nouveau mot de passe, appuyez sur **Écran de verrouillage**, puis choisissez le code secret.
+
+1. Si nécessaire, connectez-vous au portail Azure à [https://portal.azure.com](https://portal.azure.com) avec les informations d’identification de votre compte d’administrateur global.
+2. Cliquez sur **tous les services**, tapez **Intune**, puis cliquez sur **Intune**.
+3. Cliquez sur **périphériques > tous les périphériques**.
+4. Dans la liste des périphériques gérer, cliquez sur un appareil Android ou sur iOS et choisissez **... Plus**. Puis sélectionnez l’action **Supprimer le code secret** périphérique à distance.
+
+Pour une expérimentation supplémentaire, voir [actions de périphérique disponible](https://docs.microsoft.com/intune/device-management#available-device-actions).
+
     
 
 > [!TIP]
@@ -111,9 +71,9 @@ Pour réinitialiser le code secret à distance, procédez comme suit :
 
 [Environnement de développement/test Microsoft 365 Entreprise](the-microsoft-365-enterprise-dev-test-environment.md)
   
-[Stratégies GAM pour votre environnement de développement/test Microsoft 365 Entreprise](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
+[Stratégies GAM pour votre environnement de développement/test Microsoft 365 Enterprise](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
   
-[Guides de laboratoire de test d’adoption cloud](cloud-adoption-test-lab-guides-tlgs.md)
+[Guides de laboratoire de test d'adoption cloud](cloud-adoption-test-lab-guides-tlgs.md)
 
 [Mobilité d’entreprise + sécurité (EMS)](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
 

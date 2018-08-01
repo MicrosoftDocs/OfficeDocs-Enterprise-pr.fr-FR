@@ -11,11 +11,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Découvrez OneDrive Entreprise Multi-Géo, son fonctionnement et les emplacements géographiques disponibles pour le stockage des données.
-ms.openlocfilehash: 54efc6092338e505ef44344f9c3d3a7efe9ae498
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 26dc9d1b0f0f78e1740088036be4b77bea3ce176
+ms.sourcegitcommit: 92d16c0926e4be3fd493fe9b4eb317fb54996bca
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "21549985"
 ---
 # <a name="plan-for-onedrive-for-business-multi-geo"></a>Planification de OneDrive Entreprise Multi-Géo
 
@@ -63,20 +64,20 @@ Vous pouvez configurer les emplacements géographiques satellites suivants où v
 <td align="left">APC</td>
 </tr>
 <tr class="even">
-<td align="left">Europe / Moyen-Orient / Afrique</td>
-<td align="left">EUR</td>
-</tr>
-<tr class="odd">
-<td align="left">Amérique du Nord</td>
-<td align="left">NAM</td>
-</tr>
-<tr class="even">
 <td align="left">Australie</td>
 <td align="left">AUS</td>
 </tr>
 <tr class="odd">
 <td align="left">Canada</td>
 <td align="left">CAN</td>
+</tr>
+<tr class="even">
+<td align="left">Europe / Moyen-Orient / Afrique</td>
+<td align="left">EUR</td>
+</tr>
+<tr class="odd">
+<td align="left">France</td>
+<td align="left">FRA</td>
 </tr>
 <tr class="odd">
 <td align="left">Japon</td>
@@ -87,6 +88,10 @@ Vous pouvez configurer les emplacements géographiques satellites suivants où v
 <td align="left">KOR</td>
 </tr>
 <tr class="odd">
+<td align="left">Amérique du Nord</td>
+<td align="left">NAM</td>
+</tr>
+<tr class="odd">
 <td align="left">Royaume-Uni</td>
 <td align="left">GBR</td>
 </tr>
@@ -95,7 +100,6 @@ Vous pouvez configurer les emplacements géographiques satellites suivants où v
 
 Emplacements géographiques à venir :
   
-- France
 - Inde
 
 Lorsque vous configurez Multi-Géo, envisagez de consolider votre infrastructure locale lors de la migration vers Office 365. Par exemple, si vous avez des batteries de serveurs locales à Singapour et en Malaisie, vous pouvez les consolider avec l’emplacement satellite APC, à condition que les exigences de résidence des données vous permettent de le faire.

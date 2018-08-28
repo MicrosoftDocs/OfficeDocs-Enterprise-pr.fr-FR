@@ -17,6 +17,7 @@ ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "17115243"
 ---
 # <a name="use-powershell-for-email-migration-to-office-365"></a>Utilisation de PowerShell pour effectuer une migration de messagerie vers Office 365
 
@@ -47,9 +48,9 @@ Utilisez Windows PowerShell pour migrer la messagerie vers Office 365.
 [Utilisez Windows PowerShell pour créer des rapports dans Office 365](use-windows-powershell-to-create-reports-in-office-365.md)
 #### 
 
-[Avantages de l'utilisation de Windows PowerShell pour gérer Office 365]((http://technet.microsoft.com/library/15144a50-453e-4cd5-befd-bc6736697967.aspx))
+[Avantages de l'utilisation de Windows PowerShell pour gérer Office 365](http://technet.microsoft.com/library/15144a50-453e-4cd5-befd-bc6736697967.aspx)
   
-[Référence technique de Windows PowerShell dans Office 365]((http://technet.microsoft.com/library/10d5c66a-7579-4319-aaa5-7a5e21d49cea.aspx))
+[Référence technique de Windows PowerShell dans Office 365](http://technet.microsoft.com/library/10d5c66a-7579-4319-aaa5-7a5e21d49cea.aspx)
   
-[Licence Office 365 et Windows PowerShell]((http://technet.microsoft.com/library/6ca0e430-f7ba-4184-becf-14c6c5c8dde5.aspx))
+[Licence Office 365 et Windows PowerShell](http://technet.microsoft.com/library/6ca0e430-f7ba-4184-becf-14c6c5c8dde5.aspx)
 

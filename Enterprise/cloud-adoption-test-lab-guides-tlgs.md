@@ -1,36 +1,38 @@
 ---
-title: Guides de laboratoire de test d’adoption cloud
+title: Tester Office 365 à l’aide des Guides de laboratoire de test relatifs à l’adoption de Microsoft Cloud
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 08/23/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: 'Résumé : Utilisez ces guides de laboratoire de test d’adoption cloud pour configurer une démonstration, une preuve du concept ou des environnements de développement/test pour les produits Office 365, Enterprise Mobility + Security (EMS), Dynamics 365 et Office Server.'
-ms.openlocfilehash: ac48a9d3d0941b1152aa2bc22a8d9aa5dde7ad77
-ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
+description: 'Résumé : Utilisez ces guides de laboratoire de test relatifs à l’adoption de Microsoft Cloud pour configurer une démonstration, une étude de faisabilité ou des environnements de développement/test pour les produits Office 365, Dynamics 365 et Office Server.'
+ms.openlocfilehash: 796d34294ef92702214df30ca5553759554996d3
+ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "20188162"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "23041498"
 ---
-# <a name="cloud-adoption-test-lab-guides-tlgs"></a>Guides de laboratoire de test d’adoption cloud
+# <a name="test-office-365-with-cloud-adoption-test-lab-guides-tlgs"></a>Tester Office 365 à l’aide des Guides de laboratoire de test relatifs à l’adoption de Microsoft Cloud
 
- **Résumé :** Utilisez ces guides de laboratoire de test d’adoption cloud pour configurer une démonstration, une preuve de concept ou des environnements de développement/test pour les produits Office 365, Enterprise Mobility + Security (EMS), Dynamics 365 et Office Server.
+ **Résumé :** Utilisez ces guides de laboratoire de test relatifs à l’adoption de Microsoft Cloud pour configurer une démonstration, une étude de faisabilité ou des environnements de développement/test pour les produits Office 365, Dynamics 365 et Office Server.
   
 Les guides de laboratoire de test vous permettent d’avoir un aperçu rapide des produits Microsoft. Ils sont particulièrement utiles lorsque vous avez besoin d’évaluer une technologie ou une configuration avant de décider si elle vous convient ou de la déployer pour vos utilisateurs. L’expérience pratique, suite à laquelle vous pourrez dire « Je l’ai créé moi-même et ça fonctionne », vous aide à comprendre les exigences de déploiement d’un nouveau produit ou d’une nouvelle solution de façon à garantir une meilleure planification pour son hébergement dans un environnement de production.
   
 Les guides de laboratoire de test créent également des environnements représentatifs pour le développement et le test d’applications, également connus sous le nom d’environnements de développement/test.
   
-![Guides de laboratoire de test dans Microsoft Cloud](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
+![Guides de laboratoire de test dans Microsoft Cloud](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 Avant de commencer, consultez ces ressources supplémentaires :
   
@@ -88,21 +90,10 @@ Pour votre environnement de développement/test Office 365, utilisez les articl
     
     Démontrez comment créer un site d’équipe SharePoint Online isolé du reste de l’organisation pour les ressources sensibles ou hautement confidentielles.
     
-## <a name="the-microsoft-365-enterprise-devtest-environment"></a>Environnement de développement/test Microsoft 365 Entreprise
+## <a name="the-microsoft-365-enterprise-test-environment"></a>Environnement de test Microsoft 365 Entreprise
 
-Créez un environnement de développement/test pour des scénarios [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/) avec les articles suivants :
-  
-- [Environnement de développement/test Microsoft 365 Entreprise](the-microsoft-365-enterprise-dev-test-environment.md)
-    
-    Créez l’environnement de départ incluant Office 365 E5, EMS E5, ainsi qu’un ordinateur exécutant Windows 10 Enterprise.
-    
-- [Stratégies GAM pour votre environnement de développement/test Microsoft 365 Enterprise](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
-    
-    Créez des groupes d’utilisateurs et des stratégies de gestion des applications mobiles pour les appareils iOS et Android.
-    
-- [Inscription d’appareils iOS et Android dans votre environnement de développement/test Microsoft 365 Entreprise](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
-    
-    Inscrivez des appareils iOS ou Android et gérez-les à distance.
+Créez un environnement de test pour [Microsoft 365 Entreprise](https://docs.microsoft.com/microsoft-365-enterprise/) en vous aidant de [ces articles](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides).
+ 
     
 ## <a name="office-365-and-dynamics-365-devtest-environment"></a>Environnement de développement/test Office 365 et Dynamics 365
 
@@ -148,17 +139,7 @@ Voici les autres environnements de développement/test dans le cloud que vous po
     
     Créez des batteries de serveurs SharePoint Server 2013 de base et haute disponibilité dans des services d’infrastructure Azure.
     
-**Participer à la discussion**
-
-|**Contactez-nous**|**Description**|
-|:-----|:-----|
-|**De quelles solutions avez-vous besoin ?** <br/> |Nous sommes en train de créer du contenu pour les solutions qui s'étendent sur plusieurs produits et services Microsoft. Donnez-nous votre avis sur nos solutions entre serveurs ou demandez des solutions spécifiques en envoyant un courrier électronique à [MODAcontent@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20).<br/> |
-|**Participer à la discussion sur les solutions** <br/> |Si vous êtes passionné par les solutions basées sur le cloud, rejoignez le conseil consultatif de l’adoption cloud (CAAB) pour interagir avec une communauté vaste et dynamique de développeurs de contenu Microsoft, de professionnels du secteur et de clients venant du monde entier. Pour participer, ajoutez-vous en tant que membre de l’espace [CAAB (Conseil consultatif de l’adoption cloud)](https://aka.ms/caab) de la communauté Microsoft Tech et envoyez-nous un message électronique à l’adresse [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Tout le monde peut lire le contenu lié à la communauté sur le [blog CAAB](https://blogs.technet.com/b/solutions_advisory_board/). Toutefois, les membres CAAB reçoivent des invitations à des webinaires privés qui décrivent les nouvelles solutions et ressources relatives à l’adoption cloud.<br/> |
-|**Obtenir l'image que vous voyez ici** <br/> |Si vous voulez obtenir une copie modifiable de l’image que vous voyez dans cet article, nous serons ravis de vous l’envoyer. Envoyez-nous votre demande par courrier électronique, en incluant l’URL et le titre de l’illustration, à [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20).<br/> |
-   
 ## <a name="see-also"></a>Voir aussi
-
-<a name="ADD_TLGs"> </a>
 
 [Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.md)
   

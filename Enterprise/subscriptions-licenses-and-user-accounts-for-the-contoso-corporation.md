@@ -1,5 +1,5 @@
 ---
-title: "Abonnements, licences et comptes d’utilisateur de Contoso Corporation"
+title: Abonnements, licences et comptes d’utilisateur de Contoso Corporation
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,19 +8,22 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: ec3b08f0-288c-4ba3-b822-dbf6352fa761
-description: "Résumé : Comprendre la structure des abonnements de nuage de Contoso, les licences, les comptes utilisateur et les locataires."
-ms.openlocfilehash: 6e62fbbc0f52019e5d233fc73992b000952344f5
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Résumé : Comprendre la structure des abonnements de cloud de Contoso, licences, des comptes d’utilisateurs et des clients.'
+ms.openlocfilehash: cd196e0800f6a39973f4c5c82001ed3e9c330fee
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915509"
 ---
 # <a name="subscriptions-licenses-and-user-accounts-for-the-contoso-corporation"></a>Abonnements, licences et comptes d’utilisateur de Contoso Corporation
 
- **Résumé :** Comprendre la structure des abonnements de nuage de Contoso, les licences, les comptes utilisateur et les locataires.
+ **Résumé :** Comprendre la structure des abonnements de cloud de Contoso, licences, des comptes d’utilisateurs et des clients.
   
 Pour une utilisation cohérente des identités et de la facturation au sein de ses offres cloud, Microsoft fournit une hiérarchie d’organisation/d’abonnements/de licences/de comptes d’utilisateur :
   
@@ -30,11 +33,11 @@ Pour une utilisation cohérente des identités et de la facturation au sein de s
     
 - Abonnements
     
-    Pour Microsoft SaaS (Office 365, Intune/EMS et Dynamics 365) les offres en nuage, un abonnement est un produit spécifique et un ensemble acheté des licences utilisateur. Pour Azure, permet à un abonnement pour la facturation des services en nuage consommés à l’organisation.
+    SaaS Microsoft cloud offres (Office 365, Intune/EMS et Dynamics 365), un abonnement est un produit spécifique et un ensemble acheté des licences utilisateur. Pour Azure, un abonnement permet de facturation des services en nuage consommés à l’organisation.
     
 - Licences
     
-    Pour les offres de cloud Microsoft SaaS, une licence permet à un compte d’utilisateur spécifique utiliser les services en nuage. Pour Azure, licences logicielles sont intégrées dans le prix du service, mais dans certains cas, que vous devez acquérir des licences logicielles supplémentaires.
+    Pour les offres de cloud Microsoft SaaS, une licence permet à un compte d’utilisateur spécifique à utiliser les services en nuage. Pour Azure, les licences logicielles sont créées dans le service de tarification, mais dans certains cas, que vous devez acquérir des licences logicielles supplémentaires.
     
 - Comptes d’utilisateur
     
@@ -44,13 +47,13 @@ Pour une utilisation cohérente des identités et de la facturation au sein de s
 
 Contoso a établi la structure d’organisation, d’abonnements, de licences, de comptes et de clients suivante :
   
-**Figure 1 : Contoso organisation, abonnements, licences, comptes d’utilisateurs et locataires**
+**Figure 1 : organisation, abonnements, licences, comptes d’utilisateur et clients de Contoso**
 
-![Organisation, abonnements, licences, comptes d’utilisateur et clients de Contoso](images/Contoso_Poster/Subscriptions.png)
+![Organisation, abonnements, licences, comptes d’utilisateur et clients de Contoso](media/Contoso-Poster/Subscriptions.png)
   
 La Figure 1 montre comment l’organisation Contoso inclut plusieurs abonnements et est liée à un client Azure AD commun qui contient les comptes d’utilisateurs synchronisés à partir de la forêt Windows Server AD contoso.com.
   
-- **Organisation** La société Contoso est identifiée par son contoso.com de nom de domaine public.
+- **Organisation** La société Contoso est identifiée par son nom de domaine de public contoso.com.
     
   - **Abonnements et licences** La société Contoso utilise les éléments suivants :
     
@@ -60,35 +63,40 @@ La Figure 1 montre comment l’organisation Contoso inclut plusieurs abonnement
     
   - Le produit EMS avec 5 000 licences
     
-  - Le produit de Dynamics 365 avec 100 licences
+  - Produit Dynamic 365 avec 100 licences
+
     
   - Abonnements Azure multiples en fonction des régions
     
-  - **Comptes d’utilisateurs** Un locataire AD Azure commun contient la liste des comptes d’utilisateurs et les groupes utilisés par tous les abonnements de Contoso, à l’exception de développement/test abonnements Azure.
+  - **Comptes d’utilisateurs** Un client Azure AD common contient la liste des comptes d’utilisateurs et les groupes utilisés par tous les abonnements de Contoso, à l’exception de développement/test abonnements Azure.
     
 Pour les clients de Contoso :
   
-- Pour les offres de cloud SaaS, le locataire est l’emplacement régional qui héberge les serveurs fournissant des services de cloud. Contoso a choisi de la région Europe pour héberger ses locataires Office 365, EMS et Dynamics 365. 
+- Dans le cadre des offres cloud SaaS, le client désigne l’emplacement régional qui héberge les serveurs fournissant des services cloud. Contoso a choisi la région Europe pour héberger ses clients Office 365, EMS et Dynamics 365.
+  
     
-- Les services PaaS Azure et les applications et les charges de travail IaaS informatique peuvent avoir location dans n’importe quel centre de données Azure dans le monde entier. Un locataire AD Azure est une instance spécifique de publicité Azure contenant les comptes et les groupes.
+- Services PaaS Azure et les applications et les charges de travail informatique IaaS peuvent avoir location dans les centres de données Azure dans le monde entier. Un client Azure AD est une instance spécifique d’Azure Active Directory contenant les comptes et groupes.
     
-- Le locataire AD Azure commun qui contient les comptes synchronisés pour la forêt Contoso Windows Server Active Directory fournit des IDaaS entre les offres en nuage de Microsoft.
+- Le client Azure AD courants qui contient les comptes synchronisés pour la forêt Contoso Windows Server AD assure IDaaS entre les offres de cloud de Microsoft.
     
-Pour plus d’informations, consultez [abonnements, des licences, des comptes et des locataires pour les offres en nuage de Microsoft](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md).
+Pour plus d’informations, voir [abonnements, licences et des comptes et clients pour les offres de cloud de Microsoft](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md).
   
 ## <a name="contosos-azure-subscriptions"></a>Abonnements Azure de Contoso
 
-La figure 2 illustre la structure hiérarchique des abonnements d’Azure de Contoso :
-  
-**Figure 2 : Structure de Contoso pour les abonnements Azure**
+La Figure 2 présente la structure hiérarchique des abonnements Azure de Contoso : 
 
-![Structure des abonnements Azure de Contoso](images/Contoso_Poster/Subscriptions_Nested.png)
+
+
+  
+**Figure 2 : structure des abonnements Azure de Contoso**
+
+![Structure des abonnements Azure de Contoso](media/Contoso-Poster/Subscriptions-Nested.png)
   
 - Contoso est prioritaire, conformément à l’Accord Entreprise conclu avec Microsoft.
     
-- Il existe un ensemble de comptes correspondant à différentes régions de la société Contoso dans le monde entier, basée sur les domaines de la forêt de Windows Server, Active Directory de Contoso.
+- Il existe un ensemble de comptes correspondant aux différentes régions de la société Contoso dans le monde, basée sur les domaines de la forêt de Windows Server AD de Contoso.
     
-- Dans chaque région, il y a un ou plusieurs abonnements en fonction des besoins de déploiement de développement, de test et de production de cette région.
+- Dans chaque région, il existe un ou plusieurs des abonnements en fonction des besoins de déploiement de développement, de test et de production de cette région.
     
 Chaque abonnement Azure peut être associé à un même client Azure AD possédant des comptes et groupes d’utilisateurs pour l’authentification aux services Azure et les droits qui leur sont associés. Les abonnements de production utilisent le client Azure AD commun de Contoso.
   
@@ -98,7 +106,8 @@ Chaque abonnement Azure peut être associé à un même client Azure AD posséd
   
 [Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs](https://sway.com/FJ2xsyWtkJc2taRD)
+[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs (en anglais)](https://sway.com/FJ2xsyWtkJc2taRD)
+
 
 
 

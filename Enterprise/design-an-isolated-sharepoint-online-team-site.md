@@ -1,5 +1,5 @@
 ---
-title: "Conception d’un site d’équipe SharePoint Online isolé"
+title: Conception d’un site d’équipe SharePoint Online isolé
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,19 +8,22 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
-description: "Résumé : L’étape dans le processus de conception pour les sites d’équipe SharePoint Online isolés."
-ms.openlocfilehash: efd55ce780cf2951bfafd31215201459965c0e78
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Résumé : Découvrez comment concevoir des sites d’équipe SharePoint Online.'
+ms.openlocfilehash: 4807b7cef0a401901eb5abec3d683ca67b2193db
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22914839"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>Conception d’un site d’équipe SharePoint Online isolé
 
- **Résumé :** Parcourez le processus de conception pour les sites d’équipe SharePoint Online isolés.
+ **Résumé :** Découvrez comment concevoir des sites d’équipe SharePoint Online.
   
 Cet article vous aide à faire les bons choix de conception avant de créer un site d’équipe SharePoint Online isolé.
   
@@ -30,7 +33,7 @@ Chaque site d’équipe SharePoint Online par défaut est créé avec les group
   
 - \<nom du site > membres
     
-- \<nom du site > les visiteurs
+- \<nom du site > visiteurs
     
 - \<nom du site > propriétaires
     
@@ -40,15 +43,15 @@ L’ensemble des autorisations qui déterminent ce que le membre d’un groupe 
   
 |**Groupe SharePoint**|**Niveau d’autorisation**|
 |:-----|:-----|
-|\<nom du site > membres  <br/> |Modification  <br/> |
-|\<nom du site > les visiteurs  <br/> |Lecture  <br/> |
+|\<nom du site > membres  <br/> |Éditer  <br/> |
+|\<nom du site > visiteurs  <br/> |Lire  <br/> |
 |\<nom du site > propriétaires  <br/> |Contrôle total  <br/> |
    
- **Meilleures pratiques :** Vous pouvez créer d’autres groupes SharePoint et les niveaux d’autorisation. Toutefois, nous recommandons à l’aide des groupes SharePoint par défaut et les niveaux d’autorisation de votre site SharePoint Online isolé.
+ **Conseil :** vous pouvez créer des groupes SharePoint et des niveaux d’autorisation supplémentaires. Cependant, nous vous recommandons d’utiliser les groupes SharePoint par défaut et les niveaux d’autorisation pour votre site SharePoint Online isolé.
   
-Voici les niveaux d’autorisation des groupes SharePoint par défaut.
+Voici les groupes SharePoint par défaut et les niveaux d’autorisation.
   
-![Groupes SharePoint par défaut et niveaux d’autorisation pour un site SharePoint Online.](images/3f892ab4-6479-42f0-a505-1ba0ef94b9c6.png)
+![Groupes SharePoint par défaut et niveaux d’autorisation pour un site SharePoint Online.](media/3f892ab4-6479-42f0-a505-1ba0ef94b9c6.png)
   
 ## <a name="phase-2-assign-permissions-to-users-with-access-groups"></a>Phase 2 : attribution des autorisations aux utilisateurs membres de groupes d’accès
 
@@ -56,53 +59,53 @@ Vous pouvez attribuer des autorisations aux utilisateurs en ajoutant leur compte
   
 En prenant l’exemple des groupes SharePoint par défaut :
   
-- Les membres de la ** \<nom du site > membres** groupe SharePoint, qui peut inclure des comptes d’utilisateurs et de groupes, sont affectés le niveau d’autorisation **Modifier**
+- Les membres de le ** \<nom du site > membres** groupe SharePoint, qui peut inclure des comptes d’utilisateurs et groupes, sont affectés à **Modifier** le niveau d’autorisation
     
-- Les membres de la ** \<nom du site > visiteurs** groupe SharePoint, qui peut inclure des comptes d’utilisateurs et de groupes, sont affectées des autorisations de niveau **lecture**
+- Les membres de le ** \<nom du site > visiteurs** groupe SharePoint, qui peut inclure des comptes d’utilisateurs et groupes, sont affectés le niveau d’autorisation **lecture**
     
-- Les membres de la ** \<nom du site > propriétaires** groupe SharePoint, qui peut inclure des comptes d’utilisateurs et de groupes, sont affectés le niveau d’autorisation **contrôle total**
+- Les membres de le ** \<nom du site > propriétaires** groupe SharePoint, qui peut inclure des comptes d’utilisateurs et groupes, sont affectés du niveau d’autorisation **contrôle total**
     
- **Meilleures pratiques :** Bien que vous pouvez gérer les autorisations par le biais de comptes d’utilisateurs individuels, nous vous conseillons d’utiliser un seul groupe d’annonces Azure connue sous la forme d’un groupe d’accès, à la place. Cela simplifie la gestion des autorisations par le biais de l’appartenance au groupe d’accès, plutôt que de gérer la liste des utilisateurs de comptes pour chaque groupe SharePoint.
+ **Conseil :** même si vous pouvez gérer les autorisations dans chaque compte d’utilisateur, nous vous recommandons plutôt d’utiliser un seul groupe Azure AD, appelé groupe d’accès. Cela simplifie la gestion des autorisations via l’appartenance au groupe d’accès, plutôt que via la gestion de la liste des comptes d’utilisateur pour chaque groupe SharePoint.
   
-Les groupes d’annonces Azure pour Office 365 sont différents des groupes d’Office 365. Les groupes d’annonces Azure apparaissent dans le centre d’administration d’Office avec leur jeu de **Type** à la **sécurité** et n’ont pas une adresse de messagerie. Les groupes d’annonces Azure peuvent être gérés dans :
+Les groupes Azure AD pour Office 365 sont différents des groupes Office 365. Les groupes Azure AD apparaissent dans le Centre d’administration Office. Leur **type** est défini sur **Sécurité** et ils n’ont pas d’adresse e-mail. Les groupes Azure AD peuvent être gérés dans :
   
 - Windows Server Active Directory (AD)
     
-    Il s’agit de groupes qui ont été créés dans votre infrastructure de Windows Server, Active Directory sur site et synchronisés avec votre abonnement à Office 365. Dans le centre d’administration d’Office, ces groupes ont un **statut** **Synched avec active directory**.
+    Ces groupes ont été créés dans votre infrastructure locale Windows Server AD et ont été synchronisés avec votre abonnement Office 365. Dans le Centre d’administration Office, ils affichent l’**état****Synchronisés avec Active Directory**.
     
 - Office 365
     
-    Il s’agit de groupes qui ont été créés avec le centre d’administration d’Office, le portail Azure ou Microsoft PowerShell. Dans le centre d’administration d’Office, ces groupes ont un **statut** de **nuage**.
+    Ces groupes ont été créés à l’aide du Centre d’administration Office, du portail Azure ou de Microsoft PowerShell. Dans le Centre d’administration Office, ils affichent l’**état****Cloud**.
     
- **Meilleures pratiques :** Si vous utilisez Windows Server Active Directory sur site et la synchronisation avec votre abonnement à Office 365, votre utilisateur et la gestion de groupe dans Windows Server Active Directory.
+ **Conseil :** si vous utilisez Windows Server AD en local et que vous le synchronisez avec votre abonnement Office 365, gérez vos utilisateurs et groupes avec Windows Server AD.
   
 Pour les sites d’équipe SharePoint Online isolés, voici à quoi ressemble la structure recommandée du groupe :
   
-|**Groupe SharePoint**|**Groupe d’accès AD Azure**|**Niveau d’autorisation**|
+|**Groupe SharePoint**|**Groupe d’accès basé sur Azure AD**|**Niveau d’autorisation**|
 |:-----|:-----|:-----|
-|\<nom du site > membres  <br/> |\<nom du site > membres  <br/> |Modification  <br/> |
-|\<nom du site > les visiteurs  <br/> |\<nom du site > visionneuses  <br/> |Lecture  <br/> |
-|\<nom du site > propriétaires  <br/> |\<nom du site > Admins  <br/> |Contrôle total  <br/> |
+|\<nom du site > membres  <br/> |\<nom du site > membres  <br/> |Éditer  <br/> |
+|\<nom du site > visiteurs  <br/> |\<nom du site > visionneuses  <br/> |Lire  <br/> |
+|\<nom du site > propriétaires  <br/> |\<nom du site > administrateurs  <br/> |Contrôle total  <br/> |
    
- **Meilleures pratiques :** Vous pouvez utiliser Office 365 ou publicité Azure groupes en tant que membres des groupes SharePoint, nous vous conseillons d’utiliser les groupes d’annonces Azure. Les groupes d’annonces Azure, gérés par le biais d’Active Directory du serveur Windows ou d’Office 365, vous donnent plus de flexibilité pour utiliser des groupes imbriqués pour affecter des autorisations.
+ **Conseil :** même si vous pouvez utiliser des groupes Office 365 ou Azure AD en tant que membres des groupes SharePoint, nous vous recommandons d’utiliser les groupes Azure AD. Grâce aux groupes Azure AD, gérés via Windows Server AD ou Office 365, vous bénéficiez d’une plus grande flexibilité pour attribuer des autorisations avec les groupes imbriqués.
   
-Voici la valeur par défaut configurés pour utiliser des groupes d’accès AD Azure des groupes SharePoint.
+Voici les groupes SharePoint configurés pour utiliser des groupes d’accès Azure AD par défaut.
   
-![Utilisation des groupes d’accès en tant que membres des groupes de sites SharePoint Online par défaut.](images/50a76328-ae69-483e-9029-ac4e7357b5ef.png)
+![Utilisation des groupes d’accès en tant que membres des groupes de sites SharePoint Online par défaut.](media/50a76328-ae69-483e-9029-ac4e7357b5ef.png)
   
 Lorsque vous concevez les trois groupes d’accès, rappelez-vous de ceci :
   
-- Il convient que quelques membres de la ** \<nom du site > Admins** groupe d’accès, correspondant à un nombre restreint d’administrateurs de SharePoint Online qui gèrent le site d’équipe.
+- Il doit être uniquement quelques membres dans les ** \<nom du site > administrateurs** groupe d’accès, correspondant à un petit nombre d’administrateurs SharePoint Online qui gèrent le site d’équipe.
     
-- La plupart des membres de votre site sont dans le ** \<nom du site > membres** ou ** \<nom du site > visionneuses** accéder aux groupes. Étant donné que site des membres dans le ** \<nom du site > membres** groupe accès ont la possibilité de supprimer ou de modifier les ressources dans le site, de son appartenance avec soin. En cas de doute, ajouter le membre de site pour le ** \<nom du site > visionneuses** groupe d’accès.
+- La plupart des membres de votre site se trouvent dans le ** \<nom du site > membres** ou ** \<nom du site > visionneuses** accéder aux groupes. Étant donné que site membres dans le ** \<nom du site > membres** groupe accès ont la possibilité de supprimer ou modifier des ressources dans le site, considérez avec son appartenance. En cas de doute, ajoutez le membre de site pour le ** \<nom du site > visionneuses** groupe d’accès.
     
-Voici un exemple des groupes SharePoint et les groupes d’accès pour un site isolé nommé ProjectX.
+Voici un exemple des groupes SharePoint et des groupes d’accès pour un site isolé nommé ProjectX.
   
-![Exemple d’utilisation des groupes d’accès pour un site SharePoint Online nommé ProjectX.](images/13afe542-9ffd-4671-9f48-210a0e2a502a.png)
+![Exemple d’utilisation des groupes d’accès pour un site SharePoint Online nommé ProjectX.](media/13afe542-9ffd-4671-9f48-210a0e2a502a.png)
   
-## <a name="phase-3-use-nested-azure-ad-groups"></a>Phase 3 : Utilisez les groupes d’annonces Azure
+## <a name="phase-3-use-nested-azure-ad-groups"></a>Phase 3 : Utilisez les groupes d’Azure AD
 
-Pour un projet est limité à un petit nombre de personnes, un seul niveau de groupes d’accès AD Azure ajoutés aux groupes du site SharePoint peut contenir la plupart des scénarios. Toutefois, si vous avez un grand nombre de personnes et aux personnes qui sont déjà membres d’établi des groupes d’annonces d’Azure, vous pouvez affecter plus facilement les autorisations SharePoint à l’aide de groupes imbriqués ou des groupes qui contiennent d’autres groupes en tant que membres.
+Pour un projet est limité à un petit nombre de personnes, un seul niveau de Azure access basée sur AD-groupes ajoutés aux groupes SharePoint du site adapté à la plupart des scénarios. Toutefois, si vous disposez d’un grand nombre de personnes et aux personnes qui sont déjà membres d’établies groupes Azure AD, vous pouvez plus facilement attribuer les autorisations SharePoint à l’aide de groupes imbriqués ou des groupes qui contiennent d’autres groupes en tant que membres.
   
 Par exemple, vous souhaitez créer un site d’équipe SharePoint Online isolé pour favoriser la collaboration entre les responsables des services ventes, marketing, ingénierie, juridique et support technique, mais ils ont déjà leur propre groupe de comptes de responsable. Au lieu de créer un groupe pour les nouveaux membres du site et d’y placer tous les comptes de responsable un par un, placez les groupes de responsables existants pour chaque service dans le nouveau groupe.
   
@@ -119,15 +122,15 @@ Pour utiliser les groupes Azure AD imbriqués, procédez comme suit :
 > [!NOTE]
 > Vous ne pouvez pas utiliser des groupes Office 365 imbriqués. 
   
-Voici un exemple d’annonce d’Azure imbriqué des groupes pour le groupe d’accès de membre ProjectX.
+Voici un exemple d’Azure AD imbriqué les groupes pour le groupe d’accès membre ProjectX.
   
-![Exemple d’utilisation des groupes d’accès imbriqués pour le groupe d’accès Membres pour le site ProjectX.](images/2abca710-bf9e-4ce8-9bcd-a8e128264fb1.png)
+![Exemple d’utilisation des groupes d’accès imbriqués pour le groupe d’accès Membres pour le site ProjectX.](media/2abca710-bf9e-4ce8-9bcd-a8e128264fb1.png)
   
-Parce que tous les comptes d’utilisateur dans la recherche, l’ingénierie et de projet de prospects équipes sont destinés à être des membres du site, il est plus facile d’ajouter leurs groupes d’annonces Azure au groupe d’accès membres du ProjectX.
+Étant donné que tous les comptes d’utilisateur dans la recherche, ingénierie, Project leads équipes sont destinés à être membres du site, il est plus facile d’ajouter leurs groupes Azure AD au groupe membres ProjectX accès.
   
 ## <a name="next-step"></a>Étape suivante
 
-Lorsque vous êtes prêt pour créer et configurer un site isolé dans la production, voir [déploiement d’un site d’équipe SharePoint Online isolé](deploy-an-isolated-sharepoint-online-team-site.md).
+Lorsque vous êtes prêt à créer et à configurer un site isolé en production, consultez la rubrique [Deploy an isolated SharePoint Online team site](deploy-an-isolated-sharepoint-online-team-site.md).
   
 ## <a name="see-also"></a>Voir aussi
 

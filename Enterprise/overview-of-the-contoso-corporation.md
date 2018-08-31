@@ -12,11 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 1de16e29-ac2e-40b5-bf13-9301a51e16a8
 description: 'Résumé : Découvrez la société Contoso comme une entreprise et la structure à plusieurs niveaux de ses bureaux dans le monde entier.'
-ms.openlocfilehash: 30a6dd23271fbbd5599053b934e6a1af9dc14d12
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: 66171ee872f9b526860ae1436b0e8cb51de119de
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915859"
 ---
 # <a name="overview-of-the-contoso-corporation"></a>Présentation de la société Contoso Corporation
 
@@ -30,7 +31,7 @@ Organisation mondiale de Contoso a des bureaux dans les emplacements suivants :
   
 **La figure 1 : Bureaux de Contoso**
 
-![Bureaux de la société Contoso dans le monde entier](images/Contoso_Poster/Contoso_WW_Org.png)
+![Bureaux de la société Contoso dans le monde entier](media/Contoso-Poster/Contoso-WW-Org.png)
 
   
 Dans la Figure 1, le siège social de l’entreprise se situe à Paris, tandis que ses centres régionaux et ses succursales sont répartis sur plusieurs continents.
@@ -51,7 +52,9 @@ Bureaux de Contoso dans le monde suivez un modèle à trois niveaux.
     
 - Succursales
     
-    Filiales contient 80 % des ventes et personnel de support technique et fournissent une présence physique et sur site pour les clients de Contoso de clé villes ou régions secondaire. Chaque bureau satellite est connecté à un concentrateur régionaux avec un lien de réseau étendu à bande passante élevée.
+    Les succursales représentent 80 % des équipes des ventes et du support technique. Elles sont présentes auprès des clients de Contoso dans des villes et des sous-régions importantes. Chaque succursale est reliée à un centre régional grâce à une connexion WAN haut débit.
+
+
     
     Chaque succursale compte en moyenne 250 collaborateurs.
     
@@ -65,13 +68,13 @@ Contoso architectes informatiques ont identifié les éléments suivants lors de
     
     Mise en réseau inclut la connectivité aux offres de cloud de Microsoft et suffisamment de bande passante pour être performant sous les charges maximales. Certains connectivité sera via des connexions Internet locales et certaines seront entre l’infrastructure de réseau privé de Contoso.
     
-    Pour plus d’informations, voir le poster de [Mise en réseau de Microsoft dans le nuage pour les architectes de l’entreprise](microsoft-cloud-networking-for-enterprise-architects.md) .
+    Pour plus d’informations, consultez l’affiche [Microsoft Cloud Networking for Enterprise Architects](microsoft-cloud-networking-for-enterprise-architects.md).
    
 - Identité
     
     Contoso utilise une forêt Windows Server AD pour son fournisseur d’identité interne et se fédère également avec des fournisseurs tiers pour les clients et partenaires. Contoso doit tirer parti de l’ensemble des comptes pour les offres de cloud de Microsoft interne. Accès aux applications basées sur le nuage pour les clients et partenaires doivent tirer parti de fournisseurs d’identité tiers ainsi.
     
-    Pour plus d’informations, voir l’affiche [Identité de nuage de Microsoft pour les architectes de l’entreprise](microsoft-cloud-it-architecture-resources.md#identity) .
+    Pour plus d’informations, consultez l’affiche [Microsoft Cloud Identity for Enterprise Architects](microsoft-cloud-it-architecture-resources.md#identity).
     
 - Sécurité
     

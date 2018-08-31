@@ -8,16 +8,18 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: 'Résumé : Comprendre comment ExpressRoute peut garantir des connexions plus fiables et plus rapides aux services et aux plateformes cloud de Microsoft.'
-ms.openlocfilehash: 55ac09e3c3cf65649d24d67ea79e185808d83cdb
-ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
+ms.openlocfilehash: d3a19dcd3ce8732b3349c5cacce5b64159850682
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "20188112"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915489"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>ExpressRoute pour la connectivité au cloud de Microsoft
 
@@ -31,7 +33,7 @@ Voici le chemin d’accès au réseau sur le cloud de Microsoft sans connexion E
   
 **Figure 1 : chemin de mise en réseau sans ExpressRoute**
 
-![Figure 1 : chemin de mise en réseau sans ExpressRoute](images/Network_Poster/ExpressRoute.png)
+![Figure 1 : chemin de mise en réseau sans ExpressRoute](media/Network-Poster/ExpressRoute.png)
   
 La figure 1 présente le chemin d'accès standard entre un réseau local et le cloud de Microsoft. Le périmètre du réseau local se connecte à Internet via un lien WAN vers un fournisseur de services Internet. Ensuite, le trafic circule à travers Internet vers le périmètre cloud de Microsoft. Les offres de cloud au sein du cloud de Microsoft incluent Office 365, Microsoft Azure, Microsoft Intune et Dynamics 365. Les utilisateurs d'une organisation peuvent se trouver sur le réseau local ou sur Internet.
   
@@ -45,7 +47,7 @@ Voici les chemins d’accès au réseau vers le cloud de Microsoft avec une conn
   
 **Figure 2 : chemins de mise en réseau avec ExpressRoute**
 
-![Figure 2 : chemins d’accès au réseau avec ExpressRoute](images/Network_Poster/ExpressRoute_post.png)
+![Figure 2 : chemins d’accès au réseau avec ExpressRoute](media/Network-Poster/ExpressRoute-post.png)
   
 La figure 2 présente deux chemins d’accès au réseau. Le trafic vers Microsoft Intune utilise le même chemin que le trafic Internet normal. Le trafic vers Office 365, Microsoft Azure et Dynamics  365 circule à travers la connexion ExpressRoute, un chemin d’accès dédié entre le périmètre du réseau local et le périmètre du cloud Microsoft.
   
@@ -87,7 +89,7 @@ Le tableau 1 affiche les trois principaux modèles de connectivité pour les co
   
 |**Même emplacement au niveau d'un échange de cloud**|**Ethernet de point à point**|**Connectivité complète (IP VPN)**|
 |:-----|:-----|:-----|
-|![Modèle de connectivité ExpressRoute : même emplacement au niveau d’un échange de cloud](images/Network_Poster/ER_Conn1.png)|![Modèle de connectivité ExpressRoute : ethernet de point à point](images/Network_Poster/ER_Conn2.png)|![Modèle de connectivité ExpressRoute : Connectivité complète (IP VPN)](images/Network_Poster/ER_Conn3.png)|
+|![Modèle de connectivité ExpressRoute : même emplacement au niveau d’un échange de cloud](media/Network-Poster/ER-Conn1.png)|![Modèle de connectivité ExpressRoute : ethernet de point à point](media/Network-Poster/ER-Conn2.png)|![Modèle de connectivité ExpressRoute : Connectivité complète (IP VPN)](media/Network-Poster/ER-Conn3.png)|
 |Si votre centre de données se trouve au même emplacement dans une installation comprenant un échange de cloud, vous pouvez organiser une connexion croisée virtuelle au cloud de Microsoft via l’échange Ethernet du fournisseur de la colocalisation.  <br/> |Si votre centre de données se trouve sur votre site, vous pouvez utiliser une liaison Ethernet de point à point pour vous connecter au cloud de Microsoft.  <br/> |Si vous utilisez déjà un fournisseur IP VPN (MPLS) pour connecter les sites de votre organisation, une connexion ExpressRoute au cloud de Microsoft fonctionnera comme un autre emplacement sur votre réseau étendu privé.  <br/> |
    
  **Tableau 1 : Modèles de connectivité ExpressRoute**
@@ -98,7 +100,7 @@ Une seule connexion ExpressRoute prend en charge jusqu'à trois relations d’ho
   
 **Figure 3 : Les trois relations BGP dans une seule connexion ExpressRoute**
 
-![Figure 3 : trois relations BGP différentes dans une seule connexion ExpressRoute](images/Network_Poster/ERPeering.png)
+![Figure 3 : trois relations BGP différentes dans une seule connexion ExpressRoute](media/Network-Poster/ERPeering.png)
   
 La figure 3 illustre une connexion ExpressRoute à partir d’un réseau local. La connexion ExpressRoute contient trois relations d’homologation logiques. Une relation d’homologation Microsoft accède aux services Microsoft SaaS, y compris Office 365 et Dynamics CRM Online. Une relation d’homologation publique accède aux services Azure PaaS. Une relation d’homologation privée accède à Azure IaaS et à une passerelle de réseau virtuel qui héberge des machines virtuelles.
   
@@ -128,7 +130,7 @@ La manière dont le trafic circule à travers les connexions ExpressRoute et au 
   
 **Figure 4 : application sur une machine virtuelle Azure accédant à une batterie de serveurs SharePoint locale**
 
-![Figure 4 : application sur une machine virtuelle Azure accédant à une batterie de serveurs SharePoint locale](images/Network_Poster/ER_App_Flow1.png)
+![Figure 4 : application sur une machine virtuelle Azure accédant à une batterie de serveurs SharePoint locale](media/Network-Poster/ER-App-Flow1.png)
 
   
 La figure 4 montre une batterie de serveurs SharePoint locale, une connexion VPN de site à site entre le réseau local et un réseau virtuel dans Azure IaaS, un serveur d’applications exécuté en tant que machine virtuelle Azure IaaS et le flux de trafic entre le serveur d’applications et la batterie de serveurs SharePoint.
@@ -139,7 +141,7 @@ Cette organisation a migré sa batterie de serveurs SharePoint locale vers Share
   
 **Figure 5 : Déplacement de la batterie de serveurs SharePoint locale vers SharePoint Online**
 
-![Figure 5 : déplacement de la batterie de serveurs SharePoint locale vers SharePoint Online](images/Network_Poster/Hairpin1.png)
+![Figure 5 : déplacement de la batterie de serveurs SharePoint locale vers SharePoint Online](media/Network-Poster/Hairpin1.png)
   
 La figure 5 indique l’ajout d’une connexion ExpressRoute avec des relations d’homologation à Microsoft SaaS, à Office 365 et à Azure IaaS contenant le serveur d’applications sur un réseau virtuel. La batterie de serveurs SharePoint locale a été migrée vers Office 365.
   
@@ -157,7 +159,7 @@ Lorsque le serveur proxy localise l’adresse IP de SharePoint Online, il transf
   
 **Figure 6 flux de trafic lorsque la batterie de serveurs SharePoint a été migrée vers SharePoint Online dans Office 365**
 
-![Figure 6 flux de trafic lorsque la batterie de serveurs SharePoint a été migrée vers SharePoint Online dans Office 365](images/Network_Poster/Hairpin2.png)
+![Figure 6 flux de trafic lorsque la batterie de serveurs SharePoint a été migrée vers SharePoint Online dans Office 365](media/Network-Poster/Hairpin2.png)
 
   
 La figure 6 indique comment le trafic entre le serveur d'applications et SharePoint Online dans Office 365 circule sur la relation d'homologation privée à partir du serveur d'applications vers le périmètre du réseau local, puis à partir du périmètre sur la relation d'homologation Microsoft vers Office 365.
@@ -186,7 +188,7 @@ Cela peut entraîner une remise non optimale dans les centres de données Micros
   
 **Figure 7 : Exemple d'une organisation géographiquement dispersée qui utilise une seule connexion ExpressRoute**
 
-![Figure 7 : exemple d’une organisation géographiquement dispersée qui utilise une seule connexion ExpressRoute](images/Network_Poster/MSNet1.png)
+![Figure 7 : exemple d’une organisation géographiquement dispersée qui utilise une seule connexion ExpressRoute](media/Network-Poster/MSNet1.png)
   
 La figure 7 illustre une organisation avec deux emplacements : l’emplacement 1 est situé dans le nord-ouest des États-Unis et l’emplacement 2 dans le nord-est du pays. Ils sont connectés par un fournisseur de réseau étendu complet. Cette organisation possède également une connexion ExpressRoute vers un emplacement d’homologation Microsoft sur la côte ouest. Le trafic de l’emplacement 2 dans le nord-est destiné à un centre de données de la côte est doit emprunter l’ensemble du réseau étendu de l’organisation jusqu’à la côte ouest où se trouve l’emplacement d’homologation Microsoft, puis traverser le pays sur le réseau cloud de Microsoft pour revenir au centre de données de la côte est.
   
@@ -194,7 +196,7 @@ Pour une remise optimale, utilisez plusieurs connexions ExpressRoute aux emplace
   
 **Figure 8 : Utilisation de plusieurs connexions ExpressRoute pour un transfert optimal vers les centres de données régionaux**
 
-![Figure 8 : utilisation de plusieurs connexions ExpressRoute pour remise optimale aux centres de données régionaux](images/Network_Poster/MSNet2.png)
+![Figure 8 : utilisation de plusieurs connexions ExpressRoute pour remise optimale aux centres de données régionaux](media/Network-Poster/MSNet2.png)
   
 La figure 8 montre la même organisation avec deux connexions ExpressRoute, une pour chaque emplacement, à des emplacements d'homologation Microsoft locaux à l'échelle de la région. Dans cette configuration, le trafic de l'emplacement 2 dans le nord-est destiné à un centre de données de la côte est accède directement à un emplacement d'homologation de la côte est, au réseau cloud de Microsoft, puis au centre de données de la côte est.
   
@@ -224,7 +226,7 @@ ExpressRoute Premium est requis pour les connexions ExpressRoute basées sur Off
   
 **Figure 9 : Réseau cloud mondial de Microsoft**
 
-![Figure 9 : réseau cloud mondial de Microsoft](images/Network_Poster/MSNet3.png)
+![Figure 9 : réseau cloud mondial de Microsoft](media/Network-Poster/MSNet3.png)
   
 La figure 9 représente un diagramme logique du réseau cloud mondial de Microsoft, avec des réseaux qui couvrent les continents et les régions du monde entier et leurs interconnexions. Avec une partie du réseau cloud de Microsoft sur chaque continent, une entreprise présente à l’échelle mondiale crée des connexions ExpressRoute Premium aux emplacements d’homologation Microsoft locaux à partir de ses bureaux régionaux.
   

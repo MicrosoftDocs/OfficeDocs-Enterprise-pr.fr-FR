@@ -8,16 +8,18 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 06d8c959-39e5-4150-b1ae-aaf0eee4c058
 description: "Résumé : Comprendre l'architecture d'offres de cloud hybride Microsoft."
-ms.openlocfilehash: bb5f72ee8fe6f1d5ffd81822edbf0e9f931b70dd
-ms.sourcegitcommit: b2058b34196022668eac15e723962fefd82d6774
+ms.openlocfilehash: 8a0c5c37c2e0dfd0c6641128b1cee89c89e16441
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "19631385"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22914919"
 ---
 # <a name="architecture-of-microsoft-hybrid-cloud-scenarios"></a>Architecture des scénarios de cloud hybride Microsoft
 
@@ -27,7 +29,7 @@ Utilisez une approche orientée architecture pour planifier et implémenter des 
   
 **Figure 1 : Pile du cloud hybride Microsoft**
 
-![Pile du cloud hybride Microsoft](images/Hybrid_Poster/Hybrid_Cloud_Stack.png)
+![Pile du cloud hybride Microsoft](media/Hybrid-Poster/Hybrid-Cloud-Stack.png)
   
 La Figure 1 présente la pile du cloud hybride Microsoft et sa couche, qui incluent les applications et scénarios d’identité, réseau et locaux et la catégorie de service de cloud (SaaS Microsoft, Azure SaaS et Azure PaaS).
   
@@ -67,8 +69,7 @@ De nombreuses entreprises, y compris celles détenues par Microsoft, utilisent u
   
 [Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs (en anglais)](https://sway.com/FJ2xsyWtkJc2taRD)
-
+[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

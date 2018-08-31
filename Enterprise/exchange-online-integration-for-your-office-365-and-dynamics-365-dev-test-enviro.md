@@ -1,5 +1,5 @@
 ---
-title: "Intégration d’Exchange Online pour votre environnement de développement/test Office 365 et Dynamics 365"
+title: Intégration d’Exchange Online pour votre environnement de développement/test Office 365 et Dynamics 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 499c5823-427a-4ba2-8fc1-9553bc2ff2d3
 description: "Résumé : Utilisez ce Guide de laboratoire de test pour activer l'intégration de Dynamics 365 pour Exchange Online dans votre abonnement à la version d'évaluation d'Office 365."
-ms.openlocfilehash: 4acfc4c676482131160ca82b5e8e405cca938cac
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+ms.openlocfilehash: 320a59043ab2a8810f9bfc03fdcf896241ec6b20
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915499"
 ---
 # <a name="exchange-online-integration-for-your-office-365-and-dynamics-365-devtest-environment"></a>Intégration d’Exchange Online pour votre environnement de développement/test Office 365 et Dynamics 365
 
@@ -39,13 +42,13 @@ Suivez les instructions figurant dans la rubrique [Environnement de développeme
 
 Suivez ces étapes pour configurer la boîte aux lettres de l'administrateur général pour l'intégration de Dynamics 365 et Exchange Online :
   
-1. À l’aide d’une session privée de votre navigateur, accédez à [http://portal.office.com](http://portal.office.com) et connectez-vous à l’aide de votre compte d’administrateur général Office 365.
+1. À l’aide d’une session privée de votre navigateur, accédez à [http://portal.office.com](http://portal.office.com) et connectez-vous à l’aide de votre compte d’administrateur général Office 365.
     
 2. Sur la page **Accueil Microsoft Office**, cliquez sur la mosaïque **Messagerie**.
     
 3. Dans le nouvel onglet **Messagerie** de votre navigateur, cliquez sur **Nouveau** et notez que la partie inférieure du volet en dessous de la zone de saisie d'un message contient une icône pour Mes modèles.
     
-     ![Nouveau message électronique vide sans l’intégration à Dynamics 365.](images/879b54fd-a68f-4581-9f89-d5050df6f4de.png)
+     ![Nouveau message électronique vide sans l’intégration à Dynamics 365.](media/879b54fd-a68f-4581-9f89-d5050df6f4de.png)
   
 4. Cliquez sur **Abandonner** et laissez l'onglet **Messagerie** ouvert.
     
@@ -87,13 +90,13 @@ Suivez ces étapes pour installer l'application Dynamics 365 pour Outlook et mon
     
 6. Dans le nouvel **Messagerie** de votre navigateur, cliquez sur **Nouveau**. Vous pouvez remarquer que la partie inférieure du volet en dessous de la zone de saisie d'un message contient maintenant une icône pour Dynamics 365.
     
-     ![Nouveau message électronique vide avec l’intégration à Dynamics 365, affichant la nouvelle icône.](images/ecb822e1-45fe-4481-99a1-294317d1d2de.png)
+     ![Nouveau message électronique vide avec l’intégration à Dynamics 365, affichant la nouvelle icône.](media/ecb822e1-45fe-4481-99a1-294317d1d2de.png)
   
 7. Cliquez sur l'icône Dynamics 365. Vous devriez voir un volet **Dynamics 365**, à partir duquel vous pouvez suivre ces modèles de messagerie ou d'accès, de la documentation commerciale ou des articles.
     
 8. Dans le champ **À** de l'e-mail, tapez **alex.y.wu@outlook.com**, puis cliquez sur **Réessayer**dans le volet **Dynamics 365**. Vous devriez voir une section **Destinataires** dans le volet **Dynamics 365** avec des informations sur Alex Wu, un contact de l'application de vente qui a été fournie avec les exemples de données pour votre abonnement à la version d'évaluation.
     
-     ![Volet d’informations Dynamics 365 pour un contact commercial stocké dans Dynamics 365.](images/a010fa5f-3f1b-47d4-ab5e-d00d85a24a3f.png)
+     ![Volet d’informations Dynamics 365 pour un contact commercial stocké dans Dynamics 365.](media/a010fa5f-3f1b-47d4-ab5e-d00d85a24a3f.png)
   
 9. Cliquez sur **Abandonner**.
 

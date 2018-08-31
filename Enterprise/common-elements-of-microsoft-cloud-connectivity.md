@@ -1,5 +1,5 @@
 ---
-title: "Éléments communs de la connectivité au cloud Microsoft"
+title: Éléments communs de la connectivité au cloud Microsoft
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
 description: "Résumé : Comprendre les éléments communs d'infrastructure réseau et comment préparer votre réseau."
-ms.openlocfilehash: b630daad3292976245c8cb5d3f493c32ad5be8a6
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
-ms.translationtype: HT
+ms.openlocfilehash: 492d13a2a62425201c727c039e45db2750202da6
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915649"
 ---
 # <a name="common-elements-of-microsoft-cloud-connectivity"></a>Éléments communs de la connectivité au cloud Microsoft
 
@@ -48,7 +51,7 @@ Utilisez votre canal Internet existant ou une connexion ExpressRoute à Office 3
   
 **Figure 1 : Options pour la connectivité cloud Microsoft**
 
-![Figure 1 :  options pour la connectivité cloud Microsoft](images/Network_Poster/CommonElements.png)
+![Figure 1 :  options pour la connectivité cloud Microsoft](media/Network-Poster/CommonElements.png)
 
   
 La figure 1 indique la façon dont un réseau local peut être connecté aux offres de cloud de Microsoft à l’aide de son canal Internet existant ou d’ExpressRoute. Le canal Internet représente une zone DMZ et peut avoir les composants suivants :

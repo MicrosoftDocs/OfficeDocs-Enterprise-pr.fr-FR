@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: 'Résumé : Comprendre la définition et les éléments du cloud hybride Microsoft.'
-ms.openlocfilehash: 6d23f4f759e882ed925bd8bcb4c21ee365b231a0
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: b77df519dc89a5ab97d965c16dc9f54955614903
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915819"
 ---
 # <a name="hybrid-cloud-overview"></a>Présentation du cloud hybride
 
@@ -36,7 +39,7 @@ Le cloud hybride Microsoft représente un ensemble de scénarios professionnels 
     
 **Figure 1 : Composants du cloud hybride Microsoft**
 
-![Composants du cloud hybride Microsoft](images/Hybrid_Poster/MS_Hybrid_Cloud.png)
+![Composants du cloud hybride Microsoft](media/Hybrid-Poster/MS-Hybrid-Cloud.png)
   
 La figure 1 présente les composants du cloud hybride Microsoft, d’un réseau local à l’ensemble des services Office 365, Paas Azure et IaaS Azure disponibles sur Internet ou une connexion ExpressRoute.
   

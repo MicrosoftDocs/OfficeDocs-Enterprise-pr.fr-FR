@@ -11,16 +11,17 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
-description: 'Résumé : Configurez l’infrastructure Microsoft Azure pour la haute disponibilité de l’hôte authentification fédérée pour Office 365.'
-ms.openlocfilehash: 465c53efe8464ac823ebb3cd0e847a854eed82bb
-ms.sourcegitcommit: a4322cac992ce64b92f0335bf005a7420195d9be
+description: 'Résumé : Configurez l’infrastructure Microsoft Azure pour qu’elle héberge un authentification fédérée haute disponibilité pour Office 365.'
+ms.openlocfilehash: e88204d7f69c56c951f5d6ebd4d978c96e4c52ba
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915459"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Authentification fédérée haute disponibilité, phase 1 : Configurer Azure
 
- **Résumé :** Configurer l’infrastructure Microsoft Azure utilisant l’authentification de haute disponibilité fédérée hôte pour Office 365.
+ **Résumé :** Configurez l’infrastructure Microsoft Azure pour qu’elle héberge un authentification fédérée haute disponibilité pour Office 365.
   
 Dans cette phase, vous créez les groupes de ressources, virtuels ensembles de réseau (VNet) et la disponibilité dans Azure qui hébergera les ordinateurs virtuels dans les phases 2, 3 et 4. Vous devez effectuer cette phase avant de passer à [haute disponibilité fédérés authentification Phase 2 : configurer les contrôleurs de domaine](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Voir [authentification fédérée de déploiement haute disponibilité pour Office 365 dans Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) pour toutes les phases.
   
@@ -40,11 +41,11 @@ Avant de commencer la configuration des composants d’Azure, renseignez les tab
   
 |**Élément**|**Paramètre de configuration**|**Description**|**Valeur**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |Nom du réseau virtuel  <br/> |Un nom à attribuer au réseau virtuel (exemple FedAuthNet).  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|2.  <br/> |Emplacement du réseau virtuel  <br/> |Le centre de données Azure régional qui contiendra le réseau virtuel.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|3.  <br/> |Adresse IP du périphérique VPN  <br/> |Adresse IPv4 publique de l'interface de votre périphérique VPN sur Internet.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|4.  <br/> |Espace d'adressage du réseau virtuel  <br/> |Espace d'adressage du réseau virtuel. Renseignez-vous auprès de votre service informatique pour déterminer cet espace d'adressage.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|5.  <br/> |Clé partagée IPsec  <br/> |Chaîne alphanumérique aléatoire de 32 caractères, utilisée pour authentifier les deux côtés de la connexion VPN de site à site. Renseignez-vous auprès de votre service informatique ou de sécurité pour déterminer cette valeur de clé. Vous pouvez également consulter la page relative à la [création d'une chaîne aléatoire pour une clé prépartagée IPsec](http://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|1.  <br/> |Nom du réseau virtuel  <br/> |Un nom à attribuer au réseau virtuel (exemple FedAuthNet).  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |Emplacement du réseau virtuel  <br/> |Le centre de données Azure régional qui contiendra le réseau virtuel.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |Adresse IP du périphérique VPN  <br/> |Adresse IPv4 publique de l'interface de votre périphérique VPN sur Internet.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |Espace d'adressage du réseau virtuel  <br/> |Espace d'adressage du réseau virtuel. Renseignez-vous auprès de votre service informatique pour déterminer cet espace d'adressage.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|5.  <br/> |Clé partagée IPsec  <br/> |Chaîne alphanumérique aléatoire de 32 caractères, utilisée pour authentifier les deux côtés de la connexion VPN de site à site. Renseignez-vous auprès de votre service informatique ou de sécurité pour déterminer cette valeur de clé. Vous pouvez également consulter la page relative à la [création d'une chaîne aléatoire pour une clé prépartagée IPsec](http://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
  **Tableau V : configuration de réseau virtuel entre différents locaux**
   
@@ -62,10 +63,10 @@ Renseignez-vous auprès de votre service informatique pour déterminer ces espac
   
 |**Élément**|**Nom du sous-réseau**|**Espace d'adressage de sous-réseau**|**Objectif**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |Le sous-réseau utilisé par le contrôleur de domaine Windows Server Active Directory (AD) et les machines virtuelles du serveur DirSync.  <br/> |
-|2.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |Le sous-réseau utilisé par les machines virtuelles AD FS.  <br/> |
-|3.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |Le sous-réseau utilisé par les machines virtuelles du proxy d’application web.  <br/> |
-|4.  <br/> |GatewaySubnet  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |Sous-réseau utilisé par les machines virtuelles de la passerelle Azure.  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Le sous-réseau utilisé par le contrôleur de domaine Windows Server Active Directory (AD) et les machines virtuelles du serveur DirSync.  <br/> |
+|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Le sous-réseau utilisé par les machines virtuelles AD FS.  <br/> |
+|3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Le sous-réseau utilisé par les machines virtuelles du proxy d’application web.  <br/> |
+|4.  <br/> |GatewaySubnet  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Sous-réseau utilisé par les machines virtuelles de la passerelle Azure.  <br/> |
    
  **Tableau S : sous-réseaux dans le réseau virtuel**
   
@@ -73,14 +74,14 @@ Ensuite, renseignez le Tableau I pour les adresses IP statiques affectées à de
   
 |**Élément**|**Objectif**|**Adresse IP sur le sous-réseau**|**Valeur**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |Adresse IP statique du premier contrôleur de domaine  <br/> |La quatrième adresse IP possible pour l'espace d'adressage du sous-réseau défini dans l'Élément 1 du Tableau S.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|2.  <br/> |Adresse IP statique du deuxième contrôleur de domaine  <br/> |La cinquième adresse IP possible pour l'espace d'adressage du sous-réseau défini dans l'Élément 1 du Tableau S.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|3.  <br/> |Adresse IP statique du serveur DirSync  <br/> |La sixième adresse IP possible pour l’espace d’adressage du sous-réseau défini dans l’Élément 1 du Tableau S.   <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|4.  <br/> |Adresse IP statique de l’équilibreur de charge interne des serveurs AD FS  <br/> |La quatrième adresse IP possible pour l’espace d’adressage du sous-réseau défini dans l’Élément 2 du Tableau S.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|5.  <br/> |Adresse IP statique du premier serveur AD FS  <br/> |La cinquième adresse IP possible pour l’espace d’adressage du sous-réseau défini dans l’Élément 2 du Tableau S.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|6.  <br/> |Adresse IP statique du deuxième serveur AD FS  <br/> |La sixième adresse IP possible pour l’espace d’adressage du sous-réseau défini dans l’Élément 2 du Tableau S.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|7.  <br/> |Adresse IP statique du premier serveur proxy d’application web  <br/> |La quatrième adresse IP possible pour l’espace d’adressage du sous-réseau défini dans l’Élément 3 du Tableau S.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|8.  <br/> |Adresse IP statique du deuxième serveur proxy d’application web  <br/> |La cinquième adresse IP possible pour l’espace d’adressage du sous-réseau défini dans l’Élément 3 du Tableau S.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|1.  <br/> |Adresse IP statique du premier contrôleur de domaine  <br/> |La quatrième adresse IP possible pour l'espace d'adressage du sous-réseau défini dans l'Élément 1 du Tableau S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |Adresse IP statique du deuxième contrôleur de domaine  <br/> |La cinquième adresse IP possible pour l'espace d'adressage du sous-réseau défini dans l'Élément 1 du Tableau S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |Adresse IP statique du serveur DirSync  <br/> |La sixième adresse IP possible pour l’espace d’adressage du sous-réseau défini dans l’Élément 1 du Tableau S.   <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |Adresse IP statique de l’équilibreur de charge interne des serveurs AD FS  <br/> |La quatrième adresse IP possible pour l’espace d’adressage du sous-réseau défini dans l’Élément 2 du Tableau S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|5.  <br/> |Adresse IP statique du premier serveur AD FS  <br/> |La cinquième adresse IP possible pour l’espace d’adressage du sous-réseau défini dans l’Élément 2 du Tableau S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|6.  <br/> |Adresse IP statique du deuxième serveur AD FS  <br/> |La sixième adresse IP possible pour l’espace d’adressage du sous-réseau défini dans l’Élément 2 du Tableau S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|7.  <br/> |Adresse IP statique du premier serveur proxy d’application web  <br/> |La quatrième adresse IP possible pour l’espace d’adressage du sous-réseau défini dans l’Élément 3 du Tableau S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|8.  <br/> |Adresse IP statique du deuxième serveur proxy d’application web  <br/> |La cinquième adresse IP possible pour l’espace d’adressage du sous-réseau défini dans l’Élément 3 du Tableau S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
  **Tableau I : Adresses IP statiques dans le réseau virtuel**
   
@@ -88,8 +89,8 @@ Pour deux serveurs DNS (Domain Name System) de votre réseau local que vous souh
   
 |**Élément**|**Nom convivial du serveur DNS**|**Adresse IP du serveur DNS**|
 |:-----|:-----|:-----|
-|1.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|2.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
  **Tableau D : serveurs DNS locaux**
   
@@ -99,16 +100,16 @@ Pour l’ensemble des espaces d’adressage du réseau local, remplissez le tabl
   
 |**Élément**|**Espace d'adressage du réseau local**|
 |:-----|:-----|
-|1.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|2.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|3.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
  **Tableau L : préfixes d'adresse pour le réseau local**
   
 Commençons à présent à créer l’infrastructure Azure pour héberger votre authentification fédérée pour Office 365.
   
 > [!NOTE]
-> [!REMARQUE] Les ensembles de commandes suivants utilisent la dernière version d'Azure PowerShell. Reportez-vous à la rubrique relative à la [prise en main des cmdlets Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> Les ensembles de commandes suivants utilisent la dernière version d’Azure PowerShell. Reportez-vous à la rubrique relative à la [prise en main des cmdlets Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
   
 Tout d'abord, démarrez une invite PowerShell Azure et connectez-vous à votre compte.
   
@@ -119,7 +120,7 @@ Login-AzureRMAccount
 > [!TIP]
 > Pour un fichier texte qui contient toutes les commandes PowerShell dans cet article et un classeur Microsoft Excel configuration qui génère des blocs de commande PowerShell prête à exécuter en fonction de vos paramètres personnalisés, voir l’authentification fédérée pour Office 365 [dans Kit de déploiement Azure](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
   
-Obtenez le nom de votre abonnement à l'aide de la commande suivante.
+Obtenez le nom de votre abonnement à l’aide de la commande suivante.
   
 ```
 Get-AzureRMSubscription | Sort Name | Select Name
@@ -131,7 +132,7 @@ Pour les versions antérieures de Windows Azure PowerShell, utilisez cette comma
 Get-AzureRMSubscription | Sort Name | Select SubscriptionName
 ```
 
-Définissez votre abonnement Azure. Remplacer tous les éléments entre guillemets, y compris la \< et > caractères, avec le nom correct.
+Définissez votre abonnement Azure. Remplacez tout le texte entre guillemets, y compris les caractères \< et >, avec le nom correct.
   
 ```
 $subscr="<subscription name>"
@@ -148,10 +149,10 @@ Renseignez le tableau suivant pour l'ensemble unique de noms de groupes de resso
   
 |**Élément**|**Nom de groupe de ressources**|**Objectif**|
 |:-----|:-----|:-----|
-|1.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |Contrôleurs de domaine  <br/> |
-|2.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |Serveurs AD FS  <br/> |
-|3.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |Serveurs proxy d’application web  <br/> |
-|4.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |Éléments de l'infrastructure  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Contrôleurs de domaine  <br/> |
+|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Serveurs AD FS  <br/> |
+|3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Serveurs proxy d’application web  <br/> |
+|4.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Éléments de l'infrastructure  <br/> |
    
  **Tableau R : Groupes de ressources**
   
@@ -273,9 +274,9 @@ Ensuite, définissez les noms des trois groupes de disponibilité. Remplissez le
   
 |**Élément**|**Objectif**|**Nom du groupe de disponibilité**|
 |:-----|:-----|:-----|
-|1.  <br/> |Contrôleurs de domaine  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|2.  <br/> |Serveurs AD FS  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|3.  <br/> |Serveurs proxy d’application web  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|1.  <br/> |Contrôleurs de domaine  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |Serveurs AD FS  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |Serveurs proxy d’application web  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
  **Tableau A : Groupes de disponibilité**
   
@@ -298,13 +299,13 @@ New-AzureRMAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $l
 
 Voici la configuration obtenue à la fin de cette phase.
   
-**Phase 1 : L’infrastructure Azure pour l’authentification fédérée de haute disponibilité pour Office 365**
+**Phase 1 : L’infrastructure Azure pour une authentification fédérée haute disponibilité pour Office 365**
 
-![Phase 1 de l’infrastructure d’authentification fédérée haute disponibilité Office 365 dans Azure à l’aide de l’infrastructure Azure](images/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
+![Phase 1 de l’infrastructure d’authentification fédérée haute disponibilité Office 365 dans Azure à l’aide de l’infrastructure Azure](media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
   
 ## <a name="next-step"></a>Étape suivante
 
-Utilisez [haute disponibilité fédérés authentification Phase 2 : configurer les contrôleurs de domaine](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) pour poursuivre la configuration de cette charge de travail.
+Utilisez [High availability federated authentication Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) pour poursuivre la configuration de cette charge de travail.
   
 ## <a name="see-also"></a>Voir aussi
 
@@ -314,6 +315,6 @@ Utilisez [haute disponibilité fédérés authentification Phase 2 : configurer
   
 [Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.md)
 
-[Identité fédérée pour Office 365](https://support.office.com/article/Understanding-Office-365-identity-and-Azure-Active-Directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9#bk_federated)
+[Présentation de l’identité Office 365 et d’Azure Active Directory](about-office-365-identity.md)
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Sécuriser les sites d’équipe SharePoint Online pour les ressources sensibles et hautement confidentielles"
+title: Sécuriser les sites d’équipe SharePoint Online pour les ressources sensibles et hautement confidentielles
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 8c088e88-a9ba-4044-bced-722196f4496d
 description: "Résumé : Découvrez comment Contoso a mis en œuvre des sites d'équipe SharePoint Online hautement confidentiels et avec protection des données sensibles, afin de permettre une collaboration simple, mais sécurisée, entre ses centres de recherche et ses cadres."
-ms.openlocfilehash: c615280d39117f68515fb13d4ba83428d73e4fd3
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+ms.openlocfilehash: 23511e4156bb04e8bacf970913b00ed36e8ff9c8
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22914859"
 ---
 # <a name="secure-sharepoint-online-team-sites-for-sensitive-and-highly-confidential-assets"></a>Sécuriser les sites d’équipe SharePoint Online pour les ressources sensibles et hautement confidentielles
 
@@ -30,7 +33,7 @@ Les administrateurs de la sécurité et de SharePoint au sein du service informa
   
 **Figure 1 : Comparaison des sites d'équipe SharePoint Online hautement confidentiels et avec protection des données sensibles**
 
-![Sites d’équipe SharePoint Online hautement confidentiels et avec protection des données sensibles](images/Contoso_Poster/SP_Solution.png)
+![Sites d’équipe SharePoint Online hautement confidentiels et avec protection des données sensibles](media/Contoso-Poster/SP-Solution.png)
   
 Contoso a créé des sites d’équipe SharePoint Online sécurisés pour ses cadres et ses équipes de recherche de la manière suivante :
   

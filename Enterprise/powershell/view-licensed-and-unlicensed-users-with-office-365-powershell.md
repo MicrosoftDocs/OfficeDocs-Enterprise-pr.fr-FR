@@ -15,11 +15,12 @@ ms.custom:
 - PowerShell
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
 description: Explique comment utiliser Office 365 PowerShell pour afficher des comptes d'utilisateurs sous licence ou non.
-ms.openlocfilehash: b26c98c1c294e2f1369d4368d0b1415702580a83
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
-ms.translationtype: HT
+ms.openlocfilehash: d182e53992b189e8ede52e6d133b864a17ba7232
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22914869"
 ---
 # <a name="view-licensed-and-unlicensed-users-with-office-365-powershell"></a>Afficher les utilisateurs avec ou sans licence avec Office 365 PowerShell
 
@@ -57,9 +58,9 @@ Get-MsolUser -All | where {$_.isLicensed -eq $true}
 
 ## <a name="the-long-version-instructions-with-detailed-explanations"></a>La version longue (instructions avec des explications détaillées)
 
-Les comptes d'utilisateur Office 365 et les licences Office 365 ne requièrent pas de correspondance de 1 à 1 : il est possible que des utilisateurs Office 365 ne possèdent pas de licence Office 365 et que des licences Office 365 n'aient pas été attribuées à un utilisateur. (En fait, un compte d'utilisateur peut même avoir  *plusieurs*  licences Office 365.) Lorsque vous créez un compte d'utilisateur Office 365 (consultez l'article [utilisateurs de licence Office 365 avec Windows PowerShell](http://technet.microsoft.com/library/0ab9fcac-e5ea-4b5b-b72c-8c92c55565ac.aspx) pour obtenir plus d'informations), vous n'avez pas à attribuer de licence à cet utilisateur : le nouvel utilisateur disposera d'un compte valide, mais il ne sera pas en mesure de se connecter à Office 365. S'il essaie de se connecter, il verra quelque chose de semblable à ceci :
+Comptes d’utilisateurs Office 365 et des licences Office 365 n’avez pas besoin d’avoir une correspondance : il est possible d’avoir des utilisateurs Office 365 ne disposant pas d’une licence Office 365, et il est possible d’avoir des licences Office 365 qui n’ont pas été attribués à un utilisateur. (En fait, un compte d’utilisateur unique peut même disposer de *plusieurs* Office 365 licences.) Lorsque vous créez un nouvel utilisateur Office 365 compte (voir l’article [attribuer des licences pour les comptes d’utilisateurs avec Office 365 PowerShell](assign-licenses-to-user-accounts-with-office-365-powershell.md) pour plus d’informations vous) n’êtes pas obligé de lui attribuer une licence : le nouvel utilisateur dispose d’un compte valid, mais qu’il ne pourra sig n dans vers Office 365. Si quelqu'un essaie de se connecter, ils verront un résultat semblable à ceci :
   
-![Utilisateur sans licence Office 365 valide.](images/o365_powershell_no_license.png)
+![Utilisateur sans licence Office 365 valide.](media/o365-powershell-no-license.png)
   
 De même, un utilisateur peut décider de prendre des congés prolongés, voire une année sabbatique ou un congé de maternité/paternité. Dans ce cas, vous pouvez retirer la licence à l'utilisateur, mais laisser le compte intact (c'est-à-dire laisser toutes les valeurs de propriété, telles que l'adresse et le numéro de téléphone, telles quelles). Ainsi, vous pouvez attribuer sa licence à quelqu'un d'autre (par exemple, un employé qui remplace temporairement la personne en congé). Lorsque l'utilisateur retourne au travail, vous pouvez lui délivrer une nouvelle licence et il sera en mesure de reprendre le travail comme s'il n'était jamais parti.
   
@@ -125,7 +126,6 @@ AlexD@litwareinc.com        Alex Darrow                     True
 Comme vous le voyez, les informations ne sont pas renvoyées pour Belinda Newman. Pourquoi ? Vous avez la solution : parce que la propriété **isLicensed** pour le compte de Belinda n'est pas définie sur `True`.
   
 ## <a name="see-also"></a>Voir aussi
-<a name="SeeAlso"> </a>
 
 Pour plus d’informations sur les cmdlets utilisées dans ces procédures, consultez les rubriques suivantes :
   

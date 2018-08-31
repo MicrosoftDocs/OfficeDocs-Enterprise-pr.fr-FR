@@ -3,20 +3,23 @@ title: Solutions hybrides
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 3/2/2018
+ms.date: 07/30/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: "Résumé : Utilisez les articles suivants pour déployer les charges de travail d'Office Server dans Microsoft Azure."
-ms.openlocfilehash: 37294a80217b5aa99aa4589fe464ca92d2f2ab23
-ms.sourcegitcommit: b1cb876c8a8fca1c2d67b2bc8282f1361066962c
-ms.translationtype: HT
+ms.openlocfilehash: c648ecb7df1a4604960a5b0445ce3de7a74c9acf
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915869"
 ---
 # <a name="hybrid-solutions"></a>Solutions hybrides
 
@@ -28,7 +31,7 @@ Pour l’infrastructure d’identité Office 365 dans Azure :
 
 - [Utiliser Azure AD pour l’authentification SharePoint Server](using-azure-ad-for-sharepoint-server-authentication.md)
 
-- [Déployer la synchronisation d’annuaires (DirSync) Office 365 dans Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+- [Déploiement de la synchronisation d’annuaires Office 365 dans Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
   
 - [Connecter un réseau local à Microsoft Azure Virtual Network](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
     
@@ -42,15 +45,7 @@ Pour les charges de travail SharePoint Server 2013 dans Azure :
     
 - [Sites Internet dans Microsoft Azure qui utilisent SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
   
-    
-**Participer à la discussion**
-
-|**Contactez-nous**|**Description**|
-|:-----|:-----|
-|**De quelles solutions avez-vous besoin ?** <br/> |Nous sommes en train de créer du contenu pour les solutions qui s'étendent sur plusieurs produits et services Microsoft. Donnez-nous votre avis sur nos solutions entre serveurs ou demandez des solutions spécifiques en envoyant un courrier électronique à [MODAcontent@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20).<br/> |
-|**Participer à la discussion sur les solutions** <br/> |Si vous êtes passionné par les solutions basées sur le cloud, rejoignez le conseil consultatif de l’adoption cloud (CAAB) pour interagir avec une communauté vaste et dynamique de développeurs de contenu Microsoft, de professionnels du secteur et de clients venant du monde entier. Pour participer, ajoutez-vous en tant que membre de l’espace [CAAB (Conseil consultatif de l’adoption cloud)](https://aka.ms/caab) de la communauté Microsoft Tech et envoyez-nous un message électronique à l’adresse [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Tout le monde peut lire le contenu lié à la communauté sur le [blog CAAB](https://blogs.technet.com/b/solutions_advisory_board/). Toutefois, les membres CAAB reçoivent des invitations à des webinaires privés qui décrivent les nouvelles solutions et ressources relatives à l’adoption cloud.<br/> |
-|**Obtenir l'image que vous voyez ici** <br/> |Si vous voulez obtenir une copie modifiable de l’image que vous voyez dans cet article, nous serons ravis de vous l’envoyer. Envoyez-nous votre demande par courrier électronique, en incluant l’URL et le titre de l’illustration, à [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20).<br/> |
-   
+  
 ## <a name="see-also"></a>Voir aussi
 
 [Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.md)

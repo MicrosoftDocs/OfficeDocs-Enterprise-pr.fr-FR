@@ -1,5 +1,5 @@
 ---
-title: "Créer de A à Z"
+title: Créer de A à Z
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,27 +8,30 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 84348d0c-d9d1-4a98-9b99-8433f9b70e45
-description: "Résumé : Obtenir les détails sur l’ensemble du nuage des blocs de construction de stockage que vous pouvez utiliser pour créer votre propre service de stockage ou de la solution."
-ms.openlocfilehash: be7ea3e7526115f1a983ec89f2afeb5d130daee1
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Résumé : Obtenir les détails sur l’ensemble des blocs de construction du stockage cloud que vous pouvez utiliser pour créer votre propre service ou solution de stockage.'
+ms.openlocfilehash: 8ef5d7a99c4e82d9a4fc3eb281a4af505887b792
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915679"
 ---
 # <a name="build-from-the-ground-up"></a>Créer de A à Z
 
- **Résumé :** Obtenir les détails sur l’ensemble du nuage des blocs de construction de stockage que vous pouvez utiliser pour créer votre propre service de stockage ou de la solution.
+ **Résumé :** Obtenir les détails sur l’ensemble des blocs de construction du stockage cloud que vous pouvez utiliser pour créer votre propre service ou solution de stockage.
   
 Les solutions de stockage à « créer de toutes pièces » :
   
 - Permettent de créer votre propre solution de stockage à partir de zéro. 
     
-- Nécessite la programmation à l’aide de l’API de reste.
+- Nécessite la programmation à l’aide de l’API REST.
     
-- Offrir le nec plus ultra de la flexibilité et de personnalisation.
+- Fournir le meilleur en la personnalisation et la flexibilité.
     
 Les sections suivantes décrivent les détails de chaque option de stockage à « créer de toutes pièces ».
   
@@ -46,7 +49,7 @@ Les sections suivantes décrivent les détails de chaque option de stockage à �
     
 - Fonctionne avec Linux et Windows
     
-- Ne prend pas en charge l’authentification AD Azure ou ACL (clés de stockage Azure compte fournissent une authentification et un accès autorisé au partage de fichiers)
+- Ne prend en charge l’authentification basée sur AD-Azure ou ACL (clés de compte de stockage Azure fournissent l’authentification et l’accès autorisé pour le partage de fichiers)
     
 ### <a name="common-uses"></a>Utilisations courantes
 
@@ -70,7 +73,12 @@ Pour plus d'informations sur les coûts, cliquez [ici](http://azure.microsoft.co
 
 ### <a name="features"></a>Fonctionnalités
 
-- Chaque compte de stockage peut contenir jusqu'à 500 To (un abonnement peut avoir plusieurs comptes de stockage)
+- Chaque compte de stockage peut contenir jusqu’à 500 To (un abonnement peut avoir plusieurs comptes de stockage)
+
+
+
+
+
     
 - Les comptes de stockage sont organisés en conteneurs auxquels une sécurité peut être appliquée et qui peuvent contenir des objets blob
     
@@ -84,7 +92,7 @@ Pour plus d'informations sur les coûts, cliquez [ici](http://azure.microsoft.co
     
 ### <a name="common-uses"></a>Utilisations courantes
 
-- Sauvegardes de fichiers, des ordinateurs, des bases de données et des périphériques des Images et du texte pour les applications web
+- Sauvegardes des Images de fichiers, des ordinateurs, des bases de données et des périphériques et du texte pour les applications web
     
 - Données de configuration pour les applications cloud
     
@@ -144,7 +152,8 @@ Pour plus d'informations sur les coûts, cliquez [ici](http://azure.microsoft.co
     
 - Généralement plus économique qu’un SQL traditionnel
     
-- Très rapide si l’interrogation de la clé, ralentir si une recherche de valeur
+- Très rapide en cas d’interrogation d’une clé, lent en cas d’interrogation d’une valeur
+
     
 - Très extensible : n’importe quelle quantité de tables dans les limites du compte de stockage
     
@@ -196,7 +205,8 @@ Lorsque vous concevez votre solution de stockage personnalisé avec le Stockage 
   
 [Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs](https://sway.com/FJ2xsyWtkJc2taRD)
+[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs (en anglais)](https://sway.com/FJ2xsyWtkJc2taRD)
+
 
 
 

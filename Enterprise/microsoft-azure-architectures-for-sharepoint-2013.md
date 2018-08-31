@@ -1,5 +1,5 @@
 ---
-title: "Architectures Microsoft Azure pour SharePoint 2013"
+title: Architectures Microsoft Azure pour SharePoint 2013
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -11,12 +11,13 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
-description: "Résumé : Les solutions SharePoint 2013 peuvent être hébergées sur des machines virtuelles Microsoft Azure. Découvrez quels types de solution sont adaptés et comment configurer Microsoft Azure pour en héberger une."
-ms.openlocfilehash: 5156f3e8cabb3acabc7ad23a680a016c200c676e
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: 'Résumé : Les solutions SharePoint 2013 peuvent être hébergées sur des machines virtuelles Microsoft Azure. Découvrez quels types de solution sont adaptés et comment configurer Microsoft Azure pour en héberger une.'
+ms.openlocfilehash: f7d34f5f9640a8f404265433806ccc39a35c8fd5
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915379"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>Architectures Microsoft Azure pour SharePoint 2013
 
@@ -53,7 +54,7 @@ Pour des solutions et des charges de travail de collaboration et intranet, envis
 
 Bien que cet article utilise des exemples de topologies SharePoint, vous pouvez utiliser ces concepts de conception avec n'importe quelle topologie de batterie de serveurs SharePoint. Avant de concevoir l'environnement Azure, suivez les instructions suivantes en matière de topologie, d'architecture, de capacité et de performances pour concevoir la batterie de serveurs SharePoint :
   
-- [Conception de l'architecture pour les professionnels de l'informatique SharePoint 2013](http://technet.microsoft.com/fr-FR/sharepoint/fp123594.aspx)
+- [Conception de l'architecture pour les professionnels de l'informatique SharePoint 2013](http://technet.microsoft.com/en-us/sharepoint/fp123594.aspx)
     
 - [Plan for performance and capacity management in SharePoint Server 2013](http://technet.microsoft.com/library/8dd52916-f77d-4444-b593-1f7d6f330e5f.aspx)
     
@@ -76,7 +77,7 @@ Si vous étendez votre réseau local à Azure via une connexion entre différent
   
 **Figure 1 : environnement local avec un réseau virtuel dans Azure**
 
-![Conception de réseau virtuel Microsoft Azure pour une solution SharePoint. Un sous-réseau pour la passerelle Azure. Un sous-réseau pour les machines virtuelles.](images/OPrrasconWA_AZarch.png)
+![Conception de réseau virtuel Microsoft Azure pour une solution SharePoint. Un sous-réseau pour la passerelle Azure. Un sous-réseau pour les machines virtuelles.](media/OPrrasconWA-AZarch.png)
   
 Dans ce schéma :
   
@@ -92,7 +93,7 @@ Lorsque vous planifiez une connexion entre différents locaux, vous définissez 
   
 **Figure 2 : utilisation d'une passerelle Azure et d'un périphérique de passerelle local pour fournir une connectivité de site à site entre l'environnement local et Azure**
 
-![Environnement local connecté à un réseau virtuel Azure via une connexion entre les différents locaux, qui peut être une connexion VPN de site à site ou ExpressRoute](images/AZarch_VPNgtwyconnct.png)
+![Environnement local connecté à un réseau virtuel Azure via une connexion entre les différents locaux, qui peut être une connexion VPN de site à site ou ExpressRoute](media/AZarch-VPNgtwyconnct.png)
   
 Dans ce schéma :
   
@@ -110,7 +111,7 @@ Pour une récupération d'urgence dans Azure, déployez Windows Server AD et un 
   
 **Figure 3 : configuration de domaine Active Directory hybride**
 
-![Deux machines virtuelles déployées sur le réseau virtuel Azure et le sous-réseau de batterie de serveurs SharePoint sont des contrôleurs de domaine répliqués et des serveurs DNS](images/AZarch_HyADdomainConfig.png)
+![Deux machines virtuelles déployées sur le réseau virtuel Azure et le sous-réseau de batterie de serveurs SharePoint sont des contrôleurs de domaine répliqués et des serveurs DNS](media/AZarch-HyADdomainConfig.png)
   
 Ce schéma, qui s’appuie sur les schémas précédents, ajoute deux machines virtuelles à un sous-réseau Windows Server AD et DNS. Ces machines virtuelles sont des serveurs DNS et des contrôleurs de domaine répliqués. Elles constituent une extension de l’environnement Windows Server AD local. 
   
@@ -134,7 +135,7 @@ Placez les machines virtuelles de la batterie de serveurs SharePoint dans des ni
   
 **Figure 4 : placement des machines virtuelles SharePoint**
 
-![Serveurs de base de données et rôles de serveur SharePoint ajoutés au réseau virtuel Azure dans le sous-réseau de batterie de serveurs SharePoint](images/AZarch_SPVMsinCloudSer.png)
+![Serveurs de base de données et rôles de serveur SharePoint ajoutés au réseau virtuel Azure dans le sous-réseau de batterie de serveurs SharePoint](media/AZarch-SPVMsinCloudSer.png)
   
 Ce schéma, qui s’appuie sur les schémas précédents, ajoute les rôles de serveur de batterie de serveurs SharePoint dans leurs niveaux respectifs.
   
@@ -150,7 +151,7 @@ Lorsque vous concevez l'architecture Azure pour une batterie de serveurs SharePo
   
 **Figure 5 : utilisation de groupes à haute disponibilité Azure pour fournir une haute disponibilité aux niveaux de batterie de serveurs SharePoint**
 
-![Configuration de groupes à haute disponibilité dans l’infrastructure Azure pour une solution SharePoint 2013](images/AZenv_WinAzureAvailSetsHA.png)
+![Configuration de groupes à haute disponibilité dans l’infrastructure Azure pour une solution SharePoint 2013](media/AZenv-WinAzureAvailSetsHA.png)
   
 Ce schéma appelle la configuration des groupes à haute disponibilité au sein de l'infrastructure Azure. Chacun des rôles suivants partage un groupe à haute disponibilité distinct :
   
@@ -170,7 +171,7 @@ Voici un exemple qui montre une architecture de sites Internet standard rempliss
   
 **Figure 6 : exemple de planification pour les objectifs de capacité et de performances dans une batterie de serveurs à trois niveaux**
 
-![Architecture des sites Internet SharePoint 2013 standard avec affectations de composants répondant à des objectifs de capacité et de performances spécifiques](images/AZarch_CapPerfexmpArch.png)
+![Architecture des sites Internet SharePoint 2013 standard avec affectations de composants répondant à des objectifs de capacité et de performances spécifiques](media/AZarch-CapPerfexmpArch.png)
   
 Dans ce schéma :
   
@@ -186,7 +187,7 @@ Examinons de plus près le niveau Serveur d'applications.
   
 **Figure 7 : niveau Serveur d'applications avant ajustement**
 
-![Exemple de niveau du serveur d’applications SharePoint Server 2013 avant ajustement pour les groupes à haute disponibilité de Microsoft Azure](images/AZarch_AppServtierBefore.png)
+![Exemple de niveau du serveur d’applications SharePoint Server 2013 avant ajustement pour les groupes à haute disponibilité de Microsoft Azure](media/AZarch-AppServtierBefore.png)
   
 Dans ce schéma :
   
@@ -202,7 +203,7 @@ Vous déterminez le nombre de composants d'après les cibles de performances et 
   
 **Figure 8 : niveau Serveur d'applications après ajustement**
 
-![Exemple de niveau du serveur d’applications SharePoint Server 2013 après ajustement pour les groupes à haute disponibilité de Microsoft Azure](images/AZarch_AppServtierAfter.png)
+![Exemple de niveau du serveur d’applications SharePoint Server 2013 après ajustement pour les groupes à haute disponibilité de Microsoft Azure](media/AZarch-AppServtierAfter.png)
   
 Ce schéma montre les trois serveurs d’applications configurés de façon identique avec les quatre mêmes composants.
   
@@ -210,7 +211,7 @@ Lorsque nous ajoutons des groupes à haute disponibilité aux niveaux de la batt
   
 **Figure 9 : batterie de serveurs SharePoint terminée dans les services d'infrastructure Azure**
 
-![Exemple de batterie de serveurs SharePoint 2013 dans les services d’infrastructure Azure avec réseau virtuel, connectivité entre différents réseaux, sous-réseaux, machines virtuelles et groupes à haute disponibilité](images/7256292f-bf11-485b-8917-41ba206153ee.png)
+![Exemple de batterie de serveurs SharePoint 2013 dans les services d’infrastructure Azure avec réseau virtuel, connectivité entre différents réseaux, sous-réseaux, machines virtuelles et groupes à haute disponibilité](media/7256292f-bf11-485b-8917-41ba206153ee.png)
   
 Ce schéma illustre la batterie de serveurs SharePoint implémentée dans les services d’infrastructure Azure, avec des groupes à haute disponibilité pour fournir des domaines d’erreur pour les serveurs de chaque niveau.
   

@@ -9,13 +9,16 @@ ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 48e16935-3429-456a-8fe6-50afa257924c
 description: 'Résumé : Découvrez comment créer un laboratoire de test intégré contenant un serveur qui exécute Exchange Server 2013, un serveur qui exécute Lync Server 2013 et un serveur qui exécute SharePoint Server 2013.'
-ms.openlocfilehash: a15bdefe1749bca98933a8b9a4c4874130732eda
-ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
+ms.openlocfilehash: bb668dcaff53f37127f43551cb4b108589a39def
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915599"
 ---
 # <a name="test-lab-guide-configure-an-integrated-exchange-lync-and-sharepoint-test-lab"></a>Guide de laboratoire de test : Configurer un laboratoire de test Exchange, Lync et SharePoint intégré
 
@@ -27,7 +30,7 @@ ms.lasthandoff: 04/20/2018
  
 Le laboratoire de test résultant de cette configuration, qui inclut l'authentification de serveur à serveur entre les trois types de serveurs, permet de créer et de faire la démonstration de scénarios et solutions multiproduits utilisant un serveur qui exécute Exchange Server 2013, un serveur qui exécute Lync Server 2013 et un serveur qui exécute SharePoint Server 2013.
   
-Ce document contient les instructions suivantes :
+Ce document contient les instructions suivantes :
   
 1. Configuration du laboratoire de test de configuration de base Windows Server 2012
     
@@ -51,7 +54,7 @@ Pour plus d'informations sur la configuration de ce laboratoire de test dans Hyp
   
 ## <a name="download-the-test-lab-guide"></a>Télécharger le guide de laboratoire de test
 
-[Guide de laboratoire de test : configurer un Exchange intégrée, Lync et laboratoire de Test de SharePoint](https://go.microsoft.com/fwlink/p/?LinkId=313670) (https://go.microsoft.com/fwlink/p/?LinkId=313670)
+[Guide de laboratoire de test : configurer un Exchange intégrée, Lync et laboratoire de Test SharePoint](https://go.microsoft.com/fwlink/p/?LinkId=313670) (https://go.microsoft.com/fwlink/p/?LinkId=313670)
   
 ## <a name="see-also"></a>Voir aussi
 

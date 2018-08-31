@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 13c71689-59a9-4cdf-8175-808a20c1e879
 description: 'Résumé : Concevez votre réseau pour les services et les plateformes cloud de Microsoft'
-ms.openlocfilehash: eebfb0537ba3166ded84c899f22efcd11825601b
-ms.sourcegitcommit: 9f57825b10f20e3813732372541128ef187d52c3
+ms.openlocfilehash: ac499dde3db65d3594704d13e40aad6e6bd45f94
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "20161867"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915399"
 ---
 # <a name="microsoft-cloud-networking-for-enterprise-architects"></a>Mise en réseau cloud Microsoft pour les architectes d’entreprise
 
@@ -28,7 +30,7 @@ ms.locfileid: "20161867"
   
 Cet article vous dirige vers un ensemble d'articles qui décrivent ce que les architectes informatiques doivent savoir sur la conception de réseau pour les organisations utilisant les services et les plateformes cloud de Microsoft. Vous pouvez également voir ces informations sous forme d'une affiche de 12 pages et l'imprimer au format tabloïd (également appelé format comptable, 11 x 17 ou A3).
   
-[![Image miniature représentant le modèle de mise en réseau cloud Microsoft](images/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)  
+[![Image miniature représentant le modèle de mise en réseau cloud Microsoft](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)  
 ](https://go.microsoft.com/fwlink/p/?linkid=842073)
   
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842074) | [Plus de langues](https://www.microsoft.com/download/details.aspx?id=54425)

@@ -11,12 +11,12 @@ ms.custom: ''
 localization_priority: Priority
 ms.collection: Strat_SP_gtc
 description: Découvrez comment configurer OneDrive Entreprise Multi-Géo.
-ms.openlocfilehash: 561025efc38199f3a92e228d5414a28df6eb12f0
-ms.sourcegitcommit: 92d16c0926e4be3fd493fe9b4eb317fb54996bca
+ms.openlocfilehash: 1817eee1bb2ceefa0e2e167e327af417dd0c517d
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "21549965"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915249"
 ---
 # <a name="onedrive-for-business-multi-geo-tenant-configuration"></a>Configuration du client OneDrive Entreprise Multi-Géo
 
@@ -112,7 +112,7 @@ Dans AAD, il existe deux types d’objets utilisateur : les utilisateurs cloud 
 
 ### <a name="synchronize-users-preferred-data-location-using-ad-connect"></a>Synchroniser l’emplacement des données par défaut de l’utilisateur à l’aide d’AD Connect 
 
-Si les utilisateurs de votre entreprise sont synchronisés à partir d’un système Active Directory (AD) local avec Azure Active Directory (AAD), leur PreferredDataLocation doit être renseigné dans AD et synchronisé avec AAD. Suivez le processus décrit dans [Synchronisation Azure AD Connect : modifier la configuration par défaut](https://docs.microsoft.com/fr-FR/azure/active-directory/connect/active-directory-aadconnectsync-change-the-configuration) pour configurer la synchronisation de l’emplacement des données par défaut à partir d’AD local avec AAD.
+Si les utilisateurs de votre entreprise sont synchronisés à partir d’un système Active Directory (AD) local avec Azure Active Directory (AAD), leur PreferredDataLocation doit être renseigné dans AD et synchronisé avec AAD. Suivez le processus décrit dans [Synchronisation Azure AD Connect : modifier la configuration par défaut](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-change-the-configuration) pour configurer la synchronisation de l’emplacement des données par défaut à partir d’AD local avec AAD.
 
 Nous vous recommandons d’inclure la configuration de l’emplacement des données par défaut de l’utilisateur dans le cadre de votre flux de travail de création utilisateur standard.
 
@@ -129,7 +129,7 @@ Les procédures décrites dans cette section nécessitent le [Module Microsoft A
 
 2.  Exécutez `Connect-MsolService` et entrez les informations d’identification d’administrateur général pour votre client.
 
-3.  Utilisez la cmdlet [Set-MsolUser](https://docs.microsoft.com/fr-FR/powershell/msonline/v1/set-msoluser) pour définir l’emplacement des données par défaut pour chacun de vos utilisateurs. Par exemple :
+3.  Utilisez la cmdlet [Set-MsolUser](https://docs.microsoft.com/powershell/msonline/v1/set-msoluser) pour définir l’emplacement des données par défaut pour chacun de vos utilisateurs. Par exemple :
 
     `Set-MsolUser -userprincipalName Robyn.Buckley@Contoso.com -PreferredDatalocation EUR`
 
@@ -137,7 +137,7 @@ Les procédures décrites dans cette section nécessitent le [Module Microsoft A
 
     `(Get-MsolUser -userprincipalName Robyn.Buckley@Contoso.com).PreferredDatalocation`
 
-![](media/multi-geo-tenant-configuration_image3.png)
+![](media/multi-geo-tenant-configuration-image3.png)
 
 Nous vous recommandons d’inclure la configuration de l’emplacement des données par défaut de l’utilisateur dans le cadre de votre flux de travail de création utilisateur standard.
 

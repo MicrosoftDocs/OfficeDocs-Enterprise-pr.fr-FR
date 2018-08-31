@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c37a4365-b350-4856-a0a8-ff5dfe005af1
 description: 'Résumé : Concevez votre stockage pour les services et les plateformes cloud de Microsoft'
-ms.openlocfilehash: 7c8d232c42c203ce1f4fba06d4134693e01e7284
-ms.sourcegitcommit: 9f57825b10f20e3813732372541128ef187d52c3
+ms.openlocfilehash: 56f7f8316296b43b96903ad8da5f4f4fbf2733d7
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "20161807"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915669"
 ---
 # <a name="microsoft-cloud-storage-for-enterprise-architects"></a>Stockage cloud Microsoft pour les architectes d’entreprise
 
@@ -28,7 +30,7 @@ ms.locfileid: "20161807"
   
 Cet article vous dirige vers un ensemble d'articles qui décrivent ce que les architectes informatiques doivent savoir sur la conception de stockage pour les organisations utilisant les services et les plateformes cloud de Microsoft. Vous pouvez également voir ces informations sous la forme d'une affiche de 6 pages et l'imprimer au format tabloïd (également appelé format comptable, 11 x 17 ou A3).
   
-[![Image miniature représentant le modèle de stockage cloud Microsoft](images/0d4e2eb9-1109-4b3b-bf9e-2f3eff2e2cc4.png)  
+[![Image miniature représentant le modèle de stockage cloud Microsoft](media/0d4e2eb9-1109-4b3b-bf9e-2f3eff2e2cc4.png)  
 ](https://www.microsoft.com/download/details.aspx?id=49552)
   
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=842079) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842080) | [Plus de langues](https://www.microsoft.com/download/details.aspx?id=49552)

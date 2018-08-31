@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: 'Résumé : Découvrez comment créer un intranet simplifié comme environnement de développement/test dans Microsoft Azure.'
-ms.openlocfilehash: 03e729e2211320cac1adc88258e59b18b3ff0719
-ms.sourcegitcommit: 3a4ab28f3f4172d596426f0da40bcab8c46ef74d
+ms.openlocfilehash: f065f9fa31b6793933dc4eec0d840bd1320a8891
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "20215846"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915279"
 ---
 # <a name="base-configuration-devtest-environment"></a>Environnement de développement/test de configuration de base
 
@@ -30,7 +32,7 @@ Cet article fournit des instructions détaillées pour créer l’environnement 
   
 **Figure 1 : Environnement de développement/test de configuration de base**
 
-![Phase 4 de la configuration de base dans Azure avec la machine virtuelle CLIENT1](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
+![Phase 4 de la configuration de base dans Azure avec la machine virtuelle CLIENT1](media/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
 L’environnement de développement/test de configuration de base de la figure 1 se compose d’un réseau virtuel Azure de type « cloud uniquement » nommé TestLab qui comprend un sous-réseau du réseau d’entreprise. Le réseau virtuel TestLab simule un intranet simplifié et privé connecté à Internet. Il contient trois machines virtuelles Azure exécutant Windows Server 2016 :
   
@@ -67,7 +69,7 @@ Si vous n’avez pas encore d’abonnement Azure, vous pouvez créer un compte 
 > [!NOTE]
 > Les machines virtuelles dans Azure occasionnent un coût monétaire continu quand elles sont utilisées. Ce coût est facturé en fonction de votre essai gratuit, de votre abonnement MSDN ou de votre abonnement payé. Pour en savoir plus sur les coûts d’utilisation des machines virtuelles Azure, consultez les pages [Tarification des machines virtuelles](https://azure.microsoft.com/pricing/details/virtual-machines/) et [Calculatrice de prix](https://azure.microsoft.com/pricing/calculator/). Pour maîtriser vos coûts, consultez la section [Réduire les coûts des machines virtuelles d’environnement de test dans Azure](base-configuration-dev-test-environment.md#mincost). 
   
-![Guides de laboratoire de test dans Microsoft Cloud](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
+![Guides de laboratoire de test dans Microsoft Cloud](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
 > Cliquez [ici](http://aka.ms/catlgstack) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de One Microsoft Cloud.
@@ -131,7 +133,7 @@ Set-AzureRMVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name Corpnet -Addre
 
 Il s’agit de votre configuration actuelle.
   
-![Phase 1 de la configuration de base dans Azure avec le réseau et les sous-réseau virtuels](images/0b5634fc-4e1c-469d-873d-97ed7e587411.png)
+![Phase 1 de la configuration de base dans Azure avec le réseau et les sous-réseau virtuels](media/0b5634fc-4e1c-469d-873d-97ed7e587411.png)
   
 ## <a name="phase-2-configure-dc1"></a>Phase 2 : Configurer DC1
 
@@ -235,7 +237,7 @@ Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv
 
 Il s’agit de votre configuration actuelle.
   
-![Phase 2 de la configuration de base dans Azure avec la machine virtuelle DC1](images/49069908-29c3-4d73-87f7-debbea067261.png)
+![Phase 2 de la configuration de base dans Azure avec la machine virtuelle DC1](media/49069908-29c3-4d73-87f7-debbea067261.png)
   
 ## <a name="phase-3-configure-app1"></a>Phase 3 : Configurer APP1
 
@@ -289,7 +291,7 @@ New-SmbShare -name files -path c:\files -changeaccess CORP\User1
 
 Il s’agit de votre configuration actuelle.
   
-![Phase 3 de la configuration de base dans Azure avec la machine virtuelle APP1](images/92cfabb0-7f9d-4291-964d-ac32d52748d7.png)
+![Phase 3 de la configuration de base dans Azure avec la machine virtuelle APP1](media/92cfabb0-7f9d-4291-964d-ac32d52748d7.png)
   
 ## <a name="phase-4-configure-client1"></a>Phase 4 : Configurer CLIENT1
 
@@ -354,7 +356,7 @@ Ensuite, vérifiez que vous pouvez accéder aux ressources web et de partage de 
     
 Il s’agit de votre configuration finale.
   
-![Phase 4 de la configuration de base dans Azure avec la machine virtuelle CLIENT1](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
+![Phase 4 de la configuration de base dans Azure avec la machine virtuelle CLIENT1](media/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
 Votre configuration de base dans Azure est maintenant prête pour le développement et le test d’applications ou pour générer des environnements de test supplémentaires. 
   

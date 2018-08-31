@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: 'Résumé : Comprenez les relations des organisations, des abonnements, des licences, des comptes d’utilisateur et des clients au sein des offres de cloud de Microsoft.'
-ms.openlocfilehash: 53d2f7f32402d8c05d22c0661a0f625c756da6d4
-ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
+ms.openlocfilehash: ebddd97afb2c45821cd25eae5e8124459720df0b
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "20319215"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915199"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Abonnements, licences, comptes et clients des offres de cloud de Microsoft
 
@@ -62,7 +64,7 @@ Les organisations peuvent avoir plusieurs abonnements pour les offres de cloud d
   
 **Figure 1 : Exemple de plusieurs abonnements pour une organisation**
 
-![Un exemple d’organisation avec plusieurs abonnements pour les offres de cloud de Microsoft.](images/Subscriptions/Subscriptions_Fig1.png)
+![Un exemple d’organisation avec plusieurs abonnements pour les offres de cloud de Microsoft.](media/Subscriptions/Subscriptions-Fig1.png)
 
   
 La Figure 1 présente une organisation unique avec plusieurs abonnements Office 365, un abonnement Intune, un abonnement Dynamics 365 et plusieurs abonnements Azure.
@@ -73,7 +75,7 @@ Pour les offres de cloud SaaS de Microsoft, une licence permet à un compte d’
   
 **Figure 2 : Licences liées aux abonnements SaaS d’une organisation**
 
-![Exemple de plusieurs licences au sein des abonnements pour les offres de cloud SaaS de Microsoft.](images/Subscriptions/Subscriptions_Fig2.png)
+![Exemple de plusieurs licences au sein des abonnements pour les offres de cloud SaaS de Microsoft.](media/Subscriptions/Subscriptions-Fig2.png)
   
 Pour les services de cloud PaaS Azure, les licences logicielles sont intégrées dans la tarification du service.  
   
@@ -89,7 +91,7 @@ La Figure 3 illustre un exemple de plusieurs abonnements d’une organisation à
   
 **Figure 3 : Plusieurs abonnements d’une organisation qui utilisent le même client Azure AD**
 
-![Un exemple d’organisation avec plusieurs abonnements utilisant tous le même client Azure AD.](images/Subscriptions/Subscriptions_Fig3.png)
+![Un exemple d’organisation avec plusieurs abonnements utilisant tous le même client Azure AD.](media/Subscriptions/Subscriptions-Fig3.png)
   
 ### <a name="tenants"></a>Clients
 
@@ -131,7 +133,7 @@ Plusieurs abonnements à des offres de cloud Microsoft peuvent utiliser le même
   
 **Figure 4 : Comptes en local synchronisés et IDaaS pour une organisation**
 
-![Identité sous la forme d’un service (IaaS) IDaaS pour votre organisation.](images/Subscriptions/Subscriptions_Fig4.png)
+![Identité sous la forme d’un service (IaaS) IDaaS pour votre organisation.](media/Subscriptions/Subscriptions-Fig4.png)
   
 La Figure 4 montre l’utilisation d’un client Azure AD commun par les offres cloud SaaS de Microsoft, les applications PaaS Azure et les machines virtuelles dans IaaS Azure qui utilisent les services de domaine Azure AD. Azure AD Connect synchronise la forêt Windows Server AD locale avec le client Azure AD.
   

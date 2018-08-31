@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Résumé : Recommandations de configuration pour la protection des fichiers dans SharePoint Online et Office 365.'
-ms.openlocfilehash: 806f9880347a5fa4aff29206651d86b0e18da3a4
-ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
+ms.openlocfilehash: 5ee7ce0f5d52076ec27a3478a39b998a96e0e270
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "20319225"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915079"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Sécuriser des sites et des fichiers SharePoint Online
 
@@ -138,7 +140,7 @@ L’utilisation des étiquettes Office 365 est recommandée pour les environnem
     
 - Des personnes de votre organisation peuvent appliquer une étiquette manuellement au contenu dans Outlook sur le web, Outlook 2010 et versions ultérieures, OneDrive Entreprise, SharePoint Online et les groupes Office 365. Les utilisateurs savent souvent mieux quel type de contenu ils utilisent, ils peuvent donc le classer et appliquer la stratégie DLP appropriée.
     
-![Configuration recommandée pour les sites SharePoint](images/7fed0126-ab4a-4480-922c-681970642339.png)
+![Configuration recommandée pour les sites SharePoint](media/7fed0126-ab4a-4480-922c-681970642339.png)
   
 Comme illustré, cette solution inclut la création des étiquettes suivantes :
   
@@ -160,7 +162,7 @@ Si cela se justifie pour votre scénario de sécurité, vous pouvez utiliser Azu
   
 Attention, quand le chiffrement Azure Information Protection est appliqué aux fichiers stockés dans Office 365, le service ne peut pas traiter le contenu de ces fichiers. La co-édition, eDiscovery, la recherche, Delve et d’autres fonctionnalités de collaboration ne fonctionnent pas. Les stratégies de protection contre la perte de données peuvent fonctionner seulement avec les métadonnées (notamment les étiquettes Office 365), mais pas avec le contenu de ces fichiers (comme des numéros de carte de crédit dans des fichiers).
   
-![Azure Information Protection est configuré dans Azure et des étiquettes apparaissent dans la barre d’outils du client](images/1266a7a0-5078-49ab-bbf1-b0cf41451f62.png)
+![Azure Information Protection est configuré dans Azure et des étiquettes apparaissent dans la barre d’outils du client](media/1266a7a0-5078-49ab-bbf1-b0cf41451f62.png)
   
 Comme illustré :
   

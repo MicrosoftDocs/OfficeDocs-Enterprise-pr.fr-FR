@@ -8,18 +8,20 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: 'Résumé : Configurez et faites une démonstration de la sécurité des applications cloud Office 365 dans votre environnement de développement/test Office 365.'
-ms.openlocfilehash: d62524b6c4373c851a67b4039146ad8b6a610790
-ms.sourcegitcommit: 3a4ab28f3f4172d596426f0da40bcab8c46ef74d
+ms.openlocfilehash: 089b9771d0600f8c74bc7b4c30ff2a4931c93ae6
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "20215876"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915759"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Sécurité des applications cloud pour votre environnement de développement/test Office 365
 

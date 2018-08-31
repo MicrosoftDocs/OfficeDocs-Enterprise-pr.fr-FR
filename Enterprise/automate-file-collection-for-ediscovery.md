@@ -11,12 +11,15 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: 8d751419-d81b-4eb7-a2e5-8b03ccbf670c
+search.appverid:
+- MET150
 description: 'Résumé : Apprenez à automatiser la collecte de fichiers à partir des ordinateurs des utilisateurs pour eDiscovery.'
-ms.openlocfilehash: 0a09eb8ec997f62e0f8c3149d35422b0ee0e4a98
-ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
-ms.translationtype: HT
+ms.openlocfilehash: 12d61d2c43a297001eecf463991654afbcfccb1a
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915749"
 ---
 # <a name="automate-file-collection-for-ediscovery"></a>Automatiser la collecte de fichiers pour eDiscovery
 
@@ -37,21 +40,21 @@ Cette solution utilise un groupe de sécurité global, une stratégie de groupe 
   
 Le diagramme suivant vous guide à travers les étapes et les éléments de la solution.
   
-![Vue d’ensemble de la solution de regroupement automatique de fichiers](images/dbb447b5-c74c-4956-986c-10a1d047ac99.png)
+![Vue d’ensemble de la solution de regroupement automatique de fichiers](media/dbb447b5-c74c-4956-986c-10a1d047ac99.png)
   
 |****Légende****||
 |:-----|:-----|
-|![légende magenta 1](images/000026a3-2bf0-4678-b468-ccb5f81da6f1.png)|Créez un objet de stratégie de groupe (GPO) et associez-le au script d’ouverture de session de collecte.  <br/> |
-|![légende magenta 2](images/a31b11e2-3597-42a4-933e-b6af11ed6ef1.png)| Configurez le filtre de sécurité de l’objet de stratégie de groupe pour appliquer l’objet de stratégie de groupe uniquement au groupe des dépositaires. <br/> |
-|![légende magenta 3](images/3ced060c-daec-460d-a9b5-260a3dfcae36.png)|Un dépositaire ouvre une session et l’objet de stratégie de groupe s’exécute, appelant le script d’ouverture de session de collecte  <br/> |
-|![légende magenta 4](images/6f269d84-2559-49e3-b18e-af6ac94d0419.png)|Le script d’ouverture de session de collecte répertorie tous les lecteurs connectés localement à l’ordinateur des dépositaires, en cherchant les fichiers que vous souhaitez et en enregistrant leur emplacement.  <br/> |
-|![légende magenta 5](images/4bf8898c-44ad-4524-b983-70175804eb85.png)|Le script d’ouverture de session de collecte copie les fichiers inventoriés sur un partage de fichiers caché sur le serveur intermédiaire.  <br/> |
-|![légende magenta 6](images/99589726-0c7e-406b-a276-44301a135768.png)| (Option A) Exécutez manuellement le script d'importation PST pour importer les fichiers PST collectés dans Exchange Server 2013. <br/> |
-|![légende magenta 7](images/ff15e89c-d2fd-4614-9838-5e18287d578b.png)|(Option B) À l'aide de l'outil et du processus d'importation de Office 365, importez les fichiers PST collectés dans Exchange Online.  <br/> |
-|![légende magenta 8](images/aaf3bd3d-9508-4aaf-a3af-44ba501da63a.png)|Déplacez tous les fichiers collectés vers un partage de fichiers Azure pour un stockage à long terme avec le runbook MoveToColdStorageSystem Center Orchestrator 2012 R2. <br/> |
-|![légende magenta 9](images/b354642e-445e-4723-a84a-b41f7ac6e774.png)|Indexez les fichiers dans le partage des fichiers de stockage froid avec SharePoint 2013.  <br/> |
-|![légende magenta 10](images/cebf7de5-7525-413b-9e52-638a4f8b2f74.png)|Effectuez eDiscovery sur le contenu dans l'espace de stockage froid et le Exchange Server 2013 sur site.  <br/> |
-|![légende magenta 11](images/e59ab403-2f19-497a-92a5-549846dded66.png)|Effectuez eDiscovery sur le contenu dans Office 365.  <br/> |
+|![légende magenta 1](media/000026a3-2bf0-4678-b468-ccb5f81da6f1.png)|Créez un objet de stratégie de groupe (GPO) et associez-le au script d’ouverture de session de collecte.  <br/> |
+|![légende magenta 2](media/a31b11e2-3597-42a4-933e-b6af11ed6ef1.png)| Configurez le filtre de sécurité de l’objet de stratégie de groupe pour appliquer l’objet de stratégie de groupe uniquement au groupe des dépositaires. <br/> |
+|![légende magenta 3](media/3ced060c-daec-460d-a9b5-260a3dfcae36.png)|Un dépositaire ouvre une session et l’objet de stratégie de groupe s’exécute, appelant le script d’ouverture de session de collecte  <br/> |
+|![légende magenta 4](media/6f269d84-2559-49e3-b18e-af6ac94d0419.png)|Le script d’ouverture de session de collecte répertorie tous les lecteurs connectés localement à l’ordinateur des dépositaires, en cherchant les fichiers que vous souhaitez et en enregistrant leur emplacement.  <br/> |
+|![légende magenta 5](media/4bf8898c-44ad-4524-b983-70175804eb85.png)|Le script d’ouverture de session de collecte copie les fichiers inventoriés sur un partage de fichiers caché sur le serveur intermédiaire.  <br/> |
+|![légende magenta 6](media/99589726-0c7e-406b-a276-44301a135768.png)| (Option A) Exécutez manuellement le script d'importation PST pour importer les fichiers PST collectés dans Exchange Server 2013. <br/> |
+|![légende magenta 7](media/ff15e89c-d2fd-4614-9838-5e18287d578b.png)|(Option B) À l'aide de l'outil et du processus d'importation de Office 365, importez les fichiers PST collectés dans Exchange Online.  <br/> |
+|![légende magenta 8](media/aaf3bd3d-9508-4aaf-a3af-44ba501da63a.png)|Déplacez tous les fichiers collectés vers un partage de fichiers Azure pour un stockage à long terme avec le runbook MoveToColdStorageSystem Center Orchestrator 2012 R2. <br/> |
+|![légende magenta 9](media/b354642e-445e-4723-a84a-b41f7ac6e774.png)|Indexez les fichiers dans le partage des fichiers de stockage froid avec SharePoint 2013.  <br/> |
+|![légende magenta 10](media/cebf7de5-7525-413b-9e52-638a4f8b2f74.png)|Effectuez eDiscovery sur le contenu dans l'espace de stockage froid et le Exchange Server 2013 sur site.  <br/> |
+|![légende magenta 11](media/e59ab403-2f19-497a-92a5-549846dded66.png)|Effectuez eDiscovery sur le contenu dans Office 365.  <br/> |
    
 ## <a name="prerequisites"></a>Conditions préalables
 

@@ -8,14 +8,16 @@ audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
 localization_priority: None
+search.appverid:
+- MET150
 ms.collection: Strat_O365_Enterprise
 description: Comprendre la prise en charge des applications client Office 365 pour la gestion des applications mobiles
-ms.openlocfilehash: 679212563b78cceffe8a1f7b75672c5f355bcf6f
-ms.sourcegitcommit: 4e654517825b74a3bbe171b915b134ba49231e2e
+ms.openlocfilehash: 309353a70bcfb1641a24ed6798a98aaddd27681c
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "21541944"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915419"
 ---
 # <a name="office-365-client-app-support---mobile-application-management"></a>Prise en charge des applications Office 365 Client - gestion des applications mobiles
 
@@ -32,10 +34,10 @@ En savoir plus sur [Gestion des applications mobiles](https://docs.microsoft.com
 
 | | | | | | |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| ![Icône Dynamics 365](images/o365-dynamics365-64x64.png) <br> [Dynamics 365](https://dynamics.microsoft.com) | ![Icône Excel](images/o365-excel-64x64.png) <br> [Excel](https://products.office.com/excel) | ![Icône Kaizala](images/o365-kaizala-64x64.png) <br> [Kaizala](https://products.office.com/en/business/microsoft-kaizala) | ![OneDrive entreprise icône](images/o365-OneDrive-64x64.png) <br> [OneDrive](https://products.office.com/onedrive-for-business/online-cloud-storage) | ![Icône OneNote](images/o365-OneNote-64x64.png) <br> [OneNote](https://products.office.com/onenote)
-| ![Icône Outlook](images/o365-outlook-64x64.png) <br> [Outlook](https://products.office.com/outlook) | ![Icône du planificateur](images/o365-planner-64x64.png) <br> [Planificateur](https://products.office.com/business/task-management-software) | ![Icône PowerBI](images/o365-powerbi-64x64.png) <br> [Power BI](https://powerbi.microsoft.com) | ![Icône PowerPoint](images/o365-powerpoint-64x64.png) <br> [PowerPoint](https://products.office.com/powerpoint) | ![Icône SharePoint](images/o365-sharepoint-64x64.png) <br> [SharePoint](https://products.office.com/sharepoint)
-| ![Skype pour entreprise icône](images/o365-skypeforbusiness-64x64.png) <br> [Skype pour <br> Business](https://www.skype.com/business/) | ![Icône StaffHub](images/o365-staffhub-64x64.png) <br> [StaffHub](https://products.office.com/microsoft-staffhub/staff-scheduling-software) | ![Icône de balancement](images/o365-sway-64x64.png) <br> [Balancement<sup>1</sup>](https://sway.com) | ![Icône d’équipes](images/o365-teams-64x64.png) <br> [Équipes](https://products.office.com/microsoft-teams/group-chat-software) | ![Icône Visio](images/o365-visio-64x64.png) <br> [Visio](https://products.office.com/visio/flowchart-software)
-| ![Icône Word](images/o365-word-64x64.png) <br> [Word](https://products.office.com/word) | ![Icône de Yammer](images/o365-yammer-64x64.png) <br> [Yammer](https://products.office.com/yammer/yammer-overview)
+| ![Icône Dynamics 365](media/o365-dynamics365-64x64.png) <br> [Dynamics 365](https://dynamics.microsoft.com) | ![Icône Excel](media/o365-excel-64x64.png) <br> [Excel](https://products.office.com/excel) | ![Icône Kaizala](media/o365-kaizala-64x64.png) <br> [Kaizala](https://products.office.com/en/business/microsoft-kaizala) | ![OneDrive entreprise icône](media/o365-OneDrive-64x64.png) <br> [OneDrive](https://products.office.com/onedrive-for-business/online-cloud-storage) | ![Icône OneNote](media/o365-OneNote-64x64.png) <br> [OneNote](https://products.office.com/onenote)
+| ![Icône Outlook](media/o365-outlook-64x64.png) <br> [Outlook](https://products.office.com/outlook) | ![Icône du planificateur](media/o365-planner-64x64.png) <br> [Planificateur](https://products.office.com/business/task-management-software) | ![Icône PowerBI](media/o365-powerbi-64x64.png) <br> [Power BI](https://powerbi.microsoft.com) | ![Icône PowerPoint](media/o365-powerpoint-64x64.png) <br> [PowerPoint](https://products.office.com/powerpoint) | ![Icône SharePoint](media/o365-sharepoint-64x64.png) <br> [SharePoint](https://products.office.com/sharepoint)
+| ![Skype pour entreprise icône](media/o365-skypeforbusiness-64x64.png) <br> [Skype pour <br> Business](https://www.skype.com/business/) | ![Icône StaffHub](media/o365-staffhub-64x64.png) <br> [StaffHub](https://products.office.com/microsoft-staffhub/staff-scheduling-software) | ![Icône de balancement](media/o365-sway-64x64.png) <br> [Balancement<sup>1</sup>](https://sway.com) | ![Icône d’équipes](media/o365-teams-64x64.png) <br> [Équipes](https://products.office.com/microsoft-teams/group-chat-software) | ![Icône Visio](media/o365-visio-64x64.png) <br> [Visio](https://products.office.com/visio/flowchart-software)
+| ![Icône Word](media/o365-word-64x64.png) <br> [Word](https://products.office.com/word) | ![Icône de Yammer](media/o365-yammer-64x64.png) <br> [Yammer](https://products.office.com/yammer/yammer-overview)
 
 > [!NOTE]
 > Prise en charge <sup>1</sup> pour balancement sur iOS bientôt disponible.

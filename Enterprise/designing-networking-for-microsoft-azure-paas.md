@@ -1,5 +1,5 @@
 ---
-title: "Conception de réseau pour Microsoft Azure PaaS"
+title: Conception de réseau pour Microsoft Azure PaaS
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 19568184-705b-493b-b713-b484367adba9
-description: "Résumé : Comprenez comment optimiser votre réseau pour accéder à Microsoft Azure PaaS."
-ms.openlocfilehash: 151701223c6cf21890fcd961c5dc3acda8de4915
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: 'Résumé : Comprenez comment optimiser votre réseau pour accéder à Microsoft Azure PaaS.'
+ms.openlocfilehash: d20bb5adb46592363926a2926752ed345823c26e
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915109"
 ---
 # <a name="designing-networking-for-microsoft-azure-paas"></a>Conception de réseau pour Microsoft Azure PaaS
 
@@ -46,7 +49,7 @@ Les applications d’entreprise hébergées dans Azure PaaS nécessitent une ban
     
 **Figure 1 : Options de connexion pour les services Azure PaaS**
 
-![Figure 1 : options de connexion pour les services PaaS Azure](images/Network_Poster/PaaS1.png)
+![Figure 1 : options de connexion pour les services PaaS Azure](media/Network-Poster/PaaS1.png)
   
 La figure 1 montre une connexion du réseau local aux services Azure PaaS via un canal Internet ou ExpressRoute.
   
@@ -56,7 +59,7 @@ Routage au niveau des applications et services d’équilibrage de charge vous p
   
 **Figure 2 : Azure Application Gateway**
 
-![Figure 2 : service Application Gateway d’Azure](images/Network_Poster/PaaS2.png)
+![Figure 2 : service Application Gateway d’Azure](media/Network-Poster/PaaS2.png)
   
 La figure 2 présente Azure Application Gateway et indique comment les demandes utilisateur provenant d’Internet peuvent être acheminées vers les applications web Azure, les services cloud ou les machines virtuelles.
   
@@ -86,7 +89,7 @@ Voici un exemple de trois applications web dispersées géographiquement.
   
 **Figure 3 : Azure Traffic Manager**
 
-![Figure 3 : Azure Traffic Manager](images/Network_Poster/PaaS3.png)
+![Figure 3 : Azure Traffic Manager](media/Network-Poster/PaaS3.png)
   
 La figure 3 indique le processus simple utilisé par Traffic Manager pour acheminer les requêtes vers trois applications web Azure différentes aux États-Unis, en Europe et en Asie. Dans l’exemple :
   

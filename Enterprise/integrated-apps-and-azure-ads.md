@@ -1,5 +1,5 @@
 ---
-title: Applications intégrées et Azure AD pour les administrateurs Office 365
+title: Applications intégrées et Azure AD pour les administrateurs Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -10,18 +10,19 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.custom: Adm_O365
 search.appverid:
+- MET150
 - MOE150
 - BCS160
 ms.assetid: cb2250e3-451e-416f-bf4e-363549652c2a
 description: Découvrez comment O365 intégrés applications sont enregistrés et administré dans Azure AD
-ms.openlocfilehash: 666bfca5c2621d25f13dff7c5753c5ef47591b68
-ms.sourcegitcommit: f42ca73d23beb5770981e7a93995ef3be5e341bb
+ms.openlocfilehash: 0482271f15dc5e2b81e36fd265b49da6eba18702
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "22213112"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22914999"
 ---
-# <a name="integrated-apps-and-azure-ad-for-office-365-administrators"></a>Applications intégrées et Azure AD pour les administrateurs Office 365
+# <a name="integrated-apps-and-azure-ad-for-office-365-administrators"></a>Applications intégrées et Azure AD pour les administrateurs Office 365
 
 Il est plus à la gestion des applications intégrées à seulement [Applications intégrée activer ou désactiver](https://support.office.com/article/7e453a40-66df-44ab-92a1-96786cb7fb34#__toc379982114). Avec l’arrivée de l’API REST d’Office 365, les utilisateurs peuvent accorder l’accès des applications à leurs données Office 365, tels que la messagerie, calendriers, contacts, les utilisateurs, groupes, fichiers et dossiers. Par défaut, les utilisateurs ont besoin accorder des autorisations pour chaque application individuellement, mais il ne l’échelle également si vous souhaitez autoriser une application une fois au niveau de l’administrateur global et le déployer dans toute l’organisation par le biais de lancement de l’application. Pour ce faire, vous devez inscrire l’application dans Azure AD. Il existe quelques étapes à suivre avant que vous pouvez enregistrer une application dans Azure AD et des informations de base à connaître qui peuvent vous aider à gérer les applications dans votre organisation Office 365. Cet article vous à ces ressources.
   

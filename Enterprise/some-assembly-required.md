@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: ccf1b8b3-0d50-4c66-b314-f480245fad5e
 description: "Résumé : Obtenez des détails sur l'ensemble des options de stockage cloud que vous pouvez utiliser pour créer votre solution de stockage personnalisée."
-ms.openlocfilehash: 7cff1c80f1b210ee8906cf9703ba6400181f2e9d
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+ms.openlocfilehash: 2c80b0cdf0829e80a7916133ee51a45c91b96efa
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915519"
 ---
 # <a name="some-assembly-required"></a>Certains assembly requis
 
@@ -138,11 +141,11 @@ Utilisez les ressources pratiquement illimitées d’Azure SQL Database dans les
     
 Avec la mise à l’échelle verticale, vous pouvez modifier le niveau de performances de base de données Azure par édition ou à l’aide de pools de bases de données élastiques.
   
-![Échelle verticale fournie par Azure SQL Database.](images/Storage_Poster/CloudStor-VertScale.png)
+![Échelle verticale fournie par Azure SQL Database.](media/Storage-Poster/CloudStor-VertScale.png)
   
 Avec la mise à l’échelle horizontale, vous pouvez ajouter de nouvelles bases de données selon vos besoins.
   
-![Échelle horizontale fournie par Azure SQL Database.](images/Storage_Poster/CloudStor-HorizScale.png)
+![Échelle horizontale fournie par Azure SQL Database.](media/Storage-Poster/CloudStor-HorizScale.png)
   
 Pour plus d'informations, cliquez [ici](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-scale-introduction).
   
@@ -150,7 +153,7 @@ Pour plus d'informations, cliquez [ici](https://docs.microsoft.com/azure/sql-dat
 
 Stretch Database est une fonctionnalité de SQL Server 2016 qui vous permet de déplacer des données froides de façon transparente et sécurisée, telles que des données d'entreprise fermées dans une table volumineuse qui contient des informations sur les commandes client, vers une base de données SQL Stretch dans Azure. Dans le cadre d'une extension, le contenu d'une instance SQL Server, d'une base de données ou d'une table unique est la combinaison de données locales stockées sur un serveur SQL Server 2016 à des données distantes dans Azure. Les données pouvant faire l'objet d'une extension sont automatiquement déplacées vers Azure par SQL Server 2016.
   
-![Stretch Database avec SQL Server 2016](images/Storage_Poster/CloudStor-Stretch.png)
+![Stretch Database avec SQL Server 2016](media/Storage-Poster/CloudStor-Stretch.png)
   
  
 
@@ -206,7 +209,7 @@ Attributs communs à Cosmos DB, Stockage Table Azure et Azure SQL Database :
     
 Le tableau suivant montre les attributs non communs d’Azure Cosmos DB, de Stockage Table Azure et d’Azure SQL Database.
   
-![Attributs rares de Cosmos DB vs. Tables Azure vs. Base de données SQL Azure](images/Storage_Poster/CloudStor-Table.png)
+![Attributs rares de Cosmos DB vs. Tables Azure vs. Base de données SQL Azure](media/Storage-Poster/CloudStor-Table.png)
   
 ### <a name="resources"></a>Ressources
 

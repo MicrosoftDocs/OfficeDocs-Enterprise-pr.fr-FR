@@ -1,5 +1,5 @@
 ---
-title: "Haute disponibilité fédérée de serveurs d’authentification Phase 3 configuration AD FS"
+title: Haute disponibilité fédérés des serveurs d’authentification Phase 3 configurer AD FS
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,20 +11,21 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
-description: "Résumé : Créer et configurer les serveurs Active Directory Federation Services (ADFS) pour l’authentification fédérée de haute disponibilité pour Office 365 dans Microsoft Azure."
-ms.openlocfilehash: a9daecddb572bf2432d68ae76ed8d81571ef4b79
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Résumé : Créez et configurez les serveurs Active Directory Federation Services (AD FS) pour votre authentification fédérée haute disponibilité pour Office 365 dans Microsoft Azure.'
+ms.openlocfilehash: 93b2ed3c0935aee586d5aa236e79ab1e89a61b93
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915429"
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>Authentification fédérée haute disponibilité, phase 3 : Configurer les serveurs AD FS
 
- **Résumé :** Créez et configurez les serveurs Active Directory Federation Services (ADFS) pour l’authentification fédérée de haute disponibilité pour Office 365 dans Microsoft Azure.
+ **Résumé :** Créez et configurez les serveurs Active Directory Federation Services (AD FS) pour votre authentification fédérée haute disponibilité pour Office 365 dans Microsoft Azure.
   
 Au cours de cette phase du déploiement de la haute disponibilité pour l’authentification fédérée Office 365 dans les services d’infrastructure Azure, vous avez créé un équilibreur de charge interne et deux serveurs AD FS.
   
-Vous devez terminer cette phase avant de passer à [haute disponibilité fédérés d’authentification Phase 4 : configurer le proxy de l’application web](high-availability-federated-authentication-phase-4-configure-web-application-pro.md). Pour toutes les phases, reportez-vous à la section [authentification fédérée de haute disponibilité déploiement pour Office 365 dans Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) .
+Vous devez effectuer cette phase avant de passer à [haute disponibilité fédérés authentification Phase 4 : configurer des proxys d’applications web](high-availability-federated-authentication-phase-4-configure-web-application-pro.md). Voir [authentification fédérée de déploiement haute disponibilité pour Office 365 dans Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) pour toutes les phases.
   
 ## <a name="create-the-ad-fs-server-virtual-machines-in-azure"></a>Créer les machines virtuelles du serveur AD FS dans Azure
 
@@ -42,15 +43,15 @@ Utilisez le bloc de commandes PowerShell suivant pour créer les machines virtue
     
 - Tableau A, pour vos groupes à haute disponibilité
     
-Rappeler que vous avez défini le tableau M dans [haute disponibilité fédérés d’authentification Phase 2 : configurer les contrôleurs de domaine](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) et Tables R, V, S, I et dans [haute disponibilité fédérés d’authentification Phase 1 : configurer les Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
+Rappelez-vous que vous avez défini le tableau M dans [haute disponibilité fédérés authentification Phase 2 : configurer les contrôleurs de domaine](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) et Tables R, V, S, I et dans [haute disponibilité fédérés authentification Phase 1 : Azure configurer](high-availability-federated-authentication-phase-1-configure-azure.md).
   
 > [!NOTE]
-> La commande suivante définit utiliser la dernière version de PowerShell d’Azure. Reportez-vous à la section [mise en route avec les applets de commande PowerShell d’Azure](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> Les ensembles de commandes suivants utilisent la dernière version d’Azure PowerShell. Reportez-vous à la rubrique relative à la [prise en main des cmdlets Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
   
-Tout d’abord, vous créez un équilibreur de charge d’interne Azure pour la publicité de deux serveurs FS. Spécifiez les valeurs pour les variables, suppression de la \< et > caractères. Lorsque vous avez fourni toutes les valeurs sont correctes, exécuter le bloc résultant à l’invite de commande PowerShell de Azure ou dans PowerShell ISE.
+Tout d’abord, vous créez un équilibreur de charge interne Azure pour AD deux serveurs FS. Spécifiez les valeurs pour les variables, suppression de la \< et > caractères. Lorsque vous avez fourni toutes les valeurs appropriées, exécutez le bloc qui en résulte à l’invite de commandes PowerShell Azure ou dans PowerShell ISE.
   
 > [!TIP]
-> Pour un fichier texte qui contient toutes les commandes de PowerShell dans cet article et un classeur Microsoft Excel configuration qui génère des blocs de commande PowerShell prête à exécuter en fonction de vos paramètres personnalisés, consultez la [l’authentification fédérée pour Office 365 dans Kit de déploiement d’Azure](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
+> Pour un fichier texte qui contient toutes les commandes PowerShell dans cet article et un classeur Microsoft Excel configuration qui génère des blocs de commande PowerShell prête à exécuter en fonction de vos paramètres personnalisés, voir l’authentification fédérée pour Office 365 [dans Kit de déploiement Azure](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
   
 ```
 # Set up key variables
@@ -128,7 +129,7 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!NOTE]
-> Étant donné que ces machines virtuelles sont d’une application intranet, elles ne sont pas affectés une adresse IP publique ou une étiquette de nom de domaine DNS et exposés à Internet. Cependant, cela signifie également que vous ne peut pas y connecter à partir du portail Azure. L’option **se connecter** n’est pas disponible lorsque vous affichez les propriétés de l’ordinateur virtuel. Utilisez l’accessoire de connexion Bureau à distance ou un autre outil de bureau à distance pour vous connecter à l’ordinateur virtuel à l’aide de son privé IP adresse intranet ou le nom DNS.
+> Étant donné que ces machines virtuelles sont destinées à une application intranet, aucune adresse IP publique ni étiquette de nom de domaine DNS ne leur est affectée et elles ne sont pas connectées à Internet. Toutefois, cela signifie également que vous ne pouvez pas vous y connecter à partir du portail Azure. L’option de **connexion** n’est pas disponible lorsque vous affichez les propriétés de la machine virtuelle. Utilisez l’accessoire de connexion Bureau à distance ou un autre outil de Bureau à distance pour vous connecter à la machine virtuelle à l’aide de son adresse IP privée ou de son nom DNS intranet.
   
 Pour chaque machine virtuelle, utilisez le client Bureau à distance de votre choix et créez une connexion de Bureau à distance. Utilisez son nom d’ordinateur ou son nom DNS intranet et les informations d’identification du compte Administrateur local.
   
@@ -143,13 +144,13 @@ Restart-Computer
 
 Lorsque cette phase est terminée, voici la configuration résultante, avec les noms d’ordinateur de l’espace réservé.
   
-**Phase 3 : Serveurs AD FS et équilibreur de charge interne pour votre infrastructure d’authentification fédérée de haute disponibilité dans Azure**
+**Phase 3 : Les serveurs AD FS et l’équilibreur de charge interne pour votre infrastructure d’authentification fédérée haute disponibilité dans Azure.**
 
-![Phase 3 de l’infrastructure d’authentification fédérée haute disponibilité Office 365 dans Azure à l’aide des serveurs AD FS](images/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
+![Phase 3 de l’infrastructure d’authentification fédérée haute disponibilité Office 365 dans Azure à l’aide des serveurs AD FS](media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
   
 ## <a name="next-step"></a>Étape suivante
 
-Utilisation [haute disponibilité fédérés d’authentification Phase 4 : configurer le proxy de l’application web](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) pour continuer la configuration de cette charge de travail.
+Utilisez [High availability federated authentication Phase 4: Configure web application proxies](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) pour poursuivre la configuration de cette charge de travail.
   
 ## <a name="see-also"></a>Voir aussi
 

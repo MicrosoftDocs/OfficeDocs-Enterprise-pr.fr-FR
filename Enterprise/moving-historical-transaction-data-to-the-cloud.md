@@ -1,5 +1,5 @@
 ---
-title: "Déplacement des données de transaction historiques dans le cloud"
+title: Déplacement des données de transaction historiques dans le cloud
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3e9c405a-415b-4584-aa7e-f2489299c457
-description: "Résumé : Comment Contoso a implémenté SQL Server Stretch Database pour réduire ses besoins en matière de stockage de données locales et ses dépenses quotidiennes de fonctionnement."
-ms.openlocfilehash: 9d8d51aa1bc7a304d1148111aedd54916d9e8052
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: 'Résumé : Comment Contoso a implémenté SQL Server Stretch Database pour réduire ses besoins en matière de stockage de données locales et ses dépenses quotidiennes de fonctionnement.'
+ms.openlocfilehash: 791b5d4f14ba7246221cf9b459c31c9ba1b54099
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915719"
 ---
 # <a name="moving-historical-transaction-data-to-the-cloud"></a>Déplacement des données de transaction historiques dans le cloud
 
@@ -28,7 +31,7 @@ Dans la mesure où l'entreprise avait besoin de réduire la taille de ses centre
   
 **Figure 1 : SQL Server Stretch Database**
 
-![Stretch Database avec SQL Server comme solution de données hybride](images/Contoso_Poster/StretchDB01.png)
+![Stretch Database avec SQL Server comme solution de données hybride](media/Contoso-Poster/StretchDB01.png)
   
 La figure 1 montre comment un client SQL envoie des requêtes T-SQL sur un serveur qui exécute SQL Server 2016, lequel les transfère vers Azure SQL Stretch Database dans Azure PaaS.
   
@@ -52,7 +55,7 @@ Voici la configuration finale d’un serveur exécutant SQL Server 2016 au si�
   
 **Figure 2 : Utilisation de Stretch Database pour un serveur situé dans le centre de données de Contoso**
 
-![Configuration de Contoso pour Stretch Database avec SQL Server pour un ordinateur unique exécutant SQL Server](images/Contoso_Poster/StretchDB02.png)
+![Configuration de Contoso pour Stretch Database avec SQL Server pour un ordinateur unique exécutant SQL Server](media/Contoso-Poster/StretchDB02.png)
 
   
 La figure 2 montre comment les requêtes d’utilisateurs envoyées sur un serveur d’applications du centre de données de Contoso deviennent des requêtes SQL transmises à Azure SQL Stretch Database dans Azure PaaS.

@@ -1,5 +1,5 @@
 ---
-title: "Scénarios de cloud hybride pour les services PaaS Azure"
+title: Scénarios de cloud hybride pour les services PaaS Azure
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,11 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 5f4f5d0d-4638-48e8-a517-bd804856b617
 description: "Résumé : Comprendre l'architecture hybride et les scénarios pour les offres cloud PaaS de Microsoft dans Azure."
-ms.openlocfilehash: 96548b74341474ff2bd0720f982cbdba96b06e4b
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+ms.openlocfilehash: e60bc92eed45e5d29fe0be80320dee65b8325028
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915009"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-paas"></a>Scénarios de cloud hybride pour les services PaaS Azure
 
@@ -30,7 +31,7 @@ La Figure 1 présente l’architecture des scénarios hybrides PaaS de Microsoft
   
 **Figure 1 : Scénarios hybrides Microsoft PaaS dans Azure**
 
-![Scénarios hybrides Microsoft PaaS dans Azure](images/Hybrid_Poster/Hybrid_Cloud_Stack_PaaS.png)
+![Scénarios hybrides Microsoft PaaS dans Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS.png)
   
 Pour chaque couche de l’architecture :
   
@@ -56,7 +57,7 @@ La Figure 2 illustre la configuration d’une application hybride exécutée dan
   
 **Figure 2 : Application hybride Azure PaaS**
 
-![Application hybride Azure PaaS](images/Hybrid_Poster/Hybrid_Cloud_Stack_PaaS_Apps.png)
+![Application hybride Azure PaaS](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS-Apps.png)
   
 Dans la Figure 2, un réseau local héberge le stockage ou des applications sur des serveurs et une zone DMZ contenant un serveur proxy. Il est connecté à des services Azure PaaS via Internet ou avec une connexion ExpressRoute.
   
@@ -78,7 +79,7 @@ La Figure 3 illustre un exemple d’application hybride exécutée dans Azure.
   
 **Figure 3 : Exemple d'application hybride Azure PaaS**
 
-![Exemple d’application hybride Azure PaaS](images/Hybrid_Poster/Hybrid_Cloud_Stack_PaaS_Apps_Ex.png)
+![Exemple d’application hybride Azure PaaS](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS-Apps-Ex.png)
   
 Dans la Figure 3, un réseau local héberge une application métier. Azure PaaS héberge une application mobile personnalisée. Un smartphone sur Internet accède à l'application mobile personnalisée dans Azure, qui envoie des demandes de données à l'application métier locale.
   
@@ -104,7 +105,7 @@ La Figure 4 illustre Stretch Database avec SQL Server 2016.
   
 **Figure 4 : Stretch Database avec SQL Server 2016**
 
-![Stretch Database avec SQL Server 2016](images/Hybrid_Poster/Hybrid_Cloud_Stack_PaaS_Apps_SQL.png)
+![Stretch Database avec SQL Server 2016](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS-Apps-SQL.png)
   
 Dans la Figure 4, un réseau local héberge un serveur exécutant SQL Server 2016 avec une petite base de données locale. Azure PaaS héberge une instance d'Azure SQL Server Stretch Database avec la partie étendue de la base de données. Les requêtes T-SQL provenant d'un utilisateur local envoyées à SQL Server local sont transférées en toute sécurité à Azure SQL Stretch Database, qui renvoie les résultats à l'utilisateur étant à l'origine de la requête.
   

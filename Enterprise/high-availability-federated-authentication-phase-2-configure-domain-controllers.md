@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: 'Résumé : Configurez les contrôleurs de domaine et le serveur DirSync pour votre authentification fédérée haute disponibilité pour Office 365 dans Microsoft Azure.'
-ms.openlocfilehash: 3f898fea8fc92d4f7ea392bfe854425beafb1eb4
-ms.sourcegitcommit: 3a4ab28f3f4172d596426f0da40bcab8c46ef74d
+ms.openlocfilehash: 1e66403348bc2cd9a6dfab56f32735d62c986035
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "20215866"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915149"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Authentification fédérée haute disponibilité, phase 2 : Configurer les contrôleurs de domaine
 
@@ -36,13 +36,13 @@ Tout d'abord, vous devez remplir la colonne du **nom de la machine virtuelle** d
   
 |**Élément**|**Nom de la machine virtuelle**|**Image de la galerie**|**Type de stockage**|**Taille minimale**|
 |:-----|:-----|:-----|:-----|:-----|
-|1.  <br/> |![](./images/Common_Images/TableLine.png) (premier contrôleur de domaine, par exemple DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|2.  <br/> |![](./images/Common_Images/TableLine.png) (deuxième contrôleur de domaine, par exemple DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|3.  <br/> |![](./images/Common_Images/TableLine.png)(Serveur de synchronisation d’annuaire, exemple DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|4.  <br/> |![](./images/Common_Images/TableLine.png)(le premier serveur d’AD FS, exemple ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|5.  <br/> |![](./images/Common_Images/TableLine.png)(le second serveur d’AD FS, exemple ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|6.  <br/> |![](./images/Common_Images/TableLine.png)(première application serveur proxy web, exemple WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|7.  <br/> |![](./images/Common_Images/TableLine.png)(deuxième application serveur proxy web, exemple WEB2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png) (premier contrôleur de domaine, par exemple DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|2.  <br/> |![](./media/Common-Images/TableLine.png) (deuxième contrôleur de domaine, par exemple DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|3.  <br/> |![](./media/Common-Images/TableLine.png)(Serveur de synchronisation d’annuaire, exemple DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|4.  <br/> |![](./media/Common-Images/TableLine.png)(le premier serveur d’AD FS, exemple ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|5.  <br/> |![](./media/Common-Images/TableLine.png)(le second serveur d’AD FS, exemple ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|6.  <br/> |![](./media/Common-Images/TableLine.png)(première application serveur proxy web, exemple WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|7.  <br/> |![](./media/Common-Images/TableLine.png)(deuxième application serveur proxy web, exemple WEB2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
    
  **Tableau M - ordinateurs virtuels pour l’authentification fédérée de haute disponibilité pour Office 365 dans Azure**
   
@@ -245,7 +245,7 @@ Lorsque cette phase est terminée, voici la configuration résultante, avec les 
   
 **Phase 2 : Les contrôleurs de domaine et le serveur DirSync pour votre infrastructure d’authentification fédérée haute disponibilité dans Azure.**
 
-![Phase 2 de l’infrastructure d’authentification fédérée haute disponibilité Office 365 dans Azure à l’aide des contrôleurs de domaine](images/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
+![Phase 2 de l’infrastructure d’authentification fédérée haute disponibilité Office 365 dans Azure à l’aide des contrôleurs de domaine](media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
   
 ## <a name="next-step"></a>Étape suivante
 
@@ -259,6 +259,6 @@ Utilisez [High availability federated authentication Phase 3: Configure AD FS se
   
 [Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.md)
 
-[Identité fédérée pour Office 365](https://support.office.com/article/Understanding-Office-365-identity-and-Azure-Active-Directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9#bk_federated)
+[Options d’authentification fédérée](about-office-365-identity.md#federated-authentication-options)
 
 

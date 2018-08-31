@@ -1,5 +1,5 @@
 ---
-title: "Conception d’espace de stockage pour le cloud de Microsoft"
+title: Conception d’espace de stockage pour le cloud de Microsoft
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 7e511118-1b75-413a-b959-ad0d3ffc9516
-description: "Résumé : Découvrez pourquoi vous avez besoin de stockage cloud et passez en revue la liste des options de stockage cloud de Microsoft et les principaux scénarios de stockage."
-ms.openlocfilehash: ed816743e2d85a622a3fbfbb129bf90a7db93881
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: 'Résumé : Découvrez pourquoi vous avez besoin de stockage cloud et passez en revue la liste des options de stockage cloud de Microsoft et les principaux scénarios de stockage.'
+ms.openlocfilehash: d96992d63115095dd6a1b7277886d0a4bb2bc02f
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915229"
 ---
 # <a name="designing-storage-for-the-microsoft-cloud"></a>Conception d’espace de stockage pour le cloud de Microsoft
 

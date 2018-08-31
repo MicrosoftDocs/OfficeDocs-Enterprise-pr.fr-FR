@@ -12,11 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 5d6a58b8-bec3-4629-9737-8733c7b7ec92
 description: "Résumé : Comprendre la structure de base de l'infrastructure informatique locale de Contoso et les besoins pouvant être satisfaits par les offres cloud de Microsoft."
-ms.openlocfilehash: b8282c4bd04448266bc68e65f95aaaff0a7a5db8
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: e500aa1f3105c1e605d0d3c1d5f66651acb82b34
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915729"
 ---
 # <a name="contosos-it-infrastructure-and-needs"></a>Infrastructure et besoins informatiques de Contoso
 
@@ -30,7 +31,7 @@ Contoso utilise une infrastructure informatique locale centralisée avec des cen
   
 **Figure 1 : infrastructure informatique existante de Contoso**
 
-![Infrastructure informatique existante de Contoso](images/Contoso_Poster/Existing_IT.png)
+![Infrastructure informatique existante de Contoso](media/Contoso-Poster/Existing-IT.png)
   
 La Figure 1 présente le siège social avec les centres de données d'applications, un DMZ et Internet.
   
@@ -86,6 +87,7 @@ Après analyse des offres cloud de Microsoft, le service informatique de Contoso
   
 [Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs](https://sway.com/FJ2xsyWtkJc2taRD)
+[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs (en anglais)](https://sway.com/FJ2xsyWtkJc2taRD)
+
 
 

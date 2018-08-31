@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,183 +17,184 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: a1370fe4-2fd6-4fea-ad1d-3555433d6d2e
 description: 'Résumé : Utilisez ce guide de laboratoire de test pour créer un environnement de développement/test qui inclut toutes les offres cloud de Microsoft.'
-ms.openlocfilehash: 29fcb1108ceac6aa488ca71d723789a7a2e6c409
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: e5391b88a964261ad0698890bbb5c99866fbb57d
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915629"
 ---
-# <a name="the-one-microsoft-cloud-devtest-environment"></a><span data-ttu-id="5a889-103">Environnement de développement/test Microsoft Cloud unique</span><span class="sxs-lookup"><span data-stu-id="5a889-103">The One Microsoft Cloud dev/test environment</span></span>
+# <a name="the-one-microsoft-cloud-devtest-environment"></a><span data-ttu-id="b36f8-103">Environnement de développement/test Microsoft Cloud unique</span><span class="sxs-lookup"><span data-stu-id="b36f8-103">The One Microsoft Cloud dev/test environment</span></span>
 
- <span data-ttu-id="5a889-104">**Résumé : **Utilisez ce guide de laboratoire de test pour créer un environnement de développement/test qui inclut toutes les offres cloud de Microsoft.</span><span class="sxs-lookup"><span data-stu-id="5a889-104">**Summary:** Use this Test Lab Guide to create a dev/test environment that includes all of Microsoft’s cloud offerings.</span></span>
+ <span data-ttu-id="b36f8-104">**Résumé : **Utilisez ce guide de laboratoire de test pour créer un environnement de développement/test qui inclut toutes les offres cloud de Microsoft.</span><span class="sxs-lookup"><span data-stu-id="b36f8-104">**Summary:** Use this Test Lab Guide to create a dev/test environment that includes all of Microsoft's cloud offerings.</span></span>
   
-<span data-ttu-id="5a889-p101">Les instructions fournies dans cet article vous permettent de créer un intranet simulé dans les services d’infrastructure de Microsoft Azure, puis d’ajouter des abonnements Microsoft Office 365, Microsoft Enterprise Mobility + Security (EMS) et Microsoft Dynamics 365. Vous obtenez ainsi une organisation plus simple qui utilise toutes les offres cloud de Microsoft en même temps dans un environnement de développement/test unique. </span><span class="sxs-lookup"><span data-stu-id="5a889-p101">With the instructions in this article, you create a simulated intranet in Microsoft Azure infrastructure services and then add Microsoft Office 365, Microsoft Enterprise Mobility + Security (EMS), and Microsoft Dynamics 365 subscriptions. The result is a simplified organization that uses all Microsoft's cloud offerings at the same time in a single dev/test environment.</span></span> 
+<span data-ttu-id="b36f8-p101">Les instructions fournies dans cet article vous permettent de créer un intranet simulé dans les services d’infrastructure de Microsoft Azure, puis d’ajouter des abonnements Microsoft Office 365, Microsoft Enterprise Mobility + Security (EMS) et Microsoft Dynamics 365. Vous obtenez ainsi une organisation plus simple qui utilise toutes les offres cloud de Microsoft en même temps dans un environnement de développement/test unique. </span><span class="sxs-lookup"><span data-stu-id="b36f8-p101">With the instructions in this article, you create a simulated intranet in Microsoft Azure infrastructure services and then add Microsoft Office 365, Microsoft Enterprise Mobility + Security (EMS), and Microsoft Dynamics 365 subscriptions. The result is a simplified organization that uses all Microsoft's cloud offerings at the same time in a single dev/test environment.</span></span> 
   
-![Phase 3 de l’environnement de développement/test cloud One Microsoft avec Azure, Office 365, EMS et Dynamics 365](images/31714fcc-0c7d-411f-bcd1-c62d9be090ee.png)
+![Phase 3 de l’environnement de développement/test cloud One Microsoft avec Azure, Office 365, EMS et Dynamics 365](media/31714fcc-0c7d-411f-bcd1-c62d9be090ee.png)
   
-<span data-ttu-id="5a889-108">Vous pouvez utiliser la configuration obtenue pour :</span><span class="sxs-lookup"><span data-stu-id="5a889-108">You can use the resulting configuration to:</span></span>
+<span data-ttu-id="b36f8-108">Vous pouvez utiliser la configuration obtenue pour :</span><span class="sxs-lookup"><span data-stu-id="b36f8-108">You can use the resulting configuration to:</span></span>
   
-- <span data-ttu-id="5a889-109">Bénéficier d’une intégration de toutes les offres cloud de Microsoft, telles que l’infrastructure d’identité commune fournies par Azure Active Directory (AD).</span><span class="sxs-lookup"><span data-stu-id="5a889-109">Experience the integration across Microsoft's cloud offerings, such as the common identity infrastructure provided by Azure Active Directory (AD).</span></span>
+- <span data-ttu-id="b36f8-109">Bénéficier d’une intégration de toutes les offres cloud de Microsoft, telles que l’infrastructure d’identité commune fournies par Azure Active Directory (AD).</span><span class="sxs-lookup"><span data-stu-id="b36f8-109">Experience the integration across Microsoft's cloud offerings, such as the common identity infrastructure provided by Azure Active Directory (AD).</span></span>
     
-- <span data-ttu-id="5a889-110">Évaluer des scénarios complets comprenant plusieurs offres Microsoft Cloud.</span><span class="sxs-lookup"><span data-stu-id="5a889-110">Evaluate end-to-end scenarios that include multiple Microsoft Cloud offerings.</span></span>
+- <span data-ttu-id="b36f8-110">Évaluer des scénarios complets comprenant plusieurs offres Microsoft Cloud.</span><span class="sxs-lookup"><span data-stu-id="b36f8-110">Evaluate end-to-end scenarios that include multiple Microsoft Cloud offerings.</span></span>
     
-- <span data-ttu-id="5a889-111">Créer une démonstration, une preuve de concept ou une configuration de développement/test qui utilise plusieurs offres Microsoft Cloud.</span><span class="sxs-lookup"><span data-stu-id="5a889-111">Create a demo, proof-of-concept, or dev/test configuration that uses multiple Microsoft Cloud offerings.</span></span>
+- <span data-ttu-id="b36f8-111">Créer une démonstration, une preuve de concept ou une configuration de développement/test qui utilise plusieurs offres Microsoft Cloud.</span><span class="sxs-lookup"><span data-stu-id="b36f8-111">Create a demo, proof-of-concept, or dev/test configuration that uses multiple Microsoft Cloud offerings.</span></span>
     
-- <span data-ttu-id="5a889-112">Développer vos compétences sur Microsoft Cloud à des fins de développement professionnel.</span><span class="sxs-lookup"><span data-stu-id="5a889-112">Build your Microsoft Cloud skills for professional development.</span></span>
+- <span data-ttu-id="b36f8-112">Développer vos compétences sur Microsoft Cloud à des fins de développement professionnel.</span><span class="sxs-lookup"><span data-stu-id="b36f8-112">Build your Microsoft Cloud skills for professional development.</span></span>
     
-## <a name="phase-1-create-a-simulated-intranet-and-add-office-365"></a><span data-ttu-id="5a889-113">Phase 1 : Créer un intranet simulé et y ajouter Office 365</span><span class="sxs-lookup"><span data-stu-id="5a889-113">Phase 1: Create a simulated intranet and add Office 365</span></span>
+## <a name="phase-1-create-a-simulated-intranet-and-add-office-365"></a><span data-ttu-id="b36f8-113">Phase 1 : Créer un intranet simulé et y ajouter Office 365</span><span class="sxs-lookup"><span data-stu-id="b36f8-113">Phase 1: Create a simulated intranet and add Office 365</span></span>
 
-<span data-ttu-id="5a889-114">Suivez les instructions fournies dans [DirSync pour votre environnement de développement/test Office 365](dirsync-for-your-office-365-dev-test-environment.md).</span><span class="sxs-lookup"><span data-stu-id="5a889-114">Follow the instructions in [DirSync for your Office 365 dev/test environment](dirsync-for-your-office-365-dev-test-environment.md).</span></span>
+<span data-ttu-id="b36f8-114">Suivez les instructions fournies dans [DirSync pour votre environnement de développement/test Office 365](dirsync-for-your-office-365-dev-test-environment.md).</span><span class="sxs-lookup"><span data-stu-id="b36f8-114">Follow the instructions in [DirSync for your Office 365 dev/test environment](dirsync-for-your-office-365-dev-test-environment.md).</span></span>
   
-<span data-ttu-id="5a889-115">La figure 1 présente la configuration obtenue, qui comprend Office 365 et un intranet simulé exécuté dans les services d’infrastructure Azure et la synchronisation d’annuaires à partir d’une forêt Windows Server Active Directory (AD) locale.</span><span class="sxs-lookup"><span data-stu-id="5a889-115">Figure 1 shows your resulting configuration, which includes a simulated intranet running in Azure infrastructure services and directory synchronization from an on-premises Windows Server Active Directory (AD) forest.</span></span>
+<span data-ttu-id="b36f8-115">La figure 1 présente la configuration obtenue, qui comprend Office 365 et un intranet simulé exécuté dans les services d’infrastructure Azure et la synchronisation d’annuaires à partir d’une forêt Windows Server Active Directory (AD) locale.</span><span class="sxs-lookup"><span data-stu-id="b36f8-115">Figure 1 shows your resulting configuration, which includes Office 365 and a simulated intranet running in Azure infrastructure services and directory synchronization from an on-premises Windows Server Active Directory (AD) forest.</span></span>
   
-<span data-ttu-id="5a889-116">**Figure 1 : Intranet simulé dans Azure avec Office 365**</span><span class="sxs-lookup"><span data-stu-id="5a889-116">**Figure 1: The simulated intranet in Azure with Office 365**</span></span>
+<span data-ttu-id="b36f8-116">**Figure 1 : Intranet simulé dans Azure avec Office 365**</span><span class="sxs-lookup"><span data-stu-id="b36f8-116">**Figure 1: The simulated intranet in Azure with Office 365**</span></span>
 
-![Environnement de développement/test d’Office 365 avec DirSync](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![Environnement de développement/test d’Office 365 avec DirSync](media/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 > [!NOTE]
-> <span data-ttu-id="5a889-p102">La version d’évaluation d’Azure est de 30 jours. L’abonnement à la version d’évaluation d’Office 365 Entreprise E5 est de 30 jours, et peut être facilement étendue de 30 jours supplémentaires. Pour un environnement de développement/test permanent, créez un abonnement payant Azure et un abonnement payant Office 365 Entreprise E5 avec un petit nombre de licences.</span><span class="sxs-lookup"><span data-stu-id="5a889-p102">The Azure trial  is 30 days. The Office 365 Enterprise E5 Trial subscription is 30 days, which can be easily extended for another 30 days. For a permanent dev/test environment, create a new paid Azure subscription and a new paid Office 365 Enterprise E5 subscription with a small number of licenses.</span></span> 
+> <span data-ttu-id="b36f8-p102">La version d’évaluation d’Azure est de 30 jours. L’abonnement à la version d’évaluation d’Office 365 Entreprise E5 est de 30 jours, et peut être facilement étendue de 30 jours supplémentaires. Pour un environnement de développement/test permanent, créez un abonnement payant Azure et un abonnement payant Office 365 Entreprise E5 avec un petit nombre de licences.</span><span class="sxs-lookup"><span data-stu-id="b36f8-p102">The Azure trial is 30 days. The Office 365 Enterprise E5 Trial subscription is 30 days, which can be easily extended for another 30 days. For a permanent dev/test environment, create a new paid Azure subscription and a new paid Office 365 Enterprise E5 subscription with a small number of licenses.</span></span> 
   
-## <a name="phase-2-add-ems"></a><span data-ttu-id="5a889-121">Phase 2 : Ajout d’EMS</span><span class="sxs-lookup"><span data-stu-id="5a889-121">Phase 2: Add EMS</span></span>
+## <a name="phase-2-add-ems"></a><span data-ttu-id="b36f8-121">Phase 2 : Ajout d’EMS</span><span class="sxs-lookup"><span data-stu-id="b36f8-121">Phase 2: Add EMS</span></span>
 
-<span data-ttu-id="5a889-122">Dans cette phase, vous vous inscrivez pour l’abonnement d’évaluation EMS et l’ajoutez à la même organisation que votre abonnement d’évaluation Office 365.</span><span class="sxs-lookup"><span data-stu-id="5a889-122">In this phase, you sign up for the EMS trial subscription and add it to the same organization as your Office 365 trial subscription.</span></span>
+<span data-ttu-id="b36f8-122">Dans cette phase, vous vous inscrivez pour l’abonnement d’évaluation EMS et l’ajoutez à la même organisation que votre abonnement d’évaluation Office 365.</span><span class="sxs-lookup"><span data-stu-id="b36f8-122">In this phase, you sign up for the EMS trial subscription and add it to the same organization as your Office 365 trial subscription.</span></span>
   
-1. <span data-ttu-id="5a889-123">En utilisant un navigateur de votre ordinateur de bureau ou de CLIENT1, connectez-vous au portail Office 365 ([https://portal.office.com](https://portal.office.com)) à l’aide des informations d’identification de votre compte Administrateur général.</span><span class="sxs-lookup"><span data-stu-id="5a889-123">With a browser on either your desktop computer (lightweight) or from CLIENT1 (simulated enterprise), sign in to the Office 365 portal at  https://portal.office.com https://portal.office.com  with the credentials of your global administrator account.</span></span>
+1. <span data-ttu-id="b36f8-123">En utilisant un navigateur de votre ordinateur de bureau ou de CLIENT1, connectez-vous au portail Office 365 ([https://portal.office.com](https://portal.office.com)) à l’aide des informations d’identification de votre compte Administrateur général.</span><span class="sxs-lookup"><span data-stu-id="b36f8-123">With a browser on either your desktop computer or from CLIENT1, sign in to the Office 365 portal at [https://portal.office.com](https://portal.office.com) with the credentials of your global administrator account.</span></span>
     
-2. <span data-ttu-id="5a889-124">Cliquez sur la vignette **Administration**.</span><span class="sxs-lookup"><span data-stu-id="5a889-124">Click the **Admin** tile.</span></span>
+2. <span data-ttu-id="b36f8-124">Cliquez sur la vignette **Administration**.</span><span class="sxs-lookup"><span data-stu-id="b36f8-124">Click the **Admin** tile.</span></span>
     
-3. <span data-ttu-id="5a889-125">Sous l’onglet **Centre d’administration Office** de votre navigateur, dans le volet de navigation gauche, cliquez sur **Facturation > Acheter des services**.</span><span class="sxs-lookup"><span data-stu-id="5a889-125">On the **Office Admin center** tab in your browser, in the left navigation, click **Billing > Purchase services**.</span></span>
+3. <span data-ttu-id="b36f8-125">Sous l’onglet **Centre d’administration Office** de votre navigateur, dans le volet de navigation gauche, cliquez sur **Facturation > Acheter des services**.</span><span class="sxs-lookup"><span data-stu-id="b36f8-125">On the **Office Admin center** tab in your browser, in the left navigation, click **Billing > Purchase services**.</span></span>
     
-4. <span data-ttu-id="5a889-p103">Dans la page **Acheter des services**, recherchez l’élément **Enterprise Mobility + Security E5**. Pointez votre souris dessus et cliquez sur **Démarrer l’essai gratuit**.</span><span class="sxs-lookup"><span data-stu-id="5a889-p103">On the **Purchase services** page, find the **Enterprise Mobility + Security E5** item. Hover your mouse pointer over it and click **Start free trial**.</span></span>
+4. <span data-ttu-id="b36f8-p103">Dans la page **Acheter des services**, recherchez l’élément **Enterprise Mobility + Security E5**. Pointez votre souris dessus et cliquez sur **Démarrer l’essai gratuit**.</span><span class="sxs-lookup"><span data-stu-id="b36f8-p103">On the **Purchase services** page, find the **Enterprise Mobility + Security E5** item. Hover your mouse pointer over it and click **Start free trial**.</span></span>
     
-5. <span data-ttu-id="5a889-128">Dans la page **Confirmer votre commande**, cliquez sur **Essayer maintenant**.</span><span class="sxs-lookup"><span data-stu-id="5a889-128">On the **Confirm your order** page, click **Try now**.</span></span>
+5. <span data-ttu-id="b36f8-128">Dans la page **Confirmer votre commande**, cliquez sur **Essayer maintenant**.</span><span class="sxs-lookup"><span data-stu-id="b36f8-128">On the **Confirm your order** page, click **Try now**.</span></span>
     
-6. <span data-ttu-id="5a889-129">Dans la page **Réception de la commande**, cliquez sur **Continuer**.</span><span class="sxs-lookup"><span data-stu-id="5a889-129">On the **Order receipt** page, click **Continue**.</span></span>
+6. <span data-ttu-id="b36f8-129">Dans la page **Réception de la commande**, cliquez sur **Continuer**.</span><span class="sxs-lookup"><span data-stu-id="b36f8-129">On the **Order receipt** page, click **Continue**.</span></span>
     
 > [!NOTE]
-> <span data-ttu-id="5a889-p104">L’abonnement à la version d’évaluation d’Enterprise Mobility + Security E5 est de 90 jours. Pour un environnement de développement/test permanent, créez un nouvel abonnement payant avec un nombre réduit de licences.</span><span class="sxs-lookup"><span data-stu-id="5a889-p104">The Enterprise Mobility + Security E5 trial subscription is 90 days. For a permanent dev/test environment, create a new paid subscription with a small number of licenses.</span></span> 
+> <span data-ttu-id="b36f8-p104">L’abonnement à la version d’évaluation d’Enterprise Mobility + Security E5 est de 90 jours. Pour un environnement de développement/test permanent, créez un nouvel abonnement payant avec un nombre réduit de licences.</span><span class="sxs-lookup"><span data-stu-id="b36f8-p104">The Enterprise Mobility + Security E5 trial subscription is 90 days. For a permanent dev/test environment, create a new paid subscription with a small number of licenses.</span></span> 
   
-<span data-ttu-id="5a889-132">Ensuite, activez la licence Enterprise Mobility + Security E5 pour tous les comptes d’utilisateur.</span><span class="sxs-lookup"><span data-stu-id="5a889-132">Next, enable the Enterprise Mobility + Security E5 license for all user accounts.</span></span>
+<span data-ttu-id="b36f8-132">Ensuite, activez la licence Enterprise Mobility + Security E5 pour tous les comptes d’utilisateur.</span><span class="sxs-lookup"><span data-stu-id="b36f8-132">Next, enable the Enterprise Mobility + Security E5 license for all user accounts.</span></span>
   
-1. <span data-ttu-id="5a889-133">Sous l’onglet **Centre d’administration Office 365** de votre navigateur, dans le volet de navigation gauche, cliquez sur **Utilisateurs > Utilisateurs actifs**.</span><span class="sxs-lookup"><span data-stu-id="5a889-133">On the **Office 365 Admin center** tab in your browser, in the left navigation, click **Users > Active users**.</span></span>
+1. <span data-ttu-id="b36f8-133">Sous l’onglet **Centre d’administration Office 365** de votre navigateur, dans le volet de navigation gauche, cliquez sur **Utilisateurs > Utilisateurs actifs**.</span><span class="sxs-lookup"><span data-stu-id="b36f8-133">On the **Office 365 Admin center** tab in your browser, in the left navigation, click **Users > Active users**.</span></span>
     
-2. <span data-ttu-id="5a889-134">Cliquez sur votre compte Administrateur général, puis cliquez sur **Modifier** pour les **licences de produit**.</span><span class="sxs-lookup"><span data-stu-id="5a889-134">Click your global administrator account, and then click Edit for Product licenses.</span></span>
+2. <span data-ttu-id="b36f8-134">Cliquez sur votre compte Administrateur général, puis cliquez sur **Modifier** pour les **licences de produit**.</span><span class="sxs-lookup"><span data-stu-id="b36f8-134">Click your global administrator account, and then click **Edit** for **Product licenses**.</span></span>
     
-3. <span data-ttu-id="5a889-135">Dans le volet **Licences de produit**, activez la licence de produit pour **Enterprise Mobility + Security E5** en sélectionnant **Activer**, cliquez sur **Enregistrer**, cliquez deux fois sur **Fermer**.</span><span class="sxs-lookup"><span data-stu-id="5a889-135">On the **Product licenses** pane, turn the product license for **Enterprise Mobility + Security E5** to **On**, click **Save,** and then click **Close** twice.</span></span>
+3. <span data-ttu-id="b36f8-135">Dans le volet **Licences de produit**, activez la licence de produit pour **Enterprise Mobility + Security E5** en sélectionnant **Activer**, cliquez sur **Enregistrer**, cliquez deux fois sur **Fermer**.</span><span class="sxs-lookup"><span data-stu-id="b36f8-135">On the **Product licenses** pane, turn the product license for **Enterprise Mobility + Security E5** to **On**, click **Save,** and then click **Close** twice.</span></span>
     
-4. <span data-ttu-id="5a889-136">Pour tous vos autres comptes (Utilisateur 1, Utilisateur 2, Utilisateur 3, Utilisateur 4 et Utilisateur 5), suivez les étapes 2 et 3.</span><span class="sxs-lookup"><span data-stu-id="5a889-136">For all of your other accounts (User1, User 2, User 3, User 4, and User 5), do steps 2 and 3.</span></span>
+4. <span data-ttu-id="b36f8-136">Pour tous vos autres comptes (Utilisateur 1, Utilisateur 2, Utilisateur 3, Utilisateur 4 et Utilisateur 5), suivez les étapes 2 et 3.</span><span class="sxs-lookup"><span data-stu-id="b36f8-136">For all of your other accounts (User1, User 2, User 3, User 4, and User 5), do steps 2 and 3.</span></span>
     
-<span data-ttu-id="5a889-137">Votre environnement de développement/test comporte maintenant :</span><span class="sxs-lookup"><span data-stu-id="5a889-137">Your dev/test environment now has:</span></span>
+<span data-ttu-id="b36f8-137">Votre environnement de développement/test comporte maintenant :</span><span class="sxs-lookup"><span data-stu-id="b36f8-137">Your dev/test environment now has:</span></span>
   
-- <span data-ttu-id="5a889-138">Un intranet simulé exécuté dans les services d’infrastructure Azure.</span><span class="sxs-lookup"><span data-stu-id="5a889-138">A simulated intranet running in Azure infrastructure services.</span></span>
+- <span data-ttu-id="b36f8-138">Un intranet simulé exécuté dans les services d’infrastructure Azure.</span><span class="sxs-lookup"><span data-stu-id="b36f8-138">A simulated intranet running in Azure infrastructure services.</span></span>
     
-- <span data-ttu-id="5a889-139">Des abonnements d’évaluation Office 365 E5 Entreprise et EMS qui partagent la même organisation et le même client Azure AD avec votre liste des comptes d’utilisateur.</span><span class="sxs-lookup"><span data-stu-id="5a889-139">Office 365 E5 Enterprise and EMS trial subscriptions sharing the same organization and the same Azure AD tenant with your list of user accounts.</span></span>
+- <span data-ttu-id="b36f8-139">Des abonnements d’évaluation Office 365 E5 Entreprise et EMS qui partagent la même organisation et le même client Azure AD avec votre liste des comptes d’utilisateur.</span><span class="sxs-lookup"><span data-stu-id="b36f8-139">Office 365 E5 Enterprise and EMS trial subscriptions sharing the same organization and the same Azure AD tenant with your list of user accounts.</span></span>
     
-- <span data-ttu-id="5a889-140">Tous vos comptes d’utilisateur activés pour utiliser Office 365 Entreprise E5 et EMS.</span><span class="sxs-lookup"><span data-stu-id="5a889-140">All of your user accounts enabled to use Office 365 E5 Enterprise and EMS.</span></span>
+- <span data-ttu-id="b36f8-140">Tous vos comptes d’utilisateur activés pour utiliser Office 365 Entreprise E5 et EMS.</span><span class="sxs-lookup"><span data-stu-id="b36f8-140">All of your user accounts enabled to use Office 365 E5 Enterprise and EMS.</span></span>
     
-<span data-ttu-id="5a889-141">La figure 2 montre la configuration obtenue, qui ajoute EMS.</span><span class="sxs-lookup"><span data-stu-id="5a889-141">Figure 2 shows your resulting configuration, which adds EMS.</span></span>
+<span data-ttu-id="b36f8-141">La figure 2 montre la configuration obtenue, qui ajoute EMS.</span><span class="sxs-lookup"><span data-stu-id="b36f8-141">Figure 2 shows your resulting configuration, which adds EMS.</span></span>
   
-<span data-ttu-id="5a889-142">**Figure 2 : Intranet simulé dans Azure avec Office 365 et EMS**</span><span class="sxs-lookup"><span data-stu-id="5a889-142">**Figure 2: The simulated intranet in Azure with Office 365 and EMS**</span></span>
+<span data-ttu-id="b36f8-142">**Figure 2 : Intranet simulé dans Azure avec Office 365 et EMS**</span><span class="sxs-lookup"><span data-stu-id="b36f8-142">**Figure 2: The simulated intranet in Azure with Office 365 and EMS**</span></span>
 
-![Phase 2 de l’environnement de développement/test cloud One Microsoft avec Azure, Office 365 et EMS](images/fdb520fe-ebbd-4681-a80e-b60df52f07c5.png)
+![Phase 2 de l’environnement de développement/test cloud One Microsoft avec Azure, Office 365 et EMS](media/fdb520fe-ebbd-4681-a80e-b60df52f07c5.png)
   
-## <a name="phase-3-add-dynamics-365"></a><span data-ttu-id="5a889-144">Phase 3 : Ajouter Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="5a889-144">Phase 3: Add a Dynamics 365 trial subscription</span></span>
+## <a name="phase-3-add-dynamics-365"></a><span data-ttu-id="b36f8-144">Phase 3 : Ajouter Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="b36f8-144">Phase 3: Add Dynamics 365</span></span>
 
-<span data-ttu-id="5a889-145">Dans cette phase, vous allez souscrire à l’abonnement d’évaluation Dynamics 365 et l’ajouter à la même organisation que vos abonnements d’évaluation Office 365 et EMS.</span><span class="sxs-lookup"><span data-stu-id="5a889-145">In this phase, you sign up for the Dynamics 365 trial subscription and add it to the same organization as your Office 365 and EMS trial subscriptions.</span></span>
+<span data-ttu-id="b36f8-145">Dans cette phase, vous allez souscrire à l’abonnement d’évaluation Dynamics 365 et l’ajouter à la même organisation que vos abonnements d’évaluation Office 365 et EMS.</span><span class="sxs-lookup"><span data-stu-id="b36f8-145">In this phase, you sign up for the Dynamics 365 trial subscription and add it to the same organization as your Office 365 and EMS trial subscriptions.</span></span>
   
-1. <span data-ttu-id="5a889-146">En utilisant un navigateur de votre ordinateur de bureau ou de CLIENT1, connectez-vous au portail Office 365 ([https://portal.office.com](https://portal.office.com)) à l’aide des informations d’identification de votre compte Administrateur général.</span><span class="sxs-lookup"><span data-stu-id="5a889-146">Using a browser on either your desktop computer (lightweight) or from CLIENT1 (simulated enterprise), sign in to the Office 365 portal at  https://portal.office.com https://portal.office.com  with the credentials of your global administrator account.</span></span>
+1. <span data-ttu-id="b36f8-146">En utilisant un navigateur de votre ordinateur de bureau ou de CLIENT1, connectez-vous au portail Office 365 ([https://portal.office.com](https://portal.office.com)) à l’aide des informations d’identification de votre compte Administrateur général.</span><span class="sxs-lookup"><span data-stu-id="b36f8-146">Using a browser on either your desktop computer or from CLIENT1, sign in to the Office 365 portal at [https://portal.office.com](https://portal.office.com) with the credentials of your global administrator account.</span></span>
     
-2. <span data-ttu-id="5a889-147">Cliquez sur la vignette **Administration**.</span><span class="sxs-lookup"><span data-stu-id="5a889-147">Click the **Admin** tile.</span></span>
+2. <span data-ttu-id="b36f8-147">Cliquez sur la vignette **Administration**.</span><span class="sxs-lookup"><span data-stu-id="b36f8-147">Click the **Admin** tile.</span></span>
     
-3. <span data-ttu-id="5a889-148">Sous l’onglet **Centre d’administration Office**, dans le volet de navigation de gauche, cliquez sur **Facturation > Acheter des services**.</span><span class="sxs-lookup"><span data-stu-id="5a889-148">On the **Office admin center** tab, in the left navigation, click **Billing > Purchase services**.</span></span>
+3. <span data-ttu-id="b36f8-148">Sous l’onglet **Centre d’administration Office**, dans le volet de navigation de gauche, cliquez sur **Facturation > Acheter des services**.</span><span class="sxs-lookup"><span data-stu-id="b36f8-148">On the **Office admin center** tab, in the left navigation, click **Billing > Purchase services**.</span></span>
     
-4. <span data-ttu-id="5a889-p105">Dans la page **Acheter des services**, recherchez l’élément **Dynamics 365 Plan 1 Enterprise Edition**. Placez le curseur de la souris dessus et cliquez sur **Démarrer l’essai gratuit**.</span><span class="sxs-lookup"><span data-stu-id="5a889-p105">On the **Purchase services** page, find the **Dynamics 365 Plan 1 Enterprise Edition** item. Hover your mouse pointer over it and click **Start free trial**.</span></span>
+4. <span data-ttu-id="b36f8-p105">Dans la page **Acheter des services**, recherchez l’élément **Dynamics 365 Plan 1 Enterprise Edition**. Placez le curseur de la souris dessus et cliquez sur **Démarrer l’essai gratuit**.</span><span class="sxs-lookup"><span data-stu-id="b36f8-p105">On the **Purchase services** page, find the **Dynamics 365 Plan 1 Enterprise Edition** item. Hover your mouse pointer over it and click **Start free trial**.</span></span>
     
-5. <span data-ttu-id="5a889-151">Dans la page **Confirmer votre commande**, cliquez sur **Essayer maintenant**.</span><span class="sxs-lookup"><span data-stu-id="5a889-151">On the **Confirm your order** page, click **Try now**.</span></span>
+5. <span data-ttu-id="b36f8-151">Dans la page **Confirmer votre commande**, cliquez sur **Essayer maintenant**.</span><span class="sxs-lookup"><span data-stu-id="b36f8-151">On the **Confirm your order** page, click **Try now**.</span></span>
     
-6. <span data-ttu-id="5a889-152">Dans la page **Réception de la commande**, cliquez sur **Continuer**.</span><span class="sxs-lookup"><span data-stu-id="5a889-152">On the **Order receipt** page, click **Continue**.</span></span>
+6. <span data-ttu-id="b36f8-152">Dans la page **Réception de la commande**, cliquez sur **Continuer**.</span><span class="sxs-lookup"><span data-stu-id="b36f8-152">On the **Order receipt** page, click **Continue**.</span></span>
     
 > [!NOTE]
-> <span data-ttu-id="5a889-p106">L’abonnement d’évaluation Dynamics 365 Plan 1 Enterprise Edition est valide pendant 30 jours. Vous pouvez facilement étendre l’abonnement d’évaluation pour une période supplémentaire de 30 jours. Pour un environnement de développement/test permanent, créez un nouvel abonnement payant avec un nombre réduit de licences.</span><span class="sxs-lookup"><span data-stu-id="5a889-p106">The Dynamics 365 Plan 1 Enterprise Edition trial subscription is 30 days. You can easily extend the trail subscription for another 30 days. For a permanent dev/test environment, create a new paid subscription with a small number of licenses.</span></span> 
+> <span data-ttu-id="b36f8-p106">L’abonnement d’évaluation Dynamics 365 Plan 1 Enterprise Edition est valide pendant 30 jours. Vous pouvez facilement étendre l’abonnement d’évaluation pour une période supplémentaire de 30 jours. Pour un environnement de développement/test permanent, créez un nouvel abonnement payant avec un nombre réduit de licences.</span><span class="sxs-lookup"><span data-stu-id="b36f8-p106">The Dynamics 365 Plan 1 Enterprise Edition trial subscription is 30 days. You can easily extend the trail subscription for another 30 days. For a permanent dev/test environment, create a new paid subscription with a small number of licenses.</span></span> 
   
-<span data-ttu-id="5a889-156">Procédez comme suit pour affecter des licences Dynamics 365 aux comptes de l’administrateur général, ainsi qu’aux comptes Utilisateur 2 et Utilisateur 3 afin de leur attribuer le rôle d’administrateur système.</span><span class="sxs-lookup"><span data-stu-id="5a889-156">Use these steps to assign Dynamics 365 licenses to the global administrator, User 2, and User 3 accounts and make them system administrators.</span></span>
+<span data-ttu-id="b36f8-156">Procédez comme suit pour affecter des licences Dynamics 365 aux comptes de l’administrateur général, ainsi qu’aux comptes Utilisateur 2 et Utilisateur 3 afin de leur attribuer le rôle d’administrateur système.</span><span class="sxs-lookup"><span data-stu-id="b36f8-156">Use these steps to assign Dynamics 365 licenses to the global administrator, User 2, and User 3 accounts and make them system administrators.</span></span>
   
-1. <span data-ttu-id="5a889-157">Sous l’onglet **Centre d’administration Office**, cliquez sur **Utilisateurs > Utilisateurs actifs**.</span><span class="sxs-lookup"><span data-stu-id="5a889-157">On the **Office admin center** tab, click **Users > Active users**.</span></span>
+1. <span data-ttu-id="b36f8-157">Sous l’onglet **Centre d’administration Office**, cliquez sur **Utilisateurs > Utilisateurs actifs**.</span><span class="sxs-lookup"><span data-stu-id="b36f8-157">On the **Office admin center** tab, click **Users > Active users**.</span></span>
     
-2. <span data-ttu-id="5a889-158">Dans la liste des utilisateurs actifs, sélectionnez votre compte Administrateur général, puis cliquez sur **Modifier** pour **Licences de produits**.</span><span class="sxs-lookup"><span data-stu-id="5a889-158">In the list of active users, click your global administrator account, and then click **Edit** for **Product licenses**.</span></span>
+2. <span data-ttu-id="b36f8-158">Dans la liste des utilisateurs actifs, sélectionnez votre compte Administrateur général, puis cliquez sur **Modifier** pour **Licences de produits**.</span><span class="sxs-lookup"><span data-stu-id="b36f8-158">In the list of active users, click your global administrator account, and then click **Edit** for **Product licenses**.</span></span>
     
-3. <span data-ttu-id="5a889-159">	Dans le volet **Licences de produit**, activez la licence de produit pour **Dynamics 365 Plan 1 Enterprise Edition** en sélectionnant **Activer**, cliquez sur **Enregistrer**, puis cliquez deux fois sur **Fermer**.</span><span class="sxs-lookup"><span data-stu-id="5a889-159">On the **Product licenses** pane, turn the product license for **Dynamics 365 Plan 1 Enterprise Edition** to **On**, click **Save,** and then click **Close** twice.</span></span>
+3. <span data-ttu-id="b36f8-159">	Dans le volet **Licences de produit**, activez la licence de produit pour **Dynamics 365 Plan 1 Enterprise Edition** en sélectionnant **Activer**, cliquez sur **Enregistrer**, puis cliquez deux fois sur **Fermer**.</span><span class="sxs-lookup"><span data-stu-id="b36f8-159">On the **Product licenses** pane, turn the product license for **Dynamics 365 Plan 1 Enterprise Edition** to **On**, click **Save,** and then click **Close** twice.</span></span>
     
-4. <span data-ttu-id="5a889-160">Suivez les étapes 2 et 3 pour les comptes Utilisateur 2 et Utilisateur 3.</span><span class="sxs-lookup"><span data-stu-id="5a889-160">Perform steps 2 and 3 for the User 2 and User 3 accounts.</span></span>
+4. <span data-ttu-id="b36f8-160">Suivez les étapes 2 et 3 pour les comptes Utilisateur 2 et Utilisateur 3.</span><span class="sxs-lookup"><span data-stu-id="b36f8-160">Perform steps 2 and 3 for the User 2 and User 3 accounts.</span></span>
     
-5. <span data-ttu-id="5a889-161">Fermez l’onglet **Centre d’administration Office**.</span><span class="sxs-lookup"><span data-stu-id="5a889-161">Close the **Office admin center** tab.</span></span>
+5. <span data-ttu-id="b36f8-161">Fermez l’onglet **Centre d’administration Office**.</span><span class="sxs-lookup"><span data-stu-id="b36f8-161">Close the **Office admin center** tab.</span></span>
     
-<span data-ttu-id="5a889-162">Lors de cette phase, vous allez configurer les comptes Utilisateur 2 et Utilisateur 3 en tant qu’administrateurs système de Dynamics 365.</span><span class="sxs-lookup"><span data-stu-id="5a889-162">Use these steps to configure the User 2 and User 3 accounts as Dynamics 365 system administrators.</span></span>
+<span data-ttu-id="b36f8-162">Lors de cette phase, vous allez configurer les comptes Utilisateur 2 et Utilisateur 3 en tant qu’administrateurs système de Dynamics 365.</span><span class="sxs-lookup"><span data-stu-id="b36f8-162">Use these steps to configure the User 2 and User 3 accounts as Dynamics 365 system administrators.</span></span>
   
-1. <span data-ttu-id="5a889-163">Sur l’onglet **Centre d’administration Office** de votre navigateur, cliquez sur **Centres d’administration** dans le volet de navigation de gauche, puis sur **Dynamics 365**.</span><span class="sxs-lookup"><span data-stu-id="5a889-163">On the **Office Admin center** tab in your browser, in the left navigation, click **Admin centers**, and then click **Dynamics 365**.</span></span>
+1. <span data-ttu-id="b36f8-163">Sur l’onglet **Centre d’administration Office** de votre navigateur, cliquez sur **Centres d’administration** dans le volet de navigation de gauche, puis sur **Dynamics 365**.</span><span class="sxs-lookup"><span data-stu-id="b36f8-163">On the **Office Admin center** tab in your browser, in the left navigation, click **Admin centers**, and then click **Dynamics 365**.</span></span>
     
-    <span data-ttu-id="5a889-164">Vous devrez peut-être attendre la fin de l’approvisionnement de Dynamics 365 avant de le voir apparaître dans le menu.</span><span class="sxs-lookup"><span data-stu-id="5a889-164">You may need to wait for Dynamics 365 to finish provisioning before Dynamics 365 appears in the menu.</span></span>
+    <span data-ttu-id="b36f8-164">Vous devrez peut-être attendre la fin de l’approvisionnement de Dynamics 365 avant de le voir apparaître dans le menu.</span><span class="sxs-lookup"><span data-stu-id="b36f8-164">You may need to wait for Dynamics 365 to finish provisioning before Dynamics 365 appears in the menu.</span></span>
     
-2. <span data-ttu-id="5a889-165">Sur l’onglet Dynamics 365, cliquez sur **Toutes ces options**, puis sur **Terminer l’installation**.</span><span class="sxs-lookup"><span data-stu-id="5a889-165">On the Dynamics 365 tab, click **All of these**, and then click **Complete Setup.**</span></span>
+2. <span data-ttu-id="b36f8-165">Sur l’onglet Dynamics 365, cliquez sur **Toutes ces options**, puis sur **Terminer l’installation**.</span><span class="sxs-lookup"><span data-stu-id="b36f8-165">On the Dynamics 365 tab, click **All of these**, and then click **Complete Setup.**</span></span>
     
-    <span data-ttu-id="5a889-166">Attendez la fin de l’installation.</span><span class="sxs-lookup"><span data-stu-id="5a889-166">Wait for setup to complete.</span></span>
+    <span data-ttu-id="b36f8-166">Attendez la fin de l’installation.</span><span class="sxs-lookup"><span data-stu-id="b36f8-166">Wait for setup to complete.</span></span>
     
-    <span data-ttu-id="5a889-p107">Une fois l’installation terminée, un tableau de bord Activité de ventes reposant sur des exemples de données inclus dans l’abonnement d’essai est affiché. Visionnez la **vidéo de présentation de l’essai**. Fermez la fenêtre de la vidéo lorsque vous avez terminé.</span><span class="sxs-lookup"><span data-stu-id="5a889-p107">When setup completes, it displays a Sales Activity Dashboard based on sample data that is part of the trail subscription. Take a few moments to view the **Welcome to your trial** video. Close the video window when complete.</span></span>
+    <span data-ttu-id="b36f8-p107">Une fois l’installation terminée, un tableau de bord Activité de ventes reposant sur des exemples de données inclus dans l’abonnement d’essai est affiché. Visionnez la **vidéo de présentation de l’essai**. Fermez la fenêtre de la vidéo lorsque vous avez terminé.</span><span class="sxs-lookup"><span data-stu-id="b36f8-p107">When setup completes, it displays a Sales Activity Dashboard based on sample data that is part of the trail subscription. Take a few moments to view the **Welcome to your trial** video. Close the video window when complete.</span></span>
     
-3. <span data-ttu-id="5a889-170">Dans la barre d’outils située en haut de l’écran, cliquez sur la flèche vers le bas en regard de **Ventes**, sur **Paramètres** puis sur **Sécurité**.</span><span class="sxs-lookup"><span data-stu-id="5a889-170">On the toolbar at the top, click the down arrow next to **Sales**, click **Settings**, and then click **Security**.</span></span>
+3. <span data-ttu-id="b36f8-170">Dans la barre d’outils située en haut de l’écran, cliquez sur la flèche vers le bas en regard de **Ventes**, sur **Paramètres** puis sur **Sécurité**.</span><span class="sxs-lookup"><span data-stu-id="b36f8-170">On the toolbar at the top, click the down arrow next to **Sales**, click **Settings**, and then click **Security**.</span></span>
     
-4. <span data-ttu-id="5a889-171">Dans la page **Sécurité**, cliquez sur **Utilisateurs**.</span><span class="sxs-lookup"><span data-stu-id="5a889-171">On the **Security** page, click **Users**.</span></span>
+4. <span data-ttu-id="b36f8-171">Dans la page **Sécurité**, cliquez sur **Utilisateurs**.</span><span class="sxs-lookup"><span data-stu-id="b36f8-171">On the **Security** page, click **Users**.</span></span>
     
-5. <span data-ttu-id="5a889-172">Dans la liste des utilisateurs, cliquez sur **Utilisateur 2**.</span><span class="sxs-lookup"><span data-stu-id="5a889-172">In the list of users, click **User 2**.</span></span>
+5. <span data-ttu-id="b36f8-172">Dans la liste des utilisateurs, cliquez sur **Utilisateur 2**.</span><span class="sxs-lookup"><span data-stu-id="b36f8-172">In the list of users, click **User 2**.</span></span>
     
-6. <span data-ttu-id="5a889-173">Dans la barre d’outils, cliquez sur **Gérer les rôles**.</span><span class="sxs-lookup"><span data-stu-id="5a889-173">In the tool bar, click **Manage Roles**.</span></span>
+6. <span data-ttu-id="b36f8-173">Dans la barre d’outils, cliquez sur **Gérer les rôles**.</span><span class="sxs-lookup"><span data-stu-id="b36f8-173">In the tool bar, click **Manage Roles**.</span></span>
     
-7. <span data-ttu-id="5a889-174">Dans **Gérer les rôles**, cliquez sur **Administrateur système**, puis sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="5a889-174">In **Manage Roles**, click **System Administrator**, and then click **OK**.</span></span>
+7. <span data-ttu-id="b36f8-174">Dans **Gérer les rôles**, cliquez sur **Administrateur système**, puis sur **OK**.</span><span class="sxs-lookup"><span data-stu-id="b36f8-174">In **Manage Roles**, click **System Administrator**, and then click **OK**.</span></span>
     
-8. <span data-ttu-id="5a889-175">Dans la barre d’outils en haut de l’écran, cliquez sur **Sécurité**.</span><span class="sxs-lookup"><span data-stu-id="5a889-175">In the tool bar at the top click **Security**.</span></span>
+8. <span data-ttu-id="b36f8-175">Dans la barre d’outils en haut de l’écran, cliquez sur **Sécurité**.</span><span class="sxs-lookup"><span data-stu-id="b36f8-175">In the tool bar at the top click **Security**.</span></span>
     
-9. <span data-ttu-id="5a889-176">Répétez les étapes 5 à 8 pour le compte Utilisateur 3.</span><span class="sxs-lookup"><span data-stu-id="5a889-176">Repeat steps 5-8 for the User 3 account.</span></span>
+9. <span data-ttu-id="b36f8-176">Répétez les étapes 5 à 8 pour le compte Utilisateur 3.</span><span class="sxs-lookup"><span data-stu-id="b36f8-176">Repeat steps 5-8 for the User 3 account.</span></span>
     
-10. <span data-ttu-id="5a889-177">Fermez l’onglet **Utilisateur :User3**.</span><span class="sxs-lookup"><span data-stu-id="5a889-177">Close the **User: User3** tab.</span></span>
+10. <span data-ttu-id="b36f8-177">Fermez l’onglet **Utilisateur :User3**.</span><span class="sxs-lookup"><span data-stu-id="b36f8-177">Close the **User: User3** tab.</span></span>
     
 > [!NOTE]
-> <span data-ttu-id="5a889-178">Le rôle d’administrateur système Dynamics 365 a été automatiquement attribué à votre compte d’administrateur général Office 365.</span><span class="sxs-lookup"><span data-stu-id="5a889-178">Your Office 365 global administrator account was automatically assigned the Dynamics 365 system administrator role.</span></span> 
+> <span data-ttu-id="b36f8-178">Le rôle d’administrateur système Dynamics 365 a été automatiquement attribué à votre compte d’administrateur général Office 365.</span><span class="sxs-lookup"><span data-stu-id="b36f8-178">Your Office 365 global administrator account was automatically assigned the Dynamics 365 system administrator role.</span></span> 
   
-<span data-ttu-id="5a889-179">Votre environnement de développement/test comporte maintenant :</span><span class="sxs-lookup"><span data-stu-id="5a889-179">Your dev/test environment now has:</span></span>
+<span data-ttu-id="b36f8-179">Votre environnement de développement/test comporte maintenant :</span><span class="sxs-lookup"><span data-stu-id="b36f8-179">Your dev/test environment now has:</span></span>
   
-- <span data-ttu-id="5a889-180">Un intranet simulé exécuté dans les services d’infrastructure Azure.</span><span class="sxs-lookup"><span data-stu-id="5a889-180">A simulated intranet running in Azure infrastructure services.</span></span>
+- <span data-ttu-id="b36f8-180">Un intranet simulé exécuté dans les services d’infrastructure Azure.</span><span class="sxs-lookup"><span data-stu-id="b36f8-180">A simulated intranet running in Azure infrastructure services.</span></span>
     
-- <span data-ttu-id="5a889-181">Des abonnements à la version d’évaluation d’Office 365 E5 Enterprise, d’EMS et de Dynamics 365 qui partagent la même organisation et le même client Azure AD avec votre liste des comptes d’utilisateur.</span><span class="sxs-lookup"><span data-stu-id="5a889-181">Office 365 E5 Enterprise, EMS, and Dynamics 365 trial subscriptions sharing the same organization and the same Azure AD tenant with your list of user accounts.</span></span>
+- <span data-ttu-id="b36f8-181">Des abonnements à la version d’évaluation d’Office 365 E5 Enterprise, d’EMS et de Dynamics 365 qui partagent la même organisation et le même client Azure AD avec votre liste des comptes d’utilisateur.</span><span class="sxs-lookup"><span data-stu-id="b36f8-181">Office 365 E5 Enterprise, EMS, and Dynamics 365 trial subscriptions sharing the same organization and the same Azure AD tenant with your list of user accounts.</span></span>
     
-- <span data-ttu-id="5a889-182">Tous vos comptes d’utilisateur activés pour utiliser Office 365 Entreprise E5 et EMS.</span><span class="sxs-lookup"><span data-stu-id="5a889-182">All of your user accounts enabled to use Office 365 E5 Enterprise and EMS.</span></span>
+- <span data-ttu-id="b36f8-182">Tous vos comptes d’utilisateur activés pour utiliser Office 365 Entreprise E5 et EMS.</span><span class="sxs-lookup"><span data-stu-id="b36f8-182">All of your user accounts enabled to use Office 365 E5 Enterprise and EMS.</span></span>
     
-- <span data-ttu-id="5a889-183">Vos comptes d’administrateur général d’entreprise, Utilisateur 2 et Utilisateur 3 peuvent utiliser Dynamics 365, et sont également administrateurs système de Dynamics 365.</span><span class="sxs-lookup"><span data-stu-id="5a889-183">Your global enterprise administrator, User 2, and User 3 accounts are enabled to use Dynamics 365 and are Dynamics 365 system administrators.</span></span>
+- <span data-ttu-id="b36f8-183">Vos comptes d’administrateur général d’entreprise, Utilisateur 2 et Utilisateur 3 peuvent utiliser Dynamics 365, et sont également administrateurs système de Dynamics 365.</span><span class="sxs-lookup"><span data-stu-id="b36f8-183">Your global enterprise administrator, User 2, and User 3 accounts are enabled to use Dynamics 365 and are Dynamics 365 system administrators.</span></span>
     
-<span data-ttu-id="5a889-184">La figure 3 présente la configuration finale.</span><span class="sxs-lookup"><span data-stu-id="5a889-184">Figure 3 shows your resulting configuration.</span></span>
+<span data-ttu-id="b36f8-184">La figure 3 présente la configuration finale.</span><span class="sxs-lookup"><span data-stu-id="b36f8-184">Figure 3 shows your resulting configuration.</span></span>
   
-<span data-ttu-id="5a889-185">**Figure 3 : Intranet simulé dans Azure avec Office 365, EMS et Dynamics 365**</span><span class="sxs-lookup"><span data-stu-id="5a889-185">**Figure 3: The simulated intranet in Azure with Office 365, EMS, and Dynamics 365**</span></span>
+<span data-ttu-id="b36f8-185">**Figure 3 : Intranet simulé dans Azure avec Office 365, EMS et Dynamics 365**</span><span class="sxs-lookup"><span data-stu-id="b36f8-185">**Figure 3: The simulated intranet in Azure with Office 365, EMS, and Dynamics 365**</span></span>
 
-![Phase 3 de l’environnement de développement/test cloud One Microsoft avec Azure, Office 365, EMS et Dynamics 365](images/31714fcc-0c7d-411f-bcd1-c62d9be090ee.png)
+![Phase 3 de l’environnement de développement/test cloud One Microsoft avec Azure, Office 365, EMS et Dynamics 365](media/31714fcc-0c7d-411f-bcd1-c62d9be090ee.png)
   
-## <a name="next-steps"></a><span data-ttu-id="5a889-187">Étapes suivantes</span><span class="sxs-lookup"><span data-stu-id="5a889-187">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="b36f8-187">Étapes suivantes</span><span class="sxs-lookup"><span data-stu-id="b36f8-187">Next steps</span></span>
 
-<span data-ttu-id="5a889-p108">Vous pouvez maintenant tester différentes configurations avec votre environnement de développement/test Microsoft Cloud. Voici quelques suggestions :</span><span class="sxs-lookup"><span data-stu-id="5a889-p108">You can now experiment with your One Microsoft Cloud dev/test environment. Here are some ideas for guided experiences:</span></span>
+<span data-ttu-id="b36f8-p108">Vous pouvez maintenant tester différentes configurations avec votre environnement de développement/test Microsoft Cloud. Voici quelques suggestions :</span><span class="sxs-lookup"><span data-stu-id="b36f8-p108">You can now experiment with your One Microsoft Cloud dev/test environment. Here are some ideas for guided experiences:</span></span>
   
-- [<span data-ttu-id="5a889-190">Stratégies de gestion des applications mobiles pour votre environnement de développement/test Office 365 et EMS</span><span class="sxs-lookup"><span data-stu-id="5a889-190">Configure mobile application management (MAM) policies in EMS for Office 365 applicationshttps://technet.microsoft.com/library/mt764059.aspx</span></span>](https://technet.microsoft.com/library/mt764059.aspx)
+- [<span data-ttu-id="b36f8-190">Stratégies de gestion des applications mobiles pour votre environnement de développement/test Office 365 et EMS</span><span class="sxs-lookup"><span data-stu-id="b36f8-190">Configure mobile application management (MAM) policies in EMS for Office 365 applications</span></span>](https://technet.microsoft.com/library/mt764059.aspx)
     
-- [<span data-ttu-id="5a889-191">Intégration d’Exchange Online pour votre environnement de développement/test Office 365 et Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="5a889-191">Demonstrate Exchange Online in Office 365 integration with Dynamics 365 contactshttps://technet.microsoft.com/library/mt798313.aspx</span></span>](https://technet.microsoft.com/library/mt798313.aspx)
+- [<span data-ttu-id="b36f8-191">Intégration d’Exchange Online pour votre environnement de développement/test Office 365 et Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="b36f8-191">Demonstrate Exchange Online in Office 365 integration with Dynamics 365 contacts</span></span>](https://technet.microsoft.com/library/mt798313.aspx)
     
-- [<span data-ttu-id="5a889-192">Créer un réseau simulé intersites dans les services d’infrastructure Azure pour héberger les charges de travail sur serveur</span><span class="sxs-lookup"><span data-stu-id="5a889-192">Create a simulated cross-premises network in Azure infrastructure services for hosting server-based workloadshttps://technet.microsoft.com/library/mt745150.aspx</span></span>](https://technet.microsoft.com/library/mt745150.aspx)
+- [<span data-ttu-id="b36f8-192">Créer un réseau simulé intersites dans les services d’infrastructure Azure pour héberger les charges de travail sur serveur</span><span class="sxs-lookup"><span data-stu-id="b36f8-192">Create a simulated cross-premises network in Azure infrastructure services for hosting server-based workloads</span></span>](https://technet.microsoft.com/library/mt745150.aspx)
     
-## <a name="see-also"></a><span data-ttu-id="5a889-193">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="5a889-193">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b36f8-193">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="b36f8-193">See Also</span></span>
 
-[<span data-ttu-id="5a889-194">Guides de laboratoire de test d’adoption cloud</span><span class="sxs-lookup"><span data-stu-id="5a889-194">Cloud adoption Test Lab Guides (TLGs)</span></span>](cloud-adoption-test-lab-guides-tlgs.md)
+[<span data-ttu-id="b36f8-194">Guides de laboratoire de test d’adoption cloud</span><span class="sxs-lookup"><span data-stu-id="b36f8-194">Cloud adoption Test Lab Guides (TLGs)</span></span>](cloud-adoption-test-lab-guides-tlgs.md)
   
-[<span data-ttu-id="5a889-195">Ressources relatives à l’architecture informatique du cloud Microsoft</span><span class="sxs-lookup"><span data-stu-id="5a889-195">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
+[<span data-ttu-id="b36f8-195">Ressources relatives à l’architecture informatique du cloud Microsoft</span><span class="sxs-lookup"><span data-stu-id="b36f8-195">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
   
-[<span data-ttu-id="5a889-196">Solutions hybrides</span><span class="sxs-lookup"><span data-stu-id="5a889-196">Hybrid solutions</span></span>](hybrid-solutions.md)
+[<span data-ttu-id="b36f8-196">Solutions hybrides</span><span class="sxs-lookup"><span data-stu-id="b36f8-196">Hybrid solutions</span></span>](hybrid-solutions.md)
   
-[<span data-ttu-id="5a889-197">Solutions de sécurité</span><span class="sxs-lookup"><span data-stu-id="5a889-197">Security solutions</span></span>](security-solutions.md)
+[<span data-ttu-id="b36f8-197">Solutions de sécurité</span><span class="sxs-lookup"><span data-stu-id="b36f8-197">Security solutions</span></span>](security-solutions.md)
 
 
 

@@ -3,11 +3,13 @@ title: Protéger les fichiers SharePoint Online avec Azure Information Protec
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 08/08/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: 'Résumé : Découvrez comment appliquer la protection Azure Information Protection pour protéger les fichiers d’un site d’équipe SharePoint Online hautement confidentiel.'
-ms.openlocfilehash: 2c4776f5795a5a0b07be0f04b4872abadb4d31ca
-ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
+ms.openlocfilehash: 4ea6c1da8b39f22a56ba4f4d555518b671f07b70
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "20319285"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915309"
 ---
 # <a name="protect-sharepoint-online-files-with-azure-information-protection"></a>Protéger les fichiers SharePoint Online avec Azure Information Protection
 
@@ -46,41 +48,42 @@ Ensuite, configurez Azure Information Protection avec une nouvelle sous-étiqu
 2. Dans un nouvel onglet de votre navigateur, accédez au portail Azure ([https://portal.azure.com](https://portal.azure.com)).
     
 3. Si vous configurez Azure Information Protection pour la première fois, consultez ces [instructions](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time).
-    
+
 4. Dans le volet Liste, cliquez sur **Tous les services**, saisissez **Informations**, puis cliquez sur **Azure Information Protection**.
+
+5. Cliquez sur **Étiquettes**.
     
-5. Sur le panneau **Azure Information Protection**, cliquez sur **Stratégies étendues > + Ajouter une nouvelle stratégie**.
+6. Cliquez avec le bouton droit de la souris sur l’étiquette **Hautement confidentiel**, puis sur **Ajouter une sous-étiquette**.
     
-6. Saisissez le nom de la nouvelle stratégie dans **Nom de la stratégie** et une description dans **Description**.
+7. Entrez le nom de la sous-étiquette dans**Nom** et sa description dans **Description**.
     
-7. Cliquez sur **Sélectionnez les utilisateurs ou groupes devant recevoir cette stratégie > Utilisateur/Groupes**, puis sélectionnez le groupe d’accès des membres de votre site d’équipe SharePoint Online hautement sensible.  
+8. Dans**Définir les autorisations pour les documents et les e-mails contenant cette étiquette**, cliquez sur**Protéger**.
     
-8. Cliquez sur **Sélectionner > OK**.
+9. Dans la section **Protection**, cliquez sur**Azure (clé cloud)**.
     
-9. Pour l’étiquette **Hautement confidentiel**, cliquez sur les points de suspension (...), puis sur **Ajouter une sous-étiquette**.
+10. Dans le panneau**Protection**, cliquez sur**Ajouter des autorisations** sous**Paramètres de protection**.
     
-10. Entrez le nom de la sous-étiquette dans **Nom** et sa description dans **Description**.
+11. Dans le panneau **Ajouter des autorisations**, sous **Spécifier les utilisateurs et les groupes**, cliquez sur **+ Parcourir le répertoire**.
     
-11. Cliquez sur **Protéger** dans **Définir les autorisations pour les documents et les e-mails contenant cette étiquette**.
+12. Dans le volet **Utilisateurs et groupes AAD**, sélectionnez le groupe d’accès Membres de votre site d’équipe SharePoint Online hautement sensible, puis cliquez sur **Sélectionner**.
     
-12. Dans la section **Protection**, cliquez sur **Azure (clé cloud)**.
+13. sSous **Choisir les autorisations parmi les autorisations personnalisées prédéfinies ou définies**, cliquez sur **Personnalisé**, puis sur les cases à cocher **Afficher les droits**, **Modifier le contenu**, **Enregistrer**, **Répondre** et **Répondre à tous**.
     
-13. Dans le panneau **Protection**, sous **Paramètres de protection**, cliquez sur **+ Ajouter des autorisations**.
+14. Cliquez deux fois sur **OK**.
     
-14. Dans le panneau **Ajouter des autorisations**, sous **Spécifier les utilisateurs et les groupes**, cliquez sur **+ Parcourir le répertoire**.
+15. Dans le panneau **Sous-étiquette**, cliquez sur **Enregistrer**, puis sur **OK**.
+
+16. Dans le panneau **Azure Information Protection**, cliquez sur **Stratégies > + Ajouter une nouvelle stratégie**.
     
-15. Dans le volet **Utilisateurs et groupes AAD**, sélectionnez le groupe d’accès Membres de votre site d’équipe SharePoint Online hautement sensible, puis cliquez sur **Sélectionner**.
+17. Saisissez le nom de la nouvelle stratégie dans**Nom de la stratégie** et une description dans**Description**.
     
-16. Sous **Choisir des autorisations à partir de valeurs prédéfinies**, désactivez les cases à cocher **Imprimer **, **Copier et extraire le contenu** et **Transférer**.
+18. Cliquez sur **Sélectionnez les utilisateurs ou groupes devant recevoir cette stratégie > Utilisateur/Groupes**, puis sélectionnez le groupe d’accès des membres de votre site d’équipe SharePoint Online hautement sensible. 
     
-17. Cliquez deux fois sur **OK**.
-    
-18. Dans le panneau **Sous-étiquette**, cliquez sur **Enregistrer**.
-    
-19. Fermez le panneau de la nouvelle stratégie étendue.
-    
-20. Dans le panneau **Azure Information Protection – Stratégies étendues**, cliquez sur **Publier**.
-    
+19. Cliquez sur**Sélectionner > OK**.
+
+20. Cliquez sur**Ajouter ou supprimer des étiquettes**. Dans le volet**Stratégie : Ajouter ou supprimer des étiquettes**, cliquez sur le nom de votre sous-étiquette puis cliquez sur**OK**.   
+
+21. Cliquez sur**Enregistrer**, puis cliquez sur**OK**.
  
 ##<a name="client-setup"></a>Configuration du client
 Vous pouvez maintenant commencer à créer des documents et à les protéger avec Azure Information Protection et votre nouvelle étiquette.

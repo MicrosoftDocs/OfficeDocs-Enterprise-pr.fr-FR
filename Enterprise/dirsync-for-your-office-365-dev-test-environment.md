@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -16,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: 'Résumé : Configurez la synchronisation d’annuaires pour votre environnement de développement/test Office 365.'
-ms.openlocfilehash: d1c48bcf4018088b527c3f85f8923413f9ffd268
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: 106e902c9da46c7c3c0fc6eb8af96d6695c7bdce
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "19193534"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915839"
 ---
 # <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Synchronisation d’annuaires pour votre environnement de développement/test Office 365
 
@@ -29,7 +31,7 @@ ms.locfileid: "19193534"
   
 De nombreuses organisations utilisent Azure AD Connect et la synchronisation d’annuaires pour synchroniser l’ensemble de comptes dans leur forêt de Windows Server Active Directory (AD) en local avec l’ensemble de comptes dans Office 365. Cet article explique comment vous pouvez ajouter la synchronisation d’annuaires avec synchronisation de code de hachage de mot de passe à l’environnement de développement/test Office 365, ce qui entraîne la configuration suivante.
   
-![Environnement de développement/test Office 365 avec la synchronisation d’annuaires](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![Environnement de développement/test Office 365 avec la synchronisation d’annuaires](media/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 Cette configuration se compose des éléments suivants :  
   
@@ -48,7 +50,7 @@ Les deux phases de configuration de cet environnement de développement/test son
 
 Suivez les instructions des phases 1, 2 et 3 de l’article relatif à l’[environnement de développement/test Office 365](office-365-dev-test-environment.md). Voici la configuration obtenue.
   
-![Environnement de développement/test Office 365](images/48fb91aa-09b0-4020-a496-a8253920c45d.png)
+![Environnement de développement/test Office 365](media/48fb91aa-09b0-4020-a496-a8253920c45d.png)
   
 Cette configuration se compose des éléments suivants :  
   
@@ -104,7 +106,7 @@ Stop-Process -Name Explorer -Force
     
 Voici la configuration obtenue.
   
-![Environnement de développement/test Office 365 avec la synchronisation d’annuaires](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![Environnement de développement/test Office 365 avec la synchronisation d’annuaires](media/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 Cette configuration se compose des éléments suivants :  
   
@@ -113,7 +115,7 @@ Cette configuration se compose des éléments suivants :
     
 ## <a name="next-step"></a>Étape suivante
 
-Lorsque vous êtes prêt à déployer la synchronisation d’annuaires pour votre organisation, consultez la rubrique [Déploiement de la synchronisation d’annuaires Office 365 dans Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).
+Lorsque vous êtes prêt à déployer la synchronisation d'annuaires pour votre organisation, consultez la rubrique[Déploiement de la Synchronisation d'annuaires Office 365 dans Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -16,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 'Résumé : Configurez l’authentification fédérée pour votre environnement de développement/test Office 365.'
-ms.openlocfilehash: 2877fa7f85643057c6ba8630939c690256bb8918
-ms.sourcegitcommit: 3a4ab28f3f4172d596426f0da40bcab8c46ef74d
+ms.openlocfilehash: f028acb99d0687bb3fcfbc1c66bdd8885850565b
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "20215856"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915239"
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>Identité fédérée pour votre environnement de développement/test Office 365
 
@@ -33,7 +35,7 @@ Cet article explique comment configurer l’authentification fédérée pour l�
   
 **Figure 1: L’authentification fédérée pour l’environnement de développement/test Office 365**
 
-![Le serveur proxy d’application web ajouté à la synchronisation d’annuaire pour l’environnement de développement/test Office 365](images/f50039e4-796a-42c0-bfdc-87c2026b1579.png)
+![L’authentification fédérée pour l’environnement de développement/test Office 365](media/f50039e4-796a-42c0-bfdc-87c2026b1579.png)
   
 La configuration illustrée dans la figure 1 est constituée des éléments suivants : 
   
@@ -73,7 +75,7 @@ Voici la configuration finale.
   
 **Figure 2 : Synchronisation d’annuaires pour l’environnement de développement/test Office 365**
 
-![Environnement de développement/test Office 365 avec la synchronisation d’annuaires](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![Environnement de développement/test Office 365 avec la synchronisation d’annuaires](media/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 La figure 2 illustre la synchronisation d’annuaires pour l’environnement de développement/test Office 365, qui comprend Office 365, ainsi que les machines virtuelles CLIENT1, APP1 et DC1 dans un réseau virtuel Azure.
   
@@ -121,7 +123,7 @@ Voici la configuration finale.
   
 **Figure 3 : Ajout du serveur AD FS**
 
-![Le serveur AD FS ajouté à la synchronisation d’annuaire pour l’environnement de développement/test Office 365](images/da82f39e-426d-41e2-842a-c13b382d63d5.png)
+![Le serveur AD FS ajouté à la synchronisation d’annuaire pour l’environnement de développement/test Office 365](media/da82f39e-426d-41e2-842a-c13b382d63d5.png)
   
 La figure 3 illustre l’ajout du serveur ADFS1 à DirSync pour l’environnement de développement/test Office 365.
   
@@ -192,7 +194,7 @@ Voici la configuration finale.
   
 **Figure 4 : Ajout du serveur proxy d’application web**
 
-![Le serveur proxy d’application web ajouté à la synchronisation d’annuaire pour l’environnement de développement/test Office 365](images/f50039e4-796a-42c0-bfdc-87c2026b1579.png)
+![Le serveur proxy d’application web ajouté à la synchronisation d’annuaire pour l’environnement de développement/test Office 365](media/f50039e4-796a-42c0-bfdc-87c2026b1579.png)
   
 La figure 4 illustre l’ajout du serveur PROXY1.
   

@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,11 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: 'Résumé : Déployez Azure AD Connect sur une machine virtuelle dans Azure pour synchroniser les comptes entre votre répertoire local et le client Azure AD de votre abonnement Office 365.'
-ms.openlocfilehash: c37fd1e31684590b0b564b3fed402b5c33c062a3
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 01dede756142c08722e3cf21d91a0028eb815051
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915639"
 ---
 # <a name="deploy-office-365-directory-synchronization-in-microsoft-azure"></a>Déploiement de la synchronisation d’annuaires Office 365 dans Microsoft Azure
 
@@ -43,11 +46,10 @@ Azure Active Directory (AD) Connect (auparavant appelé outil de synchronisation
 > Office 365 utilise Azure Active Directory (Azure AD) pour son service d'annuaire. Votre abonnement à Office 365 comprend un client Azure AD. Ce client peut également être utilisé pour la gestion des identités de votre organisation avec d'autres charges de travail de cloud, y compris d'autres applications SaaS et des applications dans Azure. 
   
 ## <a name="overview-of-deploying-office-365-directory-synchronization-in-azure"></a>Vue d’ensemble du déploiement de la synchronisation d’annuaires Office 365 dans Azure
-<a name="Overview"> </a>
 
 Le diagramme suivant montre Azure AD Connect en cours d'exécution sur une machine virtuelle dans Azure (le serveur de synchronisation d'annuaires) qui synchronise une forêt Windows Server AD sur site d'un abonnement Office 365.
   
-![Outil Azure AD Connect sur une machine virtuelle dans Azure synchronisant des comptes Azure locaux sur le client Azure AD d’un abonnement Office 365 avec le flux de trafic](images/CP_DirSyncOverview.png)
+![Outil Azure AD Connect sur une machine virtuelle dans Azure synchronisant des comptes Azure locaux sur le client Azure AD d’un abonnement Office 365 avec le flux de trafic](media/CP-DirSyncOverview.png)
   
 Dans le diagramme, il y a deux réseaux reliés par une connexion de site à site VPN ou ExpressRoute. Il existe un réseau local contenant les contrôleurs de domaine Windows Server AD et un réseau virtuel Azure avec un serveur de synchronisation d'annuaires, qui est une machine virtuelle exécutant [Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594). Il existe deux flux de trafic principal à partir du serveur de synchronisation d'annuaires d'origine :
   
@@ -87,11 +89,11 @@ Avant de déployer cette solution en production, suivez les instructions de l’
 
 Avant de commencer, passez en revue les conditions préalables suivantes pour cette solution :
   
-- Examinez le contenu de planification associé dans [Planification de votre réseau Azure Virtual Network](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#PlanningVirtual).
+- Examinez le contenu de planification associé dans[Planifier votre réseau virtuel Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#plan-your-azure-virtual-network). 
     
-- Veillez à respecter toutes les [conditions préalables](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#Prerequisites) pour la configuration du réseau virtuel Azure.
+- Veillez à respecter toutes les[conditions préalables](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#prerequisites) relatives à la configuration du réseau virtuel Azure.
     
-- Vous devez disposer d'un abonnement Office 365 qui inclut la fonctionnalité d'intégration Active Directory. Pour plus d'informations sur les abonnements Office 365, accédez à la [page d'abonnement Office 365](https://go.microsoft.com/fwlink/p/?LinkId=394278).
+- Vous devez disposer d'un abonnement Office 365 qui inclut la fonctionnalité d'intégration Active Directory. Pour plus d'informations sur les abonnements Office 365, accédez à la [page d'abonnement Office 365](https://products.office.com/compare-all-microsoft-office-products?tab=2).
     
 - Vous devez configurer un Ordinateur virtuel Azure qui exécute Azure AD Connect pour synchroniser votre forêt Windows Server AD locale avec Office 365.
     
@@ -114,9 +116,8 @@ Il existe des choix de conception supplémentaires que vous pourriez envisager l
 - Si un réseau virtuel Azure existant comporte des contrôleurs de domaine, déterminez si la configuration des services et sites Active Directory peut être une meilleure option pour vous. Le serveur de synchronisation d’annuaires peut interroger les contrôleurs de domaine dans le réseau virtuel Azure pour rechercher des modifications des comptes et des mots de passe à la place des contrôleurs de domaine sur le réseau local.
     
 ## <a name="deployment-roadmap"></a>Feuille de route de déploiement
-<a name="DeploymentRoadmap"> </a>
 
-Le déploiement d'Azure AD Connect sur une machine virtuelle dans Azure se compose de trois phases :
+Le déploiement d'Azure AD Connect sur une machine virtuelle dans Azure consiste en trois phases :
   
 - Phase 1 : créer et configurer le réseau virtuel Azure
     
@@ -131,11 +132,11 @@ Après le déploiement, vous devez également affecter des emplacements et des l
   
 ### <a name="phase-1-create-and-configure-the-azure-virtual-network"></a>Phase 1 : créer et configurer le réseau virtuel Azure
 
-Pour créer et configurer le réseau virtuel Azure, effectuez la [phase 1 en préparant votre réseau local](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#Phase1) et la [phase 2 en créant le réseau virtuel entre différents locaux dans Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#Phase2) décrites dans la feuille de route de déploiement de l’article [Connecter un réseau local à Microsoft Azure Virtual Network](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md).
+Pour créer et configurer le réseau virtuel Azure, effectuez la [phase 1 en préparant votre réseau local](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#phase-1-prepare-your-on-premises-network) et la [phase 2 en créant le réseau virtuel entre différents locaux dans Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#phase-2-create-the-cross-premises-virtual-network-in-azure) décrites dans la feuille de route de déploiement de l’article [Connecter un réseau local à Microsoft Azure Virtual Network](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md).
   
 Voici la configuration finale.
   
-![Phase 1 du serveur de synchronisation d’annuaires pour Office 365 hébergé dans Azure](images/aab6a9a4-eb78-4d85-9b96-711e6de420d7.png)
+![Phase 1 du serveur de synchronisation d’annuaires pour Office 365 hébergé dans Azure](media/aab6a9a4-eb78-4d85-9b96-711e6de420d7.png)
   
 Cette illustration montre un réseau local connecté à un réseau virtuel Azure via une connexion VPN ou ExpressRoute de site à site.
   
@@ -157,7 +158,7 @@ Pour qu’Azure AD Connect puisse accéder aux ressources Internet, vous devez
   
 Voici la configuration finale.
   
-![Phase 2 du serveur de synchronisation d’annuaires pour Office 365 hébergé dans Azure](images/9d8c9349-a207-4828-9b2b-826fe9c06af3.png)
+![Phase 2 du serveur de synchronisation d’annuaires pour Office 365 hébergé dans Azure](media/9d8c9349-a207-4828-9b2b-826fe9c06af3.png)
   
 Cette illustration montre la machine virtuelle du serveur de synchronisation d’annuaires dans le réseau virtuel Azure.
   
@@ -167,14 +168,14 @@ Procédez comme suit :
   
 1. Connectez-vous au serveur de synchronisation d’annuaires à l'aide d'une connexion Bureau à distance avec un compte de domaine Windows Server AD qui possède des privilèges d'administrateur local. Voir [Se connecter à la machine virtuelle et ouvrir une session](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hero-tutorial?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json#connect-to-the-virtual-machine-and-sign-on).
     
-2. À partir du serveur de synchronisation d’annuaires, ouvrez l'article [Configurer la synchronisation d'annuaires pour Office 365](https://support.office.com/article/Set-up-directory-synchronization-in-Office-365-1b3b5318-6977-42ed-b5c7-96fa74b08846) et suivez les instructions pour la synchronisation d'annuaires avec la synchronisation de hachage de mot de passe.
+2. À partir du serveur de synchronisation d’annuaires, ouvrez l'article [Configurer la synchronisation d'annuaires pour Office 365](set-up-directory-synchronization.md) et suivez les instructions pour la synchronisation d'annuaires avec la synchronisation de hachage de mot de passe.
     
 > [!CAUTION]
-> Le programme d'installation crée le compte **AAD_xxxxxxxxxxxx** dans l'unité d'organisation (UO) Utilisateurs locaux. Ne déplacez pas ou ne supprimez pas ce compte, ou la synchronisation échouera.
+> Le programme d’installation crée le compte **AAD_xxxxxxxxxxxx** dans l’unité d’organisation (UO) Utilisateurs Locaux. Ne déplacez pas et ne supprimez pas ce compte, sinon la synchronisation échouera.
   
 Voici la configuration finale.
   
-![Phase 3 du serveur de synchronisation d’annuaires pour Office 365 hébergé dans Azure](images/3f692b62-b77c-4877-abee-83c7edffa922.png)
+![Phase 3 du serveur de synchronisation d’annuaires pour Office 365 hébergé dans Azure](media/3f692b62-b77c-4877-abee-83c7edffa922.png)
   
 Cette illustration montre le serveur de synchronisation d’annuaires avec Azure AD Connect dans le réseau virtuel Azure entre différents locaux.
   
@@ -198,15 +199,13 @@ Azure AD Connect ajoute des comptes à votre abonnement Office 365 à partir 
     
 ## <a name="see-also"></a>Voir aussi
 
-<a name="DeploymentRoadmap"> </a>
-
 [Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.md)
   
 [Connecter un réseau local à Microsoft Azure Virtual Network](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
 
 [Télécharger Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594)
   
-[Configurer la synchronisation d'annuaires pour Office 365](https://support.office.com/article/Set-up-directory-synchronization-in-Office-365-1b3b5318-6977-42ed-b5c7-96fa74b08846)
+[Configurer la synchronisation d’annuaires pour Office 365](set-up-directory-synchronization.md)
   
 [Serveur de synchronisation d’annuaires dans le kit de déploiement Azure](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded)
 

@@ -11,15 +11,17 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.custom: ''
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 'Résumé : Créez des sites d’équipe SharePoint Online publics, privés, sensibles et hautement confidentiels dans un environnement de développement/test.'
-ms.openlocfilehash: fecb725999c7958dca1278c1236fcf251adc33cd
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: 49153a5c4256e7aa0e5ba5f6d2ac53c4e56b5bdc
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "19193724"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915769"
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>Sécuriser des sites SharePoint Online dans un environnement de développement et de test
 
@@ -27,7 +29,7 @@ ms.locfileid: "19193724"
   
 Cet article fournit des instructions pas à pas pour créer un environnement de développement et de test qui inclut les quatre types différents de sites d’équipe SharePoint Online pour la solution de [sécurisation des sites et des fichiers SharePoint Online](secure-sharepoint-online-sites-and-files.md).
   
-![Les quatre sites d’équipe dans l’environnement de développement/test SharePoint Online sécurisé.](images/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
+![Les quatre sites d’équipe dans l’environnement de développement/test SharePoint Online sécurisé.](media/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
   
 Utilisez cet environnement de développement/test pour expérimenter les comportements de protection des informations et optimiser les paramètres en fonction de vos besoins avant de déployer des sites d’équipe SharePoint Online en production.
   
@@ -270,7 +272,7 @@ Ensuite, configurez le dossier des documents du site d’équipe Toute l’organ
     
 Voici la configuration finale.
   
-![Protection de base pour le site d’équipe SharePoint Online consultable par les membres de l’organisation.](images/25c86847-a38d-49ad-bb5f-c7c04206b6dc.png)
+![Protection de base pour le site d’équipe SharePoint Online consultable par les membres de l’organisation.](media/25c86847-a38d-49ad-bb5f-c7c04206b6dc.png)
   
 ### <a name="project-1-team-site"></a>Site d’équipe Projet 1
 
@@ -304,7 +306,7 @@ Ensuite, configurez le dossier des documents du site d’équipe Projet 1 pour l
     
 Voici la configuration finale.
   
-![Protection de base pour le site d’équipe SharePoint Online privé concernant Project1.](images/ecd96376-b5dc-4042-9cbd-b3765507ace7.png)
+![Protection de base pour le site d’équipe SharePoint Online privé concernant Project1.](media/ecd96376-b5dc-4042-9cbd-b3765507ace7.png)
   
 ### <a name="marketing-campaigns-team-site"></a>Site d’équipe des campagnes marketing
 
@@ -348,7 +350,7 @@ Pour créer un site d’équipe SharePoint Online isolé de niveau sensible pour
     
 19. Dans la page **Personnes et groupes**, cliquez sur **Nouveau**.
     
-20. Dans la boîte de dialogue **Partager**, saisissez **Équipe informatique**, sélectionnez-le, puis cliquez sur **Partager**.
+20. Dans la boîte de dialogue **Partager**, saisissez **Équipe informatique**, sélectionnez-la, puis cliquez sur **Partager**.
     
 21. Cliquez sur le bouton de retour de votre navigateur.
     
@@ -420,7 +422,7 @@ Ensuite, configurez une stratégie de protection contre la perte de données qui
     
 Voici la configuration finale.
   
-![Protection des données sensibles pour les sites d’équipe SharePoint Online isolés des campagnes marketing.](images/33992bd5-96ee-4bfb-9ecf-c8a6736dd100.png)
+![Protection des données sensibles pour les sites d’équipe SharePoint Online isolés des campagnes marketing.](media/33992bd5-96ee-4bfb-9ecf-c8a6736dd100.png)
   
 ### <a name="company-strategy-team-site"></a>Site d’équipe Stratégie d’entreprise
 
@@ -460,7 +462,7 @@ Pour créer un site d’équipe SharePoint Online isolé au niveau Hautement con
     
 17. Dans la page **Personnes et groupes**, cliquez sur **Nouveau**.
     
-18. Dans la boîte de dialogue **Partager**, saisissez **Équipe informatique**, sélectionnez-le, puis cliquez sur **Partager**.
+18. Dans la boîte de dialogue **Partager**, saisissez **Équipe informatique**, sélectionnez-la, puis cliquez sur **Partager**.
     
 19. Cliquez sur le bouton de retour de votre navigateur.
     
@@ -570,7 +572,7 @@ Ensuite, configurez Azure Information Protection avec une nouvelle stratégie et
     
 17. Tapez **CompanyStrategy** dans **Nom de la stratégie** et **Étiquette pour les documents dans le site d’équipe Stratégie d’entreprise** dans **Description**.
     
-18. Cliquez sur **Sélectionner les utilisateurs ou groupes devant recevoir cette stratégie > Utilisateurs/Groupes**, puis sélectionnez **C-Suite**.
+18. Cliquez sur**Sélectionner les utilisateurs ou groupes devant recevoir cette stratégie > Utilisateurs/Groupes**, puis sélectionnez **C-Suite**.
     
 19. Cliquez sur **Sélectionner > OK**.
 
@@ -582,13 +584,13 @@ Pour protéger un document avec Azure Information Protection et cette nouvelle �
   
 Voici la configuration finale.
   
-![Protection avec un niveau de confidentialité élevé pour le site d’équipe SharePoint Online isolé de la stratégie d’entreprise.](images/c22695f9-50a1-4abf-a0dd-344b0c92cf94.png)
+![Protection avec un niveau de confidentialité élevé pour le site d’équipe SharePoint Online isolé de la stratégie d’entreprise.](media/c22695f9-50a1-4abf-a0dd-344b0c92cf94.png)
   
 Vous êtes maintenant prêt à créer des documents dans ces quatre sites et à tester l’accès à ceux-ci avec différents comptes d’utilisateur de votre abonnement d’essai.
   
 Voici la configuration globale pour les quatre sites d’équipe SharePoint Online.
   
-![Les quatre sites d’équipe dans l’environnement de développement/test SharePoint Online sécurisé.](images/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
+![Les quatre sites d’équipe dans l’environnement de développement/test SharePoint Online sécurisé.](media/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
   
 ## <a name="next-step"></a>Étape suivante
 

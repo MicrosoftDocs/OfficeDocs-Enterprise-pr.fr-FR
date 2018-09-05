@@ -11,11 +11,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Découvrez comment configurer la recherche dans un environnement multigéographique.
-ms.openlocfilehash: d7e9109eaa7afcf36ea047d00c0bba8f16dd0fde
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: c1cf057383015c35e0dd75c8100f66ce35871878
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915059"
 ---
 # <a name="configure-search-for-onedrive-for-business-multi-geo"></a>Configurer la recherche pour OneDrive Entreprise Multi-Géo
 
@@ -81,7 +82,7 @@ Certaines fonctionnalités de recherche auxquelles vous êtes habitué fonctionn
 </tr>
 <tr class="even">
 <td align="left">Affinements de la recherche</td>
-<td align="left">La recherche renvoie des affinements de tous les emplacements géographiques d’un client puis les regroupe. Le regroupement est ce qu’il y a de mieux, ce qui signifie que le nombre d’affinements peut ne pas être précis à 100 %. Pour la plupart des scénarios de recherche, cette précision est suffisante.</td>
+<td align="left">La recherche renvoie des affinements de tous les emplacements géographiques d’un client puis les regroupe. Le regroupement est ce qu’il y a de mieux, ce qui signifie que le nombre d’affinements peut ne pas être précis à 100 %. Pour la plupart des scénarios de recherche, cette précision est suffisante. </td>
 <td align="left">Pour les applications basées sur la recherche qui dépendent de l’intégralité de l’affinement, effectuez une requête indépendante sur chaque emplacement géographique sans utiliser la distribution ramifiée Multi-Géo.</td>
 </tr>
 <tr class="odd">
@@ -128,7 +129,8 @@ Certaines fonctionnalités de recherche auxquelles vous êtes habitué ne sont p
 ## <a name="how-does-search-work-in-a-multi-geo-environment"></a>Comment fonctionne la recherche dans un environnement Multi-Géo ?
 
 **Tous** les clients de recherche utilisent les API REST de recherche SharePoint existantes pour interagir avec les index de recherche.
-<img src="media/configure-search-for-multi-geo_image1-1.png" />
+
+<img src="media/configure-search-for-multi-geo-image1-1.png" />
 
 1. Un client de recherche appelle le point de terminaison REST de recherche avec la propriété de requête EnableMultiGeoSearch= true.
 2. La requête est envoyée à tous les emplacements géographiques dans le client.
@@ -150,8 +152,8 @@ Chaque centre de recherche possède plusieurs secteurs verticaux et vous devez c
 
 3.  Sélectionnez le secteur vertical à configurer, cliquez sur l’icône d’engrenage **Paramètres** située en haut à droite, puis cliquez sur **Modifier la page**. La page des résultats de la recherche s’ouvre en mode Édition.
 
-     ![](media/configure-search-for-multi-geo_image2.png)
-1.  Dans le composant WebPart Résultats de la recherche, déplacez le pointeur vers le coin supérieur droit du composant WebPart, cliquez sur la flèche puis sur **Modifier le composant WebPart** dans le menu. Le volet des outils du composant WebPart Résultats de la recherche s’ouvre sous le ruban en haut à droite de la page. ![](media/configure-search-for-multi-geo_image3.png)
+     ![](media/configure-search-for-multi-geo-image2.png)
+1.  Dans le composant WebPart Résultats de la recherche, déplacez le pointeur vers le coin supérieur droit du composant WebPart, cliquez sur la flèche puis sur **Modifier le composant WebPart** dans le menu. Le volet des outils du composant WebPart Résultats de la recherche s’ouvre sous le ruban en haut à droite de la page. ![](media/configure-search-for-multi-geo-image3.png)
 
 1.  Dans le volet des outils du composant WebPart, dans la section **Paramètres**, sous **Paramètres de contrôle des résultats**, sélectionnez **Afficher les résultats multigéographiques** pour que le composant WebPart Résultats de la recherche affiche les résultats de tous les emplacements géographiques.
 
@@ -227,6 +229,7 @@ MultiGeoSearchStatus : il s’agit d’une propriété renvoyée par l’API de
 
 Avec une demande GET, spécifiez les paramètres de la requête dans l’URL. Avec une demande POST, vous transmettez les paramètres de la requête dans le corps au format JSON (JavaScript Object Notation).
 
+
 #### <a name="request-headers"></a>En-têtes de demande
 
 <table>
@@ -250,9 +253,12 @@ https:// \<tenant\>/\_api/search/query?querytext=’sharepoint’&Properties=’
 
 #### <a name="sample-get-request-to-fan-out-to-some-geo-locations"></a>Exemple de demande GET à distribuer à **certains** emplacements géographiques
 
-https:// <tenant>/_api/search/query?querytext=’site’&ClientType=’my_client_id’&Properties=’EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\:"NAM"\,Endpoint\:"https\://contosoNAM.sharepoint.com"\,SourceId\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\,{DataLocation\:"CAN"\,Endpoint\:"https\://contosoCAN.sharepoint-df.com"}]’
+https:// \<tenant\>/\_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\\:"NAM"\\,Endpoint\\:"https\\://contosoNAM.sharepoint.com"\\,SourceId\\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\\,{DataLocation\\:"CAN"\\,Endpoint\\:"https\\://contosoCAN.sharepoint-df.com"}]'
 
-#### <a name="sample-post-request-thats-fanned-out-to-all-geo-locations"></a>Exemple de demande POST distribuée à **tous** les emplacements géographiques
+> [!NOTE]
+> Des virgules et des points-virgules dans la liste des géo-localisations correspondants à la propriété MultiGeoSearchConfiguration précédés par le caractère**barre oblique inverse**. Ceci est dû aux demandes GET qui utilisent des points-virgules pour séparer les propriétés et des points-virgules pour séparer les arguments de propriétés. Sans barre oblique inverse comme caractère d’échappement, la propriété MultiGeoSearchConfiguration est mal interprétée.
+
+#### <a name="sample-post-request-thats-fanned-out-to-all-geo-locations"></a>Exemple de demande POST distribuée à **tous** les géo-localisations
 
     {
         "request": {

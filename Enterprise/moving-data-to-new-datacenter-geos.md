@@ -3,7 +3,7 @@ title: Déplacement de données essentielles vers les nouvelles régions de cent
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/22/2018
+ms.date: 09/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 description: 'Nouveau centre de données géographiques ajouter de la capacité et les ressources pour prendre en charge de la demande et l’utilisation de croissance de nos clients en cours de calcul. En outre, les nouveau géographiques datacenter offrent délégation de données dans localisés de données principale du client. Données du client principal sont un terme qui fait référence à un sous-ensemble de données de clients définis dans les termes du contrat de Microsoft Online Services : contenu de boîte aux lettres Exchange Online (corps du message électronique, des entrées de calendrier et le contenu des pièces jointes) et SharePoint Online site contenu et les fichiers stockés dans ce site, et les fichiers téléchargés vers OneDrive entreprise.'
-ms.openlocfilehash: 1f3af15852b1221daf2e2d994653c8bb9cf697e4
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 362cb257f2098c1acaf08541f34278ed9b4987d2
+ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540577"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839582"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Déplacement de données essentielles vers les nouvelles régions de centres de données Office 365
 

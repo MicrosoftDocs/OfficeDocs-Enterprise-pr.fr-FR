@@ -3,7 +3,7 @@ title: Procédure de demande d'un déplacement de données
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/22/2018
+ms.date: 09/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Les clients Office 365 existants devront envoyer une demande avant la date d'échéance de leur pays afin que les données client de leurs services Office 365 soient déplacées vers leur nouvelle région.
-ms.openlocfilehash: 850a3a81b7e0405d47e36726e328ea078ae3f55c
-ms.sourcegitcommit: ad5bdc53ca67ee6a663c27648511c1ad768a76d4
+ms.openlocfilehash: d66818590a7972dc67832f55a3fdb3f2a9adf99c
+ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23222976"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839572"
 ---
 # <a name="how-to-request-your-data-move"></a>Procédure de demande d'un déplacement de données
 
@@ -109,5 +109,15 @@ Le client d'évaluation ne peut pas être associé à votre client existant :
 ### <a name="notify-users-to-update-out-of-date-exchange-settings-on-mobile-devices"></a>Notification adressée aux utilisateurs concernant la mise à jour des paramètres Exchange obsolètes sur les appareils mobiles
 
 Si les utilisateurs possèdent un appareil mobile avec le serveur Exchange défini sur **m.outlook.com** ou **podxxxxx.outlook.com**, nous vous recommandons qu’ils basculent vers **outlook.office365.com**, suivant les instructions de [Set up un appareil mobile à synchroniser avec votre compte](https://support.office.com/article/c9139caf-01ab-41a0-827c-3c06ee569ed3).
+
+## <a name="related-topics"></a>Voir aussi
+
+[Déplacement de données essentielles vers les nouvelles régions de centres de données Office 365](moving-data-to-new-datacenter-geos.md)
+
+[FAQ général relatif au déplacement de données](data-move-faq.md)
+
+[Nouvelles régions de centres de données pour Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+  
+[Services Azure par région](https://azure.microsoft.com/en-us/regions/)
   
 

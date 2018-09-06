@@ -3,7 +3,6 @@ title: Feuille de route pour la fin de l’assistance pour PerformancePoint Serv
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 07/23/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -15,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: 89d9feee-2285-419c-8c14-0f7f583536e0
 description: PerformancePoint Server 2007, ProClarity et SharePoint Server 2007 ont atteint la fin de la prise en charge. Lisez cet article pour planifier votre mise à niveau de la solution BI.
-ms.openlocfilehash: d03da4d05240e0f80b21f7a709d97cf2e9d1fa32
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 219349a85f14ddf10058c853d69b58a52bb0d1cc
+ms.sourcegitcommit: ca4d3ec34300d7d39f1a42dc6f29a34915de5c87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915099"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "23831909"
 ---
 # <a name="performancepoint-server-2007-end-of-support-roadmap"></a>Feuille de route pour la fin de l’assistance pour PerformancePoint Server 2007
 
-Les applications et les serveurs office 2007 ont atteint leur fin de prise en charge, y compris les serveurs et les applications que vous pouvez utiliser dans le cadre de vos solutions business intelligence (BI).
+Les applications et les serveurs office 2007 ont atteint leur fin de prise en charge, y compris les serveurs et les applications que vous pouvez utiliser dans le cadre de vos solutions business intelligence (BI). Le tableau suivant répertorie les applications d’aide à la décision qui sont affectées :
   
 |**Applications d’aide à la décision Microsoft**|**Fin de la prise en charge de la date**|
 |:-----|:-----|

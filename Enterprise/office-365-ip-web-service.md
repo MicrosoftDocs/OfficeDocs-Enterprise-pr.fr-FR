@@ -1,0 +1,510 @@
+---
+title: Service web d’URL et d’adresses IP Office 365
+ms.author: kvice
+author: kelleyvice-msft
+manager: laurawi
+ms.date: 9/4/2018
+ms.audience: ITPro
+ms.topic: conceptual
+ms.service: o365-administration
+localization_priority: Priority
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom: Adm_O365
+ms.reviewer: pandrew
+search.appverid:
+- MET150
+- MOE150
+- BCS160
+description: Pour vous aider à mieux identifier et différencier le trafic réseau Office 365, un nouveau service web publie les points de terminaison Office 365, afin de vous permettre d’évaluer, de configurer et de rester informé plus facilement des modifications. Ce nouveau service web remplace les fichiers téléchargeables XML actuellement disponibles.
+ms.openlocfilehash: 3abd6a0692ae4d66c76f8c0d65653b83646c6e23
+ms.sourcegitcommit: d07feeba2e886febc6a57a5c33b0df02b3db5631
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "23830886"
+---
+# <a name="office-365-ip-address-and-url-web-service"></a><span data-ttu-id="c2033-104">**Service web d’URL et d’adresses IP Office 365**</span><span class="sxs-lookup"><span data-stu-id="c2033-104">**Office 365 IP Address and URL Web service**</span></span>
+
+<span data-ttu-id="c2033-p102">Pour vous aider à mieux identifier et différencier le trafic réseau Office 365, un nouveau service web publie les points de terminaison Office 365, afin de vous permettre d’évaluer, de configurer et de rester informé plus facilement des modifications. Ce nouveau service web remplace les fichiers téléchargeables XML actuellement disponibles. La suppression du format XML est prévue pour le 2 octobre 2018.</span><span class="sxs-lookup"><span data-stu-id="c2033-p102">To help you better identify and differentiate Office 365 network traffic, a new web service publishes Office 365 endpoints, making it easier for you to evaluate, configure, and stay up to date with changes. This new web service replaces the XML downloadable files that are currently available. The XML format is planned to be phased out on October 2, 2018.</span></span>
+
+<span data-ttu-id="c2033-p103">En tant que client ou fournisseur de périphérique de périmètre réseau, vous pouvez vous fonder sur le service web basé sur REST pour les entrées FQDN et les adresse IP Office 365. Vous pouvez accéder aux données directement dans un navigateur web à l’aide de ces URL.</span><span class="sxs-lookup"><span data-stu-id="c2033-p103">As a customer or a network perimeter device vendor, you can build against the new REST-based web service for the Office 365 IP address and FQDN entries. You can access the data directly in a web browser using these URLs.</span></span>
+
+- <span data-ttu-id="c2033-110">Pour obtenir la dernière version des URL et plages d’adresses IP Office 365, utilisez [https://endpoints.office.com/version](https://endpoints.office.com/version?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).</span><span class="sxs-lookup"><span data-stu-id="c2033-110">For the latest version of the Office 365 URLs and IP address ranges, use [https://endpoints.office.com/version](https://endpoints.office.com/version?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).</span></span>
+- <span data-ttu-id="c2033-111">Pour les données sur la page des URL et plages d’adresses IP Office 365 pour les pare-feux et les serveurs proxy, utilisez [https://endpoints.office.com/endpoints/worldwide](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).</span><span class="sxs-lookup"><span data-stu-id="c2033-111">For the data on the Office 365 URLs and IP address ranges page for firewalls and proxy servers, use [https://endpoints.office.com/endpoints/worldwide](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).</span></span>
+- <span data-ttu-id="c2033-112">Pour obtenir les dernières modifications depuis la fin de juillet 2018, date de première mise à disposition du service web, utilisez [https://endpoints.office.com/changes/worldwide/0000000000](https://endpoints.office.com/changes/worldwide/0000000000?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).</span><span class="sxs-lookup"><span data-stu-id="c2033-112">To get all the latest changes since the end of July 2018 when the web service was first available, use [https://endpoints.office.com/changes/worldwide/0000000000](https://endpoints.office.com/changes/worldwide/0000000000?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).</span></span>
+
+<span data-ttu-id="c2033-113">En tant que client, vous pouvez utiliser ce service web pour :</span><span class="sxs-lookup"><span data-stu-id="c2033-113">As a customer, you can use this web service to:</span></span>
+
+- <span data-ttu-id="c2033-114">mettre à jour vos scripts PowerShell et obtenir des données de point de terminaison Office 365 et modifier la mise en forme de vos périphériques réseau ;</span><span class="sxs-lookup"><span data-stu-id="c2033-114">Update your PowerShell scripts to obtain Office 365 endpoint data and modify any formatting for your networking devices.</span></span>
+- <span data-ttu-id="c2033-115">utiliser ces informations pour mettre à jour des fichiers PAC déployés sur des ordinateurs clients.</span><span class="sxs-lookup"><span data-stu-id="c2033-115">Use this information to update PAC files deployed to client computers.</span></span>
+
+<span data-ttu-id="c2033-116">En tant que fournisseur de périphérique de périmètre réseau, vous pouvez utiliser ce service web pour :</span><span class="sxs-lookup"><span data-stu-id="c2033-116">As a network perimeter device vendor, you can use this web service to:</span></span>
+
+- <span data-ttu-id="c2033-117">créer et tester le logiciel du périphérique pour télécharger la liste pour une configuration automatisée ;</span><span class="sxs-lookup"><span data-stu-id="c2033-117">Create and test device software to download the list for automated configuration.</span></span>
+- <span data-ttu-id="c2033-118">rechercher la version actuelle ;</span><span class="sxs-lookup"><span data-stu-id="c2033-118">Check for the current version.</span></span>
+- <span data-ttu-id="c2033-119">obtenir les modifications actuelles.</span><span class="sxs-lookup"><span data-stu-id="c2033-119">Get the current changes.</span></span>
+
+<span data-ttu-id="c2033-120">Pour plus d’informations, voir :</span><span class="sxs-lookup"><span data-stu-id="c2033-120">For additional information, see IPConfig.</span></span>
+
+- [<span data-ttu-id="c2033-121">Annonce du billet de blog dans le Forum de la communauté technique Office 365</span><span class="sxs-lookup"><span data-stu-id="c2033-121">Announcement blog post in the Office 365 Tech Community Forum</span></span>](https://techcommunity.microsoft.com/t5/Office-365-Blog/Announcing-Office-365-endpoint-categories-and-Office-365-IP/ba-p/177638)
+- [<span data-ttu-id="c2033-122">Forum de la communauté technique Office 365 pour les questions sur l’utilisation des services web</span><span class="sxs-lookup"><span data-stu-id="c2033-122">Office 365 Tech Community Forum for questions about use of the web services</span></span>](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)
+
+## <a name="common-parameters"></a><span data-ttu-id="c2033-123">**Paramètres communs**</span><span class="sxs-lookup"><span data-stu-id="c2033-123">**Common parameters**</span></span>
+
+<span data-ttu-id="c2033-124">Ces paramètres sont communs à toutes les méthodes de service web :</span><span class="sxs-lookup"><span data-stu-id="c2033-124">These parameters are common across all the web service methods:</span></span>
+
+- <span data-ttu-id="c2033-p104">**format = CSV | JSON** : paramètre de chaîne de requête. Par défaut, le format de données renvoyé est JSON. Incluez ce paramètre facultatif pour renvoyer les données au format de valeurs séparées par des virgules (CSV).</span><span class="sxs-lookup"><span data-stu-id="c2033-p104">**format=CSV | JSON** - Query string parameter. By default, the returned data format is JSON. Include this optional parameter to return the data in comma-separated values (CSV) format.</span></span>
+- <span data-ttu-id="c2033-p105">**ClientRequestId** : paramètre de chaîne de requête. GUID obligatoire que vous générez pour l’association client. Vous devez générer un GUID pour chaque ordinateur qui appelle le service web. N’utilisez pas les GUID illustrés dans les exemples suivants, car ils peuvent être bloqués par le service web à l’avenir. Le format du GUID est _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_, où x représente un nombre hexadécimal. Pour générer un GUID, utilisez la commande PowerShell [New-Guid](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6).</span><span class="sxs-lookup"><span data-stu-id="c2033-p105">**ClientRequestId** - Query string parameter. A required GUID that you generate for client association. You should generate a GUID for each machine that calls the web service. Do not use the GUIDs shown in the following examples because they may be blocked by the web service in the future. GUID format is _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_, where x represents a hexadecimal number. To generate a GUID, use the [New-Guid](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) PowerShell command.</span></span>
+
+## <a name="version-web-method"></a><span data-ttu-id="c2033-134">**Méthode web de version**</span><span class="sxs-lookup"><span data-stu-id="c2033-134">**Version web method**</span></span>
+
+<span data-ttu-id="c2033-p106">Microsoft met à jour les entrées FQDN et les adresses IP Office 365 à la fin de chaque mois et parfois hors cycle pour des exigences opérationnelles ou de prise en charge. Les données pour chaque instance publiée sont attribuées à un numéro de version. La méthode web de version vous permet de rechercher la dernière version pour chaque instance du service Office 365. Nous vous recommandons d’effectuer la recherche tous les jours, ou toutes les heures, au maximum. Les nouvelles versions sont prévues au début de chaque mois. Il peut arriver qu’en raison d’incidents du support technique, d’exigences de sécurité ou d’autres exigences opérationnelles, de nouvelles versions soient disponibles pendant le mois.</span><span class="sxs-lookup"><span data-stu-id="c2033-p106">Microsoft updates the Office 365 IP address and FQDN entries at the end of each month and occasionally out of cycle for operational or support requirements. The data for each published instance is assigned a version number. The version web method lets you poll for the latest version for each Office 365 service instance. We recommend you check the version daily, or at the most, hourly. New versions should be expected at the start of each month. Sometimes due to support incident, security, or other operational requirements there will be new versions during the month.</span></span>
+
+<span data-ttu-id="c2033-141">Il y a un paramètre pour la méthode web de version :</span><span class="sxs-lookup"><span data-stu-id="c2033-141">There is one parameter for the version web method:</span></span>
+
+- <span data-ttu-id="c2033-p107">**AllVersions = true** : paramètre de chaîne de requête. Par défaut, la version renvoyée est la dernière version. Incluez ce paramètre facultatif pour demander toutes les versions publiées.</span><span class="sxs-lookup"><span data-stu-id="c2033-p107">**AllVersions=true** - Query string parameter. By default, the version returned is the latest. Include this optional parameter to request all published versions.</span></span>
+- <span data-ttu-id="c2033-p108">**Format = JSON** | **CSV** | **RSS** : outre les formats JSON et CSV, la méthode web de version prend également en charge RSS. Vous pouvez l’utiliser, ainsi que le paramètre allVersions = true pour demander un flux RSS qui peut être utilisé avec Outlook ou d’autres lecteurs RSS.</span><span class="sxs-lookup"><span data-stu-id="c2033-p108">**Format=JSON** | **CSV** | **RSS** – In addition to the JSON and CSV formats, the version web method also supports RSS. You can use this along with the allVersions=true parameter to request an RSS feed which can be used with Outlook or other RSS readers.</span></span>
+- <span data-ttu-id="c2033-p109">**Instance** : paramètre d’itinéraire. Ce paramètre facultatif spécifie l’instance pour laquelle renvoyer la version. S’il est omis, toutes les instances sont renvoyées. Les instances valides sont : Worldwide, China, Germany, USGovDoD, USGovGCCHigh</span><span class="sxs-lookup"><span data-stu-id="c2033-p109">**Instance** - Route parameter. This optional parameter specifies the instance to return the version for. If omitted, all instances are returned. Valid instances are: Worldwide, China, Germany, USGovDoD, USGovGCCHigh</span></span>
+
+<span data-ttu-id="c2033-p110">Le résultat de la méthode web de version peut être un enregistrement unique ou un tableau d’enregistrements. Les éléments de chaque enregistrement sont :</span><span class="sxs-lookup"><span data-stu-id="c2033-p110">The result from the version web method may be a single record or an array of records. The elements of each record are:</span></span>
+
+- <span data-ttu-id="c2033-153">instance : nom court de l’instance de service Office 365.</span><span class="sxs-lookup"><span data-stu-id="c2033-153">instance - The short name of the Office 365 service instance.</span></span>
+- <span data-ttu-id="c2033-154">latest : dernière version pour les points de terminaison de l’instance spécifiée.</span><span class="sxs-lookup"><span data-stu-id="c2033-154">latest - The latest version for endpoints of the specified instance.</span></span>
+- <span data-ttu-id="c2033-p111">versions : liste de toutes les versions précédentes pour l’instance spécifiée. Cet élément est inclus uniquement si le paramètre AllVersions est true.</span><span class="sxs-lookup"><span data-stu-id="c2033-p111">versions - A list of all previous versions for the specified instance. This element is only included if the AllVersions parameter is true.</span></span>
+
+### <a name="examples"></a><span data-ttu-id="c2033-157">**Exemples :**</span><span class="sxs-lookup"><span data-stu-id="c2033-157">**Examples:**</span></span>
+
+<span data-ttu-id="c2033-158">Exemple 1 d’URI de requête : [https://endpoints.office.com/version?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/version?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)</span><span class="sxs-lookup"><span data-stu-id="c2033-158">Example 1 request URI: [https://endpoints.office.com/version?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/version?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)</span></span>
+
+<span data-ttu-id="c2033-p112">Cet URI renvoie la dernière version de chaque instance du service Office 365. Exemple de résultat :</span><span class="sxs-lookup"><span data-stu-id="c2033-p112">This URI returns the latest version of each Office 365 service instance. Example result:</span></span>
+
+```json
+[
+ {
+  "instance": "Worldwide",
+  "latest": "2018063000"
+ },
+ {
+  "instance": "USGovDoD",
+  "latest": "2018063000"
+ },
+ {
+  "instance": "USGovGCCHigh",
+  "latest": "2018063000"
+ },
+ {
+  "instance": "China",
+  "latest": "2018063000"
+ },
+ {
+  "instance": "Germany",
+  "latest": "2018063000"
+ }
+]
+```
+
+[!IMPORTANT]
+<span data-ttu-id="c2033-p113">Le GUID pour le paramètre ClientRequestID dans ces URI n’est qu’un exemple. Pour essayer les URI de service web, générez votre propre GUID. Les GUID illustrés dans ces exemples pourront être bloqués par le service web à l’avenir.</span><span class="sxs-lookup"><span data-stu-id="c2033-p113">The GUID for the ClientRequestID parameter in these URIs are only an example. To try the web service URIs out, generate your own GUID. The GUIDs shown in these examples may be blocked by the web service in the future.</span></span>
+
+<span data-ttu-id="c2033-164">Exemple 2 d’URI de requête : [https://endpoints.office.com/version/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/version/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)</span><span class="sxs-lookup"><span data-stu-id="c2033-164">Example 2 request URI: [https://endpoints.office.com/version/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/version/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)</span></span>
+
+<span data-ttu-id="c2033-p114">Cet URI renvoie la dernière version de chaque instance du service Office 365 spécifiée. Exemple de résultat :</span><span class="sxs-lookup"><span data-stu-id="c2033-p114">This URI returns the latest version of the specified Office 365 service instance. Example result:</span></span>
+
+```json
+{
+ "instance": "Worldwide",
+ "latest": "2018063000"
+}
+
+```
+
+<span data-ttu-id="c2033-167">Exemple 3 d’URI de requête : [https://endpoints.office.com/version/Worldwide?Format=CSV&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/version/Worldwide?Format=CSV&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)</span><span class="sxs-lookup"><span data-stu-id="c2033-167">Example 3 request URI: [https://endpoints.office.com/version/Worldwide?Format=CSV&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/version/Worldwide?Format=CSV&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)</span></span>
+
+<span data-ttu-id="c2033-p115">Cet URI affiche le résultat au format CSV. Exemple de résultat :</span><span class="sxs-lookup"><span data-stu-id="c2033-p115">This URI shows output in CSV format. Example result:</span></span>
+
+```csv
+instance,latest
+Worldwide,2018063000
+```
+
+<span data-ttu-id="c2033-170">Exemple 4 d’URI de requête : [https://endpoints.office.com/version/Worldwide?AllVersions=true&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/version/Worldwide?AllVersions=true&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)</span><span class="sxs-lookup"><span data-stu-id="c2033-170">Example 4 request URI: [https://endpoints.office.com/version/Worldwide?AllVersions=true&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/version/Worldwide?AllVersions=true&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)</span></span>
+
+<span data-ttu-id="c2033-p116">Cet URI affiche toutes les versions antérieures publiées pour l’instance du service Office 365 dans le monde. Exemple de résultat :</span><span class="sxs-lookup"><span data-stu-id="c2033-p116">This URI shows all prior versions that have been published for the Office 365 worldwide service instance. Example result:</span></span>
+
+```json
+{
+  "instance": "Worldwide",
+  "latest": "2018063000",
+  "versions": [
+    "2018063000",
+    "2018062000"
+  ]
+}
+```
+
+<span data-ttu-id="c2033-173">Exemple 5 d’URI de flux RSS : [https://endpoints.office.com/version/worldwide?clientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7&allVersions=true&format=RSS](https://endpoints.office.com/version/worldwide?clientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7&allVersions=true&format=RSS)</span><span class="sxs-lookup"><span data-stu-id="c2033-173">Example 5 RSS Feed URI: [https://endpoints.office.com/version/worldwide?clientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7&allVersions=true&format=RSS](https://endpoints.office.com/version/worldwide?clientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7&allVersions=true&format=RSS)</span></span>
+
+<span data-ttu-id="c2033-p117">Cet URI affiche un flux RSS des versions publiées qui incluent des liens vers la liste des modifications apportées à chaque version. Exemple de résultat :</span><span class="sxs-lookup"><span data-stu-id="c2033-p117">This URI shows an RSS feed of the published versions that include links to the list of changes for each version. Example result:</span></span>
+
+```xml
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0" xmlns:a10="http://www.w3.org/2005/Atom">
+<channel>
+<link>http://aka.ms/o365ip</link>
+<description/>
+<language>en-us</language>
+<lastBuildDate>Thu, 02 Aug 2018 00:00:00 Z</lastBuildDate>
+<item>
+<guid isPermaLink="false">2018080200</guid>
+<link>https://endpoints.office.com/changes/Worldwide/2018080200?singleVersion&clientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7</link> <description>Version 2018080200 includes 2 changes. IPs: 2 added and 0 removed.</description>
+<pubDate>Thu, 02 Aug 2018 00:00:00 Z</pubDate>
+</item>
+...
+```
+
+## <a name="endpoints-web-method"></a><span data-ttu-id="c2033-176">**Méthode web de points de terminaison**</span><span class="sxs-lookup"><span data-stu-id="c2033-176">**Endpoints web method**</span></span>
+
+<span data-ttu-id="c2033-p118">La méthode web de points de terminaison renvoie tous les enregistrements pour les plages d’adresses IP et les URL qui composent le service Office 365. Les dernières données issues de la méthode web de points de terminaison web doivent être utilisées pour la configuration des périphériques réseau mais les données peuvent être mises en cache jusqu’à 30 jours après leur publication en raison du préavis fourni pour les ajouts. Les paramètres pour la méthode web de points de terminaison sont :</span><span class="sxs-lookup"><span data-stu-id="c2033-p118">The endpoints web method returns all records for IP address ranges and URLs that make up the Office 365 service. While the latest data from the endpoints web method should be used for network device configuration, the data can be cached for up to 30 days after it is published due to the advance notice provided for additions. Parameters for the endpoints web method are:</span></span>
+
+- <span data-ttu-id="c2033-p119">**ServiceAreas** : paramètre de chaîne de requête. Liste de valeurs séparées par des virgules pour les zones de service. Les éléments valides sont : Common, Exchange, SharePoint, Skype. Étant donné que les éléments de la zone de service Common sont une condition préalable pour toutes les autres zones de service, le service web les inclura toujours. Si vous n’incluez pas ce paramètre, toutes les zones de service sont renvoyées.</span><span class="sxs-lookup"><span data-stu-id="c2033-p119">**ServiceAreas** - Query string parameter. A comma-separated list of service areas. Valid items are Common,Exchange,SharePoint,Skype. Because Common service area items are a prerequisite for all other service areas, the web service will always include them. If you do not include this parameter, all service areas are returned.</span></span>
+- <span data-ttu-id="c2033-p120">**TenantName** : paramètre de chaîne de requête. Votre nom du client Office 365. Le service web prend le nom que vous avez fourni et l’insère dans des parties des URL qui incluent le nom du client. Si vous ne fournissez pas le nom du client, ces parties d’URL ont le caractère générique (\*).</span><span class="sxs-lookup"><span data-stu-id="c2033-p120">**TenantName** - Query string parameter. Your Office 365 tenant name. The web service takes your provided name and inserts it in parts of URLs that include the tenant name. If you don't provide a tenant name, those parts of URLs have the wildcard character (\*).</span></span>
+- <span data-ttu-id="c2033-p121">**NoIPv6** : paramètre de chaîne de requête. Définissez cette option sur true pour exclure les adresses IPv6 du résultat, par exemple, si vous n’utilisez pas IPv6 dans votre réseau.</span><span class="sxs-lookup"><span data-stu-id="c2033-p121">**NoIPv6** - Query string parameter. Set this to true to exclude IPv6 addresses from the output, for example, if you don't use IPv6 in your network.</span></span>
+- <span data-ttu-id="c2033-p122">**Instance** : paramètre d’itinéraire. Ce paramètre obligatoire spécifie l’instance pour laquelle renvoyer les points de terminaison. Les instances valides sont : Worldwide, China, Germany, USGovDoD, USGovGCCHigh.</span><span class="sxs-lookup"><span data-stu-id="c2033-p122">**Instance** - Route parameter. This required parameter specifies the instance to return the endpoints for. Valid instances are: Worldwide, China, Germany, USGovDoD, USGovGCCHigh.</span></span>
+
+<span data-ttu-id="c2033-p123">Le résultat de la méthode web de points de terminaison est un tableau d’enregistrements avec chaque enregistrement représentant un ensemble de points de terminaison. Les éléments pour chaque enregistrement sont :</span><span class="sxs-lookup"><span data-stu-id="c2033-p123">The result from the endpoints web method is an array of records with each record representing an endpoint set. The elements for each record are:</span></span>
+
+- <span data-ttu-id="c2033-196">id : l’ID non modifiable de l’ensemble de points de terminaison.</span><span class="sxs-lookup"><span data-stu-id="c2033-196">id - The immutable id number of the endpoint set.</span></span>
+- <span data-ttu-id="c2033-197">serviceArea : la zone de service dont il fait partie : Common, Exchange, SharePoint ou Skype.</span><span class="sxs-lookup"><span data-stu-id="c2033-197">serviceArea - The service area that this is part of: Common, Exchange, SharePoint, or Skype.</span></span>
+- <span data-ttu-id="c2033-p124">urls: URL pour l’ensemble de points de terminaison. Un tableau JSON des enregistrements DNS. Omis si vide.</span><span class="sxs-lookup"><span data-stu-id="c2033-p124">urls - URLs for the endpoint set. A JSON array of DNS records. Omitted if blank.</span></span>
+- <span data-ttu-id="c2033-p125">tcpPorts : ports TCP pour l’ensemble de points de terminaison. Tous les éléments de ports sont au format de liste de ports séparés par des virgules ou de plages de port séparées par un tiret (-). Les ports s’appliquent à toutes les adresses IP et toutes les URL dans cet ensemble de points de terminaison pour cette catégorie. Omis si vide.</span><span class="sxs-lookup"><span data-stu-id="c2033-p125">tcpPorts - TCP ports for the endpoint set. All ports elements are formatted as a comma-separated list of ports or port ranges separated by a dash character (-). Ports apply to all IP addresses and all URLs in that endpoint set for that category. Omitted if blank.</span></span>
+- <span data-ttu-id="c2033-p126">udpPorts : ports UDP pour les plages d’adresses IP dans cet ensemble de points de terminaison. Omis si vide.</span><span class="sxs-lookup"><span data-stu-id="c2033-p126">udpPorts - UDP ports for the IP address ranges in this endpoint set. Omitted if blank.</span></span>
+- <span data-ttu-id="c2033-p127">ips : plages d’adresses IP associées à cet ensemble de points de terminaison tel qu’associées aux ports TCP ou UDP répertoriés. Un tableau JSON des plages d’adresses IP. Omis si vide.</span><span class="sxs-lookup"><span data-stu-id="c2033-p127">ips - The IP address ranges associated with this endpoint set as associated with the listed TCP or UDP ports. A JSON array of IP Address ranges. Omitted if blank.</span></span>
+- <span data-ttu-id="c2033-p128">category : catégorie de connectivité pour l’ensemble de points de terminaison. Les valeurs valides sont Optimize, Allow, et Default. Obligatoire.</span><span class="sxs-lookup"><span data-stu-id="c2033-p128">category - The connectivity category for the endpoint set. Valid values are Optimize, Allow, and Default. Required.</span></span>
+- <span data-ttu-id="c2033-213">expressRoute : True ou False si cet ensemble de points de terminaison est routé sur ExpressRoute.</span><span class="sxs-lookup"><span data-stu-id="c2033-213">expressRoute - True or False if this endpoint set is routed over ExpressRoute.</span></span>
+- <span data-ttu-id="c2033-p129">required : True si cet ensemble de points de terminaison est obligatoire pour disposer d’une connectivité et prendre en charge Office 365. False si cet ensemble de points de terminaison est facultatif.</span><span class="sxs-lookup"><span data-stu-id="c2033-p129">required - True if this endpoint set is required to have connectivity for Office 365 to be supported. False if this endpoint set is optional.</span></span>
+- <span data-ttu-id="c2033-p130">notes : pour les points de terminaison facultatifs, ce texte décrit les fonctionnalités Office 365 qui manqueront si les adresses IP ou les URL dans cet ensemble de points de terminaison ne sont pas accessibles sur la couche réseau. Omis si vide.</span><span class="sxs-lookup"><span data-stu-id="c2033-p130">notes - For optional endpoints, this text describes Office 365 functionality that will be missing if IP addresses or URLs in this endpoint set cannot be accessed at the network layer. Omitted if blank.</span></span>
+
+### <a name="examples"></a><span data-ttu-id="c2033-218">Exemples :</span><span class="sxs-lookup"><span data-stu-id="c2033-218">Examples:</span></span>
+
+<span data-ttu-id="c2033-219">Exemple 1 d’URI de requête : [https://endpoints.office.com/endpoints/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/endpoints/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)</span><span class="sxs-lookup"><span data-stu-id="c2033-219">Example 1 request URI: [https://endpoints.office.com/endpoints/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/endpoints/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)</span></span>
+
+<span data-ttu-id="c2033-p131">Cet URI a obtenu tous les points de terminaison pour l’instance Worldwide d’Office 365 pour toutes les charges de travail. Exemple de résultat montrant un extrait du résultat :</span><span class="sxs-lookup"><span data-stu-id="c2033-p131">This URI obtains all endpoints for the Office 365 worldwide instance for all workloads. Example result showing an excerpt of the output:</span></span>
+
+```json
+[
+ {
+  "id": 1,
+  "serviceArea": "Exchange",
+  "serviceAreaDisplayName": "Exchange Online",
+  "urls":
+   [
+    "*.protection.outlook.com"
+   ],
+  "ips":
+   [
+    "2a01:111:f403::/48", "23.103.132.0/22", "23.103.136.0/21", "23.103.198.0/23", "23.103.212.0/22", "40.92.0.0/14", "40.107.0.0/17", "40.107.128.0/18", "52.100.0.0/14", "213.199.154.0/24", "213.199.180.128/26", "94.245.120.64/26", "207.46.163.0/24", "65.55.88.0/24", "216.32.180.0/23", "23.103.144.0/20", "65.55.169.0/24", "207.46.100.0/24", "2a01:111:f400:7c00::/54", "157.56.110.0/23", "23.103.200.0/22", "104.47.0.0/17", "2a01:111:f400:fc00::/54", "157.55.234.0/24", "157.56.112.0/24", "52.238.78.88/32"
+   ],
+  "tcpPorts": "443",
+  "expressRoute": true,
+  "category": "Allow"
+ },
+ {
+  "id": 2,
+  "serviceArea": "Exchange",
+  "serviceAreaDisplayName": "Exchange Online",
+  "urls":
+   [
+    "*.mail.protection.outlook.com"
+   ],
+...
+```
+
+<span data-ttu-id="c2033-222">Des ensembles de points de terminaison supplémentaires ne sont pas inclus dans cet exemple.</span><span class="sxs-lookup"><span data-stu-id="c2033-222">Additional endpoint sets are not included in this example.</span></span>
+
+<span data-ttu-id="c2033-223">Exemple 2 d’URI de requête : [https://endpoints.office.com/endpoints/Worldwide?ServiceAreas=Exchange&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/endpoints/Worldwide?ServiceAreas=Exchange&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)</span><span class="sxs-lookup"><span data-stu-id="c2033-223">Example 2 request URI: [https://endpoints.office.com/endpoints/Worldwide?ServiceAreas=Exchange&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/endpoints/Worldwide?ServiceAreas=Exchange&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)</span></span>
+
+<span data-ttu-id="c2033-224">Cet exemple obtient des points de terminaison pour l’instance Worldwide d’Office 365 pour Exchange Online et les dépendances uniquement.</span><span class="sxs-lookup"><span data-stu-id="c2033-224">This example obtains endpoints for the Office 365 Worldwide instance for Exchange Online and dependencies only.</span></span>
+
+<span data-ttu-id="c2033-225">Le résultat pour l’exemple 2 ressemble à l’exemple 1 sauf que les résultats n’incluent pas les points de terminaison pour SharePoint Online ou Skype Entreprise Online.</span><span class="sxs-lookup"><span data-stu-id="c2033-225">The output for example 2 is similar to example 1 except that the results will not include endpoints for SharePoint Online or Skype for Business Online.</span></span>
+
+## <a name="changes-web-method"></a><span data-ttu-id="c2033-226">Méthode web de modifications</span><span class="sxs-lookup"><span data-stu-id="c2033-226">Changes web method</span></span>
+
+<span data-ttu-id="c2033-p132">La méthode web de modifications renvoie les dernières mises à jour publiées. Il s’agit généralement des modifications apportées aux plages d’adresses IP et aux URL le mois précédent. Les modifications les plus importantes à traiter sont celles qui concernent l’ajout de nouvelles URL ou d’adresses IP. En effet, en cas d’échec d’ajout d’une adresse IP à une liste de contrôle d’accès de pare-feu ou d’une URL pointant vers une liste de contournement de serveur proxy, une panne pour les utilisateurs Office 365 utilisant ce périphérique réseau peut se produire. Malgré les exigences opérationnelles, les opérations d’_ajout_ sont ajoutées avec un préavis de 30 jours avant qu’une panne se produise.</span><span class="sxs-lookup"><span data-stu-id="c2033-p132">The changes web method returns the most recent updates that have been published. This is typically the previous month's changes to IP address ranges and URLs. The most critical changes to be processed are when new URLs or IP Addresses are added since failing to add an IP Address to a firewall access control list, or a URL to a proxy server bypass list can cause an outage for Office 365 users behind that network device. Notwithstanding operational requirements, _Add_ operations are added with 30 days' notice before such an outage would occur.</span></span>
+
+<span data-ttu-id="c2033-231">Le paramètre de la méthode web de modifications est :</span><span class="sxs-lookup"><span data-stu-id="c2033-231">The parameter for the changes web method is:</span></span>
+
+- <span data-ttu-id="c2033-p133">**Version** : paramètre d’itinéraire URL obligatoire. La version que vous avez implémentée actuellement et dont vous souhaitez voir les modifications depuis cette version. Le format est _YYYYMMDDNN_.</span><span class="sxs-lookup"><span data-stu-id="c2033-p133">**Version** - Required URL route parameter. The version that you have currently implemented, and you want to see the changes since that version. The format is _YYYYMMDDNN_.</span></span>
+
+<span data-ttu-id="c2033-p134">Le résultat de la méthode web de modifications est un tableau d’enregistrements avec chaque enregistrement représentant une modification dans une version spécifique des points de terminaison. Les éléments pour chaque enregistrement sont :</span><span class="sxs-lookup"><span data-stu-id="c2033-p134">The result from the changes web method is an array of records with each record representing a change in a specific version of the endpoints. The elements for each record are:</span></span>
+
+- <span data-ttu-id="c2033-237">ID : ID non modifiable de l’enregistrement de la modification.</span><span class="sxs-lookup"><span data-stu-id="c2033-237">id - The immutable id of the change record.</span></span>
+- <span data-ttu-id="c2033-p135">endpointSetId : ID de l’enregistrement du point de terminaison qui est modifié. Obligatoire.</span><span class="sxs-lookup"><span data-stu-id="c2033-p135">endpointSetId - The ID of the endpoint set record that is changed. Required.</span></span>
+- <span data-ttu-id="c2033-p136">disposition : modification, ajout ou suppression qui décrit l’effet de la modification sur l’enregistrement du point de terminaison. Obligatoire.</span><span class="sxs-lookup"><span data-stu-id="c2033-p136">disposition - This can be either of change, add, or remove and describes what the change did to the endpoint set record. Required.</span></span>
+- <span data-ttu-id="c2033-p137">version : version de l’ensemble de points de terminaison publié dans laquelle la modification a été introduite. Les numéros de version sont au format _YYYYMMDDNN_, où NN est un nombre naturel incrémenté si plusieurs versions doivent être publiées sur un seul jour.</span><span class="sxs-lookup"><span data-stu-id="c2033-p137">version - The version of the published endpoint set in which the change was introduced. Version numbers are of the format _YYYYMMDDNN_, where NN is a natural number incremented if there are multiple versions required to be published on a single day.</span></span>
+- <span data-ttu-id="c2033-p138">previous : sous-structure détaillant les valeurs précédentes des éléments modifiés sur l’ensemble de points de terminaison. Cela ne sera pas inclus pour les ensembles de points de terminaison nouvellement ajoutés. Inclut udpPorts, ExpressRoute, category, required, notes.</span><span class="sxs-lookup"><span data-stu-id="c2033-p138">previous - A substructure detailing previous values of changed elements on the endpoint set. This will not be included for newly added endpoint sets. Includes tcpPorts, udpPorts, ExpressRoute, category, required, notes.</span></span>
+- <span data-ttu-id="c2033-p139">current : sous-structure détaillant les valeurs mises à jour des éléments de modifications sur l’ensemble de points de terminaison. Inclut cpPorts, udpPorts, ExpressRoute, category, required, notes.</span><span class="sxs-lookup"><span data-stu-id="c2033-p139">current - A substructure detailing updated values of changes elements on the endpoint set. Includes tcpPorts, udpPorts, ExpressRoute, category, required, notes.</span></span>
+- <span data-ttu-id="c2033-p140">add : sous-structure détaillant les éléments à ajouter aux collections d’ensembles de points de terminaison. Omis s’il n’y a aucun ajout.</span><span class="sxs-lookup"><span data-stu-id="c2033-p140">add - A substructure detailing items to be added to endpoint set collections. Omitted if there are no additions.</span></span>
+  - <span data-ttu-id="c2033-251">effectiveDate : définit les données lorsque les ajouts seront disponibles dans le service.</span><span class="sxs-lookup"><span data-stu-id="c2033-251">effectiveDate - Defines the data when the additions will be live in the service.</span></span>
+  - <span data-ttu-id="c2033-252">ips : éléments à ajouter au tableau d’adresses IP.</span><span class="sxs-lookup"><span data-stu-id="c2033-252">ips - Items to be added to the ips array.</span></span>
+  - <span data-ttu-id="c2033-253">urls : éléments à ajouter au tableau d’URL.</span><span class="sxs-lookup"><span data-stu-id="c2033-253">urls- Items to be added to the urls array.</span></span>
+- <span data-ttu-id="c2033-p141">remove : sous-structure détaillant les éléments à supprimer de l’ensemble de points de terminaison. Omis s’il n’y a aucune suppression.</span><span class="sxs-lookup"><span data-stu-id="c2033-p141">remove - A substructure detailing items to be removed from the endpoint set. Omitted if there are no removals.</span></span>
+  - <span data-ttu-id="c2033-256">ips : éléments à supprimer du tableau d’adresses IP.</span><span class="sxs-lookup"><span data-stu-id="c2033-256">ips - Items to be removed from the ips array.</span></span>
+  - <span data-ttu-id="c2033-257">urls : éléments à supprimer du tableau d’URL.</span><span class="sxs-lookup"><span data-stu-id="c2033-257">urls- Items to be removed from the urls array.</span></span>
+
+### <a name="examples"></a><span data-ttu-id="c2033-258">**Exemples :**</span><span class="sxs-lookup"><span data-stu-id="c2033-258">**Examples:**</span></span>
+
+<span data-ttu-id="c2033-259">Exemple 1 d’URI de requête : [https://endpoints.office.com/changes/worldwide/0000000000?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/changes/worldwide/0000000000?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)</span><span class="sxs-lookup"><span data-stu-id="c2033-259">Example 1 request URI: [https://endpoints.office.com/changes/worldwide/0000000000?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/changes/worldwide/0000000000?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)</span></span>
+
+<span data-ttu-id="c2033-p142">Toutes les modifications précédentes apportées à l’instance de service Worldwide d’Office 365 sont demandées. Exemple de résultat :</span><span class="sxs-lookup"><span data-stu-id="c2033-p142">This requests all previous changes to the Office 365 worldwide service instance. Example result:</span></span>
+
+```json
+[
+ {
+  "id": 424,
+  "endpointSetId": 32,
+  "disposition": "Change",
+  "version": "2018062700",
+  "remove":
+   {
+    "urls":
+     [
+      "*.api.skype.com", "skypegraph.skype.com"
+     ]
+   }
+ },
+ {
+  "id": 426,
+  "endpointSetId": 31,
+  "disposition": "Change",
+  "version": "2018062700",
+  "add":
+   {
+    "effectiveDate": "20180609",
+    "ips":
+     [
+      "51.140.203.190/32"
+     ]
+   },
+  "remove":
+   {
+    "ips":
+     [
+...
+```
+
+<span data-ttu-id="c2033-262">Exemple 2 d’URI de requête : [https://endpoints.office.com/changes/worldwide/2018062700?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/changes/worldwide/2018062700?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)</span><span class="sxs-lookup"><span data-stu-id="c2033-262">Example 2 request URI: [https://endpoints.office.com/changes/worldwide/2018062700?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/changes/worldwide/2018062700?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)</span></span>
+
+<span data-ttu-id="c2033-p143">Les modifications apportées à l’instance Worldwide d’Office 365 depuis la version spécifiée sont demandées. Dans ce cas, la version spécifiée est la dernière. Exemple de résultat :</span><span class="sxs-lookup"><span data-stu-id="c2033-p143">This requests changes since the specified version to the Office 365 Worldwide instance. In this case, the version specified is the latest. Example result:</span></span>
+
+```json
+[
+  {
+    "id":3,
+    "endpointSetId":33,
+    "changeDescription":"Removing old IP prefixes",
+    "disposition":"Change",
+    "version":"2018031301",
+    "remove":{
+      "ips":["65.55.127.0/24","66.119.157.192/26","66.119.158.0/25",
+      "111.221.76.128/25","111.221.77.0/26","207.46.5.0/24"]
+    }
+  },
+  {
+    "id":4,
+    "endpointSetId":45,
+    "changeDescription":"Removing old IP prefixes",
+    "disposition":"Change",
+    "version":"2018031301",
+    "remove":{
+      "ips":["13.78.93.8/32","40.113.87.220/32","40.114.149.220/32",
+      "40.117.100.83/32","40.118.214.164/32","104.208.31.113/32"]
+    }
+  }
+]
+```
+
+## <a name="example-powershell-script"></a><span data-ttu-id="c2033-266">**Exemple de script PowerShell**</span><span class="sxs-lookup"><span data-stu-id="c2033-266">**Example PowerShell Script**</span></span>
+
+<span data-ttu-id="c2033-p144">Voici un script PowerShell que vous pouvez exécuter pour voir s’il y a des actions à exécuter pour les données mises à jour. Ce script vérifie le numéro de version pour les points de terminaison de l’instance Worldwide d’Office 365. Lorsqu’une modification a lieu, il télécharge les points de terminaison et les filtre en fonction de la catégorie &quot;Allow&quot; et &quot;Optimize&quot;. Il utilise aussi un ClientRequestId unique dans plusieurs appels et enregistre la dernière version trouvée dans un fichier temporaire. Vous devez appeler ce script une fois toutes les heures afin de rechercher une mise à jour de version.</span><span class="sxs-lookup"><span data-stu-id="c2033-p144">Here is a PowerShell script that you can run to see if there are actions you need to take for updated data. This script checks the version number for the Office 365 Worldwide instance endpoints. When there is a change, it downloads the endpoints and filters for the &quot;Allow&quot; and &quot;Optimize&quot; category endpoints. It also uses a unique ClientRequestId across multiple calls and saves the latest version found in a temporary file. You should call this script once an hour to check for a version update.</span></span>
+
+```powershell
+# webservice root URL
+$ws = "https://endpoints.office.com"
+# path where client ID and latest version number will be stored
+$datapath = $Env:TEMP + "\endpoints_clientid_latestversion.txt"
+# fetch client ID and version if data file exists; otherwise create new file
+if (Test-Path $datapath) {
+    $content = Get-Content $datapath
+    $clientRequestId = $content[0]
+    $lastVersion = $content[1]
+}
+else {
+    $clientRequestId = [GUID]::NewGuid().Guid
+    $lastVersion = "0000000000"
+    @($clientRequestId, $lastVersion) | Out-File $datapath
+}
+# call version method to check the latest version, and pull new data if version number is different
+$version = Invoke-RestMethod -Uri ($ws + "/version/Worldwide?clientRequestId=" + $clientRequestId)
+if ($version.latest -gt $lastVersion) {
+    Write-Host "New version of Office 365 worldwide commercial service instance endpoints detected"
+
+    # write the new version number to the data file
+    @($clientRequestId, $version.latest) | Out-File $datapath
+    # invoke endpoints method to get the new data
+    $endpointSets = Invoke-RestMethod -Uri ($ws + "/endpoints/Worldwide?clientRequestId=" + $clientRequestId)
+    # filter results for Allow and Optimize endpoints, and transform these into custom objects with port and category
+    $flatUrls = $endpointSets | ForEach-Object {
+        $endpointSet = $_
+        $urls = $(if ($endpointSet.urls.Count -gt 0) { $endpointSet.urls } else { @() })
+        $urlCustomObjects = @()
+        if ($endpointSet.category -in ("Allow", "Optimize")) {
+            $urlCustomObjects = $urls | ForEach-Object {
+                [PSCustomObject]@{
+                    category = $endpointSet.category;
+                    url      = $_;
+                    tcpPorts = $endpointSet.tcpPorts;
+                    udpPorts = $endpointSet.udpPorts;
+                }
+            }
+        }
+        $urlCustomObjects
+    }
+    $flatIps = $endpointSets | ForEach-Object {
+        $endpointSet = $_
+        $ips = $(if ($endpointSet.ips.Count -gt 0) { $endpointSet.ips } else { @() })
+        # IPv4 strings have dots while IPv6 strings have colons
+        $ip4s = $ips | Where-Object { $_ -like '*.*' }
+
+        $ipCustomObjects = @()
+        if ($endpointSet.category -in ("Allow", "Optimize")) {
+            $ipCustomObjects = $ip4s | ForEach-Object {
+                [PSCustomObject]@{
+                    category = $endpointSet.category;
+                    ip = $_;
+                    tcpPorts = $endpointSet.tcpPorts;
+                    udpPorts = $endpointSet.udpPorts;
+                }
+            }
+        }
+        $ipCustomObjects
+    }
+    Write-Output "IPv4 Firewall IP Address Ranges"
+    ($flatIps.ip | Sort-Object -Unique) -join "," | Out-String
+    Write-Output "URLs for Proxy Server"
+    ($flatUrls.url | Sort-Object -Unique) -join "," | Out-String
+    # TODO Call Send-MailMessage with new endpoints data
+}
+else {
+    Write-Host "Office 365 worldwide commercial service instance endpoints are up-to-date"
+}
+```
+
+## <a name="example-python-script"></a><span data-ttu-id="c2033-272">**Exemple de script Python**</span><span class="sxs-lookup"><span data-stu-id="c2033-272">**Example Python Script**</span></span>
+
+<span data-ttu-id="c2033-p145">Voici un script Python testé avec Python 3.6.3 on Windows 10, que vous pouvez exécuter pour voir s’il y a des actions à exécuter pour les données mises à jour. Ce script vérifie le numéro de version pour les points de terminaison de l’instance Worldwide d’Office 365. Lorsqu’une modification a lieu, il télécharge les points de terminaison et les filtre en fonction de la catégorie _Allow_ et _Optimize_. Il utilise aussi un ClientRequestId unique dans plusieurs appels et enregistre la dernière version trouvée dans un fichier temporaire. Vous devez appeler ce script une fois toutes les heures afin de rechercher une mise à jour de version.</span><span class="sxs-lookup"><span data-stu-id="c2033-p145">Here is a Python script, tested with Python 3.6.3 on Windows 10, that you can run to see if there are actions you need to take for updated data. This script checks the version number for the Office 365 Worldwide instance endpoints. When there is a change, it downloads the endpoints and filters for the _Allow_ and _Optimize_ category endpoints. It also uses a unique ClientRequestId across multiple calls and saves the latest version found in a temporary file. You should call this script once an hour to check for a version update.</span></span>
+
+```python
+import json
+import os
+import urllib.request
+import uuid
+# helper to call the webservice and parse the response
+def webApiGet(methodName, instanceName, clientRequestId):
+    ws = "https://endpoints.office.com"
+    requestPath = ws + '/' + methodName + '/' + instanceName + '?clientRequestId=' + clientRequestId
+    request = urllib.request.Request(requestPath)
+    with urllib.request.urlopen(request) as response:
+        return json.loads(response.read().decode())
+# path where client ID and latest version number will be stored
+datapath = os.environ['TEMP'] + '\endpoints_clientid_latestversion.txt'
+# fetch client ID and version if data exists; otherwise create new file
+if os.path.exists(datapath):
+    with open(datapath, 'r') as fin:
+        clientRequestId = fin.readline().strip()
+        latestVersion = fin.readline().strip()
+else:
+    clientRequestId = str(uuid.uuid4())
+    latestVersion = '0000000000'
+    with open(datapath, 'w') as fout:
+        fout.write(clientRequestId + '\n' + latestVersion)
+# call version method to check the latest version, and pull new data if version number is different
+version = webApiGet('version', 'Worldwide', clientRequestId)
+if version['latest'] > latestVersion:
+    print('New version of Office 365 worldwide commercial service instance endpoints detected')
+    # write the new version number to the data file
+    with open(datapath, 'w') as fout:
+        fout.write(clientRequestId + '\n' + version['latest'])
+    # invoke endpoints method to get the new data
+    endpointSets = webApiGet('endpoints', 'Worldwide', clientRequestId)
+    # filter results for Allow and Optimize endpoints, and transform these into tuples with port and category
+    flatUrls = []
+    for endpointSet in endpointSets:
+        if endpointSet['category'] in ('Optimize', 'Allow'):
+            category = endpointSet['category']
+            urls = endpointSet['urls'] if 'urls' in endpointSet else []
+            tcpPorts = endpointSet['tcpPorts'] if 'tcpPorts' in endpointSet else ''
+            udpPorts = endpointSet['udpPorts'] if 'udpPorts' in endpointSet else ''
+            flatUrls.extend([(category, url, tcpPorts, udpPorts) for url in urls])
+    flatIps = []
+    for endpointSet in endpointSets:
+        if endpointSet['category'] in ('Optimize', 'Allow'):
+            ips = endpointSet['ips'] if 'ips' in endpointSet else []
+            category = endpointSet['category']
+            # IPv4 strings have dots while IPv6 strings have colons
+            ip4s = [ip for ip in ips if '.' in ip]
+            tcpPorts = endpointSet['tcpPorts'] if 'tcpPorts' in endpointSet else ''
+            udpPorts = endpointSet['udpPorts'] if 'udpPorts' in endpointSet else ''
+            flatIps.extend([(category, ip, tcpPorts, udpPorts) for ip in ip4s])
+    print('IPv4 Firewall IP Address Ranges')
+    print(','.join(sorted(set([ip for (category, ip, tcpPorts, udpPorts) in flatIps]))))
+    print('URLs for Proxy Server')
+    print(','.join(sorted(set([url for (category, url, tcpPorts, udpPorts) in flatUrls]))))
+
+    # TODO send mail (e.g. with smtplib/email modules) with new endpoints data
+else:
+    print('Office 365 worldwide commercial service instance endpoints are up-to-date')
+```
+
+## <a name="web-service-interface-versioning"></a><span data-ttu-id="c2033-278">**Contrôle de version de l’interface du service web**</span><span class="sxs-lookup"><span data-stu-id="c2033-278">**Web Service interface versioning**</span></span>
+
+<span data-ttu-id="c2033-p146">Des mises à jour des paramètres ou des résultats de ces méthodes de service web peuvent être requises à l’avenir. Une fois que la version de disponibilité générale de ces services web sera publiée, Microsoft s’efforcera de fournir un préavis des mises à jour matérielles au service web. Si Microsoft pense qu’une mise à jour nécessite des modifications des clients qui utilisent le service web, Microsoft conservera la version précédente (une version antérieure) du service web disponible pendant au moins douze (12) mois après la publication de la nouvelle version. Les clients qui n’effectuent pas de mise à niveau pendant ce délai ne pourront peut-être pas accéder au service web et à ses méthodes. Les clients doivent s’assurer que les clients du service web continuent à travailler sans erreur si les modifications suivantes sont apportées à la signature de l’interface du service web :</span><span class="sxs-lookup"><span data-stu-id="c2033-p146">Updates to the parameters or results for these web service methods may be required in the future. After the general availability version of these web services is published, Microsoft will make reasonable efforts to provide advance notice of material updates to the web service. When Microsoft believes that an update will require changes to clients using the web service, Microsoft will keep the previous version (one version back) of the web service available for at least twelve (12) months after the release of the new version. Customers who do not upgrade during that time may be unable to access the web service and its methods. Customers must ensure that clients of the web service continue working without error if the following changes are made to the web service interface signature:</span></span>
+
+- <span data-ttu-id="c2033-284">Ajout d’un nouveau paramètre facultatif à une méthode web existant qui ne doit pas être fournie par des clients plus anciens et n’affecte pas le résultat qu’un client plus ancien reçoit.</span><span class="sxs-lookup"><span data-stu-id="c2033-284">Adding a new optional parameter to an existing web method that doesn't have to be provided by older clients and doesn't impact the result an older client receives.</span></span>
+- <span data-ttu-id="c2033-285">Ajout d’un attribut avec un nouveau nom dans l’un des éléments REST de réponse ou de colonnes supplémentaires au CSV de réponse.</span><span class="sxs-lookup"><span data-stu-id="c2033-285">Adding a new named attribute in one of the response REST items or additional columns to the response CSV.</span></span>
+- <span data-ttu-id="c2033-286">Ajout d’une nouvelle méthode web avec un nouveau nom qui n’est pas appelée par les clients plus anciens.</span><span class="sxs-lookup"><span data-stu-id="c2033-286">Adding a new web method with a new name that is not called by the older clients.</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="c2033-287">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="c2033-287">Related Topics</span></span>
+  
+[<span data-ttu-id="c2033-288">URL et plages d’adresses IP Office 365</span><span class="sxs-lookup"><span data-stu-id="c2033-288">Office 365 URLs and IP address ranges</span></span>](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+  
+[<span data-ttu-id="c2033-289">Points de terminaison Office 365 - FAQ</span><span class="sxs-lookup"><span data-stu-id="c2033-289">Office 365 Germany endpoints</span></span>](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
+
+[<span data-ttu-id="c2033-290">Principes de connectivité réseau Office 365</span><span class="sxs-lookup"><span data-stu-id="c2033-290">Office 365 Network Connectivity Principles</span></span>](office-365-network-connectivity-principles.md)
+
+[<span data-ttu-id="c2033-291">Paramétrage des performances et du réseau Office 365</span><span class="sxs-lookup"><span data-stu-id="c2033-291">Office 365 network and performance tuning</span></span>](network-planning-and-performance.md)
+
+[<span data-ttu-id="c2033-292">Connectivité réseau à Office 365</span><span class="sxs-lookup"><span data-stu-id="c2033-292">Network connectivity to Office 365</span></span>](network-connectivity.md)
+  
+[<span data-ttu-id="c2033-293">Azure ExpressRoute pour Office 365</span><span class="sxs-lookup"><span data-stu-id="c2033-293">Azure ExpressRoute for Office 365</span></span>](azure-expressroute.md)
+  
+[<span data-ttu-id="c2033-294">Gestion d’ExpressRoute pour la connectivité d’Office 365</span><span class="sxs-lookup"><span data-stu-id="c2033-294">Managing ExpressRoute for Office 365 connectivity</span></span>](managing-expressroute-for-connectivity.md)
+  
+[<span data-ttu-id="c2033-295">Routage avec ExpressRoute pour Office 365</span><span class="sxs-lookup"><span data-stu-id="c2033-295">Routing with ExpressRoute for Office 365</span></span>](routing-with-expressroute.md)
+  
+[<span data-ttu-id="c2033-296">Implémentation d’ExpressRoute pour Office 365</span><span class="sxs-lookup"><span data-stu-id="c2033-296">Implementing ExpressRoute for Office 365</span></span>](implementing-expressroute.md)
+  
+[<span data-ttu-id="c2033-297">Scénarios d’utilisation des communautés BGP dans ExpressRoute pour Office 365 (aperçu)</span><span class="sxs-lookup"><span data-stu-id="c2033-297">Using BGP communities in ExpressRoute for Office 365 scenarios (preview)</span></span>](bgp-communities-in-expressroute.md)
+  
+[<span data-ttu-id="c2033-298">Qualité des médias et performances de connectivité réseau dans Skype Entreprise Online</span><span class="sxs-lookup"><span data-stu-id="c2033-298">Media Quality and Network Connectivity Performance in Skype for Business Online</span></span>](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
+  
+[<span data-ttu-id="c2033-299">Optimisation de votre réseau pour Skype Entreprise Online</span><span class="sxs-lookup"><span data-stu-id="c2033-299">Optimizing your network for Skype for Business Online</span></span>](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
+  
+[<span data-ttu-id="c2033-300">ExpressRoute et QoS dans Skype Entreprise Online</span><span class="sxs-lookup"><span data-stu-id="c2033-300">ExpressRoute and QoS in Skype for Business Online</span></span>](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
+  
+[<span data-ttu-id="c2033-301">Appel du flux à l’aide d’ExpressRoute</span><span class="sxs-lookup"><span data-stu-id="c2033-301">Call flow using ExpressRoute</span></span>](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
+  
+[<span data-ttu-id="c2033-302">Réglage des performances Office 365 à l’aide du planning de référence et de l’historique des performances</span><span class="sxs-lookup"><span data-stu-id="c2033-302">Office 365 performance tuning using baselines and performance history</span></span>](performance-tuning-using-baselines-and-history.md)
+  
+[<span data-ttu-id="c2033-303">Plan de résolution des problèmes de performances pour Office 365</span><span class="sxs-lookup"><span data-stu-id="c2033-303">Performance troubleshooting plan for Office 365</span></span>](performance-troubleshooting-plan.md)

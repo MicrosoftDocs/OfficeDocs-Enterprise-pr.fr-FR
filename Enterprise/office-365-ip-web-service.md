@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Pour vous aider à mieux identifier et différencier le trafic réseau Office 365, un nouveau service web publie les points de terminaison Office 365, afin de vous permettre d’évaluer, de configurer et de rester informé plus facilement des modifications. Ce nouveau service web remplace les fichiers téléchargeables XML actuellement disponibles.
-ms.openlocfilehash: 3abd6a0692ae4d66c76f8c0d65653b83646c6e23
-ms.sourcegitcommit: d07feeba2e886febc6a57a5c33b0df02b3db5631
+ms.openlocfilehash: 21222f4c1c2010517bdfe1a425b47c8f4fde8b0e
+ms.sourcegitcommit: ca4d3ec34300d7d39f1a42dc6f29a34915de5c87
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "23830886"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "23831899"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>**Service web d’URL et d’adresses IP Office 365**
 
@@ -66,7 +66,7 @@ Il y a un paramètre pour la méthode web de version :
 
 - **AllVersions = true** : paramètre de chaîne de requête. Par défaut, la version renvoyée est la dernière version. Incluez ce paramètre facultatif pour demander toutes les versions publiées.
 - **Format = JSON** | **CSV** | **RSS** : outre les formats JSON et CSV, la méthode web de version prend également en charge RSS. Vous pouvez l’utiliser, ainsi que le paramètre allVersions = true pour demander un flux RSS qui peut être utilisé avec Outlook ou d’autres lecteurs RSS.
-- **Instance** : paramètre d’itinéraire. Ce paramètre facultatif spécifie l’instance pour laquelle renvoyer la version. S’il est omis, toutes les instances sont renvoyées. Les instances valides sont : Worldwide, China, Germany, USGovDoD, USGovGCCHigh
+- **Instance** : paramètre d’itinéraire. Ce paramètre facultatif spécifie l’instance pour laquelle renvoyer la version. S’il est omis, toutes les instances sont renvoyées. Les instances valides sont : Worldwide, China, Germany, USGovDoD, USGovGCCHigh.
 
 Le résultat de la méthode web de version peut être un enregistrement unique ou un tableau d’enregistrements. Les éléments de chaque enregistrement sont :
 
@@ -74,7 +74,9 @@ Le résultat de la méthode web de version peut être un enregistrement unique o
 - latest : dernière version pour les points de terminaison de l’instance spécifiée.
 - versions : liste de toutes les versions précédentes pour l’instance spécifiée. Cet élément est inclus uniquement si le paramètre AllVersions est true.
 
-### <a name="examples"></a>**Exemples :**
+Vous pouvez utiliser Microsoft Flow pour recevoir des notifications par e-mail vous informant des modifications apportées aux adresses IP et aux URL. Consultez la rubrique relative à l’[utilisation de Microsoft Flow pour être informé par courrier électronique des modifications apportées aux URL et aux adresses IP d’Office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651).
+
+### <a name="examples"></a>**Exemples :**
 
 Exemple 1 d’URI de requête : [https://endpoints.office.com/version?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/version?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
 
@@ -487,24 +489,10 @@ Des mises à jour des paramètres ou des résultats de ces méthodes de service 
 
 [Connectivité réseau à Office 365](network-connectivity.md)
   
-[Azure ExpressRoute pour Office 365](azure-expressroute.md)
-  
-[Gestion d’ExpressRoute pour la connectivité d’Office 365](managing-expressroute-for-connectivity.md)
-  
-[Routage avec ExpressRoute pour Office 365](routing-with-expressroute.md)
-  
-[Implémentation d’ExpressRoute pour Office 365](implementing-expressroute.md)
-  
-[Scénarios d’utilisation des communautés BGP dans ExpressRoute pour Office 365 (aperçu)](bgp-communities-in-expressroute.md)
-  
 [Qualité des médias et performances de connectivité réseau dans Skype Entreprise Online](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   
 [Optimisation de votre réseau pour Skype Entreprise Online](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
-  
-[ExpressRoute et QoS dans Skype Entreprise Online](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
-  
-[Appel du flux à l’aide d’ExpressRoute](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
-  
+
 [Réglage des performances Office 365 à l’aide du planning de référence et de l’historique des performances](performance-tuning-using-baselines-and-history.md)
   
 [Plan de résolution des problèmes de performances pour Office 365](performance-troubleshooting-plan.md)

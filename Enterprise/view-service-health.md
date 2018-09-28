@@ -1,9 +1,8 @@
 ---
 title: Comment vérifier l’intégrité du service Office 365
-ms.author: kfollis
-author: kfollis
-manager: scotv
-ms.date: 6/15/2018
+ms.author: robmazz
+author: robmazz
+manager: laurawi
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -21,16 +20,16 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Afficher l’état des services Office 365 avant d’appeler la prise en charge pour voir s’il existe une interruption de service active
-ms.openlocfilehash: d01fe8e269ace922ab92cca779d6f8fea8b6802e
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: f4bdc0f4b6faa7a3ae86580596e28e6391167340
+ms.sourcegitcommit: 09985cb7894725289ef1fc8ddd90b569c285c09e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540387"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24976564"
 ---
 # <a name="how-to-check-office-365-service-health"></a>Comment vérifier l’intégrité du service Office 365
 
-Vous pouvez afficher l’intégrité d’Office 365, Yammer, Microsoft Dynamics CRM et services de cloud computing Microsoft Intune sur Office 365 ** d’intégrité du Service ** page dans le centre d’administration. Si vous rencontrez des problèmes avec un service en nuage, vous pouvez vérifier l’intégrité du service pour déterminer s’il s’agit d’un problème connu avec une résolution en cours avant d’appeler le support ou consacrez à la résolution des problèmes de temps. 
+Vous pouvez afficher l’intégrité d’Office 365, Yammer, Microsoft Dynamics CRM et services de cloud computing Microsoft Intune dans la page d’Office 365 **intégrité du Service** dans le centre d’administration. Si vous rencontrez des problèmes avec un service en nuage, vous pouvez vérifier l’intégrité du service pour déterminer s’il s’agit d’un problème connu avec une résolution en cours avant d’appeler le support ou consacrez à la résolution des problèmes de temps. 
   
 ### <a name="how-to-check-service-health"></a>Comment vérifier l’intégrité du service
 
@@ -39,7 +38,7 @@ Vous pouvez afficher l’intégrité d’Office 365, Yammer, Microsoft Dynamics 
     > [!NOTE]
     > Personnes qui sont affectées à l’administrateur global ou le rôle d’administrateur de service peuvent afficher l’intégrité du service. Pour permettre à Exchange, SharePoint et Skype pour les administrateurs d’entreprise afficher l’intégrité du service, ils doivent également être affectés le rôle d’administrateur de Service. 
   
-2. Pour ouvrir l’intégrité du service, dans le centre d’administration, accédez à **la santé** \> **intégrité du Service**, ou cliquez sur le fonctionnement du Service de la carte du tableau de bord d’accueil. La carte de tableau de bord indique s’il existe un problème de service active et les liens vers la page de l’intégrité du service détaillées.
+2. Pour ouvrir l’intégrité du service, dans le centre d’administration, accédez à **la santé** > **intégrité du Service**, ou cliquez sur la **carte d’intégrité de Service** sur le **tableau de bord d’accueil**. La carte de tableau de bord indique s’il existe un problème de service active et les liens vers la page de l’intégrité du service détaillées.
     
     ![Carte de tableau de bord pour l’intégrité du service](media/8ae3de43-7bd5-4ee9-90ed-8b5ba5f9b474.png)
   
@@ -94,16 +93,16 @@ La plupart des services de synchronisation s’affiche comme intègre sans infor
    
 ### <a name="status-definitions"></a>Définitions d’état
 
-| |
 |**État**|**Définition**|
 |:-----|:-----|
-|Étude  <br/> |Nous vous un problème potentiel et rassemblez plus d’informations sur ce qui se passe l’étendue de l’impact.  <br/> |
-|Dégradation du service  <br/> |Nous avons vérifié qu’il existe un problème qui peut-être affecter l’utilisation d’un service ou la fonctionnalité. Vous pouvez voir ce statut si un service ne fonctionne plus lentement que d’habitude, il existe des interruptions intermittentes, ou si une fonctionnalité ne fonctionne pas, par exemple.  <br/> |
-|Interruption de service  <br/> |Vous verrez ce statut si nous déterminons qu’un problème affecte la possibilité pour les utilisateurs d’accéder au service. Dans ce cas, le problème est important et peut être reproduit de façon cohérente.  <br/> |
-|Restauration d’un service  <br/> |La cause du problème a été identifiée, nous savons quelle action corrective effectuer et en mettant le service à un état sain.  <br/> |
-|Récupération d’étendue  <br/> |Cet état indique que les actions correctives sont en cours pour restaurer le service pour la plupart des utilisateurs mais prendront un certain temps pour atteindre tous les systèmes concernés. Vous pouvez également voir ce statut si nous avons apporté de correction pour réduire l’impact pendant que nous attendons pour appliquer un correctif permanent temporaire.  <br/> |
-|Enquête suspendue  <br/> |Si notre analyse détaillée d’un problème potentiel se traduit par une demande pour plus d’informations à partir de clients pour nous permettre d’approfondir, vous voyez ce statut. Si vous devez agir, nous allons vous permettent de savoir quelles données ou des journaux, nous avons besoin.  <br/> |
-|Service restauré  <br/> |Nous avons confirmé que les actions correctives a résolu le problème sous-jacent et le service a été restaurée à un état sain. Pour déterminer la cause du problème, afficher les détails du problème.  <br/> |
+|**Étude** | Nous vous un problème potentiel et rassemblez plus d’informations sur ce qui se passe l’étendue de l’impact. |
+|**Dégradation du service** | Nous avons vérifié qu’il existe un problème qui peut-être affecter l’utilisation d’un service ou la fonctionnalité. Vous pouvez voir ce statut si un service ne fonctionne plus lentement que d’habitude, il existe des interruptions intermittentes, ou si une fonctionnalité ne fonctionne pas, par exemple. |
+|**Interruption de service** | Vous verrez ce statut si nous déterminons qu’un problème affecte la possibilité pour les utilisateurs d’accéder au service. Dans ce cas, le problème est important et peut être reproduit de façon cohérente. |
+|**Restauration d’un service** | La cause du problème a été identifiée, nous savons quelle action corrective effectuer et en mettant le service à un état sain. |
+|**Récupération d’étendue** | Cet état indique que les actions correctives sont en cours pour restaurer le service pour la plupart des utilisateurs mais prendront un certain temps pour atteindre tous les systèmes concernés. Vous pouvez également voir ce statut si nous avons apporté de correction pour réduire l’impact pendant que nous attendons pour appliquer un correctif permanent temporaire. |
+|**Enquête suspendue** | Si notre analyse détaillée d’un problème potentiel se traduit par une demande pour plus d’informations à partir de clients pour nous permettre d’approfondir, vous voyez ce statut. Si vous devez agir, nous allons vous permettent de savoir quelles données ou des journaux, nous avons besoin. |
+|**Service restauré** | Nous avons confirmé que les actions correctives a résolu le problème sous-jacent et le service a été restaurée à un état sain. Pour déterminer la cause du problème, afficher les détails du problème. |
+|**Rapport post-incident publié** | Nous avons publié un rapport d’Incident Post pour un problème spécifique qui inclut des informations de cause racine et suivre les étapes ci-après pour garantir qu'un problème similaire ne se reproduit. |
    
 ## <a name="history"></a>Historique
 

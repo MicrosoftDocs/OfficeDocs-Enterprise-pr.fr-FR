@@ -15,12 +15,12 @@ search.appverid:
 - BSA160
 ms.assetid: dbab2593-dc6a-40f7-adfe-031b9baa620f
 description: Utilisez les tests de diagnostic Page outil SharePoint afin d’analyser vos pages classique contre les meilleures pratiques recommandées pour SharePoint Online.
-ms.openlocfilehash: fb5bb9a333a3b04acfe3d014952eb6406f7dbe31
-ms.sourcegitcommit: 0466a88133a42e2db4245f972cecb371721c9b5d
+ms.openlocfilehash: 0fc2e16867b54e644d00c57fbfc41d4f7d042f88
+ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23849357"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23975162"
 ---
 # <a name="use-the-page-diagnostics-tool-for-sharepoint-online"></a>Utilisez l’outil de diagnostic de la Page pour SharePoint Online
 
@@ -29,20 +29,20 @@ Cet article décrit comment vous pouvez utiliser l’outil de Diagnostic de la P
 Sites d’équipe qui n’ont pas activée la publication ne peut pas faire utiliser CDN, mais toutes les autres règles sont applicables. Publication ajoute une surcharge supplémentaire afin de ne pas activer la publication pour obtenir la fonctionnalité CDN comme il un impact négatif sur les temps de chargement de page.
   
 > [!IMPORTANT]
-> L’outil de diagnostic de la Page ne s’exécutera pas par rapport à des bibliothèques de documents ou des pages de système, comme l’outil est conçu pour passer en revue les pages du site SharePoint. Une page *allitems.aspx* est un système. Si vous essayez d’exécuter l’outil sur une page de système, vous recevrez un message indiquant, « cette application doit s’exécuter uniquement sur les pages SharePoint. »</br> ![Doit s’exécuter sur une page SharePoint](media/34aadfff-1009-496b-9c87-4fc2780e017c.png)</br>Cela n’est pas une erreur dans l’outil car il n’existe aucune valeur pour l’évaluation des bibliothèques ou des pages de système. Accédez à une page de SharePoint non-système pour utiliser l’outil. Si vous souhaitez envoyer des commentaires sur l’outil cliquez sur l’onglet à propos et suivre la [liaison de commentaires](https://go.microsoft.com/fwlink/?linkid=874109). 
+> L’outil de diagnostic de la Page ne s’exécutera pas par rapport à des bibliothèques de documents ou des pages de système, comme l’outil est conçu pour passer en revue les pages du site SharePoint. Une page *allitems.aspx* est un système. Si vous essayez d’exécuter l’outil sur une page de système, vous recevrez un message indiquant, « cette application doit s’exécuter uniquement sur les pages SharePoint. »<br/> ![Doit s’exécuter sur une page SharePoint](media/34aadfff-1009-496b-9c87-4fc2780e017c.png)<br/>Cela n’est pas une erreur dans l’outil car il n’existe aucune valeur pour l’évaluation des bibliothèques ou des pages de système. Accédez à une page de SharePoint non-système pour utiliser l’outil. Si vous souhaitez envoyer des commentaires sur l’outil cliquez sur l’onglet à propos et suivre la [liaison de commentaires](https://go.microsoft.com/fwlink/?linkid=874109). 
   
 ## <a name="install-the-page-diagnostic-tool"></a>Installer l’outil de Diagnostic de la Page
 
 > [!IMPORTANT]
 > Microsoft ne lit pas les données ou les sites Web que vous visitez et nous ne pas capturent des informations personnelles, les informations de site Web ou télécharger avec cet outil. Les seules informations enregistrées par l’outil sont le nom du client, count et si l’option de journalisation de prise en charge a été utilisée lors de l’exécution de l’outil de la règle. Ces informations sont destinées à analyser les problèmes rencontrés par nos clients et de garantir que la fonctionnalité de journalisation de prise en charge n’est pas détournement de Microsoft.
 
-1. À l’aide d’un navigateur Chrome, directement, ouvrez le [lien vers l’outil](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi) ou ouvrez la recherche dans le [Stockage Web du navigateur Chrome](https://chrome.google.com/webstore/search/page%20diagnostics%20for%20sharepoint) et installer l’extension de navigateur. Examinez la politique de confidentialité utilisateur fourni dans la page description dans le magasin. Lorsque vous ajoutez l’outil à votre navigateur, vous verrez ce qui suit Notez des autorisations.</br>![Autorisations du magasin de chrome](media/e9fbcef0-1171-43ac-8ea8-c2b5be1b7925.png)</br>   Cette notification est en place, car une page peut contenir du contenu à partir d’emplacements en dehors de SharePoint, selon les composants WebPart et les personnalisations dans la page. Cela signifie que l’outil lira les requêtes et réponses lorsque l’utilisateur clique sur le bouton Démarrer et uniquement pour l’onglet SharePoint actif où l’outil est en cours d’exécution. Ces informations sont capturées localement par le navigateur web et est disponibles par le biais de l’exportation pour créer un lien JSON dans l’outil. **Les informations ne sont pas envoyées à ou capturées par Microsoft.** (L’outil respecte le Microsoft Privacy stratégie accessible [ici](https://go.microsoft.com/fwlink/p/?linkid=857875).)</br></br>La fonctionnalité « Exporter au format JSON » dans l’outil est également pourquoi l’autorisation « Gestion des téléchargements » est nécessaire. Suivez votre confidentialité de la société avant de partager le fichier JSON en dehors de votre organisation, comme les résultats contiennent des URL et qui peut être classée en tant que PII (informations d’identification personnelle).
+1. À l’aide d’un navigateur Chrome, directement, ouvrez le [lien vers l’outil](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi) ou ouvrez la recherche dans le [Stockage Web du navigateur Chrome](https://chrome.google.com/webstore/search/page%20diagnostics%20for%20sharepoint) et installer l’extension de navigateur. Examinez la politique de confidentialité utilisateur fourni dans la page description dans le magasin. Lorsque vous ajoutez l’outil à votre navigateur, vous verrez ce qui suit Notez des autorisations.<br/>![Autorisations du magasin de chrome](media/e9fbcef0-1171-43ac-8ea8-c2b5be1b7925.png)<br/>   Cette notification est en place, car une page peut contenir du contenu à partir d’emplacements en dehors de SharePoint, selon les composants WebPart et les personnalisations dans la page. Cela signifie que l’outil lira les requêtes et réponses lorsque l’utilisateur clique sur le bouton Démarrer et uniquement pour l’onglet SharePoint actif où l’outil est en cours d’exécution. Ces informations sont capturées localement par le navigateur web et est disponibles par le biais de l’exportation pour créer un lien JSON dans l’outil. **Les informations ne sont pas envoyées à ou capturées par Microsoft.** (L’outil respecte le Microsoft Privacy stratégie accessible [ici](https://go.microsoft.com/fwlink/p/?linkid=857875).)<br/><br/>La fonctionnalité « Exporter au format JSON » dans l’outil est également pourquoi l’autorisation « Gestion des téléchargements » est nécessaire. Suivez votre confidentialité de la société avant de partager le fichier JSON en dehors de votre organisation, comme les résultats contiennent des URL et qui peut être classée en tant que PII (informations d’identification personnelle).
     
 2. (Cette étape est facultative) Si vous souhaitez utiliser l’outil en mode incognito Chrome, accédez à l’extension et cliquez sur **Autoriser dans incognito**.
     
 3. Accédez à la page de publication classique SharePoint sur SharePoint Online que vous souhaitez consulter. Nous avons autorisé pour « chargement différé » des éléments dans les pages ; Par conséquent, l' **outil ne s’arrête pas automatiquement**. Si vous souhaitez arrêter la collection, vous pouvez cliquer sur **Arrêter**. (Il s’agit par défaut pour répondre à tous les scénarios de chargement de page.) Avant de cliquer sur **Arrêter**, assurez-vous que les données de suivi réseau sont terminées. Dans le cas contraire, vous aurez un suivi partiel. En outre, l’outil est une Extension de navigateur et l’ouverture de plusieurs onglets ou windows autorise uniquement une seule instance active de l’outil à exécuter en même temps. Il s’agit d’une limitation des extensions dans le navigateur. 
   
-4. Cliquez sur le logo de l’Extension ![Page Diagnostics pour logo SharePoint](media/60a3e44d-1b59-483f-b50f-d580044d921a.png) pour charger l’outil et vous est présentées avec la fenêtre contextuelle extension suivantes :</br> ![Outil de diagnostic de la page contextuelle](media/b01fa00e-c5f3-4c37-91f2-6edd096cf87e.png)</br>Démarrer et arrêter follow opérations le concept de base de lorsque vous cliquez sur Démarrer que vont et collection va commencer.
+4. Cliquez sur le logo de l’Extension ![Page Diagnostics pour logo SharePoint](media/60a3e44d-1b59-483f-b50f-d580044d921a.png) pour charger l’outil et vous est présentées avec la fenêtre contextuelle extension suivantes :<br/> ![Outil de diagnostic de la page contextuelle](media/b01fa00e-c5f3-4c37-91f2-6edd096cf87e.png)<br/>Démarrer et arrêter follow opérations le concept de base de lorsque vous cliquez sur Démarrer que vont et collection va commencer.
 
 Lisez les sections suivantes pour en savoir plus sur les informations fournies dans l’outil.
 
@@ -62,7 +62,7 @@ Lisez les sections suivantes pour en savoir plus sur les informations fournies d
     
   - L' **URL** (Uniform Resource Locator) est l’adresse web de la page actuelle. 
     
-3. Répertorie les règles de l' [onglet **Diagnostic** ](#how-to-use-the-diagnostic-tab) et si un des sont marqués avec un rouge ![croisée](media/9859ac84-be43-4eae-984c-e0e827f5a228.png), puis il existe des problèmes identifiés dans la page.</br>Chaque règle possède son propre lien « plus d’informations » que vous cliquez sur si un élément est rouge. Qui vous dirige vers les détails de cette règle et comment résoudre le problème.</br>![Diagnostics Red - règle open](media/1598f0f7-3103-4613-8787-dfec6fffd40a.png)
+3. Répertorie les règles de l' [onglet **Diagnostic** ](#how-to-use-the-diagnostic-tab) et si un des sont marqués avec un rouge ![croisée](media/9859ac84-be43-4eae-984c-e0e827f5a228.png), puis il existe des problèmes identifiés dans la page.<br/>Chaque règle possède son propre lien « plus d’informations » que vous cliquez sur si un élément est rouge. Qui vous dirige vers les détails de cette règle et comment résoudre le problème.<br/>![Diagnostics Red - règle open](media/1598f0f7-3103-4613-8787-dfec6fffd40a.png)
 
 4. Un [onglet de **suivi réseau** ](#how-to-use-the-network-trace-tab) fournit plus d’informations sur la page Créer des demandes et réponses.
 
@@ -88,7 +88,7 @@ L’onglet **Trace réseau** fournit des informations détaillées sur les deman
 - Vert : \< 500 ms
 - Jaune : 500-1000ms
 - Rouge : \> 1000ms
-</br>![Suivi du réseau](media/3cfede99-7d31-4041-888d-7bbc275cadc2.png)</br>Dans l’image ci-dessus, l’élément rouge se rapporte à la page par défaut. Il affiche toujours rouge, sauf si la page se charge dans \< 1000ms (inférieur à 1 seconde).
+<br/>![Suivi du réseau](media/3cfede99-7d31-4041-888d-7bbc275cadc2.png)<br/>Dans l’image ci-dessus, l’élément rouge se rapporte à la page par défaut. Il affiche toujours rouge, sauf si la page se charge dans \< 1000ms (inférieur à 1 seconde).
 
 2. **Temps de chargement d’élément de test**. Dans certains cas, il n’y aura aucun indicateur de temps ou la couleur, car les éléments ont déjà été mis en cache par le navigateur. Pour tester correctement, ouvrez la page, désactivez le cache du navigateur, puis cliquez sur **Démarrer** qui s’ensuit un chargement de page « à froid » et le chargement de page initial reflète la valeur true. Puis être comparé à la charge de la page « à chaud » comme qui aideront également à déterminer quels éléments sont en cours mis en cache dans la page. 
     
@@ -107,7 +107,7 @@ Aucune modification n’est visible, sauf que vous serez ainsi averti que vous a
 
 1. Ouvrez l’outil de diagnostic de la Page.
 2. Sur votre clavier, appuyez sur ALT-MAJ-L. **Activer la journalisation au niveau de la prise en charge**s’affiche. 
-3. Activez la case à cocher, puis cliquez sur **Démarrer** pour recharger la page et de générer la journalisation détaillée de la prise en charge à analyser.</br>![Option de prise en charge est activée](media/ddef47de-8593-4b28-9346-eb48ebf6cdab.png)
+3. Activez la case à cocher, puis cliquez sur **Démarrer** pour recharger la page et de générer la journalisation détaillée de la prise en charge à analyser.<br/>![Option de prise en charge est activée](media/ddef47de-8593-4b28-9346-eb48ebf6cdab.png)
   
 Un élément important pour ce est l’ID de corrélation que l’équipe de Support utilisera ensuite ce numéro pour extraire les informations nécessaires. Copiez l’ID de corrélation (en haut de l’outil de diagnostic de la Page) et qui fournissent pour prendre en charge comme ils ne peuvent pas effectuer le travail requis sans l’ID terminée.
     

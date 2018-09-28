@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 description: Hybride modernes d’authentification (zone), est une méthode de gestion des identités qui offre le plus sécurisé authentification et autorisation utilisateur et est disponible pour les déploiements de hybride Exchange server sur site.
-ms.openlocfilehash: 871f03b8e776c694f7378f6905259d21516f7326
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: cfacb5661ddf4a2ac61054582f0c2043d8fe7a5a
+ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540479"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23975192"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Comment configurer Exchange Server en local pour utiliser l’authentification moderne hybride
 
@@ -81,7 +81,7 @@ Vérifiez que les URL que les clients peuvent se connecter à sont répertoriée
     
 Prendre note des (et la capture d’écran pour comparaison ultérieure) le résultat de cette commande, qui doit inclure un https:// * découverte automatique. *votre_domaine* .com * et URL https:// *mail.yourdomain.com* mais se composent principalement des noms principaux de service qui commencent par 00000002-0000-0ff1-ce00-000000000000 /. Si l’URL https:// votre sur site qui ne figurent pas nous vous devrez ajouter ces enregistrements spécifiques à cette liste. 
   
-3. Si vous ne voyez pas vos enregistrements MAPI/HTTP, EWS, ActiveSync, carnet d’adresses et de découverte automatique internes et externes dans cette liste, vous devez les ajouter à l’aide de la commande ci-dessous (URL de l’exemple sont '`mail.corp.contoso.com`'et'`owa.contoso.com`», mais vous avez **Remplacer les exemples d’URL avec vos propres** ) : </br>
+3. Si vous ne voyez pas vos enregistrements MAPI/HTTP, EWS, ActiveSync, carnet d’adresses et de découverte automatique internes et externes dans cette liste, vous devez les ajouter à l’aide de la commande ci-dessous (URL de l’exemple sont '`mail.corp.contoso.com`'et'`owa.contoso.com`», mais vous avez **Remplacer les exemples d’URL avec vos propres** ) : <br/>
 ```
 - $x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000   
 - $x.ServicePrincipalnames.Add("https://mail.corp.contoso.com/")

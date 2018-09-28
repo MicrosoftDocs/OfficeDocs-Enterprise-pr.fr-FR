@@ -12,12 +12,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Les déplacements de données sont des opérations principales n'ayant que peu d'impact sur les utilisateurs finals. Aucune action de votre part n'est requise lorsque Microsoft déplace chaque service et les données associées pour votre client vers une nouvelle zone géographique de centres de données. Le transfert de données et la validation se déroulent en arrière-plan à l'avance, et n'ont qu'une incidence minimale sur les utilisateurs.
-ms.openlocfilehash: 7b012a8cbf1eb3756cc5b06660e414a327c2ae76
-ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
+ms.openlocfilehash: 0c715e80acbac126626c73a75fac1bbc809367e2
+ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839602"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23975172"
 ---
 # <a name="during-and-after-your-data-move"></a>Pendant et après le déplacement de vos données
 
@@ -96,8 +96,8 @@ Le tableau suivant vous montre comment accéder aux eDiscovery et l’audit par 
   
 ||**Centre d'administration Exchange**|**Sécurité &amp; centre de conformité**|
 |:-----|:-----|:-----|
-|eDiscovery  <br/> | Accédez à https://portal.office.com, puis cliquez sur la vignette de **l’administrateur** . </br> Cliquez sur **Admin centres** \> **Exchange**. </br> Sélectionnez **gestion de la conformité** \> **archives permanentes &amp; contenir**. | Accédez à https://portal.office.com, puis cliquez sur la vignette d’administration. </br> Cliquez sur **Admin centres** \> **sécurité &amp; conformité**. </br> Sélectionnez **recherche &amp; enquête** \> **eDiscovery**.|
-|Audit  <br/> | Accédez à https://portal.office.com, puis cliquez sur la vignette de **l’administrateur** . </br> Cliquez sur **Admin centres** \> **Exchange**. Sélectionnez **gestion de la conformité** \> **l’audit**. | Accédez à https://portal.office.com, puis cliquez sur la vignette d’administration. </br> Cliquez sur **Admin centres** \> **sécurité &amp; conformité**. </br> Sélectionnez **recherche &amp; enquête** \> **recherche des journaux d’Audit**. |
+|eDiscovery  <br/> | Accédez à https://portal.office.com, puis cliquez sur la vignette de **l’administrateur** . <br/> Cliquez sur **Admin centres** \> **Exchange**. <br/> Sélectionnez **gestion de la conformité** \> **archives permanentes &amp; contenir**. | Accédez à https://portal.office.com, puis cliquez sur la vignette d’administration. <br/> Cliquez sur **Admin centres** \> **sécurité &amp; conformité**. <br/> Sélectionnez **recherche &amp; enquête** \> **eDiscovery**.|
+|Audit  <br/> | Accédez à https://portal.office.com, puis cliquez sur la vignette de **l’administrateur** . <br/> Cliquez sur **Admin centres** \> **Exchange**. Sélectionnez **gestion de la conformité** \> **l’audit**. | Accédez à https://portal.office.com, puis cliquez sur la vignette d’administration. <br/> Cliquez sur **Admin centres** \> **sécurité &amp; conformité**. <br/> Sélectionnez **recherche &amp; enquête** \> **recherche des journaux d’Audit**. |
    
 ### <a name="mailbox-migration"></a>Migration des boîtes aux lettres
 

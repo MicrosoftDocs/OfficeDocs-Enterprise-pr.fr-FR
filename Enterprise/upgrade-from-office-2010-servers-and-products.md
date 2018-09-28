@@ -21,12 +21,12 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Prise en charge se termine plus tôt pour les serveurs Office 2010 et les applications clientes et accords de support personnalisés ne sont pas disponibles. Utilisez cet article pour commencer à planifier votre mise à niveau maintenant.
-ms.openlocfilehash: 97a21b3dc715fa90113491be216a8f2da45678e5
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: d358cfc2e9fbc0ecc829995698b32801e4c55c9f
+ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915179"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23975152"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Ressources pour vous aider à mettre à niveau à partir d’Office 2010 des serveurs et des clients
 
@@ -39,8 +39,8 @@ Si vous utilisez des produits Office 2010 et services, est maintenant le moment 
 |Office 2010 (y compris Word 2010, Excel 2010, PowerPoint 2010 et Outlook 2010)  <br/> |[Fin d’Office 2010 de prise en charge de la feuille de route](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) <br/> |
 |Exchange Server 2010  <br/> |[Exchange 2010 fin de la feuille de route de prise en charge](exchange-2010-end-of-support.md) <br/> |
 |SharePoint 2010 ou SharePoint Server 2010  <br/> |[Mise à niveau de SharePoint 2010](upgrade-from-sharepoint-2010.md) <br/> |
-|Project Server 2010 </br> | [Planification de Project Server et Project Online](https://docs.microsoft.com/project/planning-project-server-and-project-online-for-technical-decision-makers) </br> |
-|Lync Server 2010 </br> | [Planifier la mise à niveau vers Skype pour Business Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) </br> |
+|Project Server 2010 <br/> | [Planification de Project Server et Project Online](https://docs.microsoft.com/project/planning-project-server-and-project-online-for-technical-decision-makers) <br/> |
+|Lync Server 2010 <br/> | [Planifier la mise à niveau vers Skype pour Business Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) <br/> |
     
 ## <a name="what-if-im-a-home-user-what-do-i-do"></a>Que se passe-t-il si je suis un utilisateur ? Que dois-je faire ?
 

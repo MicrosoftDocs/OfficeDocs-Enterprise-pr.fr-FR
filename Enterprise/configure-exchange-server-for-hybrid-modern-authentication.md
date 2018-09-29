@@ -3,7 +3,7 @@ title: Comment configurer Exchange Server en local pour utiliser l’authentific
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 3/23/2018
+ms.date: 09/28/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 description: Hybride modernes d’authentification (zone), est une méthode de gestion des identités qui offre le plus sécurisé authentification et autorisation utilisateur et est disponible pour les déploiements de hybride Exchange server sur site.
-ms.openlocfilehash: cfacb5661ddf4a2ac61054582f0c2043d8fe7a5a
-ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
+ms.openlocfilehash: 4267eaff8dfce71461f230310141a98be8a39e80
+ms.sourcegitcommit: 9f921c0cae9a5dd4e66ec1a1261cb88284984a91
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23975192"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "25347604"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Comment configurer Exchange Server en local pour utiliser l’authentification moderne hybride
 
@@ -63,13 +63,12 @@ Exécutez les commandes qu’attribuer à votre site web local des URL de servic
   
 Tout d’abord, rassemblez toutes les URL que vous devez ajouter dans DAS. Exécutez ces commandes locale :
   
-- Get-MapiVirtualDirectory | Serveur FL,\*url\*
-    
-- Get-WebServicesVirtualDirectory | Serveur FL,\*url\*
-    
-- **Get-ActiveSyncVirtualDirectory | Serveur FL,\*url\***
-    
-- Get-OABVirtualDirectory | Serveur FL,\*url\*
+```powershell
+Get-MapiVirtualDirectory | FL server,*url*
+Get-WebServicesVirtualDirectory | FL server,*url*
+Get-ActiveSyncVirtualDirectory | FL server,*url*
+Get-OABVirtualDirectory | FL server,*url*
+```
     
 Vérifiez que les URL que les clients peuvent se connecter à sont répertoriées sous les noms principaux de service HTTPS dans DAS.
   
@@ -77,17 +76,19 @@ Vérifiez que les URL que les clients peuvent se connecter à sont répertoriée
     
 2. Pour Exchange URL associées, tapez la commande suivante :
     
-- Get-MsolServicePrincipal - AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 | Sélectionnez - ExpandProperty ServicePrincipalNames
-    
-Prendre note des (et la capture d’écran pour comparaison ultérieure) le résultat de cette commande, qui doit inclure un https:// * découverte automatique. *votre_domaine* .com * et URL https:// *mail.yourdomain.com* mais se composent principalement des noms principaux de service qui commencent par 00000002-0000-0ff1-ce00-000000000000 /. Si l’URL https:// votre sur site qui ne figurent pas nous vous devrez ajouter ces enregistrements spécifiques à cette liste. 
+```powershell
+Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 | select -ExpandProperty ServicePrincipalNames
+```
+
+Prendre note des (et la capture d’écran pour comparaison ultérieure) le résultat de cette commande, qui doit contenir un https:// *autodiscover.yourdomain.com* et l’URL de *mail.yourdomain.com* https://, mais se composent principalement des noms principaux de service commençant par 00000002-0000-0ff1-CE00-000000000000 /. Si l’URL https:// votre sur site qui ne figurent pas nous vous devrez ajouter ces enregistrements spécifiques à cette liste. 
   
 3. Si vous ne voyez pas vos enregistrements MAPI/HTTP, EWS, ActiveSync, carnet d’adresses et de découverte automatique internes et externes dans cette liste, vous devez les ajouter à l’aide de la commande ci-dessous (URL de l’exemple sont '`mail.corp.contoso.com`'et'`owa.contoso.com`», mais vous avez **Remplacer les exemples d’URL avec vos propres** ) : <br/>
-```
-- $x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000   
-- $x.ServicePrincipalnames.Add("https://mail.corp.contoso.com/")
-- $x.ServicePrincipalnames.Add("https://owa.contoso.com/")
-- $x.ServicePrincipalnames.Add("https://eas.contoso.com/")
-- Set-MSOLServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
+```powershell
+$x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000   
+$x.ServicePrincipalnames.Add("https://mail.corp.contoso.com/")
+$x.ServicePrincipalnames.Add("https://owa.contoso.com/")
+$x.ServicePrincipalnames.Add("https://eas.contoso.com/")
+Set-MSOLServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
 ```
  
 4. Vérifiez que vos nouveaux enregistrements ont été ajoutés à exécuter à nouveau la commande Get-MsolServicePrincipal à l’étape 2 et la recherche par le biais de la sortie. Comparez la liste / capture d’écran d’avant à la nouvelle liste des noms principaux de service (vous pouvez également capture d’écran de la nouvelle liste de vos enregistrements). Si vous avez réussi, vous verrez les deux nouvelles URL dans la liste. Allez dans notre exemple, la liste des noms principaux de service système incluent désormais les URL spécifiques `https://mail.corp.contoso.com` et `https://owa.contoso.com`. 
@@ -96,28 +97,27 @@ Prendre note des (et la capture d’écran pour comparaison ultérieure) le rés
 
 Vérifiez maintenant OAuth est correctement activé dans Exchange sur tous les répertoires virtuels Outlook peut utiliser en exécutant les commandes suivantes :
 
-```
-Get-MapiVirtualDirectory | FL server,\*url\*,\*auth\* 
-Get-WebServicesVirtualDirectory | FL server,\*url\*,\*oauth\*
-Get-OABVirtualDirectory | FL server,\*url\*,\*oauth\*
-Get-AutoDiscoverVirtualDirectory | FL server,\*oauth\*
+```powershell
+Get-MapiVirtualDirectory | FL server,*url*,*auth* 
+Get-WebServicesVirtualDirectory | FL server,*url*,*oauth*
+Get-OABVirtualDirectory | FL server,*url*,*oauth*
+Get-AutoDiscoverVirtualDirectory | FL server,*oauth*
 ```
 
 Vérification de la sortie pour vous assurer que **OAuth** est activée sur chacun de ces VDirs, il doit ressembler à ceci (et l’essentiel à examiner est « OAuth ») ; 
-  
- **[PS] C:\Windows\System32\>Get-MapiVirtualDirectory | serveur fl,\*url\*,\*auth\***
-  
- **Serveur : EX1**
-  
- **InternalUrl :`https://mail.contoso.com/mapi`**
-  
- **ExternalUrl :`https://mail.contoso.com/mapi`**
-  
- **IISAuthenticationMethods : {Ntlm, OAuth, négocier}**
-  
- **InternalAuthenticationMethods : {Ntlm, OAuth, négocier}**
-  
- **ExternalAuthenticationMethods : {Ntlm, OAuth, négocier}**
+
+```powershell
+Get-MapiVirtualDirectory | fl server,*url*,*auth*
+```
+
+```
+Server                        : EX1
+InternalUrl                   : https://mail.contoso.com/mapi
+ExternalUrl                   : https://mail.contoso.com/mapi
+IISAuthenticationMethods      : {Ntlm, OAuth, Negotiate}
+InternalAuthenticationMethods : {Ntlm, OAuth, Negotiate}
+ExternalAuthenticationMethods : {Ntlm, OAuth, Negotiate}
+```
   
 Si OAuth est manquant à partir de n’importe quel serveur et n’importe lequel des quatre répertoires virtuels que vous souhaitez ajouter à l’aide des commandes avant de continuer.
   
@@ -125,8 +125,10 @@ Si OAuth est manquant à partir de n’importe quel serveur et n’importe leque
 
 Revenez à locale Exchange Management Shell pour cette dernière commande. Vous pouvez maintenant valider que votre site dispose d’une entrée pour le fournisseur d’authentification evoSTS :
   
-`Get-AuthServer | where {$_.Name -eq "EvoSts"}`
-    
+```powershell
+Get-AuthServer | where {$_.Name -eq "EvoSts"}
+```
+
 La sortie doit s’afficher une AuthServer de l’EvoSts nom et l’état « Activé » doit avoir la valeur True. Si vous ne voyez pas cela, vous devez téléchargez et exécutez la version la plus récente de l’Assistant Configuration hybride.
   
  **Important** Si vous exécutez Exchange 2010 dans votre environnement, le fournisseur d’authentification EvoSTS n’est créé. 
@@ -135,7 +137,7 @@ La sortie doit s’afficher une AuthServer de l’EvoSts nom et l’état « Ac
 
 Exécutez la commande suivante dans Exchange Management Shell, locale :
 
-```
+```powershell
 Set-AuthServer -Identity EvoSTS -IsDefaultAuthorizationEndpoint $true  
 Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 ```

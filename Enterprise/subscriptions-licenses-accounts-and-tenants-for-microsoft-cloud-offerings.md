@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: 'Résumé : Comprenez les relations des organisations, des abonnements, des licences, des comptes d’utilisateur et des clients au sein des offres de cloud de Microsoft.'
-ms.openlocfilehash: ebddd97afb2c45821cd25eae5e8124459720df0b
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 5f434fef42777034d32970dd55e15be35b76961e
+ms.sourcegitcommit: d0f1f34b1702e304fec85ca72f1f660e9b328dd5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915199"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "24022073"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Abonnements, licences, comptes et clients des offres de cloud de Microsoft
 
@@ -180,7 +180,3 @@ Si vous avez obtenu séparément des abonnements Azure et Office 365 et que vou
   
 [Solutions hybrides](hybrid-solutions.md)
   
-[Abonnements, licences et comptes d’utilisateur de Contoso Corporation](subscriptions-licenses-and-user-accounts-for-the-contoso-corporation.md)
-
-
-

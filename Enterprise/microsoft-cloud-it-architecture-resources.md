@@ -17,12 +17,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: 'Résumé : Découvrez comment utiliser les plateformes et les services cloud Microsoft. Consultez notre feuille de route Enterprise Cloud, explorez notre série sur les architectures cloud et bien plus encore.'
-ms.openlocfilehash: f6f390a493efe4f4155655cc6116e9fdd7ec5a9f
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 32d56908ebed809b0a1acb327e42eea559f6fe82
+ms.sourcegitcommit: d0f1f34b1702e304fec85ca72f1f660e9b328dd5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915739"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "24022093"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Ressources relatives à l’architecture informatique du cloud Microsoft
 
@@ -40,7 +40,6 @@ Ces affiches et ces outils relatifs à l’architecture fournissent des informat
     - [Mobilité et sécurité Microsoft pour les architectes d’entreprise](microsoft-cloud-it-architecture-resources.md#mobility)
     - [Stockage cloud Microsoft pour les architectes d'entreprise](microsoft-cloud-it-architecture-resources.md#storage)
     - [Cloud hybride Microsoft pour les architectes d'entreprise](microsoft-cloud-it-architecture-resources.md#hybrid)
-    - [Contoso dans le cloud de Microsoft](microsoft-cloud-it-architecture-resources.md#contoso)
     - [Attaques courantes et fonctionnalités Microsoft pour protéger votre organisation](#common-attacks-and-microsoft-capabilities-that-protect-your-organization)
     
 - **[Série de solutions Office 365 Entreprise](microsoft-cloud-it-architecture-resources.md#BKMK_o365solutions)** :
@@ -132,22 +131,13 @@ Tout ce que les architectes informatiques doivent savoir sur le cloud hybride po
 |:-----|:-----|
 |[![Image miniature représentant le modèle du cloud hybride Microsoft](media/9989c71e-f6a0-4dbe-906c-43e67b3ce537.png)          ](https://www.microsoft.com/download/details.aspx?id=54424) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842082)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083)           \| [Article](https://technet.microsoft.com/library/mt750500.aspx) <br/>[Autres langues](https://www.microsoft.com/download/details.aspx?id=54424) <br/> | Ce modèle contient les pages suivantes : <ul><li> **Vue d'ensemble du cloud hybride** Offres du cloud Microsoft (SaaS, Azure PaaS et Azure IaaS) et leurs éléments communs. </li><li> **Architecture des scénarios du cloud hybride de Microsoft** Diagramme d'architecture du cloud hybride pour les offres du cloud Microsoft, affichant les couches communes de l'infrastructure locale, le réseau et l'identité. </li><li> **Scénarios de cloud hybride pour Microsoft SaaS (Office 365)** Architecture de scénario SaaS hybride et descriptions des configurations hybrides clés pour Skype Entreprise, SharePoint Server et Exchange Server. </li><li> **Scénarios de cloud hybride pour Azure PaaS** Architecture de scénario hybride pour Azure PaaS, description de l'application hybride Azure PaaS accompagnée d'un exemple et description de SQL Server 2016 Stretch Database. </li><li> **Scénarios de cloud hybride pour Azure IaaS** Architecture de scénario hybride pour Azure IaaS et description d'une application métier hébergée dans Azure IaaS. </li></ul><br/>|
    
-<a name="contoso"> </a>
-### <a name="contoso-in-the-microsoft-cloud"></a>Contoso dans le cloud de Microsoft
-
-Comment une multinationale fictive mais représentative a mis en œuvre des offres de cloud Microsoft, notamment Office 365, Azure, Dynamics 365 et Intune.
-  
-|**Élément**|**Description**|
-|:-----|:-----|
-|[![Image miniature de l’affiche de Contoso dans Microsoft Cloud.](media/63077617-b8f2-45b6-b772-bad6cd98721d.png)          ](https://www.microsoft.com/download/details.aspx?id=54427) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842085)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842086)           \| [Article](https://technet.microsoft.com/library/mt775341.aspx) <br/>[Autres langues](https://www.microsoft.com/download/details.aspx?id=54427) <br/> |Ce modèle contient : <ul><li>Présentation de la société Contoso Corporation </li><li>Infrastructure et besoins informatiques de Contoso </li><li>Mise en réseau cloud pour Contoso</li><li>Identité cloud pour Contoso</li><li>Abonnements, licences et comptes d’utilisateur Contoso</li><li>Sécurité cloud pour Contoso</li><li>Scénarios cloud d’entreprise pour Contoso</li></ul> <br/>|
-   
 <a name="attacks"> </a>
 ### <a name="common-attacks-and-microsoft-capabilities-that-protect-your-organization"></a>Attaques courantes et fonctionnalités Microsoft pour protéger votre organisation
 Découvrez les cyberattaques les plus courantes et comment Microsoft peut aider votre organisation à chaque étape d’une attaque. 
 
 |**Élément**|**Description**|
 |:-----|:-----|
-|[![Image miniature de l’affiche Attaques courantes.](media/common%20attacks-thumb3.png) ](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) </br> | Cette affiche illustre le chemin des attaques courantes et décrit les fonctionnalités qui aident à arrêter les pirates à chaque étape d’une attaque. <br/>|
+|[![Image miniature de l’affiche Attaques courantes.](media/common%20attacks-thumb3.png) ](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) <br/> | Cette affiche illustre le chemin des attaques courantes et décrit les fonctionnalités qui aident à arrêter les pirates à chaque étape d’une attaque. <br/>|
 
 
 <a name="santa"> </a>

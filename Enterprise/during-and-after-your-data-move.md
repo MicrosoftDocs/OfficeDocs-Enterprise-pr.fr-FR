@@ -3,7 +3,7 @@ title: Pendant et après le déplacement de vos données
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 09/05/2018
+ms.date: 10/02/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Les déplacements de données sont des opérations principales n'ayant que peu d'impact sur les utilisateurs finals. Aucune action de votre part n'est requise lorsque Microsoft déplace chaque service et les données associées pour votre client vers une nouvelle zone géographique de centres de données. Le transfert de données et la validation se déroulent en arrière-plan à l'avance, et n'ont qu'une incidence minimale sur les utilisateurs.
-ms.openlocfilehash: 0c715e80acbac126626c73a75fac1bbc809367e2
-ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
+ms.openlocfilehash: 6975a2ea4a1f2b2ebabe5f64b12ae58657180903
+ms.sourcegitcommit: b745d570fd6691606d226f6232cfaafd2d875a2d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23975172"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "25361502"
 ---
 # <a name="during-and-after-your-data-move"></a>Pendant et après le déplacement de vos données
 
@@ -34,7 +34,7 @@ Surveillez le centre de messages Office 365 dans l'attente de la confirmation de
 |Australie, Nouvelle-Zélande, Fidji  <br/> |31 octobre 2017  <br/> |
 |Japon  <br/> |31 octobre 2018  <br/> |
 |Inde  <br/> |31 octobre 2018  <br/> |
-|Canada  <br/> |31 octobre 2018  <br/> |
+|Canada  <br/> |30 juin 2019  <br/> |
 |Corée du Sud  <br/> |31 octobre 2018  <br/> |
 |Royaume-Uni  <br/> |15 septembre 2019  <br/> |
 |France  <br/> |15 septembre 2020  <br/> |

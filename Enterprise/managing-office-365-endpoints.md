@@ -1,5 +1,5 @@
 ---
-title: Gestion des points de terminaison Office 365
+title: Gestion des points de terminaison Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,14 +15,14 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Certains réseaux est conçus pour restreindre l’accès à internet, afin d’ordinateurs sur des réseaux tels que ceux-ci peuvent accéder à Office 365, les administrateurs réseau et le proxy doivent gérer la liste des noms de domaine complets, URL, et les adresses IP qui constituent la liste des points de terminaison Office 365. Ces doivent figurer dans les règles de pare-feu ou de proxy et PAC fichiers pour vous assurer de demandes réseau sont en mesure d’atteindre Office 365.
-ms.openlocfilehash: 42613b45b8395c3f81064bbc2171866bc922a657
-ms.sourcegitcommit: ca4d3ec34300d7d39f1a42dc6f29a34915de5c87
+ms.openlocfilehash: a1a658ff04bc7306cb953477798d3e32d894d695
+ms.sourcegitcommit: 854653f927c9515024a1c9e0a86fd5f2fadb92f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "23831919"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "25359496"
 ---
-# <a name="managing-office-365-endpoints"></a>Gestion des points de terminaison Office 365
+# <a name="managing-office-365-endpoints"></a>Gestion des points de terminaison Office 365
 
 ## <a name="office-365-network-connectivity"></a>Connectivité du réseau Office 365
 
@@ -42,7 +42,7 @@ ms.locfileid: "23831919"
   
 ## <a name="update-your-firewalls-outbound-allow-lists"></a>Mise à jour du pare-feu de le sortant autoriser les listes
 
-Vous pouvez optimiser votre réseau par l’envoi de que tous les approuvés demandes du réseau Office 365 directement via votre pare-feu, en ignorant inspection de niveau tous les paquets supplémentaires ou traitement. Cela réduit la baisse des performances de la latence et vos besoins en capacité de périmètre. Pour choisir le réseau qui demande à approuver le plus simple consiste à utiliser nos fichiers PAC prédéfinis dans l’onglet **Proxies** ci-dessus. 
+Vous pouvez optimiser votre réseau par l’envoi de que tous les approuvés demandes du réseau Office 365 directement via votre pare-feu, en ignorant inspection de niveau tous les paquets supplémentaires ou traitement. Cela réduit la baisse des performances de la latence et vos besoins en capacité de périmètre. Pour choisir le réseau qui demande à approuver le plus simple consiste à utiliser nos [fichiers PAC prédéfinis](managing-office-365-endpoints.md#pacfiles). 
   
 Si votre pare-feu bloque le trafic sortant, vous souhaiterez garantir l’adresse IP et noms de domaine complets répertorié comme **requis** dans ce [fichier XML](https://go.microsoft.com/fwlink/?LinkId=533185) se trouvent sur la liste verte. Reconnaître que tous les services nécessitent l’utilisation de certains services tiers 3e. Nous ne pas fournir des adresses IP pour ces services tiers 3e tels que les fournisseurs de certificats fournisseurs, les réseaux de distribution de contenu, DNS et ainsi de suite. Pour toutes les fonctionnalités Office 365, vous devez être en mesure d’atteindre toutes les destinations demandées par Office 365, quelle que soit la quantité nous publier des informations sur la destination. 
   
@@ -888,11 +888,11 @@ N’oubliez pas de blocage de l’accès aux services Microsoft consommateur uni
   
 ## <a name="related-topics"></a>Voir aussi
 
-[Adresse IP de Office 365 et URL du service Web](office-365-ip-web-service.md)
+[Service web d’URL et d’adresses IP Office 365](office-365-ip-web-service.md)
 
-[Plages IP du centre de données Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653)
+[Plages d’adresses IP du centre de données Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653)
   
-[Espace d’adressage IP publique de Microsoft](https://www.microsoft.com/download/details.aspx?id=53602)
+[Espace d’adresse IP public de Microsoft](https://www.microsoft.com/download/details.aspx?id=53602)
   
 [Exigences relatives à l’infrastructure réseau pour Microsoft Intune](https://docs.microsoft.com/intune/get-started/network-infrastructure-requirements-for-microsoft-intune)
   

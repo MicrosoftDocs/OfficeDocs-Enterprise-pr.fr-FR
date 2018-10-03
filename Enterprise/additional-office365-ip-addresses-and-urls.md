@@ -3,7 +3,7 @@ title: Autres URL et adresses IP Office 365 non incluses dans les services web
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 8/22/2018
+ms.date: 9/13/2018
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Résumé : Les nouveaux services web de point de terminaison n’incluent pas quelques points de terminaison pour des scénarios spécifiques.'
 hideEdit: true
-ms.openlocfilehash: b40fb1a40d2a815bfc6e02fa11204d10dde2af73
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 4711f9b9560b0fab6d18700fcf3e933150861946
+ms.sourcegitcommit: 0f98c342f80ffa21ec35bbf4ae5619b5e3271da5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22600508"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23977349"
 ---
 # <a name="additional-office-365-ip-addresses-and-urls-not-included-in-the-web-services"></a>Autres URL et adresses IP Office 365 non incluses dans les services web
 
@@ -52,10 +52,11 @@ Certains points de terminaison réseau ont été publiés précédemment et n’
 | 6  | Fonctions de coexistence [Exchange hybride](https://docs.microsoft.com/exchange/exchange-deployment-assistant) telles que le partage de disponibilité. | Serveur Exchange client local | Trafic serveur entrant |
 | 7  | Authentification de proxy [Exchange hybride](https://docs.microsoft.com/exchange/exchange-deployment-assistant) | STS local client | Trafic serveur entrant |
 | 8  | Utilisé pour configurer [Exchange hybride](https://docs.microsoft.com/exchange/exchange-deployment-assistant), à l’aide de l’Assistant Configuration d’Exchange hybride. <br> Remarque : ces points de terminaison sont uniquement nécessaires pour configurer Exchange hybride  | ```domains.live.com``` sur les ports TCP 80 et 443, obligatoire uniquement pour l’Assistant Configuration hybride Exchange 2010 SP3. | Trafic serveur sortant uniquement |
-| 9  | **Noms de domaine complets d’authentification et d’identité** <br> Le nom de domaine complet ```secure.aadcdn.microsoftonline-p.com``` doit apparaître dans la zone de sites Internet Explorer ou Edge approuvés de votre client pour fonctionner. |  | Sites de confiance |
-| 10  |  **Noms de domaine complets Microsoft Teams** <br> Si vous utilisez Internet Explorer ou Microsoft Edge, vous devez activer les cookies propriétaires et tiers, et ajouter les noms de domaine complets des équipes à vos sites de confiance. Cela s’ajoute aux noms de domaine complets, aux CDN et à la télémétrie répertoriés ci-dessus. Reportez-vous à la rubrique [Problèmes connus pour Microsoft Teams](https://docs.microsoft.com/microsoftteams/known-issues) pour plus d’informations. |  | Sites de confiance |
-| 11  |  **Noms de domaine complets Sharepoint Online et OneDrive Entreprise** <br> Tous les noms de domaine complets « .sharepoint.com » comportant « \<tenant> » doivent se trouver dans la zone de sites Internet Explorer ou Edge de confiance de votre client pour fonctionner. Outre les noms de domaine complets, les CDN et la télémétrie répertoriés ci-dessus, vous devez également ajouter ces points de terminaison. |  | Sites de confiance |
-| 12  | **Yammer**  <br> Yammer est uniquement disponible dans le navigateur et nécessite que l’utilisateur soit authentifié via un proxy. Tous les FQDN Yammer doivent se trouver dans la zone de sites Internet Explorer ou Edge de confiance de votre client pour fonctionner. |  | Sites de confiance |
+| 9  | Le service de détection automatique est utilisé dans des scénarios [Exchange hybride](https://docs.microsoft.com/exchange/exchange-deployment-assistant) avec [l’authentification moderne hybride avec Outlook pour iOS et Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth). <BR> <BR> ```*.acompli.net``` <BR> ```*.outlookmobile.us``` <BR> <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> | Serveur Exchange client local sur TCP 443 | Trafic serveur entrant |
+| 10  | **Noms de domaine complets d’authentification et d’identité** <br> Le nom de domaine complet ```secure.aadcdn.microsoftonline-p.com``` doit apparaître dans la zone de sites Internet Explorer ou Edge approuvés de votre client pour fonctionner. |  | Sites de confiance |
+| 11  |  **Noms de domaine complets Microsoft Teams** <br> Si vous utilisez Internet Explorer ou Microsoft Edge, vous devez activer les cookies propriétaires et tiers, et ajouter les noms de domaine complets des équipes à vos sites de confiance. Cela s’ajoute aux noms de domaine complets, aux CDN et à la télémétrie répertoriés ci-dessus. Reportez-vous à la rubrique [Problèmes connus pour Microsoft Teams](https://docs.microsoft.com/microsoftteams/known-issues) pour plus d’informations. |  | Sites de confiance |
+| 12  |  **Noms de domaine complets Sharepoint Online et OneDrive Entreprise** <br> Tous les noms de domaine complets « .sharepoint.com » comportant « \<tenant> » doivent se trouver dans la zone de sites Internet Explorer ou Edge de confiance de votre client pour fonctionner. Outre les noms de domaine complets, les CDN et la télémétrie répertoriés ci-dessus, vous devez également ajouter ces points de terminaison. |  | Sites de confiance |
+| 13  | **Yammer**  <br> Yammer est uniquement disponible dans le navigateur et nécessite que l’utilisateur soit authentifié via un proxy. Tous les FQDN Yammer doivent se trouver dans la zone de sites Internet Explorer ou Edge de confiance de votre client pour fonctionner. |  | Sites de confiance |
 
 ## <a name="related-topics"></a>Voir aussi
 

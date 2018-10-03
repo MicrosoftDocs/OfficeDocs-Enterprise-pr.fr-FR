@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Pour vous aider à mieux identifier et différencier le trafic réseau Office 365, un nouveau service web publie les points de terminaison Office 365, afin de vous permettre d’évaluer, de configurer et de rester informé plus facilement des modifications. Ce nouveau service web remplace les fichiers téléchargeables XML actuellement disponibles.
-ms.openlocfilehash: 21222f4c1c2010517bdfe1a425b47c8f4fde8b0e
-ms.sourcegitcommit: ca4d3ec34300d7d39f1a42dc6f29a34915de5c87
+ms.openlocfilehash: 2b5763b9f8f08f2cc619331dac70743474a8515b
+ms.sourcegitcommit: d67e73f6cdc1e8d220d90a239e23e218f24528d2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "23831899"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "24961823"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>**Service web d’URL et d’adresses IP Office 365**
 
@@ -183,7 +183,7 @@ Le résultat de la méthode web de points de terminaison est un tableau d’enre
 - tcpPorts : ports TCP pour l’ensemble de points de terminaison. Tous les éléments de ports sont au format de liste de ports séparés par des virgules ou de plages de port séparées par un tiret (-). Les ports s’appliquent à toutes les adresses IP et toutes les URL dans cet ensemble de points de terminaison pour cette catégorie. Omis si vide.
 - udpPorts : ports UDP pour les plages d’adresses IP dans cet ensemble de points de terminaison. Omis si vide.
 - ips : plages d’adresses IP associées à cet ensemble de points de terminaison tel qu’associées aux ports TCP ou UDP répertoriés. Un tableau JSON des plages d’adresses IP. Omis si vide.
-- category : catégorie de connectivité pour l’ensemble de points de terminaison. Les valeurs valides sont Optimize, Allow, et Default. Obligatoire.
+- category : catégorie de connectivité pour le jeu de points de terminaison. Les valeurs valides sont Optimize, Allow et Default. Si vous utilisez les données du point de terminaison pour rechercher la catégorie d’une adresse IP ou d’une URL, il est possible que votre requête puisse renvoyer plusieurs catégories. Voici quelques raisons pour lesquelles cela peut se produire. Dans ces cas, vous devez suivre les recommandations pour la catégorie ayant la priorité la plus élevée. Par exemple, si le point de terminaison s’affiche dans Optimize et Allow, vous devez suivre la configuration requise pour Optimize. Obligatoire. 
 - expressRoute : True ou False si cet ensemble de points de terminaison est routé sur ExpressRoute.
 - required : True si cet ensemble de points de terminaison est obligatoire pour disposer d’une connectivité et prendre en charge Office 365. False si cet ensemble de points de terminaison est facultatif.
 - notes : pour les points de terminaison facultatifs, ce texte décrit les fonctionnalités Office 365 qui manqueront si les adresses IP ou les URL dans cet ensemble de points de terminaison ne sont pas accessibles sur la couche réseau. Omis si vide.

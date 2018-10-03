@@ -12,15 +12,16 @@ ms.collection: Strat_SP_gtc
 localization_priority: Priority
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: Étendez votre présence Office 365 à plusieurs régions géographiques grâce aux fonctionnalités multigéographiques dans OneDrive et SharePoint Online.
-ms.openlocfilehash: 939c12790c30172dc87f89fc1a91a92a40b1c219
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: c6648dc8a0b225105e408fc082f6bb4d1a1b4930
+ms.sourcegitcommit: 2f138e0733266ab4b179bbe882c734500118dde1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "24012734"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365"></a>Fonctionnalités Multi-Géo dans OneDrive et SharePoint Online dans Office 365
 
-Avec les fonctionnalités multigéographiques dans OneDrive et SharePoint Online, votre organisation peut étendre sa présence Office 365 à plusieurs régions géographiques ou pays au sein de votre client existant. Prenez contact avec votre équipe de compte Microsoft pour inscrire votre entreprise internationale à la version multigéographique de OneDrive Entreprise.
+Grâce aux fonctionnalités Multi-Géo dans OneDrive et SharePoint Online, votre organisation peut étendre sa présence Office 365 à plusieurs régions géographiques ou pays au sein de votre client existant. Prenez contact avec votre équipe de compte Microsoft pour inscrire votre entreprise internationale à la version Multi-Géo de OneDrive Entreprise.
   
 Avec les fonctionnalités multigéographiques de OneDrive, vous pouvez configurer et stocker des données au repos dans les emplacements géographiques choisis afin de satisfaire les besoins spécifiques en matière d’emplacement des données, et en même temps déverrouiller votre déploiement général d’expériences de productivité moderne à votre personnel.
   
@@ -69,6 +70,8 @@ Les fonctionnalités multigéographiques de OneDrive sont actuellement disponibl
 - Canada
     
 - Union européenne (EMEA)
+
+- France
     
 - Japon
     
@@ -80,7 +83,6 @@ Les fonctionnalités multigéographiques de OneDrive sont actuellement disponibl
       
 Emplacements géographiques à venir :
   
-- France
 - Inde
     
 ## <a name="getting-started"></a>Prise en main

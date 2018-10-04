@@ -3,7 +3,7 @@ title: Planifier votre mise à niveau d’Office 2007 ou 2010 des serveurs et de
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 8/8/2018
+ms.date: 10/03/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -12,13 +12,13 @@ search.appverid:
 - MET150
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
-description: Il est temps de planifier votre mise à niveau à partir de versions antérieures des produits Office et des serveurs. Utilisez ces ressources pour prendre en main votre plan.
-ms.openlocfilehash: ea5af6a91a0977016eb9c90f7b1acb2def1dbd2f
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+description: Si vous utilisez Office 2007 ou Office 2010, il est temps de planifier votre mise à niveau. Utilisez ces ressources pour prendre en main votre plan.
+ms.openlocfilehash: a8d3c0aad4499e37e4fc0c36412c6830d5df4941
+ms.sourcegitcommit: 57deed1be7cd66528f39eb2504b9a271d3f6dfb4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915159"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "25363167"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planifier votre mise à niveau à partir de clients et les serveurs Office 2007 ou Office 2010
 
@@ -54,9 +54,11 @@ Nous vous recommandons d’obtenir de l’aide à planifier votre mise à niveau
 
 Si vous utilisez Office 2007 ou Office 2010 chez, tenez compte des options suivantes :
 
+- **Libérer de l’utilisation d’Office Online**. Créer, afficher, modifier les fichiers Office dans votre navigateur et ont accès à ces fichiers à partir de n’importe quel appareil ayant accès à internet. [Office Online](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online) inclut [ [Word en ligne](http://go.microsoft.com/fwlink/p/?linkid=746664), [Online Excel](http://go.microsoft.com/fwlink/p/?linkid=746665), PowerPoint Online](http://go.microsoft.com/fwlink/p/?linkid=746666), [OneNote en ligne](http://go.microsoft.com/fwlink/p/?linkid=746674), [balancement](http://go.microsoft.com/fwlink/p/?linkid=746675), [courrier électronique](http://go.microsoft.com/fwlink/p/?linkid=746676), [calendrier](http://go.microsoft.com/fwlink/p/?linkid=746678)et [OneDrive](http://go.microsoft.com/fwlink/p/?linkid=746679). Pour commencer, visitez le site [office.com](https://office.com) et connectez-vous à l’aide de votre compte Microsoft. (Si vous ne disposez d’un compte Microsoft, vous pouvez en créer un sur office.com.)
+
 - **Essayer Office 365 pour un usage personnel**. Choisir entre un abonnement à [Office 365 accueil](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm) ou [Office 365 personnel](https://www.microsoft.com/p/office-365-personal/cfq7ttc0k5bf) . et inscrivez-vous pour une version d’évaluation. S’inscrire et installer la dernière version d’Office sur votre Windows ou Mac ordinateur, votre iOS ou Android smartphone et votre iOS ou Android Tablet PC. Avec Office 365, vous apprécierez le stockage sur le nuage avec OneDrive, vous obtiendrez 60 minutes d’appels Skype pour mobiles et les numéros de téléphone fixe chaque mois, et vous aurez de nombreuses autres fonctionnalités. [Voir Office 365 plans et les prix pour les particuliers](https://products.office.com/explore-office-for-home).
     
-- **Page d’accueil Office achat &amp; étudiant 2016**. Si vous choisissez cette option, vous allez effectuer un achat unique, puis installez Office 2016 sur votre [PC Windows](https://www.microsoft.com/p/office-home-student-2016-for-pc/cfq7ttc0k5fc) ou sur [Mac](https://products.office.com/buy/compare-microsoft-office-products-for-mac). 
+- **Page d’accueil Office achat &amp; étudiant 2016**. Si vous choisissez cette option, vous allez effectuer un achat unique, puis installez Office 2016 sur votre [PC Windows](https://www.microsoft.com/p/office-home-student-2016-for-pc/cfq7ttc0k5fc) ou sur [Mac](https://products.office.com/buy/compare-microsoft-office-products-for-mac). Ce n’est pas un abonnement ; Il est une licence d’utilisation unique, perpétuelle pour un seul ordinateur.
 
 
 ## <a name="what-happens-if-i-dont-upgrade"></a>Que se passe-t-il si je ne pas mettre à niveau ?

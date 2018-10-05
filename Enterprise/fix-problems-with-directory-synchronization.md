@@ -15,12 +15,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Décrit les causes fréquentes de problèmes liés à la synchronisation d’annuaires dans Office 365 et fournit quelques méthodes pour vous aider à résoudre les problèmes et les résoudre.
-ms.openlocfilehash: ad3b6e27439354a2ede9b1a4b100e0f9e06148d3
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: a1ccf7aa8c6d450cdd3d658ef0bc8d9ed6d25753
+ms.sourcegitcommit: 6a4611bb474c783efd361890fe6f41c26c5aeeb3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540396"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25405127"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Résoudre les problèmes de synchronisation d’annuaires pour Office 365
 
@@ -63,7 +63,7 @@ Pour mettre à jour à partir de synchronisation Azure Active Directory pour ét
 - [Synchronisation d’annuaire s’arrête Azure Active Directory ou que vous êtes averti que la synchronisation n’a pas encore inscrit dans plus d’un jour](https://support.microsoft.com/help/2882421/directory-synchronization-to-azure-active-directory-stops-or-you-re-warned-that-sync-hasn-t-registered-in-more-than-a-day)
 
 ### <a name="password-hashes-arent-synchronizing-or-im-seeing-an-alert-in-the-office-365-admin-center-that-there-hasnt-been-a-recent-password-hash-synchronization"></a>**Les hachages de mot de passe ne sont pas synchronisation ou j’obtiens une alerte dans le centre d’administration Office 365 qu’il n’a pas été une synchronisation de hachage de mot de passe récents**
-- [Implémentation de la synchronisation de hachage de mot de passe avec la synchronisation Azure Active Directory se connecter](https://go.microsoft.com/fwlink/p/?LinkId=820600)
+- [Implémentation de la synchronisation de hachage de mot de passe avec la synchronisation Azure Active Directory se connecter](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
 
 ### <a name="im-seeing-an-alert-that-object-quota-exceeded"></a>**J’obtiens une alerte qui a dépassé le quota de l’objet**
 - Nous disposons d’un quota de l’objet intégré pour protéger le service. Si vous avez trop d’objets dans votre annuaire qui doivent effectuer une synchronisation avec Office 365, vous devrez [Contact prend en charge pour les produits d’entreprise](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) pour augmenter le quota.

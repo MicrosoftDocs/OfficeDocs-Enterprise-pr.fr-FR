@@ -3,7 +3,7 @@ title: Prise en charge du protocole IPv6 dans les services Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 12/12/2017
+ms.date: 10/10/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: 'Résumé : Décrit la prise en charge IPv6 dans les composants Microsoft Office 365 et dans les offres Office 365 pour le gouvernement.'
-ms.openlocfilehash: 74752988803728ef4c319e368150b90f7e5d2599
-ms.sourcegitcommit: ad5bdc53ca67ee6a663c27648511c1ad768a76d4
+ms.openlocfilehash: ed06f1eac3c6a3d631445db1d623bd25c62a309c
+ms.sourcegitcommit: ae7f2087d51698d3c5ef371888278544a7046205
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23223126"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "25493829"
 ---
 # <a name="ipv6-support-in-office-365-services"></a>Prise en charge du protocole IPv6 dans les services Office 365
 
@@ -79,7 +79,9 @@ Les considérations suivantes peuvent s'appliquer à votre réseau :
 
 - IPv6 ne prend pas en charge BlackBerry® Enterprise Server (BES) car BlackBerry ne prend pas en charge IPv6.
 
-Voici un lien court, que vous pouvez utiliser pour revenir :[https://aka.ms/o365ip6](https://aka.ms/o365ip6)
+- Si vous utilisez Active Directory Federation Services (ADFS) avec Office 365, publicité votre point de terminaison AD FS réseau Office 365 à l’aide du protocole IPv6 n'est pas pris en charge. Vous ne devez pas inclure les enregistrements AAAA dans l’entrée AD FS DNS lorsque vous utilisez Exchange Online. 
+
+Voici un lien que vous pouvez utiliser pour revenir : [https://aka.ms/o365ip6](https://aka.ms/o365ip6)
   
 ## <a name="see-also"></a>Voir aussi
 

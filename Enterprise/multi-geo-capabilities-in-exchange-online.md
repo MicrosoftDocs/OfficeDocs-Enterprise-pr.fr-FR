@@ -10,12 +10,12 @@ ms.custom: ''
 localization_priority: Normal
 ms.assetid: ''
 description: Développez votre présence d’Office 365 à plusieurs régions géographiques avec des capacités multi-localisés dans Exchange Online.
-ms.openlocfilehash: 9834b102365f11623a1decc00460f85f36552ccb
-ms.sourcegitcommit: d88307a32fd3439a09a87b260e0c0cf9074ebeb0
+ms.openlocfilehash: aa83b5040cdc98a1c651388fa82d746b852c2313
+ms.sourcegitcommit: 5cb4dbdd10ab399af414503cb518a9f530919ef5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "22914779"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25498224"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Fonctionnalités multi-localisés dans Exchange Online
 
@@ -52,7 +52,7 @@ Les zones géographiques suivantes sont disponibles pour une utilisation dans un
 - États-Unis
 
 ## <a name="prerequisite-configuration"></a>Configuration du logiciel requis
-Avant de pouvoir commencer à l’aide de fonctionnalités Multi-localisés dans Exchange Online, Microsoft a besoin configurer votre client pour la prise en charge Multi-Geo Exchange Online. Ce processus de configuration unique est déclenché une fois que vous commandez que multi-Geo et les licences s’affichent-ils dans notre client. Ce processus de configuration unique adopter généralement moins de 30 jours.
+Avant de pouvoir commencer à l’aide de fonctionnalités Multi-localisés dans Exchange Online, Microsoft a besoin configurer votre client pour la prise en charge Multi-Geo Exchange Online. Ce processus de configuration unique est déclenché une fois que vous commandez que multi-Geo et les licences s’affichent-ils dans votre client. Ce processus de configuration unique adopter généralement moins de 30 jours. Ordre Multi-localisés, contactez votre représentant Microsoft. Pour plus d’informations, voir https://aka.ms/Multi-Geo.
 
 Vous allez recevoir des notifications dans le [Centre de messages Office 365](https://support.office.com/article/Message-center-in-Office-365-38FB3333-BFCC-4340-A37B-DEDA509C2093) lorsque votre configuration est terminée. Configuration est automatiquement déclenchée une fois vos licences Multi-Geo s’affichent-ils dans votre client.
 
@@ -112,7 +112,7 @@ Pour vous connecter à une région, le paramètre *ConnectionUri* est différent
    ```
    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com -Credential $UserCredential -Authentication  Basic -AllowRedirection
    ```
-3. Exécutez la commande suivante :
+3. Exécutez la commande suivante :
     
     ```
     Import-PSSession $Session

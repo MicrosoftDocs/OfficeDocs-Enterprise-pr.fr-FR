@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 'Résumé : Se connecter à votre organisation Office 365 à l’aide d’Office 365 PowerShell pour effectuer les tâches du centre d’administration à partir de la ligne de commande.'
-ms.openlocfilehash: e35dfd48f86cd4767f2e87786c4a6d1ea3aa608b
-ms.sourcegitcommit: 22db89d5b13f7d85e03f35f21f25fa288aadf1b4
+ms.openlocfilehash: 2ea9c3eaa9a589bed6bf7ac575ffd241b7a72f01
+ms.sourcegitcommit: 8cacedcba4627042d4bd17f1a94fddcfd87f77b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25575278"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25601638"
 ---
 # <a name="connect-to-office-365-powershell"></a>Se connecter à Office 365 PowerShell
 
@@ -38,7 +38,7 @@ Il existe deux versions du module PowerShell que vous utilisez pour vous connect
 > [!TIP]
 > **Nouveau PowerShell ?** Consultez une [Présentation vidéo de PowerShell](https://support.office.com/en-us/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx), proposée par apprentissage LinkedIn. 
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
 - Durée d'exécution estimée : 5 minutes
     
@@ -89,6 +89,10 @@ Connect-AzureAD
 Dans la boîte de dialogue **se connecter à votre compte** , tapez votre bureau Office 365 ou le nom de l’école compte utilisateur et le mot de passe, puis cliquez sur **OK**.
 
 Si vous utilisez MFA, suivez les instructions indiquées dans les boîtes de dialogue supplémentaires pour fournir plus d’informations d’authentification, par exemple un code de vérification.
+
+>[!Tip]
+>Pour vous connecter à Office 365 Allemagne, consultez la rubrique [Connect Allemagne Azure à l’aide de PowerShell](https://docs.microsoft.com/azure/germany/germany-get-started-connect-with-ps).
+>
     
 Une fois connecté, vous pouvez utiliser les nouvelles applets de commande pour [Azure Active Directory PowerShell pour le module de graphique](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory).
   
@@ -122,6 +126,9 @@ Dans la boîte de dialogue **se connecter à votre compte** , tapez votre bureau
 
 Si vous utilisez MFA, suivez les instructions indiquées dans les boîtes de dialogue supplémentaires pour fournir plus d’informations d’authentification, par exemple un code de vérification.
 
+>[!Tip]
+>Pour vous connecter à Office 365 Allemagne, consultez la rubrique [Connect Allemagne Azure à l’aide de PowerShell](https://docs.microsoft.com/azure/germany/germany-get-started-connect-with-ps).
+>
     
 ### <a name="how-do-you-know-this-worked"></a>Comment vérifier que l'opération a fonctionné ?
 

@@ -3,7 +3,7 @@ title: Afficher les licences et les services avec Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/20/2018
+ms.date: 10/17/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: Explique comment utiliser Office 365 PowerShell pour afficher des informations sur les plans de licences, les services et les licences sont disponibles dans votre organisation Office 365.
-ms.openlocfilehash: 4ee4a5d0173f97520075f146e50bd234e767cc95
-ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
+ms.openlocfilehash: 21dda5bfc1bf1fa975b4a94879435c1842c383ec
+ms.sourcegitcommit: 8cacedcba4627042d4bd17f1a94fddcfd87f77b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "20319255"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25601628"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Afficher les licences et les services avec Office 365 PowerShell
 
@@ -67,7 +67,7 @@ Pour afficher plus d’informations sur les services Office 365 qui sont disponi
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 ```
 
-Le tableau suivant indique les plans de service Office 365 et leurs noms conviviaux pour les services les plus courants. Votre liste des plans de service peut être différent. Pour obtenir une liste complète des plans de service et leur nom convivial, contactez [les options de Support pour les utilisateurs professionnels](https://support.microsoft.com/gp/support-options-for-business).
+Le tableau suivant indique les plans de service Office 365 et leurs noms conviviaux pour les services les plus courants. Votre liste des plans de service peut être différent. 
   
 |**Plan de service**|**Description**|
 |:-----|:-----|
@@ -77,10 +77,12 @@ Le tableau suivant indique les plans de service Office 365 et leurs noms convivi
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Office Professionnel Plus  <br/> |
 | `MCOSTANDARD` <br/> |Skype Entreprise Online  <br/> |
-| `SHAREPOINTWAC` <br/> |Office Online  <br/> |
+| `SHAREPOINTWAC` <br/> |Office Online  <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online Plan 2  <br/> |
    
+Pour une liste complète des plans de licence (également connu sous les noms de produits), leurs plans de service inclus et leurs noms conviviaux correspondants, voir [identificateurs de plan de service de gestion des licences et les noms de produits](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
+
 Pour afficher plus d’informations sur les services Office 365 qui sont disponibles dans un plan de gestion des licences spécifique, utilisez la syntaxe suivante.
   
 ```
@@ -97,7 +99,7 @@ Cet exemple montre les services Office 365 qui sont disponibles dans le plan de 
 
 [!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
    
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Voir aussi
 
 - [Afficher les utilisateurs avec ou sans licence avec Office 365 PowerShell](view-licensed-and-unlicensed-users-with-office-365-powershell.md)
 - [Afficher les détails de service et de licence de compte avec Office 365 PowerShell](view-account-license-and-service-details-with-office-365-powershell.md)

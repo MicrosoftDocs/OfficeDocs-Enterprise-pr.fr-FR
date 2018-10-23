@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Pour vous aider à mieux identifier et différencier le trafic réseau Office 365, un nouveau service web publie les points de terminaison Office 365, afin de vous permettre d’évaluer, de configurer et de rester informé plus facilement des modifications. Ce nouveau service web remplace les fichiers téléchargeables XML actuellement disponibles.
-ms.openlocfilehash: 2b5763b9f8f08f2cc619331dac70743474a8515b
-ms.sourcegitcommit: d67e73f6cdc1e8d220d90a239e23e218f24528d2
+ms.openlocfilehash: 1765a35e961d6aa3da42c36e5a04333e57ae010b
+ms.sourcegitcommit: 7f1e19fb2d7a448a2dec73d8b2b4b82f851fb5f7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "24961823"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "25697980"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>**Service web d’URL et d’adresses IP Office 365**
 
@@ -107,8 +107,8 @@ Cet URI renvoie la dernière version de chaque instance du service Office 365. E
 ]
 ```
 
-[!IMPORTANT]
-Le GUID pour le paramètre ClientRequestID dans ces URI n’est qu’un exemple. Pour essayer les URI de service web, générez votre propre GUID. Les GUID illustrés dans ces exemples pourront être bloqués par le service web à l’avenir.
+> [!IMPORTANT]
+> Le GUID pour le paramètre ClientRequestID dans ces URI n’est qu’un exemple. Pour essayer les URI de service web, générez votre propre GUID. Les GUID illustrés dans ces exemples pourront être bloqués par le service web à l’avenir.
 
 Exemple 2 d’URI de requête : [https://endpoints.office.com/version/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/version/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
 

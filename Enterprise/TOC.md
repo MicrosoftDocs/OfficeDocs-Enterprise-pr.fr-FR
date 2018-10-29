@@ -26,7 +26,7 @@
 ### [Planifier les périphériques réseau qui se connectent aux services Office 365](plan-for-network-devices.md)
 ### [Planifier les certificats SSL tiers pour Office 365](plan-for-third-party-ssl-certificates.md)
 ### [Présentation de l’identité Office 365 et d’Azure Active Directory](about-office-365-identity.md)
-### [Choisir entre MDM et Intune](https://docs.microsoft.com/en-us/office365/securitycompliance/choose-between-mdm-and-intune)
+### [Choisir entre MDM et Intune](https://docs.microsoft.com/fr-FR/office365/securitycompliance/choose-between-mdm-and-intune)
 ### [Planification réseau et de migration pour Office 365](network-and-migration-planning.md)
 ### [Connectivité réseau à Office 365](network-connectivity.md)
 ### [Conseillers de déploiement pour les services Office 365](deployment-advisors-for-office-365.md)
@@ -36,7 +36,7 @@
 ### [Azure ExpressRoute pour Office 365](azure-expressroute.md)
 ### [Fonctionnement de l’authentification moderne pour les applications clientes Office 2013 et Office 2016](modern-auth-for-office-2013-and-2016.md)
 ### [Collaboration inter-client dans Office 365](office-365-inter-tenant-collaboration.md)
-## Prise en charge du client Office 365
+## Prise en charge de client Office 365
 ### [Accès conditionnel](office-365-client-support-conditional-access.md)
 ### [Gestion des applications mobiles](office-365-client-support-mobile-application-management.md)
 ### [Authentification moderne](office-365-client-support-modern-authentication.md)
@@ -67,12 +67,12 @@
 ### [Authentification multifacteur](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
 ### [Identité fédérée](federated-identity-for-your-office-365-dev-test-environment.md)
 ### [Cloud App Security](cloud-app-security-for-your-office-365-dev-test-environment.md)
-### [Advanced Threat Protection](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
-### [Découverte électronique avancée](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
+### [Protection avancée contre les menaces](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+### [eDiscovery (découverte électronique) avancée](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
 ### [Protection des fichiers sensibles](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
-### [Classification des données et étiquetage](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
-## [Office 365 et Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md)
-### [Intégration d’Exchange Online](exchange-online-integration-for-your-office-365-and-dynamics-365-dev-test-enviro.md)
+### [Étiquetage et classification de données](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
+## [Office 365 et Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md)
+### [Intégration Exchange Online](exchange-online-integration-for-your-office-365-and-dynamics-365-dev-test-enviro.md)
 ## [Environnement de développement/test Microsoft Cloud unique](the-one-microsoft-cloud-dev-test-environment.md)
 ## [Réseau virtuel intersite simulé dans Azure](simulated-cross-premises-virtual-network-in-azure.md)
 
@@ -80,14 +80,14 @@
 ## [FastTrack](https://www.microsoft.com/fasttrack/microsoft-365/office-365)
 ## [Déployer Office 365 Entreprise pour votre organisation](setup-overview-for-enterprises.md)
 ### [Liste de contrôle de planification du déploiement pour Office 365](deployment-planning-checklist.md)
-### [Meilleures pratiques de sécurité pour Office 365](https://docs.microsoft.com/office365/securitycompliance/security-best-practices)
+### [Meilleures pratiques de sécurité pour Office 365](https://docs.microsoft.com/Office365/SecurityCompliance/security-best-practices)
 ## Configurer votre réseau
-### [Vue d’ensemble de connectivité réseau Office 365](office-365-networking-overview.md)
+### [Vue d’ensemble de la connectivité réseau Office 365](office-365-networking-overview.md)
 ### [Principes de connectivité réseau Office 365](office-365-network-connectivity-principles.md)
-### [Planification réseau et optimisation des performances pour Office 365](network-planning-and-performance.md)
+### [Planification réseau et optimisation des performances pour Office 365](network-planning-and-performance.md)
 ### [Connectivité réseau à Office 365](network-connectivity.md)
 ### [Programme de partenariat réseau Office 365](office-365-networking-partner-program.md)
-### URL et des adresses IP Office 365
+### URL et adresses IP Office 365
 #### [Gestion des points de terminaison Office 365](managing-office-365-endpoints.md)
 #### [Points de terminaison internationaux](urls-and-ip-address-ranges.md)
 #### [Points de terminaison DoD du gouvernement américain](office-365-u-s-government-dod-endpoints.md)
@@ -95,11 +95,12 @@
 #### [Office 365 géré par les points de terminaison 21Vianet](urls-and-ip-address-ranges-21vianet.md)
 #### [Points de terminaison Office 365 de l’Allemagne](office-365-germany-endpoints.md)
 #### [Requêtes réseau dans Office 2016 pour Mac](network-requests-in-office-2016-for-mac.md)
-#### [Autres points de terminaison non inclus dans les services web](additional-office365-ip-addresses-and-urls.md)
+#### [Service web d’URL et d’adresses IP Office 365](office-365-ip-web-service.md)
+#### [Autres points de terminaison supplémentaires non inclus dans les services web](additional-office365-ip-addresses-and-urls.md)
 ### [Réseaux de distribution de contenu](content-delivery-networks.md)
 ### [Prise en charge du protocole IPv6 dans les services Office 365](ipv6-support.md)
 ### [Prise en charge de la traduction d’adresses réseau (NAT) avec Office 365](nat-support-with-office-365.md)
-### Utilisation de ExpressRoute pour Office 365
+### Utilisation d’ExpressRoute pour Office 365
 #### [Azure ExpressRoute pour Office 365](azure-expressroute.md)
 #### [Implémentation d’ExpressRoute pour Office 365](implementing-expressroute.md)
 #### [Planification de réseau avec ExpressRoute pour Office 365](network-planning-with-expressroute.md)
@@ -156,10 +157,10 @@
 #### [Authentification fédérée haute disponibilité, phase 5 : configuration de l’authentification fédérée pour Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)
 
 # Gérer Office 365
-## [État du service](view-service-health.md)
+## [État des services](view-service-health.md)
 ### [Surveiller la connectivité](monitor-connectivity.md)
-### [Options d’assistance](https://support.office.com/en-us/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
-## [Outils de gestion](https://support.office.com/en-us/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
+### [Options d’assistance](https://support.office.com/fr-FR/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
+## [Outils de gestion](https://support.office.com/fr-FR/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
 ### [Outils de gestion des comptes Office 365](manage-office-365-accounts.md)
 ### [Ajouter plusieurs utilisateurs simultanément à Office 365 - Aide aux administrateurs](add-several-users-at-the-same-time.md)
 ### [Récupérer des éléments supprimés dans une boîte aux lettres utilisateur - Aide aux administrateurs](recover-deleted-items-in-a-mailbox.md)
@@ -175,8 +176,8 @@
 ### [Optimisation des performances SharePoint Online](tune-sharepoint-online-performance.md)
 #### [Introduction à l’optimisation des performances pour SharePoint Online](introduction-to-performance-tuning-for-sharepoint-online.md)
 #### [Diagnostic des problèmes de performances avec SharePoint Online](diagnosing-performance-issues-with-sharepoint-online.md)
-### [Paramétrer Skype pour obtenir des performances en ligne Business](tune-skype-for-business-online-performance.md)
-### [Optimiser les performances de Project Online](https://docs.microsoft.com/ProjectOnline/tune-project-online-performance)
+### [Optimiser les performances de Skype Entreprise Online](tune-skype-for-business-online-performance.md).
+### [Optimiser les performances Project Online](https://docs.microsoft.com/ProjectOnline/tune-project-online-performance)
 ### [Plan de résolution des problèmes de performances pour Office 365](performance-troubleshooting-plan.md)
 ### [Gestion d’ExpressRoute pour la connectivité d’Office 365](managing-expressroute-for-connectivity.md)
 ## Synchronisation d’annuaires

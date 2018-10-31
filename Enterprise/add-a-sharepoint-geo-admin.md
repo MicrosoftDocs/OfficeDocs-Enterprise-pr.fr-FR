@@ -1,5 +1,5 @@
 ---
-title: Ajouter ou supprimer un administrateur localisés
+title: Ajouter ou supprimer un administrateur géographique
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -8,11 +8,12 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 description: Découvrez comment ajouter ou supprimer un administrateur localisés dans OneDrive pour Business Multi-localisés.
-ms.openlocfilehash: b88467cf2f33ec3a3a8bf6c2d6927e69e9f7af65
-ms.sourcegitcommit: a4322cac992ce64b92f0335bf005a7420195d9be
+ms.openlocfilehash: 4e8c8bec148d5a4e7e55ffa2b08a49cd2ea6aa0a
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849810"
 ---
 # <a name="add-or-remove-a-geo-administrator-in-onedrive-for-busniess-multi-geo"></a>Ajouter ou supprimer un administrateur localisés dans OneDrive pour Busniess Multi-localisés
 
@@ -20,7 +21,7 @@ Vous pouvez configurer des administrateurs distincts pour chaque emplacement gé
 
 Certains services - telles que le magasin de termes - sont administrés à partir de l’emplacement central et répliquées aux emplacements satellites. L’administrateur localisés pour l’emplacement central a accès à ces derniers, tandis que les administrateurs localisés pour les emplacements satellites ne.
 
-Les administrateurs globaux et les administrateurs SharePoint Online continuent à accéder aux paramètres dans tous les emplacements de géolocalisation.
+Les administrateurs globaux et les administrateurs SharePoint Online continuent à accéder aux paramètres de l’emplacement central et tous les emplacements de satellites.
 
 ## <a name="configuring-geo-administrators"></a>Configuration des administrateurs localisés
 

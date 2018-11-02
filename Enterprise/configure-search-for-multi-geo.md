@@ -10,19 +10,19 @@ ms.service: o365-solutions
 ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
-description: Découvrez comment configurer la recherche dans un environnement multigéographique.
-ms.openlocfilehash: c1cf057383015c35e0dd75c8100f66ce35871878
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+description: Découvrez comment configurer la recherche dans un environnement Multi-Géo.
+ms.openlocfilehash: 5ca2a35385ab2c246b78dc8811e8435bbdec25c7
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915059"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849910"
 ---
 # <a name="configure-search-for-onedrive-for-business-multi-geo"></a>Configurer la recherche pour OneDrive Entreprise Multi-Géo
 
-Dans un environnement SharePoint Online Multi-Géo, une organisation peut avoir un client Office 365, mais stocker son contenu SharePoint dans plusieurs emplacements géographiques : un emplacement central et un ou plusieurs emplacements géographiques satellites.
+Dans un environnement OneDrive Entreprise Multi-Géo, une organisation peut avoir un client Office 365, mais stocker son contenu OneDrive dans plusieurs emplacements géographiques : un emplacement central et un ou plusieurs emplacements satellites.
 
-Chaque emplacement géographique a ses propres index de recherche et son centre de recherche. Lorsqu’un utilisateur effectue une recherche, la requête est distribuée à tous les index et les résultats renvoyés sont fusionnés.
+Chaque emplacement géographique a son propre index de recherche et son centre de recherche. Lorsqu’un utilisateur effectue une recherche, la requête est distribuée à tous les index et les résultats renvoyés sont fusionnés.
 
 Par exemple, un utilisateur dans un emplacement géographique peut rechercher du contenu stocké dans un autre emplacement géographique, ou du contenu sur un site SharePoint limité à un emplacement géographique différent. Si l’utilisateur a accès à ce contenu, la recherche affiche le résultat.
 
@@ -48,11 +48,11 @@ Dès que l’environnement Multi-Géo est configuré, les utilisateurs qui effec
 
 Dès que l’environnement Multi-Géo est configuré, les utilisateurs qui effectuent des recherches dans Delve obtiennent des résultats de tous les emplacements géographiques.
 
-Le flux Delve et la carte de visite affichent uniquement les aperçus des fichiers qui sont stockés dans l’emplacement **central**. Pour les fichiers stockés dans des emplacements géographiques satellites, l’icône du type de fichier apparaît à la place.
+Le flux Delve et la carte de visite affichent uniquement les aperçus des fichiers qui sont stockés dans l’emplacement **central**. Pour les fichiers stockés dans des emplacements satellites, l’icône du type de fichier apparaît à la place.
 
 ### <a name="the-sharepoint-home-page"></a>Page d’accueil SharePoint
 
-Dès que l’environnement Multi-Géo est configuré, les utilisateurs voient les actualités, les sites récents et suivis de plusieurs emplacements géographiques sur leur page d’accueil SharePoint. S’ils utilisent la zone de recherche sur la page d’accueil SharePoint, ils obtiennent des résultats fusionnés provenant de plusieurs emplacements géographiques.
+Dès que l’environnement Multi-Géo est configuré, les utilisateurs voient les actualités, les sites récents et les sites suivis de plusieurs emplacements géographiques sur leur page d’accueil SharePoint. S’ils utilisent la zone de recherche sur la page d’accueil SharePoint, ils obtiennent des résultats fusionnés provenant de plusieurs emplacements géographiques.
 
 ### <a name="the-search-center"></a>Centre de recherche
 
@@ -87,7 +87,7 @@ Certaines fonctionnalités de recherche auxquelles vous êtes habitué fonctionn
 </tr>
 <tr class="odd">
 <td align="left"></td>
-<td align="left">La recherche Multi-Géo ne prend pas en charge la création de compartiments dynamique pour les affinements numériques.</td>
+<td align="left">La recherche Multi-Géo ne prend pas en charge la création dynamique de compartiments pour les affinements numériques.</td>
 <td align="left">Utilisez le <a href="https://docs.microsoft.com/en-us/sharepoint/dev/general-development/query-refinement-in-sharepoint">paramètre « Discretize »</a> pour les affinements numériques.</td>
 </tr>
 <tr class="even">
@@ -179,7 +179,7 @@ MultiGeoSearchConfiguration : il s’agit d’une liste facultative qui indique
 <table>
 <thead>
 <tr class="header">
-<th align="left">Élément</th>
+<th align="left">Item</th>
 <th align="left">Description</th>
 </tr>
 </thead>

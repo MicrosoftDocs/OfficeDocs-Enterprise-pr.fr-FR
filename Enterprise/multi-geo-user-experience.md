@@ -11,11 +11,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Découvrez l’expérience utilisateur SharePoint et OneDrive dans un environnement multigéographique.
-ms.openlocfilehash: 3c7e4b6802bddc78db016c9c282f5add0c71c491
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 951efb636ce00f59393f624687d44a406fcf3fc0
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849830"
 ---
 # <a name="user-experience-in-a-multi-geo-environment"></a>Expérience utilisateur dans un environnement multigéographique
 
@@ -23,11 +24,11 @@ Voici ce que vos utilisateurs verront dans une configuration multigéographique 
 
 #### <a name="users-onedrive-for-business-location"></a>Emplacement OneDrive Entreprise de l’utilisateur
 
-OneDrive Entreprise sera configuré pour les utilisateurs dans leur emplacement de données préféré. Si un utilisateur accède à une URL OneDrive qui contient un emplacement géographique incorrect (par exemple, un signet provenant d’un emplacement géographique précédent), ils sont automatiquement redirigés vers OneDrive dans l’emplacement géographique approprié.
+OneDrive Entreprise sera configuré pour les utilisateurs dans leur emplacement de données préféré. Si un utilisateur accède à une URL OneDrive qui contient un emplacement géographique incorrect (par exemple, un signet provenant d’un emplacement géographique précédent), il est automatiquement redirigé vers OneDrive dans l’emplacement géographique approprié.
 
 #### <a name="sharing"></a>Partage
 
-L’expérience Sélecteur de personnes affiche tous les utilisateurs quel que soit leur emplacement géographique. Cela permet à un utilisateur de partager avec un autre utilisateur dans leur même emplacement géographique ou dans l’un des autres emplacements géographiques de votre client. Le contenu de différents emplacements géographiques s’affichera dans la vue **Partagés avec moi** dans OneDrive Entreprise de l’utilisateur et est accessible avec l’expérience d’authentification unique, indépendamment de l’emplacement géographique dans lequel il est hébergé.
+L’expérience Sélecteur de personnes affiche tous les utilisateurs, quel que soit leur emplacement géographique. Cela permet à l’utilisateur d’effectuer un partage avec un autre utilisateur dans le même emplacement géographique ou dans l’un des autres emplacements géographiques de votre client. Le contenu de différents emplacements géographiques s’affiche dans la vue **Partagés avec moi** dans OneDrive Entreprise de l’utilisateur et est accessible via l’expérience d’authentification unique, indépendamment de l’emplacement géographique dans lequel il est hébergé.
 
 #### <a name="office-applications"></a>Applications Office
 
@@ -39,7 +40,7 @@ Le Client de synchronisation OneDrive Entreprise (version 17.3.6943.0625 et les
 
 #### <a name="office-365-app-launcher"></a>Lanceur d’applications Office 365
 
-Le Lanceur d’application est adapté à Multi-Géo et redirige chaque vignette à l’emplacement géographique approprié de la charge de travail. La vignette OneDrive pointe vers l’emplacement géographique correct qui héberge la bibliothèque OneDrive de l’utilisateur, tandis que la vignette SharePoint pointe tous les utilisateurs vers l’emplacement central, car les sites d’équipe y sont toujours hébergés.
+Le lanceur d’application est adapté à Multi-Géo et redirige chaque vignette vers l’emplacement géographique approprié de la charge de travail. La vignette OneDrive pointe vers l’emplacement géographique correct qui héberge la bibliothèque OneDrive de l’utilisateur, tandis que la vignette SharePoint pointe tous les utilisateurs vers l’emplacement central, car les sites d’équipe y sont toujours hébergés.
 
 #### <a name="delve-user-profiles"></a>Profils utilisateur Delve
 

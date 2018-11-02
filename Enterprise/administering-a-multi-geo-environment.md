@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Découvrez comment administrer des services SharePoint et OneDrive dans un environnement multigéographique.
-ms.openlocfilehash: 12da695b44c5102c985a8d64960b1d20e092c8cd
-ms.sourcegitcommit: 92d16c0926e4be3fd493fe9b4eb317fb54996bca
+ms.openlocfilehash: 0113c20eab59e4d0a3122344346d31ae9f0a35a8
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "21550057"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849880"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Administration d’un environnement multigéographique
 
@@ -23,11 +23,11 @@ Découvrez le fonctionnement des services OneDrive et SharePoint dans un environ
 
 #### <a name="onedrive-administrator-experience"></a>Expérience de l’administrateur OneDrive
 
-Dans le [Centre d’administration OneDrive](https://admin.onedrive.com), l’onglet **Emplacements géographiques** dans le volet de navigation gauche propose une carte où vous pouvez afficher et gérer vos emplacements géographiques. Utilisez cette page pour ajouter ou supprimer des emplacements géographiques pour votre client.
+Dans le [Centre d’administration OneDrive](https://admin.onedrive.com), l’onglet **Emplacements géographiques** dans le volet de navigation gauche présente une carte où vous pouvez afficher et gérer vos emplacements géographiques. Utilisez cette page pour ajouter ou supprimer des emplacements géographiques pour votre client.
 
 #### <a name="taxonomy"></a>Taxonomie
 
-Nous prenons en charge une [taxonomie](https://support.office.com/article/A180FA28-6405-4679-9EC3-81D2028C4EFC) unifiée pour gérer les métadonnées dans l’entreprise à différents emplacements géographiques ; les données de référence étant hébergées à l’emplacement central de votre entreprise. Nous vous recommandons de gérer votre taxonomie globale à partir de l’emplacement central et d’ajouter uniquement des termes spécifiques à la taxonomie de l’emplacement géographique satellite. Les termes de la taxonomie globale sont synchronisés sur les emplacements géographiques satellites.
+Nous prenons en charge une [taxonomie](https://support.office.com/article/A180FA28-6405-4679-9EC3-81D2028C4EFC) unifiée pour gérer les métadonnées dans l’entreprise à différents emplacements géographiques ; les données de référence étant hébergées à l’emplacement central de votre entreprise. Nous vous recommandons de gérer votre taxonomie globale à partir de l’emplacement central et d’ajouter uniquement des termes spécifiques à la taxonomie de l’emplacement satellite. Les termes de la taxonomie globale sont synchronisés avec les emplacements satellites.
 
 #### <a name="sharing"></a>Partage
 
@@ -43,7 +43,7 @@ Si vous avez des propriétés de profil personnalisées, nous vous recommandons 
 
 #### <a name="bcs-secure-store-apps"></a>BCS, service Banque d’informations sécurisé, applications
 
-BCS, le service Banque d’informations sécurisé et les applications ont des instances géographiques distinctes. Ainsi, l’administrateur SharePoint Online doit gérer et configurer ces services à partir de chaque instance géographique où ils doivent apparaître.
+BCS, le service Banque d’informations sécurisé et les applications ont des instances distinctes dans chaque emplacement satellite. Ainsi, l’administrateur SharePoint Online doit gérer et configurer ces services séparément à partir de chaque emplacement satellite.
 
 #### <a name="security-and-compliance-admin-center"></a>Centre de sécurité et conformité
 
@@ -63,10 +63,10 @@ Par défaut, un gestionnaire ou un administrateur eDiscovery d’un client multi
 
 L’administrateur général Office 365 doit affecter les autorisations de gestionnaire eDiscovery pour autoriser d’autres personnes à mettre en place un processus eDiscovery, et affecter un paramètre « Région » dans le filtre de sécurité de conformité correspondant pour définir la région concernée par le processus comme emplacement satellite. Sinon, aucun processus eDiscovery n’est mis en place à l’emplacement satellite.
 
-Quand un gestionnaire ou un administrateur eDiscovery est défini pour un emplacement particulier, ce gestionnaire ou cet administrateur peut uniquement effectuer des actions de recherche eDiscovery dans les sites SharePoint et OneDrive situés dans cet emplacement géographique. Si un gestionnaire ou un administrateur eDiscovery tente de rechercher des sites SharePoint ou OneDrive en dehors de la région spécifiée, aucun résultat n’est renvoyé. Par ailleurs, quand le gestionnaire ou l’administrateur eDiscovery d’une région déclenche une exportation, les données sont exportées vers l’instance Azure de cette région. Ainsi, les entreprises respectent les règles de conformité en interdisant l’exportation de contenu au-delà de frontières contrôlées.
+Quand un gestionnaire ou un administrateur eDiscovery est défini pour un emplacement satellite particulier, ce gestionnaire ou cet administrateur eDiscovery peut uniquement effectuer des actions de recherche eDiscovery dans les sites SharePoint et OneDrive situés dans cet emplacement satellite. Si un gestionnaire ou un administrateur eDiscovery tente de rechercher des sites SharePoint ou OneDrive en dehors de l’emplacement satellite spécifié, aucun résultat n’est renvoyé. Par ailleurs, lorsque le gestionnaire ou l’administrateur eDiscovery d’un emplacement satellite déclenche une exportation, les données sont exportées vers l’instance Azure de cette région. Ainsi, les entreprises respectent les règles de conformité en interdisant l’exportation de contenu au-delà de frontières contrôlées.
 
 > [!NOTE]
-> Si un gestionnaire eDiscovery doit effectuer des recherches dans plusieurs régions SharePoint, un autre compte d’utilisateur doit être créé pour ce gestionnaire, lequel doit indiquer une autre région où sont situés les sites OneDrive ou SharePoint.
+> Si un gestionnaire eDiscovery doit effectuer des recherches dans plusieurs emplacements satellites SharePoint, un autre compte d’utilisateur doit être créé pour ce gestionnaire, lequel doit indiquer un autre emplacement satellite où sont situés les sites OneDrive ou SharePoint.
 
 <table>
 <thead>
@@ -122,7 +122,7 @@ Pour définir le filtre de sécurité de conformité pour une région :
 2.  Entrez   
     $s = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri <https://ps.compliance.protection.outlook.com/powershell-liveid> -Credential $cred -Authentication Basic -AllowRedirection -SessionOption (New-PSSessionOption -SkipCACheck -SkipCNCheck -SkipRevocationCheck)
 
-    $a = Import-PSSession $s -AllowClobber  
+    $a = Import-PSSession $s -AllowClobber  
 
 3.  **New-ComplianceSecurityFilter** **-Action** ALL **-FilterName** EnterTheNameYouWantToAssign **-Region** EnterTheRegionParameter **-Users** EnterTheUserPrincipalName
 
@@ -132,4 +132,4 @@ Consultez l’article [New-ComplianceSecurityFilter](https://technet.microsoft.c
 
 #### <a name="audit-log-search"></a>Recherche de journal d’audit
 
-Un [journal d’audit](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c) unifié pour tous vos emplacements géographiques est disponible sur la page de recherche du journal d’audit Office 365. Vous pouvez voir toutes les entrées du journal d’audit de plusieurs emplacements géographiques. Par exemple, les activités des utilisateurs dans les régions NAM et EUR apparaissent dans un seul affichage et vous pouvez appliquer les filtres existants pour afficher les activités de certains utilisateurs uniquement.
+Un [journal d’audit](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c) unifié pour tous vos emplacements satellites est disponible sur la page de recherche du journal d’audit Office 365. Vous pouvez voir toutes les entrées du journal d’audit de plusieurs emplacements géographiques. Par exemple, les activités des utilisateurs dans les régions NAM et EUR apparaissent dans un seul affichage et vous pouvez appliquer les filtres existants pour afficher les activités de certains utilisateurs uniquement.

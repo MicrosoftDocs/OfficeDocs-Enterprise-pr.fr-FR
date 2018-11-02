@@ -12,12 +12,12 @@ ms.collection: Strat_SP_gtc
 localization_priority: Priority
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: Étendez votre présence Office 365 à plusieurs régions géographiques grâce aux fonctionnalités multigéographiques dans OneDrive et SharePoint Online.
-ms.openlocfilehash: c6648dc8a0b225105e408fc082f6bb4d1a1b4930
-ms.sourcegitcommit: 2f138e0733266ab4b179bbe882c734500118dde1
+ms.openlocfilehash: 725a7a88e3459f73ff00554b14afc740db1244b3
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "24012734"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849820"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365"></a>Fonctionnalités Multi-Géo dans OneDrive et SharePoint Online dans Office 365
 
@@ -43,7 +43,7 @@ Voici comment les fonctionnalités multigéographiques peuvent être utiles à v
     
 - Consolidez vos données régionales locales dans votre client multi-géographique Office 365.
     
-Dans une configuration multi-géographique, votre client Office 365 se compose d’un emplacement central (également appelé emplacement par défaut) et d’un ou de plusieurs emplacements géographiques satellites. Le concept clé de la fonction multi-géographique est qu’une seule location couvre plusieurs emplacements géographiques. Dans un client multi-géographique, les informations concernant les emplacements géographiques, les groupes et les informations utilisateur sont gérées dans Azure Active Directory (AAD). Étant donné que les informations de votre client sont gérées de façon centralisée et synchronisées à chaque emplacement géographique, le partage et les expériences concernant tout membre de votre société impliquent une sensibilisation à l’échelle mondiale.
+Dans une configuration multi-géographique, votre client Office 365 se compose d’un emplacement central (où votre abonnement Office 365 d’origine a été configuré) et d’un ou de plusieurs emplacements géographiques satellites. Le concept clé de la fonction multi-géographique est qu’une seule location couvre plusieurs emplacements géographiques. Dans un client multi-géographique, les informations concernant les emplacements géographiques, les groupes et les informations utilisateur sont gérées dans Azure Active Directory (AAD). Étant donné que les informations de votre client sont gérées de façon centralisée et synchronisées à chaque emplacement géographique, le partage et les expériences concernant tout membre de votre société impliquent une sensibilisation à l’échelle mondiale.
 
 ## <a name="video-introducing-office-365-multi-geo"></a>Vidéo : Présentation d’Office 365 Multi-Géo
 

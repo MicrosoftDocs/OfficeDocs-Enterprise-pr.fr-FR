@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 'Résumé : Décrit les éléments à prendre en compte pour la capacité réseau, les accélérateurs WAN et les périphériques d’équilibrage de charge qui sont utilisés pour se connecter à Office 365.'
-ms.openlocfilehash: c384ba043e64ec83eda74b234937efaf72f29815
-ms.sourcegitcommit: ad5bdc53ca67ee6a663c27648511c1ad768a76d4
+ms.openlocfilehash: 023eb3f5ed4d81d1d49d18c69ef8c81032fd5851
+ms.sourcegitcommit: 317c2753be2aedb60698e94606ba59b63c962328
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23223066"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25933121"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Planifier les périphériques réseau qui se connectent aux services Office 365
 
@@ -37,7 +37,7 @@ Les paramètres de proxy Internet sortant également affectent la connectivité 
   
 Le Skype suivante pour les articles d’aide Business ont plus d’informations sur Skype pour les paramètres d’entreprise :
   
-- [Résolution des problèmes de Skype pour Business erreurs de connexion (administrateurs)](https://go.microsoft.com/fwlink/p/?LinkID=243624)
+- [Dépannage Skype pour les erreurs de connexion Business Online pour les administrateurs](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/troubleshooting-sign-in-errors-for-admins)
 
 - [Vous ne pouvez pas vous connecter à Skype pour les entreprises, ou certaines fonctionnalités ne fonctionnent pas, car un pare-feu local bloque la connexion](https://go.microsoft.com/fwlink/p/?LinkID=243625)
 

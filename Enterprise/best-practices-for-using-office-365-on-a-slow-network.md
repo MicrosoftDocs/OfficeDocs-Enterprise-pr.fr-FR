@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: fd16c8d2-4799-4c39-8fd7-045f06640166
 description: Serait-il si votre connexion Internet est toujours rapide et jamais bas ? Ce jour seront sans doute. Mais en attendant, il existe des pratique choses que vous pouvez faire pour résoudre un réseau balky et toujours obtenir votre travail quotidien.
-ms.openlocfilehash: 52c3bde04aa58f9e24a49d2034e6b6433c44f21c
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 2287de562672f5ceb1ab32949168e8dfdeb31585
+ms.sourcegitcommit: 317c2753be2aedb60698e94606ba59b63c962328
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540581"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25933141"
 ---
 # <a name="best-practices-for-using-office-365-on-a-slow-network"></a>Meilleures pratiques pour l’utilisation d’Office 365 sur un réseau lent
 
@@ -162,7 +162,7 @@ Pour plus d’informations, voir la section « informations supplémentaires su
 
 Lorsque vous personnalisez une page web, vous pouvez par inadvertance provoquer une dégradation des performances avec la page. Plusieurs facteurs peuvent avoir un impact, tels que la complexité et la taille de la page, combien les composants WebPart sont ajoutés, le nombre d’éléments liste ou une bibliothèque est affiché à l’origine et la façon dont vous la page de codes.
   
-Pour plus d’informations, voir [performance régler SharePoint Online](https://technet.microsoft.com/library/f97c2f06-0426-443d-8a16-d98abb0da252#TuneSharePoint).
+Pour plus d’informations, voir [performance régler SharePoint Online](https://docs.microsoft.com/office365/enterprise/tune-sharepoint-online-performance).
   
 ## <a name="best-practices-for-using-project-online"></a>Meilleures pratiques pour l’utilisation de Project Online
 
@@ -190,7 +190,7 @@ Microsoft continuellement améliore les performances globales d’Office 365 en 
   
 [Cours Microsoft Virtual Academy : gestion des performances Office 365](https://blogs.office.com/2014/12/03/microsoft-virtual-academy-course-office-365-performance-management/)
   
-[Gestion des points de terminaison Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
+[Gestion des points de terminaison Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   
-[Points de terminaison Office 365 FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
+[Points de terminaison Office 365 - FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
 

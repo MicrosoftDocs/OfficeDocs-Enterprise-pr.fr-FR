@@ -3,7 +3,7 @@ title: URLs et plages d’adresses IP pour Office 365 géré par 21Vianet
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 8/13/2018
+ms.date: 11/01/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 5c47c07d-f9b6-4b78-a329-bfdc1b6da7a0
 description: Cet article s’applique à Office 365 géré par 21Vianet en Chine. Cet article répertorie les URLs et plages d’adresses IP utilisées par Office 365 géré par 21Vianet.
 hideEdit: true
-ms.openlocfilehash: 83147b27a3237bb7fbb3c63b739a0f3fcb401b92
-ms.sourcegitcommit: d07feeba2e886febc6a57a5c33b0df02b3db5631
+ms.openlocfilehash: b01c996d801f2ab34924ac7266dc8210bd8392cd
+ms.sourcegitcommit: 317c2753be2aedb60698e94606ba59b63c962328
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "23827182"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25933091"
 ---
 # <a name="urls-and-ip-address-ranges-for-office-365-operated-by-21vianet"></a>URLs et plages d’adresses IP pour Office 365 géré par 21Vianet
 
@@ -29,29 +29,29 @@ ms.locfileid: "23827182"
 **Résumé**: les points de terminaison suivants (FQDNs, ports, URL, IPv4 et IPv6 préfixes) s’appliquent à Office 365 géré par 21 Vianet et sont prévus pour fournir des services de productivité aux organisations qui n’utilisent que ces offres.
   
 > [!NOTE]
-> Microsoft développe un service web basé sur REST pour les entrées d’adresse IP et de FQDN sur cette page. Ce nouveau service vous permettra de configurer et de mettre à jour des périphériques de périmètre de réseau tels que des pare-feu et serveurs proxy. Vous pouvez télécharger la liste des points de terminaison, la version actuelle de la liste ou modifications spécifiques. Ce service remplacera finalement le document XML sur cette page. Pour essayer ce nouveau service, accédez au [service Web](office-365-ip-web-service.md). 
+> Microsoft a publié un service web utilisant REST pour les entrées d’adresse IP et de FQDN sur cette page. Ce nouveau service vous permettra de configurer et de mettre à jour des périphériques de périmètre de réseau, tels que des pare-feu et serveurs proxy. Vous pouvez télécharger la liste des points de terminaison, la version actuelle de la liste ou des modifications spécifiques. Ce service remplace le document XML dont le lien est fourni sur cette page et qui est obsolète depuis le 2 octobre 2018. Pour essayer ce nouveau service, accédez au [service web](office-365-ip-web-service.md).
   
  **Points de terminaison Office 365:**[Dans le monde ( GCC inclus)](urls-and-ip-address-ranges.md)  | *Office 365 géré par 21Vianet* | [Office 365 Germany](office-365-germany-endpoints.md) | [Office 365 U.S. Government DoD](office-365-u-s-government-dod-endpoints.md) | [Office 365 U.S. Government GCC High](office-365-u-s-government-gcc-high-endpoints.md) |
   
 |||
 |:-----|:-----|
-|**Dernière mise à jour:** 1/8/2018 -![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [abonnement au journal des modifications](http://go.microsoft.com/fwlink/?LinkId=536386)||
+|**Dernière mise à jour :** 01/11/2018 -![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Abonnement au journal des modifications](https://endpoints.office.com/version/China?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**Téléchargement :** toutes les destinations obligatoires et facultatives dans une liste [au format JSON](https://endpoints.office.com/endpoints/China?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).  <br/> |
 
 Commencez avec la [gestion des points de terminaison Office 365](managing-office-365-endpoints.md) afin de comprendre nos recommandations pour gérer la connectivité réseau à l’aide de ces données. Les données de points de terminaison sont mises à jour au début de chaque mois avec de nouvelles adresses IP et URL publiées 30 jours avant d’être activées. Cela permet aux clients qui n’ont pas encore de mises à jour automatisées de terminer leurs processus avant qu’une nouvelle connectivité soit requise. Les points de terminaison peuvent également être mis à jour au cours du mois si besoin pour les demandes du support d’adresse, les incidents de sécurité ou autres exigences opérationnelles immédiates. Les données contenues sur la page ci-dessous sont générées à partir des services web REST. Si vous utilisez un script ou un périphérique réseau pour accéder à ces données, vous devez accéder directement au [service web](office-365-ip-web-service.md).
 
-Les données du point de terminaison ci-dessous répertorient la configuration requise pour la connectivité à partir d’ordinateur d’un utilisateur à Office 365. Il n’inclut pas de connexions réseau auprès de Microsoft dans un réseau client, parfois appelées hybrides ou des connexions réseau entrantes.
+Les données de point de terminaison ci-dessous répertorient les exigences de connectivité à partir de l’ordinateur d’un utilisateur vers Office 365. Elles n’incluent pas les connexions réseau de Microsoft vers un réseau client, parfois appelées connexions réseau entrantes ou hybrides.
 
-Les points de terminaison sont regroupées dans quatre zones de service. Les trois premières zones de service peuvent être sélectionnés indépendamment de la connectivité. La quatrième zone de service est une dépendance courante (appelée Microsoft 365 Common et Office Online) et doit toujours avoir une connectivité de réseau.
+Les points de terminaison sont regroupés en quatre zones de service. Les trois premières zones de service peuvent être sélectionnées indépendamment pour la connectivité. La quatrième zone de service est une dépendance courante (appelée Microsoft 365 Common et Office Online) et doit toujours avoir une connectivité réseau.
 
 Les colonnes de données affichées sont :
 
-- **ID**: numéro d’identification de la ligne, également connue sous forme d’un jeu de point de terminaison. Cet identification est la même que celle retournée par le service web pour l’ensemble de point de terminaison.
+- **ID** : numéro d’identification de la ligne, également connu sous forme d’un ensemble de points de terminaison. Cet ID est le même que celui retourné par le service web pour l’ensemble de points de terminaison.
 
-- **Catégorie**:Indique si l’ensemble de point de terminaison est classé «Optimiser», «Autoriser» ou «Par défaut». Vous pouvez lire sur ces catégories et des instructions pour la gestion d’eux en[ http://aka.ms/pnc](http://aka.ms/pnc). Cette colonne répertorie également les ensembles de point de terminaison qui sont nécessaires pour obtenir la connectivité réseau. Pour des ensembles de point de terminaison qui n’ont pas besoin d’avoir de connectivité réseau, nous fournissons des notes dans ce champ pour indiquer quelles fonctionnalités seraient manquantes si l’ensemble de point de terminaison est bloqué. Si vous excluez une zone de service entière, les ensembles de point de terminaison répertoriés comme  requis ne nécessitent pas de connectivité.
+- **Catégorie** : indique si l’ensemble de points de terminaison est associé à la classe « Optimiser », « Autoriser » ou « Par défaut ». Des informations sur ces catégories et des instructions pour les gérer sont disponibles dans la rubrique [http://aka.ms/pnc](http://aka.ms/pnc). Cette colonne répertorie également les ensembles de points de terminaison nécessaires pour que la connectivité réseau fonctionne. Pour les ensembles de points de terminaison qui ne nécessitent pas de connectivité réseau, nous fournissons des remarques dans ce champ pour indiquer les fonctionnalités manquantes si l’ensemble de points de terminaison est bloqué. Si vous excluez l’ensemble d’une zone de service, les ensembles de points de terminaison répertoriés comme requis ne nécessitent pas de connectivité.
 
-- **ER**: C’est un**Oui** si l’ensemble de point de terminaison est pris en charge sur Azure ExpressRoute avec des préfixes d’itinéraire Office 365. La Communauté BGP qui inclut les préfixes itinéraire illustrés s’aligne avec la zone de service répertoriée. Quand ER est un**non**, cela signifie que ExpressRoute n’est pas pris en charge pour cet ensemble de point de terminaison. Toutefois, il ne doit pas être supposé qu’aucun itinéraire n’est annoncé pour un ensemble de point de terminaison où ER est considéré comme un**non**.
+- **ER** : cette option est définie sur **Oui** si l’ensemble de points de terminaison est pris en charge sur Azure ExpressRoute avec des préfixes d’itinéraire Office 365. La Communauté BGP qui inclut les préfixes d’itinéraire indiqués s’aligne avec la zone de service répertoriée. Quand ER est défini sur **Non**, cela signifie qu’ExpressRoute n’est pas pris en charge pour cet ensemble de points de terminaison. Toutefois, le fait qu’ER soit défini sur **Non** ne signifie pas pour autant qu’aucun itinéraire n’est proposé pour un ensemble de points de terminaison.
 
-- **Adresses**: Répertorie les FQDNs ou noms de domaines génériques et plages d’adresses IP pour l’ensemble de point de terminaison. Notez qu’une plage d’adresses IP est au format CIDR et peut inclure plusieurs adresses IP individuelles dans le réseau spécifié.
+- **Adresses** : répertorie les noms de domaine complets ou noms de domaines génériques et plages d’adresses IP pour l’ensemble de points de terminaison. Notez qu’une plage d’adresses IP est au format CIDR et peut inclure plusieurs adresses IP individuelles dans le réseau spécifié.
  
 - **Ports**: Répertorie les ports TCP ou UDP qui sont combinées avec les adresses pour former le point de terminaison réseau. Vous remarquerez peut-être que certains duplication dans les plages d’adresses IP lorsqu’il y a des ports différents répertoriés.
 

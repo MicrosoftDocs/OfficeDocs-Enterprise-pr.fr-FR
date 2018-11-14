@@ -93,8 +93,8 @@
 #### [Points de terminaison DoD du gouvernement américain](office-365-u-s-government-dod-endpoints.md)
 #### [Points de terminaison GCC High du gouvernement américain](office-365-u-s-government-gcc-high-endpoints.md)
 #### [Office 365 géré par les points de terminaison 21Vianet](urls-and-ip-address-ranges-21vianet.md)
-#### [Points de terminaison Office 365 de l’Allemagne](office-365-germany-endpoints.md)
-#### [Requêtes réseau dans Office 2016 pour Mac](network-requests-in-office-2016-for-mac.md)
+#### [Points de terminaison Office 365 Germany](office-365-germany-endpoints.md)
+#### [Requêtes réseau dans Office pour Mac](network-requests-in-office-2016-for-mac.md)
 #### [Service web d’URL et d’adresses IP Office 365](office-365-ip-web-service.md)
 #### [Autres points de terminaison supplémentaires non inclus dans les services web](additional-office365-ip-addresses-and-urls.md)
 ### [Réseaux de distribution de contenu](content-delivery-networks.md)
@@ -191,5 +191,5 @@
 ### [Connectivité client](client-connectivity.md)
 # [Office 365 PowerShell](powershell/manage-office-365-with-office-365-powershell.md)
 # [Sécurité et conformité](https://docs.microsoft.com/Office365/SecurityCompliance)
-# [Office 365 pour les entreprises](https://support.office.com/office365admin)
+# [Office 365 pour les entreprises](https://docs.microsoft.com/office365/admin/admin-home)
   

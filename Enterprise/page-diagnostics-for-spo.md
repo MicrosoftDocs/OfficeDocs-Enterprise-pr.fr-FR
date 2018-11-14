@@ -15,21 +15,23 @@ search.appverid:
 - BSA160
 ms.assetid: dbab2593-dc6a-40f7-adfe-031b9baa620f
 description: Utilisez les tests de diagnostic Page outil SharePoint afin d’analyser vos pages classique contre les meilleures pratiques recommandées pour SharePoint Online.
-ms.openlocfilehash: 0fc2e16867b54e644d00c57fbfc41d4f7d042f88
-ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
+ms.openlocfilehash: 1524befc0003006cfab9100aafc7d3deda2a37d2
+ms.sourcegitcommit: 5be99683fb2de87f723264c8a1123451d31ea43b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23975162"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26253615"
 ---
 # <a name="use-the-page-diagnostics-tool-for-sharepoint-online"></a>Utilisez l’outil de diagnostic de la Page pour SharePoint Online
 
 Cet article décrit comment vous pouvez utiliser l’outil de Diagnostic de la Page pour analyser les pages de publication classique et les pages des sites d’équipes classique, par rapport à un sous-ensemble des pratiques recommandées dans **SharePoint Online**. 
   
 Sites d’équipe qui n’ont pas activée la publication ne peut pas faire utiliser CDN, mais toutes les autres règles sont applicables. Publication ajoute une surcharge supplémentaire afin de ne pas activer la publication pour obtenir la fonctionnalité CDN comme il un impact négatif sur les temps de chargement de page.
+
+**Remarque que V1.05 a été publié Veuillez mettre à jour votre extension, si vous avez déjà installé**. Si vous ne savez pas quelle version que vous avez puis cliquez sur le « Sur » pour vérifier qu’il.
   
 > [!IMPORTANT]
-> L’outil de diagnostic de la Page ne s’exécutera pas par rapport à des bibliothèques de documents ou des pages de système, comme l’outil est conçu pour passer en revue les pages du site SharePoint. Une page *allitems.aspx* est un système. Si vous essayez d’exécuter l’outil sur une page de système, vous recevrez un message indiquant, « cette application doit s’exécuter uniquement sur les pages SharePoint. »<br/> ![Doit s’exécuter sur une page SharePoint](media/34aadfff-1009-496b-9c87-4fc2780e017c.png)<br/>Cela n’est pas une erreur dans l’outil car il n’existe aucune valeur pour l’évaluation des bibliothèques ou des pages de système. Accédez à une page de SharePoint non-système pour utiliser l’outil. Si vous souhaitez envoyer des commentaires sur l’outil cliquez sur l’onglet à propos et suivre la [liaison de commentaires](https://go.microsoft.com/fwlink/?linkid=874109). 
+> L’outil de diagnostic de la Page ne s’exécutera pas par rapport à des bibliothèques de documents ou des pages de système, comme l’outil est conçu pour passer en revue les pages du site SharePoint. Une page *allitems.aspx* est un système. Si vous essayez d’exécuter l’outil sur une page de système, vous recevrez un message indiquant, « cette application doit s’exécuter uniquement sur les pages SharePoint. »<br/> ![Doit s’exécuter sur une page SharePoint](media/34aadfff-1009-496b-9c87-4fc2780e017c.png)<br/>Cela n’est pas une erreur dans l’outil car il n’existe aucune valeur pour l’évaluation des bibliothèques ou des pages de système. Accédez à une page de SharePoint non-système pour utiliser l’outil. Si cela se produit sur une page SharePoint, vérifiez la page maître comme nous l’avons vu clients supprimer le SharePoint MetaTags et ensuite la page n’est plus une page SharePoint. Si vous souhaitez envoyer des commentaires sur l’outil cliquez sur l’onglet à propos et suivre la [liaison de commentaires](https://go.microsoft.com/fwlink/?linkid=874109). 
   
 ## <a name="install-the-page-diagnostic-tool"></a>Installer l’outil de Diagnostic de la Page
 
@@ -111,7 +113,7 @@ Aucune modification n’est visible, sauf que vous serez ainsi averti que vous a
   
 Un élément important pour ce est l’ID de corrélation que l’équipe de Support utilisera ensuite ce numéro pour extraire les informations nécessaires. Copiez l’ID de corrélation (en haut de l’outil de diagnostic de la Page) et qui fournissent pour prendre en charge comme ils ne peuvent pas effectuer le travail requis sans l’ID terminée.
     
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Optimisation des performances SharePoint Online](tune-sharepoint-online-performance.md)
 

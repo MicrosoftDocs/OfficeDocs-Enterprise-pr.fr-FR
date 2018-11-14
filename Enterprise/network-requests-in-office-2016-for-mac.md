@@ -1,9 +1,9 @@
 ---
-title: Requêtes réseau dans Office 2016 pour Mac
+title: Demandes de réseau dans Office pour Mac
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 8/13/2018
+ms.date: 11/9/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -12,17 +12,18 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365_Setup
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
-description: 2016 Office pour les applications Mac offrent une expérience de l’application native sur la plate-forme Mac OS. Chaque application est conçue pour fonctionner dans de nombreux scénarios, y compris les États lorsqu’aucun accès réseau n’est disponible. Lorsqu’un ordinateur est connecté à un réseau, les applications de se connectent automatiquement à une série de services web pour fournir des fonctionnalités améliorées. Ce livre blanc décrit les points de terminaison et les applications de tentent d’atteindre les URL et les services fournis. Cette information est utile lors de la résolution des problèmes réseau les problèmes de configuration et en définissant une stratégie pour les serveurs proxy de réseau. Les détails de cet article sont conçus pour compléter l’URL dans Office 365 et l’article de plages d’adresses.
-ms.openlocfilehash: b94b77a0ff8cd37b0fa1c881ba590853615bfe93
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+description: Applications Office pour Mac offrent une expérience de l’application native sur la plate-forme Mac OS. Chaque application est conçue pour fonctionner dans de nombreux scénarios, y compris les États lorsqu’aucun accès réseau n’est disponible. Lorsqu’un ordinateur est connecté à un réseau, les applications de se connectent automatiquement à une série de services web pour fournir des fonctionnalités améliorées. Ce livre blanc décrit les points de terminaison et les applications essaient d’atteindre les URL et les services fournis. Cette information est utile lors de la résolution des problèmes réseau les problèmes de configuration et en définissant une stratégie pour les serveurs proxy de réseau. Les détails de cet article sont conçus pour compléter l’URL dans Office 365 et l’article de plages d’adresses.
+ms.openlocfilehash: 929b93433f5d990952b540a1b28fe2ac74edfb5d
+ms.sourcegitcommit: ba91a1d2d785c1df425617b309fec2edc093793a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540579"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26219894"
 ---
-# <a name="network-requests-in-office-2016-for-mac"></a>Requêtes réseau dans Office 2016 pour Mac
+# <a name="network-requests-in-office-for-mac"></a>Demandes de réseau dans Office pour Mac
 
-2016 Office pour les applications Mac offrent une expérience de l’application native sur la plate-forme Mac OS. Chaque application est conçue pour fonctionner dans de nombreux scénarios, y compris les États lorsqu’aucun accès réseau n’est disponible. Lorsqu’un ordinateur est connecté à un réseau, les applications de se connectent automatiquement à une série de services web pour fournir des fonctionnalités améliorées. Ce livre blanc décrit les points de terminaison et les applications de tentent d’atteindre les URL et les services fournis. Cette information est utile lors de la résolution des problèmes de configuration réseau et définition de stratégies pour les serveurs proxy de réseau. Les détails de cet article sont conçus pour compléter l' [URL de Office 365 et l’adresse article plages](urls-and-ip-address-ranges.md), qui inclut des points de terminaison pour les ordinateurs qui exécutent Microsoft Windows.
+Applications Office pour Mac offrent une expérience de l’application native sur la plate-forme Mac OS. Chaque application est conçue pour fonctionner dans de nombreux scénarios, y compris les États lorsqu’aucun accès réseau n’est disponible. Lorsqu’un ordinateur est connecté à un réseau, les applications de se connectent automatiquement à une série de services web pour fournir des fonctionnalités améliorées. Les informations suivantes décrivent les points de terminaison et les applications essaient d’atteindre les URL et les services fournis. Cette information est utile lors de la résolution des problèmes de configuration réseau et définition de stratégies pour les serveurs proxy de réseau. Les détails de cet article sont conçus pour compléter l' [URL de Office 365 et l’adresse article plages](urls-and-ip-address-ranges.md), qui inclut des points de terminaison pour les ordinateurs qui exécutent Microsoft Windows. Sauf contraire, les informations contenues dans cet article s’applique également à 2019 Office pour Mac et 2016 Office pour Mac, qui sont disponibles en tant qu’achat unique à partir d’un magasin de vente au détail ou via un contrat de licence en volume. 
+
   
 La plupart de cet article est tables détaillant réseau URL, type et la description de service ou la fonctionnalité fournie par ce point de terminaison. Chacune des applications Office peut-être différer dans son utilisation du service et le point de terminaison. Les applications suivantes sont définies dans les tableaux ci-dessous :
   
@@ -39,12 +40,13 @@ Le type d’URL est défini comme suit :
 - SS : Statique séparées-URL est codée dans le cadre d’une page web ou d’un redirecteur.
     
 - CS : Service de configuration - l’URL est renvoyée dans le cadre du Service de Configuration d’Office.
+
     
-## <a name="office-2016-for-mac-default-configuration"></a>2016 Office pour la configuration par défaut de Mac
+## <a name="office-for-mac-default-configuration"></a>Office pour la configuration par défaut de Mac
 
  **Installation et mises à jour**
   
-Les points de terminaison de réseau suivants sont utilisés pour télécharger le 2016 Office Mac programme d’installation à partir du Microsoft réseau CDN (Content Delivery).
+Les points de terminaison de réseau suivants sont utilisés pour télécharger le programme Office pour Mac installation à partir du Microsoft réseau CDN (Content Delivery).
   
 |**URL**|**Type**|**Description**|
 |:-----|:-----|:-----|
@@ -127,7 +129,7 @@ Les points de terminaison réseau suivantes s’appliquent uniquement à l’abo
    
  **Recherche**
   
-Les points de terminaison réseau suivantes s’appliquent à ces deux abonnement à Office 365.
+Les points de terminaison réseau suivantes s’appliquent uniquement à l’abonnement à Office 365.
   
 |**URL**|**Applications**|**Type**|**Description**|
 |:-----|:-----|:-----|:-----|
@@ -171,7 +173,7 @@ Les points de terminaison réseau suivantes s’appliquent à Office 365 abonnem
 |:-----|:-----|:-----|:-----|
 |```https://sas.office.microsoft.com/```  <br/> |WXPON  <br/> |CS  <br/> |Envoyer un sourire  <br/> |
    
- **Contacter le support**
+ **Contactez le support technique**
   
 Les points de terminaison réseau suivantes s’appliquent à Office 365 abonnement et licence de vente au détail/Volume activations.
   
@@ -220,7 +222,7 @@ Les points de terminaison réseau suivantes s’appliquent à Office 365 abonnem
    
  **Liens fiables**
   
-Le point de terminaison de réseau suivants s’applique aux applications Office 2016.
+Le point de terminaison réseau suivante s’applique à toutes les applications Office pour Office 365 abonnement uniquement.
   
 |**URL**|**Type**|**Description**|
 |:-----|:-----|:-----|
@@ -228,7 +230,7 @@ Le point de terminaison de réseau suivants s’applique aux applications Office
    
  **Bloquer la création de rapports**
   
-Le point de terminaison réseau suivante s’applique à toutes les applications Office 2016 et les types de licences. Lorsqu’un processus de manière inattendue tombe en panne, un rapport est généré et envoyé au service de Dr Watson.
+Le point de terminaison réseau suivante s’applique à toutes les applications Office pour Office 365 abonnement et licence de vente au détail/Volume activations. Lorsqu’un processus de manière inattendue tombe en panne, un rapport est généré et envoyé au service de Dr Watson.
   
 |**URL**|**Type**|**Description**|
 |:-----|:-----|:-----|
@@ -237,7 +239,7 @@ Le point de terminaison réseau suivante s’applique à toutes les applications
    
 ## <a name="options-for-reducing-network-requests-and-traffic"></a>Options permettant de réduire le trafic et les demandes de réseau
 
-La configuration par défaut de 2016 Office pour Mac fournit la meilleure expérience utilisateur, à la fois en termes de fonctionnalités et de maintien de l’ordinateur à jour. Dans certains scénarios, vous pouvez souhaiter empêcher les applications de communication avec des points de terminaison réseau. Cette section décrit les options pour le faire.
+La configuration par défaut d’Office pour Mac fournit la meilleure expérience utilisateur, à la fois en termes de fonctionnalités et de maintien de l’ordinateur à jour. Dans certains scénarios, vous pouvez souhaiter empêcher les applications de communication avec des points de terminaison réseau. Cette section décrit les options pour le faire.
   
  ### <a name="disabling-cloud-sign-in-and-office-add-ins"></a>Désactivation des compléments dans le nuage et de Office
   
@@ -266,11 +268,11 @@ Si les utilisateurs tentent d’accéder à la fonction de connexion, ils verron
 Pour rétablir toutes les fonctionnalités de l’utilisateur, soit définir l’option « 2 » ou la supprimer.
   
 > [!NOTE]
-> Cette préférence nécessite 2016 Office pour Mac version 15.25 [160726] ou version ultérieure. 
+> Cette préférence requiert Office pour générer Mac 15.25 [160726] ou version ultérieure. 
   
 ### <a name="telemetry"></a>Télémétrie
   
-2016 Office pour Mac envoie les informations de télémétrie à Microsoft à intervalles réguliers. Données sont téléchargées vers le point de terminaison « Connexion ». Les données de télémétrie permettent l’équipe d’ingénierie d’évaluer l’intégrité et les comportements inattendus de chaque application Office. Il existe deux catégories de télémétrie :
+Office pour Mac envoie les informations de télémétrie à Microsoft à intervalles réguliers. Données sont téléchargées vers le point de terminaison « Connexion ». Les données de télémétrie permettent l’équipe d’ingénierie d’évaluer l’intégrité et les comportements inattendus de chaque application Office. Il existe deux catégories de télémétrie :
   
 - **Pulsation** contient des informations de licence et de version. Ces données sont envoyées immédiatement après le lancement d’application. 
     
@@ -307,7 +309,7 @@ Dans certains cas, le contenu d’un document entraîne l’application à bloqu
   
 ### <a name="updates"></a>Mises à jour
   
-Microsoft publie 2016 Office pour les mises à jour Mac à intervalles réguliers (généralement une fois par mois). Nous conseillons vivement d’utilisateurs et les administrateurs informatiques à maintenir les ordinateurs à jour pour vérifier les derniers correctifs de sécurité sont installés. Dans les cas où les administrateurs informatiques à mieux contrôler et gérer les mises à jour de l’ordinateur, la préférence suivante peut être définie pour empêcher le processus de mise à jour automatique de détection et offrant des mises à jour automatiquement :
+Microsoft publie Office pour les mises à jour Mac à intervalles réguliers (généralement une fois par mois). Nous conseillons vivement d’utilisateurs et les administrateurs informatiques à maintenir les ordinateurs à jour pour vérifier les derniers correctifs de sécurité sont installés. Dans les cas où les administrateurs informatiques à mieux contrôler et gérer les mises à jour de l’ordinateur, la préférence suivante peut être définie pour empêcher le processus de mise à jour automatique de détection et offrant des mises à jour automatiquement :
   
 ```defaults write com.microsoft.autoupdate2 HowToCheck -string 'Manual'```
 
@@ -315,7 +317,7 @@ Microsoft publie 2016 Office pour les mises à jour Mac à intervalles régulier
   
 Si les blocs de votre organisation demande aux URL via un pare-feu ou le serveur proxy veillez à configurer les URL répertoriées dans ce document en tant qu’autorisés ou bloquer accompagnée d’une réponse X 40 (403 ou 404). Une réponse X 40 permettra aux applications Office accepter normalement l’impossibilité d’accéder à la ressource et fournit une expérience utilisateur plus rapide, à faire glisser la connexion, qui à son tour entraîne le client de réessayer.
   
-Si votre serveur proxy requiert une authentification, une réponse 407 est retournées au client. Pour optimiser les performances, assurez-vous que vous utilisez des versions d’Office 2016 15.27 ou version ultérieures, car ils incluent des correctifs spécifiques pour travailler avec des serveurs NTLM et Kerberos.
+Si votre serveur proxy requiert une authentification, une réponse 407 est retournées au client. Pour optimiser les performances, assurez-vous que vous utilisez Office pour Mac s’appuie 15.27 ou version ultérieure, car ils incluent des correctifs spécifiques pour travailler avec des serveurs NTLM et Kerberos.
   
   
 ## <a name="see-also"></a>Voir aussi

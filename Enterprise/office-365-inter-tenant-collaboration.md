@@ -3,7 +3,7 @@ title: Collaboration inter-client dans Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 6/28/2018
+ms.date: 11/08/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb45fd8b-1d5d-4b0c-9c5a-479dbb176e7d
 description: Découvrez le fonctionne d’Office 365 collaboration entre les clients et les organisations.
-ms.openlocfilehash: 932c837f9dc09dd0469a17ad4e6a05f09966d29c
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: ec844f78a0ae31469c2ca92c5cb97d965bdb3508
+ms.sourcegitcommit: ba91a1d2d785c1df425617b309fec2edc093793a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540389"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26219884"
 ---
 # <a name="office-365-inter-tenant-collaboration"></a>Collaboration inter-client dans Office 365
 
@@ -41,15 +41,14 @@ Supposons que deux organisations, Fabrikam et Contoso, chacun ont un Office 365 
 
 |**Partage des objectifs**|**Action d’administration**|**Informations d’ordre général**|
 |:-----|:-----|:-----|
-|Partager des sites et des documents avec des utilisateurs externes  <br/> |Administrateurs de configurer le client de partage ou de niveau collection de sites pour le compte Microsoft authentifiés, bureau ou une école compte comptes authentifiés ou invités  <br/> |
-  [Gérer le partage externe pour votre environnement SharePoint Online](https://support.office.com/en-US/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&amp;rs=en-US&amp;ad=US) <br/> [Domaines restreints partage dans Office 365, SharePoint Online et OneDrive entreprise](https://support.office.com/en-US/article/Restricted-Domains-Sharing-in-Office-365-SharePoint-Online-and-OneDrive-for-Business-5d7589cd-0997-4a00-a2ba-2320ec49c4e9) <br/> [Utilisez SharePoint Online en tant qu’une solution extranet d’entreprise-entreprise (B2B)](https://support.office.com/article/7b087413-165a-4e94-8871-4393e0b9c037) <br/> |
+|Partager des sites et des documents avec des utilisateurs externes  <br/> |Administrateurs de configurer le client de partage ou de niveau collection de sites pour le compte Microsoft authentifiés, bureau ou une école compte comptes authentifiés ou invités  <br/> |[Gérer le partage externe pour votre environnement SharePoint Online](https://support.office.com/en-US/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&amp;rs=en-US&amp;ad=US) <br/> [Domaines restreints partage dans Office 365, SharePoint Online et OneDrive entreprise](https://support.office.com/en-US/article/Restricted-Domains-Sharing-in-Office-365-SharePoint-Online-and-OneDrive-for-Business-5d7589cd-0997-4a00-a2ba-2320ec49c4e9) <br/> [Utilisez SharePoint Online en tant qu’une solution extranet d’entreprise-entreprise (B2B)](https://support.office.com/article/7b087413-165a-4e94-8871-4393e0b9c037) <br/> |
 |Suivi et contrôle le partage externe pour les utilisateurs finaux  <br/> |OneDrive pour les propriétaires de fichiers d’entreprise et les utilisateurs finaux SharePoint Online configurer des sites et partage de documents et établir des notifications pour effectuer le suivi de partage  <br/> |[Configurer les notifications d’un partage externe de OneDrive entreprise](https://support.office.com/en-US/article/Configure-notifications-for-external-sharing-for-OneDrive-for-Business-b640c693-f170-4227-b8c1-b0a7e0fa876b) <br/> [Partager des fichiers ou dossiers SharePoint dans Office 365](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c) <br/> |
    
 ## <a name="skype-for-business-collaboration-options"></a>Skype pour les options de collaboration d’entreprise
 
 |**Objectif de partage**|**Action d’administration**|**Informations d’ordre général**|
 |:-----|:-----|:-----|
-|Skype pour Business Online - appels, messagerie instantanée et présence avec les autres Skype pour les utilisateurs professionnels  <br/> |Les administrateurs peuvent activer leur Skype pour les utilisateurs professionnels en ligne à la messagerie instantanée, émettre des appels audio/vidéo et présence avec des utilisateurs dans un autre client Office 365.  <br/> |[Permettre aux utilisateurs de contacts Skype externe pour les utilisateurs professionnels](https://support.office.com/article/b414873a-0059-4cd5-aea1-e5d0857dbc94) <br/> |
+|Skype pour Business Online - appels, messagerie instantanée et présence avec les autres Skype pour les utilisateurs professionnels  <br/> |Les administrateurs peuvent activer leur Skype pour les utilisateurs professionnels en ligne à la messagerie instantanée, émettre des appels audio/vidéo et présence avec des utilisateurs dans un autre client Office 365.  <br/> |[Autoriser les utilisateurs à contacter des utilisateurs Skype Entreprise externes](https://support.office.com/article/b414873a-0059-4cd5-aea1-e5d0857dbc94) <br/> |
 |Skype pour Business Online - messagerie instantanée, les appels et la présence avec les utilisateurs Skype (consommateur)  <br/> |Les administrateurs peuvent activer leur Skype pour les utilisateurs professionnels en ligne à la messagerie instantanée, émettre des appels et présence avec les utilisateurs Skype (consommateur).  <br/> |[Permettre Skype pour les utilisateurs d’ajouter des contacts Skype](https://support.office.com/article/08666236-1894-42ae-8846-e49232bbc460) <br/> |
    
 ## <a name="azure-ad-b2b-collaboration-options"></a>Options AD B2B Collaboration Azure
@@ -77,7 +76,13 @@ Supposons que deux organisations, Fabrikam et Contoso, chacun ont un Office 365 
 |Collaborer en équipe avec des utilisateurs externes à l’organisation  <br/> |Un administrateur global pour le client Office 365 invitation doit activer la collaboration externe dans les équipes. Les propriétaires de l’équipe et les administrateurs globaux pourront désormais inviter quiconque avec une adresse de messagerie pour la collaboration en équipe.  <br/> Administrateurs peuvent également gérer et modifier les invités déjà présentes dans leur client.  <br/> |[Autoriser l’accès invité](https://docs.microsoft.com/en-us/microsoftteams/teams-dependencies) <br/> [Activer ou désactiver les accès invité dans les équipes](https://docs.microsoft.com/en-us/microsoftteams/set-up-guests) <br/> [Utiliser PowerShell pour contrôler l’accès invité](https://docs.microsoft.com/en-us/microsoftteams/guest-access-powershell) <br/> [Liste de vérification de l’accès invité](https://docs.microsoft.com/en-us/microsoftteams/guest-access-checklist) <br/> [Afficher les utilisateurs d’invité](https://docs.microsoft.com/en-us/microsoftteams/view-guests) <br/> [Modifier les informations utilisateur invité](https://docs.microsoft.com/en-us/microsoftteams/edit-guests-information) <br/> |
 |Les propriétaires de l’équipe peuvent inviter et gérer comment invités collaborent au sein de leurs équipes.  <br/> |Les propriétaires de l’équipe ont des contrôles supplémentaires sur ce que les invités peuvent faire dans leurs équipes.  <br/> |[Ajouter des invités](https://support.office.com/en-us/article/teams-and-channels-df38ae23-8f85-46d3-b071-cb11b9de5499?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_addingguests&amp;ID0EAABAAA=Add_guests) <br/> [Ajouter un invité à une équipe](https://docs.microsoft.com/en-us/microsoftteams/add-guests) <br/> [Gérer l’accès invité dans les équipes](https://docs.microsoft.com/en-us/microsoftteams/manage-guests) <br/> [Voir qui est d’une équipe ou dans un canal d’échange](https://support.office.com/en-us/article/see-who-s-on-a-team-or-in-a-channel-5c6be9be-9c45-4a0f-a1a0-f332b23cb6b7?ui=en-US&amp;rs=en-US&amp;ad=US) <br/> |
 |Invités à partir d’autres clients peuvent afficher le contenu dans les équipes et collaborer avec les autres membres  <br/> |Aucun.  <br/> |[L’expérience de l’accès invité](https://docs.microsoft.com/en-us/microsoftteams/guest-experience) <br/> |
-   
+
+## <a name="power-bi-collaboration-options"></a>Options de collaboration Power BI
+
+|**Objectif de partage**|**Action d’administration**|**Informations d’ordre général**|
+|:-----|:-----|:-----|
+|Power BI permet aux utilisateurs externes invité utiliser du contenu partagé par le biais de liens. Cela permet aux utilisateurs de l’organisation de distribuer du contenu de manière sécurisée entre des organisations.<br/> | L’administrateur d’aide à la décision d’alimentation peut contrôler si les utilisateurs peuvent inviter des utilisateurs externes pour afficher le contenu au sein de l’organisation. <br/> |[Distribuer du contenu de Power BI pour les utilisateurs externes invité avec Azure AD B2B](https://docs.microsoft.com/en-us/power-bi/service-admin-azure-ad-b2b) <br/> |
+ 
 ## <a name="points-to-be-aware-of-about-office-365-inter-tenant-collaboration"></a>Points à connaître à propos de la collaboration entre locataires de Office 365
 
 ### <a name="sharing-of-user-accounts-licenses-subscriptions-and-storage"></a>Partage de stockage, les licences, les abonnements et les comptes d’utilisateurs

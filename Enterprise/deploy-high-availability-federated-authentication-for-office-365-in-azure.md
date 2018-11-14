@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
 description: "Résumé : Configurer l'authentification fédérée haute disponibilité pour votre abonnement Office 365 dans Microsoft Azure."
-ms.openlocfilehash: c72090638bcdcb580353baa7a733051971598e66
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 9ab2cf992a0170e8b6528c74c868f0db5feeb6e1
+ms.sourcegitcommit: e334616f1b357365b380990eda63f6e63d52ec5b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22914899"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "26024656"
 ---
 # <a name="deploy-high-availability-federated-authentication-for-office-365-in-azure"></a>Déployer une authentification fédérée haute disponibilité pour Office 365 dans Azure
 
@@ -88,15 +88,15 @@ Pour calculer les coûts estimés pour cette configuration, utilisez la [calcula
 
 Vous déployez cette charge de travail au cours des phases suivantes :
   
-- [Authentification fédérée haute disponibilité, phase 1 : Configurer Azure](high-availability-federated-authentication-phase-1-configure-azure.md). Créez des groupes de ressources, des comptes de stockage, des groupes à haute disponibilité et un réseau virtuel intersite.
+- [Phase 1 : Configuration Azure](high-availability-federated-authentication-phase-1-configure-azure.md). Créez des groupes de ressources, des comptes de stockage, des groupes à haute disponibilité et un réseau virtuel intersites.
     
-- [High availability federated authentication Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Créez et configurez des contrôleurs de domaine répliqués Windows Server Active Directory (AD) et le serveur DirSync.
+- [Phase 2 : Configuration des contrôleurs de domaine](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Créez et configurez des contrôleurs de domaine répliqués Windows Server Active Directory (AD) et le serveur DirSync.
     
-- [Authentification fédérée haute disponibilité, phase 3 : Configurer les serveurs AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). Créez et configurez les deux serveurs AD FS.
+- [Phase 3 : Configuration des serveurs AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). Créez et configurez les deux serveurs AD FS.
     
-- [Authentification fédérée haute disponibilité, phase 4 : Configurer les proxys d’application web](high-availability-federated-authentication-phase-4-configure-web-application-pro.md). Créez et configurez les deux serveurs proxy d’application web.
+- [Phase 4 : Configuration des proxys d’application web](high-availability-federated-authentication-phase-4-configure-web-application-pro.md). Créez et configurez les deux serveurs proxy d’application web.
     
-- [Authentification fédérée haute disponibilité, phase 5 : Configurer l’authentification fédérée pour Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md). Configurez l’authentification fédérée pour votre abonnement Office 365.
+- [Phase 5 : Configuration de l’authentification fédérée pour Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md). Configurez l’authentification fédérée pour votre abonnement Office 365.
     
 Ces articles fournissent un guide normatif phase par phase pour créer une authentification fédérée haute disponibilité fonctionnelle pour Office 365 dans les services d’infrastructure Azure à partir d’une architecture prédéfinie. Gardez les éléments suivants à l’esprit :
   

@@ -3,7 +3,7 @@ title: Ressources relatives à l’architecture informatique du cloud Microsoft
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 05/18/2018
+ms.date: 11/13/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: 'Résumé : Découvrez comment utiliser les plateformes et les services cloud Microsoft. Consultez notre feuille de route Enterprise Cloud, explorez notre série sur les architectures cloud et bien plus encore.'
-ms.openlocfilehash: 32d56908ebed809b0a1acb327e42eea559f6fe82
-ms.sourcegitcommit: d0f1f34b1702e304fec85ca72f1f660e9b328dd5
+ms.openlocfilehash: c7fb024492ad77155f8d375d9f4f90f14f9682d2
+ms.sourcegitcommit: 9da69a749ba557a4c4ae80070ce57e606148521f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "24022093"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "26525845"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Ressources relatives à l’architecture informatique du cloud Microsoft
 
@@ -38,8 +38,7 @@ Ces affiches et ces outils relatifs à l’architecture fournissent des informat
     - [Sécurité cloud Microsoft pour les architectes d’entreprise](microsoft-cloud-it-architecture-resources.md#security)
     - [Mise en réseau cloud Microsoft pour les architectes d'entreprise](microsoft-cloud-it-architecture-resources.md#networking)
     - [Mobilité et sécurité Microsoft pour les architectes d’entreprise](microsoft-cloud-it-architecture-resources.md#mobility)
-    - [Stockage cloud Microsoft pour les architectes d'entreprise](microsoft-cloud-it-architecture-resources.md#storage)
-    - [Cloud hybride Microsoft pour les architectes d'entreprise](microsoft-cloud-it-architecture-resources.md#hybrid)
+    - [Cloud hybride Microsoft pour les architectes d’entreprise](microsoft-cloud-it-architecture-resources.md#hybrid)
     - [Attaques courantes et fonctionnalités Microsoft pour protéger votre organisation](#common-attacks-and-microsoft-capabilities-that-protect-your-organization)
     
 - **[Série de solutions Office 365 Entreprise](microsoft-cloud-it-architecture-resources.md#BKMK_o365solutions)** :
@@ -112,15 +111,6 @@ Tout ce que les architectes informatiques doivent savoir sur la mobilité avec l
 |**Élément**|**Description**|
 |:-----|:-----|
 |[![Image miniature de l’affiche sur la protection des informations pour Office 365](media/b3c3554f-3ce1-4610-86c7-032e9054ca8b.png)          ](https://www.microsoft.com/download/details.aspx?id=55023) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842076)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842077)  \| [Autres langues](https://www.microsoft.com/download/details.aspx?id=55023) <br/> | Ce modèle contient : <ul><li>Applications mobiles de premier plan pour les entreprises </li><li>Plateforme, services et ressources pour le développement d’applications mobiles </li><li>Gestion de l’accès aux applications et aux données cloud à partir d’appareils mobiles </li><li>Comparaison des fonctionnalités et de la plateforme prises en charge pour Office 365 MDM et Azure Active Directory Premium et Intune </li></ul><br/> |
-   
-<a name="storage"> </a>
-### <a name="microsoft-cloud-storage-for-enterprise-architects"></a>Stockage cloud Microsoft pour les architectes d’entreprise
-
-Tout ce que les architectes informatiques doivent savoir sur les options de stockage dans les plateformes et les services cloud Microsoft.
-  
-|**Élément**|**Description**|
-|:-----|:-----|
-|[![Image miniature représentant le modèle de stockage cloud Microsoft](media/0d4e2eb9-1109-4b3b-bf9e-2f3eff2e2cc4.png)          ](https://www.microsoft.com/download/details.aspx?id=49552) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842079)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842080)           \| [Article](hhttps://technet.microsoft.com/library/mt842597.aspx) <br/>[Autres langues](https://www.microsoft.com/download/details.aspx?id=49552) <br/> | Ce modèle contient : <ul><li>Raisons de l’utilisation du stockage cloud et principaux scénarios </li><li>Options de stockage cloud incluant des services existants </li><li>Options de stockage que vous pouvez utiliser comme point de départ pour votre solution de stockage </li><li>Stockage des blocs de construction pour créer votre propre solution de stockage ou de stockage pour vos applications</li></ul><br/>|
    
 <a name="hybrid"> </a>
 ### <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Cloud hybride Microsoft pour les architectes d’entreprise

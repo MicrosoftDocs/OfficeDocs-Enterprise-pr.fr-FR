@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: 'Résumé : Comprendre comment ExpressRoute peut garantir des connexions plus fiables et plus rapides aux services et aux plateformes cloud de Microsoft.'
-ms.openlocfilehash: d3a19dcd3ce8732b3349c5cacce5b64159850682
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 1cd78372d37e40a53ba7725ff3653ef01daa48b0
+ms.sourcegitcommit: 9da69a749ba557a4c4ae80070ce57e606148521f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915489"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "26525835"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>ExpressRoute pour la connectivité au cloud de Microsoft
 
@@ -102,7 +102,7 @@ Une seule connexion ExpressRoute prend en charge jusqu'à trois relations d’ho
 
 ![Figure 3 : trois relations BGP différentes dans une seule connexion ExpressRoute](media/Network-Poster/ERPeering.png)
   
-La figure 3 illustre une connexion ExpressRoute à partir d’un réseau local. La connexion ExpressRoute contient trois relations d’homologation logiques. Une relation d’homologation Microsoft accède aux services Microsoft SaaS, y compris Office 365 et Dynamics CRM Online. Une relation d’homologation publique accède aux services Azure PaaS. Une relation d’homologation privée accède à Azure IaaS et à une passerelle de réseau virtuel qui héberge des machines virtuelles.
+La figure 3 illustre une connexion ExpressRoute à partir d’un réseau local. La connexion ExpressRoute a trois relations homologation logiques. Une relation d’homologation Microsoft accède aux services Microsoft SaaS, y compris Dynamcs CRM Online et Office 365. Une relation d’homologation publique accède aux services PaaS Azure. Une relation d’homologation privée passe à Azure IaaS et une passerelle de réseau virtuel qui héberge des ordinateurs virtuels.
   
 Relation BGP d’homologation de Microsoft : 
   
@@ -186,9 +186,9 @@ Lorsque vous créez une connexion ExpressRoute vers un emplacement d'homologatio
   
 Cela peut entraîner une remise non optimale dans les centres de données Microsoft locaux pour le modèle de connectivité complète.
   
-**Figure 7 : Exemple d'une organisation géographiquement dispersée qui utilise une seule connexion ExpressRoute**
+**La figure 7 : Exemple d’une organisation qui utilise une seule connexion ExpressRoute géographiquement**
 
-![Figure 7 : exemple d’une organisation géographiquement dispersée qui utilise une seule connexion ExpressRoute](media/Network-Poster/MSNet1.png)
+![La figure 7 : Exemple d’une organisation qui utilise une seule connexion ExpressRoute géographiquement](media/Network-Poster/MSNet1.png)
   
 La figure 7 illustre une organisation avec deux emplacements : l’emplacement 1 est situé dans le nord-ouest des États-Unis et l’emplacement 2 dans le nord-est du pays. Ils sont connectés par un fournisseur de réseau étendu complet. Cette organisation possède également une connexion ExpressRoute vers un emplacement d’homologation Microsoft sur la côte ouest. Le trafic de l’emplacement 2 dans le nord-est destiné à un centre de données de la côte est doit emprunter l’ensemble du réseau étendu de l’organisation jusqu’à la côte ouest où se trouve l’emplacement d’homologation Microsoft, puis traverser le pays sur le réseau cloud de Microsoft pour revenir au centre de données de la côte est.
   

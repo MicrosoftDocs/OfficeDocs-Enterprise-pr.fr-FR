@@ -99,7 +99,7 @@
 | 11/1/2018 | [Planification de réseau avec ExpressRoute pour Office 365](/Office365/Enterprise/network-planning-with-expressroute) | Modifié le |
 | 11/1/2018 | [Requêtes réseau dans Office 2016 pour Mac](/Office365/Enterprise/network-requests-in-office-2016-for-mac) | Modifié le |
 | 11/1/2018 | [Environnement de développement/test Office 365](/Office365/Enterprise/office-365-dev-test-environment) | Modifié le |
-| 11/1/2018 | [Points de terminaison Office 365 de l’Allemagne](/Office365/Enterprise/office-365-germany-endpoints) | Modifié le |
+| 11/1/2018 | [Points de terminaison Office 365 Germany](/Office365/Enterprise/office-365-germany-endpoints) | Modifié le |
 | 11/1/2018 | [Vue d’ensemble de connectivité de réseau Office 365](/Office365/Enterprise/office-365-networking-overview) | Modifié le |
 | 11/1/2018 | [Points de terminaison US gouvernement DoD Office 365](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | Modifié le |
 | 11/1/2018 | [Points de terminaison US gouvernement GCC haute Office 365](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | Modifié le |
@@ -128,10 +128,29 @@
 | 11/1/2018 | [Ressources pour vous aider à mettre à niveau à partir d’Office 2007 de serveurs et de clients](/Office365/Enterprise/upgrade-from-office-2007-servers-and-products) | Modifié le |
 | 11/1/2018 | [Ressources pour vous aider à mettre à niveau à partir d’Office 2010 des serveurs et des clients](/Office365/Enterprise/upgrade-from-office-2010-servers-and-products) | Modifié le |
 | 11/2/2018 | [Meilleures pratiques pour l’utilisation d’Office 365 sur un réseau lent](/Office365/Enterprise/best-practices-for-using-office-365-on-a-slow-network) | Modifié le |
-| 11/2/2018 | [Points de terminaison Office 365 de l’Allemagne](/Office365/Enterprise/office-365-germany-endpoints) | Modifié le |
+| 11/2/2018 | [Points de terminaison Office 365 Germany](/Office365/Enterprise/office-365-germany-endpoints) | Modifié le |
 | 11/2/2018 | [Points de terminaison US gouvernement DoD Office 365](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | Modifié le |
 | 11/2/2018 | [Planifier les périphériques réseau qui se connectent aux services Office 365](/Office365/Enterprise/plan-for-network-devices) | Modifié le |
 | 11/2/2018 | [URLs et plages d’adresses IP pour Office 365 géré par 21Vianet](/Office365/Enterprise/urls-and-ip-address-ranges-21vianet) | Modifié le |
 | 11/2/2018 | [URL et plages d’adresses IP Office 365](/Office365/Enterprise/urls-and-ip-address-ranges) | Modifié le |
 | 11/2/2018 | [Ressources pour vous aider à mettre à niveau à partir d’Office 2007 de serveurs et de clients](/Office365/Enterprise/upgrade-from-office-2007-servers-and-products) | Modifié le |
 | 11/2/2018 | [Ressources pour vous aider à mettre à niveau à partir d’Office 2010 des serveurs et des clients](/Office365/Enterprise/upgrade-from-office-2010-servers-and-products) | Modifié le |
+
+
+## <a name="week-of-november-05-2018"></a>Semaine de novembre 05, 2018
+
+
+| Publié le |Titre de la rubrique | Modification |
+|------|------------|--------|
+| 11/5/2018 | [Connecter un réseau local à Microsoft Azure Virtual Network](/Office365/Enterprise/connect-an-on-premises-network-to-a-microsoft-azure-virtual-network) | Modifié le |
+| 11/5/2018 | [Déploiement de la synchronisation d’annuaires Office 365 dans Microsoft Azure](/Office365/Enterprise/deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure) | Modifié le |
+| 11/5/2018 | [Configurer votre réseau pour Office 365](/Office365/Enterprise/set-up-network-for-office-365) | ajouté |
+| 11/6/2018 | [Points de terminaison supplémentaires non inclus dans le service web pour URL et adresses IP Office 365](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | Modifié le |
+| 11/6/2018 | [Déployer une authentification fédérée haute disponibilité pour Office 365 dans Azure](/Office365/Enterprise/deploy-high-availability-federated-authentication-for-office-365-in-azure) | Modifié le |
+| 11/6/2018 | [Réglage des performances Office 365 à l’aide du planning de référence et de l’historique des performances](/Office365/Enterprise/performance-tuning-using-baselines-and-history) | Modifié le |
+| 11/7/2018 | [Points de terminaison Office 365](/Office365/Enterprise/office-365-endpoints) | ajouté |
+| 11/7/2018 | [Configurer votre réseau pour Office 365](/Office365/Enterprise/set-up-network-for-office-365) | Modifié le |
+| 11/8/2018 | [Requêtes réseau dans Office pour Mac](/Office365/Enterprise/network-requests-in-office-2016-for-mac) | Modifié le |
+| 11/8/2018 | [Collaboration inter-client dans Office 365](/Office365/Enterprise/office-365-inter-tenant-collaboration) | Modifié le |
+| 11/8/2018 | [Introduction à l’optimisation des performances pour SharePoint Online](/Office365/Enterprise/introduction-to-performance-tuning-for-sharepoint-online) | Modifié le |
+| 11/9/2018 | [Utilisez l’outil de diagnostic de la Page pour SharePoint Online](/Office365/Enterprise/page-diagnostics-for-spo) | Modifié le |

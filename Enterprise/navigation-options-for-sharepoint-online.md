@@ -12,12 +12,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: Cet article décrit les sites des options de navigation avec publication SharePoint activé dans SharePoint Online. Le choix et la configuration de la navigation affecte considérablement les performances et l’évolutivité de sites dans SharePoint Online.
-ms.openlocfilehash: 08790dcee343e9e69bbaab149cce8a390470e7d6
-ms.sourcegitcommit: 5731dce2440e5a7a261f6360e8e2e9639d339d4e
+ms.openlocfilehash: 5a190ca643c20b6644ca1eecdac2a4a2e281a09e
+ms.sourcegitcommit: 45633b7034ee98d0cd833db9743f283b638237f4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "23957449"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "26547176"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Options de navigation pour SharePoint Online
 
@@ -193,7 +193,7 @@ Cette approche implique la création d’une page maître personnalisée et en r
 var root = “https://spperformance.sharepoint.com/sites/NavigationBySearch”;
 ```
 <br/>
-8. Les résultats sont affectés au tableau self.nodes et une hiérarchie repose sur des objets à l’aide de linq.js affectation la sortie à un tableau self.heirarchy. Ce tableau est l’objet qui est lié à l’élément HTML. Cela s’effectue dans la fonction toggleView() en passant l’objet automatique à la fonction ko.applyBinding().<br/>Cela entraîne ensuite le tableau de hiérarchie doit être lié le code HTML suivant :<br/>
+8. Les résultats sont affectés au tableau self.nodes et une hiérarchie repose sur des objets à l’aide de linq.js affectation la sortie à un tableau self.hierarchy. Ce tableau est l’objet qui est lié à l’élément HTML. Cela s’effectue dans la fonction toggleView() en passant l’objet automatique à la fonction ko.applyBinding().<br/>Cela entraîne ensuite le tableau de hiérarchie doit être lié le code HTML suivant :<br/>
 
 ```
 <div data-bind=”foreach: hierarchy” class=”noindex ms-core-listMenu-horizontalBox”>

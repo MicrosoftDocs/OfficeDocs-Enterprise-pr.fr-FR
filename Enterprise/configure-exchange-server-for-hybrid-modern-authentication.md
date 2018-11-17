@@ -3,7 +3,7 @@ title: Comment configurer Exchange Server en local pour utiliser l’authentific
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 09/28/2018
+ms.date: 11/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 description: Hybride modernes d’authentification (zone), est une méthode de gestion des identités qui offre le plus sécurisé authentification et autorisation utilisateur et est disponible pour les déploiements de hybride Exchange server sur site.
-ms.openlocfilehash: 4267eaff8dfce71461f230310141a98be8a39e80
-ms.sourcegitcommit: 9f921c0cae9a5dd4e66ec1a1261cb88284984a91
+ms.openlocfilehash: df5ea03b06ee1c101b03e19c7acb445c9543586b
+ms.sourcegitcommit: 45633b7034ee98d0cd833db9743f283b638237f4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "25347604"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "26547156"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Comment configurer Exchange Server en local pour utiliser l’authentification moderne hybride
 
@@ -72,7 +72,9 @@ Get-OABVirtualDirectory | FL server,*url*
     
 Vérifiez que les URL que les clients peuvent se connecter à sont répertoriées sous les noms principaux de service HTTPS dans DAS.
   
-1. Tout d’abord, connectez-vous à DAS avec [ces instructions](https://docs.microsoft.com/en-us/office365/enterprise/powershell/connect-to-office-365-powershell).
+1. Tout d’abord, connectez-vous à DAS avec [ces instructions](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell). 
+
+ **Remarque** Vous devez utiliser l’option Connect-MsolService à partir de cette page pour être en mesure d’utiliser la commande ci-dessous. 
     
 2. Pour Exchange URL associées, tapez la commande suivante :
     
@@ -148,7 +150,7 @@ Une fois que vous activez la zone, la prochaine connexion d’un client utilise 
   
 Vous devez également maintenez enfoncée la touche CTRL ENFONCÉE en même temps que vous avec le bouton droit sur l’icône pour le client Outlook (également dans la barre d’état Windows Notifications), cliquez sur état de la connexion. Recherchez l’adresse du client SMTP par rapport à un type de « Authentification » de ' illimitées\*», qui représente le jeton de support utilisé dans OAuth.
   
- **Remarque** Nécessaire de configurer Skype pour les entreprises avec zone ? Vous aurez besoin de deux articles : une qui répertorie les [topologies prises en charge](https://technet.microsoft.com/en-us/library/mt803262.aspx)et une qui vous montre [comment effectuer la configuration](configure-skype-for-business-for-hybrid-modern-authentication.md).
+ **Remarque** Nécessaire de configurer Skype pour les entreprises avec zone ? Vous aurez besoin de deux articles : une qui répertorie les [topologies prises en charge](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)et une qui vous montre [comment effectuer la configuration](configure-skype-for-business-for-hybrid-modern-authentication.md).
   
 
 ## <a name="related-topics"></a>Voir aussi

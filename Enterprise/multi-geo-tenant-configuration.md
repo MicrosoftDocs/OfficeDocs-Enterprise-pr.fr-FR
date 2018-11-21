@@ -11,12 +11,12 @@ ms.custom: ''
 localization_priority: Priority
 ms.collection: Strat_SP_gtc
 description: Découvrez comment configurer OneDrive Entreprise Multi-Géo.
-ms.openlocfilehash: e6a4ee9bd933b3f0db278ca2a7b04661bf123184
-ms.sourcegitcommit: 444efa9e5ea6c0102bb7611d2a9a6b9e072e8a48
+ms.openlocfilehash: 5049904b1419935ed1d55eb73b74d2cd12edb3c0
+ms.sourcegitcommit: 45633b7034ee98d0cd833db9743f283b638237f4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "26539136"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "26547166"
 ---
 # <a name="onedrive-for-business-multi-geo-tenant-configuration"></a>Configuration du client OneDrive Entreprise Multi-Géo
 
@@ -95,7 +95,7 @@ Pour ajouter un emplacement satellite, procédez comme suit :
 
 6. Cliquez sur **Fermer**.
 
-La configuration peut prendre jusqu’à 72 heures selon la taille de votre client. Une fois que la configuration d’un emplacement satellite est terminée, vous recevrez un e-mail de confirmation. Lorsque le nouvel emplacement géographique s’affiche en bleu sur la carte sur l’onglet **Emplacements géographiques** dans le centre d’administration OneDrive, vous pouvez définir l’emplacement des données par défaut des utilisateurs sur cet emplacement géographique. 
+La configuration peut prendre jusqu’à 72 heures selon la taille de votre client. Une fois que la configuration d’un emplacement satellite est terminée, vous recevez un e-mail de confirmation. Lorsque le nouvel emplacement géographique s’affiche en bleu sur la carte sur l’onglet **Emplacements géographiques** dans le centre d’administration OneDrive, vous pouvez définir l’emplacement des données par défaut des utilisateurs sur cet emplacement géographique. 
 
 > [!IMPORTANT]
 > Votre nouvel emplacement satellite est configuré avec des paramètres par défaut. Cela vous permettra de configurer cet emplacement satellite en fonction de vos besoins de conformité locale.

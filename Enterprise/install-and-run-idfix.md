@@ -3,7 +3,6 @@ title: Installation et exécution de l'outil IdFix d'Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: Admin
 ms.topic: get-started-article
 f1_keywords:
@@ -16,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: f4bd2439-3e41-4169-99f6-3fabdfa326ac
 description: Comment installer et exécuter l’outil Office 365 IdFix pour nettoyer votre annuaire active directory avant de le synchroniser avec Office 365.
-ms.openlocfilehash: 642273c0171603d627a19273a78fe66662f4caaf
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: c485d8397aa32005a34b77f886b9bc8f4e857f1b
+ms.sourcegitcommit: 9c493c4e18e83491d106c5e9bab55d1a89298879
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540345"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "26674428"
 ---
 # <a name="install-and-run-the-office-365-idfix-tool"></a>Installation et exécution de l'outil IdFix d'Office 365
 
@@ -40,26 +39,26 @@ Le plus simple à préparer IdFix et en cours d’exécution consiste à install
   
 ### <a name="idfix-hardware-requirements"></a>Configuration matérielle requise pour IdFix
 
-L’ordinateur sur lequel vous installez IdFix doit répondre aux exigences matérielles suivantes :
+L’ordinateur où vous installez IdFix doit répondre aux exigences matérielles minimales suivantes :
   
-- 4 Go de RAM (minimum)
-- 2 Go d'espace disque (minimum)
+- 4 Go de mémoire vive
+- 2 Go d’espace disque
     
 ### <a name="idfix-software-requirements"></a>Configuration logicielle requise pour IdFix
 
-L’ordinateur où vous installez IdFix doit doit être joint au même domaine Active Directory à partir de laquelle vous souhaitez synchroniser les utilisateurs vers Office 365. L’ordinateur doit également avoir installé .NET Framework 4.0. 
+L’ordinateur où vous installez IdFix doit être joint au même domaine Active Directory à partir de laquelle vous souhaitez synchroniser les utilisateurs vers Office 365. L’ordinateur doit également avoir installé .NET Framework 4.0. 
   
-Si vous exécutez Windows Server 2008 ou Windows Server 2012, .NET Framework est probablement déjà installé. Si non, vous pouvez [télécharger .NET 4.0 à partir du centre de téléchargement](https://go.microsoft.com/fwlink/p/?LinkId=400475) ou à l’aide de Windows Update. 
+Si vous exécutez Windows Server 2008 ou Windows Server 2012, .NET Framework est probablement déjà installé. Si non, vous pouvez [télécharger .NET 4.0 à partir du centre de téléchargement](https://go.microsoft.com/fwlink/p/?LinkId=400475) ou via Windows Update. 
   
 ### <a name="idfix-permissions-requirements"></a>Conditions requises d'autorisations IdFix
 
 Le compte d'utilisateur dont vous vous servez pour exécuter IdFix doit disposer de droits d'accès en lecture/écriture à l'annuaire.
   
-Si vous n’êtes pas certain que votre compte d’utilisateur répond à ces exigences, et vous ne savez pas comment vérifier, vous pouvez installer et exécuter IdFix quand même. Si votre compte d’utilisateur ne possède pas les autorisations appropriées, IdFix affichera simplement une erreur lorsque vous essayez d’exécuter.
+Si vous n’êtes pas certain que votre compte d’utilisateur répond à ces exigences, et vous ne savez pas comment vérifier, vous pouvez installer et exécuter IdFix. Si votre compte d’utilisateur ne possède pas les autorisations appropriées, IdFix affichera simplement une erreur lorsque vous essayez d’exécuter.
   
 ## <a name="install-idfix"></a>Installation d'IdFix
 
-Pour installer IdFix, vous devez télécharger et décompresser le fichier **IdFix.exe**, comme décrit dans les étapes suivantes : 
+Pour installer IdFix, téléchargez et décompressez **IdFix.exe**: 
   
 1. Ouvrez une session sur l'ordinateur sur lequel vous souhaitez installer l'outil IdFix.
     
@@ -69,7 +68,7 @@ Pour installer IdFix, vous devez télécharger et décompresser le fichier **IdF
     
 4. Lorsque vous y êtes invité, cliquez sur **exécuter**.
     
-5. Dans la boîte de dialogue **Auto-extracteur de fichier WinZip** , dans la zone **décompresser dans dossier** , tapez ou naviguez jusqu'à l’emplacement où vous souhaitez installer l’outil IdFix. Par défaut, IdFix est installé dans les outils de C:\Deployment\. 
+5. Dans la boîte de dialogue **Auto-extracteur de fichier WinZip** , dans la zone **décompresser dans dossier** , tapez ou naviguez jusqu'à l’emplacement où vous souhaitez installer l’outil IdFix. Par défaut, IdFix est installé dans `C:\Deployment Tools\`. 
     
 6. Cliquez sur **décompresser**.
     
@@ -79,7 +78,7 @@ Après l'installation d'IdFix, exécutez l'outil pour rechercher les problèmes 
   
 1. Utilisez un compte disposant de droits d'accès en lecture/écriture à l'annuaire pour vous connecter à l'ordinateur sur lequel vous avez installé IdFix.
     
-2. Dans l'Explorateur de fichiers, accédez à l'emplacement où vous avez installé IdFix.  Si vous avez choisi le dossier par défaut lors de l'installation, accédez à C:\Outils de déploiement\IdFix.
+2. Dans l’Explorateur de fichiers, accédez à l’emplacement où vous avez installé IdFix. Si vous choisissez le dossier par défaut pendant l’installation, accédez à `C:\Deployment Tools\IdFix`.
     
 3. Double-cliquez sur **IdFix.exe**. 
     
@@ -97,7 +96,7 @@ Après l'installation d'IdFix, exécutez l'outil pour rechercher les problèmes 
     
     ![Nombre de requêtes et des erreurs IdFix.](media/da0198a0-7d4d-4afe-a256-e82f1330ada5.JPG)
   
-7. Une fois qu'IdFix a terminé la requête, et s'il n'y a pas d'erreurs dans votre annuaire, vous pouvez continuer et synchroniser votre annuaire. S'il y a des erreurs dans votre annuaire, nous vous recommandons de les corriger avant de procéder à la synchronisation. Si vous souhaitez obtenir des informations plus précises sur les types d'erreurs et les recommandations sur la meilleure façon de résoudre chacune d'elles, consultez les liens à la fin de cette rubrique. 
+7. IdFix issue de la requête, vous pouvez continuer et synchroniser votre annuaire si aucune erreur. S’il existe des erreurs dans votre annuaire, il est recommandé de les résoudre avant la synchronisation. Si vous souhaitez que des informations détaillées sur les types d’erreurs et des recommandations sur la meilleure façon de corriger chacun d’eux, consultez les liens à la fin de cette rubrique. 
     
     Même s'il n'est pas obligatoire de corriger les erreurs avant la synchronisation, nous vous recommandons fortement de consulter au moins toutes les erreurs renvoyées par IdFix.
     
@@ -121,8 +120,8 @@ Des informations plus détaillées sont disponibles dans les rubriques suivantes
 - [Référence : IdFix et exclus pris en charge les attributs et objets](idfix-excluded-and-supported-objects-and-attributes.md)  
 - [Référence : Journal des transactions IdFix d'Office 365](idfix-transaction-log.md)
     
-## <a name="video-training"></a>Formation vidéo
+## <a name="video-training"></a>Vidéo de formation
 
-Pour plus d’informations, consultez la leçon, [installer et utiliser l’outil IDFix](https://support.office.com/article/4d81d73c-f172-4fd5-8542-f601c0c96aa9.aspx), proposée par apprentissage LinkedIn.
+Pour plus d’informations, consultez la leçon, [installer et utiliser l’outil IDFix](https://support.office.com/article/install-and-use-the-idfix-tool-4d81d73c-f172-4fd5-8542-f601c0c96aa9?ui=en-US&rs=en-US&ad=US), proposée par apprentissage LinkedIn.
   
 

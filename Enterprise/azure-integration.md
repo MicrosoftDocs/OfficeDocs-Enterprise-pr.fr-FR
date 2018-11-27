@@ -3,7 +3,6 @@ title: Intégration d’Azure avec Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -16,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
 description: Votre abonnement à Office 365 comprend un abonnement Azure AD. Intégrer Office 365 avec Azure AD si vous souhaitez que la synchronisation de mot de passe ou authentification unique avec votre environnement local.
-ms.openlocfilehash: 276243b953d18953ef3ea8f1189d1af8292dca6a
-ms.sourcegitcommit: b1cd20300a616ebef2f00668f42ba14e8aa5fcab
+ms.openlocfilehash: 8b7af5ba8d5106900384369a3e6548af40f9e201
+ms.sourcegitcommit: 9c493c4e18e83491d106c5e9bab55d1a89298879
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "23531837"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "26674418"
 ---
 # <a name="azure-integration-with-office-365"></a>Intégration d’Azure avec Office 365
 
@@ -57,7 +56,7 @@ Pour plus d’informations sur Office 365 et Azure AD, voir [identités Office 3
    
 Pour d’autres ressources sur le Cloud Microsoft et Office 365, consultez les ressources suivantes :
   
-- [Identité cloud Microsoft pour les architectes d’entreprise](https://go.microsoft.com/fwlink/p/?LinkId=828642)
+- [Identité cloud Microsoft pour les architectes d’entreprise](https://go.microsoft.com/fwlink/p/?LinkId=524586)
     
 - [Déployer la synchronisation d’annuaires (DirSync) Office 365 dans Microsoft Azure](https://go.microsoft.com/fwlink/p/?LinkId=517887)
     

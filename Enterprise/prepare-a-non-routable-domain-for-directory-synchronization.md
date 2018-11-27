@@ -3,7 +3,6 @@ title: Préparer un domaine non routable pour la synchronisation d’annuaires
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -18,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: Découvrez que faire si vous disposez d’un domaine non routale associé à vos utilisateurs sur site avant de le synchroniser avec Office 365.
-ms.openlocfilehash: 62779ba879522177ba15a491644ab42f5961ece0
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 9ec96c34e1dc4a6c755ea97fce3f5f2a5ba21bb3
+ms.sourcegitcommit: 9c493c4e18e83491d106c5e9bab55d1a89298879
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540595"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "26674438"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>Préparer un domaine non routable pour la synchronisation d’annuaires
 Lorsque vous synchronisez votre annuaire local avec Office 365, vous devez disposer d’un domaine vérifié dans Azure Active Directory. Uniquement l’utilisateur Principal noms (UPN) qui sont associées dans le domaine local sont synchronisées. Toutefois, n’importe quel nom UPN qui contient un domaine non routable, par exemple .local (par exemple, billa@contoso.local), sera synchronisé avec un. onmicrosoft.com domaine (par exemple billa@contoso.onmicrosoft.com). 
@@ -32,7 +31,7 @@ Si vous utilisez actuellement un domaine .local pour vos comptes d’utilisateur
   
 ## <a name="what-if-i-only-have-a-local-on-premises-domain"></a>Que se passe-t-il si j’ai uniquement un domaine local de .local ?
 
-L’outil plus récente que vous pouvez utiliser pour la synchronisation Active Directory pour Azure Active Directory nommé Azure AD se connecter. Pour plus d’informations, voir [intégration des identités avec Azure Active Directory local](https://go.microsoft.com/fwlink/p/?LinkId=624168).
+L’outil plus récente que vous pouvez utiliser pour la synchronisation Active Directory pour Azure Active Directory nommé Azure AD se connecter. Pour plus d’informations, voir [intégration des identités avec Azure Active Directory local](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad).
   
 Azure AD Connect synchronise UPN et le mot de passe des utilisateurs afin que les utilisateurs peuvent se connecter avec les mêmes informations d’identification qu’ils utilisent sur site. Toutefois, Azure AD Connect synchronise uniquement aux utilisateurs de domaines qui ont été vérifiées par Office 365. Cela signifie que le domaine est également vérifié par Azure Active Directory étant donné que les identités Office 365 sont gérées par Azure Active Directory. En d’autres termes, le domaine doit être un domaine Internet valid (par exemple, .com, .org, .net, .us, etc.). Si votre environnement Active Directory interne utilise uniquement un domaine non routable (par exemple, .local), celui-ci ne peut pas éventuellement correspondre au domaine vérifié que vous avez sur Office 365. Vous pouvez résoudre ce problème en modifiant votre domaine principal dans votre environnement local sur Active Directory, ou en ajoutant un ou plusieurs suffixes UPN.
   

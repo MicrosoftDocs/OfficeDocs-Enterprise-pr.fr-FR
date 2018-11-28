@@ -3,7 +3,7 @@ title: Connexion à tous les services Office 365 à l’aide d’une seule fenê
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/11/2018
+ms.date: 11/27/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 'Résumé : Se connecter à Windows PowerShell à tous les services Office 365 dans une seule fenêtre Windows PowerShell.'
-ms.openlocfilehash: 44f00364d1f81633e06663770f32e0c9f9e99ed8
-ms.sourcegitcommit: 22db89d5b13f7d85e03f35f21f25fa288aadf1b4
+ms.openlocfilehash: 5635cf8b03490c2b2f811f22c231c271d5204552
+ms.sourcegitcommit: 65de707bd1c389eea48767a68c31032dd5198359
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25575258"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706688"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>Connexion à tous les services Office 365 à l’aide d’une seule fenêtre Windows PowerShell
 
@@ -32,6 +32,10 @@ Lorsque vous utilisez PowerShell pour gérer Office 365, il est possible d’ouv
 ![Cinq consoles Windows PowerShell exécutées simultanément](media/a1a852c2-89ea-4e8e-8d8b-dcdf596763d1.png)
   
 Cela n’est pas optimale pour la gestion d’Office 365, car vous ne pouvez pas échanger des données entre ces cinq windows pour la gestion de cross-service. Cette rubrique décrit comment utiliser une seule instance de Windows PowerShell à partir de laquelle vous pouvez gérer la sécurité, Skype pour Business Online, Exchange Online, SharePoint Online et Office 365 &amp; centre de conformité.
+
+>[!Note]
+>Actuellement, cet article contient uniquement les commandes pour se connecter à Office 365 dans le monde (+ GCC) nuage. Remarques supplémentaires fournissent des liens vers des articles, des informations sur la connexion à d’autres nuages Office 365.
+>
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -117,12 +121,20 @@ Voici les étapes à suivre pour se connecter à tous les services dans une seul
   Import-PSSession $exchangeSession
   ```
 
+>[!Note]
+>Pour vous connecter à Exchange Online pour Office 365 nuages autre que dans le monde entier, voir [se connecter à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+>
+
 7. Exécutez ces commandes pour se connecter à la sécurité &amp; centre de conformité.
     
   ```
   $SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $credential -Authentication "Basic" -AllowRedirection
   Import-PSSession $SccSession -Prefix cc
   ```
+
+>[!Note]
+>Pour se connecter à la sécurité &amp; centre de conformité pour Office 365 nuages autre que dans le monde entier, voir [se connecter à Office 365 sécurité & PowerShell du centre de conformité](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+>
 
 Voici toutes les commandes dans un bloc unique lors de l’utilisation d’Azure Active Directory PowerShell pour le module de graphique. Spécifier le nom d’hôte de votre domaine, puis les exécuter tous en même temps.
   

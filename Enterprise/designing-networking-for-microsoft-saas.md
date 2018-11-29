@@ -3,7 +3,7 @@ title: Conception de réseaux pour Microsoft SaaS
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/28/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,18 +14,18 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 4194020a-3847-4259-9f2d-5c556a4510f9
 description: 'Résumé : Comprendre comment optimiser votre réseau pour accéder aux services SaaS de Microsoft, notamment Office 365, Microsoft Intune et Dynamics 365.'
-ms.openlocfilehash: 94118022b86a5e732467599632e30c058827468f
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 3d47c53de1bc1121ef72eb519c51c0ad9423fff9
+ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915469"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26872265"
 ---
 # <a name="designing-networking-for-microsoft-saas"></a>Conception de réseaux pour Microsoft SaaS
 
  **Résumé :** Comprendre comment optimiser votre réseau pour accéder aux services SaaS de Microsoft, notamment Office 365, Microsoft Intune et Dynamics 365.
   
-L’optimisation de votre réseau pour les services SaaS de Microsoft nécessite une analyse approfondie de votre périmètre Internet, de vos périphériques client et de vos opérations informatiques standard.
+Optimisation de votre réseau pour les services Microsoft SaaS requiert la configuration d’interne et les routeurs pour acheminer les différentes catégories de trafic aux services Microsoft SaaS.
   
 ## <a name="steps-to-prepare-your-network-for-microsoft-saas-services"></a>Étapes pour préparer votre réseau aux services SaaS de Microsoft
 
@@ -33,160 +33,51 @@ Procédez comme suit pour optimiser votre réseau pour les services SaaS de Micr
   
 1. Consultez les **étapes de préparation de votre réseau pour services de cloud Microsoft** fournies dans la section [Éléments communs de la connectivité au cloud Microsoft](common-elements-of-microsoft-cloud-connectivity.md).
     
-2. Optimisez votre sortie Internet pour les services SaaS de Microsoft en utilisant les recommandations de serveur proxy.
+2. Ajouter une connexion Internet à chacun de vos sites.
     
-3. Optimisez votre débit Internet en utilisant les recommandations en matière de proximité et d’emplacement.
+3. Vérifiez que le fournisseur de services pour toutes les connexions Internet utilisez un serveur DNS avec une adresse IP locale.
     
-4. Optimisez les performances des ordinateurs de vos clients et de l’intranet sur lequel ils se trouvent à l’aide des considérations relatives à l’utilisation du client.
+4. Examinez votre épingles à cheveux du réseau, les destinations intermédiaires tels que les services de sécurité en nuage et les éliminer la mesure du possible.
     
-5. Le cas échéant, optimisez les performances des migrations des données et de la synchronisation à l’aide des considérations relatives aux opérations informatiques.
-    
-## <a name="internet-edge-considerations"></a>Considérations relatives au périmètre Internet
+5. Configurer vos périphériques edge pour contourner le traitement de l’optimiser et autoriser des catégories de trafic SaaS Microsoft.
 
-Voici quelques éléments à prendre en considération pour l’optimisation de votre périmètre Internet et du débit vers les services SaaS de Microsoft.
-  
-**Figure 1 : Options de connexion pour les services SaaS de Microsoft**
+## <a name="optimizing-traffic-to-microsofts-saas-services"></a>Optimisation du trafic aux SaaS services de Microsoft    
 
-![Figure 1 : options de connexion pour les services SaaS de Microsoft](media/Network-Poster/SaaS1.png)
-  
-La figure 1 présente un réseau local qui se connecte aux services SaaS de Microsoft via un canal Internet ou ExpressRoute.
-  
-Voici quelques recommandations pour optimiser votre serveur proxy :
-  
-- Configurez les clients web à l’aide du protocole WPAD, du certificat PAC ou de l’objet de stratégie de groupe
-    
-- N'utilisez pas interception SSL
-    
-- Utilisez un fichier PAC pour contourner le proxy pour les noms DNS de service  SaaS de Microsoft
-    
-- Autorisez le trafic pour la vérification de la liste de révocation de certificats/du protocole OCSP
-    
-Voici quelques goulots d’étranglement de serveur proxy à vérifier :
-  
-- Connexions persistantes insuffisantes (Outlook)
-    
-- Capacité insuffisante
-    
-- Réalisation de l’évaluation hors réseau
-    
-- Demande d’authentification
-    
-- Aucune prise en charge pour le trafic UDP (Skype Entreprise)
-    
-Voici quelques recommandations en matière de proximité et d’emplacement :
-  
-- N'acheminez pas le trafic Internet sur le réseau étendu privé
-    
-- Utilisez le flux de trafic DNS et Internet dans la région pour les utilisateurs à l’extérieur de la région
-    
-- Utilisez ExpressRoute pour une large bande passante vers Office 365 et une connectivité simultanée avec les services Azure
-    
-Voici les ports de sortie nécessaires pour le trafic Office 365 :
-  
-- TCP 80 (pour les vérifications de liste de révocation de certificats/de protocole OCSP)
-    
-- TCP 443
-    
-- UDP 3478
-    
-- TCP 5223
-    
-- TCP 50000-59999
-    
-- UDP 50000-59999
-    
-## <a name="client-usage-considerations"></a>Considérations relative à l’utilisation client
+Il existe trois catégories de trafic SaaS Microsoft :
 
-Tout d’abord, configurez l’ensemble des services que vos clients utiliseront, tels que :
-  
-- Azure Active Directory
-    
-- Office 365
-    
-  - Applications client Office
-    
-  - SharePoint Online
-    
-  - Exchange Online
-    
-  - Skype Entreprise
-    
-- Microsoft Intune
-    
-- Dynamics 365
-    
-Pour les ordinateurs de vos clients, déterminez les éléments suivants :
-  
-- Nombre maximal à chaque fois (heure du jour, saisonnier, pics et creux d’utilisation)
-    
-- Bande passante totale nécessaire pour les pics
-    
-- Latence vers le périphérique de sortie Internet
-    
-- Pays d’origine et pays de colocalisation des centres de données
-    
-Pour chaque type de client (PC, smartphone ou tablette), vérifiez les éléments suivants actuels :
-  
-- Système d’exploitation
-    
-- Navigateur Internet
-    
-- Pile TCP/IP
-    
-- Matériel réseau
-    
-- Pilotes du système d’exploitation du matériel réseau
-    
-- Installation des mises à jour et des correctifs
-    
-En outre, optimisez le débit de connexion intranet (par câble, sans fil ou VPN).
-  
-Pour plus d'informations, voir l'article [Prise en charge NAT avec Office 365](https://support.office.com/article/NAT-support-with-Office-365-170e96ea-d65d-4e51-acac-1de56abe39b9).
-  
-Pour obtenir les dernières recommandations sur l'utilisation d'ExpressRoute avec Office 365, voir [ExpressRoute pour Office 365](https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd).
-  
-Pour optimiser les performances de votre intranet, procédez comme suit :
-  
-- Utilisez des outils pour évaluer la durée approximative des boucles sur vos périphériques du périmètre Internet (PsPing, Ping, Tracert, TraceTCP, Moniteur réseau)
-    
-- Effectuez l’analyse de chemin de sortie à l’aide des protocoles de flux
-    
-- Effectuez l’analyse des périphériques intermédiaires (âge, intégrité, etc.)
-    
-Pour plus d'informations, voir l'article concernant l'[outil PsPing](https://technet.microsoft.com/sysinternals/jj729731.aspx).
-  
-## <a name="it-operations-considerations"></a>Considérations relatives aux opérations informatiques
+- Optimiser
 
-Voici quelques éléments à prendre en considération lors de l’exploitation d’une charge de travail informatique dans un service SaaS de Microsoft.
-  
-### <a name="one-time-migrations"></a>Migrations exceptionnelles
+  Requis pour la connectivité à tous les services Microsoft SaaS et représentent plus de 75 % de la bande passante Microsoft SaaS, des connexions et le volume de données.
 
-Le transfert de données en bloc pour les applications basées sur le cloud ou le stockage d’archives représentent des exemples de migrations exceptionnelles.
-  
-Afin d’optimiser votre réseau pour les migrations exceptionnelles, procédez comme suit :
-  
-- Évitez l’utilisation maximale du réseau et les heures de correctifs de l’ordinateur
-    
-- En cas de ligne de base et de guidage, évaluez l’intégrité du réseau et résolvez les problèmes avant d’essayer la migration réelle
-    
-- Effectuez un post-mortem pour les prochaines migrations
-    
-### <a name="ongoing-synchronizations"></a>Synchronisations en cours
+- Autoriser
 
-Les informations du répertoire, les paramètres ou les fichiers sont des exemples de synchronisations en cours.
-  
-Pour optimiser votre réseau pour les synchronisations en cours, procédez comme suit :
-  
-- Assurez-vous qu’un système de suivi de la bande passante réseau est en place, et résolvez ou ignorez les erreurs collectées
-    
-- Utilisez les résultats du suivi de la bande passante pour déterminer les modifications de réseau nécessaires (monter en puissance/en charge, nouveaux circuits ou ajouter des périphériques)
-    
-Pour plus d’informations, voir :
-  
-- [Planification réseau et de migration pour Office 365](https://aka.ms/tune)
-    
-- [ExpressRoute pour Office 365](https://aka.ms/expressrouteoffice365)
+  Requis pour la connectivité au spécifique SaaS Microsoft services et fonctionnalités mais ne sont pas soumis à des performances du réseau et la latence en tant que ceux de la catégorie d’optimisation.
 
+- Par défaut
+
+  Représentent SaaS Microsoft services et les dépendances qui ne nécessitent pas de n’importe quel optimisation. Vous pouvez traiter le trafic de catégorie par défaut comme le trafic Internet normal.
+
+
+**La figure 1 : Configuration recommandée pour le trafic de tous les bureaux Microsoft SaaS**
+
+![La figure 1 : Configuration recommandée pour le trafic de tous les bureaux Microsoft SaaS](media/Network-Poster/SaaS1.png)
+
+La figure 1 illustre la configuration recommandée de toutes les succursales, y compris les agences et celles qui sont locaux ou centrale, dans laquelle :
+
+- Catégorie **par défaut** et général le trafic Internet est routé vers des bureaux qui ont des serveurs proxy et autres périphériques edge pour assurer la protection contre les risques de sécurité basé sur Internet.
+- **Optimiser** et **Autoriser** le trafic de catégorie est transféré directement vers le bord de Microsoft réseau front-end plus proche de l’office contenant l’utilisateur connecté, sans passer par les serveurs proxy et autres périphériques de périphérie.
+
+Défini par le logiciel à l’échelle (WAN SD) périphériques réseau dans les succursales séparent le trafic afin que : 
+
+- Catégorie **par défaut** et général du trafic Internet accède à un bureau central ou régional via le réseau WAN principal. 
+- **Optimiser** et **Autoriser** le trafic de catégorie atteint le fournisseur de services fournissant la connexion Internet locale.
+  
+Pour plus d'informations, voir :
+  
+- [Principes de la connectivité réseau](https://aka.ms/expressrouteoffice365)
+
+- [Planification réseau et de migration pour Office 365](https://aka.ms/tune)
+    
 ## <a name="next-step"></a>Étape suivante
 
 [Conception de réseau pour Microsoft Azure PaaS](designing-networking-for-microsoft-azure-paas.md)
@@ -195,10 +86,5 @@ Pour plus d’informations, voir :
 
 [Mise en réseau cloud Microsoft pour les architectes d’entreprise](microsoft-cloud-networking-for-enterprise-architects.md)
   
-[Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
-
-[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs (en anglais)](https://sway.com/FJ2xsyWtkJc2taRD)
-
-
-
+[Ressources relatives à l’architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 

@@ -3,7 +3,7 @@ title: ExpressRoute pour la connectivité au cloud de Microsoft
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/03/2018
+ms.date: 11/28/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: 'Résumé : Comprendre comment ExpressRoute peut garantir des connexions plus fiables et plus rapides aux services et aux plateformes cloud de Microsoft.'
-ms.openlocfilehash: 1cd78372d37e40a53ba7725ff3653ef01daa48b0
-ms.sourcegitcommit: 9da69a749ba557a4c4ae80070ce57e606148521f
+ms.openlocfilehash: 3ac8d52f50ff6df612de68ea51136fc16d5c9169
+ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "26525835"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26872325"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>ExpressRoute pour la connectivité au cloud de Microsoft
 
@@ -273,8 +273,4 @@ Consultez les ressources supplémentaires suivantes pour plus d’informations 
 [Mise en réseau cloud Microsoft pour les architectes d’entreprise](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
-
-[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs](https://sway.com/FJ2xsyWtkJc2taRD)
-
-
 

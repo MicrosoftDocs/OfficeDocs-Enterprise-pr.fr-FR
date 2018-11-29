@@ -3,7 +3,7 @@ title: Points de terminaison US gouvernement DoD Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/01/2018
+ms.date: 11/28/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 5d7dce60-4892-4b58-b45e-ee42fe8a907f
 description: 'Résumé : Office 365 nécessite une connexion à Internet. Les points de terminaison ci-dessous doivent être accessibles pour les clients qui utilisent uniquement des plans Office 365 US gouvernement DoD.'
 hideEdit: true
-ms.openlocfilehash: 769830741e2444a9a2caeaaef50d95ae7defc6f6
-ms.sourcegitcommit: 317c2753be2aedb60698e94606ba59b63c962328
+ms.openlocfilehash: f4412f18407eeb1f9adcb750687f75de8f704fc2
+ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25933101"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26872315"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Points de terminaison US gouvernement DoD Office 365
 
@@ -31,13 +31,13 @@ ms.locfileid: "25933101"
  **Résumé :** Office 365 nécessite une connexion à Internet. Les points de terminaison ci-dessous doivent être accessibles pour les clients qui utilisent uniquement des plans Office 365 US gouvernement DoD.
   
 > [!NOTE]
-> Microsoft a publié un service web basée sur REST pour l’adresse IP et les entrées de nom de domaine complet de cette page. Ce nouveau service vous aideront à configurer et mettre à jour des périphériques de périmètre de réseau tels que des pare-feu et des serveurs proxy. Vous pouvez télécharger la liste des points de terminaison, la version actuelle de la liste, ou les modifications spécifiques. Ce service remplace le document XML qui sont lié à partir de cette page, qui a été déconseillée sur le 2 octobre 2018. Pour essayer ce nouveau service, accédez au [service Web](office-365-ip-web-service.md).
+> Microsoft a publié un service web utilisant REST pour les entrées d’adresse IP et de FQDN sur cette page. Ce nouveau service vous permettra de configurer et de mettre à jour des périphériques de périmètre de réseau, tels que des pare-feu et serveurs proxy. Vous pouvez télécharger la liste des points de terminaison, la version actuelle de la liste ou des modifications spécifiques. Ce service remplace le document XML dont le lien est fourni sur cette page et qui est obsolète depuis le 2 octobre 2018. Pour essayer ce nouveau service, accédez au [service web](office-365-ip-web-service.md).
   
  **Points de terminaison Office 365:**[Dans le monde ( GCC inclus)](urls-and-ip-address-ranges.md) | [Office 365 géré par 21Vianet](urls-and-ip-address-ranges-21vianet.md)  | [Office 365 Germany](office-365-germany-endpoints.md) | *Office 365 U.S. Government DoD* | [Office 365 U.S. Government GCC High](office-365-u-s-government-gcc-high-endpoints.md) |
   
 |||
 |:-----|:-----|
-|**Dernière mise à jour :** 11/1/2018 - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [abonnement du journal des modifications](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Télécharger :** la liste complète au [format JSON](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
+|**Dernière mise à jour :** 11/28/2018 - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [abonnement du journal des modifications](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Télécharger :** la liste complète au [format JSON](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
    
  Commencer avec les [systèmes d’extrémité gérer Office 365](managing-office-365-endpoints.md) à comprendre nos recommandations pour la gestion de la connectivité réseau à l’aide de ces données. Données de points de terminaison sont mis à jour au début de chaque mois avec de nouvelles adresses IP et les URL publiées 30 jours avant active. Cela permet aux clients ayant mais pas encore ont des mises à jour pour effectuer leurs processus avant nouvelle connectivité automatisées. Points de terminaison peuvent également être mis à jour au cours du mois si nécessaire pour permettre l’escalade prise en charge, incidents de sécurité ou autres exigences opérationnelles immédiates. Les données affichées sur cette page ci-dessous sont générées à partir des services web basées sur REST. Si vous utilisez un script ou un périphérique réseau pour accéder à ces données, vous devez introduire directement au [service Web](office-365-ip-web-service.md) .
 

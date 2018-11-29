@@ -3,7 +3,7 @@ title: Conception de réseaux pour Microsoft Azure IaaS
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/28/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 9cb70c9d-9ed9-47cc-af5a-6403d87d3372
 description: 'Résumé : Découvrez comment concevoir réseau optimisé pour les charges de travail dans Microsoft Azure IaaS.'
-ms.openlocfilehash: 0e7af14768aa1a21548b25a20a465b644b749f3e
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: d13c1d4b985c633b8336dc33253e1350a54b5a39
+ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915119"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26872335"
 ---
 # <a name="designing-networking-for-microsoft-azure-iaas"></a>Conception de réseaux pour Microsoft Azure IaaS
 
@@ -92,11 +92,11 @@ Il existe deux types de sous-réseaux dans un réseau virtuel : un sous-réseau
 
 ![Figure 3 : les deux types de sous-réseaux dans Azure](media/2eaa512d-1293-4e9b-b927-6bfe0fc0acb4.png)
   
-La figure 3 présente un réseau virtuel contenant un sous-réseau de passerelle qui contient lui-même une passerelle Azure et un ensemble de sous-réseaux hébergeant des machines virtuelles.
+La figure 3 montre un VNet contenant un sous-réseau de passerelle qui possède une passerelle Azure et un ensemble de sous-réseaux qui héberge l’ordinateur virtuel contenant les machines virtuelles.
   
 Le sous-réseau de passerelle Azure est requis par Azure pour héberger les deux machines virtuelles de votre passerelle Azure. Spécifiez un espace d’adressage avec une longueur de préfixe d’au moins 29 bits (exemple : 192.168.15.248/29). Une longueur de préfixe de 28 bits ou moins est recommandée, en particulier si vous envisagez d’utiliser ExpressRoute.
   
-Pour déterminer l’espace d’adressage du sous-réseau Azure de passerelle, il est recommandé de procéder comme suit :
+Il est recommandé de déterminer l’espace d’adressage du sous-réseau passerelle Azure :
   
 1. Décidez de la taille du sous-réseau de passerelle.
     
@@ -123,11 +123,11 @@ Azure utilise les 3 adresses sur chaque sous-réseau. Par conséquent, le nombre
   
 |**Machines virtuelles requises**|**Bits hôte**|**Taille sous-réseau**|
 |:-----|:-----|:-----|
-|1-3  <br/> |3  <br/> |/29  <br/> |
-|4-11  <br/> |4  <br/> |/28  <br/> |
-|12-27  <br/> |5  <br/> |/27  <br/> |
-|28-59  <br/> |6  <br/> |/26  <br/> |
-|60-123  <br/> |7  <br/> |/25  <br/> |
+|1-3  <br/> |3   <br/> |/29  <br/> |
+|4-11  <br/> |4   <br/> |/28  <br/> |
+|12-27  <br/> |5   <br/> |/27  <br/> |
+|28-59  <br/> |6   <br/> |/26  <br/> |
+|60-123  <br/> |7   <br/> |/25  <br/> |
    
  **Tableau 3 : Configuration requise pour les machines virtuelles et tailles de sous-réseau correspondantes**
   
@@ -194,7 +194,7 @@ Il existe plusieurs méthodes pour fournir un accès Internet aux machines virtu
   
 Le tableau 5 présente les méthodes de filtrage ou de contrôle du trafic entrant non sollicité.
   
-|**Méthode**|**Modèle de déploiement**|
+|**Méthodes**|**Modèle de déploiement**|
 |:-----|:-----|
 |1. Points de terminaison et listes de contrôle d’accès configurés sur les services de cloud  <br/> |Classique  <br/> |
 |2. Groupes de sécurité réseau  <br/> |Resource Manager et classique  <br/> |
@@ -358,7 +358,7 @@ Pour le routage vers des réseaux locaux ou d’autres réseaux virtuels à part
   
 La figure 15 présente un réseau virtuel intersites et l’espace d’adressage du réseau local sur la passerelle Azure, qui représente l’espace d’adressage accessible sur le réseau local.  
   
-Vous pouvez définir l’espace d’adressage du réseau local des façons suivantes :
+Vous pouvez définir l’espace d’adressage de réseau Local de la manière suivante :
   
 - Option 1 : liste des préfixes pour l’espace d’adressage actuellement nécessaire ou utilisé (des mises à jour peuvent être nécessaire lorsque vous ajoutez de nouveaux sous-réseaux).
     
@@ -419,23 +419,17 @@ Un exemple d’un charge de travail informatique hébergée dans Azure IaaS intr
 
 ![Batterie SharePoint Server 2016 à disponibilité élevée dans Azure IaaS](media/3a922e21-df91-455f-ba90-78abdd48d98d.png)
   
-La figure 19 représente les neuf serveurs d’une batterie de serveurs SharePoint Server 2016 déployé dans un VNet entre différents locaux qui utilise des équilibreurs de charge interne pour les niveaux frontal et données. Pour plus d’informations, y compris la conception détaillée et des instructions de déploiement, voir [SharePoint Server 2016 dans Microsoft Azure](https://technet.microsoft.com/library/mt779107%28v=office.16%29.aspx).
+La figure 19 représente les neuf serveurs d’une batterie de serveurs SharePoint Server 2016 déployé dans un VNet entre différents locaux qui utilise des équilibreurs de charge interne pour les niveaux frontal et données. Pour plus d’informations, y compris la conception détaillée et des instructions de déploiement, voir [SharePoint Server 2016 dans Microsoft Azure](https://docs.microsoft.com/SharePoint/administration/sharepoint-server-2016-in-microsoft-azure).
   
 > [!TIP]
-> Pour créer une batterie de serveurs SharePoint Server 2016 serveur unique dans un VNet simulé intersite, voir [Intranet SharePoint Server 2016 dans l’environnement de développement/test Azure](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx). 
+> Pour créer une batterie de serveurs SharePoint Server 2016 serveur unique dans un VNet simulé intersite, voir [Intranet SharePoint Server 2016 dans l’environnement de développement/test Azure](https://docs.microsoft.com/SharePoint/administration/intranet-sharepoint-server-2016-in-azure-dev-test-environment). 
   
-Pour obtenir des exemples supplémentaires des charges de travail informatique déployés sur des ordinateurs virtuels dans un Azure intersite virtuel réseau, voir les [scénarios de cloud hybride pour Azure IaaS](https://technet.microsoft.com/library/mt750502.aspx).
+Pour obtenir des exemples supplémentaires des charges de travail informatique déployés sur des ordinateurs virtuels dans un Azure intersite virtuel réseau, voir les [scénarios de cloud hybride pour Azure IaaS](https://docs.microsoft.com/office365/enterprise/hybrid-cloud-scenarios-for-azure-iaas).
   
 ## <a name="see-also"></a>Voir aussi
 
-<a name="cross_prem"> </a>
-
-[Mise en réseau cloud Microsoft pour les architectes d'entreprise](microsoft-cloud-networking-for-enterprise-architects.md)
+[Mise en réseau cloud Microsoft pour les architectes d’entreprise](microsoft-cloud-networking-for-enterprise-architects.md)
   
-[Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
-
-[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs (en anglais)](https://sway.com/FJ2xsyWtkJc2taRD)
-
-
+[Ressources relatives à l’architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 
 

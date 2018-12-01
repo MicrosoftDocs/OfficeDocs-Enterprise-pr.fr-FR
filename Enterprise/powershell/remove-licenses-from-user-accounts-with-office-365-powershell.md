@@ -1,9 +1,9 @@
 ---
-title: "Supprimer des licences à des comptes d’utilisateurs avec Office 365 PowerShell"
+title: Supprimer des licences à des comptes d’utilisateurs avec Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/29/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,22 +15,23 @@ ms.custom:
 - LIL_Placement
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
-description: "Explique comment utiliser Office 365 PowerShell pour supprimer des licences Office 365 qui a été précédemment affectés aux utilisateurs."
-ms.openlocfilehash: c02d5a6cac029ce9beb8077da98418734d935ded
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: Explique comment utiliser Office 365 PowerShell pour supprimer des licences Office 365 qui ont été précédemment attribués aux utilisateurs.
+ms.openlocfilehash: a993737f4bd1186a7fb5beb7fa0f6a2ae6782618
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123301"
 ---
 # <a name="remove-licenses-from-user-accounts-with-office-365-powershell"></a>Supprimer des licences à des comptes d’utilisateurs avec Office 365 PowerShell
 
-**Résumé :** Explique comment utiliser Office 365 PowerShell pour supprimer des licences Office 365 qui a été précédemment affectés aux utilisateurs.
+**Résumé :** Explique comment utiliser Office 365 PowerShell pour supprimer des licences Office 365 qui ont été précédemment attribués aux utilisateurs.
   
 ## <a name="before-you-begin"></a>Avant de commencer
 
 - Les procédures décrites dans cette rubrique exigent une connexion à Office 365 PowerShell. Pour plus d'informations, reportez-vous à [Se connecter à Office 365 PowerShell](connect-to-office-365-powershell.md).
     
-- Pour afficher les informations de licence plan ( **AccountSkuID** ) dans votre organisation, consultez les rubriques suivantes :
+- Pour afficher les informations de licence plan (**éléments AccountSkuID** ) dans votre organisation, consultez les rubriques suivantes :
     
   - [Afficher les licences et les services avec Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md)
     
@@ -38,18 +39,15 @@ ms.lasthandoff: 02/14/2018
     
 - Si vous utilisez la cmdlet **Get-MsolUser** sans utiliser le paramètre _-All_, seuls les 500 premiers comptes sont renvoyés.
     
-## <a name="the-short-version-instructions-without-explanations"></a>La version courte (instructions sans explications)
-<a name="ShortVersion"> </a>
+## <a name="removing-licenses-from-user-accounts"></a>Supprimer des licences à partir de comptes d’utilisateurs
 
-Cette section présente les procédures sans explication superflue ou alambiquée. Si vous avez des questions ou que vous souhaitez plus d'informations, vous pouvez lire le reste de la rubrique.
-  
 Pour supprimer des licences à partir d’un compte d’utilisateur existant, utilisez la syntaxe suivante :
   
 ```
 Set-MsolUserLicense -UserPrincipalName <Account> -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"...
 ```
 
-Cet exemple supprime la `litwareinc:ENTERPRISEPACK` licence (Office 365 entreprise E3) à partir du compte d’utilisateur BelindaN@litwareinc.com.
+Cet exemple supprime le `litwareinc:ENTERPRISEPACK` licence (Office 365 entreprise E3) du compte d’utilisateur BelindaN@litwareinc.com.
   
 ```
 Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -RemoveLicenses "litwareinc:ENTERPRISEPACK"
@@ -57,21 +55,21 @@ Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -RemoveLicenses "
 
 Pour supprimer des licences d’un groupe d’utilisateurs sous licence existants, appliquez l’une des méthodes suivantes :
   
-- **Filtrer les comptes basés sur un attribut de compte existant** Pour ce faire, utilisez la syntaxe suivante :
+- **Filtrer les comptes basées sur un attribut de compte existant** Pour ce faire, utilisez la syntaxe suivante :
     
 ```
 $x = Get-MsolUser -All <FilterableAttributes> | where {$_.isLicensed -eq $true}
 $x | foreach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"...}
 ```
 
-Cet exemple supprime la `litwareinc:ENTERPRISEPACK` (Office 365 entreprise E3) des licences de tous les comptes d’utilisateurs dans le service des ventes aux États-Unis.
+Cet exemple supprime le `litwareinc:ENTERPRISEPACK` (Office 365 entreprise E3) licences de tous les comptes d’utilisateurs du service ventes aux États-Unis.
     
 ```
 $USSales = Get-MsolUser -All -Department "Sales" -UsageLocation "US" | where {$_.isLicensed -eq $true}
 $USSales | foreach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "litwareinc:ENTERPRISEPACK"}
 ```
 
-- **Utilisation d’une liste de comptes spécifiques** Pour ce faire, effectuez les opérations suivantes :
+- **Utiliser une liste de comptes spécifiques** Pour ce faire, procédez comme suit :
     
 1. Créez et enregistrez un fichier texte contenant un seul compte sur chaque ligne comme suit :
     
@@ -87,7 +85,7 @@ kakers@contoso.com
   Get-Content "<FileNameAndPath>" | Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"...
   ```
 
-Cet exemple supprime la `litwareinc:ENTERPRISEPACK` licence (Office 365 entreprise E3) à partir des comptes d’utilisateur défini dans le fichier texte C:\My Documents\Accounts.txt.
+Cet exemple supprime le `litwareinc:ENTERPRISEPACK` licence (Office 365 entreprise E3) dans les comptes d’utilisateur défini dans le fichier texte C:\My Documents\Accounts.txt.
     
   ```
   Get-Content "C:\My Documents\Accounts.txt" | Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "litwareinc:ENTERPRISEPACK"
@@ -100,46 +98,14 @@ $x = Get-MsolUser -All  | where {$_.isLicensed -eq $true}
 $x | foreach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"...}
 ```
 
-Cet exemple supprime la `litwareinc:ENTERPRISEPACK` (Office 365 entreprise E3) licence tout sous licence des comptes d’utilisateurs.
+Cet exemple supprime le `litwareinc:ENTERPRISEPACK` licence (Office 365 entreprise E3) à partir de tout une licence de comptes d’utilisateurs.
   
 ```
 $x = Get-MsolUser -All  | where {$_.isLicensed -eq $true}
 $x | foreach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "litwareinc:ENTERPRISEPACK"}
 ```
 
-## <a name="the-long-version-instructions-with-detailed-explanations"></a>La version longue (instructions avec des explications détaillées)
-<a name="LongVersion"> </a>
-
-Rien ne dure toujours, et qui inclut des licences Office 365 : tôt ou tard, il arrivera un moment lorsque vous devez supprimer une licence d’un compte d’utilisateur. Peut-être que l’utilisateur va sur le congé ; peut-être l’utilisateur n’a plus besoin de la licence ; peut-être - il y a évidemment autant de raisons pourquoi vous pouvez souhaiter supprimer une licence utilisateur.
-  
-Avant d’aller plus loin qu’il est important de noter que la suppression d’une licence, vous devez, bien, supprimez la licence : la désactivation de tous les services sur une licence n’est pas la même chose que la suppression d’une licence. Par exemple, supposons que nous avons utilisé notre licences Office 365 ; en d’autres termes, nous n’avons pas de licences disponibles que ce soit. Vous décidez de suivre la procédure de [désactivation de l’accès aux services Office 365 PowerShell](disable-access-to-services-with-office-365-powershell.md) pour désactiver tous les services, par exemple, sur le compte de le de Belinda Newman. Après cela, combien de licences va nous disposons nous ? C’est ça : zéro. Oui, la procédure de cette rubrique va *désactiver* tous les services sur les licences de Belinda, mais il ne désactivera pas (c.-à-d. de supprimer) la licence elle-même. La licence sera toujours valide et elle restera affectée à Belinda Newman. Elle ne sera uniquement en mesure d’utiliser cette licence pour accéder aux services Office 365.
-  
-Et c’est important : Si vous souhaitez supprimer une licence d’un utilisateur, vous devez *Supprimer* la licence. La désactivation de tous les services empêche l’utilisateur de se connecter à Office 365, mais il ne libérer la licence sa. Si vous souhaitez reprendre une licence qui est actuellement affectée à un utilisateur, que vous devez exécuter une commande semblable à celle-ci, une commande qui utilise le paramètre _RemoveLicenses_ pour supprimer réellement la licence précédemment attribuée à Belinda :
-  
-```
-Set-MsolUserLicense -UserPrincipalName BelindaN@litwareinc.com -RemoveLicenses "litwareinc:ENTERPRISEPACK"
-```
-
-Exécutez cette commande, et Belinda Newman est n’est plus accordée pour utiliser Office 365.
-  
-> [!NOTE]
-> Comme vous pouvez le voir, lorsque vous utilisez le paramètre _RemoveLicenses_ , que vous devez spécifier le nom de la licence à supprimer. Si vous ne savez pas quel plan de gestion des licences utilisé pour attribuer une licence à l’utilisateur, il suffit d’exécuter une commande comme suit :`Get-MsolUser -UserPrincipalName BelindaN@litwareinc.com | Format-List DisplayName,Licenses`
-  
-Pour vérifier que la licence a vraiment été supprimée, utilisez la commande Get-MsolUser pour vérifier le compte de l’utilisateur en question :
-  
-```
-Get-MsolUser -UserPrincipalName BelindaN@litwareinc.com
-```
-
-Si tout se déroule conformément au plan, propriété **d’isLicensed** de Belinda est maintenant fixée à `False`:
-  
-```
-UserPrincipalName            DisplayName         isLicensed
------------------            -----------         ----------
-BelindaN@litwareinc.com      Newman, Belinda     False
-```
-
-Un autre moyen de libérer une licence est en supprimant le compte utilisateur. Pour plus d’informations, voir [Supprimer et restaurer des comptes d’utilisateurs avec Office 365 PowerShell](delete-and-restore-user-accounts-with-office-365-powershell.md).
+Une autre manière pour libérer une licence est en supprimant le compte d’utilisateur. Pour plus d’informations, voir [Supprimer et restaurer des comptes d’utilisateurs avec Office 365 PowerShell](delete-and-restore-user-accounts-with-office-365-powershell.md).
   
 ## <a name="see-also"></a>Voir aussi
 
@@ -155,17 +121,17 @@ Consultez les rubriques supplémentaires suivantes sur la gestion des utilisateu
     
 Pour plus d’informations sur les cmdlets utilisées dans ces procédures, consultez les rubriques suivantes :
   
-- [Get-Content.](https://go.microsoft.com/fwlink/p/?LinkId=289917)
+- [Get-Content](https://go.microsoft.com/fwlink/p/?LinkId=289917)
     
 - [Get-MsolUser](https://go.microsoft.com/fwlink/p/?LinkId=691543)
     
-- [Ensemble-MsolUserLicense](https://go.microsoft.com/fwlink/p/?LinkId=691548)
+- [Set-MsolUserLicense](https://go.microsoft.com/fwlink/p/?LinkId=691548)
     
 - [ForEach-Object](https://go.microsoft.com/fwlink/p/?LinkId=113300)
     
 - [Where-Object](https://go.microsoft.com/fwlink/p/?LinkId=113423)
     
-## <a name="new-to-office-365"></a>Vous débutez avec Office 365 ?
+## <a name="new-to-office-365"></a>Vous débutez avec Office 365 ?
 
 [!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
    

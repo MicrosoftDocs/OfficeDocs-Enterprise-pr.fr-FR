@@ -3,7 +3,7 @@ title: Scénarios de cloud hybride pour les services PaaS Azure
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/30/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 5f4f5d0d-4638-48e8-a517-bd804856b617
 description: "Résumé : Comprendre l'architecture hybride et les scénarios pour les offres cloud PaaS de Microsoft dans Azure."
-ms.openlocfilehash: e60bc92eed45e5d29fe0be80320dee65b8325028
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: e536d81b6b14b05bef49d7c91b0404faec64303b
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915009"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123331"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-paas"></a>Scénarios de cloud hybride pour les services PaaS Azure
 
@@ -95,37 +95,9 @@ Cet exemple d'application Azure PaaS hybride est une application mobile personna
     
 Étant donné que le fournisseur d'identité local a été synchronisé avec Azure AD, l'application mobile personnalisée et l'application métier peuvent valider le nom du compte de l'utilisateur qui envoie la requête.
   
-## <a name="stretch-database-with-sql-server-2016"></a>Stretch Database avec SQL Server 2016
-
-Stretch Database est une fonctionnalité de SQL Server 2016 qui vous permet de déplacer des données froides de façon transparente et sécurisée, telles que des données d’entreprise fermées dans une table volumineuse qui contient des informations sur les commandes client, vers une base de données SQL Stretch dans Azure.
-  
-Dans le cadre d’une extension, le contenu d’une instance SQL Server, d’une base de données ou d’une table unique est la combinaison de données locales stockées sur un serveur SQL Server 2016 à des données distantes dans Azure. Les données qui deviennent éligibles à une extension sont automatiquement déplacées vers Azure par SQL Server 2016.
-  
-La Figure 4 illustre Stretch Database avec SQL Server 2016.
-  
-**Figure 4 : Stretch Database avec SQL Server 2016**
-
-![Stretch Database avec SQL Server 2016](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS-Apps-SQL.png)
-  
-Dans la Figure 4, un réseau local héberge un serveur exécutant SQL Server 2016 avec une petite base de données locale. Azure PaaS héberge une instance d'Azure SQL Server Stretch Database avec la partie étendue de la base de données. Les requêtes T-SQL provenant d'un utilisateur local envoyées à SQL Server local sont transférées en toute sécurité à Azure SQL Stretch Database, qui renvoie les résultats à l'utilisateur étant à l'origine de la requête.
-  
-  
-
-Les requêtes de l’utilisateur qui incluent les données historiques sont transférés en toute transparence à Azure SQL Stretch Database. Les requêtes ne doivent pas être réécrites, même si la table fait l’objet d’une extension. 
-
-
-  
-Stretch Database est une solution rentable qui offre un stockage à long terme et un accès transparent aux données historiques. Elle résout également les problèmes de performances et de disponibilité qui peuvent survenir lorsque les tables deviennent très volumineuses.
-  
-Pour plus d'informations, voir [Stretch Database](https://msdn.microsoft.com/library/dn935011.aspx).
-  
 ## <a name="see-also"></a>Voir aussi
 
 [Cloud hybride Microsoft pour les architectes d'entreprise](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
 [Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
-
-[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs](https://sway.com/FJ2xsyWtkJc2taRD)
-
-
 

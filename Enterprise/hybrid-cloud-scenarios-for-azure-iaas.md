@@ -3,7 +3,7 @@ title: Scénarios de cloud hybride pour les services IaaS Azure
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/30/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
 description: 'Résumé : Découvrez les scénarios et l’architecture hybride pour l’Infrastructure de Microsoft en tant que Service (IaaS)-en fonction des offres de cloud dans Azure.'
-ms.openlocfilehash: 4aecca0c4ac189af7048c712dbdf277aa0ef0dec
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: bb6611f51cc346273438e879d957597fe3299c58
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915029"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123241"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Scénarios de cloud hybride pour Azure IaaS
 
@@ -67,7 +67,7 @@ Un serveur de synchronisation d’annuaire est un serveur Windows qui exécute A
   
 Le serveur de synchronisation d’annuaire interroge Windows Server AD pour connaître les modifications, puis les synchronise avec l’abonnement Office 365.
   
-Pour plus d’informations, voir [configurer la synchronisation d’annuaires pour Office 365](set-up-directory-synchronization.md).
+Pour plus d’informations, voir [Déployer Office 365 la synchronisation d’annuaires dans Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).
   
 ## <a name="line-of-business-lob-application"></a>Application métier
 
@@ -161,7 +161,7 @@ Un autre exemple d’une application métier à plusieurs niveaux, hautement dis
   
 **La figure 5 : Une infrastructure identité fédérée de haute disponibilité pour Office 365 dans Azure IaaS**
 
-![Configuration finale de l’infrastructure d’authentification fédérée haute disponibilité Office 365 dans Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-ADFS.png)
+![Une haute disponibilité Office 365 fédéré de l’infrastructure d’authentification dans Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-ADFS.png)
   
 Dans la Figure 5, un réseau local héberge une infrastructure d’identité et les utilisateurs. Il est connecté à une passerelle Azure IaaS avec une connexion de site à ExpressRoute à distance ou VPN. Le VNet Azure contient les serveurs proxy, les serveurs d’Active Directory Federation Services (ADFS) et les contrôleurs de domaine Windows Server Active Directory (AD).
   
@@ -181,20 +181,11 @@ Suivez cette procédure pour une adoption réussie :
     
     Voir [authentification fédérée de déploiement haute disponibilité pour Office 365 dans Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) afin de parcourir la configuration de bout en bout de la haute disponibilité infrastructure AD FS dans cinq phases.
     
-Consultez ces ressources supplémentaires :
-  
-- [Architecture des environnements de Cloud hybride](https://gallery.technet.microsoft.com/Architecting-Hybrid-Cloud-a7dc9f24/file/147475/1/Architecting%20Hybrid%20Cloud%20Environments%20V1.docx)
-    
-- [Concevoir et créer une application métier dans Azure](https://techcommunity.microsoft.com/t5/CAAB-Cloud-Adoption-Advisory/EXTRA-November-2016-Webinar/m-p/30058#M41)
     
 ## <a name="see-also"></a>Voir aussi
 
 [Cloud hybride Microsoft pour les architectes d'entreprise](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
 [Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
-
-[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs (en anglais)](https://sway.com/FJ2xsyWtkJc2taRD)
-
-
 
 

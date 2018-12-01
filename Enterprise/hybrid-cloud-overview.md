@@ -3,7 +3,7 @@ title: Présentation du cloud hybride
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/30/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: 'Résumé : Comprendre la définition et les éléments du cloud hybride Microsoft.'
-ms.openlocfilehash: b77df519dc89a5ab97d965c16dc9f54955614903
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 04c1a80009b1136ae4575ea4d454cebdb26bed3c
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915819"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123311"
 ---
 # <a name="hybrid-cloud-overview"></a>Présentation du cloud hybride
 
@@ -55,7 +55,7 @@ Les scénarios de cloud hybride utilisant les services cloud Microsoft dépenden
   
 - SaaS
     
-    Les services SaaS de Microsoft incluent Office 365, Microsoft Intune et Microsoft Dynamics 365. Les scénarios de cloud hybride avec les services SaaS de Microsoft combinent ces services aux applications ou services locaux. Par exemple, Exchange Online exécuté dans Office 365 peut être intégré à Skype Entreprise 2015 qui est déployé en local.
+    Services Microsoft SaaS incluent Office 365 et Microsoft Dynamics 365 Intune Microsoft. Scénarios de nuage hybride avec Microsoft SaaS combinent ces services avec les services locaux ou des applications. Par exemple, Exchange Online en cours d’exécution dans Office 365 peut être intégré avec Skype pour 2019 Business qui est déployé localement.
     
 - Azure PaaS
     
@@ -90,8 +90,4 @@ Vous devez tenir compte des éléments suivants lorsque vous planifiez et implé
 [Cloud hybride Microsoft pour les architectes d'entreprise](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
 [Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
-
-[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs](https://sway.com/FJ2xsyWtkJc2taRD)
- 
-
 

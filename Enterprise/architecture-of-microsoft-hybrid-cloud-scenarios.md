@@ -3,7 +3,7 @@ title: Architecture des scénarios de cloud hybride Microsoft
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/30/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 06d8c959-39e5-4150-b1ae-aaf0eee4c058
 description: "Résumé : Comprendre l'architecture d'offres de cloud hybride Microsoft."
-ms.openlocfilehash: 8a0c5c37c2e0dfd0c6641128b1cee89c89e16441
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 74fc046d1f60b29338e7f12184dec018538ba9da
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22914919"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123391"
 ---
 # <a name="architecture-of-microsoft-hybrid-cloud-scenarios"></a>Architecture des scénarios de cloud hybride Microsoft
 
@@ -33,7 +33,7 @@ Utilisez une approche orientée architecture pour planifier et implémenter des 
   
 La Figure 1 présente la pile du cloud hybride Microsoft et sa couche, qui incluent les applications et scénarios d’identité, réseau et locaux et la catégorie de service de cloud (SaaS Microsoft, Azure SaaS et Azure PaaS).
   
-La couche d’applications et de scénarios contient les scénarios de cloud hybride spécifiques qui sont détaillés dans les autres articles de ce modèle. Les couches locales, d’identité et réseau peuvent être communes aux catégories de service de cloud (SaaS, PaaS ou IaaS).
+La couche d’applications et scénarios a les scénarios de cloud hybride spécifiques qui sont détaillées dans les articles supplémentaires de ce modèle. L’identité, le réseau et locaux calques peuvent être communes aux catégories de service en nuage (SaaS, PaaS ou PaaS).
   
 - Sur site
     
@@ -68,8 +68,4 @@ De nombreuses entreprises, y compris celles détenues par Microsoft, utilisent u
 [Cloud hybride Microsoft pour les architectes d'entreprise](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
 [Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
-
-[Feuille de route Enterprise Cloud de Microsoft : ressources pour les décideurs](https://sway.com/FJ2xsyWtkJc2taRD)
-
-
 

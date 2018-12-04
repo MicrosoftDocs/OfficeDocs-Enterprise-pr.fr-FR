@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Pour vous aider à mieux identifier et différencier le trafic réseau Office 365, un nouveau service web publie les points de terminaison Office 365, afin de vous permettre d’évaluer, de configurer et de rester informé plus facilement des modifications. Ce nouveau service web remplace les fichiers téléchargeables XML actuellement disponibles.
-ms.openlocfilehash: 1765a35e961d6aa3da42c36e5a04333e57ae010b
-ms.sourcegitcommit: 7f1e19fb2d7a448a2dec73d8b2b4b82f851fb5f7
+ms.openlocfilehash: 8a9b3981f833705b0d77e87a6f0588730b9fb170
+ms.sourcegitcommit: 7db45f3c81f38908ac2d6f64ceb79a4f334ec3cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "25697980"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26985769"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>**Service web d’URL et d’adresses IP Office 365**
 
@@ -68,7 +68,7 @@ Il y a un paramètre pour la méthode web de version :
 - **Format = JSON** | **CSV** | **RSS** : outre les formats JSON et CSV, la méthode web de version prend également en charge RSS. Vous pouvez l’utiliser, ainsi que le paramètre allVersions = true pour demander un flux RSS qui peut être utilisé avec Outlook ou d’autres lecteurs RSS.
 - **Instance** : paramètre d’itinéraire. Ce paramètre facultatif spécifie l’instance pour laquelle renvoyer la version. S’il est omis, toutes les instances sont renvoyées. Les instances valides sont : Worldwide, China, Germany, USGovDoD, USGovGCCHigh.
 
-Le résultat de la méthode web de version peut être un enregistrement unique ou un tableau d’enregistrements. Les éléments de chaque enregistrement sont :
+La méthode web de version n’est pas limitée en débit et ne renvoie jamais de codes de réponse HTTP 429. La réponse à la méthode web de version inclut un en-tête Cache-Control qui recommande la mise en cache des données pendant 1 heure. Le résultat de la méthode web de version peut être un enregistrement unique ou un tableau d’enregistrements. Les éléments de chaque enregistrement sont les suivants :
 
 - instance : nom court de l’instance de service Office 365.
 - latest : dernière version pour les points de terminaison de l’instance spécifiée.
@@ -168,12 +168,14 @@ Cet URI affiche un flux RSS des versions publiées qui incluent des liens vers l
 
 ## <a name="endpoints-web-method"></a>**Méthode web de points de terminaison**
 
-La méthode web de points de terminaison renvoie tous les enregistrements pour les plages d’adresses IP et les URL qui composent le service Office 365. Les dernières données issues de la méthode web de points de terminaison web doivent être utilisées pour la configuration des périphériques réseau mais les données peuvent être mises en cache jusqu’à 30 jours après leur publication en raison du préavis fourni pour les ajouts. Les paramètres pour la méthode web de points de terminaison sont :
+La méthode web de points de terminaison renvoie tous les enregistrements pour les plages d’adresses IP et les URL qui composent le service Office 365. Les dernières données issues de la méthode web de points de terminaison doivent être utilisées pour la configuration des périphériques réseau mais les données peuvent être mises en cache jusqu’à 30 jours après leur publication en raison du préavis fourni pour les ajouts. Nous vous recommandons de ne rappeler la méthode web de points de terminaison que lorsque la méthode web de version indique qu’une nouvelle version des données est disponible. Les paramètres pour la méthode web de points de terminaison sont les suivants :
 
 - **ServiceAreas** : paramètre de chaîne de requête. Liste de valeurs séparées par des virgules pour les zones de service. Les éléments valides sont : Common, Exchange, SharePoint, Skype. Étant donné que les éléments de la zone de service Common sont une condition préalable pour toutes les autres zones de service, le service web les inclura toujours. Si vous n’incluez pas ce paramètre, toutes les zones de service sont renvoyées.
 - **TenantName** : paramètre de chaîne de requête. Votre nom du client Office 365. Le service web prend le nom que vous avez fourni et l’insère dans des parties des URL qui incluent le nom du client. Si vous ne fournissez pas le nom du client, ces parties d’URL ont le caractère générique (\*).
 - **NoIPv6** : paramètre de chaîne de requête. Définissez cette option sur true pour exclure les adresses IPv6 du résultat, par exemple, si vous n’utilisez pas IPv6 dans votre réseau.
 - **Instance** : paramètre d’itinéraire. Ce paramètre obligatoire spécifie l’instance pour laquelle renvoyer les points de terminaison. Les instances valides sont : Worldwide, China, Germany, USGovDoD, USGovGCCHigh.
+
+Si vous appelez la méthode web de points de terminaison à une fréquence déraisonnable à partir de la même adresse IP client, il se peut que vous receviez un code de réponse 429 indiquant que les demandes sont trop nombreuses. La plupart des utilisateurs ne recevront jamais ce type de code. Si vous le recevez, vous devrez patienter 1 heure avant de pouvoir appeler de nouveau la méthode. Prévoyez de n’appeler la méthode web de points de terminaison que lorsque la méthode web de version indique qu’une nouvelle version est disponible. 
 
 Le résultat de la méthode web de points de terminaison est un tableau d’enregistrements avec chaque enregistrement représentant un ensemble de points de terminaison. Les éléments pour chaque enregistrement sont :
 
@@ -239,11 +241,22 @@ Le paramètre de la méthode web de modifications est :
 
 - **Version** : paramètre d’itinéraire URL obligatoire. La version que vous avez implémentée actuellement et dont vous souhaitez voir les modifications depuis cette version. Le format est _YYYYMMDDNN_.
 
+La méthode web de modifications est limitée en débit de la même façon que la méthode web de points de terminaison. Si vous recevez un code de réponse HTTP 429, vous devrez patienter 1 heure avant de pouvoir appeler le nouveau. 
+
 Le résultat de la méthode web de modifications est un tableau d’enregistrements avec chaque enregistrement représentant une modification dans une version spécifique des points de terminaison. Les éléments pour chaque enregistrement sont :
 
 - ID : ID non modifiable de l’enregistrement de la modification.
 - endpointSetId : ID de l’enregistrement du point de terminaison qui est modifié. Obligatoire.
 - disposition : modification, ajout ou suppression qui décrit l’effet de la modification sur l’enregistrement du point de terminaison. Obligatoire.
+- impact : toutes les modifications n’ont pas le même degré d’importance pour chaque environnement. Cet élément décrit l’impact attendu dans un environnement de périmètre réseau d’entreprise suite à cette modification. Cet attribut est inclus uniquement dans les enregistrements de modification des versions 2018112800 et ultérieures. Les options pour l’impact sont les suivantes :
+  - AddedIp : une adresse IP a été ajoutée à Office 365 et sera bientôt active sur le service. Cela représente une modification à apporter à un pare-feu ou un autre appareil de périmètre réseau de couche 3. Une indisponibilité peut se produire si vous ne l’ajoutez pas avant le début de son utilisation.
+  - AdedUrl : une URL a été ajoutée à Office 365 et sera bientôt active sur le service. Cela représente une modification à apporter à un serveur proxy ou un périphérique de périmètre réseau d’analyse d’URL. Une indisponibilité peut se produire si vous ne l’ajoutez pas avant le début de son utilisation.
+  - AddedIpAndUrl : une adresse IP et une URL ont été ajoutées. Cela représente une modification à apporter à un pare-feu de couche 3, un serveur proxy ou un périphérique d’analyse d’URL. Une indisponibilité peut se produire si vous ne l’ajoutez pas avant le début de son utilisation.
+  - RemovedIpOrUrl : au moins une adresse IP ou une URL a été supprimée d’Office 365. Vous devez supprimer les points de terminaison réseau de vos périphériques de périmètre, mais vous n’avez aucune date d'échéance.
+  - ChangedIsExpressRoute : l’attribut de support ExpressRoute a été modifié. Si vous utilisez ExpressRoute, vous devez agir en fonction de votre configuration.
+  - MovedIpOrUrl : nous avons déplacé une adresse IP ou une URL entre cet ensemble de points de terminaison et un autre emplacement. En général, aucune action n’est requise.
+  - RemovedDuplicateIpOrUrl : nous avons supprimé une adresse IP ou une URL en double, mais celle-ci est toujours publiée pour Office 365. En général, aucune action n’est requise.
+  - OtherNonPriorityChanges : nous avons modifié un élément moins critique que toutes les autres options, comme un champ de note.
 - version : version de l’ensemble de points de terminaison publié dans laquelle la modification a été introduite. Les numéros de version sont au format _YYYYMMDDNN_, où NN est un nombre naturel incrémenté si plusieurs versions doivent être publiées sur un seul jour.
 - previous : sous-structure détaillant les valeurs précédentes des éléments modifiés sur l’ensemble de points de terminaison. Cela ne sera pas inclus pour les ensembles de points de terminaison nouvellement ajoutés. Inclut udpPorts, ExpressRoute, category, required, notes.
 - current : sous-structure détaillant les valeurs mises à jour des éléments de modifications sur l’ensemble de points de terminaison. Inclut cpPorts, udpPorts, ExpressRoute, category, required, notes.

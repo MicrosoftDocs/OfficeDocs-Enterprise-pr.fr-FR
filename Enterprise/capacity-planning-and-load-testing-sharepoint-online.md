@@ -13,16 +13,16 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
 description: Cet article explique comment vous pouvez déployer vers SharePoint Online sans effectuer de test de charge traditionnel car il n’est pas autorisée.
-ms.openlocfilehash: 06649942f20dc18abfcae0e56df7e3ea56ed9165
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 490d05598c42cd5d94f61dd21ee5a11701d4b4a7
+ms.sourcegitcommit: 033156d46ac0fb5f05d2b1a594d5ef368b93b893
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540597"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "27134669"
 ---
 # <a name="capacity-planning-and-load-testing-sharepoint-online"></a>La capacité de planification et de test SharePoint Online de charge
 
-Cet article explique comment vous pouvez déployer vers SharePoint Online sans effectuer de test de charge traditionnel car il n’est pas autorisée.
+Cet article explique comment vous pouvez déployer vers SharePoint Online sans effectuer de test de charge traditionnel car il est fortement déconseillé.
   
 Bien que le test sur SharePoint Online actif de la charge est fortement déconseillé, que vous pouvez vous assurer que d’autres manières un site ne produit pas une expérience utilisateur médiocre lorsque vous lancez le site. 
   

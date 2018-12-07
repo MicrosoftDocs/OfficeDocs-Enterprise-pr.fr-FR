@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
 description: 'Résumé : Découvrez les scénarios et l’architecture hybride pour l’Infrastructure de Microsoft en tant que Service (IaaS)-en fonction des offres de cloud dans Azure.'
-ms.openlocfilehash: bb6611f51cc346273438e879d957597fe3299c58
-ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
+ms.openlocfilehash: 441565adae46d50ad1b7139525ff3146c5f88ca3
+ms.sourcegitcommit: 82c8fe6393457f0271d1737a09402a420a81c986
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123241"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27181035"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Scénarios de cloud hybride pour Azure IaaS
 
@@ -51,21 +51,21 @@ Pour chaque couche de l’architecture :
     
     Contient des serveurs d’identité qui sont synchronisés avec les serveurs d’identité exécutés dans Azure. Peut également contenir des ressources auxquelles les ordinateurs virtuels exécutés dans Azure peuvent accéder, telles que le stockage et l’infrastructure de gestion des systèmes.
     
-## <a name="dirsync-server-for-office-365"></a>Serveur de synchronisation d’annuaire pour Office 365
+## <a name="directory-synchronization-server-for-office-365"></a>Serveur de synchronisation d’annuaire pour Office 365
 
-Le fait d’exécuter votre serveur de synchronisation d’annuaire à partir d’un réseau virtuel Azure, comme illustré dans la figure 2, est un exemple d’extension de votre infrastructure informatique et d’identité dans le cloud.
+Exécution de votre serveur de synchronisation d’annuaire à partir d’un VNet Azure, comme indiqué dans la Figure 2, est un exemple d’extension de votre infrastructure informatique et identité vers le nuage.
   
-**Figure 2 : serveur de synchronisation d’annuaire pour Office 365 dans Azure IaaS**
+**La figure 2 : Serveur de synchronisation pour Office 365 dans Azure IaaS**
 
-![Serveur de synchronisation d’annuaire pour Office 365 dans Azure IaaS](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-DirSync.png)
+![Serveur de synchronisation d’annuaire pour Office 365 dans Azure IaaS](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-DirSync.png)
   
-Dans la Figure 2, un réseau local héberge une infrastructure Windows Server Active Directory, avec un serveur proxy et un routeur au bord. Le routeur se connecte à une passerelle Azure sur le bord d’un VNet Azure avec une connexion de site à ExpressRoute à distance ou VPN. À l’intérieur de la VNet, un serveur de synchronisation d’annuaire exécute Azure AD se connecter.
+Dans la Figure 2, un réseau local héberge une infrastructure Windows Server Active Directory, avec un serveur proxy et un routeur au bord. Le routeur se connecte à une passerelle Azure sur le bord d’un VNet Azure avec une connexion de site à ExpressRoute à distance ou VPN. À l’intérieur de la VNet, un serveur de synchronisation d’annuaires exécute Azure AD se connecter.
   
-Un serveur de synchronisation d’annuaire pour Office 365 synchronise la liste des comptes dans Windows Server AD avec le client Azure AD d’un abonnement Office 365.
+Un serveur de synchronisation d’annuaire pour Office 365 synchronise la liste des comptes dans Windows Server Active Directory avec le client Azure AD d’un abonnement à Office 365.
   
-Un serveur de synchronisation d’annuaire est un serveur Windows qui exécute Azure AD Connect. Pour accélérer l’approvisionnement ou réduire le nombre de serveurs locaux de votre organisation, déployez votre serveur de synchronisation d’annuaire dans un réseau virtuel dans Azure IaaS.
+Un serveur de synchronisation d’annuaires est un serveur basé sur Windows qui exécute Azure AD se connecter. Pour la mise en service plus rapide ou pour réduire le nombre de serveurs locaux dans votre organisation, déployez le serveur de synchronisation d’annuaire dans un réseau virtuel (VNet) dans Azure IaaS.
   
-Le serveur de synchronisation d’annuaire interroge Windows Server AD pour connaître les modifications, puis les synchronise avec l’abonnement Office 365.
+Le serveur de synchronisation d’annuaire interroge Windows Server Active Directory pour que les modifications, puis les synchronise avec l’abonnement à Office 365.
   
 Pour plus d’informations, voir [Déployer Office 365 la synchronisation d’annuaires dans Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).
   

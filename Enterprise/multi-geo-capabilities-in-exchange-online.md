@@ -10,12 +10,12 @@ ms.custom: ''
 localization_priority: Normal
 ms.assetid: ''
 description: Développez votre présence d’Office 365 à plusieurs régions géographiques avec des capacités multi-localisés dans Exchange Online.
-ms.openlocfilehash: 5f34a2da47b9767aa9dfe22c6be7237951128960
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
+ms.openlocfilehash: 6acd2ffab1f35b74d06d6ab5f7bfcbf70f88f8b4
+ms.sourcegitcommit: 03bb9edd52b1b7cd49791baf90645828b89b32b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849920"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27200737"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Fonctionnalités multi-localisés dans Exchange Online
 
@@ -41,7 +41,7 @@ Geo aux emplacements suivants sont disponibles pour une utilisation dans une con
 
 - France
 
-- Inde (actuellement uniquement disponible pour les clients avec des adresses de facturation en Inde)
+- Inde
 
 - Japon
 
@@ -112,7 +112,7 @@ Pour vous connecter à une région, le paramètre *ConnectionUri* est différent
    ```
    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com -Credential $UserCredential -Authentication  Basic -AllowRedirection
    ```
-3. Exécutez la commande suivante :
+3. Exécutez la commande suivante :
     
     ```
     Import-PSSession $Session

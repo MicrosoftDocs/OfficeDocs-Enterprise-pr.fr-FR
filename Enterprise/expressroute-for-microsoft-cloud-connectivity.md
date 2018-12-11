@@ -3,7 +3,7 @@ title: ExpressRoute pour la connectivité au cloud de Microsoft
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/28/2018
+ms.date: 12/05/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: 'Résumé : Comprendre comment ExpressRoute peut garantir des connexions plus fiables et plus rapides aux services et aux plateformes cloud de Microsoft.'
-ms.openlocfilehash: 3ac8d52f50ff6df612de68ea51136fc16d5c9169
-ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
+ms.openlocfilehash: a72533673618af01fc2ce6dcc44f84cf94afc215
+ms.sourcegitcommit: 16806849f373196797d65e63ced825d547aef956
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26872325"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "27213971"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>ExpressRoute pour la connectivité au cloud de Microsoft
 
@@ -222,11 +222,11 @@ Avec plusieurs connexions ExpressRoute Premium, vous pouvez avoir les résultats
     
 - Disponibilité accrue dans le Microsoft Cloud global lorsqu’une connexion ExpressRoute locale n’est plus disponible.
     
-ExpressRoute Premium est requis pour les connexions ExpressRoute basées sur Office 365. Toutefois, il n’existe aucun coût supplémentaire pour les entreprises ayant au moins 500 utilisateurs sous licence.
+ExpressRoute Premium est requis pour les connexions ExpressRoute basée sur Office 365.
   
 **Figure 9 : Réseau cloud mondial de Microsoft**
 
-![Figure 9 : réseau cloud mondial de Microsoft](media/Network-Poster/MSNet3.png)
+![Figure 9 : Réseau cloud mondial de Microsoft](media/Network-Poster/MSNet3.png)
   
 La figure 9 représente un diagramme logique du réseau cloud mondial de Microsoft, avec des réseaux qui couvrent les continents et les régions du monde entier et leurs interconnexions. Avec une partie du réseau cloud de Microsoft sur chaque continent, une entreprise présente à l’échelle mondiale crée des connexions ExpressRoute Premium aux emplacements d’homologation Microsoft locaux à partir de ses bureaux régionaux.
   
@@ -236,7 +236,7 @@ Pour un bureau régional, attribuez le trafic Office 365 aux centres de données
     
 - Les centres de données Office 365 sur un autre continent utilisent sur le réseau cloud de Microsoft intercontinental.
     
-Pour plus d’informations, voir :
+Pour plus d'informations, voir :
   
 - [Azure ExpressRoute for Office 365 Training](https://channel9.msdn.com/series/aer/)
     
@@ -272,5 +272,5 @@ Consultez les ressources supplémentaires suivantes pour plus d’informations 
 
 [Mise en réseau cloud Microsoft pour les architectes d’entreprise](microsoft-cloud-networking-for-enterprise-architects.md)
   
-[Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Ressources relatives à l’architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 

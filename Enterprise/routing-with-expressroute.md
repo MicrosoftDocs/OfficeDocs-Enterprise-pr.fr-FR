@@ -3,7 +3,7 @@ title: Routage avec ExpressRoute pour Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 12/7/2017
+ms.date: 12/14/2017
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: Pour bien comprendre le routage du trafic vers Office 365 à l’aide d’Azure ExpressRoute, vous devez connaître des exigences de gamme ExpressRoute principaux circuits ExpressRoute et de domaines de routage. Ces présenter les concepts fondamentaux pour l’utilisation ExpressRoute se base sur les clients Office 365.
-ms.openlocfilehash: e80ce78c0b229881349a4d02c7708fb9509748a9
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: d8fa0c606a5aedd3760236cb46bcf9e1c584ecb8
+ms.sourcegitcommit: d165aef59fe9a9ef538e6756fb014909a7cf975b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540372"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "27294474"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Routage avec ExpressRoute pour Office 365
 
@@ -53,13 +53,11 @@ Si vous démarrez une connexion à Office 365 sur Internet ou ExpressRoute, ind�
   
 Voici les scénarios où sera effectuées communications à partir d’Office 365 à votre réseau local. Pour simplifier la conception de votre réseau, nous vous recommandons de routage ces sur le chemin d’accès Internet.
   
+- Services SMTP telles que la messagerie à partir d’un client Exchange Online à un hôte local ou SharePoint Online le courrier envoyé à partir de SharePoint Online à un hôte local. Protocole SMTP est plus largement utilisé au sein du réseau Microsoft que les préfixes d’itinéraire partagé sur circuits ExpressRoute et publicités locales serveurs SMTP ExpressRoute dysfonctionnements seront avec les autres services.
+
 - ADFS lors de la validation de mot de passe pour la connexion.
 
 - [Exchange Server Hybrid deployments](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx).
-
-- À partir d’un client Exchange Online le courrier vers un hôte local...
-
-- SharePoint Online messagerie envoyer à partir de SharePoint Online à un hôte local.
 
 - [SharePoint fédéré de recherche hybride](https://technet.microsoft.com/library/dn197174.aspx).
 
@@ -69,7 +67,13 @@ Voici les scénarios où sera effectuées communications à partir d’Office 36
 
 - [Skype pour Business Cloud Connector](https://technet.microsoft.com/library/mt605227.aspx ).
 
-Pour Microsoft acheminer sur votre réseau pour les flux de trafic bidirectionnel, les itinéraires BGP à vos appareils local doivent être partagées avec Microsoft.
+Pour Microsoft acheminer sur votre réseau pour les flux de trafic bidirectionnel, les itinéraires BGP à vos appareils local doivent être partagées avec Microsoft. Lorsque vous publiez des préfixes itinéraire à Microsoft sur ExpressRoute, vous devez suivre ces meilleures pratiques :
+
+1) Ne pas publier le même public adresse IP préfixe de l’itinéraire à l’Internet public et ExpressRoute. Il est fortement recommandé que les publications préfixe d’itinéraire IP BGP à Microsoft ExpressRoute soient à partir d’une plage qui n’est pas publiée sur internet tout. Si ce n’est pas possible d’obtenir en raison de l’espace d’adresse IP disponible, il est essentiel afin de que vous annoncer une plage plus spécifique sur ExpressRoute à n’importe quel circuits internet.
+
+2) Utilisez des pools distincts IP NAT par circuit ExpressRoute et séparer à celui de votre circuits internet.
+
+3) Sachez que n’importe quel itinéraire publié à Microsoft système attirer le trafic réseau à partir de n’importe quel serveur du réseau Microsoft, pas uniquement celles pour lesquelles les itinéraires sont publiés sur votre réseau sur ExpressRoute. Annonce que les itinéraires vers les serveurs où les scénarios de routage sont définis et bien compris par votre équipe. Publier les préfixes itinéraire adresse IP distinctes à chacun des plusieurs circuits ExpressRoute à partir de votre réseau. 
   
 ## <a name="deciding-which-applications-and-features-route-over-expressroute"></a>Déterminer les applications et les fonctionnalités de router via ExpressRoute
 
@@ -78,7 +82,7 @@ Lorsque vous configurez une relation d’homologation le domaine de routage homo
 Autres applications telles que Office 365 vidéo, est une application Office 365 ; Toutefois, Office 365 vidéo est constituée de trois composants différents, le portail, le service de diffusion en continu et le réseau de distribution de contenu. Le portail se trouve dans SharePoint Online, les durées de vie de diffusion en continu dans les Services de support Azure, et par l’intermédiaire du réseau de distribution de contenu au sein du CDN Azure. Le tableau suivant décrit ces composants.
   
 | |
-|**Composant**|**Application sous-jacente**|**Inclus dans SharePoint Online BGP Communauté ?**|**Utiliser**|
+|**Composant**|**Application sous-jacente**|**Inclus dans SharePoint Online BGP Communauté ?**|**Option recommandée**|
 |:-----|:-----|:-----|:-----|
 |Portail de vidéo Office 365  <br/> |SharePoint Online  <br/> |Oui  <br/> |Configuration, de téléchargement  <br/> |
 |Service de diffusion en continu vidéo Office 365  <br/> |Azure Media Services  <br/> |Non  <br/> |Service de diffusion en continu, utilisé dans les événements la vidéo n’est pas disponible à partir du CDN  <br/> |
@@ -222,7 +226,7 @@ Routage sélective avec ExpressRoute peut-être être nécessaires pour différe
 
 4. **Communautés BGP** - filtrage basé sur les [balises de la Communauté BGP](https://aka.ms/bgpexpressroute365) permet à un client déterminer les applications Office 365 parcourt ExpressRoute et qui sera parcourir internet.
 
-Voici un lien court, que vous pouvez utiliser pour revenir :[https://aka.ms/erorouting](https://aka.ms/erorouting)
+Voici un lien que vous pouvez utiliser pour revenir : [https://aka.ms/erorouting](https://aka.ms/erorouting)
   
 ## <a name="related-topics"></a>Voir aussi
 
@@ -236,13 +240,13 @@ Voici un lien court, que vous pouvez utiliser pour revenir :[https://aka.ms/ero
   
 [Implémentation d’ExpressRoute pour Office 365](implementing-expressroute.md)
   
-[La qualité des médias et des performances pour la connectivité réseau dans Skype pour les entreprises en ligne](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
+[Qualité des médias et performances de connectivité réseau dans Skype Entreprise Online](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   
-[Optimisation de votre réseau pour Skype pour Business Online](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
+[Optimisation de votre réseau pour Skype Entreprise Online](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
   
-[ExpressRoute et QoS dans Skype pour les entreprises en ligne](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
+[ExpressRoute et QoS dans Skype Entreprise Online](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
   
-[Flux des appels à l’aide de ExpressRoute](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
+[Appel du flux à l’aide d’ExpressRoute](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
   
 [Utilisation de communautés BGP dans ExpressRoute pour les scénarios d’Office 365](bgp-communities-in-expressroute.md)
   
@@ -252,4 +256,4 @@ Voici un lien court, que vous pouvez utiliser pour revenir :[https://aka.ms/ero
   
 [URL et plages d’adresses IP Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
-[Réseau Office 365 et réglage des performances](network-planning-and-performance.md)
+[Paramétrage des performances et du réseau Office 365](network-planning-and-performance.md)

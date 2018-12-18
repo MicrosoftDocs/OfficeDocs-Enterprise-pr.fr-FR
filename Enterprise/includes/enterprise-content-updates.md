@@ -3,25 +3,6 @@
 
 
 
-## <a name="week-of-november-05-2018"></a>Semaine du 5 novembre 2018
-
-
-| Publié le |Titre de la rubrique | Modification |
-|------|------------|--------|
-| 05/11/2018 | [Connecter un réseau local à Microsoft Azure Virtual Network](/Office365/Enterprise/connect-an-on-premises-network-to-a-microsoft-azure-virtual-network) | Modifié le |
-| 05/11/2018 | [Déploiement de la synchronisation d’annuaires Office 365 dans Microsoft Azure](/Office365/Enterprise/deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure) | Modifié le |
-| 05/11/2018 | [Configurer votre réseau pour Office 365](/Office365/Enterprise/set-up-network-for-office-365) | ajouté |
-| 11/6/2018 | [Points de terminaison supplémentaires non inclus dans le service web pour URL et adresses IP Office 365](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | Modifié le |
-| 11/6/2018 | [Déployer une authentification fédérée haute disponibilité pour Office 365 dans Azure](/Office365/Enterprise/deploy-high-availability-federated-authentication-for-office-365-in-azure) | Modifié le |
-| 11/6/2018 | [Réglage des performances Office 365 à l’aide du planning de référence et de l’historique des performances](/Office365/Enterprise/performance-tuning-using-baselines-and-history) | Modifié le |
-| 11/7/2018 | [Points de terminaison Office 365](/Office365/Enterprise/office-365-endpoints) | ajouté |
-| 11/7/2018 | [Configurer votre réseau pour Office 365](/Office365/Enterprise/set-up-network-for-office-365) | Modifié le |
-| 11/8/2018 | [Requêtes réseau dans Office pour Mac](/Office365/Enterprise/network-requests-in-office-2016-for-mac) | Modifié le |
-| 11/8/2018 | [Collaboration inter-client dans Office 365](/Office365/Enterprise/office-365-inter-tenant-collaboration) | Modifié le |
-| 11/8/2018 | [Introduction à l’optimisation des performances pour SharePoint Online](/Office365/Enterprise/introduction-to-performance-tuning-for-sharepoint-online) | Modifié le |
-| 11/9/2018 | [Utilisez l’outil de diagnostic de la Page pour SharePoint Online](/Office365/Enterprise/page-diagnostics-for-spo) | Modifié le |
-
-
 ## <a name="week-of-november-12-2018"></a>Semaine du 12 novembre 2018
 
 
@@ -61,7 +42,7 @@
 | 26/11/2018 | [Installer et exécuter l'outil IdFix pour Office 365](/Office365/Enterprise/install-and-run-idfix) | Modifié le |
 | 26/11/2018 | [Préparer un domaine non routable pour la synchronisation d’annuaires](/Office365/Enterprise/prepare-a-non-routable-domain-for-directory-synchronization) | Modifié le |
 | 27/11/2018 | [Configurer la recherche pour OneDrive Entreprise Multi-Géo](/Office365/Enterprise/configure-search-for-multi-geo) | Modifié le |
-| 27/11/2018 | [Connexion à tous les services Office 365 à l’aide d’une seule fenêtre Windows PowerShell](/Office365/Enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window) | Modifié le |
+| 27/11/2018 | [Connexion à tous les services Office 365 à l'aide d'une seule fenêtre Windows PowerShell](/Office365/Enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window) | Modifié le |
 | 11/28/2018 | [Éléments communs de la connectivité au cloud Microsoft](/Office365/Enterprise/common-elements-of-microsoft-cloud-connectivity) | Modifié le |
 | 11/28/2018 | [Conception de réseaux pour Microsoft Azure IaaS](/Office365/Enterprise/designing-networking-for-microsoft-azure-iaas) | Modifié le |
 | 11/28/2018 | [Conception de réseaux pour Microsoft Azure PaaS](/Office365/Enterprise/designing-networking-for-microsoft-azure-paas) | Modifié le |
@@ -86,7 +67,7 @@
 | 30/11/2018 | [Mise en réseau de Microsoft Cloud pour les architectes d’entreprise](/Office365/Enterprise/microsoft-cloud-networking-for-enterprise-architects) | Modifié le |
 | 30/11/2018 | [Cloud hybride Microsoft pour les architectes d’entreprise](/Office365/Enterprise/microsoft-hybrid-cloud-for-enterprise-architects) | Modifié le |
 | 30/11/2018 | [Attribuer des licences à des comptes d'utilisateurs avec Office 365 PowerShell](/Office365/Enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell) | Modifié le |
-| 30/11/2018 | [Supprimer des licences à des comptes d’utilisateur avec Office 365 PowerShell](/Office365/Enterprise/powershell/remove-licenses-from-user-accounts-with-office-365-powershell) | Modifié le |
+| 30/11/2018 | [Supprimer des licences à des comptes d'utilisateurs avec Office 365 PowerShell](/Office365/Enterprise/powershell/remove-licenses-from-user-accounts-with-office-365-powershell) | Modifié le |
 | 30/11/2018 | [Afficher les utilisateurs avec ou sans licence avec Office 365 PowerShell](/Office365/Enterprise/powershell/view-licensed-and-unlicensed-users-with-office-365-powershell) | Modifié le |
 | 30/11/2018 | [Afficher des comptes d'utilisateur avec Office 365 PowerShell](/Office365/Enterprise/powershell/view-user-accounts-with-office-365-powershell) | Modifié le |
 
@@ -104,3 +85,12 @@
 | 12/7/2018 | [Fonctionnalités multi-localisés dans Exchange Online](/Office365/Enterprise/multi-geo-capabilities-in-exchange-online) | Modifié le |
 | 12/7/2018 | [Configuration du client OneDrive Entreprise Multi-Géo](/Office365/Enterprise/multi-geo-tenant-configuration) | Modifié le |
 | 12/7/2018 | [Planification de OneDrive Entreprise Multi-Géo](/Office365/Enterprise/plan-for-multi-geo) | Modifié le |
+
+
+## <a name="week-of-december-10-2018"></a>Semaine du 10 décembre 2018,
+
+
+| Publié le |Titre de la rubrique | Modification |
+|------|------------|--------|
+| 10/12/2018 | [ExpressRoute pour la connectivité au cloud de Microsoft](/Office365/Enterprise/expressroute-for-microsoft-cloud-connectivity) | Modifié le |
+| 10/12/2018 | [Afficher les détails de service et de licence de compte avec Office 365 PowerShell](/Office365/Enterprise/powershell/view-account-license-and-service-details-with-office-365-powershell) | Modifié le |

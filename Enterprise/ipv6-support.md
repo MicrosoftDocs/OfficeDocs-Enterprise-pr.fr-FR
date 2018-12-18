@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: 'Résumé : Décrit la prise en charge IPv6 dans les composants Microsoft Office 365 et dans les offres Office 365 pour le gouvernement.'
-ms.openlocfilehash: ed06f1eac3c6a3d631445db1d623bd25c62a309c
-ms.sourcegitcommit: ae7f2087d51698d3c5ef371888278544a7046205
+ms.openlocfilehash: 75ed1c8ffe96ed1b09aa8802e11ae195ad60a4f2
+ms.sourcegitcommit: d165aef59fe9a9ef538e6756fb014909a7cf975b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "25493829"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "27294463"
 ---
 # <a name="ipv6-support-in-office-365-services"></a>Prise en charge du protocole IPv6 dans les services Office 365
 
@@ -51,9 +51,7 @@ Si le programme que vous utilisez pour vous connecter à SharePoint Online prend
   
 ### <a name="skype-for-business-and-ipv6"></a>Skype pour les entreprises et IPv6
 
-Microsoft Active IPv6 pour Skype pour les entreprises à votre requête dans le nuage public multiclients et abonnements Office 365 pour le gouvernement G1/G3/G4/K1. Après avoir activé, si le programme que vous utilisez pour vous connecter à Skype pour les entreprises prend en charge IPv6, il utilise IPv6 par défaut. Si vous souhaitez contrôler les communications à Skype pour les entreprises, utilisez les plages d’adresses IP dans [Office 365 URL et plages d’adresses IP](https://go.microsoft.com/fwlink/?LinkId=293744).
-  
-Sachez IPv6 n’est pas disponible dans toutes les régions et Microsoft n’est peut-être pas en mesure d’activer pour votre client à ce stade.
+Sachez IPv6 n’est pas pris en charge dans Skype pour les entreprises et ne peut être activé.
   
 ### <a name="exchange-online-protection-and-ipv6"></a>Exchange Online Protection et IPv6
 

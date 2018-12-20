@@ -1,7 +1,7 @@
 ---
 title: Délais d’attente de session pour Office 365
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: tracyp
+author: MSFTTracyP
 manager: scotv
 ms.date: 6/29/2018
 ms.audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: 37a5c116-5b07-4f70-8333-5b86fd2c3c40
 description: Délais d’attente de session sont utilisés pour équilibrer la sécurité et facilité d’accès dans les applications de client Office 365.
-ms.openlocfilehash: dda13f280149c969354ae1f0eac336f1d8ed23e7
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 4ef50b876fd97e2de2449d324464b466243a6691
+ms.sourcegitcommit: fd7a56f38ba2c2d2e7fcd6e165ec58b31be299d9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540449"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "27378490"
 ---
 # <a name="session-timeouts-for-office-365"></a>Délais d’attente de session pour Office 365
 

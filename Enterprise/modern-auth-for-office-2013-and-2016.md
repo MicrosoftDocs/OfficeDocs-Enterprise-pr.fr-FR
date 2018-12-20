@@ -1,7 +1,7 @@
 ---
 title: Fonctionnement de l’authentification moderne pour les applications clientes Office 2013 et Office 2016
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 8/1/2017
 ms.audience: Admin
@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 description: Découvrez comment Office 365 moderne fonctionne l’authentification différemment pour Office 2013 et les applications clientes de 2016.
-ms.openlocfilehash: 78df8c12ab008922592516cf1d3cda10c594e552
-ms.sourcegitcommit: 7a12a46019970fcd45a6461f4f4cbcd1f76c9b4e
+ms.openlocfilehash: 2a5e218ca751f341e2a3a0ffd164f000ee503279
+ms.sourcegitcommit: fd7a56f38ba2c2d2e7fcd6e165ec58b31be299d9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "25436082"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "27378500"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Fonctionnement de l’authentification moderne pour les applications clientes Office 2013 et Office 2016
 
@@ -54,8 +54,7 @@ Cliquez sur les liens ci-dessous pour voir comment l’authentification du clien
     
 - [SharePoint Online](modern-auth-for-office-2013-and-2016.md#BK_SharePointOnline)
     
-- 
-  [Skype Entreprise Online](modern-auth-for-office-2013-and-2016.md#BK_SFBO)
+- [Skype Entreprise Online](modern-auth-for-office-2013-and-2016.md#BK_SFBO)
     
 ### <a name="exchange-online"></a>Exchange Online
 
@@ -97,7 +96,7 @@ Le tableau suivant décrit le comportement de l’authentification pour Office 2
    
 ## <a name="see-also"></a>Voir aussi
 
-[Activer l’authentification moderne pour Office 2013 sur des appareils Windows](https://support.office.com/article/enable-modern-authentication-for-office-2013-on-windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910)
+[Activer l'authentification moderne pour Office 2013 sur les appareils Windows](https://support.office.com/article/enable-modern-authentication-for-office-2013-on-windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910)
 
 [Planifier l’authentification multifacteur pour les déploiements d’Office 365 (pour les administrateurs Office 365)](https://support.office.com/article/plan-for-multi-factor-authentication-for-office-365-deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
 

@@ -3,24 +3,6 @@
 
 
 
-## <a name="week-of-november-12-2018"></a>Semaine du 12 novembre 2018
-
-
-| Publié le |Titre de la rubrique | Modification |
-|------|------------|--------|
-| 14/11/2018 | [ExpressRoute pour la connectivité au cloud de Microsoft](/Office365/Enterprise/expressroute-for-microsoft-cloud-connectivity) | Modifié le |
-| 14/11/2018 | [Ressources relatives à l'architecture informatique du cloud Microsoft](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | Modifié le |
-| 11/15/2018 | [Configuration du client OneDrive Entreprise Multi-Géo](/Office365/Enterprise/multi-geo-tenant-configuration) | Modifié le |
-| 16/11/2018 | [Comment configurer Exchange Server en local pour utiliser l’authentification moderne hybride](/Office365/Enterprise/configure-exchange-server-for-hybrid-modern-authentication) | Modifié le |
-| 16/11/2018 | [Configuration du client OneDrive Entreprise Multi-Géo](/Office365/Enterprise/multi-geo-tenant-configuration) | Modifié le |
-| 16/11/2018 | [Options de navigation pour SharePoint Online](/Office365/Enterprise/navigation-options-for-sharepoint-online) | Modifié le |
-| 16/11/2018 | Créer de A à Z | supprimé |
-| 16/11/2018 | Conception d’espace de stockage pour le cloud de Microsoft | supprimé |
-| 16/11/2018 | Stockage cloud Microsoft pour les architectes d’entreprise | supprimé |
-| 16/11/2018 | Solutions prêtes à installer | supprimé |
-| 16/11/2018 | Certains assembly requis | supprimé |
-
-
 ## <a name="week-of-november-19-2018"></a>Semaine du 19 novembre 2018,
 
 
@@ -94,3 +76,17 @@
 |------|------------|--------|
 | 10/12/2018 | [ExpressRoute pour la connectivité au cloud de Microsoft](/Office365/Enterprise/expressroute-for-microsoft-cloud-connectivity) | Modifié le |
 | 10/12/2018 | [Afficher les détails de service et de licence de compte avec Office 365 PowerShell](/Office365/Enterprise/powershell/view-account-license-and-service-details-with-office-365-powershell) | Modifié le |
+
+
+## <a name="week-of-december-17-2018"></a>Semaine du 17 décembre 2018,
+
+
+| Publié le |Titre de la rubrique | Modification |
+|------|------------|--------|
+| 17/12/2018 | [Routage avec ExpressRoute pour Office 365](/Office365/Enterprise/routing-with-expressroute) | Modifié le |
+| 17/12/2018 | [Prise en charge du protocole IPv6 dans les services Office 365](/Office365/Enterprise/ipv6-support) | Modifié le |
+| 18/12/2018 | [Vue d’ensemble de l’authentification moderne hybride et conditions requises pour l’utiliser avec Skype sur site pour les professionnels et les serveurs Exchange](/Office365/Enterprise/hybrid-modern-auth-overview) | Modifié le |
+| 18/12/2018 | [Préparer la mise en service des utilisateurs via la synchronisation d’annuaires vers Office 365](/Office365/Enterprise/prepare-for-directory-synchronization) | Modifié le |
+| 19/12/2018 | [Fonctionnement de l’authentification moderne pour les applications clientes Office 2013 et Office 2016](/Office365/Enterprise/modern-auth-for-office-2013-and-2016) | Modifié le |
+| 19/12/2018 | [Délais d’attente de session pour Office 365](/Office365/Enterprise/session-timeouts) | Modifié le |
+| 20/12/2018 | [Exchange 2010 fin de la feuille de route de prise en charge](/Office365/Enterprise/exchange-2010-end-of-support) | Modifié le |

@@ -3,7 +3,7 @@ title: Afficher les licences et les services avec Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/17/2018
+ms.date: 12/31/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: Explique comment utiliser Office 365 PowerShell pour afficher des informations sur les plans de licences, les services et les licences sont disponibles dans votre organisation Office 365.
-ms.openlocfilehash: 21dda5bfc1bf1fa975b4a94879435c1842c383ec
-ms.sourcegitcommit: 8cacedcba4627042d4bd17f1a94fddcfd87f77b2
+ms.openlocfilehash: dab6b8f1828c6be4d32bb2432437d23328653560
+ms.sourcegitcommit: 6dd4ac5808d72406578fcc7be6590dd7a99cebea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25601628"
+ms.lasthandoff: 12/31/2018
+ms.locfileid: "27466873"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Afficher les licences et les services avec Office 365 PowerShell
 
@@ -29,9 +29,9 @@ ms.locfileid: "25601628"
   
 Chaque abonnement à Office 365 se compose des éléments suivants :
 
-- **Plans de gestion des licences** Il s’agit également aslicense plans ou plans Office 365. Plans de licence définissent les services Office 365 qui sont accessibles aux utilisateurs. Votre abonnement Office 365 peut contenir plusieurs plans de gestion des licences. Un plan de gestion des licences exemple serait Office 365 entreprise E3.
+- **Plans de gestion des licences** Ce sont également appelés plans de licence ou plans Office 365. Plans de licence définissent les services Office 365 qui sont accessibles aux utilisateurs. Votre abonnement Office 365 peut contenir plusieurs plans de gestion des licences. Un plan de gestion des licences exemple serait Office 365 entreprise E3.
     
-- **Services** Il s’agit également plans asservice connus. Les services sont les produits Office 365, les fonctionnalités et les capacités qui sont disponibles dans chaque plan de gestion des licences, par exemple, Exchange Online et Office Professionnel Plus. Les utilisateurs peuvent avoir plusieurs licences assignés à partir de différents plans de licence permettant d’accéder à différents services.
+- **Services** Ils sont également appelés plans de service. Les services sont les produits Office 365, les fonctionnalités et les capacités qui sont disponibles dans chaque plan de gestion des licences, par exemple, Exchange Online et Office Professionnel Plus. Les utilisateurs peuvent avoir plusieurs licences assignés à partir de différents plans de licence permettant d’accéder à différents services.
     
 - **Licences** Chaque plan de licences contient le nombre de licences que vous avez acheté. Vous attribuez des licences aux utilisateurs afin qu’ils peuvent utiliser les services Office 365 qui sont définies par le plan de gestion des licences. Chaque compte d’utilisateur nécessite au moins une licence d’un plan de gestion des licences pour pouvoir se connecter à Office 365 et utiliser les services.
     
@@ -41,7 +41,7 @@ Vous pouvez utiliser Office 365 PowerShell pour afficher plus d’informations s
 
 - Les procédures décrites dans cette rubrique exigent une connexion à Office 365 PowerShell. Pour plus d'informations, reportez-vous à [Se connecter à Office 365 PowerShell](connect-to-office-365-powershell.md).
     
-- Vous trouverez un script PowerShell qui automatise les procédures décrites dans cette rubrique. Plus précisément, le script vous permet d’afficher et de désactiver des services dans votre organisation Office 365, notamment balancement. Pour plus d’informations, voir [désactiver l’accès à balancement avec Office 365 PowerShell](disable-access-to-sway-with-office-365-powershell.md).
+- Vous trouverez un script PowerShell qui automatise les procédures décrites dans cette rubrique. Plus précisément, le script permet d’afficher et désactiver des services dans votre organisation Office 365, notamment balancement. Pour plus d’informations, voir [désactiver l’accès à balancement avec Office 365 PowerShell](disable-access-to-sway-with-office-365-powershell.md).
     
 ## <a name="view-information-about-licensing-plans-and-the-available-licenses"></a>Afficher les informations sur les plans de licence et sur les licences disponibles
 

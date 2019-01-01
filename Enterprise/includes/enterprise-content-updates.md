@@ -3,16 +3,6 @@
 
 
 
-## <a name="week-of-november-19-2018"></a>Semaine du 19 novembre 2018,
-
-
-| Publié le |Titre de la rubrique | Modification |
-|------|------------|--------|
-| 19/11/2018 | [Feuille de route pour la fin de l’assistance pour PerformancePoint Server 2007](/Office365/Enterprise/pps-2007-end-of-support) | Modifié le |
-| 19/11/2018 | [Points de terminaison supplémentaires non inclus dans le service web pour URL et adresses IP Office 365](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | Modifié le |
-| 19/11/2018 | [Applications intégrées et Azure AD pour les administrateurs Office 365](/Office365/Enterprise/integrated-apps-and-azure-ads) | Modifié le |
-
-
 ## <a name="week-of-november-26-2018"></a>Semaine du 26 novembre 2018,
 
 
@@ -90,3 +80,10 @@
 | 19/12/2018 | [Fonctionnement de l’authentification moderne pour les applications clientes Office 2013 et Office 2016](/Office365/Enterprise/modern-auth-for-office-2013-and-2016) | Modifié le |
 | 19/12/2018 | [Délais d’attente de session pour Office 365](/Office365/Enterprise/session-timeouts) | Modifié le |
 | 20/12/2018 | [Exchange 2010 fin de la feuille de route de prise en charge](/Office365/Enterprise/exchange-2010-end-of-support) | Modifié le |
+
+
+## <a name="week-of-december-24-2018"></a>Semaine du 24 décembre 2018,
+
+
+| Publié le |Titre de la rubrique | Modification |
+|------|------------|--------|

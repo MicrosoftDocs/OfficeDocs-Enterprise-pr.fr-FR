@@ -3,7 +3,7 @@ title: ExpressRoute pour la connectivité au cloud de Microsoft
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/05/2018
+ms.date: 01/02/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: 'Résumé : Comprendre comment ExpressRoute peut garantir des connexions plus fiables et plus rapides aux services et aux plateformes cloud de Microsoft.'
-ms.openlocfilehash: a72533673618af01fc2ce6dcc44f84cf94afc215
-ms.sourcegitcommit: 16806849f373196797d65e63ced825d547aef956
+ms.openlocfilehash: b0f47278a94b2926cd540ce759ced9b2418aa598
+ms.sourcegitcommit: 6e3bfe55a173a733d6696790b88efa39853ebdb9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "27213971"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "27470166"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>ExpressRoute pour la connectivité au cloud de Microsoft
 
@@ -96,25 +96,19 @@ Le tableau 1 affiche les trois principaux modèles de connectivité pour les co
   
 ## <a name="expressroute-peering-relationships-to-microsoft-cloud-services"></a>Relations d’homologation ExpressRoute avec les services cloud de Microsoft
 
-Une seule connexion ExpressRoute prend en charge jusqu'à trois relations d’homologation de protocole de passerelle frontière (BGP) avec les différentes parties du cloud de Microsoft. BPG utilise les relations d’homologation afin d’établir l’approbation et d’échanger des informations de routage.
+Une seule connexion ExpressRoute prend en charge jusqu'à deux relations homologation protocole BGP (Border Gateway) différentes pour différents composants du cloud Microsoft. BPG utilise les relations homologation pour établir l’approbation et échanger des informations de routage.
   
-**Figure 3 : Les trois relations BGP dans une seule connexion ExpressRoute**
+**La figure 3 : Les deux différentes BGP relations dans une seule connexion ExpressRoute**
 
-![Figure 3 : trois relations BGP différentes dans une seule connexion ExpressRoute](media/Network-Poster/ERPeering.png)
+![La figure 3 : Les deux différentes BGP relations dans une seule connexion ExpressRoute](media/Network-Poster/ERPeering.png)
   
-La figure 3 illustre une connexion ExpressRoute à partir d’un réseau local. La connexion ExpressRoute a trois relations homologation logiques. Une relation d’homologation Microsoft accède aux services Microsoft SaaS, y compris Dynamcs CRM Online et Office 365. Une relation d’homologation publique accède aux services PaaS Azure. Une relation d’homologation privée passe à Azure IaaS et une passerelle de réseau virtuel qui héberge des ordinateurs virtuels.
+La figure 3 illustre une connexion ExpressRoute à partir d’un réseau local. La connexion ExpressRoute a deux relations homologation logiques. Une relation d’homologation Microsoft accède aux services Microsoft SaaS, y compris les services Office 365 et Azure PaaS 365 Dynamcs. Une relation d’homologation privée passe à Azure IaaS et une passerelle de réseau virtuel qui héberge des ordinateurs virtuels.
   
 Relation BGP d’homologation de Microsoft : 
   
-- Représente un routeur dans votre zone DMZ vers les adresses publiques des services Office 365 et Dynamics 365. 
+- Provient d’un routeur de votre zone DMZ aux adresses publics des services Azure, Dynamics 365 et Office 365. 
     
 - Prend en charge la communication initiée de manière bidirectionnelle.
-    
-Relation BGP d’homologation publique :
-  
-- Provient d’un routeur dans votre zone DMZ et se dirige vers les adresses IP publiques des services Azure.
-    
-- Prend uniquement en charge la communication initiée de manière bidirectionnelle à partir des systèmes locaux. La relation d’homologation ne prend pas en charge la communication initiée à partir de services Azure PaaS.
     
 Relation BGP d’homologation privée :
   
@@ -123,6 +117,10 @@ Relation BGP d’homologation privée :
 - Prend en charge la communication initiée de manière bidirectionnelle.
     
 - Est une extension du réseau de votre organisation vers le cloud de Microsoft, comprenant un adressage et un routage cohérents en interne.
+
+>[!Note]
+>La relation BGP homologation publique décrite dans les versions précédentes de cet article a été abandonnée.
+>
     
 ## <a name="example-of-application-deployment-and-traffic-flow-with-expressroute"></a>Exemple de déploiement d’application et de flux de trafic avec ExpressRoute
 
@@ -250,7 +248,7 @@ Vous pouvez également intégrer les options suivantes dans votre déploiement E
   
 - **Sécurité au niveau de votre périmètre :** pour fournir une sécurité avancée pour le trafic envoyé et reçu via la connexion ExpressRoute, comme l'inspection du trafic ou la détection des intrusions/programmes malveillants, placez vos appliances de sécurité dans le chemin d'accès au trafic au sein de la zone DMZ ou à la bordure de votre intranet.
     
-    Trafic Internet pour les machines virtuelles : pour empêcher les machines virtuelles Azure de lancer le trafic directement avec des emplacements sur Internet, annoncez l'itinéraire par défaut à Microsoft. Le trafic vers Internet est acheminé via la connexion ExpressRoute et vos serveurs proxy locaux. Le trafic provenant des machines virtuelles Azure et allant vers des services Azure PaaS ou Office 365 est réacheminé via la connexion ExpressRoute.
+- **Le trafic Internet pour les ordinateurs virtuels :** Pour empêcher les machines virtuelles Azure de lancer le trafic directement sur Internet, publier l’itinéraire par défaut à Microsoft. Le trafic vers Internet est routé via la connexion ExpressRoute et par le biais de vos serveurs de proxy locale. Le trafic entre les machines virtuelles Azure et services Azure PaaS ou Office 365 est routé via la connexion ExpressRoute.
     
 - **Optimiseurs de réseau étendu :** Vous pouvez déployer des optimiseurs de réseau étendu sur les deux côtés d'une connexion d'homologation privée pour un réseau virtuel (VNet) Azure entre différents locaux. À l'intérieur du réseau virtuel Azure, utilisez une appliance de réseau d'optimiseur de réseau étendu à partir d'Azure Marketplace et un routage défini par l'utilisateur pour router le trafic via l'équipement.
     

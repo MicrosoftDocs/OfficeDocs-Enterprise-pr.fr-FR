@@ -16,18 +16,18 @@ search.appverid:
 - BCS160
 ms.assetid: b48cdf63-07e0-4cda-8c12-4871590f59ce
 description: 'Résumé : Décrit les certificats SSL nécessaires pour Exchange sur site et hybride, l’authentification unique via AD FS, les services Exchange Online et les services web Exchange.'
-ms.openlocfilehash: 82e37ebb058b8a6b4b618649bea31a4137897690
-ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
+ms.openlocfilehash: c9e968ef7ec9015be398b4eef9184451dd316bea
+ms.sourcegitcommit: 15db0f1e5f8036e46063662d7df22387906f8ba7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23975212"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "27546515"
 ---
 # <a name="plan-for-third-party-ssl-certificates-for-office-365"></a>Planifier les certificats SSL tiers pour Office 365
 
  **Résumé :** Décrit les certificats SSL nécessaires pour Exchange local et hybride, l’authentification unique avec ADFS, les services Exchange Online et les Services Web Exchange. 
   
-Pour chiffrer les communications entre vos clients et theOffice 365Office 365 environnement, les certificats tiers Secure Sockets Layer (SSL) doivent être installés sur vos serveurs d’infrastructure.
+Pour chiffrer les communications entre vos clients et de l’environnement Office 365, les certificats tiers Secure Sockets Layer (SSL) doivent être installés sur vos serveurs d’infrastructure.
 
 ||
 |:-----|

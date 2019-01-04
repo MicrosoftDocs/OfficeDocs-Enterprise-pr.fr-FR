@@ -1,7 +1,7 @@
 
-# [Gérer Office 365 avec Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
+# [Gérer Office 365 avec Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
 ## [Mise en route d’Office 365 PowerShell](getting-started-with-office-365-powershell.md)
-### [Pourquoi utiliser Office 365 PowerShell ?](why-you-need-to-use-office-365-powershell.md)
+### [Pourquoi utiliser Office 365 PowerShell ?](why-you-need-to-use-office-365-powershell.md)
 ### [Se connecter à Office 365 PowerShell](connect-to-office-365-powershell.md)
 ### [Connexion à tous les services Office 365 à l’aide d’une seule fenêtre Windows PowerShell](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md)
 ### [Utilisez Windows PowerShell pour créer des rapports dans Office 365](use-windows-powershell-to-create-reports-in-office-365.md)

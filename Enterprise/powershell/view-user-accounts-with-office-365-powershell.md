@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: 'Résumé : Permet d’afficher, de liste ou d’afficher vos comptes d’utilisateurs de différentes manières avec Office 365 PowerShell.'
-ms.openlocfilehash: dc33b64207341576968867fbeea6f211034eeca6
-ms.sourcegitcommit: 15db0f1e5f8036e46063662d7df22387906f8ba7
+ms.openlocfilehash: e95353602b96babe5c80f7d57462370636dd26fa
+ms.sourcegitcommit: a39d15b7cf758dfb262d2724bcfd283bba3d2ce1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/04/2019
-ms.locfileid: "27546525"
+ms.locfileid: "27730319"
 ---
 # <a name="view-user-accounts-with-office-365-powershell"></a>Afficher des comptes d’utilisateur avec Office 365 PowerShell
 
@@ -55,10 +55,16 @@ be4bdddd-c790-424c-9f96-a0cf609b7815 Allan Deyoung                              
 
 ### <a name="view-a-specific-account"></a>Afficher un compte spécifique
 
-Pour afficher un compte d’utilisateur spécifique, renseignez le nom d’utilisateur principal (UPN) du compte d’utilisateur, supprimez le « < » et « > » caractères et exécutez la commande suivante :
+Pour afficher un compte d’utilisateur spécifique, renseignez le nom de compte de connexion du compte d’utilisateur, également connu sous le nom d’utilisateur principal (UPN), supprimez le « < » et « > » caractères et exécutez la commande suivante :
   
 ```
-Get-AzureADUser -ObjectID <UPN of user account>
+Get-AzureADUser -ObjectID <sign-in name of the user account>
+```
+
+Voici un exemple :
+  
+```
+Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com
 ```
 
 ### <a name="view-additional-property-values-for-a-specific-account"></a>Afficher les valeurs de propriété supplémentaires pour un compte spécifique
@@ -80,13 +86,13 @@ Cette commande demande à PowerShell Office 365 d’effectuer les opérations su
 Pour afficher toutes les propriétés des comptes d’utilisateurs, utilisez la cmdlet **Select-Object** et le caractère générique (*) pour toutes les afficher pour un compte d’utilisateur spécifique. Voici un exemple :
   
 ```
-Get-AzureADUser -ObjectID "BelindaN@litwareinc.onmicosoft.com" | Select-Object *
+Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com | Select-Object *
 ```
 
 Autre exemple, vous pouvez vérifier l’état activé d’un compte d’utilisateur spécifique avec la commande suivante :
   
 ```
-Get-AzureADUser -ObjectID <UPN of user account> | Select-Object DisplayName,UserPrincipalName,AccountEnabled
+Get-AzureADUser -ObjectID <sign-in name of the user account> | Select-Object DisplayName,UserPrincipalName,AccountEnabled
 ```
 
 ### <a name="view-some-accounts-based-on-a-common-property"></a>Afficher des comptes basées sur une propriété courantes
@@ -106,7 +112,7 @@ Cette commande indique à Windows Azure Active Directory PowerShell graphique po
 La propriété **UsageLocation** n’existe qu’une des nombreuses propriétés associées à un compte d’utilisateur. Pour afficher toutes les propriétés des comptes d’utilisateurs, utilisez la cmdlet **Select-Object** et le caractère générique (*) pour toutes les afficher pour un compte d’utilisateur spécifique. Voici un exemple :
   
 ```
-Get-AzureADUser -ObjectID "BelindaN@litwareinc.onmicosoft.com" | Select-Object *
+Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com | Select-Object *
 ```
 
 Par exemple, dans cette liste, **Ville** est le nom d’une propriété de compte d’utilisateur. Cela signifie que vous pouvez utiliser la commande suivante pour obtenir la liste des comptes d’utilisateur pour les utilisateurs qui habitent à Londres :
@@ -164,10 +170,10 @@ Pour plus d’informations sur les paramètres supplémentaires pour filtrer l�
 
 ### <a name="view-a-specific-account"></a>Afficher un compte spécifique
 
-Pour afficher un compte d’utilisateur spécifique, renseignez le nom d’utilisateur principal (UPN) du compte d’utilisateur, supprimez le « < » et « > » caractères et exécutez la commande suivante :
+Pour afficher un compte d’utilisateur spécifique, renseignez le nom de connexion du compte d’utilisateur du compte d’utilisateur, également connu sous le nom d’utilisateur principal (UPN), supprimez le « < » et « > » caractères et exécutez la commande suivante :
   
 ```
-Get-MsolUser -UserPrincipalName <UPN of user account>
+Get-MsolUser -UserPrincipalName <sign-in name of the user account>
 ```
 
 ### <a name="view-some-accounts-based-on-a-common-property"></a>Afficher des comptes basées sur une propriété courantes
@@ -197,7 +203,7 @@ ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 La propriété **UsageLocation** n’existe qu’une des nombreuses propriétés associées à un compte d’utilisateur. Pour afficher toutes les propriétés des comptes d’utilisateurs, utilisez la cmdlet **Select-Object** et le caractère générique (*) pour toutes les afficher pour un compte d’utilisateur spécifique. Voici un exemple :
   
 ```
-Get-MsolUser -UserPrincipalName "BelindaN@litwareinc.onmicosoft.com" | Select-Object *
+Get-MsolUser -UserPrincipalName BelindaN@litwareinc.onmicosoft.com | Select-Object *
 ```
 
 Par exemple, dans cette liste, **Ville** est le nom d’une propriété de compte d’utilisateur. Cela signifie que vous pouvez utiliser la commande suivante pour obtenir la liste des comptes d’utilisateur pour les utilisateurs qui habitent à Londres :
@@ -254,7 +260,7 @@ Scott Wallace           Operations
 La cmdlet **Select-Object** vous permet de choisir les propriétés que vous souhaitez afficher une commande. Pour afficher toutes les propriétés des comptes d’utilisateurs, utilisez le caractère générique (*) pour afficher tous les pour un compte d’utilisateur spécifique. Voici un exemple :
   
 ```
-Get-MsolUser -UserPrincipalName "BelindaN@litwareinc.onmicosoft.com" | Select-Object *
+Get-MsolUser -UserPrincipalName BelindaN@litwareinc.onmicosoft.com | Select-Object *
 ```
 
 Pour être plus sélectif dans la liste des comptes à afficher, vous pouvez également utiliser la cmdlet **Where-Object**. Voici un exemple de commande qui affiche uniquement les comptes d’utilisateur dont l’emplacement d’utilisation n’est pas spécifié :

@@ -1,9 +1,9 @@
 ---
-title: "Suppression et restauration de comptes d’utilisateurs avec Office 365 PowerShell"
+title: Supprimer des comptes d’utilisateurs avec Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 01/03/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,71 +14,29 @@ ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
-description: "Découvrez comment utiliser Office 365 PowerShell pour supprimer et restaurer des comptes d'utilisateur Office 365."
-ms.openlocfilehash: 09f3595ed7cd5434efb2897a43ba1bbca5286c25
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: Découvrez comment utiliser Office 365 PowerShell pour supprimer des comptes d'utilisateur Office 365.
+ms.openlocfilehash: 0b882f3bdf9070c83baffaca65a7c80c98cd4ed9
+ms.sourcegitcommit: 15db0f1e5f8036e46063662d7df22387906f8ba7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "27546465"
 ---
-# <a name="delete-and-restore-user-accounts-with-office-365-powershell"></a>Suppression et restauration de comptes d’utilisateurs avec Office 365 PowerShell
+# <a name="delete-user-accounts-with-office-365-powershell"></a>Supprimer des comptes d’utilisateurs avec Office 365 PowerShell
 
-**Résumé :** Découvrez comment utiliser Office 365 PowerShell pour supprimer et restaurer des comptes d'utilisateur Office 365.
+**Résumé:** Découvrez comment utiliser Office 365 PowerShell pour supprimer des comptes d'utilisateur Office 365.
   
-Lorsque vous utilisez Office 365 PowerShell pour supprimer un compte d'utilisateur, le compte n'est pas supprimé définitivement. En effet, vous pouvez le restaurer dans les 30 jours.
-  
-## <a name="before-you-begin"></a>Avant de commencer
+Vous pouvez utiliser PowerShell Office 365 pour supprimer un compte d’utilisateur.
 
-- Les procédures décrites dans cette rubrique exigent une connexion à Office 365 PowerShell. Pour plus d'informations, reportez-vous à [Se connecter à Office 365 PowerShell](connect-to-office-365-powershell.md).
-    
-- Si vous utilisez la cmdlet **Get-MsolUser** sans utiliser le paramètre _-All_, seuls les 500 premiers comptes sont renvoyés.
-    
-## <a name="use-office-365-powershell-to-block-access-to-individual-user-accounts"></a>Utilisation d'Office 365 PowerShell pour bloquer l'accès à des comptes d'utilisateurs individuels
-<a name="ShortVersion"> </a>
+   
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Utilisez le module Azure Active Directory PowerShell pour Graph
 
-Pour supprimer un compte d’utilisateur, utilisez la syntaxe suivante :
-  
-```
-Remove-MsolUser -UserPrincipalName <Account>
-```
+Tout d’abord, [connectez-vous à votre client Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
 
-Cet exemple supprime le compte d’utilisateur BelindaN@litwareinc.com.
-  
-```
-Remove-MsolUser -UserPrincipalName belindan@litwareinc.com
-```
-
-Pour restaurer un compte d’utilisateur supprimé pendant la période de grâce de 30 jours, utilisez la syntaxe suivante :
-  
-```
-Restore-MsolUser -UserPrincipalName <Account>
-```
-
-Cet exemple restaure le compte d’utilisateur supprimé BelindaN@litwareinc.com.
-  
-```
-Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
-```
-
- **Remarques :**
-  
-- Pour afficher la liste des utilisateurs supprimés dont la restauration est possible, exécutez la commande suivante :
-    
-  ```
-  Get-MsolUser -All -ReturnDeletedUsers
-  ```
-
-- Si le nom d'utilisateur principal d'origine du compte d'utilisateur est utilisé par un autre compte, utilisez le paramètre  _NewUserPrincipalName_ à la place de _UserPrincipalName_ pour spécifier un autre nom d'utilisateur principal lorsque vous restaurez le compte.
-    
-## <a name="use-the-azure-active-directory-v2-powershell-module-to-remove-a-user-account"></a>Utilisation du module Azure Active Directory V2 PowerShell pour supprimer un compte d’utilisateur
-<a name="ShortVersion"> </a>
-
-Pour utiliser la cmdlet **Remove-AzureADUser** à partir du module Azure Active Directory V2 PowerShell, vous devez d'abord vous connecter à votre abonnement. Pour obtenir les instructions, reportez-vous à l'article [Se connecter au module Azure Active Directory V2 PowerShell](https://go.microsoft.com/fwlink/?linkid=842218).
-  
 Après vous être connecté, utilisez la syntaxe suivante pour supprimer un compte d’utilisateur individuel :
   
 ```
-Remove-AzureADUser -ObjectID <Account>
+Remove-AzureADUser -ObjectID <sign-in name>
 ```
 
 Cet exemple supprime le compte d’utilisateur fabricec@litwareinc.com.
@@ -88,9 +46,9 @@ Remove-AzureADUser -ObjectID fabricec@litwareinc.com
 ```
 
 > [!NOTE]
-> Le paramètre **- ObjectID** de la cmdlet **Remove-AzureAD** accepte le nom de compte, également appelé Nom d'utilisateur principal, ou l'ID d'objet du compte.
+> Le paramètre **- ObjectID** de la cmdlet **Remove-AzureAD** accepte le nom de compte, également appelé Nom d’utilisateur principal, ou l’ID d’objet du compte.
   
-Pour afficher le nom du compte à partir du nom de l’utilisateur, utilisez les commandes suivantes :
+Pour afficher le nom du compte à partir du nom de l’utilisateur, utilisez les commandes suivantes:
   
 ```
 $userName="<User name>"
@@ -104,34 +62,60 @@ $userName="Caleb Sills"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-Pour supprimer un compte à partir du nom de l’utilisateur, utilisez les commandes suivantes :
+Pour supprimer un compte à partir du nom de l’utilisateur, utilisez les commandes suivantes:
   
 ```
-$userName="<User name>"
+$userName="<display name>"
 Remove-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-## <a name="see-also"></a>Voir aussi
-<a name="SeeAlso"> </a>
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Utilisez le Module Microsoft Azure Active Directory pour Windows PowerShell.
 
-Consultez les rubriques supplémentaires suivantes sur la gestion des utilisateurs avec Office 365 PowerShell :
+Lorsque vous utilisez le Module Microsoft Azure Active Directory pour Windows PowerShell afin de supprimer un compte d’utilisateur, le compte n’est pas supprimé définitivement. En effet, vous pouvez le restaurer dans les 30 jours.
+
+Tout d’abord, [connectez-vous à votre client Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+
+
+Pour supprimer un compte d’utilisateur, utilisez la syntaxe suivante:
   
-- [Création de comptes d'utilisateurs avec Office 365 PowerShell](create-user-accounts-with-office-365-powershell.md)
-    
-- [Bloquer des comptes d'utilisateurs avec Office 365 PowerShell](block-user-accounts-with-office-365-powershell.md)
-    
-- [Attribuer des licences à des comptes d'utilisateurs avec Office 365 PowerShell](assign-licenses-to-user-accounts-with-office-365-powershell.md)
-    
-- [Supprimer des licences à des comptes d'utilisateurs avec Office 365 PowerShell](remove-licenses-from-user-accounts-with-office-365-powershell.md)
-    
-Pour plus d’informations sur les cmdlets utilisées dans ces procédures, consultez les rubriques suivantes :
+```
+Remove-MsolUser -UserPrincipalName <sign-in name>
+```
+
+Cet exemple supprime le compte d’utilisateur BelindaN@litwareinc.com.
   
-- [Get-MsolUser](https://go.microsoft.com/fwlink/p/?LinkId=691543)
+```
+Remove-MsolUser -UserPrincipalName belindan@litwareinc.com
+```
+
+Pour restaurer un compte d’utilisateur supprimé pendant la période de grâce de 30 jours, utilisez la syntaxe suivante :
+  
+```
+Restore-MsolUser -UserPrincipalName <sign-in name>
+```
+
+Cet exemple restaure le compte d’utilisateur supprimé BelindaN@litwareinc.com.
+  
+```
+Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
+```
+
+ **Remarques :**
+  
+- Pour afficher la liste des utilisateurs supprimés dont la restauration est possible, exécutez la commande suivante:
     
-- [Remove-MsolUser](https://go.microsoft.com/fwlink/p/?LinkId=691636)
-    
-- [Restore-MsolUser](https://go.microsoft.com/fwlink/p/?LinkId=691637)
-    
-- [New-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/new-azureaduser?view=azureadps-2.0)
-    
+  ```
+  Get-MsolUser -All -ReturnDeletedUsers
+  ```
+
+- Si le nom d'utilisateur principal d'origine du compte d'utilisateur est utilisé par un autre compte, utilisez le paramètre_NewUserPrincipalName_ à la place de_UserPrincipalName_ pour spécifier un autre nom d'utilisateur principal lorsque vous restaurez le compte.
+
+
+## <a name="see-also"></a>Voir aussi
+
+[Gérer les comptes d'utilisateurs et les licences avec Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+  
+[Gérer Office 365 avec Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
+  
+[Mise en route d'Office 365 Powershell](getting-started-with-office-365-powershell.md)
 

@@ -3,7 +3,7 @@ title: Configurer les propriétés des comptes d’utilisateur avec Office 365�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 01/03/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,217 +15,93 @@ ms.custom:
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: "Résumé : Utilisez Office 365 PowerShell pour configurer les propriétés d'un ou de plusieurs comptes d'utilisateur dans votre client Office 365."
-ms.openlocfilehash: 60b3c1d91df0cb28f19f60a285093de7337904a9
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+ms.openlocfilehash: 4db63482fdcc1d6cb186e663fd55c13186b33813
+ms.sourcegitcommit: 15db0f1e5f8036e46063662d7df22387906f8ba7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2018
-ms.locfileid: "17552687"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "27546485"
 ---
-# <a name="configure-user-account-properties-with-office-365-powershell"></a><span data-ttu-id="ea5da-103">Configurer les propriétés des comptes d’utilisateur avec Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="ea5da-103">Configure user account properties with Office 365 PowerShell</span></span>
+# <a name="configure-user-account-properties-with-office-365-powershell"></a><span data-ttu-id="d2371-103">Configurer les propriétés des comptes d’utilisateur avec Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="d2371-103">Configure user account properties with Office 365 PowerShell</span></span>
 
- <span data-ttu-id="ea5da-104">**Résumé :** Utilisez Office 365 PowerShell pour configurer les propriétés d'un ou de plusieurs comptes d'utilisateur dans votre client Office 365.</span><span class="sxs-lookup"><span data-stu-id="ea5da-104">**Summary:** Use Office 365 PowerShell to configure properties of individual or multiple user accounts in your Office 365 tenant.</span></span>
+ <span data-ttu-id="d2371-104">**Résumé :** Utilisez Office 365 PowerShell pour configurer les propriétés d'un ou de plusieurs comptes d'utilisateur dans votre client Office 365.</span><span class="sxs-lookup"><span data-stu-id="d2371-104">**Summary:** Use Office 365 PowerShell to configure properties of individual or multiple user accounts in your Office 365 tenant.</span></span>
   
-<span data-ttu-id="ea5da-105">Bien que vous puissiez utiliser le centre d'administration Office 365 pour configurer les propriétés des comptes d'utilisateur de votre client Office 365, vous pouvez également utiliser Office 365 PowerShell et effectuer certaines actions que le centre d'administration Office 365 ne vous permet pas de réaliser.</span><span class="sxs-lookup"><span data-stu-id="ea5da-105">Although you can use the Office 365 Admin center to configure properties for the user accounts of your Office 365 tenant, you can also use Office 365 PowerShell and do some things that the Office 365 Admin center cannot.</span></span>
+<span data-ttu-id="d2371-105">Bien que vous puissiez utiliser le centre d'administration Office 365 pour configurer les propriétés des comptes d'utilisateur de votre client Office 365, vous pouvez également utiliser Office 365 PowerShell et effectuer certaines actions que le centre d'administration Office 365 ne vous permet pas de réaliser.</span><span class="sxs-lookup"><span data-stu-id="d2371-105">Although you can use the Office 365 Admin center to configure properties for the user accounts of your Office 365 tenant, you can also use Office 365 PowerShell and do some things that the Office 365 Admin center cannot.</span></span>
   
-## <a name="before-you-begin"></a><span data-ttu-id="ea5da-106">Avant de commencer</span><span class="sxs-lookup"><span data-stu-id="ea5da-106">Before you begin</span></span>
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a><span data-ttu-id="d2371-106">Utilisez le module Azure Active Directory PowerShell pour Graph</span><span class="sxs-lookup"><span data-stu-id="d2371-106">Use the Azure Active Directory PowerShell for Graph module</span></span>
 
-<span data-ttu-id="ea5da-p101">Les procédures décrites dans cette rubrique exigent une connexion à Office 365 PowerShell. Pour plus d'informations, reportez-vous à [Se connecter à Office 365 PowerShell](connect-to-office-365-powershell.md).</span><span class="sxs-lookup"><span data-stu-id="ea5da-p101">The procedures in this topic require you to connect to Office 365 PowerShell. For instructions, see [Connect to Office 365 PowerShell](connect-to-office-365-powershell.md).</span></span>
-  
-## <a name="change-properties-for-a-specific-user-account"></a><span data-ttu-id="ea5da-109">Modification des propriétés d’un compte d’utilisateur spécifique</span><span class="sxs-lookup"><span data-stu-id="ea5da-109">Change properties for a specific user account</span></span>
+<span data-ttu-id="d2371-107">Pour configurer les propriétés des comptes d’utilisateur avec le module Azure Active Directory PowerShell pour Graph, vous utilisez la cmdlet [Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) et spécifiez les propriétés à définir ou à modifier.</span><span class="sxs-lookup"><span data-stu-id="d2371-107">To configure properties for user accounts with the Azure Active Directory V2 PowerShell module, you use the [Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) cmdlet and specify the properties to set or change. But first, you must connect to your subscription. For the instructions, seeConnect with the Azure Active Directory V2 PowerShell module.</span></span> 
 
-<span data-ttu-id="ea5da-p102">Pour configurer les propriétés d'un compte d'utilisateur spécifique, vous utilisez la cmdlet [Set-MsolUser](https://msdn.microsoft.com/library/azure/dn194136.aspx) et spécifiez les propriétés à définir ou modifier. Cet exemple de commande remplace l'emplacement d'utilisation de Belinda Newman par France :</span><span class="sxs-lookup"><span data-stu-id="ea5da-p102">To configure properties for a specific user account, you use the [Set-MsolUser](https://msdn.microsoft.com/library/azure/dn194136.aspx) cmdlet and specify the properties to set or change. This example command changes Belinda Newman's usage location to France:</span></span>
-  
-```
-Set-MsolUser -UserPrincipalName "BelindaN@litwareinc.onmicosoft.com" -UsageLocation "FR"
-```
+<span data-ttu-id="d2371-108">Tout d’abord, [connectez-vous à votre client Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span><span class="sxs-lookup"><span data-stu-id="d2371-108">First, [connect to your Office 365 tenant](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
+   
+### <a name="change-properties-for-a-specific-user-account"></a><span data-ttu-id="d2371-109">Modification des propriétés d’un compte d’utilisateur spécifique</span><span class="sxs-lookup"><span data-stu-id="d2371-109">Change properties for a specific user account</span></span>
 
-<span data-ttu-id="ea5da-p103">Vous identifiez le compte avec le paramètre **-UserPrincipalName** et définissez ou modifiez des propriétés spécifiques à l'aide de paramètres supplémentaires. Voici la liste des principaux paramètres.</span><span class="sxs-lookup"><span data-stu-id="ea5da-p103">You identify the account with the **-UserPrincipalName** parameter and set or change specific properties with additional parameters. Here is a list of the most common parameters.</span></span>
+<span data-ttu-id="d2371-p101">Identifiez le compte avec le paramètre **-ObjectID** et définissez ou modifiez des propriétés spécifiques à l'aide de paramètres supplémentaires. Voici la liste des principaux paramètres.</span><span class="sxs-lookup"><span data-stu-id="d2371-p101">You identify the account with the **-ObjectID** parameter and set or change specific properties with additional parameters. Here is a list of the most common parameters.</span></span>
   
-- <span data-ttu-id="ea5da-114">-City "\<nom de la ville>"</span><span class="sxs-lookup"><span data-stu-id="ea5da-114">-City "\<city name>"</span></span>
+- <span data-ttu-id="d2371-112">-Department "\<nom du service>"</span><span class="sxs-lookup"><span data-stu-id="d2371-112">-Department "\<department name>"</span></span>
     
-- <span data-ttu-id="ea5da-115">-Country "\<nom du pays>"</span><span class="sxs-lookup"><span data-stu-id="ea5da-115">-Country "\<country name>"</span></span>
+- <span data-ttu-id="d2371-113">-DisplayName "\<nom utilisateur complet>"</span><span class="sxs-lookup"><span data-stu-id="d2371-113">-DisplayName "\<full user name>"</span></span>
     
-- <span data-ttu-id="ea5da-116">-Department "\<nom du service>"</span><span class="sxs-lookup"><span data-stu-id="ea5da-116">-Department "\<department name>"</span></span>
+- <span data-ttu-id="d2371-114">-FacsimilieTelephoneNumber "\<numéro de télécopie>"</span><span class="sxs-lookup"><span data-stu-id="d2371-114">-FacsimilieTelephoneNumber "\<fax number>"</span></span>
     
-- <span data-ttu-id="ea5da-117">-DisplayName "\<nom utilisateur complet>"</span><span class="sxs-lookup"><span data-stu-id="ea5da-117">-DisplayName "\<full user name>"</span></span>
+- <span data-ttu-id="d2371-115">-GivenName "\<prénom de l’utilisateur>"</span><span class="sxs-lookup"><span data-stu-id="d2371-115">-GivenName "\<user first name>"</span></span>
     
-- <span data-ttu-id="ea5da-118">-Fax "\<numéro de fax>"</span><span class="sxs-lookup"><span data-stu-id="ea5da-118">-Fax "\<fax number>"</span></span>
+- <span data-ttu-id="d2371-116">-Surname "\<nom de famille de l’utilisateur>"</span><span class="sxs-lookup"><span data-stu-id="d2371-116">-Surname "\<user last name>"</span></span>
     
-- <span data-ttu-id="ea5da-119">-FirstName "\<prénom de l’utilisateur>"</span><span class="sxs-lookup"><span data-stu-id="ea5da-119">-FirstName "\<user first name>"</span></span>
+- <span data-ttu-id="d2371-117">-Mobile "\<N° de téléphone portable>"</span><span class="sxs-lookup"><span data-stu-id="d2371-117">-Mobile "\<mobile phone number>"</span></span>
     
-- <span data-ttu-id="ea5da-120">-LastName "\<nom de famille de l’utilisateur>"</span><span class="sxs-lookup"><span data-stu-id="ea5da-120">-LastName "\<user last name>"</span></span>
+- <span data-ttu-id="d2371-118">-JobTitle "\<fonction>"</span><span class="sxs-lookup"><span data-stu-id="d2371-118">-JobTitle "\<job title>"</span></span>
     
-- <span data-ttu-id="ea5da-121">-MobilePhone "\<numéro de téléphone portable>"</span><span class="sxs-lookup"><span data-stu-id="ea5da-121">-MobilePhone "\<mobile phone number>"</span></span>
+- <span data-ttu-id="d2371-119">-PreferredLanguage "\<langue>"</span><span class="sxs-lookup"><span data-stu-id="d2371-119">-PreferredLanguage "\<language>"</span></span>
     
-- <span data-ttu-id="ea5da-122">-Office "\<emplacement du bureau>"</span><span class="sxs-lookup"><span data-stu-id="ea5da-122">-Office "\<office location>"</span></span>
+- <span data-ttu-id="d2371-120">-StreetAddress "\<adresse>"</span><span class="sxs-lookup"><span data-stu-id="d2371-120">-StreetAddress "\<street address>"</span></span>
     
-- <span data-ttu-id="ea5da-123">-PhoneNumber "\<numéro de téléphone du bureau>"</span><span class="sxs-lookup"><span data-stu-id="ea5da-123">-PhoneNumber "\<office phone number>"</span></span>
+- <span data-ttu-id="d2371-121">-City "\<nom de la ville>"</span><span class="sxs-lookup"><span data-stu-id="d2371-121">-City "\<city name>"</span></span>
     
-- <span data-ttu-id="ea5da-124">-PostalCode "\<code postal>"</span><span class="sxs-lookup"><span data-stu-id="ea5da-124">-PostalCode "\<postal code>"</span></span>
+- <span data-ttu-id="d2371-122">-State "\<nom de l’État>"</span><span class="sxs-lookup"><span data-stu-id="d2371-122">-State "\<state name>"</span></span>
     
-- <span data-ttu-id="ea5da-125">-PreferredLanguage "\<langue>"</span><span class="sxs-lookup"><span data-stu-id="ea5da-125">-PreferredLanguage "\<language>"</span></span>
+- <span data-ttu-id="d2371-123">-PostalCode "\<code postal>"</span><span class="sxs-lookup"><span data-stu-id="d2371-123">-PostalCode "\<postal code>"</span></span>
     
-- <span data-ttu-id="ea5da-126">-State "\<nom de l’État>"</span><span class="sxs-lookup"><span data-stu-id="ea5da-126">-State "\<state name>"</span></span>
+- <span data-ttu-id="d2371-124">-Country "\<nom du pays>"</span><span class="sxs-lookup"><span data-stu-id="d2371-124">-Country "\<country name>"</span></span>
     
-- <span data-ttu-id="ea5da-127">-StreetAddress "\<adresse>"</span><span class="sxs-lookup"><span data-stu-id="ea5da-127">-StreetAddress "\<street address>"</span></span>
+- <span data-ttu-id="d2371-125">-TelephoneNumber "\<numéro de téléphone du bureau>"</span><span class="sxs-lookup"><span data-stu-id="d2371-125">-TelephoneNumber "\<office phone number>"</span></span>
     
-- <span data-ttu-id="ea5da-128">-Title "\<intitulé du poste>"</span><span class="sxs-lookup"><span data-stu-id="ea5da-128">-Title "\<title name>"</span></span>
+- <span data-ttu-id="d2371-126">-UsageLocation "\<code de région ou de pays à 2 caractères>"</span><span class="sxs-lookup"><span data-stu-id="d2371-126">-UsageLocation "\<2-character country or region code>"</span></span>
     
-- <span data-ttu-id="ea5da-129">-UsageLocation "\<code de région ou de pays à 2 caractères>"</span><span class="sxs-lookup"><span data-stu-id="ea5da-129">-UsageLocation "\<2-character country or region code>"</span></span>
+    <span data-ttu-id="d2371-127">Voici le code de la région ou du pays à deux lettres ISO 3166-1 alpha-2 (A2).</span><span class="sxs-lookup"><span data-stu-id="d2371-127">This is the ISO 3166-1 alpha-2 (A2) two-letter country or region code.</span></span>
     
-    <span data-ttu-id="ea5da-130">Voici le code de la région ou du pays à deux lettres ISO 3166-1 alpha-2 (A2).</span><span class="sxs-lookup"><span data-stu-id="ea5da-130">This is the ISO 3166-1 alpha-2 (A2) two-letter country or region code.</span></span>
-    
-<span data-ttu-id="ea5da-131">Pour obtenir plus de paramètres, voir [Set-MsolUser](https://msdn.microsoft.com/library/azure/dn194136.aspx).</span><span class="sxs-lookup"><span data-stu-id="ea5da-131">See [Set-MsolUser](https://msdn.microsoft.com/library/azure/dn194136.aspx) for additional parameters.</span></span>
+<span data-ttu-id="d2371-128">Pour consulter des paramètres supplémentaires, reportez-vous à [Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0).</span><span class="sxs-lookup"><span data-stu-id="d2371-128">See [Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) for additional parameters.</span></span>
   
-<span data-ttu-id="ea5da-132">Pour afficher les noms d’utilisateur principaux de tous vos utilisateurs, exécutez la commande suivante.</span><span class="sxs-lookup"><span data-stu-id="ea5da-132">To see the User Principal Names of all your users, run the following command.</span></span>
-  
-```
-Get-MSolUser | Sort-Object UserPrincipalName | Select-Object UserPrincipalName | More
-```
-
-<span data-ttu-id="ea5da-133">Cette commande demande à Office 365 PowerShell d'effectuer les opérations suivantes :</span><span class="sxs-lookup"><span data-stu-id="ea5da-133">This command instructs Office 365 PowerShell to:</span></span>
-  
-- <span data-ttu-id="ea5da-134">Obtenir toutes les informations sur les comptes utilisateur ( **Get-MsolUser** ) et les envoyer à la commande suivante ( **|** ).</span><span class="sxs-lookup"><span data-stu-id="ea5da-134">Get all of the information on the user accounts ( **Get-MsolUser** ) and send it to the next command ( **|** ).</span></span>
-    
-- <span data-ttu-id="ea5da-135">Trier par ordre alphabétique la liste des noms d’utilisateur principaux ( **Sort-Object UserPrincipalName** ) et l’envoyer à la commande suivante ( **|** ).</span><span class="sxs-lookup"><span data-stu-id="ea5da-135">Sort the list of User Principal Names alphabetically ( **Sort-Object UserPrincipalName** ) and send it to the next command ( **|** ).</span></span>
-    
-- <span data-ttu-id="ea5da-136">Afficher uniquement la propriété Nom d'utilisateur principal pour chaque compte ( **Select-Object UserPrincipalName** ).</span><span class="sxs-lookup"><span data-stu-id="ea5da-136">Display just the User Principal Name property for each account ( **Select-Object UserPrincipalName** ).</span></span>
-    
-- <span data-ttu-id="ea5da-137">Afficher un écran à la fois ( **Plus** ).</span><span class="sxs-lookup"><span data-stu-id="ea5da-137">Display them one screen at a time ( **More** ).</span></span>
-    
-<span data-ttu-id="ea5da-p104">Cette commande répertorie tous vos comptes. Si vous souhaitez afficher le nom d'utilisateur principal d'un compte en fonction de son nom d'affichage (prénom et nom), insérez la variable **$userName** ci-dessous (supprimez les caractères \< et >), puis exécutez les commandes suivantes :</span><span class="sxs-lookup"><span data-stu-id="ea5da-p104">This command will list all of your accounts. If you want to display the User Principal Name for an account based on its display name (first and last name), fill in the **$userName** variable below (removing the \< and > characters), and then run the following commands:</span></span>
-  
-```
-$userName="<Display name>"
-Write-Host (Get-MsolUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
-```
-
-<span data-ttu-id="ea5da-140">Cet exemple affiche le nom d’utilisateur principal de l’utilisateur nommé Caleb Sills.</span><span class="sxs-lookup"><span data-stu-id="ea5da-140">This example displays the User Principal Name for the user named Caleb Sills.</span></span>
-  
-```
-$userName="Caleb Sills"
-Write-Host (Get-MsolUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
-```
-
-<span data-ttu-id="ea5da-p105">En utilisant une variable **$upn**, vous pouvez apporter des modifications à des comptes individuels en fonction de leur nom d'affichage. Voici un exemple de définition de l'emplacement d'utilisation de Belinda Newman en France, mais en spécifiant son nom d'affichage plutôt que son nom d'utilisateur principal :</span><span class="sxs-lookup"><span data-stu-id="ea5da-p105">By using a **$upn** variable, you can make changes to individual accounts based on their display name. Here is an example of setting Belinda Newman's usage location to France, but specifying her display name rather than her User Principal Name:</span></span>
-  
-```
-$userName="<Display name>"
-$upn=(Get-MsolUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
-Set-MsolUser -UserPrincipalName $upn -UsageLocation "FR"
-```
-
-## <a name="change-properties-for-all-user-accounts"></a><span data-ttu-id="ea5da-143">Modification des propriétés de tous les comptes d’utilisateur</span><span class="sxs-lookup"><span data-stu-id="ea5da-143">Change properties for all user accounts</span></span>
-
-<span data-ttu-id="ea5da-p106">Pour modifier les propriétés pour tous les utilisateurs, vous pouvez utiliser la combinaison des cmdlets **Get-MsolUser** et **Set-MsolUser**. L'exemple suivant modifie l'emplacement d'utilisation pour tous les utilisateurs et définit la France comme nouvel emplacement :</span><span class="sxs-lookup"><span data-stu-id="ea5da-p106">To change properties for all users, you can use the combination of the **Get-MsolUser** and **Set-MsolUser** cmdlets. The following example changes the usage location for all users to France:</span></span>
-  
-```
-Get-MsolUser | Set-MsolUser -UsageLocation "FR"
-```
-
-<span data-ttu-id="ea5da-146">Cette commande demande à Office 365 PowerShell d'effectuer les opérations suivantes :</span><span class="sxs-lookup"><span data-stu-id="ea5da-146">This command instructs Office 365 PowerShell to:</span></span>
-  
-- <span data-ttu-id="ea5da-147">Obtenir toutes les informations sur les comptes utilisateur ( **Get-MsolUser** ) et les envoyer à la commande suivante ( **|** ).</span><span class="sxs-lookup"><span data-stu-id="ea5da-147">Get all of the information on the user accounts ( **Get-MsolUser** ) and send it to the next command ( **|** ).</span></span>
-    
-- <span data-ttu-id="ea5da-148">Définir la France comme emplacement de l'utilisateur ( **Set-MsolUser -UsageLocation "FR"** ).</span><span class="sxs-lookup"><span data-stu-id="ea5da-148">Set the user location to France ( **Set-MsolUser -UsageLocation "FR"** ).</span></span>
-    
-## <a name="change-properties-for-a-specific-set-of-user-accounts"></a><span data-ttu-id="ea5da-149">Modification des propriétés d’un ensemble spécifique de comptes d’utilisateur</span><span class="sxs-lookup"><span data-stu-id="ea5da-149">Change properties for a specific set of user accounts</span></span>
-
-<span data-ttu-id="ea5da-p107">Pour modifier les propriétés d'un ensemble spécifique de comptes d'utilisateur, vous pouvez utiliser la combinaison des cmdlets **Get-MsolUser**, **Where-Object** et **Set-MsolUser**. L'exemple suivant modifie l'emplacement d'utilisation pour tous les utilisateurs du service Accounting et définit la France comme nouvel emplacement :</span><span class="sxs-lookup"><span data-stu-id="ea5da-p107">To change properties for a specific set of user account, you can use the combination of the **Get-MsolUser**, **Where-Object**, and **Set-MsolUser** cmdlets. The following example changes the usage location for all the users in the Accounting department to France:</span></span>
-  
-```
-Get-MsolUser | Where-Object {$_.Department -eq "Accounting"} | Set-MsolUser -UsageLocation "FR"
-```
-
-<span data-ttu-id="ea5da-152">Cette commande demande à Office 365 PowerShell d'effectuer les opérations suivantes :</span><span class="sxs-lookup"><span data-stu-id="ea5da-152">This command instructs Office 365 PowerShell to:</span></span>
-  
-- <span data-ttu-id="ea5da-153">Obtenir toutes les informations sur les comptes utilisateur ( **Get-MsolUser** ) et les envoyer à la commande suivante ( **|** ).</span><span class="sxs-lookup"><span data-stu-id="ea5da-153">Get all of the information on the user accounts ( **Get-MsolUser** ) and send it to the next command ( **|** ).</span></span>
-    
-- <span data-ttu-id="ea5da-154">Rechercher tous les comptes utilisateurs dont la propriété Department est définie sur « Accounting » ( **Where-Object {$_.Department -eq "Accounting"}** ) et envoyer les informations obtenues à la commande suivante ( **|** ).</span><span class="sxs-lookup"><span data-stu-id="ea5da-154">Find all of the user accounts that have their Department property set to "Accounting" ( **Where-Object {$_.Department -eq "Accounting"}** ) and send the resulting information to the next command ( **|** ).</span></span>
-    
-- <span data-ttu-id="ea5da-155">Définir la France comme emplacement de l'utilisateur ( **Set-MsolUser -UsageLocation "FR"** ).</span><span class="sxs-lookup"><span data-stu-id="ea5da-155">Set the user location to France ( **Set-MsolUser -UsageLocation "FR"** ).</span></span>
-    
-- <span data-ttu-id="ea5da-156">Afficher un écran à la fois ( **Plus** ).</span><span class="sxs-lookup"><span data-stu-id="ea5da-156">Display them one screen at a time ( **More** ).</span></span>
-    
-## <a name="use-the-azure-active-directory-v2-powershell-module-to-configure-user-account-properties"></a><span data-ttu-id="ea5da-157">Utilisation du module Azure Active Directory V2 PowerShell pour configurer des propriétés de compte d’utilisateur</span><span class="sxs-lookup"><span data-stu-id="ea5da-157">Use the Azure Active Directory V2 PowerShell module to configure user account properties</span></span>
-
-<span data-ttu-id="ea5da-p108">Pour configurer les propriétés pour les comptes d'utilisateur avec le module Azure Active Directory V2 PowerShell, vous utilisez la cmdlet [Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) et spécifiez les propriétés à définir ou à modifier. Mais tout d'abord, vous devez vous connecter à votre abonnement. Pour obtenir les instructions, reportez-vous à l'article relatif à la [connexion avec le module Azure Active Directory V2 PowerShell](https://go.microsoft.com/fwlink/?linkid=842218).</span><span class="sxs-lookup"><span data-stu-id="ea5da-p108">To configure properties for user accounts with the Azure Active Directory V2 PowerShell module, you use the [Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) cmdlet and specify the properties to set or change. But first, you must connect to your subscription. For the instructions, see [Connect with the Azure Active Directory V2 PowerShell module](https://go.microsoft.com/fwlink/?linkid=842218).</span></span>
-  
-### <a name="change-properties-for-a-specific-user-account"></a><span data-ttu-id="ea5da-161">Modification des propriétés d’un compte d’utilisateur spécifique</span><span class="sxs-lookup"><span data-stu-id="ea5da-161">Change properties for a specific user account</span></span>
-
-<span data-ttu-id="ea5da-162">Cet exemple de commande remplace l’emplacement d’utilisation de Belinda Newman par France :</span><span class="sxs-lookup"><span data-stu-id="ea5da-162">This example command changes Belinda Newman's usage location to France:</span></span>
-  
-```
-Set-AzureADUser -ObjectID "BelindaN@litwareinc.onmicosoft.com" -UsageLocation "FR"
-```
-
-<span data-ttu-id="ea5da-p109">Vous identifiez le compte avec le paramètre **-ObjectID** et définissez ou modifiez des propriétés spécifiques à l'aide de paramètres supplémentaires. Voici la liste des principaux paramètres.</span><span class="sxs-lookup"><span data-stu-id="ea5da-p109">You identify the account with the **-ObjectID** parameter and set or change specific properties with additional parameters. Here is a list of the most common parameters.</span></span>
-  
-- <span data-ttu-id="ea5da-165">-Department "\<nom du service>"</span><span class="sxs-lookup"><span data-stu-id="ea5da-165">-Department "\<department name>"</span></span>
-    
-- <span data-ttu-id="ea5da-166">-DisplayName "\<nom utilisateur complet>"</span><span class="sxs-lookup"><span data-stu-id="ea5da-166">-DisplayName "\<full user name>"</span></span>
-    
-- <span data-ttu-id="ea5da-167">-FacsimilieTelephoneNumber "\<numéro de télécopie>"</span><span class="sxs-lookup"><span data-stu-id="ea5da-167">-FacsimilieTelephoneNumber "\<fax number>"</span></span>
-    
-- <span data-ttu-id="ea5da-168">-GivenName "\<prénom de l’utilisateur>"</span><span class="sxs-lookup"><span data-stu-id="ea5da-168">-GivenName "\<user first name>"</span></span>
-    
-- <span data-ttu-id="ea5da-169">-Surname "\<nom de famille de l’utilisateur>"</span><span class="sxs-lookup"><span data-stu-id="ea5da-169">-Surname "\<user last name>"</span></span>
-    
-- <span data-ttu-id="ea5da-170">-Mobile "\<N° de téléphone portable>"</span><span class="sxs-lookup"><span data-stu-id="ea5da-170">-Mobile "\<mobile phone number>"</span></span>
-    
-- <span data-ttu-id="ea5da-171">-JobTitle "\<fonction>"</span><span class="sxs-lookup"><span data-stu-id="ea5da-171">-JobTitle "\<job title>"</span></span>
-    
-- <span data-ttu-id="ea5da-172">-PreferredLanguage "\<langue>"</span><span class="sxs-lookup"><span data-stu-id="ea5da-172">-PreferredLanguage "\<language>"</span></span>
-    
-- <span data-ttu-id="ea5da-173">-StreetAddress "\<adresse>"</span><span class="sxs-lookup"><span data-stu-id="ea5da-173">-StreetAddress "\<street address>"</span></span>
-    
-- <span data-ttu-id="ea5da-174">-City "\<nom de la ville>"</span><span class="sxs-lookup"><span data-stu-id="ea5da-174">-City "\<city name>"</span></span>
-    
-- <span data-ttu-id="ea5da-175">-State "\<nom de l’État>"</span><span class="sxs-lookup"><span data-stu-id="ea5da-175">-State "\<state name>"</span></span>
-    
-- <span data-ttu-id="ea5da-176">-PostalCode "\<code postal>"</span><span class="sxs-lookup"><span data-stu-id="ea5da-176">-PostalCode "\<postal code>"</span></span>
-    
-- <span data-ttu-id="ea5da-177">-Country "\<nom du pays>"</span><span class="sxs-lookup"><span data-stu-id="ea5da-177">-Country "\<country name>"</span></span>
-    
-- <span data-ttu-id="ea5da-178">-TelephoneNumber "\<numéro de téléphone du bureau>"</span><span class="sxs-lookup"><span data-stu-id="ea5da-178">-TelephoneNumber "\<office phone number>"</span></span>
-    
-- <span data-ttu-id="ea5da-179">-UsageLocation "\<code de région ou de pays à 2 caractères>"</span><span class="sxs-lookup"><span data-stu-id="ea5da-179">-UsageLocation "\<2-character country or region code>"</span></span>
-    
-    <span data-ttu-id="ea5da-180">Voici le code de la région ou du pays à deux lettres ISO 3166-1 alpha-2 (A2).</span><span class="sxs-lookup"><span data-stu-id="ea5da-180">This is the ISO 3166-1 alpha-2 (A2) two-letter country or region code.</span></span>
-    
-<span data-ttu-id="ea5da-181">Pour consulter des paramètres supplémentaires, reportez-vous à [Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0).</span><span class="sxs-lookup"><span data-stu-id="ea5da-181">See [Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) for additional parameters.</span></span>
-  
-<span data-ttu-id="ea5da-182">Pour afficher le nom d’utilisateur principal pour vos comptes d’utilisateur, exécutez la commande suivante.</span><span class="sxs-lookup"><span data-stu-id="ea5da-182">To display the User Principal Name for your user accounts, run the following command.</span></span>
+<span data-ttu-id="d2371-129">Pour afficher le nom d’utilisateur principal pour vos comptes d’utilisateur, exécutez la commande suivante.</span><span class="sxs-lookup"><span data-stu-id="d2371-129">To display the User Principal Name for your user accounts, run the following command.</span></span>
   
 ```
 Get-AzureADUser | Sort-Object UserPrincipalName | Select-Object UserPrincipalName | More
 ```
 
-<span data-ttu-id="ea5da-183">Cette commande demande à Office 365 PowerShell d'effectuer les opérations suivantes :</span><span class="sxs-lookup"><span data-stu-id="ea5da-183">This command instructs Office 365 PowerShell to:</span></span>
+<span data-ttu-id="d2371-130">Cette commande demande à Office 365 PowerShell d'effectuer les opérations suivantes :</span><span class="sxs-lookup"><span data-stu-id="d2371-130">This command instructs Office 365 PowerShell to:</span></span>
   
-- <span data-ttu-id="ea5da-184">Obtenir toutes les informations sur les comptes d’utilisateur ( **Get-AzureADUser** ) et les envoyer à la commande suivante ( **|** ).</span><span class="sxs-lookup"><span data-stu-id="ea5da-184">Get all of the information on the user accounts ( **Get-AzureADUser** ) and send it to the next command ( **|** ).</span></span>
+- <span data-ttu-id="d2371-131">Obtenir toutes les informations sur les comptes d’utilisateur ( **Get-AzureADUser** ) et les envoyer à la commande suivante ( **|** ).</span><span class="sxs-lookup"><span data-stu-id="d2371-131">Get all of the information on the user accounts ( **Get-AzureADUser** ) and send it to the next command ( **|** ).</span></span>
     
-- <span data-ttu-id="ea5da-185">Trier par ordre alphabétique la liste des noms d’utilisateur principaux ( **Sort-Object UserPrincipalName** ) et l’envoyer à la commande suivante ( **|** ).</span><span class="sxs-lookup"><span data-stu-id="ea5da-185">Sort the list of User Principal Names alphabetically ( **Sort-Object UserPrincipalName** ) and send it to the next command ( **|** ).</span></span>
+- <span data-ttu-id="d2371-132">Trier par ordre alphabétique la liste des noms d’utilisateur principaux ( **Sort-Object UserPrincipalName** ) et l’envoyer à la commande suivante ( **|** ).</span><span class="sxs-lookup"><span data-stu-id="d2371-132">Sort the list of User Principal Names alphabetically ( **Sort-Object UserPrincipalName** ) and send it to the next command ( **|** ).</span></span>
     
-- <span data-ttu-id="ea5da-186">Afficher uniquement la propriété Nom d'utilisateur principal pour chaque compte ( **Select-Object UserPrincipalName** ).</span><span class="sxs-lookup"><span data-stu-id="ea5da-186">Display just the User Principal Name property for each account ( **Select-Object UserPrincipalName** ).</span></span>
-- <span data-ttu-id="ea5da-187">Afficher un écran à la fois ( **Plus** ).</span><span class="sxs-lookup"><span data-stu-id="ea5da-187">Display them one screen at a time ( **More** ).</span></span>
+- <span data-ttu-id="d2371-133">Afficher uniquement la propriété Nom d'utilisateur principal pour chaque compte ( **Select-Object UserPrincipalName** ).</span><span class="sxs-lookup"><span data-stu-id="d2371-133">Display just the User Principal Name property for each account ( **Select-Object UserPrincipalName** ).</span></span>
+- <span data-ttu-id="d2371-134">Afficher un écran à la fois ( **Plus** ).</span><span class="sxs-lookup"><span data-stu-id="d2371-134">Display them one screen at a time ( **More** ).</span></span>
     
-<span data-ttu-id="ea5da-p110">Cette commande répertorie tous vos comptes. Si vous souhaitez afficher le nom d'utilisateur principal d'un compte en fonction de son nom d'affichage (prénom et nom), insérez la variable **$userName** ci-dessous (supprimez les caractères \< et >), puis exécutez les commandes suivantes :</span><span class="sxs-lookup"><span data-stu-id="ea5da-p110">This command will list all of your accounts. If you want to display the User Principal Name for an account based on its display name (first and last name), fill in the **$userName** variable below (removing the \< and > characters), and then run the following commands:</span></span>
+<span data-ttu-id="d2371-p102">Cette commande répertorie tous vos comptes. Si vous souhaitez afficher le nom d'utilisateur principal d'un compte en fonction de son nom d'affichage (prénom et nom), insérez la variable **$userName** ci-dessous (supprimez les caractères \< et >), puis exécutez les commandes suivantes :</span><span class="sxs-lookup"><span data-stu-id="d2371-p102">This command will list all of your accounts. If you want to display the User Principal Name for an account based on its display name (first and last name), fill in the **$userName** variable below (removing the \< and > characters), and then run the following commands:</span></span>
   
 ```
 $userName="<Display name>"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-<span data-ttu-id="ea5da-190">Cet exemple affiche le nom d’utilisateur principal de l’utilisateur nommé Caleb Sills.</span><span class="sxs-lookup"><span data-stu-id="ea5da-190">This example displays the User Principal Name for the user named Caleb Sills.</span></span>
+<span data-ttu-id="d2371-137">Cet exemple affiche le nom d’utilisateur principal pour le compte l’utilisateur avec Caleb Sills comme nom d’affichage.</span><span class="sxs-lookup"><span data-stu-id="d2371-137">This example displays the User Principal Name for the user account with the display name of Caleb Sills.</span></span>
   
 ```
 $userName="Caleb Sills"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-<span data-ttu-id="ea5da-p111">En utilisant une variable **$upn**, vous pouvez apporter des modifications à des comptes individuels en fonction de leur nom d'affichage. Voici un exemple de définition de l'emplacement d'utilisation de Belinda Newman en France, mais en spécifiant son nom d'affichage plutôt que son nom d'utilisateur principal :</span><span class="sxs-lookup"><span data-stu-id="ea5da-p111">By using a **$upn** variable, you can make changes to individual accounts based on their display name. Here is an example of setting Belinda Newman's usage location to France, but specifying her display name rather than her User Principal Name:</span></span>
+<span data-ttu-id="d2371-p103">En utilisant une variable **$upn**, vous pouvez apporter des modifications à des comptes individuels en fonction de leur nom d'affichage. Voici un exemple de définition de l'emplacement d'utilisation de Belinda Newman en France, mais en spécifiant son nom d'affichage plutôt que son nom d'utilisateur principal :</span><span class="sxs-lookup"><span data-stu-id="d2371-p103">By using a **$upn** variable, you can make changes to individual accounts based on their display name. Here is an example of setting Belinda Newman's usage location to France, but specifying her display name rather than her User Principal Name:</span></span>
   
 ```
 $userName="Belinda Newman"
@@ -233,43 +109,157 @@ $upn=(Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 Set-AzureADUser -ObjectID $upn -UsageLocation "FR"
 ```
 
-### <a name="change-properties-for-all-user-accounts"></a><span data-ttu-id="ea5da-193">Modification des propriétés de tous les comptes d’utilisateur</span><span class="sxs-lookup"><span data-stu-id="ea5da-193">Change properties for all user accounts</span></span>
+### <a name="change-properties-for-all-user-accounts"></a><span data-ttu-id="d2371-140">Modification des propriétés de tous les comptes d’utilisateur</span><span class="sxs-lookup"><span data-stu-id="d2371-140">Change properties for all user accounts</span></span>
 
-<span data-ttu-id="ea5da-p112">Afin de modifier les propriétés pour tous les utilisateurs, vous pouvez utiliser la combinaison des cmdlets **Get-AzureADUser** et **Set-AzureADUser**. L'exemple suivant modifie l'emplacement d'utilisation pour tous les utilisateurs et définit la France comme nouvel emplacement :</span><span class="sxs-lookup"><span data-stu-id="ea5da-p112">To change properties for all users, you can use the combination of the **Get-AzureADUser** and **Set-AzureADUser** cmdlets. The following example changes the usage location for all users to France:</span></span>
+<span data-ttu-id="d2371-p104">Afin de modifier les propriétés pour tous les utilisateurs, vous pouvez utiliser la combinaison des cmdlets **Get-AzureADUser** et **Set-AzureADUser**. L'exemple suivant modifie l'emplacement d'utilisation pour tous les utilisateurs et définit la France comme nouvel emplacement :</span><span class="sxs-lookup"><span data-stu-id="d2371-p104">To change properties for all users, you can use the combination of the **Get-AzureADUser** and **Set-AzureADUser** cmdlets. The following example changes the usage location for all users to France:</span></span>
   
 ```
 Get-AzureADUser | Set-AzureADUser -UsageLocation "FR"
 ```
 
-<span data-ttu-id="ea5da-196">Cette commande demande à PowerShell Office 365 d’effectuer les opérations suivantes :</span><span class="sxs-lookup"><span data-stu-id="ea5da-196">This command instructs Office 365 PowerShell to:</span></span>
+<span data-ttu-id="d2371-143">Cette commande demande à PowerShell Office 365 d’effectuer les opérations suivantes :</span><span class="sxs-lookup"><span data-stu-id="d2371-143">This command instructs Office 365 PowerShell to:</span></span>
   
-- <span data-ttu-id="ea5da-197">Obtenir toutes les informations sur les comptes d’utilisateur ( **Get-AzureADUser** ) et les envoyer à la commande suivante ( **|** ).</span><span class="sxs-lookup"><span data-stu-id="ea5da-197">Get all of the information on the user accounts ( **Get-AzureADUser** ) and send it to the next command ( **|** ).</span></span>
+- <span data-ttu-id="d2371-144">Obtenir toutes les informations sur les comptes d’utilisateur ( **Get-AzureADUser** ) et les envoyer à la commande suivante ( **|** ).</span><span class="sxs-lookup"><span data-stu-id="d2371-144">Get all of the information on the user accounts ( **Get-AzureADUser** ) and send it to the next command ( **|** ).</span></span>
     
-- <span data-ttu-id="ea5da-198">Définir la France comme emplacement de l’utilisateur ( **Set-AzureADUser -UsageLocation "FR"** ).</span><span class="sxs-lookup"><span data-stu-id="ea5da-198">Set the user location to France ( **Set-AzureADUser -UsageLocation "FR"** ).</span></span>
+- <span data-ttu-id="d2371-145">Définir la France comme emplacement de l’utilisateur ( **Set-AzureADUser -UsageLocation "FR"** ).</span><span class="sxs-lookup"><span data-stu-id="d2371-145">Set the user location to France ( **Set-AzureADUser -UsageLocation "FR"** ).</span></span>
     
-### <a name="change-properties-for-a-specific-set-of-user-accounts"></a><span data-ttu-id="ea5da-199">Modification des propriétés d’un ensemble spécifique de comptes d’utilisateur</span><span class="sxs-lookup"><span data-stu-id="ea5da-199">Change properties for a specific set of user accounts</span></span>
+### <a name="change-properties-for-a-specific-set-of-user-accounts"></a><span data-ttu-id="d2371-146">Modification des propriétés d’un ensemble spécifique de comptes d’utilisateur</span><span class="sxs-lookup"><span data-stu-id="d2371-146">Change properties for a specific set of user accounts</span></span>
 
-<span data-ttu-id="ea5da-p113">Pour modifier les propriétés d’un ensemble spécifique de comptes d’utilisateur, vous pouvez utiliser la combinaison des cmdlets **Get-AzureADUser**, **Where** et **Set-AzureADUser**. L’exemple suivant modifie l’emplacement d’utilisation pour tous les utilisateurs du service Accounting et définit la France comme nouvel emplacement :</span><span class="sxs-lookup"><span data-stu-id="ea5da-p113">To change properties for a specific set of user account, you can use the combination of the **Get-AzureADUser**, **Where**, and **Set-AzureADUser** cmdlets. The following example changes the usage location for all the users in the Accounting department to France:</span></span>
+<span data-ttu-id="d2371-p105">Pour modifier les propriétés d’un ensemble spécifique de comptes d’utilisateur, vous pouvez utiliser la combinaison des cmdlets **Get-AzureADUser**, **Where** et **Set-AzureADUser**. L’exemple suivant modifie l’emplacement d’utilisation pour tous les utilisateurs du service Accounting et définit la France comme nouvel emplacement :</span><span class="sxs-lookup"><span data-stu-id="d2371-p105">To change properties for a specific set of user account, you can use the combination of the **Get-AzureADUser**, **Where**, and **Set-AzureADUser** cmdlets. The following example changes the usage location for all the users in the Accounting department to France:</span></span>
   
 ```
 Get-AzureADUser | Where-Object {$_.Department -eq "Accounting"} | Set-AzureADUser -UsageLocation "FR"
 ```
 
-<span data-ttu-id="ea5da-202">Cette commande demande à PowerShell Office 365 d’effectuer les opérations suivantes :</span><span class="sxs-lookup"><span data-stu-id="ea5da-202">This command instructs Office 365 PowerShell to:</span></span>
+<span data-ttu-id="d2371-149">Cette commande demande à PowerShell Office 365 d’effectuer les opérations suivantes :</span><span class="sxs-lookup"><span data-stu-id="d2371-149">This command instructs Office 365 PowerShell to:</span></span>
   
-- <span data-ttu-id="ea5da-203">Obtenir toutes les informations sur les comptes d’utilisateur ( **Get-AzureADUser** ) et les envoyer à la commande suivante ( **|** ).</span><span class="sxs-lookup"><span data-stu-id="ea5da-203">Get all of the information on the user accounts ( **Get-AzureADUser** ) and send it to the next command ( **|** ).</span></span>
+- <span data-ttu-id="d2371-150">Obtenir toutes les informations sur les comptes d’utilisateur ( **Get-AzureADUser** ) et les envoyer à la commande suivante ( **|** ).</span><span class="sxs-lookup"><span data-stu-id="d2371-150">Get all of the information on the user accounts ( **Get-AzureADUser** ) and send it to the next command ( **|** ).</span></span>
     
-- <span data-ttu-id="ea5da-204">Rechercher tous les comptes utilisateurs dont la propriété Department est définie sur « Accounting » ( **Where {$_.Department -eq "Accounting"}** ) et envoyer les informations obtenues à la commande suivante ( **|** ).</span><span class="sxs-lookup"><span data-stu-id="ea5da-204">Find all of the user accounts that have their Department property set to "Accounting" ( **Where {$_.Department -eq "Accounting"}** ) and send the resulting information to the next command ( **|** ).</span></span>
+- <span data-ttu-id="d2371-151">Rechercher tous les comptes utilisateurs dont la propriété Department est définie sur « Accounting » ( **Where {$_.Department -eq "Accounting"}** ) et envoyer les informations obtenues à la commande suivante ( **|** ).</span><span class="sxs-lookup"><span data-stu-id="d2371-151">Find all of the user accounts that have their Department property set to "Accounting" ( **Where {$_.Department -eq "Accounting"}** ) and send the resulting information to the next command ( **|** ).</span></span>
     
-- <span data-ttu-id="ea5da-205">Définir la France comme emplacement de l’utilisateur ( **Set-AzureADUser -UsageLocation "FR"** ).</span><span class="sxs-lookup"><span data-stu-id="ea5da-205">Set the user location to France ( **Set-AzureADUser -UsageLocation "FR"** ).</span></span>
+- <span data-ttu-id="d2371-152">Définir la France comme emplacement de l’utilisateur ( **Set-AzureADUser -UsageLocation "FR"** ).</span><span class="sxs-lookup"><span data-stu-id="d2371-152">Set the user location to France ( **Set-AzureADUser -UsageLocation "FR"** ).</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="ea5da-206">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="ea5da-206">See also</span></span>
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a><span data-ttu-id="d2371-153">Utilisez le Module Microsoft Azure Active Directory pour Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="d2371-153">Open the Microsoft Azure Active Directory Module for Windows PowerShell.</span></span>
 
-#### 
+<span data-ttu-id="d2371-154">Pour configurer les propriétés des comptes d’utilisateur avec le module Microsoft Azure Active Directory pour Windows PowerShell, vous utilisez la cmdlet Set-MsolUser et spécifiez les propriétés à définir ou à modifier.</span><span class="sxs-lookup"><span data-stu-id="d2371-154">To configure properties for user accounts with the Microsoft Azure Active Directory Module for Windows PowerShell, you use the Set-MsolUser cmdlet and specify the properties to set or change.</span></span> 
 
-[<span data-ttu-id="ea5da-207">Gérer les comptes d'utilisateurs et les licences avec Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="ea5da-207">Manage user accounts and licenses with Office 365 PowerShell</span></span>](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+<span data-ttu-id="d2371-155">Tout d’abord, [connectez-vous à votre client Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span><span class="sxs-lookup"><span data-stu-id="d2371-155">First, [connect to your Office 365 tenant](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span></span>
   
-[<span data-ttu-id="ea5da-208">Gérer Office 365 avec Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="ea5da-208">Manage Office 365 with Office 365 PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
-  
-[<span data-ttu-id="ea5da-209">Mise en route d'Office 365 Powershell</span><span class="sxs-lookup"><span data-stu-id="ea5da-209">Getting started with Office 365 PowerShell</span></span>](getting-started-with-office-365-powershell.md)
+### <a name="change-properties-for-a-specific-user-account"></a><span data-ttu-id="d2371-156">Modification des propriétés d’un compte d’utilisateur spécifique</span><span class="sxs-lookup"><span data-stu-id="d2371-156">Change properties for a specific user account</span></span>
 
+<span data-ttu-id="d2371-157">Pour configurer les propriétés d’un compte d’utilisateur spécifique, vous utilisez la cmdlet [Set-MsolUser](https://msdn.microsoft.com/library/azure/dn194136.aspx) et spécifiez les propriétés de définition ou de modification.</span><span class="sxs-lookup"><span data-stu-id="d2371-157">To configure properties for a specific user account, you use the [Set-MsolUser](https://msdn.microsoft.com/library/azure/dn194136.aspx) cmdlet and specify the properties to set or change. This example command changes Belinda Newman's usage location to France:</span></span> 
+
+<span data-ttu-id="d2371-p106">Identifiez le compte avec le paramètre **-UserPrincipalName** et définissez ou modifiez des propriétés spécifiques à l'aide de paramètres supplémentaires. Voici la liste des principaux paramètres.</span><span class="sxs-lookup"><span data-stu-id="d2371-p106">You identify the account with the **-UserPrincipalName** parameter and set or change specific properties with additional parameters. Here is a list of the most common parameters.</span></span>
+  
+- <span data-ttu-id="d2371-160">-City "\<nom de la ville>"</span><span class="sxs-lookup"><span data-stu-id="d2371-160">-City "\<city name>"</span></span>
+    
+- <span data-ttu-id="d2371-161">-Country "\<nom du pays>"</span><span class="sxs-lookup"><span data-stu-id="d2371-161">-Country "\<country name>"</span></span>
+    
+- <span data-ttu-id="d2371-162">-Department "\<nom du service>"</span><span class="sxs-lookup"><span data-stu-id="d2371-162">-Department "\<department name>"</span></span>
+    
+- <span data-ttu-id="d2371-163">-DisplayName "\<nom utilisateur complet>"</span><span class="sxs-lookup"><span data-stu-id="d2371-163">-DisplayName "\<full user name>"</span></span>
+    
+- <span data-ttu-id="d2371-164">-Fax "\<numéro de fax>"</span><span class="sxs-lookup"><span data-stu-id="d2371-164">-Fax "\<fax number>"</span></span>
+    
+- <span data-ttu-id="d2371-165">-FirstName "\<prénom de l’utilisateur>"</span><span class="sxs-lookup"><span data-stu-id="d2371-165">-FirstName "\<user first name>"</span></span>
+    
+- <span data-ttu-id="d2371-166">-LastName "\<nom de famille de l’utilisateur>"</span><span class="sxs-lookup"><span data-stu-id="d2371-166">-LastName "\<user last name>"</span></span>
+    
+- <span data-ttu-id="d2371-167">-MobilePhone "\<numéro de téléphone portable>"</span><span class="sxs-lookup"><span data-stu-id="d2371-167">-MobilePhone "\<mobile phone number>"</span></span>
+    
+- <span data-ttu-id="d2371-168">-Office "\<emplacement du bureau>"</span><span class="sxs-lookup"><span data-stu-id="d2371-168">-Office "\<office location>"</span></span>
+    
+- <span data-ttu-id="d2371-169">-PhoneNumber "\<numéro de téléphone du bureau>"</span><span class="sxs-lookup"><span data-stu-id="d2371-169">-PhoneNumber "\<office phone number>"</span></span>
+    
+- <span data-ttu-id="d2371-170">-PostalCode "\<code postal>"</span><span class="sxs-lookup"><span data-stu-id="d2371-170">-PostalCode "\<postal code>"</span></span>
+    
+- <span data-ttu-id="d2371-171">-PreferredLanguage "\<langue>"</span><span class="sxs-lookup"><span data-stu-id="d2371-171">-PreferredLanguage "\<language>"</span></span>
+    
+- <span data-ttu-id="d2371-172">-State "\<nom de l’État>"</span><span class="sxs-lookup"><span data-stu-id="d2371-172">-State "\<state name>"</span></span>
+    
+- <span data-ttu-id="d2371-173">-StreetAddress "\<adresse>"</span><span class="sxs-lookup"><span data-stu-id="d2371-173">-StreetAddress "\<street address>"</span></span>
+    
+- <span data-ttu-id="d2371-174">-Title "\<intitulé du poste>"</span><span class="sxs-lookup"><span data-stu-id="d2371-174">-Title "\<title name>"</span></span>
+    
+- <span data-ttu-id="d2371-175">-UsageLocation "\<code de région ou de pays à 2 caractères>"</span><span class="sxs-lookup"><span data-stu-id="d2371-175">-UsageLocation "\<2-character country or region code>"</span></span>
+    
+    <span data-ttu-id="d2371-176">Voici le code de la région ou du pays à deux lettres ISO 3166-1 alpha-2 (A2).</span><span class="sxs-lookup"><span data-stu-id="d2371-176">This is the ISO 3166-1 alpha-2 (A2) two-letter country or region code.</span></span>
+    
+<span data-ttu-id="d2371-177">Pour obtenir plus de paramètres, voir [Set-MsolUser](https://msdn.microsoft.com/library/azure/dn194136.aspx).</span><span class="sxs-lookup"><span data-stu-id="d2371-177">See [Set-MsolUser](https://msdn.microsoft.com/library/azure/dn194136.aspx) for additional parameters.</span></span>
+  
+<span data-ttu-id="d2371-178">Pour afficher les noms d’utilisateur principaux de tous vos utilisateurs, exécutez la commande suivante.</span><span class="sxs-lookup"><span data-stu-id="d2371-178">To see the User Principal Names of all your users, run the following command.</span></span>
+  
+```
+Get-MSolUser | Sort-Object UserPrincipalName | Select-Object UserPrincipalName | More
+```
+
+<span data-ttu-id="d2371-179">Cette commande demande à Office 365 PowerShell d'effectuer les opérations suivantes :</span><span class="sxs-lookup"><span data-stu-id="d2371-179">This command instructs Office 365 PowerShell to:</span></span>
+  
+- <span data-ttu-id="d2371-180">Obtenir toutes les informations sur les comptes utilisateur ( **Get-MsolUser** ) et les envoyer à la commande suivante ( **|** ).</span><span class="sxs-lookup"><span data-stu-id="d2371-180">Get all of the information on the user accounts ( **Get-MsolUser** ) and send it to the next command ( **|** ).</span></span>
+    
+- <span data-ttu-id="d2371-181">Trier par ordre alphabétique la liste des noms d’utilisateur principaux ( **Sort-Object UserPrincipalName** ) et l’envoyer à la commande suivante ( **|** ).</span><span class="sxs-lookup"><span data-stu-id="d2371-181">Sort the list of User Principal Names alphabetically ( **Sort-Object UserPrincipalName** ) and send it to the next command ( **|** ).</span></span>
+    
+- <span data-ttu-id="d2371-182">Afficher uniquement la propriété Nom d'utilisateur principal pour chaque compte ( **Select-Object UserPrincipalName** ).</span><span class="sxs-lookup"><span data-stu-id="d2371-182">Display just the User Principal Name property for each account ( **Select-Object UserPrincipalName** ).</span></span>
+    
+- <span data-ttu-id="d2371-183">Afficher un écran à la fois ( **Plus** ).</span><span class="sxs-lookup"><span data-stu-id="d2371-183">Display them one screen at a time ( **More** ).</span></span>
+    
+<span data-ttu-id="d2371-p107">Cette commande répertorie tous vos comptes. Si vous souhaitez afficher le nom d'utilisateur principal d'un compte en fonction de son nom d'affichage (prénom et nom), insérez la variable **$userName** ci-dessous (supprimez les caractères \< et >), puis exécutez les commandes suivantes :</span><span class="sxs-lookup"><span data-stu-id="d2371-p107">This command will list all of your accounts. If you want to display the User Principal Name for an account based on its display name (first and last name), fill in the **$userName** variable below (removing the \< and > characters), and then run the following commands:</span></span>
+  
+```
+$userName="<Display name>"
+Write-Host (Get-MsolUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
+```
+
+<span data-ttu-id="d2371-186">Cet exemple affiche le nom d’utilisateur principal de l’utilisateur nommé Caleb Sills.</span><span class="sxs-lookup"><span data-stu-id="d2371-186">This example displays the User Principal Name for the user named Caleb Sills.</span></span>
+  
+```
+$userName="Caleb Sills"
+Write-Host (Get-MsolUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
+```
+
+<span data-ttu-id="d2371-p108">En utilisant une variable **$upn**, vous pouvez apporter des modifications à des comptes individuels en fonction de leur nom d'affichage. Voici un exemple de définition de l'emplacement d'utilisation de Belinda Newman en France, mais en spécifiant son nom d'affichage plutôt que son nom d'utilisateur principal :</span><span class="sxs-lookup"><span data-stu-id="d2371-p108">By using a **$upn** variable, you can make changes to individual accounts based on their display name. Here is an example of setting Belinda Newman's usage location to France, but specifying her display name rather than her User Principal Name:</span></span>
+  
+```
+$userName="<display name>"
+$upn=(Get-MsolUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
+Set-MsolUser -UserPrincipalName $upn -UsageLocation "FR"
+```
+
+### <a name="change-properties-for-all-user-accounts"></a><span data-ttu-id="d2371-189">Modification des propriétés de tous les comptes d’utilisateur</span><span class="sxs-lookup"><span data-stu-id="d2371-189">Change properties for all user accounts</span></span>
+
+<span data-ttu-id="d2371-p109">Pour modifier les propriétés pour tous les utilisateurs, vous pouvez utiliser la combinaison des cmdlets **Get-MsolUser** et **Set-MsolUser**. L'exemple suivant modifie l'emplacement d'utilisation pour tous les utilisateurs et définit la France comme nouvel emplacement :</span><span class="sxs-lookup"><span data-stu-id="d2371-p109">To change properties for all users, you can use the combination of the **Get-MsolUser** and **Set-MsolUser** cmdlets. The following example changes the usage location for all users to France:</span></span>
+  
+```
+Get-MsolUser | Set-MsolUser -UsageLocation "FR"
+```
+
+<span data-ttu-id="d2371-192">Cette commande demande à Office 365 PowerShell d'effectuer les opérations suivantes :</span><span class="sxs-lookup"><span data-stu-id="d2371-192">This command instructs Office 365 PowerShell to:</span></span>
+  
+- <span data-ttu-id="d2371-193">Obtenir toutes les informations sur les comptes utilisateur ( **Get-MsolUser** ) et les envoyer à la commande suivante ( **|** ).</span><span class="sxs-lookup"><span data-stu-id="d2371-193">Get all of the information on the user accounts ( **Get-MsolUser** ) and send it to the next command ( **|** ).</span></span>
+    
+- <span data-ttu-id="d2371-194">Définir la France comme emplacement de l'utilisateur ( **Set-MsolUser -UsageLocation "FR"** ).</span><span class="sxs-lookup"><span data-stu-id="d2371-194">Set the user location to France ( **Set-MsolUser -UsageLocation "FR"** ).</span></span>
+    
+### <a name="change-properties-for-a-specific-set-of-user-accounts"></a><span data-ttu-id="d2371-195">Modification des propriétés d’un ensemble spécifique de comptes d’utilisateur</span><span class="sxs-lookup"><span data-stu-id="d2371-195">Change properties for a specific set of user accounts</span></span>
+
+<span data-ttu-id="d2371-p110">Pour modifier les propriétés d'un ensemble spécifique de comptes d'utilisateur, vous pouvez utiliser la combinaison des cmdlets **Get-MsolUser**, **Where-Object** et **Set-MsolUser**. L'exemple suivant modifie l'emplacement d'utilisation pour tous les utilisateurs du service Accounting et définit la France comme nouvel emplacement :</span><span class="sxs-lookup"><span data-stu-id="d2371-p110">To change properties for a specific set of user account, you can use the combination of the **Get-MsolUser**, **Where-Object**, and **Set-MsolUser** cmdlets. The following example changes the usage location for all the users in the Accounting department to France:</span></span>
+  
+```
+Get-MsolUser | Where-Object {$_.Department -eq "Accounting"} | Set-MsolUser -UsageLocation "FR"
+```
+
+<span data-ttu-id="d2371-198">Cette commande demande à Office 365 PowerShell d'effectuer les opérations suivantes :</span><span class="sxs-lookup"><span data-stu-id="d2371-198">This command instructs Office 365 PowerShell to:</span></span>
+  
+- <span data-ttu-id="d2371-199">Obtenir toutes les informations sur les comptes utilisateur ( **Get-MsolUser** ) et les envoyer à la commande suivante ( **|** ).</span><span class="sxs-lookup"><span data-stu-id="d2371-199">Get all of the information on the user accounts ( **Get-MsolUser** ) and send it to the next command ( **|** ).</span></span>
+    
+- <span data-ttu-id="d2371-200">Rechercher tous les comptes utilisateurs dont la propriété Department est définie sur « Accounting » ( **Where-Object {$_.Department -eq "Accounting"}** ) et envoyer les informations obtenues à la commande suivante ( **|** ).</span><span class="sxs-lookup"><span data-stu-id="d2371-200">Find all of the user accounts that have their Department property set to "Accounting" ( **Where-Object {$_.Department -eq "Accounting"}** ) and send the resulting information to the next command ( **|** ).</span></span>
+    
+- <span data-ttu-id="d2371-201">Définir la France comme emplacement de l'utilisateur ( **Set-MsolUser -UsageLocation "FR"** ).</span><span class="sxs-lookup"><span data-stu-id="d2371-201">Set the user location to France ( **Set-MsolUser -UsageLocation "FR"** ).</span></span>
+    
+
+## <a name="see-also"></a><span data-ttu-id="d2371-202">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="d2371-202">See also</span></span>
+
+[<span data-ttu-id="d2371-203">Gérer les comptes d'utilisateurs et les licences avec Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="d2371-203">Manage user accounts and licenses with Office 365 PowerShell</span></span>](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+  
+[<span data-ttu-id="d2371-204">Gérer Office 365 avec Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="d2371-204">Manage Office 365 with Office 365 PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
+  
+[<span data-ttu-id="d2371-205">Mise en route d'Office 365 Powershell</span><span class="sxs-lookup"><span data-stu-id="d2371-205">Getting started with Office 365 PowerShell</span></span>](getting-started-with-office-365-powershell.md)

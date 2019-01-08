@@ -188,4 +188,4 @@
 # [Office 365 PowerShell](powershell/manage-office-365-with-office-365-powershell.md)
 # [Sécurité et conformité](https://docs.microsoft.com/Office365/SecurityCompliance)
 # [Office 365 pour les entreprises](https://docs.microsoft.com/office365/admin/admin-home)
-  
+# [Microsoft 365](https://docs.microsoft.com/microsoft-365)

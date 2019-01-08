@@ -3,7 +3,7 @@ title: Points de terminaison Office 365 Germany
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/28/2018
+ms.date: 01/07/2019
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
 description: Si votre organisation utilise Office 365 et se limite aux ordinateurs de votre réseau de se connecter à Internet, vous trouverez ci-dessous les points de terminaison (noms de domaine complets, Ports, URL et IPv4 et IPv6 de plages d’adresses) que vous devez inclure dans votre sortant autoriser les listes vérifier votre les ordinateurs peuvent utiliser Office 365.
 hideEdit: true
-ms.openlocfilehash: 016fc3073ece232a0e12e298d745cd18d8e5cb9d
-ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
+ms.openlocfilehash: 05bbcb1cb4e6b90b3f7a61d84ae3488ce97245c2
+ms.sourcegitcommit: e3fa9998321f6fa5d31217d107b672258993826e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26872295"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "27746134"
 ---
 # <a name="office-365-germany-endpoints"></a>Points de terminaison Office 365 Germany
 
@@ -34,7 +34,7 @@ ms.locfileid: "26872295"
   
 |||
 |:-----|:-----|
-|**Dernière mise à jour :** 11/28/2018 - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [abonnement du journal des modifications](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) |**Téléchargement :** toutes les destinations obligatoires et facultatives dans une liste [au format JSON](https://endpoints.office.com/endpoints/Germany?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).  <br/> |
+|**Dernière mise à jour :** 01/07/2019 - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [abonnement du journal des modifications](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) |**Téléchargement :** toutes les destinations obligatoires et facultatives dans une liste [au format JSON](https://endpoints.office.com/endpoints/Germany?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).  <br/> |
 
 Commencer avec les [systèmes d’extrémité gérer Office 365](managing-office-365-endpoints.md) à comprendre nos recommandations pour la gestion de la connectivité réseau à l’aide de ces données. Données de points de terminaison sont mis à jour au début de chaque mois avec de nouvelles adresses IP et les URL publiées 30 jours avant active. Cela permet aux clients ayant mais pas encore ont des mises à jour pour effectuer leurs processus avant nouvelle connectivité automatisées. Points de terminaison peuvent également être mis à jour au cours du mois si nécessaire pour permettre l’escalade prise en charge, incidents de sécurité ou autres exigences opérationnelles immédiates. Vous pouvez toujours faire pour [Modifier l’abonnement de journal](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).
 

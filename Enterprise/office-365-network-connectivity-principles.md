@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 description: Avant de commencer la planification de votre réseau Office 365 la connectivité réseau, il est important de comprendre les principes de connectivité de gérer en toute sécurité le trafic d’Office 365 et d’obtenir les meilleures performances possibles. Cet article vous aideront à comprendre les plus récents conseils pour éliminer en toute sécurité Office 365 la connectivité réseau.
-ms.openlocfilehash: be41162833a7442ac65af1e973a00923841fca6b
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: d319d99cdd413fe1df9e8f88d18742ad464bbb3b
+ms.sourcegitcommit: f0ba0d8c62f802447bc9d07f5d877067156fbed5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540489"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28021805"
 ---
 # <a name="office-365-network-connectivity-principles"></a>Principes de connectivité réseau Office 365
 
@@ -54,8 +54,8 @@ Microsoft recommande les principes suivants pour obtenir des performances et con
   
 Le principal objectif de la conception du réseau doit être de réduire la latence en réduisant le temps d’aller-retour (durée aller-retour) à partir de votre réseau dans le réseau Global Microsoft, public dorsale principale de Microsoft qui relie tous les centres de données de Microsoft avec une faible latence et en nuage de points d’entrée application répartis dans le monde entier. Pour plus d’informations sur le réseau Global Microsoft [comment Microsoft crée son réseau global rapides et fiables](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
   
-### <a name="identify-and-differentiate-office-365-traffic"></a>Identifier et distinguer le trafic d’Office 365
 <a name="BKMK_P1"> </a>
+### <a name="identify-and-differentiate-office-365-traffic"></a>Identifier et distinguer le trafic d’Office 365
 
 ![Identifier le trafic d’Office 365](media/621aaec9-971d-4f19-907a-1ae2ef6d72fc.png)
   
@@ -67,10 +67,10 @@ Pour plus d’informations sur les catégories de point de terminaison Office 36
   
 Maintenant, Microsoft publie tous les points de terminaison Office 365 comme un service web et fournit des conseils sur la meilleure méthode pour utiliser ces données. Pour plus d’informations sur la façon de récupérer et travailler avec des points de terminaison Office 365, voir l’article [Office 365 URL et plages d’adresses IP](https://support.office.com/en-us/article/office-365-urls-and-ip-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US).
   
-### <a name="egress-network-connections-locally"></a>Connexions de réseau sortant localement
 <a name="BKMK_P2"> </a>
+### <a name="egress-network-connections-locally"></a>Sortir les connexions réseau localement
 
-![Connexions de réseau sortant localement](media/b42a45be-1ab4-4073-a7dc-fbdfb4aedd24.png)
+![Sortir les connexions réseau localement](media/b42a45be-1ab4-4073-a7dc-fbdfb4aedd24.png)
   
 Sortie DNS local et Internet est très important pour réduire la latence de connexion et vous assurer que les connexions utilisateur sont effectuées au point le plus proche de l’entrée aux services Office 365. Dans une topologie de réseau complexe, il est important de mettre en œuvre des DNS local local sortant Internet ensemble. Pour plus d’informations sur la façon dont Office 365 achemine les connexions client au point le plus proche de l’entrée, voir l’article de la [Connectivité des clients](https://support.office.com/en-us/article/client-connectivity-4232abcf-4ae5-43aa-bfa1-9a078a99c78b).
   
@@ -102,8 +102,8 @@ L’architecture de sortie local présente les avantages suivants sur le modèle
 - Réduit la charge sur l’infrastructure du réseau d’entreprise en autorisant sortant local.
 - Sécurise les connexions aux deux extrémités en tirant parti de la sécurité du point de terminaison client et les fonctionnalités de sécurité dans le nuage.
 
-### <a name="avoid-network-hairpins"></a>Éviter les épingles à cheveux du réseau
 <a name="BKMK_P3"> </a>
+### <a name="avoid-network-hairpins"></a>Éviter les épingles de réseau
 
 ![Éviter les épingles à cheveux](media/ee53e8af-f57b-4292-a256-4f36733b263a.png)
   
@@ -115,8 +115,8 @@ Si vous utilisez le réseau en nuage ou les services de sécurité pour le trafi
   
 En raison du grand nombre d’emplacements distribués avec Office 365 les points d’entrée et leur proximité avec les utilisateurs finaux, routage Office 365 le trafic vers n’importe quel fournisseur de réseau ou de sécurité tiers peut avoir un impact négatif sur les connexions Office 365 si le réseau du fournisseur n’est pas optimiser Office 365 peering configuré.
   
-### <a name="bypass-proxies-traffic-inspection-devices-and-duplicate-security-technologies"></a>Ignorer les serveurs proxy, les appareils de contrôle du trafic et des technologies de sécurité en double
 <a name="BKMK_P4"> </a>
+### <a name="bypass-proxies-traffic-inspection-devices-and-duplicate-security-technologies"></a>Ignorer les serveurs proxy, les appareils de contrôle du trafic et des technologies de sécurité en double
 
 ![Ignorer les serveurs proxy, les appareils de contrôle du trafic et des technologies de sécurité en double](media/0131930d-c6cb-4ae1-bbff-fe4cf6939a23.png)
   
@@ -124,8 +124,8 @@ Les clients en entreprise doivent vérifier leur sécurité réseau et les méth
   
 La plupart des réseaux d’entreprise appliquent la sécurité de réseau pour le trafic Internet à l’aide de technologies telles que les serveurs proxy, inspection SSL, inspection de paquets et systèmes de protection contre la perte de données. Ces technologies fournissent de réduire les risques importants pour les demandes Internet génériques mais peuvent réduire considérablement les performances, l’évolutivité et la qualité de l’expérience utilisateur final lorsqu’elle est appliquée aux points de terminaison Office 365.
   
-#### <a name="office-365-endpoints-web-service"></a>Service web de points de terminaison Office 365
 <a name="BKMK_WebSvc"> </a>
+#### <a name="office-365-endpoints-web-service"></a>Service web de points de terminaison Office 365
 
 Les administrateurs Office 365 peuvent utiliser un script ou appel REST à consommer une liste structurée des points de terminaison à partir de points de terminaison Office 365 service web et mettre à jour les configurations de pare-feu de périmètre et autres périphériques réseau. Cela permet de garantir que le trafic lié à Office 365 est identifié, traité de manière appropriée et géré différemment de trafic réseau pour les sites web Internet générique et souvent inconnu. Pour plus d’informations sur l’utilisation d’Office 365 points de terminaison de service web, voir l’article [Office 365 URL et plages d’adresses IP](https://support.office.com/en-us/article/office-365-urls-and-ip-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US).
   
@@ -151,7 +151,7 @@ Points de terminaison Office 365 représentent un ensemble d’adresses réseau 
   
 Dans notre guide précédente pour gérer le trafic d’Office 365, les points de terminaison ont été organisés en deux catégories, **requis** et **facultatif**. Points de terminaison dans chaque catégorie requises optimisations différentes en fonction de l’importance du service et de nombreux clients rencontrés défis en matière de justifier l’application des même optimisations de réseau à la liste complète des adresses IP et les URL d’Office 365. 
   
-Dans le nouveau modèle, points de terminaison sont répartis sur trois catégories, **optimiser**, **requis** et **par défaut**, fournissant un tableau croisé dynamique basé sur des priorités où efforts d’optimisation réseau activé pour réduire l’amélioration des performances meilleures et retour sur investissement. Les points de terminaison sont consolidés dans les catégories ci-dessus en fonction de la sensibilité de l’expérience utilisateur efficace à l’enveloppe de volume, la qualité et les performances réseau des scénarios et faciliter la mise en œuvre. Optimisations recommandées peuvent être appliquées à la même manière pour tous les points de terminaison dans une catégorie donnée.
+Dans le nouveau modèle, points de terminaison sont répartis sur trois catégories, **optimiser**, **Autoriser** et **par défaut**, fournissant un tableau croisé dynamique basé sur des priorités où efforts d’optimisation réseau activé pour réaliser l’amélioration des performances meilleures et renvoyer sur investissement. Les points de terminaison sont consolidés dans les catégories ci-dessus en fonction de la sensibilité de l’expérience utilisateur efficace à l’enveloppe de volume, la qualité et les performances réseau des scénarios et faciliter la mise en œuvre. Optimisations recommandées peuvent être appliquées à la même manière pour tous les points de terminaison dans une catégorie donnée.
   
 - **Optimisation** de points de terminaison sont requis pour la connectivité à tous les services Office 365 et représentent plus de 75 % de la bande passante, les connexions et les volumes de données Office 365. Ces points de terminaison représentent des scénarios Office 365 qui sont les plus sensibles aux performances et la disponibilité, la latence du réseau. Tous les points de terminaison sont hébergées dans des centres de données Microsoft. Le taux de modifications effectuées sur les points de terminaison de cette catégorie est censé être très inférieur à celui pour les points de terminaison dans les deux autres catégories. Cette catégorie inclut un ensemble très petit (l’ordre de 10) d’URL et un ensemble défini de sous-réseaux IP dédiées à des charges de travail principaux Office 365 tels que Exchange Online, SharePoint Online, Skype pour Business Online et Microsoft Teams la clé.
 

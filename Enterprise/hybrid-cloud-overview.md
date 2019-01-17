@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: 'Résumé : Comprendre la définition et les éléments du cloud hybride Microsoft.'
-ms.openlocfilehash: 04c1a80009b1136ae4575ea4d454cebdb26bed3c
-ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
+ms.openlocfilehash: 21f107c9f096e90cd0eb1dfc17f14431dec54a73
+ms.sourcegitcommit: c5ee713709d76f519cb77de0e12c435d8409f571
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123311"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28327346"
 ---
 # <a name="hybrid-cloud-overview"></a>Présentation du cloud hybride
 
@@ -79,7 +79,7 @@ Vous devez tenir compte des éléments suivants lorsque vous planifiez et implé
     
 - Sécurité
     
-    Dans le cadre de scénarios cloud hybrides, la sécurité inclut la protection et la gestion de vos identités, la protection des données, la gestion des privilèges d'administrateur, la sensibilisation aux menaces et l'implémentation de stratégies de gouvernance et de sécurité. Pour plus d'informations, voir [Sécurité cloud Microsoft pour les architectes d'entreprise](https://technet.microsoft.com/library/dn919927.aspx#security).
+    Dans le cadre de scénarios cloud hybrides, la sécurité inclut la protection et la gestion de vos identités, la protection des données, la gestion des privilèges d'administrateur, la sensibilisation aux menaces et l'implémentation de stratégies de gouvernance et de sécurité. Pour plus d'informations, voir [Sécurité cloud Microsoft pour les architectes d'entreprise](microsoft-cloud-it-architecture-resources.md#security).
     
 - Gestion
     

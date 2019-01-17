@@ -3,7 +3,6 @@ title: Afficher les erreurs de synchronisation d’annuaire dans Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,16 +16,16 @@ search.appverid:
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
 description: Découvrez comment afficher les erreurs de synchronisation d’annuaires dans le centre d’administration Office 365.
-ms.openlocfilehash: 62f1135568261eccf0e7e66b78c5aaff966c7281
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 8beeeebbb24936abd7c93f4c04c0fa4e27c85c12
+ms.sourcegitcommit: c5ee713709d76f519cb77de0e12c435d8409f571
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540475"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28327336"
 ---
 # <a name="view-directory-synchronization-errors-in-office-365"></a>Afficher les erreurs de synchronisation d’annuaire dans Office 365
 
-Vous pouvez afficher les erreurs de synchronisation d’annuaires dans le centre d’administration d’Office 365. Uniquement les erreurs d’objet utilisateur sont affichés. Pour afficher les erreurs à l’aide de PowerShell, voir [objets identifier avec DirSyncProvisioningErrors](https://go.microsoft.com/fwlink/p/?LinkId=798300).
+Vous pouvez afficher les erreurs de synchronisation d’annuaires dans le centre d’administration d’Office 365. Uniquement les erreurs d’objet utilisateur sont affichés. Pour afficher les erreurs à l’aide de PowerShell, voir [objets identifier avec DirSyncProvisioningErrors](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency).
 
 Après l’affichage, voir [résolution des problèmes de synchronisation d’annuaires pour Office 365](fix-problems-with-directory-synchronization.md) pour corriger les problèmes identifiés.
   
@@ -34,7 +33,7 @@ Après l’affichage, voir [résolution des problèmes de synchronisation d’an
 
 Pour afficher les erreurs dans le centre d’administration :
   
-1. Connectez-vous à Office 365 avec votre compte professionnel ou scolaire. 
+1. Connectez-vous à Office 365 à l'aide de votre compte professionnel ou scolaire. 
     
 2. Accédez au [Centre d’administration sur Office 365](https://support.office.com/article/758befc4-0888-4009-9f14-0d147402fd23).
     

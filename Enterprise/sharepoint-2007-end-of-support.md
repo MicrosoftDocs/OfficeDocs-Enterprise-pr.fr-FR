@@ -3,7 +3,7 @@ title: Feuille de route pour la fin de l’assistance pour SharePoint Server 20
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 1/31/2018
+ms.date: 01/28/2019
 ms.audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -32,12 +32,12 @@ search.appverid:
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
 description: Sur 10 octobre 2017, prise en charge s’est terminée pour SharePoint Server 2007. Lisez cet article pour en savoir plus sur les options de mise à niveau, résoudre les problèmes, meilleures pratiques, configuration système requise, la mise à niveau et comment obtenir de l’aide de Microsoft Partners.
-ms.openlocfilehash: b548e7623a72d57793c18409a80506bb832df858
-ms.sourcegitcommit: a9c84d02e94c99ff6b1099b4a9ae695be08210e2
+ms.openlocfilehash: b0d3eda690733b45ee82054e145642a5c76125d5
+ms.sourcegitcommit: 792fe2ccc860517fe3dcbc9c668bae97f39ae7c8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "21169796"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29604515"
 ---
 # <a name="sharepoint-server-2007-end-of-support-roadmap"></a>Feuille de route pour la fin de l’assistance pour SharePoint Server 2007
 
@@ -60,7 +60,7 @@ Si votre batterie de serveurs SharePoint Server 2007 sera toujours opérationnel
 > [!TIP]
 > Si vous n’avez pas déjà planifié pour la migration ou mise à niveau, consultez : [options de migration de SharePoint 2007 à prendre en compte](sharepoint-2007-migration-options.md)pour obtenir des exemples d’où commencer. Vous pouvez également rechercher des [Partenaires Microsoft](https://go.microsoft.com/fwlink/?linkid=841249) qui peut aider avec la mise à niveau ou la migration vers Office 365 (ou les deux). 
   
-Pour plus d’informations sur les serveurs Office 2007 a atteint la fin de la prise en charge, voir [planifier votre mise à niveau pour les serveurs Office 2007](https://support.office.com/article/4e5eab5f-05db-4627-9e17-421a6bf89606.aspx).
+Pour plus d’informations sur les serveurs Office 2007 a atteint la fin de la prise en charge, voir les [ressources pour vous aider à mettre à niveau à partir d’Office 2007 de serveurs et de clients](upgrade-from-office-2007-servers-and-products.md).
   
 ## <a name="what-are-my-options"></a>Quelles sont mes options ?
 
@@ -68,9 +68,9 @@ Le premier taquet doit être le [site du cycle de vie du produit](https://go.mic
   
 |**Bonne**|**Meilleure**|**Idéale**|
 |:-----|:-----|:-----|
-|SharePoint Server 2010  <br/> |SharePoint Server 2013  <br/> |SharePoint Online  <br/> |
-||Environnement hybride SharePoint  <br/> |SharePoint Server 2016  <br/> |
-|||Environnement hybride SharePoint  <br/> |
+|SharePoint Server 2010  <br/> |SharePoint Server 2013  <br/> |SharePoint Online  <br/> |
+||Environnement hybride SharePoint  <br/> |SharePoint Server 2016  <br/> |
+|||Environnement hybride SharePoint  <br/> |
    
 Si vous choisissez options sur le début de l’échelle (suffisant), n’oubliez pas que vous devrez commencer la planification de mise à niveau très peu après la migration à partir de SharePoint Server 2007 est terminée. (fin du support pour SharePoint Server 2007 est du 10 octobre 2017. Notez que les dates sont sujettes à modification et vérifiez le [site du cycle de vie du produit](https://support.microsoft.com/en-us/lifecycle).)
   
@@ -104,7 +104,7 @@ Lors de la migration vers Office 365, le déplacement unique aura un coût plus 
 
 Assurez-vous que SharePoint Online comprend toutes les fonctionnalités que vous avez besoin en consultant la description de service associé. Voici le lien vers toutes les Descriptions du Service Office 365 :
   
-[Descriptions du Service Office 365](https://go.microsoft.com/fwlink/?linkid=272060)
+[Descriptions des services Office 365](https://go.microsoft.com/fwlink/?linkid=272060)
   
 Il n’existe aucun moyen direct de migrer à partir de SharePoint 2007 vers SharePoint Online ; migrer vers SharePoint Online doit être effectuée manuellement. Si vous mettez à niveau vers SharePoint Server 2013 ou SharePoint Server 2016, votre déplacement peut impliquer également à l’aide de l’API de Migration de SharePoint (pour migrer des informations dans OneDrive entreprise, par exemple).
   
@@ -122,7 +122,7 @@ Il n’existe aucun moyen direct de migrer à partir de SharePoint 2007 vers Sha
    
 Si vous avez décidé de créer un nouveau site Office 365 et serez migrer manuellement les données lui nécessaire, vous pouvez consulter vos droits options Office 365 ici :
   
-[Options de plan Office 365](https://go.microsoft.com/fwlink/?linkid=843151)
+[Options de plan Office 365](https://go.microsoft.com/fwlink/?linkid=843151)
   
 ### <a name="upgrade-sharepoint-server-on-premises"></a>Mise à niveau de SharePoint Server sur site
 
@@ -130,7 +130,7 @@ Il n’est toujours aucun moyen d’ignorer les versions de mises à niveau de S
   
 |||
 |:-----|:-----|
-||SharePoint 2007 | SharePoint Server 2010 | SharePoint Server 2013 | SharePoint Server 2016 |
+||SharePoint 2007 | SharePoint Server 2010 | SharePoint Server 2013 | SharePoint Server 2016 |
    
 À prendre le chemin d’accès complet à partir de SharePoint 2007 vers SharePoint Server 2016 implique un investissement considérable de temps et implique un coût en termes de matériel mis à niveau (à l’esprit que SQL Server doit également être mis à niveau), logiciel et administration. Personnalisations doit être mis à niveau ou abandonnés, en fonction de l’importance de la fonctionnalité.
   
@@ -150,7 +150,7 @@ N’oubliez pas passer en revue les **chemins de mise à niveau pris en charge e
     
 Si vous avez des **personnalisations**, il est essentiel de qu'avoir un plan de mise à niveau pour chaque étape dans le chemin de migration : 
   
-- [SharePoint 2007](https://go.microsoft.com/fwlink/?linkid=843158)
+- [SharePoint 2007](https://go.microsoft.com/fwlink/?linkid=843158)
     
 - [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843160)
     

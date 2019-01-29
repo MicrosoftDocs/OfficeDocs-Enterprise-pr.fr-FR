@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Les clients Office 365 existants devront envoyer une demande avant la date d'échéance de leur pays afin que les données client de leurs services Office 365 soient déplacées vers leur nouvelle région.
-ms.openlocfilehash: d66818590a7972dc67832f55a3fdb3f2a9adf99c
-ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
+ms.openlocfilehash: 15edbb41c14a1b3061d0d1923eeec4defab58a7b
+ms.sourcegitcommit: 792fe2ccc860517fe3dcbc9c668bae97f39ae7c8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839572"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29604505"
 ---
 # <a name="how-to-request-your-data-move"></a>Procédure de demande d'un déplacement de données
 
@@ -80,7 +80,7 @@ Après avoir fait une demande de déplacement, vous ne pouvez pas modifier votre
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Teams Microsoft ne prend pas en charge la migration de contenu client au repos à partir de dans la région pour les centres de données dans le pays où la délégation de données pour Microsoft Teams est disponible.  Par conséquent, seuls les nouveaux clients auront toutes leurs données stockées dans des pays dans les nouvelles régions où Teams Microsoft prend en charge la délégation de données.  Pour plus d’informations sur la délégation de données Office 365 pour l’emplacement de votre société à [où se trouvent vos données situées ?](https://office/com/datamaps)   
+Teams Microsoft ne prend pas en charge la migration de contenu client au repos à partir de dans la région pour les centres de données dans le pays où la délégation de données pour Microsoft Teams est disponible.  Par conséquent, seuls les nouveaux clients auront toutes leurs données stockées dans des pays dans les nouvelles régions où Teams Microsoft prend en charge la délégation de données.  Pour plus d’informations sur la délégation de données Office 365 pour l’emplacement de votre société à [où se trouvent vos données situées ?](https://products.office.com/where-is-your-data-located)   
 
 ## <a name="optional-actions-before-you-request-a-move"></a>Actions facultatives avant d’effectuer une demande de déplacement
 

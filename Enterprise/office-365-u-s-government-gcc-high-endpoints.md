@@ -3,7 +3,7 @@ title: Points de terminaison US gouvernement GCC haute Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/17/2019
+ms.date: 01/28/2019
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid: MET150
 ms.assetid: cbd2369c-fd96-464c-bf48-c99826b459ee
 description: Si votre organisation utilise Office 365 et se limite aux ordinateurs de votre réseau de se connecter à Internet, vous trouverez ci-dessous les points de terminaison (noms de domaine complets, Ports, URL, IPv4 et IPv6 de plages d’adresses) que vous devez inclure dans votre sortant autoriser les listes vérifier votre les ordinateurs peuvent utiliser Office 365.
 hideEdit: true
-ms.openlocfilehash: 5c849775c8fd55d9e4196ebad6c55cdf56d2ab60
-ms.sourcegitcommit: 0c4f50aa55699b8390038efbb8b50dbe10f3eefe
+ms.openlocfilehash: b40e38b1adeedc49e175e3d901b1283688de17e1
+ms.sourcegitcommit: 51cb8941a15f6d77b85f47cdf95822ae00d8f7e6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28723381"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29612125"
 ---
 # <a name="office-365-us-government-gcc-high-endpoints"></a>Points de terminaison US gouvernement GCC haute Office 365
 
@@ -34,7 +34,7 @@ ms.locfileid: "28723381"
   
 |||
 |:-----|:-----|
-|**Dernière mise à jour :** 01/17/2019 - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [abonnement du journal des modifications](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Télécharger :** la liste complète au [format JSON](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
+|**Dernière mise à jour :** 01/28/2019 - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [abonnement du journal des modifications](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Télécharger :** la liste complète au [format JSON](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
    
  Commencer avec les [systèmes d’extrémité gérer Office 365](managing-office-365-endpoints.md) à comprendre nos recommandations pour la gestion de la connectivité réseau à l’aide de ces données. Données de points de terminaison sont mis à jour au début de chaque mois avec de nouvelles adresses IP et les URL publiées 30 jours avant active. Cela permet aux clients ayant mais pas encore ont des mises à jour pour effectuer leurs processus avant nouvelle connectivité automatisées. Points de terminaison peuvent également être mis à jour au cours du mois si nécessaire pour permettre l’escalade prise en charge, incidents de sécurité ou autres exigences opérationnelles immédiates. Les données affichées sur cette page ci-dessous sont générées à partir des services web basées sur REST. Si vous utilisez un script ou un périphérique réseau pour accéder à ces données, vous devez introduire directement au [service Web](office-365-ip-web-service.md) .
 

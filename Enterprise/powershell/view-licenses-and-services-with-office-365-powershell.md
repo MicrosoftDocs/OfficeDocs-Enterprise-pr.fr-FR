@@ -16,12 +16,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: Explique comment utiliser Office 365 PowerShell pour afficher des informations sur les plans de licences, les services et les licences sont disponibles dans votre organisation Office 365.
-ms.openlocfilehash: 8efc123e2820560b4bd8547f4c99bccae242956f
-ms.sourcegitcommit: 96313c3c812bae47819f603af995839f4da034c5
+ms.openlocfilehash: bce181445523a2f043caa932f3d4e0ddd81d89cc
+ms.sourcegitcommit: 6826e0ea4a777f7d98500209a9d3bc75e89f8d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "27786150"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29651208"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Afficher les licences et les services avec Office 365 PowerShell
 
@@ -50,7 +50,7 @@ Get-AzureADSubscribedSku | Select -Property Sku*,ConsumedUnits -ExpandProperty P
 
 Les résultats contiennent les informations suivantes :
   
-- **SkuPartNumber :** Affiche les plans de gestion de licences disponibles pour votre organisation. Par exemple, `ENTERPRISEPACK` est le nom du système pour Office 365 entreprise E3.
+- **SkuPartNumber :** Affiche les plans de gestion de licences disponibles pour votre organisation. Par exemple, `ENTERPRISEPACK` est le nom du plan de licence pour Office 365 entreprise E3.
     
 - **Activé :** Nombre de licences que vous avez achetées pour un plan de gestion des licences spécifique.
     
@@ -74,7 +74,7 @@ Ensuite, afficher les services dans un plan de licences spécifiques.
 $licenses[<index>].ServicePlans
 ````
 
-\<Index > est un entier qui spécifie le numéro de ligne de la licence de planification de l’affichage de la `Get-AzureADSubscribedSku | Select SkuPartNumber` command, moins 1.
+\<index> est un entier qui spécifie le numéro de ligne de la licence de planification de l’affichage de la `Get-AzureADSubscribedSku | Select SkuPartNumber` command, moins 1.
 
 Par exemple, si l’affichage de la `Get-AzureADSubscribedSku | Select SkuPartNumber` commande s’agit-il :
 
@@ -132,11 +132,11 @@ Le tableau suivant indique les plans de service Office 365 et leurs noms convivi
 |**Plan de service**|**Description**|
 |:-----|:-----|
 | `SWAY` <br/> |Sway  <br/> |
-| `TEAMS1` <br/> |Microsoft Teams  <br/> |
+| `TEAMS1` <br/> |Microsoft Teams  <br/> |
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Office Professionnel Plus  <br/> |
-| `MCOSTANDARD` <br/> |Skype Entreprise Online  <br/> |
+| `MCOSTANDARD` <br/> |Skype Entreprise Online  <br/> |
 | `SHAREPOINTWAC` <br/> |Office Online  <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online Plan 2  <br/> |

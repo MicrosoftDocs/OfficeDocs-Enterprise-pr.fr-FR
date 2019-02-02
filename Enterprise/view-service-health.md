@@ -20,12 +20,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Afficher l’état des services Office 365 avant d’appeler la prise en charge pour voir s’il existe une interruption de service active
-ms.openlocfilehash: 7e04e1309c990ccced67663576285f7276603ccc
-ms.sourcegitcommit: 6826e0ea4a777f7d98500209a9d3bc75e89f8d15
+ms.openlocfilehash: 52a7b762b8e86c3e538579f7c1e1611515469389
+ms.sourcegitcommit: c7ad181394a8a3ee261dc44e7a1e70f6ebe7cbcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29651186"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29696351"
 ---
 # <a name="how-to-check-office-365-service-health"></a>Vérifier l'état du service Office 365
 
@@ -108,7 +108,7 @@ En règle générale, les services apparaissent comme intègres, sans autres inf
    
 ## <a name="history"></a>Historique
 
-L'état du service vous permet d'examiner son état actuel et d'afficher l'historique des avis et incidents liés aux différents services au cours des 30 derniers jours. Pour afficher l'état passé de tous les services, sélectionnez **Afficher l'historique** sur la page **État du Service**. 
+Intégrité du service vous permet de consulter l’état d’intégrité actuel et afficher l’historique des incidents ont des conséquences sur votre client au cours des 30 derniers jours et conseils de service. Pour afficher la derniers d’intégrité de tous les services, sélectionnez **Afficher l’historique** sur la page **intégrité du Service** . 
   
 ![Show link to health history](media/12a3e484-1eb4-497f-8cab-8064bccc2ef5.png)
   

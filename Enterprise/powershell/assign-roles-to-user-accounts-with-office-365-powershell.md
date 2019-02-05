@@ -3,7 +3,7 @@ title: Attribuer des rôles à des comptes d’utilisateur avec Office 365 Pow
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 01/31/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,24 +14,58 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
-description: "Résumé : Utilisez Office 365 PowerShell et la cmdlet Add-MsolRoleMember pour attribuer des rôles aux comptes d'utilisateur."
-ms.openlocfilehash: 2af4409020cc4a4e3dd6ff3b8bfcf5f1138f26cd
-ms.sourcegitcommit: 3b474e0b9f0c12bb02f8439fb42b80c2f4798ce1
+description: 'Résumé : Utilisation d’Office 365 PowerShell pour attribuer des rôles à des comptes d’utilisateur.'
+ms.openlocfilehash: 702c7358ccca9bb36bd106d742b5c454283ee8b4
+ms.sourcegitcommit: d0c870c7a487eda48b11f649b30e4818fd5608aa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29690435"
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>Attribuer des rôles à des comptes d’utilisateur avec Office 365 PowerShell
 
- **Résumé :** Utilisez Office 365 PowerShell et la cmdlet **Add-MsolRoleMember** pour attribuer des rôles aux comptes d'utilisateur.
-  
-Vous pouvez rapidement et facilement attribuer des rôles aux comptes d'utilisateur à l'aide de Office 365 PowerShell en identifiant le nom d'affichage du compte d'utilisateur et le nom du rôle.
-  
-## <a name="before-you-begin"></a>Avant de commencer
+Vous pouvez rapidement et facilement attribuer des rôles à des comptes d’utilisateur à l’aide d’Office 365 PowerShell.
 
-Les procédures décrites dans cette rubrique exigent une connexion à Office 365 PowerShell à l'aide d'un compte d'administrateur global. Pour plus d'informations, reportez-vous à [Se connecter à Office 365 PowerShell](connect-to-office-365-powershell.md).
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Utilisation du module Azure Active Directory PowerShell pour Graph
+
+Tout d’abord, [connectez-vous à votre client Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module) avec un compte d’administrateur général.
   
-## <a name="for-a-single-role-change"></a>Pour une seule modification de rôle
+Ensuite, déterminez le nom de connexion du compte d’utilisateur que vous souhaitez ajouter à un rôle (exemple : fredsm@contoso.com). On l’appelle aussi nom d’utilisateur principal (UPN).
+
+Ensuite, déterminez le nom du rôle. Utilisez cette commande pour répertorier les rôles que vous pouvez attribuer avec PowerShell.
+
+````
+Get-AzureADDirectoryRole
+````
+
+Ensuite, renseignez les noms de connexion et de rôle, et exécutez ces commandes.
+  
+```
+$userName="<sign-in name of the account>"
+$roleName="<role name>"
+Add-AzureADDirectoryRoleMember -ObjectId (Get-AzureADDirectoryRole | Where {$_.DisplayName -eq $roleName}).ObjectID -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
+```
+
+Voici un exemple d’un jeu de commandes terminées :
+  
+```
+$userName="belindan@contoso.com"
+$roleName="Lync Service Administrator"
+Add-AzureADDirectoryRoleMember -ObjectId (Get-AzureADDirectoryRole | Where {$_.DisplayName -eq $roleName}).ObjectID -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
+```
+
+Pour afficher la liste des noms d’utilisateur pour un rôle spécifique, utilisez ces commandes.
+
+```
+$roleName="<role name>"
+Get-AzureADDirectoryRole | Where { $_.DisplayName -eq $roleName } | Get-AzureADDirectoryRoleMember | Ft DisplayName
+```
+
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Utilisez le module Microsoft Azure Active Directory pour Windows PowerShell.
+
+Tout d’abord, [connectez-vous à votre client Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell) avec un compte d’administrateur général.
+  
+### <a name="for-a-single-role-change"></a>Pour une seule modification de rôle
 
 Déterminez les éléments suivants :
   
@@ -77,7 +111,7 @@ $roleName="SharePoint Service Administrator"
 Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
 ```
 
-## <a name="for-multiple-role-changes"></a>Pour plusieurs modifications de rôle
+### <a name="for-multiple-role-changes"></a>Pour plusieurs modifications de rôle
 
 Déterminez les éléments suivants :
   
@@ -105,7 +139,7 @@ Déterminez les éléments suivants :
   Get-MsolRole | Sort Name | Select Name,Description
   ```
 
-Ensuite, créez un fichier texte de valeurs séparées par des virgules (CSV) qui contient les champs DisplayName et role Name. Voici un exemple :
+Ensuite, créez un fichier texte de valeurs séparées par des virgules (CSV) ayant les champs DisplayName et Name de rôle. Voici un exemple :
   
 ```
 DisplayName,RoleName
@@ -117,7 +151,7 @@ DisplayName,RoleName
 Ensuite, remplissez l’emplacement du fichier CSV et exécutez les commandes qui en résultent à l’invite de commande PowerShell.
   
 ```
-$fileName="<path and file name of the input CSV file that contains the role changes, example: C:\admin\RoleUpdates.CSV>"
+$fileName="<path and file name of the input CSV file that has the role changes, example: C:\admin\RoleUpdates.CSV>"
 $roleChanges=Import-Csv $fileName | ForEach {Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser | Where DisplayName -eq $_.DisplayName).UserPrincipalName -RoleName $_.RoleName }
 
 ```
@@ -127,4 +161,3 @@ $roleChanges=Import-Csv $fileName | ForEach {Add-MsolRoleMember -RoleMemberEmail
 - [Gérer les comptes d'utilisateurs et les licences avec Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
 - [Gérer Office 365 avec Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
 - [Mise en route d'Office 365 Powershell](getting-started-with-office-365-powershell.md)
-- [Add-MsolRoleMember](https://msdn.microsoft.com/library/dn194120.aspx)

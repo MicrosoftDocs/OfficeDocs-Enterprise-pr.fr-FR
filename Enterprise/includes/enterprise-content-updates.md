@@ -3,13 +3,6 @@
 
 
 
-## <a name="week-of-december-24-2018"></a>Semaine du 24 décembre 2018,
-
-
-| Publié le |Titre de la rubrique | Modification |
-|------|------------|--------|
-
-
 ## <a name="week-of-december-31-2018"></a>Semaine du 31 décembre 2018,
 
 
@@ -47,7 +40,7 @@
 | 1/11/2019 | [Points de terminaison US gouvernement DoD Office 365](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | modifié |
 
 
-## <a name="week-of-january-14-2019"></a>Semaine du 14 janvier, 2019
+## <a name="week-of-january-14-2019"></a>Semaine du 14 janvier 2019
 
 
 | Publié le |Titre de la rubrique | Modification |
@@ -72,4 +65,25 @@
 | 1/25/2019 | [Utiliser PowerShell pour gérer les groupes Office 365](/Office365/Enterprise/manage-office-365-groups-with-powershell) | modifié |
 | 1/25/2019 | [Déplacer un site OneDrive vers un autre emplacement géographique](/Office365/Enterprise/move-onedrive-between-geo-locations) | modifié |
 | 1/25/2019 | [Utiliser le réseau de distribution de contenu Office 365 avec SharePoint Online](/Office365/Enterprise/use-office-365-cdn-with-spo) | modifié |
-| 1/25/2019 | [Configurer la synchronisation d’annuaires pour Office 365](/Office365/Enterprise/set-up-directory-synchronization) | Modifié le |
+| 1/25/2019 | [Configurer la synchronisation d’annuaires pour Office 365](/Office365/Enterprise/set-up-directory-synchronization) | modifié |
+
+
+## <a name="week-of-january-28-2019"></a>Semaine du 28 janvier, 2019
+
+
+| Publié le |Titre de la rubrique | Modification |
+|------|------------|--------|
+| 1/28/2019 | [Conseillers de déploiement pour les services Office 365](/Office365/Enterprise/deployment-advisors-for-office-365) | modifié |
+| 1/28/2019 | [Procédure de demande d’un déplacement de données](/Office365/Enterprise/request-your-data-move) | modifié |
+| 1/28/2019 | [Feuille de route pour la fin de l’assistance pour SharePoint Server 2007](/Office365/Enterprise/sharepoint-2007-end-of-support) | modifié |
+| 1/29/2019 | [Points de terminaison US gouvernement DoD Office 365](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | modifié |
+| 1/29/2019 | [Points de terminaison US gouvernement GCC haute Office 365](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | modifié |
+| 1/29/2019 | [URL et plages d’adresses IP Office 365](/Office365/Enterprise/urls-and-ip-address-ranges) | modifié |
+| 1/30/2019 | [Préparer votre organisation pour Office 365 Entreprise](/Office365/Enterprise/get-your-organization-ready-for-office-365)
+ | modifié |
+| 1/30/2019 | [Attribuer des licences à des comptes d'utilisateurs avec Office 365 PowerShell](/Office365/Enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell) | modifié |
+| 1/30/2019 | [Supprimer des licences à des comptes d'utilisateurs avec Office 365 PowerShell](/Office365/Enterprise/powershell/remove-licenses-from-user-accounts-with-office-365-powershell) | modifié |
+| 1/30/2019 | [Afficher les licences et les services avec Office 365 PowerShell](/Office365/Enterprise/powershell/view-licenses-and-services-with-office-365-powershell) | modifié |
+| 1/30/2019 | [Vérifier l'état du service Office 365](/Office365/Enterprise/view-service-health) | modifié |
+| 1/31/2019 | [Attribuer des rôles à des comptes d'utilisateur avec Office 365 PowerShell](/Office365/Enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell) | modifié |
+| 1/2/2019 | [Vérifier l'état du service Office 365](/Office365/Enterprise/view-service-health) | Modifié le |

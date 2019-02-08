@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: ExpressRoute pour Office 365 offre une connectivité de couche 3 entre le réseau et les centres de données de Microsoft. Les circuits utilisent les annonces de routage protocole BGP (Border Gateway) de serveurs frontaux d’Office 365. Du point de vue de vos périphériques locales, lorsqu’ils souhaitent sélectionnez le chemin d’accès correct du TCP/IP vers Office 365, ExpressRoute Azure est considérée comme une alternative à Internet.
-ms.openlocfilehash: 79cad16a619f048d1ba98b6058127f901211344d
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 7a2c9cb8ee562c0527416aa83184de90cd204476
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540574"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897227"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Planification de réseau avec ExpressRoute pour Office 365
 
@@ -34,11 +34,11 @@ Le tableau suivant présente quelques différences entre internet et les connexi
 |**Différences dans la planification du réseau**|**Connexion réseau à Internet**|**Connexion de réseau ExpressRoute**|
 |:-----|:-----|:-----|
 | Accès aux services internet requis, y compris ;  <br/>  Résolution de noms DNS  <br/>  Vérification de révocation de certificats  <br/>  Réseaux de distribution de contenu  <br/> |Oui  <br/> |La propriété infrastructure DNS et/ou CDN peut-être utiliser le réseau de ExpressRoute demandes à Microsoft.  <br/> |
-| Accès aux services Office 365, y compris ;  <br/>  Exchange Online  <br/>  SharePoint Online  <br/>  Skype Entreprise Online  <br/>  Office Online  <br/>  L’authentification et le portail office 365  <br/> |Oui, toutes les applications et fonctionnalités  <br/> |Oui, [applications et fonctionnalités spécifiques](https://aka.ms/o365endpoints) <br/> |
-|Sécurité au niveau du périmètre sur site.  <br/> |Oui  <br/> |Oui  <br/> |
+| Accès aux services Office 365, y compris ;  <br/>  Exchange Online  <br/>  SharePoint Online  <br/>  Skype Entreprise Online  <br/>  Office Online  <br/>  L’authentification et le portail office 365  <br/> |Oui, toutes les applications et fonctionnalités  <br/> |Oui, [applications et fonctionnalités spécifiques](https://aka.ms/o365endpoints) <br/> |
+|Sécurité au niveau du périmètre sur site.  <br/> |Oui  <br/> |Non  <br/> |
 |Planification de la haute disponibilité.  <br/> |Basculement vers une autre connexion réseau  <br/> |Basculement vers une autre connexion ExpressRoute  <br/> |
 |Connexion directe avec un profil de réseau prévisible.  <br/> |Non  <br/> |Oui  <br/> |
-|Connectivité IPv6.  <br/> |Oui  <br/> |Oui  <br/> |
+|Connectivité IPv6.  <br/> |Oui  <br/> |Non  <br/> |
 
 Développez les titres ci-dessous pour plus d’instructions de planification du réseau. Que nous avons également enregistrées une série de [ExpressRoute Azure pour Office 365 formation](https://channel9.msdn.com/series/aer) 10 parties qui ouvre plus approfondie.
 
@@ -185,7 +185,7 @@ Choisissez les emplacements de vos circuits en fonction de votre bande passante,
   
 Travailler avec votre ou les fournisseurs pour sélectionner les meilleures options de connectivité, point à point, multipoint ou hébergé. N’oubliez pas, vous pouvez combiner et correspondent aux options de connectivité pour que votre conception de disponibilité élevée et de routage de prise en charge de la bande passante et autres composants redondants.
   
-Voici un lien court, que vous pouvez utiliser pour revenir :[https://aka.ms/planningexpressroute365](https://aka.ms/planningexpressroute365)
+Voici un lien que vous pouvez utiliser pour revenir : [https://aka.ms/planningexpressroute365](https://aka.ms/planningexpressroute365)
   
 ## <a name="related-topics"></a>Voir aussi
 <a name="BKMK_high-availability"> </a>
@@ -200,15 +200,15 @@ Voici un lien court, que vous pouvez utiliser pour revenir :[https://aka.ms/pla
   
 [Implémentation d’ExpressRoute pour Office 365](implementing-expressroute.md)
   
-[Utilisation de communautés BGP dans ExpressRoute pour les scénarios d’Office 365 (preview)](bgp-communities-in-expressroute.md)
+[Scénarios d’utilisation des communautés BGP dans ExpressRoute pour Office 365 (aperçu)](bgp-communities-in-expressroute.md)
   
-[La qualité des médias et des performances pour la connectivité réseau dans Skype pour les entreprises en ligne](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
+[Qualité des médias et performances de connectivité réseau dans Skype Entreprise Online](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   
-[Optimisation de votre réseau pour Skype pour Business Online](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
+[Optimisation de votre réseau pour Skype Entreprise Online](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
   
-[ExpressRoute et QoS dans Skype pour les entreprises en ligne](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
+[ExpressRoute et QoS dans Skype Entreprise Online](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
   
-[Flux des appels à l’aide de ExpressRoute](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
+[Appel du flux à l’aide d’ExpressRoute](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
   
 [Réglage des performances Office 365 à l’aide du planning de référence et de l’historique des performances](performance-tuning-using-baselines-and-history.md)
   
@@ -216,6 +216,6 @@ Voici un lien court, que vous pouvez utiliser pour revenir :[https://aka.ms/pla
   
 [URL et plages d’adresses IP Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
-[Réseau Office 365 et réglage des performances](network-planning-and-performance.md)
+[Paramétrage des performances et du réseau Office 365](network-planning-and-performance.md)
   
-[Points de terminaison Office 365 FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
+[Points de terminaison Office 365 - FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)

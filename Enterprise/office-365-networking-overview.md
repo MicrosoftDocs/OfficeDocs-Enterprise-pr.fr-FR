@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Explique pourquoi l’optimisation du réseau est importante pour les services SaaS, l’objectif de mise en réseau Office 365, et comment SaaS requiert différents réseau à partir d’autres charges de travail.
-ms.openlocfilehash: ebd7410ec5fe421561543f1223e455377e99e625
-ms.sourcegitcommit: 09985cb7894725289ef1fc8ddd90b569c285c09e
+ms.openlocfilehash: 4acaee86136c88e5ac5b3c795f594fb056d15204
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "25002353"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897207"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Vue d’ensemble de connectivité de réseau Office 365
 
@@ -84,7 +84,7 @@ L’architecture de sortie local présente les avantages suivants pour le trafic
 > [!NOTE]
 > L’infrastructure _distribuée porte de Service_ est côté du réseau hautement disponible et évolutif du réseau Global Microsoft avec réparties géographiquement. Elle met fin à des connexions de l’utilisateur final et les achemine efficacement au sein du réseau Global Microsoft. Pour plus d’informations sur le réseau Global Microsoft [comment Microsoft crée son réseau global rapides et fiables](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
 
-Pour plus d’informations sur la présentation et l’application des principes de connectivité réseau Office 365, voir [Principes de connectivité réseau Office 365](office-365-network-connectivity-principles#office-365-connectivity-principles).
+Pour plus d’informations sur la présentation et l’application des principes de connectivité réseau Office 365, voir [Principes de connectivité réseau Office 365](office-365-network-connectivity-principles.md).
 
 ## <a name="conclusion"></a>Conclusion
 

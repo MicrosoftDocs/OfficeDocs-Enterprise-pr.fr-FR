@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 89d9feee-2285-419c-8c14-0f7f583536e0
 description: PerformancePoint Server 2007, ProClarity et SharePoint Server 2007 ont atteint la fin de la prise en charge. Lisez cet article pour planifier votre mise à niveau de la solution BI.
-ms.openlocfilehash: 219349a85f14ddf10058c853d69b58a52bb0d1cc
-ms.sourcegitcommit: ca4d3ec34300d7d39f1a42dc6f29a34915de5c87
+ms.openlocfilehash: 03db75b38bfaa32df20eafb8ede745e403bc964f
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "23831909"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "26617877"
 ---
 # <a name="performancepoint-server-2007-end-of-support-roadmap"></a>Feuille de route pour la fin de l’assistance pour PerformancePoint Server 2007
 
@@ -139,7 +139,7 @@ Pour démarrer votre plan de mise à niveau de PerformancePoint Services, voir l
     
   - [Vue d’ensemble de PerformancePoint Services dans SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=841551)
     
-  - [Vue d'ensemble de PerformancePoint Services dans SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=874704)
+  - [Vue d’ensemble de PerformancePoint Services dans SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=874704)
     
 Lorsque vous mettez à niveau vers PerformancePoint Services, vous apprécierez plusieurs nouvelles fonctionnalités et améliorations. PerformancePoint Services offre des cartes de performance améliorées, nouvelles visualisations, telles que l’arbre de décomposition et rapport de détails des indicateurs de performance clés et plusieurs types de graphiques, meilleures fonctionnalités de filtrage Time Intelligence et conformité amélioration de l’accessibilité. Pour plus d’informations, voir [What ' s new for PerformancePoint Services (SharePoint Server 2010)](https://go.microsoft.com/fwlink/?linkid=841343).
   
@@ -152,5 +152,7 @@ Que vous soyez mise à niveau locale ou déplacement vers Office 365, il est rec
 [Ressources pour vous aider à mettre à niveau à partir d’Office 2007 de serveurs et de clients](upgrade-from-office-2007-servers-and-products.md)
   
 [Groupe de retraite Office (Communauté Microsoft Tech)](https://go.microsoft.com/fwlink/?linkid=842065)
+
+
   
 

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 48e16935-3429-456a-8fe6-50afa257924c
 description: 'Résumé : Découvrez comment créer un laboratoire de test intégré contenant un serveur qui exécute Exchange Server 2013, un serveur qui exécute Lync Server 2013 et un serveur qui exécute SharePoint Server 2013.'
-ms.openlocfilehash: bb668dcaff53f37127f43551cb4b108589a39def
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: b5d4527c063b0bfbac205007a9642b8edafd813b
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915599"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897047"
 ---
 # <a name="test-lab-guide-configure-an-integrated-exchange-lync-and-sharepoint-test-lab"></a>Guide de laboratoire de test : Configurer un laboratoire de test Exchange, Lync et SharePoint intégré
 
@@ -30,7 +30,7 @@ ms.locfileid: "22915599"
  
 Le laboratoire de test résultant de cette configuration, qui inclut l'authentification de serveur à serveur entre les trois types de serveurs, permet de créer et de faire la démonstration de scénarios et solutions multiproduits utilisant un serveur qui exécute Exchange Server 2013, un serveur qui exécute Lync Server 2013 et un serveur qui exécute SharePoint Server 2013.
   
-Ce document contient les instructions suivantes :
+Ce document contient des instructions pour :
   
 1. Configuration du laboratoire de test de configuration de base Windows Server 2012
     

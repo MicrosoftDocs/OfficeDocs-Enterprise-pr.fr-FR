@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: 'Résumé : Configurez les contrôleurs de domaine et le serveur DirSync pour votre authentification fédérée haute disponibilité pour Office 365 dans Microsoft Azure.'
-ms.openlocfilehash: 1e66403348bc2cd9a6dfab56f32735d62c986035
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 88e96c8173a209eb9a0a371b65eacda769e1f50f
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915149"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897217"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Authentification fédérée haute disponibilité, phase 2 : Configurer les contrôleurs de domaine
 
@@ -70,7 +70,7 @@ Rappel défini de Tables R, V, S, I et dans [haute disponibilité fédérés aut
 Lorsque vous avez indiqué toutes les valeurs correctes, exécutez le bloc résultant à l’invite de commandes Azure PowerShell ou dans l’environnement d'écriture de scripts intégré de Windows PowerShell (ISE) sur votre ordinateur local.
   
 > [!TIP]
-> Pour un fichier texte qui contient toutes les commandes PowerShell dans cet article et un classeur Microsoft Excel configuration qui génère des blocs de commande PowerShell prête à exécuter en fonction de vos paramètres personnalisés, voir l’authentification fédérée pour Office 365 [dans Kit de déploiement Azure](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
+> Pour un fichier texte contenant toutes les commandes PowerShell dans cet article et un classeur Microsoft Excel configuration qui génère des blocs de commande PowerShell prête à exécuter en fonction de vos paramètres personnalisés, voir l’authentification fédérée pour Office 365 [dans Azure Kit de déploiement](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
   
 ```
 # Set up variables common to both virtual machines

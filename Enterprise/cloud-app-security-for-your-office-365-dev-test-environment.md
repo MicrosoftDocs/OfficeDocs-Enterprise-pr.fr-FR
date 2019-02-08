@@ -16,18 +16,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: 'Résumé : Configurez et faites une démonstration de la sécurité des applications cloud Office 365 dans votre environnement de développement/test Office 365.'
-ms.openlocfilehash: 089b9771d0600f8c74bc7b4c30ff2a4931c93ae6
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 2c29e650233348e44bf72adcb8b18580e1de8802
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915759"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897057"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Sécurité des applications cloud pour votre environnement de développement/test Office 365
 
  **Résumé :** Configurez et faites une démonstration de la sécurité des applications cloud Office 365 dans votre environnement de développement/test Office 365.
   
-Office 365 Cloud application sécurité, anciennement appelé Office 365 gestion avancée de sécurité, vous permet de créer des stratégies pour surveiller et vous informent des activités suspectes dans votre abonnement Office 365, afin que vous pouvez examiner et prendre possibles mesures correctives. Pour plus d’informations, voir [Vue d’ensemble du nuage application sécurité dans Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475).
+Office 365 Cloud application sécurité, anciennement appelé Office 365 gestion avancée de sécurité, vous permet de créer des stratégies de surveiller et vous informent des activités suspectes dans votre abonnement Office 365, afin que vous pouvez examiner et prendre correction possible action. Pour plus d’informations, voir [Vue d’ensemble du nuage application sécurité dans Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475).
   
 Les instructions fournies dans cet article indiquent comment activer et tester la sécurité des applications cloud dans votre abonnement d’évaluation Office 365.
   
@@ -81,7 +81,7 @@ Cette procédure indique comment activer la sécurité des applications cloud et
 
 1. Accédez au portail Office 365 ([https://portal.office.com](https://portal.office.com)) et se connecter à votre abonnement d’évaluation d’Office 365 avec votre compte d’administrateur global.
     
-2. Cliquez sur la vignette de **l’administrateur** . Dans l’onglet **Centre d’administration d’Office** , cliquez sur **centres d’administration > sécurité et conformité**.
+2. Cliquez sur la vignette de **l’administrateur** . Sous l’onglet **Centre d’administration d’Office** , cliquez sur **Admin centres > sécurité & conformité**.
     
 3. Dans le volet de navigation de gauche, cliquez sur **Alertes > Gérer les alertes avancées**.
     

@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Découvrez comment déplacer un site OneDrive vers un autre emplacement géographique.
-ms.openlocfilehash: 258c562343875ff4ad115b81dba5338c79641dfc
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
+ms.openlocfilehash: 4d55ce087b475b9364a4e1584a1ac4947cc1ba85
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849850"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "29547132"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Déplacer un site OneDrive vers un autre emplacement géographique 
 
@@ -67,7 +67,7 @@ Avant de commencer un déplacement géographique OneDrive, nous vous recommandon
 
 Pour vous assurer que tous les emplacements géographiques sont compatibles, exécutez :
 
-`Get-SPOGeoMoveCompatibilityStatus -AllLocations 1`
+`Get-SPOGeoMoveCrossCompatibilityStatus`
 
 Si un site OneDrive se trouve sous conservation légale ou s’il contient un sous-site, il ne peut pas être déplacé. Vous pouvez utiliser la cmdlet Start-SPOUserAndContentMove avec le paramètre -ValidationOnly pour contrôler si le site OneDrive peut être déplacé :
 

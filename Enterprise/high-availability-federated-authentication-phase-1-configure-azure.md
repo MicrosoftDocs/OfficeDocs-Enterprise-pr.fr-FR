@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 'Résumé : Configurez l’infrastructure Microsoft Azure pour qu’elle héberge un authentification fédérée haute disponibilité pour Office 365.'
-ms.openlocfilehash: e88204d7f69c56c951f5d6ebd4d978c96e4c52ba
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: bbaefffb6bfa55d9af11e08c2011c7333cefe46e
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915459"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897477"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Authentification fédérée haute disponibilité, phase 1 : Configurer Azure
 
@@ -94,9 +94,9 @@ Pour deux serveurs DNS (Domain Name System) de votre réseau local que vous souh
    
  **Tableau D : serveurs DNS locaux**
   
-Pour acheminer les paquets du réseau virtuel intersites vers le réseau de votre organisation par le biais de la connexion VPN de site à site, vous devez configurer le réseau virtuel avec un réseau local qui contient la liste des espaces d’adressage (utilisant la notation CIDR) pour l’ensemble des emplacements qui doivent être atteints sur le réseau local de votre organisation. La liste des espaces d’adressage qui définissent votre réseau local doit être unique et ne doit pas se chevaucher avec l’espace d’adressage utilisé pour d’autres réseaux virtuels ou d’autres réseaux locaux.
+Pour router les paquets à partir du réseau entre différents locaux pour le réseau de votre organisation sur la connexion VPN de site à site, vous devez configurer le réseau virtuel avec un réseau local qui comporte une liste des espaces d’adressage (dans la notation CIDR) pour tous les accessible emplacements sur le réseau local de votre organisation. La liste des espaces d’adressage qui définissent votre réseau local doit être unique et ne doit pas se chevaucher avec l’espace d’adressage utilisé pour d’autres réseaux virtuels ou d’autres réseaux locaux.
   
-Pour l’ensemble des espaces d’adressage du réseau local, remplissez le tableau L. Notez que le tableau comporte trois entrées vides, mais vous aurez généralement besoin d’en ajouter. Renseignez-vous auprès de votre service informatique pour déterminer cette liste d’espaces d’adressage.
+Pour l'ensemble des espaces d'adressage du réseau local, remplissez le tableau L. Notez que le tableau comporte trois entrées vides, mais vous aurez généralement besoin d'en ajouter. Renseignez-vous auprès de votre service informatique pour déterminer cette liste d'espaces d'adressage.
   
 |**Élément**|**Espace d'adressage du réseau local**|
 |:-----|:-----|
@@ -118,7 +118,7 @@ Login-AzureRMAccount
 ```
 
 > [!TIP]
-> Pour un fichier texte qui contient toutes les commandes PowerShell dans cet article et un classeur Microsoft Excel configuration qui génère des blocs de commande PowerShell prête à exécuter en fonction de vos paramètres personnalisés, voir l’authentification fédérée pour Office 365 [dans Kit de déploiement Azure](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
+> Pour un fichier texte contenant toutes les commandes PowerShell dans cet article et un classeur Microsoft Excel configuration qui génère des blocs de commande PowerShell prête à exécuter en fonction de vos paramètres personnalisés, voir l’authentification fédérée pour Office 365 [dans Azure Kit de déploiement](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
   
 Obtenez le nom de votre abonnement à l’aide de la commande suivante.
   
@@ -199,7 +199,7 @@ New-AzureRMVirtualNetwork -Name $vnetName -ResourceGroupName $rgName -Location $
 
 ```
 
-Ensuite, vous créez des groupes de sécurité réseau pour chaque sous-réseau contenant des machines virtuelles. Pour isoler des sous-réseaux, vous pouvez ajouter des règles pour certains types de trafic autorisés ou refusés vers le groupe de sécurité d'un sous-réseau.
+Ensuite, vous créez le réseau groupes de sécurité pour chaque sous-réseau contenant des ordinateurs virtuels. Pour effectuer une isolation de sous-réseau, vous pouvez ajouter des règles pour les types de trafic accordées ou refusées au groupe de sécurité réseau d’un sous-réseau spécifiques.
   
 ```
 # Create network security groups

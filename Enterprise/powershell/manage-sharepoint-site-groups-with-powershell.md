@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Résumé : Utilisation de PowerShell Office 365 pour gérer les groupes de sites SharePoint Online.'
-ms.openlocfilehash: c68e0905c0abcbea279829be7c841c31409db6cf
-ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
+ms.openlocfilehash: 62643cabb2377c07117299dc25314cd515a06791
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23975142"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897157"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-office-365-powershell"></a>Gestion des groupes de sites SharePoint Online avec Office 365 PowerShell
 
@@ -69,7 +69,7 @@ Dans les deux cas, quelque chose de ce type doit apparaître :
 
 ![Groupes de sites SharePoint Online](media/SPO-site-groups.png)
 
-Il s’agit de tous les groupes qui ont été créés pour le site `https://litwareinc.sharepoint.com/sites/finance`, ainsi que tous les utilisateurs affectés à ces groupes. Les noms de groupe sont en jaune pour vous aider à des noms de groupe distinct à partir de leurs membres.
+Il s’agit de tous les groupes qui ont été créés pour le site `https://litwareinc.sharepoint.com/sites/finance`et tous les utilisateurs affectés à ces groupes. Les noms de groupe sont en jaune pour vous aider à des noms de groupe distinct à partir de leurs membres.
 
 Autre exemple, Voici un ensemble de commandes qui répertorie les groupes et toutes les appartenances au groupe, pour tous vos sites SharePoint Online.
 
@@ -97,7 +97,7 @@ foreach ($y in $x)
 
 [Gestion des utilisateurs et des groupes SharePoint Online avec Office 365 PowerShell](manage-sharepoint-users-and-groups-with-powershell.md)
 
-[Gérer Office 365 avec Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
+[Gérer Office 365 avec Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
   
 [Mise en route d'Office 365 Powershell](getting-started-with-office-365-powershell.md)
 

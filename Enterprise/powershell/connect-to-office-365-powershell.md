@@ -15,18 +15,18 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 'Résumé : Se connecter à votre organisation Office 365 à l’aide d’Office 365 PowerShell pour effectuer les tâches du centre d’administration à partir de la ligne de commande.'
-ms.openlocfilehash: d9bee7060f599120d2d6036c45b44e485ea9a0bd
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
+ms.openlocfilehash: ae0449611703759105d92a706cf78ba4a58ad4b2
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849890"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897197"
 ---
 # <a name="connect-to-office-365-powershell"></a>Se connecter à Office 365 PowerShell
 
  **Résumé :** Se connecter à votre organisation Office 365 à l’aide d’Office 365 PowerShell pour effectuer les tâches d’administration à partir de la ligne de commande.
   
-Office 365 PowerShell vous permet pour gérer vos paramètres de Office 365 à partir de la ligne de commande. Connexion à Office 365 PowerShell est un processus simple où vous installez les logiciels requis et puis connectez à votre organisation Office 365. 
+Office 365 PowerShell vous permet de gérer vos paramètres Office 365 à partir de la ligne de commande. Connexion à Office 365 PowerShell est un processus simple où vous installez les logiciels requis et puis connectez à votre organisation Office 365. 
 
 Il existe deux versions du module PowerShell que vous utilisez pour vous connecter à Office 365 et administrer des comptes d’utilisateurs, des groupes et des licences :
 
@@ -40,7 +40,7 @@ Il existe deux versions du module PowerShell que vous utilisez pour vous connect
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Durée d'exécution estimée : 5 minutes
+- Durée d’exécution estimée : 5 minutes
     
 - Vous pouvez utiliser les versions de Windows suivantes :
     

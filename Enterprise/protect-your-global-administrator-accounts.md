@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Protéger l’accès d’administrateur global à votre abonnement Office 365 avec ces trois étapes.
-ms.openlocfilehash: 7260e903ea007735c87ab8aa826e3b97e7bd28c1
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 41168643fb8867017865860624c8b436460fa0b8
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540578"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897517"
 ---
 # <a name="protect-your-office-365-global-administrator-accounts"></a>Protéger vos comptes d’administrateur général Office 365
 
@@ -92,13 +92,13 @@ Le résultat doit être :
 
 L’authentification multifacteur (MFA) pour vos comptes d’administrateur global nécessite des informations supplémentaires au-delà du nom de compte et mot de passe. Office 365 prend en charge ces méthodes de vérification :
   
-- Un appel téléphonique
+- appel téléphonique ;
     
-- Un code secret généré de manière aléatoire
+- code d'accès généré de façon aléatoire ;
     
-- Une carte à puce (virtuelle ou physique)
+- carte à puce (virtuelle ou physique) ;
     
-- Un périphérique biométrique
+- appareil biométrique.
     
 Si vous êtes une petite entreprise qui est à l’aide de comptes d’utilisateurs stockés uniquement dans le nuage (le modèle d’identité dans le nuage), utilisez ces étapes pour configurer MFA à l’aide d’un appel téléphonique ou un code de vérification de message texte envoyé à un téléphone intelligent :
   
@@ -120,7 +120,7 @@ Pour vous connecter aux services Office 365 avec MFA et PowerShell, consultez [c
   
 ## <a name="step-3-monitor-for-suspicious-global-administrator-account-activity"></a>Étape 3. Surveiller les activités de compte administrateur global suspectes
 
-Sécurité d’application Office 365 dans le nuage permet de vous permet de créer des stratégies pour vous informer du comportement suspect dans votre abonnement. Sécurité d’application dans le nuage est intégré dans Office 365 E5, mais il est également disponible en tant que service séparé. Par exemple, si vous n’avez pas Office 365 E5, vous pouvez acheter des licences dans le nuage application sécurité individuelles pour les comptes d’utilisateur qui sont affectées à l’administrateur global, administrateur de sécurité et rôles d’administrateur de conformité.
+Sécurité d’application Office 365 Cloud vous permet de créer des stratégies pour vous informer du comportement suspect dans votre abonnement. Sécurité d’application dans le nuage est intégré dans Office 365 E5, mais il est également disponible en tant que service séparé. Par exemple, si vous n’avez pas Office 365 E5, vous pouvez acheter des licences dans le nuage application sécurité individuelles pour les comptes d’utilisateur qui sont affectées à l’administrateur global, administrateur de sécurité et rôles d’administrateur de conformité.
   
 Si vous disposez de sécurité d’application Cloud dans votre abonnement Office 365, utilisez les étapes ci-après :
   

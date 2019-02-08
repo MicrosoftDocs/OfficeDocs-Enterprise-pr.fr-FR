@@ -15,12 +15,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: Explique comment utiliser Office 365 PowerShell pour désactiver l’accès aux services Office 365 pour les utilisateurs de votre organisation.
-ms.openlocfilehash: 3bab553bd23d6179eb60ff61ae3edb56c528946d
-ms.sourcegitcommit: 5cb4dbdd10ab399af414503cb518a9f530919ef5
+ms.openlocfilehash: 66f6c04c1488f14d5752974a5475e7ef11279406
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25498234"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897417"
 ---
 # <a name="disable-access-to-services-with-office-365-powershell"></a>Désactiver l’accès aux services Office 365 PowerShell
 
@@ -43,7 +43,7 @@ Lorsqu’un compte Office 365 est attribué une licence d’un plan de gestion d
     
 - Pour voir l’avant et après les résultats des procédures de cette rubrique, voir [Afficher les détails de licence et de service de compte avec Office 365 PowerShell](view-account-license-and-service-details-with-office-365-powershell.md).
     
-- Vous trouverez un script PowerShell qui automatise les procédures décrites dans cette rubrique. Plus précisément, le script vous permet d’afficher et de désactiver des services dans votre organisation Office 365, notamment balancement. Pour plus d’informations, voir [désactiver l’accès à balancement avec Office 365 PowerShell](disable-access-to-sway-with-office-365-powershell.md).
+- Vous trouverez un script PowerShell qui automatise les procédures décrites dans cette rubrique. Plus précisément, le script permet d’afficher et désactiver des services dans votre organisation Office 365, notamment balancement. Pour plus d’informations, voir [désactiver l’accès à balancement avec Office 365 PowerShell](disable-access-to-sway-with-office-365-powershell.md).
     
 - Si vous utilisez l’applet de commande **Get-MsolUser** sans utiliser le paramètre _All_ , uniquement les comptes de 500 utilisateur premier sont renvoyés.
     
@@ -127,7 +127,7 @@ Pour désactiver un ensemble spécifique de services Office 365 pour les utilisa
 
   Dans cet exemple, le fichier texte est c :\\Mes Documents\\Accounts.txt.
     
-2. Exécutez la commande suivante :
+2. Exécutez la commande suivante :
     
   ```
   Get-Content "C:\My Documents\Accounts.txt" | foreach {Set-MsolUserLicense -UserPrincipalName $_ -LicenseOptions $LO}
@@ -153,13 +153,13 @@ Consultez les rubriques supplémentaires suivantes sur la gestion des utilisateu
   
 - [Suppression et restauration de comptes d'utilisateurs avec Office 365 PowerShell](delete-and-restore-user-accounts-with-office-365-powershell.md)
     
-- [Suppression et restauration de comptes d'utilisateurs avec Office 365 PowerShell](delete-and-restore-user-accounts-with-office-365-powershell.md)
+- [Supprimer et restaurer des comptes d’utilisateurs avec Office 365 PowerShell](delete-and-restore-user-accounts-with-office-365-powershell.md)
     
 - [Bloquer des comptes d'utilisateurs avec Office 365 PowerShell](block-user-accounts-with-office-365-powershell.md)
     
 - [Attribuer des licences à des comptes d'utilisateurs avec Office 365 PowerShell](assign-licenses-to-user-accounts-with-office-365-powershell.md)
     
-- [Créer des comptes d'utilisateur avec PowerShell Office 365](create-user-accounts-with-office-365-powershell.md)
+- [Création de comptes d'utilisateurs avec Office 365 PowerShell](create-user-accounts-with-office-365-powershell.md)
     
 Pour plus d’informations sur les cmdlets utilisées dans ces procédures, consultez les rubriques suivantes :
   

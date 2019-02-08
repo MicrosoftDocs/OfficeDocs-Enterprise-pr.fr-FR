@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
 description: 'Résumé : Créez et configurez les serveurs Active Directory Federation Services (AD FS) pour votre authentification fédérée haute disponibilité pour Office 365 dans Microsoft Azure.'
-ms.openlocfilehash: 93b2ed3c0935aee586d5aa236e79ab1e89a61b93
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 16a8173f009ea89ec109a848e058ae02d29d3d12
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915429"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897257"
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>Authentification fédérée haute disponibilité, phase 3 : Configurer les serveurs AD FS
 
@@ -51,7 +51,7 @@ Rappelez-vous que vous avez défini le tableau M dans [haute disponibilité féd
 Tout d’abord, vous créez un équilibreur de charge interne Azure pour AD deux serveurs FS. Spécifiez les valeurs pour les variables, suppression de la \< et > caractères. Lorsque vous avez fourni toutes les valeurs appropriées, exécutez le bloc qui en résulte à l’invite de commandes PowerShell Azure ou dans PowerShell ISE.
   
 > [!TIP]
-> Pour un fichier texte qui contient toutes les commandes PowerShell dans cet article et un classeur Microsoft Excel configuration qui génère des blocs de commande PowerShell prête à exécuter en fonction de vos paramètres personnalisés, voir l’authentification fédérée pour Office 365 [dans Kit de déploiement Azure](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
+> Pour un fichier texte contenant toutes les commandes PowerShell dans cet article et un classeur Microsoft Excel configuration qui génère des blocs de commande PowerShell prête à exécuter en fonction de vos paramètres personnalisés, voir l’authentification fédérée pour Office 365 [dans Azure Kit de déploiement](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
   
 ```
 # Set up key variables

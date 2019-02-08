@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: "Résumé : Vous devez être en mesure d'utiliser Office 365 PowerShell pour gérer Office 365, que ce soit pour gagner en efficacité ou par nécessité."
-ms.openlocfilehash: 4dd10db4c27e6d9f28c3638bd8c732701c9dfeac
-ms.sourcegitcommit: 22db89d5b13f7d85e03f35f21f25fa288aadf1b4
+ms.openlocfilehash: 9909d9665817646f7c70c66012af4b8762cceaa1
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25575268"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897467"
 ---
 # <a name="why-you-need-to-use-office-365-powershell"></a>Pourquoi utiliser Office 365 PowerShell ?
 
@@ -65,7 +65,7 @@ Le Centre d'administration Office 365 affiche beaucoup d'informations utiles, ma
   
 ![Exemple d’affichage des utilisateurs et groupes dans le Centre d’administration Office 365.](media/o365-powershell-users-and-groups.png)
   
-Dans de nombreux cas, cela permet d'afficher les informations que vous devez connaître. Toutefois, il peut arriver que vous ayez besoin de plus d'informations. Par exemple, la gestion des licences Office 365 (ainsi que les fonctionnalités Office 365 disponibles pour un utilisateur) dépendent en partie de l'emplacement géographique de l'utilisateur. Les stratégies et les fonctionnalités que vous pouvez étendre à un utilisateur qui vit aux États-Unis peuvent ne pas être les mêmes que celles que vous pouvez étendre à un utilisateur qui vit en Inde ou en Belgique. Pour utiliser le Centre d'administration Office 365 pour déterminer l'emplacement géographique d'un utilisateur, procédez comme suit :
+Pour plusieurs objectifs, il affiche les informations que vous devez connaître. Toutefois, il existe plus d’informations, vous devez parfois. Par exemple, Office 365 licensing (et les fonctionnalités disponibles pour un utilisateur d’Office 365) dépendent en partie de la position géographique de l’utilisateur. Les stratégies et les fonctionnalités que vous pouvez étendre à un utilisateur qui réside aux États-Unis ne peuvent pas être la même que les stratégies et les fonctionnalités que vous pouvez étendre à un utilisateur qui se trouve en Inde ou en Belgique. Vous pouvez utiliser le centre d’administration Office 365 pour déterminer l’emplacement géographique d’un utilisateur en suivant ces étapes :
   
 1. Double-cliquez sur l'élément **Nom d'affichage** de l'utilisateur.
     
@@ -329,7 +329,7 @@ Get-User -Filter '{LastName -like "*son"}'
   
 ## <a name="office-365-powershell-makes-it-easy-to-print-or-save-data"></a>Office 365 PowerShell facilite l’impression ou l’enregistrement des données
 
-Le Centre d'administration Office 365 vous permet de visualiser des listes de données. Voici un exemple dans lequel le Centre d'administration Skype Entreprise Online affiche la liste des utilisateurs qui ont été activés pour Skype Entreprise Online :
+Le centre d’administration Office 365 vous permet d’afficher des listes de données. Voici un exemple de la Skype pour le centre d’administration en ligne de Business affichage d’une liste d’utilisateurs qui ont été activés pour Skype pour Business Online :
   
 ![Exemple de liste d’utilisateurs ayant été activés pour Skype Entreprise Online, affichée dans le Centre d’administration de Skype Entreprise Online.](media/o365-powershell-lync-users.png)
   

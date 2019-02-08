@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 919b8fc7-b0bc-46db-91f5-37342564e01b
 description: Résumé :Configurer et démontrer la classification et l’étiquetage de données à l’aide du client Azure Information Protection (AIP) dans votre environnement de développement/test Office 365.
-ms.openlocfilehash: 91d3b40f43eed750bd33065faa1c57d74179cf58
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 69526f8bf0ae0b6cc7509653cfaa72581e10dbfe
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22914849"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897437"
 ---
 # <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a>Classification et étiquetage des données dans l’environnement de développement/test Office 365
 
@@ -30,7 +30,7 @@ ms.locfileid: "22914849"
 Le client de la Protection des informations Azure vous permet de classer un document avant de le télécharger vers un dossier SharePoint Online dans Office 365. Avec les instructions de cet article, vous installez le client de la Protection des informations Azure et démontrer la classification des données. Pour plus d’informations, voir [La Protection des informations Azure](https://www.microsoft.com/cloud-platform/azure-information-protection).
   
 > [!TIP]
-> Cliquez [ici](http://aka.ms/catlgstack) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de One Microsoft Cloud.
+> Cliquez [ici](http://aka.ms/catlgstack) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft Cloud.
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>Phase 1 : créer votre environnement de développement/test Office 365
 
@@ -126,7 +126,7 @@ Ensuite, démontrez la classification des documents.
     
 9. Cliquez sur l’**Explorateur de fichiers** dans la barre des tâches, puis ouvrez le dossier **Documents**.
     
-    Notez les différentes tailles de fichier des documents **BeforeAIP** et **AfterAIP**. Le document AfterAIP est plus volumineux, car il contient les informations de classification.
+    Notez les tailles de fichier différent des documents **BeforeAIP** et **AfterAIP** . Le document AfterAIP est plus importante car elle contient les informations de classification.
     
 Ensuite, autorisez tout le monde à accéder à la collection de sites Prise en charge.
   

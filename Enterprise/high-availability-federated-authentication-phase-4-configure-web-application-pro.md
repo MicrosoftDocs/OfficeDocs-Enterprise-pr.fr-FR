@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: 'Résumé : Configurez les serveurs de proxy d’application web pour l’authentification fédérée de haute disponibilité pour Office 365 dans Microsoft Azure.'
-ms.openlocfilehash: 0f0299fe8fecdea608330eebc12aea01098f8cec
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 69c1102326a00592d1f79bec4582fb8c9aa7f344
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915809"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897427"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>Authentification fédérée haute disponibilité, phase 4 : Configurer les proxys d’application web
 
@@ -37,7 +37,7 @@ Vous devez créer un équilibreur de charge connecté à Internet pour permettre
 Une fois que vous avez indiqué les valeurs d’emplacement et de groupe de ressources, exécutez le bloc obtenu à l’invite de commandes Azure PowerShell ou dans le PowerShell ISE.
   
 > [!TIP]
-> Pour un fichier texte qui contient toutes les commandes PowerShell dans cet article et un classeur Microsoft Excel configuration qui génère des blocs de commande PowerShell prête à exécuter en fonction de vos paramètres personnalisés, voir l’authentification fédérée pour Office 365 [dans Kit de déploiement Azure](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
+> Pour un fichier texte contenant toutes les commandes PowerShell dans cet article et un classeur Microsoft Excel configuration qui génère des blocs de commande PowerShell prête à exécuter en fonction de vos paramètres personnalisés, voir l’authentification fédérée pour Office 365 [dans Azure Kit de déploiement](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
   
 ```
 # Set up key variables
@@ -64,13 +64,13 @@ Vous devez déterminer le nom DNS pour identifier le nom de votre service de fé
   
 Une fois que le nom de domaine complet du service de fédération a été obtenu, créez un enregistrement DNS de domaine public A pour le nom de domaine complet pour le résoudre en adresse IP publique de l’équilibreur de charge Azure connecté à Internet.
   
-|**Nom**|**Type**|**TTL**|**Valeur**|
+|**Nom**|**Type (Type)**|**TTL (Durée de vie)**|**Valeur**|
 |:-----|:-----|:-----|:-----|
 |Nom de domaine complet du service de fédération  <br/> |A  <br/> |3600  <br/> |adresse IP publique de l’équilibreur de charge Azure connecté à Internet (affiché par la commande **Write-Host** dans la section précédente) <br/> |
    
 Voici un exemple :
   
-|**Nom**|**Type**|**TTL**|**Valeur**|
+|**Nom**|**Type (Type)**|**TTL (Durée de vie)**|**Valeur**|
 |:-----|:-----|:-----|:-----|
 |FS.contoso.com  <br/> |A  <br/> |3600  <br/> |131.107.249.117  <br/> |
    

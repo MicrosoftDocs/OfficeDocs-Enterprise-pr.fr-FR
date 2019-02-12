@@ -11,12 +11,12 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: Prise en charge de l’application cliente Office 365 pour l’authentification moderne.
-ms.openlocfilehash: 18ef5b2219c9527594ae8fcff7e29052671d1431
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 9705c70e68ec69dcfdac09342798baf860666535
+ms.sourcegitcommit: df40eb730e416f206ca8387ef9e6f559c4e4b8a5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "29771123"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29887621"
 ---
 # <a name="office-365-client-app-support---modern-authentication"></a>Support d’application Client Office 365 - authentification moderne
 
@@ -32,6 +32,8 @@ En savoir plus sur [l’authentification multifacteur](https://docs.microsoft.co
  - Android
  - iOS
  - Mac OS
+
+Pour plus d’informations sur la plateforme prend en charge dans Office 365, voir [Configuration requise pour Office 365](https://products.office.com/office-system-requirements).
 
 ## <a name="supported-clients"></a>Clients pris en charge
 

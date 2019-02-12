@@ -11,12 +11,12 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: Comprendre la prise en charge des applications client Office 365 pour la gestion des applications mobiles
-ms.openlocfilehash: 4dc068bb1a62d71d92af28959c95c7ffda296e45
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 8a6894f0b8cc99820507d1224966ffe41ed9febe
+ms.sourcegitcommit: df40eb730e416f206ca8387ef9e6f559c4e4b8a5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "29771113"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29887580"
 ---
 # <a name="office-365-client-app-support---mobile-application-management"></a>Prise en charge des applications Office 365 Client - gestion des applications mobiles
 
@@ -28,6 +28,8 @@ En savoir plus sur [Gestion des applications mobiles](https://docs.microsoft.com
 
  - Android
  - iOS<sup>1</sup>
+
+Pour plus d’informations sur la plateforme prend en charge dans Office 365, voir [Configuration requise pour Office 365](https://products.office.com/office-system-requirements).
 
 ## <a name="supported-clients"></a>Clients pris en charge
 

@@ -3,7 +3,7 @@ title: Afficher les détails de service et de licence de compte avec Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/10/2018
+ms.date: 02/13/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,46 +14,91 @@ ms.custom:
 - Ent_Office_Other
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
-description: Explique comment utiliser Office 365 PowerShell pour déterminer les services Office 365 qui ont été attribués aux utilisateurs.
-ms.openlocfilehash: 5d575ea9e0b45ddc453b3b1c73bd53bf73adab2e
-ms.sourcegitcommit: 16806849f373196797d65e63ced825d547aef956
+description: Explique comment utiliser Office 365 PowerShell pour déterminer les services Office 365 qui ont été attribués à des utilisateurs.
+ms.openlocfilehash: 113107df75880a21210991d5b301245d75c5c739
+ms.sourcegitcommit: a8aedcfe0d6a6047a622fb3f68278c81c1e413bb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "27213951"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30052968"
 ---
 # <a name="view-account-license-and-service-details-with-office-365-powershell"></a>Afficher les détails de service et de licence de compte avec Office 365 PowerShell
 
-**Résumé :** Explique comment utiliser Office 365 PowerShell pour déterminer les services Office 365 qui ont été attribués aux utilisateurs.
+**Résumé:** Explique comment utiliser Office 365 PowerShell pour déterminer les services Office 365 qui ont été attribués à des utilisateurs.
   
-Dans Office 365, les licences de plans de gestion des licences (également appelées références ou Office 365 plans) donner aux utilisateurs l’accès aux services qui sont définies pour les plans Office 365. Toutefois, un utilisateur peut avoir pas accès à tous les services qui sont disponibles dans une licence qui leur est actuellement affectée. Vous pouvez utiliser Office 365 PowerShell pour afficher l’état des services sur les comptes d’utilisateurs. 
+Dans Office 365, les licences des plans de gestion des licences (également appelés «SKU» ou «offres Office 365») permettent aux utilisateurs d'accéder aux services Office 365 définis pour ces plans. Toutefois, il se peut qu'un utilisateur n'ait pas accès à tous les services disponibles dans une licence qui lui est actuellement attribuée. Vous pouvez utiliser Office 365 PowerShell pour afficher l'état des services sur les comptes d'utilisateur. 
 
-## <a name="before-you-begin"></a>Avant de commencer
+Pour plus d'informations sur les plans de licence, les licences et les services, voir [View licenses and Services with Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md).
 
-- Les procédures décrites dans cette rubrique exigent une connexion à Office 365 PowerShell. Pour plus d'informations, reportez-vous à [Se connecter à Office 365 PowerShell](connect-to-office-365-powershell.md).
-    
-- Utilisez les commandes `Get-MsolAccountSku` et `(Get-MsolAccountSku | where {$_.AccountSkuId -eq '<AccountSkuId>'}).ServiceStatus` pour trouver les informations suivantes :
-    
-  - Plans de gestion de licences disponibles dans votre organisation.
-    
-  - Services disponibles dans chaque plan de gestion de licences et l’ordre dans lequel ils sont répertoriés (numéro d’index).
-    
-     Pour plus d’informations sur les licences des plans de licence et services, voir [Afficher les licences et les services Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md).
-    
-- Utilisez la commande `Get-MsolUser -UserPrincipalName <user account UPN> | Format-List DisplayName,Licenses` pour rechercher les licences sont affectés à un utilisateur et l’ordre dans lequel ils sont répertoriés (le numéro d’index).
-    
-- Si vous utilisez la cmdlet **Get-MsolUser** sans utiliser le paramètre _All_, seuls les 500 premiers comptes sont renvoyés.
-    
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Utilisez le module Azure Active Directory PowerShell pour Graph
 
-## <a name="to-view-services-for-a-user-account"></a>Pour afficher les services pour un compte d’utilisateur
+Tout d’abord, [connectez-vous à votre client Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+  
+Ensuite, répertoriez les plans de licence pour votre client à l'aide de cette commande.
 
-Pour afficher tous les services un utilisateur ayant accès à Office 365, utilisez la syntaxe suivante :
+```
+Get-AzureADSubscribedSku | Select SkuPartNumber
+```
+
+Utilisez ces commandes pour répertorier les services disponibles dans chaque plan de gestion des licences.
+
+```
+$allSKUs=Get-AzureADSubscribedSku
+$licArray = @()
+for($i = 0; $i -lt $allSKUs.Count; $i++)
+{
+$licArray += "Service Plan: " + $allSKUs[$i].SkuPartNumber
+$licArray +=  Get-AzureADSubscribedSku -ObjectID $allSKUs[$i].ObjectID | Select -ExpandProperty ServicePlans
+$licArray +=  ""
+}
+$licArray
+````
+
+Utilisez ces commandes pour répertorier les licences qui sont affectées à un compte d'utilisateur.
+
+````
+$userUPN="<user account UPN, such as belindan@contoso.com>"
+$licensePlanList = Get-AzureADSubscribedSku
+$userList = Get-AzureADUser -ObjectID $userUPN | Select -ExpandProperty AssignedLicenses | Select SkuID 
+$userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq $_.ObjectId.substring($_.ObjectId.length - 36, 36) ) { Write-Host $_.SkuPartNumber } } }
+````
+
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Utilisez le Module Microsoft Azure Active Directory pour Windows PowerShell.
+
+Tout d’abord, [connectez-vous à votre client Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+
+Ensuite, exécutez cette commande pour répertorier les plans de gestion des licences disponibles dans votre organisation. 
+
+```
+Get-MsolAccountSku
+```
+
+Ensuite, exécutez cette commande pour répertorier les services disponibles dans chaque plan de gestion des licences et l'ordre dans lequel ils sont répertoriés (le numéro d'index).
+
+````
+(Get-MsolAccountSku | where {$_.AccountSkuId -eq '<AccountSkuId>'}).ServiceStatus
+````
+  
+Utilisez cette commande pour répertorier les licences qui sont affectées à un utilisateur et l'ordre dans lequel elles sont répertoriées (le numéro d'index).
+
+````
+Get-MsolUser -UserPrincipalName <user account UPN> | Format-List DisplayName,Licenses
+````
+
+>[!Note]
+>Si vous utilisez la cmdlet **Get-MsolUser** sans utiliser le paramètre _All_, seuls les 500 premiers comptes sont renvoyés.
+>
+   
+
+### <a name="to-view-services-for-a-user-account"></a>Pour afficher les services d'un compte d'utilisateur
+
+Pour afficher tous les services Office 365 auxquels un utilisateur a accès, utilisez la syntaxe suivante:
   
 ```
 (Get-MsolUser -UserPrincipalName <user account UPN>).Licenses[<LicenseIndexNumber>].ServiceStatus
 ```
 
-Cet exemple illustre les services auxquels l’utilisateur BelindaN@litwareinc.com a accès. Affiche les services qui sont associés à toutes les licences sont attribués à ce compte.
+Cet exemple illustre les services auxquels l'utilisateur BelindaN@litwareinc.com a accès. Indique les services qui sont associés à toutes les licences qui sont affectées à son compte.
   
 ```
 (Get-MsolUser -UserPrincipalName belindan@litwareinc.com).Licenses.ServiceStatus
@@ -65,7 +110,7 @@ Cet exemple montre les services auxquels cet utilisateur BelindaN@litwareinc.com
 (Get-MsolUser -UserPrincipalName belindan@litwareinc.com).Licenses[0].ServiceStatus
 ```
 
-Pour afficher tous les services d’un utilisateur qui a été affecté *plusieurs licences*, utilisez la syntaxe suivante :
+Pour afficher tous les services d'un utilisateur auquel ont été affectées *plusieurs licences*, utilisez la syntaxe suivante:
 
 ```
 $userAccountUPN="<user account UPN>"
@@ -81,35 +126,14 @@ $licArray
 ```
 
   
-## <a name="see-also"></a>Voir aussi
-
-Consultez les rubriques supplémentaires suivantes sur la gestion des utilisateurs avec Office 365 PowerShell :
-  
-- [Création de comptes d'utilisateurs avec Office 365 PowerShell](create-user-accounts-with-office-365-powershell.md)
-    
-- [Suppression et restauration de comptes d'utilisateurs avec Office 365 PowerShell](delete-and-restore-user-accounts-with-office-365-powershell.md)
-    
-- [Bloquer des comptes d'utilisateurs avec Office 365 PowerShell](block-user-accounts-with-office-365-powershell.md)
-    
-- [Attribuer des licences à des comptes d'utilisateurs avec Office 365 PowerShell](assign-licenses-to-user-accounts-with-office-365-powershell.md)
-    
-- [Supprimer des licences à des comptes d'utilisateurs avec Office 365 PowerShell](remove-licenses-from-user-accounts-with-office-365-powershell.md)
-    
-Pour plus d’informations sur les cmdlets utilisées dans ces procédures, consultez les rubriques suivantes :
-  
-- [ConvertTo-Html](https://go.microsoft.com/fwlink/p/?LinkId=113290)
-    
-- [Format-List](https://go.microsoft.com/fwlink/p/?LinkId=113302)
-    
-- [Get-MsolUser](https://go.microsoft.com/fwlink/p/?LinkId=691543)
-    
-- [Select-Object.](https://go.microsoft.com/fwlink/p/?LinkId=113387)
-    
-- [Where-Object](https://go.microsoft.com/fwlink/p/?LinkId=113423)
-    
-
-  
 ## <a name="new-to-office-365"></a>Vous débutez avec Office 365 ?
 
-
 [!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
+
+## <a name="see-also"></a>Voir aussi
+
+[Gérer les comptes d'utilisateurs et les licences avec Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+  
+[Gérer Office 365 avec Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
+  
+[Mise en route d'Office 365 Powershell](getting-started-with-office-365-powershell.md)

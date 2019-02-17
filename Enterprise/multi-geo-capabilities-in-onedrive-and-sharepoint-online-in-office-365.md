@@ -1,9 +1,8 @@
 ---
-title: Fonctionnalités Multi-Geo dans OneDrive et SharePoint Online dans Office 365
+title: Fonctionnalités multigéographiques dans OneDrive dans Office 365
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 4/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,17 +10,17 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
-description: Étendez votre présence Office 365 à plusieurs régions géographiques grâce aux fonctionnalités multigéographiques dans OneDrive et SharePoint Online.
-ms.openlocfilehash: 725a7a88e3459f73ff00554b14afc740db1244b3
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
+description: Étendez votre présence Office 365 à plusieurs régions géographiques grâce aux fonctionnalités multigéographiques dans OneDrive Online.
+ms.openlocfilehash: f89bfe7cb9a287200591746dc6d22430cd6eed1b
+ms.sourcegitcommit: a8aedcfe0d6a6047a622fb3f68278c81c1e413bb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849820"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30052988"
 ---
-# <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365"></a>Fonctionnalités Multi-Géo dans OneDrive et SharePoint Online dans Office 365
+# <a name="multi-geo-capabilities-in-onedrive-in-office-365"></a>Fonctionnalités multigéographiques dans OneDrive dans Office 365
 
-Grâce aux fonctionnalités Multi-Géo dans OneDrive et SharePoint Online, votre organisation peut étendre sa présence Office 365 à plusieurs régions géographiques ou pays au sein de votre client existant. Prenez contact avec votre équipe de compte Microsoft pour inscrire votre entreprise internationale à la version Multi-Géo de OneDrive Entreprise.
+Grâce aux fonctionnalités multigéographiques dans OneDrive Online, votre organisation peut étendre sa présence Office 365 à plusieurs régions géographiques ou pays au sein de votre client existant. Prenez contact avec votre équipe de compte Microsoft pour inscrire votre entreprise internationale à la version multigéographique de OneDrive Entreprise.
   
 Avec les fonctionnalités multigéographiques de OneDrive, vous pouvez configurer et stocker des données au repos dans les emplacements géographiques choisis afin de satisfaire les besoins spécifiques en matière d’emplacement des données, et en même temps déverrouiller votre déploiement général d’expériences de productivité moderne à votre personnel.
   
@@ -64,27 +63,25 @@ La configuration Multi-Géo est facile :
 Les fonctionnalités multigéographiques de OneDrive sont actuellement disponibles dans les régions et pays suivants :
   
 - Asie-Pacifique
-    
+
 - Australie
-    
+
 - Canada
-    
+
 - Union européenne (EMEA)
 
 - France
-    
-- Japon
-    
-- Royaume-Uni
-    
-- États-Unis (Amérique du Nord)
-    
-- Corée
-      
-Emplacements géographiques à venir :
-  
+
 - Inde
-    
+
+- Japon
+
+- Royaume-Uni
+
+- États-Unis (Amérique du Nord)
+
+- Corée
+
 ## <a name="getting-started"></a>Prise en main
 
 Pour commencer à utiliser OneDrive Entreprise Multi-Géo, la première étape consiste à [planifier votre environnement OneDrive Entreprise Multi-Géo](plan-for-multi-geo.md). Ensuite, [découvrez comment administrer un environnement multigéographique](administering-a-multi-geo-environment.md) et [comment vos utilisateurs expérimenteront un environnement multigéographique](multi-geo-user-experience.md). Lorsque vous êtes prêt à configurer OneDrive Entreprise Multi-Géo, [configurez votre client pour Multi-Géo](multi-geo-tenant-configuration.md), puis [déplacez les sites OneDrive existants vers leurs nouveaux emplacements géographiques](move-onedrive-between-geo-locations.md) et [configurez la recherche](configure-search-for-multi-geo.md).

@@ -8,19 +8,21 @@ ms.audience: ITPro
 ms.topic: deployment
 ms.service: o365-administration
 localization_priority: Priority
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- M365-subscription-management
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 7cec08a5-97fd-4761-b23b-ef3d66519e30
 description: Configurer les applications et services Office 365 Entreprise
-ms.openlocfilehash: 66b083d255ef428189d674e926917455752d1353
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: cc94d8ee39611f01e2058273e92b845cdcc0c6d8
+ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540400"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30085453"
 ---
 # <a name="configure-office-365-enterprise-services-and-applications"></a>Configurer les applications et services Office 365 Entreprise
 

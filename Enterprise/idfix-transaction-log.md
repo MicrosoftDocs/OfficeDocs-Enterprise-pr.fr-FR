@@ -1,5 +1,5 @@
 ---
-title: Journal des transactions IdFix Office 365
+title: Office 365 IdFix journal des transactions
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -9,25 +9,28 @@ ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
 ms.custom: Adm_O365
+ms.collection:
+- Ent_O365
+- M365-identity-device-management
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: d58b7d45-7947-4193-9456-82ba76f42d89
-description: Fournit un exemple et décrit la convention d’affectation de noms et le niveau de journalisation par défaut du journal des transactions IdFix d’Office 365.
-ms.openlocfilehash: 016318c7e771ec6c5f90336e11c5dd011144d12e
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+description: Fournit un exemple et décrit la Convention d'affectation de noms et le niveau de journalisation par défaut du journal des transactions d'Office 365 IdFix.
+ms.openlocfilehash: c652f8dcbc23a6f0165d894ce6317443db72ceee
+ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540476"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30085063"
 ---
-# <a name="office-365-idfix-transaction-log"></a>Journal des transactions IdFix Office 365
+# <a name="office-365-idfix-transaction-log"></a>Office 365 IdFix journal des transactions
 
-Fournit un exemple et décrit la convention d’affectation de noms et le niveau de journalisation par défaut du journal des transactions IdFix d’Office 365.
+Fournit un exemple et décrit la Convention d'affectation de noms et le niveau de journalisation par défaut du journal des transactions d'Office 365 IdFix.
   
 ## <a name="idfix-transaction-log-location"></a>Emplacement du journal des transactions IdFix
 
-L’outil IdFix d’Office 365 crée un nouveau journal chaque fois que vous cliquez sur **Appliquer** dans IdFix et appliquez les modifications à la forêt Active Directory. Le journal des transactions est enregistré dans le même dossier où vous avez installé IdFix. Par défaut, ce dossier est C:\Deployment Tools\IDFix. Le nom du fichier journal des transactions utilise un format de date et date et heure, par exemple, Verbose 6-1-2018 6-17-22 h indique un fichier qui a été généré à 1, juin 2018 à 6:17:22 PM Verbose indique le niveau de journalisation. 
+L'outil IdFix Office 365 crée un nouveau journal des transactions chaque fois que vous cliquez sur **appliquer** dans IdFix et que vous appliquez les modifications à la forêt Active Directory. Le journal des transactions est enregistré dans le dossier où vous avez installé IdFix. Par défaut, ce dossier est C:\Deployment Tools\IDFix. Le nom du fichier journal des transactions utilise un format de date et d'heure, par exemple, verbose 6-1-2018 6-17-22 PM indique un fichier généré à partir du 1er juin 2018 à 6:17:22 PM. verbose indique le niveau de journalisation. 
   
 ## <a name="idfix-transaction-log-logging-level"></a>Niveau de journalisation du journal des transactions IdFix
 
@@ -35,7 +38,7 @@ Le mot « verbose » dans le nom de fichier journal de transactions indique le
   
 ## <a name="idfix-transaction-log-format"></a>Format du journal des transactions IdFix
 
-IdFix écrit les résultats de chaque action de **mise à jour** dans un journal des transactions, comme illustré dans l’exemple suivant :
+IdFix écrit les résultats de chaque action de **mise à jour** dans un journal des transactions, comme illustré dans l'exemple suivant:
   
 ```
 5/22/2018 6:36:44 AM Initialized - IdFix version 1.07 - Multi-Tenant

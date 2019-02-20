@@ -13,25 +13,28 @@ f1_keywords:
 ms.service: o365-administration
 localization_priority: Normal
 ms.custom: Adm_O365
+ms.collection:
+- Ent_O365
+- M365-subscription-management
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
-description: Afficher l’état des services Office 365 avant d’appeler la prise en charge pour voir s’il existe une interruption de service active
-ms.openlocfilehash: 52a7b762b8e86c3e538579f7c1e1611515469389
-ms.sourcegitcommit: c7ad181394a8a3ee261dc44e7a1e70f6ebe7cbcf
+description: Afficher l'état d'intégrité des services Office 365 avant d'appeler la prise en charge pour déterminer s'il existe une interruption de service Active
+ms.openlocfilehash: 7a8d6c028caa72d332a51123233b2d0642311da0
+ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29696351"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30085293"
 ---
 # <a name="how-to-check-office-365-service-health"></a>Vérifier l'état du service Office 365
 
-Vous pouvez afficher l’intégrité d’Office 365, Yammer, Microsoft Dynamics CRM et services de cloud computing Microsoft Intune dans la page d’Office 365 **intégrité du Service** dans le centre d’administration. Si vous rencontrez des problèmes avec un service en nuage, vous pouvez vérifier l’intégrité du service pour déterminer s’il s’agit d’un problème connu avec une résolution en cours avant d’appeler le support ou consacrez à la résolution des problèmes de temps. 
+Vous pouvez afficher l'état de santé d'Office 365, de Yammer, de Microsoft Dynamics CRM et des services Cloud Microsoft Intune sur la page d' **État du service** Office 365 dans le centre d'administration. Si vous rencontrez des problèmes avec un service Cloud, vous pouvez vérifier l'état du service pour déterminer s'il s'agit d'un problème connu avec une résolution en cours avant d'appeler le support technique ou de consacrer du temps à la résolution des problèmes. 
 
-Si vous ne parvenez pas à vous connecter au portail de service, vous pouvez utiliser la [page État du service](https://status.office365.com) pour vérifier les problèmes connus vous empêche de se connecter à votre client.
+Si vous ne parvenez pas à vous connecter au service portail de service, vous pouvez utiliser la [page État du service](https://status.office365.com) pour vérifier les problèmes connus qui vous empêchent de vous connecter à votre client.
   
 ### <a name="how-to-check-service-health"></a>Vérifier l'état du service
 
@@ -40,7 +43,7 @@ Si vous ne parvenez pas à vous connecter au portail de service, vous pouvez uti
     > [!NOTE]
     > Les personnes dotées d'un rôle d'administrateur général ou d'administrateur de service peuvent afficher l'état du service. Pour afficher l'état du service, les administrateurs Exchange, SharePoint et Skype Entreprise doivent aussi disposer d'un rôle d'administrateur portant sur ce service.
   
-2. Pour ouvrir l’intégrité du service, dans le centre d’administration, accédez à **la santé** > **intégrité du Service**, ou cliquez sur la **carte d’intégrité de Service** sur le **tableau de bord d’accueil**. La carte de tableau de bord indique s’il existe un problème de service active et les liens vers la page de l’intégrité du service détaillées.
+2. Pour ouvrir l'état du service, dans le centre d'administration, accédez à intégrité du**service**d' **intégrité** > ou cliquez sur la carte d' **intégrité des services** dans le tableau de **bord d'accueil**. La carte de tableau de bord indique s'il existe un problème de service actif et des liens vers la page d'état détaillé du service.
     
     ![Dashboard card for service health](media/8ae3de43-7bd5-4ee9-90ed-8b5ba5f9b474.png)
   
@@ -51,13 +54,13 @@ Si vous ne parvenez pas à vous connecter au portail de service, vous pouvez uti
   
 ### <a name="view-details-of-posted-service-health"></a>Afficher les détails relatifs à l'état du service publié
 
-Dans l’affichage par défaut, tous les services et leur état d’intégrité actuel sont affichés. Pour filtrer l’affichage aux services actuellement rencontre un incident, sélectionnez **Incidents** dans la barre ombrée située à gauche. **Conseils** de sélection affiche uniquement les services qui possèdent un avis publié. À partir de l’affichage de **tous les services** , en cliquant sur l’état du service affiché ouvrira une vue récapitulative de l’avis ou un incident. 
+Dans l'affichage par défaut, tous les services et leur état d'intégrité actuel sont affichés. Pour filtrer votre vue sur les services rencontrant actuellement un incident, sélectionnez **incidents** dans la barre ombrée sur la gauche. La sélection des **avis** affiche uniquement les services pour lesquels un avis a déjà été publié. Dans l'affichage **tous les services** , cliquez sur l'état du service affiché pour ouvrir une vue récapitulative de l'avis ou de l'incident. 
   
 ![View of current issues in service health](media/f829a3af-1aca-4dc2-97eb-15d805349b24.png)
   
 Le récapitulatif de l'avis ou de l'incident fournit les informations suivantes : 
   
-![Capture d’écran étiquetage les champs dans un avis de service](media/0dd6065c-1381-4a5c-8ca0-854c3e043a5c.png)
+![Capture d'écran des champs d'un avis de service](media/0dd6065c-1381-4a5c-8ca0-854c3e043a5c.png)
   
 1. Identifiant et récapitulatif du problème.
     
@@ -104,11 +107,11 @@ En règle générale, les services apparaissent comme intègres, sans autres inf
 |**Récupération étendue** | Cet état indique qu'une action corrective est en cours afin de restaurer le service pour la plupart des utilisateurs, mais qu'il faudra un certain temps pour qu'elle s'applique à tous les systèmes concernés. Cet état peut également s'afficher si nous proposons un correctif temporaire visant à réduire l'impact du problème en attendant un correctif définitif. |
 |**Examen suspendu** | Cet état s'affiche si l'examen détaillé d'un problème potentiel implique plus d'informations de la part des clients afin de nous permettre de mieux l'étudier. Dans ce cas, nous vous indiquerons les données ou journaux dont nous avons besoin. |
 |**Service restauré** | L'action corrective a permis de résoudre le problème sous-jacent et le service a été restauré. Pour en savoir plus, consultez les détails relatifs au problème. |
-|**Rapport post-incident publié** | Nous avons publié un rapport d’Incident Post pour un problème spécifique qui inclut des informations de cause racine et suivre les étapes ci-après pour garantir qu'un problème similaire ne se reproduit. |
+|**Publication du rapport post-incident** | Nous avons publié un rapport de l'incident post pour un problème spécifique qui inclut les informations de la cause première et les étapes suivantes pour éviter que le problème ne se reproduise. |
    
 ## <a name="history"></a>Historique
 
-Intégrité du service vous permet de consulter l’état d’intégrité actuel et afficher l’historique des incidents ont des conséquences sur votre client au cours des 30 derniers jours et conseils de service. Pour afficher la derniers d’intégrité de tous les services, sélectionnez **Afficher l’historique** sur la page **intégrité du Service** . 
+L'état du service vous permet de consulter l'état actuel de l'intégrité et d'afficher l'historique des avis de service et des incidents ayant influencé votre client au cours des 30 derniers jours. Pour afficher l'intégrité passée de tous les services, sélectionnez **afficher l'historique** sur la page **État du service** . 
   
 ![Show link to health history](media/12a3e484-1eb4-497f-8cab-8064bccc2ef5.png)
   
@@ -116,9 +119,9 @@ La liste de tous les messages d'état des services publiés au cours de la péri
   
 ![View service health history](media/5ed20247-121c-4abe-9fe7-9025e26a2d0e.png)
   
-Vous pouvez afficher l’historique des résultats pour les 7 derniers jours ou cours des 30 derniers jours. Sélectionnez une ligne pour afficher plus d’informations sur ce problème.
+Vous pouvez afficher l'historique des intégrités pendant les 7 derniers jours ou les 30 derniers jours. Sélectionnez une ligne pour afficher plus de détails sur ce problème.
   
-Pour plus d’informations sur notre engagement à temps de fonctionnement, voir [operations Transparent d’Office 365](https://go.microsoft.com/fwlink/?linkid=848695).
+Pour plus d'informations sur notre engagement en matière de disponibilité, consultez la rubrique [opérations transparentes d'Office 365](https://go.microsoft.com/fwlink/?linkid=848695).
   
 ## <a name="leave-feedback"></a>Laisser un commentaire
 

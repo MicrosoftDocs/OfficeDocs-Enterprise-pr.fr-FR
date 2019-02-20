@@ -9,40 +9,43 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.custom: Adm_O365
+ms.collection:
+- Ent_O365
+- M365-identity-device-management
 search.appverid:
 - MET150
 - MOE150
 - MED150
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
-description: Découvrez comment désactiver la synchronisation d’annuaires. Vous pouvez également afficher son statut.
-ms.openlocfilehash: c843fa4d71976cbdd0d6d3d10720e2845b26796c
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+description: Découvrez comment désactiver la synchronisation d'annuaires. Vous pouvez également afficher son état.
+ms.openlocfilehash: 4803cbadd17dbc1ee23d019f39144ff1ffaefd9a
+ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540633"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30085053"
 ---
 # <a name="view-directory-synchronization-status-in-office-365"></a>Afficher le statut de synchronisation d’annuaires dans Office 365
-Si vous avez intégré Active Directory local avec Azure AD par la synchronisation de votre environnement sur site avec Office 365, vous pouvez également vérifier l’état de la synchronisation.
+Si vous avez intégré Active Directory sur site à Azure AD en synchronisant votre environnement local avec Office 365, vous pouvez également vérifier l'état de votre synchronisation.
   
-## <a name="view-directory-synchronization-status"></a>Afficher l’état de la synchronisation des annuaires
-- Se connecter au centre d’administration Office 365 et choisissez **l’État de synchronisation d’annuaire** dans la page d’accueil. 
-- Sinon, vous pouvez accéder aux **utilisateurs** \> **utilisateurs actifs**, dans la page **utilisateurs actifs** , cliquez sur **plus de** \> **la synchronisation d’annuaires**. Dans le volet de **La synchronisation d’annuaires** , choisissez **accédez à gestion de la synchronisation d’annuaire**.
+## <a name="view-directory-synchronization-status"></a>Afficher l'état de la synchronisation d'annuaires
+- Connectez-vous au centre d'administration Office 365 et **** choisissez DirSync Status sur la page d'accueil. 
+- Vous pouvez également accéder à **** \> utilisateurs **actifs**, puis, sur la page **utilisateurs actifs** , sélectionner **plus** \> de synchronisation d' **annuaires**. Dans le volet **synchronisation** d'annuaires, sélectionnez **accéder à la gestion DirSync**.
     
-## <a name="information-on-the-manage-directory-synchronization-page"></a>Pour plus d’informations sur la page de la synchronisation d’annuaire gérer
+## <a name="information-on-the-manage-directory-synchronization-page"></a>Informations sur la page gérer la synchronisation d'annuaires
 
-Le tableau suivant répertorie les fonctionnalités que vous pouvez obtenir des informations à propos de la page.
+Le tableau suivant répertorie les fonctionnalités sur lesquelles vous pouvez obtenir des informations sur la page.
   
-Si il existe un problème avec votre la synchronisation d’annuaires, les erreurs sont répertoriés sur cette page. Pour plus d’informations sur les différentes erreurs que vous pouvez rencontrer, voir [identifier des erreurs de synchronisation d’annuaire dans Office 365](identify-directory-synchronization-errors.md).
+En cas de problème avec la synchronisation d'annuaires, les erreurs sont également répertoriées sur cette page. Pour plus d'informations sur les différentes erreurs que vous pouvez rencontrer, consultez la rubrique [identifier les erreurs de synchronisation d'annuaires dans Office 365](identify-directory-synchronization-errors.md).
   
-|**Élément**|**Elle concerne**|
+|**Élément**|**Objet**|
 |:-----|:-----|
-|**Domaines vérifiés** | Nombre de domaines dans votre organisation cliente Office 365 que vous avez vérifié vous possédez. |
-|**Domaines non vérifiées** | Vous avez ajouté, mais n’a ne pas vérifié les domaines. |
-|**Synchronisation d’annuaires** |La valeur True ou False. Spécifie si vous avez activé la synchronisation d’annuaire. |
-|**Synchronisation d’annuaire le plus récent** | Heure de la dernière exécution de la synchronisation d’annuaire. Affiche un message d’avertissement et un lien vers un outil de dépannage si la dernière synchronisation a plus de trois jours. |
-|**Synchronisation de mot de passe activée** | La valeur True ou False. Spécifie si vous disposez de synchronisation de hachage de mot de passe entre notre locale et votre client Office 365. |
-|**Dernière synchronisation de mot de passe** | Heure de la dernière exécution de la synchronisation de hachage de mot de passe. Affiche un message d’avertissement et un lien vers un outil de dépannage si la dernière synchronisation a plus de trois jours. |
-|**Version de client de synchronisation de répertoire** | Contient un lien de téléchargement si une nouvelle version d’Azure AD Connect a été publiée. |
-|**Outil IDFix** | Télécharger le lien sur [IDFix](install-and-run-idfix.md), un outil qui vous permet de vérifier votre annuaire Active Directory local. |
-|**Compte de service de synchronisation de répertoire** | Affiche le nom de votre compte de service de synchronisation de répertoire Office 365. |
+|**Domaines vérifiés** | Nombre de domaines dans votre client 365 Office que vous avez vérifié. |
+|**Domaines non vérifiés** | Les domaines que vous avez ajoutés, mais qui n'ont pas été vérifiés. |
+|**Synchronisation d'annuaires activée** |True ou false. Indique si la synchronisation d'annuaires est activée. |
+|**Dernière synchronisation d'annuaires** | Dernière exécution de la synchronisation d'annuaires. Affichera un avertissement et un lien vers un outil de dépannage Si la dernière synchronisation remonte à plus de trois jours. |
+|**Synchronisation de mot de passe activée** | True ou false. Spécifie si la synchronisation de hachage de mot de passe entre notre client local et votre client 365 Office est terminée. |
+|**Dernière synchronisation de mot de passe** | Dernière exécution de la synchronisation de hachage de mot de passe. Affichera un avertissement et un lien vers un outil de dépannage Si la dernière synchronisation remonte à plus de trois jours. |
+|**Version du client de synchronisation d'annuaires** | Contient un lien de téléchargement si une nouvelle version d'Azure AD Connect a été publiée. |
+|**Outil IDFix** | Téléchargez le lien vers [IDFix](install-and-run-idfix.md), un outil que vous pouvez utiliser pour vérifier l'Active Directory local. |
+|**Compte de service de synchronisation d'annuaires** | Affiche le nom de votre compte de service de synchronisation d'annuaires Office 365. |

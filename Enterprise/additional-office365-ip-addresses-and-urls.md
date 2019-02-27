@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Résumé : Le nouveau service web de point de terminaison n’inclut pas certains points de terminaison pour des scénarios spécifiques.'
 hideEdit: true
-ms.openlocfilehash: 2e25ed32a6e88654f583b4bdca2ff04e6a4c96ff
-ms.sourcegitcommit: 0c4f50aa55699b8390038efbb8b50dbe10f3eefe
+ms.openlocfilehash: 02deeb06f73b836d95a738ca8566bc2554010aa4
+ms.sourcegitcommit: 8e2760cbcaf564923595147ccf6da468edaed364
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28723371"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30242086"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Points de terminaison supplémentaires non inclus dans le service web pour URL et adresses IP Office 365
 
@@ -56,7 +56,7 @@ Certains points de terminaison réseau ont été publiés précédemment et n’
 | 10  | Le service de détection automatique est utilisé dans des scénarios [Exchange hybride](https://docs.microsoft.com/exchange/exchange-deployment-assistant) avec [l’authentification moderne hybride avec Outlook pour iOS et Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth). <BR> <BR> ```*.acompli.net``` <BR> <BR> ```*.outlookmobile.com``` <BR> <BR> ```*.outlookmobile.us``` <BR> <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> | Serveur Exchange client local sur TCP 443 | Trafic serveur entrant |
 | 11  | Skype Entreprise dans Office 2016 inclut un partage d’écran vidéo qui utilise des ports UDP. Les clients Skype Entreprise précédents dans Office 2013 et versions antérieures ont utilisé RDP sur le port TCP 443. | Port TCP 443 s’ouvrant sur 52.112.0.0/14 | Versions de clients plus anciens Skype Entreprise dans Office 2013 et versions antérieures |
 | 12  | Connectivité de serveur local hybride Skype Entreprise à Skype Entreprise Online | 13.107.64.0/18, 52.112.0.0/14 Ports UDP 50,000-59,999 <BR>  Port TCP   50,000-59,999. | Connectivité sortante de serveur local Skype Entreprise |
-| 13  | Le RTC sur le cloud avec une connectivité hybride locale nécessite une connectivité réseau ouverte aux hôtes locaux. Pour plus d’informations sur les configurations hybrides pour Skype Entreprise Online  | Consulter la rubrique [Solution hybride pour Skype Entreprise](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/skype-for-business-hybrid-solutions) | Entrée hybride locale pour Skype Entreprise |
+| 13  | Le RTC sur le cloud avec une connectivité hybride locale nécessite une connectivité réseau ouverte aux hôtes locaux. Pour plus d’informations sur les configurations hybrides pour Skype Entreprise Online  | Consultez la rubrique [Planification de la connectivité hybride entre Skype Entreprise Server et Office 365](https://docs.microsoft.com/skypeforbusiness/hybrid/plan-hybrid-connectivity). | Entrée hybride locale pour Skype Entreprise |
 | 14  | **Noms de domaine complets d’authentification et d’identité** <br> Le nom de domaine complet ```secure.aadcdn.microsoftonline-p.com``` doit apparaître dans la zone de sites Internet Explorer ou Edge approuvés de votre client pour fonctionner. |  | Sites de confiance |
 | 15  |  **Noms de domaine complets Microsoft Teams** <br> Si vous utilisez Internet Explorer ou Microsoft Edge, vous devez activer les cookies propriétaires et tiers, et ajouter les noms de domaine complets des équipes à vos sites de confiance. Cela s’ajoute aux noms de domaine complets, aux CDN et à la télémétrie répertoriés à la ligne 14. Reportez-vous à la rubrique [Problèmes connus pour Microsoft Teams](https://docs.microsoft.com/microsoftteams/known-issues) pour plus d’informations. |  | Sites de confiance |
 | 16  |  **Noms de domaine complets Sharepoint Online et OneDrive Entreprise** <br> Tous les noms de domaine complets « .sharepoint.com » comportant « \<tenant> » doivent se trouver dans la zone de sites Internet Explorer ou Edge de confiance de votre client pour fonctionner. Outre les noms de domaine complets, les CDN et la télémétrie répertoriés à la ligne 14, vous devrez également ajouter ces points de terminaison. |  | Sites de confiance |

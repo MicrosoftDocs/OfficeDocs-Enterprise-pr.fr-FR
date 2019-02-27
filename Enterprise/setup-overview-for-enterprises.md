@@ -8,7 +8,8 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Priority
-search.appverid: MOE150
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -16,12 +17,12 @@ ms.collection:
 ms.custom: Adm_O365
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
 description: Ces étapes d’aperçu sont conçues pour vous aider à déployer Office 365, à connecter votre annuaire Active Directory, à migrer vos données et à aider les membres de votre organisation à prendre en main la dernière version d’Office 2016.
-ms.openlocfilehash: 4dd2dff88ed9ef435b5e36517cee9b3e76c8132f
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.openlocfilehash: 76421a7870358e48798f21866d69672509084c6a
+ms.sourcegitcommit: fd137a68c516379a9f09e06987e8d45d92de7ed6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085273"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "30303598"
 ---
 # <a name="deploy-office-365-enterprise-for-your-organization"></a>Déployer Office 365 Entreprise pour votre organisation
 Êtes-vous prêt à déployer Office 365 Entreprise et à l’intégrer à votre infrastructure locale ? Ces étapes d’aperçu sont conçues pour vous aider à connecter votre annuaire, à migrer vos données et à aider les membres de votre organisation à prendre en main la dernière version d’Office 2016.

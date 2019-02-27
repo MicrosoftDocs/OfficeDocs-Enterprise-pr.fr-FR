@@ -7,16 +7,18 @@ audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
 localization_priority: Normal
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- Strat_O365_Enterprise
+- M365-subscription-management
 search.appverid:
 - MET150
 description: Comprendre la prise en charge de l'application cliente Office 365 pour la gestion des applications mobiles
-ms.openlocfilehash: c5cfe356e9c25fd23df298b52100e38b4064655c
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.openlocfilehash: 6f8461a9a0cdb49123c2a0fc2b55c2c27b74ca5b
+ms.sourcegitcommit: fd137a68c516379a9f09e06987e8d45d92de7ed6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085043"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "30303588"
 ---
 # <a name="office-365-client-app-support---mobile-application-management"></a>Prise en charge de l'application cliente Office 365-gestion des applications mobiles
 

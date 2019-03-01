@@ -11,18 +11,18 @@ localization_priority: Priority
 search.appverid:
 - MET150
 ms.collection:
-- Ent_O365
+- M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Résumé : Voir les articles suivants pour comprendre la mise en réseau pour Office 365.'
-ms.openlocfilehash: 10f5742e8fc38af49df95e98c4f512eeddc9377f
-ms.sourcegitcommit: b94bd747d0797a5889294f4794e8cfc0310f5539
+ms.openlocfilehash: b86d4afaf204cfdd22cb4ca7c85608b384ca431a
+ms.sourcegitcommit: eb52922c0ee34791fd71ae78338ab203f7761eec
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "26034885"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341915"
 ---
 # <a name="set-up-your-network-for-office-365"></a>Configurer votre réseau pour Office 365
 
@@ -52,7 +52,7 @@ Les points de terminaison sont l’ensemble des adresses IP de destination, noms
 
 Pour optimiser les performances aux services Office 365 basés sur le cloud, ces points de terminaison nécessitent une gestion spéciale par les autres navigateurs client et les appareils dans votre réseau de périmètre. Ces appareils incluent pare-feux, SSL Break and Inspect et des appareils d’inspection des paquets, et systèmes de protection contre la perte de données.
 
-Voir [gestion des points de terminaison d’Office 365 ](managing-office-365-endpoints.md) pour plus d’informations.
+Voir [Gestion des points de terminaison d’Office 365 ](managing-office-365-endpoints.md) pour plus d’informations.
 
 Il existe actuellement cinq différents clouds Office 365. Ce tableau vous permet d’accéder à la liste des points de terminaison pour chacun d’eux.
 
@@ -61,15 +61,15 @@ Il existe actuellement cinq différents clouds Office 365. Ce tableau vous perme
 | [Points de terminaison internationaux](urls-and-ip-address-ranges.md) | Les points de terminaison pour les abonnements Office 365 dans le monde, dont le États-Unis Government Community Cloud (GCC). |
 | [Points de terminaison DoD du gouvernement américain](office-365-u-s-government-dod-endpoints.md) | Les points de terminaison pour les abonnements aux États-Unis Department of Defense (DoD). |
 | [Points de terminaison GCC High du gouvernement américain](office-365-u-s-government-gcc-high-endpoints.md) | Les points de terminaison pour les abonnements aux États-Unis pour le secteur public Communauté Cloud élevé (GCC élevé). |
-| [Office 365 géré par les points de terminaison 21Vianet](urls-and-ip-address-ranges-21vianet.md) | Les points de terminaison pour Office 365 géré par 21Vianet, qui est conçu pour répondre aux besoins pour Office 365 en Chine. |
-| [Points de terminaison Office 365 de l’Allemagne](office-365-germany-endpoints.md) | Les points de terminaison pour un cloud en Europe distinct, pour les clients plus régulés en Allemagne, Union européenne (UE) et l’Association européenne de libre-échange (AELE). |
+| [Office 365 géré par les points de terminaison 21Vianet](urls-and-ip-address-ranges-21vianet.md) | Les points de terminaison pour Office 365 géré par 21Vianet, qui est conçu pour répondre aux besoins d’Office 365 en Chine. |
+| [Points de terminaison Office 365 Germany](office-365-germany-endpoints.md) | Les points de terminaison pour un cloud en Europe distinct, pour les clients plus régulés en Allemagne, Union européenne (UE) et l’Association européenne de libre-échange (AELE). |
 |||
 
-Pour automatiser l’obtention de la dernière liste des points de terminaison pour votre cloud Office 365, voir [adresse IP Office 365 et URL du service Web](office-365-ip-web-service.md).
+Pour automatiser l’obtention de la dernière liste des points de terminaison pour votre cloud Office 365, voir [Service web d’URL et d’adresses IP Office 365](office-365-ip-web-service.md).
 
 Pour plus de points de terminaison, voir les articles suivants :
 
-- [Autres points de terminaison non inclus dans les services web](additional-office365-ip-addresses-and-urls.md)
+- [Autres points de terminaison supplémentaires non inclus dans les services web](additional-office365-ip-addresses-and-urls.md)
 - [Requêtes réseau dans Office 2016 pour Mac](network-requests-in-office-2016-for-mac.md)
 
 

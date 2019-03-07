@@ -15,20 +15,20 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Certains réseaux d'entreprise restreignent l'accès aux emplacements Internet génériques ou incluent une déformation ou un traitement substantiel du trafic réseau. Pour s'assurer que les ordinateurs sur des réseaux comme ceux-ci peuvent accéder à Office 365, les administrateurs réseau et proxy doivent gérer la liste des noms de domaine complets, des URL et des adresses IP qui composent la liste des points de terminaison Office 365. Ceux-ci doivent être ajoutés à l'itinéraire direct, à la déviation du proxy et/ou aux règles de pare-feu et/ou aux fichiers PAC pour s'assurer que les demandes réseau sont en mesure d'atteindre Office 365.
-ms.openlocfilehash: d9138dd5d583b684c82d525001faee4d06e0fbe5
-ms.sourcegitcommit: eb52922c0ee34791fd71ae78338ab203f7761eec
+ms.openlocfilehash: a094e647a0b228527e8702f24e57aa4276589f70
+ms.sourcegitcommit: 19f0deee26b6cf2eef316c742054572bb9d98b84
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341985"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30458354"
 ---
 # <a name="managing-office-365-endpoints"></a>Gestion des points de terminaison Office 365
 
-La plupart des organisations d'entreprise disposant de plusieurs emplacements de bureau et d'un réseau étendu de connexion doivent avoir besoin d'une configuration pour la connectivité réseau Office 365. Vous pouvez optimiser votre réseau en envoyant toutes les demandes réseau Office 365 approuvées directement via votre pare-feu, en contournant toute inspection ou traitement supplémentaire au niveau des paquets. Cela réduit la latence et les besoins en matière de capacité de périmètre. L'identification du trafic réseau Office 365 est la première étape pour fournir des performances optimales pour vos utilisateurs. Pour plus d'informations sur la connectivité réseau Office 365, voir [principes de connectivité réseau office 365](office-365-network-connectivity-principles.md)
+La plupart des organisations d'entreprise disposant de plusieurs emplacements de bureau et d'un réseau étendu de connexion doivent avoir besoin d'une configuration pour la connectivité réseau Office 365. Vous pouvez optimiser votre réseau en envoyant toutes les demandes réseau Office 365 approuvées directement via votre pare-feu, en contournant toute inspection ou traitement supplémentaire au niveau des paquets. Cela réduit la latence et les besoins en matière de capacité de périmètre. L'identification du trafic réseau Office 365 est la première étape pour fournir des performances optimales pour vos utilisateurs. Pour plus d'informations sur la connectivité réseau Office 365, consultez la rubrique [office 365 Network Connectivity principes](office-365-network-connectivity-principles.md).
 
-Microsoft vous recommande d'accéder aux points de terminaison réseau Office 365 et de les modifier à l'aide de l' [adresse IP office 365 et du service Web d'URL](office-365-ip-web-service.md)
+Microsoft vous recommande d'accéder aux points de terminaison réseau Office 365 et de les modifier à l'aide de l' [adresse IP office 365 et du service Web d'URL](office-365-ip-web-service.md).
 
-Quelle que soit la façon dont vous gérez le trafic réseau Office 365 vital, Office 365 nécessite une connectivité Internet. Les autres points de terminaison réseau pour lesquels la connectivité est requise sont répertoriés sur [des points de terminaison supplémentaires non inclus dans le service Web d'URL et d'adresse IP Office 365](additional-office365-ip-addresses-and-urls.md)
+Quelle que soit la façon dont vous gérez le trafic réseau Office 365 vital, Office 365 nécessite une connectivité Internet. Les autres points de terminaison réseau pour lesquels la connectivité est requise sont répertoriés aux [points de terminaison supplémentaires non inclus dans le service Web d'URL et d'adresse IP Office 365](additional-office365-ip-addresses-and-urls.md).
 
 La manière dont vous utilisez les points de terminaison réseau Office 365 dépendra de l'architecture réseau de votre organisation d'entreprise. Cet article décrit plusieurs méthodes d'intégration des architectures réseau d'entreprise aux adresses IP et aux URL Office 365. Le moyen le plus simple de choisir les demandes réseau à approuver est d'utiliser des appareils SDWAN qui prennent en charge la configuration automatisée d'Office 365 à chaque emplacement de votre bureau.
 
@@ -77,7 +77,7 @@ Vous pouvez transmettre un certain nombre de paramètres au script:
 |**TenantName** <br/> |Votre nom de client Office 365. Transmis au service Web et utilisé comme paramètre remplaçable dans certaines URL d'Office 365. <br/> |
 |**Type** <br/> |Type du fichier PAC de proxy à générer. <br/> |
 
-Voici un autre exemple d'appel du script PowerShell avec des paramètres supplémentaires.
+Voici un autre exemple d'appel du script PowerShell avec des paramètres supplémentaires:
 
 ```powershell
 Get-PacFile -Type 2 -Instance Worldwide -TenantName Contoso -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7
@@ -112,7 +112,7 @@ Le service Web d'URL et d'adresses IP Office 365 fournit un flux RSS auquel vous
 
 Nous comprenons qu'il est possible que vous deviez toujours traiter manuellement les modifications apportées au point de terminaison réseau par mois. Vous pouvez utiliser Microsoft Flow pour créer un flux qui vous avertit par courrier électronique et exécute éventuellement un processus d'approbation pour les modifications lorsque les points de terminaison réseau Office 365 ont des modifications. Une fois la révision terminée, vous pouvez faire en sorte que les modifications soient automatiquement envoyées par courrier électronique à l'équipe de gestion de votre pare-feu et de votre serveur proxy.
 
-Pour plus d'informations sur un modèle et un exemple de flux Microsoft, consultez la rubrique [utilisation de Microsoft Flow pour recevoir un courrier électronique pour les modifications apportées aux adresses IP et aux URL Office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/td-p/240651)
+Pour plus d'informations sur un modèle et un exemple de flux Microsoft, voir [utiliser Microsoft Flow pour recevoir un courrier électronique pour les modifications apportées aux adresses IP et aux URL Office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/td-p/240651).
   
 <a name="FAQ"> </a>
 ## <a name="office-365-network-endpoints-faq"></a>FAQ sur les points de terminaison réseau Office 365
@@ -185,7 +185,7 @@ Office 365 et d'autres services Microsoft utilisent plusieurs services tiers tel
 ### <a name="i-have-to-have-the-minimum-connectivity-possible-for-office-365"></a>Je dois disposer de la connectivité minimale pour Office 365
 <a name="bkmk_thirdparty"> </a>
 
-Office 365 est une suite de services conçue pour fonctionner sur Internet, les promesses de fiabilité et de disponibilité sont basées sur de nombreux services Internet standard disponibles. Par exemple, les services Internet standard, tels que DNS, la liste de réVOCATION de certificats et CDN doivent être accessibles pour utiliser Office 365, tout comme ils doivent être accessibles pour utiliser les services Internet modernes les plus récents.
+Comme Office 365 est une suite de services conçue pour fonctionner sur Internet, les promesses de fiabilité et de disponibilité sont basées sur de nombreux services Internet standard disponibles. Par exemple, les services Internet standard, tels que DNS, la liste de réVOCATION de certificats et CDN doivent être accessibles pour utiliser Office 365, tout comme ils doivent être accessibles pour utiliser les services Internet modernes les plus récents.
 
 La suite Office 365 est divisée en domaines de service principaux. Ces éléments peuvent être activés de manière sélective pour la connectivité et il existe un domaine commun qui est une dépendance de tous et est toujours obligatoire.
 
@@ -194,7 +194,7 @@ La suite Office 365 est divisée en domaines de service principaux. Ces élémen
 |**Exchange** <br/> |Exchange Online et Exchange Online Protection <br/> |
 |**SharePoint** <br/> |Sharepoint Online et OneDrive Entreprise <br/> |
 |**Skype Entreprise Online et Microsoft Teams** <br/> |Skype entreprise et Microsoft teams <br/> |
-|**Usage** <br/> |Office 365 Pro plus, Office Online, Azure AD et autres points de terminaison réseau courants <br/> |
+|**Courant** <br/> |Office 365 Pro plus, Office Online, Azure AD et autres points de terminaison réseau courants <br/> |
 
 En plus des services Internet de base, il existe des services tiers qui sont uniquement utilisés pour intégrer les fonctionnalités. Bien que ces éléments soient nécessaires à l'intégration, ils sont marqués comme étant facultatifs dans l'article relatif aux points de terminaison Office 365, ce qui signifie que les fonctionnalités de base du service continueront à fonctionner si le point de terminaison n'est pas accessible. Tout point de terminaison réseau requis aura l'attribut required défini sur true. Tout point de terminaison réseau facultatif aura l'attribut required défini sur false et l'attribut notes détaillera la fonctionnalité manquante dont vous devez vous attendre si la connectivité est bloquée.
   
@@ -203,7 +203,7 @@ Si vous essayez d'utiliser Office 365 et que vous ne pouvez pas accéder aux ser
 ### <a name="how-do-i-block-access-to-microsofts-consumer-services"></a>Comment bloquer l'accès aux services grand public de Microsoft?
 <a name="bkmk_consumer"> </a>
 
-La restriction de l'accès à nos services grand public doit être réalisée à vos propres risques, le seul moyen fiable de bloquer les services grand public est de restreindre l'accès au nom de domaine complet *login.live.com* . Ce nom de domaine complet est utilisé par un large éventail de services, y compris des services non consommateurs tels que MSDN, TechNet, etc. Ce nom de domaine complet est également utilisé par le programme d'échange de fichiers sécurisé de Microsoft et est nécessaire pour transférer des fichiers afin de faciliter la résolution des problèmes pour les produits Microsoft.  La limitation de l'accès à ce nom de domaine complet peut entraîner l'ajout d'exceptions à la règle pour les demandes réseau associées à ces services.
+La restriction de l'accès à nos services grand public doit être réalisée à vos propres risques. La seule façon fiable de bloquer les services grand public est de restreindre l'accès au nom de domaine complet *login.live.com* . Ce nom de domaine complet est utilisé par un large éventail de services, y compris des services non consommateurs tels que MSDN, TechNet, etc. Ce nom de domaine complet est également utilisé par le programme d'échange de fichiers sécurisé de Microsoft et est nécessaire pour transférer des fichiers afin de faciliter la résolution des problèmes pour les produits Microsoft.  La limitation de l'accès à ce nom de domaine complet peut entraîner l'ajout d'exceptions à la règle pour les demandes réseau associées à ces services.
   
 N'oubliez pas que le blocage de l'accès aux services de grand public de Microsoft n'empêchera pas la possibilité pour un utilisateur de votre réseau d'exfiltrer les informations à l'aide d'un client Office 365 ou d'un autre service.
   
@@ -221,6 +221,6 @@ N'oubliez pas que le blocage de l'accès aux services de grand public de Microso
   
 [URL et plages d’adresses IP Office 365](urls-and-ip-address-ranges.md)
   
-[Gestion d’ExpressRoute pour la connectivité d’Office 365](managing-expressroute-for-connectivity.md)
+[Gestion de la connectivité ExpressRoute pour Office 365](managing-expressroute-for-connectivity.md)
   
 [Principes de connectivité réseau Office 365](office-365-network-connectivity-principles.md)

@@ -3,7 +3,7 @@ title: Supprimer des licences à des comptes d’utilisateurs avec Office 365 P
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/29/2019
+ms.date: 03/07/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,32 +15,32 @@ ms.custom:
 - LIL_Placement
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
-description: Explique comment utiliser Office 365 PowerShell pour supprimer des licences Office 365 qui ont été précédemment attribués aux utilisateurs.
-ms.openlocfilehash: 5b5f4550a5fade7f95669ad455aebd5d5f7fbf34
-ms.sourcegitcommit: 6826e0ea4a777f7d98500209a9d3bc75e89f8d15
+description: Explique comment utiliser Office 365 PowerShell pour supprimer des licences Office 365 précédemment attribuées à des utilisateurs.
+ms.openlocfilehash: 66ffe7275bcfd936c7df70d3969b96fefafb355d
+ms.sourcegitcommit: 0a99abcb67fc8ee7594cb66f5f7fd0e6e94eb3fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29651218"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30474175"
 ---
 # <a name="remove-licenses-from-user-accounts-with-office-365-powershell"></a>Supprimer des licences à des comptes d’utilisateurs avec Office 365 PowerShell
 
-**Résumé :** Explique comment utiliser Office 365 PowerShell pour supprimer des licences Office 365 qui ont été précédemment attribués aux utilisateurs.
+**Résumé:** Explique comment utiliser Office 365 PowerShell pour supprimer des licences Office 365 précédemment attribuées à des utilisateurs.
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Utilisez le module Azure Active Directory PowerShell pour Graph
 
 Tout d’abord, [connectez-vous à votre client Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
 
-Ensuite, répertoriez les plans de licence pour votre client avec cette commande.
+Ensuite, répertoriez les plans de licence pour votre client à l'aide de cette commande.
 
 ```
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
-Ensuite, obtenir le nom de connexion du compte pour lequel vous souhaitez supprimer une licence, également connu sous le nom d’utilisateur principal (UPN).
+Ensuite, obtenez le nom de connexion du compte pour lequel vous souhaitez supprimer une licence, également appelée nom d'utilisateur principal (UPN).
 
-Enfin, spécifiez les noms de plan de connexion et de licence utilisateur, supprimez les caractères « < » et « > » et exécuter ces commandes.
+Enfin, spécifiez les noms de connexion et de plan de licence de l'utilisateur, supprimez les caractères «<» et «>», puis exécutez ces commandes.
 
 ```
 $userUPN="<user sign-in name (UPN)>"
@@ -60,7 +60,7 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
 Tout d’abord, [connectez-vous à votre client Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
    
-Pour afficher les informations de licence plan (**éléments AccountSkuID** ) dans votre organisation, consultez les rubriques suivantes :
+Pour afficher les informations du plan de gestion des licences (**AccountSkuID** ) dans votre organisation, consultez les rubriques suivantes:
     
   - [Afficher les licences et les services avec Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md)
     
@@ -68,7 +68,7 @@ Pour afficher les informations de licence plan (**éléments AccountSkuID** ) da
     
 Si vous utilisez la cmdlet **Get-MsolUser** sans utiliser le paramètre _-All_, seuls les 500 premiers comptes sont renvoyés.
     
-### <a name="removing-licenses-from-user-accounts"></a>Supprimer des licences à partir de comptes d’utilisateurs
+### <a name="removing-licenses-from-user-accounts"></a>Suppression de licences de comptes d'utilisateurs
 
 Pour supprimer des licences à partir d’un compte d’utilisateur existant, utilisez la syntaxe suivante :
   
@@ -76,7 +76,7 @@ Pour supprimer des licences à partir d’un compte d’utilisateur existant, ut
 Set-MsolUserLicense -UserPrincipalName <Account> -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"...
 ```
 
-Cet exemple supprime le `litwareinc:ENTERPRISEPACK` licence (Office 365 entreprise E3) du compte d’utilisateur BelindaN@litwareinc.com.
+Cet exemple supprime la `litwareinc:ENTERPRISEPACK` licence (Office 365 Enterprise E3) du compte d'utilisateur BelindaN@litwareinc.com.
   
 ```
 Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -RemoveLicenses "litwareinc:ENTERPRISEPACK"
@@ -84,21 +84,21 @@ Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -RemoveLicenses "
 
 Pour supprimer des licences d’un groupe d’utilisateurs sous licence existants, appliquez l’une des méthodes suivantes :
   
-- **Filtrer les comptes basées sur un attribut de compte existant** Pour ce faire, utilisez la syntaxe suivante :
+- **Filtrer les comptes en fonction d'un attribut de compte existant** Pour ce faire, utilisez la syntaxe suivante:
     
 ```
 $x = Get-MsolUser -All <FilterableAttributes> | where {$_.isLicensed -eq $true}
 $x | foreach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"...}
 ```
 
-Cet exemple supprime le `litwareinc:ENTERPRISEPACK` (Office 365 entreprise E3) licences de tous les comptes d’utilisateurs du service ventes aux États-Unis.
+Cet exemple supprime les `litwareinc:ENTERPRISEPACK` licences (Office 365 Enterprise E3) de tous les comptes pour les utilisateurs du service des ventes aux États-Unis.
     
 ```
 $USSales = Get-MsolUser -All -Department "Sales" -UsageLocation "US" | where {$_.isLicensed -eq $true}
 $USSales | foreach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "litwareinc:ENTERPRISEPACK"}
 ```
 
-- **Utiliser une liste de comptes spécifiques** Pour ce faire, procédez comme suit :
+- **Utiliser une liste de comptes spécifiques** Pour ce faire, procédez comme suit:
     
 1. Créez et enregistrez un fichier texte contenant un seul compte sur chaque ligne comme suit :
     
@@ -111,30 +111,30 @@ kakers@contoso.com
 2. Utilisez la syntaxe suivante :
     
   ```
-  Get-Content "<FileNameAndPath>" | Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"...
+  Get-Content "<FileNameAndPath>" | ForEach { Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"... }
   ```
 
-Cet exemple supprime le `litwareinc:ENTERPRISEPACK` licence (Office 365 entreprise E3) dans les comptes d’utilisateur défini dans le fichier texte C:\My Documents\Accounts.txt.
+Cet exemple supprime la `litwareinc:ENTERPRISEPACK` licence (Office 365 Enterprise E3) des comptes d'utilisateur définis dans le fichier texte C:\My Documents\Accounts.txt.
     
   ```
-  Get-Content "C:\My Documents\Accounts.txt" | Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "litwareinc:ENTERPRISEPACK"
+  Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "litwareinc:ENTERPRISEPACK" }
   ```
 
 Pour supprimer des licences de tous les comptes d’utilisateurs existants, utilisez la syntaxe suivante :
   
 ```
-$x = Get-MsolUser -All  | where {$_.isLicensed -eq $true}
-$x | foreach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"...}
+$x = Get-MsolUser -All  | Where {$_.isLicensed -eq $true}
+$x | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"...}
 ```
 
-Cet exemple supprime le `litwareinc:ENTERPRISEPACK` licence (Office 365 entreprise E3) à partir de tout une licence de comptes d’utilisateurs.
+Cet exemple supprime la `litwareinc:ENTERPRISEPACK` licence (Office 365 Enterprise E3) de tous les comptes d'utilisateur sous licence existants.
   
 ```
-$x = Get-MsolUser -All  | where {$_.isLicensed -eq $true}
-$x | foreach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "litwareinc:ENTERPRISEPACK"}
+$x = Get-MsolUser -All  | Where {$_.isLicensed -eq $true}
+$x | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "litwareinc:ENTERPRISEPACK"}
 ```
 
-Une autre manière pour libérer une licence est en supprimant le compte d’utilisateur. Pour plus d’informations, voir [Supprimer et restaurer des comptes d’utilisateurs avec Office 365 PowerShell](delete-and-restore-user-accounts-with-office-365-powershell.md).
+Une autre façon de libérer une licence consiste à supprimer le compte d’utilisateur. Pour plus d'informations, consultez la rubrique [supprimer et restaurer des comptes d'utilisateurs avec Office 365 PowerShell](delete-and-restore-user-accounts-with-office-365-powershell.md).
   
 ## <a name="see-also"></a>Voir aussi
 
@@ -145,7 +145,7 @@ Une autre manière pour libérer une licence est en supprimant le compte d’uti
 [Mise en route d'Office 365 Powershell](getting-started-with-office-365-powershell.md)
 
     
-## <a name="new-to-office-365"></a>Vous débutez avec Office 365 ?
+## <a name="new-to-office-365"></a>Vous débutez avec Office 365 ?
 
 [!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
    

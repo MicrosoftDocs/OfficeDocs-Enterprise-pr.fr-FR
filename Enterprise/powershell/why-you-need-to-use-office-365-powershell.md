@@ -1,9 +1,9 @@
 ---
-title: Pourquoi utiliser Office 365 PowerShell ?
+title: Pourquoi utiliser Office 365 PowerShell ?
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 03/11/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: "Résumé : Vous devez être en mesure d'utiliser Office 365 PowerShell pour gérer Office 365, que ce soit pour gagner en efficacité ou par nécessité."
-ms.openlocfilehash: 9909d9665817646f7c70c66012af4b8762cceaa1
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 32110b56f1123e404b1eb7996a9af5d244874377
+ms.sourcegitcommit: ae4b3c1e2859991f3b94690f2eb3b2838d7db2d4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897467"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "30538992"
 ---
 # <a name="why-you-need-to-use-office-365-powershell"></a>Pourquoi utiliser Office 365 PowerShell ?
 
@@ -33,9 +33,9 @@ Dans cet article, nous allons vous montrer les façons dont vous pouvez utiliser
     
 - Office 365 PowerShell est idéal pour effectuer des opérations en bloc
     
-- Office 365 PowerShell est idéal pour filtrer des données
+- Office 365 PowerShell est idéal pour filtrer des données
     
-- Office 365 PowerShell facilite l’impression ou l’enregistrement des données
+- Office 365 PowerShell facilite l'impression ou l'enregistrement des données
     
 - Office 365 PowerShell vous permet de gérer tous les produits serveur
     
@@ -65,7 +65,7 @@ Le Centre d'administration Office 365 affiche beaucoup d'informations utiles, ma
   
 ![Exemple d’affichage des utilisateurs et groupes dans le Centre d’administration Office 365.](media/o365-powershell-users-and-groups.png)
   
-Pour plusieurs objectifs, il affiche les informations que vous devez connaître. Toutefois, il existe plus d’informations, vous devez parfois. Par exemple, Office 365 licensing (et les fonctionnalités disponibles pour un utilisateur d’Office 365) dépendent en partie de la position géographique de l’utilisateur. Les stratégies et les fonctionnalités que vous pouvez étendre à un utilisateur qui réside aux États-Unis ne peuvent pas être la même que les stratégies et les fonctionnalités que vous pouvez étendre à un utilisateur qui se trouve en Inde ou en Belgique. Vous pouvez utiliser le centre d’administration Office 365 pour déterminer l’emplacement géographique d’un utilisateur en suivant ces étapes :
+Dans de nombreux cas, cela permet d'afficher les informations que vous devez connaître. Toutefois, il peut arriver que vous ayez besoin de plus d'informations. Par exemple, les licences Office 365 (et les fonctionnalités Office 365 disponibles pour un utilisateur) dépendent en partie de l'emplacement géographique de cet utilisateur. Les stratégies et les fonctionnalités que vous pouvez étendre à un utilisateur qui vit aux États-Unis peuvent ne pas être les mêmes que celles que vous pouvez étendre à un utilisateur qui vit en Inde ou en Belgique. Pour utiliser le Centre d'administration Office 365 pour déterminer l'emplacement géographique d'un utilisateur, procédez comme suit :
   
 1. Double-cliquez sur l'élément **Nom d'affichage** de l'utilisateur.
     
@@ -93,7 +93,6 @@ Voici un exemple d’affichage :
 ```
 DisplayName                               UsageLocation
 -----------                               -------------
-Zrinka Makovac                            US
 Bonnie Kearney                            GB
 Fabrice Canel                             BR
 Brian Johnson (TAILSPIN)                  US
@@ -122,7 +121,6 @@ Bonnie Kearney                              GB
 Alex Darrow                                 US
 Anne Wallace                                US
 Brian Johnson (TAILSPIN)                    US
-Zrinka Makovac                              US
 ```
 
 > [!TIP]
@@ -274,7 +272,6 @@ Alex Darrow                              San Diego
 Bonnie Kearney                           San Diego
 Julian Isla                              Bloomington
 Rob Young                                Bloomington
-Zrinka Makovac                           San Diego
 ```
 
 > [!TIP]
@@ -329,7 +326,7 @@ Get-User -Filter '{LastName -like "*son"}'
   
 ## <a name="office-365-powershell-makes-it-easy-to-print-or-save-data"></a>Office 365 PowerShell facilite l’impression ou l’enregistrement des données
 
-Le centre d’administration Office 365 vous permet d’afficher des listes de données. Voici un exemple de la Skype pour le centre d’administration en ligne de Business affichage d’une liste d’utilisateurs qui ont été activés pour Skype pour Business Online :
+Le centre d'administration Office 365 vous permet d'afficher des listes de données. Voici un exemple dans lequel le Centre d'administration Skype Entreprise Online affiche la liste des utilisateurs qui ont été activés pour Skype Entreprise Online :
   
 ![Exemple de liste d’utilisateurs ayant été activés pour Skype Entreprise Online, affichée dans le Centre d’administration de Skype Entreprise Online.](media/o365-powershell-lync-users.png)
   
@@ -341,7 +338,7 @@ Heureusement, vous pouvez utiliser Office 365 PowerShell non seulement pour affi
 Get-CsOnlineUser | Select DisplayName, UserPrincipalName, UsageLocation | Export-Csv -Path "C:\Logs\SfBUsers.csv" -NoTypeInformation
 ```
 
-Voici un exemple d’affichage :
+Voici un exemple d'affichage :
   
 ![Exemple de table importée dans une feuille de calcul Excel pour des données Skype Entreprise Online qui ont été enregistrées dans un fichier de valeurs séparées par des virgules (CSV).](media/o365-powershell-data-in-excel.png)
   
@@ -407,7 +404,6 @@ Voici un exemple d’affichage :
 ```
 DisplayName             IsLicensed   IsMailboxEnabled   EnabledForSfB
 -----------             ----------   ----------------   --------------
-Zrinka Makovac          True         True               True
 Bonnie Kearney          True         True               True
 Fabrice Canel           True         True               True
 Brian Johnson           False        True               False

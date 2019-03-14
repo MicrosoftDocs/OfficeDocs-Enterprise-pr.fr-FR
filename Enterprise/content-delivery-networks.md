@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: Utilisez ces informations pour en savoir plus sur les réseaux de distribution de contenu (CDN) et sur la façon dont Office 365 les utilise. CDN permet de conserver rapidement et de façon fiable Office 365 pour les utilisateurs finaux. Avec CDN, les services Cloud comme Office 365 téléchargent rapidement du contenu générique, comme des icônes, vers le navigateur de vos utilisateurs quand ils utilisent le service via un client Web.
-ms.openlocfilehash: c38b4c1fae2a40ff702c4d2222ed534e11fa2fc3
-ms.sourcegitcommit: 19f0deee26b6cf2eef316c742054572bb9d98b84
+ms.openlocfilehash: 0c44cb1a17b64f1b2f14cc34e1207f450dbd5bbf
+ms.sourcegitcommit: 7814d01db4d7618fc2f9381faef1a6a45ea063fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30458334"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30492954"
 ---
 # <a name="content-delivery-networks"></a>Réseaux de distribution de contenu
 
@@ -77,7 +77,7 @@ Nous recherchons continuellement de nouvelles façons de répondre aux besoins d
   
 ## <a name="is-my-data-safe"></a>Mes données sont-elles sûres?
 
-Nous sommes très vigilants pour garantir la protection des données qui exécutent votre entreprise. Les données propres au client stockées dans CDN sont chiffrées à la fois en transit et au repos, et sont protégées par les mêmes autorisations au niveau du fichier, car les données ne sont pas stockées dans un CDN.
+Nous sommes très vigilants pour garantir la protection des données qui exécutent votre entreprise. Les données propres au client stockées dans CDN sont chiffrées à la fois en transit et au repos.
 
 Les fournisseurs de CDN peuvent avoir des normes de confidentialité et de conformité qui diffèrent des engagements décrits par le centre de gestion de la confidentialité Office 365. Les données mises en cache via le service CDN peuvent ne pas être conformes aux conditions de traitement des données Microsoft (DPT) et se trouver en dehors des limites de conformité du centre de gestion de la confidentialité Office 365.
 
@@ -89,7 +89,7 @@ Pour obtenir des informations détaillées sur la confidentialité et la protect
 
 ## <a name="how-can-i-secure-my-network-with-all-these-3rd-party-services"></a>Comment puis-je sécuriser mon réseau avec tous ces services tiers?
 
-L'utilisation d'un ensemble complet de services partenaires permet à Office 365 de mettre à l'échelle et de répondre aux exigences de disponibilité, ainsi que d'améliorer l'expérience utilisateur lors de l'utilisation d'Office 365. Les services tiers Office 365 tirent parti des listes de révocation de certificats; tel que crl.microsoft.com ou sa.symcb.com, et CDN; tel que R3.res.Outlook.com. Chaque nom de domaine complet (FQDN) d'Office 365 utilise un nom de domaine complet personnalisé pour Office 365, si vous êtes envoyé à un nom de domaine complet à la demande d'Office 365, vous pouvez être sûr de contrôler le nom de domaine complet et le contenu sous-jacent à cet emplacement.
+L'utilisation d'un ensemble complet de services partenaires permet à Office 365 de mettre à l'échelle et de répondre aux exigences de disponibilité, ainsi que d'améliorer l'expérience utilisateur lors de l'utilisation d'Office 365. Les services tiers Office 365 tirent parti des listes de révocation de certificats; tel que crl.microsoft.com ou sa.symcb.com, et CDN; tel que R3.res.Outlook.com. Chaque nom de domaine complet CDN Office 365 utilise un nom de domaine complet personnalisé pour Office 365. Si vous êtes envoyé à un nom de domaine complet (FQDN) à la demande d'Office 365, vous pouvez être assuré que le fournisseur de CDN contrôle le nom de domaine complet et le contenu sous-jacent à cet emplacement.
   
 Pour les clients qui souhaitent toujours séparer les demandes destinées à un centre de connaissances Microsoft ou Office 365 des demandes destinées à un tiers, nous avons écrit des instructions sur la [gestion des points de terminaison d'office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a).
   

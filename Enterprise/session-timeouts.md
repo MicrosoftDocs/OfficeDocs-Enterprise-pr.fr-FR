@@ -1,5 +1,5 @@
 ---
-title: Délais d’attente de session pour Office 365
+title: Délais d'expiration de session pour Office 365
 ms.author: tracyp
 author: MSFTTracyP
 manager: scotv
@@ -16,31 +16,33 @@ search.appverid:
 - MBS150
 - BCS160
 ms.assetid: 37a5c116-5b07-4f70-8333-5b86fd2c3c40
-description: Délais d’attente de session sont utilisés pour équilibrer la sécurité et facilité d’accès dans les applications de client Office 365.
-ms.openlocfilehash: 4ef50b876fd97e2de2449d324464b466243a6691
-ms.sourcegitcommit: fd7a56f38ba2c2d2e7fcd6e165ec58b31be299d9
+ms.collection:
+- M365-security-compliance
+description: Les délais d'expiration des sessions sont utilisés pour équilibrer les Securtiy et la facilité d'accès dans les applications clientes Office 365.
+ms.openlocfilehash: 05e0ddbfb569f476986567e55bbf93428125b3af
+ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "27378490"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "30372881"
 ---
-# <a name="session-timeouts-for-office-365"></a>Délais d’attente de session pour Office 365
+# <a name="session-timeouts-for-office-365"></a>Délais d'expiration de session pour Office 365
 
-Durée de vie de session est une part importante de l’authentification pour Office 365 et un élément important dans l’équilibrage de la sécurité et le nombre de fois que les utilisateurs sont invités de leurs informations d’identification.
+La durée de vie des sessions est un élément important de l'authentification pour Office 365 et est un composant important dans l'équilibrage de la sécurité et le nombre de fois que les utilisateurs sont invités à entrer leurs informations d'identification.
   
-## <a name="session-times-for-office-365-services"></a>Durées de session pour les services Office 365
+## <a name="session-times-for-office-365-services"></a>Temps de session pour les services Office 365
 
-Lorsque les utilisateurs s’authentifient dans les applications mobiles ou les applications web Office 365, une session est établie. Pendant la durée de la session, les utilisateurs ne doivent s’authentifier à nouveau. Sessions peut expirer lorsque les utilisateurs sont inactives, lorsqu’ils ferment du navigateur ou un onglet, ou lorsque leur jeton d’authentification pour d’autres raisons telles que lorsque leur mot de passe réinitialisé arrive à expiration. Les services Office 365 ont des délais d’attente de session différent pour correspondre à l’utilisation classique de chaque service.
+Lorsque les utilisateurs s'authentifient dans l'une des applications Web ou des applications mobiles Office 365, une session est établie. Pendant la durée de la session, les utilisateurs n'ont pas besoin de s'authentifier à nouveau. Les sessions peuvent expirer lorsque les utilisateurs sont inactifs, lorsqu'ils ferment le navigateur ou l'onglet, ou lorsque leur jeton d'authentification expire pour d'autres raisons, comme lorsque leur mot de passe a été réinitialisé. Les services Office 365 ont des délais d'expiration de session différents en fonction de l'utilisation classique de chaque service.
   
-Le tableau suivant répertorie les durées de vie de session pour les services Office 365 :
+Le tableau suivant répertorie les durées de vie des sessions pour les services Office 365:
   
-|**Service Office 365**|**Délai d’expiration de session**|
+|**Service Office 365**|**Délai d'expiration de session**|
 |:-----|:-----|
-|Centre d’administration Office 365  <br/> |Vous êtes invité à fournir des informations d’identification pour le centre d’administration toutes les 8 heures.  <br/> |
-|SharePoint Online  <br/> |5 jours d’inactivité tant que les utilisateurs choisit **maintenir la connexion**. Si l’utilisateur accède à SharePoint Online à nouveau une fois au moins 24 heures se sont écoulées à partir de la connexion à précédente, la valeur de délai d’expiration est remises à 5 jours.<br/> |
-|Outlook Web App  <br/> |6 heures.  <br/> Vous pouvez modifier cette valeur en utilisant le paramètre _ActivityBasedAuthenticationTimeoutInterval_ dans l’applet de commande [Set-OrganizationConfig](https://go.microsoft.com/fwlink/p/?LinkId=615378) .  <br/> |
-|Azure Active Directory  <br/> (Utilisé par les clients Office 2013 Windows avec l’authentification moderne est activée)  <br/> | Authentification moderne utilise des jetons d’accès et les jetons d’actualisation pour accorder l’accès utilisateur aux ressources Office 365 à l’aide d’Azure Active Directory. Un jeton d’accès est un jeton JSON Web fourni après une authentification réussie et valid pour 1 heure. Un jeton d’actualisation d’une durée de vie plu est également fourni. Expiration des jetons d’accès, les clients Office utilisent un jeton d’actualisation valide pour obtenir un jeton d’accès. Cet échange aboutit si l’authentification initiale de l’utilisateur est toujours valide.  <br/>  Jetons d’actualisation sont valides pendant 90 jours, et avec l’utilisation continue, ils peuvent être valides jusqu'à ce que révoqué.  <br/>  Actualiser les jetons peuvent invalidés par plusieurs événements tels que :  <br/>  Mot de passe de l’utilisateur a changé depuis le jeton d’actualisation a été émis.  <br/>  Un administrateur peut appliquer les stratégies d’accès conditionnel qui restreindre l’accès à la ressource que l’utilisateur tente d’accéder.  <br/> |
-|SharePoint et OneDrive des applications mobiles pour Android, iOS et Windows 10  <br/> |La durée de vie par défaut pour le jeton d’accès est 1 heure. La durée d’inactivité maximale par défaut du jeton d’actualisation est 90 jours.<br/> [Pour plus d’informations sur les jetons et comment configurer la durée de vie des jetons](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-configurable-token-lifetimes) <br/> Pour révoquer l’actualisation un jeton, vous pouvez réinitialiser le mot de passe Office 365  <br/> |
-|Yammer avec connexion dans Office 365  <br/> |Durée de vie du navigateur. Si les utilisateurs fermez le navigateur et accéder Yammer dans une nouvelle fenêtre de navigateur, Yammer sera réauthentifier les avec Office 365. Si les utilisateurs utilisent des navigateurs tiers que les cookies de cache, il faudra pas réauthentifier lorsqu’ils rouvrez le navigateur.<br/> > [!NOTE]> Ceci est valide uniquement pour les réseaux à l’aide de connexion à Office 365 pour Yammer.           |
+|Centre d'administration Office 365  <br/> |Vous êtes invité à fournir des informations d'identification pour le centre d'administration toutes les 8 heures.  <br/> |
+|SharePoint Online  <br/> |5 jours d'inactivité tant que l'utilisateur choisit **maintenir la connexion**. Si l'utilisateur accède à nouveau à SharePoint Online après 24 heures ou plus, la valeur de délai d'expiration est réinitialisée à 5 jours.  <br/> |
+|Outlook Web App  <br/> |6 heures.  <br/> Vous pouvez modifier cette valeur à l'aide du paramètre _ActivityBasedAuthenticationTimeoutInterval_ de la cmdlet [Set-OrganizationConfig](https://go.microsoft.com/fwlink/p/?LinkId=615378) .  <br/> |
+|Azure Active Directory  <br/> (Utilisé par les clients Windows 2013 avec l'authentification moderne activée)  <br/> | L'authentification moderne utilise des jetons d'accès et actualise les jetons pour accorder à l'utilisateur l'accès aux ressources Office 365 à l'aide d'Azure Active Directory. Un jeton d'accès est un jeton Web JSON fourni après une authentification réussie pendant 1 heure. Un jeton d'actualisation avec une durée de vie plus longue est également fourni. Lorsque les jetons d'accès expirent, les clients Office utilisent un jeton d'actualisation valide pour obtenir un nouveau jeton d'accès. Cet échange réussit si l'authentification initiale de l'utilisateur est toujours valide.  <br/>  Les jetons d'actualisation sont valides pendant 90 jours, et avec une utilisation continue, ils peuvent être valides jusqu'à leur révocation.  <br/>  Les jetons d'actualisation peuvent être invalidés par plusieurs événements, tels que:  <br/>  Le mot de passe de l'utilisateur a été modifié depuis l'émission du jeton d'actualisation.  <br/>  Un administrateur peut appliquer des stratégies d'accès conditionnel qui restreignent l'accès à la ressource à laquelle l'utilisateur tente d'accéder.  <br/> |
+|Applications mobiles SharePoint et OneDrive pour Android, iOS et Windows 10  <br/> |La durée de vie par défaut du jeton d'accès est de 1 heure. Le temps d'inactivité maximal par défaut du jeton d'actualisation est de 90 jours.  <br/> [En savoir plus sur les jetons et sur la configuration de la durée de vie des jetons](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-configurable-token-lifetimes) <br/> Pour révoquer le jeton d'actualisation, vous pouvez réinitialiser le mot de passe Office 365 de l'utilisateur  <br/> |
+|Yammer avec Office 365 connexion  <br/> |Durée de vie du navigateur. Si les utilisateurs ferment le navigateur et accèdent à Yammer dans un nouveau navigateur, Yammer les authentifie de nouveau avec Office 365. Si les utilisateurs utilisent des navigateurs tiers qui cachent les cookies, ils n'ont peut-être pas besoin de s'authentifier à nouveau lors de la réouverture du navigateur.  <br/> > [!NOTE]> ceci est uniquement valide pour les réseaux utilisant la connexion à Office 365 pour Yammer.           |
    
 

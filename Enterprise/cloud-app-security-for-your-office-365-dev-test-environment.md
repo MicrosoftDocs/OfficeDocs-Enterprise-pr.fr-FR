@@ -16,18 +16,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: 'Résumé : Configurez et faites une démonstration de la sécurité des applications cloud Office 365 dans votre environnement de développement/test Office 365.'
-ms.openlocfilehash: 2c29e650233348e44bf72adcb8b18580e1de8802
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: f8630f1666286c2f3cced9323eccbe1f73203fdb
+ms.sourcegitcommit: e5598a1220316122b5ed206c2607092ea1eac65c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897057"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30573678"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Sécurité des applications cloud pour votre environnement de développement/test Office 365
 
  **Résumé :** Configurez et faites une démonstration de la sécurité des applications cloud Office 365 dans votre environnement de développement/test Office 365.
   
-Office 365 Cloud application sécurité, anciennement appelé Office 365 gestion avancée de sécurité, vous permet de créer des stratégies de surveiller et vous informent des activités suspectes dans votre abonnement Office 365, afin que vous pouvez examiner et prendre correction possible action. Pour plus d’informations, voir [Vue d’ensemble du nuage application sécurité dans Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475).
+Office 365 Cloud App Security, précédemment appelé Office 365 Advanced Security Management, vous permet de créer des stratégies qui surveillent et vous informent des activités suspectes dans votre abonnement Office 365, afin que vous puissiez examiner et prendre les mesures correctives possibles. transactionnelle. Pour plus d'informations, reportez-vous à la rubrique [vue d'ensemble de la sécurité des applications Cloud dans Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475).
   
 Les instructions fournies dans cet article indiquent comment activer et tester la sécurité des applications cloud dans votre abonnement d’évaluation Office 365.
   
@@ -36,24 +36,24 @@ Les instructions fournies dans cet article indiquent comment activer et tester l
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Phase 1 : Créer votre environnement de développement/test Office 365 en mode léger ou pour entreprise simulée
 
-Si vous souhaitez uniquement tester la sécurité d’application de Cloud de manière léger avec la configuration minimale requise, suivez les instructions en phases 2 et 3 de [l’environnement de développement/test Office 365](office-365-dev-test-environment.md).
+Si vous souhaitez simplement tester la sécurité des applications Cloud avec la configuration minimale requise, suivez les instructions des phases 2 et 3 de l' [environnement de développement/test Office 365](office-365-dev-test-environment.md).
   
-Si vous souhaitez tester la sécurité d’application Cloud dans une entreprise simulée, suivez les instructions de [synchronisation d’annuaire pour votre environnement de développement/test Office 365](dirsync-for-your-office-365-dev-test-environment.md).
+Si vous souhaitez tester la sécurité des applications Cloud dans une entreprise simulée, suivez les instructions de [DirSync pour votre environnement de développement/test Office 365](dirsync-for-your-office-365-dev-test-environment.md).
   
 > [!NOTE]
 > Le test de la sécurité des applications cloud ne requiert pas l’environnement de développement/test en entreprise simulée, qui utilise un intranet simulé connecté à Internet et la synchronisation d’annuaires pour une forêt Windows Server Active Directory. Il est proposé comme option dans cet article afin que vous puissiez tester la sécurité des applications cloud et faire des essais dans un environnement qui représente une organisation classique. 
   
 ## <a name="phase-2-before-enabling-cloud-app-security-and-creating-a-policy"></a>Phase 2 : Avant d’activer la sécurité des applications cloud et de créer une stratégie
 
-Dans cette procédure, vous montrez qu’avant l’activation de la sécurité des applications dans le nuage, modification du rôle d’un utilisateur ne fournit aucune notification par courrier électronique à l’administrateur global.
+Dans cette procédure, vous démontrez qu'avant d'activer la sécurité des applications Cloud, la modification du rôle d'un utilisateur n'offre aucune notification par courrier électronique à l'administrateur général.
   
 ### <a name="test-the-default-notification-behavior-of-office-365"></a>Tester le comportement par défaut des notifications d’Office 365
 
-1. Accédez au portail Office 365 ([https://portal.office.com](https://portal.office.com)) et se connecter à votre abonnement d’évaluation d’Office 365 avec votre compte d’administrateur global.
+1. Accédez au centre d'administration de Microsoft 365[https://admin.microsoft.com](https://admin.microsoft.com)() et connectez-vous à votre abonnement d'évaluation Office 365 avec votre compte d'administrateur général.
     
   - Si vous utilisez l’environnement de développement/test Office 365 léger, connectez-vous sur votre ordinateur local.
     
-  - Si vous utilisez l’environnement de développement/test Office 365 entreprise simulé, utilisez le [portail Azure](https://portal.azure.com) pour se connecter à l’ordinateur virtuel CLIENT1 et puis se connecter à partir de CLIENT1.
+  - Si vous utilisez l'environnement de développement/test Office 365 entreprise simulé, utilisez le [portail Azure](https://portal.azure.com) pour vous connecter à la machine virtuelle CLIENT1, puis connectez-vous à partir de client1.
     
 2. Sur la page principale du portail, cliquez sur **Administrateur**.
     
@@ -67,7 +67,7 @@ Dans cette procédure, vous montrez qu’avant l’activation de la sécurité d
     
 7. 	Sélectionnez l’icône de lanceur d’applications dans l’angle supérieur gauche et choisissez **Messagerie**.
     
-8. Attendez 30 minutes. Ne Notez qu’aucun message électronique dans la boîte de réception pour vous avertir de la modification au rôle d’utilisateur 4 en tant qu’administrateur global.
+8. Attendez 30 minutes. Notez qu'aucun message électronique dans la boîte de réception ne vous avertit de la modification apportée au rôle de l'utilisateur 4 en tant qu'administrateur général.
     
 ## <a name="phase-3-enable-cloud-app-security-and-create-a-policy"></a>Phase 3 : Activer la sécurité des applications cloud et créer une stratégie
 
@@ -79,9 +79,9 @@ Cette procédure indique comment activer la sécurité des applications cloud et
     
 ### <a name="enable-and-configure-cloud-app-security"></a>Activer et configurer la sécurité des applications cloud
 
-1. Accédez au portail Office 365 ([https://portal.office.com](https://portal.office.com)) et se connecter à votre abonnement d’évaluation d’Office 365 avec votre compte d’administrateur global.
+1. Accédez au centre d'administration de Microsoft 365[https://admin.microsoft.com](https://admin.microsoft.com)() et connectez-vous à votre abonnement d'évaluation Office 365 avec votre compte d'administrateur général.
     
-2. Cliquez sur la vignette de **l’administrateur** . Sous l’onglet **Centre d’administration d’Office** , cliquez sur **Admin centres > sécurité & conformité**.
+2. Cliquez sur la vignette **Administration**. Dans l'onglet **Centre d'administration Office** , cliquez sur centres d'administration **_GT_ sécurité & conformité**.
     
 3. Dans le volet de navigation de gauche, cliquez sur **Alertes > Gérer les alertes avancées**.
     
@@ -111,7 +111,7 @@ Cette procédure permet de montrer comment la sécurité des applications cloud 
 
 1. Dans l’angle supérieur droit, cliquez sur l’icône de l’utilisateur, puis cliquez sur **Déconnexion**.
     
-2. Accédez à [https://portal.office.com](https://portal.office.com).
+2. Accédez à [https://www.office.com](https://www.office.com).
     
 3. Sur la page de connexion Office 365, cliquez sur **Utiliser un autre compte**.
     
@@ -135,15 +135,15 @@ Cette procédure permet de montrer comment la sécurité des applications cloud 
     
 13. Cliquez sur l’icône de l’utilisateur dans le coin supérieur droit, puis cliquez sur **Déconnexion**.  
     
-14. Accédez à [https://portal.office.com](https://portal.office.com).
+14. Accédez à [https://www.office.com](https://www.office.com).
     
 15. Sur la **page de connexion Office 365**, cliquez sur le nom de votre compte d’administrateur général.
     
 16. Entrez le mot de passe, puis cliquez sur **Se connecter**.
     
-17. Sur la page principale du portail, cliquez sur **Administrateur**.
+17. À partir de la page du portail Office 365, cliquez sur **administrateur**.
     
-18. Cliquez sur le **sécurité &amp; conformité** mosaïque.
+18. Cliquez sur la vignette **conformité de sécurité &amp; ** .
     
 19. Dans le volet de navigation de gauche, cliquez sur **Alertes > Gérer les alertes avancées**.
     
@@ -155,7 +155,7 @@ Cette procédure permet de montrer comment la sécurité des applications cloud 
     
     Vous devriez voir deux nouveaux messages électroniques dont le titre mentionne le **service de notification Microsoft Azure AD** dans la boîte de réception. L’un d’eux indique que le compte Utilisateur 5 a été ajouté au rôle **Administrateur de mots de passe** et l’autre que ce même compte a été ajouté au rôle **Administrateur d'utilisateurs** (équivalent du rôle d’administrateur de gestion des utilisateurs dans le centre d’administration Office 365).
     
-Vous pouvez maintenant utiliser cet environnement pour créer de nouvelles stratégies et autres expérimenter la sécurité d’application Office 365 dans le nuage. Pour des liens vers des articles de configuration supplémentaires, voir [préparer à Office 365 nuage sécurité des applications](https://support.office.com/article/Get-ready-for-Office-365-Cloud-App-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a) .
+Vous pouvez désormais utiliser cet environnement pour créer des stratégies et expérimenter plus en profondeur la sécurité des applications cloud Office 365. Voir [Get Ready for Office 365 Cloud App Security](https://support.office.com/article/Get-ready-for-Office-365-Cloud-App-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a) pour obtenir des liens vers d'autres Articles de configuration.
   
 ## <a name="see-also"></a>Voir aussi
 
@@ -165,6 +165,6 @@ Vous pouvez maintenant utiliser cet environnement pour créer de nouvelles strat
   
 [Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.md)
 
-[Vue d’ensemble de la sécurité d’application Cloud dans Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)
+[Vue d'ensemble de la sécurité des applications Cloud dans Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)
 
 

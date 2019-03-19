@@ -3,7 +3,7 @@ title: Connecter un réseau local à Microsoft Azure Virtual Network
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/23/2018
+ms.date: 03/15/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,18 +17,18 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: 'Résumé : Découvrez comment configurer un réseau virtuel Azure intersites pour les charges de travail de serveur Office avec une connexion VPN de site à site.'
-ms.openlocfilehash: 640db506ec49d468dcb09ce3804c76c1f4562f13
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 0bcf5aebf3a469f75ffac6c5df3d1f808038a299
+ms.sourcegitcommit: b85d3db24385d7e0bdbfb0d4499174ccd7f573bd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915319"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "30650147"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>Connecter un réseau local à Microsoft Azure Virtual Network
 
  **Résumé :** Découvrez comment configurer un réseau virtuel Azure intersites pour les charges de travail de serveur Office.
   
-Un réseau virtuel Azure intersites est connecté à votre réseau local, étendant ainsi votre réseau pour inclure des sous-réseaux et machines virtuelles hébergés dans les services d’infrastructure Azure. Cette connexion permet aux ordinateurs se trouvant sur votre réseau local d’accéder directement aux machines virtuelles dans Azure et vice-versa. 
+Un réseau virtuel Azure entre différents locaux est connecté à votre réseau local, étendant ainsi votre réseau pour inclure des sous-réseaux et machines virtuelles hébergés dans les services d’infrastructure Azure. Cette connexion permet aux ordinateurs de votre réseau local d’accéder directement aux machines virtuelles dans Azure et inversement. 
 
 Par exemple, un serveur de synchronisation d’annuaires exécuté sur une machine virtuelle Azure doit interroger les contrôleurs de votre domaine local concernant les modifications apportées aux comptes et synchroniser ces modifications avec votre abonnement Office 365. Cet article vous explique comment configurer un réseau virtuel Azure intersites à l’aide d’une connexion VPN de site à site prête à héberger des machines virtuelles Azure.
 
@@ -36,8 +36,8 @@ Par exemple, un serveur de synchronisation d’annuaires exécuté sur une machi
 
 Vos machines virtuelles dans Azure n'ont pas besoin d'être isolées de votre environnement local. Pour connecter des machines virtuelles Azure à des ressources réseau locales, vous devez configurer un réseau virtuel Azure local. Le diagramme suivant montre les composants requis pour déployer un réseau virtuel Azure entre différents locaux avec une machine virtuelle dans Azure.
   
-![Réseau local connecté à Microsoft Azure via une connexion VPN de site à site](media/CP-ConnectOnPremisesNetworkToAzureVPN.png)
-  
+![Réseau local connecté à Microsoft Azure via une connexion VPN de site à site](media/86ab63a6-bfae-4f75-8470-bd40dff123ac.png)
+ 
 Dans le diagramme, il existe deux réseaux connectés par une connexion VPN de site à site : le réseau local et le réseau virtuel Azure. La connexion VPN de site à site est :
 
 - entre deux points de terminaison qui sont adressables et se trouvent sur l’Internet public ;
@@ -174,7 +174,7 @@ Concernant les serveurs DNS locaux qui doivent être utilisés par les machines 
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
-Pour acheminer les paquets du réseau virtuel Azure vers le réseau de votre organisation par le biais de la connexion VPN de site à site, vous devez configurer le réseau virtuel avec un réseau local. Ce réseau local contient la liste des espaces d’adressage (au format CIDR) pour l’ensemble des emplacements sur le réseau local de votre organisation que les machines virtuelles du réseau virtuel doivent atteindre. Il peut s’agir de l’ensemble des emplacements sur le réseau local ou un sous-ensemble. La liste des espaces d’adressage qui définissent votre réseau local doit être unique et ne doit pas se chevaucher avec les espaces d’adressage utilisés pour ce réseau virtuel ou vos autres réseaux virtuels entre différents locaux.
+Pour acheminer les paquets du réseau virtuel Azure vers le réseau de votre organisation par le biais de la connexion VPN de site à site, vous devez configurer le réseau virtuel avec un réseau local. Ce réseau local possède la liste des espaces d’adressage (au format CIDR) pour l’ensemble des emplacements sur le réseau local de votre organisation que les machines virtuelles du réseau virtuel doivent atteindre. Il peut s’agir de l’ensemble des emplacements sur le réseau local ou un sous-ensemble. La liste des espaces d’adressage qui définissent votre réseau local doit être unique et ne doit pas se chevaucher avec les espaces d’adressage utilisés pour ce réseau virtuel ou les autres réseaux virtuels intersites.
   
 Pour l’ensemble des espaces d’adressage du réseau local, remplissez le tableau L. Notez que le tableau comporte trois entrées vides, mais vous aurez généralement besoin d’en ajouter. Renseignez-vous auprès de votre service informatique pour déterminer cette liste.
   
@@ -210,33 +210,35 @@ Voici la configuration finale.
 <a name="Phase2"></a>
 
 Tout d’abord, ouvrez une invite PowerShell Azure. Si vous n’avez pas installé Azure PowerShell, reportez-vous à l’article sur la [prise en main des cmdlets Azure PowerShell](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/).
-  
+
+<!--  
 > [!NOTE]
-> Ces commandes sont destinées à Azure PowerShell 1.0 et versions précédentes. Pour accéder à un fichier texte qui contient toutes les commandes PowerShell décrites dans cet article, cliquez [ici](https://gallery.technet.microsoft.com/scriptcenter/PowerShell-commands-for-5c5a7c19). 
+> These commands are for Azure PowerShell 1.0 and above. For a text file that has all the PowerShell commands in this article, click [here](https://gallery.technet.microsoft.com/scriptcenter/PowerShell-commands-for-5c5a7c19). 
+-->
   
 Ensuite, connectez-vous à votre compte Azure avec cette commande.
   
 ```
-Login-AzureRMAccount
+Connect-AzAccount
 ```
 
 Obtenez le nom de votre abonnement à l’aide de la commande suivante.
   
 ```
-Get-AzureRMSubscription | Sort SubscriptionName | Select SubscriptionName
+Get-AzSubscription | Sort SubscriptionName | Select SubscriptionName
 ```
 
 Définissez votre abonnement Azure avec les commandes suivantes. Remplacez tout le texte entre guillemets, y compris les caractères < et >, par le nom d’abonnement correct.
   
 ```
 $subscrName="<subscription name>"
-Select-AzureRMSubscription -SubscriptionName $subscrName -Current
+Select-AzSubscription -SubscriptionName $subscrName -Current
 ```
 
 Ensuite, créez un nouveau groupe de ressources pour votre réseau virtuel. Pour déterminer un nom de groupe de ressources unique, utilisez cette commande pour répertorier vos groupes de ressources existants.
   
 ```
-Get-AzureRMResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
+Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 ```
 
 Créez votre nouveau groupe de ressources avec ces commandes.
@@ -244,29 +246,8 @@ Créez votre nouveau groupe de ressources avec ces commandes.
 ```
 $rgName="<resource group name>"
 $locName="<Table V - Item 2 - Value column>"
-New-AzureRMResourceGroup -Name $rgName -Location $locName
+New-AzResourceGroup -Name $rgName -Location $locName
 
-```
-
-Les machines virtuelles basées sur le gestionnaire des ressources requièrent un compte de stockage basé sur le gestionnaire des ressources. Vous devez choisir un nom global unique pour votre compte de stockage, contenant uniquement des lettres minuscules et des chiffres. Vous pouvez utiliser cette commande pour répertorier les comptes de stockage existants.
-  
-```
-Get-AzureRMStorageAccount | Sort Name | Select Name
-```
-
-Utilisez cette commande pour vérifier si un nom proposé pour un compte de stockage est unique.
-  
-```
-Get-AzureRmStorageAccountNameAvailability "<proposed name>"
-```
-
-Pour créer un nouveau compte de stockage, exécutez ces commandes.
-  
-```
-$rgName="<your new resource group name>"
-$locName="<the location of your new resource group>"
-$saName="<unique storage account name>"
-New-AzureRMStorageAccount -Name $saName -ResourceGroupName $rgName -Type Standard_LRS -Location $locName
 ```
 
 Ensuite, créez le réseau virtuel Azure.
@@ -281,17 +262,17 @@ $gwSubnetPrefix="<Table S - Item 1 - Subnet address space column>"
 $SubnetName="<Table S - Item 2 - Subnet name column>"
 $SubnetPrefix="<Table S - Item 2 - Subnet address space column>"
 $dnsServers=@( "<Table D - Item 1 - DNS server IP address column>", "<Table D - Item 2 - DNS server IP address column>" )
-$locShortName=(Get-AzureRmResourceGroup -Name $rgName).Location
+$locShortName=(Get-AzResourceGroup -Name $rgName).Location
 
 # Create the Azure virtual network and a network security group that allows incoming remote desktop connections to the subnet that is hosting virtual machines
-$gatewaySubnet=New-AzureRmVirtualNetworkSubnetConfig -Name "GatewaySubnet" -AddressPrefix $gwSubnetPrefix
-$vmSubnet=New-AzureRMVirtualNetworkSubnetConfig -Name $SubnetName -AddressPrefix $SubnetPrefix
-New-AzureRMVirtualNetwork -Name $vnetName -ResourceGroupName $rgName -Location $locName -AddressPrefix $vnetAddrPrefix -Subnet $gatewaySubnet,$vmSubnet -DNSServer $dnsServers
-$rule1=New-AzureRMNetworkSecurityRuleConfig -Name "RDPTraffic" -Description "Allow RDP to all VMs on the subnet" -Access Allow -Protocol Tcp -Direction Inbound -Priority 100 -SourceAddressPrefix Internet -SourcePortRange * -DestinationAddressPrefix * -DestinationPortRange 3389
-New-AzureRMNetworkSecurityGroup -Name $SubnetName -ResourceGroupName $rgName -Location $locShortName -SecurityRules $rule1
-$vnet=Get-AzureRMVirtualNetwork -ResourceGroupName $rgName -Name $vnetName
-$nsg=Get-AzureRMNetworkSecurityGroup -Name $SubnetName -ResourceGroupName $rgName
-Set-AzureRMVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $SubnetName -AddressPrefix $SubnetPrefix -NetworkSecurityGroup $nsg
+$gatewaySubnet=New-AzVirtualNetworkSubnetConfig -Name "GatewaySubnet" -AddressPrefix $gwSubnetPrefix
+$vmSubnet=New-AzVirtualNetworkSubnetConfig -Name $SubnetName -AddressPrefix $SubnetPrefix
+New-AzVirtualNetwork -Name $vnetName -ResourceGroupName $rgName -Location $locName -AddressPrefix $vnetAddrPrefix -Subnet $gatewaySubnet,$vmSubnet -DNSServer $dnsServers
+$rule1=New-AzNetworkSecurityRuleConfig -Name "RDPTraffic" -Description "Allow RDP to all VMs on the subnet" -Access Allow -Protocol Tcp -Direction Inbound -Priority 100 -SourceAddressPrefix Internet -SourcePortRange * -DestinationAddressPrefix * -DestinationPortRange 3389
+New-AzNetworkSecurityGroup -Name $SubnetName -ResourceGroupName $rgName -Location $locShortName -SecurityRules $rule1
+$vnet=Get-AzVirtualNetwork -ResourceGroupName $rgName -Name $vnetName
+$nsg=Get-AzNetworkSecurityGroup -Name $SubnetName -ResourceGroupName $rgName
+Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $SubnetName -AddressPrefix $SubnetPrefix -NetworkSecurityGroup $nsg
 ```
 
 Voici la configuration finale.
@@ -306,22 +287,22 @@ $vnetName="<Table V - Item 1 - Value column>"
 $localGatewayIP="<Table V - Item 3 - Value column>"
 $localNetworkPrefix=@( <comma-separated, double-quote enclosed list of the local network address prefixes from Table L, example: "10.1.0.0/24", "10.2.0.0/24"> )
 $vnetConnectionKey="<Table V - Item 5 - Value column>"
-$vnet=Get-AzureRMVirtualNetwork -Name $vnetName -ResourceGroupName $rgName
+$vnet=Get-AzVirtualNetwork -Name $vnetName -ResourceGroupName $rgName
 # Attach a virtual network gateway to a public IP address and the gateway subnet
 $publicGatewayVipName="PublicIPAddress"
 $vnetGatewayIpConfigName="PublicIPConfig"
-New-AzureRMPublicIpAddress -Name $vnetGatewayIpConfigName -ResourceGroupName $rgName -Location $locName -AllocationMethod Dynamic
-$publicGatewayVip=Get-AzureRMPublicIpAddress -Name $vnetGatewayIpConfigName -ResourceGroupName $rgName
-$vnetGatewayIpConfig=New-AzureRMVirtualNetworkGatewayIpConfig -Name $vnetGatewayIpConfigName -PublicIpAddressId $publicGatewayVip.Id -SubnetId $vnet.Subnets[0].Id
+New-AzPublicIpAddress -Name $vnetGatewayIpConfigName -ResourceGroupName $rgName -Location $locName -AllocationMethod Dynamic
+$publicGatewayVip=Get-AzPublicIpAddress -Name $vnetGatewayIpConfigName -ResourceGroupName $rgName
+$vnetGatewayIpConfig=New-AzVirtualNetworkGatewayIpConfig -Name $vnetGatewayIpConfigName -PublicIpAddressId $publicGatewayVip.Id -SubnetId $vnet.Subnets[0].Id
 # Create the Azure gateway
 $vnetGatewayName="AzureGateway"
-$vnetGateway=New-AzureRMVirtualNetworkGateway -Name $vnetGatewayName -ResourceGroupName $rgName -Location $locName -GatewayType Vpn -VpnType RouteBased -IpConfigurations $vnetGatewayIpConfig
+$vnetGateway=New-AzVirtualNetworkGateway -Name $vnetGatewayName -ResourceGroupName $rgName -Location $locName -GatewayType Vpn -VpnType RouteBased -IpConfigurations $vnetGatewayIpConfig
 # Create the gateway for the local network
 $localGatewayName="LocalNetGateway"
-$localGateway=New-AzureRMLocalNetworkGateway -Name $localGatewayName -ResourceGroupName $rgName -Location $locName -GatewayIpAddress $localGatewayIP -AddressPrefix $localNetworkPrefix
+$localGateway=New-AzLocalNetworkGateway -Name $localGatewayName -ResourceGroupName $rgName -Location $locName -GatewayIpAddress $localGatewayIP -AddressPrefix $localNetworkPrefix
 # Create the Azure virtual network VPN connection
 $vnetConnectionName="S2SConnection"
-$vnetConnection=New-AzureRMVirtualNetworkGatewayConnection -Name $vnetConnectionName -ResourceGroupName $rgName -Location $locName -ConnectionType IPsec -SharedKey $vnetConnectionKey -VirtualNetworkGateway1 $vnetGateway -LocalNetworkGateway2 $localGateway
+$vnetConnection=New-AzVirtualNetworkGatewayConnection -Name $vnetConnectionName -ResourceGroupName $rgName -Location $locName -ConnectionType IPsec -SharedKey $vnetConnectionKey -VirtualNetworkGateway1 $vnetGateway -LocalNetworkGateway2 $localGateway
 ```
 
 Voici la configuration finale.
@@ -332,7 +313,7 @@ Ensuite, configurez votre périphérique VPN local de sorte qu'il se connecte à
   
 Pour configurer votre périphérique VPN, vous avez besoin des éléments suivants :
   
-- L'adresse IPv4 publique de la passerelle VPN Azure pour votre réseau virtuel. Utilisez la commande **Get-AzureRMPublicIpAddress -Name $vnetGatewayIpConfigName -ResourceGroupName $rgName** pour afficher cette adresse.
+- L’adresse IPv4 publique de la passerelle VPN Azure pour votre réseau virtuel. Utilisez la commande **Get-AzPublicIpAddress -Name $vnetGatewayIpConfigName -ResourceGroupName $rgName** pour afficher cette adresse.
     
 - La clé prépartagée IPsec pour la connexion VPN de site à site (Tableau V - Élément 5 - colonne Valeur).
     
@@ -346,11 +327,9 @@ Créez les machines virtuelles dont vous avez besoin dans Azure. Pour plus d’i
   
 Utilisez les paramètres suivants :
   
-- Dans le volet **De base**, sélectionnez le même abonnement et le même groupe de ressources que votre réseau virtuel. Enregistrez le nom d'utilisateur et le mot de passe dans un emplacement sécurisé. Vous en aurez besoin ultérieurement pour vous connecter à la machine virtuelle.
+- Dans l’onglet **De base**, sélectionnez le même abonnement et le même groupe de ressources que votre réseau virtuel. Vous en aurez besoin ultérieurement pour vous connecter à la machine virtuelle. Dans la section **Détails de l’instance**, sélectionnez la taille de machine virtuelle appropriée. Enregistrez le nom d’utilisateur du compte administrateur et le mot de passe dans un emplacement sécurisé. 
     
-- Dans le volet **Taille**, choisissez la taille appropriée.
-    
-- Dans le volet **Paramètres**, dans la section **Stockage**, sélectionnez le type de stockage **Standard** et le compte de stockage configuré avec votre réseau virtuel. Dans la section **Réseau**, sélectionnez le nom de votre réseau virtuel et le sous-réseau pour l'hébergement de machines virtuelles (pas GatewaySubnet). Tous les autres paramètres conservent leurs valeurs par défaut.
+- Dans l’onglet **Mise en réseau**, sélectionnez le nom de votre réseau virtuel et le sous-réseau pour l’hébergement de machines virtuelles (pas GatewaySubnet). Tous les autres paramètres conservent leurs valeurs par défaut.
     
 Vérifiez que votre machine virtuelle utilise le DNS correctement en vérifiant votre DNS interne pour vous assurer que les enregistrements d’adresse (A) ont été ajoutés pour votre nouvelle machine virtuelle. Pour accéder à Internet, vos machines virtuelles Azure doivent être configurées pour utiliser le serveur proxy de votre réseau local. Contactez votre administrateur réseau pour les étapes de configuration supplémentaires à effectuer sur le serveur.
   

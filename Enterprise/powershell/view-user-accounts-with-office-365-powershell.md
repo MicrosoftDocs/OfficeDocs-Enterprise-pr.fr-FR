@@ -3,7 +3,7 @@ title: Afficher des comptes d’utilisateur avec Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/11/2019
+ms.date: 03/19/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: "Résumé: Affichez, répertoriez ou affichez vos comptes d'utilisateur de différentes manières avec Office 365 PowerShell."
-ms.openlocfilehash: 10b6d209e76f94b8b001718abd35368f9d1bc29c
-ms.sourcegitcommit: ae4b3c1e2859991f3b94690f2eb3b2838d7db2d4
+ms.openlocfilehash: 717a7c11f4e7f6d2e5e0c452854df7d4c419007e
+ms.sourcegitcommit: 1dc7b4731cf9899c5ae867624ed142dbab0c517f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30539012"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30683701"
 ---
 # <a name="view-user-accounts-with-office-365-powershell"></a>Afficher des comptes d’utilisateur avec Office 365 PowerShell
 
@@ -287,7 +287,7 @@ Scott Wallace            Operations
 Si vous utilisez la synchronisation d'annuaires pour créer et gérer vos utilisateurs Office 365, vous pouvez afficher le compte local à partir duquel un utilisateur d'Office 365 a été projeté. Les éléments suivants supposent qu'Azure AD Connect a été configuré pour utiliser l'ancre source par défaut d'ObjectGUID (pour plus d'informations sur la configuration d'une ancre source, reportez-vous à la rubrique [Azure ad Connect: Design concepts](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/plan-connect-design-concepts)) et suppose que le module Active Directory pour PowerShell ait été installé (voir [outils RSAT](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)):
 
 ```
-(Get-ADUser [guid][system.convert]::frombase64string((Get-MsolUser -UserPrincipalName <UPN of user account>).ImmutableID)).Guid
+Get-ADUser ([guid][System.Convert]::FromBase64String((Get-MsolUser -UserPrincipalName <UPN of user account>).ImmutableID)).guid
 ```
 
     

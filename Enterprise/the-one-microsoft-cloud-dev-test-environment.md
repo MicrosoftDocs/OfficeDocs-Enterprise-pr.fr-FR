@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: a1370fe4-2fd6-4fea-ad1d-3555433d6d2e
 description: 'Résumé : Utilisez ce guide de laboratoire de test pour créer un environnement de développement/test qui inclut toutes les offres cloud de Microsoft.'
-ms.openlocfilehash: e5391b88a964261ad0698890bbb5c99866fbb57d
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 0ccea58e86f2e105704aac01ba4379c21a174e3a
+ms.sourcegitcommit: e5598a1220316122b5ed206c2607092ea1eac65c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915629"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30573658"
 ---
 # <a name="the-one-microsoft-cloud-devtest-environment"></a>Environnement de développement/test Microsoft Cloud unique
 
@@ -59,7 +59,7 @@ La figure 1 présente la configuration obtenue, qui comprend Office 365 et un i
 
 Dans cette phase, vous vous inscrivez pour l’abonnement d’évaluation EMS et l’ajoutez à la même organisation que votre abonnement d’évaluation Office 365.
   
-1. En utilisant un navigateur de votre ordinateur de bureau ou de CLIENT1, connectez-vous au portail Office 365 ([https://portal.office.com](https://portal.office.com)) à l’aide des informations d’identification de votre compte Administrateur général.
+1. En utilisant un navigateur de votre ordinateur de bureau ou de CLIENT1, connectez-vous au portail Office 365 ([https://www.office.com](https://www.office.com)) à l’aide des informations d’identification de votre compte Administrateur général.
     
 2. Cliquez sur la vignette **Administration**.
     
@@ -102,11 +102,11 @@ La figure 2 montre la configuration obtenue, qui ajoute EMS.
 
 Dans cette phase, vous allez souscrire à l’abonnement d’évaluation Dynamics 365 et l’ajouter à la même organisation que vos abonnements d’évaluation Office 365 et EMS.
   
-1. En utilisant un navigateur de votre ordinateur de bureau ou de CLIENT1, connectez-vous au portail Office 365 ([https://portal.office.com](https://portal.office.com)) à l’aide des informations d’identification de votre compte Administrateur général.
+1. En utilisant un navigateur de votre ordinateur de bureau ou de CLIENT1, connectez-vous au portail Office 365 ([https://www.office.com](https://www.office.com)) à l’aide des informations d’identification de votre compte Administrateur général.
     
 2. Cliquez sur la vignette **Administration**.
     
-3. Sous l’onglet **Centre d’administration Office**, dans le volet de navigation de gauche, cliquez sur **Facturation > Acheter des services**.
+3. Dans l’onglet **Centre d’administration Microsoft 365**, dans le volet de navigation de gauche, cliquez sur **Facturation > Acheter des services**.
     
 4. Dans la page **Acheter des services**, recherchez l’élément **Dynamics 365 Plan 1 Enterprise Edition**. Placez le curseur de la souris dessus et cliquez sur **Démarrer l’essai gratuit**.
     
@@ -119,7 +119,7 @@ Dans cette phase, vous allez souscrire à l’abonnement d’évaluation Dynamic
   
 Procédez comme suit pour affecter des licences Dynamics 365 aux comptes de l’administrateur général, ainsi qu’aux comptes Utilisateur 2 et Utilisateur 3 afin de leur attribuer le rôle d’administrateur système.
   
-1. Sous l’onglet **Centre d’administration Office**, cliquez sur **Utilisateurs > Utilisateurs actifs**.
+1. Dans l’onglet **Centre d’administration Microsoft 365**, cliquez sur **Utilisateurs > Utilisateurs actifs**.
     
 2. Dans la liste des utilisateurs actifs, sélectionnez votre compte Administrateur général, puis cliquez sur **Modifier** pour **Licences de produits**.
     
@@ -127,7 +127,7 @@ Procédez comme suit pour affecter des licences Dynamics 365 aux comptes de l�
     
 4. Suivez les étapes 2 et 3 pour les comptes Utilisateur 2 et Utilisateur 3.
     
-5. Fermez l’onglet **Centre d’administration Office**.
+5. Fermez l’onglet **Centre d’administration Microsoft 365**.
     
 Lors de cette phase, vous allez configurer les comptes Utilisateur 2 et Utilisateur 3 en tant qu’administrateurs système de Dynamics 365.
   

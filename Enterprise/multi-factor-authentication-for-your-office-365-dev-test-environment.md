@@ -16,18 +16,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e2b354b9-7f18-4da0-9107-6245eae0f33f
 description: 'Résumé : Configurer l’authentification multifacteur à l’aide de messages texte envoyés à un Smartphone dans un environnement de développement/test Office 365.'
-ms.openlocfilehash: 453dbc6bda3cfbc6806159d53c9a805c4c6cac97
-ms.sourcegitcommit: 8e2760cbcaf564923595147ccf6da468edaed364
+ms.openlocfilehash: 13dc02cc23d12f6eb6e2898d34271685badd9f5a
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30242076"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30573978"
 ---
 # <a name="multi-factor-authentication-for-your-office-365-devtest-environment"></a>Authentification multifacteur pour votre environnement de développement/test Office 365
 
  **Résumé :** Configurer l’authentification multifacteur à l’aide de messages texte envoyés à un Smartphone dans un environnement de développement/test Office 365.
   
-Pour un niveau de sécurité supplémentaire pour la connexion à votre abonnement Office 365, vous pouvez activer l'authentification multifacteur Azure, qui nécessite plus qu'un nom d'utilisateur et un mot de passe pour authentifier un compte. Avec l'authentification multifacteur pour Office 365, les utilisateurs doivent accuser réception d'un appel téléphonique, taper un code de vérification envoyé dans un message texte ou spécifier un mot de passe d'application sur leurs téléphones intelligents après avoir entré correctement leurs mots de passe. Ils ne peuvent se connecter qu'après que ce deuxième facteur d'authentification a été satisfait. 
+Pour un niveau de sécurité supplémentaire pour la connexion à votre abonnement Office 365, vous pouvez activer l'authentification multifacteur Azure, qui nécessite plus qu'un nom d'utilisateur et un mot de passe pour authentifier un compte. Avec l’authentification multifacteur pour Office 365, les utilisateurs sont tenus de confirmer la bonne réception d’un appel téléphonique, de taper un code de vérification envoyé dans un message texte ou de spécifier un mot de passe d’application sur leur smartphone après avoir entré correctement leur mot de passe. Ils peuvent se connecter uniquement lorsque ce deuxième facteur d’authentification a été respecté. 
   
 Cet article décrit comment activer et tester l’authentification basée sur message texte pour un compte Office 365 spécifique.
   
@@ -53,7 +53,7 @@ Si vous souhaitez tester l'authentification multifacteur dans une entreprise sim
 
 Activez l’authentification multifacteur pour le compte d’utilisateur 2 en procédant comme suit :
   
-1. Ouvrez une instance distincte de votre navigateur, accédez au portail Office 365 ([https://portal.office.com](https://portal.office.com)), puis connectez-vous à votre abonnement d'évaluation Office 365 avec votre compte d'administrateur général.
+1. Ouvrez une instance distincte de votre navigateur, accédez au portail Office 365 ([https://www.office.com](https://www.office.com)), puis connectez-vous à votre abonnement d'évaluation Office 365 avec votre compte d'administrateur général.
     
 2. Sur la page principale du portail, cliquez sur **Administrateur**.
     
@@ -77,7 +77,7 @@ Terminez la configuration pour que le compte d’utilisateur 2 utilise un messag
   
 1. Ouvrez une nouvelle instance de votre navigateur.
     
-2. Accédez au portail Office 365 ([https://portal.office.com](https://portal.office.com)) et connectez-vous avec le compte utilisateur 2 (utilisateur2 @\<Organization name>. onmicrosoft. com) et le mot de passe.
+2. Accédez au portail Office 365 ([https://www.office.com](https://www.office.com)) et connectez-vous avec le compte utilisateur 2 (utilisateur2 @\<Organization name>. onmicrosoft. com) et le mot de passe.
     
 3. Après vous être connecté, vous êtes invité à configurer le compte pour la validation de sécurité supplémentaire. Cliquez sur **Configurer maintenant**.
     
@@ -109,5 +109,5 @@ Terminez la configuration pour que le compte d’utilisateur 2 utilise un messag
   
 [Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.md)
 
-[Offre pour l'authentification multifacteur des déploiements Office 365](https://support.office.com/article/Plan-for-multi-factor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
+[Planifier l'authentification multifacteur pour les déploiements d'Office 365](https://support.office.com/article/Plan-for-multi-factor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
 

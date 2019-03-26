@@ -16,18 +16,18 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 'Résumé: Connectez Windows PowerShell à tous les services Office 365 dans une seule fenêtre Windows PowerShell.'
-ms.openlocfilehash: 38221a2c9b50aaeab217016336cf4d020abd706a
-ms.sourcegitcommit: 2e5e2c65a1b785e229f1f7fd5b219f1b3de96f97
+ms.openlocfilehash: 3f6153d5ea8b88d8c6853dbbe597f2cf7cc62fab
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30339512"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30573968"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>Connexion à tous les services Office 365 à l’aide d’une seule fenêtre Windows PowerShell
 
  **Résumé:** Au lieu de gérer les différents services Office 365 dans des fenêtres de console PowerShell distinctes, vous pouvez vous connecter à tous les services Office 365 et les gérer à partir d'une seule fenêtre de console.
   
-Lorsque vous utilisez PowerShell pour gérer Office 365, il est possible d'avoir jusqu'à cinq sessions Windows PowerShell différentes ouvertes en même temps correspondant au centre d'administration d'Office 365, à SharePoint Online, à Exchange Online, Skype entreprise Online et à la sécurité &amp;Centre de conformité. Avec cinq méthodes de connexion différentes dans des sessions Windows PowerShell distinctes, votre Bureau pourrait ressembler à ceci:
+Lorsque vous utilisez PowerShell pour gérer Office 365, il est possible d'avoir jusqu'à cinq sessions Windows PowerShell différentes ouvertes en même temps correspondant au centre d'administration Microsoft 365, SharePoint Online, Exchange Online, Skype entreprise Online et la sécurité &amp; Centre de conformité. Avec cinq méthodes de connexion différentes dans des sessions Windows PowerShell distinctes, votre Bureau pourrait ressembler à ceci:
   
 ![Cinq consoles Windows PowerShell exécutées simultanément](media/a1a852c2-89ea-4e8e-8d8b-dcdf596763d1.png)
   

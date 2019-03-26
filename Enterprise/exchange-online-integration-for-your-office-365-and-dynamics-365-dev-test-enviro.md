@@ -1,5 +1,5 @@
 ---
-title: Intégration d’Exchange Online pour votre environnement de développement/test Office 365 et Dynamics 365
+title: Intégration d'Exchange Online pour votre environnement de développement/test Office 365 et Dynamics 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 499c5823-427a-4ba2-8fc1-9553bc2ff2d3
 description: "Résumé : Utilisez ce Guide de laboratoire de test pour activer l'intégration de Dynamics 365 pour Exchange Online dans votre abonnement à la version d'évaluation d'Office 365."
-ms.openlocfilehash: 97e480bd148092f8e8e5ab610f0aed0a5eb2e20e
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: be79f58f448799bba9c4a9ee51350f198d721e0d
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897117"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574018"
 ---
 # <a name="exchange-online-integration-for-your-office-365-and-dynamics-365-devtest-environment"></a>Intégration d’Exchange Online pour votre environnement de développement/test Office 365 et Dynamics 365
 
@@ -42,11 +42,11 @@ Suivez les instructions figurant dans la rubrique [Environnement de développeme
 
 Suivez ces étapes pour configurer la boîte aux lettres de l'administrateur général pour l'intégration de Dynamics 365 et Exchange Online :
   
-1. À l’aide d’une session privée de votre navigateur, accédez à [http://portal.office.com](http://portal.office.com) et connectez-vous à l’aide de votre compte d’administrateur général Office 365.
+1. À l'aide d'une session privée de votre navigateur [http://admin.microsoft.com](http://admin.microsoft.com) , accédez à et connectez-vous à l'aide de votre compte d'administrateur global Office 365.
     
 2. Sur la page **Accueil Microsoft Office**, cliquez sur la mosaïque **Messagerie**.
     
-3. Dans l’onglet nouveau **courrier** dans votre navigateur, cliquez sur **Nouveau** et notez comment la partie inférieure du volet sous la zone de saisie d’un message comporte une icône pour Mes modèles.
+3. Dans l'onglet nouveau **courrier** de votre navigateur, cliquez sur **nouveau** , puis observez comment le coin inférieur du volet sous la zone de saisie d'un message possède une icône pour mes modèles.
     
      ![Nouveau message électronique vide sans l’intégration à Dynamics 365.](media/879b54fd-a68f-4581-9f89-d5050df6f4de.png)
   
@@ -88,7 +88,7 @@ Suivez ces étapes pour installer l'application Dynamics 365 pour Outlook et mon
     
 5. Cliquez sur l'onglet **Accueil Microsoft Office** de votre navigateur, puis cliquez sur la mosaïque **Messagerie**.
     
-6. Dans l’onglet Nouveau de **messagerie** dans votre navigateur, cliquez sur **Nouveau**. Notez que la partie inférieure du volet sous la zone de saisie d’un message maintenant une icône pour Dynamics 365.
+6. Dans le nouvel **Messagerie** de votre navigateur, cliquez sur **Nouveau**. Notez que le coin inférieur du volet sous la zone de saisie d'un message contient désormais une icône pour Dynamics 365.
     
      ![Nouveau message électronique vide avec l’intégration à Dynamics 365, affichant la nouvelle icône.](media/ecb822e1-45fe-4481-99a1-294317d1d2de.png)
   

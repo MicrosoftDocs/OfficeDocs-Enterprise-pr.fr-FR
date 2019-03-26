@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 'Résumé : Configurez l’authentification fédérée pour votre environnement de développement/test Office 365.'
-ms.openlocfilehash: f028acb99d0687bb3fcfbc1c66bdd8885850565b
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 74ea602e867e97d3db3ceb3d9656cfe0132b4298
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915239"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574088"
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>Identité fédérée pour votre environnement de développement/test Office 365
 
@@ -88,24 +88,25 @@ Pour créer une machine virtuelle Azure pour ADFS1, indiquez le nom de votre a
 ```
 $subscr="<your Azure subscription name>"
 $rgName="<the resource group name of your Base Configuration>"
-Login-AzureRMAccount
-Get-AzureRmSubscription -SubscriptionName $subscr | Select-AzureRmSubscription
+Connect-AzAccount
+Select-AzSubscription -SubscriptionName $subscrName -Current
 $staticIP="10.0.0.100"
-$locName=(Get-AzureRmResourceGroup -Name $rgName).Location
-$vnet=Get-AzureRMVirtualNetwork -Name TestLab -ResourceGroupName $rgName
-$pip = New-AzureRMPublicIpAddress -Name ADFS1-PIP -ResourceGroupName $rgName -Location $locName -AllocationMethod Dynamic
-$nic = New-AzureRMNetworkInterface -Name ADFS1-NIC -ResourceGroupName $rgName -Location $locName -SubnetId $vnet.Subnets[0].Id -PublicIpAddressId $pip.Id -PrivateIpAddress $staticIP
-$vm=New-AzureRMVMConfig -VMName ADFS1 -VMSize Standard_D2_v2
+$locName=(Get-AzResourceGroup -Name $rgName).Location
+$vnet=Get-AzVirtualNetwork -Name TestLab -ResourceGroupName $rgName
+$pip = New-AzPublicIpAddress -Name ADFS1-PIP -ResourceGroupName $rgName -Location $locName -AllocationMethod Dynamic
+$nic = New-AzNetworkInterface -Name ADFS1-NIC -ResourceGroupName $rgName -Location $locName -SubnetId $vnet.Subnets[0].Id -PublicIpAddressId $pip.Id -PrivateIpAddress $staticIP
+$vm=New-AzVMConfig -VMName ADFS1 -VMSize Standard_D2_v2
 $cred=Get-Credential -Message "Type the name and password of the local administrator account for ADFS1."
-$vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName ADFS1 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
-$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
-$vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
-$vm=Set-AzureRmVMOSDisk -VM $vm -Name "ADFS-OS" -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "Standard_LRS"
-New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
+$vm=Set-AzVMOperatingSystem -VM $vm -Windows -ComputerName ADFS1 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
+$vm=Set-AzVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
+$vm=Add-AzVMNetworkInterface -VM $vm -Id $nic.Id
+$vm=Set-AzVMOSDisk -VM $vm -Name "ADFS-OS" -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "Standard_LRS"
+New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
-
+<!--
 > [!TIP]
-> Cliquez [ici](https://gallery.technet.microsoft.com/PowerShell-commands-for-f79bc2c2?redir=0) pour accéder à un fichier texte qui contient toutes les commandes PowerShell décrites dans cet article.
+> Click [here](https://gallery.technet.microsoft.com/PowerShell-commands-for-f79bc2c2?redir=0) for a text file that has all the PowerShell commands in this article.
+-->
   
 Ensuite, utilisez le [portail Azure](http://portal.azure.com) pour vous connecter à la machine virtuelle ADFS1 à l’aide du nom de compte d’administrateur local ADFS1 et de votre mot de passe, puis ouvrez une invite de commande Windows PowerShell.
   
@@ -136,17 +137,17 @@ Pour créer une machine virtuelle Azure pour PROXY1, indiquez le nom de votre gr
 ```
 $rgName="<the resource group name of your Base Configuration>"
 $staticIP="10.0.0.101"
-$locName=(Get-AzureRmResourceGroup -Name $rgName).Location
-$vnet=Get-AzureRMVirtualNetwork -Name TestLab -ResourceGroupName $rgName
-$pip = New-AzureRMPublicIpAddress -Name PROXY1-PIP -ResourceGroupName $rgName -Location $locName -AllocationMethod Static
-$nic = New-AzureRMNetworkInterface -Name PROXY1-NIC -ResourceGroupName $rgName -Location $locName -SubnetId $vnet.Subnets[0].Id -PublicIpAddressId $pip.Id -PrivateIpAddress $staticIP
-$vm=New-AzureRMVMConfig -VMName PROXY1 -VMSize Standard_D2_v2
+$locName=(Get-AzResourceGroup -Name $rgName).Location
+$vnet=Get-AzVirtualNetwork -Name TestLab -ResourceGroupName $rgName
+$pip = New-AzPublicIpAddress -Name PROXY1-PIP -ResourceGroupName $rgName -Location $locName -AllocationMethod Static
+$nic = New-AzNetworkInterface -Name PROXY1-NIC -ResourceGroupName $rgName -Location $locName -SubnetId $vnet.Subnets[0].Id -PublicIpAddressId $pip.Id -PrivateIpAddress $staticIP
+$vm=New-AzVMConfig -VMName PROXY1 -VMSize Standard_D2_v2
 $cred=Get-Credential -Message "Type the name and password of the local administrator account for PROXY1."
-$vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName PROXY1 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
-$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
-$vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
-$vm=Set-AzureRmVMOSDisk -VM $vm -Name "PROXY1-OS" -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "Standard_LRS"
-New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
+$vm=Set-AzVMOperatingSystem -VM $vm -Windows -ComputerName PROXY1 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
+$vm=Set-AzVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
+$vm=Add-AzVMNetworkInterface -VM $vm -Id $nic.Id
+$vm=Set-AzVMOSDisk -VM $vm -Name "PROXY1-OS" -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "Standard_LRS"
+New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!NOTE]
@@ -156,7 +157,7 @@ Ensuite, ajoutez une règle au groupe de sécurité réseau pour le sous-réseau
   
 ```
 $rgName="<the resource group name of your Base Configuration>"
-Get-AzureRmNetworkSecurityGroup -Name CorpNet -ResourceGroupName $rgName | Add-AzureRmNetworkSecurityRuleConfig -Name "HTTPS-to-PROXY1" -Description "Allow TCP 443 to PROXY1" -Access "Allow" -Protocol "Tcp" -Direction "Inbound" -Priority 101 -SourceAddressPrefix "Internet" -SourcePortRange "*" -DestinationAddressPrefix "10.0.0.101" -DestinationPortRange "443" | Set-AzureRmNetworkSecurityGroup
+Get-AzNetworkSecurityGroup -Name CorpNet -ResourceGroupName $rgName | Add-AzNetworkSecurityRuleConfig -Name "HTTPS-to-PROXY1" -Description "Allow TCP 443 to PROXY1" -Access "Allow" -Protocol "Tcp" -Direction "Inbound" -Priority 101 -SourceAddressPrefix "Internet" -SourcePortRange "*" -DestinationAddressPrefix "10.0.0.101" -DestinationPortRange "443" | Set-AzNetworkSecurityGroup
 ```
 
 Ensuite, utilisez le [portail Azure](http://portal.azure.com) pour vous connecter à la machine virtuelle PROXY1 à l’aide du nom de compte d’administrateur local PROXY1 et de votre mot de passe, puis ouvrez une invite de commande Windows PowerShell sur PROXY1.
@@ -174,7 +175,7 @@ Restart-Computer
 Affichez l’adresse IP publique de PROXY1 avec ces commandes Azure PowerShell sur votre ordinateur local :
   
 ```
-Write-Host (Get-AzureRMPublicIpaddress -Name "PROXY1-PIP" -ResourceGroup $rgName).IPAddress
+Write-Host (Get-AzPublicIpaddress -Name "PROXY1-PIP" -ResourceGroup $rgName).IPAddress
 ```
 
 Ensuite, utilisez votre fournisseur DNS public et créez un enregistrement A DNS public pour **fs.testlab.**\<<votre nom de domaine DNS> qui résout l’adresse IP affichée par la commande **Write-Host**. **fs.testlab.**\<votre nom de domaine DNS> est désigné ci-après en tant que *nom de domaine complet du service FS (Federation Service)*.
@@ -403,7 +404,7 @@ Suivez ces étapes pour configurer Azure AD Connect et votre abonnement Office�
     
 Pour vérifier que l’authentification fédérée fonctionne, procédez comme suit :
   
-1. Ouvrez une nouvelle instance privée de votre navigateur sur votre ordinateur local et accédez à [https://portal.office.com](https://portal.office.com).
+1. Ouvrez une nouvelle instance privée de votre navigateur sur votre ordinateur local et accédez à [https://admin.microsoft.com](https://admin.microsoft.com).
     
 2. Pour les informations d’identification de connexion, saisissez le domaine **user1@**\< créé lors de la phase 1>. 
     

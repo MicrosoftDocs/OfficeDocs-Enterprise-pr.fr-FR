@@ -3,7 +3,7 @@ title: Tester Office 365 à l’aide des Guides de laboratoire de test relatifs
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/23/2018
+ms.date: 03/13/2019
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Résumé : Utilisez ces guides de laboratoire de test relatifs à l’adoption de Microsoft Cloud pour configurer une démonstration, une étude de faisabilité ou des environnements de développement/test pour les produits Office 365, Dynamics 365 et Office Server.'
-ms.openlocfilehash: 796d34294ef92702214df30ca5553759554996d3
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 9d3423c1dadf95cd744a393c08b4303bc5cb8832
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "23041498"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30573748"
 ---
 # <a name="test-office-365-with-cloud-adoption-test-lab-guides-tlgs"></a>Tester Office 365 à l’aide des Guides de laboratoire de test relatifs à l’adoption de Microsoft Cloud
 
@@ -34,11 +34,7 @@ Les guides de laboratoire de test créent également des environnements représe
   
 ![Guides de laboratoire de test dans Microsoft Cloud](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
-Avant de commencer, consultez ces ressources supplémentaires :
-  
-- Visionnez la session « [Experience the Microsoft Cloud with Cloud Adoption Test Lab Guides](https://mva.microsoft.com/en-US/training-courses/experience-the-microsoft-cloud-with-cloud-adoption-test-lab-guides-17960?l=LXNRdhSLE_1000115881 ) » (Découverte de Microsoft Cloud grâce aux guides de laboratoire de test d’adoption cloud) sur le site de Microsoft Virtual Academy (durée : 22 minutes).
-    
-- Cliquez [ici](http://aka.ms/catlgstack) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft Cloud.
+Cliquez [ici](http://aka.ms/catlgstack) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft Cloud.
     
 ## <a name="office-365-devtest-environment"></a>Environnement de développement/test Office 365
 

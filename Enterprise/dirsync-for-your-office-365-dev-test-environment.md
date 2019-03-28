@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: 'Résumé : Configurez la synchronisation d’annuaires pour votre environnement de développement/test Office 365.'
-ms.openlocfilehash: 106e902c9da46c7c3c0fc6eb8af96d6695c7bdce
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 374d99bc2433f539451882e1c2affe7bd41290db
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915839"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30573948"
 ---
 # <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Synchronisation d’annuaires pour votre environnement de développement/test Office 365
 
@@ -59,7 +59,7 @@ Cette configuration se compose des éléments suivants :
     
 ## <a name="phase-2-install-azure-ad-connect-on-app1"></a>Phase 2 : installation d’Azure AD Connect sur APP1
 
-Une fois installé et configuré, Azure AD Connect synchronise l’ensemble de comptes dans le domaine CORP Windows Server AD avec l’ensemble de comptes dans votre abonnement d’évaluation Office 365. La procédure suivante vous guide tout au long de l’installation d’Azure AD Connect sur APP1 et de la vérification de son fonctionnement.
+Une fois installé et configuré, Azure AD Connect synchronise l’ensemble de comptes dans le domaine CORP Windows Server AD avec l’ensemble de comptes dans votre abonnement d’évaluation Office 365. La procédure suivante vous guide tout au long de l’installation d’Azure AD Connect sur APP1 et du contrôle de son fonctionnement.
   
 ### <a name="install-and-configure-azure-ad-connect-on-app1"></a>Installation et configuration d’Azure AD Connect sur APP1
 
@@ -92,7 +92,7 @@ Stop-Process -Name Explorer -Force
     
 11. Sur la page **Configuration terminée**, cliquez sur **Quitter**.
     
-12. Dans Internet Explorer, accédez au portail Office 365 ([https://portal.office.com](https://portal.office.com)) et connectez-vous à votre abonnement d’évaluation Office 365 avec votre compte d’administrateur général.
+12. Dans Internet Explorer, accédez au Centre d’administration Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) et connectez-vous à votre abonnement d’évaluation Office 365 avec votre compte d’administrateur général.
     
 13. Sur la page principale du portail, cliquez sur **Administrateur**.
     

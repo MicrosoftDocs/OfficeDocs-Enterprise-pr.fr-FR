@@ -14,17 +14,18 @@ ms.custom:
 - PowerShell
 ms.assetid: b23dda88-f137-4051-9c2c-84035ad63f5e
 description: Résumé :Utilisez Office 365 PowerShell pour gérer Microsoft Exchange Online, y compris la configuration des boîtes aux lettres et la création de rapports avancée.
-ms.openlocfilehash: 5a4853a8dc5c597b8cdee5a1fbfe1ad130feff4b
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+ms.openlocfilehash: 93eb2ca11544139f3904126c0ec04fc1ab02ec1b
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30573928"
 ---
 # <a name="manage-exchange-online-with-office-365-powershell"></a>Gestion d’Exchange Online avec Office 365 PowerShell
 
  **Résumé :** Utilisez Office 365 PowerShell pour gérer Microsoft Exchange Online, y compris la configuration des boîtes aux lettres et la création de rapports avancée.
   
-Une des tâches principales de tout administrateur Microsoft Exchange Online est la gestion des boîtes aux lettres et l'obtention de rapports sur celles-ci. Bien que vous puissiez effectuer certaines de ces tâches dans le Centre d'administration Office 365, d'autres tâches sont beaucoup plus rapides et plus simples à exécuter dans Office 365 PowerShell. Pour plus d'informations, consultez les rubriques suivantes :
+L’une des principales tâches d’un administrateur Microsoft Exchange Online est la gestion des boîtes aux lettres et l’obtention de rapports sur celles-ci. Bien que vous puissiez effectuer certaines de ces tâches dans le Centre d’administration Microsoft 365, d’autres tâches sont beaucoup plus rapides et plus simples à exécuter dans Office 365 PowerShell. Pour plus d’informations, consultez les rubriques suivantes :
   
 - [Afficher des informations de boîte aux lettres Exchange Online avec Office 365 PowerShell](https://technet.microsoft.com/fr-FR/library/mt771881%28v=exchg.160%29.aspx)
     

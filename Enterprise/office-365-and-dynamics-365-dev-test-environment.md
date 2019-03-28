@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: Ent_TLGs
 ms.assetid: 098c1a1d-83a1-40eb-bbc9-47de7af8bb23
 description: 'Résumé : Utilisez ce guide de laboratoire de test pour ajouter Dynamics 365 à votre environnement de développement/test Office 365.'
-ms.openlocfilehash: 195e5ab4fd96d1f238c96d47cc7406a45e0e02b1
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 9e4c98129c68ab5d2f0d9fc486ab62740c625af5
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915209"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574058"
 ---
 # <a name="office-365-and-dynamics-365-devtest-environment"></a>Environnement de développement/test Office 365 et Dynamics 365
 
@@ -66,11 +66,11 @@ Dans cette phase, vous vous inscrivez pour l’abonnement d’évaluation Dynami
   
 ### <a name="sign-up-for-a-dynamics-365-trial-subscription"></a>Inscription à un abonnement à la version d’évaluation de Dynamics 365
 
-1. En utilisant un navigateur sur votre ordinateur de bureau (simplifié) ou sur CLIENT1 (entreprise de simulation), connectez-vous au portail Office 365 ([https://portal.office.com](https://portal.office.com)) à l’aide des informations d’identification de votre compte Administrateur général.
+1. En utilisant un navigateur sur votre ordinateur de bureau (simplifié) ou sur CLIENT1 (entreprise de simulation), connectez-vous au Centre d’administration Microsoft 365 à l’adresse [https://admin.microsoft.com](https://admin.microsoft.com) à l’aide des informations d’identification de votre compte Administrateur général.
     
 2. Cliquez sur la vignette **Administration**.
     
-3. Sous l’onglet **Centre d’administration Office**, dans le volet de navigation de gauche, cliquez sur **Facturation > Acheter des services**.
+3. Dans l’onglet **Centre d’administration Microsoft 365**, dans le volet de navigation de gauche, cliquez sur **Facturation > Acheter des services**.
     
 4. Dans la page **Acheter des services**, recherchez l’élément **Dynamics 365 Plan 1 Enterprise Edition**. Placez le curseur de la souris dessus et cliquez sur **Démarrer l’essai gratuit**.
     
@@ -89,7 +89,7 @@ Lors de cette phrase, vous allez affecter des licences Dynamics 365 aux comptes
   
 Suivez ces étapes pour affecter des licences Dynamics 365.
   
-1. Sous l’onglet **Centre d’administration Office**, cliquez sur **Utilisateurs > Utilisateurs actifs**.
+1. Dans l’onglet **Centre d’administration Microsoft 365**, cliquez sur **Utilisateurs > Utilisateurs actifs**.
     
 2. Dans la liste des utilisateurs actifs, sélectionnez votre compte Administrateur général, puis cliquez sur **Modifier** pour **Licences de produits**.
     
@@ -97,7 +97,7 @@ Suivez ces étapes pour affecter des licences Dynamics 365.
     
 4. Suivez les étapes 2 et 3 pour les comptes Utilisateur 2 et Utilisateur 3.
     
-5. Fermez l’onglet **Centre d’administration Office**.
+5. Fermez l’onglet **Centre d’administration Microsoft 365**.
     
 Lors de cette phase, vous allez configurer les comptes Utilisateur 2 et Utilisateur 3 en tant qu’administrateurs système de Dynamics 365.
   

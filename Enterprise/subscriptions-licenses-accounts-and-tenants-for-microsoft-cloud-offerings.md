@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: 'Résumé : Comprenez les relations des organisations, des abonnements, des licences, des comptes d’utilisateur et des clients au sein des offres de cloud de Microsoft.'
-ms.openlocfilehash: 5f434fef42777034d32970dd55e15be35b76961e
-ms.sourcegitcommit: d0f1f34b1702e304fec85ca72f1f660e9b328dd5
+ms.openlocfilehash: 58b7505e0745ccdfe3e131f543c37f92385877f2
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "24022073"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574048"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Abonnements, licences, comptes et clients des offres de cloud de Microsoft
 
@@ -135,7 +135,7 @@ Plusieurs abonnements à des offres de cloud Microsoft peuvent utiliser le même
 
 ![Identité sous la forme d’un service (IaaS) IDaaS pour votre organisation.](media/Subscriptions/Subscriptions-Fig4.png)
   
-La Figure 4 montre l’utilisation d’un client Azure AD commun par les offres cloud SaaS de Microsoft, les applications PaaS Azure et les machines virtuelles dans IaaS Azure qui utilisent les services de domaine Azure AD. Azure AD Connect synchronise la forêt Windows Server AD locale avec le client Azure AD.
+La Figure 4 montre l’utilisation d’un client Azure AD commun par les offres cloud SaaS de Microsoft, les applications PaaS Azure et les machines virtuelles dans IaaS Azure qui utilisent Azure Active Directory Domain Services. Azure AD Connect synchronise la forêt Windows Server AD locale avec le client Azure AD.
   
 Pour plus d’informations sur l’intégration des identités au sein des offres de cloud de Microsoft, voir [Identité cloud Microsoft pour les architectes d’entreprise](https://aka.ms/cloudarchidentity).
   
@@ -145,14 +145,14 @@ Le tableau suivant décrit la manière dont vous pouvez combiner plusieurs offre
   
 ||**Office 365**|**Azure**|**Intune/EMS**|**Dynamics 365**|
 |:-----|:-----|:-----|:-----|:-----|
-|**Office 365** <br/> |N/A  <br/> |Vous ajoutez un abonnement Azure à votre organisation à partir du portail Azure.  <br/> |Vous ajoutez un abonnement Intune /EMS à votre organisation à partir du portail Office 365.  <br/> |Vous ajoutez un abonnement Dynamics 365 à votre organisation à partir du portail Office 365.  <br/> |
+|**Office 365** <br/> |N/A  <br/> |Vous ajoutez un abonnement Azure à votre organisation à partir du portail Azure.  <br/> |Vous ajoutez un abonnement Intune/EMS à votre organisation à partir du Centre d’administration Microsoft 365.  <br/> |Vous ajoutez un abonnement Dynamics 365 à votre organisation à partir du Centre d’administration Microsoft 365.  <br/> |
 |**Azure** <br/> |Vous ajoutez un abonnement Office 365 à votre organisation.  <br/> |N/A  <br/> |Vous ajoutez un abonnement Intune/EMS à votre organisation.  <br/> |Vous ajoutez un abonnement Dynamics 365 à votre organisation.  <br/> |
 |**Intune/EMS** <br/> |Vous ajoutez un abonnement Office 365 à votre organisation.  <br/> |Vous ajoutez un abonnement Azure à votre organisation à partir du portail Azure.  <br/> |N/A  <br/> |Vous ajoutez un abonnement Dynamics 365 à votre organisation.  <br/> |
 |**Dynamics 365** <br/> |Vous ajoutez un abonnement Office 365 à votre organisation.  <br/> |Vous ajoutez un abonnement Azure à votre organisation à partir du portail Azure.  <br/> |Vous ajoutez un abonnement Intune/EMS à votre organisation.  <br/> |N/A  <br/> |
    
 Une solution simple pour ajouter des abonnements à votre organisation pour les services SaaS Microsoft consiste à utiliser le centre d’administration Office 365 :
   
-1. Connectez-vous au portail Office 365 ([https://portal.office.com](https://portal.office.com)) avec votre compte d’administrateur global, puis cliquez sur **Administrateur**.
+1. Connectez-vous au Centre d’administration Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) avec votre compte d’administrateur général.
     
 2. À partir du volet de navigation gauche de la page d’accueil du **centre d’administration**, cliquez sur **Facturation**, puis **Acheter des services**.
     

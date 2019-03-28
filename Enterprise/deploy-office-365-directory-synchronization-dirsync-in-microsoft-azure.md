@@ -3,7 +3,7 @@ title: Déploiement de la synchronisation d’annuaires Office 365 dans Microso
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/04/2018
+ms.date: 11/05/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -17,33 +17,29 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: 'Résumé : Déployez Azure AD Connect sur une machine virtuelle dans Azure pour synchroniser les comptes entre votre répertoire local et le client Azure AD de votre abonnement Office 365.'
-ms.openlocfilehash: 01dede756142c08722e3cf21d91a0028eb815051
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 4b248dd0a5f6fc775fca322b696703545a1ef465
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915639"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574028"
 ---
 # <a name="deploy-office-365-directory-synchronization-in-microsoft-azure"></a>Déploiement de la synchronisation d’annuaires Office 365 dans Microsoft Azure
 
- **Résumé :** Déployez Azure AD Connect sur une machine virtuelle dans Azure pour synchroniser les comptes entre votre répertoire local et le client Azure AD de votre abonnement Office 365.
+ **Résumé :** déployez Azure AD Connect sur une machine virtuelle dans Azure pour synchroniser les comptes entre votre répertoire local et le client Azure AD de votre abonnement Office 365.
   
-Azure Active Directory (AD) Connect (auparavant appelé outil de synchronisation d'annuaires ou outil DirSync.exe) est une application serveur à installer sur un serveur appartenant à un domaine pour synchroniser vos utilisateurs Windows Server Active Directory locaux sur le client Azure Active Directory de votre abonnement Office 365. Vous pouvez installer Azure AD Connect sur un serveur local, mais également sur une machine virtuelle dans Azure, pour les raisons suivantes :
+Azure Active Directory (AD) Connect (auparavant appelé outil de synchronisation d’annuaires ou outil DirSync.exe) est une application à installer sur un serveur appartenant à un domaine pour synchroniser vos utilisateurs Windows Server Active Directory (AD) locaux sur le client Azure AD de votre abonnement Office 365. Office 365 utilise Azure Active Directory (Azure AD) pour son service d’annuaire. Votre abonnement à Office 365 comprend un client Azure AD. Ce client peut également être utilisé pour la gestion des identités de votre organisation avec d’autres charges de travail de cloud, y compris d’autres applications SaaS et des applications dans Azure.
+
+Vous pouvez installer Azure AD Connect sur un serveur local, mais également sur une machine virtuelle dans Azure, pour les raisons suivantes :
   
 - Vous pouvez mettre en service et configurer les serveurs cloud plus rapidement, les rendant ainsi disponibles plus tôt pour vos utilisateurs.
-    
 - Azure offre une meilleure disponibilité de site avec moins d'efforts.
-    
 - Vous pouvez réduire le nombre de serveurs locaux de votre organisation.
-    
-> [!IMPORTANT]
-> Cette solution exige une connectivité entre votre réseau local et votre réseau virtuel Azure. Pour plus d'informations, voir [Connecter un réseau local à Microsoft Azure Virtual Network](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md). 
-  
-> [!IMPORTANT]
-> Cet article décrit la synchronisation d'un domaine unique dans une forêt unique. Azure AD Connect synchronise tous les domaines Windows Server AD dans votre forêt Active Directory avec Office 365. Si vous avez plusieurs forêts Active Directory à synchroniser avec Office 365, voir l'article sur le [scénario de synchronisation d'annuaires à plusieurs forêts avec authentification unique](https://go.microsoft.com/fwlink/p/?LinkId=393091). 
+
+Cette solution exige une connectivité entre votre réseau local et votre réseau virtuel Azure. Pour plus d’informations, reportez-vous à [Connecter un réseau local à Microsoft Azure Virtual Network](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md). 
   
 > [!NOTE]
-> Office 365 utilise Azure Active Directory (Azure AD) pour son service d'annuaire. Votre abonnement à Office 365 comprend un client Azure AD. Ce client peut également être utilisé pour la gestion des identités de votre organisation avec d'autres charges de travail de cloud, y compris d'autres applications SaaS et des applications dans Azure. 
+> Cet article décrit la synchronisation d'un domaine unique dans une forêt unique. Azure AD Connect synchronise tous les domaines Windows Server AD dans votre forêt Active Directory avec Office 365. Si vous avez plusieurs forêts Active Directory à synchroniser avec Office 365, voir l'article sur le [scénario de synchronisation d'annuaires à plusieurs forêts avec authentification unique](https://go.microsoft.com/fwlink/p/?LinkId=393091). 
   
 ## <a name="overview-of-deploying-office-365-directory-synchronization-in-azure"></a>Vue d’ensemble du déploiement de la synchronisation d’annuaires Office 365 dans Azure
 
@@ -54,13 +50,10 @@ Le diagramme suivant montre Azure AD Connect en cours d'exécution sur une machi
 Dans le diagramme, il y a deux réseaux reliés par une connexion de site à site VPN ou ExpressRoute. Il existe un réseau local contenant les contrôleurs de domaine Windows Server AD et un réseau virtuel Azure avec un serveur de synchronisation d'annuaires, qui est une machine virtuelle exécutant [Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594). Il existe deux flux de trafic principal à partir du serveur de synchronisation d'annuaires d'origine :
   
 -  Azure AD Connect interroge un contrôleur de domaine sur le réseau local concernant les modifications apportées aux comptes et aux mots de passe.
-    
 -  Azure AD Connect envoie les modifications apportées aux comptes et aux mots de passe à l'instance Azure AD de votre abonnement Office 365. Le serveur de synchronisation d’annuaires étant situé dans une partie étendue de votre réseau local, ces modifications sont envoyées par le biais du serveur proxy du réseau local.
     
 > [!NOTE]
 > Cette solution décrit la synchronisation d'un domaine Active Directory unique dans une forêt Active Directory unique. Azure AD Connect synchronise tous les domaines Active Directory dans votre forêt Active Directory avec Office 365. Si vous avez plusieurs forêts Active Directory à synchroniser avec Office 365, reportez-vous à l'article sur le [scénario de synchronisation d'annuaires à plusieurs forêts avec authentification unique](https://go.microsoft.com/fwlink/p/?LinkId=393091). 
-  
-Dans les deux cas, le trafic provenant d'Azure AD Connect en cours d'exécution sur la machine virtuelle Azure est transféré vers une passerelle sur le réseau virtuel dans Azure, qui transfert ensuite le trafic via la connexion VPN ou ExpressRoute de site à site au périphérique de passerelle VPN sur le réseau local. L'infrastructure de routage du réseau local transfert par la suite le trafic à sa destination, par exemple un contrôleur de domaine ou un serveur proxy.
   
 Le déploiement de cette solution comporte deux étapes principales :
   
@@ -103,7 +96,7 @@ Avant de commencer, passez en revue les conditions préalables suivantes pour ce
 
 La liste suivante décrit les choix de conception effectués pour cette solution.
   
-- Cette solution utilise un seul réseau virtuel Azure avec une connexion VPN de site à site. Le réseau virtuel Azure héberge un sous-réseau unique qui contient un serveur, le serveur de synchronisation d’annuaires qui exécute Azure AD Connect. 
+- Cette solution utilise un réseau virtuel Azure unique avec une connexion VPN de site à site. Le réseau virtuel Azure héberge un sous-réseau unique qui possède un serveur, le serveur de synchronisation d’annuaires qui exécute Azure AD Connect. 
     
 - Sur le réseau local, un contrôleur de domaine et des serveurs DNS existent.
     
@@ -126,9 +119,11 @@ Le déploiement d'Azure AD Connect sur une machine virtuelle dans Azure consiste
 - Phase 3 : installer et configurer Azure AD Connect
     
 Après le déploiement, vous devez également affecter des emplacements et des licences pour les nouveaux comptes d’utilisateur dans Office 365.
-  
+
+<!--  
 > [!TIP]
-> Le [serveur de synchronisation d’annuaires du kit de déploiement Azure](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded) contient tous les blocs PowerShell Azure pour créer cette solution, les diagrammes au format Microsoft PowerPoint et Visio et un classeur de configuration Microsoft Excel qui génère des blocs de commandes Azure PowerShell correspondant à vos paramètres.
+> The [Directory Synchronization Server in Azure Deployment Kit](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded) has all of the Azure PowerShell blocks to build out this solution, the diagrams in Microsoft PowerPoint and Visio format, and a Microsoft Excel configuration workbook that generates Azure PowerShell command blocks customized for your settings.
+-->
   
 ### <a name="phase-1-create-and-configure-the-azure-virtual-network"></a>Phase 1 : créer et configurer le réseau virtuel Azure
 
@@ -183,7 +178,7 @@ Cette illustration montre le serveur de synchronisation d’annuaires avec Azure
 
 Azure AD Connect ajoute des comptes à votre abonnement Office 365 à partir de Windows Server AD en local, mais pour que les utilisateurs se connectent à Office 365 et utilisent ses services, les comptes doivent être configurés avec un emplacement et des licences. Utilisez ces étapes pour ajouter l’emplacement et activer les licences pour les comptes d’utilisateur appropriés :
   
-1. Connectez-vous à la [page du portail Office 365](https://portal.office.com), puis cliquez sur **Administrateur**.
+1. Connectez-vous à la [page du portail Office 365](https://www.office.com), puis cliquez sur **Administrateur**.
     
 2. Dans la navigation de gauche, cliquez sur **Utilisateurs > Utilisateurs actifs**.
     
@@ -207,7 +202,8 @@ Azure AD Connect ajoute des comptes à votre abonnement Office 365 à partir 
   
 [Configurer la synchronisation d’annuaires pour Office 365](set-up-directory-synchronization.md)
   
-[Serveur de synchronisation d’annuaires dans le kit de déploiement Azure](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded)
-
+<!--
+[Directory Synchronization server in Azure Deployment Kit](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded)
+-->
 
 

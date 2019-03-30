@@ -3,7 +3,6 @@ title: Automatiser la collecte de fichiers pour eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -14,12 +13,12 @@ ms.assetid: 8d751419-d81b-4eb7-a2e5-8b03ccbf670c
 search.appverid:
 - MET150
 description: 'Résumé : Apprenez à automatiser la collecte de fichiers à partir des ordinateurs des utilisateurs pour eDiscovery.'
-ms.openlocfilehash: 12d61d2c43a297001eecf463991654afbcfccb1a
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: bfbe3b9218ed81727f2cc6ad9fabcb02e76d486b
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915749"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001607"
 ---
 # <a name="automate-file-collection-for-ediscovery"></a>Automatiser la collecte de fichiers pour eDiscovery
 
@@ -91,7 +90,7 @@ Maintenant que la configuration de base est en place, vous pouvez passer à la c
     
   - Dépositaires : Modifier, Lire
     
-  - Administrateurs : Contrôle total
+  - Administrateurs : Contrôle total
     
   - Sous-système approuvé Exchange : Modifier, Lire
     
@@ -273,7 +272,7 @@ Write-Host -ForegroundColor Cyan "Finished."
 |:-----|:-----|:-----|
 |71  <br/> |Variable **$FileTypes**. Inclure toutes les extensions de type de fichier que vous souhaitez que le script inventorie et collecte dans la variable du tableau<br/> |Facultatif  <br/> |
 |76 et 77  <br/> |Modifier la conception de la variable **$CaseNo** en fonction de vos besoins. Le script capture la date et heure actuelles et y ajoute le nom d'utilisateur.<br/> |Facultatif  <br/> |
-|80  <br/> |La variable **$CaseRootLocation** doit être configurée pour votre partage des fichiers de collecte de serveurs intermédiaires. Par exemple **\\\\Staging\\Cases$** <br/> |Requis  <br/> |
+|80  <br/> |La variable **$CaseRootLocation** doit être configurée pour votre partage des fichiers de collecte de serveurs intermédiaires. Par exemple **\\\\Staging\\Cases$** <br/> |Obligatoire  <br/> |
    
 4. Placez le fichier CollectionScript.ps1 dans le partage des fichiers d’accès réseau sur un contrôleur de domaine. 
     
@@ -329,8 +328,8 @@ $AllFiles | ForEach-Object {
     
 |**Ligne #**|**Ce que vous devez modifier**|**Obligatoire/facultatif**|
 |:-----|:-----|:-----|
-|12  <br/> |**$FolderIdentifier** marque les dossiers de boîte aux lettres vers lesquels les fichiers PST sont importés. Modifier si nécessaire.<br/> |Facultatif  <br/> |
-|17  <br/> |**$ConnectionUri** doit être configuré pour votre propre serveur. <br/> > [!IMPORTANT]> Vérifiez que votre **$ConnectionUri** pointe vers un emplacement http://, et non pas https://. Cela ne fonctionnera pas avec https://          |Requis  <br/> |
+|an  <br/> |**$FolderIdentifier** marque les dossiers de boîte aux lettres vers lesquels les fichiers PST sont importés. Modifier si nécessaire.<br/> |Facultatif  <br/> |
+|cm  <br/> |**$ConnectionUri** doit être configuré pour votre propre serveur. <br/> > [!IMPORTANT]> Vérifiez que votre **$ConnectionUri** pointe vers un emplacement http://, et non pas https://. Cela ne fonctionnera pas avec https://          |Requis  <br/> |
    
 4. Vérifiez que le compte Sous-système approuvé Exchange dispose des autorisations de lecture, écriture et exécution sur le partage \\\\Staging\\Cases$.
     

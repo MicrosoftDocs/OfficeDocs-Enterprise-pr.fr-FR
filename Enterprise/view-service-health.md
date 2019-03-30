@@ -23,16 +23,16 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Afficher l'état d'intégrité des services Office 365 avant d'appeler la prise en charge pour déterminer s'il existe une interruption de service Active
-ms.openlocfilehash: 7a8d6c028caa72d332a51123233b2d0642311da0
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.openlocfilehash: 483ff0ff6507010c9a81f0774fc8c3e8820395cb
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085293"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001577"
 ---
 # <a name="how-to-check-office-365-service-health"></a>Vérifier l'état du service Office 365
 
-Vous pouvez afficher l'état de santé d'Office 365, de Yammer, de Microsoft Dynamics CRM et des services Cloud Microsoft Intune sur la page d' **État du service** Office 365 dans le centre d'administration. Si vous rencontrez des problèmes avec un service Cloud, vous pouvez vérifier l'état du service pour déterminer s'il s'agit d'un problème connu avec une résolution en cours avant d'appeler le support technique ou de consacrer du temps à la résolution des problèmes. 
+Vous pouvez afficher l'état de santé d'Office 365, de Yammer, de Microsoft Dynamics CRM et des services Cloud Microsoft Intune sur la page d' **État du service** Office 365 dans le [Centre d'administration Microsoft 365](https://admin.microsoft.com). If you are experiencing problems with a cloud service, you can check the service health to determine whether this is a known issue with a resolution in progress before you call support or spend time troubleshooting. 
 
 Si vous ne parvenez pas à vous connecter au service portail de service, vous pouvez utiliser la [page État du service](https://status.office365.com) pour vérifier les problèmes connus qui vous empêchent de vous connecter à votre client.
   
@@ -43,7 +43,7 @@ Si vous ne parvenez pas à vous connecter au service portail de service, vous po
     > [!NOTE]
     > Les personnes dotées d'un rôle d'administrateur général ou d'administrateur de service peuvent afficher l'état du service. Pour afficher l'état du service, les administrateurs Exchange, SharePoint et Skype Entreprise doivent aussi disposer d'un rôle d'administrateur portant sur ce service.
   
-2. Pour ouvrir l'état du service, dans le centre d'administration, accédez à intégrité du**service**d' **intégrité** > ou cliquez sur la carte d' **intégrité des services** dans le tableau de **bord d'accueil**. La carte de tableau de bord indique s'il existe un problème de service actif et des liens vers la page d'état détaillé du service.
+2. Pour ouvrir l'état du service, dans le centre d'administration, accédez à intégrité du**service**d' **intégrité** > ou cliquez sur la carte d' **intégrité des services** dans le tableau de **bord d'accueil**. La carte du tableau de bord indique s'il existe un problème lié au service actif et mène à la page détaillée d'état du service.
     
     ![Dashboard card for service health](media/8ae3de43-7bd5-4ee9-90ed-8b5ba5f9b474.png)
   
@@ -111,7 +111,7 @@ En règle générale, les services apparaissent comme intègres, sans autres inf
    
 ## <a name="history"></a>Historique
 
-L'état du service vous permet de consulter l'état actuel de l'intégrité et d'afficher l'historique des avis de service et des incidents ayant influencé votre client au cours des 30 derniers jours. Pour afficher l'intégrité passée de tous les services, sélectionnez **afficher l'historique** sur la page **État du service** . 
+L'état du service vous permet de consulter l'état actuel de l'intégrité et d'afficher l'historique des avis de service et des incidents ayant influencé votre client au cours des 30 derniers jours. Pour afficher l'état passé de tous les services, sélectionnez **Afficher l'historique** sur la page **État du Service**. 
   
 ![Show link to health history](media/12a3e484-1eb4-497f-8cab-8064bccc2ef5.png)
   
@@ -119,7 +119,7 @@ La liste de tous les messages d'état des services publiés au cours de la péri
   
 ![View service health history](media/5ed20247-121c-4abe-9fe7-9025e26a2d0e.png)
   
-Vous pouvez afficher l'historique des intégrités pendant les 7 derniers jours ou les 30 derniers jours. Sélectionnez une ligne pour afficher plus de détails sur ce problème.
+Vous pouvez afficher l'historique d'état au cours des 7 ou 30 derniers jours. Sélectionnez une ligne pour afficher plus de détails sur ce problème.
   
 Pour plus d'informations sur notre engagement en matière de disponibilité, consultez la rubrique [opérations transparentes d'Office 365](https://go.microsoft.com/fwlink/?linkid=848695).
   
@@ -127,9 +127,6 @@ Pour plus d'informations sur notre engagement en matière de disponibilité, con
 
 Nous mettons tout en œuvre pour que les informations que nous vous fournissons soient opportunes, précises et utiles. Pour évaluer nos interventions, sélectionnez un nombre d'étoiles. Après nous avoir attribué une note de 1 à 5 étoiles, vous pouvez envoyer des commentaires sur des détails spécifiques. Nous utiliserons vos commentaires pour affiner notre système d'état des services.
   
-![Feedback form for service health issues](media/fd083fdb-fde8-47b4-9136-b90d1d003864.png)
-  
 ## <a name="see-also"></a>Voir aussi
 
-[Rapports d'activité dans le Centre d'administration Office 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
-
+[Rapports d'activité dans le centre d'administration Microsoft 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)

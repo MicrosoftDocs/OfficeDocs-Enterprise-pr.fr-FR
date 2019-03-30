@@ -3,7 +3,6 @@ title: Afficher le statut de synchronisation d’annuaires dans Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,20 +17,22 @@ search.appverid:
 - MED150
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
 description: Découvrez comment désactiver la synchronisation d'annuaires. Vous pouvez également afficher son état.
-ms.openlocfilehash: 4803cbadd17dbc1ee23d019f39144ff1ffaefd9a
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.openlocfilehash: a38b723db6f5bafe246e774972ca89c65bc9c846
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085053"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001567"
 ---
 # <a name="view-directory-synchronization-status-in-office-365"></a>Afficher le statut de synchronisation d’annuaires dans Office 365
+
 Si vous avez intégré Active Directory sur site à Azure AD en synchronisant votre environnement local avec Office 365, vous pouvez également vérifier l'état de votre synchronisation.
   
 ## <a name="view-directory-synchronization-status"></a>Afficher l'état de la synchronisation d'annuaires
-- Connectez-vous au centre d'administration Office 365 et **** choisissez DirSync Status sur la page d'accueil. 
+
+- Connectez-vous au [Centre d'administration Microsoft 365](https://admin.microsoft.com) et choisissez **DirSync Status** sur la page d'accueil.
 - Vous pouvez également accéder à **** \> utilisateurs **actifs**, puis, sur la page **utilisateurs actifs** , sélectionner **plus** \> de synchronisation d' **annuaires**. Dans le volet **synchronisation** d'annuaires, sélectionnez **accéder à la gestion DirSync**.
-    
+
 ## <a name="information-on-the-manage-directory-synchronization-page"></a>Informations sur la page gérer la synchronisation d'annuaires
 
 Le tableau suivant répertorie les fonctionnalités sur lesquelles vous pouvez obtenir des informations sur la page.

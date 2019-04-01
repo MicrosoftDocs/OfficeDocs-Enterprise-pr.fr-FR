@@ -6,65 +6,57 @@ manager: pamgreen
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
-description: Découvrez comment ajouter ou supprimer un administrateur localisés dans OneDrive pour Business Multi-localisés.
-ms.openlocfilehash: 4e8c8bec148d5a4e7e55ffa2b08a49cd2ea6aa0a
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
-ms.translationtype: MT
+localization_priority: Priority
+description: Découvrez comment ajouter ou supprimer un administrateur géographique dans Office 365 multigéographique.
+ms.openlocfilehash: 28af776f3afe4e3cc666817eb2d5faff846aa1af
+ms.sourcegitcommit: 8ba20f1b1839630a199585da0c83aaebd1ceb9fc
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849810"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30931663"
 ---
-# <a name="add-or-remove-a-geo-administrator-in-onedrive-for-busniess-multi-geo"></a>Ajouter ou supprimer un administrateur localisés dans OneDrive pour Busniess Multi-localisés
+# <a name="add-or-remove-a-geo-administrator-in-office-365-multi-geo"></a>Ajouter ou supprimer un administrateur géographique dans Office 365 multigéographique
 
-Vous pouvez configurer des administrateurs distincts pour chaque emplacement géographique que vous avez dans votre client. Ces administrateurs auront accès aux paramètres de SharePoint Online et OneDrive qui sont spécifiques à leur emplacement géographique.
+Vous pouvez configurer des administrateurs distincts pour chaque emplacement géographique disponible dans votre client. Ces administrateurs ont accès aux paramètres SharePoint Online et OneDrive spécifiques de leur emplacement géographique.
 
-Certains services - telles que le magasin de termes - sont administrés à partir de l’emplacement central et répliquées aux emplacements satellites. L’administrateur localisés pour l’emplacement central a accès à ces derniers, tandis que les administrateurs localisés pour les emplacements satellites ne.
+Certains services (par exemple, le magasin de termes) sont administrés à partir de l’emplacement central et répliqués vers des emplacements satellites. L’administrateur géographique de l’emplacement central a accès à ces fonctionnalités, au contraire des administrateurs géographiques des emplacements satellites.
 
-Les administrateurs globaux et les administrateurs SharePoint Online continuent à accéder aux paramètres de l’emplacement central et tous les emplacements de satellites.
+Les administrateurs généraux et les administrateurs SharePoint Online ont toujours accès aux paramètres dans l’emplacement central et dans tous les emplacements satellites.
 
-## <a name="configuring-geo-administrators"></a>Configuration des administrateurs localisés
+## <a name="configuring-geo-administrators"></a>Configuration des administrateurs géographiques
 
-Configuration des administrateurs localisés nécessite module SharePoint Online PowerShell.
+La configuration des administrateurs géographiques nécessite un module SharePoint Online PowerShell.
 
-[Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/Connect-SPOService) permet de se connecter au centre d’administration de l’emplacement géographique où vous souhaitez ajouter l’administrateur de géolocalisation. (Par exemple, Connect-SPOServicehttps://ContosoEUR-admin.sharepoint.com.)
+Pour vous connecter au centre d’administration de l’emplacement géographique auquel vous voulez ajouter l’administrateur géo, utilisez la cmdlet [Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/Connect-SPOService) (par exemple, Connect-SPOService https://ContosoEUR-admin.sharepoint.com.)
 
-Pour afficher les administrateurs geo existant d’un emplacement, exécutez`Get-SPOGeoAdministrator`
+Pour afficher les administrateurs géographiques existants d’un emplacement, exécutez la cmdlet `Get-SPOGeoAdministrator`.
 
-### <a name="adding-a-user-as-a-geo-admin"></a>Ajout d’un utilisateur en tant qu’un administrateur localisés
+### <a name="adding-a-user-as-a-geo-admin"></a>Ajout d’un utilisateur en tant qu’administrateur géographique
 
-Pour ajouter un utilisateur en tant qu’un administrateur localisés, exécutez`Add-SPOGeoAdministrator -UserPrincipalName <UPN>`
+Pour ajouter un utilisateur en tant qu’administrateur géographique, exécutez la cmdlet `Add-SPOGeoAdministrator -UserPrincipalName <UPN>`.
 
-Pour supprimer un utilisateur en tant qu’un administrateur géographique d’un emplacement, exécutez`Remove-SPOGeoAdministrator -UserPrincipalName <UPN>`
+Pour supprimer un utilisateur administrateur géographique d’un emplacement, exécutez la cmdlet `Remove-SPOGeoAdministrator -UserPrincipalName <UPN>`.
 
-### <a name="adding-a-group-as-a-geo-admin"></a>Ajout d’un groupe en tant qu’un administrateur localisés
+### <a name="adding-a-group-as-a-geo-admin"></a>Ajout d’un groupe en tant qu’administrateur géographique
 
-Vous pouvez ajouter un groupe de sécurité ou un groupe de sécurité à extension messagerie en tant qu’un administrateur de géolocalisation. (Groupes de distribution et les groupes d’Office 365 ne sont pas pris en charge.)
+Vous pouvez ajouter un groupe de sécurité ou un groupe de sécurité à extension courrier en tant qu’administrateur géographique (les groupes de distribution et les groupes Office 365 ne sont pas pris en charge).
 
-Pour ajouter un groupe en tant qu’un administrateur localisés, exécutez`Add-SPOGeoAdministrator -GroupAlias <alias>`
+Pour ajouter un groupe en tant qu’administrateur géographique, exécutez la cmdlet `Add-SPOGeoAdministrator -GroupAlias <alias>`.
 
-Pour supprimer un groupe en tant qu’un administrateur localisés, exécutez`Remove-SPOGeoAdministrator -GroupAlias <alias>`
+Pour supprimer un groupe administrateur géographique, exécutez la cmdlet `Remove-SPOGeoAdministrator -GroupAlias <alias>`.
 
-Notez que pas tous les groupes de sécurité ont un alias de groupe. Si vous souhaitez ajouter un groupe de sécurité qui ne dispose pas d’un alias, exécutez [Get-MsolGroup](https://docs.microsoft.com/en-us/powershell/module/msonline/get-msolgroup) pour récupérer la liste des groupes, trouver ObjectID de votre groupe de sécurité, puis exécutez :
+Notez que certains groupes de sécurité n’ont pas d’alias de groupe. Si vous voulez ajouter un groupe de sécurité dépourvu d’alias, exécutez la cmdlet [MsolGroup Get](https://docs.microsoft.com/fr-FR/powershell/module/msonline/get-msolgroup) pour récupérer une liste de groupes, recherchez l’ObjectID de votre groupe de sécurité, puis exécutez la cmdlet suivante :
 
 `Add-SPOGeoAdministrator -ObjectID <ObjectID>`
 
-Pour supprimer un groupe à l’aide de ObjectID, exécutez`Remove-SPOGeoAdministrator -ObjectID <ObjectID>`
-
-### <a name="accessing-the-admin-center-for-a-specific-geo-location"></a>Accès au centre d’administration pour un géolocalisation spécifique
-
-Pour administrer les paramètres de OneDrive pour leur emplacement géographique, administrateurs doivent accéder au centre d’administration OneDrive directement à l’aide du format d’URL suivant :
-
-https://admin.onedrive.com/?geo=<*localisés*>
-
-Par exemple, le centre d’administration de OneDrive pour le Canada trouve à l’adresse : https://admin.onedrive.com/?geo=CAN.
+Pour supprimer un groupe à l’aide de l’ObjectID, exécutez la cmdlet `Remove-SPOGeoAdministrator -ObjectID <ObjectID>`.
 
 ## <a name="see-also"></a>Voir aussi
 
-[SPOGeoAdministrator ajouter](https://docs.microsoft.com/powershell/module/sharepoint-online/add-spogeoadministrator)
+[Add-SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/add-spogeoadministrator)
 
 [Get-SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spogeoadministrator)
 
 [Remove-SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-spogeoadministrator)
 
-[Définir un alias (MailNickName) pour un groupe de sécurité](https://docs.microsoft.com/en-us/powershell/module/azuread/set-azureadgroup)
+[Définir un alias (MailNickName) pour un groupe de sécurité](https://docs.microsoft.com/fr-FR/powershell/module/azuread/set-azureadgroup)

@@ -3,7 +3,7 @@ title: Utilisation du réseau de distribution de contenu Office 365 avec ShareP
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/2/2019
+ms.date: 4/3/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Décrit l'utilisation du réseau de distribution de contenu (CDN) d'Office 365 pour accélérer la remise de vos ressources SharePoint Online à tous vos utilisateurs, où qu'ils soient ou dans lesquels ils accèdent à votre contenu.
-ms.openlocfilehash: a718c30a40209a8ee0c8e78700ed3eae72c8347c
-ms.sourcegitcommit: 43d2b7e1d9932182c6cca5164d4d9096dcf4ed36
+ms.openlocfilehash: ceb66b3e17baf25a292b4903c569b931f9448f71
+ms.sourcegitcommit: 100ae697304427dab5ad494a06323656b498c57e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31039501"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "31396922"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Utilisation du réseau de distribution de contenu Office 365 avec SharePoint Online
 
@@ -288,7 +288,7 @@ Utilisez l'applet de commande **Add-SPOTenantCdnOrigin** pour définir une origi
 Add-SPOTenantCdnOrigin -CdnType <Public | Private> -OriginUrl <path>
 ```
 
-La valeur _path_ est le chemin d'accès à la bibliothèque ou au dossier qui contient les composants. Vous pouvez utiliser des caractères génériques en plus des chemins d’accès relatifs. Les origines prennent en charge les caractères génériques ajoutés à l'URL. Cela vous permet de créer des origines qui s'étendent sur plusieurs sites. Par exemple, pour inclure toutes les ressources dans le dossier MasterPages pour tous vos sites en tant qu'origine publique dans le CDN, tapez la commande suivante:
+La valeur _path_ est le chemin d'accès relatif à la bibliothèque ou au dossier qui contient les composants. Vous pouvez utiliser des caractères génériques en plus des chemins d’accès relatifs. Les origines prennent en charge les caractères génériques ajoutés à l'URL. Cela vous permet de créer des origines qui s'étendent sur plusieurs sites. Par exemple, pour inclure toutes les ressources dans le dossier MasterPages pour tous vos sites en tant qu'origine publique dans le CDN, tapez la commande suivante:
 
 ``` powershell
 Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
@@ -297,18 +297,18 @@ Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
 - Le modificateur de caractère**/** générique * peut uniquement être utilisé au début du chemin d'accès et correspondra à tous les segments d'URL sous l'URL spécifiée.
 - Le chemin d'accès peut pointer vers une bibliothèque de documents, un dossier ou un site. Par exemple, le chemin d'accès _*/site1_ correspondra à toutes les bibliothèques de documents sous le site.
 
-Vous pouvez ajouter une origine avec un chemin d'accès spécifique à l'aide d'un chemin d'accès relatif ou d'un chemin d'accès complet.
+Vous pouvez ajouter une origine avec un chemin d'accès relatif spécifique. Vous ne pouvez pas ajouter d'origine à l'aide du chemin d'accès complet.
 
-Cet exemple ajoute une origine privée de la bibliothèque éléments sur un site spécifique à l'aide d'un chemin d'accès relatif:
+Cet exemple ajoute une origine privée de la bibliothèque éléments sur un site spécifique:
 
 ``` powershell
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 ```
 
-Cet exemple ajoute une origine privée du dossier _dossier1_ dans la bibliothèque de sites de la collection de sites à l'aide du chemin d'accès complet:
+Cet exemple ajoute une origine privée du dossier _dossier1_ dans la bibliothèque de sites de la collection de sites:
 
 ``` powershell
-Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl “https://contoso.sharepoint.com/sites/test/siteassets/folder1”
+Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl “/sites/test/siteassets/folder1”
 ```
 
 Pour plus d'informations sur cette commande et sa syntaxe, voir [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).
@@ -469,7 +469,7 @@ Consultez la rubrique [origines du CDN par défaut](use-office-365-cdn-with-spo.
 
 ### <a name="add-an-office-365-cdn-origin"></a>Ajouter une origine de CDN Office 365
 
-> [!NOTE]
+> [!IMPORTANT]
 > Vous ne devez jamais placer de ressources sensibles à votre organisation dans une bibliothèque de documents SharePoint configurée comme une origine publique.
 
 Utilisez la commande [spo cdn origin add](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-origin-add/) pour définir une origine de CDN. Vous pouvez définir plusieurs origines. L’origine est une URL pointant vers un dossier ou une bibliothèque SharePoint qui contient les ressources qui doivent être hébergées par le CDN.
@@ -478,7 +478,7 @@ Utilisez la commande [spo cdn origin add](https://pnp.github.io/office365-cli/cm
 spo cdn origin add --type [Public | Private] --origin <path>
 ```
 
-Où `path` est le chemin d’accès au dossier qui contient les ressources. Vous pouvez utiliser des caractères génériques en plus des chemins d’accès relatifs.
+Où `path` est le chemin d'accès relatif au dossier qui contient les biens. Vous pouvez utiliser des caractères génériques en plus des chemins d’accès relatifs.
 
 Pour inclure toutes les ressources de la **Galerie de pages maîtres** de tous les sites en tant qu'origine publique, exécutez:
 

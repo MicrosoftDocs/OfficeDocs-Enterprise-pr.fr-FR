@@ -18,17 +18,17 @@ search.appverid:
 - MBS150
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
-description: Découvrez comment afficher les erreurs de synchronisation d'annuaires dans le centre d'administration Office 365.
-ms.openlocfilehash: 8b7bb16aeddbf1765426c3725cd1f670524ef6d1
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+description: Découvrez comment afficher les erreurs de synchronisation d'annuaires dans le centre d'administration Microsoft 365.
+ms.openlocfilehash: 8450c2e26c9c9ae194be46d81018a20c91e35f29
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085033"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001807"
 ---
 # <a name="view-directory-synchronization-errors-in-office-365"></a>Afficher les erreurs de synchronisation d'annuaires dans Office 365
 
-Vous pouvez afficher les erreurs de synchronisation d'annuaires dans le centre d'administration Office 365. Seules les erreurs d'objet utilisateur sont affichées. Pour afficher les erreurs à l'aide de PowerShell, consultez la rubrique [identifier les objets avec DirSyncProvisioningErrors](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency).
+Vous pouvez afficher les erreurs de synchronisation d'annuaires dans le [Centre d'administration Microsoft 365](https://admin.microsoft.com). Seules les erreurs d'objet utilisateur sont affichées. Pour afficher les erreurs à l'aide de PowerShell, consultez la rubrique [identifier les objets avec DirSyncProvisioningErrors](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency).
 
 Après l'affichage, consultez la rubrique [résolution des problèmes liés à la synchronisation d'annuaires pour Office 365](fix-problems-with-directory-synchronization.md) pour corriger les problèmes identifiés.
   
@@ -36,9 +36,9 @@ Après l'affichage, consultez la rubrique [résolution des problèmes liés à l
 
 Pour afficher les erreurs dans le centre d'administration:
   
-1. Connectez-vous à Office 365 à l'aide de votre compte professionnel ou scolaire. 
+1. Connectez-vous à Office 365 avec votre compte professionnel ou scolaire. 
     
-2. Accédez à la rubrique [à propos du centre d'administration Office 365](https://support.office.com/article/758befc4-0888-4009-9f14-0d147402fd23).
+2. Accédez à la rubrique [à propos du centre d'administration](https://support.office.com/article/758befc4-0888-4009-9f14-0d147402fd23).
     
 3. Sur la page d' **Accueil** , vous verrez la vignette d' **État DirSync** . 
     

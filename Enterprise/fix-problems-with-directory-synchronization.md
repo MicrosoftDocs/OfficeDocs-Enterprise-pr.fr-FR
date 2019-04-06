@@ -17,12 +17,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Décrit les causes courantes des problèmes liés à la synchronisation d'annuaires dans Office 365 et fournit quelques méthodes pour les aider à les résoudre.
-ms.openlocfilehash: e83ca495ca96ac41fb2f79775c3d5970a6b538fb
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.openlocfilehash: a5c4b58dd856158b00605f39d8a66b48488086b2
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085393"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001837"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Résoudre les problèmes de synchronisation d’annuaires pour Office 365
 
@@ -30,7 +30,7 @@ Avec la synchronisation d'annuaires, vous pouvez continuer à gérer les utilisa
   
 ## <a name="how-do-i-know-if-something-is-wrong"></a>Comment savoir si un problème est survenu?
 
-La première indication que un élément est incorrect est lorsque la vignette d'État dirSync dans le centre d'administration Office 365 indique qu'il y a un problème:
+La première indication que un élément est incorrect est lorsque la vignette d'État dirSync dans le centre d'administration 365 de Microsoft indique qu'il y a un problème:
   
 ![Vignette d'État dirSync dans l'aperçu du centre d'administration](media/060006e9-de61-49d5-8979-e77cda198e71.png)
   
@@ -38,13 +38,9 @@ Vous recevrez également un message (vers l'autre courrier électronique et vers
   
 ## <a name="how-do-i-get-azure-active-directory-connect-tool"></a>Comment puis-je obtenir l'outil Azure Active Directory Connect?
 
-dans le centre d'administration Office 365, accédez à * * utilisateurs * \> * utilisateurs **actifs**. Cliquez sur le menu **plus** , puis sélectionnez **synchronisation**d'annuaires. 
+dans le [centre d'administration 365 de Microsoft](https://admin.microsoft.com), accédez à * * utilisateurs \> * * utilisateurs **actifs**. Cliquez sur le menu **plus** , puis sélectionnez **synchronisation**d'annuaires. 
   
 ![Dans le menu autres, sélectionnez synchronisation d'annuaires.](media/dc6669e5-c01b-471e-9cdf-04f5d44e1c4b.png)
-  
-dans l'ancien centre d'administration Office 365, accédez **** \> à utilisateurs **actifs**, puis sélectionnez **configurer** en regard de **synchronisation Active Directory**. 
-  
-![Choisissez configurer en regard de la synchronisation Active Directory](media/bd95492b-d65e-4072-a6ee-e562f5f566c3.png)
   
 Suivez les [instructions de l'Assistant](set-up-directory-synchronization.md) pour télécharger Azure ad Connect. 
   
@@ -58,25 +54,25 @@ Pour effectuer une mise à jour à partir d'Azure Active Directory Sync vers Azu
 
 - [Synchronisation des identités et résilience d'attribut en double](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)
 
-### <a name="i-have-an-alert-in-the-office-365-admin-center-or-am-receiving-automated-emails-that-there-hasnt-been-a-recent-synchronization-event"></a>**J'ai une alerte dans le centre d'administration Office 365 ou je reçois des courriers électroniques automatiques qu'il n'y a pas eu un événement de synchronisation récent**
+### <a name="i-have-an-alert-in-the-admin-center-or-am-receiving-automated-emails-that-there-hasnt-been-a-recent-synchronization-event"></a>**J'ai une alerte dans le centre d'administration, ou je reçois des courriers électroniques automatiques qu'il n'y a pas eu un événement de synchronisation récent**
 - [Résolution des problèmes de connectivité avec Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity)
 - [Autorisations et comptes Azure AD Connect](https://go.microsoft.com/fwlink/p/?LinkId=820598)
 - [Synchronisation Azure AD Connect: comment gérer le compte de service Azure AD](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-azureadaccount)
 - [La synchronisation d'annuaires vers Azure Active Directory s'arrête ou vous recevez un avertissement indiquant que la synchronisation n'a pas été enregistrée depuis plus d'une journée](https://support.microsoft.com/help/2882421/directory-synchronization-to-azure-active-directory-stops-or-you-re-warned-that-sync-hasn-t-registered-in-more-than-a-day)
 
-### <a name="password-hashes-arent-synchronizing-or-im-seeing-an-alert-in-the-office-365-admin-center-that-there-hasnt-been-a-recent-password-hash-synchronization"></a>**Les hachages de mot de passe ne sont pas synchronisés ou une alerte s'affiche dans le centre d'administration Office 365 qu'il n'y a pas eu une synchronisation récente de hachage de mot de passe**
+### <a name="password-hashes-arent-synchronizing-or-im-seeing-an-alert-in-the-admin-center-that-there-hasnt-been-a-recent-password-hash-synchronization"></a>**Les hachages de mot de passe ne sont pas synchronisés ou une alerte s'affiche dans le centre d'administration pour signaler qu'il n'y a pas eu une synchronisation récente de hachage de mot de passe**
 - [Implémentation de la synchronisation de hachage de mot de passe avec la synchronisation Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
 
 ### <a name="im-seeing-an-alert-that-object-quota-exceeded"></a>**Je vois une alerte indiquant le dépassement du quota d'objet**
 - Nous disposons d'un quota d'objets intégré pour aider à protéger le service. Si un trop grand nombre d'objets dans votre répertoire doivent être synchronisés avec Office 365, vous devrez [contacter le support technique pour les produits professionnels](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) afin d'augmenter votre quota.
 
-### <a name="i-need-to-know-which-attributes-are-synchronized"></a>**J’ai besoin de savoir quels attributs sont synchronisés.**
+### <a name="i-need-to-know-which-attributes-are-synchronized"></a>**J'ai besoin de savoir quels attributs sont synchronisés**
 - Vous pouvez trouver la liste de tous les attributs synchronisés entre l'organisation locale et le nuage dans ce [cas](https://go.microsoft.com/fwlink/p/?LinkId=396719).
 
 ### <a name="i-cant-manage-or-remove-objects-that-were-synchronized-to-the-cloud"></a>**Je ne peux pas gérer ou supprimer des objets qui ont été synchronisés dans le Cloud**
 - Êtes-vous prêt à gérer les objets dans le Cloud uniquement? Ou y a-t-il un objet qui a été supprimé en local, mais qui est bloqué dans le Cloud? Consultez cette rubrique relative à la [résolution des erreurs lors](https://go.microsoft.com/fwlink/p/?linkid=842044) de la synchronisation et de [l'article de support](https://go.microsoft.com/fwlink/p/?LinkId=396720) pour obtenir des instructions sur la résolution de ces problèmes.
 
-### <a name="i-got-an-error-message-that-my-company-has-exceeded-the-number-of-objects-that-can-be-synchronized"></a>**J’ai reçu un message d’erreur indiquant que mon entreprise avait dépassé le nombre d’objets pouvant être synchronisés.**
+### <a name="i-got-an-error-message-that-my-company-has-exceeded-the-number-of-objects-that-can-be-synchronized"></a>**J'ai reçu un message d'erreur indiquant que mon entreprise a dépassé le nombre d'objets pouvant être synchronisés.**
 - Pour plus d'informations sur ce problème, consultez la [rubrique](https://go.microsoft.com/fwlink/p/?LinkId=396721).
    
 ## <a name="other-resources"></a>Autres ressources

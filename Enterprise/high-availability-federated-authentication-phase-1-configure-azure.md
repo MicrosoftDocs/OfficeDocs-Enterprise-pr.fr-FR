@@ -12,14 +12,14 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: "Résumé: conFigurez l'infrastructure Microsoft Azure pour qu'elle héberge l'authentification fédérée haute disponibilité pour Office 365."
-ms.openlocfilehash: 0268178b12374f200181c0f1b8a38de6a39e7173
-ms.sourcegitcommit: dffbcfb1cbc9776a29229a787c1eab4192e55cff
+ms.openlocfilehash: 1c9cfeaf930997c30671e5bbaed92d7dde2542e1
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30948605"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037958"
 ---
-# <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Authentification fédérée haute disponibilité, phase 1: configurer Azure
+# <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Authentification fédérée haute disponibilité, phase 1 : Configurer Azure
 
  **Résumé:** ConFigurez l'infrastructure Microsoft Azure pour qu'elle héberge l'authentification fédérée haute disponibilité pour Office 365.
   
@@ -39,7 +39,7 @@ Azure doit être mis en service avec ces composants de base:
 
 Avant de commencer à configurer les composants Azure, renseignez les tableaux suivants. Pour vous aider dans les procédures de configuration Azure, imprimez cette section et notez les informations nécessaires ou copiez cette section dans un document et remplissez-le. Pour les paramètres du réseau virtuel, remplissez le tableau V.
   
-|**Item**|**Paramètre de configuration**|**Description**|**Valeur**|
+|**Élément**|**Paramètre de configuration**|**Description**|**Valeur**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |Nom du réseau virtuel  <br/> |Nom à attribuer au réseau virtuel (exemple FedAuthNet).  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |Emplacement du réseau virtuel  <br/> |Le centre de centres Azure régional qui contiendra le réseau virtuel.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -61,9 +61,9 @@ Voir [calculatrice d'espace d'adressage pour les sous-réseaux de la passerelle 
   
 Renseignez-vous auprès de votre service informatique pour déterminer ces espaces d'adressage à partir de l'espace d'adressage de réseau virtuel.
   
-|**Item**|**Nom du sous-réseau**|**Espace d'adressage de sous-réseau**|**Objectif**|
+|**Élément**|**Nom du sous-réseau**|**Espace d'adressage de sous-réseau**|**Objectif**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Le sous-réseau utilisé par le contrôleur de domaine Windows Server Active Directory (AD) et les machines virtuelles de serveur dirSync.  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Le sous-réseau utilisé par le contrôleur de domaine des services de domaine Active Directory (AD DS) et les machines virtuelles de serveur dirSync.  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Sous-réseau utilisé par les machines virtuelles AD FS.  <br/> |
 |3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Sous-réseau utilisé par les machines virtuelles de proxy d'application Web.  <br/> |
 |4.  <br/> |GatewaySubnet  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Le sous-réseau utilisé par les machines virtuelles de la passerelle Azure.  <br/> |
@@ -72,7 +72,7 @@ Renseignez-vous auprès de votre service informatique pour déterminer ces espac
   
 Ensuite, renseignez le Tableau I pour les adresses IP statiques affectées à des machines virtuelles et à des instances d'équilibreur de charge.
   
-|**Item**|**Objectif**|**Adresse IP sur le sous-réseau**|**Valeur**|
+|**Élément**|**Objectif**|**Adresse IP sur le sous-réseau**|**Valeur**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |Adresse IP statique du premier contrôleur de domaine  <br/> |La quatrième adresse IP possible pour l'espace d'adressage du sous-réseau défini dans l'Élément 1 du Tableau S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |Adresse IP statique du deuxième contrôleur de domaine  <br/> |La cinquième adresse IP possible pour l'espace d'adressage du sous-réseau défini dans l'Élément 1 du Tableau S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -87,7 +87,7 @@ Ensuite, renseignez le Tableau I pour les adresses IP statiques affectées à de
   
 Pour les deux serveurs DNS (Domain Name System) de votre réseau local que vous souhaitez utiliser lors de la configuration initiale des contrôleurs de domaine de votre réseau virtuel, renseignez le tableau D. collaborez avec votre service informatique pour déterminer cette liste.
   
-|**Item**|**Nom convivial du serveur DNS**|**Adresse IP du serveur DNS**|
+|**Élément**|**Nom convivial du serveur DNS**|**Adresse IP du serveur DNS**|
 |:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -317,6 +317,6 @@ Utiliser l' [authentification fédérée haute disponibilité, phase 2: configur
   
 [Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.md)
 
-[Voir Présentation de l'identité Office 365 et d'Azure Active Directory](about-office-365-identity.md)
+[Présentation de l’identité Office 365 et d’Azure Active Directory](about-office-365-identity.md)
 
 

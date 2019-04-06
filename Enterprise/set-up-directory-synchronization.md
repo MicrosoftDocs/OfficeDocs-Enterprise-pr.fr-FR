@@ -1,5 +1,5 @@
 ---
-title: Configurer la synchronisation d'annuaires dans Office 365
+title: Configurer la synchronisation d’annuaires pour Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -19,14 +19,14 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: Découvrez comment configurer la synchronisation d'annuaires entre Office 365 et votre annuaire Active Directory local.
-ms.openlocfilehash: 03f824da6feb41791e12818d8da2e298dc633f4e
-ms.sourcegitcommit: 7814d01db4d7618fc2f9381faef1a6a45ea063fe
+ms.openlocfilehash: 6d635dbcacb5a1c6c6c9c202f2ece4fac35558a4
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30492944"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001747"
 ---
-# <a name="set-up-directory-synchronization-for-office-365"></a>Configurer la synchronisation d'annuaires dans Office 365
+# <a name="set-up-directory-synchronization-for-office-365"></a>Configurer la synchronisation d’annuaires pour Office 365
 
 Office 365 utilise le service de gestion des identités des utilisateurs en nuage Azure Active Directory pour gérer les utilisateurs. Vous pouvez également intégrer Active Directory sur site à Azure AD en synchronisant votre environnement local avec Office 365. Une fois que vous avez configuré la synchronisation, vous pouvez décider que l'authentification de l'utilisateur doit avoir lieu dans Azure AD ou dans votre annuaire local.
   
@@ -56,7 +56,7 @@ Pour votre serveur local sur lequel vous installez Azure AD Connect, vous aurez 
 |**Windows Server 2008** | -La dernière version prise en charge de PowerShell est disponible dans Windows Management Framework 3,0, disponible sur le [Centre de téléchargement Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=717996).  <br> -.Net 4.5.1 et versions ultérieures sont disponibles sur le [Centre de téléchargement Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=717996). |
 
 > [!NOTE]
-> Si vous utilisez Azure Active Directory dirSync, le nombre maximal de membres du groupe de distribution que vous pouvez synchroniser à partir de votre Active Directory local vers Azure Active Directory est de 15 000. Pour Azure AD Connect, ce numéro est 50 000. 
+> Si vous utilisez Azure Active Directory dirSync, le nombre maximal de membres du groupe de distribution que vous pouvez synchroniser à partir de votre Active Directory local vers Azure Active Directory est de 15 000. Pour Azure AD Connect, ce numéro est 50 000.
   
 Pour consulter plus soigneusement le matériel, les logiciels, les exigences de compte et d'autorisation, les exigences de certificat SSL et les limites d'objet pour Azure AD Connect, lisez [Prerequisites pour Azure Active Directory Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites).
   
@@ -64,8 +64,8 @@ Vous pouvez également consulter l' [historique des versions](https://docs.micro
 
 ## <a name="to-set-up-directory-synchronization"></a>Pour configurer la synchronisation d'annuaires
 
-1. connectez-vous au centre d'administration Office 365 et **** \> choisissez utilisateurs **actifs** dans le volet de navigation de gauche.
-2. dans le centre d'administration Office 365, sur la page **utilisateurs actifs** , **sélectionnez plus** \> de **synchronisation**d'annuaires.
+1. connectez-vous au [centre d'administration Microsoft 365](https://admin.microsoft.com) et **** \> choisissez utilisateurs **actifs** dans le volet de navigation de gauche.
+2. Dans le centre d'administration, sur la page **utilisateurs actifs** , **Sélectionnez plus** \> de **synchronisation**d'annuaires.
 
     ![Dans le menu autres, sélectionnez synchronisation d'annuaires.](media/dc6669e5-c01b-471e-9cdf-04f5d44e1c4b.png)
   

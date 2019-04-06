@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: "Résumé: Affichez, répertoriez ou affichez vos comptes d'utilisateur de différentes manières avec Office 365 PowerShell."
-ms.openlocfilehash: 717a7c11f4e7f6d2e5e0c452854df7d4c419007e
-ms.sourcegitcommit: 1dc7b4731cf9899c5ae867624ed142dbab0c517f
+ms.openlocfilehash: 2858efef6220beed76894414ea99ed922353afc3
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30683701"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037918"
 ---
 # <a name="view-user-accounts-with-office-365-powershell"></a>Afficher des comptes d’utilisateur avec Office 365 PowerShell
 
@@ -217,7 +217,7 @@ Get-MsolUser | Where-Object {$_.City -eq "London"}
 Vous pouvez vérifier l'État bloqué d'un compte d'utilisateur à l'aide de la commande suivante:
   
 ```
-Get-MolUser -UserPrincipalName <UPN of user account> | Select-Object DisplayName,BlockCredential
+Get-MsolUser -UserPrincipalName <UPN of user account> | Select-Object DisplayName,BlockCredential
 ```
 
 ### <a name="view-additional-property-values-for-accounts"></a>Afficher les valeurs des propriétés supplémentaires des comptes

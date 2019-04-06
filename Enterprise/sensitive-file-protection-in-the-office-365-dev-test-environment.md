@@ -3,7 +3,7 @@ title: Protection des fichiers sensibles dans l’environnement de développemen
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/01/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: "Résumé: conFigurez et montrez comment Office 365 Information Rights Management protège vos fichiers sensibles, même lorsqu'ils sont publiés dans une collection de sites SharePoint Online incorrecte."
-ms.openlocfilehash: 59d4cf56113f8b787f0caeaefddae135ad8e6249
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: daed3b87983de79268b45dc4f92578c7c8bc59cb
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30574068"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037968"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Protection des fichiers sensibles dans l’environnement de développement/test Office 365
 
@@ -32,7 +32,7 @@ La gestion des droits relatifs à l'information (IRM) dans Office 365 est un ens
 Les instructions de cet article vous permettent d'activer et de tester la gestion des droits relatifs à l'information (IRM) dans Office 365 pour les fichiers contenant des informations sensibles possibles dans votre abonnement d'évaluation Office 365.
   
 > [!TIP]
-> Cliquez [ici](http://aka.ms/catlgstack) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft Cloud.
+> Cliquez [ici](http://aka.ms/catlgstack) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de One Microsoft Cloud.
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>Phase 1: créer votre environnement de développement/test Office 365
 
@@ -53,7 +53,7 @@ Suivez les instructions de la procédure [se connecter à Office 365 PowerShell]
   
 - Votre ordinateur (pour l’environnement de développement/test Office 365 léger).
     
-- La machine virtuelle CLIENT1 (pour l’environnement de développement/test Office 365 d’entreprise simulée).
+- La machine virtuelle CLIENT1 (pour l’environnement de développement/test Office 365 d’entreprise simulé).
     
 Dans la boîte de dialogue **demande d'informations d'identification Windows PowerShell** , tapez le nom de l'administrateur général Office 365 (par exemple: jdoe@contosotoycompany.onmicrosoft.com) et le mot de passe de votre abonnement d'évaluation Office 365.
   
@@ -232,7 +232,7 @@ Pour préparer Office 365 pour les phases 3 et 4, activez IRM pour SharePoint On
     
 5. Dans l'onglet **Centre d'administration SharePoint** , cliquez sur **paramètres**.
     
-6. Sur la page **paramètres** , dans la section gestion des droits relatifs à l' **information (IRM)** , sélectionnez **utiliser le service IRM spécifié dans votre configuration**, puis actualiser les **paramètres IRM**.
+6. Dans la page, dans la section gestion des droits relatifs à l' **information (IRM)** , sélectionnez **utiliser le service IRM spécifié dans votre configuration**, puis actualiser les **paramètres IRM**.
     
 7. Fermez l'onglet **Centre d'administration SharePoint** .
     
@@ -264,7 +264,7 @@ Tout d'abord, vous activez et configurez la gestion des droits relatifs à l'inf
     
 8. Sous **configurer les droits d'accès au document**, sélectionnez **autoriser les visualiseurs à imprimer** et **autoriser les utilisateurs à écrire sur une copie du document téléchargé**.
     
-9. Sous **définir la protection de groupe et l'intervalle des informations d'identification**, sélectionnez **autoriser la protection de groupe** et pour le **groupe par défaut**, tapez **cadres**.
+9. Sous **définir la protection de groupe et l'intervalle des informations d'identification**, sélectionnez **autoriser la protection de groupe. Groupe par défaut**, puis tapez **Executives**.
     
 10. Cliquez sur **OK**.
     

@@ -1,48 +1,49 @@
 ---
-title: Regroupement des données des rapports d’un client via Windows PowerShell pour les partenaires avec autorisation d’accès délégué
+title: Regroupement des données des rapports d'un client via Windows PowerShell pour les partenaires avec autorisation d'accès délégué
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 12/15/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- M365-subscription-management
 ms.custom: ''
 ms.assetid: 0f946b46-200a-4bdd-9b1b-019a554ddcc6
 description: 'Résumé : Utiliser Windows PowerShell pour Office 365 pour récupérer des rapports sur toutes les locations de client et regrouper les données à un emplacement unique.'
-ms.openlocfilehash: eba2c3be848b878670321485718317b5552b2db3
-ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
+ms.openlocfilehash: 2a2cfcd5179160e19ff8e95c9748251b92e42e7a
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "18812105"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001787"
 ---
-# <a name="aggregate-customer-reporting-data-via-windows-powershell-for-delegated-access-permission-dap-partners"></a><span data-ttu-id="2a7c9-103">Regroupement des données des rapports d’un client via Windows PowerShell pour les partenaires avec autorisation d’accès délégué</span><span class="sxs-lookup"><span data-stu-id="2a7c9-103">Aggregate customer reporting data via Windows PowerShell for Delegated Access Permission (DAP) partners</span></span>
+# <a name="aggregate-customer-reporting-data-via-windows-powershell-for-delegated-access-permission-dap-partners"></a><span data-ttu-id="db950-103">Regroupement des données des rapports d’un client via Windows PowerShell pour les partenaires avec autorisation d’accès délégué</span><span class="sxs-lookup"><span data-stu-id="db950-103">Aggregate customer reporting data via Windows PowerShell for Delegated Access Permission (DAP) partners</span></span>
 
- <span data-ttu-id="2a7c9-104">**Résumé :** Utilisez Windows PowerShell pour Office 365 pour récupérer des rapports sur toutes les locations de client et regrouper les données à un emplacement unique.</span><span class="sxs-lookup"><span data-stu-id="2a7c9-104">**Summary:** Use Windows PowerShell for Office 365 to retrieve reports on all customer tenancies and aggregate the data into a single location.</span></span>
+ <span data-ttu-id="db950-104">**Résumé :** Utilisez Windows PowerShell pour Office 365 pour récupérer des rapports sur toutes les locations de client et regrouper les données à un emplacement unique.</span><span class="sxs-lookup"><span data-stu-id="db950-104">**Summary:** Use Windows PowerShell for Office 365 to retrieve reports on all customer tenancies and aggregate the data into a single location.</span></span>
   
-<span data-ttu-id="2a7c9-p101">Par défaut, Windows PowerShell pour Office 365 ne dispose pas d'une fonction intégrée de regroupement de données des rapports pour plusieurs locations de client. Toutefois, vous pouvez utiliser cet exemple de script Windows PowerShell pour Office 365 pour itérer l'opération dans toutes les locations de votre client afin de récupérer un rapport unique pour chacun de vos clients, puis regrouper les données des rapports à un emplacement unique. Vous obtenez ainsi un rapport unique pour tous les locataires de votre client.</span><span class="sxs-lookup"><span data-stu-id="2a7c9-p101">By default, Windows PowerShell for Office 365 does not have a built-in aggregation of reporting data from multiple customer tenancies. However, you can use this sample Windows PowerShell for Office 365 script to iterate through all your customer tenancies to retrieve a single report for each of your customers and then aggregate the reporting data into a single location. The result is that you'll have a single report for all your customer tenants.</span></span> 
+<span data-ttu-id="db950-p101">Par défaut, Windows PowerShell pour Office 365 ne dispose pas d'une fonction intégrée de regroupement de données des rapports pour plusieurs locations de client. Toutefois, vous pouvez utiliser cet exemple de script Windows PowerShell pour Office 365 pour itérer l'opération dans toutes les locations de votre client afin de récupérer un rapport unique pour chacun de vos clients, puis regrouper les données des rapports à un emplacement unique. Vous obtenez ainsi un rapport unique pour tous les locataires de votre client.</span><span class="sxs-lookup"><span data-stu-id="db950-p101">By default, Windows PowerShell for Office 365 does not have a built-in aggregation of reporting data from multiple customer tenancies. However, you can use this sample Windows PowerShell for Office 365 script to iterate through all your customer tenancies to retrieve a single report for each of your customers and then aggregate the reporting data into a single location. The result is that you'll have a single report for all your customer tenants.</span></span> 
   
-<span data-ttu-id="2a7c9-p102">Les partenaires avec autorisation d'accès délégué sont les partenaires de syndication et fournisseurs de solutions cloud. Il s'agit souvent de fournisseurs de réseau ou de télécommunication pour d'autres sociétés. Ils regroupent les abonnements Office 365 dans leurs offres de services pour les clients. Lorsqu'ils vendent un abonnement Office 365, ils bénéficient automatiquement des autorisations Administrer au nom de sur leslocations clientes. Ainsi, ils peuvent administrer les locations clientes et créer des rapports les concernant.</span><span class="sxs-lookup"><span data-stu-id="2a7c9-p102">Delegated Access Permission (DAP) partners are Syndication and Cloud Solution Providers (CSP) Partners. They are frequently network or telecom providers to other companies. They bundle Office 365 subscriptions into their service offerings to their customers. When they sell an Office 365 subscription, they are automatically granted Administer On Behalf Of (AOBO) permissions to thecustomer tenancies so they can administer and report on the customer tenancies.</span></span>
-## <a name="before-you-begin"></a><span data-ttu-id="2a7c9-112">Avant de commencer</span><span class="sxs-lookup"><span data-stu-id="2a7c9-112">Before you begin</span></span>
+<span data-ttu-id="db950-p102">Les partenaires avec autorisation d'accès délégué sont les partenaires de syndication et fournisseurs de solutions cloud. Il s'agit souvent de fournisseurs de réseau ou de télécommunication pour d'autres sociétés. Ils regroupent les abonnements Office 365 dans leurs offres de services pour les clients. Lorsqu'ils vendent un abonnement Office 365, ils bénéficient automatiquement des autorisations Administrer au nom de sur leslocations clientes. Ainsi, ils peuvent administrer les locations clientes et créer des rapports les concernant.</span><span class="sxs-lookup"><span data-stu-id="db950-p102">Delegated Access Permission (DAP) partners are Syndication and Cloud Solution Providers (CSP) Partners. They are frequently network or telecom providers to other companies. They bundle Office 365 subscriptions into their service offerings to their customers. When they sell an Office 365 subscription, they are automatically granted Administer On Behalf Of (AOBO) permissions to thecustomer tenancies so they can administer and report on the customer tenancies.</span></span>
+## <a name="before-you-begin"></a><span data-ttu-id="db950-112">Avant de commencer</span><span class="sxs-lookup"><span data-stu-id="db950-112">Before you begin</span></span>
 
-<span data-ttu-id="2a7c9-113">Pour utiliser ce script, vous devez insérer vos valeurs particulières dans ces variables :</span><span class="sxs-lookup"><span data-stu-id="2a7c9-113">To use this script, substitute your particular values in for these variables:</span></span>
+<span data-ttu-id="db950-113">Pour utiliser ce script, vous devez insérer vos valeurs particulières dans ces variables :</span><span class="sxs-lookup"><span data-stu-id="db950-113">To use this script, substitute your particular values in for these variables:</span></span>
   
-- <span data-ttu-id="2a7c9-p103">**$UserName**: nom d'utilisateur d'administrateur de votre partenaire. Ces informations d'identification seront utilisées pour la connexion à toutes les locations de votre client.</span><span class="sxs-lookup"><span data-stu-id="2a7c9-p103">**$UserName** - This is your partner administrator user name. These credentials will be used to connect to all your customer tenancies.</span></span>
+- <span data-ttu-id="db950-p103">**$UserName**: nom d'utilisateur d'administrateur de votre partenaire. Ces informations d'identification seront utilisées pour la connexion à toutes les locations de votre client.</span><span class="sxs-lookup"><span data-stu-id="db950-p103">**$UserName** - This is your partner administrator user name. These credentials will be used to connect to all your customer tenancies.</span></span>
     
-- <span data-ttu-id="2a7c9-116">**$OutputFile**: fichier CSV dans lequel les données des rapports seront regroupées.</span><span class="sxs-lookup"><span data-stu-id="2a7c9-116">**$OutputFile** - This is the comma-separated value file that reporting data will be aggregated to.</span></span>
+- <span data-ttu-id="db950-116">**$OutputFile**: fichier CSV dans lequel les données des rapports seront regroupées.</span><span class="sxs-lookup"><span data-stu-id="db950-116">**$OutputFile** - This is the comma-separated value file that reporting data will be aggregated to.</span></span>
     
-- <span data-ttu-id="2a7c9-117">**$ErrorFile**: fichier journal des erreurs.</span><span class="sxs-lookup"><span data-stu-id="2a7c9-117">**$ErrorFile** - This is the text log file for errors.</span></span>
+- <span data-ttu-id="db950-117">**$ErrorFile**: fichier journal des erreurs.</span><span class="sxs-lookup"><span data-stu-id="db950-117">**$ErrorFile** - This is the text log file for errors.</span></span>
     
-- <span data-ttu-id="2a7c9-p104">**$ScriptBlock**: cet exemple de script utilise **Get-MailboxActivityReport** et des paramètres (par exemple, les dates de début et de fin) pour que vous puissiez commencer. Si vous voulez d'autres rapports, remplacez le nom du rapport que vous voulez et les paramètres nécessaires pour **Get-MailboxActivityReport**.</span><span class="sxs-lookup"><span data-stu-id="2a7c9-p104">**$ScriptBlock** - This sample script uses **Get-MailboxActivityReport** and parameters (such as start and end dates) so you have a way to get started. If you want other reports, substitute the report name that you want and necessary parameters for **Get-MailboxActivityReport**.</span></span>
+- <span data-ttu-id="db950-p104">**$ScriptBlock**: cet exemple de script utilise **Get-MailboxActivityReport** et des paramètres (par exemple, les dates de début et de fin) pour que vous puissiez commencer. Si vous voulez d'autres rapports, remplacez le nom du rapport que vous voulez et les paramètres nécessaires pour **Get-MailboxActivityReport**.</span><span class="sxs-lookup"><span data-stu-id="db950-p104">**$ScriptBlock** - This sample script uses **Get-MailboxActivityReport** and parameters (such as start and end dates) so you have a way to get started. If you want other reports, substitute the report name that you want and necessary parameters for **Get-MailboxActivityReport**.</span></span>
     
-- <span data-ttu-id="2a7c9-120">Ouvrez une session Remote Windows PowerShell pour Exchange Online à l'aide de la procédure décrite dans [Connexion à des locataires Exchange Online avec Remote Windows PowerShell pour les partenaires avec autorisations d'accès délégué](connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md)</span><span class="sxs-lookup"><span data-stu-id="2a7c9-120">Open a remote Windows PowerShell session to Exchange Online by using the steps in [Connect to Exchange Online tenants with remote Windows PowerShell for Delegated Access Permissions (DAP) partners](connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md)</span></span>
+- <span data-ttu-id="db950-120">Ouvrez une session Remote Windows PowerShell pour Exchange Online à l'aide de la procédure décrite dans [Connexion à des locataires Exchange Online avec Remote Windows PowerShell pour les partenaires avec autorisations d'accès délégué](connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md)</span><span class="sxs-lookup"><span data-stu-id="db950-120">Open a remote Windows PowerShell session to Exchange Online by using the steps in [Connect to Exchange Online tenants with remote Windows PowerShell for Delegated Access Permissions (DAP) partners](connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md)</span></span>
     
-## <a name="use-windows-powershell-to-aggregate-customer-tenant-reports-to-a-single-location"></a><span data-ttu-id="2a7c9-121">Utilisez Windows PowerShell pour regrouper des rapports sur les locataires du client à un emplacement unique.</span><span class="sxs-lookup"><span data-stu-id="2a7c9-121">Use Windows PowerShell to aggregate customer tenant reports to a single location</span></span>
+## <a name="use-windows-powershell-to-aggregate-customer-tenant-reports-to-a-single-location"></a><span data-ttu-id="db950-121">Utilisez Windows PowerShell pour regrouper des rapports sur les locataires du client à un emplacement unique.</span><span class="sxs-lookup"><span data-stu-id="db950-121">Use Windows PowerShell to aggregate customer tenant reports to a single location</span></span>
 
-1. <span data-ttu-id="2a7c9-122">Copiez et collez ce script dans le bloc-notes.</span><span class="sxs-lookup"><span data-stu-id="2a7c9-122">Copy and paste this script into Notepad.</span></span>
+1. <span data-ttu-id="db950-122">Copiez et collez ce script dans le bloc-notes.</span><span class="sxs-lookup"><span data-stu-id="db950-122">Copy and paste this script into Notepad.</span></span>
     
   ```
   # Import the MSOnline module to allow connectivity to Office 365.
@@ -128,23 +129,23 @@ foreach ($c in $contracts) {
 
   ```
 
-2. <span data-ttu-id="2a7c9-p105">Enregistrez le script sous le nom GetMailboxActivityReport.ps1 à un emplacement facile à trouver. Aux fins de l'exemple, le fichier est enregistré dans C:\\O365 Scripts.</span><span class="sxs-lookup"><span data-stu-id="2a7c9-p105">Save the script as GetMailboxActivityReport.ps1 in a location that's easy for you to find. For the example, the file is saved in C:\\O365 Scripts.</span></span> 
+2. <span data-ttu-id="db950-p105">Enregistrez le script sous le nom GetMailboxActivityReport.ps1 à un emplacement facile à trouver. Aux fins de l'exemple, le fichier est enregistré dans C:\\O365 Scripts.</span><span class="sxs-lookup"><span data-stu-id="db950-p105">Save the script as GetMailboxActivityReport.ps1 in a location that's easy for you to find. For the example, the file is saved in C:\\O365 Scripts.</span></span> 
     
-3. <span data-ttu-id="2a7c9-125">Exécutez le script dans Remote Windows PowerShell en suivant cette syntaxe.</span><span class="sxs-lookup"><span data-stu-id="2a7c9-125">Run the script in remote Windows PowerShell by following this syntax.</span></span>
+3. <span data-ttu-id="db950-125">Exécutez le script dans Remote Windows PowerShell en suivant cette syntaxe.</span><span class="sxs-lookup"><span data-stu-id="db950-125">Run the script in remote Windows PowerShell by following this syntax.</span></span>
     
   ```
   &amp; "C:\O365 Scripts\GetMailboxActivityReport.ps1"
   ```
 
-<span data-ttu-id="2a7c9-126">Cet exemple de script place le rapport contenant les données regroupées dans le fichier ReportOutput.csv.</span><span class="sxs-lookup"><span data-stu-id="2a7c9-126">This sample script places the aggregated report in the ReportOutput.csv file.</span></span>
+<span data-ttu-id="db950-126">Cet exemple de script place le rapport contenant les données regroupées dans le fichier ReportOutput.csv.</span><span class="sxs-lookup"><span data-stu-id="db950-126">This sample script places the aggregated report in the ReportOutput.csv file.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="2a7c9-127">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="2a7c9-127">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="db950-127">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="db950-127">See also</span></span>
 
 #### 
 
-[<span data-ttu-id="2a7c9-128">Aide pour les partenaires</span><span class="sxs-lookup"><span data-stu-id="2a7c9-128">Help for partners</span></span>](https://go.microsoft.com/fwlink/p/?LinkID=533477)
+[<span data-ttu-id="db950-128">Aide pour les partenaires</span><span class="sxs-lookup"><span data-stu-id="db950-128">Help for partners</span></span>](https://go.microsoft.com/fwlink/p/?LinkID=533477)
   
-[<span data-ttu-id="2a7c9-129">Service web de création de rapports Office 365</span><span class="sxs-lookup"><span data-stu-id="2a7c9-129">Office 365 Reporting web service</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=532777)
+[<span data-ttu-id="db950-129">Service web de création de rapports Office 365</span><span class="sxs-lookup"><span data-stu-id="db950-129">Office 365 Reporting web service</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=532777)
   
-[<span data-ttu-id="2a7c9-130">Cmdlets de création de rapports dans Exchange Online</span><span class="sxs-lookup"><span data-stu-id="2a7c9-130">Reporting cmdlets in Exchange Online</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=526430)
+[<span data-ttu-id="db950-130">Cmdlets de création de rapports dans Exchange Online</span><span class="sxs-lookup"><span data-stu-id="db950-130">Reporting cmdlets in Exchange Online</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=526430)
 

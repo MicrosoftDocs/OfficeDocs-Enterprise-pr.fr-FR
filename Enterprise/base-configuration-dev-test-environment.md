@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: 'Résumé : Découvrez comment créer un intranet simplifié comme environnement de développement/test dans Microsoft Azure.'
-ms.openlocfilehash: a38fc04ffe4ffa9a76430cf44543174570d398bc
-ms.sourcegitcommit: dffbcfb1cbc9776a29229a787c1eab4192e55cff
+ms.openlocfilehash: b232372654d6244589bf1f10c3d76d4b7558aa23
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30948615"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037978"
 ---
 # <a name="base-configuration-devtest-environment"></a>Environnement de développement/test de configuration de base
 
@@ -121,10 +121,8 @@ Connectez-vous à votre compte Azure avec la commande suivante.
 Connect-AzAccount
 ```
 
-<!--
 > [!TIP]
-> Click [here](https://gallery.technet.microsoft.com/PowerShell-commands-for-ba957d3d) to get a text file that has all the PowerShell commands in this article.
--->
+> Pour accéder à un fichier texte qui contient toutes les commandes PowerShell décrites dans cet article, cliquez [ici](https://gallery.technet.microsoft.com/PowerShell-commands-for-ba957d3d).
 
 Obtenez le nom de votre abonnement à l’aide de la commande suivante.
   
@@ -173,7 +171,7 @@ Il s’agit de votre configuration actuelle.
   
 ### <a name="step-2-configure-dc1"></a>Étape 2 : Configurer DC1
 
-Dans cette étape, nous créons la machine virtuelle DC1 et la configurons en tant que contrôleur de domaine pour le domaine Windows Server Active Directory (AD) corp.contoso.com et un serveur DNS pour les machines virtuelles du réseau virtuel TestLab.
+Dans cette étape, nous créons la machine virtuelle DC1 et la configurons en tant que contrôleur de domaine pour le domaine AD DS (Active Directory Domain Services) corp.contoso.com et un serveur DNS pour les machines virtuelles du réseau virtuel TestLab.
 
 > [!NOTE]
 > Avant d’exécuter le bloc de commandes suivant, vérifiez que la région Azure (emplacement) que vous avez choisie prend en charge la taille de la machine virtuelle Azure, qui est définie par défaut sur Standard_A1. Cliquez [ici](https://azure.microsoft.com/global-infrastructure/services/?products=virtual-machines) pour voir les dernières informations sur les tailles et les emplacements des machines virtuelles Azure.

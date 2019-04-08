@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: a1370fe4-2fd6-4fea-ad1d-3555433d6d2e
 description: 'Résumé : Utilisez ce guide de laboratoire de test pour créer un environnement de développement/test qui inclut toutes les offres cloud de Microsoft.'
-ms.openlocfilehash: 0ccea58e86f2e105704aac01ba4379c21a174e3a
-ms.sourcegitcommit: e5598a1220316122b5ed206c2607092ea1eac65c
+ms.openlocfilehash: b8ffd01c9d129d4537c82f0e1f74bd7c1be1388b
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30573658"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037948"
 ---
 # <a name="the-one-microsoft-cloud-devtest-environment"></a>Environnement de développement/test Microsoft Cloud unique
 
@@ -46,7 +46,7 @@ Vous pouvez utiliser la configuration obtenue pour :
 
 Suivez les instructions fournies dans [DirSync pour votre environnement de développement/test Office 365](dirsync-for-your-office-365-dev-test-environment.md).
   
-La figure 1 présente la configuration obtenue, qui comprend Office 365 et un intranet simulé exécuté dans les services d’infrastructure Azure et la synchronisation d’annuaires à partir d’une forêt Windows Server Active Directory (AD) locale.
+La figure 1 montre la configuration obtenue, comprenant Office 365, un Intranet simulé dans les services Azure et la synchronisation d’annuaires à partir d’une forêt AD DS (Active Directory Domain Services).
   
 **Figure 1 : Intranet simulé dans Azure avec Office 365**
 

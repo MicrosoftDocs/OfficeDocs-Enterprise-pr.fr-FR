@@ -18,25 +18,25 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: 'Résumé : Configurez la synchronisation d’annuaires pour votre environnement de développement/test Office 365.'
-ms.openlocfilehash: 374d99bc2433f539451882e1c2affe7bd41290db
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: d5aff42837d3cf4789cf8785383ad213f98d35a3
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573948"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037908"
 ---
 # <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Synchronisation d’annuaires pour votre environnement de développement/test Office 365
 
  **Résumé :** Configurez la synchronisation d’annuaires pour votre environnement de développement/test Office 365.
   
-De nombreuses organisations utilisent Azure AD Connect et la synchronisation d’annuaires pour synchroniser l’ensemble de comptes dans leur forêt de Windows Server Active Directory (AD) en local avec l’ensemble de comptes dans Office 365. Cet article explique comment vous pouvez ajouter la synchronisation d’annuaires avec synchronisation de code de hachage de mot de passe à l’environnement de développement/test Office 365, ce qui entraîne la configuration suivante.
+De nombreuses organisations utilisent Azure AD Connect et la synchronisation d’annuaires pour synchroniser l’ensemble des comptes dans leur forêt Active Directory Domain Services (AD DS) en local avec l’ensemble des comptes dans Office 365. Cet article explique la procédure d’ajout de la synchronisation d’annuaires avec synchronisation de hachage de mot de passe à l’environnement de développement/test Office 365, ce qui entraîne la configuration suivante.
   
 ![Environnement de développement/test Office 365 avec la synchronisation d’annuaires](media/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 Cette configuration se compose des éléments suivants :  
   
 - Un abonnement d’évaluation Office 365 E5, qui arrive à expiration 30 jours après sa création.
-- Un intranet d’organisation simplifié connecté à Internet, qui se compose de trois machines virtuelles sur un sous-réseau d’un réseau virtuel Azure (DC1, APP1 et CLIENT1). Azure AD Connect s’exécute sur APP1 pour synchroniser le domaine Windows Server AD avec Office 365.
+- Un intranet d’organisation simplifié connecté à Internet, qui se compose de trois machines virtuelles dans un sous-réseau d’un réseau virtuel Azure (DC1, APP1 et CLIENT1). Azure AD Connect s’exécute sur APP1 pour synchroniser le domaine AD DS avec Office 365.
     
 Les deux phases de configuration de cet environnement de développement/test sont les suivantes :
   
@@ -59,7 +59,7 @@ Cette configuration se compose des éléments suivants :
     
 ## <a name="phase-2-install-azure-ad-connect-on-app1"></a>Phase 2 : installation d’Azure AD Connect sur APP1
 
-Une fois installé et configuré, Azure AD Connect synchronise l’ensemble de comptes dans le domaine CORP Windows Server AD avec l’ensemble de comptes dans votre abonnement d’évaluation Office 365. La procédure suivante vous guide tout au long de l’installation d’Azure AD Connect sur APP1 et du contrôle de son fonctionnement.
+Une fois installé et configuré, Azure AD Connect synchronise l’ensemble des comptes dans le domaine CORP AD DS avec l’ensemble des comptes dans votre abonnement d’essai Office 365. La procédure suivante vous guide tout au long de l’installation d’Azure AD Connect sur APP1 et du contrôle de son fonctionnement.
   
 ### <a name="install-and-configure-azure-ad-connect-on-app1"></a>Installation et configuration d’Azure AD Connect sur APP1
 
@@ -98,7 +98,7 @@ Stop-Process -Name Explorer -Force
     
 14. Dans la navigation de gauche, cliquez sur **Utilisateurs > Utilisateurs actifs**.
     
-    Notez le compte nommé **Utilisateur1**. Ce compte provient du domaine CORP Windows Server AD et prouve que la synchronisation d’annuaires a fonctionné.
+    Prenez note du compte nommé **Utilisateur1**. Ce compte provient du domaine CORP AD DS et prouve que la synchronisation d’annuaires a fonctionné.
     
 15. Cliquez sur le compte **Utilisateur1**. Pour les licences de produits, cliquez sur **Modifier**.
     
@@ -111,7 +111,7 @@ Voici la configuration obtenue.
 Cette configuration se compose des éléments suivants :  
   
 - un abonnement d’évaluation Office 365 E5.
-- Un intranet d’organisation simplifié connecté à Internet, qui se compose des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure. Azure AD Connect s’exécute sur APP1 pour synchroniser le domaine CORP Windows Server AD avec Office 365 toutes les 30 minutes.
+- Un intranet d’organisation simplifié connecté à Internet, qui se compose des machines virtuelles DC1, APP1 et CLIENT1 dans un sous-réseau d’un réseau virtuel Azure. Azure AD Connect s’exécute dans APP1 pour synchroniser le domaine CORP AD DS avec Office 365 toutes les 30 minutes.
     
 ## <a name="next-step"></a>Étape suivante
 

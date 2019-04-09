@@ -3,30 +3,31 @@ title: Ajout d’un domaine à la location d’un client avec Windows PowerShell
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 12/15/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- M365-subscription-management
 ms.custom: ''
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: 'Résumé : Utilisez Windows PowerShell pour Office 365 pour ajouter un autre nom de domaine à un locataire de client existant.'
-ms.openlocfilehash: f99039ffa9f921b33829767a08f33db500a5d2ed
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 85cddd28b72a3b03e9157a28c3fd1dc101a167e0
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2018
-ms.locfileid: "17114693"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001777"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>Ajout d’un domaine à la location d’un client avec Windows PowerShell pour les partenaires avec autorisation d’accès délégué
 
  **Résumé :** Utilisez Windows PowerShell pour Office 365 pour ajouter un autre nom de domaine à un locataire de client existant.
   
-Vous pouvez créer de nouveaux domaines et les associer à la location de votre client avec Windows PowerShell pour Office 365 plus rapidement qu'en utilisant le Centre d'administration Office 365.
+Vous pouvez créer des domaines et les associer à la location de votre client avec Windows PowerShell pour Office 365 plus rapidement qu'en utilisant le Centre d'administration Microsoft 365.
   
-Les partenaires avec autorisation d'accès délégué sont les partenaires de syndication et fournisseurs de solutions cloud. Il s'agit souvent de fournisseurs de réseau ou de télécommunication pour d'autres sociétés. Ils regroupent les abonnements Office 365 dans leurs offres de services pour les clients. Lorsqu'ils vendent un abonnement Office 365, ils bénéficient automatiquement des autorisations Administrer au nom de sur leslocations clientes. Ainsi, ils peuvent administrer les locations clientes et créer des rapports les concernant.
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
+Les partenaires avec autorisation d'accès délégué sont les partenaires de syndication et fournisseurs de solutions cloud. Il s’agit souvent de fournisseurs de réseau ou de télécommunication pour d’autres sociétés. Ils regroupent les abonnements Office 365 dans leurs offres de services pour les clients. Lorsqu'ils vendent un abonnement Office 365, ils bénéficient automatiquement des autorisations AOBO (Administrer au nom de) pour les locations clientes et peuvent donc gérer les locations du client et créer des rapports.
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
 UNRESOLVED_TOKEN_VAL(GENL_O365_PowerShell_BeforeYouBegin)
   
@@ -49,7 +50,7 @@ Vous avez également besoin des informations suivantes :
   
 ### <a name="create-the-domain-in-azure-active-directory"></a>Création du domaine dans Azure Active Directory
 
-Cette commande crée le domaine dans Azure Active Directory, mais ne l'associe pas au domaine inscrit publiquement. Cette association a lieu lorsque vous prouvez à Microsoft Office 365 pour les entreprises que vous êtes propriétaire du domaine inscrit publiquement.
+Cette commande crée le domaine dans Azure Active Directory, mais ne l'associe pas au domaine inscrit publiquement. Cette association a lieu lorsque vous prouvez à Microsoft Office 365 pour entreprises que vous êtes propriétaire du domaine inscrit publiquement.
   
 ```
 New-MsolDomain -TenantId <customer TenantId> -Name <FQDN of new domain>
@@ -63,7 +64,7 @@ New-MsolDomain -TenantId <customer TenantId> -Name <FQDN of new domain>
 Get-MsolDomainVerificationDNS -TenantId <customer TenantId> -DomainName <FQDN of new domain>
 ```
 
-Elle vous fournira des résultats semblables à ceci :
+Elle vous fournira des résultats semblables à :
   
  `Label: domainname.com`
   
@@ -72,11 +73,11 @@ Elle vous fournira des résultats semblables à ceci :
  `Ttl: 3600`
   
 > [!NOTE]
-> Vous aurez besoin de ce texte pour créer l’enregistrement TXT dans la zone DNS enregistrée publiquement. Copiez-le et enregistrez-le. 
+> Vous aurez besoin de ce texte pour créer l'enregistrement TXT dans la zone DNS enregistrée publiquement. Copiez-le et enregistrez-le. 
   
 ### <a name="add-a-txt-record-to-the-publically-registered-dns-zone"></a>Ajout d’un enregistrement TXT à la zone DNS enregistrée publiquement
 
-Avant qu'Office 365 commence à accepter le trafic dirigé vers le nom de domaine enregistré publiquement, vous devez prouver que vous êtes propriétaire du domaine et que vous disposez des autorisations d'administrateur pour celui-ci. Pour prouver que vous êtes propriétaire du domaine, créez un enregistrement TXT dans le domaine. Un enregistrement TXT n'a aucun effet sur votre domaine, et il peut être supprimé une fois qu'il est établi que vous êtes propriétaire du domaine. Pour créer les enregistrements TXT, suivez les procédures décrites dans [Créer des enregistrements DNS auprès d'un fournisseur d'hébergement DNS pour Office 365](https://go.microsoft.com/fwlink/p/?LinkId=532542). Si ces procédures ne fonctionnent pas pour vous, vous devez rechercher les procédures pour votre bureau d'enregistrement DNS.
+Avant qu'Office 365 ne commence à accepter le trafic dirigé vers le nom de domaine enregistré publiquement, vous devez prouver que vous êtes propriétaire du domaine et que vous disposez des autorisations d'administrateur pour celui-ci. Pour prouver que vous êtes propriétaire du domaine, créez un enregistrement TXT dans le domaine. Un enregistrement TXT n'a aucun effet sur votre domaine, et il peut être supprimé une fois qu'il est établi que vous êtes propriétaire du domaine. Pour créer les enregistrements TXT, suivez les procédures décrites dans [Créer des enregistrements DNS auprès d'un fournisseur d'hébergement DNS pour Office 365](https://go.microsoft.com/fwlink/p/?LinkId=532542). Si ces procédures ne fonctionnent pas pour vous, vous devez rechercher les procédures pour votre bureau d'enregistrement DNS.
   
 Confirmez la création de l'enregistrement TXT via nslookup. Suivez cette syntaxe.
   

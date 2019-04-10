@@ -12,22 +12,22 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
 description: 'Résumé : Configurer Azure AD Connect pour votre authentification fédérée haute disponibilité pour Office 365 dans Microsoft Azure.'
-ms.openlocfilehash: 797429e508a0a0c2b91d837e5475e840ca26b3d8
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: e5a4381b6795a1159c1398f4155b059998a30818
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915359"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741400"
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-office-365"></a>Authentification fédérée haute disponibilité, phase 5 : Configurer l'authentification fédérée pour Office 365
 
  **Résumé :** Configurer Azure AD Connect pour votre authentification fédérée haute disponibilité pour Office 365 dans Microsoft Azure.
  
-Durant cette phase finale du déploiement de haute disponibilité l’authentification fédérée pour Office 365 dans les services d’infrastructure Azure, vous obteniez et installez un certificat émis par une autorité de certification publique, vérifiez votre configuration, puis installez et exécutez Azure AD Connectez-vous sur le serveur de synchronisation d’annuaire. Azure AD Connect configure votre abonnement Office 365 et votre Active Directory Federation Services (ADFS) et les serveurs proxy d’application web pour l’authentification fédérée.
+Dans cette phase finale du déploiement de l'authentification fédérée haute disponibilité pour Office 365 dans les services d'infrastructure Azure, vous obtenez et installez un certificat émis par une autorité de certification publique, vérifiez votre configuration, puis installez et exécutez Azure AD. Connectez-vous au serveur de synchronisation d'annuaires. Azure AD Connect configure votre abonnement Office 365, vos services Active Directory Federation Services (AD FS) et les serveurs proxy d’application web pour l’authentification fédérée.
   
 Reportez-vous à la rubrique [Déployer une authentification fédérée haute disponibilité pour Office 365 dans Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) pour toutes les phases.
   
-## <a name="get-a-public-certificate-and-copy-it-to-the-directory-synchronization-server"></a>Obtenir un certificat public et la copier sur le serveur de synchronisation d’annuaire
+## <a name="get-a-public-certificate-and-copy-it-to-the-directory-synchronization-server"></a>Obtenir un certificat public et le copier sur le serveur de synchronisation d'annuaires
 
 Obtenez auprès d’une autorité de certification publique un certificat numérique avec les propriétés suivantes :
   
@@ -41,7 +41,7 @@ Par ailleurs, les ordinateurs et appareils de votre organisation doivent approuv
   
 Pour plus d'informations sur les certificats requis pour l'authentification fédérée, consultez la rubrique [Configuration requise pour l'installation et la configuration de la fédération](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-prerequisites#prerequisites-for-federation-installation-and-configuration).
   
-Lorsque vous recevez le certificat, copiez-le dans un dossier sur le lecteur C: du serveur de synchronisation d’annuaire. Par exemple, nommez le fichier SSL.pfx et l’enregistrer dans le répertoire C:\\dossier de certificats sur le serveur de synchronisation d’annuaire.
+Lorsque vous recevez le certificat, copiez-le dans un dossier sur le lecteur C: du serveur de synchronisation d'annuaires. Par exemple, nommez le fichier SSL. pfx et stockez-le dans\\le dossier C: certs sur le serveur de synchronisation d'annuaires.
   
 ## <a name="verify-your-configuration"></a>Vérifier votre configuration
 
@@ -57,13 +57,13 @@ Vous devez maintenant être prêt à configurer Azure AD Connect et l'authentifi
     
 - Un enregistrement DNS A privé au nom de domaine complet de votre service de fédération pointe vers l’adresse IP privée de l’équilibreur de charge Azure interne pour les serveurs AD FS.
     
-- Un certification publique autorité-isssued certificat numérique approprié pour les connexions SSL avec le réseau SAN à votre service de fédération que nom de domaine complet est un fichier PFX stocké sur votre serveur de synchronisation d’annuaire.
+- Une autorité de certification publique-isssued certificat numérique approprié pour les connexions SSL avec le SAN défini sur le nom de domaine complet du service de Fédération est un fichier PFX stocké sur votre serveur de synchronisation d'annuaires.
     
 - Le certificat racine de l'autorité de certification publique est installé dans la banque Autorités de certification racines de confiance de vos ordinateurs et appareils.
     
 Voici un exemple pour l’organisation Contoso :
   
-**Exemple de configuration pour une infrastructure d'authentification fédérée haute disponibilité dans Azure**
+**Exemple de configuration pour une infrastructure d’authentification fédérée haute disponibilité dans Azure**
 
 ![Exemple de configuration de l’infrastructure d’authentification fédérée haute disponibilité Office 365 dans Azure](media/ac1a6a0d-0156-4407-9336-6e4cd6db8633.png)
   
@@ -71,9 +71,9 @@ Voici un exemple pour l’organisation Contoso :
 
 L’outil Azure AD Connect configure les serveurs AD FS, les serveurs proxy d’application web et Office 365 pour l’authentification fédérée en procédant comme suit :
   
-1. Créer une connexion Bureau à distance à votre serveur de synchronisation d’annuaire avec un compte de domaine disposant de privilèges d’administrateur local.
+1. Créez une connexion de bureau à distance à votre serveur de synchronisation d'annuaires à l'aide d'un compte de domaine disposant de privilèges d'administrateur local.
     
-2. Sur le bureau du serveur de synchronisation d’annuaire, ouvrez Internet Explorer et accédez à [https://aka.ms/aadconnect](https://aka.ms/aadconnect).
+2. À partir du Bureau du serveur de synchronisation d'annuaires, ouvrez Internet Explorer [https://aka.ms/aadconnect](https://aka.ms/aadconnect)et accédez à.
     
 3. Sur la page de **Microsoft Azure Active Directory Connect**, cliquez sur **Télécharger**, puis cliquez sur **Exécuter**.
     
@@ -87,7 +87,7 @@ L’outil Azure AD Connect configure les serveurs AD FS, les serveurs proxy d’
     
 8. Sur la page **Connexion à Azure AD**, saisissez le nom et le mot de passe d'un administrateur général de votre abonnement Office 365, puis cliquez sur **Suivant**.
     
-9. Sur la page **Connecter vos répertoires**, assurez-vous que votre forêt Windows Server AD locale est sélectionnée dans **Forêt**, entrez le nom et le mot de passe d'un compte d'administrateur de domaine, cliquez sur **Ajouter un répertoire**, puis sur **Suivant**.
+9. Sur la page **connecter vos annuaires** , vérifiez que votre forêt services de domaine Active Directory (AD DS) locale est sélectionnée dans **forêt**, tapez le nom et le mot de passe d'un compte d'administrateur de domaine, cliquez sur **Ajouter un répertoire**, puis Cliquez sur **suivant**.
     
 10. Sur la page **Configuration la connexion à Azure AD**, cliquez sur **Suivant**.
     
@@ -133,7 +133,7 @@ L’outil Azure AD Connect configure les serveurs AD FS, les serveurs proxy d’
     
 Voici la configuration finale, avec les noms d’espace réservé pour les serveurs.
   
-**Phase 5 : Configuration finale d'une infrastructure d'authentification fédérée haute disponibilité dans Azure**
+**Phase 5 : Configuration finale d’une infrastructure d’authentification fédérée haute disponibilité dans Azure**
 
 ![Configuration finale de l’infrastructure d’authentification fédérée haute disponibilité Office 365 dans Azure](media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
   
@@ -143,7 +143,7 @@ Votre infrastructure d’authentification fédérée haute disponibilité pour O
 
 [Déployer une authentification fédérée haute disponibilité pour Office 365 dans Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   
-[Identité fédérée pour votre environnement de développement/test Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
+[Identité fédérée pour votre environnement de développement/test Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
   
 [Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.md)
 

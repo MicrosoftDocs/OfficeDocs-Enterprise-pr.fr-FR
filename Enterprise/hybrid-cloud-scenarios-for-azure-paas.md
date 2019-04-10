@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 5f4f5d0d-4638-48e8-a517-bd804856b617
 description: "Résumé : Comprendre l'architecture hybride et les scénarios pour les offres cloud PaaS de Microsoft dans Azure."
-ms.openlocfilehash: e536d81b6b14b05bef49d7c91b0404faec64303b
-ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
+ms.openlocfilehash: f4d90d51a7627063fae6fd168681bdf96cb4d6bc
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123331"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741370"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-paas"></a>Scénarios de cloud hybride pour les services PaaS Azure
 
@@ -29,7 +29,7 @@ Combinez des données locales ou des ressources de calcul à des applications no
 
 La Figure 1 présente l’architecture des scénarios hybrides PaaS de Microsoft dans Azure.
   
-**Figure 1 : Scénarios hybrides Microsoft PaaS dans Azure**
+**Figure 1 : Scénarios hybrides Microsoft PaaS dans Azure**
 
 ![Scénarios hybrides Microsoft PaaS dans Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS.png)
   
@@ -55,7 +55,7 @@ Pour chaque couche de l’architecture :
 
 La Figure 2 illustre la configuration d’une application hybride exécutée dans Azure.
   
-**Figure 2 : Application hybride Azure PaaS**
+**Figure 2 : Application hybride Azure PaaS**
 
 ![Application hybride Azure PaaS](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS-Apps.png)
   
@@ -69,7 +69,7 @@ Une organisation peut mettre ses ressources de calcul ou de stockage à disposit
     
 L’application Azure peut utiliser les informations d’identification des sources suivantes :
   
-- Azure AD. Elles peuvent alors être synchronisées avec votre fournisseur d’identité local, tel que Windows Server AD.
+- Azure AD, qui peut être synchronisé avec votre fournisseur d'identité local, tel que les services de domaine Active Directory (AD DS).
     
 - Fournisseur d’identité tiers.
     
@@ -77,7 +77,7 @@ L’application Azure peut utiliser les informations d’identification des sour
 
 La Figure 3 illustre un exemple d’application hybride exécutée dans Azure.
   
-**Figure 3 : Exemple d'application hybride Azure PaaS**
+**Figure 3 : Exemple d’application hybride Azure PaaS**
 
 ![Exemple d’application hybride Azure PaaS](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS-Apps-Ex.png)
   
@@ -97,7 +97,7 @@ Cet exemple d'application Azure PaaS hybride est une application mobile personna
   
 ## <a name="see-also"></a>Voir aussi
 
-[Cloud hybride Microsoft pour les architectes d'entreprise](microsoft-hybrid-cloud-for-enterprise-architects.md)
+[Cloud hybride Microsoft pour les architectes d’entreprise](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
 [Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 

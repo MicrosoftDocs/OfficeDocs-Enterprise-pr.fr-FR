@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: 'Résumé : Comprendre la définition et les éléments du cloud hybride Microsoft.'
-ms.openlocfilehash: 21f107c9f096e90cd0eb1dfc17f14431dec54a73
-ms.sourcegitcommit: c5ee713709d76f519cb77de0e12c435d8409f571
+ms.openlocfilehash: c048cfeb840bbb03b1886c7053603cfdc84f37ab
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28327346"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741430"
 ---
 # <a name="hybrid-cloud-overview"></a>Présentation du cloud hybride
 
@@ -29,7 +29,7 @@ Le cloud hybride utilise des ressources de calcul ou de stockage sur votre rése
   
 ## <a name="microsoft-hybrid-cloud"></a>Cloud hybride Microsoft
 
-Le cloud hybride Microsoft représente un ensemble de scénarios professionnels qui combinent une plateforme cloud Microsoft à un composant local, par exemple : 
+Le cloud hybride Microsoft représente un ensemble de scénarios professionnels qui combinent une plateforme cloud Microsoft à un composant local, par exemple :  
   
 - Obtention de résultats de recherche pour du contenu stocké dans une batterie SharePoint locale et dans SharePoint Online dans Office 365.
     
@@ -37,7 +37,7 @@ Le cloud hybride Microsoft représente un ensemble de scénarios professionnels 
     
 - Charge de travail informatique sur un intranet exécutée sur des ordinateurs virtuels Azure.
     
-**Figure 1 : Composants du cloud hybride Microsoft**
+**Figure 1 : Composants du cloud hybride Microsoft**
 
 ![Composants du cloud hybride Microsoft](media/Hybrid-Poster/MS-Hybrid-Cloud.png)
   
@@ -55,15 +55,15 @@ Les scénarios de cloud hybride utilisant les services cloud Microsoft dépenden
   
 - SaaS
     
-    Services Microsoft SaaS incluent Office 365 et Microsoft Dynamics 365 Intune Microsoft. Scénarios de nuage hybride avec Microsoft SaaS combinent ces services avec les services locaux ou des applications. Par exemple, Exchange Online en cours d’exécution dans Office 365 peut être intégré avec Skype pour 2019 Business qui est déployé localement.
+    Les services SaaS de Microsoft incluent Office 365, Microsoft Intune et Microsoft Dynamics 365. Les scénarios de cloud hybride avec les services SaaS de Microsoft combinent ces services aux applications ou services locaux. Par exemple, Exchange Online exécuté dans Office 365 peut être intégré à Skype entreprise 2019 déployé en local.
     
-- Azure PaaS
+- Azure PaaS
     
     Les services PaaS de Microsoft Azure permettent de créer des applications basées sur le cloud. Les scénarios de cloud hybride avec les services PaaS Azure combinent une application PaaS Azure aux applications ou ressources locales. Par exemple, une application PaaS Azure peut interroger en toute sécurité une banque de données locale afin d'obtenir les informations nécessaires à afficher pour les utilisateurs de l'application mobile.
     
 - Azure IaaS
     
-    Les services IaaS Azure permettent de créer et d'exécuter des charges de travail informatiques basées sur serveur dans le cloud, et non dans votre centre de données local. Les scénarios de cloud hybride avec les services IaaS Azure sont généralement constitués d'une charge de travail informatique qui s'exécute sur des ordinateurs virtuels et qui est connectée en toute transparence à votre réseau local. Les utilisateurs locaux ne verront pas la différence.
+    Les services IaaS Azure permettent de créer et d’exécuter des charges de travail informatiques basées sur serveur dans le cloud, et non dans votre centre de données local. Les scénarios de cloud hybride avec les services IaaS Azure sont généralement constitués d’une charge de travail informatique qui s’exécute sur des ordinateurs virtuels et qui est connectée en toute transparence à votre réseau local. Les utilisateurs locaux ne verront pas la différence.
     
 ## <a name="elements-of-hybrid-cloud"></a>Éléments du cloud hybride
 
@@ -75,7 +75,7 @@ Vous devez tenir compte des éléments suivants lorsque vous planifiez et implé
     
 - Identity
     
-    Dans le cadre de scénarios hybrides SaaS et PaaS Azure, l'identité peut inclure Azure AD en tant que fournisseur d'identité commun, qui peut alors être synchronisé avec Windows Server AD en local, ou fédéré avec Windows Server AD ou d'autres fournisseurs d'identité. Vous pouvez également étendre votre infrastructure d'identité locale pour IaaS Azure. Pour plus d'informations, voir [Identité cloud Microsoft pour les architectes d'entreprise](microsoft-cloud-it-architecture-resources.md#identity).
+    Identity for SaaS and Azure PaaS hybride les scénarios peuvent inclure Azure AD en tant que fournisseur d'identité courant, qui peut être synchronisé avec vos services de domaine Active Directory (AD DS) locaux ou fédéré avec AD DS ou d'autres fournisseurs d'identité. Vous pouvez également étendre votre infrastructure d'identité locale pour IaaS Azure. Pour plus d'informations, voir [Identité cloud Microsoft pour les architectes d'entreprise](microsoft-cloud-it-architecture-resources.md#identity).
     
 - Sécurité
     
@@ -87,7 +87,7 @@ Vous devez tenir compte des éléments suivants lorsque vous planifiez et implé
     
 ## <a name="see-also"></a>Voir aussi
 
-[Cloud hybride Microsoft pour les architectes d'entreprise](microsoft-hybrid-cloud-for-enterprise-architects.md)
+[Cloud hybride Microsoft pour les architectes d’entreprise](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
 [Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 

@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 919b8fc7-b0bc-46db-91f5-37342564e01b
 description: "Résumé: conFigurez et démontrez la classification et l'étiquetage des données à l'aide du client Azure information protection (AIP) dans votre environnement de développement/test Office 365."
-ms.openlocfilehash: ff8533cc6f1a5a34335f6ea469f7a8ec0a6be4da
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 66bdbb74ae88e10d5aa4fce2173f9a2b88a15e9b
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573958"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741350"
 ---
 # <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a>Classification et étiquetage des données dans l’environnement de développement/test Office 365
 
@@ -30,7 +30,7 @@ ms.locfileid: "30573958"
 Le client Azure information protection vous permet de classer un document avant de le télécharger dans un dossier SharePoint Online dans Office 365. Avec les instructions de cet article, vous installez le client Azure information protection et démontrez la classification des données. Pour plus d'informations, reportez-vous à [Azure information protection](https://www.microsoft.com/cloud-platform/azure-information-protection).
   
 > [!TIP]
-> Cliquez [ici](http://aka.ms/catlgstack) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft Cloud.
+> Cliquez [ici](http://aka.ms/catlgstack) pour afficher un plan de tous les Articles de la pile de guides de laboratoire de Test Office 365.
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>Phase 1: créer votre environnement de développement/test Office 365
 

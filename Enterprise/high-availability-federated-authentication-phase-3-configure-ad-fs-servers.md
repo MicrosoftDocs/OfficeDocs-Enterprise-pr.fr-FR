@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
 description: 'Résumé : Créez et configurez les serveurs Active Directory Federation Services (AD FS) pour votre authentification fédérée haute disponibilité pour Office 365 dans Microsoft Azure.'
-ms.openlocfilehash: b2ea785aa5bb2237df5509a2a4d4401cd149f36d
-ms.sourcegitcommit: b85d3db24385d7e0bdbfb0d4499174ccd7f573bd
+ms.openlocfilehash: add154dbce67c76b3f88e205c683711f72cb7b9a
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "30650137"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741160"
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>Authentification fédérée haute disponibilité, phase 3 : Configurer les serveurs AD FS
 
@@ -135,10 +135,10 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
   
 Pour chaque machine virtuelle, utilisez le client Bureau à distance de votre choix et créez une connexion de Bureau à distance. Utilisez son nom d’ordinateur ou son nom DNS intranet et les informations d’identification du compte Administrateur local.
   
-Pour chaque machine virtuelle, associez la machine virtuelle au domaine Windows Server AD avec ces commandes à l’invite Windows PowerShell.
+Pour chaque machine virtuelle, associez-les au domaine des services de domaine Active Directory (AD DS) approprié à l'aide de ces commandes à l'invite Windows PowerShell.
   
 ```
-$domName="<Windows Server AD domain name to join, such as corp.contoso.com>"
+$domName="<AD DS domain name to join, such as corp.contoso.com>"
 $cred=Get-Credential -Message "Type the name and password of a domain acccount."
 Add-Computer -DomainName $domName -Credential $cred
 Restart-Computer
@@ -158,6 +158,6 @@ Utilisez [High availability federated authentication Phase 4: Configure web appl
 
 [Déployer une authentification fédérée haute disponibilité pour Office 365 dans Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   
-[Identité fédérée pour votre environnement de développement/test Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
+[Identité fédérée pour votre environnement de développement/test Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
 
 

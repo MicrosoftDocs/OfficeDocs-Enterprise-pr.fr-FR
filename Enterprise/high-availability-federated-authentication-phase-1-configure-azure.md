@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: "Résumé: conFigurez l'infrastructure Microsoft Azure pour qu'elle héberge l'authentification fédérée haute disponibilité pour Office 365."
-ms.openlocfilehash: 1c9cfeaf930997c30671e5bbaed92d7dde2542e1
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: 937f22c4e54fa4ccc81a1770a3c924e1d9d07a91
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31037958"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741310"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Authentification fédérée haute disponibilité, phase 1 : Configurer Azure
 
@@ -39,7 +39,7 @@ Azure doit être mis en service avec ces composants de base:
 
 Avant de commencer à configurer les composants Azure, renseignez les tableaux suivants. Pour vous aider dans les procédures de configuration Azure, imprimez cette section et notez les informations nécessaires ou copiez cette section dans un document et remplissez-le. Pour les paramètres du réseau virtuel, remplissez le tableau V.
   
-|**Élément**|**Paramètre de configuration**|**Description**|**Valeur**|
+|**Option**|**Paramètre de configuration**|**Description**|**Valeur**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |Nom du réseau virtuel  <br/> |Nom à attribuer au réseau virtuel (exemple FedAuthNet).  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |Emplacement du réseau virtuel  <br/> |Le centre de centres Azure régional qui contiendra le réseau virtuel.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -47,9 +47,9 @@ Avant de commencer à configurer les composants Azure, renseignez les tableaux s
 |4.  <br/> |Espace d'adressage du réseau virtuel  <br/> |Espace d'adressage du réseau virtuel. Renseignez-vous auprès de votre service informatique pour déterminer cet espace d'adressage.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |5.  <br/> |Clé partagée IPsec  <br/> |Chaîne alphanumérique aléatoire de 32 caractères, utilisée pour authentifier les deux côtés de la connexion VPN de site à site. Renseignez-vous auprès de votre service informatique ou de sécurité pour déterminer cette valeur de clé. Vous pouvez également consulter la page relative à la [création d'une chaîne aléatoire pour une clé prépartagée IPsec](http://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
- **Tableau V : configuration de réseau virtuel entre différents locaux**
+ **Tableau V : configuration de réseau virtuel entre différents locaux**
   
-Remplissez ensuite le Tableau S pour les sous-réseaux de cette solution. Tous les espaces d'adressage doivent être au format de routage CIDR (Classless Interdomain Routing), également appelé format de préfixe de réseau. Par exemple, 10.24.64.0/20.
+Remplissez ensuite le Tableau S pour les sous-réseaux de cette solution. Tous les espaces d’adressage doivent être au format de routage CIDR (Classless Interdomain Routing), également appelé format de préfixe de réseau. Par exemple, 10.24.64.0/20.
   
 Pour les trois premiers sous-réseaux, spécifiez un nom et un espace d'adressage IP unique en fonction de l'espace d'adressage du réseau virtuel. Pour le sous-réseau de passerelle, déterminez l'espace d'adressage 27 bits (avec une longueur de préfixe de/27) pour le sous-réseau de passerelle Azure avec les éléments suivants:
   
@@ -59,20 +59,20 @@ Pour les trois premiers sous-réseaux, spécifiez un nom et un espace d'adressag
     
 Voir [calculatrice d'espace d'adressage pour les sous-réseaux de la passerelle Azure](https://gallery.technet.microsoft.com/scriptcenter/Address-prefix-calculator-a94b6eed) pour un bloc de commandes PowerShell et une application de consoles C# ou python qui effectue ce calcul pour vous.
   
-Renseignez-vous auprès de votre service informatique pour déterminer ces espaces d'adressage à partir de l'espace d'adressage de réseau virtuel.
+Renseignez-vous auprès de votre service informatique pour déterminer ces espaces d’adressage à partir de l’espace d’adressage de réseau virtuel.
   
-|**Élément**|**Nom du sous-réseau**|**Espace d'adressage de sous-réseau**|**Objectif**|
+|**Option**|**Nom du sous-réseau**|**Espace d’adressage de sous-réseau**|**Objectif**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Le sous-réseau utilisé par le contrôleur de domaine des services de domaine Active Directory (AD DS) et les machines virtuelles de serveur dirSync.  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Sous-réseau utilisé par les machines virtuelles AD FS.  <br/> |
 |3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Sous-réseau utilisé par les machines virtuelles de proxy d'application Web.  <br/> |
 |4.  <br/> |GatewaySubnet  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Le sous-réseau utilisé par les machines virtuelles de la passerelle Azure.  <br/> |
    
- **Tableau S : sous-réseaux dans le réseau virtuel**
+ **Tableau S : sous-réseaux dans le réseau virtuel**
   
-Ensuite, renseignez le Tableau I pour les adresses IP statiques affectées à des machines virtuelles et à des instances d'équilibreur de charge.
+Ensuite, renseignez le Tableau I pour les adresses IP statiques affectées à des machines virtuelles et à des instances d’équilibreur de charge.
   
-|**Élément**|**Objectif**|**Adresse IP sur le sous-réseau**|**Valeur**|
+|**Option**|**Objectif**|**Adresse IP sur le sous-réseau**|**Valeur**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |Adresse IP statique du premier contrôleur de domaine  <br/> |La quatrième adresse IP possible pour l'espace d'adressage du sous-réseau défini dans l'Élément 1 du Tableau S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |Adresse IP statique du deuxième contrôleur de domaine  <br/> |La cinquième adresse IP possible pour l'espace d'adressage du sous-réseau défini dans l'Élément 1 du Tableau S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -83,28 +83,28 @@ Ensuite, renseignez le Tableau I pour les adresses IP statiques affectées à de
 |7.  <br/> |Adresse IP statique du premier serveur proxy d'application Web  <br/> |La quatrième adresse IP possible pour l'espace d'adressage du sous-réseau défini dans l'Élément 3 du Tableau S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |8.  <br/> |Adresse IP statique du deuxième serveur proxy d'application Web  <br/> |La cinquième adresse IP possible pour l'espace d'adressage du sous-réseau défini dans l'Élément 3 du Tableau S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
- **Tableau I : Adresses IP statiques dans le réseau virtuel**
+ **Tableau I : Adresses IP statiques dans le réseau virtuel**
   
 Pour les deux serveurs DNS (Domain Name System) de votre réseau local que vous souhaitez utiliser lors de la configuration initiale des contrôleurs de domaine de votre réseau virtuel, renseignez le tableau D. collaborez avec votre service informatique pour déterminer cette liste.
   
-|**Élément**|**Nom convivial du serveur DNS**|**Adresse IP du serveur DNS**|
+|**Option**|**Nom convivial du serveur DNS**|**Adresse IP du serveur DNS**|
 |:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
- **Tableau D : serveurs DNS locaux**
+ **Tableau D : serveurs DNS locaux**
   
 Pour acheminer les paquets à partir du réseau intersites vers le réseau de votre organisation à travers la connexion VPN de site à site, vous devez configurer le réseau virtuel avec un réseau local disposant d'une liste des espaces d'adressage (en notation CIDR) pour toutes les connexions accessibles. emplacements sur le réseau local de votre organisation. La liste des espaces d'adressage qui définissent votre réseau local doit être unique et ne doit pas se chevaucher avec l'espace d'adressage utilisé pour d'autres réseaux virtuels ou d'autres réseaux locaux.
   
-Pour l'ensemble des espaces d'adressage du réseau local, remplissez le tableau L. Notez que le tableau comporte trois entrées vides, mais vous aurez généralement besoin d'en ajouter. Renseignez-vous auprès de votre service informatique pour déterminer cette liste d'espaces d'adressage.
+Pour l’ensemble des espaces d’adressage du réseau local, remplissez le tableau L. Notez que le tableau comporte trois entrées vides, mais vous aurez généralement besoin d’en ajouter. Renseignez-vous auprès de votre service informatique pour déterminer cette liste d’espaces d’adressage.
   
-|**Élément**|**Espace d'adressage du réseau local**|
+|**Option**|**Espace d’adressage du réseau local**|
 |:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
- **Tableau L : préfixes d'adresse pour le réseau local**
+ **Tableau L : préfixes d’adresse pour le réseau local**
   
 Commençons à présent à créer l'infrastructure Azure pour héberger votre authentification fédérée pour Office 365.
   
@@ -147,16 +147,16 @@ Ensuite, créez les groupes de ressources. Pour déterminer un ensemble unique d
 Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 ```
 
-Renseignez le tableau suivant pour l'ensemble unique de noms de groupes de ressources.
+Renseignez le tableau suivant pour l’ensemble unique de noms de groupes de ressources.
   
-|**Élément**|**Nom de groupe de ressources**|**Objectif**|
+|**Option**|**Nom de groupe de ressources**|**Objectif**|
 |:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Contrôleurs de domaine  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Serveurs AD FS  <br/> |
 |3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Serveurs proxy d'application Web  <br/> |
-|4.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Éléments de l'infrastructure  <br/> |
+|4.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Éléments de l’infrastructure  <br/> |
    
- **Tableau R : Groupes de ressources**
+ **Tableau R : Groupes de ressources**
   
 Créez vos nouveaux groupes de ressources avec ces commandes.
   
@@ -254,7 +254,7 @@ $vnetConnection=New-AzVirtualNetworkGatewayConnection -Name $vnetConnectionName 
 ```
 
 > [!NOTE]
-> L’authentification fédérée d’utilisateurs individuels n’utilise aucune ressource locale. Toutefois, si cette connexion VPN de site à site devient indisponible, les contrôleurs de domaine dans le réseau virtuel ne recevront pas les mises à jour des comptes d'utilisateur et des groupes créés dans Windows Server AD local. Pour éviter ce problème, vous pouvez configurer une haute disponibilité pour votre connexion VPN de site à site. Pour plus d'informations, reportez-vous à l'article [Configuration haute disponibilité pour la connectivité entre les réseaux locaux et la connectivité entre deux réseaux virtuels](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)
+> L’authentification fédérée d’utilisateurs individuels n’utilise aucune ressource locale. Toutefois, si cette connexion VPN de site à site devient indisponible, les contrôleurs de domaine dans le réseau virtuel ne recevront pas les mises à jour des comptes d'utilisateur et des groupes créés dans les services de domaine Active Directory locaux. Pour éviter ce problème, vous pouvez configurer une haute disponibilité pour votre connexion VPN de site à site. Pour plus d'informations, reportez-vous à l'article [Configuration haute disponibilité pour la connectivité entre les réseaux locaux et la connectivité entre deux réseaux virtuels](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)
   
 Ensuite, enregistrez l'adresse IPv4 publique de la passerelle VPN Azure pour votre réseau virtuel à partir de l'affichage de cette commande :
   
@@ -274,13 +274,13 @@ Ensuite, vérifiez que l'espace d'adressage du réseau virtuel est accessible à
   
 Ensuite, définissez les noms de trois groupes à haute disponibilité. Remplissez le Tableau A. 
   
-|**Élément**|**Objectif**|**Nom du groupe de disponibilité**|
+|**Option**|**Objectif**|**Nom du groupe de disponibilité**|
 |:-----|:-----|:-----|
 |1.  <br/> |Contrôleurs de domaine  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |Serveurs AD FS  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |3.  <br/> |Serveurs proxy d'application Web  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
- **Tableau A : Groupes de disponibilité**
+ **Tableau A : Groupes de disponibilité**
   
 Vous aurez besoin de ces noms lorsque vous créerez les machines virtuelles aux phases 2, 3 et 4.
   
@@ -313,7 +313,7 @@ Utiliser l' [authentification fédérée haute disponibilité, phase 2: configur
 
 [Déployer une authentification fédérée haute disponibilité pour Office 365 dans Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   
-[Identité fédérée pour votre environnement de développement/test Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
+[Identité fédérée pour votre environnement de développement/test Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
   
 [Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.md)
 

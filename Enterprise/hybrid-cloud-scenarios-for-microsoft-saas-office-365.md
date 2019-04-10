@@ -11,17 +11,17 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: db117e59-389f-46f5-a5df-4eeac0040aa8
-description: 'Résumé : Découvrez les scénarios et l’architecture hybride pour Microsoft basée sur SaaS (Office 365) les offres de cloud.'
-ms.openlocfilehash: 063cbd03a2cc65a6cd278ab2efcea235079f801b
-ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
+description: "Résumé: comprendre l'architecture hybride et les scénarios pour les offres Cloud SaaS de Microsoft (Office 365)."
+ms.openlocfilehash: 90b751e4bbea42d723961eb2ac339d23faf8c259
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123411"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741390"
 ---
 # <a name="hybrid-cloud-scenarios-for-microsoft-saas-office-365"></a>Scénarios de cloud hybride pour Microsoft SaaS (Office 365)
 
- **Résumé :** Comprendre les scénarios et l’architecture hybride pour Microsoft basée sur SaaS (Office 365) les offres de cloud.
+ **Résumé:** Comprendre l'architecture hybride et les scénarios pour les offres Cloud SaaS de Microsoft (Office 365).
   
 Combinez des déploiements locaux d’Exchange, de SharePoint ou de Skype Entreprise à leur équivalent dans Office 365 dans le cadre d’une migration cloud ou d’une stratégie d’intégration à long terme.
   
@@ -31,7 +31,7 @@ La figure 1 présente l’architecture des scénarios hybrides SaaS de Microsoft
   
 **Figure 1 : Scénarios hybrides Microsoft SaaS pour Office 365**
 
-![Scénarios hybrides Microsoft SaaS pour Office 365](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS.png)
+![Scénarios hybrides Microsoft SaaS pour Office 365](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS.png)
   
 Pour chaque couche de l’architecture :
   
@@ -43,13 +43,13 @@ Pour chaque couche de l’architecture :
     
   - Skype Entreprise Server combiné à Skype Entreprise Online et aux nouveaux scénarios PBX cloud et édition Cloud Connector
     
-  - SharePoint Server 2013, SharePoint Server 2016 ou SharePoint Server 2019 combinées avec SharePoint Online (plusieurs scénarios)
+  - SharePoint Server 2019, SharePoint Server 2016 ou SharePoint Server 2013 combiné à SharePoint Online (plusieurs scénarios)
     
     Vous pouvez également mettre en place Exchange Online avec Skype Entreprise Server en local (scénario hybride de produit croisé).
     
-- Identity
+- Identité
     
-    Peut inclure la synchronisation d’annuaires avec votre Windows Server AD local. Enfin, vous pouvez configurer Azure AD pour la fédération avec un fournisseur d’identité tiers.
+    Peut inclure la synchronisation d'annuaires avec vos services de domaine Active Directory (AD DS) locaux. Enfin, vous pouvez configurer Azure AD pour la fédération avec un fournisseur d’identité tiers.
     
 - Réseau
     
@@ -59,39 +59,39 @@ Pour chaque couche de l’architecture :
     
     Peut être composé de serveurs existants pour Exchange, SharePoint et Skype Entreprise, qui doivent être mis à jour vers la dernière version disponible. Vous pouvez les combiner à leurs équivalents Office 365 pour des scénarios hybrides.
     
-Configurer votre propre environnement de développement/test Office 365, voir les [Guides de laboratoire de Test d’Office 365](cloud-adoption-test-lab-guides-tlgs.md).
+Configurer votre propre environnement de développement/test Office 365, reportez-vous à la rubrique [office 365 Test Lab guides](cloud-adoption-test-lab-guides-tlgs.md).
   
-## <a name="skype-for-business-hybrid"></a>Skype pour Business hybride
+## <a name="skype-for-business-hybrid"></a>Skype entreprise hybride
 
-Skype pour Business hybride vous permet de combiner un déploiement local existant avec Skype pour Business Online. Certains utilisateurs sont hébergés sur un système local et certains utilisateurs sont hébergés en ligne, mais les utilisateurs partagent le même domaine de protocole SIP (Session Initiation), par exemple, contoso.com. Vous pouvez utiliser cette configuration hybride pour migrer à partir de locaux vers Office 365 au fil du temps, votre calendrier. Skype pour les entreprises peut également être intégré avec [Exchange Online](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/integration-with-exchange-and-sharepoint).
+Skype entreprise hybride vous permet de combiner un déploiement local existant avec Skype entreprise online. Certains utilisateurs sont hébergés en local et d’autres sont hébergés en ligne, mais ils partagent tous le même domaine SIP (Session Initiation Protocol), tel que contoso.com. Vous pouvez utiliser cette configuration hybride pour migrer progressivement un environnement local vers Office 365 en respectant votre planning. Skype entreprise peut également être intégré à [Exchange Online](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/integration-with-exchange-and-sharepoint).
   
-**La figure 2 : Skype pour la configuration hybride d’entreprise**
+**Figure 2: configuration hybride Skype entreprise**
 
-![Le Skype pour la configuration hybride d’entreprise](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-SfB.png)
+![Configuration hybride de Skype entreprise](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-SfB.png)
   
-La figure 2 illustre la Skype pour la configuration hybride d’entreprise, comprenant un Skype locale pour Business le pool frontal et edge server communique avec Skype pour Business Online dans Office 365.
+La figure 2 illustre la configuration hybride de Skype entreprise, constituée d'un pool frontal Skype entreprise local et d'un serveur Edge communiquant avec Skype entreprise Online dans Office 365.
   
-Pour plus d’informations, voir [planification de la connectivité hybride entre Skype pour Business Server et Skype pour Business Online](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/plan-hybrid-connectivity).
+Pour plus d'informations, voir [planifier une connectivité hybride entre Skype entreprise Server et Skype entreprise Online](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/plan-hybrid-connectivity).
     
 ## <a name="cloud-pbx-with-skype-for-business-server"></a>PBX cloud avec Skype Entreprise Server
 
-Nuage PBX avec Skype pour Business Server vous permet de passer un Skype pour le déploiement local de Business Server à une topologie existante avec une connectivité sur site Public réseau de téléphonique commuté (RTC). 
+Le Cloud PBX avec Skype entreprise Server vous permet de passer d'un déploiement local de Skype entreprise Server à une topologie avec une connectivité PSTN (réseau téléphonique commuté) locale. 
   
 **Figure 3 : PBX cloud avec Skype Entreprise Server**
 
 ![PBX cloud avec Skype Entreprise Server](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-SfB-CloudPBX.png)
   
-La figure 3 montre le système PBX sur le nuage avec Skype pour la configuration de Business Server, constitué d’une locale PBX existant ou passerelle télécommunications, un Skype pour Business Server et le réseau RTC connecté au PBX Microsoft Cloud dans Office 365, qui comprend Skype pour les entreprises En ligne.
+La figure 3 illustre la configuration de PBX Cloud avec Skype entreprise Server, constituée d'un PBX local ou d'une passerelle Telco, d'un serveur Skype entreprise et du RTC connecté au PBX Cloud Microsoft dans Office 365, qui inclut Skype entreprise Online.
   
 Les utilisateurs au sein de l’organisation qui sont hébergés dans le cloud peuvent recevoir des services PBX (Private Branch Exchange) du cloud Microsoft qui incluent la signalisation et la messagerie vocale, mais la connectivité RTC (tonalité) est fournie via la fonctionnalité Voix Entreprise de votre déploiement Skype Entreprise Server local.
   
-Il s’agit d’un bon exemple de configuration hybride qui vous permet de migrer graduellement à un service en nuage. Vous pouvez conserver les fonctionnalités vocales de vos utilisateurs lorsque vous commencez à déplacer vers Skype pour Business Online. Vous pouvez déplacer vos utilisateurs à votre rythme, sachant que leurs fonctionnalités vocales continuera no question où ils sont hébergés. 
+Il s'agit d'un excellent exemple de configuration hybride qui vous permet de migrer progressivement vers un service basé sur un nuage. Vous pouvez conserver les fonctionnalités vocales de vos utilisateurs lorsque vous commencez à les déplacer vers Skype Entreprise Online. Vous pouvez déplacer vos utilisateurs comme vous le souhaitez, sachant que leurs fonctionnalités vocales continueront, indépendamment de l’endroit où elles sont hébergées. 
   
-Pour plus d’informations, voir [planification de la connectivité hybride entre Skype pour Business Server et Skype pour Business Online](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/plan-hybrid-connectivity).
+Pour plus d'informations, voir [planifier une connectivité hybride entre Skype entreprise Server et Skype entreprise Online](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/plan-hybrid-connectivity).
   
 Si vous n’avez pas encore mis en place un déploiement Lync Server ou Skype Entreprise Server, vous pouvez utiliser l’édition Cloud Connector de Skype Entreprise. Il s’agit d’un ensemble complet d’ordinateurs virtuels qui implémentent une connectivité RTC locale avec la fonctionnalité PBX cloud.
   
-Pour plus d’informations, voir [planifier Skype pour l’édition de connecteur Business Cloud](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/plan-your-phone-system-cloud-pbx-solution/plan-skype-for-business-cloud-connector-edition).
+Pour plus d'informations, reportez-vous à la rubrique [plan for Skype for Business Cloud Connector Edition](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/plan-your-phone-system-cloud-pbx-solution/plan-skype-for-business-cloud-connector-edition).
 
   
 ## <a name="sharepoint-hybrid"></a>Environnement hybride SharePoint
@@ -102,23 +102,23 @@ SharePoint hybride combine SharePoint Online dans Office 365 à votre batterie 
 
 ![Configuration hybride SharePoint](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-SP.png)
   
-La figure 4 illustre la configuration hybride SharePoint, constitué d’une batterie de serveurs SharePoint locale communiquer avec SharePoint Online dans Office 365.
+La figure 4 illustre la configuration hybride de SharePoint, constituée d'une batterie de serveurs SharePoint locale communiquant avec SharePoint Online dans Office 365.
   
 Scénarios SharePoint hybrides
   
-- [OneDrive Entreprise hybride](https://docs.microsoft.com/SharePoint/hybrid/configure-hybrid-onedrive-for-businessroadmap)
+- [OneDrive Entreprise hybride](https://docs.microsoft.com/SharePoint/hybrid/configure-hybrid-onedrive-for-businessroadmap)
     
-- [Hybride Extranet B2B](https://docs.microsoft.com/sharepoint/create-b2b-extranet)
+- [B2B extranet hybride](https://docs.microsoft.com/sharepoint/create-b2b-extranet)
     
 - [Recherche hybride](https://docs.microsoft.com/SharePoint/hybrid/configure-cloud-hybrid-searchroadmap)
     
 - [Profils hybrides](https://docs.microsoft.com/SharePoint/hybrid/plan-hybrid-profiles)
     
-- [Sélecteur de hybride](https://docs.microsoft.com/SharePoint/hybrid/hybrid-picker-in-the-sharepoint-online-admin-center)
+- [Sélecteur hybride](https://docs.microsoft.com/SharePoint/hybrid/hybrid-picker-in-the-sharepoint-online-admin-center)
     
     La mise en œuvre de scénarios hybrides est un jeu d’enfant à l’aide des Assistants, car ils permettent d’automatiser la configuration hybride. Ces derniers sont disponibles dans le Centre d’administration SharePoint Online dans Office 365.
     
-- [Lanceur d'applications hybride extensible](https://docs.microsoft.com/SharePoint/hybrid/the-extensible-hybrid-app-launcher)
+- [Lanceur d’applications hybride extensible](https://docs.microsoft.com/SharePoint/hybrid/the-extensible-hybrid-app-launcher)
     
     Cette fonctionnalité permet aux utilisateurs d’afficher et d’utiliser les applications Office 365 Video et Delve ainsi que des expériences dans les pages de leur batterie SharePoint locale.
     
@@ -130,18 +130,15 @@ Avec Exchange Server 2016 hybride, vous pouvez tirer parti du potentiel d’Exc
   
 **Figure 5 : Configuration hybride Exchange 2016**
 
-![Configuration hybride Exchange 2016](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-EX.png)
+![Configuration hybride Exchange 2016](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-EX.png)
   
-La figure 5 illustre la configuration hybride d’Exchange 2016, constituée de serveurs de boîtes aux lettres Exchange locale communiquant avec Exchange Online Protection et de boîtes aux lettres dans Office 365.
+La figure 5 illustre la configuration hybride Exchange 2016, constituée de serveurs de boîtes aux lettres Exchange locaux communiquant avec Exchange Online Protection et les boîtes aux lettres dans Office 365.
   
 Certains utilisateurs ont recours à un serveur de messagerie local tandis que d’autres utilisent Exchange Online, mais ils partagent tous le même espace d’adressage de messagerie.  
   
 Cette configuration hybride :
   
 - tire parti de votre infrastructure Exchange Server existante pendant que vous effectuez une migration progressive vers Exchange Online en respectant votre planning ;
-
-
-
     
 - vous permet de prendre en charge les sites distants sans investir dans une infrastructure de succursale ;
     
@@ -151,11 +148,11 @@ Cette configuration hybride :
     
 Vous pouvez également intégrer cette configuration hybride à d’autres applications Microsoft Office 365, notamment Skype Entreprise Online et SharePoint Online.
   
-Pour plus d’informations, voir [Déploiements hybrides Exchange Server](https://docs.microsoft.com/exchange/exchange-hybrid).
+Pour plus d'informations, consultez la rubrique [déploiements hybrides Exchange Server](https://docs.microsoft.com/exchange/exchange-hybrid).
   
 ## <a name="see-also"></a>Voir aussi
 
-[Cloud hybride Microsoft pour les architectes d'entreprise](microsoft-hybrid-cloud-for-enterprise-architects.md)
+[Cloud hybride Microsoft pour les architectes d’entreprise](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
 [Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 

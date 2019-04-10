@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: 'Résumé : Configurez et faites une démonstration d’Office 365 Advanced eDiscovery avec des données d’échantillon dans votre environnement de développement/test Office 365.'
-ms.openlocfilehash: b9c12a132eb83f0317503a736313b547dfe475e7
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: b1cf2714f79d38e5a3349b331cee0862cd6aac52
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31038018"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741451"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Advanced eDiscovery pour votre environnement de développement/test Office 365
 
@@ -30,7 +30,7 @@ Office 365 Advanced eDiscovery vous permet de trouver et d'analyser rapidement l
 Avec les instructions fournies dans cet article, vous créez un petit jeu de données pour un litige fictif à propos d’un contrat et l’analysez avec Advanced eDiscovery.
   
 > [!TIP]
-> Cliquez [ici](http://aka.ms/catlgstack) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de One Microsoft Cloud.
+> Cliquez [ici](http://aka.ms/catlgstack) pour afficher un plan de tous les Articles de la pile de guides de laboratoire de Test Office 365.
   
 ## <a name="phase-1-create-your-office-365-devtest-environment"></a>Phase 1 : Création d’un environnement de développement/test Office 365
 
@@ -53,7 +53,7 @@ Cette procédure vous permet de créer des messages électroniques que vous anal
     
 2. Dans l’onglet **Courrier Outlook**, cliquez sur **Nouveau**.
     
-3. Dans **à**, tapez l'adresse de messagerie du compte User6 de votre abonnement à la version d'évaluation ( **User6 @.**<organization name> **. onmicrosoft.com**).
+3. Dans **à**, tapez l'adresse de messagerie du compte User6 de votre abonnement d'évaluation ( ** user6@.**<organization name> **. onmicrosoft.com**).
     
 4. Pour l’objet, saisissez **Message électronique de test 1**.
     
@@ -187,14 +187,14 @@ Vous pouvez désormais utiliser cet environnement pour créer du contenu, des re
   
 [Environnement de développement/test de configuration de base](base-configuration-dev-test-environment.md)
   
-[Environnement de développement/test Office 365](office-365-dev-test-environment.md)
+[Environnement de développement/test Office 365](office-365-dev-test-environment.md)
   
-[DirSync pour votre environnement de développement/test Office 365](dirsync-for-your-office-365-dev-test-environment.md)
+[DirSync pour votre environnement de développement/test Office 365](dirsync-for-your-office-365-dev-test-environment.md)
   
 [Sécurité des applications cloud pour votre environnement de développement/test Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
   
 [Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.md)
 
-[Office 365 Advanced eDiscovery](https://support.office.com/article/Office-365-Advanced-eDiscovery-fd53438a-a760-45f6-9df4-861b50161ae4)
+[eDiscovery (découverte électronique) avancée Office 365](https://support.office.com/article/Office-365-Advanced-eDiscovery-fd53438a-a760-45f6-9df4-861b50161ae4)
 
 

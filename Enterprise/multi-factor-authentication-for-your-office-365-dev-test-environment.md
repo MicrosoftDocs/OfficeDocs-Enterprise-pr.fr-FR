@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e2b354b9-7f18-4da0-9107-6245eae0f33f
 description: 'Résumé : Configurer l’authentification multifacteur à l’aide de messages texte envoyés à un Smartphone dans un environnement de développement/test Office 365.'
-ms.openlocfilehash: 13dc02cc23d12f6eb6e2898d34271685badd9f5a
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 091b82132b407cfd25b18c3ba8e424e29df58910
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573978"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741220"
 ---
 # <a name="multi-factor-authentication-for-your-office-365-devtest-environment"></a>Authentification multifacteur pour votre environnement de développement/test Office 365
 
@@ -38,7 +38,7 @@ Il existe deux phases de configuration de l’authentification multifacteur pour
 2. Activez et testez l’authentification multifacteur pour le compte d’utilisateur 2.
     
 > [!TIP]
-> Cliquez [ici](http://aka.ms/catlgstack) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft Cloud.
+> Cliquez [ici](http://aka.ms/catlgstack) pour afficher un plan de tous les Articles de la pile de guides de laboratoire de Test Office 365.
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Phase 1 : Créer votre environnement de développement/test Office 365 en mode léger ou pour entreprise simulée
 
@@ -47,7 +47,7 @@ Si vous souhaitez simplement tester l'authentification multifacteur de manière 
 Si vous souhaitez tester l'authentification multifacteur dans une entreprise simulée, suivez les instructions de [DirSync pour votre environnement de développement/test Office 365](dirsync-for-your-office-365-dev-test-environment.md).
   
 > [!NOTE]
-> Le test de l’authentification multifacteur ne requiert pas l’environnement de développement/test en entreprise simulée, qui utilise un intranet simulé connecté à Internet et la synchronisation d’annuaire pour une forêt Windows Server Active Directory. Il est proposé comme option dans cet article afin que vous puissiez tester l’authentification multifacteur et faire des essais dans un environnement qui représente une organisation classique. 
+> Le test de l'authentification multifacteur ne nécessite pas l'environnement de développement/test d'entreprise simulé, qui inclut un intranet simulé connecté à Internet et la synchronisation d'annuaires pour une forêt des services de domaine Active Directory (AD DS). Il est proposé comme option dans cet article afin que vous puissiez tester l’authentification multifacteur et faire des essais dans un environnement qui représente une organisation classique. 
   
 ## <a name="phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account"></a>Phase 2 : Activer et tester l’authentification multifacteur pour le compte d’utilisateur 2
 
@@ -105,9 +105,9 @@ Terminez la configuration pour que le compte d’utilisateur 2 utilise un messag
   
 [Environnement de développement/test de configuration de base](base-configuration-dev-test-environment.md)
   
-[Environnement de développement/test Office 365](office-365-dev-test-environment.md)
+[Environnement de développement/test Office 365](office-365-dev-test-environment.md)
   
 [Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.md)
 
-[Planifier l'authentification multifacteur pour les déploiements d'Office 365](https://support.office.com/article/Plan-for-multi-factor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
+[Offre pour l'authentification multifacteur des déploiements Office 365](https://support.office.com/article/Plan-for-multi-factor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
 

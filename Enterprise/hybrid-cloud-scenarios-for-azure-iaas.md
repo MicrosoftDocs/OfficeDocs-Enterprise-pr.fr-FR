@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
 description: "Résumé: comprendre l'architecture hybride et les scénarios pour les offres Cloud de Microsoft infrastructure en tant que service IaaS dans Azure."
-ms.openlocfilehash: 5d125780e8baf3dbbe71b0878f6bf57cbeb5740f
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: d3f4b4ccbc9dbfa54e6f1d0988624aeb71f27106
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31037928"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741360"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Scénarios de cloud hybride pour Azure IaaS
 
@@ -41,7 +41,7 @@ Pour chaque couche de l’architecture :
     
 - Identité
     
-    Ajoutez des serveurs d’identité, tels que des contrôleurs de domaine Windows Server AD, à l’ensemble de serveurs exécutés dans les réseaux virtuels Azure à des fins d’authentification locale.
+    Ajoutez des serveurs d'identité, tels que les contrôleurs de domaine des services de domaine Active Directory (AD DS), à l'ensemble des serveurs exécutés dans Azure réseaux virtuels pour l'authentification locale.
     
 - Réseau
     
@@ -59,13 +59,13 @@ L'exécution de votre serveur de synchronisation d'annuaires à partir d'un rés
 
 ![Serveur de synchronisation d'annuaires pour Office 365 dans Azure IaaS](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-DirSync.png)
   
-Dans la figure 2, un réseau local héberge une infrastructure Windows Server AD, avec un serveur proxy et un routeur sur sa périphérie. Le routeur se connecte à une passerelle Azure sur le serveur Edge d'un réseau virtuel Azure avec une connexion VPN de site à site ou ExpressRoute. À l'intérieur du réseau virtuel, un serveur de synchronisation d'annuaires exécute Azure AD Connect.
+Dans la figure 2, un réseau local héberge une infrastructure AD DS, avec un serveur proxy et un routeur sur son serveur Edge. Le routeur se connecte à une passerelle Azure sur le serveur Edge d'un réseau virtuel Azure avec une connexion VPN de site à site ou ExpressRoute. À l'intérieur du réseau virtuel, un serveur de synchronisation d'annuaires exécute Azure AD Connect.
   
-Un serveur de synchronisation d'annuaires pour Office 365 synchronise la liste des comptes dans Windows Server AD avec le client Azure AD d'un abonnement Office 365.
+Un serveur de synchronisation d'annuaires pour Office 365 synchronise la liste des comptes dans AD DS avec le client Azure AD d'un abonnement Office 365.
   
 Un serveur de synchronisation d'annuaires est un serveur Windows qui exécute Azure AD Connect. Pour une mise en service plus rapide ou pour réduire le nombre de serveurs locaux dans votre organisation, déployez votre serveur de synchronisation d'annuaires dans un réseau virtuel dans Azure IaaS.
   
-Le serveur de synchronisation d'annuaire interroge Windows Server AD pour rechercher les modifications, puis les synchronise avec l'abonnement Office 365.
+Le serveur de synchronisation d'annuaire interroge AD DS pour les modifications, puis les synchronise avec l'abonnement Office 365.
   
 Pour plus d'informations, reportez-vous à la rubrique [Deploy Office 365 Directory Synchronization in Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).
   
@@ -163,7 +163,7 @@ Dans la figure 5, un réseau local héberge une infrastructure d'identité et de
   
 Cette configuration a les attributs suivants des applications métier dans Azure : 
   
-- **Niveaux:** Il existe des niveaux pour les serveurs proxy Web, les serveurs AD FS et les contrôleurs de domaine Windows Server AD.
+- **Niveaux:** Il existe des niveaux pour les serveurs de proxy Web, les serveurs AD FS et les contrôleurs de domaine AD DS.
     
 - **Distribution de la charge:** Un équilibreur de charge Azure externe répartit les demandes d'authentification client entrantes vers les proxys Web et un équilibreur de charge Azure interne distribue les demandes d'authentification aux serveurs AD FS.
     
@@ -180,8 +180,8 @@ Suivez cette procédure pour une adoption réussie :
     
 ## <a name="see-also"></a>Voir aussi
 
-[Cloud hybride Microsoft pour les architectes d'entreprise](microsoft-hybrid-cloud-for-enterprise-architects.md)
+[Cloud hybride Microsoft pour les architectes d’entreprise](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
-[Ressources relatives à l’architecture informatique de Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
+[Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 
 

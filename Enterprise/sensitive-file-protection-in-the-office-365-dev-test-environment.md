@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: "Résumé: conFigurez et montrez comment Office 365 Information Rights Management protège vos fichiers sensibles, même lorsqu'ils sont publiés dans une collection de sites SharePoint Online incorrecte."
-ms.openlocfilehash: daed3b87983de79268b45dc4f92578c7c8bc59cb
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: 4b65df7fe194d543acaf1c3ba6f104681a998dc6
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31037968"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741300"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Protection des fichiers sensibles dans l’environnement de développement/test Office 365
 
@@ -32,7 +32,7 @@ La gestion des droits relatifs à l'information (IRM) dans Office 365 est un ens
 Les instructions de cet article vous permettent d'activer et de tester la gestion des droits relatifs à l'information (IRM) dans Office 365 pour les fichiers contenant des informations sensibles possibles dans votre abonnement d'évaluation Office 365.
   
 > [!TIP]
-> Cliquez [ici](http://aka.ms/catlgstack) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de One Microsoft Cloud.
+> Cliquez [ici](http://aka.ms/catlgstack) pour afficher un plan de tous les Articles de la pile de guides de laboratoire de Test Office 365.
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>Phase 1: créer votre environnement de développement/test Office 365
 
@@ -41,7 +41,7 @@ Si vous souhaitez simplement tester la protection des fichiers sensibles avec la
 Si vous souhaitez tester la protection des fichiers sensibles dans une entreprise simulée, suivez les instructions de [DirSync pour votre environnement de développement/test Office 365](dirsync-for-your-office-365-dev-test-environment.md).
   
 > [!NOTE]
-> Le test de la protection des fichiers sensibles ne nécessite pas l'environnement de développement/test d'entreprise simulé, qui inclut un intranet simulé connecté à Internet et la synchronisation d'annuaires pour une forêt Windows Server AD. Elle est fournie ici en tant qu'option pour vous permettre de tester la protection des fichiers sensibles et de l'expérimenter dans un environnement qui représente une organisation typique. 
+> Le test de la protection des fichiers sensibles ne nécessite pas l'environnement de développement/test d'entreprise simulé, qui inclut un intranet simulé connecté à Internet et la synchronisation d'annuaires pour une forêt des services de domaine Active Directory (AD DS). Elle est fournie ici en tant qu'option pour vous permettre de tester la protection des fichiers sensibles et de l'expérimenter dans un environnement qui représente une organisation typique. 
   
 ## <a name="phase-2-demonstrate-how-documents-from-permissions-protected-sites-can-be-leaked"></a>Phase 2: montrer comment les documents provenant de sites protégés par des autorisations peuvent être divulgués
 
@@ -55,7 +55,7 @@ Suivez les instructions de la procédure [se connecter à Office 365 PowerShell]
     
 - La machine virtuelle CLIENT1 (pour l’environnement de développement/test Office 365 d’entreprise simulé).
     
-Dans la boîte de dialogue **demande d'informations d'identification Windows PowerShell** , tapez le nom de l'administrateur général Office 365 (par exemple: jdoe@contosotoycompany.onmicrosoft.com) et le mot de passe de votre abonnement d'évaluation Office 365.
+Dans la boîte de dialogue **demande d'informations d'identification Windows PowerShell** , tapez le nom de l'administrateur jdoe@contosotoycompany.onmicrosoft.comgénéral Office 365 (exemple:) et le mot de passe de votre abonnement d'évaluation Office 365.
   
 Renseignez le nom de votre organisation (par exemple: contosotoycompany) et le code pays à deux caractères pour votre emplacement, puis exécutez les commandes suivantes à partir de l'invite module Windows Azure Active Directory pour Windows PowerShell:
   
@@ -336,7 +336,7 @@ Une autre façon d'afficher la protection IRM consiste à examiner les fichiers 
   
 [Environnement de développement/test de configuration de base](base-configuration-dev-test-environment.md)
   
-[Environnement de développement/test Office 365](office-365-dev-test-environment.md)
+[Environnement de développement/test Office 365](office-365-dev-test-environment.md)
   
 [Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.md)
 

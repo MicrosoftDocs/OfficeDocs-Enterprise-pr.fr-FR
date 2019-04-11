@@ -3,7 +3,7 @@ title: Gestion des stratégies Skype Entreprise Online avec Office 365 PowerShel
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/01/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: "Résumé : Utilisez Office 365 PowerShell pour gérer les propriétés de votre compte d'utilisateur Skype Entreprise Online à l'aide de stratégies."
-ms.openlocfilehash: 6698bd43b2a55e1c98fbe8e536a46e2de604b4d2
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 6bbfd4451552cd3a281dbbcafde0b458bb71907c
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2018
-ms.locfileid: "17114913"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037898"
 ---
 # <a name="manage-skype-for-business-online-policies-with-office-365-powershell"></a>Gestion des stratégies Skype Entreprise Online avec Office 365 PowerShell
 
@@ -29,7 +29,7 @@ Pour gérer les nombreuses propriétés du compte d'utilisateur pour Skype Entre
 
 Suivez ces instructions pour exécuter les commandes (sautez les étapes que vous avez déjà effectuées) :
   
-1. Téléchargez et installez le [module Connecteur Skype Entreprise Online](https://www.microsoft.com/en-us/download/details.aspx?id=39366).
+1. Téléchargez et installez le [module Connecteur Skype Entreprise Online](https://www.microsoft.com/download/details.aspx?id=39366).
     
 2. Ouvrez l’invite de commandes Windows PowerShell et exécutez les commandes suivantes : 
     
@@ -104,7 +104,7 @@ Get-CsVoicePolicy
 ```
 
 > [!NOTE]
-> Cette action renvoie la liste de toutes les stratégies de voix dont vous disposez. Toutefois, gardez à l'esprit que toutes les stratégies ne peuvent pas être attribuées à tous les utilisateurs, en raison des diverses restrictions impliquant la gestion des licences et l'emplacement géographique (le dénommé « [emplacement d'utilisation]((https://msdn.microsoft.com/fr-FR/library/azure/dn194136.aspx)) »). Si vous souhaitez connaître les stratégies d'accès externe et les stratégies de conférence qui peuvent être attribuées à un utilisateur particulier, utilisez des commandes semblables à celles-ci : 
+> Cette action renvoie la liste de toutes les stratégies de voix dont vous disposez. Toutefois, gardez à l'esprit que toutes les stratégies ne peuvent pas être attribuées à tous les utilisateurs, en raison des diverses restrictions impliquant la gestion des licences et l'emplacement géographique (le dénommé « [emplacement d'utilisation](https://msdn.microsoft.com/fr-FR/library/azure/dn194136.aspx) »). Si vous souhaitez connaître les stratégies d'accès externe et les stratégies de conférence qui peuvent être attribuées à un utilisateur particulier, utilisez des commandes semblables à celles-ci : 
 
 ```
 Get-CsConferencingPolicy -ApplicableTo "Alex Darrow"

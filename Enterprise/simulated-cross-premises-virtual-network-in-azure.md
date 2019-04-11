@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 0a3555dc-6f96-49a5-b9e2-7760e16630b3
 description: 'Résumé : Créez un réseau virtuel intersites simulé dans Microsoft Azure en tant qu’environnement de développement/test.'
-ms.openlocfilehash: 9ef0424bad831294066e4ff4b5f7d602babc0a48
-ms.sourcegitcommit: dffbcfb1cbc9776a29229a787c1eab4192e55cff
+ms.openlocfilehash: 57262ee58f539fffbb0fc5b92c3a24f4c9204293
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30948595"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741210"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-azure"></a>Réseau virtuel intersites simulé dans Azure
 
@@ -62,7 +62,7 @@ Les trois phases principales pour configurer cet environnement de développement
 ![Guides de laboratoire de test dans Microsoft Cloud](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
-> Cliquez [ici](http://aka.ms/catlgstack) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft Cloud.
+> Cliquez sur[ici](http://aka.ms/catlgstack) pour afficher le plan de tous les articles dans le guide de Laboratoire Test Office 365.
   
 ## <a name="phase-1-configure-the-testlab-virtual-network"></a>Phase 1 : Configurer le réseau virtuel TestLab
 
@@ -215,9 +215,9 @@ Utilisez cet environnement de développement/test pour simuler une [batterie de 
 
 [Environnement de développement/test de configuration de base](base-configuration-dev-test-environment.md)
   
-[Environnement de développement/test Office 365](office-365-dev-test-environment.md)
+[Environnement de développement/test Office 365](office-365-dev-test-environment.md)
   
-[DirSync pour votre environnement de développement/test Office 365](dirsync-for-your-office-365-dev-test-environment.md)
+[DirSync pour votre environnement de développement/test Office 365](dirsync-for-your-office-365-dev-test-environment.md)
   
 [Sécurité des applications cloud pour votre environnement de développement/test Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
   

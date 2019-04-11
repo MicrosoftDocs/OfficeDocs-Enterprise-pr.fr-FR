@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: 'Résumé : Découvrez comment créer un intranet simplifié comme environnement de développement/test dans Microsoft Azure.'
-ms.openlocfilehash: b232372654d6244589bf1f10c3d76d4b7558aa23
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: 68edf0dea20674a7dadb4d1e50b8151a9ce13c7b
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31037978"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741380"
 ---
 # <a name="base-configuration-devtest-environment"></a>Environnement de développement/test de configuration de base
 
@@ -104,7 +104,7 @@ Si vous n’avez pas encore d’abonnement Azure, vous pouvez créer un compte 
 ![Guides de laboratoire de test dans Microsoft Cloud](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
-> Cliquez [ici](http://aka.ms/catlgstack) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft Cloud.
+> Cliquez sur[ici](http://aka.ms/catlgstack) pour afficher le plan de tous les articles dans le Guide de Laboratoire Test Office 365.
   
 ### <a name="step-1-create-the-virtual-network"></a>Étape 1 : Créer le réseau virtuel
 
@@ -399,7 +399,7 @@ Il s’agit de votre configuration finale.
 Votre configuration de base dans Azure est maintenant prête pour le développement et le test d’applications ou pour générer des environnements de test supplémentaires. 
   
 > [!TIP]
-> Cliquez [ici](http://aka.ms/catlgstack) pour afficher le plan de tous les articles du jeu de guides de laboratoire de test de One Microsoft Cloud.
+> Cliquez sur[ici](http://aka.ms/catlgstack) pour afficher le plan de tous les articles dans le Guide de Laboratoire Test Office 365.
   
 <a name="mincost"> </a>
 ## <a name="minimizing-the-costs-of-test-environment-virtual-machines-in-azure"></a>Réduire les coûts des machines virtuelles d’environnement de test dans Azure
@@ -436,8 +436,8 @@ Start-AzVM -ResourceGroupName $rgName -Name "CLIENT1"
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Environnement de développement/test Office 365](office-365-dev-test-environment.md)
-- [DirSync pour votre environnement de développement/test Office 365](dirsync-for-your-office-365-dev-test-environment.md)
+- [Environnement de développement/test Office 365](office-365-dev-test-environment.md)
+- [DirSync pour votre environnement de développement/test Office 365](dirsync-for-your-office-365-dev-test-environment.md)
 - [Sécurité des applications cloud pour votre environnement de développement/test Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
 - [Protection avancée contre les menaces pour votre environnement de développement/test Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
 - [Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.md)

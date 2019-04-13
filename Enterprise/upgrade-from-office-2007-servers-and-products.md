@@ -1,5 +1,5 @@
 ---
-title: Ressources pour vous aider à mettre à niveau à partir d’Office 2007 de serveurs et de clients
+title: Ressources pour vous aider à effectuer une mise à niveau à partir de serveurs et clients Office 2007
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -20,45 +20,46 @@ search.appverid:
 - PJU120
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
-description: Prise en charge se termine plus tôt pour les serveurs Office 2007 et les applications clientes et accords de support personnalisés ne sont pas disponibles. Utilisez cet article pour commencer à planifier votre mise à niveau maintenant.
-ms.openlocfilehash: 1a8747e15c9b4051a457deb75e61d02c0c6d73f6
-ms.sourcegitcommit: 317c2753be2aedb60698e94606ba59b63c962328
+description: La prise en charge se termine bientôt pour les serveurs et les applications clientes Office 2007, et les accords de support personnalisés ne sont pas disponibles. Utilisez cet article pour commencer à planifier votre mise à niveau maintenant.
+ms.openlocfilehash: d717688e5eb0baefd73cf70914aa378400820c0c
+ms.sourcegitcommit: 60578f9fd0bc7d102529274deb02d63822682c09
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25933081"
+ms.lasthandoff: 04/13/2019
+ms.locfileid: "31838206"
 ---
-# <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Ressources pour vous aider à mettre à niveau à partir d’Office 2007 de serveurs et de clients
+# <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Ressources pour vous aider à effectuer une mise à niveau à partir de serveurs et clients Office 2007
 
-Si vous utilisez Office 2007 produits et services, la prise en charge pour ces applications est terminée. Lorsque vous planifiez votre mise à niveau, il s’agit donc temps d’envisager le passage au Cloud Microsoft, commençant par Office 365. Utilisez cet article comme point de départ pour consulter vos options et planifier votre mise à niveau.
+Si vous utilisez les produits et services Office 2007, la prise en charge de ces applications a pris fin. Pendant que vous planifiez votre mise à niveau, il est très utile de passer au Cloud Microsoft, en commençant par Office 365. Utilisez cet article comme point de départ pour passer en revue vos options et planifier votre mise à niveau.
       
-## <a name="office-2007-planning-roadmaps"></a>Parcours de planification d’Office 2007
+## <a name="office-2007-planning-roadmaps"></a>Feuilles de route de planification d'Office 2007
   
-Prise en charge est terminée pour les services et les produits Office 2007. Les feuilles de route suivantes peuvent vous aider à planifier votre mise à niveau maintenant.
+Le support technique est terminé pour les produits et services Office 2007. Les feuilles de route suivantes peuvent vous aider à planifier votre mise à niveau maintenant.
 
-|**Planification du contenu**|**Fin de la prise en charge de la date**|
+|**Planification du contenu**|**Date de fin de prise en charge**|
 |:-----|:-----|
-|[Fin d’Office 2007 de prise en charge de la feuille de route](https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap) <br/> |10 octobre 2017  <br/> |
+|[Feuille de route de prise en charge d'Office 2007](https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap) <br/> |10 octobre 2017  <br/> |
 |[Exchange 2007 end of support roadmap](exchange-2007-end-of-support.md) <br/> |11 avril 2017  <br/> |
-|[Feuille de route pour la fin de l’assistance pour SharePoint Server 2007](sharepoint-2007-end-of-support.md) <br/> |10 octobre 2017  <br/> |
+|
+  [Feuille de route pour la fin de l’assistance pour SharePoint Server 2007](sharepoint-2007-end-of-support.md) <br/> |10 octobre 2017  <br/> |
 |[Feuille de route pour la fin de l’assistance pour Project Server 2007](project-server-2007-end-of-support.md) <br/> |10 octobre 2017  <br/> |
-|[Mise à niveau depuis Office Communications Server](https://docs.microsoft.com/SkypeForBusiness/plan-your-deployment/upgrade) <br/> |8 janvier 2018  <br/> |
+|[Mise à niveau à partir d'Office Communications Server](https://docs.microsoft.com/SkypeForBusiness/plan-your-deployment/upgrade) <br/> |8 janvier 2018  <br/> |
 |[Feuille de route pour la fin de l’assistance pour PerformancePoint Server 2007](pps-2007-end-of-support.md) <br/> |9 janvier 2018  <br/> |
    
-Prise en charge de la fin d’un produit Microsoft, il n’existe aucune nouvelles mises à jour de sécurité, mises à jour de sécurité, les options de support assisté gratuite ou payante (y compris les accords de support personnalisé) ou mises à jour contenus techniques en ligne. Si vous êtes une organisation d’entreprise ou un utilisateur particulier, vous disposez de plusieurs options à prendre en compte :
+Lorsque la prise en charge d'un produit Microsoft est terminée, il n'existe aucune nouvelle mise à jour de sécurité, aucune mise à jour non relative à la sécurité, aucune option de support technique gratuite ou payant (y compris des accords de support personnalisé) ou des mises à jour de contenu technique en ligne. Que vous soyez une organisation d'entreprise ou un utilisateur à domicile individuel, plusieurs options sont à prendre en compte:
 
-## <a name="im-a-home-user-what-do-i-do"></a>Je suis un utilisateur. Que dois-je faire ?
+## <a name="im-a-home-user-what-do-i-do"></a>Je suis un utilisateur à domicile. What do I do?
 
-Si vous utilisez des produits Office 2010 et les applications à domicile, voir [ces informations](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do).
+Si vous utilisez les produits et applications Office 2007 à la maison, reportez-vous à [ces informations](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do).
      
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Groupe de retraite Office (Communauté Microsoft Tech)](https://go.microsoft.com/fwlink/?linkid=842065)
   
-[Vidéo : Qu’est Office 365 ?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
+[Vidéo: qu'est-ce que Office 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
   
-[Politique de cycle de vie Microsoft](https://go.microsoft.com/fwlink/?linkid=865200)
+[Stratégie de cycle de vie Microsoft](https://go.microsoft.com/fwlink/?linkid=865200)
 
-[Planifier votre mise à niveau à partir de clients et les serveurs Office 2007 ou Office 2010](plan-upgrade-previous-versions-office.md)
+[Planification de la mise à niveau à partir de serveurs et clients Office 2007 ou Office 2010](plan-upgrade-previous-versions-office.md)
   
 

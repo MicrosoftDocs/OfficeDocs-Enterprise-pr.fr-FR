@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 'Résumé : Configurez l’authentification fédérée pour votre environnement de développement/test Office 365.'
-ms.openlocfilehash: b016e168ac1bfcf180c1c4ba04846416dbd098f4
-ms.sourcegitcommit: dffbcfb1cbc9776a29229a787c1eab4192e55cff
+ms.openlocfilehash: f09aa66fb3183ffa924d6211fb7fa36e7de095eb
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30948635"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741420"
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>Identité fédérée pour votre environnement de développement/test Office 365
 
@@ -41,7 +41,7 @@ La configuration illustrée dans la figure 1 est constituée des éléments sui
   
 - Un abonnement d’évaluation Office 365 E5, qui arrive à expiration 30 jours après sa création.
     
-- Un intranet d’organisation simplifié et connecté à Internet, composé de cinq machines virtuelles sur un sous-réseau d’un réseau virtuel Azure (DC1, APP1, CLIENT1, ADFS1 et PROXY1). Azure AD Connect s’exécute sur APP1 pour synchroniser la liste de comptes dans le domaine Windows Server AD avec Office 365. PROXY1 reçoit les demandes d’authentification entrantes. ADFS1 valide les informations d’identification avec DC1 et émet des jetons de sécurité.
+- Un intranet d’organisation simplifié et connecté à Internet, composé de cinq machines virtuelles sur un sous-réseau d’un réseau virtuel Azure (DC1, APP1, CLIENT1, ADFS1 et PROXY1). Azure AD Connect s’exécute sur APP1 pour synchroniser la liste de comptes dans le domaine AD DS (Active Directory Domain Services) avec Office 365. PROXY1 reçoit les demandes d’authentification entrantes. ADFS1 valide les informations d’identification avec DC1 et émet des jetons de sécurité.
     
 Les cinq phases de configuration de cet environnement de développement/test sont les suivantes :
   
@@ -61,11 +61,11 @@ Pour connaître toutes les étapes d’un déploiement de production d’authent
 > Vous ne pouvez pas configurer cet environnement de développement/test avec un abonnement à la version d’évaluation d’Azure. 
   
 > [!TIP]
-> Cliquez [ici](http://aka.ms/catlgstack) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de One Microsoft Cloud.
+> Cliquez [ici](http://aka.ms/catlgstack) pour afficher le plan de tous les articles dans le Guide de Laboratoire Test Office 365.
   
 ## <a name="phase-1-create-the-simulated-enterprise-office-365-devtest-environment-with-dirsync"></a>Phase 1 : Création de l’environnement de développement/test Office 365 d’entreprise simulé avec DirSync
 
-Suivez les instructions de la rubrique [Synchronisation d’annuaires pour votre environnement de développement/test Office 365](dirsync-for-your-office-365-dev-test-environment.md) pour créer l’environnement de développement/test Office 365 d’entreprise simulé avec APP1 en tant que serveur DirSync et l’identité synchronisée entre Office 365 et les comptes Windows Server AD sur DC1.
+Suivez les instructions de la rubrique [Synchronisation d’annuaires pour votre environnement de développement/test Office 365](dirsync-for-your-office-365-dev-test-environment.md) pour créer l’environnement de développement/test Office 365 d’entreprise simulé avec APP1 en tant que serveur DirSync et l’identité synchronisée entre Office 365 et les comptes AD DS sur DC1.
   
 Ensuite, créez un nom de domaine DNS public en fonction de votre nom de domaine actuel et ajoutez-le à votre abonnement Office 365. Nous vous recommandons d’utiliser le nom **testlab.**\<votre domaine public>. Par exemple, si votre nom de domaine public est contoso.com, ajoutez le nom de domaine public testlab.contoso.com.
   
@@ -122,7 +122,7 @@ Restart-Computer
 
 Voici la configuration finale.
   
-**Figure 3 : Ajout du serveur AD FS**
+**Figure 3 : Ajout du serveur AD FS**
 
 ![Le serveur AD FS ajouté à la synchronisation d’annuaire pour l’environnement de développement/test Office 365](media/da82f39e-426d-41e2-842a-c13b382d63d5.png)
   
@@ -193,7 +193,7 @@ Ces commandes créent un enregistrement A DNS pour votre nom de domaine complet
   
 Voici la configuration finale.
   
-**Figure 4 : Ajout du serveur proxy d’application web**
+**Figure 4 : Ajout du serveur proxy d’application web**
 
 ![Le serveur proxy d’application web ajouté à la synchronisation d’annuaire pour l’environnement de développement/test Office 365](media/f50039e4-796a-42c0-bfdc-87c2026b1579.png)
   
@@ -408,7 +408,7 @@ Pour vérifier que l’authentification fédérée fonctionne, procédez comme s
     
 2. Pour les informations d’identification de connexion, saisissez le domaine **user1@**\< créé lors de la phase 1>. 
     
-    Par exemple, si votre domaine de test est **testlab.contoso.com**, vous saisissez **user1@testlab.contoso.com**. Appuyez sur la touche de tabulation ou autorisez Office 365 à vous rediriger automatiquement.
+    Par exemple, si votre domaine de test est **testlab.contoso.com**, vous saisissez **user1@testlab.contoso.com**. Appuyez sur la touche de tabulation ou autorisez Office 365 à vous rediriger automatiquement.
     
     Une page **Votre connexion n’est pas privée** devrait s’afficher. Cette page s’affiche, car vous avez installé sur ADFS1 un certificat auto-signé que votre ordinateur de bureau ne peut pas valider. Dans un déploiement de production d’authentification fédérée, vous utiliseriez un certificat provenant d’une autorité de certification approuvée et vos utilisateurs ne verraient pas cette page.
     
@@ -422,7 +422,7 @@ Pour vérifier que l’authentification fédérée fonctionne, procédez comme s
     
     Vous devez voir la **page d’accueil Microsoft Office**.
     
-Cette procédure montre que votre abonnement à la version d’évaluation d’Office 365 est fédéré avec le domaine corp.contoso.com de Windows Server AD hébergé sur DC1. Voici les principes de base du processus d’authentification :
+Cette procédure montre que votre abonnement à la version d’évaluation d’Office 365 est fédéré avec le domaine corp.contoso.com AD DS hébergé sur DC1. Voici les principes de base du processus d’authentification :
   
 1. Lorsque vous utilisez le domaine fédéré que vous avez créé à la phase 1 dans le nom de compte de connexion, Office 365 redirige votre navigateur vers votre nom de domaine complet du service FS (Federation Service) et PROXY1.
     
@@ -448,7 +448,7 @@ Quand vous êtes prêt à déployer l’authentification fédérée haute dispon
   
 [Environnement de développement/test de configuration de base](base-configuration-dev-test-environment.md)
   
-[Environnement de développement/test Office 365](office-365-dev-test-environment.md)
+[Environnement de développement/test Office 365](office-365-dev-test-environment.md)
   
 [Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.md)
   

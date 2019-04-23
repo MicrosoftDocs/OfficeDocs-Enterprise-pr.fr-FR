@@ -3,7 +3,7 @@ title: Attribuer des licences à des comptes d’utilisateurs avec Office 365 P
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/29/2019
+ms.date: 04/18/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,12 +18,12 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: Explique comment utiliser Office 365 PowerShell assigner une licence Office 365 à des utilisateurs sans licence.
-ms.openlocfilehash: 5040249f29ac8390db5b2933fc04fb1d01f0af2c
-ms.sourcegitcommit: 8ba20f1b1839630a199585da0c83aaebd1ceb9fc
+ms.openlocfilehash: ac2cdb8c303cacc5c9664b877ba86a5b196432b1
+ms.sourcegitcommit: 51f9e89e4b9d54f92ef5c70468bda96e664b8a6b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30931763"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31957645"
 ---
 # <a name="assign-licenses-to-user-accounts-with-office-365-powershell"></a>Attribuer des licences à des comptes d’utilisateurs avec Office 365 PowerShell
 
@@ -108,7 +108,7 @@ Set-MsolUserLicense -UserPrincipalName "belindan@litwareinc.com" -AddLicenses "l
 Pour attribuer une licence à un grand nombre d'utilisateurs sans licence, exécutez cette commande.
   
 ```
-Get-MsolUser -All -UnlicensedUsersOnly [<FilterableAttributes>] | ForEach {Set-MsolUserLicense -AddLicenses "<AccountSkuId>"}
+Get-MsolUser -All -UnlicensedUsersOnly [<FilterableAttributes>] | Set-MsolUserLicense -AddLicenses "<AccountSkuId>"
 ```
   
 >[!Note]
@@ -118,13 +118,13 @@ Get-MsolUser -All -UnlicensedUsersOnly [<FilterableAttributes>] | ForEach {Set-M
 Cet exemple attribue des licences à tous les utilisateurs sans licence à partir du plan de gestion des licences **litwareinc: ENTERPRISEPACK** (Office 365 Enterprise E3):
   
 ```
-Get-MsolUser -All -UnlicensedUsersOnly | ForEach {Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"}
+Get-MsolUser -All -UnlicensedUsersOnly | Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"
 ```
 
 Cet exemple attribue ces mêmes licences aux utilisateurs sans licence du département des ventes aux États-Unis:
   
 ```
-Get-MsolUser -All -Department "Sales" -UsageLocation "US" -UnlicensedUsersOnly | ForEach {Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"}
+Get-MsolUser -All -Department "Sales" -UsageLocation "US" -UnlicensedUsersOnly | Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"
 ```
   
 ## <a name="new-to-office-365"></a>Vous débutez avec Office 365 ?

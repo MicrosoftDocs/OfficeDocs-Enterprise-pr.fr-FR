@@ -11,12 +11,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: 893e5275-30b3-433f-8ecd-644f78f513e2
 description: 'Résumé : Utilisez Remote Windows PowerShell pour Microsoft Exchange Online pour récupérer des rapports à partir de locataires de clients individuels.'
-ms.openlocfilehash: 8df88e8b00cbd8e14558e423f41f45ea5f9bf26a
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.openlocfilehash: 478cd8736a837dae571e20f38187be087b48231a
+ms.sourcegitcommit: 509bcf92580d7a0bcebbf6f1d10311d6b0014984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001757"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "31992824"
 ---
 # <a name="retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Récupération des données des rapports du locataire d’un client avec Windows PowerShell pour les partenaires avec autorisation d’accès délégué
 
@@ -26,8 +26,7 @@ Partenaires de syndication et fournisseur de solutions cloud peut accéder aux d
   
 Dans cet article, vous utilisez Remote Windows PowerShell pour Exchange Online afin de vous connecter à une location de client unique et récupérer un rapport. Par défaut, Windows PowerShell ne prend pas en charge le regroupement des données des rapports à partir de plusieurs locations de clients. Les rapports que vous récupérez avec cette procédure ne sont destinés qu'aux organisations déléguées ( _DelegatedOrg_) auxquelles vous vous connectez.
   
-Si vous voulez récupérer un rapport unique pour toutes les locations de votre client, vous trouverez un exemple de script pour ce faire dans [Regroupement des données des rapports d'un client via Windows PowerShell pour les partenaires avec autorisation d'accès délégué](aggregate-customer-reporting-data-via-windows-powershell-for-delegated-access-pe.md).
-  
+ 
 ## <a name="before-you-begin"></a>Avant de commencer
 
 - Vous devez vous connecter à votre locataire Exchange Online à l'aide de Remote Windows PowerShell Pour plus d'informations, voir [Connexion à des locataires Exchange Online avec Remote Windows PowerShell pour les partenaires avec autorisations d'accès délégué](connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md)

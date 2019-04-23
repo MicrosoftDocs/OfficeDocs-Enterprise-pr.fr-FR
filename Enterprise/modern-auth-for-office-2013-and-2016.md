@@ -1,5 +1,5 @@
 ---
-title: Fonctionnement de l'authentification moderne pour les applications clientes Office 2013 et Office 2016
+title: Fonctionnement de l’authentification moderne pour les applications clientes Office 2013 et Office 2016
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -21,17 +21,20 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment fonctionne différemment l'authentification moderne Office 365 pour les applications clientes Office 2013 et 2016.
-ms.openlocfilehash: 0e7b1a91a13fdd1ea5bb5fd3b42fcda60c704d6f
-ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
+ms.openlocfilehash: 5e42ec2fcf8f27990af187e4ad26ba65909ac709
+ms.sourcegitcommit: 51f9e89e4b9d54f92ef5c70468bda96e664b8a6b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30372911"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31957695"
 ---
-# <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Fonctionnement de l'authentification moderne pour les applications clientes Office 2013 et Office 2016
+# <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Fonctionnement de l’authentification moderne pour les applications clientes Office 2013 et Office 2016
 
 Lisez cet article pour découvrir comment les applications clientes Office 2013 et Office 2016 utilisent des fonctionnalités d'authentification modernes basées sur la configuration de l'authentification sur le client Office 365 pour Exchange Online, SharePoint Online et Skype entreprise online.
-  
+
+> [!NOTE]
+> Les applications clientes héritées, telles que Office 2010 et Office pour Mac 2011, ne prennent pas en charge l'authentification moderne et ne peuvent être utilisées qu'avec l'authentification de base.
+
 ## <a name="availability-of-modern-authentication-for-office-365-services"></a>Disponibilité de l'authentification moderne pour les services Office 365
 
 Pour les services Office 365, l'État par défaut de l'authentification moderne est:

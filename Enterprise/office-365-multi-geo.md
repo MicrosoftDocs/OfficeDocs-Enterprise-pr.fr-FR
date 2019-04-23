@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Étendez votre présence Office 365 à plusieurs régions géographiques avec Office 365 multigéographique.
-ms.openlocfilehash: e216f61806ea5d648519ac7217acf7dbaddd1419
-ms.sourcegitcommit: 8ba20f1b1839630a199585da0c83aaebd1ceb9fc
+ms.openlocfilehash: eb5c28131b7ac629d9acc607c777756b8825549c
+ms.sourcegitcommit: 509bcf92580d7a0bcebbf6f1d10311d6b0014984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30933987"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "31992834"
 ---
 # <a name="office-365-multi-geo"></a>Office 365 multigéographique
 
@@ -31,7 +31,7 @@ Dans un environnement multigéographique, votre client Office 365 se compose d�
 
 ![Capture d’écran d’un mappage multigéographique du Centre d’administration SharePoint](media/multi-geo-world-map.png)
 
-Notez qu’Office 365 multigéographique n’est pas conçu pour optimiser les performances, mais pour répondre aux exigences de résidence des données. Pour plus d’informations sur l’optimisation des performances d’Office 365, consultez l’article [Planification réseau et optimisation des performances pour Office 365](https://support.office.com/article/e5f1228c-da3c-4654-bf16-d163daee8848) ou contactez votre groupe de support.
+Notez qu’Office 365 multigéographique n’est pas conçu pour optimiser les performances, mais pour répondre aux exigences de résidence des données. Pour plus d’informations sur l’optimisation des performances pour Office 365, voir [Planification réseau et optimisation des performances pour Office 365](https://support.office.com/article/e5f1228c-da3c-4654-bf16-d163daee8848) ou contacter votre groupe de support.
 
 ## <a name="terminology"></a>Terminologie
 
@@ -55,7 +55,7 @@ Office 365 multigéographique est actuellement disponible dans les régions et p
 
 Pour commencer à utiliser la fonctionnalité multigéographique, procédez comme suit :
 
-1. Travaillez avec votre équipe de compte pour ajouter le plan de services des _fonctionnalités multigéographiques dans Office 365_. Vous pourrez ainsi ajouter le nombre de licences nécessaires.
+1. Travailler avec votre équipe de compte pour ajouter le plan de services des _fonctionnalités multigéographiques dans Office 365_. Ils vous guident pour ajouter le nombre de licences nécessaires. La fonctionnalité Zones géographiques multiples est actuellement disponible pour les clients avec au moins 2 500 abonnements aux services Office 365.
 
    Avant que vous puissiez commencer à utiliser Office 365 multigéographique, Microsoft doit configurer votre client Exchange Online afin qu’il bénéficie d’une prise en charge multigéographique. Ce processus de configuration est déclenché lorsque vous commandez le plan de services des *fonctionnalités multigéographiques d’Office 365* et que les licences apparaissent dans votre client. Une fois vos licences multigéographiques appliquées, vous recevez des notifications dans le [Centre de messages Office 365](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093) et pouvez commencer à configurer et à utiliser les fonctionnalités d’Office 365 multigéographique.
 
@@ -69,8 +69,8 @@ Pour commencer à utiliser la fonctionnalité multigéographique, procédez comm
 
 ## <a name="see-also"></a>Voir aussi
 
-[Aka.ms/GoMultiGeo ](https://Aka.ms/GoMultiGeo)
+[Géo multiple dans Exchange Online et OneDrive](https://Aka.ms/GoMultiGeo)
 
-[Fonctionnalités multigéographiques dans OneDrive et SharePoint Online](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365.md)
+[Fonctionnalités multigéographiques dans OneDrive et SharePoint Online](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365)
 
-[Fonctionnalités multi-localisés dans Exchange Online](multi-geo-capabilities-in-exchange-online.md)
+[Fonctionnalités multi-localisés dans Exchange Online](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-exchange-online)

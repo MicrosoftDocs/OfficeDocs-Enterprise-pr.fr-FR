@@ -3,60 +3,6 @@
 
 
 
-## <a name="week-of-march-11-2019"></a>Semaine du 11 mars 2019
-
-
-| Publié le |Titre de la rubrique | Modification |
-|------|------------|--------|
-| 3/11/2019 | [Ressources relatives à l’architecture informatique du cloud Microsoft](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | modifié |
-| 3/11/2019 | [Afficher des comptes d'utilisateur avec Office 365 PowerShell](/Office365/Enterprise/powershell/view-user-accounts-with-office-365-powershell) | modifié |
-| 3/11/2019 | [Pourquoi utiliser PowerShell Office 365 ?](/Office365/Enterprise/powershell/why-you-need-to-use-office-365-powershell) | modifié |
-| 3/13/2019 | [Advanced eDiscovery pour votre environnement de développement/test Office 365](/Office365/Enterprise/advanced-ediscovery-for-your-office-365-dev-test-environment) | modifié |
-| 3/13/2019 | [Protection avancée contre les menaces pour votre environnement de développement/test Office 365](/Office365/Enterprise/advanced-threat-protection-for-your-office-365-dev-test-environment) | modifié |
-| 3/13/2019 | [Test d'Office 365 avec des guides de laboratoire de test d'adoption dans le Cloud (guides)](/Office365/Enterprise/cloud-adoption-test-lab-guides-tlgs) | modifié |
-| 3/13/2019 | [Sécurité des applications cloud pour votre environnement de développement/test Office 365](/Office365/Enterprise/cloud-app-security-for-your-office-365-dev-test-environment) | modifié |
-| 3/13/2019 | [Classification et étiquetage des données dans l’environnement de développement/test Office 365](/Office365/Enterprise/data-classification-and-labeling-in-the-office-365-dev-test-environment) | modifié |
-| 3/13/2019 | [Déploiement de la Synchronisation d’Annuaires Office 365 dans Microsoft Azure](/Office365/Enterprise/deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure) | modifié |
-| 3/13/2019 | [Synchronisation d'annuaires pour votre environnement de développement/test Office 365](/Office365/Enterprise/dirsync-for-your-office-365-dev-test-environment) | modifié |
-| 3/13/2019 | [Intégration d’Exchange Online pour votre environnement de développement/test Office 365 et Dynamics 365](/Office365/Enterprise/exchange-online-integration-for-your-office-365-and-dynamics-365-dev-test-enviro) | modifié |
-| 3/13/2019 | [ExpressRoute pour la connectivité au cloud de Microsoft](/Office365/Enterprise/expressroute-for-microsoft-cloud-connectivity) | modifié |
-| 3/13/2019 | [Identité fédérée pour votre environnement de développement/test Office 365](/Office365/Enterprise/federated-identity-for-your-office-365-dev-test-environment) | modifié |
-| 3/13/2019 | [Mise en réseau de Microsoft Cloud pour les architectes d’entreprise](/Office365/Enterprise/microsoft-cloud-networking-for-enterprise-architects) | modifié |
-| 3/13/2019 | [Authentification multifacteur pour votre environnement de développement/test Office 365](/Office365/Enterprise/multi-factor-authentication-for-your-office-365-dev-test-environment) | modifié |
-| 3/13/2019 | [Planification réseau et de migration pour Office 365](/Office365/Enterprise/network-and-migration-planning) | modifié |
-| 3/13/2019 | [Environnement de développement/test Office 365 et Dynamics 365](/Office365/Enterprise/office-365-and-dynamics-365-dev-test-environment) | modifié |
-| 3/13/2019 | [Environnement de développement/test Office 365](/Office365/Enterprise/office-365-dev-test-environment) | modifié |
-| 3/13/2019 | [Connexion à tous les services Office 365 à l'aide d'une seule fenêtre Windows PowerShell](/Office365/Enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window) | modifié |
-| 3/13/2019 | [Gestion d’Exchange Online avec Office 365 PowerShell](/Office365/Enterprise/powershell/manage-exchange-online-with-office-365-powershell) | modifié |
-| 3/13/2019 | [Gestion de SharePoint Online avec Office 365 PowerShell](/Office365/Enterprise/powershell/manage-sharepoint-online-with-office-365-powershell) | modifié |
-| 3/13/2019 | [Manage SharePoint Online site groups with Office 365 PowerShell](/Office365/Enterprise/powershell/manage-sharepoint-site-groups-with-powershell) | modifié |
-| 3/13/2019 | [Gestion des utilisateurs et des groupes SharePoint Online avec Office 365 PowerShell](/Office365/Enterprise/powershell/manage-sharepoint-users-and-groups-with-powershell) | modifié |
-| 3/13/2019 | [Gérer les comptes d'utilisateurs et les licences avec Office 365 PowerShell](/Office365/Enterprise/powershell/manage-user-accounts-and-licenses-with-office-365-powershell) | modifié |
-| 3/13/2019 | [Utiliser PowerShell pour effectuer une migration à basculement vers Office 365](/Office365/Enterprise/powershell/use-powershell-to-perform-a-cutover-migration-to-office-365) | modifié |
-| 3/13/2019 | [Utiliser PowerShell pour effectuer une migration intermédiaire vers Office 365](/Office365/Enterprise/powershell/use-powershell-to-perform-a-staged-migration-to-office-365) | modifié |
-| 3/13/2019 | [Pourquoi utiliser PowerShell Office 365 ?](/Office365/Enterprise/powershell/why-you-need-to-use-office-365-powershell) | modifié |
-| 3/13/2019 | [Protéger vos comptes d’administrateur général Office 365](/Office365/Enterprise/protect-your-global-administrator-accounts) | modifié |
-| 3/13/2019 | [Protection des fichiers sensibles dans l’environnement de développement/test Office 365](/Office365/Enterprise/sensitive-file-protection-in-the-office-365-dev-test-environment) | modifié |
-| 3/13/2019 | [Abonnements, licences, comptes et clients pour les offres Cloud de Microsoft](/Office365/Enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings) | modifié |
-| 3/13/2019 | [Environnement de développement/test Microsoft Cloud unique](/Office365/Enterprise/the-one-microsoft-cloud-dev-test-environment) | modifié |
-| 3/14/2019 | [Réseaux de distribution de contenu](/Office365/Enterprise/content-delivery-networks) | modifié |
-| 3/14/2019 | [Forum aux questions sur la mise en réseau vidéo d'Office 365](/Office365/Enterprise/office-365-video-networking-faq) | modifié |
-| 3/15/2019 | [Transfert de données principales vers le nouveau centre de données Office 365 régions centres](/Office365/Enterprise/moving-data-to-new-datacenter-geos) | modifié |
-| 3/15/2019 | [Pendant et après le déplacement de vos données](/Office365/Enterprise/during-and-after-your-data-move) | modifié |
-| 3/15/2019 | [Environnement de développement/test de configuration de base](/Office365/Enterprise/base-configuration-dev-test-environment) | modifié |
-| 3/15/2019 | [Connecter un réseau local à Microsoft Azure Virtual Network](/Office365/Enterprise/connect-an-on-premises-network-to-a-microsoft-azure-virtual-network) | modifié |
-| 3/15/2019 | [Déployer une authentification fédérée haute disponibilité pour Office 365 dans Azure](/Office365/Enterprise/deploy-high-availability-federated-authentication-for-office-365-in-azure) | modifié |
-| 3/15/2019 | [Déploiement de la Synchronisation d’Annuaires Office 365 dans Microsoft Azure](/Office365/Enterprise/deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure) | modifié |
-| 3/15/2019 | [Identité fédérée pour votre environnement de développement/test Office 365](/Office365/Enterprise/federated-identity-for-your-office-365-dev-test-environment) | modifié |
-| 3/15/2019 | [Authentification fédérée haute disponibilité, phase 1 configurer Azure](/Office365/Enterprise/high-availability-federated-authentication-phase-1-configure-azure) | modifié |
-| 3/15/2019 | [Authentification fédérée haute disponibilité, phase 2 configurer les contrôleurs de domaine](/Office365/Enterprise/high-availability-federated-authentication-phase-2-configure-domain-controllers) | modifié |
-| 3/15/2019 | [Authentification fédérée haute disponibilité, phase 3 configurer les serveurs AD FS](/Office365/Enterprise/high-availability-federated-authentication-phase-3-configure-ad-fs-servers) | modifié |
-| 3/15/2019 | [Authentification fédérée haute disponibilité, phase 4 configurer les proxys d'application Web](/Office365/Enterprise/high-availability-federated-authentication-phase-4-configure-web-application-pro) | modifié |
-| 3/15/2019 | [Environnement de développement/test Office 365](/Office365/Enterprise/office-365-dev-test-environment) | modifié |
-| 3/15/2019 | [Procédure de demande d’un déplacement de données](/Office365/Enterprise/request-your-data-move) | modifié |
-| 3/15/2019 | [Réseau virtuel intersite simulé dans Azure](/Office365/Enterprise/simulated-cross-premises-virtual-network-in-azure) | modifié |
-
-
 ## <a name="week-of-march-18-2019"></a>Semaine du 18 mars 2019
 
 
@@ -196,4 +142,16 @@
 | 10/04/2019 | [Exchange Multi-Géo](/Office365/Enterprise/multi-geo-capabilities-in-exchange-online) | modifié |
 | 4/12/2019 | [Ressources relatives à l’architecture informatique du cloud Microsoft](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | modifié |
 | 4/12/2019 | [Planifier votre mise à niveau à partir de serveurs et clients Office 2007 ou 2010](/Office365/Enterprise/plan-upgrade-previous-versions-office) | modifié |
-| 4/12/2019 | [Ressources pour vous aider à effectuer une mise à niveau à partir de serveurs et clients Office 2007](/Office365/Enterprise/upgrade-from-office-2007-servers-and-products) | Modifié le |
+| 4/12/2019 | [Ressources pour vous aider à effectuer une mise à niveau à partir de serveurs et clients Office 2007](/Office365/Enterprise/upgrade-from-office-2007-servers-and-products) | modifié |
+
+
+## <a name="week-of-april-15-2019"></a>Semaine du 15 avril 2019
+
+
+| Publié le |Titre de la rubrique | Modification |
+|------|------------|--------|
+| 4/18/2019 | [Fonctionnement de l’authentification moderne pour les applications clientes Office 2013 et Office 2016](/Office365/Enterprise/modern-auth-for-office-2013-and-2016) | modifié |
+| 4/18/2019 | [Attribuer des licences à des comptes d'utilisateurs avec Office 365 PowerShell](/Office365/Enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell) | modifié |
+| 4/18/2019 | [Attribuer des rôles à des comptes d'utilisateur avec Office 365 PowerShell](/Office365/Enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell) | modifié |
+| 4/18/2019 | [Routage avec ExpressRoute pour Office 365](/Office365/Enterprise/routing-with-expressroute) | modifié |
+| 4/18/2019 | [Utiliser les cmdlets PowerShell de déploiement centralisé pour gérer les compléments](/Office365/Enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins) | Modifié le |

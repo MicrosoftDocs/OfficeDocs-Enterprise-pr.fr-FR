@@ -3,7 +3,7 @@ title: Attribuer des rôles à des comptes d’utilisateur avec Office 365 Pow
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/31/2019
+ms.date: 04/18/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: 'Résumé : Utilisation d’Office 365 PowerShell pour attribuer des rôles à des comptes d’utilisateur.'
-ms.openlocfilehash: 702c7358ccca9bb36bd106d742b5c454283ee8b4
-ms.sourcegitcommit: d0c870c7a487eda48b11f649b30e4818fd5608aa
+ms.openlocfilehash: 78f2e08df6d46588b93dc217d0e16b7c3a350a88
+ms.sourcegitcommit: 51f9e89e4b9d54f92ef5c70468bda96e664b8a6b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29690435"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31957705"
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>Attribuer des rôles à des comptes d’utilisateur avec Office 365 PowerShell
 
@@ -32,26 +32,38 @@ Tout d’abord, [connectez-vous à votre client Office 365](connect-to-office-3
   
 Ensuite, déterminez le nom de connexion du compte d’utilisateur que vous souhaitez ajouter à un rôle (exemple : fredsm@contoso.com). On l’appelle aussi nom d’utilisateur principal (UPN).
 
-Ensuite, déterminez le nom du rôle. Utilisez cette commande pour répertorier les rôles que vous pouvez attribuer avec PowerShell.
+Ensuite, déterminez le nom du rôle. Utilisez cette[liste d’autorisations des rôles d’administrateur dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 
-````
-Get-AzureADDirectoryRole
-````
+>[!Note]
+>Soyez attentif aux notes dans cet article. Certains noms de rôle sont différents pour Azure AD PowerShell. Par exemple, le rôle « Administrateur de SharePoint » dans le Centre d’administration Microsoft 365 est nommé « Administrateur du Service SharePoint » pour Azure AD PowerShell.
+>
 
 Ensuite, renseignez les noms de connexion et de rôle, et exécutez ces commandes.
   
 ```
 $userName="<sign-in name of the account>"
 $roleName="<role name>"
-Add-AzureADDirectoryRoleMember -ObjectId (Get-AzureADDirectoryRole | Where {$_.DisplayName -eq $roleName}).ObjectID -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
+$role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
+if ($role -eq $null) {
+$roleTemplate = Get-AzureADDirectoryRoleTemplate | Where {$_.displayName -eq $roleName}
+Enable-AzureADDirectoryRole -RoleTemplateId $roleTemplate.ObjectId
+$role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
+}
+Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
 ```
 
 Voici un exemple d’un jeu de commandes terminées :
   
 ```
 $userName="belindan@contoso.com"
-$roleName="Lync Service Administrator"
-Add-AzureADDirectoryRoleMember -ObjectId (Get-AzureADDirectoryRole | Where {$_.DisplayName -eq $roleName}).ObjectID -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
+$roleName="SharePoint Service Administrator"
+$role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
+if ($role -eq $null) {
+$roleTemplate = Get-AzureADDirectoryRoleTemplate | Where {$_.displayName -eq $roleName}
+Enable-AzureADDirectoryRole -RoleTemplateId $roleTemplate.ObjectId
+$role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
+}
+Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
 ```
 
 Pour afficher la liste des noms d’utilisateur pour un rôle spécifique, utilisez ces commandes.

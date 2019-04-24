@@ -37,7 +37,6 @@
 ### [Ajout d’un domaine à la location d’un client avec Windows PowerShell pour les partenaires avec accès délégué](add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe.md)
 ### [Connexion à Exchange Online via Remote Windows PowerShell pour les partenaires avec accès délégué](connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md)
 ### [Récupération des données des rapports d’un client via Windows PowerShell pour les partenaires avec accès délégué](retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md)
-### [Regroupement des données des rapports d’un client via Windows PowerShell pour les partenaires avec accès délégué](aggregate-customer-reporting-data-via-windows-powershell-for-delegated-access-pe.md)
 ## [Gestion de Skype Entreprise Online](manage-skype-for-business-online-with-office-365-powershell.md)
 ### [Gestion des stratégies Skype Entreprise Online](manage-skype-for-business-online-policies-with-office-365-powershell.md)
 ### [Affectation de stratégies Skype Entreprise Online propres à chaque utilisateur](assign-per-user-skype-for-business-online-policies-with-office-365-powershell.md)

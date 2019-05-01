@@ -13,12 +13,12 @@ ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
 - M365-security-compliance
 description: L'authentification moderne est une méthode de gestion des identités qui offre une authentification et une autorisation plus sécurisées pour les utilisateurs. Elle est disponible pour les déploiements hybrides de Skype entreprise Server en local et Exchange Server en local, ainsi que pour les hybrides Skype entreprise mixtes de domaine. Cet article fournit des liens vers des documents connexes sur les conditions préalables, la configuration/la désactivation de l'authentification moderne et la mise en relation avec certains clients (par exemple, Informations sur les clients Outlook et Skype).
-ms.openlocfilehash: 26efa77e3c98c0395188e6ca7a2f65cd3b8b939e
-ms.sourcegitcommit: 19f0deee26b6cf2eef316c742054572bb9d98b84
+ms.openlocfilehash: d8d06a3e2d178f68bcb130228ed1834f4eb878f8
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30458344"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491400"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Vue d'ensemble de l'authentification moderne hybride et conditions préalables à son utilisation avec des serveurs Skype entreprise et Exchange locaux
 
@@ -90,6 +90,18 @@ Vérifiez et vérifiez ces éléments en dehors de votre liste avant de continue
   - Votre domaine SIP est ajouté en tant que domaine fédéré dans Office 365
     
   - Tous les serveurs frontaux SFB doivent disposer de connexions sortantes vers Internet, des URL d'authentification Office 365 (TCP 443) et des listes de réVocation de certificats racines connues (TCP 80) répertoriées dans les lignes 56 et 125 de la section «Microsoft 365 Common and Office Online» des [URL et IP d'office 365 plages d'adresses](urls-and-ip-address-ranges.md).
+  
+- **Skype entreprise en local dans un environnement hybride Office 365**
+  - Un déploiement de Skype entreprise Server 2019 avec tous les serveurs exécutant Skype entreprise Server 2019.
+  
+  - Un déploiement de Skype entreprise Server 2015 avec tous les serveurs exécutant Skype entreprise Server 2015.
+  
+  - Un déploiement avec un maximum de deux versions de serveur différentes, comme décrit ci-dessous:
+  
+     - Skype entreprise Server 2015 et Skype entreprise Server 2019
+     
+  - Tous les serveurs Skype entreprise doivent disposer des dernières mises à jour de cummulative, reportez-vous à la rubrique mises à jour de [Skype entreprise Server](https://docs.microsoft.com/skypeforbusiness/sfb-server-updates) pour trouver et gérer toutes les mises à jour disponibles.
+  - Il n'existe pas de Lync Server 2010 ou 2013 dans l'environnement hybride.
     
  **Note** Si vos serveurs frontaux Skype entreprise utilisent un serveur proxy pour l'accès Internet, le numéro de port et l'adresse IP du serveur proxy utilisés doivent être entrés dans la section Configuration du fichier Web. config pour chaque serveur frontal. 
   
@@ -120,7 +132,17 @@ Vérifiez et vérifiez ces éléments en dehors de votre liste avant de continue
     
   - Le déchargement SSL n'est pas configuré. L'arrêt de SSL et le rechiffrement sont pris en charge.
     
-  - Dans l'éventualité où votre environnement utilise une infrastructure de serveur proxy pour permettre aux serveurs de se connecter à Internet, vérifiez que tous les serveurs Exchange ont le serveur proxy défini dans la propriété [InternetWebProxy](https://technet.microsoft.com/en-us/library/bb123716%28v=exchg.160%29.aspx) .
+  - Dans l'éventualité où votre environnement utilise une infrastructure de serveur proxy pour permettre aux serveurs de se connecter à Internet, vérifiez que tous les serveurs Exchange ont le serveur proxy défini dans la propriété [InternetWebProxy](https://technet.microsoft.com/library/bb123716%28v=exchg.160%29.aspx) .
+  
+- **Exchange Server local dans un environnement hybride Office 365**
+
+  - Si vous utilisez Exchange Server 2013, les rôles serveur de boîtes aux lettres et d'accès au client doivent être installés sur au moins un serveur. Bien qu'il soit possible d'installer les rôles de boîte aux lettres et d'accès au client sur des serveurs distincts, nous vous recommandons vivement d'installer les deux rôles sur chaque serveur afin de renforcer la fiabilité et d'améliorer les performances.
+  
+  - Si vous utilisez Exchange Server 2016 ou une version ultérieure, le rôle serveur de boîtes aux lettres doit être installé sur au moins un serveur.
+  
+  - Il n'y a pas de serveur Exchange 2007 ou 2010 dans l'environnement hybride.
+  
+  - Tous les serveurs Exchange doivent disposer des dernières mises à jour de cummulative, consultez [la rubrique mise à niveau d'Exchange vers les dernières mises à](https://docs.microsoft.com/en-us/exchange/plan-and-deploy/install-cumulative-updates?view=exchserver-2019) jour cumulatives pour rechercher et gérer toutes les mises à jour disponibles.
     
 - **Configuration requise pour le client et le protocole Exchange**
   
@@ -164,6 +186,6 @@ Vérifiez et vérifiez ces éléments en dehors de votre liste avant de continue
     
 - [Procédure de configuration de Skype entreprise en local pour utiliser l'authentification moderne](configure-skype-for-business-for-hybrid-modern-authentication.md)
     
-- [Suppression ou désactivation de l'authentification moderne hybride de Skype entreprise et d'Exchange](remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md)
+- [Suppression ou désactivation de l’authentification moderne hybride à partir de Skype Entreprise et Exchange](remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md)
     
 

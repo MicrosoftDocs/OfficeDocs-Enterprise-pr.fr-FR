@@ -14,11 +14,11 @@ search.appverid:
 - MET150
 description: 'Résumé : Apprenez à automatiser la collecte de fichiers à partir des ordinateurs des utilisateurs pour eDiscovery.'
 ms.openlocfilehash: bfbe3b9218ed81727f2cc6ad9fabcb02e76d486b
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001607"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490798"
 ---
 # <a name="automate-file-collection-for-ediscovery"></a>Automatiser la collecte de fichiers pour eDiscovery
 
@@ -328,8 +328,8 @@ $AllFiles | ForEach-Object {
     
 |**Ligne #**|**Ce que vous devez modifier**|**Obligatoire/facultatif**|
 |:-----|:-----|:-----|
-|an  <br/> |**$FolderIdentifier** marque les dossiers de boîte aux lettres vers lesquels les fichiers PST sont importés. Modifier si nécessaire.<br/> |Facultatif  <br/> |
-|cm  <br/> |**$ConnectionUri** doit être configuré pour votre propre serveur. <br/> > [!IMPORTANT]> Vérifiez que votre **$ConnectionUri** pointe vers un emplacement http://, et non pas https://. Cela ne fonctionnera pas avec https://          |Requis  <br/> |
+|12   <br/> |**$FolderIdentifier** marque les dossiers de boîte aux lettres vers lesquels les fichiers PST sont importés. Modifier si nécessaire.<br/> |Facultatif  <br/> |
+|17   <br/> |**$ConnectionUri** doit être configuré pour votre propre serveur. <br/> > [!IMPORTANT]> Vérifiez que votre **$ConnectionUri** pointe vers un emplacement http://, et non pas https://. Cela ne fonctionnera pas avec https://          |Requis  <br/> |
    
 4. Vérifiez que le compte Sous-système approuvé Exchange dispose des autorisations de lecture, écriture et exécution sur le partage \\\\Staging\\Cases$.
     

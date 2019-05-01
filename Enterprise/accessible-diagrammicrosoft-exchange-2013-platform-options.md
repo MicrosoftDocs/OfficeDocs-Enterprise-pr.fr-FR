@@ -1,5 +1,5 @@
 ---
-title: "Diagramme accessible : Options de plateforme Microsoft Exchange 2013"
+title: Diagramme accessible  Options de plateforme Microsoft Exchange 2013
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.date: 12/15/2017
@@ -9,12 +9,13 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 129f4e45-647e-4cf1-92a6-4d86d8396e73
-description: "Cet article est une version texte accessible du diagramme intitulé Options de plateforme Microsoft Exchange 2013, qui est disponible dans la rubrique Diagrammes techniques."
+description: Cet article est une version texte accessible du diagramme intitulé Options de plateforme Microsoft Exchange 2013, qui est disponible dans la rubrique Diagrammes techniques.
 ms.openlocfilehash: e1c4957c9152c5a23008c657d7e2d0d47b5cce0f
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487791"
 ---
 # <a name="accessible-diagram---microsoft-exchange-2013-platform-options"></a>Diagramme accessible : Options de plateforme Microsoft Exchange 2013
 
@@ -32,7 +33,7 @@ La comparaison fournit des informations sur chaque option de déploiement dans l
   
 - Une vue d’ensemble des différentes fonctionnalités de déploiement 
     
-- Avantages de l’implémentation de chaque option de déploiement 
+- Avantages de l'implémentation de chaque option de déploiement 
     
 - Critères de licence 
     
@@ -138,7 +139,7 @@ Cette option de déploiement est idéale pour :
   
 - Les solutions hautement personnalisées.
     
-- Les solutions héritées avec composants tiers qui dépendent du matériel et des logiciels non pris en charge par Exchange Online.
+- Les solutions héritées avec composants tiers qui dépendent du matériel et des logiciels non pris en charge par Exchange Online.
     
 - Les organisations soumises à des réglementations de gouvernance de données qui exigent que les données soient hébergées sur site.
     
@@ -162,9 +163,9 @@ Le tableau suivant détaille les critères de licence pour chaque option de dép
   
 |**Option de déploiement**|**Critères de licence**|
 |:-----|:-----|
-|Exchange Online (Office 365)  <br/> |Modèle d’abonnement  <br/> |
-|Environnement Exchange hybride  <br/> | Office 365 : modèle d'abonnement <br/>  Environnement local : toutes les licences locales s'appliquent (révision des licences pour Exchange Server en local) <br/>  Licence de serveur hybride* <br/> |
-|Environnement Exchange Server local  <br/> | Système d’exploitation du serveur <br/>  Licence de serveur Exchange 2013 <br/>  Licence d’accès au client Exchange 2013 <br/> |
+|Exchange Online (Office 365)  <br/> |Modèle d’abonnement  <br/> |
+|Environnement Exchange hybride  <br/> | Office 365 : modèle d'abonnement <br/>  Environnement local : toutes les licences locales s'appliquent (révision des licences pour Exchange Server en local) <br/>  Licence de serveur hybride* <br/> |
+|Environnement Exchange Server local  <br/> | Système d’exploitation du serveur <br/>  Licence de serveur Exchange 2013 <br/>  Licence d’accès au client Exchange 2013 <br/> |
 |Environnement Exchange hébergé par un fournisseur  <br/> |Les coûts sont déterminés en fonction de l’accord avec le fournisseur  <br/> |
    
 ### <a name="architecture-tasks"></a>Tâches d’architecture

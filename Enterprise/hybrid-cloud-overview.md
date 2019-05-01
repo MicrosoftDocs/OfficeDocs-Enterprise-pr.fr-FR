@@ -15,11 +15,11 @@ ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: 'Résumé : Comprendre la définition et les éléments du cloud hybride Microsoft.'
 ms.openlocfilehash: c048cfeb840bbb03b1886c7053603cfdc84f37ab
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741430"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491154"
 ---
 # <a name="hybrid-cloud-overview"></a>Présentation du cloud hybride
 
@@ -37,7 +37,7 @@ Le cloud hybride Microsoft représente un ensemble de scénarios professionnels 
     
 - Charge de travail informatique sur un intranet exécutée sur des ordinateurs virtuels Azure.
     
-**Figure 1 : Composants du cloud hybride Microsoft**
+**Figure 1 : Composants du cloud hybride Microsoft**
 
 ![Composants du cloud hybride Microsoft](media/Hybrid-Poster/MS-Hybrid-Cloud.png)
   
@@ -87,7 +87,7 @@ Vous devez tenir compte des éléments suivants lorsque vous planifiez et implé
     
 ## <a name="see-also"></a>Voir aussi
 
-[Cloud hybride Microsoft pour les architectes d’entreprise](microsoft-hybrid-cloud-for-enterprise-architects.md)
+[Cloud hybride Microsoft pour les architectes d'entreprise](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
-[Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Ressources relatives à l’architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 

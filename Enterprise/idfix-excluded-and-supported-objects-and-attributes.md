@@ -1,5 +1,5 @@
 ---
-title: Attributs et objets d’IdFix pris en charge et exclus
+title: Attributs et objets d'IdFix pris en charge et exclus
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -18,27 +18,27 @@ ms.collection:
 ms.assetid: cc453ae5-fa9b-4836-b0ce-c7e824b1e36d
 description: Répertorie les attributs qui sont exclus et pris en charge par l'outil IdFix.
 ms.openlocfilehash: d6b7aac023e9fe96b8308483322e718937ab1355
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085083"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487180"
 ---
-# <a name="idfix-excluded-and-supported-objects-and-attributes"></a>Attributs et objets d’IdFix pris en charge et exclus
-Il existe deux jeux de règles gérés par IdFix ; Multiclients et Dédié/ITAR. À ce stade, les deux jeux de règles excluent les mêmes objets, attributs et valeurs d'attributs de la recherche. Cela pourrait changer dans les prochaines versions.
+# <a name="idfix-excluded-and-supported-objects-and-attributes"></a>Attributs et objets d'IdFix pris en charge et exclus
+Il existe deux ensembles de règles gérées par IdFix; Mutualisée et dédiée/ITAR. Pour l'instant, les deux ensembles de règles excluent les mêmes objets, attributs et valeurs d'attribut de la recherche. Cela peut changer dans les versions ultérieures.
   
-## <a name="multi-tenant-and-dedicated-error-exclusions-used-by-idfix"></a>Exclusions d'erreurs Multiclients et Dédié utilisées par IdFix
+## <a name="multi-tenant-and-dedicated-error-exclusions-used-by-idfix"></a>Exclusions d'erreurs dédiées et mutualisées utilisées par IdFix
 Cette section répertorie les objets, attributs et valeurs que IdFix exclut de sa recherche dans l'annuaire. L'astérisque (\*) est un caractère générique qui peut être remplacé par d'autres caractères.
   
-### <a name="objects-attributes-and-values-excluded-during-an-idfix-search"></a>Objets, attributs et valeurs exclus lors d'une recherche IdFix
+### <a name="objects-attributes-and-values-excluded-during-an-idfix-search"></a>Objets, attributs et valeurs exclus pendant une recherche IdFix
 
 |**Exclusion**|**Exemple**|
 |:-----|:-----|
 |Choix\* |Administrateur |
-|CAS_ {\*  |CAS_{fe35fc98e69e4d08} |
+|CAS_ {\*  |CAS_ {fe35fc98e69e4d08} |
 |DiscoverySearchMailbox\*  |DiscoverySearchMailbox  |
 |FederatedEmail\* |FederatedEmail. *GUID* |
-|Invité\* ||
+|Guest\* ||
 |HTTPConnector\*  |HTTPConnector |
 |krbtgt\* |ms-DS-KrbTgt-Link |
 |IUSR\* |IUSR _ *nomordinateur* |
@@ -51,7 +51,7 @@ Cette section répertorie les objets, attributs et valeurs que IdFix exclut de s
 |distinguishedName contient «\0ACNF:»|«\0ACNF: *GUID* » |
 |L'objet contient l'attribut IsCriticalSystemObject |Voir [attribute isCriticalSystemObject](https://go.microsoft.com/fwlink/p/?LinkId=401169). |
    
-## <a name="multi-tenant-and-dedicated-objects-and-attributes-checked-by-idfix"></a>Attributs et objets Multiclients et Dédié vérifiés par IdFix
+## <a name="multi-tenant-and-dedicated-objects-and-attributes-checked-by-idfix"></a>Objets et attributs dédiés à plusieurs clients et contrôlés par IdFix
 Les attributs vérifiés pour les erreurs par IdFix sont décrits dans la section «Préparation des attributs et des objets d'annuaire» de [Prepare Directory attributes for Synchronization with Office 365 à l'aide de l'outil IdFix](prepare-directory-attributes-for-synch-with-idfix.md).
   
 

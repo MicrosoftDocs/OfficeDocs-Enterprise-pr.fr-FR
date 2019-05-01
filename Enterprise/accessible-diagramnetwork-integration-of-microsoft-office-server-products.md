@@ -1,5 +1,5 @@
 ---
-title: "Diagramme accessible : Intégration réseau de produits Microsoft Office Server"
+title: 'Diagramme accessible : Intégration réseau de produits Microsoft Office Server'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,18 +10,19 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 89f564eb-95c3-4077-bb92-75bf71b51270
-description: "Cet article est une version texte accessible du diagramme intégration réseau des produits Microsoft Office Server."
+description: Cet article est une version texte accessible du diagramme intégration réseau des produits Microsoft Office Server.
 ms.openlocfilehash: 3fa27b99bf0babf00c536057b9d21da784b6d94f
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487769"
 ---
 # <a name="accessible-diagram---network-integration-of-microsoft-office-server-products"></a>Diagramme accessible : Intégration réseau de produits Microsoft Office Server
 
-**Résumé :** Cet article est une version texte accessible du diagramme nommé réseau des produits serveur de Microsoft Office Integration.
+**Résumé:** Cet article est une version texte accessible du diagramme intitulé Network Integration of Microsoft Office Server Products.
   
-Cette affiche donne une illustration générale d’un environnement réseau qui inclut Exchange Server 2013, SharePoint 2013 et Lync Server 2013. Il illustre également les éléments de mise en réseau suivantes qui sont communes à ces produits : accès interne et distant, l’authentification, le trafic client et le trafic de routage par le biais de périphériques partagés. 
+Cette affiche fournit une illustration générale d'un environnement réseau qui comprend Lync Server 2013, SharePoint 2013 et Exchange Server 2013. Elle présente également les éléments de mise en réseau communs à ces produits : accès interne et distant, authentification, trafic client et  routage du trafic par le biais de périphériques partagés. 
   
 ## <a name="high-level-concepts-for-lync-exchange-sharepoint-server-and-office-web-apps"></a>Concepts de haut niveau relatifs à Lync, Exchange, SharePoint Server et Office Web Apps
 
@@ -29,7 +30,7 @@ Cette affiche donne une illustration générale d’un environnement réseau qui
 
 #### <a name="streamlined-network-design"></a>Conception réseau simplifiée
 
-Cette topologie illustre un déploiement du réseau local de SharePoint 2013, Exchange Server 2013 et Lync Server 2013. Il montre également l’utilisation de la service de nuage de Microsoft, Exchange Online Protection, ce qui assure une protection de spam et les logiciels malveillants pour le trafic SMTP Simple Mail Transfer Protocol () à partir d’Internet. 
+Cette topologie illustre un déploiement réseau sur site de SharePoint 2013, Exchange Server 2013 et Lync Server 2013. Elle illustre également l'utilisation du service cloud Microsoft, Exchange Online Protection, qui fournit une protection contre le courrier indésirable et les programmes malveillants pour le trafic entrant SMTP (Simple Mail Transfer Protocol) qui provient d'Internet. 
   
 Cette conception réseau se résume à un ensemble minimal de fonctionnalités réseau. La conception ne prend pas en compte les fonctionnalités de sécurité et d’infrastructure supplémentaires dont certaines organisations peuvent avoir besoin.   
   
@@ -41,9 +42,9 @@ Ce schéma : 
     
 - Décrit en détail le flux du trafic SharePoint, Exchange et Lync à partir du client pour chaque niveau de serveur de plateforme.  
     
-- Identifie le type de connexion d'accès distant ou interne basé sur le client (par exemple, le partenaire ou l'employé) et la méthode d'authentification utilisée.  
+- Identifie le type de connexion d'accès distant ou interne basé sur le client (par exemple, le partenaire ou l'employé) et la méthode d'authentification utilisée. 
     
-- Décompose les plates-formes SharePoint, Exchange et Lync par les rôles de serveur requis, qui identifie le serveur frontal, application, base de données et autres niveaux. 
+- Divise les plateformes SharePoint, Exchange et Lync par rôles serveur requis, en identifiant les niveaux serveur frontal, application, base de données et autres. 
     
 L'architecture utilisée ici pour SharePoint, Lync, et Exchange ne privilégie pas une implémentation de ces plateformes. Elle ne fait que proposer un exemple, car les topologies varient selon les exigences réseau et de sécurité propres à chaque situation.  
   
@@ -53,19 +54,19 @@ Dans cette topologie, le routeur passerelle se trouve à la périphérie du rés
   
 #### <a name="load-balancer-and-reverse-proxy-devices"></a>Périphériques d’équilibrage de charge et de proxy inverse
 
-Vous pouvez utiliser des solutions d’équilibrage de charge matérielle ou logicielle pour rediriger le trafic pour des segments, y compris les serveurs web frontaux de SharePoint et les serveurs d’accès Client (cas) Exchange. Dans certains cas, il est souhaitable d’utiliser un équilibreur de charge matérielle de couche 7 pour les besoins de persistance, comme il peut être plus performant dans la demande, telles que les cookies et en-têtes à l’aide des informations. Toutefois, les facteurs comme le coût et l’utilisation accrue et la charge de travail à partir d’une telle solution n’est peut-être pas souhaitable pour vos besoins spécifiques. Tenez compte des points suivants pour l’équilibrage de charge sur SharePoint, Exchange et Lync : 
+Vous pouvez utiliser des solutions d'équilibrage de charge matérielles ou logicielles afin de rediriger le trafic pour des segments comprenant les serveurs web frontaux SharePoint et les serveurs d'accès Client (CAS) Exchange. Dans certains cas, il est optimal d'utiliser un équilibreur de charge matériel de couche 7 pour les besoins de persistance, car il est plus efficace en utilisant les informations de la demande, telles que les cookies ou les en-têtes. Toutefois, certains facteurs (coût, augmentation de l’utilisation et de la charge de travail, par exemple) peuvent être un frein à l’adoption de cette solution. Tenez compte des points suivants pour l’équilibrage de charge sur SharePoint, Exchange et Lync : 
   
-- SharePoint - pour SharePoint 2013, vous n’avez pas besoin à activer l’affinité pour les serveurs web frontaux. Normalement, ce serait utilisé pour la création de sessions persistantes et éviter plusieurs demandes d’authentification des clients sur chaque serveur web frontal. Le nouveau service de Cache distribué dans SharePoint 2013 stocke et distribue les jetons d’ouverture de session sur les serveurs web de la batterie de serveurs SharePoint. 
+- SharePoint-pour SharePoint 2013, il n'est pas nécessaire d'activer l'affinité pour vos serveurs Web frontaux. Normalement, cette fonctionnalité permet de créer des sessions persistantes et d’empêcher les clients d’envoyer plusieurs demandes d'authentification à chaque serveur web frontal. Le nouveau service de cache distribué dans SharePoint 2013 stocke et distribue les jetons d'ouverture de session sur les serveurs Web de la batterie de serveurs SharePoint. 
     
-- Exchange - dans Exchange 2013, le rôle des autorités de certification est conçu pour utiliser l’équilibrage de charge de couche 4, en distribuant les requêtes au niveau de la couche de transport. Cela peut sensiblement diminuer l’utilisation de l’équilibrage de la charge et la charge de travail. 
+- Exchange-dans Exchange 2013, le rôle CAS est conçu pour utiliser l'équilibrage de charge de couche 4, en distribuant les demandes au niveau de la couche de transport. Cela permet de réduire considérablement l'utilisation de l’équilibreur de charge ainsi que la charge de travail engendrée. 
     
-- Lync - équilibrage de la charge de système de nom de domaine (DNS) est recommandée pour le trafic du protocole SIP (Session Initiation) pour les pools de Lync. (HUMIDIFICATION à HLB) d’équilibrage de charge est nécessaire pour le trafic de Lync Web (protocole HTTPS). 
+- Lync-l'équilibrage de charge DNS (Domain Name System) est recommandé pour le trafic SIP (Session Initiation Protocol) pour les pools Lync. L’équilibrage de charge matériel (HLB) est requis pour le trafic web Lync (HTTPS). 
     
 ### <a name="remote-access-options"></a>Options d'accès distant
 
 Plusieurs options permettent de publier des ressources intranet pour les partenaires sur Internet ou de fournir un accès distant sécurisé aux employés distants ou itinérants. Il s’agit notamment des proxys inverses, de DirectAccess et des passerelles VPN tierces. Les solutions d'accès à distance décrites plus loin dans cette section sont adaptées à SharePoint, Lync et Exchange, ou à toute combinaison de ces serveurs dans un déploiement local. Toutefois, certaines options distantes peuvent ne pas fonctionner avec une solution particulière.   
   
-Reverse Proxy - proxy inverse prend en charge le cryptage du trafic, telles que Secure Sockets Layer (SSL) et il que vous pouvez publier des applications intranet et ressources web authentifié utilisateurs et partenaires sur Internet. Par exemple, Microsoft Forefront Unified Access Gateway (UAG). De nombreux équilibreurs de charge matériels prennent également en charge la fonctionnalité de proxy inversé. Toutefois, il existe des scénarios toujours valides pour l’utilisation d’une solution autonome en fonction de vos besoins et exigences, telles que l’isolation du trafic cloisonnement de la sécurité et l’optimisation des performances. 
+Proxy inverse: un proxy inverse prend en charge le chiffrement du trafic, tel que SSL (Secure Sockets Layer), et vous pouvez publier des applications intranet et des ressources Web pour les utilisateurs et les partenaires authentifiés sur Internet. Microsoft Forefront Unified Access Gateway (UAG) en est un exemple. La plupart des équilibreurs de charge matériels prennent également en charge les fonctionnalités de proxy inverse. Toutefois, il est légitime d’utiliser une solution autonome conforme aux besoins et exigences particuliers, comme l'isolement du trafic, le cloisonnement de sécurité et l’optimisation des performances. 
   
 Atouts et avantages du proxy inverse :  
   
@@ -75,9 +76,9 @@ Atouts et avantages du proxy inverse : 
     
 - Concernant Exchange et SharePoint, des solutions, telles que Forefront UAG, peuvent mettre fin aux connexions SSL et diminuer la charge du serveur de ressources intranet tout en offrant un point unique de gestion des certificats.  
     
-- Pour Lync, le trafic Web (HTTPS) passe par le proxy inverse (TCP 443) pour la communication client. Les serveurs proxy de proxy inverse l’HTTPS connexion à Lync Web Services, les autorités de certification Exchange et Office Web Apps. Lync Server 2013 ne prend pas en charge les UAG. 
+- Concernant Lync, le trafic web (HTTPS) passe par le proxy inverse (TCP 443) pour la communication client. Le proxy inverse établit la connexion HTTPS avec les services web Lync, Exchange CAS et Office Web Apps. Lync Server 2013 ne prend pas en charge UAG. 
     
-DirectAccess - il s’agit d’une technologie d’accès à distance qui s’appuie sur la sécurité du protocole Internet (IPsec) pour l’authentification et le cryptage du trafic entre le client DirectAccess et le serveur. DirectAccess fournit un accès simultané aux ressources intranet et Internet pour les employés itinérants et distants sans avoir à établir une connexion. 
+DirectAccess: technologie d'accès à distance qui repose sur la sécurité du protocole Internet (IPsec) pour l'authentification et le chiffrement du trafic entre le client et le serveur DirectAccess. DirectAccess fournit aux collaborateurs itinérants ou distants de l’entreprise un accès simultané aux ressources Internet et aux ressources intranet sans obliger ceux-ci à établir une connexion. 
   
 Points à prendre en compte lors de l’utilisation de DirectAccess :  
   
@@ -85,9 +86,9 @@ Points à prendre en compte lors de l’utilisation de DirectAccess : 
     
 - DirectAccess pour Windows Server 2012 et Windows 8 n’a pas besoin de déploiement PKI (infrastructure de clé publique) pour l’authentification du serveur et du client.  
     
-- Nous déconseillons l’utilisation de DirectAccess avec Lync Server 2013 en raison de problèmes de latence audio et vidéo liés à IPsec et le décryptage. 
+- Nous vous recommandons de ne pas utiliser DirectAccess avec Lync Server 2013 en raison des problèmes de latence audio et vidéo associés au chiffrement et au déchiffrement IPsec. 
     
-    Passerelle VPN - passerelles VPN standard fournissent une connexion d’accès distant dans lequel un ordinateur client d’accès distant est logiquement projeté sur l’intranet via une connexion par tunnel et initiée par l’utilisateur. Vous pouvez utiliser unifiée d’accès à distance dans Windows Server 2012 ou plusieurs solutions de tiers pour fournir un accès sécurisé à l’intranet pour les employés itinérants ou distants. VPN n’est pas recommandée pour Lync. Le trafic de Lync distant doit utiliser les serveurs Edge et tunneling fractionné. 
+    Passerelle VPN: les passerelles VPN standard fournissent une connexion d'accès à distance dans laquelle un ordinateur client d'accès distant est logiquement projeté sur l'intranet via une connexion par tunnel et initiée par l'utilisateur. Vous pouvez utiliser l’accès distant unifié avec Windows Server 2012 ou un certain nombre de solutions tierces afin de fournir aux employés distants ou itinérants un accès sécurisé à l'intranet. Il est déconseillé d’utiliser une solution VPN avec Lync. Le trafic Lync distant doit utiliser les serveurs Edge et la tunnelisation fractionnée. 
     
 ### <a name="domain-name-system-dns-considerations"></a>Considérations relatives au système DNS (Domain Name System)
 
@@ -115,7 +116,7 @@ Ce diagramme fournit un exemple de topologie réseau illustrant le trafic entran
     
 - Description de la façon dont le trafic se déplace dans les composants vers les niveaux serveur SharePoint, Exchange, Lync et Office Web Apps.  
     
-#### <a name="description-of-components-shown-in-the-diagram"></a>Description des composants figurant dans le diagramme 
+#### <a name="description-of-components-shown-in-the-diagram"></a>Description des composants figurant dans le diagramme
 
 #### <a name="user-types"></a>Types d'utilisateur
 
@@ -151,7 +152,7 @@ Vous pouvez utiliser des solutions d'équilibrage de charge matérielles ou logi
   
 #### <a name="servers"></a>Serveurs
 
-Il existe quatre serveurs : Lync, SharePoint, Exchange et serveur de Office Web Apps. Chaque serveur peut avoir trois niveaux : frontal, couche d’accès au client, une couche application et une couche de stockage/base de données.
+Il existe quatre serveurs: Lync, SharePoint, Exchange et Office Web Apps Server. Chaque serveur peut posséder trois niveaux : un niveau accès client frontal, un niveau application et un niveau stockage/base de données.
   
 #### <a name="front-end-client-access-tier"></a>Niveau accès client frontal
 
@@ -183,7 +184,7 @@ Ce niveau comporte des éléments résidant sur les serveurs Exchange, SharePoin
     
 - Serveur de boîtes aux lettres Exchange. Le diagramme représente deux serveurs de boîtes aux lettres Exchange.  
     
-Pour plus d’informations sur les composants installés sur chacun des rôles de serveur SharePoint, consultez [Les Topologies rationalisée pour SharePoint 2013](https://aka.ms/Ma5cgk). 
+Pour plus d'informations sur les composants installés sur chacun des rôles SharePoint Server, reportez-vous à la rubrique [topologies rationalisées pour sharepoint 2013](https://aka.ms/Ma5cgk). 
   
 #### <a name="description-of-how-traffic-moves-through-the-components-to-the-different-server-tiers"></a>Description du parcours du trafic dans les composants des différents niveaux serveur
 
@@ -201,7 +202,7 @@ Il existe trois types de clients externes aux services cloud et réseau, notamme
     
 Le processus d'authentification et de routage est décrit individuellement pour chaque type d'utilisateur externe.  
   
-#### <a name="partner-companies-business-to-business-httpspartnerwebcontosocom"></a>Sociétés partenaires (B2B) (https://partnerweb.contoso.com)
+#### <a name="partner-companies-business-to-business-httpspartnerwebcontosocom"></a>Sociétés partenaires (Business-to-Business) (https://partnerweb.contoso.com)
 
 - Lync : approbation de fédération avec d'autres organisations, Skype et connectivité PIC (Public IM Connectivity) avec AOL. Le trafic de fédération Lync passe par le routeur passerelle pour atteindre le serveur Edge de Lync, l'adresse IP virtuelle Lync (équilibreur de charge/serveur proxy inverse), puis le serveur Lync.  
     
@@ -211,7 +212,7 @@ Le processus d'authentification et de routage est décrit individuellement pour 
     
 - Le trafic SMTP passe par le routeur passerelle pour atteindre l’adresse IP virtuelle Exchange (équilibreur de charge/serveur proxy inverse), puis le serveur Exchange.  
     
-#### <a name="individual-partners-sharepoint-and-anonymous-lync-httpspartnerwebcontosocom-and-httpsmeetcontosocom"></a>Partenaires individuels (SharePoint) et anonymes (Lync) (https://partnerweb.contoso.com et https://meet.contoso.com)
+#### <a name="individual-partners-sharepoint-and-anonymous-lync-httpspartnerwebcontosocom-and-httpsmeetcontosocom"></a>Partenaires individuels (SharePoint) et anonymes (Lync)https://partnerweb.contoso.com (ethttps://meet.contoso.com)
 
 - Lync : les utilisateurs anonymes peuvent participer aux réunions Lync seulement si elles sont organisées par les employés. Le trafic de fédération Lync passe par le routeur passerelle pour atteindre le serveur Edge de Lync, à l'adresse IP virtuelle Lync (équilibreur de charge/serveur proxy inverse), puis le serveur Lync.   
     
@@ -225,19 +226,19 @@ Le processus d'authentification et de routage est décrit individuellement pour 
 
 1. https://intranet.contoso.com 
     
-2. https://Teams.contoso.com 
+2. https://teams.contoso.com 
     
-3. https://My.contoso.com
+3. https://my.contoso.com
     
 4. https://partnerweb.contoso.com 
     
-5. https://Mail.contoso.com * 
+5. https://mail.contoso.com* 
     
-6. https://Dial.contoso.com *
+6. https://dial.contoso.com*
     
-7. https://Meet.contoso.com *
+7. https://meet.contoso.com*
     
-* L’URL de Exchange contient les répertoires virtuels suivants : service de découverte automatique, ecp, EWS, Microsoft-Server-ActiveSync, OAB, owa, PowerShell 
+* L'URL Exchange dispose des répertoires virtuels suivants: Autodiscover, ECP, EWS, Microsoft-Server-ActiveSync, OAB, OWA, PowerShell 
   
 - Lync : authentification TLS-DSK ou NTLM. Le trafic du client Lync passe par le routeur passerelle pour atteindre le serveur Edge de Lync, à l'adresse IP virtuelle Lync (équilibreur de charge/serveur proxy inverse), puis le serveur Lync.  
     
@@ -253,19 +254,19 @@ Le processus d'authentification et de routage est décrit individuellement pour 
 
 > https://intranet.contoso.com 
     
-> https://Teams.contoso.com 
+> https://teams.contoso.com 
     
-> https://My.contoso.com
+> https://my.contoso.com
     
 > https://partnerweb.contoso.com
     
-> https://Mail.contoso.com * 
+> https://mail.contoso.com* 
     
-> https://Dial.contoso.com 
+> https://dial.contoso.com 
     
-> https://Meet.contoso.com
+> https://meet.contoso.com
     
-> https://Admin.contoso.com
+> https://admin.contoso.com
     
 - Lync : authentification Kerberos, TLS-DSK ou NTLM. Le trafic du client Lync atteint l'adresse IP virtuelle Lync (serveur d’équilibrage de charge/proxy inverse), puis le serveur Lync.  
     
@@ -277,7 +278,7 @@ Le processus d'authentification et de routage est décrit individuellement pour 
     
 #### <a name="cloud-based-email-traffic"></a>Trafic de messagerie sur le cloud
 
-Le composant de nuage pour le trafic de messagerie SMTP se compose d’hôtes de messagerie Internet ou de Protection en ligne d’Exchange.
+Le composant cloud pour le trafic de messagerie SMTP est constitué d’hôtes de messagerie Internet ou d’Exchange Online Protection.
   
 Ces composants acheminent le trafic de messagerie sur le réseau à l’aide du protocole SMTP. Le trafic passe par le routeur passerelle pour atteindre l’adresse IP virtuelle Exchange (équilibreur de charge/serveur proxy inverse), puis le serveur Exchange.  
   
@@ -285,7 +286,7 @@ Ces composants acheminent le trafic de messagerie sur le réseau à l’aide du 
 
 La zone de légende représente graphiquement les différents types de trafic à l’aide de lignes de couleur comme suit :  
   
-- Vert ligne : Lync SIP le trafic 
+- Ligne verte: trafic SIP Lync 
     
 - Ligne bleue : Trafic web Lync  
     
@@ -317,12 +318,12 @@ SharePoint peut utiliser le port TCP 443 (SSL) pour la communication chiffrée e
   
 #### <a name="exchange-client-traffic-and-exchange-mail-server-traffic"></a>Trafic du client Exchange et trafic du serveur de messagerie Exchange
 
-Exchange utilise le port TCP 25 (SMTP) pour les communications de serveur à serveur. La plupart du trafic client (OWA, ActiveSync, Autodiscover, Outlook Anywhere) est traité sur le port 443 (HTTPS). Si vous avez des clients POP ou IMAP, les ports 110 (POP3), 995 (POP3 crypté), 143 (IMAP4), 993 (IMAP4 crypté) et 587 (SMTP) sont également utilisés pour prendre en charge ces clients. 
+Exchange utilise le port TCP 25 (SMTP) pour les communications de serveur à serveur. Le trafic client (OWA, ActiveSync, découverte automatique, Outlook Anywhere) est traité majoritairement sur le port 443 (HTTPS). Si vous disposez de clients POP ou IMAP, les ports 110 (POP3), 995 (POP3 chiffré), 143 (IMAP4), 993 (IMAP4 chiffré) et 587 (SMTP) sont également utilisés pour la prise en charge de ces clients. 
   
 #### <a name="more-on-lync-network-traffic"></a>En savoir plus sur le trafic réseau Lync
 
-Découvrez comment Lync Server peut aider votre entreprise à fournir une messagerie instantanée, les conférences web, partage d’application et la communication vocale. Pour plus d’informations, reportez-vous à la section [Comptabilisation de charges de travail de Microsoft Lync Server 2013 protocole](https://aka.ms/G5jzjo). 
+Découvrez comment Lync Server peut aider votre organisation à fournir des fonctionnalités, telles que la messagerie instantanée, les conférences web, le partage d'applications et les communications vocales. Pour plus d'informations, reportez-vous à l'affiche relative aux [charges de travail de protocole Microsoft Lync Server 2013](https://aka.ms/G5jzjo). 
   
-Le code QR figurant dans l’affiche permet d’accéder à ces informations.  
+L’affiche inclut également un code QR pour accéder à ces informations. 
   
 

@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Décrit l'utilisation du réseau de distribution de contenu (CDN) d'Office 365 pour accélérer la remise de vos ressources SharePoint Online à tous vos utilisateurs, où qu'ils soient ou dans lesquels ils accèdent à votre contenu.
 ms.openlocfilehash: ceb66b3e17baf25a292b4903c569b931f9448f71
-ms.sourcegitcommit: 100ae697304427dab5ad494a06323656b498c57e
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "31396922"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33492209"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Utilisation du réseau de distribution de contenu Office 365 avec SharePoint Online
 
@@ -613,7 +613,7 @@ Pour les ressources de CDN public, le format de l'URL se présente comme suit:
 https://publiccdn.sharepointonline.com/<TenantHostName>/sites/site/library/asset.png
 ```
 
-Remplacez **TenantHostName** par le nom de votre client. Exemple :
+Remplacez **TenantHostName** par le nom de votre client. Exemple :
 
 ``` html
 https://publiccdn.sharepointonline.com/contoso.sharepoint.com/sites/site/library/asset.png

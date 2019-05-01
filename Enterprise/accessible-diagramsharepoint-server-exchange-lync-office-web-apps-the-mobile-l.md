@@ -9,12 +9,13 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 2ab00633-0f6e-4e4f-b706-2342eb77e539
-description: "Cet article est une version texte accessible du diagramme intitulé Options de plateforme Microsoft Exchange 2013, qui est disponible dans la rubrique Diagrammes techniques."
+description: Cet article est une version texte accessible du diagramme intitulé Options de plateforme Microsoft Exchange 2013, qui est disponible dans la rubrique Diagrammes techniques.
 ms.openlocfilehash: c54e223645cebfa56347a273e61d70afaf33ce05
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487680"
 ---
 # <a name="accessible-diagram---sharepoint-server-exchange-lync-office-web-apps---the-mobile-landscape"></a>Diagramme accessible - SharePoint Server, Exchange, Lync, Office Web Apps : panorama des solutions mobiles
 
@@ -38,7 +39,7 @@ La liste suivante d'applications et d'expériences basées sur un navigateur est
   
 Cette expérience inclut :
   
-- Une vue de navigateur HTML5 activé par défaut sur les modèles de site sélectionnés (Site d’équipe, Site vide, Espace de travail de document, Centre de documents et Site de projet).
+- Une vue de navigateur HTML5 activé par défaut sur les modèles de site sélectionnés (Site d'équipe, Site vide, Espace de travail de document, Centre de documents et Site de projet).
     
 - Fonctionnalités améliorées, telles que le bouton Menu, la fenêtre de navigation, des liens de type Appuyer pour ouvrir et la pagination.
     
@@ -48,21 +49,21 @@ Cette expérience inclut :
     
  **Application SharePoint Newsfeed**
   
-Cette application offre :
+Cette application offre :
   
-- Une nouvelle expérience sociale disponible sur vos appareils mobiles par le biais d’applications téléchargeables.
+- Une nouvelle expérience sociale disponible sur vos appareils mobiles par le biais d'applications téléchargeables.
     
 - La possibilité de publier des flux d'actualités sur tous vos sites web SharePoint, de suivre des personnes, @mentions, documents, #hashtags et plus encore.
     
-- Disponibilité pour SharePoint Server 2013 (Windows 8, iOS) ou SharePoint Online (Windows Phone, Windows 8 et Apple iOS).
+- Disponibilité pour SharePoint Server 2013 (Windows 8, iOS) ou SharePoint Online (Windows Phone, Windows 8 et Apple iOS).
     
  **Canaux des appareils (basés sur un navigateur)**
   
 Cette expérience inclut :
   
-- Grâce à la fonctionnalité des canaux des appareils dans SharePoint 2013, il est possible d’afficher un site de publication unique de différentes façons à l’aide de différents modèles qui ciblent différents appareils.
+- Grâce à la fonctionnalité des canaux des appareils dans SharePoint 2013, il est possible d'afficher un site de publication unique de différentes façons à l'aide de différents modèles qui ciblent différents appareils.
     
-- Les canaux des appareils sont disponibles uniquement pour les sites de publication SharePoint 2013.
+- Les canaux des appareils sont disponibles uniquement pour les sites de publication SharePoint 2013.
     
 - Un maximum de dix canaux d’appareils, y compris le canal configuré par défaut sur un site spécifique pour une installation locale et un total de deux canaux d’appareils lors de l’utilisation de SharePoint Online.
     
@@ -75,23 +76,23 @@ La liste d'options de messagerie de l'appareil est disponible pour Exchange 2013
   
  **Outlook Mobile sur Windows Phone** Cette option est disponible sur les appareils Windows Phone 7.5 et Windows Phone 8, et le paramétrage par défaut consiste à ajouter le compte Exchange aux paramètres de messagerie.
   
-Avec cette option, vous pouvez :
+Avec cette option, vous pouvez :
   
 - Trier et analyser les messages électroniques, et y répondre.
     
-- Choisir d’afficher plusieurs comptes à partir de plusieurs fournisseurs de messagerie différents.
+- Choisir d'afficher plusieurs comptes à partir de plusieurs fournisseurs de messagerie différents.
     
 - Regrouper le courrier par conversation et marquer des messages électroniques.
     
  **Outlook Web App/OWA (basé sur un navigateur)**
   
-Description de cette option :
+Description de cette option :
   
 - Vous pouvez trier et analyser les messages électroniques, et y répondre.
     
 - Disponible sur Windows Phone, iPhone et iPad.
     
-- Nécessite un abonnement à Office 365 avec Exchange Online
+- Nécessite un abonnement à Office 365 avec Exchange Online
     
 - En remplacement de l'application, OWA pour iPhone et OWA pour iPad apportent une expérience d'Outlook Web Apps native aux appareils iOS. Elles peuvent être installées à partir de l'App Store d'Apple et nécessitent un abonnement à Office 365.
     
@@ -99,9 +100,9 @@ Description de cette option :
 
 Cette option offre les fonctionnalités suivantes :
   
-- Lync 2013 est une application de communication qui offre des fonctionnalités de présence, de messagerie instantanée, de réunion Lync, d’appels vocaux et vidéo sur Internet ou connexion cellulaire améliorées.
+- Lync 2013 est une application de communication qui offre des fonctionnalités de présence, de messagerie instantanée, de réunion Lync, d'appels vocaux et vidéo sur Internet ou connexion cellulaire améliorées.
     
-- La fonctionnalité de messagerie instantanée comprend la participation à des sessions uniques ou à plusieurs, la navigation entre plusieurs sessions de messagerie instantanée et l’envoi de conversations en tant que message électronique.
+- La fonctionnalité de messagerie instantanée comprend la participation à des sessions uniques ou à plusieurs, la navigation entre plusieurs sessions de messagerie instantanée et l'envoi de conversations en tant que message électronique.
     
 - Disponible sur Windows Phone, Windows 8, iPhone, iPad et Android.
     
@@ -109,7 +110,7 @@ Cette option offre les fonctionnalités suivantes :
 
 OneDrive Entreprise est le stockage dans le cloud que votre organisation peut utiliser pour les employés dans le cadre de SharePoint 2013 local et/ou les déploiements Office 365 SharePoint Online. Les applications mobiles sont disponibles pour Windows Phone, Windows 8 et les appareils iOS, et Android grâce à des options telles que les applications Marketplace et Office Mobile. L'utilisation de OneDrive Entreprise est représentée dans un graphique d'accompagnement pour téléphone/tablette.
   
-Avec cette option, vous pouvez :
+Avec cette option, vous pouvez :
   
 - Afficher les documents dans votre dossier OneDrive Entreprise.
     
@@ -127,7 +128,7 @@ Une illustration d'accompagnement décrit Office Mobile sur un appareil Windows 
     
 - Ouvrez ou recherchez des documents existants, ou créez-en un. Tous les documents enregistrés récemment sur votre téléphone (à partir d'un message électronique, par exemple) apparaissent ici également.
     
-- Affichez, ouvrez, recherchez et modifiez vos notes pour effectuer le suivi du travail réalisé à la maison, au travail ou à l’école lors de vos déplacements.
+- Affichez, ouvrez, recherchez et modifiez vos notes pour effectuer le suivi du travail réalisé à la maison, au travail ou à l'école lors de vos déplacements.
     
 - Office Mobile est disponible sur Windows Phone (intégré), iPhone et Android. Pour iPhone et Android, vous devez disposer d'un abonnement à Office 365 pour utiliser cette application.
     
@@ -137,11 +138,11 @@ En plus de l'utilisation d'Office Mobile, les utilisateurs peuvent afficher des 
   
  **Affichage haute fidélité**. Vous pouvez afficher et partager vos documents Office à partir du navigateur de l'appareil et être certain que vos documents auront le même aspect que lorsqu'ils ont été créés. Une illustration d'accompagnement décrit l'expérience Office Web Apps sur une tablette.
   
-- Avec Word Web App, vous pouvez afficher des graphiques, des images et des mises en page avec une excellente fidélité. Désormais, la visualisation et l’ajout de commentaires sont pris en charge.
+- Avec Word Web App, vous pouvez afficher des graphiques, des images et des mises en page avec une excellente fidélité. Désormais, la visualisation et l'ajout de commentaires sont pris en charge.
     
 - Avec PowerPoint Web App, vous pouvez afficher vos présentations comme vous le feriez sur votre ordinateur de bureau, avec des diapositives à haute résolution, des transitions complètes et des commentaires visibles. Vous pouvez également lire des fichiers audio et vidéo à partir de votre tablette ou de votre téléphone.
     
-- Avec Excel Web App, vous pouvez modifier et visualiser vos données pour une compréhension plus profonde avec des graphiques haute fidélité, y compris en 3D, une prise en charge améliorée de la table de requête et de la validation des données, la fonctionnalité de segment et l’interactivité avec le graphique croisé dynamique.
+- Avec Excel Web App, vous pouvez modifier et visualiser vos données pour une compréhension plus profonde avec des graphiques haute fidélité, y compris en 3D, une prise en charge améliorée de la table de requête et de la validation des données, la fonctionnalité de segment et l'interactivité avec le graphique croisé dynamique.
     
  **Modification dans le navigateur (Windows 8/iPad)**. Vous pouvez apporter des modifications à l'aide des outils essentiels et familiers avec Office Web Apps basé sur un navigateur. Une illustration d'accompagnement décrit l'expérience Office Web Apps sur une tablette.
   
@@ -155,27 +156,27 @@ En plus de l'utilisation d'Office Mobile, les utilisateurs peuvent afficher des 
 
 Microsoft a de nouvelles offres pour la gestion des appareils sur plusieurs marques d'appareils. Windows Intune est une plateforme de gestion informatique pour les appareils mobiles. Elle peut être utilisée seule pour gérer vos appareils, ou couplée avec System Center 2012 R2 Configuration Manager et administrée au sein de cette console. Quelques avantages de l'utilisation conjointe comprennent :
   
-- Gestion et application des stratégies sur plusieurs appareils, y compris Windows RT, Windows 8.1, Windows Phone 8, iOS et Android
+- Gestion et application des stratégies sur plusieurs appareils, y compris Windows RT, Windows 8.1, Windows Phone 8, iOS et Android
     
-- Mise à l’échelle de 100 000 appareils au maximum dans votre organisation · Enregistrement direct d’appareil
+- Mise à l'échelle de 100 000 appareils au maximum dans votre organisation · Enregistrement direct d'appareil
     
 - Ciblage utilisateur des applications
     
-- Exécution de l’inventaire des appareils
+- Exécution de l'inventaire des appareils
     
-- Réinitialisation et isolement de l’appareil à distance
+- Réinitialisation et isolement de l'appareil à distance
     
 - Gestion depuis une console Configuration Manager connue
     
-Un diagramme d’accompagnement illustre la façon d’utiliser System Center 2012 R2 Configuration Manager et Windows Intune pour la gestion de l'appareil.
+Un diagramme d'accompagnement illustre la façon d'utiliser System Center 2012 R2 Configuration Manager et Windows Intune pour la gestion de l'appareil.
   
  **Considérations relatives à l'utilisation de System Center 2012 R2 Configuration Manager et de Windows Intune :**
   
-- Lors de l’utilisation de System Center 2012 R2 Configuration Manager et de Windows Intune, vous pouvez gérer et administrer tous les appareils de votre organisation dans une seule console.
+- Lors de l'utilisation de System Center 2012 R2 Configuration Manager et de Windows Intune, vous pouvez gérer et administrer tous les appareils de votre organisation dans une seule console.
     
 - Pour connecter Configuration Manager à Windows Intune, vous devez posséder un abonnement Windows Intune et le rôle de serveur de site Connecteur Windows Intune doit être déployé sur un serveur dans votre environnement Configuration Manager.
     
-- System Center 2012 R2 Configuration Manager assure la gestion et la distribution de logiciels pour vos ordinateurs locaux.
+- System Center 2012 R2 Configuration Manager assure la gestion et la distribution de logiciels pour vos ordinateurs locaux.
     
 - Les appareils modernes gérés recevront l'application des stratégies et la distribution des logiciels à partir de Windows Intune. Les types d'appareils pris en charge comprennent : Windows RT, Windows 8.1, Windows Phone 8, iOS, Android.
     
@@ -211,7 +212,7 @@ Pour un flux de travail général, un appareil mobile externe envoie une demande
   
 Sur le serveur frontal, le service de découverte automatique récupère les URL de service web pour le pool personnel de l'utilisateur et renvoie ces informations à l'appareil mobile par l'intermédiaire du serveur proxy inverse. Le service de découverte automatique permet aux appareils mobiles de localiser les services web Lync Server sans que les utilisateurs doivent saisir manuellement les URL.
   
-Si un appareil mobile se connecte à l’intérieur du pare-feu, une commande HTTPS GET est envoyée directement au pool frontal Lync comme LyncDiscoverInternal.com. La demande est reçue sur le port 443, le même port que le service de détection automatique utilise pour communiquer avec l’appareil mobile.
+Si un appareil mobile se connecte dans le pare-feu, une commande HTTPS GET est envoyée directement au pool frontal Lync au format LyncDiscoverInternal.com. La demande est reçue sur le port 443, le même port que le service de découverte automatique utilise pour communiquer avec l'appareil mobile.
   
 Vous devez configurer deux enregistrements DNS pour prendre en charge la mobilité : l'un pour LyncDiscover.contoso.com et l'autre pour LyncDiscoverInternal.com. Le FQDN externe doit être accessible uniquement depuis l'extérieur du pare-feu ; le FQDN interne ne doit être accessible qu'à partir de l'intérieur du pare-feu.
   

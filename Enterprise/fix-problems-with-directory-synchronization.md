@@ -1,5 +1,5 @@
 ---
-title: Résoudre les problèmes de synchronisation d’annuaires pour Office 365
+title: Résolution des problèmes de synchronisation d’annuaires pour Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -18,13 +18,13 @@ search.appverid:
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Décrit les causes courantes des problèmes liés à la synchronisation d'annuaires dans Office 365 et fournit quelques méthodes pour les aider à les résoudre.
 ms.openlocfilehash: a5c4b58dd856158b00605f39d8a66b48488086b2
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001837"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487458"
 ---
-# <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Résoudre les problèmes de synchronisation d’annuaires pour Office 365
+# <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Résolution des problèmes de synchronisation d’annuaires pour Office 365
 
 Avec la synchronisation d'annuaires, vous pouvez continuer à gérer les utilisateurs et les groupes locaux et synchroniser les ajouts, les suppressions et les modifications dans le Cloud. Toutefois, le programme d'installation est un peu compliqué et il peut parfois être difficile d'identifier la source des problèmes. Nous disposons de ressources pour vous aider à identifier les problèmes potentiels et à les résoudre.
   

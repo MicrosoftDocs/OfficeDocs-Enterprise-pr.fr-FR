@@ -1,5 +1,5 @@
 ---
-title: Outils de gestion des comptes Office 365
+title: Outils permettant de gérer les comptes Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -20,13 +20,13 @@ search.appverid:
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 'Découvrez les outils à utiliser pour gérer vos utilisateurs Office 365, ainsi que la manière dont vous pouvez les utiliser en fonction de la gestion des identités des utilisateurs. '
 ms.openlocfilehash: fb98c7103aaadb16ac6f7d459a2595022110bb94
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001767"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487070"
 ---
-# <a name="tools-to-manage-office-365-accounts"></a>Outils de gestion des comptes Office 365
+# <a name="tools-to-manage-office-365-accounts"></a>Outils permettant de gérer les comptes Office 365
 
 Vous pouvez gérer les utilisateurs d'Office 365 de différentes manières, en fonction de votre configuration. Vous pouvez gérer les utilisateurs dans le [Centre d'administration 365 de Microsoft](https://admin.microsoft.com), Windows PowerShell, votre annuaire local ou dans le portail d'administration Azure Active Directory. Dès que vous achetez Office 365, le centre d'administration et Windows PowerShell peuvent être utilisés pour gérer les comptes. Lors de la gestion des identités de Cloud, toutes les personnes de votre organisation ont un ID d'utilisateur et un mot de passe distincts pour Office 365. Si vous souhaitez effectuer une intégration avec votre infrastructure locale et que des comptes d'utilisateurs sont synchronisés avec Office 365, vous pouvez utiliser Azure Active Directory Connect pour assurer la synchronisation des identités et éventuellement une synchronisation de mot de passe, ou complète fonctionnalité d'authentification unique.
   

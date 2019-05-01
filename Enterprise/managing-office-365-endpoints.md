@@ -16,11 +16,11 @@ search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Certains réseaux d'entreprise restreignent l'accès aux emplacements Internet génériques ou incluent une déformation ou un traitement substantiel du trafic réseau. Pour s'assurer que les ordinateurs sur des réseaux comme ceux-ci peuvent accéder à Office 365, les administrateurs réseau et proxy doivent gérer la liste des noms de domaine complets, des URL et des adresses IP qui composent la liste des points de terminaison Office 365. Ceux-ci doivent être ajoutés à l'itinéraire direct, à la déviation du proxy et/ou aux règles de pare-feu et/ou aux fichiers PAC pour s'assurer que les demandes réseau sont en mesure d'atteindre Office 365.
 ms.openlocfilehash: a094e647a0b228527e8702f24e57aa4276589f70
-ms.sourcegitcommit: 19f0deee26b6cf2eef316c742054572bb9d98b84
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30458354"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487084"
 ---
 # <a name="managing-office-365-endpoints"></a>Gestion des points de terminaison Office 365
 
@@ -207,7 +207,7 @@ La restriction de l'accès à nos services grand public doit être réalisée à
   
 N'oubliez pas que le blocage de l'accès aux services de grand public de Microsoft n'empêchera pas la possibilité pour un utilisateur de votre réseau d'exfiltrer les informations à l'aide d'un client Office 365 ou d'un autre service.
   
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Service web d’URL et d’adresses IP Office 365](office-365-ip-web-service.md)
 
@@ -221,6 +221,6 @@ N'oubliez pas que le blocage de l'accès aux services de grand public de Microso
   
 [URL et plages d’adresses IP Office 365](urls-and-ip-address-ranges.md)
   
-[Gestion de la connectivité ExpressRoute pour Office 365](managing-expressroute-for-connectivity.md)
+[Gestion d’ExpressRoute pour la connectivité d’Office 365](managing-expressroute-for-connectivity.md)
   
 [Principes de connectivité réseau Office 365](office-365-network-connectivity-principles.md)

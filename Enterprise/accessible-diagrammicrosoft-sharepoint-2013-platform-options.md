@@ -1,5 +1,5 @@
 ---
-title: "Diagramme accessible : Options de plateforme Microsoft SharePoint 2013"
+title: 'Diagramme accessible : Options de plateforme Microsoft SharePoint 2013'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,24 +10,25 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b88200bf-ced0-4ae6-bbe5-5517377d1be1
-description: "Cet article est une version texte accessible du diagramme nommé Options de plateforme Microsoft SharePoint 2013."
+description: Cet article est une version texte accessible du diagramme nommé Options de plateforme Microsoft SharePoint 2013.
 ms.openlocfilehash: 1f0d2bf4e74c7e1d28aaa27c6f88dac04f02b4a9
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487820"
 ---
 # <a name="accessible-diagram---microsoft-sharepoint-2013-platform-options"></a>Diagramme accessible : Options de plateforme Microsoft SharePoint 2013
 
-**Résumé :** Cet article est une version texte accessible du diagramme intitulée Options de plate-forme Microsoft SharePoint 2013.
+**Résumé:** Cet article est une version texte accessible du diagramme intitulé options de plateforme Microsoft SharePoint 2013.
   
-Les architectes et les décideurs d’entreprise (BDM) ont besoin de savoir sur Office 365, Microsoft Azure et les déploiements sur site de. 
+Quels sont les décideurs d'entreprise (BDM) et les architectes doivent savoir sur Office 365, Microsoft Azure et les déploiements sur site. 
   
 Cette affiche comprend deux sections : 
   
-- Une comparaison des quatre différents déploiements de SharePoint 2013 : SharePoint dans Office 365, un hybride d’Office 365 avec un déploiement sur site de SharePoint 2013, Azure et un déploiement sur site de SharePoint 2013. 
+- Une comparaison de quatre déploiements différents pour SharePoint 2013: SharePoint dans Office 365, un environnement hybride d'Office 365 avec un déploiement local de SharePoint 2013, Azure et un déploiement local de SharePoint 2013. 
     
-- Description de trois charges de travail habituelles pour déplacer vers Azure. 
+- Description des trois charges de travail classiques à déplacer vers Azure. 
     
 ## <a name="comparison-of-four-different-deployments-for-the-sharepoint-2013-platform"></a>Une comparaison de quatre déploiements distincts pour la plateforme SharePoint 2013.
 
@@ -45,11 +46,11 @@ La comparaison fournit des informations sur chaque option de déploiement en rel
     
 ### <a name="overview"></a>Vue d’ensemble
 
-#### <a name="sharepoint-2013-in-office-365"></a>2013 SharePoint dans Office 365
+#### <a name="sharepoint-2013-in-office-365"></a>SharePoint 2013 dans Office 365
 
-Gagner en efficacité et optimiser les coûts avec les plans mutualisées d’Office 365. 
+Gagnez en efficacité et optimisez les coûts avec les plans mutualisés Office 365. 
   
-Le diagramme qui l’accompagne présente SharePoint Online avec un locataire Azure Active Directory, qui synchronise les noms de compte et des mots de passe entre l’environnement Active Directory local et le locataire Azure Active Directory. 
+Le diagramme associé présente SharePoint Online avec un client Azure Active Directory, qui synchronise les mots de passe et les noms de compte entre l'environnement Active Directory local et le client Azure Active Directory. 
   
 Description des fonctionnalités : 
   
@@ -57,9 +58,9 @@ Description des fonctionnalités :
     
 - L’ensemble de fonctionnalités enrichies est toujours à jour.  
     
-- Inclut un locataire Azure Active Directory (il peut être utilisé avec d’autres applications). 
+- Comprend un client Azure Active Directory (peut être utilisé avec d'autres applications). 
     
-- Intégration d’annuaire inclut la synchronisation des noms de compte et des mots de passe entre l’environnement Active Directory local et le locataire Azure Active Directory. 
+- L'intégration d'annuaire inclut la synchronisation des noms de compte et des mots de passe entre l'environnement Active Directory local et le client Azure Active Directory. 
     
 - Si l’authentification unique (SSO) est requise, les services AD FS (Active Directory Federation Services) peuvent être implémentés.   
     
@@ -71,9 +72,9 @@ Description des fonctionnalités :
     
 #### <a name="hybrid-with-office-365"></a>Hybride avec Office 365
 
-Combiner les avantages d’Office 365 avec un déploiement sur site de SharePoint 2013. 
+Combinez les avantages d'Office 365 avec un déploiement local de SharePoint 2013. 
   
-Le diagramme qui l’accompagne présente Office 365 SharePoint Online à l’aide des Services Business Connectivity (BCS) pour se connecter à une batterie de serveurs SharePoint Server 2013 sur site. 
+Le diagramme associé montre Office 365 avec SharePoint Online à l'aide de Business Connectivity Services (BCS) pour se connecter à une batterie de serveurs SharePoint Server 2013 sur site. 
   
 Choisissez les fonctionnalités à intégrer parmi les suivantes :  
   
@@ -95,11 +96,11 @@ Duet Enterprise Online
 
 Profitez du cloud tout en conservant un contrôle total de la plateforme et des fonctionnalités.   
   
-Le diagramme qui l’accompagne présente Azure, qui contient deux services en nuage, une batterie de serveurs SharePoint 2013 et Windows Server Active Directory avec DNS qui se connectent aux utilisateurs via Internet ou la connexion à sur site Active Directory via le tunnel VPN. 
+Le diagramme associé affiche Azure, qui contient deux services Cloud, une batterie de serveurs SharePoint 2013 et Windows Server Active Directory avec DNS connecté aux utilisateurs via Internet ou se connectant à Active Directory local via un tunnel VPN. 
   
 Les fonctionnalités sont les suivantes :  
   
--  Azure est une plateforme qui fournit les services d’infrastructure et d’application nécessaires à l’hébergement d’une batterie de serveurs SharePoint 2013.
+-  Azure est une plateforme qui fournit les services d'infrastructure et d'application nécessaires pour héberger une batterie de serveurs SharePoint 2013.
     
 - Services d’infrastructure. 
     
@@ -125,11 +126,11 @@ Les fonctionnalités sont les suivantes : 
   
 - Planification et dimensionnement de la capacité. 
     
-- Configuration et acquisition du serveur. 
+- Configuration et acquisition du serveur.  
     
 - Déploiement. 
     
-- Mise à l’échelle, mise à jour corrective et opérations. 
+- Mise à l’échelle, mise à jour corrective et opérations.   
     
 - Sauvegarde des données. 
     
@@ -139,7 +140,7 @@ Les fonctionnalités sont les suivantes : 
     
 ### <a name="deployment-type-is-best-for---"></a>Ce type de déploiement est idéal pour...
 
-#### <a name="sharepoint-2013-in-office-365"></a>2013 SharePoint dans Office 365
+#### <a name="sharepoint-2013-in-office-365"></a>SharePoint 2013 dans Office 365
 
 - Sécurisez le partage et la collaboration externes. (fonctionnalité unique !)  
     
@@ -149,7 +150,7 @@ Les fonctionnalités sont les suivantes : 
     
 - Site web de base destiné au public.  
     
-Fonctions supplémentaires avec les programmes d’abonnement dédié de Office 365 : 
+Fonctionnalités supplémentaires avec les plans d'abonnement dédié Office 365: 
   
 - Équipement du centre de données Microsoft dédié à votre organisation et non partagé avec une autre organisation.   
     
@@ -161,17 +162,17 @@ Fonctions supplémentaires avec les programmes d’abonnement dédié de Office 
     
 #### <a name="hybrid-with-office-365"></a>Hybride avec Office 365
 
-- Utiliser Office 365 externe de partage et de collaboration au lieu de configurer un environnement extranet. 
+- Utilisez Office 365 pour le partage externe et la collaboration au lieu de configurer un environnement extranet. 
     
 - Déplacez Mes sites (OneDrive for Business) dans le cloud pour permettre aux utilisateurs d’accéder à leurs fichiers à distance plus facilement.   
     
-- Démarrer les nouveaux sites d’équipe dans Office 365. 
+- Démarrez les nouveaux sites d'équipe dans Office 365. 
     
-- Environnement de BCS SharePoint local s’intègrent un site Office 365. 
+- Intégrer un site Office 365 à un environnement SharePoint BCS local. 
     
 #### <a name="azure"></a>Azure
 
-- SharePoint pour Sites Internet, Public sites exposés. Tirer parti des Azure AD pour l’authentification et de comptes client. 
+- SharePoint pour les sites Internet – Sites destinés au public. Tirez parti d'Azure AD pour les comptes client et l'authentification. 
     
 - Environnements de développeur, test et transit – Mise à disposition et retrait rapides d’environnements entiers.  
     
@@ -195,17 +196,17 @@ Fonctions supplémentaires avec les programmes d’abonnement dédié de Office 
     
 - Les solutions hautement personnalisées. 
     
-- Solutions ancienne génération avec des composants tiers qui dépendent du matériel et des logiciels qui ne sont pas pris en charge sur les Services d’Infrastructure Azure. 
+- Solutions héritées avec composants tiers qui dépendent du matériel et des logiciels qui ne sont pas pris en charge par les services d'infrastructure Azure. 
     
-- Restrictions de confidentialité qui empêchent la synchronisation des comptes Active Directory avec Azure Active Directory (il s’agit d’une exigence pour Office 365). 
+- Restrictions de confidentialité qui empêchent la synchronisation des comptes Active Directory avec Azure Active Directory (configuration requise pour Office 365). 
     
 - Organisations qui préfèrent bénéficier du contrôle de l’ensemble de la plateforme et de la solution. 
     
 ### <a name="license-requirements"></a>Critères de licence
 
-#### <a name="sharepoint-2013-in-office-365"></a>2013 SharePoint dans Office 365
+#### <a name="sharepoint-2013-in-office-365"></a>SharePoint 2013 dans Office 365
 
-Modèle d’abonnement Aucune licence supplémentaire nécessaire.  
+Modèle d’abonnement. Aucune licence supplémentaire nécessaire. 
   
 #### <a name="hybrid-with-office-365"></a>Hybride avec Office 365
 
@@ -215,7 +216,7 @@ Modèle d’abonnement Aucune licence supplémentaire nécessaire. 
     
 #### <a name="azure"></a>Azure
 
--  Abonnement Azure (inclut le système d’exploitation)
+-  Abonnement Azure (y compris le système d'exploitation du serveur)
     
 - SQL Server 
     
@@ -235,9 +236,9 @@ Modèle d’abonnement Aucune licence supplémentaire nécessaire. 
     
 ### <a name="architecture-tasks"></a>Tâches d’architecture
 
-#### <a name="sharepoint-2013-in-office-365"></a>2013 SharePoint dans Office 365
+#### <a name="sharepoint-2013-in-office-365"></a>SharePoint 2013 dans Office 365
 
-- Intégration d’annuaire de planification et de conception. Deux options. L’option peut être déployée sur site ou dans Azure : synchronisation de mot de passe (requiert un serveur 64 bits). Authentification unique (requiert AD FS et des serveurs). 
+- Planifiez et concevez l’intégration Directory. Deux options. Les deux options peuvent être déployées sur site ou dans Azure: synchronisation de mot de passe (nécessite un serveur 1 64 bits). Authentification unique (nécessite AD FS et plusieurs serveurs). 
     
 - Garantir la capacité et la disponibilité du réseau grâce à des pare-feu, des serveurs proxy, des passerelles et des liaisons WAN. 
     
@@ -247,7 +248,7 @@ Modèle d’abonnement Aucune licence supplémentaire nécessaire. 
     
 - Planifiez des personnalisations, des solutions et des applications pour SharePoint Online.  
     
-- Si vous souhaitez vous connecter à Office 365 à l’aide de la 6 du protocole Internet (IPv6). Cela n’est pas courant. 
+- Déterminez si vous souhaitez vous connecter à Office 365 à l'aide du protocole Internet 6 (IPv6). Cela n’est pas courant. 
     
 #### <a name="hybrid-with-office-365"></a>Hybride avec Office 365
 
@@ -259,9 +260,9 @@ En plus des tâches pour les environnements Office 365 et locaux :
     
 #### <a name="azure"></a>Azure
 
-Conception de l’environnement réseau Azure : 
+Concevez l'environnement réseau Azure: 
   
-- Réseau virtuel dans Azure, y compris des sous-réseaux. 
+- Réseau virtuel dans Azure, y compris les sous-réseaux. 
     
 - Environnement de domaine et intégration avec les serveurs sur site.  
     
@@ -269,11 +270,11 @@ Conception de l’environnement réseau Azure :
     
 - Groupes d’affinité et comptes de stockage.  
     
-Conception de l’environnement SharePoint dans Azure : 
+Concevez l'environnement SharePoint dans Azure: 
   
 - Topologie de batterie SharePoint et architecture logique.  
     
--  Jeux de disponibilité Azure et les domaines de la mise à jour.
+-  Les groupes à haute disponibilité Azure et les domaines de mise à jour.
     
 - Tailles des machines virtuelles.   
     
@@ -301,15 +302,15 @@ Concevez l’environnement SharePoint dans un environnement sur site existant :
     
 ### <a name="it-pro-responsibilities"></a>Responsabilités des professionnels de l’informatique
 
-#### <a name="sharepoint-2013-in-office-365"></a>2013 SharePoint dans Office 365
+#### <a name="sharepoint-2013-in-office-365"></a>SharePoint 2013 dans Office 365
 
-- Assurez-vous que les stations de travail répondent aux conditions requises du client Office 365. 
+- Assurez-vous que les stations de travail utilisateur répondent aux conditions préalables du client Office 365. 
     
 - Implémentez le plan d’intégration Directory. 
     
 - Planification et implémentation du routage et des enregistrements DNS internes et externes. 
     
-- Configurer le proxy ou le pare-feu pour Office 365 adresseIP et aux exigences des URL. 
+- ConFigurez le proxy ou le pare-feu pour l'adresse IP et les URL requises pour Office 365. 
     
 - Créez et attribuez des autorisations d’accès à des collections de sites.  
     
@@ -329,9 +330,9 @@ En plus des tâches pour les environnements Office 365 et locaux :
     
 #### <a name="azure"></a>Azure
 
-Déployer et gérer l’environnement Azure et SharePoint : 
+Déployez et gérez l'environnement Azure et SharePoint: 
   
-- Implémenter et gérer l’environnement de réseau Azure. 
+- Implémentez et gérez l'environnement réseau Azure. 
     
 - Déployez l’environnement SharePoint. 
     
@@ -361,31 +362,31 @@ Déployez et gérez l’environnement sur site SharePoint : 
     
 - Implémentez l’environnement de récupération d’urgence et le protocole.  
     
-## <a name="three-typical-workloads-to-move-to-azure"></a>Trois charges de travail habituelles pour déplacer vers Azure
+## <a name="three-typical-workloads-to-move-to-azure"></a>Trois charges de travail classiques à déplacer vers Azure
 
-### <a name="office-365-plus-directory-components-in-azure"></a>Office 365 plus de composants d’annuaire dans Azure
+### <a name="office-365-plus-directory-components-in-azure"></a>Composants d'annuaire Office 365 plus dans Azure
 
-Déploiement de composants d’intégration d’annuaire Office 365 dans Azure est plus rapide car elle peut déployer des machines virtuelles à la demande. 
+Le déploiement des composants d'intégration d'annuaire Office 365 dans Azure est plus rapide, car il peut déployer des machines virtuelles à la demande. 
   
 #### <a name="directory-synchronization-server-only"></a>Serveur de synchronisation d’annuaires uniquement
 
-Au lieu de déployer le serveur de synchronisation d’annuaire de 64 bits dans votre environnement local, mettre en service un ordinateur virtuel dans Azure à la place. 
+Au lieu de déployer le serveur de synchronisation d'annuaires 64 bits dans votre environnement local, vous devez configurer un ordinateur virtuel dans Azure. 
   
-Le diagramme qui l’accompagne présente SharePoint Online avec un locataire Azure Active Directory, qui synchronise les noms de compte et des mots de passe entre l’environnement Active Directory local et le locataire Azure Active Directory. 
+Le diagramme associé présente SharePoint Online avec un client Azure Active Directory, qui synchronise les mots de passe et les noms de compte entre l'environnement Active Directory local et le client Azure Active Directory. 
   
 #### <a name="directory-synchronization-plus-ad-fs"></a>Synchronisation d’annuaire plus AD FS
 
-Cette option vous permet de prendre en charge des identités d’Office 365 fédéré (SSO) sans ajout de matériel pour votre infrastructure sur site. Il fournit également une résilience si l’environnement Active Directory local n’est pas disponible. 
+Cette option vous permet de prendre en charge les identités fédérées Office 365 (SSO) sans ajouter de matériel à votre infrastructure locale. Elle fournit également la résilience si l'environnement Active Directory local n'est pas disponible. 
   
-- Composants d’intégration d’annuaire résident dans Azure. 
+- Les composants d'intégration d'annuaire résident dans Azure. 
     
-- AD FS est publié sur Internet par l’intermédiaire de proxys AD FS dans Azure. 
+- AD FS est publié sur Internet par le biais de proxies AD FS dans Azure. 
     
-- Le trafic d’authentification client, pour les utilisateurs qui se connectent à partir de n’importe quel emplacement, est géré par les serveurs AD FS et des serveurs proxy qui est déployés sur Azure. 
+- Le trafic d'authentification client, pour les utilisateurs qui se connectent depuis n'importe quel emplacement, est géré par les serveurs et les proxys AD FS qui sont déployés sur Azure. 
     
-### <a name="public-facing-internet-site-and-azure-ad-for-customer-authentication"></a>Site d’Internet accessible au public et Azure AD pour l’authentification du client
+### <a name="public-facing-internet-site-and-azure-ad-for-customer-authentication"></a>Site Internet public et Azure AD pour l'authentification du client
 
-Tirer parti de la possibilité d’évoluer à la demande en plaçant votre site Internet dans Azure. Annonce Azure permet de stocker des comptes client. 
+Tirez parti de la possibilité de faire évoluer facilement à la demande en plaçant votre site Internet dans Azure. Utiliser Azure AD pour stocker les comptes client. 
   
 #### <a name="azure-advantages-for-internet-sites"></a>Avantages Azure pour les sites Internet
 
@@ -397,21 +398,21 @@ Tirer parti de la possibilité d’évoluer à la demande en plaçant votre site
     
 #### <a name="azure-ad"></a>Azure AD
 
-Annonce Azure fournit l’identité gestion et accès aux fonctionnalités de contrôle des services en nuage. Les fonctions incluent une banque basée sur le cloud pour les données d’annuaire et un ensemble de services d’identité, y compris les processus d’ouverture de session utilisateur et services d’authentification AD FS. Les services d’identité qui sont inclus avec AD Azure s’intègrent facilement avec vos déploiements d’Active Directory sur site et prend totalement en charge les fournisseurs d’identité du tiers. 
+Azure AD offre des fonctionnalités de gestion des identités et de contrôle d’accès pour les services dans le nuage. Les fonctionnalités comprennent un magasin cloud pour les données d’annuaire et un ensemble principal de services d’identité, incluant des processus d’ouverture de session, des services d’authentification et des services AD FS. Les services d'identité fournis avec Azure AD s'intègrent facilement à vos déploiements Active Directory locaux et prennent entièrement en charge les fournisseurs d'identité tiers. 
   
-Le diagramme qui l’accompagne présente la configuration de zones et d’authentification qui est importante pour les sites exposés à Internet. Le schéma montre les clients d’annuaire actif Azure, qui contient une batterie de serveurs SharePoint sur Azure avec deux zones : 
+Le diagramme associé montre la configuration des zones et l’authentification qui sont importantes pour les sites exposés à Internet. Le diagramme montre le client Azure Active Directory, qui contient une batterie de serveurs SharePoint sur Azure avec deux zones: 
   
 - Une zone Internet qui interagit avec des visiteurs et des clients anonymes et authentifiés en dehors du réseau  
     
 - Une zone par défaut qui contient des NTLM pour l’analyse et l’authentification Windows qui interagit avec votre déploiement Active Directory en local sur un tunnel VPN.   
     
-### <a name="on-premises-farm-plus-disaster-recovery-in-azure"></a>Batterie de serveurs sur site et de reprise après sinistre dans Azure
+### <a name="on-premises-farm-plus-disaster-recovery-in-azure"></a>Batterie de serveurs locale et récupération d'urgence dans Azure
 
-Choisissez une option de récupération après sinistre qui correspond aux besoins de votre entreprise. Azure fournit des options d’entrée de gamme pour les entreprises de mise en route de la reprise après sinistre et les options avancées pour les entreprises ayant des exigences de résistance élevée. 
+Choisissez une option de récupération d’urgence qui correspond à vos besoins professionnels. Azure propose des options d'entrée de gamme pour les entreprises qui utilisent la récupération d'urgence et des options avancées pour les entreprises ayant des exigences de haute résistance. 
   
 #### <a name="cold-standby"></a>Reprise progressive
 
-- La batterie de serveurs est totalement intégrée, mais les ordinateurs virtuels sont arrêtés. (Vous payez uniquement lorsqu’ils exécutent !) 
+- La batterie de serveurs est entièrement créée, mais les machines virtuelles sont arrêtées. (Vous payez uniquement lorsqu'ils sont en cours d'exécution!) 
     
 - La gestion de l’environnement consiste à démarrer les machines virtuelles de temps en temps, à appliquer des mises à jour correctives, à procéder à des mises à jour et à vérifier l’environnement. 
     
@@ -429,6 +430,6 @@ Choisissez une option de récupération après sinistre qui correspond aux besoi
 
 Une batterie de secours entièrement à l’échelle est configurée et exécutée. 
   
-Le diagramme qui l’accompagne présente une batterie de serveurs sur site interagit avec l’environnement de récupération après sinistre SharePoint sur Azure. Les bases de données sur site utilisent l’envoi de journaux SQL Server via le tunnel VPN pour accéder à l’environnement de reprise après sinistre de SharePoint, qui comprend deux serveurs de base de données SQL qui contiennent les bases de données SharePoint, deux serveurs Web Front-End et deux SharePoint Serveurs d’applications. 
+Le diagramme associé illustre une batterie de serveurs locale qui interagit avec l'environnement de récupération d'urgence SharePoint sur Azure. Les bases de données locales utilisent Log Shipping SQL Server via le tunnel VPN pour accéder à l’environnement de récupération d’urgence SharePoint, qui comprend deux serveurs de base de données SQL contenant les bases de données SharePoint, deux serveurs frontaux web et deux serveurs d’applications SharePoint. 
   
 

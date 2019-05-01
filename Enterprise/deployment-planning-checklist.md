@@ -1,5 +1,5 @@
 ---
-title: Liste de contrôle de planification du déploiement pour Office 365
+title: Liste de contrôle de planification du déploiement pour Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -20,13 +20,13 @@ search.appverid:
 ms.assetid: 5fa4f6ef-35ad-4840-91c1-4834df3df5a0
 description: Cette liste de contrôle permet à votre organisation de planifier et de préparer une migration vers Office 365. Les phases et les étapes de la liste de vérification sont alignées sur les instructions fournies par le centre d'intégration.
 ms.openlocfilehash: 42c292f3fe5f8a3753a733e5b362521d95eab827
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085303"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490100"
 ---
-# <a name="deployment-planning-checklist-for-office-365"></a>Liste de contrôle de planification du déploiement pour Office 365
+# <a name="deployment-planning-checklist-for-office-365"></a>Liste de contrôle de planification du déploiement pour Office 365
 
 Lorsque vous déplacez une organisation d'entreprise vers Office 365, il est important de planifier exactement les étapes à suivre, le moment de leur exécution et les personnes qui les exécuteront. Cette liste de contrôle permet à votre organisation de planifier et de préparer une migration vers Office 365. Les phases et les étapes de la liste de vérification sont alignées sur les instructions fournies par le [Centre d'intégration](https://go.microsoft.com/fwlink/?LinkId=517115). N'hésitez pas à adapter cette liste de contrôle aux besoins de votre organisation.
 
@@ -37,7 +37,7 @@ Voulez-vous obtenir de l'aide pour la configuration d'Office 365? EnVisagez d'ut
 
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
-|**Événements/Tâches de déploiement** <br/> |**Date de début** <br/> |**Date de fin** <br/> |**Resources** <br/> |**Dépendances** <br/> |
+|**Tâches de déploiement/Events** <br/> |**Date de début** <br/> |**Date de fin** <br/> |**Resources** <br/> |**Dépendances** <br/> |
 |**Déterminer vos objectifs de déploiement** <br/> |||||
 | Avec vos parties prenantes internes et externes:<br>  -Accord sur l'étendue et la chronologie <br>  -Accord sur le mécanisme de suivi de projet  <br>  -développer des critères de réussite et une [communication](https://fasttrack.microsoft.com/office) / [prise en main d'Office 365](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)|||||
 |**Inventorier votre environnement actuel et prendre des décisions clés en matière de déploiement** |||||

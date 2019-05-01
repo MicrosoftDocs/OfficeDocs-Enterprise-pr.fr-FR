@@ -15,11 +15,11 @@ ms.custom: Ent_Architecture
 ms.assetid: 19568184-705b-493b-b713-b484367adba9
 description: 'Résumé : Comprenez comment optimiser votre réseau pour accéder à Microsoft Azure PaaS.'
 ms.openlocfilehash: 49096276a0e8356a11e52bc8765cc796eec32510
-ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26872235"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491362"
 ---
 # <a name="designing-networking-for-microsoft-azure-paas"></a>Conception de réseau pour Microsoft Azure PaaS
 
@@ -89,7 +89,7 @@ Voici un exemple de trois applications web dispersées géographiquement.
   
 **Figure 3 : Azure Traffic Manager**
 
-![Figure 3 : Azure Traffic Manager](media/Network-Poster/PaaS3.png)
+![Figure 3 : Azure Traffic Manager](media/Network-Poster/PaaS3.png)
   
 La figure 3 indique le processus simple utilisé par Traffic Manager pour acheminer les requêtes vers trois applications web Azure différentes aux États-Unis, en Europe et en Asie. Dans l’exemple :
   
@@ -107,5 +107,5 @@ Pour plus d’informations, consultez la rubrique [Vue d’ensemble de Traffic M
 
 [Mise en réseau cloud Microsoft pour les architectes d’entreprise](microsoft-cloud-networking-for-enterprise-architects.md)
   
-[Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Ressources relatives à l’architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 

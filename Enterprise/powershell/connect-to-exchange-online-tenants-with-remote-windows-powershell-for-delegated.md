@@ -1,5 +1,5 @@
 ---
-title: Connexion à des locataires Exchange Online avec Remote Windows PowerShell pour les partenaires avec autorisations d’accès délégué
+title: Connexion à des locataires Exchange Online avec Remote Windows PowerShell pour les partenaires avec autorisations d'accès délégué
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -13,11 +13,11 @@ ms.custom: ''
 ms.assetid: ae5f1a87-8b77-4f93-a1b8-56f800aeb283
 description: 'Résumé : Utilisez Windows PowerShell distant pour vous connecter à Exchange Online à l’aide de la valeur DelegatedOrg.'
 ms.openlocfilehash: d14726a2983bf3f2d569305e1a7e2e1a86811ff5
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
-ms.translationtype: HT
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849900"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491320"
 ---
 # <a name="connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Connexion à des locataires Exchange Online avec Remote Windows PowerShell pour les partenaires avec autorisations d’accès délégué
 
@@ -33,7 +33,7 @@ Les partenaires DAP peuvent utiliser Exchange Online PowerShell pour gérer le
 > [!NOTE]
 > Les partenaires DAP ne peuvent pas utiliser les procédures décrites dans [Connexion à Exchange Online PowerShell avec l’authentification multifacteur](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell) pour se connecter à leur organisation locataire cliente dans Exchange Online PowerShell. L’authentification multifacteur et le module PowerShell distant Exchange Online ne fonctionnent pas avec l’authentification déléguée.
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
 - Durée d’exécution estimée : 5 minutes
 

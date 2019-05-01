@@ -1,5 +1,5 @@
 ---
-title: Éléments communs de la connectivité au cloud Microsoft
+title: Éléments courants de connectivité du cloud Microsoft
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,11 +15,11 @@ ms.custom: Ent_Architecture
 ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
 description: "Résumé : Comprendre les éléments communs d'infrastructure réseau et comment préparer votre réseau."
 ms.openlocfilehash: e00ad8820ef37c818c270323cf2aa036bb86a804
-ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26872215"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490194"
 ---
 # <a name="common-elements-of-microsoft-cloud-connectivity"></a>Éléments communs de la connectivité au cloud Microsoft
 
@@ -60,9 +60,9 @@ La figure 1 indique la façon dont un réseau local peut être connecté aux of
     
 - **Charge de travail externe :** Sites web ou autres charges de travail mis à la disposition des utilisateurs externes sur Internet.
     
-- **Serveur proxy :** Traite les demandes de contenu web part des utilisateurs de l’intranet. Un proxy inverse autorise les demandes entrantes non sollicités.
+- **Serveur proxy :** Demandes de services pour le contenu web au nom des utilisateurs de l'intranet. Un proxy inverse autorise les demandes entrantes non sollicitées.
     
-- **Pare-feu externe :** Autorise le trafic sortant et le trafic entrant spécifié. Peuvent effectuer la traduction d’adresses, l’inspection des paquets, l’arrêt de SSL et inspecter ou prévention des pertes de données.
+- **Pare-feu externe :** Autorise le trafic sortant et le trafic entrant spécifié. Peut effectuer la traduction d'adresse, l'inspection de paquets, l'interruption et l'inspection de SSL, ou la protection contre la perte de données.
     
 - **Connexion WAN à ISP :** Connexion basée sur un opérateur à un fournisseur de services Internet, qui est homologuée avec Internet pour la connectivité et le routage.
     

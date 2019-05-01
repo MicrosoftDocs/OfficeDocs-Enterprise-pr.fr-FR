@@ -1,5 +1,5 @@
 ---
-title: "Diagramme accessible : Récupération d’urgence SharePoint vers Microsoft Azure"
+title: 'Diagramme accessible : Récupération d’urgence SharePoint vers Microsoft Azure'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,16 +10,17 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 4b855224-8e67-4efa-a3a4-908ee0ca6412
-description: "Cet article est une version texte accessible du diagramme Récupération d’urgence SharePoint Server dans Microsoft Azure."
+description: Cet article est une version texte accessible du diagramme Récupération d’urgence SharePoint Server dans Microsoft Azure.
 ms.openlocfilehash: 545aaae05e3becbde60fe01c0e50e5610ee69f98
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487720"
 ---
 # <a name="accessible-diagram---sharepoint-disaster-recovery-to-microsoft-azure"></a>Diagramme accessible : Récupération d’urgence SharePoint vers Microsoft Azure
 
-**Résumé :** Cet article est une version texte accessible du diagramme nommé de récupération d’urgence SharePoint Microsoft Azure.
+**Résumé:** Cet article est une version texte accessible du diagramme appelé SharePoint disAster Recovery to Microsoft Azure.
   
 Cette affiche fournit des exemples d’architectures pour la création d’un environnement de récupération dans Azure.  
   
@@ -49,11 +50,11 @@ Ce niveau comporte trois serveurs. Chaque serveur fournit les services suivants�
     
 - Gestionnaire de flux de travail 
     
-- Analyse  
+- Analyse 
     
 - Traitement de contenu 
     
-- Données d’analyse  
+- Analyse 
     
 #### <a name="tier-4"></a>Niveau 4
 
@@ -75,7 +76,7 @@ Le diagramme associé représente un environnement local répliqué à l’ident
   
 ### <a name="overview"></a>Vue d’ensemble
 
-L’environnement de récupération après sinistre pour une batterie de serveurs SharePoint 2013 sur site peut être hébergé dans Azure. 
+L'environnement de récupération d'urgence pour une batterie de serveurs SharePoint 2013 sur site peut être hébergé dans Azure. 
   
 -   Azure Infrastructure Services fournit un centre de données secondaire. 
     
@@ -185,7 +186,7 @@ Les trois services cloud suivants existent dans le réseau virtuel Azure :
   
 - Le premier service cloud possède deux serveurs Active Directory et DNS avec un groupe à haute disponibilité.  
     
-- Le second service nuage a trois ensembles de serveurs : deux distribué avec un jeu de disponibilité des serveurs de cache. Deux serveurs frontaux avec un jeu de disponibilité. Trois serveurs de back-end avec un jeu de disponibilité.
+- Le second service cloud possède trois groupes de serveurs : Deux serveurs de cache distribué avec un groupe à haute disponibilité. Deux serveurs frontaux avec un groupe à haute disponibilité. Trois serveurs frontaux avec un groupe à haute disponibilité.
     
 - Le troisième service cloud possède trois serveurs de bases de données avec un groupe à haute disponibilité. L’un de ces serveurs de base de données est un partage de fichiers pour la copie des journaux de transaction et le troisième nœud d’un nœud majoritaire pour SQL Server AlwaysOn.  
     
@@ -193,9 +194,9 @@ Les trois services cloud suivants existent dans le réseau virtuel Azure :
 
 La configuration des services AD DS pour cette solution constitue un scénario de déploiement hybride dans lequel les services AD DS sont déployés en partie localement et en partie sur des machines virtuelles Azure.  
   
-Important : Avant de déployer AD DS dans Azure, voir Recommandations en matière de déploiement Windows Server Active Directory sur des machines virtuelles Microsoft Azure (http://msdn.microsoft.com/fr-fr/library/windowsazure/jj156090.aspx).  
+Important: avant de déployer AD DS dans Azure, lisez les instructions de déploiement de Windows Server Active Directory sur des machines virtuelleshttp://msdn.microsoft.com/en-us/library/windowsazure/jj156090.aspx)Microsoft Azure (. 
   
-Pour obtenir des instructions complètes sur la conception et le déploiement d’environnements Active Directory, voir http://TechNet.microsoft.com.  
+Pour obtenir des instructions complètes sur la conception et le déploiement d'environnements http://TechNet.microsoft.comActive Directory, reportez-vous à la rubrique. 
   
 Cette architecture de référence inclut deux machines virtuelles configurées comme contrôleurs de domaine. Elles sont toutes deux configurées de la manière suivante :  
   

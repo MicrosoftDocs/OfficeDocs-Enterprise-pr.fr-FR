@@ -1,5 +1,5 @@
 ---
-title: "Diagramme accessible : Options de plateforme Microsoft Lync 2013"
+title: Diagramme accessible  Options de plateforme Microsoft Lync 2013
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.date: 12/15/2017
@@ -9,12 +9,13 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 2858d1e7-be37-4484-b121-a99779742a38
-description: "Cet article est une version texte accessible du diagramme intitulé Options de plateforme Microsoft Lync 2013, qui est disponible dans la rubrique Diagrammes techniques."
+description: Cet article est une version texte accessible du diagramme intitulé Options de plateforme Microsoft Lync 2013, qui est disponible dans la rubrique Diagrammes techniques.
 ms.openlocfilehash: 4a660df4bfacad2a00f5d9fbb5e1b668840e3b9f
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487789"
 ---
 # <a name="accessible-diagram---microsoft-lync-2013-platform-options"></a>Diagramme accessible : Options de plateforme Microsoft Lync 2013
 
@@ -32,7 +33,7 @@ La comparaison fournit des informations sur chaque option de déploiement dans l
   
 - Une vue d’ensemble des différentes fonctionnalités de déploiement
     
-- Avantages de l’implémentation de chaque option de déploiement
+- Avantages de l'implémentation de chaque option de déploiement
     
 - Critères de licence
     
@@ -90,11 +91,11 @@ Description des fonctions et fonctionnalités :
   
 - Planification et dimensionnement de la capacité.
     
-- Configuration et acquisition du serveur.
+- Configuration et acquisition du serveur. 
     
 - Déploiement.
     
-- Mise à l’échelle, mise à jour corrective et opérations.
+- Mise à l’échelle, mise à jour corrective et opérations.  
     
 - Sauvegarde des données.
     
@@ -112,11 +113,11 @@ Description des fonctions et fonctionnalités :
   
 - Planification et dimensionnement de la capacité.
     
-- Configuration et acquisition du serveur.
+- Configuration et acquisition du serveur. 
     
 - Déploiement.
     
-- Mise à l’échelle, mise à jour corrective et opérations.
+- Mise à l’échelle, mise à jour corrective et opérations.  
     
 - Sauvegarde des données.
     

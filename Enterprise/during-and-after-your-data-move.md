@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Les déplacements de données sont des opérations principales n'ayant que peu d'impact sur les utilisateurs finals. Aucune action de votre part n'est requise lorsque Microsoft déplace chaque service et les données associées pour votre client vers une nouvelle zone géographique de centres de données. Le transfert de données et la validation se déroulent en arrière-plan à l'avance, et n'ont qu'une incidence minimale sur les utilisateurs.
 ms.openlocfilehash: 7635de71e207ff01b24b8b8df8664e3f57f395cf
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30647992"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487230"
 ---
 # <a name="during-and-after-your-data-move"></a>Pendant et après le déplacement de vos données
 
@@ -129,7 +129,7 @@ Nous déplaçons uniquement les données client pour Exchange Online, SharePoint
   
 ## <a name="related-topics"></a>Voir aussi 
  
-[Procédure de demande d'un déplacement de données](request-your-data-move.md)
+[Procédure de demande d’un déplacement de données](request-your-data-move.md)
     
 [FAQ général relatif au déplacement de données](data-move-faq.md)
   

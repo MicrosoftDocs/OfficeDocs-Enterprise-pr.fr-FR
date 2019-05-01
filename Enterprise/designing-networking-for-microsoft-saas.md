@@ -15,17 +15,17 @@ ms.custom: Ent_Architecture
 ms.assetid: 4194020a-3847-4259-9f2d-5c556a4510f9
 description: 'Résumé : Comprendre comment optimiser votre réseau pour accéder aux services SaaS de Microsoft, notamment Office 365, Microsoft Intune et Dynamics 365.'
 ms.openlocfilehash: 3d47c53de1bc1121ef72eb519c51c0ad9423fff9
-ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26872265"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487294"
 ---
 # <a name="designing-networking-for-microsoft-saas"></a>Conception de réseaux pour Microsoft SaaS
 
  **Résumé :** Comprendre comment optimiser votre réseau pour accéder aux services SaaS de Microsoft, notamment Office 365, Microsoft Intune et Dynamics 365.
   
-Optimisation de votre réseau pour les services Microsoft SaaS requiert la configuration d’interne et les routeurs pour acheminer les différentes catégories de trafic aux services Microsoft SaaS.
+L’optimisation de votre réseau pour les services SaaS de Microsoft requiert la configuration des équipements de périmètre et internes pour acheminer les différentes catégories de trafic vers les services SaaS de Microsoft.
   
 ## <a name="steps-to-prepare-your-network-for-microsoft-saas-services"></a>Étapes pour préparer votre réseau aux services SaaS de Microsoft
 
@@ -33,48 +33,48 @@ Procédez comme suit pour optimiser votre réseau pour les services SaaS de Micr
   
 1. Consultez les **étapes de préparation de votre réseau pour services de cloud Microsoft** fournies dans la section [Éléments communs de la connectivité au cloud Microsoft](common-elements-of-microsoft-cloud-connectivity.md).
     
-2. Ajouter une connexion Internet à chacun de vos sites.
+2. Ajoutez une connexion Internet à chacun de vos bureaux.
     
-3. Vérifiez que le fournisseur de services pour toutes les connexions Internet utilisez un serveur DNS avec une adresse IP locale.
+3. Assurez-vous que les fournisseurs de services Internet de toutes les connexions Internet utilisent un serveur DNS avec une adresse IP locale.
     
-4. Examinez votre épingles à cheveux du réseau, les destinations intermédiaires tels que les services de sécurité en nuage et les éliminer la mesure du possible.
+4. Examinez votre réseau les épingles, les destinations intermédiaires, telles que les services de sécurité en nuage, et supprimez-les si possible.
     
-5. Configurer vos périphériques edge pour contourner le traitement de l’optimiser et autoriser des catégories de trafic SaaS Microsoft.
+5. ConFigurez vos périphériques Edge pour qu'ils contournent le traitement pour les catégories Optimize et allow du trafic SaaS de Microsoft.
 
-## <a name="optimizing-traffic-to-microsofts-saas-services"></a>Optimisation du trafic aux SaaS services de Microsoft    
+## <a name="optimizing-traffic-to-microsofts-saas-services"></a>Optimisation du trafic vers les services SaaS de Microsoft    
 
-Il existe trois catégories de trafic SaaS Microsoft :
+Il existe trois catégories de trafic Microsoft SaaS:
 
 - Optimiser
 
-  Requis pour la connectivité à tous les services Microsoft SaaS et représentent plus de 75 % de la bande passante Microsoft SaaS, des connexions et le volume de données.
+  Obligatoire pour la connectivité à chaque service SaaS de Microsoft et représente plus de 75% de la bande passante de Microsoft SaaS, des connexions et du volume de données.
 
 - Autoriser
 
-  Requis pour la connectivité au spécifique SaaS Microsoft services et fonctionnalités mais ne sont pas soumis à des performances du réseau et la latence en tant que ceux de la catégorie d’optimisation.
+  Requis pour la connectivité à des services et des fonctionnalités Microsoft SaaS spécifiques, mais qui ne sont pas sensibles aux performances et à la latence du réseau comme ceux de la catégorie optimize.
 
 - Par défaut
 
-  Représentent SaaS Microsoft services et les dépendances qui ne nécessitent pas de n’importe quel optimisation. Vous pouvez traiter le trafic de catégorie par défaut comme le trafic Internet normal.
+  Représentent les services et dépendances Microsoft SaaS qui ne nécessitent aucune optimisation. Vous pouvez traiter le trafic de catégorie par défaut comme le trafic Internet normal.
 
 
-**La figure 1 : Configuration recommandée pour le trafic de tous les bureaux Microsoft SaaS**
+**Figure 1: configuration recommandée pour le trafic SaaS de Microsoft pour tous les bureaux**
 
-![La figure 1 : Configuration recommandée pour le trafic de tous les bureaux Microsoft SaaS](media/Network-Poster/SaaS1.png)
+![Figure 1: configuration recommandée pour le trafic SaaS de Microsoft pour tous les bureaux](media/Network-Poster/SaaS1.png)
 
-La figure 1 illustre la configuration recommandée de toutes les succursales, y compris les agences et celles qui sont locaux ou centrale, dans laquelle :
+La figure 1 présente la configuration recommandée de tous les bureaux, y compris les succursales, les succursales régionales ou centrales, dans lesquelles:
 
-- Catégorie **par défaut** et général le trafic Internet est routé vers des bureaux qui ont des serveurs proxy et autres périphériques edge pour assurer la protection contre les risques de sécurité basé sur Internet.
-- **Optimiser** et **Autoriser** le trafic de catégorie est transféré directement vers le bord de Microsoft réseau front-end plus proche de l’office contenant l’utilisateur connecté, sans passer par les serveurs proxy et autres périphériques de périphérie.
+- La catégorie **par défaut** et le trafic Internet général sont acheminés vers les bureaux disposant de serveurs proxy et d'autres périphériques Edge pour fournir une protection contre les risques de sécurité Internet.
+- **Optimiser** et **autoriser** le trafic de catégorie est transféré directement vers le serveur frontal le plus proche de l'extrémité du réseau Microsoft vers le bureau contenant l'utilisateur qui se connecte, en contournant les serveurs proxy et autres périphériques Edge.
 
-Défini par le logiciel à l’échelle (WAN SD) périphériques réseau dans les succursales séparent le trafic afin que : 
+Les périphériques SD-WAN (réseau étendu) définis par le logiciel dans les succursales séparent les éléments suivants: 
 
-- Catégorie **par défaut** et général du trafic Internet accède à un bureau central ou régional via le réseau WAN principal. 
-- **Optimiser** et **Autoriser** le trafic de catégorie atteint le fournisseur de services fournissant la connexion Internet locale.
+- La catégorie **par défaut** et le trafic Internet général sont acheminés vers un bureau central ou régional sur le réseau principal du réseau étendu. 
+- **Optimiser** et **autoriser** le trafic de catégorie vers le fournisseur de services Internet fournissant la connexion Internet locale.
   
-Pour plus d'informations, voir :
+Pour plus d’informations, reportez-vous aux rubriques suivantes :
   
-- [Principes de la connectivité réseau](https://aka.ms/expressrouteoffice365)
+- [Principes de connectivité réseau](https://aka.ms/expressrouteoffice365)
 
 - [Planification réseau et de migration pour Office 365](https://aka.ms/tune)
     

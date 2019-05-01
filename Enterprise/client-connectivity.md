@@ -17,117 +17,117 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 4232abcf-4ae5-43aa-bfa1-9a078a99c78b
-description: 'Résumé : Explique comment les ordinateurs clients se connectent aux clients Office 365, selon l’emplacement de l’ordinateur client et du centre de données client d’Office 365.'
+description: "Résumé: explique comment les ordinateurs clients se connectent aux clients Office 365, en fonction de l'emplacement de l'ordinateur client et du centre de donnes client Office 365."
 ms.openlocfilehash: 9455147e70a391619e1602f2e36d9162ff2c0928
-ms.sourcegitcommit: ad5bdc53ca67ee6a663c27648511c1ad768a76d4
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23223036"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490566"
 ---
 # <a name="client-connectivity"></a>Connectivité client
 
- **Résumé :** Explique comment les ordinateurs clients se connectent aux clients Office 365, selon l’emplacement de l’ordinateur client et du centre de données client d’Office 365.
+ **Résumé:** Explique comment les ordinateurs clients se connectent aux clients Office 365, en fonction de l'emplacement de l'ordinateur client et du centre de donnes client Office 365.
   
-Office 365 réside dans les centres de données Microsoft dans le monde entier qui assurent le service et en cours d’exécution même lorsqu’il existe un problème majeur dans une région, par exemple un séisme ou une panne de courant. Lorsque vous vous connectez à votre client Office 365, la connexion du client est redirigée vers le centre de données appropriée hébergeant votre client. Les règles qui déterminent l’hébergement de votre client sont définis par votre contrat avec Microsoft. Les règles qui déterminent la façon dont votre client acquiert les données à partir de cet emplacement du centre de données dépendent de l’architecture du service que vous utilisez.
+Office 365 réside dans les centres de connaissances Microsoft dans le monde entier, ce qui permet de maintenir le service opérationnel même en cas de problème majeur dans une région, comme un tremblement de terre ou une coupure de courant. Lorsque vous vous connectez à votre client Office 365, la connexion client est dirigée vers le centre de donnée approprié où votre client est hébergé. Les règles qui déterminent l'emplacement où votre client peut être hébergé sont définies par votre accord avec Microsoft. Les règles qui déterminent la façon dont votre client acquiert les données à partir de cet emplacement de centre de données dépendent de l'architecture du service que vous utilisez.
   
-Par exemple, lorsque vous ouvrez une session sur le portail Office 365, vous êtes généralement connecté au centre de données le plus proche pour le client et dirigées selon le service que vous utilisez suivant. Si vous lancez le courrier électronique, la connexion initiale à afficher l’interface utilisateur peut quand même provenir du centre de données le plus proche, mais une deuxième connexion peut être ouvert entre le centre de données le plus proche et le centre de données où se trouve votre client à afficher est dans les courriers électroniques lire. Microsoft dirige l’un des dix réseaux principales dans le monde résultant dans Connexions très rapide de centre de données-datacenter rapides.
+Par exemple, lorsque vous vous connectez au portail Office 365, vous êtes généralement connecté au centre de services le plus proche sur le client, puis dirigé en fonction du service que vous utilisez ensuite. Si vous lancez le courrier électronique, la connexion initiale pour afficher l'interface utilisateur peut toujours provenir du centre de données le plus proche, mais une seconde connexion peut être ouverte entre le centre de données le plus proche et le centre de données où votre client est situé pour vous montrer ce qui se trouve dans les messages électroniques que vous lisez. Microsoft agit de l'un des dix principaux réseaux dans le monde, ce qui accélère les connexions de centre à centre de de temps.
   
-Après avoir lu l’article, vous aurez probablement comprendre pourquoi nous ne fournissent pas [les plages d’adresses IP et Office 365 URL](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2) par centre de données, ils sont simplement trop interconnexion et dépend de l’autre pour être que possible.
+Une fois que vous avez lu l'article, vous comprendrez probablement pourquoi nous ne fournissons pas d' [URL et de plages d'adresses IP Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2) par centre de contenu, mais ils sont tout simplement interconnectés et tributaires les uns des autres pour rendre cela possible.
   
-Si vous utilisez ExpressRoute Azure pour Office 365, dans la plupart des cas, votre connectivity est acheminés via une connexion privée Office 365 au lieu de la connexion publique décrite ici. Les principes sur le mode de connexion des clients sont toujours précis. En savoir plus sur [ExpressRoute Azure pour Office 365](azure-expressroute.md).
+Si vous utilisez Azure ExpressRoute pour Office 365, dans la plupart des cas, votre connectivité passe par une connexion privée à Office 365 au lieu de la connexion publique décrite ici. Les principes de connexion des clients sont toujours précis. En savoir plus sur [Azure ExpressRoute pour Office 365](azure-expressroute.md).
   
-Pour approfondir sur Skype pour les demandes de réseau d’entreprise, consultez l’article de [la qualité des médias et des performances pour la connectivité réseau dans Skype pour Business Online](https://support.office.com/article/Media-Quality-and-Network-Connectivity-Performance-in-Skype-for-Business-Online-5fe3e01b-34cf-44e0-b897-b0b2a83f0917).
+Pour plus de détails sur les demandes de réseau Skype entreprise, lisez l'article [Media Quality and Network Connectivity performance in Skype for Business Online](https://support.office.com/article/Media-Quality-and-Network-Connectivity-Performance-in-Skype-for-Business-Online-5fe3e01b-34cf-44e0-b897-b0b2a83f0917).
 
 ||
 |:-----|
-| Cet article fait partie de la [planification de réseau et de réglage des performances pour Office 365](https://aka.ms/tune).|
+| Cet article fait partie de la [planification réseau et du réglage des performances pour Office 365](https://aka.ms/tune).|
 
 > [!NOTE]
-> Nous prenons précaution pour gérer les données du client afin qu’il soit sécurisé et privées dans nos centres de données. Plus d’informations sur les étapes à que réaliser pour gérer la confidentialité sont inclus dans le [Centre de gestion de la confidentialité](https://go.microsoft.com/fwlink/?LinkID=397383).
+> Nous sommes très vigilants pour gérer les données client afin qu'elles soient sécurisées et confidentielles dans nos centres de données. Des détails sur les étapes nécessaires à la gestion de la confidentialité sont inclus dans le [Centre](https://go.microsoft.com/fwlink/?LinkID=397383)de gestion de la confidentialité.
   
-## <a name="connecting-to-the-nearest-datacenter"></a>Connexion au centre de données le plus proche
+## <a name="connecting-to-the-nearest-datacenter"></a>Connexion au centre de centre le plus proche
 
-Il s’agit du type de connexion les plus courantes, et il est utilisé par le portail Office 365 et Exchange Online. Dans ce cas, lorsque les clients tentent de se connecter à Office 365, requête DNS de leur ordinateur détermine la région du monde que provenant de leur ordinateur et Office 365 redirige la demande vers le centre de données le plus proche.
+Il s'agit du type de connexion le plus courant, qui est utilisé par le portail Office 365 et Exchange Online. Dans ce cas, lorsque les clients tentent de se connecter à Office 365, la requête DNS de leur ordinateur détermine la région du monde à partir duquel provient son ordinateur et Office 365 redirige la demande vers le centre de contenu le plus proche.
   
-Connexions au portail arrêtez au centre de données plus proche, et l’ordinateur client est présenté avec des informations sur le client du client à partir de cet emplacement.
+Les connexions au portail s'arrêtent au centre de données le plus proche et l'ordinateur client reçoit des informations sur le client à partir de cet emplacement.
   
-Exchange Online est une étape supplémentaire. Une fois l’ordinateur client est connecté au centre de données le plus proche, un serveur Exchange dans ce centre de données se connecte au centre de données où se trouve comme illustré dans le client le *comment cela fonctionne section* ci-dessous. Les serveurs Exchange Online dans le centre de données le plus proche puis proxy les demandes à partir de l’ordinateur client au serveur de boîtes aux lettres. Cela accélère l’expérience de l’ordinateur client en déplaçant l’essentiel de la récupération des messages électroniques et les éléments de calendrier pour le réseau Microsoft.
+Exchange Online va plus en avant. Une fois que l'ordinateur client est connecté au centre de centre le plus proche, un serveur Exchange Server de ce centre de contenu se connecte au centre de contenu où se trouve réellement le client, comme illustré dans la *section How do this work* . Les serveurs Exchange Online situés dans le centre de services le plus proche transversent les requêtes de l'ordinateur client vers le serveur de boîtes aux lettres. Cela accélère l'expérience de l'ordinateur client en démontant le travail important d'extraction des courriers électroniques et des éléments de calendrier vers le réseau Microsoft.
   
-## <a name="how-does-this-work-for-standard-cloud-offerings"></a>Comment cela fonctionne pour les offres de cloud standard ?
+## <a name="how-does-this-work-for-standard-cloud-offerings"></a>Comment cela fonctionne-t-il pour les offres Cloud standard?
 
-Ce processus de connexion est standard pour un trafic élevé, les applications web haute valeur comme Office 365. Dans cette section, nous hiérarchique et illustrent les étapes du processus. Lorsque l’ordinateur client n’est pas dans la même région en tant que le client, la connexion de recherche très différente en fonction du service que client se connecte.
+Ce processus de connexion est standard pour le trafic élevé, les applications Web à valeur élevée comme Office 365. Dans cette section, nous allons décrire et illustrer les étapes du processus. Lorsque l'ordinateur client ne se trouve pas dans la même région que le client, la connexion semble très différente en fonction du service auquel le client se connecte.
   
- Ce diagramme illustre un client à l’aide d’une offre Office 365 standard avec un client en Amérique du Nord. Dans ce scénario, la personne qui effectue la demande de déplacement pour l’Europe et utilise Office 365 à partir de cet emplacement.
+ Ce diagramme illustre un client utilisant une offre Office 365 standard avec un client en Amérique du Nord. Dans ce scénario, la personne à l'origine de la demande est parcourue en Europe et utilise Office 365 à partir de cet emplacement.
   
-1. L’ordinateur client demande aux serveurs DNS locaux l’adresse IP associée à Office 365.
+1. L'ordinateur client demande aux serveurs DNS locaux l'adresse IP associée à Office 365.
 
-2. Serveurs DNS locaux de l’ordinateur client demandent aux serveurs DNS de Microsoft pour l’adresse IP associée à Office 365.
+2. Les serveurs DNS locaux de l'ordinateur client demandent aux serveurs DNS de Microsoft l'adresse IP associée à Office 365.
 
-3. Les serveurs DNS de Microsoft renvoient le nom du serveur local (basé sur l’emplacement des serveurs DNS du client) et l’ordinateur client répète les étapes 1 et 2 pour obtenir l’adresse IP du centre de données Office 365 régionaux.
+3. Les serveurs DNS de Microsoft renvoient le nom du serveur régional (en fonction de l'emplacement des serveurs DNS du client), et l'ordinateur client répète les étapes 1 et 2 pour obtenir l'adresse IP du centre de ressources Office 365.
 
-4. L’ordinateur client se connecte à l’adresse IP du centre de données régional.
+4. L'ordinateur client se connecte à l'adresse IP de datacenter régional.
 
-5. Les serveurs Exchange Online établissent une connexion au centre de données actif où réside le client du client.
+5. Les serveurs Exchange Online établissent une connexion au centre de gestion actif où réside le client du client.
 
 ![Centre de données régional le plus proche](media/4ea108e9-a299-4e3d-b0d3-469b434ff899.png)
   
-## <a name="how-does-this-work-for-sovereign-cloud-offerings"></a>Comment ce travail pour souverains cloud des offres ?
+## <a name="how-does-this-work-for-sovereign-cloud-offerings"></a>Comment cela fonctionne-t-il pour les offres de cloud Souverain?
 
-Cette connexion est légèrement différente pour les offres de cloud souverains, tels qu’Office 365 exploité par 21 Vianet. Avec client dans une instance souverain d’Office 365, les serveurs Office 365 le plus proche qui acceptent les connexions portails sont les serveurs dans la région souveraine où réside le client. De même, les clients de l’accès à SharePoint Online dans notre souverains ou offres standards seront redirigés vers les serveurs frontaux où réside le client. Voir connexion au centre de données active ci-dessous.
+Cette connexion est légèrement différente pour les offres de cloud Souverain telles qu'Office 365 géré par 21 VIANET. Avec le client dans une instance souveraine d'Office 365, les serveurs Office 365 les plus proches qui accepteront les connexions du portail sont les serveurs de la région souverain où réside le client. De même, les clients qui accèdent à SharePoint Online dans notre Cloud souverain ou nos offres standard seront dirigés vers les serveurs frontaux où réside le client. Consultez la rubrique connexion à Active Datacenter ci-dessous.
   
-1. L’ordinateur client demande aux serveurs DNS locaux l’adresse IP associée à Office 365.
+1. L'ordinateur client demande aux serveurs DNS locaux l'adresse IP associée à Office 365.
 
-2. Serveurs DNS locaux de l’ordinateur client demandent aux serveurs DNS de Microsoft pour l’adresse IP associée à Office 365.
+2. Les serveurs DNS locaux de l'ordinateur client demandent aux serveurs DNS de Microsoft l'adresse IP associée à Office 365.
 
-3. Les serveurs DNS de Microsoft renvoient le nom du serveur local (basé sur l’emplacement des serveurs DNS du client) et l’ordinateur client répète les étapes 1 et 2 pour obtenir l’adresse IP du centre de données Office 365 régionaux.
+3. Les serveurs DNS de Microsoft renvoient le nom du serveur régional (en fonction de l'emplacement des serveurs DNS du client), et l'ordinateur client répète les étapes 1 et 2 pour obtenir l'adresse IP du centre de ressources Office 365.
 
-4. L’ordinateur client se connecte à l’adresse IP du centre de données régional.
+4. L'ordinateur client se connecte à l'adresse IP de datacenter régional.
 
-5. Les serveurs Exchange Online établissent une connexion au centre de données actif où réside le client du client.
+5. Les serveurs Exchange Online établissent une connexion au centre de gestion actif où réside le client du client.
 
 ![Centre de données régional américain le plus proche](media/c0628c54-0059-48c5-8a0f-41bf392ee182.png)
   
-## <a name="connecting-to-the-active-datacenter"></a>Connexion au centre de données actif
+## <a name="connecting-to-the-active-datacenter"></a>Connexion au centre de centre actif
 
-Connexion au centre de données active est conçu pour les charges de transfert de données plus importante et actuellement utilisé par SharePoint Online. Dans ce cas, lorsque les clients tentent de se connecter à Office 365, son navigateur est redirigé vers le centre de données active pour leurs clients SharePoint Online.
+La connexion au centre de données actif est conçue pour les charges de travail de transfert de données plus lourdes et est actuellement utilisée par SharePoint Online. Dans ce cas, lorsque les clients tentent de se connecter à Office 365, leur navigateur est redirigé vers le centre de contenu actif pour leur client SharePoint Online.
   
-## <a name="how-does-this-work"></a>Comment cela fonctionne-t-il ?
+## <a name="how-does-this-work"></a>Comment cela fonctionne-t-il?
 
-Lorsque l’ordinateur client se connecte à SharePoint Online à partir d’une région différente, la connexion est redirigée vers le centre de données SharePoint Online active. Dans ce scénario, le client utilise une norme offrant, ce qui les connexions portails restant local et les connexions de SharePoint Online est dirigées vers le centre de données active.
+Lorsque l'ordinateur client se connecte à SharePoint Online à partir d'une autre région, la connexion est redirigée vers le centre de contenu SharePoint Online actif. Dans ce scénario, le client utilise une offre standard, ce qui entraîne le reste de la connexion au portail local et la direction des connexions SharePoint Online vers le centre de contenu actif.
   
-1. L’ordinateur client demande aux serveurs DNS locaux l’adresse IP associée à Office 365.
+1. L'ordinateur client demande aux serveurs DNS locaux l'adresse IP associée à Office 365.
 
-2. Serveurs DNS locaux de l’ordinateur client demandent aux serveurs DNS de Microsoft pour l’adresse IP associée à Office 365.
+2. Les serveurs DNS locaux de l'ordinateur client demandent aux serveurs DNS de Microsoft l'adresse IP associée à Office 365.
 
-3. Les serveurs DNS de Microsoft renvoient le nom du serveur de SharePoint Online Centre de données actif (basé sur l’emplacement du client d’Office 365 du client) et l’ordinateur client répète les étapes 1 et 2 pour obtenir l’adresse IP du centre de données Office 365 active.
+3. Les serveurs DNS de Microsoft renvoient le nom de serveur du centre de ressources SharePoint Online actif (en fonction de l'emplacement du client Office 365 client), et l'ordinateur client répète les étapes 1 et 2 pour obtenir l'adresse IP du centre de ressources Office 365 actif.
 
-4. L’ordinateur client se connecte à l’adresse IP du centre de données actif.
+4. L'ordinateur client se connecte à l'adresse IP du centre de de l'activité active.
 
 ![Centre de données américain actif](media/c6d2933f-49cb-4536-bea7-c868707755ae.png)
   
 ## <a name="connecting-over-virtual-private-networks-vpns"></a>Connexion sur des réseaux privés virtuels (VPN)
 
-Ce type de connexion s’applique uniquement lorsqu’un réseau privé virtuel (VPN) est utilisé par les ordinateurs clients. En réalité, le comportement d’Office 365 n’est pas modifié simplement comme un VPN est utilisé, mais VPN sont couramment utilisés pour contrôler comment les ordinateurs clients établissent des connexions vers Office 365 et généralement les résultats dans une expérience de dégradé, il est donc important couvrir.
+Ce type de connexion s'applique uniquement lorsqu'un réseau privé virtuel (VPN) est utilisé par des ordinateurs clients. En réalité, le comportement d'Office 365 n'est pas modifié simplement en raison de l'utilisation d'un VPN, mais les VPN sont généralement utilisés pour contrôler la façon dont les ordinateurs clients établissent des connexions à Office 365 et entraînent généralement une dégradation de l'expérience, c'est pourquoi il est important de les aborder.
   
-## <a name="how-does-this-work"></a>Comment cela fonctionne-t-il ?
+## <a name="how-does-this-work"></a>Comment cela fonctionne-t-il?
 
-Lorsque l’ordinateur client établit une connexion VPN avec un réseau d’entreprise dans une région différente, les serveurs DNS qu’office sont utilisés au lieu des serveurs DNS de l’emplacement de l’ordinateur client. Dans la plupart des cas, cette connexion supplémentaire sur le réseau privé virtuel entraîne une dégradation l’expérience Office 365. Les services Office 365 sont optimisées pour les connexions client de service en tant que proche de l’utilisateur final que possible. Tirer parti de nombreux services du réseau de périphérie Azure, les réseaux de distribution de contenu et la capacité du réseau fiable sur le réseau Microsoft pour fournir la meilleure expérience possible lorsque des requêtes de réseau pour les services Office 365 aussi proche de l’ordinateur client que possible.
+Lorsque l'ordinateur client établit une connexion VPN à un bureau d'entreprise situé dans une autre région, les serveurs DNS de ce bureau sont utilisés à la place des serveurs DNS de l'emplacement de l'ordinateur client. Dans la plupart des cas, cette connexion supplémentaire sur le réseau privé virtuel (VPN) dégradera l'expérience Office 365. Les services Office 365 sont optimisés pour traiter les connexions des clients aussi près que possible de l'utilisateur final. De nombreux services exploitent le réseau Edge Azure, les réseaux de distribution de contenu et la capacité réseau fiable sur le réseau Microsoft pour offrir une expérience utilisateur optimale lorsque des demandes réseau pour les services Office 365 sont apportées à proximité de l'ordinateur client. que possible.
   
-1. L’ordinateur client demande des serveurs DNS VPN pour l’adresse IP associée à Office 365.
+1. L'ordinateur client demande aux serveurs DNS VPN l'adresse IP associée à Office 365.
 
-2. Serveurs DNS VPN de l’ordinateur client demandent aux serveurs DNS de Microsoft pour l’adresse IP associée à Office 365.
+2. Les serveurs DNS VPN de l'ordinateur client demandent aux serveurs DNS de Microsoft l'adresse IP associée à Office 365.
 
-3. Les serveurs DNS de Microsoft renvoient le nom du serveur local (basé sur l’emplacement des serveurs DNS VPN) et l’ordinateur client répète les étapes 1 et 2 pour obtenir les informations d’adresse IP du centre de données Office 365 régionaux.
+3. Les serveurs DNS de Microsoft renvoient le nom du serveur régional (en fonction de l'emplacement des serveurs DNS VPN) et l'ordinateur client répète les étapes 1 et 2 pour obtenir les informations d'adresse IP du centre de données Office 365 régional.
 
-4. L’ordinateur client connecte au centre de données adresse IP qui est le plus proche du siège que lequel il a établi une connexion VPN.
+4. L'ordinateur client se connecte à l'adresse IP du centre de contenu le plus proche du Bureau d'entreprise auprès duquel il a établi une connexion VPN.
 
 ![Connectivité VPN du centre de données](media/b5f4c06c-65a3-462d-aae8-9a4602dd8d9e.png)
   
-Voici un lien court, que vous pouvez utiliser pour revenir :[https://aka.ms/o365clientconnectivity](https://aka.ms/o365clientconnectivity)
+Voici un lien que vous pouvez utiliser pour revenir : [https://aka.ms/o365clientconnectivity](https://aka.ms/o365clientconnectivity)
   
 ## <a name="see-also"></a>Voir aussi
 
-[Gestion des points de terminaison Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
+[Gestion des points de terminaison Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   
 [Connectivité réseau à Office 365](network-connectivity.md)

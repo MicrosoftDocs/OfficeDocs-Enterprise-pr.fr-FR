@@ -19,11 +19,11 @@ search.appverid:
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Découvrez comment l'identité de l'utilisateur est gérée dans Office 365.
 ms.openlocfilehash: c9dff7e17e4c0dcceb7cdeab86c1acdd40e01205
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001557"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487761"
 ---
 # <a name="understanding-office-365-identity-and-azure-active-directory"></a>Présentation de l’identité Office 365 et d’Azure Active Directory
 

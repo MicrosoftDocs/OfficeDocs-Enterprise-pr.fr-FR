@@ -1,5 +1,5 @@
 ---
-title: Planification réseau et de migration pour Office 365
+title: Planification du réseau et de la migration pour Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -18,13 +18,13 @@ search.appverid:
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: Contient des liens vers des informations sur la planification et le test du réseau, ainsi que sur la migration vers Office 365.
 ms.openlocfilehash: 02576933a1be615e65b695a7dd72c19eed311c91
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30574038"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487274"
 ---
-# <a name="network-and-migration-planning-for-office-365"></a>Planification réseau et de migration pour Office 365
+# <a name="network-and-migration-planning-for-office-365"></a>Planification du réseau et de la migration pour Office 365
 
 Cet article contient des liens vers des informations sur la planification et le test du réseau, ainsi que sur la migration vers Office 365.
   
@@ -108,8 +108,8 @@ Ces rubriques contiennent des informations détaillées sur le réseau Office 36
     
 - [Forum aux questions sur la mise en réseau vidéo d'Office 365 (FAQ)](office-365-video-networking-faq.md)
     
-- [Planifier les périphériques réseau qui se connectent aux services Office 365](plan-for-network-devices.md)
+- [Planifier les périphériques réseau qui se connectent aux services Office 365](plan-for-network-devices.md)
     
-- [Conseillers de déploiement pour les services Office 365](deployment-advisors-for-office-365.md)
+- [Conseillers de déploiement pour les services Office 365](deployment-advisors-for-office-365.md)
     
 

@@ -19,11 +19,11 @@ search.appverid:
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Les conseillers de déploiement pour Office 365 vous donnent une assistance auto-guidée pour la configuration d'Office 365.
 ms.openlocfilehash: cbb992b178f98f7149137c5c29569e36190db2e2
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741471"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490080"
 ---
 # <a name="deployment-advisors-for-office-365-services"></a>Conseillers de déploiement pour les services Office 365
 
@@ -54,7 +54,7 @@ Microsoft [Exchange Online Protection (EoP)](https://aka.ms/EOPguidance) est un 
 
 ## <a name="file-creation-storage-and-sharing"></a>Création, stockage et partage de fichiers
 
-### <a name="office-365-proplus"></a>Office 365 ProPlus
+### <a name="office-365-proplus"></a>Office 365 ProPlus
 Le [Guide de démarrage rapide d'Office ProPlus](https://aka.ms/OPPquickstartguide) vous guide tout au long de la procédure d'installation d'Office sur un PC ou un Mac de votre entreprise, ainsi que des conseils pour faire démarrer tous les utilisateurs avec Office.
 
 Le [conseiller de déploiement Office ProPlus](https://aka.ms/o365proplusdeploy) vous aide à faire en sorte que vos utilisateurs fonctionnent sur les versions les plus récentes d'Office. Ce conseiller vous guide tout au long des étapes nécessaires pour aider les utilisateurs à installer Office directement à partir d'Office 365 Portal Online ou pour déployer Office auprès de vos utilisateurs à partir d'un emplacement local. Les instructions relatives à l'utilisation de System Center Configuration Manager, d'un script de démarrage de stratégie de groupe, d'une image de disque du système d'exploitation ou de l'activation partagée des services Bureau à distance (RDS).
@@ -73,7 +73,7 @@ Le [conseiller de déploiement SharePoint Online](https://aka.ms/spoguidance) vo
 ### <a name="azure-active-directory-connect-azure-ad-connect-advisor"></a>Azure Active Directory Connect (Azure AD Connect) Advisor
 Le [conseiller Azure ad Connect](https://aka.ms/aadconnectpwsync) est un guide pas à pas qui vous montre comment ajouter des informations de compte d'utilisateur à Office 365 sans créer manuellement chaque utilisateur. Il explique également comment configurer la synchronisation de hachage de mot de passe ou l'authentification directe, afin que les utilisateurs puissent se connecter à leur messagerie et à votre domaine à l'aide du même mot de passe. Si vous choisissez de configurer la connexion fédérée avec AD FS, ce guide vous explique également comment déployer AD FS sur un nouveau serveur ou dans une batterie de serveurs Windows Server 2012 R2 existante. Azure AD Connect remplace les anciennes versions des outils d'intégration des identités, tels que dirSync et Azure AD Sync, et sert principalement à ajouter des utilisateurs et d'autres données à Azure Active Directory pour Office 365.
   
-### <a name="azure"></a>Azur
+### <a name="azure"></a>Azure
 Le [Guide de configuration d'Azure ad basique](https://aka.ms/azureadbasic) vous aide à configurer les fonctionnalités, telles que la gestion des accès basée sur un groupe, la réinitialisation du mot de passe en libre-service pour les applications Cloud et le proxy d'application Azure Active Directory pour la publication d'applications Web locales.
   
 Le [Guide de configuration d'Azure ad Premium](https://aka.ms/aadpguidance) vous permet d'activer les nombreuses fonctionnalités d'Azure Active Directory Premium (Azure ad Premium), qui fournit des fonctionnalités de gestion des identités telles que l'authentification multifacteur, l'authentification unique (SSO), l'inscription de l'appareil gestion des mots de passe et des groupes, et surveillance de la sécurité.
@@ -88,7 +88,7 @@ Le conseiller [vérifier votre domaine dans office 365](https://aka.ms/verifyyou
 
 Les groupes Office 365 sont un espace de travail partagé pour les messages électroniques, les conversations, les fichiers et les événements où les membres du groupe peuvent effectuer des opérations collectives. Les groupes dans Office 365 vous permettent de choisir un ensemble de personnes avec lesquelles vous souhaitez collaborer et de configurer facilement une collection de ressources à partager pour ces personnes. Vous n'avez pas à vous soucier de l'affectation manuelle d'autorisations à toutes ces ressources, car l'ajout de membres au groupe leur accorde automatiquement les autorisations dont ils ont besoin pour les outils fournis par votre groupe.
   
-### <a name="microsoft-teams"></a>Microsoft Teams
+### <a name="microsoft-teams"></a>Microsoft Teams
 
 [Conseiller en matière de déploiement de teams](https://aka.ms/teamsguidance)
   
@@ -142,7 +142,7 @@ Microsoft StaffHub est une plateforme basée sur le Cloud qui fonctionne sur tou
 [Préparer votre environnement](https://go.microsoft.com/fwlink/?linkid=2043822)
 
 
-### <a name="office-365-proplus"></a>Office 365 ProPlus
+### <a name="office-365-proplus"></a>Office 365 ProPlus
 
 [Expérience Office en tant que service d'abonnement](https://aka.ms/qo45jf)
   

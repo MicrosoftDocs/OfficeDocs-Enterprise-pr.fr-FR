@@ -17,11 +17,11 @@ ms.custom:
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: 'Résumé : Configurez et faites une démonstration de la sécurité des applications cloud Office 365 dans votre environnement de développement/test Office 365.'
 ms.openlocfilehash: aa6fada78ada2f97242ffe8f60c9032d618f3b9b
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741260"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490120"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Sécurité des applications cloud pour votre environnement de développement/test Office 365
 
@@ -32,7 +32,7 @@ Office 365 Cloud App Security, précédemment appelé Office 365 Advanced Securi
 Les instructions fournies dans cet article indiquent comment activer et tester la sécurité des applications cloud dans votre abonnement d’évaluation Office 365.
   
 > [!TIP]
-> Cliquez [ici](http://aka.ms/catlgstack) pour afficher un plan de tous les Articles de la pile de guides de laboratoire de Test Office 365.
+> Cliquez [ici](http://aka.ms/catlgstack) pour afficher le plan de tous les articles dans le Guide de Laboratoire Test Office 365.
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Phase 1 : Créer votre environnement de développement/test Office 365 en mode léger ou pour entreprise simulée
 
@@ -63,9 +63,9 @@ Dans cette procédure, vous démontrez qu'avant d'activer la sécurité des appl
     
 5. Sur la page **utilisateur 4**, cliquez sur **Modifier** pour la ligne **Rôles**.
     
-6. Dans la page **modifier les rôles d'utilisateur** , cliquez sur **administrateur général**, tapez **user4@contoso.com** l'adresse de messagerie de **remplacement**, puis cliquez sur **Enregistrer**. Cliquez sur **Fermer** à deux reprises.
+6. Sur la page **Modifier les rôles d’utilisateur**, cliquez sur **Administrateur général**, entrez **utilisateur4@contoso.com** comme **autre adresse de messagerie**, puis cliquez sur **Enregistrer**. Cliquez sur **Fermer** à deux reprises.
     
-7. Sélectionnez l’icône de lanceur d’applications dans l’angle supérieur gauche et choisissez **Messagerie**.
+7. 	Sélectionnez l’icône de lanceur d’applications dans l’angle supérieur gauche et choisissez **Messagerie**.
     
 8. Attendez 30 minutes. Notez qu'aucun message électronique dans la boîte de réception ne vous avertit de la modification apportée au rôle de l'utilisateur 4 en tant qu'administrateur général.
     
@@ -131,7 +131,7 @@ Cette procédure permet de montrer comment la sécurité des applications cloud 
     
 11. Sur la page **utilisateur 5**, cliquez sur **Modifier** pour la ligne **Rôles**.
     
-12. Dans la **page modifier les rôles d'utilisateur** , cliquez sur **administrateur personnalisé**, sur administrateur **de mots de passe** et **administrateur de gestion des utilisateurs**, tapez **user5@contoso.com** l'adresse de messagerie de **remplacement**, puis cliquez sur **Enregistrer**. Cliquez sur **Fermer** à deux reprises.
+12. Sur la page **Modifier les rôles d’utilisateur**, cliquez sur **Administrateur personnalisé**, cliquez sur **Administrateur de mots de passe** et sur **Administrateur de gestion des utilisateurs**, entrez **utilisateur5@contoso.com** comme **autre adresse de messagerie**, puis cliquez sur **Enregistrer**. Cliquez sur **Fermer** à deux reprises.
     
 13. Cliquez sur l’icône de l’utilisateur dans le coin supérieur droit, puis cliquez sur **Déconnexion**.  
     
@@ -161,7 +161,7 @@ Vous pouvez désormais utiliser cet environnement pour créer des stratégies et
 
 [Guides de laboratoire de test d’adoption cloud](cloud-adoption-test-lab-guides-tlgs.md)
   
-[Environnement de développement/test Office 365](office-365-dev-test-environment.md)
+[Environnement de développement/test Office 365](office-365-dev-test-environment.md)
   
 [Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.md)
 

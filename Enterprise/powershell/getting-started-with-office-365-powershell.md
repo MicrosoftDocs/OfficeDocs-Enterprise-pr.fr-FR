@@ -1,5 +1,5 @@
 ---
-title: Mise en route d’Office 365 Powershell
+title: Mise en route d'Office 365 Powershell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,11 +15,11 @@ ms.custom:
 ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
 description: "Résumé : Comprendre l'importance de Office 365 PowerShell, vous connecter à votre client Office 365 et obtenir de l'aide."
 ms.openlocfilehash: cc9583fcfeb0822cc9fe1b7a39b090c37442169e
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
-ms.translationtype: HT
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2018
-ms.locfileid: "17552807"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491230"
 ---
 # <a name="getting-started-with-office-365-powershell"></a>Mise en route d’Office 365 Powershell
 

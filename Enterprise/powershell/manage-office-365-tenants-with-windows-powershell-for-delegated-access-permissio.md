@@ -14,11 +14,11 @@ ms.custom: ''
 ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
 description: 'Résumé : Utilisez Windows PowerShell pour Office 365 pour gérer les locations de votre client.'
 ms.openlocfilehash: 4fec058bfd7b7dffa2c29add23d99a144f78decf
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
-ms.translationtype: HT
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001857"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491240"
 ---
 # <a name="manage-office-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Gestion de clients Office 365 avec Windows PowerShell pour les partenaires avec autorisations d’accès délégué
 

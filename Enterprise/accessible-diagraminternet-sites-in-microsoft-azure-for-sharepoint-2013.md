@@ -1,5 +1,5 @@
 ---
-title: "Diagramme accessible : sites Internet dans Microsoft Azure pour SharePoint 2013"
+title: 'Diagramme accessible : sites Internet dans Microsoft Azure pour SharePoint 2013'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,16 +10,17 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 71636974-fb99-487c-ac67-f15e9401acba
-description: "Cet article est une version texte accessible du diagramme Sites Internet dans Microsoft Azure pour SharePoint 2013."
+description: Cet article est une version texte accessible du diagramme Sites Internet dans Microsoft Azure pour SharePoint 2013.
 ms.openlocfilehash: 59c84e34ab4d748a80ab0a597817ae4d3464a43c
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487690"
 ---
 # <a name="accessible-diagram---internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>Diagramme accessible : sites Internet dans Microsoft Azure pour SharePoint 2013
 
-**Résumé :** Cet article est une version texte accessible du diagramme nommé des sites Internet de Microsoft Azure pour SharePoint 2013.
+**Résumé:** Cet article est une version texte accessible du diagramme intitulé sites Internet dans Microsoft Azure pour SharePoint 2013.
   
 Cette affiche décrit et illustre la façon dont les sites Internet publics bénéficient de la flexibilité du cloud et d’Azure AD pour les comptes clients. Il existe six différents scénarios qui décrivent comment les sites Internet bénéficient d’Azure :  
   
@@ -37,15 +38,15 @@ Cette affiche décrit et illustre la façon dont les sites Internet publics bén
     
 ## <a name="design-and-size-the-farm-topology"></a>Conception et redimensionnement de la topologie de la batterie de serveurs
 
-Utilisez le Guide de topologie, de capacité et de performances pour SharePoint 2013 sur TechNet pour la conception de la topologie de la batterie. 
+Utilisez les conseils de topologie, de capacité et de performances pour SharePoint 2013 sur TechNet pour concevoir la topologie de la batterie de serveurs. 
   
 Assurez-vous que la batterie que vous concevez répond aux objectifs de capacité et de performance.  
   
 ### <a name="example-medium-internet-sites-farm-85-page-views-per-second"></a>Exemple : Batterie de serveurs de sites Internet de taille moyenne (environ 85 pages consultées par seconde)
 
-Cette batterie de serveurs fournit une topologie de batterie de serveurs de recherche SharePoint 2013 à tolérance de pannes qui est optimisée pour un corpus qui contient des 3,400,000 éléments. 
+Cette batterie de serveurs fournit une topologie de batterie de serveurs de recherche SharePoint 2013 tolérante aux pannes qui est optimisée pour un corpus contenant 3,4 millions éléments. 
   
-La batterie exemple traite les documents de 100 à 200 par seconde, en fonction de la langue, et qu’il prend en charge 85 vues de page par seconde et 100 requêtes par seconde. 
+L'exemple de batterie de serveurs traite 100-200 documents par seconde, en fonction de la langue, et il prend en charge les vues de page 85 par seconde et les requêtes 100 par seconde. 
   
 Le diagramme associé présente une batterie de serveurs de sites Internet de taille moyenne avec trois types de serveurs :  
   
@@ -95,7 +96,7 @@ La partie supérieure du diagramme représente la batterie de serveurs SharePoin
     
 ### <a name="after"></a>Après
 
-Cette partie du diagramme montre la batterie de serveurs SharePoint après que qu’il a été optimisé pour une disponibilité définit dans Azure. Pour adapter cette architecture pour Azure, nous dupliquerez des quatre composants sur les trois serveurs. Cela permet d’augmenter le nombre de composants au-delà de ce qui est nécessaire pour les performances et la capacité. Le compromis est que cette conception garantit la haute disponibilité de tous les quatre composants de la plateforme Azure lorsque ces trois ordinateurs virtuels sont affectés à un ensemble de disponibilité. 
+Cette partie du diagramme représente la batterie de serveurs SharePoint après qu’elle a été ajustée pour les groupes à haute disponibilité dans Azure. Pour adapter cette architecture à Azure, nous allons répliquer quatre composants sur les trois serveurs. Ceci augmente le nombre de composants au-delà de ce qui est nécessaire pour atteindre les objectifs de performances et de capacité. En échange, cette conception garantit la haute disponibilité des quatre composants dans la plateforme Azure lorsque ces trois machines virtuelles sont affectées à un groupe à haute disponibilité. 
   
 Les trois serveurs sont configurés pour posséder tous les rôles Analyse, Admin, Analytics et Traitement du contenu.  
   
@@ -103,9 +104,9 @@ Les trois serveurs sont configurés pour posséder tous les rôles Analyse, Admi
 
 Toutes les solutions SharePoint nécessitent les services de domaine Active Directory. À ce stade, il existe deux options pour les solutions SharePoint dans Azure.   
   
-- Option 1 : Les domaine dédié, vous pouvez déployer un domaine dédié et isolé sur Azure pour prendre en charge d’une batterie de serveurs SharePoint. Il s’agit d’un bon choix pour les sites Internet accessible au public. 
+- Option 1: domaine dédié: vous pouvez déployer un domaine dédié et isolé vers Azure pour prendre en charge une batterie de serveurs SharePoint. Il s'agit d'un bon choix pour les sites Internet destinés au public. 
     
-- Option 2 : Étendre le domaine local via une connexion VPN de site à site. Lorsque vous étendez le domaine local via une connexion VPN de site à site, les utilisateurs accéder à la batterie de serveurs SharePoint comme si elle était hébergée sur site. Vous pouvez profiter de vos implémentations DNS et Active Directory existantes. 
+- Option 2: étendre le domaine local via une connexion VPN de site à site. Lorsque vous étendez le domaine local via une connexion VPN de site à site, les utilisateurs accèdent à la batterie de serveurs SharePoint comme si elle était hébergée localement. Vous pouvez tirer parti de votre implémentation Active Directory et DNS existante. 
     
 ## <a name="design-for-identity-management-zones-and-authentication"></a>Conception de la gestion des identités, des zones et de l’authentification
 
@@ -147,11 +148,11 @@ Dans cet exemple :
     
 - Configurez la zone Internet pour un accès anonyme.   
     
-N’utilisez pas une création de deux zones dans lequel tous les utilisateurs authentifiés sont configurés pour utiliser la zone par défaut. 
+N'utilisez pas de conception à deux zones dans laquelle tous les utilisateurs authentifiés sont configurés pour utiliser la zone par défaut. 
   
 Le diagramme associé représente une conception en trois zones dans laquelle les comptes internes et clients sont séparés.   
   
-Les visiteurs et clients accéder les clients AD Azure dans la batterie de serveurs SharePoint 2013 grâce à des applications web dans une des deux zones. Les deux zones sont les suivantes : 
+Les visiteurs et les clients accèdent au client Azure AD dans la batterie de serveurs SharePoint 2013 par le biais d'applications Web dans l'une des deux zones. Les deux zones sont les suivantes : 
   
 - Zone : Internet pour les utilisateurs anonymes  
     
@@ -165,7 +166,7 @@ Les utilisateurs disposant de comptes internes accèdent au locataire Azure Acti
   
 Le diagramme associé présente le scénario suivant :  
   
-Lors de l’intégration SharePoint 2013 avec Azure Active Directory, un Azure Access Control Service (ACS) a deux objectifs : 
+Lors de l'intégration de SharePoint 2013 à Azure Active Directory, un service de contrôle d'accès Azure (ACS) a deux objectifs: 
   
 -   Azure AD utilise SAML 2.0 et SharePoint fonctionne uniquement avec SAML 1.1. ACS comprend les deux formats et fait office d’intermédiaire pour transformer les formats de jeton entre SharePoint et Azure AD.   
     
@@ -197,23 +198,23 @@ URL d’application web et de site racine 
     
 Le diagramme associé représente des services de pool d’applications telles que la recherche interagissant avec les collections de sites à l’aide des applications web. Les collections de sites affichées sont les suivantes :  
   
-- Collection de sites basée sur des chemins d’accès, disponible à l’adresse http://internal:8000 (site racine).  
+- Collection de sites basée sur des chemins http://internal:8000 d'accès située sur (site racine). 
     
-- Analyse : Collections de sites nommées par l’hôte situées à une adresse du type https://authoring.contoso.com:8000.  
+- Analyse: collections de sites nommées par l'hôte situées à une https://authoring.contoso.com:8000adresse telle que. 
     
 - Requêtes : 2 collections de sites distinctes nommées par l’hôte et situées à des adresses telles que les suivantes :  
     
   - http://www.contoso.com 
     
-  - https://Secure.contoso.com 
+  - https://secure.contoso.com 
     
   - http://www.contoso.com:8000 
     
-  - http://Assets.contoso.com 
+  - http://assets.contoso.com 
     
   - https://secureassets.contoso.com 
     
-  - http://Assets.contoso.com:8000 
+  - http://assets.contoso.com:8000 
     
 ## <a name="design-the-azure-environment"></a>Conception de l’environnement Azure
 

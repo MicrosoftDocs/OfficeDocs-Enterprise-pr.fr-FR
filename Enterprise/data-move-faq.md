@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: Voici des réponses à des questions d'ordre général sur le transfert de données principales vers une nouvelle région de centre de données.
 ms.openlocfilehash: 009602161585b229074e049f5506d118397f1d49
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "30665237"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490064"
 ---
 # <a name="data-move-general-faq"></a>FAQ général relatif au déplacement de données
 
@@ -145,7 +145,7 @@ Oui, votre locataire peut être inscrit.  Nous allons déplacer toutes les boît
 
 [Transfert de données principales vers le nouveau centre de données Office 365 régions centres](moving-data-to-new-datacenter-geos.md)
 
-[Procédure de demande d'un déplacement de données](request-your-data-move.md)
+[Procédure de demande d’un déplacement de données](request-your-data-move.md)
 
 [Office 365 multi-géo](https://aka.ms/multi-geo)
 

@@ -15,11 +15,11 @@ ms.custom: Ent_Architecture
 ms.assetid: 83e2859a-c673-47c4-880a-01cdfdadb93e
 description: "Résumé : Comprendre comment l'adoption cloud nécessite une nouvelle approche des investissements relatifs à l'infrastructure réseau."
 ms.openlocfilehash: c8fba120292b89894850312a84fd6067d925a07f
-ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26872255"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487240"
 ---
 # <a name="evolving-your-network-for-cloud-connectivity"></a>Évolution de votre réseau pour la connectivité au cloud
 
@@ -45,7 +45,7 @@ Investissements concernant les infrastructures réseau commencent par la connect
     
 - **Azure Infrastructure as a Service (IaaS)**: en plus des investissements pour les services SaaS et PaaS de Microsoft, l'exécution de charges de travail informatiques dans IaaS nécessite la création et la configuration de réseaux virtuels Azure hébergeant des machines virtuelles, la connectivité sécurisée des applications exécutées sur ces dernières, le routage, l'adressage IP, le DNS et l'équilibrage de charge. Les investissements en cours incluent la surveillance et le dépannage des performances et de la sécurité.
 
-[365 Microsoft](https://www.microsoft.com/microsoft-365) est une combinaison de Windows 10 + sécurité (EMS), Office 365 et gestion de contenu d’entreprise. Microsoft 365 combine plusieurs SaaS et services Azure pour une solution complète et intelligente qui permet à tout le monde creative et collaborer en toute sécurité.
+[Microsoft 365](https://www.microsoft.com/microsoft-365) est une combinaison d'Office 365, Enterprise Management + Security (EMS) et Windows 10. Microsoft 365 combine plusieurs services SaaS et Azure pour une solution complète et intelligente qui permet à chacun d'être créatif et de collaborer en toute sécurité.
     
 ## <a name="areas-of-networking-investment-for-success-in-the-cloud"></a>Domaines d’investissement concernant les réseaux pour la réussite du cloud
 
@@ -61,9 +61,9 @@ La plupart de votre trafic de productivité quotidien empruntant le cloud, vous 
   
 ### <a name="for-a-high-sla-to-azure-office-365-and-dynamics-365-use-expressroute"></a>Pour un SLA élevé sur Azure, Office 365 et Dynamics 365, utiliser ExpressRoute
 
-Bien que vous pouvez utiliser votre connexion Internet actuelle à partir de votre réseau de périmètre, le trafic vers et depuis les services en nuage Microsoft doit partager le canal avec les autres trafic intranet vers Internet. En outre, le trafic aux services de cloud Microsoft est soumis aux embouteillages Internet.
+Bien que vous puissiez utiliser votre connexion Internet actuelle à partir de votre réseau de périmètre, le trafic vers et depuis les services de Cloud Computing Microsoft doit partager le canal avec le trafic intranet vers Internet. En outre, le trafic vers les services cloud de Microsoft est soumis à la congestion du trafic Internet.
   
-Pour un SLA élevé et des performances optimales, utilisez ExpressRoute, une connexion WAN dédiée entre votre réseau et Azure, Office 365, Dynamics 365 ou tous les trois. 
+Pour un SLA élevé et des performances optimales, utilisez ExpressRoute, une connexion WAN dédiée entre votre réseau et Azure, Office 365, Dynamics 365 ou tous les trois.  
   
 ExpressRoute peut tirer profit de votre fournisseur de réseau existant pour une connexion dédiée. Les ressources connectées par ExpressRoute apparaissent comme si elles se trouvaient sur votre réseau étendu, même pour les organisations dispersées géographiquement.
   
@@ -83,7 +83,7 @@ L'étendue des investissements concernant le réseau dépend de la catégorie du
 |Concevoir une connectivité fiable, redondante et performante aux réseaux virtuels Azure  <br/> |||S’applique  <br/> |
 |Créer une connectivité sécurisée aux machines virtuelles Azure  <br/> |||S’applique  <br/> |
 |Concevoir et implémenter le routage entre les emplacements locaux et les réseaux virtuels  <br/> |||S’applique  <br/> |
-|Concevoir et implémenter l'équilibrage de charge pour les charges de travail informatiques internes et accessibles sur Internet  <br/> |||S’applique  <br/> |
+|Concevoir et implémenter l'équilibrage de charge pour les charges de travail informatiques internes et accessibles sur Internet  <br/> |||S'applique  <br/> |
 |Résoudre les problèmes de connectivité et de débit des machines virtuelles  <br/> |||S’applique  <br/> |
    
 ## <a name="next-step"></a>Étape suivante

@@ -1,5 +1,5 @@
 ---
-title: Scénarios de cloud hybride pour les services PaaS Azure
+title: Scénarios de cloud hybride pour Azure PaaS
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,11 +13,11 @@ ms.custom: Ent_Architecture
 ms.assetid: 5f4f5d0d-4638-48e8-a517-bd804856b617
 description: "Résumé : Comprendre l'architecture hybride et les scénarios pour les offres cloud PaaS de Microsoft dans Azure."
 ms.openlocfilehash: f4d90d51a7627063fae6fd168681bdf96cb4d6bc
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741370"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491192"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-paas"></a>Scénarios de cloud hybride pour les services PaaS Azure
 
@@ -29,7 +29,7 @@ Combinez des données locales ou des ressources de calcul à des applications no
 
 La Figure 1 présente l’architecture des scénarios hybrides PaaS de Microsoft dans Azure.
   
-**Figure 1 : Scénarios hybrides Microsoft PaaS dans Azure**
+**Figure 1 : Scénarios hybrides Microsoft PaaS dans Azure**
 
 ![Scénarios hybrides Microsoft PaaS dans Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS.png)
   
@@ -55,7 +55,7 @@ Pour chaque couche de l’architecture :
 
 La Figure 2 illustre la configuration d’une application hybride exécutée dans Azure.
   
-**Figure 2 : Application hybride Azure PaaS**
+**Figure 2 : Application hybride Azure PaaS**
 
 ![Application hybride Azure PaaS](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS-Apps.png)
   
@@ -77,7 +77,7 @@ L’application Azure peut utiliser les informations d’identification des sour
 
 La Figure 3 illustre un exemple d’application hybride exécutée dans Azure.
   
-**Figure 3 : Exemple d’application hybride Azure PaaS**
+**Figure 3 : Exemple d'application hybride Azure PaaS**
 
 ![Exemple d’application hybride Azure PaaS](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS-Apps-Ex.png)
   
@@ -97,7 +97,7 @@ Cet exemple d'application Azure PaaS hybride est une application mobile personna
   
 ## <a name="see-also"></a>Voir aussi
 
-[Cloud hybride Microsoft pour les architectes d’entreprise](microsoft-hybrid-cloud-for-enterprise-architects.md)
+[Cloud hybride Microsoft pour les architectes d'entreprise](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
-[Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Ressources relatives à l’architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
 

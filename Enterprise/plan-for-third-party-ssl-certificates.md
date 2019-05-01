@@ -1,5 +1,5 @@
 ---
-title: Planifier les certificats SSL tiers pour Office 365
+title: Planifier les certificats SSL tiers pour Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -17,15 +17,15 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: b48cdf63-07e0-4cda-8c12-4871590f59ce
-description: 'Résumé : Décrit les certificats SSL nécessaires pour Exchange sur site et hybride, l’authentification unique via AD FS, les services Exchange Online et les services web Exchange.'
+description: "Résumé: décrit les certificats SSL nécessaires pour Exchange sur site et hybride, l'authentification unique à l'aide d'AD FS, d'Exchange Online Services et des services Web Exchange."
 ms.openlocfilehash: 3c22daa2315e36c45b5b5dd6271842168c90726d
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085323"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491410"
 ---
-# <a name="plan-for-third-party-ssl-certificates-for-office-365"></a>Planifier les certificats SSL tiers pour Office 365
+# <a name="plan-for-third-party-ssl-certificates-for-office-365"></a>Planifier les certificats SSL tiers pour Office 365
 
  **Résumé:** Décrit les certificats SSL nécessaires pour Exchange sur site et hybride, l'authentification unique à l'aide d'AD FS, d'Exchange Online Services et des services Web Exchange. 
   
@@ -35,11 +35,11 @@ Pour chiffrer les communications entre vos clients et l'environnement Office 365
 |:-----|
 | Cet article fait partie de la [planification réseau et du réglage des performances pour Office 365](https://aka.ms/tune).|
    
-Des certificats sont requis pour les composants Office 365 suivants :
+Les certificats sont requis pour les composants Office 365 suivants:
   
 - Exchange local
     
-- Authentification unique (SSO) (pour les serveurs de fédération ADFS (Active Directory Federation Services) et les serveurs proxy de fédération ADFS)
+- Authentification unique (SSO) (pour les serveurs de fédération AD FS (Active Directory Federation Services) et les proxys de serveur de fédération AD FS)
     
 - Services Exchange Online, tels que la découverte automatique, Outlook Anywhere et les services Web Exchange
     
@@ -55,16 +55,16 @@ Pour fournir à vos utilisateurs une expérience d'authentification unique simpl
   
 ||||
 |:-----|:-----|:-----|
-|**Type de certificat** <br/> |**Description** <br/> |**Ce qu’il faut savoir avant de procéder au déploiement** <br/> |
-|**Certificat SSL (également appelé certificat d'authentification serveur)** <br/> |Il s'agit d'un certificat SSL standard utilisé pour sécuriser les communications entre les serveurs de fédération, les clients et les serveurs proxy de fédération.  <br/> |AD FS nécessite un certificat SSL. Par défaut, AD FS utilise le certificat SSL configuré pour le site Web par défaut dans Internet Information Services (IIS).<br/> Le nom de sujet de ce certificat SSL est utilisé pour déterminer le nom du service FS (Federation Service) pour chaque instance des services ADFS (Active Directory Federation Services) que vous déployez. Vous pouvez choisir un nom de sujet pour les nouveaux certificats émis par une autorité de certification qui représente le mieux le nom de votre société ou organisation vers Office 365. Ce nom doit être routable par Internet.<br/>**Attention:** AD FS nécessite que ce certificat SSL n'ait pas de nom d'objet sans point (nom abrégé).          <br/> **Recommandation:** Étant donné que ce certificat doit être approuvé par les clients AD FS, nous vous recommandons d'utiliser un certificat SSL émis par une autorité de certification publique (tierce) ou par une autorité de certification qui est subordonnée à une racine de confiance publique; par exemple, VeriSign ou Thawte.  <br/> |
-|**Certificat de signature de jetons** <br/> |Il s'agit d'un certificat X. 509 standard qui est utilisé pour signer de manière sécurisée tous les jetons que le serveur de Fédération émet et qu'Office 365 accepte et valide.  <br/> |Le certificat de signature de jetons doit contenir une clé privée qui est chaînée à une racine de confiance dans les FS. Par défaut, AD FS crée un certificat auto-signé. Toutefois, en fonction des besoins de votre organisation, vous pouvez modifier ce certificat en un certificat émis par l'autorité de certification à l'aide du composant logiciel enfichable Gestion AD FS.<br/>**Attention:** Le certificat de signature de jetons est essentiel à la stabilité des FS. Si le certificat est modifié, Office 365 doit être informé de la modification. Si la notification n'est pas fournie, les utilisateurs ne peuvent pas se connecter à leurs offres de service Office 365.<br/>**Recommandation:** Nous vous recommandons d'utiliser le certificat de signature de jetons auto-signé qui est généré par les services ADFS (Active Directory Federation Services). En procédant ainsi, il gère ce certificat par défaut. Par exemple, lorsque ce certificat est sur le paragraphe expire, AD FS génère un nouveau certificat auto-signé.<br/> |
+|**Type de certificat** <br/> |**Description** <br/> |**Ce que vous devez savoir avant de procéder au déploiement** <br/> |
+|**Certificat SSL (également appelé certificat d'authentification de serveur)** <br/> |Il s'agit d'un certificat SSL standard utilisé pour sécuriser les communications entre les serveurs de Fédération, les clients et les serveurs proxy de Fédération.  <br/> |AD FS nécessite un certificat SSL. Par défaut, AD FS utilise le certificat SSL configuré pour le site Web par défaut dans Internet Information Services (IIS).  <br/> Le nom de sujet de ce certificat SSL est utilisé pour déterminer le nom du service FS (Federation Service) pour chaque instance des services ADFS (Active Directory Federation Services) que vous déployez. Vous pouvez choisir un nom de sujet pour les nouveaux certificats émis par une autorité de certification qui représente le mieux le nom de votre société ou organisation vers Office 365. Ce nom doit être routable par Internet.  <br/>**Attention:** AD FS nécessite que ce certificat SSL n'ait pas de nom d'objet sans point (nom abrégé).          <br/> **Recommandation:** Étant donné que ce certificat doit être approuvé par les clients AD FS, nous vous recommandons d'utiliser un certificat SSL émis par une autorité de certification publique (tierce) ou par une autorité de certification qui est subordonnée à une racine de confiance publique; par exemple, VeriSign ou Thawte.  <br/> |
+|**Certificat de signature de jetons** <br/> |Il s'agit d'un certificat X. 509 standard qui est utilisé pour signer de manière sécurisée tous les jetons que le serveur de Fédération émet et qu'Office 365 accepte et valide.  <br/> |Le certificat de signature de jetons doit contenir une clé privée qui est chaînée à une racine de confiance dans les FS. Par défaut, AD FS crée un certificat auto-signé. Toutefois, en fonction des besoins de votre organisation, vous pouvez modifier ce certificat en un certificat émis par l'autorité de certification à l'aide du composant logiciel enfichable Gestion AD FS.  <br/>**Attention:** Le certificat de signature de jetons est essentiel à la stabilité des FS. Si le certificat est modifié, Office 365 doit être informé de la modification. Si la notification n'est pas fournie, les utilisateurs ne peuvent pas se connecter à leurs offres de service Office 365.<br/>**Recommandation:** Nous vous recommandons d'utiliser le certificat de signature de jetons auto-signé qui est généré par les services ADFS (Active Directory Federation Services). En procédant ainsi, il gère ce certificat par défaut. Par exemple, lorsque ce certificat est sur le paragraphe expire, AD FS génère un nouveau certificat auto-signé.  <br/> |
    
-Les serveurs proxy de fédération nécessitent le certificat décrit dans le tableau suivant.
+Les proxies de serveur de Fédération nécessitent le certificat décrit dans le tableau suivant.
   
 ||||
 |:-----|:-----|:-----|
-|**Type de certificat** <br/> |**Description** <br/> |**Ce qu’il faut savoir avant de procéder au déploiement** <br/> |
-|Certificat SSL  <br/> |Il s'agit d'un certificat SSL standard utilisé pour sécuriser les communications entre un serveur de fédération, un serveur proxy de fédération et des ordinateurs clients Internet.  <br/> |Ce certificat SSL doit être lié au site Web par défaut dans IIS avant de pouvoir exécuter l'Assistant Configuration du serveur proxy de fédération AD FS.  <br/> Ce certificat doit avoir le même nom de sujet que le certificat SSL configuré sur le serveur de fédération dans le réseau d'entreprise.  <br/> **Recommandation :** Nous vous recommandons d'utiliser le même certificat d'authentification serveur que celui configuré sur le serveur de fédération auquel ce serveur proxy de fédération se connecte.  <br/> |
+|**Type de certificat** <br/> |**Description** <br/> |**Ce que vous devez savoir avant de procéder au déploiement** <br/> |
+|certificat SSL  <br/> |Il s'agit d'un certificat SSL standard utilisé pour sécuriser les communications entre un serveur de Fédération, un serveur proxy de Fédération et des ordinateurs clients Internet.  <br/> |Ce certificat SSL doit être lié au site Web par défaut dans IIS avant de pouvoir exécuter l'Assistant Configuration du serveur proxy de fédération AD FS.  <br/> Ce certificat doit avoir le même nom de sujet que le certificat SSL configuré sur le serveur de Fédération dans le réseau d'entreprise.  <br/> **Recommandation:** Nous vous recommandons d'utiliser le même certificat d'authentification de serveur que celui configuré sur le serveur de Fédération auquel ce serveur proxy de Fédération se connecte.  <br/> |
    
 ## <a name="certificates-for-autodiscover-outlook-anywhere-and-active-directory-synchronization"></a>Certificats pour la synchronisation Autodiscover, Outlook Anywhere et Active Directory
 

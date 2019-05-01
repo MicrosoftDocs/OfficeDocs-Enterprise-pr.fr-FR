@@ -15,11 +15,11 @@ search.appverid: MET150
 ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 description: Avant de commencer à planifier votre réseau pour la connectivité réseau Office 365, il est important de comprendre les principes de connectivité pour gérer le trafic Office 365 en toute sécurité et obtenir les meilleures performances possibles. Cet article vous aidera à comprendre les instructions les plus récentes pour optimiser en toute sécurité la connectivité réseau Office 365.
 ms.openlocfilehash: 3dfb0732ff15c7d8f3c20ac659f94b8d807afa07
-ms.sourcegitcommit: fd137a68c516379a9f09e06987e8d45d92de7ed6
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30303618"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33492334"
 ---
 # <a name="office-365-network-connectivity-principles"></a>Principes de connectivité réseau Office 365
 
@@ -204,7 +204,7 @@ Microsoft offre une large gamme de fonctionnalités de sécurité Office 365 et 
 
 - **Configurer la protection contre la perte de données (DLP)** DLP vous permet d'identifier les données sensibles et de créer des stratégies qui permettent d'empêcher les utilisateurs de partager accidentellement ou intentionnellement les données. DLP fonctionne dans Office 365, y compris Exchange Online, SharePoint Online et OneDrive, afin que vos utilisateurs puissent rester conformes sans interrompre leur flux de travail.
 
-- **Utiliser le référentiel sécurisé du client** En tant qu'administrateur Office 365, vous pouvez utiliser le référentiel sécurisé du client pour contrôler la manière dont un ingénieur du support technique Microsoft accède à vos données au cours d'une session d'aide. Dans les cas où l'ingénieur a besoin d'accéder à vos données pour dépanner et résoudre un problème, le référentiel sécurisé du client vous permet d'approuver ou de refuser la demande d'accès.
+- **Utiliser le référentiel sécurisé du client** En tant qu'administrateur Office 365, vous pouvez utiliser le référentiel sécurisé du client pour contrôler la manière dont un ingénieur du support technique Microsoft accède à vos données au cours d'une session d'aide. Dans le cas où l'ingénieur requiert l'accès à vos données pour résoudre un problème, le référentiel sécurisé vous permet d'approuver ou de rejeter la demande d'accès.
 
 - **Utiliser le score de sécurité Office 365** Secure score est un outil d'analyse de la sécurité qui vous recommande ce que vous pouvez faire pour réduire davantage les risques. Le score de sécurité examine vos paramètres et activités Office 365 et les compare à une base établie par Microsoft. Vous obtiendrez un score en fonction de l'alignement des meilleures pratiques en matière de sécurité.
 

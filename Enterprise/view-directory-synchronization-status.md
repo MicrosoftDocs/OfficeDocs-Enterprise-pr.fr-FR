@@ -1,5 +1,5 @@
 ---
-title: Afficher le statut de synchronisation d’annuaires dans Office 365
+title: Consulter l’état de synchronisation des annuaires dans Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -18,13 +18,13 @@ search.appverid:
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
 description: Découvrez comment désactiver la synchronisation d'annuaires. Vous pouvez également afficher son état.
 ms.openlocfilehash: a38b723db6f5bafe246e774972ca89c65bc9c846
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001567"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33492100"
 ---
-# <a name="view-directory-synchronization-status-in-office-365"></a>Afficher le statut de synchronisation d’annuaires dans Office 365
+# <a name="view-directory-synchronization-status-in-office-365"></a>Consulter l’état de synchronisation des annuaires dans Office 365
 
 Si vous avez intégré Active Directory sur site à Azure AD en synchronisant votre environnement local avec Office 365, vous pouvez également vérifier l'état de votre synchronisation.
   
@@ -39,7 +39,7 @@ Le tableau suivant répertorie les fonctionnalités sur lesquelles vous pouvez o
   
 En cas de problème avec la synchronisation d'annuaires, les erreurs sont également répertoriées sur cette page. Pour plus d'informations sur les différentes erreurs que vous pouvez rencontrer, consultez la rubrique [identifier les erreurs de synchronisation d'annuaires dans Office 365](identify-directory-synchronization-errors.md).
   
-|**Élément**|**Objet**|
+|**Item**|**Objet**|
 |:-----|:-----|
 |**Domaines vérifiés** | Nombre de domaines dans votre client 365 Office que vous avez vérifié. |
 |**Domaines non vérifiés** | Les domaines que vous avez ajoutés, mais qui n'ont pas été vérifiés. |

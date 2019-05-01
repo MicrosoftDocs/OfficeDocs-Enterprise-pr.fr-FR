@@ -1,5 +1,5 @@
 ---
-title: Paramétrer Skype pour obtenir des performances en ligne Business
+title: Optimiser les performances de Skype Entreprise Online
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -16,47 +16,47 @@ search.appverid:
 - MSO150
 - BCS160
 ms.assetid: beec23c2-c5d6-4e84-a8af-e82aefca7802
-description: Cet article fournit des liens pour les administrateurs système qui souhaitent planifier les besoins en bande passante, ou qui ont besoin d’améliorer les performances de Skype pour Business Online.
+description: Cet article fournit des liens aux administrateurs système qui souhaitent planifier les besoins en bande passante réseau, ou qui doivent améliorer les performances de Skype entreprise online.
 ms.openlocfilehash: f2357491b61c6715491577925e8c952a7f2ea717
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540635"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33492000"
 ---
-# <a name="tune-skype-for-business-online-performance"></a>Paramétrer Skype pour obtenir des performances en ligne Business
+# <a name="tune-skype-for-business-online-performance"></a>Optimiser les performances de Skype Entreprise Online
 
-Cet article fournit des liens pour les administrateurs système qui souhaitent planifier les besoins en bande passante, ou qui ont besoin d’améliorer les performances de Skype pour Business Online. 
+Cet article fournit des liens aux administrateurs système qui souhaitent planifier les besoins en bande passante réseau, ou qui doivent améliorer les performances de Skype entreprise online. 
   
-## <a name="fine-tuning-skype-for-business-online-performance"></a>Ajustement des Skype pour obtenir des performances en ligne Business
+## <a name="fine-tuning-skype-for-business-online-performance"></a>Réglage précis des performances de Skype entreprise Online
 
-- **Pour en savoir plus sur les paramètres et les mesures pour maintenir la qualité des appels pour votre organisation**, il est important de lire [la qualité des médias et des performances pour la connectivité réseau dans Skype pour Business Online](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance). Cet article vous donne des informations, si vous souhaitez utiliser ExpressRoute, sur les types de déploiement et d’autres informations dont vous avez besoin.
+- **Pour en savoir plus sur les paramètres et les mesures permettant de maintenir la qualité des appels pour votre organisation**, il est important de lire la [qualité des médias et les performances de connectivité réseau dans Skype entreprise Online](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance). Cet article vous donne des informations, si vous souhaitez utiliser ExpressRoute, à propos des types de déploiement et d'autres informations dont vous aurez besoin.
     
-- **Pour les déploiements hybrides et en local**, vous pouvez voir la bande passante requise pour Skype pour Business Server dans les conférences rendez-vous, voir [planifier des conférences rendez-vous dans Skype pour Business Server 2015](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/conferencing/dial-in-conferencing).
+- **Pour les déploiements locaux et hybrides**, vous pouvez voir la bande passante requise pour la Conférence rendez-vous de Skype entreprise Server, reportez-vous à la rubrique [plan for Dial-in Conferencing in Skype for Business Server 2015](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/conferencing/dial-in-conferencing).
     
-## <a name="more-ways-to-improve-skype-for-business-online-performance"></a>Autres façons d’améliorer Skype pour obtenir des performances en ligne Business
+## <a name="more-ways-to-improve-skype-for-business-online-performance"></a>Autres méthodes pour améliorer les performances de Skype entreprise Online
 
-- [ExpressRoute et QoS dans Skype pour Business Online](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/expressroute-and-qos-in-skype-for-business-online): se connecter à Office 365 via une connexion de réseau dédié à l’aide d’Azure ExpressRoute pour Office 365 et Skype pour Business Online. 
+- [ExpressRoute et QoS dans Skype entreprise Online](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/expressroute-and-qos-in-skype-for-business-online): Connectez-vous à Office 365 sur une connexion réseau dédiée à l'aide d'Azure ExpressRoute pour Office 365 et Skype entreprise online. 
     
-- [Activation et à l’aide d’appels de tableau de bord qualité dans Skype pour Business Online](https://docs.microsoft.com/SkypeForBusiness/using-call-quality-in-your-organization/turning-on-and-using-call-quality-dashboard): le tableau de bord de qualité des appels (CQD) vous permet de surveiller et d’obtenir des informations sur la qualité des appels effectués à l’aide de Skype pour les services. 
+- [Activation et utilisation du tableau de bord de qualité des appels dans Skype entreprise Online](https://docs.microsoft.com/SkypeForBusiness/using-call-quality-in-your-organization/turning-on-and-using-call-quality-dashboard): le tableau de bord de la qualité des appels (CQD) vous permet de surveiller et d'obtenir des informations sur la qualité des appels effectués à l'aide des services Skype entreprise. 
     
-## <a name="articles-on-setting-up-skype-for-business-online"></a>Articles sur la configuration de Business Online Skype
+## <a name="articles-on-setting-up-skype-for-business-online"></a>Articles sur la configuration de Skype entreprise Online
 
-- [Configurer Skype pour Business Online](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/set-up-skype-for-business-online)
+- [Configurer Skype entreprise Online](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/set-up-skype-for-business-online)
     
-- [Configurer conférence Audio pour Skype pour les entreprises et Microsoft Teams](https://docs.microsoft.com/skypeforbusiness/audio-conferencing-in-office-365/set-up-audio-conferencing)
+- [Configurer la conférence audio pour Skype entreprise et Microsoft teams](https://docs.microsoft.com/skypeforbusiness/audio-conferencing-in-office-365/set-up-audio-conferencing)
     
-- [Configurer l’appel de Plans (Skype pour les entreprises)](https://docs.microsoft.com/SkypeForBusiness/what-are-calling-plans-in-office-365/set-up-calling-plans)
+- [Configurer des forfaits d'appels (Skype entreprise)](https://docs.microsoft.com/SkypeForBusiness/what-are-calling-plans-in-office-365/set-up-calling-plans)
     
-- [Voici ce que vous obtenez avec un système téléphonique dans Office 365](https://docs.microsoft.com/skypeforbusiness/what-is-phone-system-in-office-365/here-s-what-you-get-with-phone-system)
+- [Voici ce que vous obtenez avec le système téléphonique dans Office 365](https://docs.microsoft.com/skypeforbusiness/what-is-phone-system-in-office-365/here-s-what-you-get-with-phone-system)
     
 ## <a name="see-also"></a>Voir aussi
 
 [Planification réseau et optimisation des performances pour Office 365](network-planning-and-performance.md)
   
-[Optimisation de votre réseau pour Skype pour Business Online](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/optimizing-your-network)
+[Optimisation de votre réseau pour Skype Entreprise Online](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/optimizing-your-network)
   
-[ExpressRoute et QoS dans Skype pour les entreprises en ligne](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/expressroute-and-qos-in-skype-for-business-online)
+[ExpressRoute et QoS dans Skype entreprise Online](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/expressroute-and-qos-in-skype-for-business-online)
   
-[Flux des appels à l’aide de ExpressRoute](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/call-flow-using-expressroute)
+[Flux d'appels à l'aide de ExpressRoute](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/call-flow-using-expressroute)
 

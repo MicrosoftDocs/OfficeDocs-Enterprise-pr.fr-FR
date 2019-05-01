@@ -18,11 +18,11 @@ search.appverid:
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Décrit la synchronisation d'annuaires avec Office 365, le nettoyage Active Directory et l'outil Azure Active Directory Connect.
 ms.openlocfilehash: 1a7c63f699c51c829aaab5b70cb6a1a203bca3be
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001827"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33492080"
 ---
 # <a name="plan-for-directory-synchronization-for-office-365"></a>Planifier la synchronisation d'annuaires pour Office 365
 

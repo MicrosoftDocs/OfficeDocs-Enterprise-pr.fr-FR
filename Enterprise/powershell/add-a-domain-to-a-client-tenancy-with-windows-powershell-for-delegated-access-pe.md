@@ -14,11 +14,11 @@ ms.custom: ''
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: 'Résumé : Utilisez Windows PowerShell pour Office 365 pour ajouter un autre nom de domaine à un locataire de client existant.'
 ms.openlocfilehash: 85cddd28b72a3b03e9157a28c3fd1dc101a167e0
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
-ms.translationtype: HT
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001777"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33492060"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>Ajout d’un domaine à la location d’un client avec Windows PowerShell pour les partenaires avec autorisation d’accès délégué
 

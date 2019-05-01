@@ -12,36 +12,36 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
-description: Le programme de partenariat réseau Office 365 permet à votre appareil pour devenir certifié en tant que l’utilisation d’Office 365.
+description: Le programme de partenariat de mise en réseau Office 365 permet à votre appareil de devenir certifié comme fonctionnant avec Office 365.
 hideEdit: true
 ms.openlocfilehash: 41dc90c95fff9b3abb7d4ed90f9e1ee6f5f35a17
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540485"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33492030"
 ---
 # <a name="office-365-networking-partner-program"></a>Programme de partenariat réseau Office 365
 
-Moderne évolutive, logiciel en tant qu’une connectivité de réseau prête pour le cloud, Service (SaaS) est une transformation réussie numérique avec Microsoft Office 365.  
+Le Cloud moderne, évolutif, Software as a service (SaaS), la connectivité réseau est essentielle à la réussite de la transformation numérique avec Microsoft Office 365.  
 
-Lorsque les clients adoptent Office 365 pour l’optimisation de la productivité, Microsoft a constaté une tendance courantes que les performances du réseau et la collaboration de l’utilisateur final qui en résulte une expérience dans Office 365 est influencée directement par les solutions de réseau dans le chemin d’accès entre l’utilisateur et Office 365.  
+À mesure que les clients adoptent Office 365 pour la productivité de l'entreprise, Microsoft a observé une tendance commune: les performances du réseau et l'expérience de collaboration avec l'utilisateur final obtenue dans Office 365 sont influencées directement par les solutions réseau dans le chemin entre l'utilisateur et Office 365.  
 
-Nouveaux utilisateurs leur voyage dans le nuage sont souvent confrontées à la transition d’architectures de réseau et de sécurité de contenu d’entreprise hérité, hub-and-spoke, axés sur le centre de données. Et les clients de se connecter à Office 365 sur des réseaux hérités pèsent sur les problèmes de performances lors de l’utilisation des fonctionnalités de collaboration riches dans Office 365. L’objectif de fin pour les clients Office 365 consiste à moderniser et optimiser leurs réseaux d’entreprise pour offrir une expérience de collaboration haut de gamme pour leurs employés et les partenaires, de simplifier la gestion informatique et de réduire les coûts. 
+Les clients qui entament leur trajet dans le nuage sont souvent contraints de passer des architectures de sécurité et de réseau d'entreprise axées sur les datacenters, centrés et en étoile. Les clients qui se connectent à Office 365 sur des réseaux hérités peuvent rencontrer des problèmes de performances lors de l'utilisation des fonctionnalités de collaboration enrichies dans Office 365. L'objectif final pour les clients Office 365 est de moderniser et d'optimiser leurs réseaux d'entreprise pour offrir une expérience collaborative de haut niveau pour leurs employés et leurs partenaires, simplifier la gestion informatique et réduire les coûts. 
 
-Pour moderniser les réseaux d’entreprise pour une connectivité à Office 365, les clients s’appuient souvent sur les fournisseurs de solutions réseau, local ou les services de sécurité basée sur le cloud et intégrateurs système à planifier, concevoir et implémenter la connectivité réseau pour le cloud Services. Les clients demandent souvent à Microsoft si leur architecture réseau et les solutions fonctionnent avec Office 365 et qu’ils s’alignent sur Microsoft [Principes de connectivité réseau pour Office 365](http://aka.ms/PNC).  
+Pour moderniser les réseaux d'entreprise pour une connectivité optimale avec Office 365, les clients s'appuient souvent sur les fournisseurs de solutions réseau, les services de sécurité sur site ou en nuage et les intégrateurs système pour planifier, concevoir et implémenter une connectivité réseau pour le Cloud. services. Les clients demandent souvent à Microsoft si leur architecture et leurs solutions réseau fonctionnent avec Office 365 et s'ils correspondent aux [principes de connectivité réseau de Microsoft pour office 365](http://aka.ms/PNC).  
 
-Microsoft s’engage en vous permettant de créer de nos clients et optimiser leur réseau d’architecture pour la meilleure expérience Office 365. L’équipe Office 365 fonctionne avec de nombreux partenaires du secteur de réseau pour s’assurer que les principes clés pour la connectivité optimale sont nativement intégrées à leurs solutions et les produits de réseau. 
+Microsoft s'engage à aider nos clients à créer et à optimiser leur connectivité de l'architecture réseau pour la meilleure expérience Office 365. L'équipe Office 365 travaille avec de nombreux partenaires de l'industrie réseau afin de s'assurer que les principes clés de la connectivité optimale sont intégrés de manière native à leurs produits et solutions réseau. 
 
-Nous sommes sans attendre pour annoncer le Office 365 réseau programme de partenariat, dans le but d’approfondir la collaboration avec des partenaires de réseau et d’identifier les principaux produits et des solutions qui suivent Office 365 Configuration réseau requise de Microsoft, recommandations et les meilleures pratiques. 
+Nous sommes donc ravis d'annoncer le programme de partenariat de mise en réseau Office 365, avec l'objectif d'approfondir la collaboration avec les partenaires réseau et d'identifier les produits et solutions clés qui suivent les exigences de mise en réseau Office 365 de Microsoft, recommandations et les meilleures pratiques. 
 
-Le programme de partenariat du réseau Microsoft Office 365 désigne des solutions réseau complets comme « Fonctionne avec Office 365 ».  
+Le programme de partenariat de mise en réseau Microsoft Office 365 désigne les solutions réseau qualifiées comme «fonctionne avec Office 365».  
 
-Les appareils ou les solutions qui répondent aux besoins de test rigoureux de Microsoft, ont une expérience transparente avec le programme d’installation et démontrer une expérience de qualité réseau lorsqu’il est utilisé avec Office 365 recevra la désignation « Fonctionne avec Office 365 ».  
+Seuls les appareils ou solutions répondant aux exigences de test rigoureuses de Microsoft, ont une expérience continue avec le programme d'installation et font une démonstration d'une expérience réseau de haute qualité lorsqu'elle est utilisée avec Office 365 recevra la désignation «Works with Office 365».  
 
-Plusieurs fournisseurs de solutions réseau sont actuellement fonctionne avec Microsoft pour répondre à la configuration requise pour recevoir la désignation « Fonctionne avec Office 365 ». Plus d’informations sur la configuration de ces solutions optimale connectivité Office 365 et les performances seront publiées sur cette page.  
+Plusieurs fournisseurs de solutions réseau travaillent actuellement avec Microsoft pour répondre aux exigences de réception de la désignation «Works with Office 365». Des informations détaillées sur la configuration de ces solutions pour une connectivité et des performances Office 365 optimales seront publiées sur cette page.  
 
-Si vous êtes un client Office 365, vous pouvez informés votre fournisseur de solutions de réseau de ce programme par le biais de ce lien [http://aka.ms/Office365NPP](http://aka.ms/Office365NPP).
+Si vous êtes un client Office 365, vous pouvez faire en sorte que votre fournisseur de solutions réseau soit conscient de [http://aka.ms/Office365NPP](http://aka.ms/Office365NPP)ce programme via ce lien.
 
-Pour les fournisseurs de solutions réseau souhaitant obtenir des informations sur le programme de partenariat réseau Office 365, [remplissez ce formulaire](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRyOZxByRF1dLgv7k6ye5z8pUMTNCVTYyVk9GNEYzWjFOVkI1SzdJNUkyWi4u) et nous serez tactile. Nous vous remercions de votre intérêt et nous espérons un partenariat soignée. 
+Pour les fournisseurs de solutions réseau qui souhaitent obtenir des informations sur le programme de partenariat de mise en réseau Office 365, [Remplissez ce formulaire](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRyOZxByRF1dLgv7k6ye5z8pUMTNCVTYyVk9GNEYzWjFOVkI1SzdJNUkyWi4u) et nous allons le toucher. Merci de votre intérêt et nous espérons qu'il s'agit d'un véritable partenariat. 
 

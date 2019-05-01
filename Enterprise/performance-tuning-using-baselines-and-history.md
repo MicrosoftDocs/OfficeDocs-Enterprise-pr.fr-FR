@@ -1,5 +1,5 @@
 ---
-title: Réglage des performances Office 365 à l’aide du planning de référence et de l’historique des performances
+title: Optimisation des performances d’Office 365 à l’aide de lignes de référence et de l’historique des performances
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -19,13 +19,13 @@ ms.collection:
 - Ent_O365
 description: Il existe quelques méthodes simples pour vérifier les performances de connexion entre Office 365 et votre entreprise qui vous permettra d'établir une base approximative de votre connectivité. Connaître l'historique des performances des connexions de vos ordinateurs client peut vous aider à détecter rapidement les problèmes émergents, à identifier et à prédire les problèmes.
 ms.openlocfilehash: 328b8f66b86f2fc1880b3a9d65f4b9fd63b51d40
-ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30372941"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491826"
 ---
-# <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>Réglage des performances Office 365 à l’aide du planning de référence et de l’historique des performances
+# <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>Optimisation des performances d’Office 365 à l’aide de lignes de référence et de l’historique des performances
 
 Il existe quelques méthodes simples pour vérifier les performances de connexion entre Office 365 et votre entreprise qui vous permettra d'établir une base approximative de votre connectivité. Connaître l'historique des performances des connexions de vos ordinateurs client peut vous aider à détecter rapidement les problèmes émergents, à identifier et à prédire les problèmes.
   
@@ -157,7 +157,7 @@ Vous pouvez prendre une ligne de base avant les heures d'ouverture, à nouveau p
   
 ![Graphique proposant un moyen d’organiser vos données de performances dans des dossiers.](media/13e01ffa-f0f2-4d10-b89d-d5980ec89fae.png)
   
-Vous devez également choisir une convention d'affectation de noms pour vos fichiers. Voici quelques exemples :
+Vous devez également choisir une convention d'affectation de noms pour vos fichiers. Voici quelques exemples :
   
 - Feb_09_2015_9amPST_PerfBaseline_Netmon_ClientToEgress_Normal
     

@@ -1,5 +1,5 @@
 ---
-title: Planifier les périphériques réseau qui se connectent aux services Office 365
+title: Planifier les périphériques réseau qui se connectent aux services Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -15,58 +15,58 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
-description: 'Résumé : Décrit les éléments à prendre en compte pour la capacité réseau, les accélérateurs WAN et les périphériques d’équilibrage de charge qui sont utilisés pour se connecter à Office 365.'
+description: "Résumé: décrit les considérations relatives à la capacité réseau, aux accélérateurs de réseau étendu et aux périphériques d'équilibrage de charge utilisés pour se connecter à Office 365."
 ms.openlocfilehash: 023eb3f5ed4d81d1d49d18c69ef8c81032fd5851
-ms.sourcegitcommit: 317c2753be2aedb60698e94606ba59b63c962328
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25933121"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33492067"
 ---
-# <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Planifier les périphériques réseau qui se connectent aux services Office 365
+# <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Planifier les périphériques réseau qui se connectent aux services Office 365
 
- **Résumé** : Décrit les éléments à prendre en compte pour la capacité réseau, les accélérateurs WAN et les périphériques d’équilibrage de charge qui sont utilisés pour se connecter à Office 365.
+ **Résumé**: décrit les considérations relatives à la capacité réseau, aux accélérateurs de réseau étendu et aux périphériques d'équilibrage de charge utilisés pour se connecter à Office 365.
   
-Matériel réseau peut-être comporter des limites du nombre de sessions simultanées qui sont prises en charge. Pour les organisations ayant plus de 2 000 utilisateurs, nous vous recommandons de surveiller les leurs périphériques réseau pour vous assurer qu’ils sont capables de traiter le trafic du service Office 365 supplémentaire. SNMP Simple Network Management Protocol () logiciels de surveillance peuvent vous aider à effectuer cette opération.
+Certains matériels réseau peuvent avoir des limitations quant au nombre de sessions simultanées prises en charge. Pour les organisations qui possèdent plus de 2 000 utilisateurs, nous recommandons qu'ils surveillent leurs périphériques réseau pour s'assurer qu'ils sont capables de gérer le trafic de service 365 Office supplémentaire. Le logiciel de surveillance SNMP (simple Network Management Protocol) peut vous aider à effectuer cette opération.
 
 ||
 |:-----|
-| Cet article fait partie de la [planification de réseau et de réglage des performances pour Office 365](https://aka.ms/tune).|
+| Cet article fait partie de la [planification réseau et du réglage des performances pour Office 365](https://aka.ms/tune).|
 
-Les paramètres de proxy Internet sortant également affectent la connectivité aux services Office 365 pour les applications clientes sur site. Vous devez également configurer vos périphériques de proxy réseau pour autoriser les connexions pour les applications et les URL de services de cloud Microsoft. Chaque organisation est différente. Pour avoir une idée de la façon dont Microsoft gère ce processus et la quantité de bande passante que nous provisionner, [Lisez l’étude de cas](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365).
+Les paramètres de proxy Internet sortants en local affectent également la connectivité aux services Office 365 pour vos applications clientes. Vous devez également configurer vos périphériques de proxy réseau pour autoriser les connexions pour les applications et les URL des services de Cloud Computing Microsoft. Chaque organisation est différente. Pour obtenir une idée de la façon dont Microsoft gère ce processus et de la quantité de bande passante que nous approvisionnez, [Lisez l'étude de cas](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365).
   
-Le Skype suivante pour les articles d’aide Business ont plus d’informations sur Skype pour les paramètres d’entreprise :
+Les articles suivants de l'aide de Skype entreprise contiennent des informations supplémentaires sur les paramètres de Skype entreprise:
   
-- [Dépannage Skype pour les erreurs de connexion Business Online pour les administrateurs](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/troubleshooting-sign-in-errors-for-admins)
+- [Dépannage des erreurs de connexion Skype entreprise Online pour les administrateurs](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/troubleshooting-sign-in-errors-for-admins)
 
-- [Vous ne pouvez pas vous connecter à Skype pour les entreprises, ou certaines fonctionnalités ne fonctionnent pas, car un pare-feu local bloque la connexion](https://go.microsoft.com/fwlink/p/?LinkID=243625)
+- [Vous ne pouvez pas vous connecter à Skype entreprise, ou certaines fonctionnalités ne fonctionnent pas, car un pare-feu sur site bloque la connexion.](https://go.microsoft.com/fwlink/p/?LinkID=243625)
 
 > [!NOTE]
-> Alors que la plupart de ces paramètres sont Skype pour spécifiques à l’entreprise, les instructions générales sur la configuration du réseau sont utile pour tous les services Office 365.
+> Bien que la plupart de ces paramètres soient spécifiques à Skype entreprise, les conseils généraux sur la configuration du réseau sont utiles pour tous les services Office 365.
   
 ## <a name="determining-network-capacity"></a>Détermination de la capacité réseau
 
-Chaque périphérique réseau existant sur une connexion présente une limite de capacité, notamment les cartes réseau de serveur et de client, les routeurs, les commutateurs et les concentrateurs qui les relient. Une capacité réseau adéquate signifie qu'aucun de ces périphériques réseau n'est saturé. Il est essentiel de contrôler l'activité réseau pour s'assurer que les charges réelles sur chaque périphérique réseau sont inférieures à leur capacité maximale. La capacité réseau a une incidence sur les performances des périphériques proxy.
+Chaque périphérique réseau qui existe sur une connexion a sa limite de capacité. Ces périphériques incluent les cartes réseau client et serveur, les routeurs, les commutateurs et les concentrateurs qui les interconnectent. Une capacité réseau adéquate signifie qu'aucun d'entre eux n'est saturé. La surveillance de l'activité réseau est essentielle pour garantir que les charges réelles sur tous les périphériques réseau sont inférieures à leur capacité maximale. La capacité réseau affecte les performances des périphériques proxy.
   
-Dans la plupart des cas, la bande passante Internet définit la limite pour la quantité de trafic. Faibles performances pendant les heures de pointe du trafic est probablement dû à une utilisation excessive de la liaison Internet. Cette situation s’applique également à un scénario de succursale, où les ordinateurs de serveur proxy branch office sont connectés au périphérique proxy aux sièges sociaux de la branche via une liaison lente de réseau étendu (WAN).
+Dans la plupart des cas, la bande passante de connexion Internet définit la limite pour la quantité de trafic. Des performances médiocres pendant les heures de pointe du trafic sont probablement dues à une utilisation excessive de la liaison Internet. Cette situation s'applique également à un scénario de succursale, où les ordinateurs proxy de succursale sont connectés au périphérique proxy au siège de la succursale sur un lien de réseau étendu lent.
   
-Pour tester la capacité du réseau, surveiller l’activité du réseau sur l’interface réseau de proxy. S’il est plus de 75 % de la bande passante maximale d’une interface réseau, envisagez d’augmenter la bande passante de l’infrastructure réseau qui est insuffisant. Ou bien, envisagez d’utiliser des fonctionnalités avancées, telles que la compression HTTP.
+Pour tester la capacité du réseau, surveillez l'activité réseau sur l'interface réseau proxy. S'il s'agit de plus de 75% de la bande passante maximale de n'importe quelle interface réseau, envisagez d'augmenter la bande passante de l'infrastructure réseau qui est inadéquate. Vous pouvez également envisager d'utiliser des fonctionnalités avancées, telles que la compression HTTP.
   
 ## <a name="wan-accelerators"></a>Accélérateurs de réseau étendu
 
-Si votre organisation utilise des équipements de proxy de l’accélération de réseau (étendu WAN) étendu, vous pouvez rencontrer des problèmes lorsque vous accédez aux services Office 365. Vous devrez peut-être optimiser votre réseau ou les périphériques pour vous assurer que vos utilisateurs une expérience cohérente lorsque vous accédez à Office 365. Par exemple, les services Office 365 chiffrer certains contenus Office 365 et l’en-tête TCP. Votre appareil ne peut pas être en mesure de gérer ce type de trafic.
+Si votre organisation utilise des appliances de proxy d'accélération WAN (large Area Network), vous pouvez rencontrer des problèmes lorsque vous accédez aux services Office 365. Vous devrez peut-être optimiser votre ou vos périphériques réseau pour vous assurer que vos utilisateurs bénéficient d'une expérience cohérente lors de l'accès à Office 365. Par exemple, les services Office 365 chiffrent du contenu Office 365 et l'en-tête TCP. Il se peut que votre appareil ne puisse pas gérer ce type de trafic.
   
-Lire notre déclaration de prise en charge sur [contrôleur d’optimisation WAN à l’aide de ou périphériques/Inspection du trafic avec Office 365](https://support.microsoft.com/kb/2690045).
+Lisez notre déclaration de support concernant [l'utilisation du contrôleur d'optimisation WAN ou des appareils de trafic/inspection avec Office 365](https://support.microsoft.com/kb/2690045).
   
-## <a name="hardware-and-software-load-balancing-devices"></a>Périphériques d'équilibrage de charge matérielle et logicielle
+## <a name="hardware-and-software-load-balancing-devices"></a>Dispositifs d’équilibrage de charge matériels et logiciels
 
-Pour répartir les demandes adressées à vos serveurs ADFS (Active Directory Federation Services) ou serveurs Exchange hybrides, votre organisation doit utiliser une solution d'équilibrage de la charge matérielle (HLP) ou d'équilibrage de la charge réseau (NLB). Les périphériques d'équilibrage de la charge contrôlent le trafic réseau vers les serveurs locaux. Ces serveurs sont essentiels pour garantir la disponibilité de l'authentification unique et du déploiement Exchange hybride.
+Votre organisation doit utiliser un programme d'équilibrage de la charge matérielle (charge matérielle) ou une solution d'équilibrage de la charge réseau (NLB) pour distribuer les demandes à vos serveurs AD FS (Active Directory Federation Services) et/ou à vos serveurs hybrides Exchange. Les périphériques d'équilibrage de charge contrôlent le trafic réseau vers les serveurs locaux. Ces serveurs sont essentiels pour garantir la disponibilité de l'authentification unique et du déploiement hybride Exchange.
   
-Nous proposons une solution d’équilibrage de charge réseau basé sur logiciel intégrée à Windows Server. Office 365 prend en charge cette solution pour équilibrer la charge.
+Nous fournissons une solution NLB basée sur des logiciels intégrée à Windows Server. Office 365 prend en charge cette solution pour mettre en œuvre l’équilibrage de charge.
   
-## <a name="firewalls-and-proxies"></a>Pare-feu et des proxys
+## <a name="firewalls-and-proxies"></a>Pare-feu et proxys
 
-Pour plus d’informations sur la configuration des pare-feu et des proxys pour se connecter à Office 365, lisez les [points de terminaison de gestion Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a), la [connectivité réseau vers Office 365](network-connectivity.md)et [points de terminaison Office 365 FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) pour en savoir plus sur les périphériques et sélection de circuits.
+Pour plus d'informations sur la configuration des pare-feu et des proxys pour se connecter à Office 365, lisez la rubrique [Managing office 365 Endpoints](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a), [Network connectivity to Office 365](network-connectivity.md)et [Office 365 Endpoints FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) pour en savoir plus sur les appareils et la sélection de circuits.
   
 ## <a name="see-also"></a>Voir aussi
 

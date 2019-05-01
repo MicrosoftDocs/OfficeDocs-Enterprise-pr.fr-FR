@@ -19,11 +19,11 @@ search.appverid:
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: 'Résumé : Liste de référence des enregistrements DNS à utiliser lorsque vous planifiez un déploiement Office 365.'
 ms.openlocfilehash: c172275e43b4703172f58287c086562da352f5e9
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540365"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487254"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Enregistrements DNS externes pour Office 365
 
@@ -132,7 +132,7 @@ Pour les scénarios où vous n’utilisez pas seulement les emails Exchange Onli
 |1  <br/> |Tous les systèmes de messagerie (obligatoire)  <br/> |Tous les enregistrements SPF commencent par cette valeur  <br/> |v=spf1  <br/> |
 |2  <br/> |Exchange Online (courant)  <br/> |Utilisez uniquement avec Exchange Online  <br/> |include:spf.protection.outlook.com  <br/> |
 |3  <br/> |SharePoint Online et Exchange Online (courant)  <br/> |Utilisation avec Exchange Online et SharePoint Online  <br/> |include:sharepointonline.com  <br/> |
-|4  <br/> |Un système de messagerie tiers (moins courant)  <br/> ||inclure :email système tel que mail.contoso.com\>  <br/> |
+|4  <br/> |Un système de messagerie tiers (moins courant)  <br/> ||inclure :\<email système tel que mail.contoso.com\>  <br/> |
 |5  <br/> |Le système de messagerie du site (moins courant)  <br/> |À utiliser si vous avez recours à Exchange Online Protection ou Exchange Online et un autre système de messagerie  <br/> |IP4 :\<0.0.0.0\>  <br/> ip6 :\< : : \>  <br/> inclure :\<mail.contoso.com\>  <br/> La valeur entre crochets (\<\>) doit être les autres systèmes de messagerie chargés d’envoyer les emails pour votre domaine.  <br/> |
 |6  <br/> |Tous les systèmes de messagerie (obligatoire)  <br/> ||-all  <br/> |
 

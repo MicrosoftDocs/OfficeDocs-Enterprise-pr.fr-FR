@@ -11,11 +11,11 @@ ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Découvrez Office 365 multigéographique, comment opèrent les fonctionnalités multigéographiques et les emplacements géographiques disponibles pour le stockage de données.
 ms.openlocfilehash: 4f7905c55cbb926978a43d70300a70d451512f6f
-ms.sourcegitcommit: 8ba20f1b1839630a199585da0c83aaebd1ceb9fc
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30931793"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491420"
 ---
 # <a name="plan-for-office-365-multi-geo"></a>Planifier le déploiement d’Office 365 multigéographique
 

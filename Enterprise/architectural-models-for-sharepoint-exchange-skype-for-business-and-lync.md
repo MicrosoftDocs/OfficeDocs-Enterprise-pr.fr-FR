@@ -17,12 +17,12 @@ ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
 search.appverid:
 - MET150
 description: 'Résumé : Obtenez les affiches IT qui décrivent les modèles architecturaux, le déploiement et les options de plateforme de SharePoint, Exchange, Skype Entreprise et Lync.'
-ms.openlocfilehash: 0965a4389ef61c981e30aeec8dd3b3dcff90d20e
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 28cfc1073d54a46976224f115cce43315c7c43fb
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915539"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490692"
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>Modèles architecturaux pour SharePoint, Exchange, Skype Entreprise et Lync
 
@@ -108,7 +108,7 @@ Ces nouvelles affiches de systèmes informatiques pour SharePoint 2016 et Skype
 
 |**Élément**|**Description**|
 |:-----|:-----|
-|[![Miniature de l’affiche bases de données SharePoint Server 2016](media/c53e9de7-3bf8-446d-8766-e6700c8dd8e1.png)          ](https://www.microsoft.com/download/details.aspx?id=55041) <br/> [PDF](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.pdf)  \| [Visio](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.vsdx) \| [Autres langues](https://www.microsoft.com/download/details.aspx?id=55041) <br/> | Cette affiche informatique est un guide de référence rapide pour les bases de données SharePoint Server 2016. Chaque base de données comporte les informations suivantes : <br/><br/> -Taille <br/> - Conseils mise à l’échelle <br/> - Modèles d’E/S <br/> - Conditions requises : <br/><br/>  La première page contient les bases de données système SharePoint et les applications de service ayant plusieurs bases de données. La deuxième page affiche toutes les applications de service ayant des bases de données uniques. <br/><br/>  Pour plus d'informations sur les bases de données SharePoint Server 2016, voir [Types et descriptions des bases de données dans SharePoint Server 2016](https://technet.microsoft.com/fr-FR/library/cc678868%28v=office.16%29.aspx) <br/> |
+|[![Miniature de l’affiche bases de données SharePoint Server 2016](media/c53e9de7-3bf8-446d-8766-e6700c8dd8e1.png)          ](https://www.microsoft.com/download/details.aspx?id=55041) <br/> [PDF](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.pdf)  \| [Visio](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.vsdx) \| [Autres langues](https://www.microsoft.com/download/details.aspx?id=55041) <br/> | Cette affiche informatique est un guide de référence rapide pour les bases de données SharePoint Server 2016. Chaque base de données comporte les informations suivantes : <br/><br/> -Taille <br/> - Conseils mise à l’échelle <br/> - Modèles d’E/S <br/> - Conditions requises : <br/><br/>  La première page contient les bases de données système SharePoint et les applications de service qui ont plusieurs bases de données. La deuxième page affiche toutes les applications de service qui ont des bases de données uniques. <br/><br/>  Pour plus d'informations sur les bases de données SharePoint Server 2016, voir [Types et descriptions des bases de données dans SharePoint Server 2016](https://technet.microsoft.com/fr-FR/library/cc678868%28v=office.16%29.aspx) <br/> |
    
 <a name="SfB2015_ArchModel"> </a>
 ### <a name="microsoft-skype-for-business-2015-architectural-models"></a>Modèles architecturaux Microsoft Skype Entreprise 2015
@@ -138,7 +138,7 @@ Ces affiches pour SharePoint 2013, Exchange  2013 et Lync 2013 permettent de 
 
 |**Élément**|**Description**|
 |:-----|:-----|
-|[![Miniature des options de la plateforme SharePoint 2013](media/SP-PlatformOptions.jpg)](https://www.microsoft.com/download/details.aspx?id=40332) <br/> [PDF](http://go.microsoft.com/fwlink/p/?LinkId=324594)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=324593) \| [Autres langues](https://www.microsoft.com/download/details.aspx?id=40332) <br/> |Pour les décideurs d’entreprise et les architectes, ce modèle décrit les options de plateforme pour SharePoint 2013 : SharePoint dans Office 365, environnement hybride sur site avec Office 365, Windows Azure et déploiements sur site uniquement. Il présente une vue d’ensemble de chaque architecture, des recommandations, les exigences de licence, et répertorie les tâches des architectes et des professionnels de l’informatique pour chaque plateforme. Plusieurs solutions SharePoint sur Windows Azure sont mises en avant.<br/><br/>Pour une version texte de ce poster, voir [diagramme accessible : Options de la plateforme Microsoft SharePoint 2013](accessible-diagrammicrosoft-sharepoint-2013-platform-options.md).  <br/> |
+|[![Miniature des options de la plateforme SharePoint 2013](media/SP-PlatformOptions.jpg)](https://www.microsoft.com/download/details.aspx?id=40332) <br/> [PDF](http://go.microsoft.com/fwlink/p/?LinkId=324594)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=324593)  \| [Autres langues](https://www.microsoft.com/download/details.aspx?id=40332) <br/> |Pour les décideurs d’entreprise (BDM) et les architectes, ce modèle présente les options de plateforme pour SharePoint 2013, SharePoint dans Office 365, les déploiements hybrides locaux avec Office 365, Azure et les déploiements uniquement locaux. Il comprend une vue d’ensemble de chaque architecture, des recommandations, les licences exigées et la liste des tâches des architectes et des professionnels de l’informatique pour chaque plateforme. Plusieurs solutions SharePoint sur Azure sont mises en avant. <br/><br/>Pour une version texte de ce poster, voir [diagramme accessible : Options de la plateforme Microsoft SharePoint 2013](accessible-diagrammicrosoft-sharepoint-2013-platform-options.md).  <br/> |
    
 <a name="Exch2013_options"> </a>
 ## <a name="exchange-2013-platform-options"></a>Options de plateforme Exchange 2013
@@ -188,7 +188,7 @@ Ces affiches présentent les solutions Azure utilisant SharePoint Server 2013 
 
 |**Élément**|**Description**|
 |:-----|:-----|
-|[![Procédure de récupération d’urgence SharePoint vers Azure](media/SP-DR-Azure.png) ](https://www.microsoft.com/download/details.aspx?id=41993) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554) \| [Autres langues](https://www.microsoft.com/download/details.aspx?id=41993) <br/> |Cette affiche illustre les principes d’architecture d’un environnement de récupération d’urgence dans Windows_Azure. Pour une version texte accessible de cette affiche, voir [ diagramme accessible : Récupération d’urgence SharePoint vers Microsoft Azure](accessible-diagramsharepoint-disaster-recovery-to-microsoft-azure.md). <br/><br/> Pour plus d’informations, voir les articles suivants :  <br/><br/> - [Récupération d’urgence SharePoint Server 2013 dans Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md) <br/> - [Architectures Microsoft Azure pour SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
+|[![Procédure de récupération d’urgence SharePoint vers Azure](media/SP-DR-Azure.png) ](https://www.microsoft.com/download/details.aspx?id=41993) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)  \| [Autres langues](https://www.microsoft.com/download/details.aspx?id=41993) <br/> |Cette affiche présente les principes d’architecture pour un environnement de récupération d’urgence dans Azure. Pour obtenir une version texte accessible de cette affiche, consultez [Diagramme accessible – Récupération d’urgence SharePoint dans Microsoft Azure](accessible-diagramsharepoint-disaster-recovery-to-microsoft-azure.md).  <br/><br/> Pour plus d’informations, voir les articles suivants :  <br/><br/> - [Récupération d’urgence SharePoint Server 2013 dans Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md) <br/> - [Architectures Microsoft Azure pour SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
    
 <a name="Lync2013_Options"> </a>
 ## <a name="see-also"></a>Voir aussi

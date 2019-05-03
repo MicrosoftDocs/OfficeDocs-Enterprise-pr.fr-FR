@@ -10,11 +10,11 @@ ms.custom: ''
 localization_priority: Priority
 description: Découvrez comment administrer le paramètre d’Exchange Online avec Microsoft PowerShell.
 ms.openlocfilehash: cc8adecda26073f588b63af12c13209720f9bc98
-ms.sourcegitcommit: 5e85536a6f53262136acfaac640f5d109a65f643
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "31765046"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490880"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>Administration des boîtes aux lettres Exchange Online dans un environnement multigéographique
 
@@ -42,7 +42,7 @@ Le paramètre *ConnectionUri* utilisé pour la connexion à un emplacement géog
    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell?email=<emailaddress> -Credential $UserCredential -Authentication  Basic -AllowRedirection
    ```
 
-   Par exemple, si olga@contoso.onmicrosoft.com est l’adresse e-mail d’une boîte aux lettres valide dans la zone géographique à laquelle vous voulez vous connecter, exécutez la commande suivante :
+   Par exemple, si olga@contoso.onmicrosoft.com est l’adresse e-mail d’une boîte aux lettres valide à l’emplacement géographique auquel vous voulez vous connecter, exécutez la commande suivante :
 
    ```powershell
    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com -Credential $UserCredential -Authentication  Basic -AllowRedirection
@@ -86,7 +86,7 @@ Pour afficher ces propriétés pour une boîte aux lettres, utilisez la syntaxe 
 Get-Mailbox -Identity <MailboxIdentity> | Format-List Database,MailboxRegion*
 ```
 
-Par exemple, pour voir les informations géographiques de la boîte aux lettres chris@contoso.onmicrosoft.com, exécutez la commande suivante :
+Par exemple, pour afficher les informations d’emplacement géographique pour la boîte aux lettres chris@contoso.onmicrosoft.com, exécutez la commande suivante :
 
 ```powershell
 Get-Mailbox -Identity chris@contoso.onmicrosoft.com | Format-List Database, MailboxRegion*
@@ -168,7 +168,7 @@ New-MsolUser -UserPrincipalName <UserPrincipalName> -DisplayName "<Display Name>
 
 Cet exemple montre comment créer un compte d’utilisateur pour Elizabeth Brunner avec les valeurs suivantes :
 
-- Nom d’utilisateur principal :ebrunner@contoso.onmicrosoft.com
+- Nom d’utilisateur principal : ebrunner@contoso.onmicrosoft.com
 
 - Prénom : Elizabeth
 

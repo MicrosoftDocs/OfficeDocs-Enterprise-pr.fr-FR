@@ -18,11 +18,11 @@ ms.custom:
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Résumé : Utilisez ces guides de laboratoire de test relatifs à l’adoption de Microsoft Cloud pour configurer une démonstration, une étude de faisabilité ou des environnements de développement/test pour Office 365.'
 ms.openlocfilehash: 3531a3185cd52044ee59391d676fff1a7f4a5f64
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741170"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490230"
 ---
 # <a name="test-office-365-with-cloud-adoption-test-lab-guides-tlgs"></a>Tester Office 365 à l’aide des Guides de laboratoire de test relatifs à l’adoption de Microsoft Cloud
 
@@ -44,11 +44,11 @@ Utilisez les articles suivants pour créer votre environnement de développement
     
     Créez un intranet simplifié s’exécutant dans les services d’infrastructure Microsoft Azure. Cette étape est facultative si vous souhaitez créer une configuration d’entreprise simulée.
     
-- [Environnement de développement/test Office 365](office-365-dev-test-environment.md)
+- [Environnement de développement/test Office 365](office-365-dev-test-environment.md)
     
     Créez un abonnement d’évaluation Office 365 Entreprise E5 à partir de votre ordinateur ou d’un intranet simplifié exécuté dans des services d’infrastructure Azure.
     
-- [DirSync pour votre environnement de développement/test Office 365](dirsync-for-your-office-365-dev-test-environment.md)
+- [DirSync pour votre environnement de développement/test Office 365](dirsync-for-your-office-365-dev-test-environment.md)
     
     Installez et configurez Azure AD Connect pour la synchronisation d’annuaires avec synchronisation de hachage de mot de passe. Cette étape est facultative si vous souhaitez créer une configuration d’entreprise simulée.
     
@@ -58,7 +58,7 @@ Pour votre environnement de développement/test Office 365, utilisez les articl
     
     Configurez et testez l’authentification secondaire à l’aide d’un message texte envoyé à votre smartphone pour un compte de votre abonnement Office 365.
     
-- [Identité fédérée pour votre environnement de développement/test Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
+- [Identité fédérée pour votre environnement de développement/test Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
     
     Configurez l’authentification fédérée et effectuez-en des démonstrations avec les comptes d’un domaine AD DS (Active Directory Domain Services).
     
@@ -66,15 +66,15 @@ Pour votre environnement de développement/test Office 365, utilisez les articl
     
     Configurez et démontrez la sécurité des applications cloud Office 365, qui permet de créer des stratégies qui surveillent les activités suspectes dans votre abonnement Office 365 et vous en informent.
     
-- [Protection avancée contre les menaces pour votre environnement de développement/test Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+- [Protection avancée contre les menaces pour votre environnement de développement/test Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
     
     Configurez et démontrez la protection avancée contre les menaces Office 365, qui est une fonctionnalité d’Exchange Online Protection (EOP) qui vous permet de lutter contre les programmes malveillants dans votre environnement de messagerie.
     
-- [Advanced eDiscovery pour votre environnement de développement/test Office 365](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
+- [Advanced eDiscovery pour votre environnement de développement/test Office 365](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
     
     Ajoutez des exemples de données et démontrez Advanced eDiscovery, ce qui vous permet de trouver et d’analyser rapidement les données stockées dans Office 365, notamment la messagerie et les documents.
     
-- [Protection des fichiers sensibles dans l’environnement de développement/test Office 365](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
+- [Protection des fichiers sensibles dans l’environnement de développement/test Office 365](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
     
     Montrez comment utiliser la gestion des droits relatifs à l’information d’Office 365 pour protéger les données dans des documents sensibles, même si elles sont publiées par inadvertance dans des dossiers de documents incorrects.
     
@@ -95,7 +95,7 @@ Vous pouvez créer un environnement de développement/test intersite, qui compre
     
     Créez un intranet simulé connecté à un réseau virtuel Azure dans une configuration de cloud hybride.
     
-- [Intranet SharePoint Server 2016 dans un environnement de développement/test Azure](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx)
+- [Intranet SharePoint Server 2016 dans un environnement de développement/test Azure](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx)
     
     Créez une batterie de serveurs SharePoint Server 2016 à un seul serveur dans le réseau virtuel Azure et testez la connectivité et l’administration à partir du réseau local simulé.
     
@@ -103,11 +103,11 @@ Vous pouvez créer un environnement de développement/test intersite, qui compre
 
 Voici les environnements de développement/test SharePoint Server 2016 que vous pouvez créer dans des services d’infrastructure Azure :
   
-- [Environnement de développement/test SharePoint Server 2016 dans Azure](https://docs.microsoft.com/SharePoint/administration/sharepoint-server-2016-dev-test-environment-in-azure)
+- [Environnement de développement/test SharePoint Server 2016 dans Azure](https://docs.microsoft.com/SharePoint/administration/sharepoint-server-2016-dev-test-environment-in-azure)
     
     Créez une batterie de serveurs SharePoint Server 2016 à un seul serveur dans des services d’infrastructure Azure.
 
-- [Intranet SharePoint Server 2016 dans un environnement de développement/test Azure](https://docs.microsoft.com/SharePoint/administration/intranet-sharepoint-server-2016-in-azure-dev-test-environment)
+- [Intranet SharePoint Server 2016 dans un environnement de développement/test Azure](https://docs.microsoft.com/SharePoint/administration/intranet-sharepoint-server-2016-in-azure-dev-test-environment)
     
     Créez une batterie de serveurs SharePoint Server 2016 à un seul serveur dans des services d’infrastructure Azure et accédez-y à partir d’un intranet simulé.
 
@@ -120,7 +120,7 @@ Créez un environnement de développement/test pour [Microsoft 365 Entreprise]
 
 [Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.md)
   
-[Ressources relatives à l’architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Ressources relatives à l’architecture informatique Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
   
 [Modèles architecturaux pour SharePoint, Exchange, Skype Entreprise et Lync](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
   

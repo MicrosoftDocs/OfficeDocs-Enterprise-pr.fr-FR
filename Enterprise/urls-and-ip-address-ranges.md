@@ -3,7 +3,7 @@ title: URL et plages d’adresses IP Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/28/2019
+ms.date: 04/29/2019
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: 'Résumé : Office 365 nécessite une connexion à Internet. Les points de terminaison ci-dessous doivent être accessibles pour les clients utilisant des plans Office 365, y compris GCC (Government Community Cloud).'
 hideEdit: true
-ms.openlocfilehash: 8b8c7042f4c385916f8f329fe11d71e014fc2935
-ms.sourcegitcommit: e72d3b3b08a6a2fbd5efcbe0e84d4d8d8bf8b0c8
+ms.openlocfilehash: 4248c8f79ba9fe0435b49ccca181b871e164385d
+ms.sourcegitcommit: 89eaafb5e21b80b8dfdc72a93f8588bf9c4512d9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30995926"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33497656"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>URL et plages d’adresses IP Office 365
 
@@ -40,7 +40,7 @@ ms.locfileid: "30995926"
   
 ||||
 |:-----|:-----|:-----|
-|**Dernière mise à jour :** 28/03/2019 - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Abonnement au journal des modifications](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Téléchargement :** toutes les destinations obligatoires et facultatives dans une liste [au format JSON](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).  <br/> | **Utilisation :** nos [fichiers PAC](managing-office-365-endpoints.md#pacfiles) proxy <br/> |
+|**Dernière mise à jour :** 29/04/2019 – ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Abonnement au journal des modifications](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Téléchargement :** toutes les destinations obligatoires et facultatives dans une liste [au format JSON](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).  <br/> | **Utilisation :** nos [fichiers PAC](managing-office-365-endpoints.md#pacfiles) proxy <br/> |
    
  Commencez avec la [gestion des points de terminaison Office 365](managing-office-365-endpoints.md) afin de comprendre nos recommandations pour gérer la connectivité réseau à l’aide de ces données. Les données de points de terminaison sont mises à jour au début de chaque mois avec de nouvelles adresses IP et URL publiées 30 jours avant d’être activées. Cela permet aux clients qui n’ont pas encore de mises à jour automatisées de terminer leurs processus avant qu’une nouvelle connectivité soit requise. Les points de terminaison peuvent également être mis à jour au cours du mois si besoin pour les demandes du support d’adresse, les incidents de sécurité ou autres exigences opérationnelles immédiates. Les données contenues sur la page ci-dessous sont générées à partir des services web REST. Si vous utilisez un script ou un périphérique réseau pour accéder à ces données, vous devez accéder directement au [service web](office-365-ip-web-service.md).
 

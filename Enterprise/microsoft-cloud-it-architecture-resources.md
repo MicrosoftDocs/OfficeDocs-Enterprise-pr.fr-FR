@@ -65,7 +65,7 @@ See the posters, icon sets, community venues, and other resources that describe 
 -->
   
 <a name="cloudarch"></a>
-<span data-ttu-id="ab88e-128">##Série de documents sur le cloud Microsoft pour les architectes d’entreprise</span><span class="sxs-lookup"><span data-stu-id="ab88e-128">## Microsoft cloud for enterprise architects series</span></span>
+## <span data-ttu-id="ab88e-128">Série de documents sur le cloud Microsoft pour les architectes d’entreprise</span><span class="sxs-lookup"><span data-stu-id="ab88e-128">Microsoft cloud for enterprise architects series</span></span>
 
 <span data-ttu-id="ab88e-p105">Ces affiches relatives à l’architecture cloud fournissent des informations sur les services de cloud computing Microsoft (notamment Office 365, Azure Active Directory, Microsoft Intune, Microsoft Dynamics CRM Online), mais aussi sur les solutions hybrides locales et cloud. Ces ressources permettent aux architectes et décisionnaires informatiques d’identifier la solution adaptée à leurs charges de travail et de prendre les décisions adéquates pour leurs composants d'infrastructure de base tels que l’identité et la sécurité.</span><span class="sxs-lookup"><span data-stu-id="ab88e-p105">These cloud architecture posters give you information about Microsoft cloud services, including Office 365, Azure Active Directory, Microsoft Intune, Microsoft Dynamics CRM Online, and hybrid on-premises and cloud solutions. IT decision makers and architects can use these resources to determine the ideal solutions for their workloads and to make decisions about core infrastructure components such as identity and security.</span></span>
 
@@ -82,7 +82,7 @@ Learn key differences between Microsoft cloud services and platform offerings. F
 
    
 <a name="identity"></a>
-<span data-ttu-id="ab88e-131">### L’identité dans le cloud Microsoft pour les architectes d’entreprise</span><span class="sxs-lookup"><span data-stu-id="ab88e-131">### Microsoft cloud identity for enterprise architects</span></span>
+### <span data-ttu-id="ab88e-131">L’identité dans le cloud Microsoft pour les architectes d’entreprise</span><span class="sxs-lookup"><span data-stu-id="ab88e-131">Microsoft cloud identity for enterprise architects</span></span>
 
 <span data-ttu-id="ab88e-132">Découvrez tout ce que les architectes informatiques doivent savoir sur la conception d’identité pour les organisations utilisant des plateformes et des services de cloud computing Microsoft.</span><span class="sxs-lookup"><span data-stu-id="ab88e-132">What IT architects need to know about designing identity for organizations using Microsoft cloud services and platforms.</span></span>
   
@@ -137,7 +137,7 @@ How Santa and his elves use Microsoft's cloud offerings to make their annual del
 |[![Thumbnail image of The Santa Cloud poster](media/d47e1448-329b-41b7-9e51-cfc4ea5d0069.png)](https://www.microsoft.com/download/details.aspx?id=55039) <br/> [View online](https://onedrive.live.com/?authkey=%21ANT1PMgxEdniCyY&cid=8A8EC4F6612625E0&id=8A8EC4F6612625E0%21440&parId=8A8EC4F6612625E0%21218&o=OneUp) \| [PDF](https://go.microsoft.com/fwlink/p/?linkid=842088) <br/> |To determine who is naughty or nice and the presents to deliver on December 24, Santa Claus and his elfish IT department use Office 365, Azure, Dynamics 365, and Intune.  <br/>| -->
    
 <a name="BKMK_o365solutions"></a>
-<span data-ttu-id="ab88e-189">##Série de solutions Microsoft 365 Entreprise</span><span class="sxs-lookup"><span data-stu-id="ab88e-189">## Microsoft 365 enterprise solution series</span></span>
+##<span data-ttu-id="ab88e-189">Série de solutions Microsoft 365 Entreprise</span><span class="sxs-lookup"><span data-stu-id="ab88e-189">Microsoft 365 enterprise solution series</span></span>
 
 <span data-ttu-id="ab88e-190">Ces documents sur la solution Office 365 Entreprise fournissent des conseils pour la mise en œuvre des fonctionnalités de Microsoft 365, en particulier lors de la mise en commun de nos fonctionnalités avec votre technologie.</span><span class="sxs-lookup"><span data-stu-id="ab88e-190">The Microsoft 365 enterprise solution series provides guidance for implementing Microsoft 365 capabilities, especially where capabilities cross technologies.</span></span>
 

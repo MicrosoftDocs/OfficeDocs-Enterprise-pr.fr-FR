@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/30/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 5f4f5d0d-4638-48e8-a517-bd804856b617
 description: "Résumé : Comprendre l'architecture hybride et les scénarios pour les offres cloud PaaS de Microsoft dans Azure."
-ms.openlocfilehash: f4d90d51a7627063fae6fd168681bdf96cb4d6bc
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: fcc335d0e53463dea4e7ac73c3885b39734db38e
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491192"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067530"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-paas"></a>Scénarios de cloud hybride pour les services PaaS Azure
 
@@ -69,7 +69,7 @@ Une organisation peut mettre ses ressources de calcul ou de stockage à disposit
     
 L’application Azure peut utiliser les informations d’identification des sources suivantes :
   
-- Azure AD, qui peut être synchronisé avec votre fournisseur d'identité local, tel que les services de domaine Active Directory (AD DS).
+- Azure AD, qui peut être synchronisé avec votre fournisseur d’identité local, tel que les services de domaine Active Directory (AD DS).
     
 - Fournisseur d’identité tiers.
     

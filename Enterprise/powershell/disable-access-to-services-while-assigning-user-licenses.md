@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/01/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: Découvrez comment attribuer des licences à des comptes d’utilisateur et à désactiver des plans de service spécifiques en même temps à l’aide d’Office 365 PowerShell.
-ms.openlocfilehash: c93f54fcd5716a0ea53290c24a2594b8bc63cecf
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 82a448e4fc7f068fab3b04519b9689506208bee8
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491310"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069050"
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>Désactiver l’accès aux services lors de l’attribution des licences utilisateur
 
@@ -69,7 +69,7 @@ Le tableau suivant présente les plans de service Office 365 et leurs noms convi
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Office Professionnel Plus  <br/> |
-| `MCOSTANDARD` <br/> |Skype Entreprise Online  <br/> |
+| `MCOSTANDARD` <br/> |Skype Entreprise Online  <br/> |
 | `SHAREPOINTWAC` <br/> |Office Online  <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online (plan 2)  <br/> |

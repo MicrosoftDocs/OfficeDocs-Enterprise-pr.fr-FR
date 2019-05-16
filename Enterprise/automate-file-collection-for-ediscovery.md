@@ -3,7 +3,7 @@ title: Automatiser la collecte de fichiers pour eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.assetid: 8d751419-d81b-4eb7-a2e5-8b03ccbf670c
 search.appverid:
 - MET150
 description: 'Résumé : Apprenez à automatiser la collecte de fichiers à partir des ordinateurs des utilisateurs pour eDiscovery.'
-ms.openlocfilehash: bfbe3b9218ed81727f2cc6ad9fabcb02e76d486b
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: b54e54e2905407b81d95238afe97c1a542238e06
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490798"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068420"
 ---
 # <a name="automate-file-collection-for-ediscovery"></a>Automatiser la collecte de fichiers pour eDiscovery
 
@@ -328,8 +328,8 @@ $AllFiles | ForEach-Object {
     
 |**Ligne #**|**Ce que vous devez modifier**|**Obligatoire/facultatif**|
 |:-----|:-----|:-----|
-|12   <br/> |**$FolderIdentifier** marque les dossiers de boîte aux lettres vers lesquels les fichiers PST sont importés. Modifier si nécessaire.<br/> |Facultatif  <br/> |
-|17   <br/> |**$ConnectionUri** doit être configuré pour votre propre serveur. <br/> > [!IMPORTANT]> Vérifiez que votre **$ConnectionUri** pointe vers un emplacement http://, et non pas https://. Cela ne fonctionnera pas avec https://          |Requis  <br/> |
+|an  <br/> |**$FolderIdentifier** marque les dossiers de boîte aux lettres vers lesquels les fichiers PST sont importés. Modifier si nécessaire.<br/> |Facultatif  <br/> |
+|cm  <br/> |**$ConnectionUri** doit être configuré pour votre propre serveur. <br/> > [!IMPORTANT]> Vérifiez que votre **$ConnectionUri** pointe vers un emplacement http://, et non pas https://. Cela ne fonctionnera pas avec https://          |Requis  <br/> |
    
 4. Vérifiez que le compte Sous-système approuvé Exchange dispose des autorisations de lecture, écriture et exécution sur le partage \\\\Staging\\Cases$.
     

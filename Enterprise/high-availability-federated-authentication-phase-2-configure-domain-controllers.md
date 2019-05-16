@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 03/15/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: 'Résumé : Configurez les contrôleurs de domaine et le serveur DirSync pour votre authentification fédérée haute disponibilité pour Office 365 dans Microsoft Azure.'
-ms.openlocfilehash: bda22a1df0165724f660019e28a9f088280fea4f
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: f04488ad9a99111734d476725eb8e9d423c167cd
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491334"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067480"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Authentification fédérée haute disponibilité, phase 2 : Configurer les contrôleurs de domaine
 
@@ -26,7 +26,7 @@ ms.locfileid: "33491334"
 Au cours de cette phase de déploiement de la haute disponibilité pour l’authentification fédérée Office 365 dans les services d’infrastructure Azure, vous configurez deux contrôleurs de domaine et le serveur DirSync dans le réseau virtuel Azure. Les requêtes web client d’authentification peuvent ensuite être authentifiées dans le réseau virtuel Azure, plutôt que d’envoyer ce trafic d’authentification sur le VPN de site à site à votre réseau local.
   
 > [!NOTE]
-> Active Directory Federation Services (AD FS) ne peut pas utiliser les services de domaine Active Directory d'Azure comme substitut pour les contrôleurs de domaine des services de domaine Active Directory. 
+> Active Directory Federation Services (AD FS) ne peut pas utiliser les services de domaine Active Directory d’Azure comme substitut pour les contrôleurs de domaine des services de domaine Active Directory. 
   
 Vous devez effectuer cette phase avant de passer à [High availability federated authentication Phase 3: Configure AD FS servers](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). Reportez-vous à la rubrique [Déployer une authentification fédérée haute disponibilité pour Office 365 dans Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) pour toutes les phases.
   
@@ -41,10 +41,10 @@ Tout d'abord, vous devez remplir la colonne du **nom de la machine virtuelle** d
 |3.  <br/> |![](./media/Common-Images/TableLine.png)(Serveur dirSync, exemple DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |4.  <br/> |![](./media/Common-Images/TableLine.png)(premier serveur AD FS, exemple ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |5.  <br/> |![](./media/Common-Images/TableLine.png)(deuxième serveur AD FS, exemple ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|6.  <br/> |![](./media/Common-Images/TableLine.png)(premier serveur proxy d'application Web, exemple WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|7.  <br/> |![](./media/Common-Images/TableLine.png)(deuxième serveur proxy d'application Web, exemple WEB2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|6.  <br/> |![](./media/Common-Images/TableLine.png)(premier serveur proxy d’application Web, exemple WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|7.  <br/> |![](./media/Common-Images/TableLine.png)(deuxième serveur proxy d’application Web, exemple WEB2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
    
- **Tableau M-machines virtuelles pour l'authentification fédérée haute disponibilité pour Office 365 dans Azure**
+ **Tableau M-machines virtuelles pour l’authentification fédérée haute disponibilité pour Office 365 dans Azure**
   
 Pour obtenir la liste complète des tailles de machine virtuelle, reportez-vous à la rubrique [Tailles des machines virtuelles Windows dans Azure](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-sizes).
   
@@ -62,7 +62,7 @@ Le bloc de commandes Azure PowerShell suivant permet de créer les machines vir
     
 - Tableau A, pour vos groupes à haute disponibilité
     
-Rappelez-vous que vous avez défini les tableaux R, V, S, I et A dans [High Availability Federated authenticAtion phase 1: configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
+Rappelez-vous que vous avez défini les tableaux R, V, S, I et A dans [High Availability Federated Authentication phase 1: configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
   
 > [!NOTE]
 > Les ensembles de commandes suivants utilisent la dernière version d'Azure PowerShell. Reportez-vous à la rubrique relative à la [prise en main des cmdlets Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
@@ -152,7 +152,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 
 Utilisez le client Bureau à distance de votre choix et créez une connexion de Bureau à distance pour la machine virtuelle du premier contrôleur de domaine. Utilisez son nom d’ordinateur ou son nom DNS intranet et les informations d’identification du compte Administrateur local.
   
-Ensuite, ajoutez le disque de données supplémentaire au premier contrôleur de domaine à l'aide de cette commande à partir d'une invite de commandes Windows PowerShell **sur la première machine virtuelle du contrôleur de domaine**:
+Ensuite, ajoutez le disque de données supplémentaire au premier contrôleur de domaine à l’aide de cette commande à partir d’une invite de commandes Windows PowerShell **sur la première machine virtuelle du contrôleur de domaine**:
   
 ```
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
@@ -177,7 +177,7 @@ Vous êtes invité à fournir les informations d’identification d’un compte 
 
 Utilisez le client Bureau à distance de votre choix et créez une connexion de Bureau à distance pour la machine virtuelle du deuxième contrôleur de domaine. Utilisez son nom d’ordinateur ou son nom DNS intranet et les informations d’identification du compte Administrateur local.
   
-Ensuite, vous devez ajouter le disque de données supplémentaire au deuxième contrôleur de domaine à l'aide de cette commande à partir d'une invite de commandes Windows PowerShell **sur la deuxième machine virtuelle du contrôleur de domaine**:
+Ensuite, vous devez ajouter le disque de données supplémentaire au deuxième contrôleur de domaine à l’aide de cette commande à partir d’une invite de commandes Windows PowerShell **sur la deuxième machine virtuelle du contrôleur de domaine**:
   
 ```
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
@@ -195,7 +195,7 @@ Install-ADDSDomainController -InstallDns -DomainName $domname  -DatabasePath "F:
 
 Vous êtes invité à fournir les informations d’identification d’un compte Administrateur de domaine. L’ordinateur redémarre.
   
-Ensuite, vous devez mettre à jour les serveurs DNS pour votre réseau virtuel afin que Azure affecte aux machines virtuelles les adresses IP des deux nouveaux contrôleurs de domaine à utiliser comme serveurs DNS. Renseignez les variables, puis exécutez ces commandes à partir d'une invite de commandes Windows PowerShell sur votre ordinateur local:
+Ensuite, vous devez mettre à jour les serveurs DNS pour votre réseau virtuel afin que Azure affecte aux machines virtuelles les adresses IP des deux nouveaux contrôleurs de domaine à utiliser comme serveurs DNS. Renseignez les variables, puis exécutez ces commandes à partir d’une invite de commandes Windows PowerShell sur votre ordinateur local:
   
 ```
 $rgName="<Table R - Item 4 - Resource group name column>"
@@ -232,9 +232,9 @@ New-ADReplicationSubnet -Name $vnetSpace -Site $vnet
 
 ## <a name="configure-the-dirsync-server"></a>Configurer le serveur de DirSync
 
-Utilisez le client Bureau à distance de votre choix et créez une connexion de bureau à distance à la machine virtuelle du serveur de synchronisation d'annuaire. Utilisez son nom d'ordinateur ou son nom DNS intranet et les informations d'identification du compte Administrateur local.
+Utilisez le client Bureau à distance de votre choix et créez une connexion de bureau à distance à la machine virtuelle du serveur de synchronisation d’annuaire. Utilisez son nom d'ordinateur ou son nom DNS intranet et les informations d'identification du compte Administrateur local.
   
-Ensuite, associez-le au domaine AD DS approprié à l'aide de ces commandes à l'invite Windows PowerShell.
+Ensuite, associez-le au domaine AD DS approprié à l’aide de ces commandes à l’invite Windows PowerShell.
   
 ```
 $domName="<AD DS domain name to join, such as corp.contoso.com>"
@@ -247,7 +247,7 @@ Lorsque cette phase est terminée, voici la configuration résultante, avec les 
   
 **Phase 2 : Les contrôleurs de domaine et le serveur DirSync pour votre infrastructure d’authentification fédérée haute disponibilité dans Azure.**
 
-![Phase 2 de l'infrastructure d'authentification fédérée haute disponibilité Office 365 dans Azure avec des contrôleurs de domaine](media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
+![Phase 2 de l’infrastructure d’authentification fédérée haute disponibilité Office 365 dans Azure avec des contrôleurs de domaine](media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
   
 ## <a name="next-step"></a>Étape suivante
 
@@ -261,6 +261,6 @@ Utilisez [High availability federated authentication Phase 3: Configure AD FS se
   
 [Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.md)
 
-[Options d'authentification fédérée](about-office-365-identity.md#federated-authentication-options)
+[Options d’authentification fédérée](about-office-365-identity.md#federated-authentication-options)
 
 

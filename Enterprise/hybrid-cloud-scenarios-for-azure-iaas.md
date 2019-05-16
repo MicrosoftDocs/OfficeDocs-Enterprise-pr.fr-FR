@@ -4,24 +4,24 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/30/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
-description: "Résumé: comprendre l'architecture hybride et les scénarios pour les offres Cloud de Microsoft infrastructure en tant que service IaaS dans Azure."
-ms.openlocfilehash: d3f4b4ccbc9dbfa54e6f1d0988624aeb71f27106
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+description: 'Résumé: comprendre l’architecture hybride et les scénarios pour les offres Cloud de Microsoft infrastructure en tant que service IaaS dans Azure.'
+ms.openlocfilehash: 429af408ca3f21fe667b36cdb9767d3916a6b1a4
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487630"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067350"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Scénarios de cloud hybride pour Azure IaaS
 
- **Résumé:** Comprendre l'architecture hybride et les scénarios pour les offres de Cloud IaaS (infrastructure as a service) de Microsoft dans Azure.
+ **Résumé:** Comprendre l’architecture hybride et les scénarios pour les offres de Cloud IaaS (infrastructure as a service) de Microsoft dans Azure.
   
 Étendez votre infrastructure de calcul et d’identité au cloud en hébergeant des charges de travail informatiques exécutées dans des réseaux virtuels Azure intersites.  
   
@@ -41,7 +41,7 @@ Pour chaque couche de l’architecture :
     
 - Identité
     
-    Ajoutez des serveurs d'identité, tels que les contrôleurs de domaine des services de domaine Active Directory (AD DS), à l'ensemble des serveurs exécutés dans Azure réseaux virtuels pour l'authentification locale.
+    Ajoutez des serveurs d’identité, tels que les contrôleurs de domaine des services de domaine Active Directory (AD DS), à l’ensemble des serveurs exécutés dans Azure réseaux virtuels pour l’authentification locale.
     
 - Réseau
     
@@ -51,23 +51,23 @@ Pour chaque couche de l’architecture :
     
     Contient des serveurs d’identité qui sont synchronisés avec les serveurs d’identité exécutés dans Azure. Peut également contenir des ressources auxquelles les ordinateurs virtuels exécutés dans Azure peuvent accéder, telles que le stockage et l’infrastructure de gestion des systèmes.
     
-## <a name="directory-synchronization-server-for-office-365"></a>Serveur de synchronisation d'annuaires pour Office 365
+## <a name="directory-synchronization-server-for-office-365"></a>Serveur de synchronisation d’annuaires pour Office 365
 
-L'exécution de votre serveur de synchronisation d'annuaires à partir d'un réseau virtuel Azure, comme illustré dans la figure 2, est un exemple d'extension de votre infrastructure informatique et d'identité dans le Cloud.
+L’exécution de votre serveur de synchronisation d’annuaires à partir d’un réseau virtuel Azure, comme illustré dans la figure 2, est un exemple d’extension de votre infrastructure informatique et d’identité dans le Cloud.
   
-**Figure 2: serveur de synchronisation d'annuaires pour Office 365 dans Azure IaaS**
+**Figure 2: serveur de synchronisation d’annuaires pour Office 365 dans Azure IaaS**
 
-![Serveur de synchronisation d'annuaires pour Office 365 dans Azure IaaS](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-DirSync.png)
+![Serveur de synchronisation d’annuaires pour Office 365 dans Azure IaaS](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-DirSync.png)
   
-Dans la figure 2, un réseau local héberge une infrastructure AD DS, avec un serveur proxy et un routeur sur son serveur Edge. Le routeur se connecte à une passerelle Azure sur le serveur Edge d'un réseau virtuel Azure avec une connexion VPN de site à site ou ExpressRoute. À l'intérieur du réseau virtuel, un serveur de synchronisation d'annuaires exécute Azure AD Connect.
+Dans la figure 2, un réseau local héberge une infrastructure AD DS, avec un serveur proxy et un routeur sur son serveur Edge. Le routeur se connecte à une passerelle Azure sur le serveur Edge d’un réseau virtuel Azure avec une connexion VPN de site à site ou ExpressRoute. À l’intérieur du réseau virtuel, un serveur de synchronisation d’annuaires exécute Azure AD Connect.
   
-Un serveur de synchronisation d'annuaires pour Office 365 synchronise la liste des comptes dans AD DS avec le client Azure AD d'un abonnement Office 365.
+Un serveur de synchronisation d’annuaires pour Office 365 synchronise la liste des comptes dans AD DS avec le client Azure AD d’un abonnement Office 365.
   
-Un serveur de synchronisation d'annuaires est un serveur Windows qui exécute Azure AD Connect. Pour une mise en service plus rapide ou pour réduire le nombre de serveurs locaux dans votre organisation, déployez votre serveur de synchronisation d'annuaires dans un réseau virtuel dans Azure IaaS.
+Un serveur de synchronisation d’annuaires est un serveur Windows qui exécute Azure AD Connect. Pour une mise en service plus rapide ou pour réduire le nombre de serveurs locaux dans votre organisation, déployez votre serveur de synchronisation d’annuaires dans un réseau virtuel dans Azure IaaS.
   
-Le serveur de synchronisation d'annuaire interroge AD DS pour les modifications, puis les synchronise avec l'abonnement Office 365.
+Le serveur de synchronisation d’annuaire interroge AD DS pour les modifications, puis les synchronise avec l’abonnement Office 365.
   
-Pour plus d'informations, reportez-vous à la rubrique [Deploy Office 365 Directory Synchronization in Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).
+Pour plus d’informations, reportez-vous à la rubrique [Deploy Office 365 Directory Synchronization in Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).
   
 ## <a name="line-of-business-lob-application"></a>Application métier
 
@@ -139,43 +139,43 @@ Suivez cette procédure pour une adoption réussie :
   
 1. Évaluer et expérimenter
     
-    Voir [SharePoint server 2016 dans Microsoft Azure](https://docs.microsoft.com/SharePoint/administration/sharepoint-server-2016-in-microsoft-azure) pour comprendre les avantages de l'exécution de sharepoint server 2016 dans Azure.
+    Voir [SharePoint server 2016 dans Microsoft Azure](https://docs.microsoft.com/SharePoint/administration/sharepoint-server-2016-in-microsoft-azure) pour comprendre les avantages de l’exécution de sharepoint server 2016 dans Azure.
     
     Voir [Intranet SharePoint Server 2016 dans un environnement de développement/test Azure](https://docs.microsoft.com/SharePoint/administration/intranet-sharepoint-server-2016-in-azure-dev-test-environment) pour créer un environnement de développement/test simulé
     
 2. Conception
     
-    Voir [conception d'une batterie de serveurs SharePoint Server 2016 dans Azure](https://docs.microsoft.com/SharePoint/administration/designing-a-sharepoint-server-2016-farm-in-azure) pour parcourir un processus afin de déterminer l'ensemble des éléments de mise en réseau, de calcul et de stockage d'Azure IaaS pour héberger votre batterie de serveurs et leurs paramètres.
+    Voir [conception d’une batterie de serveurs SharePoint Server 2016 dans Azure](https://docs.microsoft.com/SharePoint/administration/designing-a-sharepoint-server-2016-farm-in-azure) pour parcourir un processus afin de déterminer l’ensemble des éléments de mise en réseau, de calcul et de stockage d’Azure IaaS pour héberger votre batterie de serveurs et leurs paramètres.
     
 3. Déployer
     
-    RePortez-vous à la rubrique [deployIng SharePoint server 2016 with SQL Server AlwaysOn Availability Groups in Azure](https://docs.microsoft.com/SharePoint/administration/deploying-sharepoint-server-2016-with-sql-server-alwayson-availability-groups-in) pour parcourir la configuration de bout en bout de la batterie de haute disponibilité en cinq phases.
+    Reportez-vous à la rubrique [Deploying SharePoint server 2016 with SQL Server AlwaysOn Availability Groups in Azure](https://docs.microsoft.com/SharePoint/administration/deploying-sharepoint-server-2016-with-sql-server-alwayson-availability-groups-in) pour parcourir la configuration de bout en bout de la batterie de haute disponibilité en cinq phases.
     
 ## <a name="federated-identity-for-office-365-in-azure"></a>Identité fédérée pour Office 365 dans Azure
 
-Un autre exemple d'application métier à plusieurs niveaux hautement disponible dans Azure est l'identité fédérée pour Office 365.
+Un autre exemple d’application métier à plusieurs niveaux hautement disponible dans Azure est l’identité fédérée pour Office 365.
   
-**Figure 5: infrastructure d'identité fédérée haute disponibilité pour Office 365 dans Azure IaaS**
+**Figure 5: infrastructure d’identité fédérée haute disponibilité pour Office 365 dans Azure IaaS**
 
-![Une infrastructure d'authentification fédérée Office 365 à haute disponibilité dans Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-ADFS.png)
+![Une infrastructure d’authentification fédérée Office 365 à haute disponibilité dans Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-ADFS.png)
   
-Dans la figure 5, un réseau local héberge une infrastructure d'identité et des utilisateurs. Il est connecté à une passerelle Azure IaaS avec une connexion ExpressRoute ou VPN de site à site. Le réseau virtuel Azure contient des serveurs proxy Web, des serveurs AD FS (Active Directory Federation Services) et des contrôleurs de domaine AD DS (Active Directory Domain Services).
+Dans la figure 5, un réseau local héberge une infrastructure d’identité et des utilisateurs. Il est connecté à une passerelle Azure IaaS avec une connexion ExpressRoute ou VPN de site à site. Le réseau virtuel Azure contient des serveurs proxy Web, des serveurs AD FS (Active Directory Federation Services) et des contrôleurs de domaine AD DS (Active Directory Domain Services).
   
 Cette configuration a les attributs suivants des applications métier dans Azure : 
   
 - **Niveaux:** Il existe des niveaux pour les serveurs de proxy Web, les serveurs AD FS et les contrôleurs de domaine AD DS.
     
-- **Distribution de la charge:** Un équilibreur de charge Azure externe répartit les demandes d'authentification client entrantes vers les proxys Web et un équilibreur de charge Azure interne distribue les demandes d'authentification aux serveurs AD FS.
+- **Distribution de la charge:** Un équilibreur de charge Azure externe répartit les demandes d’authentification client entrantes vers les proxys Web et un équilibreur de charge Azure interne distribue les demandes d’authentification aux serveurs AD FS.
     
 Suivez cette procédure pour une adoption réussie :
   
 1. Évaluer et expérimenter
     
-    Voir [identité fédérée pour votre environnement de développement/test Office 365](federated-identity-for-your-office-365-dev-test-environment.md) pour créer un environnement de développement/test simulé pour l'authentification fédérée avec Office 365.
+    Voir [identité fédérée pour votre environnement de développement/test Office 365](federated-identity-for-your-office-365-dev-test-environment.md) pour créer un environnement de développement/test simulé pour l’authentification fédérée avec Office 365.
     
 2. Déployer
     
-    Consultez la rubrique [Deploy High Availability Federated Authentication for Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) pour parcourir la configuration de bout en bout de l'infrastructure AD FS haute disponibilité en cinq phases.
+    Consultez la rubrique [Deploy High Availability Federated Authentication for Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) pour parcourir la configuration de bout en bout de l’infrastructure AD FS haute disponibilité en cinq phases.
     
     
 ## <a name="see-also"></a>Voir aussi

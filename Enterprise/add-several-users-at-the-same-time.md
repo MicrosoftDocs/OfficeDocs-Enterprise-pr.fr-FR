@@ -4,7 +4,7 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - O365P_AddUsersCSV
@@ -23,13 +23,13 @@ search.appverid:
 - GEA150
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
-description: "Découvrez comment ajouter plusieurs utilisateurs à Office 365 pour les entreprises à partir d'une liste dans une feuille de calcul ou dans un autre fichier au format CSV. Regardez une vidéo sur YouTube qui explique comment ajouter des comptes à Office 365. À la fin de ce processus, chaque utilisateur disposant d'un compte dispose d'une boîte aux lettres Office 365. "
-ms.openlocfilehash: 1f91821ee552b59201ca01bdbce7edc0406929d6
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+description: 'Découvrez comment ajouter plusieurs utilisateurs à Office 365 pour les entreprises à partir d’une liste dans une feuille de calcul ou dans un autre fichier au format CSV. Regardez une vidéo sur YouTube qui explique comment ajouter des comptes à Office 365. À la fin de ce processus, chaque utilisateur disposant d’un compte dispose d’une boîte aux lettres Office 365. '
+ms.openlocfilehash: ef4093592d4f6fc8e38ee053b53c73193a821d36
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491500"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068690"
 ---
 # <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>Ajouter plusieurs utilisateurs simultanément à Office 365 - Aide de l’administrateur
 
@@ -85,7 +85,7 @@ ms.locfileid: "33491500"
 
 - À présent que ces personnes ont des comptes, elles doivent [Télécharger et installer ou réinstaller office 365 ou office 2016 sur un PC ou un Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658). Chaque membre de votre équipe peut installer Office 365 sur un maximum de 5 PC ou Mac. 
     
-- Chaque personne peut également [configurer les applications Office et le courrier électronique sur un appareil mobile sur un](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f) maximum de 5 tablettes et 5 téléphones, comme des iPhone, des iPad et des tablettes et tablettes Android. Ainsi, ils peuvent modifier les fichiers Office à partir de n'importe quel endroit. 
+- Chaque personne peut également [configurer les applications Office et le courrier électronique sur un appareil mobile sur un](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f) maximum de 5 tablettes et 5 téléphones, comme des iPhone, des iPad et des tablettes et tablettes Android. Ainsi, ils peuvent modifier les fichiers Office à partir de n’importe quel endroit. 
     
     Voir [Configurer Office 365 pour les entreprises](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa) pour obtenir une liste de bout en bout des étapes de configuration. 
     

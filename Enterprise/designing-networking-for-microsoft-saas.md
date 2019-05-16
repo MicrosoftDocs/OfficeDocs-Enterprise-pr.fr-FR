@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/28/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 4194020a-3847-4259-9f2d-5c556a4510f9
 description: 'Résumé : Comprendre comment optimiser votre réseau pour accéder aux services SaaS de Microsoft, notamment Office 365, Microsoft Intune et Dynamics 365.'
-ms.openlocfilehash: 3d47c53de1bc1121ef72eb519c51c0ad9423fff9
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 695e3255bf1afcb5314985caccb15ead410d93f6
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487294"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067770"
 ---
 # <a name="designing-networking-for-microsoft-saas"></a>Conception de réseaux pour Microsoft SaaS
 
@@ -39,7 +39,7 @@ Procédez comme suit pour optimiser votre réseau pour les services SaaS de Micr
     
 4. Examinez votre réseau les épingles, les destinations intermédiaires, telles que les services de sécurité en nuage, et supprimez-les si possible.
     
-5. ConFigurez vos périphériques Edge pour qu'ils contournent le traitement pour les catégories Optimize et allow du trafic SaaS de Microsoft.
+5. Configurez vos périphériques Edge pour qu’ils contournent le traitement pour les catégories Optimize et allow du trafic SaaS de Microsoft.
 
 ## <a name="optimizing-traffic-to-microsofts-saas-services"></a>Optimisation du trafic vers les services SaaS de Microsoft    
 
@@ -64,8 +64,8 @@ Il existe trois catégories de trafic Microsoft SaaS:
 
 La figure 1 présente la configuration recommandée de tous les bureaux, y compris les succursales, les succursales régionales ou centrales, dans lesquelles:
 
-- La catégorie **par défaut** et le trafic Internet général sont acheminés vers les bureaux disposant de serveurs proxy et d'autres périphériques Edge pour fournir une protection contre les risques de sécurité Internet.
-- **Optimiser** et **autoriser** le trafic de catégorie est transféré directement vers le serveur frontal le plus proche de l'extrémité du réseau Microsoft vers le bureau contenant l'utilisateur qui se connecte, en contournant les serveurs proxy et autres périphériques Edge.
+- La catégorie **par défaut** et le trafic Internet général sont acheminés vers les bureaux disposant de serveurs proxy et d’autres périphériques Edge pour fournir une protection contre les risques de sécurité Internet.
+- **Optimiser** et **autoriser** le trafic de catégorie est transféré directement vers le serveur frontal le plus proche de l’extrémité du réseau Microsoft vers le bureau contenant l’utilisateur qui se connecte, en contournant les serveurs proxy et autres périphériques Edge.
 
 Les périphériques SD-WAN (réseau étendu) définis par le logiciel dans les succursales séparent les éléments suivants: 
 

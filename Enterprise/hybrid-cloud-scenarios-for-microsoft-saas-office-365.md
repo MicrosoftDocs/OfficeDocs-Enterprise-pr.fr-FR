@@ -4,24 +4,24 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/30/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: db117e59-389f-46f5-a5df-4eeac0040aa8
-description: "Résumé: comprendre l'architecture hybride et les scénarios pour les offres Cloud SaaS de Microsoft (Office 365)."
-ms.openlocfilehash: 90b751e4bbea42d723961eb2ac339d23faf8c259
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+description: 'Résumé: comprendre l’architecture hybride et les scénarios pour les offres Cloud SaaS de Microsoft (Office 365).'
+ms.openlocfilehash: 84092fe419ab31fca7763f434e328eb855d46835
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487500"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067220"
 ---
 # <a name="hybrid-cloud-scenarios-for-microsoft-saas-office-365"></a>Scénarios de cloud hybride pour Microsoft SaaS (Office 365)
 
- **Résumé:** Comprendre l'architecture hybride et les scénarios pour les offres Cloud SaaS de Microsoft (Office 365).
+ **Résumé:** Comprendre l’architecture hybride et les scénarios pour les offres Cloud SaaS de Microsoft (Office 365).
   
 Combinez des déploiements locaux d’Exchange, de SharePoint ou de Skype Entreprise à leur équivalent dans Office 365 dans le cadre d’une migration cloud ou d’une stratégie d’intégration à long terme.
   
@@ -49,7 +49,7 @@ Pour chaque couche de l’architecture :
     
 - Identité
     
-    Peut inclure la synchronisation d'annuaires avec vos services de domaine Active Directory (AD DS) locaux. Enfin, vous pouvez configurer Azure AD pour la fédération avec un fournisseur d’identité tiers.
+    Peut inclure la synchronisation d’annuaires avec vos services de domaine Active Directory (AD DS) locaux. Enfin, vous pouvez configurer Azure AD pour la fédération avec un fournisseur d’identité tiers.
     
 - Réseau
     
@@ -69,29 +69,29 @@ Skype entreprise hybride vous permet de combiner un déploiement local existant 
 
 ![Configuration hybride de Skype entreprise](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-SfB.png)
   
-La figure 2 illustre la configuration hybride de Skype entreprise, constituée d'un pool frontal Skype entreprise local et d'un serveur Edge communiquant avec Skype entreprise Online dans Office 365.
+La figure 2 illustre la configuration hybride de Skype entreprise, constituée d’un pool frontal Skype entreprise local et d’un serveur Edge communiquant avec Skype entreprise Online dans Office 365.
   
-Pour plus d'informations, voir [planifier une connectivité hybride entre Skype entreprise Server et Skype entreprise Online](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/plan-hybrid-connectivity).
+Pour plus d’informations, voir [planifier une connectivité hybride entre Skype entreprise Server et Skype entreprise Online](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/plan-hybrid-connectivity).
     
 ## <a name="cloud-pbx-with-skype-for-business-server"></a>PBX cloud avec Skype Entreprise Server
 
-Le Cloud PBX avec Skype entreprise Server vous permet de passer d'un déploiement local de Skype entreprise Server à une topologie avec une connectivité PSTN (réseau téléphonique commuté) locale. 
+Le Cloud PBX avec Skype entreprise Server vous permet de passer d’un déploiement local de Skype entreprise Server à une topologie avec une connectivité PSTN (réseau téléphonique commuté) locale. 
   
 **Figure 3 : PBX cloud avec Skype Entreprise Server**
 
 ![PBX cloud avec Skype Entreprise Server](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-SfB-CloudPBX.png)
   
-La figure 3 illustre la configuration de PBX Cloud avec Skype entreprise Server, constituée d'un PBX local ou d'une passerelle Telco, d'un serveur Skype entreprise et du RTC connecté au PBX Cloud Microsoft dans Office 365, qui inclut Skype entreprise Online.
+La figure 3 illustre la configuration de PBX Cloud avec Skype entreprise Server, constituée d’un PBX local ou d’une passerelle Telco, d’un serveur Skype entreprise et du RTC connecté au PBX Cloud Microsoft dans Office 365, qui inclut Skype entreprise Online.
   
 Les utilisateurs au sein de l’organisation qui sont hébergés dans le cloud peuvent recevoir des services PBX (Private Branch Exchange) du cloud Microsoft qui incluent la signalisation et la messagerie vocale, mais la connectivité RTC (tonalité) est fournie via la fonctionnalité Voix Entreprise de votre déploiement Skype Entreprise Server local.
   
-Il s'agit d'un excellent exemple de configuration hybride qui vous permet de migrer progressivement vers un service basé sur un nuage. Vous pouvez conserver les fonctionnalités vocales de vos utilisateurs lorsque vous commencez à les déplacer vers Skype Entreprise Online. Vous pouvez déplacer vos utilisateurs comme vous le souhaitez, sachant que leurs fonctionnalités vocales continueront, indépendamment de l’endroit où elles sont hébergées. 
+Il s’agit d’un excellent exemple de configuration hybride qui vous permet de migrer progressivement vers un service basé sur un nuage. Vous pouvez conserver les fonctionnalités vocales de vos utilisateurs lorsque vous commencez à les déplacer vers Skype Entreprise Online. Vous pouvez déplacer vos utilisateurs comme vous le souhaitez, sachant que leurs fonctionnalités vocales continueront, indépendamment de l’endroit où elles sont hébergées. 
   
-Pour plus d'informations, voir [planifier une connectivité hybride entre Skype entreprise Server et Skype entreprise Online](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/plan-hybrid-connectivity).
+Pour plus d’informations, voir [planifier une connectivité hybride entre Skype entreprise Server et Skype entreprise Online](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/plan-hybrid-connectivity).
   
 Si vous n’avez pas encore mis en place un déploiement Lync Server ou Skype Entreprise Server, vous pouvez utiliser l’édition Cloud Connector de Skype Entreprise. Il s’agit d’un ensemble complet d’ordinateurs virtuels qui implémentent une connectivité RTC locale avec la fonctionnalité PBX cloud.
   
-Pour plus d'informations, reportez-vous à la rubrique [plan for Skype for Business Cloud Connector Edition](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/plan-your-phone-system-cloud-pbx-solution/plan-skype-for-business-cloud-connector-edition).
+Pour plus d’informations, reportez-vous à la rubrique [plan for Skype for Business Cloud Connector Edition](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/plan-your-phone-system-cloud-pbx-solution/plan-skype-for-business-cloud-connector-edition).
 
   
 ## <a name="sharepoint-hybrid"></a>Environnement hybride SharePoint
@@ -102,7 +102,7 @@ SharePoint hybride combine SharePoint Online dans Office 365 à votre batterie 
 
 ![Configuration hybride SharePoint](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-SP.png)
   
-La figure 4 illustre la configuration hybride de SharePoint, constituée d'une batterie de serveurs SharePoint locale communiquant avec SharePoint Online dans Office 365.
+La figure 4 illustre la configuration hybride de SharePoint, constituée d’une batterie de serveurs SharePoint locale communiquant avec SharePoint Online dans Office 365.
   
 Scénarios SharePoint hybrides
   
@@ -148,7 +148,7 @@ Cette configuration hybride :
     
 Vous pouvez également intégrer cette configuration hybride à d’autres applications Microsoft Office 365, notamment Skype Entreprise Online et SharePoint Online.
   
-Pour plus d'informations, consultez la rubrique [déploiements hybrides Exchange Server](https://docs.microsoft.com/exchange/exchange-hybrid).
+Pour plus d’informations, consultez la rubrique [déploiements hybrides Exchange Server](https://docs.microsoft.com/exchange/exchange-hybrid).
   
 ## <a name="see-also"></a>Voir aussi
 

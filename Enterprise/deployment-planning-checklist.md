@@ -1,10 +1,9 @@
 ---
 title: Liste de contrôle de planification du déploiement pour Office 365
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 8/21/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -18,20 +17,20 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 5fa4f6ef-35ad-4840-91c1-4834df3df5a0
-description: Cette liste de contrôle permet à votre organisation de planifier et de préparer une migration vers Office 365. Les phases et les étapes de la liste de vérification sont alignées sur les instructions fournies par le centre d'intégration.
-ms.openlocfilehash: 42c292f3fe5f8a3753a733e5b362521d95eab827
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+description: Cette liste de contrôle permet à votre organisation de planifier et de préparer une migration vers Office 365. Les phases et les étapes de la liste de vérification sont alignées sur les instructions fournies par le centre d’intégration.
+ms.openlocfilehash: 858ae9520db4cfb18696c817f041b879d66484e3
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490100"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067880"
 ---
 # <a name="deployment-planning-checklist-for-office-365"></a>Liste de contrôle de planification du déploiement pour Office 365
 
-Lorsque vous déplacez une organisation d'entreprise vers Office 365, il est important de planifier exactement les étapes à suivre, le moment de leur exécution et les personnes qui les exécuteront. Cette liste de contrôle permet à votre organisation de planifier et de préparer une migration vers Office 365. Les phases et les étapes de la liste de vérification sont alignées sur les instructions fournies par le [Centre d'intégration](https://go.microsoft.com/fwlink/?LinkId=517115). N'hésitez pas à adapter cette liste de contrôle aux besoins de votre organisation.
+Lorsque vous déplacez une organisation d’entreprise vers Office 365, il est important de planifier exactement les étapes à suivre, le moment de leur exécution et les personnes qui les exécuteront. Cette liste de contrôle permet à votre organisation de planifier et de préparer une migration vers Office 365. Les phases et les étapes de la liste de vérification sont alignées sur les instructions fournies par le [Centre d’intégration](https://go.microsoft.com/fwlink/?LinkId=517115). N’hésitez pas à adapter cette liste de contrôle aux besoins de votre organisation.
 
-## <a name="need-help-with-your-deployment"></a>Vous avez besoin d'aide pour votre déploiement?
-Voulez-vous obtenir de l'aide pour la configuration d'Office 365? EnVisagez d'utiliser [FastTrack](https://fasttrack.microsoft.com/office) ou les [conseillers de déploiement pour les services Office 365](deployment-advisors-for-office-365.md).
+## <a name="need-help-with-your-deployment"></a>Vous avez besoin d’aide pour votre déploiement?
+Voulez-vous obtenir de l’aide pour la configuration d’Office 365? Envisagez d’utiliser [FastTrack](https://fasttrack.microsoft.com/office) ou les [conseillers de déploiement pour les services Office 365](deployment-advisors-for-office-365.md).
 
 ## <a name="sample-checklist-for-an-office-365-enterprise-deployment"></a>Exemple de liste de vérification pour un déploiement Office 365 entreprise
 
@@ -39,12 +38,12 @@ Voulez-vous obtenir de l'aide pour la configuration d'Office 365? EnVisagez d'ut
 |:-----|:-----|:-----|:-----|:-----|
 |**Tâches de déploiement/Events** <br/> |**Date de début** <br/> |**Date de fin** <br/> |**Resources** <br/> |**Dépendances** <br/> |
 |**Déterminer vos objectifs de déploiement** <br/> |||||
-| Avec vos parties prenantes internes et externes:<br>  -Accord sur l'étendue et la chronologie <br>  -Accord sur le mécanisme de suivi de projet  <br>  -développer des critères de réussite et une [communication](https://fasttrack.microsoft.com/office) / [prise en main d'Office 365](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)|||||
+| Avec vos parties prenantes internes et externes:<br>  -Accord sur l’étendue et la chronologie <br>  -Accord sur le mécanisme de suivi de projet  <br>  -Développer des critères de réussite et une [communication](https://fasttrack.microsoft.com/office) / [prise en main d’Office 365](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)|||||
 |**Inventorier votre environnement actuel et prendre des décisions clés en matière de déploiement** |||||
 |Inventorier votre environnement actuel |||||
-| Collecter le nombre de comptes d'utilisateur (noms de connexion, adresses de messagerie) |||||
+| Collecter le nombre de comptes d’utilisateur (noms de connexion, adresses de messagerie) |||||
 | Collecter le nombre et la taille des boîtes aux lettres (y compris les boîtes aux lettres partagées et les salles de conférence) |||||
-| Collecter les versions et les configurations des clients (navigateurs, systèmes d'exploitation, applications Office, versions mobiles, etc.) |||||
+| Collecter les versions et les configurations des clients (navigateurs, systèmes d’exploitation, applications Office, versions mobiles, etc.) |||||
 | Collecter des détails sur les paramètres de votre réseau (hôtes DNS, configuration de proxy et/ou de pare-feu, connectivité Internet) |||||
 | Collecter des informations sur les emplacements de stockage des fichiers (partages de fichiers, stockage de fichiers intranet) |||||
 | Collecter des détails sur les sites intranet que vous envisagez de migrer |||||
@@ -52,10 +51,10 @@ Voulez-vous obtenir de l'aide pour la configuration d'Office 365? EnVisagez d'ut
 | Collecter les détails des applications qui sont intégrées aux systèmes existants (applications à extension messagerie, flux de travail, CRM, etc.) |||||
 |Prendre des décisions clés en matière de déploiement |||||
 | Comment allez [-vous créer et/ou synchroniser des comptes](https://go.microsoft.com/fwlink/?LinkId=534819)? |||||
-| Comment les [comptes d'utilisateur](https://go.microsoft.com/fwlink/?LinkId=534820)seront-ils authentifiés? |||||
+| Comment les [comptes d’utilisateur](https://go.microsoft.com/fwlink/?LinkId=534820)seront-ils authentifiés? |||||
 | Migrerez-vous les données et comment effectuerez-vous la migration ( [courrier électronique](https://go.microsoft.com/fwlink/?LinkId=534823) et [fichiers](https://go.microsoft.com/fwlink/?LinkId=534824))? |||||
 | Existe-t-il une intégration rapide ou à long terme [avec les systèmes locaux](https://go.microsoft.com/fwlink/?LinkId=534822)? |||||
-| Quels [appareils les utilisateurs pourront-ils se connecter](https://go.microsoft.com/fwlink/?LinkId=534821) à distance (à distance, à partir d'appareils mobiles ou simplement à partir de votre réseau)? |||||
+| Quels [appareils les utilisateurs pourront-ils se connecter](https://go.microsoft.com/fwlink/?LinkId=534821) à distance (à distance, à partir d’appareils mobiles ou simplement à partir de votre réseau)? |||||
 |**Réparer les bloqueurs de déploiement potentiels** |||||
 |Avec les outils et conseils de Microsoft: |||||
 | Nettoyer les comptes Active Directory ( [conseils](https://go.microsoft.com/fwlink/?LinkId=534825) et [Outils](https://go.microsoft.com/fwlink/?LinkId=534826)) |||||
@@ -63,14 +62,14 @@ Voulez-vous obtenir de l'aide pour la configuration d'Office 365? EnVisagez d'ut
 | Préparer votre réseau ( [conseils et outils](https://aka.ms/tune)) |||||
 | Mettre à jour les versions de logiciel client ( [instructions](https://go.microsoft.com/fwlink/?LinkId=534827)) |||||
 | Si vous disposez des services AD RMS (Active Directory Rights Management Services): prepare Your Environment ( [Guidance](https://go.microsoft.com/fwlink/?linkid=844967))  <br/> |||||
-|**Configurer les services Office 365 pour qu'ils fonctionnent pour votre organisation** |||||
+|**Configurer les services Office 365 pour qu’ils fonctionnent pour votre organisation** |||||
 |Configurer votre abonnement Office 365 |||||
 |[Vérifier les domaines que vous souhaitez utiliser avec votre abonnement](https://go.microsoft.com/fwlink/?LinkId=534828) |||||
-| Configurer les [paramètres d'application](https://go.microsoft.com/fwlink/?LinkId=534829) (courrier électronique, messagerie instantanée, réunions en ligne, collaboration Web, stockage de fichiers, Yammer) |||||
-| Préparer la [synchronisation d'annuaires](https://go.microsoft.com/fwlink/?LinkId=534830) (facultatif) |||||
+| Configurer les [paramètres d’application](https://go.microsoft.com/fwlink/?LinkId=534829) (courrier électronique, messagerie instantanée, réunions en ligne, collaboration Web, stockage de fichiers, Yammer) |||||
+| Préparer la [synchronisation d’annuaires](https://go.microsoft.com/fwlink/?LinkId=534830) (facultatif) |||||
 | Préparer l' [authentification unique](https://go.microsoft.com/fwlink/?LinkId=534831) (facultatif) |||||
 |Préparer votre organisation |||||
-|[Préparer le service d'assistance](https://fasttrack.microsoft.com/office) pour la migration à venir |||||
+|[Préparer le service d’assistance](https://fasttrack.microsoft.com/office) pour la migration à venir |||||
 | Tester le déploiement et le processus de migration facultatif |||||
 | Informer vos utilisateurs des [modifications à venir et de leur impact sur celles](https://fasttrack.microsoft.com/office) -ci |||||
 |**Déploiement pour les utilisateurs** |||||

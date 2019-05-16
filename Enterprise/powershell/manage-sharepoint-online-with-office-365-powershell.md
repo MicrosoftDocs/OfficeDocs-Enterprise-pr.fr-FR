@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 05/01/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,18 +14,18 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Résumé : Utilisez Office 365 PowerShell pour gérer les utilisateurs, les groupes et les groupes de sites SharePoint Online.'
-ms.openlocfilehash: c033e006f61ce34ff1e8925e50552c2041c11884
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 2721639ca3ef83b39f85f6da70e47ba90f93f558
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573938"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068870"
 ---
 # <a name="manage-sharepoint-online-with-office-365-powershell"></a>Gestion de SharePoint Online avec Office 365 PowerShell
 
  **Résumé :** Utilisez Office 365 PowerShell pour gérer les utilisateurs, les groupes et les groupes de sites SharePoint Online.
   
-L'une des tâches principales de tout administrateur SharePoint Online consiste à gérer les sites, les groupes de sites et les utilisateurs. Bien que vous puissiez effectuer certaines de ces tâches dans le centre d'administration 365 de Microsoft, les autres tâches sont beaucoup plus rapides et plus faciles dans Office 365 PowerShell. Pour plus d'informations, consultez les rubriques suivantes :
+L'une des tâches principales de tout administrateur SharePoint Online consiste à gérer les sites, les groupes de sites et les utilisateurs. Bien que vous puissiez effectuer certaines de ces tâches dans le Centre d’administration Microsoft 365, d’autres tâches sont beaucoup plus rapides et plus simples à exécuter dans Office 365 PowerShell. Pour plus d’informations, consultez les rubriques suivantes :
 
 - [Connexion à SharePoint Online PowerShell](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
   

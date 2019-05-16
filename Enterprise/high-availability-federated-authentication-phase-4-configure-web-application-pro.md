@@ -1,27 +1,27 @@
 ---
-title: Authentification fédérée haute disponibilité, phase 4 configurer les proxys d'application Web
+title: Authentification fédérée haute disponibilité, phase 4 configurer les proxys d’application Web
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 03/15/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
-description: "Résumé: conFigurez les serveurs proxy d'application Web pour votre authentification fédérée haute disponibilité pour Office 365 dans Microsoft Azure."
-ms.openlocfilehash: c5472c8c7268d39dd6d3ca5ef78bde9e4bdde7a3
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+description: 'Résumé: configurez les serveurs proxy d’application Web pour votre authentification fédérée haute disponibilité pour Office 365 dans Microsoft Azure.'
+ms.openlocfilehash: fa8f5d278283f66bda0aa9efb0dddf40e52ee1a6
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491284"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067330"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>Authentification fédérée haute disponibilité, phase 4 : Configurer les proxys d’application web
 
- **Résumé:** ConFigurez les serveurs proxy d'application Web pour votre authentification fédérée haute disponibilité pour Office 365 dans Microsoft Azure.
+ **Résumé:** Configurez les serveurs proxy d’application Web pour votre authentification fédérée haute disponibilité pour Office 365 dans Microsoft Azure.
   
 Au cours de cette phase du déploiement de la haute disponibilité pour l’authentification fédérée Office 365 dans les services d’infrastructure Azure, vous avez créé un équilibreur de charge interne et deux serveurs AD FS.
   
@@ -74,7 +74,7 @@ Voici un exemple :
   
 |**Name**|**Type**|**TTL (Durée de vie)**|**Valeur**|
 |:-----|:-----|:-----|:-----|
-|FS.contoso.com  <br/> |A  <br/> |3600  <br/> |131.107.249.117  <br/> |
+|fs.contoso.com  <br/> |A  <br/> |3600  <br/> |131.107.249.117  <br/> |
    
 Ensuite, ajoutez un enregistrement d’adresse DNS à l’espace de noms DNS privé de votre organisation pour résoudre le nom de domaine complet de votre service de fédération en adresse IP privée affectée à l’équilibreur de charge interne pour les serveurs AD FS (tableau I, élément 4, colonne Valeur).
   
@@ -96,7 +96,7 @@ Notez que l’ensemble de commandes Azure PowerShell suivant utilise des valeurs
     
 - Tableau A, pour vos groupes à haute disponibilité
     
-Rappelez-vous que vous avez défini le tableau M dans [High Availability Federated authenticAtion phase 2: configurer](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) les contrôleurs de domaine et les tableaux R, V, S, I et A dans [High Availability Federated Authentication phase 1: configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
+Rappelez-vous que vous avez défini le tableau M dans [High Availability Federated Authentication phase 2: configurer](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) les contrôleurs de domaine et les tableaux R, V, S, I et A dans [High Availability Federated Authentication phase 1: configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
   
 Lorsque vous avez fourni toutes les valeurs correctes, exécutez le bloc obtenu à l’invite de commandes Azure PowerShell ou dans le PowerShell ISE.
   
@@ -158,7 +158,7 @@ Lorsque cette phase est terminée, voici la configuration résultante, avec les 
   
 **Phase 4 : L’équilibreur de charge connecté à Internet et les serveurs proxy d’application web de votre infrastructure d’authentification fédérée haute disponibilité dans Azure**
 
-![Phase 4 de l'infrastructure d'authentification fédérée haute disponibilité Office 365 dans Azure avec les serveurs proxy d'application Web](media/7e03183f-3b3b-4cbe-9028-89cc3f195a63.png)
+![Phase 4 de l’infrastructure d’authentification fédérée haute disponibilité Office 365 dans Azure avec les serveurs proxy d’application Web](media/7e03183f-3b3b-4cbe-9028-89cc3f195a63.png)
   
 ## <a name="next-step"></a>Étape suivante
 
@@ -172,6 +172,6 @@ Utilisez [High availability federated authentication Phase 5: Configure federate
   
 [Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.md)
 
-[Options d'authentification fédérée](about-office-365-identity.md#federated-authentication-options)
+[Options d’authentification fédérée](about-office-365-identity.md#federated-authentication-options)
 
 

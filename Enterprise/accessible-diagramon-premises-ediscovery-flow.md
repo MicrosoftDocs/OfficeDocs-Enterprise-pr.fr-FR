@@ -4,19 +4,19 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b9dcd692-0485-4eec-870d-87ab6b89d97b
 description: 'Cet article est une version texte accessible du diagramme nommé Flux eDiscovery local :'
-ms.openlocfilehash: e137a75fb80c9198a332144d82fe405c6884aa52
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: bdaf46c552b346d0e6966cd3589f239146ddadc5
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487700"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068530"
 ---
 # <a name="accessible-diagram---on-premises-ediscovery-flow"></a>Diagramme accessible : Flux de découverte électronique local
 
@@ -26,7 +26,7 @@ Cette affiche fournit des détails sur l’architecture et le flux de données d
   
 ## <a name="across-sharepoint-exchange-lync-and-file-shares"></a>Sur SharePoint, Exchange, Lync et partages de fichiers
 
-Le diagramme montre un utilisateur envoyant une requête qui accède à deux batteries de serveurs, une batterie d'applications SharePoint 2013 Enterprise et une batterie de services SharePoint 2013. La batterie de services SharePoint 2013 communique avec une batterie de serveurs de contenu SharePoint 2013, Exchange Server 2013 (qui communique avec Lync 2013) et les partages de fichiers Windows. 
+Le diagramme montre un utilisateur envoyant une requête qui accède à deux batteries de serveurs, une batterie d’applications SharePoint 2013 Enterprise et une batterie de services SharePoint 2013. La batterie de services SharePoint 2013 communique avec une batterie de serveurs de contenu SharePoint 2013, Exchange Server 2013 (qui communique avec Lync 2013) et les partages de fichiers Windows. 
   
 La liste flux eDiscovery décrit le flux de données et l’ordre dans lequel se produisent les actions de requête eDiscovery au sein de SharePoint, Exchange, Lync et des partages de fichiers.  
   
@@ -36,7 +36,7 @@ La liste flux eDiscovery est tout d’abord décrite en détail, suivie d’une 
 
 Les chiffres pour chacune des étapes décrites dans cette liste se rapportent à une étape illustrée dans le diagramme. Le diagramme est décrit en détail plus loin dans ce document.  
   
-1. Les cas eDiscovery sont créés, gérés et utilisés dans le centre eDiscovery (EDC). L'EDC est une collection de sites SharePoint 2013. C’est à cet endroit que les cas sont définis, les sources devant être suivies identifiées, les requêtes émises, les résultats des requêtes examinés et les conservations de contenu placées ou supprimées. 
+1. Les cas eDiscovery sont créés, gérés et utilisés dans le centre eDiscovery (EDC). L’EDC est une collection de sites SharePoint 2013. C’est à cet endroit que les cas sont définis, les sources devant être suivies identifiées, les requêtes émises, les résultats des requêtes examinés et les conservations de contenu placées ou supprimées. 
     
 2. La requête ou l’action eDiscovery (Hold, ReleaseHold, ou GetStatus) est relayée de l’EDC au proxy de l’application Service de recherche (SSA) dans la batterie d’applications Entreprise. Le proxy SSA transmet ensuite le trafic à l’application de service de recherche (SSA) dans la batterie des applications de services. Dans cet exemple, la demande doit placer tout élément dans la batterie de serveurs de contenu SharePoint avec «CONTOSO» dans le nom de fichier en conservation. 
     
@@ -62,7 +62,7 @@ Les chiffres pour chacune des étapes décrites dans cette liste se rapportent �
     
 13. Des services web Exchange répondent à la SSA avec des résultats de recherche eDiscovery ou une réponse à une demande d’état pour une conservation basée sur une requête, qui à son tour est relayée à l’EDC.  
     
-#### <a name="prerequisites"></a>Conditions requises
+#### <a name="prerequisites"></a>Conditions préalables
 
 - La recherche de contenu d’entreprise SharePoint doit être configurée, des analyses de recherche sur les sources de contenu (SharePoint et partages de fichiers Windows) sont en cours d’exécution et l’ensemble des sources de contenu sont dans l’index.  
     
@@ -70,7 +70,7 @@ Les chiffres pour chacune des étapes décrites dans cette liste se rapportent �
     
 ### <a name="description-of-components-in-the-diagram"></a>Description des composants du diagramme
 
-Le diagramme montre un utilisateur envoyant une requête, qui accède à deux batteries de serveurs, une batterie d'applications SharePoint 2013 Enterprise et une batterie de services SharePoint 2013. La batterie de serveurs SharePoint Services est dotée d'une batterie de serveurs de contenu SharePoint 2013, d'Exchange Server 2013 (qui est une interface avec Lync 2013) et de partages de fichiers Windows. 
+Le diagramme montre un utilisateur envoyant une requête, qui accède à deux batteries de serveurs, une batterie d’applications SharePoint 2013 Enterprise et une batterie de services SharePoint 2013. La batterie de serveurs SharePoint Services est dotée d’une batterie de serveurs de contenu SharePoint 2013, d’Exchange Server 2013 (qui est une interface avec Lync 2013) et de partages de fichiers Windows. 
   
 #### <a name="sharepoint-2013-enterprise-app-farm"></a>Batterie de serveurs SharePoint 2013 Enterprise App
 
@@ -110,7 +110,7 @@ Lorsque le proxy SSA de la batterie d’applications Enterprise SharePoint envoi
     
 - Si la demande est une action d’écriture, le service SSA envoie l’action d’écriture au SSAadmin_db.  
     
-- Une demande d'analyse et de résultats de réponse est envoyée de la SSA à la batterie de contenu SharePoint 2013 et une réponse est renvoyée au SSA. 
+- Une demande d’analyse et de résultats de réponse est envoyée de la SSA à la batterie de contenu SharePoint 2013 et une réponse est renvoyée au SSA. 
     
 - Une demande d’analyse et de résultats est envoyée à partir du SSA aux partages de fichiers Windows et une réponse est renvoyée au SSA.  
     
@@ -146,7 +146,7 @@ Lorsque le  SSA de la batterie de services SharePoint envoie une requête d’é
 
 Le composant de serveur Exchange 2013 contient le service web Exchange et fournit les éléments suivants :  
   
-- L'approbation de serveur à serveur/OAuth est gérée entre la batterie de contenu SharePoint 2013 et Exchange 2013. 
+- L’approbation de serveur à serveur/OAuth est gérée entre la batterie de contenu SharePoint 2013 et Exchange 2013. 
     
 - L’approbation de serveur à serveur/OAuth est gérée entre Exchange 2013 et Lync 2013.  
     
@@ -162,15 +162,15 @@ Le composant de partages de fichiers Windows fournit les résultats d’analyse 
 
 La légende pour ce diagramme représente graphiquement les différents types de trafic décrits parmi les composants à l’aide de lignes de couleur comme suit :  
   
-- Ligne bleu clair: requête/action-requête eDiscovery ou données d'action 
+- Ligne bleu clair: requête/action-requête eDiscovery ou données d’action 
     
 - Ligne orange: réponse eDisovery-données de réponse à la requête eDiscovery 
     
 - Ligne verte: état requête/réponse-État eDiscovery requête/réponse données 
     
-- Ligne violette: demande d'état/d'action Exchange-demande eDiscovery pour l'état de l'action pour le trafic Exchange. 
+- Ligne violette: demande d’état/d’action Exchange-demande eDiscovery pour l’état de l’action pour le trafic Exchange. 
     
-- Ligne rouge: réponse d'état/de données Exchange-requête eDiscovery ou réponse d'État à partir d'Exchange. 
+- Ligne rouge: réponse d’état/de données Exchange-requête eDiscovery ou réponse d’État à partir d’Exchange. 
     
 - Ligne noire en pointillés : Approbation de serveur à serveur/Oauth  
     

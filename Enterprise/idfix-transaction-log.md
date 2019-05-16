@@ -1,10 +1,9 @@
 ---
 title: Office 365 IdFix journal des transactions
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 8/21/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
@@ -16,29 +15,29 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: d58b7d45-7947-4193-9456-82ba76f42d89
-description: Fournit un exemple et décrit la Convention d'affectation de noms et le niveau de journalisation par défaut du journal des transactions d'Office 365 IdFix.
-ms.openlocfilehash: c652f8dcbc23a6f0165d894ce6317443db72ceee
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+description: Fournit un exemple et décrit la Convention d’affectation de noms et le niveau de journalisation par défaut du journal des transactions d’Office 365 IdFix.
+ms.openlocfilehash: 0c6f2dd64cb406681c0a98099b2a42887ee79c25
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490940"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067260"
 ---
 # <a name="office-365-idfix-transaction-log"></a>Office 365 IdFix journal des transactions
 
-Fournit un exemple et décrit la Convention d'affectation de noms et le niveau de journalisation par défaut du journal des transactions d'Office 365 IdFix.
+Fournit un exemple et décrit la Convention d’affectation de noms et le niveau de journalisation par défaut du journal des transactions d’Office 365 IdFix.
   
 ## <a name="idfix-transaction-log-location"></a>Emplacement du journal des transactions IdFix
 
-L'outil IdFix Office 365 crée un nouveau journal des transactions chaque fois que vous cliquez sur **appliquer** dans IdFix et que vous appliquez les modifications à la forêt Active Directory. Le journal des transactions est enregistré dans le dossier où vous avez installé IdFix. Par défaut, ce dossier est C:\Deployment Tools\IDFix. Le nom du fichier journal des transactions utilise un format de date et d'heure, par exemple, verbose 6-1-2018 6-17-22 PM indique un fichier qui a été généré le 1er juin 2018 à 6:17:22 PM. Verbose indique le niveau de journalisation. 
+L’outil IdFix Office 365 crée un nouveau journal des transactions chaque fois que vous cliquez sur **appliquer** dans IdFix et que vous appliquez les modifications à la forêt Active Directory. Le journal des transactions est enregistré dans le dossier où vous avez installé IdFix. Par défaut, ce dossier est C:\Deployment Tools\IDFix. Le nom du fichier journal des transactions utilise un format de date et d’heure, par exemple, verbose 6-1-2018 6-17-22 PM indique un fichier qui a été généré le 1er juin 2018 à 6:17:22 PM. Verbose indique le niveau de journalisation. 
   
-## <a name="idfix-transaction-log-logging-level"></a>Niveau d'enregistrement du journal des transactions IdFix
+## <a name="idfix-transaction-log-logging-level"></a>Niveau d’enregistrement du journal des transactions IdFix
 
-Le mot détaillé dans le nom du fichier journal des transactions indique le niveau de journalisation dans le fichier. Verbose signifie que la quantité maximale d'informations est capturée dans le journal. Il s'agit du niveau de journalisation par défaut. Pour le moment, vous ne pouvez pas modifier le niveau de journalisation.
+Le mot détaillé dans le nom du fichier journal des transactions indique le niveau de journalisation dans le fichier. Verbose signifie que la quantité maximale d’informations est capturée dans le journal. Il s’agit du niveau de journalisation par défaut. Pour le moment, vous ne pouvez pas modifier le niveau de journalisation.
   
 ## <a name="idfix-transaction-log-format"></a>Format de journal des transactions IdFix
 
-IdFix écrit les résultats de chaque action de **mise à jour** dans un journal des transactions, comme illustré dans l'exemple suivant:
+IdFix écrit les résultats de chaque action de **mise à jour** dans un journal des transactions, comme illustré dans l’exemple suivant:
   
 ```
 5/22/2018 6:36:44 AM Initialized - IdFix version 1.07 - Multi-Tenant

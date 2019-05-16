@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/15/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Les clients Office 365 existants devront envoyer une demande avant la date d'échéance de leur pays afin que les données client de leurs services Office 365 soient déplacées vers leur nouvelle région.
-ms.openlocfilehash: 2307cb7d197397044578f9af3037914c83a1e220
-ms.sourcegitcommit: b85d3db24385d7e0bdbfb0d4499174ccd7f573bd
+ms.openlocfilehash: 96556ae231f66dd4448f871a6154b527816933f4
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "30650077"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071010"
 ---
-# <a name="how-to-request-your-data-move"></a>Procédure de demande d'un déplacement de données
+# <a name="how-to-request-your-data-move"></a>Procédure de demande d’un déplacement de données
 
 > [!NOTE]
 > Les informations sur cette page s'appliquent uniquement aux utilisateurs qui disposaient déjà de clients Office 365 avant le lancement des nouveaux centres de données dans leur région. 
@@ -44,7 +44,7 @@ Nous ne pouvons pas accepter les demandes de déplacement après la date d'éch�
    
 ## <a name="how-to-request-a-move"></a>Procédure de demande d’un déplacement
 
-Les clients éligibles verront une page dans leur [Centre d'administration Office 365](https://aka.ms/365admin), qui leur permettra de demander que leurs données client principales soient déplacées vers leur nouvelle région de centre de données.  
+Les clients éligibles verront une page dans leur [Centre d’administration Office 365](https://aka.ms/365admin), qui leur permettra de demander que leurs données client principales soient déplacées vers leur nouvelle région de centre de données.  
   
 Pour accéder à la page dans le Centre d'administration Office 365, dans le volet de navigation de gauche, développez **Paramètres**, puis cliquez sur **Profil de l'organisation**.
   
@@ -54,7 +54,7 @@ Sur la page **Profil de l'organisation**, faites défiler jusqu'à la section su
   
 ![Carte de résidence des données](media/fdb02cd0-825d-4d9e-bb35-6f806282884f.png)
   
-**Vous ne verrez peut-être pas cette section si l'une des conditions suivantes est appliquée**:
+**Vous ne verrez peut-être pas cette section si l’une des conditions suivantes est appliquée**:
 - Votre client n’est pas éligible au programme de déplacement. 
 - Toutes vos données se trouvent déjà dans la nouvelle région (reportez-vous à la section sur l’emplacement des données de la page). 
   
@@ -79,7 +79,7 @@ Après avoir fait une demande de déplacement, vous ne pouvez pas modifier votre
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Microsoft Teams ne prend pas encore en charge la migration du contenu client des centres de données en région vers des centres de données dans le pays où les données de résidence de Microsoft teams sont disponibles.  Par conséquent, seuls les nouveaux clients auront toutes leurs données stockées dans le pays dans les nouvelles régions où Microsoft teams prend en charge la résidence des données.  En savoir plus sur la résidence des données Office 365 sur l'emplacement de votre entreprise [où se trouvent vos données?](https://products.office.com/where-is-your-data-located)   
+Microsoft Teams ne prend pas encore en charge la migration du contenu client des centres de données en région vers des centres de données dans le pays où les données de résidence de Microsoft teams sont disponibles.  Par conséquent, seuls les nouveaux clients auront toutes leurs données stockées dans le pays dans les nouvelles régions où Microsoft teams prend en charge la résidence des données.  En savoir plus sur la résidence des données Office 365 sur l’emplacement de votre entreprise [où se trouvent vos données?](https://products.office.com/where-is-your-data-located)   
 
 ## <a name="optional-actions-before-you-request-a-move"></a>Actions facultatives avant d’effectuer une demande de déplacement
 
@@ -107,9 +107,9 @@ Le client d'évaluation ne peut pas être associé à votre client existant :
     
 ### <a name="notify-users-to-update-out-of-date-exchange-settings-on-mobile-devices"></a>Notification adressée aux utilisateurs concernant la mise à jour des paramètres Exchange obsolètes sur les appareils mobiles
 
-Si les utilisateurs disposent d'un appareil mobile avec le serveur Exchange défini sur **m.Outlook.com** ou **podxxxxx.Outlook.com**, nous vous recommandons de passer à **Outlook.office365.com**, en suivant les instructions indiquées dans [set up a Mobile Device to Synchronize. avec votre compte](https://support.office.com/article/c9139caf-01ab-41a0-827c-3c06ee569ed3).
+Si les utilisateurs disposent d’un appareil mobile avec le serveur Exchange défini sur **m.Outlook.com** ou **podxxxxx.Outlook.com**, nous vous recommandons de passer à **Outlook.office365.com**, en suivant les instructions indiquées dans [set up a Mobile Device to Synchronize. avec votre compte](https://support.office.com/article/c9139caf-01ab-41a0-827c-3c06ee569ed3).
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 [Transfert de données principales vers le nouveau centre de données Office 365 régions centres](moving-data-to-new-datacenter-geos.md)
 

@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 03/15/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
 description: 'Résumé : Créez et configurez les serveurs Active Directory Federation Services (AD FS) pour votre authentification fédérée haute disponibilité pour Office 365 dans Microsoft Azure.'
-ms.openlocfilehash: add154dbce67c76b3f88e205c683711f72cb7b9a
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 83e6d024676ae608b9f6f856e2ce91c4b0b9a31f
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487844"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067490"
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>Authentification fédérée haute disponibilité, phase 3 : Configurer les serveurs AD FS
 
@@ -43,7 +43,7 @@ Utilisez le bloc de commandes PowerShell suivant pour créer les machines virtue
     
 - Tableau A, pour vos groupes à haute disponibilité
     
-Rappelez-vous que vous avez défini le tableau M dans [High Availability Federated authenticAtion phase 2: configurer](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) les contrôleurs de domaine et les tableaux R, V, S, I et A dans [High Availability Federated Authentication phase 1: configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
+Rappelez-vous que vous avez défini le tableau M dans [High Availability Federated Authentication phase 2: configurer](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) les contrôleurs de domaine et les tableaux R, V, S, I et A dans [High Availability Federated Authentication phase 1: configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
   
 > [!NOTE]
 > [!REMARQUE] Les ensembles de commandes suivants utilisent la dernière version d'Azure PowerShell. Reportez-vous à la rubrique relative à la [prise en main des cmdlets Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
@@ -135,7 +135,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
   
 Pour chaque machine virtuelle, utilisez le client Bureau à distance de votre choix et créez une connexion de Bureau à distance. Utilisez son nom d’ordinateur ou son nom DNS intranet et les informations d’identification du compte Administrateur local.
   
-Pour chaque machine virtuelle, associez-les au domaine des services de domaine Active Directory (AD DS) approprié à l'aide de ces commandes à l'invite Windows PowerShell.
+Pour chaque machine virtuelle, associez-les au domaine des services de domaine Active Directory (AD DS) approprié à l’aide de ces commandes à l’invite Windows PowerShell.
   
 ```
 $domName="<AD DS domain name to join, such as corp.contoso.com>"
@@ -148,7 +148,7 @@ Lorsque cette phase est terminée, voici la configuration résultante, avec les 
   
 **Phase 3 : Les serveurs AD FS et l’équilibreur de charge interne pour votre infrastructure d’authentification fédérée haute disponibilité dans Azure.**
 
-![Phase 3 de l'infrastructure d'authentification fédérée haute disponibilité Office 365 dans Azure avec les serveurs AD FS](media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
+![Phase 3 de l’infrastructure d’authentification fédérée haute disponibilité Office 365 dans Azure avec les serveurs AD FS](media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
   
 ## <a name="next-step"></a>Étape suivante
 

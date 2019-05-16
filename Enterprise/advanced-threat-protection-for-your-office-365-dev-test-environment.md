@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -16,18 +16,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 51019757-20ac-498c-b51e-cae6d41a8c08
 description: 'Résumé : Configurez et faites une démonstration de la protection avancée contre les menaces Office 365 dans votre environnement de développement/test Office 365.'
-ms.openlocfilehash: 53bff386490ed9647a511f75c997cb91b0acc181
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 7063b56762711fdb06c0c879d74b783c0137b550
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490150"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068300"
 ---
 # <a name="advanced-threat-protection-for-your-office-365-devtest-environment"></a>Protection avancée contre les menaces pour votre environnement de développement/test Office 365
 
  **Résumé :** Configurez et faites une démonstration de la protection avancée contre les menaces Office 365 dans votre environnement de développement/test Office 365.
   
-La protection avancée contre les menaces Office 365 est une fonctionnalité d’Exchange Online Protection (EOP) qui vous permet de lutter contre les programmes malveillants dans votre environnement de messagerie. Avec la protection avancée contre les menaces, vous créez des stratégies dans le centre d'administration &amp; Exchange ou dans le centre de sécurité conformité afin de garantir que vos utilisateurs peuvent accéder uniquement aux liens ou aux pièces jointes dans les e-mails identifiés comme non malveillants. Pour plus d'informations, consultez la rubrique [Protection avancée contre les menaces pour les pièces jointes et liens fiables](https://technet.microsoft.com/library/mt148491%28v=exchg.150%29.aspx).
+La protection avancée contre les menaces Office 365 est une fonctionnalité d’Exchange Online Protection (EOP) qui vous permet de lutter contre les programmes malveillants dans votre environnement de messagerie. Avec la protection avancée contre les menaces, vous créez des stratégies dans le centre d’administration &amp; Exchange ou dans le centre de sécurité conformité afin de garantir que vos utilisateurs peuvent accéder uniquement aux liens ou aux pièces jointes dans les e-mails identifiés comme non malveillants. Pour plus d'informations, consultez la rubrique [Protection avancée contre les menaces pour les pièces jointes et liens fiables](https://technet.microsoft.com/library/mt148491%28v=exchg.150%29.aspx).
   
 Les instructions fournies dans cet article indiquent comment configurer et tester la protection avancée contre les menaces dans votre abonnement d’évaluation Office 365.
   
@@ -38,9 +38,9 @@ Si vous souhaitez simplement tester la protection avancée contre les menaces de
 Si vous souhaitez tester la protection avancée contre les menaces dans une entreprise simulée, suivez les instructions de [DirSync pour votre environnement de développement/test Office 365](dirsync-for-your-office-365-dev-test-environment.md).
   
 > [!NOTE]
-> Le test de l'ATP ne nécessite pas l'environnement de développement/test d'entreprise simulé, qui inclut un intranet simulé connecté à Internet et la synchronisation d'annuaires pour une forêt des services de domaine Active Directory (AD DS). Il est proposé comme option dans cet article afin que vous puissiez tester la protection avancée contre les menaces et faire des essais dans un environnement qui représente une organisation classique. 
+> Le test de l’ATP ne nécessite pas l’environnement de développement/test d’entreprise simulé, qui inclut un intranet simulé connecté à Internet et la synchronisation d’annuaires pour une forêt des services de domaine Active Directory (AD DS). Il est proposé comme option dans cet article afin que vous puissiez tester la protection avancée contre les menaces et faire des essais dans un environnement qui représente une organisation classique. 
   
-## <a name="phase-2-demonstrate-the-default-email-delivery-behavior-of-office-365"></a>Phase 2: montrer le comportement de remise par défaut des messages d'Office 365
+## <a name="phase-2-demonstrate-the-default-email-delivery-behavior-of-office-365"></a>Phase 2: montrer le comportement de remise par défaut des messages d’Office 365
 
 Dans cette phase, vous démontrez qu’avant de configurer les stratégies de protection avancée contre les menaces, l’e-mail potentiellement malveillant est remis aux boîtes aux lettres Office 365 sans filtrage ni atténuation.
   
@@ -48,7 +48,7 @@ Dans cette phase, vous démontrez qu’avant de configurer les stratégies de pr
     
   - Si vous utilisez l’environnement de développement/test Office 365 léger, ouvrez une session privée d’Internet Explorer et connectez-vous sur votre ordinateur local.
     
-  - Si vous utilisez l'environnement de développement/test Office 365 entreprise simulé, utilisez le [portail Azure](https://portal.azure.com) pour vous connecter à la machine virtuelle CLIENT1, puis connectez-vous à partir de client1.
+  - Si vous utilisez l’environnement de développement/test Office 365 entreprise simulé, utilisez le [portail Azure](https://portal.azure.com) pour vous connecter à la machine virtuelle CLIENT1, puis connectez-vous à partir de client1.
     
 2. Ouvrez le Bloc-notes et saisissez du texte.
     
@@ -76,13 +76,13 @@ Dans cette phase, vous démontrez qu’avant de configurer les stratégies de pr
     
 14. Dans **URL**, tapez **http://www.spamlink.contoso.com/**, cliquez sur **OK**, puis cliquez sur **Envoyer**.
     
-15. Ouvrez une instance distincte d'Internet Explorer en mode de navigation privée, accédez au centre d'administration 365 de[https://admin.microsoft.com](https://admin.microsoft.com)Microsoft (), puis connectez-vous à votre abonnement d'évaluation Office 365 avec votre compte d'administrateur général.
+15. Ouvrez une instance distincte d’Internet Explorer en mode de navigation privée, accédez au centre d’administration 365 de[https://admin.microsoft.com](https://admin.microsoft.com)Microsoft (), puis connectez-vous à votre abonnement d’évaluation Office 365 avec votre compte d’administrateur général.
     
 16. Dans la page principale du portail, cliquez sur la vignette d’applications, puis cliquez sur **Courrier**.
     
 17. Dans la boîte de réception, cliquez sur le message ayant pour objet **Vos nouvelles clés**.
     
-18. Dans le dossier Courrier indésirable, cliquez sur le message ayant pour objet **Nouveau site web de voyage**. À l’intérieur du message, cliquez sur le lien **ce site**. Vous devriez voir un «! Internet Explorer n'a pas pu trouver spamlink.contoso.com. réserve. C’est le résultat correct, car il n’existe aucune page web à cet emplacement.
+18. Dans le dossier Courrier indésirable, cliquez sur le message ayant pour objet **Nouveau site web de voyage**. À l’intérieur du message, cliquez sur le lien **ce site**. Vous devriez voir un «! Internet Explorer n’a pas pu trouver spamlink.contoso.com. réserve. C’est le résultat correct, car il n’existe aucune page web à cet emplacement.
     
 Vous remarquez que ces deux e-mails potentiellement malveillants ont été remis correctement. L’e-mail **Vos nouvelles clés** pouvait contenir un programme malveillant non détecté et l’utilisateur a été autorisé à cliquer sur le lien potentiellement malveillant dans l’e-mail **Nouveau site web de voyage**.
   
@@ -90,7 +90,7 @@ Vous remarquez que ces deux e-mails potentiellement malveillants ont été remis
 
 Dans cette phase, vous créez et configurez une stratégie de pièce jointe fiable pour empêcher les e-mails contenant des pièces jointes potentiellement malveillantes d’être remises et une stratégie de liens fiables pour empêcher les utilisateurs de se diriger vers des URL potentiellement dangereuses.
   
-1. Dans l'onglet **Accueil Microsoft Office** d'Internet Explorer, cliquez sur la vignette **administrateur** .
+1. Dans l’onglet **Accueil Microsoft Office** d’Internet Explorer, cliquez sur la vignette **administrateur** .
     
 2. Dans le volet de navigation gauche, cliquez sur **Centres d’administration**, puis sur **Exchange**.
     
@@ -100,13 +100,13 @@ Dans cette phase, vous créez et configurez une stratégie de pièce jointe fiab
     
 5. Dans la fenêtre **nouvelle stratégie de pièces jointes approuvées** , dans **nom**, tapez **stratégie de pièces jointes approuvées-bloquer**.
     
-6. Pour les **pièces jointEs approuvées réponse aux programmes malveillants**inconnus, cliquez sur **bloquer**.
+6. Pour les **pièces jointes approuvées réponse aux programmes malveillants**inconnus, cliquez sur **bloquer**.
     
 7. Pour **Rediriger la pièce jointe en cas de détection**, cliquez sur **Activer la redirection** et tapez l’adresse e-mail de votre compte d’administrateur général Office 365.
     
 8. Pour **Appliqué à**, cliquez sur la flèche du menu déroulant, puis sur **Le domaine du destinataire est**. Dans la fenêtre, cliquez sur le nom de votre organisation (par exemple, contoso.onmicrosoft.com), puis cliquez sur **OK**.
     
-9. Cliquez sur **Enregistrer**. Après la mise à jour, vous devriez voir le **bloc stratégie de pièces jointEs approuvées**nouveau et activé.
+9. Cliquez sur **Enregistrer**. Après la mise à jour, vous devriez voir le **bloc stratégie de pièces jointes approuvées**nouveau et activé.
     
 10. Cliquez sur l’onglet **Liens approuvés**, puis sur le signe plus.
     
@@ -122,9 +122,9 @@ Dans cette phase, vous créez et configurez une stratégie de pièce jointe fiab
 
 Dans cette phase, vous montrez comment le Service Protection avancée contre les menaces en action traite les e-mails potentiellement malveillants.
   
-1. À partir de l'instance d'Internet Explorer que vous avez utilisée pour envoyer le courrier électronique à la phase 2, dans le volet de navigation de gauche, cliquez sur **éléments envoyés.**
+1. À partir de l’instance d’Internet Explorer que vous avez utilisée pour envoyer le courrier électronique à la phase 2, dans le volet de navigation de gauche, cliquez sur **éléments envoyés.**
     
-2. Cliquez sur l'e-mail intitulé **vos nouvelles clés**, cliquez sur la flèche vers le bas, puis sur **transférer**.
+2. Cliquez sur l’e-mail intitulé **vos nouvelles clés**, cliquez sur la flèche vers le bas, puis sur **transférer**.
     
 3. Pour le nouveau message, dans **À**, tapez l’adresse e-mail du nom de l’administrateur général Office 365 de votre abonnement d’évaluation, puis cliquez sur **Envoyer**.
     
@@ -136,7 +136,7 @@ Dans cette phase, vous montrez comment le Service Protection avancée contre les
     
   - Un e-mail intitulé **Fw : Nouveau site web de voyage**
     
-6. Ouvrez le message électronique intitulé **FW: New Travel Web site** et cliquez sur le lien **ce site** . Vous devriez voir un «ce site Web a été classé comme malveillant». réserve. Cela démontre qu'ATP vous empêche d'accéder au site Web potentiellement malveillant.
+6. Ouvrez le message électronique intitulé **FW: New Travel Web site** et cliquez sur le lien **ce site** . Vous devriez voir un «ce site Web a été classé comme malveillant». réserve. Cela démontre qu’ATP vous empêche d’accéder au site Web potentiellement malveillant.
     
 7. Dans l’onglet Centre d’administration Exchange d’Internet Explorer, dans le volet de navigation gauche, cliquez sur **Flux de messagerie**.
     
@@ -149,14 +149,14 @@ Dans cette phase, vous montrez comment le Service Protection avancée contre les
 11. Double-cliquez sur le message ayant pour objet **Fw : Vos nouvelles clés**. Notez comment ce message a été traité par ATP, puis remis dans la boîte de réception. Fermez cette fenêtre.
     
     > [!NOTE]
-    > L'objectif de la stratégie de pièces jointes fiables était de commencer à analyser les pièces jointes à la recherche de code malveillant. La pièce jointe getKeys. js a été autorisée car elle n'a pas été jugée malveillante. Cette étape montre que ATP a effectué une analyse de la pièce jointe. 
+    > L’objectif de la stratégie de pièces jointes fiables était de commencer à analyser les pièces jointes à la recherche de code malveillant. La pièce jointe getKeys. js a été autorisée car elle n’a pas été jugée malveillante. Cette étape montre que ATP a effectué une analyse de la pièce jointe. 
   
 12. Double-cliquez sur le message ayant pour objet **Fw : Nouveau site web de voyage**. Notez que ce message a bien été remis dans la boîte de réception.
     
 Vous pouvez désormais utiliser cet environnement pour créer des stratégies et expérimenter le Service Protection avancée contre les menaces.
   
 > [!TIP]
-> Cliquez [ici](http://aka.ms/catlgstack) pour afficher le plan de tous les articles dans le Guide de Laboratoire Test Office 365.
+> Cliquez sur[ici](http://aka.ms/catlgstack) pour afficher le plan de tous les articles dans le Guide de Laboratoire Test Office 365.
   
 ## <a name="see-also"></a>Voir aussi
 

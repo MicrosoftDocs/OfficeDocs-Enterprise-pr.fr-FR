@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/28/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 83e2859a-c673-47c4-880a-01cdfdadb93e
 description: "Résumé : Comprendre comment l'adoption cloud nécessite une nouvelle approche des investissements relatifs à l'infrastructure réseau."
-ms.openlocfilehash: c8fba120292b89894850312a84fd6067d925a07f
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 47d24a4f545cfae8a6bd1c507a61f48b6d26cc7d
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487240"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067630"
 ---
 # <a name="evolving-your-network-for-cloud-connectivity"></a>Évolution de votre réseau pour la connectivité au cloud
 
@@ -45,7 +45,7 @@ Investissements concernant les infrastructures réseau commencent par la connect
     
 - **Azure Infrastructure as a Service (IaaS)**: en plus des investissements pour les services SaaS et PaaS de Microsoft, l'exécution de charges de travail informatiques dans IaaS nécessite la création et la configuration de réseaux virtuels Azure hébergeant des machines virtuelles, la connectivité sécurisée des applications exécutées sur ces dernières, le routage, l'adressage IP, le DNS et l'équilibrage de charge. Les investissements en cours incluent la surveillance et le dépannage des performances et de la sécurité.
 
-[Microsoft 365](https://www.microsoft.com/microsoft-365) est une combinaison d'Office 365, Enterprise Management + Security (EMS) et Windows 10. Microsoft 365 combine plusieurs services SaaS et Azure pour une solution complète et intelligente qui permet à chacun d'être créatif et de collaborer en toute sécurité.
+[Microsoft 365](https://www.microsoft.com/microsoft-365) est une combinaison d’Office 365, Enterprise Management + Security (EMS) et Windows 10. Microsoft 365 combine plusieurs services SaaS et Azure pour une solution complète et intelligente qui permet à chacun d’être créatif et de collaborer en toute sécurité.
     
 ## <a name="areas-of-networking-investment-for-success-in-the-cloud"></a>Domaines d’investissement concernant les réseaux pour la réussite du cloud
 

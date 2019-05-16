@@ -1,10 +1,10 @@
 ---
-title: Organisations d'entreprise et Office 365
+title: Organisations d’entreprise et Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 11/8/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,28 +15,28 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: 6e18d402-f35e-415a-83b1-56620d4074ff
-description: Ressources pour planifier et gérer Office 365 pour votre organisation d'entreprise.
-ms.openlocfilehash: 7d28f68b0f33e02c9101abcac479d75675f1d0bc
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+description: Ressources pour planifier et gérer Office 365 pour votre organisation d’entreprise.
+ms.openlocfilehash: 0754213aef2acaa935cf59a317b93188b5002d33
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33489702"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067690"
 ---
-# <a name="enterprise-organizations-and-office-365"></a>Organisations d'entreprise et Office 365
+# <a name="enterprise-organizations-and-office-365"></a>Organisations d’entreprise et Office 365
 
-En tant que plus grande organisation avec des professionnels de l'informatique, vous avez des exigences et des normes spécifiques pour la maintenance de votre environnement. Voici les informations dont vous avez besoin pour planifier et gérer Office 365 pour votre entreprise.
+En tant que plus grande organisation avec des professionnels de l’informatique, vous avez des exigences et des normes spécifiques pour la maintenance de votre environnement. Voici les informations dont vous avez besoin pour planifier et gérer Office 365 pour votre entreprise.
   
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/d08b637c-66dc-4f0e-afc2-56da92e99589?autoplay=false]
   
 ## <a name="key-resources"></a>Ressources clés
 
-![Le symbole de l'oeil de FastTrack pour l'approvisionnement](media/263443cf-d8bd-460b-ac46-a08323551f3f.png)
+![Le symbole de l’oeil de FastTrack pour l’approvisionnement](media/263443cf-d8bd-460b-ac46-a08323551f3f.png)
   
- **Obtenir de l'aide de FastTrack**
+ **Obtenir de l’aide de FastTrack**
   
-Planifiez, configurez et migrez les données vers Office 365 avec l'aide de FastTrack.
+Planifiez, configurez et migrez les données vers Office 365 avec l’aide de FastTrack.
   
 [Obtenir sur FastTrack](https://go.microsoft.com/fwlink/?linkid=238431)
   
@@ -46,13 +46,13 @@ Planifiez, configurez et migrez les données vers Office 365 avec l'aide de Fast
   
 Protégez vos données et respectez les normes légales ou réglementaires.
   
-[Vue d'ensemble &amp; de la conformité de sécurité dans Office 365](https://support.office.com/article/dcb83b2c-ac66-4ced-925d-50eb9698a0b2)
+[Vue d’ensemble &amp; de la conformité de sécurité dans Office 365](https://support.office.com/article/dcb83b2c-ac66-4ced-925d-50eb9698a0b2)
   
-![Symboles de Cloud et d'architecture](media/2850ac8d-4c99-4825-869e-83724c4ef54e.png)
+![Symboles de Cloud et d’architecture](media/2850ac8d-4c99-4825-869e-83724c4ef54e.png)
   
- **Comprendre l'architecture Cloud**
+ **Comprendre l’architecture Cloud**
   
-Explorez les affiches de l'architecture sur le Cloud d'entreprise.
+Explorez les affiches de l’architecture sur le Cloud d’entreprise.
   
 [Obtenir des affiches](https://aka.ms/cloudarch)
   
@@ -62,13 +62,13 @@ Explorez les affiches de l'architecture sur le Cloud d'entreprise.
   
 Découvrez comment Microsoft peut vous aider à protéger votre organisation.
   
-[Télécharger l'affiche](https://aka.ms/commonattacks)
+[Télécharger l’affiche](https://aka.ms/commonattacks)
   
-## <a name="training-for-it-pros"></a>Formation pour les professionnels de l'informatique
+## <a name="training-for-it-pros"></a>Formation pour les professionnels de l’informatique
 
-![Formation pour les professionnels de l'informatique de LinkedIn Learning](media/b951eac7-9d99-42b5-86a3-3058a6445077.png)
+![Formation pour les professionnels de l’informatique de LinkedIn Learning](media/b951eac7-9d99-42b5-86a3-3058a6445077.png)
   
- **Formation pour les professionnels de l'informatique**
+ **Formation pour les professionnels de l’informatique**
   
 Découvrez les cours vidéo gratuits proposés par LinkedIn Learning.
   
@@ -78,7 +78,7 @@ Découvrez les cours vidéo gratuits proposés par LinkedIn Learning.
   
  **Microsoft Learning**
   
-Office 365 formation et certification pour les professionnels de l'informatique.
+Office 365 formation et certification pour les professionnels de l’informatique.
   
 [Formation populaire](https://go.microsoft.com/fwlink/?linkid=826247)
   
@@ -94,7 +94,7 @@ Découvrez les experts de Microsoft Virtual Academy.
   
  **Université edX**
   
-Des expériences d'apprentissage en ligne autonomes pour les professionnels de l'informatique Office 365.
+Des expériences d’apprentissage en ligne autonomes pour les professionnels de l’informatique Office 365.
   
 [Inscrivez-vous maintenant](https://go.microsoft.com/fwlink/?linkid=852994)
   
@@ -114,7 +114,7 @@ Des expériences d'apprentissage en ligne autonomes pour les professionnels de l
   
 [Formation sur la productivité Office 365](https://support.office.com/article/af07cb6b-980d-4f33-8599-322582767408)
   
-[Vidéo: qu'est-ce que Office 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b)
+[Vidéo: qu’est-ce que Office 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b)
   
  **Ressources de développement**
   

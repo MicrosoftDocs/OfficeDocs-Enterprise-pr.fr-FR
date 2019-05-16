@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 5/10/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 description: Avez-vous besoin de connaître les étapes à suivre pour identifier et résoudre les problèmes de retard, de blocage et de ralentissement des performances entre SharePoint Online, OneDrive entreprise, Exchange Online ou Skype entreprise Online, et votre ordinateur client? Avant d’appeler la prise en charge, cet article peut vous aider à résoudre les problèmes de performances d’Office 365 et même à résoudre certains problèmes les plus courants.
-ms.openlocfilehash: 5d7201174d33afab3e85714202aa637a835b7776
-ms.sourcegitcommit: f506c95807a681cd661a99b1a8768c5c657dc126
+ms.openlocfilehash: afa24144c1595fd55477e45f4368d99bd4274aca
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "33881532"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069580"
 ---
 # <a name="performance-troubleshooting-plan-for-office-365"></a>Plan de résolution des problèmes de performances pour Office 365
 
@@ -494,7 +494,7 @@ Ouvrez l’invite de commandes sur l’ordinateur client (via \> Start \> Run cm
 
 Nous n’aborderons pas les outils utilisés dans la résolution des problèmes spécifiques aux applications dans cet article propre au réseau. Toutefois, vous trouverez les ressources que vous *pouvez* utiliser [sur cette page](https://support.office.com/en-us/article/Network-planning-and-performance-tuning-for-Office-365-e5f1228c-da3c-4654-bf16-d163daee8848).
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Gestion des points de terminaison Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   

@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -14,23 +14,23 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: 'Résumé : Configurez et faites une démonstration d’Office 365 Advanced eDiscovery avec des données d’échantillon dans votre environnement de développement/test Office 365.'
-ms.openlocfilehash: b1cf2714f79d38e5a3349b331cee0862cd6aac52
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: df506b6637d28387fae7587e081251fd81e1ce1a
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491220"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068340"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Advanced eDiscovery pour votre environnement de développement/test Office 365
 
  **Résumé :** Configurez et faites une démonstration d’Office 365 Advanced eDiscovery avec des données d’échantillon dans votre environnement de développement/test Office 365.
   
-Office 365 Advanced eDiscovery vous permet de trouver et d'analyser rapidement les informations pertinentes dans les données stockées dans Office 365, y compris le courrier électronique et les documents. Cela permet de réaliser des économies importantes en matière de temps et d’argent, notamment en cas de litige. Pour plus d'informations, voir [Découverte électronique avancée Office 365](https://support.office.com/article/Office-365-Advanced-eDiscovery-fd53438a-a760-45f6-9df4-861b50161ae4).
+Office 365 Advanced eDiscovery vous permet de trouver et d’analyser rapidement les informations pertinentes dans les données stockées dans Office 365, y compris le courrier électronique et les documents. Cela permet de réaliser des économies importantes en matière de temps et d’argent, notamment en cas de litige. Pour plus d'informations, voir [Découverte électronique avancée Office 365](https://support.office.com/article/Office-365-Advanced-eDiscovery-fd53438a-a760-45f6-9df4-861b50161ae4).
   
 Avec les instructions fournies dans cet article, vous créez un petit jeu de données pour un litige fictif à propos d’un contrat et l’analysez avec Advanced eDiscovery.
   
 > [!TIP]
-> Cliquez [ici](http://aka.ms/catlgstack) pour afficher le plan de tous les articles dans le Guide de Laboratoire Test Office 365.
+> Cliquez sur[ici](http://aka.ms/catlgstack) pour afficher le plan de tous les articles dans le Guide de Laboratoire Test Office 365.
   
 ## <a name="phase-1-create-your-office-365-devtest-environment"></a>Phase 1 : Création d’un environnement de développement/test Office 365
 
@@ -39,21 +39,21 @@ Si vous souhaitez simplement tester Advanced eDiscovery de manière légère ave
 Si vous souhaitez tester la découverte électronique avancée dans une entreprise simulée, suivez les instructions de [DirSync pour votre environnement de développement/test Office 365](dirsync-for-your-office-365-dev-test-environment.md).
   
 > [!NOTE]
-> Le test de eDiscovery avancé ne nécessite pas l'environnement d'entreprise simulé, qui inclut un intranet simulé connecté à Internet et la synchronisation d'annuaires pour une forêt des services de domaine Active Directory (AD DS). Elle est fournie ici comme option afin que vous puissiez effectuer des tests et des expérimentations dans un environnement qui représente une organisation typique. 
+> Le test de eDiscovery avancé ne nécessite pas l’environnement d’entreprise simulé, qui inclut un intranet simulé connecté à Internet et la synchronisation d’annuaires pour une forêt des services de domaine Active Directory (AD DS). Elle est fournie ici comme option afin que vous puissiez effectuer des tests et des expérimentations dans un environnement qui représente une organisation typique. 
   
 ## <a name="phase-2-create-example-data-for-advanced-ediscovery"></a>Phase 2 : Création des données d’exemple pour Advanced eDiscovery
 
 Cette procédure vous permet de créer des messages électroniques que vous analyserez plus tard dans un incident Advanced eDiscovery.
   
-1. Ouvrez Internet Explorer et connectez [https://outlook.com](https://outlook.com) -vous au compte Outlook que vous avez créé au cours de la phase 2 de l'environnement de[développement/test Office 365](office-365-dev-test-environment.md).
+1. Ouvrez Internet Explorer et connectez [https://outlook.com](https://outlook.com) -vous au compte Outlook que vous avez créé au cours de la phase 2 de l’environnement de[développement/test Office 365](office-365-dev-test-environment.md).
     
   - Si vous utilisez l’environnement de développement/test léger, ouvrez une session privée d’Internet Explorer et connectez-vous sur votre ordinateur local.
     
-  - Si vous utilisez l'environnement de développement/test d'entreprise simulé, utilisez le portail Azure ([https://portal.azure.com](https://portal.azure.com)) pour vous connecter à la machine virtuelle CLIENT1, puis connectez-vous à partir de client1.
+  - Si vous utilisez l’environnement de développement/test d’entreprise simulé, utilisez le portail Azure ([https://portal.azure.com](https://portal.azure.com)) pour vous connecter à la machine virtuelle CLIENT1, puis connectez-vous à partir de client1.
     
 2. Dans l’onglet **Courrier Outlook**, cliquez sur **Nouveau**.
     
-3. Dans **à**, tapez l'adresse de messagerie du compte User6 de votre abonnement à la version d'évaluation ( **User6 @.**<organization name> **. onmicrosoft.com**).
+3. Dans **à**, tapez l’adresse de messagerie du compte User6 de votre abonnement à la version d’évaluation ( **User6 @.**<organization name> **. onmicrosoft.com**).
     
 4. Pour l’objet, saisissez **Message électronique de test 1**.
     
@@ -77,11 +77,11 @@ Cette procédure vous permet de créer des messages électroniques que vous anal
     
 14. Cliquez sur l’icône de l’utilisateur dans le coin supérieur droit, puis sur **Déconnexion**.
     
-15. Ouvrez un nouvel onglet et connectez-vous au portail Office 365 ([https://www.office.com](https://www.office.com)) avec le nom de compte et le mot de passe du compte User6 de votre abonnement à la version d'évaluation.
+15. Ouvrez un nouvel onglet et connectez-vous au portail Office 365 ([https://www.office.com](https://www.office.com)) avec le nom de compte et le mot de passe du compte User6 de votre abonnement à la version d’évaluation.
     
 16. Dans l’onglet **Portail Office 365**, cliquez sur **Courrier**.
     
-17. Sous l'onglet **mail-User6-Outlook** , vérifiez que User6 a reçu les trois messages électroniques du compte de messagerie Outlook.
+17. Sous l’onglet **mail-User6-Outlook** , vérifiez que User6 a reçu les trois messages électroniques du compte de messagerie Outlook.
     
 18. Revenez à l’**onglet Portail Office 365** pour User6.
     
@@ -91,7 +91,7 @@ Dans cette procédure, vous créez deux documents Word que vous analyserez plus 
   
 1. Dans la page **Office**, cliquez sur **Se connecter,** puis connectez-vous avec les informations d’identification de votre compte d’administrateur global.
     
-2. dans un nouvel onglet, accédez à l'URL de votre site SharePoint de Production: **https://** <fictional organization name> **. sharepoint.com/sites/production**
+2. Dans un nouvel onglet, accédez à l’URL de votre site SharePoint de production: **https://** <fictional organization name> **. SharePoint.com/sites/production**
     
 3. Dans l’onglet **Collection de sites de production**, sous **Documents**, cliquez sur **Nouveau > Document Word**.
     
@@ -177,7 +177,7 @@ Dans cette procédure, vous créez un incident Advanced eDiscovery et analysez l
     
 9. Dans la page **Installation**, sous **Thèmes**, saisissez **3** dans **Nombre maximal de thèmes**.
     
-10. Cliquez sur **Analyser** et attendez que l’analyse se termine. Vous devriez voir une série de graphiques en secteurs avec l’analyse de la population cible, des documents, des messages électroniques et des pièces jointes. Pour plus d'informations, consultez la rubrique [affichage des résultats](https://support.office.com/article/Viewing-Analyze-results-5974f3c2-89fe-4c5f-ac7b-57f214437f7e)de l'analyse.
+10. Cliquez sur **Analyser** et attendez que l’analyse se termine. Vous devriez voir une série de graphiques en secteurs avec l’analyse de la population cible, des documents, des messages électroniques et des pièces jointes. Pour plus d’informations, consultez la rubrique [affichage des résultats](https://support.office.com/article/Viewing-Analyze-results-5974f3c2-89fe-4c5f-ac7b-57f214437f7e)de l’analyse.
     
 Vous pouvez désormais utiliser cet environnement pour créer du contenu, des recherches et des incidents, et réaliser d’autres essais avec Advanced eDiscovery dans Office 365.
   

@@ -1,9 +1,9 @@
 ---
-title: Ressources communautaires pour Office 365 PowerShell
+title: Ressources de la Communauté PowerShell Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
@@ -11,20 +11,20 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: ebe0f5ff-fd17-487f-bbb6-271b5ea270bb
 description: Résumé :Obtenez de l'aide pour Office 365 PowerShell sur les sites communautaires ci-dessous.
-ms.openlocfilehash: 9b98345db6db9b5070d738170258de6d7fff10ea
-ms.sourcegitcommit: fe406eacd92dd5b3bd8c127b7bd8f2d0ef216404
+ms.openlocfilehash: c2b02ab5d764ef954b9615ed2320eab821e0cb3d
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "20017390"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068780"
 ---
 # <a name="office-365-powershell-community-resources"></a>Ressources communautaires pour Office 365 PowerShell
 
  **Résumé :** Obtenez de l'aide pour Office 365 PowerShell sur les sites communautaires ci-dessous.
   
-Utilisez ces Wikis et les forums de la Communauté pour obtenir le vous êtes connecté à vos homologues ainsi que vos questions d’Office 365 PowerShell rapidement et correctement. 
+Utilisez les forums et les wikis de la communauté pour vous connecter à vos pairs et obtenir rapidement et correctement des réponses à vos questions sur PowerShell Office 365. 
   
-- [Visitez le site de la Communauté technique Office 365](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
+- [Visiter la communauté technique Office 365](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
     
 - [Communauté technique Office 365](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
     

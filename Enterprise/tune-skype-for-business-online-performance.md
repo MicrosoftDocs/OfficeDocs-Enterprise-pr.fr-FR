@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 9/29/2016
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: beec23c2-c5d6-4e84-a8af-e82aefca7802
 description: Cet article fournit des liens aux administrateurs système qui souhaitent planifier les besoins en bande passante réseau, ou qui doivent améliorer les performances de Skype entreprise online.
-ms.openlocfilehash: f2357491b61c6715491577925e8c952a7f2ea717
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 9475f94678836842b6e6cf3b49084b4a6de3c77d
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492000"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070390"
 ---
 # <a name="tune-skype-for-business-online-performance"></a>Optimiser les performances de Skype Entreprise Online
 
@@ -30,15 +30,15 @@ Cet article fournit des liens aux administrateurs système qui souhaitent planif
   
 ## <a name="fine-tuning-skype-for-business-online-performance"></a>Réglage précis des performances de Skype entreprise Online
 
-- **Pour en savoir plus sur les paramètres et les mesures permettant de maintenir la qualité des appels pour votre organisation**, il est important de lire la [qualité des médias et les performances de connectivité réseau dans Skype entreprise Online](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance). Cet article vous donne des informations, si vous souhaitez utiliser ExpressRoute, à propos des types de déploiement et d'autres informations dont vous aurez besoin.
+- **Pour en savoir plus sur les paramètres et les mesures permettant de maintenir la qualité des appels pour votre organisation**, il est important de lire la [qualité des médias et les performances de connectivité réseau dans Skype entreprise Online](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance). Cet article vous donne des informations, si vous souhaitez utiliser ExpressRoute, à propos des types de déploiement et d’autres informations dont vous aurez besoin.
     
 - **Pour les déploiements locaux et hybrides**, vous pouvez voir la bande passante requise pour la Conférence rendez-vous de Skype entreprise Server, reportez-vous à la rubrique [plan for Dial-in Conferencing in Skype for Business Server 2015](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/conferencing/dial-in-conferencing).
     
 ## <a name="more-ways-to-improve-skype-for-business-online-performance"></a>Autres méthodes pour améliorer les performances de Skype entreprise Online
 
-- [ExpressRoute et QoS dans Skype entreprise Online](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/expressroute-and-qos-in-skype-for-business-online): Connectez-vous à Office 365 sur une connexion réseau dédiée à l'aide d'Azure ExpressRoute pour Office 365 et Skype entreprise online. 
+- [ExpressRoute et QoS dans Skype entreprise Online](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/expressroute-and-qos-in-skype-for-business-online): Connectez-vous à Office 365 sur une connexion réseau dédiée à l’aide d’Azure ExpressRoute pour Office 365 et Skype entreprise online. 
     
-- [Activation et utilisation du tableau de bord de qualité des appels dans Skype entreprise Online](https://docs.microsoft.com/SkypeForBusiness/using-call-quality-in-your-organization/turning-on-and-using-call-quality-dashboard): le tableau de bord de la qualité des appels (CQD) vous permet de surveiller et d'obtenir des informations sur la qualité des appels effectués à l'aide des services Skype entreprise. 
+- [Activation et utilisation du tableau de bord de qualité des appels dans Skype entreprise Online](https://docs.microsoft.com/SkypeForBusiness/using-call-quality-in-your-organization/turning-on-and-using-call-quality-dashboard): le tableau de bord de la qualité des appels (CQD) vous permet de surveiller et d’obtenir des informations sur la qualité des appels effectués à l’aide des services Skype entreprise. 
     
 ## <a name="articles-on-setting-up-skype-for-business-online"></a>Articles sur la configuration de Skype entreprise Online
 
@@ -46,7 +46,7 @@ Cet article fournit des liens aux administrateurs système qui souhaitent planif
     
 - [Configurer la conférence audio pour Skype entreprise et Microsoft teams](https://docs.microsoft.com/skypeforbusiness/audio-conferencing-in-office-365/set-up-audio-conferencing)
     
-- [Configurer des forfaits d'appels (Skype entreprise)](https://docs.microsoft.com/SkypeForBusiness/what-are-calling-plans-in-office-365/set-up-calling-plans)
+- [Configurer des forfaits d’appels (Skype entreprise)](https://docs.microsoft.com/SkypeForBusiness/what-are-calling-plans-in-office-365/set-up-calling-plans)
     
 - [Voici ce que vous obtenez avec le système téléphonique dans Office 365](https://docs.microsoft.com/skypeforbusiness/what-is-phone-system-in-office-365/here-s-what-you-get-with-phone-system)
     
@@ -58,5 +58,5 @@ Cet article fournit des liens aux administrateurs système qui souhaitent planif
   
 [ExpressRoute et QoS dans Skype entreprise Online](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/expressroute-and-qos-in-skype-for-business-online)
   
-[Flux d'appels à l'aide de ExpressRoute](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/call-flow-using-expressroute)
+[Flux d’appels à l’aide de ExpressRoute](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/call-flow-using-expressroute)
 

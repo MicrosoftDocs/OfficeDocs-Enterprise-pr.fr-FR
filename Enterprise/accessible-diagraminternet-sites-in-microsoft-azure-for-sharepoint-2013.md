@@ -4,19 +4,19 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 71636974-fb99-487c-ac67-f15e9401acba
 description: Cet article est une version texte accessible du diagramme Sites Internet dans Microsoft Azure pour SharePoint 2013.
-ms.openlocfilehash: 59c84e34ab4d748a80ab0a597817ae4d3464a43c
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 1d18ad73502c7e21c1c0825e3e56e4faac2a4a09
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487690"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068640"
 ---
 # <a name="accessible-diagram---internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>Diagramme accessible : sites Internet dans Microsoft Azure pour SharePoint 2013
 
@@ -46,7 +46,7 @@ Assurez-vous que la batterie que vous concevez répond aux objectifs de capacit�
 
 Cette batterie de serveurs fournit une topologie de batterie de serveurs de recherche SharePoint 2013 tolérante aux pannes qui est optimisée pour un corpus contenant 3,4 millions éléments. 
   
-L'exemple de batterie de serveurs traite 100-200 documents par seconde, en fonction de la langue, et il prend en charge les vues de page 85 par seconde et les requêtes 100 par seconde. 
+L’exemple de batterie de serveurs traite 100-200 documents par seconde, en fonction de la langue, et il prend en charge les vues de page 85 par seconde et les requêtes 100 par seconde. 
   
 Le diagramme associé présente une batterie de serveurs de sites Internet de taille moyenne avec trois types de serveurs :  
   
@@ -148,11 +148,11 @@ Dans cet exemple :
     
 - Configurez la zone Internet pour un accès anonyme.   
     
-N'utilisez pas de conception à deux zones dans laquelle tous les utilisateurs authentifiés sont configurés pour utiliser la zone par défaut. 
+N’utilisez pas de conception à deux zones dans laquelle tous les utilisateurs authentifiés sont configurés pour utiliser la zone par défaut. 
   
 Le diagramme associé représente une conception en trois zones dans laquelle les comptes internes et clients sont séparés.   
   
-Les visiteurs et les clients accèdent au client Azure AD dans la batterie de serveurs SharePoint 2013 par le biais d'applications Web dans l'une des deux zones. Les deux zones sont les suivantes : 
+Les visiteurs et les clients accèdent au client Azure AD dans la batterie de serveurs SharePoint 2013 par le biais d’applications Web dans l’une des deux zones. Les deux zones sont les suivantes : 
   
 - Zone : Internet pour les utilisateurs anonymes  
     
@@ -166,7 +166,7 @@ Les utilisateurs disposant de comptes internes accèdent au locataire Azure Acti
   
 Le diagramme associé présente le scénario suivant :  
   
-Lors de l'intégration de SharePoint 2013 à Azure Active Directory, un service de contrôle d'accès Azure (ACS) a deux objectifs: 
+Lors de l’intégration de SharePoint 2013 à Azure Active Directory, un service de contrôle d’accès Azure (ACS) a deux objectifs: 
   
 -   Azure AD utilise SAML 2.0 et SharePoint fonctionne uniquement avec SAML 1.1. ACS comprend les deux formats et fait office d’intermédiaire pour transformer les formats de jeton entre SharePoint et Azure AD.   
     
@@ -198,9 +198,9 @@ URL d’application web et de site racine 
     
 Le diagramme associé représente des services de pool d’applications telles que la recherche interagissant avec les collections de sites à l’aide des applications web. Les collections de sites affichées sont les suivantes :  
   
-- Collection de sites basée sur des chemins http://internal:8000 d'accès située sur (site racine). 
+- Collection de sites basée sur des chemins http://internal:8000 d’accès située sur (site racine). 
     
-- Analyse: collections de sites nommées par l'hôte situées à une https://authoring.contoso.com:8000adresse telle que. 
+- Analyse: collections de sites nommées par l’hôte situées à une https://authoring.contoso.com:8000adresse telle que. 
     
 - Requêtes : 2 collections de sites distinctes nommées par l’hôte et situées à des adresses telles que les suivantes :  
     

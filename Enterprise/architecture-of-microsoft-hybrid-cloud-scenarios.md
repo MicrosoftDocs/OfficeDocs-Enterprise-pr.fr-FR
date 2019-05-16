@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/30/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 06d8c959-39e5-4150-b1ae-aaf0eee4c058
 description: "Résumé : Comprendre l'architecture d'offres de cloud hybride Microsoft."
-ms.openlocfilehash: f5493c0f008b22af412ee95ccb8b7581eee71476
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 513e45629a7092803cc644241d84985a37e43876
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490264"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068320"
 ---
 # <a name="architecture-of-microsoft-hybrid-cloud-scenarios"></a>Architecture des scénarios de cloud hybride Microsoft
 
@@ -45,7 +45,7 @@ La couche applications et scénarios a les scénarios de Cloud hybride spécifiq
     
 - Identité
     
-    Pour l'infrastructure d'identité de cloud, il y a deux façons de procéder, en fonction de la plateforme de cloud Microsoft. Pour SaaS et Azure PaaS, intégrez votre infrastructure d'identité locale avec Azure AD ou effectuez une fédération avec vos fournisseurs d'identité tiers ou infrastructure d'identité locale. Pour les machines virtuelles en cours d'exécution dans Azure, vous pouvez étendre votre infrastructure d'identité locale, telle que les services de domaine Active Directory (AD DS), aux réseaux virtuels (réseaux virtuels) où résident vos machines virtuelles.
+    Pour l'infrastructure d'identité de cloud, il y a deux façons de procéder, en fonction de la plateforme de cloud Microsoft. Pour SaaS et Azure PaaS, intégrez votre infrastructure d'identité locale avec Azure AD ou effectuez une fédération avec vos fournisseurs d'identité tiers ou infrastructure d'identité locale. Pour les machines virtuelles en cours d’exécution dans Azure, vous pouvez étendre votre infrastructure d’identité locale, telle que les services de domaine Active Directory (AD DS), aux réseaux virtuels (réseaux virtuels) où résident vos machines virtuelles.
     
 ## <a name="hybrid-cloud-scenarios-for-the-three-phase-cloud-adoption-process"></a>Scénarios de cloud hybride pour le processus d’adoption du cloud en trois phases
 

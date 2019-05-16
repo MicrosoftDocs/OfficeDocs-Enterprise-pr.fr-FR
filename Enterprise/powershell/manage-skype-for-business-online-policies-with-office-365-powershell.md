@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/01/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: "Résumé : Utilisez Office 365 PowerShell pour gérer les propriétés de votre compte d'utilisateur Skype Entreprise Online à l'aide de stratégies."
-ms.openlocfilehash: 6bbfd4451552cd3a281dbbcafde0b458bb71907c
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
-ms.translationtype: HT
+ms.openlocfilehash: 853d70a008a3e42c6fa1175a52cadab815a46dfe
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31037898"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068840"
 ---
 # <a name="manage-skype-for-business-online-policies-with-office-365-powershell"></a>Gestion des stratégies Skype Entreprise Online avec Office 365 PowerShell
 
@@ -104,7 +104,7 @@ Get-CsVoicePolicy
 ```
 
 > [!NOTE]
-> Cette action renvoie la liste de toutes les stratégies de voix dont vous disposez. Toutefois, gardez à l'esprit que toutes les stratégies ne peuvent pas être attribuées à tous les utilisateurs, en raison des diverses restrictions impliquant la gestion des licences et l'emplacement géographique (le dénommé « [emplacement d'utilisation](https://msdn.microsoft.com/fr-FR/library/azure/dn194136.aspx) »). Si vous souhaitez connaître les stratégies d'accès externe et les stratégies de conférence qui peuvent être attribuées à un utilisateur particulier, utilisez des commandes semblables à celles-ci : 
+> Cette action renvoie la liste de toutes les stratégies de voix dont vous disposez. Toutefois, gardez à l'esprit que toutes les stratégies ne peuvent pas être attribuées à tous les utilisateurs, en raison des diverses restrictions impliquant la gestion des licences et l'emplacement géographique (le dénommé « [emplacement d'utilisation](https://msdn.microsoft.com/en-us/library/azure/dn194136.aspx) »). Si vous souhaitez connaître les stratégies d'accès externe et les stratégies de conférence qui peuvent être attribuées à un utilisateur particulier, utilisez des commandes semblables à celles-ci : 
 
 ```
 Get-CsConferencingPolicy -ApplicableTo "Alex Darrow"

@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 01/03/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
 description: Découvrez comment utiliser Office 365 PowerShell pour supprimer des comptes d'utilisateur Office 365.
-ms.openlocfilehash: 0b882f3bdf9070c83baffaca65a7c80c98cd4ed9
-ms.sourcegitcommit: 15db0f1e5f8036e46063662d7df22387906f8ba7
-ms.translationtype: HT
+ms.openlocfilehash: dd7e5052f8933955267302a5d03870017702a7fb
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "27546465"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069040"
 ---
 # <a name="delete-user-accounts-with-office-365-powershell"></a>Supprimer des comptes d’utilisateurs avec Office 365 PowerShell
 
@@ -100,7 +100,7 @@ Cet exemple restaure le compte d’utilisateur supprimé BelindaN@litwareinc.com
 Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
 ```
 
- **Remarques :**
+ **Remarques :**
   
 - Pour afficher la liste des utilisateurs supprimés dont la restauration est possible, exécutez la commande suivante:
     

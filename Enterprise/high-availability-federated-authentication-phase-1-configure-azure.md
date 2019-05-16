@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 03/15/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 'Résumé: configurez l’infrastructure Microsoft Azure pour qu’elle héberge l’authentification fédérée haute disponibilité pour Office 365.'
-ms.openlocfilehash: ec7aa71b9782dd568f85b78fb3e5110e32e2e23e
-ms.sourcegitcommit: 2f172a784d2f6b29c7cf80c0dbca271ab494d514
+ms.openlocfilehash: 8b6511a3ce23a352b59a0e9a89f8f9901897391f
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "33867709"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067500"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Authentification fédérée haute disponibilité, phase 1 : Configurer Azure
 
@@ -39,7 +39,7 @@ Azure doit être mis en service avec ces composants de base:
 
 Avant de commencer à configurer les composants Azure, renseignez les tableaux suivants. Pour vous aider dans les procédures de configuration Azure, imprimez cette section et notez les informations nécessaires ou copiez cette section dans un document et remplissez-le. Pour les paramètres du réseau virtuel, remplissez le tableau V.
   
-|**Élément**|**Paramètre de configuration**|**Description**|**Valeur**|
+|**Item**|**Paramètre de configuration**|**Description**|**Valeur**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |Nom du réseau virtuel  <br/> |Nom à attribuer au réseau virtuel (exemple FedAuthNet).  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |Emplacement du réseau virtuel  <br/> |Le centre de centres Azure régional qui contiendra le réseau virtuel.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -61,7 +61,7 @@ Voir [calculatrice d’espace d’adressage pour les sous-réseaux de la passere
   
 Renseignez-vous auprès de votre service informatique pour déterminer ces espaces d'adressage à partir de l'espace d'adressage de réseau virtuel.
   
-|**Élément**|**Nom du sous-réseau**|**Espace d'adressage de sous-réseau**|**Objectif**|
+|**Item**|**Nom du sous-réseau**|**Espace d'adressage de sous-réseau**|**Objectif**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Le sous-réseau utilisé par le contrôleur de domaine des services de domaine Active Directory (AD DS) et les machines virtuelles de serveur dirSync.  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Sous-réseau utilisé par les machines virtuelles AD FS.  <br/> |
@@ -72,7 +72,7 @@ Renseignez-vous auprès de votre service informatique pour déterminer ces espac
   
 Ensuite, renseignez le Tableau I pour les adresses IP statiques affectées à des machines virtuelles et à des instances d'équilibreur de charge.
   
-|**Élément**|**Objectif**|**Adresse IP sur le sous-réseau**|**Valeur**|
+|**Item**|**Objectif**|**Adresse IP sur le sous-réseau**|**Valeur**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |Adresse IP statique du premier contrôleur de domaine  <br/> |La quatrième adresse IP possible pour l'espace d'adressage du sous-réseau défini dans l'Élément 1 du Tableau S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |Adresse IP statique du deuxième contrôleur de domaine  <br/> |La cinquième adresse IP possible pour l'espace d'adressage du sous-réseau défini dans l'Élément 1 du Tableau S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -87,7 +87,7 @@ Ensuite, renseignez le Tableau I pour les adresses IP statiques affectées à de
   
 Pour les deux serveurs DNS (Domain Name System) de votre réseau local que vous souhaitez utiliser lors de la configuration initiale des contrôleurs de domaine de votre réseau virtuel, renseignez le tableau D. collaborez avec votre service informatique pour déterminer cette liste.
   
-|**Élément**|**Nom convivial du serveur DNS**|**Adresse IP du serveur DNS**|
+|**Item**|**Nom convivial du serveur DNS**|**Adresse IP du serveur DNS**|
 |:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |

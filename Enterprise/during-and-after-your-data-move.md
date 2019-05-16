@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/15/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 search.appverid:
@@ -12,12 +12,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Les déplacements de données sont des opérations principales n'ayant que peu d'impact sur les utilisateurs finals. Aucune action de votre part n'est requise lorsque Microsoft déplace chaque service et les données associées pour votre client vers une nouvelle zone géographique de centres de données. Le transfert de données et la validation se déroulent en arrière-plan à l'avance, et n'ont qu'une incidence minimale sur les utilisateurs.
-ms.openlocfilehash: 7635de71e207ff01b24b8b8df8664e3f57f395cf
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: a0fb2e7ad31a2c5492260bd5f1d67d80632024c0
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487230"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067730"
 ---
 # <a name="during-and-after-your-data-move"></a>Pendant et après le déplacement de vos données
 
@@ -43,7 +43,7 @@ Surveillez le centre de messages Office 365 dans l'attente de la confirmation de
    
 ## <a name="exchange-online"></a>Exchange Online
 
-Comme le déplacement de chaque utilisateur vers la nouvelle zone géographique de centres de données pour un seul client prend du temps, certains utilisateurs seront encore dans l’ancienne zone géographique de centres de données pendant le déplacement, tandis que d’autres seront dans la nouvelle. Cela signifie que certaines fonctionnalités qui impliquent l'accès à plusieurs boîtes aux lettres peuvent ne pas fonctionner entièrement pendant une période du processus de déplacement, qui peut durer des semaines. Ces fonctionnalités sont décrites dans les sections suivantes.
+Comme le déplacement de chaque utilisateur vers la nouvelle zone géographique de centres de données pour un seul client prend du temps, certains utilisateurs seront encore dans l’ancienne zone géographique de centres de données pendant le déplacement, tandis que d’autres seront dans la nouvelle. Cela signifie que certaines fonctionnalités qui impliquent l’accès à plusieurs boîtes aux lettres peuvent ne pas fonctionner entièrement pendant une période du processus de déplacement, qui peut durer des semaines. Ces fonctionnalités sont décrites dans les sections suivantes.
   
 ### <a name="open-shared-folder-in-outlook-web-access"></a>Ouvrez « Dossier partagé » dans Outlook Web Access 
 
@@ -52,15 +52,15 @@ Certains utilisateurs ouvrent un dossier de messagerie partagé à partir d'une 
 |**Configuration**|**Description**|
 |:-----|:-----|
 |L'utilisateur dispose d'autorisations de dossier de boîte aux lettres sur une autre boîte aux lettres  <br/> |Potentiellement limité.  <br/> Si l'utilisateur A et la boîte aux lettres B ne se trouvent pas dans la même zone géographique lors du déplacement de client, l'utilisateur A ne peut pas ouvrir le dossier la boîte aux lettres B dans Outlook Web Access s'il n'a de droit d'accès que pour un dossier spécifique de la boîte aux lettres B.  <br/> Pour ajouter un dossier partagé, cliquez avec le bouton droit de la souris sur le nom d'utilisateur dans le volet de navigation gauche, puis sélectionnez **Ajouter un dossier partagé**.  <br/> |
-|Utilisateur disposant de droits d’accès complets sur une autre boîte aux lettres  <br/> |Entièrement pris en charge  <br/> Si l'utilisateur a dispose de l'autorisation «accès total» à la boîte aux lettres B, l'utilisateur A peut cliquer sur le dossier partagé dans le volet de navigation gauche dans Outlook Web Access pour ouvrir une fenêtre affichant la boîte aux lettres B.  Un utilisateur peut ouvrir une boîte aux lettres partagée à l'aide d'Outlook Web Access lors du déplacement sans impact négatif. La limitation s’applique uniquement au partage au niveau du dossier dans une boîte aux lettres.           |
+|Utilisateur disposant de droits d’accès complets sur une autre boîte aux lettres  <br/> |Entièrement pris en charge  <br/> Si l’utilisateur a dispose de l’autorisation «accès total» à la boîte aux lettres B, l’utilisateur A peut cliquer sur le dossier partagé dans le volet de navigation gauche dans Outlook Web Access pour ouvrir une fenêtre affichant la boîte aux lettres B.  Un utilisateur peut ouvrir une boîte aux lettres partagée à l’aide d’Outlook Web Access lors du déplacement sans impact négatif. La limitation s’applique uniquement au partage au niveau du dossier dans une boîte aux lettres.           |
    
 ### <a name="public-folders"></a>Dossiers publics
 
-Si la boîte aux lettres de dossiers publics est temporairement dans un autre centre de contenu géographique, à partir de l'utilisateur qui tente d'y accéder, l'utilisateur peut ne pas être en mesure d'accéder à la boîte aux lettres de dossiers publics. 
+Si la boîte aux lettres de dossiers publics est temporairement dans un autre centre de contenu géographique, à partir de l’utilisateur qui tente d’y accéder, l’utilisateur peut ne pas être en mesure d’accéder à la boîte aux lettres de dossiers publics. 
   
 ### <a name="online-archives"></a>Archives en ligne
 
-Lorsque le déplacement est en cours, les utilisateurs qui se connectent via Outlook pour Mac peuvent ne pas être en mesure de se connecter à leur boîte aux lettres d'archivage en ligne. L'accès à la boîte aux lettres d'archivage pour les utilisateurs qui se connectent à Outlook et à Outlook Web Access est pris en charge.
+Lorsque le déplacement est en cours, les utilisateurs qui se connectent via Outlook pour Mac peuvent ne pas être en mesure de se connecter à leur boîte aux lettres d’archivage en ligne. L’accès à la boîte aux lettres d’archivage pour les utilisateurs qui se connectent à Outlook et à Outlook Web Access est pris en charge.
   
 ## <a name="sharepoint-online"></a>SharePoint Online
 
@@ -120,14 +120,14 @@ Tous les utilisateurs seront déconnectés du logiciel client Skype Entreprise p
 |:-----|
 | Les données de la réunion (présentations téléchargées, etc.) ne seront pas déplacées et devront être téléchargées à nouveau.  <br/>  Les clients Lync plus anciens, tels que les clients Lync 2010 et Lync pour Mac 2011, mettent en cache des informations DNS dans le service, ce qui entraîne des problèmes de connexion. Le cache DNS devra peut-être être effacé si l'utilisateur ne se trouve pas sur le dernier client Windows de Skype Entreprise. Vous devez indiquer aux utilisateurs d'exécuter l' [assistant de dépannage](https://support.microsoft.com/en-us/kb/2541980) et de suivre les instructions relatives à l'effacement du cache client. Les utilisateurs de Lync pour Mac doivent suivre [ces instructions](https://support.microsoft.com/en-us/kb/2629861).  <br/> |
    
-### <a name="skype-for-business-moves-that-involve-a-third-party-audio-conferencing-provider"></a>Déplacements Skype entreprise impliquant un fournisseur de services d'audioconférence tiers
+### <a name="skype-for-business-moves-that-involve-a-third-party-audio-conferencing-provider"></a>Déplacements Skype entreprise impliquant un fournisseur de services d’audioconférence tiers
 Les services de module complémentaire de fournisseurs de services d’audioconférence tiers pour Skype Entreprise ne sont pas disponibles pour les utilisateurs hébergés dans des centres de données propres à une nouvelle zone géographique.   Les clients existants qui utilisent un service de fournisseur de services d’audioconférence tiers ne doivent pas demander de déplacement vers un centre de données propre à une nouvelle zone géographique.   Les nouveaux clients déployés dans les centres de données propres à une nouvelle zone géographique doivent demander un déplacement vers un centre de données régional afin d’utiliser un fournisseur de services d’audioconférence tiers. 
 
-## <a name="data-for-other-services-including-teams-yammer-and-power-bi"></a>Données pour d'autres services, y compris Teams, Yammer et Power BI
+## <a name="data-for-other-services-including-teams-yammer-and-power-bi"></a>Données pour d’autres services, y compris Teams, Yammer et Power BI
 
 Nous déplaçons uniquement les données client pour Exchange Online, SharePoint Online et Skype Entreprise. Nous ne déplaçons pas de données pour d'autres services. En tant que client ou utilisateur de ces autres services, vous ne remarquez aucune modification ou aucune conséquence. Le processus de déplacement n'a aucune incidence sur ces services et l'emplacement des données client reste le même.
   
-## <a name="related-topics"></a>Voir aussi 
+## <a name="related-topics"></a>Sujets associés 
  
 [Procédure de demande d’un déplacement de données](request-your-data-move.md)
     

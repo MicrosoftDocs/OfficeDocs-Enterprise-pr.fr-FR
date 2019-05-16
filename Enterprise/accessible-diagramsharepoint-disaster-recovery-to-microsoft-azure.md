@@ -4,23 +4,23 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 4b855224-8e67-4efa-a3a4-908ee0ca6412
 description: Cet article est une version texte accessible du diagramme Récupération d’urgence SharePoint Server dans Microsoft Azure.
-ms.openlocfilehash: 545aaae05e3becbde60fe01c0e50e5610ee69f98
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: d7df0f44dd4e7f0cbb8580029991bc9280892afb
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487720"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068520"
 ---
 # <a name="accessible-diagram---sharepoint-disaster-recovery-to-microsoft-azure"></a>Diagramme accessible : Récupération d’urgence SharePoint vers Microsoft Azure
 
-**Résumé:** Cet article est une version texte accessible du diagramme appelé SharePoint disAster Recovery to Microsoft Azure.
+**Résumé:** Cet article est une version texte accessible du diagramme appelé SharePoint Disaster Recovery to Microsoft Azure.
   
 Cette affiche fournit des exemples d’architectures pour la création d’un environnement de récupération dans Azure.  
   
@@ -76,7 +76,7 @@ Le diagramme associé représente un environnement local répliqué à l’ident
   
 ### <a name="overview"></a>Vue d’ensemble
 
-L'environnement de récupération d'urgence pour une batterie de serveurs SharePoint 2013 sur site peut être hébergé dans Azure. 
+L’environnement de récupération d’urgence pour une batterie de serveurs SharePoint 2013 sur site peut être hébergé dans Azure. 
   
 -   Azure Infrastructure Services fournit un centre de données secondaire. 
     
@@ -196,7 +196,7 @@ La configuration des services AD DS pour cette solution constitue un scénario 
   
 Important: avant de déployer AD DS dans Azure, lisez les instructions de déploiement de Windows Server Active Directory sur des machines virtuelleshttp://msdn.microsoft.com/en-us/library/windowsazure/jj156090.aspx)Microsoft Azure (. 
   
-Pour obtenir des instructions complètes sur la conception et le déploiement d'environnements http://TechNet.microsoft.comActive Directory, reportez-vous à la rubrique. 
+Pour obtenir des instructions complètes sur la conception et le déploiement d’environnements http://TechNet.microsoft.comActive Directory, reportez-vous à la rubrique. 
   
 Cette architecture de référence inclut deux machines virtuelles configurées comme contrôleurs de domaine. Elles sont toutes deux configurées de la manière suivante :  
   

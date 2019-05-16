@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/30/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: 'Résumé : Comprendre la définition et les éléments du cloud hybride Microsoft.'
-ms.openlocfilehash: c048cfeb840bbb03b1886c7053603cfdc84f37ab
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: f44251c0a0da79475c1cc391dd409db6b2faba0f
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491154"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067443"
 ---
 # <a name="hybrid-cloud-overview"></a>Présentation du cloud hybride
 
@@ -75,7 +75,7 @@ Vous devez tenir compte des éléments suivants lorsque vous planifiez et implé
     
 - Identity
     
-    Identity for SaaS and Azure PaaS hybride les scénarios peuvent inclure Azure AD en tant que fournisseur d'identité courant, qui peut être synchronisé avec vos services de domaine Active Directory (AD DS) locaux ou fédéré avec AD DS ou d'autres fournisseurs d'identité. Vous pouvez également étendre votre infrastructure d'identité locale pour IaaS Azure. Pour plus d'informations, voir [Identité cloud Microsoft pour les architectes d'entreprise](microsoft-cloud-it-architecture-resources.md#identity).
+    Identity for SaaS and Azure PaaS hybride les scénarios peuvent inclure Azure AD en tant que fournisseur d’identité courant, qui peut être synchronisé avec vos services de domaine Active Directory (AD DS) locaux ou fédéré avec AD DS ou d’autres fournisseurs d’identité. Vous pouvez également étendre votre infrastructure d'identité locale pour IaaS Azure. Pour plus d'informations, voir [Identité cloud Microsoft pour les architectes d'entreprise](microsoft-cloud-it-architecture-resources.md#identity).
     
 - Sécurité
     

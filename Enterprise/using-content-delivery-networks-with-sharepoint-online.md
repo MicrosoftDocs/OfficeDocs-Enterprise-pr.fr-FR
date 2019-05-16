@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 5/8/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,64 +14,64 @@ search.appverid:
 - MET150
 - SPO160
 ms.assetid: 9a64268c-0b74-4eaa-b971-fb6380b1b165
-description: 'Résumé : Cet article décrit comment vous pouvez les utiliser pour améliorer les performances de SharePoint Online et les réseaux de distribution de contenu (CDN).'
-ms.openlocfilehash: 63062c08d0c22518eb36ea0a6faa97106fd394b4
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+description: 'Résumé: cet article décrit les réseaux de distribution de contenu (CDN) et explique comment vous pouvez les utiliser pour augmenter les performances de SharePoint Online.'
+ms.openlocfilehash: 24b12ae60a8c089d8e32d2609957e8b0e3420510
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540436"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070580"
 ---
 # <a name="using-content-delivery-networks-with-sharepoint-online"></a>Utiliser des réseaux de livraison de contenu avec SharePoint Online
 
- **Résumé :** Cet article décrit comment vous pouvez les utiliser pour améliorer les performances de SharePoint Online et les réseaux de distribution de contenu (CDN). 
+ **Résumé:** Cet article décrit les réseaux de distribution de contenu (CDN) et explique comment vous pouvez les utiliser pour augmenter les performances de SharePoint Online. 
   
-Dans les Communautés de développement web aujourd'hui, il existe plusieurs bibliothèques communes (tels que des fichiers CSS et JavaScript) que vous pouvez inclure dans votre solution SharePoint. La plupart de ces sont hébergées par Microsoft sur leurs CDN ASP. Cela signifie que vous pouvez faire référence à ces bibliothèques à partir de ces serveurs distribués et autoriser intégrés DNS des systèmes de routage d’internet trouver le serveur à l’utilisateur le plus proche. Les exemples dans cet article montrent comment la différence entre le téléchargement de la bibliothèque populaires jQuery à partir du serveur SharePoint Online et du CDN ASP est très importante. L’utilisateur peut avoir déjà également la version CDN mis en cache sur l’ordinateur local afin qu’ils n’ont pas à télécharger le fichier. Cela peut être important si vous avez des utilisateurs répartis dans le monde entier et éloigné du centre de données qui héberge votre site SharePoint Online.
+Dans les communautés de développement Web actuelles, il existe de nombreuses bibliothèques communes (telles que les fichiers JavaScript et CSS) que vous pouvez inclure dans votre solution SharePoint. Un grand nombre de ces éléments sont hébergés par Microsoft sur leur CDN ASP. Cela signifie que vous pouvez référencer ces bibliothèques à partir de ces serveurs distribués et permettre aux systèmes de routage DNS intégrés à Internet de trouver le serveur le plus proche de votre utilisateur. Les exemples de cet article montrent comment la différence de temps entre le téléchargement de la célèbre bibliothèque jQuery à partir du serveur SharePoint Online et le CDN ASP est assez importante. L’utilisateur peut également disposer de la version de CDN mise en cache sur l’ordinateur local afin qu’il n’ait pas besoin de télécharger le fichier. Cela peut être important si vous avez des utilisateurs répartis dans le monde entier et loin du centre de contenu hébergeant votre site SharePoint Online.
   
-Lorsque vous créez des pages pour SharePoint Online, la distance physique entre les utilisateurs et l’emplacement de l’instance de SharePoint Online peuvent avoir un impact négatif sur la latence. Cela est particulièrement important pour les organisations qui sont présentes dans le monde entier et pour lesquelles un site peut être hébergé sur un continent alors que des utilisateurs accèdent à son contenu de l’autre côté du globe. Les CDN permettent d’atténuer les problèmes engendrés par cette situation en hébergeant les ressources web les plus demandées sur d’autres emplacements plus proches des utilisateurs finals.
+Lors de la création de pages pour SharePoint Online, la latence peut être affectée par la distance physique entre vos utilisateurs et l’emplacement de l’instance de SharePoint Online. Ceci est particulièrement important pour les organisations qui ont une présence mondiale où un site peut être hébergé sur un continent, tandis que les utilisateurs de l’autre côté du monde accèdent à son contenu. CDN aide à atténuer cette situation en hébergeant certains éléments Web populaires dans différents emplacements, plus près des utilisateurs finaux.
   
-Dans la mesure où un CDN est un réseau mondial de serveurs qui hébergent les mêmes fichiers, les URL Internet menant vers des fichiers stockés sur les CDN sont interprétées par l’ordinateur client de sorte que le serveur le plus proche de l’utilisateur fournisse le fichier. Cette opération réduit considérablement les lenteurs causées par les allers-retours sur le réseau.
+Étant donné qu’un CDN est un réseau mondial de serveurs qui hébergent les mêmes fichiers, les URL Internet des fichiers stockés sur le CDN sont interprétées par l’ordinateur client de sorte que le serveur le plus proche de l’utilisateur serve le fichier. Cette opération permet de réduire considérablement les retards causés par les allers-retours réseau.
   
-## <a name="the-challenge-of-hosting-sharepoint-online-sites-for-a-global-audience"></a>Le défi que représente l’hébergement de sites SharePoint Online pour un public mondial
+## <a name="the-challenge-of-hosting-sharepoint-online-sites-for-a-global-audience"></a>Le défi d’héberger les sites SharePoint Online pour une audience globale
 
-Les sites SharePoint Online sont hébergés dans des centres de données en fonction de l’emplacement (spécifié par l’utilisateur) sélectionné lorsque vous vous êtes inscrit à Office 365. Par exemple, si votre site est hébergé sur des serveurs aux États-Unis et que des utilisateurs accèdent au site depuis l’Asie de l’Est, des problèmes de latence peuvent survenir en raison de la distance que les données doivent parcourir par fibre optique.
+Les sites SharePoint Online sont hébergés dans des centres de donnée par rapport à l’emplacement (spécifié par l’utilisateur) sélectionné lors de votre inscription à Office 365. Par exemple, si votre site est sur des serveurs aux États-Unis et que des utilisateurs accèdent au site à partir de l’Asie de l’est, des problèmes de latence peuvent survenir en raison de la distance que les données doivent emprunter sur un câble fibre optique.
   
-Nombre de fichiers statique utilisé par l’interface utilisateur de SharePoint par défaut est déjà hébergé sur réseau CDN mondial de Microsoft. Cela améliore les performances au fil du temps. Toutefois, si vous utilisez les éléments populaires JavaScript et CSS (par exemple ; JQuery, Modernizr, démarrage ou ASP.NET Ajax) vous pouvez améliorer les temps de chargement de ces fichiers à l’aide disponible gratuitement CDN.
+De nombreux fichiers statiques utilisés par l’interface utilisateur SharePoint par défaut sont déjà hébergés sur le réseau mondial de Microsoft de CDN. Cela permet d’améliorer les performances au fil du temps. Toutefois, si vous utilisez des éléments JavaScript et CSS populaires (par exemple, JQuery, Modernizr, bootstrap ou ASP.NET AJAX) vous pouvez améliorer les temps de chargement de ces fichiers à l’aide de la CDN disponible gratuitement.
   
-## <a name="advantages-of-using-cdns-to-improve-download-speed"></a>Avantages de l’utilisation de CDN pour accélérer la vitesse de téléchargement
+## <a name="advantages-of-using-cdns-to-improve-download-speed"></a>Avantages de l’utilisation de CDN pour améliorer la vitesse de téléchargement
 
-À l’aide du CDN peut améliorer les temps de chargement de page pour plusieurs raisons. Une raison est que la distance entre le CDN et l’utilisateur peut être inférieure à la distance à l’instance de SharePoint Online. Ces réseaux est très distribuées et est également conçus pour que les heures de disponibilité et une réponse très élevés. Une autre raison est que si vous utilisez une bibliothèque de fichiers CSS populaires, conjointement avec un CDN, l’utilisateur peut avoir déjà la bibliothèque de mise en cache et ils ne doivent même télécharger tout.
+L’utilisation de CDN peut améliorer les temps de chargement des pages pour diverses raisons. L’une des raisons est que la distance entre le CDN et l’utilisateur peut être inférieure à la distance de l’instance de SharePoint Online. Ces réseaux sont hautement distribués et sont également conçus pour avoir des temps de disponibilité et de réponse très élevés. Une autre raison est que si vous utilisez une bibliothèque populaire de fichiers CSS, conjointement avec un CDN, il se peut que l’utilisateur ait déjà mis en cache la bibliothèque et qu’il n’ait même pas besoin de le télécharger.
   
-Les captures d’écran suivantes illustrent les avantages de l’utilisation du CDN. Ces captures d’écran sont à partir de l’onglet **réseau** dans les outils de développement Internet Explorer 11. Ces captures d’écran affichent la latence de la bibliothèque populaires jQuery. Pour afficher cet écran, dans Internet Explorer, appuyez sur la touche **F12** et sélectionnez l’onglet **réseau** qui est symbolisée par une icône Wi-Fi. 
+Les captures d’écran suivantes illustrent les avantages de l’utilisation de CDN. Ces captures d’écran sont extraites de l’onglet **réseau** dans les outils de développement Internet Explorer 11. Ces captures d’écran montrent la latence sur la bibliothèque jQuery. Pour afficher cet écran, dans Internet Explorer, appuyez sur **F12** et sélectionnez l’onglet **réseau** qui est symbolisé par une icône Wi-Fi. 
   
 ![Capture d’écran du réseau F12](media/930541fd-af9b-434a-ae18-7bda867be128.png)
   
-Cette capture d’écran montre la bibliothèque téléchargée vers la galerie de pages maîtres sur le site SharePoint Online proprement dit. Le temps que nécessaire pour télécharger la bibliothèque est 1,51 secondes.
+Cette capture d’écran montre la bibliothèque téléchargée vers la Galerie de pages maîtres sur le site SharePoint Online proprement dit. Le temps nécessaire au chargement de la bibliothèque est de 1,51 secondes.
   
 ![Capture d’écran du temps de chargement de 1,51 s](media/64225c79-fa53-480f-81cd-0d351674320e.png)
   
-La deuxième capture d’écran montre le même fichier transmis par Microsoft du CDN. Cette fois-ci la latence est environ 496 millisecondes. Ceci est une grande amélioration et indique qu’une seconde entière est shaved désactive le temps total pour télécharger le contenu de la page.
+La deuxième capture d’écran montre le même fichier fourni par le CDN de Microsoft. Cette fois, la latence est d’environ 496 millisecondes. Il s’agit d’une amélioration importante qui montre qu’une seconde entière est éclatée du temps total pour télécharger le contenu de la page.
   
 ![Capture d’écran du temps de chargement de 469 ms](media/6a553cc3-25a0-42c1-aae7-4aebbc2eb4c3.png)
   
-## <a name="using-cdns-with-sharepoint-server-2013"></a>Utilisation des CDN avec SharePoint Server 2013
+## <a name="using-cdns-with-sharepoint-server-2013"></a>Utilisation de CDN avec SharePoint Server 2013
 
-À l’aide du CDN uniquement significatif dans un contexte de SharePoint Online doit être évitée avec SharePoint Server 2013. Il s’agit, car tous les avantages autour de position géographique de ne pas avoir la valeur true si le serveur est situé sur site ou fermer géographiquement. En outre, s’il existe une connexion de réseau vers les serveurs où il est hébergé, le site peut être utilisé sans une connexion Internet et par conséquent ne peut pas récupérer les fichiers CDN. Dans le cas contraire, vous devez utiliser un CDN si disponible et stables pour la bibliothèque et les fichiers que vous avez besoin pour votre site.
+L’utilisation de CDN n’a de sens que dans un contexte SharePoint Online et doit être évitée avec SharePoint Server 2013. Cela est dû au fait que tous les avantages liés à l’emplacement géographique ne sont pas vrais si le serveur est situé localement ou géographiquement fermé. En outre, s’il existe une connexion réseau aux serveurs où elle est hébergée, le site peut être utilisé sans connexion Internet et par conséquent ne peut pas récupérer les fichiers CDN. Dans le cas contraire, vous devez utiliser un CDN s’il en existe une disponible et stable pour la bibliothèque et les fichiers dont vous avez besoin pour votre site.
   
-## <a name="popular-cdns-and-how-to-use-them"></a>CDN populaires et leur utilisation
+## <a name="popular-cdns-and-how-to-use-them"></a>CDN populaires et comment les utiliser
 
-Microsoft Ajax CDN offre la plupart des bibliothèques populaires, y compris jQuery (et toutes ses autres bibliothèques), ASP.NET Ajax, programme d’amorçage, Knockout.js et bien plus encore.
+Le CDN Ajax de Microsoft offre la plupart des bibliothèques populaires, notamment jQuery (et toutes ses autres bibliothèques), ASP.NET AJAX, bootstrap, Knockout. js, et bien d’autres encore.
   
-Pour inclure ces scripts dans votre projet, il suffit de remplacer les références à ces bibliothèques accessibles au public par des références à l’adresse du CDN, au lieu de l’inclure directement dans votre projet. Par exemple, utilisez le code suivant pour créer un lien vers jQuery :
+Pour inclure ces scripts dans votre projet, il suffit de remplacer les références à ces bibliothèques disponibles publiquement par des références à l’adresse CDN au lieu de les inclure dans votre projet lui-même. Par exemple, utilisez le code suivant pour créer un lien vers jQuery:
   
 ```
 <script src=http://ajax.aspnetcdn.com/ajax/jquery-2.1.1.js> </script>
 ```
 
-Pour plus d’informations sur CDN, voir [réseaux de distribution de contenu](content-delivery-networks.md).
+Pour plus d’informations sur CDN, consultez la rubrique [Content Delivery Networks](content-delivery-networks.md).
   
-## <a name="more-topics-about-using-cdns-with-sharepoint"></a>Rubriques supplémentaires sur l’utilisation des CDN avec SharePoint
+## <a name="more-topics-about-using-cdns-with-sharepoint"></a>Autres rubriques sur l’utilisation de CDN avec SharePoint
 
-[Composant WebPart côté client d’hébergement à partir d’Office 365 CDN](https://dev.office.com/sharepoint/docs/spfx/web-parts/get-started/hosting-webpart-from-office-365-cdn)
+[Hébergement du composant WebPart côté client à partir du CDN Office 365](https://dev.office.com/sharepoint/docs/spfx/web-parts/get-started/hosting-webpart-from-office-365-cdn)
   
 

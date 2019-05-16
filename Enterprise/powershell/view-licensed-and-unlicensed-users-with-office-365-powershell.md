@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 01/03/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.custom:
 - PowerShell
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
 description: Explique comment utiliser Office 365 PowerShell pour afficher des comptes d'utilisateurs sous licence ou non.
-ms.openlocfilehash: eb1ca1d9812b08a6ea932fde546351f664c93066
-ms.sourcegitcommit: c5ee713709d76f519cb77de0e12c435d8409f571
+ms.openlocfilehash: 8b0456b468f4e0f912491f4a138d5868feb5abbc
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28327326"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071130"
 ---
 # <a name="view-licensed-and-unlicensed-users-with-office-365-powershell"></a>Afficher les utilisateurs avec ou sans licence avec Office 365 PowerShell
 
@@ -33,13 +33,13 @@ Il se peut que l'intégralité, une partie ou aucune des licences disponibles so
 
 Tout d’abord, [connectez-vous à votre client Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
  
-Pour afficher la liste de tous les comptes d’utilisateurs dans votre organisation qui n’a pas attribué un de vos plans de gestion des licences (les utilisateurs sans licence), exécutez la commande suivante :
+Pour afficher la liste de tous les comptes d’utilisateur de votre organisation auxquels aucun de vos plans de licence n’a été attribué (utilisateurs sans licence), exécutez la commande suivante:
   
 ```
 Get-AzureAdUser | ForEach{ $licensed=$False ; For ($i=0; $i -le ($_.AssignedLicenses | Measure).Count ; $i++) { If( [string]::IsNullOrEmpty(  $_.AssignedLicenses[$i].disabledplans ) -ne $True) { $licensed=$true } } ; If( $licensed -eq $false) { Write-Host $_.UserPrincipalName} }
 ```
 
-Pour afficher la liste de tous les comptes d’utilisateurs dans votre organisation qui ont été affectés à un de vos plans de gestion des licences (utilisateurs sous licence), exécutez la commande suivante :
+Pour afficher la liste de tous les comptes d’utilisateurs de votre organisation auxquels ont été affectés des plans de gestion des licences (utilisateurs sous licence), exécutez la commande suivante:
   
 ```
 Get-AzureAdUser | ForEach { $licensed=$False ; For ($i=0; $i -le ($_.AssignedLicenses | Measure).Count ; $i++) { If( [string]::IsNullOrEmpty(  $_.AssignedLicenses[$i].disabledplans ) -ne $True) { $licensed=$true } } ; If( $licensed -eq $true) { Write-Host $_.UserPrincipalName} }

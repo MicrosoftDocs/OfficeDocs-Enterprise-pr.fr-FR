@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 05/07/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,18 +14,18 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Résumé: utilisez Office 365 PowerShell pour gérer les utilisateurs, les groupes et les sites SharePoint Online.'
-ms.openlocfilehash: 747371b6ea63431fedb60fa9165fe496acb5b7c7
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 194486f539593215b8f8a17c04e3d4f499077c65
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573988"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068820"
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-office-365-powershell"></a>Gestion des utilisateurs et des groupes SharePoint Online avec Office 365 PowerShell
 
  **Résumé:** Utilisez Office 365 PowerShell pour gérer les utilisateurs, les groupes et les sites SharePoint Online.
 
-Si vous êtes un administrateur SharePoint Online qui travaille avec de grandes listes de comptes ou de groupes d'utilisateurs et qu'il souhaite un moyen plus facile de les gérer, vous pouvez utiliser Office 365 PowerShell. 
+Si vous êtes un administrateur SharePoint Online qui travaille avec de grandes listes de comptes ou de groupes d’utilisateurs et qu’il souhaite un moyen plus facile de les gérer, vous pouvez utiliser Office 365 PowerShell. 
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -72,7 +72,7 @@ Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$t
 
 Pour utiliser ces commandes, remplacez remplacer tout entre guillemets, y compris les caractères < et >, par les noms corrects.
 
-Par exemple, cet ensemble de commandes ajoute Opal Castillo (nom d'utilisateur opalc) à la liste des administrateurs de collection de sites sur la collection de sites ContosoTest dans le client Contoso1:
+Par exemple, cet ensemble de commandes ajoute Opal Castillo (nom d’utilisateur opalc) à la liste des administrateurs de collection de sites sur la collection de sites ContosoTest dans le client Contoso1:
 
 ```
 $tenant = "contoso1"
@@ -119,7 +119,7 @@ New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sh
 ```
 Les propriétés de groupe, telles que les niveaux d’autorisation, peuvent être mises à jour plus tard à l’aide de la cmdlet **Set-SPOSiteGroup**.
 
-Par exemple, nous allons ajouter le groupe auditeurs avec des autorisations d'affichage seul à la collection de sites de test Contoso dans le client Contoso1:
+Par exemple, nous allons ajouter le groupe auditeurs avec des autorisations d’affichage seul à la collection de sites de test Contoso dans le client Contoso1:
 
 ```
 $tenant = "contoso1"
@@ -133,9 +133,9 @@ New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sh
 
 Parfois, vous devez supprimer un utilisateur d’un site ou même de tous les sites, par exemple, si l’employé change de service ou quitte l’entreprise. Vous pouvez réaliser cette action facilement dans l’interface utilisateur pour un seul employé, mais déplacer un service complet d’un site à un autre est autrement plus compliqué.
 
-Cependant, à l'aide de SharePoint Online Management Shell et des fichiers CSV, cette opération est rapide et facile. Dans cette tâche, vous allez utiliser Windows PowerShell pour supprimer un utilisateur d’un groupe de sécurité de collection de sites. Vous utiliserez ensuite un fichier CSV et supprimerez de nombreux utilisateurs de différents sites. 
+Cependant, à l’aide de SharePoint Online Management Shell et des fichiers CSV, cette opération est rapide et facile. Dans cette tâche, vous allez utiliser Windows PowerShell pour supprimer un utilisateur d’un groupe de sécurité de collection de sites. Vous utiliserez ensuite un fichier CSV et supprimerez de nombreux utilisateurs de différents sites. 
 
-Nous allons utiliser la commande **Remove-époux** pour supprimer un seul utilisateur Office 365 d'un groupe de collection de sites pour que nous puissions voir la syntaxe de la commande. Voici à quoi ressemble la syntaxe :
+Nous allons utiliser la commande **Remove-époux** pour supprimer un seul utilisateur Office 365 d’un groupe de collection de sites pour que nous puissions voir la syntaxe de la commande. Voici à quoi ressemble la syntaxe :
 
 ```
 $tenant = "<tenant name, such as litwareinc for litwareinc.onmicrosoft.com>"
@@ -163,13 +163,13 @@ Get-SPOSite | ForEach {Get-SPOSiteGroup –Site $_.Url} | ForEach {Remove-SPOUse
 ```
 
 > [!WARNING]
-> Ce n'est qu'un exemple. Vous ne devez pas exécuter cette commande sauf si vous devez vraiment supprimer un utilisateur de chaque groupe, par exemple si l’utilisateur quitte l’entreprise.
+> Ce n’est qu’un exemple. Vous ne devez pas exécuter cette commande sauf si vous devez vraiment supprimer un utilisateur de chaque groupe, par exemple si l’utilisateur quitte l’entreprise.
 
 ## <a name="automate-management-of-large-lists-of-users-and-groups"></a>Automatiser la gestion des grandes listes d’utilisateurs et de groupes
 
-Pour ajouter un grand nombre de comptes aux sites SharePoint et leur donner des autorisations, vous pouvez utiliser le centre d'administration 365 de Microsoft, des commandes PowerShell individuelles ou PowerShell un fichier CSV. Parmi tous ces choix, le fichier CSV est le moyen le plus rapide d’automatiser cette tâche.
+Pour ajouter un grand nombre de comptes aux sites SharePoint et leur donner des autorisations, vous pouvez utiliser le centre d’administration 365 de Microsoft, des commandes PowerShell individuelles ou PowerShell un fichier CSV. Parmi tous ces choix, le fichier CSV est le moyen le plus rapide d’automatiser cette tâche.
 
-Le processus de base consiste à créer un fichier CSV qui possède des en-têtes (colonnes) correspondant aux paramètres dont le script Windows PowerShell a besoin. Vous pouvez facilement créer une liste de ce type dans Excel, puis l'exporter en tant que fichier CSV. Ensuite, vous utilisez un script Windows PowerShell pour parcourir les enregistrements (lignes) dans le fichier CSV, en ajoutant les utilisateurs à des groupes et les groupes à des sites. 
+Le processus de base consiste à créer un fichier CSV qui possède des en-têtes (colonnes) correspondant aux paramètres dont le script Windows PowerShell a besoin. Vous pouvez facilement créer une liste de ce type dans Excel, puis l’exporter en tant que fichier CSV. Ensuite, vous utilisez un script Windows PowerShell pour parcourir les enregistrements (lignes) dans le fichier CSV, en ajoutant les utilisateurs à des groupes et les groupes à des sites. 
 
 Par exemple, créons un fichier CSV pour définir un groupe de collections de sites, des groupes et des autorisations. Puis, nous créerons un fichier CSV pour remplir les groupes avec des utilisateurs. Enfin, nous créerons puis exécuterons un script Windows PowerShell simple qui crée et remplit les groupes.
 
@@ -229,14 +229,14 @@ Contoso Blog Editors,opalc@contoso1.onmicrosoft.com,https://contoso1.sharepoint.
 Project Alpha Approvers,robinc@contoso1.onmicrosoft.com,https://contoso1.sharepoint.com/sites/Project01
 ```
 
-Pour la prochaine étape, vous devez avoir enregistré les deux fichiers CSV sur votre lecteur. Voici des exemples de commandes qui utilisent des fichiers CSV et pour ajouter des autorisations et l'appartenance à un groupe:
+Pour la prochaine étape, vous devez avoir enregistré les deux fichiers CSV sur votre lecteur. Voici des exemples de commandes qui utilisent des fichiers CSV et pour ajouter des autorisations et l’appartenance à un groupe:
 
 ```
 Import-Csv C:\O365Admin\GroupsAndPermissions.csv | ForEach {New-SPOSiteGroup -Group $_.Group -PermissionLevels $_.PermissionLevels -Site $_.Site}
 Import-Csv C:\O365Admin\Users.csv | ForEach {Add-SPOUser -Group $_.Group –LoginName $_.LoginName -Site $_.Site}
 ```
 
-Le script importe le contenu du fichier CSV et utilise les valeurs des colonnes pour renseigner les paramètres des commandes **New-SPOSiteGroup** et **Add-époux** . Dans notre exemple, nous enregistrons ce fichier dans le dossier theO365Admin sur le lecteur C, mais vous pouvez l'enregistrer où vous le souhaitez.
+Le script importe le contenu du fichier CSV et utilise les valeurs des colonnes pour renseigner les paramètres des commandes **New-SPOSiteGroup** et **Add-époux** . Dans notre exemple, nous enregistrons ce fichier dans le dossier theO365Admin sur le lecteur C, mais vous pouvez l’enregistrer où vous le souhaitez.
 
 Supprimons maintenant un certain nombre de personnes de plusieurs groupes au sein de différents sites, à l’aide du même fichier CSV. Voici un exemple de commande :
 
@@ -276,7 +276,7 @@ Mais que faire si vous souhaitez effectuer cette action pour chaque site ? Vous
 Get-SPOSite | ForEach {Get-SPOUser –Site $_.Url} | Format-Table -Wrap -AutoSize | Out-File c:\UsersReport.txt -Force -Width 360 -Append
 ```
 
-Ce rapport est assez simple, et vous pouvez ajouter du code pour créer des rapports plus spécifiques ou des rapports qui contiennent des informations plus détaillées. Mais cela doit vous donner une idée de l'utilisation de SharePoint Online Management Shell pour gérer les utilisateurs dans l'environnement SharePoint Online.
+Ce rapport est assez simple, et vous pouvez ajouter du code pour créer des rapports plus spécifiques ou des rapports qui contiennent des informations plus détaillées. Mais cela doit vous donner une idée de l’utilisation de SharePoint Online Management Shell pour gérer les utilisateurs dans l’environnement SharePoint Online.
    
 ## <a name="see-also"></a>Voir aussi
 
@@ -284,7 +284,7 @@ Ce rapport est assez simple, et vous pouvez ajouter du code pour créer des rapp
 
 [Gestion de SharePoint Online avec Office 365 PowerShell](create-sharepoint-sites-and-add-users-with-powershell.md)
 
-[Gérer Office 365 avec Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
+[Gérer Office 365 avec Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
   
 [Mise en route d'Office 365 Powershell](getting-started-with-office-365-powershell.md)
 

@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 2/14/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Priority
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: 'Résumé : Liste de référence des enregistrements DNS à utiliser lorsque vous planifiez un déploiement Office 365.'
-ms.openlocfilehash: c172275e43b4703172f58287c086562da352f5e9
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: bc1bb822bc0baf376c96c95ff637b93f131605e9
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487254"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067660"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Enregistrements DNS externes pour Office 365
 
@@ -31,7 +31,7 @@ ms.locfileid: "33487254"
   
 |||
 |:-----|:-----|
-|![Domaine](media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)|**Vous voulez afficher une liste personnalisée des enregistrements DNS pour votre organisation Office 365 ? ** Vous pouvez [trouver ici les informations nécessaires pour créer des enregistrements DNS Office 365](https://support.office.microsoft.com/fr-FR/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67) pour votre domaine dans Office 365.  <br/> **Avez besoin d’aide détaillée pour ajouter ces enregistrements  sur le DNS de l’hébergeur de votre domaine, tel que GoDaddy ou eNom ?** [Vous trouverez des liens vers des instructions détaillées pour plusieurs hôtes DNS](https://go.microsoft.com/fwlink/?LinkId=286745).<br/> **Retournez sur **[ planification réseau et optimisation des performances pour Office 365](https://aka.ms/tune).  <br/> |
+|![Domaine](media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)|**Vous voulez afficher une liste personnalisée des enregistrements DNS pour votre organisation Office 365 ? ** Vous pouvez [trouver ici les informations nécessaires pour créer des enregistrements DNS Office 365](https://support.office.microsoft.com/en-us/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67) pour votre domaine dans Office 365.  <br/> **Avez besoin d’aide détaillée pour ajouter ces enregistrements  sur le DNS de l’hébergeur de votre domaine, tel que GoDaddy ou eNom ?** [Vous trouverez des liens vers des instructions détaillées pour plusieurs hôtes DNS](https://go.microsoft.com/fwlink/?LinkId=286745).<br/> **Retournez sur **[ planification réseau et optimisation des performances pour Office 365](https://aka.ms/tune).  <br/> |
 
  **Vous souhaitez utiliser la liste de référence pour votre  déploiement personnalisé ?** La liste ci-dessous peut être utilisée comme référence pour votre déploiement Office 365 personnalisé. Vous devrez sélectionner les enregistrements qui s’appliquent à votre organisation et renseigner les valeurs appropriées.
   

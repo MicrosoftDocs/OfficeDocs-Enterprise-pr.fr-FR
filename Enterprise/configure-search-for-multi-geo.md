@@ -3,19 +3,19 @@ title: Configurer la recherche pour Office 365 multigéographique
 ms.author: tlarsen
 author: tklarsen
 manager: arnek
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Découvrez la procédure de configuration de la recherche dans un environnement multigéographique.
-ms.openlocfilehash: 5a06b30e7850a23ff6443eb8b5b2e9e14850a7db
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 39493c4df48af239306d8b22de451d6db6e3bcf9
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490382"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068070"
 ---
 # <a name="configure-search-for-office-365-multi-geo"></a>Configurer la recherche pour Office 365 multigéographique
 
@@ -85,7 +85,7 @@ Certaines fonctionnalités de recherche auxquelles vous êtes habitué fonctionn
 <tr class="odd">
 <td align="left"></td>
 <td align="left">La recherche multigéographique ne prend pas en charge la création dynamique de compartiments pour les affinements numériques.</td>
-<td align="left">Utilisez le <a href="https://docs.microsoft.com/en-us/sharepoint/dev/general-development/query-refinement-in-sharepoint">paramètre « Discretize »</a> pour les affinements numériques.</td>
+<td align="left">Utilisez le <a href="https://docs.microsoft.com/fr-FR/sharepoint/dev/general-development/query-refinement-in-sharepoint">paramètre « Discretize »</a> pour les affinements numériques.</td>
 </tr>
 <tr class="even">
 <td align="left">ID de document</td>
@@ -172,7 +172,8 @@ Les applications de recherche personnalisée obtiennent les résultats de l’en
 
 **Configuration requise**
 
-Pour chaque emplacement géographique, vous devez vous assurer que tous les utilisateurs de l’organisation ont reçu l’autorisation de **lecture** du site web racine (par exemple contoso**APAC**.sharepoint.com/ et contoso**EU**.sharepoint.com/). [En savoir plus sur les autorisations](https://support.office.com/fr-FR/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
+Pour chaque emplacement géographique, vous devez vous assurer que tous les utilisateurs de l’organisation ont reçu l’autorisation de **lecture** du site web racine (par exemple contoso**APAC**.sharepoint.com/ et contoso**EU**.sharepoint.com/). 
+  [En savoir plus sur les autorisations](https://support.office.com/fr-FR/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
 
 ### <a name="query-parameters"></a>Paramètres de requête
 

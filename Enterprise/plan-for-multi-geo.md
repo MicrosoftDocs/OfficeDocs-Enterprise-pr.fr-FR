@@ -3,19 +3,19 @@ title: Planifier le déploiement d’Office 365 multigéographique
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Découvrez Office 365 multigéographique, comment opèrent les fonctionnalités multigéographiques et les emplacements géographiques disponibles pour le stockage de données.
-ms.openlocfilehash: 4f7905c55cbb926978a43d70300a70d451512f6f
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: f3abcf5e2c5cf0b8250b219e2891181365ffa934
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491420"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069420"
 ---
 # <a name="plan-for-office-365-multi-geo"></a>Planifier le déploiement d’Office 365 multigéographique
 

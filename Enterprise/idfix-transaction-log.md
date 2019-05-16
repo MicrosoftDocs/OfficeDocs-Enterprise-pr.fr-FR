@@ -1,10 +1,9 @@
 ---
 title: Office 365 IdFix journal des transactions
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 8/21/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
@@ -16,29 +15,29 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: d58b7d45-7947-4193-9456-82ba76f42d89
-description: Fournit un exemple et décrit la Convention d'affectation de noms et le niveau de journalisation par défaut du journal des transactions d'Office 365 IdFix.
-ms.openlocfilehash: c652f8dcbc23a6f0165d894ce6317443db72ceee
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+description: Fournit un exemple et décrit la Convention d’affectation de noms et le niveau de journalisation par défaut du journal des transactions d’Office 365 IdFix.
+ms.openlocfilehash: 0c6f2dd64cb406681c0a98099b2a42887ee79c25
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490940"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067260"
 ---
-# <a name="office-365-idfix-transaction-log"></a><span data-ttu-id="afc3d-103">Office 365 IdFix journal des transactions</span><span class="sxs-lookup"><span data-stu-id="afc3d-103">Office 365 IdFix transaction log</span></span>
+# <a name="office-365-idfix-transaction-log"></a><span data-ttu-id="f2841-103">Office 365 IdFix journal des transactions</span><span class="sxs-lookup"><span data-stu-id="f2841-103">Office 365 IdFix transaction log</span></span>
 
-<span data-ttu-id="afc3d-104">Fournit un exemple et décrit la Convention d'affectation de noms et le niveau de journalisation par défaut du journal des transactions d'Office 365 IdFix.</span><span class="sxs-lookup"><span data-stu-id="afc3d-104">Provides an example and describes the naming convention and default log level of the Office 365 IdFix transaction log.</span></span>
+<span data-ttu-id="f2841-104">Fournit un exemple et décrit la Convention d’affectation de noms et le niveau de journalisation par défaut du journal des transactions d’Office 365 IdFix.</span><span class="sxs-lookup"><span data-stu-id="f2841-104">Provides an example and describes the naming convention and default log level of the Office 365 IdFix transaction log.</span></span>
   
-## <a name="idfix-transaction-log-location"></a><span data-ttu-id="afc3d-105">Emplacement du journal des transactions IdFix</span><span class="sxs-lookup"><span data-stu-id="afc3d-105">IdFix transaction log location</span></span>
+## <a name="idfix-transaction-log-location"></a><span data-ttu-id="f2841-105">Emplacement du journal des transactions IdFix</span><span class="sxs-lookup"><span data-stu-id="f2841-105">IdFix transaction log location</span></span>
 
-<span data-ttu-id="afc3d-106">L'outil IdFix Office 365 crée un nouveau journal des transactions chaque fois que vous cliquez sur **appliquer** dans IdFix et que vous appliquez les modifications à la forêt Active Directory.</span><span class="sxs-lookup"><span data-stu-id="afc3d-106">The Office 365 IdFix tool creates a new transaction log each time you click **Apply** in IdFix and apply changes to the Active Directory forest.</span></span> <span data-ttu-id="afc3d-107">Le journal des transactions est enregistré dans le dossier où vous avez installé IdFix.</span><span class="sxs-lookup"><span data-stu-id="afc3d-107">The transaction log is saved in the same folder where you installed IdFix.</span></span> <span data-ttu-id="afc3d-108">Par défaut, ce dossier est C:\Deployment Tools\IDFix.</span><span class="sxs-lookup"><span data-stu-id="afc3d-108">By default, this folder is C:\Deployment Tools\IDFix.</span></span> <span data-ttu-id="afc3d-109">Le nom du fichier journal des transactions utilise un format de date et d'heure, par exemple, verbose 6-1-2018 6-17-22 PM indique un fichier qui a été généré le 1er juin 2018 à 6:17:22 PM.</span><span class="sxs-lookup"><span data-stu-id="afc3d-109">The transaction log file name uses a date and time stamp format, for example, Verbose 6-1-2018 6-17-22 PM indicates a file that was generated at June 1, 2018 at 6:17:22 PM.</span></span> <span data-ttu-id="afc3d-110">Verbose indique le niveau de journalisation.</span><span class="sxs-lookup"><span data-stu-id="afc3d-110">Verbose indicates the logging level.</span></span> 
+<span data-ttu-id="f2841-106">L’outil IdFix Office 365 crée un nouveau journal des transactions chaque fois que vous cliquez sur **appliquer** dans IdFix et que vous appliquez les modifications à la forêt Active Directory.</span><span class="sxs-lookup"><span data-stu-id="f2841-106">The Office 365 IdFix tool creates a new transaction log each time you click **Apply** in IdFix and apply changes to the Active Directory forest.</span></span> <span data-ttu-id="f2841-107">Le journal des transactions est enregistré dans le dossier où vous avez installé IdFix.</span><span class="sxs-lookup"><span data-stu-id="f2841-107">The transaction log is saved in the same folder where you installed IdFix.</span></span> <span data-ttu-id="f2841-108">Par défaut, ce dossier est C:\Deployment Tools\IDFix.</span><span class="sxs-lookup"><span data-stu-id="f2841-108">By default, this folder is C:\Deployment Tools\IDFix.</span></span> <span data-ttu-id="f2841-109">Le nom du fichier journal des transactions utilise un format de date et d’heure, par exemple, verbose 6-1-2018 6-17-22 PM indique un fichier qui a été généré le 1er juin 2018 à 6:17:22 PM.</span><span class="sxs-lookup"><span data-stu-id="f2841-109">The transaction log file name uses a date and time stamp format, for example, Verbose 6-1-2018 6-17-22 PM indicates a file that was generated at June 1, 2018 at 6:17:22 PM.</span></span> <span data-ttu-id="f2841-110">Verbose indique le niveau de journalisation.</span><span class="sxs-lookup"><span data-stu-id="f2841-110">Verbose indicates the logging level.</span></span> 
   
-## <a name="idfix-transaction-log-logging-level"></a><span data-ttu-id="afc3d-111">Niveau d'enregistrement du journal des transactions IdFix</span><span class="sxs-lookup"><span data-stu-id="afc3d-111">IdFix transaction log logging level</span></span>
+## <a name="idfix-transaction-log-logging-level"></a><span data-ttu-id="f2841-111">Niveau d’enregistrement du journal des transactions IdFix</span><span class="sxs-lookup"><span data-stu-id="f2841-111">IdFix transaction log logging level</span></span>
 
-<span data-ttu-id="afc3d-112">Le mot détaillé dans le nom du fichier journal des transactions indique le niveau de journalisation dans le fichier.</span><span class="sxs-lookup"><span data-stu-id="afc3d-112">The word verbose in the transaction log file name indicates the level of logging in the file.</span></span> <span data-ttu-id="afc3d-113">Verbose signifie que la quantité maximale d'informations est capturée dans le journal.</span><span class="sxs-lookup"><span data-stu-id="afc3d-113">Verbose means that the maximum amount of information is captured in the log.</span></span> <span data-ttu-id="afc3d-114">Il s'agit du niveau de journalisation par défaut.</span><span class="sxs-lookup"><span data-stu-id="afc3d-114">This is the default logging level.</span></span> <span data-ttu-id="afc3d-115">Pour le moment, vous ne pouvez pas modifier le niveau de journalisation.</span><span class="sxs-lookup"><span data-stu-id="afc3d-115">At this time, you cannot change the logging level.</span></span>
+<span data-ttu-id="f2841-112">Le mot détaillé dans le nom du fichier journal des transactions indique le niveau de journalisation dans le fichier.</span><span class="sxs-lookup"><span data-stu-id="f2841-112">The word verbose in the transaction log file name indicates the level of logging in the file.</span></span> <span data-ttu-id="f2841-113">Verbose signifie que la quantité maximale d’informations est capturée dans le journal.</span><span class="sxs-lookup"><span data-stu-id="f2841-113">Verbose means that the maximum amount of information is captured in the log.</span></span> <span data-ttu-id="f2841-114">Il s’agit du niveau de journalisation par défaut.</span><span class="sxs-lookup"><span data-stu-id="f2841-114">This is the default logging level.</span></span> <span data-ttu-id="f2841-115">Pour le moment, vous ne pouvez pas modifier le niveau de journalisation.</span><span class="sxs-lookup"><span data-stu-id="f2841-115">At this time, you cannot change the logging level.</span></span>
   
-## <a name="idfix-transaction-log-format"></a><span data-ttu-id="afc3d-116">Format de journal des transactions IdFix</span><span class="sxs-lookup"><span data-stu-id="afc3d-116">IdFix transaction log format</span></span>
+## <a name="idfix-transaction-log-format"></a><span data-ttu-id="f2841-116">Format de journal des transactions IdFix</span><span class="sxs-lookup"><span data-stu-id="f2841-116">IdFix transaction log format</span></span>
 
-<span data-ttu-id="afc3d-117">IdFix écrit les résultats de chaque action de **mise à jour** dans un journal des transactions, comme illustré dans l'exemple suivant:</span><span class="sxs-lookup"><span data-stu-id="afc3d-117">IdFix writes the results of each **UPDATE** action to a transaction log as shown in the following example:</span></span>
+<span data-ttu-id="f2841-117">IdFix écrit les résultats de chaque action de **mise à jour** dans un journal des transactions, comme illustré dans l’exemple suivant:</span><span class="sxs-lookup"><span data-stu-id="f2841-117">IdFix writes the results of each **UPDATE** action to a transaction log as shown in the following example:</span></span>
   
 ```
 5/22/2018 6:36:44 AM Initialized - IdFix version 1.07 - Multi-Tenant

@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 'Découvrez les outils à utiliser pour gérer vos utilisateurs Office 365, ainsi que la manière dont vous pouvez les utiliser en fonction de la gestion des identités des utilisateurs. '
-ms.openlocfilehash: a9bd7cd75902d2b3b3ff17572849fb1a46053eb5
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 007de5844badbaad2c5061c69cae33523438805f
+ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067190"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34102442"
 ---
 # <a name="tools-to-manage-office-365-accounts"></a>Outils permettant de gérer les comptes Office 365
 
@@ -35,15 +35,15 @@ L’emplacement et la façon dont vous pouvez gérer vos comptes d’utilisateur
   
 ### <a name="cloud-authentication"></a>Authentification Cloud
 
-- [Authentification Cloud](about-office-365-identity.md#cloud-authentication) : créer et gérer des utilisateurs dans le centre d’administration, vous pouvez également utiliser Windows PowerShell ou Azure Active Directory pour gérer vos utilisateurs. 
+- Authentification Cloud: créer et gérer des utilisateurs dans le centre d’administration, vous pouvez également utiliser Windows PowerShell ou Azure Active Directory pour gérer vos utilisateurs. 
     
-- [Synchronisation de hachage de mot de passe avec authentification unique transparente](about-office-365-identity.md) : le moyen le plus simple d’activer l’authentification pour les objets d’annuaire locaux dans Azure ad. La synchronisation de hachage de mot de passe (hachage) vous permet de synchroniser vos objets de compte d’utilisateur Active Directory sur site avec Office 365 et de gérer vos utilisateurs en local. 
+- Synchronisation de hachage de mot de passe avec authentification unique transparente: le moyen le plus simple d’activer l’authentification pour les objets d’annuaire locaux dans Azure AD. La synchronisation de hachage de mot de passe (hachage) vous permet de synchroniser vos objets de compte d’utilisateur Active Directory sur site avec Office 365 et de gérer vos utilisateurs en local. 
     
-- [Authentification directe avec authentification unique transparente](about-office-365-identity.md) : fournit une validation de mot de passe simple pour les services d’authentification Azure ad à l’aide d’un agent logiciel exécuté sur un ou plusieurs serveurs locaux afin de valider directement les utilisateurs avec votre Active Directory en local. 
+- Authentification directe avec authentification unique transparente: fournit une validation de mot de passe simple pour les services d’authentification Azure AD à l’aide d’un agent logiciel exécuté sur un ou plusieurs serveurs locaux afin de valider directement les utilisateurs avec votre organisation locale active. Active. 
     
 ### <a name="federated-authentication"></a>Authentification fédérée
 
-- [Options d’authentification fédérée](about-office-365-identity.md#federated-authentication-options) -principalement pour les grandes organisations d’entreprise avec des exigences d’authentification plus complexes, les objets d’annuaire locaux sont synchronisés avec Office 365 et les comptes d’utilisateurs sont gérés en local. 
+- Options d’authentification fédérée-principalement pour les grandes organisations d’entreprise avec des exigences d’authentification plus complexes, les objets d’annuaire locaux sont synchronisés avec Office 365 et les comptes d’utilisateurs sont gérés en local. 
     
 - Les [fournisseurs d’identité et d’authentification tiers](about-office-365-identity.md) -les objets d’annuaire locaux peuvent être synchronisés avec Office 365 et l’accès aux ressources de Cloud est principalement géré par un fournisseur d’identité tiers (IDP). 
     

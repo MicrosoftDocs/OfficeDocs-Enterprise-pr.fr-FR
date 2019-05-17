@@ -1,5 +1,5 @@
 ---
-title: Planifier la synchronisation d’annuaires pour Office 365
+title: Identité hybride et synchronisation d’annuaires pour Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,41 +15,87 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
-description: Décrit la synchronisation d’annuaires avec Office 365, le nettoyage Active Directory et l’outil Azure Active Directory Connect.
-ms.openlocfilehash: b1d48696195c572de3a87bc5acb0646fc4bd0f41
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+description: Décrit la synchronisation d’annuaires avec Office 365, le nettoyage des services de domaine Active Directory et l’outil Azure Active Directory Connect.
+ms.openlocfilehash: 31fcd8baaccabf5d3f4f0cf47c7573c43f7cd40b
+ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069360"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34102489"
 ---
-# <a name="plan-for-directory-synchronization-for-office-365"></a>Planifier la synchronisation d’annuaires pour Office 365
+# <a name="hybrid-identity-and-directory-synchronization-for-office-365"></a>Identité hybride et synchronisation d’annuaires pour Office 365
 
-En fonction des besoins de l’entreprise et des exigences techniques, la synchronisation d’annuaires est le choix de mise en service le plus courant pour les clients d’entreprise qui migrent vers Office 365. La synchronisation d’annuaires permet de gérer les identités dans l’annuaire Active Directory local et toutes les mises à jour apportées à cette identité sont synchronisées avec Office 365.
-  
-Il existe deux éléments à garder à l’esprit lorsque vous planifiez une implémentation de la synchronisation d’annuaires, y compris la préparation d’annuaires, ainsi que les exigences et les fonctionnalités d’Azure Active Directory. La préparation de l’annuaire couvre un certain nombre de domaines. Elles incluent les mises à jour d’attribut, l’audit et la planification du placement des contrôleurs de domaine. La planification et les exigences incluent la détermination des autorisations requises, la planification des scénarios à forêts multiples/de répertoire, la planification de la capacité et la synchronisation bidirectionnelle.
-  
-## <a name="office-365-identity-models"></a>Modèles d’identité Office 365
+En fonction des besoins de l’entreprise et des exigences techniques, le modèle d’identité hybride et la synchronisation d’annuaires constituent le choix le plus courant pour les clients d’entreprise qui adoptent Office 365. La synchronisation d’annuaires vous permet de gérer les identités dans vos services de domaine Active Directory (AD DS) et toutes les mises à jour des comptes d’utilisateur, des groupes et des contacts sont synchronisées avec le client Azure Active Directory (Azure AD) de votre abonnement Office 365.
 
-Office 365 utilise deux modèles principaux d’authentification et d’identité: l’authentification Cloud et l’authentification fédérée.
-  
-### <a name="cloud-authentication"></a>Authentification Cloud
 
-[Identité Cloud](about-office-365-identity.md) : créer et gérer des utilisateurs dans le [centre d’administration 365 de Microsoft](https://admin.microsoft.com), vous pouvez également utiliser Windows PowerShell ou Azure Active Directory pour gérer vos utilisateurs.
+>[!Note]
+>Lorsque les comptes d’utilisateur AD DS sont synchronisés pour la première fois, une licence Office 365 n’est pas automatiquement attribuée et ne peut pas accéder aux services 365 Office, tels que le courrier électronique. Vous devez attribuer une licence à ces comptes d’utilisateur, de manière individuelle ou dynamique via l’appartenance à un groupe.
+>
+
+## <a name="authentication-for-hybrid-identity"></a>Authentification pour l’identité hybride
+
+Il existe deux types d’authentification lors de l’utilisation du modèle d’identité hybride:
+
+- Authentification gérée
+
+  Azure AD gère le processus d’authentification à l’aide d’une version hachée stockée localement du mot de passe ou envoie les informations d’identification à un agent logiciel local pour qu’il soit authentifié par le service AD DS local.
+
+- Authentification fédérée
+
+  Azure AD redirige l’ordinateur client demandant l’authentification pour contacter un autre fournisseur d’identité.
+
+### <a name="managed-authentication"></a>Authentification gérée
+
+Il existe deux types d’authentification gérée:
+
+- Synchronisation de hachage de mot de passe (hachage)
+
+  Azure AD effectue l’authentification proprement dite.
+
+- Authentification directe (PTA)
+
+  Les services AD DS d’Azure AD effectuent l’authentification.
+
+
+#### <a name="password-hash-synchronization"></a>Synchronisation de hachage de mot de passe
+
+Avec la synchronisation de hachage de mot de passe (hachage), vous synchronisez vos comptes d’utilisateur AD DS avec Office 365 et vous gérez vos utilisateurs en local. Les hachages des mots de passe des utilisateurs sont synchronisés entre votre AD DS et Azure AD afin que les utilisateurs aient le même mot de passe sur site et dans le Cloud. Il s’agit de la méthode la plus simple pour activer l’authentification pour les identités AD DS dans Azure AD. 
+
+![](./media/plan-for-directory-synchronization/phs-authentication.png)
+
+Lorsque les mots de passe sont modifiés ou réinitialisés en local, les nouveaux hachages de mot de passe sont synchronisés avec Azure AD afin que les utilisateurs puissent toujours utiliser le même mot de passe pour les ressources en nuage et les ressources locales. Les mots de passe utilisateur ne sont jamais envoyés à Azure AD ou stockés dans Azure AD en texte clair. Certaines fonctionnalités avancées d’Azure AD, telles que la protection des identités, nécessitent hachage, quelle que soit la méthode d’authentification sélectionnée.
   
-[Synchronisation de hachage de mot de passe avec authentification unique transparente](about-office-365-identity.md) : le moyen le plus simple d’activer l’authentification pour les objets d’annuaire locaux dans Azure ad. La synchronisation de hachage de mot de passe (hachage) vous permet de synchroniser vos objets de compte d’utilisateur Active Directory sur site avec Office 365 et de gérer vos utilisateurs en local.
+Pour plus d’informations, voir [choosING hachage](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) .
   
-[Authentification directe avec authentification unique transparente](about-office-365-identity.md) : fournit une validation de mot de passe simple pour les services d’authentification Azure ad à l’aide d’un agent logiciel exécuté sur un ou plusieurs serveurs locaux afin de valider directement les utilisateurs avec votre Active Directory en local.
+#### <a name="pass-through-authentication"></a>Authentification directe
+
+L’authentification directe (directe) fournit une validation de mot de passe simple pour les services d’authentification Azure AD à l’aide d’un agent logiciel exécuté sur un ou plusieurs serveurs locaux pour valider les utilisateurs directement avec votre service AD DS. Avec l’authentification directe (directe), vous synchronisez les comptes d’utilisateur AD DS avec Office 365 et vous gérez vos utilisateurs en local. 
+
+![](./media/plan-for-directory-synchronization/pta-authentication.png)
+
+DIRECTE permet à vos utilisateurs de se connecter à des ressources et des applications locales et Office 365 à l’aide de leur compte local et de leur mot de passe. Cette configuration valide les mots de passe des utilisateurs directement par rapport à votre service AD DS local sans stocker les hachages de mots de passe dans Azure AD. 
+
+DIRECTE est également destiné aux organisations disposant d’un impératif de sécurité pour appliquer immédiatement les États de compte d’utilisateur, les stratégies de mot de passe et les heures d’ouverture de session locaux. 
+  
+Pour plus d’informations, voir [choosING directe](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) .
   
 ### <a name="federated-authentication"></a>Authentification fédérée
 
-[Identité fédérée avec Active Directory Federation Services AD FS](about-office-365-identity.md) -principalement pour les grandes organisations d’entreprise avec des exigences d’authentification plus complexes, les objets d’annuaire locaux sont synchronisés avec Office 365 et les comptes d’utilisateurs sont géré en local.
-  
-Les [fournisseurs d’identité et d’authentification tiers](about-office-365-identity.md) -les objets d’annuaire locaux peuvent être synchronisés avec Office 365 et l’accès aux ressources de Cloud est principalement géré par un fournisseur d’identité tiers (IDP).
-  
-## <a name="active-directory-cleanup"></a>Nettoyage Active Directory
+L’authentification fédérée est principalement destinée aux grandes entreprises ayant des exigences d’authentification plus complexes. Les identités AD DS sont synchronisées avec Office 365 et les comptes d’utilisateurs sont gérés en local. Avec l’authentification fédérée, les utilisateurs ont le même mot de passe sur site et dans le Cloud et ils n’ont pas besoin de se connecter à nouveau pour utiliser Office 365. 
 
-Pour garantir une transition transparente vers Office 365 à l’aide de la synchronisation, nous vous recommandons vivement de préparer votre forêt Active Directory avant de commencer le déploiement de la synchronisation d’annuaires Office 365.
+L’authentification fédérée peut prendre en charge des exigences d’authentification supplémentaires, telles que l’authentification par carte à puce ou une authentification multifacteur tierce et est généralement requise lorsque les organisations ont une condition d’authentification non pris en charge en mode natif par Azure AD.
+ 
+Voir [choix de l’authentification fédérée](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) pour en savoir plus.
+  
+#### <a name="third-party-authentication-and-identity-providers"></a>Fournisseurs d’identité et d’authentification tiers
+
+Les objets d’annuaire locaux peuvent être synchronisés avec Office 365 et l’accès aux ressources de Cloud est principalement géré par un fournisseur d’identité tiers (IdP). Si votre organisation utilise une solution de Fédération tierce, vous pouvez configurer l’authentification avec cette solution pour Office 365 à condition que la solution de Fédération tierce soit compatible avec Azure AD.
+  
+Pour en savoir plus, voir [compatibilité de Fédération Azure ad](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-federation-compatibility) .
+  
+## <a name="ad-ds-cleanup"></a>Nettoyage des services de domaine Active Directory
+
+Pour garantir une transition transparente vers Office 365 à l’aide de la synchronisation, vous devez préparer votre forêt AD DS avant de commencer le déploiement de la synchronisation d’annuaires d’Office 365.
   
 Lorsque vous configurez la [synchronisation d’annuaires dans Office 365](set-up-directory-synchronization.md), l’une des étapes consiste à [Télécharger et à exécuter l’outil IdFix](install-and-run-idfix.md). Vous pouvez utiliser l’outil IdFix pour faciliter le [nettoyage d’annuaire](prepare-directory-attributes-for-synch-with-idfix.md).
   
@@ -68,31 +114,33 @@ Pour plusieurs forêts et options d’authentification unique, utilisez [l’ins
   
 Si votre organisation dispose de plusieurs forêts pour l’authentification (forêts d’ouverture de session), nous vous recommandons vivement les suivants:
   
-- **Évaluez la consolidation de vos forêts.** En règle générale, il y a plus de charge nécessaire pour gérer plusieurs forêts. À moins que votre organisation n’ait des contraintes de sécurité qui dictent le besoin de forêts distinctes, envisagez de simplifier votre environnement local.
+- **Envisagez de consolider vos forêts.** En règle générale, il y a plus de charge nécessaire pour gérer plusieurs forêts. À moins que votre organisation n’ait des contraintes de sécurité qui dictent le besoin de forêts distinctes, envisagez de simplifier votre environnement local.
 - **Utilisez uniquement dans votre forêt d’ouverture de session principale.** Envisagez de déployer Office 365 uniquement dans votre forêt d’ouverture de session principale pour le déploiement initial d’Office 365. 
 
-Si vous ne pouvez pas consolider votre déploiement Active Directory à forêts multiples ou si vous utilisez d’autres services d’annuaire pour gérer les identités, vous pourrez peut-être les synchroniser avec l’aide de Microsoft ou d’un partenaire.
+Si vous ne pouvez pas consolider votre déploiement AD DS à forêts multiples ou si vous utilisez d’autres services d’annuaire pour gérer les identités, vous pourrez peut-être les synchroniser avec l’aide de Microsoft ou d’un partenaire.
   
-Pour plus d’informations, reportez-vous à la rubrique [multi-Forest Directory Sync with Single Sign-on Scenario](https://go.microsoft.com/fwlink/p/?LinkId=525321).
+Pour plus d’informations, consultez la rubrique synchronisation d’annuaires de [forêts multiples avec un scénario d’authentification unique](https://go.microsoft.com/fwlink/p/?LinkId=525321) .
   
-## <a name="directory-integration-tools"></a>Outils d’intégration d’annuaire
-
-La synchronisation d’annuaires est la synchronisation des objets d’annuaire (utilisateurs, groupes et contacts) à partir de votre environnement Active Directory local vers l’infrastructure d’annuaire Office 365. Consultez la rubrique [Outils d’intégration d’annuaire](https://go.microsoft.com/fwlink/p/?LinkID=510956) pour obtenir la liste des outils disponibles et leur fonctionnalité. L’outil recommandé est [Azure Active Directory Connect](https://go.microsoft.com/fwlink/?LinkId=525323).
-  
-Lorsque les comptes d’utilisateur sont synchronisés avec le répertoire Office 365 pour la première fois, ils sont marqués comme non activés. Ils ne peuvent pas envoyer ou recevoir des courriers électroniques, et ils ne consomment pas de licences d’abonnement. Lorsque vous êtes prêt à affecter des abonnements Office 365 à des utilisateurs spécifiques, vous devez les sélectionner et les activer en affectant une licence valide.
+## <a name="features-that-are-dependent-on-directory-synchronization"></a>Fonctionnalités dépendant de la synchronisation d’annuaires
   
 La synchronisation d’annuaires est requise pour les fonctionnalités et fonctionnalités suivantes:
   
-- Authentification unique
+- Authentification unique transparente Azure AD (SSO)
 - Coexistence Skype
 - Déploiement Exchange hybride, notamment:
   - Liste d’adresses globale (GAL) entièrement partagée entre votre environnement Exchange local et Office 365.
   - Synchronisation des informations GAL provenant de différents systèmes de messagerie.
   - Possibilité d’ajouter et de supprimer des utilisateurs des offres de services Office 365. Cette possibilité nécessite ce qui suit :
-  - La synchronisation bidirectionnelle doit être configurée lors de la configuration de la synchronisation d’annuaires. Par défaut, les outils de synchronisation d’annuaires écrivent des informations d’annuaire uniquement dans le Cloud. Lorsque vous configurez la synchronisation bidirectionnelle, vous activez la fonctionnalité d’écriture différée de sorte qu’un nombre limité d’attributs d’objets soient copiés à partir du Cloud, puis réécrits dans votre service Active Directory local. L’écriture différée est également appelée mode hybride Exchange. 
+  - La synchronisation bidirectionnelle doit être configurée lors de la configuration de la synchronisation d’annuaires. Par défaut, les outils de synchronisation d’annuaires écrivent des informations d’annuaire uniquement dans le Cloud. Lorsque vous configurez la synchronisation bidirectionnelle, vous activez la fonctionnalité d’écriture différée de sorte qu’un nombre limité d’attributs d’objets sont copiés à partir du Cloud, puis réécrits dans vos services AD DS locaux. L’écriture différée est également appelée mode hybride Exchange. 
   - Un déploiement Exchange hybride local
   - Possibilité de déplacer certaines boîtes aux lettres utilisateur vers Office 365 tout en conservant les autres boîtes aux lettres utilisateur en local.
   - Les expéditeurs approuvés et les expéditeurs bloqués en local sont répliqués vers Office 365.
   - Fonctionnalité de délégation de base et d’envoi de courrier « de la part de ».
   - Vous disposez d’une solution d’authentification multifacteur ou de carte à puce sur site intégrée.
 - Synchronisation de photos, de miniatures, de salles de conférence et de groupes de sécurité
+
+## <a name="next-step"></a>Étape suivante
+
+Lorsque vous êtes prêt à déployer l’identité hybride, consultez la rubrique préparer la mise [en service des utilisateurs](prepare-for-directory-synchronization.md).
+  
+

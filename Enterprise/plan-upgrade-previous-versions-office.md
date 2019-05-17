@@ -13,20 +13,20 @@ search.appverid:
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Si vous utilisez Office 2007 ou Office 2010, il est temps de planifier votre mise à niveau. Ne vous êtes pas bloqué avec des applications obsolètes. Utilisez ces ressources pour commencer votre plan.
-ms.openlocfilehash: 3643463e950fdfdf4440a7060383b3e7f21a9037
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 3af3b366aa8ae7b9e70169ca0885959fe2b6f8dd
+ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069330"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34102432"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planification de la mise à niveau à partir de serveurs et clients Office 2007 ou Office 2010
 
-Si votre organisation utilise des versions antérieures des produits et serveurs Office, il est très utile de commencer à planifier votre mise à niveau. Les produits et services Office 2007 ont atteint leur fin de prise en charge, et les produits et services Office 2010 approchent de leur prise en charge. Utilisez les ressources de cette section pour commencer.
-
-- [Mise à niveau à partir des serveurs et clients Office 2010](upgrade-from-office-2010-servers-and-products.md)
+Si votre organisation utilise des versions antérieures des produits et serveurs Office, il est très utile de commencer à planifier votre mise à niveau. Les produits et services Office 2007 ont atteint leur fin de support, et les produits et services Office 2010 atteindront leur fin d’assistance le **13 octobre 2020**. Utilisez les ressources de cette section pour commencer.
 
 - [Mise à niveau à partir des serveurs et clients Office 2007](upgrade-from-office-2007-servers-and-products.md)
+
+- [Mise à niveau à partir des serveurs et clients Office 2010](upgrade-from-office-2010-servers-and-products.md)
 
 ## <a name="what-happens-if-i-dont-upgrade"></a>Que se passe-t-il si je ne suis pas mis à niveau?
 

@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Résumé : Utilisez ces guides de laboratoire de test relatifs à l’adoption de Microsoft Cloud pour configurer une démonstration, une étude de faisabilité ou des environnements de développement/test pour Office 365.'
-ms.openlocfilehash: a61716ae34d8dbe3f710696570c46cefd0f4aa4c
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 37a99c313339f0894bf6fba0040bf2f7c2160fa6
+ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068140"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34162377"
 ---
 # <a name="test-office-365-with-cloud-adoption-test-lab-guides-tlgs"></a>Tester Office 365 à l’aide des Guides de laboratoire de test relatifs à l’adoption de Microsoft Cloud
 
@@ -61,10 +61,6 @@ Pour votre environnement de développement/test Office 365, utilisez les articl
 - [Identité fédérée pour votre environnement de développement/test Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
     
     Configurez l’authentification fédérée et effectuez-en des démonstrations avec les comptes d’un domaine AD DS (Active Directory Domain Services).
-    
-- [Sécurité des applications cloud pour votre environnement de développement/test Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
-    
-    Configurez et démontrez la sécurité des applications cloud Office 365, qui permet de créer des stratégies qui surveillent les activités suspectes dans votre abonnement Office 365 et vous en informent.
     
 - [Protection avancée contre les menaces pour votre environnement de développement/test Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
     

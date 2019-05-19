@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: 'Résumé : Découvrez comment créer un intranet simplifié comme environnement de développement/test dans Microsoft Azure.'
-ms.openlocfilehash: 80011fced526ecf38cf31a89015ff0bbe7fa8b7a
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: f6a9f2f2742b56ffb5f8a7521a14bfe48d3adc22
+ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068290"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34162437"
 ---
 # <a name="base-configuration-devtest-environment"></a>Environnement de développement/test de configuration de base
 
@@ -439,6 +439,5 @@ Start-AzVM -ResourceGroupName $rgName -Name "CLIENT1"
 
 - [Environnement de développement/test Office 365](office-365-dev-test-environment.md)
 - [DirSync pour votre environnement de développement/test Office 365](dirsync-for-your-office-365-dev-test-environment.md)
-- [Sécurité des applications cloud pour votre environnement de développement/test Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
 - [Protection avancée contre les menaces pour votre environnement de développement/test Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
 - [Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.md)

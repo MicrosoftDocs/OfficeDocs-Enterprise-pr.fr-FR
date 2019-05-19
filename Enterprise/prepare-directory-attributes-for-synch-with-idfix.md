@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 ms.assetid: 497593cf-24c6-491c-940b-7c86dcde9de0
 description: Fournit des instructions sur l’utilisation de IdFix pour préparer et nettoyer votre annuaire local avant la synchronisation avec Office 365.
-ms.openlocfilehash: 134f9cd60e65b64b91fb42fd7cbfa300626fc867
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: ca00fe1ee8ad829a3b72e51b4e292c8ea3b81e48
+ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071070"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34162367"
 ---
 # <a name="prepare-directory-attributes-for-synchronization-with-office-365-by-using-the-idfix-tool"></a>Préparation des attributs d'annuaire pour la synchronisation avec Office 365 à l'aide de l'outil IdFix
 Cette rubrique contient des instructions détaillées sur l’exécution de l’outil IdFix, des erreurs courantes que vous pouvez rencontrer, des corrections suggérées, des exemples et des pratiques recommandées pour la procédure à suivre si vous avez un grand nombre d’erreurs.
@@ -81,3 +81,7 @@ Par défaut, IdFix recherche dans tout l’annuaire. Si vous le souhaitez, vous 
   
 ## <a name="rolling-back-your-changes-by-using-the-idfix-gui"></a>Annulation de vos modifications à l’aide de l’interface utilisateur graphique IdFix
 Chaque fois que vous cliquez sur **appliquer** pour appliquer les modifications, l’outil IdFix crée un fichier distinct, appelé journal des transactions, qui répertorie les modifications que vous venez d’effectuer. Vous pouvez utiliser le journal des transactions pour restaurer uniquement les modifications qui se trouvent dans le journal le plus récent en cas d’erreur. Si vous avez commis une erreur lors de la mise à jour, vous pouvez annuler les dernières modifications appliquées en cliquant sur **Annuler**. Lorsque vous cliquez sur **Annuler**, IdFix utilise le journal des transactions pour annuler uniquement les modifications qui se trouvent dans le journal des transactions le plus récent. Pour plus d’informations sur l’utilisation du journal des transactions, voir [Reference: Office 365 IdFix transaction log](idfix-transaction-log.md).
+
+## <a name="next-step"></a>Étape suivante
+
+[Configurer la synchronisation d’annuaires](set-up-directory-synchronization.md)

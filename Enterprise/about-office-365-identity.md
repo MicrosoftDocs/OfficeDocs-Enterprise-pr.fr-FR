@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Découvrez comment l’identité de l’utilisateur est gérée dans Office 365.
-ms.openlocfilehash: cd7fb1db2d5372097f3da0e6a2521335d7933015
-ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
+ms.openlocfilehash: 1d4a2f40ebae9fa87d59ee3f7c9b621b40b03640
+ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34102459"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34162387"
 ---
 # <a name="office-365-identity-models-and-azure-active-directory"></a>Modèles d’identité Office 365 et Azure Active Directory
 
@@ -43,14 +43,14 @@ Voici les deux types d’identités, leur meilleur et leurs avantages.
 
 |||
 |:-------|:-----|:-----|
-|  | Identité en nuage uniquement | Identité hybride |
-| Définition | Le compte d’utilisateur existe uniquement dans le client Azure Active Directory (Azure AD) pour votre abonnement Microsoft 365. | Le compte d’utilisateur existe dans AD DS et une copie se trouve également dans le client Azure AD pour votre abonnement Microsoft 365. Le compte d’utilisateur dans Azure AD peut également inclure une version hachée du mot de passe du compte d’utilisateur. |
-| Comment Microsoft 365 authentifie les informations d’identification de l’utilisateur | Le client Azure AD de votre abonnement Microsoft 365 effectue l’authentification avec le compte d’identité Cloud. | Le client Azure AD de votre abonnement Microsoft 365 gère le processus d’authentification ou redirige l’utilisateur vers un autre fournisseur d’identité. |
-| Idéal pour... | Organisations qui n’ont pas ou n’ont pas besoin d’un service AD DS local. | Organisations utilisant AD DS ou un autre fournisseur d’identité. |
-| Plus grand avantage | Simple à utiliser. Aucun outil de répertoire ou serveur supplémentaire n’est requis. | Les utilisateurs peuvent utiliser les mêmes informations d’identification lors de l’accès à des ressources sur site ou en nuage. |
+|  | **Identité en nuage uniquement** | **Identité hybride** |
+| **Définition** | Le compte d’utilisateur existe uniquement dans le client Azure Active Directory (Azure AD) pour votre abonnement Microsoft 365. | Le compte d’utilisateur existe dans AD DS et une copie se trouve également dans le client Azure AD pour votre abonnement Microsoft 365. Le compte d’utilisateur dans Azure AD peut également inclure une version hachée du mot de passe du compte d’utilisateur. |
+| **Comment Microsoft 365 authentifie les informations d’identification de l’utilisateur** | Le client Azure AD de votre abonnement Microsoft 365 effectue l’authentification avec le compte d’identité Cloud. | Le client Azure AD de votre abonnement Microsoft 365 gère le processus d’authentification ou redirige l’utilisateur vers un autre fournisseur d’identité. |
+| **Recommandé pour** | Organisations qui n’ont pas ou n’ont pas besoin d’un service AD DS local. | Organisations utilisant AD DS ou un autre fournisseur d’identité. |
+| **Plus grand avantage** | Simple à utiliser. Aucun outil de répertoire ou serveur supplémentaire n’est requis. | Les utilisateurs peuvent utiliser les mêmes informations d’identification lors de l’accès à des ressources sur site ou en nuage. |
 ||||
 
-### <a name="cloud-only-identity"></a>Identité en nuage uniquement
+## <a name="cloud-only-identity"></a>Identité en nuage uniquement
 
 Une identité en nuage uniquement utilise des comptes d’utilisateur qui existent uniquement dans Azure AD. L’identité Cloud est généralement utilisée par les petites organisations qui n’ont pas de serveurs locaux ou n’utilisent pas AD DS pour gérer les identités locales. 
 
@@ -60,7 +60,7 @@ Voici les composants de base de l’identité en nuage uniquement.
 
 Les utilisateurs locaux et distants (en ligne) utilisent leurs comptes d’utilisateur et mots de passe Azure AD pour accéder aux services Cloud Office 365. Azure AD authentifie les informations d’identification de l’utilisateur en fonction de ses comptes et mots de passe utilisateur enregistrés.
 
-#### <a name="administration"></a>Administration
+### <a name="administration"></a>Administration
 Étant donné que les comptes d’utilisateur sont stockés uniquement dans Azure AD, vous pouvez gérer les identités Cloud avec des outils tels que le [Centre d’administration Microsoft 365](https://admin.microsoft.com) et Windows PowerShell avec le module Azure Active Directory PowerShell pour Graph. 
 
 ## <a name="hybrid-identity"></a>Identité hybride
@@ -81,14 +81,15 @@ Le client Azure AD dispose d’une copie des comptes AD DS. Dans cette configura
 >Vous devez toujours utiliser Azure AD Connect pour synchroniser les comptes d’utilisateurs pour l’identité hybride. Vous avez besoin des comptes d’utilisateur synchronisés dans Azure AD pour effectuer des attributions de licences et la gestion des groupes, configurer des autorisations et d’autres tâches administratives qui impliquent des comptes d’utilisateur.
 >
 
-#### <a name="administration"></a>Administration
+### <a name="administration"></a>Administration
 
 Étant donné que les comptes d’utilisateur d’origine et faisant autorité sont stockés dans le service AD DS local, vous gérez vos identités avec les mêmes outils que les services AD DS, tels que l’outil utilisateurs et ordinateurs Active Directory. 
 
 Vous n’utilisez pas le centre d’administration Microsoft 365 ni Windows PowerShell pour gérer les comptes d’utilisateur synchronisés dans Azure AD.
 
-
 ## <a name="next-step"></a>Étape suivante
+
+Si vous avez besoin du modèle d’identité Cloud uniquement, consultez la rubrique [identités en nuage uniquement](cloud-only-identities.md).
 
 Si vous avez besoin du modèle d’identité hybride, reportez-vous à la rubrique [Planning for your Synchronized Identities and Authentication Methods](plan-for-directory-synchronization.md).
   

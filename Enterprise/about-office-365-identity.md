@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Découvrez comment l’identité de l’utilisateur est gérée dans Office 365.
-ms.openlocfilehash: 1d4a2f40ebae9fa87d59ee3f7c9b621b40b03640
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: 421002825842201fa754b4c5579dc04fde37eeaf
+ms.sourcegitcommit: 2a7177c666dce3c00462b97463a6855e9e3a81f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162387"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34249462"
 ---
 # <a name="office-365-identity-models-and-azure-active-directory"></a>Modèles d’identité Office 365 et Azure Active Directory
 
@@ -91,7 +91,7 @@ Vous n’utilisez pas le centre d’administration Microsoft 365 ni Windows Powe
 
 Si vous avez besoin du modèle d’identité Cloud uniquement, consultez la rubrique [identités en nuage uniquement](cloud-only-identities.md).
 
-Si vous avez besoin du modèle d’identité hybride, reportez-vous à la rubrique [Planning for your Synchronized Identities and Authentication Methods](plan-for-directory-synchronization.md).
+Si vous avez besoin du modèle d’identité hybride, consultez la rubrique [synchronisation](plan-for-directory-synchronization.md)d’annuaires.
   
 
 ## <a name="video-training"></a>Vidéo de formation

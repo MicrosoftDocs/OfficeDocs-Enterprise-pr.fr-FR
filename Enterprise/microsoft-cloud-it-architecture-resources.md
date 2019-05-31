@@ -16,12 +16,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: "Résumé : apprenez les concepts de base de l’architecture cloud pour l’identité, la sécurité, la mise en réseau et l’hybridation Microsoft. Passez en revue les recommandations normatives pour la protection des fichiers, des identités et des appareils lors de l'utilisation du cloud de Microsoft. Apprenez à déployer un poste de travail moderne et sécurisé avec Windows 10 et Office ProPlus."
-ms.openlocfilehash: ca62612dd76b3ada07dba0e58f92f36e2bf8e1cd
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: dfb6df46faacf6623a90ac5a4cf95d9512c31289
+ms.sourcegitcommit: baf2ace701fa338b12222b6fb08658fd583c40d2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070300"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34539324"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Ressources relatives à l’architecture informatique du cloud Microsoft
 
@@ -38,6 +38,7 @@ Ces affiches et outils relatifs à l’architecture fournissent des informations
     - [La mise en réseau dans le cloud Microsoft pour les architectes d’entreprise](microsoft-cloud-it-architecture-resources.md#networking)
     - [L’hybridation dans le cloud Microsoft pour les architectes d’entreprise](microsoft-cloud-it-architecture-resources.md#hybrid)
     - [Les attaques courantes et les fonctionnalités Microsoft pour protéger votre organisation](#common-attacks-and-microsoft-capabilities-that-protect-your-organization)
+    - [Infrastructure de base de Microsoft 365 Entreprise](#m365foundationinfra)
     
 - **[Série de solutions Microsoft 365 Entreprise](microsoft-cloud-it-architecture-resources.md#BKMK_o365solutions)**:
     - [Microsoft Teams et services de productivité connexes dans Microsoft 365 pour les architectes informatique](#microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects)
@@ -49,8 +50,6 @@ Ces affiches et outils relatifs à l’architecture fournissent des informations
     - [Détails sur les solutions téléphoniques Microsoft Telephony](#microsoft-telephony-solutions) 
     - [Le déploiement d’un poste de travail moderne et sécurisé avec Microsoft](microsoft-cloud-it-architecture-resources.md#msd)
     
-
-  
 Faites-nous savoir ce que vous en pensez ! Écrivez-nous à l’adresse [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com). 
 
 <!--
@@ -125,6 +124,15 @@ Découvrez les cyberattaques les plus courantes et comment Microsoft peut aider 
 |**Élément**|**Description**|
 |:-----|:-----|
 |[![Image miniature de l’affiche Attaques courantes.](media/common%20attacks-thumb3.png) ](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) <br/> | Cette affiche illustre le chemin des attaques courantes et décrit les fonctionnalités qui aident à arrêter les pirates à chaque étape d’une attaque. <br/>|
+
+<a name="m365foundationinfra"></a>
+### <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Infrastructure de base de Microsoft 365 Entreprise
+
+Obtenez un aperçu rapide de [l'infrastructure de base](https://docs.microsoft.com/microsoft-365/enterprise/deploy-foundation-infrastructure) pour Microsoft 365 Enterprise pour commencer votre déploiement.
+  
+|**Item**|**Description**|
+|:-----|:-----|
+|[![Image miniature de l’affiche de l’Infrastructure de base de Microsoft 365 Entreprise](media/Microsoft365EnterpriseFoundInfra-thumb.png)](http://aka.ms/m365efoundinfraposter) <br/> [Consulter en ligne](http://aka.ms/m365efoundinfraposter) \| [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf) <br/> | Cette affiche synthétise chaque phase de l’infrastructure de base en termes des objectifs, des fonctionnalités et des outils, des décisions de conception, des résultats de configuration, de l’intégration et du suivi et de la mise à jour en continu. <br/>| 
 
 
 <!--<a name="santa"></a>

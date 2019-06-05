@@ -3,7 +3,7 @@ title: Planifier votre mise à niveau à partir de serveurs et clients Office 20
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/12/2019
+ms.date: 06/04/2019
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -13,16 +13,16 @@ search.appverid:
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Si vous utilisez Office 2007 ou Office 2010, il est temps de planifier votre mise à niveau. Ne vous êtes pas bloqué avec des applications obsolètes. Utilisez ces ressources pour commencer votre plan.
-ms.openlocfilehash: 0ef77765b2f75bc0c8680c5fb93167ad1a32983a
-ms.sourcegitcommit: baf2ace701fa338b12222b6fb08658fd583c40d2
+ms.openlocfilehash: 1867661c158667a6da6108380841f8d9d692ba15
+ms.sourcegitcommit: 346fde563ad598598a9832f8a0a6f7cc0a802306
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34539276"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34704105"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planification de la mise à niveau à partir de serveurs et clients Office 2007 ou Office 2010
 
-Si votre organisation utilise des versions antérieures des produits et serveurs Office, il est très utile de commencer à planifier votre mise à niveau. Les produits et services Office 2007 ont atteint leur fin de support, et les produits et services Office 2010 atteindront leur fin d’assistance le **13 octobre 2020**. Utilisez les ressources de cette section pour commencer.
+Si votre organisation utilise des versions antérieures des produits et serveurs Office, il est très utile de commencer à planifier votre mise à niveau. Les produits et services Office 2007 ont atteint leur fin de prise en charge. Exchange 2010 atteindra sa fin de prise en charge le **14 janvier 2020**. Les autres produits et services Office 2010 atteindront leur fin d’assistance le **13 octobre 2020**. Utilisez les ressources de cette section pour commencer.
 
 - [Mise à niveau à partir des serveurs et clients Office 2007](upgrade-from-office-2007-servers-and-products.md)
 
@@ -71,8 +71,8 @@ Si vous utilisez Office 2007 ou Office 2010 à la maison, envisagez les options 
 - **Essayez Office 365 pour les particuliers**. Passez en revue les [conditions requises](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm?rtc=1&activetab=pivot:techspecstab), puis choisissez entre [Office 365 famille](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm) ou [Office 365 personnel](https://www.microsoft.com/p/office-365-personal/cfq7ttc0k5bf). Démarrez une version d’évaluation et découvrez comment Office 365 fonctionne pour vous. Avec Office 365, vous apprécierez de stocker le stockage dans le Cloud avec OneDrive, vous obtiendrez 60 minutes d’appels Skype vers des numéros de téléphone mobiles et fixes chaque mois, et vous bénéficierez de nombreuses autres fonctionnalités intéressantes. Pour en savoir plus, consultez [la rubrique tirer le meilleur parti d’Office avec office 365](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab%3aprimaryr1).
     
 - **Acheter Office famille &amp; Student**. Si vous choisissez cette option, vous allez acheter un achat unique, puis installer Office sur votre PC ou Mac Windows. Il ne s’agit pas d’un abonnement; Il s’agit d’une licence d’utilisation perpétuelle ponctuelle pour un ordinateur. Affichez les [conditions requises](http://office.com/systemrequirements), puis choisissez la version que vous souhaitez utiliser.
-    - Si votre PC Windows exécute Windows 10, vous pouvez envisager d’obtenir [Office Home _AMP_ student 2019](https://www.microsoft.com/p/office-home-student-2019/cfq7ttc0k7c8).
-    - Si votre PC Windows exécute Windows 7, 8 ou 8,1 et que vous ne procédez pas à la mise à niveau vers Windows 10 pour le moment, vous pouvez envisager d’obtenir Office Home & Student 2016 (ou une autre édition de Microsoft Office) auprès d’un revendeur agréé.
+    - Si votre PC Windows exécute Windows 10, vous pouvez envisager d’obtenir [Office Home & student 2019](https://www.microsoft.com/p/office-home-student-2019/cfq7ttc0k7c8).
+    - Si votre PC Windows exécute Windows 7, 8 ou 8,1 et que vous ne procédez pas à la mise à niveau vers Windows 10 pour le moment, vous pouvez envisager d’obtenir Office famille & étudiant 2016 (ou une autre édition de Microsoft Office) auprès d’un revendeur agréé.
 
 Vous pouvez également choisir de ne pas effectuer la mise à niveau pour le moment. Vos applications Office continueront à s’exécuter. (Les chronologies des dates de support Office sont disponibles [ici](https://go.microsoft.com/fwlink/p/?linkid=2085724).) Toutefois, la mise à niveau vous permettra d’accéder à des fonctionnalités nouvelles et améliorées, notamment des mises à jour de sécurité. 
    

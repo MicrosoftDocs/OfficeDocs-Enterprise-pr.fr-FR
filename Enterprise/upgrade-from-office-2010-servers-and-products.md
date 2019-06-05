@@ -3,7 +3,7 @@ title: Ressources pour vous aider à effectuer une mise à niveau à partir de s
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/28/2019
+ms.date: 06/03/2019
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -21,16 +21,20 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: La prise en charge se termine bientôt pour les serveurs et les applications clientes Office 2010, et les accords de support personnalisés ne sont pas disponibles. Utilisez cet article pour commencer à planifier votre mise à niveau maintenant.
-ms.openlocfilehash: 11bd2e7acf5c35a427b2acd04fd37605615b42ed
-ms.sourcegitcommit: baf2ace701fa338b12222b6fb08658fd583c40d2
+ms.openlocfilehash: de5c3f8d3e8cc86a2b53d175725e21f764f20df7
+ms.sourcegitcommit: 346fde563ad598598a9832f8a0a6f7cc0a802306
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34539210"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34704084"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Ressources pour vous aider à effectuer une mise à niveau à partir de serveurs et clients Office 2010
 
-Si vous utilisez les produits et services Office 2010, vous savez probablement que les produits et services Office 2010 atteindront leur expiration le **13 octobre 2020**. Pendant que vous planifiez votre mise à niveau, il est très utile de passer à Office 365. Office 365 propose des services en nuage pour les produits serveur Office 2010, tels qu’Exchange Server et SharePoint Server, ainsi que de nouveaux services tels que teams et OneDrive entreprise. Office 365 ProPlus est l’application cliente Office 2010 que vous installez sur votre appareil local et est mise à jour avec de nouvelles fonctionnalités de productivité et de sécurité sur une base ongoign à partir du Cloud Microsoft. Office 365 ProPlus est inclus dans Office 365 E3 et E5.
+Exchange 2010 atteindra sa fin de prise en charge le **14 janvier 2020**. Les autres produits et services Office 2010 atteindront leur fin d’assistance le **13 octobre 2020**. Pendant que vous planifiez votre mise à niveau, il est très utile de passer à Office 365. 
+
+Office 365 propose des services en nuage pour les produits serveur Office 2010, tels qu’Exchange Server et SharePoint Server, ainsi que de nouveaux services tels que teams et OneDrive entreprise. 
+
+Office 365 ProPlus, inclus dans Office 365 E3 et E5, est l’ensemble des applications clientes Office que vous installez sur votre appareil local. Elles sont mises à jour avec de nouvelles fonctionnalités de productivité et de sécurité en continu à partir du Cloud Microsoft.
 
 Utilisez cet article comme point de départ pour vérifier vos options.
       

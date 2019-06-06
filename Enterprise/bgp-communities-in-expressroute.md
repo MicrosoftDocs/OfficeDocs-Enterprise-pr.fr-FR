@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099
 description: 'La connexion à Office 365 à l’aide d’Azure ExpressRoute repose sur des publicités BGP de sous-réseaux IP spécifiques qui représentent des réseaux sur lesquels les points de terminaison Office 365 sont déployés. En raison de la nature internationale d’Office 365 et du nombre de services qui constituent Office 365, les clients ont souvent besoin de gérer les publicités qu’ils acceptent sur leur réseau. Réduction du nombre de sous-réseaux IP; appelés préfixes IP tout au long de cet article, pour s’aligner sur la terminologie de gestion de réseau BGP, il répond aux objectifs finaux suivants pour les clients:'
-ms.openlocfilehash: 2cce550aa4c14eb0de9daa6eac85cde6d1754add
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 57b957d151bf49d67577ebd0d75f3a87e102d904
+ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068180"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34722573"
 ---
 # <a name="using-bgp-communities-in-expressroute-for-office-365-scenarios"></a>Utilisation des communautés BGP dans ExpressRoute pour les scénarios Office 365
 
@@ -103,7 +103,7 @@ Voici un petit lien que vous pouvez utiliser pour revenir: [https://aka.ms/bgpex
   
 ## <a name="related-topics"></a>Rubriques connexes
 
-[Connectivité réseau à Office 365](network-connectivity.md)
+[Évaluation de la connectivité réseau Office 365](assessing-network-connectivity.md)
   
 [Azure ExpressRoute pour Office 365](azure-expressroute.md)
   

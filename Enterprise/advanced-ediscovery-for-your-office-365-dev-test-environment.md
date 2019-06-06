@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: 'Résumé : Configurez et faites une démonstration d’Office 365 Advanced eDiscovery avec des données d’échantillon dans votre environnement de développement/test Office 365.'
-ms.openlocfilehash: dc783672f8f667e424ad738d8eb9091732537ebe
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: 5f96f25f0ba953e45d6ab89d933f97c2c557a4e8
+ms.sourcegitcommit: 6eb8a32c6899a884cb1c760cbfc134f427c8b6c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162407"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34726230"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Advanced eDiscovery pour votre environnement de développement/test Office 365
 
@@ -95,11 +95,11 @@ Dans cette procédure, vous créez deux documents Word que vous analyserez plus 
     
 3. Dans l’onglet **Collection de sites de production**, sous **Documents**, cliquez sur **Nouveau > Document Word**.
     
-4. Sur la page **Word Online**, saisissez **Brouillon de contrat Tailspin**, patientez jusqu’à ce que le titre affiche **Enregistré**, puis fermez l’onglet de la page **Word Online**.
+4. Sur la page **Word** , tapez **contrat de brouillon Tailspin**, patientez jusqu’à ce que le titre affiche **enregistré** , puis fermez l’onglet page de **Word** .
     
 5. Dans l’onglet **Collection de sites de production**, sous **Documents**, cliquez sur **Nouveau > Document Word**.
     
-6. 	Dans l’onglet **Word Online**, saisissez **Notes sur le litige lié au contrat Tailspin**, patientez jusqu’à ce que le titre affiche **Enregistré**, puis fermez l’onglet **Word Online**.
+6. Dans l’onglet **Word** , saisissez **notes de litige de contrat Tailspin**, patientez jusqu’à ce que le titre affiche **enregistré** , puis fermez l’onglet **Word** .
     
 7. Dans l’onglet **Collection de sites de production**, Vous devriez voir **Document** et **Document1** dans la liste de documents.
     
@@ -139,7 +139,7 @@ Dans cette procédure, vous créez une recherche dans le centre &amp; de sécuri
     
 11. Dans la fenêtre **Groupe de rôles**, cliquez sur **Enregistrer**.
     
-12. Dans le volet de navigation de gauche, cliquez sur Search **Search &amp; > content Search**.
+12. Dans le volet de navigation de gauche, cliquez sur ** &amp; recherche > recherche de contenu**.
     
 13. Cliquez sur l’icône plus pour ajouter une recherche.
     

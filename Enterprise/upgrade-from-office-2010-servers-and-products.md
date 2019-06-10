@@ -21,16 +21,16 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: La prise en charge se termine bientôt pour les serveurs et les applications clientes Office 2010, et les accords de support personnalisés ne sont pas disponibles. Utilisez cet article pour commencer à planifier votre mise à niveau maintenant.
-ms.openlocfilehash: de5c3f8d3e8cc86a2b53d175725e21f764f20df7
-ms.sourcegitcommit: 346fde563ad598598a9832f8a0a6f7cc0a802306
+ms.openlocfilehash: 4c0c5101a7d1dbd068fe4bbbd03eb1bdd41b3b05
+ms.sourcegitcommit: c9922eda48f5f533e828ba4cd23adecbfc32223d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34704084"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34780863"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Ressources pour vous aider à effectuer une mise à niveau à partir de serveurs et clients Office 2010
 
-Exchange 2010 atteindra sa fin de prise en charge le **14 janvier 2020**. Les autres produits et services Office 2010 atteindront leur fin d’assistance le **13 octobre 2020**. Pendant que vous planifiez votre mise à niveau, il est très utile de passer à Office 365. 
+Exchange Server 2010 atteindra sa fin de prise en charge le **14 janvier 2020**. Office 2010, SharePoint 2010 et Project Server 2010 atteindront leur fin de support le **13 octobre 2020**. Pendant que vous planifiez votre mise à niveau, il est très utile de passer à Office 365. 
 
 Office 365 propose des services en nuage pour les produits serveur Office 2010, tels qu’Exchange Server et SharePoint Server, ainsi que de nouveaux services tels que teams et OneDrive entreprise. 
 

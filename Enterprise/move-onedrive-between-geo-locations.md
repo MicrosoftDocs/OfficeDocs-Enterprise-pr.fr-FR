@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Découvrez comment déplacer un site OneDrive vers un autre emplacement géographique.
-ms.openlocfilehash: 3315c14debf14c6876e2da90a2ade10ca8a7499a
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 352e8317a3f62e23c4dc0faed4cb412707f525d8
+ms.sourcegitcommit: 921545ad533001a7ab055d3e6b19bfc8869df286
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070130"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34814716"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Déplacer un site OneDrive vers un autre emplacement géographique 
 
@@ -88,9 +88,6 @@ Pour démarrer le déplacement, exécutez :
 -   _UserPrincipalName_ : UPN de l’utilisateur dont le site OneDrive est déplacé.
 
 -   _DestinationDataLocation_ : emplacement géographique dans lequel le site OneDrive doit être déplacé. Il doit être identique à l’emplacement des données par défaut de l’utilisateur.
-
-> [!NOTE]
-> Nous vous recommandons d’exécuter `Get-SPOGeoMoveStateCompatibility` avec `ValidationOnly` avant de lancer le déplacement géographique du site OneDrive.
 
 Par exemple, pour déplacer le site OneDrive de matt@contosoenergy.onmicrosoft.com de l’emplacement EUR à AUS, exécutez :
 

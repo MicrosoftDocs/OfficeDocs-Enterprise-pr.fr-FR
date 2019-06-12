@@ -3,7 +3,7 @@ title: Points de terminaison supplémentaires non inclus dans le service web po
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/05/2019
+ms.date: 06/11/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Résumé : Le nouveau service web de point de terminaison n’inclut pas certains points de terminaison pour des scénarios spécifiques.'
 hideEdit: true
-ms.openlocfilehash: 05bb48efef57785b75d302fd12294b7fb7062862
-ms.sourcegitcommit: 6eb8a32c6899a884cb1c760cbfc134f427c8b6c4
+ms.openlocfilehash: 01d0acfd832df47dd5cabd95b7b8137dd76ab049
+ms.sourcegitcommit: 37c29ded24f999fc5f41f5aae284238b25eb83f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34726240"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857357"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Points de terminaison supplémentaires non inclus dans le service web pour URL et adresses IP Office 365
 
@@ -61,7 +61,9 @@ Certains points de terminaison réseau ont été publiés précédemment et n’
 | 15  |  **Noms de domaine complets Microsoft Teams** <br> Si vous utilisez Internet Explorer ou Microsoft Edge, vous devez activer les cookies propriétaires et tiers, et ajouter les noms de domaine complets des équipes à vos sites de confiance. Cela s’ajoute aux noms de domaine complets, aux CDN et à la télémétrie répertoriés à la ligne 14. Reportez-vous à la rubrique [Problèmes connus pour Microsoft Teams](https://docs.microsoft.com/microsoftteams/known-issues) pour plus d’informations. |  | Sites de confiance |
 | 16  |  **Noms de domaine complets Sharepoint Online et OneDrive Entreprise** <br> Tous les noms de domaine complets « .sharepoint.com » comportant « \<tenant> » doivent se trouver dans la zone de sites Internet Explorer ou Edge de confiance de votre client pour fonctionner. Outre les noms de domaine complets, les CDN et la télémétrie répertoriés à la ligne 14, vous devrez également ajouter ces points de terminaison. |  | Sites de confiance |
 | 17  | **Yammer**  <br> Yammer est uniquement disponible dans le navigateur et nécessite que l’utilisateur soit authentifié via un proxy. Tous les FQDN Yammer doivent se trouver dans la zone de sites Internet Explorer ou Edge de confiance de votre client pour fonctionner. |  | Sites de confiance |
-| 18  | Utilisez [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/) pour synchroniser les comptes d’utilisateurs locaux avec Azure AD. | Consultez [Ports et protocoles nécessaires pour l’identité hybride](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports), [Résoudre les problèmes de connectivité Azure AD](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity) et [Installation de l'agent Azure AD Connect Health](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install#outbound-connectivity-to-the-azure-service-endpoints). | Trafic serveur sortant uniquement |
+| 18  | Utilisez [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/) pour synchroniser les comptes d’utilisateurs locaux avec Azure AD. | Consultez [Ports et protocoles nécessaires pour l’identité hybride](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports), [Résoudre les problèmes de connectivité Azure AD](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity) et [Installation de l’agent Azure AD Connect Health](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install#outbound-connectivity-to-the-azure-service-endpoints). | Trafic serveur sortant uniquement |
+| 19  | Microsoft Stream (nécessite le jeton utilisateur Azure AD) <BR> Office 365 dans le monde (notamment GCC) | *.cloudapp.net <BR> *.api.microsoftstream.com <BR> *.notification.api.microsoftstream.com <BR> amp.azure.net <BR> api.microsoftstream.com <BR> az416426.vo.msecnd.net <BR> s0.assets-yammer.com <BR> vortex.data.microsoft.com <BR> web.microsoftstream.com <BR> Port TCP 443.  | Trafic serveur entrant |
+|||||
 
 ## <a name="related-topics"></a>Rubriques connexes
 

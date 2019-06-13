@@ -16,12 +16,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: Les fins de prise en charge de Project Server 2010 se terminent le 13 octobre 2020. Utilisez cet article pour effectuer une mise à niveau vers Project Online ou une version plus récente de Project Server en local.
-ms.openlocfilehash: 277c41b96afa3b2424b0943427eff6a0a1f6dc1c
-ms.sourcegitcommit: 346fde563ad598598a9832f8a0a6f7cc0a802306
+ms.openlocfilehash: 8cdfc4a8362df65ca238b9478061dc8e9bda1166
+ms.sourcegitcommit: c9922eda48f5f533e828ba4cd23adecbfc32223d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34704115"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34780873"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Feuille de route de prise en charge de Project Server 2010
 

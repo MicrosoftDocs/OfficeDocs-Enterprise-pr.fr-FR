@@ -3,7 +3,7 @@ title: Utilisation du réseau de distribution de contenu Office 365 avec ShareP
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/3/2019
+ms.date: 5/14/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,16 +15,21 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Décrit l’utilisation du réseau de distribution de contenu (CDN) d’Office 365 pour accélérer la remise de vos ressources SharePoint Online à tous vos utilisateurs, où qu’ils soient ou dans lesquels ils accèdent à votre contenu.
-ms.openlocfilehash: de8c02b44405260aa7379ab0a881ba72f73c7a6b
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 7ca9283348bda666b2de8c0ae07896164f40d240
+ms.sourcegitcommit: 99bf8739dfe1842c71154ed9548ebdd013c7e59e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070630"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35017314"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Utilisation du réseau de distribution de contenu Office 365 avec SharePoint Online
 
 Vous pouvez utiliser le réseau de distribution de contenu Office 365 intégré pour héberger des ressources statiques afin d’améliorer les performances de vos pages SharePoint Online. Le réseau de distribution de contenu Office 365 améliore les performances en procédant à la mise en cache des ressources statiques au plus près des navigateurs qui les demandent, ce qui permet d’accélérer les téléchargements et de réduire la latence. Par ailleurs, le CDN Office 365 utilise le [protocole http/2](https://en.wikipedia.org/wiki/HTTP/2) pour une compression améliorée et un traitement en pipeline http. Le réseau de distribution de contenu Office 365 est inclus dans votre abonnement SharePoint Online.
+
+> [!NOTE]
+> Restrictions d’utilisation du CDN Office 365:
+> + Le CDN Office 365 est uniquement disponible pour les clients dans le Cloud de **production** (dans le monde entier). Les clients des nuages des États-Unis, de Chine et d’Allemagne ne prennent actuellement pas en charge le CDN Office 365.
+> + Le CDN Office 365 ne prend actuellement pas en charge les clients configurés avec des domaines personnalisés ou «personnel». Si vous avez ajouté un domaine à votre client à l’aide des instructions de la rubrique [Add a Domain to Office 365](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain?view=o365-worldwide), le CDN Office 365 renverra des erreurs lorsque vous tenterez d’accéder au contenu à partir du CDN.
 
 Le réseau de distribution de contenu Office 365 est composé de plusieurs réseaux de distribution de contenu qui vous permettent d’héberger des ressources statiques à différents emplacements (ou _origines_) et de les servir à partir de réseaux à haut débit mondiaux. Selon le type de contenu que vous souhaitez héberger sur le réseau de distribution de contenu Office 365, vous pouvez ajouter des origines **publiques**, **privées** ou les deux. Voir [choisir si chaque origine doit être publique ou privée](use-office-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate) pour plus d’informations sur la différence entre les origines publiques et privées.
 
@@ -308,7 +313,17 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 Cet exemple ajoute une origine privée du dossier _dossier1_ dans la bibliothèque de sites de la collection de sites:
 
 ``` powershell
-Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl “/sites/test/siteassets/folder1”
+Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/test/siteassets/folder1
+```
+
+S’il y a un espace dans le chemin d’accès, vous pouvez placer le chemin d’accès entre guillemets ou remplacer l’espace par le codage d’URL% 20. Les exemples suivants ajoutent une origine privée du dossier _Folder 1_ dans la bibliothèque de sites de la collection de sites:
+
+``` powershell
+Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/test/siteassets/folder%201
+```
+
+``` powershell
+Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder 1"
 ```
 
 Pour plus d’informations sur cette commande et sa syntaxe, voir [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).
@@ -598,7 +613,7 @@ Le diagramme suivant illustre le flux de travail lorsque SharePoint reçoit une 
 ![Diagramme de flux de travail: récupération des composants de CDN Office 365 à partir d’une origine publique] (media/O365-CDN/o365-cdn-public-steps-transparent.svg "Flux de travail: extraction des ressources CDN Office 365 d’une origine publique")
 
 > [!TIP]
-> Si vous souhaitez désactiver la réécriture automatique pour des URL spécifiques sur une page, vous pouvez extraire la page et ajouter le paramètre de chaîne de requête **?NoAutoReWrites = true** à la fin de chaque lien que vous souhaitez désactiver.
+> Si vous souhaitez désactiver la réécriture automatique pour des URL spécifiques sur une page, vous pouvez extraire la page et ajouter le paramètre de chaîne de requête. ** NoAutoReWrites = true** jusqu’à la fin de chaque lien que vous souhaitez désactiver.
 
 #### <a name="hardcoding-cdn-urls-for-public-assets"></a>URL de CDN en dur pour les ressources publiques
 
@@ -633,7 +648,7 @@ Le diagramme suivant illustre le flux de travail lorsque SharePoint reçoit une 
 
 L’accès aux biens dans les origines privées dans le CDN Office 365 est accordé par des jetons générés par SharePoint Online. Les utilisateurs qui ont déjà l’autorisation d’accéder au dossier ou à la bibliothèque désigné par l’origine reçoivent automatiquement des jetons qui permettent à l’utilisateur d’accéder au fichier en fonction de son niveau d’autorisation. Ces jetons d’accès sont valides entre 30 et 90 minutes après leur génération afin d’empêcher les attaques par relecture de jetons.
 
-Une fois que le jeton d’accès est généré, SharePoint Online renvoie un URI personnalisé vers le client contenant deux paramètres d’autorisation _manger_ (jeton d’autorisation Edge) et _avoine_ (jeton d’autorisation d’origine). La structure de chaque jeton est _<'expiration temps de Format'>__<'secure signature'>_. Par exemple :
+Une fois que le jeton d’accès est généré, SharePoint Online renvoie un URI personnalisé vers le client contenant deux paramètres d’autorisation _manger_ (jeton d’autorisation Edge) et _avoine_ (jeton d’autorisation d’origine). La structure de chaque jeton est _< «heure d’expiration au format de l’heure de l’époque» >__< «signature sécurisée» >_. Par exemple :
 
 ``` html
 https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg?eat=1486154359_cc59042c5c55c90b26a2775323c7c8112718431228fe84d568a3795a63912840&oat=1486154359_7d73c2e3ba4b7b1f97242332900616db0d4ffb04312

@@ -50,7 +50,7 @@
 ## Authentification moderne hybride
 ### [Éléments prérequis pour la migration de Skype Entreprise Server et Exchange Server](hybrid-modern-auth-overview.md)
 ### [Configurer Exchange Server](configure-exchange-server-for-hybrid-modern-authentication.md)
-### [Configurer Skype Entreprise](https://docs.microsoft.com/skypeforbusiness/manage/authentication/use-adal)
+### [Configurer Skype Entreprise](configure-skype-for-business-for-hybrid-modern-authentication.md)
 ### [Supprimer ou désactiver Skype Entreprise et Exchange](remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md)
 
 ## Serveurs et clients Office

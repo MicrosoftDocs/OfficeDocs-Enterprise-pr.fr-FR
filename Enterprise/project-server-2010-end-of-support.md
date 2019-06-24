@@ -16,12 +16,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: Les fins de prise en charge de Project Server 2010 se terminent le 13 octobre 2020. Utilisez cet article pour effectuer une mise à niveau vers Project Online ou une version plus récente de Project Server en local.
-ms.openlocfilehash: 8cdfc4a8362df65ca238b9478061dc8e9bda1166
-ms.sourcegitcommit: c9922eda48f5f533e828ba4cd23adecbfc32223d
+ms.openlocfilehash: 86ab1534058d49094327c326d8367a08c14d725b
+ms.sourcegitcommit: c763b0f28e1ce498aef5d5deb3b6324288da85ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34780873"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "35128701"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Feuille de route de prise en charge de Project Server 2010
 
@@ -186,10 +186,6 @@ Les [éléments que vous devez connaître à propos de la mise à niveau de Proj
 
 - Après la mise à niveau, vous devez tenir compte de plusieurs modifications apportées dans Project Web App.  Pour obtenir une description de ces éléments, voir [what’s New in Project Server 2019](https://docs.microsoft.com/en-us/project/what-s-new-for-it-pros-in-project-server-2019#PWAChanges).
 
-
-## <a name="migrate-from-portfolio-server-2010"></a>Migrer à partir du serveur de portefeuille 2010
-
-Project Portfolio Server 2010 a été utilisé avec Project Server 2010 pour la stratégie de portefeuille, la définition des priorités et l’optimisation. Aucune version supplémentaire de Project Portfolio Server n’a été créée après cette version. Toutefois, les fonctionnalités de gestion de portefeuilles sont disponibles dans les versions ultérieures de Project Server et dans la version Premium de Project online. Les données de Project Portfolio Server 2010 ne peuvent pas être migrées vers. Les données telles que les axes stratégiques doivent être recréées.
   
 Autres ressources:
   

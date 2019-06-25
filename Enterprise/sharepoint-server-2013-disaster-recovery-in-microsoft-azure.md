@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: "Résumé : À l'aide d'Azure, vous pouvez créer un environnement de récupération d'urgence pour votre batterie de serveurs SharePoint locale. Cet article décrit comment concevoir et implémenter cette solution."
-ms.openlocfilehash: a302f86e97cd7b61236a92f51a043258882991f7
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 907b2d56150ea6c8a540f1be88f325919917f6fe
+ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070440"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35203643"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Récupération d’urgence SharePoint Server 2013 dans Microsoft Azure
 
@@ -36,34 +36,6 @@ Utilisez cet article avec le modèle de solution suivant : **Récupération d'ur
   
  [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555) |  [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)
   
-Contenu de cet article :
-  
-- [Utilisation des services d'infrastructure Azure pour la récupération d'urgence](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#AZ)
-    
-- [Description de la solution](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#SOL)
-    
-- [Architecture détaillée](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#arch)
-    
-- [Feuille de route de récupération d'urgence](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#RDmap)
-    
-- [Étape 1 : Conception de l'environnement de récupération d'urgence](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase1)
-    
-- [Étape 2 : Création du réseau virtuel Azure et de la connexion VPN](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase2)
-    
-- [Étape 3 : Déploiement d'Active Directory et des services de nom de domaine sur le réseau Azure Virtual Network.](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase3)
-    
-- [Étape 4 : Déploiement de la batterie de serveurs de récupération SharePoint dans Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase4)
-    
-- [Étape 5 : Configuration de DFSR entre les batteries de serveurs](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase5)
-    
-- [Étape 6 : Configuration de la copie des journaux de transaction vers la batterie de récupération](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase6)
-    
-- [Étape 7 : Validation du basculement et de la récupération](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase7)
-    
-- [Environnement de preuve de concept Microsoft](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#POC)
-    
-- [Conseils de dépannage](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Troubleshooting)
-    
 ## <a name="use-azure-infrastructure-services-for-disaster-recovery"></a>Utilisation des services d’infrastructure Azure pour la récupération d’urgence
 
 De nombreuses organisations n'ont pas d'environnement de récupération d'urgence pour SharePoint, dont la création et la gestion locales peuvent s'avérer coûteuses. La solution Services d'infrastructure Azure propose des options intéressantes d'environnements de récupération d'urgence plus flexibles et moins chères que les solutions locales.

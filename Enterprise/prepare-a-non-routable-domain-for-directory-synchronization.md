@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: Pour savoir comment procéder, si vous avez un domaine non-routale associé à vos utilisateurs locaux avant de procéder à une synchronisation avec Office 365.
-ms.openlocfilehash: 15ab67212ec1ea6ca7665bb5a4b0748f7d85adb5
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: cf7b901c3aaf6f49e4ecd92d27b9a6d9b8951d40
+ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071080"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35203633"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>Préparation d’un domaine non routable pour la synchronisation d’annuaires
 Lorsque vous synchronisez votre annuaire local avec Office 365, vous devez disposer d’un domaine vérifié dans Azure Active Directory. Seuls les noms d’utilisateur principal (UPN) associés au domaine local sont synchronisés. Toutefois, tout nom UPN contenant un domaine non routable, par exemple. local (par exemple, Billa @ contoso. local), sera synchronisé avec un domaine. onmicrosoft.com (comme billa@contoso.onmicrosoft.com). 
@@ -40,7 +40,7 @@ Azure AD Connect synchronise le nom d’utilisateur et le mot de passe de vos ut
   
 ### <a name="change-your-primary-domain"></a>**Modifier votre domaine principal**
 
-Modifiez votre domaine principal en un domaine que vous avez vérifié dans Office 365, par exemple, contoso.com. Chaque utilisateur ayant le domaine contoso. local est ensuite mis à jour vers contoso.com. Pour obtenir des instructions, consultez [la rubrique How Domain Rename Works](https://go.microsoft.com/fwlink/p/?LinkId=624174). Il s’agit d’un processus très important, mais il est plus facile d' [Ajouter des suffixES UPN et de mettre à jour vos utilisateurs vers eux](prepare-a-non-routable-domain-for-directory-synchronization.md#bk_register), comme illustré dans la section suivante.
+Modifiez votre domaine principal en un domaine que vous avez vérifié dans Office 365, par exemple, contoso.com. Chaque utilisateur ayant le domaine contoso. local est ensuite mis à jour vers contoso.com. Pour obtenir des instructions, consultez [la rubrique How Domain Rename Works](https://go.microsoft.com/fwlink/p/?LinkId=624174). Il s’agit d’un processus très important, mais une solution plus facile est décrite dans la section suivante.
   
 ### <a name="add-upn-suffixes-and-update-your-users-to-them"></a>**Ajouter des suffixes UPN et mettre à jour vos utilisateurs vers eux**
 
@@ -84,8 +84,7 @@ Une fois que vous avez mis à jour l’UPN pour utiliser le domaine vérifié, v
   
 4. Effectuez ces étapes pour chaque utilisateur.
     
-    Vous pouvez également mettre à jour en bloc les suffixes UPN [vous pouvez également utiliser Windows PowerShell pour modifier le suffixe UPN pour tous les utilisateurs](prepare-a-non-routable-domain-for-directory-synchronization.md#BK_Posh).
-    
+   
 ### <a name="you-can-also-use-windows-powershell-to-change-the-upn-suffix-for-all-users"></a>**Vous pouvez également utiliser Windows PowerShell pour modifier le suffixe UPN pour tous les utilisateurs**
 
 Si vous avez un grand nombre d’utilisateurs à mettre à jour, il est plus facile d’utiliser Windows PowerShell. L’exemple suivant utilise les cmdlets [Get-ADUser](https://go.microsoft.com/fwlink/p/?LinkId=624312) et [Set-ADUser](https://go.microsoft.com/fwlink/p/?LinkId=624313) pour remplacer tous les suffixes contoso. local par contoso.com. 

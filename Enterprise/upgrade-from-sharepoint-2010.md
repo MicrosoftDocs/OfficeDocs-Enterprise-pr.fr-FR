@@ -15,16 +15,16 @@ search.appverid:
 - OSU140
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 description: Les extrémités de la prise en charge pour SharePoint 2010 et SharePoint Server 2010 se terminent le 13 octobre 2020. Utilisez cet article pour effectuer une mise à niveau vers SharePoint Online ou une version plus récente de SharePoint Server en local.
-ms.openlocfilehash: 58e642a0a38dac1d140487716ab3e46b6fafd53f
-ms.sourcegitcommit: 346fde563ad598598a9832f8a0a6f7cc0a802306
+ms.openlocfilehash: d2114baf03d19c6be818139a08ed93ff3b64f664
+ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34704155"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35203613"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Mise à niveau à partir de SharePoint 2010
 
-Microsoft SharePoint 2010 et SharePoint Server 2010 vont atteindre la fin de la prise en charge le **13 octobre 2020**. Cet article détaille les ressources pour aider les utilisateurs à migrer leurs données SharePoint Server 2010 existantes vers SharePoint Online, ou à mettre à niveau votre environnement SharePoint Server 2010 sur site.
+Microsoft SharePoint 2010 et SharePoint Server 2010 vont atteindre la fin de la prise en charge le **13 octobre 2020**. Cet article détaille les ressources pour vous aider à migrer vos données SharePoint Server 2010 existantes vers SharePoint Online dans Office 365 ou mettre à niveau votre environnement SharePoint Server 2010 sur site.
   
 ## <a name="what-is-end-of-support"></a>Qu’est-ce que la fin du support?
 
@@ -74,7 +74,7 @@ SharePoint Server 2013 et SharePoint Foundation 2013 peuvent être installés en
     
 - Effectuer les deux opérations ci-dessus
     
-- Implémenter une solution [hybride SharePoint](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx) 
+- Implémenter une solution [hybride SharePoint](https://docs.microsoft.com/sharepoint/hybrid/hybrid) 
     
 N’oubliez pas les coûts cachés associés à la maintenance d’une batterie de serveurs, la maintenance ou la migration des personnalisations, ainsi que la mise à niveau du matériel dont dépend SharePoint Server. Si vous êtes conscient de l’existence de tous ces éléments, il sera plus facile de poursuivre la mise à niveau locale. Dans le cas contraire, si vous exécutez votre batterie de serveurs sur des serveurs SharePoint hérités sans personnalisation élevée, vous pouvez bénéficier d’une migration planifiée vers SharePoint Online. Il est également possible que pour votre environnement SharePoint Server sur site, vous pouvez choisir de placer des données dans SharePoint Online afin de réduire la quantité de gestion matérielle permettant de conserver toutes les données locales. Il peut s’avérer plus économique de déplacer certaines de vos données dans SharePoint Online.
   

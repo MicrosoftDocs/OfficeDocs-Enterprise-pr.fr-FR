@@ -21,12 +21,12 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment fonctionne différemment l’authentification moderne Office 365 pour les applications clientes Office 2013 et 2016.
-ms.openlocfilehash: 80a5f557fc1f3d189e8852ac3039521cfc31fb2c
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 25646c014fc9ff11926c0091209a3419fad811d6
+ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070060"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35203623"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Fonctionnement de l’authentification moderne pour les applications clientes Office 2013 et Office 2016
 
@@ -61,6 +61,7 @@ Cliquez sur les liens ci-dessous pour voir comment l’authentification client O
     
 - [Skype Entreprise Online](modern-auth-for-office-2013-and-2016.md#BK_SFBO)
     
+<a name="BK_EchangeOnline"> </a>
 ### <a name="exchange-online"></a>Exchange Online
 
 Le tableau suivant décrit le comportement d’authentification pour les applications clientes Office 2013 ou Office 2016 lorsqu’elles se connectent à Exchange Online avec ou sans authentification moderne.
@@ -73,8 +74,8 @@ Le tableau suivant décrit le comportement d’authentification pour les applica
 |Office 2013  <br/> |Non  <br/> |Non  <br/> |Authentification de base  <br/> |Authentification de base  <br/> |
 |Office 2013  <br/> |Oui, EnableADAL = 1  <br/> |Oui  <br/> |L’authentification moderne est tentée en premier. Si le serveur refuse une connexion d’authentification moderne, l’authentification de base est alors utilisée. Le serveur refuse l’authentification moderne lorsque le client n’est pas activé.  <br/> |L’authentification moderne est tentée en premier. Si le serveur refuse une connexion d’authentification moderne, l’authentification de base est alors utilisée. Le serveur refuse l’authentification moderne lorsque le client n’est pas activé.  <br/> |
    
-### <a name="sharepoint-online"></a>SharePoint Online
 <a name="BK_SharePointOnline"> </a>
+### <a name="sharepoint-online"></a>SharePoint Online
 
 Le tableau suivant décrit le comportement d’authentification pour les applications clientes Office 2013 ou Office 2016 lorsqu’elles se connectent à SharePoint Online avec ou sans authentification moderne.
   

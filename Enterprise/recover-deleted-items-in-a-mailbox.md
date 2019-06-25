@@ -16,13 +16,14 @@ search.appverid:
 - BCS160
 ms.assetid: eb15194b-63ec-41b0-8d90-1823d3f558e4
 description: 'Cet article est destiné aux administrateurs. Un utilisateur a-t-il supprimé définitivement des éléments de sa boîte aux lettres Outlook? L’utilisateur le souhaite à nouveau, mais ne peut pas les récupérer. Vous pouvez récupérer les éléments purgés s’ils n’ont pas été définitivement supprimés de la boîte aux lettres de l’utilisateur. '
-ms.openlocfilehash: 5ec1ba41924d773859d742bc06bbfe76582072c1
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: d4be48d6166d970572dd1cb343ccd83f22330e12
+ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071210"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35203653"
 ---
+<a name="__top"></a>
 # <a name="recover-deleted-items-in-a-user-mailbox---admin-help"></a>Récupérer des éléments supprimés dans une boîte aux lettres utilisateur - Aide aux administrateurs
 
 **Cet article est destiné aux administrateurs. Essayez-vous de récupérer des éléments supprimés dans votre propre boîte aux lettres?** Effectuez l’une des actions suivantes : 
@@ -230,7 +231,8 @@ La dernière étape à effectuer consiste à envoyer le fichier PST exporté à 
     
 Les étapes de la section suivante sont effectuées par l’utilisateur pour restaurer les éléments supprimés dans leur boîte aux lettres.
   
- **Restaurer des éléments supprimés dans une boîte aux lettres à l’aide d’un fichier PST**
+ <a name="restoredeleteditems"></a>
+**Restaurer des éléments supprimés dans une boîte aux lettres à l’aide d’un fichier PST**
   
 Vous devez utiliser l’application de bureau Outlook pour restaurer un élément supprimé à l’aide d’un fichier PST. Vous ne pouvez pas utiliser Outlook Web App ou Outlook sur le Web pour ouvrir un fichier PST.
   

@@ -3,7 +3,7 @@ title: Gestion des stratégies Skype Entreprise Online avec Office 365 PowerShel
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/01/2019
+ms.date: 06/26/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: "Résumé : Utilisez Office 365 PowerShell pour gérer les propriétés de votre compte d'utilisateur Skype Entreprise Online à l'aide de stratégies."
-ms.openlocfilehash: 853d70a008a3e42c6fa1175a52cadab815a46dfe
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: f19e262947b40b3e61dc8376b8e2e9c8ec984ff7
+ms.sourcegitcommit: c115a3554647167e3770dda6b69dbf5c5de11ed7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068840"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35253684"
 ---
 # <a name="manage-skype-for-business-online-policies-with-office-365-powershell"></a>Gestion des stratégies Skype Entreprise Online avec Office 365 PowerShell
 
@@ -84,15 +84,14 @@ Get-CsOnlineUser -Identity "Alex Darrow" | ForEach {Get-CsExternalAccessPolicy -
 
 Cette commande trouve la stratégie attribuée à l’utilisateur, puis les fonctionnalités activées ou désactivées dans cette stratégie.
   
-Notez qu'il n'existe pas de cmdlet pour la création ou la modification de stratégies. Vous devez utiliser les stratégies pré-fournies par Office 365. Si vous voulez jeter un œil aux différentes stratégies disponibles, vous pouvez utiliser les commandes suivantes :
-  
-- Get-CsClientPolicy       
-- Get-CsConferencingPolicy        
-- Get-CsDialPlan            
-- Get-CsExternalAccessPolicy                         
-- Get-CsHostedVoicemailPolicy                        
-- Get-CsPresencePolicy                               
-- Get-CsVoicePolicy                                  
+Pour gérer les stratégies Skype entreprise Online avec PowerShell, consultez les applets de commande pour:
+
+- [Stratégie du client](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#client-policy-cmdlets)
+- [Stratégie de conférence](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#conferencing-policy-cmdlets)
+- [Stratégie mobile](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#mobile-policy-cmdlets)
+- [Stratégie de messagerie vocale en ligne](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#online-voicemail-policy-cmdlets)
+- [Stratégie de routage des communications vocales](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#voice-routing-policy-cmdlets)
+
 
 > [!NOTE]
 > Un plan de numérotation Skype Entreprise Online ne diffère d'une stratégie que par le nom. Le nom « plan de numérotation » a été préféré à « stratégie de numérotation » (par exemple) afin d'assurer la compatibilité descendante avec Office Communications Server et Exchange. 

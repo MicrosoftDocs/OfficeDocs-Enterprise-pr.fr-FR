@@ -3,7 +3,7 @@ title: Déplacement de données essentielles vers les nouvelles régions de cent
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/15/2019
+ms.date: 06/28/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 description: "Nouveau centre de régions centres ajouter de la capacité et des ressources de calcul pour prendre en charge notre demande de client et sa croissance d’utilisation en cours. En outre, les nouvelles régions de centre de données permettent d'héberger des données dans la région pour les données client essentielles. Le terme « données client essentielles » fait référence à un sous-ensemble de données client définies dans les conditions d'utilisation de Microsoft Online Services : Exchange Onlinecontenu de la boîte aux lettres (corps de courrier électronique, entrées de calendrier et contenu de pièces jointes), SharePoint Onlinecontenu du site et fichiers stockés dans ce site, ainsi que fichiers téléchargés vers OneDrive Entreprise."
-ms.openlocfilehash: 8dd9295618c765bb9eeaffbcec82ff83af8b2e21
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 63b094772fc5e199124251e204b116e74cedec0a
+ms.sourcegitcommit: aca382b615ce79c9f707f74cda6d90fbe87bb626
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069990"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35392344"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Déplacement de données essentielles vers les nouvelles régions de centres de données Office 365
 
@@ -28,7 +28,7 @@ Les données client principales sont un terme qui fait référence à un sous-en
 - Contenu de site SharePoint Online et fichiers stockés dans ce site
 - Fichiers téléchargés vers OneDrive entreprise 
   
-Les clients existants dont les données client essentielles sont stockées dans une région de centre de données existante ne sont pas concernés par le lancement de la nouvelle région de centre de données. Aucune fonction, fonctionnalité ou certification de conformité unique n'est fournie avec la nouvelle région de centre de données. En tant que client de l'une de ces deux régions, vous bénéficierez de la même qualité de service, ainsi que des mêmes performances et contrôles de sécurité qu'auparavant. Les clients existants qui ont des exigences strictes en matière de résidence de données et qui figurent dans la liste ci-dessous ont la possibilité de déplacer leurs données client essentielles vers la nouvelle région.
+Les clients existants dont les données client essentielles sont stockées dans une région de centre de données existante ne sont pas concernés par le lancement de la nouvelle région de centre de données. Aucune fonction, fonctionnalité ou certification de conformité unique n'est fournie avec la nouvelle région de centre de données. En tant que client de l'une de ces deux régions, vous bénéficierez de la même qualité de service, ainsi que des mêmes performances et contrôles de sécurité qu'auparavant. Nous proposons aux clients existants figurant dans le tableau ci-dessous une option permettant de demander une migration précoce des données client principales de leur organisation au repos sur leur nouvelle région de centre de données.
   
 |****Clients avec une adresse de facturation dans****|****Précédente région de centre de données****|****Nouvelle région de centre de données****|****Région disponible depuis****|
 |:-----|:-----|:-----|:-----|
@@ -41,9 +41,6 @@ Les clients existants dont les données client essentielles sont stockées dans 
 |****France****| Europe | France | Mars 2018 |
 |Émirats Arabes Unis * * * *| Europe | Émirats arabes unis | Annoncé |
 |Afrique du Sud * * * *| Europe | Afrique du Sud | Annoncé |
-   
-> [!NOTE]
-> L'option de résidence des données et la disponibilité en matière de déplacement des données client vers la nouvelle région ne correspondent pas à une valeur par défaut pour chaque région créée. À l'avenir, lorsque nous ajouterons de nouvelles régions, nous évaluerons la disponibilité et les conditions de déplacement de données région par région. 
   
 Les données client essentielles des nouveaux clients ou des clients Office 365 créés après la mise à disposition de la nouvelle région de centre de données seront automatiquement stockées au repos dans cette nouvelle région.
   
@@ -51,17 +48,17 @@ La liste complète de l'ensemble des régions de centre de données, des centres
   
 ## <a name="data-residency-option"></a>Option de résidence des données
 
-Nous fournissons une option de résidence des données aux clients Office 365 existants qui font partie des régions de centre de données répertoriées dans le tableau ci-dessus. Grâce à cette option, les clients qui ont des exigences en matière de résidence de données peuvent demander à ce que leurs données client essentielles soient déplacées vers la nouvelle région. Nous recommandons à nos clients de ne prendre aucune mesure, sauf si leur organisation a besoin que les données client essentielles soient stockées au repos dans leur nouvelle région de centre de données respective. S'ils choisissent de déplacer leurs données, les clients limitent les possibilités de Microsoft quant à l'optimisation de l'emplacement des données client essentielles au repos dans la région de centre de données actuelle ou dans la nouvelle. En tant que client de l'une de ces deux régions, vous bénéficierez de la même qualité de service, ainsi que des mêmes performances et contrôles de sécurité qu'auparavant.
-  
-Les clients qui ont besoin de déplacer leurs données principales vers la nouvelle région, avec une date d’échéance engagée par Microsoft Request, pour que leurs données soient déplacées dans une fenêtre d’enregistrement définie.  Consultez l'article [Procédure de demande d'un déplacement de données](request-your-data-move.md) pour obtenir plus de détails concernant la fenêtre d'inscription pour votre région et les étapes à suivre pour s'inscrire au programme.  Les déplacements de données peuvent prendre jusqu'à 24 mois à compter de la fin de la période de demande.
+Nous fournissons une option de résidence des données aux clients Office 365 existants qui font partie des régions de centre de données répertoriées dans le tableau ci-dessus. Avec cette option, les clients ayant des exigences en matière de résidence des données peuvent demander la migration précoce des données client principales de leur organisation au repos sur leur nouvelle région de centre de données.  Microsoft fournira une date d’échéance pour tous les clients éligibles qui demandent une migration précoce lors de la fenêtre d’enregistrement.  Consultez l'article [Procédure de demande d'un déplacement de données](request-your-data-move.md) pour obtenir plus de détails concernant la fenêtre d'inscription pour votre région et les étapes à suivre pour s'inscrire au programme.  Les déplacements de données peuvent prendre jusqu'à 24 mois à compter de la fin de la période de demande.
 
-- Le fait de ne pas faire en sorte que Microsoft puisse déplacer vos données client principales au repos sur votre nouveau Geo de centre de données dans le temps dans le cadre de la gestion et de l’optimisation des services.Vos données Csutomer principales peuvent uniquement être déplacées vers votre nouvelle région de centre de données, pas vers une autre région géographique.Nous avertirons les administrateurs du client via le centre de messages une fois le déplacement de la gestion des services terminé.
+Le fait de ne pas faire en sorte que Microsoft puisse déplacer vos données client principales au repos sur votre nouveau Geo de centre de données dans le temps dans le cadre de la gestion et de l’optimisation des services.Vos données client principales peuvent uniquement être déplacées vers votre nouvelle région de centre de données, pas vers une autre région géographique.Nous avertirons les administrateurs du client via le centre de messages lorsque ce déplacement de gestion de service est terminé et à mettre à jour l’emplacement des données dans le centre d’administration.
    
-- Aucune fonction, fonctionnalité ou certification de conformité unique n'est fournie avec la nouvelle région de centre de données.
+Aucune fonction, fonctionnalité ou certification de conformité unique n'est fournie avec la nouvelle région de centre de données.
     
-- La complexité, la précision et l'échelle en fonction desquelles nous devons effectuer les déplacements de données dans un environnement automatisé et commandé de façon globale ne nous permettent pas d'indiquer la date de fin du déplacement pour votre client ou tout autre client unique. Les clients recevront une confirmation dans le centre de messages pour chaque service concerné une fois que le déplacement des données sera terminé. 
+La complexité, la précision et l'échelle en fonction desquelles nous devons effectuer les déplacements de données dans un environnement automatisé et commandé de façon globale ne nous permettent pas d'indiquer la date de fin du déplacement pour votre client ou tout autre client unique. Les clients recevront une confirmation dans le centre de messages pour chaque service concerné une fois que le déplacement des données sera terminé. 
     
-- Les déplacements de données sont des opérations de service principales qui ont une incidence minime sur les utilisateurs finals. Les fonctionnalités pouvant être concernées sont répertoriées à la page [Pendant et après le déplacement de vos données](during-and-after-your-data-move.md). Nous respectons le [contrat de niveau de service Microsoft Online Services](https://go.microsoft.com/fwlink/p/?LinkId=523897) concernant la disponibilité. Ainsi, les clients n'ont rien à préparer ou à surveiller pendant le déplacement. Si besoin, le client est averti de toute maintenance de service. 
+Les déplacements de données sont des opérations de service principales qui ont une incidence minime sur les utilisateurs finals. Les fonctionnalités pouvant être concernées sont répertoriées à la page [Pendant et après le déplacement de vos données](during-and-after-your-data-move.md). Nous respectons le [contrat de niveau de service Microsoft Online Services](https://go.microsoft.com/fwlink/p/?LinkId=523897) concernant la disponibilité. Ainsi, les clients n'ont rien à préparer ou à surveiller pendant le déplacement. Si besoin, le client est averti de toute maintenance de service. 
+
+Les données sont déplacées vers la nouvelle région de centre de données.
     
 ## <a name="related-topics"></a>Sujets associés 
  

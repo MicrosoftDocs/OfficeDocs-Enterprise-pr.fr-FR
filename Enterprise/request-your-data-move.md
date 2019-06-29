@@ -3,7 +3,7 @@ title: Procédure de demande d'un déplacement de données
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/15/2019
+ms.date: 06/28/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,21 +12,19 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Les clients Office 365 existants devront envoyer une demande avant la date d'échéance de leur pays afin que les données client de leurs services Office 365 soient déplacées vers leur nouvelle région.
-ms.openlocfilehash: 96556ae231f66dd4448f871a6154b527816933f4
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 7558e65672afdb1fa91b8a958472eab00fb89d0c
+ms.sourcegitcommit: aca382b615ce79c9f707f74cda6d90fbe87bb626
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071010"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35392354"
 ---
 # <a name="how-to-request-your-data-move"></a>Procédure de demande d’un déplacement de données
 
 > [!NOTE]
 > Les informations sur cette page s'appliquent uniquement aux utilisateurs qui disposaient déjà de clients Office 365 avant le lancement des nouveaux centres de données dans leur région. 
   
-Les clients Office 365 existants devront envoyer une demande avant la date d'échéance de leur pays afin que les données client de leurs services Office 365 soient déplacées vers leur nouvelle région. 
-  
-Nous ne pouvons pas accepter les demandes de déplacement après la date d'échéance de chaque région. 
+Les clients Office 365 existants sont autorisés à demander une migration précoce pour les données client principales de leur organisation au repos.  
   
 ## <a name="when-can-i-request-a-move"></a>Quand puis-je demander un déplacement ?
 
@@ -55,13 +53,10 @@ Sur la page **Profil de l'organisation**, faites défiler jusqu'à la section su
 ![Carte de résidence des données](media/fdb02cd0-825d-4d9e-bb35-6f806282884f.png)
   
 **Vous ne verrez peut-être pas cette section si l’une des conditions suivantes est appliquée**:
-- Votre client n’est pas éligible au programme de déplacement. 
+- Votre client n’est pas éligible au programme de déplacement.  Le droit est déterminé par le pays d’inscription du client.
 - Toutes vos données se trouvent déjà dans la nouvelle région (reportez-vous à la section sur l’emplacement des données de la page). 
   
-> [!IMPORTANT]
-> **Vous êtes sur le point de prendre une décision importante pour votre organisation. Après avoir confirmé l’option ci-dessous, vous ne pourrez pas revenir en arrière. L’assistance ne pourra pas non plus annuler cette décision.**
-  
-Si votre organisation a des besoins spécifiques en matière d'emplacement des données, et que vous devez demander un déplacement, cliquez sur **Modifier** en haut à droite de la section. Une nouvelle section apparaîtra sur le côté droit de votre écran en expliquant les détails du programme de déplacement. Sélectionnez le bouton bascule en regard du texte indiquant : **Oui, mon organisation a des besoins spécifiques en matière d'emplacement des données**. Cliquez ensuite sur **Enregistrer**.
+Si votre organisation a des besoins en matière de résidence des données et que vous devez demander une migration précoce, cliquez sur **modifier** en haut à droite de la section. Une nouvelle section apparaîtra sur le côté droit de votre écran en expliquant les détails du programme de déplacement. Sélectionnez le bouton bascule en regard du texte indiquant : **Oui, mon organisation a des besoins spécifiques en matière d'emplacement des données**. Cliquez ensuite sur **Enregistrer**.
   
 ![Écran de l'action d'abonnement dans le centre de données](media/f97ab8d2-b0e1-49bf-9d6b-bf75f3081233.png)
   
@@ -71,11 +66,9 @@ Le texte de la section sur l' **option concernant l'emplacement des données** c
   
 ## <a name="what-happens-after-requesting-a-move"></a>Que se passe-t-il une fois la demande de déplacement effectuée ?
 
-Après avoir reçu votre demande de déplacement, nous planifierons le déplacement aussi vite que nos contraintes opérationnelles nous le permettent. En raison de la nature imprévisible de la plupart des contraintes, nous ne pouvons pas vous communiquer une date spécifique ou une période pour les déplacements. Vous recevrez une notification une fois le déplacement terminé.
+Après avoir demandé un déplacement, nous allons vous déplacer aussi rapidement que les contraintes opérationnelles le permettent. En raison de la nature imprévisible de la plupart des contraintes, nous ne pouvons pas vous communiquer une date spécifique ou une période pour les déplacements. Vous recevrez une notification une fois le déplacement terminé.
   
 Les déplacements peuvent prendre jusqu'à 24 mois à compter de la date d'échéance de la demande pour votre pays.
-  
-Après avoir fait une demande de déplacement, vous ne pouvez pas modifier votre choix, car nous lançons le processus dès que nous recevons votre demande.
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 

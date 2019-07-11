@@ -204,9 +204,11 @@
 ### [Aide de l’administrateur Office 365](https://support.office.com/fr-FR/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
 ### [Outils de gestion des comptes d'utilisateurs](manage-office-365-accounts.md)
 ### [Ajouter plusieurs utilisateurs simultanément](add-several-users-at-the-same-time.md)
-### [Récupérer des éléments supprimés dans la boîte aux lettres d’un utilisateur ](recover-deleted-items-in-a-mailbox.md)
+### [Récupérer des éléments supprimés dans la boîte aux lettres d’un utilisateur](recover-deleted-items-in-a-mailbox.md)
+### Collaborer avec des invités
+#### [Référence pour le partage avec des invités](microsoft-365-guest-settings.md)
 
-## Périphériques
+## Appareils
 ### [Choisir entre MDM et Intune](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
 ### [Gérer les paramètres d’accès aux appareils](https://support.office.com/article/28dd276b-beeb-4c5b-8b22-7551186127fe)
 

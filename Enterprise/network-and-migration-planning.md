@@ -1,7 +1,7 @@
 ---
 title: Planification du réseau et de la migration pour Office 365
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 6/29/2018
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: Contient des liens vers des informations sur la planification et le test du réseau, ainsi que sur la migration vers Office 365.
-ms.openlocfilehash: a32a8584f1aada7e2b82451d520f72bb7577bc4b
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 572910f2104ecd90e78bcfe37b2b022ddb3893fa
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069920"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616777"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Planification du réseau et de la migration pour Office 365
 
@@ -111,5 +111,4 @@ Ces rubriques contiennent des informations détaillées sur le réseau Office 36
 - [Planifier les périphériques réseau qui se connectent aux services Office 365](plan-for-network-devices.md)
     
 - [Conseillers de déploiement pour les services Office 365](deployment-advisors-for-office-365.md)
-    
-
+ 

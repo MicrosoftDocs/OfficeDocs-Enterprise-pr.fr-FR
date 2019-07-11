@@ -1,7 +1,7 @@
 ---
 title: Planification réseau et optimisation des performances pour Office 365
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 1/15/2019
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: e5f1228c-da3c-4654-bf16-d163daee8848
 description: Vous aide à planifier les besoins en bande passante réseau pour Microsoft Office 365. Une fois que vous avez déployé, revenez ici pour affiner et dépanner les performances d’Office 365.
-ms.openlocfilehash: 3497ab5ec006011cefd6e09db323847c97999a34
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: c7ea169fbb39a16612c957f0d0275de60c83de1e
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069890"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616737"
 ---
 # <a name="network-planning-and-performance-tuning-for-office-365"></a>Planification réseau et optimisation des performances pour Office 365
 Avant de déployer pour la première fois ou de migrer vers Office 365, vous pouvez utiliser les informations de ces rubriques pour estimer la bande passante dont vous avez besoin, puis pour tester et vérifier que vous disposez d’une bande passante suffisante pour déployer ou migrer vers Office 365. Pour obtenir une vue d’ensemble, voir: [Network and Migration Planning for Office 365](network-and-migration-planning.md).

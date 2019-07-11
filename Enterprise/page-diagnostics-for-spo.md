@@ -1,7 +1,7 @@
 ---
 title: Utiliser l’outil de diagnostics de page pour SharePoint Online
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -15,12 +15,12 @@ search.appverid:
 - BSA160
 ms.assetid: dbab2593-dc6a-40f7-adfe-031b9baa620f
 description: Utilisez l’outil Diagnostics de la page pour SharePoint pour analyser vos pages classiques par rapport aux meilleures pratiques recommandées pour SharePoint Online.
-ms.openlocfilehash: a188b5dbe52a92cd536ef7145534288345b74c22
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: f61d680ab4470429436cd0bb88925c2f1fc63323
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069510"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616797"
 ---
 # <a name="use-the-page-diagnostics-tool-for-sharepoint-online"></a>Utiliser l’outil de diagnostics de page pour SharePoint Online
 
@@ -108,7 +108,7 @@ Aucune modification n’est visible sauf si vous êtes informé que vous l’ave
 ### <a name="to-enable-the-microsoft-support-level-feature"></a>Pour activer la fonctionnalité niveau de support Microsoft
 
 1. Ouvrez l’outil Diagnostics de la page.
-2. Sur votre clavier, appuyez sur ALT-MAJ-B. Cette opération permet d’afficher la journalisation du **niveau de prise en charge**. 
+2. Sur votre clavier, appuyez sur ALT-MAJ-b. Cette opération permet d’afficher la journalisation du **niveau de prise en charge**. 
 3. Activez la case à cocher, puis cliquez sur **Démarrer** pour recharger la page et générer une journalisation détaillée pour la prise en charge de l’analyse.<br/>![Option de prise en charge activée](media/ddef47de-8593-4b28-9346-eb48ebf6cdab.png)
   
 Un élément important pour cette opération est l’CorrelationID, car l’équipe de support technique utilisera ce numéro pour extraire les informations nécessaires. Veuillez copier le CorrelationID (en haut de l’outil de diagnostics de page) et fournissez-lui la prise en charge car ils ne peuvent pas effectuer le travail requis sans l’ID complet.

@@ -1,7 +1,7 @@
 ---
 title: Options de navigation pour SharePoint Online
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: overview
@@ -12,12 +12,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: Cet article décrit les options de navigation sites avec la publication SharePoint activée dans SharePoint Online. Le choix et la configuration de la navigation ont un impact significatif sur les performances et l’extensibilité des sites dans SharePoint Online.
-ms.openlocfilehash: 9bf2010000f14b173b63574fab4ee77cb772b3f4
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: b3194009d21f60093ec80cb2e138df34df60e22e
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069940"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616857"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Options de navigation pour SharePoint Online
 
@@ -29,7 +29,7 @@ La configuration du fournisseur de navigation peut avoir un impact significatif 
 
 La première option, la [**navigation gérée (métadonnées)**](#using-managed-navigation-and-metadata-in-sharepoint-online), est recommandée et est l’une des options par défaut dans SharePoint Online; Toutefois, nous vous recommandons de désactiver le filtrage de sécurité, sauf en cas de nécessité. Le filtrage de sécurité est activé comme paramètre sécurisé par défaut pour ce fournisseur de navigation; Toutefois, de nombreux sites n’ont pas besoin de la charge de filtrage de sécurité, car les éléments de navigation sont souvent cohérents pour tous les utilisateurs du site. Avec la configuration recommandée pour désactiver le filtrage de sécurité, ce fournisseur de navigation ne requiert pas l’énumération de la structure du site et est hautement évolutif avec un impact acceptable sur les performances.
 
-La deuxième option, [**navigation structurelle**](#using-structural-navigation-in-sharepoint-online), **n’est pas une option de navigation recommandée dans SharePoint Online**. Ce fournisseur de navigation a été conçu pour une topologie locale a une prise en charge limitée dans SharePoint Online. Bien qu’il fournisse des fonctionnalités supplémentaires par rapport aux autres options de navigation, ces fonctionnalités, y compris le filtrage de sécurité et l’énumération de la structure de site, ont un coût d’appels serveur excessifs et ont un impact sur l’évolutivité et les performances lorsqu’elles sont utilisées. Les sites qui utilisent la navigation struct qui consomment des ressources excessives peuvent être soumis à la limitation.
+La deuxième option, [**navigation structurelle**](#using-structural-navigation-in-sharepoint-online), **n’est pas une option de navigation recommandée dans SharePoint Online**. Ce fournisseur de navigation a été conçu pour une topologie locale a une prise en charge limitée dans SharePoint Online. Bien qu’il fournisse des fonctionnalités supplémentaires par rapport aux autres options de navigation, ces fonctionnalités, y compris le filtrage de sécurité et l’énumération de la structure de site, ont un coût d’appels serveur excessifs et ont un impact sur l’évolutivité et les performances lorsqu’elles sont utilisées. Les sites qui utilisent la navigation structurée qui consomment des ressources excessives peuvent être soumis à la limitation.
 
 En plus des fournisseurs de navigation prédéfinis, de nombreux clients ont implémenté les autres implémentations de navigation personnalisées. Une classe commune de mises en œuvre de navigation personnalisée comporte des modèles de conception affichés par le client qui stockent un cache local de nœuds de navigation. (Voir **[script côté client](#using-search-driven-client-side-scripting)** basé sur la recherche dans cet article.)
 
@@ -52,7 +52,7 @@ Le tableau suivant récapitule les avantages et les inconvénients de chaque opt
 |Avantages<br/><br/>Facilité de maintenance<br/>Option recommandée<br/>     |Avantages<br/><br/>Facile à configurer<br/>Sécurité découpée<br/>Mises à jour automatiques au fur et à mesure de l’ajout de contenu<br/>|Avantages<br/><br/>Sécurité découpée<br/>Mises à jour automatiques lors de l’ajout de sites<br/>Temps de chargement rapide et structure de navigation mise en cache locale<br/>|Avantages<br/><br/>Choix plus large d’options disponibles<br/>Chargement rapide lorsque la mise en cache est utilisée correctement<br/>De nombreuses options fonctionnent bien avec la conception de pages réactives<br/>|
 |Inconvénients<br/><br/>Mise à jour non automatique pour refléter la structure du site<br/>Impact sur les performances si le filtrage de sécurité est activé<br/>|Inconvénients<br/><br/>**Non recommandé**<br/>**Impact sur les performances et l’extensibilité**<br/>**Soumis à la limitation**<br/>|Inconvénients<br/><br/>Aucune possibilité de classer facilement les sites<br/>Nécessite une personnalisation de la page maître (compétences techniques requises)<br/>|Inconvénients<br/><br/>Un développement personnalisé est requis<br/>La source de données externe/le cache stocké est nécessaire par exemple, Azure<br/>|
 
-L’option la plus appropriée pour votre site dépend de vos besoins en matière de site et de vos capacités techniques. Si vous souhaitez un fournisseur de navigation out-of-out évolutif, la navigation gérée avec filtrage de sécurité désactivé est une très bonne option. 
+L’option la plus appropriée pour votre site dépend de vos besoins en matière de site et de vos capacités techniques. Si vous souhaitez un fournisseur de navigation out-of-out évolutif, la navigation gérée avec filtrage de sécurité désactivé est une très bonne option.
 
 L’option de navigation gérée peut être gérée par le biais de la configuration, n’implique pas de fichiers de personnalisation de code, et elle est beaucoup plus rapide que la navigation structurelle. Si vous avez besoin d’un filtrage de sécurité et que vous êtes familiarisé à l’utilisation d’une page maître personnalisée et que vous disposez d’une fonctionnalité dans l’Organisation pour conserver les modifications susceptibles de se produire dans la page maître par défaut pour SharePoint Online, l’option de recherche peut produire une meilleure expérience utilisateur. Si vous avez des exigences plus complexes, un fournisseur de navigation personnalisé peut être le bon choix. La navigation structurelle n’est pas recommandée.
 

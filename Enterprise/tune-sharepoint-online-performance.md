@@ -1,7 +1,7 @@
 ---
 title: Optimisation des performances SharePoint Online
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 6/21/2018
 audience: Admin
@@ -15,12 +15,12 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365
 ms.assetid: f0522d4a-fbf4-41f9-854e-c9b59555091d
 description: Contient des liens vers d’autres articles qui vous indiquent comment améliorer les performances des temps de téléchargement des pages pour SharePoint Online.
-ms.openlocfilehash: 2359ab11ffd4d03874c410b4c6e0b0e692c5e9cb
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 9049041be082aae0f574a8bd2f8ac3c5729f50d2
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070670"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616747"
 ---
 # <a name="tune-sharepoint-online-performance"></a>Optimisation des performances SharePoint Online
 
@@ -35,6 +35,8 @@ Utilisez ces articles pour affiner les performances de SharePoint Online.
 - [Utiliser l’outil de diagnostics de page pour SharePoint Online](page-diagnostics-for-spo.md)
     
 - [Options de navigation pour SharePoint Online](navigation-options-for-sharepoint-online.md)
+
+- [Aide relative aux performances des portails SharePoint Online](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/portal-performance)
     
 - [Optimisation des images pour SharePoint Online](image-optimization-for-sharepoint-online.md)
     

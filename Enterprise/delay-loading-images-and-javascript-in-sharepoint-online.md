@@ -1,7 +1,7 @@
 ---
 title: Différer le chargement des images et des éléments JavaScript dans SharePoint Online
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 12/29/2016
 audience: Admin
@@ -13,24 +13,24 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
 description: Cet article explique comment réduire le temps de chargement des pages SharePoint Online en utilisant JavaScript pour différer le chargement des images et en attendant de charger le code JavaScript non essentiel jusqu’à ce que la page se charge.
-ms.openlocfilehash: 6b2e91ca4b8642ac7129e353f2527db60a32d75b
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 9069fb395465cd9d087c018cc2ae782759ddcb0d
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067980"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616786"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>Différer le chargement des images et des éléments JavaScript dans SharePoint Online
 
-Cet article explique comment réduire le temps de chargement des pages SharePoint Online en utilisant JavaScript pour différer le chargement des images et en attendant de charger le code JavaScript non essentiel jusqu’à ce que la page se charge. 
+Cet article explique comment réduire le temps de chargement des pages SharePoint Online en utilisant JavaScript pour différer le chargement des images et en attendant de charger le code JavaScript non essentiel jusqu’à ce que la page se charge.
   
-Les images peuvent avoir une incidence négative sur la vitesse de chargement des pages sur SharePoint Online. Par défaut, la plupart des navigateurs Internet modernes extraient les images lors du chargement d’une page HTML. Cela peut entraîner un chargement insuffisant de la page si les images ne sont pas visibles à l’écran jusqu’à ce que l’utilisateur fasse défiler vers le bas. Les images peuvent empêcher le navigateur de charger la partie visible de la page. Pour contourner ce problème, vous pouvez utiliser JavaScript pour ignorer d’abord le chargement des images. De plus, le chargement de JavaScript non essentiels peut ralentir le temps de chargement de vos pages SharePoint. Cette rubrique décrit certaines méthodes que vous pouvez utiliser pour améliorer les temps de chargement des pages avec JavaScript dans SharePoint Online. 
+Les images peuvent avoir une incidence négative sur la vitesse de chargement des pages sur SharePoint Online. Par défaut, la plupart des navigateurs Internet modernes extraient les images lors du chargement d’une page HTML. Cela peut entraîner un chargement insuffisant de la page si les images ne sont pas visibles à l’écran jusqu’à ce que l’utilisateur fasse défiler vers le bas. Les images peuvent empêcher le navigateur de charger la partie visible de la page. Pour contourner ce problème, vous pouvez utiliser JavaScript pour ignorer d’abord le chargement des images. De plus, le chargement de JavaScript non essentiels peut ralentir le temps de chargement de vos pages SharePoint. Cette rubrique décrit certaines méthodes que vous pouvez utiliser pour améliorer les temps de chargement des pages avec JavaScript dans SharePoint Online.
   
 ## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>Améliorer les temps de chargement des pages en retardant le chargement de l’image dans les pages SharePoint Online à l’aide de JavaScript
 
 Vous pouvez utiliser JavaScript pour empêcher un navigateur Web de récupérer des images. Cela accélère le rendu de document global. Pour ce faire, supprimez la valeur de l’attribut SRC de \<la\> balise IMG et remplacez-la par le chemin d’accès à un fichier dans un attribut Data tel que: Data-SRC. Par exemple:
   
-```
+```txt
 <img src="" data-src="/sites/NavigationBySearch/_catalogs/masterpage/media/microsoft-white-8.jpg" />
 ```
 
@@ -40,7 +40,7 @@ Pour tout faire, vous devez utiliser JavaScript.
   
 Dans un fichier texte, définissez la fonction **isElementInViewport ()** pour vérifier si un élément est dans la partie du navigateur visible par l’utilisateur. 
   
-```
+```txt
 function isElementInViewport(el) {
   if (!el)
     return false;
@@ -52,7 +52,6 @@ function isElementInViewport(el) {
     rect.right <= (window.innerWidth || document.documentElement.clientWidth) 
   );
 }
-
 ```
 
 Ensuite, utilisez **isElementInViewport ()** dans la fonction **loadItemsInView ()** . La fonction **loadItemsInView ()** charge toutes les images ayant une valeur pour l’attribut Data-SRC si elles sont dans la partie du navigateur visible par l’utilisateur. Ajoutez la fonction suivante au fichier texte: 

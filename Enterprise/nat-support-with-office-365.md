@@ -1,7 +1,7 @@
 ---
 title: Prise en charge de la traduction d'adresses réseau (NAT) avec Office 365
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 1/24/2017
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: 170e96ea-d65d-4e51-acac-1de56abe39b9
 description: 'Résumé: fournit des informations sur la façon de rapprocher le nombre correct de clients que vous pouvez utiliser par adresse IP au sein de votre organisation à l’aide de la traduction d’adresses réseau (NAT).'
-ms.openlocfilehash: bdbf108163c7b22fd6d7583436af5f0ed655784c
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 63180faab720e32c1066dcca60536db492d52734
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069880"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616867"
 ---
 # <a name="nat-support-with-office-365"></a>Prise en charge de la traduction d'adresses réseau (NAT) avec Office 365
 
@@ -50,12 +50,12 @@ Nombre maximal d’appareils pris en charge derrière une même adresse IP publi
   
  **Par exemple, si les éléments suivants étaient vrais:**
   
-- **Ports restreints:** 4 000 pour le système d’exploitation 
-    
-- **Consommation de ports PIC:** 6 par appareil 
-    
-- **Facteur de crête:** 4 
-    
+- **Ports restreints:** 4 000 pour le système d’exploitation
+
+- **Consommation de ports PIC:** 6 par appareil
+
+- **Facteur de crête:** 4
+
 Ensuite, le nombre maximal d’appareils pris en charge derrière une seule adresse IP publique = (64 000-4000)/(6 + 4) = 6 000
   
 Avec la version du pack d’hébergement Office 365, incluse dans les mises à jour de septembre 2011 pour Microsoft Office Outlook 2007 ou 2011 pour Microsoft Outlook 2010, ou une mise à jour ultérieure, le nombre de connexions à partir d’Outlook (à la fois Office Outlook 2007 avec le service Pack 2 et Outlook 2010) vers Exchange peuvent être aussi peu que 2. Vous devez prendre en facteur les différents systèmes d’exploitation, comportements d’utilisateur, etc., pour déterminer le nombre minimal et maximal de ports requis par votre réseau au niveau maximal.
@@ -79,4 +79,3 @@ Il existe différentes méthodes de répartition de la charge client sur des adr
 [Gestion des points de terminaison Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   
 [Points de terminaison Office 365 - FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
-

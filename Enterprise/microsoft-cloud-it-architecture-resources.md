@@ -16,12 +16,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: "Résumé : apprenez les concepts de base de l’architecture cloud pour l’identité, la sécurité, la mise en réseau et l’hybridation Microsoft. Passez en revue les recommandations normatives pour la protection des fichiers, des identités et des appareils lors de l'utilisation du cloud de Microsoft. Apprenez à déployer un poste de travail moderne et sécurisé avec Windows 10 et Office ProPlus."
-ms.openlocfilehash: dfb6df46faacf6623a90ac5a4cf95d9512c31289
-ms.sourcegitcommit: baf2ace701fa338b12222b6fb08658fd583c40d2
+ms.openlocfilehash: 7af74f254ffc73251188b23255a35f800b5503f6
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34539324"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616881"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Ressources relatives à l’architecture informatique du cloud Microsoft
 
@@ -39,6 +39,7 @@ Ces affiches et outils relatifs à l’architecture fournissent des informations
     - [L’hybridation dans le cloud Microsoft pour les architectes d’entreprise](microsoft-cloud-it-architecture-resources.md#hybrid)
     - [Les attaques courantes et les fonctionnalités Microsoft pour protéger votre organisation](#common-attacks-and-microsoft-capabilities-that-protect-your-organization)
     - [Infrastructure de base de Microsoft 365 Entreprise](#m365foundationinfra)
+    - [Approches d’architecture pour les migrations client-client de Microsoft Cloud](#architecture-approaches-for-microsoft-cloud-tenant-to-tenant-migrations)
     
 - **[Série de solutions Microsoft 365 Entreprise](microsoft-cloud-it-architecture-resources.md#BKMK_o365solutions)**:
     - [Microsoft Teams et services de productivité connexes dans Microsoft 365 pour les architectes informatique](#microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects)
@@ -132,8 +133,14 @@ Obtenez un aperçu rapide de [l'infrastructure de base](https://docs.microsoft.c
   
 |**Item**|**Description**|
 |:-----|:-----|
-|[![Image miniature de l’affiche de l’Infrastructure de base de Microsoft 365 Entreprise](media/Microsoft365EnterpriseFoundInfra-thumb.png)](http://aka.ms/m365efoundinfraposter) <br/> [Consulter en ligne](http://aka.ms/m365efoundinfraposter) \| [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf) <br/> | Cette affiche synthétise chaque phase de l’infrastructure de base en termes des objectifs, des fonctionnalités et des outils, des décisions de conception, des résultats de configuration, de l’intégration et du suivi et de la mise à jour en continu. <br/>| 
+|[![Image miniature de l’affiche de l’Infrastructure de base de Microsoft 365 Entreprise](media/Microsoft365EnterpriseFoundInfra-thumb.png)](http://aka.ms/m365efoundinfraposter) <br/> [Consulter en ligne](http://aka.ms/m365efoundinfraposter) \| [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf) <br/> | Cette affiche synthétise chaque phase de l’infrastructure de base en termes des objectifs, des fonctionnalités et des outils, des décisions de conception, des résultats de configuration, de l’intégration et du suivi et des mises à jour en continu. <br/>| 
 
+### <a name="architecture-approaches-for-microsoft-cloud-tenant-to-tenant-migrations"></a>Approches d’architecture pour les migrations client-client de Microsoft Cloud 
+Cette série de rubriques illustre plusieurs approches d’architecture pour les fusions, les acquisitions, les scissions et d’autres scénarios susceptibles de vous amener à migrer vers un nouveau client cloud. Ces rubriques fournissent des conseils sur la planification de point de départ.
+
+|**Item**|**Description**|
+|:-----|:-----|
+|[![Image miniature représentant le poster architecture logique Teams](downloads/msft-tenant-to-tenant-migration-thumb.png)](downloads/Microsoft-365-tenant-to-tenant-migration.pdf) <br/> [PDF](downloads/Microsoft-365-tenant-to-tenant-migration.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/Microsoft-365-tenant-to-tenant-migration.vsdx)     |Ce modèle contient : <ul><li>Un mappage des scénarios d’entreprises aux approches de l’architecture</li><li>Considérations en matière de conception</li><li>Flux de migration à événement unique</li><li>Flux de migration à phases</li><li>Flux de déplacement ou de fractionnement du client</li></ul>|
 
 <!--<a name="santa"></a>
 ### The Santa cloud

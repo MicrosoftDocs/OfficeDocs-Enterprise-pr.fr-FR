@@ -18,13 +18,13 @@ search.appverid:
 ms.assetid: 37a5c116-5b07-4f70-8333-5b86fd2c3c40
 ms.collection:
 - M365-security-compliance
-description: Les délais d’expiration des sessions sont utilisés pour équilibrer les Securtiy et la facilité d’accès dans les applications clientes Office 365.
-ms.openlocfilehash: d43bc123de982f3ebf55f05f48e53debe7df036b
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+description: Les délais d’expiration des sessions sont utilisés pour équilibrer la sécurité et faciliter l’accès dans les applications clientes Office 365.
+ms.openlocfilehash: 82ce98de440175f2190d5da6e4d1c02b8b678b89
+ms.sourcegitcommit: 237e1c485214c2ff75375988febfd7fb70faa5f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070850"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35746692"
 ---
 # <a name="session-timeouts-for-office-365"></a>Délais d’expiration de session pour Office 365
 
@@ -43,6 +43,6 @@ Le tableau suivant répertorie les durées de vie des sessions pour les services
 |Outlook Web App  <br/> |6 heures.  <br/> Vous pouvez modifier cette valeur à l’aide du paramètre _ActivityBasedAuthenticationTimeoutInterval_ de la cmdlet [Set-OrganizationConfig](https://go.microsoft.com/fwlink/p/?LinkId=615378) .  <br/> |
 |Azure Active Directory  <br/> (Utilisé par les clients Windows 2013 avec l’authentification moderne activée)  <br/> | L’authentification moderne utilise des jetons d’accès et actualise les jetons pour accorder à l’utilisateur l’accès aux ressources Office 365 à l’aide d’Azure Active Directory. Un jeton d’accès est un jeton Web JSON fourni après une authentification réussie pendant 1 heure. Un jeton d’actualisation avec une durée de vie plus longue est également fourni. Lorsque les jetons d’accès expirent, les clients Office utilisent un jeton d’actualisation valide pour obtenir un nouveau jeton d’accès. Cet échange réussit si l’authentification initiale de l’utilisateur est toujours valide.  <br/>  Les jetons d’actualisation sont valides pendant 90 jours, et avec une utilisation continue, ils peuvent être valides jusqu’à leur révocation.  <br/>  Les jetons d’actualisation peuvent être invalidés par plusieurs événements, tels que:  <br/>  Le mot de passe de l’utilisateur a été modifié depuis l’émission du jeton d’actualisation.  <br/>  Un administrateur peut appliquer des stratégies d’accès conditionnel qui restreignent l’accès à la ressource à laquelle l’utilisateur tente d’accéder.  <br/> |
 |Applications mobiles SharePoint et OneDrive pour Android, iOS et Windows 10  <br/> |La durée de vie par défaut du jeton d’accès est de 1 heure. Le temps d’inactivité maximal par défaut du jeton d’actualisation est de 90 jours.  <br/> [En savoir plus sur les jetons et sur la configuration de la durée de vie des jetons](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-configurable-token-lifetimes) <br/> Pour révoquer le jeton d’actualisation, vous pouvez réinitialiser le mot de passe Office 365 de l’utilisateur  <br/> |
-|Yammer avec Office 365 connexion  <br/> |Durée de vie du navigateur. Si les utilisateurs ferment le navigateur et accèdent à Yammer dans un nouveau navigateur, Yammer les authentifie de nouveau avec Office 365. Si les utilisateurs utilisent des navigateurs tiers qui cachent les cookies, ils n’ont peut-être pas besoin de s’authentifier à nouveau lors de la réouverture du navigateur.  <br/> > [!NOTE]> ceci est uniquement valide pour les réseaux utilisant la connexion à Office 365 pour Yammer.           |
+|Yammer avec Office 365 connexion  <br/> |Durée de vie du navigateur. Si les utilisateurs ferment le navigateur et accèdent à Yammer dans un nouveau navigateur, Yammer les authentifie de nouveau avec Office 365. Si les utilisateurs utilisent des navigateurs tiers qui cachent les cookies, ils n’ont peut-être pas besoin de s’authentifier à nouveau lors de la réouverture du navigateur.  <br/> > [!NOTE]> ceci n’est valide que pour les réseaux utilisant la connexion à Office 365 pour Yammer.           |
    
 

@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: 'Résumé : Configurez et faites une démonstration de la sécurité des applications cloud Office 365 dans votre environnement de développement/test Office 365.'
-ms.openlocfilehash: af2a2657ede46818b9d705ca38f99d779f98fb11
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 1b20f4dc98c23c2063d77703f157a31889c69e6c
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068100"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782254"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Sécurité des applications cloud pour votre environnement de développement/test Office 365
 
@@ -81,7 +81,7 @@ Cette procédure indique comment activer la sécurité des applications cloud et
 
 1. Accédez au centre d’administration de Microsoft 365[https://admin.microsoft.com](https://admin.microsoft.com)() et connectez-vous à votre abonnement d’évaluation Office 365 avec votre compte d’administrateur général.
     
-2. Cliquez sur la vignette **Administration**. Dans l’onglet **Centre d’administration Office** , cliquez sur centres d’administration **_GT_ sécurité & conformité**.
+2. Cliquez sur la vignette **Administration**. Dans l’onglet **Centre d’administration Office** , cliquez sur centres d’administration **> sécurité & conformité**.
     
 3. Dans le volet de navigation de gauche, cliquez sur **Alertes > Gérer les alertes avancées**.
     
@@ -153,7 +153,7 @@ Cette procédure permet de montrer comment la sécurité des applications cloud 
     
 22. Dans l’onglet d’accueil **Microsoft Office**, cliquez sur **Admin**. Patientez 30 minutes.  
     
-    Vous devriez voir deux nouveaux messages électroniques dont le titre mentionne le **service de notification Microsoft Azure AD** dans la boîte de réception. L’un d’eux indique que le compte Utilisateur 5 a été ajouté au rôle **Administrateur de mots de passe** et l’autre que ce même compte a été ajouté au rôle **Administrateur d'utilisateurs** (équivalent du rôle d’administrateur de gestion des utilisateurs dans le centre d’administration Office 365).
+    Vous devriez voir deux nouveaux messages électroniques dont le titre mentionne le **service de notification Microsoft Azure AD** dans la boîte de réception. Un message indique que le compte utilisateur 5 a été ajouté au rôle **administrateur de mots de passe** et un autre message indique que le compte utilisateur 5 a été ajouté au rôle **administrateur d’utilisateurs** (égal au rôle administrateur de gestion des utilisateurs dans le Centre d’administration Microsoft 365).
     
 Vous pouvez désormais utiliser cet environnement pour créer des stratégies et expérimenter plus en profondeur la sécurité des applications cloud Office 365. Voir [Get Ready for Office 365 Cloud App Security](https://support.office.com/article/Get-ready-for-Office-365-Cloud-App-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a) pour obtenir des liens vers d’autres Articles de configuration.
   

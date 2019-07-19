@@ -15,18 +15,18 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: 'Résumé : Découvrez comment utiliser Office 365 PowerShell avec des utilisateurs et des licences Office 365, Skype Entreprise Online, SharePoint Online, Exchange Online et le Centre de sécurité et conformité Office 365.'
-ms.openlocfilehash: 90903c33ebabc426ba95e0c69e71fea985cb464d
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 56c23aca44d09947e7469296c6ed85b2f3d2f3c5
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068900"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782104"
 ---
 # <a name="manage-office-365-with-office-365-powershell"></a>Gérer Office 365 avec Office 365 PowerShell
 
  **Résumé :** Découvrez comment utiliser Office 365 PowerShell avec des utilisateurs et des licences Office 365, Skype Entreprise Online, SharePoint Online, Exchange Online et le Centre de sécurité et conformité Office 365.
   
-Office 365 PowerShell est un outil de gestion avancé qui complète le Centre d’administration Office 365. Par exemple, vous pouvez utiliser l’automatisation Office 365 PowerShell pour gérer plus rapidement plusieurs licences et comptes d’utilisateur, ainsi que créer des rapports. Découvrez comment utiliser Office 365 PowerShell avec les utilisateurs et les licences Office 365, Skype Entreprise Online, SharePoint Online, Exchange Online et le Centre de sécurité et conformité Office 365.
+Office 365 PowerShell est un outil de gestion puissant qui complète le centre d’administration Microsoft 365. Par exemple, vous pouvez utiliser l'automatisation Office 365 PowerShell pour gérer plus rapidement plusieurs comptes d'utilisateur et licences utilisateur et créer des rapports. Découvrez comment utiliser Office 365 PowerShell avec Office 365 des utilisateurs et des licences, Skype entreprise Online, SharePoint Online, Exchange Online et le centre de sécurité & conformité d’Office 365.
   
 Sélectionnez la rubrique selon vos besoins :
   

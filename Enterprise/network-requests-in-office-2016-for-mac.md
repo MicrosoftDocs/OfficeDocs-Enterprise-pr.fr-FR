@@ -13,12 +13,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
 description: Les applications Office pour Mac fournissent une expérience d’application native sur la plateforme macOS. Chaque application est conçue pour fonctionner dans un grand nombre de scénarios, dont les États quand aucun accès réseau n’est disponible. Lorsqu’un ordinateur est connecté à un réseau, les applications se connectent automatiquement à une série de services Web pour offrir des fonctionnalités améliorées. Cet article décrit les points de terminaison et les URL que les applications essaient d’atteindre, ainsi que les services fournis. Ces informations sont utiles lors de la résolution des problèmes de configuration réseau et de la définition d’une stratégie pour les serveurs proxy réseau. Les informations de cet article sont destinées à compléter l’article sur les plages d’adresses et l’URL Office 365.
-ms.openlocfilehash: 0493fcc0954456ed190791b089fe4e0a568e82d7
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 44acbc83b2bb32e60a470dc5d3ba27f13cbd033c
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069653"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35781954"
 ---
 # <a name="network-requests-in-office-for-mac"></a>Requêtes réseau dans Office pour Mac
 
@@ -68,7 +68,7 @@ Les points de terminaison réseau suivants sont contactés lors du premier lance
 |```https://nexusrules.officeapps.live.com/```  <br/> |WXPON  <br/> |ER  <br/> |Service de télémétrie de règles Office: informe le client des données et des événements à télécharger vers le service de télémétrie.  <br/> |
 |```https://mobile.pipe.aria.microsoft.com/```  <br/> |N  <br/> |ADMISSIBLE  <br/> |Service de télémétrie OneNote  <br/> |
 |```https://nexus.officeapps.live.com/```  <br/> |WXPON  <br/> |ER  <br/> |Le rapport de téléchargement de télémétrie Office-«Heartbeart» et les événements d’erreur qui se produisent sur le client sont téléchargés vers le service de télémétrie.  <br/> |
-|```https://templateservice.office.com/```  <br/> |WXP  <br/> |ADMISSIBLE  <br/> |Service de modèle Office Online: fournit aux utilisateurs des modèles de documents en ligne.  <br/> |
+|```https://templateservice.office.com/```  <br/> |WXP  <br/> |ADMISSIBLE  <br/> |Service de modèle Office: fournit aux utilisateurs des modèles de documents en ligne.  <br/> |
 |```https://omextemplates.content.office.net/```  <br/> |WXP  <br/> |ADMISSIBLE  <br/> |Téléchargements de modèles Office-stockage des images de modèles PNG.  <br/> |
 |```https://store.office.com/```  <br/> |WXP  <br/> |ADMISSIBLE  <br/> |Stocker la configuration des applications Office.  <br/> |
 |```https://odc.officeapps.live.com/```  <br/> |WXPN  <br/> |ADMISSIBLE  <br/> |Catalogue des services d’intégration de documents Office (liste de services et points de terminaison) et découverte de domaine d’accueil.  <br/> |

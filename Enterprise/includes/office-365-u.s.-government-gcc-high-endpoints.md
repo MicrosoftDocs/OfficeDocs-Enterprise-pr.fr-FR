@@ -28,7 +28,7 @@ ID | Catégorie | ER | Adresses | Ports
 8bits | Par défaut<BR>Obligatoire | Oui | `*.gov.teams.microsoft.us, *.infra.gov.skypeforbusiness.us, *.online.gov.skypeforbusiness.us, gov.teams.microsoft.us` | **TCP :** 5061, 50000-59999<BR>**UDP :** 50000-59999
 21 | Par défaut<BR>Obligatoire | Oui | `statics.teams.microsoft.com` | **TCP :** 443
 
-## <a name="microsoft-365-common-and-office-online"></a>Services communs Microsoft 365 et Office Online
+## <a name="microsoft-365-common-and-office"></a>Microsoft 365 Common and Office 
 
 ID | Catégorie | ER | Adresses | Ports
 -- | ------------------- | --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------

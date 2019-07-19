@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: Voici des réponses à des questions d’ordre général sur le transfert de données principales vers une nouvelle région de centre de données.
-ms.openlocfilehash: 29706f49ee0faf8c535b50843f224b7b1b2a372e
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: fe0392040f4a78d32e682e4f013db7a8ba49ebd5
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067897"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782324"
 ---
 # <a name="data-move-general-faq"></a>FAQ général relatif au déplacement de données
 
@@ -61,7 +61,7 @@ Oui. Une fois qu’une nouvelle région de centre de données est disponible, le
   
  ## <a name="where-is-my-core-customer-data-is-located"></a>Où se trouvent mes données client principales?
 
-Les administrateurs clients peuvent afficher la carte d’emplacement des données dans le centre d’administration à tout moment pour confirmer les données principales du client au moment de l’emplacement REST pour chaque service, en particulier pour leur client.Nous publions également l’emplacement des régions centres de centre de données, des centres de données et l’emplacement des données client Office 365 sur [ office 365 interactive Datacenter Maps](https://office.com/datamaps) comme référence pour les données client principales par défaut actuelles aux emplacements REST pour les nouveaux clients.  Vous pouvez vérifier l’emplacement de vos données client au repos via la section emplacement des données sous votre profil d’organisation dans le centre d’administration Office 365.  
+Les administrateurs clients peuvent afficher la carte d’emplacement des données dans le centre d’administration à tout moment pour confirmer les données principales du client au moment de l’emplacement REST pour chaque service, en particulier pour leur client.Nous publions également l’emplacement des régions centres de centre de données, des centres de données et l’emplacement des données client Office 365 sur [ office 365 interactive Datacenter Maps](https://office.com/datamaps) comme référence pour les données client principales par défaut actuelles aux emplacements REST pour les nouveaux clients.  Vous pouvez vérifier l’emplacement de vos données client au repos via la section emplacement des données sous votre profil d’organisation dans le centre d’administration 365 de Microsoft.  
  
 ## <a name="when-will-i-be-able-to-request-a-move"></a>Quand pourrai-je demander un déplacement ?
   
@@ -101,7 +101,7 @@ Reportez-vous à la section [Pendant et après le déplacement de vos données](
   
  ## <a name="how-do-i-know-the-move-is-complete"></a>Comment savoir que le déplacement est terminé ?
   
-Regardez le centre de messages Office 365 pour confirmer que le déplacement des données de chaque service est terminé. Lorsque les données de chaque service sont déplacées, nous allons publier un avertissement de fin d’opération pour obtenir trois notifications d’achèvement: une pour Exchange Online, SharePoint Online et Skype entreprise online.  Vous pouvez également vérifier l’emplacement de vos données client au repos via la section emplacement des données sous votre profil d’organisation dans le centre d’administration Office 365.  
+Regardez le centre de messages Office 365 pour confirmer que le déplacement des données de chaque service est terminé. Lorsque les données de chaque service sont déplacées, nous allons publier un avertissement de fin d’opération pour obtenir trois notifications d’achèvement: une pour Exchange Online, SharePoint Online et Skype entreprise online.  Vous pouvez également vérifier l’emplacement de vos données client au repos via la section emplacement des données sous votre profil d’organisation dans le centre d’administration 365 de Microsoft.  
   
 ## <a name="i-am-an-office-365-customer-in-one-of-the-new-datacenter-geos-but-when-i-signed-up-i-selected-a-different-country-how-can-i-be-moved-to-the-new-datacenter-geo"></a>Je suis un client Office 365 dans l’un des nouveaux centres de régions centres, mais lorsque je me suis inscrit, j’ai sélectionné un autre pays. Comment puis-je le déplacer vers la nouvelle région de centre de informations?
 

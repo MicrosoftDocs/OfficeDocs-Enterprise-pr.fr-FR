@@ -29,7 +29,7 @@ ID | Catégorie | ER | Adresses | Ports
 8 | Par défaut<BR>Obligatoire | Oui | `*.dod.teams.microsoft.us, *.online.dod.skypeforbusiness.us, dod.teams.microsoft.us` | **TCP :** 5061, 50000-59999<BR>**UDP :** 50000-59999
 21 | Par défaut<BR>Obligatoire | Non | `statics.microsoft.com` | **TCP :** 443
 
-## <a name="microsoft-365-common-and-office-online"></a>Services communs Microsoft 365 et Office Online
+## <a name="microsoft-365-common-and-office"></a>Microsoft 365 Common and Office 
 
 ID | Catégorie | ER | Adresses | Ports
 -- | ------------------- | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------

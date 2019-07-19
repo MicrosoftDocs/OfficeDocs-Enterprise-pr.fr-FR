@@ -10,17 +10,17 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: d78983fa-0951-49b8-b890-d76a44c70035
-description: Cet article est une version texte accessible du diagramme nommé Intégration de fonctionnalités dans les produits Microsoft Office Server - SharePoint Server, Exchange Server, Lync Server et Office Online.
-ms.openlocfilehash: c8bb7a26c6fbf0ed74be0b31fd58a65e7b1b5787
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+description: Cet article est une version texte accessible du diagramme intitulé intégration de fonctionnalités dans les produits Microsoft Office Server-SharePoint Server, Exchange Server, Lync Server et Office Online Server.
+ms.openlocfilehash: bbc50c397b85f355cc54103902a3b56258e915ea
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068770"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782244"
 ---
 # <a name="accessible-diagram---feature-integration-across-microsoft-office-server-products"></a>Diagramme accessible : Intégration de fonctionnalités entre les produits Microsoft Office Server
 
-**Résumé:** Cet article est une version texte accessible du diagramme intitulé intégration de fonctionnalités dans les produits Microsoft Office Server-SharePoint Server, Exchange Server, Lync Server et Office Online.
+**Résumé:** Cet article est une version texte accessible du diagramme intitulé intégration de fonctionnalités dans les produits Microsoft Office Server-SharePoint Server, Exchange Server, Lync Server et Office Online Server.
   
 Le diagramme se compose de plusieurs onglets, comme indiqué par les titres de section de ce document.
   
@@ -86,7 +86,7 @@ Authentification de serveur à serveur Cette fonctionnalité s’applique à :�
     
 - Lync
     
-- Office Online (anciennement Office Web Apps)  
+- Office Online Server (anciennement appelé Office Web Apps) 
     
 Photos haute résolution de l’utilisateur Cette fonctionnalité s’applique à :  
   
@@ -569,7 +569,7 @@ Produits serveurs :
     
  **Fonctionnement** 
   
-Lorsqu’un appel n’est pas traité par l’appelé sur l’un des points de terminaison actifs de l’appelé, Lync Server achemine l’appel vers la messagerie vocale sur la messagerie UNIFIÉe Exchange (par exemple, serveur de boîtes aux lettres Exchange). 
+Lorsqu’un appel n’est pas traité par l’appelé sur l’un des points de terminaison actifs de l’appelé, Lync Server achemine l’appel vers la messagerie vocale sur la messagerie unifiée Exchange (par exemple, serveur de boîtes aux lettres Exchange). 
   
 Le diagramme associé illustre le routage des appels pour deux scénarios :  
   

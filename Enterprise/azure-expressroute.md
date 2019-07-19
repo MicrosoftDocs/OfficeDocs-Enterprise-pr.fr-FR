@@ -3,7 +3,7 @@ title: Azure ExpressRoute pour Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 11/01/2018
+ms.date: 6/5/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,19 +18,19 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Découvrez comment Azure ExpressRoute est utilisé avec Office 365 et comment planifier le projet d’implémentation réseau qui sera requis si vous déployez Azure ExpressRoute pour une utilisation avec Office 365.
-ms.openlocfilehash: 26aa65cdec5e9e37ee99a283d600d56f79fd85a4
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: d881dc4e65ca2533f511c7f613c38569811b95a7
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068270"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782354"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Azure ExpressRoute pour Office 365
 
-Découvrez comment Azure ExpressRoute est utilisé avec Office 365 et comment planifier le projet d’implémentation réseau qui sera requis si vous déployez Azure ExpressRoute pour une utilisation avec Office 365. Les services d’infrastructure et de plateforme exécutés dans Azure tireront souvent parti de l’architecture réseau et des considérations relatives aux performances. Nous vous recommandons d’utiliser ExpressRoute pour Azure dans ces cas. Les logiciels en tant qu’offres de service comme Office 365 et Dynamics 365 ont été conçus pour être accessibles en toute sécurité et fiabilité via Internet. Vous trouverez des informations sur les performances et la sécurité d’Internet et sur la façon dont vous pouvez envisager d’utiliser Azure ExpressRoute pour Office 365 dans l’article [connectivité réseau vers Office 365](network-connectivity.md).
+Découvrez comment Azure ExpressRoute est utilisé avec Office 365 et comment planifier le projet d’implémentation réseau qui sera requis si vous déployez Azure ExpressRoute pour une utilisation avec Office 365. Les services d’infrastructure et de plateforme exécutés dans Azure tireront souvent parti de l’architecture réseau et des considérations relatives aux performances. Nous vous recommandons d’utiliser ExpressRoute pour Azure dans ces cas. Les logiciels en tant qu’offres de service comme Office 365 et Dynamics 365 ont été conçus pour être accessibles en toute sécurité et fiabilité via Internet. Vous trouverez des informations sur les performances et la sécurité d’Internet et sur la façon dont vous pouvez envisager d’utiliser Azure ExpressRoute pour Office 365 dans l’article évaluation de la [connectivité réseau office 365](assessing-network-connectivity.md).
 
 > [!NOTE]
-> L’autorisation Microsoft est requise pour utiliser ExpressRoute pour Office 365. Microsoft révise chaque demande de client et autorise l’utilisation d’ExpressRoute pour Office 365 lorsque la configuration requise par le client impose une connectivité directe. Si vous avez ces exigences, indiquez l’extrait de texte et le lien Web du règlement que vous interprétez pour signifier que la connectivité directe est requise dans le [formulaire de demande ExpressRoute pour Office 365](https://aka.ms/O365ERReview) pour commencer une révision Microsoft. Les abonnements non autorisés qui tentent de créer des filtres d’itinéraires pour Office 365 recevront un [message d’erreur](https://support.microsoft.com/kb/3181709). 
+> L’autorisation Microsoft est requise pour utiliser ExpressRoute pour Office 365. Microsoft révise chaque demande de client et autorise l’utilisation d’ExpressRoute pour Office 365 lorsque la configuration requise par le client impose une connectivité directe. Si vous avez ces exigences, indiquez l’extrait de texte et le lien Web du règlement que vous interprétez pour signifier que la connectivité directe est requise dans le [formulaire de demande ExpressRoute pour Office 365](https://aka.ms/O365ERReview) pour commencer une révision Microsoft. Les abonnements non autorisés qui tentent de créer des filtres d’itinéraires pour Office 365 recevront un [message d’erreur](https://support.microsoft.com/kb/3181709).
 
 Vous pouvez désormais ajouter une connexion réseau directe à Office 365 pour le trafic réseau Office 365 sélectionné. Azure ExpressRoute offre une connexion directe, des performances prévisibles et est accompagné d’un contrat SLA de 99,95% pour les composants réseau Microsoft. Vous aurez toujours besoin d’une connexion Internet pour les services qui ne sont pas pris en charge par Azure ExpressRoute.
 
@@ -50,8 +50,6 @@ Examinez maintenant le diagramme mis à jour qui illustre un client Office 365 q
 
 Souhaitez-vous toujours obtenir plus d’informations? Découvrez comment [gérer votre trafic réseau avec Azure ExpressRoute pour office 365](https://support.office.com/article/e1da26c6-2d39-4379-af6f-4da213218408) et découvrez comment [configurer Azure ExpressRoute pour Office 365](https://azure.microsoft.com/documentation/articles/expressroute-faqs/). Nous avons également enregistré une série de formation de 10 parties sur [Azure ExpressRoute pour Office 365](https://channel9.msdn.com/series/aer) sur Channel 9 afin de mieux comprendre les concepts.
 
-([Azure ExpressRoute pour Office 365](azure-expressroute.md#BKMK_HOME))
-
 ## <a name="what-office-365-services-are-included"></a>Quels sont les services Office 365 inclus?
 <a name="BKMK_WhatDoIGet"> </a>
 
@@ -62,13 +60,11 @@ Le tableau suivant répertorie les services Office 365 pris en charge sur Expres
 |Exchange Online<sup>1</sup> <br/> Exchange Online Protection<sup>1</sup> <br/> Delve<sup>1</sup> <br/> |
 |Skype entreprise Online<sup>1</sup> <br/> |
 |SharePoint Online<sup>1</sup> <br/> OneDrive entreprise<sup>1</sup> <br/> Project Online<sup>1</sup> <br/> |
-|Portail et partage<sup>1</sup> <br/> Azure Active Directory<sup>1</sup> <br/> AAD Connect<sup>1</sup> <br/> Office Online<sup>1</sup> <br/> |
+|Portail et partage<sup>1</sup> <br/> Azure Active Directory<sup>1</sup> <br/> AAD Connect<sup>1</sup> <br/> Office<sup>1</sup> <br/> |
 
 <sup>1</sup> Chacune de ces applications a des exigences de connectivité Internet qui ne sont pas prises en charge sur ExpressRoute, consultez l’article relatif aux [points de terminaison Office 365](https://aka.ms/o365endpoints) pour plus d’informations.
 
 Les services qui ne sont pas inclus dans ExpressRoute pour Office 365 sont les téléchargements de client Office 365 ProPlus, la connexion au fournisseur d’identité sur site et Office 365 (géré par 21 VIANET) du service en Chine.
-
-([Azure ExpressRoute pour Office 365](azure-expressroute.md#BKMK_HOME))
 
 ## <a name="implementing-expressroute-for-office-365"></a>Implémentation d’ExpressRoute pour Office 365
 
@@ -100,11 +96,9 @@ Voici un lien que vous pouvez utiliser pour revenir : [https://aka.ms/expressro
 
 Vous êtes prêt à vous inscrire à [ExpressRoute pour Office 365](https://aka.ms/ert)?
 
-([Azure ExpressRoute pour Office 365](azure-expressroute.md#BKMK_HOME))
-
 ## <a name="related-topics"></a>Rubriques connexes
 
-[Connectivité réseau à Office 365](network-connectivity.md)
+[Évaluation de la connectivité réseau Office 365](assessing-network-connectivity.md)
 
 [Gestion d’ExpressRoute pour la connectivité d’Office 365](managing-expressroute-for-connectivity.md)
 

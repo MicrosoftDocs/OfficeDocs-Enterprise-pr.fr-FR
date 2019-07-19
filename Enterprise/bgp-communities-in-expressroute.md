@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099
 description: 'La connexion à Office 365 à l’aide d’Azure ExpressRoute repose sur des publicités BGP de sous-réseaux IP spécifiques qui représentent des réseaux sur lesquels les points de terminaison Office 365 sont déployés. En raison de la nature internationale d’Office 365 et du nombre de services qui constituent Office 365, les clients ont souvent besoin de gérer les publicités qu’ils acceptent sur leur réseau. Réduction du nombre de sous-réseaux IP; appelés préfixes IP tout au long de cet article, pour s’aligner sur la terminologie de gestion de réseau BGP, il répond aux objectifs finaux suivants pour les clients:'
-ms.openlocfilehash: 57b957d151bf49d67577ebd0d75f3a87e102d904
-ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
+ms.openlocfilehash: 37fef66aeccc0fcd2102463384ebc2341b9c37e8
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34722573"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782344"
 ---
 # <a name="using-bgp-communities-in-expressroute-for-office-365-scenarios"></a>Utilisation des communautés BGP dans ExpressRoute pour les scénarios Office 365
 
@@ -54,7 +54,7 @@ Contoso Corporation est une société 50 000 Person qui utilise actuellement Off
 
 |**Balise communautaire BGP utilisée**|**Fonctionnalité routable sur Azure ExpressRoute**|**Itinéraires Internet requis**|
 |:-----|:-----|:-----|
-|SharePoint  <br/> (12076:5020)  <br/> |SharePoint Online &amp; OneDrive entreprise  <br/> | DNS, liste de &amp; révocation de certificats, demandes CDN  <br/>  Tous les autres services Office 365 non spécifiquement pris en charge sur Azure ExpressRoute  <br/>  Tous les autres services Cloud Microsoft  <br/>  Portail Office 365, authentification Office 365, &amp; Office Online  <br/>  Exchange Online, Exchange Online Protection et Skype entreprise Online  <br/> |
+|SharePoint  <br/> (12076:5020)  <br/> |SharePoint Online &amp; OneDrive entreprise  <br/> | DNS, liste de &amp; révocation de certificats, demandes CDN  <br/>  Tous les autres services Office 365 non spécifiquement pris en charge sur Azure ExpressRoute  <br/>  Tous les autres services Cloud Microsoft  <br/>  Portail Office 365, authentification Office 365, &amp; Office dans un navigateur  <br/>  Exchange Online, Exchange Online Protection et Skype entreprise Online  <br/> |
 
 > [!NOTE]
 > Pour obtenir le nombre de préfixes inférieur de chaque service, un minimum de chevauchement entre les services est conservé. Il s’agit du comportement attendu.
@@ -67,7 +67,7 @@ Pour cette raison, Fabrikam étend sa bande passante Azure ExpressRoute à la va
 
 |**Balise communautaire BGP utilisée**|**Fonctionnalité routable sur Azure ExpressRoute**|**Itinéraires Internet requis**|
 |:-----|:-----|:-----|
-|Skype Entreprise  <br/> (12076:5030)  <br/> |Signalisation SIP Skype, téléchargements, voix, vidéo et partage de bureau  <br/> | DNS, liste de &amp; révocation de certificats, demandes CDN  <br/>  Tous les autres services Office 365 non spécifiquement pris en charge sur Azure ExpressRoute  <br/>  Tous les autres services Cloud Microsoft  <br/>  Portail Office 365, authentification Office 365, &amp; Office Online  <br/>  Télémétrie Skype entreprise, conseils rapides pour les clients Skype, connectivité PIC (Public IM Connectivity)  <br/>  Exchange Online, Exchange Online Protection et SharePoint Online  <br/> |
+|Skype Entreprise  <br/> (12076:5030)  <br/> |Signalisation SIP Skype, téléchargements, voix, vidéo et partage de bureau  <br/> | DNS, liste de &amp; révocation de certificats, demandes CDN  <br/>  Tous les autres services Office 365 non spécifiquement pris en charge sur Azure ExpressRoute  <br/>  Tous les autres services Cloud Microsoft  <br/>  Portail Office 365, authentification Office 365, &amp; Office dans un navigateur  <br/>  Télémétrie Skype entreprise, conseils rapides pour les clients Skype, connectivité PIC (Public IM Connectivity)  <br/>  Exchange Online, Exchange Online Protection et SharePoint Online  <br/> |
 
 ### <a name="scenario-3-scoping-azure-expressroute-for-office-365-services-only"></a>Scénario 3: portée des services Azure ExpressRoute pour Office 365 uniquement
 
@@ -77,7 +77,7 @@ Pour garantir le trafic réseau associé aux services de Cloud Computing Microso
 
 |**Balise communautaire BGP utilisée**|**Fonctionnalité routable sur Azure ExpressRoute**|**Itinéraires Internet requis**|
 |:-----|:-----|:-----|
-|Exchange, Skype entreprise, SharePoint, &amp; autres services  <br/> (12076:5010, 12076:5020, 12076:5030, 12076:5100)  <br/> |Exchange Online &amp; Exchange Online Protection  <br/> SharePoint Online &amp; OneDrive entreprise  <br/> Signalisation SIP Skype, téléchargements, voix, vidéo et partage de bureau  <br/> Portail Office 365, authentification Office 365, &amp; Office Online  <br/> | DNS, liste de &amp; révocation de certificats, demandes CDN  <br/>  Tous les autres services Office 365 non spécifiquement pris en charge sur Azure ExpressRoute  <br/>  Tous les autres services Cloud Microsoft  <br/> |
+|Exchange, Skype entreprise, SharePoint, &amp; autres services  <br/> (12076:5010, 12076:5020, 12076:5030, 12076:5100)  <br/> |Exchange Online &amp; Exchange Online Protection  <br/> SharePoint Online &amp; OneDrive entreprise  <br/> Signalisation SIP Skype, téléchargements, voix, vidéo et partage de bureau  <br/> Portail Office 365, authentification Office 365, &amp; Office dans un navigateur  <br/> | DNS, liste de &amp; révocation de certificats, demandes CDN  <br/>  Tous les autres services Office 365 non spécifiquement pris en charge sur Azure ExpressRoute  <br/>  Tous les autres services Cloud Microsoft  <br/> |
 
 ## <a name="key-planning-considerations-to-using-bgp-communities"></a>Considérations clés relatives à l’utilisation des communautés BGP
 

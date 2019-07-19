@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 description: Avant de commencer à planifier votre réseau pour la connectivité réseau Office 365, il est important de comprendre les principes de connectivité pour gérer le trafic Office 365 en toute sécurité et obtenir les meilleures performances possibles. Cet article vous aidera à comprendre les instructions les plus récentes pour optimiser en toute sécurité la connectivité réseau Office 365.
-ms.openlocfilehash: e8bb819fee5aa53fe3ea23f7b3b691be131ddf1f
-ms.sourcegitcommit: 99bf8739dfe1842c71154ed9548ebdd013c7e59e
+ms.openlocfilehash: 9444cef0a93d10953a726da40d24ab18e29d8f24
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017294"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782204"
 ---
 # <a name="office-365-network-connectivity-principles"></a>Principes de connectivité réseau Office 365
 
@@ -42,7 +42,7 @@ Dans cet article, vous allez découvrir les éléments suivants:
 ## <a name="office-365-architecture"></a>Architecture Office 365
 <a name="BKMK_Architecture"> </a>
 
-Office 365 est un Cloud SaaS (Software-as-a-service) distribué qui fournit des scénarios de productivité et de collaboration via un ensemble varié de micro-services et d’applications, comme Exchange Online, SharePoint Online, Skype entreprise Online, Microsoft Teams, Exchange Online Protection, Office Online et bien d’autres. Bien que les applications Office 365 spécifiques puissent avoir leurs fonctionnalités uniques lorsqu’elles s’appliquent au réseau du client et à la connectivité au nuage, elles partagent des principaux, des objectifs et des modèles d’architecture. Ces principaux et modèles d’architecture pour la connectivité sont typiques pour de nombreux autres nuages de SaaS et sont en même temps différents des modèles de déploiement classiques des nuages de plateformes As-a-service et de l’infrastructure-as-a-service, tels que Microsoft Bleu.
+Office 365 est un Cloud SaaS (Software-as-a-service) distribué qui fournit des scénarios de productivité et de collaboration via un ensemble varié de micro-services et d’applications, comme Exchange Online, SharePoint Online, Skype entreprise Online, Microsoft Teams, Exchange Online Protection, Office dans un navigateur et bien d’autres. Bien que les applications Office 365 spécifiques puissent avoir leurs fonctionnalités uniques lorsqu’elles s’appliquent au réseau du client et à la connectivité au nuage, elles partagent des principaux, des objectifs et des modèles d’architecture. Ces principaux et modèles d’architecture pour la connectivité sont typiques pour de nombreux autres nuages de SaaS et sont en même temps différents des modèles de déploiement classiques des nuages de plateformes As-a-service et de l’infrastructure-as-a-service, tels que Microsoft Bleu.
   
 L’une des fonctionnalités architecturales les plus significatives d’Office 365 (généralement manquées ou mal interprétées par les planificateurs réseau) est qu’il s’agit d’un service distribué véritablement global, dans le contexte de la connexion des utilisateurs à ce service. L’emplacement du client Office 365 cible est important pour comprendre la localité de l’emplacement où les données client sont stockées dans le Cloud, mais l’expérience utilisateur avec Office 365 n’implique pas la connexion directe aux disques contenant les données. L’expérience utilisateur d’Office 365 (y compris les performances, la fiabilité et d’autres caractéristiques importantes en matière de qualité) implique la connectivité via des portes frontales de service hautement distribuées qui sont mises à l’échelle sur des centaines d’emplacements Microsoft à travers le monde. Dans la plupart des cas, la meilleure expérience utilisateur est obtenue en permettant au réseau du client d’acheminer les demandes des utilisateurs vers le point d’entrée du service Office 365 le plus proche, plutôt que de se connecter à Office 365 par le biais d’un point de sortie à un emplacement central ou une région.
   

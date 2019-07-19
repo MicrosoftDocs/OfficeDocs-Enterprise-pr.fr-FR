@@ -35,7 +35,7 @@ ID | Catégorie | ER | Adresses | Ports
 6 | Optimiser<BR>Obligatoire | Non | `*.germeetings.skype.de, *.infra.skype.de, *.online.skype.de, *.resources.skype.de`<BR>`51.4.68.0/26, 51.4.68.128/25, 51.5.69.0/26, 51.5.69.128/25, 2a01:4180:4040:1::/64, 2a01:4180:4040:2::/64, 2a01:4180:4040:7::/64, 2a01:4180:4040:8::/64` | **TCP :** 443, 80<BR>**UDP :** 3478
 7 | Par défaut<BR>Obligatoire | Non | `*.germeetings.skype.de, *.infra.skype.de, *.online.skype.de, *.resources.skype.de` | **TCP :** 5061, 50000-59999<BR>**UDP :** 50000-59999
 
-## <a name="microsoft-365-common-and-office-online"></a>Services communs Microsoft 365 et Office Online
+## <a name="microsoft-365-common-and-office"></a>Microsoft 365 Common and Office
 
 ID | Catégorie | ER | Adresses | Ports
 -- | ------------------- | -- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------

@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: 'Résumé : Utilisez ce guide de laboratoire de test pour créer un abonnement d’évaluation Office 365 à des fins d’évaluation ou de développement/test.'
-ms.openlocfilehash: 2f1856d203e892c98b44ccc1dbe1598d527165de
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: 06ffed9ab4b41c5e164cfadb951181a3406c67a3
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162507"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35781934"
 ---
 # <a name="office-365-devtest-environment"></a>Environnement de développement/test Office 365
 
@@ -118,7 +118,7 @@ Pour démarrer votre abonnement d’évaluation Office 365 E5, vous avez beso
     
 11. Sur la page suivante, attendez qu’Office 365 termine la configuration et que tous les titres soient visibles.
     
-Vous devriez voir la page principale du portail Office 365 à partir de laquelle vous pouvez accéder aux services Office Online et au Centre d’administration Microsoft 365.
+Vous devriez voir la page principale du portail Office 365 à partir de laquelle vous pouvez accéder aux services Office et au Centre d’administration Microsoft 365.
   
 Pour l’environnement de développement/test Office 365 d’entreprise simulé, voici la configuration que vous obtenez.
   

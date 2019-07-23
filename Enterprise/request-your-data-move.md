@@ -3,7 +3,7 @@ title: Procédure de demande d'un déplacement de données
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/28/2019
+ms.date: 07/22/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Les clients Office 365 existants devront envoyer une demande avant la date d'échéance de leur pays afin que les données client de leurs services Office 365 soient déplacées vers leur nouvelle région.
-ms.openlocfilehash: 7558e65672afdb1fa91b8a958472eab00fb89d0c
-ms.sourcegitcommit: aca382b615ce79c9f707f74cda6d90fbe87bb626
+ms.openlocfilehash: b1fc5606549597eb91990f3675d4d867d0605f04
+ms.sourcegitcommit: 626ffb9907d5225acccf94095f54c8244df8dd49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35392354"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "35818022"
 ---
 # <a name="how-to-request-your-data-move"></a>Procédure de demande d’un déplacement de données
 
@@ -37,20 +37,20 @@ Les clients Office 365 existants sont autorisés à demander une migration préc
 |Royaume-Uni  <br/> |15 mars 2017  <br/> |15 septembre 2017  <br/> |
 |Corée du Sud  <br/> |1er mai 2017  <br/> |31 octobre 2017  <br/> |
 |France  <br/> |14 mars 2018  <br/> |15 septembre 2018  <br/> |
-|Émirats arabes unis  <br/> |Vision  <br/> |Vision  <br/> |
+|Émirats arabes unis  <br/> |15 juillet 2019  <br/> |31 janvier 2020  <br/> |
 |Afrique du Sud  <br/> |Vision  <br/> |Vision  <br/> |
    
 ## <a name="how-to-request-a-move"></a>Procédure de demande d’un déplacement
 
-Les clients éligibles verront une page dans leur [Centre d’administration Office 365](https://aka.ms/365admin), qui leur permettra de demander que leurs données client principales soient déplacées vers leur nouvelle région de centre de données.  
+Les clients éligibles verront une page dans leur [Centre d’administration](https://aka.ms/365admin), ce qui leur permettra de demander que leurs données client fondamentales soient déplacées vers leur nouvelle région de centre de données.  
   
-Pour accéder à la page dans le Centre d'administration Office 365, dans le volet de navigation de gauche, développez **Paramètres**, puis cliquez sur **Profil de l'organisation**.
+Pour accéder à la page dans le centre d’administration 365 de Microsoft, dans le volet de navigation à gauche, développez **paramètres**, puis cliquez sur profil de l' **organisation**.
   
-![Menu Paramètres avec Profil organisationnel mis en surbrillance](media/22799fac-32b4-4f79-ae60-3f6ffb7cfbd7.png)
+![Menu paramètres avec profil organisationnel mis en surbrillance](media/22799fac-32b4-4f79-ae60-3f6ffb7cfbd7.png)
   
 Sur la page **Profil de l'organisation**, faites défiler jusqu'à la section sur l' **option concernant l'emplacement des données**. 
   
-![Carte de résidence des données](media/fdb02cd0-825d-4d9e-bb35-6f806282884f.png)
+![Carte de résidence des données](media/dataresidencyae.jpg)
   
 **Vous ne verrez peut-être pas cette section si l’une des conditions suivantes est appliquée**:
 - Votre client n’est pas éligible au programme de déplacement.  Le droit est déterminé par le pays d’inscription du client.
@@ -58,7 +58,7 @@ Sur la page **Profil de l'organisation**, faites défiler jusqu'à la section su
   
 Si votre organisation a des besoins en matière de résidence des données et que vous devez demander une migration précoce, cliquez sur **modifier** en haut à droite de la section. Une nouvelle section apparaîtra sur le côté droit de votre écran en expliquant les détails du programme de déplacement. Sélectionnez le bouton bascule en regard du texte indiquant : **Oui, mon organisation a des besoins spécifiques en matière d'emplacement des données**. Cliquez ensuite sur **Enregistrer**.
   
-![Écran de l'action d'abonnement dans le centre de données](media/f97ab8d2-b0e1-49bf-9d6b-bf75f3081233.png)
+![Écran de l'action d'abonnement dans le centre de données](media/dataresidencyflyoutae.jpg)
   
 Le texte de la section sur l' **option concernant l'emplacement des données** change et indique : **Votre organisation a demandé à déplacer ses données client essentielles**. Vous recevez également un message de confirmation dans votre centre de messages. Cela permet de confirmer que votre demande de déplacement a abouti. 
 

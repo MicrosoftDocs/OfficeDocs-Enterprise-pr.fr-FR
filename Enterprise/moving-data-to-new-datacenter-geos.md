@@ -3,7 +3,7 @@ title: Déplacement de données essentielles vers les nouvelles régions de cent
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/28/2019
+ms.date: 07/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 description: "Nouveau centre de régions centres ajouter de la capacité et des ressources de calcul pour prendre en charge notre demande de client et sa croissance d’utilisation en cours. En outre, les nouvelles régions de centre de données permettent d'héberger des données dans la région pour les données client essentielles. Le terme « données client essentielles » fait référence à un sous-ensemble de données client définies dans les conditions d'utilisation de Microsoft Online Services : Exchange Onlinecontenu de la boîte aux lettres (corps de courrier électronique, entrées de calendrier et contenu de pièces jointes), SharePoint Onlinecontenu du site et fichiers stockés dans ce site, ainsi que fichiers téléchargés vers OneDrive Entreprise."
-ms.openlocfilehash: 63b094772fc5e199124251e204b116e74cedec0a
-ms.sourcegitcommit: aca382b615ce79c9f707f74cda6d90fbe87bb626
+ms.openlocfilehash: df52b50f6e291a80aeb7b8d783937d225bfb6e29
+ms.sourcegitcommit: 842ac51577317dfc8d2adc46d09b4d735f29bc4f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35392344"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35907637"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Déplacement de données essentielles vers les nouvelles régions de centres de données Office 365
 
@@ -39,8 +39,8 @@ Les clients existants dont les données client essentielles sont stockées dans 
 |****Royaume-Uni****| Europe | Royaume-Uni | Septembre 2016 |
 |****Corée du Sud****| Asie/Pacifique | Corée du Sud | Avril 2017 |
 |****France****| Europe | France | Mars 2018 |
-|Émirats Arabes Unis * * * *| Europe | Émirats arabes unis | Annoncé |
-|Afrique du Sud * * * *| Europe | Afrique du Sud | Annoncé |
+|Émirats Arabes Unis * * * *| Europe | Émirats arabes unis | 2019 juin |
+|Afrique du Sud * * * *| Europe | Afrique du Sud | Juillet 2019 |
   
 Les données client essentielles des nouveaux clients ou des clients Office 365 créés après la mise à disposition de la nouvelle région de centre de données seront automatiquement stockées au repos dans cette nouvelle région.
   

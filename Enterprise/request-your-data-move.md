@@ -3,7 +3,7 @@ title: Procédure de demande d'un déplacement de données
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 07/22/2019
+ms.date: 07/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Les clients Office 365 existants devront envoyer une demande avant la date d'échéance de leur pays afin que les données client de leurs services Office 365 soient déplacées vers leur nouvelle région.
-ms.openlocfilehash: b1fc5606549597eb91990f3675d4d867d0605f04
-ms.sourcegitcommit: 626ffb9907d5225acccf94095f54c8244df8dd49
+ms.openlocfilehash: 4df9c3481782f6d3f0b8431bd91677fb1262812c
+ms.sourcegitcommit: 842ac51577317dfc8d2adc46d09b4d735f29bc4f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "35818022"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35907647"
 ---
 # <a name="how-to-request-your-data-move"></a>Procédure de demande d’un déplacement de données
 
@@ -38,7 +38,7 @@ Les clients Office 365 existants sont autorisés à demander une migration préc
 |Corée du Sud  <br/> |1er mai 2017  <br/> |31 octobre 2017  <br/> |
 |France  <br/> |14 mars 2018  <br/> |15 septembre 2018  <br/> |
 |Émirats arabes unis  <br/> |15 juillet 2019  <br/> |31 janvier 2020  <br/> |
-|Afrique du Sud  <br/> |Vision  <br/> |Vision  <br/> |
+|Afrique du Sud  <br/> |25 juillet 2019  <br/> |31 janvier 2020  <br/> |
    
 ## <a name="how-to-request-a-move"></a>Procédure de demande d’un déplacement
 
@@ -53,14 +53,14 @@ Sur la page **Profil de l'organisation**, faites défiler jusqu'à la section su
 ![Carte de résidence des données](media/dataresidencyae.jpg)
   
 **Vous ne verrez peut-être pas cette section si l’une des conditions suivantes est appliquée**:
-- Votre client n’est pas éligible au programme de déplacement.  Le droit est déterminé par le pays d’inscription du client.
-- Toutes vos données se trouvent déjà dans la nouvelle région (reportez-vous à la section sur l’emplacement des données de la page). 
+- Votre client n’est pas éligible au programme Office 365 Move.  Le droit est déterminé par le pays d’inscription du client.
+- Toutes vos données client principales sur REST se trouvent déjà dans la nouvelle région (consultez la section emplacement des données de la page). 
   
-Si votre organisation a des besoins en matière de résidence des données et que vous devez demander une migration précoce, cliquez sur **modifier** en haut à droite de la section. Une nouvelle section apparaîtra sur le côté droit de votre écran en expliquant les détails du programme de déplacement. Sélectionnez le bouton bascule en regard du texte indiquant : **Oui, mon organisation a des besoins spécifiques en matière d'emplacement des données**. Cliquez ensuite sur **Enregistrer**.
+Si votre organisation a des besoins en matière de résidence des données et que vous devez demander une migration précoce, cliquez sur **opt-in** en haut à droite de la section. Une nouvelle section apparaît sur le côté droit de l’écran, expliquant les détails du programme de déplacement d’Office 365. Sélectionnez le bouton bascule en regard du texte indiquant que **je souhaite que les données client principales de mon organisation**soient migrées. Cliquez ensuite sur **Enregistrer**.
   
 ![Écran de l'action d'abonnement dans le centre de données](media/dataresidencyflyoutae.jpg)
   
-Le texte de la section sur l' **option concernant l'emplacement des données** change et indique : **Votre organisation a demandé à déplacer ses données client essentielles**. Vous recevez également un message de confirmation dans votre centre de messages. Cela permet de confirmer que votre demande de déplacement a abouti. 
+Le texte de la section données de **résidence** doit apparaître pour indiquer que **votre organisation a demandé de déplacer ses données client principales.** Vous recevez également un message de confirmation dans votre centre de messages. Cela permet de confirmer que votre demande de déplacement a abouti. 
 
 
   

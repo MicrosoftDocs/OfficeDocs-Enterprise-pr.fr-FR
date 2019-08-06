@@ -1,6 +1,6 @@
 ---
 title: Office 365 pour entreprises
-description: Microsoft Office 365 fournit des services de Cloud en ligne puissants qui permettent la collaboration, la sécurité et la conformité, la mobilité et intellgence et Analytics. Cette page fournit des conseils aux administrateurs et aux professionnels de l'informatique qui déploient, configurent et gèrent les services Office 365 dans des organisations d'entreprise.
+description: Microsoft Office 365 fournit des services de Cloud en ligne puissants qui permettent la collaboration, la sécurité et la conformité, la mobilité, l’intelligence et l’analyse. Cette page fournit des conseils aux administrateurs et aux professionnels de l’informatique qui déploient, configurent et gèrent les services Office 365 dans des organisations d’entreprise.
 services: o365-solutions
 author: robmazz
 manager: laurawi
@@ -14,15 +14,15 @@ ms.devlang: na
 ms.topic: landing-page
 ms.date: 8/21/2018
 ms.author: robmazz
-ms.openlocfilehash: 9b1f6d86914e23ebd9ebf4e00a16018dc8f2bfd2
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 9be2aa25a0b59d9a13a9cee3a1b1b59f240f2030
+ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487130"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34490727"
 ---
-<h1>Office 365 pour entreprises</h1>
-<p>Microsoft Office&nbsp;365 fournit des services de Cloud en ligne puissants qui permettent la collaboration, la sécurité et la conformité, la mobilité et intellgence et Analytics. Cette page fournit des liens vers des conseils pour les administrateurs et les professionnels de l'informatique qui déploient, configurent et gèrent les services Office&nbsp;365 dans des organisations d'entreprise.</p>
+<h1>Office 365 Entreprise</h1>
+<p>Microsoft Office&nbsp;365 fournit des services de Cloud en ligne puissants qui permettent la collaboration, la sécurité et la conformité, la mobilité, l’intelligence et l’analyse. Cette page fournit des liens vers des conseils pour les administrateurs et les professionnels de l’informatique qui déploient, configurent et gèrent les services Office&nbsp;365 dans des organisations d’entreprise.</p>
 <ul class="cardsF panelContent">
     <li>
         <a href="https://www.microsoft.com/fasttrack/microsoft-365/office-365">
@@ -36,7 +36,7 @@ ms.locfileid: "33487130"
                     </div>
                     <div class="cardText">
                         <h3>Déploiement guidé avec FastTrack</h3>
-                <p>Utilisez le centre FastTrack pour Office&nbsp;365 pour obtenir de l'aide pour la planification, le déploiement et l'adoption des&nbsp;services 365 Office pour votre organisation.</p>
+                <p>Utilisez le centre FastTrack pour Office&nbsp;365 pour obtenir de l’aide pour la planification, le déploiement et l’adoption des&nbsp;services 365 Office pour votre organisation.</p>
                     </div>
                 </div>
             </div>
@@ -74,7 +74,7 @@ ms.locfileid: "33487130"
                     </div>
                     <div class="cardText">
                         <h3>Office 365 ProPlus</h3>
-                <p>Planifiez, déployez et gérez&nbsp;Office 365 ProPlus dans votre environnement d'entreprise.</p>
+                <p>Planifiez, déployez et gérez&nbsp;Office 365 ProPlus dans votre environnement d’entreprise.</p>
                     </div>
                 </div>
             </div>
@@ -112,7 +112,7 @@ ms.locfileid: "33487130"
                     </div>
                     <div class="cardText">
                         <h3>Déploiements hybrides</h3>
-                <p>ConFigurez et gérez un déploiement hybride entre votre infrastructure locale existante et Office&nbsp;365.</p>
+                <p>Configurez et gérez un déploiement hybride entre votre infrastructure locale existante et Office&nbsp;365.</p>
                     </div>
                 </div>
             </div>
@@ -131,7 +131,7 @@ ms.locfileid: "33487130"
                     </div>
                     <div class="cardText">
                         <h3>Formation Office 365</h3>
-                <p>Améliorez vos&nbsp;connaissances et compétences d'administration d'Office&nbsp;365 avec les cours de formation Office 365 pour les professionnels de l'informatique.</p>
+                <p>Améliorez vos&nbsp;connaissances et compétences d’administration d’Office&nbsp;365 avec les cours de formation Office 365 pour les professionnels de l’informatique.</p>
                     </div>
                 </div>
             </div>
@@ -185,7 +185,7 @@ ms.locfileid: "33487130"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3><a href="https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online">Skype Entreprise Online</a></h3>
+                        <h3><a href="https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online">Skype Entreprise Online</a></h3>
                     </div>
                 </div>
             </div>
@@ -274,7 +274,7 @@ ms.locfileid: "33487130"
                     </div>
                     <div class="cardText">
                         <h3>Obtenir une assistance</h3>
-                        <p><a href="https://support.office.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?ui=en-US&rs=en-US&ad=US">Contactez le support technique pour obtenir&nbsp;de l'aide sur Office 365.</a></p>
+                        <p><a href="https://support.office.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?ui=en-US&rs=en-US&ad=US">Contactez le support technique pour obtenir&nbsp;de l’aide sur Office 365.</a></p>
                     </div>
                 </div>
             </div>

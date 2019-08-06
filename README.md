@@ -1,20 +1,22 @@
 # <a name="contributing"></a>Contribution
 
-Ce projet les contributions et suggestions sont les bienvenus.  La plupart des contributions vous obligent à accepter pour un collaborateur de licence accord CLA déclarant que vous avez le droit et en fait faire, nous accorder les droits d’utilisation de votre contribution. Pour plus d’informations, visitez le site https://cla.microsoft.com.
+Ce projet accueille des contributions et des suggestions.  La plupart des contributions vous obligent à accepter un contrat de licence de contributeur (CLA) déclarant que vous avez le droit d’accorder et de faire part de ces droits pour utiliser votre contribution. Pour plus d’informations https://cla.microsoft.com, reportez-vous à.
 
-Lorsque vous soumettez une demande d’extraction, un CLA-bot détermine automatiquement si vous avez besoin fournir un CLA et de le décorer la PR appropriée (par exemple, étiqueter, commentaires). Il suffit de suivre les instructions fournies par le robot. Vous devrez le faire qu’une seule fois sur toutes les pensions à l’aide de notre CLA.
+Lorsque vous soumettez une demande de tirage, un CLA-bot détermine automatiquement si vous devez fournir un CLA et décorer le PR de manière appropriée (par exemple, étiquette, commentaire). Suivez simplement les instructions fournies par le bot. Vous ne devez effectuer cette opération qu’une seule fois pour toutes les pensions à l’aide de notre CLA.
 
-Ce projet a adopté le [code de conduite Open Source de Microsoft](https://opensource.microsoft.com/codeofconduct/). Pour plus d’informations, reportez-vous à la [FAQ relative au code de conduite](https://opensource.microsoft.com/codeofconduct/faq/) ou contactez [opencode@microsoft.com](mailto:opencode@microsoft.com) pour toute question ou tout commentaire.
+Ce projet a adopté le [code de conduite Microsoft Open Source](https://opensource.microsoft.com/codeofconduct/). Pour plus d’informations, reportez-vous à la [FAQ relative au code de conduite](https://opensource.microsoft.com/codeofconduct/faq/) ou contactez [opencode@microsoft.com](mailto:opencode@microsoft.com) pour toute question ou tout commentaire.
 
 # <a name="legal-notices"></a>Mentions légales
 
-Microsoft et les contributeurs qu’il vous accordent une licence pour la documentation de Microsoft et d’autres contenus dans ce référentiel sous [Creative Commons Attribution 4.0 International licence publique](https://creativecommons.org/licenses/by/4.0/legalcode), consultez le fichier de [licence](LICENSE) et qu’il vous accorde une licence d’un le code contenu dans le référentiel sous la [Licence du MIT](https://opensource.org/licenses/MIT), consultez le fichier de [CODE licence](LICENSE-CODE) .
+Microsoft et tous les contributeurs vous accordent une licence à la documentation Microsoft et à d’autres contenus de ce référentiel sous la [licence publique internationale 4,0 de Creative](https://creativecommons.org/licenses/by/4.0/legalcode), d’attribution de contenu, voir le fichier de [licence](LICENSE) et vous accorder une licence à tout code dans le référentiel sous la [licence MIT](https://opensource.org/licenses/MIT), consultez le fichier de [Code de licence](LICENSE-CODE) .
 
-Microsoft, Windows, Microsoft Azure et/ou autres produits Microsoft et les services référencés dans la documentation peuvent être des marques commerciales, soit des marques déposées de Microsoft Corporation aux États-Unis et/ou dans d’autres pays. Les licences pour ce projet n’accordent pas les droits pour utiliser les noms, les logos ou les marques déposées Microsoft. Conditions de Microsoft, consultez http://go.microsoft.com/fwlink/?LinkID=254653.
+Microsoft, Windows, Microsoft Azure et/ou d’autres produits et services Microsoft mentionnés dans la documentation peuvent être des marques ou des marques déposées de Microsoft aux États-Unis et/ou dans d’autres pays.
+Les licences pour ce projet ne vous permettent pas de vous accorder des droits d’utilisation des noms, logos ou marques de Microsoft.
+Les conseils de la marque générale de Microsoft sont http://go.microsoft.com/fwlink/?LinkID=254653disponibles à l’adresse.
 
-Vous pouvez trouver des informations sur la confidentialité à https://privacy.microsoft.com/en-us/
+Vous trouverez des informations sur la confidentialité à l’adresse suivante:https://privacy.microsoft.com/en-us/
 
-Microsoft et une réserve de collaborateurs que tous les autres droits, en vertu de leurs droits respectifs, brevets ou marques commerciales, que ce soit par implication, estoppel ou autrement.
+Microsoft et tous les contributeurs réservent tous les droits, qu’ils soient sous leurs droits d’auteur, brevets ou marques de sous-traitants, par implication, estoppel ou autre.
 
-## <a name="microsoft-open-source-code-of-conduct"></a>Code de conduite Open Source de Microsoft
-Ce projet a adopté le [code de conduite Open Source de Microsoft](https://opensource.microsoft.com/codeofconduct/). Pour plus d’informations, reportez-vous à la [FAQ relative au code de conduite](https://opensource.microsoft.com/codeofconduct/faq/) ou contactez [opencode@microsoft.com](mailto:opencode@microsoft.com) pour toute question ou tout commentaire.
+## <a name="microsoft-open-source-code-of-conduct"></a>Code de conduite Microsoft Open Source
+Ce projet a adopté le [code de conduite Microsoft Open Source](https://opensource.microsoft.com/codeofconduct/). Pour plus d’informations, reportez-vous à la [FAQ relative au code de conduite](https://opensource.microsoft.com/codeofconduct/faq/) ou contactez [opencode@microsoft.com](mailto:opencode@microsoft.com) pour toute question ou tout commentaire.

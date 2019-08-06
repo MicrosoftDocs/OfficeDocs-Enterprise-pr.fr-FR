@@ -15,16 +15,16 @@ search.appverid:
 - BCS160
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 description: Utilisez les applets de commande PowerShell de déploiement centralisé pour vous aider à déployer et gérer des compléments Office pour votre organisation Office 365.
-ms.openlocfilehash: 404085d79827664437f3ad327fac4a99166adcf4
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 3d6495646c6ce0a1d15f2d911f1fa8af92e3c2c6
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071140"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782584"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Utiliser les applets de commande PowerShell de déploiement centralisé pour gérer les compléments
 
-En tant qu’administrateur Office 365, vous pouvez déployer des compléments Office auprès des utilisateurs via la fonctionnalité de déploiement centralisée (consultez la rubrique [Manage Deployment of Office 365 Add-ins in the office 365 Admin Center](https://support.office.com/article/737e8c86-be63-44d7-bf02-492fa7cd9c3f)). Outre le déploiement de compléments Office via le centre d’administration Office 365, vous pouvez également utiliser Microsoft PowerShell. [Téléchargez](https://go.microsoft.com/fwlink/p/?linkid=850850) les applets de commande PowerShell de déploiement centralisé à partir du centre de téléchargement Microsoft. 
+En tant qu’administrateur Office 365, vous pouvez déployer des compléments Office auprès des utilisateurs via la fonctionnalité de déploiement centralisée (consultez la rubrique [Manage Deployment of Office 365 Add-ins in the Admin Center](https://support.office.com/article/737e8c86-be63-44d7-bf02-492fa7cd9c3f)). Outre le déploiement de compléments Office via le centre d’administration, vous pouvez également utiliser Microsoft PowerShell. [Téléchargez](https://go.microsoft.com/fwlink/p/?linkid=850850) les applets de commande PowerShell de déploiement centralisé à partir du centre de téléchargement Microsoft. 
   
 ## <a name="what-do-you-want-to-do"></a>Que souhaitez-vous faire ?
 

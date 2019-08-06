@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Certains réseaux d’entreprise restreignent l’accès aux emplacements Internet génériques ou incluent une déformation ou un traitement substantiel du trafic réseau. Pour s’assurer que les ordinateurs sur des réseaux comme ceux-ci peuvent accéder à Office 365, les administrateurs réseau et proxy doivent gérer la liste des noms de domaine complets, des URL et des adresses IP qui composent la liste des points de terminaison Office 365. Ceux-ci doivent être ajoutés à l’itinéraire direct, à la déviation du proxy et/ou aux règles de pare-feu et/ou aux fichiers PAC pour s’assurer que les demandes réseau sont en mesure d’atteindre Office 365.
-ms.openlocfilehash: 37f90ba5c008a4e0b562526d10185e01d07e4918
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 21129387aeaf20f34e8528829dd942fddd381108
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067170"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782474"
 ---
 # <a name="managing-office-365-endpoints"></a>Gestion des points de terminaison Office 365
 
@@ -185,7 +185,7 @@ Office 365 et d’autres services Microsoft utilisent plusieurs services tiers t
 ### <a name="i-have-to-have-the-minimum-connectivity-possible-for-office-365"></a>Je dois disposer de la connectivité minimale pour Office 365
 <a name="bkmk_thirdparty"> </a>
 
-Comme Office 365 est une suite de services conçue pour fonctionner sur Internet, les promesses de fiabilité et de disponibilité sont basées sur de nombreux services Internet standard disponibles. Par exemple, les services Internet standard, tels que DNS, la liste de réVOCATION de certificats et CDN doivent être accessibles pour utiliser Office 365, tout comme ils doivent être accessibles pour utiliser les services Internet modernes les plus récents.
+Comme Office 365 est une suite de services conçue pour fonctionner sur Internet, les promesses de fiabilité et de disponibilité sont basées sur de nombreux services Internet standard disponibles. Par exemple, les services Internet standard, tels que DNS, la liste de révocation de certificats et CDN doivent être accessibles pour utiliser Office 365, tout comme ils doivent être accessibles pour utiliser les services Internet modernes les plus récents.
 
 La suite Office 365 est divisée en domaines de service principaux. Ces éléments peuvent être activés de manière sélective pour la connectivité et il existe un domaine commun qui est une dépendance de tous et est toujours obligatoire.
 
@@ -194,7 +194,7 @@ La suite Office 365 est divisée en domaines de service principaux. Ces élémen
 |**Exchange** <br/> |Exchange Online et Exchange Online Protection <br/> |
 |**SharePoint** <br/> |Sharepoint Online et OneDrive Entreprise <br/> |
 |**Skype Entreprise Online et Microsoft Teams** <br/> |Skype entreprise et Microsoft teams <br/> |
-|**Courant** <br/> |Office 365 Pro plus, Office Online, Azure AD et autres points de terminaison réseau courants <br/> |
+|**Courant** <br/> |Office 365 Pro plus, Office dans un navigateur, Azure AD et d’autres points de terminaison réseau courants <br/> |
 
 En plus des services Internet de base, il existe des services tiers qui sont uniquement utilisés pour intégrer les fonctionnalités. Bien que ces éléments soient nécessaires à l’intégration, ils sont marqués comme étant facultatifs dans l’article relatif aux points de terminaison Office 365, ce qui signifie que les fonctionnalités de base du service continueront à fonctionner si le point de terminaison n’est pas accessible. Tout point de terminaison réseau requis aura l’attribut required défini sur true. Tout point de terminaison réseau facultatif aura l’attribut required défini sur false et l’attribut notes détaillera la fonctionnalité manquante dont vous devez vous attendre si la connectivité est bloquée.
   

@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 'Résumé: décrit les considérations relatives à la capacité réseau, aux accélérateurs de réseau étendu et aux périphériques d’équilibrage de charge utilisés pour se connecter à Office 365.'
-ms.openlocfilehash: 6ff63232d4efe581ed4a6ba0a83730a5362ecff7
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: b6804e7922178a3b653b3767a33e02e2a382ef93
+ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069370"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34722623"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Planifier les périphériques réseau qui se connectent aux services Office 365
 
@@ -66,7 +66,7 @@ Nous fournissons une solution NLB basée sur des logiciels intégrée à Windows
   
 ## <a name="firewalls-and-proxies"></a>Pare-feu et proxys
 
-Pour plus d’informations sur la configuration des pare-feu et des proxys pour se connecter à Office 365, lisez la rubrique [Managing office 365 Endpoints](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a), [Network connectivity to Office 365](network-connectivity.md)et [Office 365 Endpoints FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) pour en savoir plus sur les appareils et la sélection de circuits.
+Pour plus d’informations sur la configuration des pare-feu et des proxys pour se connecter à Office 365, consultez la rubrique [Managing office 365 Endpoints](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a), Evaluation de la [connectivité réseau Office 365](assessing-network-connectivity.md)et Forum aux questions sur les [points de terminaison Office 365](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) pour en savoir plus sur les appareils et les circuits. sélection.
   
 ## <a name="see-also"></a>Voir aussi
 

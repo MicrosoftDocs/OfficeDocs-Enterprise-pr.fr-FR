@@ -14,12 +14,12 @@ search.appverid:
 - BCS160
 ms.assetid: e2fdfc8d-547e-4419-8628-2738ed4e0f46
 description: Si vous avez interrompu votre déploiement FastTrack et que vous êtes prêt à migrer les données vers Office 365, il s’agit du point de départ.
-ms.openlocfilehash: 9efaad6da9723d588cc0e42151bf297b271e4e5c
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: cd9f113f7b8e66e22ad61c4f406ac693a8aa3695
+ms.sourcegitcommit: 1e6e91fbdcbb6d8ef21d30f32c1f8e704f4f31ba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070120"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35597550"
 ---
 # <a name="migrate-your-organization-data-to-office-365-enterprise"></a>Effectuer une migration de vos données d’organisation vers Office 365 Entreprise
 
@@ -35,9 +35,8 @@ Si vous souhaitez obtenir de l’aide concernant la configuration d’Office 365
 - Trouvez des solutions de remplacement [membres de votre organisation peuvent migrer leurs propres courrier électronique, contacts et calendriers](https://support.office.com/article/Migrate-email-and-contacts-to-Office-365-for-business-a3e3bddb-582e-4133-8670-e61b9f58627e).
 
 ## <a name="migrate-files-and-folders"></a>Effectuer une migration de fichiers et dossiers
-- [Migrer votre contenu vers SharePoint Online](https://support.office.com/article/d8c6ce52-f8a2-4661-97f7-45e49351bdb9). (Administrateur)
-- [Configurer OneDrive Entreprise hybride-feuille de route](https://docs.microsoft.com/SharePoint/hybrid/configure-hybrid-onedrive-for-businessroadmap)(Administrateur)
-- [Migrer des listes ou des fichiers à partir de vos bibliothèques de document locales SharePoint ou des partages de fichiers locaux vers SharePoint ou OneDrive dans Office 365](https://docs.microsoft.com/sharepointmigration/introducing-the-sharepoint-migration-tool). (utilisateur final)
+- [Migrer vers SharePoint Online et OneDrive](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online). Administratifs
+- Feuille de [route de configuration hybride de SharePoint Server](https://docs.microsoft.com/SharePoint/hybrid/configuration-roadmaps). Administratifs
 
 ## <a name="migrate-skype-for-business-users"></a>Migrer les utilisateurs de Skype Entreprise
 - [Migrer vers Skype entreprise Online](https://technet.microsoft.com/library/jj204969.aspx). (Administrateur)

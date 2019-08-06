@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: Utilisez ces informations pour découvrir comment Office 365 utilise les réseaux de distribution de contenu (CDN) pour améliorer les performances.
-ms.openlocfilehash: 8694f8aa4caf6161d221d1375d97ad5b72fb1818
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 080e4bac5f77defc9fd87f22c0f2cb1466dc8945
+ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068020"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34722663"
 ---
 # <a name="content-delivery-networks-cdns"></a>Réseaux de distribution de contenu (CDN)
 
@@ -48,6 +48,11 @@ CDN aide à améliorer les performances du service Cloud de plusieurs façons:
 ## <a name="the-office-365-cdn"></a>Le CDN Office 365
 
 Le réseau de distribution de contenu (CDN) Office 365 intégré permet aux administrateurs d’Office 365 de fournir de meilleures performances pour les pages SharePoint Online de leur organisation en mettant en cache les composants statiques plus près des navigateurs qui les demandent, ce qui permet d’accélérer télécharge et réduit la latence. Le CDN Office 365 utilise le [protocole http/2](https://en.wikipedia.org/wiki/HTTP/2) pour améliorer la compression et les vitesses de téléchargement.
+
+> [!NOTE]
+> Restrictions d’utilisation du CDN Office 365:
+> + Le CDN Office 365 est uniquement disponible pour les clients dans le Cloud de **production** (dans le monde entier). Les clients des nuages des États-Unis, de Chine et d’Allemagne ne prennent actuellement pas en charge le CDN Office 365.
+> + Le CDN Office 365 ne prend actuellement pas en charge les clients configurés avec des domaines personnalisés ou «personnel». Si vous avez ajouté un domaine à votre client à l’aide des instructions de la rubrique [Add a Domain to Office 365](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain?view=o365-worldwide), le CDN Office 365 renverra des erreurs lorsque vous tenterez d’accéder au contenu à partir du CDN.
 
 Le réseau de distribution de contenu Office 365 est composé de plusieurs réseaux de distribution de contenu qui vous permettent d’héberger des ressources statiques à différents emplacements (ou _origines_) et de les servir à partir de réseaux à haut débit mondiaux. Selon le type de contenu que vous souhaitez héberger sur le réseau de distribution de contenu Office 365, vous pouvez ajouter des origines **publiques**, **privées** ou les deux.
 
@@ -182,7 +187,7 @@ Voici un lien que vous pouvez utiliser pour revenir : [https://aka.ms/o365cdns]
 
 [Principes de connectivité réseau Office 365](https://aka.ms/o365networkingprinciples)
 
-[Connectivité réseau à Office 365](network-connectivity.md)
+[Évaluation de la connectivité réseau Office 365](assessing-network-connectivity.md)
 
 [Gestion des points de terminaison Office 365](https://docs.microsoft.com/en-us/office365/enterprise/managing-office-365-endpoints)
 

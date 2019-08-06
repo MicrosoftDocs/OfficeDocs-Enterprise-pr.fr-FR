@@ -24,28 +24,27 @@ search.appverid:
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
 description: 'Découvrez comment ajouter plusieurs utilisateurs à Office 365 pour les entreprises à partir d’une liste dans une feuille de calcul ou dans un autre fichier au format CSV. Regardez une vidéo sur YouTube qui explique comment ajouter des comptes à Office 365. À la fin de ce processus, chaque utilisateur disposant d’un compte dispose d’une boîte aux lettres Office 365. '
-ms.openlocfilehash: ef4093592d4f6fc8e38ee053b53c73193a821d36
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: ece3cc6f207b5c0caaa03880da925eb3b6ac2c5b
+ms.sourcegitcommit: 6c3003380491fba6dacb299754716901c20ba629
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068690"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "36198656"
 ---
 # <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>Ajouter plusieurs utilisateurs simultanément à Office 365 - Aide de l’administrateur
 
 [] Les membres de votre équipe ont besoin d'un compte d'utilisateur pour pouvoir se connecter et accéder aux services Office 365, tels que le courrier et Office. Si votre équipe compte de nombreux membres, vous pouvez ajouter tous leurs comptes simultanément à partir d'une feuille de calcul Excel ou d'un autre fichier enregistré au format CSV. [Qu'est-ce que le format CSV ?](add-several-users-at-the-same-time.md#__toc316652088)
   
-## <a name="add-multiple-users-to-office-365-in-the-office-365-admin-center"></a>Ajouter plusieurs utilisateurs à Office 365 dans le Centre d'administration Office 365
+## <a name="add-multiple-users-to-office-365-in-the-microsoft-365-admin-center"></a>Ajouter plusieurs utilisateurs à Office 365 dans le centre d’administration Microsoft 365
 
 1. Connectez-vous à Office 365 avec votre compte professionnel ou scolaire. 
     
-2. Dans le Centre d'administration Office 365, sélectionnez **Utilisateurs** \> **Utilisateurs actifs**.
+2. Dans le centre d’administration, **** \> choisissez utilisateurs **actifs**.
     
-    ![In the Admin center choose Users and then Active users](media/12086d98-a8b4-4c48-89cf-b78ad8058ff1.png)
+    ![Dans le centre d’administration, sélectionnez utilisateurs, puis utilisateurs actifs.](media/12086d98-a8b4-4c48-89cf-b78ad8058ff1.png)
   
-3. Dans le menu déroulant **Autres**, choisissez **Importer plusieurs utilisateurs**.
     
-4. Dans le panneau **Importer plusieurs utilisateurs**, vous pouvez éventuellement télécharger un exemple de fichier CSV avec ou sans exemple de données inclus. 
+3. Dans le panneau **Importer plusieurs utilisateurs**, vous pouvez éventuellement télécharger un exemple de fichier CSV avec ou sans exemple de données inclus. 
     
     ![In the More drop-down, choose Import multiple users](media/77df8a4a-fd00-4fbe-bf1c-d234fc1d5e93.png)
   
@@ -63,15 +62,15 @@ ms.locfileid: "34068690"
   
   ```
 
-5. Entrez un chemin d'accès dans la zone, ou choisissez **Parcourir** pour accéder à l'emplacement du fichier CSV, puis sélectionnez **Vérifier**.
+4. Entrez un chemin d'accès dans la zone, ou choisissez **Parcourir** pour accéder à l'emplacement du fichier CSV, puis sélectionnez **Vérifier**.
     
     ![Your CSV file is verified](media/a43d49db-b2ab-4200-8ddf-0bc846ac6fe5.png)
   
     S'il existe des problèmes avec le fichier, ceux-ci s'affichent dans le panneau. Vous pouvez également télécharger un fichier journal.
     
-6. Dans la boîte de dialogue **Définir les options utilisateur**, vous pouvez définir le statut de connexion et choisir la licence produit à affecter à tous les utilisateurs. 
+5. Dans la boîte de dialogue **Définir les options utilisateur**, vous pouvez définir le statut de connexion et choisir la licence produit à affecter à tous les utilisateurs. 
     
-7. Dans la boîte de dialogue **Affichez vos résultats**, vous pouvez choisir d'envoyer les résultats à vous-même ou à d'autres utilisateurs (les mots de passe seront au format texte brut). En outre, vous pouvez voir combien d'utilisateurs ont été créés et si vous avez besoin d'acheter des licences supplémentaires pour les attribuer à certains des nouveaux utilisateurs. 
+6. Dans la boîte de dialogue **Affichez vos résultats**, vous pouvez choisir d'envoyer les résultats à vous-même ou à d'autres utilisateurs (les mots de passe seront au format texte brut). En outre, vous pouvez voir combien d'utilisateurs ont été créés et si vous avez besoin d'acheter des licences supplémentaires pour les attribuer à certains des nouveaux utilisateurs. 
     
 ## <a name="watch-the-video"></a>Voir la vidéo
 <a name="bk_preview"> </a>
@@ -146,7 +145,7 @@ Une fois le fichier enregistré, il est probable qu'un message indiquant que cer
     
 - ** Si les nouveaux utilisateurs n'apparaissent pas tout de suite dans Office 365, patientez quelques minutes. ** La répercussion des modifications dans tous les services d'Office 365 peut prendre du temps. 
     
-## <a name="add-multiple-users-to-office-365-in-the-old-office-365-admin-center"></a>Ajouter plusieurs utilisateurs à Office 365 dans l'ancien Centre d'administration Office 365
+## <a name="add-multiple-users-to-office-365-in-the-old-admin-center"></a>Ajouter plusieurs utilisateurs à Office 365 dans l’ancien centre d’administration
 
 1. Téléchargez [cet exemple de feuille de calcul](https://www.microsoft.com/en-us/download/details.aspx?id=45485) et ouvrez-la dans Excel. 
     
@@ -162,13 +161,13 @@ Une fois le fichier enregistré, il est probable qu'un message indiquant que cer
     
 2. Connectez-vous à Office 365 avec votre compte professionnel ou scolaire. 
     
-3. Accédez au Centre d’administration Office 365.
+3. Accédez au centre d’administration.
     
 4. Pour que les personnes puissent utiliser les services Office 365, une licence doit leur être attribuée. Avant de continuer, vous voudrez peut-être vérifier que vous avez suffisamment de licences pour les personnes mentionnées dans votre feuille de calcul. Sélectionnez **Facturation** \> **Abonnements** pour déterminer si vous en avez assez. Si vous avez besoin d'acheter d'autres licences, sélectionnez ** Modifier le nombre de licences **. Vous pouvez également exécuter l'Assistant et attribuer les licences que vous avez, puis acheter d'autres licences plus tard et réexécuter l'Assistant. 
     
 5. Accédez ensuite à l'Assistant Ajouter des utilisateurs en bloc : sélectionnez **Utilisateurs** \> **Utilisateurs actifs**. Sélectionnez ![Icône pour l'ajout de plusieurs utilisateurs à Office 365](media/3481ffea-d552-4a7f-9a3b-014504e69746.png) comme illustré dans la figure suivante. 
     
-    ![Image de la section Utilisateurs du Centre d'administration Office 365](media/2cd5ff86-9c0b-438e-9bb9-13b12a2675de.png)
+    ![Image de la section utilisateurs du centre d’administration](media/2cd5ff86-9c0b-438e-9bb9-13b12a2675de.png)
   
     L'Assistant Ajouter des utilisateurs en bloc apparaît et vous guide dans l'ajout d'un groupe d'utilisateurs à Office 365. 
     
@@ -188,7 +187,7 @@ Une fois le fichier enregistré, il est probable qu'un message indiquant que cer
     
     ![Étape 4 de l'Assistant Ajouter des utilisateurs en bloc - Licences](media/161ea34c-c67e-43be-962f-029f5426ff1b.png)
   
-    Vous pouvez sélectionner **Acheter de nouvelles licences**, mais vous quitterez alors l'Assistant Ajouter des utilisateurs en bloc et accéderez à la **facturation** dans le portail Centre d'administration Office 365. Après avoir acheté d'autres licences, vous devez patienter quelques minutes que la commande soit traitée, puis réexécuter l'Assistant Ajouter des utilisateurs en bloc depuis le début. 
+    Vous pouvez choisir **acheter des licences supplémentaires**, mais vous ne laisserai pas l’Assistant Ajouter des utilisateurs en bloc et passer à la **facturation** dans le centre d’administration 365 de Microsoft. Après avoir acheté d'autres licences, vous devez patienter quelques minutes que la commande soit traitée, puis réexécuter l'Assistant Ajouter des utilisateurs en bloc depuis le début. 
     
     Si vous n'achetez pas d'autres licences, les comptes ne seront pas créés pour toutes les personnes figurant dans votre feuille de calcul. 
     

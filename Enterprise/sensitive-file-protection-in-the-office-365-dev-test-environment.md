@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: 'Résumé: configurez et montrez comment Office 365 Information Rights Management protège vos fichiers sensibles, même lorsqu’ils sont publiés dans une collection de sites SharePoint Online incorrecte.'
-ms.openlocfilehash: a845742f7ec874d63269f5f380568b7bb59cfe0d
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 9608bf68ced2f286f788dd94dfc27755f5ff23c0
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070890"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782494"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Protection des fichiers sensibles dans l’environnement de développement/test Office 365
 
@@ -98,7 +98,7 @@ Ensuite, créez un groupe de cadres privés et ajoutez-y les nouveaux comptes ex
     
   - Si vous utilisez l’environnement de développement/test Office 365 entreprise simulé, utilisez le portail Azure pour vous connecter à la machine virtuelle CLIENT1, puis connectez-vous à partir de CLIENT1.
     
-2. Dans l’onglet **Accueil Microsoft Office** , cliquez sur **administrateurs _GT_ groupes > groupes**, puis cliquez sur **Ajouter un groupe**.
+2. Dans l’onglet **Accueil Microsoft Office** , cliquez sur **administrateurs > groupes > groupes**, puis cliquez sur **Ajouter un groupe**.
     
 3. Dans **Ajouter un groupe**, sélectionnez **groupe Office 365** pour le type de groupe, tapez **cadres** dans **nom** et **ID de groupe**, sélectionnez **privé** pour la **confidentialité**, puis cliquez sur **Sélectionner le propriétaire**.
     
@@ -128,7 +128,7 @@ Ensuite, vous créez une collection de sites Executives et autorisez uniquement 
     
 2. Dans l’onglet **Centre d’administration Office** , cliquez sur centres d’administration **> SharePoint**.
     
-3. Dans l’onglet **Centre d’administration SharePoint** , cliquez sur **nouvelle collection de sites privée >**.
+3. Dans l’onglet **Centre d’administration SharePoint** , cliquez sur **nouvelle > collection de sites privée**.
     
 4. Dans le volet nouvelle collection de sites, tapez **cadres** dans **titre**, cadres dans la zone URL, spécifiez le nom de votre compte d’administrateur général dans **administrateur**, puis cliquez sur **OK**.
     
@@ -172,7 +172,7 @@ Ensuite, connectez-vous avec un compte exécutif et créez un document dans la c
     
 4. Tapez le nom du compte **PDG** et son mot de passe, puis cliquez sur **se connecter**.
     
-5. Dans un nouvel onglet de votre navigateur, tapez l’URL de la collection de sites cadres ( **https://**\<organisation name>**. SharePoint.com/sites/Executives**).
+5. Dans un nouvel onglet de votre navigateur, tapez l’URL de la collection de sites cadres (>**https://**\< **. SharePoint.com/sites/Executives**).
     
 6. Cliquez sur **documents**, sur **nouveau,** puis sur **document Word**.
     
@@ -190,7 +190,7 @@ Ensuite, téléchargez une copie locale du document sensitiveData-beforeirm. doc
     
 3. Stockez le document **sensitiveData-beforeirm. docx** dans le dossier créé à l’étape 1.
     
-4. Dans un nouvel onglet de votre navigateur, tapez l’URL de la collection de sites de vente ( **https://**\<organisation name>**. SharePoint.com/sites/Sales**).
+4. Dans un nouvel onglet de votre navigateur, tapez l’URL de la collection de sites de ****\<vente (>https:// **. SharePoint.com/sites/Sales**).
     
 5. Cliquez sur le dossier **documents** de la **collection de sites de ventes**.
     
@@ -228,7 +228,7 @@ Pour préparer Office 365 pour les phases 3 et 4, activez IRM pour SharePoint On
     
 3. Sur la page **de connexion Office 365** , cliquez sur le nom du compte d’administrateur général, tapez son mot de passe, puis cliquez sur **se connecter**.
     
-4. Dans l’onglet **Accueil Microsoft Office** , cliquez sur **Centre d’administration > > SharePoint**.
+4. Dans l’onglet **Accueil Microsoft Office** , cliquez sur **centres d’administration > administrateur > SharePoint**.
     
 5. Dans l’onglet **Centre d’administration SharePoint** , cliquez sur **paramètres**.
     
@@ -316,7 +316,7 @@ Ensuite, en tant qu’utilisateur normal, vous tentez d’accéder au document *
     
 6. Sur la page **documents** , ouvrez le document **sensitiveData-AfterIRM. docx** .
     
-    Un message indiquant «Désolé, Word Online ne peut pas ouvrir ce document, car il est protégé par la gestion des droits relatifs à l’information (IRM).» 
+    Un message indiquant «Désolé, Word ne peut pas ouvrir ce document s’affiche car il est protégé par la gestion des droits relatifs à l’information (IRM).» 
     
 7. Cliquez sur **modifier dans Word**. Vous êtes invité à indiquer si vous souhaitez ouvrir le fichier. Cliquez sur **Oui**.
     

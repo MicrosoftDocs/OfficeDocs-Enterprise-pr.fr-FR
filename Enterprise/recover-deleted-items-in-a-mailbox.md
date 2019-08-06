@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: eb15194b-63ec-41b0-8d90-1823d3f558e4
 description: 'Cet article est destiné aux administrateurs. Un utilisateur a-t-il supprimé définitivement des éléments de sa boîte aux lettres Outlook? L’utilisateur le souhaite à nouveau, mais ne peut pas les récupérer. Vous pouvez récupérer les éléments purgés s’ils n’ont pas été définitivement supprimés de la boîte aux lettres de l’utilisateur. '
-ms.openlocfilehash: d4be48d6166d970572dd1cb343ccd83f22330e12
-ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
+ms.openlocfilehash: 12e07a88136d0dee0f186857aa71c3de6736a798
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "35203653"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782614"
 ---
 <a name="__top"></a>
 # <a name="recover-deleted-items-in-a-user-mailbox---admin-help"></a>Récupérer des éléments supprimés dans une boîte aux lettres utilisateur - Aide aux administrateurs
@@ -48,7 +48,7 @@ La première étape consiste à vous attribuer les autorisations nécessaires da
     
 2. Sélectionnez l’icône ![du lanceur d’applications icône du lanceur](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) d’applications dans Office 365 dans la partie supérieure gauche, puis cliquez sur **administrateur**.
     
-3. Dans le volet de navigation de gauche du centre d’administration Office 365, développez **centres d’administration**, puis cliquez sur **Exchange**.
+3. Dans le volet de navigation de gauche du centre d’administration de Microsoft 365, développez **centres d’administration**, puis cliquez sur **Exchange**.
     
     ![Liste du centre d’administration](media/7d308eb7-ba63-4156-a845-3770facc5de4.PNG)
   
@@ -85,7 +85,7 @@ Lorsque vous exécutez une recherche de découverte électronique inaltérable, 
     
 2. Sélectionnez l’icône ![du lanceur d’applications icône du lanceur](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) d’applications dans Office 365 dans la partie supérieure gauche, puis cliquez sur **administrateur**.
     
-3. Dans le volet de navigation de gauche du centre d’administration Office 365, développez **administrateur**, puis cliquez sur **Exchange**.
+3. Dans le volet de navigation de gauche du centre d’administration de Microsoft 365, développez **administrateur**, puis cliquez sur **Exchange**.
     
 4. Dans le centre d’administration Exchange, cliquez sur **gestion de la conformité**, cliquez sur **blocage &amp; de la découverte électronique**inaltérable, puis cliquez sur **nouvelle**![icône](media/8ee52980-254b-440b-99a2-18d068de62d3.gif)ajouter.
     

@@ -3,7 +3,7 @@ title: Pendant et après le déplacement de vos données
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/15/2019
+ms.date: 07/18/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Les déplacements de données sont des opérations principales n'ayant que peu d'impact sur les utilisateurs finals. Aucune action de votre part n'est requise lorsque Microsoft déplace chaque service et les données associées pour votre client vers une nouvelle zone géographique de centres de données. Le transfert de données et la validation se déroulent en arrière-plan à l'avance, et n'ont qu'une incidence minimale sur les utilisateurs.
-ms.openlocfilehash: a0fb2e7ad31a2c5492260bd5f1d67d80632024c0
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 09d858f42b44ae6252872120597145b55c1d3552
+ms.sourcegitcommit: 0c8accb08121f8a70c59c437e05e8f74924e6efb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067730"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786229"
 ---
 # <a name="during-and-after-your-data-move"></a>Pendant et après le déplacement de vos données
 
@@ -38,7 +38,7 @@ Surveillez le centre de messages Office 365 dans l'attente de la confirmation de
 |Corée du Sud  <br/> |31 octobre 2018  <br/> |
 |Royaume-Uni  <br/> |15 septembre 2019  <br/> |
 |France  <br/> |15 septembre 2020  <br/> |
-|Émirats arabes unis  <br/> |Annoncé  <br/> |
+|Émirats arabes unis  <br/> |1er février 2022  <br/> |
 |Afrique du Sud  <br/> |Annoncé  <br/> |
    
 ## <a name="exchange-online"></a>Exchange Online
@@ -74,7 +74,7 @@ Lors du déplacement de SharePoint Online, les données des services suivants so
     
 - Services vidéo Office 365
     
-- Office Online
+- Office dans le navigateur
     
 - Office 365 ProPlus
     

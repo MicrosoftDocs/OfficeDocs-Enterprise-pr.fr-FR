@@ -3,29 +3,6 @@
 
 
 
-## <a name="week-of-june-24-2019"></a>Semaine du 24 juin, 2019
-
-
-| Publié le |Titre de la rubrique | Modification |
-|------|------------|--------|
-| 6/24/2019 | [Points de terminaison supplémentaires non inclus dans le service web pour URL et adresses IP Office 365](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | modifié |
-| 6/24/2019 | [Fonctionnement de l’authentification moderne pour les applications clientes Office 2013 et Office 2016](/Office365/Enterprise/modern-auth-for-office-2013-and-2016) | modifié |
-| 6/24/2019 | [Préparation d’un domaine non routable pour la synchronisation d’annuaires](/Office365/Enterprise/prepare-a-non-routable-domain-for-directory-synchronization) | modifié |
-| 6/24/2019 | [Récupérer des éléments supprimés dans une boîte aux lettres utilisateur - Aide aux administrateurs](/Office365/Enterprise/recover-deleted-items-in-a-mailbox) | modifié |
-| 6/24/2019 | [Récupération d'urgence SharePoint Server 2013 dans Microsoft Azure](/Office365/Enterprise/sharepoint-server-2013-disaster-recovery-in-microsoft-azure) | modifié |
-| 6/24/2019 | [Mise à niveau à partir de SharePoint 2010](/Office365/Enterprise/upgrade-from-sharepoint-2010) | modifié |
-| 6/26/2019 | [Gestion des stratégies Skype Entreprise Online avec Office 365 PowerShell](/Office365/Enterprise/powershell/manage-skype-for-business-online-policies-with-office-365-powershell) | modifié |
-| 6/26/2019 | [Préparer la synchronisation d’annuaires vers Office 365](/Office365/Enterprise/prepare-for-directory-synchronization) | modifié |
-| 6/26/2019 | [Optimisation des performances SharePoint Online](/Office365/Enterprise/tune-sharepoint-online-performance) | modifié |
-| 6/28/2019 | [Points de terminaison Office 365 Germany](/Office365/Enterprise/office-365-germany-endpoints) | modifié |
-| 6/28/2019 | [Points de terminaison DoD du gouvernement américain Office 365](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | modifié |
-| 6/28/2019 | [Office 365 gouvernement américain GCC High Endpoints](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | modifié |
-| 6/28/2019 | [URLs et plages d’adresses IP pour Office 365 géré par 21Vianet](/Office365/Enterprise/urls-and-ip-address-ranges-21vianet) | modifié |
-| 6/28/2019 | [URL et plages d’adresses IP Office 365](/Office365/Enterprise/urls-and-ip-address-ranges) | modifié |
-| 6/28/2019 | [Transfert de données principales vers le nouveau centre de données Office 365 régions centres](/Office365/Enterprise/moving-data-to-new-datacenter-geos) | modifié |
-| 6/28/2019 | [Procédure de demande d’un déplacement de données](/Office365/Enterprise/request-your-data-move) | modifié |
-
-
 ## <a name="week-of-july-01-2019"></a>Semaine du 1er juillet 2019
 
 
@@ -131,3 +108,15 @@
 | 7/24/2019 | [Ajout d'un domaine à la location d'un client avec Windows PowerShell pour les partenaires avec autorisation d'accès délégué](/Office365/Enterprise/powershell/add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe) | modifié |
 | 7/25/2019 | [Transfert de données principales vers le nouveau centre de données Office 365 régions centres](/Office365/Enterprise/moving-data-to-new-datacenter-geos) | modifié |
 | 7/25/2019 | [Procédure de demande d’un déplacement de données](/Office365/Enterprise/request-your-data-move) | modifié |
+
+
+## <a name="week-of-july-29-2019"></a>Semaine du 29 juillet 2019
+
+
+| Publié le |Titre de la rubrique | Modification |
+|------|------------|--------|
+| 7/29/2019 | [Points de terminaison Office 365 Germany](/Office365/Enterprise/office-365-germany-endpoints) | modifié |
+| 7/29/2019 | [Points de terminaison DoD du gouvernement américain Office 365](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | modifié |
+| 7/29/2019 | [Office 365 gouvernement américain GCC High Endpoints](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | modifié |
+| 7/29/2019 | [URLs et plages d’adresses IP pour Office 365 géré par 21Vianet](/Office365/Enterprise/urls-and-ip-address-ranges-21vianet) | modifié |
+| 7/29/2019 | [URL et plages d’adresses IP Office 365](/Office365/Enterprise/urls-and-ip-address-ranges) | modifié |

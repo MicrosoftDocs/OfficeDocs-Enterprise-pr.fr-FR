@@ -16,17 +16,18 @@ search.appverid:
 - MOE150
 ms.assetid: 497593cf-24c6-491c-940b-7c86dcde9de0
 description: Fournit des instructions sur l’utilisation de IdFix pour préparer et nettoyer votre annuaire local avant la synchronisation avec Office 365.
-ms.openlocfilehash: ca00fe1ee8ad829a3b72e51b4e292c8ea3b81e48
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: cba2889673d1ff50161cde77670f06ab40e233c0
+ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162367"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34490787"
 ---
 # <a name="prepare-directory-attributes-for-synchronization-with-office-365-by-using-the-idfix-tool"></a>Préparation des attributs d'annuaire pour la synchronisation avec Office 365 à l'aide de l'outil IdFix
 Cette rubrique contient des instructions détaillées sur l’exécution de l’outil IdFix, des erreurs courantes que vous pouvez rencontrer, des corrections suggérées, des exemples et des pratiques recommandées pour la procédure à suivre si vous avez un grand nombre d’erreurs.
   
 ## <a name="fixing-errors-in-your-directory-by-using-the-idfix-gui"></a>Correction des erreurs dans votre annuaire à l’aide de l’interface utilisateur graphique IdFix
+
 [Exécutez l’outil IdFix Office 365](install-and-run-idfix.md) pour rechercher des problèmes dans votre répertoire, puis corrigez les erreurs dans l’interface utilisateur, comme décrit dans cette rubrique. Si une table vide est renvoyée par l’outil, aucune erreur n’a été détectée. Si votre annuaire présente de nombreux problèmes, il peut être écrasant lorsque l’outil renvoie les erreurs. Pour résoudre ce problème, vous pouvez corriger toutes les erreurs d’un type, puis passer au type suivant. 
   
 1. Avant de commencer à apporter des modifications, jetez un œil aux recommandations présentées par IdFix.

@@ -23,12 +23,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Décrit comment préparer la mise en service des utilisateurs vers Office 365 à l’aide de la synchronisation d’annuaires et des avantages à long terme de cette méthode.
-ms.openlocfilehash: 2361f4484f00d61fda90fed407bf3c287bbc2bc1
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: 67d22f9087aabd431f61e01f6669ef147db98516
+ms.sourcegitcommit: 3dc4cb3ed48429fcb84f8adeba3d9ba2fb38edf7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162467"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35249195"
 ---
 # <a name="prepare-for-directory-synchronization-to-office-365"></a>Préparer la synchronisation d’annuaires vers Office 365
 
@@ -113,7 +113,7 @@ Les attributs que vous devez préparer sont répertoriés ici:
   - Nombre maximal de caractères par valeur: 256
   - La valeur de l’attribut ne doit pas contenir d’espace.
   - La valeur de l’attribut doit être unique dans l’annuaire.
-  - Caractères non valides: \< \> (); , [ ] "
+  - Caractères non valides: \< \> (); , [ ] " '
     
     Notez que les caractères non valides s’appliquent aux caractères qui suivent le délimiteur de type et à «:», ce qui signifie que SMTP:User@contso.com est autorisé, mais SMTP:user:M@contoso.com ne l’est pas.
     
@@ -124,7 +124,7 @@ Les attributs que vous devez préparer sont répertoriés ici:
     
   - Nombre maximal de caractère : 20
   - La valeur de l’attribut doit être unique dans l’annuaire.
-  - Caractères non valides: [\ "|, \< \> /: + =;? \* ]
+  - Caractères non valides: [\ "|, \< \> /: + =;? \* ']
   - Si un utilisateur a un attribut **sAMAccountName** non valide mais qu’il dispose d’un attribut **userPrincipalName** valide, le compte d’utilisateur est créé dans Office 365. 
   - Si **sAMAccountName** et **userPrincipalName** sont tous deux incorrects, l’attribut **userPrincipalName** AD DS doit être mis à jour. 
     
@@ -148,7 +148,7 @@ Les attributs que vous devez préparer sont répertoriés ici:
   - Le nombre maximal de caractères pour l’attribut **userPrincipalName** est 113. Un nombre de caractères spécifique est autorisé avant et après le signe @, comme suit: 
   - Nombre maximal de caractères pour le nom d’utilisateur devant le signe arobase (@): 64
   - Nombre maximal de caractères pour le nom de domaine qui suit le signe arobase (@): 48
-  - Caractères non valides: &amp; \* \% +/=? { } | \< \> ( ) ; : , [ ] "
+  - Caractères non valides: &amp; \* \% +/=? { } | \< \> ( ) ; : , [ ] " '
   - Un tréma est également un caractère non valide.
   - Le caractère @ est requis dans chaque valeur **userPrincipalName** . 
   - Le caractère @ ne peut pas être le premier caractère dans chaque valeur **userPrincipalName**. 
@@ -160,9 +160,9 @@ Les attributs que vous devez préparer sont répertoriés ici:
 
 Voir [Prepare Directory Attributes with the IdFix Tool](prepare-directory-attributes-for-synch-with-idfix.md) pour utiliser l’outil IdFix pour identifier les erreurs dans les attributs de votre AD DS.
     
-## <a name="2-prepare-the-userprincipalname-attribute"></a>2. Préparez l’attribut userPrincipalName.
+## <a name="3-prepare-the-userprincipalname-attribute"></a>3. préparer l’attribut userPrincipalName
 
-Active Directory est conçu pour permettre aux utilisateurs finaux de votre organisation de se connecter à votre annuaire à l’aide de **sAMAccountName** ou de **userPrincipalName**. De même, les utilisateurs finaux peuvent se connecter à Office 365 à l’aide du nom d’utilisateur principal (UPN) de leur compte professionnel ou scolaire. La synchronisation d’annuaires tente de créer des utilisateurs dans Azure Active Directory à l’aide du même nom d’utilisateur principal qui se trouve dans votre AD SD. Le nom d’utilisateur principal est mis en forme comme une adresse de messagerie. 
+Active Directory est conçu pour permettre aux utilisateurs finaux de votre organisation de se connecter à votre annuaire à l’aide de **sAMAccountName** ou de **userPrincipalName**. De même, les utilisateurs finaux peuvent se connecter à Office 365 à l’aide du nom d’utilisateur principal (UPN) de leur compte professionnel ou scolaire. La synchronisation d’annuaires tente de créer des utilisateurs dans Azure Active Directory à l’aide du même nom d’utilisateur principal qui se trouve dans votre AD DS. Le nom d’utilisateur principal est mis en forme comme une adresse de messagerie. 
 
 Dans Office 365, le nom d’utilisateur principal est l’attribut par défaut utilisé pour générer l’adresse de messagerie. Il est facile d’obtenir le **userPrincipalName** (dans AD DS et dans Azure AD) et l’adresse de messagerie principale dans **proxyAddresses** définie sur différentes valeurs. Lorsqu’elles sont définies sur des valeurs différentes, les administrateurs et les utilisateurs finaux peuvent être confondus. 
   

@@ -15,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: cb2250e3-451e-416f-bf4e-363549652c2a
 description: Découvrez comment les applications intégrées O365 sont enregistrées et administrées dans Azure AD
-ms.openlocfilehash: 01bd932ed12e040a0e6dae517d7b4fd360b5da80
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: c52b4beefaefd4a115c132c6f82e7f1d20564b46
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067250"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782524"
 ---
 # <a name="integrated-apps-and-azure-ad-for-office-365-administrators"></a>Applications intégrées et Azure AD pour les administrateurs d’Office 365
 
@@ -30,14 +30,14 @@ Il y a plus de gestion des applications intégrées que l’activation ou la dé
 
 Vous devez effectuer ces deux procédures pour pouvoir gérer vos applications Office 365 dans Azure AD.
   
-|**Conditions préalables**|**Comments**|
+|**Conditions préalables**|**Commentaires**|
 |:-----|:-----|
-|[Enregistrer votre abonnement Azure Active Directory gratuit](https://go.microsoft.com/fwlink/?LinkId=617127) <br/> |Chaque abonnement payant à Office 365 est fourni avec un abonnement gratuit à Azure Active Directory. Vous pouvez utiliser Azure AD pour gérer vos applications et pour créer et gérer des comptes d’utilisateur et de groupe. Pour activer cet abonnement et accéder au portail de gestion Azure, vous devez suivre un processus d’enregistrement unique. Par la suite, vous pouvez accéder à Azure AD à partir du centre d’administration Office 365.  <br/> |
+|[Enregistrer votre abonnement Azure Active Directory gratuit](https://go.microsoft.com/fwlink/?LinkId=617127) <br/> |Chaque abonnement payant à Office 365 est fourni avec un abonnement gratuit à Azure Active Directory. Vous pouvez utiliser Azure AD pour gérer vos applications et pour créer et gérer des comptes d’utilisateur et de groupe. Pour activer cet abonnement et accéder au portail de gestion Azure, vous devez suivre un processus d’enregistrement unique. Ensuite, vous pouvez accéder à Azure AD à partir du centre d’administration Microsoft 365.  <br/> |
 |[Activation ou désactivation des applications intégrées](https://support.office.com/article/7e453a40-66df-44ab-92a1-96786cb7fb34#__toc379982114) <br/> |Vous devez activer les applications intégrées pour que vos utilisateurs puissent autoriser les applications tierces à accéder à leurs informations Office 365 et à enregistrer des applications dans Azure AD. Par exemple, lorsqu’une personne utilise une application tierce, elle peut demander l’autorisation d’accéder à son calendrier et de modifier les fichiers qui se trouvent dans un dossier OneDrive entreprise.  <br/> |
    
 La gestion des applications Office 365 nécessite que vous connaissez les applications dans Azure AD. Ces articles vous aident à vous fournir les informations d’arrière-plan dont vous avez besoin.
   
-|**Article d’arrière-plan**|**Comments**|
+|**Article d’arrière-plan**|**Commentaires**|
 |:-----|:-----|
 |[Se conformer au lanceur d’applications Office 365](https://support.office.com/article/79f12104-6fed-442f-96a0-eb089a3f476a) <br/> |Si vous débutez avec le lanceur d’applications, vous pouvez vous en demander en quoi il s’agit et comment l’utiliser. Le lanceur d’applications est conçu pour vous aider à accéder à vos applications depuis n’importe où dans Office 365.  <br/> |
 |[Ajout, mise à jour et suppression d'une application](https://go.microsoft.com/fwlink/?LinkId=617137) <br/> |Cette rubrique vous explique comment ajouter, mettre à jour ou supprimer une application dans Azure Active Directory. Vous en saurez plus sur les différents types d’applications qui peuvent être intégrées à Azure AD et sur la configuration de vos applications pour accéder à d’autres ressources, telles que les API Web, et bien plus encore.  <br/> |

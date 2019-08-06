@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 4232abcf-4ae5-43aa-bfa1-9a078a99c78b
 description: 'Résumé: explique comment les ordinateurs clients se connectent aux clients Office 365, en fonction de l’emplacement de l’ordinateur client et du centre de donnes client Office 365.'
-ms.openlocfilehash: d101af5a0fdd4e29e366b34ad1ab682489f6b3ca
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: f7b41e1ff4fd8b30ed0f51641c479025b4e04ae5
+ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068200"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34722693"
 ---
 # <a name="client-connectivity"></a>Connectivité client
 
@@ -130,4 +130,4 @@ Voici un lien que vous pouvez utiliser pour revenir : [https://aka.ms/o365clien
 
 [Gestion des points de terminaison Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   
-[Connectivité réseau à Office 365](network-connectivity.md)
+[Évaluation de la connectivité réseau Office 365](assessing-network-connectivity.md)

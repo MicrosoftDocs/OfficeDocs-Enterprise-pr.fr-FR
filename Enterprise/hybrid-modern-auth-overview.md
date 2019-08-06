@@ -12,12 +12,12 @@ ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
 - M365-security-compliance
 description: L’authentification moderne est une méthode de gestion des identités qui offre une authentification et une autorisation plus sécurisées pour les utilisateurs. Elle est disponible pour les déploiements hybrides de Skype entreprise Server en local et Exchange Server en local, ainsi que pour les hybrides Skype entreprise mixtes de domaine. Cet article fournit des liens vers des documents connexes sur les conditions préalables, la configuration/la désactivation de l’authentification moderne et la mise en relation avec certains clients (par exemple, Informations sur les clients Outlook et Skype).
-ms.openlocfilehash: 0448dfdc46598a6aa4df0108214ff0a4cf290382
-ms.sourcegitcommit: 54c07ffcfe0da286b1780fdc03ba2f2fd0dbc86d
+ms.openlocfilehash: a8395a4d1bc212f23309b4ea273588d44eef69a3
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "34404216"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782454"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Vue d’ensemble de l’authentification moderne hybride et conditions préalables à son utilisation avec des serveurs Skype entreprise et Exchange locaux
 
@@ -88,7 +88,7 @@ Vérifiez et vérifiez ces éléments en dehors de votre liste avant de continue
     
   - Votre domaine SIP est ajouté en tant que domaine fédéré dans Office 365
     
-  - Tous les serveurs frontaux SFB doivent disposer de connexions sortantes vers Internet, des URL d’authentification Office 365 (TCP 443) et des listes de révocation de certificats racines connues (TCP 80) répertoriées dans les lignes 56 et 125 de la section «Microsoft 365 Common and Office Online» des [URL et IP d’office 365 plages d’adresses](urls-and-ip-address-ranges.md).
+  - Tous les serveurs frontaux SFB doivent disposer de connexions sortantes vers Internet, des URL d’authentification Office 365 (TCP 443) et des listes de révocation de certificats racines connues (TCP 80) répertoriées dans les lignes 56 et 125 de la section «Microsoft 365 Common and Office» des [URL et adresses IP d’office 365 plages](urls-and-ip-address-ranges.md).
   
 - **Skype entreprise en local dans un environnement hybride Office 365**
   - Un déploiement de Skype entreprise Server 2019 avec tous les serveurs exécutant Skype entreprise Server 2019.

@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 'Découvrez les outils à utiliser pour gérer vos utilisateurs Office 365, ainsi que la manière dont vous pouvez les utiliser en fonction de la gestion des identités des utilisateurs. '
-ms.openlocfilehash: 3b1a869825991d9c85e16b1cc5f50646806ab3fd
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 27c447e19e9664fe190497cefcd5af4c3be408eb
+ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070375"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34490767"
 ---
 # <a name="tools-to-manage-office-365-accounts"></a>Outils permettant de gérer les comptes Office 365
 
@@ -51,7 +51,7 @@ L’emplacement et la façon dont vous pouvez gérer vos comptes d’utilisateur
 Lorsque vous décidez de la manière dont votre organisation créera et gérera les comptes, tenez compte des éléments suivants:
   
 - Le logiciel de synchronisation d’annuaires doit être installé sur les serveurs au sein de votre environnement local pour connecter les identités entre Office 365 et votre annuaire local.
-- Toute option de synchronisation d’annuaires, y compris les options SSO, requiert des attributs d’annuaire sur site conformes aux normes. Les spécificités des attributs utilisés dans votre répertoire et le nettoyage (le cas échéant) requis sont décrits dans prepare [to provision Users with Directory Synchronization to Office 365](prepare-for-directory-synchronization.md). Voir [installer et exécuter l’outil IdFix Office 365](install-and-run-idfix.md) pour obtenir des instructions sur l’utilisation de IdFix pour automatiser le nettoyage d’annuaire. 
+- Toute option de synchronisation d’annuaires, y compris les options SSO, requiert des attributs d’annuaire sur site conformes aux normes. Les spécificités des attributs utilisés dans votre répertoire et le nettoyage (le cas échéant) requis sont décrits dans prepare [to provision Users with Directory Synchronization to Office 365](prepare-for-directory-synchronization.md). Voir [Télécharger et exécuter l’outil IdFix Office 365](install-and-run-idfix.md) pour obtenir des instructions sur l’utilisation de IdFix pour automatiser le nettoyage d’annuaire. 
 
 ## <a name="plan-how-you-are-going-to-create-office-365-accounts"></a>Planification de la création de comptes Office 365
 

@@ -11,19 +11,19 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
-description: "Résumé : Utilisez Office 365 PowerShell pour créer des rapports que vous ne pouvez pas produire dans le centre d'administration Office 365."
-ms.openlocfilehash: 541811c81da3085c1f90140e6f1e81b79f985b41
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+description: 'Résumé : Utilisez Office 365 PowerShell pour créer des rapports que vous ne pouvez pas produire dans le centre d’administration Microsoft 365.'
+ms.openlocfilehash: 6ad41169c11150706381c45bf13e24a2ac1baf5c
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071110"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782574"
 ---
-# <a name="use-windows-powershell-to-create-reports-in-office-365"></a>Utilisez Windows PowerShell pour créer des rapports dans Office 365
+# <a name="use-windows-powershell-to-create-reports-in-office-365"></a>Utilisation de Windows PowerShell pour créer des rapports dans Office 365
 
- **Résumé** : Utilisez Office 365 PowerShell pour créer des rapports que vous ne pouvez pas produire dans le centre d'administration Office 365.
+ **Résumé** : Utilisez Office 365 PowerShell pour créer des rapports que vous ne pouvez pas produire dans le centre d’administration Microsoft 365.
   
-De nombreux rapports sont disponibles dans le centre d'administration Office 365. Toutefois, ces rapports fournissent uniquement une certaine quantité d'informations et vous avez parfois besoin de plus. Vous avez alors besoin d'Office 365 PowerShell.
+De nombreux rapports sont disponibles dans le centre d’administration Microsoft 365. Toutefois, ces rapports fournissent uniquement une certaine quantité d'informations et vous avez parfois besoin de plus. Vous avez alors besoin d'Office 365 PowerShell.
   
 Les articles suivants expliquent comment utiliser Office 365 PowerShell pour obtenir des informations à partir de votre client Office 365 :
   

@@ -3,6 +3,7 @@ title: Planifier Office 365 entreprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
+ms.date: 08/12/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
 description: Accédez aux ressources nécessaires à la planification de votre déploiement Office 365 entreprise.
-ms.openlocfilehash: 29510c6e3df5dfd6064b6e7e96e236e4bd8c0c47
-ms.sourcegitcommit: 2a7177c666dce3c00462b97463a6855e9e3a81f0
+ms.openlocfilehash: de23b8f49968bad949cd01551fdb040882bc00f4
+ms.sourcegitcommit: d58cdc7b2296df12f7a05d14ba05ab224ffb3e0c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34249472"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36302686"
 ---
 # <a name="plan-for-office-365-enterprise"></a>Planifier Office 365 entreprise
 
@@ -38,7 +39,7 @@ Lorsque vous déplacez une organisation d’entreprise vers Office 365, il est i
 
 ## <a name="do-it-yourself-planning-for-office-365"></a>Planification de la planification pour Office 365
 
-Pour planifier Office 365 par vous-même, déterminez les décisions de conception appropriées pour ces domaines:
+Pour planifier Office 365 vous-même, suivez les décisions de planification et de conception pour ces domaines:
 
 - Votre client Office 365
 
@@ -56,7 +57,12 @@ Pour planifier Office 365 par vous-même, déterminez les décisions de concepti
 
   Inclut des informations de migration pour les produits client et serveur Office 2007 et Office 2010. Démarrez [ici](plan-upgrade-previous-versions-office.md).
 
-Vous pouvez également vous connecter à votre abonnement et utiliser les [conseillers de déploiement pour les services Office 365](deployment-advisors-for-office-365.md).
+>[!Note]
+>Vous pouvez également utiliser ce processus pour votre abonnement [entreprise Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) .
+>
+
+Vous pouvez également vous connecter à votre abonnement Office 365 et utiliser les [conseillers de déploiement pour les services office 365](deployment-advisors-for-office-365.md).
+
 
 
 <!--

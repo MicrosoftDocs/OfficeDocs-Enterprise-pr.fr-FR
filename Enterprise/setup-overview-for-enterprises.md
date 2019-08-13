@@ -3,6 +3,7 @@ title: Déployer Office 365 Entreprise pour votre organisation
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
+ms.date: 08/12/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +17,12 @@ ms.collection:
 ms.custom: Adm_O365
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
 description: Ces étapes de présentation sont destinées à vous aider à configurer votre réseau, à créer vos identités, à déployer Office 365 ProPlus, à migrer vos données et à aider les personnes de votre organisation à utiliser Office 365.
-ms.openlocfilehash: 74f119b678e04bb9f541af83feb5396ba3bed8f2
-ms.sourcegitcommit: 2a7177c666dce3c00462b97463a6855e9e3a81f0
+ms.openlocfilehash: 20b970651d2ff432e0bf7b5d74bdc5f02e34f225
+ms.sourcegitcommit: d58cdc7b2296df12f7a05d14ba05ab224ffb3e0c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34249502"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36302716"
 ---
 # <a name="deploy-office-365-enterprise-for-your-organization"></a>Déployer Office 365 Entreprise pour votre organisation
 
@@ -77,3 +78,5 @@ Pour déployer Office 365 entreprise par vous-même, voici la procédure recomma
 >[!Note]
 >Ces étapes sont également destinées aux entreprises et aux organisations à [but non lucratif](https://go.microsoft.com/fwlink/?LinkId=627221) qui souhaitent commencer avec un déploiement personnalisé d’Office 365 Enterprise. 
 >
+
+Si vous avez un abonnement Microsoft 365 entreprise, commencez [ici](https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise).

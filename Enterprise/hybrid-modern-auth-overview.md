@@ -1,8 +1,8 @@
 ---
 title: Vue d’ensemble de l’authentification moderne hybride et conditions préalables à son utilisation avec des serveurs Skype entreprise et Exchange locaux
-ms.author: tracyp
+ms.author: kvice
 ms.reviewer: smithre4
-author: MSFTTracyP
+author: kelleyvice-msft
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
 - M365-security-compliance
 description: L’authentification moderne est une méthode de gestion des identités qui offre une authentification et une autorisation plus sécurisées pour les utilisateurs. Elle est disponible pour les déploiements hybrides de Skype entreprise Server en local et Exchange Server en local, ainsi que pour les hybrides Skype entreprise mixtes de domaine. Cet article fournit des liens vers des documents connexes sur les conditions préalables, la configuration/la désactivation de l’authentification moderne et la mise en relation avec certains clients (par exemple, Informations sur les clients Outlook et Skype).
-ms.openlocfilehash: a8395a4d1bc212f23309b4ea273588d44eef69a3
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 6a724ae48166f8946e71cf3f2235e07ee399712a
+ms.sourcegitcommit: c8acfa57a22d7d055500f2e8b84a9ef252c70e82
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782454"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36493301"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Vue d’ensemble de l’authentification moderne hybride et conditions préalables à son utilisation avec des serveurs Skype entreprise et Exchange locaux
 

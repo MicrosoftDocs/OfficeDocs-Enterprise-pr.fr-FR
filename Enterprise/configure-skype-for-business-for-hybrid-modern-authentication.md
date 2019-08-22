@@ -1,7 +1,7 @@
 ---
 title: Comment configurer Skype Entreprise en local pour utiliser l’authentification moderne hybride
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 6/4/2018
 audience: ITPro
@@ -14,12 +14,12 @@ ms.assetid: 522d5cec-4e1b-4cc3-937f-293570717bc6
 ms.collection:
 - M365-security-compliance
 description: L’authentification moderne est une méthode de gestion des identités qui offre une authentification et une autorisation utilisateur plus sécurisées, est disponible pour Skype entreprise Server en local et Exchange Server en local, ainsi qu’hybrides Skype entreprise mixtes.
-ms.openlocfilehash: a6f1b64aade9cd7c2fa5b44e18e1075008676f90
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 5db33a39ff58ae2aa21968c2f092c8ac29af5681
+ms.sourcegitcommit: c8acfa57a22d7d055500f2e8b84a9ef252c70e82
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067990"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36493331"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Comment configurer Skype Entreprise en local pour utiliser l’authentification moderne hybride
 

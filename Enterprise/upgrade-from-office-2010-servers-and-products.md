@@ -3,7 +3,7 @@ title: Ressources pour vous aider à effectuer une mise à niveau à partir de s
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/10/2019
+ms.date: 08/21/2019
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -21,12 +21,12 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: La prise en charge se termine bientôt pour les serveurs et les applications clientes Office 2010, et les accords de support personnalisés ne sont pas disponibles. Utilisez cet article pour commencer à planifier votre mise à niveau maintenant.
-ms.openlocfilehash: 3cd345f60c534ef8c2a464e4f9535f5f691a9110
-ms.sourcegitcommit: c718aae17c8046d5e1ef67f82ffa10e54e1eb23f
+ms.openlocfilehash: b75aea4775f2471827f472e726ccae8657a22278
+ms.sourcegitcommit: 756f1713cab2e46be948f91f6dd87fd60197c4a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35613450"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36491333"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Ressources pour vous aider à effectuer une mise à niveau à partir de serveurs et clients Office 2010
 
@@ -42,7 +42,13 @@ Pendant que vous planifiez votre mise à niveau, il est très utile de passer à
 
 - Office 365 ProPlus, inclus dans Office 365 E3 et E5 et Microsoft 365 Enterprise, est l’ensemble des applications clientes Office que vous installez sur votre appareil local. Elles sont mises à jour avec de nouvelles fonctionnalités de productivité et de sécurité en continu à partir du Cloud Microsoft.
 
-Utilisez cet article comme point de départ pour vérifier vos options.
+Pour obtenir un résumé des options de mise à niveau, de migration et de déplacement sur le Cloud pour les clients et les serveurs Office 2010 et Windows 7, téléchargez l' [affiche de fin de service](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfService.pdf).
+
+![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-service.png)
+
+Cette affiche de page unique constitue un moyen rapide de comprendre les différents chemins que vous pouvez suivre pour empêcher les produits client et serveur Office 2010 et Windows 7 d’atteindre la fin de service, avec les chemins d’accès et la prise en charge des options préférés dans Microsoft 365 entreprise en surbrillance.
+
+Vous pouvez imprimer cette affiche aux formats letter, Legal ou tabloïd (11 x 17).
       
 ## <a name="office-2010-client-and-server-upgrade-planning"></a>Planification de la mise à niveau vers le client et le serveur Office 2010
   

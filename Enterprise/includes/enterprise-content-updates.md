@@ -3,37 +3,6 @@
 
 
 
-## <a name="week-of-july-08-2019"></a>Semaine du 08 juillet 2019
-
-
-| Publié le |Titre de la rubrique | Modification |
-|------|------------|--------|
-| 7/9/2019 | [Effectuer une migration de vos données d’organisation vers Office 365 Entreprise](/Office365/Enterprise/migrate-data-to-office-365) | modifié |
-| 7/9/2019 | [Diagnostic des problèmes de performances avec SharePoint Online](/Office365/Enterprise/diagnosing-performance-issues-with-sharepoint-online) | modifié |
-| 7/10/2019 | [Planifier votre mise à niveau à partir de serveurs et clients Office 2007 ou 2010](/Office365/Enterprise/plan-upgrade-previous-versions-office) | modifié |
-| 7/10/2019 | [Ressources pour vous aider à effectuer une mise à niveau à partir de serveurs et clients Office 2010](/Office365/Enterprise/upgrade-from-office-2010-servers-and-products) | modifié |
-| 7/10/2019 | [Ressources relatives à l’architecture informatique du cloud Microsoft](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | modifié |
-| 7/10/2019 | [Pointeurs vers des informations sur la gestion des droits dans le centre d’administration Office 365](/Office365/Enterprise/activate-rms-in-office-365) | modifié |
-| 7/10/2019 | [Meilleures pratiques pour l’utilisation d’Office 365 sur un réseau lent](/Office365/Enterprise/best-practices-for-using-office-365-on-a-slow-network) | modifié |
-| 7/10/2019 | [Différer le chargement des images et des éléments JavaScript dans SharePoint Online](/Office365/Enterprise/delay-loading-images-and-javascript-in-sharepoint-online) | modifié |
-| 7/10/2019 | [Optimisation des images pour SharePoint Online](/Office365/Enterprise/image-optimization-for-sharepoint-online) | modifié |
-| 7/10/2019 | [Introduction à l’optimisation des performances pour SharePoint Online](/Office365/Enterprise/introduction-to-performance-tuning-for-sharepoint-online) | modifié |
-| 7/10/2019 | [Minimisation et regroupement dans SharePoint Online](/Office365/Enterprise/minification-and-bundling-in-sharepoint-online) | modifié |
-| 7/10/2019 | [Prise en charge de la traduction d’adresses réseau (NAT) avec Office 365](/Office365/Enterprise/nat-support-with-office-365) | modifié |
-| 7/10/2019 | [Options de navigation pour SharePoint Online](/Office365/Enterprise/navigation-options-for-sharepoint-online) | modifié |
-| 7/10/2019 | [Planification réseau et de migration pour Office 365](/Office365/Enterprise/network-and-migration-planning) | modifié |
-| 7/10/2019 | [Planification réseau et optimisation des performances pour Office 365](/Office365/Enterprise/network-planning-and-performance) | modifié |
-| 7/10/2019 | [Utiliser l’outil de diagnostics de page pour SharePoint Online](/Office365/Enterprise/page-diagnostics-for-spo) | modifié |
-| 7/10/2019 | [Optimisation des performances Office 365](/Office365/Enterprise/tune-office-365-performance) | modifié |
-| 7/10/2019 | [Optimisation des performances SharePoint Online](/Office365/Enterprise/tune-sharepoint-online-performance) | modifié |
-| 7/10/2019 | [Optimiser les performances de Skype Entreprise Online](/Office365/Enterprise/tune-skype-for-business-online-performance). | modifié |
-| 7/10/2019 | [Utiliser le la messagerie instantanée épuré pour réduire la mémoire utilisée lors de la lecture des messages électroniques](/Office365/Enterprise/use-lean-popouts-to-reduce-memory-used-when-reading-mail-messages) | modifié |
-| 7/10/2019 | [Utilisation du composant WebPart de recherche de contenu au lieu du composant WebPart requête de contenu pour améliorer les performances dans SharePoint Online](/Office365/Enterprise/using-content-search-web-part-instead-of-content-query-web-part-to-improve-perfo) | modifié |
-| 7/10/2019 | [Utilisation du cache d’objets avec SharePoint Online](/Office365/Enterprise/using-the-object-cache-with-sharepoint-online) | modifié |
-| 7/11/2019 | [Feuille de route Project Server 2010 end-support](/Office365/Enterprise/project-server-2010-end-of-support) | modifié |
-| 7/12/2019 | [Mise à niveau à partir de SharePoint 2010](/Office365/Enterprise/upgrade-from-sharepoint-2010) | modifié |
-
-
 ## <a name="week-of-july-15-2019"></a>Semaine du 15 juillet 2019
 
 
@@ -123,3 +92,19 @@
 | 8/5/2019 | [Attribuer des licences à des comptes d'utilisateurs avec Office 365 PowerShell](/Office365/Enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell) | modifié |
 | 8/6/2019 | [Service Web d’URL et d’adresse IP Office 365](/Office365/Enterprise/office-365-ip-web-service) | modifié |
 | 8/7/2019 | [Évaluation de la connectivité réseau Office 365](/Office365/Enterprise/assessing-network-connectivity) | modifié |
+
+
+## <a name="week-of-august-12-2019"></a>Semaine du 12 août 2019
+
+
+| Publié le |Titre de la rubrique | Modification |
+|------|------------|--------|
+| 8/12/2019 | [Test d’Office 365 avec des guides de laboratoire de test (guides)](/Office365/Enterprise/cloud-adoption-test-lab-guides-tlgs) | modifié |
+| 8/12/2019 | [Feuille de route de fin de prise en charge d’Exchange 2010](/Office365/Enterprise/exchange-2010-end-of-support) | modifié |
+| 8/12/2019 | [Planifier Office 365 entreprise](/Office365/Enterprise/get-your-organization-ready-for-office-365) | modifié |
+| 8/12/2019 | [Gestion des stratégies Skype Entreprise Online avec Office 365 PowerShell](/Office365/Enterprise/powershell/manage-skype-for-business-online-policies-with-office-365-powershell) | modifié |
+| 8/12/2019 | [Déployer Office 365 Entreprise pour votre organisation](/Office365/Enterprise/setup-overview-for-enterprises) | modifié |
+| 8/13/2019 | [Azure ExpressRoute pour Office 365](/Office365/Enterprise/azure-expressroute) | modifié |
+| 8/13/2019 | [Enregistrements DNS externes pour Office 365](/Office365/Enterprise/external-domain-name-system-records) | modifié |
+| 8/13/2019 | [Options de navigation pour SharePoint Online](/Office365/Enterprise/navigation-options-for-sharepoint-online) | modifié |
+| 8/13/2019 | [Utilisation du réseau de distribution de contenu Office 365 avec SharePoint Online](/Office365/Enterprise/use-office-365-cdn-with-spo) | modifié |

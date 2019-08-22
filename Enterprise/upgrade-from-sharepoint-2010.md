@@ -3,7 +3,7 @@ title: Mise à niveau à partir de SharePoint 2010
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 07/11/2019
+ms.date: 08/21/2019
 audience: ITPro
 ms.topic: conceptual
 ms.prod: office-online-server
@@ -15,12 +15,12 @@ search.appverid:
 - OSU140
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 description: Les extrémités de la prise en charge pour SharePoint 2010 et SharePoint Server 2010 se terminent le 13 octobre 2020. Utilisez cet article pour effectuer une mise à niveau vers SharePoint Online ou une version plus récente de SharePoint Server en local.
-ms.openlocfilehash: c3860e8229c8633ea605228d7d3553d0f673a7d3
-ms.sourcegitcommit: d3f8df9439e9cd15333f01b5cde2001fb4b74113
+ms.openlocfilehash: 944dd4a2980097611de1fa9239acbfca46517960
+ms.sourcegitcommit: 756f1713cab2e46be948f91f6dd87fd60197c4a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "35643059"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36491323"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Mise à niveau à partir de SharePoint 2010
 
@@ -178,6 +178,16 @@ Pour voir comment fonctionne une batterie de serveurs SharePoint hybride, vous p
   
 > [!NOTE]
 > N’oubliez pas que votre batterie de serveurs SharePoint Server 2010 doit d’abord être mise à niveau sur site, soit vers SharePoint Server 2013, soit vers SharePoint Server 2016 pour utiliser l’option hybride. SharePoint Foundation 2010 et SharePoint Foundation 2013 ne peuvent pas créer de connexions hybrides avec SharePoint Online. 
+
+## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Résumé des options pour le client et les serveurs Office 2010 et Windows 7
+
+Pour obtenir un résumé visuel des options de mise à niveau, de migration et de déplacement sur le Cloud pour le client et les serveurs Office 2010 et Windows 7, téléchargez l' [affiche de fin de service](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfService.pdf).
+
+![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-service.png)
+
+Cette affiche de page unique constitue un moyen rapide de comprendre les différents chemins que vous pouvez suivre pour empêcher les produits client et serveur Office 2010 et Windows 7 d’atteindre la fin de service, avec les chemins d’accès et la prise en charge des options préférés dans Microsoft 365 entreprise en surbrillance.
+
+Vous pouvez imprimer cette affiche aux formats letter, Legal ou tabloïd (11 x 17).
   
 ## <a name="related-topics"></a>Sujets associés
 

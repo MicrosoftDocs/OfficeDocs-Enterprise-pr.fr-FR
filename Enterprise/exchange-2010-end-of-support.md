@@ -3,7 +3,7 @@ title: Feuille de route de fin de prise en charge d’Exchange 2010
 ms.author: dstrome
 author: dstrome
 manager: laurawi
-ms.date: 08/12/2019
+ms.date: 08/21/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 description: Exchange 2010 est à la fin de la prise en charge. Utilisez cette feuille de route de planification comme guide pour préparer la mise à niveau vers Exchange Online ou une version plus récente d’Exchange Server en local.
-ms.openlocfilehash: a08ef80d2e6081adbc62b4c534ef185dcaff611f
-ms.sourcegitcommit: d58cdc7b2296df12f7a05d14ba05ab224ffb3e0c
+ms.openlocfilehash: 82d09b2193e009cfdf553743199638ca5dc4f319
+ms.sourcegitcommit: 756f1713cab2e46be948f91f6dd87fd60197c4a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36302749"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36491240"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Feuille de route de fin de prise en charge d’Exchange 2010
 
@@ -209,6 +209,16 @@ Vous pouvez utiliser les ressources suivantes pour vous aider dans votre migrati
 - Modifications apportées au schéma Active Directory pour Exchange [2016](https://technet.microsoft.com/EN-US/library/bb738144%28v=exchg.160%29.aspx), [2013](https://technet.microsoft.com/EN-US/library/bb738144%28v=exchg.150%29.aspx)
 - Configuration système requise pour Exchange [2016](https://technet.microsoft.com/en-us/library/aa996719%28v=exchg.160%29.aspx), [2013](https://technet.microsoft.com/en-us/library/aa996719%28v=exchg.150%29.aspx)
 - Conditions préalables pour Exchange [2016](https://technet.microsoft.com/en-us/library/bb691354%28v=exchg.160%29.aspx), [2013](https://technet.microsoft.com/en-us/library/bb691354%28v=exchg.150%29.aspx)
+
+## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Résumé des options pour le client et les serveurs Office 2010 et Windows 7
+
+Pour obtenir un résumé visuel des options de mise à niveau, de migration et de déplacement sur le Cloud pour le client et les serveurs Office 2010 et Windows 7, téléchargez l' [affiche de fin de service](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfService.pdf).
+
+![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-service.png)
+
+Cette affiche de page unique constitue un moyen rapide de comprendre les différents chemins que vous pouvez suivre pour empêcher les produits client et serveur Office 2010 et Windows 7 d’atteindre la fin de service, avec les chemins d’accès et la prise en charge des options préférés dans Microsoft 365 entreprise en surbrillance.
+
+Vous pouvez imprimer cette affiche aux formats letter, Legal ou tabloïd (11 x 17).
 
 ## <a name="what-if-i-need-help"></a>Qu’en est-il si j’ai besoin d’aide?
 

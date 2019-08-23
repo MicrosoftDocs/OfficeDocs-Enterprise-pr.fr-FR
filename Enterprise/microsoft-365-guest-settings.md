@@ -9,12 +9,12 @@ ms.service: o365-solutions
 ms.custom: ''
 localization_priority: Priority
 description: Apprenez-en davantage sur les paramètres de partage d’invités disponibles dans Microsoft 365.
-ms.openlocfilehash: 8c067374b960ff2cec7cdce87f67da0104697ff3
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 59e51a7118a226bb9c17e9529a517bf681b69849
+ms.sourcegitcommit: c8acfa57a22d7d055500f2e8b84a9ef252c70e82
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782274"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36493341"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Informations de référence sur les paramètres de partage d’invités de Microsoft 365
 
@@ -72,6 +72,8 @@ Le Centre d’administration Microsoft 365 comporte des paramètres de niveau o
 |:-----|:-----|:-----|
 |Permettre aux membres du groupe extérieurs à votre organisation d’accéder au contenu du groupe|Activé|Lorsque ce paramètre est défini sur **Activé**, les invités peuvent accéder au contenu des groupes. Quand il est défini sur **Désactivé**, ils ne le peuvent pas. Ce paramètre doit être **Activé** pour tout scénario dans lequel des utilisateurs invités interagissent avec Groupes Office 365 ou Teams.|
 |Permettre aux propriétaires de groupe d’ajouter des personnes en dehors de votre organisation aux groupes|Activé|Lorsque ce paramètre est **Activé**, les propriétaires de Groupes Office 365 ou d’équipes Teams peuvent inviter de nouveaux invités à rejoindre le groupe. Quand il est **Désactivé**, les propriétaires peuvent inviter que des invités figurant déjà dans l’annuaire.|
+
+Ces paramètres s’appliquent au niveau de l’organisation. Pour en savoir plus sur la modification de ces paramètres au niveau du groupe à l’aide de PowerShell, consultez [Créer des paramètres pour un groupe spécifique](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets#create-settings-for-a-specific-group).
 
 ## <a name="teams"></a>Teams
 

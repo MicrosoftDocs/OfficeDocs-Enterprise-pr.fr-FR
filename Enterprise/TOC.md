@@ -176,8 +176,8 @@
 
 ### Solutions hybrides
 #### [Utilisation d’Azure Active Directory pour l’authentification de SharePoint Server 2016](using-azure-ad-for-sharepoint-server-authentication.md)
-#### [Connecter un réseau local à Azure Virtual Network](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
-#### [Déployer un serveur de synchronisation de répertoire dans Azure IaaS](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+#### [Connecter un réseau local à un réseau virtuel Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
+#### [Déployer un serveur de synchronisation d’annuaires dans Azure IaaS](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
 #### [Déployer une authentification fédérée haute disponibilité pour Office 365 dans Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
 ##### [Authentification fédérée haute disponibilité, phase 1 : Configurer Azure](high-availability-federated-authentication-phase-1-configure-azure.md)
 ##### [Authentification fédérée haute disponibilité, phase 2 : Configurer les contrôleurs de domaine](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)

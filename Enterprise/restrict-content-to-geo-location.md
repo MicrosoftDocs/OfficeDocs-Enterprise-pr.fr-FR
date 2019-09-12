@@ -1,5 +1,5 @@
 ---
-title: Circonscrire le contenu à un emplacement géographique
+title: 'Circonscrire le contenu des sites '
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -10,14 +10,14 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Découvrez comment circonscrire des sites SharePoint à un emplacement géographique spécifique dans un environnement multigéographique.
-ms.openlocfilehash: 42c382abd254afcf74dd6bdd15e4c69f65b64f85
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 9319ed6229acc7cda48cc52b3a27681c53f1359c
+ms.sourcegitcommit: 7bb48195079ce14aabfa0384771b17db0e4908b9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070990"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "36828478"
 ---
-# <a name="restrict-content-to-a-geo-location"></a>Circonscrire le contenu à un emplacement géographique
+# <a name="restrict-sharepoint-site-content-to-a-geo-location"></a>Circonscrire le contenu des sites 
 
 Dans certaines circonstances, vous pouvez imposer qu’un site et les fichiers qu’il contient restent dans l’emplacement géographique où le site a été créé, soit en empêchant le déplacement du site, soit en empêchant la mise en cache des fichiers qu’il contient dans un autre emplacement géographique.
 

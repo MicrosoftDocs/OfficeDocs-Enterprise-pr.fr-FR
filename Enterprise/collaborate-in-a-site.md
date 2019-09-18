@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Découvrez comment collaborer avec des invités sur un site SharePoint.
-ms.openlocfilehash: 23f55e22d4c85dcd168c403f50b35f574be9ac07
-ms.sourcegitcommit: 3bba97053caf5f9cff0ef3205afb7869535f38bd
+ms.openlocfilehash: 4b68b50fec4322f12c24969bdd71e7d9c0fda245
+ms.sourcegitcommit: d388c76d25ca67f240db97f7bfc90f0991b0e7f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "36992383"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "37017312"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Collaborer avec des invités dans un site
 
@@ -72,28 +72,6 @@ Pour définir les paramètres de partage au niveau de l’organisation SharePoin
 2. Dans le centre d’administration SharePoint, dans le volet de navigation de gauche, cliquez sur **partage**.
 3. Assurez-vous que le partage externe pour SharePoint est défini sur **tout le monde** ou sur **des invités nouveaux et existants**.
 4. Si vous avez apporté des modifications, cliquez sur **Enregistrer**.
-
-
-## <a name="sharepoint-organization-level-default-link-settings"></a>Paramètres de lien par défaut au niveau de l’organisation SharePoint
-
-Les paramètres de lien de fichier et de dossier par défaut déterminent l’option de lien qui est présentée par défaut à l’utilisateur lorsqu’il partage un fichier ou un dossier. Les utilisateurs peuvent remplacer le type de lien par l’une des autres options avant de procéder au partage si vous le souhaitez.
-
-N’oubliez pas que ce paramètre affecte toutes les équipes et tous les sites SharePoint de votre organisation.
-
-Choisissez le type de lien sélectionné par défaut lorsque les utilisateurs partagent des fichiers et des dossiers :
-
-- **Toute personne disposant du lien** : choisissez cette option si vous envisagez de partager un grand nombre de fichiers et de dossiers avec des utilisateurs anonymes. Si vous souhaitez autoriser les liens de *tous les utilisateurs* mais s’inquiète du partage anonyme accidentel, envisagez l’une des autres options par défaut. Ce type de lien n’est disponible que si vous avez activé le partage d’un **utilisateur** .
-- **Uniquement les personnes de votre organisation** : choisissez cette option si vous pensez que le partage de fichiers et de dossiers doit être associé à des personnes au sein de votre organisation.
-- **Personnes spécifiques** : envisagez cette option si vous envisagez de faire beaucoup de partage de fichiers et de dossiers avec des invités. Ce type de lien fonctionne avec les invités et les requiert pour s’authentifier.
- 
-![Capture d’écran des paramètres de partage de fichiers et de dossiers au niveau de l’organisation SharePoint](media/sharepoint-organization-files-folders-sharing-settings.png)
-
-
-Pour définir les paramètres de liaison par défaut au niveau de l’organisation SharePoint
-
-1. Accédez à la page de partage dans le centre d’administration SharePoint.
-2. Sous **liens de fichiers et de dossiers**, sélectionnez le lien de partage par défaut à utiliser.
-3. Si vous avez apporté des modifications, cliquez sur **Enregistrer**.
 
 ## <a name="create-a-site"></a>Créer un site
 

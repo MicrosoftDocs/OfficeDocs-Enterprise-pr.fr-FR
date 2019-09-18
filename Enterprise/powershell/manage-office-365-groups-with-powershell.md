@@ -17,16 +17,16 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: Découvrez comment effectuer des tâches de gestion courantes pour les groupes Office 365 dans Microsoft PowerShell.
-ms.openlocfilehash: b2cd536630f80dec66344162669b0bbe1cf3b4cd
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 7e07041516acd3c2038dd92b464073279c49d1a6
+ms.sourcegitcommit: d388c76d25ca67f240db97f7bfc90f0991b0e7f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069020"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "37017342"
 ---
 # <a name="manage-office-365-groups-with-powershell"></a>Utiliser PowerShell pour gérer les groupes Office 365
 
- *Dernière mise à jour: 18 avril 2018* 
+ *Dernière mise à jour : 18 avril 2018* 
   
 Cet article décrit les étapes à suivre pour effectuer des tâches de gestion courantes pour les groupes dans Microsoft PowerShell. Il répertorie également les applets de commande PowerShell pour les groupes. Pour plus d’informations sur la gestion des sites SharePoint, voir [gérer les sites SharePoint Online à l’aide de PowerShell](https://docs.microsoft.com/sharepoint/manage-team-and-communication-sites-in-powershell).
 
@@ -44,7 +44,7 @@ Utilisez Azure Active Directory PowerShell pour faire pointer vos utilisateurs v
 ## <a name="allow-users-to-send-as-the-office-365-group"></a>Autoriser les utilisateurs à envoyer en tant que groupe Office 365
 <a name="BK_LinkToGuideLines"> </a>
   
-Si vous souhaitez activer vos groupes Office 365 sur «Envoyer en tant que», utilisez les cmdlets [Add-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Add-RecipientPermission) et [Get-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Get-Recipient) pour configurer ce. Une fois que vous activez ce paramètre, les utilisateurs du groupe Office 365 peuvent utiliser Outlook ou Outlook sur le Web pour envoyer et répondre à des messages électroniques en tant que groupe 365 Office. Les utilisateurs peuvent accéder au groupe, créer un nouveau courrier électronique et modifier le champ «envoyer en tant que» sur l’adresse de messagerie du groupe. 
+Si vous souhaitez activer vos groupes Office 365 sur « Envoyer en tant que », utilisez les cmdlets [Add-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Add-RecipientPermission) et [Get-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Get-Recipient) pour configurer ce. Une fois que vous activez ce paramètre, les utilisateurs du groupe Office 365 peuvent utiliser Outlook ou Outlook sur le Web pour envoyer et répondre à des messages électroniques en tant que groupe 365 Office. Les utilisateurs peuvent accéder au groupe, créer un nouveau courrier électronique et modifier le champ « envoyer en tant que » sur l’adresse de messagerie du groupe. 
 
 ([Vous pouvez également le faire dans le centre d’administration Exchange](https://docs.microsoft.com/en-us/office365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group).)
   
@@ -65,7 +65,7 @@ Une fois l’applet de commande exécutée, les utilisateurs peuvent accéder à
 
 ## <a name="create-classifications-for-office-groups-in-your-organization"></a>Créer des classifications pour les groupes Office dans votre organisation
 
-Vous pouvez créer des classifications que les utilisateurs de votre organisation peuvent définir lors de la création d’un groupe Office 365. Par exemple, vous pouvez autoriser les utilisateurs à définir «standard», «secret» et «top secret» dans les groupes qu’ils créent. Les classifications de groupe ne sont pas définies par défaut et vous devez les créer afin que les utilisateurs puissent la définir. Utilisez Azure Active Directory PowerShell pour faire pointer vos utilisateurs vers les instructions d’utilisation de votre organisation pour les groupes Office 365.
+Vous pouvez créer des classifications que les utilisateurs de votre organisation peuvent définir lors de la création d’un groupe Office 365. Par exemple, vous pouvez autoriser les utilisateurs à définir « standard », « secret » et « top secret » dans les groupes qu’ils créent. Les classifications de groupe ne sont pas définies par défaut et vous devez les créer afin que les utilisateurs puissent la définir. Utilisez Azure Active Directory PowerShell pour faire pointer vos utilisateurs vers les instructions d’utilisation de votre organisation pour les groupes Office 365.
   
 Consultez les [applets de commande Azure Active Directory pour configurer les paramètres de groupe](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets) et suivez les étapes décrites dans la **section Create Settings at the Directory Level** to define the Classification for Office 365 groups. 
   
@@ -108,7 +108,7 @@ Une fois ces paramètres activés, le propriétaire du groupe pourra choisir une
 ## <a name="hide-office-365-groups-from-gal"></a>Masquer les groupes Office 365 dans la liste d’adresses globale
 <a name="BKMK_CreateClassification"> </a>
 
-Vous pouvez spécifier si un groupe Office 365 apparaît dans la liste d’adresses globale (LAG) et d’autres listes de votre organisation. Par exemple, si vous avez un groupe de services légaux que vous ne voulez pas afficher dans la liste d’adresses, vous pouvez l’empêcher d’apparaître dans la liste d’adresses globale. Exécutez la cmdlet Set-Unified Group pour masquer le groupe de la liste d’adresses comme suit:
+Vous pouvez spécifier si un groupe Office 365 apparaît dans la liste d’adresses globale (LAG) et d’autres listes de votre organisation. Par exemple, si vous avez un groupe de services légaux que vous ne voulez pas afficher dans la liste d’adresses, vous pouvez l’empêcher d’apparaître dans la liste d’adresses globale. Exécutez la cmdlet Set-Unified Group pour masquer le groupe de la liste d’adresses comme suit :
   
 ```
 Set-UnifiedGroup -Identity "Legal Department" -HiddenFromAddressListsEnabled $true
@@ -119,10 +119,10 @@ Set-UnifiedGroup -Identity "Legal Department" -HiddenFromAddressListsEnabled $tr
 
 Si vous ne voulez pas que les utilisateurs d’autres organisations puissent envoyer des messages électroniques à un groupe Office 365, vous pouvez modifier les paramètres de ce groupe. Il permettra uniquement aux utilisateurs internes d’envoyer un courrier électronique à votre groupe. Si un utilisateur externe essaie d’envoyer un message à ce groupe, il sera rejeté.
   
-Exécutez la cmdlet Set-UnifiedGroup pour mettre à jour ce paramètre, comme suit:
+Exécutez la cmdlet Set-UnifiedGroup pour mettre à jour ce paramètre, comme suit :
 
 ```
-Set-UnifiedGroup -Identity "Internal senders only" - RequireSenderAuthenticationEnabled $true
+Set-UnifiedGroup -Identity "Internal senders only" -RequireSenderAuthenticationEnabled $true
 ```
 
 ## <a name="add-mailtips-to-the-office-365-groups"></a>Ajouter des infos-courrier aux groupes Office 365
@@ -130,13 +130,13 @@ Set-UnifiedGroup -Identity "Internal senders only" - RequireSenderAuthentication
 
 Chaque fois qu’un expéditeur tente d’envoyer un message électronique à un groupe Office 365, un info-courrier peut s’afficher.
   
-Exécutez la cmdlet Set-Unified Group pour ajouter un info-courrier au groupe:
+Exécutez la cmdlet Set-Unified Group pour ajouter un info-courrier au groupe :
 
 ```
 Set-UnifiedGroup -Identity "MailTip Group" -MailTip "This group has a MailTip"
 ```
 
-Avec info-courrier, vous pouvez également définir MailTipTranslations, qui spécifie des langues supplémentaires pour l’info-courrier. Supposons que vous voulez avoir la traduction espagnole, puis exécutez la commande suivante:
+Avec info-courrier, vous pouvez également définir MailTipTranslations, qui spécifie des langues supplémentaires pour l’info-courrier. Supposons que vous voulez avoir la traduction espagnole, puis exécutez la commande suivante :
   
 ```
 Set-UnifiedGroup -Identity "MailaTip Group" -MailTip "This group has a MailTip" -MailTipTranslations "@{Add="ES:Esta caja no se supervisa."
@@ -144,7 +144,7 @@ Set-UnifiedGroup -Identity "MailaTip Group" -MailTip "This group has a MailTip" 
 
 ## <a name="change-display-name-of-the-office-365-group"></a>Modifier le nom d’affichage du groupe Office 365
 
-Nom d’affichage spécifie le nom du groupe Office 365. Vous pouvez voir ce nom dans votre centre d’administration Exchange ou dans le portail d’administration d’Office 365. Vous pouvez modifier le nom d’affichage du groupe ou attribuer un nom d’affichage à un groupe Office 365 existant en exécutant la commande Set-UnifiedGroup:
+Nom d’affichage spécifie le nom du groupe Office 365. Vous pouvez voir ce nom dans votre centre d’administration Exchange ou dans le portail d’administration d’Office 365. Vous pouvez modifier le nom d’affichage du groupe ou attribuer un nom d’affichage à un groupe Office 365 existant en exécutant la commande Set-UnifiedGroup :
 
 ```
 Set-UnifiedGroup -Identity "mygroup@contoso.com" -DisplayName "My new group"
@@ -153,15 +153,15 @@ Set-UnifiedGroup -Identity "mygroup@contoso.com" -DisplayName "My new group"
 ## <a name="change-the-default-setting-of-office-365-groups-for-outlook-to-public-or-private"></a>Modifier le paramètre par défaut des groupes Office 365 pour Outlook en mode public ou privé
 <a name="BKMK_CreateClassification"> </a>
 
-Les groupes Office 365 dans Outlook sont créés comme étant privés par défaut. Si votre organisation souhaite que les groupes Office 365 soient créés en tant que public par défaut (ou retour à privé), utilisez la syntaxe de cette cmdlet PowerShell:
+Les groupes Office 365 dans Outlook sont créés comme étant privés par défaut. Si votre organisation souhaite que les groupes Office 365 soient créés en tant que public par défaut (ou retour à privé), utilisez la syntaxe de cette cmdlet PowerShell :
   
  `Set-OrganizationConfig -DefaultGroupAccessType Public`
   
-Pour définir sur privé:
+Pour définir sur privé :
   
  `Set-OrganizationConfig -DefaultGroupAccessType Private`
   
-Pour vérifier le paramètre: 
+Pour vérifier le paramètre : 
   
  `Get-OrganizationConfig | ft DefaultGroupAccessType`
   

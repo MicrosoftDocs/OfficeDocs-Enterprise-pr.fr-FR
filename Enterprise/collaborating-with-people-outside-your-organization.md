@@ -8,16 +8,16 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Découvrez comment configurer Office 365 pour la collaboration avec des utilisateurs invités.
-ms.openlocfilehash: accf67a884d2659eb9fef8b8aff61537d0a4b73d
-ms.sourcegitcommit: 3bba97053caf5f9cff0ef3205afb7869535f38bd
+ms.openlocfilehash: e9cae26881e1efcf1f958a436d095296fcf3c2be
+ms.sourcegitcommit: 1123ef65778a17b7d2cfc308435e96d4b9509df0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "36992373"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37026214"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Collaboration avec des personnes extérieures à votre organisation
 
-Les étapes à suivre pour configurer le partage d’invités dans Microsoft 365 dépendent du scénario que vous souhaitez activer. Choisissez parmi les options suivantes :
+Par défaut, dans Microsoft 365, le partage invité est activé pour SharePoint et OneDrive, mais il est désactivé pour Teams. De nombreux scénarios de partage d’invités SharePoint et OneDrive fonctionnent sans configuration supplémentaire. Pour confirmer les paramètres d’un scénario que vous utilisez ou en activer un nouveau, choisissez l’une des options suivantes :
 
 - [Collaborer sur des documents](collaborate-on-documents.md) : Découvrez comment configurer Microsoft 365 pour permettre le partage et la collaboration avec des invités sur des fichiers et des dossiers.
 - [Collaborer dans un site](collaborate-in-a-site.md) : Découvrez comment configurer Microsoft 365 pour activer le partage de sites SharePoint avec des invités.

@@ -8,19 +8,19 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Découvrez comment configurer Office 365 pour la collaboration avec des utilisateurs invités.
-ms.openlocfilehash: accf67a884d2659eb9fef8b8aff61537d0a4b73d
-ms.sourcegitcommit: 3bba97053caf5f9cff0ef3205afb7869535f38bd
+ms.openlocfilehash: e9cae26881e1efcf1f958a436d095296fcf3c2be
+ms.sourcegitcommit: 1123ef65778a17b7d2cfc308435e96d4b9509df0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "36992373"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37026214"
 ---
-# <a name="collaborating-with-people-outside-your-organization"></a><span data-ttu-id="0ab2c-103">Collaboration avec des personnes extérieures à votre organisation</span><span class="sxs-lookup"><span data-stu-id="0ab2c-103">Collaborating with people outside your organization</span></span>
+# <a name="collaborating-with-people-outside-your-organization"></a><span data-ttu-id="0a463-103">Collaboration avec des personnes extérieures à votre organisation</span><span class="sxs-lookup"><span data-stu-id="0a463-103">Collaborating with people outside your organization</span></span>
 
-<span data-ttu-id="0ab2c-104">Les étapes à suivre pour configurer le partage d’invités dans Microsoft 365 dépendent du scénario que vous souhaitez activer.</span><span class="sxs-lookup"><span data-stu-id="0ab2c-104">The steps to configure guest sharing in Microsoft 365 depend on the scenario that you want to enable.</span></span> <span data-ttu-id="0ab2c-105">Choisissez parmi les options suivantes :</span><span class="sxs-lookup"><span data-stu-id="0ab2c-105">Choose from the following:</span></span>
+<span data-ttu-id="0a463-104">Par défaut, dans Microsoft 365, le partage invité est activé pour SharePoint et OneDrive, mais il est désactivé pour Teams.</span><span class="sxs-lookup"><span data-stu-id="0a463-104">By default, in Microsoft 365, guest sharing is enabled for SharePoint and OneDrive, but disabled for Teams.</span></span> <span data-ttu-id="0a463-105">De nombreux scénarios de partage d’invités SharePoint et OneDrive fonctionnent sans configuration supplémentaire.</span><span class="sxs-lookup"><span data-stu-id="0a463-105">Many SharePoint and OneDrive guest sharing scenarios work without further configuration.</span></span> <span data-ttu-id="0a463-106">Pour confirmer les paramètres d’un scénario que vous utilisez ou en activer un nouveau, choisissez l’une des options suivantes :</span><span class="sxs-lookup"><span data-stu-id="0a463-106">To confirm the settings for a scenario that you're using, or enable a new one, choose from the following options:</span></span>
 
-- <span data-ttu-id="0ab2c-106">[Collaborer sur des documents](collaborate-on-documents.md) : Découvrez comment configurer Microsoft 365 pour permettre le partage et la collaboration avec des invités sur des fichiers et des dossiers.</span><span class="sxs-lookup"><span data-stu-id="0ab2c-106">[Collaborate on documents](collaborate-on-documents.md) - Learn how to configure Microsoft 365 to allow sharing and collaboration with guests on files and folders.</span></span>
-- <span data-ttu-id="0ab2c-107">[Collaborer dans un site](collaborate-in-a-site.md) : Découvrez comment configurer Microsoft 365 pour activer le partage de sites SharePoint avec des invités.</span><span class="sxs-lookup"><span data-stu-id="0ab2c-107">[Collaborate in a site](collaborate-in-a-site.md) - Learn how to configure Microsoft 365 to enable sharing SharePoint sites with guests.</span></span>
-- <span data-ttu-id="0ab2c-108">[Collaborer en tant qu’équipe](collaborate-as-a-team.md) : Découvrez comment configurer Microsoft 365 pour activer la collaboration invité dans Teams.</span><span class="sxs-lookup"><span data-stu-id="0ab2c-108">[Collaborate as a team](collaborate-as-a-team.md) - Learn how to configure Microsoft 365 to enable guest collaboration in Teams.</span></span>
+- <span data-ttu-id="0a463-107">[Collaborer sur des documents](collaborate-on-documents.md) : Découvrez comment configurer Microsoft 365 pour permettre le partage et la collaboration avec des invités sur des fichiers et des dossiers.</span><span class="sxs-lookup"><span data-stu-id="0a463-107">[Collaborate on documents](collaborate-on-documents.md) - Learn how to configure Microsoft 365 to allow sharing and collaboration with guests on files and folders.</span></span>
+- <span data-ttu-id="0a463-108">[Collaborer dans un site](collaborate-in-a-site.md) : Découvrez comment configurer Microsoft 365 pour activer le partage de sites SharePoint avec des invités.</span><span class="sxs-lookup"><span data-stu-id="0a463-108">[Collaborate in a site](collaborate-in-a-site.md) - Learn how to configure Microsoft 365 to enable sharing SharePoint sites with guests.</span></span>
+- <span data-ttu-id="0a463-109">[Collaborer en tant qu’équipe](collaborate-as-a-team.md) : Découvrez comment configurer Microsoft 365 pour activer la collaboration invité dans Teams.</span><span class="sxs-lookup"><span data-stu-id="0a463-109">[Collaborate as a team](collaborate-as-a-team.md) - Learn how to configure Microsoft 365 to enable guest collaboration in Teams.</span></span>
 
 

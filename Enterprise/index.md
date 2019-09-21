@@ -14,12 +14,12 @@ ms.devlang: na
 ms.topic: landing-page
 ms.date: 8/21/2018
 ms.author: robmazz
-ms.openlocfilehash: 9be2aa25a0b59d9a13a9cee3a1b1b59f240f2030
-ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
+ms.openlocfilehash: 265de12a2f1156355873d6798a61a0438f6764a1
+ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34490727"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37067109"
 ---
 <h1>Office 365 Entreprise</h1>
 <p>Microsoft Office&nbsp;365 fournit des services de Cloud en ligne puissants qui permettent la collaboration, la sécurité et la conformité, la mobilité, l’intelligence et l’analyse. Cette page fournit des liens vers des conseils pour les administrateurs et les professionnels de l’informatique qui déploient, configurent et gèrent les services Office&nbsp;365 dans des organisations d’entreprise.</p>
@@ -292,6 +292,8 @@ ms.locfileid: "34490727"
                     <div class="cardText">
                         <h3>Microsoft 365</h3>
                         <p><a href="https://docs.microsoft.com/microsoft-365">En savoir plus sur Microsoft 365.</a></p>
+                        <p><a href="https://docs.microsoft.com/microsoft-365/compliance/">En savoir plus sur la conformité de Microsoft 365.</a></p>
+                        <p><a href="https://docs.microsoft.com/microsoft-365/security/">En savoir plus sur la sécurité Microsoft 365.</a></p>
                     </div>
                 </div>
             </div>

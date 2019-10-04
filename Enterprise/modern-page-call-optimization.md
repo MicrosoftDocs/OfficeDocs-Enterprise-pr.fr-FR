@@ -16,12 +16,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Découvrez comment optimiser les pages de sites de publication modernes et classiques dans SharePoint Online en limitant le nombre d’appels aux points de terminaison de service SharePoint Online.
-ms.openlocfilehash: d44cb2273d550cea3a9ec7bfb1ffaeb10bbdd333
-ms.sourcegitcommit: c7764503422922cb333b05d54e8ebbdb894df2f9
+ms.openlocfilehash: 1e355aee6d55e3e45238cdf09853ddebb922ae53
+ms.sourcegitcommit: 67dbbf1a5ec8cc4b10ca10f267f871f0bc045e63
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37028201"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37375502"
 ---
 # <a name="optimize-page-calls-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>Optimiser les appels de page dans les pages de sites de publication modernes et classiques SharePoint Online
 
@@ -56,7 +56,7 @@ Si une page contient un trop grand nombre d’appels, vous pouvez utiliser la li
 
 **Le traitement par lots des appels REST** permet de réduire la dégradation des performances. Pour plus d’informations sur le traitement par lots d’appels d’API, consultez [Effectuer des requêtes de lot avec les API REST](https://docs.microsoft.com/fr-FR/sharepoint/dev/sp-add-ins/make-batch-requests-with-the-rest-apis).
 
-**L’utilisation d’un cache** pour stocker les résultats d’un appel d’API peut améliorer les performances d’une demande d’urgence en permettant au client d’utiliser les données mises en cache au lieu d’effectuer un appel supplémentaire pour chaque chargement de page suivant. Il existe de multiples façons d’aborder cette solution en fonction des besoins de l’entreprise. En règle générale, si les données sont identiques pour tous les utilisateurs, l’utilisation d’un service de mise en cache de niveau intermédiaire comme Azure Redis cache constitue une option idéale pour réduire considérablement le trafic d’API sur un site, car les utilisateurs demandent les données du service de mise en cache plutôt que directement à partir de SPO. Les seuls appels SPO nécessaires sont pour actualiser le cache du niveau intermédiaire. Si les données fluctuent en fonction de chaque utilisateur individuel, il peut être préférable d’implémenter un cache côté client, tel que LocalStorage ou même un cookie. Cela a pour but de réduire encore les volumes d’appels en éliminant les demandes subséquentes effectuées par le même utilisateur pour la durée du cache, mais sera moins efficace qu’un service de mise en cache dédié. PnP vous permet d’utiliser LocalStorage en ne nécessitant que peu de développement supplémentaire.
+**L’utilisation d’un cache** pour stocker les résultats d’un appel d’API peut améliorer les performances d’une demande d’urgence en permettant au client d’utiliser les données mises en cache au lieu d’effectuer un appel supplémentaire pour chaque chargement de page suivant. Il existe de multiples façons d'aborder cette solution en fonction des besoins de l'entreprise. En règle générale, si les données sont identiques pour tous les utilisateurs, l’utilisation d’un service de mise en cache de niveau intermédiaire comme [_Cache_ Azure Redis](https://azure.microsoft.com/fr-FR/services/cache/) constitue une option idéale pour réduire considérablement le trafic d’API sur un site, car les utilisateurs demandent les données du service de mise en cache plutôt que directement à partir de SPO. Les seuls appels SPO nécessaires sont pour actualiser le cache du niveau intermédiaire. Si les données fluctuent en fonction de chaque utilisateur individuel, il peut être préférable d’implémenter un cache côté client, tel que LocalStorage ou même un cookie. Cela a pour but de réduire encore les volumes d’appels en éliminant les demandes subséquentes effectuées par le même utilisateur pour la durée du cache, mais sera moins efficace qu’un service de mise en cache dédié. PnP vous permet d’utiliser LocalStorage en ne nécessitant que peu de développement supplémentaire.
 
 Avant d’apporter des révisions de page pour résoudre les problèmes de performances, notez le temps de chargement des pages dans les résultats de l’analyse. Exécutez à nouveau l’outil après votre révision pour déterminer si le nouveau résultat est inclus dans la norme de référence et vérifier le nouveau temps de chargement des pages pour voir s’il y a eu une amélioration.
 
@@ -71,7 +71,7 @@ Avant d’apporter des révisions de page pour résoudre les problèmes de perfo
 
 [Optimisation des performances Office 365](tune-office-365-performance.md)
 
-[Performances offertes par l’expérience moderne de SharePoint](https://docs.microsoft.com/fr-FR/sharepoint/modern-experience-performance.md)
+[Performances offertes par l’expérience moderne de SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-performance)
 
 [Réseaux de distribution de contenu](content-delivery-networks.md)
 

@@ -3,7 +3,7 @@ title: Points de terminaison DoD du gouvernement américain Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/28/2019
+ms.date: 09/30/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,20 +17,20 @@ search.appverid:
 - OGD150
 - MOE150
 ms.assetid: 5d7dce60-4892-4b58-b45e-ee42fe8a907f
-description: 'Résumé: Office 365 nécessite une connectivité à Internet. Les points de terminaison ci-dessous doivent être accessibles aux clients utilisant Office 365 le gouvernement américain DoD plans uniquement.'
+description: 'Résumé : Office 365 nécessite une connectivité à Internet. Les points de terminaison ci-dessous doivent être accessibles aux clients utilisant Office 365 le gouvernement américain DoD plans uniquement.'
 hideEdit: true
-ms.openlocfilehash: 6b0ad897378c92d581c200ed85c31b227d60dca0
-ms.sourcegitcommit: 0d21bd4edac07db94269e2a176c92469c02b2e26
+ms.openlocfilehash: 58f3000767574fcc0d75f4f7525d3c870d394d1a
+ms.sourcegitcommit: 960ad339d16cd5112cf83460b123ae3993839310
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "36656035"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "37388172"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Points de terminaison DoD du gouvernement américain Office 365
 
-*S’applique à: Office 365 admin*
+*S’applique à : Office 365 admin*
 
- **Résumé:** Office 365 nécessite une connectivité à Internet. Les points de terminaison ci-dessous doivent être accessibles aux clients utilisant Office 365 le gouvernement américain DoD plans uniquement.
+ **Résumé :** Office 365 nécessite une connectivité à Internet. Les points de terminaison ci-dessous doivent être accessibles aux clients utilisant Office 365 le gouvernement américain DoD plans uniquement.
   
 > [!NOTE]
 > Microsoft a publié un service web utilisant REST pour les entrées d’adresse IP et de FQDN sur cette page. Ce nouveau service vous permettra de configurer et de mettre à jour des périphériques de périmètre de réseau, tels que des pare-feu et serveurs proxy. Vous pouvez télécharger la liste des points de terminaison, la version actuelle de la liste ou des modifications spécifiques. Ce service remplace le document XML dont le lien est fourni sur cette page et qui est obsolète depuis le 2 octobre 2018. Pour essayer ce nouveau service, accédez au [service web](office-365-ip-web-service.md).
@@ -39,11 +39,11 @@ ms.locfileid: "36656035"
   
 |||
 |:-----|:-----|
-|**Dernière mise à jour:** 08/28/2019-abonnement au ![](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Journal des modifications](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) RSS <br/> |**Téléchargement:** liste complète au [format JSON](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
+|**Dernière mise à jour :** 9/30/2019-abonnement au ![](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Journal des modifications](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) RSS <br/> |**Téléchargement :** liste complète au [format JSON](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
    
  Commencez par [gérer les points de terminaison Office 365](managing-office-365-endpoints.md) pour comprendre nos recommandations en matière de gestion de la connectivité réseau à l’aide de ces données. Les données de points de terminaison sont mises à jour au début de chaque mois avec de nouvelles adresses IP et des URL publiées 30 jours avant d’être actives. Cela permet aux clients qui ne disposent pas encore de mises à jour automatiques d’effectuer leurs processus avant que la nouvelle connectivité ne soit requise. Les points de terminaison peuvent également être mis à jour au cours du mois si cela s’avère nécessaire pour traiter les escalades, les incidents de sécurité ou d’autres exigences opérationnelles immédiates. Les données affichées sur cette page ci-dessous sont toutes générées à partir des services Web basés sur REST. Si vous utilisez un script ou un périphérique réseau pour accéder à ces données, vous devez accéder directement au [service Web](office-365-ip-web-service.md) .
 
-Les données de point de terminaison ci-dessous répertorient les exigences de connectivité à partir de l’ordinateur d’un utilisateur vers Office 365. Elles n’incluent pas les connexions réseau de Microsoft vers un réseau client, parfois appelées connexions réseau entrantes ou hybrides.
+Les données de point de terminaison ci-dessous répertorient les conditions requises pour la connectivité entre l’ordinateur d’un utilisateur et Office 365. Il n’inclut pas les connexions réseau de Microsoft dans un réseau client, parfois appelé connexions réseau hybrides ou entrantes. Pour plus d’informations, consultez [la rubrique autres points de terminaison non inclus dans le service Web](additional-office365-ip-addresses-and-urls.md). 
 
 Les points de terminaison sont regroupés en quatre zones de service. Les trois premières zones de service peuvent être sélectionnées de manière indépendante pour la connectivité. La quatrième zone de service est une dépendance commune (appelée Microsoft 365 Common and Office) et doit toujours disposer d’une connectivité réseau.
 

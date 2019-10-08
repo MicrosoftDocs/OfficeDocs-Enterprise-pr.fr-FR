@@ -3,7 +3,7 @@ title: Configurer les propriétés des comptes d'utilisateur avec Office 365 Pow
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/03/2019
+ms.date: 10/07/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: "Résumé : Utilisez Office 365 PowerShell pour configurer les propriétés d'un ou de plusieurs comptes d'utilisateur dans votre client Office 365."
-ms.openlocfilehash: 53a99c33dcebebc87e12a468d56e5460b8a0c111
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 3d81a7e5860b086fd411e8e6fcaab44568e890d5
+ms.sourcegitcommit: 4d29b00a57c22225f2cdd592064ee8b6e575fceb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782604"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "37411513"
 ---
 # <a name="configure-user-account-properties-with-office-365-powershell"></a>Configurer les propriétés des comptes d’utilisateur avec Office 365 PowerShell
 
@@ -71,7 +71,11 @@ Identifiez le compte avec le paramètre **-ObjectID** et définissez ou modifiez
     Voici le code de la région ou du pays à deux lettres ISO 3166-1 alpha-2 (A2).
     
 Pour consulter des paramètres supplémentaires, reportez-vous à [Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0).
-  
+
+>[!Note]
+> Vous définissez la propriété **mail** avec le paramètre **-OtherMails** .
+>
+ 
 Pour afficher le nom d’utilisateur principal pour vos comptes d’utilisateur, exécutez la commande suivante.
   
 ```
@@ -186,7 +190,11 @@ Identifiez le compte avec le paramètre **-UserPrincipalName** et définissez ou
     Voici le code de la région ou du pays à deux lettres ISO 3166-1 alpha-2 (A2).
     
 Pour obtenir plus de paramètres, voir [Set-MsolUser](https://msdn.microsoft.com/library/azure/dn194136.aspx).
-  
+
+>[!Note]
+> Vous définissez la propriété **mail** avec le paramètre **-AlternateEmailAddresses** .
+>
+ 
 Pour afficher les noms d’utilisateur principaux de tous vos utilisateurs, exécutez la commande suivante.
   
 ```

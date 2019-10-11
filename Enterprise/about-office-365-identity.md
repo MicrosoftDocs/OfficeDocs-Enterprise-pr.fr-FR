@@ -4,6 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
+ms.date: 05/20/2019
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -18,14 +19,16 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Découvrez comment l’identité de l’utilisateur est gérée dans Office 365.
-ms.openlocfilehash: 421002825842201fa754b4c5579dc04fde37eeaf
-ms.sourcegitcommit: 2a7177c666dce3c00462b97463a6855e9e3a81f0
+ms.openlocfilehash: b1c1e8f9a56f2bdaa927ef3d096c1c614de647bb
+ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34249462"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428081"
 ---
 # <a name="office-365-identity-models-and-azure-active-directory"></a>Modèles d’identité Office 365 et Azure Active Directory
+
+*Cet article s’applique à la fois à Office 365 entreprise et à Microsoft 365 Enterprise*
 
 Office 365 utilise Azure Active Directory (Azure AD), un service d’authentification et d’identité d’utilisateur basé sur un nuage inclus dans votre abonnement Office 365, pour gérer les identités et l’authentification pour Office 365. L’obtention de l’infrastructure d’identité configurée correctement est essentielle pour la gestion de l’accès des utilisateurs et des autorisations Office 365 pour votre organisation.
 
@@ -91,9 +94,13 @@ Vous n’utilisez pas le centre d’administration Microsoft 365 ni Windows Powe
 
 Si vous avez besoin du modèle d’identité Cloud uniquement, consultez la rubrique [identités en nuage uniquement](cloud-only-identities.md).
 
-Si vous avez besoin du modèle d’identité hybride, consultez la rubrique [synchronisation](plan-for-directory-synchronization.md)d’annuaires.
+Si vous avez besoin du modèle d’identité hybride, consultez la rubrique [synchronisation d’annuaires](plan-for-directory-synchronization.md).
   
 
 ## <a name="video-training"></a>Vidéo de formation
 
-Consultez le cours vidéo [Office 365: gérer les identités à l’aide d’Azure ad Connect](https://support.office.com/article/90991a1d-c0ab-479a-b413-35c9706f6fed.aspx), qui vous a été présenté par LinkedIn Learning.
+Consultez le cours vidéo [Office 365 : gérer les identités à l’aide d’Azure ad Connect](https://support.office.com/article/90991a1d-c0ab-479a-b413-35c9706f6fed.aspx), qui vous a été présenté par LinkedIn Learning.
+
+## <a name="see-also"></a>Voir aussi
+
+[Vue d’ensemble de Microsoft 365 Entreprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

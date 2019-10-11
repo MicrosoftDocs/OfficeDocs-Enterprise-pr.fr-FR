@@ -17,14 +17,16 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: Contient des liens vers des informations sur la planification et le test du réseau, ainsi que sur la migration vers Office 365.
-ms.openlocfilehash: 572910f2104ecd90e78bcfe37b2b022ddb3893fa
-ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
+ms.openlocfilehash: b2f9cdd3514b8d272bc070108f0dbed94d350f94
+ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35616777"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428141"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Planification du réseau et de la migration pour Office 365
+
+*Cet article s’applique à la fois à Office 365 entreprise et à Microsoft 365 Enterprise*
 
 Cet article contient des liens vers des informations sur la planification et le test du réseau, ainsi que sur la migration vers Office 365.
   
@@ -43,7 +45,7 @@ Avant de déployer pour la première fois ou de migrer vers Office 365, vous pou
 
 L’utilisation d’Office 365 peut augmenter l’utilisation du circuit Internet de votre organisation. Il est important de déterminer si la quantité de bande passante actuellement disponible est suffisante pour gérer l’augmentation estimée une fois qu’Office 365 est entièrement déployé, tout en laissant au moins 20% de capacité pour gérer le plus important de jours.
   
-Pour estimer la bande passante, procédez comme suit:
+Pour estimer la bande passante, procédez comme suit :
   
 1. Évaluez le nombre de clients qui utiliseront chaque sortie Internet. Laissez notre réseau multi-Terabit gérer autant que possible la connexion. 
     
@@ -69,7 +71,7 @@ Pour estimer la bande passante, procédez comme suit:
 
 Approfondissez ces meilleures pratiques pour obtenir plus d’informations sur l’amélioration de votre expérience Office 365.
   
-1. Vous souhaitez commencer à aider vos utilisateurs immédiatement? Consultez les [meilleures pratiques pour l’utilisation d’office 365 sur un réseau lent](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166) pour obtenir des conseils sur l’utilisation d’Office 365, notamment SharePoint Online, Exchange Online et Lync Online, lorsque votre réseau n’est pas coopéré. Cet article fournit des liens vers des charges de contenu sur TechNet et Support.office.com pour l’optimisation de votre expérience Office 365 et inclut des informations sur des méthodes simples pour personnaliser vos pages Web et sur la façon de définir vos paramètres Internet Explorer pour la meilleure expérience Office 365. 
+1. Vous souhaitez commencer à aider vos utilisateurs immédiatement ? Consultez les [meilleures pratiques pour l’utilisation d’office 365 sur un réseau lent](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166) pour obtenir des conseils sur l’utilisation d’Office 365, notamment SharePoint Online, Exchange Online et Lync Online, lorsque votre réseau n’est pas coopéré. Cet article fournit des liens vers des charges de contenu sur TechNet et Support.office.com pour l’optimisation de votre expérience Office 365 et inclut des informations sur des méthodes simples pour personnaliser vos pages Web et sur la façon de définir vos paramètres Internet Explorer pour la meilleure expérience Office 365. 
     
 2. Lisez les [principes de connectivité réseau office 365](https://aka.ms/o365networkingprinciples) pour comprendre les principes de connectivité permettant de gérer le trafic Office 365 en toute sécurité et d’obtenir les meilleures performances possibles. Cet article vous aidera à comprendre les instructions les plus récentes pour optimiser en toute sécurité la connectivité réseau Office 365. 
     
@@ -112,3 +114,6 @@ Ces rubriques contiennent des informations détaillées sur le réseau Office 36
     
 - [Conseillers de déploiement pour les services Office 365](deployment-advisors-for-office-365.md)
  
+## <a name="see-also"></a>Voir aussi
+
+[Vue d’ensemble de Microsoft 365 Entreprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

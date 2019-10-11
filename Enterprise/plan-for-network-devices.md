@@ -15,18 +15,20 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
-description: 'Résumé: décrit les considérations relatives à la capacité réseau, aux accélérateurs de réseau étendu et aux périphériques d’équilibrage de charge utilisés pour se connecter à Office 365.'
-ms.openlocfilehash: b6804e7922178a3b653b3767a33e02e2a382ef93
-ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
+description: 'Résumé : décrit les considérations relatives à la capacité réseau, aux accélérateurs de réseau étendu et aux périphériques d’équilibrage de charge utilisés pour se connecter à Office 365.'
+ms.openlocfilehash: 066d2b07c10009ced1935086ee8d80720bd397ca
+ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34722623"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428101"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Planifier les périphériques réseau qui se connectent aux services Office 365
 
- **Résumé**: décrit les considérations relatives à la capacité réseau, aux accélérateurs de réseau étendu et aux périphériques d’équilibrage de charge utilisés pour se connecter à Office 365.
+*Cet article s’applique à la fois à Office 365 entreprise et à Microsoft 365 Enterprise*
   
+**Résumé**: décrit les considérations relatives à la capacité réseau, aux accélérateurs de réseau étendu et aux périphériques d’équilibrage de charge utilisés pour se connecter à Office 365.
+
 Certains matériels réseau peuvent avoir des limitations quant au nombre de sessions simultanées prises en charge. Pour les organisations qui possèdent plus de 2 000 utilisateurs, nous recommandons qu’ils surveillent leurs périphériques réseau pour s’assurer qu’ils sont capables de gérer le trafic de service 365 Office supplémentaire. Le logiciel de surveillance SNMP (simple Network Management Protocol) peut vous aider à effectuer cette opération.
 
 ||
@@ -35,7 +37,7 @@ Certains matériels réseau peuvent avoir des limitations quant au nombre de ses
 
 Les paramètres de proxy Internet sortants en local affectent également la connectivité aux services Office 365 pour vos applications clientes. Vous devez également configurer vos périphériques de proxy réseau pour autoriser les connexions pour les applications et les URL des services de Cloud Computing Microsoft. Chaque organisation est différente. Pour obtenir une idée de la façon dont Microsoft gère ce processus et de la quantité de bande passante que nous approvisionnez, [Lisez l’étude de cas](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365).
   
-Les articles suivants de l’aide de Skype entreprise contiennent des informations supplémentaires sur les paramètres de Skype entreprise:
+Les articles suivants de l’aide de Skype entreprise contiennent des informations supplémentaires sur les paramètres de Skype entreprise :
   
 - [Dépannage des erreurs de connexion Skype entreprise Online pour les administrateurs](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/troubleshooting-sign-in-errors-for-admins)
 
@@ -71,3 +73,5 @@ Pour plus d’informations sur la configuration des pare-feu et des proxys pour 
 ## <a name="see-also"></a>Voir aussi
 
 [Conseillers de déploiement pour les services Office 365](deployment-advisors-for-office-365.md)
+
+[Vue d’ensemble de Microsoft 365 Entreprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

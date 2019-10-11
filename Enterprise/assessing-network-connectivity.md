@@ -16,14 +16,16 @@ search.appverid:
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
 description: Office 365 est conçu pour permettre aux clients du monde entier de se connecter au service à l’aide d’une connexion Internet. À mesure que le service évolue, la sécurité, les performances et la fiabilité d’Office 365 sont améliorées en fonction des clients qui utilisent Internet pour établir une connexion au service.
-ms.openlocfilehash: 884c4c0d510de55da4125a3e3b80b4bd869ec697
-ms.sourcegitcommit: c207aafc126a495e700552796ed89da3de254910
+ms.openlocfilehash: 2f58bf71c292f57ccef79f7f0f79e1cd474c681d
+ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36233424"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428071"
 ---
 # <a name="assessing-office-365-network-connectivity"></a>Évaluation de la connectivité réseau Office 365
+
+*Cet article s’applique à la fois à Office 365 entreprise et à Microsoft 365 Enterprise*
 
 Office 365 est conçu pour permettre aux clients du monde entier de se connecter au service à l’aide d’une connexion Internet. À mesure que le service évolue, la sécurité, les performances et la fiabilité d’Office 365 sont améliorées en fonction des clients qui utilisent Internet pour établir une connexion au service.
   
@@ -35,7 +37,7 @@ Une évaluation réseau complète fournira des solutions aux défis de conceptio
 
 Certaines évaluations indiquent que la connectivité réseau à Office 365 nécessite des investissements supplémentaires dans les composants réseau. Par exemple, les réseaux d’entreprise qui s’étendent sur des succursales et dans plusieurs régions géographiques peuvent nécessiter des investissements dans des solutions SD-WAN ou une infrastructure de routage optimisée pour prendre en charge la connectivité Internet à Office 365. Il arrive qu’une évaluation indique que la connectivité réseau à Office 365 est influencée par la réglementation ou les performances requises pour des scénarios tels que la [qualité des médias Skype entreprise Online](https://support.office.com/article/Media-Quality-and-Network-Connectivity-Performance-in-Skype-for-Business-Online-5fe3e01b-34cf-44e0-b897-b0b2a83f0917). Ces exigences supplémentaires peuvent conduire à des investissements dans l’infrastructure de connectivité Internet, l’optimisation du routage et une connectivité directe spécialisée.
 
-Certaines ressources pour vous aider à évaluer votre réseau:
+Certaines ressources pour vous aider à évaluer votre réseau :
 
 - Consultez la rubrique [vue d’ensemble de la connectivité réseau office 365](office-365-networking-overview.md) pour obtenir des informations conceptuelles sur la mise en réseau Office 365.
 - Consultez les [principes de connectivité réseau office 365](https://aka.ms/o365networkingprinciples) pour comprendre les principes de connectivité permettant de gérer le trafic Office 365 en toute sécurité et d’obtenir les meilleures performances possibles.
@@ -45,7 +47,7 @@ Certaines ressources pour vous aider à évaluer votre réseau:
 > [!NOTE]
 > L’autorisation Microsoft est requise pour utiliser ExpressRoute pour Office 365. Microsoft révise chaque demande de client et autorise uniquement l’utilisation d’ExpressRoute pour Office 365 lorsque la configuration requise par le client impose une connectivité directe. Si vous avez ces exigences, indiquez l’extrait de texte et le lien Web du règlement que vous interprétez pour signifier que la connectivité directe est requise dans le [formulaire de demande ExpressRoute pour Office 365](https://aka.ms/O365ERReview) pour commencer une révision Microsoft. Les abonnements non autorisés qui tentent de créer des filtres d’itinéraires pour Office 365 recevront un [message d’erreur](https://support.microsoft.com/kb/3181709).
   
-Points clés à prendre en compte lors de la planification de votre évaluation réseau pour Office 365:
+Points clés à prendre en compte lors de la planification de votre évaluation réseau pour Office 365 :
   
 - Office 365 est un service sécurisé, fiable et performant qui s’exécute sur Internet public. Nous continuons à investir pour améliorer ces aspects du service. Tous les services Office 365 sont disponibles via la connectivité Internet.
 
@@ -59,16 +61,16 @@ Si vous évaluez Office 365 et que vous ne savez pas où commencer avec votre é
 
 L' [outil d’intégration réseau Office 365](https://aka.ms/netonboard) est un outil d’évaluation réseau POC (proof of concept) qui exécute des tests de connectivité de base sur votre client Office 365 et fait des recommandations de conception réseau spécifiques pour des performances optimales d’Office 365. L’outil met en évidence les choix courants de la conception du périmètre du réseau d’entreprise, qui sont utiles pour la navigation Web Internet, mais qui influent sur les performances des applications SaaS volumineuses telles que Office 365.
 
-L’outil d’intégration réseau effectue les opérations suivantes:
+L’outil d’intégration réseau effectue les opérations suivantes :
 
 - Détecte votre emplacement ou vous pouvez spécifier un emplacement pour le tester
 - Vérifie l’emplacement de la sortie de votre réseau
 - Teste le chemin d’accès réseau vers le volet frontal du service Office 365 le plus proche
 - Fournit des tests avancés à l’aide d’une application Windows 10 téléchargeable qui fait des recommandations de conception du réseau de périmètre liées aux serveurs proxy, aux pare-feux et au DNS. L’outil exécute également des tests de performances pour Skype entreprise Online, Microsoft Teams, SharePoint Online et Exchange Online.
 
-L’outil comporte deux composants: une interface utilisateur basée sur un navigateur qui recueille des informations de connectivité de base et une application Windows 10 téléchargeable qui exécute les tests avancés et renvoie des données d’évaluation supplémentaires.
+L’outil comporte deux composants : une interface utilisateur basée sur un navigateur qui recueille des informations de connectivité de base et une application Windows 10 téléchargeable qui exécute les tests avancés et renvoie des données d’évaluation supplémentaires.
 
-L’outil basé sur un navigateur affiche les informations suivantes:
+L’outil basé sur un navigateur affiche les informations suivantes :
 
 - Onglet résultats et impact
   - Emplacement sur une carte de la porte d’appel du service en cours d’utilisation
@@ -82,7 +84,7 @@ L’outil basé sur un navigateur affiche les informations suivantes:
   - Une ou plusieurs portes avant d’Office 365 Exchange Online Service pour l’emplacement de l’utilisateur
   - Clients de votre région de métro avec de meilleures performances
 
-L’application téléchargeable de tests avancés fournit les informations supplémentaires suivantes:
+L’application téléchargeable de tests avancés fournit les informations supplémentaires suivantes :
 
 - Onglet Détails et solutions (ajouté)
   - Passerelle par défaut de l’utilisateur
@@ -101,7 +103,7 @@ L’application téléchargeable de tests avancés fournit les informations supp
 
 Pour plus d’informations sur l’outil d’intégration réseau Office 365, consultez la rubrique [mise à jour de l’outil d’intégration réseau office 365 sur le nouveau site de blog recommandations de conception réseau](https://techcommunity.microsoft.com/t5/Office-365-Networking/Updated-Office-365-Network-Onboarding-Tool-POC-with-new-network/m-p/711130#M130) . Des informations sur les mises à jour futures de cet outil et d’autres mises à jour de mise en réseau Office 365 seront publiées sur le blog de [mise en réseau office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking) .
   
-Voici un petit lien que vous pouvez utiliser pour revenir: [ https://aka.ms/o365networkconnectivity.](https://aka.ms/o365networkconnectivity)
+Voici un petit lien que vous pouvez utiliser pour revenir : [ https://aka.ms/o365networkconnectivity.](https://aka.ms/o365networkconnectivity)
   
 ## <a name="see-also"></a>Voir aussi
 
@@ -116,3 +118,5 @@ Voici un petit lien que vous pouvez utiliser pour revenir: [ https://aka.ms/o365
 [Service web d’URL et d’adresses IP Office 365](office-365-ip-web-service.md)
 
 [Paramétrage des performances et du réseau Office 365](network-planning-and-performance.md)
+
+[Vue d’ensemble de Microsoft 365 Entreprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

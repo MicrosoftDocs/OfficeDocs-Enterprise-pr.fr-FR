@@ -79,7 +79,7 @@ Dans cette phase, vous devez créer et configurer le nouveau réseau virtuel XPr
 Tout d’abord, démarrez une invite PowerShell Azure sur votre ordinateur local.
   
 > [!NOTE]
-> Les ensembles de commandes suivants utilisent la dernière version d'Azure PowerShell. Reportez-vous à la rubrique relative à la [prise en main des cmdlets Azure PowerShell](https://docs.microsoft.com/fr-FR/powershell/azureps-cmdlets-docs/). 
+> Les ensembles de commandes suivants utilisent la dernière version d'Azure PowerShell. Reportez-vous à la rubrique relative à la [prise en main des cmdlets Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
   
 Connectez-vous à votre compte Azure avec cette commande.
   

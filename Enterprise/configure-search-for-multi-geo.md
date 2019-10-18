@@ -85,7 +85,7 @@ Certaines fonctionnalités de recherche auxquelles vous êtes habitué fonctionn
 <tr class="odd">
 <td align="left"></td>
 <td align="left">La recherche multigéographique ne prend pas en charge la création dynamique de compartiments pour les affinements numériques.</td>
-<td align="left">Utilisez le <a href="https://docs.microsoft.com/fr-FR/sharepoint/dev/general-development/query-refinement-in-sharepoint">paramètre « Discretize »</a> pour les affinements numériques.</td>
+<td align="left">Utilisez le <a href="https://docs.microsoft.com/en-us/sharepoint/dev/general-development/query-refinement-in-sharepoint">paramètre « Discretize »</a> pour les affinements numériques.</td>
 </tr>
 <tr class="even">
 <td align="left">ID de document</td>
@@ -172,7 +172,7 @@ Les applications de recherche personnalisée obtiennent les résultats de l’en
 
 **Configuration requise**
 
-Pour chaque emplacement géographique, vous devez vous assurer que tous les utilisateurs de l’organisation ont reçu l’autorisation de **lecture** du site web racine (par exemple contoso**APAC**.sharepoint.com/ et contoso**EU**.sharepoint.com/). [En savoir plus sur les autorisations](https://support.office.com/fr-FR/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
+Pour chaque emplacement géographique, vous devez vous assurer que tous les utilisateurs de l’organisation ont reçu l’autorisation de **lecture** du site web racine (par exemple contoso**APAC**.sharepoint.com/ et contoso**EU**.sharepoint.com/). [En savoir plus sur les autorisations](https://support.office.com/en-us/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
 
 ### <a name="query-parameters"></a>Paramètres de requête
 
@@ -205,7 +205,7 @@ MultiGeoSearchConfiguration : il s’agit d’une liste facultative d’emplace
 </tbody>
 </table>
 
-Si vous omettez DataLocation ou EndPoint, ou si une DataLocation est dupliquée, la demande échoue. [Vous pouvez obtenir des informations sur le point de terminaison des emplacements géographiques d’un client à l’aide de Microsoft Graph](https://docs.microsoft.com/fr-FR/sharepoint/dev/solution-guidance/multigeo-discovery).
+Si vous omettez DataLocation ou EndPoint, ou si une DataLocation est dupliquée, la demande échoue. [Vous pouvez obtenir des informations sur le point de terminaison des emplacements géographiques d’un client à l’aide de Microsoft Graph](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/multigeo-discovery).
 
 ### <a name="response-data"></a>Données de réponse
 

@@ -15,8 +15,8 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "36992423"
 ---
-# <a name="guest-collaboration-options"></a><span data-ttu-id="6d8af-103">Options de collaboration d’invité</span><span class="sxs-lookup"><span data-stu-id="6d8af-103">Guest collaboration options</span></span>
+# <a name="guest-collaboration-options"></a><span data-ttu-id="e041e-103">Options de collaboration d’invité</span><span class="sxs-lookup"><span data-stu-id="e041e-103">Guest collaboration options</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="6d8af-104">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="6d8af-104">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e041e-104">Voir aussi</span><span class="sxs-lookup"><span data-stu-id="e041e-104">See Also</span></span>
 
-<span data-ttu-id="6d8af-105">CollabWorking</span><span class="sxs-lookup"><span data-stu-id="6d8af-105">CollabWorking</span></span>
+<span data-ttu-id="e041e-105">CollabWorking</span><span class="sxs-lookup"><span data-stu-id="e041e-105">CollabWorking</span></span>

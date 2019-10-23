@@ -3,7 +3,7 @@ title: Enregistrements DNS externes pour Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 8/13/2019
+ms.date: 10/21/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: 'Résumé : liste de référence des enregistrements DNS à utiliser lorsque vous planifiez un déploiement Office 365.'
-ms.openlocfilehash: 665e5aebee6546ceaa3275249da1bcaac6eb0ba2
-ms.sourcegitcommit: 74b6d9fc3ce0873e8564fc4de51fe3afeb122447
+ms.openlocfilehash: 75ada2f8632f880627b525112229ae09742029cd
+ms.sourcegitcommit: 546080809d4f8ee4954943738906eec6c9bac1d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37387051"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37616137"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Enregistrements DNS externes pour Office 365
 
@@ -45,7 +45,7 @@ Chaque client Office 365 doit ajouter deux enregistrements à son serveur DNS ex
 ||||
 |:-----|:-----|:-----|
 |**Enregistrement DNS** <br/> |**Objectif** <br/> |**Valeur à utiliser** <br/> |
-|**CNAME** <br/> **(Suite)** <br/> |Utilisé par Office 365 pour l'authentification directe auprès de la plateforme d'identité correcte.[Plus d’informations](https://go.microsoft.com/fwlink/p/?LinkId=322005) <br/> **Remarque :** cette CNAME s’applique uniquement à Office 365 géré par 21Vianet.   |**Alias :** msoID  <br/> **Cible :** clientconfig.microsoftonline-p.net  <br/> |
+|**CNAME** <br/> **(Suite)** <br/> |Utilisé par Office 365 pour l'authentification directe auprès de la plateforme d'identité correcte.[Plus d’informations](https://go.microsoft.com/fwlink/p/?LinkId=322005) <br/> **Remarque :** cette CNAME s’applique uniquement à Office 365 géré par 21Vianet.   |**Alias :** msoID  <br/> **Cible :** clientconfig.partner.microsoftonline-p.net.cn  <br/> |
 |**TXT** <br/> **(Vérification du domaine)** <br/> |Utilisées par Office 365 uniquement ce vous êtes le propriétaire vérifier votre domaine. Il n’affecte aucun autre élément.  <br/> |**Hôte :** @ (ou de certains fournisseurs d’hébergement DNS, votre nom de domaine)  <br/> **Valeur TXT :** _une chaîne de texte fournie par_ Office 365  <br/> L’Assistant de **configuration de domaine** Office 365 fournit les valeurs à utiliser pour créer cet enregistrement.  <br/> |
 
 

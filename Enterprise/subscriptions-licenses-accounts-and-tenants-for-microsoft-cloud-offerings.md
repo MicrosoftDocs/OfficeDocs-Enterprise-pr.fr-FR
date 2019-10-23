@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: 'Résumé : Comprenez les relations des organisations, des abonnements, des licences, des comptes d’utilisateur et des clients au sein des offres de cloud de Microsoft.'
-ms.openlocfilehash: 5c0bd0ad10dc1ddfdcb13d09010c69f4e8b5a75a
-ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
+ms.openlocfilehash: c6c6aa02701d47c5818f66d2f0e499e7a85cb902
+ms.sourcegitcommit: 546080809d4f8ee4954943738906eec6c9bac1d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428131"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37616147"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Abonnements, licences, comptes et clients des offres de cloud de Microsoft
 

@@ -1,5 +1,5 @@
 ---
-title: Collaborer avec des invités dans un site
+title: Collaborer avec des invités sur un site
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -8,18 +8,24 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Découvrez comment collaborer avec des invités sur un site SharePoint.
-ms.openlocfilehash: 4b68b50fec4322f12c24969bdd71e7d9c0fda245
-ms.sourcegitcommit: d388c76d25ca67f240db97f7bfc90f0991b0e7f8
+ms.openlocfilehash: d0f4528db683795da0f3c949228f902d775f6b7e
+ms.sourcegitcommit: f4469fee3e3f9665298d3052f30a4c6ab12643f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "37017312"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "37920167"
 ---
-# <a name="collaborate-with-guests-in-a-site"></a>Collaborer avec des invités dans un site
+# <a name="collaborate-with-guests-in-a-site"></a>Collaborer avec des invités sur un site
 
 Si vous avez besoin de collaborer avec des invités dans des documents, des données et des listes, vous pouvez utiliser un site SharePoint. Les sites SharePoint modernes sont connectés aux groupes Office 365 qui peuvent gérer l’appartenance à un site et fournir des outils de collaboration supplémentaires tels qu’une boîte aux lettres et un calendrier partagés.
 
 Dans cet article, nous allons passer en revue les étapes de configuration de Microsoft 365 nécessaires pour configurer un site SharePoint en vue de la collaboration avec des invités.
+
+## <a name="video-demonstration"></a>Démonstration vidéo
+
+Cette vidéo présente les étapes de configuration décrites dans ce document.</br>
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE44Llg?autoplay=false]
 
 ## <a name="azure-organizational-relationships-settings"></a>Paramètres Azure de relations organisationnelles
 
@@ -27,7 +33,7 @@ Le partage dans Microsoft 365 est régi par les paramètres de relations organis
 
 Vérifiez les paramètres de relations organisationnelles pour vous assurer que le partage avec des invités n’est pas bloqué.
 
-![Capture d’écran de la page des paramètres des relations organisationnelles Azure Active Directory](media/azure-ad-organizational-relationships-settings.png)
+![Capture d’écran de la page des paramètres de relations organisationnelles d’Azure Active Directory](media/azure-ad-organizational-relationships-settings.png)
 
 Pour définir les paramètres de relation organisationnelle
 
@@ -36,7 +42,7 @@ Pour définir les paramètres de relation organisationnelle
 3. Dans le volet de **vue d’ensemble** , cliquez sur **relations organisationnelles**.
 4. Dans le volet **relations organisationnelles** , cliquez sur **paramètres**.
 5. Assurez-vous que les **administrateurs et les utilisateurs du rôle d’invité invité peuvent inviter** et que les **membres peuvent inviter** sont tous deux la valeur **Oui**.
-6. Si vous avez apporté des modifications, cliquez sur **Enregistrer**.
+6. Si vous avez effectué des modifications, cliquez sur **Enregistrer**.
 
 Notez les paramètres dans la section **restrictions de collaboration** . Assurez-vous que les domaines des invités avec lesquels vous souhaitez collaborer ne sont pas bloqués.
 
@@ -44,7 +50,7 @@ Notez les paramètres dans la section **restrictions de collaboration** . Assure
 
 Les sites SharePoint modernes utilisent les groupes Office 365 pour contrôler l’accès au site. Les paramètres invités des groupes Office 365 doivent être activés pour que l’accès invité dans les sites SharePoint fonctionne.
 
-![Capture d’écran des paramètres invités des groupes Office 365 dans le centre d’administration Microsoft 365](media/office-365-groups-guest-settings.png)
+![Capture d’écran des paramètres d’invité des Groupes Office 365 dans le Centre d’administration Microsoft 365](media/office-365-groups-guest-settings.png)
 
 Pour définir les paramètres invités des groupes Office 365
 
@@ -63,15 +69,15 @@ Les paramètres au niveau de l’organisation déterminent les paramètres dispo
 
 Si vous souhaitez autoriser le partage de fichiers et de dossiers avec des utilisateurs anonymes, sélectionnez **tout le monde**. Si vous souhaitez vous assurer que tous les invités doivent s’authentifier, choisissez **nouveau et invités existants**. Choisissez le paramètre le plus permissif qui sera nécessaire pour tous les sites de votre organisation.
 
-![Capture d’écran des paramètres de partage au niveau de l’organisation SharePoint](media/sharepoint-organization-external-sharing-controls.png)
+![Capture d’écran des paramètres de partage SharePoint au niveau de l’organisation](media/sharepoint-organization-external-sharing-controls.png)
 
 
 Pour définir les paramètres de partage au niveau de l’organisation SharePoint
 
 1. Dans le centre d’administration 365 de Microsoft, dans le volet de navigation de gauche, sous **centres d’administration**, cliquez sur **SharePoint**.
-2. Dans le centre d’administration SharePoint, dans le volet de navigation de gauche, cliquez sur **partage**.
+2. Dans le centre d’administration SharePoint, dans le volet de gauche, cliquez sur **Partage**.
 3. Assurez-vous que le partage externe pour SharePoint est défini sur **tout le monde** ou sur **des invités nouveaux et existants**.
-4. Si vous avez apporté des modifications, cliquez sur **Enregistrer**.
+4. Si vous avez effectué des modifications, cliquez sur **Enregistrer**.
 
 ## <a name="create-a-site"></a>Créer un site
 
@@ -94,14 +100,14 @@ Vérifiez les paramètres de partage au niveau du site pour vous assurer qu’il
 
 Notez que le site ne peut pas être partagé avec des utilisateurs anonymes (paramètre**tout le monde** ), mais avec des fichiers et des dossiers individuels.
 
-![Capture d’écran des paramètres de partage externe du site SharePoint](media/sharepoint-site-external-sharing-settings.png)
+![Capture d’écran des paramètres de partage externe de site SharePoint](media/sharepoint-site-external-sharing-settings.png)
 
 Pour définir les paramètres de partage au niveau du site
-1. Dans le centre d’administration SharePoint, dans le volet de navigation de gauche, développez **sites** , puis cliquez sur **sites actifs**.
+1. Dans le centre d’administration SharePoint, dans le volet de navigation de gauche, développez **Sites** et cliquez sur **Sites actifs**.
 2. Sélectionnez le site que vous venez de créer.
-3. Dans le ruban, cliquez sur **partage**.
+3. Dans le ruban, cliquez sur **Partage**. 
 4. Assurez-vous que le partage est défini sur **tout le monde** ou sur **des invités nouveaux et existants**.
-5. Si vous avez apporté des modifications, cliquez sur **Enregistrer**.
+5. Si vous avez effectué des modifications, cliquez sur **Enregistrer**.
 
 ## <a name="invite-users"></a>Inviter des utilisateurs
 
@@ -122,3 +128,10 @@ Pour inviter des invités à un site
 4. Cliquez sur **Fermer**.
 
 ## <a name="see-also"></a>Voir aussi
+
+[Meilleures pratiques relatives au partage de fichiers et de dossiers avec des utilisateurs anonymes](best-practices-anonymous-sharing.md)
+
+[Limiter l’exposition accidentelle aux fichiers lors du partage avec des invités](sharing-limit-accidental-exposure.md)
+
+[Créer un environnement de partage d’invité sécurisé](create-a-secure-guest-sharing-environment.md))
+

@@ -16,16 +16,16 @@ search.appverid:
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
 description: Une fois que vous avez déployé Office 365, vous pouvez maintenir la connectivité d’Office 365 à l’aide de certains des outils et techniques ci-dessous. Vous souhaiterez comprendre les instructions de l’état du Service et la continuité officielles ainsi que nos recommandations d’utilisation d’Office 365 sur un réseau lent. Vous souhaiterez également comprendre comment utiliser l’application Office 365 admin et ajouter un signet sur notre Office 365 pour entreprises -Aide à l’Administrateur.
-ms.openlocfilehash: ce307e01a3d7da4a24a06e58d293b9598c684d8f
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 385aef73173ea6bab421fae6d10622d7a8fe3c80
+ms.sourcegitcommit: 9c39ba0c21fbe86343f825bb589a108ec5f176bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070050"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37931692"
 ---
 # <a name="monitor-office-365-connectivity"></a>Surveiller la connectivité Office 365
 
-Une fois que vous avez déployé Office 365, vous pouvez maintenir la connectivité d’Office 365 à l’aide de certains des outils et techniques ci-dessous. Vous souhaiterez comprendre les instructions [de l’état du Service et la continuité ](https://technet.microsoft.com/library/office-365-service-health.aspx)officielles ainsi que nos [recommandations d’utilisation d’Office 365 sur un réseau lent](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166). Vous souhaiterez également comprendre[ comment utiliser l’application d’Office 365 admin](https://blogs.office.com/2015/03/13/administer-on-the-go-with-the-updated-office-365-admin-app/)et ajouter un signet sur notre[Office 365 pour entreprises-Aide à l’Administrateur](https://support.office.com/article/17d3ff3f-3601-466e-b5a1-482b31cfb791).
+Une fois que vous avez déployé Office 365, vous pouvez maintenir la connectivité d’Office 365 à l’aide de certains des outils et techniques ci-dessous. Vous souhaiterez comprendre les instructions [de l’état du Service et la continuité ](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity)officielles ainsi que nos [recommandations d’utilisation d’Office 365 sur un réseau lent](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166). Vous souhaiterez également comprendre[ comment utiliser l’application d’Office 365 admin](https://blogs.office.com/2015/03/13/administer-on-the-go-with-the-updated-office-365-admin-app/)et ajouter un signet sur notre[Office 365 pour entreprises-Aide à l’Administrateur](https://support.office.com/article/17d3ff3f-3601-466e-b5a1-482b31cfb791).
   
 ## <a name="monitoring-office-365-connectivity"></a>Surveillance de la connectivité d’Office 365
 

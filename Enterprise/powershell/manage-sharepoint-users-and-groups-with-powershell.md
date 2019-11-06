@@ -3,7 +3,7 @@ title: Gestion des utilisateurs et des groupes SharePoint Online avec Office 36
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/07/2018
+ms.date: 10/05/2019
 audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -13,17 +13,17 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: 'Résumé: utilisez Office 365 PowerShell pour gérer les utilisateurs, les groupes et les sites SharePoint Online.'
-ms.openlocfilehash: 194486f539593215b8f8a17c04e3d4f499077c65
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+description: 'Résumé : utilisez Office 365 PowerShell pour gérer les utilisateurs, les groupes et les sites SharePoint Online.'
+ms.openlocfilehash: f84e4cda797cd8f1bc4ddf573cb4f1c6f0165da7
+ms.sourcegitcommit: 8d1cc95b3641afe547c6d0e05f2dad5d013a0773
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068820"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37975889"
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-office-365-powershell"></a>Gestion des utilisateurs et des groupes SharePoint Online avec Office 365 PowerShell
 
- **Résumé:** Utilisez Office 365 PowerShell pour gérer les utilisateurs, les groupes et les sites SharePoint Online.
+ **Résumé :** Utilisez Office 365 PowerShell pour gérer les utilisateurs, les groupes et les sites SharePoint Online.
 
 Si vous êtes un administrateur SharePoint Online qui travaille avec de grandes listes de comptes ou de groupes d’utilisateurs et qu’il souhaite un moyen plus facile de les gérer, vous pouvez utiliser Office 365 PowerShell. 
 
@@ -72,7 +72,7 @@ Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$t
 
 Pour utiliser ces commandes, remplacez remplacer tout entre guillemets, y compris les caractères < et >, par les noms corrects.
 
-Par exemple, cet ensemble de commandes ajoute Opal Castillo (nom d’utilisateur opalc) à la liste des administrateurs de collection de sites sur la collection de sites ContosoTest dans le client Contoso1:
+Par exemple, cet ensemble de commandes ajoute Opal Castillo (nom d’utilisateur opalc) à la liste des administrateurs de collection de sites sur la collection de sites ContosoTest dans le client Contoso1 :
 
 ```
 $tenant = "contoso1"
@@ -83,7 +83,7 @@ Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$t
 
 Vous pouvez copier et coller ces commandes dans le bloc-notes, modifier les valeurs des variables des $tenant, $site et $user en valeurs réelles à partir de votre environnement, puis collez-les dans votre fenêtre SharePoint Online Management Shell pour les exécuter.
 
-## <a name="add-a-user-to-other-site-collection-administrators-groups"></a>Ajout d’un utilisateur à d’autres groupes Administrateurs de collection de sites
+## <a name="add-a-user-to-other-site-collection-groups"></a>Ajouter un utilisateur à d’autres groupes de collection de sites
 
 Dans cette tâche, nous allons utiliser la commande **Add-SPOUser ** pour ajouter un utilisateur à un groupe SharePoint sur une collection de sites.
 
@@ -108,7 +108,7 @@ Add-SPOUser -Group $group -LoginName $user@$tenant.onmicrosoft.com -Site https:/
 
 ## <a name="create-a-site-collection-group"></a>Créer un groupe de collections de sites
 
-Cette commande **Set-SPOSiteGroup** permet de créer un groupe SharePoint et de l’ajouter à la collection de sites ContosoTest.
+Vous utilisez la commande **New-SPOSiteGroup** pour créer un groupe SharePoint et l’ajouter à la collection de sites ContosoTest.
 
 ```
 $tenant = "<tenant name, such as litwareinc for litwareinc.onmicrosoft.com>"
@@ -119,7 +119,7 @@ New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sh
 ```
 Les propriétés de groupe, telles que les niveaux d’autorisation, peuvent être mises à jour plus tard à l’aide de la cmdlet **Set-SPOSiteGroup**.
 
-Par exemple, nous allons ajouter le groupe auditeurs avec des autorisations d’affichage seul à la collection de sites de test Contoso dans le client Contoso1:
+Par exemple, nous allons ajouter le groupe auditeurs avec des autorisations d’affichage seul à la collection de sites de test Contoso dans le client Contoso1 :
 
 ```
 $tenant = "contoso1"
@@ -144,7 +144,7 @@ $user = "<user account name, such as opalc>"
 $group = "<group name name, such as Auditors>"
 Remove-SPOUser -LoginName $user@$tenant.onmicrosoft.com -Site https://$tenant.sharepoint.com/sites/$site -Group $group
 ```
-Par exemple, nous allons supprimer Bobby Overby du groupe des auditeurs de collection de sites de la collection de sites de test Contoso dans le client Contoso1:
+Par exemple, nous allons supprimer Bobby Overby du groupe des auditeurs de collection de sites de la collection de sites de test Contoso dans le client Contoso1 :
 
 ```
 $tenant = "contoso1"
@@ -229,7 +229,7 @@ Contoso Blog Editors,opalc@contoso1.onmicrosoft.com,https://contoso1.sharepoint.
 Project Alpha Approvers,robinc@contoso1.onmicrosoft.com,https://contoso1.sharepoint.com/sites/Project01
 ```
 
-Pour la prochaine étape, vous devez avoir enregistré les deux fichiers CSV sur votre lecteur. Voici des exemples de commandes qui utilisent des fichiers CSV et pour ajouter des autorisations et l’appartenance à un groupe:
+Pour la prochaine étape, vous devez avoir enregistré les deux fichiers CSV sur votre lecteur. Voici des exemples de commandes qui utilisent des fichiers CSV et pour ajouter des autorisations et l’appartenance à un groupe :
 
 ```
 Import-Csv C:\O365Admin\GroupsAndPermissions.csv | ForEach {New-SPOSiteGroup -Group $_.Group -PermissionLevels $_.PermissionLevels -Site $_.Site}
@@ -284,7 +284,7 @@ Ce rapport est assez simple, et vous pouvez ajouter du code pour créer des rapp
 
 [Gestion de SharePoint Online avec Office 365 PowerShell](create-sharepoint-sites-and-add-users-with-powershell.md)
 
-[Gérer Office 365 avec Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
+[Gérer Office 365 avec Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
   
 [Mise en route d'Office 365 Powershell](getting-started-with-office-365-powershell.md)
 

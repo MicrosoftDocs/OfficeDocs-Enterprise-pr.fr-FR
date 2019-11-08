@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: 'Résumé : Configurez la synchronisation d’annuaires pour votre environnement de développement/test Office 365.'
-ms.openlocfilehash: c1596b12ab3c6c8feda3063134cc53a5f18919af
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: 795bd871be7937933ce61801d616c900dab7601a
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162427"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030788"
 ---
 # <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Synchronisation d’annuaires pour votre environnement de développement/test Office 365
 
@@ -44,7 +44,7 @@ Les deux phases de configuration de cet environnement de développement/test son
 2. Installez et configurez Azure AD Connect sur APP1.
     
 > [!TIP]
-> Cliquez sur[ici](http://aka.ms/catlgstack) pour afficher le plan de tous les articles dans le Guide de Laboratoire Test Office 365.
+> Cliquez sur[ici](https://aka.ms/catlgstack) pour afficher le plan de tous les articles dans le Guide de Laboratoire Test Office 365.
   
 ## <a name="phase-1-create-an-office-365-devtest-environment"></a>Phase 1 : création d’un environnement de développement/test Office 365
 
@@ -102,7 +102,7 @@ Stop-Process -Name Explorer -Force
     
 15. Cliquez sur le compte **Utilisateur1**. Pour les licences de produits, cliquez sur **Modifier**.
     
-16. Dans **Licences de produits**, sélectionnez votre pays, puis cliquez sur le contrôle **Inactif** pour **Office 365 Entreprise E5** (en le définissant sur **Actif**). Cliquez sur **Enregistrer** en bas de la page, puis cliquez sur **Fermer**.
+16. Dans **Licences de produits**, sélectionnez votre pays ou région, puis cliquez sur le contrôle **Inactif** pour **Office 365 Entreprise E5** (en le définissant sur  **Actif**). Cliquez sur **Enregistrer** en bas de la page, puis cliquez sur **Fermer**.
     
 Voici la configuration obtenue.
   

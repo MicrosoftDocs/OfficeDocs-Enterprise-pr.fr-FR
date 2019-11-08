@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: L’adresse IP Office 365 et le service Web URL vous aident à mieux identifier et différencier le trafic réseau d’Office 365, ce qui vous permet d’évaluer, de configurer et de rester à jour avec les modifications.
-ms.openlocfilehash: 90de20f28e271e3fb174a883eb9cda3fb1228fb4
-ms.sourcegitcommit: 6db61b95b1b5b4312dd6bc42bec6597e359b1bd7
+ms.openlocfilehash: 2dd725c39446d7e9cdad6b7e870bf7353ff1f8e3
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "36212979"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031209"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Service web d’URL et d’adresses IP Office 365
 
@@ -156,9 +156,9 @@ Cet URI affiche un flux RSS des versions publiées qui incluent des liens vers l
 
 ```xml
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<rss version="2.0" xmlns:a10="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:a10="https://www.w3.org/2005/Atom">
 <channel>
-<link>http://aka.ms/o365ip</link>
+<link>https://aka.ms/o365ip</link>
 <description/>
 <language>en-us</language>
 <lastBuildDate>Thu, 02 Aug 2018 00:00:00 Z</lastBuildDate>
@@ -253,7 +253,7 @@ Le résultat de la méthode web modifications est un tableau d’enregistrements
 
 - ID : ID non modifiable de l’enregistrement de la modification.
 - endpointSetId : ID de l’enregistrement du point de terminaison qui est modifié.
-- disposition : décrit les modifications apportées à l’enregistrement de point de terminaison. Les valeurs sont modifier_, _ajouter_, or _supprimer_.
+- disposition : décrit les modifications apportées à l’enregistrement de point de terminaison. Les valeurs sont _modifier_, _ajouter_, or _supprimer_.
 - impact : toutes les modifications ne sont pas aussi importantes pour tous les environnements. Cet élément décrit l’impact attendu sur l’environnement du périmètre d’un réseau d’entreprise en raison de cette modification. Cet élément est inclus uniquement dans les enregistrements de modification de la version **2018112800** et les versions ultérieures. Les options d’impact sont les suivantes : — AddedIp – une adresse IP a été ajoutée à Office 365 et sera bientôt disponible sur le service. Il s’agit d’un changement que vous devez apporter à un pare-feu ou à un autre périphérique de périmètre réseau couche 3. Si vous ne l’ajoutez pas avant que nous commencions à l’utiliser, vous pourriez subir une panne.
   – AddedUrl – Une URL a été ajoutée à Office 365 et sera bientôt disponible sur le service. Il s’agit d’un changement que vous devez apporter à un serveur proxy ou à un périphérique réseau d’analyse d’URL. Si vous ne l’ajoutez pas avant que nous commencions à l’utiliser, vous pourriez subir une panne.
   — AddedIpAndUrl — une adresse IP et une URL ont été ajoutées. Il s’agit d’un changement que vous devez apporter à un périphérique de périmètre réseau couche 3, un serveur proxy ou à un périphérique réseau d’analyse d’URL. Si vous ne l’ajoutez pas avant que nous commencions à l’utiliser, vous pourriez subir une panne.
@@ -360,7 +360,7 @@ Ce script effectue les opérations suivantes :
     ```
 
 - À chaque exécution suivante du script, si la version de service Web la plus récente est identique à la version figurant dans le fichier _O365_endpoints_latestversion.txt_, le script se ferme sans apporter de modifications.
-- Lorsque la dernière version du service Web est plus récente que la version du fichier O365_endpoints_latestversion.txt, le script renvoie les points de terminaison et les filtres pour les points de terminaison catégories autoriser et optimiser, met à jour la version figurant dans le fichier _O365_endpoints_latestversion.txt_ et écrit les données mises à jour dans le fichier_O365_endpoints_data.txt_. 
+- Lorsque la dernière version du service Web est plus récente que la version du fichier _O365_endpoints_latestversion.txt_, le script renvoie les points de terminaison et les filtres pour les points de terminaison catégories **autoriser** et **optimiser**, met à jour la version figurant dans le fichier _O365_endpoints_latestversion.txt_ et écrit les données mises à jour dans le fichier_O365_endpoints_data.txt_. 
 
 Le script génère une _ClientRequestId_ unique pour l’ordinateur sur lequel il est exécuté et réutilise cet ID dans plusieurs appels. Cet ID est stocké dans le fichier_O365_endpoints_latestversion.txt_.
 
@@ -601,11 +601,11 @@ Vous pouvez utiliser plusieurs méthodes pour recevoir des notifications par cou
 
 - Pour utiliser une solution de flux Microsoft, voir [utiliser Microsoft Flow pour recevoir un courrier électronique pour les modifications apportées aux adresses IP et URL d’Office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651).
 - Pour déployer une application de logique Azure à l’aide d’un modèle ARM, voir [notification de mise à jour d’Office 365 (v 1.1)](https://aka.ms/ipurlws-updates-template).
-- Pour écrire votre propre script de notification à l’aide de PowerShell, voir [Send-MailMessage](https://docs.microsoft.com/fr-FR/powershell/module/microsoft.powershell.utility/send-mailmessage).
+- Pour écrire votre propre script de notification à l’aide de PowerShell, voir [Send-MailMessage](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/send-mailmessage).
 
 ## <a name="exporting-a-proxy-pac-file"></a>Exporte un fichier PAC Proxy
 
-[Get-PacFile](https://www.powershellgallery.com/packages/Get-PacFile) est un script PowerShell qui lit les derniers points de terminaison réseau à partir de l’adresse IP et du service Web d’URL Office 365 et crée un exemple de fichier PAC. Pour plus d’informations sur l’utilisation de Get-PacFile, voir utiliser un fichier PAC pour le routage direct du trafic Office 365 vital](managing-office-365-endpoints.md#use-a-pac-file-for-direct-routing-of-vital-office-365-traffic).
+[Get-PacFile](https://www.powershellgallery.com/packages/Get-PacFile) est un script PowerShell qui lit les derniers points de terminaison réseau à partir de l’adresse IP et du service Web d’URL Office 365 et crée un exemple de fichier PAC. Pour plus d’informations sur l’utilisation de Get-PacFile, voir [utiliser un fichier PAC pour le routage direct du trafic Office 365 vital](managing-office-365-endpoints.md#use-a-pac-file-for-direct-routing-of-vital-office-365-traffic).
 
 ## <a name="related-topics"></a>Rubriques connexes
   

@@ -3,7 +3,7 @@ title: Planifier votre mise à niveau à partir de serveurs et clients Office 20
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/09/2019
+ms.date: 09/16/2019
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -13,41 +13,33 @@ search.appverid:
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Si vous utilisez Office 2007 ou Office 2010, il est temps de planifier votre mise à niveau. Ne vous êtes pas bloqué avec des applications et des serveurs obsolètes et non pris en charge. Utilisez ces ressources pour commencer votre plan.
-ms.openlocfilehash: 444befb11fdbb3578b30f63615b2f6f1e18a3cf9
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 39ae2a80f9f16d70e22f7654c8818155b0ffda91
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782174"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031059"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planification de la mise à niveau à partir de serveurs et clients Office 2007 ou Office 2010
 
-Si votre organisation utilise des versions antérieures des produits et serveurs Office, il est très utile de commencer à planifier votre mise à niveau. Les produits et services Office 2007 ont atteint leur fin de prise en charge. Exchange 2010 atteindra sa fin de prise en charge le **14 janvier 2020**. Les autres produits et services Office 2010 atteindront leur fin d’assistance le **13 octobre 2020**. Utilisez les ressources de cette section pour commencer.
-
-- Les produits et services Office 2007 ont atteint leur fin de prise en charge. Pour plus d’informations, consultez la rubrique [mise à niveau des serveurs et des clients Office 2007](upgrade-from-office-2007-servers-and-products.md) .
-
-- Pour les serveurs et clients Office 2010:
-
-  - Exchange 2010 atteindra sa fin de prise en charge le **14 janvier 2020**.
-
-  - Office 2010, SharePoint 2010 et Project Server 2010 atteindront leur fin de support le **13 octobre 2020**.
+Si votre organisation utilise des versions antérieures des produits et serveurs Office, il est très utile de commencer à planifier votre mise à niveau. Les produits et services Office 2007 ont atteint leur [fin de prise en charge](upgrade-from-office-2007-servers-and-products.md). Les produits et services Office 2010 (notamment Office 2010, Exchange 2010, SharePoint 2010 et Project Server 2010) atteindront leur expiration le **13 octobre 2020**. Utilisez les ressources de cette section pour commencer.
 
 Pour plus d’informations, consultez la rubrique [mise à niveau des serveurs et des clients Office 2010](upgrade-from-office-2010-servers-and-products.md) .
 
-## <a name="what-happens-if-i-dont-upgrade"></a>Que se passe-t-il si je ne suis pas mis à niveau?
+## <a name="what-happens-if-i-dont-upgrade"></a>Que se passe-t-il si je ne suis pas mis à niveau ?
 
 Vous pouvez choisir de ne pas effectuer la mise à niveau pour le moment. Vos serveurs et applications sur site continueront à s’exécuter. Toutefois, lorsque vous ne recevez plus les mises à jour de sécurité ou les options de support, votre organisation ou votre organisation peut être vulnérable aux violations de sécurité. Nous vous recommandons vivement de planifier votre mise à niveau dès que possible, qu’il s’agisse d’Office 365 ou de versions plus récentes de vos serveurs et applications sur site.
 
-## <a name="what-upgrade-options-are-available"></a>Quelles options de mise à niveau sont disponibles?      
+## <a name="what-upgrade-options-are-available"></a>Quelles options de mise à niveau sont disponibles ?      
 
-Les organisations ont plusieurs options à prendre en compte:
+Les organisations ont plusieurs options à prendre en compte :
 
-- **Mettez à niveau vos serveurs et applications sur site.** Si vous utilisez des produits Office et des applications serveur sur site, reportez-vous au contenu de planification suivant:<br/> 
+- **Mettez à niveau vos serveurs et applications sur site.** Si vous utilisez des produits Office et des applications serveur sur site, reportez-vous au contenu de planification suivant :<br/> 
 
     
     |Produits et services Office 2007  |Produits et services Office 2010  |
     |---------|---------|
-    |[Office 2007](https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap) Poste | [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) Poste |
+    |[Office 2007](https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap) (bureau) | [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) (bureau) |
     |[Exchange 2007](exchange-2007-end-of-support.md) |[Exchange 2010](exchange-2010-end-of-support.md) |
     |[SharePoint 2007](sharepoint-2007-end-of-support.md) |[SharePoint 2010](upgrade-from-sharepoint-2010.md) |
     |[Office Communications Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) |[Lync Server 2010](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) |
@@ -56,11 +48,11 @@ Les organisations ont plusieurs options à prendre en compte:
  
 - **Implémentez une solution hybride avec Office 365 ou Microsoft 365.** Hybride utilise vos serveurs et applications sur site, ainsi que leurs équivalents Cloud. Si vous passez au Cloud en plusieurs phases ou que vous devez conserver certaines applications et serveurs, une solution hybride peut être adaptée à votre organisation. Pour plus d’informations, consultez la rubrique [vue d’ensemble des solutions Cloud hybrides Office 365](hybrid-cloud-overview.md) . 
     
-- **Accédez au Cloud avec Office 365 ou Microsoft 365.** Pour de nombreux clients, le passage au Cloud est une solution efficace et rentable. En se déménageant complètement dans le Cloud, la configuration et la gestion continue sont plus faciles et vous bénéficiez de toutes les fonctionnalités et mises à jour de sécurité les plus récentes. Pour plus d’informations, voir [qu’est-ce que Microsoft 365?](#what-is-microsoft-365) dans cet article.
+- **Accédez au Cloud avec Office 365 ou Microsoft 365.** Pour de nombreux clients, le passage au Cloud est une solution efficace et rentable. En se déménageant complètement dans le Cloud, la configuration et la gestion continue sont plus faciles et vous bénéficiez de toutes les fonctionnalités et mises à jour de sécurité les plus récentes. Pour plus d’informations, voir [qu’est-ce que Microsoft 365 ?](#what-is-microsoft-365) dans cet article.
     
 ### <a name="help-is-available-for-your-organization"></a>Aide disponible pour votre organisation
 
-Si vous avez besoin d’aide pour planifier votre mise à niveau, envisagez une ou plusieurs des options suivantes:
+Si vous avez besoin d’aide pour planifier votre mise à niveau, envisagez une ou plusieurs des options suivantes :
 
 - Collaborer avec un partenaire ou un spécialiste des licences en volume. [Recherchez votre partenaire ou revendeur Office 365](https://support.office.com/article/b6c18a9b-2aed-4c84-9d75-af709160258c.aspx). 
 
@@ -70,15 +62,15 @@ Si vous avez besoin d’aide pour planifier votre mise à niveau, envisagez une 
   
 ## <a name="im-a-home-user-what-do-i-do"></a>Je suis un utilisateur à domicile. What do I do?
 
-Si vous utilisez Office 2007 ou Office 2010 à la maison, envisagez les options de mise à jour suivantes:
+Si vous utilisez Office 2007 ou Office 2010 à la maison, envisagez les options de mise à jour suivantes :
 
-- **Utilisez Office dans un navigateur gratuitement.** Créez, affichez et modifiez des fichiers Office dans votre navigateur et accédez à ces fichiers à partir de n’importe quel appareil disposant d’un accès à Internet. [Office pour le Web](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online) inclut [Word pour le](http://go.microsoft.com/fwlink/p/?linkid=746664)Web, [Excel pour le Web](http://go.microsoft.com/fwlink/p/?linkid=746665), [PowerPoint pour le Web](http://go.microsoft.com/fwlink/p/?linkid=746666), [OneNote pour le Web](http://go.microsoft.com/fwlink/p/?linkid=746674), [Sway](http://go.microsoft.com/fwlink/p/?linkid=746675), [messagerie](http://go.microsoft.com/fwlink/p/?linkid=746676), [calendrier](http://go.microsoft.com/fwlink/p/?linkid=746678)et [OneDrive](http://go.microsoft.com/fwlink/p/?linkid=746679). Pour commencer, accédez à [Office.com](https://office.com) et connectez-vous à l’aide de votre [compte Microsoft](https://account.microsoft.com/account). (Si vous n’avez pas de compte Microsoft, vous pouvez en créer un sur [Office.com](https://office.com).)
+- **Utilisez Office dans un navigateur gratuitement.** Créez, affichez et modifiez des fichiers Office dans votre navigateur et accédez à ces fichiers à partir de n’importe quel appareil disposant d’un accès à Internet. [Office pour le Web](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online) inclut [Word pour le](https://go.microsoft.com/fwlink/p/?linkid=746664)Web, [Excel pour le Web](https://go.microsoft.com/fwlink/p/?linkid=746665), [PowerPoint pour le Web](https://go.microsoft.com/fwlink/p/?linkid=746666), [OneNote pour le Web](https://go.microsoft.com/fwlink/p/?linkid=746674), [Sway](https://go.microsoft.com/fwlink/p/?linkid=746675), [messagerie](https://go.microsoft.com/fwlink/p/?linkid=746676), [calendrier](https://go.microsoft.com/fwlink/p/?linkid=746678)et [OneDrive](https://go.microsoft.com/fwlink/p/?linkid=746679). Pour commencer, accédez à [Office.com](https://office.com) et connectez-vous à l’aide de votre [compte Microsoft](https://account.microsoft.com/account). (Si vous n’avez pas de compte Microsoft, vous pouvez en créer un sur [Office.com](https://office.com).)
 
 - **Essayez Office 365 pour les particuliers.** Passez en revue les [conditions requises](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm?rtc=1&activetab=pivot:techspecstab), puis choisissez entre [Office 365 famille](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm) ou [Office 365 personnel](https://www.microsoft.com/p/office-365-personal/cfq7ttc0k5bf). Démarrez une version d’évaluation et découvrez comment Office 365 fonctionne pour vous. Avec Office 365, vous apprécierez de stocker le stockage dans le Cloud avec OneDrive, vous obtiendrez 60 minutes d’appels Skype vers des numéros de téléphone mobiles et fixes chaque mois, et vous bénéficierez de nombreuses autres fonctionnalités intéressantes. Pour en savoir plus, consultez [la rubrique tirer le meilleur parti d’Office avec office 365](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab%3aprimaryr1).
 
-   Avec la [fin de la prise en charge de Windows 7 le 14 janvier 2020](https://www.microsoft.com/windowsforbusiness/end-of-windows-7-support), les versions de Word, Excel, PowerPoint, Outlook, Publisher et Access fournies avec Office 365 Home ou Office 365 Personal s’exécutant sur des appareils Windows 7 recevront des mises à jour de sécurité, mais aucune fonctionnalité mises à jour. Pour continuer à recevoir des mises à jour de fonctionnalité pour ces applications, [Mettez à niveau vos appareils Windows 7 vers Windows 10](https://support.microsoft.com/help/12435/windows-10-upgrade-faq).
+   Avec la [fin de la prise en charge de Windows 7 le 14 janvier 2020](https://www.microsoft.com/windowsforbusiness/end-of-windows-7-support), les versions de Word, Excel, PowerPoint, Outlook, Publisher et Access fournies avec Office 365 Home ou Office 365 Personal qui s’exécutent sur des appareils Windows 7 recevront des mises à jour de sécurité, mais pas de mises à jour de fonctionnalités. Pour continuer à recevoir des mises à jour de fonctionnalité pour ces applications, [Mettez à niveau vos appareils Windows 7 vers Windows 10](https://support.microsoft.com/help/12435/windows-10-upgrade-faq).
     
-- **Acheter Office famille &amp; Student.** Si vous choisissez cette option, vous allez acheter un achat unique, puis installer Office sur votre PC ou Mac Windows. Il ne s’agit pas d’un abonnement; Il s’agit d’une licence d’utilisation perpétuelle ponctuelle pour un ordinateur. Affichez les [conditions requises](http://office.com/systemrequirements), puis choisissez la version que vous souhaitez utiliser.
+- **Acheter Office famille &amp; Student.** Si vous choisissez cette option, vous allez acheter un achat unique, puis installer Office sur votre PC ou Mac Windows. Il ne s’agit pas d’un abonnement ; Il s’agit d’une licence d’utilisation perpétuelle ponctuelle pour un ordinateur. Affichez les [conditions requises](https://office.com/systemrequirements), puis choisissez la version que vous souhaitez utiliser.
 
     - Si votre PC Windows exécute Windows 10, vous pouvez envisager d’obtenir [Office Home & student 2019](https://www.microsoft.com/p/office-home-student-2019/cfq7ttc0k7c8).
 
@@ -105,13 +97,13 @@ Microsoft 365 est le moyen de transformer numériquement votre entreprise avec d
 
 ## <a name="next-step"></a>Étape suivante
 
-[Mise à niveau à partir des serveurs et clients Office 2007](upgrade-from-office-2007-servers-and-products.md)
+[Mettre à niveau des serveurs et clients Office 2007](upgrade-from-office-2007-servers-and-products.md)
 
 ou
 
-[Mise à niveau à partir des serveurs et clients Office 2010](upgrade-from-office-2010-servers-and-products.md)
+[Mettre à niveau des serveurs et clients Office 2010](upgrade-from-office-2010-servers-and-products.md)
    
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
   
 [Politique de cycle de vie Microsoft](https://go.microsoft.com/fwlink/?linkid=865200)
 

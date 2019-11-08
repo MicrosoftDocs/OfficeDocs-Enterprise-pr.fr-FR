@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 51019757-20ac-498c-b51e-cae6d41a8c08
 description: 'Résumé : Configurez et faites une démonstration de la protection avancée contre les menaces Office 365 dans votre environnement de développement/test Office 365.'
-ms.openlocfilehash: 274f8558d23714a73e0891500dac5d5e007b6be2
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: e3efe339550992fba85509cd07a791d916d5d6e7
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162417"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030558"
 ---
 # <a name="advanced-threat-protection-for-your-office-365-devtest-environment"></a>Protection avancée contre les menaces pour votre environnement de développement/test Office 365
 
@@ -40,7 +40,7 @@ Si vous souhaitez tester la protection avancée contre les menaces dans une entr
 > [!NOTE]
 > Le test de l’ATP ne nécessite pas l’environnement de développement/test d’entreprise simulé, qui inclut un intranet simulé connecté à Internet et la synchronisation d’annuaires pour une forêt des services de domaine Active Directory (AD DS). Il est proposé comme option dans cet article afin que vous puissiez tester la protection avancée contre les menaces et faire des essais dans un environnement qui représente une organisation classique. 
   
-## <a name="phase-2-demonstrate-the-default-email-delivery-behavior-of-office-365"></a>Phase 2: montrer le comportement de remise par défaut des messages d’Office 365
+## <a name="phase-2-demonstrate-the-default-email-delivery-behavior-of-office-365"></a>Phase 2 : montrer le comportement de remise par défaut des messages d’Office 365
 
 Dans cette phase, vous démontrez qu’avant de configurer les stratégies de protection avancée contre les menaces, l’e-mail potentiellement malveillant est remis aux boîtes aux lettres Office 365 sans filtrage ni atténuation.
   
@@ -74,7 +74,7 @@ Dans cette phase, vous démontrez qu’avant de configurer les stratégies de pr
     
 13. Dans le corps, sélectionnez le texte **ce site** et cliquez sur l’icône de lien hypertexte dans la barre d’outils.
     
-14. Dans **URL**, tapez **http://www.spamlink.contoso.com/**, cliquez sur **OK**, puis cliquez sur **Envoyer**.
+14. Dans **URL**, tapez **https://www.spamlink.contoso.com/**, cliquez sur **OK**, puis cliquez sur **Envoyer**.
     
 15. Ouvrez une instance distincte d’Internet Explorer en mode de navigation privée, accédez au centre d’administration 365 de[https://admin.microsoft.com](https://admin.microsoft.com)Microsoft (), puis connectez-vous à votre abonnement d’évaluation Office 365 avec votre compte d’administrateur général.
     
@@ -82,7 +82,7 @@ Dans cette phase, vous démontrez qu’avant de configurer les stratégies de pr
     
 17. Dans la boîte de réception, cliquez sur le message ayant pour objet **Vos nouvelles clés**.
     
-18. Dans le dossier Courrier indésirable, cliquez sur le message ayant pour objet **Nouveau site web de voyage**. À l’intérieur du message, cliquez sur le lien **ce site**. Vous devriez voir un «! Internet Explorer n’a pas pu trouver spamlink.contoso.com. réserve. C’est le résultat correct, car il n’existe aucune page web à cet emplacement.
+18. Dans le dossier Courrier indésirable, cliquez sur le message ayant pour objet **Nouveau site web de voyage**. À l’intérieur du message, cliquez sur le lien **ce site**. Vous devriez voir un « ! Internet Explorer n’a pas pu trouver spamlink.contoso.com. réserve. C’est le résultat correct, car il n’existe aucune page web à cet emplacement.
     
 Vous remarquez que ces deux e-mails potentiellement malveillants ont été remis correctement. L’e-mail **Vos nouvelles clés** pouvait contenir un programme malveillant non détecté et l’utilisateur a été autorisé à cliquer sur le lien potentiellement malveillant dans l’e-mail **Nouveau site web de voyage**.
   
@@ -100,7 +100,7 @@ Dans cette phase, vous créez et configurez une stratégie de pièce jointe fiab
     
 5. Dans la fenêtre **nouvelle stratégie de pièces jointes approuvées** , dans **nom**, tapez **stratégie de pièces jointes approuvées-bloquer**.
     
-6. Pour les **pièces jointes approuvées réponse aux programmes malveillants**inconnus, cliquez sur **bloquer**.
+6. Pour les **pièces jointes approuvées réponse aux programmes malveillants inconnus**, cliquez sur **bloquer**.
     
 7. Pour **Rediriger la pièce jointe en cas de détection**, cliquez sur **Activer la redirection** et tapez l’adresse e-mail de votre compte d’administrateur général Office 365.
     
@@ -136,7 +136,7 @@ Dans cette phase, vous montrez comment le Service Protection avancée contre les
     
   - Un e-mail intitulé **Fw : Nouveau site web de voyage**
     
-6. Ouvrez le message électronique intitulé **FW: New Travel Web site** et cliquez sur le lien **ce site** . Vous devriez voir un «ce site Web a été classé comme malveillant». réserve. Cela démontre qu’ATP vous empêche d’accéder au site Web potentiellement malveillant.
+6. Ouvrez le message électronique intitulé **FW : New Travel Web site** et cliquez sur le lien **ce site** . Vous devriez voir un « ce site Web a été classé comme malveillant ». réserve. Cela démontre qu’ATP vous empêche d’accéder au site Web potentiellement malveillant.
     
 7. Dans l’onglet Centre d’administration Exchange d’Internet Explorer, dans le volet de navigation gauche, cliquez sur **Flux de messagerie**.
     
@@ -156,7 +156,7 @@ Dans cette phase, vous montrez comment le Service Protection avancée contre les
 Vous pouvez désormais utiliser cet environnement pour créer des stratégies et expérimenter le Service Protection avancée contre les menaces.
   
 > [!TIP]
-> Cliquez sur[ici](http://aka.ms/catlgstack) pour afficher le plan de tous les articles dans le Guide de Laboratoire Test Office 365.
+> Cliquez sur[ici](https://aka.ms/catlgstack) pour afficher le plan de tous les articles dans le Guide de Laboratoire Test Office 365.
   
 ## <a name="see-also"></a>Voir aussi
 

@@ -11,16 +11,18 @@ localization_priority: Normal
 search.appverid:
 - MET150
 - SPO160
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom: Adm_O365
 ms.assetid: f0522d4a-fbf4-41f9-854e-c9b59555091d
 description: Contient des liens vers d’autres articles qui vous indiquent comment améliorer les performances des temps de téléchargement des pages pour SharePoint Online.
-ms.openlocfilehash: 4352420637974e07a6c9d5ed843c312ea74729f4
-ms.sourcegitcommit: 67dbbf1a5ec8cc4b10ca10f267f871f0bc045e63
+ms.openlocfilehash: 8cd8b3b7a957fac7f3ddaed325cf64850b111fea
+ms.sourcegitcommit: fa900775790eb369db1983cd3868b628b699f145
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37375492"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033430"
 ---
 # <a name="tune-sharepoint-online-performance"></a>Optimisation des performances SharePoint Online
 
@@ -36,7 +38,7 @@ Utilisez ces articles pour affiner les performances de SharePoint Online.
 
 - [Options de navigation pour SharePoint Online](navigation-options-for-sharepoint-online.md)
 
-- [Aide relative aux performances des portails SharePoint Online](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/portal-performance)
+- [Aide relative aux performances des portails SharePoint Online](https://docs.microsoft.com/sharepoint/dev/solution-guidance/portal-performance)
 
 - [Optimisation des images pour SharePoint Online](image-optimization-for-sharepoint-online.md)
 
@@ -56,7 +58,7 @@ Utilisez ces articles pour affiner les performances de SharePoint Online.
 
 - [Utilisation du cache d’objets avec SharePoint Online](using-the-object-cache-with-sharepoint-online.md)
 
-- [Procédure : éviter les limitations ou les blocages dans SharePoint Online](https://msdn.microsoft.com/en-us/library/office/dn889829.aspx)
+- [Procédure : éviter les limitations ou les blocages dans SharePoint Online](https://msdn.microsoft.com/library/office/dn889829.aspx)
 
 - [Optimiser les iFrames dans les pages de portail modernes SharePoint Online](modern-iframe-optimization.md)
 

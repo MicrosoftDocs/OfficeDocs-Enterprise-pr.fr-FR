@@ -11,16 +11,16 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 4b855224-8e67-4efa-a3a4-908ee0ca6412
 description: Cet article est une version texte accessible du diagramme Récupération d’urgence SharePoint Server dans Microsoft Azure.
-ms.openlocfilehash: d7df0f44dd4e7f0cbb8580029991bc9280892afb
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: e711452f6e019ceb280d43c2e0167507a0b0ef20
+ms.sourcegitcommit: b4514cd852093181dd4c27009a78aca3ca50d2e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068520"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38038233"
 ---
 # <a name="accessible-diagram---sharepoint-disaster-recovery-to-microsoft-azure"></a>Diagramme accessible : Récupération d’urgence SharePoint vers Microsoft Azure
 
-**Résumé:** Cet article est une version texte accessible du diagramme appelé SharePoint Disaster Recovery to Microsoft Azure.
+**Résumé :** Cet article est une version texte accessible du diagramme appelé SharePoint Disaster Recovery to Microsoft Azure.
   
 Cette affiche fournit des exemples d’architectures pour la création d’un environnement de récupération dans Azure.  
   
@@ -54,7 +54,7 @@ Ce niveau comporte trois serveurs. Chaque serveur fournit les services suivants�
     
 - Traitement de contenu 
     
-- Analyse 
+- Données d’analyse 
     
 #### <a name="tier-4"></a>Niveau 4
 
@@ -194,10 +194,9 @@ Les trois services cloud suivants existent dans le réseau virtuel Azure :
 
 La configuration des services AD DS pour cette solution constitue un scénario de déploiement hybride dans lequel les services AD DS sont déployés en partie localement et en partie sur des machines virtuelles Azure.  
   
-Important: avant de déployer AD DS dans Azure, lisez les instructions de déploiement de Windows Server Active Directory sur des machines virtuelleshttp://msdn.microsoft.com/en-us/library/windowsazure/jj156090.aspx)Microsoft Azure (. 
+Important : avant de déployer AD DS dans Azure, lisez les instructions de déploiement de Windows Server Active Directory sur des machines virtuelleshttps://docs.microsoft.com/windows-server/identity/ad-ds/introduction-to-active-directory-domain-services-ad-ds-virtualization-level-100)Microsoft Azure (. 
   
-Pour obtenir des instructions complètes sur la conception et le déploiement d’environnements http://TechNet.microsoft.comActive Directory, reportez-vous à la rubrique. 
-  
+ 
 Cette architecture de référence inclut deux machines virtuelles configurées comme contrôleurs de domaine. Elles sont toutes deux configurées de la manière suivante :  
   
 - Taille : petite.  

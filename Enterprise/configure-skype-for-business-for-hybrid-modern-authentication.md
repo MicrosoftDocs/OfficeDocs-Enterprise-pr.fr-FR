@@ -14,12 +14,12 @@ ms.assetid: 522d5cec-4e1b-4cc3-937f-293570717bc6
 ms.collection:
 - M365-security-compliance
 description: L’authentification moderne est une méthode de gestion des identités qui offre une authentification et une autorisation utilisateur plus sécurisées, est disponible pour Skype entreprise Server en local et Exchange Server en local, ainsi qu’hybrides Skype entreprise mixtes.
-ms.openlocfilehash: 4a49885fc6276f180872facb777bfe5a5adb61ee
-ms.sourcegitcommit: f9b5e029ed427b7c15cbfb6231a9259b34c9436f
+ms.openlocfilehash: 17079ab5e47e2e739780d3df4a9a523edccda14f
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "36759682"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029128"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Comment configurer Skype Entreprise en local pour utiliser l’authentification moderne hybride
 
@@ -67,7 +67,7 @@ Remarque ces étapes activent MA pour SFB, SFBO, EXCH et EXO, autrement dit, tou
   
 Comme vous pouvez le constater, il y a quatre emplacements différents pour activer MA ! Pour une expérience utilisateur optimale, nous vous recommandons d’activer MA dans les quatre emplacements. Si vous ne pouvez pas activer l’agent de session sur tous ces emplacements, ajustez les étapes de façon à activer MA uniquement aux emplacements nécessaires pour votre environnement.
   
-Consultez la rubrique relative à la [prise en charge de Skype entreprise avec ma](https://technet.microsoft.com/en-us/library/mt803262.aspx) pour les topologies prises en charge. 
+Consultez la rubrique relative à la [prise en charge de Skype entreprise avec ma](https://technet.microsoft.com/library/mt803262.aspx) pour les topologies prises en charge. 
   
  **Important** Vérifiez que vous avez rempli toutes les conditions préalables avant de commencer. Ces informations s’affichent [ici](hybrid-modern-auth-overview.md).
   
@@ -79,7 +79,7 @@ Une fois que vous avez vérifié que vous répondez aux [conditions préalables]
     
   - Ex. contoso.com (est fédéré avec Office 365)
     
-- **ID de locataire**
+- **ID client**
     
   - GUID qui représente votre client Office 365 (à la connexion de contoso.onmicrosoft.com).
     
@@ -117,7 +117,7 @@ Suivez les instructions ci-dessous : [procédure de configuration d’Exchange 
   
  **Note** Les noms de principaux du service (SPN) identifient les services Web et les associent à un principal de sécurité (par exemple, un nom de compte ou un groupe) afin que le service puisse agir au nom d’un utilisateur autorisé. Les clients qui s’authentifient sur un serveur utilisent les informations contenues dans les noms principaux de client. 
   
-1. Tout d’abord, connectez-vous à AAD en utilisant [ces instructions](https://docs.microsoft.com/en-us/powershell/azure/active-directory/overview?view=azureadps-1.0).
+1. Tout d’abord, connectez-vous à AAD en utilisant [ces instructions](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0).
     
 2. Exécutez cette commande, en local, pour obtenir la liste des URL de service Web SFB.
 
@@ -174,7 +174,7 @@ Vous devez également maintenir la touche CTRL enfoncée en même temps que vous
 
 [Revenez à la vue d’ensemble de l’authentification moderne](hybrid-modern-auth-overview.md) . 
   
-Avez-vous besoin de savoir comment utiliser l’authentification moderne (ADAL) pour vos clients Skype entreprise ? Nous avons les étapes à suivre [ici](https://technet.microsoft.com/en-us/library/mt710548.aspx).
+Avez-vous besoin de savoir comment utiliser l’authentification moderne (ADAL) pour vos clients Skype entreprise ? Nous avons les étapes à suivre [ici](https://technet.microsoft.com/library/mt710548.aspx).
   
 Souhaitez-vous lire ces étapes telles qu’elles apparaissent pour Exchange Server, en local, sans SFB ? Ces étapes sont disponibles ici.
   

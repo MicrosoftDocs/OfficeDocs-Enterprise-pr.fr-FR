@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e2b354b9-7f18-4da0-9107-6245eae0f33f
 description: 'Résumé : Configurer l’authentification multifacteur à l’aide de messages texte envoyés à un Smartphone dans un environnement de développement/test Office 365.'
-ms.openlocfilehash: 2c53d7fa9239395e28d68487dd0ccea8cc57efb7
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 6e78d826cd010230218048ef320d8f32430ac02b
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069950"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032129"
 ---
 # <a name="multi-factor-authentication-for-your-office-365-devtest-environment"></a>Authentification multifacteur pour votre environnement de développement/test Office 365
 
@@ -38,7 +38,7 @@ Il existe deux phases de configuration de l’authentification multifacteur pour
 2. Activez et testez l’authentification multifacteur pour le compte d’utilisateur 2.
     
 > [!TIP]
-> Cliquez sur[ici](http://aka.ms/catlgstack) pour afficher le plan de tous les articles dans le Guide de Laboratoire Test Office 365.
+> Cliquez sur[ici](https://aka.ms/catlgstack) pour afficher le plan de tous les articles dans le Guide de Laboratoire Test Office 365.
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Phase 1 : Créer votre environnement de développement/test Office 365 en mode léger ou pour entreprise simulée
 
@@ -59,7 +59,7 @@ Activez l’authentification multifacteur pour le compte d’utilisateur 2 en pr
     
 3. Dans la navigation de gauche, cliquez sur **Utilisateurs > Utilisateurs actifs**.
     
-4. Dans le volet utilisateurs actifs, cliquez sur **plus d' > d’authentification multifacteur**.
+4. Dans le volet utilisateurs actifs, cliquez sur **plus d' > configuration de l’authentification multifacteur**.
     
 5. Dans la liste, sélectionnez le compte **utilisateur 2** .
     
@@ -77,7 +77,7 @@ Terminez la configuration pour que le compte d’utilisateur 2 utilise un messag
   
 1. Ouvrez une nouvelle instance de votre navigateur.
     
-2. Accédez au portail Office 365 ([https://www.office.com](https://www.office.com)) et connectez-vous avec le compte utilisateur 2 (utilisateur2 @\<Organization name>. onmicrosoft. com) et le mot de passe.
+2. Accédez au portail Office 365 ([https://www.office.com](https://www.office.com)) et connectez-vous avec le compte utilisateur 2 (User2@\<nom de l’organisation>. onmicrosoft.com) et le mot de passe.
     
 3. Après vous être connecté, vous êtes invité à configurer le compte pour la validation de sécurité supplémentaire. Cliquez sur **Configurer maintenant**.
     

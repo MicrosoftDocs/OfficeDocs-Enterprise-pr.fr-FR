@@ -10,16 +10,16 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 129f4e45-647e-4cf1-92a6-4d86d8396e73
 description: Cet article est une version texte accessible du diagramme intitulé Options de plateforme Microsoft Exchange 2013, qui est disponible dans la rubrique Diagrammes techniques.
-ms.openlocfilehash: ddf215544b811257e6d43f212784a3a1e5aac7b0
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: ce1fe525b6a339c64d757b82a6f1c9ea4b82d23e
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068590"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38027568"
 ---
 # <a name="accessible-diagram---microsoft-exchange-2013-platform-options"></a>Diagramme accessible : Options de plateforme Microsoft Exchange 2013
 
-**Résumé :** Cet article est une version texte accessible du diagramme intitulé Options de plateforme Microsoft Exchange 2013, qui est disponible dans la rubrique [Diagrammes techniques](http://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409).
+**Résumé :** Cet article est une version texte accessible du diagramme intitulé Options de plateforme Microsoft Exchange 2013, qui est disponible dans la rubrique [Diagrammes techniques](https://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409).
   
 Cette affiche décrit ce que les architectes et les décideurs d’entreprise (BDM) doivent savoir sur les déploiements Exchange Online et Exchange Server et inclut : 
   

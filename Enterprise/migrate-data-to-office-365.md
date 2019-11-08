@@ -14,12 +14,12 @@ search.appverid:
 - BCS160
 ms.assetid: e2fdfc8d-547e-4419-8628-2738ed4e0f46
 description: Si vous avez interrompu votre déploiement FastTrack et que vous êtes prêt à migrer les données vers Office 365, il s’agit du point de départ.
-ms.openlocfilehash: cd9f113f7b8e66e22ad61c4f406ac693a8aa3695
-ms.sourcegitcommit: 1e6e91fbdcbb6d8ef21d30f32c1f8e704f4f31ba
+ms.openlocfilehash: 8fa0b26a1051c33a32fa9a583c76662e998b0692
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35597550"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031329"
 ---
 # <a name="migrate-your-organization-data-to-office-365-enterprise"></a>Effectuer une migration de vos données d’organisation vers Office 365 Entreprise
 
@@ -40,7 +40,7 @@ Si vous souhaitez obtenir de l’aide concernant la configuration d’Office 365
 
 ## <a name="migrate-skype-for-business-users"></a>Migrer les utilisateurs de Skype Entreprise
 - [Migrer vers Skype entreprise Online](https://technet.microsoft.com/library/jj204969.aspx). (Administrateur)
-- Télécharger le [l’outil de mise à jour Skype entreprise](https://www.microsoft.com/en-us/download/details.aspx?id=51659) et [l’exécuter sur chaque station de travail](https://support.office.com/article/Meeting-Update-Tool-for-Skype-for-Business-and-Lync-2b525fe6-ed0f-4331-b533-c31546fcf4d4). (Administrateur et/ou utilisateur final)
+- Télécharger le [l’outil de mise à jour Skype entreprise](https://www.microsoft.com/download/details.aspx?id=51659) et [l’exécuter sur chaque station de travail](https://support.office.com/article/Meeting-Update-Tool-for-Skype-for-Business-and-Lync-2b525fe6-ed0f-4331-b533-c31546fcf4d4). (Administrateur et/ou utilisateur final)
   
 ## <a name="need-to-talk-to-support"></a>Vous souhaitez parler au support technique ?
 [Contacter le support technique](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) pour produits d’entreprises.

@@ -12,9 +12,9 @@ Microsoft et tous les contributeurs vous accordent une licence à la documentati
 
 Microsoft, Windows, Microsoft Azure et/ou d’autres produits et services Microsoft mentionnés dans la documentation peuvent être des marques ou des marques déposées de Microsoft aux États-Unis et/ou dans d’autres pays.
 Les licences pour ce projet ne vous permettent pas de vous accorder des droits d’utilisation des noms, logos ou marques de Microsoft.
-Les conseils de la marque générale de Microsoft sont http://go.microsoft.com/fwlink/?LinkID=254653disponibles à l’adresse.
+Les conseils de la marque générale de Microsoft sont https://go.microsoft.com/fwlink/?LinkID=254653disponibles à l’adresse.
 
-Vous trouverez des informations sur la confidentialité à l’adresse suivante:https://privacy.microsoft.com/en-us/
+Vous trouverez des informations sur la confidentialité à l’adresse suivante :https://privacy.microsoft.com/
 
 Microsoft et tous les contributeurs réservent tous les droits, qu’ils soient sous leurs droits d’auteur, brevets ou marques de sous-traitants, par implication, estoppel ou autre.
 

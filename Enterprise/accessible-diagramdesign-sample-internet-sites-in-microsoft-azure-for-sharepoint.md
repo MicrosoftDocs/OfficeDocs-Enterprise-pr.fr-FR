@@ -11,22 +11,22 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b91124bc-c7ec-4929-b77c-d6293db9f15e
 description: 'Cet article est une version texte accessible du diagramme nommé Exemple de conception : sites Internet dans Microsoft Azure pour SharePoint 2013'
-ms.openlocfilehash: 28cf28739c476638b5775d170508001f2a9730ed
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 52ae615cbdc6a355155e54e36bc6a3d733d84869
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068796"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38027628"
 ---
 # <a name="accessible-diagram---design-sample-internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>Diagramme accessible : Exemple de conception : sites Internet dans Microsoft Azure pour SharePoint 2013
 
-**Résumé:** Cet article est une version texte accessible du diagramme nommé exemple de conception: sites Internet dans Microsoft Azure pour SharePoint 2013.
+**Résumé :** Cet article est une version texte accessible du diagramme nommé exemple de conception : sites Internet dans Microsoft Azure pour SharePoint 2013.
   
 Utilisez cet exemple de conception comme point de départ pour un site accessible sur Internet dans Azure à l’aide de SharePoint 2013.
   
-Cette affiche montre un exemple de la façon de concevoir les aspects suivants de SharePoint 2013:
+Cette affiche montre un exemple de la façon de concevoir les aspects suivants de SharePoint 2013 :
   
-- Users
+- Utilisateurs
     
 - Zones et authentification
     
@@ -50,13 +50,13 @@ Cette affiche montre un exemple de la façon de concevoir les aspects suivants d
 
 Il existe quatre types de comptes utilisateur dans cette conception. Chaque type de compte est associé à un site d’accès et à une zone qui utilise un type spécifique d’authentification.  
   
-- Clients anonymes: les clients anonymes ont accès à un http://www.contoso.comsite tel que. La zone utilisée est la «zone Internet/anonyme» qui utilise l’authentification anonyme.
+- Clients anonymes : les clients anonymes ont accès à un https://www.contoso.comsite tel que. La zone utilisée est la « zone Internet/anonyme » qui utilise l’authentification anonyme.
     
-- Clients authentifiés: les clients authentifiés ont accès à un site tel https://secure.contoso.comque. La zone utilisée est la «zone extranet/SAML» qui utilise Azure Active Directory avec l’authentification SAML.
+- Clients authentifiés : les clients authentifiés ont accès à un site tel https://secure.contoso.comque. La zone utilisée est la « zone extranet/SAML » qui utilise Azure Active Directory avec l’authentification SAML.
     
-- Auteurs de site et développeurs: les auteurs de site et les développeurs ont accès http://authoring.contoso.com:8000 à http://www.contoso.com:8000des sites tels que ou. La zone utilisée est la «zone par défaut/intégrée à Windows», qui utilise les services de domaine Active Directory (AD DS).
+- Auteurs de site et développeurs : les auteurs de site et les développeurs ont accès https://authoring.contoso.com:8000 à https://www.contoso.com:8000des sites tels que ou. La zone utilisée est la « zone par défaut/intégrée à Windows », qui utilise les services de domaine Active Directory (AD DS).
     
-- Compte d’analyse de recherche: le compte d’analyse de recherche a accès http://authoring.contoso.com:8000 par http://www.contoso.com:8000le biais de sites tels que ou. La zone qu’il utilise est la «zone par défaut/intégrée à Windows», qui utilise les services AD DS avec l’authentification Windows NTLM.
+- Compte d’analyse de recherche : le compte d’analyse de recherche a accès https://authoring.contoso.com:8000 par https://www.contoso.com:8000le biais de sites tels que ou. La zone qu’il utilise est la « zone par défaut/intégrée à Windows », qui utilise les services AD DS avec l’authentification Windows NTLM.
     
 ## <a name="server-farm"></a>Batterie de serveurs
 
@@ -80,21 +80,21 @@ Remarques sur les Services pour les sites Internet :
     
 ## <a name="application-pools-and-web-applications"></a>Pools d’applications et applications web
 
-Le groupe par défaut dans Azure montre le pool d’applications 3, qui contient une application web nommée Contoso Sites. Cette collection de sites basée sur le chemin d' http://internal:8000accès se trouve à l’adresse.
+Le groupe par défaut dans Azure montre le pool d’applications 3, qui contient une application web nommée Contoso Sites. Cette collection de sites basée sur le chemin d' https://internal:8000accès se trouve à l’adresse.
   
 ## <a name="site-collections-and-sites"></a>Collections de site et sites
 
 Les collections de sites contenues dans le pool d’applications sont les suivantes :
   
-- Collection de sites nommée par l’hôte 1 pour l’analyse (exemple d’emplacementhttp://authoring.contoso.com:8000)
+- Collection de sites nommée par l’hôte 1 pour l’analyse (exemple d’emplacementhttps://authoring.contoso.com:8000)
     
-- Collection de sites nommée par l’hôte 2 pour les requêtes http://www.contoso.com( https://secure.contoso.comemplacements d’exemple,,http://www.contoso.com:8000)
+- Collection de sites nommée par l’hôte 2 pour les requêtes https://www.contoso.com( https://secure.contoso.comemplacements d’exemple,,https://www.contoso.com:8000)
     
-- Collection de sites nommée par l’hôte 3 pour les requêtes http://assets.contoso.com( https://secureassets.contoso.comemplacements d’exemple,,http://assets.contoso.com:8000)
+- Collection de sites nommée par l’hôte 3 pour les requêtes https://assets.contoso.com( https://secureassets.contoso.comemplacements d’exemple,,https://assets.contoso.com:8000)
     
 ## <a name="content-databases"></a>Bases de données de contenu
 
-L’exemple montre deux bases de données de contenu. La première concerne la collection de sites 1 utilisée pour l’analysehttp://authoring.contoso.com:8000)(. L’autre est pour les deux collections de sites 2 et 3 utilisées pour leshttp://www.contoso.comrequêtes https://secure.contoso.com( http://www.contoso.com:8000,, http://assets.contoso.com, https://secureassets.contoso.comou http://assets.contoso.com:8000),,.
+L’exemple montre deux bases de données de contenu. La première concerne la collection de sites 1 utilisée pour l’analysehttps://authoring.contoso.com:8000)(. L’autre est pour les deux collections de sites 2 et 3 utilisées pour leshttps://www.contoso.comrequêtes https://secure.contoso.com( https://www.contoso.com:8000,, https://assets.contoso.com, https://secureassets.contoso.comou https://assets.contoso.com:8000),,.
   
 ## <a name="zones-and-urls"></a>Zones et URL
 
@@ -106,7 +106,7 @@ La première liste de zones et d’URL est liée à la collection de sites 1 et 
     
 - Zone-valeur par défaut
     
-- URL à charge équilibrée-http://authoring.contoso.com:8000
+- URL à charge équilibrée-https://authoring.contoso.com:8000
     
 La seconde liste de zones et d’URL comporte trois types différents d’utilisateurs dans trois zones différentes. Elle est liée à la collection de sites 2 et elle contient les informations suivantes :
   
@@ -116,7 +116,7 @@ Première zone :
     
 - Zone-valeur par défaut
     
-- URL à charge équilibrée-http://www.contoso.com:8000
+- URL à charge équilibrée-https://www.contoso.com:8000
     
 Deuxième zone :
   
@@ -124,7 +124,7 @@ Deuxième zone :
     
 - Zone-Internet
     
-- URL à charge équilibrée-http://www.contoso.com
+- URL à charge équilibrée-https://www.contoso.com
     
 Troisième zone :
   
@@ -142,7 +142,7 @@ Première zone :
     
 - Zone-Internet
     
-- URL à charge équilibrée-http://assets.contoso.com:8000
+- URL à charge équilibrée-https://assets.contoso.com:8000
     
 Deuxième zone :
   
@@ -150,7 +150,7 @@ Deuxième zone :
     
 - Zone-Internet
     
-- URL à charge équilibrée-http://assets.contoso.com
+- URL à charge équilibrée-https://assets.contoso.com
     
 Troisième zone :
   
@@ -158,6 +158,6 @@ Troisième zone :
     
 - Zone-extranet
     
-- URL à charge équilibrée-http://secureassets.contoso.com
+- URL à charge équilibrée-https://secureassets.contoso.com
     
 

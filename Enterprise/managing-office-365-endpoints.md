@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Certains réseaux d’entreprise restreignent l’accès aux emplacements Internet génériques ou incluent une déformation ou un traitement substantiel du trafic réseau. Pour s’assurer que les ordinateurs sur des réseaux comme ceux-ci peuvent accéder à Office 365, les administrateurs réseau et proxy doivent gérer la liste des noms de domaine complets, des URL et des adresses IP qui composent la liste des points de terminaison Office 365. Ceux-ci doivent être ajoutés à l’itinéraire direct, à la déviation du proxy et/ou aux règles de pare-feu et/ou aux fichiers PAC pour s’assurer que les demandes réseau sont en mesure d’atteindre Office 365.
-ms.openlocfilehash: 21129387aeaf20f34e8528829dd942fddd381108
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 1a694d516a81fec7d6c619c17414e2245dd6b0ef
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782474"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030608"
 ---
 # <a name="managing-office-365-endpoints"></a>Gestion des points de terminaison Office 365
 
@@ -47,13 +47,13 @@ Utilisez des fichiers PAC ou WPAD pour gérer les demandes réseau qui sont asso
 
 ![Connexion à Office 365 via des pare-feu et des proxys.](media/34d402f3-f502-42a0-8156-24a7c4273fa5.png)
 
-**Figure 1: périmètre de réseau d’entreprise simple**
+**Figure 1 : périmètre de réseau d’entreprise simple**
 
 Le fichier PAC est déployé sur les navigateurs Web au point 1 de la figure 1. Lors de l’utilisation d’un fichier PAC pour la sortie directe du trafic réseau Office 365 vital, vous devez également autoriser la connectivité aux adresses IP situées derrière ces URL sur votre pare-feu de périmètre réseau. Cette opération est effectuée en extrayant les adresses IP pour les mêmes catégories de points de terminaison Office 365 que celles spécifiées dans le fichier PAC et en créant des listes de Contrã’le d’accès de pare-feu basées sur ces adresses. Le pare-feu est le point 3 de la figure 1.
 
 Séparément si vous choisissez uniquement le routage direct pour les points de terminaison de catégorie Optimize, tous les points de terminaison de catégorie requis que vous envoyez au serveur proxy doivent être affichés sur le serveur proxy pour éviter tout traitement supplémentaire. Par exemple, l’interruption et l’inspection de SSL et l’authentification proxy sont incompatibles avec les points de terminaison Optimize et allow Category. Le serveur proxy est le point 2 de la figure 1.
 
-La configuration courante consiste à autoriser sans traiter tout le trafic sortant à partir du serveur proxy pour les adresses IP de destination pour le trafic réseau Office 365 qui accède au serveur proxy. Pour plus d’informations sur les problèmes liés au protocole SSL Break and Inspect, consultez la rubrique [utilisation de périphériques ou de solutions réseau tiers sur le trafic Office 365](https://support.microsoft.com/en-us/help/2690045/using-third-party-network-devices-or-solutions-with-office-365).
+La configuration courante consiste à autoriser sans traiter tout le trafic sortant à partir du serveur proxy pour les adresses IP de destination pour le trafic réseau Office 365 qui accède au serveur proxy. Pour plus d’informations sur les problèmes liés au protocole SSL Break and Inspect, consultez la rubrique [utilisation de périphériques ou de solutions réseau tiers sur le trafic Office 365](https://support.microsoft.com/help/2690045/using-third-party-network-devices-or-solutions-with-office-365).
 
 Il existe deux types de fichiers PAC que le script Get-PacFile générera.
 
@@ -62,13 +62,13 @@ Il existe deux types de fichiers PAC que le script Get-PacFile générera.
 |**0,1** <br/> |Envoyez l’optimisation du trafic du point de terminaison direct et de tous les autres éléments au serveur proxy. <br/> |
 |**n°2** <br/> |Envoyez l’optimisation et autorisez le trafic du point de terminaison direct et tout le reste sur le serveur proxy. Ce type peut également être utilisé pour envoyer toutes les ExpressRoute prises en charge pour le trafic Office 365 vers des segments réseau ExpressRoute et tout le reste vers le serveur proxy. <br/> |
 
-Voici un exemple simple d’appel du script PowerShell:
+Voici un exemple simple d’appel du script PowerShell :
 
 ```powershell
 Get-PacFile -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7
 ```
 
-Vous pouvez transmettre un certain nombre de paramètres au script:
+Vous pouvez transmettre un certain nombre de paramètres au script :
 
 |**Paramètre**|**Description**|
 |:-----|:-----|
@@ -77,7 +77,7 @@ Vous pouvez transmettre un certain nombre de paramètres au script:
 |**TenantName** <br/> |Votre nom de client Office 365. Transmis au service Web et utilisé comme paramètre remplaçable dans certaines URL d’Office 365. <br/> |
 |**Type** <br/> |Type du fichier PAC de proxy à générer. <br/> |
 
-Voici un autre exemple d’appel du script PowerShell avec des paramètres supplémentaires:
+Voici un autre exemple d’appel du script PowerShell avec des paramètres supplémentaires :
 
 ```powershell
 Get-PacFile -Type 2 -Instance Worldwide -TenantName Contoso -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7
@@ -117,37 +117,37 @@ Pour plus d’informations sur un modèle et un exemple de flux Microsoft, voir 
 <a name="FAQ"> </a>
 ## <a name="office-365-network-endpoints-faq"></a>FAQ sur les points de terminaison réseau Office 365
 
-Questions d’administration fréquemment posées sur la connectivité Office 365:
+Questions d’administration fréquemment posées sur la connectivité Office 365 :
   
-### <a name="how-do-i-submit-a-question"></a>Comment puis-je soumettre une question?
+### <a name="how-do-i-submit-a-question"></a>Comment puis-je soumettre une question ?
 
 Cliquez sur le lien situé en bas pour indiquer si l’article a été utile ou non et envoyez des questions supplémentaires. Nous Surveillez les commentaires et mettez à jour les questions ici en suivant les réponses les plus fréquentes.
   
-### <a name="how-do-i-determine-the-location-of-my-tenant"></a>Comment puis-je déterminer l’emplacement de mon client?
+### <a name="how-do-i-determine-the-location-of-my-tenant"></a>Comment puis-je déterminer l’emplacement de mon client ?
 
- L' **emplacement client** est le mieux déterminé à l’aide de notre [carte de centre](http://aka.ms/datamaps)de contenu.
+ L' **emplacement client** est le mieux déterminé à l’aide de notre [carte de centre](https://aka.ms/datamaps)de contenu.
   
-### <a name="am-i-peering-appropriately-with-microsoft"></a>Est-ce que je m’appaire correctement avec Microsoft?
+### <a name="am-i-peering-appropriately-with-microsoft"></a>Est-ce que je m’appaire correctement avec Microsoft ?
 
- Les **emplacements d’homologation** sont décrits de manière plus détaillée dans la rubrique peering [with Microsoft](https://www.microsoft.com/peering).
+ Les **emplacements d’homologation** sont décrits de manière plus détaillée dans la rubrique [peering with Microsoft](https://www.microsoft.com/peering).
   
 Avec plus de 2500 les relations d’homologation ISP globales et 70 points de présence, l’obtention de votre réseau vers le nôtre doit être transparente. Il n’est pas judicieux de consacrer quelques minutes à la façon de s’assurer que la relation d’homologation de votre fournisseur de services Internet est la plus optimale, [Voici quelques exemples](https://blogs.technet.microsoft.com/onthewire/2017/03/22/__guidance/) de bons et pas de bonnes relations d’homologation à notre réseau.
   
-### <a name="i-see-network-requests-to-ip-addresses-not-on-the-published-list-do-i-need-to-provide-access-to-them"></a>Je vois des demandes réseau à des adresses IP qui ne se trouvent pas dans la liste publiée, dois-je fournir un accès à ces adresses?
+### <a name="i-see-network-requests-to-ip-addresses-not-on-the-published-list-do-i-need-to-provide-access-to-them"></a>Je vois des demandes réseau à des adresses IP qui ne se trouvent pas dans la liste publiée, dois-je fournir un accès à ces adresses ?
 <a name="bkmk_MissingIP"> </a>
 
 Nous fournissons uniquement des adresses IP pour les serveurs Office 365 que vous devez acheminer directement vers. Il ne s’agit pas d’une liste complète de toutes les adresses IP pour lesquelles vous verrez des demandes réseau. Vous verrez des demandes réseau à Microsoft et à des adresses IP tierces, non publiées. Ces adresses IP sont générées dynamiquement ou gérées d’une manière qui empêche la notification en temps opportun. Si votre pare-feu ne peut pas autoriser l’accès basé sur les noms de domaine complets pour ces demandes réseau, utilisez un fichier PAC ou WPAD pour gérer les demandes.
   
 Voir une adresse IP associée à Office 365 sur laquelle vous souhaitez plus d’informations.
   
-1. Vérifiez si l’adresse IP est incluse dans une plage publiée plus grande à l’aide d’une [calculatrice CIDR](http://jodies.de/ipcalc).
+1. Vérifiez si l’adresse IP est incluse dans une plage publiée plus grande à l’aide d’une [calculatrice CIDR](https://jodies.de/ipcalc).
 2. Voir si un partenaire possède la IP avec une [requête Whois](https://dnsquery.org/). S’il est détenu par Microsoft, il peut s’agir d’un partenaire interne.
-3. Vérifiez le certificat, dans un navigateur Connectez-vous à l’adresse IP à l’aide de *https://\<Adresse_IP\> * , vérifiez les domaines répertoriés sur le certificat pour comprendre quels domaines sont associés à l’adresse IP. S’il s’agit d’une adresse IP appartenant à Microsoft et non sur la liste des adresses IP Office 365, l’adresse IP est probablement associée à un CDN Microsoft tel que *MSOCDN.net* ou un autre domaine Microsoft sans informations IP publiées. Si vous trouvez le domaine sur le certificat est un domaine dans lequel nous revendiquons de répertorier l’adresse IP, veuillez nous le faire savoir.
+3. Vérifiez le certificat, dans un navigateur Connectez-vous à l’adresse IP à l’aide de *https://\<IP_ADDRESS\> * , vérifiez les domaines répertoriés sur le certificat pour comprendre quels domaines sont associés à l’adresse IP. S’il s’agit d’une adresse IP appartenant à Microsoft et non sur la liste des adresses IP Office 365, l’adresse IP est probablement associée à un CDN Microsoft tel que *MSOCDN.net* ou un autre domaine Microsoft sans informations IP publiées. Si vous trouvez le domaine sur le certificat est un domaine dans lequel nous revendiquons de répertorier l’adresse IP, veuillez nous le faire savoir.
 
 <a name="bkmk_cname"> </a>
-### <a name="some-office-365-urls-point-to-cname-records-instead-of-a-records-in-the-dns-what-do-i-have-to-do-with-the-cname-records"></a>Certaines URL Office 365 pointent vers des enregistrements CNAMe au lieu d’un enregistrement dans le DNS. Que dois-je faire avec les enregistrements CNAMe?
+### <a name="some-office-365-urls-point-to-cname-records-instead-of-a-records-in-the-dns-what-do-i-have-to-do-with-the-cname-records"></a>Certaines URL Office 365 pointent vers des enregistrements CNAMe au lieu d’un enregistrement dans le DNS. Que dois-je faire avec les enregistrements CNAMe ?
 
-Les ordinateurs clients ont besoin d’un enregistrement DNS A ou AAAA qui inclut une ou plusieurs adresses IP pour se connecter à un service Cloud. Certaines URL incluses dans Office 365 affichent des enregistrements CNAMe au lieu des enregistrements A ou AAAA. Ces enregistrements CNAMe sont intermédiaires et il peut y en avoir plusieurs dans une chaîne. Elles sont toujours résolues en un enregistrement A ou AAAA pour une adresse IP. Par exemple, considérez la série d’enregistrements DNS suivante, qui se traduit en fin de compte en adresse IP _IP_1_:
+Les ordinateurs clients ont besoin d’un enregistrement DNS A ou AAAA qui inclut une ou plusieurs adresses IP pour se connecter à un service Cloud. Certaines URL incluses dans Office 365 affichent des enregistrements CNAMe au lieu des enregistrements A ou AAAA. Ces enregistrements CNAMe sont intermédiaires et il peut y en avoir plusieurs dans une chaîne. Elles sont toujours résolues en un enregistrement A ou AAAA pour une adresse IP. Par exemple, considérez la série d’enregistrements DNS suivante, qui est résolue en adresse IP _IP_1_:
 
 ```
 serviceA.office.com -> CNAME: serviceA.domainA.com -> CNAME: serviceA.domainB.com -> A: IP_1
@@ -157,12 +157,12 @@ Ces redirections CNAMe sont une partie normale du DNS et sont transparentes pour
 
 Un serveur proxy valide l’URL initiale qui, dans l’exemple ci-dessus, est serviceA.office.com et cette URL serait incluse dans Office 365 Publishing. Le serveur proxy demande la résolution DNS de cette URL à une adresse IP et reçoit IP_1. Il ne valide pas les enregistrements de redirection CNAMe CNAMe.
 
-Les configurations codées en dur ou la fonctionnalité de liste de domaines autorisées basée sur les noms de domaine complets Office 365 indirects ne sont pas recommandées par Microsoft et sont connues comme entraînant des problèmes de connectivité client. Les solutions DNS qui bloquent sur la redirection CNAMe, ou qui résolvent les entrées DNS Office 365 de manière incorrecte, peuvent être résolues via le transfert conditionnel DNS (étendu aux noms de domaine complets Office 365) avec la récursivité DNS activée. De nombreux produits de périmètre réseau tiers intègrent en mode natif la liste de point de terminaison 365 Office dans leur configuration à l’aide de l' [adresse IP office 365 et du service Web d’URL](https://docs.microsoft.com/en-us/office365/enterprise/office-365-ip-web-service).
+Les configurations codées en dur ou la fonctionnalité de liste de domaines autorisées basée sur les noms de domaine complets Office 365 indirects ne sont pas recommandées par Microsoft et sont connues comme entraînant des problèmes de connectivité client. Les solutions DNS qui bloquent sur la redirection CNAMe, ou qui résolvent les entrées DNS Office 365 de manière incorrecte, peuvent être résolues via le transfert conditionnel DNS (étendu aux noms de domaine complets Office 365) avec la récursivité DNS activée. De nombreux produits de périmètre réseau tiers intègrent en mode natif la liste de point de terminaison 365 Office dans leur configuration à l’aide de l' [adresse IP office 365 et du service Web d’URL](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service).
 
-### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>Pourquoi est-ce que je vois des noms tels que nsatc.net ou akadns.net dans les noms de domaine Microsoft?
+### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>Pourquoi est-ce que je vois des noms tels que nsatc.net ou akadns.net dans les noms de domaine Microsoft ?
 <a name="bkmk_akamai"> </a>
 
-Office 365 et d’autres services Microsoft utilisent plusieurs services tiers tels que Akamai et MarkMonitor pour améliorer votre expérience Office 365. Pour vous assurer de la meilleure expérience possible, nous pouvons modifier ces services à l’avenir. Les domaines tiers peuvent héberger du contenu, tel qu’un CDN, ou ils peuvent héberger un service, tel qu’un service de gestion du trafic géographique. Voici quelques-uns des services actuellement utilisés:
+Office 365 et d’autres services Microsoft utilisent plusieurs services tiers tels que Akamai et MarkMonitor pour améliorer votre expérience Office 365. Pour vous assurer de la meilleure expérience possible, nous pouvons modifier ces services à l’avenir. Les domaines tiers peuvent héberger du contenu, tel qu’un CDN, ou ils peuvent héberger un service, tel qu’un service de gestion du trafic géographique. Voici quelques-uns des services actuellement utilisés :
   
 [MarkMonitor](https://www.markmonitor.com/) est en cours d’utilisation lorsque vous voyez des requêtes qui incluent * \*. nsatc.net* . Ce service assure la protection des noms de domaine et la surveillance contre les comportements malveillants.
   
@@ -200,7 +200,7 @@ En plus des services Internet de base, il existe des services tiers qui sont uni
   
 Si vous essayez d’utiliser Office 365 et que vous ne pouvez pas accéder aux services tiers, vous devez vous [assurer que tous les noms de domaine complets marqués comme obligatoires ou facultatifs dans cet article sont autorisés via le proxy et le pare-feu](urls-and-ip-address-ranges.md).
   
-### <a name="how-do-i-block-access-to-microsofts-consumer-services"></a>Comment bloquer l’accès aux services grand public de Microsoft?
+### <a name="how-do-i-block-access-to-microsofts-consumer-services"></a>Comment bloquer l’accès aux services grand public de Microsoft ?
 <a name="bkmk_consumer"> </a>
 
 La restriction de l’accès à nos services grand public doit être réalisée à vos propres risques. La seule façon fiable de bloquer les services grand public est de restreindre l’accès au nom de domaine complet *login.live.com* . Ce nom de domaine complet est utilisé par un large éventail de services, y compris des services non consommateurs tels que MSDN, TechNet, etc. Ce nom de domaine complet est également utilisé par le programme d’échange de fichiers sécurisé de Microsoft et est nécessaire pour transférer des fichiers afin de faciliter la résolution des problèmes pour les produits Microsoft.  La limitation de l’accès à ce nom de domaine complet peut entraîner l’ajout d’exceptions à la règle pour les demandes réseau associées à ces services.

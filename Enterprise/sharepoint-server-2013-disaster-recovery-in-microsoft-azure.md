@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: "Résumé : À l'aide d'Azure, vous pouvez créer un environnement de récupération d'urgence pour votre batterie de serveurs SharePoint locale. Cet article décrit comment concevoir et implémenter cette solution."
-ms.openlocfilehash: 907b2d56150ea6c8a540f1be88f325919917f6fe
-ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
+ms.openlocfilehash: cd350cca38b3cf11764e34bf5f0744f8a3c50190
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "35203643"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031519"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Récupération d’urgence SharePoint Server 2013 dans Microsoft Azure
 
@@ -110,7 +110,7 @@ Après l’exécution d’une récupération, cette solution fournit les éléme
   
 **Tableau : Objectifs de récupération de la solution**
 
-|**Item**|**Description**|
+|**Élément**|**Description**|
 |:-----|:-----|
 |Sites et contenu  <br/> |Les sites et le contenu sont disponibles dans l’environnement de récupération.  <br/> |
 |Nouvelle instance de recherche  <br/> |Dans cette solution de secours semi-automatique, la recherche n’est pas restaurée à partir des bases de données de recherche. Les composants de recherche de la batterie de serveurs de récupération sont configurés de la même façon que dans la batterie de serveurs de production, dans la mesure du possible. Une fois les sites et le contenu restaurés, une analyse complète est exécutée pour recréer l’index de recherche. Il est inutile d’attendre que l’analyse soit terminée pour rendre les sites et le contenu disponibles.  <br/> |
@@ -120,7 +120,7 @@ Vous pouvez recourir aux services de conseil Microsoft (MCS) ou un partenaire po
   
 **Tableau : Autres éléments pouvant être traités par MCS ou un partenaire**
 
-|**Item**|**Description**|
+|**Élément**|**Description**|
 |:-----|:-----|
 |Synchronisation des solutions de batterie de serveurs personnalisée  <br/> |Idéalement, la configuration de la batterie de serveurs de récupération est identique à celle de la batterie de serveurs de production. Vous pouvez faire appel à un consultant ou un partenaire afin d’évaluer si les solutions de batterie de serveurs personnalisées sont répliquées ou non et si le processus de synchronisation des deux environnements est en place.  <br/> |
 |Connexions aux données sources locales  <br/> |Il peut s’avérer peu pratique de répliquer les connexions aux systèmes de données de serveurs principaux, telles que les connexions du contrôleur secondaire de domaine et les sources de contenu de recherche.  <br/> |
@@ -446,9 +446,9 @@ Vous devez créer manuellement des enregistrements DNS pour qu’ils pointent v
   
 Dans la plupart des cas où vous avez plusieurs serveurs web frontaux, il est logique de tirer parti de la fonctionnalité d'équilibrage de la charge réseau dans Windows Server 2012 ou d'un équilibrage de la charge matérielle pour répartir les demandes entre les serveurs web frontaux dans votre batterie de serveurs. L'équilibrage de la charge réseau peut également permettre de réduire les risques en envoyant les requêtes vers les autres serveurs en cas de panne d'un de vos serveurs web frontaux. 
   
-En règle générale, lorsque vous configurez l'équilibrage de la charge réseau, une adresse IP unique est attribuée à votre cluster. Vous créez ensuite un enregistrement d'hôte DNS dans le fournisseur DNS de votre réseau qui pointe vers le cluster. (Pour ce projet, nous mettons un serveur DNS dans Azure pour la résilience en cas de panne d'un centre de données local.) Par exemple, vous pouvez créer un enregistrement DNS, dans le gestionnaire DNS dans Active Directory, appelé  `http://sharepoint.contoso.com` et qui pointe vers l'adresse IP de votre cluster dont la charge est équilibrée.
+En règle générale, lorsque vous configurez l'équilibrage de la charge réseau, une adresse IP unique est attribuée à votre cluster. Vous créez ensuite un enregistrement d'hôte DNS dans le fournisseur DNS de votre réseau qui pointe vers le cluster. (Pour ce projet, nous mettons un serveur DNS dans Azure pour la résilience en cas de panne d'un centre de données local.) Par exemple, vous pouvez créer un enregistrement DNS, dans le gestionnaire DNS dans Active Directory, appelé  `https://sharepoint.contoso.com` et qui pointe vers l'adresse IP de votre cluster dont la charge est équilibrée.
   
-Pour l’accès externe à votre batterie de serveurs SharePoint, vous pouvez créer un enregistrement d’hôte sur un serveur DNS externe avec la même URL que les clients utilisent sur votre `http://sharepoint.contoso.com`intranet (par exemple,) qui pointe vers une adresse IP externe dans votre pare-feu. (En utilisant cet exemple, nous vous recommandons de configurer le DNS fractionné de `contoso.com` sorte que le serveur DNS interne fasse autorité et achemine les demandes directement vers le cluster de batterie de serveurs SharePoint, au lieu de router les demandes DNS vers votre serveur DNS externe.) Vous pouvez ensuite mapper l’adresse IP externe sur l’adresse IP interne de votre cluster local afin que les clients puissent trouver les ressources qu’ils recherchent.
+Pour l’accès externe à votre batterie de serveurs SharePoint, vous pouvez créer un enregistrement d’hôte sur un serveur DNS externe avec la même URL que les clients utilisent sur votre `https://sharepoint.contoso.com`intranet (par exemple,) qui pointe vers une adresse IP externe dans votre pare-feu. (En utilisant cet exemple, nous vous recommandons de configurer le DNS fractionné de `contoso.com` sorte que le serveur DNS interne fasse autorité et achemine les demandes directement vers le cluster de batterie de serveurs SharePoint, au lieu de router les demandes DNS vers votre serveur DNS externe.) Vous pouvez ensuite mapper l’adresse IP externe sur l’adresse IP interne de votre cluster local afin que les clients puissent trouver les ressources qu’ils recherchent.
   
 À ce stade, vous pouvez rencontrer deux scénarios de récupération d’urgence :
   
@@ -456,7 +456,7 @@ Pour l’accès externe à votre batterie de serveurs SharePoint, vous pouvez cr
   
  **Exemple de scénario : le centre de données local est entièrement perdu.** Ce scénario peut se produire suite à une catastrophe naturelle, par exemple un incendie ou une inondation. Dans ce cas, une entreprise aura probablement un centre de données secondaire hébergé dans une autre région, ainsi qu'un sous-réseau Azure possédant ses propres services d'annuaire et DNS. Comme dans le scénario d'urgence précédent, vous pouvez rediriger vos enregistrements DNS internes et externes afin qu'ils pointent vers la batterie de serveurs SharePoint Azure. Là encore, la propagation des enregistrements DNS peut prendre un certain temps.
   
-Si vous utilisez des collections de sites nommées par l’hôte, comme recommandé dans l' [architecture et le déploiement de la collection de sites nommée par l’hôte (SharePoint 2013)](https://docs.microsoft.com/SharePoint/administration/host-named-site-collection-architecture-and-deployment), vous pouvez avoir plusieurs collections de sites hébergées par la même application Web dans votre batterie de serveurs SharePoint, avec un seul Les noms DNS (par exemple `http://sales.contoso.com` , `http://marketing.contoso.com`et). Dans ce cas, vous pouvez créer des enregistrements DNS pour chaque collection de sites qui pointe vers l'adresse IP de votre cluster. Lorsqu'une requête atteint vos serveurs web frontaux SharePoint, ces derniers acheminent chaque requête vers la collection de sites appropriée.
+Si vous utilisez des collections de sites nommées par l’hôte, comme recommandé dans l' [architecture et le déploiement de la collection de sites nommée par l’hôte (SharePoint 2013)](https://docs.microsoft.com/SharePoint/administration/host-named-site-collection-architecture-and-deployment), vous pouvez avoir plusieurs collections de sites hébergées par la même application Web dans votre `https://sales.contoso.com` batterie `https://marketing.contoso.com`de serveurs SharePoint, avec des noms DNS uniques (par exemple, et). Dans ce cas, vous pouvez créer des enregistrements DNS pour chaque collection de sites qui pointe vers l'adresse IP de votre cluster. Lorsqu'une requête atteint vos serveurs web frontaux SharePoint, ces derniers acheminent chaque requête vers la collection de sites appropriée.
   
 ## <a name="microsoft-proof-of-concept-environment"></a>Environnement de preuve de concept Microsoft
 
@@ -612,7 +612,7 @@ Import-module activedirectory
 
 ```
 
-### <a name="availability-group-creation-fails-at-starting-the-alwaysonhealth-xevent-session-on-server-name"></a>Échec de la création du groupe de disponibilité au démarrage de la session XEvent « AlwaysOn_health » sur « <server name> »
+### <a name="availability-group-creation-fails-at-starting-the-alwayson_health-xevent-session-on-server-name"></a>Échec de la création du groupe de disponibilité au démarrage de la session XEvent « AlwaysOn_health » sur « <server name> »
 
 Veillez à ce que l'état des deux nœuds de votre cluster de basculement soit « En cours » et non « En pause » ou « Arrêté ». 
   

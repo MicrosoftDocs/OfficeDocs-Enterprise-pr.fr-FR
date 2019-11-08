@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid:
 - MET150
 description: Découvrez les recommandations en matière de performances pour les sites modernes dans SharePoint Online.
-ms.openlocfilehash: 0f54520faaefcdfc66d10430c8d2a646696fc52b
-ms.sourcegitcommit: 74b6d9fc3ce0873e8564fc4de51fe3afeb122447
+ms.openlocfilehash: 2ff7f76a943563644403f3df2b6b0a6ee9b28d53
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441071"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031269"
 ---
 # <a name="sharepoint-online-modern-portal-site-limits"></a>Limites des sites portail modernes SharePoint Online
 
@@ -42,7 +42,7 @@ La plupart des instructions de cet article se concentrent sur la minimisation et
 
 ## <a name="modern-portal-site-limits-and-recommendations"></a>Limites et recommandations des sites portail modernes
 
-|**Limite**|**Valeur maximale recommandée**|**Notes**|
+|**Limite**|**Valeur maximale recommandée**|**Remarques**|
 |:-----|:-----|:-----|:-----|
 |Pages et Actualités  <br/> |5 000 par site  <br/> |Nous vous recommandons de limiter le nombre de pages et d’éléments d’actualité dans un site portail moderne à la limite de 5 000.  <br/> |
 |Composants WebPart sur une page  <br/> |20 par page  <br/> |Nous vous recommandons d’utiliser au moins 20 composants WebPart totaux par page, y compris les composants WebPart Microsoft et les composants WebPart personnalisés. <br/> Pour plus d’informations, consultez la rubrique [optimiser les performances des composants WebPart dans les pages de site modernes SharePoint Online](modern-web-part-optimization.md).  <br/> |
@@ -52,7 +52,7 @@ La plupart des instructions de cet article se concentrent sur la minimisation et
 |Taille maximale de l’image  <br/> |300 Ko par image  <br/> |Nous vous recommandons de limiter la taille des images à 300kb ou plus petite, et d’utiliser un CDN pour héberger des images, des feuilles de style et des scripts. <br/>Pour plus d’informations, consultez la rubrique [optimize images in SharePoint Online Modern site pages](modern-image-optimization.md) et [utilisation du réseau de distribution de contenu (CDN) Office 365 avec SharePoint Online](use-office-365-cdn-with-spo.md).  <br/> |
 |Utilisateurs disposant de droits de modification  <br/> |200 utilisateurs par site  <br/> |Les sites portail SharePoint sont optimisés pour l’affichage et l’utilisation de contenu. Les autorisations de modification sur un portail doivent être limitées à un groupe d’utilisateurs restreint car les autorisations de modification téléchargent des contrôles supplémentaires et s’exécutent donc plus lentement pour ces utilisateurs. Un nombre excessif d’utilisateurs disposant d’autorisations de modification a donc une incidence sur l’expérience globale. <br/> |
 |IFrames tiers  <br/> |2 par page  <br/> |les iFrames sont lents de manière imprévisible, car ils chargent une page externe distincte, y compris tout le contenu associé tel que JavaScript, CSS et les éléments d’infrastructure. Si vous devez utiliser des iFrames, limitez leur nombre à 2 ou moins par page.<br/> Pour plus d’informations, reportez-vous à la rubrique [optimize iframes in SharePoint Online Modern and Classic Publishing site pages](modern-iframe-optimization.md). <br/> |
-|Appels au service UPA  <br/> |1 par utilisateur et par heure  <br/> |Nous vous recommandons de ne pas passer par appel de _requête_ au service UPA (application de profil utilisateur). L' [API Microsoft Graph](https://docs.microsoft.com/en-us/graph/call-api) et le [PageContext](https://docs.microsoft.com/en-us/javascript/api/sp-page-context/pagecontext?view=sp-typescript-latest) peuvent être utilisés pour rechercher des informations utilisateur.  <br/> Si un appel de service UPA est nécessaire, effectuez un seul appel lorsque cela est nécessaire, puis mettez en cache les informations pour les réutiliser au cours de la même session. |
+|Appels au service UPA  <br/> |1 par utilisateur et par heure  <br/> |Nous vous recommandons de ne pas passer par appel de _requête_ au service UPA (application de profil utilisateur). L' [API Microsoft Graph](https://docs.microsoft.com/graph/call-api) et le [PageContext](https://docs.microsoft.com/javascript/api/sp-page-context/pagecontext?view=sp-typescript-latest) peuvent être utilisés pour rechercher des informations utilisateur.  <br/> Si un appel de service UPA est nécessaire, effectuez un seul appel lorsque cela est nécessaire, puis mettez en cache les informations pour les réutiliser au cours de la même session. |
 |Appels au service de taxonomie  <br/> |5 par utilisateur et par heure  <br/> |Nous vous recommandons de ne pas effectuer d’appels _par requête_ vers le service de taxonomie. Si des appels de service de taxonomie sont nécessaires, mettez en cache les informations pour les réutiliser au cours de la même session. <br/> Pour plus d’informations, consultez la rubrique [optimize Call page Calls in SharePoint Online Modern and Classic Publishing site pages](modern-page-call-optimization.md). <br/> |
 
 ## <a name="related-topics"></a>Voir aussi
@@ -63,8 +63,8 @@ La plupart des instructions de cet article se concentrent sur la minimisation et
 
 [Optimisation des performances Office 365](tune-office-365-performance.md)
 
-[Limites de SharePoint Online](https://docs.microsoft.com/en-us/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
+[Limites de SharePoint Online](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
 
-[Performances offertes par l’expérience moderne de SharePoint](https://docs.microsoft.com/en-us/sharepoint/modern-experience-performance)
+[Performances offertes par l’expérience moderne de SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-performance)
 
-[Aide relative aux performances des portails SharePoint Online](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/portal-performance)
+[Aide relative aux performances des portails SharePoint Online](https://docs.microsoft.com/sharepoint/dev/solution-guidance/portal-performance)

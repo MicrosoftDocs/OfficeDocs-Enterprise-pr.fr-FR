@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: a6d6ba01-2562-4c3d-a8f1-78748dd506cf
 description: Cet article contient des informations sur l’amélioration des performances de téléchargement de messages dans Outlook sur le Web.
-ms.openlocfilehash: a9070d9aefc8e4c223667848b4af5c06518de076
-ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
+ms.openlocfilehash: bb9a11a27af0b66f1dd557c459d1904c2e57ae92
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35616807"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030869"
 ---
 # <a name="use-lean-popouts-to-reduce-memory-used-when-reading-mail-messages"></a>Utiliser le la messagerie instantanée épuré pour réduire la mémoire utilisée lors de la lecture des messages électroniques
 
@@ -28,29 +28,29 @@ En tant qu’administrateur général Office 365, vous pouvez configurer Outlook
 > [!NOTE]
 > Depuis le 2018 mars, le la messagerie instantanée épuré n’est actuellement pas disponible pour les messages qui spécifient des restrictions relatives aux droits d’utilisation, tels que la gestion des droits relatifs à l’information (IRM). 
   
-Ces fonctionnalités continueront à fonctionner dans la fenêtre principale, mais ne sont pas disponibles dans le la messagerie instantanée épuré:
+Ces fonctionnalités continueront à fonctionner dans la fenêtre principale, mais ne sont pas disponibles dans le la messagerie instantanée épuré :
   
-- Compléments Outlook
+- Compléments Outlook
     
 - Présence de Skype entreprise
     
  **Pour configurer le Lean la messagerie instantanée pour tous les utilisateurs au sein de votre organisation Office 365**
   
-1. [Connectez-vous à Exchange Online à l’aide de Remote PowerShell](http://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx ).
+1. [Connectez-vous à Exchange Online à l’aide de Remote PowerShell](https://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx ).
     
-2. Exécutez la cmdlet [Set-OrganizationConfig](https://technet.microsoft.com/library/aa997443%28v=exchg.160%29.aspx) avec le paramètre LeanPopoutEnabled comme suit: 
+2. Exécutez la cmdlet [Set-OrganizationConfig](https://technet.microsoft.com/library/aa997443%28v=exchg.160%29.aspx) avec le paramètre LeanPopoutEnabled comme suit : 
     
   ```
   Set-OrganizationConfig -LeanPopoutEnabled <$true |$false >
   ```
 
-  Par exemple, pour activer le la messagerie instantanée épuré pour tous les utilisateurs de votre organisation:
+  Par exemple, pour activer le la messagerie instantanée épuré pour tous les utilisateurs de votre organisation :
     
   ```
   Set-OrganizationConfig -LeanPopoutEnabled $true
   ```
 
-  Pour désactiver la la messagerie instantanée épurée pour tous les utilisateurs de votre organisation:
+  Pour désactiver la la messagerie instantanée épurée pour tous les utilisateurs de votre organisation :
     
   ```
   Set-OrganizationConfig -LeanPopoutEnabled $false

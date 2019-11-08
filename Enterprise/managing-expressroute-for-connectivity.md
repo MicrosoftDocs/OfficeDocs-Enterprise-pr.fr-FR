@@ -15,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
 description: ExpressRoute pour Office 365 offre un autre chemin de routage pour atteindre de nombreux services Office 365 sans avoir besoin de tout le trafic vers Internet. Bien que la connexion Internet à Office 365 soit toujours nécessaire, les itinéraires spécifiques publiés par Microsoft par le biais de BGP sur votre réseau rendent le circuit direct ExpressRoute préféré, sauf si d’autres configurations sont présentes dans votre réseau. Les trois domaines courants que vous pouvez configurer pour gérer ce routage incluent le filtrage des préfixes, la sécurité et la conformité.
-ms.openlocfilehash: 08c991deaaf1b8fa1e17addbed8a23cbfcf37b87
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 163b94bed1bf27b30a3ac8d3079d6fe70d7a1af0
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067130"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38027548"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>Gestion d’ExpressRoute pour la connectivité d’Office 365
 
@@ -35,7 +35,7 @@ Microsoft recommande que les clients acceptent tous les itinéraires BGP publié
   
 Si vous avez besoin d’une validation supplémentaire de la propriété de l’itinéraire sur l’homologation publique ExpressRoute, vous pouvez vérifier les itinéraires publiés par rapport à la liste de tous les préfixes IP IPv4 et IPv6 qui représentent les [plages d’adresses IP publiques de Microsoft](https://www.microsoft.com/download/details.aspx?id=53602). Ces plages couvrent l’espace d’adressage Microsoft complet et changent peu fréquemment, ce qui fournit un ensemble fiable de plages à filtrer, ce qui offre également une protection supplémentaire aux clients concernés par les routes appartenant à des non-Microsoft qui fuient dans leurs contexte. Si une modification est apportée, elle est effectuée le 1er du mois et le numéro de version dans la section **Détails** de la page est modifié chaque fois que le fichier est mis à jour.
   
-Il existe plusieurs raisons d’éviter l’utilisation des [URL et des plages d’adresses IP Office 365](https://aka.ms/o365endpoints) pour la génération de listes de filtres de préfixe. Notamment:
+Il existe plusieurs raisons d’éviter l’utilisation des [URL et des plages d’adresses IP Office 365](https://aka.ms/o365endpoints) pour la génération de listes de filtres de préfixe. Notamment :
   
 - Les préfixes IP d’Office 365 subissent beaucoup de modifications de façon fréquente.
 
@@ -46,10 +46,10 @@ Il existe plusieurs raisons d’éviter l’utilisation des [URL et des plages d
 | |
 |**Option**|**Complexité**|**Modifier le contrôle**|
 |:-----|:-----|:-----|
-|Accepter tous les itinéraires Microsoft  <br/> |**Faible:** Le client s’appuie sur des contrôles Microsoft pour s’assurer que tous les itinéraires sont correctement détenus.  <br/> |Aucun  <br/> |
-|Filtrage des superréseaus appartenant à Microsoft  <br/> |**Moyenne:** Le client met en œuvre des listes de filtres de préfixes résumées pour autoriser uniquement les itinéraires appartenant à Microsoft.  <br/> |Les clients doivent s’assurer que les mises à jour infréquentes sont reflétées dans les filtres d’itinéraires.  <br/> |
+|Accepter tous les itinéraires Microsoft  <br/> |**Faible :** Le client s’appuie sur des contrôles Microsoft pour s’assurer que tous les itinéraires sont correctement détenus.  <br/> |Aucun  <br/> |
+|Filtrage des superréseaus appartenant à Microsoft  <br/> |**Moyenne :** Le client met en œuvre des listes de filtres de préfixes résumées pour autoriser uniquement les itinéraires appartenant à Microsoft.  <br/> |Les clients doivent s’assurer que les mises à jour infréquentes sont reflétées dans les filtres d’itinéraires.  <br/> |
 |Filtrer les plages d’adresses IP Office 365  <br/> [!CAUTION] Non recommandé
-|**Haute:** Le client filtre les itinéraires en fonction des préfixes IP d’Office 365.  <br/> |Les clients doivent implémenter un processus de gestion des modifications robuste pour les mises à jour mensuelles.  <br/> [!CAUTION] Cette solution nécessite des modifications importantes. Les modifications non mises en œuvre dans le temps entraîneront probablement une panne de service.   |
+|**Haute :** Le client filtre les itinéraires en fonction des préfixes IP d’Office 365.  <br/> |Les clients doivent implémenter un processus de gestion des modifications robuste pour les mises à jour mensuelles.  <br/> [!CAUTION] Cette solution nécessite des modifications importantes. Les modifications non mises en œuvre dans le temps entraîneront probablement une panne de service.   |
 
 La connexion à Office 365 à l’aide d’Azure ExpressRoute repose sur des publicités BGP de sous-réseaux IP spécifiques qui représentent des réseaux sur lesquels les points de terminaison Office 365 sont déployés. En raison de la nature internationale d’Office 365 et du nombre de services qui composent Office 365, les clients ont souvent besoin de gérer les publicités qu’ils acceptent sur leur réseau. Si vous êtes préoccupé par le nombre de préfixes annoncés dans votre environnement, la fonctionnalité [communautaire BGP](https://support.office.com/article/Using-BGP-communities-in-ExpressRoute-for-Office-365-scenarios-preview-9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099) vous permet de filtrer les publicités sur un ensemble spécifique de services Office 365. Cette fonctionnalité est maintenant en aperçu.
   
@@ -70,9 +70,9 @@ Pour les contrôles ajoutés, vous pouvez utiliser le filtrage au niveau du nom 
 
 |**Option**|**Complexité**|**Modifier le contrôle**|
 |:-----|:-----|:-----|
-|Aucune restriction  <br/> |**Faible:** Le client autorise l’accès sortant non restreint à Microsoft.  <br/> |Aucun  <br/> |
-|Restrictions de port  <br/> |**Faible:** Le client limite l’accès sortant à Microsoft par les ports attendus.  <br/> |Rares.  <br/> |
-|Restrictions de nom de domaine complet  <br/> |**Haute:** Le client limite l’accès sortant à Office 365 en fonction des noms de domaine complets publiés.  <br/> |Modifications mensuelles.  <br/> |
+|Aucune restriction  <br/> |**Faible :** Le client autorise l’accès sortant non restreint à Microsoft.  <br/> |Aucun  <br/> |
+|Restrictions de port  <br/> |**Faible :** Le client limite l’accès sortant à Microsoft par les ports attendus.  <br/> |Rares.  <br/> |
+|Restrictions de nom de domaine complet  <br/> |**Haute :** Le client limite l’accès sortant à Office 365 en fonction des noms de domaine complets publiés.  <br/> |Modifications mensuelles.  <br/> |
 
 #### <a name="inbound-from-microsoft-to-customer"></a>Trafic entrant de Microsoft vers le client
   
@@ -90,7 +90,7 @@ Il existe plusieurs scénarios facultatifs qui requièrent que Microsoft initie 
 
 - [BCS SharePoint hybride](https://technet.microsoft.com/library/dn197239.aspx ).
 
-- [Skype entreprise hybride](https://technet.microsoft.com/en-us/library/jj205403.aspx) et/ou [Fédération Skype entreprise](https://technet.microsoft.com/library/skype-for-business-online-federation-and-public-im-conectivity.aspx).
+- [Skype entreprise hybride](https://technet.microsoft.com/library/jj205403.aspx) et/ou [Fédération Skype entreprise](https://technet.microsoft.com/library/skype-for-business-online-federation-and-public-im-conectivity.aspx).
 
 - [Skype entreprise, Cloud Connector](https://technet.microsoft.com/library/mt605227.aspx ).
 

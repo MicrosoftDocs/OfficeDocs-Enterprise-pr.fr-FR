@@ -11,16 +11,16 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 71636974-fb99-487c-ac67-f15e9401acba
 description: Cet article est une version texte accessible du diagramme Sites Internet dans Microsoft Azure pour SharePoint 2013.
-ms.openlocfilehash: 1d18ad73502c7e21c1c0825e3e56e4faac2a4a09
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: cf978dfb95b1f201c342889fc3dda428bb618241
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068640"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38028058"
 ---
 # <a name="accessible-diagram---internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>Diagramme accessible : sites Internet dans Microsoft Azure pour SharePoint 2013
 
-**Résumé:** Cet article est une version texte accessible du diagramme intitulé sites Internet dans Microsoft Azure pour SharePoint 2013.
+**Résumé :** Cet article est une version texte accessible du diagramme intitulé sites Internet dans Microsoft Azure pour SharePoint 2013.
   
 Cette affiche décrit et illustre la façon dont les sites Internet publics bénéficient de la flexibilité du cloud et d’Azure AD pour les comptes clients. Il existe six différents scénarios qui décrivent comment les sites Internet bénéficient d’Azure :  
   
@@ -104,9 +104,9 @@ Les trois serveurs sont configurés pour posséder tous les rôles Analyse, Admi
 
 Toutes les solutions SharePoint nécessitent les services de domaine Active Directory. À ce stade, il existe deux options pour les solutions SharePoint dans Azure.   
   
-- Option 1: domaine dédié: vous pouvez déployer un domaine dédié et isolé vers Azure pour prendre en charge une batterie de serveurs SharePoint. Il s'agit d'un bon choix pour les sites Internet destinés au public. 
+- Option 1 : domaine dédié : vous pouvez déployer un domaine dédié et isolé vers Azure pour prendre en charge une batterie de serveurs SharePoint. Il s'agit d'un bon choix pour les sites Internet destinés au public. 
     
-- Option 2: étendre le domaine local via une connexion VPN de site à site. Lorsque vous étendez le domaine local via une connexion VPN de site à site, les utilisateurs accèdent à la batterie de serveurs SharePoint comme si elle était hébergée localement. Vous pouvez tirer parti de votre implémentation Active Directory et DNS existante. 
+- Option 2 : étendre le domaine local via une connexion VPN de site à site. Lorsque vous étendez le domaine local via une connexion VPN de site à site, les utilisateurs accèdent à la batterie de serveurs SharePoint comme si elle était hébergée localement. Vous pouvez tirer parti de votre implémentation Active Directory et DNS existante. 
     
 ## <a name="design-for-identity-management-zones-and-authentication"></a>Conception de la gestion des identités, des zones et de l’authentification
 
@@ -166,7 +166,7 @@ Les utilisateurs disposant de comptes internes accèdent au locataire Azure Acti
   
 Le diagramme associé présente le scénario suivant :  
   
-Lors de l’intégration de SharePoint 2013 à Azure Active Directory, un service de contrôle d’accès Azure (ACS) a deux objectifs: 
+Lors de l’intégration de SharePoint 2013 à Azure Active Directory, un service de contrôle d’accès Azure (ACS) a deux objectifs : 
   
 -   Azure AD utilise SAML 2.0 et SharePoint fonctionne uniquement avec SAML 1.1. ACS comprend les deux formats et fait office d’intermédiaire pour transformer les formats de jeton entre SharePoint et Azure AD.   
     
@@ -198,23 +198,23 @@ URL d’application web et de site racine 
     
 Le diagramme associé représente des services de pool d’applications telles que la recherche interagissant avec les collections de sites à l’aide des applications web. Les collections de sites affichées sont les suivantes :  
   
-- Collection de sites basée sur des chemins http://internal:8000 d’accès située sur (site racine). 
+- Collection de sites basée sur des chemins https://internal:8000 d’accès située sur (site racine). 
     
-- Analyse: collections de sites nommées par l’hôte situées à une https://authoring.contoso.com:8000adresse telle que. 
+- Analyse : collections de sites nommées par l’hôte situées à une https://authoring.contoso.com:8000adresse telle que. 
     
 - Requêtes : 2 collections de sites distinctes nommées par l’hôte et situées à des adresses telles que les suivantes :  
     
-  - http://www.contoso.com 
+  - https://www.contoso.com 
     
   - https://secure.contoso.com 
     
-  - http://www.contoso.com:8000 
+  - https://www.contoso.com:8000 
     
-  - http://assets.contoso.com 
+  - https://assets.contoso.com 
     
   - https://secureassets.contoso.com 
     
-  - http://assets.contoso.com:8000 
+  - https://assets.contoso.com:8000 
     
 ## <a name="design-the-azure-environment"></a>Conception de l’environnement Azure
 

@@ -12,12 +12,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: Cet article décrit les options de navigation sites avec la publication SharePoint activée dans SharePoint Online. Le choix et la configuration de la navigation ont un impact significatif sur les performances et l’extensibilité des sites dans SharePoint Online. Cet article ne s’applique pas aux sites d’équipe classiques.
-ms.openlocfilehash: 10b4e1cbad4fbb570affe43feb6773aa59c5f2f3
-ms.sourcegitcommit: 77a25920511c54d7d613f552bdff7ad14cdd8324
+ms.openlocfilehash: fa180e1904ef57f28e512c6d6ff163f2f4a483ad
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36385202"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031259"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Options de navigation pour SharePoint Online
 
@@ -27,13 +27,13 @@ Cet article décrit les options de navigation sites avec la publication SharePoi
 
 La configuration du fournisseur de navigation peut avoir un impact significatif sur les performances de l’ensemble du site, et vous devez tenir compte de la sélection d’un fournisseur de navigation et d’une configuration qui évoluent efficacement pour les besoins d’un site SharePoint. Il existe deux fournisseurs de navigation prédéfinis, ainsi que des implémentations de navigation personnalisées.
 
-La première option, la [**navigation gérée (métadonnées)**](#using-managed-navigation-and-metadata-in-sharepoint-online), est recommandée et est l’une des options par défaut dans SharePoint Online; Toutefois, nous vous recommandons de désactiver le filtrage de sécurité, sauf en cas de nécessité. Le filtrage de sécurité est activé comme paramètre sécurisé par défaut pour ce fournisseur de navigation; Toutefois, de nombreux sites n’ont pas besoin de la charge de filtrage de sécurité, car les éléments de navigation sont souvent cohérents pour tous les utilisateurs du site. Avec la configuration recommandée pour désactiver le filtrage de sécurité, ce fournisseur de navigation ne requiert pas l’énumération de la structure du site et est hautement évolutif avec un impact acceptable sur les performances.
+La première option, la [**navigation gérée (métadonnées)**](#using-managed-navigation-and-metadata-in-sharepoint-online), est recommandée et est l’une des options par défaut dans SharePoint Online ; Toutefois, nous vous recommandons de désactiver le filtrage de sécurité, sauf en cas de nécessité. Le filtrage de sécurité est activé comme paramètre sécurisé par défaut pour ce fournisseur de navigation ; Toutefois, de nombreux sites n’ont pas besoin de la charge de filtrage de sécurité, car les éléments de navigation sont souvent cohérents pour tous les utilisateurs du site. Avec la configuration recommandée pour désactiver le filtrage de sécurité, ce fournisseur de navigation ne requiert pas l’énumération de la structure du site et est hautement évolutif avec un impact acceptable sur les performances.
 
 La deuxième option, [**navigation structurelle**](#using-structural-navigation-in-sharepoint-online), **n’est pas une option de navigation recommandée dans SharePoint Online**. Ce fournisseur de navigation a été conçu pour une topologie locale a une prise en charge limitée dans SharePoint Online. Bien qu’il fournisse des fonctionnalités supplémentaires par rapport aux autres options de navigation, ces fonctionnalités, y compris le filtrage de sécurité et l’énumération de la structure de site, ont un coût d’appels serveur excessifs et ont un impact sur l’évolutivité et les performances lorsqu’elles sont utilisées. Les sites qui utilisent la navigation structurée qui consomment des ressources excessives peuvent être soumis à la limitation.
 
 En plus des fournisseurs de navigation prédéfinis, de nombreux clients ont implémenté les autres implémentations de navigation personnalisées. Une classe commune de mises en œuvre de navigation personnalisée comporte des modèles de conception affichés par le client qui stockent un cache local de nœuds de navigation. (Voir **[script côté client](#using-search-driven-client-side-scripting)** basé sur la recherche dans cet article.)
 
-Ces fournisseurs de navigation présentent quelques avantages clés: 
+Ces fournisseurs de navigation présentent quelques avantages clés : 
 - Elles fonctionnent généralement bien avec des conceptions de pages réactives.
 - Elles sont extrêmement évolutives et performantes, car elles peuvent être rendues sans coût de ressource (et actualiser en arrière-plan après un délai d’expiration). 
 - Ces fournisseurs de navigation peuvent extraire des données de navigation à l’aide de différentes stratégies, allant de simples configurations statiques à différents fournisseurs de données dynamiques. 
@@ -56,7 +56,7 @@ L’option la plus appropriée pour votre site dépend de vos besoins en matièr
 
 L’option de navigation gérée peut être gérée par le biais de la configuration, n’implique pas de fichiers de personnalisation de code, et elle est beaucoup plus rapide que la navigation structurelle. Si vous avez besoin d’un filtrage de sécurité et que vous êtes familiarisé à l’utilisation d’une page maître personnalisée et que vous disposez d’une fonctionnalité dans l’Organisation pour conserver les modifications susceptibles de se produire dans la page maître par défaut pour SharePoint Online, l’option de recherche peut produire une meilleure expérience utilisateur. Si vous avez des exigences plus complexes, un fournisseur de navigation personnalisé peut être le bon choix. La navigation structurelle n’est pas recommandée.
 
-Enfin, il est important de noter que SharePoint ajoute des fournisseurs de navigation et des fonctionnalités supplémentaires pour les architectures de sites SharePoint modernes exploitant une hiérarchie de sites plus aplatie et un modèle Hub-and-spoke avec des sites hub SharePoint. Cela permet de réaliser de nombreux scénarios qui ne nécessitent pas l’utilisation de la fonctionnalité de publication SharePoint, et ces configurations de navigation sont optimisées pour l’extensibilité et la latence dans SharePoint Online. Notez que le fait d’appliquer le même principe: simplifier la structure globale de votre site de publication SharePoint en une structure plus plat, permet souvent d’obtenir des performances globales et de l’adapter. Cela signifie qu’au lieu d’avoir une seule collection de sites avec des centaines de sites (sous-sites Web), une meilleure approche consiste à avoir de nombreuses collections de sites avec très peu de sous-sites (sous-sites Web).
+Enfin, il est important de noter que SharePoint ajoute des fournisseurs de navigation et des fonctionnalités supplémentaires pour les architectures de sites SharePoint modernes exploitant une hiérarchie de sites plus aplatie et un modèle Hub-and-spoke avec des sites hub SharePoint. Cela permet de réaliser de nombreux scénarios qui ne nécessitent pas l’utilisation de la fonctionnalité de publication SharePoint, et ces configurations de navigation sont optimisées pour l’extensibilité et la latence dans SharePoint Online. Notez que le fait d’appliquer le même principe : simplifier la structure globale de votre site de publication SharePoint en une structure plus plat, permet souvent d’obtenir des performances globales et de l’adapter. Cela signifie qu’au lieu d’avoir une seule collection de sites avec des centaines de sites (sous-sites Web), une meilleure approche consiste à avoir de nombreuses collections de sites avec très peu de sous-sites (sous-sites Web).
 
 
 ## <a name="using-managed-navigation-and-metadata-in-sharepoint-online"></a>Utilisation de la navigation gérée et des métadonnées dans SharePoint Online
@@ -99,7 +99,7 @@ Pour analyser les performances d’une page SharePoint, utilisez l’onglet **r�
   
 1. Dans l’onglet **réseau** , cliquez sur la page. aspx en cours de chargement, puis cliquez sur l’onglet **Détails** .<br/> ![Capture d’écran montrant l’onglet Détails](media/ad85cefb-7bc5-4932-b29c-25f61b4ceeb2.png)<br/>
 2. Cliquez sur **en-têtes de réponse**. <br/>![Capture d’écran de l’onglet Détails](media/c47770ac-5b2b-4941-9830-c57565dec4cc.png)<br/>SharePoint renvoie des informations de diagnostic utiles dans ses en-têtes de réponse. 
-3. L’un des éléments d’information les plus utiles est **SPRequestDuration** , qui est la valeur, en millisecondes, de la durée de traitement d’une demande sur le serveur. Dans la capture d’écran suivante, les **sous-sites** ne sont pas vérifiés pour la navigation structurelle. Cela signifie qu’il n’existe qu’un lien de collection de sites dans la navigation globale:<br/>![Capture d’écran montrant le temps de chargement en tant que durée de la demande](media/3422b2e8-15ec-4bb9-ba86-0965b6b49b01.png)<br/>
+3. L’un des éléments d’information les plus utiles est **SPRequestDuration** , qui est la valeur, en millisecondes, de la durée de traitement d’une demande sur le serveur. Dans la capture d’écran suivante, les **sous-sites** ne sont pas vérifiés pour la navigation structurelle. Cela signifie qu’il n’existe qu’un lien de collection de sites dans la navigation globale :<br/>![Capture d’écran montrant le temps de chargement en tant que durée de la demande](media/3422b2e8-15ec-4bb9-ba86-0965b6b49b01.png)<br/>
 4. La valeur de la clé **SPRequestDuration** est de 245 millisecondes. Cela représente le temps nécessaire pour retourner la demande. Étant donné qu’il n’existe qu’un seul élément de navigation sur le site, il s’agit d’un point de référence adapté à la façon dont SharePoint Online effectue la navigation. La capture d’écran suivante montre comment l’ajout dans les sous-sites affecte cette clé.<br/>![Capture d’écran montrant une durée de demande de 2502 ms](media/618ee4e9-2ffa-4a22-b638-fa77b72292b8.png)<br/>
   
 L’ajout des sous-sites a considérablement augmenté le temps nécessaire pour renvoyer la demande de page pour cet exemple de site relativement simple. Les hiérarchies de sites complexes, y compris les pages de navigation, ainsi que d’autres options de configuration et de topologie, peuvent considérablement augmenter cet impact.
@@ -110,13 +110,13 @@ L’ajout des sous-sites a considérablement augmenté le temps nécessaire pour
 
 Cette approche implique la création d’une page maître personnalisée et le remplacement du code de navigation par des éléments HTML personnalisés. Suivez cette procédure décrite dans l’exemple suivant pour remplacer le code de navigation dans le `seattle.html`fichier. Dans cet exemple, vous ouvrez le `seattle.html` fichier et remplacez l’intégralité de l' `id=”DeltaTopNavigation”` élément par du code HTML personnalisé.
 
-### <a name="example-replace-the-out-of-the-box-navigation-code-in-a-master-page"></a>Exemple: remplacer le code de navigation prédéfinie dans une page maître
+### <a name="example-replace-the-out-of-the-box-navigation-code-in-a-master-page"></a>Exemple : remplacer le code de navigation prédéfinie dans une page maître
 
 1.  Accédez à la page Paramètres du site.
 2.  Ouvrez la Galerie de pages maîtres en cliquant sur **pages maîtres**.
 3.  À partir de là, vous pouvez naviguer dans la bibliothèque et `seattle.master`Télécharger le fichier.
 4.  Modifiez le code à l’aide d’un éditeur de texte et supprimez le bloc de code dans la capture d’écran suivante.<br/>![Supprimer le bloc de code affiché](media/SPONavOptionsDeleteCodeBlock.png)<br/>
-5. Supprimez le code entre `<SharePoint:AjaxDelta id=”DeltaTopNavigation”>` les `<\SharePoint:AjaxDelta>` balises et remplacez-le par l’extrait de code suivant:<br/>
+5. Supprimez le code entre `<SharePoint:AjaxDelta id=”DeltaTopNavigation”>` les `<\SharePoint:AjaxDelta>` balises et remplacez-le par l’extrait de code suivant :<br/>
 
 ```
 <div id="loading">
@@ -187,13 +187,13 @@ Cette approche implique la création d’une page maître personnalisée et le r
 ```
 <br/>
 6. Remplacez l’URL de la balise d’ancrage de l’image de chargement au début, par un lien vers une image de chargement dans votre collection de sites. Une fois les modifications apportées, renommez le fichier, puis téléchargez-le dans la Galerie de pages maîtres. Cela génère un nouveau fichier. Master.<br/>
-7. Ce code HTML est le balisage de base qui sera rempli par les résultats de recherche renvoyés par le code JavaScript. Vous devrez modifier le code pour modifier la valeur de var root = "URL de la collection de sites", comme illustré dans l’extrait de code suivant:<br/>
+7. Ce code HTML est le balisage de base qui sera rempli par les résultats de recherche renvoyés par le code JavaScript. Vous devrez modifier le code pour modifier la valeur de var root = "URL de la collection de sites", comme illustré dans l’extrait de code suivant :<br/>
 
 ```
 var root = “https://spperformance.sharepoint.com/sites/NavigationBySearch”;
 ```
 <br/>
-8. Les résultats sont attribués au tableau self. Nodes et une hiérarchie est créée à partir des objets à l’aide de Linq. js assignant la sortie à un tableau self. Hierarchy. Ce tableau est l’objet lié au code HTML. Cette opération est exécutée dans la fonction toggleView () en transmettant l’objet Self à la fonction Ko. applyBinding ().<br/>Ainsi, le tableau de hiérarchie est lié au code HTML suivant:<br/>
+8. Les résultats sont attribués au tableau self. Nodes et une hiérarchie est créée à partir des objets à l’aide de Linq. js assignant la sortie à un tableau self. Hierarchy. Ce tableau est l’objet lié au code HTML. Cette opération est exécutée dans la fonction toggleView () en transmettant l’objet Self à la fonction Ko. applyBinding ().<br/>Ainsi, le tableau de hiérarchie est lié au code HTML suivant :<br/>
 
 ```
 <div data-bind=”foreach: hierarchy” class=”noindex ms-core-listMenu-horizontalBox”>
@@ -205,7 +205,7 @@ Dans notre exemple de navigation complexe, un chargement de page récent sans mi
 
 ### <a name="about-the-javascript-file"></a>À propos du fichier JavaScript...
 
-L’intégralité du fichier JavaScript se présente comme suit:
+L’intégralité du fichier JavaScript se présente comme suit :
 
 ```
 //Models and Namespaces
@@ -450,15 +450,15 @@ Les objets sont ensuite placés dans un tableau de résultats. Ce tableau est an
 
 ### <a name="benefits-of-this-approach"></a>Avantages de cette approche
 
-L’un des principaux avantages de [cette approche](#example-replace-the-out-of-the-box-navigation-code-in-a-master-page) est qu’en utilisant le stockage local HTML5, la navigation est stockée localement pour l’utilisateur lors du prochain chargement de la page. Nous obtenons des améliorations majeures en matière de performances à l’aide de l’API de recherche pour la navigation structurelle; Toutefois, il prend certaines capacités techniques pour exécuter et personnaliser cette fonctionnalité. 
+L’un des principaux avantages de [cette approche](#example-replace-the-out-of-the-box-navigation-code-in-a-master-page) est qu’en utilisant le stockage local HTML5, la navigation est stockée localement pour l’utilisateur lors du prochain chargement de la page. Nous obtenons des améliorations majeures en matière de performances à l’aide de l’API de recherche pour la navigation structurelle ; Toutefois, il prend certaines capacités techniques pour exécuter et personnaliser cette fonctionnalité. 
 
-Dans l' [exemple d’implémentation](#example-replace-the-out-of-the-box-navigation-code-in-a-master-page), les sites sont triés de la même manière que la navigation structurelle prédéfinie; ordre alphabétique. Si vous souhaitez vous en écarter, il serait plus compliqué de développer et de gérer. Cette approche nécessite également de s’écarter des pages maîtres prises en charge. Si la page maître personnalisée n’est pas conservée, votre site se déplacera sur les mises à jour et les améliorations que Microsoft apporte aux pages maîtres.
+Dans l' [exemple d’implémentation](#example-replace-the-out-of-the-box-navigation-code-in-a-master-page), les sites sont triés de la même manière que la navigation structurelle prédéfinie ; ordre alphabétique. Si vous souhaitez vous en écarter, il serait plus compliqué de développer et de gérer. Cette approche nécessite également de s’écarter des pages maîtres prises en charge. Si la page maître personnalisée n’est pas conservée, votre site se déplacera sur les mises à jour et les améliorations que Microsoft apporte aux pages maîtres.
 
-Le [code ci-dessus](#about-the-javascript-file) présente les dépendances suivantes:
+Le [code ci-dessus](#about-the-javascript-file) présente les dépendances suivantes :
 
-- jQueryhttp://jquery.com/
-- KnockoutJS -http://knockoutjs.com/
-- Linq. js- http://linqjs.codeplex.com/ou github.com/neuecc/Linq.js
+- jQueryhttps://jquery.com/
+- KnockoutJS -https://knockoutjs.com/
+- Linq. js- https://linqjs.codeplex.com/ou github.com/neuecc/Linq.js
 
 La version actuelle de LinqJS ne contient pas la méthode ByHierarchy utilisée dans le code ci-dessus et rompt le code de navigation. Pour résoudre ce problème, ajoutez la méthode suivante au fichier Linq. js avant la ligne `Flatten: function ()`.
 
@@ -525,7 +525,7 @@ ByHierarchy: function(firstLevel, connectBy, orderBy, ascending, parent) {
 
 ```
   
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Vue d'ensemble de la navigation gérée dans SharePoint Server](https://docs.microsoft.com/sharepoint/administration/overview-of-managed-navigation)
 

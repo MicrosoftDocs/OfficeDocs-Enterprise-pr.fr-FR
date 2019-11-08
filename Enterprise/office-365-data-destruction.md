@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Vue d’ensemble des stratégies Microsoft relatives au recyclage, à la suppression ou à la destruction des lecteurs de disque et serveurs des centres de données Office 365.
-ms.openlocfilehash: 41971cc690d0e1560f2cf7f5bc3ad544e8dab5c6
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 1fca278dd23e84db2c6591eefc45d0b75265cf17
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067343"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032089"
 ---
 # <a name="office-365-data-destruction"></a>Destruction des données Office 365
 
 ## <a name="physical-data-destruction"></a>Destruction de données physiques
 
-Microsoft propose des stratégies standard de gestion des données qui traite du recyclage et de la suppression des disques durs et des serveurs ayant échoué ou remis à niveau. Avant de réutiliser des lecteurs de disque Office 365, Microsoft effectue un processus de nettoyage physique compatible avec le National Institute of Standards and Technology Special Publication 800-88 ([NIST SP 800-88 Guidelines for Media assainiing](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r1.pdf)). Étant donné que tous les lecteurs de disque dans Office 365 sont chiffrés à l’aide du chiffrement au niveau du volume BitLocker, l’effacement compatible avec NIST SP 800-88 n’est pas techniquement nécessaire. Néanmoins, Microsoft procède à ce processus.
+Microsoft propose des stratégies standard de gestion des données qui traite du recyclage et de la suppression des disques durs et des serveurs ayant échoué ou remis à niveau. Avant de réutiliser des lecteurs de disque Office 365, Microsoft effectue un processus de nettoyage physique compatible avec le National Institute of Standards and Technology Special Publication 800-88 ([NIST SP 800-88 Guidelines for Media assainiing](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r1.pdf)). Étant donné que tous les lecteurs de disque dans Office 365 sont chiffrés à l’aide du chiffrement au niveau du volume BitLocker, l’effacement compatible avec NIST SP 800-88 n’est pas techniquement nécessaire. Néanmoins, Microsoft procède à ce processus.
 
 Les disques défaillants utilisés dans les centres de 365 Office sont physiquement détruits et audités via le processus ISO. Le type d’élément détermine les moyens de destruction appropriés. Pour les disques durs qui ne peuvent pas être effacés, Microsoft utilise un processus de destruction pour détruire le support et rendre impossible la récupération des informations. Par exemple, les disques sont physiquement détruits, pulvérisés ou incinérés. Microsoft conserve tous les enregistrements de la destruction et effectue un processus de nettoyage similaire sur les serveurs réutilisés dans Office 365. Ces instructions englobent la désinfection électronique et physique.
 
@@ -32,8 +32,8 @@ Chaque centre de session utilise un processus de destruction physique sur site p
 
 Dans le processus de destruction des données, les disques sont effacés conformément à l’Institut NIST 800-88 (si possible), puis placés dans un broyeur industriel et physiquement Demolished. Microsoft gère les responsabilités pour les biens quittant le centre de recherche à l’aide de l’Institut NIST SP 800-88 cohérent de nettoyage/Purge des ressources, de destruction des biens, de chiffrement, d’inventaire, de suivi et de protection de la chaîne de conservation pendant le transport. Ce processus est contrôlé via une télévision de circuit fermé et un certificat de destruction est émis au terme de l’opération.
 
-Microsoft utilise les unités d’effacement des données des protocoles EPS ( [Extreme Protocol solutions](http://www.enterprisedataerasure.com/) ). Le logiciel EPS prend en charge la configuration requise pour le SP 800-88 pour le nettoyage et la purge et l’effacement sécurisé. Avant de procéder au nettoyage ou à la destruction, un inventaire est créé par le gestionnaire de ressources Microsoft. Si un fournisseur est utilisé pour la destruction, le fournisseur fournit un certificat de destruction pour chaque ressource détruite, qui est validée par le gestionnaire des biens.
+Microsoft utilise les unités d’effacement des données des protocoles EPS ( [Extreme Protocol solutions](https://www.enterprisedataerasure.com/) ). Le logiciel EPS prend en charge la configuration requise pour le SP 800-88 pour le nettoyage et la purge et l’effacement sécurisé. Avant de procéder au nettoyage ou à la destruction, un inventaire est créé par le gestionnaire de ressources Microsoft. Si un fournisseur est utilisé pour la destruction, le fournisseur fournit un certificat de destruction pour chaque ressource détruite, qui est validée par le gestionnaire des biens.
 
 ## <a name="virtual-data-destruction"></a>Destruction de données virtuelles
 
-Microsoft possède des stratégies de gestion de données et des procédures qui traitent de la destruction virtuelle efficace des données afin de se protéger contre le partage possible des données entre les locataires de services ou être accessibles après suppression définitive du service. Les données supprimées du service dans un seul client ne sont pas accessibles à un autre client de service, même si l’un des stockages physiques sous-jacents est réaffecté. Il s’agit d’un résultat des effets composés de plusieurs technologies de virtualisation et de fragmentation utilisées pour mettre à l’évolution des environnements virtuels, les comportements de suppression actifs des applications au sein de chaque client de service (par exemple, la mise à [zéro de page](https://docs.microsoft.com/office365/securitycompliance/office-365-exchange-online-data-deletion#page-zeroing)) et le processus de chiffrement de contenu multimédia et de contenu d’application.
+Microsoft possède des stratégies de gestion de données et des procédures qui traitent de la destruction virtuelle efficace des données afin de se protéger contre le partage possible des données entre les locataires de services ou être accessibles après suppression définitive du service. Les données supprimées du service dans un seul client ne sont pas accessibles à un autre client de service, même si l’un des stockages physiques sous-jacents est réaffecté. Il s’agit d’un résultat des effets composés de plusieurs technologies de virtualisation et de fragmentation utilisées pour mettre à l’évolution des environnements virtuels, les comportements de suppression actifs des applications au sein de chaque client de service (par exemple, la mise à [zéro de page](https://docs.microsoft.com/office365/securitycompliance/office-365-exchange-online-data-deletion#page-zeroing)), ainsi que les processus de chiffrement de contenu multimédia et d’application requis.

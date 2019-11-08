@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
 description: 'Découvrez comment ajouter plusieurs utilisateurs à Office 365 pour les entreprises à partir d’une liste dans une feuille de calcul ou dans un autre fichier au format CSV. Regardez une vidéo sur YouTube qui explique comment ajouter des comptes à Office 365. À la fin de ce processus, chaque utilisateur disposant d’un compte dispose d’une boîte aux lettres Office 365. '
-ms.openlocfilehash: ece3cc6f207b5c0caaa03880da925eb3b6ac2c5b
-ms.sourcegitcommit: 6c3003380491fba6dacb299754716901c20ba629
+ms.openlocfilehash: a719b2626eada8abe225a6951af4a2d292667856
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "36198656"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030728"
 ---
 # <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>Ajouter plusieurs utilisateurs simultanément à Office 365 - Aide de l’administrateur
 
@@ -39,7 +39,7 @@ ms.locfileid: "36198656"
 
 1. Connectez-vous à Office 365 avec votre compte professionnel ou scolaire. 
     
-2. Dans le centre d’administration, **** \> choisissez utilisateurs **actifs**.
+2. Dans le centre d’administration, **Choisissez** \> utilisateurs **actifs**.
     
     ![Dans le centre d’administration, sélectionnez utilisateurs, puis utilisateurs actifs.](media/12086d98-a8b4-4c48-89cf-b78ad8058ff1.png)
   
@@ -96,7 +96,7 @@ ms.locfileid: "36198656"
 
 Un fichier CSV inclut des valeurs séparées par des virgules. Vous pouvez créer ou modifier un fichier comme celui-ci avec un éditeur de texte ou un tableur comme Excel.
   
-Vous pouvez télécharger [cet exemple de feuille de calcul](https://www.microsoft.com/en-us/download/details.aspx?id=45485) pour commencer. Rappelez-vous qu'Office 365 nécessite des en-têtes de colonne dans la première ligne, aussi ne les remplacez pas par d'autres informations. 
+Vous pouvez télécharger [cet exemple de feuille de calcul](https://www.microsoft.com/download/details.aspx?id=45485) pour commencer. Rappelez-vous qu'Office 365 nécessite des en-têtes de colonne dans la première ligne, aussi ne les remplacez pas par d'autres informations. 
   
 Enregistrez le fichier avec un nouveau nom et spécifiez le format CSV.
   
@@ -147,7 +147,7 @@ Une fois le fichier enregistré, il est probable qu'un message indiquant que cer
     
 ## <a name="add-multiple-users-to-office-365-in-the-old-admin-center"></a>Ajouter plusieurs utilisateurs à Office 365 dans l’ancien centre d’administration
 
-1. Téléchargez [cet exemple de feuille de calcul](https://www.microsoft.com/en-us/download/details.aspx?id=45485) et ouvrez-la dans Excel. 
+1. Téléchargez [cet exemple de feuille de calcul](https://www.microsoft.com/download/details.aspx?id=45485) et ouvrez-la dans Excel. 
     
     Votre feuille de calcul doit inclure les **mêmes en-têtes de colonne** que ceux de l'exemple (Nom d'utilisateur, Prénom, etc.). Si vous utilisez le modèle, laissez les données de la ligne 1 inchangées et entrez uniquement des données dans la ligne 2 et les lignes suivantes. 
     

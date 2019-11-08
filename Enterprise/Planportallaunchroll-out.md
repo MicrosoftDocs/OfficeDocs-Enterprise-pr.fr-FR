@@ -11,15 +11,15 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365
 search.appverid: SPO160
 description: Cet article explique comment planifier le lancement de votre portail dans SharePoint Online et les étapes à suivre pour réussir le lancement de votre portail.
-ms.openlocfilehash: 8985ffb4b477ee70f0bf35489ce48fd72f8e4c86
-ms.sourcegitcommit: 739024fe2862ab646b36e218b57c5cc16ebe7892
+ms.openlocfilehash: cbb2c58498f682d68ac464d224522361a085b062
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37422154"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38027658"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>Planification de votre plan de déploiement de lancement de portail dans SharePoint Online
-Un portail est le site SharePoint par défaut pour votre société ; dans les grandes organisations, il peut y en avoir plusieurs. Si vous prévoyez plus de 20% de vos utilisateurs au sein de votre organisation pour accéder à la page, vous devez tenir compte d’une page de portail. Cela ne doit pas être confondu avec un site d’équipe que votre service utilise pour collaborer et partager des documents au sein de votre équipe.
+Un portail est le site SharePoint par défaut pour votre société ; dans les grandes organisations, il peut y en avoir plusieurs. Vous pouvez considérer qu’il s’agit d’une page de portail à partir du moment où vous vous attendez à ce que plus de 20 % des utilisateurs au sein de votre entreprise accèdent à cette page. Le portail ne doit pas être confondu avec un site d’équipe utilisé par votre service pour collaborer et partager des documents au sein de votre équipe.
 
 Cet article explique comment planifier votre déploiement et déployer un plan de déploiement vers SharePoint Online. Elle fournit également des approches de suivi de la charge traditionnelle qui ne sont pas autorisées sur SharePoint Online. SharePoint Online est un service Cloud et les capacités de chargement, l’intégrité et l’équilibre global de la charge dans le service sont gérées par Microsoft.
 
@@ -28,14 +28,14 @@ Pour vous aider à créer un portail réussi, suivez les principes de base, prat
 L’approche de déploiement est mise en évidence ci-dessous.
 
 ## <a name="overview-of-capacity-planning-in-sharepoint-online"></a>Vue d’ensemble de la planification de la capacité dans SharePoint Online
-Afin d’utiliser efficacement la capacité et de faire face à une croissance inattendue, nous avons Automation dans n’importe quelle batterie de serveurs pour suivre certains scénarios d’utilisation. Bien que la croissance exacte ne soit pas prévisible pour un seul client dans une batterie de serveurs, la somme agrégée des demandes est prévisible dans le temps. En identifiant les tendances de croissance dans SharePoint Online, nous pouvons planifier une expansion future. Pour plus d’informations sur la planification de la [capacité et le test de charge SharePoint Online](https://docs.microsoft.com/en-us/office365/enterprise/capacity-planning-and-load-testing-sharepoint-online).
+Afin d’utiliser efficacement la capacité et de faire face à une croissance inattendue, nous avons Automation dans n’importe quelle batterie de serveurs pour suivre certains scénarios d’utilisation. Bien que la croissance exacte ne soit pas prévisible pour un seul client dans une batterie de serveurs, la somme agrégée des demandes est prévisible dans le temps. En identifiant les tendances de croissance dans SharePoint Online, nous pouvons planifier une expansion future. Pour plus d’informations sur la planification de la [capacité et le test de charge SharePoint Online](https://docs.microsoft.com/office365/enterprise/capacity-planning-and-load-testing-sharepoint-online).
 
 Une partie essentielle du lancement réussi est l’approche « vague » ou « déploiement échelonné » décrite ci-dessous. 
 
 ## <a name="can-i-load-test-sharepoint-online"></a>Puis-je charger SharePoint Online de test ?
 SharePoint Online est un environnement partagé qui est réparti entre les batteries de serveurs et la mise à l’échelle est ajusté de façon continue. Test de charge d’un environnement, tel que SharePoint Online, dont l’évolution continue entraîne non seulement des résultats inattendus, mais ce n’est pas autorisé. 
 
-En savoir plus : [planification de la capacité et test de charge SharePoint Online](https://docs.microsoft.com/en-us/office365/enterprise/capacity-planning-and-load-testing-sharepoint-online)
+En savoir plus : [planification de la capacité et test de charge SharePoint Online](https://docs.microsoft.com/office365/enterprise/capacity-planning-and-load-testing-sharepoint-online)
 
 ## <a name="optimize-pages-by-following-recommended-guidelines"></a>Optimiser les pages en suivant les recommandations recommandées
 Les pages d’un déploiement sur site ne doivent pas simplement être déplacées, car elles se trouvent sur SharePoint Online sans les consulter par rapport aux recommandations pour SharePoint Online. La meilleure approche consiste à toujours optimiser une page d’accueil pour n’importe quel site ou portail dans SharePoint, car c’est ici que la plupart des utilisateurs de votre organisation auront accès comme point de départ pour vos sites.

@@ -14,12 +14,12 @@ ms.custom:
 - PowerShell
 ms.assetid: b23dda88-f137-4051-9c2c-84035ad63f5e
 description: Résumé :Utilisez Office 365 PowerShell pour gérer Microsoft Exchange Online, y compris la configuration des boîtes aux lettres et la création de rapports avancée.
-ms.openlocfilehash: f60c28be58796d16d4b04e42e421ed97475cc8e0
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 06524431ee98a0f5119544da9278d8c672155fd9
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068960"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031009"
 ---
 # <a name="manage-exchange-online-with-office-365-powershell"></a>Gestion d’Exchange Online avec Office 365 PowerShell
 
@@ -27,11 +27,11 @@ ms.locfileid: "34068960"
   
 L’une des principales tâches d’un administrateur Microsoft Exchange Online est la gestion des boîtes aux lettres et l’obtention de rapports sur celles-ci. Bien que vous puissiez effectuer certaines de ces tâches dans le Centre d’administration Microsoft 365, d’autres tâches sont beaucoup plus rapides et plus simples à exécuter dans Office 365 PowerShell. Pour plus d’informations, consultez les rubriques suivantes :
   
-- [Afficher des informations de boîte aux lettres Exchange Online avec Office 365 PowerShell](https://technet.microsoft.com/en-us/library/mt771881%28v=exchg.160%29.aspx)
+- [Afficher des informations de boîte aux lettres Exchange Online avec Office 365 PowerShell](https://technet.microsoft.com/library/mt771881%28v=exchg.160%29.aspx)
     
-- [Afficher les rapports Exchange Online avec Office 365 PowerShell](https://technet.microsoft.com/en-us/library/mt771882%28v=exchg.160%29.aspx)
+- [Afficher les rapports Exchange Online avec Office 365 PowerShell](https://technet.microsoft.com/library/mt771882%28v=exchg.160%29.aspx)
     
-- [Déterminer les cmdlets disponibles pour les administrateurs Exchange Online avec Office 365 PowerShell](https://technet.microsoft.com/en-us/library/mt771883%28v=exchg.160%29.aspx)
+- [Déterminer les cmdlets disponibles pour les administrateurs Exchange Online avec Office 365 PowerShell](https://technet.microsoft.com/library/mt771883%28v=exchg.160%29.aspx)
     
 ## <a name="see-also"></a>Voir aussi
 

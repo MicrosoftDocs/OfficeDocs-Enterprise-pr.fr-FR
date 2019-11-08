@@ -11,12 +11,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: ebe0f5ff-fd17-487f-bbb6-271b5ea270bb
 description: Résumé :Obtenez de l'aide pour Office 365 PowerShell sur les sites communautaires ci-dessous.
-ms.openlocfilehash: c2b02ab5d764ef954b9615ed2320eab821e0cb3d
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 98147f9bc698184a4146580c10966a8f102bde21
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068780"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031699"
 ---
 # <a name="office-365-powershell-community-resources"></a>Ressources communautaires pour Office 365 PowerShell
 
@@ -28,11 +28,11 @@ Utilisez les forums et les wikis de la communauté pour vous connecter à vos pa
     
 - [Communauté technique Office 365](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
     
-- [Forum communautaire du TechCenter Exchange](https://social.technet.microsoft.com/Forums/exchange/en-US/home?forum=exchangesvrgeneral)
+- [Forum communautaire du TechCenter Exchange](https://social.technet.microsoft.com/Forums/exchange/home?forum=exchangesvrgeneral)
     
 - [Blogs Office](https://blogs.office.com/)
     
-- [Site Wiki dédié à la gestion d'Office 365](https://community.office365.com/en-us/w/manage/default.aspx)
+- [Site Wiki dédié à la gestion d'Office 365](https://community.office365.com/w/manage/default.aspx)
     
 ## <a name="see-also"></a>Voir aussi
 

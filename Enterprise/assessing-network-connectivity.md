@@ -1,5 +1,5 @@
 ---
-title: Évaluation de la connectivité réseau Office 365
+title: Évaluation de la connectivité réseau Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -16,14 +16,14 @@ search.appverid:
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
 description: Office 365 est conçu pour permettre aux clients du monde entier de se connecter au service à l’aide d’une connexion Internet. À mesure que le service évolue, la sécurité, les performances et la fiabilité d’Office 365 sont améliorées en fonction des clients qui utilisent Internet pour établir une connexion au service.
-ms.openlocfilehash: 2f58bf71c292f57ccef79f7f0f79e1cd474c681d
-ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
+ms.openlocfilehash: 6f212e2a7531e1e635c8a5426338abbc2bc3712c
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428071"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030498"
 ---
-# <a name="assessing-office-365-network-connectivity"></a>Évaluation de la connectivité réseau Office 365
+# <a name="assessing-office-365-network-connectivity"></a>Évaluation de la connectivité réseau Office 365
 
 *Cet article s’applique à la fois à Office 365 entreprise et à Microsoft 365 Enterprise*
 
@@ -41,7 +41,7 @@ Certaines ressources pour vous aider à évaluer votre réseau :
 
 - Consultez la rubrique [vue d’ensemble de la connectivité réseau office 365](office-365-networking-overview.md) pour obtenir des informations conceptuelles sur la mise en réseau Office 365.
 - Consultez les [principes de connectivité réseau office 365](https://aka.ms/o365networkingprinciples) pour comprendre les principes de connectivité permettant de gérer le trafic Office 365 en toute sécurité et d’obtenir les meilleures performances possibles.
-- Inscrivez-vous à [Microsoft FastTrack](https://www.microsoft.com/en-us/fasttrack) pour obtenir une assistance interactive concernant la planification, la conception et le déploiement d’Office 365. 
+- Inscrivez-vous à [Microsoft FastTrack](https://www.microsoft.com/fasttrack) pour obtenir une assistance interactive concernant la planification, la conception et le déploiement d’Office 365. 
 - Voir la section de l' [outil d’intégration réseau Office 365](assessing-network-connectivity.md#the-office-365-network-onboarding-tool) ci-dessous pour exécuter des tests de connectivité de base qui fournissent des conseils spécifiques sur les améliorations de connectivité réseau pouvant être effectuées entre un emplacement utilisateur donné et Office 365.
 
 > [!NOTE]
@@ -53,7 +53,7 @@ Points clés à prendre en compte lors de la planification de votre évaluation 
 
 - Nous optimisons en permanence les aspects principaux d’Office 365 tels que la disponibilité, l’étendue globale et les performances pour la connectivité Internet. Par exemple, de nombreux services Office 365 tirent parti d’un ensemble étendu de nœuds Edge accessibles sur Internet. Ce réseau Edge offre la meilleure proximité et les mêmes performances pour les connexions entrantes sur Internet.
 
-- Lorsque vous envisagez d’utiliser Office 365 pour l’un des services inclus tels que teams ou les fonctionnalités de réunion, de vidéo ou de conversation de Skype entreprise Online, les clients doivent effectuer une évaluation réseau de bout en bout et répondre aux besoins de connectivité à l’aide de [Microsoft FastTrack](https://www.microsoft.com/en-us/fasttrack).
+- Lorsque vous envisagez d’utiliser Office 365 pour l’un des services inclus tels que teams ou les fonctionnalités de réunion, de vidéo ou de conversation de Skype entreprise Online, les clients doivent effectuer une évaluation réseau de bout en bout et répondre aux besoins de connectivité à l’aide de [Microsoft FastTrack](https://www.microsoft.com/fasttrack).
 
 Si vous évaluez Office 365 et que vous ne savez pas où commencer avec votre évaluation réseau ou si vous avez rencontré des problèmes de conception réseau pour lesquels vous avez besoin d’aide pour le surmonter, contactez votre équipe de compte Microsoft.
 

@@ -13,17 +13,19 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Explication du fonctionnement de la journalisation interne pour Office 365 Engineering Teams.
-ms.openlocfilehash: 5fff245435d6b21a06bfe8544f991b919dbf15d9
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 3f0a65b618e34e5bba92a0f0b471c5c7c43bb329
+ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067376"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035524"
 ---
 # <a name="internal-logging-for-office-365-engineering"></a>Journalisation interne pour Office 365 Engineering
+
 Outre les événements et les données de journalisation disponibles pour les clients, il existe également un système de collecte de données de journal interne disponible pour les ingénieurs Office 365. De nombreux types de données de journal sont téléchargés à partir des serveurs Office 365 vers un service informatique interne et de grande taille appelé Cosmos. Chaque équipe de service télécharge les journaux d’audit de leurs serveurs respectifs dans la base de données Cosmos pour l’agrégation et l’analyse. Ce transfert de données se produit sur une connexion TLS validée par FIPS 140-2 sur des ports et protocoles approuvés spécifiquement à l’aide d’un outil Automation propriétaire appelé le chargeur de données Office (ODL). Les outils utilisés dans Office 365 pour collecter et traiter des enregistrements d’audit n’autorisent pas les modifications permanentes ou irréversibles du contenu des enregistrements d’audit d’origine ou de l’ordre des heures.
 
 Les équipes de service utilisent Cosmos en tant que référentiel centralisé pour effectuer une analyse de l’utilisation des applications, mesurer les performances du système et des opérations, et Rechercher des anomalies et des motifs susceptibles d’indiquer des problèmes ou des problèmes de sécurité. Chaque équipe de service télécharge une ligne de base des journaux dans Cosmos, en fonction de ce qu’elles cherchent à analyser, qui sont souvent les suivantes :
+
 - Journaux des événements
 - Journaux AppLocker
 - Données de performances

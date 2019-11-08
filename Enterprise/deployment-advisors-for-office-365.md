@@ -18,16 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Accélérez la planification et la configuration d’Office 365 ou de Microsoft 365 avec des conseillers en matière de déploiement.
-ms.openlocfilehash: 86605b1476916d8510a52009dc20a37eafd7c08f
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: eee8dfedd72ed0e2e1ac6660d32167490a13f504
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782304"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030798"
 ---
 # <a name="deployment-advisors-for-office-365-or-microsoft-365-services"></a>Conseillers de déploiement pour les services Office 365 ou Microsoft 365
 
-Les conseillers de déploiement pour Office 365 ou Microsoft 365 fournissent une prise en charge auto-guidée pour la configuration d’Office 365 pour votre organisation. Pour y accéder:
+Les conseillers de déploiement pour Office 365 ou Microsoft 365 fournissent une prise en charge auto-guidée pour la configuration d’Office 365 pour votre organisation. Pour y accéder :
 
 1. Connectez-vous en tant qu’administrateur client dans le [Centre d’administration 365 de Microsoft](https://admin.microsoft.com).
 2. Sélectionnez l’un des conseillers ou des guides de déploiement ci-dessous.
@@ -46,7 +46,7 @@ Le conseiller vous guide à travers les décisions de personnalisation de vos be
 
 Vous pouvez utiliser ces conseillers à tout moment pour en savoir plus sur les fonctionnalités et les options d’Office 365. Cela inclut lors de la planification ou après que vous avez déjà configuré les services.
   
-## <a name="microsoft-365-windows-10-with-office-365"></a>Microsoft 365: Windows 10 avec Office 365
+## <a name="microsoft-365-windows-10-with-office-365"></a>Microsoft 365 : Windows 10 avec Office 365
 
 Microsoft 365 est une solution complète et intelligente qui inclut Office 365, Windows 10 et Enterprise Mobility + Security (EMS). Microsoft 365 permet à tout le monde d’être créatif et de collaborer en toute sécurité. 
 
@@ -156,7 +156,7 @@ Si vous disposez de Gmail, vous devez migrer vos contacts gmail et vos élément
 
 ## <a name="file-creation-storage-and-sharing"></a>Création, stockage et partage de fichiers
 
-### <a name="office-365-proplus"></a>Office 365 ProPlus
+### <a name="office-365-proplus"></a>Office 365 ProPlus
 
 Office 365 ProPlus permet à vos utilisateurs de s’exécuter sur les versions les plus récentes d’Office et de les maintenir à jour.
 
@@ -178,14 +178,14 @@ Le conseiller de déploiement Office 365 ProPlus décrit les étapes à suivre p
 
   
 
-### <a name="onedrive-for-business"></a>OneDrive Entreprise
+### <a name="onedrive-for-business"></a>OneDrive Entreprise
 
 Pour démarrer rapidement avec OneDrive entreprise pour le stockage, le partage et la synchronisation de fichiers, utilisez ce guide.
 
 |||
 |:-------|:-----|
 | **Générer** | [Conseiller de déploiement Office 365 ProPlus](https://aka.ms/o365proplusdeploy) | 
-| **Visualisez** | [Avantages intégrés de OneDrive entreprise](https://aka.ms/f66hqa) <BR> [Bienvenue dans OneDrive: en provenance d’un autre fournisseur de stockage cloud](https://videoplayercdn.osi.office.net/embed/6b11f30b-725a-4145-8b72-45a41793a432) | 
+| **Visualisez** | [Avantages intégrés de OneDrive entreprise](https://aka.ms/f66hqa) <BR> [Bienvenue dans OneDrive : en provenance d’un autre fournisseur de stockage cloud](https://videoplayercdn.osi.office.net/embed/6b11f30b-725a-4145-8b72-45a41793a432) | 
 |||
 
 ### <a name="sharepoint-online"></a>SharePoint Online
@@ -203,7 +203,7 @@ Vous devez choisir l’option de déploiement qui convient le mieux à votre org
 |||
 |:-------|:-----|
 | **Générer** | [Conseiller de déploiement SharePoint Online](https://aka.ms/spoguidance) |
-| **Visualisez** | [SharePoint: vue d’ensemble](https://go.microsoft.com/fwlink/?linkid=2005315) <BR> [SharePoint: hybride](https://go.microsoft.com/fwlink/?linkid=2005219) <BR> [SharePoint: résolution des problèmes](https://go.microsoft.com/fwlink/?linkid=2005220) |
+| **Visualisez** | [SharePoint : vue d’ensemble](https://go.microsoft.com/fwlink/?linkid=2005315) <BR> [SharePoint : hybride](https://go.microsoft.com/fwlink/?linkid=2005219) <BR> [SharePoint : résolution des problèmes](https://go.microsoft.com/fwlink/?linkid=2005220) |
 |||
 
 ## <a name="security-and-identity"></a>Sécurité et identité
@@ -261,7 +261,7 @@ Les groupes Office 365 sont un espace de travail partagé pour les messages éle
 | **Générer** |[Guide de configuration des groupes Office 365](https://aka.ms/groupsguide) |
 |||
   
-### <a name="microsoft-teams"></a>Microsoft Teams
+### <a name="microsoft-teams"></a>Microsoft Teams
 
 Microsoft teams est le service de collaboration basé sur la conversation dans Office 365 qui fournit des espaces de travail d’équipe pour les conversations, les appels, les réunions et les messages privés. Le conseiller de déploiement de teams vous permet de configurer et de configurer l’expérience de teams optimale avec Exchange Online, SharePoint Online, OneDrive entreprise et les groupes Office 365. Elle comprend des informations sur la configuration des paramètres de client, des équipes et des canaux pour vos projets, des appels et des réunions, la messagerie, des onglets pour accéder rapidement aux applications, les robots d’information et les connecteurs vers des services tiers.
 
@@ -318,9 +318,9 @@ Microsoft StaffHub est une plateforme basée sur le Cloud qui fonctionne sur tou
   
 ## <a name="additional-videos"></a>Vidéos supplémentaires
 
-### <a name="microsoft-365-admin-center"></a>Centre d’administration Microsoft 365
+### <a name="microsoft-365-admin-center"></a>Centre d’administration Microsoft 365
 
-- [Orientation du centre d’administration](https://www.microsoft.com/en-us/videoplayer/embed/RWfMut)
+- [Orientation du centre d’administration](https://www.microsoft.com/videoplayer/embed/RWfMut)
 
 - [Créer des utilisateurs dans le centre d’administration](https://aka.ms/ac-createusers)
 

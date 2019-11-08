@@ -11,16 +11,16 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: d78983fa-0951-49b8-b890-d76a44c70035
 description: Cet article est une version texte accessible du diagramme intitulé intégration de fonctionnalités dans les produits Microsoft Office Server-SharePoint Server, Exchange Server, Lync Server et Office Online Server.
-ms.openlocfilehash: bbc50c397b85f355cc54103902a3b56258e915ea
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 9cc13853f839e86867caed8d8d689b9b3a894a96
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782244"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38027688"
 ---
 # <a name="accessible-diagram---feature-integration-across-microsoft-office-server-products"></a>Diagramme accessible : Intégration de fonctionnalités entre les produits Microsoft Office Server
 
-**Résumé:** Cet article est une version texte accessible du diagramme intitulé intégration de fonctionnalités dans les produits Microsoft Office Server-SharePoint Server, Exchange Server, Lync Server et Office Online Server.
+**Résumé :** Cet article est une version texte accessible du diagramme intitulé intégration de fonctionnalités dans les produits Microsoft Office Server-SharePoint Server, Exchange Server, Lync Server et Office Online Server.
   
 Le diagramme se compose de plusieurs onglets, comme indiqué par les titres de section de ce document.
   
@@ -132,7 +132,7 @@ Enregistrements de réunions. Cette fonctionnalité s’applique à : 
 
 Office Web Apps Server est un produit Office Server qui offre des services d’affichage et de modification de fichier basés sur navigateur pour les fichiers Office. Office Web Apps Server est compatible avec les produits et services qui prennent en charge le protocole WOPI (Web Application Open Platform Interface). Ces produits, appelés hôtes, incluent SharePoint 2013, Lync Server 2013 et Exchange Server 2013.   
   
-Pour en savoir plus sur Office Web Apps Server, téléchargez l’affiche simplifiée pour le déploiement http://aka.ms/OfficeWebAppsPosterd’Office Web Apps à l’adresse. 
+Pour en savoir plus sur Office Web Apps Server, téléchargez l’affiche simplifiée pour le déploiement https://aka.ms/OfficeWebAppsPosterd’Office Web Apps à l’adresse. 
   
 ## <a name="server-to-server-authentication-tab"></a>Onglet Authentification de serveur à serveur
 
@@ -234,11 +234,11 @@ Les utilisateurs peuvent télécharger des images dans des plages de pixels alla
     
 - Le format 648 × 648 est utilisé pour Lync Web Access et Lync 2013.  
     
-Pour obtenir des exemples de scripts de configuration, voir les Articles de blog de Jens des Rasmussen Rasmussen: 
+Pour obtenir des exemples de scripts de configuration, voir les Articles de blog de Jens des Rasmussen Rasmussen : 
   
-- Utilisation de photos haute résolution Exchange 2013 à partir de SharePoint Server 2013 (http://aka.ms/Bhr4d2) 
+- Utilisation de photos haute résolution Exchange 2013 à partir de SharePoint Server 2013 (https://aka.ms/Bhr4d2) 
     
-- Intégration d’Exchange 2013 et de Lync Server 2013 (http://aka.ms/Pn08dw) 
+- Intégration d’Exchange 2013 et de Lync Server 2013 (https://aka.ms/Pn08dw) 
     
 L’affiche contient également des codes QR pour ces deux articles de blog.  
   
@@ -281,9 +281,9 @@ Le magasin de contacts unifié offre une gestion cohérente des contacts entre p
     
 - Dans Lync 2013, activer la stratégie de magasin contacts unifié (activée par défaut).  
     
-Pour obtenir des exemples de scripts de configuration, voir l’article du blog de Jens des Rasmussen Rasmussen: 
+Pour obtenir des exemples de scripts de configuration, voir l’article du blog de Jens des Rasmussen Rasmussen : 
   
-- Intégration d’Exchange 2013 et de Lync Server 2013 (http://aka.ms/Oyg7fh) 
+- Intégration d’Exchange 2013 et de Lync Server 2013 (https://aka.ms/Oyg7fh) 
     
  **Fonctionnement** 
   
@@ -615,13 +615,13 @@ Produits serveurs : 
     
 - SharePoint 2013 
     
-Conditions préalables 
+Conditions préalables : 
   
 - Lync 2013 — L’enregistrement de réunion est une fonctionnalité côté client dans Lync 2013.   
     
 - SharePoint 2013 — Le site d’équipe dans lequel vous souhaitez stocker les enregistrements de réunions est opérationnel.  
     
- **Qu’est-ce qui est enregistré?**
+ **Qu’est-ce qui est enregistré ?**
   
 Les éléments suivants sont enregistrés dans un fichier MP4 pendant la réunion (chaque puce est précédée d’une icône représentant le type d’enregistrement) :  
   
@@ -667,7 +667,7 @@ Pour préparer la publication de vos enregistrements de réunions :
     
  **Bibliothèques de biens numériques**
   
-Les bibliothèques de biens numériques sont des bibliothèques de biens contenant des vidéos qui ont des conséquences sur la capacité et les performances. Pour plus d’informations, reportez-vous à la rubrique plan Digital http://aka.ms/O1vq5wAsset Libraries in SharePoint Server 2013, à l’adresse. L’affiche inclut également un code QR pour accéder à ces informations. 
+Les bibliothèques de biens numériques sont des bibliothèques de biens contenant des vidéos qui ont des conséquences sur la capacité et les performances. Pour plus d’informations, reportez-vous à la rubrique plan Digital https://aka.ms/O1vq5wAsset Libraries in SharePoint Server 2013, à l’adresse. L’affiche inclut également un code QR pour accéder à ces informations. 
   
 ### <a name="recording-and-publishing-a-meeting-using-the-lync-client"></a>Enregistrement et publication d’une réunion à l’aide du client Lync
 
@@ -679,14 +679,14 @@ Le diagramme montre un utilisateur utilisant  Lync pour participer à une réuni
     
 2. Le contenu de la réunion est enregistré dans un fichier MP4 pendant la réunion.  
     
-3. Une fois la réunion terminée, l’enregistrement MP4 apparaît dans le dossier Recording de votre ordinateur (les\\enregistrements\\<username>\\de\\vidéos de vidéos de l’utilisateur C: utilisateurs). Si vous le souhaitez, vous pouvez personnaliser l’enregistrement de la réunion à l’aide de l’application de gestionnaire d’enregistrements Lync qui est installée avec le client Lync. 
+3. Une fois la réunion terminée, l’enregistrement MP4 apparaît dans le dossier Recording de votre ordinateur (les\\enregistrements\\<username>\\de\\vidéos de vidéos de l’utilisateur C : utilisateurs). Si vous le souhaitez, vous pouvez personnaliser l’enregistrement de la réunion à l’aide de l’application de gestionnaire d’enregistrements Lync qui est installée avec le client Lync. 
     
 4. Glissez et déplacez l’enregistrement de la réunion dans votre bibliothèque de biens SharePoint. 
     
-5. Facultatif : Une fois que l’enregistrement se trouve dans votre bibliothèque de biens, vous pouvez l’insérer dans n’importe quelle page SharePoint. Pour plus d’informations sur cette étape, voir l’entrée de blog Office 365, créer et publier des vidéos de formation avec SharePoint et Lync http://aka.ms/R61q35Online, à l’adresse. 
+5. Facultatif : Une fois que l’enregistrement se trouve dans votre bibliothèque de biens, vous pouvez l’insérer dans n’importe quelle page SharePoint. Pour plus d’informations sur cette étape, voir l’entrée de blog Office 365, créer et publier des vidéos de formation avec SharePoint et Lync https://aka.ms/R61q35Online, à l’adresse. 
     
  **Miniatures de vidéo**
   
-Les miniatures de vidéo améliorent l’apparence de votre bibliothèque de biens. Pour en savoir plus sur la création de miniatures pour vos enregistrements de réunions, reportez-vous à http://aka.ms/Kupj85la rubrique capture ou modification d’une miniature de vidéo, à l’adresse. L’affiche inclut également un code QR pour accéder à ces informations. 
+Les miniatures de vidéo améliorent l’apparence de votre bibliothèque de biens. Pour en savoir plus sur la création de miniatures pour vos enregistrements de réunions, reportez-vous à https://aka.ms/Kupj85la rubrique capture ou modification d’une miniature de vidéo, à l’adresse. L’affiche inclut également un code QR pour accéder à ces informations. 
   
 

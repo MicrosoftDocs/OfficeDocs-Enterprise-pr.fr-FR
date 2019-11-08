@@ -15,26 +15,26 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
-description: 'Résumé: configurez et montrez comment Office 365 Information Rights Management protège vos fichiers sensibles, même lorsqu’ils sont publiés dans une collection de sites SharePoint Online incorrecte.'
-ms.openlocfilehash: 9608bf68ced2f286f788dd94dfc27755f5ff23c0
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+description: 'Résumé : configurez et montrez comment Office 365 Information Rights Management protège vos fichiers sensibles, même lorsqu’ils sont publiés dans une collection de sites SharePoint Online incorrecte.'
+ms.openlocfilehash: 3fa771d63ca30fb53ac2c77466546cf3a2098deb
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782494"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031569"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Protection des fichiers sensibles dans l’environnement de développement/test Office 365
 
- **Résumé:** Configurez et montrez comment Office 365 Information Rights Management protège vos fichiers sensibles, même s’ils sont publiés dans une collection de sites SharePoint Online incorrecte.
+ **Résumé :** Configurez et montrez comment Office 365 Information Rights Management protège vos fichiers sensibles, même s’ils sont publiés dans une collection de sites SharePoint Online incorrecte.
   
 La gestion des droits relatifs à l’information (IRM) dans Office 365 est un ensemble de fonctionnalités permettant de protéger des documents qui sont téléchargés à partir de bibliothèques et de listes SharePoint Online. Les fichiers téléchargés sont chiffrés et contiennent les autorisations ouvrir, copier, enregistrer et imprimer qui reflètent la bibliothèque SharePoint Online dans laquelle ils ont été stockés.
   
 Les instructions de cet article vous permettent d’activer et de tester la gestion des droits relatifs à l’information (IRM) dans Office 365 pour les fichiers contenant des informations sensibles possibles dans votre abonnement d’évaluation Office 365.
   
 > [!TIP]
-> Cliquez sur[ici](http://aka.ms/catlgstack) pour afficher le plan de tous les articles dans le Guide de Laboratoire Test Office 365.
+> Cliquez sur[ici](https://aka.ms/catlgstack) pour afficher le plan de tous les articles dans le Guide de Laboratoire Test Office 365.
   
-## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>Phase 1: créer votre environnement de développement/test Office 365
+## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>Phase 1 : créer votre environnement de développement/test Office 365
 
 Si vous souhaitez simplement tester la protection des fichiers sensibles avec la configuration minimale requise, suivez les instructions des phases 2 et 3 de l' [environnement de développement/test Office 365](office-365-dev-test-environment.md).
   
@@ -43,21 +43,21 @@ Si vous souhaitez tester la protection des fichiers sensibles dans une entrepris
 > [!NOTE]
 > Le test de la protection des fichiers sensibles ne nécessite pas l’environnement de développement/test d’entreprise simulé, qui inclut un intranet simulé connecté à Internet et la synchronisation d’annuaires pour une forêt des services de domaine Active Directory (AD DS). Elle est fournie ici en tant qu’option pour vous permettre de tester la protection des fichiers sensibles et de l’expérimenter dans un environnement qui représente une organisation typique. 
   
-## <a name="phase-2-demonstrate-how-documents-from-permissions-protected-sites-can-be-leaked"></a>Phase 2: montrer comment les documents provenant de sites protégés par des autorisations peuvent être divulgués
+## <a name="phase-2-demonstrate-how-documents-from-permissions-protected-sites-can-be-leaked"></a>Phase 2 : montrer comment les documents provenant de sites protégés par des autorisations peuvent être divulgués
 
 Dans cette phase, vous démontrez qu’une personne peut télécharger un document à partir d’un site protégé par des autorisations, puis le télécharger vers un site disposant d’autorisations étendues.
   
 Tout d’abord, vous ajoutez trois nouveaux comptes d’utilisateur qui représentent les cadres et affectez-leur des licences Office 365 E5.
   
-Suivez les instructions de la procédure [se connecter à Office 365 PowerShell](https://technet.microsoft.com/library/dn975125.aspx) pour installer les modules PowerShell (si nécessaire) et vous connecter à votre nouvel abonnement Office 365 à partir de:
+Suivez les instructions de la procédure [se connecter à Office 365 PowerShell](https://technet.microsoft.com/library/dn975125.aspx) pour installer les modules PowerShell (si nécessaire) et vous connecter à votre nouvel abonnement Office 365 à partir de :
   
 - Votre ordinateur (pour l’environnement de développement/test Office 365 léger).
     
 - La machine virtuelle CLIENT1 (pour l’environnement de développement/test Office 365 d’entreprise simulé).
     
-Dans la boîte de dialogue **demande d’informations d’identification Windows PowerShell** , tapez le nom de l’administrateur général Office 365 (par exemple: jdoe@contosotoycompany.onmicrosoft.com) et le mot de passe de votre abonnement d’évaluation Office 365.
+Dans la boîte de dialogue **demande d’informations d’identification Windows PowerShell** , tapez le nom de l’administrateur général Office 365 (par exemple : jdoe@contosotoycompany.onmicrosoft.com) et le mot de passe de votre abonnement d’évaluation Office 365.
   
-Renseignez le nom de votre organisation (par exemple: contosotoycompany) et le code pays à deux caractères pour votre emplacement, puis exécutez les commandes suivantes à partir de l’invite module Windows Azure Active Directory pour Windows PowerShell:
+Renseignez le nom de votre organisation (par exemple : contosotoycompany) et le code pays à deux caractères pour votre emplacement, puis exécutez les commandes suivantes à partir de l’invite module Windows Azure Active Directory pour Windows PowerShell :
   
 ```
 $orgName="<organization name>"
@@ -92,7 +92,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
   
 Ensuite, créez un groupe de cadres privés et ajoutez-y les nouveaux comptes exécutifs.
   
-1. Dans votre navigateur, accédez au portail Office [http://admin.microsoft.com](http://admin.microsoft.com) et connectez-vous à votre abonnement d’évaluation Office 365 avec votre compte d’administrateur général.
+1. Dans votre navigateur, accédez au portail Office [https://admin.microsoft.com](https://admin.microsoft.com) et connectez-vous à votre abonnement d’évaluation Office 365 avec votre compte d’administrateur général.
     
   - Si vous utilisez l’environnement de développement/test Office 365 léger, ouvrez une session privée d’Internet Explorer ou de votre navigateur, puis connectez-vous à partir de votre ordinateur local.
     
@@ -110,7 +110,7 @@ Ensuite, créez un groupe de cadres privés et ajoutez-y les nouveaux comptes ex
     
 7. Cliquez sur **Modifier pour les membres**.
     
-8. Cliquez sur **Ajouter des membres**. Dans la liste des membres, sélectionnez les comptes d’utilisateur suivants:
+8. Cliquez sur **Ajouter des membres**. Dans la liste des membres, sélectionnez les comptes d’utilisateur suivants :
     
   - Directeur général
     
@@ -136,13 +136,13 @@ Ensuite, vous créez une collection de sites Executives et autorisez uniquement 
     
 6. Dans le coin supérieur droit de la collection de sites **cadres** , cliquez sur l’icône des paramètres, puis cliquez sur **partagé avec**.
     
-7. Dans **partager «cadres»**, cliquez sur **avancé**.
+7. Dans **partager « cadres »**, cliquez sur **avancé**.
     
 8. Dans la liste des groupes SharePoint, cliquez sur membres de la **direction**.
     
 9. Dans la page **Personnes et groupes**, cliquez sur **Nouveau**.
     
-10. Dans **partager «cadres»**, tapez **cadres**, cliquez sur le groupe **cadres** , puis cliquez sur **partager**.
+10. Dans **partager « cadres »**, tapez **cadres**, cliquez sur le groupe **cadres** , puis cliquez sur **partager**.
     
 11. Fermez l’onglet **personnes et groupes** .
     
@@ -152,21 +152,21 @@ Ensuite, vous autorisez tout le monde à accéder à la collection de sites de v
     
 2. Dans le coin supérieur droit, cliquez sur l’icône des paramètres, puis cliquez sur **partagé avec**.
     
-3. Dans **partager «collection de sites de ventes»**, cliquez sur **avancé**.
+3. Dans **partager « collection de sites de ventes »**, cliquez sur **avancé**.
     
 4. Dans la liste des groupes SharePoint, cliquez sur membres de la **collection de sites de ventes**.
     
 5. Dans la page **Personnes et groupes**, cliquez sur **Nouveau**.
     
-6. Dans **partager «collection de sites de ventes»**, tapez **tout le monde**, cliquez sur **tout le monde sauf les utilisateurs externes**, puis cliquez sur **partager**.
+6. Dans **partager « collection de sites de ventes »**, tapez **tout le monde**, cliquez sur **tout le monde sauf les utilisateurs externes**, puis cliquez sur **partager**.
     
 7. Fermez les onglets **collection de sites de ventes** et **SharePoint** .
     
 Ensuite, connectez-vous avec un compte exécutif et créez un document dans la collection de sites cadres.
   
-1. Dans l’onglet **Accueil Microsoft Office** , cliquez sur l’icône de l’utilisateur dans le coin supérieur droit, **** puis cliquez sur Déconnexion.
+1. Dans l’onglet **Accueil Microsoft Office** , cliquez sur l’icône de l’utilisateur dans le coin supérieur droit, puis cliquez sur **déconnexion**.
     
-2. Accédez à [http://admin.microsoft.com](http://admin.microsoft.com).
+2. Accédez à [https://admin.microsoft.com](https://admin.microsoft.com).
     
 3. Sur la page **de connexion à Office 365** , cliquez sur **utiliser un autre compte**.
     
@@ -184,7 +184,7 @@ Ensuite, connectez-vous avec un compte exécutif et créez un document dans la c
     
 Ensuite, téléchargez une copie locale du document sensitiveData-beforeirm. docx, puis publiez-le accidentellement dans la collection de sites Sales.
   
-1. Sur votre ordinateur local, créez un dossier (par exemple, C:\\guides\\SensitiveDataTestFiles).
+1. Sur votre ordinateur local, créez un dossier (par exemple, C :\\guides\\SensitiveDataTestFiles).
     
 2. Dans l’onglet **documents** de votre navigateur, sélectionnez le document **sensitiveData-beforeirm. docx** , cliquez sur les ellipses, puis cliquez sur **Télécharger**.
     
@@ -202,9 +202,9 @@ Ensuite, téléchargez une copie locale du document sensitiveData-beforeirm. doc
     
 Ensuite, connectez-vous en tant que utilisateur 5 et essayez d’ouvrir le document sensitiveData-beforeirm. docx dans la collection de sites de ventes.
   
-1. Dans l’onglet **Accueil Microsoft Office** , cliquez sur l’icône de l’utilisateur dans le coin supérieur droit, **** puis cliquez sur Déconnexion.
+1. Dans l’onglet **Accueil Microsoft Office** , cliquez sur l’icône de l’utilisateur dans le coin supérieur droit, puis cliquez sur **déconnexion**.
     
-2. Accédez à [http://admin.microsoft.com](http://admin.microsoft.com).
+2. Accédez à [https://admin.microsoft.com](https://admin.microsoft.com).
     
 3. Sur la page **de connexion à Office 365** , cliquez sur **utiliser un autre compte**.
     
@@ -222,9 +222,9 @@ En publiant accidentellement le document sensitiveData-beforeirm. docx sur la co
   
 Pour préparer Office 365 pour les phases 3 et 4, activez IRM pour SharePoint Online.
   
-1. Dans l’onglet **Accueil Microsoft Office** , cliquez sur l’icône de l’utilisateur dans le coin supérieur droit, **** puis cliquez sur Déconnexion.
+1. Dans l’onglet **Accueil Microsoft Office** , cliquez sur l’icône de l’utilisateur dans le coin supérieur droit, puis cliquez sur **déconnexion**.
     
-2. Accédez à [http://admin.microsoft.com](http://admin.microsoft.com).
+2. Accédez à [https://admin.microsoft.com](https://admin.microsoft.com).
     
 3. Sur la page **de connexion Office 365** , cliquez sur le nom du compte d’administrateur général, tapez son mot de passe, puis cliquez sur **se connecter**.
     
@@ -232,11 +232,11 @@ Pour préparer Office 365 pour les phases 3 et 4, activez IRM pour SharePoint On
     
 5. Dans l’onglet **Centre d’administration SharePoint** , cliquez sur **paramètres**.
     
-6. Dans la page, dans la section gestion des droits relatifs à l' **information (IRM)** , sélectionnez **utiliser le service IRM spécifié dans votre configuration**, puis actualiser les **paramètres IRM**.
+6. Dans la page, dans la section gestion des droits relatifs à l' **information (IRM)** , sélectionnez **utiliser le service IRM spécifié dans votre configuration**, puis **Actualiser les paramètres IRM**.
     
 7. Fermez l’onglet **Centre d’administration SharePoint** .
     
-## <a name="phase-3-use-sharepoint-information-rights-management-with-an-office-365-private-group"></a>Phase 3: utiliser la gestion des droits relatifs à l’information (IRM) SharePoint avec un groupe privé Office 365
+## <a name="phase-3-use-sharepoint-information-rights-management-with-an-office-365-private-group"></a>Phase 3 : utiliser la gestion des droits relatifs à l’information (IRM) SharePoint avec un groupe privé Office 365
 
 Dans cette phase, vous utilisez la gestion des droits relatifs à l’information (IRM) de SharePoint avec un groupe privé Office 365 pour protéger l’accès à un document avec des informations sensibles, même s’il est publié sur un site avec des autorisations ouvertes.
   
@@ -250,7 +250,7 @@ Tout d’abord, vous activez et configurez la gestion des droits relatifs à l�
     
 4. Sur la page **paramètres** , sous **autorisations et gestion**, cliquez sur **gestion des droits relatifs**à l’information.
     
-5. Sur la page **paramètres de gestion des droits relatifs** à l’information:
+5. Sur la page **paramètres de gestion des droits relatifs** à l’information :
     
   - Sélectionnez **restreindre l’autorisation aux documents de cette bibliothèque au téléchargement**.
     
@@ -278,9 +278,9 @@ Ensuite, en tant que PDG, vous chargez un nouveau document dans le dossier de do
     
 4. Renommez le nouveau fichier **sensitiveData-BeforeIRM-Copy. docx** en **sensitiveData-AfterIRM. docx**.
     
-5. À partir de l’onglet **Accueil Microsoft Office** de votre navigateur, cliquez sur l’icône de l’utilisateur dans le coin supérieur **** droit, puis cliquez sur Déconnexion.
+5. À partir de l’onglet **Accueil Microsoft Office** de votre navigateur, cliquez sur l’icône de l’utilisateur dans le coin supérieur droit, puis cliquez sur **déconnexion**.
     
-6. Accédez à [http://admin.microsoft.com](http://admin.microsoft.com).
+6. Accédez à [https://admin.microsoft.com](https://admin.microsoft.com).
     
 7. Sur la page **de connexion à Office 365** , cliquez sur le nom du compte PDG, tapez son mot de passe, puis cliquez sur **se connecter**.
     
@@ -304,9 +304,9 @@ Ensuite, en tant que PDG, vous chargez un nouveau document dans le dossier de do
     
 Ensuite, en tant qu’utilisateur normal, vous tentez d’accéder au document **sensitiveData-AfterIRM. docx** dans le dossier Sales document.
   
-1. À partir de l’onglet **Accueil Microsoft Office** de votre navigateur, cliquez sur l’icône de l’utilisateur dans le coin supérieur **** droit, puis cliquez sur Déconnexion.
+1. À partir de l’onglet **Accueil Microsoft Office** de votre navigateur, cliquez sur l’icône de l’utilisateur dans le coin supérieur droit, puis cliquez sur **déconnexion**.
     
-2. Accédez à [http://admin.microsoft.com](http://admin.microsoft.com).
+2. Accédez à [https://admin.microsoft.com](https://admin.microsoft.com).
     
 3. Sur la page **de connexion à Office 365** , cliquez sur le nom du compte utilisateur 5, tapez son mot de passe, puis cliquez sur **se connecter**.
     
@@ -316,7 +316,7 @@ Ensuite, en tant qu’utilisateur normal, vous tentez d’accéder au document *
     
 6. Sur la page **documents** , ouvrez le document **sensitiveData-AfterIRM. docx** .
     
-    Un message indiquant «Désolé, Word ne peut pas ouvrir ce document s’affiche car il est protégé par la gestion des droits relatifs à l’information (IRM).» 
+    Un message indiquant « Désolé, Word ne peut pas ouvrir ce document s’affiche car il est protégé par la gestion des droits relatifs à l’information (IRM). » 
     
 7. Cliquez sur **modifier dans Word**. Vous êtes invité à indiquer si vous souhaitez ouvrir le fichier. Cliquez sur **Oui**.
     
@@ -324,7 +324,7 @@ Ensuite, en tant qu’utilisateur normal, vous tentez d’accéder au document *
     
 9. Vous êtes invité à fournir le mot de passe. Tapez le mot de passe du compte utilisateur 5, puis cliquez sur **se connecter**. 
     
-    Le message suivant doit s’afficher: «vous ne disposez pas des informations d’identification qui vous permettent d’ouvrir ce document».
+    Le message suivant doit s’afficher : « vous ne disposez pas des informations d’identification qui vous permettent d’ouvrir ce document ».
     
 10. Cliquez sur **non**.
     

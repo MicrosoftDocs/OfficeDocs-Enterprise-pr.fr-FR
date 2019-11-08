@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 'Résumé : explication des contrôles d’isolation dans Office 365.'
-ms.openlocfilehash: 87317d753198b50ce360640c94f042adf27ed06e
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: a53826f7f11324986f3df59d9df806ea522cb7d6
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067367"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031199"
 ---
 # <a name="office-365-isolation-controls"></a>Contrôles d’isolation Office 365 
 
@@ -29,7 +29,7 @@ Office 365 est composé de plusieurs services qui fournissent des fonctionnalit�
 Office 365 est conçu selon les principes suivants :
 
  - ** [Architecture orientée service](https://msdn.microsoft.com/library/aa480021.aspx):** conception et développement de logiciels sous la forme de services interopérables fournissant une fonctionnalité métier bien définie.
- - **[Assurance de sécurité opérationnelle](http://www.microsoft.com/download/details.aspx?id=40872):** infrastructure qui comprend les connaissances acquises par le biais de différentes fonctionnalités propres à Microsoft, y compris le [cycle de vie de développement de sécurité](https://www.microsoft.com/sdl/default.aspx)Microsoft, la [sécurité Microsoft Response Center](https://technet.microsoft.com/library/dn440717.aspx)et sensibilisation approfondie du paysage des menaces Cybersecurity.
+ - **[Assurance de sécurité opérationnelle](https://www.microsoft.com/download/details.aspx?id=40872):** infrastructure qui comprend les connaissances acquises par le biais de différentes fonctionnalités propres à Microsoft, y compris le [cycle de vie de développement](https://www.microsoft.com/sdl/default.aspx)de la sécurité Microsoft, le centre de réponse à la [sécurité Microsoft](https://technet.microsoft.com/library/dn440717.aspx)et une connaissance approfondie du paysage des menaces Cybersecurity.
 
 Les services Office 365 interagissent les uns avec les autres, mais sont conçus et implémentés de sorte qu’ils puissent être déployés et exploités en tant que services autonomes, indépendamment les uns des autres. Microsoft isole les responsabilités et domaines de responsabilité pour Office 365 afin de réduire les possibilités de modification non autorisée ou involontaire des ressources de l’organisation. Les équipes Office 365 disposent de rôles définis dans le cadre d’un mécanisme de contrôle d’accès basé sur un rôle complet.
 

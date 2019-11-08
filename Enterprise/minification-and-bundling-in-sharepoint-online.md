@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 87a52468-994e-43a2-b155-7229ed659291
 description: Cet article explique comment utiliser les techniques de minimisation et de regroupement avec Web Essentials pour réduire le nombre de requêtes HTTP et réduire le temps nécessaire au chargement des pages dans SharePoint Online.
-ms.openlocfilehash: 823011894019e9602d949f1301994d79dc209664
-ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
+ms.openlocfilehash: 3303ea49a1308e4ad7b3139547c20b4351fc84b5
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35616847"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031309"
 ---
 # <a name="minification-and-bundling-in-sharepoint-online"></a>Minimisation et regroupement dans SharePoint Online
 
@@ -33,15 +33,15 @@ Pour les fichiers JavaScript et CSS, vous pouvez également utiliser une approch
 Vous pouvez utiliser des logiciels tiers tels que Web Essentials pour regrouper les fichiers CSS et JavaScript.
   
 > [!IMPORTANT]
-> Web Essentials est un projet de communauté ouverte, basé sur une source tierce. Le logiciel est une extension de Visual Studio 2012 et Visual Studio 2013 et n’est pas pris en charge par Microsoft. Pour télécharger Web Essentials, visitez le site Web à [http://vswebessentials.com/download](https://go.microsoft.com/fwlink/p/?LinkId=525629)l’adresse. 
+> Web Essentials est un projet de communauté ouverte, basé sur une source tierce. Le logiciel est une extension de Visual Studio 2012 et Visual Studio 2013 et n’est pas pris en charge par Microsoft. Pour télécharger Web Essentials, visitez le site Web à [https://vswebessentials.com/download](https://go.microsoft.com/fwlink/p/?LinkId=525629)l’adresse. 
   
-Web Essentials offre deux types de groupage:
+Web Essentials offre deux types de groupage :
   
-- . Bundle: pour les fichiers CSS et JavaScript
+- . Bundle : pour les fichiers CSS et JavaScript
     
-- . Sprite: pour les images (uniquement disponible dans Visual Studio 2013)
+- . Sprite : pour les images (uniquement disponible dans Visual Studio 2013)
     
-Vous pouvez utiliser Web Essentials si vous disposez d’une fonctionnalité existante avec certains éléments de personnalisation qui sont référencés dans une page maître personnalisée, par exemple:
+Vous pouvez utiliser Web Essentials si vous disposez d’une fonctionnalité existante avec certains éléments de personnalisation qui sont référencés dans une page maître personnalisée, par exemple :
   
 ![Capture d’écran de l’élément de marque sur la page maître personnalisée](media/3a6eba36-973d-482b-8556-a9394b8ba19f.png)
   
@@ -55,7 +55,7 @@ Vous pouvez utiliser Web Essentials si vous disposez d’une fonctionnalité exi
   
 ## <a name="viewing-the-results-of-bundling-javascript-and-css-files"></a>Affichage des résultats du regroupement de fichiers JavaScript et CSS
 
-Lorsque vous créez un groupement JavaScript et CSS, Web Essentials crée un fichier XML appelé «fichier de recette» qui identifie les fichiers JavaScript et CSS, ainsi que d’autres informations de configuration: 
+Lorsque vous créez un groupement JavaScript et CSS, Web Essentials crée un fichier XML appelé « fichier de recette » qui identifie les fichiers JavaScript et CSS, ainsi que d’autres informations de configuration : 
   
 ![Capture d’écran du fichier de recette CSS et JavaScript](media/7ba891f8-52d8-467b-a0f6-b062dd1137a4.png)
   
@@ -69,11 +69,11 @@ L’illustration suivante est le résultat du chargement des fichiers JavaScript
   
 ![Capture d’écran montrant 80 éléments en cours de téléchargement](media/e2df3912-1923-46e6-8cf2-3015a31554e1.png)
   
-Après avoir groupé les fichiers CSS et JavaScript ensemble, le nombre de requêtes déposées vers 74 et chaque fichier prenait seulement légèrement plus longtemps que les fichiers d’origine à télécharger individuellement:
+Après avoir groupé les fichiers CSS et JavaScript ensemble, le nombre de requêtes déposées vers 74 et chaque fichier prenait seulement légèrement plus longtemps que les fichiers d’origine à télécharger individuellement :
   
 ![Capture d’écran montrant 74 éléments en cours de téléchargement](media/686c4387-70e8-4a74-9d45-059f33a91184.png)
   
-Après le regroupement, le fichier de package JavaScript est considérablement réduit de 815KB à 365KB:
+Après le regroupement, le fichier de package JavaScript est considérablement réduit de 815KB à 365KB :
   
 ![Capture d’écran montrant une taille de téléchargement réduite](media/5e7dbd98-faff-4f68-b320-108fb252e395.png)
   

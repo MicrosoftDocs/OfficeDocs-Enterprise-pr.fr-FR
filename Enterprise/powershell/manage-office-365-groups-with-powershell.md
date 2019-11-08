@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: Découvrez comment effectuer des tâches de gestion courantes pour les groupes Office 365 dans Microsoft PowerShell.
-ms.openlocfilehash: 7e07041516acd3c2038dd92b464073279c49d1a6
-ms.sourcegitcommit: d388c76d25ca67f240db97f7bfc90f0991b0e7f8
+ms.openlocfilehash: 94aa95de79099b45ea05533e7c22959b9bdf7669
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "37017342"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030999"
 ---
 # <a name="manage-office-365-groups-with-powershell"></a>Utiliser PowerShell pour gérer les groupes Office 365
 
@@ -46,7 +46,7 @@ Utilisez Azure Active Directory PowerShell pour faire pointer vos utilisateurs v
   
 Si vous souhaitez activer vos groupes Office 365 sur « Envoyer en tant que », utilisez les cmdlets [Add-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Add-RecipientPermission) et [Get-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Get-Recipient) pour configurer ce. Une fois que vous activez ce paramètre, les utilisateurs du groupe Office 365 peuvent utiliser Outlook ou Outlook sur le Web pour envoyer et répondre à des messages électroniques en tant que groupe 365 Office. Les utilisateurs peuvent accéder au groupe, créer un nouveau courrier électronique et modifier le champ « envoyer en tant que » sur l’adresse de messagerie du groupe. 
 
-([Vous pouvez également le faire dans le centre d’administration Exchange](https://docs.microsoft.com/en-us/office365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group).)
+([Vous pouvez également le faire dans le centre d’administration Exchange](https://docs.microsoft.com/office365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group).)
   
 Utilisez le script suivant, en * \<remplaçant\> GroupAlias* par l’alias du groupe que vous souhaitez mettre à jour, * \<et\> userAlias* par l’alias de l’utilisateur auquel vous souhaitez accorder permssions. [Connectez-vous à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) pour exécuter ce script.
 
@@ -184,11 +184,11 @@ Les applets de commande suivantes peuvent être utilisées avec les groupes Offi
 |[Set-applet userphoto](https://go.microsoft.com/fwlink/p/?LinkId=536511) <br/> |Utilisé pour associer une photo d’utilisateur à un compte. Les photos des utilisateurs sont stockées dans Active Directory  <br/> |
 |[Remove-applet userphoto](https://go.microsoft.com/fwlink/p/?LinkId=536512) <br/> |Suppression de la photo d’un groupe Office 365  <br/> |
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
-[Mettre à niveau des listes de distribution vers des groupes Office 365](https://docs.microsoft.com/en-us/office365/admin/manage/upgrade-distribution-lists)
+[Mettre à niveau des listes de distribution vers des groupes Office 365](https://docs.microsoft.com/office365/admin/manage/upgrade-distribution-lists)
 
-[Gérer les personnes autorisées à créer des groupes Office 365](https://docs.microsoft.com/en-us/office365/admin/create-groups/manage-creation-of-groups)
+[Gérer les personnes autorisées à créer des groupes Office 365](https://docs.microsoft.com/office365/admin/create-groups/manage-creation-of-groups)
 
 [Gérer l'accès invité aux groupes Office 365](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 

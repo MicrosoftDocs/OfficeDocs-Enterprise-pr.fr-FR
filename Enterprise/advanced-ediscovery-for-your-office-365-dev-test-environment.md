@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: 'Résumé : Configurez et faites une démonstration d’Office 365 Advanced eDiscovery avec des données d’échantillon dans votre environnement de développement/test Office 365.'
-ms.openlocfilehash: 5f96f25f0ba953e45d6ab89d933f97c2c557a4e8
-ms.sourcegitcommit: 6eb8a32c6899a884cb1c760cbfc134f427c8b6c4
+ms.openlocfilehash: dbd03c1a75b63f4fdaff49db47c8d415f267aaf3
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34726230"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030668"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Advanced eDiscovery pour votre environnement de développement/test Office 365
 
@@ -30,7 +30,7 @@ Office 365 Advanced eDiscovery vous permet de trouver et d’analyser rapidement
 Avec les instructions fournies dans cet article, vous créez un petit jeu de données pour un litige fictif à propos d’un contrat et l’analysez avec Advanced eDiscovery.
   
 > [!TIP]
-> Cliquez sur[ici](http://aka.ms/catlgstack) pour afficher le plan de tous les articles dans le Guide de Laboratoire Test Office 365.
+> Cliquez sur[ici](https://aka.ms/catlgstack) pour afficher le plan de tous les articles dans le Guide de Laboratoire Test Office 365.
   
 ## <a name="phase-1-create-your-office-365-devtest-environment"></a>Phase 1 : Création d’un environnement de développement/test Office 365
 
@@ -53,7 +53,7 @@ Cette procédure vous permet de créer des messages électroniques que vous anal
     
 2. Dans l’onglet **Courrier Outlook**, cliquez sur **Nouveau**.
     
-3. Dans **à**, tapez l’adresse de messagerie du compte User6 de votre abonnement à la version d’évaluation ( **User6 @.**<organization name> **. onmicrosoft.com**).
+3. Dans **à**, tapez l’adresse de messagerie du compte User6 de votre abonnement à la version d’évaluation ( **user6@.**<organization name> **. onmicrosoft.com**).
     
 4. Pour l’objet, saisissez **Message électronique de test 1**.
     
@@ -91,7 +91,7 @@ Dans cette procédure, vous créez deux documents Word que vous analyserez plus 
   
 1. Dans la page **Office**, cliquez sur **Se connecter,** puis connectez-vous avec les informations d’identification de votre compte d’administrateur global.
     
-2. Dans un nouvel onglet, accédez à l’URL de votre site SharePoint de production: **https://** <fictional organization name> **. SharePoint.com/sites/production**
+2. Dans un nouvel onglet, accédez à l’URL de votre site SharePoint de production : **https://** <fictional organization name> **. SharePoint.com/sites/production**
     
 3. Dans l’onglet **Collection de sites de production**, sous **Documents**, cliquez sur **Nouveau > Document Word**.
     
@@ -105,9 +105,9 @@ Dans cette procédure, vous créez deux documents Word que vous analyserez plus 
     
 8. Fermez l’onglet **Collection de sites de production**.
     
-## <a name="phase-3-use-advanced-ediscovery-for-a-legal-dispute"></a>Phase 3: utiliser Advanced eDiscovery pour un litige légal
+## <a name="phase-3-use-advanced-ediscovery-for-a-legal-dispute"></a>Phase 3 : utiliser Advanced eDiscovery pour un litige légal
 
-Malheureusement, un litige contractuel entre votre organisation et Tailspin Toys a atteint le point d’action en justice. Dans cette procédure, vous créez et configurez un cas avancé de découverte électronique pour rechercher et analyser le courrier électronique et les documents qui contiennent le texte «Tailspin Contract».
+Malheureusement, un litige contractuel entre votre organisation et Tailspin Toys a atteint le point d’action en justice. Dans cette procédure, vous créez et configurez un cas avancé de découverte électronique pour rechercher et analyser le courrier électronique et les documents qui contiennent le texte « Tailspin Contract ».
   
 La procédure d’utilisation d’Advanced eDiscovery est la suivante :
   
@@ -115,7 +115,7 @@ La procédure d’utilisation d’Advanced eDiscovery est la suivante :
     
 - Créez et configurez un incident dans Advanced eDiscovery et analysez les résultats de recherche.
     
-Dans cette procédure, vous créez une recherche dans le centre &amp; de sécurité conformité pour «Tailspin Contract», examinez les résultats, puis préparez les résultats pour Advanced eDiscovery.
+Dans cette procédure, vous créez une recherche dans le centre &amp; de sécurité conformité pour « Tailspin Contract », examinez les résultats, puis préparez les résultats pour Advanced eDiscovery.
   
 1. Dans l’onglet **Portail Office 365**, cliquez sur **Admin**.
     

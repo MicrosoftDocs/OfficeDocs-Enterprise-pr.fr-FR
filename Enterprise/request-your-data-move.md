@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Les clients Office 365 existants devront envoyer une demande avant la date d'échéance de leur pays afin que les données client de leurs services Office 365 soient déplacées vers leur nouvelle région.
-ms.openlocfilehash: 4df9c3481782f6d3f0b8431bd91677fb1262812c
-ms.sourcegitcommit: 842ac51577317dfc8d2adc46d09b4d735f29bc4f
+ms.openlocfilehash: 9299f7f9f22f3036efcafd6b2a70bf3b25a3cc67
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35907647"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031589"
 ---
 # <a name="how-to-request-your-data-move"></a>Procédure de demande d’un déplacement de données
 
@@ -37,7 +37,7 @@ Les clients Office 365 existants sont autorisés à demander une migration préc
 |Royaume-Uni  <br/> |15 mars 2017  <br/> |15 septembre 2017  <br/> |
 |Corée du Sud  <br/> |1er mai 2017  <br/> |31 octobre 2017  <br/> |
 |France  <br/> |14 mars 2018  <br/> |15 septembre 2018  <br/> |
-|Émirats arabes unis  <br/> |15 juillet 2019  <br/> |31 janvier 2020  <br/> |
+|Émirats arabes unis  <br/> |15 juillet 2019  <br/> |31 janvier 2020  <br/> |
 |Afrique du Sud  <br/> |25 juillet 2019  <br/> |31 janvier 2020  <br/> |
    
 ## <a name="how-to-request-a-move"></a>Procédure de demande d’un déplacement
@@ -56,7 +56,7 @@ Sur la page **Profil de l'organisation**, faites défiler jusqu'à la section su
 - Votre client n’est pas éligible au programme Office 365 Move.  Le droit est déterminé par le pays d’inscription du client.
 - Toutes vos données client principales sur REST se trouvent déjà dans la nouvelle région (consultez la section emplacement des données de la page). 
   
-Si votre organisation a des besoins en matière de résidence des données et que vous devez demander une migration précoce, cliquez sur **opt-in** en haut à droite de la section. Une nouvelle section apparaît sur le côté droit de l’écran, expliquant les détails du programme de déplacement d’Office 365. Sélectionnez le bouton bascule en regard du texte indiquant que **je souhaite que les données client principales de mon organisation**soient migrées. Cliquez ensuite sur **Enregistrer**.
+Si votre organisation a des besoins en matière de résidence des données et que vous devez demander une migration précoce, cliquez sur **opt-in** en haut à droite de la section. Une nouvelle section apparaît sur le côté droit de l’écran, expliquant les détails du programme de déplacement d’Office 365. Sélectionnez le bouton bascule en regard du texte indiquant que **je souhaite que les données client principales de mon organisation soient migrées**. Cliquez ensuite sur **Enregistrer**.
   
 ![Écran de l'action d'abonnement dans le centre de données](media/dataresidencyflyoutae.jpg)
   
@@ -70,9 +70,9 @@ Après avoir demandé un déplacement, nous allons vous déplacer aussi rapideme
   
 Les déplacements peuvent prendre jusqu'à 24 mois à compter de la date d'échéance de la demande pour votre pays.
   
-## <a name="microsoft-teams"></a>Microsoft Teams
+## <a name="microsoft-teams"></a>Microsoft Teams
 
-Microsoft Teams ne prend pas encore en charge la migration du contenu client des centres de données en région vers des centres de données dans le pays où les données de résidence de Microsoft teams sont disponibles.  Par conséquent, seuls les nouveaux clients auront toutes leurs données stockées dans le pays dans les nouvelles régions où Microsoft teams prend en charge la résidence des données.  En savoir plus sur la résidence des données Office 365 sur l’emplacement de votre entreprise [où se trouvent vos données?](https://products.office.com/where-is-your-data-located)   
+Microsoft Teams ne prend pas encore en charge la migration du contenu client des centres de données en région vers des centres de données dans le pays où les données de résidence de Microsoft teams sont disponibles.  Par conséquent, seuls les nouveaux clients auront toutes leurs données stockées dans le pays dans les nouvelles régions où Microsoft teams prend en charge la résidence des données.  En savoir plus sur la résidence des données Office 365 sur l’emplacement de votre entreprise [où se trouvent vos données ?](https://products.office.com/where-is-your-data-located)   
 
 ## <a name="optional-actions-before-you-request-a-move"></a>Actions facultatives avant d’effectuer une demande de déplacement
 
@@ -100,9 +100,9 @@ Le client d'évaluation ne peut pas être associé à votre client existant :
     
 ### <a name="notify-users-to-update-out-of-date-exchange-settings-on-mobile-devices"></a>Notification adressée aux utilisateurs concernant la mise à jour des paramètres Exchange obsolètes sur les appareils mobiles
 
-Si les utilisateurs disposent d’un appareil mobile avec le serveur Exchange défini sur **m.Outlook.com** ou **podxxxxx.Outlook.com**, nous vous recommandons de passer à **Outlook.office365.com**, en suivant les instructions indiquées dans [set up a Mobile Device to Synchronize. avec votre compte](https://support.office.com/article/c9139caf-01ab-41a0-827c-3c06ee569ed3).
+Si les utilisateurs disposent d’un appareil mobile avec le serveur Exchange défini sur **m.Outlook.com** ou **podxxxxx.Outlook.com**, nous vous recommandons de passer à **Outlook.office365.com**, en suivant les instructions de la procédure [configurer un appareil mobile pour une synchronisation avec votre compte](https://support.office.com/article/c9139caf-01ab-41a0-827c-3c06ee569ed3).
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Transfert de données principales vers le nouveau centre de données Office 365 régions centres](moving-data-to-new-datacenter-geos.md)
 
@@ -110,6 +110,6 @@ Si les utilisateurs disposent d’un appareil mobile avec le serveur Exchange d�
 
 [Nouvelles régions de centres de données pour Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   
-[Services Azure par région](https://azure.microsoft.com/en-us/regions/)
+[Services Azure par région](https://azure.microsoft.com/regions/)
   
 

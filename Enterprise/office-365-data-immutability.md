@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Définit et décrit l’immuabilité des données dans Office 365.
-ms.openlocfilehash: 7563b37af6c59d8d1d4273f70d86b2551addab89
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 027191e6bd8cb117bfec3fcd4e9b26ab0a6940b3
+ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067397"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035574"
 ---
 # <a name="immutability-in-office-365"></a>Immuabilité dans Office 365
 
@@ -38,12 +38,12 @@ Grâce aux fonctionnalités de stratégie de rétention et de conservation sur p
 
 De plus, Microsoft a développé des fonctionnalités complémentaires pour permettre [l’archivage des données](https://support.office.com/article/Archiving-third-party-data-in-Office-365-0ce338d5-3666-4a18-86ab-c6910ff408cc) provenant d’autres sources via l’intégration de solutions de capture et de gestion de données tierces. Une fois les données tierces importées, vous pouvez appliquer les fonctionnalités de conformité d’Office 365 aux données, notamment :
 
-- [Conservation pour litige](/microsoft365/compliance/create-a-litigation-hold.md)
-- [Découverte électronique inaltérable et conservation inaltérable](/microsoft365/compliance/manage-legal-investigations.md)
-- [Recherche de conformité](/microsoft365/compliance/search-for-content.md)
-- [Archivage local](/microsoft365/compliance/enable-archive-mailboxes.md)
-- [Audit de boîte aux lettres](/microsoft365/compliance/enable-mailbox-auditing.md)
-- [Stratégies de rétention](/microsoft365/compliance/retention-policies.md)
+- [Conservation pour litige](https://docs.microsoft.com/microsoft-365/compliance/create-a-litigation-hold)
+- [Découverte électronique inaltérable et conservation inaltérable](https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations)
+- [Recherche de conformité](https://docs.microsoft.com/microsoft-365/compliance/search-for-content)
+- [Archivage local](https://docs.microsoft.com/microsoft-365/compliance/enable-archive-mailboxes)
+- [Audit de boîte aux lettres](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing)
+- [Stratégies de rétention](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)
 
 Par exemple, lorsqu’une boîte aux lettres est placée en conservation pour litige, les données tierces sont conservées. Vous pouvez rechercher des données tierces à l’aide de la découverte électronique inaltérable ou de la recherche de conformité. Vous pouvez également appliquer des stratégies d’archivage et de rétention à des données tierces, comme vous pouvez le faire pour Microsoft Data. L’archivage de données tierces dans Office 365 aide votre organisation à respecter les stratégies gouvernementales et réglementaires.
 

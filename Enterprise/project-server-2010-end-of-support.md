@@ -16,12 +16,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: Les fins de prise en charge de Project Server 2010 se terminent le 13 octobre 2020. Utilisez cet article pour effectuer une mise à niveau vers Project Online ou une version plus récente de Project Server en local.
-ms.openlocfilehash: f43bf5bfc6468d48708e02eec62fb3f822f5eb47
-ms.sourcegitcommit: af8175b2d7f84e5c835bbfba82c0b50fe555d9e9
+ms.openlocfilehash: b1505a89b10b3e18da99f66a203dde376f8db5c4
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "36782441"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031619"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Feuille de route de prise en charge de Project Server 2010
 
@@ -93,7 +93,7 @@ Ressources clés :
   
 |**Ressource**|**Description**|
 |:-----|:-----|
-|[Prise en main de Project Online](https://support.office.com/article/e3e5f64f-ada5-4f9d-a578-130b2d4e5f11) <br/> |Comment configurer et utiliser Project online.  <br/> |
+|[Prenez en main Project Online](https://support.office.com/article/e3e5f64f-ada5-4f9d-a578-130b2d4e5f11). <br/> |Comment configurer et utiliser Project online.  <br/> |
 |[Description du service Project Online](https://go.microsoft.com/fwlink/p/?linkid=829088) <br/> |Informations sur les différents plans Project Online disponibles.  <br/> |
    
 ## <a name="migrate-to-a-newer-on-premises-version-of-project-server"></a>Migrer vers une version locale plus récente de Project Server
@@ -157,7 +157,7 @@ Ressources clés :
 
 Après avoir effectué une migration vers Project Server 2013 et vérifié que vos données ont été correctement migrées, l’étape suivante consiste à migrer vos données vers Project Server 2016.
   
-Pour une compréhension complète de ce que vous devez faire pour effectuer une mise à niveau de Project Server 2013 vers Project Server 2016, consultez la rubrique [Upgrade to Project server 2016](https://docs.microsoft.com/en-us/Project/upgrade-to-project-server-2016).
+Pour une compréhension complète de ce que vous devez faire pour effectuer une mise à niveau de Project Server 2013 vers Project Server 2016, consultez la rubrique [Upgrade to Project server 2016](https://docs.microsoft.com/Project/upgrade-to-project-server-2016).
   
 Ressources clés :
   
@@ -176,7 +176,7 @@ Les [éléments que vous devez connaître à propos de la mise à niveau de Proj
 
 Après avoir effectué une migration vers Project Server 2016 et vérifié que vos données ont été correctement migrées, l’étape suivante consiste à migrer vos données vers Project Server 2019.
   
-Pour une compréhension complète de ce que vous devez faire pour effectuer une mise à niveau de Project Server 2016 vers Project Server 2019, consultez la rubrique [Upgrade to Project server 2019](https://docs.microsoft.com/en-us/Project/upgrade-to-project-server-2016).
+Pour une compréhension complète de ce que vous devez faire pour effectuer une mise à niveau de Project Server 2016 vers Project Server 2019, consultez la rubrique [Upgrade to Project server 2019](https://docs.microsoft.com/Project/upgrade-to-project-server-2016).
   
 Ressources clés :
   
@@ -189,7 +189,7 @@ Les [éléments que vous devez connaître à propos de la mise à niveau de Proj
   
 - Le processus de mise à niveau consiste à migrer vos données de votre base de données Project Server 2016 vers la base de données de contenu SharePoint Server 2019.  Project Server 2019 ne créera plus sa propre base de données Project Server dans la batterie de serveurs SharePoint Server.
 
-- Après la mise à niveau, vous devez tenir compte de plusieurs modifications apportées dans Project Web App.  Pour obtenir une description de ces éléments, voir [what’s New in Project Server 2019](https://docs.microsoft.com/en-us/project/what-s-new-for-it-pros-in-project-server-2019#PWAChanges).
+- Après la mise à niveau, vous devez tenir compte de plusieurs modifications apportées dans Project Web App.  Pour obtenir une description de ces éléments, voir [what’s New in Project Server 2019](https://docs.microsoft.com/project/what-s-new-for-it-pros-in-project-server-2019#PWAChanges).
 
   
 Autres ressources :
@@ -208,10 +208,10 @@ Cette affiche de page unique constitue un moyen rapide de comprendre les différ
 
 Vous pouvez également [Télécharger](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) cette affiche et l’imprimer au format Letter, Legal ou tabloïd (11 x 17).
    
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Mise à niveau à partir de SharePoint 2010](upgrade-from-sharepoint-2010.md)
   
-[Mise à niveau à partir des serveurs et clients Office 2010](upgrade-from-office-2010-servers-and-products.md)
+[Mettre à niveau des serveurs et clients Office 2010](upgrade-from-office-2010-servers-and-products.md)
   
 

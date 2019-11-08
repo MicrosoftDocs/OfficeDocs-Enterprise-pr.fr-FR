@@ -13,16 +13,17 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 'Résumé : fonctionnement de l’isolation et du contrôle d’accès dans Azure Active Directory.'
-ms.openlocfilehash: d1f3a10d44a949511236d5adce38693ad2ad5c04
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 0e6423c53bd0c2823708f59830d1ba628a0c71ca
+ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067372"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035781"
 ---
 # <a name="isolation-and-access-control-in-azure-active-directory"></a>Isolation et contrôle d’accès dans Azure Active Directory
 
 Azure Active Directory a été conçu pour héberger plusieurs clients de manière hautement sécurisée via l’isolation logique des données. L’accès à Azure Active Directory est contrôlé par une couche d’autorisation. Azure Active Directory isole les clients qui utilisent des conteneurs clients comme limites de sécurité pour protéger le contenu d’un client afin qu’il ne soit pas accessible ou compromis par les co-locataires. Trois vérifications sont effectuées par la couche d’autorisation Azure Active Directory :
+
 - Le principal est-il activé pour l’accès au client Azure Active Directory ?
 - Le principal est-il activé pour accéder aux données de ce client ?
 - Le rôle du principal dans ce client est-il autorisé pour le type d’accès aux données demandé ?

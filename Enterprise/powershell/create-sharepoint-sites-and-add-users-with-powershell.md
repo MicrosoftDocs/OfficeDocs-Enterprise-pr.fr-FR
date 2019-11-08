@@ -12,23 +12,23 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: 'Résumé: utilisez Office 365 PowerShell pour créer de nouveaux sites SharePoint Online, puis ajoutez des utilisateurs et des groupes à ces sites.'
-ms.openlocfilehash: c2ed2afd7915fa5fc3aa936b5aa09cf90679ff97
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+description: 'Résumé : utilisez Office 365 PowerShell pour créer de nouveaux sites SharePoint Online, puis ajoutez des utilisateurs et des groupes à ces sites.'
+ms.openlocfilehash: 2262c69af7dce7472257512d215c1f0425f875f0
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069100"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031029"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-office-365-powershell"></a>Création de sites SharePoint Online et ajout d’utilisateurs avec Office 365 PowerShell
 
- **Résumé:** Utilisez Office 365 PowerShell pour créer de nouveaux sites SharePoint Online, puis ajoutez des utilisateurs et des groupes à ces sites.
+ **Résumé :** Utilisez Office 365 PowerShell pour créer de nouveaux sites SharePoint Online, puis ajoutez des utilisateurs et des groupes à ces sites.
 
 Lorsque vous utilisez Office 365 PowerShell pour créer des sites SharePoint Online et ajouter des utilisateurs, vous pouvez rapidement et régulièrement exécuter des tâches beaucoup plus rapidement que vous ne pouvez le faire dans le centre d’administration d’Office 356. Vous pouvez également effectuer des tâches qui ne sont pas possibles dans le centre d’administration Office 365. 
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Les procédures décrites dans cette rubrique vous obligent à vous connecter à SharePoint Online. Pour obtenir des instructions, consultez la rubrique [connexion à SharePoint Online PowerShell](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+Les procédures décrites dans cette rubrique vous obligent à vous connecter à SharePoint Online. Pour obtenir des instructions, consultez la rubrique [connexion à SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
 ## <a name="step-1-create-new-site-collections-using-office-365-powershell"></a>Étape 1 : Création de collections de sites à l’aide d’Office 365 PowerShell
 
@@ -71,7 +71,7 @@ Get-SPOSite -Detailed | Format-Table -AutoSize
 ```
 <br/>
 
-4. Notez les nouvelles collections de sites dans la liste. Les collections de sites suivantes doivent s’afficher: **ContosoTest**, **TeamSite01**, **Blog01**et **Projet01**
+4. Notez les nouvelles collections de sites dans la liste. Les collections de sites suivantes doivent s’afficher : **ContosoTest**, **TeamSite01**, **Blog01**et **Projet01**
 
 C’est fait. Vous avez créé plusieurs collections de sites à l’aide du fichier .csv que vous aviez créé et d’une seule cmdlet Windows PowerShell. Vous êtes maintenant prêt à créer et à affecter des utilisateurs à ces sites.
 
@@ -154,7 +154,7 @@ c:\users\MyAlias\desktop\UsersAndGroups.ps1
 
 [Gérer les groupes de sites SharePoint Online Office 365 PowerShell](manage-sharepoint-site-groups-with-powershell.md)
 
-[Gérer Office 365 avec Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
+[Gérer Office 365 avec Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
   
 [Mise en route d'Office 365 Powershell](getting-started-with-office-365-powershell.md)
 

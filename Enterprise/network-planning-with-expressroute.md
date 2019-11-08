@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: ExpressRoute pour Office 365 fournit la connectivité de couche 3 entre votre réseau et les centres de donnes de Microsoft. Les circuits utilisent des publicités d’itinéraires BGP (Border Gateway Protocol) de serveurs frontaux d’Office 365. Du point de vue de vos appareils sur site, lorsqu’ils doivent sélectionner le chemin d’accès TCP/IP correct vers Office 365, Azure ExpressRoute est considéré comme une alternative à Internet.
-ms.openlocfilehash: b31d6150ee3eb11a93b485a5eece22eb3a82021e
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: eb03ffbcb2ce61590c230e5bdfabb29df0b69c95
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782234"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032119"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Planification du réseau avec ExpressRoute pour Office 365
 
@@ -33,8 +33,8 @@ Le tableau suivant présente quelques différences entre les connexions Internet
 
 |**Différences de planification réseau**|**Connexion au réseau Internet**|**Connexion réseau ExpressRoute**|
 |:-----|:-----|:-----|
-| Accès aux services Internet requis, y compris;  <br/>  Résolution de noms DNS  <br/>  Vérification de la révocation de certificats  <br/>  Réseaux de distribution de contenu  <br/> |Oui  <br/> |Les demandes d’infrastructure DNS et/ou CDN appartenant à Microsoft peuvent utiliser le réseau ExpressRoute.  <br/> |
-| Accès aux services Office 365, y compris;  <br/>  Exchange Online  <br/>  SharePoint Online  <br/>  Skype Entreprise Online  <br/>  Office dans un navigateur  <br/>  Portail et authentification Office 365  <br/> |Oui, toutes les applications et fonctionnalités  <br/> |Oui, [applications et fonctionnalités spécifiques](https://aka.ms/o365endpoints) <br/> |
+| Accès aux services Internet requis, y compris ;  <br/>  Résolution de noms DNS  <br/>  Vérification de la révocation de certificats  <br/>  Réseaux de distribution de contenu  <br/> |Oui  <br/> |Les demandes d’infrastructure DNS et/ou CDN appartenant à Microsoft peuvent utiliser le réseau ExpressRoute.  <br/> |
+| Accès aux services Office 365, y compris ;  <br/>  Exchange Online  <br/>  SharePoint Online  <br/>  Skype Entreprise Online  <br/>  Office dans un navigateur  <br/>  Portail et authentification Office 365  <br/> |Oui, toutes les applications et fonctionnalités  <br/> |Oui, [applications et fonctionnalités spécifiques](https://aka.ms/o365endpoints) <br/> |
 |Sécurité locale sur le périmètre.  <br/> |Oui  <br/> |Oui  <br/> |
 |Planification de la haute disponibilité.  <br/> |Basculement vers une autre connexion réseau Internet  <br/> |Basculement vers une autre connexion ExpressRoute  <br/> |
 |Connexion directe avec un profil réseau prévisible.  <br/> |Non  <br/> |Oui  <br/> |
@@ -46,7 +46,7 @@ Développez les titres ci-dessous pour obtenir des instructions de planification
 
 Si vous utilisez un circuit ExpressRoute Azure existant et souhaitez ajouter la connectivité Office 365 sur ce circuit, vérifiez le nombre de circuits, les emplacements de sortie et la taille des circuits afin de vous assurer qu’ils répondent aux besoins de votre utilisation d’Office 365. La plupart des clients nécessitent une bande passante supplémentaire et de nombreux autres nécessitent des circuits supplémentaires.
   
-Pour permettre l’accès à Office 365 sur vos circuits ExpressRoute Azure existants, configurez [les filtres d’itinéraires](https://docs.microsoft.com/azure/expressroute/how-to-routefilter-portal) afin de vous assurer que les services Office 365 sont accessibles.
+Pour permettre l’accès à Office 365 sur vos circuits ExpressRoute Azure existants, [configurez les filtres d’itinéraires](https://docs.microsoft.com/azure/expressroute/how-to-routefilter-portal) afin de vous assurer que les services Office 365 sont accessibles.
   
 L’abonnement Azure ExpressRoute est centré sur le client, ce qui signifie que les abonnements sont liés aux clients. En tant que client, vous pouvez avoir plusieurs circuits ExpressRoute Azure et accéder à de nombreuses ressources Cloud Microsoft sur ces circuits. Par exemple, vous pouvez choisir d’accéder à une machine virtuelle hébergée par Azure, à un client de test Office 365 et à un client de production Office 365 sur une paire de circuits ExpressRoute Azure redondants.
   
@@ -54,7 +54,7 @@ Ce tableau décrit les deux types de relations d’homologation que vous pouvez 
 
 |**Relation d’homologation**|**Azure Private**|**Microsoft**|
 |:-----|:-----|:-----|
-|**Services** <br/> |IaaS: machines virtuelles Azure  <br/> |PaaS: services publics Azure  <br/> SaaS: Office 365  <br/> SaaS: Dynamics 365  <br/> |
+|**Services** <br/> |IaaS : machines virtuelles Azure  <br/> |PaaS : services publics Azure  <br/> SaaS : Office 365  <br/> SaaS : Dynamics 365  <br/> |
 |Initiation de connexion * * * * <br/> |Client-Microsoft  <br/> Microsoft-à-client  <br/> |Client-Microsoft  <br/> Microsoft-à-client  <br/> |
 |**Prise en charge de QoS** <br/> |Aucune qualité de service  <br/> |QoS<sup>1</sup> <br/> |
 
@@ -76,7 +76,7 @@ Toutes nos recommandations sur le type de traitement réseau recommandé s’app
 
 La sécurisation de la connectivité Azure ExpressRoute commence par les mêmes principes que la sécurisation de la connectivité Internet. De nombreux clients choisissent de déployer les contrôles réseau et de périmètre le long du chemin ExpressRoute connectant leur réseau local à Office 365 et à d’autres nuages Microsoft. Ces contrôles peuvent inclure des pare-feu, des proxys d’applications, la prévention des fuites de données, la détection d’intrusions, les systèmes de prévention des intrusions, etc. Dans de nombreux cas, les clients appliquent différents niveaux de contrôle au trafic initié à partir de l’accès local à Microsoft, ainsi que le trafic initié par Microsoft vers le réseau client local, et non le trafic initié en local Destination Internet.
   
-Voici quelques exemples d’intégration de la sécurité avec le [modèle de connectivité ExpressRoute](https://docs.microsoft.com/en-us/azure/expressroute/expressroute-connectivity-models) que vous choisissez de déployer.
+Voici quelques exemples d’intégration de la sécurité avec le [modèle de connectivité ExpressRoute](https://docs.microsoft.com/azure/expressroute/expressroute-connectivity-models) que vous choisissez de déployer.
 
 |**Option d’intégration ExpressRoute**|**Modèle de périmètre de sécurité réseau**|
 |:-----|:-----|
@@ -100,9 +100,9 @@ Lors de l’examen de la topologie des options de périmètre réseau/sécurité
 
 Voici un exemple de Woodgrove Bank qui compare les différentes options de connectivité Azure ExpressRoute avec les modèles de sécurité de périmètre présentés ci-dessus.
   
-### <a name="example-1-securing-azure-expressroute"></a>Exemple 1: sécurisation d’Azure ExpressRoute
+### <a name="example-1-securing-azure-expressroute"></a>Exemple 1 : sécurisation d’Azure ExpressRoute
   
-Woodgrove Bank envisage d’implémenter Azure ExpressRoute et, après avoir planifié l’architecture optimale pour le [routage avec ExpressRoute pour Office 365](routing-with-expressroute.md) et après avoir utilisé les conseils ci-dessus pour comprendre les besoins en bande passante, il détermine le meilleure méthode pour sécuriser leur périmètre.
+Woodgrove Bank envisage d’implémenter Azure ExpressRoute et, après avoir planifié l’architecture optimale pour le [routage avec ExpressRoute pour Office 365](routing-with-expressroute.md) et après avoir utilisé les recommandations ci-dessus pour comprendre les besoins en bande passante, il détermine la meilleure méthode de sécurisation de son périmètre.
   
 Pour Woodgrove, une organisation multinationale avec des emplacements sur plusieurs continents, la sécurité doit s’étendre sur tous les périmètres. L’option de connectivité optimale pour Woodgrove Bank est une connexion à plusieurs points avec plusieurs emplacements d’homologation dans le monde entier afin de répondre aux besoins de leurs employés dans chaque continent. Chaque continent inclut des circuits ExpressRoute Azure redondants dans le continent et la sécurité doit s’étendre sur tous ces circuits.
   
@@ -131,7 +131,7 @@ Concentrez-vous sur les personnes qui utilisent et fonctionnent Office 365, si u
 
 ### <a name="designing-your-availability-plan"></a>Conception de votre plan de disponibilité
   
-Nous vous recommandons vivement de planifier et de concevoir la haute disponibilité et la résilience dans vos scénarios de connectivité de bout en bout pour Office 365. Une conception doit inclure;
+Nous vous recommandons vivement de planifier et de concevoir la haute disponibilité et la résilience dans vos scénarios de connectivité de bout en bout pour Office 365. Une conception doit inclure ;
   
 - aucun point de défaillance unique, y compris les circuits Internet et ExpressRoute.
 
@@ -150,15 +150,15 @@ Nous vous recommandons de configurer au moins deux circuits ExpressRoute avec ch
   
 Il n’est pas recommandé d’utiliser un seul circuit ExpressRoute avec Internet comme sauvegarde.
   
-### <a name="example-2-failover-and-high-availability"></a>Exemple 2: basculement et haute disponibilité
+### <a name="example-2-failover-and-high-availability"></a>Exemple 2 : basculement et haute disponibilité
   
-La conception multi-géographique de la Woodgrove Bank a subi une révision du routage, de la bande passante, de la sécurité et doit à présent passer par un examen de la haute disponibilité. La Woodgrove Bank pense que la haute disponibilité couvre trois catégories; résistance, fiabilité et redondance.
+La conception multi-géographique de la Woodgrove Bank a subi une révision du routage, de la bande passante, de la sécurité et doit à présent passer par un examen de la haute disponibilité. La Woodgrove Bank pense que la haute disponibilité couvre trois catégories ; résistance, fiabilité et redondance.
   
 La résilience permet à la Woodgrove Bank de récupérer rapidement après des défaillances. La fiabilité permet à la Woodgrove Bank d’offrir un résultat cohérent dans le système. La redondance permet à Woodgrove Bank de passer d’une ou plusieurs instances d’infrastructure mises en miroir.
   
 Dans chaque configuration Edge, Woodgrove a redondant des pare-feu, des proxys et des ID. Pour l’Amérique du Nord, la Woodgrove Bank dispose d’une configuration Edge dans son centre de centre de Dallas et d’une autre configuration Edge dans son centre de centre de serveurs. L’équipement redondant à chaque emplacement offre une résistance à cet emplacement.
   
-La configuration réseau de Woodgrove Bank est basée sur quelques principes clés:
+La configuration réseau de Woodgrove Bank est basée sur quelques principes clés :
   
 - Dans chaque région géographique, il existe plusieurs circuits ExpressRoute Azure.
 
@@ -176,7 +176,7 @@ Si la Woodgrove Bank n’a pas pu avoir plusieurs circuits ExpressRoute Azure pa
   
 Il n’est pas recommandé d’exploiter Internet comme configuration de sauvegarde. Cela romp le principe de fiabilité de Woodgrove, ce qui entraîne une expérience incohérente à l’aide de la connexion. En outre, la configuration manuelle est requise pour le basculement en tenant compte des annonces BGP qui ont été configurées, de la configuration NAT, de la configuration DNS et de la configuration du proxy. La complexité de basculement ajoutée augmente le temps de récupération et réduit leur capacité à diagnostiquer et à dépanner les étapes impliquées.
   
-Vous avez toujours des questions sur la planification et l’implémentation de la gestion du trafic ou d’Azure ExpressRoute? Lisez le reste de notre [Guide sur les performances et le réseau,](https://aka.ms/tune) ou le [Forum aux questions sur Azure ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-faqs/).
+Vous avez toujours des questions sur la planification et l’implémentation de la gestion du trafic ou d’Azure ExpressRoute ? Lisez le reste de notre [Guide sur les performances et le réseau,](https://aka.ms/tune) ou le [Forum aux questions sur Azure ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-faqs/).
   
 ## <a name="working-with-azure-expressroute-providers"></a>Utilisation des fournisseurs ExpressRoute Azure
 <a name="BKMK_high-availability"> </a>
@@ -190,7 +190,7 @@ Voici un lien que vous pouvez utiliser pour revenir : [https://aka.ms/planninge
 ## <a name="related-topics"></a>Rubriques connexes
 <a name="BKMK_high-availability"> </a>
 
-[Évaluation de la connectivité réseau Office 365](assessing-network-connectivity.md)
+[Évaluation de la connectivité réseau Office 365](assessing-network-connectivity.md)
   
 [Azure ExpressRoute pour Office 365](azure-expressroute.md)
   

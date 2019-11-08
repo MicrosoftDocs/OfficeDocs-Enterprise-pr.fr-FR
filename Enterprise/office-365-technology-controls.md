@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 'Résumé : vue d’ensemble des pratiques de contrôle technologique de Microsoft pour Office 365.'
-ms.openlocfilehash: 1ddf4efdd8e2c2159f6d6c55cfeead1cfbd54395
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 3063bcaca85d529885fbafddda88f61325b2b83c
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067381"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031139"
 ---
 # <a name="office-365-technology-controls"></a>Contrôles de technologie Office 365 
 
@@ -39,7 +39,7 @@ Customer Lockbox for Office 365 vous aide à respecter les obligations de confor
 
 Dans l’exemple rare où un ingénieur de service Microsoft a besoin d’accéder à vos données, vous autorisez uniquement l’accès aux données requises pour résoudre le problème et pour une durée limitée. Si vous rejetez une demande d’accès, les ingénieurs Microsoft n’ont pas accès à votre contenu et ne pourront pas effectuer les opérations de service. Si vous approuvez la demande, les ingénieurs Microsoft disposent d’un accès limité en temps réel à votre contenu via des interfaces de gestion contrôlées et contraintes.
 
-Les actions effectuées par l’ingénieur du support technique sont consignées à des fins d’audit et sont accessibles via l' [API activité de gestion d’Office 365](https://msdn.microsoft.com/library/office/dn707383.aspx) et le [Centre de sécurité et de conformité](http://protection.office.com/).
+Les actions effectuées par l’ingénieur du support technique sont consignées à des fins d’audit et sont accessibles via l' [API activité de gestion d’Office 365](https://msdn.microsoft.com/library/office/dn707383.aspx) et le [Centre de sécurité et de conformité](https://protection.office.com/).
 
 >[!NOTE]
 > Le référentiel sécurisé du client est disponible dans [Office 365 entreprise E5](https://products.office.com/business/office-365-enterprise-e5-business-software) en tant qu’achat de complément. Pour plus d'informations, voir [Demandes Customer Lockbox dans Office 365](https://support.office.com/article/Office-365-Customer-Lockbox-Requests-36f9cdd1-e64c-421b-a7e4-4a54d16440a2).
@@ -60,7 +60,7 @@ Les serveurs Office 365 restreignent les sessions simultanées à une session ad
 
 Les restrictions d’utilisation et les exigences de connexion et de configuration pour le personnel Office 365 sont établies par les stratégies de groupe Active Directory. Ces stratégies incluent les caractéristiques suivantes :
 
-- TSGs utilisent uniquement le chiffrement validé [FIPS](https://www.microsoft.com/en-us/TrustCenter/Compliance/FIPS) 140-2.
+- TSGs utilisent uniquement le chiffrement validé [FIPS](https://www.microsoft.com/TrustCenter/Compliance/FIPS) 140-2.
 - Les sessions TSG se déconnectent au bout de 30 minutes d’inactivité.
 - Les sessions TSG se déconnectent automatiquement après 24 heures.
 

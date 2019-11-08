@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Explique pourquoi l’optimisation du réseau est importante pour les services SaaS, l’objectif de la mise en réseau Office 365 et la façon dont SaaS requiert une mise en réseau différente des autres charges de travail.
-ms.openlocfilehash: e1ae446d7a69d0fab83e7dd4aa253bd1120e6c08
-ms.sourcegitcommit: 99bf8739dfe1842c71154ed9548ebdd013c7e59e
+ms.openlocfilehash: f26a7c245b0a6258717e8917628caeaef250e378
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017284"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031889"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Vue d’ensemble de la connectivité réseau Office 365
 
@@ -31,9 +31,9 @@ Dans cet article, vous allez découvrir les objectifs de la mise en réseau Offi
 
 Le but ultime de la mise en réseau Office 365 est d’optimiser l’expérience de l’utilisateur final en autorisant l’accès le moins restrictif entre les clients et les points de terminaison Office 365 les plus proches. La qualité de l’expérience de l’utilisateur final est directement liée aux performances et à la réactivité de l’application utilisée par l’utilisateur. Par exemple, Microsoft teams s’appuie sur une faible latence afin que les appels téléphoniques, les conférences et les collaborations à l’écran partagés soient exempts de problèmes, et qu’Outlook repose sur une connectivité réseau de grande qualité pour les fonctionnalités de recherche instantanée qui exploitent l’indexation côté serveur et les IA possibilités.
 
-L’objectif principal de la conception du réseau est de réduire la latence en réduisant le temps d’aller-retour (RTT) entre les ordinateurs clients et le réseau global Microsoft, le réseau principal du réseau public de Microsoft qui interconnecte tous les centres de contenu de Microsoft avec une latence faible. , les points d’entrée des applications Cloud haute disponibilité sont répartis dans le monde entier. Pour en savoir plus sur le réseau mondial Microsoft, consultez la rubrique relative à la [façon dont Microsoft crée un réseau mondial rapide et fiable](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
+L’objectif principal de la conception du réseau est de réduire la latence en réduisant le temps d’aller-retour (RTT) entre les ordinateurs clients et le réseau global Microsoft, le réseau principal du réseau public de Microsoft qui interconnecte tous les centres de contenu de Microsoft avec une latence faible. , les points d’entrée des applications Cloud haute disponibilité sont répartis dans le monde entier. Pour en savoir plus sur le réseau mondial Microsoft, consultez la rubrique relative à la [façon dont Microsoft crée un réseau mondial rapide et fiable](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
 
-L’optimisation des performances du réseau Office 365 n’a pas besoin d’être compliquée. Vous pouvez obtenir les meilleures performances possibles en suivant quelques principes clés:
+L’optimisation des performances du réseau Office 365 n’a pas besoin d’être compliquée. Vous pouvez obtenir les meilleures performances possibles en suivant quelques principes clés :
 
 - Identifier le trafic réseau Office 365
 - Autoriser la sortie de succursale locale du trafic réseau Office 365 vers Internet à partir de chaque emplacement où les utilisateurs se connectent à Office 365
@@ -51,21 +51,21 @@ Dans les architectures réseau traditionnelles, une latence élevée pour le tra
 
 Nous facilitent l’identification du trafic réseau Office 365 et simplifient la gestion de l’identification réseau.
 
-- Nouvelles catégories de points de terminaison réseau permettant de différencier le trafic réseau hautement critique du trafic réseau qui n’est pas influencé par les latences Internet. Il existe simplement quelques URL et prise en charge des adresses IP dans la catégorie «optimiser» la plus critique.
+- Nouvelles catégories de points de terminaison réseau permettant de différencier le trafic réseau hautement critique du trafic réseau qui n’est pas influencé par les latences Internet. Il existe simplement quelques URL et prise en charge des adresses IP dans la catégorie « optimiser » la plus critique.
 - Services Web pour l’utilisation de scripts ou la configuration de l’appareil direct et la gestion des modifications de l’identification réseau Office 365. Les modifications sont disponibles à partir du service Web ou au format RSS, ou sur le courrier électronique à l’aide d’un modèle de flux Microsoft.
-- [Programme de partenariat réseau office 365](http://aka.ms/Office365NPP) avec des partenaires Microsoft qui fournissent des appareils ou des services qui suivent les principes de connectivité réseau d’Office 365 et qui ont une configuration simple.
+- [Programme de partenariat réseau office 365](https://aka.ms/Office365NPP) avec des partenaires Microsoft qui fournissent des appareils ou des services qui suivent les principes de connectivité réseau d’Office 365 et qui ont une configuration simple.
 
 ## <a name="securing-office-365-connections"></a>Sécurisation des connexions Office 365
 
 L’objectif de la sécurité réseau traditionnelle est de renforcer le périmètre du réseau d’entreprise contre les intrusions et les attaques malveillantes. La plupart des réseaux d’entreprise appliquent la sécurité réseau pour le trafic Internet à l’aide de technologies telles que les serveurs proxy, les pare-feu, les interruptions de l’activité SSL et les systèmes de protection contre la perte de données. Ces technologies fournissent une atténuation importante des risques pour les demandes Internet génériques, mais elles peuvent réduire considérablement les performances, l’extensibilité et la qualité de l’expérience de l’utilisateur final lorsqu’elles sont appliquées aux points de terminaison Office 365.
 
-Office 365 permet de répondre aux besoins de votre organisation en matière de conformité de la sécurité et de l’utilisation des données grâce à des fonctionnalités de sécurité et de gouvernance intégrées conçues spécialement pour les charges de travail et les fonctionnalités Office 365. Pour plus d’informations sur la sécurité et la conformité d’Office 365, voir la feuille de [route de sécurité d’office 365](https://docs.microsoft.com/en-us/office365/securitycompliance/security-roadmap). Pour plus d’informations sur les recommandations de Microsoft et la position de support sur les solutions réseau avancées qui effectuent un traitement avancé sur le trafic Office 365, consultez la rubrique [utilisation de périphériques ou de solutions réseau tiers sur le trafic office 365](https://support.microsoft.com/en-us/help/2690045).
+Office 365 permet de répondre aux besoins de votre organisation en matière de conformité de la sécurité et de l’utilisation des données grâce à des fonctionnalités de sécurité et de gouvernance intégrées conçues spécialement pour les charges de travail et les fonctionnalités Office 365. Pour plus d’informations sur la sécurité et la conformité d’Office 365, voir la feuille de [route de sécurité d’office 365](https://docs.microsoft.com/office365/securitycompliance/security-roadmap). Pour plus d’informations sur les recommandations de Microsoft et la position de support sur les solutions réseau avancées qui effectuent un traitement avancé sur le trafic Office 365, consultez la rubrique [utilisation de périphériques ou de solutions réseau tiers sur le trafic office 365](https://support.microsoft.com/help/2690045).
 
-## <a name="why-is-office-365-networking-different"></a>Pourquoi la mise en réseau Office 365 est-elle différente?
+## <a name="why-is-office-365-networking-different"></a>Pourquoi la mise en réseau Office 365 est-elle différente ?
 
 Office 365 est conçu pour des performances optimales à l’aide de la sécurité du point de terminaison et des connexions réseau chiffrées, ce qui réduit la nécessité d’appliquer la sécurité de périmètre. Les centres de résultats Office 365 sont situés dans le monde entier et le service est conçu pour utiliser différentes méthodes de connexion des clients aux meilleurs points de terminaison de service disponibles. Étant donné que les données utilisateur et le traitement sont répartis entre de nombreux centres de données Microsoft, il n’existe pas de point de terminaison réseau auquel les ordinateurs clients peuvent se connecter. En fait, les données et les services de votre client 365 Office sont optimisés dynamiquement par le réseau global Microsoft pour s’adapter aux emplacements géographiques à partir desquels les utilisateurs finaux peuvent y accéder.
 
-Certains problèmes de performances courants sont créés lorsque le trafic Office 365 est soumis à une inspection de paquets et à une sortie centralisée:
+Certains problèmes de performances courants sont créés lorsque le trafic Office 365 est soumis à une inspection de paquets et à une sortie centralisée :
 
 - Une latence élevée peut entraîner de très faibles performances des flux vidéo et audio, ainsi qu’une réponse lente de l’extraction des données, des recherches, de la collaboration en temps réel, des informations de disponibilité du calendrier, du contenu de produit et d’autres services.
 - Les connexions Egressing à partir d’un emplacement central dépassent les capacités de routage dynamique du réseau global Office 365, en ajoutant de la latence et du temps d’aller-retour
@@ -75,14 +75,14 @@ Le fait de raccourcir le chemin d’accès réseau aux points d’entrée Office
 
 ![Architecture réseau de sortie locale](media/6bc636b0-1234-4ceb-a45a-aadd1044b39c.png)
 
-L’architecture de sortie locale présente les avantages suivants pour le trafic réseau Office 365 sur le modèle traditionnel:
+L’architecture de sortie locale présente les avantages suivants pour le trafic réseau Office 365 sur le modèle traditionnel :
   
-- Fournit des performances Office 365 optimales en optimisant la longueur de l’itinéraire. Les connexions des utilisateurs finaux sont routées de manière dynamique vers le point d’entrée Office 365 le plus proche de l’infrastructure frontale du _service distribué_ de Microsoft Global Network, et le trafic est ensuite routé en interne vers les données et les points de terminaison de service par le biais de Microsoft fibre sombre à haute disponibilité de latence ultra faible.
+- Fournit des performances Office 365 optimales en optimisant la longueur de l’itinéraire. Les connexions des utilisateurs finaux sont routées de manière dynamique vers le point d’entrée Office 365 le plus proche par l’infrastructure de l' _avant de service distribué_ de Microsoft Global Network, et le trafic est ensuite routé en interne vers les données et les points de terminaison de service via la fibre haute disponibilité haute disponibilité de Microsoft.
 - Réduit la charge sur l’infrastructure réseau d’entreprise en autorisant la sortie locale pour le trafic Office 365, le contournement des proxys et les appareils d’inspection du trafic.
 - Sécurise les connexions aux deux extrémités en tirant parti des fonctionnalités de sécurité du point de terminaison client et de sécurité du Cloud, ce qui évite l’application de technologies de sécurité réseau redondantes.
 
 > [!NOTE]
-> L’infrastructure de _façade de service distribué_ est le périmètre réseau hautement disponible et évolutif du réseau Microsoft Global, avec des emplacements géographiquement dispersés. Il met fin aux connexions des utilisateurs finaux et les achemine efficacement dans le réseau global de Microsoft. Pour en savoir plus sur le réseau mondial Microsoft, consultez la rubrique relative à la [façon dont Microsoft crée un réseau mondial rapide et fiable](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
+> L’infrastructure de _façade de service distribué_ est le périmètre réseau hautement disponible et évolutif du réseau Microsoft Global, avec des emplacements géographiquement dispersés. Il met fin aux connexions des utilisateurs finaux et les achemine efficacement dans le réseau global de Microsoft. Pour en savoir plus sur le réseau mondial Microsoft, consultez la rubrique relative à la [façon dont Microsoft crée un réseau mondial rapide et fiable](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
 
 Pour plus d’informations sur la compréhension et l’application de principes de connectivité réseau Office 365, consultez la rubrique [office 365 Network Connectivity principes](office-365-network-connectivity-principles.md).
 
@@ -100,11 +100,11 @@ L’optimisation des performances du réseau Office 365 revient à supprimer les
 
 [Service web d’URL et d’adresses IP Office 365](office-365-ip-web-service.md)
 
-[Évaluation de la connectivité réseau Office 365](assessing-network-connectivity.md)
+[Évaluation de la connectivité réseau Office 365](assessing-network-connectivity.md)
 
 [Paramétrage des performances et du réseau Office 365](network-planning-and-performance.md)
 
-[Évaluation de la connectivité réseau Office 365](assessing-network-connectivity.md)
+[Évaluation de la connectivité réseau Office 365](assessing-network-connectivity.md)
 
 [Réglage des performances Office 365 à l’aide du planning de référence et de l’historique des performances](performance-tuning-using-baselines-and-history.md)
 
@@ -114,6 +114,6 @@ L’optimisation des performances du réseau Office 365 revient à supprimer les
 
 [Outil d’intégration réseau Office 365](https://aka.ms/netonboard)
 
-[Comment Microsoft crée un réseau mondial rapide et fiable](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
+[Comment Microsoft crée un réseau mondial rapide et fiable](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
 
 [Blog sur le réseau Office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)

@@ -8,17 +8,19 @@ audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 3c364f9e-b9f6-4da4-a792-c8e8c8cd2e86
 description: Cet article explique comment vous pouvez diagnostiquer les problèmes courants liés à votre site SharePoint Online à l’aide des outils de développement Internet Explorer.
-ms.openlocfilehash: a4d66fd019a3b477a97dbf039144734dc7ee1288
-ms.sourcegitcommit: cb338a74194ec9ba0913070e2b74c9f50caffb3b
+ms.openlocfilehash: 2b97098c68eb519ed5a1edc26146c521f39a11d1
+ms.sourcegitcommit: fa900775790eb369db1983cd3868b628b699f145
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35605497"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033410"
 ---
 # <a name="diagnosing-performance-issues-with-sharepoint-online"></a>Diagnostic des problèmes de performances avec SharePoint Online
 
@@ -32,18 +34,18 @@ Il existe trois méthodes différentes pour identifier une page sur un site Shar
 
 - Mesures d’en-tête de réponse SharePoint Online
 
-Cette rubrique décrit l’utilisation de chacune de ces méthodes pour diagnostiquer les problèmes de performances. Une fois que vous avez trouvé la cause du problème, vous pouvez travailler vers une solution à l’aide des articles sur l’amélioration des performances SharePoint que vous http://aka.ms/tunepouvez trouver sur.
+Cette rubrique décrit l’utilisation de chacune de ces méthodes pour diagnostiquer les problèmes de performances. Une fois que vous avez trouvé la cause du problème, vous pouvez travailler vers une solution à l’aide des articles sur l’amélioration des performances SharePoint que vous https://aka.ms/tunepouvez trouver sur.
   
 ## <a name="using-the-f12-tool-bar-to-diagnose-performance-in-sharepoint-online"></a>Utilisation de la barre d’outils F12 pour diagnostiquer les performances dans SharePoint Online
 <a name="F12ToolInfo"> </a>
 
-Dans cet article, nous utilisons Internet Explorer 11. Les versions des outils de développement F12 sur d’autres navigateurs ont des fonctionnalités similaires, mais elles peuvent sembler légèrement différentes. Pour plus d’informations sur les outils de développement F12, voir:
+Dans cet article, nous utilisons Internet Explorer 11. Les versions des outils de développement F12 sur d’autres navigateurs ont des fonctionnalités similaires, mais elles peuvent sembler légèrement différentes. Pour plus d’informations sur les outils de développement F12, voir :
   
 - [Nouveautés dans les outils F12](https://go.microsoft.com/fwlink/p/?LinkId=522545)
 
 - [Utilisation des outils de développement F12](https://go.microsoft.com/fwlink/p/?LinkId=522546)
 
-Pour afficher les outils de développement, appuyez sur la **touche F12** , puis cliquez sur l’icône Wi-Fi:
+Pour afficher les outils de développement, appuyez sur la **touche F12** , puis cliquez sur l’icône Wi-Fi :
   
 ![Capture d’écran de l’icône Wi-Fi des outils de développement F12](media/27acacbb-5688-459a-aa2f-5c8c5f17b76e.png)
   
@@ -81,7 +83,7 @@ Dans SharePoint Online, vous pouvez accéder aux informations qui sont renvoyée
 
     ![Diagramme présentant l’URL de l’en-tête de réponse](media/efc7076e-447e-447e-882a-ae3aa721e2c3.png)
   
-## <a name="whats-causing-performance-issues-in-sharepoint-online"></a>Qu’est-ce qui provoque des problèmes de performances dans SharePoint Online?
+## <a name="whats-causing-performance-issues-in-sharepoint-online"></a>Qu’est-ce qui provoque des problèmes de performances dans SharePoint Online ?
 <a name="F12ToolInfo"> </a>
 
 L’article [options de navigation pour SharePoint Online](navigation-options-for-sharepoint-online.md) illustre un exemple d’utilisation de la valeur SPRequestDuration pour déterminer que la navigation structurelle compliquée entraînait un long traitement de la page sur le serveur. En prenant une valeur pour un site de base (sans personnalisation), il est possible de déterminer si le chargement d’un fichier donné prend beaucoup de temps. L’exemple utilisé dans les [options de navigation pour SharePoint Online](navigation-options-for-sharepoint-online.md) est le fichier principal. aspx. Ce fichier contient la plupart des codes ASP.NET qui s’exécutent pour votre chargement de page. Selon le modèle de site que vous utilisez, il peut s’agir de Start. aspx, Home. aspx, default. aspx ou d’un autre nom si vous personnalisez la page d’accueil. Si ce nombre est considérablement supérieur à votre site de référence, c’est qu’il y a un problème complexe dans votre page, ce qui entraîne des problèmes de performances.

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-analytics
 description: Explication des fonctionnalités de création de rapports dans Office 365.
-ms.openlocfilehash: 27dc1f8164e21040399ae9882c3fab78ab3d5eb2
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 5b2f06be0eba19b8c4d49f405e40dba9ff64bd25
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067346"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031859"
 ---
 # <a name="office-365-reporting-features"></a>Fonctionnalités de création de rapports Office 365 
 
@@ -78,7 +78,7 @@ Les rapports de conformité MDM fournissent une vue d’ensemble des stratégies
 
 Les stratégies DLP aident à gérer la sécurité et le flux d’informations au sein d’une organisation. Vous pouvez configurer des stratégies pour bloquer l’accès au contenu, chiffrer les données ou informer les utilisateurs des violations de stratégie et de stratégie à l’aide des conseils de stratégie dans l’application DLP. Les rapports DLP fournissent un aperçu du nombre de correspondances de stratégie et de règle, de remplacements et de faux positifs.
 
-Vous utilisez le centre d’administration Microsoft 365 pour afficher des informations sur le nombre de messages détectés par vos stratégies DLP. Les rapports DLP fournissent des informations sur les correspondances de stratégie et de règle pour les messages envoyés et reçus. Vous pouvez également afficher le nombre de correspondances, de remplacements et de faux positifs pour chaque stratégie au cours des 24 dernières heures à l’aide du centre d’administration Exchange. Si vous téléchargez un rapport Excel, vous pouvez afficher encore plus de détails, tels que la personne qui a envoyé le message, la date du jour et les correspondances de stratégie qui ont été déclenchées. Pour plus d’informations, consultez la rubrique [afficher les rapports sur les détections de stratégies DLP](https://technet.microsoft.com/en-us/library/jj889415(v=exchg.150).aspx).
+Vous utilisez le centre d’administration Microsoft 365 pour afficher des informations sur le nombre de messages détectés par vos stratégies DLP. Les rapports DLP fournissent des informations sur les correspondances de stratégie et de règle pour les messages envoyés et reçus. Vous pouvez également afficher le nombre de correspondances, de remplacements et de faux positifs pour chaque stratégie au cours des 24 dernières heures à l’aide du centre d’administration Exchange. Si vous téléchargez un rapport Excel, vous pouvez afficher encore plus de détails, tels que la personne qui a envoyé le message, la date du jour et les correspondances de stratégie qui ont été déclenchées. Pour plus d’informations, consultez la rubrique [afficher les rapports sur les détections de stratégies DLP](https://technet.microsoft.com/library/jj889415(v=exchg.150).aspx).
 
 ## <a name="auditing-in-yammer-enterprise"></a>Audit dans Yammer Enterprise
 

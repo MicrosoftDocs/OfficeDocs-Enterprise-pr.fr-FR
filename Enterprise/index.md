@@ -14,14 +14,14 @@ ms.devlang: na
 ms.topic: landing-page
 ms.date: 8/21/2018
 ms.author: robmazz
-ms.openlocfilehash: 265de12a2f1156355873d6798a61a0438f6764a1
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: f655daf2887fd5bf8cc82065dc0cc53282b13146
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067109"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030658"
 ---
-<h1>Office 365 Entreprise</h1>
+<h1>Office 365 Entreprise</h1>
 <p>Microsoft Office&nbsp;365 fournit des services de Cloud en ligne puissants qui permettent la collaboration, la sécurité et la conformité, la mobilité, l’intelligence et l’analyse. Cette page fournit des liens vers des conseils pour les administrateurs et les professionnels de l’informatique qui déploient, configurent et gèrent les services Office&nbsp;365 dans des organisations d’entreprise.</p>
 <ul class="cardsF panelContent">
     <li>
@@ -31,7 +31,7 @@ ms.locfileid: "37067109"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us//office/media/icons/get-started.svg" alt="Get Started icon" />
+                            <img src="https://docs.microsoft.com//office/media/icons/get-started.svg" alt="Get Started icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -50,7 +50,7 @@ ms.locfileid: "37067109"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/connector.svg" alt="Connector icon" />
+                            <img src="https://docs.microsoft.com/office/media/icons/connector.svg" alt="Connector icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -69,11 +69,11 @@ ms.locfileid: "37067109"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/blocks.svg" alt="Blocks icon" />
+                            <img src="https://docs.microsoft.com/office/media/icons/blocks.svg" alt="Blocks icon" />
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Office 365 ProPlus</h3>
+                        <h3>Office 365 ProPlus</h3>
                 <p>Planifiez, déployez et gérez&nbsp;Office 365 ProPlus dans votre environnement d’entreprise.</p>
                     </div>
                 </div>
@@ -88,7 +88,7 @@ ms.locfileid: "37067109"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/deploy.svg" alt="Deploy icon" />
+                            <img src="https://docs.microsoft.com/office/media/icons/deploy.svg" alt="Deploy icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -107,7 +107,7 @@ ms.locfileid: "37067109"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/hybrid.svg" alt="Hybrid icon" />
+                            <img src="https://docs.microsoft.com/office/media/icons/hybrid.svg" alt="Hybrid icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -126,7 +126,7 @@ ms.locfileid: "37067109"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/education-tutorial.svg" alt="Education icon" />
+                            <img src="https://docs.microsoft.com/office/media/icons/education-tutorial.svg" alt="Education icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -185,7 +185,7 @@ ms.locfileid: "37067109"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3><a href="https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online">Skype Entreprise Online</a></h3>
+                        <h3><a href="https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online">Skype Entreprise Online</a></h3>
                     </div>
                 </div>
             </div>
@@ -252,7 +252,7 @@ ms.locfileid: "37067109"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/users-people.svg" alt="New Office 365 Content" data-linktype="external">
+                            <img src="https://docs.microsoft.com/office/media/icons/users-people.svg" alt="New Office 365 Content" data-linktype="external">
                         </div>
                     </div>
                     <div class="cardText">
@@ -269,7 +269,7 @@ ms.locfileid: "37067109"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/chat.svg" alt="Chat image" data-linktype="external">
+                            <img src="https://docs.microsoft.com/office/media/icons/chat.svg" alt="Chat image" data-linktype="external">
                         </div>
                     </div>
                     <div class="cardText">

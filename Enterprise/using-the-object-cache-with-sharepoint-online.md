@@ -8,17 +8,19 @@ audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 38bc9c14-3826-449c-beb6-b1003bcbeaaf
 description: Cet article explique la différence entre l’utilisation du cache d’objets dans SharePoint Server 2013 sur site et SharePoint Online.
-ms.openlocfilehash: 8ae2e2675444c023b69030f3f46f170b450fb390
-ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
+ms.openlocfilehash: 4c6cd225bf0f7324dcb23c55adb87e2365d35472
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35616837"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38078023"
 ---
 # <a name="using-the-object-cache-with-sharepoint-online"></a>Utilisation du cache d’objets avec SharePoint Online
 
@@ -44,9 +46,9 @@ Comme vous pouvez le voir dans le diagramme, les risques qu’un utilisateur don
   
 Pour toutes ces raisons, il n’est pas possible de s’appuyer sur la récupération des objets mis en cache pour garantir une expérience utilisateur de qualité et des temps de chargement des pages dans SharePoint Online.
   
-## <a name="if-we-cant-rely-on-the-object-cache-to-improve-performance-in-sharepoint-online-what-do-we-use-instead"></a>Si nous ne pouvons pas compter sur le cache d’objets pour améliorer les performances dans SharePoint Online, que pouvons-nous utiliser à la place?
+## <a name="if-we-cant-rely-on-the-object-cache-to-improve-performance-in-sharepoint-online-what-do-we-use-instead"></a>Si nous ne pouvons pas compter sur le cache d’objets pour améliorer les performances dans SharePoint Online, que pouvons-nous utiliser à la place ?
 
-Étant donné que vous ne devez pas vous appuyer sur la mise en cache dans SharePoint Online, vous devez évaluer d’autres approches de conception pour les personnalisations SharePoint qui utilisent le cache d’objets. Cela signifie que l’utilisation d’approches pour les problèmes de performances ne repose pas sur la mise en cache d’objets pour produire de bonnes résultats pour les utilisateurs. Ceci est décrit dans certains autres Articles de cette série et inclut les éléments suivants:
+Étant donné que vous ne devez pas vous appuyer sur la mise en cache dans SharePoint Online, vous devez évaluer d’autres approches de conception pour les personnalisations SharePoint qui utilisent le cache d’objets. Cela signifie que l’utilisation d’approches pour les problèmes de performances ne repose pas sur la mise en cache d’objets pour produire de bonnes résultats pour les utilisateurs. Ceci est décrit dans certains autres Articles de cette série et inclut les éléments suivants :
   
 - [Options de navigation pour SharePoint Online](navigation-options-for-sharepoint-online.md)
     

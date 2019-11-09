@@ -10,18 +10,20 @@ ms.service: o365-solutions
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: 'Résumé : configurez et montrez comment Office 365 Information Rights Management protège vos fichiers sensibles, même lorsqu’ils sont publiés dans une collection de sites SharePoint Online incorrecte.'
-ms.openlocfilehash: 3fa771d63ca30fb53ac2c77466546cf3a2098deb
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: b8cb56a69a04133b2863c31da9e359c2272d4fc5
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031569"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38078123"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Protection des fichiers sensibles dans l’environnement de développement/test Office 365
 
@@ -32,7 +34,7 @@ La gestion des droits relatifs à l’information (IRM) dans Office 365 est un e
 Les instructions de cet article vous permettent d’activer et de tester la gestion des droits relatifs à l’information (IRM) dans Office 365 pour les fichiers contenant des informations sensibles possibles dans votre abonnement d’évaluation Office 365.
   
 > [!TIP]
-> Cliquez sur[ici](https://aka.ms/catlgstack) pour afficher le plan de tous les articles dans le Guide de Laboratoire Test Office 365.
+> Cliquez [ici](https://aka.ms/catlgstack) pour afficher le plan de tous les articles dans le Guide de Laboratoire Test Office 365.
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>Phase 1 : créer votre environnement de développement/test Office 365
 

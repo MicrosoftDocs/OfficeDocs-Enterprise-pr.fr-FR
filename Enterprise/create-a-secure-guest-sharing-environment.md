@@ -6,14 +6,15 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
+ms.collection: SPO_Content
 localization_priority: Priority
 description: Découvrir comment créer un environnement de partage d’invités sécurisé avec Microsoft 365.
-ms.openlocfilehash: 97aa0cf11159af483c307de8bdb2c3b15e704d36
-ms.sourcegitcommit: c16ab90d0b9902228ce4337f1c64900592936cce
+ms.openlocfilehash: 727b635c0ed13a9dcf85bb93092ab9a002740e99
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37108303"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38077707"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Créer un environnement de partage d’invités sécurisé
 
@@ -83,7 +84,7 @@ Pour créer une stratégie d’accès conditionnel, procédez comme suit :
 3. Dans la zone **Nom**, tapez *Stratégie des conditions d’utilisation des utilisateurs invités*.
 4. Sous **Affectations**, cliquez sur **Utilisateurs et groupes**.
 5. Dans le panneau **Utilisateurs et groupes**, sélectionnez **Sélectionner Utilisateurs et groupes**, activez la case à cocher **Tous les invités et utilisateurs externes**, puis cliquez sur **Terminé**.
-6. Sous **Affectations, cliquez sur **Actions ou applications Cloud**.
+6. Sous **Affectations**, cliquez sur **Actions ou applications Cloud**.
 7. Sous l'onglet **Inclure**, sélectionnez **Sélectionner les applications**, puis cliquez sur **Sélectionner**.
 8. Dans le panneau **Sélectionner**, sélectionnez **Microsoft Teams**, **Office 365 SharePoint Online** et **Outlook Groups**, puis cliquez sur **Sélectionner**.
 9. Dans le panneau **Actions ou applications Cloud**, cliquez sur **Terminé**.
@@ -109,7 +110,7 @@ Pour créer un nouveau programme, procédez comme suit :
 2. Dans le menu de gauche, cliquez sur **Programmes**
 3. Cliquez sur **Nouveau programme**.
 4. Dans la zone **Nom**, tapez *Programme de révision d’accès invité*.
-5. Dans la zone **Description**, tapez Programme pour les révisions d’accès invité*.
+5. Dans la zone **Description**, tapez *Programme pour les révisions d’accès invité*.
 6. Cliquez sur **Créer**.
 
 Une fois le programme a été créé, nous pouvons créer une révision d’accès invité et l’associer au programme.
@@ -121,9 +122,9 @@ Pour configurer une révision d’accès des utilisateurs invités, procédez co
 3. Dans la zone **Nom**, tapez *Révision trimestrielle d’accès invité*.
 4. Pour **Fréquence**, choisissez **Trimestrielle**.
 5. Pour **Fin**, choisissez **Jamais**.
-6. Pour **Portée, choisissez **Utilisateurs invités uniquement**.
+6. Pour **Portée**, choisissez **Utilisateurs invités uniquement**.
 7. Cliquez sur **Groupe**, sélectionnez les groupes que vous voulez inclure dans la révision Access, puis cliquez sur **Sélectionner**.
-8. Sous **Programmes, cliquez sur **Lier au programme**.
+8. Sous **Programmes**, cliquez sur **Lier au programme**.
 9. Dans le panneau **Sélectionner un programme**, choisissez **Programme de révision d’accès invité**
 10. Cliquez sur **Démarrer**.
 
@@ -146,18 +147,18 @@ Pour limiter l'accès Web uniquement aux invités, procédez comme suit :
 3. Dans la zone **Nom**, tapez *Accès au navigateur de l'utilisateur invité*.
 4. Sous **Affectations**, cliquez sur **Utilisateurs et groupes**.
 5. Dans le panneau **Utilisateurs et groupes**, sélectionnez **Sélectionner Utilisateurs et groupes**, activez la case à cocher **Tous les invités et utilisateurs externes**, puis cliquez sur **Terminé**.
-6. Sous **Affectations, cliquez sur **Actions ou applications Cloud**.
+6. Sous **Affectations**, cliquez sur **Actions ou applications Cloud**.
 7. Sous l'onglet **Inclure**, sélectionnez **Sélectionner les applications**, puis cliquez sur **Sélectionner**.
 8. Dans le panneau **Sélectionner**, sélectionnez **Microsoft Teams**, **Office 365 SharePoint Online** et **Outlook Groups**, puis cliquez sur **Sélectionner**.
 9. Dans le panneau **Actions ou applications Cloud**, cliquez sur **Terminé**.
-10. Sous **Affectations, cliquez sur **Conditions**.
+10. Sous **Affectations**, cliquez sur **Conditions**.
 11. Dans le panneau **Conditions**, cliquez sur **Applications clientes**.
 12. Dans le panneau **Applications clientes**, cliquez sur **Oui** pour **configurer**, puis sélectionnez les paramètres **Applications mobiles et clients de bureau** et **Clients d’authentification modernes**.</br>
     ![Capture d'écran des paramètres des applications clientes à accès conditionnel d'Azure AD](media/azure-ad-conditional-access-client-mobile.png)
 13. Cliquez sur **Terminé**, puis dans le panneau **Conditions**, cliquez de nouveau sur **Terminé**.
 14. Sous **Contrôles d’accès**, cliquez sur **Accorder**.
 15. Sur le panneau **Accorder**, sélectionnez les options **Exige que l’appareil soit marqué comme conforme** et **Exige un appareil joint Azure AD Hybride**.
-16. Sous **Pour plusieurs contrôles, sélectionnez Exige l’un des contrôles sélectionnés**, puis cliquez sur **Sélectionner**.
+16. Sous **Pour plusieurs contrôles**, sélectionnez **Exige l’un des contrôles sélectionnés**, puis cliquez sur **Sélectionner**.
 17. Dans le panneau **Nouveau**, sous **Activer la stratégie**, cliquez sur **Activer**, puis sur **Créer**.
 
 ## <a name="configure-a-session-timeout-for-guest-users"></a>Configurer un délai d’expiration de session pour les utilisateurs invités
@@ -170,7 +171,7 @@ Pour configurer une stratégie de délai d’expiration de session d’invité, 
 3. Dans la zone **Nom**, tapez *Délai d’expiration de session des invités*.
 4. Sous **Affectations**, cliquez sur **Utilisateurs et groupes**.
 5. Dans le panneau **Utilisateurs et groupes**, sélectionnez **Sélectionner Utilisateurs et groupes**, activez la case à cocher **Tous les invités et utilisateurs externes**, puis cliquez sur **Terminé**.
-6. Sous **Affectations, cliquez sur **Actions ou applications Cloud**.
+6. Sous **Affectations**, cliquez sur **Actions ou applications Cloud**.
 7. Sous l'onglet **Inclure**, sélectionnez **Sélectionner les applications**, puis cliquez sur **Sélectionner**.
 8. Dans le panneau **Sélectionner**, sélectionnez **Microsoft Teams**, **Office 365 SharePoint Online** et **Outlook Groups**, puis cliquez sur **Sélectionner**.
 9. Dans le panneau **Actions ou applications Cloud**, cliquez sur **Terminé**.
@@ -249,7 +250,7 @@ Vous pouvez créer des types d'informations sensibles personnalisés pour vous a
 Pour créer un type d’informations sensibles personnalisé, procédez comme suit :
 1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com), dans le volet de navigation gauche, développez **Classification**, puis cliquez sur **Types d’informations sensibles**.
 2. Cliquez sur **Créer**.
-3. Pour **Nom et **Description**, tapez **Projet Saturne**, puis cliquez sur **Suivant**.
+3. Pour **Nom** et **Description**, tapez **Projet Saturne**, puis cliquez sur **Suivant**.
 4. Cliquez sur **Ajouter un élément**.
 5. Dans la liste **Détecter le contenu contenant**, sélectionnez **Mots clés**, puis tapez *Projet Saturne* dans la zone de mot clé.
 6. Cliquez sur **Suivant**, puis sur **Terminer**.

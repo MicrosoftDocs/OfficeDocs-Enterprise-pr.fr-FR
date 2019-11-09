@@ -12,13 +12,14 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 description: Explication de la suppression de données dans SharePoint Online.
-ms.openlocfilehash: 44b05ce6c028e79e489a94157f264fcedd63ea1a
-ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
+ms.openlocfilehash: 94b70d34cb05f98dfa560761dec87a919720dca9
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38035474"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38078153"
 ---
 # <a name="sharepoint-online-data-deletion-in-office-365"></a>Suppression des données SharePoint Online dans Office 365
 

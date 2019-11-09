@@ -8,7 +8,9 @@ audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 search.appverid:
 - MET150
 - SPS150
@@ -21,12 +23,12 @@ search.appverid:
 - OSU160
 ms.assetid: 66325a43-5816-4f8e-81ba-c11b71345b7c
 description: SharePoint Server 2007 a atteint la fin de la prise en charge et il est temps de procéder à la mise à niveau. Utilisez cet article pour vous aider à créer votre plan.
-ms.openlocfilehash: acf1e0283f70763c0f0fbd458b7c79b23fc31235
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 2ed36816eeb466cd35b999b48521495406d28641
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031549"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38078103"
 ---
 # <a name="sharepoint-2007-migration-options-to-consider"></a>Options de migration SharePoint 2007 à prendre en compte
 

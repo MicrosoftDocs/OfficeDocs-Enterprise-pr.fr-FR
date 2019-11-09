@@ -11,17 +11,18 @@ localization_priority: Normal
 ms.collection:
 - M365-collaboration
 - M365-subscription-management
+- SPO_Content
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: eb45fd8b-1d5d-4b0c-9c5a-479dbb176e7d
 description: Découvrez le fonctionnement de la collaboration Office 365 entre les clients et les organisations.
-ms.openlocfilehash: f68b04fe1b4d8acd26fc866bb88c09a16bb242de
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: b232cd2202f1b4e13102fd33ba545cfdcbb2edfe
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031219"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38078173"
 ---
 # <a name="office-365-inter-tenant-collaboration"></a>Collaboration entre clients dans Office 365
 

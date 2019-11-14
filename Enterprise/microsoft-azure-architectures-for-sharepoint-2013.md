@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
 description: 'Résumé : Les solutions SharePoint 2013 peuvent être hébergées sur des machines virtuelles Microsoft Azure. Découvrez quels types de solution sont adaptés et comment configurer Microsoft Azure pour en héberger une.'
-ms.openlocfilehash: 7bc274098f961ccf9aa6aef05f595dfc6e116bec
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 2059ee68a523641bbfe7389d273c931e44d23bd5
+ms.sourcegitcommit: 16a060c0732c6234bb2ebc037786a7c4872fe686
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032289"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38308589"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>Architectures Microsoft Azure pour SharePoint 2013
 
@@ -54,7 +54,7 @@ Pour des solutions et des charges de travail de collaboration et intranet, envis
 
 Bien que cet article utilise des exemples de topologies SharePoint, vous pouvez utiliser ces concepts de conception avec n'importe quelle topologie de batterie de serveurs SharePoint. Avant de concevoir l'environnement Azure, suivez les instructions suivantes en matière de topologie, d'architecture, de capacité et de performances pour concevoir la batterie de serveurs SharePoint :
   
-- [Conception de l'architecture pour les professionnels de l'informatique SharePoint 2013](http://technet.microsoft.com/sharepoint/fp123594.aspx)
+- [Conception de l'architecture pour les professionnels de l'informatique SharePoint 2013](https://technet.microsoft.com/sharepoint/fp123594.aspx)
     
 - [Plan for performance and capacity management in SharePoint Server 2013](https://technet.microsoft.com/library/8dd52916-f77d-4444-b593-1f7d6f330e5f.aspx)
     

@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 description: "Nouveau centre de régions centres ajouter de la capacité et des ressources de calcul pour prendre en charge notre demande de client et sa croissance d’utilisation en cours. En outre, les nouvelles régions de centre de données permettent d'héberger des données dans la région pour les données client essentielles. Le terme « données client essentielles » fait référence à un sous-ensemble de données client définies dans les conditions d'utilisation de Microsoft Online Services : Exchange Onlinecontenu de la boîte aux lettres (corps de courrier électronique, entrées de calendrier et contenu de pièces jointes), SharePoint Onlinecontenu du site et fichiers stockés dans ce site, ainsi que fichiers téléchargés vers OneDrive Entreprise."
-ms.openlocfilehash: 780530873022426a8dc10c6a30573e303239a0d1
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: e6bd86e7d3eebd0395d50e7668cf32dcabd0f20f
+ms.sourcegitcommit: 6d3420e41a52820729dd417511286bf98d3713ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032189"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626154"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Déplacement de données essentielles vers les nouvelles régions de centres de données Office 365
 
 Nous continuons à ouvrir de nouvelles régions de centres de données pour les services Office 365 pour les entreprises. Ces nouvelles régions de centre de données permettent d'accroître la capacité et le nombre de ressources de calcul pour prendre en charge la demande continue des clients et l'augmentation de l'utilisation. En outre, les nouvelles régions de centre de données permettent d'héberger des données dans la région pour les données client essentielles. 
 
-Les données client principales sont un terme qui fait référence à un sous-ensemble de données client définies dans les [conditions de Microsoft Online Services](https://go.microsoft.com/fwlink/p/?LinkID=249048): 
+Les données client principales sont un terme qui fait référence à un sous-ensemble de données client, notamment : 
 - Contenu de boîte aux lettres Exchange Online (corps de courrier électronique, entrées de calendrier et contenu de pièces jointes)
 - Contenu de site SharePoint Online et fichiers stockés dans ce site
 - Fichiers téléchargés vers OneDrive entreprise 
@@ -60,7 +60,7 @@ Les déplacements de données sont des opérations de service principales qui on
 
 Les données sont déplacées vers la nouvelle région de centre de données.
     
-## <a name="related-topics"></a>Voir aussi 
+## <a name="related-topics"></a>Sujets associés 
  
 [Procédure de demande d’un déplacement de données](request-your-data-move.md)
     

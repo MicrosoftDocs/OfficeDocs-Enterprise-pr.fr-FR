@@ -3,7 +3,7 @@ title: Pendant et après le déplacement de vos données
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 07/18/2019
+ms.date: 11/14/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Les déplacements de données sont des opérations principales n'ayant que peu d'impact sur les utilisateurs finals. Aucune action de votre part n'est requise lorsque Microsoft déplace chaque service et les données associées pour votre client vers une nouvelle zone géographique de centres de données. Le transfert de données et la validation se déroulent en arrière-plan à l'avance, et n'ont qu'une incidence minimale sur les utilisateurs.
-ms.openlocfilehash: 86bdc1679b787952f7999f04a92c0a9e2ff6e347
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 2eaeb8dd5fc9b3e9b892cb412f8a5081d7b2bf78
+ms.sourcegitcommit: 6d3420e41a52820729dd417511286bf98d3713ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077597"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626134"
 ---
 # <a name="during-and-after-your-data-move"></a>Pendant et après le déplacement de vos données
 
@@ -40,7 +40,7 @@ Surveillez le centre de messages Office 365 dans l'attente de la confirmation de
 |Royaume-Uni  <br/> |15 septembre 2019  <br/> |
 |France  <br/> |15 septembre 2020  <br/> |
 |Émirats arabes unis  <br/> |1er février 2022  <br/> |
-|Afrique du Sud  <br/> |Annoncé  <br/> |
+|Afrique du Sud  <br/> |1er février 2022  <br/> |
    
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -91,7 +91,7 @@ Une fois que nous aurons déplacé vos données SharePoint Online, vous pourrez 
     
 - Nous supprimons les copies transcodées du centre de données précédent et les transcodons à nouveau dans le nouveau centre de données.
     
-### <a name="search"></a>Rechercher
+### <a name="search"></a>Recherche
 
 Dans le cadre du déplacement de vos données SharePoint Online, nous migrons vos paramètres de recherche et d'index vers un nouvel emplacement. Jusqu'à la **fin** du déplacement de vos données SharePoint Online, nous continuons de desservir vos utilisateurs depuis l'index situé dans l'emplacement d'origine. Dans le nouvel emplacement, la fonction recherche démarre automatiquement une analyse de votre contenu une fois le déplacement de vos données SharePoint Online terminé. À ce moment-là, nous desservirons vos utilisateurs depuis l'index migré. Les modifications apportées à votre contenu après la migration ne sont pas prises en compte dans l'index migré tant que l'analyse ne les a pas récupérées. La plupart des clients ne remarquent pas que les résultats proposent des contenus moins récents immédiatement après la migration de leurs données SharePoint Online, mais certains peuvent s'en apercevoir au cours des 24-48 premières heures d'utilisation. 
   
@@ -119,7 +119,7 @@ Tous les utilisateurs seront déconnectés du logiciel client Skype Entreprise p
    
 |**Après le déplacement**|
 |:-----|
-| Les données de la réunion (présentations téléchargées, etc.) ne seront pas déplacées et devront être téléchargées à nouveau.  <br/>  Les clients Lync plus anciens, tels que les clients Lync 2010 et Lync pour Mac 2011, mettent en cache des informations DNS dans le service, ce qui entraîne des problèmes de connexion. Le cache DNS devra peut-être être effacé si l'utilisateur ne se trouve pas sur le dernier client Windows de Skype Entreprise. Vous devez indiquer aux utilisateurs d'exécuter l' [assistant de dépannage](https://support.microsoft.com/kb/2541980) et de suivre les instructions relatives à l'effacement du cache client. Les utilisateurs de Lync pour Mac doivent suivre [ces instructions](https://support.microsoft.com/kb/2629861).  <br/> |
+| Les données de la réunion (présentations téléchargées, etc.) ne seront pas déplacées et devront être téléchargées à nouveau.  <br/>  Les clients Lync plus anciens, tels que les clients Lync 2010 et Lync pour Mac 2011, mettent en cache des informations DNS dans le service, ce qui entraîne des problèmes de connexion. Le cache DNS devra peut-être être effacé si l’utilisateur ne se trouve pas sur le dernier client Windows de Skype Entreprise. Consultez la rubrique [Troubleshooting Skype for Business Online DNS configuration Problems in Office 365](https://docs.microsoft.com/skypeforbusiness/troubleshoot/online-configuration/dns-configuration-issue). Les utilisateurs de Lync pour Mac doivent suivre [ces instructions](https://support.microsoft.com/kb/2629861).  <br/> |
    
 ### <a name="skype-for-business-moves-that-involve-a-third-party-audio-conferencing-provider"></a>Déplacements Skype entreprise impliquant un fournisseur de services d’audioconférence tiers
 Les services de module complémentaire de fournisseurs de services d’audioconférence tiers pour Skype Entreprise ne sont pas disponibles pour les utilisateurs hébergés dans des centres de données propres à une nouvelle zone géographique.   Les clients existants qui utilisent un service de fournisseur de services d’audioconférence tiers ne doivent pas demander de déplacement vers un centre de données propre à une nouvelle zone géographique.   Les nouveaux clients déployés dans les centres de données propres à une nouvelle zone géographique doivent demander un déplacement vers un centre de données régional afin d’utiliser un fournisseur de services d’audioconférence tiers. 
@@ -128,7 +128,7 @@ Les services de module complémentaire de fournisseurs de services d’audioconf
 
 Nous déplaçons uniquement les données client pour Exchange Online, SharePoint Online et Skype Entreprise. Nous ne déplaçons pas de données pour d'autres services. En tant que client ou utilisateur de ces autres services, vous ne remarquez aucune modification ou aucune conséquence. Le processus de déplacement n'a aucune incidence sur ces services et l'emplacement des données client reste le même.
   
-## <a name="related-topics"></a>Voir aussi 
+## <a name="related-topics"></a>Sujets associés 
  
 [Procédure de demande d’un déplacement de données](request-your-data-move.md)
     

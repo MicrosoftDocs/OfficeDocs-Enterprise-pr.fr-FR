@@ -3,7 +3,7 @@ title: Ressources pour vous aider à effectuer une mise à niveau à partir de s
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/04/2019
+ms.date: 09/16/2019
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -21,20 +21,16 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: La prise en charge se termine bientôt pour les serveurs et les applications clientes Office 2010, et les accords de support personnalisés ne sont pas disponibles. Utilisez cet article pour commencer à planifier votre mise à niveau maintenant.
-ms.openlocfilehash: 31735b0563194603ac391f57bbccbd84805e5f4a
-ms.sourcegitcommit: af8175b2d7f84e5c835bbfba82c0b50fe555d9e9
+ms.openlocfilehash: 0c2352806d71687287ed885f5c835f61082da64b
+ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "36782421"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "36991885"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Ressources pour vous aider à effectuer une mise à niveau à partir de serveurs et clients Office 2010
 
-Notez que :
-
-- Exchange Server 2010 atteindra sa fin de prise en charge le **14 janvier 2020**. 
-
-- Office 2010, SharePoint 2010 et Project Server 2010 atteindront leur fin de support le **13 octobre 2020**. 
+Office 2010, Exchange Server 2010, SharePoint 2010 et Project Server 2010 atteindront leur fin d’assistance le **13 octobre 2020**. 
 
 Pendant que vous planifiez votre mise à niveau, il est très utile de passer à Office 365 ou Microsoft 365. 
 
@@ -55,7 +51,7 @@ Vous pouvez également [Télécharger](https://github.com/MicrosoftDocs/microsof
 |**Pour ce produit**|**Après cette date de prise en charge**|**Voir cette ressource**|
 |:-----|:-----|:-----|
 |Office 2010 (y compris Word 2010, Excel 2010, PowerPoint 2010 et Outlook 2010)  <br/> | 13 octobre 2020 |[Feuille de route de prise en charge d’Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) <br/> |
-|Exchange Server 2010  <br/> | 14 janvier 2020  |[Feuille de route de fin de prise en charge d’Exchange 2010](exchange-2010-end-of-support.md) <br/> |
+|Exchange Server 2010  <br/> | 13 octobre 2020  |[Feuille de route de fin de prise en charge d’Exchange 2010](exchange-2010-end-of-support.md) <br/> |
 |SharePoint 2010 ou SharePoint Server 2010  <br/> | 13 octobre 2020 |[Mise à niveau à partir de SharePoint 2010](upgrade-from-sharepoint-2010.md) <br/> |
 |Project Server 2010 <br/> | 13 octobre 2020 | [Feuille de route de prise en charge de Project Server 2010](project-server-2010-end-of-support.md) <br/> |
 |Lync Server 2010 <br/> | 13 avril 2021 | [Planifier une mise à niveau vers Skype entreprise Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) <br/> |

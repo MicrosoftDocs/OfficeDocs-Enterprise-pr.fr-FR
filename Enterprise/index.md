@@ -15,10 +15,10 @@ ms.topic: landing-page
 ms.date: 8/21/2018
 ms.author: robmazz
 ms.openlocfilehash: f655daf2887fd5bf8cc82065dc0cc53282b13146
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 11/15/2019
 ms.locfileid: "38030658"
 ---
 <h1>Office 365 Entreprise</h1>
@@ -73,7 +73,7 @@ ms.locfileid: "38030658"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Office 365 ProPlus</h3>
+                        <h3>Office 365 ProPlus</h3>
                 <p>Planifiez, déployez et gérez&nbsp;Office 365 ProPlus dans votre environnement d’entreprise.</p>
                     </div>
                 </div>
@@ -185,7 +185,7 @@ ms.locfileid: "38030658"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3><a href="https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online">Skype Entreprise Online</a></h3>
+                        <h3><a href="https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online">Skype Entreprise Online</a></h3>
                     </div>
                 </div>
             </div>

@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 'Résumé : vous connecter à votre organisation Office 365 à l’aide de PowerShell Office 365 pour effectuer des tâches du centre d’administration à partir de la ligne de commande.'
-ms.openlocfilehash: 1bcf2438c4a07f3d025ef9cb664875214f1aa289
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: e80af8b4174a4d3ac423e887b7f3c2fd9ee73375
+ms.sourcegitcommit: 21901808f112dd1d8d01617c4be37911efc379f8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031749"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38707041"
 ---
 # <a name="connect-to-office-365-powershell"></a>Se connecter à PowerShell Office 365
 
@@ -75,7 +75,7 @@ Ces étapes sont nécessaires une seule fois sur votre ordinateur, pas chaque fo
     
 2. Dans la fenêtre de commande **Administrateur : Windows PowerShell**, exécutez la commande suivante :
     
-  ```
+  ```powershell
   Install-Module -Name AzureAD
   ```
 
@@ -155,7 +155,7 @@ Si vous recevez des erreurs, vérifiez les conditions requises suivantes :
   
 - **Votre version du Module Microsoft Azure Active Directory pour Windows PowerShell est peut-être obsolète.** Pour vérifier cela, exécutez la commande suivante dans PowerShell Office 365 ou le Module Microsoft Azure Active Directory pour Windows PowerShell :
     
-  ```
+  ```powershell
   (Get-Item C:\Windows\System32\WindowsPowerShell\v1.0\Modules\MSOnline\Microsoft.Online.Administration.Automation.PSModule.dll).VersionInfo.FileVersion
   ```
 

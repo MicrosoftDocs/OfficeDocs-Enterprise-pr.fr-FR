@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: Découvrez comment configurer la synchronisation d’annuaires entre Office 365 et votre annuaire Active Directory local.
-ms.openlocfilehash: 1798c54854bc5ecc82481aaabca3690e7212e135
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: a51abf7dcca0a9edc4ecf233ea67fdeb80070a70
+ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162477"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38702245"
 ---
 # <a name="set-up-directory-synchronization-for-office-365"></a>Configurer la synchronisation d’annuaires pour Office 365
 
@@ -34,7 +34,7 @@ Si vous disposez d’un service de domaine Active Directory (AD DS) local, vous 
 
 ![](./media/about-office-365-identity/hybrid-identity.png)
 
-Azure AD Connect s’exécute sur un serveur local et synchronise vos services de domaine Active Directory avec le client Azure AD. En plus de la synchronisation d’annuaires, vous pouvez également spécifier les options d’authentification suivantes:
+Azure AD Connect s’exécute sur un serveur local et synchronise vos services de domaine Active Directory avec le client Azure AD. En plus de la synchronisation d’annuaires, vous pouvez également spécifier les options d’authentification suivantes :
 
 - Synchronisation de hachage de mot de passe (hachage)
 
@@ -48,18 +48,18 @@ Azure AD Connect s’exécute sur un serveur local et synchronise vos services d
 
   Azure AD redirige l’ordinateur client demandant l’authentification pour contacter un autre fournisseur d’identité.
 
-Pour [](plan-for-directory-synchronization.md) plus d’informations, consultez la rubrique identités hybrides.
+Pour plus d’informations, consultez la rubrique [identités hybrides](plan-for-directory-synchronization.md) .
   
 ## <a name="1-review-prerequisites-for-azure-ad-connect"></a>1. vérifier la configuration requise pour Azure AD Connect
 
 Vous obtenez un abonnement Azure AD gratuit avec votre abonnement Office 365. Lorsque vous configurez la synchronisation d’annuaires, vous devez installer Azure AD Connect sur l’un de vos serveurs locaux.
   
-Pour Office 365, vous devez:
+Pour Office 365, vous devez :
   
 - Vérifiez votre domaine local. L’Assistant Azure AD Connect vous guide à travers cela.
 - Obtenez les noms d’utilisateur et les mots de passe des comptes d’administrateur de votre client et AD DS Office 365.
 
-Pour votre serveur local sur lequel vous installez Azure AD Connect, vous aurez besoin des éléments suivants:
+Pour votre serveur local sur lequel vous installez Azure AD Connect, vous aurez besoin des éléments suivants :
   
 |**Système d’exploitation du serveur**|**Autres logiciels**|
 |:-----|:-----|
@@ -73,21 +73,19 @@ Vous pouvez également consulter l' [historique des versions](https://docs.micro
 
 ## <a name="2-install-azure-ad-connect-and-configure-directory-synchronization"></a>2. installer Azure AD Connect et configurer la synchronisation d’annuaires
 
-Avant de commencer, vérifiez que vous disposez des éléments suivants:
+Avant de commencer, vérifiez que vous disposez des éléments suivants :
 
 - Le nom d’utilisateur et le mot de passe d’un administrateur général Office 365
-- Le nom d’utilisateur et le mot de passe d’un administrateur de domaine AD DS;
+- Le nom d’utilisateur et le mot de passe d’un administrateur de domaine AD DS ;
 - Quelle méthode d’authentification (hachage, directe, fédéré)
 - Si vous souhaitez utiliser l’authentification [unique transparente Azure ad](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso)
 
 Procédez comme suit :
 
-1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) (https://admin.microsoft.com) et **** \> choisissez utilisateurs **actifs** dans le volet de navigation de gauche.
-2. Dans le centre d’administration, sur la page **utilisateurs actifs** , **Sélectionnez plus** \> de **synchronisation**d’annuaires.
-
-    ![Dans le menu autres, sélectionnez synchronisation d’annuaires.](media/dc6669e5-c01b-471e-9cdf-04f5d44e1c4b.png)
+1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) (https://admin.microsoft.com) et **Choisissez** \> utilisateurs **actifs** dans le volet de navigation de gauche.
+2. Sur la page **utilisateurs actifs** , choisissez **plus** (trois points) \> de **synchronisation d’annuaires**.
   
-3. Sur la page **préparation d’Active Directory** , sélectionnez le lien **Télécharger l’outil Microsoft Azure Active Directory Connect** pour commencer. 
+3. Sur la page **préparation d’Azure Active Directory** , sélectionnez l’option **accéder au centre de téléchargement pour obtenir le lien vers l’outil Azure ad Connect** pour commencer. 
 4. Suivez les étapes de la feuille de [route Azure ad Connect et Azure ad Connect Health installation](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-roadmap).
 
 ## <a name="3-finish-setting-up-domains"></a>3. terminer la configuration des domaines

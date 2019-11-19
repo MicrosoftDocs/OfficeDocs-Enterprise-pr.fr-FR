@@ -3,7 +3,6 @@ title: Ajouter plusieurs utilisateurs simultanément à Office 365 - Aide de l'a
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.date: 6/29/2018
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -24,30 +23,30 @@ search.appverid:
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
 description: 'Découvrez comment ajouter plusieurs utilisateurs à Office 365 pour les entreprises à partir d’une liste dans une feuille de calcul ou dans un autre fichier au format CSV. Regardez une vidéo sur YouTube qui explique comment ajouter des comptes à Office 365. À la fin de ce processus, chaque utilisateur disposant d’un compte dispose d’une boîte aux lettres Office 365. '
-ms.openlocfilehash: a719b2626eada8abe225a6951af4a2d292667856
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+ms.openlocfilehash: 864bdf788b0beefce49a53382795d522114aad5d
+ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38030728"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38702215"
 ---
 # <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>Ajouter plusieurs utilisateurs simultanément à Office 365 - Aide de l’administrateur
 
 [] Les membres de votre équipe ont besoin d'un compte d'utilisateur pour pouvoir se connecter et accéder aux services Office 365, tels que le courrier et Office. Si votre équipe compte de nombreux membres, vous pouvez ajouter tous leurs comptes simultanément à partir d'une feuille de calcul Excel ou d'un autre fichier enregistré au format CSV. [Qu'est-ce que le format CSV ?](add-several-users-at-the-same-time.md#__toc316652088)
   
+> [!NOTE] 
+> Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
+
 ## <a name="add-multiple-users-to-office-365-in-the-microsoft-365-admin-center"></a>Ajouter plusieurs utilisateurs à Office 365 dans le centre d’administration Microsoft 365
 
 1. Connectez-vous à Office 365 avec votre compte professionnel ou scolaire. 
     
 2. Dans le centre d’administration, **Choisissez** \> utilisateurs **actifs**.
+
+3. Sélectionnez **ajouter plusieurs utilisateurs**.
+
+4. Dans le panneau **Importer plusieurs utilisateurs**, vous pouvez éventuellement télécharger un exemple de fichier CSV avec ou sans exemple de données inclus. 
     
-    ![Dans le centre d’administration, sélectionnez utilisateurs, puis utilisateurs actifs.](media/12086d98-a8b4-4c48-89cf-b78ad8058ff1.png)
-  
-    
-3. Dans le panneau **Importer plusieurs utilisateurs**, vous pouvez éventuellement télécharger un exemple de fichier CSV avec ou sans exemple de données inclus. 
-    
-    ![In the More drop-down, choose Import multiple users](media/77df8a4a-fd00-4fbe-bf1c-d234fc1d5e93.png)
-  
     Votre feuille de calcul doit inclure les **mêmes en-têtes de colonne** que ceux de l'exemple (Nom d'utilisateur, Prénom, etc.). Si vous utilisez le modèle, ouvrez-le dans un outil d'édition de texte tel que Notepad, laissez les données de la ligne 1 inchangées et entrez uniquement des données dans la ligne 2 et les lignes suivantes. 
     
     Votre feuille de calcul doit également inclure des valeurs pour le nom d'utilisateur (tel que alexandre@contoso.com) et un nom complet (tel que Alexandre Chauvin) pour chaque utilisateur. 
@@ -62,9 +61,7 @@ ms.locfileid: "38030728"
   
   ```
 
-4. Entrez un chemin d'accès dans la zone, ou choisissez **Parcourir** pour accéder à l'emplacement du fichier CSV, puis sélectionnez **Vérifier**.
-    
-    ![Your CSV file is verified](media/a43d49db-b2ab-4200-8ddf-0bc846ac6fe5.png)
+5. Entrez un chemin d'accès dans la zone, ou choisissez **Parcourir** pour accéder à l'emplacement du fichier CSV, puis sélectionnez **Vérifier**.
   
     S'il existe des problèmes avec le fichier, ceux-ci s'affichent dans le panneau. Vous pouvez également télécharger un fichier journal.
     
@@ -143,70 +140,5 @@ Une fois le fichier enregistré, il est probable qu'un message indiquant que cer
 
 - **Vérifiez que la feuille de calcul est correctement mise en forme.** Examinez les en-têtes des colonnes pour vous assurer qu'ils correspondent à ceux de l'exemple de fichier. Veillez à respecter le nombre de caractères autorisés et assurez-vous que chaque champ est séparé par une virgule. 
     
-- ** Si les nouveaux utilisateurs n'apparaissent pas tout de suite dans Office 365, patientez quelques minutes. ** La répercussion des modifications dans tous les services d'Office 365 peut prendre du temps. 
+- **Si vous ne voyez pas les nouveaux utilisateurs dans Office 365 immédiatement, patientez quelques minutes.** Les modifications apportées à l’ensemble des services dans Office 365 peuvent prendre un peu de temps. 
     
-## <a name="add-multiple-users-to-office-365-in-the-old-admin-center"></a>Ajouter plusieurs utilisateurs à Office 365 dans l’ancien centre d’administration
-
-1. Téléchargez [cet exemple de feuille de calcul](https://www.microsoft.com/download/details.aspx?id=45485) et ouvrez-la dans Excel. 
-    
-    Votre feuille de calcul doit inclure les **mêmes en-têtes de colonne** que ceux de l'exemple (Nom d'utilisateur, Prénom, etc.). Si vous utilisez le modèle, laissez les données de la ligne 1 inchangées et entrez uniquement des données dans la ligne 2 et les lignes suivantes. 
-    
-    Votre feuille de calcul doit également inclure des valeurs pour le nom d'utilisateur (tel que alexandre@contoso.com) et un nom complet (tel que Alexandre Chauvin) pour chaque utilisateur. Pour laisser les autres champs vides, entrez un espace plus une virgule dans le champ, comme illustré dans la figure suivante. 
-    
-    ![Exemple de fichier CSV comportant des lignes vides](media/9c596ba1-1053-4687-a46c-c9359e9818c9.png)
-  
-    Si des membres de votre organisation travaillent dans différents pays ou régions, vous devez créer une feuille de calcul pour les utilisateurs de chaque pays ou région. Par exemple, une feuille de calcul peut répertorier toutes les personnes travaillant aux États-Unis, tandis que l'autre répertorie celles travaillant au Japon. En effet, la disponibilité des services Office 365 varie selon la région. 
-    
-    **Conseil :** avant d'ajouter un grand nombre d'utilisateurs à Office 365, vous voudrez peut-être vous exercer avec l'exemple de feuille de calcul. Par exemple, modifiez l'exemple de feuille de calcul avec les données de quelques utilisateurs (5 ou 10 utilisateurs) et enregistrez le fichier avec un nouveau nom. Parcourez les étapes décrites dans cette procédure, consultez les résultats, supprimez les nouveaux comptes et recommencez. Vous pouvez ainsi vous entraîner à recevoir l'ensemble des données adaptées à votre situation. Consultez également la section [Conseils pour la mise en forme de votre feuille de calcul](add-several-users-at-the-same-time.md#__toc314595848).
-    
-2. Connectez-vous à Office 365 avec votre compte professionnel ou scolaire. 
-    
-3. Accédez au centre d’administration.
-    
-4. Pour que les personnes puissent utiliser les services Office 365, une licence doit leur être attribuée. Avant de continuer, vous voudrez peut-être vérifier que vous avez suffisamment de licences pour les personnes mentionnées dans votre feuille de calcul. Sélectionnez **Facturation** \> **Abonnements** pour déterminer si vous en avez assez. Si vous avez besoin d'acheter d'autres licences, sélectionnez ** Modifier le nombre de licences **. Vous pouvez également exécuter l'Assistant et attribuer les licences que vous avez, puis acheter d'autres licences plus tard et réexécuter l'Assistant. 
-    
-5. Accédez ensuite à l'Assistant Ajouter des utilisateurs en bloc : sélectionnez **Utilisateurs** \> **Utilisateurs actifs**. Sélectionnez ![Icône pour l'ajout de plusieurs utilisateurs à Office 365](media/3481ffea-d552-4a7f-9a3b-014504e69746.png) comme illustré dans la figure suivante. 
-    
-    ![Image de la section utilisateurs du centre d’administration](media/2cd5ff86-9c0b-438e-9bb9-13b12a2675de.png)
-  
-    L'Assistant Ajouter des utilisateurs en bloc apparaît et vous guide dans l'ajout d'un groupe d'utilisateurs à Office 365. 
-    
-6. Dans l'étape 1 (Sélectionner un fichier CSV), spécifiez votre propre feuille de calcul comme illustré dans la figure suivante.
-    
-    ![Étape 1 de l'Assistant Ajouter des utilisateurs en bloc - Sélectionner un fichier CSV](media/aeb837ed-1f86-427d-b038-c643c383829c.png)
-  
-7. Dans l'étape 2 (Vérification), l'Assistant vous indique si le contenu de la feuille de calcul est correctement mis en forme.
-    
-    ![Étape 2 de l'Assistant Ajouter des utilisateurs en bloc - Vérification](media/3fd3cd2c-44d4-4593-b02c-b87c176affb3.png)
-  
-8. Dans l'étape 3 (Paramètres), sélectionnez **Autorisé** de telle sorte que les personnes qui apparaissent dans votre feuille de calcul puissent utiliser Office 365. Sélectionnez également le pays ou la région dans lequel ces personnes utiliseront Office 365. Rappelez-vous que si certains membres de votre organisation utiliseront Office 365 dans un autre pays ou dans une autre région, créez une feuille de calcul distincte avec leurs noms et exécutez l'Assistant Ajouter des utilisateurs en bloc pour les ajouter. 
-    
-    ![Étape 3 de l'Assistant Ajouter des utilisateurs en bloc - Paramètres](media/ff12ad34-5d8b-4e89-a02f-d827a94095b3.png)
-  
-9. La page Attribuer des licences indique le nombre de licences disponibles. 
-    
-    ![Étape 4 de l'Assistant Ajouter des utilisateurs en bloc - Licences](media/161ea34c-c67e-43be-962f-029f5426ff1b.png)
-  
-    Vous pouvez choisir **acheter des licences supplémentaires**, mais vous ne laisserai pas l’Assistant Ajouter des utilisateurs en bloc et passer à la **facturation** dans le centre d’administration 365 de Microsoft. Après avoir acheté d'autres licences, vous devez patienter quelques minutes que la commande soit traitée, puis réexécuter l'Assistant Ajouter des utilisateurs en bloc depuis le début. 
-    
-    Si vous n'achetez pas d'autres licences, les comptes ne seront pas créés pour toutes les personnes figurant dans votre feuille de calcul. 
-    
-    Dans cet exemple, nous n'achetons pas d'autres licences et continuons avec l'Assistant Ajouter des utilisateurs en bloc.
-    
-10. Dans l'étape 5 (Envoyer les résultats), tapez les adresses de courrier dont vous voulez recevoir un message répertoriant  *tous*  les noms d'utilisateur Office 365 et mots de passe temporaires pour les personnes figurant dans la feuille de calcul. 
-    
-    ![Étape 5 de l'Assistant Ajouter des utilisateurs en bloc - Envoyer les résultats](media/5beeb825-4ba7-4ae0-bfb5-a1f8a785ebdb.png)
-  
-    Le message suivant est envoyé à toutes les adresses de courrier que vous avez spécifiées à l'étape 5 (Envoyer les résultats). Ce message indique les comptes qui ont été créés. Notez qu'aucun compte n'a été créé pour certaines personnes, car les licences n'étaient pas suffisantes. 
-    
-    ![Courrier d'exemple avec les informations d'identification d'un utilisateur](media/0a40c612-2078-4b5b-813e-f99bc53635a6.png)
-  
-    Vous pouvez acheter d'autres licences ultérieurement et réexécuter l'Assistant Ajouter des utilisateurs en bloc avec la même feuille de calcul. L'Assistant ignore les utilisateurs qui ont déjà des comptes. Le rapport de résultats inclura la mention « Nom d'utilisateur dupliqué ». Celle-ci indique qu'une personne dotée de ces informations possède déjà un compte.
-    
-11. La page finale de l'Assistant Ajouter des utilisateurs en bloc répertorie les noms d'utilisateur et mots de passe temporaires, comme illustré dans la figure suivante.
-    
-    ![Étape 6 de l'Assistant Ajouter des utilisateurs en bloc - Envoyer les résultats](media/0cd43832-071b-4b33-b57a-5d07959985ad.png)
-  
-12. Une fois que vous avez ajouté des utilisateurs à Office 365, vous devez leur communiquer leurs informations de compte Office 365. Nous vous conseillons d'utiliser le processus normal pour communiquer les nouveaux mots de passe.
-    
-

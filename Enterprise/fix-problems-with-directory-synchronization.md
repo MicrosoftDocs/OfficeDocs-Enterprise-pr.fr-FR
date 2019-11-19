@@ -17,34 +17,30 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Décrit les causes courantes des problèmes liés à la synchronisation d’annuaires dans Office 365 et fournit quelques méthodes pour les aider à les résoudre.
-ms.openlocfilehash: 3a1cf63122be84dc3e1c60e84a9a3a488f81bc0f
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: f7a117df41e9a972f4ea166eb7b75e5fb1a85295
+ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067670"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38702225"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Résolution des problèmes de synchronisation d’annuaires pour Office 365
 
 Avec la synchronisation d’annuaires, vous pouvez continuer à gérer les utilisateurs et les groupes locaux et synchroniser les ajouts, les suppressions et les modifications dans le Cloud. Toutefois, le programme d’installation est un peu compliqué et il peut parfois être difficile d’identifier la source des problèmes. Nous disposons de ressources pour vous aider à identifier les problèmes potentiels et à les résoudre.
   
-## <a name="how-do-i-know-if-something-is-wrong"></a>Comment savoir si un problème est survenu?
+## <a name="how-do-i-know-if-something-is-wrong"></a>Comment savoir si un problème est survenu ?
 
-La première indication que un élément est incorrect est lorsque la vignette d’État dirSync dans le centre d’administration 365 de Microsoft indique qu’il y a un problème:
-  
-![Vignette d’État dirSync dans l’aperçu du centre d’administration](media/060006e9-de61-49d5-8979-e77cda198e71.png)
+La première indication que un élément est incorrect est lorsque la vignette d’État DirSync dans le centre d’administration Microsoft 365 indique qu’il y a un problème.
   
 Vous recevrez également un message (vers l’autre courrier électronique et vers votre messagerie d’administrateur) à partir d’Office 365 qui indique que votre locataire a rencontré des erreurs de synchronisation d’annuaires. Pour plus d’informations, consultez la rubrique [identifier les erreurs de synchronisation d’annuaires dans Office 365](identify-directory-synchronization-errors.md).
   
-## <a name="how-do-i-get-azure-active-directory-connect-tool"></a>Comment puis-je obtenir l’outil Azure Active Directory Connect?
+## <a name="how-do-i-get-azure-active-directory-connect-tool"></a>Comment puis-je obtenir l’outil Azure Active Directory Connect ?
 
-Dans le [Centre d’administration 365 de Microsoft](https://admin.microsoft.com), accédez à * * utilisateurs \> * * utilisateurs **actifs**. Cliquez sur le menu **plus** , puis sélectionnez **synchronisation**d’annuaires. 
-  
-![Dans le menu autres, sélectionnez synchronisation d’annuaires.](media/dc6669e5-c01b-471e-9cdf-04f5d44e1c4b.png)
+Dans le [Centre d’administration 365 de Microsoft](https://admin.microsoft.com), **accédez à** \> utilisateurs **actifs**. Cliquez sur le menu **plus** (trois points) et sélectionnez **synchronisation d’annuaires**. 
   
 Suivez les [instructions de l’Assistant](set-up-directory-synchronization.md) pour télécharger Azure ad Connect. 
   
-Si vous utilisez toujours Azure Active Directory Sync (dirSync), jetez un œil à la [façon de résoudre les problèmes liés à l’installation de l’outil de synchronisation Azure Active Directory et aux messages d’erreur de l’Assistant de configuration dans Office 365](https://go.microsoft.com/fwlink/p/?LinkId=396717) pour plus d’informations sur la configuration système requise pour l’installation DirSync, les autorisations dont vous avez besoin et comment résoudre les erreurs courantes. 
+Si vous utilisez toujours Azure Active Directory Sync (DirSync), découvrez [Comment résoudre les problèmes liés à l’installation de l’outil de synchronisation Azure Active Directory et aux messages d’erreur de l’Assistant de configuration dans Office 365](https://go.microsoft.com/fwlink/p/?LinkId=396717) pour plus d’informations sur la configuration système requise pour installer DirSync, les autorisations dont vous avez besoin et pour résoudre les erreurs courantes. 
   
 Pour effectuer une mise à jour à partir d’Azure Active Directory Sync vers Azure AD Connect, consultez [les instructions de mise à niveau](https://go.microsoft.com/fwlink/p/?LinkId=733240).
   
@@ -57,7 +53,7 @@ Pour effectuer une mise à jour à partir d’Azure Active Directory Sync vers A
 ### <a name="i-have-an-alert-in-the-admin-center-or-am-receiving-automated-emails-that-there-hasnt-been-a-recent-synchronization-event"></a>**J’ai une alerte dans le centre d’administration, ou je reçois des courriers électroniques automatiques qu’il n’y a pas eu un événement de synchronisation récent**
 - [Résolution des problèmes de connectivité avec Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity)
 - [Autorisations et comptes Azure AD Connect](https://go.microsoft.com/fwlink/p/?LinkId=820598)
-- [Synchronisation Azure AD Connect: comment gérer le compte de service Azure AD](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-azureadaccount)
+- [Synchronisation Azure AD Connect : comment gérer le compte de service Azure AD](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-azureadaccount)
 - [La synchronisation d’annuaires vers Azure Active Directory s’arrête ou vous recevez un avertissement indiquant que la synchronisation n’a pas été enregistrée depuis plus d’une journée](https://support.microsoft.com/help/2882421/directory-synchronization-to-azure-active-directory-stops-or-you-re-warned-that-sync-hasn-t-registered-in-more-than-a-day)
 
 ### <a name="password-hashes-arent-synchronizing-or-im-seeing-an-alert-in-the-admin-center-that-there-hasnt-been-a-recent-password-hash-synchronization"></a>**Les hachages de mot de passe ne sont pas synchronisés ou une alerte s’affiche dans le centre d’administration pour signaler qu’il n’y a pas eu une synchronisation récente de hachage de mot de passe**
@@ -70,7 +66,7 @@ Pour effectuer une mise à jour à partir d’Azure Active Directory Sync vers A
 - Vous pouvez trouver la liste de tous les attributs synchronisés entre l’organisation locale et le nuage dans ce [cas](https://go.microsoft.com/fwlink/p/?LinkId=396719).
 
 ### <a name="i-cant-manage-or-remove-objects-that-were-synchronized-to-the-cloud"></a>**Je ne peux pas gérer ou supprimer des objets qui ont été synchronisés dans le Cloud**
-- Êtes-vous prêt à gérer les objets dans le Cloud uniquement? Ou y a-t-il un objet qui a été supprimé en local, mais qui est bloqué dans le Cloud? Consultez cette rubrique relative à la [résolution des erreurs lors](https://go.microsoft.com/fwlink/p/?linkid=842044) de la synchronisation et de [l’article de support](https://go.microsoft.com/fwlink/p/?LinkId=396720) pour obtenir des instructions sur la résolution de ces problèmes.
+- Êtes-vous prêt à gérer les objets dans le Cloud uniquement ? Ou y a-t-il un objet qui a été supprimé en local, mais qui est bloqué dans le Cloud ? Consultez cette rubrique relative à la [résolution des erreurs lors](https://go.microsoft.com/fwlink/p/?linkid=842044) de la synchronisation et de [l’article de support](https://go.microsoft.com/fwlink/p/?LinkId=396720) pour obtenir des instructions sur la résolution de ces problèmes.
 
 ### <a name="i-got-an-error-message-that-my-company-has-exceeded-the-number-of-objects-that-can-be-synchronized"></a>**J’ai reçu un message d’erreur indiquant que mon entreprise a dépassé le nombre d’objets pouvant être synchronisés.**
 - Pour plus d’informations sur ce problème, consultez la [rubrique](https://go.microsoft.com/fwlink/p/?LinkId=396721).
@@ -93,6 +89,6 @@ Pour effectuer une mise à jour à partir d’Azure Active Directory Sync vers A
     
 ## <a name="diagnostic-tools"></a>Outils de diagnostic
 
-L' [outil IDFix](prepare-directory-attributes-for-synch-with-idfix.md) permet de détecter et de résoudre les objets Identity et leurs attributs dans un environnement Active Directory local en vue de la migration vers Office 365. IDFix est destiné aux administrateurs Active Directory responsables de dirSync avec le service Office 365. 
+L' [outil IDFix](prepare-directory-attributes-for-synch-with-idfix.md) permet de détecter et de résoudre les objets Identity et leurs attributs dans un environnement Active Directory local en vue de la migration vers Office 365. IDFix est destiné aux administrateurs Active Directory responsables de DirSync avec le service Office 365. 
 
 [Téléchargez l’outil IDFix](https://go.microsoft.com/fwlink/p/?LinkId=396718) à partir du centre de téléchargement Microsoft.

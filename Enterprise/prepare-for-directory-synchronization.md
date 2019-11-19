@@ -3,6 +3,7 @@ title: Préparer la synchronisation d’annuaires vers Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
+ms.date: 11/18/2019
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -23,22 +24,22 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Décrit comment préparer la mise en service des utilisateurs vers Office 365 à l’aide de la synchronisation d’annuaires et des avantages à long terme de cette méthode.
-ms.openlocfilehash: 67d22f9087aabd431f61e01f6669ef147db98516
-ms.sourcegitcommit: 3dc4cb3ed48429fcb84f8adeba3d9ba2fb38edf7
+ms.openlocfilehash: 22db70d659d74e6d0f37f54a7743a562f220565d
+ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35249195"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38702235"
 ---
 # <a name="prepare-for-directory-synchronization-to-office-365"></a>Préparer la synchronisation d’annuaires vers Office 365
 
-Les avantages de la synchronisation hybride des identités et des annuaires de votre organisation sont les suivants:
+Les avantages de la synchronisation hybride des identités et des annuaires de votre organisation sont les suivants :
   
 - Réduction des programmes d’administration au sein de votre organisation
 - Activer le scénario d’authentification unique (facultatif)
 - Automatisation des modifications de compte dans Office 365
     
-Pour plus d’informations sur les avantages liés à l’utilisation de la synchronisation d’annuaires, consultez la rubrique feuille de [route de synchronisation]( https://go.microsoft.com/fwlink/p/?LinkId=525398) d’annuaires et [identité hybride pour Office 365](plan-for-directory-synchronization.md).
+Pour plus d’informations sur les avantages liés à l’utilisation de la synchronisation d’annuaires, consultez la rubrique feuille de [route de synchronisation d’annuaires]( https://go.microsoft.com/fwlink/p/?LinkId=525398) et [identité hybride pour Office 365](plan-for-directory-synchronization.md).
 
 Toutefois, la synchronisation d’annuaires nécessite une planification et une préparation afin de s’assurer que vos services de domaine Active Directory (AD DS) sont synchronisés avec le client Azure Active Directory (Azure AD) de votre abonnement Office 365 avec un minimum d’erreurs. 
 
@@ -51,15 +52,18 @@ Avant de synchroniser vos services AD DS avec votre client Azure AD, vous devez 
 > [!IMPORTANT]
 > Si vous n’effectuez pas le nettoyage AD DS avant la synchronisation, le processus de déploiement peut avoir un impact significatif. Cela peut prendre des jours, voire des semaines, pour parcourir le cycle de synchronisation d’annuaires, l’identification des erreurs et la resynchronisation. 
   
-Dans votre AD DS, effectuez les tâches de nettoyage suivantes pour chaque compte d’utilisateur auquel est attribuée une licence Office 365:
+Dans votre AD DS, effectuez les tâches de nettoyage suivantes pour chaque compte d’utilisateur auquel est attribuée une licence Office 365 :
   
 1. Assurez-vous d’une adresse de messagerie unique et valide dans l’attribut **proxyAddresses** . 
+
+  >[!Note]
+  >Un tilde (~) dans les adresses de messagerie sera ignoré. Cela peut entraîner des erreurs de synchronisation d’annuaires faux positifs concernant les proxyAddresses en double.
     
 2. Supprimez toutes les valeurs en double dans l’attribut **proxyAddresses** . 
     
 3.  Dans la mesure du possible, vérifiez que la valeur de l’attribut **userPrincipalName** est valide et unique dans l’objet **User** de l’utilisateur. Pour une expérience de synchronisation optimale, vérifiez que l’UPN AD DS correspond à l’UPN Azure AD. Si un utilisateur n’a pas de valeur pour l’attribut **userPrincipalName** , l’objet **User** doit contenir une valeur valide et unique pour l’attribut **sAMAccountName** . Supprimez toutes les valeurs en double dans l’attribut **userPrincipalName** . 
     
-4. Pour une utilisation optimale de la liste d’adresses globale (LAG), assurez-vous que les informations figurant dans les attributs suivants du compte d’utilisateur AD DS sont correctes:
+4. Pour une utilisation optimale de la liste d’adresses globale (LAG), assurez-vous que les informations figurant dans les attributs suivants du compte d’utilisateur AD DS sont correctes :
     
   - givenName
   - surname
@@ -82,7 +86,7 @@ La réussite de la synchronisation d’annuaires entre vos services de domaine A
   
 La synchronisation d’annuaires échoue également si certains de vos utilisateurs AD DS possèdent un ou plusieurs attributs en double. Chaque utilisateur doit avoir des attributs uniques.
   
-Les attributs que vous devez préparer sont répertoriés ici:
+Les attributs que vous devez préparer sont répertoriés ici :
   
 - **displayName**
     
@@ -95,14 +99,14 @@ Les attributs que vous devez préparer sont répertoriés ici:
   - Si l’attribut existe dans l’objet utilisateur, il sera synchronisé avec Office 365, mais Office 365 ne l’exige pas ou ne l’utilise pas.
   - Nombre maximal de caractères : 64
     
-- **e-mails**
+- **mail**
     
   - La valeur de l’attribut doit être unique dans l’annuaire.
     
     > [!NOTE]
     > S’il existe des valeurs en double, le premier utilisateur avec la valeur est synchronisé. Les utilisateurs suivants n’apparaîtront pas dans Office 365. Vous devez modifier la valeur dans Office 365 ou modifier les deux valeurs dans AD DS afin que les deux utilisateurs apparaissent dans Office 365. 
   
-- **mailnickname** (Alias Exchange) 
+- **mailnickname** (alias Exchange) 
     
   - La valeur de l’attribut ne peut pas commencer par un point (.).
   - La valeur de l’attribut doit être unique dans l’annuaire.
@@ -110,12 +114,12 @@ Les attributs que vous devez préparer sont répertoriés ici:
 - **proxyAddresses**
     
   - Attribut à valeurs multiples
-  - Nombre maximal de caractères par valeur: 256
+  - Nombre maximal de caractères par valeur : 256
   - La valeur de l’attribut ne doit pas contenir d’espace.
   - La valeur de l’attribut doit être unique dans l’annuaire.
-  - Caractères non valides: \< \> (); , [ ] " '
+  - Caractères non valides : \< \> (); , [ ] " '
     
-    Notez que les caractères non valides s’appliquent aux caractères qui suivent le délimiteur de type et à «:», ce qui signifie que SMTP:User@contso.com est autorisé, mais SMTP:user:M@contoso.com ne l’est pas.
+    Notez que les caractères non valides s’appliquent aux caractères qui suivent le délimiteur de type et à «  : », ce qui signifie que SMTP :User@contso.com est autorisé, mais SMTP :user :M@contoso.com ne l’est pas.
     
     > [!IMPORTANT]
     > Toutes les adresses SMTP (simple mail transport Protocol) doivent respecter les normes de messagerie électronique. S’il existe des adresses en double ou indésirables, consultez la rubrique d’aide [suppression des adresses de proxy en double et indésirables dans Exchange](https://go.microsoft.com/fwlink/?LinkId=293860). 
@@ -124,17 +128,17 @@ Les attributs que vous devez préparer sont répertoriés ici:
     
   - Nombre maximal de caractère : 20
   - La valeur de l’attribut doit être unique dans l’annuaire.
-  - Caractères non valides: [\ "|, \< \> /: + =;? \* ']
+  - Caractères non valides : [\ "|, \< \> / : + =;? \* ']
   - Si un utilisateur a un attribut **sAMAccountName** non valide mais qu’il dispose d’un attribut **userPrincipalName** valide, le compte d’utilisateur est créé dans Office 365. 
   - Si **sAMAccountName** et **userPrincipalName** sont tous deux incorrects, l’attribut **userPrincipalName** AD DS doit être mis à jour. 
     
-- **sn** Surname 
+- **sn** (nom) 
     
   - Si l’attribut existe dans l’objet utilisateur, il sera synchronisé avec Office 365, mais Office 365 ne l’exige pas ou ne l’utilise pas.
     
 - **targetAddress**
     
-    Il est nécessaire que l’attribut **TargetAddress** (par exemple, SMTP:Tom@contoso.com) qui est rempli pour l’utilisateur doit apparaître dans la lag Office 365. Dans les scénarios de migration de messagerie tiers, cela nécessite l’extension de schéma Office 365 pour les services de domaine Active Directory. L’extension de schéma Office 365 ajoutera également d’autres attributs utiles pour gérer les objets Office 365 qui sont renseignés à l’aide d’un outil de synchronisation d’annuaires à partir d’AD DS. Par exemple, l’attribut **msExchHideFromAddressLists** pour gérer les boîtes aux lettres masquées ou les groupes de distribution est ajouté. 
+    Il est nécessaire que l’attribut **TargetAddress** (par exemple, SMTP :Tom@contoso.com) qui est rempli pour l’utilisateur doit apparaître dans la lag Office 365. Dans les scénarios de migration de messagerie tiers, cela nécessite l’extension de schéma Office 365 pour les services de domaine Active Directory. L’extension de schéma Office 365 ajoutera également d’autres attributs utiles pour gérer les objets Office 365 qui sont renseignés à l’aide d’un outil de synchronisation d’annuaires à partir d’AD DS. Par exemple, l’attribut **msExchHideFromAddressLists** pour gérer les boîtes aux lettres masquées ou les groupes de distribution est ajouté. 
    
   - Nombre maximal de caractères : 256
   - La valeur de l’attribut ne doit pas contenir d’espace.
@@ -144,17 +148,17 @@ Les attributs que vous devez préparer sont répertoriés ici:
     
 - **userPrincipalName**
     
-  - L’attribut **userPrincipalName** doit être au format de connexion de style Internet où le nom d’utilisateur est suivi par le signe arobase (@) et un nom de domaine: par exemple, user@contoso.com. Toutes les adresses SMTP (simple mail transport Protocol) doivent respecter les normes de messagerie électronique.
-  - Le nombre maximal de caractères pour l’attribut **userPrincipalName** est 113. Un nombre de caractères spécifique est autorisé avant et après le signe @, comme suit: 
-  - Nombre maximal de caractères pour le nom d’utilisateur devant le signe arobase (@): 64
-  - Nombre maximal de caractères pour le nom de domaine qui suit le signe arobase (@): 48
-  - Caractères non valides: &amp; \* \% +/=? { } | \< \> ( ) ; : , [ ] " '
+  - L’attribut **userPrincipalName** doit être au format de connexion de style Internet où le nom d’utilisateur est suivi par le signe arobase (@) et un nom de domaine : par exemple, user@contoso.com. Toutes les adresses SMTP (simple mail transport Protocol) doivent respecter les normes de messagerie électronique.
+  - Le nombre maximal de caractères pour l’attribut **userPrincipalName** est 113. Un nombre de caractères spécifique est autorisé avant et après le signe @, comme suit : 
+  - Nombre maximal de caractères pour le nom d’utilisateur devant le signe arobase (@) : 64
+  - Nombre maximal de caractères pour le nom de domaine qui suit le signe arobase (@) : 48
+  - Caractères non valides : &amp; \* \% +/= ? { } | \< \> ( ) ; : , [ ] " '
   - Un tréma est également un caractère non valide.
   - Le caractère @ est requis dans chaque valeur **userPrincipalName** . 
   - Le caractère @ ne peut pas être le premier caractère dans chaque valeur **userPrincipalName**. 
   - Le nom d’utilisateur ne peut pas se terminer par un point (.&amp;), une esperluette (), un espace ou un signe arobase (@).
   - Le nom d’utilisateur ne peut pas contenir d’espaces.
-  - Les domaines routables doivent être utilisés; par exemple, les domaines locaux ou internes ne peuvent pas être utilisés.
+  - Les domaines routables doivent être utilisés ; par exemple, les domaines locaux ou internes ne peuvent pas être utilisés.
   - Unicode est converti en caractères de trait de soulignement.
   - **userPrincipalName** ne peut pas contenir de valeurs en double dans l’annuaire. 
 
@@ -185,4 +189,4 @@ Découvrez également [Comment préparer un domaine non routable (par exemple, l
 
 Consultez [la rubrique prepare Directory Attributes with the IdFix Tool](prepare-directory-attributes-for-synch-with-idfix.md) pour vous aider à corriger les erreurs dans les attributs de votre AD DS avant la synchronisation d’annuaires.
 
-Si vous avez corrigé toutes les erreurs d’attribut identifiées avec l’outil IdFix et que vous avez terminé les étapes 1 à 5 ci-dessus, voir [configurer la synchronisation](set-up-directory-synchronization.md)d’annuaires.
+Si vous avez corrigé toutes les erreurs d’attribut identifiées avec l’outil IdFix et que vous avez terminé les étapes 1 à 5 ci-dessus, voir [configurer la synchronisation d’annuaires](set-up-directory-synchronization.md).

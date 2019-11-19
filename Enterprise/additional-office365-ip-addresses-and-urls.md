@@ -3,7 +3,7 @@ title: Points de terminaison supplémentaires non inclus dans le service web po
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/03/2019
+ms.date: 11/18/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Résumé : Le nouveau service web de point de terminaison n’inclut pas certains points de terminaison pour des scénarios spécifiques.'
 hideEdit: true
-ms.openlocfilehash: da69876f4b189d11e46ee6a01d87fecde03480ca
-ms.sourcegitcommit: 960ad339d16cd5112cf83460b123ae3993839310
+ms.openlocfilehash: 2dae3a5f37be071f38991c599ea1b0ba81fa6281
+ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "37388162"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38702195"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Points de terminaison supplémentaires non inclus dans le service web pour URL et adresses IP Office 365
 
@@ -45,7 +45,7 @@ Certains points de terminaison réseau ont été publiés précédemment et n’
 |:-----|:-----|:-----|:-----|
 | **Ligne** | **Objectif** | **Destination** | **Type** |
 | 1  | [Importer un service](https://support.office.com/article/use-network-upload-to-import-your-organization-pst-files-to-office-365-103f940c-0468-4e1a-b527-cc8ad13a5ea6) pour l’ingestion de fichier et de fichiers PST | Reportez-vous au [service d’importation](https://support.office.com/article/use-network-upload-to-import-your-organization-pst-files-to-office-365-103f940c-0468-4e1a-b527-cc8ad13a5ea6) pour obtenir les exigences supplémentaires. | Scénario sortant rare |
-| 2  | [Assistant Support et récupération Office 365 Microsoft](https://diagnostics.office.com/#/) - Valider les informations d’identification utilisateur d’authentification unique. Source :<br> ```o365diagnosticsbasic-eus.cloudapp.net (104.211.54.99)``` <br> ```o365diagnosticworker-eus.cloudapp.net (104.211.54.134)```  | service d’émission de jeton de sécurité local | Trafic serveur entrant |
+| 2  | [Assistant Support Microsoft et récupération Office 365](https://diagnostics.office.com/#/) : valider les informations d’identification utilisateur d’authentification unique.  | https<span>://</span>autodiscover.outlook.com <BR> <span>https://</span>officecdn.microsoft.com <BR> <span>https://</span>api.diagnostics.office.com <BR> <span>https://</span>apibasic.diagnostics.office.com <BR> <span>https://</span>autodiscover-s.outlook.com <BR> <span>https://</span>cloudcheckenabler.azurewebsites.net <BR> <span>https://</span>dcs-staging.azure-api.net <BR> <span>https://</span>login.live.com <BR> <span>https://</span>login.microsoftonline.com <BR> <span>https://</span>login.windows.net <BR> <span>https://</span>o365diagtelemetry.trafficmanager.net <BR> <span>https://</span>odc.officeapps.live.com <BR> <span>https://</span>offcatedge.azureedge.net <BR> <span>https://</span>officeapps.live.com <BR> <span>https://</span>outlook.office365.com <BR> <span>https://</span>outlookdiagnostics.azureedge.net | Trafic serveur sortant |
 | 3  | Azure AD Connect (avec option d’authentification unique) - WinRM et PowerShell distant | Environnement STS client (serveur AD FS et proxy AD FS) \| Ports TCP 80 et 443 | Trafic serveur entrant |
 | 4  | STS, comme des serveurs proxy AD FS (pour les clients fédérés uniquement) | STS client (comme un proxy AD FS) \| Ports TCP 443 ou TCP 49443 avec ClientTLS | Trafic serveur entrant |
 | 5  | [Intégration de la messagerie unifiée Exchange Online/SBC](https://technet.microsoft.com/library/jj673565.aspx) | Bidirectionnel entre le contrôleur de bordure de session local et *.um.outlook.com | Trafic serveur sortant uniquement |

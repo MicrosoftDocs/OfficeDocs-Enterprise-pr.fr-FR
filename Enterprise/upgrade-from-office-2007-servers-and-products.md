@@ -21,14 +21,16 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: La prise en charge se termine bientôt pour les serveurs et les applications clientes Office 2007, et les accords de support personnalisés ne sont pas disponibles. Utilisez cet article pour commencer à planifier votre mise à niveau maintenant.
-ms.openlocfilehash: 7f07de4fcca57dd2ad744a7c8c594ca88ddd5f4e
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 2fd2e8a0bd2435dbec8c846111a628ffe56fa10c
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070210"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748021"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Ressources pour vous aider à effectuer une mise à niveau à partir de serveurs et clients Office 2007
+
+*Cet article s’applique à la fois à Office 365 entreprise et à Microsoft 365 entreprise.*
 
 Si vous utilisez les produits et services Office 2007, la prise en charge de ces applications a pris fin. Pendant que vous planifiez votre mise à niveau, il est très utile de passer au Cloud Microsoft, en commençant par Office 365. Utilisez cet article comme point de départ pour passer en revue vos options et planifier votre mise à niveau.
       
@@ -45,7 +47,7 @@ Le support technique est terminé pour les produits et services Office 2007. Les
 |[Mise à niveau à partir d’Office Communications Server](https://docs.microsoft.com/SkypeForBusiness/plan-your-deployment/upgrade) <br/> |8 janvier 2018  <br/> |
 |[Feuille de route pour la fin de l’assistance pour PerformancePoint Server 2007](pps-2007-end-of-support.md) <br/> |9 janvier 2018  <br/> |
    
-Lorsque la prise en charge d’un produit Microsoft est terminée, il n’existe aucune nouvelle mise à jour de sécurité, aucune mise à jour non relative à la sécurité, aucune option de support technique gratuite ou payant (y compris des accords de support personnalisé) ou des mises à jour de contenu technique en ligne. Que vous soyez une organisation d’entreprise ou un utilisateur à domicile individuel, plusieurs options sont à prendre en compte:
+Lorsque la prise en charge d’un produit Microsoft est terminée, il n’existe aucune nouvelle mise à jour de sécurité, aucune mise à jour non relative à la sécurité, aucune option de support technique gratuite ou payant (y compris des accords de support personnalisé) ou des mises à jour de contenu technique en ligne. Que vous soyez une organisation d’entreprise ou un utilisateur à domicile individuel, plusieurs options sont à prendre en compte :
 
 ## <a name="im-a-home-user-what-do-i-do"></a>Je suis un utilisateur à domicile. What do I do?
 
@@ -55,7 +57,7 @@ Si vous utilisez les produits et applications Office 2007 à la maison, reportez
 
 [Groupe de retraite Office (Communauté Microsoft Tech)](https://go.microsoft.com/fwlink/?linkid=842065)
   
-[Vidéo: qu’est-ce que Office 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
+[Vidéo : qu’est-ce que Office 365 ?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
   
 [Politique de cycle de vie Microsoft](https://go.microsoft.com/fwlink/?linkid=865200)
 

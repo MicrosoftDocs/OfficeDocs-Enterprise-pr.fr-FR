@@ -17,16 +17,16 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: Contient des liens vers des informations sur la planification et le test du réseau, ainsi que sur la migration vers Office 365.
-ms.openlocfilehash: b2f9cdd3514b8d272bc070108f0dbed94d350f94
-ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
+ms.openlocfilehash: b40b940c99b7f0cf752dae069ca7eae7ac5516d0
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428141"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747784"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Planification du réseau et de la migration pour Office 365
 
-*Cet article s’applique à la fois à Office 365 entreprise et à Microsoft 365 Enterprise*
+*Cet article s’applique à la fois à Office 365 entreprise et à Microsoft 365 entreprise.*
 
 Cet article contient des liens vers des informations sur la planification et le test du réseau, ainsi que sur la migration vers Office 365.
   

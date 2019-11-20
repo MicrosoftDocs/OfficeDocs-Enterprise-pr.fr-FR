@@ -1,5 +1,5 @@
 ---
-title: Intégration d'Office 365 aux environnements locaux
+title: Intégration d’Office 365 aux environnements locaux
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,16 +19,16 @@ search.appverid:
 - MED150
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
 description: Découvrez comment intégrer Office 365 à vos services d’annuaire existants.
-ms.openlocfilehash: f6e29207dfb1175df8af480942484ece39e249b7
-ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
+ms.openlocfilehash: 36bbda95e96223c465d5bf5a2ec93e5514a38a17
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428117"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747160"
 ---
-# <a name="office-365-integration-with-on-premises-environments"></a>Intégration d'Office 365 aux environnements locaux
+# <a name="office-365-integration-with-on-premises-environments"></a>Intégration d’Office 365 aux environnements locaux
 
-*Cet article s’applique à la fois à Office 365 entreprise et à Microsoft 365 Enterprise*
+*Cet article s’applique à la fois à Office 365 entreprise et à Microsoft 365 entreprise.*
 
 Vous pouvez intégrer Office 365 à vos services d’annuaire existants et à une installation locale d’Exchange Server, Skype entreprise Server 2015 ou SharePoint Server.
   

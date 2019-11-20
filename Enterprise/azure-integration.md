@@ -19,16 +19,16 @@ search.appverid:
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
 description: Votre abonnement Office 365 inclut un abonnement à Azure AD. Intégrez Office 365 avec Azure AD si vous voulez une synchronisation de mot de passe ou une authentification unique avec votre environnement local.
-ms.openlocfilehash: 00edf54a6b20e7ed0ab17fb452b342ddf8b454b3
-ms.sourcegitcommit: ecfa362182f906befa885bf5f0094528ff570779
+ms.openlocfilehash: 44231420ee92c37f14874d6fb0f9e926d8d4369d
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37435368"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38745787"
 ---
 # <a name="azure-integration-with-office-365"></a>Intégration d’Azure à Office 365
 
-*Cet article s’applique à la fois à Office 365 entreprise et à Microsoft 365 Enterprise*
+*Cet article s’applique à la fois à Office 365 entreprise et à Microsoft 365 entreprise.*
 
 Office 365 utilise Azure Active Directory (Azure AD) pour gérer les identités des utilisateurs en arrière-plan. Votre abonnement Office 365 inclut un abonnement gratuit à Azure AD afin que vous puissiez intégrer Office 365 à Azure AD si vous souhaitez synchroniser les mots de passe ou configurer l’authentification unique avec votre environnement local. Vous pouvez également acheter des fonctionnalités avancées pour mieux gérer vos comptes.
   

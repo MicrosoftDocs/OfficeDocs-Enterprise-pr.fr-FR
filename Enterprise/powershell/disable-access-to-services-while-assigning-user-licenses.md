@@ -14,19 +14,16 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: Découvrez comment attribuer des licences à des comptes d’utilisateur et à désactiver des plans de service spécifiques en même temps à l’aide d’Office 365 PowerShell.
-ms.openlocfilehash: ac356e5cc70ef36ad2e45b84f0dcd9d2252c79a4
-ms.sourcegitcommit: 6b4fca7ccdbb7aeadc705d82f1007ac285f27357
+ms.openlocfilehash: 16e24a61aea1298b2c24a251d61c414c355dead7
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37282919"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747656"
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>Désactiver l’accès aux services lors de l’attribution des licences utilisateur
 
-**Résumé :** Découvrez comment attribuer des licences à des comptes d’utilisateur et désactiver des plans de service spécifiques en même temps à l’aide d’Office 365 PowerShell.
-  
 Les abonnements Office 365 sont fournis avec des plans de service pour des services individuels. Les administrateurs d'Office 365 ont souvent besoin de désactiver certains plans lors de l'attribution des licences aux utilisateurs. Avec les instructions fournies dans cet article, vous pouvez attribuer une licence Office 365 tout en désactivant des plans de service spécifiques à l'aide de PowerShell pour un ou plusieurs comptes d'utilisateur.
-
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Utilisez le module Azure Active Directory PowerShell pour Graph
 
@@ -35,7 +32,7 @@ Tout d’abord, [connectez-vous à votre client Office 365](connect-to-office-36
 
 Ensuite, répertoriez les plans de licence pour votre client à l’aide de cette commande.
 
-```
+```powershell
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
@@ -45,7 +42,7 @@ Ensuite, compilez une liste de services à activer. Pour obtenir la liste compl�
 
 Pour le bloc de commande ci-dessous, renseignez le nom d’utilisateur principal du compte d’utilisateur, le numéro de référence SKU et la liste des plans de service pour activer et supprimer \< le texte explicatif, ainsi que les caractères et >. Ensuite, exécutez les commandes qui en résultent à l’invite de commande PowerShell.
   
-```
+```powershell
 $userUPN="<user account UPN>"
 $skuPart="<SKU part number>"
 $serviceList=<double-quoted enclosed, comma-separated list of enabled services>
@@ -68,7 +65,7 @@ Tout d’abord, [connectez-vous à votre client Office 365](connect-to-office-36
 
 Ensuite, exécutez la commande suivante pour afficher vos abonnements en cours :
   
-```
+```powershell
 Get-MsolAccountSku
 ```
 
@@ -86,7 +83,7 @@ Notez la valeur AccountSkuId pour votre abonnement Office 365 contenant les util
   
 Ensuite, exécutez cette commande pour afficher les détails sur les plans de service Office 365 qui sont disponibles dans tous vos abonnements :
   
-```
+```powershell
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 ```
 
@@ -103,8 +100,8 @@ Le tableau suivant présente les plans de service Office 365 et leurs noms convi
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Office Professionnel Plus  <br/> |
-| `MCOSTANDARD` <br/> |Skype Entreprise Online  <br/> |
-| `SHAREPOINTWAC` <br/> |Office   <br/> |
+| `MCOSTANDARD` <br/> |Skype Entreprise Online  <br/> |
+| `SHAREPOINTWAC` <br/> |Bureau   <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online (plan 2)  <br/> |
    
@@ -116,7 +113,7 @@ Maintenant que vous avez le paramètre AccountSkuId et les plans de service à d
 
 Pour un utilisateur unique, renseignez le nom d'utilisateur principal du compte d'utilisateur, le paramètre AccountSkuId et la liste des plans de service à désactiver, et supprimez le texte explicatif et les caractères \< et >. Ensuite, exécutez les commandes qui en résultent à l'invite de commande PowerShell.
   
-```
+```powershell
 $userUPN="<the user's account name in email format>"
 $accountSkuId="<the AccountSkuId from the Get-MsolAccountSku command>"
 $planList=@( <comma-separated, double-quote enclosed list of the service plans to disable> )
@@ -131,7 +128,7 @@ Set-MsolUser -UserPrincipalName $userUpn -UsageLocation $usageLocation
 
 Voici un exemple de bloc de commande pour le compte nommé belindan@contoso.com, pour la licence contoso:ENTERPRISEPACK, et les plans de service à désactiver sont RMS_S_ENTERPRISE, SWAY, INTUNE_O365 et YAMMER_ENTERPRISE :
   
-```
+```powershell
 $userUPN="belindan@contoso.com"
 $accountSkuId="contoso:ENTERPRISEPACK"
 $planList=@( "RMS_S_ENTERPRISE","SWAY","INTUNE_O365","YAMMER_ENTERPRISE" )
@@ -148,7 +145,7 @@ Set-MsolUser -UserPrincipalName $userUpn -UsageLocation $UsageLocation
 
 Pour effectuer cette tâche d'administration pour plusieurs utilisateurs, créez un fichier texte de valeurs séparées par des virgules (CSV) qui contient les champs UserPrincipalName et UsageLocation. Voici un exemple :
   
-```
+```powershell
 UserPrincipalName,UsageLocation
 ClaudeL@contoso.onmicrosoft.com,FR
 LynneB@contoso.onmicrosoft.com,US
@@ -157,7 +154,7 @@ ShawnM@contoso.onmicrosoft.com,US
 
 Ensuite, remplissez l’emplacement des fichiers CSV d’entrée et de sortie, l’ID de référence du compte et la liste des plans de service à désactiver, puis exécutez les commandes qui en résultent à l’invite de commande PowerShell.
   
-```
+```powershell
 $inFileName="<path and file name of the input CSV file that contains the users, example: C:\admin\Users2License.CSV>"
 $outFileName="<path and file name of the output CSV file that records the results, example: C:\admin\Users2License-Done.CSV>"
 $accountSkuId="<the AccountSkuId from the Get-MsolAccountSku command>"

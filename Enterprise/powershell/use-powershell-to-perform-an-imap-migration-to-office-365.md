@@ -12,17 +12,15 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
 description: 'Résumé : Découvrez comment utiliser Windows PowerShell pour effectuer une migration IMAP vers Office 365.'
-ms.openlocfilehash: c7b80ea444fd9e8f0324cb0bc29edf46cd1219d0
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
-ms.translationtype: HT
+ms.openlocfilehash: b6c68dc611d22579f81db838b2b5d08e99f7519a
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071160"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38746267"
 ---
 # <a name="use-powershell-to-perform-an-imap-migration-to-office-365"></a>Utilisation de PowerShell pour effectuer une migration IMAP vers Office 365
 
- **Résumé :** Découvrez comment utiliser Windows PowerShell pour effectuer une migration IMAP vers Office 365.
-  
 Dans le cadre du processus de déploiement d'Office 365, vous pouvez choisir de migrer le contenu des boîtes aux lettres utilisateur depuis un service de messagerie IMAP (Internet Mail Access Protocol) vers Office 365. Cet article décrit les tâches correspondant à une migration de messagerie IMAP à l'aide d'Exchange Online PowerShell. 
   
 > [!NOTE]
@@ -67,7 +65,7 @@ Les migrations IMAP font l'objet des restrictions suivantes :
     
 - **Vérifiez que vous pouvez vous connecter à votre serveur IMAP.** Pour tester les paramètres de connexion à votre serveur IMAP, exécutez la commande suivante dans Exchange Online PowerShell.
     
-  ```
+  ```powershell
   Test-MigrationServerAvailability -IMAP -RemoteServer <FQDN of IMAP server> -Port <143 or 993> -Security <None, Ssl, or Tls>
   ```
 
@@ -88,7 +86,7 @@ Les attributs obligatoires pour chaque utilisateur sont les suivants :
     
 Voici un exemple du format du fichier CSV. Dans cet exemple, trois boîtes aux lettres sont migrées :
   
-```
+```powershell
 EmailAddress,UserName,Password
 terrya@contoso.edu,terry.adams,1091990
 annb@contoso.edu,ann.beebe,2111991
@@ -101,7 +99,7 @@ Pour l'attribut **UserName**, en plus du nom d'utilisateur, vous pouvez utiliser
   
 Si vous migrez une messagerie à partir de l'implémentation IMAP pour Microsoft Exchange, utilisez le format **Domain/Admin_UserName/User_UserName** pour l'attribut **UserName** dans le fichier CSV. Supposons que vous migrez la messagerie à partir d'Exchange pour Terry Adams, Ann Beebe et Paul Cannon. Vous disposez d'un compte d'administrateur de messagerie dont le nom d'utilisateur est **mailadmin** et le mot de passe est **P@ssw0rd**. Voici à quoi ressemblerait votre fichier CSV :
   
-```
+```powershell
 EmailAddress,UserName,Password
 terrya@contoso.edu,contoso-students/mailadmin/terry.adams,P@ssw0rd
 annb@contoso.edu,contoso-students/mailadmin/ann.beebe,P@ssw0rd
@@ -112,7 +110,7 @@ paulc@contoso.edu,contoso-students/mailadmin/paul.cannon,P@ssw0rd
   
 Pour les serveurs IMAP qui prennent en charge Simple Authentication and Security Layer (SASL), comme un serveur IMAP Dovecot, utilisez le format **User_UserName*Admin_UserNam**, où l’astérisque (*) est un caractère de séparation configurable. Supposons que vous migrez les mêmes boîtes aux lettres utilisateur à partir d’un serveur IMAP Dovecot à l’aide des informations d’identification d’administrateur **mailadmin** et **P@ssw0rd**. Voici à quoi ressemblerait votre fichier CSV :
   
-```
+```powershell
 EmailAddress,UserName,Password
 terrya@contoso.edu,terry.adams*mailadmin,P@ssw0rd
 annb@contoso.edu,ann.beebe*mailadmin,P@ssw0rd
@@ -123,7 +121,7 @@ paulc@contoso.edu,paul.cannon*mailadmin,P@ssw0rd
   
 Si vous migrez une messagerie à partir d'un serveur de messagerie Mirapoint, utilisez le format **#user@domain#Admin_UserName#** pour les informations d'identification d'administrateur. Pour migrer une messagerie à partir d'un serveur Mirapoint à l'aide des informations d'identification d'administrateur **mailadmin** et **P@ssw0rd**, votre fichier CSV ressemblerait à ceci :
   
-```
+```powershell
 EmailAddress,UserName,Password
 terrya@contoso.edu,#terry.adams@contoso-students.edu#mailadmin#,P@ssw0rd
 annb@contoso.edu,#ann.beebe@contoso-students.edu#mailadmin#,P@ssw0rd
@@ -138,7 +136,7 @@ Pour migrer des boîtes aux lettres après avoir configuré des dossiers partag�
   
 Voici un exemple de fichier CSV contenant l'attribut **UserRoot**:
   
-```
+```powershell
 EmailAddress,UserName,Password,UserRoot
 terrya@contoso.edu,mailadmin,P@ssw0rd,/users/terry.adams
 annb@contoso.edu,mailadmin,P@ssw0rd,/users/ann.beebe
@@ -154,14 +152,14 @@ Pour la liste complète des commandes de migration, voir [Cmdlets de déplacemen
   
 Pour créer le point de terminaison de migration IMAP appelé « IMAPEndpoint » dans Exchange Online PowerShell, exécutez la commande suivante :
   
-```
+```powershell
 New-MigrationEndpoint -IMAP -Name IMAPEndpoint -RemoteServer imap.contoso.com -Port 993 -Security Ssl
 
 ```
 
 Vous pouvez également ajouter des paramètres pour spécifier les migrations simultanées, les migrations incrémentielles simultanées et le port à utiliser. La commande Exchange Online PowerShell suivante crée un point de terminaison de migration IMAP appelé « IMAPEndpoint » qui prend en charge 50 migrations simultanées et jusqu'à 25 synchronisations incrémentielles simultanées. Il configure également le point de terminaison pour utiliser le port 143 pour le chiffrement TLS.
   
-```
+```powershell
 New-MigrationEndpoint -IMAP -Name IMAPEndpoint -RemoteServer imap.contoso.com -Port 143 -Security Tls -MaxConcurrentMigrations
 50 -MaxConcurrentIncrementalSyncs 25
 ```
@@ -172,7 +170,7 @@ Pour plus d'informations sur la cmdlet **New-MigrationEndpoint**, voir[New-Migra
 
 Exécutez la commande suivante dans Exchange Online PowerShell pour afficher des informations sur le lot « IMAPEndpoint » :
   
-```
+```powershell
 Get-MigrationEndpoint IMAPEndpoint | Format-List EndpointType,RemoteServer,Port,Security,Max*
 ```
 
@@ -183,7 +181,7 @@ La cmdlet [New-MigrationBatch](https://go.microsoft.com/fwlink/p/?LinkId=536439)
   
 La commande Exchange Online PowerShell suivante démarre automatiquement le lot de migration appelé « IMAPBatch1 » à l’aide du point de terminaison IMAP appelé « IMAPEndpoint » :
   
-```
+```powershell
 New-MigrationBatch -Name IMAPBatch1 -SourceEndpoint IMAPEndpoint -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\IMAPmigration_1.csv")) -AutoStart
 ```
 
@@ -191,13 +189,13 @@ New-MigrationBatch -Name IMAPBatch1 -SourceEndpoint IMAPEndpoint -CSVData ([Syst
 
 Exécuter la cmdlet [Get-MigrationBatch](https://go.microsoft.com/fwlink/p/?LinkId=536441) pour afficher des informations sur le lot « IMAPBatch1 » :
   
-```
+```powershell
 Get-MigrationBatch -Identity IMAPBatch1 | Format-List
 ```
 
 Vous pouvez également vérifier que le lot a démarré en exécutant la commande suivante :
   
-```
+```powershell
 Get-MigrationBatch -Identity IMAPBatch1 | Format-List Status
 ```
 
@@ -221,7 +219,7 @@ Après avoir modifié l'enregistrement MX et vérifié que tout le courrier est 
     
 Pour supprimer le lot de migration « IMAPBatch1 » dans Exchange Online PowerShell, exécutez la commande ci-dessous :
   
-```
+```powershell
 Remove-MigrationBatch -Identity IMAPBatch1
 ```
 
@@ -231,7 +229,7 @@ Pour plus d'informations sur la cmdlet **Remove-MigrationBatch**, voir[Remove-Mi
 
 Exécutez la commande suivante dans Exchange Online PowerShell pour afficher des informations sur le lot « IMAPBatch1 » :
   
-```
+```powershell
 Get-MigrationBatch IMAPBatch1"
 ```
 
@@ -240,8 +238,6 @@ La commande renvoie soit le lot de migration avec l'état **Suppression**, soit 
 Pour plus d'informations sur la cmdlet **Get-MigrationBatch**, voir[Get-MigrationBatch](https://go.microsoft.com/fwlink/p/?LinkId=536441).
   
 ## <a name="see-also"></a>Voir aussi
-
-#### 
 
 [Utilitaire de dépannage de migration IMAP](https://go.microsoft.com/fwlink/p/?LinkId=536482)
 

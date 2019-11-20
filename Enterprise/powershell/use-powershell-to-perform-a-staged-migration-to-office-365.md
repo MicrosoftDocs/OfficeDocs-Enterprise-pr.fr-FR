@@ -12,17 +12,15 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
 description: 'Résumé : Découvrez comment utiliser Windows PowerShell pour effectuer une migration intermédiaire vers Office 365.'
-ms.openlocfilehash: 8bb877cba8bb06762ee56fa8c022be78d1c011c3
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
-ms.translationtype: HT
+ms.openlocfilehash: d60145c7dd25fc7cf6be51a891b8fae8e67ccc2b
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071170"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747530"
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-office-365"></a>Utiliser PowerShell pour effectuer une migration intermédiaire vers Office 365
 
- **Résumé :** Découvrez comment utiliser Windows PowerShell pour effectuer une migration intermédiaire vers Office 365.
-  
 Vous pouvez migrer progressivement le contenu des boîtes aux lettres des utilisateurs vers Office 365 à partir d'un système de messagerie source à l'aide d'une migration intermédiaire.
   
 Cet article décrit les tâches nécessaires pour effectuer une migration de messagerie intermédiaire à l'aide d'Exchange Online PowerShell. La rubrique [Ce que vous devez savoir sur une migration de messagerie intermédiaire vers Office 365](https://go.microsoft.com/fwlink/p/?LinkId=536487) présente le processus de migration. Une fois familiarisé avec son contenu, reportez-vous au présent article pour migrer des boîtes aux lettres d'un système de messagerie vers un autre.
@@ -63,11 +61,11 @@ Avant de migrer les boîtes aux lettres vers Office 365 en utilisant une migrati
     
 - Dans Exchange Online PowerShell, exécutez les commandes suivantes :
     
-  ```
+  ```powershell
   $Credentials = Get-Credential
   ```
 
-  ```
+  ```powershell
   Test-MigrationServerAvailability -ExchangeOutlookAnywhere -Autodiscover -EmailAddress <email address for on-premises administrator> -Credentials $credentials
   ```
 
@@ -118,7 +116,7 @@ Voici un exemple de format pour le fichier CSV. Dans cet exemple, trois boîtes 
   
 La première ligne, ou ligne d'en-tête, du fichier CSV répertorie les noms des attributs, ou champs, spécifiés dans les lignes qui suivent. Les noms d'attributs sont séparés par des virgules.
   
-```
+```powershell
 EmailAddress,Password,ForceChangePassword 
 pilarp@contoso.com,Pa$$w0rd,False 
 tobyn@contoso.com,Pa$$w0rd,False 
@@ -141,11 +139,11 @@ Pour la liste complète des commandes de migration, voir [Cmdlets de déplacemen
   
 Pour créer un point de terminaison de migration Outlook Anywhere appelé « StagedEndpoint » dans Exchange Online PowerShell, exécutez les commandes suivantes :
   
-```
+```powershell
 $Credentials = Get-Credential
 ```
 
-```
+```powershell
 New-MigrationEndpoint -ExchangeOutlookAnywhere -Name StagedEndpoint -Autodiscover -EmailAddress administrator@contoso.com -Credentials $Credentials
 ```
 
@@ -158,7 +156,7 @@ Pour plus d'informations sur la cmdlet **New-MigrationEndpoint**, voir[New-Migra
 
 Dans Exchange Online PowerShell, exécutez la commande suivante pour afficher des informations sur le point de terminaison de migration « StagedEndpoint » :
   
-```
+```powershell
 Get-MigrationEndpoint StagedEndpoint | Format-List EndpointType,ExchangeServer,UseAutoDiscover,Max*
 ```
 
@@ -167,13 +165,13 @@ Get-MigrationEndpoint StagedEndpoint | Format-List EndpointType,ExchangeServer,U
 
 La cmdlet **New-MigrationBatch** d'Exchange Online PowerShell permet de créer un lot pour une migration à basculement. Vous pouvez créer un lot de migration et démarrer automatiquement son traitement en incluant le paramètre _AutoStart_. Vous pouvez également créer un lot de migration, puis démarrer manuellement son traitement par la suite à l'aide de la cmdlet **Start-MigrationBatch**. Cet exemple de code crée un lot de migration appelé « StagedBatch1 » et utilise le point de terminaison de migration créé à l'étape précédente.
   
-```
+```powershell
 New-MigrationBatch -Name StagedBatch1 -SourceEndpoint StagedEndpoint -AutoStart
 ```
 
 Cet exemple de code crée également un lot de migration appelé « StagedBatch1 » et utilise le point de terminaison de migration créé à l'étape précédente. Le paramètre  _AutoStart_ n'étant pas inclus, le traitement du lot de migration doit être lancé manuellement sur le tableau de bord de migration ou à l'aide de la cmdlet **Start-MigrationBatch**. Comme indiqué précédemment, il ne peut y avoir qu'une seule lot de migration à basculement à la fois.
   
-```
+```powershell
 New-MigrationBatch -Name StagedBatch1 -SourceEndpoint StagedEndpoint
 ```
 
@@ -181,13 +179,13 @@ New-MigrationBatch -Name StagedBatch1 -SourceEndpoint StagedEndpoint
 
 Exécutez la commande suivante dans Exchange Online PowerShell pour afficher des informations sur le lot « StagedBatch1 » :
   
-```
+```powershell
 Get-MigrationBatch -Identity StagedBatch1 | Format-List
 ```
 
 Vous pouvez également vérifier que le lot a démarré en exécutant la commande suivante :
   
-```
+```powershell
 Get-MigrationBatch -Identity StagedBatch1 | Format-List Status
 ```
 
@@ -215,7 +213,7 @@ Pour obtenir plus d’informations et télécharger des scripts que vous pouvez 
   
 Pour supprimer le lot de migration « StagedBatch1 » dans Exchange Online PowerShell, exécutez la commande ci-dessous.
   
-```
+```powershell
 Remove-MigrationBatch -Identity StagedBatch1
 ```
 
@@ -225,7 +223,7 @@ Pour plus d'informations sur la cmdlet **Remove-MigrationBatch**, voir[Remove-Mi
 
 Exécutez la commande suivante dans Exchange Online PowerShell pour afficher des informations sur le lot « IMAPBatch1 » :
   
-```
+```powershell
 Get-MigrationBatch StagedBatch1
 ```
 

@@ -14,20 +14,22 @@ ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 ms.collection:
 - M365-security-compliance
 description: L’authentification moderne hybride (HMA), est une méthode de gestion des identités qui offre une authentification et une autorisation utilisateur plus sécurisées, et est disponible pour les déploiements hybrides Exchange Server locaux.
-ms.openlocfilehash: 69a806fc1026832492f7bab96982509a83a82329
-ms.sourcegitcommit: c8acfa57a22d7d055500f2e8b84a9ef252c70e82
+ms.openlocfilehash: 44061a8b75a07283c36d02812488441d40f9c9c3
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "36493311"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38746217"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Comment configurer Exchange Server en local pour utiliser l’authentification moderne hybride
+
+*Cet article s’applique à la fois à Office 365 entreprise et à Microsoft 365 entreprise.*
 
 L’authentification moderne hybride (HMA), est une méthode de gestion des identités qui offre une authentification et une autorisation utilisateur plus sécurisées, et est disponible pour les déploiements hybrides Exchange Server locaux.
   
 ## <a name="fyi"></a>Pour info
 
-Avant de commencer, j’appelle:
+Avant de commencer, j’appelle :
   
 - HMA d’authentification \> moderne hybride
     
@@ -35,11 +37,11 @@ Avant de commencer, j’appelle:
     
 - Exchange Online \> exo
     
-En outre, *si un graphisme de cet article a un objet «grisé» ou «grisé», cela signifie que l’élément affiché en gris n’est pas inclus dans la configuration spécifique* à la HMA. 
+En outre, *si un graphisme de cet article a un objet « grisé » ou « grisé », cela signifie que l’élément affiché en gris n’est pas inclus dans la configuration spécifique* à la HMA. 
   
 ## <a name="enabling-hybrid-modern-authentication"></a>Activation de l’authentification moderne hybride
 
-L’activation de la haute-HMA sur signifie:
+L’activation de la haute-HMA sur signifie :
   
 1. Assurez-vous que vous remplissez les configuration requise avant de commencer.
     
@@ -53,7 +55,7 @@ L’activation de la haute-HMA sur signifie:
     
 5. Activation de la haute HMA dans EXCH.
     
- **Note** Votre version de l’agent de gestion du support Office est-elle? Découvrez [le fonctionnement de l’authentification moderne pour les applications clientes office 2013 et office 2016](modern-auth-for-office-2013-and-2016.md).
+ **Note** Votre version de l’agent de gestion du support Office est-elle ? Découvrez [le fonctionnement de l’authentification moderne pour les applications clientes office 2013 et office 2016](modern-auth-for-office-2013-and-2016.md).
   
 ## <a name="make-sure-you-meet-all-the-pre-reqs"></a>Vérifier que vous remplissez toutes les conditions préalables
 
@@ -63,7 +65,7 @@ L’activation de la haute-HMA sur signifie:
 
 Exécutez les commandes qui affectent vos URL de service Web local en tant que SPN Azure AD. Les SPN sont utilisés par les ordinateurs clients et les appareils au cours de l’authentification et de l’autorisation. Toutes les URL pouvant être utilisées pour se connecter à Azure Active Directory (AAD) doivent être enregistrées dans AAD (cela inclut les espaces de noms internes et externes).
   
-Tout d’abord, Rassemblez toutes les URL que vous devez ajouter dans AAD. Exécutez ces commandes en local:
+Tout d’abord, Rassemblez toutes les URL que vous devez ajouter dans AAD. Exécutez ces commandes en local :
   
 ```powershell
 Get-MapiVirtualDirectory | FL server,*url*
@@ -78,15 +80,15 @@ Assurez-vous que les URL auxquelles les clients peuvent se connecter sont réper
 
  **Note** Vous devez utiliser l’option Connect-MsolService à partir de cette page pour pouvoir utiliser la commande ci-dessous. 
     
-2. Pour vos URL liées à Exchange, tapez la commande suivante:
+2. Pour vos URL liées à Exchange, tapez la commande suivante :
     
 ```powershell
 Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 | select -ExpandProperty ServicePrincipalNames
 ```
 
-Prenez note de (et capture d’écran pour une comparaison ultérieure) la sortie de cette commande, qui doit inclure une URL https:// *autodiscover.yourdomain.com* et https:// *mail.yourdomain.com* , mais qui se composent principalement de noms principaux de démarrage commençant par 00000002-0000-0ff1-ce00-000000000000/. S’il existe des URL https://de votre local qui ne sont pas disponibles, nous devons ajouter ces enregistrements spécifiques à cette liste. 
+Prenez note de (et de capture d’écran pour une comparaison ultérieure) la sortie de cette commande, qui doit inclure une URL https:// *autodiscover.yourdomain.com* et https:// *mail.yourdomain.com* , mais qui se composent principalement de noms principaux de contenu commençant par 00000002-0000-0ff1-CE00-000000000000/. S’il existe des URL https://de votre local qui ne sont pas disponibles, nous devons ajouter ces enregistrements spécifiques à cette liste. 
   
-3. Si vos enregistrements MAPI/HTTP, EWS, ActiveSync, OAB et Autodiscover internes et externes ne s’affichent pas dans cette liste, vous devez les ajouter à l’aide de la commande ci-`mail.corp.contoso.com`dessous (les`owa.contoso.com`exemples d’URL sont «» et «», mais vous pouvez **remplacer les URL d’exemple par** les vôtres). : <br/>
+3. Si vos enregistrements MAPI/HTTP, EWS, ActiveSync, OAB et Autodiscover internes et externes ne s’affichent pas dans cette liste, vous devez les ajouter à l’aide de la commande ci-`mail.corp.contoso.com`dessous (les`owa.contoso.com`exemples d’URL sont « » et « », mais vous pouvez **remplacer les URL d’exemple par les vôtres** ) : <br/>
 ```powershell
 $x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000   
 $x.ServicePrincipalnames.Add("https://mail.corp.contoso.com/")
@@ -98,7 +100,7 @@ Set-MSOLServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 -S
   
 ## <a name="verify-virtual-directories-are-properly-configured"></a>Vérifier que les répertoires virtuels sont correctement configurés
 
-Maintenant, vérifiez que OAuth est correctement activé dans Exchange sur tous les répertoires virtuels qu’Outlook peut utiliser en exécutant les commandes suivantes:
+Maintenant, vérifiez que OAuth est correctement activé dans Exchange sur tous les répertoires virtuels qu’Outlook peut utiliser en exécutant les commandes suivantes :
 
 ```powershell
 Get-MapiVirtualDirectory | FL server,*url*,*auth* 
@@ -107,7 +109,7 @@ Get-OABVirtualDirectory | FL server,*url*,*oauth*
 Get-AutoDiscoverVirtualDirectory | FL server,*oauth*
 ```
 
-Vérifiez la sortie pour vous assurer que le protocole **OAuth** est activé sur chacune de ces VDirs, il ressemblera à ceci (et la clé à examiner est «OAuth»); 
+Vérifiez la sortie pour vous assurer que le protocole **OAuth** est activé sur chacune de ces VDirs, il ressemblera à ceci (et la clé à examiner est « OAuth »); 
 
 ```powershell
 Get-MapiVirtualDirectory | fl server,*url*,*auth*
@@ -126,19 +128,19 @@ Si OAuth est absent de n’importe quel serveur et de l’un des quatre réperto
   
 ## <a name="confirm-the-evosts-auth-server-object-is-present"></a>Vérifiez que l’objet serveur d’authentification EvoSTS est présent.
 
-Revenez à l’environnement de commande Exchange Management Shell pour cette dernière commande. À présent, vous pouvez vérifier que votre site local dispose d’une entrée pour le fournisseur d’authentification evoSTS:
+Revenez à l’environnement de commande Exchange Management Shell pour cette dernière commande. À présent, vous pouvez vérifier que votre site local dispose d’une entrée pour le fournisseur d’authentification evoSTS :
   
 ```powershell
 Get-AuthServer | where {$_.Name -eq "EvoSts"}
 ```
 
-Votre sortie doit afficher un AuthServer du nom EvoSts et l’État «Enabled» doit être true. Si ce n’est pas le cas, vous devez télécharger et exécuter la version la plus récente de l’Assistant Configuration hybride.
+Votre sortie doit afficher un AuthServer du nom EvoSts et l’État « Enabled » doit être true. Si ce n’est pas le cas, vous devez télécharger et exécuter la version la plus récente de l’Assistant Configuration hybride.
   
  **Important** Si vous utilisez Exchange 2010 dans votre environnement, le fournisseur d’authentification EvoSTS n’est pas créé. 
   
 ## <a name="enable-hma"></a>Activer la HMA
 
-Exécutez la commande suivante dans l’environnement de commande Exchange Management Shell:
+Exécutez la commande suivante dans l’environnement de commande Exchange Management Shell :
 
 ```powershell
 Set-AuthServer -Identity EvoSTS -IsDefaultAuthorizationEndpoint $true  
@@ -149,9 +151,9 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 
 Une fois que vous activez HMA, la prochaine connexion d’un client utilisera le nouveau flux d’authentification. Notez que l’activation de la mémoire HMA ne déclenche pas une nouvelle authentification pour un client. Les clients se ré-authentifient en fonction de la durée de vie des jetons d’authentification et/ou des certificats dont ils disposent.
   
-Vous devez également maintenir la touche CTRL enfoncée en même temps que vous cliquez avec le bouton droit sur l’icône du client Outlook (également dans le bac Windows notifications) et cliquez sur «état de la connexion». Recherchez l’adresse SMTP du client par rapport à un «type d’authentification» de «\*porteur», qui représente le jeton du porteur utilisé dans OAuth.
+Vous devez également maintenir la touche CTRL enfoncée en même temps que vous cliquez avec le bouton droit sur l’icône du client Outlook (également dans le bac Windows notifications) et cliquez sur « état de la connexion ». Recherchez l’adresse SMTP du client par rapport à un « type d’authentification » de «\*porteur », qui représente le jeton du porteur utilisé dans OAuth.
   
- **Note** Vous avez besoin de configurer Skype entreprise avec HMA? Vous aurez besoin de deux articles: un qui répertorie les [topologies prises en charge](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)et un autre qui vous montre [Comment effectuer la configuration](configure-skype-for-business-for-hybrid-modern-authentication.md).
+ **Note** Vous avez besoin de configurer Skype entreprise avec HMA ? Vous aurez besoin de deux articles : un qui répertorie les [topologies prises en charge](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)et un autre qui vous montre [Comment effectuer la configuration](configure-skype-for-business-for-hybrid-modern-authentication.md).
   
 
 ## <a name="related-topics"></a>Sujets associés

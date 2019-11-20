@@ -18,16 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: b48cdf63-07e0-4cda-8c12-4871590f59ce
 description: 'Résumé : décrit les certificats SSL nécessaires pour Exchange sur site et hybride, l’authentification unique à l’aide d’AD FS, d’Exchange Online Services et des services Web Exchange.'
-ms.openlocfilehash: 3120be6cf127b8615259f865f03db1dbe6f0ea73
-ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
+ms.openlocfilehash: 92425793d616f642fb78331a965b1a4a2dff071f
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428091"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747686"
 ---
 # <a name="plan-for-third-party-ssl-certificates-for-office-365"></a>Planifier les certificats SSL tiers pour Office 365
 
-*Cet article s’applique à la fois à Office 365 entreprise et à Microsoft 365 Enterprise*
+*Cet article s’applique à la fois à Office 365 entreprise et à Microsoft 365 entreprise.*
 
  **Résumé :** Décrit les certificats SSL nécessaires pour Exchange sur site et hybride, l’authentification unique à l’aide d’AD FS, d’Exchange Online Services et des services Web Exchange. 
   

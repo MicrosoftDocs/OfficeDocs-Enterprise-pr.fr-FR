@@ -23,14 +23,16 @@ search.appverid:
 - OSU160
 ms.assetid: 66325a43-5816-4f8e-81ba-c11b71345b7c
 description: SharePoint Server 2007 a atteint la fin de la prise en charge et il est temps de procéder à la mise à niveau. Utilisez cet article pour vous aider à créer votre plan.
-ms.openlocfilehash: 2ed36816eeb466cd35b999b48521495406d28641
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 6315c06f034464cf12224582c9dcd0257bf43961
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078103"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748031"
 ---
 # <a name="sharepoint-2007-migration-options-to-consider"></a>Options de migration SharePoint 2007 à prendre en compte
+
+*Cet article s’applique à la fois à Office 365 entreprise et à Microsoft 365 entreprise.*
 
 Microsoft SharePoint 2007 et SharePoint Server 2007 ont atteint la fin de la prise en charge. Il est temps de mettre à niveau ! Cet article fournit des informations sur vos options de migration.
   
@@ -174,7 +176,7 @@ Des étapes plus détaillées, ou un certain nombre de liens vers des instructio
   
 Les facteurs les plus importants dans le choix d’une méthode sont le coût total de la mise à niveau et le coût dans le temps (vous en verrez plus à ce propos dans l’article feuille de route de migration SharePoint). Toutefois, la planification anticipée vous permettra de définir de manière significative les attentes, de choisir judicieusement et d’encadrement de la réussite de l’opération.
   
-## <a name="related-links"></a>Liens connexes
+## <a name="related-links"></a>Liens associés
 
 [Ressources pour vous aider à effectuer une mise à niveau à partir de serveurs et clients Office 2007](upgrade-from-office-2007-servers-and-products.md)
   

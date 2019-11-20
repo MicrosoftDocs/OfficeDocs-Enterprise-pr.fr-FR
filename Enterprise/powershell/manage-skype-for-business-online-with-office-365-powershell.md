@@ -12,17 +12,15 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: 'Résumé : utilisez Office 365 PowerShell pour gérer des stratégies Skype Entreprise Online, des stratégies par utilisateur et des paramètres de réunion.'
-ms.openlocfilehash: 48b10038e396953469f4b0732103671cbc6b0d75
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: ac3933b3a208f41db5c569de3455ce1244133927
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030939"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747564"
 ---
 # <a name="manage-skype-for-business-online-with-office-365-powershell"></a>Gestion de Skype Entreprise Online avec Office 365 PowerShell
 
- **Résumé :** Utilisez Office 365 PowerShell pour gérer des stratégies Skype Entreprise Online, des stratégies par utilisateur et des paramètres de réunion.
-  
 Une des tâches principales de tout administrateur de Skype Entreprise Online est la gestion des stratégies. Bien que vous puissiez effectuer certaines de ces tâches dans le Centre d’administration Microsoft 365, d’autres tâches sont beaucoup plus rapides et plus simples à exécuter dans Office 365 PowerShell. 
 
 ## <a name="before-you-start"></a>Avant de commencer
@@ -34,7 +32,7 @@ Téléchargez et installez le [module du connecteur Skype entreprise Online](htt
 
 1. Ouvrez l’invite de commandes Windows PowerShell et exécutez les commandes suivantes : 
     
-  ```
+  ```powershell
   Import-Module SkypeOnlineConnector
   $userCredential = Get-Credential
   $sfbSession = New-CsOnlineSession -Credential $userCredential
@@ -48,7 +46,7 @@ Téléchargez et installez le [module du connecteur Skype entreprise Online](htt
 
 1. Ouvrez l’invite de commandes Windows PowerShell et exécutez les commandes suivantes :
 
-  ```
+  ```powershell
   Import-Module SkypeOnlineConnector
   $sfbSession = New-CsOnlineSession
   Import-PSSession $sfbSession
@@ -70,7 +68,7 @@ Pour plus d'informations, consultez les rubriques suivantes :
 
 [Gérer Office 365 avec Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Mise en route d'Office 365 Powershell](getting-started-with-office-365-powershell.md)
+[Mise en route d’Office 365 PowerShell](getting-started-with-office-365-powershell.md)
 
 [Références de l’applet de commande PowerShell Skype entreprise](https://docs.microsoft.com/powershell/module/skype/?view=skype-ps)
 

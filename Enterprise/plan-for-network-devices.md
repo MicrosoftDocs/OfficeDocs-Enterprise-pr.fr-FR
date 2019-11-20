@@ -16,16 +16,16 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 'Résumé : décrit les considérations relatives à la capacité réseau, aux accélérateurs de réseau étendu et aux périphériques d’équilibrage de charge utilisés pour se connecter à Office 365.'
-ms.openlocfilehash: 066d2b07c10009ced1935086ee8d80720bd397ca
-ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
+ms.openlocfilehash: 2a38fd7dad23b41aa31dcf9ace7ebee6ed69c0f6
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428101"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747067"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Planifier les périphériques réseau qui se connectent aux services Office 365
 
-*Cet article s’applique à la fois à Office 365 entreprise et à Microsoft 365 Enterprise*
+*Cet article s’applique à la fois à Office 365 entreprise et à Microsoft 365 entreprise.*
   
 **Résumé**: décrit les considérations relatives à la capacité réseau, aux accélérateurs de réseau étendu et aux périphériques d’équilibrage de charge utilisés pour se connecter à Office 365.
 
@@ -68,7 +68,7 @@ Nous fournissons une solution NLB basée sur des logiciels intégrée à Windows
   
 ## <a name="firewalls-and-proxies"></a>Pare-feu et proxys
 
-Pour plus d’informations sur la configuration des pare-feu et des proxys pour se connecter à Office 365, consultez la rubrique [Managing office 365 Endpoints](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a), Evaluation de la [connectivité réseau Office 365](assessing-network-connectivity.md)et Forum aux questions sur les [points de terminaison Office 365](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) pour en savoir plus sur les appareils et les circuits. sélection.
+Pour plus d’informations sur la configuration des pare-feu et des proxys pour se connecter à Office 365, consultez la rubrique [Managing office 365 Endpoints](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a), [Evaluation Office 365 network connectivity](assessing-network-connectivity.md)et [Office 365 Endpoints FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) pour en savoir plus sur les appareils et la sélection de circuits.
   
 ## <a name="see-also"></a>Voir aussi
 

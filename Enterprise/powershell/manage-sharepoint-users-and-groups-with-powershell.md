@@ -15,16 +15,14 @@ ms.custom:
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Résumé : utilisez Office 365 PowerShell pour gérer les utilisateurs, les groupes et les sites SharePoint Online.'
-ms.openlocfilehash: 4d62f4b6d06609957e1752240470af43b97f74fb
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: e011946fa46455d1c1eba2bdff565bd55ec875bf
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077963"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747619"
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-office-365-powershell"></a>Gestion des utilisateurs et des groupes SharePoint Online avec Office 365 PowerShell
-
- **Résumé :** Utilisez Office 365 PowerShell pour gérer les utilisateurs, les groupes et les sites SharePoint Online.
 
 Si vous êtes un administrateur SharePoint Online qui travaille avec de grandes listes de comptes ou de groupes d’utilisateurs et qu’il souhaite un moyen plus facile de les gérer, vous pouvez utiliser Office 365 PowerShell. 
 
@@ -40,7 +38,7 @@ Avant de commencer à gérer les utilisateurs et les groupes, vous devez obtenir
 
 Vous pouvez obtenir la liste des sites de votre client avec la commande suivante :
 
-```
+```powershell
 Get-SPOSite
 ```
 
@@ -48,7 +46,7 @@ Get-SPOSite
 
 Vous pouvez obtenir la liste des groupes de votre client avec la commande suivante :
 
-```
+```powershell
 Get-SPOSite | ForEach {Get-SPOSiteGroup -Site $_.Url} | Format-Table
 ```
 
@@ -56,7 +54,7 @@ Get-SPOSite | ForEach {Get-SPOSiteGroup -Site $_.Url} | Format-Table
 
 Vous pouvez obtenir la liste des utilisateurs de votre client avec la commande suivante :
 
-```
+```powershell
 Get-SPOSite | ForEach {Get-SPOUser -Site $_.Url}
 ```
 
@@ -64,7 +62,7 @@ Get-SPOSite | ForEach {Get-SPOUser -Site $_.Url}
 
 Vous pouvez utiliser la commande **Set-SPOUser** pour ajouter un utilisateur à la liste des administrateurs de collection de sites sur une collection de sites. Voici à quoi ressemble la syntaxe :
 
-```
+```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.onmicrosoft.com>"
 $site = "<site name>"
 $user = "<user account name, such as opalc>"
@@ -75,7 +73,7 @@ Pour utiliser ces commandes, remplacez remplacer tout entre guillemets, y compri
 
 Par exemple, cet ensemble de commandes ajoute Opal Castillo (nom d’utilisateur opalc) à la liste des administrateurs de collection de sites sur la collection de sites ContosoTest dans le client Contoso1 :
 
-```
+```powershell
 $tenant = "contoso1"
 $site = "contosotest"
 $user = "opalc"
@@ -88,7 +86,7 @@ Vous pouvez copier et coller ces commandes dans le bloc-notes, modifier les vale
 
 Dans cette tâche, nous allons utiliser la commande **Add-SPOUser ** pour ajouter un utilisateur à un groupe SharePoint sur une collection de sites.
 
-```
+```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.onmicrosoft.com>"
 $site = "<site name>"
 $user = "<user account name, such as opalc>"
@@ -99,7 +97,7 @@ Add-SPOUser -Group $group -LoginName $user@$tenant.onmicrosoft.com -Site https:/
 
 Par exemple, nous allons ajouter Glen Rife (nom d’utilisateur glenr) au groupe Auditeurs de la collection de sites ContosoTest, dans la location contoso1 :
 
-```
+```powershell
 $tenant = "contoso1"
 $site = "contosotest"
 $user = "glenr"
@@ -111,7 +109,7 @@ Add-SPOUser -Group $group -LoginName $user@$tenant.onmicrosoft.com -Site https:/
 
 Vous utilisez la commande **New-SPOSiteGroup** pour créer un groupe SharePoint et l’ajouter à la collection de sites ContosoTest.
 
-```
+```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.onmicrosoft.com>"
 $site = "<site name>"
 $group = "<group name name, such as Auditors>"
@@ -122,7 +120,7 @@ Les propriétés de groupe, telles que les niveaux d’autorisation, peuvent êt
 
 Par exemple, nous allons ajouter le groupe auditeurs avec des autorisations d’affichage seul à la collection de sites de test Contoso dans le client Contoso1 :
 
-```
+```powershell
 $tenant = "contoso1"
 $site = "Contoso Test"
 $group = "Auditors"
@@ -138,7 +136,7 @@ Cependant, à l’aide de SharePoint Online Management Shell et des fichiers CSV
 
 Nous allons utiliser la commande **Remove-époux** pour supprimer un seul utilisateur Office 365 d’un groupe de collection de sites pour que nous puissions voir la syntaxe de la commande. Voici à quoi ressemble la syntaxe :
 
-```
+```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.onmicrosoft.com>"
 $site = "<site name>"
 $user = "<user account name, such as opalc>"
@@ -147,7 +145,7 @@ Remove-SPOUser -LoginName $user@$tenant.onmicrosoft.com -Site https://$tenant.sh
 ```
 Par exemple, nous allons supprimer Bobby Overby du groupe des auditeurs de collection de sites de la collection de sites de test Contoso dans le client Contoso1 :
 
-```
+```powershell
 $tenant = "contoso1"
 $site = "contosotest"
 $user = "bobbyo"
@@ -157,7 +155,7 @@ Remove-SPOUser -LoginName $user@$tenant.onmicrosoft.com -Site https://$tenant.sh
 
 Supposons que nous voulions supprimer Bobby de tous les groupes auxquels il appartient actuellement. Voici comment procéder :
 
-```
+```powershell
 $tenant = "contoso1"
 $user = "bobbyo"
 Get-SPOSite | ForEach {Get-SPOSiteGroup –Site $_.Url} | ForEach {Remove-SPOUser -LoginName $user@$tenant.onmicrosoft.com -Site &_.Url}
@@ -178,19 +176,19 @@ Le premier fichier CSV ajoutera des groupes à des collections de sites et aura
 
 ### <a name="header"></a>Tête
 
-```
+```powershell
 Site,Group,PermissionLevels
 ```
 
 ### <a name="item"></a>Complémentaires
 
-```
+```powershell
 https://tenant.sharepoint.com/sites/site,group,level
 ```
 
 Voici un exemple de fichier :
 
-```
+```powershell
 Site,Group,PermissionLevels
 https://contoso1.sharepoint.com/sites/contosotest,Contoso Project Leads,Full Control
 https://contoso1.sharepoint.com/sites/contosotest,Contoso Auditors,View Only
@@ -206,19 +204,19 @@ Le second fichier CSV ajoutera des utilisateurs à des groupes et aura la struc
 
 ### <a name="header"></a>Tête
 
-```
+```powershell
 Group,LoginName,Site
 ```
 
 ### <a name="item"></a>Complémentaires
 
-```
+```powershell
 group,login,https://tenant.sharepoint.com/sites/site
 ```
 
 Voici un exemple de fichier :
 
-```
+```powershell
 Group,LoginName,Site
 Contoso Project Leads,bobbyo@contoso1.onmicrosoft.com,https://contoso1.sharepoint.com/sites/contosotest
 Contoso Auditors,allieb@contoso1.onmicrosoft.com,https://contoso1.sharepoint.com/sites/contosotest
@@ -232,7 +230,7 @@ Project Alpha Approvers,robinc@contoso1.onmicrosoft.com,https://contoso1.sharepo
 
 Pour la prochaine étape, vous devez avoir enregistré les deux fichiers CSV sur votre lecteur. Voici des exemples de commandes qui utilisent des fichiers CSV et pour ajouter des autorisations et l’appartenance à un groupe :
 
-```
+```powershell
 Import-Csv C:\O365Admin\GroupsAndPermissions.csv | ForEach {New-SPOSiteGroup -Group $_.Group -PermissionLevels $_.PermissionLevels -Site $_.Site}
 Import-Csv C:\O365Admin\Users.csv | ForEach {Add-SPOUser -Group $_.Group –LoginName $_.LoginName -Site $_.Site}
 ```
@@ -241,7 +239,7 @@ Le script importe le contenu du fichier CSV et utilise les valeurs des colonnes 
 
 Supprimons maintenant un certain nombre de personnes de plusieurs groupes au sein de différents sites, à l’aide du même fichier CSV. Voici un exemple de commande :
 
-```
+```powershell
 Import-Csv C:\O365Admin\Users.csv | ForEach {Remove-SPOUser -LoginName $_.LoginName -Site $_.Site -Group $_.Group}
 ```
 
@@ -249,7 +247,7 @@ Import-Csv C:\O365Admin\Users.csv | ForEach {Remove-SPOUser -LoginName $_.LoginN
 
 Vous pouvez obtenir un rapport simple pour quelques sites et afficher les utilisateurs de ces sites, leur niveau d’autorisation, ainsi que d’autres propriétés. Voici à quoi ressemble la syntaxe :
 
-```
+```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.onmicrosoft.com>"
 $site = "<site name>"
 Get-SPOUser -Site https://$tenant.sharepoint.com/sites/$site | select * | Format-table -Wrap -AutoSize | Out-File c\UsersReport.txt -Force -Width 360 -Append
@@ -259,7 +257,7 @@ Cela permet de collecter les données de ces trois sites et de les écrire dans 
 
 Par exemple, nous allons exécuter un rapport sur les sites ContosoTest, TeamSite01 et Project01 pour la location contoso1 :
 
-```
+```powershell
 $tenant = "contoso1"
 $site = "contosotest"
 Get-SPOUser -Site https://$tenant.sharepoint.com/sites/$site | Format-Table -Wrap -AutoSize | Out-File c:\UsersReport.txt -Force -Width 360 -Append
@@ -273,7 +271,7 @@ Notez que nous devions modifier uniquement la variable **$site** . La variable *
 
 Mais que faire si vous souhaitez effectuer cette action pour chaque site ? Vous pouvez le faire sans avoir à entrer tous ces sites web à l’aide de cette commande :
 
-```
+```powershell
 Get-SPOSite | ForEach {Get-SPOUser –Site $_.Url} | Format-Table -Wrap -AutoSize | Out-File c:\UsersReport.txt -Force -Width 360 -Append
 ```
 

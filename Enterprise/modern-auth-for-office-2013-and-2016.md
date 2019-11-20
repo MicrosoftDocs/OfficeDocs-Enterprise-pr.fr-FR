@@ -21,16 +21,16 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment fonctionne différemment l’authentification moderne Office 365 pour les applications clientes Office 2013 et 2016.
-ms.openlocfilehash: 2518f60141f04c0474d849e6f597c062e23e06d7
-ms.sourcegitcommit: ecfa362182f906befa885bf5f0094528ff570779
+ms.openlocfilehash: 8fde952201b01a235794ddcd59abeed402a368d4
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37435358"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747987"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Fonctionnement de l’authentification moderne pour les applications clientes Office 2013 et Office 2016
 
-*Cet article s’applique à la fois à Office 365 entreprise et à Microsoft 365 Enterprise*
+*Cet article s’applique à la fois à Office 365 entreprise et à Microsoft 365 entreprise.*
 
 Lisez cet article pour découvrir comment les applications clientes Office 2013 et Office 2016 utilisent des fonctionnalités d’authentification modernes basées sur la configuration de l’authentification sur le client Office 365 pour Exchange Online, SharePoint Online et Skype entreprise online.
 
@@ -64,7 +64,7 @@ Cliquez sur les liens ci-dessous pour voir comment l’authentification client O
     
 - [SharePoint Online](modern-auth-for-office-2013-and-2016.md#BK_SharePointOnline)
     
-- [Skype Entreprise Online](modern-auth-for-office-2013-and-2016.md#BK_SFBO)
+- [Skype Entreprise Online](modern-auth-for-office-2013-and-2016.md#BK_SFBO)
     
 <a name="BK_EchangeOnline"> </a>
 ### <a name="exchange-online"></a>Exchange Online

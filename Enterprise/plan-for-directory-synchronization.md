@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Décrit la synchronisation d’annuaires avec Office 365, le nettoyage des services de domaine Active Directory et l’outil Azure Active Directory Connect.
-ms.openlocfilehash: fda9750ae6038f062938f3c8ad92fe1859c2d7e1
-ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
+ms.openlocfilehash: 5b91ebfae2250d44c34aed45c00ac09e98b21909
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428112"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747084"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-office-365"></a>Identité hybride et synchronisation d’annuaires pour Office 365
 
-*Cet article s’applique à la fois à Office 365 entreprise et à Microsoft 365 Enterprise*
+*Cet article s’applique à la fois à Office 365 entreprise et à Microsoft 365 entreprise.*
 
 En fonction des besoins de l’entreprise et des exigences techniques, le modèle d’identité hybride et la synchronisation d’annuaires constituent le choix le plus courant pour les clients d’entreprise qui adoptent Office 365. La synchronisation d’annuaires vous permet de gérer les identités dans vos services de domaine Active Directory (AD DS) et toutes les mises à jour des comptes d’utilisateur, des groupes et des contacts sont synchronisées avec le client Azure Active Directory (Azure AD) de votre abonnement Office 365.
 
@@ -105,7 +105,7 @@ Le nettoyage de votre annuaire doit se concentrer sur les tâches suivantes :
 
 - Supprimez les attributs **ProxyAddress** et **userPrincipalName** en double.
 - Mettre à jour les attributs **userPrincipalName** vides et non valides avec des attributs **userPrincipalName** valides.
-- Supprimer les caractères non valides et douteables dans les attributs **GivenName**, Surname ( **sn** ), **sAMAccountName**, **DisplayName**, **mail**, **proxyAddresses**, **mailnickname**et **userPrincipalName** ceux. Pour plus d’informations sur la préparation des attributs, voir [liste des attributs synchronisés par l’outil de synchronisation Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=396719).
+- Supprimez les caractères non valides et douteables dans les attributs **GivenName**, Surname ( **sn** ), **sAMAccountName**, **DisplayName**, **mail**, **proxyAddresses**, **mailnickname**et **userPrincipalName** . Pour plus d’informations sur la préparation des attributs, voir [liste des attributs synchronisés par l’outil de synchronisation Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=396719).
 
     > [!NOTE]
     > Il s’agit des mêmes attributs que ceux qui sont synchronisés avec Azure AD Connect. 

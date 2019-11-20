@@ -15,18 +15,16 @@ ms.custom:
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: Utilisez Office 365 PowerShell pour désactiver l’accès aux services 365 Office pour les utilisateurs.
-ms.openlocfilehash: 32c43a47e1547e85488cb5158bd7392d79c8a4fb
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: c012d7451d022ea8cf3e3fa1a8d0a89d804e9c66
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35781834"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38746277"
 ---
 # <a name="disable-access-to-services-with-office-365-powershell"></a>Désactiver l’accès aux services Office 365 PowerShell
 
-**Résumé:** Explique comment utiliser Office 365 PowerShell pour désactiver l’accès aux services 365 Office pour les utilisateurs de votre organisation.
-  
-Lorsqu’un compte Office 365 est affecté à une licence d’un plan de gestion des licences, les services Office 365 sont mis à la disposition de l’utilisateur à partir de cette licence. Toutefois, vous pouvez contrôler les services Office 365 auxquels l’utilisateur peut accéder. Par exemple, même si la licence autorise l’accès au service SharePoint Online, vous pouvez désactiver l’accès à celle-ci. Vous pouvez utiliser PowerShell pour désactiver l’accès à n’importe quel nombre de services pour un plan de gestion des licences spécifique pour:
+Lorsqu’un compte Office 365 est affecté à une licence d’un plan de gestion des licences, les services Office 365 sont mis à la disposition de l’utilisateur à partir de cette licence. Toutefois, vous pouvez contrôler les services Office 365 auxquels l’utilisateur peut accéder. Par exemple, même si la licence autorise l’accès au service SharePoint Online, vous pouvez désactiver l’accès à celle-ci. Vous pouvez utiliser PowerShell pour désactiver l’accès à n’importe quel nombre de services pour un plan de gestion des licences spécifique pour :
 
 - un compte individuel ;
     
@@ -38,9 +36,9 @@ Lorsqu’un compte Office 365 est affecté à une licence d’un plan de gestion
 
 Tout d’abord, [connectez-vous à votre client Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
-Ensuite, utilisez cette commande pour afficher vos plans de gestion des licences disponibles, également appelés AccountSkuIds:
+Ensuite, utilisez cette commande pour afficher vos plans de gestion des licences disponibles, également appelés AccountSkuIds :
 
-```
+```powershell
 Get-MsolAccountSku | Select AccountSkuId | Sort AccountSkuId
 ```
 
@@ -53,17 +51,17 @@ Un script PowerShell est disponible pour automatiser les procédures décrites d
     
 ### <a name="disable-specific-office-365-services-for-specific-users-for-a-specific-licensing-plan"></a>Désactiver des services Office 365 spécifiques pour des utilisateurs spécifiques pour un plan de gestion des licences spécifique
   
-Pour désactiver un ensemble spécifique de services Office 365 pour les utilisateurs pour un plan de gestion de licences spécifique, procédez comme suit:
+Pour désactiver un ensemble spécifique de services Office 365 pour les utilisateurs pour un plan de gestion de licences spécifique, procédez comme suit :
   
-1. Identifiez les services indésirables dans le plan de gestion des licences à l’aide de la syntaxe suivante:
+1. Identifiez les services indésirables dans le plan de gestion des licences à l’aide de la syntaxe suivante :
     
-  ```
+  ```powershell
   $LO = New-MsolLicenseOptions -AccountSkuId <AccountSkuId> -DisabledPlans "<UndesirableService1>", "<UndesirableService2>"...
   ```
 
   L’exemple suivant crée un objet **LicenseOptions** qui désactive les services Office et SharePoint Online dans le plan de gestion des licences `litwareinc:ENTERPRISEPACK` nommé (Office 365 entreprise E3).
     
-  ```
+  ```powershell
   $LO = New-MsolLicenseOptions -AccountSkuId "litwareinc:ENTERPRISEPACK" -DisabledPlans "SHAREPOINTWAC", "SHAREPOINTENTERPRISE"
   ```
 
@@ -71,13 +69,13 @@ Pour désactiver un ensemble spécifique de services Office 365 pour les utilisa
     
   - Pour créer un compte dont les services sont désactivés, utilisez la syntaxe suivante :
     
-  ```
+  ```powershell
   New-MsolUser -UserPrincipalName <Account> -DisplayName <DisplayName> -FirstName <FirstName> -LastName <LastName> -LicenseAssignment <AccountSkuId> -LicenseOptions $LO -UsageLocation <CountryCode>
   ```
 
   L’exemple suivant crée un nouveau compte pour allie Bellew qui affecte la licence et désactive les services décrits à l’étape 1.
     
-  ```
+  ```powershell
   New-MsolUser -UserPrincipalName allieb@litwareinc.com -DisplayName "Allie Bellew" -FirstName Allie -LastName Bellew -LicenseAssignment litwareinc:ENTERPRISEPACK -LicenseOptions $LO -UsageLocation US
   ```
 
@@ -85,19 +83,19 @@ Pour désactiver un ensemble spécifique de services Office 365 pour les utilisa
     
   - Pour désactiver les services d’un utilisateur sous licence existant, utilisez la syntaxe suivante :
     
-  ```
+  ```powershell
   Set-MsolUserLicense -UserPrincipalName <Account> -LicenseOptions $LO
   ```
 
   Cet exemple désactive les services de l’utilisateur BelindaN@litwareinc.com.
     
-  ```
+  ```powershell
   Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -LicenseOptions $LO
   ```
 
-  - Pour désactiver les services décrits à l’étape 1 pour tous les utilisateurs sous licence existants, spécifiez le nom de votre plan Office 365 à partir de l’affichage de la cmdlet **Get-MsolAccountSku** (comme **litwareinc: ENTERPRISEPACK**), puis exécutez les commandes suivantes:
+  - Pour désactiver les services décrits à l’étape 1 pour tous les utilisateurs sous licence existants, spécifiez le nom de votre plan Office 365 à partir de l’affichage de la cmdlet **Get-MsolAccountSku** (comme **litwareinc : ENTERPRISEPACK**), puis exécutez les commandes suivantes :
     
-  ```
+  ```powershell
   $acctSKU="<AccountSkuId>"
   $AllLicensed = Get-MsolUser -All | Where {$_.isLicensed -eq $true -and $_.licenses[0].AccountSku.SkuPartNumber -eq ($acctSKU).Substring($acctSKU.IndexOf(":")+1, $acctSKU.Length-$acctSKU.IndexOf(":")-1)}
   $AllLicensed | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -LicenseOptions $LO}
@@ -108,39 +106,39 @@ Pour désactiver un ensemble spécifique de services Office 365 pour les utilisa
 
   - Pour désactiver les services pour un groupe d’utilisateurs existants, appliquez l’une des méthodes suivantes pour identifier les utilisateurs :
     
-  - **Filtrer les comptes en fonction d’un attribut de compte existant** Pour ce faire, utilisez la syntaxe suivante:
+  - **Filtrer les comptes en fonction d’un attribut de compte existant** Pour ce faire, utilisez la syntaxe suivante :
     
-  ```
+  ```powershell
   $x = Get-MsolUser -All <FilterableAttributes>
   $x | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -LicenseOptions $LO}
   ```
 
   L’exemple suivant désactive les services pour les utilisateurs du service des ventes aux États-Unis.
     
-  ```
+  ```powershell
   $USSales = Get-MsolUser -All -Department "Sales" -UsageLocation "US"
   $USSales | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -LicenseOptions $LO}
   ```
 
-  - **Utiliser une liste de comptes spécifiques** Pour ce faire, procédez comme suit:
+  - **Utiliser une liste de comptes spécifiques** Pour ce faire, procédez comme suit :
     
 1. Créez un fichier texte contenant un seul compte sur chaque ligne comme suit :
     
-  ```
+  ```powershell
   akol@contoso.com
   tjohnston@contoso.com
   kakers@contoso.com
   ```
 
-  Dans cet exemple, le fichier texte est C:\\My documents\\Accounts. txt.
+  Dans cet exemple, le fichier texte est C :\\My documents\\Accounts. txt.
     
 2. Exécutez la commande suivante :
     
-  ```
+  ```powershell
   Get-Content "C:\My Documents\Accounts.txt" | foreach {Set-MsolUserLicense -UserPrincipalName $_ -LicenseOptions $LO}
   ```
 
-Si vous souhaitez désactiver l’accès aux services pour plusieurs plans de gestion des licences, répétez les instructions ci-dessus pour chaque plan de gestion des licences, en vous assurant que:
+Si vous souhaitez désactiver l’accès aux services pour plusieurs plans de gestion des licences, répétez les instructions ci-dessus pour chaque plan de gestion des licences, en vous assurant que :
 
 - Le plan de gestion des licences a été attribué aux comptes d’utilisateurs.
 - Les services à désactiver sont disponibles dans le plan de gestion des licences.

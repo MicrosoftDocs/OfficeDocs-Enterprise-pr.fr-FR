@@ -12,17 +12,15 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: "Résumé : Utilisez Office 365 PowerShell pour gérer les propriétés de votre compte d'utilisateur Skype Entreprise Online à l'aide de stratégies."
-ms.openlocfilehash: 51e402922b2a357ef29e9b2628eb25fc252e5437
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 1d4f6bc52932bb7315fdd769788b5b3108423424
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031729"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748524"
 ---
 # <a name="manage-skype-for-business-online-policies-with-office-365-powershell"></a>Gestion des stratégies Skype Entreprise Online avec Office 365 PowerShell
 
- **Résumé :** Utilisez Office 365 PowerShell pour gérer les propriétés de votre compte d'utilisateur Skype Entreprise Online à l'aide de stratégies.
-  
 Pour gérer les nombreuses propriétés du compte d'utilisateur pour Skype Entreprise Online, vous devez les spécifier en tant que propriétés de stratégies avec Office 365 PowerShell.
   
 ## <a name="before-you-begin"></a>Avant de commencer
@@ -33,7 +31,7 @@ Suivez ces instructions pour exécuter les commandes (sautez les étapes que vou
     
 2. Ouvrez l’invite de commandes Windows PowerShell et exécutez les commandes suivantes : 
     
-```
+```powershell
 Import-Module SkypeOnlineConnector
 $userCredential = Get-Credential
 $sfbSession = New-CsOnlineSession -Credential $userCredential
@@ -46,13 +44,13 @@ Lorsque vous y êtes invité, entrez le nom utilisateur et le mot de passe de vo
 
 De nombreuses propriétés de compte d'utilisateur Skype Entreprise Online sont configurées à l'aide de stratégies. Les stratégies sont simplement des ensembles de paramètres qui peuvent être appliqués à un ou plusieurs utilisateurs. Pour voir comment la stratégie a été configurée, vous pouvez exécuter cet exemple de commande, qui porte sur la stratégie FederationAndPICDefault :
   
-```
+```powershell
 Get-CsExternalAccessPolicy -Identity "FederationAndPICDefault"
 ```
 
 Vous devriez obtenir en retour un élément semblable au suivant :
   
-```
+```powershell
 Identity                          : Tag:FederationAndPICDefault
 Description                       :
 EnableFederationAccess            : True
@@ -62,7 +60,7 @@ EnablePublicCloudAudioVideoAccess : True
 EnableOutsideAccess               : True
 ```
 
-Dans cet exemple, les valeurs de cette stratégie déterminent ce qu’une utilisation peut ou ne peut pas faire lorsqu’il s’agit de communiquer avec des utilisateurs fédérés. Par exemple, la propriété EnableOutsideAccess doit avoir la valeur true pour qu’un utilisateur puisse communiquer avec des personnes extérieures à l’organisation. Notez que cette propriété n’apparaît pas dans le centre d’administration Microsoft 365. Au lieu de cela, la propriété est automatiquement définie sur true ou false en fonction des autres sélections que vous effectuez. Les deux autres propriétés intéressantes sont les suivantes :
+Dans cet exemple, les valeurs au sein de cette stratégie déterminent ce qu'un utilisateur peut ou ne peut pas faire en matière de communication avec des utilisateurs fédérés. Par exemple, la propriété EnableOutsideAccess doit être définie sur True pour qu'un utilisateur puisse communiquer avec des personnes extérieures à l'organisation. Notez que cette propriété n’apparaît pas dans le centre d’administration Microsoft 365. Elle est automatiquement définie sur True ou False en fonction des autres sélections que vous effectuez. Les deux autres propriétés qui vous intéressent sont les suivantes :
   
 - **EnableFederationAccess** indique si l'utilisateur peut communiquer avec des personnes à partir de domaines fédérés.
     
@@ -78,7 +76,7 @@ Pour savoir si quelqu’un peut communiquer avec des utilisateurs externes à l�
     
 Pour ce faire, vous pouvez par exemple utiliser la commande suivante :
   
-```
+```powershell
 Get-CsOnlineUser -Identity "Alex Darrow" | ForEach {Get-CsExternalAccessPolicy -Identity $_.ExternalAccessPolicy}
 ```
 
@@ -98,14 +96,14 @@ Pour gérer les stratégies Skype entreprise Online avec PowerShell, consultez l
   
 Par exemple, pour voir toutes les stratégies de voix que vous pouvez utiliser, il suffit d’exécuter la commande suivante :
   
-```
+```powershell
 Get-CsVoicePolicy
 ```
 
 > [!NOTE]
 > Cette action renvoie la liste de toutes les stratégies de voix dont vous disposez. Toutefois, gardez à l'esprit que toutes les stratégies ne peuvent pas être attribuées à tous les utilisateurs, en raison des diverses restrictions impliquant la gestion des licences et l'emplacement géographique (le dénommé « [emplacement d'utilisation](https://msdn.microsoft.com/library/azure/dn194136.aspx) »). Si vous souhaitez connaître les stratégies d'accès externe et les stratégies de conférence qui peuvent être attribuées à un utilisateur particulier, utilisez des commandes semblables à celles-ci : 
 
-```
+```powershell
 Get-CsConferencingPolicy -ApplicableTo "Alex Darrow"
 Get-CsExternalAccessPolicy -ApplicableTo "Alex Darrow"
 ```
@@ -116,13 +114,11 @@ Dans certains cas, les propriétés de stratégies ne sont pas utilisées avec O
   
 Avec Skype Entreprise Online, les utilisateurs doivent être gérés par une stratégie ou une autre. Si une propriété portant sur les stratégies est vide, cela signifie que l'utilisateur en question est géré par une stratégie globale, c'est-à-dire une stratégie qui est appliquée automatiquement à un utilisateur, sauf si une stratégie individuelle est appliquée à cet utilisateur. Si aucune stratégie de client n'est répertoriée pour un compte d'utilisateur, cela signifie qu'il est géré par la stratégie globale. Vous pouvez déterminer la stratégie de client globale avec cette commande :
   
-```
+```powershell
 Get-CsClientPolicy -Identity "Global"
 ```
 
 ## <a name="see-also"></a>Voir aussi
-
-#### 
 
 [Gestion de Skype Entreprise Online avec Office 365 PowerShell](manage-skype-for-business-online-with-office-365-powershell.md)
   

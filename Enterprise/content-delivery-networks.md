@@ -18,14 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: Utilisez ces informations pour découvrir comment Office 365 utilise les réseaux de distribution de contenu (CDN) pour améliorer les performances.
-ms.openlocfilehash: 38c4af58ea7e655a5941557ea1e3b035f15b9074
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: be93be8af81714c6e166246a4e68f74b9b803f46
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077657"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38745837"
 ---
 # <a name="content-delivery-networks-cdns"></a>Réseaux de distribution de contenu (CDN)
+
+*Cet article s’applique à la fois à Office 365 entreprise et à Microsoft 365 entreprise.*
 
 CDN permet de conserver rapidement et de façon fiable Office 365 pour les utilisateurs finaux. Les services Cloud tels qu’Office 365 utilisent CDN pour mettre en cache les composants statiques plus près des navigateurs qui les demandent pour accélérer les téléchargements et réduire la latence des utilisateurs finaux. Les informations contenues dans cette rubrique vous aideront à en savoir plus sur les réseaux de distribution de contenu (CDN) et la façon dont ils sont utilisés par Office 365.
 
@@ -120,7 +122,7 @@ Vous pouvez également lire les [principes de connectivité réseau office 365](
 
 Le CDN utilisé par Office 365 est toujours susceptible d’être modifié et, dans de nombreux cas, plusieurs partenaires CDN configurés dans l’événement 1 ne sont pas disponibles. Les CDN principaux utilisés par Office 365 sont les suivants :
 
-|COMPTAB  |Company  |Utilisation  |Liens  |
+|CDN  |Company  |Utilisation  |Liens  |
 |---------|---------|---------|---------|
 |CDN Office 365     |Download         |Ressources génériques dans les origines publiques, contenu utilisateur SharePoint dans les origines privées         |[Utilisation du réseau de distribution de contenu Office 365 avec SharePoint Online](https://docs.microsoft.com/office365/enterprise/use-office-365-cdn-with-spo)         |
 |CDN Azure     |Microsoft         |Code personnalisé, solutions SharePoint Framework         |[CDN Microsoft Azure](https://azure.microsoft.com/documentation/services/cdn/)         |

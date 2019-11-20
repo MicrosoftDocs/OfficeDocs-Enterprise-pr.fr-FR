@@ -17,14 +17,16 @@ search.appverid:
 - OSU140
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 description: Les extrémités de la prise en charge pour SharePoint 2010 et SharePoint Server 2010 se terminent le 13 octobre 2020. Utilisez cet article pour effectuer une mise à niveau vers SharePoint Online ou une version plus récente de SharePoint Server en local.
-ms.openlocfilehash: 639782e877b9a6b0d8a7979d8984da11f2403f50
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 95feda3f05f3ecfabb473b6331962de811690770
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078113"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747296"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Mise à niveau à partir de SharePoint 2010
+
+*Cet article s’applique à la fois à Office 365 entreprise et à Microsoft 365 entreprise.*
 
 Microsoft SharePoint 2010 et SharePoint Server 2010 vont atteindre la fin de la prise en charge le **13 octobre 2020**. Cet article détaille les ressources pour vous aider à migrer vos données SharePoint Server 2010 existantes vers SharePoint Online dans Office 365 ou mettre à niveau votre environnement SharePoint Server 2010 sur site.
   
@@ -191,7 +193,7 @@ Cette affiche de page unique constitue un moyen rapide de comprendre les différ
 
 Vous pouvez également [Télécharger](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) cette affiche et l’imprimer au format Letter, Legal ou tabloïd (11 x 17).
         
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 [Ressources pour vous aider à effectuer une mise à niveau à partir de serveurs et clients Office 2007 ou 2010](upgrade-from-office-2010-servers-and-products.md)
   

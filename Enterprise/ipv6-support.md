@@ -15,24 +15,20 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
-description: 'Résumé: décrit la prise en charge du protocole IPv6 dans les composants Microsoft Office 365 et dans les offres gouvernementales Office 365.'
-ms.openlocfilehash: 2c73f5191cf46ddcb036e9077b855ebf752a2f55
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+description: 'Résumé : décrit la prise en charge du protocole IPv6 dans les composants Microsoft Office 365 et dans les offres gouvernementales Office 365.'
+ms.openlocfilehash: 17938a6bd3544889c4afa38f27b11ea7f02e0f43
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067230"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38745727"
 ---
 # <a name="ipv6-support-in-office-365-services"></a>Prise en charge du protocole IPv6 dans les services Office 365
 
- **Résumé**: décrit la prise en charge du protocole IPv6 dans les composants Microsoft Office 365 et dans les offres gouvernementales Office 365.
-  
-Office 365 prend en charge IPv6 et IPv4; Toutefois, toutes les fonctionnalités Office 365 ne sont pas entièrement activées avec IPv6. Cela signifie que vous devez utiliser IPv4 et IPv6 pour vous connecter à Office 365. Si vous filtrez votre trafic sortant vers Office 365, la liste complète des adresses IPv6 prises en charge par Office 365 est disponible dans l’article [URL office 365 et plages d’adresses IP](urls-and-ip-address-ranges.md). Une fois que votre réseau est configuré et que les adresses IPv6 appropriées sont autorisées, vous pouvez télécharger le [plan de test IPv6 Office 365](https://go.microsoft.com/fwlink/?LinkId=293447) à partir du centre de téléchargement Microsoft.
-  
-||
-|:-----|
-| Cet article fait partie de la [planification réseau et du réglage des performances pour Office 365](https://aka.ms/tune).|
+*Cet article s’applique à la fois à Office 365 entreprise et à Microsoft 365 entreprise.*
 
+Office 365 prend en charge IPv6 et IPv4 ; Toutefois, toutes les fonctionnalités Office 365 ne sont pas entièrement activées avec IPv6. Cela signifie que vous devez utiliser IPv4 et IPv6 pour vous connecter à Office 365. Si vous filtrez votre trafic sortant vers Office 365, la liste complète des adresses IPv6 prises en charge par Office 365 est disponible dans l’article [URL office 365 et plages d’adresses IP](urls-and-ip-address-ranges.md). Une fois que votre réseau est configuré et que les adresses IPv6 appropriées sont autorisées, vous pouvez télécharger le [plan de test IPv6 Office 365](https://go.microsoft.com/fwlink/?LinkId=293447) à partir du centre de téléchargement Microsoft.
+  
 ## <a name="ipv6-support-in-office-365-subscription-service"></a>Prise en charge D’ipv6 dans le service d’abonnement Office 365
 
 ### <a name="exchange-online-and-ipv6"></a>Exchange Online et IPv6
@@ -61,19 +57,19 @@ Exchange Online Protection (EOP) prend en charge IPv6 si la transmission a lieu 
 
 Prise en charge du protocole IPv6 Office 365 pour les offres gouvernementales conformes au bureau de gestion et au budget (OMB) pour les responsables des informations des cadres dirigeants des services et agences exécutifs, ainsi que l’adoption par le gouvernement fédéral du protocole Internet version 6 (IPv6 exposé. [Microsoft Office 365 pour le gouvernement](https://go.microsoft.com/fwlink/p/?LinkId=325414) est un service mutualisée qui stocke les données du gouvernement américain dans un Cloud communautaire séparé. Comme les autres offres Office 365, il offre des services de productivité et de collaboration, notamment Exchange Online, Skype entreprise, SharePoint Online et Office professionnel plus. 
 
-Les offres gouvernementales de Microsoft Office 365 s’appliquent uniquement à 2013 et versions ultérieures. Pour plus d’informations sur les offres gouvernementales Office 365, voir [annonce d’office 365 pour le gouvernement: un Cloud communautaire pour le gouvernement américain](https://go.microsoft.com/fwlink/p/?LinkId=325414). Le trafic international en matière de réglementations sur les armes (ITAR) est un ensemble de réglementations gouvernementales américaines qui contrôlent l’exportation et l’importation d’articles et de services liés à la défense sur la [liste des munitions américaines (USML)](https://go.microsoft.com/fwlink/p/?LinkId=325415). 
+Les offres gouvernementales de Microsoft Office 365 s’appliquent uniquement à 2013 et versions ultérieures. Pour plus d’informations sur les offres gouvernementales Office 365, voir [annonce d’office 365 pour le gouvernement : un Cloud communautaire pour le gouvernement américain](https://go.microsoft.com/fwlink/p/?LinkId=325414). Le trafic international en matière de réglementations sur les armes (ITAR) est un ensemble de réglementations gouvernementales américaines qui contrôlent l’exportation et l’importation d’articles et de services liés à la défense sur la [liste des munitions américaines (USML)](https://go.microsoft.com/fwlink/p/?LinkId=325415). 
 
 Microsoft Office 365 pour entreprises fournit des services d’hébergement dédiés pour les solutions de productivité Microsoft qui prennent en charge les exigences en matière de sécurité, de confidentialité et de conformité réglementaire pour les agences fédérales américaines nécessitant une sécurité fédérale des informations Entités professionnelles et de certification de gestion (FISMA) soumises à ITAR.
   
 ## <a name="things-to-consider-when-using-ipv6-and-office-365"></a>Éléments à prendre en compte lors de l’utilisation D’ipv6 et Office 365
 
-Nous vous recommandons de ne pas désactiver IPv6. Pour plus d’informations, reportez-vous à cet [article d’instructions](https://support.microsoft.com/help/929852/guidance-for-configuring-ipv6-in-windows-for-advanced-users). Pour déterminer les versions IP utilisées sur votre réseau, prenez en compte les points suivants:
+Nous vous recommandons de ne pas désactiver IPv6. Pour plus d’informations, reportez-vous à cet [article d’instructions](https://support.microsoft.com/help/929852/guidance-for-configuring-ipv6-in-windows-for-advanced-users). Pour déterminer les versions IP utilisées sur votre réseau, prenez en compte les points suivants :
   
-- Si l’affichage de la commande **ipconfig** à l’invite de commandes contient des lignes nommées «adresse IPv6» ou «adresse IPv6 temporaire», cela indique que vous avez le protocole IPv6 dans votre environnement.
+- Si l’affichage de la commande **ipconfig** à l’invite de commandes contient des lignes nommées « adresse IPv6 » ou « adresse IPv6 temporaire », cela indique que vous avez le protocole IPv6 dans votre environnement.
 
-- Si toutes les adresses IPv6 commencent par «FE80» et correspondent à des lignes nommées «adresse IPv6 de liaison locale», vous n’avez pas IPv6 dans votre environnement.
+- Si toutes les adresses IPv6 commencent par « FE80 » et correspondent à des lignes nommées « adresse IPv6 de liaison locale », vous n’avez pas IPv6 dans votre environnement.
 
-Ces considérations peuvent s’appliquer à votre réseau:
+Ces considérations peuvent s’appliquer à votre réseau :
   
 - Le service d’abonnement public ne prend pas en charge l’achat par carte de crédit sur IPv6. Cela ne s’applique pas au Cloud communautaire du gouvernement (GCC) car les gouvernements disposent d’une licence d’accord entreprise (EA).
 

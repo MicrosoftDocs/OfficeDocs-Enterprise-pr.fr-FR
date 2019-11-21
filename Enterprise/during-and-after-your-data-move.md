@@ -1,9 +1,9 @@
 ---
 title: Pendant et après le déplacement de vos données
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/14/2019
+ms.date: 11/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Les déplacements de données sont des opérations principales n'ayant que peu d'impact sur les utilisateurs finals. Aucune action de votre part n'est requise lorsque Microsoft déplace chaque service et les données associées pour votre client vers une nouvelle zone géographique de centres de données. Le transfert de données et la validation se déroulent en arrière-plan à l'avance, et n'ont qu'une incidence minimale sur les utilisateurs.
-ms.openlocfilehash: 2eaeb8dd5fc9b3e9b892cb412f8a5081d7b2bf78
-ms.sourcegitcommit: 6d3420e41a52820729dd417511286bf98d3713ea
+ms.openlocfilehash: 333c29d4087e18b477f124ca406de4936d1bd5e3
+ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626134"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756573"
 ---
 # <a name="during-and-after-your-data-move"></a>Pendant et après le déplacement de vos données
 
@@ -123,10 +123,6 @@ Tous les utilisateurs seront déconnectés du logiciel client Skype Entreprise p
    
 ### <a name="skype-for-business-moves-that-involve-a-third-party-audio-conferencing-provider"></a>Déplacements Skype entreprise impliquant un fournisseur de services d’audioconférence tiers
 Les services de module complémentaire de fournisseurs de services d’audioconférence tiers pour Skype Entreprise ne sont pas disponibles pour les utilisateurs hébergés dans des centres de données propres à une nouvelle zone géographique.   Les clients existants qui utilisent un service de fournisseur de services d’audioconférence tiers ne doivent pas demander de déplacement vers un centre de données propre à une nouvelle zone géographique.   Les nouveaux clients déployés dans les centres de données propres à une nouvelle zone géographique doivent demander un déplacement vers un centre de données régional afin d’utiliser un fournisseur de services d’audioconférence tiers. 
-
-## <a name="data-for-other-services-including-teams-yammer-and-power-bi"></a>Données pour d’autres services, y compris Teams, Yammer et Power BI
-
-Nous déplaçons uniquement les données client pour Exchange Online, SharePoint Online et Skype Entreprise. Nous ne déplaçons pas de données pour d'autres services. En tant que client ou utilisateur de ces autres services, vous ne remarquez aucune modification ou aucune conséquence. Le processus de déplacement n'a aucune incidence sur ces services et l'emplacement des données client reste le même.
   
 ## <a name="related-topics"></a>Sujets associés 
  

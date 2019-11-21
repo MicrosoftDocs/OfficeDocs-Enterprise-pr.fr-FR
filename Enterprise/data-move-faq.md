@@ -1,9 +1,9 @@
 ---
 title: FAQ général relatif au déplacement de données
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/05/2018
+ms.date: 11/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: Voici des réponses à des questions d’ordre général sur le transfert de données principales vers une nouvelle région de centre de données.
-ms.openlocfilehash: 9e391a1b43ef1a11d9da72b7f78ecf35fd084c90
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: fd133dfb28ae99115198977e2e6d637a872078d8
+ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38028888"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756583"
 ---
 # <a name="data-move-general-faq"></a>FAQ général relatif au déplacement de données
 
@@ -29,7 +29,7 @@ Les clients commerciaux Office 365 existants qui ont sélectionné un pays élig
 
 ## <a name="how-do-we-define-core-customer-data"></a>Comment définir des données client principales ?
  
-Les données client principales sont un terme qui fait référence à un sous-ensemble de données client définies dans les [conditions de Microsoft Online Services](https://go.microsoft.com/fwlink/p/?LinkID=249048): 
+Les données client principales sont un terme qui fait référence à un sous-ensemble de données client définies dans les [conditions de Microsoft Online Services](https://aka.ms/ost): 
 - Contenu de boîte aux lettres Exchange Online (corps de courrier électronique, entrées de calendrier et contenu de pièces jointes)
 - Contenu de site SharePoint Online et fichiers stockés dans ce site
 - Fichiers téléchargés vers OneDrive entreprise 
@@ -141,7 +141,7 @@ R. Oui. Microsoft gère un vaste réseau mondial avec des connexions Internet pu
 
 Oui, votre locataire peut être inscrit.  Nous allons déplacer toutes les boîtes aux lettres EXO de votre région actuelle par défaut vers votre nouvelle région de centre de centres local.  Nous ne allons pas déplacer les boîtes aux lettres EXO configurées dans des régions multigéographiques satellites pour continuer à respecter la résidence des données des régions satellites comme prévu.  SharePoint Online et OneDrive entreprise ne peuvent pas migrer vers la nouvelle région de centre de travail dans le cadre du programme de déplacement, mais vous pouvez configurer les partages de OneDrive entreprise pour passer à une région de votre choix via le programme multigéographique.
   
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 [Transfert de données principales vers le nouveau centre de données Office 365 régions centres](moving-data-to-new-datacenter-geos.md)
 

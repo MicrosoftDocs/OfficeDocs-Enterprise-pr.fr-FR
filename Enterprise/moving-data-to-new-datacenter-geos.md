@@ -1,7 +1,7 @@
 ---
 title: Déplacement de données essentielles vers les nouvelles régions de centres de données Office 365
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 07/25/2019
 audience: ITPro
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 description: "Nouveau centre de régions centres ajouter de la capacité et des ressources de calcul pour prendre en charge notre demande de client et sa croissance d’utilisation en cours. En outre, les nouvelles régions de centre de données permettent d'héberger des données dans la région pour les données client essentielles. Le terme « données client essentielles » fait référence à un sous-ensemble de données client définies dans les conditions d'utilisation de Microsoft Online Services : Exchange Onlinecontenu de la boîte aux lettres (corps de courrier électronique, entrées de calendrier et contenu de pièces jointes), SharePoint Onlinecontenu du site et fichiers stockés dans ce site, ainsi que fichiers téléchargés vers OneDrive Entreprise."
-ms.openlocfilehash: e6bd86e7d3eebd0395d50e7668cf32dcabd0f20f
-ms.sourcegitcommit: 6d3420e41a52820729dd417511286bf98d3713ea
+ms.openlocfilehash: 3cccd9d5cb3f961a3621bf6f54104c2e1e3b8ece
+ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626154"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756543"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Déplacement de données essentielles vers les nouvelles régions de centres de données Office 365
 

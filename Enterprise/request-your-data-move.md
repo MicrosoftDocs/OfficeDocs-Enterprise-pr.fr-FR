@@ -1,9 +1,9 @@
 ---
 title: Procédure de demande d'un déplacement de données
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/25/2019
+ms.date: 11/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Les clients Office 365 existants devront envoyer une demande avant la date d'échéance de leur pays afin que les données client de leurs services Office 365 soient déplacées vers leur nouvelle région.
-ms.openlocfilehash: 9299f7f9f22f3036efcafd6b2a70bf3b25a3cc67
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 0d563400fefd0d2b9aabc0d9f3973558d54e60ab
+ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031589"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756593"
 ---
 # <a name="how-to-request-your-data-move"></a>Procédure de demande d’un déplacement de données
 
@@ -70,9 +70,9 @@ Après avoir demandé un déplacement, nous allons vous déplacer aussi rapideme
   
 Les déplacements peuvent prendre jusqu'à 24 mois à compter de la date d'échéance de la demande pour votre pays.
   
-## <a name="microsoft-teams"></a>Microsoft Teams
+## <a name="microsoft-teams"></a>Microsoft Teams
 
-Microsoft Teams ne prend pas encore en charge la migration du contenu client des centres de données en région vers des centres de données dans le pays où les données de résidence de Microsoft teams sont disponibles.  Par conséquent, seuls les nouveaux clients auront toutes leurs données stockées dans le pays dans les nouvelles régions où Microsoft teams prend en charge la résidence des données.  En savoir plus sur la résidence des données Office 365 sur l’emplacement de votre entreprise [où se trouvent vos données ?](https://products.office.com/where-is-your-data-located)   
+La prise en charge de la migration pour les données de messagerie de canal et de conversation Microsoft teams sera ajoutée au programme de migration local Office 365.  Nous prévoyons d’ouvrir l’inscriptions de programmes en janvier 2020 pour tous les clients éligibles, y compris les clients qui ont précédemment opté pour la migration vers Exchange Online et SharePoint Online/OneDrive entreprise.  Nous allons exposer le contrôle d’adhésion dans le centre d’administration 365 de Microsoft et envoyer une notification dans le centre de messages à tous les clients éligibles.   
 
 ## <a name="optional-actions-before-you-request-a-move"></a>Actions facultatives avant d’effectuer une demande de déplacement
 
@@ -102,7 +102,7 @@ Le client d'évaluation ne peut pas être associé à votre client existant :
 
 Si les utilisateurs disposent d’un appareil mobile avec le serveur Exchange défini sur **m.Outlook.com** ou **podxxxxx.Outlook.com**, nous vous recommandons de passer à **Outlook.office365.com**, en suivant les instructions de la procédure [configurer un appareil mobile pour une synchronisation avec votre compte](https://support.office.com/article/c9139caf-01ab-41a0-827c-3c06ee569ed3).
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 [Transfert de données principales vers le nouveau centre de données Office 365 régions centres](moving-data-to-new-datacenter-geos.md)
 

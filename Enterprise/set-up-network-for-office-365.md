@@ -3,7 +3,7 @@ title: Configurer votre réseau pour Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/01/2018
+ms.date: 11/19/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -17,20 +17,20 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Résumé : Voir les articles suivants pour comprendre la mise en réseau pour Office 365.'
-ms.openlocfilehash: 958841733259bd01cd16a908cfac65998a3f3127
-ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
+ms.openlocfilehash: 725c2470644206045a40816fad3643b83d6c8ea6
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34722683"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747413"
 ---
 # <a name="set-up-your-network-for-office-365"></a>Configurer votre réseau pour Office 365
 
-**Résumé :** voir les articles suivants pour comprendre la mise en réseau pour Office 365.
-  
-Une partie importante de votre intégration Office 365 est tout d’abord de vous assurer que vos connexions réseau et Internet sont définies pour optimiser l’accès. Configurer votre réseau local pour accéder à un cloud logiciel en tant que service (SaaS) distribué globalement est différent d’un réseau traditionnel optimisé pour le trafic aux centres de données locaux. 
+*Cet article est valable pour Office 365 Entreprise et Microsoft 365 Entreprise*.
 
-Utilisez ces articles pour comprendre les différences clés et modifier votre équipement de périmètre, ordinateurs clients et réseau local pour obtenir les meilleures performances utilisateurs.
+Une partie importante de votre intégration Office 365 est de vous assurer que vos connexions réseau et Internet sont définies pour optimiser l’accès. Configurer votre réseau local pour accéder à un cloud logiciel en tant que service (SaaS) distribué globalement est différent d’un réseau traditionnel optimisé pour le trafic vers des centres de données locaux et une connexion internet centrale. 
+
+Utilisez ces articles pour comprendre les différences clés et modifier vos équipements de périmètre, ordinateurs clients et réseau local pour obtenir les meilleures performances de la part de vos utilisateurs locaux.
 
 ## <a name="how-office-365-networking-works"></a>Fonctionnement de mise en réseau Office 365
 
@@ -50,7 +50,7 @@ Si vous êtes un fournisseur d’équipement réseau, rejoignez le[programme de 
 
 Les points de terminaison sont l’ensemble des adresses IP de destination, noms de domaine DNS et URL pour le trafic sur Internet Office 365. 
 
-Pour optimiser les performances aux services Office 365 basés sur le cloud, ces points de terminaison nécessitent une gestion spéciale par les autres navigateurs client et les appareils dans votre réseau de périmètre. Ces appareils incluent pare-feux, SSL Break and Inspect et des appareils d’inspection des paquets, et systèmes de protection contre la perte de données.
+Pour optimiser les performances aux services Office 365 basés sur le cloud, certains points de terminaison nécessitent une gestion spéciale par les autres navigateurs client et les appareils dans votre réseau de périmètre. Ces appareils incluent pare-feux, SSL Break and Inspect et des appareils d’inspection des paquets, et systèmes de protection contre la perte de données.
 
 Voir [Gestion des points de terminaison d’Office 365 ](managing-office-365-endpoints.md) pour plus d’informations.
 

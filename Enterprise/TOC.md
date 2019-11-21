@@ -64,7 +64,7 @@
 
 ## 1. Configuration de votre réseau
 ### [Configurer le réseau de votre entreprise](set-up-network-for-office-365.md)
-### [Domaines](https://support.office.com/article/6383f56d-3d09-4dcb-9b41-b5f5a5efd611)
+### [Ajouter un domaine](https://support.office.com/article/6383f56d-3d09-4dcb-9b41-b5f5a5efd611)
 ### [Vue d’ensemble de la connectivité réseau Office 365](office-365-networking-overview.md)
 ### [Principes de connectivité réseau Office 365](office-365-network-connectivity-principles.md)
 ### [Planification réseau et optimisation des performances pour Office 365](network-planning-and-performance.md)
@@ -103,7 +103,7 @@
 #### [Configurez la synchronisation d’annuaires](set-up-directory-synchronization.md)
 ### [Attribution de licences aux comptes d’utilisateurs](assign-licenses-to-user-accounts.md)
 
-## [3. Implémenter des fonctionnalités de sécurité](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
+## [3. Implémenter la sécurité](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
 
 ## 4. Déployer le logiciel client
 ### [Déployer Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)

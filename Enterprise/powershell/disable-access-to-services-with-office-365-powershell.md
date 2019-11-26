@@ -15,12 +15,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: Utilisez Office 365 PowerShell pour désactiver l’accès aux services 365 Office pour les utilisateurs.
-ms.openlocfilehash: c012d7451d022ea8cf3e3fa1a8d0a89d804e9c66
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 711f48dd2caad6fc2b438010405b126be203bd54
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38746277"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257599"
 ---
 # <a name="disable-access-to-services-with-office-365-powershell"></a>Désactiver l’accès aux services Office 365 PowerShell
 
@@ -41,6 +41,10 @@ Ensuite, utilisez cette commande pour afficher vos plans de gestion des licences
 ```powershell
 Get-MsolAccountSku | Select AccountSkuId | Sort AccountSkuId
 ```
+
+>[!Note]
+>PowerShell Core ne prend pas en charge les applets de commande et le module Microsoft Azure Active Directory pour Windows PowerShell avec **MSOL** dans leur nom. Pour continuer à utiliser ces applets de commande, vous devez les exécuter à partir de Windows PowerShell.
+>
 
 Pour plus d’informations, voir [afficher les licences et les services avec Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md).
     

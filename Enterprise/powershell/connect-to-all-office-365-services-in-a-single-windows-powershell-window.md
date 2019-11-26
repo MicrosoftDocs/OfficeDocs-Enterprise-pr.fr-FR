@@ -16,12 +16,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 'Résumé : Connectez Windows PowerShell à tous les services Office 365 dans une seule fenêtre Windows PowerShell.'
-ms.openlocfilehash: f64a29bb0594694c5a6b6e2dff8d0f7611fdf11e
-ms.sourcegitcommit: 21901808f112dd1d8d01617c4be37911efc379f8
+ms.openlocfilehash: c8390b3d704fa9df64f147a942891308b1ed825f
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38707061"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257423"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>Connexion à tous les services Office 365 à l’aide d’une seule fenêtre Windows PowerShell
 
@@ -41,7 +41,7 @@ Cette solution n’est pas optimale pour la gestion d’Office 365 car vous ne p
 
 Avant de pouvoir gérer l’ensemble des Office 365 à partir d’une seule instance de Windows PowerShell, tenez compte des conditions préalables suivantes :
   
-- Le compte professionnel ou scolaire Office 365 que vous utilisez pour ces procédures doit être membre d’un rôle d’administrateur Office 365. Pour obtenir plus d’informations, consultez l’article [À propos des rôles d’administrateur Office 365](https://go.microsoft.com/fwlink/p/?LinkId=532367). Il s’agit d’une condition requise pour Office 365 PowerShell, pas nécessairement pour tous les autres services Office 365.
+- Le compte professionnel ou scolaire Office 365 que vous utilisez pour ces procédures doit être membre d’un rôle d’administrateur Office 365. Pour plus d’informations, voir [À propos des rôles d’administrateur Office 365](https://go.microsoft.com/fwlink/p/?LinkId=532367). Il s’agit d’une condition requise pour Office 365 PowerShell, pas nécessairement pour tous les autres services Office 365.
     
 - Vous pouvez utiliser les versions 64 bits suivantes de Windows :
     
@@ -98,6 +98,10 @@ Voici les étapes à suivre pour vous connecter à tous les services dans une se
   ```powershell
   Connect-MsolService -Credential $credential
  ```
+
+>[!Note]
+>PowerShell Core ne prend pas en charge les applets de commande et le module Microsoft Azure Active Directory pour Windows PowerShell avec **MSOL** dans leur nom. Pour continuer à utiliser ces applets de commande, vous devez les exécuter à partir de Windows PowerShell.
+>
 
 4. Exécutez les commandes suivantes pour vous connecter à SharePoint Online. Remplacez _ \<domainhost>_ par la valeur réelle de votre domaine. Par exemple, pour « litwareinc.onmicrosoft.com », la _ \<valeur domainhost>_ est « litwareinc ».
     

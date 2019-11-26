@@ -3,7 +3,7 @@ title: Authentification fédérée haute disponibilité, phase 1 configurer Azur
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/15/2019
+ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,18 +12,16 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 'Résumé : configurez l’infrastructure Microsoft Azure pour qu’elle héberge l’authentification fédérée haute disponibilité pour Office 365.'
-ms.openlocfilehash: b6c872e46f39391e5e80caa399140adb044e773d
-ms.sourcegitcommit: 9c9982badeb95b8ecc083609a1a922cbfdfc9609
+ms.openlocfilehash: ca53c4584b21aab03e9383ac4eef1f321c3f4939
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793297"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257579"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Authentification fédérée haute disponibilité, phase 1 : Configurer Azure
 
- **Résumé :** Configurez l’infrastructure Microsoft Azure pour qu’elle héberge l’authentification fédérée haute disponibilité pour Office 365.
-  
-Dans cette phase, vous créez les groupes de ressources, le réseau virtuel et les groupes à haute disponibilité dans Azure qui hébergeront les machines virtuelles dans les phases 2, 3 et 4. Vous devez effectuer cette phase avant de passer à [l’authentification fédérée haute disponibilité, phase 2 : configurer les contrôleurs de domaine](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Reportez-vous à la rubrique [Déployer une authentification fédérée haute disponibilité pour Office 365 dans Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) pour toutes les phases.
+Dans cette phase, vous créez les groupes de ressources, le réseau virtuel et les groupes à haute disponibilité dans Azure qui hébergeront les machines virtuelles dans les phases 2, 3 et 4. Vous devez effectuer cette phase avant de passer à la [phase 2 : configurer les contrôleurs de domaine](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Reportez-vous à la rubrique [Déployer une authentification fédérée haute disponibilité pour Office 365 dans Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) pour toutes les phases.
   
 Azure doit être mis en service avec ces composants de base :
   
@@ -63,7 +61,7 @@ Renseignez-vous auprès de votre service informatique pour déterminer ces espac
   
 |**Élément**|**Nom du sous-réseau**|**Espace d'adressage de sous-réseau**|**Objectif**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Le sous-réseau utilisé par le contrôleur de domaine des services de domaine Active Directory (AD DS) et les machines virtuelles de serveur DirSync.  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Le sous-réseau utilisé par le contrôleur de domaine des services de domaine Active Directory (AD DS) et les machines virtuelles du serveur de synchronisation d’annuaires.  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Sous-réseau utilisé par les machines virtuelles AD FS.  <br/> |
 |3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Sous-réseau utilisé par les machines virtuelles de proxy d’application Web.  <br/> |
 |4.  <br/> |GatewaySubnet  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Le sous-réseau utilisé par les machines virtuelles de la passerelle Azure.  <br/> |
@@ -76,7 +74,7 @@ Ensuite, renseignez le Tableau I pour les adresses IP statiques affectées à de
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |Adresse IP statique du premier contrôleur de domaine  <br/> |La quatrième adresse IP possible pour l'espace d'adressage du sous-réseau défini dans l'Élément 1 du Tableau S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |Adresse IP statique du deuxième contrôleur de domaine  <br/> |La cinquième adresse IP possible pour l'espace d'adressage du sous-réseau défini dans l'Élément 1 du Tableau S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |Adresse IP statique du serveur DirSync  <br/> |La sixième adresse IP possible pour l’espace d’adressage du sous-réseau défini dans l’élément 1 du tableau S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |Adresse IP statique du serveur de synchronisation d’annuaires  <br/> |La sixième adresse IP possible pour l’espace d’adressage du sous-réseau défini dans l’élément 1 du tableau S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |4.  <br/> |Adresse IP statique de l’équilibreur de charge interne pour les serveurs AD FS  <br/> |La quatrième adresse IP possible pour l'espace d'adressage du sous-réseau défini dans l'Élément 2 du Tableau S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |5.  <br/> |Adresse IP statique du premier serveur AD FS  <br/> |La cinquième adresse IP possible pour l'espace d'adressage du sous-réseau défini dans l'Élément 2 du Tableau S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |6.  <br/> |Adresse IP statique du deuxième serveur AD FS  <br/> |La sixième adresse IP possible pour l'espace d'adressage du sous-réseau défini dans l'Élément 2 du Tableau S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -109,14 +107,17 @@ Pour l'ensemble des espaces d'adressage du réseau local, remplissez le tableau 
 Commençons à présent à créer l’infrastructure Azure pour héberger votre authentification fédérée pour Office 365.
   
 > [!NOTE]
-> [!REMARQUE] Les ensembles de commandes suivants utilisent la dernière version d'Azure PowerShell. Reportez-vous à la rubrique relative à la [prise en main des cmdlets Azure PowerShell](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). 
+> [!REMARQUE] Les ensembles de commandes suivants utilisent la dernière version d'Azure PowerShell. Consultez la rubrique [prise en main d’Azure PowerShell](https://docs.microsoft.com/powershell/azure/get-started-azureps). 
   
 Tout d'abord, démarrez une invite PowerShell Azure et connectez-vous à votre compte.
   
 ```powershell
 Connect-AzAccount
 ```
-  
+
+> [!TIP]
+> Pour générer des blocs de commandes PowerShell prêts à l’emploi en fonction de vos paramètres personnalisés, utilisez ce [classeur de configuration Microsoft Excel](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/deploy-high-availability-federated-authentication-for-office-365-in-azure/O365FedAuthInAzure_Config.xlsx). 
+
 Obtenez le nom de votre abonnement à l’aide de la commande suivante.
   
 ```powershell
@@ -303,7 +304,7 @@ Voici la configuration obtenue à la fin de cette phase.
   
 ## <a name="next-step"></a>Étape suivante
 
-Utiliser l' [authentification fédérée haute disponibilité, phase 2 : configurer les contrôleurs de domaine](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) pour poursuivre la configuration de cette charge de travail.
+Utilisez la [phase 2 : configurer les contrôleurs de domaine](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) pour poursuivre la configuration de cette charge de travail.
   
 ## <a name="see-also"></a>Voir aussi
 

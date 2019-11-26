@@ -13,12 +13,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Les déplacements de données sont des opérations principales n'ayant que peu d'impact sur les utilisateurs finals. Aucune action de votre part n'est requise lorsque Microsoft déplace chaque service et les données associées pour votre client vers une nouvelle zone géographique de centres de données. Le transfert de données et la validation se déroulent en arrière-plan à l'avance, et n'ont qu'une incidence minimale sur les utilisateurs.
-ms.openlocfilehash: 333c29d4087e18b477f124ca406de4936d1bd5e3
-ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
+ms.openlocfilehash: bfc21dccbf63dbf14f2e08d84f4312e6ed3dbcc7
+ms.sourcegitcommit: a73518764b97948219e378d7014ada5654146be4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38756573"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39250500"
 ---
 # <a name="during-and-after-your-data-move"></a>Pendant et après le déplacement de vos données
 
@@ -54,14 +54,6 @@ Certains utilisateurs ouvrent un dossier de messagerie partagé à partir d'une 
 |:-----|:-----|
 |L'utilisateur dispose d'autorisations de dossier de boîte aux lettres sur une autre boîte aux lettres  <br/> |Potentiellement limité.  <br/> Si l'utilisateur A et la boîte aux lettres B ne se trouvent pas dans la même zone géographique lors du déplacement de client, l'utilisateur A ne peut pas ouvrir le dossier la boîte aux lettres B dans Outlook Web Access s'il n'a de droit d'accès que pour un dossier spécifique de la boîte aux lettres B.  <br/> Pour ajouter un dossier partagé, cliquez avec le bouton droit de la souris sur le nom d'utilisateur dans le volet de navigation gauche, puis sélectionnez **Ajouter un dossier partagé**.  <br/> |
 |Utilisateur disposant de droits d’accès complets sur une autre boîte aux lettres  <br/> |Entièrement pris en charge  <br/> Si l’utilisateur a dispose de l’autorisation « accès total » à la boîte aux lettres B, l’utilisateur A peut cliquer sur le dossier partagé dans le volet de navigation gauche dans Outlook Web Access pour ouvrir une fenêtre affichant la boîte aux lettres B.  Un utilisateur peut ouvrir une boîte aux lettres partagée à l’aide d’Outlook Web Access lors du déplacement sans impact négatif. La limitation s’applique uniquement au partage au niveau du dossier dans une boîte aux lettres.           |
-   
-### <a name="public-folders"></a>Dossiers publics
-
-Si la boîte aux lettres de dossiers publics est temporairement dans un autre centre de contenu géographique, à partir de l’utilisateur qui tente d’y accéder, l’utilisateur peut ne pas être en mesure d’accéder à la boîte aux lettres de dossiers publics. 
-  
-### <a name="online-archives"></a>Archives en ligne
-
-Lorsque le déplacement est en cours, les utilisateurs qui se connectent via Outlook pour Mac peuvent ne pas être en mesure de se connecter à leur boîte aux lettres d’archivage en ligne. L’accès à la boîte aux lettres d’archivage pour les utilisateurs qui se connectent à Outlook et à Outlook Web Access est pris en charge.
   
 ## <a name="sharepoint-online"></a>SharePoint Online
 
@@ -124,7 +116,7 @@ Tous les utilisateurs seront déconnectés du logiciel client Skype Entreprise p
 ### <a name="skype-for-business-moves-that-involve-a-third-party-audio-conferencing-provider"></a>Déplacements Skype entreprise impliquant un fournisseur de services d’audioconférence tiers
 Les services de module complémentaire de fournisseurs de services d’audioconférence tiers pour Skype Entreprise ne sont pas disponibles pour les utilisateurs hébergés dans des centres de données propres à une nouvelle zone géographique.   Les clients existants qui utilisent un service de fournisseur de services d’audioconférence tiers ne doivent pas demander de déplacement vers un centre de données propre à une nouvelle zone géographique.   Les nouveaux clients déployés dans les centres de données propres à une nouvelle zone géographique doivent demander un déplacement vers un centre de données régional afin d’utiliser un fournisseur de services d’audioconférence tiers. 
   
-## <a name="related-topics"></a>Sujets associés 
+## <a name="related-topics"></a>Voir aussi 
  
 [Procédure de demande d’un déplacement de données](request-your-data-move.md)
     

@@ -14,12 +14,12 @@ ms.custom:
 - PowerShell
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
 description: Explique comment utiliser Office 365 PowerShell pour bloquer et débloquer l’accès aux comptes Office 365.
-ms.openlocfilehash: 3cc063fac2fa7795ba924b7b937efc9afe6594a1
-ms.sourcegitcommit: 21901808f112dd1d8d01617c4be37911efc379f8
+ms.openlocfilehash: 09cfdaf1485837713d03949cca456b9d07b66b00
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38706981"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257665"
 ---
 # <a name="block-user-accounts-with-office-365-powershell"></a>Bloquer des comptes d’utilisateurs avec Office 365 PowerShell
 
@@ -119,6 +119,10 @@ Pour bloquer l’accès à un compte d’utilisateur individuel, utilisez la syn
 ```powershell
 Set-MsolUser -UserPrincipalName <sign-in name of user account>  -BlockCredential $true
 ```
+
+>[!Note]
+>PowerShell Core ne prend pas en charge les applets de commande et le module Microsoft Azure Active Directory pour Windows PowerShell avec **MSOL** dans leur nom. Pour continuer à utiliser ces applets de commande, vous devez les exécuter à partir de Windows PowerShell.
+>
 
 Cet exemple bloque l’accès au compte d’utilisateur fabricec@litwareinc.com.
   

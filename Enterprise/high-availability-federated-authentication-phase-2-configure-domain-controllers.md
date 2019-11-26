@@ -3,7 +3,7 @@ title: Authentification fédérée haute disponibilité, phase 2 configurer les 
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/15/2019
+ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,24 +11,22 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
-description: 'Résumé : Configurez les contrôleurs de domaine et le serveur DirSync pour votre authentification fédérée haute disponibilité pour Office 365 dans Microsoft Azure.'
-ms.openlocfilehash: 3e5ede99c114b59f6aafbf37c3aa11e3ebd62cca
-ms.sourcegitcommit: 9c9982badeb95b8ecc083609a1a922cbfdfc9609
+description: 'Résumé : configurez les contrôleurs de domaine et le serveur de synchronisation d’annuaires pour votre authentification fédérée haute disponibilité pour Office 365 dans Microsoft Azure.'
+ms.openlocfilehash: 853f7c55039fb4dcd09ae9d0d748a4e559d5564a
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793346"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257503"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Authentification fédérée haute disponibilité, phase 2 : Configurer les contrôleurs de domaine
 
- **Résumé :** Configurez les contrôleurs de domaine et le serveur DirSync pour votre authentification fédérée haute disponibilité pour Office 365 dans Microsoft Azure.
-  
-Au cours de cette phase de déploiement de la haute disponibilité pour l’authentification fédérée Office 365 dans les services d’infrastructure Azure, vous configurez deux contrôleurs de domaine et le serveur DirSync dans le réseau virtuel Azure. Les requêtes web client d’authentification peuvent ensuite être authentifiées dans le réseau virtuel Azure, plutôt que d’envoyer ce trafic d’authentification sur le VPN de site à site à votre réseau local.
+Dans cette phase de déploiement de la haute disponibilité pour l’authentification fédérée Office 365 dans les services d’infrastructure Azure, vous configurez deux contrôleurs de domaine et le serveur de synchronisation d’annuaires dans le réseau virtuel Azure. Les requêtes web client d’authentification peuvent ensuite être authentifiées dans le réseau virtuel Azure, plutôt que d’envoyer ce trafic d’authentification sur le VPN de site à site à votre réseau local.
   
 > [!NOTE]
 > Active Directory Federation Services (AD FS) ne peut pas utiliser les services de domaine Active Directory d’Azure comme substitut pour les contrôleurs de domaine des services de domaine Active Directory. 
   
-Vous devez effectuer cette phase avant de passer à [High availability federated authentication Phase 3: Configure AD FS servers](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). Reportez-vous à la rubrique [Déployer une authentification fédérée haute disponibilité pour Office 365 dans Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) pour toutes les phases.
+Vous devez effectuer cette phase avant de passer à la [phase 3 : configurer les serveurs AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). Reportez-vous à la rubrique [Déployer une authentification fédérée haute disponibilité pour Office 365 dans Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) pour toutes les phases.
   
 ## <a name="create-the-domain-controller-virtual-machines-in-azure"></a>Créer les machines virtuelles du contrôleur de domaine dans Azure
 
@@ -38,7 +36,7 @@ Tout d'abord, vous devez remplir la colonne du **nom de la machine virtuelle** d
 |:-----|:-----|:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png) (premier contrôleur de domaine, par exemple DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png) (deuxième contrôleur de domaine, par exemple DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|3.  <br/> |![](./media/Common-Images/TableLine.png)(Serveur DirSync, exemple DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|3.  <br/> |![](./media/Common-Images/TableLine.png)(serveur de synchronisation d’annuaires, exemple DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |4.  <br/> |![](./media/Common-Images/TableLine.png)(premier serveur AD FS, exemple ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |5.  <br/> |![](./media/Common-Images/TableLine.png)(deuxième serveur AD FS, exemple ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |6.  <br/> |![](./media/Common-Images/TableLine.png)(premier serveur proxy d’application Web, exemple WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
@@ -62,13 +60,16 @@ Le bloc de commandes Azure PowerShell suivant permet de créer les machines vir
     
 - Tableau A, pour vos groupes à haute disponibilité
     
-Rappelez-vous que vous avez défini les tableaux R, V, S, I et A dans [High Availability Federated Authentication phase 1 : configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
+Rappelez-vous que vous avez défini les tableaux R, V, S, I et A à la [phase 1 : configurer Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
   
 > [!NOTE]
-> Les ensembles de commandes suivants utilisent la dernière version d'Azure PowerShell. Reportez-vous à la rubrique relative à la [prise en main des cmdlets Azure PowerShell](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). 
+> [!REMARQUE] Les ensembles de commandes suivants utilisent la dernière version d'Azure PowerShell. Consultez la rubrique [prise en main d’Azure PowerShell](https://docs.microsoft.com/powershell/azure/get-started-azureps). 
   
 Lorsque vous avez indiqué toutes les valeurs correctes, exécutez le bloc résultant à l’invite de commandes Azure PowerShell ou dans l’environnement d'écriture de scripts intégré de Windows PowerShell (ISE) sur votre ordinateur local.
   
+> [!TIP]
+> Pour générer des blocs de commandes PowerShell prêts à l’emploi en fonction de vos paramètres personnalisés, utilisez ce [classeur de configuration Microsoft Excel](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/deploy-high-availability-federated-authentication-for-office-365-in-azure/O365FedAuthInAzure_Config.xlsx). 
+
 ```powershell
 # Set up variables common to both virtual machines
 $locName="<your Azure location>"
@@ -123,7 +124,7 @@ $vm=Set-AzVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer Win
 $vm=Add-AzVMNetworkInterface -VM $vm -Id $nic.Id
 New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 
-# Create the DirSync server
+# Create the directory synchronization server
 $vmName="<Table M - Item 3 - Virtual machine name column>"
 $vmSize="<Table M - Item 3 - Minimum size column>"
 $staticIP="<Table I - Item 3 - Value column>"
@@ -132,7 +133,7 @@ $diskStorageType="<Table M - Item 3 - Storage type column>"
 $nic=New-AzNetworkInterface -Name ($vmName +"-NIC") -ResourceGroupName $rgName -Location $locName -Subnet $subnet -PrivateIpAddress $staticIP
 $vm=New-AzVMConfig -VMName $vmName -VMSize $vmSize
 
-$cred=Get-Credential -Message "Type the name and password of the local administrator account for the DirSync server." 
+$cred=Get-Credential -Message "Type the name and password of the local administrator account for the directory synchronization server." 
 $vm=Set-AzVMOperatingSystem -VM $vm -Windows -ComputerName $vmName -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
 $vm=Set-AzVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
 $vm=Add-AzVMNetworkInterface -VM $vm -Id $nic.Id
@@ -225,9 +226,9 @@ New-ADReplicationSite -Name $vnet
 New-ADReplicationSubnet -Name $vnetSpace -Site $vnet
 ```
 
-## <a name="configure-the-dirsync-server"></a>Configurer le serveur de DirSync
+## <a name="configure-the-directory-synchronization-server"></a>Configurer le serveur de synchronisation d’annuaires
 
-Utilisez le client Bureau à distance de votre choix et créez une connexion de bureau à distance à la machine virtuelle du serveur de synchronisation d’annuaire. Utilisez son nom d'ordinateur ou son nom DNS intranet et les informations d'identification du compte Administrateur local.
+Utilisez le client Bureau à distance de votre choix et créez une connexion de bureau à distance à la machine virtuelle du serveur de synchronisation d’annuaires. Utilisez son nom d'ordinateur ou son nom DNS intranet et les informations d'identification du compte Administrateur local.
   
 Ensuite, associez-le au domaine AD DS approprié à l’aide de ces commandes à l’invite Windows PowerShell.
   
@@ -240,13 +241,13 @@ Restart-Computer
 
 Lorsque cette phase est terminée, voici la configuration résultante, avec les noms d’ordinateur de l’espace réservé.
   
-**Phase 2 : Les contrôleurs de domaine et le serveur DirSync pour votre infrastructure d’authentification fédérée haute disponibilité dans Azure.**
+**Phase 2 : les contrôleurs de domaine et le serveur de synchronisation d’annuaires pour votre infrastructure d’authentification fédérée haute disponibilité dans Azure**
 
 ![Phase 2 de l’infrastructure d’authentification fédérée haute disponibilité Office 365 dans Azure avec des contrôleurs de domaine](media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
   
 ## <a name="next-step"></a>Étape suivante
 
-Utilisez [High availability federated authentication Phase 3: Configure AD FS servers](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md) pour poursuivre la configuration de cette charge de travail.
+Utilisez la [phase 3 : configurer les serveurs AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md) pour poursuivre la configuration de cette charge de travail.
   
 ## <a name="see-also"></a>Voir aussi
 

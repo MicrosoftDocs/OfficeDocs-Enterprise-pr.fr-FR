@@ -15,12 +15,12 @@ ms.custom:
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: "Résumé : Utilisez Office 365 PowerShell pour configurer les propriétés d'un ou de plusieurs comptes d'utilisateur dans votre client Office 365."
-ms.openlocfilehash: 94596326c9d52b4010f6e9baf67fe3c7a12399be
-ms.sourcegitcommit: 21901808f112dd1d8d01617c4be37911efc379f8
+ms.openlocfilehash: 67ce7d3c57f286f0b2365aa2503fdf1c8bc13429
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38706991"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257655"
 ---
 # <a name="configure-user-account-properties-with-office-365-powershell"></a>Configurer les propriétés des comptes d’utilisateur avec Office 365 PowerShell
 
@@ -146,6 +146,10 @@ Pour configurer les propriétés des comptes d’utilisateur avec le module Micr
 
 Tout d’abord, [connectez-vous à votre client Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
   
+>[!Note]
+>PowerShell Core ne prend pas en charge les applets de commande et le module Microsoft Azure Active Directory pour Windows PowerShell avec **MSOL** dans leur nom. Pour continuer à utiliser ces applets de commande, vous devez les exécuter à partir de Windows PowerShell.
+>
+
 ### <a name="change-properties-for-a-specific-user-account"></a>Modification des propriétés d’un compte d’utilisateur spécifique
 
 Pour configurer les propriétés d’un compte d’utilisateur spécifique, vous utilisez la cmdlet [Set-MsolUser](https://msdn.microsoft.com/library/azure/dn194136.aspx) et spécifiez les propriétés de définition ou de modification. 

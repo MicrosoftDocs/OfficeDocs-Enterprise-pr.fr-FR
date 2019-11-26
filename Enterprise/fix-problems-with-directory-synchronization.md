@@ -17,12 +17,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Décrit les causes courantes des problèmes liés à la synchronisation d’annuaires dans Office 365 et fournit quelques méthodes pour les aider à les résoudre.
-ms.openlocfilehash: f7a117df41e9a972f4ea166eb7b75e5fb1a85295
-ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
+ms.openlocfilehash: cc0fe15d0d49542489ac1e586efbe99d0846b3ab
+ms.sourcegitcommit: fbd2f3fb297c508212baed3ee9d1ce51765cc8bb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38702225"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39254523"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Résolution des problèmes de synchronisation d’annuaires pour Office 365
 
@@ -89,6 +89,6 @@ Pour effectuer une mise à jour à partir d’Azure Active Directory Sync vers A
     
 ## <a name="diagnostic-tools"></a>Outils de diagnostic
 
-L' [outil IDFix](prepare-directory-attributes-for-synch-with-idfix.md) permet de détecter et de résoudre les objets Identity et leurs attributs dans un environnement Active Directory local en vue de la migration vers Office 365. IDFix est destiné aux administrateurs Active Directory responsables de DirSync avec le service Office 365. 
+L' [outil IDFix](prepare-directory-attributes-for-synch-with-idfix.md) permet de détecter et de résoudre les objets Identity et leurs attributs dans un environnement Active Directory local en vue de la migration vers Office 365. IDFix est destiné aux administrateurs Active Directory responsables de la synchronisation d’annuaires avec le service Office 365. 
 
 [Téléchargez l’outil IDFix](https://go.microsoft.com/fwlink/p/?LinkId=396718) à partir du centre de téléchargement Microsoft.

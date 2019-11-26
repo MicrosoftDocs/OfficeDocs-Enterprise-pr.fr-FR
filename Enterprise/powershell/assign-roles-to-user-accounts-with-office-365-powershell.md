@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: 'Résumé : Utilisation d’Office 365 PowerShell pour attribuer des rôles à des comptes d’utilisateur.'
-ms.openlocfilehash: 29c23e88d9b7bc2fc0030d467336e38ed413a4ab
-ms.sourcegitcommit: 21901808f112dd1d8d01617c4be37911efc379f8
+ms.openlocfilehash: 5af8c514cbe8d102716d2d6b45e8ebdbdb5b1507
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38707031"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257443"
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>Attribuer des rôles à des comptes d’utilisateur avec Office 365 PowerShell
 
@@ -94,6 +94,10 @@ Si vous utilisez les noms d’affichage des comptes d’utilisateur, déterminez
   ```
 
     Cette commande répertorie le nom d'affichage de vos comptes d'utilisateur, triés par nom d'affichage, un écran à la fois. Vous pouvez filtrer la liste pour réduire l'ensemble à l'aide de la cmdlet **Where**. Voici un exemple :
+
+   >[!Note]
+   >PowerShell Core ne prend pas en charge les applets de commande et le module Microsoft Azure Active Directory pour Windows PowerShell avec **MSOL** dans leur nom. Pour continuer à utiliser ces applets de commande, vous devez les exécuter à partir de Windows PowerShell.
+   >
     
   ```powershell
   Get-MsolUser -All | Where DisplayName -like "John*" | Sort DisplayName | Select DisplayName | More

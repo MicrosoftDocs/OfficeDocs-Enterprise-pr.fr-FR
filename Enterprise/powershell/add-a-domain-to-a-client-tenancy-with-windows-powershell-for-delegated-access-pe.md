@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: 'Résumé : Utilisez Windows PowerShell pour Office 365 pour ajouter un autre nom de domaine à un locataire de client existant.'
-ms.openlocfilehash: 60088a9eafa1f5380eef2cc0240b0f5b5b02fe0f
-ms.sourcegitcommit: 68181eca8e43ea7f5dfd89cbaf587bc0c260ca7e
+ms.openlocfilehash: 5f22e21e1eafc7c2d3fb9bc7286e860ad468445b
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35853227"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257463"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>Ajout d’un domaine à la location d’un client avec Windows PowerShell pour les partenaires avec autorisation d’accès délégué
 
@@ -48,7 +48,7 @@ Vous avez également besoin des informations suivantes :
  Vos clients vous demanderont probablement de créer des domaines supplémentaires à associer à leur location, car ils ne voudront probablement pas que le domaine<domain>.onmicrosoft.comsoit le domaine principal qui représente leur identité d'entreprise aux yeux du monde entier. Cette procédure vous guide au fil du processus de création d'un domaine associé à la location de votre client.
   
 > [!NOTE]
-> Pour effectuer certaines de ces opérations, le compte d’administrateur partenaire avec lequel vous vous connectez doit être défini sur **administration complète** pour le paramètre **attribuer un accès administratif aux sociétés que vous prenez en charge** figurant dans les détails du compte administrateur dans le Centre d’administration Microsoft 365. Pour plus d'informations sur la gestion des rôles d'administrateur de partenaire, voir[Partenaires : proposer l'administration déléguée](https://go.microsoft.com/fwlink/p/?LinkId=532435). 
+> Pour effectuer certaines de ces opérations, le compte d’administrateur partenaire avec lequel vous vous connectez doit être défini sur **administration complète** pour le paramètre **attribuer un accès administratif aux sociétés que vous prenez en charge** figurant dans les détails du compte administrateur dans le centre d’administration 365 de Microsoft. Pour plus d'informations sur la gestion des rôles d'administrateur de partenaire, voir[Partenaires : proposer l'administration déléguée](https://go.microsoft.com/fwlink/p/?LinkId=532435). 
   
 ### <a name="create-the-domain-in-azure-active-directory"></a>Création du domaine dans Azure Active Directory
 
@@ -57,6 +57,10 @@ Cette commande crée le domaine dans Azure Active Directory, mais ne l'associe p
 ```
 New-MsolDomain -TenantId <customer TenantId> -Name <FQDN of new domain>
 ```
+
+>[!Note]
+>PowerShell Core ne prend pas en charge les applets de commande et le module Microsoft Azure Active Directory pour Windows PowerShell avec **MSOL** dans leur nom. Pour continuer à utiliser ces applets de commande, vous devez les exécuter à partir de Windows PowerShell.
+>
 
 ### <a name="get-the-data-for-the-dns-txt-verification-record"></a>Obtention des données pour l’enregistrement de vérification TXT DNS
 

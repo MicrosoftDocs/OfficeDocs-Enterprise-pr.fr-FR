@@ -13,18 +13,18 @@ ms.collection:
 ms.custom: ''
 ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
 description: 'Résumé : Utilisez Windows PowerShell pour Office 365 pour gérer les locations de votre client.'
-ms.openlocfilehash: b38c1862a0cf2db4a751d1690686baeead8ae9ea
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: a45fb7b888d7e591f6765150525f0b50c72ddc5c
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35781854"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257589"
 ---
 # <a name="manage-office-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Gestion de clients Office 365 avec Windows PowerShell pour les partenaires avec autorisations d’accès délégué
 
  **Résumé :** Utilisez Windows PowerShell pour Office 365 pour gérer les locations de votre client.
   
-Windows PowerShell permet aux partenaires de syndication et de fournisseur de solutions Cloud (CSP) d’administrer et de signaler facilement les paramètres de location des clients qui ne sont pas disponibles dans le centre d’administration 365 de Microsoft. Les autorisations AOBO (Administrer au nom de) sont requises pour que le compte d’administrateur du partenaire puisse se connecter aux locations de son client.
+Windows PowerShell permet aux partenaires de syndication et de fournisseur de solutions Cloud (CSP) d’administrer et de signaler facilement les paramètres de location des clients qui ne sont pas disponibles dans le centre d’administration 365 de Microsoft. Notez que les autorisations administrer de la part de (administrateur) sont requises pour le compte d’administrateur partenaire afin de se connecter à ses clients.
   
 Les partenaires avec autorisation d'accès délégué sont les partenaires de syndication et fournisseurs de solutions cloud. Il s’agit souvent de fournisseurs de réseau ou de télécommunication pour d’autres sociétés. Ils regroupent les abonnements Office 365 dans leurs offres de services pour les clients. Lorsqu'ils vendent un abonnement Office 365, ils bénéficient automatiquement des autorisations AOBO (Administrer au nom de) sur les locations clientes et peuvent donc gérer les locations du client et créer des rapports.
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
@@ -47,6 +47,10 @@ Get-MsolPartnerContract -All | Select-Object TenantId
 ```
 
 Elle affiche la liste de tous les locataires de votre client par **TenantId**.
+
+>[!Note]
+>PowerShell Core ne prend pas en charge les applets de commande et le module Microsoft Azure Active Directory pour Windows PowerShell avec **MSOL** dans leur nom. Pour continuer à utiliser ces applets de commande, vous devez les exécuter à partir de Windows PowerShell.
+>
   
 ### <a name="get-a-tenant-id-by-using-the-domain-name"></a>Obtenir un ID de locataire à l’aide du nom de domaine
 

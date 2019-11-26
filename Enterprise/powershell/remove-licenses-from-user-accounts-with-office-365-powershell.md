@@ -16,12 +16,12 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
 description: Explique comment utiliser Office 365 PowerShell pour supprimer des licences Office 365 précédemment attribuées à des utilisateurs.
-ms.openlocfilehash: bfd333b649df1d346a45abc3e8b9e35666f8f582
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 1147b59c948d3d09349de42a637f522df04f8687
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747540"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257383"
 ---
 # <a name="remove-licenses-from-user-accounts-with-office-365-powershell"></a>Supprimer des licences à des comptes d’utilisateurs avec Office 365 PowerShell
 
@@ -73,6 +73,10 @@ Pour supprimer des licences à partir d’un compte d’utilisateur existant, ut
 ```powershell
 Set-MsolUserLicense -UserPrincipalName <Account> -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"...
 ```
+
+>[!Note]
+>PowerShell Core ne prend pas en charge les applets de commande et le module Microsoft Azure Active Directory pour Windows PowerShell avec **MSOL** dans leur nom. Pour continuer à utiliser ces applets de commande, vous devez les exécuter à partir de Windows PowerShell.
+>
 
 Cet exemple supprime la `litwareinc:ENTERPRISEPACK` licence (Office 365 Enterprise E3) du compte d’utilisateur BelindaN@litwareinc.com.
   

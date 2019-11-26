@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: Découvrez comment attribuer des licences à des comptes d’utilisateur et à désactiver des plans de service spécifiques en même temps à l’aide d’Office 365 PowerShell.
-ms.openlocfilehash: 16e24a61aea1298b2c24a251d61c414c355dead7
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 06b6de4ea6d96dd2c9510770042bd2a2f1260876
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747656"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257393"
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>Désactiver l’accès aux services lors de l’attribution des licences utilisateur
 
@@ -69,6 +69,10 @@ Ensuite, exécutez la commande suivante pour afficher vos abonnements en cours 
 Get-MsolAccountSku
 ```
 
+>[!Note]
+>PowerShell Core ne prend pas en charge les applets de commande et le module Microsoft Azure Active Directory pour Windows PowerShell avec **MSOL** dans leur nom. Pour continuer à utiliser ces applets de commande, vous devez les exécuter à partir de Windows PowerShell.
+>
+
 Dans l'affichage de la commande  `Get-MsolAccountSku` :
   
 - **AccountSkuId** est un abonnement pour votre organisation au format \<OrganizationName>:\<Subscription>. La valeur \<OrganizationName> est fournie lorsque vous vous inscrivez à Office 365 et elle est propre à votre organisation. La valeur \<Subscription> désigne un abonnement spécifique. Par exemple, pour litwareinc:ENTERPRISEPACK, le nom de l’organisation est litwareinc, et le nom de l’abonnement est ENTERPRISEPACK (Office 365 Entreprise E3).
@@ -96,12 +100,12 @@ Le tableau suivant présente les plans de service Office 365 et leurs noms convi
 |**Plan de services**|**Description**|
 |:-----|:-----|
 | `SWAY` <br/> |Sway  <br/> |
-| `TEAMS1` <br/> |Microsoft Teams  <br/> |
+| `TEAMS1` <br/> |Microsoft Teams  <br/> |
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Office Professionnel Plus  <br/> |
 | `MCOSTANDARD` <br/> |Skype Entreprise Online  <br/> |
-| `SHAREPOINTWAC` <br/> |Bureau   <br/> |
+| `SHAREPOINTWAC` <br/> |Office   <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online (plan 2)  <br/> |
    

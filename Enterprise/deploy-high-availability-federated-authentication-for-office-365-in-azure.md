@@ -3,7 +3,7 @@ title: Déployer une authentification fédérée haute disponibilité pour Offic
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/06/2018
+ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,17 +17,15 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
 description: "Résumé : Configurer l'authentification fédérée haute disponibilité pour votre abonnement Office 365 dans Microsoft Azure."
-ms.openlocfilehash: ba8049271e4820cca8db2ce5d6cabf76dacfb36a
-ms.sourcegitcommit: 9c9982badeb95b8ecc083609a1a922cbfdfc9609
+ms.openlocfilehash: 0b622c895bcd6b11ee7e096ac1e39f1b6bd2dae2
+ms.sourcegitcommit: fbd2f3fb297c508212baed3ee9d1ce51765cc8bb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793286"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39254513"
 ---
-# <a name="deploy-high-availability-federated-authentication-for-office-365-in-azure"></a>Déployer une authentification fédérée haute disponibilité pour Office 365 dans Azure
+# <a name="deploy-high-availability-federated-authentication-for-office-365-in-azure"></a>Déployer une authentification fédérée haute disponibilité pour Office 365 dans Azure
 
- **Résumé :** Configurer l'authentification fédérée haute disponibilité pour votre abonnement Office 365 dans Microsoft Azure.
-  
 Cet article contient des liens vers les instructions détaillées de déploiement de l’authentification fédérée haute disponibilité pour Microsoft Office 365 dans les services d’infrastructure Azure avec ces machines virtuelles :
   
 - Deux serveurs proxy d’application web
@@ -36,7 +34,7 @@ Cet article contient des liens vers les instructions détaillées de déploiemen
     
 - Deux contrôleurs de domaine répliqués
     
-- Un serveur de synchronisation d’annuaire (DirSync) exécutant Azure AD Connect
+- Un serveur de synchronisation d’annuaire exécutant Azure AD Connect
     
 Voici la configuration, avec les noms d’espace réservé pour chaque serveur.
   
@@ -54,7 +52,7 @@ Chaque paire de machines virtuelles utilisée pour un rôle spécifique est dans
 > [!NOTE]
 > Étant donné que ce réseau virtuel est connecté au réseau local, cette configuration n'inclut pas de machines virtuelles jumpbox ou de machines virtuelles de surveillance sur un sous-réseau de gestion. Pour plus d'informations, voir l'article relatif à l'[exécution de machines virtuelles Windows pour une architecture n-tiers](https://docs.microsoft.com/azure/guidance/guidance-compute-n-tier-vm). 
   
-Le résultat de cette configuration met en place une authentification fédérée pour tous vos utilisateurs Office 365, qui peuvent ainsi utiliser leurs informations d'identification Active Directory Windows Server pour se connecter au lieu de leur compte Office 365. L'infrastructure d'authentification fédérée utilise un ensemble redondant de serveurs qui sont plus faciles à déployer dans les services d'infrastructure Azure que dans votre réseau de périmètre en local.
+Cette configuration met en place une authentification fédérée pour tous vos utilisateurs Office 365, qui peuvent ainsi utiliser leurs informations d’identification Active Directory DS pour se connecter au lieu de leur compte Office 365. L’infrastructure d’authentification fédérés utilise un ensemble redondant de serveurs qui sont plus faciles à déployer dans les services d’infrastructure Azure que dans votre réseau de périmètre en local.
   
 ## <a name="bill-of-materials"></a>Nomenclature
 
@@ -90,7 +88,7 @@ Vous déployez cette charge de travail au cours des phases suivantes :
   
 - [Phase 1 : Configuration Azure](high-availability-federated-authentication-phase-1-configure-azure.md). Créez des groupes de ressources, des comptes de stockage, des groupes à haute disponibilité et un réseau virtuel intersites.
     
-- [Phase 2 : Configuration des contrôleurs de domaine](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Créez et configurez des contrôleurs de domaine réplica d’Active Directory Domain Services (AD DS) et du serveur DirSync.
+- [Étape 2 : configurer les contrôleurs de domaine](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Créer et configurer les contrôleurs de domaine réplica Azure AD et le serveur de synchronisation d’annuaires.
     
 - [Phase 3 : Configuration des serveurs AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). Créez et configurez les deux serveurs AD FS.
     
@@ -108,5 +106,5 @@ Pour créer un environnement de développement/test ou une preuve de concept de 
   
 ## <a name="next-step"></a>Étape suivante
 
-Commencez la configuration de cette charge de travail avec [Authentification fédérée haute disponibilité, phase 1 : Configurer Azure](high-availability-federated-authentication-phase-1-configure-azure.md). 
+Démarrer la configuration de la charge de travail avec [Phase 1 : configurer Azure](high-availability-federated-authentication-phase-1-configure-azure.md). 
   

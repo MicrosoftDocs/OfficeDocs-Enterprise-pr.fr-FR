@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: "Résumé : Vous devez être en mesure d'utiliser Office 365 PowerShell pour gérer Office 365, que ce soit pour gagner en efficacité ou par nécessité."
-ms.openlocfilehash: 66782a9165c76c7e1d506e40fa1cacd6db0c6724
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 3e2f0d4ee1c86e26ccf728412d419ae6ba3018e7
+ms.sourcegitcommit: 460c722d63e7e604ef0a57ec18fa7900fa6a4157
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747443"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39655771"
 ---
 # <a name="why-you-need-to-use-office-365-powershell"></a>Pourquoi utiliser Office 365 PowerShell ?
 
@@ -83,9 +83,11 @@ Vous devez répéter cette procédure pour chaque utilisateur. Si les utilisateu
 Get-MsolUser | Select DisplayName, UsageLocation
 ```
 
-> [!NOTE]
-> Cette commande exige que vous installiez le [module Windows Azure Active Directory](https://docs.microsoft.com/powershell/module/Azuread/?view=azureadps-2.0). 
-  
+
+>[!Note]
+>PowerShell Core ne prend pas en charge le module Microsoft Azure Active Directory pour Windows PowerShell et les applets de commande incluant **Msol** dans leur nom. Pour continuer à utiliser ces applets de commande, vous devez les exécuter à partir de Windows PowerShell.
+>
+
 Voici un exemple d’affichage :
   
 ```powershell

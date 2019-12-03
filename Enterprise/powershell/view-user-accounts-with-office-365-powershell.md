@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: 'Résumé : Affichez, répertoriez ou affichez vos comptes d’utilisateur de différentes manières avec Office 365 PowerShell.'
-ms.openlocfilehash: 0711bf945b863cb89d45a377f61a139b298ca6d7
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 28e6ec6936040c6bb84a49e354ae1ee5e9e9de44
+ms.sourcegitcommit: 460c722d63e7e604ef0a57ec18fa7900fa6a4157
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748402"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39655836"
 ---
 # <a name="view-user-accounts-with-office-365-powershell"></a>Afficher des comptes d’utilisateur avec Office 365 PowerShell
 
@@ -134,6 +134,10 @@ Pour afficher la liste complète des comptes d’utilisateurs, exécutez la comm
 ```powershell
 Get-MsolUser
 ```
+
+>[!Note]
+>PowerShell Core ne prend pas en charge le module Microsoft Azure Active Directory pour Windows PowerShell et les applets de commande incluant **Msol** dans leur nom. Pour continuer à utiliser ces applets de commande, vous devez les exécuter à partir de Windows PowerShell.
+>
 
 Les informations affichées devraient être semblables à ce qui suit :
   

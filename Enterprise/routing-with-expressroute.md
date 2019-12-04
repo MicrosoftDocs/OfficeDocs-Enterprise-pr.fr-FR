@@ -3,7 +3,7 @@ title: Routage avec ExpressRoute pour Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 12/14/2017
+ms.date: 12/3/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,14 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: Pour bien comprendre le trafic de routage vers Office 365 à l’aide d’Azure ExpressRoute, vous avez besoin d’une prise ferme des exigences de routage ExpressRoute de base et des circuits ExpressRoute et des domaines de routage. Ces éléments présentent les bases de l’utilisation de ExpressRoute par les clients Office 365.
-ms.openlocfilehash: 6388180613e8abc3e83cfa0c40e84690cfae4543
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 2b3e3af68a538910d03586911674ec731a0a1960
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031579"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813894"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Routage avec ExpressRoute pour Office 365
+
+*Cet article est valable pour Office 365 Entreprise et Microsoft 365 Entreprise*.
 
 Pour bien comprendre le trafic de routage vers Office 365 à l’aide d’Azure ExpressRoute, vous avez besoin d’une prise ferme des [exigences de routage ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-routing/) de base et des [circuits ExpressRoute et des domaines de routage](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/). Ces éléments présentent les bases de l’utilisation de ExpressRoute par les clients Office 365.
   
@@ -73,15 +75,14 @@ Pour que Microsoft redirige vers votre réseau les flux de trafic bidirectionnel
 
 2) Utilisez des pools IP NAT distincts par circuit ExpressRoute et séparez-les de vos circuits Internet.
 
-3) N’oubliez pas que tout itinéraire annoncé à Microsoft attirera le trafic réseau à partir de n’importe quel serveur du réseau de Microsoft, pas seulement ceux pour lesquels des itinéraires sont annoncés sur votre réseau via ExpressRoute. Publiez uniquement les itinéraires vers les serveurs où les scénarios de routage sont définis et bien compris par votre équipe. Publiez des préfixes d’adresse IP distincts sur chacun des différents circuits ExpressRoute de votre réseau. 
+3) N’oubliez pas que tout itinéraire annoncé à Microsoft attirera le trafic réseau à partir de n’importe quel serveur du réseau de Microsoft, pas seulement ceux pour lesquels des itinéraires sont annoncés sur votre réseau via ExpressRoute. Publiez uniquement les itinéraires vers les serveurs où les scénarios de routage sont définis et bien compris par votre équipe. Publiez des préfixes d’adresse IP distincts sur chacun des différents circuits ExpressRoute de votre réseau.
   
 ## <a name="deciding-which-applications-and-features-route-over-expressroute"></a>Choix de l’itinéraire des applications et des fonctionnalités sur ExpressRoute
 
 Lorsque vous configurez une relation d’homologation à l’aide du domaine de routage d’homologation Microsoft et que vous êtes approuvé pour l’accès approprié, vous pouvez voir tous les services PaaS et SaaS disponibles sur ExpressRoute. Les services Office 365 conçus pour ExpressRoute peuvent être gérés avec des [communautés BGP](https://aka.ms/bgpexpressroute365) ou des [filtres d’itinéraires](https://docs.microsoft.com/azure/expressroute/how-to-routefilter-portal).
   
 D’autres applications, telles que la vidéo Office 365, est une application Office 365 ; Toutefois, la vidéo Office 365 est composée de trois composants différents : le portail, le service de diffusion en continu et le réseau de distribution de contenu. Le portail réside dans SharePoint Online, le service de diffusion en continu dans Azure Media Services et le réseau de distribution de contenu dans le CDN Azure. Le tableau suivant présente ces composants.
-  
-| |
+
 |**Composant**|**Application sous-jacente**|**Inclus dans la communauté BGP SharePoint Online ?**|**Utiliser**|
 |:-----|:-----|:-----|:-----|
 |Portail vidéo Office 365  <br/> |SharePoint Online  <br/> |Oui  <br/> |Configuration, chargement  <br/> |
@@ -111,7 +112,7 @@ Ce tableau affiche les domaines génériques publiés sur les circuits Internet 
 
 |**Domaine générique annoncé sur les circuits Internet uniquement**|**Sous-nom de domaine complet publié sur ExpressRoute et sur les circuits Internet**|
 |:-----|:-----|
-|\*. office.com  <br/> |\*. outlook.office.com  <br/> home.office.com  <br/> outlook.office.com  <br/> portal.office.com  <br/> www.office.com  <br/> |
+|\*. office.com  <br/> |\*. outlook.office.com  <br/> home.office.com  <br/> outlook.office.com  <br/> portal.office.com  <br/> <div style="display: inline">www.office.com</div>  <br/> |
 |\*. office.net  <br/> |agent.office.net  <br/> |
 |\*. office365.com  <br/> |outlook.office365.com  <br/> smtp.office365.com  <br/> |
 |\*. outlook.com  <br/> |\*. protection.outlook.com  <br/> \*. mail.protection.outlook.com  <br/> découverte automatique-\<locataire\>. Outlook.com  <br/> |
@@ -228,7 +229,7 @@ Le routage sélectif avec ExpressRoute peut être nécessaire pour diverses rais
 
 Voici un lien que vous pouvez utiliser pour revenir : [https://aka.ms/erorouting](https://aka.ms/erorouting)
   
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Évaluation de la connectivité réseau Office 365](assessing-network-connectivity.md)
   

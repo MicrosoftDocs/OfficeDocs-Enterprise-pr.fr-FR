@@ -24,14 +24,16 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Décrit comment préparer la mise en service des utilisateurs vers Office 365 à l’aide de la synchronisation d’annuaires et des avantages à long terme de cette méthode.
-ms.openlocfilehash: adae292f4dc8ef0402c3bd51391d020af0c28649
-ms.sourcegitcommit: a73518764b97948219e378d7014ada5654146be4
+ms.openlocfilehash: ab2908fac1dfb19c72d3321d6d2087bbf24fe6df
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39250510"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814182"
 ---
 # <a name="prepare-for-directory-synchronization-to-office-365"></a>Préparer la synchronisation d’annuaires vers Office 365
+
+*Cet article est valable pour Office 365 Entreprise et Microsoft 365 Entreprise*.
 
 Les avantages de la synchronisation hybride des identités et des annuaires de votre organisation sont les suivants :
   
@@ -99,7 +101,7 @@ Les attributs que vous devez préparer sont répertoriés ici :
   - Si l’attribut existe dans l’objet utilisateur, il sera synchronisé avec Office 365, mais Office 365 ne l’exige pas ou ne l’utilise pas.
   - Nombre maximal de caractères : 64
     
-- **mail**
+- **e-mails**
     
   - La valeur de l’attribut doit être unique dans l’annuaire.
     

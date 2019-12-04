@@ -18,21 +18,22 @@ search.appverid:
 - MOE150
 ms.assetid: f4bd2439-3e41-4169-99f6-3fabdfa326ac
 description: Comment télécharger et exécuter l’outil IdFix Office 365 pour nettoyer vos services de domaine Active Directory (AD DS) avant de le synchroniser avec Office 365.
-ms.openlocfilehash: 4a402cf245ebd20fbc5846908d521469ebfb90c1
-ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
+ms.openlocfilehash: 03f26f877786057a4ebca2bad0ae85369fb712ac
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34490750"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813532"
 ---
 # <a name="download-and-run-the-office-365-idfix-tool"></a>Télécharger et exécuter l’outil IdFix Office 365
 
+*Cet article est valable pour Office 365 Entreprise et Microsoft 365 Entreprise*.
 
 IdFix identifie les erreurs telles que les doublons et les problèmes de mise en forme dans votre domaine des services de domaine Active Directory (AD DS) avant la synchronisation avec Office 365. 
   
 Pour terminer cette tâche, vous devez être familiarisé avec les objets utilisateur, groupe et contact dans AD DS.
   
-Si vous ne pouvez pas effectuer cette tâche, il existe deux autres opérations que vous pouvez effectuer. Ces méthodes peuvent être plus faciles, mais elles peuvent également prendre plus de temps ou avoir d’autres inconvénients. Ces limites sont :
+Si vous ne pouvez pas effectuer cette tâche, il existe deux autres opérations que vous pouvez effectuer. Ces méthodes peuvent être plus faciles, mais elles peuvent également prendre plus de temps ou avoir d’autres inconvénients. Ce sont :
   
 - **Exécuter la synchronisation d’annuaires sans exécuter IdFix** 
 
@@ -48,7 +49,7 @@ Le moyen le plus simple d’obtenir et d’exécuter IdFix est de le télécharg
   
 ### <a name="idfix-hardware-requirements"></a>Configuration matérielle requise pour IdFix
 
-L’ordinateur sur lequel vous téléchargez IdFix doit satisfaire à la configuration matérielle minimale requise suivante:
+L’ordinateur sur lequel vous téléchargez IdFix doit satisfaire à la configuration matérielle minimale requise suivante :
   
 - 4 Go de RAM
 - 2 Go d’espace disque
@@ -111,7 +112,7 @@ Une fois que vous avez téléchargé et extrait IdFix, exécutez-le pour recherc
     
     Il n’est pas nécessaire de cliquer sur **appliquer** après chaque mise à jour. Au lieu de cela, vous pouvez corriger plusieurs erreurs avant de cliquer sur **appliquer** et IdFix les modifiera en même temps. Vous pouvez trier les erreurs par type d’erreur en cliquant sur **erreur** en haut de la colonne qui répertorie les types d’erreur. 
     
-    Une stratégie consiste à corriger toutes les erreurs du même type; par exemple, corrigez tous les doublons en premier, puis appliquez-les. Ensuite, corrigez les erreurs de format de caractère, et ainsi de suite. Chaque fois que vous appliquez les modifications, l’outil IdFix crée un fichier journal distinct que vous pouvez utiliser pour annuler vos modifications en cas d’erreur. Le [Journal des transactions](idfix-transaction-log.md) est stocké dans le dossier où vous avez extrait IdFix, qui est _C:\Users\<votre nom d’utilisateur> \documents\idfix_ par défaut. 
+    Une stratégie consiste à corriger toutes les erreurs du même type ; par exemple, corrigez tous les doublons en premier, puis appliquez-les. Ensuite, corrigez les erreurs de format de caractère, et ainsi de suite. Chaque fois que vous appliquez les modifications, l’outil IdFix crée un fichier journal distinct que vous pouvez utiliser pour annuler vos modifications en cas d’erreur. Le [Journal des transactions](idfix-transaction-log.md) est stocké dans le dossier où vous avez extrait IdFix, qui est _C:\Users\<votre nom d’utilisateur> \documents\idfix_ par défaut. 
     
     ![Correction des erreurs dans IdFix.](media/5f051070-652c-4be7-98bf-312295e32371.png)
   

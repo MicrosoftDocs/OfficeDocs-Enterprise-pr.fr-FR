@@ -15,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
 description: ExpressRoute pour Office 365 offre un autre chemin de routage pour atteindre de nombreux services Office 365 sans avoir besoin de tout le trafic vers Internet. Bien que la connexion Internet à Office 365 soit toujours nécessaire, les itinéraires spécifiques publiés par Microsoft par le biais de BGP sur votre réseau rendent le circuit direct ExpressRoute préféré, sauf si d’autres configurations sont présentes dans votre réseau. Les trois domaines courants que vous pouvez configurer pour gérer ce routage incluent le filtrage des préfixes, la sécurité et la conformité.
-ms.openlocfilehash: 163b94bed1bf27b30a3ac8d3079d6fe70d7a1af0
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 589d8e60d2826170b7eddb84406d1d3d0effbb43
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38027548"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814242"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>Gestion d’ExpressRoute pour la connectivité d’Office 365
 
@@ -43,7 +43,6 @@ Il existe plusieurs raisons d’éviter l’utilisation des [URL et des plages d
 
 - Les URL et les plages d’adresses IP Office 365 ne couvrent pas les autres services Microsoft susceptibles d’être inclus dans le cadre de vos connexions ExpressRoute.
 
-| |
 |**Option**|**Complexité**|**Modifier le contrôle**|
 |:-----|:-----|:-----|
 |Accepter tous les itinéraires Microsoft  <br/> |**Faible :** Le client s’appuie sur des contrôles Microsoft pour s’assurer que tous les itinéraires sont correctement détenus.  <br/> |Aucun  <br/> |
@@ -102,7 +101,7 @@ Nous ne faisons pas confiance au chemin de routage que vous utilisez pour nos co
   
 Voici un lien que vous pouvez utiliser pour revenir : [https://aka.ms/manageexpressroute365](https://aka.ms/manageexpressroute365)
   
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Réseaux de distribution de contenu](content-delivery-networks.md)
   

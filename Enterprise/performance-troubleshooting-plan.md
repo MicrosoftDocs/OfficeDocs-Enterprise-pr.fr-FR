@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 description: Avez-vous besoin de connaître les étapes à suivre pour identifier et résoudre les problèmes de retard, de blocage et de ralentissement des performances entre SharePoint Online, OneDrive entreprise, Exchange Online ou Skype entreprise Online, et votre ordinateur client ? Avant d’appeler la prise en charge, cet article peut vous aider à résoudre les problèmes de performances d’Office 365 et même à résoudre certains problèmes les plus courants.
-ms.openlocfilehash: e0117cebc80acbd2b29ce319002dbd3dccafb764
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 1740e73c298578b4a13e254081ae62b795aed0ab
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031129"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814622"
 ---
 # <a name="performance-troubleshooting-plan-for-office-365"></a>Plan de résolution des problèmes de performances pour Office 365
 
@@ -250,7 +250,7 @@ La latence est une mesure qui peut modifier un lot en fonction de nombreuses var
 
 Il existe des calculatrices de bande passante pour Office 365 disponible à partir de cette page [planification et optimisation des performances pour office 365](network-planning-and-performance.md) .  
 
-Vous avez besoin de mesurer la vitesse de votre connexion ou la bande passante de votre connexion ISP ? Essayez ce site (ou des sites similaires) : [site officiel speedtest](https://www.speedtest.net/)et [Pingtest](https://www.pingtest.net/).
+Vous avez besoin de mesurer la vitesse de votre connexion ou la bande passante de votre connexion ISP ? Essayez ce site (ou des sites similaires) : [site officiel speedtest](https://www.speedtest.net/), ou interrogez votre moteur de recherche favori pour le test de la **Vitesse**de l’expression.
 
 #### <a name="tools"></a>Outils
 
@@ -494,7 +494,7 @@ Ouvrez l’invite de commandes sur l’ordinateur client (via \> Start \> Run cm
 
 Nous n’aborderons pas les outils utilisés dans la résolution des problèmes spécifiques aux applications dans cet article propre au réseau. Toutefois, vous trouverez les ressources que vous *pouvez* utiliser [sur cette page](https://support.office.com/article/Network-planning-and-performance-tuning-for-Office-365-e5f1228c-da3c-4654-bf16-d163daee8848).
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Gestion des points de terminaison Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   

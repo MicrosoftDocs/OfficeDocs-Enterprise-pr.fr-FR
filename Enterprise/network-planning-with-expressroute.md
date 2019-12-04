@@ -16,14 +16,16 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: ExpressRoute pour Office 365 fournit la connectivité de couche 3 entre votre réseau et les centres de donnes de Microsoft. Les circuits utilisent des publicités d’itinéraires BGP (Border Gateway Protocol) de serveurs frontaux d’Office 365. Du point de vue de vos appareils sur site, lorsqu’ils doivent sélectionner le chemin d’accès TCP/IP correct vers Office 365, Azure ExpressRoute est considéré comme une alternative à Internet.
-ms.openlocfilehash: eb03ffbcb2ce61590c230e5bdfabb29df0b69c95
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 8e8c1e1790e38b4e0e858a4a72266de9fcdc8157
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032119"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814632"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Planification du réseau avec ExpressRoute pour Office 365
+
+*Cet article est valable pour Office 365 Entreprise et Microsoft 365 Entreprise*.
 
 ExpressRoute pour Office 365 fournit la connectivité de couche 3 entre votre réseau et les centres de donnes de Microsoft. Les circuits utilisent des publicités d’itinéraires BGP (Border Gateway Protocol) de serveurs frontaux d’Office 365. Du point de vue de vos appareils sur site, lorsqu’ils doivent sélectionner le chemin d’accès TCP/IP correct vers Office 365, Azure ExpressRoute est considéré comme une alternative à Internet.
   
@@ -34,7 +36,7 @@ Le tableau suivant présente quelques différences entre les connexions Internet
 |**Différences de planification réseau**|**Connexion au réseau Internet**|**Connexion réseau ExpressRoute**|
 |:-----|:-----|:-----|
 | Accès aux services Internet requis, y compris ;  <br/>  Résolution de noms DNS  <br/>  Vérification de la révocation de certificats  <br/>  Réseaux de distribution de contenu  <br/> |Oui  <br/> |Les demandes d’infrastructure DNS et/ou CDN appartenant à Microsoft peuvent utiliser le réseau ExpressRoute.  <br/> |
-| Accès aux services Office 365, y compris ;  <br/>  Exchange Online  <br/>  SharePoint Online  <br/>  Skype Entreprise Online  <br/>  Office dans un navigateur  <br/>  Portail et authentification Office 365  <br/> |Oui, toutes les applications et fonctionnalités  <br/> |Oui, [applications et fonctionnalités spécifiques](https://aka.ms/o365endpoints) <br/> |
+| Accès aux services Office 365, y compris ;  <br/>  Exchange Online  <br/>  SharePoint Online  <br/>  Skype Entreprise Online  <br/>  Office dans un navigateur  <br/>  Portail et authentification Office 365  <br/> |Oui, toutes les applications et fonctionnalités  <br/> |Oui, [applications et fonctionnalités spécifiques](https://aka.ms/o365endpoints) <br/> |
 |Sécurité locale sur le périmètre.  <br/> |Oui  <br/> |Oui  <br/> |
 |Planification de la haute disponibilité.  <br/> |Basculement vers une autre connexion réseau Internet  <br/> |Basculement vers une autre connexion ExpressRoute  <br/> |
 |Connexion directe avec un profil réseau prévisible.  <br/> |Non  <br/> |Oui  <br/> |
@@ -187,7 +189,7 @@ Collaborez avec votre fournisseur ou vos fournisseurs pour sélectionner les mei
   
 Voici un lien que vous pouvez utiliser pour revenir : [https://aka.ms/planningexpressroute365](https://aka.ms/planningexpressroute365)
   
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 <a name="BKMK_high-availability"> </a>
 
 [Évaluation de la connectivité réseau Office 365](assessing-network-connectivity.md)

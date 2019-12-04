@@ -3,7 +3,7 @@ title: Protéger vos comptes d’administrateur général Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 5/16/2019
+ms.date: 12/03/2019
 audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -17,17 +17,17 @@ search.appverid:
 - BCS160
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Protégez l’accès administrateur général à votre abonnement Office 365.
-ms.openlocfilehash: a75cab61c5b59ebd1b085829cfa20365f20443c9
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: a428f3d70e87744c33c5fb5187dc869f3b2029e1
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031609"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814602"
 ---
 # <a name="protect-your-office-365-global-administrator-accounts"></a>Protéger vos comptes d’administrateur général Office 365
 
- **Résumé :** Protégez votre abonnement Office 365 des attaques en fonction de la compromission d’un compte d’administrateur général. 
-  
+*Cet article est valable pour Office 365 Entreprise et Microsoft 365 Entreprise*.
+
 Les violations de sécurité d’un abonnement Office 365, y compris la collecte d’informations et les attaques par hameçonnage, sont généralement réalisées en compromettant les informations d’identification d’un compte d’administrateur général Office 365. La sécurité dans le Cloud est un partenariat entre vous et Microsoft :
   
 - Les services de Cloud Computing Microsoft sont basés sur une base de confiance et de sécurité. Microsoft fournit des contrôles et des fonctionnalités de sécurité pour vous aider à protéger vos données et applications.
@@ -67,7 +67,7 @@ Il existe relativement peu de tâches administratives, telles que l’affectatio
     
   - Supprimez le rôle d’administrateur global.
     
-  - Attribuer des rôles d’administrateur au compte qui sont appropriés à la fonction et à la responsabilité de ce dernier. Pour plus d’informations sur les différents rôles d’administrateur dans Office 365, reportez-vous à la rubrique [à propos des rôles d’administrateur office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
+  - Attribuer des rôles d’administrateur au compte qui sont appropriés à la fonction et à la responsabilité de ce dernier. Pour plus d’informations sur les différents rôles d’administrateur dans Office 365, voir [à propos des rôles d’administrateur](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
     
 8. Déconnectez-vous d’Office 365.
     
@@ -100,13 +100,13 @@ L’authentification multifacteur (MFA) nécessite des informations supplémenta
     
 Si vous êtes une petite entreprise qui utilise des comptes d’utilisateur stockés uniquement dans le Cloud (le modèle d’identité en nuage uniquement), suivez ces étapes pour configurer l’authentification multifacteur à l’aide d’un appel téléphonique ou d’un code de vérification de message texte envoyé à un téléphone intelligent :
   
-1. [Activer l’authentification multifacteur](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
+1. [Configurez MFA](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
     
 2. Configurez la [vérification en deux étapes pour Office 365](https://support.office.com/article/Set-up-2-step-verification-for-Office-365-ace1d096-61e5-449b-a875-58eb3d74de14) afin de configurer chaque compte d’administrateur général dédié pour les appels téléphoniques ou les messages texte comme méthode de vérification. 
     
 Si vous êtes une organisation plus importante qui utilise un modèle d’identité hybride Office 365, vous disposez de davantage d’options de vérification. Si l’infrastructure de sécurité est déjà en place pour une méthode d’authentification secondaire plus puissante, procédez comme suit :
   
-1. [Activer l’authentification multifacteur](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
+1. [Configurez MFA](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
     
 2. Configurez la [vérification en deux étapes pour Office 365](https://support.office.com/article/Set-up-2-step-verification-for-Office-365-ace1d096-61e5-449b-a875-58eb3d74de14) afin de configurer chaque compte d’administrateur général dédié pour la méthode de vérification appropriée. 
     
@@ -114,8 +114,12 @@ Si l’infrastructure de sécurité pour la méthode de vérification renforcée
   
 Pour plus d’informations, reportez-vous à [Planifier l’authentification multifacteur pour les déploiements Office 365](https://docs.microsoft.com/office365/admin/security-and-compliance/multi-factor-authentication-plan).
   
-Pour vous connecter aux services Office 365 avec MFA et PowerShell, consultez [cet article](https://blogs.technet.microsoft.com/solutions_advisory_board/2017/04/27/connect-to-office-365-services-with-multifactor-authentication-mfa-and-powershell/).
+Pour vous connecter aux services Office 365 avec MFA et PowerShell, consultez les articles suivants :
 
+- [Office 365 PowerShell pour les comptes d’utilisateur, les groupes et les licences](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)
+- [Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-by-using-mfa)
+- [SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online#to-connect-with-multifactor-authentication-mfa)
+- [Skype Entreprise Online](https://docs.microsoft.com/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell#connect-using-a-skype-for-business-online-administrator-account-with-multifactor-authentication)
 
 ## <a name="additional-protections-for-enterprise-organizations"></a>Protections supplémentaires pour les organisations d’entreprise
 
@@ -135,14 +139,14 @@ Au lieu que vos comptes d’administrateur général sont un administrateur perm
   
 L’utilisation de PIM et de ce processus réduit considérablement le temps que vos comptes d’administrateur général sont vulnérables aux attaques et à l’utilisation par des utilisateurs malveillants.
   
-Pour plus d’informations, consultez la rubrique [configure Azure ad Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure).
+Pour plus d’informations, consultez la rubrique [Azure ad Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure).
   
 > [!NOTE]
-> Le GIP est disponible avec Azure AD Premium P2, inclus dans Enterprise Mobility + Security (EMS) E5, ou vous pouvez acheter des licences individuelles pour vos comptes d’administrateur général. 
+> Le GIP est disponible avec Azure AD Premium P2, inclus dans Microsoft 365 entreprise E5 ou Enterprise Mobility + Security (EMS) E5, ou vous pouvez acheter des licences individuelles pour vos comptes d’administrateur général. 
   
 ### <a name="security-information-and-event-management-siem-software-for-office-365-logging"></a>Logiciel de gestion des informations et des événements de sécurité (SIEM) pour la journalisation Office 365
 
-Les logiciels SIEM exécutés sur un serveur effectuent une analyse en temps réel des alertes de sécurité et des événements créés par les applications et le matériel réseau. Pour permettre à votre serveur SIEM d’inclure les alertes de sécurité Office 365 et les événements dans ses fonctions d’analyse et de création de rapports, intégrez Azure AD dans votre SEIM. Reportez-vous [à la rubrique intégration des journaux Azure ressources dans vos systèmes Siem](https://docs.microsoft.com/azure/security/security-azure-log-integration-overview).
+Les logiciels SIEM exécutés sur un serveur effectuent une analyse en temps réel des alertes de sécurité et des événements créés par les applications et le matériel réseau. Pour permettre à votre serveur SIEM d’inclure les alertes de sécurité Office 365 et les événements dans ses fonctions d’analyse et de création de rapports, intégrez Azure AD dans votre SEIM. Voir [Introduction to Azure log Integration](https://docs.microsoft.com/azure/security/security-azure-log-integration-overview).
 
 ## <a name="next-step"></a>Étape suivante
 

@@ -3,7 +3,7 @@ title: Différer le chargement des images et des éléments JavaScript dans Shar
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 12/29/2016
+ms.date: 12/3/2019
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
 description: Cet article explique comment réduire le temps de chargement des pages SharePoint Online en utilisant JavaScript pour différer le chargement des images et en attendant de charger le code JavaScript non essentiel jusqu’à ce que la page se charge.
-ms.openlocfilehash: a015c8ca26c402733eba3b26e641524f38acca21
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: bf68dd29d1c92d37e8dfb5b99f043af160f96d1e
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077667"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813472"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>Différer le chargement des images et des éléments JavaScript dans SharePoint Online
 
@@ -32,7 +32,7 @@ Les images peuvent avoir une incidence négative sur la vitesse de chargement de
 
 Vous pouvez utiliser JavaScript pour empêcher un navigateur Web de récupérer des images. Cela accélère le rendu de document global. Pour ce faire, supprimez la valeur de l’attribut SRC de \<la\> balise IMG et remplacez-la par le chemin d’accès à un fichier dans un attribut Data tel que : Data-SRC. Par exemple :
   
-```txt
+```html
 <img src="" data-src="/sites/NavigationBySearch/_catalogs/masterpage/media/microsoft-white-8.jpg" />
 ```
 
@@ -40,9 +40,9 @@ Vous pouvez utiliser JavaScript pour empêcher un navigateur Web de récupérer 
   
 Pour tout faire, vous devez utiliser JavaScript.
   
-Dans un fichier texte, définissez la fonction **isElementInViewport ()** pour vérifier si un élément est dans la partie du navigateur visible par l’utilisateur. 
+Dans un fichier texte, définissez la fonction **isElementInViewport ()** pour vérifier si un élément est dans la partie du navigateur visible par l’utilisateur.
   
-```txt
+```javascript
 function isElementInViewport(el) {
   if (!el)
     return false;
@@ -51,14 +51,14 @@ function isElementInViewport(el) {
     rect.top >= 0 &amp;&amp;
     rect.left >= 0 &amp;&amp;
     rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &amp;&amp;
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth) 
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
 }
 ```
 
-Ensuite, utilisez **isElementInViewport ()** dans la fonction **loadItemsInView ()** . La fonction **loadItemsInView ()** charge toutes les images ayant une valeur pour l’attribut Data-SRC si elles sont dans la partie du navigateur visible par l’utilisateur. Ajoutez la fonction suivante au fichier texte : 
+Ensuite, utilisez **isElementInViewport ()** dans la fonction **loadItemsInView ()** . La fonction **loadItemsInView ()** charge toutes les images ayant une valeur pour l’attribut Data-SRC si elles sont dans la partie du navigateur visible par l’utilisateur. Ajoutez la fonction suivante au fichier texte :
   
-```
+```javascript
 function loadItemsInView() {
   //Select elements by the row id.
   $("#row [data-src]").each(function () {
@@ -72,9 +72,9 @@ function loadItemsInView() {
 }
 ```
 
-Enfin, appelez **loadItemsInView ()** à partir de **Window. OnScroll ()** comme indiqué dans l’exemple suivant. Cela garantit que toutes les images qui sont dans la fenêtre d’affichage sont chargées lorsque l’utilisateur en a besoin, mais pas avant. Ajoutez les éléments suivants au fichier texte : 
+Enfin, appelez **loadItemsInView ()** à partir de **Window. OnScroll ()** comme indiqué dans l’exemple suivant. Cela garantit que toutes les images qui sont dans la fenêtre d’affichage sont chargées lorsque l’utilisateur en a besoin, mais pas avant. Ajoutez les éléments suivants au fichier texte :
   
-```
+```javascript
 //Example of calling loadItemsInView() from within window.onscroll()
 $(window).on("scroll", function () {
     loadItemsInView();
@@ -84,7 +84,7 @@ $(window).on("scroll", function () {
 
 Pour SharePoint Online, vous devez attacher la fonction suivante à l’événement scroll sur la balise div \<\> #s4-Workspace. Cela est dû au fait que les événements de fenêtre sont remplacés afin de s’assurer que le ruban reste attaché au haut de la page.
   
-```
+```javascript
 //Keep the ribbon at the top of the page
 $('#s4-workspace').on("scroll", function () {
     loadItemsInView();
@@ -96,10 +96,10 @@ Enregistrez le fichier texte sous la forme d’un fichier JavaScript avec l’ex
 Une fois que vous avez terminé d’écrire delayLoadImages. js, vous pouvez ajouter le contenu du fichier à une page maître dans SharePoint Online. Pour ce faire, vous ajoutez un lien de script à l’en-tête de la page maître. Une fois qu’il se trouve dans une page maître, le code JavaScript est appliqué à toutes les pages de votre site SharePoint Online qui utilisent cette mise en page de page maître. Par ailleurs, si vous avez l’intention de l’utiliser sur une seule page de votre site, utilisez le composant WebPart éditeur de script pour incorporer le code JavaScript dans la page. Pour plus d’informations, consultez les rubriques suivantes :
   
 - [Comment appliquer une page maître à un site dans SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525627)
-    
+
 - [Procédure : Créer une mise en page dans SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525628)
-    
- **Exemple : référencement du fichier JavaScript delayLoadImages. js à partir d’une page maître dans SharePoint Online**
+
+### <a name="example-referencing-the-javascript-delayloadimagesjs-file-from-a-master-page-in-sharepoint-online"></a>Exemple : référencement du fichier JavaScript delayLoadImages. js à partir d’une page maître dans SharePoint Online
   
 Pour que cela fonctionne, vous devez également référencer jQuery dans la page maître. Dans l’exemple suivant, vous pouvez voir dans le chargement de la page initiale qu’il n’y a qu’une seule image chargée, mais il y a plusieurs autres éléments sur la page.
   
@@ -113,7 +113,7 @@ Le retardement du chargement d’image à l’aide de JavaScript peut être une 
   
 ## <a name="github-code-sample-injecting-javascript-to-improve-performance"></a>Exemple de code GitHub : injection de code JavaScript pour améliorer les performances
 
-Ne manquez pas l’article et l’exemple de code sur l' [injection JavaScript](https://go.microsoft.com/fwlink/p/?LinkId=524759) fournis sur GitHub. 
+Ne manquez pas l’article et l’exemple de code sur l' [injection JavaScript](https://go.microsoft.com/fwlink/p/?LinkId=524759) fournis sur GitHub.
   
 ## <a name="see-also"></a>Voir aussi
 
@@ -122,4 +122,3 @@ Ne manquez pas l’article et l’exemple de code sur l' [injection JavaScript](
 [Comment appliquer une page maître à un site dans SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525627)
   
 [Procédure : Créer une mise en page dans SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525628)
-

@@ -24,12 +24,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Décrit comment préparer la mise en service des utilisateurs vers Office 365 à l’aide de la synchronisation d’annuaires et des avantages à long terme de cette méthode.
-ms.openlocfilehash: ab2908fac1dfb19c72d3321d6d2087bbf24fe6df
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 4b602be99239d1e66b149929bd73142252f6cba6
+ms.sourcegitcommit: 19e306dcc32f32387202f799d5f7ef82bae926b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/04/2019
-ms.locfileid: "39814182"
+ms.locfileid: "39825186"
 ---
 # <a name="prepare-for-directory-synchronization-to-office-365"></a>Préparer la synchronisation d’annuaires vers Office 365
 
@@ -57,10 +57,7 @@ Avant de synchroniser vos services AD DS avec votre client Azure AD, vous devez 
 Dans votre AD DS, effectuez les tâches de nettoyage suivantes pour chaque compte d’utilisateur auquel est attribuée une licence Office 365 :
   
 1. Assurez-vous d’une adresse de messagerie unique et valide dans l’attribut **proxyAddresses** . 
-
-  >[!Note]
-  >Un tilde (~) dans les adresses de messagerie sera ignoré. Cela peut entraîner des erreurs de synchronisation d’annuaires faux positifs concernant les proxyAddresses en double.
-    
+  
 2. Supprimez toutes les valeurs en double dans l’attribut **proxyAddresses** . 
     
 3.  Dans la mesure du possible, vérifiez que la valeur de l’attribut **userPrincipalName** est valide et unique dans l’objet **User** de l’utilisateur. Pour une expérience de synchronisation optimale, vérifiez que l’UPN AD DS correspond à l’UPN Azure AD. Si un utilisateur n’a pas de valeur pour l’attribut **userPrincipalName** , l’objet **User** doit contenir une valeur valide et unique pour l’attribut **sAMAccountName** . Supprimez toutes les valeurs en double dans l’attribut **userPrincipalName** . 
@@ -101,7 +98,7 @@ Les attributs que vous devez préparer sont répertoriés ici :
   - Si l’attribut existe dans l’objet utilisateur, il sera synchronisé avec Office 365, mais Office 365 ne l’exige pas ou ne l’utilise pas.
   - Nombre maximal de caractères : 64
     
-- **e-mails**
+- **messagerie**
     
   - La valeur de l’attribut doit être unique dans l’annuaire.
     

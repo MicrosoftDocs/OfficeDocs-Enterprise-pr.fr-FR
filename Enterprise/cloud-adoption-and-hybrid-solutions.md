@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: Ent_O365
 ms.date: 2/14/2018
-ms.openlocfilehash: 60f0636228942273a7e5ae45f174155abf64e491
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 64f38ba0f0bbc4eba03e2b59f041bf19de620027
+ms.sourcegitcommit: d4c1ed4e4970683851d63ca980dcc5d1dd73fa78
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029178"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39857982"
 ---
 <h1>Solutions cloud pour les entreprises</h1>
 <p>Résolvez les problèmes d’entreprise à l’aide de Microsoft Cloud. Recherchez des informations sur les dernières solutions cloud de sécurité et hybrides, l’adoption du cloud et bien plus encore.</p>
@@ -123,9 +123,5 @@ ms.locfileid: "38029178"
 
 ---
 
-<h2>Contactez-nous</h2>
-<ul>
-    <li><a href="mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20">De quel contenu d’adoption cloud avez-vous besoin ?</a><br>Nous sommes en train de créer du contenu pour les solutions qui s’étendent sur plusieurs produits et services Microsoft. Donnez-nous votre avis sur nos solutions entre serveurs ou demandez des solutions spécifiques en envoyant un courrier électronique à MODAcontent@microsoft.com.</li><br>
-    <li><a href="https://aka.ms/caab">Participer à la discussion sur l’adoption cloud</a><br>Si vous êtes passionné par les solutions basées sur le cloud, rejoignez le conseil consultatif de l’adoption cloud (CAAB) pour interagir avec une communauté vaste et dynamique de développeurs de contenu Microsoft, de professionnels du secteur et de clients venant du monde entier. Pour participer, ajoutez-vous en tant que membre de l’espace CAAB (Conseil consultatif de l’adoption cloud) de la communauté Microsoft Tech et envoyez-nous un message électronique à l’adresse <a href="mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!">CAAB@microsoft.com</a>. Tout le monde peut lire le contenu lié à la communauté sur le <a href="https://blogs.technet.com/b/solutions_advisory_board/">blog</a> CAAB. Toutefois, les membres CAAB reçoivent des invitations à des webinaires privés qui décrivent les nouvelles solutions et ressources relatives à l’adoption cloud.</li><br>
-    <li><a href="mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20">Obtenir l’illustration affichée ici</a><br>Si vous voulez obtenir une copie modifiable de l’illustration affichée dans cet article, nous serons ravis de vous l’envoyer. Envoyez-nous votre demande par courrier électronique, en indiquant l’URL et le titre de l’illustration à l’adresse cloudadopt@microsoft.com</li>
-</ul>
+
+

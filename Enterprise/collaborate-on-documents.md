@@ -9,12 +9,12 @@ ms.service: sharepoint-online
 ms.collection: SPO_Content
 localization_priority: Normal
 description: Découvrez comment collaborer avec des invités sur un document dans SharePoint et OneDrive.
-ms.openlocfilehash: 1f5053a332c80fbb957cfcb3e11f35aa94cfe270
-ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
+ms.openlocfilehash: 20b97ed6e232385500e74adcaa11378252167c26
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38076168"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886493"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>Collaborer avec des invités sur un document
 
@@ -51,7 +51,7 @@ Pour que les invités aient accès à un document dans SharePoint ou OneDrive, l
 
 Les paramètres au niveau de l’Organisation pour SharePoint déterminent les paramètres disponibles pour les sites SharePoint individuels. Les paramètres de site ne peuvent pas être plus permissants que les paramètres au niveau de l’organisation. Le paramètre au niveau de l’Organisation pour OneDrive détermine quel niveau de partage est disponible dans les bibliothèques OneDrive des utilisateurs.
 
-Pour SharePoint et OneDrive, si vous voulez autoriser le partage de fichiers et de dossiers avec des utilisateurs anonymes, sélectionnez **tout le monde**. Si vous souhaitez vous assurer que tous les invités doivent s’authentifier, choisissez **nouveau et invités existants**. Les liens *Tout le monde* sont la méthode la plus simple pour partager : les invités peuvent ouvrir le lien sans authentification et sont libres de le transférer vers d’autres personnes.
+Pour SharePoint et OneDrive, si vous voulez autoriser le partage de fichiers et de dossiers non authentifié, sélectionnez **tout le monde**. Si vous souhaitez vous assurer que tous les invités doivent s’authentifier, choisissez **nouveau et invités existants**. Les liens *Tout le monde* sont la méthode la plus simple pour partager : les invités peuvent ouvrir le lien sans authentification et sont libres de le transférer vers d’autres personnes.
 
 Pour SharePoint, choisissez le paramètre le plus permissif qui sera nécessaire pour tous les sites de votre organisation.
 
@@ -73,7 +73,7 @@ N’oubliez pas que ce paramètre affecte les sites SharePoint de votre organisa
 
 Choisissez le type de lien sélectionné par défaut lorsque les utilisateurs partagent des fichiers et des dossiers :
 
-- **Toute personne disposant du lien** : choisissez cette option si vous envisagez de partager un grand nombre de fichiers et de dossiers avec des utilisateurs anonymes. Si vous souhaitez autoriser les liens de *tous les utilisateurs* mais s’inquiète du partage anonyme accidentel, envisagez l’une des autres options par défaut. Ce type de lien n’est disponible que si vous avez activé le partage d’un **utilisateur** .
+- **Toute personne disposant du lien** : choisissez cette option si vous envisagez d’effectuer beaucoup de partage de fichiers et de dossiers non authentifiés. Si vous souhaitez autoriser *tout le monde* à se lier, mais que vous êtes préoccupé par le partage non authentifié accidentel, envisagez l’une des autres options par défaut. Ce type de lien n’est disponible que si vous avez activé le partage d’un **utilisateur** .
 - **Uniquement les personnes de votre organisation** : choisissez cette option si vous pensez que le partage de fichiers et de dossiers doit être associé à des personnes au sein de votre organisation.
 - **Personnes spécifiques** : envisagez cette option si vous envisagez de faire beaucoup de partage de fichiers et de dossiers avec des invités. Ce type de lien fonctionne avec les invités et les requiert pour s’authentifier.
  
@@ -105,6 +105,6 @@ Les paramètres de partage des invités sont désormais configurés, de sorte qu
 
 ## <a name="see-also"></a>Voir aussi
 
-[Meilleures pratiques relatives au partage de fichiers et de dossiers avec des utilisateurs anonymes](best-practices-anonymous-sharing.md)
+[Meilleures pratiques pour le partage de fichiers et de dossiers avec des utilisateurs non authentifiés](best-practices-anonymous-sharing.md)
 
 [Limiter l’exposition accidentelle aux fichiers lors du partage avec des invités](sharing-limit-accidental-exposure.md)

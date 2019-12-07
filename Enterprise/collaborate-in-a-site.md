@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Découvrez comment collaborer avec des invités sur un site SharePoint.
-ms.openlocfilehash: 25b0aea05c922385828e62512d3724da7324c719
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 746e592a027c05f489e9f5dfe819cfb107c6b1f5
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029158"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886483"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Collaborer avec des invités sur un site
 
@@ -67,7 +67,7 @@ Pour que les invités aient accès aux sites SharePoint, les paramètres de part
 
 Les paramètres au niveau de l’organisation déterminent les paramètres disponibles pour des sites individuels. Les paramètres de site ne peuvent pas être plus permissants que les paramètres au niveau de l’organisation.
 
-Si vous souhaitez autoriser le partage de fichiers et de dossiers avec des utilisateurs anonymes, sélectionnez **tout le monde**. Si vous souhaitez vous assurer que tous les invités doivent s’authentifier, choisissez **nouveau et invités existants**. Choisissez le paramètre le plus permissif qui sera nécessaire pour tous les sites de votre organisation.
+Si vous souhaitez autoriser le partage de fichiers et de dossiers non authentifié, sélectionnez **tout le monde**. Si vous souhaitez vous assurer que tous les invités doivent s’authentifier, choisissez **nouveau et invités existants**. Choisissez le paramètre le plus permissif qui sera nécessaire pour tous les sites de votre organisation.
 
 ![Capture d’écran des paramètres de partage SharePoint au niveau de l’organisation](media/sharepoint-organization-external-sharing-controls.png)
 
@@ -98,7 +98,7 @@ Nous allons inviter les utilisateurs ultérieurement. Ensuite, il est important 
 
 Vérifiez les paramètres de partage au niveau du site pour vous assurer qu’ils autorisent le type d’accès souhaité pour ce site. Par exemple, si vous définissez les paramètres au niveau de l’organisation sur tous les **utilisateurs**, mais que vous souhaitez que tous les invités s’authentifient pour ce site, assurez-vous que les paramètres de partage au niveau du site sont définis sur **nouveaux et invités existants**.
 
-Notez que le site ne peut pas être partagé avec des utilisateurs anonymes (paramètre**tout le monde** ), mais avec des fichiers et des dossiers individuels.
+Notez que le site ne peut pas être partagé avec des personnes non authentifiées (paramètre**tout le monde** ), mais avec des fichiers et dossiers individuels.
 
 ![Capture d’écran des paramètres de partage externe de site SharePoint](media/sharepoint-site-external-sharing-settings.png)
 
@@ -129,7 +129,7 @@ Pour inviter des invités à un site
 
 ## <a name="see-also"></a>Voir aussi
 
-[Meilleures pratiques relatives au partage de fichiers et de dossiers avec des utilisateurs anonymes](best-practices-anonymous-sharing.md)
+[Meilleures pratiques pour le partage de fichiers et de dossiers avec des utilisateurs non authentifiés](best-practices-anonymous-sharing.md)
 
 [Limiter l’exposition accidentelle aux fichiers lors du partage avec des invités](sharing-limit-accidental-exposure.md)
 

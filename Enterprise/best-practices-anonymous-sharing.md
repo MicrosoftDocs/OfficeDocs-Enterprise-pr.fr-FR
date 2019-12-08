@@ -1,5 +1,5 @@
 ---
-title: Recommandations relatives au partage anonyme
+title: Meilleures pratiques pour le partage non authentifié
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -7,26 +7,26 @@ audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Priority
-description: Découvrez les meilleures pratiques relatives au partage de fichiers et de dossiers avec des utilisateurs anonymes.
-ms.openlocfilehash: f6263fe09a677094055f79a4ff38ec9d41f48898
-ms.sourcegitcommit: c16ab90d0b9902228ce4337f1c64900592936cce
+description: Découvrez les meilleures pratiques relatives au partage de fichiers et de dossiers avec des utilisateurs non authentifiés.
+ms.openlocfilehash: bf2ef1e7013f97739c72f125ea4c81e17beb161c
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37108294"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886503"
 ---
-# <a name="best-practices-for-sharing-files-and-folders-with-anonymous-users"></a>Meilleures pratiques relatives au partage de fichiers et de dossiers avec des utilisateurs anonymes
+# <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Meilleures pratiques relatives au partage de fichiers et de dossiers avec des utilisateurs non authentifiés
 
-Le partage anonyme (liens *Tout le monde*) est pratique et utile dans différents scénarios. Les liens *Tout le monde* sont la méthode la plus simple pour partager : les invités peuvent ouvrir le lien sans authentification et sont libres de le transférer vers d’autres personnes.
+Le partage non authentifié (liens *Tout le monde*) est pratique et utile dans différents scénarios. Les liens *Tout le monde* sont la méthode la plus simple pour partager : les invités peuvent ouvrir le lien sans authentification et sont libres de le transférer vers d’autres personnes.
 
-En règle générale, l’ensemble du contenu d’une organisation ne nécessite pas un partage anonyme. Cet article décrit les options possibles pour vous aider à créer un environnement dans lequel vos utilisateurs peuvent partager des fichiers et des dossiers de façon anonyme, mais où des éléments de protection sont mis en place pour protéger le contenu de votre organisation.
+En règle générale, l’ensemble du contenu d’une organisation ne nécessite pas de partage non authentifié. Cet article décrit les options possibles pour vous aider à créer un environnement dans lequel vos utilisateurs peuvent partager des fichiers et des dossiers de manière non authentifiée, mais où des éléments de protection sont mis en place pour protéger le contenu de votre organisation.
 
 > [!NOTE]
-> Pour que le partage anonyme puisse fonctionner, vous devez l’activer pour votre organisation et pour le site ou l’équipe qui sera concerné. Pour plus d’informations sur le scénario que vous souhaitez mettre en place, voir [Collaborer avec des personnes extérieures à votre organisation](collaborating-with-people-outside-your-organization.md).
+> Pour que le partage non authentifié puisse fonctionner, vous devez l’activer pour votre organisation et pour le site ou l’équipe qui sera concerné. Pour plus d’informations sur le scénario que vous souhaitez mettre en place, voir [Collaborer avec des personnes extérieures à votre organisation](collaborating-with-people-outside-your-organization.md).
 
 ## <a name="set-an-expiration-date-for-anyone-links"></a>Définir une date d’expiration pour les liens Tout le monde
 
-Les fichiers sont souvent stockés dans des sites, des groupes et des équipes pendant une période prolongée. Il peut arriver qu’une stratégie de rétention des données nécessite la conservation des fichiers pendant plusieurs années. Si ces fichiers sont partagés de façon anonyme, cela peut entraîner un accès inattendu et des modifications aux fichiers dans le futur. Pour atténuer cette possibilité, vous pouvez configurer un délai d’expiration pour les liens *Tout le monde*.
+Les fichiers sont souvent stockés dans des sites, des groupes et des équipes pendant une période prolongée. Il peut arriver qu’une stratégie de rétention des données nécessite la conservation des fichiers pendant plusieurs années. Si ces fichiers sont partagés avec des personnes non authentifiées, cela peut entraîner un accès inattendu et des modifications aux fichiers dans le futur. Pour atténuer cette possibilité, vous pouvez configurer un délai d’expiration pour les liens *Tout le monde*.
 
 Une fois qu' un lien *Tout le monde* arrive à expiration, il ne peut plus être utilisé pour accéder au contenu.
 
@@ -43,9 +43,9 @@ Notez qu’une fois qu' un lien *Tout le monde* arrive à expiration, le fichier
 
 Par défaut, les liens *Tout le monde* d’un fichier permettent aux utilisateurs de modifier le fichier, et les liens *Tout le monde* d’un dossier permettent aux utilisateurs de modifier et d’afficher des fichiers, mais aussi de charger de nouveaux fichiers dans le dossier. Vous pouvez modifier ces autorisations pour les fichiers et les dossiers indépendamment de la lecture seule.
 
-Si vous voulez autoriser le partage anonyme, mais que vous craignez que des utilisateurs non authentifiés modifient le contenu de votre organisation, vous pouvez définir les autorisations des fichiers et des dossiers sur **Vue**.
+Si vous voulez autoriser le partage non authentifié, mais que vous craignez que des personnes non authentifiées modifient le contenu de votre organisation, vous pouvez définir les autorisations des fichiers et des dossiers sur **Vue**.
 
-Pour établir des autorisations pour les liens anonymes
+Pour établir des autorisations pour les liens Tout le monde
 1. Ouvrez le centre d’administration SharePoint Online.
 2. Dans la barre de navigation de gauche, cliquez sur **Partage**.
 3. Sous **Paramètres avancés pour les liens Tout le monde**, sélectionnez les autorisations d’accès aux fichiers et dossiers que vous souhaitez.</br>
@@ -55,9 +55,9 @@ Lorsque les liens *Tout le monde* sont paramétrés sur **Vue**, les utilisateur
 
 ## <a name="set-default-link-type-to-only-work-for-people-in-your-organization"></a>Définir le type de lien par défaut de sorte qu’il fonctionne uniquement pour les membres de votre organisation
 
-Lorsque le partage *Tout le monde* est activé pour votre organisation, le lien de partage par défaut est normalement réglé sur **Tout le monde**. Bien que cette fonctionnalité soit commode pour les utilisateurs, elle peut augmenter le risque d’un partage anonyme involontaire. Si un utilisateur oublie de modifier le type de lien lors du partage d’un document sensible, il peut créer sans le vouloir un lien de partage qui ne nécessite pas d’authentification.
+Lorsque le partage *Tout le monde* est activé pour votre organisation, le lien de partage par défaut est normalement réglé sur **Tout le monde**. Bien que cette fonctionnalité soit commode pour les utilisateurs, elle peut augmenter le risque d’un partage non authentifié involontaire. Si un utilisateur oublie de modifier le type de lien lors du partage d’un document sensible, il peut créer sans le vouloir un lien de partage qui ne nécessite pas d’authentification.
 
-Vous pouvez réduire ce risque en modifiant le paramètre de lien par défaut en un lien qui fonctionne uniquement pour les personnes internes à votre organisation. Les utilisateurs qui souhaitent partager des documents de manière anonyme doivent ensuite sélectionner cette option.
+Vous pouvez réduire ce risque en modifiant le paramètre de lien par défaut en un lien qui fonctionne uniquement pour les personnes internes à votre organisation. Les utilisateurs qui souhaitent partager des documents avec des personnes non authentifiées doivent ensuite sélectionner cette option.
 
 Pour définir le lien de partage de fichier et de dossier par défaut
 1. Dans le centre d’administration SharePoint, dans le volet de gauche, cliquez sur **Partage**.

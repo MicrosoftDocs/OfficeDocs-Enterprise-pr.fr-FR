@@ -8,16 +8,16 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Priority
 description: Découvrez les meilleures pratiques relatives au partage de fichiers et de dossiers avec des utilisateurs non authentifiés.
-ms.openlocfilehash: bf2ef1e7013f97739c72f125ea4c81e17beb161c
-ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
+ms.openlocfilehash: decdc068f238329516ae0ce3594e68a753780216
+ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "39886503"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39919136"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Meilleures pratiques relatives au partage de fichiers et de dossiers avec des utilisateurs non authentifiés
 
-Le partage non authentifié (liens *Tout le monde*) est pratique et utile dans différents scénarios. Les liens *Tout le monde* sont la méthode la plus simple pour partager : les invités peuvent ouvrir le lien sans authentification et sont libres de le transférer vers d’autres personnes.
+Le partage non authentifié (liens *Tout le monde*) est pratique et utile dans différents scénarios. Les liens *Tout le monde* sont la méthode la plus simple pour partager : les personnes peuvent ouvrir le lien sans authentification et sont libres de le transmettre à d’autres personnes.
 
 En règle générale, l’ensemble du contenu d’une organisation ne nécessite pas de partage non authentifié. Cet article décrit les options possibles pour vous aider à créer un environnement dans lequel vos utilisateurs peuvent partager des fichiers et des dossiers de manière non authentifiée, mais où des éléments de protection sont mis en place pour protéger le contenu de votre organisation.
 
@@ -51,7 +51,7 @@ Pour établir des autorisations pour les liens Tout le monde
 3. Sous **Paramètres avancés pour les liens Tout le monde**, sélectionnez les autorisations d’accès aux fichiers et dossiers que vous souhaitez.</br>
    ![Capture d’écran des paramètres d’autorisation du lien Tout le monde au niveau de l’organisation dans SharePoint](media/sharepoint-organization-anyone-link-permissions.png)
 
-Lorsque les liens *Tout le monde* sont paramétrés sur **Vue**, les utilisateurs peuvent encore partager des fichiers et des dossiers avec des invités et leur octroyer des autorisations de modification à l’aide des liens *Personnes spécifiques*. Ces liens nécessitent l’authentification des invités et vous pouvez effectuer le suivi et l’audit de l’activité des invités sur les fichiers et dossiers partagés avec ces liens.
+Lorsque les liens *Tout le monde* sont paramétrés sur **Vue**, les utilisateurs peuvent encore partager des fichiers et des dossiers avec des invités et leur octroyer des autorisations de modification à l’aide des liens *Personnes spécifiques*. Ces liens nécessitent que les personnes extérieures à votre organisation s’authentifient en tant qu’invités. Vous pouvez effectuer le suivi et l’audit de l’activité des invités sur les fichiers et dossiers partagés avec ces liens.
 
 ## <a name="set-default-link-type-to-only-work-for-people-in-your-organization"></a>Définir le type de lien par défaut de sorte qu’il fonctionne uniquement pour les membres de votre organisation
 

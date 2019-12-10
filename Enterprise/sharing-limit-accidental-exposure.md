@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Priority
 description: Découvrez comment limiter l’exposition accidentelle des informations lorsque vous partagez des fichiers avec des invités.
-ms.openlocfilehash: d1a12579bdcce03ad74dbf753ddb1a8a6368c88c
-ms.sourcegitcommit: c16ab90d0b9902228ce4337f1c64900592936cce
+ms.openlocfilehash: 3a5a99e96207e407f15abb17d9e1903c8ba52339
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37108298"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886473"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-guests"></a>Limiter l’exposition accidentelle aux fichiers lors du partage avec des invités
 
@@ -21,13 +21,13 @@ Lorsque vous partagez des fichiers et des dossiers avec des invités, plusieurs 
 
 ## <a name="use-best-practices-for-anyone-links"></a>Utiliser les pratiques recommandées pour les liens Tout le monde
 
-Si des membres de votre organisation doivent effectuer un partage anonyme, mais que vous êtes préoccupé par le fait que des invités non authentifiés modifient du contenu, lisez les [meilleures pratiques relatives au partage anonyme](best-practices-anonymous-sharing.md) pour obtenir des instructions sur l’utilisation du partage anonyme dans votre organisation.
+Si des membres de votre organisation doivent effectuer un partage non authentifié, mais que vous êtes préoccupé par le fait que des invités non authentifiés modifient du contenu, lisez les [meilleures pratiques relatives au partage anonyme](best-practices-anonymous-sharing.md) pour obtenir des instructions sur l’utilisation du partage non authentifié dans votre organisation.
 
 ## <a name="turn-off-anyone-links"></a>Désactiver les liens Tout le monde
 
 Nous vous recommandons de laisser les liens *Tout le monde* activés pour le contenu approprié parce qu’il s’agit de la manière la plus simple de partager des documents et de réduire le risque que des utilisateurs recherchent d’autres solutions en dehors du contrôle de votre service informatique. Les liens *Tout le monde* peuvent être transférés à d’autres personnes mais l’accès aux fichiers est disponible uniquement pour les personnes qui dispose du lien.
 
-Si vous voulez toujours que les invités s’authentifient lors de l’accès au contenu dans SharePoint, les groupes ou Teams, vous pouvez désactiver le partage *Tout le monde*. Cela empêche les utilisateurs de partager du contenu de manière anonyme.
+Si vous voulez toujours que les invités s’authentifient lors de l’accès au contenu dans SharePoint, les groupes ou Teams, vous pouvez désactiver le partage *Tout le monde*. Cela permet d’éviter que les utilisateurs ne partagent le même contenu.
 
 Si vous désactivez les liens *Tout le monde*, les utilisateurs peuvent tout de même partager facilement du contenu avec des invités à l’aide de liens *Personnes spécifiques*. Dans ce cas, tous les invités devront s’authentifier avant de pouvoir accéder au contenu partagé.
 

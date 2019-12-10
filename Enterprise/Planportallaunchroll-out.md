@@ -13,15 +13,15 @@ ms.collection:
 ms.custom: Adm_O365
 search.appverid: SPO160
 description: Cet article explique comment planifier le lancement de votre portail dans SharePoint Online et les étapes à suivre pour réussir le lancement de votre portail.
-ms.openlocfilehash: bba38bb188235ed38f3719cb4472ef156a4d76b3
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: c66754cdcd682cb39c0ff235a07a464613d1d3e7
+ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077567"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39919126"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>Planification de votre plan de déploiement de lancement de portail dans SharePoint Online
-Un portail est le site SharePoint par défaut pour votre société ; dans les grandes organisations, il peut y en avoir plusieurs. Vous pouvez considérer qu’il s’agit d’une page de portail à partir du moment où vous vous attendez à ce que plus de 20 % des utilisateurs au sein de votre entreprise accèdent à cette page. Le portail ne doit pas être confondu avec un site d’équipe utilisé par votre service pour collaborer et partager des documents au sein de votre équipe.
+Un portail est un site SharePoint sur votre intranet qui comporte un grand nombre de visiteurs de site qui utilisent du contenu sur le site. Dans les grandes organisations, il peut y en avoir plusieurs ; par exemple, un portail d’entreprise et un portail RH. En règle générale, les portails ont relativement peu de personnes qui créent et créent le site et son contenu. La plupart des visiteurs du portail lisent et consomment uniquement le contenu.
 
 Cet article explique comment planifier votre déploiement et déployer un plan de déploiement vers SharePoint Online. Elle fournit également des approches de suivi de la charge traditionnelle qui ne sont pas autorisées sur SharePoint Online. SharePoint Online est un service Cloud et les capacités de chargement, l’intégrité et l’équilibre global de la charge dans le service sont gérées par Microsoft.
 

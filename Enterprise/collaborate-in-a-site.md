@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Découvrez comment collaborer avec des invités sur un site SharePoint.
-ms.openlocfilehash: 746e592a027c05f489e9f5dfe819cfb107c6b1f5
-ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
+ms.openlocfilehash: 21717ce0c8e9e51eaf090a449d35a281722f9600
+ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "39886483"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39919257"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Collaborer avec des invités sur un site
 
@@ -67,7 +67,7 @@ Pour que les invités aient accès aux sites SharePoint, les paramètres de part
 
 Les paramètres au niveau de l’organisation déterminent les paramètres disponibles pour des sites individuels. Les paramètres de site ne peuvent pas être plus permissants que les paramètres au niveau de l’organisation.
 
-Si vous souhaitez autoriser le partage de fichiers et de dossiers non authentifié, sélectionnez **tout le monde**. Si vous souhaitez vous assurer que tous les invités doivent s’authentifier, choisissez **nouveau et invités existants**. Choisissez le paramètre le plus permissif qui sera nécessaire pour tous les sites de votre organisation.
+Si vous souhaitez autoriser le partage de fichiers et de dossiers non authentifié, sélectionnez **tout le monde**. Si vous souhaitez vous assurer que toutes les personnes extérieures à votre organisation doivent s’authentifier, choisissez **nouveau et invités existants**. Choisissez le paramètre le plus permissif qui sera nécessaire pour tous les sites de votre organisation.
 
 ![Capture d’écran des paramètres de partage SharePoint au niveau de l’organisation](media/sharepoint-organization-external-sharing-controls.png)
 
@@ -129,7 +129,7 @@ Pour inviter des invités à un site
 
 ## <a name="see-also"></a>Voir aussi
 
-[Meilleures pratiques pour le partage de fichiers et de dossiers avec des utilisateurs non authentifiés](best-practices-anonymous-sharing.md)
+[Meilleures pratiques relatives au partage de fichiers et de dossiers avec des utilisateurs non authentifiés](best-practices-anonymous-sharing.md)
 
 [Limiter l’exposition accidentelle aux fichiers lors du partage avec des invités](sharing-limit-accidental-exposure.md)
 

@@ -3,7 +3,7 @@ title: Pendant et après le déplacement de vos données
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/20/2019
+ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Les déplacements de données sont des opérations principales n'ayant que peu d'impact sur les utilisateurs finals. Aucune action de votre part n'est requise lorsque Microsoft déplace chaque service et les données associées pour votre client vers une nouvelle zone géographique de centres de données. Le transfert de données et la validation se déroulent en arrière-plan à l'avance, et n'ont qu'une incidence minimale sur les utilisateurs.
-ms.openlocfilehash: bfc21dccbf63dbf14f2e08d84f4312e6ed3dbcc7
-ms.sourcegitcommit: a73518764b97948219e378d7014ada5654146be4
+ms.openlocfilehash: b445397f6ce5b3c5178093ed971230e2a8640d1d
+ms.sourcegitcommit: 09b3a302c0c9a0370dd86d111c7d5e63cc39a9a0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39250500"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39959279"
 ---
 # <a name="during-and-after-your-data-move"></a>Pendant et après le déplacement de vos données
 
@@ -30,7 +30,7 @@ Les déplacements de données sont des opérations principales n'ayant que peu d
 Surveillez le centre de messages Office 365 dans l'attente de la confirmation de la fin du déplacement de chaque service Exchange Online, SharePoint Online et Skype Entreprise. Comme indiqué dans le tableau ci-dessous, le déplacement de toutes les données pour tous les clients dans une zone géographique spécifique peut prendre jusqu'à 24 mois à compter de la fin de la période d'inscription. Si vous rencontrez des problèmes avec votre client après le déplacement, contactez le [support Office 365](https://go.microsoft.com/fwlink/p/?LinkID=522459) pour obtenir de l'aide. 
   
 
-|**Clients avec une adresse de facturation en/au**|**Tous les déplacements terminés d'ici le**|
+|**Clients avec pays d’abonnement dans**|**Tous les déplacements terminés d'ici le**|
 |:-----|:-----|
 |Australie, Nouvelle-Zélande, Fidji  <br/> |31 octobre 2017  <br/> |
 |Japon  <br/> |31 octobre 2018  <br/> |
@@ -41,6 +41,8 @@ Surveillez le centre de messages Office 365 dans l'attente de la confirmation de
 |France  <br/> |15 septembre 2020  <br/> |
 |Émirats arabes unis  <br/> |1er février 2022  <br/> |
 |Afrique du Sud  <br/> |1er février 2022  <br/> |
+|Suisse, Liechtenstein  <br/> |1er juillet 2022  <br/> |
+|Allemagne  <br/> |Vision  <br/> |
    
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -116,7 +118,7 @@ Tous les utilisateurs seront déconnectés du logiciel client Skype Entreprise p
 ### <a name="skype-for-business-moves-that-involve-a-third-party-audio-conferencing-provider"></a>Déplacements Skype entreprise impliquant un fournisseur de services d’audioconférence tiers
 Les services de module complémentaire de fournisseurs de services d’audioconférence tiers pour Skype Entreprise ne sont pas disponibles pour les utilisateurs hébergés dans des centres de données propres à une nouvelle zone géographique.   Les clients existants qui utilisent un service de fournisseur de services d’audioconférence tiers ne doivent pas demander de déplacement vers un centre de données propre à une nouvelle zone géographique.   Les nouveaux clients déployés dans les centres de données propres à une nouvelle zone géographique doivent demander un déplacement vers un centre de données régional afin d’utiliser un fournisseur de services d’audioconférence tiers. 
   
-## <a name="related-topics"></a>Voir aussi 
+## <a name="related-topics"></a>Sujets associés 
  
 [Procédure de demande d’un déplacement de données](request-your-data-move.md)
     

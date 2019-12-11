@@ -3,7 +3,7 @@ title: Déplacement de données essentielles vers les nouvelles régions de cent
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/25/2019
+ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 description: "Nouveau centre de régions centres ajouter de la capacité et des ressources de calcul pour prendre en charge notre demande de client et sa croissance d’utilisation en cours. En outre, les nouvelles régions de centre de données permettent d'héberger des données dans la région pour les données client essentielles. Le terme « données client essentielles » fait référence à un sous-ensemble de données client définies dans les conditions d'utilisation de Microsoft Online Services : Exchange Onlinecontenu de la boîte aux lettres (corps de courrier électronique, entrées de calendrier et contenu de pièces jointes), SharePoint Onlinecontenu du site et fichiers stockés dans ce site, ainsi que fichiers téléchargés vers OneDrive Entreprise."
-ms.openlocfilehash: 3cccd9d5cb3f961a3621bf6f54104c2e1e3b8ece
-ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
+ms.openlocfilehash: 8dcbcd6bbbe1761c9d57c953ad176c87b5b3f221
+ms.sourcegitcommit: 77b8fd702d3a1010d3906d4024d272ad2097f54f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38756543"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962451"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Déplacement de données essentielles vers les nouvelles régions de centres de données Office 365
 
@@ -30,7 +30,7 @@ Les données client principales sont un terme qui fait référence à un sous-en
   
 Les clients existants dont les données client essentielles sont stockées dans une région de centre de données existante ne sont pas concernés par le lancement de la nouvelle région de centre de données. Aucune fonction, fonctionnalité ou certification de conformité unique n'est fournie avec la nouvelle région de centre de données. En tant que client de l'une de ces deux régions, vous bénéficierez de la même qualité de service, ainsi que des mêmes performances et contrôles de sécurité qu'auparavant. Nous proposons aux clients existants figurant dans le tableau ci-dessous une option permettant de demander une migration précoce des données client principales de leur organisation au repos sur leur nouvelle région de centre de données.
   
-|****Clients avec une adresse de facturation dans****|****Précédente région de centre de données****|****Nouvelle région de centre de données****|****Région disponible depuis****|
+|Clients avec pays d’inscription du client dans * * * *|****Précédente région de centre de données****|****Nouvelle région de centre de données****|****Région disponible depuis****|
 |:-----|:-----|:-----|:-----|
 |****Japon****| Asie/Pacifique | Japon | Décembre 2014 |
 |****Australie, Nouvelle-Zélande, Fidji****| Asie/Pacifique | Australie | Mars 2015 |
@@ -41,8 +41,15 @@ Les clients existants dont les données client essentielles sont stockées dans 
 |****France****| Europe | France | Mars 2018 |
 |Émirats Arabes Unis * * * *| Europe | Émirats arabes unis | Juin 2019 |
 |Afrique du Sud * * * *| Europe | Afrique du Sud | Juillet 2019 |
+|Suisse, Liechtenstein * * *| Europe | Suisse | Décembre 2019 |
+|Allemagne * * * *| Europe | Allemagne | Décembre 2019 |
   
 Les données client essentielles des nouveaux clients ou des clients Office 365 créés après la mise à disposition de la nouvelle région de centre de données seront automatiquement stockées au repos dans cette nouvelle région.
+
+
+>[!Note]
+>Nous avons lancé la région de centre de l’Allemagne en décembre 2019. Les nouveaux clients Office 365 disposant d’une adresse d’abonnement allemande associée à leur client auront leurs données client principales stockées sur REST en Allemagne. Nous prévoyons de proposer une migration de l’Europe vers l’Allemagne pour les clients allemands à l’avenir. Aujourd’hui, les clients Microsoft Cloud Germany/Deutschland peuvent demander une migration vers les services Office 365 dans les nouvelles régions de centre de connaissances allemand. Pour plus d’informations, reportez-vous à la rubrique [Comment choisir de migrer de Microsoft Cloud Germany (Microsoft Cloud Deutschland) vers Office 365 services dans les nouvelles régions de centre](https://aka.ms/office365germanymoveoptin) de données allemand.
+>
   
 La liste complète de l'ensemble des régions de centre de données, des centres de données et l'emplacement des données client au repos est disponible via les [cartes interactives de centre de données](https://office.com/datamaps). 
   

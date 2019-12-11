@@ -13,14 +13,15 @@ ms.collection:
 ms.custom: Adm_O365
 search.appverid: SPO160
 description: Cet article explique comment planifier le lancement de votre portail dans SharePoint Online et les étapes à suivre pour réussir le lancement de votre portail.
-ms.openlocfilehash: c66754cdcd682cb39c0ff235a07a464613d1d3e7
-ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
+ms.openlocfilehash: 8c7f427d0f8f89b11b144d045a03fa3138b8f019
+ms.sourcegitcommit: 09b3a302c0c9a0370dd86d111c7d5e63cc39a9a0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/10/2019
-ms.locfileid: "39919126"
+ms.locfileid: "39959118"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>Planification de votre plan de déploiement de lancement de portail dans SharePoint Online
+
 Un portail est un site SharePoint sur votre intranet qui comporte un grand nombre de visiteurs de site qui utilisent du contenu sur le site. Dans les grandes organisations, il peut y en avoir plusieurs ; par exemple, un portail d’entreprise et un portail RH. En règle générale, les portails ont relativement peu de personnes qui créent et créent le site et son contenu. La plupart des visiteurs du portail lisent et consomment uniquement le contenu.
 
 Cet article explique comment planifier votre déploiement et déployer un plan de déploiement vers SharePoint Online. Elle fournit également des approches de suivi de la charge traditionnelle qui ne sont pas autorisées sur SharePoint Online. SharePoint Online est un service Cloud et les capacités de chargement, l’intégrité et l’équilibre global de la charge dans le service sont gérées par Microsoft.

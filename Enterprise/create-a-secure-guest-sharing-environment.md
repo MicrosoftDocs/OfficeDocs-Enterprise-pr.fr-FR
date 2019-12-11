@@ -9,12 +9,12 @@ ms.service: sharepoint-online
 ms.collection: SPO_Content
 localization_priority: Priority
 description: Découvrir comment créer un environnement de partage d’invités sécurisé avec Microsoft 365.
-ms.openlocfilehash: 727b635c0ed13a9dcf85bb93092ab9a002740e99
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 51e9d8c8d09d5ee687fc47a1c382da383d1cf231
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077707"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886513"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Créer un environnement de partage d’invités sécurisé
 
@@ -308,7 +308,7 @@ Pour créer une stratégie de fichier sur la base d’étiquette, procédez comm
 12. Comme message de notification personnalisé, tapez *Ce fichier est hautement confidentiel. La stratégie d’entreprise interdit de le partager avec des invités*.
 13. Cliquez sur **Créer**.
 
-Il est important de noter que cette politique supprime l'accès aux fichiers partagés à l'aide d'un lien de *Personnes spécifiques*. Elle ne supprime pas l'accès aux liens (*des personnes*) anonymes. Elle ne supprime pas non plus l’accès si l’invité est membre du site ou de l’équipe dans son ensemble. Si vous comptez utiliser des documents hautement confidentiels dans un site ou une équipe comptant des membres invités, envisagez d'utiliser des c[anaux privés dans Teams ](https://support.office.com/article/60ef929a-4d68-418b-bf4f-5784db184ec9)et d'autoriser uniquement les membres de votre organisation dans les canaux privés.
+Il est important de noter que cette politique supprime l'accès aux fichiers partagés à l'aide d'un lien de *Personnes spécifiques*. Elle ne supprime pas l'accès aux liens (*des personnes*) non authentifiés. Elle ne supprime pas non plus l’accès si l’invité est membre du site ou de l’équipe dans son ensemble. Si vous comptez utiliser des documents hautement confidentiels dans un site ou une équipe comptant des membres invités, envisagez d'utiliser des c[anaux privés dans Teams ](https://support.office.com/article/60ef929a-4d68-418b-bf4f-5784db184ec9)et d'autoriser uniquement les membres de votre organisation dans les canaux privés.
 
 ## <a name="test-the-solution"></a>Tester la solution
 
@@ -322,4 +322,4 @@ Vous pouvez utiliser les outils décrits dans cet article dans diverses combinai
 
 [Limiter l’exposition accidentelle aux fichiers lors du partage avec des invités](sharing-limit-accidental-exposure.md)
 
-[Meilleures pratiques relatives au partage de fichiers et de dossiers avec des utilisateurs anonymes](best-practices-anonymous-sharing.md)
+[Meilleures pratiques relatives au partage de fichiers et de dossiers avec des utilisateurs non authentifiés](best-practices-anonymous-sharing.md)

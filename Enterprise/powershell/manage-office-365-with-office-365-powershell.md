@@ -1,9 +1,9 @@
 ---
-title: Gérer Office 365 avec Office 365 PowerShell
+title: Gérer Office 365 avec Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 12/06/2019
 audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -15,30 +15,30 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: 'Résumé : Découvrez comment utiliser Office 365 PowerShell avec des utilisateurs et des licences Office 365, Skype Entreprise Online, SharePoint Online, Exchange Online et le Centre de sécurité et conformité Office 365.'
-ms.openlocfilehash: 56c23aca44d09947e7469296c6ed85b2f3d2f3c5
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: a1d71dddd26122fe925762228e63fedd6a4ba702
+ms.sourcegitcommit: 77b8fd702d3a1010d3906d4024d272ad2097f54f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782104"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962491"
 ---
 # <a name="manage-office-365-with-office-365-powershell"></a>Gérer Office 365 avec Office 365 PowerShell
 
- **Résumé :** Découvrez comment utiliser Office 365 PowerShell avec des utilisateurs et des licences Office 365, Skype Entreprise Online, SharePoint Online, Exchange Online et le Centre de sécurité et conformité Office 365.
-  
+*Cet article s’applique à la fois à Office 365 et à Microsoft 365.*
+
 Office 365 PowerShell est un outil de gestion puissant qui complète le centre d’administration Microsoft 365. Par exemple, vous pouvez utiliser l'automatisation Office 365 PowerShell pour gérer plus rapidement plusieurs comptes d'utilisateur et licences utilisateur et créer des rapports. Découvrez comment utiliser Office 365 PowerShell avec Office 365 des utilisateurs et des licences, Skype entreprise Online, SharePoint Online, Exchange Online et le centre de sécurité & conformité d’Office 365.
   
 Sélectionnez la rubrique selon vos besoins :
   
-- [Mise en route d'Office 365 Powershell](getting-started-with-office-365-powershell.md)
+- [Prise en main](getting-started-with-office-365-powershell.md)
 
-    Commencez ici si vous découvrez Office 365 PowerShell et que vous souhaitez installer les modules Office 365 PowerShell et vous connecter à votre client Office 365.
+    Commencez par là si vous n’êtes pas familiarisé avec Office 365 PowerShell et que vous souhaitez installer les modules Office 365 PowerShell et vous connecter à votre abonnement Office 365.
 
-- [Gérer les comptes d'utilisateurs et les licences avec Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+- [Comptes d’utilisateur, licences et groupes](manage-user-accounts-and-licenses-with-office-365-powershell.md)
 
-    Commencez ici si vous avez installé les modules Office 365 PowerShell et que vous souhaitez en savoir plus sur l'utilisation des commandes d'automatisation pour gérer les comptes d'utilisateur et les licences utilisateur.
+    Commencez ici si vous avez installé les modules Office 365 PowerShell et que vous souhaitez en savoir plus sur l’utilisation des commandes d’automatisation pour gérer les comptes d’utilisateur, les licences et les groupes.
 
-- [Office 365 PowerShell pour SharePoint Online](https://technet.microsoft.com/library/fp161362.aspx)
+- [SharePoint Online](https://docs.microsoft.com/office365/enterprise/powershell/manage-sharepoint-online-with-office-365-powershell)
 
     Commencez ici si vous avez installé les modules Office 365 PowerShell et que vous souhaitez utiliser des commandes d'automatisation pour effectuer la gestion de SharePoint Online.
 
@@ -46,22 +46,18 @@ Sélectionnez la rubrique selon vos besoins :
 
     Commencez par là si vous souhaitez utiliser les commandes d’automatisation pour gérer Exchange Online.
 
-- [Utilisation de PowerShell pour effectuer une migration de messagerie vers Office 365](use-powershell-for-email-migration-to-office-365.md)
+- [Migration de messagerie vers Office 365](use-powershell-for-email-migration-to-office-365.md)
 
     Commencez ici si vous avez installé les modules Office 365 PowerShell PowerShell et que vous souhaitez migrer votre messagerie électronique à partir de systèmes existants.
 
-- [Centre de sécurité et conformité Office 365 - PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell)
+- [Centre de sécurité & conformité](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell)
 
     Commencez par là si vous souhaitez utiliser les commandes d’automatisation pour gérer le Centre de sécurité et de conformité.
 
-- [Gestion d’Office 365 avec Windows PowerShell pour les partenaires avec autorisations d’accès délégué](manage-office-365-with-windows-powershell-for-delegated-access-permissions-dap-p.md)
+- [Partenaires avec autorisations d’accès délégué](manage-office-365-with-windows-powershell-for-delegated-access-permissions-dap-p.md)
 
     Commencez ici si vous souhaitez utiliser des partenaires de syndication et de fournisseur de solutions Cloud (CSP) pour gérer vos locataires clients Office 365.
 
-- [Gestion de Skype Entreprise Online avec Office 365 PowerShell](manage-skype-for-business-online-with-office-365-powershell.md)
+- [Skype Entreprise Online](manage-skype-for-business-online-with-office-365-powershell.md)
 
     Commencez par là si vous avez installé les modules Office 365 PowerShell et que vous souhaitez effectuer la gestion de Skype Entreprise Online.
-
-- [Cmdlets Skype Entreprise Online](https://technet.microsoft.com/library/mt228132.aspx)
-
-    Commencez ici si vous maîtrisez très bien Office 365 PowerShell et que vous souhaitez en savoir plus sur les commandes spécifiques permettant de gérer les paramètres de conférence rendez-vous, de Cloud PBX et d'appel PSTN pour votre organisation, et d'employer les fonctions de création de rapports pour surveiller l'utilisation de Skype Entreprise Online et générer des rapports correspondants.

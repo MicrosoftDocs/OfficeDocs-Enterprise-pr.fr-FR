@@ -3,7 +3,7 @@ title: Utilisation du réseau de distribution de contenu Office 365 avec ShareP
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 10/22/2019
+ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Décrit l’utilisation du réseau de distribution de contenu (CDN) d’Office 365 pour accélérer la remise de vos ressources SharePoint Online à tous vos utilisateurs, où qu’ils soient ou dans lesquels ils accèdent à votre contenu.
-ms.openlocfilehash: bb60e129f988041a7d763c1558a9ee3c86f75226
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: de4982047e7a92d7df477128274e0037fbc86d42
+ms.sourcegitcommit: 77b8fd702d3a1010d3906d4024d272ad2097f54f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39813512"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962481"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Utilisation du réseau de distribution de contenu Office 365 avec SharePoint Online
 
@@ -688,9 +688,9 @@ Une fois que vous avez ajouté des liens vers des ressources CDN à une page, vo
 Vous pouvez également utiliser les outils de développement de votre navigateur pour afficher l’URL de chaque ressource sur une page ou utiliser un outil de suivi réseau tiers.
 
 > [!NOTE]
-> Si vous utilisez un outil réseau tel que Fiddler pour tester vos biens en dehors du rendu de l’élément à partir d’une page SharePoint, vous devez ajouter manuellement l’en `https://yourdomain.sharepoint.com`-tête de renvoi « Referrer : » à la requête get où l’URL est l’URL racine de votre client SharePoint Online.
+> Si vous utilisez un outil réseau tel que Fiddler pour tester vos biens en dehors du rendu de l’élément à partir d’une page SharePoint, vous devez ajouter manuellement l’en-tête `https://yourdomain.sharepoint.com`Referer « Referer : » à la requête get où l’URL est l’URL racine de votre client SharePoint Online.
 
-Vous ne pouvez pas tester les URL du CDN directement dans un navigateur Web, car vous devez disposer d’un référent provenant de SharePoint Online. Toutefois, si vous ajoutez l’URL de la ressource CDN à une page SharePoint, puis ouvrez la page dans un navigateur, vous verrez l’élément CDN s’afficher sur la page.
+Vous ne pouvez pas tester les URL du CDN directement dans un navigateur Web, car vous devez disposer d’un Referer provenant de SharePoint Online. Toutefois, si vous ajoutez l’URL de la ressource CDN à une page SharePoint, puis ouvrez la page dans un navigateur, vous verrez l’élément CDN s’afficher sur la page.
 
 Pour plus d’informations sur l’utilisation des outils de développement dans le navigateur Microsoft Edge, consultez la rubrique [outils de développement Microsoft Edge](https://docs.microsoft.com/microsoft-edge/devtools-guide).
 

@@ -3,7 +3,7 @@ title: Procédure de demande d'un déplacement de données
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/20/2019
+ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Les clients Office 365 existants devront envoyer une demande avant la date d'échéance de leur pays afin que les données client de leurs services Office 365 soient déplacées vers leur nouvelle région.
-ms.openlocfilehash: 0d563400fefd0d2b9aabc0d9f3973558d54e60ab
-ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
+ms.openlocfilehash: 97fc83db3ceac1a5c3aca65f8b780a3f7841528c
+ms.sourcegitcommit: 77b8fd702d3a1010d3906d4024d272ad2097f54f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38756593"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962461"
 ---
 # <a name="how-to-request-your-data-move"></a>Procédure de demande d’un déplacement de données
 
@@ -28,7 +28,7 @@ Les clients Office 365 existants sont autorisés à demander une migration préc
   
 ## <a name="when-can-i-request-a-move"></a>Quand puis-je demander un déplacement ?
 
-|**Clients avec une adresse de facturation en/au**|**Début de période de la demande**|**Date d'échéance de la demande**|
+|**Clients avec pays d’abonnement dans**|**Début de période de la demande**|**Date d'échéance de la demande**|
 |:-----|:-----|:-----|
 |Japon  <br/> |1er août 2016  <br/> |31 octobre 2016  <br/> |
 |Australie, Nouvelle-Zélande, Fidji  <br/> |1er août 2016  <br/> |31 octobre 2016  <br/> |
@@ -38,11 +38,13 @@ Les clients Office 365 existants sont autorisés à demander une migration préc
 |Corée du Sud  <br/> |1er mai 2017  <br/> |31 octobre 2017  <br/> |
 |France  <br/> |14 mars 2018  <br/> |15 septembre 2018  <br/> |
 |Émirats arabes unis  <br/> |15 juillet 2019  <br/> |31 janvier 2020  <br/> |
-|Afrique du Sud  <br/> |25 juillet 2019  <br/> |31 janvier 2020  <br/> |
+|Afrique du Sud  <br/> |25 juillet 2019  <br/> |31 janvier 2020  <br/> |
+|Suisse, Liechtenstein  <br/> |10 décembre 2019  <br/> |30 juin 2020  <br/> |
+|Allemagne  <br/> |Vision  <br/> |Vision  <br/> |
    
 ## <a name="how-to-request-a-move"></a>Procédure de demande d’un déplacement
 
-Les clients éligibles verront une page dans leur [Centre d’administration](https://aka.ms/365admin), ce qui leur permettra de demander que leurs données client fondamentales soient déplacées vers leur nouvelle région de centre de données.  
+Les clients éligibles verront une page dans le [Centre d’administration 365 de Microsoft](https://aka.ms/365admin), qui leur permettra de demander que leurs données client principales soient déplacées vers leur nouvelle région de centre de données.  
   
 Pour accéder à la page dans le centre d’administration 365 de Microsoft, dans le volet de navigation à gauche, développez **paramètres**, puis cliquez sur profil de l' **organisation**.
   

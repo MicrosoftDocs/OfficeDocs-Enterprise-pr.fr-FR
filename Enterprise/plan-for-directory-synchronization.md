@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Décrit la synchronisation d’annuaires avec Office 365, le nettoyage des services de domaine Active Directory et l’outil Azure Active Directory Connect.
-ms.openlocfilehash: 5b91ebfae2250d44c34aed45c00ac09e98b21909
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 7dfb5a34e7a5a1bf1368a059859ef32049a15473
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747084"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072536"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-office-365"></a>Identité hybride et synchronisation d’annuaires pour Office 365
 
-*Cet article s’applique à la fois à Office 365 entreprise et à Microsoft 365 entreprise.*
+*Cet article est valable pour Office 365 Entreprise et Microsoft 365 Entreprise*.
 
 En fonction des besoins de l’entreprise et des exigences techniques, le modèle d’identité hybride et la synchronisation d’annuaires constituent le choix le plus courant pour les clients d’entreprise qui adoptent Office 365. La synchronisation d’annuaires vous permet de gérer les identités dans vos services de domaine Active Directory (AD DS) et toutes les mises à jour des comptes d’utilisateur, des groupes et des contacts sont synchronisées avec le client Azure Active Directory (Azure AD) de votre abonnement Office 365.
 
@@ -63,7 +63,7 @@ Il existe deux types d’authentification gérée :
 
 Avec la synchronisation de hachage de mot de passe (hachage), vous synchronisez vos comptes d’utilisateur AD DS avec Office 365 et vous gérez vos utilisateurs en local. Les hachages des mots de passe des utilisateurs sont synchronisés entre votre AD DS et Azure AD afin que les utilisateurs aient le même mot de passe sur site et dans le Cloud. Il s’agit de la méthode la plus simple pour activer l’authentification pour les identités AD DS dans Azure AD. 
 
-![](./media/plan-for-directory-synchronization/phs-authentication.png)
+![Synchronisation de hachage de mot de passe (hachage)](./media/plan-for-directory-synchronization/phs-authentication.png)
 
 Lorsque les mots de passe sont modifiés ou réinitialisés en local, les nouveaux hachages de mot de passe sont synchronisés avec Azure AD afin que les utilisateurs puissent toujours utiliser le même mot de passe pour les ressources en nuage et les ressources locales. Les mots de passe utilisateur ne sont jamais envoyés à Azure AD ou stockés dans Azure AD en texte clair. Certaines fonctionnalités avancées d’Azure AD, telles que la protection des identités, nécessitent hachage, quelle que soit la méthode d’authentification sélectionnée.
   
@@ -73,7 +73,7 @@ Pour plus d’informations, voir [Choosing hachage](https://docs.microsoft.com/a
 
 L’authentification directe (directe) fournit une validation de mot de passe simple pour les services d’authentification Azure AD à l’aide d’un agent logiciel exécuté sur un ou plusieurs serveurs locaux pour valider les utilisateurs directement avec votre service AD DS. Avec l’authentification directe (directe), vous synchronisez les comptes d’utilisateur AD DS avec Office 365 et vous gérez vos utilisateurs en local. 
 
-![](./media/plan-for-directory-synchronization/pta-authentication.png)
+![Authentification directe (PTA)](./media/plan-for-directory-synchronization/pta-authentication.png)
 
 DIRECTE permet à vos utilisateurs de se connecter à des ressources et des applications locales et Office 365 à l’aide de leur compte local et de leur mot de passe. Cette configuration valide les mots de passe des utilisateurs directement par rapport à votre service AD DS local sans stocker les hachages de mots de passe dans Azure AD. 
 

@@ -3,7 +3,7 @@ title: Afficher les licences et les services avec Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/03/2019
+ms.date: 12/16/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: Explique comment utiliser Office 365 PowerShell pour afficher des informations sur les plans de gestion des licences, les services et les licences disponibles dans votre organisation Office 365.
-ms.openlocfilehash: b8a0bb1845f3c0db5aa47cea0c2f6e5e580c804f
-ms.sourcegitcommit: 460c722d63e7e604ef0a57ec18fa7900fa6a4157
+ms.openlocfilehash: d212a79be127dabae52993cb8cfd21fb848b3aad
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "39655846"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072156"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Afficher les licences et les services avec Office 365 PowerShell
 
@@ -40,13 +40,13 @@ Vous pouvez utiliser Office 365 PowerShell pour afficher des détails sur les pl
 
 Tout d’abord, [connectez-vous à votre client Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
-Pour afficher des informations récapitulatives sur vos plans de gestion des licences actuels et sur les licences disponibles pour chaque plan, exécutez la commande suivante :
+Pour afficher des informations récapitulatives sur vos plans de gestion de licences actuels et sur les licences disponibles pour chaque plan, exécutez la commande suivante :
   
 ```powershell
 Get-AzureADSubscribedSku | Select -Property Sku*,ConsumedUnits -ExpandProperty PrepaidUnits
 ```
 
-Les résultats contiennent les informations suivantes :
+Les résultats contiennent les éléments suivants :
   
 - **SkuPartNumber :** Affiche les plans de gestion des licences disponibles pour votre organisation. Par exemple, `ENTERPRISEPACK` est le nom du plan de licence pour Office 365 entreprise E3.
     
@@ -115,7 +115,7 @@ Get-MsolAccountSku
 
 Les résultats contiennent les informations suivantes :
   
-- **AccountSkuId :** Affichez les plans de gestion des licences disponibles pour votre organisation `<CompanyName>:<LicensingPlan>`à l’aide de la syntaxe.  _<CompanyName>_ est la valeur que vous avez fournie lorsque vous vous êtes inscrit dans Office 365 et qui est unique pour votre organisation. La _<LicensingPlan>_ valeur est la même pour tout le monde. Par exemple, dans la valeur `litwareinc:ENTERPRISEPACK`, le nom `litwareinc`de la société et le nom `ENTERPRISEPACK`du plan de gestion des licences, qui est le nom du système pour Office 365 entreprise E3.
+- **AccountSkuId :** Affichez les plans de gestion des licences disponibles pour votre organisation `<CompanyName>:<LicensingPlan>`à l’aide de la syntaxe.  CompanyName>est la valeur que vous avez fournie lorsque vous vous êtes inscrit dans Office 365 et qui est unique pour votre organisation. _ \<_ La valeur de _ \<>LicensingPlan_ est la même pour tout le monde. Par exemple, dans la valeur `litwareinc:ENTERPRISEPACK`, le nom `litwareinc`de la société et le nom `ENTERPRISEPACK`du plan de gestion des licences, qui est le nom du système pour Office 365 entreprise E3.
     
 - **ActiveUnits :** Nombre de licences que vous avez achetées pour un plan de gestion des licences spécifique.
     
@@ -138,8 +138,8 @@ Le tableau suivant présente les plans de service Office 365 et leurs noms convi
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Office Professionnel Plus  <br/> |
-| `MCOSTANDARD` <br/> |Skype Entreprise Online  <br/> |
-| `SHAREPOINTWAC` <br/> |Office  <br/> |
+| `MCOSTANDARD` <br/> |Skype Entreprise Online  <br/> |
+| `SHAREPOINTWAC` <br/> |Bureau  <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online (plan 2)  <br/> |
    
@@ -157,15 +157,10 @@ Cet exemple illustre les services Office 365 disponibles dans le plan de gestion
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq "litwareinc:ENTERPRISEPACK"}).ServiceStatus
 ```
 
-
-## <a name="new-to-office-365"></a>Vous débutez avec Office 365 ?
-
-[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
-   
 ## <a name="see-also"></a>Voir aussi
 
-[Gérer les comptes d'utilisateurs et les licences avec Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Gérer les comptes d’utilisateur, les licences et les groupes avec Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Gérer Office 365 avec Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
+[Gérer Office 365 avec Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
   
 [Mise en route d'Office 365 Powershell](getting-started-with-office-365-powershell.md)

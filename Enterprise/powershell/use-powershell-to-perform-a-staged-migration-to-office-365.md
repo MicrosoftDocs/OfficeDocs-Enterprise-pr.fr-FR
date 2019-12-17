@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
 description: 'Résumé : Découvrez comment utiliser Windows PowerShell pour effectuer une migration intermédiaire vers Office 365.'
-ms.openlocfilehash: d60145c7dd25fc7cf6be51a891b8fae8e67ccc2b
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 598824933af54d79030465c825186f89b193666c
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747530"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072306"
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-office-365"></a>Utiliser PowerShell pour effectuer une migration intermédiaire vers Office 365
 
@@ -57,7 +57,7 @@ Avant de migrer les boîtes aux lettres vers Office 365 en utilisant une migrati
   
 - Utilisez Outlook hors de votre réseau d'entreprise pour vous connecter à votre boîte aux lettres Exchange locale.
     
-- Utilisez l'[analyseur de connectivité à distance Exchange](https://www.testexchangeconnectivity.com/) de Microsoft pour tester vos paramètres de connexion. Utilisez Outlook Anywhere (RPC sur HTTP) ou les tests de découverte automatique d'Outlook.
+- Utilisez l' [Analyseur de connectivité à distance Microsoft](https://https://testconnectivity.microsoft.com/) pour tester vos paramètres de connexion. Utilisez Outlook Anywhere (RPC sur HTTP) ou les tests de découverte automatique d'Outlook.
     
 - Dans Exchange Online PowerShell, exécutez les commandes suivantes :
     
@@ -199,12 +199,6 @@ Une fois la migration d'un premier lot effectuée, vous devez permettre aux util
 Toutes les migrations n'ayant pas encore été effectuées, vous ne pouvez pas encore rediriger l'ensemble des utilisateurs vers Office 365 pour qu'ils accèdent à leur messagerie électronique. Que faire alors pour les personnes qui disposent de deux boîtes aux lettres ? Eh bien vous pouvez convertir les boîtes aux lettres qui ont déjà été migrées en utilisateurs à extension messagerie. Cette opération vous permet de rediriger l'utilisateur pour qu'il puisse accéder à sa messagerie dans Office 365, et non plus en local. 
   
 Une autre raison importante justifiant la conversion des boîtes aux lettres locales en utilisateurs à extension messagerie est que cette opération permet de conserver les adresses proxy des boîtes aux lettres Office 365 en les copiant vers les utilisateurs à extension messagerie. Cela vous permet de gérer des utilisateurs en nuage à partir de votre organisation locale à l'aide d'Active Directory. De plus, si vous décidez de mettre hors service votre organisation Exchange Server locale une fois toutes les boîtes aux lettres migrées vers Office 365, les adresses proxy que vous avez copiées vers les utilisateurs à extension messagerie sont conservées dans votre instance Active Directory locale.
-  
-Pour obtenir plus d’informations et télécharger des scripts que vous pouvez exécuter pour convertir des boîtes aux lettres en utilisateurs à extension messagerie, consultez les rubriques suivantes :
-  
-- [Convertir des boîtes aux lettres Exchange 2007 en utilisateurs à extension messagerie](https://go.microsoft.com/fwlink/p/?LinkId=233648)
-    
-- [Convertir des boîtes aux lettres Exchange 2003 en utilisateurs à extension messagerie](https://go.microsoft.com/fwlink/p/?LinkId=233647)
     
 ### <a name="step-6-delete-a-staged-migration-batch"></a>Étape 6 : Supprimez un lot de migration intermédiaire
 <a name="BK_Endpoint"> </a>

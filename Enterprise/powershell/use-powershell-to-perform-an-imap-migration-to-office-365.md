@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
 description: 'Résumé : Découvrez comment utiliser Windows PowerShell pour effectuer une migration IMAP vers Office 365.'
-ms.openlocfilehash: b6c68dc611d22579f81db838b2b5d08e99f7519a
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 411c60f78284c4d7405cd0a1b1d737f99155c1d3
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38746267"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072466"
 ---
 # <a name="use-powershell-to-perform-an-imap-migration-to-office-365"></a>Utilisation de PowerShell pour effectuer une migration IMAP vers Office 365
 
@@ -204,7 +204,7 @@ Get-MigrationBatch -Identity IMAPBatch1 | Format-List Status
 
 Les systèmes de messagerie utilisent un enregistrement DNS appelé enregistrement MX pour identifier l'emplacement de remise des messages électroniques. Pendant le processus de migration de la messagerie, votre enregistrement MX pointe vers votre système de messagerie source. Maintenant que la migration de messagerie vers Office 365 est terminée, vous devez faire pointer votre enregistrement MX vers Office 365. Cela permet de s'assurer que le message est remis à vos boîtes aux lettres Office 365. En déplaçant l'enregistrement MX, vous pouvez également désactiver votre ancien système de messagerie lorsque vous êtes prêt. 
   
-Pour plusieurs fournisseurs DNS, il existe des instructions spécifiques pour [modifier votre enregistrement MX](https://go.microsoft.com/fwlink/p/?LinkId=279163). Si votre fournisseur DNS n'est pas inclus, ou si vous souhaitez avoir une idée des instructions générales, vous avez également accès à des [instructions générales sur les enregistrements MX](https://go.microsoft.com/fwlink/?LinkId=397449).
+Pour plusieurs fournisseurs DNS, il existe des instructions spécifiques pour modifier votre enregistrement MX. Si votre fournisseur DNS n'est pas inclus, ou si vous souhaitez avoir une idée des instructions générales, vous avez également accès à des [instructions générales sur les enregistrements MX](https://go.microsoft.com/fwlink/?LinkId=397449).
   
 Il faut compter jusqu’à 72 heures pour que les systèmes de messagerie de vos clients et partenaires reconnaissent l’enregistrement MX modifié. Patientez au moins 72 heures avant de procéder à la tâche suivante : Étape 6 : Supprimez le lot de migration IMAP 
   

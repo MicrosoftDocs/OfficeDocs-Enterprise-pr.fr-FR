@@ -21,16 +21,16 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: La prise en charge se termine bientôt pour les serveurs et les applications clientes Office 2010, et les accords de support personnalisés ne sont pas disponibles. Utilisez cet article pour commencer à planifier votre mise à niveau maintenant.
-ms.openlocfilehash: af31db341aab1c52873613682c03dd54b3b76225
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 9df09e0f31358c9dd1bfe4a4adde99d41070060f
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748004"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072406"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Ressources pour vous aider à effectuer une mise à niveau à partir de serveurs et clients Office 2010
 
-*Cet article s’applique à la fois à Office 365 entreprise et à Microsoft 365 entreprise.*
+*Cet article est valable pour Office 365 Entreprise et Microsoft 365 Entreprise*.
 
 Office 2010, Exchange Server 2010, SharePoint 2010 et Project Server 2010 atteindront leur fin d’assistance le **13 octobre 2020**. 
 
@@ -42,7 +42,7 @@ Pendant que vous planifiez votre mise à niveau, il est très utile de passer à
 
 Pour obtenir un résumé visuel des options de mise à niveau, de migration et de déplacement sur le Cloud pour les clients et les serveurs Office 2010 et Windows 7, consultez la [fin de l’affiche de la prise en charge](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf).
 
-![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)
+![Clients et serveurs Office 2010 et affiche fin de Windows 7](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)
 
 Cette affiche de page unique constitue un moyen rapide de comprendre les différents chemins que vous pouvez suivre pour empêcher les produits client et serveur Office 2010 et Windows 7 d’atteindre la fin du support, avec les chemins d’accès et la prise en charge des options préférés dans Microsoft 365 entreprise en surbrillance.
 
@@ -62,7 +62,7 @@ Vous pouvez également [Télécharger](https://github.com/MicrosoftDocs/microsof
 
 Si vous utilisez les produits et applications Office 2010 à la maison, reportez-vous à [ces informations](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do).
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Groupe de retraite Office (Communauté Microsoft Tech)](https://go.microsoft.com/fwlink/?linkid=842065)
   

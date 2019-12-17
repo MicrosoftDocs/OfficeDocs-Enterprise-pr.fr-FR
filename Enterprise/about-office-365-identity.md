@@ -19,16 +19,16 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Découvrez comment l’identité de l’utilisateur est gérée dans Office 365.
-ms.openlocfilehash: f6e871f03fb99feea05293c425406b6be7dfedd5
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 0cc40323d978fe9ab13e3326dac183143a014406
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38745667"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40071876"
 ---
 # <a name="office-365-identity-models-and-azure-active-directory"></a>Modèles d’identité Office 365 et Azure Active Directory
 
-*Cet article s’applique à la fois à Office 365 entreprise et à Microsoft 365 entreprise.*
+*Cet article est valable pour Office 365 Entreprise et Microsoft 365 Entreprise*.
 
 Office 365 utilise Azure Active Directory (Azure AD), un service d’authentification et d’identité d’utilisateur basé sur un nuage inclus dans votre abonnement Office 365, pour gérer les identités et l’authentification pour Office 365. L’obtention de l’infrastructure d’identité configurée correctement est essentielle pour la gestion de l’accès des utilisateurs et des autorisations Office 365 pour votre organisation.
 
@@ -59,7 +59,7 @@ Une identité en nuage uniquement utilise des comptes d’utilisateur qui existe
 
 Voici les composants de base de l’identité en nuage uniquement.
  
-![](./media/about-office-365-identity/cloud-only-identity.png)
+![Composants de base de l’identité en nuage uniquement](./media/about-office-365-identity/cloud-only-identity.png)
 
 Les utilisateurs locaux et distants (en ligne) utilisent leurs comptes d’utilisateur et mots de passe Azure AD pour accéder aux services Cloud Office 365. Azure AD authentifie les informations d’identification de l’utilisateur en fonction de ses comptes et mots de passe utilisateur enregistrés.
 
@@ -76,7 +76,7 @@ Lorsque vous implémentez l’identité hybride, votre service AD DS sur site es
 
 Voici les composants de l’identité hybride.
 
-![](./media/about-office-365-identity/hybrid-identity.png)
+![Composants de l’identité hybride](./media/about-office-365-identity/hybrid-identity.png)
 
 Le client Azure AD dispose d’une copie des comptes AD DS. Dans cette configuration, les utilisateurs locaux et distants accèdent aux services Cloud de Microsoft 365 pour s’authentifier auprès d’Azure AD.
 

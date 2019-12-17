@@ -24,12 +24,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Indique comment créer des utilisateurs et des groupes lorsque votre abonnement Office 365 utilise des identités de Cloud uniquement.
-ms.openlocfilehash: 6815c89821216416379a27eb525e66b90b828ea8
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 5991ec838321187b58f913e1707efb2ede9912fb
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39813412"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072276"
 ---
 # <a name="office-365-cloud-only-identities"></a>Identités Cloud Office 365 uniquement
 
@@ -37,7 +37,7 @@ ms.locfileid: "39813412"
 
 Avec l’identité Cloud uniquement, tous vos utilisateurs, groupes et contacts sont stockés dans le client Azure Active Directory (Azure AD) de votre abonnement Office 365. Voici les composants de base de l’identité en nuage uniquement.
  
-![](./media/about-office-365-identity/cloud-only-identity.png)
+![Composants de base de l’identité en nuage uniquement](./media/about-office-365-identity/cloud-only-identity.png)
 
 Les utilisateurs et leurs comptes d’utilisateur dans les organisations peuvent être catégorisés de plusieurs façons. Par exemple, certains sont employés et ont un statut permanent. Certains sont des fournisseurs, des sous-traitants ou des partenaires dont le statut est temporaire. Certains sont des utilisateurs externes qui n’ont pas de compte d’utilisateur, mais qui doivent toujours avoir accès à des ressources et des services spécifiques pour prendre en charge l’interaction et la collaboration. Par exemple :
 

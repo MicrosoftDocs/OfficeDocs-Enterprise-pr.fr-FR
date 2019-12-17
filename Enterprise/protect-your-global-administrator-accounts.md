@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Protégez l’accès administrateur général à votre abonnement Office 365.
-ms.openlocfilehash: a428f3d70e87744c33c5fb5187dc869f3b2029e1
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 293044fc508c89b5e08234aa62633c6c4490ba6d
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39814602"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072206"
 ---
 # <a name="protect-your-office-365-global-administrator-accounts"></a>Protéger vos comptes d’administrateur général Office 365
 
@@ -49,7 +49,7 @@ Il existe relativement peu de tâches administratives, telles que l’affectatio
   
 1. Déterminez l’ensemble des comptes d’utilisateur auxquels a été attribué le rôle d’administrateur général. Vous pouvez effectuer cette opération avec Azure active (Azure AD) Directory PowerShell for Graph :
   
-  ```
+  ```powershell
   Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
   ```
 
@@ -75,7 +75,7 @@ Le résultat doit être :
   
 - Les seuls comptes d’utilisateurs de votre abonnement dotés du rôle Administrateur général sont les comptes du nouvel ensemble de comptes Administrateur général dédiés. Vérifiez cela à l’aide de la commande PowerShell suivante :
     
-  ```
+  ```powershell
   Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
   ```
 

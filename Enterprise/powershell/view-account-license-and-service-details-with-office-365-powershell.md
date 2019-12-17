@@ -15,12 +15,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
 description: Explique comment utiliser Office 365 PowerShell pour déterminer les services Office 365 qui ont été attribués à des utilisateurs.
-ms.openlocfilehash: f73acb5a107aa6ef970046a371b7a722a6abc8d9
-ms.sourcegitcommit: 460c722d63e7e604ef0a57ec18fa7900fa6a4157
+ms.openlocfilehash: 08e44476ea746b7e8298355e3adc5d0401261acd
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "39655866"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072286"
 ---
 # <a name="view-account-license-and-service-details-with-office-365-powershell"></a>Afficher les détails de service et de licence de compte avec Office 365 PowerShell
 
@@ -125,16 +125,11 @@ $licArray +=  ""
 }
 $licArray
 ```
-
-  
-## <a name="new-to-office-365"></a>Vous débutez avec Office 365 ?
-
-[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
-
+ 
 ## <a name="see-also"></a>Voir aussi
 
-[Gérer les comptes d'utilisateurs et les licences avec Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Gérer les comptes d’utilisateur, les licences et les groupes avec Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Gérer Office 365 avec Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
+[Gérer Office 365 avec Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
   
 [Mise en route d'Office 365 Powershell](getting-started-with-office-365-powershell.md)

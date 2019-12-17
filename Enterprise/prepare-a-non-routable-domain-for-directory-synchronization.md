@@ -20,19 +20,19 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: Pour savoir comment procéder, si vous avez un domaine non-routale associé à vos utilisateurs locaux avant de procéder à une synchronisation avec Office 365.
-ms.openlocfilehash: cf7b901c3aaf6f49e4ecd92d27b9a6d9b8951d40
-ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
+ms.openlocfilehash: 013d29acdd3761793a93dab1eb8583324ba08591
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "35203633"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072416"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>Préparation d’un domaine non routable pour la synchronisation d’annuaires
-Lorsque vous synchronisez votre annuaire local avec Office 365, vous devez disposer d’un domaine vérifié dans Azure Active Directory. Seuls les noms d’utilisateur principal (UPN) associés au domaine local sont synchronisés. Toutefois, tout nom UPN contenant un domaine non routable, par exemple. local (par exemple, Billa @ contoso. local), sera synchronisé avec un domaine. onmicrosoft.com (comme billa@contoso.onmicrosoft.com). 
+Lorsque vous synchronisez votre annuaire local avec Office 365, vous devez disposer d’un domaine vérifié dans Azure Active Directory. Seuls les noms d’utilisateur principal (UPN) associés au domaine local sont synchronisés. Toutefois, tout nom UPN contenant un domaine non routable, par exemple, local (comme billa@contoso. local), sera synchronisé avec un domaine. onmicrosoft.com (comme billa@contoso.onmicrosoft.com). 
 
 Si vous utilisez actuellement un domaine. local pour vos comptes d’utilisateur dans Active Directory, il est recommandé de les modifier afin qu’ils utilisent un domaine vérifié (par exemple, billa@contoso.com) afin de se synchroniser correctement avec votre domaine Office 365.
   
-## <a name="what-if-i-only-have-a-local-on-premises-domain"></a>Que se passe-t-il si j’ai uniquement un domaine local sur site?
+## <a name="what-if-i-only-have-a-local-on-premises-domain"></a>Que se passe-t-il si j’ai uniquement un domaine local sur site ?
 
 Le dernier outil que vous pouvez utiliser pour synchroniser Active Directory avec Azure Active Directory est nommé Azure AD Connect. Pour plus d'informations, voir [Intégration de vos identités locales avec Azure Active Directory](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad).
   
@@ -48,7 +48,7 @@ Vous pouvez résoudre le problème. local en enregistrant de nouveaux suffixes o
   
 Une fois que vous avez mis à jour l’UPN pour utiliser le domaine vérifié, vous êtes prêt à synchroniser votre annuaire Active Directory local avec Office 365.
   
- **Étape 1: ajouter le nouveau suffixe UPN**
+ **Étape 1 : ajouter le nouveau suffixe UPN**
   
 1. Sur le serveur sur lequel s’exécutent les services de domaine Active Directory (AD DS), dans le gestionnaire de serveur, choisissez **Outils** \> **domaines et approbations Active Directory**.
     
@@ -62,13 +62,13 @@ Une fois que vous avez mis à jour l’UPN pour utiliser le domaine vérifié, v
     
     ![Cliquez avec le bouton droit sur domaines et approbations ActiveDirectory, puis choisissez Propriétés.](media/39d20812-ffb5-4ba9-8d7b-477377ac360d.png)
   
-3. Dans l' **onglet suffixes UPN** , dans la zone **autres suffixes UPN** , tapez votre nouveau suffixe ou suffixe UPN, puis choisissez **Ajouter** \> ****.
+3. Dans l' **onglet suffixes UPN** , dans la **zone autres suffixes UPN** , tapez votre nouveau suffixe ou suffixe UPN, puis choisissez **Ajouter** \> **.**
     
     ![Ajouter un nouveau suffixe UPN](media/a4aaf919-7adf-469a-b93f-83ef284c0915.PNG)
   
     Choisissez **OK** lorsque vous avez terminé d’ajouter des suffixes. 
     
- **Étape 2: modifier le suffixe UPN pour les utilisateurs existants**
+ **Étape 2 : modifier le suffixe UPN pour les utilisateurs existants**
   
 1. Sur le serveur sur lequel s’exécute les services de domaine Active Directory (AD DS), dans le gestionnaire de serveur, sélectionnez **Outils** \> **utilisateurs et ordinateurs Active Directory Active Directory**.
     
@@ -89,14 +89,12 @@ Une fois que vous avez mis à jour l’UPN pour utiliser le domaine vérifié, v
 
 Si vous avez un grand nombre d’utilisateurs à mettre à jour, il est plus facile d’utiliser Windows PowerShell. L’exemple suivant utilise les cmdlets [Get-ADUser](https://go.microsoft.com/fwlink/p/?LinkId=624312) et [Set-ADUser](https://go.microsoft.com/fwlink/p/?LinkId=624313) pour remplacer tous les suffixes contoso. local par contoso.com. 
 
-Exécutez les commandes Windows PowerShell suivantes pour mettre à jour tous les suffixes contoso. local vers contoso.com:
+Exécutez les commandes Windows PowerShell suivantes pour mettre à jour tous les suffixes contoso. local vers contoso.com :
     
-  ```
+  ```powershell
   $LocalUsers = Get-ADUser -Filter {UserPrincipalName -like '*contoso.local'} -Properties userPrincipalName -ResultSetSize $null
-  ```
-
-  ```
   $LocalUsers | foreach {$newUpn = $_.UserPrincipalName.Replace("contoso.local","contoso.com"); $_ | Set-ADUser -UserPrincipalName $newUpn}
   ```
+
 Consultez la rubrique [Active Directory Windows PowerShell module](https://go.microsoft.com/fwlink/p/?LinkId=624314) pour en savoir plus sur l’utilisation de Windows PowerShell dans Active Directory. 
 

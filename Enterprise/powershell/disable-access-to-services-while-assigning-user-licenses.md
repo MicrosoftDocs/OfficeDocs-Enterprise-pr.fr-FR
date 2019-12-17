@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: Découvrez comment attribuer des licences à des comptes d’utilisateur et à désactiver des plans de service spécifiques en même temps à l’aide d’Office 365 PowerShell.
-ms.openlocfilehash: 06b6de4ea6d96dd2c9510770042bd2a2f1260876
-ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
+ms.openlocfilehash: cbf19005ac78599a280ff1dd1b007242731e39db
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257393"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072186"
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>Désactiver l’accès aux services lors de l’attribution des licences utilisateur
 
@@ -70,7 +70,7 @@ Get-MsolAccountSku
 ```
 
 >[!Note]
->PowerShell Core ne prend pas en charge les applets de commande et le module Microsoft Azure Active Directory pour Windows PowerShell avec **MSOL** dans leur nom. Pour continuer à utiliser ces applets de commande, vous devez les exécuter à partir de Windows PowerShell.
+>PowerShell Core ne prend pas en charge le module Microsoft Azure Active Directory pour Windows PowerShell et les applets de commande incluant **Msol** dans leur nom. Pour continuer à utiliser ces applets de commande, vous devez les exécuter à partir de Windows PowerShell.
 >
 
 Dans l'affichage de la commande  `Get-MsolAccountSku` :
@@ -100,12 +100,12 @@ Le tableau suivant présente les plans de service Office 365 et leurs noms convi
 |**Plan de services**|**Description**|
 |:-----|:-----|
 | `SWAY` <br/> |Sway  <br/> |
-| `TEAMS1` <br/> |Microsoft Teams  <br/> |
+| `TEAMS1` <br/> |Microsoft Teams  <br/> |
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Office Professionnel Plus  <br/> |
-| `MCOSTANDARD` <br/> |Skype Entreprise Online  <br/> |
-| `SHAREPOINTWAC` <br/> |Office   <br/> |
+| `MCOSTANDARD` <br/> |Skype Entreprise Online  <br/> |
+| `SHAREPOINTWAC` <br/> |Bureau   <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online (plan 2)  <br/> |
    
@@ -192,7 +192,7 @@ Ce bloc de commande PowerShell :
   
 [Désactivation de l'accès à Sway avec Office 365 PowerShell](disable-access-to-sway-with-office-365-powershell.md)
   
-[Gérer les comptes d'utilisateurs et les licences avec Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Gérer les comptes d’utilisateur, les licences et les groupes avec Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
 [Gérer Office 365 avec Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
 

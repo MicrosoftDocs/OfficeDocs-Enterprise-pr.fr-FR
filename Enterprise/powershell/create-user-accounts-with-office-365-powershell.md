@@ -3,7 +3,7 @@ title: Création de comptes d'utilisateurs avec Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/03/2019
+ms.date: 12/16/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,17 +15,15 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: Découvrez comment utiliser Office 365 PowerShell pour créer des comptes d'utilisateurs dans Office 365.
-ms.openlocfilehash: 618459cbf226a9a7cef0e03c7126d791f2ca8bc8
-ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
+ms.openlocfilehash: b69e0afa6177f29ed2abe18be39f5db08c9f5e75
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257413"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072226"
 ---
 # <a name="create-user-accounts-with-office-365-powershell"></a>Création de comptes d’utilisateurs avec Office 365 PowerShell
 
-**Résumé :** Découvrez comment utiliser Office 365 PowerShell pour créer des comptes d'utilisateurs dans Office 365.
-  
 Office 365 PowerShell vous permet de créer efficacement des comptes d'utilisateurs, en particulier plusieurs à la fois. Lorsque vous créez des comptes d'utilisateurs dans Office 365 PowerShell, certaines propriétés de compte sont toujours requises. D'autres propriétés ne sont pas nécessaires pour la création du compte, mais sont importantes. Ces propriétés sont décrites dans le tableau suivant :
   
 |**Nom de la propriété**|**Requis ?**|**Description**|
@@ -72,7 +70,7 @@ New-MsolUser -DisplayName <display name> -FirstName <first name> -LastName <last
 ```
 
 >[!Note]
->PowerShell Core ne prend pas en charge les applets de commande et le module Microsoft Azure Active Directory pour Windows PowerShell avec **MSOL** dans leur nom. Pour continuer à utiliser ces applets de commande, vous devez les exécuter à partir de Windows PowerShell.
+>PowerShell Core ne prend pas en charge le module Microsoft Azure Active Directory pour Windows PowerShell et les applets de commande incluant **Msol** dans leur nom. Pour continuer à utiliser ces applets de commande, vous devez les exécuter à partir de Windows PowerShell.
 >
 
 Pour répertorier les noms des plans de gestion des licences disponibles, utilisez la commande suivante :
@@ -117,8 +115,8 @@ Cet exemple crée des comptes d’utilisateurs à partir du fichier nommé C:\My
     
 ## <a name="see-also"></a>Voir aussi
 
-[Gérer les comptes d'utilisateurs et les licences avec Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Gérer les comptes d’utilisateur, les licences et les groupes avec Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Gérer Office 365 avec Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
+[Gérer Office 365 avec Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
   
 [Mise en route d'Office 365 Powershell](getting-started-with-office-365-powershell.md)

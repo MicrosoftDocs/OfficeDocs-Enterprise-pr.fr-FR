@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Certains réseaux d’entreprise restreignent l’accès aux emplacements Internet génériques ou incluent une déformation ou un traitement substantiel du trafic réseau. Pour s’assurer que les ordinateurs sur des réseaux comme ceux-ci peuvent accéder à Office 365, les administrateurs réseau et proxy doivent gérer la liste des noms de domaine complets, des URL et des adresses IP qui composent la liste des points de terminaison Office 365. Ceux-ci doivent être ajoutés à l’itinéraire direct, à la déviation du proxy et/ou aux règles de pare-feu et/ou aux fichiers PAC pour s’assurer que les demandes réseau sont en mesure d’atteindre Office 365.
-ms.openlocfilehash: 1a694d516a81fec7d6c619c17414e2245dd6b0ef
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+ms.openlocfilehash: 99445e6feac84a6091888422039e8ba655d246c9
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38030608"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072486"
 ---
 # <a name="managing-office-365-endpoints"></a>Gestion des points de terminaison Office 365
 
@@ -140,7 +140,7 @@ Nous fournissons uniquement des adresses IP pour les serveurs Office 365 que vou
   
 Voir une adresse IP associée à Office 365 sur laquelle vous souhaitez plus d’informations.
   
-1. Vérifiez si l’adresse IP est incluse dans une plage publiée plus grande à l’aide d’une [calculatrice CIDR](https://jodies.de/ipcalc).
+1. Vérifiez si l’adresse IP est incluse dans une plage publiée plus grande à l’aide d’une [calculatrice CIDR](https://www.ipaddressguide.com/cidr).
 2. Voir si un partenaire possède la IP avec une [requête Whois](https://dnsquery.org/). S’il est détenu par Microsoft, il peut s’agir d’un partenaire interne.
 3. Vérifiez le certificat, dans un navigateur Connectez-vous à l’adresse IP à l’aide de *https://\<IP_ADDRESS\> * , vérifiez les domaines répertoriés sur le certificat pour comprendre quels domaines sont associés à l’adresse IP. S’il s’agit d’une adresse IP appartenant à Microsoft et non sur la liste des adresses IP Office 365, l’adresse IP est probablement associée à un CDN Microsoft tel que *MSOCDN.net* ou un autre domaine Microsoft sans informations IP publiées. Si vous trouvez le domaine sur le certificat est un domaine dans lequel nous revendiquons de répertorier l’adresse IP, veuillez nous le faire savoir.
 

@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Accélérez la planification et la configuration d’Office 365 ou de Microsoft 365 avec des conseillers en matière de déploiement.
-ms.openlocfilehash: a698ea4cf4eec5640d836986ce45f71bf7dba0a8
-ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
+ms.openlocfilehash: c931da3d64aea976af99ca2b2220d4bd931344a9
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38076148"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072366"
 ---
 # <a name="deployment-advisors-for-office-365-or-microsoft-365-services"></a>Conseillers de déploiement pour les services Office 365 ou Microsoft 365
 
@@ -37,13 +37,13 @@ Si vous ne vous connectez pas en tant qu’administrateur client, vous verrez fi
 
 Chaque conseiller est un assistant qui vous guide tout au long des différentes fonctionnalités et options que vous souhaitez déployer. Dans certains cas, vous pouvez utiliser l’Assistant pour configurer un paramètre ou activer un paramètre. Voici un exemple.
 
-![](./media/deployment-advisors-for-office-365/m365-deploy-advisor1.png)
+![Exemple d’un conseiller de déploiement](./media/deployment-advisors-for-office-365/m365-deploy-advisor1.png)
 
 Le conseiller vous guide à travers les décisions de personnalisation de vos besoins. Tout au long de la procédure, vous obtiendrez des instructions, des scripts et d’autres ressources pour apporter les modifications de configuration.
 
 À la fin, vous obtiendrez des liens vers des vidéos et des Articles de référence. Voici un exemple.
 
-![](./media/deployment-advisors-for-office-365/m365-deploy-advisor2.png)
+![Exemple de liens vers des vidéos et des Articles de référence](./media/deployment-advisors-for-office-365/m365-deploy-advisor2.png)
 
 Vous pouvez utiliser ces conseillers à tout moment pour en savoir plus sur les fonctionnalités et les options d’Office 365. Cela inclut lors de la planification ou après que vous avez déjà configuré les services.
   
@@ -157,7 +157,7 @@ Si vous disposez de Gmail, vous devez migrer vos contacts gmail et vos élément
 
 ## <a name="file-creation-storage-and-sharing"></a>Création, stockage et partage de fichiers
 
-### <a name="office-365-proplus"></a>Office 365 ProPlus
+### <a name="office-365-proplus"></a>Office 365 ProPlus
 
 Office 365 ProPlus permet à vos utilisateurs de s’exécuter sur les versions les plus récentes d’Office et de les maintenir à jour.
 
@@ -262,7 +262,7 @@ Les groupes Office 365 sont un espace de travail partagé pour les messages éle
 | **Générer** |[Guide de configuration des groupes Office 365](https://aka.ms/groupsguide) |
 |||
   
-### <a name="microsoft-teams"></a>Microsoft Teams
+### <a name="microsoft-teams"></a>Microsoft Teams
 
 Microsoft teams est le service de collaboration basé sur la conversation dans Office 365 qui fournit des espaces de travail d’équipe pour les conversations, les appels, les réunions et les messages privés. Le conseiller de déploiement de teams vous permet de configurer et de configurer l’expérience de teams optimale avec Exchange Online, SharePoint Online, OneDrive entreprise et les groupes Office 365. Elle comprend des informations sur la configuration des paramètres de client, des équipes et des canaux pour vos projets, des appels et des réunions, la messagerie, des onglets pour accéder rapidement aux applications, les robots d’information et les connecteurs vers des services tiers.
 

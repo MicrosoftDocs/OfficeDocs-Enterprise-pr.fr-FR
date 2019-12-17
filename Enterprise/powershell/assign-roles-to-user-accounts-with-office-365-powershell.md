@@ -3,7 +3,7 @@ title: Attribuer des rôles à des comptes d’utilisateur avec Office 365 Pow
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/30/2019
+ms.date: 12/16/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: 'Résumé : Utilisation d’Office 365 PowerShell pour attribuer des rôles à des comptes d’utilisateur.'
-ms.openlocfilehash: 5af8c514cbe8d102716d2d6b45e8ebdbdb5b1507
-ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
+ms.openlocfilehash: 999b44f56e2652c0d6d2d746a3ed204be9d1f69c
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257443"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072526"
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>Attribuer des rôles à des comptes d’utilisateur avec Office 365 PowerShell
 
@@ -52,7 +52,7 @@ $role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
 Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
 ```
 
-Voici un exemple d’un jeu de commandes terminées :
+Voici un exemple d’un jeu de commandes terminé qui affecte le rôle d’administrateur de service SharePoint au compte belindan@contoso.com :
   
 ```powershell
 $userName="belindan@contoso.com"
@@ -79,7 +79,7 @@ Tout d’abord, [connectez-vous à votre client Office 365](connect-to-office-3
   
 ### <a name="for-a-single-role-change"></a>Pour une seule modification de rôle
 
-Le moyen le plus courant d’un compte d’utilisateur spécifique est son nom d’affichage ou son nom de messagerie, également appelé nom d’utilisateur principal (UPN).
+Le moyen le plus courant de compte d’utilisateur spécifique est son nom d’affichage ou son nom de messagerie, également appelé nom de connexion ou nom d’utilisateur principal (UPN).
 
 #### <a name="display-names-of-user-accounts"></a>Noms d’affichage des comptes d’utilisateur
 
@@ -96,7 +96,7 @@ Si vous utilisez les noms d’affichage des comptes d’utilisateur, déterminez
     Cette commande répertorie le nom d'affichage de vos comptes d'utilisateur, triés par nom d'affichage, un écran à la fois. Vous pouvez filtrer la liste pour réduire l'ensemble à l'aide de la cmdlet **Where**. Voici un exemple :
 
    >[!Note]
-   >PowerShell Core ne prend pas en charge les applets de commande et le module Microsoft Azure Active Directory pour Windows PowerShell avec **MSOL** dans leur nom. Pour continuer à utiliser ces applets de commande, vous devez les exécuter à partir de Windows PowerShell.
+   >PowerShell Core ne prend pas en charge le module Microsoft Azure Active Directory pour Windows PowerShell et les applets de commande incluant **Msol** dans leur nom. Pour continuer à utiliser ces applets de commande, vous devez les exécuter à partir de Windows PowerShell.
    >
     
   ```powershell
@@ -177,9 +177,9 @@ $roleName="SharePoint Service Administrator"
 Add-MsolRoleMember -RoleMemberEmailAddress $upnName -RoleName $roleName
 ```
 
-### <a name="for-multiple-role-changes"></a>Pour plusieurs modifications de rôle
+### <a name="multiple-role-changes"></a>Plusieurs modifications de rôle
 
-Déterminez les éléments suivants :
+Pour les différentes modifications de rôle, déterminez les éléments suivants :
   
 - Les comptes d’utilisateur que vous souhaitez configurer. Vous pouvez utiliser les méthodes de la section précédente pour collecter le jeu de noms complets ou UPN.
     
@@ -225,9 +225,8 @@ $roleChanges=Import-Csv $fileName | ForEach { Add-MsolRoleMember -RoleMemberEmai
 
 ```
 
-
 ## <a name="see-also"></a>Voir aussi
 
-- [Gérer les comptes d'utilisateurs et les licences avec Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
-- [Gérer Office 365 avec Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
+- [Gérer les comptes d’utilisateur, les licences et les groupes avec Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+- [Gérer Office 365 avec Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
 - [Mise en route d'Office 365 Powershell](getting-started-with-office-365-powershell.md)

@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: Découvrez comment configurer la synchronisation d’annuaires entre Office 365 et votre annuaire Active Directory local.
-ms.openlocfilehash: 5cd56eb90e6421d530ff0c2b8739bd13be238eae
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 505dde1a371d269f157ec076b75ca1bc5962c9da
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39814592"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072146"
 ---
 # <a name="set-up-directory-synchronization-for-office-365"></a>Configurer la synchronisation d’annuaires pour Office 365
 
@@ -35,7 +35,7 @@ Office 365 utilise un client Azure Active Directory (Azure AD) pour stocker et g
 
 Si vous disposez d’un service de domaine Active Directory (AD DS) local, vous pouvez synchroniser vos comptes d’utilisateur, groupes et contacts AD DS avec le client Azure AD de votre abonnement Office 365. Il s’agit d’une identité hybride pour Office 365. Voici ses composants.
 
-![](./media/about-office-365-identity/hybrid-identity.png)
+![Composants de la synchronisation d’annuaires pour Office 365](./media/about-office-365-identity/hybrid-identity.png)
 
 Azure AD Connect s’exécute sur un serveur local et synchronise vos services de domaine Active Directory avec le client Azure AD. En plus de la synchronisation d’annuaires, vous pouvez également spécifier les options d’authentification suivantes :
 

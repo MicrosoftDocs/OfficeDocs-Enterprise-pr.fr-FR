@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Découvrez comment collaborer avec des invités sur un site SharePoint.
-ms.openlocfilehash: 21717ce0c8e9e51eaf090a449d35a281722f9600
-ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
+ms.openlocfilehash: 31e1365467729753cec358b4fb33462894cdcbb8
+ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39919257"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "40261357"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Collaborer avec des invités sur un site
 
@@ -121,7 +121,7 @@ Pour inviter des utilisateurs internes à un groupe
 
 Les utilisateurs invités ne peuvent pas être ajoutés à partir du site. Vous devez les ajouter à l’aide d’Outlook sur le Web.
 
-Pour inviter des invités à un site
+Pour inviter des invités à un groupe
 1. Dans Outlook sur le Web, sous **groupes**, cliquez sur le groupe dans lequel vous souhaitez ajouter des membres.
 2. Ouvrez la carte de visite de groupe, puis, sous **autres options** (...), cliquez sur **Ajouter des membres**.
 3. Tapez les adresses de messagerie des invités que vous souhaitez inviter, puis cliquez sur **Ajouter**.
@@ -133,5 +133,7 @@ Pour inviter des invités à un site
 
 [Limiter l’exposition accidentelle aux fichiers lors du partage avec des invités](sharing-limit-accidental-exposure.md)
 
-[Créer un environnement de partage d’invité sécurisé](create-a-secure-guest-sharing-environment.md))
+[Créer un environnement de partage sécurisé avec des invités](create-a-secure-guest-sharing-environment.md)
+
+[Créer un extranet B2B avec des invités gérés](b2b-extranet.md)
 

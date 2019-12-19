@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Certains réseaux d’entreprise restreignent l’accès aux emplacements Internet génériques ou incluent une déformation ou un traitement substantiel du trafic réseau. Pour s’assurer que les ordinateurs sur des réseaux comme ceux-ci peuvent accéder à Office 365, les administrateurs réseau et proxy doivent gérer la liste des noms de domaine complets, des URL et des adresses IP qui composent la liste des points de terminaison Office 365. Ceux-ci doivent être ajoutés à l’itinéraire direct, à la déviation du proxy et/ou aux règles de pare-feu et/ou aux fichiers PAC pour s’assurer que les demandes réseau sont en mesure d’atteindre Office 365.
-ms.openlocfilehash: 99445e6feac84a6091888422039e8ba655d246c9
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: fb0f6640ee9de07bb92b9093a94bb7e4fd111a54
+ms.sourcegitcommit: e70808dccc1622d18b1cc5e1e4babd4238112838
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072486"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40744508"
 ---
 # <a name="managing-office-365-endpoints"></a>Gestion des points de terminaison Office 365
 
@@ -133,14 +133,14 @@ Cliquez sur le lien situé en bas pour indiquer si l’article a été utile ou 
   
 Avec plus de 2500 les relations d’homologation ISP globales et 70 points de présence, l’obtention de votre réseau vers le nôtre doit être transparente. Il n’est pas judicieux de consacrer quelques minutes à la façon de s’assurer que la relation d’homologation de votre fournisseur de services Internet est la plus optimale, [Voici quelques exemples](https://blogs.technet.microsoft.com/onthewire/2017/03/22/__guidance/) de bons et pas de bonnes relations d’homologation à notre réseau.
   
-### <a name="i-see-network-requests-to-ip-addresses-not-on-the-published-list-do-i-need-to-provide-access-to-them"></a>Je vois des demandes réseau à des adresses IP qui ne se trouvent pas dans la liste publiée, dois-je fournir un accès à ces adresses ?
 <a name="bkmk_MissingIP"> </a>
+### <a name="i-see-network-requests-to-ip-addresses-not-on-the-published-list-do-i-need-to-provide-access-to-them"></a>Je vois des demandes réseau à des adresses IP qui ne se trouvent pas dans la liste publiée, dois-je fournir un accès à ces adresses ?
 
 Nous fournissons uniquement des adresses IP pour les serveurs Office 365 que vous devez acheminer directement vers. Il ne s’agit pas d’une liste complète de toutes les adresses IP pour lesquelles vous verrez des demandes réseau. Vous verrez des demandes réseau à Microsoft et à des adresses IP tierces, non publiées. Ces adresses IP sont générées dynamiquement ou gérées d’une manière qui empêche la notification en temps opportun. Si votre pare-feu ne peut pas autoriser l’accès basé sur les noms de domaine complets pour ces demandes réseau, utilisez un fichier PAC ou WPAD pour gérer les demandes.
   
 Voir une adresse IP associée à Office 365 sur laquelle vous souhaitez plus d’informations.
   
-1. Vérifiez si l’adresse IP est incluse dans une plage publiée plus grande à l’aide d’une [calculatrice CIDR](https://www.ipaddressguide.com/cidr).
+1. Vérifiez si l’adresse IP est incluse dans une plage publiée plus grande à l’aide d’une calculatrice CIDR, [](https://www.ipaddressguide.com/cidr) comme celles-ci pourhttps://www.ipaddressguide.com/ipv6-cidr)IPv4 ou [IPv6].
 2. Voir si un partenaire possède la IP avec une [requête Whois](https://dnsquery.org/). S’il est détenu par Microsoft, il peut s’agir d’un partenaire interne.
 3. Vérifiez le certificat, dans un navigateur Connectez-vous à l’adresse IP à l’aide de *https://\<IP_ADDRESS\> * , vérifiez les domaines répertoriés sur le certificat pour comprendre quels domaines sont associés à l’adresse IP. S’il s’agit d’une adresse IP appartenant à Microsoft et non sur la liste des adresses IP Office 365, l’adresse IP est probablement associée à un CDN Microsoft tel que *MSOCDN.net* ou un autre domaine Microsoft sans informations IP publiées. Si vous trouvez le domaine sur le certificat est un domaine dans lequel nous revendiquons de répertorier l’adresse IP, veuillez nous le faire savoir.
 
@@ -159,8 +159,8 @@ Un serveur proxy valide l’URL initiale qui, dans l’exemple ci-dessus, est se
 
 Les configurations codées en dur ou la fonctionnalité de liste de domaines autorisées basée sur les noms de domaine complets Office 365 indirects ne sont pas recommandées par Microsoft et sont connues comme entraînant des problèmes de connectivité client. Les solutions DNS qui bloquent sur la redirection CNAMe, ou qui résolvent les entrées DNS Office 365 de manière incorrecte, peuvent être résolues via le transfert conditionnel DNS (étendu aux noms de domaine complets Office 365) avec la récursivité DNS activée. De nombreux produits de périmètre réseau tiers intègrent en mode natif la liste de point de terminaison 365 Office dans leur configuration à l’aide de l' [adresse IP office 365 et du service Web d’URL](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service).
 
-### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>Pourquoi est-ce que je vois des noms tels que nsatc.net ou akadns.net dans les noms de domaine Microsoft ?
 <a name="bkmk_akamai"> </a>
+### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>Pourquoi est-ce que je vois des noms tels que nsatc.net ou akadns.net dans les noms de domaine Microsoft ?
 
 Office 365 et d’autres services Microsoft utilisent plusieurs services tiers tels que Akamai et MarkMonitor pour améliorer votre expérience Office 365. Pour vous assurer de la meilleure expérience possible, nous pouvons modifier ces services à l’avenir. Les domaines tiers peuvent héberger du contenu, tel qu’un CDN, ou ils peuvent héberger un service, tel qu’un service de gestion du trafic géographique. Voici quelques-uns des services actuellement utilisés :
   
@@ -182,8 +182,8 @@ Office 365 et d’autres services Microsoft utilisent plusieurs services tiers t
 *.edgesuite.net
 ```
 
-### <a name="i-have-to-have-the-minimum-connectivity-possible-for-office-365"></a>Je dois disposer de la connectivité minimale pour Office 365
 <a name="bkmk_thirdparty"> </a>
+### <a name="i-have-to-have-the-minimum-connectivity-possible-for-office-365"></a>Je dois disposer de la connectivité minimale pour Office 365
 
 Comme Office 365 est une suite de services conçue pour fonctionner sur Internet, les promesses de fiabilité et de disponibilité sont basées sur de nombreux services Internet standard disponibles. Par exemple, les services Internet standard, tels que DNS, la liste de révocation de certificats et CDN doivent être accessibles pour utiliser Office 365, tout comme ils doivent être accessibles pour utiliser les services Internet modernes les plus récents.
 
@@ -200,8 +200,8 @@ En plus des services Internet de base, il existe des services tiers qui sont uni
   
 Si vous essayez d’utiliser Office 365 et que vous ne pouvez pas accéder aux services tiers, vous devez vous [assurer que tous les noms de domaine complets marqués comme obligatoires ou facultatifs dans cet article sont autorisés via le proxy et le pare-feu](urls-and-ip-address-ranges.md).
   
-### <a name="how-do-i-block-access-to-microsofts-consumer-services"></a>Comment bloquer l’accès aux services grand public de Microsoft ?
 <a name="bkmk_consumer"> </a>
+### <a name="how-do-i-block-access-to-microsofts-consumer-services"></a>Comment bloquer l’accès aux services grand public de Microsoft ?
 
 La restriction de l’accès à nos services grand public doit être réalisée à vos propres risques. La seule façon fiable de bloquer les services grand public est de restreindre l’accès au nom de domaine complet *login.live.com* . Ce nom de domaine complet est utilisé par un large éventail de services, y compris des services non consommateurs tels que MSDN, TechNet, etc. Ce nom de domaine complet est également utilisé par le programme d’échange de fichiers sécurisé de Microsoft et est nécessaire pour transférer des fichiers afin de faciliter la résolution des problèmes pour les produits Microsoft.  La limitation de l’accès à ce nom de domaine complet peut entraîner l’ajout d’exceptions à la règle pour les demandes réseau associées à ces services.
   

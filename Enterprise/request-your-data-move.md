@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Les clients Office 365 existants devront envoyer une demande avant la date d'échéance de leur pays afin que les données client de leurs services Office 365 soient déplacées vers leur nouvelle région.
-ms.openlocfilehash: 97fc83db3ceac1a5c3aca65f8b780a3f7841528c
-ms.sourcegitcommit: 77b8fd702d3a1010d3906d4024d272ad2097f54f
+ms.openlocfilehash: 6c5b576b0d099f4a46aca63a72390d27ae39984b
+ms.sourcegitcommit: 761dd21a6b7a2650ef26fd8d6b303c04fa2546f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962461"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "40923876"
 ---
 # <a name="how-to-request-your-data-move"></a>Procédure de demande d’un déplacement de données
 
@@ -30,16 +30,16 @@ Les clients Office 365 existants sont autorisés à demander une migration préc
 
 |**Clients avec pays d’abonnement dans**|**Début de période de la demande**|**Date d'échéance de la demande**|
 |:-----|:-----|:-----|
-|Japon  <br/> |1er août 2016  <br/> |31 octobre 2016  <br/> |
-|Australie, Nouvelle-Zélande, Fidji  <br/> |1er août 2016  <br/> |31 octobre 2016  <br/> |
-|Inde  <br/> |1er août 2016  <br/> |31 octobre 2016  <br/> |
-|Canada  <br/> |1er août 2016  <br/> |31 octobre 2016  <br/> |
-|Royaume-Uni  <br/> |15 mars 2017  <br/> |15 septembre 2017  <br/> |
-|Corée du Sud  <br/> |1er mai 2017  <br/> |31 octobre 2017  <br/> |
-|France  <br/> |14 mars 2018  <br/> |15 septembre 2018  <br/> |
-|Émirats arabes unis  <br/> |15 juillet 2019  <br/> |31 janvier 2020  <br/> |
-|Afrique du Sud  <br/> |25 juillet 2019  <br/> |31 janvier 2020  <br/> |
-|Suisse, Liechtenstein  <br/> |10 décembre 2019  <br/> |30 juin 2020  <br/> |
+|Japon  <br/> |1er janvier 2020  <br/> |30 juin 2020  <br/> |
+|Australie, Nouvelle-Zélande, Fidji  <br/> |1er janvier 2020  <br/> |30 juin 2020  <br/> |
+|Inde  <br/> |1er janvier 2020  <br/> |30 juin 2020  <br/> |
+|Canada  <br/> |1er janvier 2020  <br/> |30 juin 2020  <br/> |
+|Royaume-Uni  <br/> |1er janvier 2020  <br/> |30 juin 2020  <br/> |
+|Corée du Sud  <br/> |1er janvier 2020  <br/> |30 juin 2020  <br/> |
+|France  <br/> |1er janvier 2020  <br/> |30 juin 2020  <br/> |
+|Émirats arabes unis  <br/> |15 juillet 2019  <br/> |30 juin 2020  <br/> |
+|Afrique du Sud  <br/> |25 juillet 2019  <br/> |30 juin 2020  <br/> |
+|Suisse, Liechtenstein  <br/> |10 décembre 2019  <br/> |30 juin 2020  <br/> |
 |Allemagne  <br/> |Vision  <br/> |Vision  <br/> |
    
 ## <a name="how-to-request-a-move"></a>Procédure de demande d’un déplacement
@@ -72,9 +72,9 @@ Après avoir demandé un déplacement, nous allons vous déplacer aussi rapideme
   
 Les déplacements peuvent prendre jusqu'à 24 mois à compter de la date d'échéance de la demande pour votre pays.
   
-## <a name="microsoft-teams"></a>Microsoft Teams
+## <a name="microsoft-teams"></a>Microsoft Teams
 
-La prise en charge de la migration pour les données de messagerie de canal et de conversation Microsoft teams sera ajoutée au programme de migration local Office 365.  Nous prévoyons d’ouvrir l’inscriptions de programmes en janvier 2020 pour tous les clients éligibles, y compris les clients qui ont précédemment opté pour la migration vers Exchange Online et SharePoint Online/OneDrive entreprise.  Nous allons exposer le contrôle d’adhésion dans le centre d’administration 365 de Microsoft et envoyer une notification dans le centre de messages à tous les clients éligibles.   
+Depuis le 2020 janvier, les clients des pays Office 365 éligibles peuvent opter pour la migration des données du service de conversation Microsoft Teams.  Les chronologies d’abonnement ont été rouvertes ou étendues pour tous les pays éligibles afin de permettre aux clients de prendre en compte le programme de migration précoce avec Microsoft Teams.   
 
 ## <a name="optional-actions-before-you-request-a-move"></a>Actions facultatives avant d’effectuer une demande de déplacement
 
@@ -104,7 +104,7 @@ Le client d'évaluation ne peut pas être associé à votre client existant :
 
 Si les utilisateurs disposent d’un appareil mobile avec le serveur Exchange défini sur **m.Outlook.com** ou **podxxxxx.Outlook.com**, nous vous recommandons de passer à **Outlook.office365.com**, en suivant les instructions de la procédure [configurer un appareil mobile pour une synchronisation avec votre compte](https://support.office.com/article/c9139caf-01ab-41a0-827c-3c06ee569ed3).
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Transfert de données principales vers le nouveau centre de données Office 365 régions centres](moving-data-to-new-datacenter-geos.md)
 

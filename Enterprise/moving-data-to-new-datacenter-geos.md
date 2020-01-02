@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 description: "Nouveau centre de régions centres ajouter de la capacité et des ressources de calcul pour prendre en charge notre demande de client et sa croissance d’utilisation en cours. En outre, les nouvelles régions de centre de données permettent d'héberger des données dans la région pour les données client essentielles. Le terme « données client essentielles » fait référence à un sous-ensemble de données client définies dans les conditions d'utilisation de Microsoft Online Services : Exchange Onlinecontenu de la boîte aux lettres (corps de courrier électronique, entrées de calendrier et contenu de pièces jointes), SharePoint Onlinecontenu du site et fichiers stockés dans ce site, ainsi que fichiers téléchargés vers OneDrive Entreprise."
-ms.openlocfilehash: 8dcbcd6bbbe1761c9d57c953ad176c87b5b3f221
-ms.sourcegitcommit: 77b8fd702d3a1010d3906d4024d272ad2097f54f
+ms.openlocfilehash: dd8cb060980db16672225fa7543958441a5bebc9
+ms.sourcegitcommit: 761dd21a6b7a2650ef26fd8d6b303c04fa2546f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962451"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "40923866"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Déplacement de données essentielles vers les nouvelles régions de centres de données Office 365
 
@@ -26,7 +26,8 @@ Nous continuons à ouvrir de nouvelles régions de centres de données pour les 
 Les données client principales sont un terme qui fait référence à un sous-ensemble de données client, notamment : 
 - Contenu de boîte aux lettres Exchange Online (corps de courrier électronique, entrées de calendrier et contenu de pièces jointes)
 - Contenu de site SharePoint Online et fichiers stockés dans ce site
-- Fichiers téléchargés vers OneDrive entreprise 
+- Fichiers téléchargés vers OneDrive entreprise
+- Messages de conversation Teams, y compris les messages privés, les messages de canal et les images utilisées dans les conversations
   
 Les clients existants dont les données client essentielles sont stockées dans une région de centre de données existante ne sont pas concernés par le lancement de la nouvelle région de centre de données. Aucune fonction, fonctionnalité ou certification de conformité unique n'est fournie avec la nouvelle région de centre de données. En tant que client de l'une de ces deux régions, vous bénéficierez de la même qualité de service, ainsi que des mêmes performances et contrôles de sécurité qu'auparavant. Nous proposons aux clients existants figurant dans le tableau ci-dessous une option permettant de demander une migration précoce des données client principales de leur organisation au repos sur leur nouvelle région de centre de données.
   
@@ -67,7 +68,7 @@ Les déplacements de données sont des opérations de service principales qui on
 
 Les données sont déplacées vers la nouvelle région de centre de données.
     
-## <a name="related-topics"></a>Sujets associés 
+## <a name="related-topics"></a>Voir aussi 
  
 [Procédure de demande d’un déplacement de données](request-your-data-move.md)
     

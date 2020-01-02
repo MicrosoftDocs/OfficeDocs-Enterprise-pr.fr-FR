@@ -13,12 +13,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Les déplacements de données sont des opérations principales n'ayant que peu d'impact sur les utilisateurs finals. Aucune action de votre part n'est requise lorsque Microsoft déplace chaque service et les données associées pour votre client vers une nouvelle zone géographique de centres de données. Le transfert de données et la validation se déroulent en arrière-plan à l'avance, et n'ont qu'une incidence minimale sur les utilisateurs.
-ms.openlocfilehash: b445397f6ce5b3c5178093ed971230e2a8640d1d
-ms.sourcegitcommit: 09b3a302c0c9a0370dd86d111c7d5e63cc39a9a0
+ms.openlocfilehash: f98d3a9aaef1197b1f424ce8cbd23b3d18b7ef2b
+ms.sourcegitcommit: 761dd21a6b7a2650ef26fd8d6b303c04fa2546f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39959279"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "40923856"
 ---
 # <a name="during-and-after-your-data-move"></a>Pendant et après le déplacement de vos données
 
@@ -32,18 +32,21 @@ Surveillez le centre de messages Office 365 dans l'attente de la confirmation de
 
 |**Clients avec pays d’abonnement dans**|**Tous les déplacements terminés d'ici le**|
 |:-----|:-----|
-|Australie, Nouvelle-Zélande, Fidji  <br/> |31 octobre 2017  <br/> |
-|Japon  <br/> |31 octobre 2018  <br/> |
-|Inde  <br/> |31 octobre 2018  <br/> |
-|Canada  <br/> |30 juin 2019  <br/> |
-|Corée du Sud  <br/> |31 octobre 2018  <br/> |
-|Royaume-Uni  <br/> |15 septembre 2019  <br/> |
-|France  <br/> |15 septembre 2020  <br/> |
-|Émirats arabes unis  <br/> |1er février 2022  <br/> |
-|Afrique du Sud  <br/> |1er février 2022  <br/> |
+|Australie, Nouvelle-Zélande, Fidji  <br/> |1er juillet 2022  <br/> |
+|Japon  <br/> |1er juillet 2022  <br/> |
+|Inde  <br/> |1er juillet 2022  <br/> |
+|Canada  <br/> |1er juillet 2022  <br/> |
+|Corée du Sud  <br/> |1er juillet 2022  <br/> |
+|Royaume-Uni  <br/> |1er juillet 2022  <br/> |
+|France  <br/> |1er juillet 2022  <br/> |
+|Émirats arabes unis  <br/> |1er juillet 2022  <br/> |
+|Afrique du Sud  <br/> |1er juillet 2022  <br/> |
 |Suisse, Liechtenstein  <br/> |1er juillet 2022  <br/> |
 |Allemagne  <br/> |Vision  <br/> |
-   
+
+> [!NOTE]
+> Les clients des pays Office 365 éligibles peuvent opter pour la migration des données du service de conversation Microsoft teams entre le 1er janvier 2020 et le 30 juin 2020, ce qui entraîne également la migration de toutes les autres charges de travail éligibles.  Les clients qui ont opté pour la migration avant le 2020 peuvent s’attendre à ce que les déplacements d’Exchange Online et de SharePoint Online/OneDrive entreprise soient terminés à partir du 1er juillet 2022 pour tous les clients. 
+
 ## <a name="exchange-online"></a>Exchange Online
 
 Comme le déplacement de chaque utilisateur vers la nouvelle zone géographique de centres de données pour un seul client prend du temps, certains utilisateurs seront encore dans l’ancienne zone géographique de centres de données pendant le déplacement, tandis que d’autres seront dans la nouvelle. Cela signifie que certaines fonctionnalités qui impliquent l’accès à plusieurs boîtes aux lettres peuvent ne pas fonctionner entièrement pendant une période du processus de déplacement, qui peut durer des semaines. Ces fonctionnalités sont décrites dans les sections suivantes.
@@ -102,7 +105,11 @@ Les fonctionnalités de recherche suivantes sont concernées :
 - eDiscovery (découverte électronique) : Les éléments modifiés au cours de la migration ne sont pas affichés avant que l’analyse n’ait récupéré les modifications.
     
 - Protection contre la perte de données (DLP) : Les politiques ne sont pas appliquées sur les éléments qui changent avant que l’analyse n’ait récupéré les modifications.
-    
+
+## <a name="microsoft-teams"></a>Microsoft Teams
+
+Les clients des pays Office 365 éligibles peuvent opter pour la migration des données du service de conversation Microsoft teams à partir du 1er janvier 2020.  
+
 ## <a name="skype-for-business"></a>Skype Entreprise
 
 Tous les utilisateurs seront déconnectés du logiciel client Skype Entreprise pendant le basculement. La connexion automatique permettra aux utilisateurs de se reconnecter dans les deux minutes qui suivent.
@@ -118,7 +125,7 @@ Tous les utilisateurs seront déconnectés du logiciel client Skype Entreprise p
 ### <a name="skype-for-business-moves-that-involve-a-third-party-audio-conferencing-provider"></a>Déplacements Skype entreprise impliquant un fournisseur de services d’audioconférence tiers
 Les services de module complémentaire de fournisseurs de services d’audioconférence tiers pour Skype Entreprise ne sont pas disponibles pour les utilisateurs hébergés dans des centres de données propres à une nouvelle zone géographique.   Les clients existants qui utilisent un service de fournisseur de services d’audioconférence tiers ne doivent pas demander de déplacement vers un centre de données propre à une nouvelle zone géographique.   Les nouveaux clients déployés dans les centres de données propres à une nouvelle zone géographique doivent demander un déplacement vers un centre de données régional afin d’utiliser un fournisseur de services d’audioconférence tiers. 
   
-## <a name="related-topics"></a>Sujets associés 
+## <a name="related-topics"></a>Voir aussi 
  
 [Procédure de demande d’un déplacement de données](request-your-data-move.md)
     

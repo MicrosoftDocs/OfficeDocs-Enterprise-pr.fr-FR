@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: Voici des réponses à des questions d’ordre général sur le transfert de données principales vers une nouvelle région de centre de données.
-ms.openlocfilehash: fd133dfb28ae99115198977e2e6d637a872078d8
-ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
+ms.openlocfilehash: cea25e2e3a400c2bcf76c2dbe13c4f7ba1a7b884
+ms.sourcegitcommit: 761dd21a6b7a2650ef26fd8d6b303c04fa2546f2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38756583"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "40923846"
 ---
 # <a name="data-move-general-faq"></a>FAQ général relatif au déplacement de données
 
@@ -50,6 +50,14 @@ Il existe deux actions que vous pouvez prendre en tant qu’administrateur clien
 Les déplacements de données sont une opération de service principal avec un impact minimal sur les utilisateurs finaux. Les fonctionnalités qui peuvent être affectées sont répertoriées [pendant et après le déplacement de vos données](during-and-after-your-data-move.md). Nous respectons le [contrat de niveau de service Microsoft Online Services (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) pour la disponibilité, de sorte que les clients ne doivent pas se préparer ou à surveiller pendant le déplacement. 
   
 Tous les services Office 365 sont exécutés avec les mêmes versions dans les centres de données. Vous pouvez ainsi être certain de la cohérence des fonctionnalités. Votre service est entièrement pris en charge tout au long du processus.
+
+## <a name="what-is-in-scope-for-teams-migration"></a>Quelle est la portée de la migration de teams ?
+
+En plus d’Exchange Online, de SharePoint Online et de OneDrive entreprise ; Microsoft migre les données de teams vers le centre de données local.  
+- Les messages de conversation Teams, y compris les messages privés et les messages de canal. 
+- Images de teams utilisées dans les conversations. 
+
+Les fichiers teams sont stockés dans SharePoint Online et les fichiers de conversation teams sont stockés dans OneDrive entreprise.  La messagerie vocale, le calendrier, l’historique des conversations et les contacts sont stockés dans Exchange Online.  Dans de nombreux cas, Exchange Online, SharePoint Online et OneDrive entreprise sont déjà utilisés par le client dans la région de centre de donneurs locaux et font également partie du programme de migration Office 365 pour les pays clients éligibles.
   
 ## <a name="what-is-the-impact-of-having-different-services-located-in-different-geos"></a>Quel est l’impact de l’utilisation de différents services dans différents régions centres ?
 
@@ -141,7 +149,7 @@ R. Oui. Microsoft gère un vaste réseau mondial avec des connexions Internet pu
 
 Oui, votre locataire peut être inscrit.  Nous allons déplacer toutes les boîtes aux lettres EXO de votre région actuelle par défaut vers votre nouvelle région de centre de centres local.  Nous ne allons pas déplacer les boîtes aux lettres EXO configurées dans des régions multigéographiques satellites pour continuer à respecter la résidence des données des régions satellites comme prévu.  SharePoint Online et OneDrive entreprise ne peuvent pas migrer vers la nouvelle région de centre de travail dans le cadre du programme de déplacement, mais vous pouvez configurer les partages de OneDrive entreprise pour passer à une région de votre choix via le programme multigéographique.
   
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Transfert de données principales vers le nouveau centre de données Office 365 régions centres](moving-data-to-new-datacenter-geos.md)
 

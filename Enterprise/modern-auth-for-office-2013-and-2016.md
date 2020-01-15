@@ -21,16 +21,16 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment fonctionne différemment l’authentification moderne Office 365 pour les applications clientes Office 2013 et 2016.
-ms.openlocfilehash: 8fde952201b01a235794ddcd59abeed402a368d4
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: aebc9957ed3eac5997bf8646dfc7284f24a2ed1b
+ms.sourcegitcommit: ef5447665d6ebbc79399b560c9725d74e1479f7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747987"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41122573"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Fonctionnement de l’authentification moderne pour les applications clientes Office 2013 et Office 2016
 
-*Cet article s’applique à la fois à Office 365 entreprise et à Microsoft 365 entreprise.*
+*Cet article est valable pour Office 365 Entreprise et Microsoft 365 Entreprise*.
 
 Lisez cet article pour découvrir comment les applications clientes Office 2013 et Office 2016 utilisent des fonctionnalités d’authentification modernes basées sur la configuration de l’authentification sur le client Office 365 pour Exchange Online, SharePoint Online et Skype entreprise online.
 
@@ -73,6 +73,7 @@ Le tableau suivant décrit le comportement d’authentification pour les applica
   
 |Version de l’application cliente Office * * * *|Clé de registre présente ? * * * *|Authentification moderne activée ? * * * *|Comportement d’authentification avec l’authentification moderne activée pour le client (par défaut) * * * *|Comportement d’authentification avec l’authentification moderne désactivée pour le client * * * *|
 |:-----|:-----|:-----|:-----|:-----|
+|Office 2016  <br/> |Nbre <br> AlwaysUseMSOAuthForAutoDiscover = 1 <br/> |Oui  <br/> |Force l’authentification moderne sur Outlook 2010, 2013 ou 2016 <br/> [Plus d’informations](https://support.microsoft.com/help/3126599/outlook-prompts-for-password-when-modern-authentication-is-enabled)|Force l’authentification moderne dans le client Outlook.<br/> |
 |Office 2016  <br/> |Non, ou EnableADAL = 1  <br/> |Oui  <br/> |L’authentification moderne est tentée en premier. Si le serveur refuse une connexion d’authentification moderne, l’authentification de base est alors utilisée. Le serveur refuse l’authentification moderne lorsque le client n’est pas activé.  <br/> |L’authentification moderne est tentée en premier. Si le serveur refuse une connexion d’authentification moderne, l’authentification de base est alors utilisée. Le serveur refuse l’authentification moderne lorsque le client n’est pas activé.  <br/> |
 |Office 2016  <br/> |Oui, EnableADAL = 1  <br/> |Oui  <br/> |L’authentification moderne est tentée en premier. Si le serveur refuse une connexion d’authentification moderne, l’authentification de base est alors utilisée. Le serveur refuse l’authentification moderne lorsque le client n’est pas activé.  <br/> |L’authentification moderne est tentée en premier. Si le serveur refuse une connexion d’authentification moderne, l’authentification de base est alors utilisée. Le serveur refuse l’authentification moderne lorsque le client n’est pas activé.  <br/> |
 |Office 2016  <br/> |Oui, EnableADAL = 0  <br/> |Non  <br/> |Authentification de base  <br/> |Authentification de base  <br/> |
@@ -107,7 +108,7 @@ Le tableau suivant décrit le comportement d’authentification pour les applica
    
 ## <a name="see-also"></a>Voir aussi
 
-[Activer l’authentification moderne pour Office 2013 sur les appareils Windows](https://support.office.com/article/enable-modern-authentication-for-office-2013-on-windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910)
+[Activer l’Authentification moderne pour Office 2013 sur les appareils Windows](https://support.office.com/article/enable-modern-authentication-for-office-2013-on-windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910)
 
 [Planifier l’authentification multifacteur pour les déploiements d’Office 365 (pour les administrateurs d’Office 365)](https://support.office.com/article/plan-for-multi-factor-authentication-for-office-365-deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
 

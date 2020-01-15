@@ -23,12 +23,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Affichez l’état d’intégrité des services Office 365 avant d’appeler la prise en charge pour déterminer s’il existe une interruption de service Active.
-ms.openlocfilehash: 5d9b4c65932f65b878518bd5e0f33a1c5336aaf9
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+ms.openlocfilehash: 20584f2cb0ecc32da9f5403c36c6af3f0287bea9
+ms.sourcegitcommit: ef5447665d6ebbc79399b560c9725d74e1479f7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "37931724"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41122583"
 ---
 # <a name="how-to-check-office-365-service-health"></a>Vérifier l'état du service Office 365
 
@@ -55,7 +55,7 @@ Si vous ne parvenez pas à vous connecter au service portail de service, vous po
 
 L’onglet **tous les services** (affichage par défaut) affiche tous les services et leur état d’intégrité actuel. Une icône et la colonne d' **État** indiquent l’état de chaque service. Pour filtrer votre vue sur les services rencontrant actuellement un incident, sélectionnez l’onglet **incidents** en haut de la page. La sélection de l’onglet **conseils** affiche uniquement les services pour lesquels un avis a déjà été publié. L’onglet **historique** affiche l’historique des incidents et des avis qui ont été résolus.
 
-Si vous rencontrez un problème qui n’apparaît pas dans la liste, sélectionnez **signaler un problème**, complétez le formulaire abrégé pour nous signaler le problème, puis sélectionnez **Envoyer**.
+Si vous rencontrez un problème avec un service Office 365 et que vous ne l’avez pas mentionné sur la page **État du service** , nous vous le signalons en sélectionnant **signaler un problème**et achever la forme abrégée. Nous examinerons les données et rapports associés d’autres organisations pour voir l’étendue du problème et, si c’est le cas, il provenait de notre service. Si c’est le cas, nous l’ajouterons en tant que nouvel incident ou avis sur la page **État du service** , où vous pouvez suivre sa résolution. Si elle ne s’affiche pas dans la liste dans un délai de 30 minutes, contactez le support technique pour résoudre le problème.
 
 > [!TIP]
 > Vous pouvez également utiliser l'[application Office 365 Admin](https://go.microsoft.com/fwlink/p/?linkid=627216) sur votre appareil mobile pour afficher l'état du service, ce qui constitue un excellent moyen de vous tenir informé des notifications Push. 

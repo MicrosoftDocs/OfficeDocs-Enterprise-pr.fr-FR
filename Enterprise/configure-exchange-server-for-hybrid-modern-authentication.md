@@ -14,12 +14,12 @@ ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 ms.collection:
 - M365-security-compliance
 description: L’authentification moderne hybride (HMA), est une méthode de gestion des identités qui offre une authentification et une autorisation utilisateur plus sécurisées, et est disponible pour les déploiements hybrides Exchange Server locaux.
-ms.openlocfilehash: f5bbbffb3d21ab5eebfb7704318c08abe75f064b
-ms.sourcegitcommit: f18f75dba4cbec557fa094bd1cebd8c5cc4752c1
+ms.openlocfilehash: 1a8bed186acd8da9c5f223120c5e58e8bfd445b4
+ms.sourcegitcommit: ef5447665d6ebbc79399b560c9725d74e1479f7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40085169"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41122563"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Comment configurer Exchange Server en local pour utiliser l’authentification moderne hybride
 
@@ -164,3 +164,5 @@ Si vous êtes un client local utilisant Exchange Server sur le port TCP 443, veu
 
 [Vue d’ensemble de l’authentification moderne hybride et conditions préalables à son utilisation avec des serveurs Skype entreprise et Exchange locaux](hybrid-modern-auth-overview.md) 
   
+Forcer les utilisateurs d’Outlook à l’authentification moderne  
+[Conditions requises pour la configuration de l’authentification moderne pour la transition à partir d’Office 365 dédié/ITAR vers vNext](modern-authentication-configuration.md)

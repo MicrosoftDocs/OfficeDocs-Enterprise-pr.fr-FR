@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Découvrez comment collaborer avec des invités dans Teams.
-ms.openlocfilehash: 2743b1062aebf5e8fbc1db191fcf36f4091bc1f3
-ms.sourcegitcommit: f18f75dba4cbec557fa094bd1cebd8c5cc4752c1
+ms.openlocfilehash: 45a806694285006faa02ff4df413f4078016b9d9
+ms.sourcegitcommit: ef5447665d6ebbc79399b560c9725d74e1479f7d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40085199"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41122593"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Collaborer avec des invités au sein d’une équipe
 
@@ -171,6 +171,6 @@ Pour inviter des invités à une équipe
 
 [Limiter l’exposition accidentelle aux fichiers lors du partage avec des invités](sharing-limit-accidental-exposure.md)
 
-[Créer un environnement de partage d’invité sécurisé](create-a-secure-guest-sharing-environment.md))
+[Créer un environnement de partage sécurisé avec des invités](create-a-secure-guest-sharing-environment.md)
 
 [Créer un extranet B2B avec des invités gérés](b2b-extranet.md)

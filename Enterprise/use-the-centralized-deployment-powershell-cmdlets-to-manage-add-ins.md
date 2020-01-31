@@ -1,9 +1,9 @@
 ---
 title: Utiliser les applets de commande PowerShell de déploiement centralisé pour gérer les compléments
-ms.author: twerner
-author: twernermsft
-manager: scotv
-ms.date: 5/31/2017
+ms.author: kvice
+author: kelleyvice-msft
+manager: laurawi
+ms.date: 1/24/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 description: Utilisez les applets de commande PowerShell de déploiement centralisé pour vous aider à déployer et gérer des compléments Office pour votre organisation Office 365.
-ms.openlocfilehash: 72f7ad69f1154c65ee5f6bd608770461ae775257
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 0577a4d69d7b6d32164e66613a9d38a71d9766e4
+ms.sourcegitcommit: 3ed7b1eacf009581a9897524c181afa3e555ad3f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030859"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41570871"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Utiliser les applets de commande PowerShell de déploiement centralisé pour gérer les compléments
 
@@ -106,7 +106,7 @@ Get-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 Pour obtenir tous les détails de tous les compléments, ainsi que les utilisateurs et les groupes affectés, redirigez la sortie de la cmdlet **Get-OrganizationAddIn** vers la cmdlet Format-List, comme illustré dans l’exemple suivant.
   
 ```powershell
-Get-OrganizationAddIn |Format-List
+foreach($G in (Get-organizationAddIn)){Get-OrganizationAddIn -ProductId $G.ProductId | Format-List}
 ```
 
 ## <a name="turn-on-or-turn-off-an-add-in"></a>Activation ou désactivation d’un complément
@@ -168,53 +168,54 @@ Pour supprimer un complément, exécutez l’applet de commande **Remove-Organiz
 Remove-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 ```
 
-## <a name="customize-microsoft-store-add-ins-for-your-organization"></a>Personnalisation des compléments Microsoft Store pour votre organisation
+<!--
+## Customize Microsoft Store add-ins for your organization
 
-Vous devez personnaliser le complément avant de le déployer dans votre organisation. Les compléments antérieurs à la version 1,1 ne sont pas pris en charge par cette fonctionnalité. 
+You must customize the add-in before you deploy it to your organization. Add-ins older than version 1.1 are not supported by this feature. 
 
-Nous vous recommandons de déployer un complément personnalisé pour vous assurer qu’il fonctionne comme prévu avant de le déployer dans l’ensemble de votre organisation.
+We recommend that you deploy a customized add-in  to yourself first to make sure it works as expected before you deploy it to your entire organization.
 
-Notez également les restrictions suivantes :
-- Toutes les URL doivent être absolues (y compris http ou https) et valides.
-- *DisplayName* ne doit pas dépasser 125 caractères 
-- *DisplayName*, les *ressources* et les *AppDomains* ne doivent pas inclure les caractères suivants : 
+Note also the following restrictions:
+- All URLs must be absolute (include http or https) and valid.
+- *DisplayName* must not exceed 125 characters 
+- *DisplayName*, *Resources* and *AppDomains* must not include the following characters: 
  
     - \<
     -  \>
     -  ;
     -  =   
 
-Si vous souhaitez personnaliser un complément qui a été déployé, vous devez le désinstaller dans le centre d’administration et voir [supprimer un complément du cache local](#remove-an-add-in-from-local-cache) pour connaître les étapes à suivre pour le supprimer de chaque ordinateur sur lequel il a été déployé.
+If you want to customize an add-in that has been deployed, you have to uninstall it in the admin center, and see [remove an add-in from local cache](#remove-an-add-in-from-local-cache) for steps to remove it from each computer it has been deployed to.
 
-Pour personnaliser un complément, exécutez l’applet de commande **Set – OrganizationAddInOverrides** avec le *ProductID* en tant que paramètre, suivi de la balise que vous souhaitez remplacer et de la nouvelle valeur. Pour savoir comment obtenir le *ProductID* , consultez la rubrique [obtenir les détails d’un complément](#get-details-of-an-add-in) dans cet article. Par exemple :
+To customize an add-in, run the **Set –OrganizationAddInOverrides** cmdlet with the *ProductId* as a parameter, followed by the tag you want to overwrite and the new value. To find out how to get the *ProductId* see [get details of an add-in](#get-details-of-an-add-in) in this article. For example:
 
 ```powershell
  Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -IconUrl "https://site.com/img.jpg" 
 ```
-Pour personnaliser plusieurs balises pour un complément, ajoutez-les à la ligne de ligne :
+To customize multiple tags for an add-in, add those tags to the commandline:
 
 ```powershell
 Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -Hosts h1, 2 -DisplayName "New DocuSign W" -IconUrl "https://site.com/img.jpg" 
 ```
 
 > [!IMPORTANT]
-> Vous devez appliquer plusieurs balises personnalisées à un complément en tant que commande unique. Si vous personnalisez les balises une par une, seule la dernière personnalisation sera appliquée. En outre, si vous personnalisez une balise par inadvertance, vous devez supprimer toutes les personnalisations et recommencer.
+> You must apply multiple customized tags to one add-in as one command. If you customize tags one by one, only the last customization will be applied. Additionally, if you customize a tag by mistake, you must remove all customizations and start over.
 
-### <a name="tags-you-can-customize"></a>Balises que vous pouvez personnaliser
+### Tags you can customize
 
 | Tag                  | Description          |
 | :------------------- | :------------------- |
-| \<> IconURL   </br>| URL de l’image utilisée comme icône du complément (dans le centre d’administration). </br> |
-| \<DisplayName>| Titre du complément (dans le centre d’administration).|
-| \<Hôtes>| Liste des applications qui prendront en charge le complément.|
-| \<> SourceLocation | URL source à laquelle le complément se connectera.| 
-| \<AppDomains> | Liste des domaines avec lesquels le complément peut se connecter. | 
-| \<SupportURL,>| L’URL que les utilisateurs peuvent utiliser pour accéder à l’aide et à la prise en charge. | 
-| \<Ressources>  | Cette balise contient un certain nombre d’éléments, y compris des titres, des info-bulles et des icônes de tailles différentes.| 
+| \<IconURL>   </br>| The URL of the image used as the add-in’s icon (in admin center). </br> |
+| \<DisplayName>| The title of the add-in  (in admin center).|
+| \<Hosts>| List of apps that will support the add-in.|
+| \<SourceLocation> | The source URL that the add-in will connect to.| 
+| \<AppDomains> | A list of domains that the add-in can connect with. | 
+| \<SupportURL>| The URL users can use to access help and support. | 
+| \<Resources>  | This tag contains a number of elements including titles, tooltips, and icons of different sizes.| 
 |
-### <a name="customize-resources-tag"></a>Personnaliser la balise des ressources
+### Customize Resources tag
 
-Tout élément dans la <Resources> balise du manifeste peut être personnalisé de manière dynamique. Vous devez d’abord vérifier le manifeste pour trouver l’ID de l’élément auquel vous souhaitez affecter une nouvelle valeur. La <Resources> balise se présente comme suit :
+Any element in the <Resources> tag of the manifest can be customized dynamically. You first need to check the manifest to find the element id to which you want to assign a new value. The <Resources> tag looks like this:
 
 ```
 <Resources>  
@@ -223,45 +224,47 @@ Tout élément dans la <Resources> balise du manifeste peut être personnalisé 
     </bt:Images> 
 </Resources> 
 ``` 
-Dans ce cas, l’ID d’élément de l’image est « img16icon » et la valeur qui lui est associée est «<i></i>http://site. <i> </i>com/img. jpg. "
+In this case, the element id for the image is “img16icon” and the value associated with it is “http:<i></i>//site.<i></i>com/img.jpg.”
 
-Une fois que vous avez identifié les éléments que vous souhaitez personnaliser, utilisez la commande suivante dans PowerShell pour affecter de nouvelles valeurs aux éléments :
+Once you have identified the elements you want to customize, use the following command in Powershell to assign new values to the elements:
 
 ```powershell
 Set-OrganizationAddInOverrides -Resources @{“ElementID” = “New Value”; “NextElementID” = “Next New Value”} 
 ```
 
-Vous pouvez personnaliser autant d’éléments à l’aide de la commande que vous le souhaitez.
+You can customize as many elements with the command as you need to.
 
-### <a name="remove-customization-from-an-add-in"></a>Supprimer la personnalisation d’un complément
+### Remove customization from an add-in
 
-La seule option actuellement disponible pour la suppression des personnalisations consiste à les supprimer toutes en même temps :
+The only option currently available for deleting customizations is to delete all of them at once:
 
 ```powershell
 Remove-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 
 ```
 
-### <a name="view-add-in-customizations"></a>Afficher les personnalisations des compléments
+### View add-in customizations
 
-Pour afficher la liste des personnalisations appliquées, exécutez la cmdlet **Get-OrganizationAddInOverrides** . Si **Get-OrganizationAddInOverrides** est exécuté sans *ProductID* , une liste de tous les compléments avec des substitutions appliquées est renvoyée.  
+To view a list of applied customizations, run the **Get-OrganizationAddInOverrides** cmdlet. If **Get-OrganizationAddInOverrides** is run without a *ProductId* then a list of all add-ins with applied overrides are returned.  
 
 ```powershell
 Get-OrganizationAddInOverrides 
 ```
-Si ProductId est spécifié, une liste de substitutions appliquée à ce complément est renvoyée. 
+If ProductId is specified, then a list of overrides applied to that add-in is returned. 
 
 ```powershell
 Get-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 
 ```
 
-### <a name="remove-an-add-in-from-local-cache"></a>Supprimer un complément du cache local
+### Remove an add-in from local cache
 
-Si un complément a été déployé, il doit être supprimé du cache de chaque ordinateur pour pouvoir être personnalisé. Pour remive un complément à partir du cache :
+If an add-in has been deployed, it has to be removed from the cache in each computer before it can be customized. To remive an add-in from cache:
 
-1. Accédez au dossier « utilisateurs » dans C:\ 
-1. Accéder à votre dossier utilisateur
-1. Accédez à AppData\Local\Microsoft\Office et sélectionnez le dossier associé à votre version d’Office.
-1. Dans le dossier *WEF* , supprimez le dossier *Manifests* .
+1. Navigate to the “Users” folder in C:\ 
+1. Go to your user folder
+1. Navigate to AppData\Local\Microsoft\Office and select the folder associated with your version of Office
+1. In the *Wef* folder delete the *Manifests* folder.
+
+-->
 
 ## <a name="get-detailed-help-for-each-cmdlet"></a>Obtenir de l’aide détaillée pour chaque cmdlet
 

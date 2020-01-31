@@ -17,12 +17,12 @@ search.appverid:
 - MED150
 ms.assetid: ee5f861e-bd48-4267-83d1-a4ead4b4a00d
 description: Découvrez comment utiliser PowerShell pour désactiver la synchronisation d’annuaires pour Office 365
-ms.openlocfilehash: de7cfcbc11ed281e412c68674b808613b3421041
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: efee8b216d63f32ac64a559aca3bcb55b0a933c1
+ms.sourcegitcommit: 3ed7b1eacf009581a9897524c181afa3e555ad3f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072396"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41570891"
 ---
 # <a name="turn-off-directory-synchronization-for-office-365"></a>Désactiver la synchronisation d’annuaires pour Office 365
 Vous pouvez utiliser PowerShell pour désactiver la synchronisation d’annuaires. Toutefois, il n’est pas recommandé de désactiver la synchronisation d’annuaires en tant qu’étape de résolution des problèmes. Si vous avez besoin d’aide pour résoudre les problèmes liés à la synchronisation d’annuaires, consultez l’article [résolution des problèmes liés à la synchronisation d’annuaires pour Office 365](fix-problems-with-directory-synchronization.md) . 
@@ -32,7 +32,7 @@ Vous pouvez utiliser PowerShell pour désactiver la synchronisation d’annuaire
 ## <a name="turn-off-directory-synchronization"></a>Désactiver la synchronisation d’annuaires  
 Pour désactiver la synchronisation d’annuaires :
   
-1. Tout d’abord, installez les logiciels requis et connectez-vous à votre abonnement Office 365. Pour obtenir des instructions pour les deux, consultez la rubrique [se connecter à Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=821938).
+1. Tout d’abord, installez les logiciels requis et connectez-vous à votre abonnement Office 365. Pour obtenir des instructions, consultez [la rubrique se connecter avec le module Microsoft Azure Active Directory pour Windows PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
     
 2. Utilisez [Set-MsolDirSyncEnabled](https://go.microsoft.com/fwlink/p/?LinkId=821939) pour désactiver la synchronisation d’annuaires : 
     

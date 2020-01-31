@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Accélérez la planification et la configuration d’Office 365 ou de Microsoft 365 avec des conseillers en matière de déploiement.
-ms.openlocfilehash: c931da3d64aea976af99ca2b2220d4bd931344a9
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: ac892a7d0551ede4d7bb4df7081ee0ae8dd5d618
+ms.sourcegitcommit: cc84565301f5c5afc8b767f637135de96115fd6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072366"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41627860"
 ---
 # <a name="deployment-advisors-for-office-365-or-microsoft-365-services"></a>Conseillers de déploiement pour les services Office 365 ou Microsoft 365
 
@@ -157,7 +157,7 @@ Si vous disposez de Gmail, vous devez migrer vos contacts gmail et vos élément
 
 ## <a name="file-creation-storage-and-sharing"></a>Création, stockage et partage de fichiers
 
-### <a name="office-365-proplus"></a>Office 365 ProPlus
+### <a name="office-365-proplus"></a>Office 365 ProPlus
 
 Office 365 ProPlus permet à vos utilisateurs de s’exécuter sur les versions les plus récentes d’Office et de les maintenir à jour.
 
@@ -168,7 +168,7 @@ Pour savoir comment installer Office sur un PC ou un Mac pour votre entreprise, 
 | **Générer** |  [Guide de démarrage rapide d’Office 365 ProPlus](https://aka.ms/OPPquickstartguide) <BR> |
 |||
 
-Le conseiller de déploiement Office 365 ProPlus décrit les étapes à suivre pour aider les utilisateurs à installer Office 365 ProPlus directement à partir du portail Office 365 Portal Online ou pour déployer Office 365 ProPlus sur vos utilisateurs à partir d’un emplacement local. Les instructions relatives à l’utilisation de System Center Configuration Manager, d’un script de démarrage de stratégie de groupe, d’une image de disque du système d’exploitation ou de l’activation partagée des services Bureau à distance (RDS).
+Le conseiller de déploiement Office 365 ProPlus décrit les étapes à suivre pour aider les utilisateurs à installer Office 365 ProPlus directement à partir du portail Office 365 Portal Online ou pour déployer Office 365 ProPlus sur vos utilisateurs à partir d’un emplacement local. Les instructions relatives à l’utilisation du gestionnaire de configuration de point de terminaison Microsoft, un script de démarrage de stratégie de groupe, une image de disque du système d’exploitation ou l’activation partagée des services Bureau à distance (RDS).
 
 |||
 |:-------|:-----|
@@ -262,7 +262,7 @@ Les groupes Office 365 sont un espace de travail partagé pour les messages éle
 | **Générer** |[Guide de configuration des groupes Office 365](https://aka.ms/groupsguide) |
 |||
   
-### <a name="microsoft-teams"></a>Microsoft Teams
+### <a name="microsoft-teams"></a>Microsoft Teams
 
 Microsoft teams est le service de collaboration basé sur la conversation dans Office 365 qui fournit des espaces de travail d’équipe pour les conversations, les appels, les réunions et les messages privés. Le conseiller de déploiement de teams vous permet de configurer et de configurer l’expérience de teams optimale avec Exchange Online, SharePoint Online, OneDrive entreprise et les groupes Office 365. Elle comprend des informations sur la configuration des paramètres de client, des équipes et des canaux pour vos projets, des appels et des réunions, la messagerie, des onglets pour accéder rapidement aux applications, les robots d’information et les connecteurs vers des services tiers.
 

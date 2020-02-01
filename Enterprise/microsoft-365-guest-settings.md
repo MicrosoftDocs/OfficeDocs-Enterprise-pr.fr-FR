@@ -10,12 +10,12 @@ ms.collection: SPO_Content
 ms.custom: ''
 localization_priority: Priority
 description: Apprenez-en davantage sur les paramètres de partage d’invités disponibles dans Microsoft 365.
-ms.openlocfilehash: 3181e1abc44ff62bf3973a87a626291b9e946c51
-ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
+ms.openlocfilehash: 6fba4a8107962ef7ac7da5f83dd2d7f1d75dccb2
+ms.sourcegitcommit: cc84565301f5c5afc8b767f637135de96115fd6d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39919378"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41627878"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Informations de référence sur les paramètres de partage d’invités de Microsoft 365
 
@@ -55,7 +55,7 @@ Le Centre d’administration Microsoft 365 comporte des paramètres de niveau o
 
 ### <a name="sharing"></a>Partage
 
-**Navigation :** [Centre d’administration Microsoft 365](https://admin.microsoft.com) > Paramètres > Sécurité et confidentialité > Partage
+**Navigation :**[Centre d’administration Microsoft 365](https://admin.microsoft.com) > Paramètres > Paramètres > Onglet Sécurité et confidentialité > Partage
 
 ![Capture d’écran des paramètres de sécurité et de confidentialité pour le partage d’invités dans le Centre d’administration Microsoft 365](media/sharepoint-security-privacy-sharing-setting.png)
 
@@ -65,7 +65,7 @@ Le Centre d’administration Microsoft 365 comporte des paramètres de niveau o
 
 ### <a name="office-365-groups"></a>Groupes Office 365
 
-**Navigation :** [Centre d’administration Microsoft 365](https://admin.microsoft.com) > Paramètres > Services et compléments > Groupes Office 365
+**Navigation :**[Centre d’administration Microsoft 365](https://admin.microsoft.com) > Paramètres > Paramètres > Groupes Office 365
 
 ![Capture d’écran des paramètres d’invité des Groupes Office 365 dans le Centre d’administration Microsoft 365](media/office-365-groups-guest-settings.png)
 
@@ -196,11 +196,13 @@ Ces deux paramètres peuvent être utilisés en même temps. Si un utilisateur a
 
 **Rôle d’administrateur :** Administrateur SharePoint
 
+Étant donné que ces paramètres dépendent des paramètres définis à l’échelle de l’organisation pour SharePoint, le paramètre de partage effectif pour le site peut changer si le paramètre au niveau de l’organisation change. Si vous choisissez un paramètre ici et que le niveau de l’organisation est défini ultérieurement sur une valeur plus restrictive, ce site fonctionnera conformément à cette valeur plus restrictive. Par exemple, si vous choisissez **Tout le monde** et que le paramètre au niveau de l’organisation est défini ultérieurement sur **Invités nouveaux et existants**, ce site n’autorisera que des invités nouveaux et existants. Si le paramètre au niveau de l’organisation est ensuite redéfini sur **Tout le monde**, ce site autorisera de nouveau les liens *Tout le monde*.
+
 ### <a name="site-sharing"></a>Partage de site
 
 Vous pouvez définir des autorisations de partage d’invités pour chaque site dans SharePoint. Ce paramètre s’applique tant au partage de site qu’au partage de fichier et de dossier. (Le partage avec *Tout le monde* n’est pas disponible pour le partage de site. Si vous choisissez **Tout le monde**, les utilisateurs peuvent partager des fichiers et dossiers en utilisant des liens accessibles à *Tout le monde*, et le site proprement dit avec des invités nouveaux et existants.)
 
-**Navigation :** Centre d’administration SharePoint > Sites actifs > sélectionnez le site > Partage
+**Navigation :** Centre d’administration SharePoint > Sites actifs > sélectionnez le site> Onglet des stratégies > Modifier le partage externe
 
 ![Capture d’écran des paramètres de partage externe de site SharePoint](media/sharepoint-site-external-sharing-settings.png)
 
@@ -208,7 +210,22 @@ Vous pouvez définir des autorisations de partage d’invités pour chaque site 
 |:-----|:-----|:-----|
 |Le contenu du site peut être partagé avec|Varie en fonction du type de site (voir le tableau ci-dessous)|Indique le type de partage externe autorisé pour ce site. Les options disponibles dépendent des paramètres de partage au niveau de l’organisation pour SharePoint.|
 
-Étant donné que ces paramètres dépendent des paramètres définis à l’échelle de l’organisation pour SharePoint, le paramètre de partage effectif pour le site peut changer si le paramètre au niveau de l’organisation change. Si vous choisissez un paramètre ici et que le niveau de l’organisation est défini ultérieurement sur une valeur plus restrictive, ce site fonctionnera conformément à cette valeur plus restrictive. Par exemple, si vous choisissez **Tout le monde** et que le paramètre au niveau de l’organisation est défini ultérieurement sur **Invités nouveaux et existants**, ce site n’autorisera que des invités nouveaux et existants. Si le paramètre au niveau de l’organisation est ensuite redéfini sur **Tout le monde**, ce site autorisera de nouveau les liens *Tout le monde*.
+### <a name="site-file-and-folder-link-settings"></a>Paramètres des liens de fichier et de dossiers du site
+
+Vous pouvez définir les valeurs par défaut pour le type de lien et les autorisations, ainsi que les paramètres d’expiration sur les liens *Tout le monde* de chaque site. Lorsqu’ils sont définis au niveau du site, ces paramètres remplacent les ceux au niveau de l’organisation. Notez que si les liens *Tout le monde* sont désactivés au niveau de l’organisation, *Tout le monde* n’est pas un type de lien disponible au niveau du site.
+
+**Navigation :** Centre d’administration SharePoint > Sites actifs > sélectionnez le site> Onglet des stratégies > Modifier le partage externe
+
+![Capture d’écran des paramètres de partage SharePoint au niveau du site](media/sharepoint-site-link-sharing-settings.png)
+
+|**Paramètre**|**Par défaut**|**Description**|
+|:-----|:-----|:-----|
+|Limiter le partage par domaine|Désactivé|Ce paramètre vous permet de spécifier une liste de domaines dont le partage est autorisé ou bloqué. Lorsque des domaines autorisés sont spécifiés, des invitations de partage ne peuvent être envoyées qu’à ces domaines. Lorsque des domaines refusés sont spécifiés, des invitations de partage ne peuvent pas être envoyées à ces domaines.<br><br> Ce paramètre ne peut pas être utilisé pour remplacer les restrictions de domaine définies au niveau de l’organisation ou de Azure AD.|
+|Type de lien de partage par défaut|Identique au paramètre au niveau de l’organisation|Ce paramètre vous permet de spécifier le lien de partage par défaut présenté aux utilisateurs de ce site. L’option *Identique au paramètre de niveau organisation* est définie par une combinaison de paramètres de partage organisation et site.|
+|Paramètres avancés pour les liens Tout le monde|Identique au paramètre au niveau de l’organisation|Spécifie le nombre de jours à l’issue desquels un lien *Tout le monde* est créé pour un fichier qui expire dans ce site. Il n’est pas possible de renouveler des liens qui ont expiré. Si vous devez continuer à partager après l’expiration du lien, créez un nouveau lien.|
+|Autorisation de lien par défaut|Identique au paramètre au niveau de l’organisation|Ce paramètre vous permet de spécifier l’autorisation par défaut (Afficher ou Modifier) pour les liens de partage créés pour les fichiers dans ce site.|
+
+### <a name="default-site-sharing-settings"></a>Paramètres de partage de sites par défaut
 
 Le tableau ci-dessous présente le paramètre de partage par défaut pour chaque type de site.
 

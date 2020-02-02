@@ -14,12 +14,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: Explication de la suppression de données dans SharePoint Online.
-ms.openlocfilehash: 94b70d34cb05f98dfa560761dec87a919720dca9
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 3f00e88c8d0e2bc10f6468b843385753ef864297
+ms.sourcegitcommit: 4f465f690c6563cfa9f6029d3e7e9e3cace96671
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078153"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41658321"
 ---
 # <a name="sharepoint-online-data-deletion-in-office-365"></a>Suppression des données SharePoint Online dans Office 365
 
@@ -36,6 +36,8 @@ Lorsque vous supprimez une collection de sites, vous supprimez également la hi�
 - Informations de rôle et de sécurité liées au site ou à ses sous-sites
 - Sous-sites du site Web de niveau supérieur, leur contenu et les informations utilisateur
 
-Si vous supprimez accidentellement une collection de sites, elle peut être restaurée par un administrateur global ou SharePoint à l’aide du centre d’administration SharePoint. 
+Si vous supprimez accidentellement une collection de sites, elle peut être restaurée par un administrateur global ou SharePoint à l’aide du centre d’administration SharePoint.
+
+Les collections de sites supprimées sont conservées pendant 93 jours. Après 93 jours, les sites et tous leurs contenus et paramètres sont définitivement supprimés, y compris les listes, les bibliothèques, les pages et les sous-sites.
 
 La suppression matérielle se produit lorsqu’un utilisateur purge les éléments supprimés de la corbeille de la collection de sites, lorsque les périodes de rétention et de sauvegarde expirent, ou lorsqu’un administrateur supprime définitivement une collection de sites à l’aide de la [cmdlet Remove-spodeletedsit](/powershell/module/sharepoint-online/Remove-SPODeletedSite?view=sharepoint-ps). Quand un utilisateur supprime (supprime définitivement ou purge) le contenu de SharePoint Online, toutes les clés de chiffrement pour les segments supprimés sont également supprimées. Les blocs sur les disques qui stockaient les segments supprimés précédemment sont marqués comme inutilisés et disponibles pour une réutilisation.

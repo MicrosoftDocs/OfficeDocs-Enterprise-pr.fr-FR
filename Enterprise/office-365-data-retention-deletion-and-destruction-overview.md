@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Vue d’ensemble des stratégies Microsoft pour Office 365 relatives à la rétention, la suppression et la destruction des données.
-ms.openlocfilehash: e4632a3025f1dc0f22338c0a463f054a7b993524
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+ms.openlocfilehash: 93093e3688d0f8ae399a4e021deaaf4b7ed5cecf
+ms.sourcegitcommit: 4f465f690c6563cfa9f6029d3e7e9e3cace96671
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "37975829"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41658331"
 ---
 # <a name="data-retention-deletion-and-destruction-in-office-365"></a>Conservation, suppression et destruction de données dans Office 365
 
@@ -47,7 +47,7 @@ Pour une version d’évaluation gratuite, votre compte passe à un statut de gr
 
 Pour tout abonnement, un abonné peut contacter le support Microsoft et demander le déploiement de l’abonnement Expedited. Dans ce processus, toutes les données utilisateur sont supprimées trois jours après que l’administrateur a entré le code de verrouillage fourni par Microsoft. Cela inclut les données dans SharePoint Online et Exchange Online sous conservation ou stockées dans des boîtes aux lettres inactives.
 
-Pour plus d’informations sur la désactivation accélérée, reportez-vous à [Annuler Office 365](https://support.office.com/article/Cancel-Office-365-for-business-b1bc0bef-4608-4601-813a-cdd9f746709a).
+Pour plus d’informations sur la désactivation accélérée, reportez-vous à [Annuler Office 365](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/cancel-your-subscription).
 
 ## <a name="related-links"></a>Liens connexes
 

@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Décrit l’utilisation du réseau de distribution de contenu (CDN) d’Office 365 pour accélérer la remise de vos ressources SharePoint Online à tous vos utilisateurs, où qu’ils soient ou dans lesquels ils accèdent à votre contenu.
-ms.openlocfilehash: de4982047e7a92d7df477128274e0037fbc86d42
-ms.sourcegitcommit: 77b8fd702d3a1010d3906d4024d272ad2097f54f
+ms.openlocfilehash: 829903919d0a6222b213fe08a610ff6ebe9b985d
+ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962481"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41721935"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Utilisation du réseau de distribution de contenu Office 365 avec SharePoint Online
 
@@ -55,6 +55,7 @@ Pour configurer le CDN Office 365 pour votre organisation, procédez comme suit�
 + Installer et configurer le CDN à l’aide de PowerShell ou de l’interface de ligne de commande SharePoint Online
 
   + [Installer et configurer le CDN à l’aide de SharePoint Online Management Shell](use-office-365-cdn-with-spo.md#CDNSetupinPShell)
+  + [Installer et configurer le CDN à l’aide de PowerShell PnP](use-office-365-cdn-with-spo.md#CDNSetupinPnPPosh)
   + [Installer et configurer le CDN à l’aide de l’interface CLI Office 365](use-office-365-cdn-with-spo.md#CDNSetupinCLI)
 
   Lorsque vous effectuez cette étape, vous disposez des éléments suivants :
@@ -443,6 +444,289 @@ Pour plus d’informations sur cette cmdlet, consultez la rubrique [Set-SPOTenan
 
 </details>
 
+<a name="CDNSetupinPnPPosh"> </a>
+## <a name="set-up-and-configure-the-office-365-cdn-by-using-pnp-powershell"></a>Installer et configurer le CDN Office 365 à l’aide de PowerShell PnP
+
+Les procédures décrites dans cette section nécessitent l’utilisation de PowerShell PnP pour se connecter à SharePoint Online. Pour obtenir des instructions, consultez la rubrique [prise en main de PowerShell PNP](https://github.com/SharePoint/PnP-PowerShell#getting-started).
+
+Procédez comme suit pour installer et configurer le CDN afin d’héberger vos ressources dans SharePoint Online à l’aide de PowerShell PnP.
+
+<details>
+  <summary>Cliquez pour développer</summary>
+
+### <a name="enable-your-organization-to-use-the-office-365-cdn"></a>Permettre à votre organisation d’utiliser le CDN Office 365
+
+Avant de modifier les paramètres de CDN de client, vous devez récupérer l’état actuel de la configuration de CDN privé dans votre client Office 365. Connectez-vous à votre client à l’aide de PowerShell PnP :
+
+``` powershell
+Connect-PnPOnline -Url https://contoso-admin.sharepoint.com -UseWebLogin
+```
+
+À présent, utilisez la cmdlet **Get-PnPTenantCdnEnabled** pour récupérer les paramètres d’État CDN à partir du client :
+
+``` powershell
+Get-PnPTenantCdnEnabled -CdnType <Public | Private>
+```
+
+L’état du CDN pour le CdnType spécifié s’affiche à l’écran.
+
+Utilisez l’applet de commande **Set-PnPTenantCdnEnabled** pour permettre à votre organisation d’utiliser le CDN Office 365. Vous pouvez permettre à votre organisation d’utiliser des origines publiques, des origines privées ou les deux à la fois. Vous pouvez également configurer le CDN de sorte qu’il ignore le paramétrage des origines par défaut lorsque vous l’activez. Vous pouvez toujours ajouter ces origines plus tard, comme décrit dans cette rubrique.
+  
+Dans PowerShell PnP :
+
+``` powershell
+Set-PnPTenantCdnEnabled -CdnType <Public | Private | Both> -Enable $true
+```
+
+Par exemple, pour permettre à votre organisation d’utiliser des origines publiques et privées, tapez la commande suivante :
+
+``` powershell
+Set-PnPTenantCdnEnabled -CdnType Both -Enable $true
+```
+
+Pour permettre à votre organisation d’utiliser des origines publiques et privées, mais de ne pas configurer les origines par défaut, tapez la commande suivante :
+
+``` powershell
+Set-PnPTenantCdnEnabled -CdnType Both -Enable $true -NoDefaultOrigins
+```
+
+Consultez la rubrique [origines du CDN par défaut](use-office-365-cdn-with-spo.md#default-cdn-origins) pour obtenir des informations sur les origines qui sont configurées par défaut lorsque vous activez le CDN Office 365, ainsi que l’impact potentiel de l’omission de la configuration des origines par défaut.
+
+Pour permettre à votre organisation d’utiliser des origines publiques, tapez la commande suivante :
+
+``` powershell
+Set-PnPTenantCdnEnabled -CdnType Public -Enable $true
+```
+
+Pour permettre à votre organisation d’utiliser des origines privées, tapez la commande suivante :
+
+``` powershell
+Set-PnPTenantCdnEnabled -CdnType Private -Enable $true
+```
+
+Pour plus d’informations sur cette cmdlet, consultez la rubrique [Set-PnPTenantCdnEnabled](https://docs.microsoft.com/powershell/module/sharepoint-pnp/set-pnptenantcdnenabled).
+
+<a name="Office365CDNforPnPPoshFileType"> </a>
+### <a name="change-the-list-of-file-types-to-include-in-the-office-365-cdn-optional"></a>Modifier la liste des types de fichiers à inclure dans le CDN Office 365 (facultatif)
+
+> [!TIP]
+> Lorsque vous définissez des types de fichiers à l’aide de la cmdlet **Set-PnPTenantCdnPolicy** , vous remplacez la liste actuellement définie. Si vous souhaitez ajouter d’autres types de fichiers à la liste, utilisez d’abord la cmdlet pour savoir quels types de fichiers sont déjà autorisés et les inclure dans la liste en même temps que les nouveaux.
+  
+La cmdlet **Set-PnPTenantCdnPolicy** permet de définir des types de fichiers statiques qui peuvent être hébergés par des origines publiques et privées dans le CDN. Par défaut, les types d’éléments communs sont autorisés, par exemple. CSS,. gif,. jpg et. js.
+
+Dans PowerShell PnP :
+
+``` powershell
+Set-PnPTenantCdnPolicy -CdnType <Public | Private> -PolicyType IncludeFileExtensions -PolicyValue "<Comma-separated list of file types >"
+```
+
+Par exemple, pour permettre au CDN d’héberger des fichiers. CSS et. png, entrez la commande suivante :
+
+``` powershell
+Set-PnPTenantCdnPolicy -CdnType Private -PolicyType IncludeFileExtensions -PolicyValue "CSS,PNG"
+```
+
+Pour voir les types de fichiers actuellement autorisés par le CDN, utilisez la cmdlet **Get-PnPTenantCdnPolicies** :
+
+``` powershell
+Get-PnPTenantCdnPolicies -CdnType <Public | Private>
+```
+
+Pour plus d’informations sur ces applets de commande, voir [Set-PnPTenantCdnPolicy](https://docs.microsoft.com/powershell/module/sharepoint-pnp/set-pnptenantcdnpolicy) et [Get-PnPTenantCdnPolicies](https://docs.microsoft.com/powershell/module/sharepoint-pnp/get-pnptenantcdnpolicies).
+
+<a name="Office365CDNforPnPPoshSiteClassification"> </a>
+### <a name="change-the-list-of-site-classifications-you-want-to-exclude-from-the-office-365-cdn-optional"></a>Modifier la liste des classifications de sites que vous souhaitez exclure du CDN Office 365 (facultatif)
+
+> [!TIP]
+> Lorsque vous excluez les classifications de site à l’aide de la cmdlet **Set-PnPTenantCdnPolicy** , vous remplacez la liste actuellement définie. Si vous souhaitez exclure des classifications de site supplémentaires, utilisez d’abord la cmdlet pour savoir quelles classifications sont déjà exclues, puis ajoutez-les en même temps que les nouvelles classifications.
+
+Utilisez la cmdlet **Set-PnPTenantCdnPolicy** pour exclure les classifications de site que vous ne souhaitez pas mettre à disposition sur le CDN. Par défaut, aucune classification de site n’est exclue.
+
+Dans PowerShell PnP :
+
+``` powershell
+Set-PnPTenantCdnPolicy -CdnType <Public | Private> -PolicyType ExcludeRestrictedSiteClassifications  -PolicyValue "<Comma-separated list of site classifications>"
+```
+
+Pour voir les classifications de site actuellement restreintes, utilisez la cmdlet **Get-PnPTenantCdnPolicies** :
+
+``` powershell
+Get-PnPTenantCdnPolicies -CdnType <Public | Private>
+```
+
+Les propriétés qui seront renvoyées sont _IncludeFileExtensions_, _ExcludeRestrictedSiteClassifications_ et _ExcludeIfNoScriptDisabled_.
+
+La propriété _IncludeFileExtensions_ contient la liste des extensions de fichiers qui seront fournies à partir du CDN.
+
+> [!NOTE]
+> Les extensions de fichier par défaut sont différentes entre public et Private.
+
+La propriété _ExcludeRestrictedSiteClassifications_ contient les classifications de site que vous souhaitez exclure du CDN. Par exemple, vous pouvez exclure des sites marqués comme **confidentiels** de sorte que le contenu de sites avec cette classification appliquée ne sera pas pris en charge par le CDN.
+
+La propriété _ExcludeIfNoScriptDisabled_ exclut le contenu du CDN en fonction des paramètres d’attribut _NoScript_ au niveau du site. Par défaut, l’attribut _NoScript_ est défini sur **activé** pour les sites _modernes_ et **désactivé** pour les sites _classiques_ . Cela dépend de vos paramètres de client.
+
+Pour plus d’informations sur ces applets de commande, voir [Set-PnPTenantCdnPolicy](https://docs.microsoft.com/powershell/module/sharepoint-pnp/set-pnptenantcdnpolicy) et [Get-PnPTenantCdnPolicies](https://docs.microsoft.com/powershell/module/sharepoint-pnp/get-pnptenantcdnpolicies).
+
+<a name="Office365CDNforPnPPoshOrigin"> </a>
+### <a name="add-an-origin-for-your-assets"></a>Ajouter une origine pour vos biens
+
+Utilisez l’applet de commande **Add-PnPTenantCdnOrigin** pour définir une origine. Vous pouvez définir plusieurs origines. L’origine est une URL pointant vers un dossier ou une bibliothèque SharePoint qui contient les ressources qui doivent être hébergées par le CDN.
+  
+> [!IMPORTANT]
+> Vous ne devez jamais placer de ressources qui contiennent des informations utilisateur ou qui sont considérées comme sensibles à votre organisation dans une origine publique.
+
+``` powershell
+Add-PnPTenantCdnOrigin -CdnType <Public | Private> -OriginUrl <path>
+```
+
+La valeur _path_ est le chemin d’accès relatif à la bibliothèque ou au dossier qui contient les composants. Vous pouvez utiliser des caractères génériques en plus des chemins d’accès relatifs. Les origines prennent en charge les caractères génériques ajoutés à l’URL. Cela vous permet de créer des origines qui s’étendent sur plusieurs sites. Par exemple, pour inclure toutes les ressources dans le dossier MasterPages pour tous vos sites en tant qu’origine publique dans le CDN, tapez la commande suivante :
+
+``` powershell
+Add-PnPTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
+```
+
++ Le modificateur de caractère**/** générique * peut uniquement être utilisé au début du chemin d’accès et correspondra à tous les segments d’URL sous l’URL spécifiée.
++ Le chemin d’accès peut pointer vers une bibliothèque de documents, un dossier ou un site. Par exemple, le chemin d’accès _*/site1_ correspondra à toutes les bibliothèques de documents sous le site.
+
+Vous pouvez ajouter une origine avec un chemin d’accès relatif spécifique. Vous ne pouvez pas ajouter d’origine à l’aide du chemin d’accès complet.
+
+Cet exemple ajoute une origine privée de la bibliothèque d’éléments de site sur un site spécifique :
+
+``` powershell
+Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
+```
+
+Cet exemple ajoute une origine privée du dossier _dossier1_ dans la bibliothèque de sites de la collection de sites :
+
+``` powershell
+Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl sites/test/siteassets/folder1
+```
+
+S’il y a un espace dans le chemin d’accès, vous pouvez placer le chemin d’accès entre guillemets ou remplacer l’espace par le codage d’URL %20. Les exemples suivants ajoutent une origine privée du dossier _Folder 1_ dans la bibliothèque de sites de la collection de sites :
+
+``` powershell
+Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl sites/test/siteassets/folder%201
+```
+
+``` powershell
+Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder 1"
+```
+
+Pour plus d’informations sur cette commande et sa syntaxe, voir [Add-PnPTenantCdnOrigin](https://docs.microsoft.com/powershell/module/sharepoint-pnp/add-pnptenantcdnorigin).
+
+> [!NOTE]
+> Dans les origines privées, les biens partagés à partir d’une origine doivent avoir une version majeure publiée pour pouvoir être accessibles à partir du CDN.
+  
+Une fois que vous avez exécuté la commande, le système synchronise la configuration dans le centre de l’expérience. Cela peut prendre jusqu’à 15 minutes.
+
+<a name="ExamplePublicOriginPnPPosh"> </a>
+### <a name="example-configure-a-public-origin-for-your-master-pages-and-for-your-style-library-for-sharepoint-online"></a>Exemple : configurer une origine publique pour vos pages maîtres et pour votre bibliothèque de styles pour SharePoint Online
+
+Normalement, ces origines sont définies par défaut lorsque vous activez le CDN Office 365. Toutefois, si vous souhaitez les activer manuellement, procédez comme suit.
+  
++ Utilisez l’applet de commande **Add-PnPTenantCdnOrigin** pour définir la bibliothèque de styles comme origine publique.
+
+``` powershell
+  Add-PnPTenantCdnOrigin -CdnType Public -OriginUrl */style%20library
+  ```
+
++ Utilisez la cmdlet **Add-PnPTenantCdnOrigin** pour définir les pages maîtres comme une origine publique.
+
+``` powershell
+  Add-PnPTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
+  ```
+
+Pour plus d’informations sur cette commande et sa syntaxe, voir [Add-PnPTenantCdnOrigin](https://docs.microsoft.com/powershell/module/sharepoint-pnp/add-pnptenantcdnorigin).
+
+Une fois que vous avez exécuté la commande, le système synchronise la configuration dans le centre de l’expérience. Cela peut prendre jusqu’à 15 minutes.
+
+<a name="ExamplePrivateOriginPnPPosh"> </a>
+### <a name="example-configure-a-private-origin-for-your-site-assets-site-pages-and-publishing-images-for-sharepoint-online"></a>Exemple : configurer une origine privée pour vos ressources de site, pages de site et images de publication pour SharePoint Online
+
++ Utilisez l’applet de commande **Add-PnPTenantCdnOrigin** pour définir le dossier des éléments de site comme origine privée.
+
+``` powershell
+  Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl */siteassets
+  ```
+
++ Utilisez l’applet de commande **Add-PnPTenantCdnOrigin** pour définir le dossier des pages de site comme origine privée.
+
+``` powershell
+  Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl */sitepages
+  ```
+
++ Utilisez l’applet de commande **Add-PnPTenantCdnOrigin** pour définir le dossier Publishing images comme origine privée.
+
+``` powershell
+  Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl */publishingimages
+  ```
+
+Pour plus d’informations sur cette commande et sa syntaxe, voir [Add-PnPTenantCdnOrigin](https://docs.microsoft.com/powershell/module/sharepoint-pnp/add-pnptenantcdnorigin).
+
+Une fois que vous avez exécuté la commande, le système synchronise la configuration dans le centre de l’expérience. Cela peut prendre jusqu’à 15 minutes.
+
+<a name="ExamplePrivateOriginSiteCollectionPnPPosh"> </a>
+### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a>Exemple : configurer une origine privée pour une collection de sites pour SharePoint Online
+
+La cmdlet **Add-PnPTenantCdnOrigin** permet de définir une collection de sites en tant qu’origine privée. Par exemple :
+
+``` powershell
+Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
+```
+
+Pour plus d’informations sur cette commande et sa syntaxe, voir [Add-PnPTenantCdnOrigin](https://docs.microsoft.com/powershell/module/sharepoint-pnp/add-pnptenantcdnorigin).
+  
+Une fois que vous avez exécuté la commande, le système synchronise la configuration dans le centre de l’expérience. Il se peut que vous rencontriez un message de _configuration en attente_ qui est attendu lorsque le client SharePoint Online se connecte au service CDN. Cela peut prendre jusqu’à 15 minutes.
+
+<a name="CDNManagePnPPosh"> </a>
+### <a name="manage-the-office-365-cdn"></a>Gérer le CDN Office 365
+
+Une fois que vous avez configuré le CDN, vous pouvez modifier votre configuration lors de la mise à jour du contenu ou à mesure que vos besoins changent, comme décrit dans cette section.
+  
+<a name="Office365CDNforSPOaddremoveassetPnPPosh"> </a>
+#### <a name="add-update-or-remove-assets-from-the-office-365-cdn"></a>Ajouter, mettre à jour ou supprimer des ressources du CDN Office 365
+
+Une fois que vous avez terminé les étapes de configuration, vous pouvez ajouter de nouvelles ressources, ainsi que mettre à jour ou supprimer des biens existants chaque fois que vous le souhaitez. Modifiez simplement les ressources dans le dossier ou la bibliothèque SharePoint que vous avez identifiée comme origine. Si vous ajoutez une nouvelle ressource, elle est immédiatement disponible via le CDN. Toutefois, si vous mettez à jour l’élément, la propagation de la nouvelle copie peut prendre jusqu’à 15 minutes et devenir disponible dans le CDN.
+  
+Si vous avez besoin de récupérer l’emplacement de l’origine, vous pouvez utiliser la cmdlet **Get-PnPTenantCdnOrigin** . Pour plus d’informations sur l’utilisation de cette cmdlet, consultez la rubrique [Get-PnPTenantCdnOrigin](https://docs.microsoft.com/powershell/module/sharepoint-pnp/get-pnptenantcdnorigin).
+
+<a name="Office365CDNforSPORemoveOriginPnPPosh"> </a>
+#### <a name="remove-an-origin-from-the-office-365-cdn"></a>Supprimer une origine du CDN Office 365
+
+Vous pouvez supprimer l’accès à un dossier ou à une bibliothèque SharePoint que vous avez identifiée comme origine. Pour ce faire, utilisez la cmdlet **Remove-PnPTenantCdnOrigin** .
+
+``` powershell
+Remove-PnPTenantCdnOrigin -OriginUrl <path> -CdnType <Public | Private | Both>
+```
+
+Pour plus d’informations sur l’utilisation de cette cmdlet, consultez la rubrique [Remove-PnPTenantCdnOrigin](https://docs.microsoft.com/powershell/module/sharepoint-pnp/remove-pnptenantcdnorigin).
+
+<a name="Office365CDNforSPORemoveOriginPnPPosh"> </a>
+#### <a name="modify-an-origin-in-the-office-365-cdn"></a>Modifier une origine dans le CDN Office 365
+
+Vous ne pouvez pas modifier une origine que vous avez créée. Au lieu de cela, supprimez l’origine, puis ajoutez-en une nouvelle. Pour plus d’informations, reportez-vous [à la rubrique pour supprimer une origine du CDN Office 365](use-office-365-cdn-with-spo.md#Office365CDNforSPORemoveOriginPnPPosh) et [Ajouter une origine pour vos biens](use-office-365-cdn-with-spo.md#Office365CDNforSPOOriginPnPPosh).
+
+<a name="Office365CDNforSPODisable"> </a>
+#### <a name="disable-the-office-365-cdn"></a>Désactiver le CDN Office 365
+
+La cmdlet **Set-PnPTenantCdnEnabled** permet de désactiver le CDN pour votre organisation. Si vous avez à la fois les origines publique et privée activées pour le CDN, vous devez exécuter l’applet de commande deux fois, comme illustré dans les exemples suivants.
+  
+Pour désactiver l’utilisation des origines publiques dans le CDN, entrez la commande suivante :
+
+``` powershell
+Set-PnPTenantCdnEnabled -CdnType Public -Enable $false
+```
+
+Pour désactiver l’utilisation des origines privées dans le CDN, entrez la commande suivante :
+
+``` powershell
+Set-PnPTenantCdnEnabled -CdnType Private -Enable $false
+```
+
+Pour plus d’informations sur cette cmdlet, consultez la rubrique [Set-PnPTenantCdnEnabled](https://docs.microsoft.com/powershell/module/sharepoint-pnp/set-pnptenantcdnenabled).
+
+</details>
+
 <a name="CDNSetupinCLI"> </a>
 ## <a name="set-up-and-configure-the-office-365-cdn-using-the-office-365-cli"></a>Installation et configuration du CDN Office 365 à l’aide de la CLI Office 365
 
@@ -737,7 +1021,7 @@ spo cdn origin add --origin */CLIENTSIDEASSETS
 
 Vous pouvez choisir de travailler avec le CDN Office 365 à l’aide du module PowerShell de **SharePoint Online Management Shell** ou de l’interface de ligne de **commande Office 365**.
 
-+ [Prise en main de SharePoint Online Management Shell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
++ [Prise en main de SharePoint Online Management Shell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 + [Installation d’Office 365 CLI](https://pnp.github.io/office365-cli/user-guide/installing-cli/)
 
 ## <a name="see-also"></a>Voir aussi

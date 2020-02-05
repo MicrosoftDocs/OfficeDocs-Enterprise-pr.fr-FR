@@ -17,16 +17,16 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: Contient des liens vers des informations sur la planification et le test du réseau, ainsi que sur la migration vers Office 365.
-ms.openlocfilehash: b40b940c99b7f0cf752dae069ca7eae7ac5516d0
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 6091f5c222b523781c8af30200f96febb2baf7e4
+ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747784"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41721955"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Planification du réseau et de la migration pour Office 365
 
-*Cet article s’applique à la fois à Office 365 entreprise et à Microsoft 365 entreprise.*
+*Cet article est valable pour Office 365 Entreprise et Microsoft 365 Entreprise*.
 
 Cet article contient des liens vers des informations sur la planification et le test du réseau, ainsi que sur la migration vers Office 365.
   
@@ -59,8 +59,6 @@ Pour estimer la bande passante, procédez comme suit :
 <a name="calculators"> </a>
 
  **Outils réseau.** Testez et validez votre bande passante Internet afin de déterminer les contraintes de téléchargement, de chargement et de latence. Ces outils vous aideront à déterminer les capacités de votre réseau pour la migration, ainsi qu’une fois que vous avez effectué entièrement le déploiement. 
-  
-- [Microsoft Message Analyzer](https://technet.microsoft.com/library/jj649776.aspx): l’analyseur de messages est un outil efficace pour résoudre les problèmes de réseau. L’analyseur de messages capture, affiche et analyse le trafic de messagerie et les messages système. L’analyseur de messages vous permet également d’importer, d’agréger et d’analyser des données à partir de fichiers journaux et de suivi.
     
 - [Analyseur de connectivité à distance Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=517243): teste la connectivité dans votre environnement Exchange Online.
     

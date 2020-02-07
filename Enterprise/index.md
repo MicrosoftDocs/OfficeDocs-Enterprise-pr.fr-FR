@@ -13,13 +13,15 @@ ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: landing-page
 ms.date: 8/21/2018
+f1.keywords:
+- NOCSH
 ms.author: robmazz
-ms.openlocfilehash: f655daf2887fd5bf8cc82065dc0cc53282b13146
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+ms.openlocfilehash: f4dd985efa512de8300acc7a02c9c505acb47c38
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38030658"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845055"
 ---
 <h1>Office 365 Entreprise</h1>
 <p>Microsoft Office&nbsp;365 fournit des services de Cloud en ligne puissants qui permettent la collaboration, la sécurité et la conformité, la mobilité, l’intelligence et l’analyse. Cette page fournit des liens vers des conseils pour les administrateurs et les professionnels de l’informatique qui déploient, configurent et gèrent les services Office&nbsp;365 dans des organisations d’entreprise.</p>
@@ -73,7 +75,7 @@ ms.locfileid: "38030658"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Office 365 ProPlus</h3>
+                        <h3>Office 365 ProPlus</h3>
                 <p>Planifiez, déployez et gérez&nbsp;Office 365 ProPlus dans votre environnement d’entreprise.</p>
                     </div>
                 </div>
@@ -217,7 +219,7 @@ ms.locfileid: "38030658"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3><a href="https://docs.microsoft.com/power-bi/">Power BI</a></h3>
+                        <h3><a href="https://docs.microsoft.com/power-bi/">Power BI</a></h3>
                     </div>
                 </div>
             </div>

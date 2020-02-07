@@ -6,15 +6,17 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+f1.keywords:
+- NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: Découvrez comment administrer le paramètre d’Exchange Online avec Microsoft PowerShell.
-ms.openlocfilehash: adb8871a08c627d2ed2dd084283c31b8241e9152
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 135d3af76e03dfb7e6fcc9f55ba3be8ab21a6906
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068460"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844655"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>Administration des boîtes aux lettres Exchange Online dans un environnement multigéographique
 

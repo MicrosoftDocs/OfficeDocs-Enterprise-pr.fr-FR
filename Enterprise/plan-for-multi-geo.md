@@ -6,18 +6,20 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+f1.keywords:
+- NOCSH
 ms.custom: ''
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Priority
 description: Découvrez Office 365 multigéographique, comment opèrent les fonctionnalités multigéographiques et les emplacements géographiques disponibles pour le stockage de données.
-ms.openlocfilehash: 752cc9d768888495a6ee9b93f9feccb454376f99
-ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
+ms.openlocfilehash: 375bcb6b19aa989f246652d27b4f0d8641a7a04c
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38076198"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844285"
 ---
 # <a name="plan-for-office-365-multi-geo"></a>Planifier le déploiement d’Office 365 multigéographique
 

@@ -9,6 +9,8 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Priority
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -16,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
 description: Une fois que vous avez déployé Office 365, vous pouvez maintenir la connectivité d’Office 365 à l’aide de certains des outils et techniques ci-dessous. Vous souhaiterez comprendre les instructions de l’état du Service et la continuité officielles ainsi que nos recommandations d’utilisation d’Office 365 sur un réseau lent. Vous souhaiterez également comprendre comment utiliser l’application Office 365 admin et ajouter un signet sur notre Office 365 pour entreprises -Aide à l’Administrateur.
-ms.openlocfilehash: 93fbc9448ce25ef3d5d3f1d577c6d1c23ae4472a
-ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
+ms.openlocfilehash: 5a0a6e217d0f74f6266bffa1bd6037427f14e7bd
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41721965"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843705"
 ---
 # <a name="monitor-office-365-connectivity"></a>Surveiller la connectivité Office 365
 

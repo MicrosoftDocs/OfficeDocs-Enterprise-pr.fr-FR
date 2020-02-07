@@ -6,15 +6,17 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+f1.keywords:
+- NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: Découvrez les fonctionnalités multigéographiques d’Exchange Online.
-ms.openlocfilehash: d518121c69ee29ee246c6947e361a74a3933310f
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 07a231a78d52ced4102e26c070eee40b9846c12f
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069930"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844775"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Fonctionnalités multigéographiques d’Exchange Online
 

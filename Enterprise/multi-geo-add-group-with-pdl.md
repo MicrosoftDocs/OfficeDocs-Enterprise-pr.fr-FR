@@ -6,16 +6,18 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+f1.keywords:
+- NOCSH
 ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Découvrez comment créer un groupe Office 365 avec un emplacement par défaut des données spécifique dans un environnement multigéographique.
-ms.openlocfilehash: 96870923c00cebc247609b67378fd39011077d45
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: 5a6417f1758cd6c5e4eb9d4df9e7796d4309e62c
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072376"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843735"
 ---
 # <a name="create-an-office-365-group-with-a-specific-pdl"></a>Créer un groupe Office 365 avec un emplacement par défaut des données spécifique
 

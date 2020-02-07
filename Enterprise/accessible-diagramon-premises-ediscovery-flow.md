@@ -10,17 +10,19 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b9dcd692-0485-4eec-870d-87ab6b89d97b
+f1.keywords:
+- NOCSH
 description: 'Cet article est une version texte accessible du diagramme nommé Flux eDiscovery local :'
-ms.openlocfilehash: bdaf46c552b346d0e6966cd3589f239146ddadc5
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: ec9ecf7d3663503f2da412364d919a6c70032e23
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068530"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843855"
 ---
 # <a name="accessible-diagram---on-premises-ediscovery-flow"></a>Diagramme accessible : Flux de découverte électronique local
 
-**Résumé:** Cet article est une version texte accessible du diagramme, appelé flux de découverte électronique local.
+**Résumé :** Cet article est une version texte accessible du diagramme, appelé flux de découverte électronique local.
   
 Cette affiche fournit des détails sur l’architecture et le flux de données dans tous les produits de serveur. 
   
@@ -38,19 +40,19 @@ Les chiffres pour chacune des étapes décrites dans cette liste se rapportent �
   
 1. Les cas eDiscovery sont créés, gérés et utilisés dans le centre eDiscovery (EDC). L’EDC est une collection de sites SharePoint 2013. C’est à cet endroit que les cas sont définis, les sources devant être suivies identifiées, les requêtes émises, les résultats des requêtes examinés et les conservations de contenu placées ou supprimées. 
     
-2. La requête ou l’action eDiscovery (Hold, ReleaseHold, ou GetStatus) est relayée de l’EDC au proxy de l’application Service de recherche (SSA) dans la batterie d’applications Entreprise. Le proxy SSA transmet ensuite le trafic à l’application de service de recherche (SSA) dans la batterie des applications de services. Dans cet exemple, la demande doit placer tout élément dans la batterie de serveurs de contenu SharePoint avec «CONTOSO» dans le nom de fichier en conservation. 
+2. La requête ou l’action eDiscovery (Hold, ReleaseHold, ou GetStatus) est relayée de l’EDC au proxy de l’application Service de recherche (SSA) dans la batterie d’applications Entreprise. Le proxy SSA transmet ensuite le trafic à l’application de service de recherche (SSA) dans la batterie des applications de services. Dans cet exemple, la demande doit placer tout élément dans la batterie de serveurs de contenu SharePoint avec « CONTOSO » dans le nom de fichier en conservation. 
     
 3. Si la demande consiste à rechercher un cas, la SSA consulte l’index de recherche. Ensuite, le résultat de requête eDiscovery défini est renvoyé à l’utilisateur par le biais de l’EDC.  
     
-4. Si la demande est une action (insérer une action Hold ou ReleaseHold, par exemple), cette action est écrite dans Actions_Table dans la base de données administrative SSA. Dans cet exemple, une demande de conservation pour tout élément de la batterie de contenu SharePoint avec «CONTOSO» est écrite dans le Actions_Table. 
+4. Si la demande est une action (insérer une action Hold ou ReleaseHold, par exemple), cette action est écrite dans Actions_Table dans la base de données administrative SSA. Dans cet exemple, une demande de conservation pour tout élément de la batterie de contenu SharePoint avec « CONTOSO » est écrite dans le Actions_Table. 
     
 5. À intervalles réguliers, le travail du minuteur de conservation inaltérable eDiscovery de la batterie de contenu est activé et génère une demande pour les actions en attente, puis envoie des mises à jour d’état via le proxy SSA à l’application de service de recherche. 
     
 6. La requête pour les actions en attente est transmise à la SSA centrale, qui consulte Action_Table pour connaître les actions en attente pour la batterie de contenu. Le travail du minuteur de conservation inaltérable de la batterie de contenu envoie également des mises à jour d’état pour les objets et les actions qu’il a reçus, qui sont écrits dans ActionsTable. 
     
-7. La demande de blocage de tout contenu avec «CONTOSO» dans le nom de la batterie de contenu SharePoint 2013 est envoyée par la SSA au travail du minuteur de conservation inaltérable eDiscovery dans la batterie de contenu. 
+7. La demande de blocage de tout contenu avec « CONTOSO » dans le nom de la batterie de contenu SharePoint 2013 est envoyée par la SSA au travail du minuteur de conservation inaltérable eDiscovery dans la batterie de contenu. 
     
-8. Le travail du minuteur de conservation inaltérable eDiscovery place le «site CONTOSO» et le «contenu CONTOSO» en conservation. 
+8. Le travail du minuteur de conservation inaltérable eDiscovery place le « site CONTOSO » et le « contenu CONTOSO » en conservation. 
     
 9. Le travail du minuteur de conservation inaltérable eDiscovery s’exécute périodiquement dans la batterie d’applications Enterprise pour vérifier l’état des actions de détection et mettre l’état à jour.  
     
@@ -74,7 +76,7 @@ Le diagramme montre un utilisateur envoyant une requête, qui accède à deux ba
   
 #### <a name="sharepoint-2013-enterprise-app-farm"></a>Batterie de serveurs SharePoint 2013 Enterprise App
 
-La batterie de serveurs SharePoint 2013 Enterprise App contient les composants suivants: 
+La batterie de serveurs SharePoint 2013 Enterprise App contient les composants suivants : 
   
 - EDC
     
@@ -94,7 +96,7 @@ Une requête ou une action envoyée par l’utilisateur est envoyée à l’EDC 
     
 #### <a name="sharepoint-2013-services-farm"></a>Batterie de services SharePoint 2013
 
-La batterie de services SharePoint 2013 contient les composants suivants: 
+La batterie de services SharePoint 2013 contient les composants suivants : 
   
 - Service SSA  
     
@@ -124,7 +126,7 @@ Lorsque le proxy SSA de la batterie d’applications Enterprise SharePoint envoi
     
 #### <a name="sharepoint-2013-content-farm"></a>Batterie de contenu SharePoint 2013
 
-La batterie de contenu SharePoint 2013 contient les composants suivants: 
+La batterie de contenu SharePoint 2013 contient les composants suivants : 
   
 - Proxy SSA  
     
@@ -162,15 +164,15 @@ Le composant de partages de fichiers Windows fournit les résultats d’analyse 
 
 La légende pour ce diagramme représente graphiquement les différents types de trafic décrits parmi les composants à l’aide de lignes de couleur comme suit :  
   
-- Ligne bleu clair: requête/action-requête eDiscovery ou données d’action 
+- Ligne bleu clair : requête/action-requête eDiscovery ou données d’action 
     
-- Ligne orange: réponse eDisovery-données de réponse à la requête eDiscovery 
+- Ligne orange : réponse eDisovery-données de réponse à la requête eDiscovery 
     
-- Ligne verte: état requête/réponse-État eDiscovery requête/réponse données 
+- Ligne verte : état requête/réponse-État eDiscovery requête/réponse données 
     
-- Ligne violette: demande d’état/d’action Exchange-demande eDiscovery pour l’état de l’action pour le trafic Exchange. 
+- Ligne violette : demande d’état/d’action Exchange-demande eDiscovery pour l’état de l’action pour le trafic Exchange. 
     
-- Ligne rouge: réponse d’état/de données Exchange-requête eDiscovery ou réponse d’État à partir d’Exchange. 
+- Ligne rouge : réponse d’état/de données Exchange-requête eDiscovery ou réponse d’État à partir d’Exchange. 
     
 - Ligne noire en pointillés : Approbation de serveur à serveur/Oauth  
     

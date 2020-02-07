@@ -16,22 +16,24 @@ search.appverid:
 - MEW150
 - BCS160
 ms.assetid: fd16c8d2-4799-4c39-8fd7-045f06640166
-description: Ne serait-ce pas agréable si votre connexion Internet était toujours rapide et jamais inactive? Ce jour, peut-être. Toutefois, entre-temps, il existe des choses pratiques que vous pouvez effectuer pour contourner un réseau Balky tout en continuant à faire votre travail quotidien.
-ms.openlocfilehash: 69fde7ab60fecba4cc43d555d2988f75b7148dba
-ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
+f1.keywords:
+- NOCSH
+description: Ne serait-ce pas agréable si votre connexion Internet était toujours rapide et jamais inactive ? Ce jour, peut-être. Toutefois, entre-temps, il existe des choses pratiques que vous pouvez effectuer pour contourner un réseau Balky tout en continuant à faire votre travail quotidien.
+ms.openlocfilehash: 3e9a3e91c5e1cc775d28742b39ea9c0ed507d2c9
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35616757"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844955"
 ---
 # <a name="best-practices-for-using-office-365-on-a-slow-network"></a>Meilleures pratiques pour l’utilisation d’Office 365 sur un réseau lent
 
-Ne serait-ce pas agréable si votre connexion Internet était toujours rapide et jamais inactive? Ce jour, peut-être. Toutefois, entre-temps, il existe des choses pratiques que vous pouvez effectuer pour contourner un réseau Balky tout en continuant à faire votre travail quotidien. Bien qu’Office 365 soit un service basé sur un nuage, il offre également de nombreuses façons de travailler en mode hors connexion et de maintenir la synchronisation de vos modifications. En outre, il est parfois plus efficace de travailler avec du contenu hors connexion, car les applications s’exécutent plus rapidement et l’interface utilisateur est plus réactive. Le point est le suivant: Office 365 vous offre le meilleur des deux mondes. Voici comment en tirer parti. 
+Ne serait-ce pas agréable si votre connexion Internet était toujours rapide et jamais inactive ? Ce jour, peut-être. Toutefois, entre-temps, il existe des choses pratiques que vous pouvez effectuer pour contourner un réseau Balky tout en continuant à faire votre travail quotidien. Bien qu’Office 365 soit un service basé sur un nuage, il offre également de nombreuses façons de travailler en mode hors connexion et de maintenir la synchronisation de vos modifications. En outre, il est parfois plus efficace de travailler avec du contenu hors connexion, car les applications s’exécutent plus rapidement et l’interface utilisateur est plus réactive. Le point est le suivant : Office 365 vous offre le meilleur des deux mondes. Voici comment en tirer parti. 
   
 > [!TIP]
-> Vous souhaitez voir à quel point la connexion réseau est lente (ou rapide)? Essayez l’application de test de vitesse de [OOKLA](https://www.speedtest.net/) ou de test de la [Vitesse du réseau](https://www.windowsphone.com/store/app/network-speed-test/9b9ae06b-2961-41ef-987d-b09567cffe70). 
+> Vous souhaitez voir à quel point la connexion réseau est lente (ou rapide) ? Essayez l’application de test de vitesse de [OOKLA](https://www.speedtest.net/) ou de test de la [Vitesse du réseau](https://www.windowsphone.com/store/app/network-speed-test/9b9ae06b-2961-41ef-987d-b09567cffe70). 
 
-## <a name="why-is-my-network-so-slow"></a>Pourquoi mon réseau est-il si lent?
+## <a name="why-is-my-network-so-slow"></a>Pourquoi mon réseau est-il si lent ?
 
 Bien que vous ne soyez pas en mesure de contrôler les performances réseau, il est utile de comprendre ce qui se passe en arrière-plan. Internet est extrêmement complexe, mais il existe quelques concepts qui peuvent vous aider à mieux comprendre la situation. Les meilleures pratiques décrites dans cet article peuvent vous aider à résoudre les problèmes de performances et à réduire la frustration.
   
@@ -39,19 +41,19 @@ Bien que vous ne soyez pas en mesure de contrôler les performances réseau, il 
 
 ![Facteurs de performances réseau](media/62a94322-3f1a-4d2d-bbdc-2aa0722d2d96.png)
   
- **Bande passante et latence** Les deux mesures les plus importantes des performances du réseau sont la bande passante et la latence: 
+ **Bande passante et latence** Les deux mesures les plus importantes des performances du réseau sont la bande passante et la latence : 
   
 - La bande passante est le débit mesuré en bits par seconde. Plus grande est préférable. La bande passante est comparable à un tuyau d’eau. Plus le canal est grand, plus le nombre d’eau que vous pouvez mettre en place est élevé.
 
 - La latence est le temps nécessaire pour obtenir du contenu à partir d’un serveur ou d’un service vers votre appareil et est mesuré en millisecondes. Plus rapide. La latence peut être causée par un certain nombre de facteurs, notamment une faible bande passante, une connexion clairsemée ou une durée de transmission.
 
- **Problèmes courants** Outre la bande passante et la latence, d’autres problèmes ont un impact sur les performances du réseau et sont souvent imprévisibles. Les performances du réseau peuvent fluctuer en fonction de l’heure de la journée ou de votre emplacement physique. Le réseau peut être encombré lorsque certains événements se produisent et font grimper l’utilisation d’Internet, comme une catastrophe naturelle ou un événement public important. La taille et la complexité de la page en cours de chargement, ainsi que le nombre et la taille des fichiers en cours de transfert ont un impact direct sur les performances. Une connexion WiFi peut se dégrader temporairement: par exemple, vous interrogez une grande réunion de conférence de milliers en demandant tout le monde au Tweet en même temps. 
+ **Problèmes courants** Outre la bande passante et la latence, d’autres problèmes ont un impact sur les performances du réseau et sont souvent imprévisibles. Les performances du réseau peuvent fluctuer en fonction de l’heure de la journée ou de votre emplacement physique. Le réseau peut être encombré lorsque certains événements se produisent et font grimper l’utilisation d’Internet, comme une catastrophe naturelle ou un événement public important. La taille et la complexité de la page en cours de chargement, ainsi que le nombre et la taille des fichiers en cours de transfert ont un impact direct sur les performances. Une connexion WiFi peut se dégrader temporairement : par exemple, vous interrogez une grande réunion de conférence de milliers en demandant tout le monde au Tweet en même temps. 
   
- **Considérations relatives à un réseau satellite** Un réseau satellite est utile lorsqu’un réseau terrestre n’est pas réalisable, comme le pays d’arrière-plan, un navire de croisière ou une zone scientifique distante. Ces réseaux s’appuient sur des satellites positionnés sur une orbite géosynchrone 22 000 milles au-dessus de l’Équateur. Toutefois, une transmission voyage en fait environ 90 000 kilomètres, et par conséquent, un réseau satellite a une latence plus lente (500 ms ou plus) qu’un réseau terrestre (20 à MS). Dans les meilleures conditions, vous pouvez ne pas remarquer cette latence, mais pour télécharger des fichiers volumineux, des vidéos de diffusion en continu et des jeux, vous en aurez probablement besoin. Un autre problème est le «fondu de pluie» dans lequel une météo importante, telle que Thunderstorms et blizzards, peut interrompre temporairement la transmission par satellite.
+ **Considérations relatives à un réseau satellite** Un réseau satellite est utile lorsqu’un réseau terrestre n’est pas réalisable, comme le pays d’arrière-plan, un navire de croisière ou une zone scientifique distante. Ces réseaux s’appuient sur des satellites positionnés sur une orbite géosynchrone 22 000 milles au-dessus de l’Équateur. Toutefois, une transmission voyage en fait environ 90 000 kilomètres, et par conséquent, un réseau satellite a une latence plus lente (500 ms ou plus) qu’un réseau terrestre (20 à MS). Dans les meilleures conditions, vous pouvez ne pas remarquer cette latence, mais pour télécharger des fichiers volumineux, des vidéos de diffusion en continu et des jeux, vous en aurez probablement besoin. Un autre problème est le « fondu de pluie » dans lequel une météo importante, telle que Thunderstorms et blizzards, peut interrompre temporairement la transmission par satellite.
   
-## <a name="are-you-sure-its-the-network"></a>Êtes-vous sûr qu’il s’agit du réseau?
+## <a name="are-you-sure-its-the-network"></a>Êtes-vous sûr qu’il s’agit du réseau ?
 
-Chaque fois que vous rencontrez des problèmes de performances, vérifiez d’abord que votre appareil n’est pas à l’origine du problème. Vous pouvez effectuer une amélioration importante dans les deux cas suivants:
+Chaque fois que vous rencontrez des problèmes de performances, vérifiez d’abord que votre appareil n’est pas à l’origine du problème. Vous pouvez effectuer une amélioration importante dans les deux cas suivants :
   
 - Assurez-vous que votre appareil fonctionne correctement et qu’il n’y a aucun programme malveillant sur votre ordinateur.
 
@@ -65,7 +67,7 @@ Votre navigateur est votre passerelle vers Office 365, ce qui peut avoir un impa
   
  **Navigateurs en général**
   
-Voici quelques suggestions pour les navigateurs en général:
+Voici quelques suggestions pour les navigateurs en général :
   
 - Désactivez les modules complémentaires du navigateur susceptibles d’avoir un impact sur les performances ou dont vous n’avez pas vraiment besoin.
 
@@ -83,7 +85,7 @@ Voici quelques suggestions pour les navigateurs en général:
 
  **Propres au navigateur**
   
-Voici quelques suggestions pour votre navigateur:
+Voici quelques suggestions pour votre navigateur :
   
 - **Internet Explorer** Effectuez une mise à niveau vers Internet Explorer version 11 ou version ultérieure pour des améliorations de performances substantielles par rapport aux versions précédentes. Pour plus d’informations, reportez-vous au [Guide de résolution des problèmes pour Internet Explorer](https://support.microsoft.com/help/2437121/troubleshooting-guide-for-internet-explorer-when-you-access-office-365).
 
@@ -95,7 +97,7 @@ Voici quelques suggestions pour votre navigateur:
   
 ## <a name="best-practices-for-using-outlook-and-outlook-web-app"></a>Meilleures pratiques pour l’utilisation d’Outlook et d’Outlook Web App
 
-La lecture, l’écriture et l’organisation du courrier électronique sont un élément de la journée. Outlook et Outlook Web App (OWA) offrent une prise en charge hors connexion. L’utilisation d’une application de messagerie sur votre téléphone intelligent constitue une autre alternative utile. Utilisez les options suivantes qui répondent le mieux à vos besoins:
+La lecture, l’écriture et l’organisation du courrier électronique sont un élément de la journée. Outlook et Outlook Web App (OWA) offrent une prise en charge hors connexion. L’utilisation d’une application de messagerie sur votre téléphone intelligent constitue une autre alternative utile. Utilisez les options suivantes qui répondent le mieux à vos besoins :
   
 - Effectuez une mise à niveau vers la dernière version d’Outlook pour améliorer considérablement les performances par rapport aux versions précédentes. 
 
@@ -116,7 +118,7 @@ OneDrive entreprise est entièrement conçu pour fonctionner avec vos fichiers e
   
 L’application de synchronisation OneDrive entreprise est fournie avec un abonnement SharePoint Online et Office 365 Business, ou vous pouvez [Télécharger](https://support.microsoft.com/kb/2903984) gratuitement l’application de synchronisation onedrive entreprise. Cette application est également plus rapide que l’utilisation des commandes **ouvrir dans l’Explorateur** ou **Télécharger** . Pour plus d’informations, consultez [la rubrique Configurer votre ordinateur pour synchroniser vos fichiers OneDrive entreprise dans Office 365](https://support.office.com/article/23e1f12b-d896-4cb1-a238-f91d19827a16).
   
-Voici quelques conseils supplémentaires pour l’utilisation de l’application de synchronisation OneDrive entreprise:
+Voici quelques conseils supplémentaires pour l’utilisation de l’application de synchronisation OneDrive entreprise :
   
 - Si vous synchronisez une grande bibliothèque pour la première fois, lancez la synchronisation pendant les heures creuses, par exemple, pendant la nuit.
 
@@ -132,7 +134,7 @@ Pour plus d’informations, consultez la rubrique [Microsoft OneNote](https://of
 
 ## <a name="best-practices-for-using-skype-for-business-and-lync-online"></a>Meilleures pratiques pour l’utilisation de Skype entreprise et de Lync Online
 
-Les instructions suivantes sont des instructions générales sur l’utilisation de Skype entreprise ou de Lync Online lorsque votre réseau est lent:
+Les instructions suivantes sont des instructions générales sur l’utilisation de Skype entreprise ou de Lync Online lorsque votre réseau est lent :
 
 - Utilisez la messagerie instantanée dès que vous pouvez faire en sorte qu’elle fonctionne correctement sur un réseau lent.
 
@@ -148,9 +150,9 @@ Pour plus d’informations, reportez-vous à la rubrique [qualité audio ou vid�
   
 ## <a name="best-practices-for-using-sharepoint-lists"></a>Meilleures pratiques pour l’utilisation des listes SharePoint
 
-Utiliser des données de liste hors connexion pour «nettoyer», analyser ou rapporter des données est un excellent moyen de réduire l’impact d’un réseau lent. Vous pouvez lire et écrire la plupart des listes à partir de Microsoft Access 2019 et Microsoft Access 2016 en les liant. Vous pouvez également exporter une liste vers un tableau Excel, ce qui crée une connexion de données unidirectionnelle entre le tableau Excel et la liste. Découvrez comment [travailler hors connexion avec des tables liées à des listes SharePoint](https://support.office.com/article/work-offline-with-tables-that-are-linked-to-sharepoint-lists-5d66594a-6176-4a25-a198-320f13ccf41e).
+Utiliser des données de liste hors connexion pour « nettoyer », analyser ou rapporter des données est un excellent moyen de réduire l’impact d’un réseau lent. Vous pouvez lire et écrire la plupart des listes à partir de Microsoft Access 2019 et Microsoft Access 2016 en les liant. Vous pouvez également exporter une liste vers un tableau Excel, ce qui crée une connexion de données unidirectionnelle entre le tableau Excel et la liste. Découvrez comment [travailler hors connexion avec des tables liées à des listes SharePoint](https://support.office.com/article/work-offline-with-tables-that-are-linked-to-sharepoint-lists-5d66594a-6176-4a25-a198-320f13ccf41e).
   
-Pour plus d’informations, reportez-vous à la section «en savoir plus sur la gestion des grandes listes» dans [gestion des grandes listes et bibliothèques dans Office 365](https://support.office.com/article/b4038448-ec0e-49b7-b853-679d3d8fb784).
+Pour plus d’informations, reportez-vous à la section « en savoir plus sur la gestion des grandes listes » dans [gestion des grandes listes et bibliothèques dans Office 365](https://support.office.com/article/b4038448-ec0e-49b7-b853-679d3d8fb784).
   
 ## <a name="best-practices-for-customizing-web-pages"></a>Meilleures pratiques pour la personnalisation des pages Web
 
@@ -174,9 +176,9 @@ Les instructions suivantes peuvent vous aider à améliorer les performances du 
 
 Pour plus d’informations, consultez la rubrique [régler les performances de Project Online](https://support.office.com/article/12ba0ebd-c616-42e5-b9b6-cad570e8409c).
   
-## <a name="whats-the-best-way-to-report-problems"></a>Quelle est la meilleure façon de signaler les problèmes?
+## <a name="whats-the-best-way-to-report-problems"></a>Quelle est la meilleure façon de signaler les problèmes ?
 
-Microsoft améliore en permanence les performances globales d’Office 365 en surveillant le réseau, en mesurant la bande passante et la latence, en améliorant le temps de chargement des pages, en réduisant les e/s disque, en reconcevant les pages pour utiliser une stratégie de téléchargement minimale, en ajoutant du matériel aux centres de données et ajout de centres de données. Pour plus d’informations sur la vérification de vos problèmes d’État et de création de rapports, consultez [la rubrique How to check Office 365 service Health](https://docs.microsoft.com/office365/enterprise/view-service-health).
+Microsoft améliore en permanence les performances globales d’Office 365 en surveillant le réseau, en mesurant la bande passante et la latence, en améliorant le temps de chargement des pages, en réduisant les e/s disque, en reconcevant les pages pour utiliser une stratégie de téléchargement minimale, en ajoutant du matériel aux centres de données et en ajoutant des centres de données. Pour plus d’informations sur la vérification de vos problèmes d’État et de création de rapports, consultez [la rubrique How to check Office 365 service Health](https://docs.microsoft.com/office365/enterprise/view-service-health).
   
 ## <a name="see-also"></a>Voir aussi
 

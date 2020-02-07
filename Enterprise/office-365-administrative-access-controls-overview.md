@@ -9,16 +9,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
+f1.keywords:
+- NOCSH
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 'Résumé : vue d’ensemble des contrôles d’accès administratif et de la catégorisation des données d’Office 365.'
-ms.openlocfilehash: e8cc470c617deea7435841f276b772b0a8ef17a3
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: f902b123b26f2c71cb6597f66fc47142e2f2b44c
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067409"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844535"
 ---
 # <a name="administrative-access-controls-in-office-365"></a>Contrôles d’accès des administrateurs dans Office 365 
 
@@ -29,12 +31,12 @@ Par défaut, les ingénieurs Microsoft ne disposent d'aucun privilège administr
 Microsoft fournit des services en ligne à l’aide de plusieurs formes de remise en nuage :
 
 - **Nuages publics :** Inclut des versions mutualisées d’Office 365, Azure et d’autres services hébergés en Amérique du Nord, Amérique du Sud, Europe, Asie, Australie, etc.
-- **Clouds nationaux :** Comprend tous les nuages souverains et tiers gérés en dehors des États-Unis (sauf ceux notés précédemment), tels que Office 365 en Chine (géré par 21Vianet) et Office 365 en Allemagne (géré par Microsoft, mais sous un modèle dans lequel un tiers de confiance des données, Deutsche Telekom, contrôle et surveille l’accès de Microsoft aux données et systèmes clients qui contiennent des données client).
+- **Clouds nationaux :** Comprend tous les nuages souverains et tiers gérés en dehors des États-Unis (sauf ceux notés précédemment), tels que Office 365 en Chine (géré par 21Vianet) et Office 365 en Allemagne (géré par Microsoft, mais sous un modèle dans lequel un tiers de confiance de données, Deutsche Telekom, contrôle et surveille l’accès de Microsoft aux données et systèmes clients qui contiennent des données client).
 - **Clouds gouvernementaux :** Inclut Office 365 et Azure services disponibles pour les clients du secteur public américain.
 
 Pour les besoins de cet article, les services Office 365 sont les suivants :
 
-- [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online)
+- [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online)
 - [Exchange Online Protection](https://docs.microsoft.com/Office365/SecurityCompliance/eop/exchange-online-protection-overview)
 - [SharePoint Online](https://docs.microsoft.com/sharepoint/sharepoint-online)
 - [OneDrive Entreprise](https://docs.microsoft.com/OneDrive/onedrive)

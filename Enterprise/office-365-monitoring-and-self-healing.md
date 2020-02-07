@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: Informations sur les fonctionnalités de surveillance et d’autoréparation d’Office 365.
-ms.openlocfilehash: bb82a82fffea4602ece258091b75580594ba435f
-ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
+ms.openlocfilehash: 825edd1bc994f696c14e53d8830fc10defb04630
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38035741"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844365"
 ---
 # <a name="office-365-monitoring-and-self-healing"></a>Surveillance et autoréparation d’Office 365
 

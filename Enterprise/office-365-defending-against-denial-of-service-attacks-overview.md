@@ -12,19 +12,21 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: Vue d’ensemble des attaques par déni de service (DoS).
-ms.openlocfilehash: 55fffccfc59f13d32cdd19930320c1df1cf58461
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 16378800fc7bb61b8f78e2c4c51eb7940cb45d17
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067388"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843587"
 ---
 # <a name="defend-against-denial-of-service-attacks-in-office-365"></a>Défense contre les attaques par déni de service dans Office 365
 
 ## <a name="introduction"></a>Introduction
 
-Microsoft offre une infrastructure de confiance pour plus de 200 services Cloud hébergés dans une infrastructure de Cloud internationale de plus de 100 centres de donnees. Ces approches sont les suivantes :
+Microsoft offre une infrastructure de confiance pour plus de 200 services Cloud hébergés dans une infrastructure de Cloud internationale de plus de 100 centres de donnees. Cela inclut ce qui suit :
 
 - Microsoft Azure
 - Microsoft Bing

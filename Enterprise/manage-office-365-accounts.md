@@ -7,6 +7,8 @@ audience: Admin
 ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.collection:
 - Ent_O365
@@ -18,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 'Découvrez les outils à utiliser pour gérer vos utilisateurs Office 365, ainsi que la manière dont vous pouvez les utiliser en fonction de la gestion des identités des utilisateurs. '
-ms.openlocfilehash: 3e29af9e3d01184f9edc386148de60897fb03e27
-ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
+ms.openlocfilehash: 0cfb1496dd97eb932afc4e90a6d9469289332c2d
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34490737"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843715"
 ---
 # <a name="tools-to-manage-office-365-accounts"></a>Outils permettant de gérer les comptes Office 365
 
@@ -35,11 +37,11 @@ L’emplacement et la façon dont vous pouvez gérer vos comptes d’utilisateur
   
 ### <a name="cloud-authentication"></a>Authentification Cloud
 
-- Authentification Cloud: créer et gérer des utilisateurs dans le centre d’administration, vous pouvez également utiliser Windows PowerShell ou Azure Active Directory pour gérer vos utilisateurs. 
+- Authentification Cloud : créer et gérer des utilisateurs dans le centre d’administration, vous pouvez également utiliser Windows PowerShell ou Azure Active Directory pour gérer vos utilisateurs. 
     
-- Synchronisation de hachage de mot de passe avec authentification unique transparente: le moyen le plus simple d’activer l’authentification pour les objets d’annuaire locaux dans Azure AD. La synchronisation de hachage de mot de passe (hachage) vous permet de synchroniser vos objets de compte d’utilisateur Active Directory sur site avec Office 365 et de gérer vos utilisateurs en local. 
+- Synchronisation de hachage de mot de passe avec authentification unique transparente : le moyen le plus simple d’activer l’authentification pour les objets d’annuaire locaux dans Azure AD. La synchronisation de hachage de mot de passe (hachage) vous permet de synchroniser vos objets de compte d’utilisateur Active Directory sur site avec Office 365 et de gérer vos utilisateurs en local. 
     
-- Authentification directe avec authentification unique transparente: fournit une validation de mot de passe simple pour les services d’authentification Azure AD à l’aide d’un agent logiciel exécuté sur un ou plusieurs serveurs locaux afin de valider directement les utilisateurs avec votre organisation locale active. Active. 
+- Authentification directe avec authentification unique transparente : fournit une validation de mot de passe simple pour les services d’authentification Azure AD à l’aide d’un agent logiciel exécuté sur un ou plusieurs serveurs locaux afin de valider directement les utilisateurs avec votre organisation locale active. Active. 
     
 ### <a name="federated-authentication"></a>Authentification fédérée
 
@@ -49,23 +51,23 @@ L’emplacement et la façon dont vous pouvez gérer vos comptes d’utilisateur
     
 ## <a name="managing-accounts"></a>Gestion des comptes
 
-Lorsque vous décidez de la manière dont votre organisation créera et gérera les comptes, tenez compte des éléments suivants:
+Lorsque vous décidez de la manière dont votre organisation créera et gérera les comptes, tenez compte des éléments suivants :
   
 - Le logiciel de synchronisation d’annuaires doit être installé sur les serveurs au sein de votre environnement local pour connecter les identités entre Office 365 et votre annuaire local.
     
-- Toute option de synchronisation d’annuaires, y compris les options SSO, requiert des attributs d’annuaire sur site conformes aux normes. Les spécificités des attributs utilisés dans votre répertoire et le nettoyage (le cas échéant) requis sont décrits dans prepare [to provision Users with Directory Synchronization to Office 365](prepare-for-directory-synchronization.md). Voir [Télécharger et exécuter l’outil IdFix Office 365](install-and-run-idfix.md) pour obtenir des instructions sur l’utilisation de IdFix pour automatiser le nettoyage d’annuaire. 
+- Toute option de synchronisation d’annuaires, y compris les options SSO, requiert des attributs d’annuaire sur site conformes aux normes. Les spécificités des attributs utilisés dans votre répertoire et le nettoyage (le cas échéant) requis sont décrits dans [Prepare to provision Users with Directory Synchronization to Office 365](prepare-for-directory-synchronization.md). Voir [Télécharger et exécuter l’outil IdFix Office 365](install-and-run-idfix.md) pour obtenir des instructions sur l’utilisation de IdFix pour automatiser le nettoyage d’annuaire. 
     
 - Planifiez la façon dont vous allez créer des comptes Office 365.
     
     Le tableau suivant répertorie les différents outils de gestion des comptes.
     
-|**Option**|**Remarques**|
+|**Option**|**Notes**|
 |:-----|:-----|
 |Centre d’administration  <br/> |[Ajouter des utilisateurs individuellement ou en bloc à Office 365-aide de l’administrateur](https://support.office.com/article/1970f7d6-03b5-442f-b385-5880b9c256ec) <br/>  Fournit une interface Web simple pour ajouter et modifier des comptes d’utilisateurs.  <br/>  Ne peut pas être utilisé pour modifier des utilisateurs si la synchronisation d’annuaires est activée (l’attribution d’emplacement et de licence peut être définie).  <br/>  Ne peut pas être utilisé avec les options d’authentification unique.  <br/> |
-|Windows PowerShell  <br/> |[Gérer Office 365 avec Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=698471) <br/>  Vous permet d’ajouter des utilisateurs en bloc à l’aide d’un script Windows PowerShell.  <br/>  Peut être utilisé pour affecter un emplacement et des licences aux comptes, quelle que soit la façon dont les comptes sont créés.  <br/> |
+|Windows PowerShell  <br/> |[Gérer Office 365 avec Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=698471) <br/>  Vous permet d’ajouter des utilisateurs en bloc à l’aide d’un script Windows PowerShell.  <br/>  Peut être utilisé pour affecter un emplacement et des licences aux comptes, quelle que soit la façon dont les comptes sont créés.  <br/> |
 |Importation en bloc  <br/> |[Ajouter plusieurs utilisateurs simultanément à Office 365 - Aide aux administrateurs](add-several-users-at-the-same-time.md) <br/>  Permet d’importer un fichier CSV pour ajouter un groupe d’utilisateurs à Office 365.  <br/>  Ne peut pas être utilisé avec les options d’authentification unique.  <br/> |
 |Azure Active Directory  <br/> |Vous obtenez une édition gratuite d’Azure Active Directory avec votre abonnement Office 365. Vous pouvez effectuer des fonctions comme la réinitialisation du mot de passe en libre-service pour les utilisateurs du Cloud, et la personnalisation des pages de connexion et du panneau d’accès à l’aide de l’édition gratuite. Pour bénéficier de fonctionnalités améliorées, vous pouvez effectuer une mise à niveau vers la version Standard Edition ou Premium. Pour obtenir la liste des fonctionnalités prises en charge, reportez-vous à [Azure Active Directory Editions](https://go.microsoft.com/fwlink/p/?LinkId=698465) .  <br/> |
-|Synchronisation d’annuaires  <br/> |[Intégration de vos identités locales à Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=624168) <br/>  Pour la synchronisation d’annuaires avec ou sans synchronisation de mot de passe, utilisez [les paramètres Azure ad Connect avec Express](https://go.microsoft.com/fwlink/p/?LinkID=698537).  <br/>  Pour plusieurs forêts et options d’authentification unique, utilisez [l’installation personnalisée d’Azure ad Connect](https://go.microsoft.com/fwlink/p/?LinkId=698430).  <br/>  Fournit l’infrastructure nécessaire à l’activation de l’authentification unique.  <br/>  Requis pour de nombreux scénarios hybrides:  <br/>  Migration intermédiaire  <br/>  Exchange hybride  <br/>  Synchronise les groupes à extension messagerie et de sécurité à partir de votre annuaire local.  <br/> |
+|Synchronisation d’annuaires  <br/> |[Intégration de vos identités locales à Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=624168) <br/>  Pour la synchronisation d’annuaires avec ou sans synchronisation de mot de passe, utilisez [les paramètres Azure ad Connect avec Express](https://go.microsoft.com/fwlink/p/?LinkID=698537).  <br/>  Pour plusieurs forêts et options d’authentification unique, utilisez [l’installation personnalisée d’Azure ad Connect](https://go.microsoft.com/fwlink/p/?LinkId=698430).  <br/>  Fournit l’infrastructure nécessaire à l’activation de l’authentification unique.  <br/>  Requis pour de nombreux scénarios hybrides :  <br/>  Migration intermédiaire  <br/>  Exchange hybride  <br/>  Synchronise les groupes à extension messagerie et de sécurité à partir de votre annuaire local.  <br/> |
    
 - Quelle que soit la façon dont vous envisagez d’ajouter les comptes d’utilisateur à Office 365, vous devez gérer plusieurs fonctionnalités de compte, telles que l’attribution de licences, la spécification de l’emplacement, etc. Ces fonctionnalités peuvent être gérées à long terme à partir du centre d’administration ou vous pouvez également [créer des comptes d’utilisateur avec Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=717083).
     
@@ -76,7 +78,7 @@ Lorsque vous décidez de la manière dont votre organisation créera et gérera 
   
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Intégration d'Office 365 aux environnements locaux](office-365-integration.md)
+[Intégration d’Office 365 aux environnements locaux](office-365-integration.md)
   
 ## <a name="see-also"></a>Voir aussi
 

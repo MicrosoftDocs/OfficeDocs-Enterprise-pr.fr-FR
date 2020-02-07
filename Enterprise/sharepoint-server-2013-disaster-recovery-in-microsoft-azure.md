@@ -11,15 +11,17 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: "Résumé : À l'aide d'Azure, vous pouvez créer un environnement de récupération d'urgence pour votre batterie de serveurs SharePoint locale. Cet article décrit comment concevoir et implémenter cette solution."
-ms.openlocfilehash: cd350cca38b3cf11764e34bf5f0744f8a3c50190
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: d9d17ca3357e3297a0cfba2a764cb0468fd1a0ed
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031519"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841181"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Récupération d’urgence SharePoint Server 2013 dans Microsoft Azure
 
@@ -110,7 +112,7 @@ Après l’exécution d’une récupération, cette solution fournit les éléme
   
 **Tableau : Objectifs de récupération de la solution**
 
-|**Élément**|**Description**|
+|**Item**|**Description**|
 |:-----|:-----|
 |Sites et contenu  <br/> |Les sites et le contenu sont disponibles dans l’environnement de récupération.  <br/> |
 |Nouvelle instance de recherche  <br/> |Dans cette solution de secours semi-automatique, la recherche n’est pas restaurée à partir des bases de données de recherche. Les composants de recherche de la batterie de serveurs de récupération sont configurés de la même façon que dans la batterie de serveurs de production, dans la mesure du possible. Une fois les sites et le contenu restaurés, une analyse complète est exécutée pour recréer l’index de recherche. Il est inutile d’attendre que l’analyse soit terminée pour rendre les sites et le contenu disponibles.  <br/> |
@@ -120,7 +122,7 @@ Vous pouvez recourir aux services de conseil Microsoft (MCS) ou un partenaire po
   
 **Tableau : Autres éléments pouvant être traités par MCS ou un partenaire**
 
-|**Élément**|**Description**|
+|**Item**|**Description**|
 |:-----|:-----|
 |Synchronisation des solutions de batterie de serveurs personnalisée  <br/> |Idéalement, la configuration de la batterie de serveurs de récupération est identique à celle de la batterie de serveurs de production. Vous pouvez faire appel à un consultant ou un partenaire afin d’évaluer si les solutions de batterie de serveurs personnalisées sont répliquées ou non et si le processus de synchronisation des deux environnements est en place.  <br/> |
 |Connexions aux données sources locales  <br/> |Il peut s’avérer peu pratique de répliquer les connexions aux systèmes de données de serveurs principaux, telles que les connexions du contrôleur secondaire de domaine et les sources de contenu de recherche.  <br/> |
@@ -638,7 +640,7 @@ Ipconfig /flushdns
 
 ## <a name="additional-resources"></a>Ressources supplémentaires
 
-[Options de haute disponibilité et de récupération d'urgence prises en charge pour les bases de données SharePoint](https://docs.microsoft.com/sharepoint/administration/supported-high-availability-and-disaster-recovery-options-for-sharepoint-databas)
+[Options de haute disponibilité et de récupération d’urgence prises en charge pour les bases de données SharePoint](https://docs.microsoft.com/sharepoint/administration/supported-high-availability-and-disaster-recovery-options-for-sharepoint-databas)
   
 [Configurer des groupes de disponibilité AlwaysOn SQL Server 2012 pour SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=393122)
   

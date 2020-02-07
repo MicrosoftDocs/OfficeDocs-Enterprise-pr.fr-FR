@@ -9,6 +9,8 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -16,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: ExpressRoute pour Office 365 fournit la connectivité de couche 3 entre votre réseau et les centres de donnes de Microsoft. Les circuits utilisent des publicités d’itinéraires BGP (Border Gateway Protocol) de serveurs frontaux d’Office 365. Du point de vue de vos appareils sur site, lorsqu’ils doivent sélectionner le chemin d’accès TCP/IP correct vers Office 365, Azure ExpressRoute est considéré comme une alternative à Internet.
-ms.openlocfilehash: 8e8c1e1790e38b4e0e858a4a72266de9fcdc8157
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 2f38b88b5d940d1a8aa171c777e82a4a308be0cf
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39814632"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844555"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Planification du réseau avec ExpressRoute pour Office 365
 
@@ -187,9 +189,9 @@ Choisissez les emplacements de vos circuits en fonction de votre bande passante,
   
 Collaborez avec votre fournisseur ou vos fournisseurs pour sélectionner les meilleures options de connectivité, point-à-point, multipoint ou hébergé. N’oubliez pas que vous pouvez mélanger et faire correspondre les options de connectivité à condition que la bande passante et les autres composants redondants prennent en charge votre conception et la haute disponibilité.
   
-Voici un lien que vous pouvez utiliser pour revenir : [https://aka.ms/planningexpressroute365](https://aka.ms/planningexpressroute365)
+Voici un bref lien que vous pouvez utiliser pour revenir : [https://aka.ms/planningexpressroute365](https://aka.ms/planningexpressroute365)
   
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 <a name="BKMK_high-availability"> </a>
 
 [Évaluation de la connectivité réseau Office 365](assessing-network-connectivity.md)

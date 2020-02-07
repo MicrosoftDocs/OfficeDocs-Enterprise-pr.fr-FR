@@ -9,6 +9,8 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -16,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: ExpressRoute pour Office 365 fournit un autre chemin de routage vers de nombreux services 365 Internet. L’architecture de ExpressRoute pour Office 365 est basée sur des préfixes IP publics publicitaires des services Office 365 déjà accessibles sur Internet dans vos circuits ExpressRoute mis en service pour la redistribution ultérieure de ces préfixes IP dans votre réseau. Avec ExpressRoute, vous activez de manière efficace plusieurs chemins d’accès de routage, via Internet et via ExpressRoute, pour de nombreux services Office 365. Cet état de routage sur votre réseau peut représenter une modification significative de la façon dont la topologie de votre réseau interne est conçue.
-ms.openlocfilehash: 0b200c3a7a54d28aee20b03c850c908bfd1c868d
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 63d7c887f9900250a81fe1428d8b5b5cd3df9b81
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39813482"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840181"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Implémentation d’ExpressRoute pour Office 365
 
@@ -190,7 +192,7 @@ Il arrive souvent qu’il existe plusieurs emplacements de réunion qui peuvent 
 |L’emplacement  <br/> |Nombre de personnes  <br/> |Latence attendue pour le réseau Microsoft sur Internet sortie  <br/> |Latence attendue pour le réseau Microsoft over ExpressRoute  <br/> |
 |Los Angeles  <br/> |10 000  <br/> |~ 15ms  <br/> |~ 10 ms (via Silicon Valley)  <br/> |
 |Washington DC  <br/> |15 000  <br/> |~ 20 ms  <br/> |~ 10 ms (via New York)  <br/> |
-|Comptent  <br/> |5 000  <br/> |~ 15ms  <br/> |~ 40ms (via New York)  <br/> |
+|Comptent  <br/> |5,000  <br/> |~ 15ms  <br/> |~ 40ms (via New York)  <br/> |
 
 Une fois que l’architecture réseau globale affichant la région Office 365, le fournisseur de services réseau ExpressRoute et la quantité de personnes par emplacement ont été développées, elle peut être utilisée pour déterminer si des optimisations peuvent être effectuées. Il peut également afficher des connexions réseau épinglage globales où le trafic est acheminé vers un emplacement distant afin d’obtenir l’emplacement de la réunion. Si un épinglage sur le réseau global est découvert, il doit être résolu avant de poursuivre. Recherchez un autre emplacement de la réunion-moi ou utilisez des points de sortie Internet sélectifs pour éviter le épinglage.
   
@@ -566,9 +568,9 @@ Exécutez PSPing avec un suivi réseau pour chaque point de terminaison client e
   
 N’oubliez pas que lors du déploiement d’Office 365 avec une connexion ExpressRoute, vous devez vous assurer que la configuration réseau pour ExpressRoute est optimale et que vous avez également optimisé les autres composants de votre réseau, tels que les ordinateurs clients. En plus de l’utilisation de ce guide de planification pour résoudre les étapes que vous avez peut-être manquées, nous avons également écrit un [plan de résolution des problèmes de performances pour Office 365](https://support.office.com/article/Performance-troubleshooting-plan-for-Office-365-e241e5d9-b1d8-4f1d-a5c8-4106b7325f8c) .
   
-Voici un lien que vous pouvez utiliser pour revenir : [https://aka.ms/implementexpressroute365](https://aka.ms/implementexpressroute365)
+Voici un bref lien que vous pouvez utiliser pour revenir : [https://aka.ms/implementexpressroute365](https://aka.ms/implementexpressroute365)
   
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Évaluation de la connectivité réseau Office 365](assessing-network-connectivity.md)
   

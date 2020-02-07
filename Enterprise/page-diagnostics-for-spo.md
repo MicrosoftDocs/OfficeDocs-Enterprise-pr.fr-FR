@@ -16,13 +16,15 @@ search.appverid:
 - SPO160
 - MOE150
 - BSA160
+f1.keywords:
+- NOCSH
 description: Utilisez l’outil Diagnostics de la page pour SharePoint pour analyser le portail moderne SharePoint Online et les pages de publication classiques par rapport à un ensemble prédéfini de critères de performances.
-ms.openlocfilehash: 0f22c84599f227bd6efcf315a546b39aad77b1c1
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 57f8aa86b049701c152e8110f64b418d64250981
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078143"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841781"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>Utilisation de l’outil Diagnostics de la page pour SharePoint
 

@@ -12,6 +12,8 @@ ms.collection:
 - Ent_O365
 - M365-subscription-management
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365_Setup
 search.appverid:
 - MET150
@@ -19,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Accélérez la planification et la configuration d’Office 365 ou de Microsoft 365 avec des conseillers en matière de déploiement.
-ms.openlocfilehash: ac892a7d0551ede4d7bb4df7081ee0ae8dd5d618
-ms.sourcegitcommit: cc84565301f5c5afc8b767f637135de96115fd6d
+ms.openlocfilehash: cb721b2bc115a9419feb4becaef4bcbb9c5c436e
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "41627860"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840531"
 ---
 # <a name="deployment-advisors-for-office-365-or-microsoft-365-services"></a>Conseillers de déploiement pour les services Office 365 ou Microsoft 365
 
@@ -157,7 +159,7 @@ Si vous disposez de Gmail, vous devez migrer vos contacts gmail et vos élément
 
 ## <a name="file-creation-storage-and-sharing"></a>Création, stockage et partage de fichiers
 
-### <a name="office-365-proplus"></a>Office 365 ProPlus
+### <a name="office-365-proplus"></a>Office 365 ProPlus
 
 Office 365 ProPlus permet à vos utilisateurs de s’exécuter sur les versions les plus récentes d’Office et de les maintenir à jour.
 

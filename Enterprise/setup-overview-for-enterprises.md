@@ -14,15 +14,17 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - M365-subscription-management
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
 description: Ces étapes de présentation sont destinées à vous aider à configurer votre réseau, à créer vos identités, à déployer Office 365 ProPlus, à migrer vos données et à aider les personnes de votre organisation à utiliser Office 365.
-ms.openlocfilehash: e9af8d1ad617d617450946966967ab797eeffa07
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 979b7f1153451b072c5ab25ad8aced50ae69576a
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748065"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844015"
 ---
 # <a name="deploy-office-365-enterprise-for-your-organization"></a>Déployer Office 365 Entreprise pour votre organisation
 

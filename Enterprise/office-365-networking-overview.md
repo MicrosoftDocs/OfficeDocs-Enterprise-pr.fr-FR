@@ -13,17 +13,19 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+f1.keywords:
+- NOCSH
 description: Explique pourquoi l’optimisation du réseau est importante pour les services SaaS, l’objectif de la mise en réseau Office 365 et la façon dont SaaS requiert une mise en réseau différente des autres charges de travail.
-ms.openlocfilehash: 086d810e8375e3d4c4b7425d99513193968c6415
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 3662ca913b78ef10b562defc2fefe62b89fd2ac0
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747706"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844355"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Vue d’ensemble de la connectivité réseau Office 365
 
-*Cet article s’applique à la fois à Office 365 entreprise et à Microsoft 365 entreprise.*
+*Cet article est valable pour Office 365 Entreprise et Microsoft 365 Entreprise*.
 
 Office 365 est un Cloud SaaS (Software-as-a-service) distribué qui fournit des scénarios de productivité et de collaboration via un ensemble diversifié de micro-services et d’applications. Les composants clients d’Office 365 tels qu’Outlook, Word et PowerPoint s’exécutent sur les ordinateurs des utilisateurs et se connectent à d’autres composants d’Office 365 qui s’exécutent dans des centres de contenu Microsoft. Le facteur le plus significatif qui détermine la qualité de l’expérience de l’utilisateur final Office 365 est la fiabilité du réseau et la faible latence entre les clients Office 365 et les portes frontales du service Office 365.
 
@@ -96,7 +98,7 @@ L’optimisation des performances du réseau Office 365 revient à supprimer les
 
 [Principes de connectivité réseau Office 365](office-365-network-connectivity-principles.md)
 
-[Gestion des points de terminaison Office 365](managing-office-365-endpoints.md)
+[Gestion des points de terminaison Office 365](managing-office-365-endpoints.md)
 
 [URL et plages d’adresses IP Office 365](urls-and-ip-address-ranges.md)
 

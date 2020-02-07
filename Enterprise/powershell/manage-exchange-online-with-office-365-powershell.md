@@ -9,17 +9,19 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom:
 - Ent_Office_Other
 - PowerShell
 ms.assetid: b23dda88-f137-4051-9c2c-84035ad63f5e
 description: Résumé :Utilisez Office 365 PowerShell pour gérer Microsoft Exchange Online, y compris la configuration des boîtes aux lettres et la création de rapports avancée.
-ms.openlocfilehash: 1fdba6a34fdd3e8833f445f86a8cf025409adf77
-ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
+ms.openlocfilehash: 535a53e10d1eb11e5db4e31edd6c4c3f856b3914
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2019
-ms.locfileid: "40261327"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841471"
 ---
 # <a name="manage-exchange-online-with-office-365-powershell"></a>Gestion d’Exchange Online avec Office 365 PowerShell
 

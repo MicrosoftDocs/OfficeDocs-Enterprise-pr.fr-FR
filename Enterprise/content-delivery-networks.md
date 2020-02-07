@@ -11,6 +11,8 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -18,16 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: Utilisez ces informations pour découvrir comment Office 365 utilise les réseaux de distribution de contenu (CDN) pour améliorer les performances.
-ms.openlocfilehash: be93be8af81714c6e166246a4e68f74b9b803f46
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: a9840cd325d30febdbef62e7cddf22640bffac42
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38745837"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840631"
 ---
 # <a name="content-delivery-networks-cdns"></a>Réseaux de distribution de contenu (CDN)
 
-*Cet article s’applique à la fois à Office 365 entreprise et à Microsoft 365 entreprise.*
+*Cet article est valable pour Office 365 Entreprise et Microsoft 365 Entreprise*.
 
 CDN permet de conserver rapidement et de façon fiable Office 365 pour les utilisateurs finaux. Les services Cloud tels qu’Office 365 utilisent CDN pour mettre en cache les composants statiques plus près des navigateurs qui les demandent pour accélérer les téléchargements et réduire la latence des utilisateurs finaux. Les informations contenues dans cette rubrique vous aideront à en savoir plus sur les réseaux de distribution de contenu (CDN) et la façon dont ils sont utilisés par Office 365.
 
@@ -185,7 +187,7 @@ Bien qu’il ne fasse pas partie du CDN Office 365, vous pouvez également utili
 
 L’utilisation de CDN n’a de sens que dans un contexte SharePoint Online et doit être évitée avec SharePoint Server. Cela est dû au fait que tous les avantages liés à l’emplacement géographique ne sont pas vrais si le serveur est situé localement ou géographiquement fermé. En outre, s’il existe une connexion réseau aux serveurs où elle est hébergée, le site peut être utilisé sans connexion Internet et par conséquent ne peut pas récupérer les fichiers CDN. Dans le cas contraire, vous devez utiliser un CDN s’il en existe une disponible et stable pour la bibliothèque et les fichiers dont vous avez besoin pour votre site.
   
-Voici un lien que vous pouvez utiliser pour revenir : [https://aka.ms/o365cdns](https://aka.ms/o365cdns)
+Voici un bref lien que vous pouvez utiliser pour revenir : [https://aka.ms/o365cdns](https://aka.ms/o365cdns)
   
 ## <a name="see-also"></a>Voir aussi
 
@@ -193,7 +195,7 @@ Voici un lien que vous pouvez utiliser pour revenir : [https://aka.ms/o365cdns]
 
 [Évaluation de la connectivité réseau Office 365](assessing-network-connectivity.md)
 
-[Gestion des points de terminaison Office 365](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints)
+[Gestion des points de terminaison Office 365](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints)
 
 [URL et plages d’adresses IP Office 365](https://go.microsoft.com/fwlink/p/?LinkID=293744)
 

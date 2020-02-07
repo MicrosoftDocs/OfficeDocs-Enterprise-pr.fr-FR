@@ -9,13 +9,15 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 2858d1e7-be37-4484-b121-a99779742a38
+f1.keywords:
+- NOCSH
 description: Cet article est une version texte accessible du diagramme intitulé Options de plateforme Microsoft Lync 2013, qui est disponible dans la rubrique Diagrammes techniques.
-ms.openlocfilehash: a62fb6d1e1ee7fbddb79b0aec4ddafea4b07b4fe
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: ff03899a57ff7fbd902cd3cacfc2005d27595c55
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030598"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844635"
 ---
 # <a name="accessible-diagram---microsoft-lync-2013-platform-options"></a>Diagramme accessible : Options de plateforme Microsoft Lync 2013
 

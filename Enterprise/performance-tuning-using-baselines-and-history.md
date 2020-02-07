@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -19,12 +21,12 @@ ms.collection:
 - Ent_O365
 - SPO_Content
 description: Il existe quelques méthodes simples pour vérifier les performances de connexion entre Office 365 et votre entreprise qui vous permettra d’établir une base approximative de votre connectivité. Connaître l’historique des performances des connexions de vos ordinateurs client peut vous aider à détecter rapidement les problèmes émergents, à identifier et à prédire les problèmes.
-ms.openlocfilehash: 03aa4f9092154e00201ca0a58f335b70d26f3b11
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 2eed0b20886552c207399ab4144b63364132f98c
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078133"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844335"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>Optimisation des performances d’Office 365 à l’aide de lignes de référence et de l’historique des performances
 

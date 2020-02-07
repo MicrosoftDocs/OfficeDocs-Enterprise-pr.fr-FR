@@ -9,37 +9,39 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365_Setup
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
 description: Les applications Office pour Mac fournissent une expérience d’application native sur la plateforme macOS. Chaque application est conçue pour fonctionner dans un grand nombre de scénarios, dont les États quand aucun accès réseau n’est disponible. Lorsqu’un ordinateur est connecté à un réseau, les applications se connectent automatiquement à une série de services Web pour offrir des fonctionnalités améliorées. Cet article décrit les points de terminaison et les URL que les applications essaient d’atteindre, ainsi que les services fournis. Ces informations sont utiles lors de la résolution des problèmes de configuration réseau et de la définition d’une stratégie pour les serveurs proxy réseau. Les informations de cet article sont destinées à compléter l’article sur les plages d’adresses et l’URL Office 365.
-ms.openlocfilehash: 44acbc83b2bb32e60a470dc5d3ba27f13cbd033c
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 09795ab15ba4a387dc53afea60c2d048d6ca9022
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35781954"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844545"
 ---
 # <a name="network-requests-in-office-for-mac"></a>Requêtes réseau dans Office pour Mac
 
 Les applications Office pour Mac fournissent une expérience d’application native sur la plateforme macOS. Chaque application est conçue pour fonctionner dans un grand nombre de scénarios, dont les États quand aucun accès réseau n’est disponible. Lorsqu’un ordinateur est connecté à un réseau, les applications se connectent automatiquement à une série de services Web pour offrir des fonctionnalités améliorées. Les informations suivantes décrivent les points de terminaison et les URL que les applications essaient d’atteindre, ainsi que les services fournis. Ces informations sont utiles lors de la résolution des problèmes de configuration réseau et des stratégies de paramétrage pour les serveurs proxy réseau. Les détails dans cet article sont destinés à compléter l' [article sur les plages d’adresses et l’URL Office 365](urls-and-ip-address-ranges.md), qui inclut des points de terminaison pour les ordinateurs exécutant Microsoft Windows. Sauf indication contraire, les informations contenues dans cet article s’appliquent également à Office 2019 pour Mac et Office 2016 pour Mac, qui sont disponibles en tant qu’achat unique auprès d’un détaillant ou par le biais d’un contrat de licence en volume. 
 
   
-La plupart de cet article est un tableau détaillant les URL réseau, le type et la description du service ou de la fonctionnalité fourni par ce point de terminaison. Chacune des applications Office peut différer dans son utilisation de service et de point de terminaison. Les applications suivantes sont définies dans les tableaux ci-dessous:
+La plupart de cet article est un tableau détaillant les URL réseau, le type et la description du service ou de la fonctionnalité fourni par ce point de terminaison. Chacune des applications Office peut différer dans son utilisation de service et de point de terminaison. Les applications suivantes sont définies dans les tableaux ci-dessous :
   
-- W: Word
-- P: PowerPoint
-- X: Excel
-- O: Outlook
-- N: OneNote
+- W : Word
+- P : PowerPoint
+- X : Excel
+- O : Outlook
+- N : OneNote
    
-Le type d’URL est défini comme suit:
+Le type d’URL est défini comme suit :
   
-- ST: static-l’URL est codée en dur dans l’application cliente.
+- ST : static-l’URL est codée en dur dans l’application cliente.
     
-- SS: semi-statique-l’URL est codée dans le cadre d’une page Web ou d’un redirecteur.
+- SS : semi-statique-l’URL est codée dans le cadre d’une page Web ou d’un redirecteur.
     
-- CS: service de configuration-l’URL est renvoyée dans le cadre du service de configuration d’Office.
+- CS : service de configuration-l’URL est renvoyée dans le cadre du service de configuration d’Office.
 
     
 ## <a name="office-for-mac-default-configuration"></a>Configuration par défaut d’Office pour Mac
@@ -61,26 +63,26 @@ Les points de terminaison réseau suivants sont contactés lors du premier lance
   
 |**URL**|**Applications**|**Type**|**Description**|
 |:-----|:-----|:-----|:-----|
-|```https://config.edge.skype.com/```  <br/> |WXPON  <br/> |ER  <br/> |Configuration de la «vol»: permet la mise en place d’une fonctionnalité et d’une expérimentation.  <br/> |
-|```https://ocos-office365-s2s.msedge.net/```  <br/> |WXPON  <br/> |ER  <br/> |Test de configuration du réseau «vol»  <br/> |
-|```https://client-office365-tas.msedge.net/```  <br/> |WXPON  <br/> |ER  <br/> |Test de configuration du réseau «vol»  <br/> |
-|```https://officeclient.microsoft.com/```  <br/> |WXPON  <br/> |ER  <br/> |Service de configuration Office: liste principale des points de terminaison de service.  <br/> |
-|```https://nexusrules.officeapps.live.com/```  <br/> |WXPON  <br/> |ER  <br/> |Service de télémétrie de règles Office: informe le client des données et des événements à télécharger vers le service de télémétrie.  <br/> |
+|```https://config.edge.skype.com/```  <br/> |WXPON  <br/> |ER  <br/> |Configuration de la « vol » : permet la mise en place d’une fonctionnalité et d’une expérimentation.  <br/> |
+|```https://ocos-office365-s2s.msedge.net/```  <br/> |WXPON  <br/> |ER  <br/> |Test de configuration du réseau « vol »  <br/> |
+|```https://client-office365-tas.msedge.net/```  <br/> |WXPON  <br/> |ER  <br/> |Test de configuration du réseau « vol »  <br/> |
+|```https://officeclient.microsoft.com/```  <br/> |WXPON  <br/> |ER  <br/> |Service de configuration Office : liste principale des points de terminaison de service.  <br/> |
+|```https://nexusrules.officeapps.live.com/```  <br/> |WXPON  <br/> |ER  <br/> |Service de télémétrie de règles Office : informe le client des données et des événements à télécharger vers le service de télémétrie.  <br/> |
 |```https://mobile.pipe.aria.microsoft.com/```  <br/> |N  <br/> |ADMISSIBLE  <br/> |Service de télémétrie OneNote  <br/> |
-|```https://nexus.officeapps.live.com/```  <br/> |WXPON  <br/> |ER  <br/> |Le rapport de téléchargement de télémétrie Office-«Heartbeart» et les événements d’erreur qui se produisent sur le client sont téléchargés vers le service de télémétrie.  <br/> |
-|```https://templateservice.office.com/```  <br/> |WXP  <br/> |ADMISSIBLE  <br/> |Service de modèle Office: fournit aux utilisateurs des modèles de documents en ligne.  <br/> |
+|```https://nexus.officeapps.live.com/```  <br/> |WXPON  <br/> |ER  <br/> |Le rapport de téléchargement de télémétrie Office-« Heartbeart » et les événements d’erreur qui se produisent sur le client sont téléchargés vers le service de télémétrie.  <br/> |
+|```https://templateservice.office.com/```  <br/> |WXP  <br/> |ADMISSIBLE  <br/> |Service de modèle Office : fournit aux utilisateurs des modèles de documents en ligne.  <br/> |
 |```https://omextemplates.content.office.net/```  <br/> |WXP  <br/> |ADMISSIBLE  <br/> |Téléchargements de modèles Office-stockage des images de modèles PNG.  <br/> |
 |```https://store.office.com/```  <br/> |WXP  <br/> |ADMISSIBLE  <br/> |Stocker la configuration des applications Office.  <br/> |
 |```https://odc.officeapps.live.com/```  <br/> |WXPN  <br/> |ADMISSIBLE  <br/> |Catalogue des services d’intégration de documents Office (liste de services et points de terminaison) et découverte de domaine d’accueil.  <br/> |
 |```https://cdn.odc.officeapps.live.com/```  <br/> |WXPON  <br/> |ADMISSIBLE  <br/> |Ressources pour la découverte de domaine d’accueil v2 (15,40 et versions ultérieures)  <br/> |
-|```https://officecdn.microsoft.com/```  <br/> |WXPON  <br/> |ER  <br/> |Manifestes de mise à jour AutoUpdate: vérifie s’il existe des mises à jour disponibles  <br/> |
+|```https://officecdn.microsoft.com/```  <br/> |WXPON  <br/> |ER  <br/> |Manifestes de mise à jour AutoUpdate : vérifie s’il existe des mises à jour disponibles  <br/> |
 |```https://ajax.aspnetcdn.com/```  <br/> |WXPO  <br/> |SOCIALE  <br/> |Bibliothèque JavaScript Microsoft Ajax  <br/> |
 |```https://wikipedia.firstpartyapps.oaspapps.com/```  <br/> |Emboîtement  <br/> |SOCIALE  <br/> |Application Wikipédia pour la configuration et les ressources Office.  <br/> |
 |```https://excelbingmap.firstpartyapps.oaspapps.com/```  <br/> |X  <br/> |SOCIALE  <br/> |Application Bing Map pour la configuration et les ressources Office.  <br/> |
 |```https://peoplegraph.firstpartyapps.oaspapps.com/```  <br/> |X  <br/> |SOCIALE  <br/> |Application Graph Graph pour la configuration et les ressources Office.  <br/> |
 |```https://www.onenote.com/```  <br/> |N  <br/> |ER  <br/> |Nouveautés de OneNote.  <br/> |
 |```https://site-cdn.onenote.net/```  <br/> |N  <br/> |ER  <br/> |Nouveau contenu pour OneNote.  <br/> |
-|```https://site-cdn.onenote.net/```  <br/> |N  <br/> |SOCIALE  <br/> |Quelles sont les nouvelles images pour OneNote?  <br/> |
+|```https://site-cdn.onenote.net/```  <br/> |N  <br/> |SOCIALE  <br/> |Quelles sont les nouvelles images pour OneNote ?  <br/> |
 |```https://acompli.helpshift.com/```  <br/> |O  <br/> |ER  <br/> |Service de prise en charge dans l’application.  <br/> |
 |```https://prod-global-autodetect.acompli.net/```  <br/> |O  <br/> |ER  <br/> |Service de détection de compte de messagerie.  <br/> |
 |```https://autodiscover-s.outlook.com/```  <br/> |WXPO  <br/> |ER  <br/> |Découverte automatique d’Outlook  <br/> |
@@ -94,9 +96,9 @@ Les points de terminaison réseau suivants sont contactés lors du premier lance
   
 Les points de terminaison réseau suivants sont contactés lors de la connexion au stockage informatique. En fonction de votre type de compte, différents services peuvent être contactés. Par exemple :
   
-- **MSA: compte Microsoft** : généralement utilisé pour les scénarios des particuliers et des détaillants 
+- **MSA : compte Microsoft** : généralement utilisé pour les scénarios des particuliers et des détaillants 
     
-- **OrgID: compte d’organisation** -généralement utilisé pour les scénarios commerciaux 
+- **OrgID : compte d’organisation** -généralement utilisé pour les scénarios commerciaux 
     
 |**URL**|**Applications**|**Type**|**Description**|
 |:-----|:-----|:-----|:-----|
@@ -251,34 +253,34 @@ Les clients de licence en volume peuvent avoir des stratégies strictes quant à
 
 - ```defaults write com.microsoft.Powerpoint UseOnlineContent -integer 0```
 
-Si les utilisateurs essaient d’accéder à la fonction de connexion, ils verront une erreur indiquant qu’il n’y a pas de connexion réseau. Étant donné que cette préférence bloque également l’activation de produit en ligne, elle doit être utilisée uniquement pour les installations avec licence en volume. En particulier, l’utilisation de cette préférence empêchera les applications Office d’accéder aux points de terminaison suivants:
+Si les utilisateurs essaient d’accéder à la fonction de connexion, ils verront une erreur indiquant qu’il n’y a pas de connexion réseau. Étant donné que cette préférence bloque également l’activation de produit en ligne, elle doit être utilisée uniquement pour les installations avec licence en volume. En particulier, l’utilisation de cette préférence empêchera les applications Office d’accéder aux points de terminaison suivants :
   
 - ```https://odc.officeapps.live.com```
     
 - ```https://*.firstpartyapps.oaspapps.com```
     
-- Tous les points de terminaison figurant dans la section «connexion» ci-dessus.
+- Tous les points de terminaison figurant dans la section « connexion » ci-dessus.
     
-- Tous les points de terminaison figurant dans la section «recherche intelligente» ci-dessus.
+- Tous les points de terminaison figurant dans la section « recherche intelligente » ci-dessus.
     
-- Tous les points de terminaison figurant dans la section «activation de produit» ci-dessus.
+- Tous les points de terminaison figurant dans la section « activation de produit » ci-dessus.
     
-- Tous les points de terminaison figurant dans la section «applications Office (alias)» ci-dessus.
+- Tous les points de terminaison figurant dans la section « applications Office (alias) » ci-dessus.
     
-Pour rétablir toutes les fonctionnalités de l’utilisateur, définissez sa préférence sur «2» ou supprimez-le.
+Pour rétablir toutes les fonctionnalités de l’utilisateur, définissez sa préférence sur « 2 » ou supprimez-le.
   
 > [!NOTE]
 > Cette préférence nécessite Office pour Mac Build 15,25 [160726] ou une version ultérieure. 
   
 ### <a name="telemetry"></a>Télémétrie
   
-Office pour Mac envoie des informations de télémétrie à Microsoft à intervalles réguliers. Les données sont téléchargées vers le point de terminaison «de la tentative». Les données de télémétrie aident l’équipe technique à évaluer l’intégrité et les comportements inattendus de chaque application Office. Il existe deux catégories de télémétrie:
+Office pour Mac envoie des informations de télémétrie à Microsoft à intervalles réguliers. Les données sont téléchargées vers le point de terminaison « de la tentative ». Les données de télémétrie aident l’équipe technique à évaluer l’intégrité et les comportements inattendus de chaque application Office. Il existe deux catégories de télémétrie :
   
 - La **pulsation** contient des informations sur la version et la licence. Ces données sont envoyées immédiatement lors du lancement de l’application. 
     
 - **Utilisation** : contient des informations sur la façon dont les applications sont utilisées et des erreurs récupérables. Ces données sont envoyées toutes les 60 minutes. 
     
-Microsoft prend votre confidentialité très sérieusement. Vous pouvez consulter la rubrique relative à la stratégie de [https://privacy.microsoft.com](https://privacy.microsoft.com)collecte de données de Microsoft à l’adresse. Pour empêcher les applications d’envoyer des télémétries «utilisation», la préférence **SendAllTelemetryEnabled** peut être ajustée. La préférence est par application et peut être définie via des profils de configuration macOS ou manuellement à partir de terminal: 
+Microsoft prend votre confidentialité très sérieusement. Vous pouvez consulter la rubrique relative à la stratégie de [https://privacy.microsoft.com](https://privacy.microsoft.com)collecte de données de Microsoft à l’adresse. Pour empêcher les applications d’envoyer des télémétries « utilisation », la préférence **SendAllTelemetryEnabled** peut être ajustée. La préférence est par application et peut être définie via des profils de configuration macOS ou manuellement à partir de terminal : 
   
 ```defaults write com.microsoft.Word SendAllTelemetryEnabled -bool FALSE```
 
@@ -298,18 +300,18 @@ La télémétrie de pulsations est toujours envoyée et ne peut pas être désac
   
 ### <a name="crash-reporting"></a>Signalement des incidents
   
-Lorsqu’une erreur d’application irrécupérable se produit, l’application se ferme de manière inattendue et télécharge un rapport d’incident vers le service «Watson». Le rapport d’incident se compose d’une pile d’appels, qui correspond à la liste des étapes de traitement de l’application conduisant au blocage. Ces étapes aident l’équipe d’ingénierie à identifier la fonction exacte qui a échoué et pourquoi.
+Lorsqu’une erreur d’application irrécupérable se produit, l’application se ferme de manière inattendue et télécharge un rapport d’incident vers le service « Watson ». Le rapport d’incident se compose d’une pile d’appels, qui correspond à la liste des étapes de traitement de l’application conduisant au blocage. Ces étapes aident l’équipe d’ingénierie à identifier la fonction exacte qui a échoué et pourquoi.
   
-Dans certains cas, le contenu d’un document entraîne le blocage de l’application. Si l’application identifie le document comme étant la cause, il demande à l’utilisateur s’il souhaite également envoyer le document avec la pile d’appels. Les utilisateurs peuvent faire un choix éclairé à cette question. Les administrateurs informatiques peuvent avoir des exigences strictes quant à la transmission des documents et prendre la décision au nom de l’utilisateur pour ne jamais envoyer de documents. La préférence suivante peut être définie pour empêcher l’envoi de documents et pour supprimer l’invite à l’utilisateur:
+Dans certains cas, le contenu d’un document entraîne le blocage de l’application. Si l’application identifie le document comme étant la cause, il demande à l’utilisateur s’il souhaite également envoyer le document avec la pile d’appels. Les utilisateurs peuvent faire un choix éclairé à cette question. Les administrateurs informatiques peuvent avoir des exigences strictes quant à la transmission des documents et prendre la décision au nom de l’utilisateur pour ne jamais envoyer de documents. La préférence suivante peut être définie pour empêcher l’envoi de documents et pour supprimer l’invite à l’utilisateur :
   
 ```defaults write com.microsoft.errorreporting IsAttachFilesEnabled -bool FALSE```
 
 > [!NOTE]
-> Si **SendAllTelemetryEnabled** est défini sur **false**, tous les rapports d’incident pour ce processus sont désactivés. Pour activer la création de rapports d’incident sans envoyer de télémétrie d’utilisation, la préférence suivante peut être définie:```defaults write com.microsoft.errorreporting IsMerpEnabled -bool TRUE``` 
+> Si **SendAllTelemetryEnabled** est défini sur **false**, tous les rapports d’incident pour ce processus sont désactivés. Pour activer la création de rapports d’incident sans envoyer de télémétrie d’utilisation, la préférence suivante peut être définie :```defaults write com.microsoft.errorreporting IsMerpEnabled -bool TRUE``` 
   
 ### <a name="updates"></a>Updates
   
-Microsoft publie les mises à jour d’Office pour Mac à intervalles réguliers (généralement une fois par mois). Nous encourageons vivement les utilisateurs et les administrateurs informatiques à tenir à jour les machines afin de s’assurer que les correctifs de sécurité les plus récents sont installés. Dans les cas où les administrateurs informatiques veulent contrôler et gérer étroitement les mises à jour des ordinateurs, la préférence suivante peut être définie pour empêcher le processus AutoUpdate de détecter et d’utiliser automatiquement les mises à jour des produits:
+Microsoft publie les mises à jour d’Office pour Mac à intervalles réguliers (généralement une fois par mois). Nous encourageons vivement les utilisateurs et les administrateurs informatiques à tenir à jour les machines afin de s’assurer que les correctifs de sécurité les plus récents sont installés. Dans les cas où les administrateurs informatiques veulent contrôler et gérer étroitement les mises à jour des ordinateurs, la préférence suivante peut être définie pour empêcher le processus AutoUpdate de détecter et d’utiliser automatiquement les mises à jour des produits :
   
 ```defaults write com.microsoft.autoupdate2 HowToCheck -string 'Manual'```
 

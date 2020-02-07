@@ -13,17 +13,19 @@ search.appverid:
 - PDD140
 - MET150
 ms.assetid: 89d9feee-2285-419c-8c14-0f7f583536e0
+f1.keywords:
+- NOCSH
 description: PerformancePoint Server 2007, ProClarity et SharePoint Server 2007 ont atteint la fin de la prise en charge. Lisez cet article pour planifier la mise à niveau de votre solution décisionnel.
-ms.openlocfilehash: 517d420eff35cde2862d7879e3b5557cbe6087ca
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 89f13a9fba91195c8e3ecfcdaaebb52a27307eef
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38746247"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844095"
 ---
 # <a name="performancepoint-server-2007-end-of-support-roadmap"></a>Feuille de route pour la fin de l’assistance pour PerformancePoint Server 2007
 
-*Cet article s’applique à la fois à Office 365 entreprise et à Microsoft 365 entreprise.*
+*Cet article est valable pour Office 365 Entreprise et Microsoft 365 Entreprise*.
 
 Les applications et les serveurs Office 2007 ont atteint leur fin de prise en charge, y compris les serveurs et les applications que vous pouvez utiliser dans le cadre de vos solutions d’aide à la décision. Le tableau suivant répertorie les applications BI qui sont affectées :
   
@@ -75,7 +77,7 @@ Une fois que vous avez exploré vos options de mise à niveau, l’étape suivan
 |**Option**|**Dans le Cloud ou sur site ?**|
 |:-----|:-----|
 |[Excel](#excel-with-sharepoint-server-on-premises) <br/> |Les deux  <br/> |
-|[Power BI](#use-power-bi-in-the-cloud-or on-premises) <br/> |Les deux  <br/> |
+|[Power BI](#use-power-bi-in-the-cloud-or on-premises) <br/> |Les deux  <br/> |
 |[Reporting Services](#use-reporting-services-on-premises) <br/> |Local uniquement  <br/> |
 |[PerformancePoint Services](#use-performancepoint-services-on-premises) <br/> |Local uniquement  <br/> |
    
@@ -149,7 +151,7 @@ Lorsque vous effectuez une mise à niveau vers PerformancePoint Services, vous b
 
 Qu’il s’agisse d’une mise à niveau locale ou d’une migration vers Office 365, nous vous recommandons de travailler avec un partenaire Microsoft. Un partenaire qualifié peut vous aider à identifier la solution qui répond le mieux aux besoins de votre entreprise et à vous aider dans votre déploiement. Visitez le [Centre partenaires Microsoft](https://go.microsoft.com/fwlink/?linkid=841249)et utilisez les filtres de recherche pour trouver un fournisseur de solutions.
   
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Ressources pour vous aider à effectuer une mise à niveau à partir de serveurs et clients Office 2007](upgrade-from-office-2007-servers-and-products.md)
   

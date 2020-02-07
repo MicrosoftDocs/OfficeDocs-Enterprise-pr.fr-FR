@@ -13,13 +13,15 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 - SPO_Content
+f1.keywords:
+- NOCSH
 description: Explication de la suppression de données dans SharePoint Online.
-ms.openlocfilehash: 3f00e88c8d0e2bc10f6468b843385753ef864297
-ms.sourcegitcommit: 4f465f690c6563cfa9f6029d3e7e9e3cace96671
+ms.openlocfilehash: fbb81d4f2440dc34ec261e943436c656f8266e8f
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41658321"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41842041"
 ---
 # <a name="sharepoint-online-data-deletion-in-office-365"></a>Suppression des données SharePoint Online dans Office 365
 

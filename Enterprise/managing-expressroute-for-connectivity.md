@@ -9,18 +9,20 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365_Setup
 search.appverid:
 - MET150
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
 description: ExpressRoute pour Office 365 offre un autre chemin de routage pour atteindre de nombreux services Office 365 sans avoir besoin de tout le trafic vers Internet. Bien que la connexion Internet à Office 365 soit toujours nécessaire, les itinéraires spécifiques publiés par Microsoft par le biais de BGP sur votre réseau rendent le circuit direct ExpressRoute préféré, sauf si d’autres configurations sont présentes dans votre réseau. Les trois domaines courants que vous pouvez configurer pour gérer ce routage incluent le filtrage des préfixes, la sécurité et la conformité.
-ms.openlocfilehash: 589d8e60d2826170b7eddb84406d1d3d0effbb43
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 54edc348e3c91e1b34555d5d4743ccdc7748191f
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39814242"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844985"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>Gestion d’ExpressRoute pour la connectivité d’Office 365
 
@@ -99,9 +101,9 @@ Microsoft recommande d’accepter ces connexions sur votre circuit Internet au l
 
 Nous ne faisons pas confiance au chemin de routage que vous utilisez pour nos contrôles de conformité. Que vous vous connectiez aux services Office 365 via un ExpressRoute ou un circuit Internet, nos contrôles de conformité ne changent pas. Vous devez passer en revue les différents niveaux de certification de sécurité et de conformité pour Office 365 afin de déterminer le meilleur choix pour répondre aux besoins de votre organisation.
   
-Voici un lien que vous pouvez utiliser pour revenir : [https://aka.ms/manageexpressroute365](https://aka.ms/manageexpressroute365)
+Voici un bref lien que vous pouvez utiliser pour revenir : [https://aka.ms/manageexpressroute365](https://aka.ms/manageexpressroute365)
   
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Réseaux de distribution de contenu](content-delivery-networks.md)
   

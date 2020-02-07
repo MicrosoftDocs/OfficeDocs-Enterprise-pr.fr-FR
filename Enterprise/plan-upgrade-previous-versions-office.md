@@ -12,17 +12,19 @@ search.appverid:
 - MET150
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
+f1.keywords:
+- NOCSH
 description: Si vous utilisez Office 2007 ou Office 2010, il est temps de planifier votre mise à niveau. Ne vous êtes pas bloqué avec des applications et des serveurs obsolètes et non pris en charge. Utilisez ces ressources pour commencer votre plan.
-ms.openlocfilehash: 2eee3efccfce79bcab7f2d179e13f46fbfc7a501
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: b654dcd7b8f923f952a6e2fbefe37a5e523e1cd4
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747057"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841711"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planification de la mise à niveau à partir de serveurs et clients Office 2007 ou Office 2010
 
-*Cet article s’applique à la fois à Office 365 entreprise et à Microsoft 365 entreprise.*
+*Cet article est valable pour Office 365 Entreprise et Microsoft 365 Entreprise*.
 
 Si votre organisation utilise des versions antérieures des produits et serveurs Office, il est très utile de commencer à planifier votre mise à niveau. Les produits et services Office 2007 ont atteint leur [fin de prise en charge](upgrade-from-office-2007-servers-and-products.md). Les produits et services Office 2010 (notamment Office 2010, Exchange 2010, SharePoint 2010 et Project Server 2010) atteindront leur expiration le **13 octobre 2020**. Utilisez les ressources de cette section pour commencer.
 
@@ -105,7 +107,7 @@ ou
 
 [Mettre à niveau des serveurs et clients Office 2010](upgrade-from-office-2010-servers-and-products.md)
    
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
   
 [Politique de cycle de vie Microsoft](https://go.microsoft.com/fwlink/?linkid=865200)
 

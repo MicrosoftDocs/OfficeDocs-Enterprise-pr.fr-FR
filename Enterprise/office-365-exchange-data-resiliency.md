@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: Explication des différents aspects de la résilience des données dans Exchange Online et Office 365.
-ms.openlocfilehash: ad10e70ab6d03e2bbc37f6cc7885406c33df2239
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 73b217f7b85722bca10cdf1abbe10c3a32922e9f
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067412"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844475"
 ---
 # <a name="exchange-online-data-resiliency-in-office-365"></a>Résilience des données Exchange Online dans Office 365
 

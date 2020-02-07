@@ -9,17 +9,19 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- NOCSH
 ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
 description: Le programme de partenariat de mise en réseau Office 365 permet à votre appareil de devenir certifié comme fonctionnant avec Office 365.
 hideEdit: true
-ms.openlocfilehash: 7fc73a16006ac4f1b024a50cbd7cd352e1b658c7
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: dc87d0a0f2dc6e39c1d1e03d3a5bb22fc499b540
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031879"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41842605"
 ---
 # <a name="office-365-networking-partner-program"></a>Programme de partenariat réseau Office 365
 

@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: 'Résumé : Résumé des différents contrôles d’accès au contrôle et à l’audit disponibles dans Office 365.'
-ms.openlocfilehash: f42fd642985d64a3e50daa401f438327a0cbae3a
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 300d5efa2b448e8e5219eb88f3d736eeba66f2d6
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031969"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41842604"
 ---
 # <a name="monitoring-and-auditing-access-controls-in-office-365"></a>Surveillance et audit des contrôles d’accès dans Office 365
 

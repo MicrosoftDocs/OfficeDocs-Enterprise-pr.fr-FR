@@ -9,19 +9,21 @@ ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Ent_Office_Other
 ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
-description: 'Résumé: Découvrez les rubriques de référence de cmdlets PowerShell Office 365 pour Azure Active Directory, Exchange Online, SharePoint Online, Skype entreprise Online et la conformité de la sécurité &.'
-ms.openlocfilehash: 5b8833b426e08417e23bea6e94b7c5a201bf40ff
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+description: 'Résumé : Découvrez les rubriques de référence de cmdlets PowerShell Office 365 pour Azure Active Directory, Exchange Online, SharePoint Online, Skype entreprise Online et la sécurité & la conformité.'
+ms.openlocfilehash: 0fe0f87bdb2110630706e276092012af86ff5044
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069200"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841641"
 ---
 # <a name="cmdlet-references-for-office-365-services"></a>Références de cmdlet pour les services Office 365
 
- **Résumé:** Découvrez les rubriques de référence de cmdlets PowerShell Office 365 pour Azure Active Directory, Exchange Online, SharePoint Online, Skype entreprise Online et la sécurité & Compliance.
+ **Résumé :** Découvrez les rubriques de référence de cmdlets PowerShell Office 365 pour Azure Active Directory, Exchange Online, SharePoint Online, Skype entreprise Online et la sécurité & la conformité.
   
 Les rubriques de référence sur les cmdlets pour les différents services Office 365 fournissent des informations détaillées et des instructions sur l’utilisation de chaque cmdlet. En outre, chaque service Office 365 qui dispose de la prise en charge de PowerShell nécessite des instructions de connexion différentes.
   

@@ -10,17 +10,19 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: c3024358-326b-404e-9fe6-b618e54d977d
+f1.keywords:
+- NOCSH
 description: Le 11 avril 2017, Exchange Server 2007 est parvenu à la fin du support. Si vous n’avez pas encore commencé la migration d’Exchange 2007 vers Office 365 ou Exchange 2016, il est temps de commencer votre planification.
-ms.openlocfilehash: fbc2c4d0de03f27020cedf5458d7e94f880715dd
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 67e6a8f271fd8d553895ba086ed4b6ad11d9a877
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38746227"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840351"
 ---
 # <a name="exchange-2007-end-of-support-roadmap"></a>Feuille de route pour la fin de l’assistance pour Exchange 2007
 
-*Cet article s’applique à la fois à Office 365 entreprise et à Microsoft 365 entreprise.*
+*Cet article est valable pour Office 365 Entreprise et Microsoft 365 Entreprise*.
 
 Le **11 avril 2017**, Exchange Server 2007 est parvenu à la fin du support. Si vous n’avez pas encore commencé la migration d’Exchange 2007 vers Office 365 ou Exchange 2016, il est temps de commencer votre planification. 
   
@@ -246,7 +248,7 @@ Si vous rencontrez des problèmes lors de la migration vers Office 365 et que vo
     
 - [Support client](https://support.microsoft.com/gp/support-options-for-business)
     
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Ressources pour vous aider à mettre à niveau vos serveurs et clients Office 2007](upgrade-from-office-2007-servers-and-products.md)
   

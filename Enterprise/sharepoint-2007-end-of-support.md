@@ -6,7 +6,9 @@ manager: laurawi
 ms.date: 01/28/2019
 audience: ITPro
 ms.topic: conceptual
-f1_keywords:
+f1.keywords:
+- CSH
+ms.custom:
 - vsemail
 - MS_WSS_DirectoryManagement
 - MS_WSS_ConfigEmail
@@ -34,16 +36,16 @@ search.appverid:
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
 description: Le 10 octobre 2017, la prise en charge de SharePoint Server 2007 s’est terminée. Lisez cet article pour en savoir plus sur les options de mise à niveau, la résolution des problèmes, les meilleures pratiques, la configuration système requise, les étapes de mise à niveau et comment obtenir de l’aide des partenaires Microsoft.
-ms.openlocfilehash: 1b7b2ccf1bbda5210e563a4cd702ebd90b9f8f5d
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 6f0bd60d1f1201750ae1f0e4cc1a001ab4ed2ef6
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747313"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844005"
 ---
 # <a name="sharepoint-server-2007-end-of-support-roadmap"></a>Feuille de route pour la fin de l’assistance pour SharePoint Server 2007
 
-*Cet article s’applique à la fois à Office 365 entreprise et à Microsoft 365 entreprise.*
+*Cet article est valable pour Office 365 Entreprise et Microsoft 365 Entreprise*.
 
 Le **10 octobre 2017**, Microsoft Office SharePoint Server 2007 est parvenu à la fin du support. Si vous n’avez pas commencé la migration de SharePoint Server 2007 vers Office 365 ou une version plus récente de SharePoint Server en local, il est maintenant temps de commencer la planification. Cet article détaille les ressources pour aider les utilisateurs à migrer des données vers SharePoint Online ou à mettre à niveau votre serveur SharePoint Server local. 
   
@@ -150,7 +152,7 @@ N’oubliez pas de vérifier les **chemins de mise à niveau pris en charge et n
     
 - [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843156)
     
-- [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843157)
+- [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843157)
     
 Si vous avez des **personnalisations**, nous vous recommandons de planifier votre mise à niveau pour chaque étape dans le chemin de migration : 
   
@@ -158,7 +160,7 @@ Si vous avez des **personnalisations**, nous vous recommandons de planifier votr
     
 - [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843160)
     
-- [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843162)
+- [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843162)
     
 |**Pro local**|**Con local**|
 |:-----|:-----|
@@ -196,7 +198,7 @@ Pour voir comment cela fonctionne, vous pouvez créer un environnement de [déve
 > [!NOTE]
 > N’oubliez pas que votre batterie de serveurs SharePoint 2007 doit être mise à niveau, en local, vers SharePoint Server 2013 ou SharePoint Server 2016 de manière à utiliser l’option hybride 
   
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Résolution des problèmes et reprise de la mise à niveau (Office SharePoint Server 2007)](https://go.microsoft.com/fwlink/?linkid=843192)
   

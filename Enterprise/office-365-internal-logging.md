@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: Explication du fonctionnement de la journalisation interne pour Office 365 Engineering Teams.
-ms.openlocfilehash: 3f0a65b618e34e5bba92a0f0b471c5c7c43bb329
-ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
+ms.openlocfilehash: 4303b0a927413c791b6b8718fd905f8918c497e1
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38035524"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844455"
 ---
 # <a name="internal-logging-for-office-365-engineering"></a>Journalisation interne pour Office 365 Engineering
 

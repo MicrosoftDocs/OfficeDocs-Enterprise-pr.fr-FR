@@ -9,18 +9,20 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom:
 - PowerShell
 - Ent_Office_Other
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Résumé : Utilisez Office 365 PowerShell pour gérer les utilisateurs, les groupes et les groupes de sites SharePoint Online.'
-ms.openlocfilehash: 6223c500d1fce4b0f20a35ca3e36295fd3e10454
-ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
+ms.openlocfilehash: e5009f8c1119d921f3dd46720a47f5935c56ae8b
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2019
-ms.locfileid: "40261407"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841341"
 ---
 # <a name="manage-sharepoint-online-with-office-365-powershell"></a>Gestion de SharePoint Online avec Office 365 PowerShell
 

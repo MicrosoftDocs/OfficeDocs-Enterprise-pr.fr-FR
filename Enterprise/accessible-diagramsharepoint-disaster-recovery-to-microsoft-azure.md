@@ -10,13 +10,15 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 4b855224-8e67-4efa-a3a4-908ee0ca6412
+f1.keywords:
+- NOCSH
 description: Cet article est une version texte accessible du diagramme Récupération d’urgence SharePoint Server dans Microsoft Azure.
-ms.openlocfilehash: e711452f6e019ceb280d43c2e0167507a0b0ef20
-ms.sourcegitcommit: b4514cd852093181dd4c27009a78aca3ca50d2e2
+ms.openlocfilehash: f9bbc62994c1ca36425fa35a4ce294e22596d793
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38038233"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843843"
 ---
 # <a name="accessible-diagram---sharepoint-disaster-recovery-to-microsoft-azure"></a>Diagramme accessible : Récupération d’urgence SharePoint vers Microsoft Azure
 

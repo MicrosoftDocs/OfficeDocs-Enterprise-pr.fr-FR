@@ -15,13 +15,15 @@ search.appverid:
 - MBS150
 - BCS160
 ms.assetid: eb15194b-63ec-41b0-8d90-1823d3f558e4
-description: 'Cet article est destiné aux administrateurs. Un utilisateur a-t-il supprimé définitivement des éléments de sa boîte aux lettres Outlook ? L’utilisateur le souhaite à nouveau, mais ne peut pas les récupérer. Vous pouvez récupérer les éléments purgés s’ils n’ont pas été définitivement supprimés de la boîte aux lettres de l’utilisateur. '
-ms.openlocfilehash: 85086288d6bb153f584aa0a527100eb2d7b7de96
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+f1.keywords:
+- NOCSH
+description: 'Cet article s’adresse aux administrateurs. Un utilisateur a-t-il supprimé définitivement des éléments de sa boîte aux lettres Outlook ? L’utilisateur le souhaite à nouveau, mais ne peut pas les récupérer. Vous pouvez récupérer les éléments purgés s’ils n’ont pas été définitivement supprimés de la boîte aux lettres de l’utilisateur. '
+ms.openlocfilehash: 869bef4b801b92d0e48daaec266cb3a705cb577f
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38308599"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845125"
 ---
 # <a name="recover-deleted-items-in-a-user-mailbox---admin-help"></a>Récupérer des éléments supprimés dans une boîte aux lettres utilisateur - Aide aux administrateurs
 
@@ -36,7 +38,7 @@ Un utilisateur a-t-il supprimé définitivement des éléments de sa boîte aux 
 Voici la procédure à suivre pour restaurer des éléments supprimés dans la boîte aux lettres d’un utilisateur. Quelle est la durée de cette opération ? La première fois peut prendre 20 à 30 minutes pour effectuer toutes les étapes, en fonction du nombre d’éléments que vous essayez de récupérer.
   
 > [!NOTE]
-> Vous devez être un **administrateur Exchange** ou un **administrateur général** dans Office 365 ou être membre du groupe de rôles gestion de l’organisation dans Exchange Online pour effectuer les étapes décrites dans cet article. Pour plus d’informations, voir [À propos des rôles d’administrateur Office 365](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d). 
+> Vous devez être un **administrateur Exchange** ou un **administrateur général** dans Office 365 ou être membre du groupe de rôles gestion de l’organisation dans Exchange Online pour effectuer les étapes décrites dans cet article. Pour obtenir plus d’informations, consultez l’article [À propos des rôles d’administrateur Office 365](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d). 
   
 ## <a name="step-1-assign-yourself-ediscovery-permissions"></a>Étape 1 : assignez des autorisations eDiscovery
 <a name="step1"> </a>

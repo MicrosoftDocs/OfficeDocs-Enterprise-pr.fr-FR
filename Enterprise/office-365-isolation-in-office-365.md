@@ -13,13 +13,15 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 - SPO_Content
+f1.keywords:
+- NOCSH
 description: 'Résumé : explication de l’isolation et du contrôle d’accès dans les différentes applications d’Office 365.'
-ms.openlocfilehash: 5855828faafaf12e609e93a1a4f0ec7419e0a9d6
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 2cf98480a2a3f5d202198c9056ecb46d281e1a3e
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078163"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844405"
 ---
 # <a name="isolation-and-access-control-in-office-365"></a>Isolation et contrôle d’accès dans Office 365
 
@@ -31,7 +33,7 @@ Dans ce modèle, il n’existe pas de source unique de données d’annuaire. Sy
 
 Office 365 utilise à la fois le stockage physique et le stockage cloud Azure. Exchange Online (y compris Exchange Online Protection) et Skype entreprise utilisent leur propre espace de stockage pour les données client. SharePoint Online utilise à la fois le stockage SQL Server et Azure Storage, ce qui nécessite une isolation supplémentaire des données client au niveau du stockage.
 
-## <a name="exchange-online"></a>Exchange Online
+## <a name="exchange-online"></a>Exchange Online
 
 Exchange Online stocke les données client dans les boîtes aux lettres. Les boîtes aux lettres sont hébergées dans des bases de données ESE (Extensible Storage Engine) appelées bases de données de boîtes aux lettres. Cela inclut les boîtes aux lettres utilisateur, les boîtes aux lettres liées, les boîtes aux lettres partagées et les boîtes aux lettres de dossiers publics. Les boîtes aux lettres utilisateur incluent le contenu Skype entreprise enregistré, tel que l’historique des conversations.
 

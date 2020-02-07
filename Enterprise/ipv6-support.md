@@ -9,6 +9,8 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -16,16 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: 'Résumé : décrit la prise en charge du protocole IPv6 dans les composants Microsoft Office 365 et dans les offres gouvernementales Office 365.'
-ms.openlocfilehash: 17938a6bd3544889c4afa38f27b11ea7f02e0f43
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 32e90f0dda9b06d06b6e289b26f640c4ddc79cf3
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38745727"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845115"
 ---
 # <a name="ipv6-support-in-office-365-services"></a>Prise en charge du protocole IPv6 dans les services Office 365
 
-*Cet article s’applique à la fois à Office 365 entreprise et à Microsoft 365 entreprise.*
+*Cet article est valable pour Office 365 Entreprise et Microsoft 365 Entreprise*.
 
 Office 365 prend en charge IPv6 et IPv4 ; Toutefois, toutes les fonctionnalités Office 365 ne sont pas entièrement activées avec IPv6. Cela signifie que vous devez utiliser IPv4 et IPv6 pour vous connecter à Office 365. Si vous filtrez votre trafic sortant vers Office 365, la liste complète des adresses IPv6 prises en charge par Office 365 est disponible dans l’article [URL office 365 et plages d’adresses IP](urls-and-ip-address-ranges.md). Une fois que votre réseau est configuré et que les adresses IPv6 appropriées sont autorisées, vous pouvez télécharger le [plan de test IPv6 Office 365](https://go.microsoft.com/fwlink/?LinkId=293447) à partir du centre de téléchargement Microsoft.
   
@@ -79,7 +81,7 @@ Ces considérations peuvent s’appliquer à votre réseau :
 
 - Si vous utilisez les services ADFS (Active Directory Federation Services) avec Office 365, la publication de votre point de terminaison réseau AD FS vers Office 365 à l’aide du protocole IPv6 n’est pas prise en charge. Vous ne devez pas inclure les enregistrements AAAA dans l’entrée DNS AD FS lors de l’utilisation d’Exchange Online. 
 
-Voici un lien que vous pouvez utiliser pour revenir : [https://aka.ms/o365ip6](https://aka.ms/o365ip6)
+Voici un bref lien que vous pouvez utiliser pour revenir : [https://aka.ms/o365ip6](https://aka.ms/o365ip6)
   
 ## <a name="see-also"></a>Voir aussi
 

@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: Le mode de traitement des suppressions de données logicielles et logicielles dans Exchange Online.
-ms.openlocfilehash: f25f2416778f19f8b2e464e31e6116a81eb872cc
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 72db9dbc0559c165296433fca244d660c1a0f692
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067413"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843635"
 ---
 # <a name="exchange-online-data-deletion-in-office-365"></a>Suppression de données Exchange Online dans Office 365
 Dans Exchange Online, il existe deux types de suppressions : les suppressions douces et les suppressions matérielles. Cela s’applique aux boîtes aux lettres et aux éléments d’une boîte aux lettres.
@@ -31,7 +33,7 @@ Une boîte aux lettres utilisateur supprimée (récupérable) est une boîte aux
 
 Une boîte aux lettres utilisateur supprimée de manière irréversible est une boîte aux lettres qui a été supprimée de l’une des manières suivantes :
 - La boîte aux lettres utilisateur a été supprimée de manière récupérable pendant plus de 30 jours et l’utilisateur Azure Active Directory associé a été supprimé de manière irréversible. Tout le contenu des boîtes aux lettres, comme les courriers électroniques, les contacts et les fichiers, est définitivement supprimé.
-- Le compte d’utilisateur associé à la boîte aux lettres de l’utilisateur a été supprimé de manière irréversible dans Azure Active Directory. La boîte aux lettres utilisateur est désormais supprimée de manière récupérable dans Exchange Online et reste en état de suppression récupérable pendant 30 jours. Si, dans la période de 30 jours, un nouvel utilisateur Azure Active Directory est synchronisé à partir du compte de destinataire d’origine avec le même **ExchangeGuid** ou **ArchiveGuid**, et que le nouveau compte est concédé sous licence pour Exchange Online, cela entraînera une suppression matérielle de la boîte aux lettres de l’utilisateur d’origine. Tout le contenu des boîtes aux lettres, comme les courriers électroniques, les contacts et les fichiers, est définitivement supprimé.
+- Le compte d’utilisateur associé à la boîte aux lettres de l’utilisateur a été supprimé de manière irréversible dans Azure Active Directory. La boîte aux lettres utilisateur est désormais supprimée de manière récupérable dans Exchange Online et reste en état de suppression récupérable pendant 30 jours. Si, dans la période de 30 jours, un nouvel utilisateur Azure Active Directory est synchronisé à partir du compte de destinataire d’origine avec le même **ExchangeGuid** ou **ArchiveGuid**, et que le nouveau compte est concédé sous licence pour Exchange Online, une suppression matérielle de la boîte aux lettres de l’utilisateur d’origine sera effectuée. Tout le contenu des boîtes aux lettres, comme les courriers électroniques, les contacts et les fichiers, est définitivement supprimé.
 - Une boîte aux lettres supprimée (récupérable) est supprimée à l’aide de **Remove-Mailbox-PermanentlyDelete**.
 
 Les scénarios de suppression ci-dessus supposent que la boîte aux lettres de l’utilisateur n’est pas dans l’un des États de suspension, comme la conservation pour litige ou la découverte électronique. S’il existe un type de conservation sur la boîte aux lettres, la boîte aux lettres ne peut pas être supprimée. Pour tous les types de destinataires de messagerie, tous les paramètres de [conservation](https://support.office.com/article/manage-legal-investigations-in-office-365-2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e?ui=en-US&rs=en-US&ad=US) sont ignorés et n’ont aucun effet sur les suppressions ou suppressions logicielles.

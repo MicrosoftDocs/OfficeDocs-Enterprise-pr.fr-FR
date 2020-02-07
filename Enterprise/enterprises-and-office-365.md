@@ -8,6 +8,8 @@ audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -16,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6e18d402-f35e-415a-83b1-56620d4074ff
 description: Ressources pour planifier et gérer Office 365 pour votre organisation d’entreprise.
-ms.openlocfilehash: 0754213aef2acaa935cf59a317b93188b5002d33
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 97ffc7aee647918750a04b2b4761b189e2cebeb1
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067690"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840401"
 ---
 # <a name="enterprise-organizations-and-office-365"></a>Organisations d’entreprise et Office 365
 
@@ -74,7 +76,7 @@ Découvrez les cours vidéo gratuits proposés par LinkedIn Learning.
   
 [Formation avancée](https://support.office.com/article/68cc9b95-0bdc-491e-a81f-ee70b3ec63c5.aspx)
   
-![Certifications Microsoft Learning: MTA, MCSE, MCSA](media/8eab3b6a-5aff-423c-9c57-fd078fdebca8.png)
+![Certifications Microsoft Learning : MTA, MCSE, MCSA](media/8eab3b6a-5aff-423c-9c57-fd078fdebca8.png)
   
  **Microsoft Learning**
   
@@ -106,7 +108,7 @@ Des expériences d’apprentissage en ligne autonomes pour les professionnels de
   
 [Méthodes de migration des comptes de courrier vers Office 365](https://support.office.com/article/0a4913fe-60fb-498f-9155-a86516418842)
   
-[Mise à niveau à partir des serveurs et clients Office 2010](upgrade-from-office-2010-servers-and-products.md)
+[Mettre à niveau des serveurs et clients Office 2010](upgrade-from-office-2010-servers-and-products.md)
   
 [Conseillers de déploiement pour les services Office 365](deployment-advisors-for-office-365.md)
   
@@ -114,7 +116,7 @@ Des expériences d’apprentissage en ligne autonomes pour les professionnels de
   
 [Formation sur la productivité Office 365](https://support.office.com/article/af07cb6b-980d-4f33-8599-322582767408)
   
-[Vidéo: qu’est-ce que Office 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b)
+[Vidéo : qu’est-ce que Office 365 ?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b)
   
  **Ressources de développement**
   

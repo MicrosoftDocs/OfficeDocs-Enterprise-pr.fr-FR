@@ -11,6 +11,8 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -18,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099
 description: 'La connexion à Office 365 à l’aide d’Azure ExpressRoute repose sur des publicités BGP de sous-réseaux IP spécifiques qui représentent des réseaux sur lesquels les points de terminaison Office 365 sont déployés. En raison de la nature internationale d’Office 365 et du nombre de services qui constituent Office 365, les clients ont souvent besoin de gérer les publicités qu’ils acceptent sur leur réseau. Réduction du nombre de sous-réseaux IP ; appelés préfixes IP tout au long de cet article, pour s’aligner sur la terminologie de gestion de réseau BGP, il répond aux objectifs finaux suivants pour les clients :'
-ms.openlocfilehash: 57e8e7a2fa3eb5ecd3268219e6f4a6bc00a08cb0
-ms.sourcegitcommit: f18f75dba4cbec557fa094bd1cebd8c5cc4752c1
+ms.openlocfilehash: 1e174aafa0dbbf57f95c45b0e218ebe1793194cc
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40085179"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844945"
 ---
 # <a name="using-bgp-communities-in-expressroute-for-office-365-scenarios"></a>Utilisation des communautés BGP dans ExpressRoute pour les scénarios Office 365
 
@@ -38,9 +40,9 @@ Pour aider les clients à ces objectifs, les préfixes IP d’Office 365 publié
 > [!NOTE]
 > Vous devez vous attendre à ce que le trafic réseau associé à d’autres applications soit inclus dans la valeur de la communauté. Il s’agit d’un comportement attendu pour un logiciel global en tant qu’offre de service avec des services et des centres de contenu partagés. Il a été réduit, dans la mesure du possible, avec les deux objectifs ci-dessus, la gestion du nombre de préfixes et/ou la bande passante.
 
-|**Service**|**Valeur de la communauté BGP**|**Remarques**|
+|**Service**|**Valeur de la communauté BGP**|**Notes**|
 |:-----|:-----|:-----|
-|Exchange Online\*  <br/> |12076:5010  <br/> |Inclut les services Exchange et EOP\*  <br/> |
+|Exchange Online\*  <br/> |12076:5010  <br/> |Inclut les services Exchange et EOP\*  <br/> |
 |SharePoint Online\*  <br/> |12076:5020  <br/> |SharePoint Online  <br/> |
 |Skype Entreprise\*  <br/> |12076:5030  <br/> |Skype entreprise Online & services Microsoft teams  <br/> |
 |Autres services Office 365\*  <br/> |12076:5100  <br/> |Inclut Azure Active Directory (scénarios d’authentification et de synchronisation d’annuaires), ainsi que les services de portail Office 365  <br/> |

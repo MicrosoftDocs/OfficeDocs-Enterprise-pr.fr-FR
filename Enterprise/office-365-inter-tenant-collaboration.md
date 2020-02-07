@@ -16,13 +16,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: eb45fd8b-1d5d-4b0c-9c5a-479dbb176e7d
+f1.keywords:
+- NOCSH
 description: Découvrez le fonctionnement de la collaboration Office 365 entre les clients et les organisations.
-ms.openlocfilehash: b232cd2202f1b4e13102fd33ba545cfdcbb2edfe
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: e7823927b6e1987c27924bdae34cf439a50db296
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078173"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843625"
 ---
 # <a name="office-365-inter-tenant-collaboration"></a>Collaboration entre clients dans Office 365
 

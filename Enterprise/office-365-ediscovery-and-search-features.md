@@ -13,13 +13,15 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 - SPO_Content
+f1.keywords:
+- NOCSH
 description: Une vue d’ensemble de la fonctionnalité eDiscovery et d’autres fonctionnalités de recherche dans Office 365 pour l’utilisation et la transparence de l’audit.
-ms.openlocfilehash: 9c0c9b7c054a59ed87ce65432c73df563594b2a2
-ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
+ms.openlocfilehash: 16cb8ac4703142b73d4f56bce9390743495d3fc2
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38076208"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843646"
 ---
 # <a name="ediscovery-and-search-features"></a>eDiscovery et fonctionnalités de recherche 
 

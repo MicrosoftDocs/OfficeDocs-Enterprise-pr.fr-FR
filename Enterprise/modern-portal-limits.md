@@ -11,16 +11,18 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_Enterprise
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
 description: Découvrez les recommandations en matière de performances pour les sites modernes dans SharePoint Online.
-ms.openlocfilehash: e868b765fe46d8f6ee26443d6e75d31a39bb3281
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 227eadd780acbe35456ca48204762411bed6c10f
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078399"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844785"
 ---
 # <a name="sharepoint-online-modern-portal-site-limits"></a>Limites des sites portail modernes SharePoint Online
 
@@ -44,7 +46,7 @@ La plupart des instructions de cet article se concentrent sur la minimisation et
 
 ## <a name="modern-portal-site-limits-and-recommendations"></a>Limites et recommandations des sites portail modernes
 
-|**Limite**|**Valeur maximale recommandée**|**Remarques**|
+|**Limite**|**Valeur maximale recommandée**|**Notes**|
 |:-----|:-----|:-----|:-----|
 |Pages et Actualités  <br/> |5 000 par site  <br/> |Nous vous recommandons de limiter le nombre de pages et d’éléments d’actualité dans un site portail moderne à la limite de 5 000.  <br/> |
 |Composants WebPart sur une page  <br/> |20 par page  <br/> |Nous vous recommandons d’utiliser au moins 20 composants WebPart totaux par page, y compris les composants WebPart Microsoft et les composants WebPart personnalisés. <br/> Pour plus d’informations, consultez la rubrique [optimiser les performances des composants WebPart dans les pages de site modernes SharePoint Online](modern-web-part-optimization.md).  <br/> |

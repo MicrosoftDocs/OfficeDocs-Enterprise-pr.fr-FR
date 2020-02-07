@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-analytics
+f1.keywords:
+- NOCSH
 description: Explication des fonctionnalités de création de rapports dans Office 365.
-ms.openlocfilehash: 5b2f06be0eba19b8c4d49f405e40dba9ff64bd25
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 51ae09471b748b6e40af5a5b02b23f755908efff
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031859"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41842031"
 ---
 # <a name="office-365-reporting-features"></a>Fonctionnalités de création de rapports Office 365 
 
@@ -74,7 +76,7 @@ Vous pouvez gérer et sécuriser les appareils mobiles connectés à votre organ
 
 Les rapports de conformité MDM fournissent une vue d’ensemble des stratégies configurées par une organisation pour sécuriser les appareils mobiles qui accèdent aux données Office 365. Le rapport autorise le filtrage des appareils par État de conformité, les violations signalées, les appareils bloqués et le nombre d’appareils effacés à la suite de stratégies de sécurité. Pour plus d'informations, voir [Overview of Mobile Device Management for Office 365](https://support.office.com/article/Overview-of-Mobile-Device-Management-for-Office-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a).
 
-## <a name="data-loss-prevention"></a>Prévention contre la perte de données
+## <a name="data-loss-prevention"></a>Protection contre la perte de données
 
 Les stratégies DLP aident à gérer la sécurité et le flux d’informations au sein d’une organisation. Vous pouvez configurer des stratégies pour bloquer l’accès au contenu, chiffrer les données ou informer les utilisateurs des violations de stratégie et de stratégie à l’aide des conseils de stratégie dans l’application DLP. Les rapports DLP fournissent un aperçu du nombre de correspondances de stratégie et de règle, de remplacements et de faux positifs.
 

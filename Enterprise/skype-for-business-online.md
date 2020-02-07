@@ -6,11 +6,13 @@ manager: scotv
 ms.date: 6/29/2018
 audience: Admin
 ms.topic: hub-page
-f1_keywords:
-- ms.lync.lac.ProviderManagedFeature
 ms.service: o365-administration
 localization_priority: Normal
-ms.custom: Adm_O365
+f1.keywords:
+- CSH
+ms.custom:
+- Adm_O365
+- ms.lync.lac.ProviderManagedFeature
 search.appverid:
 - MET150
 - MOE150
@@ -18,13 +20,13 @@ search.appverid:
 - MSO150
 - BCS160
 ms.assetid: 4307bdbf-6097-458d-9a6a-048112695c59
-description: 'Obtenir de l’aide de l’administrateur pour Skype entreprise: configurer Skype entreprise, votre réseau, vos réunions et votre messagerie instantanée et l’accès externe pour les utilisateurs. Configurez les paramètres, dépannez et affichez les rapports d’utilisation.'
-ms.openlocfilehash: daf425625d6162ec3d480d290056ae2e3a8ff16a
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+description: 'Obtenir de l’aide de l’administrateur pour Skype entreprise : configurer Skype entreprise, votre réseau, vos réunions et votre messagerie instantanée et l’accès externe pour les utilisateurs. Configurez les paramètres, dépannez et affichez les rapports d’utilisation.'
+ms.openlocfilehash: f30073310c9b24e9b8242261e97e04c23f413967
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070372"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841111"
 ---
 # <a name="skype-for-business-online-in-office-365---admin-help"></a>Skype Entreprise Online dans Office 365 - Aide de l'administrateur
 
@@ -64,9 +66,9 @@ Voir aussi :
 
 - [Définir les options personnelles dans Skype entreprise](https://support.office.com/article/68bacc31-71d3-44c3-a4d4-64da78c447aa#bkmk-stop-automatic-startup)
     
-- [Vous avez besoin d’aide pour vous connecter à Skype entreprise?](https://support.office.com/article/448b8ea7-5b33-444a-afd4-175fc9930d05)
+- [Vous avez besoin d’aide pour vous connecter à Skype entreprise ?](https://support.office.com/article/448b8ea7-5b33-444a-afd4-175fc9930d05)
     
-- [Vidéo: se connecter et se déconnecter de Skype entreprise](https://support.office.com/article/8abed4b3-ac48-493e-9d76-0e10140e9451)
+- [Vidéo : se connecter et se déconnecter de Skype entreprise](https://support.office.com/article/8abed4b3-ac48-493e-9d76-0e10140e9451)
     
 - [Définir les options d’appareil audio dans Skype entreprise](https://support.office.com/article/2533d929-9814-4349-8ae4-fca29246e2ff)
     

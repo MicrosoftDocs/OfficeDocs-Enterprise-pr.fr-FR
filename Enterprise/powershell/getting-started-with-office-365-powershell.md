@@ -9,17 +9,19 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
 description: "Résumé : Comprendre l'importance de Office 365 PowerShell, vous connecter à votre client Office 365 et obtenir de l'aide."
-ms.openlocfilehash: d1066d914708bd267b5de38099b6cf6175268f9c
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: 6942f44569ce5b21abc9bd1cc12a6266ad23038c
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072176"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844235"
 ---
 # <a name="getting-started-with-office-365-powershell"></a>Mise en route d’Office 365 Powershell
 

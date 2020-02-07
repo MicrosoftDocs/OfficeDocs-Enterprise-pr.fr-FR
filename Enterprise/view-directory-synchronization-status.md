@@ -7,6 +7,8 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.collection:
 - Ent_O365
@@ -17,21 +19,21 @@ search.appverid:
 - MED150
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
 description: Découvrez comment désactiver la synchronisation d’annuaires. Vous pouvez également afficher son état.
-ms.openlocfilehash: 4204d72719e928982b2b6222fb971d62c0f1f8d6
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 74e2eee0086e4f8098221f4aaa30d408091a6a0f
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070410"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840981"
 ---
 # <a name="view-directory-synchronization-status-in-office-365"></a>Consulter l’état de synchronisation des annuaires dans Office 365
 
 Si vous avez intégré Active Directory sur site à Azure AD en synchronisant votre environnement local avec Office 365, vous pouvez également vérifier l’état de votre synchronisation.
   
-## <a name="view-directory-synchronization-status"></a>Afficher l’état de la synchronisation d’annuaires
+## <a name="view-directory-synchronization-status"></a>Consulter l’état de synchronisation des annuaires
 
 - Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) et choisissez **DirSync Status** sur la page d’accueil.
-- Vous pouvez également accéder à **** \> utilisateurs **actifs**, puis, sur la page **utilisateurs actifs** , sélectionner **plus** \> de synchronisation d' **annuaires**. Dans le volet **synchronisation** d’annuaires, sélectionnez **accéder à la gestion DirSync**.
+- Vous pouvez également **accéder à** \> utilisateurs **actifs**, puis, sur la page **utilisateurs actifs** , sélectionner **plus** \> de **synchronisation d’annuaires**. Dans le volet **synchronisation d’annuaires** , sélectionnez **accéder à la gestion DirSync**.
 
 ## <a name="information-on-the-manage-directory-synchronization-page"></a>Informations sur la page gérer la synchronisation d’annuaires
 

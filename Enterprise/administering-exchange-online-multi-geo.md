@@ -1,5 +1,6 @@
 ---
 title: Administration des boîtes aux lettres Exchange Online dans un environnement multigéographique
+ms.reviewer: adwood
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -11,12 +12,12 @@ f1.keywords:
 ms.custom: ''
 localization_priority: Priority
 description: Découvrez comment administrer le paramètre d’Exchange Online avec Microsoft PowerShell.
-ms.openlocfilehash: 135d3af76e03dfb7e6fcc9f55ba3be8ab21a6906
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 4074748a9fdd567e37159198524acb3979291ef5
+ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844655"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41973996"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>Administration des boîtes aux lettres Exchange Online dans un environnement multigéographique
 

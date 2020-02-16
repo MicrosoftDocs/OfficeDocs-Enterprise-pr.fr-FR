@@ -1,5 +1,6 @@
 ---
 title: Fonctionnalités multi-géographiques OneDrive et SharePoint Online
+ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -15,12 +16,12 @@ ms.collection:
 localization_priority: Priority
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: Étendez votre présence Office 365 à plusieurs régions géographiques grâce aux fonctionnalités multi-géographiques dans OneDrive Online.
-ms.openlocfilehash: bab7c70aecdedfea22d6ddfecc69e43ade3957f6
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 5c3f372756a7fa160dbd322ba01ac170ca2cee26
+ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844795"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41973966"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online"></a>Fonctionnalités multi-géographiques OneDrive et SharePoint Online
 

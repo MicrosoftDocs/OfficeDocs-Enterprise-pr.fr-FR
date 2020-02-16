@@ -1,5 +1,6 @@
 ---
 title: Créer un groupe Office 365 avec un emplacement par défaut des données spécifique
+ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -12,12 +13,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Découvrez comment créer un groupe Office 365 avec un emplacement par défaut des données spécifique dans un environnement multigéographique.
-ms.openlocfilehash: 5a6417f1758cd6c5e4eb9d4df9e7796d4309e62c
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 96c2e5513879dff291c0119ddad38a78ab91ec1a
+ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843735"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41974086"
 ---
 # <a name="create-an-office-365-group-with-a-specific-pdl"></a>Créer un groupe Office 365 avec un emplacement par défaut des données spécifique
 

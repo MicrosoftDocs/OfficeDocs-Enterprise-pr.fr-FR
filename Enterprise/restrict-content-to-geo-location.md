@@ -1,5 +1,6 @@
 ---
 title: 'Circonscrire le contenu des sites '
+ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -12,12 +13,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Découvrez comment circonscrire des sites SharePoint à un emplacement géographique spécifique dans un environnement multigéographique.
-ms.openlocfilehash: b8716eb0ad2d9292a0d52638f827dcc7665d027a
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: ca63f46ba45d1b3ddfdf4f676b678d62387b801f
+ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845015"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41973956"
 ---
 # <a name="restrict-sharepoint-site-content-to-a-geo-location"></a>Circonscrire le contenu des sites 
 

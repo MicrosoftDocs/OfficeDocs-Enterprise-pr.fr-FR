@@ -14,12 +14,12 @@ ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 f1.keywords:
 - NOCSH
 description: Les clients Office 365 existants devront envoyer une demande avant la date d'échéance de leur pays afin que les données client de leurs services Office 365 soient déplacées vers leur nouvelle région.
-ms.openlocfilehash: 886b852608b29f42aaa6f8051fd60b467830842a
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 506943ce802adbd8d443cfb69212834b9c552f61
+ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844105"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42106225"
 ---
 # <a name="how-to-request-your-data-move"></a>Procédure de demande d’un déplacement de données
 
@@ -48,13 +48,8 @@ Les clients Office 365 existants sont autorisés à demander une migration préc
 
 Les clients éligibles verront une page dans le [Centre d’administration 365 de Microsoft](https://aka.ms/365admin), qui leur permettra de demander que leurs données client principales soient déplacées vers leur nouvelle région de centre de données.  
   
-Pour accéder à la page dans le centre d’administration 365 de Microsoft, dans le volet de navigation à gauche, développez **paramètres**, puis cliquez sur profil de l' **organisation**.
-  
-![Menu paramètres avec profil organisationnel mis en surbrillance](media/22799fac-32b4-4f79-ae60-3f6ffb7cfbd7.png)
-  
-Sur la page **Profil de l'organisation**, faites défiler jusqu'à la section sur l' **option concernant l'emplacement des données**. 
-  
-![Carte de résidence des données](media/dataresidencyae.jpg)
+Pour accéder à la page dans le centre d’administration 365 de Microsoft, dans le volet de navigation à gauche, développez **paramètres**, puis cliquez sur **paramètres**.
+Sélectionnez l’onglet **profil d’organisation**, puis sélectionnez l’option **résidence des données**.
   
 **Vous ne verrez peut-être pas cette section si l’une des conditions suivantes est appliquée**:
 - Votre client n’est pas éligible au programme Office 365 Move.  Le droit est déterminé par le pays d’inscription du client.

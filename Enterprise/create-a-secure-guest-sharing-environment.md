@@ -8,15 +8,14 @@ ms.topic: article
 ms.service: sharepoint-online
 ms.collection: SPO_Content
 localization_priority: Priority
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 description: Découvrir comment créer un environnement de partage d’invités sécurisé avec Microsoft 365.
-ms.openlocfilehash: 9df369457770315d5d77894432761385edf3dbc4
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 4c77ae6905341ba7cde974b2fc3966009a38d512
+ms.sourcegitcommit: 27172140051c31f5cd3f28ffb4282669d561549a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840621"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42155573"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Créer un environnement de partage d’invités sécurisé
 
@@ -319,6 +318,14 @@ Pour tester la solution décrite dans cet article, créez un document Word et en
 Une fois que l'invité a accès au document, tapez *Projet Saturne* dans le document et enregistrez-le. Une fois que Cloud App Security a analysé le document, l’étiquette *Hautement confidentiel* doit être appliquée et l’utilisateur invité ne doit plus y avoir accès.
 
 Vous pouvez utiliser les outils décrits dans cet article dans diverses combinaisons pour aider à créer un environnement de partage d'invités productif mais sûr pour votre organisation.
+
+## <a name="additional-options"></a>Options supplémentaires
+
+D'autres options existent dans Microsoft 365 et Azure Active Directory vous permettant de sécuriser votre environnement de partage d'invités.
+
+- Vous pouvez créer une liste de domaines de partage autorisés ou refusés pour limiter les personnes avec lesquelles les utilisateurs peuvent effectuer des partages. Pour plus d’informations, consultez [Restreindre le partage de contenu SharePoint et OneDrive par domaine](https://docs.microsoft.com/sharepoint/restricted-domains-sharing) et [Autoriser ou bloquer des invitations à des utilisateurs B2B d’organisations spécifiques](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list).
+- Vous pouvez également limiter d'autres locataires Azure Active Directory avec lesquels vos utilisateurs peuvent se connecter. Pour plus d'informations, voir [Utilisez les restrictions liées au locataire pour gérer l’accès aux applications cloud SaaS](https://docs.microsoft.com/azure/active-directory/manage-apps/tenant-restrictions).
+- Vous pouvez créer un environnement géré dans lequel vos partenaires peuvent vous aider à gérer des comptes d'invités. Pour plus d’informations, voir [Créer un extranet B2B avec des invités gérés](https://docs.microsoft.com/Office365/Enterprise/b2b-extranet).
 
 ## <a name="see-also"></a>Voir aussi
 

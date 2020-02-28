@@ -25,12 +25,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
 description: 'Découvrez comment ajouter plusieurs utilisateurs à Office 365 pour les entreprises à partir d’une liste dans une feuille de calcul ou dans un autre fichier au format CSV. Regardez une vidéo sur YouTube qui explique comment ajouter des comptes à Office 365. À la fin de ce processus, chaque utilisateur disposant d’un compte dispose d’une boîte aux lettres Office 365. '
-ms.openlocfilehash: 713d54759b32d498a58b88766ffbba9df64da51c
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 0d0416662bf4934d3373f1ab7ac23c8055ad3098
+ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844645"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42316013"
 ---
 # <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>Ajouter plusieurs utilisateurs simultanément à Office 365 - Aide de l’administrateur
 
@@ -115,7 +115,7 @@ Une fois le fichier enregistré, il est probable qu'un message indiquant que cer
     
 |**Étiquette de colonne des données utilisateur**|**Longueur de caractères maximale**|
 |:-----|:-----|
-|Nom d'utilisateur (requis)  <br/> |79 avec le symbole arobase (@), au format nom@domaine.\<extension\>. L'alias de l'utilisateur ne peut pas dépasser 30 caractères, et le nom de domaine 48 caractères.  <br/> |
+|Nom d'utilisateur (requis)  <br/> |79 avec le symbole arobase (@), au format nom@domaine.\<extension\>. L’alias de l’utilisateur ne peut pas dépasser 50 caractères, et le nom de domaine ne peut pas dépasser 48 caractères.  <br/> |
 |Prénom  <br/> |64  <br/> |
 |Nom  <br/> |64  <br/> |
 |Nom d'affichage (requis)  <br/> |256  <br/> |

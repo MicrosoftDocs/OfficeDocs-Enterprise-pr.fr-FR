@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Définit et décrit l’immuabilité des données dans Office 365.
-ms.openlocfilehash: 8e52d1be87bff163b2d1cfc9233de08861104681
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 3decc070c480306354382f5d2f0c96d6192fa903
+ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844515"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42315993"
 ---
 # <a name="immutability-in-office-365"></a>Immuabilité dans Office 365
 
@@ -28,7 +28,7 @@ La conformité réglementaire, les exigences de gouvernance interne ou les risqu
 
 Les méthodes traditionnelles d’immuabilité ont généralement fonctionné en déplacant les messages électroniques vers un emplacement de stockage distinct en lecture seule. Bien que ces systèmes visent l’objectif de la conservation des éléments de boîte aux lettres pour la découverte, ils affectent souvent l’expérience utilisateur en supprimant les éléments conservés du flux de travail quotidien personnalisé. Pour les professionnels de l’informatique, cette approche d’immuabilité nécessite le déploiement et la maintenance continue d’une infrastructure de serveur et de stockage distincte. La découverte est effectuée avec des outils externes au système de messagerie et inclut des coûts de déploiement et de maintenance associés.
 
-Grâce aux fonctionnalités de stratégie de rétention et de conservation sur place de l’archivage dans Office 365 et de ses services, vous pouvez conserver et conserver de nombreuses classes de données entrantes, internes et sortantes. Cela inclut :
+Grâce aux fonctionnalités de stratégie de rétention et de conservation sur place de l’archivage dans Office 365 et de ses services, vous pouvez conserver et conserver de nombreuses classes de données entrantes, internes et sortantes. Cela inclut les opérations suivantes :
 
 - Communications par courrier électronique entrant et sortant
 - Livres et enregistrements contenus dans un formulaire électronique ou dans des documents en ligne partagés

@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Priority
 description: Découvrez Office 365 multigéographique, comment opèrent les fonctionnalités multigéographiques et les emplacements géographiques disponibles pour le stockage de données.
-ms.openlocfilehash: f3bc2b43181bb4479c0f3b9c65ed4bcd5b1f9b38
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: 2875f820b0ce1437a09289e3c5e660287b64dc40
+ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974226"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42316003"
 ---
 # <a name="plan-for-office-365-multi-geo"></a>Planifier le déploiement d’Office 365 multigéographique
 
@@ -74,6 +74,8 @@ Si vos utilisateurs sont synchronisés à partir d’un système Active Director
 L’administration d’un client multigéographique peut être différente de celle d’un client non multigéographique, car de nombreux services et paramètres SharePoint et OneDrive sont adaptés à un environnement multigéographique. Nous vous recommandons de consulter l’article relatif à l’[administration d’un environnement multi-géographique](administering-a-multi-geo-environment.md) avant de poursuivre votre configuration.
 
 Pour plus d’informations sur l’expérience de vos utilisateurs finaux dans un environnement multigéographique, voir [Expérience utilisateur dans un environnement multigéographique](multi-geo-user-experience.md).
+
+Si vous souhaitez en savoir plus sur l’expérience Teams dans une architecture Office 365 multigéographique, veuillez consulter [Expérience Teams dans une location multigéographique compatible avec Office 365, OneDrive et SharePoint Online](https://docs.microsoft.com/microsoftteams/teams-experience-o365odb-spo-multi-geo).
 
 Pour commencer à configurer Office 365 multigéographique, voir [Configurer Office 365 multigéographique](multi-geo-tenant-configuration.md).
 

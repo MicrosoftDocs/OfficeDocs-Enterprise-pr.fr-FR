@@ -3,7 +3,7 @@ title: Points de terminaison supplémentaires non inclus dans le service web po
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/18/2019
+ms.date: 2/27/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Résumé : Le nouveau service web de point de terminaison n’inclut pas certains points de terminaison pour des scénarios spécifiques.'
 hideEdit: true
-ms.openlocfilehash: 150e57c569a5305251d1bed2989bc4c87af988d0
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 5e763b00f8b43b652809df994e933228dd7e1dfb
+ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844685"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42315963"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Points de terminaison supplémentaires non inclus dans le service web pour URL et adresses IP Office 365
 
@@ -66,6 +66,7 @@ Certains points de terminaison réseau ont été publiés précédemment et n’
 | 18  | Utilisez [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/) pour synchroniser les comptes d’utilisateurs locaux avec Azure AD. | Consultez [Ports et protocoles nécessaires pour l’identité hybride](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports), [Résoudre les problèmes de connectivité Azure AD](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity) et [Installation de l’agent Azure AD Connect Health](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install#outbound-connectivity-to-the-azure-service-endpoints). | Trafic serveur sortant uniquement |
 | 19  | Microsoft Stream (nécessite le jeton utilisateur Azure AD) <BR> Office 365 dans le monde (notamment GCC) | *.cloudapp.net <BR> *.api.microsoftstream.com <BR> *.notification.api.microsoftstream.com <BR> amp.azure.net <BR> api.microsoftstream.com <BR> az416426.vo.msecnd.net <BR> s0.assets-yammer.com <BR> vortex.data.microsoft.com <BR> web.microsoftstream.com <BR> Port TCP 443.  | Trafic serveur entrant |
 | 20  | Utilisez le serveur MFA pour les demandes d’authentification multifacteur, les deux nouvelles installations du serveur et la configuration avec Active Directory Domain Services (AD DS). | Voir [Prise en main du serveur Azure Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-deploy#plan-your-deployment).  | Trafic serveur sortant uniquement |
+| 21  | Notifications de modifications Microsoft Graph | Les développeurs peuvent tirer parti des [notifications de modifications](https://docs.microsoft.com/graph/webhooks?context=graph%2Fapi%2F1.0&view=graph-rest-1.0) pour s’abonner aux événements dans Microsoft Graph. | *.cloudapp.net<BR> 104.43.130.21, 137.116.169.230, 13.79.38.63, 104.214.39.228, Cloud public : 168.63.250.205, 52.161.9.202, 40.68.103.62, 13.89.60.223, 23.100.95.104, 40.113.95.219, 104.214.32.10, 168.63.237.145, 52.161.110.176, 52.174.177.183 <BR> Microsoft Cloud for US Government : 52.244.231.173, 52.238.76.151, 52.244.250.211, 52.238.78.108 <BR> Microsoft Cloud Allemagne : 51.4.231.136, 51.5.243.223, 51.4.226.154, 51.5.244.215 <BR> Microsoft Graph en Chine géré par 21Vianet : 139.219.15.33, 42.159.154.223, 42.159.88.79, 42.159.155.77<BR> Port TCP 443. <BR> Remarque : les développeurs peuvent spécifier des ports différents lors de la création des abonnements.  | Trafic serveur entrant |
 |||||
 
 ## <a name="related-topics"></a>Rubriques connexes
@@ -81,4 +82,3 @@ Certains points de terminaison réseau ont été publiés précédemment et n’
 [Plages d’adresses IP du centre de données Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653)
   
 [Espace d’adresse IP public de Microsoft](https://www.microsoft.com/download/details.aspx?id=53602)
-

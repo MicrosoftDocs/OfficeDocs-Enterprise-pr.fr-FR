@@ -7,17 +7,16 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.collection: SPO_Content
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: Apprenez-en davantage sur les paramètres de partage d’invités disponibles dans Microsoft 365.
-ms.openlocfilehash: 52f597357aed510e3bd3ff71e87e1056e19a3bad
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: ed9165d4589dbdaa18c3b3a3c21aab7bce01ad8c
+ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844965"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42316043"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Informations de référence sur les paramètres de partage d’invités de Microsoft 365
 
@@ -237,7 +236,10 @@ Le tableau ci-dessous présente le paramètre de partage par défaut pour chaque
 |OneDrive|**Tout le monde**|
 |Sites connectés au groupe (notamment Teams)|**Invités nouveaux et existants** si le paramètre de la solution Groupes Office 365 **Autoriser les propriétaires de groupe à ajouter des personnes à l’extérieur de l’organisation aux groupes** est **Activé**. Dans le cas contraire, **Invités existants uniquement**|
 |Communication|**Uniquement les membres de votre organisation**|
-|Sites modernes sans groupe (#STS3 TeamSite)|**Uniquement les membres de votre organisation**|
+|Sites modernes sans groupe (#STS3 TeamSite)|**Uniquement les personnes de votre organisation**|
+
+> [!NOTE]
+> Par défaut, le paramètre de partage du site de communication racine (tenant-name.sharepoint.com) est défini sur **tout le monde**.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -13,12 +13,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Étendez votre présence Office 365 à plusieurs régions géographiques avec Office 365 multigéographique.
-ms.openlocfilehash: 62aa890bb3bb8bfcabd13285814b72c7000047dc
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: ca0fac66549b91fe25cc5d86f9dd0be310fb38b5
+ms.sourcegitcommit: 160a2564c90a4d64d19f072e0de9fe1b3cd0c917
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974056"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42416999"
 ---
 # <a name="office-365-multi-geo"></a>Office 365 multigéographique
 
@@ -58,7 +58,7 @@ Office 365 multigéographique est actuellement disponible dans les régions et p
 
 Pour commencer à utiliser la fonctionnalité multigéographique, procédez comme suit :
 
-1. Travailler avec votre équipe de compte pour ajouter le plan de services des _fonctionnalités multigéographiques dans Office 365_. Ils vous guident pour ajouter le nombre de licences nécessaires. La fonctionnalité Zones géographiques multiples est actuellement disponible pour les clients avec au moins 500 abonnements Office 365.
+1. Travailler avec votre équipe de compte pour ajouter le plan de services des _fonctionnalités multigéographiques dans Office 365_. Ils vous guident pour ajouter le nombre de licences nécessaires. La fonctionnalité Zones géographiques multiples est actuellement disponible pour les clients Contrat Entreprise avec au moins 500 abonnements Office 365.
 
    Avant que vous puissiez commencer à utiliser Office 365 multigéographique, Microsoft doit configurer votre client Exchange Online afin qu’il bénéficie d’une prise en charge multigéographique. Ce processus de configuration est déclenché lorsque vous commandez le plan de services des *fonctionnalités multigéographiques d’Office 365* et que les licences apparaissent dans votre client. Une fois vos licences multigéographiques appliquées, vous recevez des notifications dans le [Centre de messages Office 365](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093) et pouvez commencer à configurer et à utiliser les fonctionnalités d’Office 365 multigéographique.
 

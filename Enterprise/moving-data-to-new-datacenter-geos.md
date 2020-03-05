@@ -14,12 +14,12 @@ ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 f1.keywords:
 - NOCSH
 description: "Nouveau centre de régions centres ajouter de la capacité et des ressources de calcul pour prendre en charge notre demande de client et sa croissance d’utilisation en cours. En outre, les nouvelles régions de centre de données permettent d'héberger des données dans la région pour les données client essentielles. Le terme « données client essentielles » fait référence à un sous-ensemble de données client définies dans les conditions d'utilisation de Microsoft Online Services : Exchange Onlinecontenu de la boîte aux lettres (corps de courrier électronique, entrées de calendrier et contenu de pièces jointes), SharePoint Onlinecontenu du site et fichiers stockés dans ce site, ainsi que fichiers téléchargés vers OneDrive Entreprise."
-ms.openlocfilehash: f2f6706d69d79681833ebca70cbe32964b7f3b77
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 0efe43b61351d89452abb9a114b37f8df9d79ec2
+ms.sourcegitcommit: 160a2564c90a4d64d19f072e0de9fe1b3cd0c917
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844765"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42417049"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Déplacement de données essentielles vers les nouvelles régions de centres de données Office 365
 
@@ -33,19 +33,19 @@ Les données client principales sont un terme qui fait référence à un sous-en
   
 Les clients existants dont les données client essentielles sont stockées dans une région de centre de données existante ne sont pas concernés par le lancement de la nouvelle région de centre de données. Aucune fonction, fonctionnalité ou certification de conformité unique n'est fournie avec la nouvelle région de centre de données. En tant que client de l'une de ces deux régions, vous bénéficierez de la même qualité de service, ainsi que des mêmes performances et contrôles de sécurité qu'auparavant. Nous proposons aux clients existants figurant dans le tableau ci-dessous une option permettant de demander une migration précoce des données client principales de leur organisation au repos sur leur nouvelle région de centre de données.
   
-|Clients avec pays d’inscription du client dans * * * *|****Précédente région de centre de données****|****Nouvelle région de centre de données****|****Région disponible depuis****|
+|**Clients avec pays d’abonnement client dans**|**Précédente région de centre de données**|**Nouvelle région de centre de**|**Région disponible depuis**|
 |:-----|:-----|:-----|:-----|
-|****Japon****| Asie/Pacifique | Japon | Décembre 2014 |
-|****Australie, Nouvelle-Zélande, Fidji****| Asie/Pacifique | Australie | Mars 2015 |
-|****Inde****| Asie/Pacifique | Inde | Octobre 2015 |
-|****Canada****| Amérique du Nord | Canada | Mai 2016 |
-|****Royaume-Uni****| Europe | Royaume-Uni | Septembre 2016 |
-|****Corée du Sud****| Asie/Pacifique | Corée du Sud | Avril 2017 |
-|****France****| Europe | France | Mars 2018 |
-|Émirats Arabes Unis * * * *| Europe | Émirats arabes unis | Juin 2019 |
-|Afrique du Sud * * * *| Europe | Afrique du Sud | Juillet 2019 |
-|Suisse, Liechtenstein * * *| Europe | Suisse | Décembre 2019 |
-|Allemagne * * * *| Europe | Allemagne | Décembre 2019 |
+|**Japon**| Asie/Pacifique | Japon | Décembre 2014 |
+|**Australie, Nouvelle-Zélande, Fidji**| Asie/Pacifique | Australie | Mars 2015 |
+|**Inde**| Asie/Pacifique | Inde | Octobre 2015 |
+|**Canada**| Amérique du Nord | Canada | Mai 2016 |
+|**Royaume-Uni**| Europe | Royaume-Uni | Septembre 2016 |
+|**Corée du Sud**| Asie/Pacifique | Corée du Sud | Avril 2017 |
+|**France**| Europe | France | Mars 2018 |
+|**Émirats arabes unis**| Europe | Émirats arabes unis | Juin 2019 |
+|**Afrique du Sud**| Europe | Afrique du Sud | Juillet 2019 |
+|**Suisse, Liechtenstein**| Europe | Suisse | Décembre 2019 |
+|**Allemagne**| Europe | Allemagne | Décembre 2019 |
   
 Les données client essentielles des nouveaux clients ou des clients Office 365 créés après la mise à disposition de la nouvelle région de centre de données seront automatiquement stockées au repos dans cette nouvelle région.
 

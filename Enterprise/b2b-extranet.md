@@ -7,15 +7,14 @@ audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 description: Découvrez comment créer un site extranet B2B ou une équipe avec des utilisateurs d’invités gérés à partir d’une organisation partenaire.
-ms.openlocfilehash: 930c11489921fa5c32d1ba1ab16161f201006c91
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: cdf4470920a307d569fcfd650f40c77f4a5423a4
+ms.sourcegitcommit: 4e50f43857f93f42b71650354d1aec9ed4cc7fe2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844995"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42549063"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>Créer un extranet B2B avec des invités gérés
 

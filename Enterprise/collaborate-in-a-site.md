@@ -7,15 +7,14 @@ audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 description: Découvrez comment collaborer avec des invités sur un site SharePoint.
-ms.openlocfilehash: 39a9ee0925a384a80e8eae3a73336eb69950a554
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 8c1c34fded910701275a80aa0740a746a2458156
+ms.sourcegitcommit: 4e50f43857f93f42b71650354d1aec9ed4cc7fe2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845065"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42549113"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Collaborer avec des invités sur un site
 

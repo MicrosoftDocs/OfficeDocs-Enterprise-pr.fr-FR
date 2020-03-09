@@ -187,7 +187,7 @@
 ### [Récupérer des éléments supprimés dans la boîte aux lettres d’un utilisateur](recover-deleted-items-in-a-mailbox.md)
 ### Collaborer avec des invités
 #### [Référence pour le partage avec des invités](microsoft-365-guest-settings.md)
-#### Solutions de partage avec les invités
+#### Scénarios de partage avec les invités
 ##### [Vue d’ensemble de collaboration avec des invités](collaborating-with-people-outside-your-organization.md)
 ##### [Collaborer sur des documents](collaborate-on-documents.md)
 ##### [Collaborer dans un site](collaborate-in-a-site.md)

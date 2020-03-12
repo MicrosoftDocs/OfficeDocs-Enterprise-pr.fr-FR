@@ -23,12 +23,12 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: La prise en charge des serveurs et applications Office 2010 prendra fin prochainement et aucun contrat de support personnalisé n’est disponible. Utilisez cet article pour commencer à planifier votre mise jour dès maintenant.
-ms.openlocfilehash: a71ac61b69d72f6386c3b9063ec0c1946a5b57ca
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
-ms.translationtype: HT
+ms.openlocfilehash: 29f1074a4ca0ab520ad29bc480178d2af535b72a
+ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841031"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42605559"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Ressources facilitant la mise à jour de vos clients et serveurs Office 2010
 
@@ -66,8 +66,6 @@ Si vous utilisez les produits et applications Office 2010 à domicile, voir [ce
 
 ## <a name="related-topics"></a>Sujets associés
 
-[Office Retirement Group (Microsoft Tech Community)](https://go.microsoft.com/fwlink/?linkid=842065)
-  
 [Vidéo : présentation d’Office 365](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
   
 [Politique de cycle de vie Microsoft](https://go.microsoft.com/fwlink/?linkid=865200)

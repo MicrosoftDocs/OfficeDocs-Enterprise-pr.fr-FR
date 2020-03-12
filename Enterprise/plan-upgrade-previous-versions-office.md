@@ -15,14 +15,14 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: Si vous utilisez Office 2007 ou Office 2010, il est temps de planifier votre mise à niveau. Ne vous êtes pas bloqué avec des applications et des serveurs obsolètes et non pris en charge. Utilisez ces ressources pour commencer votre plan.
-ms.openlocfilehash: b654dcd7b8f923f952a6e2fbefe37a5e523e1cd4
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: e970546790f290cd2d075adba7628188d60ef19a
+ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841711"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42605613"
 ---
-# <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planification de la mise à niveau à partir de serveurs et clients Office 2007 ou Office 2010
+# <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planifiez votre mise à jour des serveurs et clients Office 2007 et Office 2010
 
 *Cet article est valable pour Office 365 Entreprise et Microsoft 365 Entreprise*.
 
@@ -64,7 +64,7 @@ Si vous avez besoin d’aide pour planifier votre mise à niveau, envisagez une 
 
 - Si vous faites partie d’une organisation plus petite ou si vous préférez gérer vous-même la mise à niveau Office de votre organisation, consultez [la rubrique Upgrade your office 365 for Business users to the latest Office client](https://docs.microsoft.com/office365/admin/setup/upgrade-users-to-latest-office-client). 
   
-## <a name="im-a-home-user-what-do-i-do"></a>Je suis un utilisateur à domicile. What do I do?
+## <a name="im-a-home-user-what-do-i-do"></a>Je suis un particulier. Que dois-je faire ?
 
 Si vous utilisez Office 2007 ou Office 2010 à la maison, envisagez les options de mise à jour suivantes :
 
@@ -107,12 +107,6 @@ ou
 
 [Mettre à niveau des serveurs et clients Office 2010](upgrade-from-office-2010-servers-and-products.md)
    
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
   
 [Politique de cycle de vie Microsoft](https://go.microsoft.com/fwlink/?linkid=865200)
-
-[Groupe de retraite Office (Communauté Microsoft Tech)](https://go.microsoft.com/fwlink/?linkid=842065)
-
-
-
-

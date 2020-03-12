@@ -1,5 +1,5 @@
 ---
-title: Feuille de route de fin de prise en charge d’Exchange 2010
+title: Feuille de route pour la fin de la prise en charge d'Exchange 2010
 ms.author: dstrome
 author: dstrome
 manager: laurawi
@@ -13,14 +13,14 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010 est à la fin de la prise en charge. Utilisez cette feuille de route de planification comme guide pour préparer la mise à niveau vers Exchange Online ou une version plus récente d’Exchange Server en local.
-ms.openlocfilehash: b8e9e1b94c08ec58294f88a7b5607b18c9f44a99
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d5118d0abf02464b47bfb4a368d42b0921c19ec5
+ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840381"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42605569"
 ---
-# <a name="exchange-2010-end-of-support-roadmap"></a>Feuille de route de fin de prise en charge d’Exchange 2010
+# <a name="exchange-2010-end-of-support-roadmap"></a>Feuille de route pour la fin de la prise en charge d'Exchange 2010
 
 *Cet article est valable pour Office 365 Entreprise et Microsoft 365 Entreprise*.
 
@@ -216,13 +216,13 @@ Vous pouvez utiliser les ressources suivantes pour vous aider dans votre migrati
 
 ## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Résumé des options pour le client et les serveurs Office 2010 et Windows 7
 
-Pour obtenir un résumé visuel des options de mise à niveau, de migration et de déplacement sur le Cloud pour les clients et les serveurs Office 2010 et Windows 7, consultez la [fin de l’affiche de la prise en charge](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf).
+Pour consulter une synthèse visuelle des options de mise à jour, de migration et de déplacement vers le Cloud pour les produits serveur et client Office 2010 et Windows 7, voir l’[affiche de fin de prise en charge](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf).
 
 ![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)
 
-Cette affiche de page unique constitue un moyen rapide de comprendre les différents chemins que vous pouvez suivre pour empêcher les produits client et serveur Office 2010 et Windows 7 d’atteindre la fin du support, avec les chemins d’accès et la prise en charge des options préférés dans Microsoft 365 entreprise en surbrillance.
+Cette affiche d’une page est un moyen rapide pour connaître les différents chemins que vous pouvez prendre pour empêcher les produits client et serveur Office 2010 et Windows 7 d’arriver à la fin de la prise en charge, avec les chemins d’accès et la prise en charge des options préférés dans Microsoft 365 Entreprise mis en surbrillance.
 
-Vous pouvez également [Télécharger](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) cette affiche et l’imprimer au format Letter, Legal ou tabloïd (11 x 17).
+Vous pouvez également [télécharger](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) cette affiche et l’imprimer au format lettre, légal ou tabloïd (11 x 17).
       
 ## <a name="what-if-i-need-help"></a>Qu’en est-il si j’ai besoin d’aide ?
 
@@ -233,8 +233,6 @@ Si vous rencontrez des problèmes lors de la migration vers Office 365 et que vo
 - [Communauté technique](https://social.technet.microsoft.com/Forums/office/home?category=exchangeserver)
 - [Support client](https://support.microsoft.com/gp/support-options-for-business)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
-[Ressources pour vous aider à effectuer une mise à niveau à partir de serveurs et clients Office 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-office-2010-servers-and-products)
-
-[Groupe de retraite Office (Communauté Microsoft Tech)](https://go.microsoft.com/fwlink/?linkid=842065)
+[Ressources facilitant la mise à jour de vos clients et serveurs Office 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-office-2010-servers-and-products)

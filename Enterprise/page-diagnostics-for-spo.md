@@ -3,7 +3,7 @@ title: Utiliser l’outil de diagnostics de page pour SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 2/18/2020
+ms.date: 03/11/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,19 +19,19 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: Utilisez l’outil Diagnostics de la page pour SharePoint pour analyser le portail moderne SharePoint Online et les pages de publication classiques par rapport à un ensemble prédéfini de critères de performances.
-ms.openlocfilehash: 191db3db459f12a922c47844af72511cc9bf2544
-ms.sourcegitcommit: 27172140051c31f5cd3f28ffb4282669d561549a
+ms.openlocfilehash: 8295a39429ffc57cef6f9ca05c72704388b39c12
+ms.sourcegitcommit: c024b48115cebfdaadfbc724acc2d065394156e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42155590"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42603733"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>Utilisation de l’outil Diagnostics de la page pour SharePoint
 
 Cet article explique comment utiliser l' **outil Diagnostics de la page pour SharePoint** afin d’analyser les pages de site classiques et modernes SharePoint Online par rapport à un ensemble prédéfini de critères de performances.  
 
 >[!TIP]
->**La version 2.0.2 de l’outil a été publiée**. Version **2.0.0** et versions ultérieures inclut la prise en charge des pages modernes en plus des pages de site classiques. Si vous n’êtes pas sûr de la version de l’outil que vous utilisez, vous pouvez sélectionner le lien **à propos** de ou les points de suspension (...) pour vérifier votre version. Toujours effectuer la mise à jour vers la dernière version lors de l’utilisation de l’outil.
+>Version **2.0.0** et versions ultérieures inclut la prise en charge des pages modernes en plus des pages de site classiques. Si vous n’êtes pas sûr de la version de l’outil que vous utilisez, vous pouvez sélectionner le lien **à propos** de ou les points de suspension (...) pour vérifier votre version. **Toujours effectuer la mise à jour vers la dernière version** lors de l’utilisation de l’outil.
 
 L’outil Diagnostics de la page pour SharePoint est une extension de navigateur pour les nouveauxhttps://www.microsoft.com/edge) navigateurs Microsoft Edge (et de chrome qui analysent à la fois les pages de site de publication classiques et de portail modernes SharePoint Online). Cet outil fonctionne uniquement pour SharePoint Online et ne peut pas être utilisé sur une page système SharePoint.
 
@@ -161,4 +161,8 @@ Aucune modification n’est visible sauf si vous êtes informé que vous l’ave
 
 [Optimisation des performances Office 365](tune-office-365-performance.md)
 
+[Performances offertes par l’expérience moderne de SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+
 [Réseaux de distribution de contenu](content-delivery-networks.md)
+
+[Utilisation du réseau de distribution de contenu Office 365 avec SharePoint Online](use-office-365-cdn-with-spo.md)

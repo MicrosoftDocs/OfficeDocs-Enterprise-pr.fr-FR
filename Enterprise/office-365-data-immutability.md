@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Définit et décrit l’immuabilité des données dans Office 365.
-ms.openlocfilehash: 3decc070c480306354382f5d2f0c96d6192fa903
-ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
+ms.openlocfilehash: fe6b2cf3d3ba2e0bb69f4275c77de0a452b3140f
+ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42315993"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42605629"
 ---
 # <a name="immutability-in-office-365"></a>Immuabilité dans Office 365
 
@@ -58,4 +58,4 @@ Notamment :
 - L’archivage dans Office 365 permet aux utilisateurs de combiner différentes stratégies de rétention et des actions de conservation pour créer des stratégies de rétention granulaires. Ces stratégies définissent le type ou l’emplacement des éléments conservés et la durée de conservation.
 - La fonctionnalité de verrouillage de conservation permet aux utilisateurs de choisir s’il faut appliquer une stratégie restrictive à la stratégie. Une stratégie restrictive interdit à quiconque de pouvoir supprimer, désactiver ou modifier la stratégie de rétention. Cela signifie que lorsque le verrouillage de conservation est activé, il ne peut pas être désactivé et aucun mécanisme n’existe sous lequel les données provenant de dépositaires existants collectées par les stratégies de rétention en place peuvent être remplacées, modifiées, effacées ou supprimées au cours du période de conservation. De plus, le délai d’attente défini par le verrouillage de conservation ne peut pas être raccourci ou réduit. Elle peut toutefois être allongée, dans le cas d’une obligation légale de continuer la rétention des données stockées, comme indiqué ci-dessus. Le verrouillage de conservation garantit que personne, pas même les administrateurs ou ceux disposant d’un accès de contrôle, ne modifient pas les paramètres ou ne remplacent ou n’effacent pas les données qui ont été stockées, en configurant l’archivage dans Office 365 conformément aux instructions indiquées dans la version 2003 de la version de SEC. Règle 17A -4.
 
-Pour comprendre comment Office 365 vous aide à respecter les obligations réglementaires, notamment en ce qui concerne la réglementation 17A -4, consultez ce [livre blanc](https://go.microsoft.com/fwlink/?linkid=830440) qui traite de l’archivage Exchange Online, de SharePoint Online, de OneDrive entreprise et de Skype entreprise. Le livre blanc fournit également une analyse approfondie des fonctionnalités et des fonctionnalités d’archivage d’Office 365 en fonction de chacune des exigences de la norme SEC 17A -4 et démontre aux clients soumis à la façon dont l’archivage Office 365 peut les activer pour répondre à ces besoins. requise.
+Pour comprendre comment Office 365 vous aide à respecter les obligations réglementaires, notamment en ce qui concerne la réglementation 17A -4, consultez le [livre blanc](https://www.microsoft.com/microsoft-365/blog/wp-content/uploads/2015/11/Microsoft-EOA-White-Paper.pdf) sur l’archivage Exchange Online, SharePoint Online, OneDrive entreprise et Skype entreprise. Le livre blanc fournit également une analyse approfondie des fonctionnalités et des fonctionnalités d’archivage d’Office 365 en fonction de chacune des exigences de la norme SEC 17A -4 et démontre aux clients soumis à la façon dont l’archivage Office 365 peut les activer pour répondre à ces besoins. requise.

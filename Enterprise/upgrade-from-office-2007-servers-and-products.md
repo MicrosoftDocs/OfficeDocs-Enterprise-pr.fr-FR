@@ -22,13 +22,13 @@ search.appverid:
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
-description: La prise en charge se termine bientôt pour les serveurs et les applications clientes Office 2007, et les accords de support personnalisés ne sont pas disponibles. Utilisez cet article pour commencer à planifier votre mise à niveau maintenant.
-ms.openlocfilehash: e9e135d9f3f91247f4b94f081c1c48662adb1e15
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: La prise en charge se termine bientôt pour les serveurs et les applications clientes Office 2007, et les accords de support personnalisés ne sont pas disponibles. Utilisez cet article pour commencer à planifier votre mise jour dès maintenant.
+ms.openlocfilehash: 101db7891dd2d336c9b15b2e7070587fb61eb53a
+ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841001"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42605639"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Ressources pour vous aider à effectuer une mise à niveau à partir de serveurs et clients Office 2007
 
@@ -51,18 +51,16 @@ Le support technique est terminé pour les produits et services Office 2007. Les
    
 Lorsque la prise en charge d’un produit Microsoft est terminée, il n’existe aucune nouvelle mise à jour de sécurité, aucune mise à jour non relative à la sécurité, aucune option de support technique gratuite ou payant (y compris des accords de support personnalisé) ou des mises à jour de contenu technique en ligne. Que vous soyez une organisation d’entreprise ou un utilisateur à domicile individuel, plusieurs options sont à prendre en compte :
 
-## <a name="im-a-home-user-what-do-i-do"></a>Je suis un utilisateur à domicile. What do I do?
+## <a name="im-a-home-user-what-do-i-do"></a>Je suis un particulier. Que dois-je faire ?
 
 Si vous utilisez les produits et applications Office 2007 à la maison, reportez-vous à [ces informations](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do).
      
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
-[Groupe de retraite Office (Communauté Microsoft Tech)](https://go.microsoft.com/fwlink/?linkid=842065)
-  
-[Vidéo : qu’est-ce que Office 365 ?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
+[Vidéo : présentation d’Office 365](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
   
 [Politique de cycle de vie Microsoft](https://go.microsoft.com/fwlink/?linkid=865200)
 
-[Planification de la mise à niveau à partir de serveurs et clients Office 2007 ou Office 2010](plan-upgrade-previous-versions-office.md)
+[Planifiez votre mise à jour des serveurs et clients Office 2007 et Office 2010](plan-upgrade-previous-versions-office.md)
   
 

@@ -16,12 +16,12 @@ ms.assetid: 89d9feee-2285-419c-8c14-0f7f583536e0
 f1.keywords:
 - NOCSH
 description: PerformancePoint Server 2007, ProClarity et SharePoint Server 2007 ont atteint la fin de la prise en charge. Lisez cet article pour planifier la mise à niveau de votre solution décisionnel.
-ms.openlocfilehash: 89f13a9fba91195c8e3ecfcdaaebb52a27307eef
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 37ac5425e282efd4a9e8e0fc2a8f6b5c897ec105
+ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844095"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42605612"
 ---
 # <a name="performancepoint-server-2007-end-of-support-roadmap"></a>Feuille de route pour la fin de l’assistance pour PerformancePoint Server 2007
 
@@ -151,12 +151,6 @@ Lorsque vous effectuez une mise à niveau vers PerformancePoint Services, vous b
 
 Qu’il s’agisse d’une mise à niveau locale ou d’une migration vers Office 365, nous vous recommandons de travailler avec un partenaire Microsoft. Un partenaire qualifié peut vous aider à identifier la solution qui répond le mieux aux besoins de votre entreprise et à vous aider dans votre déploiement. Visitez le [Centre partenaires Microsoft](https://go.microsoft.com/fwlink/?linkid=841249)et utilisez les filtres de recherche pour trouver un fournisseur de solutions.
   
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 [Ressources pour vous aider à effectuer une mise à niveau à partir de serveurs et clients Office 2007](upgrade-from-office-2007-servers-and-products.md)
-  
-[Groupe de retraite Office (Communauté Microsoft Tech)](https://go.microsoft.com/fwlink/?linkid=842065)
-
-
-  
-

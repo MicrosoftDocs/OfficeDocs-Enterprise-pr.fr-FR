@@ -3,7 +3,7 @@ title: Optimiser les performances des composants WebPart dans les pages de sites
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 11/6/2019
+ms.date: 03/11/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Découvrez comment optimiser les performances des composants WebPart dans les pages de sites modernes SharePoint Online.
-ms.openlocfilehash: 8ee8e932913ad8b75d6e68cecbd5d5da08bce76b
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 48eba5f638d75cb12b7b4dcf516a9c3833cf8f4d
+ms.sourcegitcommit: c024b48115cebfdaadfbc724acc2d065394156e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844828"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42603743"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>Optimiser les performances des composants WebPart dans les pages de sites modernes SharePoint Online
 
@@ -35,14 +35,17 @@ Les pages de sites modernes SharePoint Online contiennent des composants WebPart
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-web-parts"></a>Utiliser l’outil Diagnostic de page pour SharePoint pour analyser les composants WebPart
 
-L’outil **Diagnostic de page pour SharePoint** est une extension de navigateur pour Chrome et [Microsoft Edge version 77 ou ultérieure](https://www.microsoftedgeinsider.com/download?form=MI13E8&OCID=MI13E8) que vous pouvez utiliser pour analyser les pages de sites de publication modernes et classiques SharePoint. L’outil fournit un rapport pour chaque page analysée montrant comment la page se comporte par rapport à un ensemble défini de critères de performance. Pour installer et découvrir l’outil Diagnostic de page pour SharePoint, consultez [Utiliser l’outil Diagnostic de page pour SharePoint Online](page-diagnostics-for-spo.md).
+L’outil Diagnostic de page pour SharePoint est une extension de navigateur pour le nouveau Microsoft Edge (les navigateurs https://www.microsoft.com/edge) et Chrome que vous pouvez utiliser pour analyser les pages de sites de publication SharePoint classiques et les portails modernes. L’outil fournit un rapport pour chaque page analysée montrant comment la page se comporte par rapport à un ensemble défini de critères de performance. Pour installer et découvrir l’outil Diagnostic de page pour SharePoint, consultez [Utiliser l’outil Diagnostic de page pour SharePoint Online](page-diagnostics-for-spo.md).
+
+>[!NOTE]
+>L’outil Diagnostic de page fonctionne uniquement pour SharePoint Online et ne peut pas être utilisé sur une page système SharePoint.
 
 Lorsque vous analysez une page de site SharePoint avec l’outil Diagnostic de page pour SharePoint, vous pouvez voir des informations sur les composants WebPart qui dépassent la métrique de référence dans le résultat _Les composants WebPart ont un impact sur le temps de chargement de la page_ dans le volet **Tests de diagnostic**.
 
 Les résultats possibles sont les suivants :
 
-- **Attention requise** (rouge) : un composant WebPart _personnalisé_ qui prend plus de **deux** secondes pour charger. Le temps de chargement total tel qu’il apparaît dans les résultats des tests est subdivisé en : chargement de module, chargement différé, init et rendu.
-- **Possibilités d’amélioration** (jaune) : les éléments susceptibles d’avoir un impact sur le temps de chargement des pages sont présentés dans cette section et doivent être examinés et analysés. Il peut s’agir de composants WebPart Microsoft « prêts à l’emploi » (OOTB). Les résultats de tous les composants WebPart Microsoft présentés dans cette section sont automatiquement signalés à Microsoft, donc **aucune action n’est requise**. Vous devez uniquement enregistrer un ticket de support pour investigation si vous rencontrez des performances très ralenties sur la page et si **tous les composants WebPart Microsoft** sur la page apparaissent dans les résultats dans la section **Possibilités d’amélioration**. Notez qu’une prochaine mise à jour de l’outil Diagnostic de page permettra de décomposer les résultats en fonction de la configuration spécifique du composant WebPart Microsoft.
+- **Attention requise** (rouge) : n’importe quel composant WebPart _personnalisé_ visible dans la fenêtre d’affichage (partie visible de la page qui est chargée en premier) dont le chargement prend plus de **deux** secondes. Les composants WebPart _personnalisés_ à l'extérieur de la fenêtre d’affichage dont le chargement dure plus de **quatre** secondes. Le temps de chargement total tel qu’il apparaît dans les résultats de tests est subdivisé en : chargement de module, chargement différé, initialisation et rendu.
+- **Possibilités d’amélioration** (jaune) : les éléments susceptibles d’avoir un impact sur le temps de chargement des pages sont présentés dans cette section et doivent être examinés et analysés. Il peut s’agir de composants WebPart Microsoft « prêts à l’emploi » (OOTB). Les résultats de tous les composants WebPart Microsoft présentés dans cette section sont automatiquement signalés à Microsoft, donc **aucune action n’est requise**. Vous devez uniquement enregistrer un ticket de support pour investigation si vous rencontrez des performances très ralenties sur la page et si **tous les composants WebPart Microsoft** sur la page apparaissent dans les résultats dans la section **Possibilités d’amélioration**. Notez qu’une prochaine mise à jour de l’outil Diagnostic de page pour SharePoint permettra de décomposer les résultats en fonction de la configuration spécifique du composant WebPart Microsoft.
 - **Aucune action requise** (vert) : aucun composant WebPart ne prend plus de **deux** secondes pour renvoyer les données.
 
 Si le résultat **Les composants WebPart ont un impact sur le temps de chargement de la page** s’affiche dans la section des résultats **Attention requise** ou **Possibilités d’amélioration**, cliquez sur le résultat pour afficher les détails sur les composants WebPart qui chargent lentement. Les mises à jour ultérieures de l’outil Diagnostic de page pour SharePoint peuvent inclure des mises à jour des règles d’analyse. Vérifiez donc que vous disposez toujours de la dernière version de l’outil.

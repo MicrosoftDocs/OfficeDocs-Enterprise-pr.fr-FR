@@ -3,7 +3,7 @@ title: Outil d’intégration réseau Office 365 dans le centre d’administrati
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 02/04/2020
+ms.date: 03/04/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Outil d’intégration réseau Office 365 dans le centre d’administration M365 (version préliminaire)
-ms.openlocfilehash: 7ead201d78c1a6ce971c6ff09d4be9c0d2c76be6
-ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
+ms.openlocfilehash: ae3a818100f8b84f89d502f9e076fc1fcf6559e8
+ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106306"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42890397"
 ---
 # <a name="office-365-network-onboarding-tool-in-the-m365-admin-center-preview"></a>Outil d’intégration réseau Office 365 dans le centre d’administration M365 (version préliminaire)
 
@@ -30,7 +30,7 @@ Le réseau d’informations dans le centre d’administration 365 de Microsoft e
 Nous vous recommandons de les utiliser ensemble pour évaluer l’état de qualité de la mise en réseau pour chaque emplacement de bureau dans le centre d’administration 365 de Microsoft et des informations supplémentaires sont disponibles après le déploiement de tests basés sur l’outil d’intégration réseau Office 365.
 
 >[!IMPORTANT]
->Les recommandations en matière de performances réseau, les informations et les évaluations dans le centre d’administration 365 de Microsoft sont actuellement en état d’aperçu et sont disponibles uniquement pour les locataires Office 365 qui ont été apportées dans le programme d’aperçu des fonctionnalités.
+>Les informations relatives au réseau, les recommandations en matière de performances et les évaluations dans le centre d’administration 365 de Microsoft sont actuellement en état d’aperçu et sont disponibles uniquement pour les locataires Office 365 qui ont été apportées dans le programme d’aperçu des fonctionnalités.
 
 ## <a name="the-advanced-tests-client-application"></a>Application cliente de tests avancés
 
@@ -120,7 +120,7 @@ Lorsqu’un certificat SSL n’est pas fourni par Microsoft, nous affichons le n
 
 Cette section présente les résultats d’un itinéraire ICMP vers le volet frontal du service Exchange Online, le volet frontal du service SharePoint Online et le porte de service frontal de Microsoft Teams. Il est fourni à des fins d’information uniquement et aucune analyse réseau n’est associée.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 [Recommandations relatives aux performances réseau dans le centre d’administration Microsoft 365 (version préliminaire)](office-365-network-mac-perf-overview.md)
 

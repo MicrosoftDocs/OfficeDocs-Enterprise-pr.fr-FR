@@ -1,0 +1,68 @@
+### YamlMime:Landing
+title: Documentation Office 365 Enterprise
+summary: Cette page fournit des conseils aux administrateurs et aux professionnels de l’informatique qui déploient, configurent et gèrent les services Office 365 dans des organisations d’entreprise.
+metadata:
+  title: Documentation Office 365 Enterprise
+  description: Cette page fournit des conseils aux administrateurs et aux professionnels de l’informatique qui déploient, configurent et gèrent les services Office 365 dans des organisations d’entreprise.
+  ms.service: o365-solutions
+  ms.topic: landing-page
+  author: wingtofree
+  ms.author: v-qingao
+  ms.date: 03/12/2020
+  ms.openlocfilehash: 432c124f39db7168a93b4c061c00b10a07cc20d9
+  ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 03/21/2020
+  ms.locfileid: "42891488"
+landingContent:
+- title: À propos d’Office 365 entreprise
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: Adopter Office 365 avec FastTrack
+      url: https://www.microsoft.com/fasttrack/microsoft-365/office-365
+    - text: Effectuer une migration de vos données d’organisation vers Office 365 Entreprise
+      url: migrate-data-to-office-365.md
+    - text: Guide de déploiement pour Office 365 ProPlus
+      url: https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus
+    - text: Déployer Office 365 Entreprise pour votre organisation
+      url: setup-overview-for-enterprises.md
+    - text: Déploiements hybrides
+      url: microsoft-cloud-it-architecture-resources.md
+  - linkListType: learn
+    links:
+    - text: Prise en main de Microsoft 365
+      url: https://support.office.com/article/office-365-admin-and-it-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5
+- title: Déployer les charges de travail Office 365
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Exchange Online
+      url: https://docs.microsoft.com/Exchange/exchange-online
+    - text: SharePoint Online
+      url: https://support.office.com/article/sharepoint-online-%E2%80%93-admin-help-79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a
+    - text: Skype Entreprise Online
+      url: https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online
+    - text: Microsoft Teams
+      url: https://docs.microsoft.com/MicrosoftTeams/Microsoft-Teams
+    - text: Power BI
+      url: https://docs.microsoft.com/power-bi
+    - text: Yammer
+      url: https://support.office.com/yammer
+- title: Ressources supplémentaires
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Communauté technique Office 365
+      url: https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365
+    - text: Obtenir une assistance
+      url: https://support.office.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
+  - linkListType: learn
+    links:
+    - text: En savoir plus sur Microsoft 365
+      url: https://docs.microsoft.com/microsoft-365
+    - text: En savoir plus sur la conformité de Microsoft 365
+      url: https://docs.microsoft.com/microsoft-365/compliance/
+    - text: En savoir plus sur la sécurité Microsoft 365
+      url: https://docs.microsoft.com/microsoft-365/security/

@@ -13,12 +13,12 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010 est à la fin de la prise en charge. Utilisez cette feuille de route de planification comme guide pour préparer la mise à niveau vers Exchange Online ou une version plus récente d’Exchange Server en local.
-ms.openlocfilehash: d5118d0abf02464b47bfb4a368d42b0921c19ec5
-ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
+ms.openlocfilehash: ddf2a099688e55e5e0650a030eb2a33293b21eb2
+ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42605569"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42979340"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Feuille de route pour la fin de la prise en charge d'Exchange 2010
 
@@ -218,11 +218,11 @@ Vous pouvez utiliser les ressources suivantes pour vous aider dans votre migrati
 
 Pour consulter une synthèse visuelle des options de mise à jour, de migration et de déplacement vers le Cloud pour les produits serveur et client Office 2010 et Windows 7, voir l’[affiche de fin de prise en charge](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf).
 
-![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)
+[![Image de l’affiche de la fin de la prise en charge pour les clients et serveurs Office 2010 et Windows 7](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)
 
 Cette affiche d’une page est un moyen rapide pour connaître les différents chemins que vous pouvez prendre pour empêcher les produits client et serveur Office 2010 et Windows 7 d’arriver à la fin de la prise en charge, avec les chemins d’accès et la prise en charge des options préférés dans Microsoft 365 Entreprise mis en surbrillance.
 
-Vous pouvez également [télécharger](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) cette affiche et l’imprimer au format lettre, légal ou tabloïd (11 x 17).
+Vous pouvez également [télécharger](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) cette affiche et l’imprimer au format lettre, légal ou tabloïd (11 x 17).
       
 ## <a name="what-if-i-need-help"></a>Qu’en est-il si j’ai besoin d’aide ?
 
@@ -233,6 +233,6 @@ Si vous rencontrez des problèmes lors de la migration vers Office 365 et que vo
 - [Communauté technique](https://social.technet.microsoft.com/Forums/office/home?category=exchangeserver)
 - [Support client](https://support.microsoft.com/gp/support-options-for-business)
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Ressources facilitant la mise à jour de vos clients et serveurs Office 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-office-2010-servers-and-products)

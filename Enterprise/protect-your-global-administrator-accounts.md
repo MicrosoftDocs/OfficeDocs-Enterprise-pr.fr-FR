@@ -19,14 +19,17 @@ f1.keywords:
 - NOCSH
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Protégez l’accès administrateur général à votre abonnement Office 365.
-ms.openlocfilehash: ee5acefbd5eab287a78b55f5d4ddfc525432b403
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: fcd4d69df967ad592af52a36a55008463b6f30e2
+ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841191"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42979366"
 ---
 # <a name="protect-your-office-365-global-administrator-accounts"></a>Protéger vos comptes d’administrateur général Office 365
+
+> [!NOTE]
+> Il est possible de créer un compte d’administrateur général sans ajouter de licences.
 
 *Cet article est valable pour Office 365 Entreprise et Microsoft 365 Entreprise*.
 

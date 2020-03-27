@@ -23,12 +23,12 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: La prise en charge des serveurs et applications Office 2010 prendra fin prochainement et aucun contrat de support personnalisé n’est disponible. Utilisez cet article pour commencer à planifier votre mise jour dès maintenant.
-ms.openlocfilehash: 29f1074a4ca0ab520ad29bc480178d2af535b72a
-ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
+ms.openlocfilehash: 8f5ba4ced815cddf3fbbb357b71157c3ad54347e
+ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42605559"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42979446"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Ressources facilitant la mise à jour de vos clients et serveurs Office 2010
 
@@ -44,11 +44,11 @@ La planification de votre mise à jour est le moment idéal pour envisager la mi
 
 Pour consulter une synthèse visuelle des options de mise à jour, de migration et de déplacement vers le Cloud pour les produits serveur et client Office 2010 et Windows 7, voir l’[affiche de fin de prise en charge](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf).
 
-![Affiche sur la fin de la prise en charge pour les clients et serveurs Office 2010 et Windows 7](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)
+[![Image de l’affiche de la fin de la prise en charge pour les clients et serveurs Office 2010 et Windows 7](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)
 
 Cette affiche d’une page est un moyen rapide pour connaître les différents chemins que vous pouvez prendre pour empêcher les produits client et serveur Office 2010 et Windows 7 d’arriver à la fin de la prise en charge, avec les chemins d’accès et la prise en charge des options préférés dans Microsoft 365 Entreprise mis en surbrillance.
 
-Vous pouvez également [télécharger](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) cette affiche et l’imprimer au format lettre, légal ou tabloïd (11 x 17).
+Vous pouvez également [télécharger](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) cette affiche et l’imprimer au format lettre, légal ou tabloïd (11 x 17).
       
 ## <a name="office-2010-client-and-server-upgrade-planning"></a>Planning de mise à jour d'Office 2010 client et serveur
   

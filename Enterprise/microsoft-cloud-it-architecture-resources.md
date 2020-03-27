@@ -18,12 +18,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: "Résumé : apprenez les concepts de base de l’architecture cloud pour l’identité, la sécurité, la mise en réseau et l’hybridation Microsoft. Passez en revue les recommandations normatives pour la protection des fichiers, des identités et des appareils lors de l'utilisation du cloud de Microsoft. Apprenez à déployer un poste de travail moderne et sécurisé avec Windows 10 et Office ProPlus."
-ms.openlocfilehash: f2f466ff0f5f13e2b7e3bfb85f77a7e7961fcde2
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 5cfed9ba3fd3dcc2c92d0226398cdf7658ee6cab
+ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844935"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42979476"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Ressources relatives à l’architecture informatique du cloud Microsoft
 
@@ -134,7 +134,7 @@ Obtenez un aperçu rapide de [l'infrastructure de base](https://docs.microsoft.c
   
 |**Item**|**Description**|
 |:-----|:-----|
-|[![Image miniature de l’affiche de l’Infrastructure de base de Microsoft 365 Entreprise](media/Microsoft365EnterpriseFoundInfra-thumb.png)](https://aka.ms/m365efoundinfraposter) <br/> [Consulter en ligne](https://aka.ms/m365efoundinfraposter) \| [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf) <br/> | Cette affiche synthétise chaque phase de l’infrastructure de base en termes des objectifs, des fonctionnalités et des outils, des décisions de conception, des résultats de configuration, de l’intégration et du suivi et des mises à jour en continu. <br/>| 
+|[![Image miniature de l’affiche de l’Infrastructure de base de Microsoft 365 Entreprise](media/Microsoft365EnterpriseFoundInfra-thumb.png)](https://aka.ms/m365efoundinfraposter) <br/> [Consulter en ligne](https://aka.ms/m365efoundinfraposter) \| [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf) <br/> | Cette affiche synthétise chaque phase de l’infrastructure de base en termes des objectifs, des fonctionnalités et des outils, des décisions de conception, des résultats de configuration, de l’intégration et du suivi et des mises à jour en continu. <br/>| 
 
 ### <a name="architecture-approaches-for-microsoft-cloud-tenant-to-tenant-migrations"></a>Approches d’architecture pour les migrations client-client de Microsoft Cloud 
 Cette série de rubriques illustre plusieurs approches d’architecture pour les fusions, les acquisitions, les scissions et d’autres scénarios susceptibles de vous amener à migrer vers un nouveau client cloud. Ces rubriques fournissent des conseils sur la planification de point de départ.

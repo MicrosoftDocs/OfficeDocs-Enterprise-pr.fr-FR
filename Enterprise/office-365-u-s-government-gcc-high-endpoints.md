@@ -1,7 +1,7 @@
 ---
 title: Office 365 gouvernement américain GCC High Endpoints
-ms.author: laurawi
-author: LauraWi
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 03/04/2020
 audience: ITPro
@@ -18,12 +18,12 @@ search.appverid: MET150
 ms.assetid: cbd2369c-fd96-464c-bf48-c99826b459ee
 description: Si votre organisation utilise Office 365 et limite les ordinateurs de votre réseau à se connecter à Internet, vous trouverez ci-dessous les points de terminaison (noms de domaine complets, ports, URL, IPv4 et plages d’adresses IPv6) que vous devez inclure dans vos listes vertes de trafic sortant afin de vous assurer que votre les ordinateurs peuvent utiliser Office 365.
 hideEdit: true
-ms.openlocfilehash: 7c3f1f4c81018bda3e2047c1d061a05833058741
-ms.sourcegitcommit: 160a2564c90a4d64d19f072e0de9fe1b3cd0c917
+ms.openlocfilehash: 1612ddda0dc264d893d54314ed2c6416d9c17ca3
+ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42416949"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42979466"
 ---
 # <a name="office-365-us-government-gcc-high-endpoints"></a>Office 365 gouvernement américain GCC High Endpoints
 
@@ -38,7 +38,7 @@ ms.locfileid: "42416949"
   
 |||
 |:-----|:-----|
-|**Dernière mise à jour :** 02/28/2020-abonnement au ![](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Journal des modifications](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) RSS <br/> |**Téléchargement :** liste complète au [format JSON](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
+|**Dernière mise à jour :** 28/01/2020 – ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Abonnement au journal des modifications](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Téléchargement :** liste complète au [format JSON](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
    
  Commencez par [gérer les points de terminaison Office 365](managing-office-365-endpoints.md) pour comprendre nos recommandations en matière de gestion de la connectivité réseau à l’aide de ces données. Les données de points de terminaison sont mises à jour au début de chaque mois avec de nouvelles adresses IP et des URL publiées 30 jours avant d’être actives. Cela permet aux clients qui ne disposent pas encore de mises à jour automatiques d’effectuer leurs processus avant que la nouvelle connectivité ne soit requise. Les points de terminaison peuvent également être mis à jour au cours du mois si cela s’avère nécessaire pour traiter les escalades, les incidents de sécurité ou d’autres exigences opérationnelles immédiates. Les données affichées sur cette page ci-dessous sont toutes générées à partir des services Web basés sur REST. Si vous utilisez un script ou un périphérique réseau pour accéder à ces données, vous devez accéder directement au [service Web](office-365-ip-web-service.md) .
 
@@ -56,7 +56,7 @@ Les colonnes de données affichées sont :
 
 - **Adresses** : répertorie les noms de domaine complets ou noms de domaines génériques et plages d’adresses IP pour l’ensemble de points de terminaison. Notez qu’une plage d’adresses IP est au format CIDR et peut inclure plusieurs adresses IP individuelles dans le réseau spécifié.
  
-- **Ports**: Répertorie les ports TCP ou UDP qui sont combinées avec les adresses pour former le point de terminaison réseau. Vous remarquerez peut-être que certains duplication dans les plages d’adresses IP lorsqu’il y a des ports différents répertoriés.
+- **Ports** : répertorie les ports TCP ou UDP associés aux adresses pour former le point de terminaison réseau. Vous remarquerez peut-être certains doublons dans les plages d’adresses IP lorsque plusieurs ports sont répertoriés.
  
 [!INCLUDE [Office 365 U.S. Government GCC High endpoints](./includes/office-365-u.s.-government-gcc-high-endpoints.md)]
 

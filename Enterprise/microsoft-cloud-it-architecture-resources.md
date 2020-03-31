@@ -18,12 +18,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: "Résumé : apprenez les concepts de base de l’architecture cloud pour l’identité, la sécurité, la mise en réseau et l’hybridation Microsoft. Passez en revue les recommandations normatives pour la protection des fichiers, des identités et des appareils lors de l'utilisation du cloud de Microsoft. Apprenez à déployer un poste de travail moderne et sécurisé avec Windows 10 et Office ProPlus."
-ms.openlocfilehash: 5cfed9ba3fd3dcc2c92d0226398cdf7658ee6cab
-ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
+ms.openlocfilehash: ebbf2f2eb15523b455c7fab1c306eea6e0d192b1
+ms.sourcegitcommit: 9416fbf8f136baeaf7d45eb243921c70ae67438d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42979476"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43037801"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Ressources relatives à l’architecture informatique du cloud Microsoft
 
@@ -46,6 +46,7 @@ Ces affiches et outils relatifs à l’architecture fournissent des informations
 - **[Série de solutions Microsoft 365 Entreprise](microsoft-cloud-it-architecture-resources.md#BKMK_o365solutions)**:
     - [Microsoft Teams et services de productivité connexes dans Microsoft 365 pour les architectes informatique](#microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects)
     - [Groupes dans Microsoft 365 pour les architectes informatique](#groups-in-microsoft-365-for-it-architects)
+    - [Sécurité et protection des informations pour les organisations multi-régions](#security-and-information-protection-for-multi-region-organizations)
     - [La protection des appareils et de l’identité pour Office 365](microsoft-cloud-it-architecture-resources.md#BKMK_O365IDP)
     - [Les solutions de protection des fichiers dans Office 365](microsoft-cloud-it-architecture-resources.md#BKMK_O365fileprotect)
     - [Protection des informations Office 365 pour le RGPD](#office-365-information-protection-for-gdpr)
@@ -162,6 +163,14 @@ Quels sont les besoins des architectes informatique concernant les groupes dans 
 |**Item**|**Description**|
 |:-----|:-----|
 |[![Image miniature pour les groupes infographie](downloads/msft-m365-groups-architecture-thumb.png)](downloads/msft-m365-groups.pdf) <br/> [PDF](downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) |Ces illustrations décrivent les différents types de groupes, la manière dont ceux-ci sont créés et gérés et quelques recommandations en matière de gouvernance.|
+
+### <a name="security-and-information-protection-for-multi-region-organizations"></a>Sécurité et protection des informations pour les organisations multi-régions
+Sécurité et protection des informations pour les organisations multi-régions à l’aide d’un seul client Microsoft 365
+
+|**Item**|**Description**|
+|:-----|:-----|
+|[![Image miniature pour l’infographie multi-régions](media/multi-region-single-tenant-security-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.vsdx) |L’utilisation d’un seul client Microsoft 365 pour votre organisation mondiale constitue le meilleur choix et la meilleure expérience pour de multiples raisons. Cependant, de nombreux architectes sont aux prises avec la façon de se conformer aux objectifs de sécurité et de protection des informations dans différentes régions. Cet ensemble de thèmes fournit des recommandations. |
+
 
    
 <a name="BKMK_O365IDP"></a>

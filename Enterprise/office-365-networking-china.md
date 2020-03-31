@@ -11,16 +11,17 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- remotework
 search.appverid: MET150
 f1.keywords:
 - NOCSH
 description: Cet article fournit des instructions pour optimiser les performances réseau pour les utilisateurs de la Chine des clients Office 365 généraux.
-ms.openlocfilehash: 33e475dfbf4accf306a099542cf8cf2f22ff23a5
-ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
+ms.openlocfilehash: 50cf6189c922ada5d4ebb9683bec0dd8c6e38f6d
+ms.sourcegitcommit: cb942f32da99eda6455756ce0fd409cf8ee9de3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106312"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43058967"
 ---
 # <a name="office-365-global-tenant-performance-optimization-for-china-users"></a>Optimisation des performances client globales d’Office 365 pour les utilisateurs de la Chine
 
@@ -57,7 +58,7 @@ Pour plus d’informations sur la façon de router le trafic Office 365 de mani�
 
 ## <a name="user-best-practices"></a>Meilleures pratiques pour les utilisateurs
 
-Les utilisateurs de la Chine qui se connectent à des clients locaux Office 365 à partir d’emplacements distants, tels que des maisons, des cafés-restaurants, des hôtels et des succursales sans connexion aux réseaux d’entreprise, peuvent rencontrer des performances réseau médiocres, car le trafic entre leurs appareils et Office 365 doivent transiter des circuits réseau transfrontaliers en Chine encombrés.
+Les utilisateurs de la Chine qui se connectent à des clients Office 365 à partir d’emplacements distants, tels que des maisons, des cafés-restaurants, des hôtels et des succursales sans connexion aux réseaux d’entreprise, peuvent rencontrer des performances réseau médiocres, car le trafic entre leurs appareils et Office 365 doit transiter par des circuits réseau transfrontaliers en Chine.
 
 Si les réseaux privés transfrontaliers et/ou l’accès VPN au réseau d’entreprise ne sont pas facultatifs, les problèmes de performances par utilisateur peuvent toujours être atténués en formant vos utilisateurs basés sur la Chine pour suivre ces meilleures pratiques.
 

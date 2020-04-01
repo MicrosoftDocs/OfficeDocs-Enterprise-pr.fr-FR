@@ -3,7 +3,7 @@ title: Informations sur le réseau Office 365 (aperçu)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/20/2020
+ms.date: 03/31/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Informations sur le réseau Office 365 (aperçu)
-ms.openlocfilehash: 9b9ef28fa22b68f7860864aa6ce706531c0d8e00
-ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
+ms.openlocfilehash: 5064c45ffa552381ccdb6042d5e9d6f072f564aa
+ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42890606"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081706"
 ---
 # <a name="office-365-network-insights-preview"></a>Informations sur le réseau Office 365 (aperçu)
 
@@ -40,7 +40,7 @@ Cinq aspects spécifiques du réseau peuvent être affichés pour chaque emplace
 
 ## <a name="backhauled-network-egress"></a>Sortie réseau retractée
 
-Cette vue s’affiche si le service réseau Insights détecte que la distance entre un emplacement utilisateur donné et la sortie réseau est supérieure à 500 kilomètres (800 kilomètres), ce qui indique que le trafic Office 365 est replacé sur un serveur Edge Internet commun. appareil ou proxy.
+Cette vue s’affiche si le service réseau Insights détecte que la distance entre un emplacement utilisateur donné et la sortie réseau est supérieure à 500 milles (800 kilomètres), ce qui indique que le trafic Office 365 est replacé vers un périphérique ou un proxy Internet Edge commun.
 
 Cette vue est abrégée en « sortie » dans certains affichages de résumés.
 
@@ -50,7 +50,7 @@ Cette vue est abrégée en « sortie » dans certains affichages de résumés.
 
 Cela indique que la distance entre l’emplacement du bureau et la sortie du réseau est supérieure à 500 kilomètres (800 kilomètres). L’emplacement du Bureau est identifié par un emplacement de l’ordinateur client masqué et l’emplacement de sortie du réseau est identifié à l’aide de l’adresse IP inverse pour les bases de données d’emplacement. L’emplacement du Bureau peut être inexact si les services d’emplacement Windows sont désactivés sur les ordinateurs. L’emplacement de sortie réseau peut être inexact si les informations de la base de données d’adresses IP inversées sont inexactes.
 
-Les détails de cette analyse incluent l’emplacement du bureau, le pourcentage estimé du total de l’utilisateur client à l’emplacement, l’emplacement de sortie réseau actuel, la pertinence de l’emplacement de sortie, la distance entre l’emplacement et le point de sortie actuel, la date la condition a été détectée pour la première fois, ainsi que la date à laquelle la condition a été résolue.
+Les détails de cette analyse incluent l’emplacement du bureau, le pourcentage estimé du nombre total d’utilisateurs clients à l’emplacement, l’emplacement de sortie du réseau actuel, la pertinence de l’emplacement de sortie, la distance entre l’emplacement et le point de sortie actuel, la date du premier détection de la condition et la date à laquelle la condition a été résolue.
 
 ### <a name="what-should-i-do"></a>Que dois-je faire ?
 
@@ -148,3 +148,5 @@ Pour plus d’informations sur la façon d’atténuer les problèmes de perform
 [Évaluation du réseau Office 365 (préversion)](office-365-network-mac-perf-score.md)
 
 [Outil d’intégration réseau Office 365 dans le centre d’administration M365 (version préliminaire)](office-365-network-mac-perf-onboarding-tool.md)
+
+[Services d’emplacement de connectivité réseau Office 365 (préversion)](office-365-network-mac-location-services.md)

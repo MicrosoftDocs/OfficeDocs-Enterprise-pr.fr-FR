@@ -3,7 +3,7 @@ title: Recommandations relatives aux performances réseau dans le centre d’adm
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/20/2020
+ms.date: 03/31/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Vue d’ensemble des recommandations en matière de performances réseau dans le centre d’administration 365 de Microsoft (version préliminaire)
-ms.openlocfilehash: 16ef23810645bcd9719107b13d32909af25d4766
-ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
+ms.openlocfilehash: f2ff012d20c799925c571d8065e28859c4c81f71
+ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42890432"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081716"
 ---
 # <a name="network-performance-recommendations-in-the-microsoft-365-admin-center-preview"></a>Recommandations relatives aux performances réseau dans le centre d’administration Microsoft 365 (version préliminaire)
 
@@ -43,7 +43,7 @@ Les exemples de mesures et les emplacements de bureau doivent commencer à appar
 
 **Network Insights**, leurs recommandations de performances et évaluations réseau associées sont destinées à faciliter la conception des périmètres réseau pour vos emplacements de bureau. Chaque vue fournit des informations détaillées sur les caractéristiques de performances d’un problème commun spécifique pour chaque emplacement géographique où les utilisateurs accèdent à votre client. **Recommandations** en matière de performances pour chaque modèle Network Insight apporter des modifications de conception de l’architecture réseau spécifique que vous pouvez apporter pour améliorer l’expérience utilisateur liée à la connectivité réseau Office 365. L’évaluation du réseau montre l’impact de la connectivité réseau sur l’expérience utilisateur, ce qui permet de comparer différentes connexions réseau d’emplacement utilisateur.
 
-Les **évaluations de réseau** convertissent un agrégat de nombreuses métriques de performances réseau en un instantané de l’état de votre réseau d’entreprise, représenté par une valeur de points comprise entre 1-100. Les évaluations réseau sont étendues à la fois à l’ensemble du client et à chaque emplacement géographique à partir duquel les utilisateurs se connectent à votre client, en fournissant aux administrateurs Office 365 un moyen facile de saisir instantanément un Gestalt de l’état du réseau de l’entreprise et d’explorer rapidement vers le bas pour un rapport détaillé sur un emplacement Office global.
+Les **évaluations de réseau** convertissent un agrégat de nombreuses métriques de performances réseau en un instantané de l’état de votre réseau d’entreprise, représenté par une valeur de points comprise entre 1-100. Les évaluations réseau sont étendues à la fois à l’ensemble du client et à chaque emplacement géographique à partir duquel les utilisateurs se connectent à votre client, offrant ainsi aux administrateurs Office 365 un moyen facile de saisir instantanément un Gestalt de l’état du réseau de l’entreprise et d’accéder rapidement à un rapport détaillé sur un emplacement Office global.
 
 Les entreprises complexes disposant de plusieurs emplacements de bureau et d’architectures de périmètre réseau non négligeables peuvent tirer parti de ces informations lors de leur intégration initiale à Office 365 ou pour corriger les problèmes de performances réseau découverts avec la croissance de l’utilisation. Cette fonction n’est généralement pas nécessaire pour les petites entreprises qui utilisent Office 365, ni dans les entreprises qui disposent déjà d’une connectivité réseau simple et directe. Les entreprises disposant de plus de 500 utilisateurs et de plusieurs emplacements de bureau sont censées tirer le meilleur parti.
 
@@ -62,7 +62,7 @@ Les entreprises peuvent améliorer l’expérience utilisateur générale et sé
 
 Microsoft est parfois invité à enquêter sur les problèmes de performances réseau avec Office 365 pour les grandes entreprises et celles-ci ont fréquemment une cause principale liée à l’infrastructure de sortie du réseau des clients. Lors de la détection d’une cause racine commune d’un problème de périmètre réseau client, nous cherchons à identifier les mesures de test simples qui l’identifient. Un test avec un seuil de mesure qui identifie un problème spécifique est utile, car nous pouvons tester la même mesure dans n’importe quel emplacement, indiquer si cette cause première existe et la partager en tant que Network Insight avec l’administrateur.
 
-Certains aspects du réseau indiquent simplement un problème qui nécessite une nouvelle enquête. Un Network Insight où nous avons suffisamment de tests pour afficher une action corrective spécifique pour corriger la cause principale est mentionné comme une **action recommandée**. Ces recommandations, basées sur des métriques vivantes qui révèlent des valeurs situées en dehors d’un seuil prédéterminé, sont bien plus importantes que les conseils de bonne pratique générale, car ils sont spécifiques à votre environnement et affichent l’amélioration effective une fois que le des modifications recommandées ont été apportées.
+Certains aspects du réseau indiquent simplement un problème qui nécessite une nouvelle enquête. Un Network Insight où nous avons suffisamment de tests pour afficher une action corrective spécifique pour corriger la cause principale est mentionné comme une **action recommandée**. Ces recommandations, basées sur des métriques vivantes qui révèlent des valeurs situées en dehors d’un seuil prédéterminé, sont bien plus importantes que les conseils de bonne pratique générale, car ils sont spécifiques à votre environnement et affichent l’amélioration effective une fois que les modifications recommandées ont été apportées.
 
 ## <a name="network-performance-overview-in-the-microsoft-365-admin-center"></a>Vue d’ensemble des performances réseau dans le centre d’administration Microsoft 365
 
@@ -82,7 +82,7 @@ La sélection d’un emplacement de bureau ouvre une page de résumé spécifiqu
 
 ![Informations sur le réseau, détails par emplacement](Media/m365-mac-perf/m365-mac-perf-locations-plan-overview.png)
 
-La page de résumé des emplacements Office indique également l’évaluation du réseau de l’emplacement, l’historique de l’évaluation du réseau, une comparaison de l’évaluation de cet emplacement aux autres clients de la même ville, ainsi qu’une liste d’informations et de recommandations spécifiques que vous pouvez s’engager à améliorer les performances et la fiabilité du réseau. Les emplacements avec des recommandations spécifiques peuvent également inclure une amélioration potentielle de la latence.
+La page de résumé des emplacements Office indique également l’évaluation du réseau de l’emplacement, l’historique de l’évaluation du réseau, une comparaison de l’évaluation de cet emplacement aux autres clients de la même ville, ainsi qu’une liste d’informations et de recommandations spécifiques que vous pouvez entreprendre pour améliorer les performances et la fiabilité du réseau. Les emplacements avec des recommandations spécifiques peuvent également inclure une amélioration potentielle de la latence.
 
 Les comparaisons entre les clients de la même ville sont basées sur l’attente que tous les clients ont un accès égal aux fournisseurs de services réseau, à l’infrastructure de télécommunications et aux points de présence réseau Microsoft voisins.
 
@@ -120,7 +120,7 @@ Dans le fichier CSV, l’emplacement de ville découvert est étiqueté **ville*
 
    ![Message d’importation CSV prêt](Media/m365-mac-perf/m365-mac-perf-import-ready.png)
 
-## <a name="faq"></a>Forum aux questions
+## <a name="faq"></a>FAQ
 
 ### <a name="what-is-an-office-365-service-front-door"></a>Qu’est-ce qu’une trappe frontale de service Office 365 ?
 
@@ -145,4 +145,4 @@ L’emplacement de sortie Internet est l’emplacement où votre trafic réseau 
 
 [Outil d’intégration réseau Office 365 dans le centre d’administration M365 (version préliminaire)](office-365-network-mac-perf-onboarding-tool.md)
 
-[Confidentialité et conditions d’utilisation du réseau Office 365 (aperçu)](office-365-network-mac-perf-privacy.md)
+[Services d’emplacement de connectivité réseau Office 365 (préversion)](office-365-network-mac-location-services.md)

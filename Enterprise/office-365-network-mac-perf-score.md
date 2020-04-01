@@ -3,7 +3,7 @@ title: Évaluation du réseau Office 365 (préversion)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/04/2020
+ms.date: 03/31/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,22 +14,22 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Évaluation du réseau Office 365 (préversion)
-ms.openlocfilehash: 24ecea73d9ecb6ae73b26e42a25749c846e3a281
-ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
+ms.openlocfilehash: 280046487b116172430df1d15d4bc671fa708e68
+ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42890359"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081686"
 ---
 # <a name="office-365-network-assessment-preview"></a>Évaluation du réseau Office 365 (préversion)
 
-Dans la page 365 connectivité du centre d’administration 365 de Microsoft, les **évaluations réseau** convertissent un ensemble de nombreuses mesures de performances réseau en un instantané de l’état de votre réseau d’entreprise, représenté par une valeur de points comprise entre 1-100. Les évaluations réseau sont étendues à la fois à l’ensemble du client et à chaque emplacement géographique à partir duquel les utilisateurs se connectent à votre client, en fournissant aux administrateurs Office 365 un moyen facile de saisir instantanément un Gestalt de l’état du réseau de l’entreprise et d’explorer rapidement vers le bas pour un rapport détaillé sur un emplacement Office global.
+Dans la page 365 connectivité du centre d’administration 365 de Microsoft, les **évaluations réseau** convertissent un ensemble de nombreuses mesures de performances réseau en un instantané de l’état de votre réseau d’entreprise, représenté par une valeur de points comprise entre 1-100. Les évaluations réseau sont étendues à la fois à l’ensemble du client et à chaque emplacement géographique à partir duquel les utilisateurs se connectent à votre client, offrant ainsi aux administrateurs Office 365 un moyen facile de saisir instantanément un Gestalt de l’état du réseau de l’entreprise et d’accéder rapidement à un rapport détaillé sur un emplacement Office global.
 
 La valeur points d’évaluation réseau est une mesure moyenne de la latence, de la bande passante, de la vitesse de téléchargement et des mesures de qualité de la connexion compilées en direct au moment où elles sont affichées. Les mesures de performances des réseaux appartenant à Microsoft sont exclues de ces mesures afin de s’assurer que les résultats de l’évaluation ne sont pas ambigus et spécifiques au réseau d’entreprise.
 
 ![Valeur d’évaluation du réseau](Media/m365-mac-perf/m365-mac-perf-overview-score-top.png)
 
-Une évaluation réseau très faible suggère que les clients Office 365 auront des problèmes importants pour se connecter au client ou maintenir une expérience utilisateur réactive, tandis qu’une valeur élevée indique un réseau correctement configuré avec peu de performances continues. Problem. Une valeur de 80% représente une base saine, dans laquelle vous ne devez pas vous attendre à recevoir des plaintes d’utilisateur normales concernant la connectivité ou la réactivité d’Office 365 en raison des performances du réseau. À mesure que des améliorations de connectivité réseau itératives sont apportées, cette valeur augmente en fonction de l’expérience utilisateur.
+Une évaluation réseau très faible suggère que les clients Office 365 auront des problèmes importants pour se connecter au client ou maintenir une expérience utilisateur réactive, tandis qu’une valeur élevée indique un réseau correctement configuré avec peu de problèmes de performances. Une valeur de 80% représente une base saine, dans laquelle vous ne devez pas vous attendre à recevoir des plaintes d’utilisateur normales concernant la connectivité ou la réactivité d’Office 365 en raison des performances du réseau. À mesure que des améliorations de connectivité réseau itératives sont apportées, cette valeur augmente en fonction de l’expérience utilisateur.
 
 >[!IMPORTANT]
 >Les informations relatives au réseau, les recommandations en matière de performances et les évaluations dans le centre d’administration 365 de Microsoft sont actuellement en état d’aperçu et sont disponibles uniquement pour les locataires Office 365 qui ont été apportées dans le programme d’aperçu des fonctionnalités.
@@ -70,4 +70,4 @@ Pour Microsoft Teams, la qualité du réseau est mesurée en tant que latence UD
 
 [Outil d’intégration réseau Office 365 dans le centre d’administration M365 (version préliminaire)](office-365-network-mac-perf-onboarding-tool.md)
 
-[Confidentialité et conditions d’utilisation du réseau Office 365 (aperçu)](office-365-network-mac-perf-privacy.md)
+[Services d’emplacement de connectivité réseau Office 365 (préversion)](office-365-network-mac-location-services.md)

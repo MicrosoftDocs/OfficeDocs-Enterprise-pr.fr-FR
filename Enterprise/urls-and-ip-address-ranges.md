@@ -3,7 +3,7 @@ title: URL et plages d’adresses IP Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/25/2020
+ms.date: 03/30/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -24,17 +24,20 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: 'Résumé : Office 365 nécessite une connexion à Internet. Les points de terminaison ci-dessous doivent être accessibles pour les clients utilisant des plans Office 365, y compris GCC (Government Community Cloud).'
 hideEdit: true
-ms.openlocfilehash: 403e431f8706b0e27a8a1079f2409ffcd677a28e
-ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
+ms.openlocfilehash: 48f838a54a5239c43c1001d92588a931ab20fac2
+ms.sourcegitcommit: cb942f32da99eda6455756ce0fd409cf8ee9de3e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42979529"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43058977"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>URL et plages d’adresses IP Office 365
 
  **Résumé :** Office 365 nécessite une connexion à Internet. Les points de terminaison ci-dessous doivent être accessibles pour les clients utilisant des plans Office 365, y compris GCC (Government Community Cloud).
   
+> [!NOTE]
+> Dans le cadre de la réponse Microsoft à la situation du COVID-19, Microsoft a décrété un moratoire temporaire sur certaines modifications d’URL et d’adresses IP planifiées. Ce moratoire est destiné à fournir une assurance et une simplicité aux équipes informatiques client lors de la mise en œuvre d’optimisations de réseau recommandées dans les scénarios Office 365 de travail à domicile. Du 24 mars au 30 juin 2020, ce moratoire arrêtera les modifications des principaux services Office 365 (Exchange Online, SharePoint Online et Microsoft Teams) concernant les plages d’adresses IP et les URL incluses dans la catégorie Optimiser. Les modifications concernant d’autres catégories de point de terminaison se dérouleront normalement. Durant cette période, les clients peuvent utiliser les définitions de la catégorie Optimiser des point de terminaison de service Office 365 de façon statique pour effectuer des optimisations de réseau ciblées (telles que les réserves de bande passante ou la configuration d’un tunnel VPN partagé) avec un minimum de risques pour la connectivité Office 365 en raison de modifications de réseau côté cloud. Pour s’assurer qu’aucune interruption de service ne se produit à la fin de la période du moratoire, Microsoft recommande vivement aux clients d’implémenter des processus de gestion des modifications et/ou des processus automatisés pour les points de terminaison de service Office 365 à l’aide des conseils fournis dans [Gérer les points de terminaison Office 365](managing-office-365-endpoints.md).
+
 > [!NOTE]
 > Microsoft a publié un service web utilisant REST pour les entrées d’adresse IP et de FQDN sur cette page. Ce nouveau service vous permettra de configurer et de mettre à jour des périphériques de périmètre de réseau, tels que des pare-feu et serveurs proxy. Vous pouvez télécharger la liste des points de terminaison, la version actuelle de la liste ou des modifications spécifiques. Ce service remplace le document XML dont le lien est fourni sur cette page et qui est obsolète depuis le 2 octobre 2018. Pour essayer ce nouveau service, accédez au [service web](office-365-ip-web-service.md).
   

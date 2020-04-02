@@ -3,7 +3,7 @@ title: Se connecter à PowerShell Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/26/2020
+ms.date: 03/31/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,13 +16,13 @@ ms.custom:
 - O365ITProTrain
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
-description: 'Résumé : vous connecter à votre organisation Office 365 à l’aide de PowerShell Office 365 pour effectuer des tâches du centre d’administration à partir de la ligne de commande.'
-ms.openlocfilehash: a1031250919dfa7724bf44ac752684060422d85e
-ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
+description: Connectez-vous à votre organisation Office 365 à l’aide de PowerShell Office 365 pour effectuer les tâches d’administration à partir de la ligne de commande.
+ms.openlocfilehash: 642016f734a2a9d7e490d5905a3ed93d7f330ca9
+ms.sourcegitcommit: 7f025939c9dad676602bcd7693a8e356821fd456
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42979436"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43068756"
 ---
 # <a name="connect-to-office-365-powershell"></a>Se connecter à PowerShell Office 365
 
@@ -158,11 +158,17 @@ Si vous recevez des erreurs, vérifiez les conditions requises suivantes :
   ```
 
     Si le numéro de version renvoyé est inférieur à la valeur 1.0.8070.2, désinstallez le Module Microsoft Azure Active Directory pour Windows PowerShell, puis installez la dernière version à partir du lien fourni à l’étape 1.
-    
+
 - **Si un message d’erreur de connexion s’affiche, voir ** [Erreur « Connect-MsolService: Une exception de type a été levée »](https://go.microsoft.com/fwlink/p/?LinkId=532377).
     
+- **Si vous recevez un message d’erreur « Get-Item : Chemin introuvable », utilisez la commande suivante :** 
 
-## <a name="see-also"></a>Voir aussi
+  ```powershell
+  (dir "C:\Program Files\WindowsPowerShell\Modules\MSOnline").Name
+ 
+```
+
+## <a name="see-also"></a>Voir également
 
 - [Gérer Office 365 avec Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
 - [Mise en route d’Office 365 PowerShell](getting-started-with-office-365-powershell.md)

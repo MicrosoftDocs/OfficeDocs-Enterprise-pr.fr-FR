@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Synthèse : emplacements de données Office 365'
-ms.openlocfilehash: 004d055c08769524907651a56b1a885d44a111d0
-ms.sourcegitcommit: a59b35b0b2667738998333d25e2a61cd8d7a3e26
+ms.openlocfilehash: ae11127cfaa592ae4a3db0a342e6d68c85fe7774
+ms.sourcegitcommit: 9483bc02cf410e80b56fe898298bd26eef486e17
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42581603"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43076127"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -40,7 +40,13 @@ Recherchez des informations sur les engagements contractuels relatifs à l’emp
 
 Pour les emplacements de données Azure Active Directory, visitez [Mappage de données Azure Active Directory](https://go.microsoft.com/fwlink/p/?linkid=2092972).
 
-## <a name="faq"></a>Forum aux questions
+
+En raison des circonstances sans précédent entourant COVID-19 et de la nécessité de gérer la demande de services en ligne en Europe, si votre organisation est un établissement scolaire, nous pouvons déployer votre client Office 365 au sein de l’Union européenne (UE), l’Association européenne de libre-échange (AELE), le Royaume-Uni (UK), les États-Unis (USA) ou le Canada (CA), ou transférez vos données vers n’importe quel centre de données de l’UE, de l’AELE, de l’UK, des USA ou du CA.  Vos données peuvent ainsi être stockées au repos dans l’UE, l’AELE, le UK, les USA ou le CA.  Notre engagement envers la conformité, la confidentialité et la sécurité restent inchangés alors que nous mettons en œuvre des mesures prudentes et nécessaires pour maintenir la disponibilité du service.  Nous respectons toutes les lois applicables en relation avec les transferts de données.
+
+
+
+
+## <a name="faq"></a>FAQ
 
 ### <a name="how-does-microsoft-define-data"></a>Comment Microsoft définit-il des données ?
 
@@ -3579,7 +3585,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |

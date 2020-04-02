@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Décrit comment préparer la mise en service des utilisateurs vers Office 365 à l’aide de la synchronisation d’annuaires et des avantages à long terme de cette méthode.
-ms.openlocfilehash: 948db4d5dca8d5deb9844ff9a7ec652653a5ab6b
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d2eab22e360ae26543db1774c3b174647f30bcd6
+ms.sourcegitcommit: fce45e7373e5722e1068696565975853126666e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841171"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43093438"
 ---
 # <a name="prepare-for-directory-synchronization-to-office-365"></a>Préparer la synchronisation d’annuaires vers Office 365
 
@@ -113,7 +113,7 @@ Les attributs que vous devez préparer sont répertoriés ici :
   - La valeur de l’attribut doit être unique dans l’annuaire.
   
     > [!NOTE]
-    > Les traits de soulignement (« _ ») dans le nom synchronisé indiquent que la valeur d’origine de cet attribut contient des caractères non valides. La valeur d’origine peut contenir des lettres, des chiffres et les caractères !, #, $,%, &, \*',, +,-,/, =, ?, ^, _, ', {, |,} et ~. Pour plus d’informations sur cet attribut, consultez la rubrique [Exchange alias attribute](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps).
+    > Les traits de soulignement (« _ ») dans le nom synchronisé indiquent que la valeur d’origine de cet attribut contient des caractères non valides. Pour plus d’informations sur cet attribut, consultez la rubrique [Exchange alias attribute](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps).
     >
       
 - **proxyAddresses**

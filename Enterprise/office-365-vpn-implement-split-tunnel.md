@@ -3,7 +3,7 @@ title: Implémentation d'un tunnel VPN partagé pour Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/1/2020
+ms.date: 4/2/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Comment implémenter un tunnel VPN partagé pour Office 365
-ms.openlocfilehash: 028b2f35d1398f432c950c86330c2ee531cea02a
-ms.sourcegitcommit: fce45e7373e5722e1068696565975853126666e9
+ms.openlocfilehash: a0abc94d32887867ae11a0e3c768538bc223b583
+ms.sourcegitcommit: 7eb8b3b55a348eac8f03c97533b5d89388ed0ada
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43093448"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43117920"
 ---
 # <a name="implementing-vpn-split-tunnelling-for-office-365"></a>Implémentation d'un tunnel VPN partagé pour Office 365
 
@@ -226,7 +226,7 @@ Certains logiciels clients VPN autorisent la manipulation des itinéraires sur l
 
 Dans certains scénarios, souvent non liés à la configuration du client Teams, le trafic multimédia traverse également le tunnel VPN, même lorsque les itinéraires corrects sont en place. Si c’est le cas, vous pouvez utiliser une règle de pare-feu pour empêcher Teams d’utiliser le réseau privé virtuel (VPN) de façon suffisante.
 
-Pour que cela fonctionne dans 100 % de scénarios, vous pouvez également ajouter la plage d’adresses IP **13.107.60.1/32**. Cela ne devrait pas être nécessaire très prochainement en raison d'une mise à jour du dernier client de Teams qui doit être publié le **30 mars 2020**.
+Pour que cela fonctionne dans 100 % de scénarios, vous pouvez également ajouter la plage d’adresses IP **13.107.60.1/32**. Cela ne devrait pas être nécessaire très prochainement en raison d'une mise à jour du dernier client de Teams qui doit être publié début **avril 2020**. Nous mettrons à jour cet article avec les détails de la build dès que ces informations seront disponibles.
 
 Le trafic de signalisation est effectué sur HTTPs et n’est pas considéré comme étant sensible à la latence comme le trafic multimédia et est marqué comme **Autoriser ** dans les données URL/IP et peut par conséquent être routé par le biais du client VPN si vous le souhaitez.
 
@@ -270,6 +270,7 @@ Cette section fournit des liens vers des guides détaillés pour l’implémenta
 
 - **Cisco AnyConnect **: [Optimiser le tunnel mixte AnyConnect pour Office 365](https://www.cisco.com/c/en/us/support/docs/security/anyconnect-secure-mobility-client/215343-optimize-anyconnect-split-tunnel-for-off.html)
 - **Palo Alto GlobalProtect** : [optimisation du trafic Office 365 par tunnel VPN fractionné via exclusion d’accès](https://live.paloaltonetworks.com/t5/Prisma-Access-Articles/GlobalProtect-Optimizing-Office-365-Traffic/ta-p/319669)
+- **F5 Networks BIG-IP APM** : [optimiser le trafic Office 365 sur un accès à distance via des réseaux VPN lors de l’utilisation de BIG-IP APM](https://devcentral.f5.com/s/articles/SSL-VPN-Split-Tunneling-and-Office-365)
 
 ## <a name="faq"></a>FAQ
 

@@ -3,7 +3,7 @@ title: Implémentation d'un tunnel VPN partagé pour Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/2/2020
+ms.date: 4/3/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Comment implémenter un tunnel VPN partagé pour Office 365
-ms.openlocfilehash: a0abc94d32887867ae11a0e3c768538bc223b583
-ms.sourcegitcommit: 7eb8b3b55a348eac8f03c97533b5d89388ed0ada
+ms.openlocfilehash: 5cc8a4ecc124090c50e600a5edcec6d7362e6cf5
+ms.sourcegitcommit: 7c2c8e2e1303fc81362a4447b0a7be8609766a7b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43117920"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43131443"
 ---
 # <a name="implementing-vpn-split-tunnelling-for-office-365"></a>Implémentation d'un tunnel VPN partagé pour Office 365
 
@@ -331,6 +331,8 @@ Le port 80 est uniquement utilisé pour les opérations telles que la redirectio
 [Optimisation des performances de Microsoft Office 365 pour les utilisateurs résidant en Chine](office-365-networking-china.md)
 
 [D'autres méthodes pour les professionnels de la sécurité et de l’informatique pour optimiser les contrôles de sécurité modernes dans les scénarios de travail à distance d’aujourd’hui (blog de l'équipe de sécurité Microsoft)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
+
+[Améliorer les performances de VPN chez Microsoft : utiliser les profils VPN Windows 10 pour autoriser les connexions automatiques](https://www.microsoft.com/itshowcase/enhancing-remote-access-in-windows-10-with-an-automatic-vpn-profile)
 
 [Fonctionnement sur VPN : comment Microsoft maintient les employés travaillant à distance connectés](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)
 

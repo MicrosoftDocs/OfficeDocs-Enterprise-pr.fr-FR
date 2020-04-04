@@ -3,7 +3,7 @@ title: 'Présentation : la segmentation de tunnel VPN avec Office 365'
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 3/27/2020
+ms.date: 4/3/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Instructions d’utilisation de la segmentation de tunnel VPN avec Office 365 afin d’optimiser la connectivité d’Office 365 pour les utilisateurs distants.
-ms.openlocfilehash: 3ba52ecdb6e22c234cc0f208ae3ca40b3cb06b6d
-ms.sourcegitcommit: c081928170e2a56bc0627e5ec8174c1152fcc151
+ms.openlocfilehash: dc30f20b59321eeaf726485dbe39fef3ac4bba54
+ms.sourcegitcommit: 7c2c8e2e1303fc81362a4447b0a7be8609766a7b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43034850"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43131433"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunnelling"></a>Optimiser la connectivité d’Office 365 pour les utilisateurs distants à l’aide de la segmentation de tunnel VPN
 <!---
@@ -106,6 +106,8 @@ Dans de nombreux cas, cette implémentation peut être réalisée en quelques he
 [Optimisation des performances de Microsoft Office 365 pour les utilisateurs résidant en Chine](office-365-networking-china.md)
 
 [D'autres méthodes pour les professionnels de la sécurité et de l’informatique pour optimiser les contrôles de sécurité modernes dans les scénarios de travail à distance d’aujourd’hui (blog de l'équipe de sécurité Microsoft)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
+
+[Améliorer les performances de VPN chez Microsoft : utiliser les profils VPN Windows 10 pour autoriser les connexions automatiques](https://www.microsoft.com/itshowcase/enhancing-remote-access-in-windows-10-with-an-automatic-vpn-profile)
 
 [Fonctionnement sur VPN : comment Microsoft maintient les employés travaillant à distance connectés](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)
 

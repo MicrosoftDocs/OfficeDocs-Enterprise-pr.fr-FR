@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Connectez-vous à votre organisation Office 365 à l’aide de PowerShell Office 365 pour effectuer les tâches d’administration à partir de la ligne de commande.
-ms.openlocfilehash: 642016f734a2a9d7e490d5905a3ed93d7f330ca9
-ms.sourcegitcommit: 7f025939c9dad676602bcd7693a8e356821fd456
+ms.openlocfilehash: 00c4e303faa7a182a9bd5c859a09ad150fc0b8d4
+ms.sourcegitcommit: b1042fa2d02f1bc74586751c542776325d3a170f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43068756"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43170612"
 ---
 # <a name="connect-to-office-365-powershell"></a>Se connecter à PowerShell Office 365
 
@@ -163,9 +163,8 @@ Si vous recevez des erreurs, vérifiez les conditions requises suivantes :
     
 - **Si vous recevez un message d’erreur « Get-Item : Chemin introuvable », utilisez la commande suivante :** 
 
-  ```powershell
+```powershell
   (dir "C:\Program Files\WindowsPowerShell\Modules\MSOnline").Name
- 
 ```
 
 ## <a name="see-also"></a>Voir également

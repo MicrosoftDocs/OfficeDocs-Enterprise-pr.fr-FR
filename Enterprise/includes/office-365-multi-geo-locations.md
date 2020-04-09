@@ -10,7 +10,7 @@
 |Japon                        |JPN     |Centres de données situés en Asie de l’Est ou du Sud-Est|
 |Corée                        |KOR     |Centres de données situés en Asie de l’Est ou du Sud-Est|
 |Amérique du Nord                |NAM     |Centres de données situés aux États-Unis                    |
-|Afrique du Sud                 |ZAF     |(Bientôt disponible)                     |
-|Suisse                  |SWE     |(Bientôt disponible)                     |
-|Émirats arabes unis         |ARE     |(Bientôt disponible)                     |
+|Afrique du Sud                 |ZAF     |(emplacement des données eDiscovery bientôt disponible)|
+|Suisse                  |CHE     |(emplacement des données eDiscovery bientôt disponible)|
+|Émirats arabes unis         |ARE     |(emplacement des données eDiscovery bientôt disponible)|
 |Royaume-Uni               |GBR     |Centres de données situés en Europe                |

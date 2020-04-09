@@ -1,5 +1,5 @@
 ---
-title: Informations sur le réseau Office 365 (aperçu)
+title: Informations sur le réseau Microsoft 365 (aperçu)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,17 +13,17 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Informations sur le réseau Office 365 (aperçu)
-ms.openlocfilehash: 5064c45ffa552381ccdb6042d5e9d6f072f564aa
-ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
+description: Informations sur le réseau Microsoft 365 (aperçu)
+ms.openlocfilehash: baab4716ace0b15df5878d21987c037372a2754e
+ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081706"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43185755"
 ---
-# <a name="office-365-network-insights-preview"></a>Informations sur le réseau Office 365 (aperçu)
+# <a name="microsoft-365-network-insights-preview"></a>Informations sur le réseau Microsoft 365 (aperçu)
 
-Les informations sur le **réseau** sont des mesures de performances en direct collectées à partir de votre client Office 365 et disponibles uniquement par les utilisateurs administratifs de votre client. Les informations s’affichent dans le centre d’administration Microsoft 365 <https://portal.microsoft.com/adminportal/home#/networkperformance>à l’adresse.
+Les informations sur le **réseau** sont des mesures de performances en direct collectées à partir de votre client Microsoft 365 et disponibles uniquement par les utilisateurs administratifs de votre client. Les informations s’affichent dans le centre d’administration Microsoft 365 <https://portal.microsoft.com/adminportal/home#/networkperformance>à l’adresse.
 
 Les informations sont destinées à vous aider à concevoir des périmètres réseau pour vos emplacements de bureau. Chaque vue fournit des informations détaillées sur les caractéristiques de performances d’un problème commun spécifique pour chaque emplacement géographique où les utilisateurs accèdent à votre client.
 
@@ -36,11 +36,11 @@ Cinq aspects spécifiques du réseau peuvent être affichés pour chaque emplace
 - [Vitesse de téléchargement faible à partir de la porte d’entrée SharePoint](#low-download-speed-from-sharepoint-front-door)
 
 >[!IMPORTANT]
->Les informations relatives au réseau, les recommandations en matière de performances et les évaluations dans le centre d’administration 365 de Microsoft sont actuellement en état d’aperçu et sont disponibles uniquement pour les locataires Office 365 qui ont été apportées dans le programme d’aperçu des fonctionnalités.
+>Les informations sur le réseau, les recommandations en matière de performances et les évaluations dans le centre d’administration 365 de Microsoft sont actuellement en état d’aperçu et sont uniquement disponibles pour les locataires Microsoft 365 qui ont été apportées dans le programme d’aperçu des fonctionnalités.
 
 ## <a name="backhauled-network-egress"></a>Sortie réseau retractée
 
-Cette vue s’affiche si le service réseau Insights détecte que la distance entre un emplacement utilisateur donné et la sortie réseau est supérieure à 500 milles (800 kilomètres), ce qui indique que le trafic Office 365 est replacé vers un périphérique ou un proxy Internet Edge commun.
+Cette vue s’affiche si le service réseau Insights détecte que la distance entre un emplacement utilisateur donné et la sortie réseau est supérieure à 500 kilomètres (800 kilomètres), ce qui indique que le trafic Microsoft 365 est replacé vers un périphérique ou un proxy Internet Edge commun.
 
 Cette vue est abrégée en « sortie » dans certains affichages de résumés.
 
@@ -54,7 +54,7 @@ Les détails de cette analyse incluent l’emplacement du bureau, le pourcentage
 
 ### <a name="what-should-i-do"></a>Que dois-je faire ?
 
-Pour cette vue d’ensemble, nous recommandons un accès réseau plus proche de l’emplacement du bureau afin que la connectivité puisse acheminer de façon optimale le réseau mondial de Microsoft et le service Office 365. Une sortie étroite du réseau vers les bureaux des utilisateurs permet également d’améliorer les performances à l’avenir à mesure que Microsoft étend à la fois les points de présence réseau et les portes frontales du service Office 365.
+Pour cette vue d’ensemble, nous recommandons un accès réseau plus proche de l’emplacement du Bureau de sorte que la connectivité puisse acheminer les performances de façon optimale vers le réseau mondial de Microsoft et vers le service frontal Microsoft 365 service le plus proche. Une sortie étroite du réseau vers les bureaux des utilisateurs permet également d’améliorer les performances à l’avenir à mesure que Microsoft étend à la fois les points de présence réseau et les portes frontales du service Microsoft 365.
 
 Pour plus d’informations sur la façon de résoudre ce problème, reportez-vous à la rubrique [sortie locale des connexions réseau](office-365-network-connectivity-principles.md#egress-network-connections-locally) dans [Office 365 principes de connectivité réseau](office-365-network-connectivity-principles.md).
 
@@ -68,11 +68,11 @@ Cette vue est abrégée en « pairs » dans certains affichages de résumés.
 
 ### <a name="what-does-this-mean"></a>Scénario
 
-Cette vue d’ensemble examine les performances totales des clients Office 365 dans la même ville que cet emplacement de bureau. Cette vue s’affiche si la latence moyenne de vos utilisateurs est supérieure de 10% à la latence moyenne des clients voisins.
+Cette vue d’ensemble examine les performances totales des clients Microsoft 365 dans la même ville que cet emplacement de bureau. Cette vue s’affiche si la latence moyenne de vos utilisateurs est supérieure de 10% à la latence moyenne des clients voisins.
 
 ### <a name="what-should-i-do"></a>Que dois-je faire ?
 
-Il peut y avoir plusieurs raisons à cette condition, notamment la latence de votre réseau d’entreprise ou de votre fournisseur de services Internet, des goulots d’étranglement ou des problèmes de conception de l’architecture. Examinez la latence entre chaque tronçon de l’itinéraire entre votre réseau d’entreprise et le volet frontal Office 365 actuel. Pour plus d’informations, consultez la rubrique [Office 365 Network Connectivity principes](office-365-network-connectivity-principles.md).
+Il peut y avoir plusieurs raisons à cette condition, notamment la latence de votre réseau d’entreprise ou de votre fournisseur de services Internet, des goulots d’étranglement ou des problèmes de conception de l’architecture. Examinez la latence entre chaque tronçon de l’itinéraire entre votre réseau Office et le porte-avant Microsoft 365 actuel. Pour plus d’informations, consultez la rubrique [Office 365 Network Connectivity principes](office-365-network-connectivity-principles.md).
 
 ## <a name="use-of-a-non-optimal-exchange-online-service-front-door"></a>Utilisation d’un service frontal Exchange Online non optimal
 
@@ -122,7 +122,7 @@ Pour améliorer la vitesse de téléchargement, vous devrez peut-être augmenter
 
 ## <a name="china-user-optimal-network-egress"></a>Sortie du réseau chinois utilisateur optimal
 
-Cette vue s’affiche si votre organisation a des utilisateurs en Chine se connectent à votre client Office 365 dans d’autres emplacements géographiques. 
+Cette vue s’affiche si votre organisation a des utilisateurs en Chine se connectent à votre client Microsoft 365 dans d’autres emplacements géographiques. 
 
 ### <a name="what-does-this-mean"></a>Scénario
 
@@ -145,8 +145,8 @@ Pour plus d’informations sur la façon d’atténuer les problèmes de perform
 
 [Recommandations relatives aux performances réseau dans le centre d’administration Microsoft 365 (version préliminaire)](office-365-network-mac-perf-overview.md)
 
-[Évaluation du réseau Office 365 (préversion)](office-365-network-mac-perf-score.md)
+[Microsoft 365 Network Assessment (aperçu)](office-365-network-mac-perf-score.md)
 
-[Outil d’intégration réseau Office 365 dans le centre d’administration M365 (version préliminaire)](office-365-network-mac-perf-onboarding-tool.md)
+[Outil d’intégration réseau Microsoft 365 dans le centre d’administration M365 (version préliminaire)](office-365-network-mac-perf-onboarding-tool.md)
 
-[Services d’emplacement de connectivité réseau Office 365 (préversion)](office-365-network-mac-location-services.md)
+[Services d’emplacement de connectivité réseau Microsoft 365 (aperçu)](office-365-network-mac-location-services.md)

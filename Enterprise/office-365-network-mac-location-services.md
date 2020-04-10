@@ -1,5 +1,5 @@
 ---
-title: Services d’emplacement de connectivité réseau Office 365 (préversion)
+title: Services d’emplacement de connectivité réseau Microsoft 365 (aperçu)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,17 +13,17 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Services d’emplacement de connectivité réseau Office 365 (préversion)
-ms.openlocfilehash: 6deb964955689416219c5b9350ea150ecd4f3b7a
-ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
+description: Services d’emplacement de connectivité réseau Microsoft 365 (aperçu)
+ms.openlocfilehash: 13ca35afe4bd375482a9fc924801e240c361bb6b
+ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081809"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43185725"
 ---
-# <a name="office-365-network-connectivity-location-services-preview"></a>Services d’emplacement de connectivité réseau Office 365 (préversion)
+# <a name="microsoft-365-network-connectivity-location-services-preview"></a>Services d’emplacement de connectivité réseau Microsoft 365 (aperçu)
 
-Le centre d’administration Microsoft 365 affiche maintenant des informations sur le **réseau et des recommandations**en matière de performances, qui sont des mesures de performances actives collectées à partir de votre client Office 365 et disponibles uniquement par les utilisateurs administratifs de votre client. La connectivité du réseau d’entreprise est conçue par emplacement de bureau via un emplacement réseau sortant vers Internet. La connectivité cliente d’Office 365 utilise cette route, puis sur Internet pour les serveurs Front Door de Microsoft service. L’identification des emplacements Office est essentielle pour pouvoir afficher ces informations sur le réseau.
+Le centre d’administration Microsoft 365 affiche maintenant des informations sur le **réseau et des recommandations**en matière de performances, qui sont des mesures de performances actives collectées à partir de votre client Microsoft 365 et disponibles uniquement par les utilisateurs administratifs de votre client. La connectivité du réseau d’entreprise est conçue par emplacement de bureau via un emplacement réseau sortant vers Internet. La connectivité client Microsoft 365 utilise cette route, puis sur Internet pour les serveurs Front Door de Microsoft. L’identification des emplacements Office est essentielle pour pouvoir afficher ces informations sur le réseau.
 
 ## <a name="location-in-network-measurements"></a>Emplacement dans les mesures du réseau
 

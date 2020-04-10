@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Explication des fonctionnalités de création de rapports dans Office 365.
-ms.openlocfilehash: 51ae09471b748b6e40af5a5b02b23f755908efff
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 7816ed231a3e38f618fb3f63f77dc24c9eed37c3
+ms.sourcegitcommit: 3aa6c61242c5691e3180a474ad059bd84c86dc9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41842031"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43206551"
 ---
 # <a name="office-365-reporting-features"></a>Fonctionnalités de création de rapports Office 365 
 
@@ -30,7 +30,7 @@ La fonctionnalité de rapports dans Office 365 fournit différents rapports d’
 
 ## <a name="office-365-reports-dashboard"></a>Tableau de bord des rapports Office 365
 
-Le tableau de bord rapports de la version d’évaluation du centre d’administration Microsoft 365 affiche les activités d’utilisation dans Office 365. Les administrateurs globaux d’Office 365, ou un administrateur Exchange Online, SharePoint Online ou Skype entreprise, peuvent obtenir un aperçu précis de l’utilisation de ce service. Par exemple, le nombre d’utilisateurs dans un service Office 365 particulier, le nombre d’utilisateurs ayant activé Office professionnel plus et la quantité de courrier circulant dans l’organisation. Les rapports sont disponibles pour les 7, 30, 90 et 180 derniers jours.
+Le tableau de bord rapports de la version d’évaluation du centre d’administration Microsoft 365 affiche les activités d’utilisation dans Office 365. Les administrateurs globaux d’Office 365, ou un administrateur Exchange Online, SharePoint Online ou Skype entreprise, peuvent obtenir un aperçu précis de l’utilisation de ce service. Par exemple, le nombre d’utilisateurs dans un service Office 365 particulier, le nombre d’utilisateurs ayant activé Office 365 ProPlus et le nombre de messages circulant dans l’organisation. Les rapports sont disponibles pour les 7, 30, 90 et 180 derniers jours.
 
 Les rapports suivants sont disponibles :
 

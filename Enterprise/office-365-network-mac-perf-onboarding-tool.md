@@ -3,7 +3,7 @@ title: Outil d’intégration réseau Microsoft 365 dans le centre d’administr
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 04/08/2020
+ms.date: 04/10/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,16 +14,19 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Outil d’intégration réseau Microsoft 365 dans le centre d’administration M365 (version préliminaire)
-ms.openlocfilehash: 502ee24c458d4681b555f65f28d4928cae2c9498
-ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
+ms.openlocfilehash: f59158f2c4365aa1d2a8bd34c0d465f1c5460449
+ms.sourcegitcommit: 6bcd8731f089feb91a58a946e89dbdc7f5e7d17b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43185735"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225697"
 ---
 # <a name="microsoft-365-network-onboarding-tool-in-the-m365-admin-center-preview"></a>Outil d’intégration réseau Microsoft 365 dans le centre d’administration M365 (version préliminaire)
 
 L’outil d’intégration réseau Microsoft 365 se trouve à <https://connectivity.office.com>l’adresse. Il s’agit d’un outil complémentaire pour les informations sur le réseau et les informations de score réseau disponibles dans le centre d’administration 365 de Microsoft sous **Health | Menu performances du réseau** .
+
+>[!NOTE]
+>L’outil d’intégration prend en charge les locataires dans le commerce WW et GCC modéré, mais pas GCC High, DoD, Germany ou Chine.
 
 Le réseau Insights dans le centre d’administration 365 de Microsoft est basé sur les mesures de produit pour votre client Microsoft 365. En comparaison, le réseau Insights de l’outil d’intégration réseau Microsoft 365 est exécuté localement dans l’outil. Les tests pouvant être effectués dans-le produit sont limités et l’exécution de tests locaux sur l’utilisateur permet de collecter davantage de données, ce qui donne lieu à des analyses plus approfondies. Envisagez ensuite que le réseau Insights dans le centre d’administration 365 de Microsoft indique qu’il existe un problème de réseau pour l’utilisation de Microsoft 365 à un emplacement de bureau spécifique. L’outil d’intégration réseau Microsoft 365 peut vous aider à identifier la cause première de ce problème à l’aide d’une action d’amélioration des performances réseau recommandée.
 
@@ -142,7 +145,7 @@ Une porte de service frontale Microsoft 365 optimale est celle qui est la plus p
 
 L’emplacement de sortie Internet est l’emplacement où votre trafic réseau quitte votre réseau d’entreprise et se connecte à Internet. Elle est également identifiée comme l’emplacement où vous avez un périphérique de traduction d’adresses réseau (NAT) et généralement l’endroit où vous vous connectez avec un fournisseur de services Internet (ISP). Si vous voyez une longue distance entre votre emplacement et votre emplacement Internet sortant, cela peut indiquer une sorte de trajet WAN important.
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Recommandations relatives aux performances réseau dans le centre d’administration Microsoft 365 (version préliminaire)](office-365-network-mac-perf-overview.md)
 

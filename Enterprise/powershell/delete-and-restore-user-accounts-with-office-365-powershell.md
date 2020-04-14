@@ -17,12 +17,12 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
 description: Découvrez comment utiliser Office 365 PowerShell pour supprimer des comptes d'utilisateur Office 365.
-ms.openlocfilehash: 5c69d69a61b3d3299f34a46c32d5575eae7b908a
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: ea803d82bb54e5430ceb9a59e8c04a0f72b200fc
+ms.sourcegitcommit: 069f56455252d6f4001ec0ecee792b83b585e692
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841544"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43237805"
 ---
 # <a name="delete-user-accounts-with-office-365-powershell"></a>Supprimer des comptes d’utilisateurs avec Office 365 PowerShell
 
@@ -45,9 +45,9 @@ Remove-AzureADUser -ObjectID fabricec@litwareinc.com
 ```
 
 > [!NOTE]
-> Le paramètre **- ObjectID** de la cmdlet **Remove-AzureAD** accepte le nom de compte, également appelé Nom d’utilisateur principal, ou l’ID d’objet du compte.
+> Le paramètre **-ObjectID** de la cmdlet **Remove-AzureADUser** accepte le nom de connexion du compte, également appelé nom d’utilisateur principal, ou l’ID d’objet du compte.
   
-Pour afficher le nom du compte à partir du nom de l’utilisateur, utilisez les commandes suivantes:
+Pour afficher le nom du compte à partir du nom de l’utilisateur, utilisez les commandes suivantes :
   
 ```powershell
 $userName="<User name>"
@@ -117,6 +117,6 @@ Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
 
 [Gérer les comptes d’utilisateur, les licences et les groupes avec Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Gérer Office 365 avec Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
+[Gérer Office 365 avec Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
   
 [Mise en route d'Office 365 Powershell](getting-started-with-office-365-powershell.md)

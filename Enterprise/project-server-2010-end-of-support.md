@@ -3,7 +3,7 @@ title: Feuille de route Project Server 2010 end-support
 ms.author: efrene
 author: efrene
 manager: pamg
-ms.date: 08/21/2019
+ms.date: 04/14/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,19 +17,19 @@ search.appverid:
 - ZPJ120
 - PJU120
 - PJW120
-description: Les fins de prise en charge de Project Server 2010 se terminent le 13 octobre 2020. Utilisez cet article pour effectuer une mise à niveau vers Project Online ou une version plus récente de Project Server en local.
-ms.openlocfilehash: 158cf7476a8d80d0024cf4093d0d20fc884811e0
-ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
+description: Les fins de prise en charge de Project Server 2010 se terminent le 13 avril 2021. Utilisez cet article pour effectuer une mise à niveau vers Project Online ou une version plus récente de Project Server en local.
+ms.openlocfilehash: b9cb6c08a2eacc794ace5f9d983120c29820df14
+ms.sourcegitcommit: ae9220b36041395a786a48d04c09eafd8ebe76d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42979516"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43240524"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Feuille de route pour la fin de la prise en charge de Project Server 2010
 
 *Cet article est valable pour Office 365 Entreprise et Microsoft 365 Entreprise*.
 
-Project Server 2010 atteindra la fin de la prise en charge le **13 octobre 2020**. Si vous utilisez actuellement Project Server 2010, Notez que les autres produits associés ont les dates de fin de prise en charge suivantes :
+Project Server 2010 atteindra la fin de la prise en charge le **13 avril 2021**. Cette date a été étendue à partir de la date de fin de prise en charge précédente du 13 octobre 2020. Si vous utilisez actuellement Project Server 2010, Notez que les autres produits associés ont les dates de fin de prise en charge suivantes :
   
 |**Produit**|**fin de la date de prise en charge**|
 |:-----|:-----|
@@ -66,12 +66,37 @@ Voici les deux chemins que vous pouvez suivre pour éviter la fin de la prise en
 ![Chemins de mise à niveau vers Project Server 2010](./media/project-server-2010-end-of-support/project-server-2010-end-of-support-timeline.png)
 
     
-|**Pourquoi choisir de migrer vers Project Online ?**|**Pourquoi choisir de migrer vers Project Server 2019 ?**|
+
+
+|**Pourquoi choisir de migrer vers Project Server 2019 ?**|**Pourquoi choisir de migrer vers Project Online ?**|
 |:-----|:-----|
-| J’ai des utilisateurs mobiles ou distants.  <br/>  Les coûts de migration des serveurs locaux constituent une préoccupation majeure (matériel, logiciel, heures et efforts à mettre en œuvre, etc.).  <br/>  Après la migration, les coûts de maintenance de mon environnement sont importants (par exemple, mises à jour automatiques, temps de fonctionnement garanti, etc.).  <br/> | Les règles d’entreprise m’empêchent de faire fonctionner mon entreprise dans le Cloud.  <br/>  J’ai besoin de contrôler les mises à jour de mon environnement.  <br/> |
+|Les règles d’entreprise m’empêchent de faire fonctionner mon entreprise dans le Cloud.  <br/>  J’ai besoin de contrôler les mises à jour de mon environnement.  <br/> | J’ai des utilisateurs mobiles ou distants.  <br/>  Les coûts de migration des serveurs locaux constituent une préoccupation majeure (matériel, logiciel, heures et efforts à mettre en œuvre, etc.).  <br/>  Après la migration, les coûts de maintenance de mon environnement sont importants (par exemple, mises à jour automatiques, temps de fonctionnement garanti, etc.).  <br/>  |
+
    
 > [!NOTE]
 > Pour plus d’informations sur les options de navigation à partir de vos serveurs Office 2010, reportez-vous [à ressources pour vous aider à effectuer une mise à niveau à partir de serveurs et clients office 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-office-2010-servers-and-products). Notez que Project Server ne prend pas en charge une configuration hybride, car Project Server et Project Online ne peuvent pas partager la même liste de ressources. 
+
+### <a name="what-are-my-options-for-project-client"></a>Quelles sont les options de mon client Project ?
+Si vous utilisez Project Professionnel 2010 ou Project standard 2010 et que vous souhaitez explorer vos options de migration, vous avez le choix entre :
+- Passer à une version plus récente de Project Professionnel ou de Project standard.
+- Passage à une solution en ligne telle que Project Online ou Project pour le Web.
+ 
+#### <a name="moving-to-a-newer-version-of-project-client"></a>Passage à une version plus récente du client Project
+
+Si vous effectuez une migration à partir de Project standard 2010, vous pouvez migrer vers une version plus récente de Project standard (Project standard 2016 ou Project standard 2019).  Nous vous recommandons de passer à la version la plus récente afin de tirer parti des fonctionnalités et fonctionnalités les plus récentes. Par ailleurs, la migration vers une version moins récente (Project standard 2016) signifie que vous devrez migrer à partir de cette version plus tôt car sa fin de prise en charge arrivera à son terme.
+
+De même, si vous effectuez une migration à partir de Project Professionnel 2010, vous pouvez choisir de migrer vers une version plus récente (Project Professionnel 2019 ou Project Professionnel 2016). Nous vous recommandons de passer à la version la plus récente, si possible.  Si vous utilisez Project professionnel pour vous connecter à Project Server, assurez-vous d’effectuer la migration vers une version de Project Professionnel prise en charge pour la connexion à la version de Project Server que vous utilisez.
+
+Project Professionnel 2010 les utilisateurs peuvent également choisir de migrer vers le client de bureau Project online. Il s’agit d’une version basée sur les abonnements de Project Professional 2019, qui est incluse dans les abonnements de plan de projet 3 et de plan de projet 5. 
+
+#### <a name="moving-to-an-online-solution"></a>Passage à une solution en ligne
+
+Vous pouvez également choisir de migrer de Project Professionnel 2010 ou Project standard 2010 vers les solutions en ligne basées sur les abonnements d’un projet. Project Plan 3 et plan 5 incluent Project Online et la dernière offre Cloud, [Project pour le Web](https://support.office.com/article/what-can-you-do-with-project-for-the-web-b30f5442-be5f-43d2-9072-c95bff778ea1). Les deux proposent un certain nombre de nouvelles fonctionnalités et de nombreux avantages qui méritent d’être explorés.
+
+Pour plus d’informations sur les fonctionnalités incluses dans les deux, ainsi que sur les licences de plan de projet dans lesquelles elles sont incluses, voir la [Description du service Microsoft Project](https://docs.microsoft.com/office365/servicedescriptions/project-online-service-description/project-online-service-description).
+
+
+
   
 ## <a name="important-considerations-you-need-to-make-when-planning-to-migrate-from-project-server-2010"></a>Éléments importants à prendre en compte lors de la planification de la migration à partir de Project Server 2010
 
@@ -81,7 +106,7 @@ Vous devez tenir compte des éléments suivants lors de la planification de la m
     
 - **Planifiez vos personnalisations** -sachez que la plupart des personnalisations que vous travaillez dans votre environnement project Server 2010 risquent de ne pas fonctionner lors de la migration vers project Server 2019 ou Project online. Il existe des différences importantes en matière d’architecture Project Server entre les versions, ainsi que les systèmes d’exploitation, les serveurs de bases de données et les navigateurs Web clients requis qui sont pris en charge pour fonctionner avec la version la plus récente. Préparez-vous à tester ou à recréer vos personnalisations selon vos besoins dans votre nouvel environnement. La planification de votre mise à niveau permettra également de vérifier si une personnalisation spécifique est réellement nécessaire lorsque vous avancez. [Créer un plan pour les personnalisations actuelles lors de la mise à niveau vers SharePoint 2013]( https://docs.microsoft.com/SharePoint/upgrade-and-update/create-a-plan-for-current-customizations-during-upgrade-to-sharepoint-2013) dispose de certaines informations générales sur l’évaluation et la planification de vos personnalisations actuelles lors de la mise à niveau. 
     
-- **Temps et patience** : la planification, l’exécution et le test de la mise à niveau prennent un peu de temps et de travail, en particulier si vous effectuez une mise à niveau vers Project Server 2019. Par exemple, si vous effectuez une migration de Project Server 2010 vers Project Server 2019, vous devez d’abord effectuer une migration de Project Server 2010 vers Project Server 2013, puis vérifier vos données, puis effectuer la même opération lorsque vous migrez vers chaque version successive (vers Project Serveur 2016, puis sur Project Server 2019). Vous pouvez vérifier auprès d’un fournisseur de solutions Microsoft Comment comparer vos coûts estimés avec leurs estimations de la durée nécessaire à leur exécution et à quel coût. 
+- **Temps et patience** : la planification, l’exécution et le test de la mise à niveau prennent un peu de temps et de travail, en particulier si vous effectuez une mise à niveau vers Project Server 2019. Par exemple, si vous effectuez une migration de Project Server 2010 vers Project Server 2019, vous devez d’abord effectuer une migration de Project Server 2010 vers Project Server 2013, puis vérifier vos données, puis effectuer la même opération lorsque vous effectuez une migration vers chaque version successive (vers Project Server 2016, puis vers Project Server 2019). Vous pouvez vérifier auprès d’un fournisseur de solutions Microsoft Comment comparer vos coûts estimés avec leurs estimations de la durée nécessaire à leur exécution et à quel coût. 
     
 ## <a name="migrate-to-project-online"></a>Migrer vers Project Online
 

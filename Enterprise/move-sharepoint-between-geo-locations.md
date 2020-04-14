@@ -13,12 +13,12 @@ ms.collection:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Découvrez comment déplacer un site OneDrive vers un autre emplacement géographique.
-ms.openlocfilehash: cf7d0bb73013c776b8cd67579aca334114820743
-ms.sourcegitcommit: 8578eb35b83a38fbf8ae7344e2128ddb6458fe16
+ms.openlocfilehash: 8a842f32091f84d64522526ad5407af8cfd780a9
+ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43175042"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43185715"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Déplacer un site SharePoint vers un autre emplacement géographique
 
@@ -190,17 +190,6 @@ Le client OneNote Win32 et l’application UWP (plateforme Windows universelle) 
 ### <a name="teams-applicable-to-office-365-group-connected-sites"></a>Microsoft Teams (applicable aux sites connectés à un groupe Office 365)
 
 Une fois le déplacement géographique de site SharePoint terminé, les utilisateurs ont accès aux fichiers du site de groupe Office 365 sur leur application Teams. Par ailleurs, les fichiers partagés via une conversation Teams à partir de leur site avant le déplacement géographique continuent également de fonctionner après le déplacement.
-
-Problèmes connus :
-
-|Problème|Solution de contournement|
-|:----|:---------|
-|Les fichiers présents dans l’onglet Fichiers avant le déplacement géographique ne peuvent pas être ouverts de l’intérieur de Teams.|Ouvrez le fichier à partir de SharePoint.|
-|Les fichiers qui ont été partagés dans les conversations avant le déplacement géographique ne s’ouvrent pas dans l’application de bureau Teams.|Ouvrez le fichier à partir de l’onglet Fichiers.|
-|L'onglet Fichiers du canal peut ne pas s'ouvrir lors de la première visite après le déplacement géographique.|Consultez à nouveau l'onglet Fichiers.|
-|Le chargement de fichiers dans la conversation de canal peut ne pas fonctionner après le déplacement du site.|Chargez des fichiers via l’onglet Fichiers.|
-|La recherche de fichiers dans Teams n’affiche pas les résultats après le déplacement géographique.|Recherchez des fichiers via l'onglet Fichiers.|
-|L’affichage de Microsoft Teams dans l’application Fichiers (navigation de gauche) risque de ne pas afficher les fichiers tant que l’onglet Fichiers du site déplacé géographiquement n’est pas actualisé.|Consultez l’onglet Fichiers pour le site qui a été déplacé.|
 
 ### <a name="sharepoint-mobile-app-iosandroid"></a>Application SharePoint Mobile (iOS/Android)
 

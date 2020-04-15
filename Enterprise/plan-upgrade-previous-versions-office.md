@@ -3,7 +3,7 @@ title: Planifier votre mise à niveau à partir de serveurs et clients Office 20
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/16/2019
+ms.date: 04/14/2020
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -15,18 +15,18 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: Si vous utilisez Office 2007 ou Office 2010, il est temps de planifier votre mise à niveau. Ne vous êtes pas bloqué avec des applications et des serveurs obsolètes et non pris en charge. Utilisez ces ressources pour commencer votre plan.
-ms.openlocfilehash: e970546790f290cd2d075adba7628188d60ef19a
-ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
+ms.openlocfilehash: 1b32af6e09b3a8a5830fa59dc6ec6de1060297e0
+ms.sourcegitcommit: 37674c1414175b49d59000b56fa685c05faabf35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42605613"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43503802"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planifiez votre mise à jour des serveurs et clients Office 2007 et Office 2010
 
 *Cet article est valable pour Office 365 Entreprise et Microsoft 365 Entreprise*.
 
-Si votre organisation utilise des versions antérieures des produits et serveurs Office, il est très utile de commencer à planifier votre mise à niveau. Les produits et services Office 2007 ont atteint leur [fin de prise en charge](upgrade-from-office-2007-servers-and-products.md). Les produits et services Office 2010 (notamment Office 2010, Exchange 2010, SharePoint 2010 et Project Server 2010) atteindront leur expiration le **13 octobre 2020**. Utilisez les ressources de cette section pour commencer.
+Si votre organisation utilise des versions antérieures des produits et serveurs Office, il est très utile de commencer à planifier votre mise à niveau. Les produits et services Office 2007 ont atteint leur [fin de prise en charge](upgrade-from-office-2007-servers-and-products.md). Office 2010 et Exchange 2010 atteindront leur fin d’assistance le **13 octobre 2020**. SharePoint 2010 et Project Server 2010 atteindront leur fin d’assistance le **13 avril 2021**. Utilisez les ressources de cette section pour commencer.
 
 Pour plus d’informations, consultez la rubrique [mise à niveau des serveurs et des clients Office 2010](upgrade-from-office-2010-servers-and-products.md) .
 
@@ -88,7 +88,7 @@ Vous pouvez également choisir de ne pas effectuer la mise à niveau pour le mom
 
 [Microsoft 365](https://www.microsoft.com/microsoft-365) est la combinaison d’Office 365, Windows 10 et Enterprise Mobility + Security (EMS), qui fournit une solution intelligente et intelligente permettant à chacun d’être créatif et de collaborer en toute sécurité. 
   
-Bien que vous puissiez migrer vos serveurs et clients Office 2007 ou Office 2010 vers Office 365, Microsoft 365 inclut les licences et les fonctionnalités qui permettent de s’assurer que votre organisation fonctionne sur le dernier système d’exploitation Windows et que vos périphériques, y compris Windows, iOS et Android sont des abonnements et des stratégies qui nécessitent une authentification et une protection des données. En outre, Windows 10 et votre logiciel client Office 365 ProPlus sont mis à jour de façon continue pour inclure les fonctionnalités et mises à jour de sécurité les plus récentes.
+Bien que vous puissiez migrer vos serveurs et clients Office 2007 ou Office 2010 vers Office 365, Microsoft 365 inclut les licences et les fonctionnalités qui vous permettent de vous assurer que votre organisation fonctionne sur le dernier système d’exploitation Windows et que vos appareils, y compris Windows, iOS et Android, sont enregistrés et protégés par des stratégies nécessitant une authentification et une protection des données. En outre, Windows 10 et votre logiciel client Office 365 ProPlus sont mis à jour de façon continue pour inclure les fonctionnalités et mises à jour de sécurité les plus récentes.
   
 Microsoft 365 est le moyen de transformer numériquement votre entreprise avec des appareils et des expériences de productivité constamment améliorés, activés et sécurisés par le Cloud Microsoft.
   

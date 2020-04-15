@@ -18,12 +18,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: Les fins de prise en charge de Project Server 2010 se terminent le 13 avril 2021. Utilisez cet article pour effectuer une mise à niveau vers Project Online ou une version plus récente de Project Server en local.
-ms.openlocfilehash: b9cb6c08a2eacc794ace5f9d983120c29820df14
-ms.sourcegitcommit: ae9220b36041395a786a48d04c09eafd8ebe76d0
+ms.openlocfilehash: 3c60763576d75e62c39fe202523d22550acd2f3c
+ms.sourcegitcommit: 37674c1414175b49d59000b56fa685c05faabf35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "43240524"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43503832"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Feuille de route pour la fin de la prise en charge de Project Server 2010
 
@@ -31,11 +31,11 @@ ms.locfileid: "43240524"
 
 Project Server 2010 atteindra la fin de la prise en charge le **13 avril 2021**. Cette date a été étendue à partir de la date de fin de prise en charge précédente du 13 octobre 2020. Si vous utilisez actuellement Project Server 2010, Notez que les autres produits associés ont les dates de fin de prise en charge suivantes :
   
-|**Produit**|**fin de la date de prise en charge**|
+|**Produit**|**Fin de la date de prise en charge**|
 |:-----|:-----|
-|Project Portfolio Server 2010  <br/> |13 octobre 2020  <br/> |
-|Project 2010 standard  <br/> |13 octobre 2020  <br/> |
+|Project 2010 standard <br/> |13 octobre 2020  <br/> |
 |Project 2010 professionnel  <br/> |13 octobre 2020  <br/> |
+
    
 Pour plus d’informations sur les serveurs Office 2010 qui arrivent à la fin de la prise en charge, consultez la rubrique [Upgrade from Office 2010 Servers and client Products](https://docs.microsoft.com/office365/enterprise/plan-upgrade-previous-versions-office).
   
@@ -237,7 +237,7 @@ Cette affiche d’une page est un moyen rapide pour connaître les différents c
 
 Vous pouvez également [télécharger](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) cette affiche et l’imprimer au format lettre, légal ou tabloïd (11 x 17).
    
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 [Mise à jour à jour de SharePoint 2010](upgrade-from-sharepoint-2010.md)
   

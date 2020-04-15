@@ -3,7 +3,7 @@ title: Mise à jour à jour de SharePoint 2010
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 08/21/2019
+ms.date: 04/13/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: office-online-server
@@ -18,23 +18,23 @@ search.appverid:
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 f1.keywords:
 - NOCSH
-description: Les extrémités de la prise en charge pour SharePoint 2010 et SharePoint Server 2010 se terminent le 13 octobre 2020. Utilisez cet article pour effectuer une mise à niveau vers SharePoint Online ou une version plus récente de SharePoint Server en local.
-ms.openlocfilehash: 81aeebc584f1ba9d6e0bd22a1a83362db4dc669a
-ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
+description: Fin de la prise en charge pour SharePoint 2010 et SharePoint Server 2010 le 13 avril 2021. Utilisez cet article pour effectuer une mise à niveau vers SharePoint Online ou une version plus récente de SharePoint Server en local.
+ms.openlocfilehash: e4e4b874d5ea73fa37c3d1e338890a1391516273
+ms.sourcegitcommit: 37674c1414175b49d59000b56fa685c05faabf35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42979486"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43503842"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Mise à jour à jour de SharePoint 2010
 
 *Cet article est valable pour Office 365 Entreprise et Microsoft 365 Entreprise*.
 
-Microsoft SharePoint 2010 et SharePoint Server 2010 vont atteindre la fin de la prise en charge le **13 octobre 2020**. Cet article détaille les ressources pour vous aider à migrer vos données SharePoint Server 2010 existantes vers SharePoint Online dans Office 365 ou mettre à niveau votre environnement SharePoint Server 2010 sur site.
+Microsoft SharePoint 2010 et SharePoint Server 2010 vont atteindre la fin de la prise en charge le **13 avril 2021**. Cet article détaille les ressources pour vous aider à migrer vos données SharePoint Server 2010 existantes vers SharePoint Online dans Office 365 ou mettre à niveau votre environnement SharePoint Server 2010 sur site.
   
 ## <a name="what-is-end-of-support"></a>Qu’est-ce que la fin du support ?
 
-Lorsque le logiciel SharePoint Server 2010 et SharePoint Foundation 2010 atteint la fin de son cycle de vie (la période pendant laquelle Microsoft fournit de nouvelles fonctionnalités, des correctifs de bogues, des correctifs de sécurité, etc.), il s’agit de la « fin du support » du logiciel, ou parfois, son « déclassement ». À la fin du support (ou EOS) d’un produit, rien ne s’arrête réellement ou cesse de fonctionner ; Toutefois, à la fin de la prise en charge du logiciel, Microsoft ne fournit plus :
+Lorsque le logiciel SharePoint Server 2010 et SharePoint Foundation 2010 atteint la fin de son cycle de vie (la période pendant laquelle Microsoft fournit de nouvelles fonctionnalités, des correctifs de bogues, des correctifs de sécurité, etc.), il s’agit de la « fin du support » du logiciel, ou parfois de son « ancienneté ». À la fin du support (ou EOS) d’un produit, rien ne s’arrête réellement ou cesse de fonctionner ; Toutefois, à la fin de la prise en charge du logiciel, Microsoft ne fournit plus :
   
 - Support technique pour les problèmes pouvant se produire ;
     
@@ -133,7 +133,7 @@ Si vous avez décidé de créer un nouveau site Office 365 et que vous y migrere
 Si vous choisissez de suivre le chemin d’accès complet de SharePoint 2010 vers SharePoint Server 2016, le temps et la planification seront pris en compte. Les mises à niveau impliquent un coût en termes de matériel mis à niveau (Sachez que les serveurs SQL doivent également être mis à niveau), les logiciels et l’administration. De plus, il se peut que les personnalisations doivent être mises à niveau, voire abandonnées. Veillez à recueillir des notes sur toutes vos personnalisations importantes avant de mettre à niveau votre batterie de serveurs SharePoint Server.
   
 > [!NOTE]
-> Il est possible de maintenir votre fin de prise en charge de la batterie de serveurs SharePoint 2010, d’installer une batterie de serveurs SharePoint Server 2016 sur le nouveau matériel (de sorte que les batteries de serveurs distinctes exécutent côte à côte), puis de planifier et d’exécuter une migration manuelle de contenu (pour le téléchargement et la rechargement de contenu, par exemple). Ces déplacements manuels ont des pièges potentiels (par exemple, des documents provenant de 2010 ayant un compte modifié en dernier avec l’alias du compte qui effectue le déplacement manuel), et d’autres tâches doivent être exécutées à l’avance (recréation de sites, de sous-sites, d’autorisations et structures de liste). Il est opportun de prendre en compte les données que vous pouvez déplacer dans le stockage ou dont vous n’avez plus besoin. Cela peut réduire l’impact de la migration. Dans les deux cas, nettoyez votre environnement avant la mise à niveau. Assurez-vous que votre batterie de serveurs existante est fonctionnelle avant de procéder à la mise à niveau et (si vous êtes sûr) avant de procéder à la désaffectation. 
+> Il est possible de maintenir votre fin de prise en charge de la batterie de serveurs SharePoint 2010, d’installer une batterie de serveurs SharePoint Server 2016 sur le nouveau matériel (de sorte que les batteries de serveurs distinctes exécutent côte à côte), puis de planifier et d’exécuter une migration manuelle de contenu (pour le téléchargement et la rechargement de contenu, par exemple). Ces déplacements manuels ont des pièges potentiels (par exemple, des documents provenant de 2010 ayant un compte modifié en dernier avec l’alias du compte qui effectue le déplacement manuel), et d’autres tâches doivent être exécutées à l’avance (recréation de sites, de sous-sites, d’autorisations et de structures de listes). Il est opportun de prendre en compte les données que vous pouvez déplacer dans le stockage ou dont vous n’avez plus besoin. Cela peut réduire l’impact de la migration. Dans les deux cas, nettoyez votre environnement avant la mise à niveau. Assurez-vous que votre batterie de serveurs existante est fonctionnelle avant de procéder à la mise à niveau et (si vous êtes sûr) avant de procéder à la désaffectation. 
   
 N’oubliez pas de vérifier les **chemins de mise à niveau pris en charge et non pris en charge**: 
   
@@ -180,7 +180,7 @@ Si vous décidez qu’une batterie de serveurs SharePoint Server hybride est vot
   
 Veillez à vous familiariser avec les types existants de l’environnement hybride et à configurer la connexion entre votre batterie de serveurs SharePoint locale et votre abonnement Office 365.
   
-Pour voir comment fonctionne une batterie de serveurs SharePoint hybride, vous pouvez créer un [environnement de développement/test Office 365](https://go.microsoft.com/fwlink/?linkid=843152). Une fois que vous avez une version d’évaluation ou que vous avez acheté l’abonnement Office 365, vous serez sur votre façon de créer les collections de sites, les sites Web et les bibliothèques de documents dans SharePoint Online vers lequel vous pouvez migrer des données (manuellement, à l’aide de l’API de migration ou-si vous voulez migrer mon Contenu du site dans OneDrive entreprise-via l’Assistant hybride).
+Pour voir comment fonctionne une batterie de serveurs SharePoint hybride, vous pouvez créer un [environnement de développement/test Office 365](https://go.microsoft.com/fwlink/?linkid=843152). Une fois que vous avez une version d’évaluation ou que vous avez acheté l’abonnement Office 365, vous serez sur votre façon de créer les collections de sites, les sites Web et les bibliothèques de documents dans SharePoint Online vers lequel vous pouvez migrer des données (manuellement, à l’aide de l’API de migration ou-si vous souhaitez migrer le contenu de mon site vers OneDrive entreprise, via l’Assistant
   
 > [!NOTE]
 > N’oubliez pas que votre batterie de serveurs SharePoint Server 2010 doit d’abord être mise à niveau sur site, soit vers SharePoint Server 2013, soit vers SharePoint Server 2016 pour utiliser l’option hybride. SharePoint Foundation 2010 et SharePoint Foundation 2013 ne peuvent pas créer de connexions hybrides avec SharePoint Online. 
@@ -195,7 +195,7 @@ Cette affiche d’une page est un moyen rapide pour connaître les différents c
 
 Vous pouvez également [télécharger](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) cette affiche et l’imprimer au format lettre, légal ou tabloïd (11 x 17).
         
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 [Ressources pour vous aider à effectuer une mise à niveau à partir de serveurs et clients Office 2007 ou 2010](upgrade-from-office-2010-servers-and-products.md)
   

@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Synthèse : emplacements de données Office 365'
-ms.openlocfilehash: 5db3c97914f9c5bdcf4389637494a421ad57de64
-ms.sourcegitcommit: 3aa6c61242c5691e3180a474ad059bd84c86dc9e
+ms.openlocfilehash: 4503d624fb9b7b0cea8715352518bfe678ea0bfa
+ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43206597"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516535"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -120,6 +120,7 @@ Pour les centres de données spécifiques d’un pays ou d’une région, les é
 | Inde | Chennai, Mumbai, Pune |
 | Japon | Osaka, Tokyo, Saitama |
 | Corée | Busan, Séoul |
+| Norvège | Oslo, Stavanger |
 | Afrique du Sud | Capetown, Johannesburg |
 | Suisse | Genève, Zurich |
 | Émirats arabes unis | Dubai, Abu Dhabi |
@@ -3928,19 +3929,19 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| Exchange Online | Norvège |
+| OneDrive Entreprise | Norvège |
+| SharePoint Online | Norvège |
 | Skype Entreprise | Zone géographique 1 : EMEA |
-| Microsoft Teams | Zone géographique 1 : EMEA |
-| Office Online Mobile &amp; | Zone géographique 1 : EMEA |
-| Exchange Online Protection | Zone géographique 1 : EMEA |
-| MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | Zone géographique 1 : EMEA |
+| Microsoft Teams | Norvège |
+| Office Online &amp; Mobile | Norvège |
+| Exchange Online Protection | Norvège |
+| MyAnalytics | Norvège |
+| Planner | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
-| Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
+| Services OneNote | Norvège |
+| Flux | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
 | Analyse du temps de travail | États-Unis |

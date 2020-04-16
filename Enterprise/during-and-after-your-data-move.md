@@ -15,12 +15,12 @@ ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 f1.keywords:
 - NOCSH
 description: Les déplacements de données sont des opérations principales n'ayant que peu d'impact sur les utilisateurs finals. Aucune action de votre part n'est requise lorsque Microsoft déplace chaque service et les données associées pour votre client vers une nouvelle zone géographique de centres de données. Le transfert de données et la validation se déroulent en arrière-plan à l'avance, et n'ont qu'une incidence minimale sur les utilisateurs.
-ms.openlocfilehash: 58c4b407062c5472e9c5908d34b084a2d192227d
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: a53d2253889cbbdb344c457c135086a1115de436
+ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840371"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516445"
 ---
 # <a name="during-and-after-your-data-move"></a>Pendant et après le déplacement de vos données
 
@@ -29,7 +29,7 @@ Les déplacements de données sont des opérations principales n'ayant que peu d
 > [!NOTE]
 > Le déplacement se produit à différents moments pour chaque service. Par conséquent, vous ne verrez pas la description des fonctionnalités réduites pour chaque service au même moment. 
   
-Surveillez le centre de messages Office 365 dans l'attente de la confirmation de la fin du déplacement de chaque service Exchange Online, SharePoint Online et Skype Entreprise. Comme indiqué dans le tableau ci-dessous, le déplacement de toutes les données pour tous les clients dans une zone géographique spécifique peut prendre jusqu'à 24 mois à compter de la fin de la période d'inscription. Si vous rencontrez des problèmes avec votre client après le déplacement, contactez le [support Office 365](https://go.microsoft.com/fwlink/p/?LinkID=522459) pour obtenir de l'aide. 
+Regardez le centre de messages Microsoft 365 pour confirmer le déplacement de chaque Exchange Online, SharePoint Online, teams et Skype entreprise. Comme indiqué dans le tableau ci-dessous, le déplacement de toutes les données pour tous les clients dans une zone géographique spécifique peut prendre jusqu'à 24 mois à compter de la fin de la période d'inscription. Si vous rencontrez des problèmes avec votre client après le déplacement, contactez le [support Office 365](https://go.microsoft.com/fwlink/p/?LinkID=522459) pour obtenir de l'aide. 
   
 
 |**Clients avec pays d’abonnement dans**|**Tous les déplacements terminés d'ici le**|
@@ -45,9 +45,7 @@ Surveillez le centre de messages Office 365 dans l'attente de la confirmation de
 |Afrique du Sud  <br/> |1er juillet 2022  <br/> |
 |Suisse, Liechtenstein  <br/> |1er juillet 2022  <br/> |
 |Allemagne  <br/> |Vision  <br/> |
-
-> [!NOTE]
-> Les clients des pays Office 365 éligibles peuvent opter pour la migration des données du service de conversation Microsoft teams entre le 1er janvier 2020 et le 30 juin 2020, ce qui entraîne également la migration de toutes les autres charges de travail éligibles.  Les clients qui ont opté pour la migration avant le 2020 peuvent s’attendre à ce que les déplacements d’Exchange Online et de SharePoint Online/OneDrive entreprise soient terminés à partir du 1er juillet 2022 pour tous les clients. 
+|Norvège  <br/> |1er novembre 2022  <br/> |
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -108,11 +106,18 @@ Les fonctionnalités de recherche suivantes sont concernées :
     
 - Protection contre la perte de données (DLP) : Les politiques ne sont pas appliquées sur les éléments qui changent avant que l’analyse n’ait récupéré les modifications.
 
-## <a name="microsoft-teams"></a>Microsoft Teams
+## <a name="microsoft-teams"></a>Microsoft Teams
 
-Les clients des pays Office 365 éligibles peuvent opter pour la migration des données du service de conversation Microsoft teams à partir du 1er janvier 2020.  
+Outre Exchange Online, SharePoint Online et OneDrive entreprise, Microsoft migre les données de teams vers le centre de données local.
+
+- Les messages de conversation Teams, y compris les messages privés et les messages de canal.
+- Images de teams utilisées dans les conversations.
+
+Les fichiers teams sont stockés dans SharePoint Online et les fichiers de conversation teams sont stockés dans OneDrive entreprise. La messagerie vocale, le calendrier, l’historique des conversations et les contacts sont stockés dans Exchange Online. Dans de nombreux cas, Exchange Online, SharePoint Online et OneDrive entreprise sont déjà utilisés par le client dans la région du centre de connaissances local et font également partie du programme de migration de Microsoft 365 pour les pays clients éligibles.
 
 ## <a name="skype-for-business"></a>Skype Entreprise
+
+Les déplacements Skype entreprise sont disponibles pour l’Australie, le Japon, l’Inde, le Canada, le Royaume-Uni et la Corée du Sud.
 
 Tous les utilisateurs seront déconnectés du logiciel client Skype Entreprise pendant le basculement. La connexion automatique permettra aux utilisateurs de se reconnecter dans les deux minutes qui suivent.
   
@@ -127,7 +132,7 @@ Tous les utilisateurs seront déconnectés du logiciel client Skype Entreprise p
 ### <a name="skype-for-business-moves-that-involve-a-third-party-audio-conferencing-provider"></a>Déplacements Skype entreprise impliquant un fournisseur de services d’audioconférence tiers
 Les services de module complémentaire de fournisseurs de services d’audioconférence tiers pour Skype Entreprise ne sont pas disponibles pour les utilisateurs hébergés dans des centres de données propres à une nouvelle zone géographique.   Les clients existants qui utilisent un service de fournisseur de services d’audioconférence tiers ne doivent pas demander de déplacement vers un centre de données propre à une nouvelle zone géographique.   Les nouveaux clients déployés dans les centres de données propres à une nouvelle zone géographique doivent demander un déplacement vers un centre de données régional afin d’utiliser un fournisseur de services d’audioconférence tiers. 
   
-## <a name="related-topics"></a>Voir aussi 
+## <a name="related-topics"></a>Sujets associés 
  
 [Procédure de demande d’un déplacement de données](request-your-data-move.md)
     
@@ -136,4 +141,3 @@ Les services de module complémentaire de fournisseurs de services d’audioconf
 [Nouvelles régions de centres de données pour Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   
 [Services Azure par région](https://azure.microsoft.com/regions/)
-

@@ -13,20 +13,20 @@ search.appverid:
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 f1.keywords:
 - NOCSH
-description: Les clients Office 365 existants devront envoyer une demande avant la date d'échéance de leur pays afin que les données client de leurs services Office 365 soient déplacées vers leur nouvelle région.
-ms.openlocfilehash: 506943ce802adbd8d443cfb69212834b9c552f61
-ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
+description: Les clients Office 365 existants devront soumettre une demande avant la date d’échéance de leur pays afin que les données client des services Microsoft 365 participants soient déplacées vers leur nouvelle région géographique.
+ms.openlocfilehash: 2b91f471fb6a1c82f37cf89aaec29de040a73fcf
+ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106225"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516565"
 ---
 # <a name="how-to-request-your-data-move"></a>Procédure de demande d’un déplacement de données
 
 > [!NOTE]
-> Les informations sur cette page s'appliquent uniquement aux utilisateurs qui disposaient déjà de clients Office 365 avant le lancement des nouveaux centres de données dans leur région. 
+> Les informations contenues dans cette page s’appliquent uniquement aux clients qui disposaient de clients Microsoft 365 existants avant le lancement des nouveaux centres de données dans leur région. 
   
-Les clients Office 365 existants sont autorisés à demander une migration précoce pour les données client principales de leur organisation au repos.  
+Les clients Microsoft 365 existants peuvent demander la migration de leurs données client principales au repos.  
   
 ## <a name="when-can-i-request-a-move"></a>Quand puis-je demander un déplacement ?
 
@@ -39,10 +39,11 @@ Les clients Office 365 existants sont autorisés à demander une migration préc
 |Royaume-Uni  <br/> |1er janvier 2020  <br/> |30 juin 2020  <br/> |
 |Corée du Sud  <br/> |1er janvier 2020  <br/> |30 juin 2020  <br/> |
 |France  <br/> |1er janvier 2020  <br/> |30 juin 2020  <br/> |
-|Émirats arabes unis  <br/> |15 juillet 2019  <br/> |30 juin 2020  <br/> |
+|Émirats arabes unis  <br/> |15 juillet 2019  <br/> |30 juin 2020  <br/> |
 |Afrique du Sud  <br/> |25 juillet 2019  <br/> |30 juin 2020  <br/> |
 |Suisse, Liechtenstein  <br/> |10 décembre 2019  <br/> |30 juin 2020  <br/> |
 |Allemagne  <br/> |Vision  <br/> |Vision  <br/> |
+|Norvège  <br/> |15 avril 2020  <br/> |31 octobre 2020  <br/> |
    
 ## <a name="how-to-request-a-move"></a>Procédure de demande d’un déplacement
 
@@ -55,7 +56,7 @@ Sélectionnez l’onglet **profil d’organisation**, puis sélectionnez l’opt
 - Votre client n’est pas éligible au programme Office 365 Move.  Le droit est déterminé par le pays d’inscription du client.
 - Toutes vos données client principales sur REST se trouvent déjà dans la nouvelle région (consultez la section emplacement des données de la page). 
   
-Si votre organisation a des besoins en matière de résidence des données et que vous devez demander une migration précoce, cliquez sur **opt-in** en haut à droite de la section. Une nouvelle section apparaît sur le côté droit de l’écran, expliquant les détails du programme de déplacement d’Office 365. Sélectionnez le bouton bascule en regard du texte indiquant que **je souhaite que les données client principales de mon organisation soient migrées**. Cliquez ensuite sur **Enregistrer**.
+Si votre organisation a des besoins en matière de résidence des données et que vous devez demander une migration, cliquez sur **opt-in** en haut à droite de la section. Une nouvelle section apparaît sur le côté droit de l’écran, expliquant les détails du programme de déplacement de Microsoft 365. Sélectionnez le bouton bascule en regard du texte indiquant que **je souhaite que les données client principales de mon organisation soient migrées**. Cliquez ensuite sur **Enregistrer**.
   
 ![Écran de l'action d'abonnement dans le centre de données](media/dataresidencyflyoutae.jpg)
   
@@ -69,39 +70,11 @@ Après avoir demandé un déplacement, nous allons vous déplacer aussi rapideme
   
 Les déplacements peuvent prendre jusqu'à 24 mois à compter de la date d'échéance de la demande pour votre pays.
   
-## <a name="microsoft-teams"></a>Microsoft Teams
+## <a name="microsoft-teams"></a>Microsoft Teams
 
-Depuis le 2020 janvier, les clients des pays Office 365 éligibles peuvent opter pour la migration des données du service de conversation Microsoft Teams.  Les chronologies d’abonnement ont été rouvertes ou étendues pour tous les pays éligibles afin de permettre aux clients de prendre en compte le programme de migration précoce avec Microsoft Teams.   
+Depuis le 2020 janvier, les clients des pays Office 365 éligibles peuvent opter pour la migration des données du service de conversation Microsoft Teams.  Les chronologies d’abonnement ont été rouvertes ou étendues pour tous les pays éligibles afin de permettre aux clients de prendre en compte le programme de migration avec Microsoft teams dans l’étendue. Les clients ayant précédemment opté pour un déplacement de résidence de données auront également des équipes déplacer vers leur propre région de centre de données local.
 
-## <a name="optional-actions-before-you-request-a-move"></a>Actions facultatives avant d’effectuer une demande de déplacement
-
-Effectuez les opérations suivantes selon vos besoins.
-  
-### <a name="if-you-use-an-ip-based-firewall-add-allow-rules-for-the-new-ip-addresses"></a>Si vous utilisez un pare-feu reposant sur l’adresse IP, ajoutez des règles d’autorisation pour les nouvelles adresses IP.
-
-Nous vous recommandons d'utiliser le filtrage DNS pour les pare-feu au lieu des adresses IP. Aucune nouvelle entrée DNS n'est requise.
-  
-Si vous utilisez un pare-feu reposant sur l'adresse IP pour la connectivité Internet, vous devez ajouter des règles d'autorisation pour les nouvelles adresses IP de la région de centres de données de destination. Des adresses IP pour les nouvelles régions de centres de données en plus de nouveaux serveurs sont constamment ajoutés aux [URL et plages d'adresses IP Office 365](https://go.microsoft.com/fwlink/p/?LinkId=229631).
-  
-Consultez la documentation relative à votre pare-feu pour obtenir plus d'informations sur la procédure d'ajout de règles d'autorisation (également appelé ajout à la liste verte).
-  
-Après avoir ajouté des adresses IP, vous souhaiterez peut-être tester la connectivité à la nouvelle région de centres de données. Pour ce faire, nous vous recommandons de créer un [client d'évaluation gratuit pendant 30 jours](https://go.microsoft.com/fwlink/?LinkId=522463) dès que la région de centres de données sera disponible. 
-  
-### <a name="test-using-a-new-tenant"></a>Test à l’aide d’un nouveau client
-
-Si vous souhaitez tester la connectivité avant le déplacement, vous pouvez configurer un [nouveau client d'évaluation gratuit pendant 30 jours](https://go.microsoft.com/fwlink/?LinkId=522463) dès que la nouvelle région de centres de données est disponible, et l'utiliser pour tester Office 365 hébergé dans la nouvelle région de centres de données. 
-  
-Le client d'évaluation ne peut pas être associé à votre client existant :
-  
-- Les utilisateurs doivent utiliser un compte d'évaluation différent pour leur test.
-    
-- Il n’existe aucun moyen de déplacer des données entre les clients.
-    
-### <a name="notify-users-to-update-out-of-date-exchange-settings-on-mobile-devices"></a>Notification adressée aux utilisateurs concernant la mise à jour des paramètres Exchange obsolètes sur les appareils mobiles
-
-Si les utilisateurs disposent d’un appareil mobile avec le serveur Exchange défini sur **m.Outlook.com** ou **podxxxxx.Outlook.com**, nous vous recommandons de passer à **Outlook.office365.com**, en suivant les instructions de la procédure [configurer un appareil mobile pour une synchronisation avec votre compte](https://support.office.com/article/c9139caf-01ab-41a0-827c-3c06ee569ed3).
-
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 [Transfert de données principales vers le nouveau centre de données Office 365 régions centres](moving-data-to-new-datacenter-geos.md)
 

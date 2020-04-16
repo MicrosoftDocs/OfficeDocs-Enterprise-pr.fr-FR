@@ -4,7 +4,7 @@ ms.author: kvice
 ms.reviewer: smithre4
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 12/17/2019
+ms.date: 04/15/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: L’authentification moderne est une méthode de gestion des identités qui offre une authentification et une autorisation plus sécurisées pour les utilisateurs. Elle est disponible pour les déploiements hybrides de Skype entreprise Server en local et Exchange Server en local, ainsi que pour les hybrides Skype entreprise mixtes de domaine. Cet article fournit des liens vers des documents connexes sur les conditions préalables, la configuration/la désactivation de l’authentification moderne et la mise en relation avec certains clients (par exemple, Informations sur les clients Outlook et Skype).
-ms.openlocfilehash: 5852a4a59e4826cb57295452f9996e5c4f91ab29
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 325c34ec636ce9661b25f7b8be83ce8cbf61a291
+ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840121"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516455"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Vue d’ensemble de l’authentification moderne hybride et conditions préalables à son utilisation avec des serveurs Skype entreprise et Exchange locaux
 
@@ -37,7 +37,7 @@ _L’authentification moderne_ est une méthode de gestion des identités qui of
 ## <a name="what-is-modern-authentication"></a>Qu’est-ce que l’authentification moderne ?
 <a name="BKMK_WhatisModAuth"> </a>
 
-L’authentification moderne est un terme générique pour une combinaison de méthodes d’authentification et d’autorisation entre un client (par exemple, votre ordinateur portable ou votre téléphone) et un serveur, ainsi que certaines mesures de sécurité qui s’appuient sur des stratégies d’accès que vous avez peut-être déjà familiarisation avec. Elle comprend :
+L’authentification moderne est un terme générique pour une combinaison de méthodes d’authentification et d’autorisation entre un client (par exemple, votre ordinateur portable ou votre téléphone) et un serveur, ainsi que certaines mesures de sécurité qui s’appuient sur des stratégies d’accès que vous connaissez peut-être déjà. Elle comprend :
   
 - **Méthodes d’authentification**: Multi-Factor Authentication (MFA); authentification par carte à puce ; authentification basée sur les certificats clients
 - **Méthodes d’autorisation**: mise en œuvre par Microsoft de l’autorisation d’ouverture (OAuth)
@@ -61,7 +61,7 @@ La modification apportée à evoSTS permet à vos serveurs locaux de tirer parti
   
 Par exemple, si un client Skype entreprise a besoin d’accéder à Exchange Server pour obtenir des informations de calendrier pour le compte d’un utilisateur, il utilise la bibliothèque d’authentification Active Directory (ADAL) pour le faire. ADAL est une bibliothèque de code conçue pour mettre les ressources sécurisées dans votre répertoire à la disposition des applications clientes à l’aide de jetons de sécurité OAuth. ADAL fonctionne avec OAuth pour vérifier les revendications et échanger des jetons (plutôt que des mots de passe), pour accorder à un utilisateur l’accès à une ressource. Dans le passé, l’autorité dans une transaction telle que la suivante, le serveur qui sait valider les revendications utilisateur et émettre les jetons nécessaires, aurait pu être un service d’émission de jeton de sécurité sur site, voire Active Directory Federation Services. Toutefois, l’authentification moderne centralise cette autorité à l’aide d’Azure Active Directory (AAD).
   
-Cela signifie également que même si vos environnements Exchange Server et Skype entreprise peuvent être entièrement en local, le serveur d’autorisation sera en ligne et votre environnement local doit pouvoir créer et maintenir une connexion à votre bureau. 365 abonnement dans le Cloud (et instance Azure Active Directory utilisée par votre abonnement comme annuaire).
+Cela signifie également que même si vos environnements Exchange Server et Skype entreprise peuvent être entièrement en local, le serveur d’autorisation sera en ligne, et votre environnement local doit pouvoir créer et maintenir une connexion à votre abonnement Office 365 dans le Cloud (et l’instance Azure Active Directory que votre abonnement utilise comme annuaires).
   
 Qu’est-ce qui ne change pas ? Que vous soyez dans un environnement hybride de domaine mixte ou que vous utilisiez Skype entreprise et Exchange Server en local, tous les utilisateurs doivent d’abord s’authentifier *en local*. Dans une implémentation hybride de l’authentification moderne, le _Lyncdiscovery_ et le service de _découverte automatique_ pointent tous deux vers votre serveur local.
   
@@ -142,7 +142,7 @@ Vérifiez et vérifiez ces éléments en dehors de votre liste avant de continue
   - Si vous utilisez Exchange Server 2013, les rôles serveur de boîtes aux lettres et d’accès au client doivent être installés sur au moins un serveur. Bien qu’il soit possible d’installer les rôles de boîte aux lettres et d’accès au client sur des serveurs distincts, nous vous recommandons vivement d’installer les deux rôles sur le même serveur afin de renforcer la fiabilité et d’améliorer les performances.
   - Si vous utilisez Exchange Server 2016 ou une version ultérieure, le rôle serveur de boîtes aux lettres doit être installé sur au moins un serveur.
   - Il n’y a pas de serveur Exchange 2007 ou 2010 dans l’environnement hybride.
-  - Tous les serveurs Exchange doivent disposer des dernières mises à jour de cummulative, consultez [la rubrique mise à niveau d’Exchange vers les dernières mises à jour cumulatives](https://docs.microsoft.com/exchange/plan-and-deploy/install-cumulative-updates?view=exchserver-2019) pour rechercher et gérer toutes les mises à jour disponibles.
+  - Les mises à jour cumulatives les plus récentes doivent être installées sur tous les serveurs Exchange, consultez [la rubrique mettre à niveau Exchange vers les dernières mises à jour cumulatives](https://docs.microsoft.com/exchange/plan-and-deploy/install-cumulative-updates?view=exchserver-2019) pour rechercher et gérer toutes les mises à jour disponibles.
 
 - **Configuration requise pour le client et le protocole Exchange**
   
@@ -168,8 +168,8 @@ Vérifiez et vérifiez ces éléments en dehors de votre liste avant de continue
 ## <a name="what-else-do-i-need-to-know-before-i-begin"></a>Que dois-je savoir d’autre avant de commencer ?
 <a name="BKMK_Whatelse"> </a>
 
-- Tous les scénarios pour les serveurs locaux impliquent la configuration de l’authentification moderne locale (en fait, pour Skype entreprise, il existe une liste des topologies prises en charge) afin que le serveur responsable de l’authentification et de l’autorisation se trouve dans le Cloud Microsoft ( Service d’émission de jeton de sécurité AAD, appelé « evoSTS ») et mise à jour d’Azure Active Directory (AAD) sur les URL ou espaces de noms utilisés par votre installation locale de Skype entreprise ou Exchange. Par conséquent, les serveurs locaux prennent une dépendance de Microsoft Cloud. Cette action peut être considérée comme une configuration de l’authentification hybride.
-- Cet article fournit des liens vers d’autres personnes qui vous aideront à choisir les topologies d’authentification moderne prises en charge (nécessaires uniquement pour Skype entreprise) et les procédures qui décrivent les étapes de configuration, ou les étapes à suivre pour désactiver l’authentification moderne, pour Exchange en local. Skype entreprise en local. Favorisez cette page dans votre navigateur si vous avez besoin d’une base de démarrage pour utiliser l’authentification moderne dans votre environnement de serveur.
+- Tous les scénarios pour les serveurs locaux impliquent la configuration de l’authentification moderne en local (en fait, pour Skype entreprise, il existe une liste des topologies prises en charge, de sorte que le serveur responsable de l’authentification et de l’autorisation se trouve dans le Cloud Microsoft (service d’émission de jeton de sécurité AAD, appelé « evoSTS ») et mise à jour d’Azure Active Directory (AAD) sur les URL ou espaces de noms utilisés par votre installation locale de Skype entreprise ou Exchange. Par conséquent, les serveurs locaux prennent une dépendance de Microsoft Cloud. Cette action peut être considérée comme une configuration de l’authentification hybride.
+- Cet article fournit des liens vers d’autres personnes qui vous aideront à choisir les topologies d’authentification moderne prises en charge (nécessaires uniquement pour Skype entreprise) et les procédures qui décrivent les étapes de configuration, ou les étapes à suivre pour désactiver l’authentification moderne, pour Exchange sur site et Skype entreprise en local. Favorisez cette page dans votre navigateur si vous avez besoin d’une base de démarrage pour utiliser l’authentification moderne dans votre environnement de serveur.
 
 ## <a name="related-topics"></a>Rubriques connexes
 <a name="BKMK_URLListforMA"> </a>

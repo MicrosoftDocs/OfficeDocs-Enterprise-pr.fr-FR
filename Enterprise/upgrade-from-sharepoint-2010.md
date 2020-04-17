@@ -19,12 +19,12 @@ ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 f1.keywords:
 - NOCSH
 description: Fin de la prise en charge pour SharePoint 2010 et SharePoint Server 2010 le 13 avril 2021. Utilisez cet article pour effectuer une mise à niveau vers SharePoint Online ou une version plus récente de SharePoint Server en local.
-ms.openlocfilehash: e4e4b874d5ea73fa37c3d1e338890a1391516273
-ms.sourcegitcommit: 37674c1414175b49d59000b56fa685c05faabf35
+ms.openlocfilehash: 8f55b55b84b2bd4d967822dea137a8cea4f40906
+ms.sourcegitcommit: 27a04304475f9c33accd4c0498726f074eef7c48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43503842"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43532301"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Mise à jour à jour de SharePoint 2010
 
@@ -68,7 +68,7 @@ Voici les trois chemins que vous pouvez suivre pour éviter la fin de la prise e
 ![Chemins de mise à niveau vers SharePoint Server 2010](./media/upgrade-from-sharepoint-2010/upgrade-from-sharepoint-2010-paths.png)
 
 >[!Note]
->La fin de la prise en charge de SharePoint Server 2010 et de SharePoint Foundation 2010 est prévue pour le 13 octobre 2020, mais n' *oubliez* pas que vous devez toujours vérifier le [site du cycle de vie des produits](https://support.microsoft.com/lifecycle) pour les dates les plus récentes.
+>La fin de la prise en charge de SharePoint Server 2010 et de SharePoint Foundation 2010 est prévue pour le 13 avril 2021, mais n' *oubliez* pas que vous devez toujours vérifier le [site du cycle de vie des produits](https://support.microsoft.com/lifecycle) pour les dates les plus récentes.
 >
 
   
@@ -195,7 +195,7 @@ Cette affiche d’une page est un moyen rapide pour connaître les différents c
 
 Vous pouvez également [télécharger](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) cette affiche et l’imprimer au format lettre, légal ou tabloïd (11 x 17).
         
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Ressources pour vous aider à effectuer une mise à niveau à partir de serveurs et clients Office 2007 ou 2010](upgrade-from-office-2010-servers-and-products.md)
   

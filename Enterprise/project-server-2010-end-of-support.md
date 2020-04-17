@@ -18,12 +18,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: Les fins de prise en charge de Project Server 2010 se terminent le 13 avril 2021. Utilisez cet article pour effectuer une mise à niveau vers Project Online ou une version plus récente de Project Server en local.
-ms.openlocfilehash: 3c60763576d75e62c39fe202523d22550acd2f3c
-ms.sourcegitcommit: 37674c1414175b49d59000b56fa685c05faabf35
+ms.openlocfilehash: 069675eef7190cf815147bc74dcced2943d2c956
+ms.sourcegitcommit: 27a04304475f9c33accd4c0498726f074eef7c48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43503832"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43532281"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Feuille de route pour la fin de la prise en charge de Project Server 2010
 
@@ -41,7 +41,7 @@ Pour plus d’informations sur les serveurs Office 2010 qui arrivent à la fin d
   
 ## <a name="what-does-end-of-support-mean"></a>Qu’est-ce que la fin de la prise en charge ?
 
-Project Server, comme presque tous les produits Microsoft, a un cycle de vie de la prise en charge au cours duquel nous fournissons de nouvelles fonctionnalités, des correctifs de bogues et des mises à jour de sécurité. Ce cycle de vie dure généralement 10 ans après la date de publication initiale du produit, et la fin de ce cycle de vie est connue sous le nom de la fin du support du produit. Lorsque Project Server 2010 atteint sa fin d’assistance le 13 octobre 2020, Microsoft ne fournit plus les éléments suivants :
+Project Server, comme presque tous les produits Microsoft, a un cycle de vie de la prise en charge au cours duquel nous fournissons de nouvelles fonctionnalités, des correctifs de bogues et des mises à jour de sécurité. Ce cycle de vie dure généralement 10 ans après la date de publication initiale du produit, et la fin de ce cycle de vie est connue sous le nom de la fin du support du produit. Lorsque Project Server 2010 atteint sa fin d’assistance le 13 avril 2021, Microsoft ne fournit plus les éléments suivants :
   
 - Support technique pour les problèmes susceptibles de se produire.
     
@@ -237,7 +237,7 @@ Cette affiche d’une page est un moyen rapide pour connaître les différents c
 
 Vous pouvez également [télécharger](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) cette affiche et l’imprimer au format lettre, légal ou tabloïd (11 x 17).
    
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Mise à jour à jour de SharePoint 2010](upgrade-from-sharepoint-2010.md)
   

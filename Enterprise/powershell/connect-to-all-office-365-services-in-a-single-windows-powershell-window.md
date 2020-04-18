@@ -3,7 +3,7 @@ title: Connexion à tous les services Office 365 à l’aide d’une seule fenê
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/13/2019
+ms.date: 04/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -18,12 +18,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 'Résumé : Connectez Windows PowerShell à tous les services Office 365 dans une seule fenêtre Windows PowerShell.'
-ms.openlocfilehash: 91ae87f65e4ef25ab8cba8fcc23c2419cd8bdd73
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d47f4dab4938bd02be25525d2912604f676079db
+ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844425"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547752"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>Connexion à tous les services Office 365 à l’aide d’une seule fenêtre Windows PowerShell
 
@@ -41,7 +41,7 @@ Cette solution n’est pas optimale pour la gestion d’Office 365 car vous ne p
 
 Avant de pouvoir gérer l’ensemble des Office 365 à partir d’une seule instance de Windows PowerShell, tenez compte des conditions préalables suivantes :
   
-- Le compte professionnel ou scolaire Office 365 que vous utilisez pour ces procédures doit être membre d’un rôle d’administrateur Office 365. Pour obtenir plus d’informations, consultez l’article [À propos des rôles d’administrateur Office 365](https://go.microsoft.com/fwlink/p/?LinkId=532367). Il s’agit d’une condition requise pour Office 365 PowerShell, pas nécessairement pour tous les autres services Office 365.
+- Le compte professionnel ou scolaire Office 365 que vous utilisez pour ces procédures doit être membre d’un rôle d’administrateur Office 365. Pour plus d’informations, voir [À propos des rôles d’administrateur Office 365](https://go.microsoft.com/fwlink/p/?LinkId=532367). Il s’agit d’une condition requise pour Office 365 PowerShell, pas nécessairement pour tous les autres services Office 365.
     
 - Vous pouvez utiliser les versions 64 bits suivantes de Windows :
     
@@ -63,14 +63,15 @@ Avant de pouvoir gérer l’ensemble des Office 365 à partir d’une seule inst
     
     Vous devez utiliser une version 64 bits de Windows en raison de la configuration requise pour le module Skype entreprise Online et l’un des modules Office 365.
     
-- Vous devez installer les modules requis pour Azure AD, SharePoint Online, Skype entreprise Online et teams :
+- Vous devez installer les modules requis pour Azure AD, Exchange Online, SharePoint Online, Skype entreprise Online et teams :
     
    - [Azure Active Directory v2](connect-to-office-365-powershell.md##connect-with-the-azure-active-directory-powershell-for-graph-module)
    - [SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251)
    - [Skype entreprise Online, module Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=532439)
+   - [Exchange Online PowerShell v2](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell-v2/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exchange-online-powershell-v2-module)
    - [Vue d’ensemble de PowerShell teams](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
     
--  Windows PowerShell doit être configuré pour exécuter des scripts signés pour Skype entreprise Online, Exchange Online, Microsoft teams et le centre &amp; de sécurité conformité. Pour ce faire, exécutez la commande suivante dans une session Windows PowerShell avec élévation de privilèges (une fenêtre Windows PowerShell que vous ouvrez en sélectionnant **exécuter en tant qu’administrateur**).
+-  Windows PowerShell doit être configuré pour exécuter des scripts signés pour Skype entreprise Online et le centre &amp; de sécurité conformité. Pour ce faire, exécutez la commande suivante dans une session Windows PowerShell avec élévation de privilèges (une fenêtre Windows PowerShell que vous ouvrez en sélectionnant **exécuter en tant qu’administrateur**).
     
   ```powershell
   Set-ExecutionPolicy RemoteSigned
@@ -80,7 +81,7 @@ Avant de pouvoir gérer l’ensemble des Office 365 à partir d’une seule inst
 
 Voici les étapes à suivre pour vous connecter à tous les services dans une seule fenêtre PowerShell.
   
-1. Ouvrez Windows PowerShell en tant qu’administrateur (utilisez **exécuter en tant qu’administrateur**).
+1. Ouvrez Windows PowerShell.
     
 2. Exécutez cette commande et entrez les informations d’identification de votre compte professionnel ou scolaire Office 365.
     
@@ -119,22 +120,21 @@ Voici les étapes à suivre pour vous connecter à tous les services dans une se
   Import-PSSession $sfboSession
   ```
 
-6. Exécutez les commandes suivantes pour vous connecter à Exchange Online.
+6. Exécutez cette commande pour vous connecter à Exchange Online.
     
   ```powershell
-  $exchangeSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://outlook.office365.com/powershell-liveid/" -Credential $credential -Authentication "Basic" -AllowRedirection
-  Import-PSSession $exchangeSession -DisableNameChecking
+  Connect-ExchangeOnline -Credential $credential -ShowProgress $true
   ```
 
 >[!Note]
->Pour vous connecter à Exchange Online pour Office 365 nuages autres que dans le monde entier, consultez la rubrique [connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+>Pour vous connecter à Exchange Online pour Office 365 nuages autres que dans le monde entier, utilisez le paramètre **-ExchangeEnvironmentName** . Pour plus d’informations, consultez la rubrique [Connect-ExchangeOnline](https://docs.microsoft.com/powershell/module/exchange/powershell-v2-module/connect-exchangeonline?view=exchange-ps) .
 >
 
 7. Exécutez ces commandes pour vous connecter à teams PowerShell.
     
   ```powershell
-Import-Module MicrosoftTeams
-Connect-MicrosoftTeams -Credential $credential
+  Import-Module MicrosoftTeams
+  Connect-MicrosoftTeams -Credential $credential
   ```
   
 >[!Note]
@@ -163,10 +163,9 @@ Connect-SPOService -Url https://$orgName-admin.sharepoint.com -credential $crede
 Import-Module SkypeOnlineConnector
 $sfboSession = New-CsOnlineSession -Credential $credential
 Import-PSSession $sfboSession
-$exchangeSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://outlook.office365.com/powershell-liveid/" -Credential $credential -Authentication "Basic" -AllowRedirection
-Import-PSSession $exchangeSession -DisableNameChecking
 $SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $credential -Authentication "Basic" -AllowRedirection
 Import-PSSession $SccSession -Prefix cc
+Connect-ExchangeOnline -Credential $credential -ShowProgress $true
 Import-Module MicrosoftTeams
 Connect-MicrosoftTeams -Credential $credential
 ```
@@ -182,23 +181,22 @@ Connect-SPOService -Url https://$orgName-admin.sharepoint.com -credential $crede
 Import-Module SkypeOnlineConnector
 $sfboSession = New-CsOnlineSession -Credential $credential
 Import-PSSession $sfboSession
-$exchangeSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://outlook.office365.com/powershell-liveid/" -Credential $credential -Authentication "Basic" -AllowRedirection
-Import-PSSession $exchangeSession -DisableNameChecking
 $SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $credential -Authentication "Basic" -AllowRedirection
 Import-PSSession $SccSession -Prefix cc
+Connect-ExchangeOnline -Credential $credential -ShowProgress $true
 Import-Module MicrosoftTeams
 Connect-MicrosoftTeams -Credential $credential
 ```
 
-Lorsque vous êtes prêt à fermer la fenêtre Windows PowerShell, exécutez la commande suivante pour supprimer les sessions actives vers Skype entreprise Online, Exchange Online, SharePoint Online et le centre de sécurité &amp; conformité :
+Lorsque vous êtes prêt à fermer la fenêtre Windows PowerShell, exécutez la commande suivante pour supprimer les sessions actives vers Skype entreprise Online, SharePoint Online, le centre de &amp; sécurité conformité et teams :
   
 ```powershell
-Remove-PSSession $sfboSession ; Remove-PSSession $exchangeSession ; Remove-PSSession $SccSession ; Disconnect-SPOService ; Disconnect-MicrosoftTeams 
+Remove-PSSession $sfboSession ; Remove-PSSession $SccSession ; Disconnect-SPOService ; Disconnect-MicrosoftTeams 
 ```
 
 ## <a name="connection-steps-when-using-multi-factor-authentication"></a>Étapes de connexion lors de l’utilisation de l’authentification multifacteur
 
-Voici toutes les commandes dans un seul bloc pour se connecter à Azure AD, SharePoint Online et Skype pour buiness à l’aide de l’authentification multifacteur dans une seule fenêtre à l’aide du module Azure Active Directory PowerShell pour Graph. Spécifiez le nom d’utilisateur principal (UPN) d’un compte d’utilisateur et votre nom d’hôte de domaine, puis exécutez-les tous en même temps.
+Voici toutes les commandes dans un seul bloc pour vous connecter à Azure AD, SharePoint Online, Skype entreprise, Exchange Online et teams à l’aide de l’authentification multifacteur dans une fenêtre unique à l’aide du module Azure Active Directory PowerShell pour Graph. Spécifiez le nom d’utilisateur principal (UPN) d’un compte d’utilisateur et votre nom d’hôte de domaine, puis exécutez-les tous en même temps.
 
 ```powershell
 $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
@@ -210,6 +208,9 @@ Connect-SPOService -Url https://$orgName-admin.sharepoint.com
 #Skype for Business Online
 $sfboSession = New-CsOnlineSession -UserName $acctName
 Import-PSSession $sfboSession
+#Exchange Online
+Connect-ExchangeOnline -UserPrincipalName $acctName -ShowProgress $true
+#Teams
 Import-Module MicrosoftTeams
 Connect-MicrosoftTeams
 ```
@@ -226,17 +227,14 @@ Connect-SPOService -Url https://$orgName-admin.sharepoint.com
 #Skype for Business Online
 $sfboSession = New-CsOnlineSession -UserName $acctName
 Import-PSSession $sfboSession
+#Exchange Online
+Connect-ExchangeOnline -UserPrincipalName $acctName -ShowProgress $true
+#Teams
 Import-Module MicrosoftTeams
 Connect-MicrosoftTeams
 ```
 
-Pour Exchange Online et le centre &amp; de sécurité conformité, consultez les rubriques suivantes pour vous connecter à l’aide de l’authentification multifacteur :
-
-- [Connexion à Exchange Online PowerShell avec l’authentification multifacteur](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell)
-- [Se connecter au centre de sécurité & de conformité Office 365 PowerShell à l’aide de l’authentification multifacteur](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps)
- 
-Notez que dans les deux cas, vous devez vous connecter à l’aide de sessions distinctes du module Exchange Online Remote PowerShell.
-
+Pour le centre &amp; de sécurité conformité, consultez la rubrique [connect to Office 365 Security & Compliance Center PowerShell using Multi-Factor Authentication](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps) to Connect using Multi-Factor Authentication :
 
 ## <a name="see-also"></a>Voir aussi
 

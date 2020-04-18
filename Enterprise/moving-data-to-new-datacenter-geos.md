@@ -1,7 +1,7 @@
 ---
 title: Transfert de données principales vers le nouveau centre de données Microsoft 365 régions centres
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: andyber
+author: andybergen
 manager: laurawi
 ms.date: 12/10/2019
 audience: ITPro
@@ -14,12 +14,12 @@ ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 f1.keywords:
 - NOCSH
 description: "Nouveau centre de régions centres ajouter de la capacité et des ressources de calcul pour prendre en charge notre demande de client et sa croissance d’utilisation en cours. En outre, les nouvelles régions de centre de données permettent d'héberger des données dans la région pour les données client essentielles. Le terme « données client essentielles » fait référence à un sous-ensemble de données client définies dans les conditions d'utilisation de Microsoft Online Services : Exchange Onlinecontenu de la boîte aux lettres (corps de courrier électronique, entrées de calendrier et contenu de pièces jointes), SharePoint Onlinecontenu du site et fichiers stockés dans ce site, ainsi que fichiers téléchargés vers OneDrive Entreprise."
-ms.openlocfilehash: 3559fb78310667243160b000d4b4098eba6fdbcc
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: 3cd30e46f9339fafb3a14f26d6995cd4cb953871
+ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516545"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547722"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Transfert de données principales vers le nouveau centre de données Microsoft 365 régions centres
 
@@ -69,7 +69,7 @@ Les déplacements de données sont des opérations de service principales qui on
 
 Les données sont déplacées vers la nouvelle région de centre de données.
     
-## <a name="related-topics"></a>Sujets associés 
+## <a name="related-topics"></a>Voir aussi 
  
 [Procédure de demande d’un déplacement de données](request-your-data-move.md)
     

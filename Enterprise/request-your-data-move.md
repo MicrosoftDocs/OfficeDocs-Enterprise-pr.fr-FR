@@ -1,7 +1,7 @@
 ---
 title: Procédure de demande d'un déplacement de données
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: andyber
+author: andybergen
 manager: laurawi
 ms.date: 12/10/2019
 audience: ITPro
@@ -14,12 +14,12 @@ ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 f1.keywords:
 - NOCSH
 description: Les clients Office 365 existants devront soumettre une demande avant la date d’échéance de leur pays afin que les données client des services Microsoft 365 participants soient déplacées vers leur nouvelle région géographique.
-ms.openlocfilehash: 2b91f471fb6a1c82f37cf89aaec29de040a73fcf
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: 9c78492584f49cf263916726b2272d3b9405446e
+ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516565"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547742"
 ---
 # <a name="how-to-request-your-data-move"></a>Procédure de demande d’un déplacement de données
 
@@ -43,7 +43,7 @@ Les clients Microsoft 365 existants peuvent demander la migration de leurs donn�
 |Afrique du Sud  <br/> |25 juillet 2019  <br/> |30 juin 2020  <br/> |
 |Suisse, Liechtenstein  <br/> |10 décembre 2019  <br/> |30 juin 2020  <br/> |
 |Allemagne  <br/> |Vision  <br/> |Vision  <br/> |
-|Norvège  <br/> |15 avril 2020  <br/> |31 octobre 2020  <br/> |
+|Norvège  <br/> |15 avril 2020  <br/> |31 octobre 2020  <br/> |
    
 ## <a name="how-to-request-a-move"></a>Procédure de demande d’un déplacement
 
@@ -70,11 +70,11 @@ Après avoir demandé un déplacement, nous allons vous déplacer aussi rapideme
   
 Les déplacements peuvent prendre jusqu'à 24 mois à compter de la date d'échéance de la demande pour votre pays.
   
-## <a name="microsoft-teams"></a>Microsoft Teams
+## <a name="microsoft-teams"></a>Microsoft Teams
 
 Depuis le 2020 janvier, les clients des pays Office 365 éligibles peuvent opter pour la migration des données du service de conversation Microsoft Teams.  Les chronologies d’abonnement ont été rouvertes ou étendues pour tous les pays éligibles afin de permettre aux clients de prendre en compte le programme de migration avec Microsoft teams dans l’étendue. Les clients ayant précédemment opté pour un déplacement de résidence de données auront également des équipes déplacer vers leur propre région de centre de données local.
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Transfert de données principales vers le nouveau centre de données Office 365 régions centres](moving-data-to-new-datacenter-geos.md)
 

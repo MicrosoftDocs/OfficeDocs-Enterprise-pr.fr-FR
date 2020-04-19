@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Comment implémenter un tunnel VPN partagé pour Office 365
-ms.openlocfilehash: 81412e5f64f143949ef1cbca7b030f643cbace03
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: 84b59351e07ca151000aa58727ce779e8f522722
+ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516485"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547662"
 ---
 # <a name="implementing-vpn-split-tunnelling-for-office-365"></a>Implémentation d'un tunnel VPN partagé pour Office 365
 
@@ -41,7 +41,7 @@ L’utilisation de réseaux privés virtuels avec tunnel imposé pour la connexi
 
 Ce problème s'est aggravé depuis plusieurs années, avec de nombreux clients qui ont signalé un décalage important de modèles de trafic réseau. Le trafic utilisé pour conserver les locaux se connecte désormais aux points de terminaison du cloud externe. De nombreux clients Microsoft signalaient qu’auparavant, environ 80% du trafic réseau était une source interne (représentée par une ligne pointillée dans le diagramme ci-dessus). En 2020, ce nombre est à présent environ 20% ou plus, car les charges de travail majeures ont été déplacées vers le cloud, mais ces tendances ne sont pas rares pour les autres entreprises. Au fil du temps, au fur et à mesure de l’avancement du projet, le modèle ci-dessus devient de plus en plus encombrant et peu viable, empêchant une organisation d'être flexible au fur et à mesure de son déplacement dans un premier monde de cloud.
 
-La pandémie mondiale de grippe COVID-19 a aggravé ce problème et exige des mesures correctives immédiates. La nécessité d'assurer la sécurité des employés a généré des demandes sans précédent en matière de technologies de l'information pour prendre en charge la productivité du travail à domicile à une échelle massive. Microsoft Office 365 est bien placé pour aider les clients à répondre à cette demande, mais la forte concurrence des utilisateurs travaillant à domicile génère un volume important de trafic Office 365 qui, s'il est acheminé par un tunnel imposé VPN et les périmètres du réseau local, provoque une saturation rapide et exécute l'infrastructure VPN à pleine capacité. Dans cette nouvelle réalité, l’utilisation d’un VPN pour accéder à Office 365 ne constitue plus un obstacle aux performances, mais une paroi difficile qui non seulement affecte Office 365, mais aussi des opérations professionnelles critiques qui doivent continuer à utiliser le réseau VPN pour fonctionner.
+La crise mondiale de grippe COVID-19 a aggravé ce problème et exige des mesures correctives immédiates. La nécessité d'assurer la sécurité des employés a généré des demandes sans précédent en matière de technologies de l'information pour prendre en charge la productivité du travail à domicile à une échelle massive. Microsoft Office 365 est bien placé pour aider les clients à répondre à cette demande, mais la forte concurrence des utilisateurs travaillant à domicile génère un volume important de trafic Office 365 qui, s'il est acheminé par un tunnel imposé VPN et les périmètres du réseau local, provoque une saturation rapide et exécute l'infrastructure VPN à pleine capacité. Dans cette nouvelle réalité, l’utilisation d’un VPN pour accéder à Office 365 ne constitue plus un obstacle aux performances, mais une paroi difficile qui non seulement affecte Office 365, mais aussi des opérations professionnelles critiques qui doivent continuer à utiliser le réseau VPN pour fonctionner.
 
 Microsoft travaille en étroite collaboration avec des clients et une grande industrie depuis de nombreuses années afin d’offrir des solutions efficaces et modernes à ces problèmes à partir de nos propres services et de s’adapter aux meilleures pratiques industrielles. Les [principes de connectivité](https://aka.ms/pnc) du service Office 365 ont été conçus pour fonctionner de manière efficace pour les utilisateurs distants tout en permettant à une organisation de maintenir la sécurité et le contrôle de leur connectivité. Ces solutions peuvent également être implémentées très rapidement avec un travail limité, mais ont un impact positif important sur les problèmes décrits ci-dessus.
 

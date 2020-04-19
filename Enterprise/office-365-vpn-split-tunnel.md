@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Instructions d’utilisation de la segmentation de tunnel VPN avec Office 365 afin d’optimiser la connectivité d’Office 365 pour les utilisateurs distants.
-ms.openlocfilehash: dc30f20b59321eeaf726485dbe39fef3ac4bba54
-ms.sourcegitcommit: 7c2c8e2e1303fc81362a4447b0a7be8609766a7b
+ms.openlocfilehash: d8f8d4364804395cd10eceb1aa55422f01cbe079
+ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43131433"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547652"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunnelling"></a>Optimiser la connectivité d’Office 365 pour les utilisateurs distants à l’aide de la segmentation de tunnel VPN
 <!---
@@ -32,9 +32,9 @@ ms.locfileid: "43131433"
 >- For information about optimizing Office 365 worldwide tenant performance for users in China, see [Office 365 performance optimization for China users](office-365-networking-china.md).
 -->
 
-Pour les clients qui connectent leurs appareils de travail à distance au réseau d'entreprise ou à l'infrastructure cloud via un VPN, Microsoft recommande que les scénarios clés Office 365 **Microsoft Teams**, **SharePoint Online** et **Exchange Online** soient acheminés via une configuration de _segmentation de tunnel VPN_. Cette stratégie s’avère particulièrement importante dans le cadre de la stratégie de première ligne mise en place pour favoriser la productivité des employés, lors d'événements qui entraîne un travail à domicile à grande échelle, tels que la pandémie de COVID-19.
+Pour les clients qui connectent leurs appareils de travail à distance au réseau d'entreprise ou à l'infrastructure cloud via un VPN, Microsoft recommande que les scénarios clés Office 365 **Microsoft Teams**, **SharePoint Online** et **Exchange Online** soient acheminés via une configuration de _segmentation de tunnel VPN_. Cette stratégie s’avère particulièrement importante dans le cadre de la stratégie de première ligne mise en place pour favoriser la productivité des employés, lors d'événements qui entraîne un travail à domicile à grande échelle, tels que la crise de COVID-19.
 
-![Configuration de la segmentation de tunnel VPN](media/vpn-split-tunnelling/vpn-model-2.png)
+![Configuration de la segmentation de tunnel par VPN](media/vpn-split-tunnelling/vpn-model-2.png)
 
 _Image 1 : Une solution de segmentation de tunnel VPN avec des exceptions Office 365 définies, envoyées directement au service. Tout autre trafic traverse le tunnel VPN, indépendamment de la destination._
 

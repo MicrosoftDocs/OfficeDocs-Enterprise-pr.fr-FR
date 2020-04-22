@@ -3,7 +3,7 @@ title: Microsoft 365 Network Assessment (aperçu)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/31/2020
+ms.date: 04/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 Network Assessment (aperçu)
-ms.openlocfilehash: 2ee18f50e841982e8f677964d2e7e57d95a209d8
-ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
+ms.openlocfilehash: 3554c86b94e6b24cf82231da640b7e010fe07c11
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43185745"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612894"
 ---
 # <a name="microsoft-365-network-assessment-preview"></a>Microsoft 365 Network Assessment (aperçu)
 
@@ -62,12 +62,12 @@ Pour SharePoint Online, la vitesse de téléchargement disponible pour un utilis
 
 Pour Microsoft Teams, la qualité du réseau est mesurée en tant que latence UDP, gigue UDP et perte de paquets UDP. UDP est utilisé pour la connectivité audio et vidéo d’appel et de conférence pour Microsoft Teams. Cela peut être influencé par les mêmes facteurs que pour la latence et la vitesse de téléchargement en plus des lacunes de connectivité dans la prise en charge UDP d’un réseau étant donné que le protocole UDP est configuré séparément pour le protocole TCP le plus courant.
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Recommandations relatives aux performances réseau dans le centre d’administration Microsoft 365 (version préliminaire)](office-365-network-mac-perf-overview.md)
 
 [Informations sur les performances du réseau Microsoft 365 (aperçu)](office-365-network-mac-perf-insights.md)
 
-[Outil d’intégration réseau Microsoft 365 dans le centre d’administration M365 (version préliminaire)](office-365-network-mac-perf-onboarding-tool.md)
+[Test de connectivité Microsoft 365 dans le centre d’administration M365 (aperçu)](office-365-network-mac-perf-onboarding-tool.md)
 
 [Services d’emplacement de connectivité réseau Microsoft 365 (aperçu)](office-365-network-mac-location-services.md)

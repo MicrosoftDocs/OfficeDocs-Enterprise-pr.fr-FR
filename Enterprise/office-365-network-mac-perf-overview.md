@@ -3,7 +3,7 @@ title: Recommandations relatives aux performances réseau dans le centre d’adm
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/31/2020
+ms.date: 04/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Vue d’ensemble des recommandations en matière de performances réseau dans le centre d’administration 365 de Microsoft (version préliminaire)
-ms.openlocfilehash: 9bd1470b80d0c65c11748bee3e8a6a73a218f55f
-ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
+ms.openlocfilehash: 077202f5ba1ffa95324131e6c283f2c3845aa07f
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43185775"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612934"
 ---
 # <a name="network-performance-recommendations-in-the-microsoft-365-admin-center-preview"></a>Recommandations relatives aux performances réseau dans le centre d’administration Microsoft 365 (version préliminaire)
 
@@ -131,18 +131,18 @@ Le service frontal Microsoft 365 est un point d’entrée sur le réseau mondial
 
 ### <a name="what-is-an-optimal-microsoft-365-service-front-door"></a>Qu’est-ce qu’une porte d’avance sur le service Microsoft 365 ?
 
-Une porte de service frontale Microsoft 365 optimale est celle qui est la plus proche de la sortie de votre réseau, généralement dans votre ville ou votre région de métro. Utilisez l' [outil d’intégration réseau microsoft 365](office-365-network-mac-perf-onboarding-tool.md) pour déterminer l’emplacement de votre service Microsoft 365 et de votre porte de service frontal optimale. Si l’outil détermine que votre porte avant de l’utilisation est optimale, vous vous connectez de manière optimale au réseau global de Microsoft.
+Une porte de service frontale Microsoft 365 optimale est celle qui est la plus proche de la sortie de votre réseau, généralement dans votre ville ou votre région de métro. Utilisez le [test de connectivité de microsoft 365](office-365-network-mac-perf-onboarding-tool.md) pour déterminer l’emplacement de votre service Microsoft 365 et de votre porte de service frontal optimale. Si l’outil détermine que votre porte avant de l’utilisation est optimale, vous vous connectez de manière optimale au réseau global de Microsoft.
 
 ### <a name="what-is-an-internet-egress-location"></a>Qu’est-ce qu’un emplacement de sortie Internet ?
 
 L’emplacement de sortie Internet est l’emplacement où votre trafic réseau quitte votre réseau d’entreprise et se connecte à Internet. Elle est également identifiée comme l’emplacement où vous avez un périphérique de traduction d’adresses réseau (NAT) et généralement l’endroit où vous vous connectez avec un fournisseur de services Internet (ISP). Si vous voyez une longue distance entre votre emplacement et votre emplacement Internet sortant, cela peut indiquer une sorte de trajet WAN important.
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Informations sur le réseau Microsoft 365 (aperçu)](office-365-network-mac-perf-insights.md)
 
 [Microsoft 365 Network Assessment (aperçu)](office-365-network-mac-perf-score.md)
 
-[Outil d’intégration réseau Microsoft 365 dans le centre d’administration M365 (version préliminaire)](office-365-network-mac-perf-onboarding-tool.md)
+[Test de connectivité Microsoft 365 dans le centre d’administration M365 (aperçu)](office-365-network-mac-perf-onboarding-tool.md)
 
 [Services d’emplacement de connectivité réseau Microsoft 365 (aperçu)](office-365-network-mac-location-services.md)

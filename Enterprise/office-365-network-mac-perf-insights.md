@@ -3,7 +3,7 @@ title: Informations sur le réseau Microsoft 365 (aperçu)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/31/2020
+ms.date: 04/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Informations sur le réseau Microsoft 365 (aperçu)
-ms.openlocfilehash: baab4716ace0b15df5878d21987c037372a2754e
-ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
+ms.openlocfilehash: 0146019d1424cda696104d68eeda32ce28a26391
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43185755"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612904"
 ---
 # <a name="microsoft-365-network-insights-preview"></a>Informations sur le réseau Microsoft 365 (aperçu)
 
@@ -141,12 +141,12 @@ Une sortie Internet plus éloignée des utilisateurs que ces emplacements rédui
 
 Pour plus d’informations sur la façon d’atténuer les problèmes de performances liés à cette vue, consultez la rubrique [Office 365 global client Optimization for China Users](https://docs.microsoft.com/office365/enterprise/office-365-networking-china).
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Recommandations relatives aux performances réseau dans le centre d’administration Microsoft 365 (version préliminaire)](office-365-network-mac-perf-overview.md)
 
 [Microsoft 365 Network Assessment (aperçu)](office-365-network-mac-perf-score.md)
 
-[Outil d’intégration réseau Microsoft 365 dans le centre d’administration M365 (version préliminaire)](office-365-network-mac-perf-onboarding-tool.md)
+[Test de connectivité Microsoft 365 dans le centre d’administration M365 (aperçu)](office-365-network-mac-perf-onboarding-tool.md)
 
 [Services d’emplacement de connectivité réseau Microsoft 365 (aperçu)](office-365-network-mac-location-services.md)

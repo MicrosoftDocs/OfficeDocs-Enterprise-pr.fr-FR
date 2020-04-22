@@ -1,9 +1,9 @@
 ---
-title: Outil d’intégration réseau Microsoft 365 dans le centre d’administration M365 (version préliminaire)
+title: Test de connectivité Microsoft 365 dans le centre d’administration M365 (aperçu)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 04/10/2020
+ms.date: 04/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,31 +13,31 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Outil d’intégration réseau Microsoft 365 dans le centre d’administration M365 (version préliminaire)
-ms.openlocfilehash: f59158f2c4365aa1d2a8bd34c0d465f1c5460449
-ms.sourcegitcommit: 6bcd8731f089feb91a58a946e89dbdc7f5e7d17b
+description: Test de connectivité Microsoft 365 dans le centre d’administration M365 (aperçu)
+ms.openlocfilehash: 265d90cf412da7e45afcbb962018f7e4311e7edc
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225697"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612874"
 ---
-# <a name="microsoft-365-network-onboarding-tool-in-the-m365-admin-center-preview"></a>Outil d’intégration réseau Microsoft 365 dans le centre d’administration M365 (version préliminaire)
+# <a name="microsoft-365-connectivity-test-in-the-m365-admin-center-preview"></a>Test de connectivité Microsoft 365 dans le centre d’administration M365 (aperçu)
 
-L’outil d’intégration réseau Microsoft 365 se trouve à <https://connectivity.office.com>l’adresse. Il s’agit d’un outil complémentaire pour les informations sur le réseau et les informations de score réseau disponibles dans le centre d’administration 365 de Microsoft sous **Health | Menu performances du réseau** .
+Le test de connectivité de Microsoft 365 se <https://connectivity.office.com>trouve à l’adresse. Il s’agit d’un outil complémentaire pour les informations sur le réseau et les informations de score réseau disponibles dans le centre d’administration 365 de Microsoft sous **Health | Menu performances du réseau** .
 
 >[!NOTE]
 >L’outil d’intégration prend en charge les locataires dans le commerce WW et GCC modéré, mais pas GCC High, DoD, Germany ou Chine.
 
-Le réseau Insights dans le centre d’administration 365 de Microsoft est basé sur les mesures de produit pour votre client Microsoft 365. En comparaison, le réseau Insights de l’outil d’intégration réseau Microsoft 365 est exécuté localement dans l’outil. Les tests pouvant être effectués dans-le produit sont limités et l’exécution de tests locaux sur l’utilisateur permet de collecter davantage de données, ce qui donne lieu à des analyses plus approfondies. Envisagez ensuite que le réseau Insights dans le centre d’administration 365 de Microsoft indique qu’il existe un problème de réseau pour l’utilisation de Microsoft 365 à un emplacement de bureau spécifique. L’outil d’intégration réseau Microsoft 365 peut vous aider à identifier la cause première de ce problème à l’aide d’une action d’amélioration des performances réseau recommandée.
+Le réseau Insights dans le centre d’administration 365 de Microsoft est basé sur les mesures de produit pour votre client Microsoft 365. En comparaison, les informations réseau du test de connectivité de Microsoft 365 sont exécutées localement dans l’outil. Les tests pouvant être effectués dans-le produit sont limités et l’exécution de tests locaux sur l’utilisateur permet de collecter davantage de données, ce qui donne lieu à des analyses plus approfondies. Envisagez ensuite que le réseau Insights dans le centre d’administration 365 de Microsoft indique qu’il existe un problème de réseau pour l’utilisation de Microsoft 365 à un emplacement de bureau spécifique. Le test de connectivité de Microsoft 365 peut vous aider à identifier la cause première de ce problème à l’aide d’une action d’amélioration des performances réseau recommandée.
 
-Nous vous recommandons de les utiliser ensemble pour évaluer l’état de qualité de la mise en réseau pour chaque emplacement de bureau dans le centre d’administration 365 de Microsoft et des informations supplémentaires sont disponibles après le déploiement de tests basés sur l’outil d’intégration réseau Microsoft 365.
+Nous vous recommandons de les utiliser ensemble pour évaluer l’état de la qualité du réseau pour chaque emplacement de bureau dans le centre d’administration 365 de Microsoft et d’autres informations spécifiques après le déploiement des tests en fonction du test de connectivité de Microsoft 365.
 
 >[!IMPORTANT]
 >Les informations sur le réseau, les recommandations en matière de performances et les évaluations dans le centre d’administration 365 de Microsoft sont actuellement en état d’aperçu et sont uniquement disponibles pour les locataires Microsoft 365 qui ont été apportées dans le programme d’aperçu des fonctionnalités.
 
 ## <a name="the-advanced-tests-client-application"></a>Application cliente de tests avancés
 
-Il existe deux parties à l’outil d’intégration réseau Microsoft 365. Il existe un site <https://connectivity.office.com> Web et il existe une application cliente téléchargeable Windows. Le client téléchargeable exécute des tests de connectivité réseau avancés et la plupart des tests doivent être exécutés.
+Le test de connectivité de Microsoft 365 comporte deux parties. Il existe un site <https://connectivity.office.com> Web et il existe une application cliente téléchargeable Windows. Le client téléchargeable exécute des tests de connectivité réseau avancés et la plupart des tests doivent être exécutés.
 
 Vous pouvez exécuter le test du client avancé à partir du site Web et remplir les résultats dans la page Web au fur et à mesure de son exécution.
 

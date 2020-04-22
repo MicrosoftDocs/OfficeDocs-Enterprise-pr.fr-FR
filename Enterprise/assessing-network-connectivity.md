@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
 description: Office 365 est conçu pour permettre aux clients du monde entier de se connecter au service à l’aide d’une connexion Internet. À mesure que le service évolue, la sécurité, les performances et la fiabilité d’Office 365 sont améliorées en fonction des clients qui utilisent Internet pour établir une connexion au service.
-ms.openlocfilehash: c96cb8aa7341c0749d198e1fa5459433c40e1062
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 8c818cc959910e57f25f20ef6d1c4d3992a2330a
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844695"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612864"
 ---
 # <a name="assessing-office-365-network-connectivity"></a>Évaluation de la connectivité réseau Office 365
 
@@ -44,7 +44,7 @@ Certaines ressources pour vous aider à évaluer votre réseau :
 - Consultez la rubrique [vue d’ensemble de la connectivité réseau office 365](office-365-networking-overview.md) pour obtenir des informations conceptuelles sur la mise en réseau Office 365.
 - Consultez les [principes de connectivité réseau office 365](https://aka.ms/o365networkingprinciples) pour comprendre les principes de connectivité permettant de gérer le trafic Office 365 en toute sécurité et d’obtenir les meilleures performances possibles.
 - Inscrivez-vous à [Microsoft FastTrack](https://www.microsoft.com/fasttrack) pour obtenir une assistance interactive concernant la planification, la conception et le déploiement d’Office 365. 
-- Voir la section de l' [outil d’intégration réseau Office 365](assessing-network-connectivity.md#the-office-365-network-onboarding-tool) ci-dessous pour exécuter des tests de connectivité de base qui fournissent des conseils spécifiques sur les améliorations de connectivité réseau pouvant être effectuées entre un emplacement utilisateur donné et Office 365.
+- Consultez la section [test de connectivité de Microsoft 365](assessing-network-connectivity.md#the-microsoft-365-connectivity-test) ci-dessous pour exécuter des tests de connectivité de base qui fournissent des conseils spécifiques sur les améliorations de connectivité réseau pouvant être effectuées entre un emplacement utilisateur donné et Office 365.
 
 > [!NOTE]
 > L’autorisation Microsoft est requise pour utiliser ExpressRoute pour Office 365. Microsoft révise chaque demande de client et autorise uniquement l’utilisation d’ExpressRoute pour Office 365 lorsque la configuration requise par le client impose une connectivité directe. Si vous avez ces exigences, indiquez l’extrait de texte et le lien Web du règlement que vous interprétez pour signifier que la connectivité directe est requise dans le [formulaire de demande ExpressRoute pour Office 365](https://aka.ms/O365ERReview) pour commencer une révision Microsoft. Les abonnements non autorisés qui tentent de créer des filtres d’itinéraires pour Office 365 recevront un [message d’erreur](https://support.microsoft.com/kb/3181709).
@@ -59,9 +59,9 @@ Points clés à prendre en compte lors de la planification de votre évaluation 
 
 Si vous évaluez Office 365 et que vous ne savez pas où commencer avec votre évaluation réseau ou si vous avez rencontré des problèmes de conception réseau pour lesquels vous avez besoin d’aide pour le surmonter, contactez votre équipe de compte Microsoft.
 
-## <a name="the-office-365-network-onboarding-tool"></a>Outil d’intégration réseau Office 365
+## <a name="the-microsoft-365-connectivity-test"></a>Test de connectivité de Microsoft 365
 
-L' [outil d’intégration réseau Office 365](https://aka.ms/netonboard) est un outil d’évaluation réseau POC (proof of concept) qui exécute des tests de connectivité de base sur votre client Office 365 et fait des recommandations de conception réseau spécifiques pour des performances optimales d’Office 365. L’outil met en évidence les choix courants de la conception du périmètre du réseau d’entreprise, qui sont utiles pour la navigation Web Internet, mais qui influent sur les performances des applications SaaS volumineuses telles que Office 365.
+Le [test de connectivité de Microsoft 365](https://aka.ms/netonboard) est un outil d’évaluation réseau de preuve de concept (POC) qui exécute des tests de connectivité de base sur votre client Office 365 et fait des recommandations de conception réseau spécifiques pour des performances Office 365 optimales. L’outil met en évidence les choix courants de la conception du périmètre du réseau d’entreprise, qui sont utiles pour la navigation Web Internet, mais qui influent sur les performances des applications SaaS volumineuses telles que Office 365.
 
 L’outil d’intégration réseau effectue les opérations suivantes :
 
@@ -103,17 +103,17 @@ L’application téléchargeable de tests avancés fournit les informations supp
 - Tests de connectivité vers plusieurs points de terminaison propres aux fonctionnalités
 - Diagnostics de chemin d’accès réseau qui incluent les données tracert et de latence pour les services Exchange Online, SharePoint Online et Teams
 
-Pour plus d’informations sur l’outil d’intégration réseau Office 365, consultez la rubrique [mise à jour de l’outil d’intégration réseau office 365 sur le nouveau site de blog recommandations de conception réseau](https://techcommunity.microsoft.com/t5/Office-365-Networking/Updated-Office-365-Network-Onboarding-Tool-POC-with-new-network/m-p/711130#M130) . Des informations sur les mises à jour futures de cet outil et d’autres mises à jour de mise en réseau Office 365 seront publiées sur le blog de [mise en réseau office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking) .
+Pour plus d’informations sur le test de connectivité de Microsoft 365, consultez le billet de blog [microsoft 365 Connectivity Test POC avec New Network Design Recommendations](https://techcommunity.microsoft.com/t5/Office-365-Networking/Updated-Office-365-Network-Onboarding-Tool-POC-with-new-network/m-p/711130#M130) . Des informations sur les mises à jour futures de cet outil et d’autres mises à jour de mise en réseau Office 365 seront publiées sur le blog de [mise en réseau office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking) .
   
 Voici un petit lien que vous pouvez utiliser pour revenir : [ https://aka.ms/o365networkconnectivity.](https://aka.ms/o365networkconnectivity)
   
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir également
 
 [Vue d’ensemble de la connectivité réseau Office 365](office-365-networking-overview.md)
 
 [Principes de connectivité réseau Office 365](https://aka.ms/o365networkingprinciples)
 
-[Gestion des points de terminaison Office 365](managing-office-365-endpoints.md)
+[Gestion des points de terminaison Office 365](managing-office-365-endpoints.md)
 
 [URL et plages d’adresses IP Office 365](urls-and-ip-address-ranges.md)
 

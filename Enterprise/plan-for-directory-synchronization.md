@@ -5,7 +5,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
 ms.topic: conceptual
-ms.date: 05/20/2019
+ms.date: 04/20/2010
 ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Décrit la synchronisation d’annuaires avec Office 365, le nettoyage des services de domaine Active Directory et l’outil Azure Active Directory Connect.
-ms.openlocfilehash: 5368fc00aafe66ed51af80c50aaf72ee5f939041
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 44894cdbc65c243ce0c4a66ceba1d123ece49c62
+ms.sourcegitcommit: f2e640ffdbef95c6d98845f85fd9bea21a7388aa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841761"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43580931"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-office-365"></a>Identité hybride et synchronisation d’annuaires pour Office 365
 
@@ -69,7 +69,7 @@ Avec la synchronisation de hachage de mot de passe (hachage), vous synchronisez 
 
 Lorsque les mots de passe sont modifiés ou réinitialisés en local, les nouveaux hachages de mot de passe sont synchronisés avec Azure AD afin que les utilisateurs puissent toujours utiliser le même mot de passe pour les ressources en nuage et les ressources locales. Les mots de passe utilisateur ne sont jamais envoyés à Azure AD ou stockés dans Azure AD en texte clair. Certaines fonctionnalités avancées d’Azure AD, telles que la protection des identités, nécessitent hachage, quelle que soit la méthode d’authentification sélectionnée.
   
-Pour plus d’informations, voir [Choosing hachage](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) .
+Pour plus d’informations, voir [Choosing hachage](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn) .
   
 #### <a name="pass-through-authentication"></a>Authentification directe
 
@@ -81,15 +81,15 @@ DIRECTE permet à vos utilisateurs de se connecter à des ressources et des appl
 
 DIRECTE est également destiné aux organisations disposant d’un impératif de sécurité pour appliquer immédiatement les États de compte d’utilisateur, les stratégies de mot de passe et les heures d’ouverture de session locaux. 
   
-Pour plus d’informations, voir [Choosing directe](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) .
+Pour plus d’informations, voir [Choosing directe](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn) .
   
 ### <a name="federated-authentication"></a>Authentification fédérée
 
 L’authentification fédérée est principalement destinée aux grandes entreprises ayant des exigences d’authentification plus complexes. Les identités AD DS sont synchronisées avec Office 365 et les comptes d’utilisateurs sont gérés en local. Avec l’authentification fédérée, les utilisateurs ont le même mot de passe sur site et dans le Cloud et ils n’ont pas besoin de se connecter à nouveau pour utiliser Office 365. 
 
-L’authentification fédérée peut prendre en charge des exigences d’authentification supplémentaires, telles que l’authentification par carte à puce ou une authentification multifacteur tierce et est généralement requise lorsque les organisations ont une condition d’authentification non pris en charge en mode natif par Azure AD.
+L’authentification fédérée peut prendre en charge des exigences d’authentification supplémentaires, telles que l’authentification par carte à puce ou une authentification multifacteur tierce et est généralement requise lorsque les organisations ont une condition d’authentification qui n’est pas prise en charge en mode natif par Azure AD.
  
-Voir [choix de l’authentification fédérée](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) pour en savoir plus.
+Voir [choix de l’authentification fédérée](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn) pour en savoir plus.
   
 #### <a name="third-party-authentication-and-identity-providers"></a>Fournisseurs d’identité et d’authentification tiers
 
@@ -147,7 +147,7 @@ La synchronisation d’annuaires est requise pour les fonctionnalités et foncti
 
 Lorsque vous êtes prêt à déployer l’identité hybride, consultez la rubrique préparer la mise [en service des utilisateurs](prepare-for-directory-synchronization.md).
   
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir également
 
 [Vue d’ensemble de Microsoft 365 Entreprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)
 

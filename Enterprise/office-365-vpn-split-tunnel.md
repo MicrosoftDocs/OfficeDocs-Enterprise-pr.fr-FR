@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Instructions d’utilisation de la segmentation de tunnel VPN avec Office 365 afin d’optimiser la connectivité d’Office 365 pour les utilisateurs distants.
-ms.openlocfilehash: d8f8d4364804395cd10eceb1aa55422f01cbe079
-ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
+ms.openlocfilehash: ac3964146b23ac03bc5bd104c7cd359e94a1a06b
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43547652"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612854"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunnelling"></a>Optimiser la connectivité d’Office 365 pour les utilisateurs distants à l’aide de la segmentation de tunnel VPN
 <!---
@@ -115,4 +115,4 @@ Dans de nombreux cas, cette implémentation peut être réalisée en quelques he
 
 [Évaluation de la connectivité réseau Office 365](assessing-network-connectivity.md)
 
-[Outil d'intégration du réseau Office 365](https://aka.ms/netonboard)
+[Test de connectivité Microsoft 365](https://aka.ms/netonboard)

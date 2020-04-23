@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Comment implémenter un tunnel VPN partagé pour Office 365
-ms.openlocfilehash: 84b59351e07ca151000aa58727ce779e8f522722
-ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
+ms.openlocfilehash: edc19af175aaa3d0366a8ec1c3af55a0aeb041fd
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43547662"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612924"
 ---
 # <a name="implementing-vpn-split-tunnelling-for-office-365"></a>Implémentation d'un tunnel VPN partagé pour Office 365
 
@@ -248,7 +248,7 @@ Vous pouvez également consulter des informations sur les contrôles de sécurit
 
 Une fois la stratégie en place, vous devez vérifier qu’elle fonctionne comme prévu. Plusieurs méthodes s’offrent à vous pour tester que le chemin d’accès est correctement configuré pour utiliser la connexion Internet locale :
 
-- Exécutez l’outil d’[intégration du réseau Office 365](https://aka.ms/netonboard) qui effectue des tests de connectivité pour vous, y compris les itinéraires de suivi, comme ci-dessus. Nous ajoutons également des tests VPN dans cet outil, qui devrait également fournir une vue d’ensemble supplémentaire.
+- Exécutez le [Test de connectivité Microsoft 365](https://aka.ms/netonboard). Celui-ci effectuera pour vous des tests de connectivité, comme les itinéraires de suivi ci-dessus. Nous ajoutons également des tests VPN dans cet outil, qui devrait également fournir une vue d’ensemble supplémentaire.
 
 - Un traceur simple à un point de terminaison dans la portée du tunnel partagé doit afficher la trajectoire prise, par exemple :
 

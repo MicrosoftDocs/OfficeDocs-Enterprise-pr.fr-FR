@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: 'Résumé : Déployez Azure AD Connect sur une machine virtuelle dans Azure pour synchroniser les comptes entre votre répertoire local et le client Azure AD de votre abonnement Office 365.'
-ms.openlocfilehash: 0c92771788d932127c0afaf5724e89ce11298a32
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 05e0071ce9ffb172fc1399f4038c603ef0d335c5
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840541"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793657"
 ---
 # <a name="deploy-office-365-directory-synchronization-in-microsoft-azure"></a>Déploiement de la synchronisation d’annuaires Office 365 dans Microsoft Azure
 
@@ -192,7 +192,7 @@ Azure AD Connect ajoute des comptes à votre abonnement Office 365 à partir 
     
 ## <a name="see-also"></a>Voir aussi
 
-[Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.md)
+[Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.yml)
   
 [Connecter un réseau local à Microsoft Azure Virtual Network](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
 

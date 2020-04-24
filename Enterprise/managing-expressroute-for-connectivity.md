@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
 description: ExpressRoute pour Office 365 offre un autre chemin de routage pour atteindre de nombreux services Office 365 sans avoir besoin de tout le trafic vers Internet. Bien que la connexion Internet à Office 365 soit toujours nécessaire, les itinéraires spécifiques publiés par Microsoft par le biais de BGP sur votre réseau rendent le circuit direct ExpressRoute préféré, sauf si d’autres configurations sont présentes dans votre réseau. Les trois domaines courants que vous pouvez configurer pour gérer ce routage incluent le filtrage des préfixes, la sécurité et la conformité.
-ms.openlocfilehash: 54edc348e3c91e1b34555d5d4743ccdc7748191f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 4793cd5c70407e7dc58a5a8f6f0eda30b3f23474
+ms.sourcegitcommit: 88a110ede50e210aaff3469307d85d354fdaef49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844985"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43798795"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>Gestion d’ExpressRoute pour la connectivité d’Office 365
 
@@ -35,7 +35,7 @@ ExpressRoute pour Office 365 offre un autre chemin de routage pour atteindre de 
 
 Microsoft recommande que les clients acceptent tous les itinéraires BGP publiés par Microsoft, les itinéraires fournis par le biais d’un processus de validation et de validation rigoureux supprimant les avantages à ajouter. ExpressRoute fournit en mode natif les contrôles recommandés, tels que la propriété de préfixe IP, l’intégrité et l’étendue, sans filtrage de route entrant côté client.
   
-Si vous avez besoin d’une validation supplémentaire de la propriété de l’itinéraire sur l’homologation publique ExpressRoute, vous pouvez vérifier les itinéraires publiés par rapport à la liste de tous les préfixes IP IPv4 et IPv6 qui représentent les [plages d’adresses IP publiques de Microsoft](https://www.microsoft.com/download/details.aspx?id=53602). Ces plages couvrent l’espace d’adressage Microsoft complet et changent peu fréquemment, ce qui fournit un ensemble fiable de plages à filtrer, ce qui offre également une protection supplémentaire aux clients concernés par les routes appartenant à des non-Microsoft qui fuient dans leurs contexte. Si une modification est apportée, elle est effectuée le 1er du mois et le numéro de version dans la section **Détails** de la page est modifié chaque fois que le fichier est mis à jour.
+Si vous avez besoin d’une validation supplémentaire de la propriété de l’itinéraire sur l’homologation publique ExpressRoute, vous pouvez vérifier les itinéraires publiés par rapport à la liste de tous les préfixes IP IPv4 et IPv6 qui représentent les [plages d’adresses IP publiques de Microsoft](https://www.microsoft.com/download/details.aspx?id=53602). Ces plages couvrent l’espace d’adressage Microsoft complet et changent peu fréquemment, ce qui fournit un ensemble fiable de plages à filtrer, ce qui offre également une protection supplémentaire aux clients concernés par les routes appartenant à des non-Microsoft qui se trouvent dans leur environnement. Si une modification est apportée, elle est effectuée le 1er du mois et le numéro de version dans la section **Détails** de la page est modifié chaque fois que le fichier est mis à jour.
   
 Il existe plusieurs raisons d’éviter l’utilisation des [URL et des plages d’adresses IP Office 365](https://aka.ms/o365endpoints) pour la génération de listes de filtres de préfixe. Notamment :
   
@@ -49,8 +49,7 @@ Il existe plusieurs raisons d’éviter l’utilisation des [URL et des plages d
 |:-----|:-----|:-----|
 |Accepter tous les itinéraires Microsoft  <br/> |**Faible :** Le client s’appuie sur des contrôles Microsoft pour s’assurer que tous les itinéraires sont correctement détenus.  <br/> |Aucun  <br/> |
 |Filtrage des superréseaus appartenant à Microsoft  <br/> |**Moyenne :** Le client met en œuvre des listes de filtres de préfixes résumées pour autoriser uniquement les itinéraires appartenant à Microsoft.  <br/> |Les clients doivent s’assurer que les mises à jour infréquentes sont reflétées dans les filtres d’itinéraires.  <br/> |
-|Filtrer les plages d’adresses IP Office 365  <br/> [!CAUTION] Non recommandé
-|**Haute :** Le client filtre les itinéraires en fonction des préfixes IP d’Office 365.  <br/> |Les clients doivent implémenter un processus de gestion des modifications robuste pour les mises à jour mensuelles.  <br/> [!CAUTION] Cette solution nécessite des modifications importantes. Les modifications non mises en œuvre dans le temps entraîneront probablement une panne de service.   |
+|Filtrer les plages d’adresses IP Office 365  <br/> [!CAUTION] Non recommandé |**Haute :** Le client filtre les itinéraires en fonction des préfixes IP d’Office 365.  <br/> |Les clients doivent implémenter un processus de gestion des modifications robuste pour les mises à jour mensuelles.  <br/> [!CAUTION] Cette solution nécessite des modifications importantes. Les modifications non mises en œuvre dans le temps entraîneront probablement une panne de service.   |
 
 La connexion à Office 365 à l’aide d’Azure ExpressRoute repose sur des publicités BGP de sous-réseaux IP spécifiques qui représentent des réseaux sur lesquels les points de terminaison Office 365 sont déployés. En raison de la nature internationale d’Office 365 et du nombre de services qui composent Office 365, les clients ont souvent besoin de gérer les publicités qu’ils acceptent sur leur réseau. Si vous êtes préoccupé par le nombre de préfixes annoncés dans votre environnement, la fonctionnalité [communautaire BGP](https://support.office.com/article/Using-BGP-communities-in-ExpressRoute-for-Office-365-scenarios-preview-9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099) vous permet de filtrer les publicités sur un ensemble spécifique de services Office 365. Cette fonctionnalité est maintenant en aperçu.
   
@@ -101,9 +100,9 @@ Microsoft recommande d’accepter ces connexions sur votre circuit Internet au l
 
 Nous ne faisons pas confiance au chemin de routage que vous utilisez pour nos contrôles de conformité. Que vous vous connectiez aux services Office 365 via un ExpressRoute ou un circuit Internet, nos contrôles de conformité ne changent pas. Vous devez passer en revue les différents niveaux de certification de sécurité et de conformité pour Office 365 afin de déterminer le meilleur choix pour répondre aux besoins de votre organisation.
   
-Voici un bref lien que vous pouvez utiliser pour revenir : [https://aka.ms/manageexpressroute365](https://aka.ms/manageexpressroute365)
+Voici un lien que vous pouvez utiliser pour revenir : [https://aka.ms/manageexpressroute365](https://aka.ms/manageexpressroute365)
   
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Réseaux de distribution de contenu](content-delivery-networks.md)
   

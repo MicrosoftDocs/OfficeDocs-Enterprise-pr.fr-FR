@@ -18,18 +18,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: 'Résumé : Configurez et faites une démonstration de la sécurité des applications cloud Office 365 dans votre environnement de développement/test Office 365.'
-ms.openlocfilehash: a4f0f9e8912a5455ec5253e9992873136e71d694
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: f76aaa5b13e409f08a4b96714e1f4bdfcc84ecac
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840801"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793717"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Sécurité des applications cloud pour votre environnement de développement/test Office 365
 
  **Résumé :** Configurez et faites une démonstration de la sécurité des applications cloud Office 365 dans votre environnement de développement/test Office 365.
   
-Office 365 Cloud App Security, précédemment appelé Office 365 Advanced Security Management, vous permet de créer des stratégies qui surveillent et vous informent des activités suspectes dans votre abonnement Office 365, afin que vous puissiez examiner et prendre les mesures correctives possibles. transactionnelle. Pour plus d’informations, reportez-vous à la rubrique [vue d’ensemble de la sécurité des applications Cloud dans Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475).
+Office 365 Cloud App Security, précédemment appelé Office 365 Advanced Security Management, vous permet de créer des stratégies qui surveillent et vous informent des activités suspectes dans votre abonnement Office 365, afin que vous puissiez examiner et prendre les mesures correctives possibles. Pour plus d’informations, reportez-vous à la rubrique [vue d’ensemble de la sécurité des applications Cloud dans Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475).
   
 Les instructions fournies dans cet article indiquent comment activer et tester la sécurité des applications cloud dans votre abonnement d’évaluation Office 365.
   
@@ -165,7 +165,7 @@ Vous pouvez désormais utiliser cet environnement pour créer des stratégies et
   
 [Environnement de développement/test Office 365](office-365-dev-test-environment.md)
   
-[Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.md)
+[Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.yml)
 
 [Vue d’ensemble de la sécurité des applications Cloud dans Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)
 

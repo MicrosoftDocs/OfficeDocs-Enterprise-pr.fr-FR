@@ -17,24 +17,24 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Instructions d’utilisation de la segmentation de tunnel VPN avec Office 365 afin d’optimiser la connectivité d’Office 365 pour les utilisateurs distants.
-ms.openlocfilehash: ac3964146b23ac03bc5bd104c7cd359e94a1a06b
-ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
+ms.openlocfilehash: 38eda4fb34ddd907e43a3a82976ffe64aa1f8c34
+ms.sourcegitcommit: 2c4092128fb12bda0c98b0c5e380d2cd920e7c9b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43612854"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43803986"
 ---
-# <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunnelling"></a>Optimiser la connectivité d’Office 365 pour les utilisateurs distants à l’aide de la segmentation de tunnel VPN
+# <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunneling"></a>Optimiser la connectivité d’Office 365 pour les utilisateurs à distance à l’aide de la segmentation de tunnel VPN
 <!---
 >[!NOTE]
 >This topic is part of a set of topics that address Office 365 optimization for remote users.
->- For VPN split tunnel implementation guidance, see [Implementing VPN split tunnelling for Office 365](office-365-vpn-implement-split-tunnel.md).
+>- For VPN split tunnel implementation guidance, see [Implementing VPN split tunneling for Office 365](office-365-vpn-implement-split-tunnel.md).
 >- For information about optimizing Office 365 worldwide tenant performance for users in China, see [Office 365 performance optimization for China users](office-365-networking-china.md).
 -->
 
 Pour les clients qui connectent leurs appareils de travail à distance au réseau d'entreprise ou à l'infrastructure cloud via un VPN, Microsoft recommande que les scénarios clés Office 365 **Microsoft Teams**, **SharePoint Online** et **Exchange Online** soient acheminés via une configuration de _segmentation de tunnel VPN_. Cette stratégie s’avère particulièrement importante dans le cadre de la stratégie de première ligne mise en place pour favoriser la productivité des employés, lors d'événements qui entraîne un travail à domicile à grande échelle, tels que la crise de COVID-19.
 
-![Configuration de la segmentation de tunnel par VPN](media/vpn-split-tunnelling/vpn-model-2.png)
+![Configuration de la segmentation de tunnel par VPN](media/vpn-split-tunneling/vpn-model-2.png)
 
 _Image 1 : Une solution de segmentation de tunnel VPN avec des exceptions Office 365 définies, envoyées directement au service. Tout autre trafic traverse le tunnel VPN, indépendamment de la destination._
 
@@ -46,7 +46,7 @@ L’essentiel de cette approche consiste à offrir une méthode simple, permetta
 
 - Peut être configurée, testée et implémentée rapidement par les clients, sans infrastructure ou configuration d’application supplémentaires. 
 
-  En fonction de la plateforme VPN et de l’architecture réseau, l’implémentation peut prendre quelques heures. Si vous souhaitez en savoir plus, consultez l’article [Implémenter la segmentation de tunnel VPN](office-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunnelling).
+  En fonction de la plateforme VPN et de l’architecture réseau, l’implémentation peut prendre quelques heures. Si vous souhaitez en savoir plus, consultez l’article [Implémenter la segmentation de tunnel VPN](office-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling).
 
 - Préserve la posture de sécurité des implémentations VPN client en ne modifiant pas la façon dont les autres connexions sont acheminées, notamment le trafic vers Internet
 
@@ -65,7 +65,7 @@ Si vous souhaitez obtenir des instructions complètes sur l’implémentation, c
 
 Les réseaux d’entreprise traditionnels sont souvent conçus pour fonctionner de façon sécurisée dans un environnement préexistant dans lequel les données, les services et les applications les plus importants sont hébergés en local et sont directement connectés au réseau interne de l’entreprise, comme la plupart des utilisateurs. Ainsi, l'infrastructure réseau est construite autour de ces éléments et, en ce sens, les succursales sont connectées au siège social via des réseaux _MPLS (Multiprotocol Label Switching)_, et les utilisateurs distants doivent se connecter au réseau d'entreprise via un VPN pour accéder à la fois aux points de terminaison locaux et à Internet. Dans ce modèle, tout le trafic provenant d’utilisateurs distants traverse le réseau d’entreprise et est acheminé vers le service cloud via un point de sortie commun.
 
-![Configuration VPN obligatoire](media/vpn-split-tunnelling/vpn-model-1.png)
+![Configuration VPN obligatoire](media/vpn-split-tunneling/vpn-model-1.png)
 
 _Image 2 : Une solution VPN commune pour les utilisateurs distants où tout le trafic est renvoyé vers le réseau d’entreprise, quelle que soit la destination_
 
@@ -88,7 +88,7 @@ Cet ensemble de points de terminaison étroitement limité peut être séparé d
 
 Les éléments de sécurité tels que la DLP, la protection antivirus, l’authentification et le contrôle d’accès peuvent être fournis beaucoup plus efficacement contre ces points d'extrémité dans les différentes couches du service. Cela permet également de dérouter l’essentiel du volume de trafic à partir de la solution VPN, ce qui libère la capacité VPN pour le trafic important de l’entreprise qui en dépend encore. Cela devrait également supprimer la nécessité, dans de nombreux cas, de passer par un programme de mise à niveau long et coûteux pour faire face à ce nouveau mode de fonctionnement.
 
-![Configuration de la segmentation de tunnel VPN](media/vpn-split-tunnelling/vpn-model-2.png)
+![Configuration de la segmentation de tunnel VPN](media/vpn-split-tunneling/vpn-model-2.png)
 
 _Image 3 : Une solution de segmentation de tunnel VPN avec des exceptions Office 365 définies, envoyées directement au service. Tout autre trafic est renvoyé dans le réseau d'entreprise, quelle que soit la destination._
 
@@ -97,11 +97,11 @@ Du point de vue de la sécurité, Microsoft dispose d'une gamme de fonctionnalit
 Dans de nombreux cas, cette implémentation peut être réalisée en quelques heures, ce qui permet de résoudre rapidement l'un des problèmes les plus urgents auxquels sont confrontées les organisations, qui passent rapidement au travail à distance de façon exclusive. Si vous souhaitez obtenir des instructions sur l’implémentation de la segmentation du tunnel VPN, consultez l’article [Implémentation de la segmentation de tunnel VPN pour Office 365](office-365-vpn-implement-split-tunnel.md).
 
 >[!NOTE]
->Microsoft s’est engagé à interrompre les modifications apportées pour **Optimiser** les points de terminaison pour Office 365 jusqu’au **30 juin 2020** minimum, ce qui permet aux clients de se concentrer sur d’autres enjeux plutôt que de maintenir la liste des points de terminaison approuvés, une fois initialement implémentée.
+>Microsoft s’est engagé à interrompre les modifications apportées à **optimiser** les points de terminaison pour Office 365 jusqu’au **30 juin 2020** minimum, ce qui permet aux clients de se concentrer sur d’autres défis plutôt que de maintenir la liste blanche des points de terminaison une fois initialement implémentée.
 
-## <a name="related-topics"></a>Articles connexes
+## <a name="related-topics"></a>Voir aussi
 
-[Implémentation de la segmentation du tunnel par VPN pour Office 365](office-365-vpn-implement-split-tunnel.md)
+[Implémentation d'un tunnel VPN partagé pour Office 365](office-365-vpn-implement-split-tunnel.md)
 
 [Optimisation des performances de Microsoft Office 365 pour les utilisateurs résidant en Chine](office-365-networking-china.md)
 

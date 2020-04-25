@@ -3,7 +3,7 @@ title: Désactiver l’accès aux services lors de l’attribution des licences 
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/27/2019
+ms.date: 04/24/2020
 audience: Admin
 ms.topic: article
 ms.collection: Ent_O365
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: Découvrez comment attribuer des licences à des comptes d’utilisateur et à désactiver des plans de service spécifiques en même temps à l’aide d’Office 365 PowerShell.
-ms.openlocfilehash: 668c801983f76ec9da93d023ebe1f74e7a6c5a6c
-ms.sourcegitcommit: 3aa6c61242c5691e3180a474ad059bd84c86dc9e
+ms.openlocfilehash: 15a3e7d848d4e952e75a96108b87f59ee5bc9974
+ms.sourcegitcommit: 038ea34214149773bc53668f75d06d4d00a6a7c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43206561"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "43813237"
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>Désactiver l’accès aux services lors de l’attribution des licences utilisateur
 
@@ -105,7 +105,7 @@ Le tableau suivant présente les plans de service Office 365 et leurs noms convi
 | `TEAMS1` <br/> |Microsoft Teams  <br/> |
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
-| `OFFICESUBSCRIPTION` <br/> |Office 365 ProPlus  <br/> |
+| `OFFICESUBSCRIPTION` <br/> |Office 365 ProPlus  <br/> |
 | `MCOSTANDARD` <br/> |Skype Entreprise Online  <br/> |
 | `SHAREPOINTWAC` <br/> |Office   <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
@@ -124,12 +124,9 @@ $userUPN="<the user's account name in email format>"
 $accountSkuId="<the AccountSkuId from the Get-MsolAccountSku command>"
 $planList=@( <comma-separated, double-quote enclosed list of the service plans to disable> )
 $licenseOptions=New-MsolLicenseOptions -AccountSkuId $accountSkuId -DisabledPlans $planList
-$user=Get-MsolUser -UserPrincipalName $userUPN
-$usageLocation=$user.Usagelocation
 Set-MsolUserLicense -UserPrincipalName $userUpn -AddLicenses $accountSkuId -ErrorAction SilentlyContinue
 Sleep -Seconds 5
 Set-MsolUserLicense -UserPrincipalName $userUpn -LicenseOptions $licenseOptions -ErrorAction SilentlyContinue
-Set-MsolUser -UserPrincipalName $userUpn -UsageLocation $usageLocation
 ```
 
 Voici un exemple de bloc de commande pour le compte nommé belindan@contoso.com, pour la licence contoso:ENTERPRISEPACK, et les plans de service à désactiver sont RMS_S_ENTERPRISE, SWAY, INTUNE_O365 et YAMMER_ENTERPRISE :
@@ -139,12 +136,9 @@ $userUPN="belindan@contoso.com"
 $accountSkuId="contoso:ENTERPRISEPACK"
 $planList=@( "RMS_S_ENTERPRISE","SWAY","INTUNE_O365","YAMMER_ENTERPRISE" )
 $licenseOptions=New-MsolLicenseOptions -AccountSkuId $accountSkuId -DisabledPlans $planList
-$user=Get-MsolUser -UserPrincipalName $userUPN
-$usageLocation=$user.Usagelocation
 Set-MsolUserLicense -UserPrincipalName $userUpn -AddLicenses $accountSkuId -ErrorAction SilentlyContinue
 Sleep -Seconds 5
 Set-MsolUserLicense -UserPrincipalName $userUpn -LicenseOptions $licenseOptions -ErrorAction SilentlyContinue
-Set-MsolUser -UserPrincipalName $userUpn -UsageLocation $UsageLocation
 ```
 
 ### <a name="for-multiple-users"></a>Pour plusieurs utilisateurs
@@ -171,11 +165,9 @@ ForEach ($user in $users)
 {
 $user.Userprincipalname
 $upn=$user.UserPrincipalName
-$usageLocation=$user.UsageLocation
 Set-MsolUserLicense -UserPrincipalName $upn -AddLicenses $accountSkuId -ErrorAction SilentlyContinue
 sleep -Seconds 5
 Set-MsolUserLicense -UserPrincipalName $upn -LicenseOptions $licenseOptions -ErrorAction SilentlyContinue
-Set-MsolUser -UserPrincipalName $upn -UsageLocation $usageLocation
 $users | Get-MsolUser | Select UserPrincipalName, Islicensed,Usagelocation | Export-Csv $outFileName
 }
 ```
@@ -197,4 +189,3 @@ Ce bloc de commande PowerShell :
 [Gérer les comptes d’utilisateur, les licences et les groupes avec Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
 [Gérer Office 365 avec Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
-

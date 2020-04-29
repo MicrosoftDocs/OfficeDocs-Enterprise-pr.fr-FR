@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Instructions d’utilisation de la segmentation de tunnel VPN avec Office 365 afin d’optimiser la connectivité d’Office 365 pour les utilisateurs distants.
-ms.openlocfilehash: 38eda4fb34ddd907e43a3a82976ffe64aa1f8c34
-ms.sourcegitcommit: 2c4092128fb12bda0c98b0c5e380d2cd920e7c9b
+ms.openlocfilehash: d40a5c3f81baae24253bc8a24d5916c6729e393b
+ms.sourcegitcommit: c2f90c022ca323736d9c43929b5681c3f8db0e6f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43803986"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43901217"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunneling"></a>Optimiser la connectivité d’Office 365 pour les utilisateurs à distance à l’aide de la segmentation de tunnel VPN
 <!---
@@ -77,9 +77,10 @@ Pour le service Office 365, Microsoft a conçu les exigences de connectivité p
 
 Office 365 classe les points de terminaison requis pour Office 365 en trois catégories : **Optimiser**, **Autoriser** et **Par défaut**. **Optimiser** les points de terminaison est notre objectif ici et présente les caractéristiques suivantes :
 
-- Ce sont des points de terminaison détenus et gérés par Microsoft et hébergés sur une infrastructure Microsoft
-- Ils ont des adresses IP fournies
-- Faible taux de variation qui devrait rester de taille réduite (actuellement 20 sous-réseaux IP)
+- Les points de terminaison détenus et gérés par Microsoft sont-ils hébergés sur une infrastructure Microsoft
+- Sont-ils dédiés aux principales charges de travail Office 365 comme Exchange Online, SharePoint Online, Skype Entreprise Online et Microsoft Teams
+- Ont-ils des adresses IP fournies
+- Faible taux de modifications et qui devraient rester de taille réduite (actuellement 20 sous-réseaux IP)
 - Ils sont sensibles au volume et / ou à la latence
 - Ils sont en mesure d'avoir les éléments de sécurité requis fournis dans le service plutôt qu'en ligne sur le réseau
 - Représente environ 70 à 80% du volume de trafic vers le service Office 365

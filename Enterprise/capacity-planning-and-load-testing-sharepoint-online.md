@@ -14,15 +14,17 @@ ms.collection:
 f1.keywords:
 - CSH
 ms.custom: Adm_O365
-search.appverid: SPO160
+search.appverid:
+- SPO160
+- MET150
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
 description: Cet article explique comment déployer sur SharePoint Online sans effectuer de tests de charge traditionnels, car il n’est pas autorisé.
-ms.openlocfilehash: ca0ae008778cfd5d347d8b4f78b7db927b4e8f82
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d082dbd93f9724080118f5e387713dc374e50643
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844705"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004607"
 ---
 # <a name="capacity-planning-and-load-testing-sharepoint-online"></a>Planification de la capacité et test de charge SharePoint Online
 Cet article explique comment déployer sur SharePoint Online sans test de charge classique, étant donné que le test de charge n’est pas autorisé sur SharePoint Online. SharePoint Online est un service Cloud et les capacités de chargement, l’intégrité et l’équilibre global de la charge dans le service sont gérées par Microsoft.
@@ -41,6 +43,6 @@ La capacité consiste à ajouter davantage de matériel en continu, mais elle co
 ## <a name="why-you-cannot-load-test-sharepoint-online"></a>Pourquoi ne puis-je pas charger SharePoint Online
 Dans les environnements locaux, le test de charge permet de valider l’hypothèse d’envergure et de trouver le point de fin d’une batterie de serveurs ; en le saturant avec Load. 
 
-Avec SharePoint Online, nous devons effectuer des opérations différemment, car l’évolution est relativement fluide et ajuste, limite et contrôle la charge, en fonction de certains heuristiques. Dans ce cas, nous devons protéger tous les clients de la même batterie de serveurs, afin de limiter automatiquement les tests de charge. Si, en revanche, vous tentez de charger le test, en dehors de la limitation, vous recevrez des résultats délimités et potentiellement trompeurs, car la batterie de serveurs que vous avez testée aujourd’hui aura probablement des changements d’envergure pendant la période de test ou dans les heures après le test, comme les actions d’échelle et d’équilibrage de batterie de serveurs sont effectuées sur une base continue.
+Avec SharePoint Online, nous devons effectuer des opérations différemment, car l’évolution est relativement fluide et ajuste, limite et contrôle la charge, en fonction de certains heuristiques. Dans ce cas, nous devons protéger tous les clients de la même batterie de serveurs, afin de limiter automatiquement les tests de charge. Si, en revanche, vous tentez de charger le test, en dehors de la limitation, vous recevrez des résultats délimités et potentiellement trompeurs, car la batterie que vous avez testée aujourd’hui aura probablement subi des changements d’échelle pendant la période de test ou pendant quelques heures après le test, car les actions d’échelle et d’équilibrage de la batterie de serveurs sont effectuées en permanence.
 
 Au lieu de tenter de charger SharePoint test en tant que service, il est préférable de suivre les pratiques recommandées et de suivre les conseils de [création, de lancement et de maintenance d’un portail sain](https://go.microsoft.com/fwlink/?linkid=2105838) .

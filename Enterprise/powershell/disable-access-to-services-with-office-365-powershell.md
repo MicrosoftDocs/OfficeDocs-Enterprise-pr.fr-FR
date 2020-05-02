@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -17,12 +19,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: Utilisez Office 365 PowerShell pour désactiver l’accès aux services 365 Office pour les utilisateurs.
-ms.openlocfilehash: 17927b6d7e402aff66c059e159ae81a950667ad1
-ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
+ms.openlocfilehash: e0a486bbe3a783443fc25cbadff61721761a0028
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106215"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004647"
 ---
 # <a name="disable-access-to-services-with-office-365-powershell"></a>Désactiver l’accès aux services Office 365 PowerShell
 
@@ -161,6 +163,6 @@ Pour désactiver les services Office 365 pour les utilisateurs pendant que vous 
 
 [Gérer les comptes d’utilisateur, les licences et les groupes avec Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Gérer Office 365 avec Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
+[Gérer Office 365 avec Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
   
 [Mise en route d'Office 365 Powershell](getting-started-with-office-365-powershell.md)

@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -17,12 +19,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
 description: Explique comment utiliser Office 365 PowerShell pour déterminer les services Office 365 qui ont été attribués à des utilisateurs.
-ms.openlocfilehash: a21b64ac3bbccd88a87f3498153c1efd5054c82a
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 603470be87aea2d58f343511026fb2860e58b688
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844165"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004487"
 ---
 # <a name="view-account-license-and-service-details-with-office-365-powershell"></a>Afficher les détails de service et de licence de compte avec Office 365 PowerShell
 
@@ -127,6 +129,6 @@ $licArray
 
 [Gérer les comptes d’utilisateur, les licences et les groupes avec Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Gérer Office 365 avec Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
+[Gérer Office 365 avec Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
   
 [Mise en route d'Office 365 Powershell](getting-started-with-office-365-powershell.md)

@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -17,12 +19,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: 'Résumé : Affichez, répertoriez ou affichez vos comptes d’utilisateur de différentes manières avec Office 365 PowerShell.'
-ms.openlocfilehash: ca4bd7effea39632f8a30c192e0f703a289c7b71
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: c97fd55b2516198f2beaddd558174c62972547c6
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844125"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004147"
 ---
 # <a name="view-user-accounts-with-office-365-powershell"></a>Afficher des comptes d’utilisateur avec Office 365 PowerShell
 
@@ -297,7 +299,7 @@ Get-ADUser ([guid][System.Convert]::FromBase64String((Get-MsolUser -UserPrincipa
 
 [Gérer les comptes d’utilisateur, les licences et les groupes avec Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Gérer Office 365 avec Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
+[Gérer Office 365 avec Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
   
 [Mise en route d'Office 365 Powershell](getting-started-with-office-365-powershell.md)
 

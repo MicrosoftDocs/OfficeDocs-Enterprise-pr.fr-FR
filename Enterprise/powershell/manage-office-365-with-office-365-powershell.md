@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -17,12 +19,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: 'Résumé : Découvrez comment utiliser Office 365 PowerShell avec des utilisateurs et des licences Office 365, Skype Entreprise Online, SharePoint Online, Exchange Online et le Centre de sécurité et conformité Office 365.'
-ms.openlocfilehash: 5608d955dc408a600b398c9f0fb061d436f0ba56
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: fbc10833d3ee1e7377e6ed68adb7d2299fce72fa
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841431"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004567"
 ---
 # <a name="manage-office-365-with-office-365-powershell"></a>Gérer Office 365 avec Office 365 PowerShell
 
@@ -52,7 +54,7 @@ Sélectionnez la rubrique selon vos besoins :
 
     Commencez ici si vous avez installé les modules Office 365 PowerShell PowerShell et que vous souhaitez migrer votre messagerie électronique à partir de systèmes existants.
 
-- [Centre de sécurité & conformité](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell)
+- [Centre de sécurité et conformité](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell)
 
     Commencez par là si vous souhaitez utiliser les commandes d’automatisation pour gérer le Centre de sécurité et de conformité.
 
@@ -60,6 +62,6 @@ Sélectionnez la rubrique selon vos besoins :
 
     Commencez ici si vous souhaitez utiliser des partenaires de syndication et de fournisseur de solutions Cloud (CSP) pour gérer vos locataires clients Office 365.
 
-- [Skype Entreprise Online](manage-skype-for-business-online-with-office-365-powershell.md)
+- [Skype Entreprise Online](manage-skype-for-business-online-with-office-365-powershell.md)
 
     Commencez par là si vous avez installé les modules Office 365 PowerShell et que vous souhaitez effectuer la gestion de Skype Entreprise Online.

@@ -14,15 +14,17 @@ ms.collection:
 f1.keywords:
 - CSH
 ms.custom: Adm_O365
-search.appverid: SPO160
+search.appverid:
+- SPO160
+- MET150
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
 description: Cet article explique comment réduire le temps de chargement des pages SharePoint Online en utilisant JavaScript pour différer le chargement des images et en attendant de charger le code JavaScript non essentiel jusqu’à ce que la page se charge.
-ms.openlocfilehash: 86efb767e80927f7d3f5d8055676e6d99da4d667
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 14220839c196ea3dd987be5dc924c2f41965fc0a
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840561"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004597"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>Différer le chargement des images et des éléments JavaScript dans SharePoint Online
 

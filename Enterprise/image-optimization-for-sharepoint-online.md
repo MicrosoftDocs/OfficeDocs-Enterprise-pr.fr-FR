@@ -14,15 +14,17 @@ ms.collection:
 f1.keywords:
 - CSH
 ms.custom: Adm_O365
-search.appverid: SPO160
+search.appverid:
+- SPO160
+- MET150
 ms.assetid: c7edb02a-fdab-4f91-9a20-cba01dad28ef
 description: Découvrez comment utiliser des rendus et des sprites pour améliorer les performances de l’image sur vos sites de publication classiques SharePoint Online.
-ms.openlocfilehash: 4fb6d2b6b553bcc938c660d9aed35bc575a31389
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 240c8240f8dec8ca24f9d231e319d35abc175c7f
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840191"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004577"
 ---
 # <a name="image-optimization-for-sharepoint-online-classic-publishing-sites"></a>Optimisation des images pour les sites de publication classiques SharePoint Online
 

@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Découvrez comment Azure ExpressRoute est utilisé avec Office 365 et comment planifier le projet d’implémentation réseau qui sera requis si vous déployez Azure ExpressRoute pour une utilisation avec Office 365.
-ms.openlocfilehash: 76d90e4c60e04302e8a14f3020ac0f968bf018ae
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: cf280ff386893f98844e5653ceed180339f701a6
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844925"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009359"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Azure ExpressRoute pour Office 365
 
@@ -68,7 +68,7 @@ Le tableau suivant répertorie les services Office 365 pris en charge sur Expres
 
 <sup>1</sup> Chacune de ces applications a des exigences de connectivité Internet qui ne sont pas prises en charge sur ExpressRoute, consultez l’article relatif aux [points de terminaison Office 365](https://aka.ms/o365endpoints) pour plus d’informations.
 
-Les services qui ne sont pas inclus dans ExpressRoute pour Office 365 sont les téléchargements de client Office 365 ProPlus, la connexion au fournisseur d’identité sur site et Office 365 (géré par 21 VIANET) du service en Chine.
+Les services qui ne sont pas inclus dans ExpressRoute pour Office 365 sont des applications Microsoft 365 pour les téléchargements de clients d’entreprise, la connexion au fournisseur d’identité sur site et Office 365 (géré par 21 VIANET) du service en Chine.
 
 ## <a name="implementing-expressroute-for-office-365"></a>Implémentation d’ExpressRoute pour Office 365
 
@@ -96,7 +96,7 @@ Pour obtenir des références supplémentaires, utilisez notre [Guide de routage
 
 Pour acheter ExpressRoute pour Office 365, vous devez travailler avec un ou plusieurs [fournisseurs approuvés](https://azure.microsoft.com/documentation/articles/expressroute-locations/) afin de mettre en service les circuits de nombre et de taille souhaités avec un abonnement ExpressRoute Premium. Il n’existe aucune licence supplémentaire à acheter auprès d’Office 365.
 
-Voici un bref lien que vous pouvez utiliser pour revenir : [https://aka.ms/expressrouteoffice365](https://aka.ms/expressrouteoffice365)
+Voici un lien que vous pouvez utiliser pour revenir : [https://aka.ms/expressrouteoffice365](https://aka.ms/expressrouteoffice365)
 
 Vous êtes prêt à vous inscrire à [ExpressRoute pour Office 365](https://aka.ms/ert)?
 

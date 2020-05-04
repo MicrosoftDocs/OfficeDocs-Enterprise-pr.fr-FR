@@ -18,13 +18,13 @@ f1.keywords:
 - CSH
 ms.custom: Adm_O365
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
-description: Ces étapes de présentation sont destinées à vous aider à configurer votre réseau, à créer vos identités, à déployer Office 365 ProPlus, à migrer vos données et à aider les personnes de votre organisation à utiliser Office 365.
-ms.openlocfilehash: 979b7f1153451b072c5ab25ad8aced50ae69576a
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Ces étapes de présentation sont destinées à vous aider à configurer votre réseau, à créer vos identités, à déployer des applications Microsoft 365 pour l’entreprise, à migrer vos données et à aider les personnes de votre organisation à utiliser Office 365.
+ms.openlocfilehash: 456b080d166578a50b345a047e5a37c839b69e20
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844015"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009279"
 ---
 # <a name="deploy-office-365-enterprise-for-your-organization"></a>Déployer Office 365 Entreprise pour votre organisation
 
@@ -34,7 +34,7 @@ Cet article décrit deux options de déploiement, si vous souhaitez obtenir de l
 
 ## <a name="guided-office-365-enterprise-setup-process-with-fasttrack"></a>Processus de configuration guidé Office 365 Enterprise avec FastTrack
 
-**[FastTrack pour office 365](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365)** est la meilleure méthode de déploiement d’Office 365. FastTrack vous guide tout au long des configurations de déploiement les plus courantes et peut répondre aux questions en cours. 
+**[FastTrack pour office 365](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365)** est la meilleure méthode de déploiement d’Office 365. FastTrack vous guide dans les configurations de déploiement courantes et répond à vos questions tout au long du processus. 
 
 Pour accéder à une série de guides de configuration, connectez-vous à votre abonnement Office 365, puis accédez à la [configuration d’office 365](https://aka.ms/o365fasttrack).
 
@@ -60,9 +60,9 @@ Pour déployer Office 365 entreprise par vous-même après avoir terminé votre 
 
    Inclut la configuration et le déploiement de la sécurité de base et améliorée, des menaces et des protections des informations pour votre client et vos identités au cours des 30 premiers jours, 90 jours et au-delà.
  
-4. [Déployer le logiciel client](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
+4. [Déployer le logiciel client](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
 
-   Inclut le déploiement d’Office 365 ProPlus, la version actualisée sur le Cloud et la version toujours actuelle de la suite Office (Word, Excel, PowerPoint et autres) sur vos appareils. Chaque licence client Office 365 inclut une licence pour Office 365 ProPlus.
+   Inclut le déploiement d’applications Microsoft 365 pour Enterprise (précédemment nommé Office 365 ProPlus), la version mise à jour sur le Cloud et la version toujours actuelle de la suite Office (Word, Excel, PowerPoint et autres) sur vos appareils. Chaque licence client Office 365 inclut une licence pour les applications Microsoft 365 pour les entreprises.
  
 5. [Configurer la gestion des appareils mobiles](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
 

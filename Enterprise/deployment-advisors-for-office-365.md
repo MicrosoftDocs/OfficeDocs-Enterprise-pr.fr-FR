@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Accélérez la planification et la configuration d’Office 365 ou de Microsoft 365 avec des conseillers en matière de déploiement.
-ms.openlocfilehash: cb721b2bc115a9419feb4becaef4bcbb9c5c436e
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 535bf1a0bcc47f3e311eeb714f957c36dde67fdd
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840531"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009390"
 ---
 # <a name="deployment-advisors-for-office-365-or-microsoft-365-services"></a>Conseillers de déploiement pour les services Office 365 ou Microsoft 365
 
@@ -159,23 +159,23 @@ Si vous disposez de Gmail, vous devez migrer vos contacts gmail et vos élément
 
 ## <a name="file-creation-storage-and-sharing"></a>Création, stockage et partage de fichiers
 
-### <a name="office-365-proplus"></a>Office 365 ProPlus
+### <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for enterprise
 
-Office 365 ProPlus permet à vos utilisateurs de s’exécuter sur les versions les plus récentes d’Office et de les maintenir à jour.
+Microsoft 365 apps pour entreprises (précédemment nommé Office 365 ProPlus) permet à vos utilisateurs de fonctionner sur les versions les plus récentes d’Office et de les maintenir à jour.
 
 Pour savoir comment installer Office sur un PC ou un Mac pour votre entreprise, reportez-vous à ce guide, y compris des conseils pour faire démarrer tous les utilisateurs avec Office.
 
 |||
 |:-------|:-----|
-| **Générer** |  [Guide de démarrage rapide d’Office 365 ProPlus](https://aka.ms/OPPquickstartguide) <BR> |
+| **Générer** |  [Guide de démarrage rapide pour les applications Microsoft 365 Enterprise](https://aka.ms/OPPquickstartguide) <BR> |
 |||
 
-Le conseiller de déploiement Office 365 ProPlus décrit les étapes à suivre pour aider les utilisateurs à installer Office 365 ProPlus directement à partir du portail Office 365 Portal Online ou pour déployer Office 365 ProPlus sur vos utilisateurs à partir d’un emplacement local. Les instructions relatives à l’utilisation du gestionnaire de configuration de point de terminaison Microsoft, un script de démarrage de stratégie de groupe, une image de disque du système d’exploitation ou l’activation partagée des services Bureau à distance (RDS).
+Le conseiller en déploiement Office décrit les étapes à suivre pour aider les utilisateurs à installer directement les applications Microsoft 365 pour l’entreprise directement à partir du portail Office 365 Portal Online ou pour déployer des applications Microsoft 365 pour l’entreprise auprès de vos utilisateurs à partir d’un emplacement local. Les instructions relatives à l’utilisation du gestionnaire de configuration de point de terminaison Microsoft, un script de démarrage de stratégie de groupe, une image de disque du système d’exploitation ou l’activation partagée des services Bureau à distance (RDS).
 
 |||
 |:-------|:-----|
-| **Générer** | [Conseiller de déploiement Office 365 ProPlus](https://aka.ms/o365proplusdeploy) | 
-| **Visualisez** | [Expérience Office en tant que service d’abonnement](https://aka.ms/qo45jf) <BR> [Vue d'ensemble d'Office 365 ProPlus](https://aka.ms/r359zr) | 
+| **Générer** | [Conseiller en matière de déploiement d’Office](https://aka.ms/o365proplusdeploy) | 
+| **Visualisez** | [Expérience Office en tant que service d’abonnement](https://aka.ms/qo45jf) <BR> [Vue d’ensemble des applications Microsoft 365 pour les entreprises](https://aka.ms/r359zr) | 
 |||
 
 
@@ -187,7 +187,7 @@ Pour démarrer rapidement avec OneDrive entreprise pour le stockage, le partage 
 
 |||
 |:-------|:-----|
-| **Générer** | [Conseiller de déploiement Office 365 ProPlus](https://aka.ms/o365proplusdeploy) | 
+| **Générer** | [Conseiller en matière de déploiement d’Office](https://aka.ms/o365proplusdeploy) | 
 | **Visualisez** | [Avantages intégrés de OneDrive entreprise](https://aka.ms/f66hqa) <BR> [Bienvenue dans OneDrive : en provenance d’un autre fournisseur de stockage cloud](https://videoplayercdn.osi.office.net/embed/6b11f30b-725a-4145-8b72-45a41793a432) | 
 |||
 
@@ -236,7 +236,7 @@ Pour configurer des fonctionnalités, telles que la gestion des accès basée su
 | **Générer** |  [Guide de configuration d’Azure AD Basic](https://aka.ms/azureadbasic) |
 |||
 
-Pour activer les nombreuses fonctionnalités d’Azure AD Premium, qui fournit des fonctionnalités de gestion des identités comme l’authentification multifacteur, l’authentification unique (SSO), l’inscription de l’appareil, la gestion des groupes et le mot de passe en libre-service, ainsi que la surveillance de la sécurité, utilisez ce guide .
+Pour activer les nombreuses fonctionnalités d’Azure AD Premium, qui fournit des fonctionnalités de gestion des identités comme l’authentification multifacteur, l’authentification unique (SSO), l’inscription de l’appareil, la gestion des groupes et le mot de passe en libre-service, ainsi que la surveillance de la sécurité, utilisez ce guide.
   
 |||
 |:-------|:-----|
@@ -264,7 +264,7 @@ Les groupes Office 365 sont un espace de travail partagé pour les messages éle
 | **Générer** |[Guide de configuration des groupes Office 365](https://aka.ms/groupsguide) |
 |||
   
-### <a name="microsoft-teams"></a>Microsoft Teams
+### <a name="microsoft-teams"></a>Microsoft Teams
 
 Microsoft teams est le service de collaboration basé sur la conversation dans Office 365 qui fournit des espaces de travail d’équipe pour les conversations, les appels, les réunions et les messages privés. Le conseiller de déploiement de teams vous permet de configurer et de configurer l’expérience de teams optimale avec Exchange Online, SharePoint Online, OneDrive entreprise et les groupes Office 365. Elle comprend des informations sur la configuration des paramètres de client, des équipes et des canaux pour vos projets, des appels et des réunions, la messagerie, des onglets pour accéder rapidement aux applications, les robots d’information et les connecteurs vers des services tiers.
 

@@ -18,12 +18,12 @@ search.appverid: MET150
 ms.assetid: cbd2369c-fd96-464c-bf48-c99826b459ee
 description: Si votre organisation utilise Office 365 et limite les ordinateurs de votre réseau à se connecter à Internet, vous trouverez ci-dessous les points de terminaison (noms de domaine complets, ports, URL, IPv4 et plages d’adresses IPv6) que vous devez inclure dans vos listes vertes de trafic sortant afin de vous assurer que vos ordinateurs peuvent utiliser correctement Office 365.
 hideEdit: true
-ms.openlocfilehash: 2bae9db94baf517eb6d7551beb06a343804319ff
-ms.sourcegitcommit: 5fb126747182108e31594b22e4677f05b1fb9313
+ms.openlocfilehash: 4372770ebc0e1005d460aa2fe802f9968ff5c7cb
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43928178"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009489"
 ---
 # <a name="office-365-us-government-gcc-high-endpoints"></a>Office 365 gouvernement américain GCC High Endpoints
 
@@ -38,7 +38,7 @@ ms.locfileid: "43928178"
   
 |||
 |:-----|:-----|
-|**Dernière mise à jour :** 04/28/2020-abonnement au ![](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Journal des modifications](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) RSS <br/> |**Téléchargement :** liste complète au [format JSON](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
+|**Dernière mise à jour :** 28/04/2020 – ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Abonnement au Journal des modifications](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Téléchargement :** liste complète au [format JSON](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
 
  Commencez par [gérer les points de terminaison Office 365](managing-office-365-endpoints.md) pour comprendre nos recommandations en matière de gestion de la connectivité réseau à l’aide de ces données. Les données de points de terminaison sont mises à jour au début de chaque mois avec de nouvelles adresses IP et des URL publiées 30 jours avant d’être actives. Cela permet aux clients qui ne disposent pas encore de mises à jour automatiques d’effectuer leurs processus avant que la nouvelle connectivité ne soit requise. Les points de terminaison peuvent également être mis à jour au cours du mois si cela s’avère nécessaire pour traiter les escalades, les incidents de sécurité ou d’autres exigences opérationnelles immédiates. Les données affichées sur cette page ci-dessous sont toutes générées à partir des services Web basés sur REST. Si vous utilisez un script ou un périphérique réseau pour accéder à ces données, vous devez accéder directement au [service Web](office-365-ip-web-service.md) .
 
@@ -56,7 +56,7 @@ Les colonnes de données affichées sont :
 
 - **Adresses** : répertorie les noms de domaine complets ou noms de domaines génériques et plages d’adresses IP pour l’ensemble de points de terminaison. Notez qu’une plage d’adresses IP est au format CIDR et peut inclure plusieurs adresses IP individuelles dans le réseau spécifié.
  
-- **Ports** : répertorie les ports TCP ou UDP associés aux adresses pour former le point de terminaison réseau. Vous remarquerez peut-être certains doublons dans les plages d’adresses IP lorsque plusieurs ports sont répertoriés.
+- **Ports**: Répertorie les ports TCP ou UDP qui sont combinées avec les adresses pour former le point de terminaison réseau. Vous remarquerez peut-être que certains duplication dans les plages d’adresses IP lorsqu’il y a des ports différents répertoriés.
  
 [!INCLUDE [Office 365 U.S. Government GCC High endpoints](./includes/office-365-u.s.-government-gcc-high-endpoints.md)]
 
@@ -64,5 +64,5 @@ Remarques à propos de ce tableau :
 
 - Le centre de sécurité et de conformité (SCC) fournit la prise en charge d’Azure ExpressRoute pour Office 365. Il en va de même pour de nombreuses fonctionnalités présentées via SCC, telles que la création de rapports, l’audit, la découverte électronique avancée, la DLP unifiée et la gouvernance des données. Deux fonctionnalités spécifiques, l’importation de fichiers PST et l’exportation eDiscovery, ne prennent actuellement pas en charge Azure ExpressRoute avec uniquement les filtres d’itinéraires Office 365 en raison de leur dépendance vis-à-vis du stockage BLOB Azure. Pour utiliser ces fonctionnalités, vous devez disposer d’une connectivité séparée vers le stockage BLOB Azure à l’aide des options de connectivité Azure prises en charge, qui incluent une connectivité Internet ou Azure ExpressRoute avec des filtres d’itinéraires publics Azure. Vous devez évaluer la connectivité de ces deux fonctionnalités. L’équipe Office 365 information protection est consciente de cette limitation et travaille activement à la prise en charge d’Azure ExpressRoute pour Office 365, comme limité aux filtres d’itinéraires Office 365 pour ces deux fonctionnalités.
 
-- Il existe des points de terminaison facultatifs supplémentaires pour Office 365 ProPlus qui ne sont pas répertoriés et qui ne sont pas requis pour que les utilisateurs puissent lancer des applications Office 365 ProPlus et modifier des documents. Les points de terminaison facultatifs sont hébergés dans des centres de données Microsoft et ne traitent, ne transmettent pas ou ne stockent pas de données client. Nous vous recommandons de diriger les connexions des utilisateurs vers ces points de terminaison vers le périmètre de sortie Internet par défaut.
+- Il existe des points de terminaison facultatifs supplémentaires pour les applications Microsoft 365 pour entreprise qui ne sont pas répertoriées et qui ne sont pas requises pour que les utilisateurs puissent lancer des applications Microsoft 365 pour les applications d’entreprise et modifier des documents. Les points de terminaison facultatifs sont hébergés dans des centres de données Microsoft et ne traitent, ne transmettent pas ou ne stockent pas de données client. Nous vous recommandons de diriger les connexions des utilisateurs vers ces points de terminaison vers le périmètre de sortie Internet par défaut.
 

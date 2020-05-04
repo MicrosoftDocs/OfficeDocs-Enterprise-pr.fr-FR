@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
 description: Cet article explique comment réduire le temps de chargement des pages SharePoint Online en utilisant JavaScript pour différer le chargement des images et en attendant de charger le code JavaScript non essentiel jusqu’à ce que la page se charge.
-ms.openlocfilehash: 14220839c196ea3dd987be5dc924c2f41965fc0a
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+ms.openlocfilehash: 09feb74b92d6fec99ba28f432ea19858cb3e094b
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004597"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009349"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>Différer le chargement des images et des éléments JavaScript dans SharePoint Online
 
 Cet article explique comment réduire le temps de chargement des pages SharePoint Online en utilisant JavaScript pour différer le chargement des images et en attendant de charger le code JavaScript non essentiel jusqu’à ce que la page se charge.
   
-Les images peuvent avoir une incidence négative sur la vitesse de chargement des pages sur SharePoint Online. Par défaut, la plupart des navigateurs Internet modernes extraient les images lors du chargement d’une page HTML. Cela peut entraîner un chargement insuffisant de la page si les images ne sont pas visibles à l’écran jusqu’à ce que l’utilisateur fasse défiler vers le bas. Les images peuvent empêcher le navigateur de charger la partie visible de la page. Pour contourner ce problème, vous pouvez utiliser JavaScript pour ignorer d’abord le chargement des images. De plus, le chargement de JavaScript non essentiels peut ralentir le temps de chargement de vos pages SharePoint. Cette rubrique décrit certaines méthodes que vous pouvez utiliser pour améliorer les temps de chargement des pages avec JavaScript dans SharePoint Online.
+Les images peuvent avoir une incidence négative sur la vitesse de chargement des pages sur SharePoint Online. Par défaut, la plupart des navigateurs Internet modernes extraient les images lors du chargement d’une page HTML. Cela peut entraîner un chargement insuffisant de la page si les images ne sont pas visibles à l’écran jusqu’à ce que l’utilisateur fasse défiler vers le bas. Les images peuvent empêcher le navigateur de charger la partie visible de la page. Pour contourner ce problème, vous pouvez utiliser JavaScript pour ignorer d’abord le chargement des images. De plus, le chargement de JavaScript non essentiels peut ralentir le temps de téléchargement sur vos pages SharePoint. Cette rubrique décrit certaines méthodes que vous pouvez utiliser pour améliorer les temps de chargement des pages avec JavaScript dans SharePoint Online.
   
 ## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>Améliorer les temps de chargement des pages en retardant le chargement de l’image dans les pages SharePoint Online à l’aide de JavaScript
 
@@ -109,7 +109,7 @@ Pour que cela fonctionne, vous devez également référencer jQuery dans la page
   
 ![Capture d’écran montrant une seule image chargée sur une page](media/3d177ddb-67e5-43a7-b327-c9f9566ca937.png)
   
-La capture d’écran suivante montre le reste des images qui sont téléchargées une fois qu’elles ont fait défiler vers la vue.
+La capture d’écran suivante montre les autres images qui sont téléchargées après avoir fait défiler l’écran.
   
 ![Capture d’écran montrant plusieurs images chargées sur une page](media/95eb2b14-f6a1-4eac-a5cb-96097e49514c.png)
   
@@ -121,7 +121,7 @@ Ne manquez pas l’article et l’exemple de code sur l' [injection JavaScript](
   
 ## <a name="see-also"></a>Voir aussi
 
-[Navigateurs pris en charge dans Office 2013 et Office 365 ProPlus](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
+[Navigateurs pris en charge dans Office 2013 et Microsoft 365 applications pour les entreprises](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
   
 [Comment appliquer une page maître à un site dans SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525627)
   

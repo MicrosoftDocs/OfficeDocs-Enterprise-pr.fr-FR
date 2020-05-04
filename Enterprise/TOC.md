@@ -111,7 +111,7 @@
 ## [3. Implémenter la sécurité](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
 
 ## 4. Déployer le logiciel client
-### [Déployer Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
+### [Déployer les Applications Microsoft 365 pour les grandes entreprises](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
 ### [Déployer le client Skype Entreprise](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/deploy-the-skype-for-business-client-in-office-365)
 ### [Déployer et gérer les applications mobiles](https://support.office.com/article/d35db652-629d-4087-8dc0-1e0ed922307c)
 

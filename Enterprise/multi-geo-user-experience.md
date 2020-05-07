@@ -13,12 +13,12 @@ f1.keywords:
 ms.custom: ''
 localization_priority: Priority
 description: Découvrez l’expérience utilisateur de SharePoint, de OneDrive et d’Exchange dans un environnement multigéographique.
-ms.openlocfilehash: 75d24ac7a89ff2dfe66af713fdae7ece21ebda3c
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: 21858989f853b2a8c87808e38763068631173f7f
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974216"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057750"
 ---
 # <a name="user-experience-in-a-multi-geo-environment"></a>Expérience utilisateur dans un environnement multigéographique
 
@@ -32,7 +32,7 @@ La boîte aux lettres Exchange d’un utilisateur est approvisionnée dans l’e
 
 Les sites hub SharePoint améliorent la détection et renforcent l’implication à l’aide de contenu destiné aux employés lors de la création d’une représentation complète et cohérente de projets, départements ou régions. Dans un environnement multigéographique, des sites d’emplacements satellites peuvent facilement être associés à un site hub, indépendamment de l’emplacement géographique de celui-ci. Les utilisateurs peuvent rechercher et obtenir des résultats sur le hub via une simple expérience de recherche, indépendamment de l’emplacement géographique des sites.
 
-## <a name="office-365-app-launcher"></a>Lanceur d’applications Office 365
+## <a name="microsoft-365-app-launcher"></a>Lanceur d’applications Microsoft 365
 
 Le lanceur d’applications prend en compte la configuration multigéographique et dirige chaque vignette vers l’emplacement géographique approprié de la charge de travail. Les vignettes SharePoint et OneDrive pointent vers l’utilisateur à l’emplacement correspondant à l’emplacement géographique approvisionné de l’utilisateur. Cela signifie que, si l’utilisateur a un OneDrive dans l’emplacement central, sa vignette SharePoint pointe vers sa page d’accueil SharePoint dans l’emplacement central, mais que son site de groupe sera approvisionné à l’emplacement correspondant à son emplacement par défaut des données. 
 

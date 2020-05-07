@@ -1,5 +1,5 @@
 ---
-title: Configurer la recherche pour Office 365 multigéographique
+title: Configurer la recherche pour Microsoft 365 Multi-Geo
 ms.reviewer: adwood
 ms.author: tlarsen
 author: tklarsen
@@ -13,14 +13,14 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Découvrez la procédure de configuration de la recherche dans un environnement multigéographique.
-ms.openlocfilehash: 9f4861a2a093ac8497a86022f44c168a1c5982ab
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: 0b84dc2eea246643e277936cfa8eeb2b9f87b614
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974006"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057670"
 ---
-# <a name="configure-search-for-office-365-multi-geo"></a>Configurer la recherche pour Office 365 multigéographique
+# <a name="configure-search-for-microsoft-365-multi-geo"></a>Configurer la recherche pour Microsoft 365 Multi-Geo
 
 Dans un environnement multigéographique, chaque emplacement géographique comporte son propre index de recherche et son centre de recherche. Lorsqu’un utilisateur effectue une recherche, la requête est distribuée à tous les index et les résultats renvoyés sont fusionnés.
 
@@ -102,7 +102,7 @@ Certaines fonctionnalités de recherche auxquelles vous êtes habitué fonctionn
 </tr>
 <tr class="even">
 <td align="left">Recherche hybride</td>
-<td align="left">Dans un environnement SharePoint hybride avec <a href="https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint">recherche hybride dans le cloud</a>, le contenu local est ajouté à l’index Office 365 de l’emplacement central.</td>
+<td align="left">Dans un environnement SharePoint hybride avec <a href="https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint">recherche hybride dans le cloud</a>, le contenu local est ajouté à l’index Microsoft 365 de l’emplacement central.</td>
 <td align="left"></td>
 </tr>
 </tbody>

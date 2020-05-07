@@ -12,20 +12,20 @@ f1.keywords:
 ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
-description: Découvrez comment supprimer un emplacement satellite dans Office 365 multigéographique.
-ms.openlocfilehash: 702f42eb9211d6c3c4f59812c6894855b169f587
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+description: Découvrez comment supprimer un emplacement satellite dans Microsoft 365 Multi-Geo.
+ms.openlocfilehash: 840c1bf494ddcd7e6558b134655b5cb708bf6e7b
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974863"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057640"
 ---
-# <a name="delete-a-satellite-location-in-office-365-multi-geo"></a>Supprimer un emplacement satellite dans Office 365 multigéographique
+# <a name="delete-a-satellite-location-in-microsoft-365-multi-geo"></a>Supprimer un emplacement satellite dans Microsoft 365 Multi-Geo
 
 Si vous n’avez plus besoin d’un emplacement satellite, vous pouvez le supprimer de votre locataire via le Centre d’administration SharePoint.
 
 > [!WARNING]
-> Toutes les données utilisateur dans l’emplacement satellite sont supprimées définitivement. Cela inclut le contenu OneDrive Entreprise, les sites SharePoint et les boîtes aux lettres Exchange, y compris les boîtes aux lettres de groupe Office 365. Vous devez migrer toutes les données vers un autre emplacement satellite ou l’emplacement central avant de supprimer l’emplacement satellite. Cette action ne peut pas être annulée.
+> Toutes les données utilisateur dans l’emplacement satellite sont supprimées définitivement. Cela inclut le contenu OneDrive Entreprise, les sites SharePoint et les boîtes aux lettres Exchange, y compris les boîtes aux lettres de groupe Microsoft 365. Vous devez migrer toutes les données vers un autre emplacement satellite ou l’emplacement central avant de supprimer l’emplacement satellite. Cette action ne peut pas être annulée.
 
 Seuls les administrateurs généraux peuvent supprimer des emplacements satellites.
 

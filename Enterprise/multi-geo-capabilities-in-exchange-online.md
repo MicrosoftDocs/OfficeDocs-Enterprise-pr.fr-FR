@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: ''
 localization_priority: Priority
 description: Découvrez les fonctionnalités multigéographiques d’Exchange Online.
-ms.openlocfilehash: 27b636e1fb7f209a425a070f8024a1cdd461f59b
-ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
+ms.openlocfilehash: e6273c49e185c59cad6b56cf7d8399cdd6f25d22
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42890546"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057974"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Fonctionnalités multigéographiques d’Exchange Online
 
@@ -45,11 +45,11 @@ Exchange Online synchronise la propriété **MailboxRegion** du service d’ann
 
 - Si le code **PreferredDataLocation** est incorrect (par exemple, un type de NaN au lieu de NAM), la boîte aux lettres est approvisionnée dans l’emplacement géographique central.
 
-**Remarque** : les fonctionnalités multigéographiques et les réunions Skype Entreprise Online hébergées au niveau régional utilisent toutes deux la propriété **PreferredDataLocation** sur les objets utilisateur pour localiser les services. Si vous configurez les valeurs de **PreferredDataLocation** sur des objets utilisateur pour des réunions organisées par région, la boîte aux lettres des utilisateurs correspondants est automatiquement déplacée vers l’emplacement géographique spécifié après activation de la fonction multigéographique sur le client Office 365.
+**Remarque** : les fonctionnalités multigéographiques et les réunions Skype Entreprise Online hébergées au niveau régional utilisent toutes deux la propriété **PreferredDataLocation** sur les objets utilisateur pour localiser les services. Si vous configurez les valeurs de **PreferredDataLocation** sur des objets utilisateur pour des réunions organisées par région, la boîte aux lettres des utilisateurs correspondants est automatiquement déplacée vers l’emplacement géographique spécifié après activation de la fonction multigéographique sur le client Microsoft 365.
 
 ## <a name="feature-limitations-for-multi-geo-in-exchange-online"></a>Limitations des fonctionnalités multigéographiques dans Exchange Online
 
-- Les fonctionnalités de sécurité et de conformité (par exemple, d’audit et d’eDiscovery) disponibles dans le Centre d’administration Exchange ne le sont pas dans des organisations multigéographiques. Au lieu de cela, vous devez utiliser le [Centre de sécurité et conformité Office 365](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8) pour configurer les fonctionnalités de sécurité et de conformité.
+- Les fonctionnalités de sécurité et de conformité (par exemple, d’audit et d’eDiscovery) disponibles dans le Centre d’administration Exchange ne le sont pas dans des organisations multigéographiques. Au lieu de cela, vous devez utiliser le [Centre de sécurité et conformité Microsoft 365](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8) pour configurer les fonctionnalités de sécurité et de conformité.
 
 - Les utilisateurs d’Outlook pour Mac peuvent être confrontés à une perte temporaire d’accès à leur dossier Archive en ligne pendant que vous déplacez leur boîte aux lettres vers un nouvel emplacement géographique. Cette situation se produit quand les boîtes aux lettres principale et d’archivage de l’utilisateur se trouvent dans des emplacements géographiques différents, car des déplacements inter-géographiques de boîtes aux lettres peuvent s’accomplir à des moments différents.
 

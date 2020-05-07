@@ -17,17 +17,17 @@ ms.custom:
 ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
-description: "Résumé : apprenez les concepts de base de l’architecture cloud pour l’identité, la sécurité, la mise en réseau et l’hybridation Microsoft. Passez en revue les recommandations normatives pour la protection des fichiers, des identités et des appareils lors de l'utilisation du cloud de Microsoft. Apprenez à déployer un poste de travail moderne et sécurisé avec Windows 10 et Microsoft 365 Apps for enterprise."
-ms.openlocfilehash: 065776de182ab960f6f9ccf5cfbc58449954e220
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+description: "Résumé : découvrez les concepts de base de l’architecture cloud pour l’identité, la sécurité, la mise en réseau et l’hybridation Microsoft. Étudiez les recommandations normatives pour la protection des fichiers, des identités et des appareils lors de l'utilisation du cloud de Microsoft."
+ms.openlocfilehash: e5d1ba6b69dc092df72ead30da620f6007843f5c
+ms.sourcegitcommit: 7ed2eceb61615b4703ea817331e3ac6c64b27fc0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009369"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44013427"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Ressources relatives à l’architecture informatique du cloud Microsoft
 
- **Résumé :** apprenez les concepts de base de l’architecture cloud pour l’identité, la sécurité, la mise en réseau et l’hybridation Microsoft. Passez en revue les recommandations normatives pour la protection des fichiers, des identités et des appareils lors de l'utilisation du cloud de Microsoft. Apprenez à déployer un poste de travail moderne et sécurisé avec Windows 10 et Microsoft 365 Apps for enterprise.
+ **Résumé :** découvrez les concepts de base de l’architecture cloud pour l’identité, la sécurité, la mise en réseau et les fonctionnalités hybrides de Microsoft. Étudiez les recommandations normatives pour la protection des fichiers, des identités et des appareils lorsque vous utilisez le cloud de Microsoft.
   
 Ces affiches et outils relatifs à l’architecture fournissent des informations sur les services de cloud computing Microsoft (notamment Office 365, Windows 10, Azure Active Directory, Microsoft Intune, Microsoft Dynamics 365), mais aussi sur les solutions hybrides locales et cloud. Ces ressources permettent aux architectes et décisionnaires informatiques d’identifier la solution adaptée à leurs charges de travail et de prendre les décisions adéquates pour leurs composants d'infrastructure de base tels que l’identité et la sécurité. 
   
@@ -52,7 +52,6 @@ Ces affiches et outils relatifs à l’architecture fournissent des informations
     - [Protection des informations Office 365 pour le RGPD](#office-365-information-protection-for-gdpr)
     - [Conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d’autres organisations flexibles](#microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations)
     - [Détails sur les solutions téléphoniques Microsoft Telephony](#microsoft-telephony-solutions) 
-    - [Le déploiement d’un poste de travail moderne et sécurisé avec Microsoft](microsoft-cloud-it-architecture-resources.md#msd)
     
 Faites-nous savoir ce que vous en pensez ! Écrivez-nous à l’adresse [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com). 
 
@@ -221,15 +220,6 @@ Microsoft prend en charge plusieurs options lorsque vous commencez vos premiers 
 
 Pour plus d’informations, voir l’article pour ce poster : [Solutions de téléphonie Microsoft (Microsoft Telephony Solutions)](https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions).
   
-<a name="msd"></a>
-### <a name="deploy-a-modern-and-secure-desktop-with-microsoft"></a>Déploiement d’un environnement de bureau moderne et sécurisé avec Microsoft
-
-Que doivent savoir les architectes informatiques sur le déploiement et la gestion des mises à jour pour Microsoft 365 Apps for enterprise (anciennement Office 365 ProPlus) sur Windows 10.
-  
-|**Élément**|**Description**|
-|:-----|:-----|
-|[![Miniature pour le modèle Déployer un bureau moderne et sécurisé avec Microsoft](media/321dd59c-d992-4c7a-a7b6-c23a783858bd.png)          ](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf)  \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/> | Ce modèle contient : <ul><li>  Déploiement de Windows 10 et Microsoft 365 Apps for enterprise à partir du cloud Microsoft </li><li>  Déploiement de Windows 10 et Microsoft 365 Apps for enterprise avec Microsoft Endpoint Configuration Manager </li><li>  Gestion des mises à jour de Windows 10 et Microsoft 365 Apps for enterprise à partir du cloud Microsoft </li><li>  Gestion des mises à jour de Windows 10 et Microsoft 365 Apps for enterprise avec Microsoft Endpoint Configuration Manager </li><li>  Les fonctionnalités de protection supplémentaires et prêtes à l’emploi de Windows 10 </li></ul><br/> |
-   
 ## <a name="see-also"></a>Voir aussi
 
 [Modèles architecturaux pour SharePoint, Exchange, Skype Entreprise et Lync](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)

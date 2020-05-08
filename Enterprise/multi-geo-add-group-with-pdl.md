@@ -1,5 +1,5 @@
 ---
-title: Créer un groupe Office 365 avec un emplacement par défaut des données spécifique
+title: Créer un groupe Microsoft 365 avec un emplacement par défaut des données spécifique
 ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -12,21 +12,21 @@ f1.keywords:
 ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
-description: Découvrez comment créer un groupe Office 365 avec un emplacement par défaut des données spécifique dans un environnement multigéographique.
-ms.openlocfilehash: 96c2e5513879dff291c0119ddad38a78ab91ec1a
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+description: Découvrez comment créer un groupe Microsoft 365 avec un emplacement par défaut des données spécifique dans un environnement multigéographique.
+ms.openlocfilehash: 5b2294ff8821e84cb0158fa989b97134353969b2
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974086"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057984"
 ---
-# <a name="create-an-office-365-group-with-a-specific-pdl"></a>Créer un groupe Office 365 avec un emplacement par défaut des données spécifique
+# <a name="create-an-microsoft-365-group-with-a-specific-pdl"></a>Créer un groupe Microsoft 365 avec un emplacement par défaut des données spécifique
 
-Quand un utilisateur dans un environnement multigéographique crée un groupe Office 365, l’emplacement par défaut des données du groupe est automatiquement défini sur celui de l’utilisateur. Les administrateurs Exchange, SharePoint et généraux peuvent créer des groupes dans n’importe quelle région sélectionnée. 
+Quand un utilisateur dans un environnement multigéographique crée un groupe Microsoft 365, l’emplacement par défaut des données du groupe est automatiquement défini sur celui de l’utilisateur. Les administrateurs Exchange, SharePoint et généraux peuvent créer des groupes dans n’importe quelle région sélectionnée. 
 
 Si vous devez créer un groupe avec un emplacement par défaut des données spécifique, vous le faire à l’aide de l’applet de commande Microsoft PowerShell New-UnifiedGroup d’Exchange Online ou à partir du Centre d’administration SharePoint. Lorsque vous procédez de la sorte, la boîte aux lettres de groupe et le site SharePoint associé à celui-ci sont configurés dans l’emplacement par défaut des données spécifié.
 
-Pour créer un groupe Office 365 incluant un emplacement par défaut des données à spécifier, accédez au Centre d’administration SharePoint de l’emplacement géographique dans lequel vous souhaitez créer le site de groupe.
+Pour créer un groupe Microsoft 365 incluant un emplacement par défaut des données à spécifier, accédez au Centre d’administration SharePoint de l’emplacement géographique dans lequel vous souhaitez créer le site de groupe.
 
 Par exemple :
 
@@ -53,7 +53,7 @@ Notez que l’approvisionnement du site du groupe SharePoint est à la demande. 
 
 ## <a name="geo-location-codes"></a>Codes d’emplacement géographique
 
-[!INCLUDE [Office 365 Multi-Geo locations](includes/office-365-multi-geo-locations.md)]
+[!INCLUDE [Microsoft 365 Multi-Geo locations](includes/office-365-multi-geo-locations.md)]
 
 ## <a name="see-also"></a>Voir aussi
 

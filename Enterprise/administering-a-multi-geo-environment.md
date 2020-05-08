@@ -15,20 +15,20 @@ ms.collection:
 - SPO_Content
 localization_priority: Priority
 description: Découvrez comment administrer des services SharePoint et OneDrive dans un environnement multigéographique.
-ms.openlocfilehash: 483250f8956ba1220c29bb769abef187ac9ec53d
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: 979ca202ac4d21dc3eff5a933538eee5af050167
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974026"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057660"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Administration d’un environnement multigéographique
 
-Découvrez le fonctionnement des services Office 365 dans un environnement multigéographique.
+Découvrez le fonctionnement des services Microsoft 365 dans un environnement multigéographique.
 
 ## <a name="audit-log-search"></a>Recherche de journal d’audit
 
-Un [journal d’audit](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c) unifié pour vos emplacements satellites est disponible dans la page de recherche dans le journal d’audit d’Office 365. Vous pouvez consulter toutes les entrées de journal d’audit des emplacements géographiques. Par exemple, les activités des utilisateurs dans les régions NAM et EUR apparaissent dans un seul affichage, et vous pouvez appliquer les filtres existants pour voir les activités de certains utilisateurs.
+Un [journal d’audit](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c) unifié pour vos emplacements satellites est disponible dans la page de recherche dans le journal d’audit de Microsoft 365. Vous pouvez consulter toutes les entrées de journal d’audit des emplacements géographiques. Par exemple, les activités des utilisateurs dans les régions NAM et EUR apparaissent dans un seul affichage, et vous pouvez appliquer les filtres existants pour voir les activités de certains utilisateurs.
 
 ## <a name="bcs-secure-store-apps"></a>BCS, service Banque d’informations sécurisé, applications
 
@@ -36,9 +36,9 @@ BCS, le service Banque d’informations sécurisé et les applications ont des i
 
 ## <a name="ediscovery"></a>eDiscovery 
 
-Par défaut, un responsable ou administrateur d’eDiscovery d’un locataire multigéographique ne peut effectuer une découverte électronique que dans l’emplacement central de ce client. L’administrateur général Office 365 doit affecter les autorisations de gestionnaire eDiscovery pour autoriser d’autres personnes à mettre en place un processus eDiscovery, et affecter un paramètre « Région » dans le filtre de sécurité de conformité correspondant pour définir la région concernée par le processus comme emplacement satellite. Sinon, aucun processus eDiscovery n’est mis en place à l’emplacement satellite. Pour configurer le filtre de sécurité de la conformité pour une région, voir [Configurer l’eDiscovery d’Office 365 multigéographique](multi-geo-ediscovery-configuration.md).
+Par défaut, un responsable ou administrateur d’eDiscovery d’un locataire multigéographique ne peut effectuer une découverte électronique que dans l’emplacement central de ce client. L’administrateur général Microsoft 365 doit affecter les autorisations de gestionnaire eDiscovery pour autoriser d’autres personnes à mettre en place un processus eDiscovery, et affecter un paramètre « Région » dans le filtre de sécurité de conformité correspondant pour définir la région concernée par le processus comme emplacement satellite. Sinon, aucun processus eDiscovery n’est mis en place à l’emplacement satellite. Pour configurer le filtre de sécurité de la conformité pour une région, voir [Configurer l’eDiscovery de Microsoft 365 multigéographique](multi-geo-ediscovery-configuration.md).
 
-## <a name="exchange-mailboxes"></a>Boîtes aux lettres Exchange
+## <a name="exchange-mailboxes"></a>Les boîtes aux lettres Exchange
 
 Les boîtes aux lettres Exchange des utilisateurs sont déplacées automatiquement en cas de modification de leur emplacement par défaut des données. Lors de sa création, une boîte aux lettres est approvisionnée à l’emplacement par défaut des données de l’utilisateur, ou à l’emplacement central si aucune valeur n’a été définie pour l’emplacement par défaut des données.
 
@@ -64,7 +64,7 @@ Dans le [Centre d’administration OneDrive](https://admin.onedrive.com), l’o
 
 ## <a name="security-and-compliance-admin-center"></a>Centre de sécurité et conformité
 
-Il existe un centre de conformité central pour le client multigéographique : [Centre de sécurité et conformité Office 365](https://protection.office.com/?rfr=AdminCenter\#/homepage).
+Il existe un centre de conformité central pour le client multigéographique : [Centre de sécurité et conformité Microsoft 365](https://protection.office.com/?rfr=AdminCenter\#/homepage).
 
 ## <a name="sharepoint-storage-quota"></a>Quota de stockage SharePoint
 
@@ -98,7 +98,7 @@ Stream est actuellement disponible dans les régions suivantes :
 - Europe
 - Asie-Pacifique
 
-En revanche, Stream n’est pas encore disponible dans les régions suivantes actuellement prises en charge pour Office 365 Video. Par conséquent, pour ces instances locales, nous utilisons le service multimédia à distance le plus proche de la région prise en charge.
+En revanche, Stream n’est pas encore disponible dans les régions suivantes actuellement prises en charge pour Microsoft 365 Video. Par conséquent, pour ces instances locales, nous utilisons le service multimédia à distance le plus proche de la région prise en charge.
 
 - Australie
 - Canada

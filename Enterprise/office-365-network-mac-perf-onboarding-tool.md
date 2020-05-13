@@ -1,5 +1,5 @@
 ---
-title: Test de connectivité Microsoft 365 dans le centre d’administration M365 (aperçu)
+title: Test de connectivité de Microsoft 365 (aperçu) dans le centre d’administration Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -14,16 +14,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Test de connectivité Microsoft 365 dans le centre d’administration M365 (aperçu)
-ms.openlocfilehash: 265d90cf412da7e45afcbb962018f7e4311e7edc
-ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
+ms.openlocfilehash: 0c6f16c39c5a2db99ed636cb3a1b52818383ea5a
+ms.sourcegitcommit: dce58576a61f2c8efba98657b3f6e277a12a3a7a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43612874"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208795"
 ---
-# <a name="microsoft-365-connectivity-test-in-the-m365-admin-center-preview"></a>Test de connectivité Microsoft 365 dans le centre d’administration M365 (aperçu)
+# <a name="microsoft-365-connectivity-test-in-the-microsoft-365-admin-center-preview"></a>Test de connectivité Microsoft 365 dans le centre d’administration Microsoft 365 (version préliminaire)
 
-Le test de connectivité de Microsoft 365 se <https://connectivity.office.com>trouve à l’adresse. Il s’agit d’un outil complémentaire pour les informations sur le réseau et les informations de score réseau disponibles dans le centre d’administration 365 de Microsoft sous **Health | Menu performances du réseau** .
+Le test de connectivité de Microsoft 365 se trouve à l’adresse <https://connectivity.office.com> . Il s’agit d’un outil complémentaire pour les informations sur le réseau et les informations de score réseau disponibles dans le centre d’administration 365 de Microsoft sous **Health | Menu performances du réseau** .
 
 >[!NOTE]
 >L’outil d’intégration prend en charge les locataires dans le commerce WW et GCC modéré, mais pas GCC High, DoD, Germany ou Chine.
@@ -37,7 +37,7 @@ Nous vous recommandons de les utiliser ensemble pour évaluer l’état de la qu
 
 ## <a name="the-advanced-tests-client-application"></a>Application cliente de tests avancés
 
-Le test de connectivité de Microsoft 365 comporte deux parties. Il existe un site <https://connectivity.office.com> Web et il existe une application cliente téléchargeable Windows. Le client téléchargeable exécute des tests de connectivité réseau avancés et la plupart des tests doivent être exécutés.
+Le test de connectivité de Microsoft 365 comporte deux parties. Il existe un site Web <https://connectivity.office.com> et il existe une application cliente téléchargeable Windows. Le client téléchargeable exécute des tests de connectivité réseau avancés et la plupart des tests doivent être exécutés.
 
 Vous pouvez exécuter le test du client avancé à partir du site Web et remplir les résultats dans la page Web au fur et à mesure de son exécution.
 
@@ -103,19 +103,19 @@ Nous allons identifier les serveurs proxy configurés sur l’ordinateur local. 
 
 ## <a name="media-quality-checks"></a>Contrôles de la qualité des médias
 
-Ce test installe et exécute l’outil d’évaluation du réseau Skype entreprise et interprète les résultats. L’outil se trouve à l' [https://www.microsoft.com/download/details.aspx?id=53885](https://www.microsoft.com/download/details.aspx?id=53885)adresse.
+Ce test installe et exécute l’outil d’évaluation du réseau Skype entreprise et interprète les résultats. L’outil se trouve à l’adresse [https://www.microsoft.com/download/details.aspx?id=53885](https://www.microsoft.com/download/details.aspx?id=53885) .
 
 Il s’agit de tests de protocole UDP utilisés par les fonctionnalités d’appel et de conférence audio et vidéo de Microsoft Teams. Nous testons la perte de paquets UDP, la latence du réseau UDP, le bougé UDP et la réorganisation des paquets UDP. Un aperçu réseau s’affiche si l’un de ces éléments se trouve au-dessus de la plage autorisée.
 
 ## <a name="tcp-connectivity-tests"></a>Tests de connectivité TCP
 
-Nous testons la connectivité HTTP à partir de l’emplacement du Bureau de l’utilisateur vers tous les points de terminaison réseau Microsoft 365 requis. Ces éléments sont publiés [https://aka.ms/o365ip](https://aka.ms/o365ip)à l’adresse. Network Insight est illustré pour les points de terminaison réseau requis qui ne peuvent pas être connectés à.
+Nous testons la connectivité HTTP à partir de l’emplacement du Bureau de l’utilisateur vers tous les points de terminaison réseau Microsoft 365 requis. Ces éléments sont publiés à l’adresse [https://aka.ms/o365ip](https://aka.ms/o365ip) . Network Insight est illustré pour les points de terminaison réseau requis qui ne peuvent pas être connectés à.
 
 La connectivité ay est bloquée par un serveur proxy, un pare-feu ou un autre périphérique de sécurité réseau sur le périmètre du réseau d’entreprise ou en cours d’utilisation en tant que proxy Cloud.
 
 ## <a name="ssl-interception-tests"></a>Tests d’interception SSL
 
-Nous testons le certificat SSL à chaque point de terminaison réseau Microsoft 365 requis qui se trouve dans la catégorie Optimize ou [https://aka.ms/o365ip](https://aka.ms/o365ip)Allow, comme défini sur. Si un ou plusieurs tests ne trouvent pas de certificat SSL Microsoft, le réseau chiffré doit avoir été intercepté par un périphérique réseau intermédiaire. Un Network Insight est illustré sur tous les points de terminaison réseau chiffrés interceptés.
+Nous testons le certificat SSL à chaque point de terminaison réseau Microsoft 365 requis qui se trouve dans la catégorie Optimize ou Allow, comme défini sur [https://aka.ms/o365ip](https://aka.ms/o365ip) . Si un ou plusieurs tests ne trouvent pas de certificat SSL Microsoft, le réseau chiffré doit avoir été intercepté par un périphérique réseau intermédiaire. Un Network Insight est illustré sur tous les points de terminaison réseau chiffrés interceptés.
 
 Lorsqu’un certificat SSL n’est pas fourni par Microsoft, nous affichons le nom de domaine complet (FQDN) pour le test et le propriétaire du certificat SSL en cours d’utilisation. Ce propriétaire de certificat SSL peut être un fournisseur de serveur proxy, ou il peut s’agir d’un certificat auto-signé de l’entreprise.
 
@@ -123,7 +123,7 @@ Lorsqu’un certificat SSL n’est pas fourni par Microsoft, nous affichons le n
 
 Cette section présente les résultats d’un itinéraire ICMP vers le volet frontal du service Exchange Online, le volet frontal du service SharePoint Online et le porte de service frontal de Microsoft Teams. Il est fourni à des fins d’information uniquement et aucune analyse réseau n’est associée.
 
-## <a name="faq"></a>FAQ
+## <a name="faq"></a>Forum aux questions
 
 Voici des réponses à certaines de nos questions fréquemment posées.
 

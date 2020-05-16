@@ -3,7 +3,7 @@ title: Protéger vos comptes d’administrateur général Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/04/2020
+ms.date: 05/15/2020
 audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -19,12 +19,12 @@ f1.keywords:
 - NOCSH
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Protégez l’accès administrateur général à votre abonnement Office 365.
-ms.openlocfilehash: 1ddd910a1515e11b6f57ac7581682d15eed31e5e
-ms.sourcegitcommit: 7ed2eceb61615b4703ea817331e3ac6c64b27fc0
+ms.openlocfilehash: 4f3e7dcb23f467768d647b7a5e8db9c41af2d076
+ms.sourcegitcommit: fa25333a28ad300a7be990c1491d95f09a214a12
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44013407"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44253291"
 ---
 # <a name="protect-your-office-365-global-administrator-accounts"></a>Protéger vos comptes d’administrateur général Office 365
 
@@ -101,6 +101,10 @@ L’authentification multifacteur (MFA) nécessite des informations supplémenta
     
 - appareil biométrique.
     
+>[!Note]
+>Pour les organisations qui doivent adhérer aux normes de l’Institut NIST (National Institute of Standards and Technology), l’utilisation d’un appel téléphonique ou de méthodes de vérification supplémentaires basées sur des messages de texte est restreinte. Pour plus d’informations, cliquez [ici](https://pages.nist.gov/800-63-FAQ/#q-b01) .
+>
+
 Si vous êtes une petite entreprise qui utilise des comptes d’utilisateur stockés uniquement dans le Cloud (le modèle d’identité en nuage uniquement), suivez ces étapes pour configurer l’authentification multifacteur à l’aide d’un appel téléphonique ou d’un code de vérification de message texte envoyé à un téléphone intelligent :
   
 1. [Configurez MFA](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
@@ -132,7 +136,7 @@ Après les étapes 1 et 2, utilisez ces méthodes supplémentaires pour vous ass
 
 Pour vous assurer que l’exécution des tâches à privilèges élevés est aussi sécurisée que possible, utilisez une station de travail accès privilégié (patte). Une patte est un ordinateur dédié qui est utilisé uniquement pour les tâches de configuration sensibles, telles que la configuration d’Office 365 qui nécessite un compte d’administrateur général. Étant donné que cet ordinateur n’est pas utilisé quotidiennement pour la navigation Internet ou le courrier électronique, il est mieux protégé contre les attaques et les menaces Internet.
   
-Pour obtenir des instructions sur la configuration d’une patte, [https://aka.ms/cyberpaw](https://aka.ms/cyberpaw)voir.
+Pour obtenir des instructions sur la configuration d’une patte, voir [https://aka.ms/cyberpaw](https://aka.ms/cyberpaw) .
   
 ### <a name="azure-ad-privileged-identity-management"></a>Azure AD Privileged Identity Management
 

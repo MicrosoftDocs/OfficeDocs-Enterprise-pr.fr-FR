@@ -23,12 +23,12 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment fonctionne différemment l’authentification moderne Office 365 pour les applications clientes Office 2013 et 2016.
-ms.openlocfilehash: 8c371a1b4b94a497e5ad9278a24fd769381e63ee
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 081d8e70e84f816e925ba421d7f740e6063ca371
+ms.sourcegitcommit: c5ea5b8d16201551f82b88738d92c58a7a92c74f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844855"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "44280213"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Fonctionnement de l’authentification moderne pour les applications clientes Office 2013 et Office 2016
 
@@ -54,7 +54,14 @@ Pour les services Office 365, l’État par défaut de l’authentification mode
     
 ## <a name="sign-in-behavior-of-office-client-apps"></a>Comportement de connexion des applications clientes Office
 
-Les applications clientes Office 2013 prennent en charge l’authentification héritée par défaut. Legacy signifie qu’ils prennent en charge l’Assistant de connexion Microsoft Online ou l’authentification de base. Pour que ces clients utilisent les fonctionnalités d’authentification modernes, le client Windows dispose de clés de Registre définies. Pour obtenir des instructions, consultez la rubrique [activer l’authentification moderne pour Office 2013 sur les appareils Windows](https://support.office.com/article/7dc1c01a-090f-4971-9677-f1b192d6c910).
+Les applications clientes Office 2013 prennent en charge l’authentification héritée par défaut. Legacy signifie qu’ils prennent en charge l’Assistant de connexion Microsoft Online ou l’authentification de base. Pour que ces clients utilisent les fonctionnalités d’authentification modernes, le client Windows doit disposer de clés de Registre définies. Pour obtenir des instructions, consultez la rubrique [activer l’authentification moderne pour Office 2013 sur les appareils Windows](https://support.office.com/article/7dc1c01a-090f-4971-9677-f1b192d6c910).
+
+Pour activer l'authentification moderne pour les appareils exécutant Windows (par exemple les ordinateurs portables et tablettes) et sur lesquels Microsoft Office 2013 est installé, vous devez définir les clés de Registre suivantes. Les clés doivent être définies sur chaque appareil pour lequel vous voulez activer l'authentification moderne :
+  
+|**Clé de Registre**|**Type**|**Valeur** |
+|:-------|:------:|--------:|
+|Hkcu\software\microsoft\office\15.0\common\identity\enableadal sur  |REG_DWORD  |1   |
+|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1  |
   
 Découvrez [comment utiliser l’authentification moderne (Adal) avec Skype entreprise](https://go.microsoft.com/fwlink/p/?LinkId=785431) pour en savoir plus sur son fonctionnement avec Skype entreprise. 
   

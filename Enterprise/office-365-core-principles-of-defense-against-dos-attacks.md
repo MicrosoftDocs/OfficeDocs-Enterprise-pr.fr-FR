@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Utilisation des principes de base de l’absorption, de la détection et de l’atténuation dans sa défense contre les attaques par déni de service (DoS).
-ms.openlocfilehash: 82957dd1b863e14c13e86b63888e2b1374beb73b
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 78d1392adb35bead5d41f9655bea3c2680975561
+ms.sourcegitcommit: 3cf463d28b7ba65957049dd3ed7cfbdf5f14fb82
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844525"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "44278077"
 ---
 # <a name="core-principles-of-defense-against-denial-of-service-attacks"></a>Principes fondamentaux de défense contre les attaques par déni de service
 
@@ -36,7 +36,7 @@ Pour être en mesure de vous défendre contre une attaque DoS, la détection pr�
 
 La formule suivante permet de se rapprocher du temps nécessaire à l’impact d’une attaque DoS :
 
-   **Capacité maximale (en octets/s)/taux de croissance (en octets/s) = temps d’impact (en octets/s)**
+   **Capacité maximale (en octets/s)/taux de croissance (en octets/s) = temps d’impact (en sec)**
 
 Si le délai de détection a lieu après l’impact, il est probable que l’attaque de refus de service se produise. Si le délai de détection a lieu avant l’impact, les services attaqués doivent rester en ligne et accessibles si des stratégies de minimisation sont utilisées. Ainsi, il y a deux choses à faire pour vous défendre contre les attaques de refus de déni de compte :
 

@@ -86,6 +86,13 @@
 #### [Vue d’ensemble : tunneling fractionné VPN](office-365-vpn-split-tunnel.md)
 #### [Implémentation du tunneling fractionné VPN](office-365-vpn-implement-split-tunnel.md)
 #### [Optimisation d’Office 365 pour les utilisateurs de Chine](office-365-networking-china.md)
+### Mise en réseau pour les clients GCC High et DOD
+#### [Autres exigences de sécurité réseau pour GCC High et DoD](additional-network-security-requirements-for-office-365-gcchigh-and-dod.md)
+#### [Enregistrements DNS pour Office 365 DoD](dns-records-for-office-365-dod.md)
+#### [Enregistrements DNS pour Office 365 GCC High](dns-records-for-office-365-gcc-high.md)
+#### [Points de terminaison DoD du gouvernement américain](office-365-u-s-government-dod-endpoints.md)
+#### [Points de terminaison GCC High du gouvernement américain](office-365-u-s-government-gcc-high-endpoints.md)
+#### [Chaînes de chiffrement Office 365-DOD et GCC High.](https://docs.microsoft.com/microsoft-365/compliance/encryption-office-365-certificate-chains-itar)
 ### [Réseaux de distribution de contenu](content-delivery-networks.md)
 ### [Prise en charge du protocole IPv6 dans les services Office 365](ipv6-support.md)
 ### [Prise en charge de la traduction d’adresses réseau (NAT) avec Office 365](nat-support-with-office-365.md)

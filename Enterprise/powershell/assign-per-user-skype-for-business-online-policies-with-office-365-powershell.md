@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 'Résumé : Utilisez Office 365 PowerShell pour affecter des paramètres de communication à chaque utilisateur au moyen de stratégies Skype Entreprise Online.'
-ms.openlocfilehash: 615deca2790e206e6cf117283321307aa01eac74
-ms.sourcegitcommit: f2aefbc2dbbe969fea9db3a4c558651496532413
+ms.openlocfilehash: 89b3ab5ce571c9812e2b4f3d3aef7066a7babb08
+ms.sourcegitcommit: 0c2d4cfb4d1b21ea93bcc6eb52421548db34b1e6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/05/2020
-ms.locfileid: "43146809"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44374443"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>Affectation de stratégies Skype Entreprise Online propres à chaque utilisateur avec Office 365 PowerShell
 
@@ -110,7 +110,7 @@ Pour désactiver un compte d’utilisateur à l’aide de Windows PowerShell, ut
 
 ## <a name="managing-large-numbers-of-users"></a>Gestion d’un grand nombre d’utilisateurs
 
-Pour gérer un grand nombre d’utilisateurs (1000 ou plus), vous devez effectuer un traitement par lots des commandes via un bloc de script à l’aide de la cmdlet [Invoke-Command](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7) .  Dans les exemples précédents, chaque fois qu’une cmdlet est exécutée, elle doit configurer l’appel, puis attendre le résultat avant de l’envoyer à nouveau.  Lors de l’utilisation d’un bloc de script, les cmdlets peuvent être exécutées à distance et, une fois terminées, renvoyer les données. 
+Pour gérer un grand nombre d’utilisateurs (1000 ou plus), vous devez effectuer un traitement par lots des commandes via un bloc de script à l’aide de la cmdlet [Invoke-Command](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7) .  Dans les exemples précédents, chaque fois qu’une cmdlet est exécutée, elle doit configurer l’appel, puis attendre le résultat avant de l’envoyer à nouveau.  Lors de l’utilisation d’un bloc de script, les cmdlets peuvent être exécutées à distance et, une fois terminées, renvoyer les données. 
 
 ```powershell
 Import-Module LyncOnlineConnector

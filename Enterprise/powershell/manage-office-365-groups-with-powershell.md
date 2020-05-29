@@ -7,8 +7,7 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-f1.keywords:
-- CSH
+f1.keywords: CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -19,17 +18,15 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: Découvrez comment effectuer des tâches de gestion courantes pour les groupes Office 365 dans Microsoft PowerShell.
-ms.openlocfilehash: a9b481d7448c65a8860ef44d6d7f8980c3dd91d8
-ms.sourcegitcommit: ee6fcb8c78de748fa203deacf799f66ad99f18e1
+ms.openlocfilehash: 7ebb3cfdfc6375cbc340c1fc3be37d59bcd9d4c8
+ms.sourcegitcommit: c758588cf2b68de9291a362fd73ec9dc721d04d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352954"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44411061"
 ---
 # <a name="manage-office-365-groups-with-powershell"></a>Utiliser PowerShell pour gérer les groupes Office 365
-
- *Dernière mise à jour : 18 avril 2018* 
-  
+ 
 Cet article décrit les étapes à suivre pour effectuer des tâches de gestion courantes pour les groupes dans Microsoft PowerShell. Il répertorie également les applets de commande PowerShell pour les groupes. Pour plus d’informations sur la gestion des sites SharePoint, voir [gérer les sites SharePoint Online à l’aide de PowerShell](https://docs.microsoft.com/sharepoint/manage-team-and-communication-sites-in-powershell).
 
 ## <a name="link-to-your-office-365-groups-usage-guidelines"></a>Lien vers les instructions d’utilisation de vos groupes Office 365
@@ -50,7 +47,7 @@ Si vous souhaitez activer vos groupes Office 365 sur « Envoyer en tant que »
 
 ([Vous pouvez également le faire dans le centre d’administration Exchange](https://docs.microsoft.com/office365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group).)
   
-Utilisez le script suivant, en remplaçant * \< GroupAlias \> * par l’alias du groupe que vous souhaitez mettre à jour, et * \< userAlias \> * par l’alias de l’utilisateur auquel vous souhaitez accorder permssions. [Connectez-vous à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) pour exécuter ce script.
+Utilisez le script suivant, *\<GroupAlias\>* en remplaçant par l’alias du groupe que vous souhaitez mettre à jour, et *\<UserAlias\>* par l’alias de l’utilisateur auquel vous souhaitez accorder des autorisations. [Connectez-vous à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) pour exécuter ce script.
 
 ```PowerShell
 $groupAlias = "<GroupAlias>"
@@ -67,7 +64,12 @@ Une fois l’applet de commande exécutée, les utilisateurs peuvent accéder à
 
 ## <a name="create-classifications-for-office-groups-in-your-organization"></a>Créer des classifications pour les groupes Office dans votre organisation
 
-Vous pouvez créer des classifications que les utilisateurs de votre organisation peuvent définir lors de la création d’un groupe Office 365. Par exemple, vous pouvez autoriser les utilisateurs à définir « standard », « secret » et « top secret » dans les groupes qu’ils créent. Les classifications de groupe ne sont pas définies par défaut et vous devez les créer afin que les utilisateurs puissent la définir. Utilisez Azure Active Directory PowerShell pour faire pointer vos utilisateurs vers les instructions d’utilisation de votre organisation pour les groupes Office 365.
+Vous pouvez créer des étiquettes de confidentialité que les utilisateurs de votre organisation peuvent définir lors de la création d’un groupe Microsoft 365. Si vous souhaitez classer les groupes, nous vous recommandons d’utiliser des étiquettes de confidentialité au lieu de la fonctionnalité de classification des groupes précédents. Pour plus d’informations sur l’utilisation des étiquettes de confidentialité, consultez la rubrique [utiliser des étiquettes de sensibilité pour protéger le contenu dans Microsoft Teams, les groupes microsoft 365 et les sites SharePoint](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+
+> [!IMPORTANT]
+> Si vous utilisez actuellement des étiquettes de classification, ces derniers ne seront plus disponibles pour les utilisateurs qui créent des groupes une fois que les étiquettes de sensibilité seront activées.
+
+Vous pouvez toujours utiliser la fonctionnalité de classification de groupes précédente. Vous pouvez créer des classifications que les utilisateurs de votre organisation peuvent définir lors de la création d’un groupe Office 365. Par exemple, vous pouvez autoriser les utilisateurs à définir « standard », « secret » et « top secret » dans les groupes qu’ils créent. Les classifications de groupe ne sont pas définies par défaut et vous devez les créer afin que les utilisateurs puissent la définir. Utilisez Azure Active Directory PowerShell pour faire pointer vos utilisateurs vers les instructions d’utilisation de votre organisation pour les groupes Office 365.
   
 Consultez les [applets de commande Azure Active Directory pour configurer les paramètres de groupe](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets) et suivez les étapes décrites dans la **section Create Settings at the Directory Level** to define the Classification for Office 365 groups. 
   
@@ -186,7 +188,7 @@ Les applets de commande suivantes peuvent être utilisées avec les groupes Offi
 |[Set-applet userphoto](https://go.microsoft.com/fwlink/p/?LinkId=536511) <br/> |Utilisé pour associer une photo d’utilisateur à un compte. Les photos des utilisateurs sont stockées dans Active Directory  <br/> |
 |[Remove-applet userphoto](https://go.microsoft.com/fwlink/p/?LinkId=536512) <br/> |Suppression de la photo d’un groupe Office 365  <br/> |
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Rubriques connexes
 
 [Mettre à niveau des listes de distribution vers des groupes Office 365](https://docs.microsoft.com/office365/admin/manage/upgrade-distribution-lists)
 

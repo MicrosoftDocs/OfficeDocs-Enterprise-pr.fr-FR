@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: Contient des liens vers des informations sur la planification et le test du réseau, ainsi que sur la migration vers Office 365.
-ms.openlocfilehash: 0601775beb3f7e42d3e18de7b85406c02df2f4e8
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 88dd3e4fca66855e8204b452aea6cfb4c659d201
+ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844575"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419382"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Planification du réseau et de la migration pour Office 365
 
@@ -77,7 +77,7 @@ Approfondissez ces meilleures pratiques pour obtenir plus d’informations sur l
     
 3. Améliorez les performances de migration de messagerie en gérant soigneusement la planification des mises à jour Windows. Vous pouvez mettre à jour vos ordinateurs clients par lots et vous assurer que tous les ordinateurs clients sont mis à jour avant la migration vers Office 365 afin de réguler l’utilisation de la bande passante réseau. Pour plus d’informations, reportez-vous [à mise à jour manuelle et configuration des ordinateurs de bureau pour Office 365 pour les dernières mises à jour](https://support.microsoft.com/gp/office-2013-365-update).
     
-4. Le trafic réseau Office 365 fonctionne de manière optimale lorsqu’il est traité comme un service Internet approuvé et qu’il est autorisé à contourner la plupart des filtres et analyses traditionnels que certaines organisations placent sur le trafic réseau vers des services Internet non approuvés. Cela inclut généralement la suppression du traitement sortant, comme l’authentification des utilisateurs proxy et l’inspection des paquets, ainsi que la transmission de sortie locale vers Internet avec la traduction d’adresses réseau (NAT) correcte et une capacité de bande passante suffisante pour gérer l’augmentation demandes réseau. Reportez-vous à la rubrique [Managing office 365 Endpoints](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)pour obtenir des instructions supplémentaires sur la configuration de votre réseau pour qu’il gère Office 365 comme service Internet approuvé sur votre réseau.
+4. Le trafic réseau Office 365 fonctionne de manière optimale lorsqu’il est traité comme un service Internet approuvé et qu’il est autorisé à contourner la plupart des filtres et analyses traditionnels que certaines organisations placent sur le trafic réseau vers des services Internet non approuvés. Cela inclut généralement la suppression du traitement sortant, comme l’authentification des utilisateurs proxy et l’inspection des paquets, ainsi que la transmission de sortie locale vers Internet avec la traduction d’adresses réseau (NAT) et une capacité de bande passante suffisantes pour gérer les demandes réseau accrues. Reportez-vous à la rubrique [Managing office 365 Endpoints](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)pour obtenir des instructions supplémentaires sur la configuration de votre réseau pour qu’il gère Office 365 comme service Internet approuvé sur votre réseau.
     
 1. Assurez-vous que la [gestion des points de terminaison Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a). Le trafic supplémentaire vers Office 365 entraîne une augmentation des connexions proxy sortantes, ainsi qu’une augmentation du trafic sécurisé sur TLS/SSL.
     
@@ -96,9 +96,7 @@ Approfondissez ces meilleures pratiques pour obtenir plus d’informations sur l
 
 Ces rubriques contiennent des informations détaillées sur le réseau Office 365.
   
-- [Gestion des points de terminaison Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
-    
-- [Connectivité des clients](client-connectivity.md)
+- [Gestion des points de terminaison Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
     
 - [Réseaux de distribution de contenu](content-delivery-networks.md)
     
@@ -112,7 +110,7 @@ Ces rubriques contiennent des informations détaillées sur le réseau Office 36
     
 - [Planifier les périphériques réseau qui se connectent aux services Office 365](plan-for-network-devices.md)
     
-- [Conseillers de déploiement pour les services Office 365](deployment-advisors-for-office-365.md)
+- [Guides de configuration pour les services Office 365](setup-guides-for-office-365.md)
  
 ## <a name="see-also"></a>Voir aussi
 

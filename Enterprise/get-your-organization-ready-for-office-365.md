@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
 description: Accédez aux ressources nécessaires à la planification de votre déploiement Office 365 entreprise.
-ms.openlocfilehash: 845c0ad4990261da0cf71fb420f7715a7892e6d3
-ms.sourcegitcommit: 3aa6c61242c5691e3180a474ad059bd84c86dc9e
+ms.openlocfilehash: d35bba7940f549d7b39e3cf75c3e659daa4e1d33
+ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43206531"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419352"
 ---
 # <a name="plan-for-office-365-enterprise"></a>Planifier Office 365 entreprise
 
@@ -63,7 +63,7 @@ Pour planifier Office 365 vous-même, suivez les décisions de planification et 
 >Vous pouvez également utiliser ce processus pour votre abonnement [entreprise Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) .
 >
 
-Vous pouvez également vous connecter à votre abonnement Office 365 et utiliser les [conseillers de déploiement pour les services office 365](deployment-advisors-for-office-365.md).
+Vous pouvez également vous connecter à votre abonnement Office 365 et utiliser les [guides de configuration pour les services office 365](setup-guides-for-office-365.md).
 
 
 
@@ -73,7 +73,7 @@ This checklist will help your organization as you plan and prepare for a migrati
 
 Most organizations don't need to do anything to prepare for Office 365. It's an application on the web and people are able to use it as soon as they have an account. Other organizations have more locations, security practices, or other requirements that create the need for more planning. For enterprise-level organizations, follow the checklist items below to get started with Office 365.
   
-If you want help getting Office 365 set up, [FastTrack](https://fasttrack.microsoft.com/office) is the easiest way to deploy Office 365, you can also sign in and use the [Deployment advisors for Office 365 services](deployment-advisors-for-office-365.md).
+If you want help getting Office 365 set up, [FastTrack](https://fasttrack.microsoft.com/office) is the easiest way to deploy Office 365, you can also sign in and use the [Setup guides for Office 365 services](setup-guides-for-office-365.md).
   
 |**Choose one or more to get started:**||
 |:-----|:-----|

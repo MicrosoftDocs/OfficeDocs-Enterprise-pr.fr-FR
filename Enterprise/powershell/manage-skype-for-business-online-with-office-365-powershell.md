@@ -3,7 +3,7 @@ title: Gestion de Skype Entreprise Online avec Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 05/28/2018
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: 'Résumé : utilisez Office 365 PowerShell pour gérer des stratégies Skype Entreprise Online, des stratégies par utilisateur et des paramètres de réunion.'
-ms.openlocfilehash: 4444483776141a3aa1f6e53b2f9bdcd7a5d28e1d
-ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
+ms.openlocfilehash: f1a5df3802d43755e81465743b81c5fbb9fff7e0
+ms.sourcegitcommit: 6c7cc6aca8713e280ae6ff51226dde9db4497401
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106205"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44415936"
 ---
 # <a name="manage-skype-for-business-online-with-office-365-powershell"></a>Gestion de Skype Entreprise Online avec Office 365 PowerShell
 
@@ -27,7 +27,7 @@ Une des tâches principales de tout administrateur de Skype Entreprise Online es
 
 ## <a name="before-you-start"></a>Avant de commencer
 
-Téléchargez et installez le [module du connecteur Skype entreprise Online](https://www.microsoft.com/download/details.aspx?id=39366), puis redémarrez votre ordinateur si vous y êtes invité.
+Téléchargez et installez le [module du connecteur Skype entreprise Online](https://www.microsoft.com/download/details.aspx?id=39366), puis redémarrez votre ordinateur.
 
 
 ## <a name="connect-using-a-skype-for-business-online-administrator-account-name-and-password"></a>Se connecter à l’aide du nom et du mot de passe d’un compte d’administrateur Skype entreprise Online

@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 'Résumé : décrit les considérations relatives à la capacité réseau, aux accélérateurs de réseau étendu et aux périphériques d’équilibrage de charge utilisés pour se connecter à Office 365.'
-ms.openlocfilehash: edc089abc58f19c0655f9a75da96366a0a09dcb7
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 9776611aa64f8783a22252a2c4182e63bda1093a
+ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841722"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419372"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Planifier les périphériques réseau qui se connectent aux services Office 365
 
@@ -74,6 +74,6 @@ Pour plus d’informations sur la configuration des pare-feu et des proxys pour 
   
 ## <a name="see-also"></a>Voir aussi
 
-[Conseillers de déploiement pour les services Office 365](deployment-advisors-for-office-365.md)
+[Guides de configuration pour les services Office 365](setup-guides-for-office-365.md)
 
 [Vue d’ensemble de Microsoft 365 Entreprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

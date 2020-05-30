@@ -20,19 +20,19 @@ search.appverid:
 - BCS160
 ms.assetid: 5fa4f6ef-35ad-4840-91c1-4834df3df5a0
 description: Cette liste de contrôle permet à votre organisation de planifier et de préparer une migration vers Office 365.
-ms.openlocfilehash: dbd996a21cb98fcf7831ef22b855cc8fcb1af39f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: fdbc56b3d3a907ef5ca66f9d184525f8aae13246
+ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840511"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419362"
 ---
 # <a name="deployment-planning-checklist-for-office-365"></a>Liste de contrôle de planification du déploiement pour Office 365
 
 Lorsque vous déplacez une organisation d’entreprise vers Office 365, il est important de planifier exactement les étapes à suivre, le moment de leur exécution et les personnes qui les exécuteront. Cette liste de contrôle permet à votre organisation de planifier et de préparer une migration vers Office 365. Les phases et les étapes de la liste de vérification sont alignées sur les instructions fournies par le [Centre d’intégration](https://go.microsoft.com/fwlink/?LinkId=517115). N’hésitez pas à adapter cette liste de contrôle aux besoins de votre organisation.
 
 ## <a name="need-help-with-your-deployment"></a>Vous avez besoin d’aide pour votre déploiement ?
-Voulez-vous obtenir de l’aide pour la configuration d’Office 365 ? Envisagez d’utiliser [FastTrack](https://fasttrack.microsoft.com/office) ou les [conseillers de déploiement pour les services Office 365](deployment-advisors-for-office-365.md).
+Voulez-vous obtenir de l’aide pour la configuration d’Office 365 ? Envisagez d’utiliser [FastTrack](https://fasttrack.microsoft.com/office) ou les [guides de configuration pour les services Office 365](setup-guides-for-office-365.md).
 
 ## <a name="sample-checklist-for-an-office-365-enterprise-deployment"></a>Exemple de liste de vérification pour un déploiement Office 365 entreprise
 
@@ -40,7 +40,7 @@ Voulez-vous obtenir de l’aide pour la configuration d’Office 365 ? Envisage
 |:-----|:-----|:-----|:-----|:-----|
 |**Tâches de déploiement/Events** <br/> |**Date de début** <br/> |**Date de fin** <br/> |**Resources** <br/> |**Dépendances** <br/> |
 |**Déterminer vos objectifs de déploiement** <br/> |||||
-| Avec vos parties prenantes internes et externes :<br>  -Accord sur l’étendue et la chronologie <br>  -Accord sur le mécanisme de suivi de projet  <br>  -Développer des critères de réussite et une [communication](https://fasttrack.microsoft.com/office) / [prise en main d’Office 365](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)|||||
+| Avec vos parties prenantes internes et externes :<br>  -Accord sur l’étendue et la chronologie <br>  -Accord sur le mécanisme de suivi de projet  <br>  -Développer des critères de réussite et une [communication](https://fasttrack.microsoft.com/office)  /  [prise en main d’Office 365](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)|||||
 |**Inventorier votre environnement actuel et prendre des décisions clés en matière de déploiement** |||||
 |Inventorier votre environnement actuel |||||
 | Collecter le nombre de comptes d’utilisateur (noms de connexion, adresses de messagerie) |||||

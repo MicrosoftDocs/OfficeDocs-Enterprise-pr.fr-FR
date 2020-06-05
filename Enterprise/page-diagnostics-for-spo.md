@@ -3,7 +3,7 @@ title: Utiliser l’outil de diagnostics de page pour SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/11/2020
+ms.date: 06/03/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,21 +19,26 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: Utilisez l’outil Diagnostics de la page pour SharePoint pour analyser le portail moderne SharePoint Online et les pages de publication classiques par rapport à un ensemble prédéfini de critères de performances.
-ms.openlocfilehash: 8295a39429ffc57cef6f9ca05c72704388b39c12
-ms.sourcegitcommit: c024b48115cebfdaadfbc724acc2d065394156e9
+ms.openlocfilehash: 08bfa6abf0aab4abafaf5fad3a0e43afb9000370
+ms.sourcegitcommit: ea2f92f147dbf8183124476302ca33c4cf4265a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42603733"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44561811"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>Utilisation de l’outil Diagnostics de la page pour SharePoint
 
-Cet article explique comment utiliser l' **outil Diagnostics de la page pour SharePoint** afin d’analyser les pages de site classiques et modernes SharePoint Online par rapport à un ensemble prédéfini de critères de performances.  
+Cet article explique comment utiliser l' **outil Diagnostics de la page pour SharePoint** afin d’analyser les pages de site classiques et modernes SharePoint Online par rapport à un ensemble prédéfini de critères de performances.
+
+L’outil Diagnostics de la page pour SharePoint peut être installé pour :
+
+- **Microsoft Edge** [(extension Edge)](https://microsoftedge.microsoft.com/addons/detail/ocemkolpnamjcacndljdfmhlpcaoipji)
+- **Chrome** [(extension chrome)](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi)
 
 >[!TIP]
 >Version **2.0.0** et versions ultérieures inclut la prise en charge des pages modernes en plus des pages de site classiques. Si vous n’êtes pas sûr de la version de l’outil que vous utilisez, vous pouvez sélectionner le lien **à propos** de ou les points de suspension (...) pour vérifier votre version. **Toujours effectuer la mise à jour vers la dernière version** lors de l’utilisation de l’outil.
 
-L’outil Diagnostics de la page pour SharePoint est une extension de navigateur pour les nouveauxhttps://www.microsoft.com/edge) navigateurs Microsoft Edge (et de chrome qui analysent à la fois les pages de site de publication classiques et de portail modernes SharePoint Online). Cet outil fonctionne uniquement pour SharePoint Online et ne peut pas être utilisé sur une page système SharePoint.
+L’Outil Diagnostic de page pour SharePoint est une extension de navigateur pour le nouveau Microsoft Edge (les navigateurs https://www.microsoft.com/edge) et Chrome que vous pouvez utiliser pour analyser les pages de sites de publication SharePoint classiques et les portails modernes. Cet outil fonctionne uniquement pour SharePoint Online et ne peut pas être utilisé sur une page système SharePoint.
 
 L’outil génère un rapport pour chaque page analysée affichant le mode d’exécution de la page par rapport à un ensemble prédéfini de règles et affiche des informations détaillées lorsque les résultats d’un test se situent hors de la valeur de la ligne de base. Les administrateurs et les concepteurs SharePoint Online peuvent utiliser l’outil pour résoudre les problèmes de performances et pour s’assurer que les nouvelles pages sont optimisées avant la publication.
 
@@ -126,7 +131,7 @@ L’onglet **suivi du réseau** fournit des informations détaillées sur les de
 
     ![Suivi réseau](media/page-diagnostics-for-spo/pagediag-networktrace-red.png)
 
-    Dans l’image illustrée ci-dessus, l’élément rouge est lié à la page par défaut. Elle s’affiche toujours en rouge, sauf si la \< page se charge dans les 1000MD (moins de 1 seconde).
+    Dans l’image illustrée ci-dessus, l’élément rouge est lié à la page par défaut. Elle s’affiche toujours en rouge, sauf si la page se charge dans les \< 1000MD (moins de 1 seconde).
 
 2. **Temps de chargement des éléments de test**. Dans certains cas, il n’y aura pas d’indicateur d’heure ou de couleur, car les éléments ont déjà été mis en cache par le navigateur. Pour tester ce problème correctement, ouvrez la page, effacez le cache du navigateur, puis cliquez sur **Démarrer** , car cela entraînera un chargement de page « froid » et sera une véritable réflexion du chargement de page initial. Cela doit ensuite être comparé à la charge de page « chaude » car cela permettra également de déterminer les éléments mis en cache sur la page.
 

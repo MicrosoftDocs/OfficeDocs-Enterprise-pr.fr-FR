@@ -81,6 +81,11 @@
 #### [Requêtes réseau dans Office pour Mac](network-requests-in-office-2016-for-mac.md)
 #### [Service web d’URL et d’adresses IP Office 365](office-365-ip-web-service.md)
 #### [Autres points de terminaison supplémentaires non inclus dans les services web](additional-office365-ip-addresses-and-urls.md)
+### [Optimisation des performances de Microsoft Office 365 pour les utilisateurs résidant en Chine](office-365-networking-china.md)
+### Réseaux de distribution de contenu (CDN)
+#### [Démarrage rapide CDN Office 365](office-365-cdn-quickstart.md)
+#### [Utiliser CDN Office 365 avec SharePoint Online](use-office-365-cdn-with-spo.md)
+#### [Réseaux de distribution de contenu](content-delivery-networks.md)
 ### Optimiser la connectivité d’Office 365 pour les utilisateurs distants
 #### [Vue d’ensemble : tunneling fractionné VPN](office-365-vpn-split-tunnel.md)
 #### [Implémentation du tunneling fractionné VPN](office-365-vpn-implement-split-tunnel.md)
@@ -92,7 +97,6 @@
 #### [Points de terminaison DoD du gouvernement américain](office-365-u-s-government-dod-endpoints.md)
 #### [Points de terminaison GCC High du gouvernement américain](office-365-u-s-government-gcc-high-endpoints.md)
 #### [Chaînes de chiffrement Office 365-DOD et GCC High.](https://docs.microsoft.com/microsoft-365/compliance/encryption-office-365-certificate-chains-itar)
-### [Réseaux de distribution de contenu](content-delivery-networks.md)
 ### [Prise en charge du protocole IPv6 dans les services Office 365](ipv6-support.md)
 ### [Prise en charge de la traduction d’adresses réseau (NAT) avec Office 365](nat-support-with-office-365.md)
 ### Utilisation d’ExpressRoute pour Office 365

@@ -15,12 +15,12 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: Prise en charge des applications clientes Office 365 pour l’authentification unique.
-ms.openlocfilehash: e64e260277ba1d3455e724b4f8944cfbe87eb864
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 8d6ba1701d9981bb5833bd6cf6ace641d5a27181
+ms.sourcegitcommit: 576c3dbdef535f952a861197dea5348908da9504
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41849052"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44619330"
 ---
 # <a name="office-365-client-app-support--single-sign-on"></a>Prise en charge des applications clientes Office 365 — authentification unique
 
@@ -33,11 +33,11 @@ En savoir plus sur l' [authentification unique](https://docs.microsoft.com/azure
 ## <a name="supported-platforms"></a>Plateformes prises en charge
 
  - Bureau<sup>2</sup> Windows 10
- - Windows 10 Modern Apps<sup>4</sup>
+ - Applications modernes Windows 10
  - Navigateurs Web
  - Android<sup>3</sup>
  - iOS<sup>1</sup>
- - macOS
+ - macOS<sup>4</sup>
 
 Pour plus d’informations sur la prise en charge de la plateforme dans Office 365, voir [Configuration requise pour office 365](https://products.office.com/office-system-requirements).
 
@@ -47,12 +47,12 @@ Les versions les plus récentes des clients suivants prennent en charge l’auth
 
 | | | | | | |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| ![Icône Access](media/o365-access-64x64.png) <br> [Access](https://products.office.com/access) | ![Icône portail d’entreprise](media/o365-microsoft-64x64.png) <br> [Portail <br> d’entreprise<sup>3</sup>](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal) | ![Icône Delve](media/o365-delve-64x64.png) <br> [Delve](https://products.office.com/business/intelligent-search) | ![Icône de serveur Edge](media/o365-edge-64x64.png) <br> [Edge](https://www.microsoft.com/windows/microsoft-edge) | ![Icône Excel](media/o365-excel-64x64.png) <br> [Excel](https://products.office.com/excel) 
-| ![Icône Flow](media/o365-flow-64x64.png) <br> [Flow](https://flow.microsoft.com) | ![Icône Kaizala](media/o365-kaizala-64x64.png) <br> [Kaizala<sup>1</sup>](https://products.office.com/en/business/microsoft-kaizala) | ![Icône Office.com](media/o365-office-64x64.png) <br> [Office.com](https://www.office.com/) | ![Icône de l’objectif](media/o365-lens-64x64.png) <br> [Office Lens<sup>4</sup>](https://www.microsoft.com/p/office-lens/9wzdncrfj3t8?activetab=pivot%3Aoverviewtab) | ![Icône OneDrive entreprise](media/o365-OneDrive-64x64.png) <br> [OneDrive](https://products.office.com/onedrive-for-business/online-cloud-storage) 
-| ![Icône OneNote](media/o365-OneNote-64x64.png) <br> [OneNote<sup>2</sup>](https://products.office.com/onenote) | ![Icône Outlook](media/o365-outlook-64x64.png) <br> [Outlook](https://products.office.com/outlook) | ![Icône planificateur](media/o365-planner-64x64.png) <br> [Planner](https://products.office.com/business/task-management-software) | ![Icône PowerBI](media/o365-powerbi-64x64.png) <br> [Power BI<sup>2</sup>](https://powerbi.microsoft.com)| ![Icône PowerPoint](media/o365-powerpoint-64x64.png) <br> [PowerPoint](https://products.office.com/powerpoint) 
-| ![Icône Project](media/o365-project-64x64.png) <br> [Project](https://products.office.com/project) | ![Icône Publisher](media/o365-publisher-64x64.png) <br> [Publisher](https://products.office.com/publisher) | ![Icône de SharePoint](media/o365-sharepoint-64x64.png) <br> [SharePoint](https://products.office.com/sharepoint) | ![Icône Skype Entreprise](media/o365-skypeforbusiness-64x64.png) <br> [Skype <br> entreprise](https://www.skype.com/business/) | ![Icône de pense-bête](media/o365-stickynotes-64x64.png) <br> [Notes du pense-bête](https://www.microsoft.com/p/microsoft-sticky-notes/9nblggh4qghw) 
-| ![Icône Sway](media/o365-sway-64x64.png) <br> [Sway](https://sway.com) | ![Icône Teams](media/o365-teams-64x64.png) <br> [Teams<sup>2</sup>](https://products.office.com/microsoft-teams/group-chat-software) | ![Icône action](media/o365-todo-64x64.png) <br> [Action](https://todo.microsoft.com) | ![Icône Visio](media/o365-visio-64x64.png) <br> [Visio](https://products.office.com/visio/flowchart-software) | ![Icône de tableau blanc](media/o365-whiteboard-64x64.png) <br> [Tableau blanc<sup>3</sup>](https://whiteboard.microsoft.com/) 
-| ![Icône Word](media/o365-word-64x64.png) <br> [Word](https://products.office.com/word) | ![Icône Yammer](media/o365-yammer-64x64.png) <br> [Yammer<sup>2</sup>](https://products.office.com/yammer/yammer-overview) |
+| ![Icône Access](media/o365-access-64x64.png) <br> [Access](https://products.office.com/access) | ![Icône portail d’entreprise](media/o365-microsoft-64x64.png) <br> [Portail d’entreprise <br> <sup>3, 4</sup>](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal) | ![Icône Delve](media/o365-delve-64x64.png) <br> [Delve](https://products.office.com/business/intelligent-search) | ![Icône de serveur Edge](media/o365-edge-64x64.png) <br> [Edge<sup>1</sup>](https://www.microsoft.com/windows/microsoft-edge) | ![Icône Excel](media/o365-excel-64x64.png) <br> [Excel](https://products.office.com/excel) 
+| ![Icône Kaizala](media/o365-kaizala-64x64.png) <br> [Kaizala<sup>1</sup>](https://products.office.com/en/business/microsoft-kaizala) | ![Icône Office.com](media/o365-office-64x64.png) <br> [Office.com](https://www.office.com/) | ![Icône de l’objectif](media/o365-lens-64x64.png) <br> [Office Lens](https://www.microsoft.com/p/office-lens/9wzdncrfj3t8?activetab=pivot%3Aoverviewtab) | ![Icône OneDrive entreprise](media/o365-OneDrive-64x64.png) <br> [OneDrive](https://products.office.com/onedrive-for-business/online-cloud-storage) | ![Icône OneNote](media/o365-OneNote-64x64.png) <br> [OneNote<sup>2</sup>](https://products.office.com/onenote) 
+| ![Icône Outlook](media/o365-outlook-64x64.png) <br> [Outlook<sup>4</sup>](https://products.office.com/outlook) | ![Icône planificateur](media/o365-planner-64x64.png) <br> [Planner](https://products.office.com/business/task-management-software) | ![Icône de mise en marche automatique](media/o365-flow-64x64.png) <br> [Automate d’alimentation <br>](https://flow.microsoft.com) | ![Icône PowerBI](media/o365-powerbi-64x64.png) <br> [Power BI<sup>2</sup>](https://powerbi.microsoft.com)| ![Icône PowerPoint](media/o365-powerpoint-64x64.png) <br> [PowerPoint](https://products.office.com/powerpoint) 
+| ![Icône Project](media/o365-project-64x64.png) <br> [Project](https://products.office.com/project) | ![Icône Publisher](media/o365-publisher-64x64.png) <br> [Publisher](https://products.office.com/publisher) | ![Icône de SharePoint](media/o365-sharepoint-64x64.png) <br> [SharePoint](https://products.office.com/sharepoint) | ![Icône de pense-bête](media/o365-stickynotes-64x64.png) <br> [Notes du pense-bête](https://www.microsoft.com/p/microsoft-sticky-notes/9nblggh4qghw)  | ![Icône Sway](media/o365-sway-64x64.png) <br> [Sway](https://sway.com) 
+| ![Icône Teams](media/o365-teams-64x64.png) <br> [Teams<sup>2, 4</sup>](https://products.office.com/microsoft-teams/group-chat-software) | ![Icône action](media/o365-todo-64x64.png) <br> [Action](https://todo.microsoft.com) | ![Icône Visio](media/o365-visio-64x64.png) <br> [Visio](https://products.office.com/visio/flowchart-software) | ![Icône de tableau blanc](media/o365-whiteboard-64x64.png) <br> [Tableau blanc<sup>3</sup>](https://whiteboard.microsoft.com/) | ![Icône Word](media/o365-word-64x64.png) <br> [Word](https://products.office.com/word) 
+| ![Icône Yammer](media/o365-yammer-64x64.png) <br> [Yammer<sup>2</sup>](https://products.office.com/yammer/yammer-overview) |
 
 ## <a name="supported-powershell-modules"></a>Modules PowerShell pris en charge
 
@@ -61,10 +61,10 @@ Les versions les plus récentes des clients suivants prennent en charge l’auth
 | ![Icône Azure](media/o365-azure-64x64.png) <br> [Azure AD <br> PowerShell](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0) | ![Icône Exchange](media/o365-exchange-64x64.png) <br> [Exchange Online <br> PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps) | ![Icône de SharePoint](media/o365-sharepoint-64x64.png) <br> [SharePoint Online <br> PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
 > [!NOTE]
-> <sup>1</sup> la prise en charge de Kaizala sur iOS est bientôt disponible. <br>
+> <sup>1</sup> la prise en charge de Edge et de Kaizala sur iOS est bientôt disponible. <br>
 > <sup>2</sup> la prise en charge de OneNote, de PowerBI, de teams et de Yammer sur le bureau Windows 10 bientôt disponible. <br>
 > <sup>3</sup> la prise en charge du tableau blanc sur Android est bientôt disponible. <br>
-> <sup>4</sup> la prise en charge d’Office Lens sur les applications modernes Windows 10 est bientôt disponible. <br>
+> <sup>4</sup> la prise en charge d’Outlook, de teams et du portail d’entreprise sur MacOS est bientôt disponible. <br>
 
 ## <a name="see-also"></a>Voir aussi
 

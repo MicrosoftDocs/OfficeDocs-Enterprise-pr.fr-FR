@@ -30,7 +30,6 @@
 ## Prise en charge de client Office 365
 ### [Authentification basée sur les certificats](office-365-client-support-certificate-based-authentication.md)
 ### [Accès conditionnel](office-365-client-support-conditional-access.md)
-### [Gestion des applications mobiles](office-365-client-support-mobile-application-management.md)
 ### [Authentification moderne](office-365-client-support-modern-authentication.md)
 ### [Authentification unique](office-365-client-support-single-sign-on.md)
 

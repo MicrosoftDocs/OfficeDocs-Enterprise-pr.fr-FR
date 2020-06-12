@@ -30,6 +30,7 @@
 ## Prise en charge de client Office 365
 ### [Authentification basée sur les certificats](office-365-client-support-certificate-based-authentication.md)
 ### [Accès conditionnel](office-365-client-support-conditional-access.md)
+### [Gestion des applications mobiles](https://support.microsoft.com/en-us/office/overview-of-mobile-device-management-mdm-for-microsoft-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a?ui=en-US&rs=en-US&ad=US)
 ### [Authentification moderne](office-365-client-support-modern-authentication.md)
 ### [Authentification unique](office-365-client-support-single-sign-on.md)
 
@@ -106,7 +107,7 @@
 
 ## 2. Configurer vos identités
 ### [Protéger vos comptes Administrateur général](protect-your-global-administrator-accounts.md)
-### [Identités uniquement dans le Cloud](cloud-only-identities.md)
+### [Identité cloud uniquement](cloud-only-identities.md)
 ### Identité hybride
 #### [Préparer la synchronisation d'annuaires](prepare-for-directory-synchronization.md)
 #### Utilisation de l'outil IdFix

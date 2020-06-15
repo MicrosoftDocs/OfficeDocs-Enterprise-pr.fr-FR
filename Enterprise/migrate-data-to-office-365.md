@@ -1,5 +1,5 @@
 ---
-title: Effectuer une migration de vos données d’organisation vers Office 365 Entreprise
+title: Migrer les données de votre organisation vers Microsoft 365 Enterprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,25 +15,25 @@ search.appverid:
 ms.assetid: e2fdfc8d-547e-4419-8628-2738ed4e0f46
 f1.keywords:
 - NOCSH
-description: Si vous avez interrompu votre déploiement FastTrack et que vous êtes prêt à migrer les données vers Office 365, il s’agit du point de départ.
-ms.openlocfilehash: 44038429ecf3b927db408679f8651d4055113a48
-ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
+description: Si vous avez opté pour le déploiement de FastTrack et que vous êtes prêt à migrer les données vers Microsoft 365, il s’agit du point de départ.
+ms.openlocfilehash: a04c4df37d5f8c72330907752247d7bea48fb72d
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419342"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711847"
 ---
-# <a name="migrate-your-organization-data-to-office-365-enterprise"></a>Effectuer une migration de vos données d’organisation vers Office 365 Entreprise
+# <a name="migrate-your-organization-data-to-microsoft-365-enterprise"></a>Migrer les données de votre organisation vers Microsoft 365 Enterprise
 
-## <a name="ready-to-migrate-your-data-to-office-365"></a>Êtes-vous prêt à migrer vos données vers Office 365 ?
+## <a name="ready-to-migrate-your-data-to-microsoft-365"></a>Vous êtes prêt à migrer vos données vers Microsoft 365 ?
 
-Nos[instructions de configuration de base](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa) vous aident à encourager l’utilisation des services Office 365 et applications le plus rapidement possible. Cette description ignore les scénarios hybrides et les méthodes plus avancées de migration vers Office 365. 
+Nos [instructions de configuration de base](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa) vous aident à faire en sorte que tout le monde utilise vos applications et services Microsoft 365 le plus rapidement possible. Cela permet d’ignorer les scénarios hybrides et les méthodes plus avancées de migration vers Microsoft 365. 
   
-Si vous souhaitez obtenir de l’aide sur la configuration d’Office 365, [FastTrack](https://fasttrack.microsoft.com/office) est le moyen le plus simple pour déployer Office 365, vous pouvez également vous connecter et utiliser les [guides de configuration pour Office 365 services](setup-guides-for-office-365.md).
+Si vous souhaitez obtenir de l’aide sur la configuration de Microsoft 365, [FastTrack](https://fasttrack.microsoft.com/office) est le moyen le plus simple pour déployer Microsoft 365, vous pouvez également vous connecter et utiliser les [guides de configuration pour les services Microsoft 365](setup-guides-for-office-365.md).
 
-## <a name="migrate-email-to-office-365"></a>Effectuer une migration de Gmail vers Office 365
+## <a name="migrate-email-to-microsoft-365"></a>Migrer le courrier électronique vers Microsoft 365
 - Effectuer une migration avec Exchange hybride à l’aide de l’ [Assistant de Déploiement Exchange](https://technet.microsoft.com/exdeploy2013). (Administrateur)
-- En savoir plus sur les différents[méthodes de migration du courrier électronique vers Office 365](https://support.office.com/article/Ways-to-migrate-multiple-email-accounts-to-Office-365-0a4913fe-60fb-498f-9155-a86516418842).
+- En savoir plus sur les différentes [manières de migrer le courrier électronique vers Microsoft 365](https://support.office.com/article/Ways-to-migrate-multiple-email-accounts-to-Office-365-0a4913fe-60fb-498f-9155-a86516418842).
 - Trouvez des solutions de remplacement [membres de votre organisation peuvent migrer leurs propres courrier électronique, contacts et calendriers](https://support.office.com/article/Migrate-email-and-contacts-to-Office-365-for-business-a3e3bddb-582e-4133-8670-e61b9f58627e).
 
 ## <a name="migrate-files-and-folders"></a>Effectuer une migration de fichiers et dossiers

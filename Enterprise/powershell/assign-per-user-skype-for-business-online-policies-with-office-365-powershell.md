@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 'Résumé : Utilisez Office 365 PowerShell pour affecter des paramètres de communication à chaque utilisateur au moyen de stratégies Skype Entreprise Online.'
-ms.openlocfilehash: 89b3ab5ce571c9812e2b4f3d3aef7066a7babb08
-ms.sourcegitcommit: 0c2d4cfb4d1b21ea93bcc6eb52421548db34b1e6
+ms.openlocfilehash: 0b95c993c3795bdbe9a68e23e107ea745c15f71b
+ms.sourcegitcommit: 88ede20888e2db0bb904133c0bd97726d6d65ee2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44374443"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44719965"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>Affectation de stratégies Skype Entreprise Online propres à chaque utilisateur avec Office 365 PowerShell
 
@@ -50,16 +50,13 @@ Supposons que vous souhaitiez modifier les paramètres de communication externe 
     
 2. Attribuer cette stratégie d’accès externe à Alex.
     
-> [!NOTE]
->  Vous ne pouvez pas créer votre propre stratégie personnalisée. Skype Entreprise Online ne permet pas de créer de stratégies personnalisées. Vous devez attribuer l'une des stratégies créées spécifiquement pour Office 365. Les stratégies pré-créées sont les suivantes :  4 stratégies de client différentes,  224 stratégies de conférence différentes,  5 plans de numérotation différents, 5 stratégies d'accès externe différentes, 1 stratégie de messagerie vocale hébergée et 4 stratégies de voix différentes.
-  
-Comment savoir alors quelle stratégie d’accès externe attribuer à Alex ? La commande suivante renvoie toutes les stratégies d’accès externe où EnableFederationAccess a la valeur True et EnablePublicCloudAccess a la valeur False :
+Comment déterminer quelle stratégie d’accès externe attribuer à Alex ? La commande suivante renvoie toutes les stratégies d’accès externe où EnableFederationAccess a la valeur True et EnablePublicCloudAccess a la valeur False :
   
 ```powershell
-Get-CsExternalAccessPolicy | Where-Object {$_.EnableFederationAccess -eq $True -and $_.EnablePublicCloudAccess -eq $False}
+Get-CsExternalAccessPolicy -Include All| Where-Object {$_.EnableFederationAccess -eq $True -and $_.EnablePublicCloudAccess -eq $False}
 ```
 
-Le rôle de la commande consiste à renvoyer toutes les stratégies qui répondent aux deux critères suivants : la propriété EnableFederationAccess est définie sur True et la stratégie EnablePublicCloudAccess sur False. Ensuite, cette commande renvoie une stratégie (FederationOnly) qui répond à nos critères. Voici un exemple :
+Sauf si vous avez créé des instances personnalisées de ExternalAccessPolicy, cette commande renvoie une stratégie qui répond à nos critères (FederationOnly). Voici un exemple :
   
 ```powershell
 Identity                          : Tag:FederationOnly
@@ -71,9 +68,6 @@ EnablePublicCloudAudioVideoAccess : False
 EnableOutsideAccess               : True
 ```
 
-> [!NOTE]
-> L’identité de la stratégie indique Tag:FederationOnly. Ce préfixe Tag: est issu de nos travaux préliminaires sur Microsoft Lync 2013. Pour attribuer des stratégies aux utilisateurs, vous devez supprimer le préfixe Tag: et utiliser uniquement le nom de stratégie : FederationOnly. 
-  
 Maintenant que vous savez quelle stratégie attribuer à Alex, vous pouvez le faire à l'aide de la cmdlet [Grant-CsExternalAccessPolicy](https://go.microsoft.com/fwlink/?LinkId=523974). Voici un exemple :
   
 ```powershell
@@ -98,7 +92,7 @@ Get-CsOnlineUser | Grant-CsExternalAccessPolicy "FederationAndPICDefault"
 
 Cette commande utilise Get-CsOnlineUser pour renvoyer une collection de tous les utilisateurs qui ont été activés pour Lync, puis transmet toutes ces informations à la cmdlet Grant-CsExternalAccessPolicy, laquelle attribue la stratégie FederationAndPICDefault à chaque utilisateur de la collection.
   
-Autre exemple : supposons que vous ayez déjà attribué la stratégie FederationAndPICDefault à Alex, mais que vous ayez changé d'avis et que vous souhaitiez désormais qu'il soit géré par la stratégie d'accès externe globale. Vous ne pouvez pas attribuer explicitement la stratégie globale à un utilisateur. Elle est uniquement utilisée si aucune autre stratégie spécifique n'est affectée à un utilisateur. Cela signifie que, si nous voulons qu'Alex soit géré par la stratégie globale, nous devons lui  *désattribuer*  toutes les stratégies spécifiques qui lui sont affectées. Voici un exemple de commande :
+Autre exemple : supposons que vous ayez déjà attribué la stratégie FederationAndPICDefault à Alex, mais que vous ayez changé d'avis et que vous souhaitiez désormais qu'il soit géré par la stratégie d'accès externe globale. Vous ne pouvez pas attribuer explicitement la stratégie globale à un utilisateur. Au lieu de cela, la stratégie globale est utilisée pour un utilisateur donné si aucune stratégie par utilisateur n’est affectée à cet utilisateur. Cela signifie que, si nous voulons qu'Alex soit géré par la stratégie globale, nous devons lui  *désattribuer*  toutes les stratégies spécifiques qui lui sont affectées. Voici un exemple de commande :
   
 ```powershell
 Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
@@ -106,7 +100,6 @@ Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
 
 Cette commande définit le nom de la stratégie d'accès externe attribuée à Alex sur une valeur nulle ($Null). En d'autres termes, aucune stratégie d'accès externe n'est attribuée à Alex. Or, en l'absence de stratégie d'accès externe attribuée à un utilisateur, ce dernier est géré par la stratégie globale.
   
-Pour désactiver un compte d’utilisateur à l’aide de Windows PowerShell, utilisez les cmdlets Azure Active Directory pour supprimer la licence Skype Entreprise Online d’Alex. Pour plus d’informations, consultez la rubrique [Désactiver l’accès aux services avec Office 365 PowerShell](assign-licenses-to-user-accounts-with-office-365-powershell.md).
 
 ## <a name="managing-large-numbers-of-users"></a>Gestion d’un grand nombre d’utilisateurs
 

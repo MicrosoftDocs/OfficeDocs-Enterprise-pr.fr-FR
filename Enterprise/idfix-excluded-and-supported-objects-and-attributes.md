@@ -18,21 +18,21 @@ ms.collection:
 - M365-identity-device-management
 ms.assetid: cc453ae5-fa9b-4836-b0ce-c7e824b1e36d
 description: Répertorie les attributs qui sont exclus et pris en charge par l’outil IdFix.
-ms.openlocfilehash: 0203f47864dc4222cd2f95a4e67b2f10bec44f71
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: da9a59d60b1ae2f1f68803e5a10afba16207fc69
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840141"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711574"
 ---
 # <a name="idfix-excluded-and-supported-objects-and-attributes"></a>Attributs et objets d'IdFix pris en charge et exclus
 
-*Cet article est valable pour Office 365 Entreprise et Microsoft 365 Entreprise*.
+*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
 
 Il existe deux ensembles de règles gérées par IdFix ; Mutualisée et dédiée/ITAR. Pour l’instant, les deux ensembles de règles excluent les mêmes objets, attributs et valeurs d’attribut de la recherche. Cela peut changer dans les versions ultérieures.
   
 ## <a name="multi-tenant-and-dedicated-error-exclusions-used-by-idfix"></a>Exclusions d’erreurs dédiées et mutualisées utilisées par IdFix
-Cette section répertorie les objets, attributs et valeurs que IdFix exclut de sa recherche dans l’annuaire. L’astérisque (\*) est un caractère générique qui peut être remplacé par d’autres caractères.
+Cette section répertorie les objets, attributs et valeurs que IdFix exclut de sa recherche dans l’annuaire. L’astérisque ( \* ) est un caractère générique qui peut être remplacé par d’autres caractères.
   
 ### <a name="objects-attributes-and-values-excluded-during-an-idfix-search"></a>Objets, attributs et valeurs exclus pendant une recherche IdFix
 
@@ -56,6 +56,6 @@ Cette section répertorie les objets, attributs et valeurs que IdFix exclut de s
 |L’objet contient l’attribut IsCriticalSystemObject |Voir [attribute isCriticalSystemObject](https://go.microsoft.com/fwlink/p/?LinkId=401169). |
    
 ## <a name="multi-tenant-and-dedicated-objects-and-attributes-checked-by-idfix"></a>Objets et attributs dédiés à plusieurs clients et contrôlés par IdFix
-Les attributs vérifiés pour les erreurs par IdFix sont décrits dans la section « Préparation des attributs et des objets d’annuaire » de [Prepare Directory attributes for Synchronization with Office 365 à l’aide de l’outil IdFix](prepare-directory-attributes-for-synch-with-idfix.md).
+Les attributs vérifiés pour les erreurs par IdFix sont décrits dans la section « Préparation des attributs et des objets d’annuaire » de [Prepare Directory attributes for Synchronization with Microsoft 365 à l’aide de l’outil IdFix](prepare-directory-attributes-for-synch-with-idfix.md).
   
 

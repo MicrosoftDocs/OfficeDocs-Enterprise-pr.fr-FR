@@ -13,17 +13,17 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
-description: 'Résumé : configurez l’infrastructure Microsoft Azure pour qu’elle héberge l’authentification fédérée haute disponibilité pour Office 365.'
-ms.openlocfilehash: 9f2991ef495093f2aed01e57f47dab3371b97de3
-ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
+description: 'Résumé : configurez l’infrastructure Microsoft Azure pour qu’elle héberge l’authentification fédérée haute disponibilité pour Microsoft 365.'
+ms.openlocfilehash: 10bf8165b36571b5cd68107fa32e26db970d1d58
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43793827"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711947"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Authentification fédérée haute disponibilité, phase 1 : Configurer Azure
 
-Dans cette phase, vous créez les groupes de ressources, le réseau virtuel et les groupes à haute disponibilité dans Azure qui hébergeront les machines virtuelles dans les phases 2, 3 et 4. Vous devez effectuer cette phase avant de passer à la [phase 2 : configurer les contrôleurs de domaine](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Reportez-vous à la rubrique [Déployer une authentification fédérée haute disponibilité pour Office 365 dans Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) pour toutes les phases.
+Dans cette phase, vous créez les groupes de ressources, le réseau virtuel et les groupes à haute disponibilité dans Azure qui hébergeront les machines virtuelles dans les phases 2, 3 et 4. Vous devez effectuer cette phase avant de passer à la [phase 2 : configurer les contrôleurs de domaine](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Consultez la rubrique [Deploy High Availability Federated Authentication for Microsoft 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) pour toutes les phases.
   
 Azure doit être mis en service avec ces composants de base :
   
@@ -106,7 +106,7 @@ Pour l'ensemble des espaces d'adressage du réseau local, remplissez le tableau 
    
  **Tableau L : préfixes d'adresse pour le réseau local**
   
-Commençons à présent à créer l’infrastructure Azure pour héberger votre authentification fédérée pour Office 365.
+Commençons à présent à créer l’infrastructure Azure pour héberger votre authentification fédérée pour Microsoft 365.
   
 > [!NOTE]
 > [!REMARQUE] Les ensembles de commandes suivants utilisent la dernière version d'Azure PowerShell. Consultez la rubrique [prise en main d’Azure PowerShell](https://docs.microsoft.com/powershell/azure/get-started-azureps). 
@@ -132,7 +132,7 @@ Pour les versions antérieures d’Azure PowerShell, utilisez cette commande à 
 Get-AzSubscription | Sort Name | Select SubscriptionName
 ```
 
-Définissez votre abonnement Azure. Remplacez tout le texte entre guillemets, \< y compris les caractères et >, par le nom correct.
+Définissez votre abonnement Azure. Remplacer tout le texte entre guillemets, y compris les \< and > caractères, par le nom correct.
   
 ```powershell
 $subscrName="<subscription name>"
@@ -300,9 +300,9 @@ New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locNam
 
 Voici la configuration obtenue à la fin de cette phase.
   
-**Phase 1 : l’infrastructure Azure pour l’authentification fédérée haute disponibilité pour Office 365**
+**Phase 1 : l’infrastructure Azure pour l’authentification fédérée haute disponibilité pour Microsoft 365**
 
-![Phase 1 de l’authentification fédérée Office 365 à haute disponibilité dans Azure avec l’infrastructure Azure](media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
+![Phase 1 de la haute disponibilité Microsoft 365 Federated Authentication in Azure with the Azure infrastructure](media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
   
 ## <a name="next-step"></a>Étape suivante
 
@@ -310,12 +310,12 @@ Utilisez la [phase 2 : configurer les contrôleurs de domaine](high-availabilit
   
 ## <a name="see-also"></a>Voir aussi
 
-[Déployer une authentification fédérée haute disponibilité pour Office 365 dans Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+[Déployer l’authentification fédérée haute disponibilité pour Microsoft 365 dans Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   
-[Identité fédérée pour votre environnement de développement/test Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
+[Identité fédérée pour votre environnement de développement/test Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/federated-identity-for-your-office-365-dev-test-environment)
   
 [Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.yml)
 
-[Présentation de l’identité Office 365 et d’Azure Active Directory](about-office-365-identity.md)
+[Présentation de l’identité Microsoft 365 et d’Azure Active Directory](about-office-365-identity.md)
 
 

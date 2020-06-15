@@ -15,12 +15,12 @@ ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 f1.keywords:
 - NOCSH
 description: Les déplacements de données sont des opérations principales n'ayant que peu d'impact sur les utilisateurs finals. Aucune action de votre part n'est requise lorsque Microsoft déplace chaque service et les données associées pour votre client vers une nouvelle zone géographique de centres de données. Le transfert de données et la validation se déroulent en arrière-plan à l'avance, et n'ont qu'une incidence minimale sur les utilisateurs.
-ms.openlocfilehash: 24239f4e6cb8207fe53043dce80ae77035d8e834
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+ms.openlocfilehash: dc028cb34bca73a08e8c62668c22edfacc7829f6
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009299"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711917"
 ---
 # <a name="during-and-after-your-data-move"></a>Pendant et après le déplacement de vos données
 
@@ -29,7 +29,7 @@ Les déplacements de données sont des opérations principales n'ayant que peu d
 > [!NOTE]
 > Le déplacement se produit à différents moments pour chaque service. Par conséquent, vous ne verrez pas la description des fonctionnalités réduites pour chaque service au même moment. 
   
-Regardez le centre de messages Microsoft 365 pour confirmer le déplacement de chaque Exchange Online, SharePoint Online, teams et Skype entreprise. Comme indiqué dans le tableau ci-dessous, le déplacement de toutes les données pour tous les clients dans une zone géographique spécifique peut prendre jusqu'à 24 mois à compter de la fin de la période d'inscription. Si vous rencontrez des problèmes avec votre client après le déplacement, contactez le [support Office 365](https://go.microsoft.com/fwlink/p/?LinkID=522459) pour obtenir de l'aide. 
+Regardez le centre de messages Microsoft 365 pour confirmer le déplacement de chaque Exchange Online, SharePoint Online, teams et Skype entreprise. Comme indiqué dans le tableau ci-dessous, le déplacement de toutes les données pour tous les clients dans une zone géographique spécifique peut prendre jusqu’à 24 mois à compter de la fin de la période d’inscription. Si vous rencontrez des problèmes avec votre client après le déplacement, contactez le [support technique](https://go.microsoft.com/fwlink/p/?LinkID=522459) pour obtenir de l’aide. 
   
 
 |**Clients avec pays d’abonnement dans**|**Tous les déplacements terminés d'ici le**|
@@ -74,7 +74,7 @@ Lors du déplacement de SharePoint Online, les données des services suivants so
     
 - Office dans le navigateur
     
-- Microsoft 365 Apps for enterprise
+- Applications Microsoft 365 pour les grandes entreprises
     
 - Visio Pro pour Office 365
     
@@ -106,7 +106,7 @@ Les fonctionnalités de recherche suivantes sont concernées :
     
 - Protection contre la perte de données (DLP) : Les politiques ne sont pas appliquées sur les éléments qui changent avant que l’analyse n’ait récupéré les modifications.
 
-## <a name="microsoft-teams"></a>Microsoft Teams
+## <a name="microsoft-teams"></a>Microsoft Teams
 
 Outre Exchange Online, SharePoint Online et OneDrive entreprise, Microsoft migre les données de teams vers le centre de données local.
 

@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 75fa293a-b51c-42d0-ad90-5b3d9c9b0cd4
 description: 'Résumé : Consultez ces articles pour déployer les solutions de sécurité avec les offres cloud de Microsoft.'
-ms.openlocfilehash: d006fe0ebb1b4bb4c963ffec8dbdece590c81032
-ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
+ms.openlocfilehash: aecb9f8d23b04cbc5c4d8065708ba8171f1ea555
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43793677"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711827"
 ---
 # <a name="security-solutions"></a>Solutions de sécurité
 
@@ -44,7 +44,7 @@ Vous trouverez ci-dessous des solutions pour bénéficier d’un accès, d’une
   
 [Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
   
-[Guides de laboratoire de test d'adoption cloud](cloud-adoption-test-lab-guides-tlgs.md)
+[Guides de laboratoire de test Microsoft 365 pour entreprise](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides)
   
 [Modèles architecturaux pour SharePoint, Exchange, Skype Entreprise et Lync](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
   

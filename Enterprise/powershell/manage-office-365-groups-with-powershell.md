@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: Découvrez comment effectuer des tâches de gestion courantes pour les groupes Office 365 dans Microsoft PowerShell.
-ms.openlocfilehash: 7ebb3cfdfc6375cbc340c1fc3be37d59bcd9d4c8
-ms.sourcegitcommit: c758588cf2b68de9291a362fd73ec9dc721d04d3
+ms.openlocfilehash: 5868c875645685b10197ab05fd233940b73b0e88
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44411061"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711837"
 ---
 # <a name="manage-office-365-groups-with-powershell"></a>Utiliser PowerShell pour gérer les groupes Office 365
  
@@ -188,7 +188,7 @@ Les applets de commande suivantes peuvent être utilisées avec les groupes Offi
 |[Set-applet userphoto](https://go.microsoft.com/fwlink/p/?LinkId=536511) <br/> |Utilisé pour associer une photo d’utilisateur à un compte. Les photos des utilisateurs sont stockées dans Active Directory  <br/> |
 |[Remove-applet userphoto](https://go.microsoft.com/fwlink/p/?LinkId=536512) <br/> |Suppression de la photo d’un groupe Office 365  <br/> |
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Mettre à niveau des listes de distribution vers des groupes Office 365](https://docs.microsoft.com/office365/admin/manage/upgrade-distribution-lists)
 

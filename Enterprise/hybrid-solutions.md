@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: "Résumé : Utilisez les articles suivants pour déployer les charges de travail d'Office Server dans Microsoft Azure."
-ms.openlocfilehash: 5106a509cd5be05b9988f6d4b27c1947deede588
-ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
+ms.openlocfilehash: 558b3eb612d67b3135a762326382218ae4f286c1
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43793787"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711564"
 ---
 # <a name="hybrid-solutions"></a>Solutions hybrides
 
@@ -29,15 +29,15 @@ ms.locfileid: "43793787"
   
 Avec Microsoft Azure, vous pouvez désormais déployer certaines charges de travail d’Office Server qui étaient généralement déployées localement dans les services d’infrastructure Azure.
   
-Pour l’infrastructure d’identité Office 365 dans Azure :
+Pour l’infrastructure d’identité Microsoft 365 dans Azure :
 
 - [Utiliser Azure AD pour l’authentification SharePoint Server](using-azure-ad-for-sharepoint-server-authentication.md)
 
-- [Déploiement de la synchronisation d’annuaires Office 365 dans Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+- [Déploiement de la synchronisation d’annuaires Microsoft 365 dans Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
   
 - [Connecter un réseau local à Microsoft Azure Virtual Network](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
     
-- [Déployer une authentification fédérée haute disponibilité pour Office 365 dans Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+- [Déployer l’authentification fédérée haute disponibilité pour Microsoft 365 dans Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
     
 Pour les charges de travail SharePoint Server 2013 dans Azure :
   
@@ -54,8 +54,6 @@ Pour les charges de travail SharePoint Server 2013 dans Azure :
   
 [Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
   
-[Guides de laboratoire de test d'adoption cloud](cloud-adoption-test-lab-guides-tlgs.md)
+[Microsoft 365 pour les guides de laboratoire de test d’entreprise (guides)](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides)
   
 [Modèles architecturaux pour SharePoint, Exchange, Skype Entreprise et Lync](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
-
-

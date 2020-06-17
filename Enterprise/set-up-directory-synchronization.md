@@ -1,9 +1,9 @@
 ---
-title: Configurer la synchronisation d’annuaires pour Office 365
+title: Configurer la synchronisation d’annuaires pour Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/03/2019
+ms.date: 06/15/2020
 audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -21,23 +21,23 @@ search.appverid:
 - MBS150
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
-description: Découvrez comment configurer la synchronisation d’annuaires entre Office 365 et votre annuaire Active Directory local.
-ms.openlocfilehash: d549d2b56ef1d642e5dfc16b747e6eb909dd7337
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Découvrez comment configurer la synchronisation d’annuaires entre Microsoft 365 et votre annuaire Active Directory local.
+ms.openlocfilehash: 775ff04976c92d7e937ddc018e0e1dd617c8fca3
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844045"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735986"
 ---
-# <a name="set-up-directory-synchronization-for-office-365"></a>Configurer la synchronisation d’annuaires pour Office 365
+# <a name="set-up-directory-synchronization-for-microsoft-365"></a>Configurer la synchronisation d’annuaires pour Microsoft 365
 
-*Cet article est valable pour Office 365 Entreprise et Microsoft 365 Entreprise*.
+*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
 
-Office 365 utilise un client Azure Active Directory (Azure AD) pour stocker et gérer les identités pour l’authentification et les autorisations d’accès aux ressources en nuage. 
+Microsoft 365 utilise un client Azure Active Directory (Azure AD) pour stocker et gérer les identités pour l’authentification et les autorisations d’accès aux ressources en nuage. 
 
-Si vous disposez d’un service de domaine Active Directory (AD DS) local, vous pouvez synchroniser vos comptes d’utilisateur, groupes et contacts AD DS avec le client Azure AD de votre abonnement Office 365. Il s’agit d’une identité hybride pour Office 365. Voici ses composants.
+Si vous disposez d’un service de domaine Active Directory (AD DS) local, vous pouvez synchroniser vos comptes d’utilisateur, groupes et contacts AD DS avec le client Azure AD de votre abonnement Microsoft 365. Il s’agit de l’identité hybride pour Microsoft 365. Voici ses composants.
 
-![Composants de la synchronisation d’annuaires pour Office 365](./media/about-office-365-identity/hybrid-identity.png)
+![Composants de la synchronisation d’annuaires pour Microsoft 365](./media/about-office-365-identity/hybrid-identity.png)
 
 Azure AD Connect s’exécute sur un serveur local et synchronise vos services de domaine Active Directory avec le client Azure AD. En plus de la synchronisation d’annuaires, vous pouvez également spécifier les options d’authentification suivantes :
 
@@ -57,12 +57,12 @@ Pour plus d’informations, consultez la rubrique [identités hybrides](plan-for
   
 ## <a name="1-review-prerequisites-for-azure-ad-connect"></a>1. vérifier la configuration requise pour Azure AD Connect
 
-Vous obtenez un abonnement Azure AD gratuit avec votre abonnement Office 365. Lorsque vous configurez la synchronisation d’annuaires, vous devez installer Azure AD Connect sur l’un de vos serveurs locaux.
+Vous obtenez un abonnement Azure AD gratuit avec votre abonnement Microsoft 365. Lorsque vous configurez la synchronisation d’annuaires, vous devez installer Azure AD Connect sur l’un de vos serveurs locaux.
   
-Pour Office 365, vous devez :
+Pour Microsoft 365, vous devez :
   
 - Vérifiez votre domaine local. L’Assistant Azure AD Connect vous guide à travers cela.
-- Obtenez les noms d’utilisateur et les mots de passe des comptes d’administrateur de votre client et AD DS Office 365.
+- Obtenez les noms d’utilisateur et les mots de passe des comptes d’administrateur de votre client et AD DS Microsoft 365.
 
 Pour votre serveur local sur lequel vous installez Azure AD Connect, vous aurez besoin des éléments suivants :
   
@@ -80,22 +80,22 @@ Vous pouvez également consulter l' [historique des versions](https://docs.micro
 
 Avant de commencer, vérifiez que vous disposez des éléments suivants :
 
-- Le nom d’utilisateur et le mot de passe d’un administrateur général Office 365
+- Le nom d’utilisateur et le mot de passe d’un administrateur général Microsoft 365
 - Le nom d’utilisateur et le mot de passe d’un administrateur de domaine AD DS ;
 - Quelle méthode d’authentification (hachage, directe, fédéré)
 - Si vous souhaitez utiliser l’authentification [unique transparente Azure ad](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso)
 
 Procédez comme suit :
 
-1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) (https://admin.microsoft.com) et **Choisissez** \> utilisateurs **actifs** dans le volet de navigation de gauche.
-2. Sur la page **utilisateurs actifs** , choisissez **plus** (trois points) \> de **synchronisation d’annuaires**.
+1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) ( https://admin.microsoft.com) et choisissez **utilisateurs** \> **actifs** dans le volet de navigation de gauche.
+2. Sur la page **utilisateurs actifs** , choisissez **plus** (trois points) de \> **synchronisation d’annuaires**.
   
 3. Sur la page **préparation d’Azure Active Directory** , sélectionnez l’option **accéder au centre de téléchargement pour obtenir le lien vers l’outil Azure ad Connect** pour commencer. 
 4. Suivez les étapes de la feuille de [route Azure ad Connect et Azure ad Connect Health installation](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-roadmap).
 
 ## <a name="3-finish-setting-up-domains"></a>3. terminer la configuration des domaines
 
-Suivez les étapes de la procédure [créer des enregistrements DNS pour Office 365 lorsque vous gérez vos enregistrements DNS](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) pour terminer la configuration de vos domaines.
+Suivez les étapes de la procédure [créer des enregistrements DNS pour Microsoft 365 lorsque vous gérez vos enregistrements DNS](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) pour terminer la configuration de vos domaines.
 
 ## <a name="next-step"></a>Étape suivante
 

@@ -1,9 +1,9 @@
 ---
-title: Protéger vos comptes d’administrateur général Office 365
+title: Protéger vos comptes d’administrateur général Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/15/2020
+ms.date: 06/15/2020
 audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -18,19 +18,19 @@ search.appverid:
 f1.keywords:
 - NOCSH
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
-description: Protégez l’accès administrateur général à votre abonnement Office 365.
-ms.openlocfilehash: 4f3e7dcb23f467768d647b7a5e8db9c41af2d076
-ms.sourcegitcommit: fa25333a28ad300a7be990c1491d95f09a214a12
+description: Protégez l’accès administrateur général à votre abonnement Microsoft 365.
+ms.openlocfilehash: 6378a7c7b6e8479e25cf6465006f422cdc2137b0
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44253291"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735722"
 ---
-# <a name="protect-your-office-365-global-administrator-accounts"></a>Protéger vos comptes d’administrateur général Office 365
+# <a name="protect-your-microsoft-365-global-administrator-accounts"></a>Protéger vos comptes d’administrateur général Microsoft 365
 
-*Cet article est valable pour Office 365 Entreprise et Microsoft 365 Entreprise*.
+*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
 
-Les violations de sécurité d’un abonnement Office 365, y compris la collecte d’informations et les attaques par hameçonnage, sont généralement réalisées en compromettant les informations d’identification d’un compte d’administrateur général Office 365. La sécurité dans le Cloud est un partenariat entre vous et Microsoft :
+Les violations de sécurité d’un abonnement Microsoft 365, y compris la collecte d’informations et les attaques par hameçonnage, sont généralement réalisées en compromettant les informations d’identification d’un compte d’administrateur général Microsoft 365. La sécurité dans le Cloud est un partenariat entre vous et Microsoft :
   
 - Les services de Cloud Computing Microsoft sont basés sur une base de confiance et de sécurité. Microsoft fournit des contrôles et des fonctionnalités de sécurité pour vous aider à protéger vos données et applications.
     
@@ -38,13 +38,13 @@ Les violations de sécurité d’un abonnement Office 365, y compris la collecte
     
 Microsoft offre des fonctionnalités pour vous aider à protéger votre organisation, mais elles ne sont efficaces que si vous les utilisez. Si vous ne les utilisez pas, vous pouvez être vulnérable aux attaques. Pour protéger vos comptes d’administrateur général, Microsoft vous aide à obtenir des instructions détaillées pour :
   
-1. Créez des comptes d’administrateur général Office 365 dédiés et utilisez-les uniquement lorsque cela est nécessaire.
+1. Créez des comptes d’administrateur général Microsoft 365 dédiés et utilisez-les uniquement lorsque cela est nécessaire.
     
-2. Configurez l’authentification multifacteur pour vos comptes d’administrateur général Office 365 dédiés et utilisez la forme d’authentification secondaire la plus puissante.
+2. Configurez l’authentification multifacteur pour vos comptes d’administrateur général Microsoft 365 dédiés et utilisez la forme d’authentification secondaire la plus puissante.
     
 > [! Remarques] bien que cet article soit axé sur les comptes d’administrateur général, vous devez déterminer si des comptes supplémentaires avec des autorisations étendues pour accéder aux données de votre abonnement, tels que les comptes d’administrateur eDiscovery ou d’administrateur de sécurité ou de conformité, doivent être protégés de la même manière. <br > Il est possible de créer un compte d’administrateur général sans ajouter de licences.
   
-## <a name="step-1-create-dedicated-office-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>Étape 1. Créer des comptes d’administrateur général Office 365 dédiés et les utiliser uniquement lorsque cela est nécessaire
+## <a name="step-1-create-dedicated-microsoft-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>Étape 1. Créez des comptes d’administrateur général Microsoft 365 dédiés et utilisez-les uniquement lorsque cela est nécessaire.
 
 Il existe relativement peu de tâches administratives, telles que l’affectation de rôles à des comptes d’utilisateur, qui nécessitent des privilèges d’administrateur général. Par conséquent, au lieu d’utiliser tous les comptes d’utilisateur qui ont été affectés au rôle d’administrateur global, procédez comme suit :
   
@@ -54,13 +54,13 @@ Il existe relativement peu de tâches administratives, telles que l’affectatio
   Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
   ```
 
-2. Connectez-vous à votre abonnement Office 365 avec un compte d’utilisateur auquel le rôle d’administrateur global a été attribué.
+2. Connectez-vous à votre abonnement Microsoft 365 avec un compte d’utilisateur auquel le rôle d’administrateur global a été attribué.
     
 3. Créez jusqu’à un maximum de quatre comptes d’utilisateur d’administrateur général dédiés. **Utilisez des mots de passe forts d’au moins 12 caractères.** Pour plus d’informations, reportez-vous à [créer un mot de passe fort](https://support.microsoft.com/help/4026406/microsoft-account-create-a-strong-password) . Stockez les mots de passe des nouveaux comptes dans un emplacement sécurisé. 
     
 4. Attribuez le rôle d’administrateur global à chacun des nouveaux comptes d’utilisateur d’administrateur général dédié.
     
-5. Déconnectez-vous d’Office 365.
+5. Déconnectez-vous de Microsoft 365.
     
 6. Connectez-vous à l’aide de l’un des nouveaux comptes d’utilisateur d’administrateur général dédiés.
     
@@ -68,9 +68,9 @@ Il existe relativement peu de tâches administratives, telles que l’affectatio
     
   - Supprimez le rôle d’administrateur global.
     
-  - Attribuer des rôles d’administrateur au compte qui sont appropriés à la fonction et à la responsabilité de ce dernier. Pour plus d’informations sur les différents rôles d’administrateur dans Office 365, voir [à propos des rôles d’administrateur](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
+  - Attribuer des rôles d’administrateur au compte qui sont appropriés à la fonction et à la responsabilité de ce dernier. Pour plus d’informations sur les différents rôles d’administrateur dans Microsoft 365, voir [à propos des rôles d’administrateur](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
     
-8. Déconnectez-vous d’Office 365.
+8. Déconnectez-vous de Microsoft 365.
     
 Le résultat doit être :
   
@@ -82,14 +82,14 @@ Le résultat doit être :
 
 - Tous les autres comptes d’utilisateurs qui gèrent votre abonnement quotidiennement ont des rôles d’administrateur associés à leurs responsabilités.
     
-À partir de ce moment-là, vous vous connectez avec les comptes d’administrateur général dédiés uniquement pour les tâches qui nécessitent des privilèges d’administrateur général. Toutes les autres opérations d’administration d’Office 365 doivent être réalisées en affectant d’autres rôles d’administration aux comptes d’utilisateur.
+À partir de ce moment-là, vous vous connectez avec les comptes d’administrateur général dédiés uniquement pour les tâches qui nécessitent des privilèges d’administrateur général. Toutes les autres opérations d’administration de Microsoft 365 doivent être réalisées en affectant d’autres rôles d’administration aux comptes d’utilisateur.
   
 > [!NOTE]
-> Cette opération nécessite des étapes supplémentaires pour se déconnecter de votre compte d’utilisateur quotidien et se connecter avec un compte d’administrateur général dédié. Toutefois, cela ne doit être réalisé qu’occasionnellement pour les opérations de l’administrateur général. Considérez que la récupérant votre abonnement Office 365 après une violation de compte d’administrateur général nécessite beaucoup plus d’étapes.
+> Cette opération nécessite des étapes supplémentaires pour se déconnecter de votre compte d’utilisateur quotidien et se connecter avec un compte d’administrateur général dédié. Toutefois, cela ne doit être réalisé qu’occasionnellement pour les opérations de l’administrateur général. Considérez que la récupérant votre abonnement Microsoft 365 après une violation de compte d’administrateur général nécessite beaucoup plus d’étapes.
   
-## <a name="step-2-configure-multi-factor-authentication-for-your-dedicated-office-365-global-administrator-accounts-and-use-the-strongest-form-of-additional-verification"></a>Étape 2. Configurer l’authentification multifacteur pour vos comptes d’administrateur général Office 365 dédiés et utiliser la forme la plus forte de vérification supplémentaire
+## <a name="step-2-configure-multi-factor-authentication-for-your-dedicated-microsoft-365-global-administrator-accounts-and-use-the-strongest-form-of-additional-verification"></a>Étape 2. Configurez l’authentification multifacteur pour vos comptes d’administrateur général Microsoft 365 dédiés et utilisez la forme de vérification supplémentaire la plus puissante.
 
-L’authentification multifacteur (MFA) nécessite des informations supplémentaires au-delà du nom de compte et du mot de passe. Office 365 prend en charge ces méthodes de vérification supplémentaires :
+L’authentification multifacteur (MFA) nécessite des informations supplémentaires au-delà du nom de compte et du mot de passe. Microsoft 365 prend en charge ces méthodes de vérification supplémentaires :
   
 - L’application Microsoft Authenticator
 
@@ -109,24 +109,25 @@ Si vous êtes une petite entreprise qui utilise des comptes d’utilisateur stoc
   
 1. [Configurez MFA](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
     
-2. Configurez l' [authentification multifacteur pour Office 365](https://support.office.com/article/Set-up-2-step-verification-for-Office-365-ace1d096-61e5-449b-a875-58eb3d74de14) pour configurer chaque compte d’administrateur général dédié pour les appels téléphoniques ou les messages texte comme méthode de vérification. 
+2. Configurez l' [authentification multifacteur pour Microsoft 365](https://support.office.com/article/Set-up-2-step-verification-for-Office-365-ace1d096-61e5-449b-a875-58eb3d74de14) pour configurer chaque compte d’administrateur général dédié pour les appels téléphoniques ou les messages texte comme méthode de vérification. 
     
-Si vous êtes une organisation plus importante qui utilise un modèle d’identité hybride Office 365, vous disposez de davantage d’options de vérification. Si l’infrastructure de sécurité est déjà en place pour une méthode d’authentification secondaire plus puissante, procédez comme suit :
+Si vous êtes une organisation plus importante qui utilise un modèle d’identité hybride Microsoft 365, vous disposez de davantage d’options de vérification. Si l’infrastructure de sécurité est déjà en place pour une méthode d’authentification secondaire plus puissante, procédez comme suit :
   
 1. [Configurez MFA](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
     
-2. Configurez l' [authentification multifacteur pour Office 365](https://support.office.com/article/Set-up-2-step-verification-for-Office-365-ace1d096-61e5-449b-a875-58eb3d74de14) pour configurer chaque compte d’administrateur général dédié pour la méthode de vérification appropriée. 
+2. Configurez l' [authentification multifacteur pour vos nouveaux comptes administrateur général](https://support.office.com/article/set-up-your-microsoft-365-sign-in-for-multi-factor-authentication-ace1d096-61e5-449b-a875-58eb3d74de14) afin de configurer chaque compte d’administrateur général dédié pour la méthode de vérification appropriée. 
     
-Si l’infrastructure de sécurité pour la méthode de vérification renforcée souhaitée n’est pas en place et ne fonctionne pas pour Office 365 MFA, nous vous recommandons vivement de configurer des comptes d’administrateur global dédiés avec MFA à l’aide d’un appel téléphonique ou d’un code de vérification de message texte envoyé à un téléphone intelligent pour vos comptes d’administrateur général comme mesure de sécurité provisoire. Ne laissez pas vos comptes d’administrateur général dédiés sans la protection supplémentaire fournie par MFA.
+Si l’infrastructure de sécurité pour la méthode de vérification renforcée souhaitée n’est pas en place et ne fonctionne pas pour Microsoft 365 MFA, nous vous recommandons vivement de configurer des comptes d’administrateur global dédiés avec MFA à l’aide de l’application Microsoft Authenticator, un appel téléphonique ou un code de vérification de message texte envoyé à un téléphone intelligent pour vos comptes d’administrateur général comme mesure de sécurité provisoire. Ne laissez pas vos comptes d’administrateur général dédiés sans la protection supplémentaire fournie par MFA.
   
-Pour plus d’informations, reportez-vous à [Planifier l’authentification multifacteur pour les déploiements Office 365](https://docs.microsoft.com/office365/admin/security-and-compliance/multi-factor-authentication-plan).
+Pour plus d’informations, reportez-vous à la rubrique [plan for Multi-Factor Authentication for Microsoft 365 Deployments](https://docs.microsoft.com/office365/admin/security-and-compliance/multi-factor-authentication-plan).
   
-Pour vous connecter aux services Office 365 avec MFA et PowerShell, consultez les articles suivants :
+Pour vous connecter aux services Microsoft 365 avec MFA et PowerShell, consultez les articles suivants :
 
 - [Office 365 PowerShell pour les comptes d’utilisateur, les groupes et les licences](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)
-- [Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-by-using-mfa)
+- [Microsoft Teams](https://docs.microsoft.com/office365/enterprise/powershell/manage-microsoft-teams-with-office-365-powershell#sign-in-with-multi-factor-authentication-mfa)
+- [Exchange Online](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell?view=exchange-ps#connect-to-exchange-online-powershell-by-using-mfa)
 - [SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online#to-connect-with-multifactor-authentication-mfa)
-- [Skype Entreprise Online](https://docs.microsoft.com/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell#connect-using-a-skype-for-business-online-administrator-account-with-multifactor-authentication)
+- [Skype Entreprise Online](https://docs.microsoft.com/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell#connect-using-a-skype-for-business-online-administrator-account-with-multi-factor-authentication)
 
 ## <a name="additional-protections-for-enterprise-organizations"></a>Protections supplémentaires pour les organisations d’entreprise
 
@@ -134,7 +135,7 @@ Après les étapes 1 et 2, utilisez ces méthodes supplémentaires pour vous ass
   
 ### <a name="privileged-access-workstation"></a>Station de travail accès privilégié
 
-Pour vous assurer que l’exécution des tâches à privilèges élevés est aussi sécurisée que possible, utilisez une station de travail accès privilégié (patte). Une patte est un ordinateur dédié qui est utilisé uniquement pour les tâches de configuration sensibles, telles que la configuration d’Office 365 qui nécessite un compte d’administrateur général. Étant donné que cet ordinateur n’est pas utilisé quotidiennement pour la navigation Internet ou le courrier électronique, il est mieux protégé contre les attaques et les menaces Internet.
+Pour vous assurer que l’exécution des tâches à privilèges élevés est aussi sécurisée que possible, utilisez une station de travail accès privilégié (patte). Une patte est un ordinateur dédié qui est utilisé uniquement pour les tâches de configuration sensibles, telles que la configuration de Microsoft 365 qui nécessite un compte d’administrateur général. Étant donné que cet ordinateur n’est pas utilisé quotidiennement pour la navigation Internet ou le courrier électronique, il est mieux protégé contre les attaques et les menaces Internet.
   
 Pour obtenir des instructions sur la configuration d’une patte, voir [https://aka.ms/cyberpaw](https://aka.ms/cyberpaw) .
   
@@ -150,13 +151,13 @@ Le GIP est disponible avec Azure AD Premium P2, inclus dans Microsoft 365 entrep
   
 Pour plus d’informations, consultez la rubrique [Azure ad Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure).
   
-### <a name="security-information-and-event-management-siem-software-for-office-365-logging"></a>Logiciel de gestion des informations et des événements de sécurité (SIEM) pour la journalisation Office 365
+### <a name="security-information-and-event-management-siem-software-for-microsoft-365-logging"></a>Logiciel de gestion des informations et des événements de sécurité (SIEM) pour la journalisation Microsoft 365
 
-Les logiciels SIEM exécutés sur un serveur effectuent une analyse en temps réel des alertes de sécurité et des événements créés par les applications et le matériel réseau. Pour permettre à votre serveur SIEM d’inclure les alertes de sécurité Office 365 et les événements dans ses fonctions d’analyse et de création de rapports, intégrez Azure AD dans votre SEIM. Voir [Introduction to Azure log Integration](https://docs.microsoft.com/azure/security/security-azure-log-integration-overview).
+Les logiciels SIEM exécutés sur un serveur effectuent une analyse en temps réel des alertes de sécurité et des événements créés par les applications et le matériel réseau. Pour permettre à votre serveur SIEM d’inclure des alertes et des événements de sécurité Microsoft 365 dans ses fonctions d’analyse et de création de rapports, intégrez Azure AD dans votre SEIM. Voir [Introduction to Azure log Integration](https://docs.microsoft.com/azure/security/security-azure-log-integration-overview).
 
 ## <a name="next-step"></a>Étape suivante
 
-Si vous configurez l’identité pour votre abonnement Office 365, voir :
+Si vous configurez l’identité pour votre abonnement Microsoft 365, consultez les éléments suivants :
 
 - [Identités de Cloud uniquement](cloud-only-identities.md) si vous utilisez l’identité en nuage uniquement
 - [Préparer la synchronisation d’annuaires](prepare-for-directory-synchronization.md) si vous utilisez une identité hybride
@@ -164,4 +165,4 @@ Si vous configurez l’identité pour votre abonnement Office 365, voir :
   
 ## <a name="see-also"></a>Voir aussi
 
-Feuille de [route de sécurité Office 365](https://docs.microsoft.com/office365/securitycompliance/security-roadmap).
+Feuille de [route Microsoft 365 Security](https://docs.microsoft.com/office365/securitycompliance/security-roadmap).

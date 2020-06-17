@@ -20,18 +20,18 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 'Découvrez les outils à utiliser pour gérer vos utilisateurs Office 365, ainsi que la manière dont vous pouvez les utiliser en fonction de la gestion des identités des utilisateurs. '
-ms.openlocfilehash: 669d71aafe0efdff575615dab835dd67cb7aebdf
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 46a17dc1e5e9337b9f1d8a03f5903acc96dad74b
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843945"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735656"
 ---
 # <a name="tools-to-manage-office-365-accounts"></a>Outils permettant de gérer les comptes Office 365
 
 Vous pouvez gérer les utilisateurs d’Office 365 de différentes manières, en fonction de votre configuration. Vous pouvez gérer les utilisateurs dans le [Centre d’administration 365 de Microsoft](https://admin.microsoft.com), Windows PowerShell, votre annuaire local ou dans le portail d’administration Azure Active Directory.
 
-Dès que vous achetez Office 365, le centre d’administration et Windows PowerShell peuvent être utilisés pour gérer les comptes. Lors de la gestion des identités de Cloud, toutes les personnes de votre organisation ont un ID d’utilisateur et un mot de passe distincts pour Office 365. Si vous souhaitez effectuer une intégration avec votre infrastructure locale et que des comptes d’utilisateurs sont synchronisés avec Office 365, vous pouvez utiliser Azure Active Directory Connect pour assurer la synchronisation des identités et éventuellement une synchronisation de mot de passe, ou complète fonctionnalité d’authentification unique.
+Dès que vous achetez Office 365, le centre d’administration et Windows PowerShell peuvent être utilisés pour gérer les comptes. Lors de la gestion des identités de Cloud, toutes les personnes de votre organisation ont un ID d’utilisateur et un mot de passe distincts pour Office 365. Si vous souhaitez effectuer une intégration avec votre infrastructure locale et que des comptes d’utilisateurs sont synchronisés avec Office 365, vous pouvez utiliser Azure Active Directory Connect pour assurer la synchronisation des identités et éventuellement une synchronisation de mot de passe ou une fonctionnalité d’authentification unique complète.
   
 ## <a name="plan-for-where-and-how-you-will-manage-your-user-accounts"></a>Planifier l’emplacement et la façon dont vous allez gérer vos comptes d’utilisateurs
 
@@ -59,7 +59,7 @@ Lorsque vous décidez de la manière dont votre organisation créera et gérera 
 
 Le tableau suivant répertorie les différents outils de gestion des comptes :
 
-|**Option**|**Notes**|
+|**Option**|**Remarques**|
 |:-----|:-----|
 |**Centre d’administration** | - [Ajouter des utilisateurs individuellement ou en bloc à Office 365-aide de l’administrateur](https://support.office.com/article/1970f7d6-03b5-442f-b385-5880b9c256ec) <br> -Fournit une interface Web simple pour ajouter et modifier des comptes d’utilisateur. <br> -Ne peut pas être utilisé pour modifier les utilisateurs si la synchronisation d’annuaires est activée (l’attribution d’emplacement et de licence peut être définie). <br> -Ne peut pas être utilisé avec les options d’authentification unique. <br> |
 |**Windows PowerShell** | - [Gérer Office 365 avec Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=698471) <br> -Permet d’ajouter des utilisateurs en bloc à l’aide d’un script Windows PowerShell. <br> -Peut être utilisé pour affecter un emplacement et des licences aux comptes, quelle que soit la façon dont les comptes sont créés. <br> |
@@ -72,4 +72,4 @@ Quelle que soit la façon dont vous envisagez d’ajouter les comptes d’utilis
 Si vous décidez d’ajouter et de gérer tous vos utilisateurs par le biais du centre d’administration, vous devez spécifier l’emplacement et attribuer des licences en même temps que la création du compte Office 365. Par conséquent, la planification n’est pas obligatoire.
 
 > [!IMPORTANT]
-> La création de comptes dans Office 365 sans l’attribution d’une licence (à SharePoint Online, par exemple) signifie que le propriétaire du compte peut consulter le portail Office 365, mais ne peut accéder à aucun des services de l’abonnement de votre entreprise. Une fois que vous avez affecté un emplacement et la licence, le compte est répliqué vers le service ou les services que vous avez attribués. L’utilisateur peut se connecter à son compte et utiliser les services que vous lui avez attribués.
+> La création de comptes dans Office 365 sans l’attribution d’une licence (à SharePoint Online, par exemple) signifie que le propriétaire du compte peut consulter le centre d’administration Microsoft 365, mais qu’il ne peut accéder à aucun des services de l’abonnement de votre entreprise. Une fois que vous avez affecté un emplacement et la licence, le compte est répliqué vers le service ou les services que vous avez attribués. L’utilisateur peut se connecter à son compte et utiliser les services que vous lui avez attribués.

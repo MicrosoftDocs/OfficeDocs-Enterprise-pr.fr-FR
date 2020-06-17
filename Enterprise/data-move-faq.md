@@ -14,12 +14,12 @@ ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 f1.keywords:
 - NOCSH
 description: Voici des réponses à des questions d’ordre général sur le transfert de données principales vers une nouvelle région de centre de données.
-ms.openlocfilehash: 09c2e9acd482f10c6883ce0134793a9656675631
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: 291f5068cc66ae761571992b462995fb6437b872
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516555"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735842"
 ---
 # <a name="data-move-general-faq"></a>FAQ général relatif au déplacement de données
 
@@ -64,7 +64,7 @@ Oui. Une fois qu’une nouvelle région de centre de données est disponible, le
   
  ## <a name="where-is-my-core-customer-data-located"></a>Où se trouvent mes données client principales ?
 
-Les administrateurs clients peuvent afficher la carte d’emplacement des données dans le centre d’administration à tout moment pour confirmer les données principales du client au moment de l’emplacement REST pour chaque service, en particulier pour leur client.Nous publions également l’emplacement des régions centres de centre de données, des centres de données et l’emplacement des données client Office 365 sur [ office 365 interactive Datacenter Maps](https://office.com/datamaps) comme référence pour les données client principales par défaut actuelles aux emplacements REST pour les nouveaux clients.  Vous pouvez vérifier l’emplacement de vos données client au repos via la section emplacement des données sous votre profil d’organisation dans le centre d’administration 365 de Microsoft.  
+Les administrateurs clients peuvent afficher la carte d’emplacement des données dans le centre d’administration à tout moment pour confirmer les données principales du client au moment de l’emplacement REST pour chaque service, en particulier pour leur client.Nous publions également l’emplacement des régions centres de centre de données, des centres de données et l’emplacement des données client Office 365 sur [office 365 interactive Datacenter Maps](https://office.com/datamaps) comme référence pour les données client principales par défaut actuelles aux emplacements REST pour les nouveaux clients.  Vous pouvez vérifier l’emplacement de vos données client au repos via la section emplacement des données sous votre profil d’organisation dans le centre d’administration 365 de Microsoft.  
  
 ## <a name="when-will-i-be-able-to-request-a-move"></a>Quand pourrai-je demander un déplacement ?
   
@@ -72,7 +72,7 @@ Consultez la page relative [à la demande d’un déplacement de données](reque
   
 ## <a name="how-can-i-request-to-be-moved"></a>Comment effectuer ma demande de déplacement ?
   
-Les clients éligibles verront une page correspondante dans leur [portail d'administration Office 365](https://portal.office.com/). Reportez-vous à la section [Procédure de demande d'un déplacement de données](request-your-data-move.md) pour obtenir des informations sur la demande de déplacement. 
+Les clients éligibles verront une page dans leur [Centre d’administration 365 de Microsoft](https://admin.microsoft.com/). Reportez-vous à la section [Procédure de demande d'un déplacement de données](request-your-data-move.md) pour obtenir des informations sur la demande de déplacement. 
   
 ## <a name="can-i-change-my-selection-after-requesting-a-move"></a>Puis-je modifier ma sélection après avoir demandé un déplacement ?
   
@@ -80,7 +80,7 @@ Nous ne pouvons pas vous enlever du processus une fois que vous avez envoyé vot
   
 ## <a name="what-happens-if-i-do-not-request-a-move-before-the-deadline"></a>Que se passe-t-il si je ne fais pas la demande de déplacement avant la date d’échéance ?
   
-Nous pouvons être en mesure d’accepter des demandes sur la base d’une exception pour accorder à votre client une échéance validée pour terminer le déplacement. Veuillez  contacter le [Support Office 365](https://go.microsoft.com/fwlink/p/?LinkID=522459) pour effectuer la demande.
+Nous pouvons être en mesure d’accepter des demandes sur la base d’une exception pour accorder à votre client une échéance validée pour terminer le déplacement. Veuillez   contacter le [Support Office 365](https://go.microsoft.com/fwlink/p/?LinkID=522459) pour effectuer la demande.
 
 ## <a name="what-if-i-want-to-move-my-data-in-order-to-get-better-network-performance"></a>Que se passe-t-il si je veux déplacer mes données afin de bénéficier de meilleures performances réseau ?
   
@@ -126,7 +126,7 @@ Si vous créez un nouveau client une fois que la nouvelle région de centre de c
   
 ## <a name="my-customer-data-has-already-been-moved-to-a-new-datacenter-geo-can-i-move-back"></a>Mes données client ont déjà été déplacées vers une nouvelle région de centre de données. Puis-je les déplacer vers l’ancienne région ?
  
-Non, cela n’est pas possible. Les clients qui ont été déplacés vers de nouveaux centres de recherche géo ne peuvent pas être déplacés. En tant que client dans une région géographique, vous bénéficierez de la même qualité de service, de performances et de contrôles de sécurité que vous l’avez fait précédemment.  [Office 365 multi géo](https://aka.ms/multi-geo) est disponible pour certains clients en tant que module complémentaire et permet à un seul client de créer plusieurs régions centres satellites et de déplacer des données utilisateur vers ces régions centres avec des engagements de délégation de données.
+Non, ce n’est pas possible. Les clients qui ont été déplacés vers de nouveaux centres de recherche géo ne peuvent pas être déplacés. En tant que client dans une région géographique, vous bénéficierez de la même qualité de service, de performances et de contrôles de sécurité que vous l’avez fait précédemment.  [Office 365 multi géo](https://aka.ms/multi-geo) est disponible pour certains clients en tant que module complémentaire et permet à un seul client de créer plusieurs régions centres satellites et de déplacer des données utilisateur vers ces régions centres avec des engagements de délégation de données.
   
 ## <a name="will-microsoft-365-tenants-hosted-in-the-new-datacenters-be-available-to-users-outside-of-the-country"></a>Les clients Microsoft 365 hébergés dans les nouveaux centres de connaissances seront-ils disponibles pour les utilisateurs en dehors du pays ?
   
@@ -138,7 +138,7 @@ Oui, votre locataire peut être inscrit. Nous allons déplacer toutes les boîte
 
 SharePoint Online et OneDrive entreprise ne peuvent pas migrer vers la nouvelle région de centre de travail dans le cadre du programme de déplacement, mais vous pouvez configurer les partages de OneDrive entreprise pour passer à une région de votre choix via le programme multigéographique.
   
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Transfert de données principales vers le nouveau centre de données Microsoft 365 régions centres](moving-data-to-new-datacenter-geos.md)
 

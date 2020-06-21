@@ -19,16 +19,16 @@ ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 f1.keywords:
 - NOCSH
 description: Fin de la prise en charge pour SharePoint 2010 et SharePoint Server 2010 le 13 avril 2021. Utilisez cet article pour effectuer une mise à niveau vers SharePoint Online ou une version plus récente de SharePoint Server en local.
-ms.openlocfilehash: 8f55b55b84b2bd4d967822dea137a8cea4f40906
-ms.sourcegitcommit: 27a04304475f9c33accd4c0498726f074eef7c48
+ms.openlocfilehash: 906fd4a5189bba29e90f342c1c9199c927210bb2
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43532301"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774449"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Mise à jour à jour de SharePoint 2010
 
-*Cet article est valable pour Office 365 Entreprise et Microsoft 365 Entreprise*.
+*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
 
 Microsoft SharePoint 2010 et SharePoint Server 2010 vont atteindre la fin de la prise en charge le **13 avril 2021**. Cet article détaille les ressources pour vous aider à migrer vos données SharePoint Server 2010 existantes vers SharePoint Online dans Office 365 ou mettre à niveau votre environnement SharePoint Server 2010 sur site.
   
@@ -76,7 +76,7 @@ Voici les trois chemins que vous pouvez suivre pour éviter la fin de la prise e
 
 SharePoint Server 2013 et SharePoint Foundation 2013 peuvent être installés en local sur vos propres serveurs. Dans le cas contraire, vous pouvez utiliser SharePoint Online, qui est un service en ligne qui fait partie de Microsoft Office 365. Vous pouvez choisir l’une des actions suivantes :
   
-- Migrer vers SharePoint Online
+- Migrer vers SharePoint Online
     
 - Mettre à niveau SharePoint Server ou SharePoint Foundation en local
     
@@ -98,7 +98,7 @@ N’oubliez pas les coûts cachés associés à la maintenance d’une batterie 
    
 Lors de la migration vers Office 365, le déplacement unique aura un coût plus épais en temps passé à la planification, à l’avant (pendant que vous organisez les données et que vous décidez de ce que vous devez faire sur le Cloud et ce qu’il faut laisser derrière). Toutefois, une fois que vos données sont migrées, les mises à niveau sont automatiques à partir de ce point, étant donné que vous n’avez plus besoin de gérer les mises à jour matérielles et logicielles, et que le temps de mise à niveau de votre batterie de serveurs sera sauvegardé par un accord de niveau de service ([SLA](https://go.microsoft.com/fwlink/?linkid=843153)) Microsoft.
   
-### <a name="migrate-to-sharepoint-online"></a>Migrer vers SharePoint Online
+### <a name="migrate-to-sharepoint-online"></a>Migrer vers SharePoint Online
 
 Assurez-vous que SharePoint Online offre toutes les fonctionnalités dont vous avez besoin en consultant sa [Description de service](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-service-description).
   
@@ -128,7 +128,7 @@ Si vous avez décidé de créer un nouveau site Office 365 et que vous y migrere
   
 |||
 |:-----|:-----|
-||Chemin de mise à niveau série * * * * : **\>** sharepoint Server 2010 **\>** SharePoint server 2013 SharePoint Server 2016 |
+||Chemin de mise à niveau série * * * * : SharePoint Server 2010 SharePoint Server 2013 SharePoint Server **\>** **\>** 2016 |
    
 Si vous choisissez de suivre le chemin d’accès complet de SharePoint 2010 vers SharePoint Server 2016, le temps et la planification seront pris en compte. Les mises à niveau impliquent un coût en termes de matériel mis à niveau (Sachez que les serveurs SQL doivent également être mis à niveau), les logiciels et l’administration. De plus, il se peut que les personnalisations doivent être mises à niveau, voire abandonnées. Veillez à recueillir des notes sur toutes vos personnalisations importantes avant de mettre à niveau votre batterie de serveurs SharePoint Server.
   
@@ -162,15 +162,15 @@ Commencez par comparer les configurations matérielle et logicielle requises. Si
   
 - **Configuration matérielle/logicielle requise pour**: 
     
-    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843206) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204)  |  [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843206)  |  [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
     
 - Limites **et frontières logicielles pour**: 
     
-    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843247) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843248) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843247)  |  [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843248)  |  [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
     
 - **Vue d’ensemble du processus de mise à niveau pour**: 
     
-    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843251) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843252) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843251)  |  [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843252)  |  [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
     
 ### <a name="create-a-sharepoint-hybrid-solution-between-sharepoint-online-and-sharepoint-server-on-premises"></a>Créer une solution SharePoint hybride entre SharePoint Online et SharePoint Server en local
 

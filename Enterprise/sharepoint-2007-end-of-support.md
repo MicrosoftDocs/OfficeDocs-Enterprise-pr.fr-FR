@@ -36,16 +36,16 @@ search.appverid:
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
 description: Le 10 octobre 2017, la prise en charge de SharePoint Server 2007 s’est terminée. Lisez cet article pour en savoir plus sur les options de mise à niveau, la résolution des problèmes, les meilleures pratiques, la configuration système requise, les étapes de mise à niveau et comment obtenir de l’aide des partenaires Microsoft.
-ms.openlocfilehash: 6f0bd60d1f1201750ae1f0e4cc1a001ab4ed2ef6
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 860e142912d54b87c10677681dcbb429a6df9a8a
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844005"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774999"
 ---
 # <a name="sharepoint-server-2007-end-of-support-roadmap"></a>Feuille de route pour la fin de l’assistance pour SharePoint Server 2007
 
-*Cet article est valable pour Office 365 Entreprise et Microsoft 365 Entreprise*.
+*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
 
 Le **10 octobre 2017**, Microsoft Office SharePoint Server 2007 est parvenu à la fin du support. Si vous n’avez pas commencé la migration de SharePoint Server 2007 vers Office 365 ou une version plus récente de SharePoint Server en local, il est maintenant temps de commencer la planification. Cet article détaille les ressources pour aider les utilisateurs à migrer des données vers SharePoint Online ou à mettre à niveau votre serveur SharePoint Server local. 
   
@@ -84,7 +84,7 @@ Si vous choisissez des options sur le bas de l’unité, n’oubliez pas de plan
 
 SharePoint Server peut être installé en local sur vos propres serveurs ou vous pouvez utiliser SharePoint Online, qui est un service en ligne qui fait partie de Microsoft Office 365. Vous pouvez choisir l’une des actions suivantes :
   
-- Migrer vers SharePoint Online
+- Migrer vers SharePoint Online
     
 - Mettre à niveau SharePoint Server en local
     
@@ -106,11 +106,9 @@ N’oubliez pas les coûts cachés associés à la maintenance d’une batterie 
    
 Lorsque vous effectuez une migration vers Office 365, le déplacement unique aura un coût plus lourd à l’avance, tandis que vous organisez les données et que vous décidez de ce que vous devez effectuer sur le Cloud, et ce qu’il faut laisser derrière. Toutefois, les mises à niveau seront automatiques à partir de ce point, il n’est plus nécessaire de gérer les mises à jour matérielles et logicielles, et le temps de mise à niveau de votre batterie de serveurs sera sauvegardé par un contrat de niveau de service ([SLA](https://go.microsoft.com/fwlink/?linkid=843153)) Microsoft.
   
-### <a name="migrate-to-sharepoint-online"></a>Migrer vers SharePoint Online
+### <a name="migrate-to-sharepoint-online"></a>Migrer vers SharePoint Online
 
-Assurez-vous que SharePoint Online dispose de toutes les fonctionnalités dont vous avez besoin en examinant la description de service associée. Voici le lien vers toutes les descriptions de service Office 365 :
-  
-[Description des services Office 365](https://go.microsoft.com/fwlink/?linkid=272060)
+Assurez-vous que SharePoint Online dispose de toutes les fonctionnalités dont vous avez besoin en examinant la description de service associée. Consultez [les descriptions de service Microsoft 365 et Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library).
   
 Il n’existe aucun moyen direct de migrer de SharePoint 2007 vers SharePoint Online ; votre déplacement vers SharePoint Online s’effectuera manuellement. Si vous effectuez une mise à niveau vers SharePoint Server 2013 ou SharePoint Server 2016, votre déplacement peut également impliquer l’utilisation de l’API de migration SharePoint (pour migrer des informations vers OneDrive entreprise, par exemple).
   
@@ -141,7 +139,7 @@ Il n’existe pas de méthode historique permettant d’ignorer les versions des
 Pour tirer le chemin entier de SharePoint 2007 vers SharePoint Server 2016, il s’agit d’un investissement considérable de temps et implique un coût en termes de matériel mis à niveau (Sachez que les serveurs SQL Server doivent également être mis à niveau), logiciel et administration. Les personnalisations doivent être mises à niveau ou abandonnées, en fonction de la criticité de la fonctionnalité.
   
 > [!NOTE]
-> Il est possible de maintenir votre batterie de serveurs SharePoint 2007 de fin de vie, d’installer une batterie de serveurs SharePoint Server 2016 sur le nouveau matériel (de sorte que les batteries de serveurs distinctes exécutent côte à côte), puis de planifier et d’exécuter une migration manuelle de contenu (pour le téléchargement et la rechargement de contenu, par exemple). Tenez compte de certains des pièges liés aux déplacements manuels (par exemple, les déplacements de documents qui remplacent le dernier compte modifié avec l’alias du compte qui effectue le déplacement manuel) et le travail qui doit être réalisé à l’avance (comme la recréation de sites, de sous-sites, d’autorisations et de listes structures). Encore une fois, il s’agit du temps nécessaire pour prendre en compte les données que vous pouvez déplacer dans le stockage ou qui n’ont plus besoin d’une action qui peut réduire l’impact de la migration.
+> Il est possible de maintenir votre batterie de serveurs SharePoint 2007 de fin de vie, d’installer une batterie de serveurs SharePoint Server 2016 sur le nouveau matériel (de sorte que les batteries de serveurs distinctes exécutent côte à côte), puis de planifier et d’exécuter une migration manuelle de contenu (pour le téléchargement et la rechargement de contenu, par exemple). Tenez compte de certaines des pièges liés aux déplacements manuels (par exemple, les déplacements de documents qui remplacent le dernier compte modifié avec l’alias du compte qui effectue le déplacement manuel) et le travail qui doit être réalisé à l’avance (comme la recréation de sites, de sous-sites, d’autorisations et de structures de listes). Encore une fois, il s’agit du temps nécessaire pour prendre en compte les données que vous pouvez déplacer dans le stockage ou qui n’ont plus besoin d’une action qui peut réduire l’impact de la migration.
   
 Dans les deux cas, nettoyez votre environnement avant la mise à niveau. Assurez-vous que votre batterie de serveurs existante est fonctionnelle avant de procéder à la mise à niveau et (si vous êtes sûr) avant de procéder à la désaffectation. 
   
@@ -177,15 +175,15 @@ Commencez par savoir que vous répondez à la configuration matérielle et logic
   
 - **Configuration matérielle/logicielle requise pour**: 
     
-    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204) | [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204) | SharePoint Server[2013](https://go.microsoft.com/fwlink/?linkid=843206) | SharePoint Server[2016](https://go.microsoft.com/fwlink/?linkid=843207)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204)  |  [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204)  |  [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843206)  |  [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
     
 - Limites **et frontières logicielles pour**: 
     
-    [SharePoint Server 2007](https://go.microsoft.com/fwlink/?linkid=843245) | [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843247) | SharePoint Server[2013](https://go.microsoft.com/fwlink/?linkid=843248) | SharePoint Server[2016](https://go.microsoft.com/fwlink/?linkid=843249)
+    [SharePoint Server 2007](https://go.microsoft.com/fwlink/?linkid=843245)  |  [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843247)  |  [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843248)  |  [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
     
 - **Vue d’ensemble du processus de mise à niveau pour**: 
     
-    [SharePoint Server 2007](https://go.microsoft.com/fwlink/?linkid=843250) | [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843251) | SharePoint Server[2013](https://go.microsoft.com/fwlink/?linkid=843252) | SharePoint Server[2016](https://go.microsoft.com/fwlink/?linkid=843359)
+    [SharePoint Server 2007](https://go.microsoft.com/fwlink/?linkid=843250)  |  [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843251)  |  [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843252)  |  [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
     
 ### <a name="create-a-sharepoint-hybrid-solution-between-sharepoint-online-and-on-premises"></a>Créer une solution SharePoint hybride entre SharePoint Online et l’environnement local
 
@@ -193,7 +191,7 @@ Si la réponse à vos besoins en matière de migration se trouve entre l’auto-
   
 Si vous décidez qu’une batterie de serveurs SharePoint Server hybride bénéficiera de votre entreprise, vous devez vous familiariser avec les types d’hybrides existants et configurer la connexion entre votre batterie de serveurs SharePoint locale et votre abonnement Office 365.
   
-Pour voir comment cela fonctionne, vous pouvez créer un environnement de [développement/test Office 365](https://go.microsoft.com/fwlink/?linkid=843152). Une fois que vous avez une version d’évaluation ou que vous avez acheté l’abonnement Office 365, vous serez sur votre façon de créer les collections de sites, les sites Web et les bibliothèques de documents dans SharePoint Online vers lequel vous pouvez migrer des données (manuellement, à l’aide de l’API de migration ou-si vous voulez migrer mon Contenu du site dans OneDrive entreprise-via l’Assistant hybride).
+Pour voir comment cela fonctionne, vous pouvez créer un environnement de [développement/test Office 365](https://go.microsoft.com/fwlink/?linkid=843152). Une fois que vous avez une version d’évaluation ou que vous avez acheté l’abonnement Office 365, vous serez sur votre façon de créer les collections de sites, les sites Web et les bibliothèques de documents dans SharePoint Online vers lequel vous pouvez migrer des données (manuellement, à l’aide de l’API de migration ou-si vous souhaitez migrer le contenu de mon site vers OneDrive entreprise, via l’Assistant
   
 > [!NOTE]
 > N’oubliez pas que votre batterie de serveurs SharePoint 2007 doit être mise à niveau, en local, vers SharePoint Server 2013 ou SharePoint Server 2016 de manière à utiliser l’option hybride 

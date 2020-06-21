@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
 description: Les applications Office pour Mac fournissent une expérience d’application native sur la plateforme macOS. Chaque application est conçue pour fonctionner dans un grand nombre de scénarios, dont les États quand aucun accès réseau n’est disponible. Lorsqu’un ordinateur est connecté à un réseau, les applications se connectent automatiquement à une série de services Web pour offrir des fonctionnalités améliorées. Cet article décrit les points de terminaison et les URL que les applications essaient d’atteindre, ainsi que les services fournis. Ces informations sont utiles lors de la résolution des problèmes de configuration réseau et de la définition d’une stratégie pour les serveurs proxy réseau. Les informations de cet article sont destinées à compléter l’article sur les plages d’adresses et l’URL Office 365.
-ms.openlocfilehash: 09795ab15ba4a387dc53afea60c2d048d6ca9022
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: ee854aef417c674073b947940b26cddeafb16d00
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844545"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774949"
 ---
 # <a name="network-requests-in-office-for-mac"></a>Requêtes réseau dans Office pour Mac
 
@@ -52,7 +52,7 @@ Les points de terminaison réseau suivants sont utilisés pour télécharger le 
   
 |**URL**|**Type**|**Description**|
 |:-----|:-----|:-----|
-|```https://go.microsoft.com/fwlink/```  <br/> |ER  <br/> |Service de liaison de transfert du portail d’installation d’Office 365 vers les derniers packages d’installation.  <br/> |
+|```https://go.microsoft.com/fwlink/```  <br/> |ER  <br/> |Service de liaison directe du portail d’installation Microsoft 365 vers les derniers packages d’installation.  <br/> |
 |```https://officecdn-microsoft-com.akamaized.net/```  <br/> |SOCIALE  <br/> |Emplacement des packages d’installation sur le réseau de distribution de contenu.  <br/> |
 |```https://officecdn.microsoft.com/```  <br/> |SOCIALE  <br/> |Emplacement des packages d’installation sur le réseau de distribution de contenu.  <br/> |
 |```https://officeci-mauservice.azurewebsites.net/```  <br/> |ER  <br/> |Point de terminaison de contrôle de gestion pour Microsoft AutoUpdate  <br/> |
@@ -86,7 +86,7 @@ Les points de terminaison réseau suivants sont contactés lors du premier lance
 |```https://acompli.helpshift.com/```  <br/> |O  <br/> |ER  <br/> |Service de prise en charge dans l’application.  <br/> |
 |```https://prod-global-autodetect.acompli.net/```  <br/> |O  <br/> |ER  <br/> |Service de détection de compte de messagerie.  <br/> |
 |```https://autodiscover-s.outlook.com/```  <br/> |WXPO  <br/> |ER  <br/> |Découverte automatique d’Outlook  <br/> |
-|```https://outlook.office365.com/```  <br/> |WXPO  <br/> |ER  <br/> |Point de terminaison Outlook pour le service Office 365.  <br/> |
+|```https://outlook.office365.com/```  <br/> |WXPO  <br/> |ER  <br/> |Point de terminaison Outlook pour le service Microsoft 365.  <br/> |
 |```https://r1.res.office365.com/```  <br/> |O  <br/> |ER  <br/> |Icônes pour les compléments Outlook.  <br/> |
    
 > [!NOTE]
@@ -103,10 +103,10 @@ Les points de terminaison réseau suivants sont contactés lors de la connexion 
 |**URL**|**Applications**|**Type**|**Description**|
 |:-----|:-----|:-----|:-----|
 |```https://login.windows.net/```  <br/> |WXPON  <br/> |ER  <br/> |Service d’autorisation Windows  <br/> |
-|```https://login.microsoftonline.com/```  <br/> |WXPON  <br/> |ER  <br/> |Service de connexion Office 365 (OrgID)  <br/> |
+|```https://login.microsoftonline.com/```  <br/> |WXPON  <br/> |ER  <br/> |Service de connexion Microsoft 365 (OrgID)  <br/> |
 |```https://login.live.com/```  <br/> |WXPON  <br/> |ER  <br/> |Service de connexion de compte Microsoft (MSA)  <br/> |
 |```https://auth.gfx.ms/```  <br/> |WXPON  <br/> |ADMISSIBLE  <br/> |Application d’assistance de service de connexion de compte Microsoft (MSA)  <br/> |
-|```https://secure.aadcdn.microsoftonline-p.com/```  <br/> |WXPON  <br/> |SOCIALE  <br/> |Personnalisation de la connexion Office 365 (OrgID)  <br/> |
+|```https://secure.aadcdn.microsoftonline-p.com/```  <br/> |WXPON  <br/> |SOCIALE  <br/> |Personnalisation de la connexion Microsoft 365 (OrgID)  <br/> |
 |```https://ocws.officeapps.live.com/```  <br/> |WXPN  <br/> |ADMISSIBLE  <br/> |Emplacement des documents et des emplacements de stockage  <br/> |
 |```https://roaming.officeapps.live.com/```  <br/> |WXPN  <br/> |ADMISSIBLE  <br/> |Service de documents le plus récemment utilisé (MRU)  <br/> |
    
@@ -115,7 +115,7 @@ Les points de terminaison réseau suivants sont contactés lors de la connexion 
   
  **Activation de produit**
   
-Les points de terminaison réseau suivants s’appliquent aux activations d’abonnement et de licence de vente au détail d’Office 365. Plus précisément, cette opération ne s’applique pas aux installations avec licence en volume.
+Les points de terminaison réseau suivants s’appliquent aux activations d’abonnement et de licence de vente au détail de Microsoft 365. Plus précisément, cette opération ne s’applique pas aux installations avec licence en volume.
   
 |**URL**|**Applications**|**Type**|**Description**|
 |:-----|:-----|:-----|:-----|
@@ -123,7 +123,7 @@ Les points de terminaison réseau suivants s’appliquent aux activations d’ab
    
  **Nouveautés**
   
-Les points de terminaison réseau suivants s’appliquent uniquement à l’abonnement Office 365.
+Les points de terminaison réseau suivants s’appliquent uniquement à l’abonnement Microsoft 365.
   
 |**URL**|**Applications**|**Type**|**Description**|
 |:-----|:-----|:-----|:-----|
@@ -131,7 +131,7 @@ Les points de terminaison réseau suivants s’appliquent uniquement à l’abon
    
  **Recherche**
   
-Les points de terminaison réseau suivants s’appliquent uniquement à l’abonnement Office 365.
+Les points de terminaison réseau suivants s’appliquent uniquement à l’abonnement Microsoft 365.
   
 |**URL**|**Applications**|**Type**|**Description**|
 |:-----|:-----|:-----|:-----|
@@ -141,7 +141,7 @@ Les points de terminaison réseau suivants s’appliquent uniquement à l’abon
    
  **Recherche intelligente**
   
-Les points de terminaison réseau suivants s’appliquent à la fois aux activations d’abonnement Office 365 et de licence en volume.
+Les points de terminaison réseau suivants s’appliquent aux activations d’abonnement et de licence en volume Microsoft 365.
   
 |**URL**|**Applications**|**Type**|**Description**|
 |:-----|:-----|:-----|:-----|
@@ -153,15 +153,15 @@ Les points de terminaison réseau suivants s’appliquent à la fois aux activat
    
  **Concepteur PowerPoint**
   
-Les points de terminaison réseau suivants s’appliquent uniquement à l’abonnement Office 365.
+Les points de terminaison réseau suivants s’appliquent uniquement à l’abonnement Microsoft 365.
   
 |**URL**|**Applications**|**Type**|**Description**|
 |:-----|:-----|:-----|:-----|
 |```https://pptsgs.officeapps.live.com/```  <br/> |P  <br/> |ADMISSIBLE  <br/> |Service Web du concepteur PowerPoint  <br/> |
    
- **Aide au démarrage de PowerPoint**
+ **Démarrage rapide de PowerPoint**
   
-Les points de terminaison réseau suivants s’appliquent uniquement à l’abonnement Office 365.
+Les points de terminaison réseau suivants s’appliquent uniquement à l’abonnement Microsoft 365.
   
 |**URL**|**Applications**|**Type**|**Description**|
 |:-----|:-----|:-----|:-----|
@@ -169,7 +169,7 @@ Les points de terminaison réseau suivants s’appliquent uniquement à l’abon
    
  **Envoyer un sourire/Smiley**
   
-Les points de terminaison réseau suivants s’appliquent à la fois aux activations d’abonnement Office 365 et de licence en volume.
+Les points de terminaison réseau suivants s’appliquent aux activations d’abonnement et de licence en volume Microsoft 365.
   
 |**URL**|**Applications**|**Type**|**Description**|
 |:-----|:-----|:-----|:-----|
@@ -177,7 +177,7 @@ Les points de terminaison réseau suivants s’appliquent à la fois aux activat
    
  **Contacter le support technique**
   
-Les points de terminaison réseau suivants s’appliquent à la fois aux activations d’abonnement Office 365 et de licence en volume.
+Les points de terminaison réseau suivants s’appliquent aux activations d’abonnement et de licence en volume Microsoft 365.
   
 |**URL**|**Applications**|**Type**|**Description**|
 |:-----|:-----|:-----|:-----|
@@ -186,7 +186,7 @@ Les points de terminaison réseau suivants s’appliquent à la fois aux activat
    
  **Enregistrer au format PDF**
   
-Les points de terminaison réseau suivants s’appliquent à la fois aux activations d’abonnement Office 365 et de licence en volume.
+Les points de terminaison réseau suivants s’appliquent aux activations d’abonnement et de licence en volume Microsoft 365.
   
 |**URL**|**Applications**|**Type**|**Description**|
 |:-----|:-----|:-----|:-----|
@@ -194,7 +194,7 @@ Les points de terminaison réseau suivants s’appliquent à la fois aux activat
    
  **Applications Office (alias)**
   
-Les points de terminaison réseau suivants s’appliquent à la fois aux activations d’abonnement Office 365 et de licence de volume/volume lorsque les compléments d’applications Office sont approuvés.
+Les points de terminaison réseau suivants s’appliquent aux activations d’abonnement et de licence en volume Microsoft 365 lorsque les compléments d’applications Office sont approuvés.
   
 |**URL**|**Applications**|**Type**|**Description**|
 |:-----|:-----|:-----|:-----|
@@ -224,7 +224,7 @@ Les points de terminaison réseau suivants s’appliquent à la fois aux activat
    
  **Liens fiables**
   
-Le point de terminaison réseau suivant s’applique à toutes les applications Office pour l’abonnement Office 365 uniquement.
+Le point de terminaison réseau suivant s’applique à toutes les applications Office pour l’abonnement Microsoft 365 uniquement.
   
 |**URL**|**Type**|**Description**|
 |:-----|:-----|:-----|
@@ -232,7 +232,7 @@ Le point de terminaison réseau suivant s’applique à toutes les applications 
    
  **Signalement des incidents**
   
-Le point de terminaison réseau suivant s’applique à toutes les applications Office pour les activations d’abonnement et de licence en volume d’Office 365. Lorsqu’un processus se bloque inopinément, un rapport est généré et envoyé au service Watson.
+Le point de terminaison réseau suivant s’applique à toutes les applications Office pour les activations d’abonnement et de licence en volume Microsoft 365. Lorsqu’un processus se bloque inopinément, un rapport est généré et envoyé au service Watson.
   
 |**URL**|**Type**|**Description**|
 |:-----|:-----|:-----|
@@ -280,7 +280,7 @@ Office pour Mac envoie des informations de télémétrie à Microsoft à interva
     
 - **Utilisation** : contient des informations sur la façon dont les applications sont utilisées et des erreurs récupérables. Ces données sont envoyées toutes les 60 minutes. 
     
-Microsoft prend votre confidentialité très sérieusement. Vous pouvez consulter la rubrique relative à la stratégie de [https://privacy.microsoft.com](https://privacy.microsoft.com)collecte de données de Microsoft à l’adresse. Pour empêcher les applications d’envoyer des télémétries « utilisation », la préférence **SendAllTelemetryEnabled** peut être ajustée. La préférence est par application et peut être définie via des profils de configuration macOS ou manuellement à partir de terminal : 
+Microsoft prend votre confidentialité très sérieusement. Vous pouvez consulter la rubrique relative à la stratégie de collecte de données de Microsoft à l’adresse [https://privacy.microsoft.com](https://privacy.microsoft.com) . Pour empêcher les applications d’envoyer des télémétries « utilisation », la préférence **SendAllTelemetryEnabled** peut être ajustée. La préférence est par application et peut être définie via des profils de configuration macOS ou manuellement à partir de terminal : 
   
 ```defaults write com.microsoft.Word SendAllTelemetryEnabled -bool FALSE```
 
@@ -309,7 +309,7 @@ Dans certains cas, le contenu d’un document entraîne le blocage de l’applic
 > [!NOTE]
 > Si **SendAllTelemetryEnabled** est défini sur **false**, tous les rapports d’incident pour ce processus sont désactivés. Pour activer la création de rapports d’incident sans envoyer de télémétrie d’utilisation, la préférence suivante peut être définie :```defaults write com.microsoft.errorreporting IsMerpEnabled -bool TRUE``` 
   
-### <a name="updates"></a>Updates
+### <a name="updates"></a>Mises à jour
   
 Microsoft publie les mises à jour d’Office pour Mac à intervalles réguliers (généralement une fois par mois). Nous encourageons vivement les utilisateurs et les administrateurs informatiques à tenir à jour les machines afin de s’assurer que les correctifs de sécurité les plus récents sont installés. Dans les cas où les administrateurs informatiques veulent contrôler et gérer étroitement les mises à jour des ordinateurs, la préférence suivante peut être définie pour empêcher le processus AutoUpdate de détecter et d’utiliser automatiquement les mises à jour des produits :
   

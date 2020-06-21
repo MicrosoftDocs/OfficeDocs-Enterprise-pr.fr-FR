@@ -15,16 +15,16 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Résumé succinct de l’API activité de gestion d’Office 365.
-ms.openlocfilehash: 97f582aa19a523a8b94a17b13efd6a518b067036
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 3997ed70cba38d3151971120bb7c7589654013b6
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41842621"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774879"
 ---
 # <a name="office-365-management-activity-api"></a>API Activité de gestion Office 365
 
-Microsoft fournit Reporting Services que vous pouvez utiliser pour obtenir des informations transactionnelles regroupées sur votre client Office 365. L' [API activité de gestion d’Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview) utilise une conception standard RESTful et OAuth v2 pour l’authentification. Ainsi, il est facile de commencer à expérimenter la récupération des données et de les inverser dans les applications et les outils de visualisation. L’API fournit un flux de données avec des informations sur l’activité de l’utilisateur, de l’administrateur, des opérations et de la sécurité dans Office 365. Les données peuvent être conservées à des fins de réglementation ou associées à des données de journal achetées à partir d’une infrastructure locale ou d’autres sources. Cela permet de créer une solution de surveillance pour les opérations, la sécurité et la conformité au sein de l’entreprise.
+Microsoft fournit Reporting Services que vous pouvez utiliser pour obtenir des informations transactionnelles regroupées sur votre client Office 365. L' [API activité de gestion d’Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview#office-365-management-activity-api) utilise une conception standard RESTful et OAuth v2 pour l’authentification. Ainsi, il est facile de commencer à expérimenter la récupération des données et de les inverser dans les applications et les outils de visualisation. L’API fournit un flux de données avec des informations sur l’activité de l’utilisateur, de l’administrateur, des opérations et de la sécurité dans Office 365. Les données peuvent être conservées à des fins de réglementation ou associées à des données de journal achetées à partir d’une infrastructure locale ou d’autres sources. Cela permet de créer une solution de surveillance pour les opérations, la sécurité et la conformité au sein de l’entreprise.
 
 L’API Activité de gestion Office 365 fournit des informations sur diverses actions et événements d’utilisateur, d’administrateur, de système et de stratégie à partir des journaux d’activité Office 365 et Azure Active Directory. L’API fournit un schéma d’audit cohérent avec plus de 10 champs communs à tous les services. L’API permet aux organisations de se connecter facilement entre les événements et permet de créer des raisons de conséquence sur les données.
 

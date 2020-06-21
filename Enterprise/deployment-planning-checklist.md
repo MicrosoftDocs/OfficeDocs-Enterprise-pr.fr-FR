@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 5fa4f6ef-35ad-4840-91c1-4834df3df5a0
 description: Cette liste de contrôle permet à votre organisation de planifier et de préparer une migration vers Microsoft 365.
-ms.openlocfilehash: f958a48b01c3e027804c75bf469276bcfeed1d83
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: 3eaca9cdc248dd4c72691fec37eb6e54add52218
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711898"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774819"
 ---
 # <a name="deployment-planning-checklist-for-microsoft-365"></a>Liste de vérification de la planification du déploiement pour Microsoft 365
 
@@ -80,5 +80,5 @@ Souhaitez-vous obtenir de l’aide pour la configuration de Microsoft 365 ? Env
 | Migrer les données ( [courrier électronique](https://go.microsoft.com/fwlink/?LinkId=534823)et [fichiers](https://go.microsoft.com/fwlink/?LinkId=534824), etc.) (facultatif) |||||
 |Valider la fonctionnalité, puis effectuer les étapes finales |||||
 | Migrez les [paramètres DNS vers Microsoft 365](https://go.microsoft.com/fwlink/?LinkId=534835) |||||
-| Indiquer à vos utilisateurs quand ils peuvent [commencer à utiliser Microsoft 365](https://support.office.com/article/office-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb?ui=en-US&amp;rs=en-US&amp;ad=US) |||||
+| Indiquer à vos utilisateurs quand ils peuvent [commencer à utiliser Microsoft 365](https://support.microsoft.com/office/microsoft-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb) |||||
 | Reconfigurer les systèmes clients pour se connecter à Microsoft 365 ( [Office](https://go.microsoft.com/fwlink/?LinkId=534836), [Outlook](https://go.microsoft.com/fwlink/?LinkId=534837), [Outlook pour Mac](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac), [appareils mobiles](https://go.microsoft.com/fwlink/?LinkId=534840))  |||||

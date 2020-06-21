@@ -1,9 +1,9 @@
 ---
-title: Emplacements de données Office 365
+title: Emplacements de données Microsoft 365
 ms.author: deanw
 author: dmwmsft
 manager: laurawi
-ms.date: 03/09/2020
+ms.date: 06/17/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -16,32 +16,32 @@ ms.collection:
 ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: 'Synthèse : emplacements de données Office 365'
-ms.openlocfilehash: 7d66669ddab78a6f84703fb350d0a5cd2707b8af
-ms.sourcegitcommit: 4643a0eb2c65f5e9aba0477e948120ea91bf74d6
+description: 'Résumé : emplacements des données Microsoft 365'
+ms.openlocfilehash: a0f62fa7955224c07c8e5af35fb53229e3aeb6c4
+ms.sourcegitcommit: e0603d9259e9be1aeb110fc3dd8b9abc6138c55d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44507242"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44781059"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
 -->
 
-# <a name="where-your-office-365-customer-data-is-stored"></a>Emplacement de stockage de vos données client Office 365
+# <a name="where-your-microsoft-365-customer-data-is-stored"></a>Emplacement de stockage de vos données client Microsoft 365
 
-Les tableaux ci-dessous indiquent le lieu de stockage de données client au repos pour les services Office 365 de tous les emplacements cloud généraux de Microsoft. Développez l’emplacement de votre pays d’adresse de facturation pour connaître l’emplacement de stockage des données client de chaque service.
+Les tableaux ci-dessous indiquent où les données client sont stockées sur REST pour les services Microsoft 365 dans tous les emplacements de Cloud global de Microsoft. Développez l’emplacement de votre pays d’adresse de facturation pour connaître l’emplacement de stockage des données client de chaque service.
 
 Les clients peuvent consulter les informations relatives à l’emplacement des données propres aux locataires dans **Paramètres | Profil de l’organisation | Fiche d’emplacement des données** du Centre d'administration Office 365.
 
-Les nouveaux locataires Office 365 sont configurés géographiquement par défaut en fonction du pays de la transaction associée à l'abonnement initial de ce client.
+Les nouveaux locataires Microsoft 365 sont par défaut géographiques en fonction du pays de la transaction associée au premier abonnement de ce client.
 
 Recherchez des informations sur les engagements contractuels relatifs à l’emplacement de stockage des données client au repos dans les [Conditions d'utilisation des services en ligne Microsoft (OST)](https://go.microsoft.com/fwlink/p/?LinkId=2098215).
 
 Pour les emplacements de données Azure Active Directory, visitez [Mappage de données Azure Active Directory](https://go.microsoft.com/fwlink/p/?linkid=2092972).
 
 
-En raison des circonstances sans précédent entourant la crise COVID-19 et de la nécessité de gérer la demande de services en ligne en Europe, si votre organisation est un établissement scolaire, nous pouvons déployer votre client Office 365 au sein de l’Union européenne (UE), l’Association européenne de libre-échange (AELE), le Royaume-Uni (UK), les États-Unis (USA) ou le Canada (CA), ou transférez vos données vers n’importe quel centre de données de l’UE, de l’AELE, de l’UK, des USA ou du CA.  Vos données peuvent ainsi être stockées au repos dans l’UE, l’AELE, le UK, les USA ou le CA.  Notre engagement envers la conformité, la confidentialité et la sécurité restent inchangés alors que nous mettons en œuvre des mesures prudentes et nécessaires pour maintenir la disponibilité du service.  Nous respectons toutes les lois applicables en relation avec les transferts de données.
+En raison des circonstances inégalées de la crise COVID-19 et de la nécessité de gérer les demandes en ligne en Europe, si votre organisation est un établissement scolaire, nous pouvons approvisionner votre client Microsoft 365 au sein de l’Union européenne (UE), de l’Association européenne de libre-échange (AELE), du Royaume-Uni (Royaume-Uni), des États-Unis ou du Canada (CA) ou de transférer vos données vers n’importe quel centre de données de l’UE. , AELE, Royaume-Uni, américain ou CA.  Vos données peuvent ainsi être stockées au repos dans l’UE, l’AELE, le UK, les USA ou le CA.  Notre engagement envers la conformité, la confidentialité et la sécurité restent inchangés alors que nous mettons en œuvre des mesures prudentes et nécessaires pour maintenir la disponibilité du service.  Nous respectons toutes les lois applicables en relation avec les transferts de données.
 
 
 
@@ -58,11 +58,11 @@ Microsoft ne dévoile pas les adresses précises de ses centres de données. Cet
 
 ### <a name="does-the-location-of-your-customer-data-have-a-direct-impact-on-your-end-users-experience"></a>L’emplacement de vos données client a-t-il une influence directe sur l’expérience de vos utilisateurs finaux ?
 
-Les performances d’Office 365 ne sont pas seulement proportionnelles à l'éloignement d’un utilisateur par rapport aux emplacements des centres de données. Les investissements constants de Microsoft dans son réseau et son infrastructure cloud au niveau mondial, et l’architecture des services Office 365 permettent aux utilisateurs de bénéficier d’une expérience unique et constante, indépendamment du lieu de stockage des données client au repos. Si vos utilisateurs rencontrent des problèmes de performance, il est conseillé de les résoudre de manière approfondie. Microsoft a publié des conseils aux clients Office 365 pour planifier et optimiser les performances des utilisateurs finaux sur le [site web du Support Office](https://go.microsoft.com/fwlink/p/?linkid=862645).
+Les performances de Microsoft 365 ne sont pas simplement proportionnelles à la distance d’un utilisateur aux emplacements des centres de données. Les investissements continus de Microsoft dans son réseau mondial dans le Cloud, l’infrastructure de Cloud global et l’architecture des services Microsoft 365 permettent aux utilisateurs de bénéficier d’une expérience de même niveau et cohérente indépendamment de l’emplacement de stockage des données client sur REST. Si vos utilisateurs rencontrent des problèmes de performance, il est conseillé de les résoudre de manière approfondie. Microsoft a publié des conseils pour les clients Microsoft 365 afin de planifier et optimiser les performances de l’utilisateur final sur le [site Web de support Office](https://go.microsoft.com/fwlink/p/?linkid=862645).
 
 ### <a name="how-does-microsoft-help-me-comply-with-my-national-regional-and-industry-specific-regulations"></a>Comment Microsoft m’aide-t-il à me conformer aux réglementations nationales, locales et sectorielles ?
 
-Pour vous aider à vous conformer aux exigences nationales, locales et sectorielles en matière de recueil et d’utilisation des données de personnes, Office 365 propose la série d'offres de conformité la plus complète parmi les prestataires mondiaux de productivité sur le cloud. Veuillez consulter [nos offres de conformité](https://go.microsoft.com/fwlink/p/?linkid=864391) et de plus amples détails dans la section [Conformité Office 365](https://go.microsoft.com/fwlink/p/?linkid=862317) du Centre de gestion de la confidentialité Microsoft. De plus, certaines offres Office 365 proposent des solutions de conformité supplémentaires pour faciliter la gestion de vos données, respecter les exigences légales et réglementaires et suivre les actions entreprises sur vos données.
+Pour vous aider à vous conformer aux exigences nationales, régionales et sectorielles régissant la collecte et l’utilisation des données des personnes, Microsoft 365 offre l’ensemble des offres de conformité de n’importe quel fournisseur global de productivité de Cloud. Veuillez consulter [nos offres de conformité](https://go.microsoft.com/fwlink/p/?linkid=864391) et plus de détails dans la section [conformité de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=862317) du centre de gestion de la confidentialité Microsoft. En outre, certains plans Microsoft 365 proposent des solutions de conformité supplémentaires pour vous aider à gérer vos données, à respecter les exigences légales et réglementaires, ainsi qu’à surveiller les actions effectuées sur vos données.
 
 ### <a name="who-can-access-your-data-and-according-to-what-rules"></a>Qui peut accéder à vos données et selon quelles règles ?
 
@@ -70,15 +70,15 @@ Pour vous aider à vous conformer aux exigences nationales, locales et sectoriel
 
 ### <a name="does-microsoft-access-your-data"></a>Microsoft a-t-il accès à vos données ?
 
-Microsoft automatise la plupart des opérations Office 365 tout en limitant son propre accès aux données client. Ceci permet de gérer Office 365 à grande échelle et de remédier aux risques de menaces internes vis-à-vis des données client. Par défaut, les ingénieurs Microsoft ne disposent pas de privilège administratif permanent ni d'accès permanent aux données du client dans Office 365. Un ingénieur Microsoft peut disposer d’un accès limité et journalisé aux données client pendant une certaine durée, mais uniquement lorsque des opérations de service habituelles l'exigent et avec l'accord d'un membre de l'équipe de direction de Microsoft (et pour des clients disposant d’une licence pour la fonctionnalité Customer Lockbox par client).
+Microsoft automatise la plupart des opérations Microsoft 365 tout en limitant intentionnellement son accès aux données client. Cela nous permet de gérer Microsoft 365 à l’horizontale et de résoudre les risques liés aux menaces internes pesant sur les données client. Par défaut, les ingénieurs Microsoft n’ont pas de droits d’administration permanents et ne disposent pas d’un accès permanent aux données client dans Microsoft 365. Un ingénieur Microsoft peut disposer d’un accès limité et journalisé aux données client pendant une certaine durée, mais uniquement lorsque des opérations de service habituelles l'exigent et avec l'accord d'un membre de l'équipe de direction de Microsoft (et pour des clients disposant d’une licence pour la fonctionnalité Customer Lockbox par client).
 
 ### <a name="how-does-microsoft-secure-your-data"></a>Comment Microsoft protège-t-il vos données ?
 
-Microsoft dispose de solides stratégies, contrôles et systèmes intégrés dans Office 365 vous permettant de garantir la sécurité de vos informations. Pour plus d’informations, consultez la [rubrique sécurité Office 365](https://go.microsoft.com/fwlink/p/?linkid=864393) dans le Centre de gestion de la confidentialité Microsoft.
+Microsoft propose des stratégies, des contrôles et des systèmes robustes intégrés à Microsoft 365 pour vous aider à protéger vos informations. Consultez la [section sécurité microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=864393) du centre de gestion de la confidentialité Microsoft pour en savoir plus.
 
-### <a name="does-office-365-encrypt-your-data"></a>Office 365 chiffre-t-il vos données ?
+### <a name="does-microsoft-365-encrypt-your-data"></a>Microsoft 365 chiffre-t-il vos données ?
 
-Office 365 utilise des technologies côté service qui chiffrent les données client au repos et en transit. Pour les données client au repos, Office 365 utilise le chiffrement au niveau du volume et au niveau des fichiers. Pour les données client en transit, Office 365 utilise de nombreuses technologies de chiffrement pour la communication des centres de données, et entre les clients et les serveurs, tels que les protocoles TLS (Transport Layer Security) et IPsec (Internet Protocol Security). Office 365 intègre également des fonctionnalités de chiffrement gérées par le client.
+Microsoft 365 utilise des technologies côté service qui chiffrent les données client au repos et en transit. Pour les données client au repos, Microsoft 365 utilise le chiffrement au niveau du volume et du fichier. Pour les données client en transit, Microsoft 365 utilise plusieurs technologies de chiffrement pour les communications entre les centres de données et entre les clients et les serveurs, tels que les protocoles TLS (Transport Layer Security) et IPsec (Internet Protocol Security). Microsoft 365 inclut également des fonctionnalités de chiffrement gérées par le client.
 
 ### <a name="where-can-i-find-data-residency-information-for-microsoft-azure"></a>Où puis-je trouver des informations en matière de résidence des données pour Microsoft Azure ?
 
@@ -86,11 +86,26 @@ Consultez la page [Produits disponibles par région](https://go.microsoft.com/fw
 
 ### <a name="what-are-multi-geo-capabilities-in-microsoft-365"></a>Quelles sont les fonctionnalités multigéographiques dans Microsoft 365 ?
 
-Les fonctionnalités [multigéographiques](https://go.microsoft.com/fwlink/p/?linkid=872033) permettent à un locataire unique Office 365 de s’étendre sur différentes régions de centres de données Office 365. Les clients peuvent ainsi stocker leurs données de base Office 365, utilisateur par utilisateur, dans les régions choisies.
+La fonctionnalité [multi-géo](https://go.microsoft.com/fwlink/p/?linkid=872033) permet aux clients d’allouer des données client principales à nos emplacements disponibles dans le cloud Microsoft 365.   
 
 ### <a name="what-services-support-multi-geo"></a>Quels services prennent en charge les fonctionnalités multigéographiques ?
 
-Les fonctionnalités [multigéographiques](https://go.microsoft.com/fwlink/p/?linkid=872033) sont disponibles pour Exchange Online, OneDrive et SharePoint Online. Microsoft étudie les fonctionnalités multigéographiques pour d'autres services Office 365.
+Les fonctionnalités [multigéographiques](https://go.microsoft.com/fwlink/p/?linkid=872033) sont disponibles pour Exchange Online, OneDrive et SharePoint Online. Microsoft enquête sur plusieurs géo pour les autres services Microsoft 365.
+
+### <a name="what-are-the-exceptions-for-intune-data-locations"></a>Quelles sont les exceptions pour les emplacements de données Intune ?
+
+Microsoft ne stocke pas les données client Intune au repos en dehors de la zone géographique indiquée. sauf si :
+
+- Il est nécessaire pour Microsoft de fournir un support technique, de dépanner le service ou de se conformer aux exigences légales.
+- Le client configure un compte pour activer ce stockage des données client, notamment à l’aide des éléments suivants :
+
+  - Fonctionnalités conçues pour fonctionner globalement, telles que le réseau de distribution de contenu (CDN), qui fournit un service de mise en cache global et stocke les données client à des emplacements de périphérie dans le monde entier.
+
+  - Azure Active Directory (Azure AD), qui peut stocker les données d’annuaire globalement. Cela ne s’applique pas aux déploiements Azure AD aux États-Unis (où les données Azure AD sont stockées uniquement aux États-Unis) ou en Europe (où les données Azure AD sont stockées en Europe ou aux États-Unis).
+   
+  - Préversion, version bêta ou autres services de pré-publication, qui stockent généralement les données client aux États-Unis, mais peuvent les stocker globalement.
+
+Indépendamment, Microsoft ne contrôle pas ou ne limite pas la zone géographique à partir de laquelle les clients ou les utilisateurs finaux peuvent accéder aux données client. 
 
 ## <a name="data-center-locations"></a>Emplacements des centres de données
 
@@ -112,14 +127,14 @@ Pour les centres de données spécifiques d’un pays ou d’une région, les é
 
 | Pays | Ville |
 | --- | --- |
-| Australie | Victoria, Nouvelle-Galles du Sud |
+| Australie | Sydney, Melbourne |
 | Canada | Ville de Québec, Toronto |
-| Union européenne | Autriche, Finlande, France, Irlande, Pays-Bas |
+| Union européenne | Autriche (Vienne), Finlande (Helsinki), France (Paris, Marseille), Irlande (Dublin), Pays-Bas (Amsterdam) |
 | France | Paris, Marseille |
 | Allemagne | Frankfort, Berlin |
 | Inde | Chennai, Mumbai, Pune |
 | Japon | Osaka, Tokyo, Saitama |
-| Corée | Busan, Séoul |
+| Corée du Sud | Busan, Séoul |
 | Norvège | Oslo, Stavanger |
 | Afrique du Sud | Le Cap, Johannesburg |
 | Suisse | Genève, Zurich |
@@ -127,7 +142,7 @@ Pour les centres de données spécifiques d’un pays ou d’une région, les é
 | Royaume-Uni | Durham, Londres, Cardiff |
 | États-Unis |  Boydton, Cheyenne, Chicago, Des Moines, Quincy, San Antonio, Santa Clara, San José |
 
-Les nouveaux locataires Office 365 sont configurés géographiquement par défaut en fonction du pays de l'adresse de facturation liée à l'abonnement initial de ce client. Pour confirmer l'emplacement du stockage de données client relatif à des services Office 365 existants, veuillez consulter les informations relatives à l’emplacement des données propres aux locataires dans Paramètres | Profil de l’organisation | Fiche d’emplacement des données du Centre d'administration Office 365. Vous pouvez également développer le pays dans lequel votre entreprise est située, à partir de la liste ci-dessous, pour découvrir le lieu d'emplacement du stockage des données client si vous décidiez d'utiliser un service Office 365 aujourd’hui.
+Les nouveaux locataires Microsoft 365 sont par défaut géographiques en fonction du pays de l’adresse de facturation associée au premier abonnement de ce client. Pour confirmer l'emplacement du stockage de données client relatif à des services Office 365 existants, veuillez consulter les informations relatives à l’emplacement des données propres aux locataires dans Paramètres | Profil de l’organisation | Fiche d’emplacement des données du Centre d'administration Office 365. Vous pouvez également développer le pays sur lequel votre entreprise est basée, dans la liste ci-dessous, pour déterminer où les données client doivent être stockées si vous commencez à utiliser un service Microsoft 365 dès aujourd’hui.
 
 ## <a name="afghanistan"></a>Afghanistan
 <details><summary>Cliquez pour développer</summary><p>
@@ -141,6 +156,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
@@ -164,6 +180,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
@@ -187,6 +204,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
@@ -210,6 +228,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -227,12 +246,13 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
@@ -256,13 +276,14 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -273,19 +294,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -302,6 +324,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -325,6 +348,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -348,6 +372,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -371,6 +396,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | Zone géographique mondiale 3 : Amériques |
 | Exchange Online Protection | Zone géographique mondiale 3 : Amériques |
+| Intune | États-Unis |
 | MyAnalytics | Zone géographique mondiale 3 : Amériques |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -388,19 +414,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | Zone géographique 1 : EMEA |
+| Planner | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -417,6 +444,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -440,13 +468,14 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Australie |
 | Office Online Mobile &amp; | Australie |
 | Exchange Online Protection | Australie |
+| Intune | Australie |
 | MyAnalytics | Australie |
 | Planificateur | Australie |
 | Sway | États-Unis |
 | Yammer | États-Unis |
 | Services OneNote | Australie |
 | Stream | Australie |
-| Tableau blanc collaboratif | États-Unis |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -463,6 +492,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
+| Intune | Union européenne |
 | MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
@@ -480,19 +510,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur |  Zone géographique 1 : EMEA |
+| Planner |  Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -509,6 +540,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -532,13 +564,14 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | Zone géographique 1 : EMEA |
+| Planner | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -549,12 +582,13 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
@@ -578,6 +612,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -595,19 +630,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | Zone géographique 1 : EMEA |
+| Planner | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -624,6 +660,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
+| Intune | Union européenne |
 | MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
@@ -647,13 +684,14 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
 | Services OneNote | États-Unis |
 | Stream | États-Unis |
-| Tableau blanc collaboratif | États-Unis |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -664,19 +702,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -693,6 +732,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -710,19 +750,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
 | Services OneNote | Zone géographique mondiale 2 : Asie et Pacifique |
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
-| Tableau blanc collaboratif | États-Unis |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -739,6 +780,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | Zone géographique mondiale 3 : Amériques |
 | Exchange Online Protection | Zone géographique mondiale 3 : Amériques |
+| Intune | États-Unis |
 | MyAnalytics | Zone géographique mondiale 3 : Amériques |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -762,6 +804,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | Zone géographique mondiale 3 : Amériques |
 | Exchange Online Protection | Zone géographique mondiale 3 : Amériques |
+| Intune | États-Unis |
 | MyAnalytics | Zone géographique mondiale 3 : Amériques |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -779,19 +822,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur |  Zone géographique 1 : EMEA |
+| Planner |  Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -802,19 +846,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -831,6 +876,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -854,6 +900,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | Zone géographique mondiale 3 : Amériques |
 | Exchange Online Protection | Zone géographique mondiale 3 : Amériques |
+| Intune | États-Unis |
 | MyAnalytics | Zone géographique mondiale 3 : Amériques |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -871,19 +918,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
 | Services OneNote | Zone géographique mondiale 2 : Asie et Pacifique |
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
-| Tableau blanc collaboratif | États-Unis |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -900,6 +948,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -917,19 +966,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
 | Services OneNote | Zone géographique mondiale 2 : Asie et Pacifique |
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
-| Tableau blanc collaboratif | États-Unis |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -946,6 +996,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
+| Intune | Union européenne |
 | MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
@@ -963,19 +1014,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -986,12 +1038,13 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -1009,12 +1062,13 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
@@ -1038,6 +1092,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -1061,6 +1116,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Canada |
 | Office Online Mobile &amp; | Canada |
 | Exchange Online Protection | Canada |
+| Intune | États-Unis |
 | MyAnalytics | Canada |
 | Planificateur | Canada |
 | Sway | États-Unis |
@@ -1078,19 +1134,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -1107,6 +1164,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -1124,19 +1182,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -1147,19 +1206,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -1176,6 +1236,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | Zone géographique mondiale 3 : Amériques |
 | Exchange Online Protection | Zone géographique mondiale 3 : Amériques |
+| Intune | États-Unis |
 | MyAnalytics | Zone géographique mondiale 3 : Amériques |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -1199,13 +1260,14 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
 | Services OneNote | Zone géographique mondiale 2 : Asie et Pacifique |
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
-| Tableau blanc collaboratif | États-Unis |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -1222,13 +1284,14 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
 | Services OneNote | Zone géographique mondiale 2 : Asie et Pacifique |
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
-| Tableau blanc collaboratif | États-Unis |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -1239,19 +1302,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
 | Services OneNote | Zone géographique mondiale 2 : Asie et Pacifique |
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
-| Tableau blanc collaboratif | États-Unis |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -1268,6 +1332,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -1286,11 +1351,12 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -1314,6 +1380,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -1337,6 +1404,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -1354,19 +1422,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
 | Services OneNote | Zone géographique mondiale 2 : Asie et Pacifique |
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
-| Tableau blanc collaboratif | États-Unis |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -1383,6 +1452,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -1401,18 +1471,19 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -1429,6 +1500,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
+| Intune | Union européenne |
 | MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
@@ -1452,13 +1524,14 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | Zone géographique mondiale 3 : Amériques |
 | Exchange Online Protection | Zone géographique mondiale 3 : Amériques |
+| Intune | États-Unis |
 | MyAnalytics | Zone géographique mondiale 3 : Amériques |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
 | Services OneNote | Zone géographique mondiale 3 : Amériques |
 | Stream | États-Unis |
-| Tableau blanc collaboratif | États-Unis |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -1475,6 +1548,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
+| Intune | Union européenne |
 | MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
@@ -1498,6 +1572,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
+| Intune | Union européenne |
 | MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
@@ -1521,6 +1596,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
+| Intune | Union européenne |
 | MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
@@ -1538,19 +1614,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -1567,6 +1644,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -1590,6 +1668,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -1613,6 +1692,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | Zone géographique mondiale 3 : Amériques |
 | Exchange Online Protection | Zone géographique mondiale 3 : Amériques |
+| Intune | États-Unis |
 | MyAnalytics | Zone géographique mondiale 3 : Amériques |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -1630,19 +1710,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -1659,6 +1740,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -1682,13 +1764,14 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -1705,13 +1788,14 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -1728,6 +1812,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
+| Intune | Union européenne |
 | MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
@@ -1745,19 +1830,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur |  États-Unis |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -1774,6 +1860,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique mondiale 3 : Amériques |
 | Exchange Online Protection | Zone géographique mondiale 3 : Amériques |
+| Intune | États-Unis |
 | MyAnalytics | Zone géographique mondiale 3 : Amériques |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -1797,13 +1884,14 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | Zone géographique 1 : EMEA |
+| Planner | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -1814,12 +1902,13 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
@@ -1843,13 +1932,14 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Australie |
 | Office Online Mobile &amp; | Australie |
 | Exchange Online Protection | Australie |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Australie |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
 | Services OneNote | Australie |
 | Stream | Australie |
-| Tableau blanc collaboratif | États-Unis |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -1866,6 +1956,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
+| Intune | Union européenne |
 | MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
@@ -1889,6 +1980,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | France |
 | Office Online Mobile &amp; | France |
 | Exchange Online Protection | France |
+| Intune | Union européenne |
 | MyAnalytics | France |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
@@ -1912,13 +2004,14 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | Zone géographique mondiale 3 : Amériques |
 | Exchange Online Protection | Zone géographique mondiale 3 : Amériques |
+| Intune | États-Unis |
 | MyAnalytics | Zone géographique mondiale 3 : Amériques |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
 | Services OneNote | Zone géographique mondiale 3 : Amériques |
 | Stream | États-Unis |
-| Tableau blanc collaboratif | États-Unis |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -1929,19 +2022,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
 | Services OneNote | Zone géographique mondiale 2 : Asie et Pacifique |
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
-| Tableau blanc collaboratif | États-Unis |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -1958,6 +2052,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -1981,13 +2076,14 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -2004,13 +2100,14 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -2021,19 +2118,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | Zone géographique 1 : EMEA |
+| Planner | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -2050,6 +2148,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Allemagne |
 | Office Online Mobile &amp; | Allemagne |
 | Exchange Online Protection | Allemagne |
+| Intune | Union européenne |
 | MyAnalytics | Allemagne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
@@ -2067,19 +2166,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -2090,19 +2190,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | Zone géographique 1 : EMEA |
+| Planner | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -2119,6 +2220,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
+| Intune | Union européenne |
 | MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
@@ -2142,6 +2244,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -2165,6 +2268,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -2188,6 +2292,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -2205,19 +2310,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
 | Services OneNote | Zone géographique mondiale 2 : Asie et Pacifique |
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
-| Tableau blanc collaboratif | États-Unis |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -2234,6 +2340,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -2252,11 +2359,12 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
@@ -2274,12 +2382,13 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -2297,12 +2406,13 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
 | SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -2326,6 +2436,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | Zone géographique mondiale 3 : Amériques |
 | Exchange Online Protection | Zone géographique mondiale 3 : Amériques |
+| Intune | États-Unis |
 | MyAnalytics | Zone géographique mondiale 3 : Amériques |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -2349,6 +2460,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -2372,6 +2484,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -2389,19 +2502,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Tableau blanc | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -2412,19 +2526,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Tableau blanc | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -2441,13 +2556,14 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
 | Services OneNote | États-Unis |
 | Stream | États-Unis |
-| Tableau blanc collaboratif | États-Unis |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -2458,19 +2574,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
 | Services OneNote | Zone géographique mondiale 2 : Asie et Pacifique |
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
-| Tableau blanc collaboratif | États-Unis |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -2487,6 +2604,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
+| Intune | Union européenne |
 | MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
@@ -2505,18 +2623,19 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -2533,6 +2652,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Inde |
 | Office Online Mobile &amp; | Inde |
 | Exchange Online Protection | Inde |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Inde |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
@@ -2550,19 +2670,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
 | Services OneNote | Zone géographique mondiale 2 : Asie et Pacifique |
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
-| Tableau blanc collaboratif | États-Unis |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -2573,19 +2694,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | Zone géographique 1 : EMEA |
+| Planner | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -2602,6 +2724,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
+| Intune | Union européenne |
 | MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
@@ -2619,19 +2742,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | Zone géographique 1 : EMEA |
+| Planner | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -2642,19 +2766,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | Zone géographique 1 : EMEA |
+| Planner | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -2671,6 +2796,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
+| Intune | Union européenne |
 | MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
@@ -2694,6 +2820,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -2717,6 +2844,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Japon |
 | Office Online Mobile &amp; | Japon |
 | Exchange Online Protection | Japon |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Japon |
 | Planificateur | Japon |
 | Sway | États-Unis |
@@ -2734,14 +2862,15 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | Zone géographique 1 : EMEA |
+| Planner | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer |  Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
@@ -2763,6 +2892,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
@@ -2786,6 +2916,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
@@ -2809,6 +2940,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -2832,6 +2964,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
@@ -2843,23 +2976,24 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Analyse du temps de travail | États-Unis |
 </p></details>
 
-## <a name="korea"></a>Corée
+## <a name="south-korea"></a>Corée du Sud
 <details><summary>Cliquez pour développer</summary><p>
 
 | Service | Emplacement |
 | --- | --- |
-| Exchange Online | Corée |
-| OneDrive Entreprise | Corée |
-| SharePoint Online | Corée |
-| Skype Entreprise | Corée |
-| Microsoft Teams | Corée |
-| Office Online Mobile &amp; | Corée |
-| Exchange Online Protection | Corée |
-| MyAnalytics | Corée |
+| Exchange Online | Corée du Sud |
+| OneDrive Entreprise | Corée du Sud |
+| SharePoint Online | Corée du Sud |
+| Skype Entreprise | Corée du Sud |
+| Microsoft Teams | Corée du Sud |
+| Office Online Mobile &amp; | Corée du Sud |
+| Exchange Online Protection | Corée du Sud |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
+| MyAnalytics | Corée du Sud |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
-| Services OneNote | Corée |
+| Services OneNote | Corée du Sud |
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
@@ -2878,6 +3012,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
@@ -2901,6 +3036,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
@@ -2924,13 +3060,14 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | Zone géographique 1 : EMEA |
+| Planner | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -2941,19 +3078,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
 | Services OneNote | Zone géographique mondiale 2 : Asie et Pacifique |
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
-| Tableau blanc collaboratif | États-Unis |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -2970,6 +3108,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
+| Intune | Union européenne |
 | MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
@@ -2993,6 +3132,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
@@ -3016,6 +3156,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -3039,6 +3180,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -3056,12 +3198,13 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -3085,6 +3228,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Suisse |
 | Office Online Mobile &amp; | Suisse |
 | Exchange Online Protection | Suisse |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Suisse |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
@@ -3108,6 +3252,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
+| Intune | Union européenne |
 | MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
@@ -3131,6 +3276,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
+| Intune | Union européenne |
 | MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
@@ -3148,19 +3294,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -3177,6 +3324,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -3194,12 +3342,13 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
@@ -3217,19 +3366,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
 | Services OneNote | Zone géographique mondiale 2 : Asie et Pacifique |
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
-| Tableau blanc collaboratif | États-Unis |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -3241,18 +3391,19 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -3269,6 +3420,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
+| Intune | Union européenne |
 | MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
@@ -3286,12 +3438,13 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
@@ -3315,6 +3468,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -3332,19 +3486,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -3355,12 +3510,13 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -3378,12 +3534,13 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -3407,6 +3564,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -3430,13 +3588,14 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | Zone géographique 1 : EMEA |
+| Planner | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -3453,13 +3612,14 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | Zone géographique 1 : EMEA |
+| Planner | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -3470,12 +3630,13 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
@@ -3493,18 +3654,19 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | Zone géographique 1 : EMEA |
+| Planner | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
+| Flux | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
 | Analyse du temps de travail | États-Unis |
@@ -3522,6 +3684,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -3545,13 +3708,14 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -3568,13 +3732,14 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
 | Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -3585,12 +3750,13 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
@@ -3614,6 +3780,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -3631,12 +3798,13 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
@@ -3654,19 +3822,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
 | Services OneNote | Zone géographique mondiale 2 : Asie et Pacifique |
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
-| Tableau blanc collaboratif | États-Unis |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -3683,6 +3852,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
+| Intune | Union européenne |
 | MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
@@ -3706,6 +3876,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -3723,19 +3894,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
 | Services OneNote | Zone géographique mondiale 2 : Asie et Pacifique |
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
-| Tableau blanc collaboratif | États-Unis |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -3752,6 +3924,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Australie |
 | Office Online Mobile &amp; | Australie |
 | Exchange Online Protection | Australie |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Australie |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
@@ -3775,6 +3948,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -3798,13 +3972,14 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -3821,13 +3996,14 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -3844,6 +4020,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
@@ -3867,6 +4044,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
@@ -3890,6 +4068,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
@@ -3913,6 +4092,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Norvège |
 | Office Online &amp; Mobile | Norvège |
 | Exchange Online Protection | Norvège |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Norvège |
 | Planner | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
@@ -3930,12 +4110,13 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
@@ -3953,12 +4134,13 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
@@ -3982,6 +4164,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
@@ -4005,6 +4188,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
@@ -4028,6 +4212,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -4045,19 +4230,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
 | Services OneNote | Zone géographique mondiale 2 : Asie et Pacifique |
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
-| Tableau blanc collaboratif | États-Unis |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -4074,6 +4260,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | Zone géographique mondiale 3 : Amériques |
 | Exchange Online Protection | Zone géographique mondiale 3 : Amériques |
+| Intune | États-Unis |
 | MyAnalytics | Zone géographique mondiale 3 : Amériques |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -4097,6 +4284,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | Zone géographique mondiale 3 : Amériques |
 | Exchange Online Protection | Zone géographique mondiale 3 : Amériques |
+| Intune | États-Unis |
 | MyAnalytics | Zone géographique mondiale 3 : Amériques |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -4114,19 +4302,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
 | Services OneNote | Zone géographique mondiale 2 : Asie et Pacifique |
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
-| Tableau blanc collaboratif | États-Unis |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -4137,19 +4326,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
 | Services OneNote | Zone géographique mondiale 2 : Asie et Pacifique |
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
-| Tableau blanc collaboratif | États-Unis |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -4166,6 +4356,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
+| Intune | Union européenne |
 | MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
@@ -4189,6 +4380,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
+| Intune | Union européenne |
 | MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
@@ -4212,13 +4404,14 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
 | Services OneNote | États-Unis |
 | Stream | États-Unis |
-| Tableau blanc collaboratif | États-Unis |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -4229,19 +4422,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | Zone géographique 1 : EMEA |
+| Planner | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -4252,19 +4446,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | Zone géographique 1 : EMEA |
+| Planner | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -4275,19 +4470,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -4304,6 +4500,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
+| Intune | Union européenne |
 | MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
@@ -4327,6 +4524,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
@@ -4350,6 +4548,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -4373,13 +4572,14 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -4396,6 +4596,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -4419,6 +4620,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -4442,6 +4644,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -4465,6 +4668,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -4488,6 +4692,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -4511,6 +4716,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -4528,19 +4734,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
 | Services OneNote | Zone géographique mondiale 2 : Asie et Pacifique |
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
-| Tableau blanc collaboratif | États-Unis |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -4552,11 +4759,12 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
@@ -4580,6 +4788,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -4603,6 +4812,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
@@ -4626,6 +4836,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -4649,6 +4860,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
@@ -4672,6 +4884,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -4690,11 +4903,12 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -4712,12 +4926,13 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
@@ -4741,13 +4956,14 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
 | Services OneNote | États-Unis |
 | Stream | États-Unis |
-| Tableau blanc collaboratif | États-Unis |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -4764,6 +4980,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
+| Intune | Union européenne |
 | MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
@@ -4787,6 +5004,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
+| Intune | Union européenne |
 | MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
@@ -4804,12 +5022,13 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
@@ -4828,11 +5047,12 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -4856,13 +5076,14 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Afrique du Sud |
 | Office Online Mobile &amp; | Afrique du Sud |
 | Exchange Online Protection | Afrique du Sud |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Afrique du Sud |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Afrique du Sud |
 | Flux | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -4879,13 +5100,14 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
 | Services OneNote | États-Unis |
 | Stream | États-Unis |
-| Tableau blanc collaboratif | États-Unis |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -4902,6 +5124,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
+| Intune | Union européenne |
 | MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
@@ -4919,12 +5142,13 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
@@ -4948,6 +5172,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -4965,19 +5190,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | Zone géographique 1 : EMEA |
+| Planner | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -4988,19 +5214,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -5017,6 +5244,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Union européenne |
 | Office Online Mobile &amp; | Union européenne |
 | Exchange Online Protection | Union européenne |
+| Intune | Union européenne |
 | MyAnalytics | Union européenne |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
@@ -5040,6 +5268,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Suisse |
 | Office Online Mobile &amp; | Suisse |
 | Exchange Online Protection | Suisse |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Suisse |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
@@ -5057,12 +5286,13 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
@@ -5086,6 +5316,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
@@ -5109,6 +5340,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -5132,6 +5364,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
@@ -5155,6 +5388,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
@@ -5178,6 +5412,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -5195,12 +5430,13 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
@@ -5218,12 +5454,13 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
@@ -5247,6 +5484,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -5264,19 +5502,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -5287,14 +5526,15 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | Zone géographique 1 : EMEA |
+| Planner | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
@@ -5310,14 +5550,15 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | Zone géographique 1 : EMEA |
+| Planner | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
@@ -5339,6 +5580,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -5356,19 +5598,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
 | Services OneNote | Zone géographique mondiale 2 : Asie et Pacifique |
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
-| Tableau blanc collaboratif | États-Unis |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -5385,6 +5628,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -5403,11 +5647,12 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
 | OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -5425,14 +5670,15 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique 1 : EMEA |
-| OneDrive Entreprise | Zone géographique 1 : EMEA |
-| SharePoint Online | Zone géographique 1 : EMEA |
+| OneDrive Entreprise | Zone géographique 1 : EMEA |
+| SharePoint Online | Zone géographique 1 : EMEA |
 | Skype Entreprise | Zone géographique 1 : EMEA |
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
-| Planificateur | Zone géographique 1 : EMEA |
+| Planner | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
@@ -5454,6 +5700,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Émirats arabes unis |
 | Office Online Mobile &amp; | Émirats arabes unis |
 | Exchange Online Protection | Émirats arabes unis |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Émirats arabes unis |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
@@ -5477,6 +5724,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Royaume-Uni |
 | Office Online Mobile &amp; | Royaume-Uni |
 | Exchange Online Protection | Royaume-Uni |
+| Intune | Union européenne |
 | MyAnalytics | Royaume-Uni |
 | Planificateur | Union européenne |
 | Sway | États-Unis |
@@ -5500,13 +5748,14 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
 | Yammer | États-Unis |
 | Services OneNote | États-Unis |
 | Stream | États-Unis |
-| Tableau blanc collaboratif | États-Unis |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -5523,6 +5772,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | Zone géographique mondiale 3 : Amériques |
 | Exchange Online Protection | Zone géographique mondiale 3 : Amériques |
+| Intune | États-Unis |
 | MyAnalytics | Zone géographique mondiale 3 : Amériques |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -5540,12 +5790,13 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
@@ -5569,13 +5820,14 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
 | Yammer | Zone géographique 1 : EMEA |
 | Services OneNote | Zone géographique 1 : EMEA |
-| Stream | Zone géographique 1 : EMEA |
-| Tableau blanc collaboratif | États-Unis |
+| Flux | Zone géographique 1 : EMEA |
+| Tableau blanc | États-Unis |
 | Formulaires | Zone géographique 1 : EMEA |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -5586,19 +5838,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
 | Services OneNote | Zone géographique mondiale 2 : Asie et Pacifique |
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
-| Tableau blanc collaboratif | États-Unis |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -5615,6 +5868,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | États-Unis |
 | Office Online Mobile &amp; | États-Unis |
 | Exchange Online Protection | États-Unis |
+| Intune | États-Unis |
 | MyAnalytics | États-Unis |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -5632,19 +5886,20 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
 | Yammer | États-Unis |
 | Services OneNote | Zone géographique mondiale 2 : Asie et Pacifique |
 | Stream | Zone géographique mondiale 2 : Asie et Pacifique |
-| Tableau blanc collaboratif | États-Unis |
+| Tableau blanc | États-Unis |
 | Formulaires | États-Unis |
 | Analyse du temps de travail | États-Unis |
 </p></details>
@@ -5655,12 +5910,13 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Service | Emplacement |
 | --- | --- |
 | Exchange Online | Zone géographique mondiale 2 : Asie et Pacifique |
-| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
+| OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | Microsoft Teams | Zone géographique mondiale 2 : Asie et Pacifique |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
+| Intune | Zone géographique mondiale 2 : Asie et Pacifique |
 | MyAnalytics | Zone géographique mondiale 2 : Asie et Pacifique |
 | Planificateur | Zone géographique mondiale 2 : Asie et Pacifique |
 | Sway | États-Unis |
@@ -5684,6 +5940,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -5707,6 +5964,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | Zone géographique 1 : EMEA |
 | Sway | États-Unis |
@@ -5730,6 +5988,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |
@@ -5753,6 +6012,7 @@ Les nouveaux locataires Office 365 sont configurés géographiquement par défa
 | Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique 1 : EMEA |
 | Exchange Online Protection | Zone géographique 1 : EMEA |
+| Intune | Zone géographique 1 : EMEA |
 | MyAnalytics | Zone géographique 1 : EMEA |
 | Planificateur | États-Unis |
 | Sway | États-Unis |

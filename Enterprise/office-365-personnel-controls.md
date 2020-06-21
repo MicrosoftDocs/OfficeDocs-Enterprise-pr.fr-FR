@@ -1,7 +1,7 @@
 ---
-title: Contrôles du personnel Office 365
-ms.author: robmazz
-author: robmazz
+title: Contrôles de personnel Microsoft 365
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 'Résumé : vue d’ensemble des pratiques de filtrage du personnel Microsoft pour Office 365.'
-ms.openlocfilehash: 747d9bcc59841453e3a8233a8f1359e08f80da81
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: 'Résumé : vue d’ensemble des pratiques de filtrage des personnes Microsoft pour Microsoft 365.'
+ms.openlocfilehash: 337e9c1d92310d430c273683570a622a9fc3c9a5
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844345"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44775093"
 ---
-# <a name="office-365-personnel-controls"></a>Contrôles du personnel Office 365
+# <a name="microsoft-365-personnel-controls"></a>Contrôles de personnel Microsoft 365
 
 Microsoft travaille en vue de maintenir un environnement sûr et sécurisé qui protège correctement les employés, les clients, les propriétés, les données personnelles et les informations propriétaires. Un programme complet de filtrage en arrière-plan est essentiel pour atteindre cet objectif. Tous les candidats pour l’emploi et Internship sont tenus de suivre correctement un filtrage en arrière-plan avant de commencer l’emploi chez Microsoft. Les employés actuels de rôles spécifiques peuvent également faire l’objet d’un réexamen périodique.
 
@@ -30,7 +30,7 @@ Microsoft travaille en vue de maintenir un environnement sûr et sécurisé qui 
 
 La norme de filtrage du personnel Microsoft s’applique à tous les employés Microsoft, les apprentis et le personnel concerné impliqué dans le développement, l’exploitation ou la livraison de services en ligne à des clients du secteur public ou du secteur public.
 
-Les pratiques de filtrage du personnel pour Office 365 s’alignent avec les contrôles des normes de l’entreprise et du NIST (Institut National Institute of Standards and Technology) de Microsoft pour le dépistage du personnel. Le personnel Microsoft qui a besoin d’accéder aux éléments suivants est soumis à la norme de filtrage du personnel Microsoft :
+Les pratiques de filtrage du personnel pour Microsoft 365 s’alignent sur les contrôles des normes de l’entreprise et du NIST (Institut National Institute of Standards and Technology) de Microsoft pour le dépistage du personnel. Le personnel Microsoft qui a besoin d’accéder aux éléments suivants est soumis à la norme de filtrage du personnel Microsoft :
 
 - Accès physique aux centres de donnés, aux coemplacements, aux salles sécurisées, aux cages, aux racks de serveurs ou aux sites de périphérie qui fournissent l’infrastructure qui prend en charge les services en ligne pour les clients du nuage ou du secteur public.
 - Accès logique aux données client du Cloud ou du secteur commercial fourni par des environnements gérés spécifiques.
@@ -59,7 +59,7 @@ Des contrôles périodiques de ré-analyse et/ou de vérification en arrière-pl
 
 ## <a name="supplier-screening"></a>Filtrage des fournisseurs
 
-Microsoft exige que les fournisseurs (membres du personnel) effectuent des vérifications préalables de l’arrière-plan sur tous les membres du personnel qui effectueront des services ou des projets qui nécessitent un accès à des installations appartenant à Microsoft ou louées, ou un accès aux ressources Microsoft telles que courrier électronique, accès réseau, Cardkey ou autres badges d’accès.
+Microsoft exige que les fournisseurs (membres du personnel) effectuent des vérifications préalables de l’arrière-plan sur tous les membres du personnel qui effectueront des services ou des projets qui nécessitent un accès aux installations de Microsoft ou de baux ou un accès aux ressources Microsoft telles que le courrier électronique, l’accès réseau, Cardkey ou autres badges d’accès.
 
 Dans la mesure permise par les vérifications de dépistage du fournisseur de lois locales, citons les suivantes :
 
@@ -68,13 +68,13 @@ Dans la mesure permise par les vérifications de dépistage du fournisseur de lo
 - Confirmation du niveau le plus élevé de la réalisation scolaire
 - Contrôle des sanctions globales et de l’exécution
 
-Aux États-Unis avant chaque membre de l’équipe fournisseurs à exécuter pour Microsoft, dans la mesure autorisée par la loi locale, le fournisseur effectuera une pré-mise en place, et pour certains placements, une vérification périodique, en arrière-plan, à l’aide de Microsoft le fournisseur de services de filtrage de vérification en arrière-plan préféré qui confirmera Microsoft que le filtrage répond à la norme Microsoft. 
+Aux États-Unis avant chaque membre de l’équipe fournisseurs à exécuter pour Microsoft, dans la mesure autorisée par la loi locale, le fournisseur effectuera une pré-mise en place, et pour certains placements, un examen de fond périodique, à l’aide du fournisseur de services de vérification en arrière-plan préféré de Microsoft, qui confirmera à Microsoft que le filtrage répond à la norme Microsoft. 
 
-À l’échelle internationale, l’exigence ci-dessus sera mise en œuvre dans tous les pays pour le 1er septembre 2020 et, si elle n’est pas encore implémentée, le contrat avec le tiers spécifie les exigences de Microsoft en matière de filtrage à effectuer et le fournisseur est responsable de l’attestation de Microsoft par écrit que la vérification en arrière-plan a été correctement effectuée.
+À l’échelle internationale, l’exigence ci-dessus sera mise en œuvre dans tous les pays pour le 1er septembre 2020 et, si elle n’est pas encore implémentée, le contrat avec le tiers spécifie les exigences de Microsoft en matière de filtrage qui doivent être menées et le fournisseur est responsable de l’attestation de Microsoft par écrit que la vérification de l’arrière-plan a réussi.
 
 ## <a name="microsoft-cloud-background-check"></a>Vérification en arrière-plan Microsoft Cloud
 
-Une vérification en arrière-plan de Microsoft Cloud est requise pour les candidats embauchés en tant qu’employés fournissant des services Office 365 aux États-Unis. Les employés Microsoft aux États-Unis ayant accès aux données client doivent respecter le processus de vérification en arrière-plan de Microsoft Cloud requis par tous les services Office 365. En dehors des États-Unis, le processus varie. Par exemple, le Cloud Microsoft pour l’Allemagne utilise un modèle d’approbation de tiers de données, conçu pour garantir que le client de données approuvé (une société allemande), et non Microsoft, contrôle l’accès aux données client. Le Cloud Microsoft en Allemagne est fourni par des centres de données en Allemagne, et les centres d’opérations (OC) contenant le personnel technique du client tiers de données sont également en Allemagne. Les installations de centre de données et OC sont gérées, gérées et contrôlées par le tiers de confiance.
+Une vérification en arrière-plan de Microsoft Cloud est requise pour les candidats embauchés en tant qu’employés fournissant des services liés à Microsoft 365 aux États-Unis. Les employés Microsoft aux États-Unis ayant accès aux données client doivent respecter le processus de vérification en arrière-plan de Microsoft Cloud requis par tous les services Microsoft 365. En dehors des États-Unis, le processus varie. Par exemple, le Cloud Microsoft pour l’Allemagne utilise un modèle d’approbation de tiers de données, conçu pour garantir que le client de données approuvé (une société allemande), et non Microsoft, contrôle l’accès aux données client. Le Cloud Microsoft en Allemagne est fourni par des centres de données en Allemagne, et les centres d’opérations (OC) contenant le personnel technique du client tiers de données sont également en Allemagne. Les installations de centre de données et OC sont gérées, gérées et contrôlées par le tiers de confiance.
 
 Dans la mesure autorisée par la loi locale, les vérifications suivantes sont effectuées dans le cadre de la vérification en arrière-plan de Microsoft Cloud.
 
@@ -82,8 +82,8 @@ Dans la mesure autorisée par la loi locale, les vérifications suivantes sont e
 - Historique pénal Vérifiez qu’il y a sept ans pour crimes et délits infractions aux niveaux État, comté et local, et au niveau fédéral, le cas échéant, aux États-Unis. Une vérification de l’historique pénal international (en fonction de la législation locale) est applicable aux régions situées en dehors des États-Unis.
 - Contrôle des sanctions globales et de l’exécution, y compris la liste de contrôle des biens étrangers (OFAC), de la liste des bureaux de l’industrie et de la sécurité (BRI), ainsi que des contrôles commerciaux de la défense DDTC.
 
-Les résultats de la vérification en arrière-plan de Microsoft Cloud sont stockés dans notre base de données Employee et connectés à nos systèmes de contrôle d’accès centre de données. Si la vérification en arrière-plan de Microsoft Cloud expire et que l’employé ne la rerenouvelle pas, l’accès aux services Office 365 est révoqué et n’est plus disponible tant que la vérification en arrière-plan de Microsoft Cloud n’est pas terminée. Lorsque la relation de travail avec Microsoft se termine, tout l’accès au centre de contenu est immédiatement révoqué.
+Les résultats de la vérification en arrière-plan de Microsoft Cloud sont stockés dans notre base de données Employee et connectés à nos systèmes de contrôle d’accès centre de données. Si la vérification en arrière-plan de Microsoft Cloud expire et que l’employé ne la rerenouvelle pas, l’accès aux services Microsoft 365 est révoqué et n’est plus disponible tant que la vérification en arrière-plan de Microsoft Cloud n’est pas terminée. Lorsque la relation de travail avec Microsoft se termine, tout l’accès au centre de contenu est immédiatement révoqué.
 
-La citoyenneté des États-Unis est vérifiée pour tous les employés disposant d’un accès physique ou logique aux services publics Office 365 États-Unis. Pour vérifier la citoyenneté, les employés et/ou les candidats aux nouveaux employés se joignent à un délégué de citoyenneté américain formé pour vérifier la documentation de la citoyenneté américaine. Les employés ou les candidats à d’autres embauches doivent apporter la documentation requise et signer un formulaire d’attestation lors d’une réunion avec le délégué de citoyenneté pour leur région. La réunion doit être réalisée en personne. Une fois que la personne a rempli le délégué de citoyenneté et fourni la documentation et les signatures nécessaires, le délégué de citoyenneté transfère une copie des documents aux opérations de personnel Microsoft qui soumettent la copie à enregistrer.
+La citoyenneté des États-Unis est vérifiée pour tous les employés disposant d’un accès physique ou logique aux services gouvernementaux des États-Unis Microsoft 365. Pour vérifier la citoyenneté, les employés et/ou les candidats aux nouveaux employés se joignent à un délégué de citoyenneté américain formé pour vérifier la documentation de la citoyenneté américaine. Les employés ou les candidats à d’autres embauches doivent apporter la documentation requise et signer un formulaire d’attestation lors d’une réunion avec le délégué de citoyenneté pour leur région. La réunion doit être réalisée en personne. Une fois que la personne a rempli le délégué de citoyenneté et fourni la documentation et les signatures nécessaires, le délégué de citoyenneté transfère une copie des documents aux opérations de personnel Microsoft qui soumettent la copie à enregistrer.
 
-Les membres du personnel disposant d’un accès logique au Cloud communautaire du gouvernement américain d’Office 365 ou d’un accès logique ou physique aux offres gouvernementales américaines, sont tenus de se conformer aux exigences du gouvernement fédéral du FBI (Federal [Justice Information Services](https://www.fbi.gov/services/cjis) ), y compris la fonction de dépistage du personnel. Le filtrage CJIS dans la prise en charge du service de gouvernement américain Office 365 inclut un contrôle de fond pénal basé sur les empreintes digitales, déterminé par le candidat à l’Agence de système CJIS dans les [États qui ont été](https://blogs.office.com/2013/10/23/california-and-microsoft-sign-cjis-security-policy-agreement/) inclus dans le programme de support technique CJIS Microsoft Online Services.
+Les membres du personnel disposant d’un accès logique au Cloud communautaire du gouvernement américain Microsoft 365 ou un accès logique ou physique aux offres du gouvernement américain des États-Unis sont tenus de se conformer aux exigences du gouvernement fédéral du FBI (CJIS), y compris le [dépistage du personnel](https://www.fbi.gov/services/cjis) . Le filtrage CJIS en prise en charge du service de gouvernement américain Microsoft 365 inclut un contrôle de fond pénal basé sur les empreintes digitales, déterminé par le candidat à l’Agence de système CJIS dans les [États qui ont été](https://blogs.office.com/2013/10/23/california-and-microsoft-sign-cjis-security-policy-agreement/) inclus dans le programme de support technique CJIS Microsoft Online Services.

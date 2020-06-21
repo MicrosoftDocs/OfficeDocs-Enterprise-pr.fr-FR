@@ -1,7 +1,7 @@
 ---
-title: Contrôles d’accès des administrateurs dans Office 365
-ms.author: robmazz
-author: robmazz
+title: Contrôles d’accès administratif dans Microsoft 365
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,27 +14,27 @@ f1.keywords:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: 'Résumé : vue d’ensemble des contrôles d’accès administratif et de la catégorisation des données d’Office 365.'
-ms.openlocfilehash: f902b123b26f2c71cb6597f66fc47142e2f2b44c
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: 'Résumé : vue d’ensemble des contrôles d’accès administratif et de la catégorisation des données de Microsoft 365.'
+ms.openlocfilehash: 93b62acbda2508d5b41578eb807293c34fdda4dd
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844535"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774969"
 ---
-# <a name="administrative-access-controls-in-office-365"></a>Contrôles d’accès des administrateurs dans Office 365 
+# <a name="administrative-access-controls-in-microsoft-365"></a>Contrôles d’accès administratif dans Microsoft 365 
 
-Microsoft a investi beaucoup dans les systèmes et les contrôles qui automatisent la plupart des opérations Office 365 tout en limitant intentionnellement l’accès au contenu client par Microsoft. Les êtres humains gouvernent le service et le logiciel fonctionne avec le service. Cela permet à Microsoft de gérer Office 365 à l’horizontale et de gérer les risques de menaces internes pour le contenu du client.
+Microsoft a investi beaucoup de systèmes et de contrôles qui automatisent la plupart des opérations Microsoft 365, tout en limitant intentionnellement l’accès au contenu client par Microsoft. Les êtres humains gouvernent le service et le logiciel fonctionne avec le service. Cela permet à Microsoft de gérer Microsoft 365 à l’horizontale et de gérer les risques de menaces internes pour le contenu du client.
 
-Par défaut, les ingénieurs Microsoft ne disposent d'aucun privilège administratif permanent et d'aucun accès permanent au contenu du client dans Office 365. Un ingénieur Microsoft peut disposer d’un accès limité, audité et sécurisé au contenu d’un client pendant une durée limitée. L’accès est uniquement nécessaire pour les opérations de service et uniquement lorsqu’il est approuvé par un membre de la direction générale Microsoft. Pour les clients titulaires d’une licence Lockbox client, le client fournit une approbation d’accès à son contenu hébergé sur Office 365.
+Par défaut, les ingénieurs Microsoft disposent de zéro privilège administratif permanent et d’un accès permanent au contenu client dans Microsoft 365. Un ingénieur Microsoft peut disposer d’un accès limité, audité et sécurisé au contenu d’un client pendant une durée limitée. L’accès est uniquement nécessaire pour les opérations de service et uniquement lorsqu’il est approuvé par un membre de la direction générale Microsoft. Pour les clients titulaires d’une licence Lockbox client, le client fournit une approbation d’accès à son contenu hébergé sur Microsoft 365.
 
 Microsoft fournit des services en ligne à l’aide de plusieurs formes de remise en nuage :
 
-- **Nuages publics :** Inclut des versions mutualisées d’Office 365, Azure et d’autres services hébergés en Amérique du Nord, Amérique du Sud, Europe, Asie, Australie, etc.
-- **Clouds nationaux :** Comprend tous les nuages souverains et tiers gérés en dehors des États-Unis (sauf ceux notés précédemment), tels que Office 365 en Chine (géré par 21Vianet) et Office 365 en Allemagne (géré par Microsoft, mais sous un modèle dans lequel un tiers de confiance de données, Deutsche Telekom, contrôle et surveille l’accès de Microsoft aux données et systèmes clients qui contiennent des données client).
-- **Clouds gouvernementaux :** Inclut Office 365 et Azure services disponibles pour les clients du secteur public américain.
+- **Nuages publics :** Inclut des versions mutualisées de Microsoft 365, Azure et d’autres services hébergés en Amérique du Nord, en Amérique du Sud, en Europe, en Asie, en Australie, etc.
+- **Clouds nationaux :** Comprend tous les nuages souverains et tiers gérés en dehors des États-Unis (sauf ceux notés précédemment), tels que Microsoft 365 en Chine (géré par 21Vianet) et Microsoft 365 en Allemagne (géré par Microsoft, mais sous un modèle dans lequel un tiers de confiance des données, Deutsche Telekom, contrôle et surveille l’accès de Microsoft aux données et systèmes clients qui contiennent des données client).
+- **Clouds gouvernementaux :** Inclut Microsoft 365 et Azure services disponibles pour les clients gouvernementaux des États-Unis.
 
-Pour les besoins de cet article, les services Office 365 sont les suivants :
+Pour les besoins de cet article, les services Microsoft 365 sont les suivants :
 
 - [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online)
 - [Exchange Online Protection](https://docs.microsoft.com/Office365/SecurityCompliance/eop/exchange-online-protection-overview)
@@ -44,13 +44,13 @@ Pour les besoins de cet article, les services Office 365 sont les suivants :
 - [Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview)
 - [Yammer](https://docs.microsoft.com/yammer/yammer-landing-page)
 
-## <a name="office-365-access-controls"></a>Contrôles d’accès Office 365
+## <a name="microsoft-365-access-controls"></a>Contrôles d’accès Microsoft 365
 
-À des fins de contrôle d’accès, Microsoft catégorise les données Office 365 en tant que données client ou d’autres types de données.
+À des fins de contrôle d’accès, Microsoft catégorise les données Microsoft 365 en tant que données client ou d’autres types de données.
 
 ### <a name="customer-data"></a>Données client
 
-Les données client sont toutes les données fournies par ou pour le compte d’un client lors de l’utilisation des services Office 365. Il s’agit de contenu client directement créé ou téléchargé par les utilisateurs d’Office 365, notamment :
+Les données client sont toutes les données fournies par ou pour le compte d’un client lors de l’utilisation des services Microsoft 365. Il s’agit de contenu client directement créé ou téléchargé par les utilisateurs de Microsoft 365, notamment :
 
 - Messages électroniques
 - Contenu SharePoint Online
@@ -58,7 +58,7 @@ Les données client sont toutes les données fournies par ou pour le compte d’
 - Éléments de calendrier
 - Documents
 - Contacts
-- Les informations identifiables de l’utilisateur final (EUII) (données propres à un utilisateur ou pouvant être liées à un utilisateur individuel, mais qui n’incluent pas de contenu client).
+- Informations identifiables par l’utilisateur final (EUII) (données propres à un utilisateur ou pouvant être liées à un utilisateur individuel, mais n’incluant pas de contenu client)
 
 ### <a name="other-types-of-data"></a>Autres types de données
 
@@ -68,17 +68,17 @@ Les autres types de données sont les suivants :
 - **Informations identifiables de l’Organisation :** Inclut des données utilisées pour identifier un client, des données d’utilisation et ne pas être lié à un utilisateur individuel ou incluse dans le contenu du client.
 - **Métadonnées système :** Inclut des journaux de service qui contiennent des paramètres de configuration, l’état du système, des adresses IP Microsoft et des informations techniques sur les abonnements et les clients.
 
-Microsoft a établi des mécanismes de contrôle d’accès pour s’assurer que personne ne dispose d’un accès non approuvé aux données du client ou aux données de contrôle d’accès. Les données de contrôle d’accès gèrent l’accès à d’autres types de données ou fonctions au sein de l’environnement, y compris l’accès au contenu du client ou EUII, les mots de passe Microsoft, les certificats de sécurité et d’autres données liées à l’authentification. Les mécanismes de contrôle d’accès protègent également contre l’accès physique, logique ou distant non approuvé à l’environnement de production Office 365.
+Microsoft a établi des mécanismes de contrôle d’accès pour s’assurer que personne ne dispose d’un accès non approuvé aux données du client ou aux données de contrôle d’accès. Les données de contrôle d’accès gèrent l’accès à d’autres types de données ou fonctions au sein de l’environnement, y compris l’accès au contenu du client ou EUII, les mots de passe Microsoft, les certificats de sécurité et d’autres données liées à l’authentification. Les mécanismes de contrôle d’accès protègent également contre les accès physiques, logiques ou distants non approuvés à l’environnement de production Microsoft 365.
 
-Il existe trois catégories de contrôles d’accès utilisés par Microsoft pour l’exploitation d’Office 365 :
+Il existe trois catégories de contrôles d’accès utilisés par Microsoft pour l’exploitation de Microsoft 365 :
 
 - Contrôles d’isolation
 - Contrôles du personnel
 - Contrôles technologiques
 
-Lorsqu’ils sont combinés, ces contrôles aident à empêcher et à détecter les actions malveillantes dans Office 365. Outre les contrôles d’isolation, de personnel et de technologie utilisés par Microsoft, il existe une quatrième catégorie de contrôles : ceux mis en œuvre par les clients.
+Lorsqu’ils sont combinés, ces contrôles aident à prévenir et à détecter les actions malveillantes dans Microsoft 365. Outre les contrôles d’isolation, de personnel et de technologie utilisés par Microsoft, il existe une quatrième catégorie de contrôles : ceux mis en œuvre par les clients.
 
-Office 365 vous permet de gérer les données de la même manière que les données sont gérées dans les environnements locaux. La personne qui souscrit une organisation pour Office 365 devient automatiquement administrateur général. L’administrateur global a accès à toutes les fonctionnalités des portails de gestion et peut :
+Microsoft 365 vous permet de gérer les données de la même manière que les données sont gérées dans les environnements locaux. La personne qui souscrit une organisation pour Microsoft 365 devient automatiquement un administrateur général. L’administrateur global a accès à toutes les fonctionnalités des portails de gestion et peut :
 
 - Créer ou modifier des utilisateurs
 - Attribuer des rôles d’administrateur à d’autres personnes
@@ -89,7 +89,7 @@ Office 365 vous permet de gérer les données de la même manière que les donn�
 
 Il est recommandé que chaque organisation configure au moins deux comptes d’administrateur. Pour les grandes organisations d’entreprise, nous recommandons des comptes d’administrateur spécialisés qui remplissent différentes fonctions.
 
-Pour plus d’informations sur l’attribution des rôles et des autorisations d’administrateur, consultez la rubrique [attribution de rôles d’administrateur dans office 365](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) et [à propos des rôles d’administrateur Office 365](https://support.office.com/article/Permissions-in-Office-365-DA585EEA-F576-4F55-A1E0-87090B6AAA9D).
+Pour plus d’informations sur l’attribution des rôles et des autorisations d’administrateur, voir [Assign admin Roles](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles) et [about admin Roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
 ## <a name="related-links"></a>Liens connexes
 

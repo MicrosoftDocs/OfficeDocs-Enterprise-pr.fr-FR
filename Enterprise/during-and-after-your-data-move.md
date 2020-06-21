@@ -14,20 +14,20 @@ localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 f1.keywords:
 - NOCSH
-description: Les déplacements de données sont des opérations principales n'ayant que peu d'impact sur les utilisateurs finals. Aucune action de votre part n'est requise lorsque Microsoft déplace chaque service et les données associées pour votre client vers une nouvelle zone géographique de centres de données. Le transfert de données et la validation se déroulent en arrière-plan à l'avance, et n'ont qu'une incidence minimale sur les utilisateurs.
-ms.openlocfilehash: dc028cb34bca73a08e8c62668c22edfacc7829f6
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+description: Data moves are a back-end operation with minimal impact to end-users. No action is required while Microsoft moves each service and associated data for your tenant to a new datacenter geo. Data transfer and validation occur in the background in advance with minimal impact to users.
+ms.openlocfilehash: d07c9c62a778ce23d2e088ddeb8b34346911a19a
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711917"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774489"
 ---
 # <a name="during-and-after-your-data-move"></a>Pendant et après le déplacement de vos données
 
-Les déplacements de données sont des opérations principales n'ayant que peu d'impact sur les utilisateurs finals. Aucune action de votre part n'est requise lorsque Microsoft déplace chaque service et les données associées pour votre client vers une nouvelle zone géographique de centres de données. Le transfert de données et la validation se déroulent en arrière-plan à l'avance, et n'ont qu'une incidence minimale sur les utilisateurs.
+Data moves are a back-end operation with minimal impact to end-users. No action is required while Microsoft moves each service and associated data for your tenant to a new datacenter geo. Data transfer and validation occur in the background in advance with minimal impact to users.
   
 > [!NOTE]
-> Le déplacement se produit à différents moments pour chaque service. Par conséquent, vous ne verrez pas la description des fonctionnalités réduites pour chaque service au même moment. 
+> Moves occur at different times for each service. As a result, you'll see the described reduced functionality for each service at a different time. 
   
 Regardez le centre de messages Microsoft 365 pour confirmer le déplacement de chaque Exchange Online, SharePoint Online, teams et Skype entreprise. Comme indiqué dans le tableau ci-dessous, le déplacement de toutes les données pour tous les clients dans une zone géographique spécifique peut prendre jusqu’à 24 mois à compter de la fin de la période d’inscription. Si vous rencontrez des problèmes avec votre client après le déplacement, contactez le [support technique](https://go.microsoft.com/fwlink/p/?LinkID=522459) pour obtenir de l’aide. 
   
@@ -53,7 +53,7 @@ Comme le déplacement de chaque utilisateur vers la nouvelle zone géographique 
   
 ### <a name="open-shared-folder-in-outlook-web-access"></a>Ouvrez « Dossier partagé » dans Outlook Web Access 
 
-Certains utilisateurs ouvrent un dossier de messagerie partagé à partir d'une autre boîte aux lettres (sur laquelle l'utilisateur a des autorisations en lecture ou en écriture) dans Outlook Web Access à l'aide de la fonctionnalité « Dossier partagé ». Le tableau suivant indique comment fonctionne l'accès aux dossiers partagés au cours d'un déplacement de boîte aux lettres. Notez que les utilisateurs disposant d'autorisations complètes sur une boîte aux lettres partagée peuvent ouvrir la boîte aux lettres à l'aide d'Outlook Web Access lors du déplacement. 
+Some users open a shared mail folder from another mailbox (that the user has read or write permissions to) in Outlook Web Access using the "Shared Folder" feature. The following table describes how access to shared folders works during a mailbox move. Please note that users with full permissions to a shared mailbox can open the mailbox by using Outlook Web Access during the move. 
   
 |**Configuration**|**Description**|
 |:-----|:-----|
@@ -68,29 +68,29 @@ Lors du déplacement de SharePoint Online, les données des services suivants so
     
 - Project Online
     
-- Project pour Office 365
+- Project pour Microsoft 365
     
-- Services vidéo Office 365
+- Services vidéo Microsoft 365
     
 - Office dans le navigateur
     
 - Applications Microsoft 365 pour les grandes entreprises
     
-- Visio Pro pour Office 365
+- Visio Pro pour Microsoft 365
     
 Une fois que nous aurons déplacé vos données SharePoint Online, vous pourrez éventuellement observer certains des effets suivants.
   
-### <a name="office-365-video-services"></a>Services vidéo Office 365
+### <a name="microsoft-365-video-services"></a>Services vidéo Microsoft 365
 
-- Le déplacement de vidéos prend plus de temps que le déplacement d’autres contenus dans SharePoint Online.
+- Le déplacement de vidéos prend plus de temps que le déplacement d'autres contenus dans SharePoint Online.
     
 - Une fois le contenu de SharePoint Online déplacé, vous ne pourrez pas lire les vidéos pendant une certaine période.
     
 - Nous supprimons les copies transcodées du centre de données précédent et les transcodons à nouveau dans le nouveau centre de données.
     
-### <a name="search"></a>Recherche
+### <a name="search"></a>Rechercher
 
-Dans le cadre du déplacement de vos données SharePoint Online, nous migrons vos paramètres de recherche et d'index vers un nouvel emplacement. Jusqu'à la **fin** du déplacement de vos données SharePoint Online, nous continuons de desservir vos utilisateurs depuis l'index situé dans l'emplacement d'origine. Dans le nouvel emplacement, la fonction recherche démarre automatiquement une analyse de votre contenu une fois le déplacement de vos données SharePoint Online terminé. À ce moment-là, nous desservirons vos utilisateurs depuis l'index migré. Les modifications apportées à votre contenu après la migration ne sont pas prises en compte dans l'index migré tant que l'analyse ne les a pas récupérées. La plupart des clients ne remarquent pas que les résultats proposent des contenus moins récents immédiatement après la migration de leurs données SharePoint Online, mais certains peuvent s'en apercevoir au cours des 24-48 premières heures d'utilisation. 
+In the course of moving your SharePoint Online data, we migrate your search index and search settings to a new location. Until we've **completed** the move of your SharePoint Online data, we continue to serve your users from the index in the original location. In the new location, search automatically starts crawling your content after we've completed moving your SharePoint Online data. From this point and onwards we serve your users from the migrated index. Changes to your content that occurred after the migration aren't included in the migrated index until crawling picks them up. Most customers don't notice that results are less fresh right after we've completed moving their SharePoint Online data, but some customers might experience reduced freshness in the first 24-48 hours 
   
 Les fonctionnalités de recherche suivantes sont concernées :
   
@@ -98,7 +98,7 @@ Les fonctionnalités de recherche suivantes sont concernées :
     
 - Delve : Delve n'inclut pas les modifications qui se sont produites après la migration jusqu'à ce que l'analyse les ait récupérées.
     
-- Rapports de popularité et de recherche pour le site : le nombre de rapports Excel situés dans le nouvel emplacement prend uniquement en compte le nombre de rapports migrés et de rapports d'utilisation exécutés après le déplacement de vos données SharePoint Online. Le nombre de rapports existant pendant la période de transition est perdu et ne peut pas être récupéré. Cette période correspond généralement à quelques jours. Certains clients peuvent constater des pertes plus courtes ou plus longues.
+- Popularity and Search Reports for the site: Counts for Excel reports in the new location only include migrated counts and counts from usage reports that have run after we completed moving your SharePoint Online data. Any counts from the interim period are lost and can't be recovered. This period is typically a couple of days. Some customers might experience shorter or longer losses.
     
 - Portail vidéo : les nombres et les statistiques de vue dépendent des statistiques des rapports Excel. Par conséquent, ils sont perdus pendant le même nombre de jours que les rapports Excel.
     
@@ -106,7 +106,7 @@ Les fonctionnalités de recherche suivantes sont concernées :
     
 - Protection contre la perte de données (DLP) : Les politiques ne sont pas appliquées sur les éléments qui changent avant que l’analyse n’ait récupéré les modifications.
 
-## <a name="microsoft-teams"></a>Microsoft Teams
+## <a name="microsoft-teams"></a>Microsoft Teams
 
 Outre Exchange Online, SharePoint Online et OneDrive entreprise, Microsoft migre les données de teams vers le centre de données local.
 
@@ -119,11 +119,11 @@ Les fichiers teams sont stockés dans SharePoint Online et les fichiers de conve
 
 Les déplacements Skype entreprise sont disponibles pour l’Australie, le Japon, l’Inde, le Canada, le Royaume-Uni et la Corée du Sud.
 
-Tous les utilisateurs seront déconnectés du logiciel client Skype Entreprise pendant le basculement. La connexion automatique permettra aux utilisateurs de se reconnecter dans les deux minutes qui suivent.
+All users will be signed out from the Skype for Business client software during cut-over. The automatic sign-in will reconnect users within two minutes.
   
 |**Fonctionnalités disponibles pendant l'intégralité du déplacement**|**Fonctionnalités pouvant être limitées pendant une partie du déplacement**|
 |:-----|:-----|
-| Messagerie instantanée et appels vocaux  <br/>  Les utilisateurs peuvent ajouter des contacts, des groupes de contacts et des réunions, ainsi qu’indiquer leur emplacement et modifier le texte dans « Activités du jour ».  <br/>  Les paramètres du fournisseur de services d’audioconférence sont copiés vers la zone géographique de centres de données cible. Si le fournisseur de services d’audioconférence est présent dans le centre de données cible, la fonctionnalité sera disponible. Sinon, vous ne pourrez pas l’utiliser.  <br/> | Les administrateurs ne pourront pas se servir de la fonctionnalité TRPS (PowerShell client à distance) d’administration des clients pour créer des sessions.  <br/>  Les administrateurs ne pourront pas utiliser la fonctionnalité LAC de l'administrateur client pour se connecter et modifier les paramètres utilisateur.  <br/> |
+| Messagerie instantanée et appels vocaux  <br/>  Les utilisateurs peuvent ajouter des contacts, des groupes de contacts et des réunions, ainsi qu’indiquer leur emplacement et modifier le texte dans « Activités du jour ».  <br/>  Audio Conferencing Provider (ACP) settings are copied to the target datacenter geo. If the ACP provider is present in the target datacenter, it will work. Otherwise, it will not.  <br/> | Les administrateurs ne pourront pas se servir de la fonctionnalité TRPS (PowerShell client à distance) d’administration des clients pour créer des sessions.  <br/>  Les administrateurs ne pourront pas utiliser la fonctionnalité LAC de l'administrateur client pour se connecter et modifier les paramètres utilisateur.  <br/> |
    
 |**Après le déplacement**|
 |:-----|

@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
 description: Votre abonnement Microsoft 365 inclut un abonnement à Azure AD. Intégrez Microsoft 365 à Azure AD si vous voulez une synchronisation de mot de passe ou une authentification unique avec votre environnement local.
-ms.openlocfilehash: 40426c20f12cf17955457c38d809926550efa188
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.openlocfilehash: d6ef9d05d66709d360c625fd3b47ad142bdde7a0
+ms.sourcegitcommit: 3349fdaff646f5f7d92c22565402dfc22c12d2ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774839"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "44842056"
 ---
 # <a name="azure-integration-with-microsoft-365"></a>Intégration Azure avec Microsoft 365
 
@@ -40,7 +40,7 @@ Vous pouvez utiliser les conseillers de déploiement Azure AD pour une expérien
 
  - [Conseiller Azure AD Connect](https://aka.ms/aadconnectpwsync)
  - [Conseiller de déploiement AD FS](https://aka.ms/adfsguidance)
- - [Guide de configuration d’Azure AD Premium](https://aka.ms/aadpguidance)
+ - [Guide de configuration d’Azure AD](https://aka.ms/aadpguidance)
   
 ## <a name="azure-ad-editions-and-microsoft-365-identity-management"></a>La gestion des identités Azure AD Edition et Microsoft 365
 

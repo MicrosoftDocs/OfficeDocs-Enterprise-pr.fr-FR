@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Vue d’ensemble de la fonctionnalité de découverte électronique et d’autres fonctionnalités de recherche dans Microsoft 365 pour l’utilisation et la transparence des audits.
-ms.openlocfilehash: d628bc9aa3964ffed671035a1f78f61d9632b87e
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.openlocfilehash: f4c401bf81767eb9111e6e8ca508cc3ee87152db
+ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774939"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44906187"
 ---
 # <a name="microsoft-365-ediscovery-and-search-features-overview"></a>Présentation des fonctionnalités de découverte électronique et de recherche de Microsoft 365 
 
@@ -35,7 +35,7 @@ La [recherche de contenu](https://support.office.com/article/Run-a-Content-Searc
 
 ## <a name="audit-log-search"></a>Recherche dans le journal d’audit
 
-Outre le suivi des modifications dans leur organisation Microsoft 365, vous pouvez afficher les rapports d’audit et exporter les journaux d’audit. Une fois l’audit activé pour un client Microsoft 365, l’activité utilisateur et administrative sont enregistrées dans les journaux d’événements et font l’objet de recherches. Par exemple, vous pouvez utiliser l’enregistrement d’audit de boîte aux lettres pour suivre les actions exécutées sur une boîte aux lettres par des utilisateurs autres que le propriétaire de la boîte aux lettres. Les responsables de la conformité peuvent utiliser les fonctionnalités de recherche et de filtrage pour des activités utilisateur spécifiques. Par exemple, pour identifier les utilisateurs qui ont affiché ou téléchargé un document spécifique, si les administrateurs ont effectué des activités de gestion des utilisateurs ou pour afficher les modifications apportées à la configuration du client au cours des 90 derniers jours. Les résultats de la recherche contiennent des informations d’expertise précieuse sur des activités spécifiques menées par un utilisateur ou un administrateur. Consultez [la rubrique Rechercher dans le journal d’audit](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) une description des activités d’utilisateur et d’administration enregistrées dans Microsoft 365.
+Outre le suivi des modifications dans leur organisation Microsoft 365, vous pouvez afficher les rapports d’audit et exporter les journaux d’audit. Une fois l’audit activé pour le client Microsoft 365, l’activité de l’utilisateur et de l’administration est enregistrée dans les journaux d’événements et rendus accessibles en recherche. Par exemple, vous pouvez utiliser l’enregistrement d’audit de boîte aux lettres pour suivre les actions exécutées sur une boîte aux lettres par des utilisateurs autres que le propriétaire de la boîte aux lettres. Les responsables de la conformité peuvent utiliser les fonctionnalités de recherche et de filtrage pour des activités utilisateur spécifiques. Par exemple, pour identifier les utilisateurs qui ont affiché ou téléchargé un document spécifique, si les administrateurs ont effectué des activités de gestion des utilisateurs ou pour afficher les modifications apportées à la configuration du client au cours des 90 derniers jours. Les résultats de la recherche contiennent des informations d’expertise précieuse sur des activités spécifiques menées par un utilisateur ou un administrateur. Consultez [la rubrique Rechercher dans le journal d’audit](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) une description des activités d’utilisateur et d’administration enregistrées dans Microsoft 365.
 
 Les événements provenant de SharePoint Online et OneDrive entreprise apparaissent dans le journal dans les 30 minutes qui survient. Les événements provenant d’Exchange Online apparaissent dans les journaux d’audit dans les 24 heures qui suivent l’événement. Les événements de connexion à partir d’Azure AD sont disponibles dans les minutes qui suivent l’occurrence, et les autres événements d’annuaire provenant d’Azure AD sont disponibles dans les 24 heures qui suivent. Vous pouvez exporter des ventes dans les résultats de recherche du journal d’audit pour une analyse plus poussée. Un maximum de 50 000 entrées à partir d’une recherche de journal d’audit unique sont exportées. Pour exporter plusieurs entrées de cette limite, réduisez la plage de dates ou exécutez plusieurs recherches de journaux d’audit.
 

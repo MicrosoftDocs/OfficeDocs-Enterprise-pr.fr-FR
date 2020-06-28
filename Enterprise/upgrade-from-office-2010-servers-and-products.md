@@ -23,12 +23,12 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: La prise en charge des serveurs et applications Office 2010 prendra fin prochainement et aucun contrat de support personnalisé n’est disponible. Utilisez cet article pour commencer à planifier votre mise jour dès maintenant.
-ms.openlocfilehash: 0bfb3f60583f944971823f4653255cd2531e703a
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.openlocfilehash: 570386c2f12a098ee2ccb355b5d0fa20bc32aaee
+ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44775103"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44906237"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Ressources facilitant la mise à jour de vos clients et serveurs Office 2010
 
@@ -38,11 +38,11 @@ Office 2010 et Exchange 2010 atteindront leur fin d’assistance le **13 octobre
 
 SharePoint 2010 et Project Server 2010 atteindront leur fin d’assistance le **13 avril 2021**.
 
-La planification de votre mise à jour est le moment idéal pour envisager la migration vers Office 365 ou Microsoft 365. 
+Pendant que vous planifiez votre mise à niveau, il est très utile de passer à Microsoft 365. 
 
-- Office 365 offre des services cloud pour les produits serveur Office 2010, tels qu’Exchange Server et SharePoint Server et des services tels que Teams et OneDrive Entreprise. 
+- Microsoft 365 propose des services en nuage pour les produits serveur Office 2010, tels qu’Exchange Server et SharePoint Server et des services tels que teams et OneDrive entreprise. 
 
-- Les applications Microsoft 365 pour entreprise (précédemment nommé Office 365 ProPlus), incluses dans Office 365 E3 et E5 et Microsoft 365 entreprise, sont les applications clientes Office que vous installez sur votre appareil local. Ils sont mis à jour de façon régulière avec de nouvelles fonctionnalités de productivité et de sécurité issues du cloud Microsoft.
+- Les applications Microsoft 365 pour entreprise (précédemment nommé Office 365 ProPlus), incluses dans Microsoft 365 E3 et E5, sont les applications clientes Office que vous installez sur votre appareil local. Ils sont mis à jour de façon régulière avec de nouvelles fonctionnalités de productivité et de sécurité issues du cloud Microsoft.
 
 Pour consulter une synthèse visuelle des options de mise à jour, de migration et de déplacement vers le Cloud pour les produits serveur et client Office 2010 et Windows 7, voir l’[affiche de fin de prise en charge](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf).
 
@@ -68,7 +68,7 @@ Si vous utilisez les produits et applications Office 2010 à domicile, voir [ce
 
 ## <a name="related-topics"></a>Sujets associés
 
-[Vidéo : présentation d’Office 365](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
+[Vidéo : qu’est-ce que Microsoft 365 ?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
   
 [Politique de cycle de vie Microsoft](https://go.microsoft.com/fwlink/?linkid=865200)
 

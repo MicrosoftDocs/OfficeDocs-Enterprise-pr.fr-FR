@@ -22,19 +22,19 @@ search.appverid:
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
-description: La prise en charge se termine bientôt pour les serveurs et les applications clientes Office 2007, et les accords de support personnalisés ne sont pas disponibles. Utilisez cet article pour commencer à planifier votre mise jour dès maintenant.
-ms.openlocfilehash: 8da5cd95b683be40c4efa3137ecfca4d31e11aae
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: La prise en charge pour les serveurs et les applications clientes Office 2007 et les accords de prise en charge personnalisée n’est pas disponible. Utilisez cet article pour commencer à planifier votre mise jour dès maintenant.
+ms.openlocfilehash: 79d017c92461b6c53e8d014ba9071957d70157fd
+ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774559"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44906227"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Ressources pour vous aider à effectuer une mise à niveau à partir de serveurs et clients Office 2007
 
 *Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
 
-Si vous utilisez les produits et services Office 2007, la prise en charge de ces applications a pris fin. Pendant que vous planifiez votre mise à niveau, il est très utile de passer au Cloud Microsoft, en commençant par Office 365. Utilisez cet article comme point de départ pour passer en revue vos options et planifier votre mise à niveau.
+Si vous utilisez les produits et services Office 2007, la prise en charge de ces applications a pris fin. Pendant que vous planifiez votre mise à niveau, il est très utile de passer au Cloud Microsoft, en commençant par Microsoft 365. Utilisez cet article comme point de départ pour passer en revue vos options et planifier votre mise à niveau.
       
 ## <a name="office-2007-planning-roadmaps"></a>Feuilles de route de planification d’Office 2007
   
@@ -57,7 +57,7 @@ Si vous utilisez les produits et applications Office 2007 à la maison, reportez
      
 ## <a name="related-topics"></a>Voir aussi
 
-[Vidéo : présentation d’Office 365](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
+[Vidéo : qu’est-ce que Microsoft 365 ?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
   
 [Politique de cycle de vie Microsoft](https://go.microsoft.com/fwlink/?linkid=865200)
 

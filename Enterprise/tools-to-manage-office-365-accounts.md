@@ -1,5 +1,5 @@
 ---
-title: Outils permettant de gérer les comptes Office 365
+title: Outils permettant de gérer les comptes Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,57 +19,57 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
-description: 'Découvrez les outils à utiliser pour gérer vos utilisateurs Office 365, ainsi que la manière dont vous pouvez les utiliser en fonction de la gestion des identités des utilisateurs. '
-ms.openlocfilehash: 46a17dc1e5e9337b9f1d8a03f5903acc96dad74b
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+description: 'Découvrez les outils à utiliser pour gérer vos utilisateurs de Microsoft 365, ainsi que la manière dont vous pouvez les utiliser en fonction de la gestion des identités des utilisateurs. '
+ms.openlocfilehash: c382006fe8cb46342548b7533148e760c103bf50
+ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735656"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44906216"
 ---
-# <a name="tools-to-manage-office-365-accounts"></a>Outils permettant de gérer les comptes Office 365
+# <a name="tools-to-manage-microsoft-365-accounts"></a>Outils permettant de gérer les comptes Microsoft 365
 
-Vous pouvez gérer les utilisateurs d’Office 365 de différentes manières, en fonction de votre configuration. Vous pouvez gérer les utilisateurs dans le [Centre d’administration 365 de Microsoft](https://admin.microsoft.com), Windows PowerShell, votre annuaire local ou dans le portail d’administration Azure Active Directory.
+Vous pouvez gérer les utilisateurs de Microsoft 365 de différentes manières, en fonction de votre configuration. Vous pouvez gérer les utilisateurs dans le [Centre d’administration 365 de Microsoft](https://admin.microsoft.com), Windows PowerShell, votre annuaire local ou dans le portail d’administration Azure Active Directory.
 
-Dès que vous achetez Office 365, le centre d’administration et Windows PowerShell peuvent être utilisés pour gérer les comptes. Lors de la gestion des identités de Cloud, toutes les personnes de votre organisation ont un ID d’utilisateur et un mot de passe distincts pour Office 365. Si vous souhaitez effectuer une intégration avec votre infrastructure locale et que des comptes d’utilisateurs sont synchronisés avec Office 365, vous pouvez utiliser Azure Active Directory Connect pour assurer la synchronisation des identités et éventuellement une synchronisation de mot de passe ou une fonctionnalité d’authentification unique complète.
+Dès que vous achetez Microsoft 365, le centre d’administration et Windows PowerShell peuvent être utilisés pour gérer les comptes. Lors de la gestion des identités de Cloud, toutes les personnes de votre organisation ont un ID d’utilisateur et un mot de passe distincts pour Microsoft 365. Si vous souhaitez intégrer votre infrastructure locale et que les comptes d’utilisateurs sont synchronisés avec Microsoft 365, vous pouvez utiliser Azure Active Directory Connect pour assurer la synchronisation des identités et éventuellement une synchronisation de mot de passe ou une fonctionnalité d’authentification unique complète.
   
 ## <a name="plan-for-where-and-how-you-will-manage-your-user-accounts"></a>Planifier l’emplacement et la façon dont vous allez gérer vos comptes d’utilisateurs
 
-L’emplacement et la façon dont vous pouvez gérer vos comptes d’utilisateurs dépend du modèle d’identité que vous souhaitez utiliser pour votre Office 365. Les deux modèles globaux sont l’authentification Cloud et l’authentification fédérée.
+L’emplacement et la façon dont vous pouvez gérer vos comptes d’utilisateurs dépend du modèle d’identité que vous souhaitez utiliser pour votre abonnement Microsoft 365. Les deux modèles globaux sont l’authentification Cloud et l’authentification fédérée.
   
 ### <a name="cloud-authentication"></a>Authentification Cloud
 
-- [Office 365 Identity](about-office-365-identity.md) -créer et gérer des utilisateurs dans le centre d’administration, vous pouvez également utiliser Windows PowerShell ou Azure Active Directory pour gérer vos utilisateurs.
-- [Synchronisation de hachage de mot de passe avec authentification unique transparente](about-office-365-identity.md) : le moyen le plus simple d’activer l’authentification pour les objets d’annuaire locaux dans Azure ad. La synchronisation de hachage de mot de passe (hachage) vous permet de synchroniser vos objets de compte d’utilisateur Active Directory sur site avec Office 365 et de gérer vos utilisateurs en local. 
+- [Microsoft 365 Identity](about-office-365-identity.md) -créer et gérer des utilisateurs dans le centre d’administration, vous pouvez également utiliser Windows PowerShell ou Azure Active Directory pour gérer vos utilisateurs.
+- [Synchronisation de hachage de mot de passe avec authentification unique transparente](about-office-365-identity.md) : le moyen le plus simple d’activer l’authentification pour les objets d’annuaire locaux dans Azure ad. La synchronisation de hachage de mot de passe (hachage) vous permet de synchroniser vos objets de compte d’utilisateur Active Directory sur site avec Microsoft 365 et de gérer vos utilisateurs en local. 
 - [Authentification directe avec authentification unique transparente](about-office-365-identity.md) : fournit une validation de mot de passe simple pour les services d’authentification Azure ad à l’aide d’un agent logiciel exécuté sur un ou plusieurs serveurs locaux pour valider les utilisateurs directement avec votre annuaire Active Directory local. 
 
 ### <a name="federated-authentication"></a>Authentification fédérée
 
-- [Office 365 Identity](about-office-365-identity.md) -principalement pour les grandes organisations d’entreprise avec des exigences d’authentification plus complexes, les objets d’annuaire locaux sont synchronisés avec Office 365 et les comptes d’utilisateurs sont gérés en local. 
-- Les [fournisseurs d’identité et d’authentification tiers](about-office-365-identity.md) -les objets d’annuaire locaux peuvent être synchronisés avec Office 365 et l’accès aux ressources de Cloud est principalement géré par un fournisseur d’identité tiers (IDP). 
+- [Microsoft 365 Identity](about-office-365-identity.md) -principalement pour les grandes organisations d’entreprise avec des exigences d’authentification plus complexes, les objets d’annuaire locaux sont synchronisés avec Microsoft 365 et les comptes d’utilisateurs sont gérés en local. 
+- Les [fournisseurs d’identité et d’authentification tiers](about-office-365-identity.md) -les objets d’annuaire locaux peuvent être synchronisés avec Microsoft 365 et l’accès aux ressources de Cloud est principalement géré par un fournisseur d’identité tiers (IDP). 
 
 ## <a name="managing-accounts"></a>Gestion des comptes
 
 Lorsque vous décidez de la manière dont votre organisation créera et gérera les comptes, tenez compte des éléments suivants :
   
-- Le logiciel de synchronisation d’annuaires doit être installé sur les serveurs au sein de votre environnement local pour connecter les identités entre Office 365 et votre annuaire local.
-- Toute option de synchronisation d’annuaires, y compris les options SSO, requiert des attributs d’annuaire sur site conformes aux normes. Les spécificités des attributs utilisés dans votre répertoire et le nettoyage (le cas échéant) requis sont décrits dans [Prepare to provision Users with Directory Synchronization to Office 365](prepare-for-directory-synchronization.md). Voir [Télécharger et exécuter l’outil IdFix Office 365](install-and-run-idfix.md) pour obtenir des instructions sur l’utilisation de IdFix pour automatiser le nettoyage d’annuaire. 
+- Le logiciel de synchronisation d’annuaires doit être installé sur les serveurs au sein de votre environnement local pour connecter les identités entre Microsoft 365 et votre annuaire local.
+- Toute option de synchronisation d’annuaires, y compris les options SSO, requiert des attributs d’annuaire sur site conformes aux normes. Les spécificités des attributs utilisés dans votre répertoire et le nettoyage (le cas échéant) requis sont décrits dans [Prepare to provision Users with Directory Synchronization to Microsoft 365](prepare-for-directory-synchronization.md). Voir [Télécharger et exécuter l’outil IdFix de Microsoft 365](install-and-run-idfix.md) pour obtenir des instructions sur l’utilisation de IdFix pour automatiser le nettoyage d’annuaire. 
 
-## <a name="plan-how-you-are-going-to-create-office-365-accounts"></a>Planification de la création de comptes Office 365
+## <a name="plan-how-you-are-going-to-create-microsoft-365-accounts"></a>Planification de la création de comptes Microsoft 365
 
 Le tableau suivant répertorie les différents outils de gestion des comptes :
 
 |**Option**|**Remarques**|
 |:-----|:-----|
-|**Centre d’administration** | - [Ajouter des utilisateurs individuellement ou en bloc à Office 365-aide de l’administrateur](https://support.office.com/article/1970f7d6-03b5-442f-b385-5880b9c256ec) <br> -Fournit une interface Web simple pour ajouter et modifier des comptes d’utilisateur. <br> -Ne peut pas être utilisé pour modifier les utilisateurs si la synchronisation d’annuaires est activée (l’attribution d’emplacement et de licence peut être définie). <br> -Ne peut pas être utilisé avec les options d’authentification unique. <br> |
-|**Windows PowerShell** | - [Gérer Office 365 avec Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=698471) <br> -Permet d’ajouter des utilisateurs en bloc à l’aide d’un script Windows PowerShell. <br> -Peut être utilisé pour affecter un emplacement et des licences aux comptes, quelle que soit la façon dont les comptes sont créés. <br> |
-|**Importation en bloc** | - [Ajouter plusieurs utilisateurs en même temps à Office 365-aide de l’administrateur](add-several-users-at-the-same-time.md) <br> -Permet d’importer un fichier CSV pour ajouter un groupe d’utilisateurs à Office 365. <br> -Ne peut pas être utilisé avec les options d’authentification unique. <br> |
-|**Azure Active Directory** | -Vous disposez d’une édition gratuite d’Azure Active Directory avec votre abonnement Office 365. -Vous pouvez effectuer des fonctions comme la réinitialisation du mot de passe en libre-service pour les utilisateurs du Cloud, et la personnalisation des pages de connexion et du panneau d’accès à l’aide de l’édition gratuite. <br> -Pour obtenir des fonctionnalités améliorées, vous pouvez effectuer une mise à niveau vers la version Standard Edition ou Premium. Pour obtenir la liste des fonctionnalités prises en charge, reportez-vous à [Azure Active Directory Editions](https://go.microsoft.com/fwlink/p/?LinkId=698465) . <br> |
+|**Centre d’administration** | - [Ajouter des utilisateurs individuellement ou en bloc à Microsoft 365-aide de l’administrateur](https://support.office.com/article/1970f7d6-03b5-442f-b385-5880b9c256ec) <br> -Fournit une interface Web simple pour ajouter et modifier des comptes d’utilisateur. <br> -Ne peut pas être utilisé pour modifier les utilisateurs si la synchronisation d’annuaires est activée (l’attribution d’emplacement et de licence peut être définie). <br> -Ne peut pas être utilisé avec les options d’authentification unique. <br> |
+|**Windows PowerShell** | - [Gérer Microsoft 365 avec Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=698471) <br> -Permet d’ajouter des utilisateurs en bloc à l’aide d’un script Windows PowerShell. <br> -Peut être utilisé pour affecter un emplacement et des licences aux comptes, quelle que soit la façon dont les comptes sont créés. <br> |
+|**Importation en bloc** | - [Ajouter plusieurs utilisateurs en même temps à Microsoft 365-aide de l’administrateur](add-several-users-at-the-same-time.md) <br> -Permet d’importer un fichier CSV pour ajouter un groupe d’utilisateurs à Microsoft 365. <br> -Ne peut pas être utilisé avec les options d’authentification unique. <br> |
+|**Azure Active Directory** | -Vous disposez d’une édition gratuite d’Azure Active Directory avec votre abonnement Microsoft 365. -Vous pouvez effectuer des fonctions comme la réinitialisation du mot de passe en libre-service pour les utilisateurs du Cloud, et la personnalisation des pages de connexion et du panneau d’accès à l’aide de l’édition gratuite. <br> -Pour obtenir des fonctionnalités améliorées, vous pouvez effectuer une mise à niveau vers la version Standard Edition ou Premium. Pour obtenir la liste des fonctionnalités prises en charge, reportez-vous à [Azure Active Directory Editions](https://go.microsoft.com/fwlink/p/?LinkId=698465) . <br> |
 |**Synchronisation d’annuaires** | - [Intégration de vos identités locales à Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=624168) <br> -Pour la synchronisation d’annuaires avec ou sans synchronisation de mot de passe, utilisez [les paramètres Azure ad Connect avec Express](https://go.microsoft.com/fwlink/p/?LinkID=698537).  <br>  -Pour plusieurs forêts et options d’authentification unique, utilisez [l’installation personnalisée d’Azure ad Connect](https://go.microsoft.com/fwlink/p/?LinkId=698430). <br> -Fournit l’infrastructure nécessaire pour activer l’authentification unique. <br> -Requis pour de nombreux scénarios hybrides (migration intermédiaire, échange hybride) <br> -Synchronise les groupes à extension messagerie et de sécurité à partir de votre annuaire local. <br> |
 
-Quelle que soit la façon dont vous envisagez d’ajouter les comptes d’utilisateur à Office 365, vous devez gérer plusieurs fonctionnalités de compte, telles que l’attribution de licences, la spécification de l’emplacement, etc. Ces fonctionnalités peuvent être gérées à long terme à partir du centre d’administration ou vous pouvez également [créer des comptes d’utilisateur avec Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=717083).
+Quelle que soit la façon dont vous envisagez d’ajouter les comptes d’utilisateur à Microsoft 365, vous devez gérer plusieurs fonctionnalités de compte, telles que l’attribution de licences, la spécification de l’emplacement, etc. Ces fonctionnalités peuvent être gérées à long terme à partir du centre d’administration ou vous pouvez également [créer des comptes d’utilisateurs avec Microsoft 365 PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=717083).
 
-Si vous décidez d’ajouter et de gérer tous vos utilisateurs par le biais du centre d’administration, vous devez spécifier l’emplacement et attribuer des licences en même temps que la création du compte Office 365. Par conséquent, la planification n’est pas obligatoire.
+Si vous décidez d’ajouter et de gérer tous vos utilisateurs par le biais du centre d’administration, vous devez spécifier l’emplacement et attribuer des licences en même temps que la création du compte Microsoft 365. Par conséquent, la planification n’est pas obligatoire.
 
 > [!IMPORTANT]
-> La création de comptes dans Office 365 sans l’attribution d’une licence (à SharePoint Online, par exemple) signifie que le propriétaire du compte peut consulter le centre d’administration Microsoft 365, mais qu’il ne peut accéder à aucun des services de l’abonnement de votre entreprise. Une fois que vous avez affecté un emplacement et la licence, le compte est répliqué vers le service ou les services que vous avez attribués. L’utilisateur peut se connecter à son compte et utiliser les services que vous lui avez attribués.
+> La création de comptes dans Microsoft 365 sans l’attribution d’une licence (à SharePoint Online, par exemple) signifie que le propriétaire du compte peut consulter le centre d’administration Microsoft 365, mais qu’il ne peut accéder à aucun des services de l’abonnement de votre entreprise. Une fois que vous avez affecté un emplacement et la licence, le compte est répliqué vers le service ou les services que vous avez attribués. L’utilisateur peut se connecter à son compte et utiliser les services que vous lui avez attribués.

@@ -17,16 +17,16 @@ search.appverid:
 - BCS160
 ms.assetid: 170e96ea-d65d-4e51-acac-1de56abe39b9
 description: 'Résumé : fournit des informations sur la façon de rapprocher le nombre correct de clients que vous pouvez utiliser par adresse IP au sein de votre organisation à l’aide de la traduction d’adresses réseau (NAT).'
-ms.openlocfilehash: 6140cf664a08701e9491c241d5754d51196e3922
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 04aec45b7d6c68b3e32d4ee384c9927896849bab
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844565"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998539"
 ---
 # <a name="nat-support-with-office-365"></a>Prise en charge de la traduction d'adresses réseau (NAT) avec Office 365
 
-*Cet article est valable pour Office 365 Entreprise et Microsoft 365 Entreprise*.
+*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
 
 Auparavant, vous avez indiqué que le nombre maximal de clients Exchange à utiliser par adresse IP pour se connecter à Office 365 était environ 2 000 clients par port réseau.
   
@@ -40,7 +40,7 @@ Pour fournir un accès Internet aux appareils sur un espace d’adressage IP pri
   
 ## <a name="why-do-you-need-to-have-so-many-connections-open-to-office-365-at-the-same-time"></a>Pourquoi avez-vous besoin d’un grand nombre de connexions ouvertes dans Office 365 ?
 
-Outlook peut ouvrir au moins huit connexions (dans les situations où il y a des compléments, des calendriers partagés, des boîtes aux lettres, etc.). Étant donné qu’il y a un maximum de 64 000 ports disponibles sur un périphérique NAT basé sur Windows, il peut y avoir un maximum de 8 000 utilisateurs derrière une adresse IP pour que les ports soient épuisés. Notez que si les clients utilisent des appareils non-Windows pour la traduction d’adresses réseau (NAT), le total des ports disponibles dépend du périphérique ou du logiciel NAT utilisé. Dans ce scénario, le nombre maximal de ports peut être inférieur à 64 000. La disponibilité des ports est également influencée par d’autres facteurs tels que le fait que Windows limite les ports 4 000 pour sa propre utilisation, ce qui réduit le nombre total de ports disponibles à 60, 000. il peut y avoir d’autres applications, telles qu’Internet Explorer, qui peuvent se connecter en même temps. , ce qui nécessite des ports supplémentaires.
+Outlook peut ouvrir au moins huit connexions (dans les situations où il y a des compléments, des calendriers partagés, des boîtes aux lettres, etc.). Étant donné qu’il y a un maximum de 64 000 ports disponibles sur un périphérique NAT basé sur Windows, il peut y avoir un maximum de 8 000 utilisateurs derrière une adresse IP pour que les ports soient épuisés. Notez que si les clients utilisent des appareils non-Windows pour la traduction d’adresses réseau (NAT), le total des ports disponibles dépend du périphérique ou du logiciel NAT utilisé. Dans ce scénario, le nombre maximal de ports peut être inférieur à 64 000. La disponibilité des ports est également affectée par d’autres facteurs tels que le fait que Windows limite les ports 4 000 pour sa propre utilisation, ce qui réduit le nombre total de ports disponibles à 60, 000. il peut y avoir d’autres applications, telles qu’Internet Explorer, qui peuvent se connecter en même temps, nécessitant des ports supplémentaires.
   
 ## <a name="calculating-maximum-supported-devices-behind-a-single-public-ip-address-with-office-365"></a>Calcul du nombre maximal d’appareils pris en charge derrière une même adresse IP publique avec Office 365
 
@@ -60,7 +60,7 @@ Nombre maximal d’appareils pris en charge derrière une même adresse IP publi
 
 Ensuite, le nombre maximal d’appareils pris en charge derrière une seule adresse IP publique = (64 000-4000)/(6 + 4) = 6 000
   
-Avec la version du pack d’hébergement Office 365, incluse dans les mises à jour de septembre 2011 pour Microsoft Office Outlook 2007 ou 2011 pour Microsoft Outlook 2010, ou une mise à jour ultérieure, le nombre de connexions à partir d’Outlook (à la fois Office Outlook 2007 avec le service Pack 2 et Outlook 2010) vers Exchange peuvent être aussi peu que 2. Vous devez prendre en facteur les différents systèmes d’exploitation, comportements d’utilisateur, etc., pour déterminer le nombre minimal et maximal de ports requis par votre réseau au niveau maximal.
+Avec la version du pack d’hébergement Office 365, incluse dans les mises à jour de septembre 2011 pour Microsoft Office Outlook 2007 ou 2011 pour Microsoft Outlook 2010, ou une mise à jour ultérieure, le nombre de connexions à partir d’Outlook (Office Outlook 2007 avec Service Pack 2 et Outlook 2010) vers Exchange peut être de 2. Vous devez prendre en facteur les différents systèmes d’exploitation, comportements d’utilisateur, etc., pour déterminer le nombre minimal et maximal de ports requis par votre réseau au niveau maximal.
   
 Si vous souhaitez prendre en charge un plus grand nombre d’appareils derrière une même adresse IP publique, suivez les étapes décrites pour évaluer le nombre maximal d’appareils pouvant être pris en charge :
   

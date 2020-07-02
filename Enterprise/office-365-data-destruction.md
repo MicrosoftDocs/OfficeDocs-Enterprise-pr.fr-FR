@@ -1,7 +1,7 @@
 ---
-title: Destruction des données Office 365
-ms.author: robmazz
-author: robmazz
+title: Destruction des données Microsoft 365
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,21 +14,21 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Vue d’ensemble des stratégies Microsoft relatives au recyclage, à la suppression ou à la destruction des lecteurs de disque et serveurs des centres de données Office 365.
-ms.openlocfilehash: 2ad73206309751729f776081d66d6c6d5daf1308
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Vue d’ensemble des stratégies Microsoft relatives au recyclage, à la suppression ou à la destruction des lecteurs de disque et serveurs des centres de données Microsoft 365.
+ms.openlocfilehash: 8e0725f449dd999c0f892543883a775695969dc9
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843685"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998438"
 ---
-# <a name="office-365-data-destruction"></a>Destruction des données Office 365
+# <a name="microsoft-365-data-destruction"></a>Destruction des données Microsoft 365
 
 ## <a name="physical-data-destruction"></a>Destruction de données physiques
 
-Microsoft propose des stratégies standard de gestion des données qui traite du recyclage et de la suppression des disques durs et des serveurs ayant échoué ou remis à niveau. Avant de réutiliser des lecteurs de disque Office 365, Microsoft effectue un processus de nettoyage physique compatible avec le National Institute of Standards and Technology Special Publication 800-88 ([NIST SP 800-88 Guidelines for Media assainiing](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r1.pdf)). Étant donné que tous les lecteurs de disque dans Office 365 sont chiffrés à l’aide du chiffrement au niveau du volume BitLocker, l’effacement compatible avec NIST SP 800-88 n’est pas techniquement nécessaire. Néanmoins, Microsoft procède à ce processus.
+Microsoft propose des stratégies standard de gestion des données qui traite du recyclage et de la suppression des disques durs et des serveurs ayant échoué ou remis à niveau. Avant de réutiliser les lecteurs de disque Microsoft 365, Microsoft effectue un processus de nettoyage physique cohérent avec le National Institute of Standards and Technology Special Publication 800-88 ([NIST SP 800-88 Guidelines for Media expurgationing](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r1.pdf)). Étant donné que tous les disques de Microsoft 365 sont chiffrés à l’aide du chiffrement au niveau du volume BitLocker, l’effacement compatible avec le SP 800-88 NIST n’est pas techniquement nécessaire. Néanmoins, Microsoft procède à ce processus.
 
-Les disques défaillants utilisés dans les centres de 365 Office sont physiquement détruits et audités via le processus ISO. Le type d’élément détermine les moyens de destruction appropriés. Pour les disques durs qui ne peuvent pas être effacés, Microsoft utilise un processus de destruction pour détruire le support et rendre impossible la récupération des informations. Par exemple, les disques sont physiquement détruits, pulvérisés ou incinérés. Microsoft conserve tous les enregistrements de la destruction et effectue un processus de nettoyage similaire sur les serveurs réutilisés dans Office 365. Ces instructions englobent la désinfection électronique et physique.
+Les disques défaillants utilisés dans les centres de Microsoft 365 sont physiquement détruits et audités via le processus ISO. Le type d’élément détermine les moyens de destruction appropriés. Pour les disques durs qui ne peuvent pas être effacés, Microsoft utilise un processus de destruction pour détruire le support et rendre impossible la récupération des informations. Par exemple, les disques sont physiquement détruits, pulvérisés ou incinérés. Microsoft conserve tous les enregistrements de la destruction et effectue un processus de nettoyage similaire sur les serveurs réutilisés dans Microsoft 365. Ces instructions englobent la désinfection électronique et physique.
 
 Chaque centre de session utilise un processus de destruction physique sur site pour supprimer ses disques. Les bacs sécurisés pour le support de stockage désigné pour la suppression de disque se trouvent dans chaque zone du centre de donnée. Chaque station de casier sécurisée est dotée d’une surveillance vidéo. Une fois qu’un casier de suppression atteint environ 50% de capacité, l’équipe des services de site contacte l’équipe de sécurité physique pour coordonner la suppression. Personnel des services de site et un bureau de sécurité supprimez le bac de suppression sécurisé et placez-le dans une zone de stockage sécurisée désignée. Les stratégies et les procédures régissant le traitement des appareils de données pendant la destruction sont régulièrement testées, y compris les procédures pour garantir l’état des machines approuvées pour la destruction.
 

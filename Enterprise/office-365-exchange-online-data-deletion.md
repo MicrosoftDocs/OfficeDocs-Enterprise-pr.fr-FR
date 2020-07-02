@@ -1,7 +1,7 @@
 ---
-title: Suppression des données Exchange Online d’Office 365
-ms.author: robmazz
-author: robmazz
+title: Microsoft 365 suppression des données Exchange Online
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,14 +15,15 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Le mode de traitement des suppressions de données logicielles et logicielles dans Exchange Online.
-ms.openlocfilehash: 72db9dbc0559c165296433fca244d660c1a0f692
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 96d8676ad35bf3cc7ec2b21bdd24650ef90bb1a0
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843635"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998318"
 ---
-# <a name="exchange-online-data-deletion-in-office-365"></a>Suppression de données Exchange Online dans Office 365
+# <a name="exchange-online-data-deletion-in-microsoft-365"></a>Suppression de données Exchange Online dans Microsoft 365
+
 Dans Exchange Online, il existe deux types de suppressions : les suppressions douces et les suppressions matérielles. Cela s’applique aux boîtes aux lettres et aux éléments d’une boîte aux lettres.
 
 ## <a name="soft-deleted-and-hard-deleted-mailboxes"></a>Boîtes aux lettres supprimées (récupérables) et supprimées de manière irréversible

@@ -1,7 +1,7 @@
 ---
-title: Office 365 traitant de l’endommagement des données
-ms.author: robmazz
-author: robmazz
+title: Microsoft 365 traitant de l’endommagement des données
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Une explication de la corruption des données dans Office 365, ainsi que les efforts de prévention et de récupération de Microsoft.
-ms.openlocfilehash: 1477ab4dca0f9126eb04b76b9f8f65ff0b5eefc8
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Une explication de la corruption des données dans Microsoft 365, ainsi que les efforts de prévention et de récupération de Microsoft.
+ms.openlocfilehash: 674f2a3a026c5706f5c3a23db6e2d968ed815656
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844485"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998448"
 ---
-# <a name="dealing-with-data-corruption-in-office-365"></a>Gestion de l’altération des données dans Office 365
+# <a name="dealing-with-data-corruption-in-microsoft-365"></a>Gestion de l’endommagement des données dans Microsoft 365
 
 L’un des aspects les plus délicats de l’exécution d’un service Cloud de grande envergure est la façon de gérer l’altération des données, compte tenu du volume important de données et des systèmes indépendants. La corruption des données peut être causée par :
 
@@ -32,7 +32,7 @@ L’un des aspects les plus délicats de l’exécution d’un service Cloud de 
 - Pirates malveillants et employés mécontents
 - Incidents dans les services externes entraînant une perte de données
 
-Étant donné que la résilience accrue de l’intégrité des données signifie moins d’incidents d’endommagement des données, Microsoft a intégré les mécanismes de protection d’Office 365 pour empêcher la corruption, ainsi que les systèmes et les processus qui nous permettent de récupérer les données le cas échéant. Il existe des vérifications et des processus dans les différentes étapes du processus de publication d’ingénierie afin de renforcer la résistance contre l’altération des données, notamment :
+Étant donné que la résilience accrue de l’intégrité des données signifie moins d’incidents d’endommagement des données, Microsoft a intégré les mécanismes de protection de Microsoft 365 pour empêcher la corruption, ainsi que les systèmes et les processus qui nous permettent de récupérer les données le cas échéant. Il existe des vérifications et des processus dans les différentes étapes du processus de publication d’ingénierie afin de renforcer la résistance contre l’altération des données, notamment :
 
 - Conception du système
 - Structure et organisation du code
@@ -40,4 +40,4 @@ L’un des aspects les plus délicats de l’exécution d’un service Cloud de 
 - Tests d’unité, tests d’intégration et tests système
 - Tests/portails de fils de voyage
 
-Dans les environnements de production Office 365, la réplication d’homologue entre centres de données garantit qu’il y a toujours plusieurs copies dynamiques de toutes les données. Les images et les scripts standard permettent de récupérer les serveurs perdus, et les données répliquées sont utilisées pour restaurer les données client. En raison des contrôles et des processus de résilience des données intégrés, Microsoft conserve uniquement les sauvegardes de la documentation du système d’informations Office 365 (y compris la documentation liée à la sécurité), à l’aide de la réplication intégrée dans SharePoint Online et de notre code interne outil référentiel, dépôt source. La documentation système est stockée dans SharePoint Online, et Source Depot contient des images système et d’application. SharePoint Online et le SAV source utilisent tous deux le contrôle de version et sont répliqués en quasi-temps réel.
+Dans les environnements de production Microsoft 365, la réplication d’homologue entre centres de données garantit qu’il y a toujours plusieurs copies dynamiques de toutes les données. Les images et les scripts standard permettent de récupérer les serveurs perdus, et les données répliquées sont utilisées pour restaurer les données client. En raison des contrôles et des processus de résilience des données intégrés, Microsoft conserve uniquement les sauvegardes de la documentation du système d’information Microsoft 365 (y compris la documentation liée à la sécurité), à l’aide de la réplication intégrée dans SharePoint Online et de notre outil référentiel de code interne, Source Depot. La documentation système est stockée dans SharePoint Online, et Source Depot contient des images système et d’application. SharePoint Online et le SAV source utilisent tous deux le contrôle de version et sont répliqués en quasi-temps réel.

@@ -1,7 +1,7 @@
 ---
 title: Récupérer des éléments supprimés dans une boîte aux lettres utilisateur - Aide aux administrateurs
-ms.author: markjjo
-author: markjjo
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 6/29/2018
 audience: Admin
@@ -18,12 +18,12 @@ ms.assetid: eb15194b-63ec-41b0-8d90-1823d3f558e4
 f1.keywords:
 - NOCSH
 description: 'Cet article s’adresse aux administrateurs. Un utilisateur a-t-il supprimé définitivement des éléments de sa boîte aux lettres Outlook ? L’utilisateur le souhaite à nouveau, mais ne peut pas les récupérer. Vous pouvez récupérer les éléments purgés s’ils n’ont pas été définitivement supprimés de la boîte aux lettres de l’utilisateur. '
-ms.openlocfilehash: 869bef4b801b92d0e48daaec266cb3a705cb577f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d5911167289d448a68fbe65fa6ba3c5cb9c9609b
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845125"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998308"
 ---
 # <a name="recover-deleted-items-in-a-user-mailbox---admin-help"></a>Récupérer des éléments supprimés dans une boîte aux lettres utilisateur - Aide aux administrateurs
 
@@ -38,16 +38,16 @@ Un utilisateur a-t-il supprimé définitivement des éléments de sa boîte aux 
 Voici la procédure à suivre pour restaurer des éléments supprimés dans la boîte aux lettres d’un utilisateur. Quelle est la durée de cette opération ? La première fois peut prendre 20 à 30 minutes pour effectuer toutes les étapes, en fonction du nombre d’éléments que vous essayez de récupérer.
   
 > [!NOTE]
-> Vous devez être un **administrateur Exchange** ou un **administrateur général** dans Office 365 ou être membre du groupe de rôles gestion de l’organisation dans Exchange Online pour effectuer les étapes décrites dans cet article. Pour obtenir plus d’informations, consultez l’article [À propos des rôles d’administrateur Office 365](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d). 
+> Vous devez être **administrateur Exchange** ou **administrateur général** dans Microsoft 365 ou être membre du groupe de rôles gestion de l’organisation dans Exchange Online pour effectuer les étapes décrites dans cet article. Si vous souhaitez en savoir plus, consultez l’article [À propos des rôles d’administrateur Microsoft 365](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d). 
   
 ## <a name="step-1-assign-yourself-ediscovery-permissions"></a>Étape 1 : assignez des autorisations eDiscovery
 <a name="step1"> </a>
 
 La première étape consiste à vous attribuer les autorisations nécessaires dans Exchange Online afin de pouvoir utiliser l’outil de découverte électronique inaltérable pour rechercher la boîte aux lettres d’un utilisateur. Vous ne devez effectuer cette opération qu’une seule fois. Si vous devez rechercher une autre boîte aux lettres à l’avenir, vous pouvez ignorer cette étape.
   
-1. [Where to sign in to Office 365 for business](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4) à l'aide de votre compte scolaire ou professionnel. 
+1. [Où se connecter à Microsoft 365 pour les entreprises](https://support.microsoft.com/office/where-to-sign-into-microsoft-365-for-business-e9eb7d51-5430-4929-91ab-6157c5a050b4) avec votre compte professionnel ou scolaire. 
     
-2. Sélectionnez l’icône ![du lanceur d’applications icône du lanceur](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) d’applications dans Office 365 dans la partie supérieure gauche, puis cliquez sur **administrateur**.
+2. Sélectionnez l’icône du lanceur d’applications ![ icône du lanceur d’applications dans Microsoft 365 ](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) dans la partie supérieure gauche, puis cliquez sur **administrateur**.
     
 3. Dans le volet de navigation de gauche du centre d’administration de Microsoft 365, développez **centres d’administration**, puis cliquez sur **Exchange**.
     
@@ -55,11 +55,11 @@ La première étape consiste à vous attribuer les autorisations nécessaires da
   
 4. Dans le centre d’administration Exchange, cliquez sur **autorisations**, puis cliquez sur **rôles d’administrateur**.
     
-5. Dans l’affichage liste, sélectionnez **gestion**de la découverte, puis ****![cliquez sur modifier](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)l’icône modifier.
+5. Dans l’affichage liste, sélectionnez **gestion**de la découverte, puis cliquez sur **modifier**l' ![ icône modifier ](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) .
     
     ![Ajoutez-vous au groupe de rôles gestion de la découverte dans le centre d’administration Exchange.](media/e5c98e93-d6a0-40c5-a143-bac956eedaa7.png)
   
-6. Dans **groupe de rôles**, **sous membres**, cliquez sur **Ajouter**![une icône](media/8ee52980-254b-440b-99a2-18d068de62d3.gif)ajouter.
+6. Dans **groupe de rôles**, sous **membres**, cliquez sur **Ajouter**une ![ icône Ajouter ](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) .
     
 7. Dans **Sélectionner les membres**, sélectionnez-vous dans la liste des noms, cliquez sur **Ajouter**, puis cliquez sur **OK**.
     
@@ -68,7 +68,7 @@ La première étape consiste à vous attribuer les autorisations nécessaires da
   
 8. Dans **groupe de rôles**, cliquez sur **Enregistrer**.
     
-9. Déconnectez-vous d’Office 365.
+9. Déconnectez-vous de Microsoft 365.
     
     Vous devez vous déconnecter avant de commencer l’étape suivante afin que les nouvelles autorisations prennent effet.
     
@@ -82,19 +82,19 @@ La première étape consiste à vous attribuer les autorisations nécessaires da
 
 Lorsque vous exécutez une recherche de découverte électronique inaltérable, le dossier éléments récupérables de la boîte aux lettres que vous recherchez est automatiquement inclus dans la recherche. Le dossier éléments récupérables est l’emplacement de stockage des éléments supprimés jusqu’à ce qu’ils soient purgés (supprimés définitivement) de la boîte aux lettres. Par conséquent, si un élément n’a pas été purgé, vous devriez pouvoir le trouver à l’aide de l’outil de découverte électronique inaltérable.
   
-1. [Where to sign in to Office 365 for business](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4) à l'aide de votre compte scolaire ou professionnel. 
+1. [Où se connecter à Microsoft 365 pour les entreprises](https://support.microsoft.com/office/where-to-sign-into-microsoft-365-for-business-e9eb7d51-5430-4929-91ab-6157c5a050b4) avec votre compte professionnel ou scolaire. 
     
-2. Sélectionnez l’icône ![du lanceur d’applications icône du lanceur](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) d’applications dans Office 365 dans la partie supérieure gauche, puis cliquez sur **administrateur**.
+2. Sélectionnez l’icône du lanceur d’applications ![ icône du lanceur d’applications dans Microsoft 365 ](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) dans la partie supérieure gauche, puis cliquez sur **administrateur**.
     
 3. Dans le volet de navigation de gauche du centre d’administration de Microsoft 365, développez **administrateur**, puis cliquez sur **Exchange**.
     
-4. Dans le centre d’administration Exchange, cliquez sur **gestion de la conformité**, cliquez sur **blocage &amp; de la découverte électronique**inaltérable, puis cliquez sur **nouvelle**![icône](media/8ee52980-254b-440b-99a2-18d068de62d3.gif)ajouter.
+4. Dans le centre d’administration Exchange, cliquez sur **gestion de la conformité**, cliquez sur ** &amp; blocage de la découverte électronique**inaltérable, puis cliquez sur **nouvelle** ![ icône Ajouter ](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) .
     
     ![Dans le centre d’administration Exchange, sur la page gestion de la conformité, cliquez sur découverte électronique et blocage sur place.](media/9d9ff0f5-b9be-45b8-8b5e-6037a856b0a8.png)
   
 5. Sur la page **nom et description** , tapez un nom pour la recherche (par exemple, le nom de l’utilisateur pour lequel vous récupérez du courrier électronique), une description facultative, puis cliquez sur **suivant**.
     
-6. Dans la page **boîtes aux lettres** , cliquez sur **spécifier les boîtes aux lettres à rechercher**, puis cliquez](media/8ee52980-254b-440b-99a2-18d068de62d3.gif)sur **Ajouter**![une icône.
+6. Dans la page **boîtes aux lettres** , cliquez sur **spécifier les boîtes aux lettres à rechercher**, puis cliquez sur **Ajouter**une ![ icône ](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) .
     
     ![Cliquez sur spécifier les boîtes aux lettres à rechercher pour effectuer une recherche dans une boîte aux lettres specifc](media/83879a40-5e5c-49a8-be3b-c0023d197588.png)
   
@@ -129,26 +129,26 @@ Lorsque vous exécutez une recherche de découverte électronique inaltérable, 
     
     Une fois que vous avez démarré la recherche, Exchange affiche une estimation de la taille totale et du nombre d’éléments qui seront renvoyés par la recherche en fonction des critères que vous avez spécifiés.
     
-11. Sélectionnez la recherche que vous venez de créer et cliquez](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) sur **Actualiser**![l’actualisation pour mettre à jour les informations affichées dans le volet d’informations. Le statut de l' **estimation réussie** indique que la recherche est terminée. Exchange affiche également une estimation du nombre total d’éléments (et leur taille) trouvés par la recherche en fonction des critères de recherche que vous avez spécifiés à l’étape 9. 
+11. Sélectionnez la recherche que vous venez de créer et cliquez sur **Actualiser** ![ ](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) l’actualisation pour mettre à jour les informations affichées dans le volet d’informations. Le statut de l' **estimation réussie** indique que la recherche est terminée. Exchange affiche également une estimation du nombre total d’éléments (et leur taille) trouvés par la recherche en fonction des critères de recherche que vous avez spécifiés à l’étape 9. 
     
 12. Dans le volet d’informations, cliquez sur **aperçu des résultats** de la recherche pour afficher les éléments qui ont été trouvés. Cela peut vous aider à identifier les éléments que vous recherchez. Si vous trouvez les éléments que vous tentez de récupérer, passez à l’étape 4 pour exporter les résultats de la recherche dans un fichier PST. 
     
     ![Cliquez sur Aperçu des résultats de la recherche pour afficher l’élément que vous tentez de récupérer.](media/a2cea921-dafa-45d6-97d4-ae45a226b8d3.png)
   
-13. Si vous ne trouvez pas ce que vous recherchez, vous pouvez modifier vos critères de recherche en sélectionnant la recherche, ****![en cliquant sur](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)modifier icône modifier, puis en cliquant sur **requête de recherche**. Modifiez les critères de recherche, puis réexécutez la recherche.
+13. Si vous ne trouvez pas ce que vous recherchez, vous pouvez modifier vos critères de recherche en sélectionnant la recherche, en cliquant sur **modifier** ![ icône modifier ](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) , puis en cliquant sur **requête de recherche**. Modifiez les critères de recherche, puis réexécutez la recherche.
     
 [Revenir au début](recover-deleted-items-in-a-mailbox.md)
   
 ## <a name="optional-step-3-copy-the-search-results-to-a-discovery-mailbox"></a>Module Étape 3 : copier les résultats de la recherche dans une boîte aux lettres de découverte
 <a name="step3"> </a>
 
-Si vous ne parvenez pas à trouver d’éléments en prévisualisant les résultats de la recherche ou si vous souhaitez voir quels éléments se trouvent dans le dossier éléments récupérables de l’utilisateur, vous pouvez copier les résultats de la recherche dans une boîte aux lettres spéciale (appelée boîte aux lettres de découverte), puis ouvrir cette boîte aux lettres dans Outlook sur le Web t o Affichez les éléments réels. La meilleure raison de copier les résultats de la recherche est de vous permettre d’afficher les éléments dans le dossier éléments récupérables de l’utilisateur. Plus vraisemblablement, l’élément que vous tentez de récupérer se trouve dans le sous-dossier purges. 
+Si vous ne parvenez pas à trouver d’éléments en prévisualisant les résultats de la recherche ou si vous souhaitez voir quels éléments se trouvent dans le dossier éléments récupérables de l’utilisateur, vous pouvez copier les résultats de la recherche dans une boîte aux lettres spéciale (appelée boîte aux lettres de découverte), puis ouvrir cette boîte aux lettres dans Outlook sur le Web pour afficher les éléments réels. La meilleure raison de copier les résultats de la recherche est de vous permettre d’afficher les éléments dans le dossier éléments récupérables de l’utilisateur. Plus vraisemblablement, l’élément que vous tentez de récupérer se trouve dans le sous-dossier purges. 
   
-1. Dans le centre d’administration Exchange, accédez à **gestion** \> de la conformité de la **découverte électronique &amp; **inaltérable.
+1. Dans le centre d’administration Exchange, accédez à **gestion de la conformité** \> **de &amp; la découverte électronique**inaltérable.
     
 2. Dans la liste des recherches, sélectionnez la recherche que vous avez créée à l’étape 2.
     
-3. Cliquez **sur**![recherche](media/c94e8591-7044-4650-a0d1-c57c0633ab4f.png)de recherche, puis sur **copier les résultats** de la recherche dans la liste déroulante. 
+3. Cliquez **sur** ![ recherche ](media/c94e8591-7044-4650-a0d1-c57c0633ab4f.png) de recherche, puis **sur copier les résultats** de la recherche dans la liste déroulante. 
     
     ![Cliquez sur Rechercher, puis sur copier les résultats de la recherche.](media/7888df82-94b4-4e44-8a53-f66854dc7c86.png)
   
@@ -161,13 +161,13 @@ Si vous ne parvenez pas à trouver d’éléments en prévisualisant les résult
     ![Copier les résultats de la recherche dans la boîte aux lettres de découverte par défaut](media/36e8ef47-0035-4982-9ed6-426719c5f9ec.png)
   
     > [!NOTE]
-    > La boîte aux lettres de découverte est une boîte aux lettres de découverte par défaut qui est créée automatiquement dans votre organisation Office 365. 
+    > La boîte aux lettres de découverte est une boîte aux lettres de découverte par défaut qui est automatiquement créée dans votre organisation Microsoft 365. 
   
 6. De retour dans la page **copier les résultats de recherche** , cliquez sur **copier** pour lancer le processus de copie des résultats de la recherche dans la boîte aux lettres de découverte. 
     
     ![Cliquez sur copier pour copier les résultats de la recherche dans la boîte aux lettres de découverte.](media/71307a9d-f7a1-4e01-ae37-1d49040cc3fd.png)
   
-7. Cliquez sur **Actualiser**![l’actualisation](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) pour mettre à jour les informations sur l’état de copie affiché dans le volet d’informations. 
+7. Cliquez sur **Actualiser** ![ ](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) l’actualisation pour mettre à jour les informations sur l’état de copie affiché dans le volet d’informations. 
     
 8. Une fois la copie terminée, cliquez sur **ouvrir** pour ouvrir la boîte aux lettres de découverte pour afficher les résultats de la recherche. 
     
@@ -189,7 +189,7 @@ Si vous ne parvenez pas à trouver d’éléments en prévisualisant les résult
 
 Une fois que vous avez trouvé l’élément que vous tentez de récupérer pour un utilisateur, l’étape suivante consiste à exporter les résultats de la recherche que vous avez exécutée à l’étape 2 vers un fichier PST. L’utilisateur utilisera ce fichier PST à l’étape suivante pour restaurer l’élément supprimé dans sa boîte aux lettres.
   
-1. Dans le centre d’administration Exchange, accédez à **gestion** \> de la conformité de la **découverte électronique &amp; **inaltérable.
+1. Dans le centre d’administration Exchange, accédez à **gestion de la conformité** \> **de &amp; la découverte électronique**inaltérable.
     
 2. Dans la liste des recherches, sélectionnez la recherche que vous avez créée à l’étape 2.
     
@@ -224,7 +224,7 @@ La dernière étape à effectuer consiste à envoyer le fichier PST exporté à 
     
 1. Dans l’Explorateur Windows ou l’Explorateur de fichiers, accédez au fichier PST.
     
-2. Cliquez avec le bouton droit sur le fichier, puis sélectionnez **Envoyer vers** \> le **dossier compressé (zippé)**. Windows crée un fichier zip et lui attribue un nom identique à celui du fichier PST.
+2. Cliquez avec le bouton droit sur le fichier, puis sélectionnez **Envoyer vers** le \> **dossier compressé (zippé)**. Windows crée un fichier zip et lui attribue un nom identique à celui du fichier PST.
     
 3. Joignez le fichier PST compressé à un message électronique et envoyez-le à l’utilisateur, qui peut ensuite décompresser le fichier en cliquant simplement dessus.
     
@@ -239,7 +239,7 @@ Vous devez utiliser l’application de bureau Outlook pour restaurer un élémen
   
 1. Dans Outlook 2013 ou Outlook 2016, cliquez sur l’onglet **fichier** . 
     
-2. Cliquez **sur &amp; ouvrir l’exportation**, puis sur **ouvrir le fichier de données Outlook**.
+2. Cliquez sur **ouvrir l' &amp; exportation**, puis sur **ouvrir le fichier de données Outlook**.
     
 3. Naviguez jusqu’à l’emplacement où vous avez enregistré le fichier PST que votre administrateur a envoyé.
     
@@ -256,7 +256,7 @@ Vous devez utiliser l’application de bureau Outlook pour restaurer un élémen
     > [!TIP]
     > Recherchez dans le dossier purges l’élément que vous souhaitez récupérer. Il s’agit d’un dossier masqué dans lequel les éléments purgés sont déplacés vers. Il est probable que l’élément récupéré par votre administrateur se trouve dans ce dossier. 
   
-6. Cliquez avec le bouton droit sur l’élément à récupérer, puis cliquez sur **déplacer** \> un **autre dossier**.
+6. Cliquez avec le bouton droit sur l’élément à récupérer, puis cliquez sur **déplacer** un \> **autre dossier**.
     
     ![Cliquez sur déplacer, puis sélectionnez autre dossier.](media/090063df-2aa0-444a-8e47-abd6fe6cf7a8.png)
   
@@ -264,7 +264,7 @@ Vous devez utiliser l’application de bureau Outlook pour restaurer un élémen
     
     **Conseil :** Pour récupérer d’autres types d’éléments, effectuez l’une des opérations suivantes : 
     
-  - Pour récupérer un élément de calendrier, cliquez dessus avec le bouton droit, puis cliquez sur **déplacer** \> **autre** \> **calendrier**de dossier.
+  - Pour récupérer un élément de calendrier, cliquez dessus avec le bouton droit, puis cliquez sur **déplacer** un \> **autre** \> **calendrier**de dossier.
     
   - Pour récupérer un contact, cliquez dessus avec le bouton droit, puis cliquez sur **déplacer** \> **les autres** \> **contacts**de dossier.
     

@@ -1,7 +1,7 @@
 ---
-title: Résilience de données Exchange 365 Office
-ms.author: robmazz
-author: robmazz
+title: Résilience des données Exchange Online dans Microsoft 365
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Explication des différents aspects de la résilience des données dans Exchange Online et Office 365.
-ms.openlocfilehash: 73b217f7b85722bca10cdf1abbe10c3a32922e9f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Une explication des différents aspects de la résilience des données dans Exchange Online et Microsoft 365.
+ms.openlocfilehash: 1af8acc10f9d45055d6575e2dfcc45451b6eaf6a
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844475"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998735"
 ---
-# <a name="exchange-online-data-resiliency-in-office-365"></a>Résilience des données Exchange Online dans Office 365
+# <a name="exchange-online-data-resiliency-in-microsoft-365"></a>Résilience des données Exchange Online dans Microsoft 365
 
 ## <a name="introduction"></a>Introduction
 Il existe deux types d’endommagement pouvant avoir une incidence sur une base de données Exchange : la corruption physique, généralement causée par du matériel (en particulier, des problèmes de matériel de stockage) et une altération logique, qui se produit en raison d’autres facteurs. En règle générale, il existe deux types de corruption logique pouvant se produire dans une base de données Exchange : 
@@ -31,7 +31,7 @@ Il existe deux types d’endommagement pouvant avoir une incidence sur une base 
 
 Exchange Online effectue plusieurs contrôles de cohérence sur les fichiers journaux répliqués lors de l’inspection et de la relecture des journaux. Ces vérifications de cohérence empêchent la réplication physique du système. Par exemple, lors de l’inspection du journal, il existe une vérification de l’intégrité physique qui vérifie le fichier journal et vérifie que le checksum enregistré dans le fichier journal correspond à la somme de contrôle générée en mémoire. En outre, l’en-tête du fichier journal est examiné pour s’assurer que la signature du fichier journal enregistré dans l’en-tête du journal correspond à celle du fichier journal. Lors de la relecture du journal, le fichier journal est en cours d’examen. Par exemple, l’en-tête de base de données contient également la signature de journal qui est comparée à la signature du fichier journal pour s’assurer qu’elles correspondent. 
 
-La protection contre la corruption des données de boîte aux lettres dans Exchange Online est obtenue à l’aide de la protection des données natives Exchange, une stratégie de résilience qui exploite la réplication au niveau de l’application sur plusieurs serveurs et plusieurs centres de données, ainsi que d’autres fonctionnalités qui permettent de protéger les données contre toute perte de données ou pour d’autres raisons. Ces fonctionnalités incluent les fonctionnalités natives qui sont gérées par Microsoft ou l’application Exchange Online proprement dite, telles que :
+La protection contre la corruption des données de boîte aux lettres dans Exchange Online est obtenue à l’aide de la protection des données natives d’Exchange, une stratégie de résilience qui tire parti de la réplication au niveau de l’application sur plusieurs serveurs et plusieurs centres de données, ainsi que d’autres fonctionnalités permettant de protéger les données contre la perte de données en raison d’une corruption ou autres. Ces fonctionnalités incluent les fonctionnalités natives qui sont gérées par Microsoft ou l’application Exchange Online proprement dite, telles que :
 
 - [Groupes de disponibilité des données](https://docs.microsoft.com/exchange/back-up-email)
 - Correction de bit unique 
@@ -48,11 +48,11 @@ Pour plus d’informations sur les fonctionnalités natives mentionnées ci-dess
 - [Rétention des éléments supprimés et boîtes aux lettres supprimées de manière récupérable (toutes les deux activées par défaut)](https://docs.microsoft.com/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes) 
 
 ## <a name="database-availability-groups"></a>Groupes de disponibilité de base de données 
-Chaque base de données de boîtes aux lettres dans Office 365 est hébergée dans un [groupe de disponibilité de base de données (DAG)](https://docs.microsoft.com/exchange/back-up-email) et répliquée dans des centres de données géographiquement distincts au sein de la même région. La configuration la plus courante est de quatre copies de bases de données dans quatre centres de données ; Toutefois, certaines régions ont moins de centres de données (les bases de données sont répliquées sur trois centres de données en Inde et deux centres de données en Australie et au Japon). Dans tous les cas, toutes les bases de données de boîtes aux lettres disposent de quatre copies qui sont distribuées entre plusieurs centres de données, garantissant ainsi la protection des données de boîte aux lettres contre les défaillances logicielles, matérielles et même dans les centres de données. 
+Chaque base de données de boîtes aux lettres dans Microsoft 365 est hébergée dans un [groupe de disponibilité de base de données (DAG)](https://docs.microsoft.com/exchange/back-up-email) et répliquée dans des centres de données géographiquement distincts au sein de la même région. La configuration la plus courante est de quatre copies de bases de données dans quatre centres de données ; Toutefois, certaines régions ont moins de centres de données (les bases de données sont répliquées sur trois centres de données en Inde et deux centres de données en Australie et au Japon). Dans tous les cas, toutes les bases de données de boîtes aux lettres disposent de quatre copies qui sont distribuées entre plusieurs centres de données, garantissant ainsi la protection des données de boîte aux lettres contre les défaillances logicielles, matérielles et même dans les centres de données. 
 
 Dans ces quatre exemplaires, trois d’entre eux sont configurés comme hautement disponibles. La quatrième copie est configurée en tant que [copie de base de données retardée](https://docs.microsoft.com/Exchange/high-availability/manage-ha/activate-lagged-db-copies). La copie de base de données retardée n’est pas conçue pour la récupération de boîte aux lettres individuelle ou la récupération des éléments de boîte aux lettres. Son objectif est de fournir un mécanisme de récupération pour les rares événements d’altération logique à l’échelle du système. 
 
-Les copies de base de données retardée dans Exchange Online sont configurées avec un retard de relecture du fichier journal de sept jours. De plus, le gestionnaire de décalage de relecture Exchange est activé pour permettre la lecture du fichier journal dynamique pour les copies retardée afin de permettre aux copies de base de données retardée de se réparer automatiquement et de gérer la croissance des fichiers journaux. Bien que les copies de base de données retardée soient utilisées dans Exchange Online, il est important de comprendre qu’il ne s’agit pas d’une sauvegarde à un point dans le temps garantie. Les copies de base de données retardée dans Exchange Online ont un seuil de disponibilité, généralement d’environ 90%, en raison des périodes au cours desquelles le disque contenant une copie retardée est perdu suite à une défaillance du disque, la copie retardée devenant ainsi une copie hautement disponible (en raison de la lecture automatique), et pendant les périodes où la copie de base de données retardée reconstruit la file d’attente de relecture de journal. 
+Les copies de base de données retardée dans Exchange Online sont configurées avec un retard de relecture du fichier journal de sept jours. De plus, le gestionnaire de décalage de relecture Exchange est activé pour permettre la lecture du fichier journal dynamique pour les copies retardée afin de permettre aux copies de base de données retardée de se réparer automatiquement et de gérer la croissance des fichiers journaux. Bien que les copies de base de données retardée soient utilisées dans Exchange Online, il est important de comprendre qu’il ne s’agit pas d’une sauvegarde à un point dans le temps garantie. Les copies de base de données retardée dans Exchange Online ont un seuil de disponibilité, généralement d’environ 90%, en raison des périodes au cours desquelles le disque contenant une copie retardée est perdu suite à une défaillance du disque, la copie retardée devenant une copie hautement disponible (en raison d’une lecture automatique), ainsi que les périodes où la copie de base de données retardée recrée la file 
 
 ## <a name="transport-resilience"></a>Résilience de transport 
 Exchange Online inclut deux fonctionnalités principales de résilience de transport : redondance des clichés instantanés et sécurité du réseau. La redondance des clichés instantanés conserve une copie redondante d’un message en transit. Safety net conserve une copie redondante d’un message une fois que le message a bien été remis. 
@@ -78,7 +78,7 @@ La restauration d’une seule page, appelée mise à *jour corrective de page*, 
 En cas de corruption d’une copie passive de la base de données, y compris une copie de base de données retardée, étant donné que ces copies sont toujours derrière leur copie active, il est toujours sûr de copier n’importe quelle page de la copie active vers une copie passive. Une copie de base de données passive est hautement disponible, de sorte que lors du processus de mise à jour corrective de page, la relecture des journaux est suspendue, mais la copie du journal continue. La copie de base de données passive récupère une copie de la page endommagée à partir de la copie active, attend que le fichier journal correspondant à l’exigence de génération de journal maximale requise soit copié et inspecté, puis il corrige la page endommagée. Une fois que la page a été corrigée, relancer la relecture du journal. Le processus est le même pour la copie de base de données retardée, sauf que la base de données retardée commence par relire tous les fichiers journaux nécessaires pour obtenir un État correctif. 
 
 ## <a name="mailbox-replication-service"></a>Service de réplication de boîte aux lettres 
-Le transfert de boîtes aux lettres est un élément clé de la gestion d’un service de messagerie à grande échelle. Il existe toujours des technologies et des mises à niveau matérielles et de versions mises à jour pour traiter, par conséquent, d’un système robuste et limité qui permet à nos ingénieurs d’effectuer ce travail tout en gardant la boîte aux lettres transparente pour les utilisateurs (en s’assurant de rester en ligne). tout au long du processus) est essentielle et assurez-vous que le processus évolue correctement lorsque les boîtes aux lettres sont plus volumineuses et plus volumineuses. 
+Le transfert de boîtes aux lettres est un élément clé de la gestion d’un service de messagerie à grande échelle. Il existe toujours des technologies et des mises à niveau matérielles et de versions mises à jour pour traiter, ainsi qu’un système limité qui permet à nos ingénieurs de réaliser ce travail tout en garantissant que le déplacement des boîtes aux lettres est transparent pour les utilisateurs (en veillant à rester en ligne tout au long du processus) est essentiel et en s’assurant que le processus évolue en douceur. 
 
 Le service de réplication de boîtes aux lettres Exchange est chargé de transférer les boîtes aux lettres entre les bases de données. Pendant le déplacement, Mme effectue une vérification de cohérence sur tous les éléments de la boîte aux lettres. Si un problème de cohérence est détecté, Mme corrige le problème ou ignore les éléments endommagés, supprimant ainsi la corruption de la boîte aux lettres. 
 
@@ -97,5 +97,5 @@ Exchange Online tire parti de plusieurs avantages ReFS :
 - Prise en charge d’autres fonctionnalités utilisées par Exchange Online, telles que le chiffrement BitLocker. 
 
 Exchange Online tire également parti des autres fonctionnalités ReFS : 
-- **Intégrité (flux d’intégrité)** : ReFS stocke les données d’une manière qui les protège contre de nombreuses erreurs courantes pouvant entraîner une perte de données. La recherche Office 365 utilise des flux d’intégrité pour détecter les corruptions de disque et les checksum du contenu de fichier. La fonctionnalité réduit également les incidents de corruption causés par des « écritures déchirées » (lorsqu’une opération d’écriture ne se termine pas suite à des pannes de courant, etc.). 
+- **Intégrité (flux d’intégrité)** : ReFS stocke les données d’une manière qui les protège contre de nombreuses erreurs courantes pouvant entraîner une perte de données. Microsoft 365 Search utilise des flux d’intégrité pour détecter la corruption des disques et effectuer des checksums du contenu de fichier. La fonctionnalité réduit également les incidents de corruption causés par des « écritures déchirées » (lorsqu’une opération d’écriture ne se termine pas suite à des pannes de courant, etc.). 
 - **Availability (valeur_rés)** -ReFS hiérarchise la disponibilité des données. Traditionnellement, les systèmes de fichiers étaient souvent exposés à des données endommagées qui nécessiteraient que le système soit mis hors connexion pour réparation. Bien que rare, en cas d’endommagement, ReFS implémente Salvage, une fonctionnalité qui supprime les données endommagées de l’espace de noms sur un volume actif et garantit que les données correctes ne sont pas affectées par des données endommagées non réparables. Le fait d’appliquer la fonctionnalité de récupération et d’isoler les données endommagées pour les volumes de base de données Exchange Online signifie que nous pouvons conserver les bases de données non affectées sur un volume endommagé sain entre le moment de l’endommagement et de la réparation. Cela augmente la disponibilité des bases de données qui seraient normalement affectées par de tels problèmes d’endommagement du disque. 

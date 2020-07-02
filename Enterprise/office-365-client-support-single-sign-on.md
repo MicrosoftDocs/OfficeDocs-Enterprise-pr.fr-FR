@@ -1,7 +1,7 @@
 ---
-title: Prise en charge des applications clientes Office 365 — authentification unique
-ms.author: robmazz
-author: robmazz
+title: Prise en charge des applications clientes Microsoft 365 — authentification unique
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,17 +14,17 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: Prise en charge des applications clientes Office 365 pour l’authentification unique.
-ms.openlocfilehash: 8d6ba1701d9981bb5833bd6cf6ace641d5a27181
-ms.sourcegitcommit: 576c3dbdef535f952a861197dea5348908da9504
+description: Prise en charge des applications clientes Microsoft 365 pour l’authentification unique.
+ms.openlocfilehash: beb0ae405b9c365da0faa64e31a36f7b571ce1aa
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44619330"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998512"
 ---
-# <a name="office-365-client-app-support--single-sign-on"></a>Prise en charge des applications clientes Office 365 — authentification unique
+# <a name="microsoft-365-client-app-support--single-sign-on"></a>Prise en charge des applications clientes Microsoft 365 — authentification unique
 
-*Cet article est valable pour Office 365 Entreprise et Microsoft 365 Entreprise*.
+*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
 
 L’authentification unique (SSO) ajoute de la sécurité et de la commodité lorsque vos utilisateurs se connectent à des applications dans Azure Active Directory (Azure AD). Avec l’authentification unique, les utilisateurs se connectent une seule fois avec un compte pour accéder aux appareils joints au domaine, aux ressources de l’entreprise, aux applications SaaS (Software as a service) et aux applications Web.
 
@@ -39,7 +39,7 @@ En savoir plus sur l' [authentification unique](https://docs.microsoft.com/azure
  - iOS<sup>1</sup>
  - macOS<sup>4</sup>
 
-Pour plus d’informations sur la prise en charge de la plateforme dans Office 365, voir [Configuration requise pour office 365](https://products.office.com/office-system-requirements).
+Pour plus d’informations sur la prise en charge de la plateforme dans Microsoft 365, voir [System Requirements for microsoft 365](https://products.office.com/office-system-requirements).
 
 ## <a name="supported-clients"></a>Clients pris en charge
 

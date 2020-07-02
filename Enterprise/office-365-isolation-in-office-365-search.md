@@ -1,7 +1,7 @@
 ---
-title: Isolation du client Office 365 dans Office 365 Search
-ms.author: robmazz
-author: robmazz
+title: Isolation du client dans Microsoft 365 Search
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 'Résumé : explication de l’isolation du client dans Office 365 Search.'
-ms.openlocfilehash: 9583b923abdb87140863fad8cfc7ad606df6e979
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: 'Résumé : explication de l’isolation du client dans Microsoft 365 Search.'
+ms.openlocfilehash: 2c57b5610fd1a59f2cff2001981e77e354226452
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844415"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998254"
 ---
-# <a name="tenant-isolation-in-office-365-search"></a>Isolation du client dans Office 365 Search
+# <a name="tenant-isolation-in-microsoft-365-search"></a>Isolation du client dans Microsoft 365 Search
 
 La recherche SharePoint Online utilise un modèle de séparation des clients qui équilibre l’efficacité des structures de données partagées avec une protection contre la fuite d’informations entre les locataires. Ce modèle empêche les fonctionnalités de recherche de :
 
@@ -56,7 +56,7 @@ L’expression de préfixe d’ID de client ne se produit que dans l’index de 
 
 La recherche contrôle l’accès aux documents via des ACL qui sont enregistrés dans l’index de recherche. Chaque élément est indexé avec un ensemble de termes dans un champ de liste de contrôle d’accès spécial. Le champ ACL contient un terme par groupe ou utilisateur qui peut afficher le document. Chaque requête est complétée par une liste de termes d’entrée de contrôle d’accès (ACE), un pour chaque groupe auquel l’utilisateur authentifié appartient.
 
-Par exemple, une requête comme «<*guid*>. *foo et tenantID*: <*GUID*> « devient : » <*GUID*>. *foo et tenantID*: <*GUID*> *et* (*docACL :*<*ace1*> *ou docACL*: <*Ace2*> *ou docACL*: <*ACE3*> *...*) "
+Par exemple, une requête comme «<*guid*>. *foo et tenantID*: <*GUID*> « devient : » <*GUID*>. *foo et tenantID*: <*GUID* >  *et* (*docACL :* < *ace1* >  *ou docACL*: <*Ace2* >  *ou docACL*: <*ACE3* >  *...*) "
 
 Étant donné que les identificateurs d’utilisateurs et de groupes, ainsi que les ACE, sont uniques, ce qui offre un niveau de sécurité supplémentaire entre les clients pour les documents qui ne sont visibles que par certains utilisateurs. Il en est de même pour l’ACE spéciale « tout le monde sauf les utilisateurs externes » qui accorde l’accès aux utilisateurs réguliers dans le client. Toutefois, étant donné que les ACE pour « tout le monde » sont les mêmes pour tous les clients, la séparation des clients pour les documents publics dépend du filtrage de l’ID de client. Les entrées ACE refusées sont également prises en charge. L’augmentation de requête ajoute une clause qui supprime un document du résultat lorsqu’il existe une correspondance avec une ACE Deny.
 

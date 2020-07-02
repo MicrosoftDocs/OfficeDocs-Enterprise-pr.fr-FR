@@ -18,19 +18,17 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 'Résumé : décrit les considérations relatives à la capacité réseau, aux accélérateurs de réseau étendu et aux périphériques d’équilibrage de charge utilisés pour se connecter à Office 365.'
-ms.openlocfilehash: 9776611aa64f8783a22252a2c4182e63bda1093a
-ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
+ms.openlocfilehash: 5015a146f92a32bd0200088517b6673ae00f8f64
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419372"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998633"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Planifier les périphériques réseau qui se connectent aux services Office 365
 
-*Cet article est valable pour Office 365 Entreprise et Microsoft 365 Entreprise*.
+*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
   
-**Résumé**: décrit les considérations relatives à la capacité réseau, aux accélérateurs de réseau étendu et aux périphériques d’équilibrage de charge utilisés pour se connecter à Office 365.
-
 Certains matériels réseau peuvent avoir des limitations quant au nombre de sessions simultanées prises en charge. Pour les organisations qui possèdent plus de 2 000 utilisateurs, nous recommandons qu’ils surveillent leurs périphériques réseau pour s’assurer qu’ils sont capables de gérer le trafic de service 365 Office supplémentaire. Le logiciel de surveillance SNMP (simple Network Management Protocol) peut vous aider à effectuer cette opération.
 
 ||

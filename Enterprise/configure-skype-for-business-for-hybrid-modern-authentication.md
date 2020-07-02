@@ -16,16 +16,16 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: L’authentification moderne est une méthode de gestion des identités qui offre une authentification et une autorisation utilisateur plus sécurisées, est disponible pour Skype entreprise Server en local et Exchange Server en local, ainsi qu’hybrides Skype entreprise mixtes.
-ms.openlocfilehash: de5063da9eed03e2cd455b79b3a2d1c2f671ad1e
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: bd287bc768aa43c95bc073892b79b7f5aed969df
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840721"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997430"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Comment configurer Skype Entreprise en local pour utiliser l’authentification moderne hybride
 
-*Cet article est valable pour Office 365 Entreprise et Microsoft 365 Entreprise*.
+*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
 
 L’authentification moderne est une méthode de gestion des identités qui offre une authentification et une autorisation utilisateur plus sécurisées, est disponible pour Skype entreprise Server en local et Exchange Server en local, ainsi qu’hybrides Skype entreprise mixtes.
   
@@ -33,15 +33,15 @@ L’authentification moderne est une méthode de gestion des identités qui offr
   
  **Avant de commencer**, j’appelle :
   
-- MA de \> l’authentification moderne
+- MA de l’authentification moderne \>
 
-- HMA d’authentification \> moderne hybride
+- HMA d’authentification moderne hybride \>
 
 - Exch Exchange sur site \>
 
 - Exchange Online \> exo
 
-- SFB locale \> Skype entreprise
+- SFB locale Skype entreprise \>
 
 - et Skype entreprise Online \> SFBO
 
@@ -125,9 +125,9 @@ Suivez les instructions ci-dessous : [procédure de configuration d’Exchange 
 
 2. Exécutez cette commande, en local, pour obtenir la liste des URL de service Web SFB.
 
-   Notez que le AppPrincipalId commence par `00000004`. Cela correspond à Skype entreprise online.
+   Notez que le AppPrincipalId commence par `00000004` . Cela correspond à Skype entreprise online.
 
-   Notez (et capture d’écran pour une comparaison ultérieure) la sortie de cette commande, qui inclura une URL SE et WS, mais qui se composent essentiellement `00000004-0000-0ff1-ce00-000000000000/`de noms principaux de service qui commencent par.
+   Notez (et capture d’écran pour une comparaison ultérieure) la sortie de cette commande, qui inclura une URL SE et WS, mais qui se composent essentiellement de noms principaux de service qui commencent par `00000004-0000-0ff1-ce00-000000000000/` .
 
 ```powershell
 Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 | Select -ExpandProperty ServicePrincipalNames
@@ -144,7 +144,7 @@ $x.ServicePrincipalnames.Add("https://lyncwebext01.contoso.com/")
 Set-MSOLServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
 ```
   
-4. Vérifiez que vos nouveaux enregistrements ont été ajoutés en exécutant de nouveau la commande **Get-MsolServicePrincipal** à partir de l’étape 2 et en examinant la sortie. Comparez la liste/capture d’écran de l’avant à la nouvelle liste de noms principaux de vente (vous pouvez également créer une capture d’écran de la nouvelle liste pour vos enregistrements). Si vous avez réussi, vous verrez les deux nouvelles URL dans la liste. À l’aide de notre exemple, la liste des SPN inclut désormais les URL https://lyncwebint01.contoso.com spécifiques https://lyncwebext01.contoso.com/et.
+4. Vérifiez que vos nouveaux enregistrements ont été ajoutés en exécutant de nouveau la commande **Get-MsolServicePrincipal** à partir de l’étape 2 et en examinant la sortie. Comparez la liste/capture d’écran de l’avant à la nouvelle liste de noms principaux de vente (vous pouvez également créer une capture d’écran de la nouvelle liste pour vos enregistrements). Si vous avez réussi, vous verrez les deux nouvelles URL dans la liste. À l’aide de notre exemple, la liste des SPN inclut désormais les URL spécifiques https://lyncwebint01.contoso.com et https://lyncwebext01.contoso.com/ .
 
 ### <a name="create-the-evosts-auth-server-object"></a>Créer l’objet serveur d’authentification EvoSTS
 
@@ -170,9 +170,9 @@ Pour tester que la haute-dernière fonctionne après l’avoir activée, déconn
   
 Vous devez également vérifier les « informations de configuration » pour les clients Skype entreprise pour une « autorité OAuth ». Pour effectuer cette action sur votre ordinateur client, maintenez la touche CTRL enfoncée simultanément en cliquant avec le bouton droit sur l’icône Skype entreprise dans le bac de notification Windows. Cliquez sur **informations de configuration** dans le menu qui s’affiche. Dans la fenêtre « informations de configuration de Skype entreprise » qui s’affichent sur le bureau, recherchez les éléments suivants :
   
-![Les informations de configuration d’un client Skype entreprise qui utilisent l’authentification moderne indiquent une URL d’autorisation OAUTH Lync https://login.windows.net/common/oauth2/authorizeet EWS de.](media/4e54edf5-c8f8-4e7f-b032-5d413b0232de.png)
+![Les informations de configuration d’un client Skype entreprise qui utilisent l’authentification moderne indiquent une URL d’autorisation OAUTH Lync et EWS de https://login.windows.net/common/oauth2/authorize .](media/4e54edf5-c8f8-4e7f-b032-5d413b0232de.png)
   
-Vous devez également maintenir la touche CTRL enfoncée en même temps que vous cliquez avec le bouton droit sur l’icône du client Outlook (également dans le bac Windows notifications) et cliquez sur « état de la connexion ». Recherchez l’adresse SMTP du client par rapport à un type d’authentification « porteur\*», qui représente le jeton du porteur utilisé dans OAuth.
+Vous devez également maintenir la touche CTRL enfoncée en même temps que vous cliquez avec le bouton droit sur l’icône du client Outlook (également dans le bac Windows notifications) et cliquez sur « état de la connexion ». Recherchez l’adresse SMTP du client par rapport à un type d’authentification « porteur \* », qui représente le jeton du porteur utilisé dans OAuth.
   
 ## <a name="related-articles"></a>Articles connexes
 

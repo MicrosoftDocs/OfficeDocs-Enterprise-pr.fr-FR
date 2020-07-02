@@ -13,19 +13,17 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Architecture
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
-description: 'Résumé : Les solutions SharePoint 2013 peuvent être hébergées sur des machines virtuelles Microsoft Azure. Découvrez quels types de solution sont adaptés et comment configurer Microsoft Azure pour en héberger une.'
-ms.openlocfilehash: 62a3668fe231e8cb5d60964a3325cc200126df12
-ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
+description: 'Summary: SharePoint 2013 solutions can be hosted in Microsoft Azure virtual machines. Learn which type of solutions are a good fit and how to set up Microsoft Azure to host one.'
+ms.openlocfilehash: fee388f56faf2b30534d9a56926d9d62a176df19
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43793737"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997891"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>Architectures Microsoft Azure pour SharePoint 2013
 
- **Résumé :** Les solutions SharePoint 2013 peuvent être hébergées sur des machines virtuelles Microsoft Azure. Découvrez quels types de solution sont adaptés et comment configurer Microsoft Azure pour en héberger une.
-  
-Azure est un environnement propice à l'hébergement d'une solution SharePoint Server 2013. Dans la plupart des cas, nous vous recommandons Office 365, mais une batterie de serveurs SharePoint Server hébergée dans Azure peut être une bonne option pour des solutions spécifiques. Cet article explique comment créer des solutions SharePoint adaptées à la plateforme Azure. Les deux solutions spécifiques suivantes sont utilisées comme exemples :
+Azure est un environnement propice à l'hébergement d'une solution SharePoint Server 2013. Dans la plupart des cas, nous recommandons Microsoft 365, mais une batterie de serveurs SharePoint Server hébergée dans Azure peut être une option intéressante pour des solutions spécifiques. Cet article explique comment créer des solutions SharePoint adaptées à la plateforme Azure. Les deux solutions spécifiques suivantes sont utilisées comme exemples :
   
 - [Récupération d'urgence SharePoint Server 2013 dans Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
     
@@ -33,28 +31,28 @@ Azure est un environnement propice à l'hébergement d'une solution SharePoint S
     
 ## <a name="recommended-sharepoint-solutions-for-azure-infrastructure-services"></a>Solutions SharePoint recommandées pour la solution Azure Infrastructure Services
 
-Les services d'infrastructure Azure sont une option intéressante pour l'hébergement de solutions SharePoint. Certaines solutions sont plus adaptées à cette plateforme que d'autres. Le tableau suivant présente les solutions recommandées.
+Azure infrastructure services is a compelling option for hosting SharePoint solutions. Some solutions are a better fit for this platform than others. The following table shows recommended solutions.
   
 |**Solution**|**Pourquoi cette solution est recommandée pour Azure**|
 |:-----|:-----|
 |Environnements de test et de développement  <br/> |Il est facile de créer et de gérer ces environnements.  <br/> |
-|Récupération d'urgence de batteries de serveurs SharePoint locales sur Azure  <br/> |**Centre de données secondaire hébergé** Utilisez Azure au lieu d'investir dans un centre de données secondaire dans une autre région. <br/> **Environnements de récupération d'urgence à moindre coût** Tenez à jour et payez pour moins de ressources qu'un environnement de récupération d'urgence local. Le nombre de ressources dépend de l'environnement de récupération d'urgence choisi : reprise progressive, secours semi-automatique ou serveur de secours.<br/> **Plateforme plus flexible** En cas d'incident, augmentez facilement la taille des instances de votre batterie SharePoint de récupération pour répondre aux exigences de charge. Diminuez la taille des instances lorsque vous n'avez plus besoin des ressources.<br/> Voir [Récupération d'urgence SharePoint Server 2013 dans Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md).  <br/> |
-|Sites accessibles sur Internet qui utilisent des fonctionnalités et une échelle non disponibles dans Office 365  <br/> |**Concentrez vos efforts** Concentrez-vous sur le développement d'un site de qualité plutôt que sur la construction d'une infrastructure. <br/> **Tirez parti de l'élasticité dans Azure** Redimensionnez la batterie de serveurs pour qu'elle soit adaptée à la demande en ajoutant de nouveaux serveurs et payez uniquement pour les ressources dont vous avez besoin. L'allocation de machine dynamique n'est pas prise en charge (mise à l'échelle automatique).<br/> **Utilisez Azure Active Directory (AD)** Tirez parti d'Azure AD pour les comptes client. <br/> **Ajoutez des fonctionnalités SharePoint non disponibles dans Office 365** Ajoutez des fonctionnalités d'analyse web et de création de rapports détaillés. <br/> Voir [Sites Internet dans Microsoft Azure qui utilisent SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md).  <br/> |
-|Batteries de serveurs d'application pour prendre en charge Office 365 ou les environnements locaux  <br/> |**Créez, testez et hébergez des applications** dans Azure pour prendre en charge à la fois les environnements locaux et cloud. <br/> **Hébergez ce rôle** dans Azure au lieu d'acheter du nouveau matériel pour les environnements locaux. <br/> |
+|Récupération d'urgence de batteries de serveurs SharePoint locales sur Azure  <br/> |**Centre de données secondaire hébergé** Utilisez Azure au lieu d'investir dans un centre de données secondaire dans une autre région. <br/> **Lower-cost disaster-recovery environments** Maintain and pay for fewer resources than an on-premises disaster recovery environment. The number of resources depends on the disaster recovery environment you choose: cold standby, warm standby, or hot standby. <br/> **More elastic platform** In the event of a disaster, easily scale-out your recovery SharePoint farm to meet load requirements. Scale in when you no longer need the resources. <br/> Voir [Récupération d'urgence SharePoint Server 2013 dans Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md).  <br/> |
+|Sites accessibles sur Internet qui utilisent des fonctionnalités et une mise à l’ampleur non disponibles dans Microsoft 365  <br/> |**Concentrez vos efforts** Concentrez-vous sur le développement d'un site de qualité plutôt que sur la construction d'une infrastructure. <br/> **Take advantage of elasticity in Azure** Size the farm for the demand by adding new servers, and pay only for resources you need. Dynamic machine allocation is not supported (auto scale). <br/> **Utilisez Azure Active Directory (AD)** Tirez parti d'Azure AD pour les comptes client. <br/> **Ajouter des fonctionnalités SharePoint non disponibles dans Microsoft 365** Ajoutez des rapports détaillés et des analyses Web. <br/> Voir [Sites Internet dans Microsoft Azure qui utilisent SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md).  <br/> |
+|Batteries de serveurs d’application pour prendre en charge Microsoft 365 ou des environnements locaux  <br/> |**Créez, testez et hébergez des applications** dans Azure pour prendre en charge à la fois les environnements locaux et cloud. <br/> **Hébergez ce rôle** dans Azure au lieu d'acheter du nouveau matériel pour les environnements locaux. <br/> |
    
 Pour des solutions et des charges de travail de collaboration et intranet, envisagez les options suivantes :
   
-- Déterminez si Office 365 répond aux besoins de votre entreprise ou peut faire partie de la solution. Office 365 fournit un riche ensemble de fonctionnalités qui est toujours à jour.
+- Déterminez si Microsoft 365 répond aux besoins de votre entreprise ou s’il peut faire partie de la solution. Microsoft 365 fournit un jeu de fonctionnalités enrichi qui est toujours à jour.
     
-- Si Office 365 ne répond pas aux besoins de votre entreprise, envisagez une implémentation standard de SharePoint 2013 en local par Microsoft Consulting Services (MCS). Une architecture standard peut représenter pour vous une solution plus rapide, moins onéreuse et plus simple à prendre en charge qu'une architecture personnalisée. 
+- Si Microsoft 365 ne répond pas à tous les besoins de votre entreprise, envisagez une implémentation standard de SharePoint 2013 sur site à partir de Microsoft Consulting Services (MCS). Une architecture standard peut représenter pour vous une solution plus rapide, moins onéreuse et plus simple à prendre en charge qu'une architecture personnalisée. 
     
 - Si une implémentation standard ne répond pas aux besoins de votre entreprise, envisagez une solution locale personnalisée.
     
-- Si l'utilisation d'une plateforme cloud est importante pour les besoins de votre entreprise, envisagez une implémentation standard ou personnalisée de SharePoint 2013 hébergé dans les services d'infrastructure Azure. Les solutions SharePoint sont beaucoup plus faciles à prendre en charge dans Azure que les autres plateformes cloud publiques Microsoft non natives.
+- If using a cloud platform is important for your business requirements, consider a standard or customized implementation of SharePoint 2013 hosted in Azure infrastructure services. SharePoint solutions are much easier to support in Azure than other non-native Microsoft public cloud platforms.
     
 ## <a name="before-you-design-the-azure-environment"></a>Avant de concevoir l’environnement Azure
 
-Bien que cet article utilise des exemples de topologies SharePoint, vous pouvez utiliser ces concepts de conception avec n'importe quelle topologie de batterie de serveurs SharePoint. Avant de concevoir l'environnement Azure, suivez les instructions suivantes en matière de topologie, d'architecture, de capacité et de performances pour concevoir la batterie de serveurs SharePoint :
+While this article uses example SharePoint topologies, you can use these design concepts with any SharePoint farm topology. Before you design the Azure environment, use the following topology, architecture, capacity, and performance guidance to design the SharePoint farm:
   
 - [Conception de l'architecture pour les professionnels de l'informatique SharePoint 2013](https://technet.microsoft.com/sharepoint/fp123594.aspx)
     
@@ -62,34 +60,34 @@ Bien que cet article utilise des exemples de topologies SharePoint, vous pouvez 
     
 ## <a name="determine-the-active-directory-domain-type"></a>Déterminer le type de domaine Active Directory
 
-Chaque batterie de serveurs SharePoint Server s'appuie sur Active Directory pour fournir des comptes d'administration pour la configuration de batterie de serveurs. Pour le moment, deux options sont disponibles pour les solutions SharePoint dans Azure. Celles-ci sont décrites dans le tableau suivant.
+Each SharePoint Server farm relies on Active Directory to provide administrative accounts for farm setup. At this time, there are two options for SharePoint solutions in Azure. These are described in the following table.
   
 |**Option**|**Description**|
 |:-----|:-----|
-|Domaine dédié  <br/> |Vous pouvez déployer un domaine Active Directory dédié et isolé vers Azure pour prendre en charge votre batterie de serveurs SharePoint. Il s'agit d'un bon choix pour les sites Internet destinés au public.  <br/> |
-|Étendre le domaine local via une connexion entre différents locaux  <br/> |Lorsque vous étendez le domaine local via une connexion entre différents locaux, les utilisateurs accèdent à la batterie de serveurs SharePoint via votre intranet comme si elle était hébergée en local. Vous pouvez profiter de votre implémentation Active Directory et DNS locale.  <br/> Une connexion entre différents locaux est requise pour la création d'un environnement de récupération d'urgence dans Azure vers lequel basculer à partir de votre batterie de serveurs locale.  <br/> |
+|Domaine dédié  <br/> |You can deploy a dedicated and isolated Active Directory domain to Azure to support your SharePoint farm. This is a good choice for public-facing Internet sites.  <br/> |
+|Étendre le domaine local via une connexion entre différents locaux  <br/> |When you extend the on-premises domain through a cross-premises connection, users access the SharePoint farm via your intranet as if it were hosted on-premises. You can take advantage of your on-premises Active Directory and DNS implementation.  <br/> Une connexion entre différents locaux est requise pour la création d'un environnement de récupération d'urgence dans Azure vers lequel basculer à partir de votre batterie de serveurs locale.  <br/> |
    
-Cet article comprend des concepts de conception pour l'extension du domaine local via une connexion entre différents locaux. Si votre solution utilise un domaine dédié, vous n'avez pas besoin d'une connexion entre différents locaux.
+This article includes design concepts for extending the on-premises domain through a cross-premises connection. If your solution uses a dedicated domain, you don't need a cross-premises connection.
   
 ## <a name="design-the-virtual-network"></a>Concevoir le réseau virtuel
 
-Vous avez tout d'abord besoin d'un réseau virtuel dans Azure, qui inclut des sous-réseaux sur lesquels placer vos machines virtuelles. Le réseau virtuel a besoin d'un espace d'adressage IP privé, dont vous affectez certaines parties aux sous-réseaux.
+First you need a virtual network in Azure, which includes subnets on which you will place your virtual machines. The virtual network needs a private IP address space, portions of which you assign to the subnets.
   
 Si vous étendez votre réseau local à Azure via une connexion entre différents locaux (requise pour un environnement de récupération d'urgence), vous devez choisir un espace d'adressage privé qui ne soit pas déjà utilisé dans le réseau de votre organisation. Il peut inclure votre environnement local et d'autres réseaux virtuels Azure. 
   
 **Figure 1 : environnement local avec un réseau virtuel dans Azure**
 
-![Conception de réseau virtuel Microsoft Azure pour une solution SharePoint. Un sous-réseau pour la passerelle Azure. Un sous-réseau pour les machines virtuelles.](media/OPrrasconWA-AZarch.png)
+![Microsoft Azure virtual network design for a SharePoint solution. One subnet for the Azure gateway. One subnet for the virtual machines.](media/OPrrasconWA-AZarch.png)
   
 Dans ce schéma :
   
-- Un réseau virtuel dans Azure et l'environnement local sont illustrés côte à côte. Les deux environnements ne sont pas encore connectés par une connexion entre différents locaux, qui peut être une connexion VPN de site à site ou ExpressRoute.
+- A virtual network in Azure is illustrated side-by-side to the on-premises environment. The two environments are not yet connected by a cross-premises connection, which can be a site-to-site VPN connection or ExpressRoute.
     
-- À ce stade, le réseau virtuel inclut uniquement les sous-réseaux, mais pas d’autres éléments architecturaux. Un sous-réseau héberge la passerelle Azure et d’autres hébergent les niveaux de la batterie de serveurs SharePoint, avec un sous-réseau supplémentaire pour Active Directory et le DNS.
+- At this point, the virtual network just includes the subnets and no other architectural elements. One subnet will host the Azure gateway and other subnets host the tiers of the SharePoint farm, with an additional one for Active Directory and DNS.
     
 ## <a name="add-cross-premises-connectivity"></a>Ajouter une connectivité entre différents locaux
 
-L'étape de déploiement suivante consiste à créer la connexion entre différents locaux (si cela s'applique à votre solution). Pour les connexions entre différents locaux, une passerelle Azure réside dans un sous-réseau de passerelle distinct que vous devez créer et auquel vous devez affecter un espace d'adressage. 
+The next deployment step is to create the cross-premises connection (if this applies to your solution). For cross-premises connections, a Azure gateway resides in a separate gateway subnet, which you must create and assign an address space. 
   
 Lorsque vous planifiez une connexion entre différents locaux, vous définissez et créez une passerelle Azure et la connexion à un périphérique de passerelle local.
   
@@ -115,21 +113,21 @@ Pour une récupération d'urgence dans Azure, déployez Windows Server AD et un 
 
 ![Deux machines virtuelles déployées sur le réseau virtuel Azure et le sous-réseau de batterie de serveurs SharePoint sont des contrôleurs de domaine répliqués et des serveurs DNS](media/AZarch-HyADdomainConfig.png)
   
-Ce schéma, qui s’appuie sur les schémas précédents, ajoute deux machines virtuelles à un sous-réseau Windows Server AD et DNS. Ces machines virtuelles sont des serveurs DNS et des contrôleurs de domaine répliqués. Elles constituent une extension de l’environnement Windows Server AD local. 
+This diagram builds on the previous diagrams by adding two virtual machines to a Windows Server AD and DNS subnet. These virtual machines are replica domain controllers and DNS servers. They are an extension of the on-premises Windows Server AD environment. 
   
-Le tableau suivant fournit des recommandations concernant la configuration de ces machines virtuelles dans Azure. Utilisez-les comme point de départ pour la conception de votre propre environnement, même pour un domaine dédié où votre environnement Azure ne communique pas avec votre environnement local.
+The following table provides configuration recommendations for these virtual machines in Azure. Use these as a starting point for designing your own environment—even for a dedicated domain where your Azure environment doesn't communicate with your on-premises environment.
   
 |**Élément**|**Configuration**|
 |:-----|:-----|
 |Taille de machine virtuelle dans Azure  <br/> |Taille A1 ou A2 du niveau Standard  <br/> |
 |Système d’exploitation  <br/> |Windows Server 2012 R2  <br/> |
-|Rôle Active Directory  <br/> |Contrôleur de domaine AD DS désigné comme serveur de catalogue global. Cette configuration réduit le trafic sortant sur la connexion entre différents locaux.  <br/> Dans un environnement multidomaine avec des taux élevés de changement (cela n'est pas courant), configurez les contrôleurs de domaine en local pour qu'ils ne se synchronisent pas avec les serveurs de catalogue global dans Azure, afin de réduire le trafic de réplication.  <br/> |
+|Rôle Active Directory  <br/> |AD DS domain controller designated as a global catalog server. This configuration reduces egress traffic across the cross-premises connection.  <br/> Dans un environnement multidomaine avec des taux élevés de changement (cela n'est pas courant), configurez les contrôleurs de domaine en local pour qu'ils ne se synchronisent pas avec les serveurs de catalogue global dans Azure, afin de réduire le trafic de réplication.  <br/> |
 |Rôle DNS  <br/> |Installez et configurez le service Serveur DNS sur les contrôleurs de domaine.  <br/> |
-|Disques de données  <br/> |Placez SYSVOL, les journaux et la base de données Active Directory sur les disques de données Azure supplémentaires. Ne les placez pas sur le disque du système d'exploitation ou sur les disques temporaires fournis par Azure.  <br/> |
+|Disques de données  <br/> |Place the Active Directory database, logs, and SYSVOL on additional Azure data disks. Do not place these on the operating system disk or the temporary disks provided by Azure.  <br/> |
 |Adresses IP  <br/> |Utilisez des adresses IP statiques et configurez le réseau virtuel pour affecter ces adresses aux machines virtuelles du réseau virtuel une fois que les contrôleurs de domaine ont été configurés.  <br/> |
    
 > [!IMPORTANT]
-> Avant de déployer Active Directory dans Azure, consultez la rubrique [Recommandations en matière de déploiement de Windows Server Active Directory sur des machines virtuelles Azure](https://go.microsoft.com/fwlink/p/?linkid=392681). Ces recommandations vous aideront à déterminer si une architecture différente ou des paramètres de configuration différents sont nécessaires pour votre solution. 
+> Before you deploy Active Directory in Azure, read [Guidelines for Deploying Windows Server Active Directory on Azure Virtual Machines](https://go.microsoft.com/fwlink/p/?linkid=392681). These help you determine if a different architecture or different configuration settings are needed for your solution. 
   
 ## <a name="add-the-sharepoint-farm"></a>Ajouter la batterie de serveurs SharePoint
 
@@ -147,15 +145,15 @@ Ce schéma, qui s’appuie sur les schémas précédents, ajoute les rôles de s
     
 ## <a name="design-and-fine-tune-server-roles-for-availability-sets-and-fault-domains"></a>Concevoir et ajuster les rôles serveur pour les groupes à haute disponibilité et les domaines d’erreur
 
-Un domaine d'erreur est un regroupement de matériel dans lequel les instances de rôle s'exécutent. Les machines virtuelles d'un même domaine d'erreur peuvent être mises à jour par l'infrastructure Azure en même temps. Elles peuvent également échouer en même temps, car elles partagent le même rack. Pour éviter d'avoir deux machines virtuelles sur le même domaine d'erreur, vous pouvez configurer vos machines virtuelles en tant que groupe à haute disponibilité, ce qui garantit que chaque machine virtuelle se trouve dans un domaine d'erreur différent. Si trois machines virtuelles sont configurées en tant que groupe à haute disponibilité, Azure garantit qu'un maximum de deux machines virtuelles sont situées dans le même domaine d'erreur.
+A fault domain is a grouping of hardware in which role instances run. Virtual machines within the same fault domain can be updated by the Azure infrastructure at the same time. Or, they can fail at the same time because they share the same rack. To avoid the risk of having two virtual machines on the same fault domain, you can configure your virtual machines as an availability set, which ensures that each virtual machine is in a different fault domain. If three virtual machines are configured as an availability set, Azure guarantees that no more than two of the virtual machines are located in the same fault domain.
   
-Lorsque vous concevez l'architecture Azure pour une batterie de serveurs SharePoint, configurez des rôles serveur identiques pour qu'ils fassent partie d'un groupe à haute disponibilité. Ceci garantit que vos machines virtuelles sont réparties sur plusieurs domaines d'erreur.
+When you design the Azure architecture for a SharePoint farm, configure identical server roles to be part of an availability set. This ensures that your virtual machines are spread across multiple fault domains.
   
 **Figure 5 : utilisation de groupes à haute disponibilité Azure pour fournir une haute disponibilité aux niveaux de batterie de serveurs SharePoint**
 
 ![Configuration de groupes à haute disponibilité dans l’infrastructure Azure pour une solution SharePoint 2013](media/AZenv-WinAzureAvailSetsHA.png)
   
-Ce schéma appelle la configuration des groupes à haute disponibilité au sein de l'infrastructure Azure. Chacun des rôles suivants partage un groupe à haute disponibilité distinct :
+This diagram calls out the configuration of availability sets within the Azure infrastructure. Each of the following roles share a separate availability set:
   
 - Active Directory et DNS
     
@@ -167,9 +165,9 @@ Ce schéma appelle la configuration des groupes à haute disponibilité au sein 
     
 - Serveur frontal
     
-La batterie de serveurs SharePoint doit peut-être être ajustée dans la plateforme Azure. Pour assurer la haute disponibilité de tous les composants, assurez-vous que les rôles serveur sont configurés de manière identique.
+The SharePoint farm might need to be fine tuned in the Azure platform. To ensure high availability of all components, ensure that the server roles are all configured identically.
   
-Voici un exemple qui montre une architecture de sites Internet standard remplissant les objectifs spécifiques de performances et de capacité. Cet exemple est inclus dans le modèle d'architecture suivant : [Architectures de recherche de sites Internet pour SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=261519).
+Here is an example that shows a standard Internet Sites architecture that meets specific capacity and performance goals. This example is featured in the following architecture model: [Internet Sites Search Architectures for SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=261519).
   
 **Figure 6 : exemple de planification pour les objectifs de capacité et de performances dans une batterie de serveurs à trois niveaux**
 
@@ -183,7 +181,7 @@ Dans ce schéma :
     
 - Les deux serveurs de base de données sont configurés de manière identique.
     
-- Les trois serveurs d'applications ne sont pas configurés de manière identique. Ces rôles serveur exigent un ajustement pour les groupes à haute disponibilité dans Azure.
+- The three application servers are not configured identically. These server roles require fine tuning for availability sets in Azure.
     
 Examinons de plus près le niveau Serveur d'applications.
   
@@ -201,7 +199,7 @@ Dans ce schéma :
     
 - Le troisième serveur inclut deux composants.
     
-Vous déterminez le nombre de composants d'après les cibles de performances et de capacité de la batterie de serveurs. Pour adapter cette architecture à Azure, nous allons répliquer quatre composants sur les trois serveurs. Ceci augmente le nombre de composants au-delà de ce qui est nécessaire pour atteindre les objectifs de performances et de capacité. En échange, cette conception garantit la haute disponibilité des quatre composants dans la plateforme Azure lorsque ces trois machines virtuelles sont affectées à un groupe à haute disponibilité.
+You determine the number of components by the performance and capacity targets for the farm. To adapt this architecture for Azure, we'll replicate the four components across all three servers. This increases the number of components beyond what is necessary for performance and capacity. The tradeoff is that this design ensures high availability of all four components in the Azure platform when these three virtual machines are assigned to an availability set.
   
 **Figure 8 : niveau Serveur d'applications après ajustement**
 

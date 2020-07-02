@@ -18,16 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: 'Résumé : décrit la prise en charge du protocole IPv6 dans les composants Microsoft Office 365 et dans les offres gouvernementales Office 365.'
-ms.openlocfilehash: 939b5653981cb78dfa316e0baf1c498a3db97904
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+ms.openlocfilehash: 594f656f8342fa7eddeeea09779cbcf638ae1882
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009309"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998106"
 ---
 # <a name="ipv6-support-in-office-365-services"></a>Prise en charge du protocole IPv6 dans les services Office 365
 
-*Cet article est valable pour Office 365 Entreprise et Microsoft 365 Entreprise*.
+*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
 
 Office 365 prend en charge IPv6 et IPv4 ; Toutefois, toutes les fonctionnalités Office 365 ne sont pas entièrement activées avec IPv6. Cela signifie que vous devez utiliser IPv4 et IPv6 pour vous connecter à Office 365. Si vous filtrez votre trafic sortant vers Office 365, la liste complète des adresses IPv6 prises en charge par Office 365 est disponible dans l’article [URL office 365 et plages d’adresses IP](urls-and-ip-address-ranges.md). Une fois que votre réseau est configuré et que les adresses IPv6 appropriées sont autorisées, vous pouvez télécharger le [plan de test IPv6 Office 365](https://go.microsoft.com/fwlink/?LinkId=293447) à partir du centre de téléchargement Microsoft.
   

@@ -20,16 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: Utilisez ces informations pour découvrir comment Office 365 utilise les réseaux de distribution de contenu (CDN) pour améliorer les performances.
-ms.openlocfilehash: a9840cd325d30febdbef62e7cddf22640bffac42
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 21dc32da619a8f5f7521d07213156f2ab86fc876
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840631"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997470"
 ---
 # <a name="content-delivery-networks-cdns"></a>Réseaux de distribution de contenu (CDN)
 
-*Cet article est valable pour Office 365 Entreprise et Microsoft 365 Entreprise*.
+*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
 
 CDN permet de conserver rapidement et de façon fiable Office 365 pour les utilisateurs finaux. Les services Cloud tels qu’Office 365 utilisent CDN pour mettre en cache les composants statiques plus près des navigateurs qui les demandent pour accélérer les téléchargements et réduire la latence des utilisateurs finaux. Les informations contenues dans cette rubrique vous aideront à en savoir plus sur les réseaux de distribution de contenu (CDN) et la façon dont ils sont utilisés par Office 365.
 
@@ -37,7 +37,7 @@ CDN permet de conserver rapidement et de façon fiable Office 365 pour les utili
 
 Un CDN est un réseau distribué géographiquement composé de serveurs proxy et de serveurs de fichiers dans des centres de distribution connectés par des réseaux dorsaux à haut débit. Les CDN sont utilisées pour réduire la latence et les temps de chargement pour un ensemble spécifié de fichiers et d’objets dans un site Web ou un service. Un CDN peut avoir plusieurs milliers de points de terminaison pour assurer une maintenance optimale des demandes entrantes à partir de n’importe quel emplacement.
 
-Les CDN sont couramment utilisés pour fournir des téléchargements plus rapides de contenu générique pour un site Web ou un service tel que des fichiers JavaScript, des icônes et des images, et peuvent également fournir un accès privé au contenu utilisateur, tel que des fichiers dans les bibliothèques de documents SharePoint Online, fichiers multimédias de diffusion en continu et le code personnalisé.
+Les CDN sont couramment utilisés pour fournir des téléchargements plus rapides de contenu générique pour un site Web ou un service tel que des fichiers JavaScript, des icônes et des images, et peuvent également fournir un accès privé au contenu utilisateur, tel que des fichiers dans les bibliothèques de documents SharePoint Online, des fichiers multimédias de diffusion en continu et du code personnalisé.
 
 Les CDN sont utilisés par la plupart des services Cloud d’entreprise. Les services Cloud comme Office 365 ont des millions de clients qui téléchargent un mélange de contenu propriétaire (par exemple, des courriers électroniques) et du contenu générique (par exemple, des icônes) en même temps. Il est plus efficace de placer les images utilisées par tout le monde, comme les icônes, aussi près que possible de l’ordinateur de l’utilisateur. Il n’est pas pratique que chaque service Cloud crée des centres de données de CDN qui stockent ce contenu générique dans toutes les zones métropolitaines, ou même dans chaque grand concentrateur Internet du monde entier, de sorte que certaines de ces CDN soient partagées.
 
@@ -53,7 +53,7 @@ CDN aide à améliorer les performances du service Cloud de plusieurs façons :
 
 ## <a name="the-office-365-cdn"></a>Le CDN Office 365
 
-Le réseau de distribution de contenu (CDN) Office 365 intégré permet aux administrateurs d’Office 365 de fournir de meilleures performances pour les pages SharePoint Online de leur organisation en mettant en cache les composants statiques plus près des navigateurs qui les demandent, ce qui permet d’accélérer télécharge et réduit la latence. Le CDN Office 365 utilise le [protocole http/2](https://en.wikipedia.org/wiki/HTTP/2) pour améliorer la compression et les vitesses de téléchargement.
+Le réseau de distribution de contenu (CDN) Office 365 intégré permet aux administrateurs d’Office 365 de fournir de meilleures performances pour les pages SharePoint Online de leur organisation en mettant en cache les composants statiques plus près des navigateurs qui les demandent, ce qui permet d’accélérer les téléchargements et de réduire la latence. Le CDN Office 365 utilise le [protocole http/2](https://en.wikipedia.org/wiki/HTTP/2) pour améliorer la compression et les vitesses de téléchargement.
 
 > [!NOTE]
 > Le CDN Office 365 est uniquement disponible pour les clients dans le Cloud de **production** (dans le monde entier). Les clients des nuages des États-Unis, de Chine et d’Allemagne ne prennent actuellement pas en charge le CDN Office 365.
@@ -88,7 +88,7 @@ Pour plus d’informations sur le module Azure CDN Azure, voir [Manage Azure CDN
 
 ### <a name="microsoft-ajax-cdn"></a>CDN Microsoft Ajax
 
-Le **CDN Ajax** de Microsoft est un CDN en lecture seule qui offre de nombreuses bibliothèques de développement courantes, notamment jQuery (et toutes ses autres bibliothèques), ASP.NET AJAX, bootstrap, Knockout. js, etc.
+Le **CDN Ajax** de Microsoft est un CDN en lecture seule qui offre de nombreuses bibliothèques de développement courantes, notamment jQuery (et toutes ses autres bibliothèques), ASP.NET AJAX, Bootstrap, Knockout.js et d’autres encore.
   
 Pour inclure ces scripts dans votre projet, il suffit de remplacer les références à ces bibliothèques disponibles publiquement par des références à l’adresse CDN au lieu de les inclure dans votre projet lui-même. Par exemple, utilisez le code suivant pour créer un lien vers jQuery :
 
@@ -128,11 +128,11 @@ Le CDN utilisé par Office 365 est toujours susceptible d’être modifié et, d
 |---------|---------|---------|---------|
 |CDN Office 365     |Download         |Ressources génériques dans les origines publiques, contenu utilisateur SharePoint dans les origines privées         |[Utilisation du réseau de distribution de contenu Office 365 avec SharePoint Online](https://docs.microsoft.com/office365/enterprise/use-office-365-cdn-with-spo)         |
 |CDN Azure     |Microsoft         |Code personnalisé, solutions SharePoint Framework         |[CDN Microsoft Azure](https://azure.microsoft.com/documentation/services/cdn/)         |
-|CDN Microsoft Ajax (lecture seule)     |Microsoft         |Bibliothèques communes pour Ajax, jQuery, ASP.NET, bootstrap, Knockout. js, etc.         |[CDN Microsoft Ajax](https://docs.microsoft.com/aspnet/ajax/cdn/overview)         |
+|CDN Microsoft Ajax (lecture seule)     |Microsoft         |Bibliothèques communes pour Ajax, jQuery, ASP.NET, bootstrap, Knockout.js etc.         |[CDN Microsoft Ajax](https://docs.microsoft.com/aspnet/ajax/cdn/overview)         |
 
 ## <a name="what-performance-gains-does-a-cdn-provide"></a>Quels gains de performances fournissent un CDN ?
 
-Il existe de nombreux facteurs impliqués dans la mesure de différences spécifiques de performances entre les données téléchargées directement à partir d’Office 365 et les données téléchargées à partir d’un CDN spécifique, telles que votre emplacement par rapport à votre client et au point de terminaison CDN le plus proche, le nombre de les biens sur une page qui sont pris en charge par le CDN, ainsi que les modifications transitoires de la latence du réseau et de la bande passante. Toutefois, un simple test A/B peut vous aider à afficher la différence en temps de téléchargement pour un fichier spécifique.
+Il existe de nombreux facteurs impliqués dans la mesure de différences spécifiques de performances entre les données téléchargées directement à partir d’Office 365 et les données téléchargées à partir d’un CDN spécifique, telles que votre emplacement par rapport à votre client et au point de terminaison CDN le plus proche, le nombre de biens sur une page qui sont pris en charge par le CDN, ainsi que les modifications transitoires de la Toutefois, un simple test A/B peut vous aider à afficher la différence en temps de téléchargement pour un fichier spécifique.
 
 Les captures d’écran suivantes illustrent la différence de vitesse de téléchargement entre l’emplacement de fichiers natif dans Office 365 et le même fichier hébergé sur le [réseau de distribution de contenu Microsoft Ajax](https://docs.microsoft.com/aspnet/ajax/cdn/overview). Ces captures d’écran sont extraites de l’onglet **réseau** dans les outils de développement Internet Explorer 11. Ces captures d’écran montrent la latence sur la bibliothèque jQuery. Pour afficher cet écran, dans Internet Explorer, appuyez sur **F12** et sélectionnez l’onglet **réseau** qui est symbolisé par une icône Wi-Fi.
   
@@ -195,7 +195,7 @@ Voici un bref lien que vous pouvez utiliser pour revenir : [https://aka.ms/o365
 
 [Évaluation de la connectivité réseau Office 365](assessing-network-connectivity.md)
 
-[Gestion des points de terminaison Office 365](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints)
+[Gestion des points de terminaison Office 365](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints)
 
 [URL et plages d’adresses IP Office 365](https://go.microsoft.com/fwlink/p/?LinkID=293744)
 

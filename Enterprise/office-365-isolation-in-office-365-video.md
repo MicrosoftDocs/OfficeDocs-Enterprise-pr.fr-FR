@@ -1,7 +1,7 @@
 ---
-title: Vidéo sur l’isolation du client Office 365 dans Office 365
-ms.author: robmazz
-author: robmazz
+title: Isolation du client dans Office 365 Video
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,17 +15,17 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 'Résumé : explication de l’isolation du client dans la vidéo Office 365.'
-ms.openlocfilehash: c7fb97180fbe6c96d2849be7725958a788309558
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d3d7f71260d74d598a8cc72962c2ab1ea1f2e6c3
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843655"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998697"
 ---
 # <a name="tenant-isolation-in-office-365-video"></a>Isolation du client dans Office 365 Video
 
 > [!NOTE]
-> La vidéo Office 365 sera remplacée par Microsoft Stream. Pour en savoir plus sur le nouveau service vidéo d’entreprise qui ajoute de l’intelligence à la collaboration vidéo et en savoir plus sur les plans de transition pour les clients vidéo actuels d’Office 365, consultez la rubrique [migrer vers un flux à partir d’Office 365 vidéo](https://docs.microsoft.com/stream/).
+> La vidéo Office 365 sera remplacée par Microsoft Stream. Pour en savoir plus sur le nouveau service vidéo d’entreprise qui ajoute de l’intelligence à la collaboration vidéo et en savoir plus sur les plans de transition pour les clients vidéo actuels de Microsoft 365, voir [Office 365 vidéo transition vers Microsoft Stream Overview](https://docs.microsoft.com/stream/migrate-from-office-365).
 
 ## <a name="introduction"></a>Introduction
 

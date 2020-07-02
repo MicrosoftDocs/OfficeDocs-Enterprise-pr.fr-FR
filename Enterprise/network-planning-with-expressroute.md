@@ -18,16 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: ExpressRoute pour Office 365 fournit la connectivité de couche 3 entre votre réseau et les centres de donnes de Microsoft. Les circuits utilisent des publicités d’itinéraires BGP (Border Gateway Protocol) de serveurs frontaux d’Office 365. Du point de vue de vos appareils sur site, lorsqu’ils doivent sélectionner le chemin d’accès TCP/IP correct vers Office 365, Azure ExpressRoute est considéré comme une alternative à Internet.
-ms.openlocfilehash: 2f38b88b5d940d1a8aa171c777e82a4a308be0cf
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 56115e366d8f9b0bf7b4b893801ebca5d216c570
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844555"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998529"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Planification du réseau avec ExpressRoute pour Office 365
 
-*Cet article est valable pour Office 365 Entreprise et Microsoft 365 Entreprise*.
+*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
 
 ExpressRoute pour Office 365 fournit la connectivité de couche 3 entre votre réseau et les centres de donnes de Microsoft. Les circuits utilisent des publicités d’itinéraires BGP (Border Gateway Protocol) de serveurs frontaux d’Office 365. Du point de vue de vos appareils sur site, lorsqu’ils doivent sélectionner le chemin d’accès TCP/IP correct vers Office 365, Azure ExpressRoute est considéré comme une alternative à Internet.
   
@@ -72,13 +72,13 @@ Si la bande passante est trop faible, des saturations de données, des retransmi
   
 Pour trouver le niveau de bande passante approprié, le meilleur moyen est de tester votre consommation réseau existante. Il s’agit de la seule façon d’obtenir une mesure réelle de l’utilisation et de la nécessité que chaque configuration et application réseau soient différentes d’une certaine manière. Lors de la mesure, vous devez prêter une attention particulière à la consommation totale de bande passante, à la latence et à la congestion TCP pour comprendre vos besoins en matière de réseau.
   
-Une fois que vous avez une base estimée qui inclut toutes les applications réseau, pilotez Office 365 avec un petit groupe qui comprend les différents profils des personnes de votre organisation pour déterminer l’utilisation réelle et utilisez les deux mesures pour estimer la quantité de bande passante requise pour chaque emplacement de bureau. S’il existe des problèmes de latence ou de congestion TCP dans le cadre de vos tests, vous devrez peut-être déplacer la sortie plus près des personnes à l’aide d’Office 365 ou supprimer l’analyse de réseau intensive, telle que le déchiffrement/l’inspection SSL.
+Une fois que vous avez une planification estimée qui inclut toutes les applications réseau, pilotez Office 365 avec un petit groupe qui comprend les différents profils des personnes de votre organisation pour déterminer l’utilisation réelle et utilisez les deux mesures pour estimer la quantité de bande passante nécessaire pour chaque emplacement de bureau. S’il existe des problèmes de latence ou de congestion TCP dans le cadre de vos tests, vous devrez peut-être déplacer la sortie plus près des personnes à l’aide d’Office 365 ou supprimer l’analyse de réseau intensive, telle que le déchiffrement/l’inspection SSL.
   
 Toutes nos recommandations sur le type de traitement réseau recommandé s’appliquent à la fois aux circuits ExpressRoute et Internet. Il en est de même pour les autres conseils sur notre [site de réglage des performances](https://aka.ms/tune).
   
 ## <a name="applying-security-controls-to-azure-expressroute-for-office-365-scenarios"></a>Application des contrôles de sécurité à Azure ExpressRoute pour les scénarios Office 365
 
-La sécurisation de la connectivité Azure ExpressRoute commence par les mêmes principes que la sécurisation de la connectivité Internet. De nombreux clients choisissent de déployer les contrôles réseau et de périmètre le long du chemin ExpressRoute connectant leur réseau local à Office 365 et à d’autres nuages Microsoft. Ces contrôles peuvent inclure des pare-feu, des proxys d’applications, la prévention des fuites de données, la détection d’intrusions, les systèmes de prévention des intrusions, etc. Dans de nombreux cas, les clients appliquent différents niveaux de contrôle au trafic initié à partir de l’accès local à Microsoft, ainsi que le trafic initié par Microsoft vers le réseau client local, et non le trafic initié en local Destination Internet.
+La sécurisation de la connectivité Azure ExpressRoute commence par les mêmes principes que la sécurisation de la connectivité Internet. De nombreux clients choisissent de déployer les contrôles réseau et de périmètre le long du chemin ExpressRoute connectant leur réseau local à Office 365 et à d’autres nuages Microsoft. Ces contrôles peuvent inclure des pare-feu, des proxys d’applications, la prévention des fuites de données, la détection d’intrusions, les systèmes de prévention des intrusions, etc. Dans de nombreux cas, les clients appliquent différents niveaux de contrôle au trafic initié à partir de l’accès local à Microsoft, contre le trafic initié par Microsoft vers le réseau client local, et non vers une destination Internet générale.
   
 Voici quelques exemples d’intégration de la sécurité avec le [modèle de connectivité ExpressRoute](https://docs.microsoft.com/azure/expressroute/expressroute-connectivity-models) que vous choisissez de déployer.
 
@@ -94,7 +94,7 @@ Lors de l’examen de la topologie des options de périmètre réseau/sécurité
   
 - La profondeur et les contrôles réseau/sécurité peuvent avoir un impact sur les performances et l’extensibilité de l’expérience utilisateur Office 365.
 
-- Les flux sortants (locaux-\>Microsoft) et entrants (Microsoft\>sur site) [si activé] les flux peuvent avoir des exigences différentes. Celles-ci sont probablement différentes des destinations Internet générales.
+- Les flux sortants (locaux- \> Microsoft) et entrants (Microsoft \> sur site) [si activé] les flux peuvent avoir des exigences différentes. Celles-ci sont probablement différentes des destinations Internet générales.
 
 - La configuration requise pour Office 365 pour les ports/protocoles et les sous-réseaux IP nécessaires est identique, que le trafic soit acheminé via ExpressRoute pour Office 365 ou via Internet.
 
@@ -148,7 +148,7 @@ Nous vous recommandons vivement de planifier et de concevoir la haute disponibil
 Vos scénarios de connectivité doivent inclure une topologie réseau optimisée pour plusieurs chemins réseau indépendants et actifs vers Office 365. Cette opération offre une meilleure disponibilité de bout en bout qu’une topologie qui est optimisée uniquement pour la redondance au niveau du périphérique ou de l’équipement individuel.
   
 > [!TIP]
-> Si vos utilisateurs sont répartis sur plusieurs continents ou régions géographiques et que chacun de ces emplacements se connecte sur des circuits WAN redondants à un emplacement local unique où se trouve un seul circuit ExpressRoute, vos utilisateurs auront moins de disponibilité du service de bout en bout par rapport à une conception de topologie réseau qui inclut des circuits ExpressRoute indépendants qui relient les différentes régions à l’emplacement d’homologation le plus proche.
+> Si vos utilisateurs sont répartis sur plusieurs continents ou régions géographiques et que chacun de ces emplacements se connecte sur des circuits WAN redondants à un emplacement local unique où se trouve un seul circuit ExpressRoute, vos utilisateurs bénéficieront d’une disponibilité de service moins importante qu’une conception de topologie réseau incluant des circuits ExpressRoute indépendants qui connectent les différentes régions à l’emplacement d’homologation le plus proche.
   
 Nous vous recommandons de configurer au moins deux circuits ExpressRoute avec chaque circuit se connectant à un autre emplacement géographique. Vous devez mettre en service cette paire de circuits active-active pour chaque région où des personnes utiliseront la connectivité ExpressRoute pour les services Office 365. Cela permet à chaque région de rester connectée pendant une catastrophe qui affecte un emplacement majeur, tel qu’un centre de donneur ou un lieu d’homologation. Leur configuration en tant que actif/actif permet de répartir le trafic des utilisateurs finaux entre plusieurs chemins d’accès réseau. Cela réduit l’étendue des personnes affectées lors des pannes du matériel ou du périphérique réseau.
   
@@ -176,7 +176,7 @@ La configuration réseau de Woodgrove Bank est basée sur quelques principes cl�
 
 Dans cette configuration, avec redondance au niveau physique et virtuel, Woodgrove Bank peut offrir une résistance locale, une résistance régionale et une résistance globale de manière fiable. Woodgrove a choisi cette configuration après avoir évalué un seul circuit ExpressRoute Azure par région, ainsi que la possibilité de basculer sur Internet.
   
-Si la Woodgrove Bank n’a pas pu avoir plusieurs circuits ExpressRoute Azure par région, le trafic de routage en Amérique du Nord vers le circuit ExpressRoute Azure dans la zone Asie Pacifique ajouterait un niveau de latence et de configuration de redirecteur DNS inacceptables. Ajoute de la complexité.
+Si la Woodgrove Bank n’a pas pu avoir plusieurs circuits ExpressRoute Azure par région, le trafic de routage en Amérique du Nord vers le circuit ExpressRoute Azure dans la zone Asie Pacifique ajouterait un niveau de latence inacceptable et la configuration du redirecteur DNS requise ajoute de la complexité.
   
 Il n’est pas recommandé d’exploiter Internet comme configuration de sauvegarde. Cela romp le principe de fiabilité de Woodgrove, ce qui entraîne une expérience incohérente à l’aide de la connexion. En outre, la configuration manuelle est requise pour le basculement en tenant compte des annonces BGP qui ont été configurées, de la configuration NAT, de la configuration DNS et de la configuration du proxy. La complexité de basculement ajoutée augmente le temps de récupération et réduit leur capacité à diagnostiquer et à dépanner les étapes impliquées.
   
@@ -189,7 +189,7 @@ Choisissez les emplacements de vos circuits en fonction de votre bande passante,
   
 Collaborez avec votre fournisseur ou vos fournisseurs pour sélectionner les meilleures options de connectivité, point-à-point, multipoint ou hébergé. N’oubliez pas que vous pouvez mélanger et faire correspondre les options de connectivité à condition que la bande passante et les autres composants redondants prennent en charge votre conception et la haute disponibilité.
   
-Voici un bref lien que vous pouvez utiliser pour revenir : [https://aka.ms/planningexpressroute365](https://aka.ms/planningexpressroute365)
+Voici un lien que vous pouvez utiliser pour revenir : [https://aka.ms/planningexpressroute365](https://aka.ms/planningexpressroute365)
   
 ## <a name="related-topics"></a>Rubriques connexes
 <a name="BKMK_high-availability"> </a>
@@ -210,9 +210,9 @@ Voici un bref lien que vous pouvez utiliser pour revenir : [https://aka.ms/plan
   
 [Optimisation de votre réseau pour Skype Entreprise Online](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
   
-[ExpressRoute et QoS dans Skype entreprise Online](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
+[ExpressRoute et QoS dans Skype Entreprise Online](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
   
-[Flux d’appels à l’aide de ExpressRoute](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
+[Appel du flux à l’aide d’ExpressRoute](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
   
 [Réglage des performances Office 365 à l’aide du planning de référence et de l’historique des performances](performance-tuning-using-baselines-and-history.md)
   

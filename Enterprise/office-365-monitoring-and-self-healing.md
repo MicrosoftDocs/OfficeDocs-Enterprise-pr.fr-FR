@@ -1,7 +1,7 @@
 ---
-title: Surveillance et autoréparation d’Office 365
-ms.author: robmazz
-author: robmazz
+title: Surveillance et autoréparation de Microsoft 365
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,23 +14,23 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Informations sur les fonctionnalités de surveillance et d’autoréparation d’Office 365.
-ms.openlocfilehash: 825edd1bc994f696c14e53d8830fc10defb04630
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Informations sur les fonctionnalités de surveillance et d’autoréparation de Microsoft 365.
+ms.openlocfilehash: 88338f722e8563c3db6573ac6ab64252cb98c450
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844365"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998761"
 ---
-# <a name="office-365-monitoring-and-self-healing"></a>Surveillance et autoréparation d’Office 365
+# <a name="microsoft-365-monitoring-and-self-healing"></a>Surveillance et autoréparation de Microsoft 365
 
-Étant donné l’ampleur d’Office 365, il serait impossible de maintenir les données client résistantes et sûres des programmes malveillants sans surveillance intégrée complète, alerte intelligente et auto-réparation rapide et fiable. La surveillance d’un ensemble de services à l’étendue d’Office 365 est très complexe. De nouvelles mentalités et méthodologies devaient être introduites, ainsi que de nouveaux ensembles de technologies qui devaient être créés pour fonctionner et gérer le service dans un environnement global connecté. Nous avons quitté l’approche de surveillance traditionnelle de la collecte de données et du filtrage pour créer des alertes à une approche basée sur l’analyse des données ; prendre des signaux et renforcer la confiance de ces données, puis utiliser l’automatisation pour récupérer ou résoudre le problème. Cette approche permet de tirer le meilleur parti de l’équation de récupération, qui, à son tour, rend les opérations moins onéreuses, plus rapides et moins sujettes aux erreurs. 
+Étant donné l’ampleur de Microsoft 365, il serait impossible de maintenir les données client résistantes et sûres des programmes malveillants sans surveillance intégrée complète, alerte intelligente et auto-réparation rapide et fiable. La surveillance d’un ensemble de services à l’envergure de Microsoft 365 est très complexe. De nouvelles mentalités et méthodologies devaient être introduites, ainsi que de nouveaux ensembles de technologies qui devaient être créés pour fonctionner et gérer le service dans un environnement global connecté. Nous avons quitté l’approche de surveillance traditionnelle de la collecte de données et du filtrage pour créer des alertes à une approche basée sur l’analyse des données ; prendre des signaux et renforcer la confiance de ces données, puis utiliser l’automatisation pour récupérer ou résoudre le problème. Cette approche permet de tirer le meilleur parti de l’équation de récupération, qui, à son tour, rend les opérations moins onéreuses, plus rapides et moins sujettes aux erreurs. 
 
-La surveillance fondamentale de Office 365 est une collection de technologies qui comprend notre moteur Data Insights, qui est basé sur Azure, SQL Azure et la [technologie de base de données de flux Open source](https://cassandra.apache.org/). Elle est conçue pour collecter et agréger des données et atteindre des conclusions. Actuellement, il traite plus de 500 millions événements par heure à partir de plus de 100 000 serveurs (~ 15 to par jour) disséminés sur des dizaines de centres de contenu dans de nombreuses régions, et ces chiffres augmentent. 
+La surveillance fondamentale de Microsoft 365 est une collection de technologies qui comprend notre moteur Data Insights, basé sur Azure, SQL Azure et la [technologie de base de données de diffusion en continu Open source](https://cassandra.apache.org/). Elle est conçue pour collecter et agréger des données et atteindre des conclusions. Actuellement, il traite plus de 500 millions événements par heure à partir de plus de 100 000 serveurs (~ 15 to par jour) disséminés sur des dizaines de centres de contenu dans de nombreuses régions, et ces chiffres augmentent. 
 
-Office 365 utilise la *surveillance extérieure*, qui implique la création de transactions synthétiques pour tester tout ce qui est important. Par exemple, dans Exchange Online, chaque scénario teste toutes les bases de données dans le monde entier toutes les cinq minutes de manière disséminée, ce qui permet une couverture quasi continue de tout ce qui se trouve dans le système. À partir de plusieurs emplacements, 250 millions transactions de test par jour sont effectuées pour créer une base ou une pulsation robuste pour le service. 
+Microsoft 365 utilise la *surveillance extérieure*, qui implique la création de transactions synthétiques pour tester tout ce qui est important. Par exemple, dans Exchange Online, chaque scénario teste toutes les bases de données dans le monde entier toutes les cinq minutes de manière disséminée, ce qui permet une couverture quasi continue de tout ce qui se trouve dans le système. À partir de plusieurs emplacements, 250 millions transactions de test par jour sont effectuées pour créer une base ou une pulsation robuste pour le service. 
 
-Office 365 utilise également le concept d' *alerte rouge*, qui réduit tous les signaux de surveillance de tous les ordinateurs de nos centres de donnes à un point gérable par un humain. Le concept est assez simple : si un événement se produit sur plusieurs signaux, il doit y avoir un problème. Comme il ne s’agit pas de la création d’une confiance dans un signal, il est possible d’avoir une fidélité raisonnable pour chaque signal afin d’obtenir une plus grande précision. Ce système de surveillance est si puissant que nous n’avons pas de personnel 24x7 qui surveille nos moniteurs. tout ce dont nous disposons est la machine qui s’en sort si elle détecte un problème, auquel cas le personnel d’appel approprié, ou, le cas échéant, sera plus souvent mis en page et résoudrea le problème. Une fois que nous avons commencé à collecter des signaux et créé des alertes rouges, nous pouvons démarrer la triangulation sur toutes les partitions de service. 
+Microsoft 365 utilise également le concept d' *alerte rouge*, qui réduit tous les signaux de surveillance de tous les ordinateurs de nos centres de donnes à un point gérable par un humain. Le concept est assez simple : si un événement se produit sur plusieurs signaux, il doit y avoir un problème. Comme il ne s’agit pas de la création d’une confiance dans un signal, il est possible d’avoir une fidélité raisonnable pour chaque signal afin d’obtenir une plus grande précision. Ce système de surveillance est si puissant que nous n’avons pas de personnel 24x7 qui surveille nos moniteurs. tout ce dont nous disposons est la machine qui s’en sort si elle détecte un problème, auquel cas le personnel d’appel approprié, ou, le cas échéant, sera plus souvent mis en page et résoudrea le problème. Une fois que nous avons commencé à collecter des signaux et créé des alertes rouges, nous pouvons démarrer la triangulation sur toutes les partitions de service. 
 
 En fonction de la combinaison de l’alerte d’échec et des alertes rouges, cette alerte indique exactement quels composants pourraient présenter un problème et que le système va tenter de corriger le problème en redémarrant un serveur de boîtes aux lettres. 
 
@@ -44,12 +44,12 @@ La disponibilité gérée offre une solution native de vérification et de récu
 - **Latence** -comment est l’expérience pour les utilisateurs ? 
 - **Erreurs** -les utilisateurs peuvent-ils faire ce qu’ils veulent ? 
 
-La disponibilité gérée est une fonctionnalité interne qui s’exécute sur chaque serveur Office 365 exécutant Exchange Online. Elle interroge et analyse des centaines de paramètres d'intégrité par seconde. Si un problème se trouve incorrect, la plupart du temps, il est résolu automatiquement. Toutefois, il y aura toujours des problèmes selon lesquels la disponibilité gérée ne sera pas en mesure de réparer de lui-même. Dans ce cas, la disponibilité gérée transmet le problème à une équipe de support Office 365 par le biais de la journalisation des événements.
+La disponibilité gérée est une fonctionnalité interne qui s’exécute sur chaque serveur Microsoft 365 exécutant Exchange Online. Elle interroge et analyse des centaines de paramètres d'intégrité par seconde. Si un problème se trouve incorrect, la plupart du temps, il est résolu automatiquement. Toutefois, il y aura toujours des problèmes selon lesquels la disponibilité gérée ne sera pas en mesure de réparer de lui-même. Dans ce cas, la disponibilité gérée transmet le problème à une équipe de support technique Microsoft 365 par le biais de la journalisation des événements.
 
 ## <a name="autoreseed"></a>AutoReseed
 
 Les serveurs Exchange Online sont déployés dans une configuration qui stocke plusieurs bases de données et leurs flux de journal sur le même disque non RAID. Cette configuration est souvent appelée *simplement un paquet de disques* (JBOD) car aucun mécanisme de redondance de stockage, tel qu’un RAID, n’est utilisé pour dupliquer les données sur le disque. Lorsqu’un disque tombe en panne dans un environnement JBOD, les données sur ce disque sont perdues. 
 
-Étant donné la taille d’Exchange Online et le fait que le déploiement dans ce sont des millions de disques, les défaillances de lecteur de disque sont une occurrence normale dans Exchange Online. En fait, plus de 100 échouent tous les jours. Lorsqu’un disque tombe en panne dans un déploiement d’entreprise local, un administrateur doit manuellement remplacer le disque défaillant et restaurer les données affectées. Dans un déploiement Cloud, la taille d’Office 365, avec des opérateurs (administrateurs Cloud) qui remplacent manuellement les disques n’est ni pratique ni économiquement réalisable. 
+Étant donné la taille d’Exchange Online et le fait que le déploiement dans ce sont des millions de disques, les défaillances de lecteur de disque sont une occurrence normale dans Exchange Online. En fait, plus de 100 échouent tous les jours. Lorsqu’un disque tombe en panne dans un déploiement d’entreprise local, un administrateur doit manuellement remplacer le disque défaillant et restaurer les données affectées. Dans un déploiement Cloud, la taille de Microsoft 365, avec des opérateurs (administrateurs Cloud) qui remplacent manuellement les disques, n’est ni pratique ni économiquement réalisable. 
 
 Le réamorçage automatique, ou *autoseed*, est une fonctionnalité qui remplace l’action normalement pilotée par un opérateur en réponse à une défaillance du disque, à un événement d’endommagement de la base de données ou à un autre problème nécessitant la réamorçage d’une copie de base de données. La fonctionnalité AutoReseed permet de restaurer automatiquement la redondance de base de données après une défaillance de disque par le biais de disques de rechange qui ont été configurés sur le système. En cas de défaillance du disque, les copies de base de données stockées sur ce disque sont automatiquement réamorcées sur un disque de rechange préconfiguré sur le serveur, ce qui permet de restaurer la redondance. 

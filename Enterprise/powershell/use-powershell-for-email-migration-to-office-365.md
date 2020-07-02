@@ -16,18 +16,16 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 795158e1-7dfc-4d9e-b805-373dd576c4e7
 description: "Résumé : Découvrez comment migrer votre messagerie vers Office 365 à l'aide de Windows PowerShell."
-ms.openlocfilehash: df8c6715f47de4a7edce091c69c1b8218cbdcd54
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+ms.openlocfilehash: 340a8fd9ae40b64445a1b6dc25b16cf302ac377b
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004537"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998606"
 ---
 # <a name="use-powershell-for-email-migration-to-office-365"></a>Utilisation de PowerShell pour effectuer une migration de messagerie vers Office 365
 
- **Résumé :** Découvrez comment migrer votre messagerie vers Office 365 à l'aide de Windows PowerShell.
-  
-Lorsque les administrateurs procèdent à la configuration initiale d'Office 365, nombre d'entre eux migrent le courrier électronique à partir de systèmes existants. Vous pouvez également effectuer cette tâche à l'aide de l'interface utilisateur d'administration d'Office 365. Vous pouvez aussi utiliser Windows PowerShell pour migrer la messagerie.
+When administrators first set up Office 365, many of them migrate email from existing systems. You can also do this by using the Office 365 administration user interface. You can also use Windows PowerShell to migrate email.
   
 ## <a name="office-365-licensing-and-windows-powershell"></a>Licence Office 365 et Windows PowerShell
 

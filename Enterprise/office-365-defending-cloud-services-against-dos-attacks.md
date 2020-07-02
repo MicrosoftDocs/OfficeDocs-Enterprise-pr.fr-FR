@@ -1,7 +1,7 @@
 ---
-title: Office 365 défendant les services Cloud contre les attaques par déni de service
-ms.author: robmazz
-author: robmazz
+title: Protection des services Cloud Microsoft 365 contre des attaques par déni de service
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,21 +15,21 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Comment Microsoft défende ses services Cloud contre les attaques par déni de service (DoS).
-ms.openlocfilehash: 042748927ddfa4d81fa3c62b98ab8f1114a8ada0
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 58d2d3611c65ba098049fab71282253f7c054ea3
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843615"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998328"
 ---
-# <a name="defending-microsoft-cloud-services-against-denial-of-service-attacks"></a>Protection des services de Cloud Computing Microsoft contre les attaques par déni de service
+# <a name="defending-microsoft-365-cloud-services-against-denial-of-service-attacks"></a>Protection des services Cloud Microsoft 365 contre des attaques par déni de service
 
 ## <a name="introduction"></a>Introduction
 Les centres de contenu Microsoft sont protégés par une sécurité de défense approfondie qui inclut des délimiteurs de périmètre, des caméras vidéo, du personnel de sécurité et des entrées sécurisées qui utilisent la biométrie, la carte à puce et l’authentification multifacteur. La sécurité de défense en profondeur continue à travers toutes les zones de l’installation et de chaque unité de serveur physique. Le [groupe Microsoft Cloud Infrastructure and Operations](https://www.microsoft.com/cloud-platform/global-datacenters) fournit l’infrastructure de base et les technologies de base pour nos services Cloud. Nos centres de connaissances respectent les normes industrielles en matière de sécurité et de fiabilité, et sont gérées, surveillées et gérées par le personnel des opérations Microsoft.
 
 Pour mieux protéger nos services Cloud, Microsoft fournit un système de défense DDoS qui fait partie des processus de test de pénétration et de surveillance continue de Microsoft Azure. Le système de défense DDoS Azure est conçu non seulement pour résister aux attaques provenant de l’extérieur, mais également d’autres clients Azure. Azure utilise des techniques de détection et d’atténuation standard telles que les cookies SYN, la limitation du débit et les limites de connexion pour protéger contre les attaques DDoS.
 
-Les services Cloud de Microsoft sont sujets à une menace d’attaque de sources multiples. Pour limiter et protéger les menaces de refus de déni de réseau, un système de détection et d’atténuation des menaces basé sur Azure et hautement évolutif et dynamique a été développé et implémenté avec l’objectif principal de la protection de l’infrastructure sous-jacente à partir de DoS attaques et aider à empêcher les interruptions de service pour les clients des services Cloud. Le système de minimisation d’Azure DoS protège le trafic entrant, sortant et de région en région.
+Les services Cloud de Microsoft sont sujets à une menace d’attaque de sources multiples. Pour limiter et protéger les menaces de refus de service, un système de détection et d’atténuation des menaces basé sur Azure et hautement évolutif et dynamique a été développé et implémenté avec l’objectif principal de la protection de l’infrastructure sous-jacente contre les attaques DoS et d’empêcher les interruptions de service pour les clients des services Cloud. Le système de minimisation d’Azure DoS protège le trafic entrant, sortant et de région en région.
 
 La plupart des attaques DoS lancées par rapport aux cibles des couches réseau (L3) et transport (L4) du modèle OSI ( [Open Systems Interconnection](https://docs.microsoft.com/windows-hardware/drivers/network/windows-network-architecture-and-the-osi-model) ). Les attaques dirigées vers les couches L3 et L4 sont conçues pour submerger une interface réseau ou un service avec un trafic d’attaque afin de saturer les ressources et de ne pas pouvoir répondre au trafic légitime. En particulier, les attaques N3 et L4 tentent de saturer la capacité des liaisons réseau, des périphériques ou des services, ou de saturer les processeurs des serveurs ou des machines virtuelles prenant en charge une application.
 

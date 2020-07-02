@@ -20,16 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Découvrez comment Azure ExpressRoute est utilisé avec Office 365 et comment planifier le projet d’implémentation réseau qui sera requis si vous déployez Azure ExpressRoute pour une utilisation avec Office 365.
-ms.openlocfilehash: cf280ff386893f98844e5653ceed180339f701a6
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+ms.openlocfilehash: 80b42fc43f395d9dd94384d456d40eb536541746
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009359"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997948"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Azure ExpressRoute pour Office 365
 
-*Cet article est valable pour Office 365 Entreprise et Microsoft 365 Entreprise*.
+*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
 
 Découvrez comment Azure ExpressRoute est utilisé avec Office 365 et comment planifier le projet d’implémentation réseau qui sera requis si vous déployez Azure ExpressRoute pour une utilisation avec Office 365. Les services d’infrastructure et de plateforme exécutés dans Azure tireront souvent parti de l’architecture réseau et des considérations relatives aux performances. Nous vous recommandons d’utiliser ExpressRoute pour Azure dans ces cas. Les logiciels en tant qu’offres de service comme Office 365 et Dynamics 365 ont été conçus pour être accessibles en toute sécurité et fiabilité via Internet. Vous trouverez des informations sur les performances et la sécurité d’Internet et sur la façon dont vous pouvez envisager d’utiliser Azure ExpressRoute pour Office 365 dans l’article évaluation de la [connectivité réseau office 365](assessing-network-connectivity.md).
 

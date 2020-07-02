@@ -1,7 +1,7 @@
 ---
-title: Prise en charge des applications clientes Office 365 — authentification basée sur les certificats
-ms.author: robmazz
-author: robmazz
+title: Prise en charge des applications clientes Microsoft 365 — authentification basée sur les certificats
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,17 +14,17 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: Prise en charge des applications clientes Office 365 pour l’authentification basée sur les certificats.
-ms.openlocfilehash: b38f9da2d3146fafce6826668c800f23ad63774b
-ms.sourcegitcommit: 576c3dbdef535f952a861197dea5348908da9504
+description: Prise en charge des applications clientes Microsoft 365 pour l’authentification basée sur les certificats.
+ms.openlocfilehash: a174e24c31e9ad2688ead557c29c3fecdac82a56
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44619350"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998596"
 ---
-# <a name="office-365-client-app-support--certificate-based-authentication"></a>Prise en charge des applications clientes Office 365 — authentification basée sur les certificats
+# <a name="microsoft-365-client-app-support--certificate-based-authentication"></a>Prise en charge des applications clientes Microsoft 365 — authentification basée sur les certificats
 
-*Cet article est valable pour Office 365 Entreprise et Microsoft 365 Entreprise*.
+*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
 
 L’authentification basée sur les certificats vous permet de vous authentifier auprès d’Azure Active Directory avec un certificat client sur des appareils Windows, Android ou iOS. La configuration de cette fonctionnalité élimine le besoin d’entrer un nom d’utilisateur et un mot de passe dans certains messages et applications Microsoft Office sur votre appareil mobile.
 
@@ -39,7 +39,7 @@ En savoir plus sur [l’authentification basée sur les certificats](https://doc
  - iOS
  - macOS<sup>1</sup> <sup>2</sup>
 
-Pour plus d’informations sur la prise en charge de la plateforme dans Office 365, voir [Configuration requise pour office 365](https://products.office.com/office-system-requirements).
+Pour plus d’informations sur la prise en charge de la plateforme dans Microsoft 365, voir [System Requirements for microsoft 365](https://products.office.com/office-system-requirements).
 
 ## <a name="supported-clients"></a>Clients pris en charge
 
@@ -49,7 +49,7 @@ Les versions les plus récentes des clients suivants prennent en charge l’auth
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | ![Icône Access](media/o365-access-64x64.png) <br> [Access](https://products.office.com/access) | ![Icône Azure](media/o365-azure-64x64.png) <br> [Portail Azure AD <br>](https://azure.microsoft.com/features/azure-portal/) | ![Icône portail d’entreprise](media/o365-microsoft-64x64.png) <br> [Portail d’entreprise <br>](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal) | ![Icône Delve](media/o365-delve-64x64.png) <br> [Delve](https://products.office.com/business/intelligent-search) | ![Icône Dynamics 365](media/o365-dynamics365-64x64.png) <br> [Dynamics 365](https://dynamics.microsoft.com) 
 | ![Icône de serveur Edge](media/o365-edge-64x64.png) <br> [Edge](https://www.microsoft.com/windows/microsoft-edge) | ![Icône Excel](media/o365-excel-64x64.png) <br> [Excel](https://products.office.com/excel) | ![Icône Forms](media/o365-forms-64x64.png) <br> [Forms](https://flow.microsoft.com/connectors/shared_microsoftforms/microsoft-forms/) | ![Icône Kaizala](media/o365-kaizala-64x64.png) <br> [Kaizala](https://products.office.com/en/business/microsoft-kaizala) | ![Icône Office.com](media/o365-office-64x64.png) <br> [Office.com](https://www.office.com/) 
-| ![Icône d’administrateur Office 365](media/o365-o365admin-64x64.png) <br> [Administrateur Office 365 <br>](https://products.office.com/business/manage-office-365-admin-app) | ![Icône de l’objectif](media/o365-lens-64x64.png) <br> [Office Lens](https://www.microsoft.com/p/office-lens/9wzdncrfj3t8?activetab=pivot%3Aoverviewtab) | ![Icône OneDrive entreprise](media/o365-OneDrive-64x64.png) <br> [OneDrive<sup>1</sup>](https://products.office.com/onedrive-for-business/online-cloud-storage) |  ![Icône OneNote](media/o365-OneNote-64x64.png) <br> [OneNote](https://products.office.com/onenote) | ![Icône Outlook](media/o365-outlook-64x64.png) <br> [Outlook](https://products.office.com/outlook) 
+| ![Icône d’administrateur Office 365](media/o365-o365admin-64x64.png) <br> [Administrateur 365 Microsoft <br>](https://products.office.com/business/manage-office-365-admin-app) | ![Icône de l’objectif](media/o365-lens-64x64.png) <br> [Office Lens](https://www.microsoft.com/p/office-lens/9wzdncrfj3t8?activetab=pivot%3Aoverviewtab) | ![Icône OneDrive entreprise](media/o365-OneDrive-64x64.png) <br> [OneDrive<sup>1</sup>](https://products.office.com/onedrive-for-business/online-cloud-storage) |  ![Icône OneNote](media/o365-OneNote-64x64.png) <br> [OneNote](https://products.office.com/onenote) | ![Icône Outlook](media/o365-outlook-64x64.png) <br> [Outlook](https://products.office.com/outlook) 
 | ![Icône planificateur](media/o365-planner-64x64.png) <br> [Planner](https://products.office.com/business/task-management-software) | ![Icône PowerApp](media/o365-powerapps-64x64.png) <br> [PowerApps<sup>3</sup>](https://powerapps.microsoft.com) | ![Icône de mise en marche automatique](media/o365-flow-64x64.png) <br> [Automate d’alimentation <br>](https://flow.microsoft.com) | ![Icône PowerBI](media/o365-powerbi-64x64.png) <br> [Power BI](https://powerbi.microsoft.com)| ![Icône PowerPoint](media/o365-powerpoint-64x64.png) <br> [PowerPoint](https://products.office.com/powerpoint) 
 | ![Icône Project](media/o365-project-64x64.png) <br> [Project](https://products.office.com/project) | ![Icône Publisher](media/o365-publisher-64x64.png) <br> [Publisher](https://products.office.com/publisher) | ![Icône de SharePoint](media/o365-sharepoint-64x64.png) <br> [SharePoint](https://products.office.com/sharepoint) | ![Icône Skype Entreprise](media/o365-skypeforbusiness-64x64.png) <br> [Skype <br> entreprise](https://www.skype.com/business/) | ![Icône de pense-bête](media/o365-stickynotes-64x64.png) <br> [Notes du pense-bête](https://www.microsoft.com/p/microsoft-sticky-notes/9nblggh4qghw) 
 | ![Icône Stream](media/o365-stream-64x64.png) <br> [Stream](https://stream.microsoft.com) | ![Icône Sway](media/o365-sway-64x64.png) <br> [Sway](https://sway.com) | ![Icône Teams](media/o365-teams-64x64.png) <br> [Teams<sup>2</sup>](https://products.office.com/microsoft-teams/group-chat-software) | ![Icône action](media/o365-todo-64x64.png) <br> [Action](https://todo.microsoft.com) | ![Icône Visio](media/o365-visio-64x64.png) <br> [Visio](https://products.office.com/visio/flowchart-software) 

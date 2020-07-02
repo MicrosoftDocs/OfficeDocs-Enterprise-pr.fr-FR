@@ -18,18 +18,16 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: "Summary: Learn core cloud architecture concepts for Microsoft identity, security, networking, and hybrid. Review prescriptive recommendations for protecting files, identities, and devices when using Microsoft's cloud."
-ms.openlocfilehash: b868394d12f65d9169203da275cef5fbb2f619e4
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: c1d41fa4ca098a913c7fea039765f916614c7f9c
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44736042"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997896"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Ressources relatives à l’architecture informatique du cloud Microsoft
 
- **Résumé :** découvrez les concepts de base de l’architecture cloud pour l’identité, la sécurité, la mise en réseau et les fonctionnalités hybrides de Microsoft. Étudiez les recommandations normatives pour la protection des fichiers, des identités et des appareils lorsque vous utilisez le cloud de Microsoft.
-  
-These architecture tools and posters give you information about Microsoft cloud services, including Office 365, Windows 10, Azure Active Directory, Microsoft Intune, Microsoft Dynamics 365, and hybrid on-premises and cloud solutions. IT decision makers and architects can use these resources to determine the ideal solutions for their workloads and to make decisions about core infrastructure components such as identity and security. 
+Ces outils et affiches d’architecture vous fournissent des informations sur les services de Cloud Computing Microsoft, notamment Microsoft 365, Windows 10, Azure Active Directory, Microsoft Intune, Microsoft Dynamics 365 et les solutions hybrides locales et de Cloud. Les architectes et décisionnaires informatiques peuvent utiliser ces ressources en vue d'identifier la solution idéale pour leurs charges de travail et lors de la prise de décisions concernant les principaux composants d'infrastructure tels que la sécurité et l'identité. 
   
 <!--**[Microsoft's Enterprise Cloud Roadmap](microsoft-cloud-it-architecture-resources.md#roadmap)** (Sway) -->
     
@@ -69,7 +67,7 @@ See the posters, icon sets, community venues, and other resources that describe 
 <a name="cloudarch"></a>
 ##Série de documents sur le cloud Microsoft pour les architectes d’entreprise
 
-These cloud architecture posters give you information about Microsoft cloud services, including Office 365, Azure Active Directory, Microsoft Intune, Microsoft Dynamics CRM Online, and hybrid on-premises and cloud solutions. IT decision makers and architects can use these resources to determine the ideal solutions for their workloads and to make decisions about core infrastructure components such as identity and security.
+Ces affiches sur l’architecture Cloud vous fournissent des informations sur les services de Cloud Computing Microsoft, notamment Microsoft 365, Azure Active Directory, Microsoft Intune, Microsoft Dynamics CRM Online et les solutions hybrides locales et de Cloud. Les architectes et décisionnaires informatiques peuvent utiliser ces ressources en vue d'identifier la solution idéale pour leurs charges de travail et lors de la prise de décisions concernant les principaux composants d'infrastructure tels que la sécurité et l'identité.
 
 <!--  
 <a name="platformoptions"></a>
@@ -79,7 +77,7 @@ Learn key differences between Microsoft cloud services and platform offerings. F
   
 |**Item**|**Description**|
 |:-----|:-----|
-|[![Thumb image of cloud architecture model with service options](media/ff5c74e2-afc6-40c1-9292-cc4cb128cdd1.png)          ](https://www.microsoft.com/download/details.aspx?id=54432) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=524731)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=524732)  \| [More languages](https://www.microsoft.com/download/details.aspx?id=54432) <br/> | This model describes: <ul><li>  Software as a Service (SaaS) offerings, including Office 365 </li><li>  Platform as a Service (PaaS) features in Microsoft Azure </li><li>  Infrastructure as a Service (IaaS) features in Microsoft Azure </li><li>  Private cloud datacenter capabilities using Windows Server and System Center </li><li>  Learn how Microsoft's own IT department is migrating to these cloud services and building its hybrid cloud. </li></ul><br/>|
+|[![Thumb image of cloud architecture model with service options](media/ff5c74e2-afc6-40c1-9292-cc4cb128cdd1.png)          ](https://www.microsoft.com/download/details.aspx?id=54432) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=524731)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=524732)  \| [More languages](https://www.microsoft.com/download/details.aspx?id=54432) <br/> | This model describes: <ul><li>  Software as a Service (SaaS) offerings, including Microsoft 365 </li><li>  Platform as a Service (PaaS) features in Microsoft Azure </li><li>  Infrastructure as a Service (IaaS) features in Microsoft Azure </li><li>  Private cloud datacenter capabilities using Windows Server and System Center </li><li>  Learn how Microsoft's own IT department is migrating to these cloud services and building its hybrid cloud. </li></ul><br/>|
 -->
 
    
@@ -117,7 +115,7 @@ Tout ce que les architectes informatiques doivent savoir sur l’hybridation du 
   
 |**Élément**|**Description**|
 |:-----|:-----|
-|[![Image miniature représentant le modèle du cloud hybride Microsoft](media/9989c71e-f6a0-4dbe-906c-43e67b3ce537.png)](media/Hybrid-Poster/MSFT_cloud_architecture_hybrid.pdf) <br/> [PDF](media/Hybrid-Poster/MSFT_cloud_architecture_hybrid.pdf)  \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/Hybrid-Poster/MSFT_cloud_architecture_hybrid.vsdx)  | Ce modèle contient : <ul><li> Offres du cloud Microsoft (SaaS, Azure PaaS et Azure IaaS) et leurs éléments communs </li><li> Architecture de Cloud hybride pour les offres Cloud de Microsoft </li><li> Scénarios de cloud hybride pour les services SaaS Microsoft (Office 365), Azure PaaS et Azure IaaS </li></ul><br/>|
+|[![Image miniature représentant le modèle du cloud hybride Microsoft](media/9989c71e-f6a0-4dbe-906c-43e67b3ce537.png)](media/Hybrid-Poster/MSFT_cloud_architecture_hybrid.pdf) <br/> [PDF](media/Hybrid-Poster/MSFT_cloud_architecture_hybrid.pdf)  \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/Hybrid-Poster/MSFT_cloud_architecture_hybrid.vsdx)  | Ce modèle contient : <ul><li> Offres du cloud Microsoft (SaaS, Azure PaaS et Azure IaaS) et leurs éléments communs </li><li> Architecture de Cloud hybride pour les offres Cloud de Microsoft </li><li> Scénarios de Cloud hybride pour Microsoft SaaS (Microsoft 365), Azure PaaS et Azure IaaS </li></ul><br/>|
    
 <a name="attacks"></a>
 ### <a name="common-attacks-and-microsoft-capabilities-that-protect-your-organization"></a>Attaques courantes et fonctionnalités Microsoft pour protéger votre organisation
@@ -132,7 +130,7 @@ Découvrez les cyberattaques les plus courantes et comment Microsoft peut aider 
 
 Obtenez un aperçu rapide de [l'infrastructure de base](https://docs.microsoft.com/microsoft-365/enterprise/deploy-foundation-infrastructure) pour Microsoft 365 Enterprise pour commencer votre déploiement.
   
-|**Item**|**Description**|
+|**Élément**|**Description**|
 |:-----|:-----|
 |[![Image miniature de l’affiche de l’Infrastructure de base de Microsoft 365 Entreprise](media/Microsoft365EnterpriseFoundInfra-thumb.png)](https://aka.ms/m365efoundinfraposter) <br/> [Consulter en ligne](https://aka.ms/m365efoundinfraposter) \| [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf) <br/> | Cette affiche synthétise chaque phase de l’infrastructure de base en termes des objectifs, des fonctionnalités et des outils, des décisions de conception, des résultats de configuration, de l’intégration et du suivi et des mises à jour en continu. <br/>| 
 
@@ -159,7 +157,7 @@ L’architecture logique de services de productivité dans Microsoft 365, foncti
 ### <a name="groups-in-microsoft-365-for-it-architects"></a>Groupes dans Microsoft 365 pour les architectes informatique
 Quels sont les besoins des architectes informatique concernant les groupes dans Microsoft 365
 
-|**Item**|**Description**|
+|**Élément**|**Description**|
 |:-----|:-----|
 |[![Image miniature pour les groupes infographie](downloads/msft-m365-groups-architecture-thumb.png)](downloads/msft-m365-groups.pdf) <br/> [PDF](downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) |Ces illustrations décrivent les différents types de groupes, la manière dont ceux-ci sont créés et gérés et quelques recommandations en matière de gouvernance.|
 

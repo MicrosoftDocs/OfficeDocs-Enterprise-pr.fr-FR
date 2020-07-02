@@ -13,16 +13,16 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010 est à la fin de la prise en charge. Utilisez cette feuille de route de planification comme guide pour préparer la mise à niveau vers Exchange Online ou une version plus récente d’Exchange Server en local.
-ms.openlocfilehash: ddf2a099688e55e5e0650a030eb2a33293b21eb2
-ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
+ms.openlocfilehash: 84adfa0216f3e4e8157dfe0717c178a0ece3cc4f
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42979340"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998042"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Feuille de route pour la fin de la prise en charge d'Exchange 2010
 
-*Cet article est valable pour Office 365 Entreprise et Microsoft 365 Entreprise*.
+*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
 
 Le **13 octobre 2020**, Exchange Server 2010 atteindra la fin de la prise en charge. Si vous n’avez pas encore commencé la migration d’Exchange 2010 vers Office 365 ou Exchange 2016, il est temps de commencer votre planification.
 
@@ -88,7 +88,7 @@ En fonction de votre organisation, vous disposez de plusieurs options qui vous a
 |--------------------------|-----------------------|---------------------|
 | Migration à basculement        | Moins de 150 sièges  | Une semaine ou moins      |
 | Migration hybride minimale | Moins de 150 sièges  | Quelques semaines ou moins |
-| Migration hybride complète    | Plus de 150 sièges   | Quelques semaines ou plus |
+| Migration complète hybride    | Plus de 150 sièges   | Quelques semaines ou plus |
 
 Les sections suivantes vous donnent une vue d’ensemble de ces méthodes. Vérifiez que vous avez [choisi un chemin de migration](https://support.office.com/article/Decide-on-a-migration-path-0d4f2396-9cef-43b8-9bd6-306d01df1e27) pour connaître les détails de chaque méthode.
 
@@ -146,8 +146,8 @@ Les migrations hybrides complètes sont idéales pour les organisations qui s’
 Si vous envisagez d’effectuer une migration hybride complète, voici quelques éléments à prendre en compte :
 
 - Les migrations hybrides complètes ne sont pas adaptées à tous les types d’organisations. En raison de la complexité des migrations hybrides complètes, les organisations avec moins de quelques centaines de boîtes aux lettres ne voient généralement pas les avantages qui justifient les efforts et les coûts qu’il est nécessaire de définir. Si cela ressemble à votre organisation, nous vous recommandons vivement de prendre en compte le basculement ou les migrations hybrides minimales ;
-- Vous devez configurer la synchronisation d’annuaires à l’aide d’Azure Active Directory Connect (AADConnect) entre vos serveurs Active Directory locaux et Office 365 ;
-- Les utilisateurs peuvent se connecter à leur boîte aux lettres Office 365 en utilisant les mêmes nom d’utilisateur et mot de passe qu’ils utilisent lorsqu’ils se connectent au réseau local (nécessite Azure Active Directory Connect avec synchronisation de mot de passe et/ou services ADFS (Active Directory Federation Services));
+- Vous devez configurer la synchronisation d’annuaires à l’aide d’Azure Active Directory (Azure AD) se connecter entre vos serveurs Active Directory locaux et Office 365 ;
+- Les utilisateurs peuvent se connecter à leur boîte aux lettres Office 365 en utilisant les mêmes nom d’utilisateur et mot de passe qu’ils utilisent lorsqu’ils se connectent au réseau local (nécessite Azure AD Connect avec synchronisation de mot de passe et/ou Active Directory Federation Services);
 - Vous avez besoin d’une licence Office 365 qui inclut Exchange Online pour chaque boîte aux lettres d’utilisateur que vous migrez ;
 - Les utilisateurs n’ont pas besoin de configurer un nouveau profil Outlook sur la plupart de leurs appareils (certains anciens téléphones Android peuvent avoir besoin d’un nouveau profil) et n’ont pas besoin de télécharger de nouveau leur courrier électronique.
 
@@ -164,7 +164,7 @@ Si une migration hybride complète vous paraît, jetez un œil aux ressources su
 
 ## <a name="upgrade-to-a-newer-version-of-exchange-server-on-premises"></a>Effectuer une mise à niveau vers une version plus récente d’Exchange Server en local
 
-Bien que nous pensons fortement que vous pouvez obtenir la meilleure valeur et l’expérience utilisateur en effectuant une migration complète vers Office 365, nous comprenons également que certaines organisations doivent conserver certains serveurs Exchange en local. Cela peut être dû à des exigences réglementaires, afin de garantir que les données ne sont pas stockées dans un centre de données situé dans un autre pays, ou parce que vous avez des paramètres ou des exigences uniques qui ne peuvent pas être satisfaits dans le Cloud, ou que vous pouvez simplement utiliser Exchange pour gérer les boîtes aux lettres Cloud, car vous utilisez toujours Active Directory en local. Dans tous les cas pour lesquels vous choisissez ou devez conserver Exchange local, vous devez vous assurer que votre environnement Exchange 2010 est mis à niveau vers au moins Exchange 2013 ou Exchange 2016 et qu’Exchange 2010 est supprimé avant la fin de la date de prise en charge.
+Bien que nous pensons fortement que vous pouvez obtenir la meilleure valeur et l’expérience utilisateur en effectuant une migration complète vers Office 365, nous comprenons également que certaines organisations doivent conserver certains serveurs Exchange en local. Cela peut être dû à des exigences réglementaires, afin de garantir que les données ne sont pas stockées dans un centre de données situé dans un autre pays, ou parce que vous avez des paramètres ou des exigences uniques qui ne peuvent pas être satisfaits dans le Cloud, ou que vous pouvez simplement utiliser Exchange pour gérer les boîtes aux lettres dans le Cloud, car vous utilisez toujours Active Directory en local. Dans tous les cas pour lesquels vous choisissez ou devez conserver Exchange local, vous devez vous assurer que votre environnement Exchange 2010 est mis à niveau vers au moins Exchange 2013 ou Exchange 2016 et qu’Exchange 2010 est supprimé avant la fin de la date de prise en charge.
 
 Pour une expérience optimale, nous vous recommandons de mettre à niveau votre environnement local restant vers Exchange 2016. Vous n’avez pas besoin d’installer Exchange Server 2013 si vous voulez effectuer directement à partir d’Exchange Server 2010 vers Exchange Server 2016.
 

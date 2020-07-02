@@ -1,7 +1,7 @@
 ---
-title: Isolation du client dans Office 365
-ms.author: robmazz
-author: robmazz
+title: Isolation du client dans Microsoft 365
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Résumé de la manière dont Microsoft applique l’isolation du client pour Office 365.
-ms.openlocfilehash: 5b9db878fce46e02815a06b16271289d199105a0
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Résumé de la manière dont Microsoft applique l’isolation du client pour Microsoft 365.
+ms.openlocfilehash: 891fdb9bebb500c40a9658d170942ca396facfd1
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844295"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998643"
 ---
-# <a name="tenant-isolation-in-office-365"></a>Isolation du client dans Office 365
+# <a name="tenant-isolation-in-microsoft-365"></a>Isolation du client dans Microsoft 365
 
 L’un des principaux avantages du Cloud Computing est le concept d’une infrastructure commune partagée entre plusieurs clients simultanément, conduisant à des économies d’échelle. Ce concept *est appelé architecture mutualisée*. Microsoft continue de s’assurer que l’architecture mutualisée de nos services Cloud prend en charge les normes de sécurité, de confidentialité, de confidentialité, d’intégrité et de disponibilité au niveau de l’entreprise.
 
@@ -33,12 +33,12 @@ Les deux principaux objectifs du maintien de l’isolation des clients dans un e
 1.  Empêcher la fuite ou l’accès non autorisé au contenu du client dans les clients ; les
 2.  Empêcher les actions d’un client d’affecter le service à un autre client
 
-Plusieurs formes de protection ont été mises en œuvre partout dans Office 365 pour empêcher les clients de commettre des services ou des applications Office 365 ou d’obtenir un accès non autorisé aux informations d’autres clients ou au système Office 365 lui-même, notamment :
+Plusieurs formes de protection ont été mises en œuvre dans Microsoft 365 pour empêcher les clients de compromettre les services ou les applications Microsoft 365 ou d’obtenir un accès non autorisé aux informations d’autres clients ou au système Microsoft 365 lui-même, notamment :
 
-- L’isolation logique du contenu client au sein de chaque client pour les services Office 365 est obtenue via le contrôle d’accès basé sur les rôles et l’autorisation Azure Active Directory.
+- L’isolation logique du contenu client au sein de chaque client pour les services Microsoft 365 est obtenue via le contrôle d’accès basé sur les rôles et l’autorisation Azure Active Directory.
 - SharePoint Online fournit des mécanismes d’isolation des données au niveau du stockage.
-- Microsoft utilise une sécurité physique rigoureuse, un filtrage en arrière-plan et une stratégie de chiffrement multicouche pour protéger la confidentialité et l’intégrité du contenu du client. Tous les centres de donnees Office 365 ont des contrôles d’accès biométriques, avec la plupart des impressions Palm requises pour obtenir un accès physique. En outre, tous les employés Microsoft américains doivent être tenus de suivre une vérification de fond standard dans le cadre du processus d’embauche. Pour plus d’informations sur les contrôles utilisés pour l’accès administratif dans Office 365, reportez-vous à la rubrique [office 365 administrative Access Controls](office-365-administrative-access-controls-overview.md).
-- Office 365 utilise des technologies côté service qui chiffrent le contenu du client au repos et en transit, notamment BitLocker, le chiffrement par fichier, le chiffrement TLS (Transport Layer Security) et la sécurité du protocole Internet (IPsec). Pour plus d’informations sur le chiffrement dans Office 365, consultez la rubrique [technologies de chiffrement de données dans office 365](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview).
+- Microsoft utilise une sécurité physique rigoureuse, un filtrage en arrière-plan et une stratégie de chiffrement multicouche pour protéger la confidentialité et l’intégrité du contenu du client. Tous les centres de donnees Microsoft 365 ont des contrôles d’accès biométriques, dont le plus besoin de l’impression de Palm pour obtenir un accès physique. En outre, tous les employés Microsoft américains doivent être tenus de suivre une vérification de fond standard dans le cadre du processus d’embauche. Pour plus d’informations sur les contrôles utilisés pour l’accès administratif dans Microsoft 365, consultez la rubrique [microsoft 365 administrative Access Controls](office-365-administrative-access-controls-overview.md).
+- Microsoft 365 utilise des technologies côté service qui chiffrent le contenu du client au repos et en transit, notamment BitLocker, le chiffrement par fichier, le chiffrement TLS (Transport Layer Security) et la sécurité du protocole Internet (IPsec). Pour plus d’informations sur le chiffrement dans Microsoft 365, consultez la rubrique [technologies de chiffrement de données dans microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview).
 
 Ensemble, les protections mentionnées ci-dessus fournissent des contrôles d’isolation logiques robustes qui fournissent une protection contre les menaces et une atténuation équivalente à celles fournies par l’isolation physique seule.
 
@@ -46,8 +46,8 @@ Ensemble, les protections mentionnées ci-dessus fournissent des contrôles d’
 
 - [Isolation et contrôle d’accès dans Azure Active Directory](office-365-isolation-in-azure-active-directory.md)
 - [Isolation du client dans Office Graph et Delve](office-365-isolation-in-graph-and-delve.md)
-- [Isolation du client dans Office 365 Search](office-365-isolation-in-office-365-search.md)
+- [Isolation du client dans Microsoft 365 Search](office-365-isolation-in-office-365-search.md)
 - [Isolation du client dans Office 365 Video](office-365-isolation-in-office-365-video.md)
 - [Limites de ressources](office-365-resource-limits.md)
 - [Surveillance et test des limites du client](office-365-monitoring-and-testing.md)
-- [Isolation et contrôle d’accès dans Office 365](office-365-isolation-in-office-365.md)
+- [Isolation et contrôle d’accès dans Microsoft 365](office-365-isolation-in-office-365.md)

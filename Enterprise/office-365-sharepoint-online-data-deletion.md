@@ -1,7 +1,7 @@
 ---
-title: Suppression des données SharePoint Online d’Office 365
-ms.author: robmazz
-author: robmazz
+title: Suppression de données SharePoint Online Microsoft 365
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,14 +16,14 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Explication de la suppression de données dans SharePoint Online.
-ms.openlocfilehash: fbb81d4f2440dc34ec261e943436c656f8266e8f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: f67fcedcb4454b06e47df12338445d07af2aa3e3
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41842041"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997814"
 ---
-# <a name="sharepoint-online-data-deletion-in-office-365"></a>Suppression des données SharePoint Online dans Office 365
+# <a name="sharepoint-online-data-deletion-in-microsoft-365"></a>Suppression des données SharePoint Online dans Microsoft 365
 
 SharePoint Online stocke les objets en tant que code abstrait dans les bases de données d’application. Lorsqu’un utilisateur télécharge un fichier vers SharePoint Online, ce fichier est décomposé et converti en code d’application et stocké dans plusieurs tables sur plusieurs bases de données. Dans SharePoint Online, tout le contenu qu’un client télécharge est divisé en segments, chiffrés (éventuellement avec plusieurs clés AES 256 bits) et distribué dans le centre de données. Pour plus d’informations sur le processus de segmentation et de chiffrement, voir [chiffrement dans le Cloud Microsoft](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview). 
 
@@ -40,6 +40,6 @@ Lorsque vous supprimez une collection de sites, vous supprimez également la hi�
 
 Si vous supprimez accidentellement une collection de sites, elle peut être restaurée par un administrateur global ou SharePoint à l’aide du centre d’administration SharePoint.
 
-Les collections de sites supprimées sont conservées pendant 93 jours. Après 93 jours, les sites et tous leurs contenus et paramètres sont définitivement supprimés, y compris les listes, les bibliothèques, les pages et les sous-sites.
+Les collections de sites supprimées sont conservées pendant 93 jours. Après 93 jours, les sites et tous leurs contenus et paramètres sont supprimés définitivement, y compris les listes, bibliothèques, pages et tous les sous-sites.
 
 La suppression matérielle se produit lorsqu’un utilisateur purge les éléments supprimés de la corbeille de la collection de sites, lorsque les périodes de rétention et de sauvegarde expirent, ou lorsqu’un administrateur supprime définitivement une collection de sites à l’aide de la [cmdlet Remove-spodeletedsit](/powershell/module/sharepoint-online/Remove-SPODeletedSite?view=sharepoint-ps). Quand un utilisateur supprime (supprime définitivement ou purge) le contenu de SharePoint Online, toutes les clés de chiffrement pour les segments supprimés sont également supprimées. Les blocs sur les disques qui stockaient les segments supprimés précédemment sont marqués comme inutilisés et disponibles pour une réutilisation.

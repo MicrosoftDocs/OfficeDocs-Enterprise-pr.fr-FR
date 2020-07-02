@@ -1,7 +1,7 @@
 ---
 title: Fonctionnalités de création de rapports Microsoft 365
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Explication des fonctionnalités de création de rapports dans Microsoft 365.
-ms.openlocfilehash: 1b8a75504712a46faa8b6fff8dfe20f3f3c6cf79
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.openlocfilehash: 3e92427aaeec0a8472d6efd7a977bb4f74434555
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774459"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997784"
 ---
 # <a name="microsoft-365-reporting-features"></a>Fonctionnalités de création de rapports Microsoft 365 
 
@@ -57,7 +57,7 @@ Les rapports d’audit Exchange Online incluent des détails sur l’accès aux 
 > [!NOTE]
 > Vous devez activer l’enregistrement d’audit de boîte aux lettres pour chaque boîte aux lettres afin que les événements audités soient enregistrés dans le journal d’audit de cette boîte aux lettres. Si la journalisation d’audit des boîtes aux lettres n’est pas activée pour une boîte aux lettres, les événements de cette boîte aux lettres ne seront pas enregistrés dans le journal d’audit et n’apparaîtront pas dans les rapports d’audit Pour plus d’informations, consultez la rubrique [activer l’audit de boîte aux lettres](https://support.office.com/article/Enable-mailbox-auditing-in-Office-365-aaca8987-5b62-458b-9882-c28476a66918).
 
-| Task | Description |
+| Tâche | Description |
 |----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Exécuter un rapport d’accès aux boîtes aux lettres par des non-propriétaires](https://docs.microsoft.com/exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report) | Affiche la liste des boîtes aux lettres auxquelles une personne autre que le propriétaire de la boîte aux lettres a accédé. Le rapport contient des informations sur la personne ayant accédé à la boîte aux lettres, les actions qu’elle a effectuées dans la boîte aux lettres et si les actions ont réussi. |
 | [Exporter les journaux d’audit de boîte aux lettres](https://docs.microsoft.com/exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs) | Les journaux d’audit de boîte aux lettres contiennent des informations sur l’accès et les actions dans une boîte aux lettres effectuée par un utilisateur autre que le propriétaire de la boîte aux lettres. Les administrateurs peuvent spécifier des boîtes aux lettres avec une plage de dates pour générer des rapports. Les journaux sont exportés au format XML, joints à un message, et envoyés à des utilisateurs spécifiques en fonction de l’administrateur. |

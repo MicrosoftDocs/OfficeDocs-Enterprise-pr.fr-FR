@@ -1,5 +1,5 @@
 ---
-title: Isolation et contrôle d’accès dans Microsoft 365
+title: Isolation et contrôle d’accès dans Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,16 +16,16 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 'Résumé : explication de l’isolation et du contrôle d’accès dans les différentes applications de Microsoft 365.'
-ms.openlocfilehash: 9c1043305f00a7009a89072036bb6bcc54e6119c
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: fc0aa37025936a1a60cfbb8914b079eba5ba2e7f
+ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998788"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45052587"
 ---
-# <a name="isolation-and-access-control-in-microsoft-365"></a>Isolation et contrôle d’accès dans Microsoft 365
+# <a name="isolation-and-access-control-in-microsoft-365"></a>Isolation et contrôle d’accès dans Microsoft 365
 
-Azure active direct (Azure AD) et Microsoft 365 utilisent un modèle de données hautement complexe qui inclut des dizaines de services, des centaines d’entités, des milliers de relations et des dizaines de milliers d’attributs. À un niveau élevé, Azure AD et les annuaires de services sont les conteneurs de clients et de destinataires maintenus synchronisés à l’aide de protocoles de réplication basée sur l’État. En plus des informations d’annuaire stockées dans Azure AD, chacune des charges de travail de service ont leur propre infrastructure de services d’annuaire.
+Azure Active Directory (Azure AD) et Microsoft 365 utilisent un modèle de données hautement complexe qui inclut des dizaines de services, des centaines d’entités, des milliers de relations et des dizaines de milliers d’attributs. À un niveau élevé, Azure AD et les annuaires de services sont les conteneurs de clients et de destinataires maintenus synchronisés à l’aide de protocoles de réplication basée sur l’État. En plus des informations d’annuaire stockées dans Azure AD, chacune des charges de travail de service ont leur propre infrastructure de services d’annuaire.
  
 ![Synchronisation des données client Microsoft 365](media/office-365-isolation-tenant-data-sync.png)
 
@@ -33,7 +33,7 @@ Dans ce modèle, il n’existe pas de source unique de données d’annuaire. Sy
 
 Microsoft 365 utilise à la fois le stockage physique et le stockage cloud Azure. Exchange Online (y compris Exchange Online Protection) et Skype entreprise utilisent leur propre espace de stockage pour les données client. SharePoint Online utilise à la fois le stockage SQL Server et Azure Storage, ce qui nécessite une isolation supplémentaire des données client au niveau du stockage.
 
-## <a name="exchange-online"></a>Exchange Online
+## <a name="exchange-online"></a>Exchange Online
 
 Exchange Online stocke les données client dans les boîtes aux lettres. Les boîtes aux lettres sont hébergées dans des bases de données ESE (Extensible Storage Engine) appelées bases de données de boîtes aux lettres. Cela inclut les boîtes aux lettres utilisateur, les boîtes aux lettres liées, les boîtes aux lettres partagées et les boîtes aux lettres de dossiers publics. Les boîtes aux lettres utilisateur incluent le contenu Skype entreprise enregistré, tel que l’historique des conversations.
 

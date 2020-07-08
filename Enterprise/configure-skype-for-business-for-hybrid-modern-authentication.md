@@ -15,37 +15,37 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: L’authentification moderne est une méthode de gestion des identités qui offre une authentification et une autorisation utilisateur plus sécurisées, est disponible pour Skype entreprise Server en local et Exchange Server en local, ainsi qu’hybrides Skype entreprise mixtes.
-ms.openlocfilehash: bd287bc768aa43c95bc073892b79b7f5aed969df
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: L’authentification moderne est une méthode de gestion des identités qui offre une authentification et une autorisation utilisateur plus sécurisées, est disponible pour Skype entreprise Server local et Exchange Server local, ainsi que pour les hybrides Skype entreprise mixtes.
+ms.openlocfilehash: 6415fe374f63093b44ebacc125dc40c9ea70e898
+ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997430"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45052507"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Comment configurer Skype Entreprise en local pour utiliser l’authentification moderne hybride
 
 *Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
 
-L’authentification moderne est une méthode de gestion des identités qui offre une authentification et une autorisation utilisateur plus sécurisées, est disponible pour Skype entreprise Server en local et Exchange Server en local, ainsi qu’hybrides Skype entreprise mixtes.
+L’authentification moderne est une méthode de gestion des identités qui offre une authentification et une autorisation utilisateur plus sécurisées, est disponible pour Skype entreprise Server local et Exchange Server local, ainsi que pour les hybrides Skype entreprise mixtes.
   
  **Important** Souhaitez-vous en savoir plus sur l’authentification moderne (MA) et pourquoi choisir de l’utiliser dans votre entreprise ou organisation ? Pour obtenir une vue d’ensemble, consultez [ce document](hybrid-modern-auth-overview.md) . Si vous avez besoin de savoir quelles topologies Skype entreprise sont prises en charge avec MA, il est documenté ici.
   
- **Avant de commencer**, j’appelle :
+ **Avant de commencer**, j’utilise les termes suivants :
   
-- MA de l’authentification moderne \>
+- Authentification moderne (MA)
 
-- HMA d’authentification moderne hybride \>
+- Authentification moderne hybride (HMA)
 
-- Exch Exchange sur site \>
+- Exchange local (EXCH)
 
-- Exchange Online \> exo
+- Exchange Online (EXO)
 
-- SFB locale Skype entreprise \>
+- Skype entreprise en local (SFB)
 
-- et Skype entreprise Online \> SFBO
+- Skype entreprise Online (SFBO)
 
-En outre, si un objet de cet article a un objet grisé ou grisé, cela signifie que l’élément affiché en gris **n’est pas** inclus dans la configuration propre à l’agent d’extraction.
+En outre, si un objet graphique de cet article a un objet grisé ou grisé, cela signifie que l’élément affiché en gris **n’est pas** inclus dans la configuration propre à l’agent de récupération.
   
 ## <a name="read-the-summary"></a>Lire le résumé
 
@@ -65,7 +65,7 @@ Cette synthèse décompose le processus en étapes qui pourraient autrement se p
 
 1. Activez l’authentification moderne hybride pour Skype entreprise en local.
 
-Ces étapes activent MA pour SFB, SFBO, EXCH et EXO-autrement dit, tous les produits pouvant participer à une configuration HMA de SFB et SFBO (y compris les dépendances de EXCH/EXO). En d’autres termes, si vos utilisateurs sont hébergés dans ou si des boîtes aux lettres sont créées dans n’importe quelle partie de l’environnement hybride (EXO + SFBO, EXO + SFB, EXCH + SFBO ou EXCH + SFB), votre produit fini se présente comme suit :
+Ces étapes activent l’agent de configuration pour SFB, SFBO, EXCH et EXO-autrement dit, tous les produits pouvant participer à une configuration de la haute disponibilité de SFB et SFBO (y compris les dépendances de EXCH/EXO). En d’autres termes, si vos utilisateurs sont hébergés dans ou si des boîtes aux lettres sont créées dans n’importe quelle partie de l’environnement hybride (EXO + SFBO, EXO + SFB, EXCH + SFBO ou EXCH + SFB), votre produit fini se présente comme suit :
   
 ![Une topologie de 6 Skype entreprise HMA mixte est associée aux quatre emplacements possibles.](media/ab89cdf2-160b-49ac-9b71-0160800acfc8.png)
   
@@ -89,7 +89,7 @@ Une fois que vous avez vérifié que vous répondez aux [conditions préalables]
 
 - **URL du service Web SFB 2015 CU5**
 
-Vous aurez besoin d’une URL de service Web interne et externe pour tous les pools SfB 2015 déployés. Pour obtenir ces informations, exécutez la commande suivante à partir de Skype entreprise Management Shell :
+vous aurez besoin d’URL de services Web internes et externes pour tous les pools SfB 2015 déployés. Pour obtenir ces informations, exécutez la commande suivante à partir de Skype entreprise Management Shell :
   
 ```powershell
 Get-CsService -WebServer | Select-Object PoolFqdn, InternalFqdn, ExternalFqdn | FL
@@ -115,13 +115,13 @@ Suivez les instructions ci-dessous : [procédure de configuration d’Exchange 
   
 ## <a name="turn-on-hybrid-modern-authentication-for-skype-for-business-on-premises"></a>Activer l’authentification moderne hybride pour Skype entreprise en local
 
-### <a name="add-on-premises-web-service-urls-as-spns-in-azure-ad"></a>Ajouter des URL de service Web sur site en tant que SPN dans Azure AD
+### <a name="add-on-premises-web-service-urls-as-spns-in-azure-active-directory"></a>Ajouter des URL de service Web sur site en tant que SPN dans Azure Active Directory
 
 À présent, vous devez exécuter des commandes pour ajouter les URL (collectées précédemment) en tant que principaux de service dans SFBO.
   
  **Note** Les noms de principaux du service (SPN) identifient les services Web et les associent à un principal de sécurité (par exemple, un nom de compte ou un groupe) afin que le service puisse agir au nom d’un utilisateur autorisé. Les clients qui s’authentifient sur un serveur utilisent les informations contenues dans les noms principaux de client.
   
-1. Tout d’abord, connectez-vous à AAD en utilisant [ces instructions](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0).
+1. Tout d’abord, connectez-vous à Azure Active Directory (Azure AD) avec [ces instructions](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0).
 
 2. Exécutez cette commande, en local, pour obtenir la liste des URL de service Web SFB.
 
@@ -144,7 +144,7 @@ $x.ServicePrincipalnames.Add("https://lyncwebext01.contoso.com/")
 Set-MSOLServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
 ```
   
-4. Vérifiez que vos nouveaux enregistrements ont été ajoutés en exécutant de nouveau la commande **Get-MsolServicePrincipal** à partir de l’étape 2 et en examinant la sortie. Comparez la liste/capture d’écran de l’avant à la nouvelle liste de noms principaux de vente (vous pouvez également créer une capture d’écran de la nouvelle liste pour vos enregistrements). Si vous avez réussi, vous verrez les deux nouvelles URL dans la liste. À l’aide de notre exemple, la liste des SPN inclut désormais les URL spécifiques https://lyncwebint01.contoso.com et https://lyncwebext01.contoso.com/ .
+4. Vérifiez que vos nouveaux enregistrements ont été ajoutés en exécutant de nouveau la commande **Get-MsolServicePrincipal** à partir de l’étape 2 et en examinant la sortie. Comparez la liste ou la capture d’écran de l’avant à la nouvelle liste de noms principaux de vente. Vous pouvez également créer une capture d’écran de la nouvelle liste pour vos enregistrements. Si vous avez réussi, vous verrez les deux nouvelles URL dans la liste. À l’aide de notre exemple, la liste des SPN inclut désormais les URL spécifiques https://lyncwebint01.contoso.com et https://lyncwebext01.contoso.com/ .
 
 ### <a name="create-the-evosts-auth-server-object"></a>Créer l’objet serveur d’authentification EvoSTS
 
@@ -156,7 +156,7 @@ New-CsOAuthServer -Identity evoSTS -MetadataURL https://login.windows.net/common
 
 ### <a name="enable-hybrid-modern-authentication"></a>Activer l’authentification moderne hybride
 
-Il s’agit de l’étape qui active l’agent de session. Toutes les étapes précédentes peuvent être exécutées à l’avance sans modifier le flux d’authentification du client. Lorsque vous êtes prêt à modifier le flux d’authentification, exécutez la commande suivante dans Skype for Business Management Shell.
+Il s’agit de l’étape qui active réellement MA. Toutes les étapes précédentes peuvent être exécutées à l’avance sans modifier le flux d’authentification du client. Lorsque vous êtes prêt à modifier le flux d’authentification, exécutez la commande suivante dans Skype for Business Management Shell.
 
 ```powershell
 Set-CsOAuthConfiguration -ClientAuthorizationOAuthServerIdentity evoSTS
@@ -164,7 +164,7 @@ Set-CsOAuthConfiguration -ClientAuthorizationOAuthServerIdentity evoSTS
 
 ## <a name="verify"></a>Vérifié
 
-Une fois que vous activez HMA, la prochaine connexion d’un client utilisera le nouveau flux d’authentification. Notez que l’activation de la mémoire HMA ne déclenche pas une nouvelle authentification pour un client. Les clients se ré-authentifient en fonction de la durée de vie des jetons d’authentification et/ou des certificats dont ils disposent.
+Une fois que vous activez HMA, la prochaine connexion d’un client utilisera le nouveau flux d’authentification. Notez que l’activation de la mémoire HMA ne déclenche pas une réauthentification pour un client. Les clients se ré-authentifient en fonction de la durée de vie des jetons d’authentification et/ou des certificats dont ils disposent.
   
 Pour tester que la haute-dernière fonctionne après l’avoir activée, déconnectez-vous d’un client Windows SFB de test et veillez à cliquer sur « supprimer mes informations d’identification ». Reconnectez-vous. Le client doit maintenant utiliser le flux d’authentification moderne et votre connexion inclut désormais une invite **Office 365** pour un compte professionnel ou scolaire, vu juste avant que le client ne contacte le serveur et vous connecte.
   

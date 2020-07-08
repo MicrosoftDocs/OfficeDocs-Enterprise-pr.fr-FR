@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: L’authentification moderne est une méthode de gestion des identités qui offre une authentification et une autorisation plus sécurisées pour les utilisateurs. Elle est disponible pour les déploiements hybrides de Skype entreprise Server en local et Exchange Server en local, ainsi que pour les hybrides Skype entreprise mixtes de domaine. Cet article fournit des liens vers des documents connexes sur les conditions préalables, la configuration/la désactivation de l’authentification moderne et la mise en relation avec certains clients (par exemple, Informations sur les clients Outlook et Skype).
-ms.openlocfilehash: 6b535133af7a1a6666a6a06e2c86aa675f95e042
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 056262ade67b8ffd452f68cc0c5e3882326b2e44
+ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998022"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45052417"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Vue d’ensemble de l’authentification moderne hybride et conditions préalables à son utilisation avec des serveurs Skype entreprise et Exchange locaux
 
@@ -157,8 +157,8 @@ Vérifiez et vérifiez ces éléments en dehors de votre liste avant de continue
 
 - **Conditions préalables générales**
   - Si vous utilisez ADFS, vous devez avoir Windows 2012 R2 ADFS 3,0 et versions ultérieures pour la Fédération.
-  - Vos configurations d’identité sont l’un des types pris en charge par AAD Connect (par exemple, synchronisation de hachage de mot de passe, authentification directe, STS local pris en charge par Office 365, et cetera.)
-  - Vous avez une connexion AAD configurée et fonctionnant pour la réplication et la synchronisation des utilisateurs.
+  - Vos configurations d’identité sont l’un des types pris en charge par Azure AD Connect (par exemple, synchronisation de hachage de mot de passe, authentification directe, STS local pris en charge par Office 365, et cetera.)
+  - Azure AD Connect est configuré et fonctionne pour la réplication et la synchronisation des utilisateurs.
   - Vous avez vérifié que le mode hybride est configuré à l’aide du mode de topologie hybride Exchange classique entre votre environnement local et Office 365. Déclaration officielle de l’assistance pour Exchange hybride : indique que vous devez être en cours de mise à jour cumulative ou CU-1.
     > [!NOTE]
     > L’authentification moderne hybride n’est pas prise en charge avec l' [agent hybride](https://docs.microsoft.com/exchange/hybrid-deployment/hybrid-agent).
@@ -168,7 +168,7 @@ Vérifiez et vérifiez ces éléments en dehors de votre liste avant de continue
 ## <a name="what-else-do-i-need-to-know-before-i-begin"></a>Que dois-je savoir d’autre avant de commencer ?
 <a name="BKMK_Whatelse"> </a>
 
-- Tous les scénarios pour les serveurs locaux impliquent la configuration de l’authentification moderne en local (en fait, pour Skype entreprise, il existe une liste des topologies prises en charge, de sorte que le serveur responsable de l’authentification et de l’autorisation se trouve dans le Cloud Microsoft (service d’émission de jeton de sécurité AAD, appelé « evoSTS ») et mise à jour d’Azure AD à propos des URL ou des espaces de noms utilisés par votre installation locale de Skype entreprise ou Exchange. Par conséquent, les serveurs locaux prennent une dépendance de Microsoft Cloud. Cette action peut être considérée comme une configuration de l’authentification hybride.
+- Tous les scénarios pour les serveurs locaux impliquent la configuration de l’authentification moderne en local (en fait, pour Skype entreprise, il existe une liste des topologies prises en charge, de sorte que le serveur responsable de l’authentification et de l’autorisation se trouve dans le Cloud Microsoft (service d’émission de jeton de sécurité Azure AD, appelé « evoSTS ») et à la mise à jour d’Azure AD à propos des URL ou des espaces de noms utilisés par votre installation locale de Skype entreprise ou Exchange. Par conséquent, les serveurs locaux prennent une dépendance de Microsoft Cloud. Cette action peut être considérée comme une configuration de l’authentification hybride.
 - Cet article fournit des liens vers d’autres personnes qui vous aideront à choisir les topologies d’authentification moderne prises en charge (nécessaires uniquement pour Skype entreprise) et les procédures qui décrivent les étapes de configuration, ou les étapes à suivre pour désactiver l’authentification moderne, pour Exchange sur site et Skype entreprise en local. Favorisez cette page dans votre navigateur si vous avez besoin d’une base de démarrage pour utiliser l’authentification moderne dans votre environnement de serveur.
 
 ## <a name="related-topics"></a>Rubriques connexes

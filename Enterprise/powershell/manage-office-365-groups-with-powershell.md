@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: Découvrez comment effectuer des tâches de gestion courantes pour les groupes Office 365 dans Microsoft PowerShell.
-ms.openlocfilehash: 71d48b133ce716995ec6059a60a0fed487fde208
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: c946b570b0d434886dbd76ba61f53771aa6bca80
+ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44736022"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45052477"
 ---
 # <a name="manage-office-365-groups-with-powershell"></a>Utiliser PowerShell pour gérer les groupes Office 365
  
@@ -34,7 +34,7 @@ Cet article décrit les étapes à suivre pour effectuer des tâches de gestion 
 
 Lorsque les utilisateurs [créent ou modifient un groupe dans Outlook](https://support.office.com/article/04d0c9cf-6864-423c-a380-4fa858f27102.aspx), vous pouvez leur montrer un lien vers les instructions d’utilisation de votre organisation. Par exemple, si vous avez besoin d’ajouter un préfixe ou un suffixe spécifique à un nom de groupe.
   
-Utilisez Azure Active Directory PowerShell pour faire pointer vos utilisateurs vers les instructions d’utilisation de votre organisation pour les groupes Office 365. Consultez les [applets de commande Azure Active Directory pour configurer les paramètres de groupe](https://go.microsoft.com/fwlink/?LinkID=827484) et suivez les étapes décrites dans la **section créer des paramètres au niveau du répertoire** pour définir le lien hypertexte des indications d’utilisation. Une fois que vous avez exécuté la cmdlet AAD, les utilisateurs verront le lien vers vos instructions lors de la création ou de la modification d’un groupe dans Outlook. 
+Utilisez Azure Active Directory (Azure AD) PowerShell pour faire pointer vos utilisateurs vers les instructions d’utilisation de votre organisation pour les groupes Office 365. Consultez les [applets de commande Azure Active Directory pour configurer les paramètres de groupe](https://go.microsoft.com/fwlink/?LinkID=827484) et suivez les étapes décrites dans la **section créer des paramètres au niveau du répertoire** pour définir le lien hypertexte des indications d’utilisation. Une fois que vous avez exécuté la cmdlet Azure AD, les utilisateurs verront le lien vers vos instructions lors de la création ou de la modification d’un groupe dans Outlook. 
   
 ![Créer un nouveau groupe avec les instructions d’utilisation lien](../media/3f74463f-3448-4f24-a0ec-086d9aa95caa.png)
   

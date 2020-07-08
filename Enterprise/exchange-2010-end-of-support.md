@@ -13,18 +13,18 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010 est à la fin de la prise en charge. Utilisez cette feuille de route de planification comme guide pour préparer la mise à niveau vers Exchange Online ou une version plus récente d’Exchange Server en local.
-ms.openlocfilehash: 84adfa0216f3e4e8157dfe0717c178a0ece3cc4f
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 2d7ab96d065ffd2d85427f320ce01e3b9023891f
+ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998042"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45052467"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Feuille de route pour la fin de la prise en charge d'Exchange 2010
 
 *Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
 
-Le **13 octobre 2020**, Exchange Server 2010 atteindra la fin de la prise en charge. Si vous n’avez pas encore commencé la migration d’Exchange 2010 vers Office 365 ou Exchange 2016, il est temps de commencer votre planification.
+Le **13 octobre 2020**, Exchange Server 2010 atteindra la fin de la prise en charge. Si vous n’avez pas encore commencé la migration d’Exchange 2010 vers Microsoft 365, Office 365 ou Exchange 2016, vous pouvez maintenant commencer votre planification.
 
 ## <a name="what-does-end-of-support-mean"></a>Qu’est-ce que la fin de la prise en charge ?
 
@@ -44,17 +44,17 @@ Pour plus d’informations sur les serveurs Office 2010 à la fin de la prise en
 
 Avec Exchange 2010 de la fin de la prise en charge, il s’agit d’un excellent moment pour explorer vos options et préparer un plan de migration. Vous pouvez :
 
-- Migrer entièrement vers Office 365. Migrez les boîtes aux lettres à l’aide du basculement, d’un environnement hybride minimal ou d’une migration hybride complète, puis supprimez les serveurs Exchange locaux et Active Directory.
+- Migrer entièrement vers Microsoft 365. Migrez les boîtes aux lettres à l’aide du basculement, d’un environnement hybride minimal ou d’une migration hybride complète, puis supprimez les serveurs Exchange locaux et Active Directory.
 - Migrez vos serveurs Exchange 2010 vers Exchange 2016 sur vos serveurs locaux.
 
 > [!IMPORTANT]
-> Si votre organisation choisit de migrer des boîtes aux lettres vers Office 365, mais qu’elle envisage de maintenir DirSync ou Azure AD Connect en place pour continuer à gérer les comptes d’utilisateurs à partir d’Active Directory local, vous devez conserver au moins un serveur Exchange local. Si le dernier serveur Exchange est supprimé, vous ne pourrez pas modifier les destinataires Exchange dans Exchange Online. En effet, la source d’autorité reste dans votre annuaire Active Directory local et des modifications doivent y être apportées. Dans ce scénario, vous disposez des options suivantes :
+> Si votre organisation choisit de migrer des boîtes aux lettres vers Microsoft 365, mais qu’elle envisage de maintenir DirSync ou Azure AD Connect en place pour continuer à gérer les comptes d’utilisateurs à partir d’Active Directory local, vous devez conserver au moins un serveur Exchange local. Si le dernier serveur Exchange est supprimé, vous ne pourrez pas modifier les destinataires Exchange dans Exchange Online. En effet, la source d’autorité reste dans votre annuaire Active Directory local et des modifications doivent y être apportées. Dans ce scénario, vous disposez des options suivantes :
 
-- (**Recommandé**) Si vous pouvez migrer vos boîtes aux lettres vers Office 365 et mettre à niveau vos serveurs le 13 octobre 2020, utilisez Exchange 2010 pour vous connecter à Office 365 et migrer les boîtes aux lettres. Ensuite, migrez Exchange 2010 vers Exchange 2016 et désactivez tous les autres serveurs Exchange 2010.
-- Si vous ne pouvez pas effectuer la mise à niveau de la migration de boîtes aux lettres et du serveur local avant le 13 octobre 2020, mettez d’abord à niveau vos serveurs Exchange 2010 sur site vers Exchange 2016, puis utilisez Exchange 2016 pour vous connecter à Office 365 et migrer les boîtes aux lettres.
+- (**Recommandé**) Si vous pouvez migrer vos boîtes aux lettres vers Microsoft 365 et mettre à niveau vos serveurs le 13 octobre 2020, utilisez Exchange 2010 pour vous connecter à Microsoft 365 et migrer les boîtes aux lettres. Ensuite, migrez Exchange 2010 vers Exchange 2016 et désactivez tous les autres serveurs Exchange 2010.
+- Si vous ne pouvez pas effectuer la mise à niveau de la migration de boîtes aux lettres et du serveur local avant le 13 octobre 2020, mettez d’abord à niveau vos serveurs Exchange 2010 sur site vers Exchange 2016, puis utilisez Exchange 2016 pour vous connecter à Microsoft 365 et migrer les boîtes aux lettres.
 
 > [!NOTE]
-> Bien qu’un peu plus complexe, vous pouvez également migrer des boîtes aux lettres vers Office 365 lors de la migration de vos serveurs Exchange 2010 locaux vers Exchange 2016.
+> Bien qu’un peu plus complexe, vous pouvez également migrer des boîtes aux lettres vers Microsoft 365 lors de la migration de vos serveurs Exchange 2010 locaux vers Exchange 2016.
 
 Voici les trois chemins que vous pouvez suivre pour éviter la fin de la prise en charge d’Exchange Server 2010.
 
@@ -62,27 +62,27 @@ Voici les trois chemins que vous pouvez suivre pour éviter la fin de la prise e
 
 Les sections suivantes explorent chaque option plus en détail.
 
-## <a name="migrate-to-office-365"></a>Migrer vers Office 365
+## <a name="migrate-to-microsoft-365"></a>Migrer vers Microsoft 365
 
-La migration de votre courrier vers Office 365 est l’option la plus simple et la plus simple pour vous aider à supprimer votre déploiement Exchange 2010. Avec une migration vers Office 365, vous pouvez effectuer un seul tronçon de l’ancienne technologie vers les fonctionnalités de pointe, comme suit :
+La migration de votre courrier électronique vers Microsoft 365 est l’option la plus simple et la plus simple pour vous aider à supprimer votre déploiement Exchange 2010. Avec une migration vers Microsoft 365, vous pouvez effectuer un seul tronçon entre les anciennes technologies et les fonctionnalités de pointe, telles que :
 
 - Les fonctionnalités de conformité telles que les stratégies de rétention, le blocage sur place et la mise en attente pour litige, la découverte électronique inaltérable et bien plus encore ;
 - Microsoft teams ;
 - Power BI ;
 - Boîte de réception prioritaire ;
-- Analyse Delve ;
+- MyAnalytics
 
-Office 365 fournit également de nouvelles fonctionnalités et des expériences, et vous pouvez généralement les utiliser immédiatement. En plus des nouvelles fonctionnalités, vous n’aurez pas à vous soucier des éléments suivants :
+Microsoft 365 fournit également de nouvelles fonctionnalités et expériences, et vous pouvez généralement les utiliser immédiatement. En plus des nouvelles fonctionnalités, vous n’aurez pas à vous soucier des éléments suivants :
 
 - L’achat et la maintenance de matériel ;
 - Le paiement du chauffage et du refroidissement de vos serveurs ;
 - Tenir à jour les correctifs de sécurité, de produit et de fuseau horaire ;
 - Maintenance du stockage et des logiciels pour prendre en charge les exigences de conformité ;
-- Mise à niveau vers une nouvelle version d’Exchange : vous êtes toujours sur la dernière version d’Exchange dans Office 365.
+- Mise à niveau vers une nouvelle version d’Exchange : vous êtes toujours sur la dernière version d’Exchange dans Microsoft 365.
 
-### <a name="how-should-i-migrate-to-office-365"></a>Comment dois-je migrer vers Office 365 ?
+### <a name="how-should-i-migrate-to-microsoft-365"></a>Comment dois-je migrer vers Microsoft 365 ?
 
-En fonction de votre organisation, vous disposez de plusieurs options qui vous aideront à accéder à Office 365. Lors du choix d’une option de migration, vous devez prendre en compte quelques éléments comme le nombre de places ou de boîtes aux lettres que vous devez déplacer, la durée de la migration, et si vous avez besoin d’une intégration transparente entre votre installation locale et Office 365 pendant la migration. Ce tableau présente vos options de migration et les facteurs les plus importants qui déterminent la méthode que vous allez utiliser.
+En fonction de votre organisation, vous disposez de plusieurs options qui vous aideront à accéder à Microsoft 365. Lors du choix d’une option de migration, vous devez prendre en compte quelques éléments comme le nombre de places ou de boîtes aux lettres que vous devez déplacer, la durée de la migration, et si vous avez besoin d’une intégration transparente entre votre installation locale et Microsoft 365 lors de la migration. Ce tableau présente vos options de migration et les facteurs les plus importants qui détermineront la méthode que vous allez utiliser.
 
 | **Option de migration**     | **Taille de l’Organisation** | **Duration**        |
 |--------------------------|-----------------------|---------------------|
@@ -94,19 +94,19 @@ Les sections suivantes vous donnent une vue d’ensemble de ces méthodes. Véri
 
 ### <a name="cutover-migration"></a>Migration à basculement
 
-Une migration à basculement est un emplacement où, à une date et une heure présélectionnées, vous allez migrer toutes vos boîtes aux lettres, groupes de distribution, contacts, etc. vers Office 365 ; Lorsque vous avez terminé, arrêtez vos serveurs Exchange locaux et commencez à utiliser Office 365 exclusivement.
+Une migration à basculement est un emplacement où, à une date et une heure présélectionnées, vous allez migrer toutes vos boîtes aux lettres, groupes de distribution, contacts, etc. vers Office 365 ; Lorsque vous avez terminé, arrêtez vos serveurs Exchange locaux et commencez à utiliser exclusivement Microsoft 365.
 
-La méthode de migration à basculement est idéale pour les petites organisations qui n’ont pas de très nombreuses boîtes aux lettres, qui souhaitent accéder rapidement à Office 365, et ne souhaitent pas faire face à certaines des complexités des autres méthodes. Toutefois, il est également quelque peu limité, car il doit être terminé dans une semaine ou moins, et parce qu’il nécessite que les utilisateurs reconfigurent leurs profils Outlook. Bien que la migration à basculement puisse gérer jusqu’à 2 000 boîtes aux lettres, nous vous recommandons vivement de migrer un maximum de 150 boîtes aux lettres avec cette méthode. Si vous essayez de migrer plus de 150 boîtes aux lettres, vous risquez de ne pas dépasser le temps de transférer toutes les boîtes aux lettres avant la date d’échéance, et votre équipe de support technique peut être submergée afin d’aider les utilisateurs à reconfigurer Outlook.
+La méthode de migration à basculement est idéale pour les petites organisations qui n’ont pas de très nombreuses boîtes aux lettres, qui souhaitent accéder à Microsoft 365 rapidement, et ne souhaitent pas faire face à certaines des complexités des autres méthodes. Toutefois, il est également quelque peu limité, car il doit être terminé dans une semaine ou moins, et parce qu’il nécessite que les utilisateurs reconfigurent leurs profils Outlook. Bien que la migration à basculement puisse gérer jusqu’à 2 000 boîtes aux lettres, nous vous recommandons vivement de migrer un maximum de 150 boîtes aux lettres avec cette méthode. Si vous essayez de migrer plus de 150 boîtes aux lettres, vous risquez de ne pas dépasser le temps de transférer toutes les boîtes aux lettres avant la date d’échéance, et votre équipe de support technique peut être submergée afin d’aider les utilisateurs à reconfigurer Outlook.
 
 Si vous envisagez d’effectuer une migration à basculement, voici quelques éléments à prendre en compte :
 
-- Office 365 doit se connecter à vos serveurs Exchange 2010 à l’aide d’Outlook Anywhere via le port TCP 443 ;
-- Toutes les boîtes aux lettres locales seront déplacées vers Office 365 ;
+- Microsoft 365 doit se connecter à vos serveurs Exchange 2010 à l’aide d’Outlook Anywhere via le port TCP 443 ;
+- Toutes les boîtes aux lettres locales seront déplacées vers Microsoft 365 ;
 - Vous aurez besoin d’un compte d’administrateur local qui a accès pour lire le contenu des boîtes aux lettres de vos utilisateurs ;
-- Les domaines Exchange 2010 acceptés que vous souhaitez utiliser dans Office 365 doivent être ajoutés en tant que domaines vérifiés dans le service ;
-- Entre le moment où vous démarrez la migration et le début de la phase de fin, Office 365 synchronise régulièrement Office 365 et les boîtes aux lettres locales. Cela vous permet d’effectuer la migration sans vous inquiéter de laisser le courrier électronique en arrière-plan dans vos boîtes aux lettres locales ;
-- Les utilisateurs recevront de nouveaux mots de passe temporaires pour leur compte Office 365 qu’ils devront modifier lorsqu’ils se connectent à leurs boîtes aux lettres pour la première fois ;
-- Vous avez besoin d’une licence Office 365 qui inclut Exchange Online pour chaque boîte aux lettres d’utilisateur que vous migrez ;
+- Les domaines Exchange 2010 acceptés que vous souhaitez utiliser dans Microsoft 365 doivent être ajoutés en tant que domaines vérifiés dans le service ;
+- Entre le moment où vous démarrez la migration et le début de la phase d’achèvement, Microsoft 365 synchronise régulièrement les boîtes aux lettres Microsoft 365 et locales. Cela vous permet d’effectuer la migration sans vous inquiéter de laisser le courrier électronique en arrière-plan dans vos boîtes aux lettres locales ;
+- Les utilisateurs recevront de nouveaux mots de passe temporaires pour leur compte Microsoft 365 qu’ils devront modifier lorsqu’ils se connectent à leurs boîtes aux lettres pour la première fois ;
+- Vous avez besoin d’une licence Microsoft 365 qui inclut Exchange Online pour chaque boîte aux lettres d’utilisateur que vous migrez ;
 - Les utilisateurs devront configurer un nouveau profil Outlook sur chacun de leurs appareils et télécharger à nouveau leur courrier. La quantité de courriers électroniques qu’Outlook télécharge peut varier. Pour plus d’informations, consultez la rubrique [modifier le nombre de messages à conserver hors connexion](https://support.office.com/article/Change-how-much-mail-to-keep-offline-f3a1251c-6dd5-4208-aef9-7c8c9522d633?ui=en-US&rs=en-US&ad=US&fromAR=1).
 
 Pour en savoir plus sur la migration à basculement, jetez un œil à :
@@ -116,43 +116,43 @@ Pour en savoir plus sur la migration à basculement, jetez un œil à :
 
 ### <a name="minimal-hybrid-migration"></a>Migration hybride minimale
 
-Une migration minimale hybride ou explicite est un emplacement où vous avez quelques centaines de boîtes aux lettres que vous souhaitez migrer vers Office 365, pouvez effectuer la migration en quelques semaines et n’avez pas besoin des fonctionnalités de migration hybride avancées comme les informations de disponibilité partagées.
+Une migration minimale hybride ou explicite est un emplacement où vous avez quelques centaines de boîtes aux lettres que vous souhaitez migrer vers Microsoft 365, pouvez effectuer la migration en quelques semaines et n’avez pas besoin des fonctionnalités de migration hybride avancées comme les informations de disponibilité partagées.
 
-Une migration hybride minimale est idéale pour les organisations qui ont besoin de plus de temps pour migrer leurs boîtes aux lettres vers Office 365, tout en préservant la migration en quelques semaines. Vous bénéficiez de la migration hybride complète plus avancée sans beaucoup de complexités. Vous pouvez contrôler le nombre de boîtes aux lettres qui sont migrées à un moment donné ; Les boîtes aux lettres Office 365 seront créées avec le nom d’utilisateur et les mots de passe de leurs comptes locaux ; Contrairement aux migrations à basculement, vos utilisateurs n’ont pas besoin de recréer leurs profils Outlook.
+Une migration hybride minimale est idéale pour les organisations qui ont besoin de plus de temps pour migrer leurs boîtes aux lettres vers Microsoft 365, tout en préservant la migration en quelques semaines. Vous bénéficiez de la migration hybride complète plus avancée sans beaucoup de complexités. Vous pouvez contrôler le nombre de boîtes aux lettres qui sont migrées à un moment donné ; Les boîtes aux lettres Microsoft 365 seront créées avec le nom d’utilisateur et les mots de passe de leurs comptes locaux ; Contrairement aux migrations à basculement, vos utilisateurs n’ont pas besoin de recréer leurs profils Outlook.
 
 Si vous envisagez d’effectuer une migration hybride minimale, voici quelques éléments à prendre en compte :
 
-- Vous devrez effectuer une synchronisation d’annuaires à usage unique entre vos serveurs Active Directory locaux et Office 365 ;
-- Les utilisateurs peuvent se connecter à leur boîte aux lettres Office 365 en utilisant les mêmes nom d’utilisateur et mot de passe qu’ils utilisaient lors de la migration de leur boîte aux lettres.
-- Vous avez besoin d’une licence Office 365 qui inclut Exchange Online pour chaque boîte aux lettres d’utilisateur que vous migrez ;
+- Vous devrez effectuer une synchronisation d’annuaires à usage unique entre vos serveurs Active Directory locaux et Microsoft 365 ;
+- Les utilisateurs peuvent se connecter à leur boîte aux lettres Microsoft 365 en utilisant les mêmes nom d’utilisateur et mot de passe qu’ils utilisaient lors de la migration de leur boîte aux lettres.
+- Vous avez besoin d’une licence Microsoft 365 qui inclut Exchange Online pour chaque boîte aux lettres d’utilisateur que vous migrez ;
 - Les utilisateurs n’ont pas besoin de configurer un nouveau profil Outlook sur la plupart de leurs appareils (certains anciens téléphones Android peuvent avoir besoin d’un nouveau profil) et n’ont pas besoin de télécharger de nouveau leur courrier électronique.
 
 Pour en savoir plus sur la migration hybride minimale, jetez un œil à la rubrique [utilisation d’un environnement hybride minimal pour migrer rapidement des boîtes aux lettres Exchange vers Office 365](https://support.office.com/article/Use-Minimal-Hybrid-to-quickly-migrate-Exchange-mailboxes-to-Office-365-fdecceed-0702-4af3-85be-f2a0013937ef)
 
 ### <a name="full-hybrid"></a>Hybride complet
 
-Une migration hybride complète est un emplacement où votre organisation possède plusieurs centaines, jusqu’à dizaines de milliers, de boîtes aux lettres et vous souhaitez déplacer une partie ou la totalité d’entre elles vers Office 365. Étant donné que ces migrations sont généralement à plus long terme, les migrations hybrides permettent d’effectuer les opérations suivantes :
+Une migration hybride complète est un emplacement où votre organisation possède plusieurs centaines, jusqu’à dizaines de milliers, de boîtes aux lettres et que vous souhaitez en déplacer une partie ou la totalité vers Microsoft 365. Étant donné que ces migrations sont généralement à plus long terme, les migrations hybrides permettent d’effectuer les opérations suivantes :
 
-- Afficher les informations de disponibilité des utilisateurs sur site pour les utilisateurs dans Office 365, et vice versa ;
-- Afficher une liste d’adresses globale unifiée contenant des destinataires à la fois sur site et Office 365 ;
-- Afficher toutes les cartes de destinataire Outlook pour tous les utilisateurs, qu’ils soient en local ou dans Office 365 ;
+- Afficher les informations de disponibilité des utilisateurs sur site pour les utilisateurs dans Microsoft 365, et inversement ;
+- Consultez une liste d’adresses globale unifiée qui contient des destinataires à la fois sur site et Microsoft 365 ;
+- Afficher toutes les propriétés de destinataires de destinataires Outlook pour tous les utilisateurs, qu’ils soient en local ou en Microsoft 365 ;
 - Sécurisation des communications de messagerie entre les serveurs Exchange locaux et Office 365 à l’aide du protocole TLS et des certificats ;
-- Traiter les messages envoyés entre des serveurs Exchange locaux et Office 365 comme internes, ce qui leur permet d’effectuer les opérations suivantes :
+- Traiter les messages envoyés entre les serveurs Exchange locaux et Microsoft 365 comme internes, ce qui leur permet de :
 - Être correctement évalué et traité par les agents de transport et de conformité ciblant les messages internes ;
 - Contourner les filtres anti-courrier indésirable.
 
-Les migrations hybrides complètes sont idéales pour les organisations qui s’attendent à rester dans une configuration hybride pendant de nombreux mois ou plus. Vous bénéficierez des fonctionnalités répertoriées plus haut dans cette section, ainsi que de la synchronisation d’annuaires, des fonctionnalités de conformité intégrées et de la possibilité de déplacer des boîtes aux lettres vers et depuis Office 365 à l’aide de déplacements de boîtes aux lettres en ligne. Office 365 devient une extension de votre organisation locale.
+Les migrations hybrides complètes sont idéales pour les organisations qui s’attendent à rester dans une configuration hybride pendant de nombreux mois ou plus. Vous bénéficierez des fonctionnalités répertoriées plus haut dans cette section, ainsi que de la synchronisation d’annuaires, des fonctionnalités de conformité intégrées et de la possibilité de déplacer des boîtes aux lettres vers et depuis Microsoft 365 à l’aide des déplacements de boîtes aux lettres en ligne. Microsoft 365 devient une extension de votre organisation locale.
 
 Si vous envisagez d’effectuer une migration hybride complète, voici quelques éléments à prendre en compte :
 
 - Les migrations hybrides complètes ne sont pas adaptées à tous les types d’organisations. En raison de la complexité des migrations hybrides complètes, les organisations avec moins de quelques centaines de boîtes aux lettres ne voient généralement pas les avantages qui justifient les efforts et les coûts qu’il est nécessaire de définir. Si cela ressemble à votre organisation, nous vous recommandons vivement de prendre en compte le basculement ou les migrations hybrides minimales ;
-- Vous devez configurer la synchronisation d’annuaires à l’aide d’Azure Active Directory (Azure AD) se connecter entre vos serveurs Active Directory locaux et Office 365 ;
-- Les utilisateurs peuvent se connecter à leur boîte aux lettres Office 365 en utilisant les mêmes nom d’utilisateur et mot de passe qu’ils utilisent lorsqu’ils se connectent au réseau local (nécessite Azure AD Connect avec synchronisation de mot de passe et/ou Active Directory Federation Services);
-- Vous avez besoin d’une licence Office 365 qui inclut Exchange Online pour chaque boîte aux lettres d’utilisateur que vous migrez ;
+- Vous devez configurer la synchronisation d’annuaires à l’aide d’Azure Active Directory (Azure AD) se connecter entre vos serveurs Active Directory locaux et Microsoft 365 ;
+- Les utilisateurs peuvent se connecter à leur boîte aux lettres Microsoft 365 en utilisant les mêmes nom d’utilisateur et mot de passe qu’ils utilisent lorsqu’ils se connectent au réseau local (nécessite Azure AD Connect avec synchronisation de mot de passe et/ou Active Directory Federation Services);
+- Vous avez besoin d’une licence Microsoft 365 qui inclut Exchange Online pour chaque boîte aux lettres d’utilisateur que vous migrez ;
 - Les utilisateurs n’ont pas besoin de configurer un nouveau profil Outlook sur la plupart de leurs appareils (certains anciens téléphones Android peuvent avoir besoin d’un nouveau profil) et n’ont pas besoin de télécharger de nouveau leur courrier électronique.
 
 > [!IMPORTANT]
-> Si votre organisation choisit de migrer des boîtes aux lettres vers Office 365, mais qu’elle envisage de maintenir DirSync ou Azure AD Connect en place pour continuer à gérer les comptes d’utilisateurs à partir d’Active Directory local, vous devez conserver au moins un serveur Exchange local. Si le dernier serveur Exchange est supprimé, vous ne pourrez pas modifier les destinataires Exchange dans Exchange Online. En effet, la source d’autorité reste dans votre annuaire Active Directory local et des modifications doivent y être apportées.
+> Si votre organisation choisit de migrer des boîtes aux lettres vers Microsoft 365, mais qu’elle envisage de maintenir DirSync ou Azure AD Connect en place pour continuer à gérer les comptes d’utilisateurs à partir d’Active Directory local, vous devez conserver au moins un serveur Exchange local. Si le dernier serveur Exchange est supprimé, vous ne pourrez pas modifier les destinataires Exchange dans Exchange Online. En effet, la source d’autorité reste dans votre annuaire Active Directory local et des modifications doivent y être apportées.
 
 Si une migration hybride complète vous paraît, jetez un œil aux ressources suivantes pour vous aider dans votre migration :
 
@@ -164,11 +164,11 @@ Si une migration hybride complète vous paraît, jetez un œil aux ressources su
 
 ## <a name="upgrade-to-a-newer-version-of-exchange-server-on-premises"></a>Effectuer une mise à niveau vers une version plus récente d’Exchange Server en local
 
-Bien que nous pensons fortement que vous pouvez obtenir la meilleure valeur et l’expérience utilisateur en effectuant une migration complète vers Office 365, nous comprenons également que certaines organisations doivent conserver certains serveurs Exchange en local. Cela peut être dû à des exigences réglementaires, afin de garantir que les données ne sont pas stockées dans un centre de données situé dans un autre pays, ou parce que vous avez des paramètres ou des exigences uniques qui ne peuvent pas être satisfaits dans le Cloud, ou que vous pouvez simplement utiliser Exchange pour gérer les boîtes aux lettres dans le Cloud, car vous utilisez toujours Active Directory en local. Dans tous les cas pour lesquels vous choisissez ou devez conserver Exchange local, vous devez vous assurer que votre environnement Exchange 2010 est mis à niveau vers au moins Exchange 2013 ou Exchange 2016 et qu’Exchange 2010 est supprimé avant la fin de la date de prise en charge.
+Bien que nous pensons fortement que vous pouvez obtenir la meilleure valeur et l’expérience utilisateur en migrant pleinement vers Microsoft 365, nous comprenons également que certaines organisations doivent conserver certains serveurs Exchange en local. Cela peut être dû à des exigences réglementaires, afin de garantir que les données ne sont pas stockées dans un centre de données situé dans un autre pays, ou parce que vous avez des paramètres ou des exigences uniques qui ne peuvent pas être satisfaits dans le Cloud, ou que vous pouvez simplement utiliser Exchange pour gérer les boîtes aux lettres dans le Cloud, car vous utilisez toujours Active Directory en local. Dans tous les cas pour lesquels vous choisissez ou devez conserver Exchange local, vous devez vous assurer que votre environnement Exchange 2010 est mis à niveau vers au moins Exchange 2013 ou Exchange 2016 et qu’Exchange 2010 est supprimé avant la fin de la date de prise en charge.
 
 Pour une expérience optimale, nous vous recommandons de mettre à niveau votre environnement local restant vers Exchange 2016. Vous n’avez pas besoin d’installer Exchange Server 2013 si vous voulez effectuer directement à partir d’Exchange Server 2010 vers Exchange Server 2016.
 
-Exchange 2016 inclut toutes les fonctionnalités et les améliorations incluses dans les versions précédentes d’Exchange, et correspond le mieux à l’expérience disponible avec Office 365 (même si certaines fonctionnalités sont disponibles uniquement dans Office 365). Voici quelques-unes des choses que vous avez été manquantes sur :
+Exchange 2016 inclut toutes les fonctionnalités et les améliorations incluses dans les versions précédentes d’Exchange, et correspond le mieux à l’expérience disponible avec Microsoft 365 (même si certaines fonctionnalités sont disponibles uniquement dans Microsoft 365). Voici quelques-unes des choses que vous avez manquantes :
 
 | **Version d’Exchange**                     | **Composants**                                                                                                                                                                                                                                         |
 |------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -226,9 +226,9 @@ Vous pouvez également [télécharger](https://github.com/MicrosoftDocs/microsof
       
 ## <a name="what-if-i-need-help"></a>Qu’en est-il si j’ai besoin d’aide ?
 
-Si vous effectuez une migration vers Office 365, vous pouvez être autorisé à utiliser notre service FastTrack Microsoft. FastTrack fournit des meilleures pratiques, des outils et des ressources pour faciliter la migration vers Office 365. De plus, vous bénéficierez d’un véritable ingénieur de support qui vous guidera dans votre migration, de la planification et de la conception à la migration de votre dernière boîte aux lettres. Si vous souhaitez en savoir plus sur FastTrack, jetez un œil à [Microsoft FastTrack](https://fasttrack.microsoft.com/).
+Si vous effectuez une migration vers Microsoft 365, vous pouvez être autorisé à utiliser notre service FastTrack Microsoft. FastTrack fournit des meilleures pratiques, des outils et des ressources pour faciliter la migration vers Microsoft 365. De plus, vous bénéficierez d’un véritable ingénieur de support qui vous guidera dans votre migration, de la planification et de la conception à la migration de votre dernière boîte aux lettres. Si vous souhaitez en savoir plus sur FastTrack, jetez un œil à [Microsoft FastTrack](https://fasttrack.microsoft.com/).
 
-Si vous rencontrez des problèmes lors de la migration vers Office 365 et que vous n’utilisez pas FastTrack ou que vous migrez vers une version plus récente d’Exchange Server, nous sommes là pour vous aider. Voici quelques ressources que vous pouvez utiliser :
+Si vous rencontrez des problèmes lors de la migration vers Microsoft 365 et que vous n’utilisez pas FastTrack ou que vous migrez vers une version plus récente d’Exchange Server, nous sommes là pour vous aider. Voici quelques ressources que vous pouvez utiliser :
 
 - [Communauté technique](https://social.technet.microsoft.com/Forums/office/home?category=exchangeserver)
 - [Support client](https://support.microsoft.com/gp/support-options-for-business)

@@ -64,7 +64,7 @@ Dans le cadre des procédures qui requièrent les nouvelles cmdlets dans le modu
 
 ### <a name="step-1-install-required-software"></a>Étape 1 : Installer les logiciels requis
 
-These steps are required once on your computer, not every time you connect. However, you'll likely need to install newer versions of the software periodically.
+Ces étapes sont nécessaires une seule fois sur votre ordinateur, pas chaque fois que vous vous connectez. Toutefois, vous devrez probablement installer régulièrement des versions plus récentes du logiciel.
   
 1. Ouvrez une invite de commandes Windows PowerShell avec élévation de privilèges (exécutez Windows PowerShell en tant qu’administrateur).
     
@@ -106,7 +106,7 @@ PowerShell Core ne prend pas en charge le module Microsoft Azure Active Director
     
 ### <a name="step-1-install-required-software"></a>Étape 1 : Installer les logiciels requis
 
-These steps are required once on your computer, not every time you connect. However, you'll likely need to install newer versions of the software periodically.
+Ces étapes sont nécessaires une seule fois sur votre ordinateur, pas chaque fois que vous vous connectez. Toutefois, vous devrez probablement installer régulièrement des versions plus récentes du logiciel.
   
 1.  Si vous n’exécutez pas Windows 10, installez la version 64 bits de l’Assistant de connexion Microsoft Online Services : Assistant de [connexion Microsoft Online Services pour les professionnels de l’informatique RTW](https://go.microsoft.com/fwlink/p/?LinkId=286152).
     

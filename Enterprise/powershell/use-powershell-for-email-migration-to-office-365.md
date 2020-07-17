@@ -25,7 +25,7 @@ ms.locfileid: "44998606"
 ---
 # <a name="use-powershell-for-email-migration-to-office-365"></a>Utilisation de PowerShell pour effectuer une migration de messagerie vers Office 365
 
-When administrators first set up Office 365, many of them migrate email from existing systems. You can also do this by using the Office 365 administration user interface. You can also use Windows PowerShell to migrate email.
+Lorsque les administrateurs procèdent à la configuration initiale d'Office 365, nombre d'entre eux migrent le courrier électronique à partir de systèmes existants. Vous pouvez également effectuer cette tâche à l'aide de l'interface utilisateur d'administration d'Office 365. Vous pouvez aussi utiliser Windows PowerShell pour migrer la messagerie.
   
 ## <a name="office-365-licensing-and-windows-powershell"></a>Licence Office 365 et Windows PowerShell
 

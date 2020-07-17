@@ -44,12 +44,12 @@ Avant de commencer à configurer les composants Azure, renseignez les tableaux s
 |1.  <br/> |Nom du réseau virtuel  <br/> |Nom à attribuer au réseau virtuel (exemple FedAuthNet).  <br/> |![ligne](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |Emplacement du réseau virtuel  <br/> |Le centre de centres Azure régional qui contiendra le réseau virtuel.  <br/> |![ligne](./media/Common-Images/TableLine.png)  <br/> |
 |3.  <br/> |Adresse IP du périphérique VPN  <br/> |Adresse IPv4 publique de l'interface de votre périphérique VPN sur Internet.  <br/> |![ligne](./media/Common-Images/TableLine.png)  <br/> |
-|4.  <br/> |Espace d'adressage du réseau virtuel  <br/> |The address space for the virtual network. Work with your IT department to determine this address space.  <br/> |![ligne](./media/Common-Images/TableLine.png)  <br/> |
-|5.  <br/> |Clé partagée IPsec  <br/> |A 32-character random, alphanumeric string that will be used to authenticate both sides of the site-to-site VPN connection. Work with your IT or security department to determine this key value. Alternately, see [Create a random string for an IPsec preshared key](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).  <br/> |![ligne](./media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |Espace d'adressage du réseau virtuel  <br/> |Espace d'adressage du réseau virtuel. Renseignez-vous auprès de votre service informatique pour déterminer cet espace d'adressage.  <br/> |![ligne](./media/Common-Images/TableLine.png)  <br/> |
+|5.  <br/> |Clé partagée IPsec  <br/> |Chaîne alphanumérique aléatoire de 32 caractères, utilisée pour authentifier les deux côtés de la connexion VPN de site à site. Renseignez-vous auprès de votre service informatique ou de sécurité pour déterminer cette valeur de clé. Vous pouvez également consulter la page relative à la [création d'une chaîne aléatoire pour une clé prépartagée IPsec](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).  <br/> |![ligne](./media/Common-Images/TableLine.png)  <br/> |
    
  **Tableau V : configuration de réseau virtuel entre différents locaux**
   
-Next, fill in Table S for the subnets of this solution. All address spaces should be in Classless Interdomain Routing (CIDR) format, also known as network prefix format. An example is 10.24.64.0/20.
+Remplissez ensuite le Tableau S pour les sous-réseaux de cette solution. Tous les espaces d'adressage doivent être au format de routage CIDR (Classless Interdomain Routing), également appelé format de préfixe de réseau. Par exemple, 10.24.64.0/20.
   
 Pour les trois premiers sous-réseaux, spécifiez un nom et un espace d’adressage IP unique en fonction de l’espace d’adressage du réseau virtuel. Pour le sous-réseau de passerelle, déterminez l’espace d’adressage 27 bits (avec une longueur de préfixe de/27) pour le sous-réseau de passerelle Azure avec les éléments suivants :
   
@@ -96,7 +96,7 @@ Pour les deux serveurs DNS (Domain Name System) de votre réseau local que vous 
   
 Pour acheminer les paquets depuis le réseau intersites vers le réseau de votre organisation à travers la connexion VPN de site à site, vous devez configurer le réseau virtuel avec un réseau local disposant d’une liste des espaces d’adressage (en notation CIDR) pour tous les emplacements accessibles sur le réseau local de votre organisation. La liste des espaces d'adressage qui définissent votre réseau local doit être unique et ne doit pas se chevaucher avec l'espace d'adressage utilisé pour d'autres réseaux virtuels ou d'autres réseaux locaux.
   
-For the set of local network address spaces, fill in Table L. Note that three blank entries are listed but you will typically need more. Work with your IT department to determine this list of address spaces.
+Pour l'ensemble des espaces d'adressage du réseau local, remplissez le tableau L. Notez que le tableau comporte trois entrées vides, mais vous aurez généralement besoin d'en ajouter. Renseignez-vous auprès de votre service informatique pour déterminer cette liste d'espaces d'adressage.
   
 |**Élément**|**Espace d'adressage du réseau local**|
 |:-----|:-----|
@@ -261,7 +261,7 @@ Ensuite, enregistrez l'adresse IPv4 publique de la passerelle VPN Azure pour vot
 Get-AzPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgName
 ```
 
-Next, configure your on-premises VPN device to connect to the Azure VPN gateway. For more information, see [Configure your VPN device](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
+Ensuite, configurez votre périphérique VPN local de sorte qu'il se connecte à la passerelle VPN Azure. Pour plus d'informations, reportez-vous à la rubrique [À propos des périphériques VPN pour les connexions de la passerelle VPN de site à site](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
   
 Pour configurer votre périphérique VPN local, vous avez besoin des éléments suivants :
   
@@ -269,7 +269,7 @@ Pour configurer votre périphérique VPN local, vous avez besoin des éléments 
     
 - La clé prépartagée IPsec pour la connexion VPN de site à site (Tableau V - Élément 5 - colonne Valeur).
     
-Next, ensure that the address space of the virtual network is reachable from your on-premises network. This is usually done by adding a route corresponding to the virtual network address space to your VPN device and then advertising that route to the rest of the routing infrastructure of your organization network. Work with your IT department to determine how to do this.
+Ensuite, vérifiez que l'espace d'adressage du réseau virtuel est accessible à partir de votre réseau local. Pour cela, il convient généralement d'ajouter un chemin de routage correspondant à l'espace d'adressage du réseau virtuel à votre périphérique VPN puis d'annoncer ce chemin de routage au reste de l'infrastructure de routage du réseau de votre organisation. Renseignez-vous auprès de votre service informatique pour savoir comment procéder.
   
 Ensuite, définissez les noms de trois groupes à haute disponibilité. Remplissez le Tableau A. 
   

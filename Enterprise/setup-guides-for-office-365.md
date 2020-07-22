@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Accélérez la planification et la configuration de Microsoft 365 ou Office 365 avec les guides de configuration.
-ms.openlocfilehash: 92c792b3d82a6a0f1405059ae50db581823704dc
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: a3523b78c33b51d00da24bd9b43d39e5e5fb67e7
+ms.sourcegitcommit: 35655e2b098e46822c14d98583cc47b87516a629
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735972"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45201628"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Guides de configuration pour les services Microsoft 365 et Office 365
 
@@ -103,6 +103,15 @@ Le **Guide de configuration de travail à distance** fournit aux organisations l
 | **Générer** | [Guide de configuration du travail à distance](https://aka.ms/remoteworksetup) |
 |||
 
+### <a name="windows-virtual-desktop-setup-guide"></a>Guide de configuration du bureau virtuel Windows
+
+Le bureau virtuel Windows est un service de virtualisation d’applications et de bureau complet s’exécutant dans le Cloud. Il s’agit de la seule infrastructure VDI (Virtual Desktop Infrastructure) qui offre une gestion simplifiée, de plusieurs sessions Windows 10, des optimisations pour les applications Microsoft 365 et de la prise en charge des environnements des services Bureau à distance (RDS). Déployez et faites évoluer vos bureaux et applications Windows vers Azure en quelques minutes et bénéficiez de fonctionnalités de sécurité et de conformité intégrées. Le **Guide de configuration de bureau virtuel Windows** fournit aux administrateurs des ressources de planification et les conditions préalables au déploiement, au Guide de configuration et aux ressources supplémentaires. 
+
+|||
+|:-------|:-----|
+| **Générer** | [Guide de configuration du bureau virtuel Windows](https://aka.ms/wvdsetupguide) |
+|||
+
 ## <a name="guides-for-security"></a>Guides de sécurité
 
 ### <a name="azure-ad-setup-guide"></a>Guide de configuration d’Azure AD
@@ -112,6 +121,15 @@ Le **Guide de configuration d’Azure ad** fournit des informations pour vous as
 |||
 |:-------|:-----|
 | **Générer** | [Guide de configuration d’Azure AD](https://aka.ms/aadpguidance) |
+|||
+
+### <a name="plan-your-passwordless-deployment"></a>Planification de votre déploiement avec des mots de passe
+
+Effectuez une mise à niveau vers une autre approche de connexion qui permet aux utilisateurs d’accéder à leurs appareils en toute sécurité avec l’une des méthodes d’authentification sans mot de passe suivantes : Windows Hello entreprise, Microsoft Authenticator App ou des clés de sécurité. Utilisez cet Assistant pour découvrir les meilleures méthodes d’authentification par mot de passe et recevoir des instructions sur leur déploiement.
+
+|||
+|:-------|:-----|
+| **Générer** | [Planification de votre déploiement avec des mots de passe](https://aka.ms/passwordlesssetup) |
 |||
 
 ### <a name="microsoft-defender-advanced-threat-protection-atp-advisor"></a>Conseiller de protection avancée contre les menaces Microsoft Defender (ATP)

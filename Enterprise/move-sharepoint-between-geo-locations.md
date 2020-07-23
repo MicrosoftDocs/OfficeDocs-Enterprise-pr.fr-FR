@@ -13,12 +13,12 @@ ms.collection:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Découvrez comment déplacer un site OneDrive vers un autre emplacement géographique.
-ms.openlocfilehash: ab6651802c4add7569978c42f6920b0d21a61faa
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
+ms.openlocfilehash: 3b8028f1dc4b33201a19a8da1cad6c9a559cf4c0
+ms.sourcegitcommit: 35655e2b098e46822c14d98583cc47b87516a629
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44057994"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45201618"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Déplacer un site SharePoint vers un autre emplacement géographique
 
@@ -112,9 +112,9 @@ Pour commencer à déplacer le site, exécutez la cmdlet suivante :
 
 ![Capture d’écran de la fenêtre de PowerShell affichant la cmdlet Start-SPOSiteContentMove](media/multi-geo-sharepoint-site-move-powershell.png)
 
-### <a name="start-a-sharepoint-site-geo-move-for-an-microsoft-365-group-connected-site"></a>Démarrer un déplacement géographique de site SharePoint connecté à un groupe Microsoft 365
+### <a name="start-a-sharepoint-site-geo-move-for-a-microsoft-365-group-connected-site"></a>Démarrer un déplacement géographique de site SharePoint connecté à un groupe Microsoft 365
 
-Pour déplacer un site connecté à un groupe Microsoft 365, l’administrateur général doit commencer par modifier l’attribut d’emplacement par défaut des données pour le groupe Microsoft 365.
+Pour déplacer un site connecté à un groupe Office 365, l’administrateur général ou l’administrateur SharePoint doivent commencer par modifier l’attribut d’emplacement de données favori (PDL) pour le groupe Office 365.
 
 Pour définir l’emplacement par défaut des données pour un groupe Microsoft 365 :
 

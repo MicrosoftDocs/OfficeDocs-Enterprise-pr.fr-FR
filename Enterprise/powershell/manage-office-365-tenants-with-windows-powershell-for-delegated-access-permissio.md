@@ -16,22 +16,24 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
-description: 'Résumé : utilisez Windows PowerShell pour Microsoft 365 pour gérer vos locations de client.'
-ms.openlocfilehash: a57f66ec02f5ba69006c17a9cf734e622017b8fb
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 'Résumé : utilisez PowerShell pour Microsoft 365 pour gérer vos locations de client.'
+ms.openlocfilehash: 31ce5b9a7bdfa50234c76be65eaeb99d6d199136
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998230"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230590"
 ---
 # <a name="manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Gérer les clients Microsoft 365 avec Windows PowerShell pour les partenaires avec autorisations d’accès délégué
 
-Windows PowerShell permet aux partenaires de syndication et de fournisseur de solutions Cloud (CSP) d’administrer et de signaler facilement les paramètres de location des clients qui ne sont pas disponibles dans le centre d’administration 365 de Microsoft. Les autorisations AOBO (Administrer au nom de) sont requises pour que le compte d’administrateur du partenaire puisse se connecter aux locations de son client.
+*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+
+Windows PowerShell permet aux partenaires de syndication et de fournisseur de solutions Cloud (CSP) d’administrer et de signaler facilement les paramètres de location des clients qui ne sont pas disponibles dans le centre d’administration 365 de Microsoft. Notez que les autorisations administrer de la part de (administrateur) sont requises pour le compte d’administrateur partenaire afin de se connecter à ses clients.
   
 Les partenaires avec autorisation d'accès délégué sont les partenaires de syndication et fournisseurs de solutions cloud. Il s’agit souvent de fournisseurs de réseau ou de télécommunication pour d’autres sociétés. Ils regroupent les abonnements Microsoft 365 dans leurs offres de service à leurs clients. Lors de la vente d’un abonnement Microsoft 365, les autorisations d’administration pour le compte de (administrateur) sont automatiquement accordées aux clients pour qu’ils puissent administrer et rendre compte des locations des clients.
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-Les procédures décrites dans cette rubrique exigent une connexion à Windows PowerShell pour Office 365. Pour plus d'informations, voir [Se connecter à Office 365 PowerShell](connect-to-office-365-powershell.md).
+Les procédures décrites dans cette rubrique vous obligent à vous connecter à [Microsoft 365 avec PowerShell](connect-to-office-365-powershell.md).
   
 Vous avez aussi besoin des informations d’identification d’administrateur de la location du partenaire.
   
@@ -74,7 +76,7 @@ Si vous avez enregistré des domaines supplémentaires, tous les domaines associ
   
 ### <a name="get-a-mapping-of-all-tenants-and-registered-domains"></a>Obtenir un mappage de tous les locataires et domaines enregistrés
 
-Les commandes Windows PowerShell pour Office 365 précédentes vous ont montré comment récupérer l'ID ou les domaines de locataire, mais pas les deux en même temps, et sans aucun mappage clair entre eux. Cette commande génère une liste de tous les ID de locataire du client et leurs domaines.
+Les commandes PowerShell précédentes pour Microsoft 365 vous ont permis de récupérer les ID de locataire ou les domaines, mais pas les deux en même temps, et sans aucun mappage clair entre eux. Cette commande génère une liste de tous les ID de locataire du client et leurs domaines.
   
 ```
 $Tenants = Get-MsolPartnerContract -All; $Tenants | foreach {$Domains = $_.TenantId; Get-MsolDomain -TenantId $Domains | fl @{Label="TenantId";Expression={$Domains}},name}
@@ -98,7 +100,7 @@ Get-MsolUser -TenantId <customer TenantId value> -UserPrincipalName <user princi
 
 ### <a name="add-users-set-options-and-assign-licenses"></a>Ajouter des utilisateurs, définir des options et attribuer des licences
 
-La création, la configuration et la gestion des licences en bloc des utilisateurs de Microsoft 365 sont particulièrement efficaces grâce à Windows PowerShell pour Office 365. Dans ce processus en deux étapes, vous devez d’abord créer des entrées pour tous les utilisateurs que vous souhaitez ajouter dans un fichier de valeurs séparées par des virgules (CSV), puis importer ce fichier à l’aide de Windows PowerShell pour Office 365. 
+La création, la configuration et la gestion des licences en bloc des utilisateurs de Microsoft 365 sont particulièrement efficaces à l’aide de PowerShell pour Microsoft 365. Dans ce processus en deux étapes, vous devez d’abord créer des entrées pour tous les utilisateurs que vous souhaitez ajouter dans un fichier de valeurs séparées par des virgules (CSV), puis importer ce fichier à l’aide de PowerShell pour Microsoft 365. 
   
 #### <a name="create-a-csv-file"></a>Créer un fichier CSV
 

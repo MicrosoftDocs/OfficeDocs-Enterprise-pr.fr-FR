@@ -18,15 +18,17 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: Découvrez comment effectuer des tâches de gestion courantes pour les groupes Microsoft 365 dans Microsoft PowerShell.
-ms.openlocfilehash: e0758ca928a30c06da33f0b213ada51f69bf65e1
-ms.sourcegitcommit: 6b12e3ab76809d5632923def7ee367cd48ef3ccc
+ms.openlocfilehash: 25a0a3c90082c016c37820f12caddd1dc1f09704
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "45117256"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230600"
 ---
 # <a name="manage-microsoft-365-groups-with-powershell"></a>Gérer les groupes Microsoft 365 avec PowerShell
  
+*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+
 Cet article décrit les étapes à suivre pour effectuer des tâches de gestion courantes pour les groupes dans Microsoft PowerShell. Il répertorie également les applets de commande PowerShell pour les groupes. Pour plus d’informations sur la gestion des sites SharePoint, voir [gérer les sites SharePoint Online à l’aide de PowerShell](https://docs.microsoft.com/sharepoint/manage-team-and-communication-sites-in-powershell).
 
 ## <a name="link-to-your-microsoft-365-groups-usage-guidelines"></a>Lien vers les instructions d’utilisation de vos groupes Microsoft 365

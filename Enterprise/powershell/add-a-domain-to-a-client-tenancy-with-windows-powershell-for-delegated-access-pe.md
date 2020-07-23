@@ -16,22 +16,24 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
-description: 'Résumé : utilisez Windows PowerShell pour Microsoft 365 pour ajouter un autre nom de domaine à un client existant.'
-ms.openlocfilehash: 6ba706c1fc0b2e2b43687ac582a40f36a2a3387c
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 'Résumé : utilisez PowerShell pour Microsoft 365 pour ajouter un autre nom de domaine à un client existant.'
+ms.openlocfilehash: d5a6c7326684c74d3b05e7b4a1e88c2a37e99ca0
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997360"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229780"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>Ajout d’un domaine à la location d’un client avec Windows PowerShell pour les partenaires avec autorisation d’accès délégué
 
-Vous pouvez créer et associer de nouveaux domaines à la location de votre client avec Windows PowerShell pour Microsoft 365 plus rapidement que l’utilisation du centre d’administration Microsoft 365.
+*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+
+Vous pouvez créer et associer de nouveaux domaines à la location de votre client avec PowerShell pour Microsoft 365 plus rapidement que d’utiliser le centre d’administration Microsoft 365.
   
 Les partenaires avec autorisation d'accès délégué sont les partenaires de syndication et fournisseurs de solutions cloud. Il s’agit souvent de fournisseurs de réseau ou de télécommunication pour d’autres sociétés. Ils regroupent les abonnements Microsoft 365 dans leurs offres de service à leurs clients. Lors de la vente d’un abonnement Microsoft 365, les autorisations d’administration pour le compte de (administrateur) sont automatiquement accordées aux clients pour qu’ils puissent administrer et rendre compte des locations des clients.
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-Les procédures décrites dans cette rubrique exigent une connexion à Windows PowerShell pour Office 365. Pour plus d'informations, voir [Se connecter à Office 365 PowerShell](connect-to-office-365-powershell.md).
+Les procédures décrites dans cette rubrique vous obligent à vous connecter à [Microsoft 365 avec PowerShell](connect-to-office-365-powershell.md).
   
 Vous avez aussi besoin des informations d’identification d’administrateur de la location du partenaire.
   

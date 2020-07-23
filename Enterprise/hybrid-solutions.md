@@ -3,7 +3,7 @@ title: Solutions hybrides
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/30/2018
+ms.date: 07/20/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -16,16 +16,16 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: "Résumé : Utilisez les articles suivants pour déployer les charges de travail d'Office Server dans Microsoft Azure."
-ms.openlocfilehash: 5a3d31e93820302bf5ae900d54c9891cfccdaec9
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 64d74e1d518cde824289a8c3ab9cee15b6b34ad5
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998012"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229950"
 ---
 # <a name="hybrid-solutions"></a>Solutions hybrides
 
-Avec Microsoft Azure, vous pouvez désormais déployer certaines charges de travail d’Office Server qui étaient généralement déployées localement dans les services d’infrastructure Azure.
+Avec Microsoft Azure, vous pouvez déployer certaines charges de travail Office Server qui étaient généralement déployées localement dans les services d’infrastructure Azure.
   
 Pour l’infrastructure d’identité Microsoft 365 dans Azure :
 
@@ -50,7 +50,7 @@ Pour les charges de travail SharePoint Server 2013 dans Azure :
 
 [Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.yml)
   
-[Ressources relatives à l'architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Ressources relatives à l’architecture informatique du cloud Microsoft](microsoft-cloud-it-architecture-resources.md)
   
 [Microsoft 365 pour les guides de laboratoire de test d’entreprise (guides)](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides)
   

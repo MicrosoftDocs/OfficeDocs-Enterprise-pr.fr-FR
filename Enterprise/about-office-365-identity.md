@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Découvrez comment l’identité de l’utilisateur est gérée dans Microsoft 365.
-ms.openlocfilehash: ba4638fa4d02900e3e85ef1c4cb7719baf12d1f6
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: e473a6397cb0b2fc7a2b81ab7a959a4ccdda400b
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998072"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230060"
 ---
 # <a name="microsoft-365-identity-models-and-azure-active-directory"></a>Modèles d’identité Microsoft 365 et Azure Active Directory
 
@@ -90,7 +90,7 @@ Le client Azure AD dispose d’une copie des comptes AD DS. Dans cette configura
 
 Étant donné que les comptes d’utilisateur d’origine et faisant autorité sont stockés dans le service AD DS local, vous gérez vos identités avec les mêmes outils que les services AD DS, tels que l’outil utilisateurs et ordinateurs Active Directory. 
 
-Vous n’utilisez pas le centre d’administration Microsoft 365 ou Office 365 PowerShell pour gérer les comptes d’utilisateur synchronisés dans Azure AD.
+Vous n’utilisez pas le centre d’administration Microsoft 365 ou PowerShell pour Microsoft 365 pour gérer les comptes d’utilisateur synchronisés dans Azure AD.
 
 ## <a name="next-step"></a>Étape suivante
 

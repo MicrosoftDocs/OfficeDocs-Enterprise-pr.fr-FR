@@ -7,7 +7,7 @@ ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
@@ -19,18 +19,18 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: 'Résumé : Découvrez comment configurer un réseau virtuel Azure intersites pour les charges de travail de serveur Office avec une connexion VPN de site à site.'
-ms.openlocfilehash: 4ff34795c4141c686523a9ae79b2052d8eb27140
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
-ms.translationtype: HT
+ms.openlocfilehash: 9601d746a542c452db2abfee82d9bb98121858fd
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840651"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230070"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>Connecter un réseau local à Microsoft Azure Virtual Network
 
 Un réseau virtuel Azure entre différents locaux est connecté à votre réseau local, étendant ainsi votre réseau pour inclure des sous-réseaux et machines virtuelles hébergés dans les services d’infrastructure Azure. Cette connexion permet aux ordinateurs de votre réseau local d’accéder directement aux machines virtuelles dans Azure et inversement. 
 
-Par exemple, un serveur de synchronisation d’annuaires exécuté sur une machine virtuelle Azure doit interroger les contrôleurs de votre domaine local concernant les modifications apportées aux comptes et synchroniser ces modifications avec votre abonnement Office 365. Cet article vous explique comment configurer un réseau virtuel Azure intersites à l’aide d’une connexion VPN de site à site prête à héberger des machines virtuelles Azure.
+Par exemple, un serveur de synchronisation d’annuaires en cours d’exécution sur une machine virtuelle Azure doit interroger vos contrôleurs de domaine locaux sur les modifications apportées aux comptes et synchroniser ces modifications avec votre abonnement Microsoft 365. Cet article vous explique comment configurer un réseau virtuel Azure intersites à l’aide d’une connexion de réseau privé virtuel (VPN) de site à site qui est prête à héberger des machines virtuelles Azure.
 
 ## <a name="overview"></a>Vue d’ensemble
 
@@ -335,4 +335,4 @@ Voici la configuration finale.
   
 ## <a name="next-step"></a>Étape suivante
   
-[Déploiement de la Synchronisation d’Annuaires Office 365 dans Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+[Déploiement de la synchronisation d’annuaires Microsoft 365 dans Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)

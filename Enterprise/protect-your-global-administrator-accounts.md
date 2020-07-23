@@ -19,12 +19,12 @@ f1.keywords:
 - NOCSH
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Protégez l’accès administrateur général à votre abonnement Microsoft 365.
-ms.openlocfilehash: 6378a7c7b6e8479e25cf6465006f422cdc2137b0
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: fdab22944902b554bc7fa295d189cfd2899933ef
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735722"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229760"
 ---
 # <a name="protect-your-microsoft-365-global-administrator-accounts"></a>Protéger vos comptes d’administrateur général Microsoft 365
 
@@ -123,7 +123,7 @@ Pour plus d’informations, reportez-vous à la rubrique [plan for Multi-Factor 
   
 Pour vous connecter aux services Microsoft 365 avec MFA et PowerShell, consultez les articles suivants :
 
-- [Office 365 PowerShell pour les comptes d’utilisateur, les groupes et les licences](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)
+- [PowerShell pour Microsoft 365 pour les comptes d’utilisateur, les groupes et les licences](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)
 - [Microsoft Teams](https://docs.microsoft.com/office365/enterprise/powershell/manage-microsoft-teams-with-office-365-powershell#sign-in-with-multi-factor-authentication-mfa)
 - [Exchange Online](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell?view=exchange-ps#connect-to-exchange-online-powershell-by-using-mfa)
 - [SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online#to-connect-with-multifactor-authentication-mfa)

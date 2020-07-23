@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: ExpressRoute pour Office 365 fournit la connectivité de couche 3 entre votre réseau et les centres de donnes de Microsoft. Les circuits utilisent des publicités d’itinéraires BGP (Border Gateway Protocol) de serveurs frontaux d’Office 365. Du point de vue de vos appareils sur site, lorsqu’ils doivent sélectionner le chemin d’accès TCP/IP correct vers Office 365, Azure ExpressRoute est considéré comme une alternative à Internet.
-ms.openlocfilehash: 56115e366d8f9b0bf7b4b893801ebca5d216c570
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: f147003491b2186a05edbaf73acc86e60dbe3110
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998529"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230880"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Planification du réseau avec ExpressRoute pour Office 365
 
@@ -37,7 +37,7 @@ Le tableau suivant présente quelques différences entre les connexions Internet
 
 |**Différences de planification réseau**|**Connexion au réseau Internet**|**Connexion réseau ExpressRoute**|
 |:-----|:-----|:-----|
-| Accès aux services Internet requis, y compris ;  <br/>  Résolution de noms DNS  <br/>  Vérification de la révocation de certificats  <br/>  Réseaux de distribution de contenu  <br/> |Oui  <br/> |Les demandes d’infrastructure DNS et/ou CDN appartenant à Microsoft peuvent utiliser le réseau ExpressRoute.  <br/> |
+| Accès aux services Internet requis, y compris ;  <br/>  Résolution de noms DNS  <br/>  Vérification de la révocation de certificats  <br/>  Réseaux de distribution de contenu (CDN)  <br/> |Oui  <br/> |Les demandes d’infrastructure DNS et/ou CDN appartenant à Microsoft peuvent utiliser le réseau ExpressRoute.  <br/> |
 | Accès aux services Office 365, y compris ;  <br/>  Exchange Online  <br/>  SharePoint Online  <br/>  Skype Entreprise Online  <br/>  Office dans un navigateur  <br/>  Portail et authentification Office 365  <br/> |Oui, toutes les applications et fonctionnalités  <br/> |Oui, [applications et fonctionnalités spécifiques](https://aka.ms/o365endpoints) <br/> |
 |Sécurité locale sur le périmètre.  <br/> |Oui  <br/> |Oui  <br/> |
 |Planification de la haute disponibilité.  <br/> |Basculement vers une autre connexion réseau Internet  <br/> |Basculement vers une autre connexion ExpressRoute  <br/> |
@@ -204,7 +204,7 @@ Voici un lien que vous pouvez utiliser pour revenir : [https://aka.ms/planninge
   
 [Implémentation d’ExpressRoute pour Office 365](implementing-expressroute.md)
   
-[Utilisation des communautés BGP dans ExpressRoute pour les scénarios Office 365 (aperçu)](bgp-communities-in-expressroute.md)
+[Utilisation des communautés BGP dans ExpressRoute pour les scénarios Office 365](bgp-communities-in-expressroute.md)
   
 [Qualité des médias et performances de connectivité réseau dans Skype Entreprise Online](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   

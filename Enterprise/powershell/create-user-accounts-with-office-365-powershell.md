@@ -1,9 +1,9 @@
 ---
-title: Création de comptes d'utilisateurs avec Office 365 PowerShell
+title: Créer des comptes d’utilisateur Microsoft 365 avec PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/16/2019
+ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,32 +18,34 @@ ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
-description: Découvrez comment utiliser Office 365 PowerShell pour créer des comptes d'utilisateurs dans Office 365.
-ms.openlocfilehash: 95cbefc2caeb61376ed77fe5023cb1c050a8fa07
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: Découvrez comment utiliser PowerShell pour Microsoft 365 pour créer des comptes d’utilisateurs.
+ms.openlocfilehash: 4057f4e1b29e8177bee32306c49f25f607ac5a0f
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004687"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230790"
 ---
-# <a name="create-user-accounts-with-office-365-powershell"></a>Création de comptes d’utilisateurs avec Office 365 PowerShell
+# <a name="create-microsoft-365-user-accounts-with-powershell"></a>Créer des comptes d’utilisateur Microsoft 365 avec PowerShell
 
-Office 365 PowerShell vous permet de créer efficacement des comptes d'utilisateurs, en particulier plusieurs à la fois. Lorsque vous créez des comptes d'utilisateurs dans Office 365 PowerShell, certaines propriétés de compte sont toujours requises. D'autres propriétés ne sont pas nécessaires pour la création du compte, mais sont importantes. Ces propriétés sont décrites dans le tableau suivant :
+*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+
+Vous pouvez utiliser PowerShell pour Microsoft 365 pour créer efficacement des comptes d’utilisateur, notamment plusieurs comptes d’utilisateur. Lorsque vous créez des comptes d’utilisateur dans PowerShell, certaines propriétés de compte sont toujours obligatoires. D'autres propriétés ne sont pas nécessaires pour la création du compte, mais sont importantes. Ces propriétés sont décrites dans le tableau suivant :
   
 |**Nom de la propriété**|**Requis ?**|**Description**|
 |:-----|:-----|:-----|
-|**DisplayName** <br/> |Oui  <br/> |Il s'agit du nom d'affichage qui est utilisé dans les services Office 365. Par exemple, Caleb Sills.  <br/> |
-|**UserPrincipalName** <br/> |Oui  <br/> |Il s'agit du nom de compte utilisé pour se connecter aux services Office 365. Par exemple, CalebS@contoso.onmicrosoft.com.  <br/> |
+|**DisplayName** <br/> |Oui  <br/> |Il s’agit du nom complet utilisé dans les services Microsoft 365. Par exemple, Caleb Sills.  <br/> |
+|**UserPrincipalName** <br/> |Oui  <br/> |Il s’agit du nom de compte utilisé pour se connecter aux services Microsoft 365. Par exemple, CalebS@contoso.onmicrosoft.com.  <br/> |
 |**FirstName** <br/> |Non  <br/> ||
 |**NomFamille** <br/> |Non  <br/> ||
-|**LicenseAssignment** <br/> |Non  <br/> |Il s'agit du plan de gestion des licences (également appelé plan de licence, plan Office 365 ou référence (SKU)) à partir duquel une licence disponible est affectée au compte d'utilisateur. La licence définit les services Office 365 disponibles pour le compte. Vous n'êtes pas obligé d'affecter une licence à un utilisateur lorsque vous créez le compte, mais le compte nécessite une licence pour accéder aux services Office 365. Vous disposez de 30 jours pour attribuer une licence à un compte d'utilisateur après sa création. |
+|**LicenseAssignment** <br/> |Non  <br/> |Il s’agit du plan de gestion des licences (également appelé plan de licence ou SKU) à partir duquel une licence disponible est attribuée au compte d’utilisateur. La licence définit les services Microsoft 365 disponibles pour le compte. Vous n’êtes pas obligé d’attribuer une licence à un utilisateur lorsque vous créez le compte, mais le compte nécessite une licence pour accéder aux services Microsoft 365. Vous disposez de 30 jours pour attribuer une licence à un compte d'utilisateur après sa création. |
 |**Password** <br/> |Non  <br/> | Si vous n’indiquez pas de mot de passe, un mot de passe aléatoire est affecté au compte d’utilisateur et le mot de passe est visible dans les résultats de la commande. Si vous spécifiez un mot de passe, il doit être composé de 8 à 16 caractères ASCII de l'un des trois types suivants : lettres minuscules, lettres majuscules, chiffres et symboles. <br/> |
-|**UsageLocation** <br/> |Non  <br/> |Il s'agit d'un code de pays valide ISO 3166-1 alpha-2. Par exemple, US pour les États-Unis et FR pour la France. Il est important de fournir cette valeur, car certains services Office 365 ne sont pas disponibles dans certains pays. Par conséquent, vous ne pouvez pas affecter de licence à un compte d'utilisateur, à moins que cette valeur ne soit configurée sur le compte. Pour plus d'informations, reportez-vous à la section [À propos des restrictions de licence](https://go.microsoft.com/fwlink/p/?LinkId=691730).<br/> |
+|**UsageLocation** <br/> |Non  <br/> |Il s’agit d’un code ISO 3166-1 alpha-2 valide. Par exemple, US pour les États-Unis et FR pour la France. Il est important de fournir cette valeur, car certains services Microsoft 365 ne sont pas disponibles dans certains pays, de sorte que vous ne pouvez pas attribuer une licence à un compte d’utilisateur sauf si cette valeur est configurée pour le compte. Pour plus d’informations, consultez la rubrique [à propos des restrictions de licence](https://go.microsoft.com/fwlink/p/?LinkId=691730).  <br/> |
    
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Utilisez le module Azure Active Directory PowerShell pour Graph
 
-Tout d’abord, [connectez-vous à votre client Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Tout d’abord, [Connectez-vous à votre client Microsoft 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
 
 Une fois connecté, utilisez la syntaxe suivante pour créer un compte individuel :
   
@@ -63,7 +65,7 @@ New-AzureADUser -DisplayName "Caleb Sills" -GivenName "Caleb" -SurName "Sills" -
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Utilisez le Module Microsoft Azure Active Directory pour Windows PowerShell.
 
-Tout d’abord, [connectez-vous à votre client Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+Tout d’abord, [Connectez-vous à votre client Microsoft 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
 ### <a name="create-an-individual-user-account"></a>Créez un compte d’utilisateur individuel
 
@@ -101,7 +103,7 @@ New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPr
   ```
 
  > [!NOTE]
->Les noms de colonne et leur ordre dans la première ligne du fichier CSV sont arbitraires, mais assurez-vous que les données figurant dans le reste du fichier correspondent à l'ordre des noms de colonne, et utilisez les noms de colonne pour les valeurs de paramètre dans la commande Office 365 PowerShell.
+>Les noms de colonne et leur ordre dans la première ligne du fichier CSV sont arbitraires, mais assurez-vous que les données dans le reste du fichier correspondent à l’ordre des noms de colonne et utilisez les noms de colonne pour les valeurs de paramètre dans la commande PowerShell pour Microsoft 365.
     
 2. Utilisez la syntaxe suivante :
     
@@ -115,12 +117,12 @@ Cet exemple crée des comptes d’utilisateurs à partir du fichier nommé C:\My
   Import-Csv -Path "C:\My Documents\NewAccounts.csv" | foreach {New-MsolUser -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -UserPrincipalName $_.UserPrincipalName -UsageLocation $_.UsageLocation -LicenseAssignment $_.AccountSkuId} | Export-Csv -Path "C:\My Documents\NewAccountResults.csv"
   ```
 
-3. Passez en revue le fichier de sortie pour afficher les résultats. Aucun mot de passe n’a été spécifié, de sorte que les mots de passe aléatoires qui ont été générés par Office 365 sont visibles dans le fichier de sortie.
+3. Passez en revue le fichier de sortie pour afficher les résultats. Les mots de passe ne sont pas spécifiés, de sorte que les mots de passe aléatoires générés par Microsoft 365 sont visibles dans le fichier de sortie.
     
 ## <a name="see-also"></a>Voir aussi
 
-[Gérer les comptes d’utilisateur, les licences et les groupes avec Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Gérer les comptes d’utilisateur, les licences et les groupes Microsoft 365 avec PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Gérer Office 365 avec Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
+[Gérer Microsoft 365 avec PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Mise en route d'Office 365 Powershell](getting-started-with-office-365-powershell.md)
+[Prise en main de PowerShell pour Microsoft 365](getting-started-with-office-365-powershell.md)

@@ -1,9 +1,9 @@
 ---
-title: Affectation de stratégies Skype Entreprise Online propres à chaque utilisateur avec Office 365 PowerShell
+title: Affecter des stratégies Skype entreprise Online par utilisateur avec PowerShell pour Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 07/16/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,17 +13,19 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
-description: 'Résumé : Utilisez Office 365 PowerShell pour affecter des paramètres de communication à chaque utilisateur au moyen de stratégies Skype Entreprise Online.'
-ms.openlocfilehash: 0b95c993c3795bdbe9a68e23e107ea745c15f71b
-ms.sourcegitcommit: 88ede20888e2db0bb904133c0bd97726d6d65ee2
+description: 'Résumé : utilisez PowerShell pour Microsoft 365 pour affecter des paramètres de communication par utilisateur aux stratégies Skype entreprise online.'
+ms.openlocfilehash: 4522cfd877355794c32d9b9bdf14fb11cd0e71b4
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44719965"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229841"
 ---
-# <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>Affectation de stratégies Skype Entreprise Online propres à chaque utilisateur avec Office 365 PowerShell
+# <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Affecter des stratégies Skype entreprise Online par utilisateur avec PowerShell pour Microsoft 365
 
-Office 365 PowerShell est un outil pratique pour affecter des paramètres de communication à chaque utilisateur au moyen de stratégies Skype Entreprise Online.
+*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+
+L’utilisation de PowerShell pour Microsoft 365 est un moyen efficace d’affecter des paramètres de communication par utilisateur à des stratégies Skype entreprise online.
   
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -56,7 +58,7 @@ Comment déterminer quelle stratégie d’accès externe attribuer à Alex ? La
 Get-CsExternalAccessPolicy -Include All| Where-Object {$_.EnableFederationAccess -eq $True -and $_.EnablePublicCloudAccess -eq $False}
 ```
 
-Sauf si vous avez créé des instances personnalisées de ExternalAccessPolicy, cette commande renvoie une stratégie qui répond à nos critères (FederationOnly). Voici un exemple :
+Sauf si vous avez créé des instances personnalisées de ExternalAccessPolicy, cette commande renvoie une stratégie qui répond à nos critères (FederationOnly). Voici un exemple :
   
 ```powershell
 Identity                          : Tag:FederationOnly
@@ -136,8 +138,8 @@ Cela permet de trouver 500 utilisateurs à la fois qui n’ont pas de stratégie
   
 ## <a name="see-also"></a>Voir aussi
 
-[Gestion de Skype Entreprise Online avec Office 365 PowerShell](manage-skype-for-business-online-with-office-365-powershell.md)
+[Gestion de Skype entreprise Online avec PowerShell](manage-skype-for-business-online-with-office-365-powershell.md)
   
-[Gérer Office 365 avec Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
+[Gérer Microsoft 365 avec PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Mise en route d'Office 365 Powershell](getting-started-with-office-365-powershell.md)
+[Prise en main de PowerShell pour Microsoft 365](getting-started-with-office-365-powershell.md)

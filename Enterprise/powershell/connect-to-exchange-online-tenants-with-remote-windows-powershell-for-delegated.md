@@ -16,14 +16,16 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: ae5f1a87-8b77-4f93-a1b8-56f800aeb283
 description: 'Résumé : Utilisez Windows PowerShell distant pour vous connecter à Exchange Online à l’aide de la valeur DelegatedOrg.'
-ms.openlocfilehash: 4a9f08325fc56308b27467423b047375985562c5
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: f04632f9e7b5e8dec476a5381550020e5d8a1521
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997370"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230830"
 ---
 # <a name="connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Connexion à des locataires Exchange Online avec Remote Windows PowerShell pour les partenaires avec autorisations d’accès délégué
+
+*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
 
 > [!IMPORTANT]
 > Les procédures décrites dans cette rubrique sont uniquement destinées aux partenaires avec autorisation d’accès délégué (DAP). Si vous n’êtes pas un partenaire DAP, n’utilisez pas les procédures décrites dans cette rubrique. 
@@ -35,7 +37,7 @@ Les partenaires DAP peuvent utiliser Exchange Online PowerShell pour gérer les 
 > [!NOTE]
 > Les partenaires DAP ne peuvent pas utiliser les procédures décrites dans [Connexion à Exchange Online PowerShell avec l’authentification multifacteur](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell) pour se connecter à leur organisation locataire cliente dans Exchange Online PowerShell. L’authentification multifacteur et le module PowerShell distant Exchange Online ne fonctionnent pas avec l’authentification déléguée.
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
 - Durée d’exécution estimée : 5 minutes
 

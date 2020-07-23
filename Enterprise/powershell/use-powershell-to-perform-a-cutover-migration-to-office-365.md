@@ -1,5 +1,5 @@
 ---
-title: Utiliser PowerShell pour effectuer une migration à basculement vers Office 365
+title: Utiliser PowerShell pour effectuer une migration à basculement vers Microsoft 365
 ms.author: sirkkuw
 author: sirkkuw
 manager: laurawi
@@ -14,26 +14,28 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
-description: 'Résumé : Découvrez comment utiliser Windows PowerShell pour effectuer une migration à basculement vers Office 365.'
-ms.openlocfilehash: b40c6ac53a173f700c6b931781d98d7965a2be7c
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 'Résumé : Découvrez comment utiliser Windows PowerShell pour effectuer une migration à basculement vers Microsoft 365.'
+ms.openlocfilehash: 203c041e0bd5fe58d697d074e94b749726bb22bf
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998569"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229850"
 ---
-# <a name="use-powershell-to-perform-a-cutover-migration-to-office-365"></a>Utiliser PowerShell pour effectuer une migration à basculement vers Office 365
+# <a name="use-powershell-to-perform-a-cutover-migration-to-microsoft-365"></a>Utiliser PowerShell pour effectuer une migration à basculement vers Microsoft 365
 
-Vous pouvez migrer le contenu des boîtes aux lettres des utilisateurs vers Office 365 à partir d'un système de messagerie source en une seule fois à l'aide d'une migration à basculement. Cet article décrit les tâches correspondant à une migration de messagerie à basculement à l'aide d'Exchange Online PowerShell. 
+*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+
+Vous pouvez migrer le contenu des boîtes aux lettres utilisateur à partir d’un système de messagerie source vers Microsoft 365 en une seule fois à l’aide d’une migration à basculement. Cet article décrit les tâches correspondant à une migration de messagerie à basculement à l'aide d'Exchange Online PowerShell. 
   
-La rubrique [Ce que vous devez savoir sur une migration de messagerie à basculement vers Office 365](https://go.microsoft.com/fwlink/p/?LinkId=536688) vous permet d'obtenir une vue d'ensemble du processus de migration. Lorsque le contenu de cet article vous est familier, utilisez celui-ci pour commencer la migration de boîtes aux lettres d'un système à l'autre.
+En examinant la rubrique, [ce que vous devez savoir sur une migration de courrier à basculement vers Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=536688), vous pouvez obtenir une vue d’ensemble du processus de migration. Lorsque le contenu de cet article vous est familier, utilisez celui-ci pour commencer la migration de boîtes aux lettres d'un système à l'autre.
   
 > [!NOTE]
-> Vous pouvez également utiliser le Centre d'administration Exchange pour effectuer la migration à basculement. Voir [Effectuer une migration à basculement de la messagerie vers Office 365](https://go.microsoft.com/fwlink/p/?LinkId=536689). 
+> Vous pouvez également utiliser le Centre d'administration Exchange pour effectuer la migration à basculement. Voir [effectuer une migration à basculement de la messagerie vers Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=536689). 
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
 
-Durée d'exécution estimée de cette tâche : entre 2 et 5 minutes pour créer un lot de migration. Une fois la migration du lot commencée, la durée de l'opération varie en fonction du nombre de boîtes aux lettres incluses dans le lot, de la taille de chacune d'elles et de la capacité réseau disponible. Pour plus d'informations sur les autres facteurs affectant la durée de migration des boîtes aux lettres vers Office 365, consultez la rubrique [Performances de migration](https://go.microsoft.com/fwlink/p/?LinkId=275079).
+Durée d'exécution estimée de cette tâche : entre 2 et 5 minutes pour créer un lot de migration. Une fois la migration du lot commencée, la durée de l'opération varie en fonction du nombre de boîtes aux lettres incluses dans le lot, de la taille de chacune d'elles et de la capacité réseau disponible. Pour plus d’informations sur les autres facteurs qui influent sur la durée de migration des boîtes aux lettres vers Microsoft 365, consultez la rubrique performance de la [migration](https://go.microsoft.com/fwlink/p/?LinkId=275079).
   
 Des autorisations doivent vous être attribuées avant que vous puissiez exécuter cette procédure. Pour connaître les autorisations nécessaires, consultez l'entrée « Migration » dans un tableau de la rubrique [Autorisations des destinataires](https://go.microsoft.com/fwlink/p/?LinkId=534105).
   
@@ -46,7 +48,7 @@ Pour la liste complète des commandes de migration, voir [Cmdlets de déplacemen
 ### <a name="step-1-prepare-for-a-cutover-migration"></a>Étape 1 : Préparez une migration à basculement
 <a name="BK_Step1"> </a>
 
-- **Ajoutez votre organisation Exchange locale en tant que domaine accepté de votre organisation Office 365.** Le service de migration utilise l'adresse SMTP de vos boîtes aux lettres locales pour créer les identifiants d'utilisateurs Microsoft Online Services et les adresses de messagerie pour les nouvelles boîtes aux lettres Office 365. La migration échoue si votre domaine Exchange n'est pas un domaine accepté ou le domaine principal de votre organisation Office 365. Pour plus d'informations, consultez la rubrique[Vérifier votre domaine dans Office 365](https://go.microsoft.com/fwlink/p/?LinkId=534110).
+- **Ajoutez votre organisation Exchange locale en tant que domaine accepté de votre organisation Microsoft 365.** Le service de migration utilise l’adresse SMTP de vos boîtes aux lettres locales pour créer l’ID d’utilisateur et l’adresse de messagerie Microsoft Online Services pour les nouvelles boîtes aux lettres Microsoft 365. La migration échoue si votre domaine Exchange n’est pas un domaine accepté ou le domaine principal de votre organisation Microsoft 365. Pour plus d’informations, consultez [la rubrique Verify Your Domain](https://go.microsoft.com/fwlink/p/?LinkId=534110).
     
 - **Configurez Outlook Anywhere sur votre serveur Exchange local** Le service de migration de messagerie utilise RPC sur HTTP ou Outlook Anywhere pour se connecter à votre serveur Exchange local. Pour plus d'informations sur la configuration d'Outlook Anywhere pour Exchange 2010, 2007 et 2003, consultez les rubriques suivantes :
     
@@ -77,7 +79,7 @@ Pour la liste complète des commandes de migration, voir [Cmdlets de déplacemen
   Test-MigrationServerAvailability -ExchangeOutlookAnywhere -Autodiscover -EmailAddress <email address for on-premises administrator> -Credentials $credentials
   ```
 
-- **Attribuez à un compte d'utilisateur local les autorisations nécessaires pour accéder aux boîtes aux lettres de votre organisation Exchange.** Le compte d’utilisateur local que vous utilisez pour vous connecter à votre organisation Exchange locale (également appelé administrateur de migration) doit disposer des autorisations nécessaires pour accéder aux boîtes aux lettres locales que vous souhaitez migrer vers Office 365. Ce compte d'utilisateur permet de créer un point de terminaison de migration pour votre organisation locale.
+- **Attribuez à un compte d'utilisateur local les autorisations nécessaires pour accéder aux boîtes aux lettres de votre organisation Exchange.** Le compte d’utilisateur local que vous utilisez pour vous connecter à votre organisation Exchange locale (également appelé administrateur de migration) doit disposer des autorisations nécessaires pour accéder aux boîtes aux lettres locales que vous souhaitez migrer vers Microsoft 365. Ce compte d'utilisateur permet de créer un point de terminaison de migration pour votre organisation locale.
     
     La liste suivante montre les privilèges administratifs requis pour migrer des boîtes aux lettres à l'aide d'une migration à basculement. Trois options sont possibles.
     
@@ -93,12 +95,12 @@ Pour la liste complète des commandes de migration, voir [Cmdlets de déplacemen
     
 - **Désactivez la messagerie unifiée.** Si les boîtes aux lettres locales que vous migrez sont activées pour la messagerie unifiée, vous devez désactiver cette dernière avant de procéder à la migration. Une fois la migration terminée, vous pouvez activer la messagerie unifiée sur les boîtes aux lettres.
     
-- **Groupes de sécurité et délégués** Le service de migration de messagerie électronique ne peut pas détecter si les groupes Active Directory sur site sont des groupes de sécurité ou non, il ne peut donc configurer aucun groupe migré en tant que groupe de sécurité dans Office 365. Si vous souhaitez disposer de groupes de sécurité dans votre client Office 365, vous devez d'abord configurer un groupe de sécurité à extension messagerie vide dans votre client Office 365 avant de commencer la migration à basculement. En outre, cette méthode de migration déplace uniquement les boîtes aux lettres, les utilisateurs de messagerie, les contacts de messagerie et les groupes à extension messagerie. Si un autre objet Active Directory, tel qu'un utilisateur n'ayant pas été migré vers Office 365, reçoit une attribution de gestionnaire ou de délégué pour un objet en cours de migration, il doit être supprimé de l'objet avant la migration.
+- **Groupes de sécurité et délégués** Le service de migration de messagerie ne peut pas détecter si les groupes Active Directory sur site sont des groupes de sécurité ou non, et donc ne peuvent pas mettre en service les groupes migrés en tant que groupes de sécurité dans Microsoft 365. Si vous souhaitez avoir des groupes de sécurité dans votre client Microsoft 365, vous devez d’abord configurer un groupe de sécurité à extension messagerie vide dans votre client Microsoft 365 avant de commencer la migration à basculement. En outre, cette méthode de migration déplace uniquement les boîtes aux lettres, les utilisateurs de messagerie, les contacts de messagerie et les groupes à extension messagerie. Si un autre objet Active Directory, tel qu’un utilisateur qui n’est pas migré vers Microsoft 365, est affecté en tant que gestionnaire ou délégué à un objet en cours de migration, il doit être supprimé de l’objet avant la migration.
     
 ### <a name="step-2-create-a-migration-endpoint"></a>Étape 2 : Créez un point de terminaison de migration
 <a name="BK_Step2"> </a>
 
-Pour que la migration fonctionne, Office 365 doit pouvoir se connecter au système de messagerie source et communiquer avec lui. Pour ce faire, Office 365 utilise un point de terminaison. Pour créer un point de terminaison de migration Outlook Anywhere, afin d'effectuer une migration à basculement, commencez par vous [connecter à Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=534121). 
+Pour migrer le courrier électronique correctement, Microsoft 365 doit se connecter au système de courrier source et communiquer avec celui-ci. Pour ce faire, Microsoft 365 utilise un point de terminaison de migration. Pour créer un point de terminaison de migration Outlook Anywhere, afin d'effectuer une migration à basculement, commencez par vous [connecter à Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=534121). 
   
 Pour la liste complète des commandes de migration, voir [Cmdlets de déplacement et de migration](https://go.microsoft.com/fwlink/p/?LinkId=534750).
   
@@ -170,10 +172,10 @@ Si le traitement d’un lot de migration a démarré, son état dans le tableau 
 Get-MigrationBatch -Identity CutoverBatch |  Format-List Status
 ```
 
-### <a name="step-5-route-your-email-to-office-365"></a>Étape 5 : Routez votre courrier électronique vers Office 365
+### <a name="step-5-route-your-email-to-microsoft-365"></a>Étape 5 : acheminer votre courrier électronique vers Microsoft 365
 <a name="BK_Step5"> </a>
 
-Les systèmes de messagerie utilisent un enregistrement DNS appelé enregistrement MX pour identifier l'emplacement de remise des messages électroniques. Pendant le processus de migration de la messagerie, votre enregistrement MX pointe vers votre système de messagerie source. Maintenant que la migration de messagerie vers Office 365 est terminée, vous devez faire pointer votre enregistrement MX vers Office 365. Cela permet de s'assurer que le message est remis à vos boîtes aux lettres Office 365. En déplaçant l'enregistrement MX, vous pouvez également désactiver votre ancien système de messagerie lorsque vous êtes prêt. 
+Les systèmes de messagerie utilisent un enregistrement DNS appelé enregistrement MX pour identifier l'emplacement de remise des messages électroniques. Pendant le processus de migration de la messagerie, votre enregistrement MX pointe vers votre système de messagerie source. Une fois la migration de la messagerie vers Microsoft 365 terminée, il est temps de faire pointer votre enregistrement MX sur Microsoft 365. Cela permet de s’assurer que le courrier électronique est remis à vos boîtes aux lettres Microsoft 365. En déplaçant l'enregistrement MX, vous pouvez également désactiver votre ancien système de messagerie lorsque vous êtes prêt. 
   
 Pour plusieurs fournisseurs DNS, il existe des instructions spécifiques pour [modifier votre enregistrement MX](https://go.microsoft.com/fwlink/p/?LinkId=279163). Si votre fournisseur DNS n'est pas inclus, ou si vous souhaitez avoir une idée des instructions générales, vous avez également accès à des [instructions générales sur les enregistrements MX](https://go.microsoft.com/fwlink/?LinkId=397449).
   
@@ -182,11 +184,11 @@ Il faut compter jusqu'à 72 heures pour que les systèmes de messagerie de vos c
 ### <a name="step-6-delete-the-cutover-migration-batch"></a>Étape 6 : Supprimez le lot de migration à basculement
 <a name="Bk_step6"> </a>
 
-Après avoir modifié l'enregistrement MX et vérifié que tout le courrier est routé vers les boîtes aux lettres Office 365, informez les utilisateurs que leur courrier est envoyé vers Office 365. Après cela, vous pouvez supprimer le lot de migration à basculement. Avant de supprimer le lot de migration, vérifiez les points suivants.
+Une fois que vous avez modifié l’enregistrement MX et vérifié que tous les messages sont acheminés vers les boîtes aux lettres Microsoft 365, informez-les aux utilisateurs que leur courrier va vers Microsoft 365. Après cela, vous pouvez supprimer le lot de migration à basculement. Avant de supprimer le lot de migration, vérifiez les points suivants.
   
-- Tous les utilisateurs se servent des boîtes aux lettres Office 365. Une fois le lot supprimé, le courrier envoyé à des boîtes aux lettres sur le serveur Exchange local n'est plus copié dans les boîtes aux lettres Office 365 correspondantes.
+- Tous les utilisateurs utilisent des boîtes aux lettres Microsoft 365. Après la suppression du lot, les messages envoyés à des boîtes aux lettres sur le serveur Exchange local ne sont pas copiés dans les boîtes aux lettres Microsoft 365 correspondantes.
     
-- Les boîtes aux lettres Office 365 ont été synchronisées au moins une fois après que le courrier leur a été envoyé directement. Pour ce faire, assurez-vous que la valeur de la zone Heure de la dernière synchronisation pour le lot de migration est postérieure au début du routage direct du courrier vers les boîtes aux lettres Office 365.
+- Les boîtes aux lettres Microsoft 365 ont été synchronisées au moins une fois après leur envoi direct par le courrier. Pour ce faire, assurez-vous que la valeur de la zone heure de la dernière synchronisation du lot de migration est plus récente que celle de l’envoi de messages démarré directement aux boîtes aux lettres Microsoft 365.
     
 Pour supprimer le lot de migration « CutoverBatch » dans Exchange Online PowerShell, exécutez la commande suivante :
   
@@ -197,27 +199,27 @@ Remove-MigrationBatch -Identity CutoverBatch
 ### <a name="section-7-assign-user-licenses"></a>Section 7 : Attribuez des licences utilisateur
 <a name="BK_Step7"> </a>
 
- **Pour activer les comptes d'utilisateur Office 365 correspondant aux comptes migrés, vous devez leur attribuer des licences.** Si vous n'attribuez pas de licence, la boîte aux lettres est désactivée à la fin de la période de grâce (30 jours). Pour attribuer une licence dans le centre d’administration 365 de Microsoft, reportez-vous à la rubrique[attribuer ou annuler l’attribution des licences pour Office 365 pour les entreprises](https://go.microsoft.com/fwlink/?LinkId=536681).
+ **Activez les comptes d’utilisateur Microsoft 365 pour les comptes migrés en affectant des licences.** Si vous n'attribuez pas de licence, la boîte aux lettres est désactivée à la fin de la période de grâce (30 jours). Pour attribuer une licence dans le centre d’administration 365 de Microsoft, consultez la rubrique [attribuer ou](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)supprimer l’attribution des licences.
   
 ### <a name="step-8-complete-post-migration-tasks"></a>Étape 8 : Exécutez les tâches post-migration
 <a name="BK_Step8"> </a>
 
-- **Créer un enregistrement DNS de Autodiscover afin que les utilisateurs puissent facilement accéder à leurs boîtes aux lettres**Une fois toutes les boîtes aux lettres locales migrées vers Office 365, vous pouvez configurer un enregistrement DNS de découverte automatique pour votre organisation Office 365 afin de permettre aux utilisateurs de se connecter aisément à leurs nouvelles boîtes aux lettres Office 365 avec des clients mobiles et Outlook. Ce nouvel enregistrement DNS de découverte automatique doit utiliser le même espace de noms que celui de votre organisation Office 365. Par exemple, si votre espace de noms en nuage est nuage.contoso.com, l'enregistrement DNS de découverte automatique que vous devez créer est decouverteautomatique.nuage.contoso.com.
+- **Créer un enregistrement DNS de Autodiscover afin que les utilisateurs puissent facilement accéder à leurs boîtes aux lettres** Une fois que toutes les boîtes aux lettres locales sont migrées vers Microsoft 365, vous pouvez configurer un enregistrement DNS de découverte automatique pour votre organisation Microsoft 365 afin de permettre aux utilisateurs de se connecter facilement à leurs nouvelles boîtes aux lettres Microsoft 365 avec Outlook et les clients mobiles. Ce nouvel enregistrement DNS de découverte automatique doit utiliser le même espace de noms que celui que vous utilisez pour votre organisation Microsoft 365. Par exemple, si votre espace de noms en nuage est nuage.contoso.com, l’enregistrement DNS de découverte automatique que vous devez créer est decouverteautomatique.nuage.contoso.com.
     
-    Si vous conservez votre serveur Exchange, vous devez également vous assurer que l'enregistrement DNS CNAME de découverte automatique pointe vers Office 365 dans les DNS interne et externe après la migration afin que le client Outlook se connecte à la bonne boîte aux lettres.
+    Si vous conservez votre serveur Exchange, vous devez également vous assurer que l’enregistrement CNAMe DNS de découverte automatique doit pointer vers Microsoft 365 dans le DNS interne et externe après la migration afin que le client Outlook se connecte à la boîte aux lettres appropriée.
     
     > [!NOTE]
     >  Dans Exchange 2007, Exchange 2010 et Exchange 2013, vous devez également définir  `Set-ClientAccessServer AutodiscoverInternalConnectionURI` sur `Null`. 
   
-    Office 365 utilise un enregistrement CNAME pour implémenter le service de découverte automatique pour les clients mobiles et Outlook. L'enregistrement CNAME de découverte automatique doit contenir les informations suivantes :
+    Microsoft 365 utilise un enregistrement CNAMe pour implémenter le service de découverte automatique pour les clients Outlook et mobiles. L'enregistrement CNAME de découverte automatique doit contenir les informations suivantes :
     
   - **Alias :** autodiscover
     
   - **Cible :** autodiscover.outlook.com
     
-    Pour plus d'informations, voir [Créer des enregistrements DNS pour Office 365 lors de la gestion de vos enregistrements DNS](https://go.microsoft.com/fwlink/p/?LinkId=535028).
+    Pour plus d’informations, reportez-vous [à la rubrique ajouter des enregistrements DNS pour connecter votre domaine](https://go.microsoft.com/fwlink/p/?LinkId=535028).
     
-- **Désactivez des serveurs Exchange locaux.** Après avoir vérifié que tout le courrier est acheminé directement vers les boîtes aux lettres Office 365, si vous n'avez plus besoin de conserver votre organisation de messagerie locale ou que vous ne comptez pas implémenter de solution d'authentification unique (SSO), vous pouvez désinstaller Exchange de vos serveurs et supprimer votre organisation Exchange locale.
+- **Désactivez des serveurs Exchange locaux.** Une fois que vous avez vérifié que tous les courriers électroniques sont acheminés directement vers les boîtes aux lettres Microsoft 365, et que vous n’avez plus besoin de conserver votre organisation de messagerie locale ou si vous ne prévoyez pas d’implémenter une solution d’authentification unique (SSO), vous pouvez désinstaller Exchange de vos serveurs et supprimer votre organisation Exchange locale.
     
     Pour plus d’informations, voir les commandes suivantes :
     

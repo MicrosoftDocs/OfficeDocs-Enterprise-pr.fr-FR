@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: Pour savoir comment procéder, si vous avez un domaine non-routale associé à vos utilisateurs locaux avant de procéder à une synchronisation avec Microsoft 365.
-ms.openlocfilehash: 148d7e1abdeeeea11c838697bbc957e2937ea7f8
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: a9fe6f21dd1e2d9ade6288a083f700fccac4e6e4
+ms.sourcegitcommit: 20c8c98c0b32d8cf56d50cbc70f82fd5c4ce649c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44736012"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45263596"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>Préparation d’un domaine non routable pour la synchronisation d’annuaires
 Lorsque vous synchronisez votre annuaire sur site avec Microsoft 365, vous devez disposer d’un domaine vérifié dans Azure Active Directory (Azure AD). Seuls les noms d’utilisateur principal (UPN) associés au domaine local sont synchronisés. Toutefois, tout nom UPN contenant un domaine non routable, par exemple, local (comme billa@contoso. local), sera synchronisé avec un domaine. onmicrosoft.com (comme billa@contoso.onmicrosoft.com). 

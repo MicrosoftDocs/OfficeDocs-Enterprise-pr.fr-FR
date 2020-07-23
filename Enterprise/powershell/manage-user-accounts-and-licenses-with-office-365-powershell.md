@@ -1,9 +1,9 @@
 ---
-title: Gérer les comptes d’utilisateurs et les licences avec Office 365 PowerShell
+title: Gérer les comptes d’utilisateur, les licences et les groupes Microsoft 365 avec PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/06/2019
+ms.date: 07/17/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -15,17 +15,19 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: 26b9ff81-93b0-4251-beaf-3c9f1d7c80c8
-description: 'Résumé : Découvrez comment gérer les comptes d’utilisateur, les licences et les groupes avec Office 365 PowerShell.'
-ms.openlocfilehash: e43272196556bcfb09fb7a41a5b2cd40e2056928
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: 'Résumé : Découvrez comment gérer les comptes d’utilisateur, les licences et les groupes Microsoft 365 avec PowerShell.'
+ms.openlocfilehash: 26da0d13ecc9c14be4abe059943bd91d88126f1e
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841311"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230410"
 ---
-# <a name="manage-user-accounts-licenses-and-groups-with-office-365-powershell"></a>Gérer les comptes d’utilisateur, les licences et les groupes avec Office 365 PowerShell
+# <a name="manage-microsoft-365-user-accounts-licenses-and-groups-with-powershell"></a>Gérer les comptes d’utilisateur, les licences et les groupes Microsoft 365 avec PowerShell
 
-L’une des principales tâches des administrateurs Office 365 est la gestion des comptes d’utilisateur, des licences et des groupes. Bien que vous puissiez accomplir la plupart des aspects de ces tâches dans le centre d’administration 365 de Microsoft, les autres tâches sont beaucoup plus rapides et plus faciles avec Office 365 PowerShell. 
+*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+
+L’une des principales tâches des administrateurs de Microsoft 365 est la gestion des comptes d’utilisateur, des licences et des groupes. Bien que vous puissiez accomplir la plupart des aspects de ces tâches dans le centre d’administration 365 de Microsoft, les autres tâches sont beaucoup plus rapides et plus faciles avec PowerShell. 
 
 Pour plus d’informations, consultez les rubriques suivantes.
 
@@ -50,5 +52,5 @@ Pour plus d’informations, consultez les rubriques suivantes.
 
 ## <a name="groups"></a>Groupes
 - [Maintenir l’appartenance à un groupe](maintain-group-membership-with-office-365-powershell.md)
-- [Gérer les groupes Office 365](manage-office-365-groups-with-powershell.md)
+- [Gérer les groupes Microsoft 365](manage-office-365-groups-with-powershell.md)
 

@@ -1,9 +1,9 @@
 ---
-title: Gestion de Skype Entreprise Online avec Office 365 PowerShell
+title: Gestion de Skype entreprise Online avec PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/28/2018
+ms.date: 07/17/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -13,17 +13,19 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
-description: 'Résumé : utilisez Office 365 PowerShell pour gérer des stratégies Skype Entreprise Online, des stratégies par utilisateur et des paramètres de réunion.'
-ms.openlocfilehash: f1a5df3802d43755e81465743b81c5fbb9fff7e0
-ms.sourcegitcommit: 6c7cc6aca8713e280ae6ff51226dde9db4497401
+description: 'Résumé : utilisez PowerShell pour Microsoft 365 pour gérer des stratégies Skype entreprise Online, des stratégies par utilisateur et des paramètres de réunion.'
+ms.openlocfilehash: f66b3186a5b29bbf0756a629b85c626caf2c1e36
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44415936"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230440"
 ---
-# <a name="manage-skype-for-business-online-with-office-365-powershell"></a>Gestion de Skype Entreprise Online avec Office 365 PowerShell
+# <a name="manage-skype-for-business-online-with-powershell"></a>Gestion de Skype entreprise Online avec PowerShell
 
-Une des tâches principales de tout administrateur de Skype Entreprise Online est la gestion des stratégies. Bien que vous puissiez effectuer certaines de ces tâches dans le Centre d’administration Microsoft 365, d’autres tâches sont beaucoup plus rapides et plus simples à exécuter dans Office 365 PowerShell. 
+*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+
+Une des tâches principales de tout administrateur de Skype Entreprise Online est la gestion des stratégies. Bien que vous puissiez effectuer certaines de ces tâches dans le centre d’administration 365 de Microsoft, les autres tâches sont beaucoup plus rapides et plus faciles dans PowerShell. 
 
 ## <a name="before-you-start"></a>Avant de commencer
 
@@ -60,17 +62,17 @@ Téléchargez et installez le [module du connecteur Skype entreprise Online](htt
 
 4. Suivez les instructions de la boîte de dialogue **se connecter à votre compte** pour fournir des informations d’authentification supplémentaires, comme un code de vérification, puis cliquez sur **vérifier**.
 
-Pour plus d'informations, consultez les rubriques suivantes :
+Pour plus d’informations, voir les rubriques suivantes :
   
-- [Gestion des stratégies Skype Entreprise Online avec Office 365 PowerShell](manage-skype-for-business-online-policies-with-office-365-powershell.md)
+- [Gestion des stratégies Skype entreprise Online avec PowerShell](manage-skype-for-business-online-policies-with-office-365-powershell.md)
     
-- [Affectation de stratégies Skype Entreprise Online propres à chaque utilisateur avec Office 365 PowerShell](assign-per-user-skype-for-business-online-policies-with-office-365-powershell.md)
+- [Affecter des stratégies Skype entreprise Online par utilisateur avec PowerShell](assign-per-user-skype-for-business-online-policies-with-office-365-powershell.md)
     
 ## <a name="see-also"></a>Voir aussi
 
-[Gérer Office 365 avec Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
+[Gérer Microsoft 365 avec PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Mise en route d’Office 365 PowerShell](getting-started-with-office-365-powershell.md)
+[Prise en main de PowerShell pour Microsoft 365](getting-started-with-office-365-powershell.md)
 
 [Références de l’applet de commande PowerShell Skype entreprise](https://docs.microsoft.com/powershell/module/skype/?view=skype-ps)
 

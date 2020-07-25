@@ -1,16 +1,16 @@
 
-# [Gérer Office 365 avec Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
-## [Mise en route d’Office 365 PowerShell](getting-started-with-office-365-powershell.md)
-### [Pourquoi utiliser Office 365 PowerShell ?](why-you-need-to-use-office-365-powershell.md)
-### [Se connecter à Office 365 PowerShell](connect-to-office-365-powershell.md)
-### [Connexion à tous les services Office 365 à l’aide d’une seule fenêtre Windows PowerShell](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md)
-### [Utilisez Windows PowerShell pour créer des rapports dans Office 365](use-windows-powershell-to-create-reports-in-office-365.md)
-### [Références de cmdlet pour les services Office 365](cmdlet-references-for-office-365-services.md)
-### [Ressources communautaires pour Office 365 PowerShell](office-365-powershell-community-resources.md)
+# [Gestion de Microsoft 365 à l’aide de PowerShell](manage-office-365-with-office-365-powershell.md)
+## [Prise en main de PowerShell pour Microsoft 365](getting-started-with-office-365-powershell.md)
+### [Pourquoi utiliser PowerShell pour Microsoft 365](why-you-need-to-use-office-365-powershell.md)
+### [Connexion à Microsoft 365 à l’aide de PowerShell](connect-to-office-365-powershell.md)
+### [Connexion à tous les services Microsoft 365 dans une seule fenêtre Windows PowerShell](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md)
+### [Utilisation de PowerShell pour créer des rapports pour Microsoft 365](use-windows-powershell-to-create-reports-in-office-365.md)
+### [Références de cmdlet pour les services Microsoft 365](cmdlet-references-for-office-365-services.md)
+### [Ressources de la communauté Microsoft 365 pour PowerShell](office-365-powershell-community-resources.md)
 
-## [Gérer les comptes d’utilisateurs, les licences et les groupes](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+## [Gestion des comptes d’utilisateurs, des licences et des groupes Microsoft 365](manage-user-accounts-and-licenses-with-office-365-powershell.md)
 
-### Comptes d’utilisateurs
+### Comptes d’utilisateur
 #### [Création de comptes d’utilisateurs](create-user-accounts-with-office-365-powershell.md)
 #### [Affichage de comptes d’utilisateurs](view-user-accounts-with-office-365-powershell.md)
 #### [Configuration des propriétés de compte d’utilisateur](configure-user-account-properties-with-office-365-powershell.md)
@@ -30,19 +30,19 @@
 
 ### Groupes
 #### [Maintenir l’appartenance à un groupe](maintain-group-membership-with-office-365-powershell.md)
-#### [Gérer les groupes Office 365](manage-office-365-groups-with-powershell.md)
+#### [Gestion des groupes Microsoft 365](manage-office-365-groups-with-powershell.md)
 
 ## [Gestion de SharePoint Online](manage-sharepoint-online-with-office-365-powershell.md)
 ### [Création de sites SharePoint Online et ajout d’utilisateurs](create-sharepoint-sites-and-add-users-with-powershell.md)
 ### [Gestion des utilisateurs et des groupes SharePoint Online](manage-sharepoint-users-and-groups-with-powershell.md)
 ### [Gestion des groupes de sites SharePoint Online](manage-sharepoint-site-groups-with-powershell.md)
 ## [Gestion d’Exchange Online](manage-exchange-online-with-office-365-powershell.md)
-## [Utilisation de PowerShell pour effectuer une migration de messagerie vers Office 365](use-powershell-for-email-migration-to-office-365.md)
-### [Utiliser PowerShell pour effectuer une migration à basculement vers Office 365](use-powershell-to-perform-a-cutover-migration-to-office-365.md)
-### [Utilisation de PowerShell pour effectuer une migration IMAP vers Office 365](use-powershell-to-perform-an-imap-migration-to-office-365.md)
-### [Utiliser PowerShell pour effectuer une migration intermédiaire vers Office 365](use-powershell-to-perform-a-staged-migration-to-office-365.md)
-## [Gestion d’Office 365 avec Windows PowerShell pour les partenaires avec accès délégué](manage-office-365-with-windows-powershell-for-delegated-access-permissions-dap-p.md)
-### [Gestion de clients Office 365 avec Windows PowerShell pour les partenaires avec accès délégué](manage-office-365-tenants-with-windows-powershell-for-delegated-access-permissio.md)
+## [Utilisation de PowerShell pour migrer le courrier vers Microsoft 365](use-powershell-for-email-migration-to-office-365.md)
+### [Utilisation de PowerShell pour effectuer une migration à basculement vers Microsoft 365](use-powershell-to-perform-a-cutover-migration-to-office-365.md)
+### [Utilisation de PowerShell pour effectuer une migration IMAP vers Microsoft 365](use-powershell-to-perform-an-imap-migration-to-office-365.md)
+### [Utilisation de PowerShell pour effectuer une migration intermédiaire vers Microsoft 365](use-powershell-to-perform-a-staged-migration-to-office-365.md)
+## [Gestion de Microsoft 365 avec Windows PowerShell pour les partenaires avec accès délégué](manage-office-365-with-windows-powershell-for-delegated-access-permissions-dap-p.md)
+### [Gestion des clients Microsoft 365 avec Windows PowerShell pour les partenaires avec accès délégué](manage-office-365-tenants-with-windows-powershell-for-delegated-access-permissio.md)
 ### [Ajout d’un domaine à la location d’un client avec Windows PowerShell pour les partenaires avec accès délégué](add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe.md)
 ### [Connexion à Exchange Online via Remote Windows PowerShell pour les partenaires avec accès délégué](connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md)
 ### [Récupération des données des rapports d’un client via Windows PowerShell pour les partenaires avec accès délégué](retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md)
@@ -50,3 +50,4 @@
 ## [Gestion de Skype Entreprise Online](manage-skype-for-business-online-with-office-365-powershell.md)
 ### [Gestion des stratégies Skype Entreprise Online](manage-skype-for-business-online-policies-with-office-365-powershell.md)
 ### [Affectation de stratégies Skype Entreprise Online propres à chaque utilisateur](assign-per-user-skype-for-business-online-policies-with-office-365-powershell.md)
+## [Gestion des compléments à l’aide des cmdlets PowerShell de la fonctionnalité Déploiement centralisé](use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md)

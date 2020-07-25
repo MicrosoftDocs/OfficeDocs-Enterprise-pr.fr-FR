@@ -15,6 +15,7 @@
 ### Planifier vos identités
 #### [Modèles d’identité](about-office-365-identity.md)
 #### [Identité hybride](plan-for-directory-synchronization.md)
+#### [Outils de gestion des comptes Microsoft 365](tools-to-manage-office-365-accounts.md)
 
 ### [Planifier les certificats SSL tiers pour Microsoft 365](plan-for-third-party-ssl-certificates.md)
 ### [Guides de configuration pour les services Microsoft 365 et Office 365](setup-guides-for-office-365.md)
@@ -110,6 +111,7 @@
 ### [Identité cloud uniquement](cloud-only-identities.md)
 ### Identité hybride
 #### [Préparer la synchronisation d'annuaires](prepare-for-directory-synchronization.md)
+#### [Préparation d’un domaine non routable pour la synchronisation d’annuaires](prepare-a-non-routable-domain-for-directory-synchronization.md)
 #### Utilisation de l'outil IdFix
 ##### [Préparation des attributs d'annuaire à l'aide de l'outil IdFix](prepare-directory-attributes-for-synch-with-idfix.md)
 ##### [Télécharger et exécuter l’outil IdFix](install-and-run-idfix.md)
@@ -172,6 +174,7 @@
 #### [Les données de vos clients dans les centres de données Office 365](o365-data-locations.md)
 
 ### Solutions hybrides
+#### [Vue d’ensemble](hybrid-solutions.md)
 #### [Utilisation d’Azure Active Directory pour l’authentification de SharePoint Server 2016](using-azure-ad-for-sharepoint-server-authentication.md)
 #### [Connecter un réseau local à un réseau virtuel Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
 #### [Déployer un serveur de synchronisation d’annuaires dans Azure IaaS](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
@@ -270,7 +273,7 @@
 ### [Isolation du client dans Microsoft 365 Video](office-365-isolation-in-office-365-video.md)
 ### [Isolation du client dans Microsoft Graph et Delve](office-365-isolation-in-graph-and-delve.md)
 
-# [Office 365 PowerShell](powershell/manage-office-365-with-office-365-powershell.md)
+# [PowerShell pour Microsoft 365](powershell/manage-office-365-with-office-365-powershell.md)
 # [Conformité Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/)
 # [Sécurité Microsoft 365](https://docs.microsoft.com/microsoft-365/security/)
 # [Microsoft 365 Entreprise](https://www.microsoft.com/microsoft-365/business)

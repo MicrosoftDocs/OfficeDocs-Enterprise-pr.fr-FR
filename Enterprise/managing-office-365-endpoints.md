@@ -17,16 +17,16 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Certains réseaux d’entreprise restreignent l’accès aux emplacements Internet génériques ou incluent une déformation ou un traitement substantiel du trafic réseau. Pour s’assurer que les ordinateurs sur des réseaux comme ceux-ci peuvent accéder à Office 365, les administrateurs réseau et proxy doivent gérer la liste des noms de domaine complets, des URL et des adresses IP qui composent la liste des points de terminaison Office 365. Ceux-ci doivent être ajoutés à l’itinéraire direct, à la déviation du proxy et/ou aux règles de pare-feu et/ou aux fichiers PAC pour s’assurer que les demandes réseau sont en mesure d’atteindre Office 365.
-ms.openlocfilehash: f1e614412c1ef789ba5f0b81e124fdfebf361f94
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
-ms.translationtype: MT
+ms.openlocfilehash: 335cfd3f27762c249cc9af88b169a9f0bb59bda7
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845035"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433555"
 ---
 # <a name="managing-office-365-endpoints"></a>Gestion des points de terminaison Office 365
 
-La plupart des organisations d’entreprise disposant de plusieurs emplacements de bureau et d’un réseau étendu de connexion doivent avoir besoin d’une configuration pour la connectivité réseau Office 365. Vous pouvez optimiser votre réseau en envoyant toutes les demandes réseau Office 365 approuvées directement via votre pare-feu, en contournant toute inspection ou traitement supplémentaire au niveau des paquets. Cela réduit la latence et les besoins en matière de capacité de périmètre. L’identification du trafic réseau Office 365 est la première étape pour fournir des performances optimales pour vos utilisateurs. Pour plus d’informations sur la connectivité réseau Office 365, consultez la rubrique [office 365 Network Connectivity principes](office-365-network-connectivity-principles.md).
+La plupart des organisations d’entreprise ayant plusieurs emplacements de bureau et un réseau étendu connecté doivent être configurées pour la connectivité réseau Office 365. Vous pouvez optimiser votre réseau en envoyant toutes les demandes réseau Office 365 approuvées directement via votre pare-feu, en contournant toute inspection ou traitement supplémentaire au niveau des paquets. Cela réduit la latence et les besoins en matière de capacité de périmètre. L’identification du trafic réseau Office 365 est la première étape pour fournir des performances optimales pour vos utilisateurs. Pour plus d’informations sur la connectivité réseau Office 365, consultez la rubrique [office 365 Network Connectivity principes](office-365-network-connectivity-principles.md).
 
 Microsoft vous recommande d’accéder aux points de terminaison réseau Office 365 et de les modifier à l’aide de l' [adresse IP office 365 et du service Web d’URL](office-365-ip-web-service.md).
 
@@ -59,7 +59,7 @@ La configuration courante consiste à autoriser sans traiter tout le trafic sort
 
 Il existe deux types de fichiers PAC que le script Get-PacFile générera.
 
-|**Type**|**Description**|
+|**Type (Type)**|**Description**|
 |:-----|:-----|
 |**0,1** <br/> |Envoyez l’optimisation du trafic du point de terminaison direct et de tous les autres éléments au serveur proxy. <br/> |
 |**n°2** <br/> |Envoyez l’optimisation et autorisez le trafic du point de terminaison direct et tout le reste sur le serveur proxy. Ce type peut également être utilisé pour envoyer toutes les ExpressRoute prises en charge pour le trafic Office 365 vers des segments réseau ExpressRoute et tout le reste vers le serveur proxy. <br/> |
@@ -72,12 +72,12 @@ Get-PacFile -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7
 
 Vous pouvez transmettre un certain nombre de paramètres au script :
 
-|**Parameter**|**Description**|
+|**Paramètre**|**Description**|
 |:-----|:-----|
 |**ClientRequestId** <br/> |Ceci est obligatoire et est un GUID transmis au service Web qui représente l’ordinateur client effectuant l’appel. <br/> |
 |**Instance** <br/> |L’instance de service Office 365 qui est par défaut dans le monde entier. Également transmis au service Web. <br/> |
 |**TenantName** <br/> |Votre nom de client Office 365. Transmis au service Web et utilisé comme paramètre remplaçable dans certaines URL d’Office 365. <br/> |
-|**Type** <br/> |Type du fichier PAC de proxy à générer. <br/> |
+|**Type (Type)** <br/> |Type du fichier PAC de proxy à générer. <br/> |
 
 Voici un autre exemple d’appel du script PowerShell avec des paramètres supplémentaires :
 
@@ -145,7 +145,7 @@ Voir une adresse IP associée à Office 365 sur laquelle vous souhaitez plus d�
 1. Vérifiez si l’adresse IP est incluse dans une plage publiée plus grande à l’aide d’une calculatrice CIDR, comme celles-ci pour [IPv4](https://www.ipaddressguide.com/cidr) ou [IPv6](https://www.ipaddressguide.com/ipv6-cidr). Par exemple, 40.96.0.0/13 inclut l’adresse IP 40.103.0.1 Malgré le 40,96 ne correspondant pas à 40,103.
 2. Voir si un partenaire possède la IP avec une [requête Whois](https://dnsquery.org/). S’il est détenu par Microsoft, il peut s’agir d’un partenaire interne. De nombreux points de terminaison réseau de partenaires sont répertoriés comme appartenant à la catégorie _par défaut_ , pour laquelle les adresses IP ne sont pas publiées.
 3. L’adresse IP ne fait pas partie d’Office 365 ou d’une dépendance. La publication du point de terminaison réseau Office 365 n’inclut pas tous les points de terminaison réseau Microsoft.
-4. Vérifiez le certificat, dans un navigateur Connectez-vous à l’adresse IP à l’aide de *https://\<IP_ADDRESS\> * , vérifiez les domaines répertoriés sur le certificat pour comprendre quels domaines sont associés à l’adresse IP. S’il s’agit d’une adresse IP appartenant à Microsoft et non sur la liste des adresses IP Office 365, l’adresse IP est probablement associée à un CDN Microsoft tel que *MSOCDN.net* ou un autre domaine Microsoft sans informations IP publiées. Si vous trouvez le domaine sur le certificat est un domaine dans lequel nous revendiquons de répertorier l’adresse IP, veuillez nous le faire savoir.
+4. Vérifiez le certificat, dans un navigateur Connectez-vous à l’adresse IP à l’aide de *https:// \<IP_ADDRESS\> * , vérifiez les domaines répertoriés sur le certificat pour comprendre quels domaines sont associés à l’adresse IP. S’il s’agit d’une adresse IP appartenant à Microsoft et non sur la liste des adresses IP Office 365, l’adresse IP est probablement associée à un CDN Microsoft tel que *MSOCDN.net* ou un autre domaine Microsoft sans informations IP publiées. Si vous trouvez le domaine sur le certificat est un domaine dans lequel nous revendiquons de répertorier l’adresse IP, veuillez nous le faire savoir.
 
 <a name="bkmk_cname"> </a>
 ### <a name="some-office-365-urls-point-to-cname-records-instead-of-a-records-in-the-dns-what-do-i-have-to-do-with-the-cname-records"></a>Certaines URL Office 365 pointent vers des enregistrements CNAMe au lieu d’un enregistrement dans le DNS. Que dois-je faire avec les enregistrements CNAMe ?
@@ -167,9 +167,9 @@ Les configurations codées en dur ou la fonctionnalité de liste de domaines aut
 
 Office 365 et d’autres services Microsoft utilisent plusieurs services tiers tels que Akamai et MarkMonitor pour améliorer votre expérience Office 365. Pour vous assurer de la meilleure expérience possible, nous pouvons modifier ces services à l’avenir. Les domaines tiers peuvent héberger du contenu, tel qu’un CDN, ou ils peuvent héberger un service, tel qu’un service de gestion du trafic géographique. Voici quelques-uns des services actuellement utilisés :
   
-[MarkMonitor](https://www.markmonitor.com/) est en cours d’utilisation lorsque vous voyez des requêtes qui incluent * \*. nsatc.net* . Ce service assure la protection des noms de domaine et la surveillance contre les comportements malveillants.
+[MarkMonitor](https://www.markmonitor.com/) est en cours d’utilisation lorsque vous voyez des requêtes qui incluent * \* . nsatc.net* . Ce service assure la protection des noms de domaine et la surveillance contre les comportements malveillants.
   
-[ExactTarget](https://www.marketingcloud.com/) est en cours d’utilisation lorsque vous voyez des demandes à * \*. ExactTarget.com* . Ce service fournit la gestion des liens de messagerie et la surveillance contre les comportements malveillants.
+[ExactTarget](https://www.marketingcloud.com/) est en cours d’utilisation lorsque vous voyez des demandes à * \* . ExactTarget.com* . Ce service fournit la gestion des liens de messagerie et la surveillance contre les comportements malveillants.
   
 [Akamai](https://www.akamai.com/) est utilisé lorsque vous voyez des demandes qui incluent l’un des noms de domaine complets suivants. Ce service offre des services réseau de distribution de contenu et DNS.
   

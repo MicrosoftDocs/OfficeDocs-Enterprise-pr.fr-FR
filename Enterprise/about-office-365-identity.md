@@ -21,16 +21,16 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Découvrez comment l’identité de l’utilisateur est gérée dans Microsoft 365.
-ms.openlocfilehash: e473a6397cb0b2fc7a2b81ab7a959a4ccdda400b
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: 418d5841a55e6a0da2ccb098c6b41e5a247c9552
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230060"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433615"
 ---
 # <a name="microsoft-365-identity-models-and-azure-active-directory"></a>Modèles d’identité Microsoft 365 et Azure Active Directory
 
-*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 Microsoft 365 utilise Azure Active Directory (Azure AD), un service d’authentification et d’identité d’utilisateur basé sur un nuage inclus dans votre abonnement Microsoft 365, pour gérer les identités et l’authentification pour Microsoft 365. L’obtention de l’infrastructure d’identité configurée correctement est essentielle à la gestion de l’accès des utilisateurs et des autorisations Microsoft 365 pour votre organisation.
 
@@ -46,9 +46,8 @@ Pour planifier les comptes d’utilisateur, vous devez d’abord comprendre les 
 
 Voici les deux types d’identités, leur meilleur et leurs avantages.
 
-|||
+| | Identité cloud uniquement | Identité hybride |
 |:-------|:-----|:-----|
-|  | **Identité cloud uniquement** | **Identité hybride** |
 | **Définition** | Le compte d’utilisateur existe uniquement dans le client Azure AD pour votre abonnement Microsoft 365. | Le compte d’utilisateur existe dans AD DS et une copie se trouve également dans le client Azure AD pour votre abonnement Microsoft 365. Le compte d’utilisateur dans Azure AD peut également inclure une version hachée du mot de passe du compte d’utilisateur AD DS déjà haché. |
 | **Comment Microsoft 365 authentifie les informations d’identification de l’utilisateur** | Le client Azure AD de votre abonnement Microsoft 365 effectue l’authentification avec le compte d’identité Cloud. | Le client Azure AD de votre abonnement Microsoft 365 gère le processus d’authentification ou redirige l’utilisateur vers un autre fournisseur d’identité. |
 | **Recommandé pour** | Organisations qui n’ont pas ou n’ont pas besoin d’un service AD DS local. | Organisations utilisant AD DS ou un autre fournisseur d’identité. |

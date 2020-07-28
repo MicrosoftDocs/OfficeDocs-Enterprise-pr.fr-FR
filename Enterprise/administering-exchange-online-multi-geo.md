@@ -10,14 +10,14 @@ ms.service: o365-solutions
 f1.keywords:
 - NOCSH
 ms.custom: ''
-localization_priority: Priority
+localization_priority: Normal
 description: Découvrez comment administrer le paramètre d’Exchange Online avec Microsoft PowerShell.
-ms.openlocfilehash: d2498178193f71c1ffaea6141a09cc76e826e99e
-ms.sourcegitcommit: ee6fcb8c78de748fa203deacf799f66ad99f18e1
-ms.translationtype: HT
+ms.openlocfilehash: 7c05699b411a3f36fc1bb8b47e643283d1ec2d65
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352944"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433505"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>Administration des boîtes aux lettres Exchange Online dans un environnement multigéographique
 
@@ -103,7 +103,8 @@ MailboxRegion               : EUR
 MailboxRegionLastUpdateTime : 2/6/2018 8:21:01 PM
 ```
 
-> **Remarque :** si le code de géolocalisation dans le nom de la base de données ne correspond pas à la valeur **MailboxRegion**, la boîte aux lettres est automatiquement placée dans une file d’attente de déplacement, et déplacée vers l’emplacement géographique spécifié par la valeur **MailboxRegion** (Exchange Online recherche une discordance entre ces valeurs de propriété).
+> [!NOTE]
+> Si le code d’emplacement géographique dans le nom de la base de données ne correspond pas à la valeur **MailboxRegion** , la boîte aux lettres est automatiquement placée dans une file d’attente de relocalisation et déplacée vers l’emplacement géographique spécifié par la valeur **MailboxRegion** (Exchange Online recherche une incompatibilité entre ces valeurs de propriétés).
 
 ## <a name="move-an-existing-cloud-only-mailbox-to-a-specific-geo-location"></a>Déplacer une boîte aux lettres cloud uniquement vers un emplacement géographique spécifique
 
@@ -133,17 +134,16 @@ Par exemple, pour définir la valeur **PreferredDataLocation** sur la zone géog
 Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataLocation EUR
 ```
 
-**Remarques** :
-
-- Comme mentionné précédemment, vous ne pouvez pas utiliser cette procédure pour des objets utilisateur synchronisés à partir du service Active Directory local. Vous devez modifier la valeur **PreferredDataLocation** dans Active Directory et la synchroniser à l’aide d’AAD Connect. Pour plus d’informations, voir [Synchronisation Azure Active Directory Connect : Configurer un emplacement de données par défaut pour les ressources Microsoft 365](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
-
-- Le temps nécessaire pour déplacer une boîte aux lettres vers un nouvel emplacement géographique dépend de plusieurs facteurs :
-
-  - la taille et le type de boîte aux lettres ;
-
-  - le nombre total de boîtes aux lettres déplacées ;
-
-  - la disponibilité des ressources nécessaires pour le déplacement.
+> [!NOTE]
+> - Comme indiqué précédemment, vous ne pouvez pas utiliser cette procédure pour les objets utilisateur synchronisés à partir d’Active Directory local. Vous devez modifier la valeur **PreferredDataLocation** dans Active Directory et la synchroniser à l’aide d’AAD Connect. Pour plus d’informations, voir [Synchronisation Azure Active Directory Connect : Configurer un emplacement de données par défaut pour les ressources Microsoft 365](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
+> 
+> - Le temps nécessaire pour déplacer une boîte aux lettres vers un nouvel emplacement géographique dépend de plusieurs facteurs :
+> 
+>   - la taille et le type de boîte aux lettres ;
+> 
+>   - le nombre total de boîtes aux lettres déplacées ;
+> 
+>   - la disponibilité des ressources nécessaires pour le déplacement.
 
 ### <a name="move-disabled-mailboxes-that-are-on-litigation-hold"></a>Déplacer des boîtes aux lettres désactivées pour cause de Conservation pour litige
 

@@ -25,12 +25,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Affichez l’état d’intégrité des services Microsoft 365 avant d’appeler le support pour voir s’il existe une interruption de service Active.
-ms.openlocfilehash: d937310faeaf5af63a6c36841d7a609006fc4ab5
-ms.sourcegitcommit: 057f0fce08b41a00581fc4736cad89270129c703
+ms.openlocfilehash: 17d0df388d3632f0b27b3ca59c57a995ce7dfb8e
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44266680"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433885"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Comment vérifier l’état du service Microsoft 365
 
@@ -68,6 +68,9 @@ Pour vous inscrire aux notifications par courrier électronique des nouveaux inc
 - Jusqu’à deux adresses de messagerie.
 - Si vous souhaitez recevoir des notifications pour les incidents ou les avis
 - Services pour lesquels vous souhaitez une notification
+
+> [!NOTE]
+> Chaque administrateur peut avoir son ensemble de préférences et la limite ci-dessus de deux adresses de messagerie est par compte d’administrateur.
 
 > [!TIP]
 > Vous pouvez également utiliser l' [application d’administration 365 de Microsoft](https://go.microsoft.com/fwlink/p/?linkid=627216) sur votre appareil mobile pour afficher l’état du service, ce qui constitue un excellent moyen de rester informé des notifications de type transmission. 
@@ -145,4 +148,5 @@ Pour plus d’informations sur notre engagement en matière de disponibilité, c
 
 ## <a name="see-also"></a>Voir aussi
 
-[Rapports d’activité dans le centre d’administration Microsoft 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
+[Rapports d’activité dans le centre](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) 
+ d’administration Microsoft 365 [Préférences du centre de messages](https://docs.microsoft.com/microsoft-365/admin/manage/message-center?view=o365-worldwide#preferences11)

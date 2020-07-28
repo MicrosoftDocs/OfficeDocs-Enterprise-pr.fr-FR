@@ -13,14 +13,14 @@ ms.custom: ''
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
-localization_priority: Priority
+localization_priority: Normal
 description: Découvrez comment déplacer un site OneDrive vers un autre emplacement géographique.
-ms.openlocfilehash: ce631cc8f922fd9f64586bb41e6dd1ec64ac1141
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
-ms.translationtype: HT
+ms.openlocfilehash: 699c9502c7257e5908e79d591170b51a563c4999
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44058004"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433875"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Déplacer un site OneDrive vers un autre emplacement géographique 
 
@@ -199,4 +199,8 @@ Lorsque le déplacement géographique de OneDrive est terminé, l’utilisateur 
 
 ### <a name="existing-followed-groups-and-sites"></a>Sites et groupes suivis existants
 
-Les sites et groupes suivis apparaissent dans OneDrive Entreprise de l’utilisateur indépendamment de leur emplacement géographique. Les sites et groupes hébergés dans un autre emplacement géographique s’ouvrent dans un onglet distinct.
+Les sites et les groupes suivis s’affichent dans le OneDrive de l’utilisateur, quel que soit leur emplacement géographique. Les sites et les groupes hébergés dans un autre emplacement géographique s’ouvrent dans un onglet séparé.
+
+### <a name="delve-geo-url-updates"></a>Mises à jour de l’URL géo
+
+Les utilisateurs sont envoyés à la zone géographique de Delve correspondant à leur PDL uniquement après que leur OneDrive a été déplacé vers la nouvelle région.

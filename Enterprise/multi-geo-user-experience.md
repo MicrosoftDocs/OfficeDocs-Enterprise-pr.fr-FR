@@ -11,14 +11,14 @@ ms.collection: Strat_SP_gtc
 f1.keywords:
 - NOCSH
 ms.custom: ''
-localization_priority: Priority
+localization_priority: Normal
 description: Découvrez l’expérience utilisateur de SharePoint, de OneDrive et d’Exchange dans un environnement multigéographique.
-ms.openlocfilehash: 21858989f853b2a8c87808e38763068631173f7f
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
-ms.translationtype: HT
+ms.openlocfilehash: 55c3f431474715ce03cc313a5d8d208d76b60b78
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44057750"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433795"
 ---
 # <a name="user-experience-in-a-multi-geo-environment"></a>Expérience utilisateur dans un environnement multigéographique
 

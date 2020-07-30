@@ -7,7 +7,7 @@ ms.date: 04/14/2020
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
-localization_priority: Normal
+localization_priority: Priority
 ms.collection: Ent_O365
 search.appverid:
 - MET150
@@ -23,26 +23,26 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: La prise en charge des serveurs et applications Office 2010 prendra fin prochainement et aucun contrat de support personnalisé n’est disponible. Utilisez cet article pour commencer à planifier votre mise jour dès maintenant.
-ms.openlocfilehash: 5ee19f418512a5ab188a3618d61b067eb8cb790f
-ms.sourcegitcommit: d8ca7017b25d5ddc2771e662e02b62ff2058383b
-ms.translationtype: MT
+ms.openlocfilehash: 50273a76873df8315c898ad622c82d44eea3972e
+ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "45102572"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502619"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Ressources facilitant la mise à jour de vos clients et serveurs Office 2010
 
-*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Office 2010 et Exchange 2010 atteindront leur fin d’assistance le **13 octobre 2020**. 
+La fin du support est prise en charge par les **Office 2010 et Exchange 2010 le 13 octobre 2020**. 
 
-SharePoint 2010 et Project Server 2010 atteindront leur fin d’assistance le **13 avril 2021**.
+La prise en charge de SharePoint 2010 et de Project Server 2010 se termine le **avril 13, 2021**.
 
-Pendant que vous planifiez votre mise à niveau, il est très utile de passer à Microsoft 365. 
+La planification de votre mise à jour est le moment idéal pour envisager la migration vers Microsoft 365. 
 
-- Microsoft 365 propose des services en nuage pour les produits serveur Office 2010, tels qu’Exchange Server et SharePoint Server et des services tels que teams et OneDrive entreprise. 
+- Microsoft 365 offre des services cloud pour les produits serveur Office 2010, tels qu’Exchange Server et SharePoint Server et des services tels que Teams et OneDrive Entreprise. 
 
-- Les applications Microsoft 365 pour entreprise (précédemment nommé Office 365 ProPlus), incluses dans Microsoft 365 E3 et E5, sont les applications clientes Office que vous installez sur votre appareil local. Ils sont mis à jour de façon régulière avec de nouvelles fonctionnalités de productivité et de sécurité issues du cloud Microsoft.
+- Les applications Microsoft 365 pour les entreprises (précédemment nommé Office 365 ProPlus), incluses dans Microsoft 365 E3 et E5, sont les applications clientes Office que vous installez sur votre appareil local. Ils sont mis à jour de façon régulière avec de nouvelles fonctionnalités de productivité et de sécurité issues du cloud Microsoft.
 
 Pour consulter une synthèse visuelle des options de mise à jour, de migration et de déplacement vers le Cloud pour les produits serveur et client Office 2010 et Windows 7, voir l’[affiche de fin de prise en charge](./downloads/Office2010Windows7EndOfSupport.pdf).
 
@@ -66,7 +66,7 @@ Vous pouvez également [télécharger](https://github.com/MicrosoftDocs/microsof
 
 Si vous utilisez les produits et applications Office 2010 à domicile, voir [ces informations](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do).
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Vidéo : qu’est-ce que Microsoft 365 ?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
   

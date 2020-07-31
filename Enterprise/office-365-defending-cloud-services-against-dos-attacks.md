@@ -15,16 +15,15 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Comment Microsoft défende ses services Cloud contre les attaques par déni de service (DoS).
-ms.openlocfilehash: 58d2d3611c65ba098049fab71282253f7c054ea3
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: a8374e46c9b561afce77545293b9bae3dd42ed64
+ms.sourcegitcommit: 72217e86b0da7ba13407aefe270200449c352548
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998328"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529087"
 ---
 # <a name="defending-microsoft-365-cloud-services-against-denial-of-service-attacks"></a>Protection des services Cloud Microsoft 365 contre des attaques par déni de service
 
-## <a name="introduction"></a>Introduction
 Les centres de contenu Microsoft sont protégés par une sécurité de défense approfondie qui inclut des délimiteurs de périmètre, des caméras vidéo, du personnel de sécurité et des entrées sécurisées qui utilisent la biométrie, la carte à puce et l’authentification multifacteur. La sécurité de défense en profondeur continue à travers toutes les zones de l’installation et de chaque unité de serveur physique. Le [groupe Microsoft Cloud Infrastructure and Operations](https://www.microsoft.com/cloud-platform/global-datacenters) fournit l’infrastructure de base et les technologies de base pour nos services Cloud. Nos centres de connaissances respectent les normes industrielles en matière de sécurité et de fiabilité, et sont gérées, surveillées et gérées par le personnel des opérations Microsoft.
 
 Pour mieux protéger nos services Cloud, Microsoft fournit un système de défense DDoS qui fait partie des processus de test de pénétration et de surveillance continue de Microsoft Azure. Le système de défense DDoS Azure est conçu non seulement pour résister aux attaques provenant de l’extérieur, mais également d’autres clients Azure. Azure utilise des techniques de détection et d’atténuation standard telles que les cookies SYN, la limitation du débit et les limites de connexion pour protéger contre les attaques DDoS.

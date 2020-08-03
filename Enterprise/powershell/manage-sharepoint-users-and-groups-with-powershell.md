@@ -19,16 +19,16 @@ ms.custom:
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Résumé : utilisez PowerShell pour Microsoft 365 pour gérer les utilisateurs, les groupes et les sites SharePoint Online.'
-ms.openlocfilehash: ffdaa2d4810e2e89878ea3eacde99babb046fce2
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: ae232766031dade061e79a574efa14e8432ae08c
+ms.sourcegitcommit: 7bf52d4277b97d6f1c585da2c83979fbcf061c1e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230470"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "46542815"
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-powershell"></a>Gestion des utilisateurs et des groupes SharePoint Online avec PowerShell
 
-*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 Si vous êtes un administrateur SharePoint Online qui travaille avec de grandes listes de comptes ou de groupes d’utilisateurs et qu’il souhaite un moyen plus facile de les gérer, vous pouvez utiliser PowerShell pour Microsoft 365. 
 
@@ -67,7 +67,7 @@ $user = "<user account name, such as opalc>"
 Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$tenant.com -IsSiteCollectionAdmin $true
  ```
 
-Pour utiliser ces commandes, remplacez remplacer tout entre guillemets, y compris les caractères < et >, par les noms corrects.
+Pour utiliser ces commandes, remplacez tous les éléments entre guillemets, y compris les caractères < et >, par les noms corrects.
 
 Par exemple, cet ensemble de commandes ajoute Opal Castillo (nom d’utilisateur opalc) à la liste des administrateurs de collection de sites sur la collection de sites ContosoTest dans la location contoso :
 
@@ -281,7 +281,6 @@ Ce rapport est assez simple, et vous pouvez ajouter du code pour créer des rapp
 
 [Gérer SharePoint Online avec PowerShell](create-sharepoint-sites-and-add-users-with-powershell.md)
 
-[Gérer Microsoft 365 avec PowerShell](manage-office-365-with-office-365-powershell.md)
+[Gestion de Microsoft 365 à l’aide de PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Prise en main de PowerShell pour Microsoft 365](getting-started-with-office-365-powershell.md)
-
+[Prise en main de PowerShell pour Microsoft 365](getting-started-with-office-365-powershell.md)

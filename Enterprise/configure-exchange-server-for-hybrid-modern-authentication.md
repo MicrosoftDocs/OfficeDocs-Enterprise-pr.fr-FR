@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: L’authentification moderne hybride (HMA), est une méthode de gestion des identités qui offre une authentification et une autorisation utilisateur plus sécurisées, et est disponible pour les déploiements hybrides Exchange Server locaux.
-ms.openlocfilehash: 4348de3fbec5917c2b13af3f93bf79ad898af017
-ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
+ms.openlocfilehash: afc3b2926f02a64a9f2f27ba85e5264258b49c3b
+ms.sourcegitcommit: bb122479c3a2757c0a5adde6c9f0c77c75ab3951
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502589"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46548877"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Comment configurer Exchange Server en local pour utiliser l’authentification moderne hybride
 
@@ -72,7 +72,7 @@ Tout d’abord, Rassemblez toutes les URL que vous devez ajouter dans AAD. Exéc
 ```powershell
 Get-MapiVirtualDirectory | FL server,*url*
 Get-WebServicesVirtualDirectory | FL server,*url*
-Get-ActiveSyncVirtualDirectory | FL server,*url*
+Get-ClientAccessServer | fl Name, AutodiscoverServiceInternalUri
 Get-OABVirtualDirectory | FL server,*url*
 Get-AutodiscoverVirtualDirectory | FL server,*url*
 Get-OutlookAnywhere | FL server,*url*
@@ -161,6 +161,6 @@ Vous devez également maintenir la touche CTRL enfoncée en même temps que vous
 
 Si vous êtes un client local utilisant Exchange Server sur le port TCP 443, veuillez autoriser les plages d’adresses IP suivantes : <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR>
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 [Conditions requises pour la configuration de l’authentification moderne pour la transition à partir d’Office 365 dédié/ITAR vers vNext](https://docs.microsoft.com/exchange/troubleshoot/modern-authentication/modern-authentication-configuration)

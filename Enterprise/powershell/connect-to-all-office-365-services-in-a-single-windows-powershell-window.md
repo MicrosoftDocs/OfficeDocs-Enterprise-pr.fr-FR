@@ -18,12 +18,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 'Résumé : Connectez Windows PowerShell à tous les services Microsoft 365 dans une seule fenêtre Windows PowerShell.'
-ms.openlocfilehash: 222355bb3c8c9d8123fd2738c80a7225da15ca46
-ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
+ms.openlocfilehash: de6bb592233b44a14848b1512230197bb8eb75fb
+ms.sourcegitcommit: 1aaa4c6d10eb14f4b3d5a452f2e64c96f5d96ae4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502679"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560059"
 ---
 # <a name="connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window"></a>Connexion à tous les services Microsoft 365 dans une seule fenêtre Windows PowerShell
 
@@ -65,7 +65,7 @@ Avant de pouvoir gérer l’ensemble de Microsoft 365 à partir d’une seule in
     
 - Vous devez installer les modules requis pour Azure Active Directory (Azure AD), Exchange Online, SharePoint Online, Skype Entreprise Online et les équipes :
     
-   - [Azure Active Directory V2](connect-to-office-365-powershell.md##connect-with-the-azure-active-directory-powershell-for-graph-module)
+   - [Azure Active Directory V2](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
    - [SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251)
    - [Skype Entreprise Online, module Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=532439)
    - [Echange en ligne PowerShell V2](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell-v2/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exchange-online-powershell-v2-module)

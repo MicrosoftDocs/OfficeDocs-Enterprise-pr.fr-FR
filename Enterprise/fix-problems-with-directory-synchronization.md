@@ -19,12 +19,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Décrit les causes fréquentes des problèmes de synchronisation d’annuaires dans Office 365 et fournit plusieurs méthodes de résolution.
-ms.openlocfilehash: fac0c477f3c68271a2f0f8c4e2a09fc051fe1ce4
-ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
+ms.openlocfilehash: faf0f061b8f2798054e63f3338b8076c0ec88f73
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502649"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46570967"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-microsoft-365"></a>Résoudre les problèmes de synchronisation d’annuaires pour Microsoft 365
 
@@ -89,8 +89,3 @@ Pour effectuer la mise à jour à partir d’Azure AD Sync vers Azure AD Connect
     
 - [Utiliser PowerShell pour corriger les adresses de courrier en double](https://go.microsoft.com/fwlink/p/?LinkId=396731)
     
-## <a name="diagnostic-tools"></a>Outils de diagnostic
-
-[IDFix tool](prepare-directory-attributes-for-synch-with-idfix.md) est utilisé pour détecter et corriger les objets d’identité et leurs attributs dans un environnement Active Directory local en vue de la migration vers Microsoft 365. IDFix est destiné aux administrateurs Active Directory responsables de la synchronisation d’annuaires avec le service Microsoft 365. 
-
-[Téléchargez l’outil IDFix](https://go.microsoft.com/fwlink/p/?LinkId=396718) à partir du Centre de téléchargement Microsoft.

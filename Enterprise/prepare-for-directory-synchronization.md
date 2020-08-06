@@ -1,5 +1,5 @@
 ---
-title: Préparer la synchronisation d’annuaires avec Microsoft 365
+title: Préparer la synchronisation d'annuaires pour Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -26,14 +26,14 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Décrit comment préparer la mise en service des utilisateurs à Microsoft 365 à l’aide de la synchronisation d’annuaires et des avantages à long terme de cette méthode.
-ms.openlocfilehash: 2a4b5f54d7b5aafd5e5eb7a43859e49caa57a519
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: 30e735d086f1c31219fc9d6d52ff0b2545f5c08d
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735692"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46570997"
 ---
-# <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Préparer la synchronisation d’annuaires avec Microsoft 365
+# <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Préparer la synchronisation d'annuaires pour Microsoft 365
 
 *Cet article s’applique à la fois à Microsoft 365 entreprise et à Microsoft 365 entreprise.*
 
@@ -76,7 +76,7 @@ Dans votre AD DS, effectuez les tâches de nettoyage suivantes pour chaque compt
   - Téléphone mobile
   - Numéro de télécopie
   - Rue
-  - City
+  - Ville
   - Département ou région
   - Code postal
   - Pays ou région
@@ -166,8 +166,6 @@ Les attributs que vous devez préparer sont répertoriés ici :
   - Les domaines routables doivent être utilisés ; par exemple, les domaines locaux ou internes ne peuvent pas être utilisés.
   - Unicode est converti en caractères de trait de soulignement.
   - **userPrincipalName** ne peut pas contenir de valeurs en double dans l’annuaire. 
-
-Voir [Prepare Directory Attributes with the IdFix Tool](prepare-directory-attributes-for-synch-with-idfix.md) pour utiliser l’outil IdFix pour identifier les erreurs dans les attributs de votre AD DS.
     
 ## <a name="3-prepare-the-userprincipalname-attribute"></a>3. préparer l’attribut userPrincipalName
 
@@ -189,9 +187,6 @@ Si vous avez déjà configuré la synchronisation d’annuaires, il se peut que 
   
 Découvrez également [Comment préparer un domaine non routable (par exemple, le domaine. local) pour la synchronisation d’annuaires](prepare-a-non-routable-domain-for-directory-synchronization.md).
 
-
 ## <a name="next-steps"></a>Étapes suivantes
 
-Consultez [la rubrique prepare Directory Attributes with the IdFix Tool](prepare-directory-attributes-for-synch-with-idfix.md) pour vous aider à corriger les erreurs dans les attributs de votre AD DS avant la synchronisation d’annuaires.
-
-Si vous avez corrigé toutes les erreurs d’attribut identifiées avec l’outil IdFix et que vous avez terminé les étapes 1 à 5 ci-dessus, voir [configurer la synchronisation d’annuaires](set-up-directory-synchronization.md).
+Si vous avez terminé les étapes 1 à 5 ci-dessus, voir [configurer la synchronisation d’annuaires](set-up-directory-synchronization.md).

@@ -19,12 +19,12 @@ search.appverid:
 - MED150
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
 description: Découvrez comment désactiver la synchronisation d’annuaires. Vous pouvez également afficher son état.
-ms.openlocfilehash: d6f3a9f1f4e069716501f58e188daedacbf7e597
-ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
+ms.openlocfilehash: 4c2f0baf6d3657e3eb9974ff7d4f8109e52e603b
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44906197"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46571037"
 ---
 # <a name="view-directory-synchronization-status-in-microsoft-365"></a>Afficher l’état de la synchronisation d’annuaires dans Microsoft 365
 
@@ -50,5 +50,4 @@ En cas de problème avec la synchronisation d’annuaires, les erreurs sont éga
 |**Synchronisation de mot de passe activée** | True ou false. Indique si la synchronisation de hachage de mot de passe s’est déplacée entre notre client local et votre client Microsoft 365. |
 |**Dernière synchronisation de mot de passe** | Dernière exécution de la synchronisation de hachage de mot de passe. Affichera un avertissement et un lien vers un outil de dépannage Si la dernière synchronisation remonte à plus de trois jours. |
 |**Version du client de synchronisation d’annuaires** | Contient un lien de téléchargement si une nouvelle version d’Azure AD Connect a été publiée. |
-|**Outil IDFix** | Téléchargez le lien vers [IDFix](install-and-run-idfix.md), un outil que vous pouvez utiliser pour vérifier l’Active Directory local. |
 |**Compte de service de synchronisation d’annuaires** | Affiche le nom de votre compte de service de synchronisation d’annuaires Microsoft 365. |

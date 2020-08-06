@@ -7,7 +7,7 @@ ms.date: 03/11/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Découvrez comment optimiser les performances des extensions personnalisées dans les pages de sites modernes SharePoint Online.
-ms.openlocfilehash: bdc05c4e786d07a18c49766bf37aca7f4fde56da
-ms.sourcegitcommit: c024b48115cebfdaadfbc724acc2d065394156e9
-ms.translationtype: HT
+ms.openlocfilehash: d4e5e492e0573c54f40b1f9e040859037a97965c
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42603818"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46571167"
 ---
 # <a name="optimize-custom-extension-performance-in-sharepoint-online-modern-site-pages"></a>Optimiser les performances des extensions personnalisées dans les pages de sites modernes SharePoint Online
 
@@ -37,14 +37,15 @@ L’Outil Diagnostic de page pour SharePoint est une extension de navigateur pou
 >[!NOTE]
 >L’Outil Diagnostic de page fonctionne uniquement pour SharePoint Online et ne peut pas être utilisé sur une page système SharePoint.
 
-Lorsque vous analysez une page de site SharePoint avec l’outil Diagnostic de page pour SharePoint, vous pouvez voir des informations sur les extensions personnalisées qui dépassent la métrique de référence dans le résultat Les **extensions personnalisées ont un impact sur le temps de chargement** dans le volet _Tests de diagnostic_.
+Lorsque vous analysez une page de site SharePoint avec l’outil Diagnostics de la page pour SharePoint, vous pouvez voir des informations sur les extensions personnalisées qui dépassent la mesure de ligne de base dans les extensions ayant un impact sur le **temps de chargement** et/ou sur le résultat des **Extensions utilisées** dans le volet _tests de diagnostic_ 
 
 Les résultats possibles sont les suivants :
 
-- **Attention requise** (en rouge) : une extension _personnalisée_ qui prend plus de **une** seconde pour charger. Le temps de chargement total tel qu’il apparaît dans les résultats des tests est subdivisé en : chargement de module, chargement différé, initialisation et rendu.
+- **Attention requise** (en rouge) : une extension _personnalisée_ qui prend plus de **une** seconde pour charger. Le temps de chargement total tel qu’il apparaît dans les résultats des tests est subdivisé en : chargement de module, chargement différé, initialisation et rendu. En outre, si un trop grand nombre d’extensions sur une page peut avoir un impact sur le temps de chargement de la page, ce dernier sera mis en surbrillance si au moins **sept** extensions sont utilisées sur la page.
+- **Opportunités d’amélioration** (jaune) si au moins **cinq** extensions sont utilisées, elles seront mises en surbrillance dans cette section sous la forme d’un avertissement jusqu’à ce qu’au moins sept soient utilisés, ce qui sera mis en évidence à l’attention requise.
 - **Aucune action requise** (en vert) : aucune extension ne prend plus d’une seconde pour charger.
 
-Si une extension affecte le temps de chargement de la page, le résultat s’affiche dans la section **Attention requise** des résultats. Cliquez sur les résultats pour afficher des informations sur l’extension de chargement lent. Les mises à jour ultérieures de l’outil Diagnostic de page pour SharePoint peuvent inclure des mises à jour des règles d’analyse. Vérifiez donc que vous disposez toujours de la dernière version de l’outil.
+Si une extension a un impact sur le temps de chargement de la page ou qu’il y a trop de extsnions sur la page, le résultat s’affiche dans la section **attention requise** des résultats. Cliquez sur le résultat pour afficher des détails sur l’extension qui est chargée lentement ou trop d’extensions ont été mises en surbrillance. Les mises à jour ultérieures de l’outil Diagnostic de page pour SharePoint peuvent inclure des mises à jour des règles d’analyse. Vérifiez donc que vous disposez toujours de la dernière version de l’outil.
 
 ![Résultats du temps de chargement des pages](media/page-diagnostics-for-spo/pagediag-extensions-load-time.png)
 

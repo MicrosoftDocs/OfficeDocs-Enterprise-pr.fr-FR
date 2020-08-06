@@ -1,5 +1,5 @@
 ---
-title: Outils permettant de gérer les comptes Microsoft 365
+title: Outils de gestion des comptes Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -20,14 +20,14 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 'Découvrez les outils à utiliser pour gérer vos utilisateurs de Microsoft 365. '
-ms.openlocfilehash: 324a95e111812180cefffe98f2d7ec3c64e956b1
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: ba73d899dee002fa08f373faaed4d772da546b13
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230230"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46571027"
 ---
-# <a name="tools-to-manage-microsoft-365-accounts"></a>Outils permettant de gérer les comptes Microsoft 365
+# <a name="tools-to-manage-microsoft-365-accounts"></a>Outils de gestion des comptes Microsoft 365
 
 Vous pouvez gérer les utilisateurs de Microsoft 365 de différentes manières, en fonction de votre configuration. Vous pouvez gérer les utilisateurs dans le [Centre d’administration 365 de Microsoft](https://admin.microsoft.com), Windows PowerShell, dans les services de domaine Active Directory (AD DS) ou dans le portail d’administration Azure Active Directory (Azure AD). 
 
@@ -57,7 +57,7 @@ Lorsque vous décidez de la manière dont votre organisation créera et gérera 
   
 - Le logiciel de synchronisation d’annuaires doit être installé sur les serveurs au sein de votre environnement local pour connecter les identités entre Microsoft 365 et AD DS.
     
-- Toute option de synchronisation d’annuaires, y compris les options SSO, requiert des attributs AD DS conformes aux normes. Les spécificités des attributs utilisés dans votre répertoire et le nettoyage (le cas échéant) requis sont décrits dans [Prepare to provision Users with Directory Synchronization to Microsoft 365](prepare-for-directory-synchronization.md). Voir [Download and Run the Microsoft 365 ID Fix Tool](install-and-run-idfix.md) pour obtenir des instructions sur l’utilisation de Fix ID pour automatiser le nettoyage d’annuaire. 
+- Toute option de synchronisation d’annuaires, y compris les options SSO, requiert des attributs AD DS conformes aux normes. Les spécificités des attributs utilisés dans votre répertoire et le nettoyage (le cas échéant) requis sont décrits dans [Prepare to provision Users with Directory Synchronization to Microsoft 365](prepare-for-directory-synchronization.md). 
     
 - Planifiez la façon dont vous allez créer des comptes Microsoft 365.
     
@@ -76,7 +76,7 @@ Lorsque vous décidez de la manière dont votre organisation créera et gérera 
     Si vous décidez d’ajouter et de gérer tous vos utilisateurs par le biais du centre d’administration, vous devez spécifier l’emplacement et attribuer des licences en même temps que la création du compte Microsoft 365. Par conséquent, la planification n’est pas obligatoire.
     
     > [!IMPORTANT]
-    > La création de comptes dans Microsoft 365 sans l’attribution d’une licence (à SharePoint Online, par exemple) signifie que le propriétaire du compte peut consulter le centre d’administration Microsoft 365, mais qu’il ne peut accéder à aucun des services de l’abonnement de votre entreprise. Une fois que vous avez affecté un emplacement et la licence, le compte est répliqué vers le service ou les services que vous avez attribués. L’utilisateur peut se connecter à son compte et utiliser les services que vous lui avez attribués. 
+    > La création de comptes dans Microsoft 365 sans l’attribution d’une licence (à SharePoint Online, par exemple) signifie que le propriétaire du compte peut consulter le centre Microsoft 365, mais ne peut accéder à aucun des services de l’abonnement de votre entreprise. Une fois que vous avez affecté un emplacement et la licence, le compte est répliqué vers le service ou les services que vous avez attribués. L’utilisateur peut se connecter à son compte et utiliser les services que vous lui avez attribués. 
   
 ## <a name="next-steps"></a>Étapes suivantes
 

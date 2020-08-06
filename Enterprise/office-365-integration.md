@@ -21,16 +21,16 @@ search.appverid:
 - MED150
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
 description: Découvrez comment intégrer Microsoft 365 à vos services d’annuaire existants.
-ms.openlocfilehash: 456e3e73451a07750d707e2fca52df9214c2dfaa
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: 1207c7549a0c81a45211581be2b068ca8067a35b
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44736032"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46571057"
 ---
 # <a name="microsoft-365-integration-with-on-premises-environments"></a>Intégration de Microsoft 365 aux environnements locaux
 
-*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 Vous pouvez intégrer Microsoft 365 à vos services d’annuaire existants et à une installation locale d’Exchange Server, Skype entreprise Server 2015 ou SharePoint Server.
   
@@ -50,7 +50,7 @@ Avant d’intégrer Microsoft 365 et un environnement local, vous devez égaleme
 Consultez la rubrique [où gérer les comptes microsoft 365](manage-office-365-accounts.md) pour obtenir la liste des outils que vous pouvez utiliser pour gérer les utilisateurs et les comptes Microsoft 365. 
   
 ## <a name="integrate-microsoft-365-with-directory-services"></a>Intégration de Microsoft 365 avec les services d’annuaire
-Si vous avez des comptes d’utilisateur existants dans un annuaire local, vous ne souhaitez pas recréer tous ces comptes dans Microsoft 365 et risquez d’introduire des différences ou des erreurs entre les environnements. La synchronisation d’annuaires vous permet de mettre en miroir ces comptes entre vos environnements en ligne et locaux. Avec la synchronisation d’annuaires, vos utilisateurs n’ont pas à se souvenir des nouvelles informations pour chaque environnement, et vous n’avez pas à créer ou mettre à jour les comptes deux fois. Vous devrez [préparer votre annuaire local pour la](prepare-for-directory-synchronization.md) synchronisation d’annuaires, vous pouvez le faire manuellement ou utiliser l' [outil IdFix](install-and-run-idfix.md) (l’outil IdFix fonctionne uniquement avec les services de domaine Active Directory [AD DS]). 
+Si vous avez des comptes d’utilisateur existants dans un annuaire local, vous ne souhaitez pas recréer tous ces comptes dans Microsoft 365 et risquez d’introduire des différences ou des erreurs entre les environnements. La synchronisation d’annuaires vous permet de mettre en miroir ces comptes entre vos environnements en ligne et locaux. Avec la synchronisation d’annuaires, vos utilisateurs n’ont pas à se souvenir des nouvelles informations pour chaque environnement, et vous n’avez pas à créer ou mettre à jour les comptes deux fois. Vous devrez [préparer votre annuaire local pour la](prepare-for-directory-synchronization.md) synchronisation d’annuaires.
   
 ![Utiliser la synchronisation d’annuaires pour maintenir la synchronisation des informations sur les comptes d’utilisateur en ligne et en ligne](media/a64af0d0-9be6-46b1-8727-277e683abf5e.png)
   

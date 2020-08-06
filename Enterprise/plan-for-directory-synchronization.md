@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Décrit la synchronisation d’annuaires avec Microsoft 365, le nettoyage des services de domaine Active Directory et l’outil Azure Active Directory Connect.
-ms.openlocfilehash: b22533e66d18541b8eb72900514543367633e462
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: 8bfb9a7d65bf76fdadafe1bb49da91115ee9d07c
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711867"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46571157"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-microsoft-365"></a>Identité hybride et synchronisation d’annuaires pour Microsoft 365
 
-*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 En fonction des besoins de votre entreprise et des exigences techniques, le modèle d’identité hybride et la synchronisation d’annuaires constituent le choix le plus courant pour les clients d’entreprise qui adoptent Microsoft 365. La synchronisation d’annuaires vous permet de gérer les identités dans vos services de domaine Active Directory (AD DS) et toutes les mises à jour des comptes d’utilisateur, des groupes et des contacts sont synchronisées avec le client Azure Active Directory (Azure AD) de votre abonnement Microsoft 365.
 
@@ -97,13 +97,11 @@ Les objets d’annuaire locaux peuvent être synchronisés avec Microsoft 365 et
   
 Pour en savoir plus, consultez la [liste de compatibilité de Fédération Azure ad](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-federation-compatibility) .
   
-## <a name="ad-ds-cleanup"></a>Nettoyage des services de domaine Active Directory
+## <a name="ad-ds-preparation"></a>Préparation AD DS
 
 Pour garantir une transition transparente vers Microsoft 365 à l’aide de la synchronisation, vous devez préparer votre forêt AD DS avant de commencer le déploiement de la synchronisation d’annuaires Microsoft 365.
   
-Lorsque vous [configurez la synchronisation d’annuaires](set-up-directory-synchronization.md), l’une des étapes consiste à [Télécharger et à exécuter l’outil IdFix](install-and-run-idfix.md). Vous pouvez utiliser l’outil IdFix pour faciliter le [nettoyage d’annuaire](prepare-directory-attributes-for-synch-with-idfix.md).
-  
-Le nettoyage de votre annuaire doit se concentrer sur les tâches suivantes :
+La préparation de votre répertoire doit se concentrer sur les tâches suivantes :
 
 - Supprimez les attributs **ProxyAddress** et **userPrincipalName** en double.
 - Mettre à jour les attributs **userPrincipalName** vides et non valides avec des attributs **userPrincipalName** valides.

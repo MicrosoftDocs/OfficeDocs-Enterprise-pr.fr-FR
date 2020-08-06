@@ -112,11 +112,6 @@
 ### Identité hybride
 #### [Préparer la synchronisation d'annuaires](prepare-for-directory-synchronization.md)
 #### [Préparation d’un domaine non routable pour la synchronisation d’annuaires](prepare-a-non-routable-domain-for-directory-synchronization.md)
-#### Utilisation de l'outil IdFix
-##### [Préparation des attributs d'annuaire à l'aide de l'outil IdFix](prepare-directory-attributes-for-synch-with-idfix.md)
-##### [Télécharger et exécuter l’outil IdFix](install-and-run-idfix.md)
-##### [Attributs et objets d’IdFix pris en charge et exclus](idfix-excluded-and-supported-objects-and-attributes.md)
-##### [Journal des transactions IdFix](idfix-transaction-log.md)
 #### [Configurez la synchronisation d’annuaires](set-up-directory-synchronization.md)
 ### [Attribution de licences aux comptes d’utilisateurs](assign-licenses-to-user-accounts.md)
 

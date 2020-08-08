@@ -7,7 +7,7 @@ ms.date: 04/29/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Résumé : Le nouveau service web de point de terminaison n’inclut pas certains points de terminaison pour des scénarios spécifiques.'
 hideEdit: true
-ms.openlocfilehash: 9c57feb143b52bc84bd1d636f639712cf3c04cd3
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
-ms.translationtype: HT
+ms.openlocfilehash: 8dd4129b06b4472a65ee20397131e15c440612b4
+ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433545"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46592108"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Points de terminaison supplémentaires non inclus dans le service web pour URL et adresses IP Office 365
 

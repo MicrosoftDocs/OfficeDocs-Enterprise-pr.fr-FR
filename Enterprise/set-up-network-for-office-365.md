@@ -7,7 +7,7 @@ ms.date: 11/19/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
@@ -19,16 +19,16 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Résumé : consultez ces articles pour comprendre la mise en réseau pour Microsoft 365.'
-ms.openlocfilehash: 4c414d8cbf597af9165e991a71e5d6a6a330e33a
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: b1497c214777e34ce4a85701ce6596f50e59910d
+ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735655"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46592148"
 ---
 # <a name="set-up-your-network-for-microsoft-365"></a>Configurer votre réseau pour Microsoft 365
 
-*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 Une partie importante de votre intégration Microsoft 365 est de vous assurer que vos connexions réseau et Internet sont configurées pour un accès optimisé. La configuration de votre réseau local pour accéder à un nuage Software-as-a-service distribué globalement est différente d’un réseau traditionnel qui est optimisé pour le trafic vers des centres de contenu locaux et une connexion Internet centrale. 
 

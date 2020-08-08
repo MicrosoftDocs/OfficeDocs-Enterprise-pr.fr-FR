@@ -7,7 +7,7 @@ ms.date: 12/09/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Résumé : '
-ms.openlocfilehash: 5121686149d547a6e4068371b597ed22f9f495e2
-ms.sourcegitcommit: cf92870078d971ae8e36b75bd35f4b8f36ec7a50
-ms.translationtype: HT
+ms.openlocfilehash: b71444f526ae74214fd888ab780204c07f8ca4af
+ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43772165"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46592078"
 ---
 # <a name="how-to-opt-in-for-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Comment opter pour la migration de Microsoft Cloud Allemagne (Microsoft Cloud Deutschland) vers les services Office 365 dans les nouvelles régions de centres de données allemandes
 

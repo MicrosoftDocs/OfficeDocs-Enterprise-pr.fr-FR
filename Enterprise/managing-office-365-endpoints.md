@@ -7,7 +7,7 @@ ms.date: 1/24/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -17,12 +17,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Certains réseaux d’entreprise restreignent l’accès aux emplacements Internet génériques ou incluent un réseau backhaul important, ou un traitement du trafic réseau. Pour veiller à ce que les ordinateurs sur des réseaux tels que ceux-ci puissent accéder à Office 365, les administrateurs réseau et proxy doivent gérer la liste des noms de domaine complets, URL et adresses IP qui forment la liste des points de terminaison Office 365. Celles-ci doivent être ajoutées aux règles d’itinéraire direct, de contournement proxy et/ou de pare-feu et des fichiers PAC pour s’assurer que les demandes réseau peuvent accéder à Office 365.
-ms.openlocfilehash: f1d5d0f858e021bdeeae6d3045a64a9d97df4ffb
-ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
-ms.translationtype: HT
+ms.openlocfilehash: 35f07538bd55386dc245286822eab9e14e70a3cf
+ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502629"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46592158"
 ---
 # <a name="managing-office-365-endpoints"></a>Gestion des points de terminaison Office 365
 

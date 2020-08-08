@@ -7,7 +7,7 @@ ms.date: 10/21/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: 'Résumé : liste de référence des enregistrements DNS à utiliser lorsque vous planifiez un déploiement Office 365.'
-ms.openlocfilehash: b17d97102498cbaabc87b89bb7cd1f32134cfbcd
-ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
-ms.translationtype: MT
+ms.openlocfilehash: d9bd097538e0aaab19e8b2a6eeb989c3a16492db
+ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46570977"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46592188"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Enregistrements DNS externes pour Office 365
 
@@ -127,11 +127,11 @@ Pour les scénarios où vous n’utilisez pas seulement les emails Exchange Onli
   
 | Nombre|Si vous utilisez...  <br/> |Objectif  <br/> |Ajoutez ceci  <br/> |
 |:-----|:-----|:-----|:-----|
-|0,1  <br/> |Tous les systèmes de courrier (obligatoire)  <br/> |Tous les enregistrements SPF commencent par cette valeur  <br/> |v=spf1  <br/> |
-|n°2  <br/> |Exchange Online (courant)  <br/> |Utilisez uniquement avec Exchange Online  <br/> |include:spf.protection.outlook.com  <br/> |
+|1  <br/> |Tous les systèmes de courrier (obligatoire)  <br/> |Tous les enregistrements SPF commencent par cette valeur  <br/> |v=spf1  <br/> |
+|2  <br/> |Exchange Online (courant)  <br/> |Utilisez uniquement avec Exchange Online  <br/> |include:spf.protection.outlook.com  <br/> |
 |3  <br/> |Un système de messagerie tiers (moins courant)  <br/> ||Incluez :\<email system like mail.contoso.com\>  <br/> |
-|4   <br/> |Le système de messagerie du site (moins courant)  <br/> |À utiliser si vous avez recours à Exchange Online Protection ou Exchange Online et un autre système de messagerie  <br/> |IP4 : \<0.0.0.0\>  <br/> ip6 : \< : : \>  <br/> Incluez : \<mail.contoso.com\>  <br/> La valeur entre crochets (\<\>) doit être les autres systèmes de messagerie chargés d’envoyer les emails pour votre domaine.  <br/> |
-|5   <br/> |Tous les systèmes de courrier (obligatoire)  <br/> ||-all  <br/> |
+|4  <br/> |Le système de messagerie du site (moins courant)  <br/> |À utiliser si vous avez recours à Exchange Online Protection ou Exchange Online et un autre système de messagerie  <br/> |IP4 : \<0.0.0.0\>  <br/> ip6 : \< : : \>  <br/> Incluez : \<mail.contoso.com\>  <br/> La valeur entre crochets (\<\>) doit être les autres systèmes de messagerie chargés d’envoyer les emails pour votre domaine.  <br/> |
+|5  <br/> |Tous les systèmes de courrier (obligatoire)  <br/> ||-all  <br/> |
 
 ### <a name="example-adding-to-an-existing-spf-record"></a>Exemple : Ajout à un enregistrement SPF existant
 <a name="bkmk_addtospf"> </a>

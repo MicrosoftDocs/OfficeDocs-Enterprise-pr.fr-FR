@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Résumé : emplacements des données Microsoft 365'
-ms.openlocfilehash: 4fdac5fca89eebd8d1c44ffdf571cee2630b6e8c
-ms.sourcegitcommit: 20c8c98c0b32d8cf56d50cbc70f82fd5c4ce649c
+ms.openlocfilehash: 9d69b51a257978c557944951eabb099f76b9011e
+ms.sourcegitcommit: c779ded7647cb84f8daafc25565d3edac2917e83
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45263693"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46587996"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -41,7 +41,7 @@ Recherchez des informations sur les engagements contractuels relatifs à l’emp
 Pour les emplacements de données Azure Active Directory, visitez [Mappage de données Azure Active Directory](https://go.microsoft.com/fwlink/p/?linkid=2092972).
 
 
-En raison des circonstances sans précédent entourant la crise COVID-19 et de la nécessité de gérer la demande de services en ligne en Europe, si votre organisation est un établissement scolaire, nous pouvons déployer votre client Microsoft 365 au sein de l’Union européenne (UE), l’Association européenne de libre-échange (AELE), le Royaume-Uni (UK), les États-Unis (USA) ou le Canada (CA), ou transférez vos données vers n’importe quel centre de données de l’UE, de l’AELE, de l’UK, des USA ou du CA.  Vos données peuvent ainsi être stockées au repos dans l’UE, l’AELE, le UK, les USA ou le CA.  Notre engagement envers la conformité, la confidentialité et la sécurité restent inchangés alors que nous mettons en œuvre des mesures prudentes et nécessaires pour maintenir la disponibilité du service.  Nous respectons toutes les lois applicables en relation avec les transferts de données.
+En raison de circonstances sans précédent liées à COVID-19 et de la nécessité de gérer la demande de services en ligne, si votre organisation est un établissement d’enseignement en Europe, nous pouvons déployer votre client Office 365, transférer vos données et stocker vos données au repos au sein de l’Union européenne.  Si votre organisation est un établissement d’enseignement en Inde, nous pouvons provisionner votre client Office 365, transférer vos données et stocker vos données au repos en Inde, en Europe ou aux États-Unis.  Si votre organisation est un établissement d’enseignement en Afrique du Sud, nous pouvons provisionner votre client Office 365, transférer vos données et stocker vos données au repos en Afrique du Sud ou en Europe. Notre engagement en matière de conformité, confidentialité et de sécurité restent inchangés alors que nous mettons en œuvre des mesures prudentes et nécessaires pour maintenir la disponibilité du service. Nous respectons toute loi applicable en relation avec les transferts de données.
 
 
 
@@ -921,7 +921,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | OneDrive Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
 | SharePoint Online | Zone géographique mondiale 2 : Asie et Pacifique |
 | Skype Entreprise | Zone géographique mondiale 2 : Asie et Pacifique |
-| Microsoft Teams | Zone géographique 1 : EMEA |
+| Microsoft Teams | Zone géographique 1 : EMEA |
 | Office Online Mobile &amp; | Zone géographique mondiale 2 : Asie et Pacifique |
 | Exchange Online Protection | Zone géographique mondiale 2 : Asie et Pacifique |
 | Intune | Zone géographique mondiale 2 : Asie et Pacifique |
@@ -3549,7 +3549,7 @@ Les nouveaux locataires Microsoft 365 sont configurés géographiquement par d�
 | Stream | Zone géographique 1 : EMEA |
 | Tableau blanc collaboratif | États-Unis |
 | Formulaires | États-Unis |
-| Workplace Analytics | États-Unis |
+| Analyse du temps de travail | États-Unis |
 </p></details>
 
 ## <a name="mexico"></a>Mexique

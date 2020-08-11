@@ -1,5 +1,5 @@
 ---
-title: Résilience des données dans Microsoft 365
+title: Résilience des données dans Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,17 +14,16 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Comprendre la résilience des données dans Microsoft Microsoft 365.
-ms.openlocfilehash: 368f1d56ef2b4f4c9677b53122e58453ff627335
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Dans cet article, Découvrez la conception et les principes de la résilience et de la récupération des données dans Microsoft 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 7f70b464cf6fe9bd6cb9a236320878fd6adb9db4
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998468"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606650"
 ---
-# <a name="data-resiliency-in-microsoft-365"></a>Résilience des données dans Microsoft 365
-
-## <a name="introduction"></a>Introduction
+# <a name="data-resiliency-in-microsoft-365"></a>Résilience des données dans Microsoft 365
 
 Étant donné la nature complexe de l’informatique en nuage, Microsoft est conscient du fait qu’il ne s’agit pas d’un cas où des choses ne seront pas correctes, mais plutôt à la place. Nous concevons nos services Cloud pour optimiser la fiabilité et réduire les effets négatifs sur les clients en cas de problème. Nous avons dépassé la stratégie traditionnelle basée sur l’infrastructure physique complexe, et nous avons intégré la redondance directement dans nos services Cloud. Nous utilisons une combinaison d’infrastructure physique moins complexe et de logiciels plus intelligents qui génèrent la résilience des données dans nos services et offrent une haute disponibilité à nos clients. 
 

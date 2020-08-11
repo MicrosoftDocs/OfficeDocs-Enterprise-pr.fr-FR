@@ -1,5 +1,5 @@
 ---
-title: Points de terminaison Office 365 Germany
+title: Points de terminaison Office 365 pour l’Allemagne
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,17 +13,19 @@ ms.collection:
 - Strat_O365_Enterprise
 f1.keywords:
 - CSH
-ms.custom: Adm_O365_Setup
+ms.custom:
+- Adm_O365_Setup
+- seo-marvel-apr2020
 search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
-description: Si votre organisation utilise Office 365 et limite les ordinateurs de votre réseau à se connecter à Internet, vous trouverez ci-dessous les points de terminaison (noms de domaine complets, ports, URL et plages d’adresses IPv4 et IPv6) que vous devez inclure dans vos listes vertes de trafic sortant afin de vous assurer que vos ordinateurs peuvent utiliser correctement Office 365.
+description: Dans cet article, vous trouverez des points de terminaison accessibles aux clients qui utilisent Office 365 en Allemagne.
 hideEdit: true
-ms.openlocfilehash: f78fe11ccf9b659c5606f743fe91bd426392f549
-ms.sourcegitcommit: b2767740251b257bb5e66d056731c6c9e7f2677d
+ms.openlocfilehash: a711499799ecbf50e7534fc0d015146fc26d220d
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46596912"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606593"
 ---
 # <a name="office-365-germany-endpoints"></a>Points de terminaison Office 365 Germany
 
@@ -41,7 +43,7 @@ Commencez par [gérer les points de terminaison Office 365](managing-office-365-
 
 Les données affichées sur cette page ci-dessous sont toutes générées à partir des services Web basés sur REST. Si vous utilisez un script ou un périphérique réseau pour accéder à ces données, vous devez accéder directement au [service Web](office-365-ip-web-service.md) .
 
-Les données de point de terminaison ci-dessous répertorient les exigences de connectivité à partir de l’ordinateur d’un utilisateur vers Office 365. Elles n’incluent pas les connexions réseau de Microsoft vers un réseau client, parfois appelées connexions réseau entrantes ou hybrides.
+Les données de point de terminaison ci-dessous répertorient les conditions requises pour la connectivité entre l’ordinateur d’un utilisateur et Office 365. Il n’inclut pas les connexions réseau de Microsoft dans un réseau client, parfois appelé connexions réseau hybrides ou entrantes.
 
 Les points de terminaison sont regroupés en quatre zones de service. Les trois premières zones de service peuvent être sélectionnées indépendamment pour la connectivité. La quatrième zone de service est une dépendance courante (appelée Microsoft 365 Common et Office) et doit toujours avoir une connectivité réseau.
 

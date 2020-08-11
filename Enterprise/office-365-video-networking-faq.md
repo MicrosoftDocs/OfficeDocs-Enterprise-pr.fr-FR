@@ -11,19 +11,21 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 2bed67a1-4052-49ff-a4ce-b7e6530eb98e
-description: Le référentiel vidéo Office 365 et les services de diffusion en continu rendent les vidéos de stockage et de diffusion en continu au sein de votre organisation simples. Il existe un grand nombre d’informations intéressantes sur la vidéo Office 365 ; Ce FAQ sur la mise en réseau est conçu pour répondre aux questions les plus fréquentes sur la planification de bande passante, le chiffrement et la façon dont le service exploite les réseaux de distribution de contenu (CDN).
-ms.openlocfilehash: 21c7327878bc76bc3bbe92d004a26a4704ef8c3d
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
+description: Trouvez des réponses à certaines des questions les plus fréquemment posées sur la planification de la bande passante, le chiffrement & comment le service exploite les réseaux de distribution de contenu (CDN).
+ms.openlocfilehash: 938876075bf849a94f52de9285e83cd442fe2006
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841971"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605476"
 ---
 # <a name="office-365-video-networking-frequently-asked-questions"></a>Forum aux questions sur la mise en réseau vidéo d’Office 365
 

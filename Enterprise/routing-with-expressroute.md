@@ -13,23 +13,25 @@ ms.collection:
 - Strat_O365_Enterprise
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
-description: Pour bien comprendre le trafic de routage vers Office 365 à l’aide d’Azure ExpressRoute, vous avez besoin d’une prise ferme des exigences de routage ExpressRoute de base et des circuits ExpressRoute et des domaines de routage. Ces éléments présentent les bases de l’utilisation de ExpressRoute par les clients Office 365.
-ms.openlocfilehash: c9d81e0823b63750a456f559855bb130a2e87b07
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Dans cet article, Découvrez les exigences de routage, les circuits et les domaines de routage Azure ExpressRoute à utiliser avec Office 365.
+ms.openlocfilehash: c8063d570744b3a5fd42328ed3940fe7477c25c9
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998193"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605226"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Routage avec ExpressRoute pour Office 365
 
-*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 Pour bien comprendre le trafic de routage vers Office 365 à l’aide d’Azure ExpressRoute, vous avez besoin d’une prise ferme des [exigences de routage ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-routing/) de base et des [circuits ExpressRoute et des domaines de routage](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/). Ces éléments présentent les bases de l’utilisation de ExpressRoute par les clients Office 365.
   

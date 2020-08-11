@@ -11,23 +11,23 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 'Résumé : utilisez PowerShell pour Microsoft 365 pour affecter des paramètres de communication par utilisateur aux stratégies Skype entreprise online.'
-ms.openlocfilehash: 4522cfd877355794c32d9b9bdf14fb11cd0e71b4
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: a5850c24f991161ec1de817d5b3f5037e9526767
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229841"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606460"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Affecter des stratégies Skype entreprise Online par utilisateur avec PowerShell pour Microsoft 365
 
-*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 L’utilisation de PowerShell pour Microsoft 365 est un moyen efficace d’affecter des paramètres de communication par utilisateur à des stratégies Skype entreprise online.
   
-## <a name="before-you-begin"></a>Avant de commencer
+## <a name="prepare-to-run-the-powershell-commands"></a>Préparer l’exécution des commandes PowerShell
 
 Suivez ces instructions pour exécuter les commandes (sautez les étapes que vous avez déjà effectuées) :
   
@@ -138,8 +138,8 @@ Cela permet de trouver 500 utilisateurs à la fois qui n’ont pas de stratégie
   
 ## <a name="see-also"></a>Voir aussi
 
-[Gestion de Skype entreprise Online avec PowerShell](manage-skype-for-business-online-with-office-365-powershell.md)
+[Gestion de Skype Entreprise Online avec PowerShell](manage-skype-for-business-online-with-office-365-powershell.md)
   
-[Gérer Microsoft 365 avec PowerShell](manage-office-365-with-office-365-powershell.md)
+[Gestion de Microsoft 365 à l’aide de PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Prise en main de PowerShell pour Microsoft 365](getting-started-with-office-365-powershell.md)
+[Prise en main de PowerShell pour Microsoft 365](getting-started-with-office-365-powershell.md)

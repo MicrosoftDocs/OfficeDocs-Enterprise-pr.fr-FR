@@ -17,18 +17,19 @@ ms.custom:
 - LIL_Placement
 - PowerShell
 - Ent_Office_Other
+- seo-marvel-apr2020
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
-description: 'Résumé : Affichez, répertoriez ou affichez vos comptes d’utilisateur Microsoft 365 de différentes manières avec PowerShell.'
-ms.openlocfilehash: a67457169328828b2b471dd5db6a53bab3bbacda
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Découvrez comment afficher, répertorier ou afficher vos comptes d’utilisateur Microsoft 365 de différentes manières avec PowerShell.
+ms.openlocfilehash: 56da6bfc7b467b6a85a4bd8c84abd4c2ae05913f
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230200"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605295"
 ---
 # <a name="view-microsoft-365-user-accounts-with-powershell"></a>Afficher les comptes d’utilisateur Microsoft 365 avec PowerShell
 
-*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 Bien que vous puissiez utiliser le centre d’administration Microsoft 365 pour afficher les comptes de votre client Microsoft 365, vous pouvez également utiliser PowerShell pour Microsoft 365 et effectuer quelques opérations que le centre d’administration ne peut pas faire.
   
@@ -299,9 +300,9 @@ Get-ADUser ([guid][System.Convert]::FromBase64String((Get-MsolUser -UserPrincipa
 
 ## <a name="see-also"></a>Voir aussi
 
-[Gérer les comptes d’utilisateur, les licences et les groupes Microsoft 365 avec PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Gérer les comptes d’utilisateurs, les licences et les groupes Microsoft 365 avec PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Gérer Microsoft 365 avec PowerShell](manage-office-365-with-office-365-powershell.md)
+[Gestion de Microsoft 365 à l’aide de PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Prise en main de PowerShell pour Microsoft 365](getting-started-with-office-365-powershell.md)
+[Prise en main de PowerShell pour Microsoft 365](getting-started-with-office-365-powershell.md)
 

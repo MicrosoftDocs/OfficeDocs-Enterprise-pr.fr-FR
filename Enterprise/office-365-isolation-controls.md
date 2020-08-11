@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 'Résumé : Expliquez les contrôles d’isolation au sein de Microsoft 365.'
-ms.openlocfilehash: da26bb6a41c97a16865bfdd5bdf6aada2069f7fe
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: Découvrez comment fonctionnent les contrôles d’isolation dans Microsoft 365, ce qui permet aux services d’interopérer ou de rester autonomes en fonction des besoins.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: da49d19371c0b7f704bf7cb1c4c83205b9cc9cb0
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774909"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605616"
 ---
 # <a name="microsoft-365-isolation-controls"></a>Contrôles d’isolation Microsoft 365 
 
@@ -37,6 +38,6 @@ Les services Microsoft 365 interagissent les uns avec les autres, mais ils sont 
 
 ## <a name="customer-content-isolation"></a>Isolation du contenu client
 
-Tout le contenu client d’un client est isolé des autres clients et des opérations et des données système utilisées dans la gestion de Microsoft 365. Plusieurs formes de protection sont mises en œuvre tout au long de Microsoft 365 afin de réduire le risque de compromission d’un service ou d’une application Microsoft 365. Plusieurs formes de protection empêchent également l’accès non autorisé aux informations des clients ou du système Microsoft 365 lui-même.
+Tout le contenu client d’un client est isolé des autres clients et des opérations et des données système utilisées dans la gestion de Microsoft 365. Plusieurs formes de protection sont implémentées dans Microsoft 365 pour minimiser le risque de compromission d'un service ou d'une application Microsoft 365. Plusieurs formes de protection empêchent également l’accès non autorisé aux informations des clients ou du système Microsoft 365 lui-même.
 
 Pour plus d’informations sur la façon dont Microsoft implémente l’isolation logique des données client dans Microsoft 365, voir [isolation des clients dans microsoft 365](office-365-tenant-isolation-overview.md).

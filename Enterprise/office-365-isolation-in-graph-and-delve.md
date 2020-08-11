@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 'Résumé : explication de l’isolation du client Microsoft 365 dans Microsoft Graph et dans Delve.'
-ms.openlocfilehash: 70888d084792cfb819c0ee54f34d2a8869fb198b
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Dans cet article, vous trouverez une explication sur la façon dont l’isolation du client Microsoft 365 fonctionne dans Office Graph et dans Delve.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 285f910362628f52c379fcf535da7d0b1365383a
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998264"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605596"
 ---
 # <a name="microsoft-365-tenant-isolation-in-the-microsoft-graph-and-delve"></a>Isolation du client Microsoft 365 dans Microsoft Graph et Delve
 

@@ -15,13 +15,14 @@ search.appverid:
 ms.assetid: e2fdfc8d-547e-4419-8628-2738ed4e0f46
 f1.keywords:
 - NOCSH
-description: Si vous avez opté pour le déploiement de FastTrack et que vous êtes prêt à migrer les données vers Microsoft 365, il s’agit du point de départ.
-ms.openlocfilehash: a04c4df37d5f8c72330907752247d7bea48fb72d
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.custom: seo-marvel-apr2020
+description: Dans cet article, vous trouverez les ressources qui vous aideront à migrer les données de votre organisation vers Microsoft 365.
+ms.openlocfilehash: b7598b6d8ccf566c43aacded5237dc4dc22fe42e
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711847"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605666"
 ---
 # <a name="migrate-your-organization-data-to-microsoft-365-enterprise"></a>Migrer les données de votre organisation vers Microsoft 365 Enterprise
 

@@ -24,17 +24,19 @@ search.appverid:
 ms.assetid: 66325a43-5816-4f8e-81ba-c11b71345b7c
 f1.keywords:
 - NOCSH
-description: SharePoint Server 2007 a atteint la fin de la prise en charge et il est temps de procéder à la mise à niveau. Utilisez cet article pour vous aider à créer votre plan.
-ms.openlocfilehash: e319438e2d760c391414f699de5967738d8c6b81
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.custom:
+- seo-marvel-apr2020
+description: Cet article contient des informations destinées aux utilisateurs de SharePoint Server 2007 afin de les aider à planifier leur mise à niveau.
+ms.openlocfilehash: 9dd659936bd15e0052ce9f6ba6830238aa2c5180
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774989"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46603686"
 ---
 # <a name="sharepoint-2007-migration-options-to-consider"></a>Options de migration SharePoint 2007 à prendre en compte
 
-*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 Microsoft SharePoint 2007 et SharePoint Server 2007 ont atteint la fin de la prise en charge. Il est temps de mettre à niveau ! Cet article fournit des informations sur vos options de migration.
   
@@ -151,7 +153,7 @@ Ma liste à puces la plus importante :
    
  **Mon plan proposé :**
   
-Effectuez une mise à niveau sur site, avec des versions de SharePoint côte à côte, certaines virtualisés, afin de pouvoir mettre à niveau les bases de données en premier. Passez de SharePoint 2007 à SharePoint 2010. Les administrateurs et les développeurs testent la batterie de serveurs résultante. Les utilisateurs testent la batterie de serveurs résultante. Corrigez les problèmes d’émission pendant ce temps. De nouveau, côte à côte, mettez à niveau les bases de données SharePoint 2010 vers SharePoint 2013. Test. Test utilisateur/pilote. Corrigez les problèmes d’émission pendant ce temps.
+Effectuez une mise à niveau sur site, avec des versions de SharePoint côte à côte, certaines virtualisés, afin de pouvoir mettre à niveau les bases de données en premier. Passez de SharePoint 2007 à SharePoint 2010. Les administrateurs et les développeurs testent la batterie de serveurs résultante. Les utilisateurs testent la batterie de serveurs résultante. Corrigez les problèmes d’émission pendant ce temps. De nouveau, côte à côte, mettez à niveau les bases de données SharePoint 2010 vers SharePoint 2013. Tester. Test utilisateur/pilote. Corrigez les problèmes d’émission pendant ce temps.
   
 - Envisagez si un hybride fédéré de recherche avec SPO répond à vos besoins.
     
@@ -178,7 +180,7 @@ Des étapes plus détaillées, ou un certain nombre de liens vers des instructio
   
 Les facteurs les plus importants dans le choix d’une méthode sont le coût total de la mise à niveau et le coût dans le temps (vous en verrez plus à ce propos dans l’article feuille de route de migration SharePoint). Toutefois, la planification anticipée vous permettra de définir de manière significative les attentes, de choisir judicieusement et d’encadrement de la réussite de l’opération.
   
-## <a name="related-links"></a>Liens associés
+## <a name="related-links"></a>Liens connexes
 
 [Ressources pour vous aider à effectuer une mise à niveau à partir de serveurs et clients Office 2007](upgrade-from-office-2007-servers-and-products.md)
   

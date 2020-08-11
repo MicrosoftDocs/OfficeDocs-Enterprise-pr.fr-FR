@@ -9,7 +9,9 @@ ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 ms.collection:
 - Ent_O365
 - M365-identity-device-management
@@ -18,13 +20,13 @@ search.appverid:
 - MOE150
 - MED150
 ms.assetid: ee5f861e-bd48-4267-83d1-a4ead4b4a00d
-description: Découvrez comment utiliser PowerShell pour désactiver la synchronisation d’annuaires pour Microsoft 365
-ms.openlocfilehash: 1e3e26a262c112c05fe22cda2dbe3f14efb61f87
-ms.sourcegitcommit: c1a1b028195342affe0f3367db4e79c42429582a
+description: Dans cet article, vous trouverez des informations sur l’utilisation de PowerShell pour désactiver la synchronisation d’annuaires pour Microsoft 365.
+ms.openlocfilehash: 815d20ff6a0697f1533e44305e20e61a9282312b
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45387707"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46603646"
 ---
 # <a name="turn-off-directory-synchronization-for-microsoft-365"></a>Désactivation de la synchronisation d’annuaires pour Microsoft 365
 Vous pouvez utiliser PowerShell pour désactiver la synchronisation d’annuaires. Toutefois, il n’est pas recommandé de désactiver la synchronisation d’annuaires en tant qu’étape de résolution des problèmes. Si vous avez besoin d’aide pour résoudre les problèmes liés à la synchronisation d’annuaires, consultez l’article [résolution des problèmes liés à la synchronisation d’annuaires pour Microsoft 365](fix-problems-with-directory-synchronization.md) . 

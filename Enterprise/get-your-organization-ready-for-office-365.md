@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
-description: Accédez aux ressources nécessaires à la planification de votre déploiement Microsoft 365 Enterprise.
-ms.openlocfilehash: 4b779365fc1dbad05e1eacbba1e346530952d372
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: Cet article fournit des listes de vérification et d’autres ressources pour planifier votre déploiement d’entreprise Microsoft 365.
+ms.openlocfilehash: 0f3fb9a70f9f5035f2f1a0f3a90ce1a50ac3c6b8
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774469"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606390"
 ---
 # <a name="plan-for-microsoft-365-enterprise"></a>Planifier Microsoft 365 Enterprise
 
@@ -45,18 +47,18 @@ Pour planifier Microsoft 365 vous-même, suivez les décisions de planification 
 
 - Votre locataire Microsoft 365
 
-  Inclut la planification de vos connexions réseau sur Internet, vos identités Microsoft 365 et l’intégration avec des applications, en local, Azure et d’autres éléments. Démarrez [ici](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md).
+  Inclut la planification de vos connexions réseau sur Internet, vos identités Microsoft 365 et l’intégration avec des applications, en local, Azure et d’autres éléments. Pour plus d’informations, accédez à [abonnements, licences, comptes et clients pour les offres Cloud de Microsoft](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md) .
 
 - Prise en charge de vos clients
 
-  Inclut l’authentification basée sur les certificats, la gestion des appareils mobiles, les options d’authentification et la collaboration entre les clients. Démarrez [ici](office-365-client-support-certificate-based-authentication.md).
+  Inclut l’authentification basée sur les certificats, la gestion des appareils mobiles, les options d’authentification et la collaboration entre les clients. Pour plus d’informations, accédez à [authentification basée sur les certificats](office-365-client-support-certificate-based-authentication.md) .
 
 - Prise en charge de l’authentification moderne hybride
 
-  Inclut la planification de l’authentification moderne lors de l’utilisation de configurations hybrides d’applications de productivité principales de Microsoft 365. Démarrez [ici](hybrid-modern-auth-overview.md).
+  Inclut la planification de l’authentification moderne lors de l’utilisation de configurations hybrides d’applications de productivité principales de Microsoft 365. Pour plus d’informations, consultez la [rubrique vue d’ensemble de l’authentification moderne hybride et conditions préalables](hybrid-modern-auth-overview.md) .
 
 - Anciens clients et serveurs Office
 
-  Inclut des informations de migration pour les produits client et serveur Office 2007 et Office 2010. Démarrez [ici](plan-upgrade-previous-versions-office.md).
+  Inclut des informations de migration pour les produits client et serveur Office 2007 et Office 2010. Pour plus d’informations, reportez-vous à [la planification de la mise à niveau](plan-upgrade-previous-versions-office.md) .
 
 Vous pouvez également vous connecter à votre abonnement Microsoft 365 et utiliser les [guides de configuration pour les services microsoft 365 et Office 365](setup-guides-for-office-365.md).

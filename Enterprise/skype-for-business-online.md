@@ -13,6 +13,7 @@ f1.keywords:
 ms.custom:
 - Adm_O365
 - ms.lync.lac.ProviderManagedFeature
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
@@ -20,13 +21,13 @@ search.appverid:
 - MSO150
 - BCS160
 ms.assetid: 4307bdbf-6097-458d-9a6a-048112695c59
-description: 'Obtenir de l’aide de l’administrateur pour Skype entreprise : configurer Skype entreprise, votre réseau, vos réunions et votre messagerie instantanée et l’accès externe pour les utilisateurs. Configurez les paramètres, dépannez et affichez les rapports d’utilisation.'
-ms.openlocfilehash: f30073310c9b24e9b8242261e97e04c23f413967
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: En tant qu’administrateur, trouvez de l’aide pour configurer des composants de Skype entreprise Online, notamment votre réseau, vos réunions et votre messagerie instantanée, ainsi que l’accès externe pour les utilisateurs.
+ms.openlocfilehash: 2e0a3b47c89f1573b50681445e150755e0a78985
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841111"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46603656"
 ---
 # <a name="skype-for-business-online-in-office-365---admin-help"></a>Skype Entreprise Online dans Office 365 - Aide de l'administrateur
 
@@ -40,7 +41,7 @@ Vous pouvez permettre aux personnes qui utilisent Skype Entreprise de contacter 
   
 - [Autoriser les utilisateurs à contacter des utilisateurs Skype Entreprise externes](https://support.office.com/article/b414873a-0059-4cd5-aea1-e5d0857dbc94)
     
-- [Autoriser les utilisateurs Skype entreprise à ajouter des contacts Skype](https://support.office.com/article/08666236-1894-42ae-8846-e49232bbc460)
+- [Autoriser les utilisateurs Skype Entreprise à ajouter des contacts Skype](https://support.office.com/article/08666236-1894-42ae-8846-e49232bbc460)
     
 ## <a name="improve-call-and-video-quality"></a>Améliorer la qualité des communications audio et vidéo
 
@@ -52,7 +53,7 @@ Voir aussi :
     
 - [Dépannage audio et vidéo dans Skype Entreprise](https://support.office.com/article/62777bc6-c52b-47ae-84ba-a8905c3b71dc)
     
-## <a name="set-up-skype-for-business-online"></a>Configurer Skype entreprise Online
+## <a name="set-up-skype-for-business-online"></a>Configuration de Skype Entreprise Online
 
 - [Licences de complément Skype Entreprise](https://support.office.com/article/3ed752b1-5983-43f9-bcfd-760619ab40a7)
     

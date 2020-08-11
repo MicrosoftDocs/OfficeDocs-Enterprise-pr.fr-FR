@@ -1,5 +1,5 @@
 ---
-title: Utiliser PowerShell pour effectuer une migration intermédiaire vers Microsoft 365
+title: Utilisation de PowerShell pour effectuer une migration intermédiaire vers Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,19 +13,19 @@ search.appverid:
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
-description: 'Résumé : Découvrez comment utiliser Windows PowerShell pour effectuer une migration intermédiaire vers Microsoft 365.'
-ms.openlocfilehash: bc21ec403b0c6daa3fe2411f8f4fea790dd5e71c
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Découvrez comment utiliser PowerShell pour déplacer du contenu d’un système de courrier source au fil du temps à l’aide d’une migration intermédiaire vers Microsoft 365.
+ms.openlocfilehash: a50966f65bbec5e4b453c4caf02e4b89fa7d04b5
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229790"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606210"
 ---
-# <a name="use-powershell-to-perform-a-staged-migration-to-microsoft-365"></a>Utiliser PowerShell pour effectuer une migration intermédiaire vers Microsoft 365
+# <a name="use-powershell-to-perform-a-staged-migration-to-microsoft-365"></a>Utilisation de PowerShell pour effectuer une migration intermédiaire vers Microsoft 365
 
-*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 Vous pouvez migrer le contenu des boîtes aux lettres utilisateur à partir d’un système de messagerie source vers Microsoft 365 au fil du temps à l’aide d’une migration intermédiaire.
   

@@ -15,13 +15,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: L’authentification moderne hybride (HMA), est une méthode de gestion des identités qui offre une authentification et une autorisation utilisateur plus sécurisées, et est disponible pour les déploiements hybrides Exchange Server locaux.
-ms.openlocfilehash: afc3b2926f02a64a9f2f27ba85e5264258b49c3b
-ms.sourcegitcommit: bb122479c3a2757c0a5adde6c9f0c77c75ab3951
+description: Découvrez comment configurer un serveur Exchange local pour utiliser l’authentification moderne hybride (HMA), afin de renforcer la sécurité de l’authentification et de l’autorisation des utilisateurs.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 8cffd30b07cf3f99be67cdc52f14534e639552ae
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46548877"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606070"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Comment configurer Exchange Server en local pour utiliser l’authentification moderne hybride
 
@@ -161,6 +162,6 @@ Vous devez également maintenir la touche CTRL enfoncée en même temps que vous
 
 Si vous êtes un client local utilisant Exchange Server sur le port TCP 443, veuillez autoriser les plages d’adresses IP suivantes : <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR>
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Conditions requises pour la configuration de l’authentification moderne pour la transition à partir d’Office 365 dédié/ITAR vers vNext](https://docs.microsoft.com/exchange/troubleshoot/modern-authentication/modern-authentication-configuration)

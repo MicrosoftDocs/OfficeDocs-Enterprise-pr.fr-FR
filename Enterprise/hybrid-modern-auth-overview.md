@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: L’authentification moderne est une méthode de gestion des identités qui offre une authentification et une autorisation utilisateur plus sécurisées. Elle est disponible pour les déploiements hybrides du serveur Skype Entreprise local et serveur Exchange local, ainsi que pour les hybrides Skype Entreprise mixtes de domaines. Cet article contient des liens vers des documents connexes sur les conditions préalables, la configuration/la désactivation de l’authentification moderne et à certaines informations relatives aux clients (par exemple, les clients Outlook et Skype).
-ms.openlocfilehash: df755c8af161609c1c18dbe066662aaf1d410429
-ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
+ms.custom: seo-marvel-apr2020
+description: Dans cet article, vous allez découvrir l’authentification moderne hybride et les conditions préalables à l’utilisation de Skype entreprise et des serveurs Exchange locaux.
+ms.openlocfilehash: 81ffdb7175673c81917e34c98a2d162529a0efc9
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46571047"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605730"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Vue d’ensemble de l’authentification moderne hybride et configuration requise pour l’utiliser avec les serveurs Skype Entreprise et Exchange locaux
 

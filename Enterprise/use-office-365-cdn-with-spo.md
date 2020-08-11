@@ -1,5 +1,5 @@
 ---
-title: Utilisation du réseau de distribution de contenu Office 365 avec SharePoint Online
+title: Utiliser le réseau de distribution de contenu (CDN) Office 365 avec SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,18 +13,20 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
-description: Décrit l’utilisation du réseau de distribution de contenu (CDN) d’Office 365 pour accélérer la remise de vos ressources SharePoint Online à tous vos utilisateurs, où qu’ils soient ou dans lesquels ils accèdent à votre contenu.
-ms.openlocfilehash: 25e7e6aae0d4dc6dd72278763c8fc5cc3bc454ce
-ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
+description: Découvrez comment utiliser le réseau de distribution de contenu (CDN) Office 365 pour accélérer la remise de vos ressources SharePoint Online.
+ms.openlocfilehash: 2f0cc396de6d950c9487024145e346007b18d3b9
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42316023"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606120"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Utilisation du réseau de distribution de contenu Office 365 avec SharePoint Online
 
@@ -304,7 +306,7 @@ La valeur _path_ est le chemin d’accès relatif à la bibliothèque ou au doss
 Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
 ```
 
-+ Le modificateur de caractère**/** générique * peut uniquement être utilisé au début du chemin d’accès et correspondra à tous les segments d’URL sous l’URL spécifiée.
++ Le modificateur de caractère générique * **/** peut uniquement être utilisé au début du chemin d’accès et correspondra à tous les segments d’URL sous l’URL spécifiée.
 + Le chemin d’accès peut pointer vers une bibliothèque de documents, un dossier ou un site. Par exemple, le chemin d’accès _*/site1_ correspondra à toutes les bibliothèques de documents sous le site.
 
 Vous pouvez ajouter une origine avec un chemin d’accès relatif spécifique. Vous ne pouvez pas ajouter d’origine à l’aide du chemin d’accès complet.
@@ -587,7 +589,7 @@ La valeur _path_ est le chemin d’accès relatif à la bibliothèque ou au doss
 Add-PnPTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
 ```
 
-+ Le modificateur de caractère**/** générique * peut uniquement être utilisé au début du chemin d’accès et correspondra à tous les segments d’URL sous l’URL spécifiée.
++ Le modificateur de caractère générique * **/** peut uniquement être utilisé au début du chemin d’accès et correspondra à tous les segments d’URL sous l’URL spécifiée.
 + Le chemin d’accès peut pointer vers une bibliothèque de documents, un dossier ou un site. Par exemple, le chemin d’accès _*/site1_ correspondra à toutes les bibliothèques de documents sous le site.
 
 Vous pouvez ajouter une origine avec un chemin d’accès relatif spécifique. Vous ne pouvez pas ajouter d’origine à l’aide du chemin d’accès complet.
@@ -894,7 +896,7 @@ Pour en savoir plus sur la façon de vérifier que les biens sont pris en charge
 
 La **fonctionnalité de publication** de SharePoint Online réécrit automatiquement les URL des biens stockés dans des origines publiques vers leurs équivalents CDN afin que les biens soient pris en charge par le service CDN au lieu de SharePoint.
 
-Si votre origine se trouve dans un site où la fonctionnalité de publication est activée et que les ressources que vous souhaitez décharger vers le CDN se trouvent dans l’une des catégories suivantes, SharePoint réécrit automatiquement les URL des biens de l’origine, à condition que l’actif n’ait pas été exclu par un CDN.  renvoi.
+Si votre origine se trouve dans un site où la fonctionnalité de publication est activée et que les ressources que vous souhaitez décharger vers le CDN se trouvent dans l’une des catégories suivantes, SharePoint réécrit automatiquement les URL des biens dans l’origine, à condition que l’actif n’ait pas été exclu par une stratégie de CDN.
 
 Voici un aperçu des liens qui sont réécrits automatiquement par la fonctionnalité de publication SharePoint :
 
@@ -957,14 +959,14 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 
 #### <a name="item-level-permissions-are-not-supported-for-assets-in-private-origins"></a>Les autorisations au niveau des éléments ne sont pas prises en charge pour les biens dans les origines privées
 
-Il est important de noter que SharePoint Online ne prend pas en charge les autorisations au niveau des éléments dans les origines privées. Par exemple, pour un fichier se trouvant à `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg`, les utilisateurs ont un accès effectif au fichier en fonction des conditions suivantes :
+Il est important de noter que SharePoint Online ne prend pas en charge les autorisations au niveau des éléments dans les origines privées. Par exemple, pour un fichier se trouvant à `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg` , les utilisateurs ont un accès effectif au fichier en fonction des conditions suivantes :
 
 |Utilisateur  |Autorisations  |Accès effectif  |
 |---------|---------|---------|
-|Utilisateur 1     |A accès à dossier1         |Peut accéder à image1. jpg à partir du CDN         |
-|Utilisateur 2     |N’a pas accès à dossier1         |Impossible d’accéder à image1. jpg à partir du CDN         |
-|Utilisateur 3     |N’a pas accès à Dossier1, mais dispose d’une autorisation explicite pour accéder à image1. jpg dans SharePoint Online         |Peut accéder à la ressource image1. jpg directement à partir de SharePoint Online, mais pas à partir du CDN         |
-|Utilisateur 4     |A accès à Dossier1, mais l’accès à image1. jpg a été explicitement refusé dans SharePoint Online         |Impossible d’accéder au bien à partir de SharePoint Online, mais peut accéder à l’élément à partir du CDN malgré le fait que l’accès au fichier est refusé dans SharePoint Online         |
+|Utilisateur 1     |A accès à dossier1         |Peut accéder à image1.jpg à partir du CDN         |
+|Utilisateur 2     |N’a pas accès à dossier1         |Impossible d’accéder à image1.jpg à partir du CDN         |
+|Utilisateur 3     |N’a pas accès à Dossier1, mais dispose d’une autorisation explicite pour accéder à image1.jpg dans SharePoint Online         |Peut accéder à la image1.jpg des biens directement à partir de SharePoint Online, mais pas à partir du CDN         |
+|Utilisateur 4     |A accès à Dossier1, mais a explicitement refusé l’accès à image1.jpg dans SharePoint Online         |Impossible d’accéder au bien à partir de SharePoint Online, mais peut accéder à l’élément à partir du CDN malgré le fait que l’accès au fichier est refusé dans SharePoint Online         |
 
 <a name="CDNTroubleshooting"> </a>
 ## <a name="troubleshooting-the-office-365-cdn"></a>Dépannage du CDN Office 365
@@ -977,7 +979,7 @@ Une fois que vous avez ajouté des liens vers des ressources CDN à une page, vo
 Vous pouvez également utiliser les outils de développement de votre navigateur pour afficher l’URL de chaque ressource sur une page ou utiliser un outil de suivi réseau tiers.
 
 > [!NOTE]
-> Si vous utilisez un outil réseau tel que Fiddler pour tester vos biens en dehors du rendu de l’élément à partir d’une page SharePoint, vous devez ajouter manuellement l’en-tête `https://yourdomain.sharepoint.com`Referer « Referer : » à la requête get où l’URL est l’URL racine de votre client SharePoint Online.
+> Si vous utilisez un outil réseau tel que Fiddler pour tester vos biens en dehors du rendu de l’élément à partir d’une page SharePoint, vous devez ajouter manuellement l’en-tête Referer « Referer : `https://yourdomain.sharepoint.com` » à la requête get où l’URL est l’URL racine de votre client SharePoint Online.
 
 Vous ne pouvez pas tester les URL du CDN directement dans un navigateur Web, car vous devez disposer d’un Referer provenant de SharePoint Online. Toutefois, si vous ajoutez l’URL de la ressource CDN à une page SharePoint, puis ouvrez la page dans un navigateur, vous verrez l’élément CDN s’afficher sur la page.
 

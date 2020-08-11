@@ -13,16 +13,18 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
-description: Découvrez les recommandations en matière de performances pour les sites modernes dans SharePoint Online.
-ms.openlocfilehash: 227eadd780acbe35456ca48204762411bed6c10f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Découvrez les recommandations en matière de performances pour les sites modernes dans SharePoint Online, tels que la limitation des appels vers SharePoint et les points de terminaison externes.
+ms.openlocfilehash: 1ec6dfb4b32a8915528adce168badf3645c26e48
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844785"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606880"
 ---
 # <a name="sharepoint-online-modern-portal-site-limits"></a>Limites des sites portail modernes SharePoint Online
 

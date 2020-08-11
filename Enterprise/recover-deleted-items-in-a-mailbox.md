@@ -17,13 +17,15 @@ search.appverid:
 ms.assetid: eb15194b-63ec-41b0-8d90-1823d3f558e4
 f1.keywords:
 - NOCSH
-description: 'Cet article s’adresse aux administrateurs. Un utilisateur a-t-il supprimé définitivement des éléments de sa boîte aux lettres Outlook ? L’utilisateur le souhaite à nouveau, mais ne peut pas les récupérer. Vous pouvez récupérer les éléments purgés s’ils n’ont pas été définitivement supprimés de la boîte aux lettres de l’utilisateur. '
-ms.openlocfilehash: d5911167289d448a68fbe65fa6ba3c5cb9c9609b
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.custom:
+- seo-marvel-apr2020
+description: Cet article contient des informations pour les administrateurs afin de les aider à récupérer les éléments supprimés s’ils n’ont pas été définitivement supprimés de la boîte aux lettres de l’utilisateur.
+ms.openlocfilehash: 04249494ca777ba09df7bf6495b8ac931e83bab7
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998308"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606180"
 ---
 # <a name="recover-deleted-items-in-a-user-mailbox---admin-help"></a>Récupérer des éléments supprimés dans une boîte aux lettres utilisateur - Aide aux administrateurs
 

@@ -10,7 +10,9 @@ ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
@@ -22,13 +24,13 @@ search.appverid:
 ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
-description: Découvrez comment fonctionne différemment l’authentification moderne Microsoft 365 pour les applications clientes Office 2013 et 2016.
-ms.openlocfilehash: 469dd665a3f427db3e2ae3731945e53b900f05e9
-ms.sourcegitcommit: 92bbb6d005d005952a9e2055661fcdccfdd0567b
+description: Découvrez comment les fonctionnalités d’authentification moderne Microsoft 365 fonctionnent différemment pour les applications clientes Office 2013 et 2016.
+ms.openlocfilehash: 20a6f495ac7e8bd6b2a918ca05b9edd074c7d61c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46533489"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606910"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-office-2016-and-office-2019-client-apps"></a>Fonctionnement de l’authentification moderne pour Office 2013, Office 2016 et les applications clientes Office 2019
 
@@ -109,7 +111,7 @@ Le tableau suivant décrit le comportement d’authentification pour Office 2013
 |Office 2013  <br/> |Non  <br/> |Non  <br/> |Assistant de connexion Microsoft Online uniquement.  <br/> |Assistant de connexion Microsoft Online uniquement.  <br/> |
 |Office 2013  <br/> |Oui, EnableADAL = 1  <br/> |Oui  <br/> |Authentification moderne uniquement.  <br/> |Échec de la connexion.  <br/> |
    
-### <a name="skype-for-business-online"></a>Skype Entreprise Online
+### <a name="skype-for-business-online"></a>Skype Entreprise Online
 <a name="BK_SFBO"> </a>
 
 Le tableau suivant décrit le comportement d’authentification pour Office 2013, Office 2016 et les applications clientes Office 2019 lorsqu’ils se connectent à Skype entreprise Online avec ou sans authentification moderne.

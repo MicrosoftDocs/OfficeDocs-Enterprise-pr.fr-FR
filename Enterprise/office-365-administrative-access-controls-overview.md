@@ -14,13 +14,14 @@ f1.keywords:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: 'Résumé : vue d’ensemble des contrôles d’accès administratif et de la catégorisation des données de Microsoft 365.'
-ms.openlocfilehash: 93b62acbda2508d5b41578eb807293c34fdda4dd
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.custom: seo-marvel-apr2020
+description: Cet article fournit une vue d’ensemble des contrôles d’accès administratifs et de la catégorisation des données dans Microsoft 365.
+ms.openlocfilehash: 58cbc7ebea3edb66f5d48d282a3e6995b247a044
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774969"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606710"
 ---
 # <a name="administrative-access-controls-in-microsoft-365"></a>Contrôles d’accès administratif dans Microsoft 365 
 
@@ -74,7 +75,7 @@ Il existe trois catégories de contrôles d’accès utilisés par Microsoft pou
 
 - Contrôles d’isolation
 - Contrôles du personnel
-- Contrôles technologiques
+- Contrôles de technologie
 
 Lorsqu’ils sont combinés, ces contrôles aident à prévenir et à détecter les actions malveillantes dans Microsoft 365. Outre les contrôles d’isolation, de personnel et de technologie utilisés par Microsoft, il existe une quatrième catégorie de contrôles : ceux mis en œuvre par les clients.
 
@@ -97,4 +98,4 @@ Pour plus d’informations sur l’attribution des rôles et des autorisations d
 - [Contrôles du personnel](office-365-personnel-controls.md)
 - [Contrôles technologiques](office-365-technology-controls.md)
 - [Surveillance et audit des contrôles d’accès](office-365-monitoring-and-auditing-access-controls.md)
-- [Contrôles d’accès Yammer Entreprise](office-365-yammer-enterprise-access-controls.md)
+- [Contrôles d’accès de Yammer Entreprise](office-365-yammer-enterprise-access-controls.md)

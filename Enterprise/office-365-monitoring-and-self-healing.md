@@ -1,5 +1,5 @@
 ---
-title: Surveillance et autoréparation de Microsoft 365
+title: Surveillance et réparation spontanée Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,15 +14,17 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Informations sur les fonctionnalités de surveillance et d’autoréparation de Microsoft 365.
-ms.openlocfilehash: 88338f722e8563c3db6573ac6ab64252cb98c450
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.custom:
+- seo-marvel-apr2020
+description: Dans cet article, vous découvrirez les fonctionnalités de surveillance et d’auto-réparation de Microsoft 365.
+ms.openlocfilehash: 1fa42e5e4ac20462b0d32db28f59c1c51b8a1f35
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998761"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605526"
 ---
-# <a name="microsoft-365-monitoring-and-self-healing"></a>Surveillance et autoréparation de Microsoft 365
+# <a name="microsoft-365-monitoring-and-self-healing"></a>Surveillance et réparation spontanée Microsoft 365
 
 Étant donné l’ampleur de Microsoft 365, il serait impossible de maintenir les données client résistantes et sûres des programmes malveillants sans surveillance intégrée complète, alerte intelligente et auto-réparation rapide et fiable. La surveillance d’un ensemble de services à l’envergure de Microsoft 365 est très complexe. De nouvelles mentalités et méthodologies devaient être introduites, ainsi que de nouveaux ensembles de technologies qui devaient être créés pour fonctionner et gérer le service dans un environnement global connecté. Nous avons quitté l’approche de surveillance traditionnelle de la collecte de données et du filtrage pour créer des alertes à une approche basée sur l’analyse des données ; prendre des signaux et renforcer la confiance de ces données, puis utiliser l’automatisation pour récupérer ou résoudre le problème. Cette approche permet de tirer le meilleur parti de l’équation de récupération, qui, à son tour, rend les opérations moins onéreuses, plus rapides et moins sujettes aux erreurs. 
 

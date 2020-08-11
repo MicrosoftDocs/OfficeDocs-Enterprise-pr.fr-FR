@@ -1,5 +1,5 @@
 ---
-title: Architectures Microsoft Azure pour SharePoint 2013
+title: Architectures Microsoft Azure pour SharePoint 2013
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -11,15 +11,17 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Ent_Architecture
+ms.custom:
+- Ent_Architecture
+- seo-marvel-apr2020
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
-description: 'Résumé : Les solutions SharePoint 2013 peuvent être hébergées sur des machines virtuelles Microsoft Azure. Découvrez quels types de solution sont adaptés et comment configurer Microsoft Azure pour en héberger une.'
-ms.openlocfilehash: fee388f56faf2b30534d9a56926d9d62a176df19
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Découvrez les types de solutions SharePoint 2013 pouvant être hébergés dans des machines virtuelles Microsoft Azure et comment configurer Azure pour en héberger un.
+ms.openlocfilehash: f76d5020ab4695f48edca956d6593040c42dcc70
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997891"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605686"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>Architectures Microsoft Azure pour SharePoint 2013
 

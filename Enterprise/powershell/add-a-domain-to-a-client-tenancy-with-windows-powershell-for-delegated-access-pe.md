@@ -1,5 +1,5 @@
 ---
-title: Ajout d’un domaine à la location d’un client avec Windows PowerShell pour les partenaires avec autorisation d’accès délégué
+title: Ajouter un domaine à une location de client avec Windows PowerShell pour les partenaires DAP
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,15 +14,15 @@ ms.collection:
 - M365-subscription-management
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: 'Résumé : utilisez PowerShell pour Microsoft 365 pour ajouter un autre nom de domaine à un client existant.'
-ms.openlocfilehash: eabfa9dfcbb36cb54a2d51321dfe60f197290b10
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.openlocfilehash: 8b38caf72db57d5e80f0483062adb3bd2529672b
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433765"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606480"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>Ajout d’un domaine à la location d’un client avec Windows PowerShell pour les partenaires avec autorisation d’accès délégué
 

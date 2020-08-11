@@ -1,5 +1,5 @@
 ---
-title: Résilience des données Exchange Online dans Microsoft 365
+title: Résilience des données Exchange Online dans Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,17 +14,17 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Une explication des différents aspects de la résilience des données dans Exchange Online et Microsoft 365.
-ms.openlocfilehash: 1af8acc10f9d45055d6575e2dfcc45451b6eaf6a
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Dans cet article, vous trouverez une explication des différents aspects de la résilience des données dans Exchange Online et Microsoft 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 18d8179f37cb97316b71a43cccfc631a5cc550da
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998735"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606610"
 ---
-# <a name="exchange-online-data-resiliency-in-microsoft-365"></a>Résilience des données Exchange Online dans Microsoft 365
+# <a name="exchange-online-data-resiliency-in-microsoft-365"></a>Résilience des données Exchange Online dans Microsoft 365
 
-## <a name="introduction"></a>Introduction
 Il existe deux types d’endommagement pouvant avoir une incidence sur une base de données Exchange : la corruption physique, généralement causée par du matériel (en particulier, des problèmes de matériel de stockage) et une altération logique, qui se produit en raison d’autres facteurs. En règle générale, il existe deux types de corruption logique pouvant se produire dans une base de données Exchange : 
 - **Corruption logique de la base** de données : le checksum de la page de base de données correspond, mais les données de la page sont incorrectes logiquement. Cela peut se produire lorsque le moteur de base de données (moteur de stockage extensible) tente d’écrire une page de base de données et même si le système d’exploitation renvoie un message de réussite, si les données ne sont pas écrites sur le disque ou si elles sont écrites au mauvais endroit. Il s’agit d’un *vidage perdu*. Le moteur ESE inclut de nombreuses fonctionnalités et protections qui sont conçues pour empêcher la corruption physique d’une base de données et d’autres scénarios de perte de données. Pour éviter la perte de données par des vidages perdus, le moteur ESE inclut un mécanisme de détection de vidage perdu dans la base de données, ainsi qu’une fonctionnalité de restauration d’une seule page. 
 - **Corruption logique de magasin** : des données sont ajoutées, supprimées ou manipulées de telle sorte que l’utilisateur ne s’attend pas. Ces cas sont généralement provoqués par des applications tierces. Ce n'est généralement de la corruption que dans le sens où l'utilisateur voit cela comme une altération. La banque d'informations Exchange considère la transaction qui est à l'origine de l'altération logique comme une série d'opérations MAPI valides. Les fonctionnalités de [conservation](https://docs.microsoft.com/exchange/security-and-compliance/create-or-remove-in-place-holds) inaltérable d’Exchange Online procurent une protection contre l’altération logique du magasin (car elle empêche la suppression définitive du contenu par un utilisateur ou une application). 

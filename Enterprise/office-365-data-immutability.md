@@ -14,15 +14,16 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Définit et décrit l’immuabilité des données dans Microsoft 365.
-ms.openlocfilehash: 8648060f3036d2f3c81704cf53a817910607263a
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Découvrez comment Microsoft 365 conserve les données sous forme découvrable pour répondre aux exigences de conformité réglementaire, de gouvernance interne et de litige.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: dcc997cf157df08441bf1f6e825d0a5a468edbd1
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998458"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605636"
 ---
-# <a name="immutability-in-microsoft-365"></a>Immuabilité dans Microsoft 365
+# <a name="immutability-in-microsoft-365"></a>Immuabilité dans Microsoft 365
 
 La conformité réglementaire, les exigences de gouvernance interne ou les risques de contentieux imposent aux organisations de conserver le courrier électronique et les données associées sous une forme découvrable. Toutes les données du système doivent être découvrables et aucune ne peut être détruite ou modifiée. Le terme standard du secteur est « immuabilité ».
 
@@ -30,18 +31,18 @@ Les méthodes traditionnelles d’immuabilité ont généralement fonctionné en
 
 Les fonctionnalités de stratégie de conservation et de conservation sur place de l’archivage dans Microsoft 365 et ses services vous permettent de conserver et de conserver de nombreuses classes de données entrantes, internes et sortantes. Cela inclut les opérations suivantes :
 
-- Communications par courrier électronique entrant et sortant
-- Livres et enregistrements contenus dans un formulaire électronique ou dans des documents en ligne partagés
+- Communications par messagerie entrantes et sortantes
+- Livres et enregistrements contenus dans un formulaire de courrier électronique ou dans des documents en ligne partagés
 - Demandes de réunion
-- Situées
+- Télécopies
 - Messages instantanés
-- Documents partagés pendant les réunions en ligne
+- Documents partagés pendant des réunions en ligne
 - Messages vocaux
 
 De plus, Microsoft a développé des fonctionnalités complémentaires pour permettre [l’archivage des données](https://support.office.com/article/Archiving-third-party-data-in-Office-365-0ce338d5-3666-4a18-86ab-c6910ff408cc) provenant d’autres sources via l’intégration de solutions de capture et de gestion de données tierces. Une fois les données tierces importées, vous pouvez appliquer les fonctionnalités de conformité de Microsoft 365 aux données, notamment :
 
 - [Conservation pour litige](https://docs.microsoft.com/microsoft-365/compliance/create-a-litigation-hold)
-- [Découverte électronique inaltérable et conservation inaltérable](https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations)
+- [Découverte électronique et conservation inaltérable](https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations)
 - [Recherche de conformité](https://docs.microsoft.com/microsoft-365/compliance/search-for-content)
 - [Archivage local](https://docs.microsoft.com/microsoft-365/compliance/enable-archive-mailboxes)
 - [Audit de boîte aux lettres](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing)

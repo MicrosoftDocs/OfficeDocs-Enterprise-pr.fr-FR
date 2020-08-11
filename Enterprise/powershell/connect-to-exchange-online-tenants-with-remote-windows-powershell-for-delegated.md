@@ -1,5 +1,5 @@
 ---
-title: Connexion à des locataires Exchange Online avec Remote Windows PowerShell pour les partenaires avec autorisations d’accès délégué
+title: Connexion aux locataires Exchange Online avec Remote Windows PowerShell pour les partenaires DAP
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,19 +13,19 @@ search.appverid:
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: ae5f1a87-8b77-4f93-a1b8-56f800aeb283
 description: 'Résumé : Utilisez Windows PowerShell distant pour vous connecter à Exchange Online à l’aide de la valeur DelegatedOrg.'
-ms.openlocfilehash: f04632f9e7b5e8dec476a5381550020e5d8a1521
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: bfb041a9ab91cda54e643e8410704662c11ef175
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230830"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606010"
 ---
 # <a name="connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Connexion à des locataires Exchange Online avec Remote Windows PowerShell pour les partenaires avec autorisations d’accès délégué
 
-*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 > [!IMPORTANT]
 > Les procédures décrites dans cette rubrique sont uniquement destinées aux partenaires avec autorisation d’accès délégué (DAP). Si vous n’êtes pas un partenaire DAP, n’utilisez pas les procédures décrites dans cette rubrique. 

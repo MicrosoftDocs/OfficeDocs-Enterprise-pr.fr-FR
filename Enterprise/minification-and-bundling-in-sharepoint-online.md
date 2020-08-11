@@ -13,18 +13,20 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - SPO160
 - MET150
 ms.assetid: 87a52468-994e-43a2-b155-7229ed659291
-description: Cet article explique comment utiliser les techniques de minimisation et de regroupement avec Web Essentials pour réduire le nombre de requêtes HTTP et réduire le temps nécessaire au chargement des pages dans SharePoint Online.
-ms.openlocfilehash: 44f9e6151c22c3715b56a164bd0c9cacedcf2580
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: Découvrez comment utiliser les techniques de minimisation et de regroupement avec Web Essentials pour réduire les requêtes HTTP et le temps nécessaire pour charger des pages dans SharePoint Online.
+ms.openlocfilehash: 3b840b7da953103448515c51f79ba15cb356ae38
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004769"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605656"
 ---
 # <a name="minification-and-bundling-in-sharepoint-online"></a>Minimisation et regroupement dans SharePoint Online
 
@@ -39,7 +41,7 @@ Pour les fichiers JavaScript et CSS, vous pouvez également utiliser une approch
 Vous pouvez utiliser des logiciels tiers tels que Web Essentials pour regrouper les fichiers CSS et JavaScript.
   
 > [!IMPORTANT]
-> Web Essentials est un projet de communauté ouverte, basé sur une source tierce. Le logiciel est une extension de Visual Studio 2012 et Visual Studio 2013 et n’est pas pris en charge par Microsoft. Pour télécharger Web Essentials, visitez le site Web à [https://vswebessentials.com/download](https://go.microsoft.com/fwlink/p/?LinkId=525629)l’adresse. 
+> Web Essentials est un projet de communauté ouverte, basé sur une source tierce. Le logiciel est une extension de Visual Studio 2012 et Visual Studio 2013 et n’est pas pris en charge par Microsoft. Pour télécharger Web Essentials, visitez le site Web à l’adresse [https://vswebessentials.com/download](https://go.microsoft.com/fwlink/p/?LinkId=525629) . 
   
 Web Essentials offre deux types de groupage :
   

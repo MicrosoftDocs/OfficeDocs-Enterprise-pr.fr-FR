@@ -14,15 +14,16 @@ ms.collection:
 - M365-analytics
 f1.keywords:
 - NOCSH
-description: Explication des fonctionnalités de création de rapports dans Microsoft 365.
-ms.openlocfilehash: 3e92427aaeec0a8472d6efd7a977bb4f74434555
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Découvrez les différentes fonctionnalités de création de rapports dans Microsoft 365, notamment Azure Active Directory et Exchange Online.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 1e0039f354516f85362a8936d10d9fca2a7e3f6f
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997784"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606310"
 ---
-# <a name="microsoft-365-reporting-features"></a>Fonctionnalités de création de rapports Microsoft 365 
+# <a name="microsoft-365-reporting-features"></a>Fonctionnalités de création de rapports Microsoft 365
 
 Les fonctionnalités de création de rapports dans Microsoft 365 fournissent différents rapports d’audit pour Azure Active Directory (Azure AD), Exchange Online, la gestion des appareils, la vérification de surveillance et la protection contre la perte de données (DLP). Ces rapports sont différents et distincts des rapports d’activité de Microsoft 365.
 

@@ -18,13 +18,14 @@ search.appverid:
 ms.assetid: fd16c8d2-4799-4c39-8fd7-045f06640166
 f1.keywords:
 - NOCSH
-description: Ne serait-ce pas agréable si votre connexion Internet était toujours rapide et jamais inactive ? Ce jour, peut-être. Toutefois, entre-temps, il existe des choses pratiques que vous pouvez effectuer pour contourner un réseau Balky tout en continuant à faire votre travail quotidien.
-ms.openlocfilehash: 3e9a3e91c5e1cc775d28742b39ea9c0ed507d2c9
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.custom: seo-marvel-apr2020
+description: Cet article vous guide tout au long des meilleures pratiques que vous pouvez adopter pour utiliser Office 365 sur un réseau lent.
+ms.openlocfilehash: b4b81826dfca4c5962cc6aef026c3878e3b52304
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844955"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605780"
 ---
 # <a name="best-practices-for-using-office-365-on-a-slow-network"></a>Meilleures pratiques pour l’utilisation d’Office 365 sur un réseau lent
 

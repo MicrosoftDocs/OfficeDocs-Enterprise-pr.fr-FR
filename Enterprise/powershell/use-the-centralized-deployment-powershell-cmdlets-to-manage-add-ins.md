@@ -14,16 +14,18 @@ search.appverid:
 - MED150
 - MBS150
 - BCS160
-ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 f1.keywords:
 - NOCSH
+ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
+ms.custom:
+- seo-marvel-apr2020
 description: Utilisez les applets de commande PowerShell de déploiement centralisé pour vous aider à déployer et gérer des compléments Office pour votre organisation Microsoft 365.
-ms.openlocfilehash: aa8ec43cb0e6bcbcdbb2b4eeb3fd67fec9d8a39b
-ms.sourcegitcommit: 20c8c98c0b32d8cf56d50cbc70f82fd5c4ce649c
+ms.openlocfilehash: 849e27dc3bda5dc9e6b4f45bc100e896eae3e281
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45263586"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605346"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Utiliser les applets de commande PowerShell de déploiement centralisé pour gérer les compléments
 

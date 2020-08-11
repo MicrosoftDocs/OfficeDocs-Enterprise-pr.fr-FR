@@ -18,17 +18,18 @@ search.appverid:
 f1.keywords:
 - NOCSH
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
-description: Protégez l’accès administrateur général à votre abonnement Microsoft 365.
-ms.openlocfilehash: fdab22944902b554bc7fa295d189cfd2899933ef
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Cet article fournit des informations sur la protection de l’accès administrateur général à votre abonnement Microsoft 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 5184b39a48348b07f0a16ce3db2aeaccfe0b2d21
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229760"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606190"
 ---
 # <a name="protect-your-microsoft-365-global-administrator-accounts"></a>Protéger vos comptes d’administrateur général Microsoft 365
 
-*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 Les violations de sécurité d’un abonnement Microsoft 365, y compris la collecte d’informations et les attaques par hameçonnage, sont généralement réalisées en compromettant les informations d’identification d’un compte d’administrateur général Microsoft 365. La sécurité dans le Cloud est un partenariat entre vous et Microsoft :
   

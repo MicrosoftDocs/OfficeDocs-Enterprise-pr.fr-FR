@@ -11,20 +11,22 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - MSO150
 - BCS160
 ms.assetid: beec23c2-c5d6-4e84-a8af-e82aefca7802
-description: Cet article fournit des liens aux administrateurs système qui souhaitent planifier les besoins en bande passante réseau, ou qui doivent améliorer les performances de Skype entreprise online.
-ms.openlocfilehash: 4ca25d8a38ffce5b694b9ca31c330f6488720fcb
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Cet article fournit des liens permettant aux administrateurs système de planifier des besoins en bande passante réseau ou d’améliorer les performances de Skype entreprise online.
+ms.openlocfilehash: 1ca9d969f4552cf260d44099becd41f5868286d7
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843915"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606420"
 ---
 # <a name="tune-skype-for-business-online-performance"></a>Optimiser les performances de Skype Entreprise Online
 
@@ -58,7 +60,7 @@ Cet article fournit des liens aux administrateurs système qui souhaitent planif
   
 [Optimisation de votre réseau pour Skype Entreprise Online](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/optimizing-your-network)
   
-[ExpressRoute et QoS dans Skype entreprise Online](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/expressroute-and-qos-in-skype-for-business-online)
+[ExpressRoute et QoS dans Skype Entreprise Online](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/expressroute-and-qos-in-skype-for-business-online)
   
-[Flux d’appels à l’aide de ExpressRoute](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/call-flow-using-expressroute)
+[Appel du flux à l’aide d’ExpressRoute](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/call-flow-using-expressroute)
 

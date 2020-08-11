@@ -17,18 +17,19 @@ ms.custom:
 - O365ITProTrain
 - Ent_Office_Other
 - PowerShell
+- seo-marvel-apr2020
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
-description: Explique comment utiliser PowerShell pour afficher des comptes d’utilisateurs Microsoft 365 sans licence ou sous licence.
-ms.openlocfilehash: 02b1f76bab0e64e4e7e72f5e5556f5047d956d11
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Cet article explique comment utiliser PowerShell pour afficher des comptes d’utilisateurs Microsoft 365 sans licence ou sous licence.
+ms.openlocfilehash: 470c4dff2b425ba570926002c1efd68310e37d71
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230250"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605286"
 ---
 # <a name="view-licensed-and-unlicensed-microsoft-365-users-with-powershell"></a>Afficher les utilisateurs titulaires d’une licence et de Microsoft 365 sans licence avec PowerShell
 
-*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 Les comptes d’utilisateur de votre organisation Microsoft 365 peuvent avoir certaines, toutes ou aucune des licences disponibles qui leur sont attribuées à partir des plans de gestion des licences disponibles dans votre organisation. Vous pouvez utiliser PowerShell pour Microsoft 365 pour trouver rapidement les utilisateurs sous licence et sans licence de votre organisation.
 
@@ -80,8 +81,8 @@ Get-MsolUser -All | where {$_.isLicensed -eq $true}
 
 ## <a name="see-also"></a>Voir aussi
 
-[Gérer les comptes d’utilisateur, les licences et les groupes Microsoft 365 avec PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Gérer les comptes d’utilisateurs, les licences et les groupes Microsoft 365 avec PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Gérer Microsoft 365 avec PowerShell](manage-office-365-with-office-365-powershell.md)
+[Gestion de Microsoft 365 à l’aide de PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Prise en main de PowerShell pour Microsoft 365](getting-started-with-office-365-powershell.md)
+[Prise en main de PowerShell pour Microsoft 365](getting-started-with-office-365-powershell.md)

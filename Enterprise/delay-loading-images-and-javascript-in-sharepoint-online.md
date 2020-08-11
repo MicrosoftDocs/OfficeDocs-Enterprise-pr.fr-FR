@@ -13,18 +13,20 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - SPO160
 - MET150
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
-description: Cet article explique comment réduire le temps de chargement des pages SharePoint Online en utilisant JavaScript pour différer le chargement des images et en attendant de charger le code JavaScript non essentiel jusqu’à ce que la page se charge.
-ms.openlocfilehash: 09feb74b92d6fec99ba28f432ea19858cb3e094b
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+description: Découvrez comment réduire le temps de chargement des pages SharePoint Online à l’aide de JavaScript pour différer le chargement des images et du code JavaScript non essentiel.
+ms.openlocfilehash: 72eabed2dd940bb07ece44bbc0dbc9d72e426a67
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009349"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605750"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>Différer le chargement des images et des éléments JavaScript dans SharePoint Online
 
@@ -34,7 +36,7 @@ Les images peuvent avoir une incidence négative sur la vitesse de chargement de
   
 ## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>Améliorer les temps de chargement des pages en retardant le chargement de l’image dans les pages SharePoint Online à l’aide de JavaScript
 
-Vous pouvez utiliser JavaScript pour empêcher un navigateur Web de récupérer des images. Cela accélère le rendu de document global. Pour ce faire, supprimez la valeur de l’attribut SRC de \<la\> balise IMG et remplacez-la par le chemin d’accès à un fichier dans un attribut Data tel que : Data-SRC. Par exemple :
+Vous pouvez utiliser JavaScript pour empêcher un navigateur Web de récupérer des images. Cela accélère le rendu de document global. Pour ce faire, supprimez la valeur de l’attribut SRC de la \<img\> balise et remplacez-la par le chemin d’accès à un fichier dans un attribut de données tel que : Data-SRC. Par exemple :
   
 ```html
 <img src="" data-src="/sites/NavigationBySearch/_catalogs/masterpage/media/microsoft-white-8.jpg" />
@@ -86,7 +88,7 @@ $(window).on("scroll", function () {
 
 ```
 
-Pour SharePoint Online, vous devez attacher la fonction suivante à l’événement scroll sur la balise div \<\> #s4-Workspace. Cela est dû au fait que les événements de fenêtre sont remplacés afin de s’assurer que le ruban reste attaché au haut de la page.
+Pour SharePoint Online, vous devez attacher la fonction suivante à l’événement scroll sur la balise #s4-Workspace \<div\> . Cela est dû au fait que les événements de fenêtre sont remplacés afin de s’assurer que le ruban reste attaché au haut de la page.
   
 ```javascript
 //Keep the ribbon at the top of the page
@@ -95,15 +97,15 @@ $('#s4-workspace').on("scroll", function () {
 });
 ```
 
-Enregistrez le fichier texte sous la forme d’un fichier JavaScript avec l’extension. js, par exemple delayLoadImages. js.
+Enregistrez le fichier texte sous la forme d’un fichier JavaScript avec l’extension. js, par exemple delayLoadImages.js.
   
-Une fois que vous avez terminé d’écrire delayLoadImages. js, vous pouvez ajouter le contenu du fichier à une page maître dans SharePoint Online. Pour ce faire, vous ajoutez un lien de script à l’en-tête de la page maître. Une fois qu’il se trouve dans une page maître, le code JavaScript est appliqué à toutes les pages de votre site SharePoint Online qui utilisent cette mise en page de page maître. Par ailleurs, si vous avez l’intention de l’utiliser sur une seule page de votre site, utilisez le composant WebPart éditeur de script pour incorporer le code JavaScript dans la page. Pour plus d’informations, consultez les rubriques suivantes :
+Une fois que vous avez terminé d’écrire delayLoadImages.js, vous pouvez ajouter le contenu du fichier à une page maître dans SharePoint Online. Pour ce faire, vous ajoutez un lien de script à l’en-tête de la page maître. Une fois qu’il se trouve dans une page maître, le code JavaScript est appliqué à toutes les pages de votre site SharePoint Online qui utilisent cette mise en page de page maître. Par ailleurs, si vous avez l’intention de l’utiliser sur une seule page de votre site, utilisez le composant WebPart éditeur de script pour incorporer le code JavaScript dans la page. Pour plus d’informations, consultez les rubriques suivantes :
   
 - [Comment appliquer une page maître à un site dans SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525627)
 
 - [Procédure : Créer une mise en page dans SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525628)
 
-### <a name="example-referencing-the-javascript-delayloadimagesjs-file-from-a-master-page-in-sharepoint-online"></a>Exemple : référencement du fichier JavaScript delayLoadImages. js à partir d’une page maître dans SharePoint Online
+### <a name="example-referencing-the-javascript-delayloadimagesjs-file-from-a-master-page-in-sharepoint-online"></a>Exemple : référencement du fichier JavaScript delayLoadImages.js à partir d’une page maître dans SharePoint Online
   
 Pour que cela fonctionne, vous devez également référencer jQuery dans la page maître. Dans l’exemple suivant, vous pouvez voir dans le chargement de la page initiale qu’il n’y a qu’une seule image chargée, mais il y a plusieurs autres éléments sur la page.
   

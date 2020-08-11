@@ -11,23 +11,25 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
-description: ExpressRoute pour Office 365 fournit la connectivité de couche 3 entre votre réseau et les centres de donnes de Microsoft. Les circuits utilisent des publicités d’itinéraires BGP (Border Gateway Protocol) de serveurs frontaux d’Office 365. Du point de vue de vos appareils sur site, lorsqu’ils doivent sélectionner le chemin d’accès TCP/IP correct vers Office 365, Azure ExpressRoute est considéré comme une alternative à Internet.
-ms.openlocfilehash: f147003491b2186a05edbaf73acc86e60dbe3110
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Dans cet article, vous allez découvrir Azure ExpressRoute pour Office 365 et comment l’utiliser pour la planification du réseau.
+ms.openlocfilehash: 72fe3dc05a50a4a237a7493498ba792316d98b68
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230880"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606730"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Planification du réseau avec ExpressRoute pour Office 365
 
-*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 ExpressRoute pour Office 365 fournit la connectivité de couche 3 entre votre réseau et les centres de donnes de Microsoft. Les circuits utilisent des publicités d’itinéraires BGP (Border Gateway Protocol) de serveurs frontaux d’Office 365. Du point de vue de vos appareils sur site, lorsqu’ils doivent sélectionner le chemin d’accès TCP/IP correct vers Office 365, Azure ExpressRoute est considéré comme une alternative à Internet.
   

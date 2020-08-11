@@ -14,17 +14,18 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: Prise en charge des applications clientes Microsoft 365 pour l’authentification unique.
-ms.openlocfilehash: beb0ae405b9c365da0faa64e31a36f7b571ce1aa
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Dans cet article, Découvrez les plateformes, les clients et les modules PowerShell qui prennent en charge l’authentification unique pour Microsoft 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: d0f757c28695c46e6a960828914fff34c7fab5e9
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998512"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605646"
 ---
 # <a name="microsoft-365-client-app-support--single-sign-on"></a>Prise en charge des applications clientes Microsoft 365 — authentification unique
 
-*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 L’authentification unique (SSO) ajoute de la sécurité et de la commodité lorsque vos utilisateurs se connectent à des applications dans Azure Active Directory (Azure AD). Avec l’authentification unique, les utilisateurs se connectent une seule fois avec un compte pour accéder aux appareils joints au domaine, aux ressources de l’entreprise, aux applications SaaS (Software as a service) et aux applications Web.
 

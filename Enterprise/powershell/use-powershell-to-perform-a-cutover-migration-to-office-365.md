@@ -1,5 +1,5 @@
 ---
-title: Utiliser PowerShell pour effectuer une migration à basculement vers Microsoft 365
+title: Utilisation de PowerShell pour effectuer une migration à basculement vers Microsoft 365
 ms.author: sirkkuw
 author: sirkkuw
 manager: laurawi
@@ -12,19 +12,19 @@ search.appverid:
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
-description: 'Résumé : Découvrez comment utiliser Windows PowerShell pour effectuer une migration à basculement vers Microsoft 365.'
-ms.openlocfilehash: 203c041e0bd5fe58d697d074e94b749726bb22bf
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Découvrez comment utiliser PowerShell pour déplacer le contenu d’un système de courrier source en une seule fois en effectuant une migration à basculement vers Microsoft 365.
+ms.openlocfilehash: fde0795b767f908fb0d1dcc5ce17a0bb50235d8e
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229850"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606220"
 ---
-# <a name="use-powershell-to-perform-a-cutover-migration-to-microsoft-365"></a>Utiliser PowerShell pour effectuer une migration à basculement vers Microsoft 365
+# <a name="use-powershell-to-perform-a-cutover-migration-to-microsoft-365"></a>Utilisation de PowerShell pour effectuer une migration à basculement vers Microsoft 365
 
-*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 Vous pouvez migrer le contenu des boîtes aux lettres utilisateur à partir d’un système de messagerie source vers Microsoft 365 en une seule fois à l’aide d’une migration à basculement. Cet article décrit les tâches correspondant à une migration de messagerie à basculement à l'aide d'Exchange Online PowerShell. 
   

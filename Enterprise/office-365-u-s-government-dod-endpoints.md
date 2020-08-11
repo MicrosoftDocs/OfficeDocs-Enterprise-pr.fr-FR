@@ -1,5 +1,5 @@
 ---
-title: Points de terminaison DoD du gouvernement américain Office 365
+title: Points de terminaison DOD pour le gouvernement américain Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,14 +19,15 @@ search.appverid:
 ms.assetid: 5d7dce60-4892-4b58-b45e-ee42fe8a907f
 f1.keywords:
 - NOCSH
-description: 'Résumé : Office 365 nécessite une connectivité à Internet. Les points de terminaison ci-dessous doivent être accessibles aux clients utilisant Office 365 le gouvernement américain DoD plans uniquement.'
+description: Office 365 nécessite une connectivité à Internet. Les points de terminaison ci-dessous doivent être accessibles aux clients utilisant Office 365 le gouvernement américain DoD plans uniquement.
 hideEdit: true
-ms.openlocfilehash: d4c719711bf09f22c0d7adcd87b98bb0a97f579a
-ms.sourcegitcommit: b2767740251b257bb5e66d056731c6c9e7f2677d
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 1097baeca9bb3b1ba7c732f23cea4005d6b3529e
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46596892"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606503"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Points de terminaison DoD du gouvernement américain Office 365
 

@@ -17,18 +17,19 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 - O365ITProTrain
+- seo-marvel-apr2020
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
-description: Découvrez comment utiliser PowerShell pour Microsoft 365 pour créer des comptes d’utilisateurs.
-ms.openlocfilehash: 4057f4e1b29e8177bee32306c49f25f607ac5a0f
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Dans cet article, Découvrez comment utiliser PowerShell pour créer des comptes d’utilisateurs ou plusieurs comptes d’utilisateur Microsoft 365.
+ms.openlocfilehash: 2f4d7b42e68e3bd426ea73c8568e0c603af06dcb
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230790"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605990"
 ---
 # <a name="create-microsoft-365-user-accounts-with-powershell"></a>Créer des comptes d’utilisateur Microsoft 365 avec PowerShell
 
-*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 Vous pouvez utiliser PowerShell pour Microsoft 365 pour créer efficacement des comptes d’utilisateur, notamment plusieurs comptes d’utilisateur. Lorsque vous créez des comptes d’utilisateur dans PowerShell, certaines propriétés de compte sont toujours obligatoires. D'autres propriétés ne sont pas nécessaires pour la création du compte, mais sont importantes. Ces propriétés sont décrites dans le tableau suivant :
   
@@ -121,8 +122,8 @@ Cet exemple crée des comptes d’utilisateurs à partir du fichier nommé C:\My
     
 ## <a name="see-also"></a>Voir aussi
 
-[Gérer les comptes d’utilisateur, les licences et les groupes Microsoft 365 avec PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Gérer les comptes d’utilisateurs, les licences et les groupes Microsoft 365 avec PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Gérer Microsoft 365 avec PowerShell](manage-office-365-with-office-365-powershell.md)
+[Gestion de Microsoft 365 à l’aide de PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Prise en main de PowerShell pour Microsoft 365](getting-started-with-office-365-powershell.md)
+[Prise en main de PowerShell pour Microsoft 365](getting-started-with-office-365-powershell.md)

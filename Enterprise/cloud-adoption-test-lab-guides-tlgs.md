@@ -17,14 +17,15 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
+- seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Résumé : utilisez ces guides de laboratoire de test (guides) pour configurer la démonstration, la preuve de concept ou les environnements de développement/test pour Microsoft 365.'
-ms.openlocfilehash: 32204f3b3ca2cc51d3d0eea9a3d1ef6dfa65228d
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: 198185f75ef2f0a9347508e17717811feb3a0cd9
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230010"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606080"
 ---
 # <a name="test-microsoft-365-with-test-lab-guides-tlgs"></a>Test de Microsoft 365 avec des guides de laboratoire de test (guides)
 
@@ -48,9 +49,9 @@ Utilisez ces articles pour créer votre environnement de développement/test Mic
 
     Cette étape est facultative si vous souhaitez créer une configuration d’entreprise simulée pour une identité hybride.
     
-Pour accéder à d’autres laboratoires qui s’appliquent à la fois à Office 365 et à Microsoft 365, cliquez [ici](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides).  
+Pour obtenir des guides supplémentaires qui s’appliquent à Office 365 et Microsoft 365, consultez les [guides de laboratoire de test](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides).  
     
-## <a name="see-also"></a>Voir également
+## <a name="related-topics"></a>Voir aussi
 
 [Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.yml)
   

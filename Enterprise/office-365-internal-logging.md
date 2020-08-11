@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Explication du fonctionnement de la journalisation interne pour Microsoft 365 Engineering.
-ms.openlocfilehash: 09e0d2910a71cbcae9db0b75193cc5d672914737
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: Dans cet article, vous trouverez une explication du fonctionnement de la journalisation interne pour Microsoft 365 Engineering Teams.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: e7c5c32d1ea0704f8f56a4af6e6dd85f73f9c2df
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774919"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606550"
 ---
 # <a name="internal-logging-for-microsoft-365-engineering"></a>Journalisation interne pour l’ingénierie Microsoft 365
 

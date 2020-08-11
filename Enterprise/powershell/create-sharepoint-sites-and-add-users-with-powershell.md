@@ -16,22 +16,23 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 - SPO_Content
+- seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Résumé : utilisez PowerShell pour créer de nouveaux sites SharePoint Online, puis ajoutez des utilisateurs et des groupes à ces sites.'
-ms.openlocfilehash: 2791b4de9388e3ff828a665aeeef5ada19627107
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: 85694799c32d0a075a158df47dc021bbbbe0c844
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230800"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606000"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-powershell"></a>Création de sites SharePoint Online et ajout d’utilisateurs avec PowerShell
 
-*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 Lorsque vous utilisez PowerShell pour Microsoft 365 pour créer des sites SharePoint Online et ajouter des utilisateurs, vous pouvez rapidement et régulièrement exécuter des tâches beaucoup plus rapidement que vous ne pouvez le faire dans le centre d’administration de Microsoft 365. Vous pouvez également effectuer des tâches qui ne peuvent pas être effectuées dans le centre d’administration 365 de Microsoft. 
 
-## <a name="before-you-begin"></a>Avant de commencer
+## <a name="connect-to-sharepoint-online"></a>Se connecter à SharePoint Online
 
 Les procédures décrites dans cette rubrique vous obligent à vous connecter à SharePoint Online. Pour obtenir des instructions, consultez la rubrique [connexion à SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
@@ -160,7 +161,7 @@ c:\users\MyAlias\desktop\UsersAndGroups.ps1
 
 [Gestion des groupes de sites SharePoint Online avec PowerShell](manage-sharepoint-site-groups-with-powershell.md)
 
-[Gérer Microsoft 365 avec PowerShell](manage-office-365-with-office-365-powershell.md)
+[Gestion de Microsoft 365 à l’aide de PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Prise en main de PowerShell pour Microsoft 365](getting-started-with-office-365-powershell.md)
+[Prise en main de PowerShell pour Microsoft 365](getting-started-with-office-365-powershell.md)
 

@@ -14,24 +14,25 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Résumé de la manière dont Microsoft applique l’isolation du client pour Microsoft 365.
-ms.openlocfilehash: 891fdb9bebb500c40a9658d170942ca396facfd1
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Cet article présente un résumé de la manière dont Microsoft applique l’isolation des clients dans les services Cloud tels que Microsoft 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 531b5023af49c776cccfef06dee5bff4b303beff
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998643"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606540"
 ---
 # <a name="tenant-isolation-in-microsoft-365"></a>Isolation du client dans Microsoft 365
 
-L’un des principaux avantages du Cloud Computing est le concept d’une infrastructure commune partagée entre plusieurs clients simultanément, conduisant à des économies d’échelle. Ce concept *est appelé architecture mutualisée*. Microsoft continue de s’assurer que l’architecture mutualisée de nos services Cloud prend en charge les normes de sécurité, de confidentialité, de confidentialité, d’intégrité et de disponibilité au niveau de l’entreprise.
+L’un des principaux avantages du Cloud Computing est le concept d’une infrastructure commune partagée entre plusieurs clients simultanément, conduisant à des économies d’échelle. Ce concept *est appelé architecture mutualisée*. Microsoft travaille continuellement pour s’assurer que les architectures mutualisées de nos services Cloud prennent en charge les normes de sécurité, de confidentialité, de respect de la vie privée, d'intégrité et de disponibilité au niveau de l'entreprise.
 
 En fonction des investissements [et de l'](https://www.microsoft.com/trust-center) expérience considérables collectés dans le processus de développement de la sécurité et du cycle de vie du développement de la [sécurité](https://www.microsoft.com/securityengineering/sdl/), les services Cloud Microsoft ont été conçus en partant du principe que tous les clients sont potentiellement hostiles à tous les autres clients, et nous avons implémenté des mesures de sécurité pour empêcher les actions d’un client d’affecter la sécurité ou le service d’un
 
 Les deux principaux objectifs du maintien de l’isolation des clients dans un environnement mutualisés sont les suivants :
 
-1.  Empêcher la fuite ou l’accès non autorisé au contenu du client dans les clients ; les
-2.  Empêcher les actions d’un client d’affecter le service à un autre client
+1.    Empêcher la fuite ou l’accès non autorisé au contenu du client dans les clients ; les
+2.    Empêcher les actions d’un client d’affecter le service à un autre client
 
 Plusieurs formes de protection ont été mises en œuvre dans Microsoft 365 pour empêcher les clients de compromettre les services ou les applications Microsoft 365 ou d’obtenir un accès non autorisé aux informations d’autres clients ou au système Microsoft 365 lui-même, notamment :
 
@@ -46,8 +47,8 @@ Ensemble, les protections mentionnées ci-dessus fournissent des contrôles d’
 
 - [Isolation et contrôle d’accès dans Azure Active Directory](office-365-isolation-in-azure-active-directory.md)
 - [Isolation du client dans Office Graph et Delve](office-365-isolation-in-graph-and-delve.md)
-- [Isolation du client dans Microsoft 365 Search](office-365-isolation-in-office-365-search.md)
+- [Isolation du client dans Microsoft 365 Search](office-365-isolation-in-office-365-search.md)
 - [Isolation du client dans Office 365 Video](office-365-isolation-in-office-365-video.md)
 - [Limites de ressources](office-365-resource-limits.md)
 - [Surveillance et test des limites du client](office-365-monitoring-and-testing.md)
-- [Isolation et contrôle d’accès dans Microsoft 365](office-365-isolation-in-office-365.md)
+- [Isolation et contrôle d’accès dans Microsoft 365](office-365-isolation-in-office-365.md)

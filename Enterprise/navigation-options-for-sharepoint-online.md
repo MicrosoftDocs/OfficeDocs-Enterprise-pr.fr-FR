@@ -13,18 +13,20 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - SPO160
 - MET150
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
-description: Cet article décrit les options de navigation sites avec la publication SharePoint activée dans SharePoint Online. Le choix et la configuration de la navigation ont un impact significatif sur les performances et l’extensibilité des sites dans SharePoint Online. Cet article ne s’applique pas aux sites d’équipe classiques.
-ms.openlocfilehash: c651530284889d2808c8fa415b72836eb6d14aea
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: Cet article décrit les options de navigation sites avec la publication SharePoint activée dans SharePoint Online.
+ms.openlocfilehash: dd11775c35f9eb7d2b6bccc38023b6f8bce8efc4
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004759"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606760"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Options de navigation pour SharePoint Online
 
@@ -33,7 +35,7 @@ Cet article décrit les options de navigation sites avec la publication SharePoi
 >[!NOTE]
 >Si vous utilisez des options de navigation modernes SharePoint comme le menu Mega, la navigation en cascade ou la navigation par concentrateur, cet article ne s’applique pas à votre site. Les architectures de sites SharePoint modernes exploitent une hiérarchie de sites plus aplatie et un modèle Hub-and-Spoke. Cela permet de réaliser de nombreux scénarios qui ne nécessitent pas l’utilisation de la fonctionnalité de publication SharePoint.
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="overview-of-navigation-options"></a>Vue d’ensemble des options de navigation
 
 La configuration du fournisseur de navigation peut avoir un impact significatif sur les performances de l’ensemble du site, et vous devez tenir compte de la sélection d’un fournisseur de navigation et d’une configuration qui évoluent efficacement pour les besoins d’un site SharePoint. Il existe deux fournisseurs de navigation prédéfinis, ainsi que des implémentations de navigation personnalisées.
 
@@ -71,15 +73,15 @@ Il s’agit de la navigation prédéfinie utilisée par défaut et est la soluti
 
 ### <a name="how-to-implement-structural-navigation-caching"></a>Implémentation de la mise en cache de la navigation structurelle
 
-Sous **paramètres** > du site**Présentation** > **de la navigation, vous**pouvez valider si la navigation structurelle est sélectionnée pour la navigation globale ou la navigation actuelle. La sélection de **afficher les pages** aura un impact négatif sur les performances.
+Sous **paramètres du site**  >  **Présentation**  >  de**la navigation**, vous pouvez valider si la navigation structurelle est sélectionnée pour la navigation globale ou la navigation actuelle. La sélection de **afficher les pages** aura un impact négatif sur les performances.
 
 ![Navigation structurelle avec afficher les sous-sites sélectionnés](media/SPONavOptionsStructuredShowSubsites.png)
 
-La mise en cache peut être activée ou désactivée au niveau de la collection de sites et au niveau du site, et est activée par défaut pour les deux. Pour activer au niveau de la collection de sites, sous **paramètres** > du site,**collection** > de sites administration de la**collection de sites, activez**la case à cocher **activer la mise en cache**.
+La mise en cache peut être activée ou désactivée au niveau de la collection de sites et au niveau du site, et est activée par défaut pour les deux. Pour activer au niveau de la collection de sites, sous **paramètres du site**,  >  **collection**  >  de sites administration de la collection de**sites**, activez la case à cocher Activer la **mise en cache**.
 
 ![Activer la mise en cache au niveau du site](media/structural-nav/structural-nav-caching-site-coll.png)
 
-Pour activer au niveau du site, sous **Site Settings** > **navigation**des paramètres de site, activez la case à cocher **activer la mise en cache**.
+Pour activer au niveau du site, sous **Site Settings**  >  **navigation**des paramètres de site, activez la case à cocher **activer la mise en cache**.
 
 ![Activer la mise en cache au niveau du site](media/structural-nav/structural-nav-caching-site.png)
 
@@ -119,13 +121,13 @@ Il existe d’autres options populaires pour créer des **fournisseurs de naviga
 
 À l’aide de la recherche, vous pouvez tirer parti des index créés en arrière-plan à l’aide de l’analyse continue. Les résultats de la recherche sont extraits de l’index de recherche et les résultats sont découpés en sécurité. Cette règle est généralement plus rapide que les fournisseurs de navigation out-of-Box lorsque le filtrage de sécurité est requis. L’utilisation de la recherche pour la navigation structurelle, en particulier si vous avez une structure de site complexe, accélère considérablement le temps de chargement de la page. Le principal avantage de cette barre de navigation gérée est que vous bénéficiez du filtrage de sécurité.
 
-Cette approche implique la création d’une page maître personnalisée et le remplacement du code de navigation par des éléments HTML personnalisés. Suivez cette procédure décrite dans l’exemple suivant pour remplacer le code de navigation dans le `seattle.html`fichier. Dans cet exemple, vous ouvrez le `seattle.html` fichier et remplacez l’intégralité de l' `id="DeltaTopNavigation"` élément par du code HTML personnalisé.
+Cette approche implique la création d’une page maître personnalisée et le remplacement du code de navigation par des éléments HTML personnalisés. Suivez cette procédure décrite dans l’exemple suivant pour remplacer le code de navigation dans le fichier `seattle.html` . Dans cet exemple, vous ouvrez le `seattle.html` fichier et remplacez l’intégralité de l’élément `id="DeltaTopNavigation"` par du code HTML personnalisé.
 
 ### <a name="example-replace-the-out-of-the-box-navigation-code-in-a-master-page"></a>Exemple : remplacer le code de navigation prédéfinie dans une page maître
 
 1. Accédez à la page Paramètres du site.
 2. Ouvrez la Galerie de pages maîtres en cliquant sur **pages maîtres**.
-3. À partir de là, vous pouvez naviguer dans la bibliothèque et `seattle.master`Télécharger le fichier.
+3. À partir de là, vous pouvez naviguer dans la bibliothèque et télécharger le fichier `seattle.master` .
 4. Modifiez le code à l’aide d’un éditeur de texte et supprimez le bloc de code dans la capture d’écran suivante.<br/>![Supprimer le bloc de code affiché](media/SPONavOptionsDeleteCodeBlock.png)<br/>
 5. Supprimez le code entre `<SharePoint:AjaxDelta id="DeltaTopNavigation">` les `<\SharePoint:AjaxDelta>` balises et remplacez-le par l’extrait de code suivant :<br/>
 
@@ -206,7 +208,7 @@ var root = "https://spperformance.sharepoint.com/sites/NavigationBySearch";
 ```
 
 <br/>
-8. Les résultats sont attribués au tableau self. Nodes et une hiérarchie est créée à partir des objets à l’aide de Linq. js assignant la sortie à un tableau self. Hierarchy. Ce tableau est l’objet lié au code HTML. Cette opération est exécutée dans la fonction toggleView () en transmettant l’objet Self à la fonction Ko. applyBinding ().<br/>Ainsi, le tableau de hiérarchie est lié au code HTML suivant :<br/>
+8. Les résultats sont attribués au tableau self. Nodes et une hiérarchie est construite à partir des objets à l’aide de linq.js l’assignation de la sortie à un tableau self. Hierarchy. Ce tableau est l’objet lié au code HTML. Cette opération est exécutée dans la fonction toggleView () en transmettant l’objet Self à la fonction Ko. applyBinding ().<br/>Ainsi, le tableau de hiérarchie est lié au code HTML suivant :<br/>
 
 ```javascript
 <div data-bind="foreach: hierarchy" class="noindex ms-core-listMenu-horizontalBox">
@@ -456,11 +458,11 @@ function addEventsToElements() {
 
 ```
 
-Pour résumer le code indiqué ci-dessus `jQuery $(document).ready` dans la fonction, `viewModel object` une fonction est créée `loadNavigationNodes()` , puis la fonction sur cet objet est appelée. Cette fonction charge la hiérarchie de navigation précédemment créée stockée dans le stockage local HTML5 du navigateur client ou appelle la fonction `queryRemoteInterface()`.
+Pour résumer le code indiqué ci-dessus dans la `jQuery $(document).ready` fonction, une fonction est `viewModel object` créée, puis la `loadNavigationNodes()` fonction sur cet objet est appelée. Cette fonction charge la hiérarchie de navigation précédemment créée stockée dans le stockage local HTML5 du navigateur client ou appelle la fonction `queryRemoteInterface()` .
 
-`QueryRemoteInterface()`génère une demande à l' `getRequest()` aide de la fonction avec le paramètre de requête défini précédemment dans le script, puis retourne des données à partir du serveur. Ces données sont essentiellement un tableau de tous les sites de la collection de sites, représentés par des objets de transfert de données, avec différentes propriétés.
+`QueryRemoteInterface()`génère une demande à l’aide de la `getRequest()` fonction avec le paramètre de requête défini précédemment dans le script, puis retourne des données à partir du serveur. Ces données sont essentiellement un tableau de tous les sites de la collection de sites, représentés par des objets de transfert de données, avec différentes propriétés.
 
-Ces données sont ensuite analysées dans les objets définis `SPO.Models.NavigationNode` précédemment qui utilisent `Knockout.js` pour créer des propriétés observables utilisées par la liaison de données des valeurs dans le code HTML que nous avons défini précédemment.
+Ces données sont ensuite analysées dans les objets définis précédemment `SPO.Models.NavigationNode` qui utilisent `Knockout.js` pour créer des propriétés observables utilisées par la liaison de données des valeurs dans le code HTML que nous avons défini précédemment.
 
 Les objets sont ensuite placés dans un tableau de résultats. Ce tableau est analysé dans JSON à l’aide du masquage et stocké dans le stockage du navigateur local pour de meilleures performances lors des prochains chargement de la page.
 
@@ -474,9 +476,9 @@ Le [code ci-dessus](#about-the-javascript-file) présente les dépendances suiva
 
 - jQueryhttps://jquery.com/
 - KnockoutJS -https://knockoutjs.com/
-- Linq. js- https://linqjs.codeplex.com/ou github.com/neuecc/Linq.js
+- Linq.js- https://linqjs.codeplex.com/ ou github.com/neuecc/linq.js
 
-La version actuelle de LinqJS ne contient pas la méthode ByHierarchy utilisée dans le code ci-dessus et rompt le code de navigation. Pour résoudre ce problème, ajoutez la méthode suivante au fichier Linq. js avant la ligne `Flatten: function ()`.
+La version actuelle de LinqJS ne contient pas la méthode ByHierarchy utilisée dans le code ci-dessus et rompt le code de navigation. Pour résoudre ce problème, ajoutez la méthode suivante au fichier Linq.js avant la ligne `Flatten: function ()` .
 
 ```javascript
 ByHierarchy: function(firstLevel, connectBy, orderBy, ascending, parent) {

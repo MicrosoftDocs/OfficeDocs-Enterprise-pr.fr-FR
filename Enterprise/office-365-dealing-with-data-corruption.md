@@ -14,15 +14,16 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Une explication de la corruption des données dans Microsoft 365, ainsi que les efforts de prévention et de récupération de Microsoft.
-ms.openlocfilehash: 674f2a3a026c5706f5c3a23db6e2d968ed815656
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.custom: seo-marvel-apr2020
+description: Cet article décrit la corruption des données dans Microsoft 365, ainsi que les efforts entrepris par Microsoft pour prévenir et récupérer les données.
+ms.openlocfilehash: dc8e865a69e110fa0a68e6cd9d9f4d6b45d43d71
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998448"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606630"
 ---
-# <a name="dealing-with-data-corruption-in-microsoft-365"></a>Gestion de l’endommagement des données dans Microsoft 365
+# <a name="dealing-with-data-corruption-in-microsoft-365"></a>Gérer l’altération des données dans Microsoft 365
 
 L’un des aspects les plus délicats de l’exécution d’un service Cloud de grande envergure est la façon de gérer l’altération des données, compte tenu du volume important de données et des systèmes indépendants. La corruption des données peut être causée par :
 

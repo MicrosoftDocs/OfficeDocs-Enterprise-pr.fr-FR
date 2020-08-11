@@ -15,6 +15,7 @@ ms.custom:
 - globalemailconfig
 - configssc
 - AppDefToBDC
+- seo-marvel-apr2020
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection:
@@ -35,17 +36,17 @@ search.appverid:
 - BSA160
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
-description: Le 10 octobre 2017, la prise en charge de SharePoint Server 2007 s’est terminée. Lisez cet article pour en savoir plus sur les options de mise à niveau, la résolution des problèmes, les meilleures pratiques, la configuration système requise, les étapes de mise à niveau et comment obtenir de l’aide des partenaires Microsoft.
-ms.openlocfilehash: 561619559fd43131518a0032d3b28dc556f2d8b0
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Le 10 octobre 2017, la prise en charge de SharePoint Server 2007 s’est terminée. Dans cet article, Découvrez les options de mise à niveau, de migration et de support.
+ms.openlocfilehash: f1473e101d33b0e58ffd300d61ed92cc19c0a9f4
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44996528"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46603716"
 ---
 # <a name="sharepoint-server-2007-end-of-support-roadmap"></a>Feuille de route pour la fin de l’assistance pour SharePoint Server 2007
 
-*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 Le **10 octobre 2017**, Microsoft Office SharePoint Server 2007 est parvenu à la fin du support. Si vous n’avez pas commencé la migration de SharePoint Server 2007 vers Microsoft 365 ou une version plus récente de SharePoint Server en local, il est maintenant temps de commencer la planification. Cet article détaille les ressources pour aider les utilisateurs à migrer des données vers SharePoint Online ou à mettre à niveau votre serveur SharePoint Server local. 
   
@@ -72,7 +73,7 @@ Pour plus d’informations sur les serveurs Office 2007 qui arrivent à la fin d
 
 Votre première étape doit être le [site du cycle de vie du produit](https://go.microsoft.com/fwlink/?linkid=843148). Si vous disposez d’un produit Microsoft local qui est âgé, vous devez vérifier sa fin de la date de prise en charge, de sorte qu’une année ou une durée telle que vos migrations soient généralement nécessaires, vous pouvez planifier la mise à niveau ou les migrations. Lors du choix de l’étape suivante, il peut être utile de réfléchir sur ce qui serait suffisamment efficace, mieux et mieux en ce qui concerne les fonctionnalités du produit. Voici un exemple :
   
-|**Bon**|**Parfaite**|**Idéale**|
+|**Good**|**Parfaite**|**Idéale**|
 |:-----|:-----|:-----|
 |SharePoint Server 2010  <br/> |SharePoint Server 2013  <br/> |SharePoint Online  <br/> |
 ||Environnement hybride SharePoint  <br/> |SharePoint Server 2016  <br/> |

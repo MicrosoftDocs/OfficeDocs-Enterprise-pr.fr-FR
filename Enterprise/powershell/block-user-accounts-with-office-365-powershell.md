@@ -16,18 +16,19 @@ f1.keywords:
 ms.custom:
 - Ent_Office_Other
 - PowerShell
+- seo-marvel-apr2020
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
-description: Explique comment utiliser PowerShell pour bloquer et débloquer l’accès aux comptes Microsoft 365.
-ms.openlocfilehash: c18c0248c51096ab089b16b2e9e31eb0929de443
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Cet article explique comment utiliser PowerShell pour bloquer et débloquer l’accès aux comptes Microsoft 365.
+ms.openlocfilehash: 1d32554642f29b4548e2525135d20967ba6b0f16
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230890"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606430"
 ---
 # <a name="block-microsoft-365-user-accounts-with-powershell"></a>Bloquer les comptes d’utilisateur Microsoft 365 avec PowerShell
 
-*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 Le blocage de l’accès à un compte Microsoft 365 empêche quiconque d’utiliser le compte pour se connecter et accéder aux services et données de votre organisation Microsoft 365. Vous pouvez utiliser PowerShell pour bloquer l’accès à un ou plusieurs comptes d’utilisateurs.
 
@@ -170,8 +171,8 @@ Pour débloquer les comptes indiqués dans le fichier texte, exécutez la comman
 
 ## <a name="see-also"></a>Voir aussi
 
-[Gérer les comptes d’utilisateur, les licences et les groupes Microsoft 365 avec PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Gérer les comptes d’utilisateurs, les licences et les groupes Microsoft 365 avec PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Gérer Microsoft 365 avec PowerShell](manage-office-365-with-office-365-powershell.md)
+[Gestion de Microsoft 365 à l’aide de PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Prise en main de PowerShell pour Microsoft 365](getting-started-with-office-365-powershell.md)
+[Prise en main de PowerShell pour Microsoft 365](getting-started-with-office-365-powershell.md)

@@ -11,15 +11,17 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Ent_Solutions
+ms.custom:
+- Ent_Solutions
+- seo-marvel-apr2020
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
-description: 'Résumé : créez et configurez les serveurs AD FS (Active Directory Federation Services) pour votre authentification fédérée haute disponibilité pour Microsoft 365 dans Microsoft Azure.'
-ms.openlocfilehash: e4fa1ac49d9c9a60567d587416347093ff0784c9
-ms.sourcegitcommit: d8ca7017b25d5ddc2771e662e02b62ff2058383b
+description: Découvrez comment créer et configurer les serveurs AD FS pour votre authentification fédérée haute disponibilité pour Microsoft 365 dans Microsoft Azure.
+ms.openlocfilehash: 3b4805dd29eb62b337cb455530615fd9c13c0f5c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "45102512"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606370"
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>Authentification fédérée haute disponibilité, phase 3 : Configurer les serveurs AD FS
 

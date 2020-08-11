@@ -18,17 +18,18 @@ search.appverid:
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 f1.keywords:
 - NOCSH
-description: Fin de la prise en charge pour SharePoint 2010 et SharePoint Server 2010 le 13 avril 2021. Utilisez cet article pour effectuer une mise à niveau vers SharePoint Online ou une version plus récente de SharePoint Server en local.
-ms.openlocfilehash: 91083cbf64bde3e083ba87e2867e7e1a9e22628c
-ms.sourcegitcommit: d8ca7017b25d5ddc2771e662e02b62ff2058383b
+description: Trouvez des informations et des ressources à mettre à niveau à partir de SharePoint 2010 et SharePoint Server 2010, en prenant en charge les deux à la fois le 13 octobre 2020.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 6382c375439acaf8b978f6ef5c2813eaebc0701d
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "45102582"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46603616"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Mise à jour à jour de SharePoint 2010
 
-*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 Microsoft SharePoint 2010 et SharePoint Server 2010 vont atteindre la fin de la prise en charge le **13 avril 2021**. Cet article détaille les ressources pour vous aider à migrer vos données SharePoint Server 2010 existantes vers SharePoint Online dans Microsoft 365 ou mettre à niveau votre environnement SharePoint Server 2010 sur site.
   
@@ -55,7 +56,7 @@ Tout d’abord, vérifiez la date à laquelle le support se termine sur le [site
   
 Cette matrice permet de tracer un cours lorsqu’il s’agit de migrer les fonctionnalités du produit et les données utilisateur :
   
-|**Fin du produit de support**|**Bon**|**Idéale**|
+|**Fin du produit de support**|**Good**|**Idéale**|
 |:-----|:-----|:-----|
 |SharePoint Server 2010  <br/> |SharePoint Server 2013 (en local)  <br/> |SharePoint Online  <br/> |
 ||SharePoint Server 2013 hybride avec SharePoint Online  <br/> |SharePoint Server 2016 (en local)  <br/> |

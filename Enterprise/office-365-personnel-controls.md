@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 'Résumé : vue d’ensemble des pratiques de filtrage des personnes Microsoft pour Microsoft 365.'
-ms.openlocfilehash: 337e9c1d92310d430c273683570a622a9fc3c9a5
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: Dans cet article, vous trouverez une vue d’ensemble des pratiques de filtrage du personnel Microsoft pour Microsoft 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 52b872d9b8b49b0ed72cdfb0d879712a6e129a33
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44775093"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605486"
 ---
 # <a name="microsoft-365-personnel-controls"></a>Contrôles de personnel Microsoft 365
 
@@ -49,7 +50,7 @@ Dans la mesure autorisée par la loi locale, les vérifications sont les suivant
 
 - Numéro de sécurité sociale aux États-Unis ou confirmation de l’identité d’un document publié par le gouvernement en Europe, au Moyen-Orient et en Asie.
 - Historique pénal Vérifiez qu’il y a sept ans pour crimes et délits infractions aux niveaux État, comté et local, et au niveau fédéral, le cas échéant, aux États-Unis. Une vérification de l’historique pénal international (en fonction de la législation locale) est applicable aux régions situées en dehors des États-Unis.
-- Confirmation du niveau le plus élevé de la réalisation scolaire
+- Confirmation du niveau de réussite scolaire le plus élevé
 - historique des emplois de 5 ans
 - Contrôle des sanctions globales et de l’exécution, y compris la liste de contrôle des biens étrangers (OFAC), de la liste des bureaux de l’industrie et de la sécurité (BRI), ainsi que des contrôles commerciaux de la défense DDTC.
 
@@ -65,8 +66,8 @@ Dans la mesure permise par les vérifications de dépistage du fournisseur de lo
 
 - Numéro de sécurité sociale aux États-Unis ou confirmation de l’identité d’un document publié par le gouvernement en Europe, au Moyen-Orient et en Asie.
 - Historique pénal Vérifiez qu’il y a sept ans pour crimes et délits infractions aux niveaux État, comté et local, et au niveau fédéral, le cas échéant, aux États-Unis. Une vérification de l’historique pénal international (en fonction de la législation locale) est applicable aux régions situées en dehors des États-Unis.
-- Confirmation du niveau le plus élevé de la réalisation scolaire
-- Contrôle des sanctions globales et de l’exécution
+- Confirmation du niveau de réussite scolaire le plus élevé
+- Sanctions mondiales et contrôle de l’exécution
 
 Aux États-Unis avant chaque membre de l’équipe fournisseurs à exécuter pour Microsoft, dans la mesure autorisée par la loi locale, le fournisseur effectuera une pré-mise en place, et pour certains placements, un examen de fond périodique, à l’aide du fournisseur de services de vérification en arrière-plan préféré de Microsoft, qui confirmera à Microsoft que le filtrage répond à la norme Microsoft. 
 

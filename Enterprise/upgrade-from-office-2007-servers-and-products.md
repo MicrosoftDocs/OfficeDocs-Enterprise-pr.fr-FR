@@ -22,17 +22,18 @@ search.appverid:
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
-description: La prise en charge pour les serveurs et les applications clientes Office 2007 et les accords de prise en charge personnalisée n’est pas disponible. Utilisez cet article pour commencer à planifier votre mise jour dès maintenant.
-ms.openlocfilehash: 79d017c92461b6c53e8d014ba9071957d70157fd
-ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
+description: Cet article fournit des ressources pour vous aider à effectuer une mise à niveau à partir de serveurs et clients Office 2007, car la prise en charge d’Office 2007 s’est terminée.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 21147ccd027ba0492ced6078f91932acc3bb958c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44906227"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605870"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Ressources pour vous aider à effectuer une mise à niveau à partir de serveurs et clients Office 2007
 
-*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 Si vous utilisez les produits et services Office 2007, la prise en charge de ces applications a pris fin. Pendant que vous planifiez votre mise à niveau, il est très utile de passer au Cloud Microsoft, en commençant par Microsoft 365. Utilisez cet article comme point de départ pour passer en revue vos options et planifier votre mise à niveau.
       

@@ -11,22 +11,24 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - BCS160
 ms.assetid: 170e96ea-d65d-4e51-acac-1de56abe39b9
-description: 'Résumé : fournit des informations sur la façon de rapprocher le nombre correct de clients que vous pouvez utiliser par adresse IP au sein de votre organisation à l’aide de la traduction d’adresses réseau (NAT).'
-ms.openlocfilehash: d1f6762fcb21e6c310c790f6b235e5a51db4b1f2
-ms.sourcegitcommit: 35655e2b098e46822c14d98583cc47b87516a629
+description: Cet article fournit des informations sur la façon de se rapprocher du nombre de clients que vous pouvez utiliser par adresse IP dans votre organisation à l’aide de la traduction d’adresses réseau.
+ms.openlocfilehash: f5914efb8042076e3ae7cad0d5fcb1f7eb97c12a
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45201608"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606770"
 ---
 # <a name="nat-support-with-office-365"></a>Prise en charge de la traduction d'adresses réseau (NAT) avec Office 365
 
-*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 Auparavant, vous avez indiqué que le nombre maximal de clients Exchange à utiliser par adresse IP pour se connecter à Office 365 était environ 2 000 clients par port réseau.
   

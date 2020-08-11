@@ -17,14 +17,15 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 - O365ITProTrain
+- seo-marvel-apr2020
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
-description: Découvrez comment utiliser PowerShell pour Microsoft 365 pour supprimer des comptes d’utilisateurs.
-ms.openlocfilehash: 62d9dee2e6b0d2054116e5e5f005b5928112186d
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Dans cet article, Découvrez comment utiliser des modules différents dans PowerShell pour supprimer des comptes d’utilisateur Microsoft 365.
+ms.openlocfilehash: d34201e2ef467ab4250ccde46a3d082b1b927d61
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230710"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605980"
 ---
 # <a name="delete-microsoft-365-user-accounts-with-powershell"></a>Supprimer des comptes d’utilisateur Microsoft 365 avec PowerShell
 
@@ -117,8 +118,8 @@ Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
 
 ## <a name="see-also"></a>Voir aussi
 
-[Gérer les comptes d’utilisateur, les licences et les groupes Microsoft 365 avec PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Gérer les comptes d’utilisateurs, les licences et les groupes Microsoft 365 avec PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Gérer Microsoft 365 avec PowerShell](manage-office-365-with-office-365-powershell.md)
+[Gestion de Microsoft 365 à l’aide de PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Prise en main de PowerShell pour Microsoft 365](getting-started-with-office-365-powershell.md)
+[Prise en main de PowerShell pour Microsoft 365](getting-started-with-office-365-powershell.md)

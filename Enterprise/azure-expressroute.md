@@ -13,23 +13,25 @@ ms.collection:
 - Strat_O365_Enterprise
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
-description: Découvrez comment Azure ExpressRoute est utilisé avec Office 365 et comment planifier le projet d’implémentation réseau qui sera requis si vous déployez Azure ExpressRoute pour une utilisation avec Office 365.
-ms.openlocfilehash: 698b8a3ed73bdd96870e017d02f3ac106ae72081
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Découvrez comment utiliser Azure ExpressRoute avec Office 365 et planifier le projet d’implémentation réseau si vous le déployez avec.
+ms.openlocfilehash: 3d74d8b9274aebd92710f859a8c39aed12fe8da2
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230030"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605790"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Azure ExpressRoute pour Office 365
 
-*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 Découvrez comment Azure ExpressRoute est utilisé avec Office 365 et comment planifier le projet d’implémentation réseau qui sera requis si vous déployez Azure ExpressRoute pour une utilisation avec Office 365. Les services d’infrastructure et de plateforme exécutés dans Azure tireront souvent parti de l’architecture réseau et des considérations relatives aux performances. Nous vous recommandons d’utiliser ExpressRoute pour Azure dans ces cas. Les logiciels en tant qu’offres de service comme Office 365 et Dynamics 365 ont été conçus pour être accessibles en toute sécurité et fiabilité via Internet. Vous trouverez des informations sur les performances et la sécurité d’Internet et sur la façon dont vous pouvez envisager d’utiliser Azure ExpressRoute pour Office 365 dans l’article évaluation de la [connectivité réseau office 365](assessing-network-connectivity.md).
 

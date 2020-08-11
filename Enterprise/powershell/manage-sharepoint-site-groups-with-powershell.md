@@ -17,18 +17,19 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 - SPO_Content
+- seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: 'Résumé : utilisez PowerShell pour gérer les groupes de sites SharePoint Online.'
-ms.openlocfilehash: bee1f01ae78ec35d34a6aba0119bba3fbf7eeada
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Dans cet article, vous trouverez des procédures pour l’utilisation de PowerShell pour Microsoft 365 afin de gérer les groupes de sites SharePoint Online.
+ms.openlocfilehash: 5df2b57db4ac57aaf7905346d090ccde2d96a11c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230490"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605900"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-powershell"></a>Gestion des groupes de sites SharePoint Online avec PowerShell
 
-*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 Bien que vous puissiez utiliser le centre d’administration Microsoft 365, vous pouvez également utiliser PowerShell pour Microsoft 365 pour gérer vos groupes de sites SharePoint Online.
 
@@ -38,7 +39,7 @@ Les procédures décrites dans cet article vous obligent à vous connecter à Sh
 
 ## <a name="view-sharepoint-online-with-powershell-for-microsoft-365"></a>Afficher SharePoint Online avec PowerShell pour Microsoft 365
 
-Le centre d’administration SharePoint Online propose des méthodes faciles à utiliser pour la gestion des groupes de sites. Par exemple, supposons que vous souhaitez consulter les groupes et les membres du groupe pour le `https://litwareinc.sharepoint.com/sites/finance` site. Voici ce que vous devez faire :
+Le centre d’administration SharePoint Online propose des méthodes faciles à utiliser pour la gestion des groupes de sites. Par exemple, supposons que vous souhaitez consulter les groupes et les membres du groupe pour le `https://litwareinc.sharepoint.com/sites/finance` site. Voici ce que vous devez faire pour :
 
 1. Dans le centre d’administration SharePoint, cliquez sur **sites actifs**, puis cliquez sur l’URL du site.
 2. Sur la page site, cliquez sur l’icône **paramètres** (située dans l’angle supérieur droit de la page), puis cliquez sur **autorisations de site**.
@@ -99,7 +100,7 @@ foreach ($y in $x)
 
 [Gestion des utilisateurs et des groupes SharePoint Online avec PowerShell](manage-sharepoint-users-and-groups-with-powershell.md)
 
-[Gérer Microsoft 365 avec PowerShell](manage-office-365-with-office-365-powershell.md)
+[Gestion de Microsoft 365 à l’aide de PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Prise en main de PowerShell pour Microsoft 365](getting-started-with-office-365-powershell.md)
+[Prise en main de PowerShell pour Microsoft 365](getting-started-with-office-365-powershell.md)
 

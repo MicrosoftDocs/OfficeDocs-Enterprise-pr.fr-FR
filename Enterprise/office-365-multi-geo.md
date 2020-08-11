@@ -7,18 +7,18 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-f1.keywords:
-- NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.collection: Strat_SP_gtc
 localization_priority: Normal
-description: Développez votre présence Microsoft 365 dans plusieurs régions géographiques avec Microsoft 365 Multi-Geo.
-ms.openlocfilehash: 01683caa3dfebc8331bb0b4b6ba239be2e0d9aaa
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+f1.keywords:
+- NOCSH
+description: Dans cet article, Découvrez comment étendre votre présence Microsoft 365 à plusieurs régions géographiques avec Microsoft 365 multi-géo.
+ms.openlocfilehash: 74fdf77ed28ea443cdb14bd37c2735b3a221e14d
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433805"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605506"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo
 

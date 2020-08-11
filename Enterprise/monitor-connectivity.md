@@ -11,19 +11,21 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
-description: Une fois que vous avez déployé Microsoft 365, vous pouvez maintenir la connectivité de Microsoft 365 à l’aide de certains des outils et techniques ci-dessous. Vous voudrez comprendre les directives officielles en matière de santé et de continuité des services, ainsi que nos meilleures pratiques pour l’utilisation de Microsoft 365 sur un réseau lent.
-ms.openlocfilehash: aa47ff76f70e48285c6ca5f21ffdf30f1db52521
-ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
+description: Dans cet article, vous découvrirez les outils et les techniques que vous pouvez utiliser pour surveiller et gérer la connectivité de Microsoft 365.
+ms.openlocfilehash: 791352910cf82bf4d43543166cb4b1e974f9a238
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46571007"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606860"
 ---
 # <a name="monitor-microsoft-365-connectivity"></a>Surveiller la connectivité de Microsoft 365
 
@@ -39,9 +41,9 @@ Une fois que vous avez déployé Microsoft 365, vous pouvez maintenir la connect
 |**Utiliser Azure AD Connect Health avec AD FS** <br/> |Si vous utilisez les services ADFS (Active Directory Federation Services) pour l’authentification unique avec Microsoft 365, vous pouvez commencer [à utiliser Azure ad Connect Health pour surveiller votre infrastructure AD FS](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect-health-adfs/).  <br/> |
 |**Surveillance par programme de Microsoft 365** <br/> |Consultez nos conseils sur l' [API de gestion de Microsoft 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview).  <br/> |
 
-Voici un bref lien que vous pouvez utiliser pour revenir : [https://aka.ms/monitorconnectivity365](https://aka.ms/monitorconnectivity365)
+Voici un lien que vous pouvez utiliser pour revenir : [https://aka.ms/monitorconnectivity365](https://aka.ms/monitorconnectivity365)
   
-## <a name="see-also"></a>Voir aussi
+## <a name="related-topics"></a>Voir aussi
 
 [Configurer les applications et services d’entreprise Microsoft 365](configure-services-and-applications.md)
   

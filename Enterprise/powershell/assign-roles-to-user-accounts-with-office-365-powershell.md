@@ -17,18 +17,19 @@ ms.custom:
 - O365ITProTrain
 - PowerShell
 - Ent_Office_Other
+- seo-marvel-apr2020
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
-description: 'Résumé : utilisez PowerShell pour Microsoft 365 pour attribuer des rôles aux comptes d’utilisateur.'
-ms.openlocfilehash: 2be491692c23b1f528612cc5c56e041553f80c48
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Dans cet article, Découvrez comment utiliser rapidement et facilement PowerShell pour Microsoft 365 pour attribuer des rôles à des comptes d’utilisateur.
+ms.openlocfilehash: a3e1936dfa685c78f88e4f4333192f9a07de3cec
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230870"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606440"
 ---
 # <a name="assign-roles-to-microsoft-365-user-accounts-with-powershell"></a>Attribuer des rôles à des comptes d’utilisateur Microsoft 365 avec PowerShell
 
-*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 Vous pouvez rapidement et facilement attribuer des rôles à des comptes d’utilisateur à l’aide de PowerShell pour Microsoft 365.
 
@@ -237,6 +238,6 @@ $roleChanges=Import-Csv $fileName | ForEach { Add-MsolRoleMember -RoleMemberEmai
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Gérer les comptes d’utilisateur, les licences et les groupes Microsoft 365 avec PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
-- [Gérer Microsoft 365 avec PowerShell](manage-office-365-with-office-365-powershell.md)
-- [Prise en main de PowerShell pour Microsoft 365](getting-started-with-office-365-powershell.md)
+- [Gérer les comptes d’utilisateurs, les licences et les groupes Microsoft 365 avec PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+- [Gestion de Microsoft 365 à l’aide de PowerShell](manage-office-365-with-office-365-powershell.md)
+- [Prise en main de PowerShell pour Microsoft 365](getting-started-with-office-365-powershell.md)

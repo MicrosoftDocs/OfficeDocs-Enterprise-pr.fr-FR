@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 'Résumé : explication de l’isolation du client dans la vidéo Office 365.'
-ms.openlocfilehash: d3d7f71260d74d598a8cc72962c2ab1ea1f2e6c3
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Dans cet article, vous trouverez une explication sur la façon dont l’isolation du client conserve les vidéos stockées de chaque client séparément dans Office 365 vidéo.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: dc341241308a9e54dae2894587ef0fb6b5db0148
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998697"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605576"
 ---
 # <a name="tenant-isolation-in-office-365-video"></a>Isolation du client dans Office 365 Video
 

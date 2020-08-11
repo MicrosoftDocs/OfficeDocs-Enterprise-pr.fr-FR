@@ -13,13 +13,14 @@ search.appverid:
 ms.assetid: a6d6ba01-2562-4c3d-a8f1-78748dd506cf
 f1.keywords:
 - NOCSH
-description: Cet article contient des informations sur l’amélioration des performances de téléchargement de messages dans Outlook sur le Web.
-ms.openlocfilehash: 49b570da9092ce4fc857757a7da72b2a81fd0090
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Cet article contient des informations sur l’utilisation de la la messagerie instantanée épuré pour améliorer les performances de téléchargement des messages dans Outlook sur le Web.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: e9ca2f90c8798c144f2763106c4c9ca9f57e9df1
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843905"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46603606"
 ---
 # <a name="use-lean-popouts-to-reduce-memory-used-when-reading-mail-messages"></a>Utiliser le la messagerie instantanée épuré pour réduire la mémoire utilisée lors de la lecture des messages électroniques
 
@@ -32,7 +33,7 @@ En tant qu’administrateur général Office 365, vous pouvez configurer Outlook
   
 Ces fonctionnalités continueront à fonctionner dans la fenêtre principale, mais ne sont pas disponibles dans le la messagerie instantanée épuré :
   
-- Compléments Outlook
+- Compléments Outlook
   
 - Présence de Skype entreprise
   

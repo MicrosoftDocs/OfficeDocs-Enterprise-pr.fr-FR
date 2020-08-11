@@ -11,23 +11,25 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
-description: ExpressRoute pour Office 365 fournit un autre chemin de routage vers de nombreux services 365 Internet. L’architecture de ExpressRoute pour Office 365 est basée sur des préfixes IP publics publicitaires des services Office 365 déjà accessibles sur Internet dans vos circuits ExpressRoute mis en service pour la redistribution ultérieure de ces préfixes IP dans votre réseau. Avec ExpressRoute, vous activez de manière efficace plusieurs chemins d’accès de routage, via Internet et via ExpressRoute, pour de nombreux services Office 365. Cet état de routage sur votre réseau peut représenter une modification significative de la façon dont la topologie de votre réseau interne est conçue.
-ms.openlocfilehash: 925aeb2db9350eab9abb70bf3e3d6957608f618b
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Découvrez comment implémenter ExpressRoute pour Office 365, qui fournit un autre chemin de routage à de nombreux services 365 Internet.
+ms.openlocfilehash: 3495b66556a8bd8d9aa16aaa4a3283e6017e883c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230300"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605696"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Implémentation d’ExpressRoute pour Office 365
 
-*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 ExpressRoute pour Office 365 fournit un autre chemin de routage vers de nombreux services 365 Internet. L’architecture de ExpressRoute pour Office 365 est basée sur des préfixes IP publics publicitaires des services Office 365 déjà accessibles sur Internet dans vos circuits ExpressRoute mis en service pour la redistribution ultérieure de ces préfixes IP dans votre réseau. Avec ExpressRoute, vous activez de manière efficace plusieurs chemins d’accès de routage, via Internet et via ExpressRoute, pour de nombreux services Office 365. Cet état de routage sur votre réseau peut représenter une modification significative de la façon dont la topologie de votre réseau interne est conçue.
   

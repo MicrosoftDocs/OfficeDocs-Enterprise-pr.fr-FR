@@ -14,16 +14,17 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_Architecture
+- seo-marvel-apr2020
 ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
-description: "Résumé : découvrez les concepts de base de l’architecture cloud pour l’identité, la sécurité, la mise en réseau et l’hybridation Microsoft. Étudiez les recommandations normatives pour la protection des fichiers, des identités et des appareils lors de l'utilisation du cloud de Microsoft."
-ms.openlocfilehash: f19a84297de0ff809979bc5735eb8c19cfbb7f57
-ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
+description: Dans cet article, vous trouverez des ressources pour en savoir plus sur l’architecture informatique du Cloud Microsoft, ainsi que des recommandations relatives à la protection & procédures de déploiement.
+ms.openlocfilehash: 644dc437fe1d0c3dc60c3e191a98ee52e761e03a
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46592178"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605676"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Ressources relatives à l’architecture informatique du cloud Microsoft
 

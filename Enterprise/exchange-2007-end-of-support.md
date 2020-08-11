@@ -12,17 +12,18 @@ ms.collection: Ent_O365
 ms.assetid: c3024358-326b-404e-9fe6-b618e54d977d
 f1.keywords:
 - NOCSH
-description: Le 11 avril 2017, Exchange Server 2007 est parvenu à la fin du support. Si vous n’avez pas encore commencé la migration d’Exchange 2007 vers Microsoft 365, Office 365 ou Exchange 2016, vous pouvez maintenant commencer votre planification.
-ms.openlocfilehash: 7228d123a8f4fe21c3d92753fe3f60a7d2e4f67b
-ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
+ms.custom: seo-marvel-apr2020
+description: Découvrez vos options une fois qu’Exchange Server 2007 a atteint la fin du support et démarré la migration vers Microsoft 365, Office 365 ou Exchange 2016.
+ms.openlocfilehash: c77d3de47ea917730874253c286565971d80ea48
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45052436"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606400"
 ---
 # <a name="exchange-2007-end-of-support-roadmap"></a>Feuille de route pour la fin de l’assistance pour Exchange 2007
 
-*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 Le **11 avril 2017**, Exchange Server 2007 est parvenu à la fin du support. Si vous n’avez pas encore commencé la migration d’Exchange 2007 vers Microsoft 365, Office 365 ou Exchange 2016, vous pouvez maintenant commencer votre planification. 
   
@@ -52,7 +53,7 @@ Maintenant qu’Exchange 2007 a atteint sa fin de prise en charge, nous vous rec
     
 Les sections suivantes explorent chaque option plus en détail.
   
-### <a name="migrate-to-microsoft-365"></a>Migrer vers Microsoft 365
+### <a name="migrate-to-microsoft-365"></a>Migrer vers Microsoft 365
 
 La migration de votre courrier électronique vers Microsoft 365 est l’option la plus simple et la plus simple pour vous aider à supprimer votre déploiement Exchange 2007. Avec une migration vers Microsoft 365, vous pouvez passer un seul tronçon de la technologie 10 ans à des fonctionnalités de pointe, telles que :
   

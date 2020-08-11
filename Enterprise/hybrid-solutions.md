@@ -13,15 +13,17 @@ search.appverid:
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Ent_Solutions
+ms.custom:
+- Ent_Solutions
+- seo-marvel-apr2020
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
-description: "Résumé : Utilisez les articles suivants pour déployer les charges de travail d'Office Server dans Microsoft Azure."
-ms.openlocfilehash: 64d74e1d518cde824289a8c3ab9cee15b6b34ad5
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Fournit une liste de liens vers des informations utiles pour le déploiement de charges de travail Office Server dans Microsoft Azure.
+ms.openlocfilehash: abefa94dd193286021fd187499eac28b6bc41f87
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229950"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605720"
 ---
 # <a name="hybrid-solutions"></a>Solutions hybrides
 
@@ -46,7 +48,7 @@ Pour les charges de travail SharePoint Server 2013 dans Azure :
 - [Sites Internet dans Microsoft Azure qui utilisent SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
   
   
-## <a name="see-also"></a>Voir aussi
+## <a name="related-topics"></a>Voir aussi
 
 [Adoption du cloud et solutions hybrides](cloud-adoption-and-hybrid-solutions.yml)
   

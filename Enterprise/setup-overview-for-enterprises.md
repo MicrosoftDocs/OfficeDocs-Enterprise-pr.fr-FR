@@ -16,15 +16,17 @@ ms.collection:
 - M365-subscription-management
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
-description: Ces étapes de présentation sont destinées à vous aider à configurer votre réseau, à créer vos identités, à déployer des applications Microsoft 365 pour l’entreprise, à migrer vos données et à aider les personnes de votre organisation à commencer à utiliser Microsoft 365.
-ms.openlocfilehash: 274cd4ae285ae97825b4d46a125cd9eeecf83312
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+description: Ces étapes de présentation sont destinées à vous aider à configurer votre réseau, à créer vos identités, à déployer des applications Microsoft 365 et à migrer vos données.
+ms.openlocfilehash: aa1e4a364843ab6c502e037d464517b643dddbdc
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735942"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605126"
 ---
 # <a name="deploy-microsoft-365-enterprise-for-your-organization"></a>Déployer Microsoft 365 entreprise pour votre organisation
 

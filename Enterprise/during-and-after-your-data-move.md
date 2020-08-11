@@ -14,13 +14,14 @@ localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 f1.keywords:
 - NOCSH
-description: Les déplacements de données sont des opérations principales n'ayant que peu d'impact sur les utilisateurs finals. Aucune action de votre part n'est requise lorsque Microsoft déplace chaque service et les données associées pour votre client vers une nouvelle zone géographique de centres de données. Le transfert de données et la validation se déroulent en arrière-plan à l'avance, et n'ont qu'une incidence minimale sur les utilisateurs.
-ms.openlocfilehash: d07c9c62a778ce23d2e088ddeb8b34346911a19a
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: Les déplacements de données sont des opérations principales qui se produisent lorsque Microsoft déplace des services et des données associées pour votre client vers une nouvelle région de centre de données.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 6dbfbd9f33aba84086b257ce5a93f01bb707a54c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774489"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606410"
 ---
 # <a name="during-and-after-your-data-move"></a>Pendant et après le déplacement de vos données
 
@@ -74,7 +75,7 @@ Lors du déplacement de SharePoint Online, les données des services suivants so
     
 - Office dans le navigateur
     
-- Applications Microsoft 365 pour les grandes entreprises
+- Microsoft 365 Apps for enterprise
     
 - Visio Pro pour Microsoft 365
     
@@ -88,7 +89,7 @@ Une fois que nous aurons déplacé vos données SharePoint Online, vous pourrez 
     
 - Nous supprimons les copies transcodées du centre de données précédent et les transcodons à nouveau dans le nouveau centre de données.
     
-### <a name="search"></a>Rechercher
+### <a name="search"></a>Recherche
 
 Dans le cadre du déplacement de vos données SharePoint Online, nous migrons vos paramètres de recherche et d'index vers un nouvel emplacement. Jusqu'à la **fin** du déplacement de vos données SharePoint Online, nous continuons de desservir vos utilisateurs depuis l'index situé dans l'emplacement d'origine. Dans le nouvel emplacement, la fonction recherche démarre automatiquement une analyse de votre contenu une fois le déplacement de vos données SharePoint Online terminé. À ce moment-là, nous desservirons vos utilisateurs depuis l'index migré. Les modifications apportées à votre contenu après la migration ne sont pas prises en compte dans l'index migré tant que l'analyse ne les a pas récupérées. La plupart des clients ne remarquent pas que les résultats proposent des contenus moins récents immédiatement après la migration de leurs données SharePoint Online, mais certains peuvent s'en apercevoir au cours des 24-48 premières heures d'utilisation. 
   

@@ -11,16 +11,18 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365_Setup
+ms.custom:
+- Adm_O365_Setup
+- seo-marvel-apr2020
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
-description: Les applications Office pour Mac fournissent une expérience d’application native sur la plateforme macOS. Chaque application est conçue pour fonctionner dans un grand nombre de scénarios, dont les États quand aucun accès réseau n’est disponible. Lorsqu’un ordinateur est connecté à un réseau, les applications se connectent automatiquement à une série de services Web pour offrir des fonctionnalités améliorées. Cet article décrit les points de terminaison et les URL que les applications essaient d’atteindre, ainsi que les services fournis. Ces informations sont utiles lors de la résolution des problèmes de configuration réseau et de la définition d’une stratégie pour les serveurs proxy réseau. Les informations de cet article sont destinées à compléter l’article sur les plages d’adresses et l’URL Office 365.
-ms.openlocfilehash: ee854aef417c674073b947940b26cddeafb16d00
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: Cet article décrit les points de terminaison et les URL que les applications Office pour Mac essaient d’atteindre, ainsi que les services fournis.
+ms.openlocfilehash: 70b2da671b590dbe0c7572eebd6d96e0970532e9
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774949"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606720"
 ---
 # <a name="network-requests-in-office-for-mac"></a>Requêtes réseau dans Office pour Mac
 
@@ -159,7 +161,7 @@ Les points de terminaison réseau suivants s’appliquent uniquement à l’abon
 |:-----|:-----|:-----|:-----|
 |```https://pptsgs.officeapps.live.com/```  <br/> |P  <br/> |ADMISSIBLE  <br/> |Service Web du concepteur PowerPoint  <br/> |
    
- **Démarrage rapide de PowerPoint**
+ **Aide au démarrage de PowerPoint**
   
 Les points de terminaison réseau suivants s’appliquent uniquement à l’abonnement Microsoft 365.
   

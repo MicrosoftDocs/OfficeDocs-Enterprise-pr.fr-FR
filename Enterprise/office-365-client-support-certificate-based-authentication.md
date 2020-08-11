@@ -14,17 +14,18 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: Prise en charge des applications clientes Microsoft 365 pour l’authentification basée sur les certificats.
-ms.openlocfilehash: a174e24c31e9ad2688ead557c29c3fecdac82a56
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Dans cet article, vous trouverez des détails sur la prise en charge de l’application cliente Microsoft 365 pour l’authentification basée sur les certificats..
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 759979ac7236ff4a6cf4c77ab52fff9b472b84ec
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998596"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606670"
 ---
 # <a name="microsoft-365-client-app-support--certificate-based-authentication"></a>Prise en charge des applications clientes Microsoft 365 — authentification basée sur les certificats
 
-*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 L’authentification basée sur les certificats vous permet de vous authentifier auprès d’Azure Active Directory avec un certificat client sur des appareils Windows, Android ou iOS. La configuration de cette fonctionnalité élimine le besoin d’entrer un nom d’utilisateur et un mot de passe dans certains messages et applications Microsoft Office sur votre appareil mobile.
 

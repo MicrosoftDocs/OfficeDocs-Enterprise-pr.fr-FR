@@ -14,13 +14,15 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 'Résumé : vue d’ensemble des pratiques de contrôle technologique de Microsoft pour Microsoft 365.'
-ms.openlocfilehash: ef17d00cdeac4a5c7fa9dd1b2d5b5a644bb62ddb
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.custom:
+- seo-marvel-apr2020
+description: Cet article fournit une vue d’ensemble des outils et des technologies utilisés par Microsoft pour le contrôle de technologie dans Microsoft 365.
+ms.openlocfilehash: 4944fcdac1142344178d289be1e5699b80b47683
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774849"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606270"
 ---
 # <a name="microsoft-365-technology-controls"></a>Contrôles technologiques Microsoft 365 
 

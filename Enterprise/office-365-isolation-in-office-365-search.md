@@ -1,5 +1,5 @@
 ---
-title: Isolation du client dans Microsoft 365 Search
+title: Isolation du client dans Microsoft 365 Search
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,15 +14,16 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 'Résumé : explication de l’isolation du client dans Microsoft 365 Search.'
-ms.openlocfilehash: 2c57b5610fd1a59f2cff2001981e77e354226452
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Dans cet article, vous trouverez une explication sur le fonctionnement de l’isolation du client pour séparer les données du client dans Microsoft 365 Search.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: b887088799c83422a6bc5797a76dde73a58e2f29
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998254"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605586"
 ---
-# <a name="tenant-isolation-in-microsoft-365-search"></a>Isolation du client dans Microsoft 365 Search
+# <a name="tenant-isolation-in-microsoft-365-search"></a>Isolation du client dans Microsoft 365 Search
 
 La recherche SharePoint Online utilise un modèle de séparation des clients qui équilibre l’efficacité des structures de données partagées avec une protection contre la fuite d’informations entre les locataires. Ce modèle empêche les fonctionnalités de recherche de :
 

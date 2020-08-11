@@ -1,5 +1,5 @@
 ---
-title: Gérer les clients Microsoft 365 avec Windows PowerShell pour les partenaires avec autorisations d’accès délégué
+title: Gérer les clients Microsoft 365 avec Windows PowerShell pour les partenaires DAP
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,19 +14,19 @@ ms.collection:
 - M365-subscription-management
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
-description: 'Résumé : utilisez PowerShell pour Microsoft 365 pour gérer vos locations de client.'
-ms.openlocfilehash: 31ce5b9a7bdfa50234c76be65eaeb99d6d199136
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Dans cet article, Découvrez comment utiliser PowerShell pour Microsoft 365 pour gérer vos locations de client.
+ms.openlocfilehash: b1e0459b906bd0a06758147923dff0dcc0af1b3e
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230590"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605940"
 ---
 # <a name="manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Gérer les clients Microsoft 365 avec Windows PowerShell pour les partenaires avec autorisations d’accès délégué
 
-*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 Windows PowerShell permet aux partenaires de syndication et de fournisseur de solutions Cloud (CSP) d’administrer et de signaler facilement les paramètres de location des clients qui ne sont pas disponibles dans le centre d’administration 365 de Microsoft. Notez que les autorisations administrer de la part de (administrateur) sont requises pour le compte d’administrateur partenaire afin de se connecter à ses clients.
   

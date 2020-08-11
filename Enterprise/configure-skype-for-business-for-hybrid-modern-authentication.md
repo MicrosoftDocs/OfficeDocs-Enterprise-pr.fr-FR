@@ -15,17 +15,18 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: L’authentification moderne est une méthode de gestion des identités qui offre une authentification et une autorisation utilisateur plus sécurisées, est disponible pour Skype entreprise Server local et Exchange Server local, ainsi que pour les hybrides Skype entreprise mixtes.
-ms.openlocfilehash: 6415fe374f63093b44ebacc125dc40c9ea70e898
-ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
+description: Découvrez comment configurer Skype entreprise en local pour utiliser l’authentification moderne hybride (HMA) de manière à sécuriser l’authentification et l’autorisation des utilisateurs.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: e82325281341d35454161f03873acc30898ad536
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45052507"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605760"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Comment configurer Skype Entreprise en local pour utiliser l’authentification moderne hybride
 
-*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 L’authentification moderne est une méthode de gestion des identités qui offre une authentification et une autorisation utilisateur plus sécurisées, est disponible pour Skype entreprise Server local et Exchange Server local, ainsi que pour les hybrides Skype entreprise mixtes.
   
@@ -73,7 +74,7 @@ Comme vous pouvez le constater, il y a quatre emplacements différents pour acti
   
 Consultez la rubrique relative à la [prise en charge de Skype entreprise avec ma](https://technet.microsoft.com/library/mt803262.aspx) pour les topologies prises en charge.
   
- **Important** Vérifiez que vous avez rempli toutes les conditions préalables avant de commencer. Ces informations s’affichent [ici](hybrid-modern-auth-overview.md).
+ **Important** Vérifiez que vous avez rempli toutes les conditions préalables avant de commencer. Ces informations s’affichent dans la [rubrique vue d’ensemble de l’authentification moderne hybride et conditions préalables](hybrid-modern-auth-overview.md).
   
 ## <a name="collect-all-hma-specific-info-youll-need"></a>Collecter toutes les informations propres à la HMA
 

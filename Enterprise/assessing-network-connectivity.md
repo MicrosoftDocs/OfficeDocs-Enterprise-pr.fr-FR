@@ -11,23 +11,25 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
 description: Microsoft 365 est conçu pour permettre aux clients du monde entier de se connecter au service à l’aide d’une connexion Internet. À mesure que le service évolue, la sécurité, les performances et la fiabilité de Microsoft 365 sont améliorées en fonction des clients qui utilisent Internet pour établir une connexion au service.
-ms.openlocfilehash: 0ccf729dc8eddfd99ffc0b70c8ab56e31451be88
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: eae7e56c13ab0d0799226c834dd7d9092c8f9551
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997958"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605800"
 ---
 # <a name="assessing-microsoft-365-network-connectivity"></a>Évaluation de la connectivité réseau Microsoft 365
 
-*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 Microsoft 365 est conçu pour permettre aux clients du monde entier de se connecter au service à l’aide d’une connexion Internet. À mesure que le service évolue, la sécurité, les performances et la fiabilité de Microsoft 365 sont améliorées en fonction des clients qui utilisent Internet pour établir une connexion au service.
   
@@ -107,9 +109,9 @@ Pour plus d’informations sur le test de connectivité de Microsoft 365, consul
   
 Voici un petit lien que vous pouvez utiliser pour revenir : [ https://aka.ms/o365networkconnectivity .](https://aka.ms/o365networkconnectivity)
   
-## <a name="see-also"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
-[Vue d’ensemble de la connectivité réseau Microsoft 365](office-365-networking-overview.md)
+[Vue d’ensemble de la connectivité réseau Microsoft 365](office-365-networking-overview.md)
 
 [Principes de connectivité réseau Microsoft 365](https://aka.ms/o365networkingprinciples)
 
@@ -117,7 +119,7 @@ Voici un petit lien que vous pouvez utiliser pour revenir : [ https://aka.ms/o3
 
 [URL et plages d’adresses IP Office 365](urls-and-ip-address-ranges.md)
 
-[Service web d’URL et d’adresses IP Office 365](office-365-ip-web-service.md)
+[Service web URL et adresses IP Office 365](office-365-ip-web-service.md)
 
 [Réglage des performances et du réseau Microsoft 365](network-planning-and-performance.md)
 

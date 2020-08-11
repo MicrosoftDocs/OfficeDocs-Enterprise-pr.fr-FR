@@ -1,5 +1,5 @@
 ---
-title: Récupération d'urgence SharePoint Server 2013 dans Microsoft Azure
+title: Récupération d’urgence SharePoint Server 2013 dans Microsoft Azure
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -13,15 +13,17 @@ search.appverid:
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Ent_Deployment
+ms.custom:
+- Ent_Deployment
+- seo-marvel-apr2020
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
-description: "Résumé : À l'aide d'Azure, vous pouvez créer un environnement de récupération d'urgence pour votre batterie de serveurs SharePoint locale. Cet article décrit comment concevoir et implémenter cette solution."
-ms.openlocfilehash: 101d87b1a25d2b3ac8a7ae29832e52c805ecdc4c
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Cet article explique comment utiliser Azure pour créer un environnement de récupération d’urgence pour votre batterie de serveurs SharePoint locale.
+ms.openlocfilehash: b4ba92136139d723b26fe89b13f4e43c67f5c2fe
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998166"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606130"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Récupération d’urgence SharePoint Server 2013 dans Microsoft Azure
 
@@ -505,11 +507,11 @@ Au cours des différentes étapes du déploiement, l'équipe de test a d'abord t
   
 Nous avons déployé notre environnement de test en trois étapes :
   
-- Configuration de l'infrastructure hybride
+- Configuration de l’infrastructure hybride
     
 - Configuration de serveurs
     
-- Déploiement des batteries de serveurs SharePoint
+- Déploiement des batteries de serveurs SharePoint
     
 #### <a name="set-up-the-hybrid-infrastructure"></a>Configuration de l’infrastructure hybride
 

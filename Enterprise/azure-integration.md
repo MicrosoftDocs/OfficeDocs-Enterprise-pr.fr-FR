@@ -13,24 +13,26 @@ ms.collection:
 - M365-identity-device-management
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - MED150
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
-description: Votre abonnement Microsoft 365 inclut un abonnement à Azure AD. Intégrez Microsoft 365 à Azure AD si vous voulez une synchronisation de mot de passe ou une authentification unique avec votre environnement local.
-ms.openlocfilehash: d6ef9d05d66709d360c625fd3b47ad142bdde7a0
-ms.sourcegitcommit: 3349fdaff646f5f7d92c22565402dfc22c12d2ed
+description: Intégrez Microsoft 365 à Azure AD si vous voulez une synchronisation de mot de passe ou une authentification unique avec votre environnement local.
+ms.openlocfilehash: 64fcf25c75e636bebf78e9367f4cc68b367548f7
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "44842056"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606100"
 ---
 # <a name="azure-integration-with-microsoft-365"></a>Intégration Azure avec Microsoft 365
 
-*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 Microsoft 365 utilise Azure Active Directory (Azure AD) pour gérer les identités des utilisateurs en arrière-plan. Votre abonnement Microsoft 365 inclut un abonnement gratuit à Azure AD afin que vous puissiez intégrer Microsoft 365 à Azure AD si vous souhaitez synchroniser les mots de passe ou configurer l’authentification unique avec votre environnement local. Vous pouvez également acheter des fonctionnalités avancées pour mieux gérer vos comptes.
   

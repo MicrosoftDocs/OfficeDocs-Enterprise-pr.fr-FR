@@ -9,18 +9,18 @@ ms.topic: article
 ms.service: o365-solutions
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Normal
-description: Découvrez comment administrer des services SharePoint et OneDrive dans un environnement multigéographique.
-ms.openlocfilehash: d66f33152d4960b4a837a1dd401199f3bb56e5b3
-ms.sourcegitcommit: bb122479c3a2757c0a5adde6c9f0c77c75ab3951
+description: Les administrateurs peuvent découvrir comment administrer les services SharePoint et OneDrive dans un environnement multi-géo.
+ms.openlocfilehash: 166aa61b6ef3158c8ff479fd1a93252ef1bc50d7
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46548896"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606110"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Administration d’un environnement multigéographique
 
@@ -36,7 +36,7 @@ BCS, le service Banque d’informations sécurisé et les applications ont des i
 
 ## <a name="ediscovery"></a>eDiscovery 
 
-Par défaut, un responsable ou administrateur d’eDiscovery d’un locataire multigéographique ne peut effectuer une découverte électronique que dans l’emplacement central de ce client. L’administrateur général Microsoft 365 doit affecter les autorisations de gestionnaire eDiscovery pour autoriser d’autres personnes à mettre en place un processus eDiscovery, et affecter un paramètre « Région » dans le filtre de sécurité de conformité correspondant pour définir la région concernée par le processus comme emplacement satellite. Sinon, aucun processus eDiscovery n’est mis en place à l’emplacement satellite. Pour configurer le filtre de sécurité de la conformité pour une région, voir [Configurer l’eDiscovery de Microsoft 365 multigéographique](multi-geo-ediscovery-configuration.md).
+Par défaut, un responsable ou administrateur d’eDiscovery d’un locataire multigéographique ne peut effectuer une découverte électronique que dans l’emplacement central de ce client. L’administrateur général Office 365 doit affecter les autorisations de gestionnaire eDiscovery pour autoriser d’autres personnes à mettre en place un processus eDiscovery, et affecter un paramètre "Région" dans le filtre de sécurité de conformité correspondant pour définir la région concernée par le processus comme emplacement satellite. Sinon, aucun processus eDiscovery n’est mis en place à l’emplacement satellite. Pour configurer le filtre de sécurité de la conformité pour une région, voir [Configurer l’eDiscovery d’Office 365 multigéographique](multi-geo-ediscovery-configuration.md).
 
 ## <a name="exchange-mailboxes"></a>Les boîtes aux lettres Exchange
 

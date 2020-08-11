@@ -1,5 +1,5 @@
 ---
-title: Références de cmdlet pour les services Microsoft 365
+title: Références de cmdlet pour les services Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,19 +11,21 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: ''
+ms.custom:
+- Ent_Office_Other
+- seo-marvel-apr2020
 ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
-description: 'Résumé : Découvrez les rubriques de référence de l’applet de commande Microsoft 365 pour les cmdlets PowerShell pour Azure Active Directory, Exchange Online, SharePoint Online, Skype entreprise Online et la sécurité & la conformité.'
-ms.openlocfilehash: 71259e49fd70c4f3f7d7ebb7332fe75955797335
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Découvrez les rubriques de référence de cmdlet Microsoft 365 PowerShell pour Azure AD, Exchange Online, SharePoint Online, Skype entreprise Online et la sécurité & conformité.
+ms.openlocfilehash: 92423c9bd1f6a977c41d9077ab30122589ae374f
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230860"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606020"
 ---
-# <a name="cmdlet-references-for-microsoft-365-services"></a>Références de cmdlet pour les services Microsoft 365
+# <a name="cmdlet-references-for-microsoft-365-services"></a>Références de cmdlet pour les services Microsoft 365
 
-*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 Les rubriques de référence sur les cmdlets pour les différents services Microsoft 365 fournissent des informations détaillées et des instructions sur l’utilisation de chaque cmdlet. En outre, chaque service Microsoft 365 qui dispose de la prise en charge de PowerShell nécessite des instructions de connexion différentes.
   
@@ -69,7 +71,7 @@ Pour obtenir les instructions de connexion pour &amp; le centre de sécurité co
   
 ## <a name="see-also"></a>Voir aussi
 
-[Gérer Microsoft 365 avec PowerShell](manage-office-365-with-office-365-powershell.md)
+[Gestion de Microsoft 365 à l’aide de PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Prise en main de PowerShell pour Microsoft 365](getting-started-with-office-365-powershell.md)
+[Prise en main de PowerShell pour Microsoft 365](getting-started-with-office-365-powershell.md)
 

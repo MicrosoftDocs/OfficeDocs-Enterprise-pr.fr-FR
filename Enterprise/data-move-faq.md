@@ -13,13 +13,14 @@ search.appverid:
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 f1.keywords:
 - NOCSH
-description: Voici des réponses à des questions d’ordre général sur le transfert de données principales vers une nouvelle région de centre de données.
-ms.openlocfilehash: 2954d85b0094a8d0f74980fa4e0ee9cac504abbe
-ms.sourcegitcommit: e0603d9259e9be1aeb110fc3dd8b9abc6138c55d
+description: Trouvez des réponses aux questions fréquemment posées sur le transfert de données essentielles vers une nouvelle région de centre de données Office 365.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: bd26296831ddb5aa0932d4106893e5a9adfb1d50
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44781039"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606040"
 ---
 # <a name="data-move-general-faq"></a>FAQ général relatif au déplacement de données
 

@@ -16,13 +16,14 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - NOCSH
-description: Vue d’ensemble des fonctionnalités d’audit et de création de rapports dans Microsoft 365 et service assurance.
-ms.openlocfilehash: 10bbf660ee0e0868abdb6b41c1cc318f6d64bb61
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: Vue d’ensemble des fonctionnalités d’audit et de création de rapports dans Office 365, Microsoft 365 et service assurance.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 40e68954cb0128ad323305bf8347a8e13afda9d5
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774959"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606680"
 ---
 # <a name="auditing-and-reporting-in-microsoft-cloud-services"></a>Audit et création de rapports dans les services Cloud de Microsoft
 
@@ -57,7 +58,7 @@ Les fonctionnalités clés incluent une zone de conformité qui fournit aux admi
 ## <a name="related-links"></a>Liens connexes
 
 - [eDiscovery et fonctionnalités de recherche](office-365-ediscovery-and-search-features.md)
-- [Fonctionnalités de création de rapports Microsoft 365](office-365-reporting-features.md)
-- [API d’activité de gestion Microsoft 365](office-365-management-activity-api.md)
-- [Migrations de boîtes aux lettres Microsoft 365](office-365-mailbox-migrations.md)
-- [Journalisation interne pour l’ingénierie Microsoft 365](office-365-internal-logging.md)
+- [Fonctionnalités de création de rapports Microsoft 365](office-365-reporting-features.md)
+- [API d’activité de gestion Microsoft 365](office-365-management-activity-api.md)
+- [Migrations de boîtes aux lettres Microsoft 365](office-365-mailbox-migrations.md)
+- [Journalisation interne pour Microsoft 365 Engineering](office-365-internal-logging.md)

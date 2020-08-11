@@ -9,18 +9,18 @@ ms.topic: article
 ms.service: o365-solutions
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Normal
-description: Activation de SharePoint Multi-Geo dans votre emplacement satellite géographique.
-ms.openlocfilehash: 2bf914c6df06f6e1cdfc8c95743f45a53823073c
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+description: Cet article fournit des informations pour les administrateurs globaux ou SharePoint concernant l’activation de SharePoint multi-géo dans les emplacements géographiques satellites.
+ms.openlocfilehash: dc2cd3eeb4c7e74d8dbfee1070338e0e243b0519
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433485"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605850"
 ---
 # <a name="enabling-sharepoint-multi-geo-in-your-satellite-geo-location"></a>Activation de SharePoint Multi-Geo dans votre emplacement géographique satellite
 
@@ -38,11 +38,11 @@ Ces instructions permettent d’activer SharePoint dans votre emplacement satell
 
 Pour définir un emplacement géo en mode SPO, connectez-vous à l’emplacement géo que vous souhaitez définir en Mode SPO :
 
-1.  Ouvrez votre outil SharePoint Online Management Shell 
-2.  Se connecter-SPOService-URL « https://$tenantGeo-admin.sharepoint.com »- informations d’identification $credential
-3.  Set-SPOMultiGeoExperience</br></br>
+1.    Ouvrez votre outil SharePoint Online Management Shell 
+2.    Se connecter-SPOService-URL « https://$tenantGeo-admin.sharepoint.com »- informations d’identification $credential
+3.    Set-SPOMultiGeoExperience</br></br>
 ![Set-SPOMultiGeoExperience](media/Set-SPO-MultiGeo.jpg)
-4.  Cette opération généralement prend environ une heure pendant que nous réalisons divers publications dans le service et de nouveau apposer un cachet à votre client. Après au moins 1 heure, veuillez effectuer une SPOMultiGeoExperience Get.  Vous verrez alors que cet emplacement géo est en mode SPO.</br></br>
+4.    Cette opération généralement prend environ une heure pendant que nous réalisons divers publications dans le service et de nouveau apposer un cachet à votre client. Après au moins 1 heure, veuillez effectuer une SPOMultiGeoExperience Get.  Vous verrez alors que cet emplacement géo est en mode SPO.</br></br>
 ![Set-SPOMultiGeoExperience](media/Get-SPO-MultiGeo.jpg)
 
  

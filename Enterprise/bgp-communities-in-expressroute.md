@@ -13,19 +13,21 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099
-description: 'La connexion à Office 365 à l’aide d’Azure ExpressRoute repose sur des publicités BGP de sous-réseaux IP spécifiques qui représentent des réseaux sur lesquels les points de terminaison Office 365 sont déployés. En raison de la nature internationale d’Office 365 et du nombre de services qui constituent Office 365, les clients ont souvent besoin de gérer les publicités qu’ils acceptent sur leur réseau. Réduction du nombre de sous-réseaux IP ; appelés préfixes IP tout au long de cet article, pour s’aligner sur la terminologie de gestion de réseau BGP, il répond aux objectifs finaux suivants pour les clients :'
-ms.openlocfilehash: 13d2404182eb18b7c72a9aaefdb96464fd665a03
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Découvrez comment utiliser les communautés BGP dans Azure ExpressRoute pour gérer le nombre de préfixes IP et la bande passante requise pour les scénarios Office 365.
+ms.openlocfilehash: ce83b95de0b1032ebd23f0262f814aeac4ed2d0a
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997871"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606090"
 ---
 # <a name="using-bgp-communities-in-expressroute-for-office-365-scenarios"></a>Utilisation des communautés BGP dans ExpressRoute pour les scénarios Office 365
 
@@ -40,9 +42,9 @@ Pour aider les clients à ces objectifs, les préfixes IP d’Office 365 publié
 > [!NOTE]
 > Vous devez vous attendre à ce que le trafic réseau associé à d’autres applications soit inclus dans la valeur de la communauté. Il s’agit d’un comportement attendu pour un logiciel global en tant qu’offre de service avec des services et des centres de contenu partagés. Il a été réduit, dans la mesure du possible, avec les deux objectifs ci-dessus, la gestion du nombre de préfixes et/ou la bande passante.
 
-|**Service**|**Valeur de la communauté BGP**|**Remarques**|
+|**Service**|**Valeur de la communauté BGP**|**Notes**|
 |:-----|:-----|:-----|
-|Exchange Online\*  <br/> |12076:5010  <br/> |Inclut les services Exchange et EOP\*  <br/> |
+|Exchange Online\*  <br/> |12076:5010  <br/> |Inclut les services Exchange et EOP\*  <br/> |
 |SharePoint Online\*  <br/> |12076:5020  <br/> |SharePoint Online  <br/> |
 |Skype Entreprise\*  <br/> |12076:5030  <br/> |Skype entreprise Online & services Microsoft teams  <br/> |
 |Autres services Office 365\*  <br/> |12076:5100  <br/> |Inclut Azure Active Directory (scénarios d’authentification et de synchronisation d’annuaires), ainsi que les services de portail Office 365  <br/> |
@@ -61,7 +63,7 @@ Contoso Corporation est une société 50 000 Person qui utilise actuellement Off
 |SharePoint  <br/> (12076:5020)  <br/> |SharePoint Online &amp; OneDrive entreprise  <br/> | DNS, liste de révocation de certificats, &amp; demandes CDN  <br/>  Tous les autres services Office 365 non spécifiquement pris en charge sur Azure ExpressRoute  <br/>  Tous les autres services Cloud Microsoft  <br/>  Portail Office 365, authentification Office 365, &amp; Office dans un navigateur  <br/>  Exchange Online, Exchange Online Protection et Skype entreprise Online  <br/> |
 
 > [!NOTE]
-> Pour obtenir le nombre de préfixes inférieur de chaque service, un minimum de chevauchement entre les services est conservé. Il s’agit du comportement attendu.
+> Pour obtenir le nombre de préfixes inférieur de chaque service, un minimum de chevauchement entre les services est conservé. Ce comportement est normal.
   
 ### <a name="scenario-2-scoping-expressroute-and-internal-bandwidth-use-to-some-office-365-services"></a>Scénario 2 : portée de la bande passante ExpressRoute et de la bande passante interne pour certains services Office 365
 

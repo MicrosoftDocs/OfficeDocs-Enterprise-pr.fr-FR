@@ -14,22 +14,24 @@ ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
-description: Si vous utilisez Office 2007 ou Office 2010, il est temps de planifier votre mise à niveau. Ne vous êtes pas bloqué avec des applications et des serveurs obsolètes et non pris en charge. Utilisez ces ressources pour commencer votre plan.
-ms.openlocfilehash: 83881977bdd3e42be47f7a9f08fdaff84742cf55
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.custom:
+- seo-marvel-apr2020
+description: Cet article contient des ressources destinées aux utilisateurs d’Office 2007 ou Office 2010 afin de les aider à planifier leur mise à niveau.
+ms.openlocfilehash: 8ea43c708c84ae81f61bb2acedd8bf60027070d4
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735732"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606250"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planifiez votre mise à jour des serveurs et clients Office 2007 et Office 2010
 
-*Cet article s’applique à la fois à Microsoft 365 entreprise et à Office 365 entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 Si votre organisation utilise des versions antérieures des produits et serveurs Office, il est très utile de commencer à planifier votre mise à niveau. Les produits et services Office 2007 ont atteint leur [fin de prise en charge](upgrade-from-office-2007-servers-and-products.md). 
 
-- Office 2010 et Exchange 2010 atteindront leur fin d’assistance le **13 octobre 2020**. 
-- SharePoint 2010 et Project Server 2010 atteindront leur fin d’assistance le **13 avril 2021**. 
+- La fin du support est prise en charge par les **Office 2010 et Exchange 2010 le 13 octobre 2020**. 
+- La prise en charge de SharePoint 2010 et de Project Server 2010 se termine le **avril 13, 2021**. 
 
 Utilisez les ressources de cet article pour commencer.
 

@@ -13,13 +13,14 @@ search.appverid:
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 f1.keywords:
 - NOCSH
-description: "Nouveau centre de régions centres ajouter de la capacité et des ressources de calcul pour prendre en charge notre demande de client et sa croissance d’utilisation en cours. En outre, les nouvelles régions de centre de données permettent d'héberger des données dans la région pour les données client essentielles. Le terme « données client essentielles » fait référence à un sous-ensemble de données client définies dans les conditions d'utilisation de Microsoft Online Services : Exchange Onlinecontenu de la boîte aux lettres (corps de courrier électronique, entrées de calendrier et contenu de pièces jointes), SharePoint Onlinecontenu du site et fichiers stockés dans ce site, ainsi que fichiers téléchargés vers OneDrive Entreprise."
-ms.openlocfilehash: 3cd30e46f9339fafb3a14f26d6995cd4cb953871
-ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
+description: Découvrez les nouvelles régions centres de centre de données Office 365 et comment utiliser l’option de résidence des données pour demander un déplacement de vos données de base vers une nouvelle région.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: d612c77eec4cb14e9522f3003c557e7e5bffd900
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43547722"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606820"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Transfert de données principales vers le nouveau centre de données Microsoft 365 régions centres
 

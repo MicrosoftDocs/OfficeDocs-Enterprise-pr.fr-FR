@@ -15,23 +15,24 @@ ms.collection:
 - Strat_O365_Enterprise
 f1.keywords:
 - CSH
-ms.custom:
-- Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
-description: 'Résumé : Comprenez les relations des organisations, des abonnements, des licences, des comptes d’utilisateur et des clients au sein des offres de cloud de Microsoft.'
-ms.openlocfilehash: 52857196f53a44196c96f60bd70564f5e3221b80
-ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
-ms.translationtype: MT
+ms.custom:
+- seo-marvel-apr2020
+- Ent_Architecture
+description: Comprendre les relations des organisations, des abonnements, des licences, des comptes d’utilisateur et des clients dans les offres cloud Microsoft.
+ms.openlocfilehash: 7546d4b24c66946e287aa51deb2d1f1896045322
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44906263"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46603666"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Abonnements, licences, comptes et clients des offres de cloud de Microsoft
 
-Microsoft fournit une hiérarchie d’organisations, d’abonnements, de licences et de comptes d’utilisateur pour une utilisation cohérente des identités et de la facturation au sein de ses offres de cloud :
+Microsoft fournit une hiérarchie d’organisations, d’abonnements, de licences et de comptes d’utilisateur pour une utilisation cohérente des identités et de la facturation dans ses offres cloud :
   
-- Microsoft 365 et Microsoft Office 365
-- Microsoft Azure
+- Microsoft 365 et Microsoft Office 365
+- Microsoft Azure
 - Microsoft Dynamics 365
 
 ## <a name="elements-of-the-hierarchy"></a>Éléments de la hiérarchie
@@ -46,12 +47,12 @@ Une organisation représente une entité commerciale qui utilise les offres de c
 
 Un abonnement est un accord conclu avec Microsoft sur l’utilisation d’une ou de plusieurs plateformes ou services de cloud Microsoft, dont les frais applicables sont calculés sur la base de frais de licence par utilisateur ou selon la consommation des ressources de cloud. 
 
-- Offres Cloud de Microsoft Software as a service (SaaS) (Microsoft 365 et Dynamics 365) frais de licence par utilisateur. 
+- Les offres SaaS (Software as a Service) basées sur le cloud de Microsoft (Microsoft 365 et Dynamics 365) facturent des frais de licence par utilisateur. 
 - Les offres de cloud Microsoft Platform as a Service (PaaS) et Infrastructure as a Service (IaaS) (Azure) facturent des frais en fonction de la consommation des ressources de cloud.
  
 Vous pouvez également utiliser un abonnement d’évaluation, mais l’abonnement expire après une certaine période ou des frais de consommation spécifiques. Vous pouvez convertir un abonnement d’évaluation en abonnement payant.
   
-Les organisations peuvent avoir plusieurs abonnements pour les offres de cloud Microsoft, comme illustré dans la Figure 1. La figure 1 présente une organisation unique comportant plusieurs abonnements Microsoft 365, un abonnement Dynamics 365 et plusieurs abonnements Azure.
+Les organisations peuvent avoir plusieurs abonnements pour les offres de cloud Microsoft, comme illustré dans la Figure 1. La Figure 1 présente une organisation unique avec plusieurs abonnements Microsoft 365, un abonnement Dynamics 365 et plusieurs abonnements Azure.
 
 **Figure 1 : Exemple de plusieurs abonnements pour une organisation**
 
@@ -59,7 +60,7 @@ Les organisations peuvent avoir plusieurs abonnements pour les offres de cloud M
   
 ### <a name="licenses"></a>Licences
 
-Pour les offres de cloud SaaS de Microsoft, une licence permet à un compte d’utilisateur spécifique d’utiliser les services de l’offre de cloud. Vous payez un coût mensuel fixe dans le cadre de votre abonnement. Les administrateurs attribuent des licences à des comptes d’utilisateur individuels dans l’abonnement. Pour l’exemple de la figure 2, Contoso Corporation dispose d’un abonnement Microsoft 365 E5 avec 100 licences, ce qui permet jusqu’à 100 comptes d’utilisateur individuels d’utiliser les fonctionnalités et services de Microsoft 365 E5.
+Pour les offres de cloud SaaS de Microsoft, une licence permet à un compte d’utilisateur spécifique d’utiliser les services de l’offre de cloud. Vous payez un coût mensuel fixe dans le cadre de votre abonnement. Les administrateurs attribuent des licences à des comptes d’utilisateur individuels dans l’abonnement. Par exemple, dans la Figure 2, la société Contoso a un abonnement à Microsoft 365 E5 avec 100 licences, ce qui permet à un maximum de 100 comptes d’utilisateur individuels d’utiliser les services et fonctionnalités de Microsoft 365 E5.
   
 **Figure 2 : Licences liées aux abonnements SaaS d’une organisation**
 
@@ -83,11 +84,11 @@ La Figure 3 illustre un exemple de plusieurs abonnements d’une organisation à
   
 ### <a name="tenants"></a>Clients
 
-Pour les offres SaaS cloud, le client est l’emplacement régional qui héberge les serveurs fournissant des services de cloud. Par exemple, la société Contoso Corporation a choisi la région européenne pour héberger ses locataires Microsoft 365, EMS et Dynamics 365 pour les travailleurs 15 000 dans leur siège social de Paris.
+Pour les offres SaaS cloud, le client est l’emplacement régional qui héberge les serveurs fournissant des services de cloud. Par exemple, la société Contoso a choisi la région Europe pour héberger ses clients Microsoft 365, EMS et Dynamics 365 pour les 15 000 travailleurs de son siège social à Paris.
   
 Les services PaaS Azure et les charges de travail basées sur une machine virtuelle hébergés dans IaaS Azure peuvent avoir une location dans n’importe quel centre de données Azure dans le monde entier. Vous spécifiez le centre de données Azure, appelé emplacement, lorsque vous créez l’application ou le service PaaS Azure, ou l’élément d’une charge de travail IaaS.
   
-Un client Azure Active Directory est une instance spécifique d’Azure AD contenant des comptes et des groupes. Les abonnements payants ou d’évaluation de Microsoft 365 ou Dynamics 365 incluent un locataire Azure AD gratuit. Ce client Azure Active Directory n’inclut pas les autres services Azure et n’est pas identique à un abonnement d’évaluation ou payant Azure.
+Un client Azure Active Directory est une instance spécifique d’Azure AD contenant des comptes et des groupes. Les abonnements d’évaluation ou payants de Microsoft 365 ou Dynamics 365 incluent un client Azure Active Directory gratuit. Ce client Azure Active Directory n’inclut pas les autres services Azure et n’est pas identique à un abonnement d’évaluation ou payant Azure.
   
 ### <a name="summary-of-the-hierarchy"></a>Résumé de la hiérarchie
 
@@ -105,9 +106,9 @@ Voici un exemple de relation des organisations, des abonnements, des licences et
   
 - Une organisation identifiée par son nom de domaine public.
     
-  - Un abonnement Microsoft 365 E3 avec des licences utilisateur.
+  - Un abonnement Microsoft 365 E3 avec licences utilisateur.
     
-    Un abonnement Microsoft 365 E5 avec des licences utilisateur.
+    Un abonnement Microsoft 365 E5 avec licences utilisateur.
     
     Un abonnement Dynamics 365 avec licences utilisateur.
     
@@ -130,8 +131,8 @@ Le tableau suivant décrit la manière dont vous pouvez combiner plusieurs offre
 ||**Microsoft 365**|**Azure**|**Dynamics 365**|
 |:-----|:-----|:-----|:-----|:-----|
 |**Microsoft 365** <br/> |N/A  <br/> |Vous ajoutez un abonnement Azure à votre organisation à partir du portail Azure.  <br/> |Vous ajoutez un abonnement Dynamics 365 à votre organisation à partir du Centre d’administration Microsoft 365.  <br/> |
-|**Azure** <br/> |Vous ajoutez un abonnement Microsoft 365 à votre organisation.  <br/> |N/A  <br/> |Vous ajoutez un abonnement Dynamics 365 à votre organisation.  <br/> |
-|**Dynamics 365** <br/> |Vous ajoutez un abonnement Microsoft 365 à votre organisation.  <br/> |Vous ajoutez un abonnement Azure à votre organisation à partir du portail Azure.  <br/> |N/A  <br/> |
+|**Azure** <br/> |Vous ajoutez un abonnement Microsoft 365 à votre organisation.  <br/> |N/A  <br/> |Vous ajoutez un abonnement Dynamics 365 à votre organisation.  <br/> |
+|**Dynamics 365** <br/> |Vous ajoutez un abonnement Microsoft 365 à votre organisation.  <br/> |Vous ajoutez un abonnement Azure à votre organisation à partir du portail Azure.  <br/> |N/A  <br/> |
    
 Une solution simple pour ajouter des abonnements à votre organisation pour les services SaaS Microsoft consiste à utiliser le centre d’administration :
   
@@ -141,17 +142,17 @@ Une solution simple pour ajouter des abonnements à votre organisation pour les 
     
 3. Dans la page **Acheter des services**, achetez vos nouveaux abonnements.
     
-Le centre d’administration affecte l’organisation et le client Azure AD de votre abonnement Microsoft 365 aux nouveaux abonnements pour les offres de Cloud SaaS.
+Le centre d’administration affecte l’organisation et le client Azure AD de votre abonnement à Microsoft 365 aux nouveaux abonnements pour les offres cloud SaaS.
   
-Pour ajouter un abonnement Azure avec la même organisation et le même client Azure AD que votre abonnement Microsoft 365 :
+Pour ajouter un abonnement Azure disposant de la même organisation et du même client Azure Active Directory que votre abonnement Microsoft 365, procédez comme suit :
   
-1. Connectez-vous au portail Azure ( [https://portal.azure.com](https://portal.azure.com) ) avec votre compte d’administrateur général Microsoft 365.
+1. Connectez-vous au portail Azure ([https://portal.azure.com](https://portal.azure.com)) avec votre compte Administrateur général Microsoft 365.
     
 2. Dans le volet de navigation gauche, cliquez sur **Abonnements**, puis sur **Ajouter**.
     
 3. Dans la page **Ajouter un abonnement**, sélectionnez une offre et complétez l’accord et les informations de paiement.
     
-Si vous avez acheté des abonnements Azure et Microsoft 365 séparément et que vous souhaitez accéder au client Microsoft 365 Azure AD à partir de votre abonnement Azure, reportez-vous aux instructions de la rubrique [Ajouter un abonnement Azure existant à votre client Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
+Si vous avez obtenu séparément des abonnements Azure et Microsoft 365, et que vous souhaitez accéder au client Microsoft 365 Azure AD à partir de votre abonnement Azure, reportez-vous aux instructions décrites de l’article [Ajouter un abonnement Azure à votre locataire Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
  
 ## <a name="see-also"></a>Voir aussi
 
